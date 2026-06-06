@@ -28,16 +28,20 @@ try:
     from .extraction_core import (
         _LOSS_RUN_EXTRACTION_SCHEMA_JSON,
         _validate_and_normalize_predictions,
+        estimate_cost_usd,
         parse_json_response,
         record_usage,
+        trace_dir,
         traces_enabled,
     )
 except ImportError:
     from extraction_core import (
         _LOSS_RUN_EXTRACTION_SCHEMA_JSON,
         _validate_and_normalize_predictions,
+        estimate_cost_usd,
         parse_json_response,
         record_usage,
+        trace_dir,
         traces_enabled,
     )
 
@@ -89,11 +93,6 @@ _AGENT_TASK_PROMPT = (
 # which is a symlink to /private/tmp on macOS).
 _AGENT_RUN_ROOT = Path(__file__).resolve().parents[1] / ".agent_runs"
 
-# USD per 1M tokens for the agentic model (gpt-5.5 standard). Override via env.
-_AGENT_PRICE_INPUT_PER_1M = float(os.getenv("LLB_AGENT_PRICE_INPUT_PER_1M", "5.0"))
-_AGENT_PRICE_CACHED_INPUT_PER_1M = float(os.getenv("LLB_AGENT_PRICE_CACHED_INPUT_PER_1M", "0.5"))
-_AGENT_PRICE_OUTPUT_PER_1M = float(os.getenv("LLB_AGENT_PRICE_OUTPUT_PER_1M", "30.0"))
-
 
 def _truncate(text: object, limit: int) -> str:
     s = text if isinstance(text, str) else str(text)
@@ -114,21 +113,6 @@ def _usage_to_dict(usage) -> dict | None:
         "reasoning_tokens": getattr(otd, "reasoning_tokens", None) if otd is not None else None,
         "total_tokens": getattr(usage, "total_tokens", None),
     }
-
-
-def _estimate_agent_cost_usd(usage: dict | None) -> float | None:
-    if not usage:
-        return None
-    inp = usage.get("input_tokens") or 0
-    cached = usage.get("cached_input_tokens") or 0
-    out = usage.get("output_tokens") or 0
-    uncached = max(inp - cached, 0)
-    return round(
-        uncached / 1e6 * _AGENT_PRICE_INPUT_PER_1M
-        + cached / 1e6 * _AGENT_PRICE_CACHED_INPUT_PER_1M
-        + out / 1e6 * _AGENT_PRICE_OUTPUT_PER_1M,
-        4,
-    )
 
 
 def _summarize_agent_behavior(new_items) -> list[dict]:
@@ -155,8 +139,8 @@ def _summarize_agent_behavior(new_items) -> list[dict]:
 def _write_agent_trace(model_id, ocr_chars, usage, cost, behavior, final_output, retrieval) -> Path | None:
     """Persist a per-run behavior+usage trace locally; never raises into extraction."""
     try:
-        trace_dir = Path(os.getenv("LLB_AGENT_TRACE_DIR", str(_AGENT_RUN_ROOT / "traces")))
-        trace_dir.mkdir(parents=True, exist_ok=True)
+        out_dir = trace_dir()
+        out_dir.mkdir(parents=True, exist_ok=True)
         trace = {
             "model_id": model_id,
             "ocr_chars": ocr_chars,
@@ -169,7 +153,7 @@ def _write_agent_trace(model_id, ocr_chars, usage, cost, behavior, final_output,
             "final_output_preview": _truncate(final_output or "", 2000),
         }
         stamp = time.strftime("%Y%m%d_%H%M%S")
-        path = trace_dir / f"agent_trace_{stamp}_{os.getpid()}.json"
+        path = out_dir / f"agent_trace_{stamp}_{os.getpid()}.json"
         path.write_text(json.dumps(trace, indent=2, default=str), encoding="utf-8")
         return path
     except Exception:
@@ -279,13 +263,18 @@ def extract_with_openai_agent(client, ocr_text: str, model_id: str) -> list[dict
 
         # Feed usage into the shared sink so the run loop records tokens+cost
         # uniformly (same as the API regimes).
+        cost = None
         if usage:
             record_usage(
                 input_tokens=usage.get("input_tokens") or 0,
                 cached_input_tokens=usage.get("cached_input_tokens") or 0,
                 output_tokens=usage.get("output_tokens") or 0,
             )
-        cost = _estimate_agent_cost_usd(usage)
+            cost = estimate_cost_usd(
+                input_tokens=usage.get("input_tokens") or 0,
+                cached_input_tokens=usage.get("cached_input_tokens") or 0,
+                output_tokens=usage.get("output_tokens") or 0,
+            )
         trace_path = (
             _write_agent_trace(model_id, len(ocr_text), usage, cost, behavior, final_output, retrieval)
             if traces_enabled()

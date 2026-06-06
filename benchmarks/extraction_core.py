@@ -113,6 +113,17 @@ def usage_capture():
             _usage_sink = prev
 
 
+def estimate_cost_usd(*, input_tokens=0, cached_input_tokens=0, output_tokens=0) -> float:
+    """USD cost for the given token counts, using the shared PRICE_* rates."""
+    u = CallUsage()
+    u.add(
+        input_tokens=input_tokens,
+        cached_input_tokens=cached_input_tokens,
+        output_tokens=output_tokens,
+    )
+    return u.cost_usd()
+
+
 def record_usage(*, input_tokens=0, cached_input_tokens=0, output_tokens=0, requests=1):
     """Add token usage to the active capture sink (no-op if none active)."""
     with _usage_lock:
