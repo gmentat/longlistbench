@@ -25,11 +25,16 @@
 build/
 
 benchmarks/results/scratch/
+benchmarks/results/scratch*/
 benchmarks/results/synced_structured_snapshot/
 
 # Virtual environment
 venv/
 .venv/
+
+# Agentic regime per-document sandbox working dirs + debug traces
+.agent_runs/
+.traces/
 
 # Python
 __pycache__/
