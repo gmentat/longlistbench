@@ -9,13 +9,14 @@ We compare three evaluation regimes that differ primarily in how they handle lon
 \begin{table}[t]
 \centering
 \small
-\caption{Comparison of the three extraction regimes on the synchronized 80-document OCR snapshot. Columns report corpus-level weighted field-value micro $F_1$ overall and on the extreme tier. The agentic regime uses GPT-5.5 while the one-shot and auto-chunked baselines use Gemini 2.5, so its gains reflect both regime and model.}
+\caption{Comparison of the extraction regimes on the synchronized 80-document OCR snapshot. Columns report corpus-level weighted field-value micro $F_1$ overall and on the extreme tier. Model is listed per row: one-shot is reported for both Gemini 2.5 and GPT-5.5, the auto-chunked baseline uses Gemini 2.5, and the agentic regime uses GPT-5.5 (so cross-model rows reflect both regime and model).}
 \label{tab:two-regimes}
 \begin{tabular}{@{}llcc@{}}
 \toprule
 Regime & Model & Overall & Extreme \\
 \midrule
 One-shot & Gemini 2.5 & 27.4\% & 5.9\% \\
+One-shot & GPT-5.5 & 29.9\% & 0.0\% \\
 Auto-chunked & Gemini 2.5 & 84.8\% & 81.7\% \\
 Agentic sandbox & GPT-5.5 & 90.6\% & 89.4\% \\
 \bottomrule
@@ -23,6 +24,8 @@ Agentic sandbox & GPT-5.5 & 90.6\% & 89.4\% \\
 \end{table}
 
 Moving from full-context one-shot extraction to the local chunked baseline therefore improves overall weighted field-level $F_1$ by 57.4 points and extreme-tier weighted field-level $F_1$ by 75.8 points on the same snapshot. The one-shot regime remains strong on easy documents (97.2\%), but then degrades sharply to 74.6\% on medium, 44.4\% on hard, and 5.9\% on extreme. By contrast, the local chunked baseline reaches 97.3\% on easy, 96.5\% on medium, 87.7\% on hard, 71.0\% on detailed documents overall, and 95.9\% on table documents overall. In other words, chunking substantially reduces the severe long-document degradation seen in the one-shot regime, but the local chunked baseline still shows a pronounced gap between long detailed documents and long tables, with residual errors concentrated in record recovery, reading order, and layout-sensitive field completion. Because the strongest page-break and multi-column stressors are concentrated in detailed-format content in v1, this detailed-versus-table gap should not be interpreted as a pure format effect.
+
+The one-shot collapse replicates across models. A GPT-5.5 one-shot baseline reaches 29.9\% overall weighted field-level $F_1$ (94.4\% precision but only 17.8\% recall), following the same degradation curve as the Gemini baseline: 91.2\% on easy, 93.1\% on medium, 56.5\% on hard, and 0.0\% on extreme. Notably, on the longest documents GPT-5.5 returns an empty result rather than a partial list, so a stronger model does not by itself rescue the one-shot regime; the failure is the protocol, not the model. (At GPT-5.5 rates the full one-shot snapshot cost about \$21, less than the other regimes precisely because it abandons the long documents that dominate token volume.)
 
 The agentic sandbox regime achieves the strongest results: 90.6\% overall weighted field-level $F_1$ (89.7\% recall, 91.4\% precision) with no extraction failures across all 80 documents. Critically, it largely closes the long-document gap, reaching 89.4\% on the extreme tier (500 incidents per document) versus 81.7\% for the chunked baseline and 5.9\% for one-shot, because the model navigates and parses the document programmatically rather than relying on a fixed chunking policy. By tier it reaches 97.0\% (easy), 95.2\% (medium), and 91.4\% (hard); by format it reaches 93.2\% on tables and 87.9\% on detailed documents, preserving the same detailed-versus-table ordering seen in the other regimes. Two caveats apply: the agentic regime uses a more capable model (GPT-5.5) than the Gemini baselines, so its margin reflects regime and model jointly rather than the regime in isolation; and it is more expensive, costing roughly \$0.40 per document (about \$33 for the full 80-document snapshot at current GPT-5.5 rates).
 
