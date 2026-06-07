@@ -86,13 +86,23 @@ class AgenticExtractionTests(unittest.TestCase):
 
 class OpenAiOneshotTests(unittest.TestCase):
     def _fake_client(self, content: str) -> mock.MagicMock:
+        # Mock the streaming structured-output API: client.beta.chat.completions.stream(...)
+        # returns a context manager whose object is iterable and exposes
+        # get_final_completion().
         message = mock.MagicMock()
-        message.parsed = None  # force JSON-mode parse path
+        message.parsed = None  # force JSON parse of .content
         message.content = content
-        response = mock.MagicMock()
-        response.choices = [mock.MagicMock(message=message)]
+        final = mock.MagicMock()
+        final.choices = [mock.MagicMock(message=message)]
+        final.usage = None
+        stream_obj = mock.MagicMock()
+        stream_obj.__iter__ = lambda self: iter(())
+        stream_obj.get_final_completion.return_value = final
+        cm = mock.MagicMock()
+        cm.__enter__.return_value = stream_obj
+        cm.__exit__.return_value = False
         client = mock.MagicMock()
-        client.beta.chat.completions.parse.return_value = response
+        client.beta.chat.completions.stream.return_value = cm
         return client
 
     def test_oneshot_single_call_with_large_budget(self) -> None:
@@ -101,11 +111,13 @@ class OpenAiOneshotTests(unittest.TestCase):
         result = regime_oneshot.extract_with_openai_oneshot(client, "ocr text", "gpt-5.5")
         self.assertEqual(len(result), 1)
         self.assertEqual(result[0]["incident_number"], "#40001")
-        # One-shot makes exactly one model call...
-        client.beta.chat.completions.parse.assert_called_once()
-        # ...with a large output budget (not the per-chunk 8192 default).
-        kwargs = client.beta.chat.completions.parse.call_args.kwargs
+        # One-shot makes exactly one (streamed) model call...
+        client.beta.chat.completions.stream.assert_called_once()
+        # ...with a large output budget (the model decides when to stop, not our cap).
+        kwargs = client.beta.chat.completions.stream.call_args.kwargs
         self.assertGreaterEqual(kwargs["max_completion_tokens"], 32000)
+        # ...and reasoning models get no temperature=0 (gpt-5.x rejects it).
+        self.assertNotIn("temperature", kwargs)
 
 
 if __name__ == "__main__":

@@ -211,12 +211,28 @@ def setup_gemini():
 
 
 def setup_openai():
-    """Configure OpenAI API."""
+    """Configure OpenAI API with an inactivity (read) timeout.
+
+    Root cause of the earlier multi-minute hangs: the SDK's default ~600s
+    per-request timeout x its retries (~1800s) on a *stalled* connection.
+    A single fixed timeout cannot both allow a legitimate long generation
+    (a 500-incident one-shot can stream for ~25 min) and abort a stall fast.
+
+    Fix: stream responses and use an httpx timeout with NO overall deadline
+    (`timeout=None`) but a bounded **read** timeout. During a healthy
+    generation tokens arrive continuously and reset the read timer, so the
+    model decides when to stop; a stalled connection sends nothing and trips
+    the read timeout quickly, then retries.
+    """
+    import httpx
     from openai import OpenAI
     api_key = os.getenv('OPENAI_API_KEY')
     if not api_key:
         raise ValueError("OPENAI_API_KEY not set in environment")
-    return OpenAI(api_key=api_key)
+    read_timeout = float(os.getenv("LLB_OPENAI_READ_TIMEOUT_SECONDS", "180"))
+    max_retries = int(os.getenv("LLB_OPENAI_MAX_RETRIES", "2"))
+    timeout = httpx.Timeout(None, connect=30.0, read=read_timeout, write=60.0, pool=30.0)
+    return OpenAI(api_key=api_key, timeout=timeout, max_retries=max_retries)
 
 
 def setup_anthropic():
@@ -612,7 +628,7 @@ def _openai_extract_once(
     text: str,
     model_id: str,
     *,
-    max_output_tokens: int = 8192,
+    max_output_tokens: int = 16384,
 ) -> list[dict]:
     """One OpenAI call on a single text blob → validated incidents.
 
@@ -623,33 +639,55 @@ def _openai_extract_once(
         ocr_text=text,
         schema_json=_LOSS_RUN_EXTRACTION_SCHEMA_JSON,
     )
-    # gpt-5.x / o-series reject temperature=0; omit it so they use the default.
+    # Responses are streamed so the client's read (inactivity) timeout can abort
+    # a stalled connection without capping a long, healthy generation.
     common_kwargs: dict = {
         "model": model_id,
         "messages": [{"role": "user", "content": prompt}],
         "max_completion_tokens": max_output_tokens,
+        "stream_options": {"include_usage": True},
     }
-    if _openai_supports_custom_temperature(model_id):
+    is_reasoning = not _openai_supports_custom_temperature(model_id)
+    if not is_reasoning:
+        # gpt-5.x / o-series reject temperature=0; only set it for other models.
         common_kwargs["temperature"] = 0
+    else:
+        # Reasoning models accept reasoning_effort; default to "low" (extraction is
+        # mechanical) for speed/cost, overridable. "none"/"" disables the param.
+        effort = os.getenv("LLB_OPENAI_REASONING_EFFORT", "low").strip()
+        if effort and effort.lower() != "none":
+            common_kwargs["reasoning_effort"] = effort
     try:
-        response = client.beta.chat.completions.parse(
-            response_format=LossRunExtraction,
-            **common_kwargs,
-        )
-        record_openai_usage(response)
-        parsed = getattr(response.choices[0].message, "parsed", None)
-        if parsed is not None:
-            raw = parsed
-        else:
-            raw = parse_json_response(response.choices[0].message.content)
+        with client.beta.chat.completions.stream(
+            response_format=LossRunExtraction, **common_kwargs
+        ) as stream:
+            for _ in stream:
+                pass
+            final = stream.get_final_completion()
+        record_openai_usage(final)
+        msg = final.choices[0].message
+        parsed = getattr(msg, "parsed", None)
+        raw = parsed if parsed is not None else parse_json_response(msg.content)
     except Exception:
-        # Some models do not support the structured parse endpoint; fall back to JSON mode.
+        # Fallback: streamed JSON mode for models without the structured-parse endpoint.
+        parts: list[str] = []
+        usage = None
         response = client.chat.completions.create(
-            response_format={"type": "json_object"},
-            **common_kwargs,
+            response_format={"type": "json_object"}, stream=True, **common_kwargs
         )
-        record_openai_usage(response)
-        raw = parse_json_response(response.choices[0].message.content)
+        for chunk in response:
+            if getattr(chunk, "usage", None):
+                usage = chunk.usage
+            if chunk.choices and chunk.choices[0].delta and chunk.choices[0].delta.content:
+                parts.append(chunk.choices[0].delta.content)
+        if usage is not None:
+            ptd = getattr(usage, "prompt_tokens_details", None)
+            record_usage(
+                input_tokens=getattr(usage, "prompt_tokens", 0) or 0,
+                cached_input_tokens=(getattr(ptd, "cached_tokens", 0) or 0) if ptd is not None else 0,
+                output_tokens=getattr(usage, "completion_tokens", 0) or 0,
+            )
+        raw = parse_json_response("".join(parts))
     record_trace("openai_calls.jsonl", {
         "model": model_id,
         "input_chars": len(text),

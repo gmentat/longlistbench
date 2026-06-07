@@ -31,9 +31,11 @@ except ImportError:
         wait_exponential,
     )
 
-# A whole-document one-shot call must emit every incident, so it needs a much
-# larger output budget than a single chunk (8192 would truncate immediately).
-_DEFAULT_ONESHOT_MAX_OUTPUT_TOKENS = 32000
+# A whole-document one-shot call must emit every incident in a single response.
+# Default to the model's hard output ceiling (GPT-5.5 = 128K) so generation stops
+# only when the model decides (or hits the model's own maximum), never an
+# artificial cap of ours. Override via LLB_ONESHOT_MAX_OUTPUT_TOKENS.
+_DEFAULT_ONESHOT_MAX_OUTPUT_TOKENS = 128000
 
 
 @retry(stop=stop_after_attempt(5), wait=wait_exponential(multiplier=4, min=10, max=120))
