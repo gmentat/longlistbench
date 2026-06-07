@@ -1,0 +1,96 @@
+[
+  {
+    "incident_number": "30049",
+    "reference_number": "L230049",
+    "company_name": "Wells Logistics Co",
+    "division": "",
+    "coverage_type": "Physical Damage",
+    "status": "Closed",
+    "policy_number": "L23A9245",
+    "policy_state": "OK",
+    "cause_code": null,
+    "description": "IV struck by falling tree branch during storm",
+    "handler": "",
+    "unit_number": "2023 PE 137398",
+    "date_of_loss": "09/18/2023",
+    "loss_state": "MO",
+    "date_reported": "09/20/2023",
+    "agency": "Colon-Patterson",
+    "insured": "Wells Logistics Co",
+    "claimants": [],
+    "driver_name": "Nguyen, Thomas",
+    "bi": {
+      "reserve": 0.0,
+      "paid": 0.0,
+      "recovered": 0.0,
+      "total_incurred": 0.0
+    },
+    "pd": {
+      "reserve": 0.0,
+      "paid": 76379.56,
+      "recovered": 0.0,
+      "total_incurred": 76379.56
+    },
+    "lae": {
+      "reserve": 0.0,
+      "paid": 0.0,
+      "recovered": 0.0,
+      "total_incurred": 0.0
+    },
+    "ded": {
+      "reserve": 0.0,
+      "paid": 0.0,
+      "recovered": 1518.21,
+      "total_incurred": -1518.21
+    },
+    "adjuster_notes": null
+  },
+  {
+    "incident_number": "30050",
+    "reference_number": "L230050",
+    "company_name": "Walker Express Co",
+    "division": "",
+    "coverage_type": "Inland Marine",
+    "status": "Closed",
+    "policy_number": "L23A7807",
+    "policy_state": "NC",
+    "cause_code": null,
+    "description": "Cargo crushed due to improper securing",
+    "handler": "",
+    "unit_number": null,
+    "date_of_loss": "11/20/2023",
+    "loss_state": "FL",
+    "date_reported": "11/21/2023",
+    "agency": "Rodriguez LLC",
+    "insured": "Walker Express Co",
+    "claimants": [
+      "Barrett, Nathan"
+    ],
+    "driver_name": null,
+    "bi": {
+      "reserve": 0.0,
+      "paid": 0.0,
+      "recovered": 0.0,
+      "total_incurred": 0.0
+    },
+    "pd": {
+      "reserve": 0.0,
+      "paid": 25178.38,
+      "recovered": 0.0,
+      "total_incurred": 25178.38
+    },
+    "lae": {
+      "reserve": 0.0,
+      "paid": 0.0,
+      "recovered": 0.0,
+      "total_incurred": 0.0
+    },
+    "ded": {
+      "reserve": 0.0,
+      "paid": 0.0,
+      "recovered": 4433.31,
+      "total_incurred": -4433.31
+    },
+    "adjuster_notes": null
+  }
+]
