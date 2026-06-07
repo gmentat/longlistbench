@@ -8,12 +8,14 @@ We introduce LongListBench, a benchmark designed to stress-test long-list extrac
 This work was motivated by production document-automation tasks involving long schedules, loss runs, and itemized bills. In these settings, a single document can contain hundreds or thousands of repeated entities spread across heterogeneous layouts, page breaks, and noisy OCR. Existing extraction systems often handled short forms adequately but degraded as list length and layout complexity increased. These observations motivated a benchmark that measures whether extraction methods remain reliable as list length grows and as layout artifacts accumulate.
 
 \subsection{Research Questions}
-This work is organized around three practical questions:
+This work is organized around four practical questions:
 \begin{itemize}
     \item How do document format and tiered long-list stressors (page breaks, duplicates, multi-row entities, large documents, distractor tables, multi-column layouts, merged cells) affect extraction quality?
     \item To what extent are end-to-end failures attributable to OCR versus downstream extraction?
     \item How do strong off-the-shelf LLMs perform under a simple, reproducible zero-shot protocol?
+    \item How much does the extraction regime---the way a long document is delivered to the model (full-context one-shot, auto-chunked, or an agentic code-execution sandbox)---affect performance, relative to the choice of model?
 \end{itemize}
+
 
 We address these questions by reporting baseline extraction performance by format and difficulty tier, releasing paired clean-vs-OCR transcript conditions (`canonical` vs `ocr`) for targeted follow-up evaluation, and shipping a standardized evaluation harness with saved predictions and regenerable reports.
 
