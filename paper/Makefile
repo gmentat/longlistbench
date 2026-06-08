@@ -39,11 +39,11 @@ arxiv: pdf
 	cp contents/0_abstract.tex $(ARXIV_DIR)/contents/
 	cp contents/1_introduction.tex $(ARXIV_DIR)/contents/
 	cp contents/2_related_work.tex $(ARXIV_DIR)/contents/
-	cp contents/4_methodology.tex $(ARXIV_DIR)/contents/
-	cp contents/5_evaluation.tex $(ARXIV_DIR)/contents/
-	cp contents/6_results.tex $(ARXIV_DIR)/contents/
-	cp contents/7_limitations_and_future_directions.tex $(ARXIV_DIR)/contents/
-	cp contents/8_conclusion.tex $(ARXIV_DIR)/contents/
+	cp contents/3_benchmark_construction.tex $(ARXIV_DIR)/contents/
+	cp contents/4_evaluation.tex $(ARXIV_DIR)/contents/
+	cp contents/5_results.tex $(ARXIV_DIR)/contents/
+	cp contents/6_limitations_and_future_directions.tex $(ARXIV_DIR)/contents/
+	cp contents/7_conclusion.tex $(ARXIV_DIR)/contents/
 	cp contents/appendix_schemas.tex $(ARXIV_DIR)/contents/
 	find figures -maxdepth 1 -type f \( -name '*.png' -o -name '*.jpg' -o -name '*.jpeg' -o -name '*.pdf' \) -exec cp {} $(ARXIV_DIR)/figures/ \;
 	tar -czf $(ARXIV_TAR) -C $(ARXIV_DIR) .

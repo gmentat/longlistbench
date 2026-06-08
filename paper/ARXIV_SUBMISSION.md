@@ -33,11 +33,11 @@ The `contents/` directory should include the actual section files used by `main.
 contents/0_abstract.tex
 contents/1_introduction.tex
 contents/2_related_work.tex
-contents/4_methodology.tex
-contents/5_evaluation.tex
-contents/6_results.tex
-contents/7_limitations_and_future_directions.tex
-contents/8_conclusion.tex
+contents/3_benchmark_construction.tex
+contents/4_evaluation.tex
+contents/5_results.tex
+contents/6_limitations_and_future_directions.tex
+contents/7_conclusion.tex
 contents/appendix_schemas.tex
 ```
 

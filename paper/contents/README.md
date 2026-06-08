@@ -7,12 +7,12 @@ This directory contains all the content sections of your research paper.
 - **`0_abstract.tex`** - Abstract section
 - **`1_introduction.tex`** - Introduction section with subsections
 - **`2_related_work.tex`** - Related work
-- **`4_methodology.tex`** - Benchmark construction
-- **`5_evaluation.tex`** - Evaluation protocol
-- **`6_results.tex`** - Results
-- **`7_limitations_and_future_directions.tex`** - Limitations and future directions
-- **`8_conclusion.tex`** - Conclusion section
-- **`9_acknowledgments.tex`** - Acknowledgments section
+- **`3_benchmark_construction.tex`** - Benchmark construction
+- **`4_evaluation.tex`** - Evaluation protocol
+- **`5_results.tex`** - Results
+- **`6_limitations_and_future_directions.tex`** - Limitations and future directions
+- **`7_conclusion.tex`** - Conclusion section
+- **`8_acknowledgments.tex`** - Acknowledgments section
 
 ## Usage
 
@@ -27,10 +27,10 @@ These files are automatically included in `main.tex` using the `\input{}` comman
 \input{contents/1_introduction}
 
 \section{Conclusion}
-\input{contents/8_conclusion}
+\input{contents/7_conclusion}
 
 \section*{Acknowledgments}
-\input{contents/9_acknowledgments}
+\input{contents/8_acknowledgments}
 ```
 
 ## Adding New Sections
