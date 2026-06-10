@@ -1,6 +1,6 @@
 # LongListBench
 
-Benchmark for long-list entity extraction from semi-structured documents under complex layouts and OCR noise, inspired by recurring patterns observed in real-world claims documents.
+Benchmark for long-list entity extraction from semi-structured documents under complex layouts, OCR noise, and cross-document complexity, inspired by recurring patterns observed in real-world claims documents.
 
 This benchmark was developed at [Kay.ai](https://kay.ai).
 
@@ -18,9 +18,12 @@ python -m playwright install chromium
 # Set API keys (only needed for OCR/evaluation runs)
 cp .env.example .env
 
-# Generate the complete benchmark dataset
+# Generate the complete single-document benchmark dataset
 # This writes JSON, HTML, PDF, and canonical transcript files.
 python benchmarks/generate_claims_benchmark.py
+
+# Optional: generate cross-document multi-hop packets
+python benchmarks/generate_multihop_benchmark.py
 ```
 
 ## Reproducibility
@@ -35,6 +38,9 @@ make setup
 
 # Generate synthetic benchmark dataset (PDF/HTML/JSON)
 make generate
+
+# Generate cross-document multi-hop packets
+make generate-multihop
 
 # Build the paper
 make paper
@@ -56,6 +62,7 @@ See [`benchmarks/README.md`](benchmarks/README.md) for benchmark documentation.
 - **Ground truth annotations** in JSON format
 - **Canonical transcripts** derived from rendered HTML
 - **OCR transcripts** derived from page-image OCR
+- **Multi-hop extension** with cross-document case packets
 
 ### Problem Types
 
@@ -86,6 +93,19 @@ The released dataset includes additional rows from `duplicates` and `large_doc`.
 
 - **Detailed**: Incident sections with line items and financial breakdowns
 - **Table**: Compact tabular format with all claims in rows
+
+### Multi-Hop Extension
+
+The repository also includes `benchmarks/multihop_claims/`: 3 cross-document packets, 15 rendered documents, and 77 target incidents. These cases keep the same incident schema but split required fields across packet documents, forcing joins such as:
+
+| Join key | Supporting document |
+|----------|---------------------|
+| `policy_number` | Policy register |
+| `unit_number` | Driver roster |
+| `cause_code` | Cause-code legend |
+| `incident_number` | Claimant index and financial ledger |
+
+Each packet includes HTML, PDF, canonical transcripts, Gemini OCR transcripts, `manifest.json`, and `ground_truth.json`. The mixed packet also includes a distractor claims export with overlapping policy/reference values.
 
 ## Saved OCR Baselines
 

@@ -1,0 +1,90 @@
+{
+  "suite_name": "longlistbench-multihop",
+  "version": "1.0.2",
+  "description": "Cross-document long-list extraction cases requiring joins across rendered loss-run summaries and supporting reference documents.",
+  "generated_at": "2026-06-10T13:12:10.351391+00:00",
+  "base_seed": 4242,
+  "total_cases": 3,
+  "total_documents": 15,
+  "total_incidents": 77,
+  "case_types": [
+    "mixed",
+    "multi_hop"
+  ],
+  "transcript_conditions_planned": [
+    "canonical",
+    "ocr"
+  ],
+  "transcript_conditions_available": [
+    "canonical",
+    "ocr"
+  ],
+  "cases": [
+    {
+      "id": "multihop_012_001_roster_cause",
+      "case_type": "multi_hop",
+      "num_incidents": 12,
+      "num_documents": 4,
+      "complexity_tags": [
+        "cross_document_join",
+        "coded_values",
+        "supporting_ledger"
+      ],
+      "join_requirements": [
+        "unit_number -> driver_roster",
+        "cause_code -> cause_code_legend",
+        "incident_number -> financial_ledger"
+      ],
+      "transcript_conditions_available": [
+        "canonical",
+        "ocr"
+      ],
+      "manifest": "multihop_012_001_roster_cause/manifest.json"
+    },
+    {
+      "id": "multihop_025_001_policy_claimant",
+      "case_type": "multi_hop",
+      "num_incidents": 25,
+      "num_documents": 4,
+      "complexity_tags": [
+        "cross_document_join",
+        "many_to_one_policy",
+        "claimant_lookup"
+      ],
+      "join_requirements": [
+        "policy_number -> policy_register",
+        "incident_number -> claimant_index",
+        "incident_number -> financial_ledger"
+      ],
+      "transcript_conditions_available": [
+        "canonical",
+        "ocr"
+      ],
+      "manifest": "multihop_025_001_policy_claimant/manifest.json"
+    },
+    {
+      "id": "mixed_040_001_full_packet",
+      "case_type": "mixed",
+      "num_incidents": 40,
+      "num_documents": 7,
+      "complexity_tags": [
+        "cross_document_join",
+        "mixed_layout",
+        "distractor_documents",
+        "longer_list"
+      ],
+      "join_requirements": [
+        "policy_number -> policy_register",
+        "unit_number -> driver_roster",
+        "cause_code -> cause_code_legend",
+        "incident_number -> claimant_index",
+        "incident_number -> financial_ledger"
+      ],
+      "transcript_conditions_available": [
+        "canonical",
+        "ocr"
+      ],
+      "manifest": "mixed_040_001_full_packet/manifest.json"
+    }
+  ]
+}

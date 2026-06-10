@@ -35,6 +35,7 @@ Run these commands from the repository root.
    Then edit the repo-root `.env` and set:
    ```
    GEMINI_API_KEY=your-gemini-api-key
+   OPENROUTER_API_KEY=your-openrouter-api-key  # optional, for --ocr-engine openrouter
    OPENAI_API_KEY=your-openai-api-key
 
    # Optional override (only affects benchmarks/evaluate_models.py; default is gemini-2.5-flash)
@@ -65,6 +66,25 @@ If you need to regenerate `claims/metadata.json` (without regenerating PDFs/HTML
 ```bash
 python benchmarks/generate_claims_benchmark.py --rebuild-metadata
 ```
+
+## Generate Multi-Hop Benchmark
+
+Generate cross-document packet cases where the full incident records require joins across multiple rendered documents:
+
+```bash
+python benchmarks/generate_multihop_benchmark.py
+```
+
+This writes `benchmarks/multihop_claims/` with 3 case folders, 15 rendered documents, and 77 target incidents. Each case folder contains:
+
+- `manifest.json` - document roles, join requirements, available transcript conditions
+- `ground_truth.json` - target incident list under the same loss-run schema
+- `<document_role>.html`
+- `<document_role>.pdf`
+- `<document_role>_canonical.md`
+- `<document_role>_ocr.md` after OCR
+
+Current join requirements include `policy_number -> policy_register`, `unit_number -> driver_roster`, `cause_code -> cause_code_legend`, and `incident_number -> claimant_index/financial_ledger`. The mixed packet also includes a distractor claims export with overlapping keys.
 
 ## Problem Matrix (Which files have which problems)
 
@@ -122,6 +142,22 @@ Process PDF files in the `claims/` directory using Gemini OCR:
 
 ```bash
 python benchmarks/ocr_claims_pdfs.py
+```
+
+For multi-hop packets, OCR recursively below the case directory:
+
+```bash
+python benchmarks/ocr_claims_pdfs.py --claims-dir benchmarks/multihop_claims --recursive --force
+```
+
+If you use OpenRouter for Gemini OCR instead of a direct Gemini key:
+
+```bash
+python benchmarks/ocr_claims_pdfs.py \
+  --claims-dir benchmarks/multihop_claims \
+  --recursive \
+  --ocr-engine openrouter \
+  --model google/gemini-3.5-flash
 ```
 
 This will:
@@ -187,9 +223,11 @@ This repository includes released evaluation artifacts under:
 ## Directory Structure
 
 - `claims/` - Generated benchmark claims (PDFs, JSONs, canonical transcripts, and OCR transcripts)
+- `multihop_claims/` - Cross-document packet cases with manifests, ground truth, PDFs, canonical transcripts, and OCR transcripts
 - `results/scratch/` - Scratch evaluation output directory (default)
 - `results/released/` - Released evaluation artifacts per tier
 - `synthetic/` - Synthetic data generation tools
 - `generate_claims_benchmark.py` - Main benchmark generation script
+- `generate_multihop_benchmark.py` - Cross-document multi-hop packet generator
 - `ocr_claims_pdfs.py` - OCR processing script for PDFs
 - `evaluate_models.py` - Multi-model evaluation script

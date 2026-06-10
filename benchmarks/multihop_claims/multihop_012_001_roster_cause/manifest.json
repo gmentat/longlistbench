@@ -1,0 +1,94 @@
+{
+  "id": "multihop_012_001_roster_cause",
+  "case_type": "multi_hop",
+  "num_incidents": 12,
+  "complexity_tags": [
+    "cross_document_join",
+    "coded_values",
+    "supporting_ledger"
+  ],
+  "join_requirements": [
+    "unit_number -> driver_roster",
+    "cause_code -> cause_code_legend",
+    "incident_number -> financial_ledger"
+  ],
+  "documents": [
+    {
+      "id": "loss_run_summary",
+      "role": "loss_run_summary",
+      "files": {
+        "html": "loss_run_summary.html",
+        "pdf": "loss_run_summary.pdf",
+        "canonical_md": "loss_run_summary_canonical.md",
+        "ocr_md": "loss_run_summary_ocr.md"
+      },
+      "join_keys": [
+        "incident_number"
+      ],
+      "transcripts_available": [
+        "canonical",
+        "ocr"
+      ]
+    },
+    {
+      "id": "driver_roster",
+      "role": "driver_roster",
+      "files": {
+        "html": "driver_roster.html",
+        "pdf": "driver_roster.pdf",
+        "canonical_md": "driver_roster_canonical.md",
+        "ocr_md": "driver_roster_ocr.md"
+      },
+      "join_keys": [
+        "unit_number"
+      ],
+      "transcripts_available": [
+        "canonical",
+        "ocr"
+      ]
+    },
+    {
+      "id": "cause_code_legend",
+      "role": "cause_code_legend",
+      "files": {
+        "html": "cause_code_legend.html",
+        "pdf": "cause_code_legend.pdf",
+        "canonical_md": "cause_code_legend_canonical.md",
+        "ocr_md": "cause_code_legend_ocr.md"
+      },
+      "join_keys": [
+        "cause_code"
+      ],
+      "transcripts_available": [
+        "canonical",
+        "ocr"
+      ]
+    },
+    {
+      "id": "financial_ledger",
+      "role": "financial_ledger",
+      "files": {
+        "html": "financial_ledger.html",
+        "pdf": "financial_ledger.pdf",
+        "canonical_md": "financial_ledger_canonical.md",
+        "ocr_md": "financial_ledger_ocr.md"
+      },
+      "join_keys": [
+        "incident_number"
+      ],
+      "transcripts_available": [
+        "canonical",
+        "ocr"
+      ]
+    }
+  ],
+  "ground_truth": "ground_truth.json",
+  "transcript_conditions_planned": [
+    "canonical",
+    "ocr"
+  ],
+  "transcript_conditions_available": [
+    "canonical",
+    "ocr"
+  ]
+}

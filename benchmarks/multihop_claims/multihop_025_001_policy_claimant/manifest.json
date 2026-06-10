@@ -1,0 +1,94 @@
+{
+  "id": "multihop_025_001_policy_claimant",
+  "case_type": "multi_hop",
+  "num_incidents": 25,
+  "complexity_tags": [
+    "cross_document_join",
+    "many_to_one_policy",
+    "claimant_lookup"
+  ],
+  "join_requirements": [
+    "policy_number -> policy_register",
+    "incident_number -> claimant_index",
+    "incident_number -> financial_ledger"
+  ],
+  "documents": [
+    {
+      "id": "loss_run_summary",
+      "role": "loss_run_summary",
+      "files": {
+        "html": "loss_run_summary.html",
+        "pdf": "loss_run_summary.pdf",
+        "canonical_md": "loss_run_summary_canonical.md",
+        "ocr_md": "loss_run_summary_ocr.md"
+      },
+      "join_keys": [
+        "incident_number"
+      ],
+      "transcripts_available": [
+        "canonical",
+        "ocr"
+      ]
+    },
+    {
+      "id": "policy_register",
+      "role": "policy_register",
+      "files": {
+        "html": "policy_register.html",
+        "pdf": "policy_register.pdf",
+        "canonical_md": "policy_register_canonical.md",
+        "ocr_md": "policy_register_ocr.md"
+      },
+      "join_keys": [
+        "policy_number"
+      ],
+      "transcripts_available": [
+        "canonical",
+        "ocr"
+      ]
+    },
+    {
+      "id": "claimant_index",
+      "role": "claimant_index",
+      "files": {
+        "html": "claimant_index.html",
+        "pdf": "claimant_index.pdf",
+        "canonical_md": "claimant_index_canonical.md",
+        "ocr_md": "claimant_index_ocr.md"
+      },
+      "join_keys": [
+        "incident_number"
+      ],
+      "transcripts_available": [
+        "canonical",
+        "ocr"
+      ]
+    },
+    {
+      "id": "financial_ledger",
+      "role": "financial_ledger",
+      "files": {
+        "html": "financial_ledger.html",
+        "pdf": "financial_ledger.pdf",
+        "canonical_md": "financial_ledger_canonical.md",
+        "ocr_md": "financial_ledger_ocr.md"
+      },
+      "join_keys": [
+        "incident_number"
+      ],
+      "transcripts_available": [
+        "canonical",
+        "ocr"
+      ]
+    }
+  ],
+  "ground_truth": "ground_truth.json",
+  "transcript_conditions_planned": [
+    "canonical",
+    "ocr"
+  ],
+  "transcript_conditions_available": [
+    "canonical",
+    "ocr"
+  ]
+}

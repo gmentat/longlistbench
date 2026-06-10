@@ -23,6 +23,8 @@ Instead of supplying the OCR text in the prompt, the harness places the OCR file
 
 To ensure schema conformance, model outputs are validated and normalized against a Pydantic schema before scoring (see \hyperref[sec:appendix-schemas]{Appendix~A} for full schema definitions and scoring rules). Predictions and aggregate reports are stored as machine-readable JSON (with an additional Markdown summary for convenience).
 
+The cross-document multi-hop extension uses the same target incident schema, but the input is a packet of documents rather than a single transcript. The quantitative baseline table in this revision covers the 80-document single-document suite; multi-hop packet results are left for follow-up agentic evaluations.
+
 \subsection{Report regeneration and validation}
 To support reproducible analysis, the harness can regenerate summary reports offline from saved prediction files and optionally reuse timing, token, and cost metadata from a previous report. A companion checker recomputes metrics from the saved predictions and the golden data, and flags schema violations or report inconsistencies.
 

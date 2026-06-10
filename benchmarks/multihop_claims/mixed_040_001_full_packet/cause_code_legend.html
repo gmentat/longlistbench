@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Cause Code Legend</title>
+  <style>
+    @page { size: A4; margin: 14mm; }
+    body { font-family: Arial, sans-serif; color: #1f2933; font-size: 9pt; }
+    .header { border-bottom: 2px solid #1f2933; margin-bottom: 14px; padding-bottom: 8px; }
+    .header h1 { font-size: 17pt; margin: 0 0 4px; }
+    .header div { color: #52606d; font-size: 9pt; }
+    .note { background: #fff7d6; border: 1px solid #e1b12c; padding: 8px; margin: 10px 0 14px; }
+    .table-section { margin: 12px 0; }
+    table { width: 100%; border-collapse: collapse; table-layout: fixed; }
+    th { background: #243b53; color: white; font-weight: 700; }
+    th, td { border: 1px solid #9fb3c8; padding: 4px; vertical-align: top; word-wrap: break-word; }
+    tr:nth-child(even) td { background: #f5f7fa; }
+    .small { font-size: 7.2pt; }
+    .page-break { page-break-before: always; }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Cause Code Legend</h1>
+    <div>Packet mixed_040_001_full_packet; join on Cause Code</div>
+  </div>
+  
+<div class="table-section">
+  <table class="claims-table">
+    <thead><tr><th>Cause Code</th><th>Coverage Type</th><th>Description</th><th>Handler</th></tr></thead>
+    <tbody>
+      <tr><td>BKD</td><td>Liability</td><td>Insured vehicle backed into fixed object or parked vehicle</td><td>Claims Adjuster</td></tr><tr><td>RER</td><td>Liability</td><td>Insured vehicle rear-ended another vehicle</td><td>Claims Adjuster</td></tr><tr><td>TRN</td><td>Liability</td><td>Wide turn or lane change contact with another vehicle</td><td>Claims Adjuster</td></tr><tr><td>ROL</td><td>Physical Damage</td><td>Rollover or loss of control damage to insured vehicle</td><td>Claims Adjuster</td></tr><tr><td>CGO</td><td>Cargo</td><td>Cargo shortage, damage, contamination, or spoilage</td><td>Claims Adjuster</td></tr><tr><td>IMD</td><td>Inland Marine</td><td>Equipment or transported vehicle damage during handling</td><td>Claims Adjuster</td></tr>
+    </tbody>
+  </table>
+</div>
+
+</body>
+</html>

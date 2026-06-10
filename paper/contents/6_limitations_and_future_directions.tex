@@ -9,7 +9,7 @@ LongListBench is designed as a measurement tool for long-list extraction under c
 \toprule
 Covered in v1 & Not covered / out of scope \\
 \midrule
-Claims-style long lists (loss runs) in two renderings (detailed and table) & Other long-list families (invoices, purchase orders, medical billing, financial statements) and non-English documents \\
+Claims-style long lists (loss runs) in two renderings (detailed and table), plus an initial claims-packet multi-hop extension & Other long-list families (invoices, purchase orders, medical billing, financial statements), non-English documents, and larger multi-hop corpora \\
 Programmatic layouts with seven injected phenomena (including some format-specific variants and exact duplicates) & Scan artifacts (skew, blur, stamps, handwriting), complex typography, and highly idiosyncratic templates \\
 Canonical and VLM-OCR transcript conditions for claims-style documents & Broader OCR stacks and prompt variants; OCR bounding boxes and reading-order supervision \\
 Schema-conformant, field-level micro scoring with canonicalization & Semantic equivalence, downstream task-based metrics, and duplicate-aware entity matching \\
@@ -25,8 +25,8 @@ We view LongListBench as an extensible benchmark and evaluation harness. The mos
 \paragraph{Broader OCR conditions and layout supervision.}
 An immediate next step is to expand OCR conditions beyond a single VLM-based OCR output. This includes scanned variants (blur, noise, skew, and resolution changes), classical OCR baselines, and prompt variations. For a small subset, releasing page-level supervision (e.g., table cell boxes or reading-order annotations) would enable controlled evaluation of layout-aware reconstruction methods.
 
-\paragraph{Protocol benchmarks for long contexts.}
-The extreme tier (500 incidents) is intended to pressure extraction protocols, not only base model quality. A natural extension is to benchmark chunking and merge strategies, retrieval-augmented extraction, and layout-aware segmentation under a unified interface, and to report cost and latency alongside accuracy.
+\paragraph{Agentic and retrieval-loop protocols.}
+The extreme tier (500 incidents) and the multi-hop packet extension are intended to pressure extraction protocols, not only base model quality. A natural extension is to benchmark agentic extraction systems, retrieval/loop-based methods, verification passes, chunking and merge strategies, and layout-aware segmentation under a unified interface, and to report cost and latency alongside accuracy.
 
 \paragraph{Richer evaluation views.}
 Field-level micro F1 is a stable aggregate, but it hides systematic error patterns. Future releases should include per-field breakdowns, record-level exact match rates, and duplicate-aware matching that treats repeated incidents as first-class entities rather than an edge case of identifier collisions.

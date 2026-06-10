@@ -23,7 +23,10 @@ from typing import Any
 
 import sys
 
-from canonical_transcripts import write_canonical_markdown_from_html
+try:
+    from .canonical_transcripts import write_canonical_markdown_from_html
+except ImportError:
+    from canonical_transcripts import write_canonical_markdown_from_html
 
 
 # Benchmark configuration

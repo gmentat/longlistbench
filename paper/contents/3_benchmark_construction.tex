@@ -97,3 +97,18 @@ Tables often use merged cells for visual grouping. A common pattern is merging t
 The released dataset (\texttt{longlistbench-v1}, version 1.0.2) contains 80 rendered documents (40 detailed, 40 table) with 6{,}828 incident rows and paired clean and OCR transcripts for evaluation. Difficulty tiers are configured as 15 easy base instances (seeded with 10 claims/PDF), 12 medium (25), 8 hard (50), and 5 extreme instances seeded with 100 claims/PDF and then expanded to 500 incidents per released document via \texttt{large\_doc}. Each base instance is rendered in both detailed and table formats, yielding 80 documents in total. Enabling \texttt{duplicates} injects additional duplicate rows, causing some documents to exceed the seed count.
 
 Across the 80 documents, the most common injected issues are multi-row entities (62/80), page breaks (56/80), duplicates (56/80), and multiple tables (40/80).
+
+\subsection{Cross-document multi-hop extension}
+Many production extraction tasks are not contained in a single table or even a single PDF. A target loss-run record may require joining a primary schedule against policy registers, driver rosters, cause-code legends, claimant indexes, and payment ledgers. This pattern is awkward for one-shot extraction because the model must decide which documents to inspect, preserve join keys, and merge partial records without confusing distractor rows.
+
+To make this failure mode measurable, we add an initial multi-hop extension under \path{benchmarks/multihop\_claims}. It contains 3 packet cases, 15 rendered documents, and 77 target incidents. Each packet includes a \path{manifest.json} describing document roles and join requirements, a \path{ground\_truth.json} file using the same incident schema, rendered HTML/PDF artifacts, canonical transcripts, and Gemini OCR transcripts.
+
+The extension uses the following join patterns:
+\begin{itemize}
+    \item \texttt{policy\_number} $\rightarrow$ policy register for company, insured, division, policy state, and agency fields.
+    \item \texttt{unit\_number} $\rightarrow$ driver roster for driver identity.
+    \item \texttt{cause\_code} $\rightarrow$ cause-code legend for coverage type and normalized description.
+    \item \texttt{incident\_number} $\rightarrow$ claimant index and financial ledger for claimants, adjuster notes, and nested financial breakdowns.
+\end{itemize}
+
+The largest packet mixes all of these joins and includes a distractor claims export that reuses overlapping policy/reference values but contains out-of-packet incident identifiers. This design is intended to stress agentic extraction systems that can inspect multiple files, plan joins, and verify record completeness, while preserving comparability with the base single-document schema and scorer.

@@ -5,6 +5,7 @@ Saves OCR results as Markdown files alongside the PDFs.
 """
 
 import asyncio
+import base64
 import io
 import os
 import re
@@ -141,6 +142,30 @@ def setup_gemini():
     return genai.Client(api_key=api_key)
 
 
+def setup_openrouter():
+    """Configure an OpenRouter client for Gemini OCR via OpenAI-compatible API."""
+    try:
+        from openai import AsyncOpenAI
+    except ImportError:
+        print("Error: OpenAI SDK not installed.")
+        print("Install with: python -m pip install openai")
+        sys.exit(1)
+
+    api_key = os.getenv("OPENROUTER_API_KEY") or os.getenv("POLICY_CHECKING_OPENROUTER_API_KEY")
+    if not api_key:
+        print("Error: OPENROUTER_API_KEY or POLICY_CHECKING_OPENROUTER_API_KEY not set.")
+        sys.exit(1)
+
+    return AsyncOpenAI(
+        api_key=api_key,
+        base_url=os.getenv("OPENROUTER_BASE_URL", "https://openrouter.ai/api/v1"),
+        default_headers={
+            "HTTP-Referer": "https://github.com/kaydotai/longlistbench",
+            "X-Title": "LongListBench OCR",
+        },
+    )
+
+
 def get_page_count(pdf_path):
     """Get the number of pages in the PDF."""
     if pdfinfo_from_path is not None:
@@ -257,6 +282,44 @@ async def ocr_image_async(client: Any, image: Any, model_name: str = "gemini-2.5
     return response.text or ""
 
 
+def _image_data_url(image: Any) -> str:
+    buffer = io.BytesIO()
+    image.save(buffer, format="PNG")
+    encoded = base64.b64encode(buffer.getvalue()).decode("ascii")
+    return f"data:image/png;base64,{encoded}"
+
+
+async def ocr_image_openrouter_async(client: Any, image: Any, model_name: str) -> str:
+    """OCR a single image through OpenRouter using a Gemini vision model."""
+    response = await asyncio.wait_for(
+        client.chat.completions.create(
+            model=model_name,
+            temperature=0,
+            messages=[
+                {"role": "system", "content": SYSTEM_PROMPT},
+                {
+                    "role": "user",
+                    "content": [
+                        {
+                            "type": "text",
+                            "text": (
+                                "OCR the image into Markdown. Format tables as CSV. "
+                                "Do not surround your output with triple backticks."
+                            ),
+                        },
+                        {
+                            "type": "image_url",
+                            "image_url": {"url": _image_data_url(image)},
+                        },
+                    ],
+                },
+            ],
+        ),
+        timeout=OCR_PAGE_TIMEOUT_SECONDS,
+    )
+    return response.choices[0].message.content or ""
+
+
 async def ocr_page_with_gemini(client: Any, image: Any, page_num: int, model_names: list[str]) -> str:
     """Send a single image to Gemini for OCR and return Markdown text."""
     last_error: Exception | None = None
@@ -274,21 +337,57 @@ async def ocr_page_with_gemini(client: Any, image: Any, page_num: int, model_nam
     return f"# Page {page_num}\n\n[Error: {last_error}]\n\n"
 
 
-async def process_page_async(client: Any, pdf_path: Path, page_num: int, semaphore: asyncio.Semaphore, model_names: list[str], dpi: int = 200) -> tuple[int, str]:
+async def ocr_page_with_openrouter(client: Any, image: Any, page_num: int, model_names: list[str]) -> str:
+    """Send a single image to OpenRouter Gemini OCR and return Markdown text."""
+    last_error: Exception | None = None
+    for model_name in model_names:
+        try:
+            page_text = await ocr_image_openrouter_async(client, image, model_name)
+            if page_text.strip():
+                return f"# Page {page_num}\n\n{page_text}\n\n"
+            last_error = ValueError(f"Empty response (model={model_name})")
+        except Exception as e:
+            last_error = e
+            print(f"Warning: Page {page_num} failed with model={model_name}: {e}")
+
+    print(f"Warning: Page {page_num} failed after all model fallbacks: {last_error}")
+    return f"# Page {page_num}\n\n[Error: {last_error}]\n\n"
+
+
+async def process_page_async(
+    client: Any,
+    pdf_path: Path,
+    page_num: int,
+    semaphore: asyncio.Semaphore,
+    model_names: list[str],
+    dpi: int = 200,
+    ocr_engine: str = "gemini",
+) -> tuple[int, str]:
     """Process a single page with semaphore for concurrency control."""
     async with semaphore:
         image = convert_pdf_page(pdf_path, page_num, dpi=dpi)
         if image is None:
             return (page_num, f"# Page {page_num}\n\n[Error: Could not convert page]\n\n")
-        
-        page_text = await ocr_page_with_gemini(client, image, page_num, model_names)
+
+        if ocr_engine == "openrouter":
+            page_text = await ocr_page_with_openrouter(client, image, page_num, model_names)
+        else:
+            page_text = await ocr_page_with_gemini(client, image, page_num, model_names)
         return (page_num, page_text)
 
 
-async def process_pdf_async(client: Any, pdf_path: Path, output_path: Path, max_concurrent: int = 3, model_names: list[str] | None = None, dpi: int = 200) -> bool:
+async def process_pdf_async(
+    client: Any,
+    pdf_path: Path,
+    output_path: Path,
+    max_concurrent: int = 3,
+    model_names: list[str] | None = None,
+    dpi: int = 200,
+    ocr_engine: str = "gemini",
+) -> bool:
     """Process PDF pages with async concurrency control."""
     if not model_names:
-        model_names = ["gemini-2.5-flash"]
+        model_names = ["google/gemini-3.5-flash"] if ocr_engine == "openrouter" else ["gemini-2.5-flash"]
 
     total_pages = get_page_count(pdf_path)
     if total_pages is None:
@@ -301,7 +400,7 @@ async def process_pdf_async(client: Any, pdf_path: Path, output_path: Path, max_
     
     # Create tasks for all pages
     tasks = [
-        process_page_async(client, pdf_path, page_num, semaphore, model_names, dpi)
+        process_page_async(client, pdf_path, page_num, semaphore, model_names, dpi, ocr_engine)
         for page_num in range(1, total_pages + 1)
     ]
     
@@ -320,20 +419,64 @@ async def process_pdf_async(client: Any, pdf_path: Path, output_path: Path, max_
     return True
 
 
-def process_pdf(client: Any, pdf_path: Path, output_path: Path, max_concurrent: int = 3, model_names: list[str] | None = None, dpi: int = 200) -> bool:
+def process_pdf(client: Any, pdf_path: Path, output_path: Path, max_concurrent: int = 3, model_names: list[str] | None = None, dpi: int = 200, ocr_engine: str = "gemini") -> bool:
     """Synchronous wrapper for async PDF processing."""
-    return asyncio.run(process_pdf_async(client, pdf_path, output_path, max_concurrent, model_names, dpi))
+    return asyncio.run(process_pdf_async(client, pdf_path, output_path, max_concurrent, model_names, dpi, ocr_engine))
+
+
+def collect_pdf_files(
+    claims_dir: Path,
+    *,
+    file_name: str | None,
+    recursive: bool,
+    tiers: list[str] | None,
+    limit: int,
+) -> list[Path]:
+    """Collect PDFs from a benchmark directory with stable top-level-first ordering."""
+    if file_name:
+        pdf_path = Path(file_name)
+        if not pdf_path.is_absolute():
+            pdf_path = claims_dir / file_name
+        return [pdf_path] if pdf_path.exists() else []
+
+    candidates = claims_dir.rglob("*.pdf") if recursive else claims_dir.glob("*.pdf")
+    pdf_files = sorted(
+        candidates,
+        key=lambda path: (
+            len(path.relative_to(claims_dir).parts),
+            path.relative_to(claims_dir).as_posix(),
+        ),
+    )
+
+    if tiers:
+        pdf_files = [p for p in pdf_files if any(p.name.startswith(f"{tier}_") for tier in tiers)]
+    if limit and limit > 0:
+        pdf_files = pdf_files[:limit]
+    return pdf_files
 
 
 def build_arg_parser():
     import argparse
 
-    parser = argparse.ArgumentParser(description="OCR PDF files using Google Gemini")
+    parser = argparse.ArgumentParser(description="OCR PDF files using Gemini")
+    parser.add_argument(
+        "--claims-dir",
+        type=str,
+        help="Directory containing PDFs (default: benchmarks/claims)",
+    )
+    parser.add_argument(
+        "--recursive",
+        action="store_true",
+        help="Recursively process PDFs below --claims-dir (useful for multi-hop case folders)",
+    )
     parser.add_argument(
         "--model", "-m",
         type=str,
         default="gemini-2.5-flash",
-        help="Gemini model to use (default: gemini-2.5-flash, try: gemini-3-flash-preview)",
+        help=(
+            "Gemini model to use. For --ocr-engine openrouter, the default is "
+            "OPENROUTER_OCR_MODEL or google/gemini-3.5-flash."
+        ),
     )
     parser.add_argument(
         "--fallback-models",
@@ -383,10 +526,11 @@ def build_arg_parser():
     )
     parser.add_argument(
         "--ocr-engine",
-        choices=["auto", "text-layer", "gemini"],
+        choices=["auto", "text-layer", "gemini", "openrouter"],
         default="gemini",
         help=(
             "OCR engine: gemini (vision OCR only, default), "
+            "openrouter (Gemini vision through OpenRouter), "
             "auto (prefer text-layer, fallback gemini), "
             "text-layer (pdftotext only)."
         ),
@@ -398,6 +542,12 @@ async def main_async() -> None:
     parser = build_arg_parser()
     args = parser.parse_args()
 
+    default_google_model = parser.get_default("model")
+    if args.ocr_engine == "openrouter" and args.model == default_google_model:
+        args.model = os.getenv("OPENROUTER_OCR_MODEL", "google/gemini-3.5-flash")
+    if args.ocr_engine == "openrouter" and args.fallback_models == parser.get_default("fallback_models"):
+        args.fallback_models = args.model
+
     fallback_models = [m.strip() for m in re.split(r"[\s,]+", args.fallback_models) if m.strip()]
     model_chain: list[str] = []
     for m in [args.model, *fallback_models]:
@@ -406,27 +556,19 @@ async def main_async() -> None:
     
     # Setup paths
     script_dir = Path(__file__).parent
-    claims_dir = script_dir / "claims"
+    claims_dir = Path(args.claims_dir) if args.claims_dir else script_dir / "claims"
     
     if not claims_dir.exists():
         print(f"Error: Claims directory not found: {claims_dir}")
         sys.exit(1)
     
-    # Find PDF files
-    if args.file:
-        pdf_path = claims_dir / args.file
-        if not pdf_path.exists():
-            print(f"Error: PDF file not found: {pdf_path}")
-            sys.exit(1)
-        pdf_files = [pdf_path]
-    else:
-        pdf_files = sorted(claims_dir.glob("*.pdf"))
-
-    if args.tiers and not args.file:
-        pdf_files = [p for p in pdf_files if any(p.name.startswith(f"{tier}_") for tier in args.tiers)]
-
-    if args.limit and args.limit > 0:
-        pdf_files = pdf_files[: args.limit]
+    pdf_files = collect_pdf_files(
+        claims_dir,
+        file_name=args.file,
+        recursive=args.recursive,
+        tiers=args.tiers,
+        limit=args.limit,
+    )
     
     if not pdf_files:
         print(f"No PDF files found in {claims_dir}")
@@ -434,7 +576,7 @@ async def main_async() -> None:
     
     print(f"Found {len(pdf_files)} PDF file(s) to process")
     print(f"OCR engine: {args.ocr_engine}")
-    if args.ocr_engine in {"auto", "gemini"}:
+    if args.ocr_engine in {"auto", "gemini", "openrouter"}:
         print(f"Models: {' -> '.join(model_chain)}, DPI: {args.dpi}")
     print()
 
@@ -443,6 +585,11 @@ async def main_async() -> None:
         print("Setting up Gemini API...")
         client = setup_gemini()
         print("✓ Gemini API configured")
+        print()
+    elif args.ocr_engine == "openrouter":
+        print("Setting up OpenRouter API...")
+        client = setup_openrouter()
+        print("✓ OpenRouter API configured")
         print()
     
     # Process each PDF
@@ -463,7 +610,7 @@ async def main_async() -> None:
         success = False
         if args.ocr_engine in {"auto", "text-layer"}:
             success = process_pdf_text_layer(pdf_path, output_path)
-        if not success and args.ocr_engine in {"auto", "gemini"}:
+        if not success and args.ocr_engine in {"auto", "gemini", "openrouter"}:
             assert client is not None
             success = await process_pdf_async(
                 client,
@@ -472,6 +619,7 @@ async def main_async() -> None:
                 max_concurrent=args.max_concurrent,
                 model_names=model_chain,
                 dpi=args.dpi,
+                ocr_engine="openrouter" if args.ocr_engine == "openrouter" else "gemini",
             )
         
         if success:
