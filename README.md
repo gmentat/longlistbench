@@ -87,16 +87,19 @@ The released dataset includes additional rows from `duplicates` and `large_doc`.
 - **Detailed**: Incident sections with line items and financial breakdowns
 - **Table**: Compact tabular format with all claims in rows
 
-## Verified Gemini 2.5 OCR Baseline
+## Saved OCR Baselines
 
-Using the synchronized OCR-condition snapshot from this repository, we highlight two local extraction regimes:
+Using the synchronized 80-document OCR-condition snapshot from this repository, the saved reports include these extraction-regime baselines:
 
-| Regime | Overall weighted micro F1 | Extreme-tier weighted micro F1 |
-|--------|----------------------------|--------------------------------|
-| Full-context one-shot | 27.4% | 5.9% |
-| Auto-chunked (`longlistbench`) | 84.8% | 81.7% |
+| Regime | Model | Overall weighted micro F1 | Extreme-tier weighted micro F1 |
+|--------|-------|----------------------------|--------------------------------|
+| Full-context one-shot | Gemini 2.5 | 27.4% | 5.9% |
+| Full-context one-shot | GPT-5.5 | 29.9% | 0.0% |
+| Auto-chunked (`longlistbench`) | Gemini 2.5 | 84.8% | 81.7% |
+| Auto-chunked (`longlistbench`) | GPT-5.5 | 85.4% | 84.6% |
+| Agentic sandbox | GPT-5.5 | 90.6% | 89.4% |
 
-Moving from full-context one-shot to the local auto-chunked regime improves overall weighted F1 by 57.4 points and extreme-tier weighted F1 by 75.8 points on the same snapshot. The one-shot regime remains strong on easy documents (97.2%), but drops to 74.6% on medium, 44.4% on hard, and 5.9% on extreme. By contrast, the local auto-chunked regime reaches 97.3% weighted F1 on easy, 96.5% on medium, 87.7% on hard, 71.0% on detailed documents overall, and 95.9% on table documents overall. Chunking therefore mitigates the catastrophic long-context failure mode, but the local chunked baseline still leaves substantial residual errors, especially on long detailed documents. The evaluator now also supports direct clean-vs-OCR comparisons by running the same extractor over `canonical` and `ocr` transcript conditions.
+Moving from full-context one-shot to the local auto-chunked Gemini regime improves overall weighted F1 by 57.4 points and extreme-tier weighted F1 by 75.8 points on the same snapshot. Running GPT-5.5 across one-shot, auto-chunked, and agentic sandbox regimes shows the same protocol sensitivity at a fixed model: 29.9% < 85.4% < 90.6% overall weighted F1. The evaluator also supports direct clean-vs-OCR comparisons by running the same extractor over `canonical` and `ocr` transcript conditions.
 
 ## Development
 

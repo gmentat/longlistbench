@@ -24,7 +24,7 @@ Instead of supplying the OCR text in the prompt, the harness places the OCR file
 To ensure schema conformance, model outputs are validated and normalized against a Pydantic schema before scoring (see \hyperref[sec:appendix-schemas]{Appendix~A} for full schema definitions and scoring rules). Predictions and aggregate reports are stored as machine-readable JSON (with an additional Markdown summary for convenience).
 
 \subsection{Report regeneration and validation}
-To support reproducible analysis, the harness can regenerate summary reports offline from saved prediction files and optionally reuse extraction-time values from a previous report. A companion checker recomputes metrics from the saved predictions and the golden data, and flags schema violations or report inconsistencies.
+To support reproducible analysis, the harness can regenerate summary reports offline from saved prediction files and optionally reuse timing, token, and cost metadata from a previous report. A companion checker recomputes metrics from the saved predictions and the golden data, and flags schema violations or report inconsistencies.
 
 \subsection{Field-level matching and metrics}
 For scoring we use the incident number as the record identifier. Incident numbers are normalized by stripping common prefixes (e.g., \texttt{\#}, \texttt{Incident \#}). Let $G$ be the list of ground-truth records and $P$ be the list of predicted records. We compute micro precision/recall/F1 over field-value pairs, after canonicalizing each incident under the schema.

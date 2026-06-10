@@ -131,7 +131,61 @@ Document:
 \end{verbatim}
 \endgroup
 
-\subsection*{A.5 Field Scoring Rules}
+\subsection*{A.5 Agentic Sandbox Instructions}
+
+The agentic regime uses the same output schema and scorer, but the transcript is provided as a sandbox file rather than inline prompt text. The following instructions are given to the sandbox agent; the harness substitutes the schema after the prompt.
+
+\begingroup
+\small
+\begin{verbatim}
+You extract structured data from a document.
+
+In your sandbox workspace:
+- Input:  docs/document_ocr.md - the OCR of one insurance loss-run document.
+- Output: output/incidents.json - write your result here.
+
+You have a full Linux sandbox: you can run shell commands and Python, read,
+search, and slice files, install packages, and write files. The document may be
+large. How you approach the extraction is up to you - choose whatever you judge
+most reliable for this document.
+
+Goal: extract EVERY incident record from the document into output/incidents.json
+as a JSON object of the form {"incidents": [ ... ]}.
+
+Field requirements (per the schema below):
+- Every incident must include ALL fields in the schema.
+- Unknown values: required string fields -> "" ; optional fields -> null ;
+  list fields -> [] ; numeric fields -> 0.0.
+- Capture the underlying value only: strip OCR/markdown artifacts such as
+  surrounding *emphasis* markers or alignment padding.
+
+Verify your output before finishing - do not trust a first pass:
+- Confirm you captured every record and none are missing or truncated.
+- Spot-check records from different parts of the document (beginning, middle,
+  and end), comparing every field against the source - not just the first few
+  records.
+- Each field must hold only its own value: no text belonging to a neighboring
+  field or label, and no value carried over from another record or from a
+  header.
+- Fix any mismatches you find, then re-check.
+- Ensure output/incidents.json is valid JSON that conforms to the schema.
+- When finished, also print the final JSON object once as a JSON code block.
+
+Schema (JSON Schema):
+{schema_json}
+\end{verbatim}
+\endgroup
+
+The task message for each run is:
+
+\begingroup
+\small
+\begin{verbatim}
+Extract all incidents from docs/document_ocr.md into output/incidents.json.
+\end{verbatim}
+\endgroup
+
+\subsection*{A.6 Field Scoring Rules}
 
 We compute schema-conformant, field-level precision/recall/F1 by canonicalizing records under the schema and comparing multisets of field-value pairs.
 

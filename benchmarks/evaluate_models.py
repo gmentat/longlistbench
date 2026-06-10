@@ -246,6 +246,86 @@ def _legacy_prediction_output_path(output_dir: Path, sample: str, transcript: st
     return output_dir / f"{sample}_{model_key}_predicted.json"
 
 
+def _metadata_key(sample: str | None, transcript: str | None, model: str | None) -> tuple[str, str, str] | None:
+    if not sample or not model:
+        return None
+    return (sample, transcript or "ocr", model)
+
+
+def _remember_saved_result_metadata(
+    lookup: dict[tuple[str, str, str], dict],
+    entry: dict,
+) -> None:
+    if entry.get("error"):
+        return
+    key = _metadata_key(entry.get("sample"), entry.get("transcript", "ocr"), entry.get("model"))
+    if key is None:
+        return
+
+    metadata = lookup.setdefault(key, {})
+    extraction_time = entry.get("extraction_time")
+    if "extraction_time" not in metadata and extraction_time is not None:
+        try:
+            t = float(extraction_time)
+            if t > 0:
+                metadata["extraction_time"] = t
+        except (TypeError, ValueError):
+            pass
+
+    if "tokens" not in metadata and entry.get("tokens") is not None:
+        metadata["tokens"] = entry.get("tokens")
+    if "cost_usd" not in metadata and entry.get("cost_usd") is not None:
+        metadata["cost_usd"] = entry.get("cost_usd")
+
+
+def _load_saved_result_metadata(
+    *,
+    output_dir: Path,
+    previous_report_path: Path | None = None,
+) -> dict[tuple[str, str, str], dict]:
+    """Recover timing/token/cost metadata from existing reports when predictions are reused."""
+    lookup: dict[tuple[str, str, str], dict] = {}
+    current_report_path = output_dir / "evaluation_report.json"
+
+    report_paths: list[Path] = [current_report_path]
+    if previous_report_path is not None:
+        try:
+            if previous_report_path.resolve() != current_report_path.resolve():
+                report_paths.append(previous_report_path)
+        except Exception:
+            report_paths.append(previous_report_path)
+
+    for report_path in report_paths:
+        if report_path.exists():
+            try:
+                report = json.loads(report_path.read_text(encoding="utf-8"))
+                for entry in report.get("detailed_results", []):
+                    _remember_saved_result_metadata(lookup, entry)
+            except Exception:
+                pass
+
+    try:
+        repo_root = Path(__file__).resolve().parent.parent
+        rel_report_path = current_report_path.resolve().relative_to(repo_root)
+        head_json = subprocess.check_output(
+            [
+                "git",
+                "-C",
+                str(repo_root),
+                "show",
+                f"HEAD:{rel_report_path.as_posix()}",
+            ],
+            text=True,
+        )
+        head_report = json.loads(head_json)
+        for entry in head_report.get("detailed_results", []):
+            _remember_saved_result_metadata(lookup, entry)
+    except Exception:
+        pass
+
+    return lookup
+
+
 def _discover_evaluation_inputs(
     *,
     claims_dir: Path,
@@ -371,6 +451,7 @@ def run_evaluation(
     if model_workers is None:
         model_workers = int(os.getenv("LLB_MODEL_WORKERS", str(len(models))))
     model_workers = max(1, int(model_workers))
+    saved_metadata = _load_saved_result_metadata(output_dir=output_dir)
 
     gemini_rate_lock = threading.Lock()
     gemini_next_allowed_time = 0.0
@@ -486,15 +567,18 @@ def run_evaluation(
                         raw_predicted = json.loads(existing_pred_path.read_text(encoding="utf-8"))
                         predicted = _validate_and_normalize_predictions(raw_predicted)
                         metrics = evaluate_extraction(predicted, ground_truth)
+                        metadata = saved_metadata.get((entry.sample, entry.transcript, model_key), {})
                         r = EvaluationResult(
                             model=model_key,
                             sample=entry.sample,
                             tier=entry.tier,
                             format=entry.format,
                             metrics=metrics,
-                            extraction_time=0.0,
+                            extraction_time=metadata.get("extraction_time", 0.0),
                             error=None,
                             transcript=entry.transcript,
+                            tokens=metadata.get("tokens"),
+                            cost_usd=metadata.get("cost_usd"),
                         )
                         print(f"  [{config.name}] Pair {pair_index}/{total_pairs} SKIP")
                     except Exception as e:
@@ -537,6 +621,7 @@ def run_evaluation(
                             raw_predicted = json.loads(existing_pred_path.read_text(encoding="utf-8"))
                             predicted = _validate_and_normalize_predictions(raw_predicted)
                             metrics = evaluate_extraction(predicted, ground_truth)
+                            metadata = saved_metadata.get((entry.sample, entry.transcript, model_key), {})
                             skipped.append(
                                 EvaluationResult(
                                     model=model_key,
@@ -544,9 +629,11 @@ def run_evaluation(
                                     tier=entry.tier,
                                     format=entry.format,
                                     metrics=metrics,
-                                    extraction_time=0.0,
+                                    extraction_time=metadata.get("extraction_time", 0.0),
                                     error=None,
                                     transcript=entry.transcript,
+                                    tokens=metadata.get("tokens"),
+                                    cost_usd=metadata.get("cost_usd"),
                                 )
                             )
                             print(f"  [{config.name}] Pair {pair_index}/{total_pairs} SKIP")
@@ -627,60 +714,10 @@ def run_evaluation_from_saved_predictions(
         transcripts=transcripts,
     )
 
-    time_lookup: dict[tuple[str, str, str], float] = {}
-
-    report_paths: list[Path] = []
-    current_report_path = output_dir / "evaluation_report.json"
-    report_paths.append(current_report_path)
-    if previous_report_path is not None:
-        try:
-            if previous_report_path.resolve() != current_report_path.resolve():
-                report_paths.append(previous_report_path)
-        except Exception:
-            report_paths.append(previous_report_path)
-
-    for report_path in report_paths:
-        if report_path.exists():
-            try:
-                report = json.loads(report_path.read_text(encoding="utf-8"))
-                for entry in report.get("detailed_results", []):
-                    if entry.get("error"):
-                        continue
-                    transcript = entry.get("transcript", "ocr")
-                    key = (entry.get("sample"), transcript, entry.get("model"))
-                    if not key[0] or not key[1] or entry.get("extraction_time") is None:
-                        continue
-                    t = float(entry["extraction_time"])
-                    if t > 0 and time_lookup.get(key, 0.0) == 0.0:
-                        time_lookup[key] = t
-            except Exception:
-                pass
-
-    try:
-        repo_root = Path(__file__).resolve().parent.parent
-        rel_report_path = current_report_path.resolve().relative_to(repo_root)
-        head_json = subprocess.check_output(
-            [
-                "git",
-                "-C",
-                str(repo_root),
-                "show",
-                f"HEAD:{rel_report_path.as_posix()}",
-            ],
-            text=True,
-        )
-        head_report = json.loads(head_json)
-        for entry in head_report.get("detailed_results", []):
-            if entry.get("error"):
-                continue
-            transcript = entry.get("transcript", "ocr")
-            key = (entry.get("sample"), transcript, entry.get("model"))
-            if key[0] and key[2] and entry.get("extraction_time") is not None:
-                t = float(entry["extraction_time"])
-                if t > 0 and time_lookup.get(key, 0.0) == 0.0:
-                    time_lookup[key] = t
-    except Exception:
-        pass
+    saved_metadata = _load_saved_result_metadata(
+        output_dir=output_dir,
+        previous_report_path=previous_report_path,
+    )
 
     results: list[EvaluationResult] = []
 
@@ -712,7 +749,7 @@ def run_evaluation_from_saved_predictions(
             else:
                 metrics = evaluate_extraction([], ground_truth)
 
-            extraction_time = time_lookup.get((entry.sample, entry.transcript, model_key), 0.0)
+            metadata = saved_metadata.get((entry.sample, entry.transcript, model_key), {})
 
             results.append(
                 EvaluationResult(
@@ -721,9 +758,11 @@ def run_evaluation_from_saved_predictions(
                     tier=entry.tier,
                     format=entry.format,
                     metrics=metrics,
-                    extraction_time=extraction_time,
+                    extraction_time=metadata.get("extraction_time", 0.0),
                     error=error,
                     transcript=entry.transcript,
+                    tokens=metadata.get("tokens"),
+                    cost_usd=metadata.get("cost_usd"),
                 )
             )
 

@@ -243,6 +243,169 @@ class EvaluatorRegressionTests(unittest.TestCase):
         self.assertEqual(by_transcript["canonical"].metrics["f1"], 1.0)
         self.assertEqual(by_transcript["ocr"].metrics["f1"], 0.0)
 
+    def test_offline_evaluation_preserves_saved_cost_metadata(self) -> None:
+        claims_dir = Path(tempfile.mkdtemp())
+        results_dir = Path(tempfile.mkdtemp())
+
+        sample = "easy_10_001_detailed"
+        incident = {
+            "incident_number": "#30001",
+            "reference_number": "L230001",
+            "company_name": "X",
+            "division": "General",
+            "coverage_type": "Liability",
+            "status": "Open",
+            "policy_number": "P1",
+            "policy_state": "CA",
+            "cause_code": None,
+            "description": "desc",
+            "handler": "Claims Adjuster",
+            "unit_number": None,
+            "date_of_loss": "01/01/2023",
+            "loss_state": "CA",
+            "date_reported": "01/02/2023",
+            "agency": None,
+            "insured": "X",
+            "claimants": [],
+            "driver_name": None,
+            "bi": {"reserve": 0.0, "paid": 0.0, "recovered": 0.0, "total_incurred": 0.0},
+            "pd": {"reserve": 10.0, "paid": 0.0, "recovered": 0.0, "total_incurred": 10.0},
+            "lae": {"reserve": 0.0, "paid": 0.0, "recovered": 0.0, "total_incurred": 0.0},
+            "ded": {"reserve": 0.0, "paid": 0.0, "recovered": 0.0, "total_incurred": 0.0},
+            "adjuster_notes": None,
+        }
+        model_key = "fake_agent"
+        (claims_dir / f"{sample}.json").write_text(json.dumps([incident]), encoding="utf-8")
+        (claims_dir / f"{sample}_ocr.md").write_text("# Page 1\n\noisy\n", encoding="utf-8")
+        (results_dir / f"{sample}_ocr_{model_key}_predicted.json").write_text(json.dumps([incident]), encoding="utf-8")
+        previous_report = results_dir / "previous_report.json"
+        previous_report.write_text(
+            json.dumps(
+                {
+                    "detailed_results": [
+                        {
+                            "model": model_key,
+                            "sample": sample,
+                            "transcript": "ocr",
+                            "extraction_time": 12.5,
+                            "tokens": {
+                                "requests": 2,
+                                "input_tokens": 100,
+                                "cached_input_tokens": 25,
+                                "output_tokens": 10,
+                                "total_tokens": 110,
+                            },
+                            "cost_usd": 0.00123,
+                            "error": None,
+                        }
+                    ]
+                }
+            ),
+            encoding="utf-8",
+        )
+
+        fake_config = evaluate_models.ModelConfig(
+            name="Fake Agent",
+            provider="Test",
+            model_id="fake-agent",
+            setup_fn=lambda: object(),
+            extract_fn=lambda *_: (_ for _ in ()).throw(AssertionError("offline should not extract")),
+        )
+        with mock.patch.dict(evaluate_models.MODELS, {model_key: fake_config}):
+            results = run_evaluation_from_saved_predictions(
+                models=[model_key],
+                samples=[sample],
+                transcripts=["ocr"],
+                claims_dir=claims_dir,
+                output_dir=results_dir,
+                previous_report_path=previous_report,
+            )
+
+        self.assertEqual(results[0].extraction_time, 12.5)
+        self.assertEqual(results[0].tokens["input_tokens"], 100)
+        self.assertEqual(results[0].cost_usd, 0.00123)
+
+    def test_resume_preserves_saved_cost_metadata(self) -> None:
+        claims_dir = Path(tempfile.mkdtemp())
+        results_dir = Path(tempfile.mkdtemp())
+
+        sample = "easy_10_001_detailed"
+        incident = {
+            "incident_number": "#30001",
+            "reference_number": "L230001",
+            "company_name": "X",
+            "division": "General",
+            "coverage_type": "Liability",
+            "status": "Open",
+            "policy_number": "P1",
+            "policy_state": "CA",
+            "cause_code": None,
+            "description": "desc",
+            "handler": "Claims Adjuster",
+            "unit_number": None,
+            "date_of_loss": "01/01/2023",
+            "loss_state": "CA",
+            "date_reported": "01/02/2023",
+            "agency": None,
+            "insured": "X",
+            "claimants": [],
+            "driver_name": None,
+            "bi": {"reserve": 0.0, "paid": 0.0, "recovered": 0.0, "total_incurred": 0.0},
+            "pd": {"reserve": 10.0, "paid": 0.0, "recovered": 0.0, "total_incurred": 10.0},
+            "lae": {"reserve": 0.0, "paid": 0.0, "recovered": 0.0, "total_incurred": 0.0},
+            "ded": {"reserve": 0.0, "paid": 0.0, "recovered": 0.0, "total_incurred": 0.0},
+            "adjuster_notes": None,
+        }
+        model_key = "fake_agent"
+        (claims_dir / f"{sample}.json").write_text(json.dumps([incident]), encoding="utf-8")
+        (claims_dir / f"{sample}_ocr.md").write_text("# Page 1\n\noisy\n", encoding="utf-8")
+        (results_dir / f"{sample}_ocr_{model_key}_predicted.json").write_text(json.dumps([incident]), encoding="utf-8")
+        (results_dir / "evaluation_report.json").write_text(
+            json.dumps(
+                {
+                    "detailed_results": [
+                        {
+                            "model": model_key,
+                            "sample": sample,
+                            "transcript": "ocr",
+                            "extraction_time": 8.0,
+                            "tokens": {
+                                "requests": 1,
+                                "input_tokens": 50,
+                                "cached_input_tokens": 5,
+                                "output_tokens": 7,
+                                "total_tokens": 57,
+                            },
+                            "cost_usd": 0.00089,
+                            "error": None,
+                        }
+                    ]
+                }
+            ),
+            encoding="utf-8",
+        )
+
+        fake_config = evaluate_models.ModelConfig(
+            name="Fake Agent",
+            provider="Test",
+            model_id="fake-agent",
+            setup_fn=lambda: object(),
+            extract_fn=lambda *_: (_ for _ in ()).throw(AssertionError("resume should not extract")),
+        )
+        with mock.patch.dict(evaluate_models.MODELS, {model_key: fake_config}):
+            results = evaluate_models.run_evaluation(
+                models=[model_key],
+                samples=[sample],
+                transcripts=["ocr"],
+                claims_dir=claims_dir,
+                output_dir=results_dir,
+                resume=True,
+            )
+
+        self.assertEqual(results[0].extraction_time, 8.0)
+        self.assertEqual(results[0].tokens["output_tokens"], 7)
+        self.assertEqual(results[0].cost_usd, 0.00089)
+
     def test_quick_mode_includes_extreme_sample(self) -> None:
         out_dir = Path(tempfile.mkdtemp())
         source_dir = Path(__file__).resolve().parents[1] / "benchmarks" / "results" / "local_two_regimes"
