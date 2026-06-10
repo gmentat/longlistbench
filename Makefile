@@ -4,6 +4,8 @@
 
 VENV_DIR ?= .venv
 EVAL_OUT ?= benchmarks/results/scratch/eval_ocr100
+EVAL_MODELS ?= gemini gpt52
+EVAL_WORKERS ?= 2
 
 help:
 	@echo "Targets:"
@@ -27,7 +29,7 @@ ocr:
 	. $(VENV_DIR)/bin/activate && python benchmarks/ocr_claims_pdfs.py
 
 eval:
-	. $(VENV_DIR)/bin/activate && python benchmarks/evaluate_models.py --models gemini gpt52 --parallel-models --model-workers 2 --output-dir $(EVAL_OUT)
+	. $(VENV_DIR)/bin/activate && python benchmarks/evaluate_models.py --models $(EVAL_MODELS) --parallel-models --model-workers $(EVAL_WORKERS) --output-dir $(EVAL_OUT)
 
 paper:
 	$(MAKE) -C paper pdf

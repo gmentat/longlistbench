@@ -1,0 +1,99 @@
+[
+  {
+    "incident_number": "30049",
+    "reference_number": "L230049",
+    "company_name": "Lopez Freight Group",
+    "division": "",
+    "coverage_type": "Liability",
+    "status": "Closed",
+    "policy_number": "L23A9742",
+    "policy_state": "NC",
+    "cause_code": null,
+    "description": "IV hydroplaned, hit concrete barrier",
+    "handler": "",
+    "unit_number": null,
+    "date_of_loss": "10/22/2023",
+    "loss_state": "TN",
+    "date_reported": "11/03/2023",
+    "agency": null,
+    "insured": "Lopez Freight Group",
+    "claimants": [],
+    "driver_name": "Smith, Joanna",
+    "bi": {
+      "reserve": 0.0,
+      "paid": 60279.06,
+      "recovered": 0.0,
+      "total_incurred": 60279.06
+    },
+    "pd": {
+      "reserve": 0.0,
+      "paid": 48324.7,
+      "recovered": 0.0,
+      "total_incurred": 48324.7
+    },
+    "lae": {
+      "reserve": 0.0,
+      "paid": 0.0,
+      "recovered": 0.0,
+      "total_incurred": 0.0
+    },
+    "ded": {
+      "reserve": 0.0,
+      "paid": 0.0,
+      "recovered": 33340.54,
+      "total_incurred": -33340.54
+    },
+    "adjuster_notes": null
+  },
+  {
+    "incident_number": "30050",
+    "reference_number": "L230050",
+    "company_name": "Titan Express Co",
+    "division": "",
+    "coverage_type": "Liability",
+    "status": "Closed",
+    "policy_number": "L23A6424",
+    "policy_state": "IL",
+    "cause_code": null,
+    "description": "Tire blowout caused IV to veer into OV",
+    "handler": "",
+    "unit_number": null,
+    "date_of_loss": "06/24/2023",
+    "loss_state": "CA",
+    "date_reported": "06/26/2023",
+    "agency": null,
+    "insured": "Titan Express Co",
+    "claimants": [
+      "Johnson, Jonathan",
+      "Pugh, Kayla",
+      "Wilson LLC",
+      "Macias, Daniel"
+    ],
+    "driver_name": "Snyder, Scott",
+    "bi": {
+      "reserve": 0.0,
+      "paid": 0.0,
+      "recovered": 0.0,
+      "total_incurred": 0.0
+    },
+    "pd": {
+      "reserve": 0.0,
+      "paid": 46375.39,
+      "recovered": 0.0,
+      "total_incurred": 46375.39
+    },
+    "lae": {
+      "reserve": 0.0,
+      "paid": 1809.83,
+      "recovered": 0.0,
+      "total_incurred": 1809.83
+    },
+    "ded": {
+      "reserve": 0.0,
+      "paid": 0.0,
+      "recovered": 32725.96,
+      "total_incurred": -32725.96
+    },
+    "adjuster_notes": null
+  }
+]

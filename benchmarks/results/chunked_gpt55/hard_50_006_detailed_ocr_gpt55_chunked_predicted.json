@@ -1,0 +1,531 @@
+[
+  {
+    "incident_number": "30041",
+    "reference_number": "L230041",
+    "company_name": "Pioneer Cargo Co",
+    "division": "",
+    "coverage_type": "Inland Marine",
+    "status": "Closed",
+    "policy_number": "L23A1820",
+    "policy_state": "TN",
+    "cause_code": null,
+    "description": "Cargo crushed due to improper securing",
+    "handler": "",
+    "unit_number": null,
+    "date_of_loss": "03/08/2023",
+    "loss_state": "MI",
+    "date_reported": "04/03/2023",
+    "agency": null,
+    "insured": "Pioneer Cargo Co",
+    "claimants": [],
+    "driver_name": null,
+    "bi": {
+      "reserve": 0.0,
+      "paid": 0.0,
+      "recovered": 0.0,
+      "total_incurred": 0.0
+    },
+    "pd": {
+      "reserve": 0.0,
+      "paid": 24535.21,
+      "recovered": 0.0,
+      "total_incurred": 24535.21
+    },
+    "lae": {
+      "reserve": 0.0,
+      "paid": 1858.16,
+      "recovered": 0.0,
+      "total_incurred": 1858.16
+    },
+    "ded": {
+      "reserve": 0.0,
+      "paid": 0.0,
+      "recovered": 0.0,
+      "total_incurred": 0.0
+    },
+    "adjuster_notes": null
+  },
+  {
+    "incident_number": "30043",
+    "reference_number": "L230043",
+    "company_name": "Fitzgerald Transport Inc",
+    "division": "",
+    "coverage_type": "Liability",
+    "status": "Open",
+    "policy_number": "L23A9300",
+    "policy_state": "IL",
+    "cause_code": null,
+    "description": "IV hydroplaned, hit concrete barrier",
+    "handler": "",
+    "unit_number": null,
+    "date_of_loss": "10/28/2023",
+    "loss_state": "TX",
+    "date_reported": "11/04/2023",
+    "agency": null,
+    "insured": "Fitzgerald Transport Inc",
+    "claimants": [
+      "Moody, Christina",
+      "Wilson, Newman and Baxter"
+    ],
+    "driver_name": "Zuniga, Andrew",
+    "bi": {
+      "reserve": 32829.43,
+      "paid": 0.0,
+      "recovered": 0.0,
+      "total_incurred": 32829.43
+    },
+    "pd": {
+      "reserve": 59841.77,
+      "paid": 0.0,
+      "recovered": 0.0,
+      "total_incurred": 59841.77
+    },
+    "lae": {
+      "reserve": 0.0,
+      "paid": 0.0,
+      "recovered": 0.0,
+      "total_incurred": 0.0
+    },
+    "ded": {
+      "reserve": 0.0,
+      "paid": 0.0,
+      "recovered": 11664.02,
+      "total_incurred": -11664.02
+    },
+    "adjuster_notes": null
+  },
+  {
+    "incident_number": "30044",
+    "reference_number": "L240044",
+    "company_name": "Bestburgh Express",
+    "division": "",
+    "coverage_type": "Liability",
+    "status": "Open",
+    "policy_number": "L24A8220",
+    "policy_state": "CA",
+    "cause_code": null,
+    "description": "IV making right turn, trailer struck OV",
+    "handler": "",
+    "unit_number": null,
+    "date_of_loss": "01/14/2024",
+    "loss_state": "GA",
+    "date_reported": "01/16/2024",
+    "agency": null,
+    "insured": "Bestburgh Express",
+    "claimants": [
+      "Turner, Victoria",
+      "Gross, Hannah"
+    ],
+    "driver_name": "Morrow, Angela",
+    "bi": {
+      "reserve": 0.0,
+      "paid": 0.0,
+      "recovered": 0.0,
+      "total_incurred": 0.0
+    },
+    "pd": {
+      "reserve": 59874.62,
+      "paid": 0.0,
+      "recovered": 0.0,
+      "total_incurred": 59874.62
+    },
+    "lae": {
+      "reserve": 0.0,
+      "paid": 0.0,
+      "recovered": 0.0,
+      "total_incurred": 0.0
+    },
+    "ded": {
+      "reserve": 0.0,
+      "paid": 0.0,
+      "recovered": 28286.1,
+      "total_incurred": -28286.1
+    },
+    "adjuster_notes": null
+  },
+  {
+    "incident_number": "30045",
+    "reference_number": "L230045",
+    "company_name": "South Michelleside Cargo",
+    "division": "",
+    "coverage_type": "Liability",
+    "status": "Open",
+    "policy_number": "L23A6472",
+    "policy_state": "AR",
+    "cause_code": null,
+    "description": "IV backing, struck parked guardrail",
+    "handler": "",
+    "unit_number": "2023 MA 719410",
+    "date_of_loss": "10/29/2023",
+    "loss_state": "TX",
+    "date_reported": "11/25/2023",
+    "agency": null,
+    "insured": "South Michelleside Cargo",
+    "claimants": [
+      "Medina, Jonathan",
+      "Ramos, Michael"
+    ],
+    "driver_name": "Matthews, Jill",
+    "bi": {
+      "reserve": 67753.22,
+      "paid": 0.0,
+      "recovered": 0.0,
+      "total_incurred": 67753.22
+    },
+    "pd": {
+      "reserve": 36907.89,
+      "paid": 0.0,
+      "recovered": 0.0,
+      "total_incurred": 36907.89
+    },
+    "lae": {
+      "reserve": 0.0,
+      "paid": 0.0,
+      "recovered": 0.0,
+      "total_incurred": 0.0
+    },
+    "ded": {
+      "reserve": 0.0,
+      "paid": 0.0,
+      "recovered": 12480.05,
+      "total_incurred": -12480.05
+    },
+    "adjuster_notes": null
+  },
+  {
+    "incident_number": "30046",
+    "reference_number": "L230046",
+    "company_name": "Port Melissa Express",
+    "division": "",
+    "coverage_type": "Liability",
+    "status": "Open",
+    "policy_number": "L23A7253",
+    "policy_state": "AZ",
+    "cause_code": null,
+    "description": "IV changing lanes, sideswiped OV",
+    "handler": "",
+    "unit_number": "2024 FR 100078",
+    "date_of_loss": "02/02/2023",
+    "loss_state": "OH",
+    "date_reported": "02/08/2023",
+    "agency": null,
+    "insured": "Port Melissa Express",
+    "claimants": [
+      "Church, Miguel",
+      "Blackburn, Charles"
+    ],
+    "driver_name": "Wilson, Tonya",
+    "bi": {
+      "reserve": 0.0,
+      "paid": 0.0,
+      "recovered": 0.0,
+      "total_incurred": 0.0
+    },
+    "pd": {
+      "reserve": 37028.73,
+      "paid": 0.0,
+      "recovered": 0.0,
+      "total_incurred": 37028.73
+    },
+    "lae": {
+      "reserve": 0.0,
+      "paid": 0.0,
+      "recovered": 0.0,
+      "total_incurred": 0.0
+    },
+    "ded": {
+      "reserve": 0.0,
+      "paid": 0.0,
+      "recovered": 33188.17,
+      "total_incurred": -33188.17
+    },
+    "adjuster_notes": null
+  },
+  {
+    "incident_number": "30047",
+    "reference_number": "L230047",
+    "company_name": "Sharpton Express",
+    "division": "",
+    "coverage_type": "Liability",
+    "status": "Closed",
+    "policy_number": "L23A9376",
+    "policy_state": "TN",
+    "cause_code": null,
+    "description": "OV changed lanes into IV, causing collision",
+    "handler": "",
+    "unit_number": "2024 MA 806259",
+    "date_of_loss": "11/28/2023",
+    "loss_state": "GA",
+    "date_reported": "12/21/2023",
+    "agency": null,
+    "insured": "Sharpton Express",
+    "claimants": [
+      "Finley, Anna",
+      "Jordan, Robin",
+      "Ward, Tabitha"
+    ],
+    "driver_name": "Jefferson, Paula",
+    "bi": {
+      "reserve": 0.0,
+      "paid": 33282.0,
+      "recovered": 0.0,
+      "total_incurred": 33282.0
+    },
+    "pd": {
+      "reserve": 0.0,
+      "paid": 21504.79,
+      "recovered": 0.0,
+      "total_incurred": 21504.79
+    },
+    "lae": {
+      "reserve": 0.0,
+      "paid": 0.0,
+      "recovered": 0.0,
+      "total_incurred": 0.0
+    },
+    "ded": {
+      "reserve": 0.0,
+      "paid": 0.0,
+      "recovered": 15428.03,
+      "total_incurred": -15428.03
+    },
+    "adjuster_notes": null
+  },
+  {
+    "incident_number": "30004",
+    "reference_number": "L240004",
+    "company_name": "Loganland Logistics",
+    "division": "",
+    "coverage_type": "Liability",
+    "status": "Closed",
+    "policy_number": "L24A2553",
+    "policy_state": "MO",
+    "cause_code": null,
+    "description": "OV ran stop sign, struck IV broadside",
+    "handler": "",
+    "unit_number": null,
+    "date_of_loss": "04/11/2024",
+    "loss_state": "IL",
+    "date_reported": "04/15/2024",
+    "agency": null,
+    "insured": "Loganland Logistics",
+    "claimants": [
+      "Zhang, Lisa"
+    ],
+    "driver_name": "Clark, Julie",
+    "bi": {
+      "reserve": 0.0,
+      "paid": 12638.82,
+      "recovered": 0.0,
+      "total_incurred": 12638.82
+    },
+    "pd": {
+      "reserve": 0.0,
+      "paid": 10657.04,
+      "recovered": 0.0,
+      "total_incurred": 10657.04
+    },
+    "lae": {
+      "reserve": 0.0,
+      "paid": 845.39,
+      "recovered": 0.0,
+      "total_incurred": 845.39
+    },
+    "ded": {
+      "reserve": 0.0,
+      "paid": 0.0,
+      "recovered": 33431.48,
+      "total_incurred": -33431.48
+    },
+    "adjuster_notes": null
+  },
+  {
+    "incident_number": "30048",
+    "reference_number": "L240048",
+    "company_name": "Eagle Cargo Inc",
+    "division": "",
+    "coverage_type": "Liability",
+    "status": "Closed",
+    "policy_number": "L24A9279",
+    "policy_state": "OK",
+    "cause_code": null,
+    "description": "Trailer door detached, struck adjacent vehicle",
+    "handler": "",
+    "unit_number": null,
+    "date_of_loss": "03/10/2024",
+    "loss_state": "TN",
+    "date_reported": "03/12/2024",
+    "agency": null,
+    "insured": "Eagle Cargo Inc",
+    "claimants": [],
+    "driver_name": "Fischer, Kevin",
+    "bi": {
+      "reserve": 0.0,
+      "paid": 0.0,
+      "recovered": 0.0,
+      "total_incurred": 0.0
+    },
+    "pd": {
+      "reserve": 0.0,
+      "paid": 26864.22,
+      "recovered": 0.0,
+      "total_incurred": 26864.22
+    },
+    "lae": {
+      "reserve": 0.0,
+      "paid": 0.0,
+      "recovered": 0.0,
+      "total_incurred": 0.0
+    },
+    "ded": {
+      "reserve": 0.0,
+      "paid": 0.0,
+      "recovered": 0.0,
+      "total_incurred": 0.0
+    },
+    "adjuster_notes": null
+  },
+  {
+    "incident_number": "30049",
+    "reference_number": "L240049",
+    "company_name": "Delta Logistics Group",
+    "division": "",
+    "coverage_type": "Liability",
+    "status": "Open",
+    "policy_number": "L24A3092",
+    "policy_state": "FL",
+    "cause_code": null,
+    "description": "IV rear-ended OV at traffic light",
+    "handler": "",
+    "unit_number": null,
+    "date_of_loss": "02/22/2024",
+    "loss_state": "MI",
+    "date_reported": "03/16/2024",
+    "agency": "Duffy Inc",
+    "insured": "Delta Logistics Group",
+    "claimants": [
+      "Glover, Tina"
+    ],
+    "driver_name": "Atkins, Mitchell",
+    "bi": {
+      "reserve": 0.0,
+      "paid": 0.0,
+      "recovered": 0.0,
+      "total_incurred": 0.0
+    },
+    "pd": {
+      "reserve": 49927.72,
+      "paid": 0.0,
+      "recovered": 0.0,
+      "total_incurred": 49927.72
+    },
+    "lae": {
+      "reserve": 0.0,
+      "paid": 0.0,
+      "recovered": 0.0,
+      "total_incurred": 0.0
+    },
+    "ded": {
+      "reserve": 0.0,
+      "paid": 0.0,
+      "recovered": 0.0,
+      "total_incurred": 0.0
+    },
+    "adjuster_notes": null
+  },
+  {
+    "incident_number": "30027",
+    "reference_number": "L230027",
+    "company_name": "Krystalmouth Transport",
+    "division": "",
+    "coverage_type": "Physical Damage",
+    "status": "Closed",
+    "policy_number": "L23A1238",
+    "policy_state": "GA",
+    "cause_code": null,
+    "description": "Fuel tank punctured by road debris",
+    "handler": "",
+    "unit_number": "2024 PE 902457",
+    "date_of_loss": "10/04/2023",
+    "loss_state": "MO",
+    "date_reported": "10/19/2023",
+    "agency": null,
+    "insured": "Krystalmouth Transport",
+    "claimants": [],
+    "driver_name": null,
+    "bi": {
+      "reserve": 0.0,
+      "paid": 0.0,
+      "recovered": 0.0,
+      "total_incurred": 0.0
+    },
+    "pd": {
+      "reserve": 0.0,
+      "paid": 7279.15,
+      "recovered": 0.0,
+      "total_incurred": 7279.15
+    },
+    "lae": {
+      "reserve": 0.0,
+      "paid": 0.0,
+      "recovered": 0.0,
+      "total_incurred": 0.0
+    },
+    "ded": {
+      "reserve": 0.0,
+      "paid": 0.0,
+      "recovered": 3793.05,
+      "total_incurred": -3793.05
+    },
+    "adjuster_notes": null
+  },
+  {
+    "incident_number": "30050",
+    "reference_number": "L240050",
+    "company_name": "Eagle Transport LLC",
+    "division": "",
+    "coverage_type": "Liability",
+    "status": "Open",
+    "policy_number": "L24A4512",
+    "policy_state": "FL",
+    "cause_code": null,
+    "description": "IV hydroplaned, hit concrete barrier",
+    "handler": "",
+    "unit_number": "2023 IN 162825",
+    "date_of_loss": "11/18/2024",
+    "loss_state": "OH",
+    "date_reported": "12/06/2024",
+    "agency": "Kirby, Rogers and French",
+    "insured": "Eagle Transport LLC",
+    "claimants": [
+      "Nixon, Robert",
+      "Brown, Michael"
+    ],
+    "driver_name": "Bauer, Jonathan",
+    "bi": {
+      "reserve": 135808.44,
+      "paid": 0.0,
+      "recovered": 0.0,
+      "total_incurred": 135808.44
+    },
+    "pd": {
+      "reserve": 11921.36,
+      "paid": 1404.1,
+      "recovered": 0.0,
+      "total_incurred": 13325.46
+    },
+    "lae": {
+      "reserve": 0.0,
+      "paid": 0.0,
+      "recovered": 0.0,
+      "total_incurred": 0.0
+    },
+    "ded": {
+      "reserve": 0.0,
+      "paid": 0.0,
+      "recovered": 15585.03,
+      "total_incurred": -15585.03
+    },
+    "adjuster_notes": null
+  }
+]

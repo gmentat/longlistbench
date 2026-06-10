@@ -39,6 +39,10 @@ Run these commands from the repository root.
 
    # Optional override (only affects benchmarks/evaluate_models.py; default is gemini-2.5-flash)
    GEMINI_MODEL_ID=gemini-2.5-flash
+
+   # Optional evaluation controls
+   LLB_MODEL_WORKERS=2
+   LLB_GEMINI_CHUNK_MAX_INPUT_TOKENS=12000
    ```
 
 ## Generate Claims Benchmark
@@ -143,13 +147,16 @@ python benchmarks/validate_ocr_vs_golden.py --claims-dir claims --tiers medium
 
 ## Multi-Model Evaluation
 
-Run extraction evaluation across Gemini 2.5 (`gemini`) and GPT-5.2 (`gpt52`).
+Run extraction evaluation across the registered model/regime keys. Common keys are `gemini`, `gemini_oneshot`, `gpt52`, `gpt55_oneshot`, `gpt55_chunked`, and `gpt55_agent`.
 
 Note: running evaluation with `--offline` regenerates reports from saved `*_predicted.json` files without making API calls.
 
 ```bash
 # Full OCR-condition evaluation (all tiers, both formats)
 python benchmarks/evaluate_models.py --models gemini gpt52 --parallel-models --model-workers 2 --transcripts ocr
+
+# GPT-5.5 regime ablation on the OCR condition
+python benchmarks/evaluate_models.py --models gpt55_oneshot gpt55_chunked gpt55_agent --transcripts ocr
 
 # Quick test (one sample per tier)
 python benchmarks/evaluate_models.py --quick
@@ -168,6 +175,10 @@ Results are written to the `--output-dir` (default: `benchmarks/results/scratch/
 When multiple transcript conditions are evaluated in the same run, reports include transcript-aware breakdowns in addition to tier/format summaries.
 
 This repository includes released evaluation artifacts under:
+- `benchmarks/results/local_two_regimes/`
+- `benchmarks/results/oneshot_gpt55/`
+- `benchmarks/results/chunked_gpt55/`
+- `benchmarks/results/agentic_gpt55/`
 - `benchmarks/results/released/easy/`
 - `benchmarks/results/released/medium/`
 - `benchmarks/results/released/hard/`
