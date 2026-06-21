@@ -1,0 +1,1978 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Commercial Auto Loss Run Workpaper</title>
+  <style>
+    @page { size: Letter; margin: 12mm; }
+    body {
+      margin: 0;
+      color: #111827;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 8.5pt;
+      line-height: 1.28;
+      background: #fff;
+    }
+    .page {
+      page-break-before: always;
+      min-height: 245mm;
+      position: relative;
+    }
+    .page:first-of-type { page-break-before: auto; }
+    .page-head {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid #6b7280;
+      color: #4b5563;
+      font-size: 7.5pt;
+      letter-spacing: 0.04em;
+      margin-bottom: 10px;
+      padding-bottom: 3px;
+      text-transform: uppercase;
+    }
+    h1 { font-size: 19pt; margin: 8px 0 4px; }
+    h2 { font-size: 13pt; margin: 8px 0 7px; }
+    h3 { font-size: 10pt; margin: 8px 0 5px; }
+    .cover {
+      font-family: Arial, Helvetica, sans-serif;
+      border: 2px solid #111827;
+      padding: 20px;
+    }
+    .cover-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px 24px;
+      margin-top: 20px;
+    }
+    .label { color: #4b5563; font-size: 7.5pt; text-transform: uppercase; }
+    .value { font-size: 10pt; margin-bottom: 8px; }
+    .notice {
+      border-left: 5px solid #374151;
+      background: #f3f4f6;
+      padding: 9px 12px;
+      margin: 12px 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    table { width: 100%; border-collapse: collapse; table-layout: fixed; }
+    th, td { border: 1px solid #9ca3af; padding: 3px 4px; vertical-align: top; word-wrap: break-word; }
+    th { background: #1f2937; color: #fff; font-family: Arial, Helvetica, sans-serif; font-size: 7.2pt; }
+    td { font-size: 7.5pt; }
+    .wide td { font-size: 6.5pt; padding: 2px 3px; }
+    .roster th { background: #374151; }
+    .ledger th { background: #334155; }
+    .memo {
+      font-family: "Courier New", monospace;
+      font-size: 7.5pt;
+      white-space: normal;
+    }
+    .memo-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px 14px;
+    }
+    .memo-card {
+      border: 1px solid #cbd5e1;
+      padding: 7px;
+      min-height: 62px;
+      background: #fafafa;
+    }
+    .worksheet {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 7.3pt;
+    }
+    .worksheet h2,
+    .sparse-report h2 {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 11pt;
+      margin-bottom: 8px;
+    }
+    .worksheet-meta {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 6px 18px;
+      margin: 8px 0 10px;
+      font-size: 7pt;
+    }
+    .worksheet-table th {
+      background: #f1f5f9;
+      color: #111827;
+      font-size: 6.6pt;
+      font-weight: 700;
+      text-align: left;
+    }
+    .worksheet-table td {
+      font-size: 6.7pt;
+      padding: 2px 3px;
+    }
+    .ledger-lite th {
+      background: #e5e7eb;
+      color: #111827;
+    }
+    .sparse-report {
+      font-family: Arial, Helvetica, sans-serif;
+      width: 82%;
+      margin: 16px auto 0;
+      font-size: 7.4pt;
+    }
+    .sparse-title {
+      text-align: center;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      margin-bottom: 16px;
+    }
+    .report-meta {
+      display: grid;
+      grid-template-columns: 95px 1fr;
+      gap: 3px 8px;
+      margin: 12px 0;
+      font-size: 7pt;
+    }
+    .report-address {
+      float: right;
+      width: 215px;
+      line-height: 1.2;
+      margin: 8px 0 18px 20px;
+      font-size: 7pt;
+    }
+    .checklist {
+      display: grid;
+      grid-template-columns: 18px 1fr 85px;
+      border-top: 1px solid #cbd5e1;
+      border-left: 1px solid #cbd5e1;
+      margin-top: 10px;
+    }
+    .checklist div {
+      border-right: 1px solid #cbd5e1;
+      border-bottom: 1px solid #cbd5e1;
+      padding: 4px 5px;
+    }
+    .form-footer {
+      position: absolute;
+      bottom: 14mm;
+      left: 12mm;
+      right: 12mm;
+      border-top: 1px solid #cbd5e1;
+      padding-top: 5px;
+      color: #64748b;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 6.8pt;
+      text-align: center;
+    }
+    .stamp {
+      display: inline-block;
+      border: 1px solid #991b1b;
+      color: #991b1b;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 8pt;
+      padding: 2px 6px;
+      transform: rotate(-3deg);
+    }
+    .two-col {
+      column-count: 2;
+      column-gap: 22px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 7.4pt;
+    }
+    .portal {
+      display: grid;
+      grid-template-columns: 165px 1fr;
+      gap: 16px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .portal-side {
+      border: 1px solid #111827;
+      background: #f8fafc;
+      padding: 9px;
+      font-size: 7pt;
+    }
+    .portal-main h2 {
+      margin-top: 0;
+      color: #334155;
+      font-size: 14pt;
+    }
+    .portal-main table th {
+      background: #e2e8f0;
+      color: #111827;
+    }
+    .letterhead {
+      font-family: Arial, Helvetica, sans-serif;
+      width: 78%;
+      margin: 22px auto;
+    }
+    .seal {
+      width: 54px;
+      height: 54px;
+      border: 2px solid #475569;
+      border-radius: 50%;
+      margin: 0 auto 10px;
+      text-align: center;
+      line-height: 54px;
+      font-size: 18pt;
+      color: #475569;
+    }
+    .spreadsheet-page {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 7.2pt;
+      padding-top: 8px;
+    }
+    .spreadsheet-page h2 {
+      text-align: center;
+      font-size: 11pt;
+      margin: 0 0 8px;
+    }
+    .spreadsheet-page table {
+      width: 74%;
+      margin: 0 auto 18px;
+    }
+    .spreadsheet-page th,
+    .spreadsheet-page td {
+      border: 0;
+      padding: 2px 7px;
+      text-align: left;
+    }
+    .spreadsheet-page th {
+      background: transparent;
+      color: #111827;
+      font-weight: bold;
+    }
+    .mini-report {
+      margin-bottom: 12px;
+      border-bottom: 1px solid #cbd5e1;
+      padding-bottom: 8px;
+    }
+    .mini-report h3 {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 9pt;
+      margin: 0 0 4px;
+    }
+    .rotated-page {
+      min-height: 245mm;
+      position: relative;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .rotated-inner {
+      position: absolute;
+      left: 48%;
+      top: 52%;
+      width: 520px;
+      transform: translate(-50%, -50%) rotate(90deg);
+      transform-origin: center center;
+    }
+    .rotated-inner th {
+      background: #f1f5f9;
+      color: #111827;
+    }
+    .sideways-marker {
+      position: absolute;
+      left: 8px;
+      top: 50%;
+      transform: rotate(90deg);
+      color: #64748b;
+      font-size: 7pt;
+    }
+  </style>
+</head>
+<body>
+
+<section class="page ">
+  <div class="page-head">
+    <span>Account workpaper cover</span>
+    <span>Loss Run Workpaper</span>
+  </div>
+
+<div class="cover">
+  <div class="stamp">RENEWAL REVIEW COPY</div>
+  <h1>Commercial Auto Loss Run Workpaper</h1>
+  <p>Prepared for underwriting review. This workpaper combines a primary claim
+  extract with appendices, register pages, handwritten-style notes, and ledger
+  pages retained in the account file.</p>
+  <div class="cover-grid">
+    <div><div class="label">Account</div><div class="value">Stuart Freight Co</div></div>
+    <div><div class="label">Valuation Date</div><div class="value">01/31/2024</div></div>
+    <div><div class="label">Claim Count</div><div class="value">12</div></div>
+    <div><div class="label">File Reference</div><div class="value">MULTIHOP_012_001_CROSSPAGE</div></div>
+  </div>
+  <div class="notice">
+    Some appendices were inserted from different source systems. Row keys and
+    reference numbers are retained as printed in the source documents.
+  </div>
+</div>
+
+</section>
+
+<section class="page ">
+  <div class="page-head">
+    <span>Portal export receipt</span>
+    <span>Loss Run Workpaper</span>
+  </div>
+
+<div class="portal">
+  <aside class="portal-side">
+    <strong>Account Portal</strong><br>
+    Login: synthetic-reviewer<br>
+    Packet: MULTIHOP_012_001_CROSSPAGE<br>
+    Valuation: 01/31/2024<br>
+    Rows staged: 12<br><br>
+    <strong>Navigation</strong><br>
+    Summary<br>
+    Claim History<br>
+    Fleet Units<br>
+    Documents<br>
+    Export Queue
+  </aside>
+  <main class="portal-main">
+    <h2>Return Summary / Original Export Review</h2>
+    <p>Carrier portal printout retained at the front of the account packet.
+    The page is sparse by design and only previews a subset of records.</p>
+
+<table class="data-table">
+  <thead><tr><th>#</th><th>Policy</th><th>State</th><th>Status</th><th>Reported</th></tr></thead>
+  <tbody><tr><td>1</td><td>L24A3974</td><td>AR</td><td>Open</td><td>03/20/2024</td></tr><tr><td>2</td><td>L23A1955</td><td>OH</td><td>Open</td><td>09/20/2023</td></tr><tr><td>3</td><td>L23A3286</td><td>MO</td><td>Open</td><td>09/24/2023</td></tr><tr><td>4</td><td>L24A6859</td><td>IL</td><td>Open</td><td>01/03/2025</td></tr><tr><td>5</td><td>L24A7575</td><td>OK</td><td>Open</td><td>12/10/2024</td></tr><tr><td>6</td><td>L23A2216</td><td>AR</td><td>Open</td><td>08/12/2023</td></tr><tr><td>7</td><td>L24A9905</td><td>CA</td><td>Open</td><td>05/24/2024</td></tr><tr><td>8</td><td>L23A1604</td><td>OH</td><td>Closed</td><td>06/15/2023</td></tr><tr><td>9</td><td>L24A6859</td><td>IL</td><td>Closed</td><td>09/01/2023</td></tr><tr><td>10</td><td>L24A3974</td><td>AR</td><td>Open</td><td>07/04/2024</td></tr></tbody>
+</table>
+
+    <p style="margin-top: 18px; text-align: right; font-weight: bold;">Pending review queue: 12</p>
+  </main>
+</div>
+
+</section>
+
+<section class="page ">
+  <div class="page-head">
+    <span>Official request response</span>
+    <span>Loss Run Workpaper</span>
+  </div>
+
+<div class="letterhead">
+  <div class="seal">K</div>
+  <h2 style="text-align: center;">Department of Motor Carrier Records</h2>
+  <p style="text-align: center;">Report of Services Provided</p>
+  <p><strong>Note:</strong> This synthetic page imitates a public-records
+  request response often embedded in claim packets. It is not a billing
+  statement and does not contain the complete target schedule.</p>
+
+<table class="data-table">
+  <thead><tr><th>Reference</th><th>State</th><th>Event Date</th><th>Status</th></tr></thead>
+  <tbody><tr><td>L240001</td><td>MO</td><td>02/24/2024</td><td>Open</td></tr><tr><td>L230002</td><td>PA</td><td>09/18/2023</td><td>Open</td></tr><tr><td>L230003</td><td>AZ</td><td>08/27/2023</td><td>Open</td></tr><tr><td>L240004</td><td>PA</td><td>12/28/2024</td><td>Open</td></tr><tr><td>L240005</td><td>AR</td><td>12/09/2024</td><td>Open</td></tr></tbody>
+</table>
+
+  <p style="text-align: center; margin-top: 22px;">Do not pay from this report.</p>
+</div>
+
+</section>
+
+<section class="page ">
+  <div class="page-head">
+    <span>Primary claim extract</span>
+    <span>Loss Run Workpaper</span>
+  </div>
+
+<h2>Claim Extract - Primary Schedule</h2>
+<div class="notice">
+  Exported from the claim intake system. Narrative, driver, claimant, policy,
+  and financial fields are retained in later workpaper sections.
+</div>
+
+<table class="data-table wide">
+  <thead><tr><th>Claim #</th><th>Reference</th><th>Policy</th><th>Unit</th><th>Cause</th><th>Status</th><th>DOL</th><th>State</th><th>Reported</th></tr></thead>
+  <tbody><tr><td>#30001</td><td>L240001</td><td>L24A3974</td><td>2024 KW 600001</td><td>IMD</td><td>Open</td><td>02/24/2024</td><td>MO</td><td>03/20/2024</td></tr><tr><td>#30002</td><td>L230002</td><td>L23A1955</td><td>2024 PB 600002</td><td>BKD</td><td>Open</td><td>09/18/2023</td><td>PA</td><td>09/20/2023</td></tr><tr><td>#30003</td><td>L230003</td><td>L23A3286</td><td>2024 VL 600003</td><td>ROL</td><td>Open</td><td>08/27/2023</td><td>AZ</td><td>09/24/2023</td></tr><tr><td>#30004</td><td>L240004</td><td>L24A6859</td><td>2024 MK 600004</td><td>BKD</td><td>Open</td><td>12/28/2024</td><td>PA</td><td>01/03/2025</td></tr><tr><td>#30005</td><td>L240005</td><td>L24A7575</td><td>2024 IN 600005</td><td>IMD</td><td>Open</td><td>12/09/2024</td><td>AR</td><td>12/10/2024</td></tr><tr><td>#30006</td><td>L230006</td><td>L23A2216</td><td>2024 FR 600006</td><td>CGO</td><td>Open</td><td>08/04/2023</td><td>NC</td><td>08/12/2023</td></tr><tr><td>#30007</td><td>L240007</td><td>L24A9905</td><td>2024 KW 600007</td><td>ROL</td><td>Open</td><td>05/19/2024</td><td>GA</td><td>05/24/2024</td></tr><tr><td>#30008</td><td>L230008</td><td>L23A1604</td><td>2024 PB 600008</td><td>BKD</td><td>Closed</td><td>06/08/2023</td><td>TX</td><td>06/15/2023</td></tr><tr><td>#30009</td><td>L230009</td><td>L24A6859</td><td>2024 VL 600009</td><td>ROL</td><td>Closed</td><td>08/28/2023</td><td>MO</td><td>09/01/2023</td></tr><tr><td>#30010</td><td>L240010</td><td>L24A3974</td><td>2024 MK 600010</td><td>BKD</td><td>Open</td><td>06/16/2024</td><td>OK</td><td>07/04/2024</td></tr><tr><td>#30011</td><td>L230011</td><td>L24A9905</td><td>2024 IN 600011</td><td>TRN</td><td>Closed</td><td>11/11/2023</td><td>IL</td><td>12/04/2023</td></tr><tr><td>#30012</td><td>L230012</td><td>L23A7440</td><td>2024 FR 600012</td><td>RER</td><td>Open</td><td>05/15/2023</td><td>AZ</td><td>05/19/2023</td></tr></tbody>
+</table>
+
+</section>
+
+<section class="page ">
+  <div class="page-head">
+    <span>Vehicle unit reference export</span>
+    <span>Loss Run Workpaper</span>
+  </div>
+
+<div class="spreadsheet-page">
+  <h2>Vehicle / Unit Reference Export</h2>
+
+<table class="data-table">
+  <thead><tr><th>Veh #</th><th>Company vehicle #</th><th>Year</th><th>Make</th><th>Body Type</th><th>State</th></tr></thead>
+  <tbody><tr><td>600001</td><td></td><td>2013</td><td>Kenworth</td><td>TRAILER</td><td>AR</td></tr><tr><td>600002</td><td></td><td>2014</td><td>Peterbilt</td><td>TRUCK</td><td>OH</td></tr><tr><td>600003</td><td></td><td>2015</td><td>Volvo</td><td>REEFER</td><td>MO</td></tr><tr><td>600004</td><td></td><td>2016</td><td>Mack</td><td>FLATBED</td><td>IL</td></tr><tr><td>600005</td><td>L240005</td><td>2017</td><td>Utility</td><td>TRACTOR</td><td>OK</td></tr><tr><td>600006</td><td></td><td>2018</td><td>Great Dane</td><td>TRAILER</td><td>AR</td></tr><tr><td>600007</td><td></td><td>2019</td><td>Freightliner</td><td>TRUCK</td><td>CA</td></tr><tr><td>600008</td><td></td><td>2020</td><td>Kenworth</td><td>REEFER</td><td>OH</td></tr><tr><td>600009</td><td></td><td>2021</td><td>Peterbilt</td><td>FLATBED</td><td>IL</td></tr><tr><td>600010</td><td>L240010</td><td>2022</td><td>Volvo</td><td>TRACTOR</td><td>AR</td></tr><tr><td>600011</td><td></td><td>2023</td><td>Mack</td><td>TRAILER</td><td>CA</td></tr><tr><td>600012</td><td></td><td>2024</td><td>Utility</td><td>TRUCK</td><td>TX</td></tr></tbody>
+</table>
+
+</div>
+
+</section>
+
+<section class="page sparse-report">
+  <div class="page-head">
+    <span>Risk control follow-up notes</span>
+    <span>Loss Run Workpaper</span>
+  </div>
+
+<div class="sparse-report">
+  <div class="sparse-title">RISK CONTROL FOLLOW-UP NOTES</div>
+  <div class="report-meta">
+    <div>Packet:</div><div>MULTIHOP_012_001_CROSSPAGE</div>
+    <div>Related unit:</div><div>2024 PB 600002</div>
+    <div>Review cycle:</div><div>Renewal file checklist</div>
+  </div>
+  <div class="checklist"><div>X</div><div>Fleet safety meeting minutes retained</div><div>Safety</div><div></div><div>Post-accident drug test documentation reviewed</div><div>Safety</div><div>X</div><div>Driver remedial training assigned</div><div>Fleet</div><div>X</div><div>Telematics exception report requested</div><div>UW</div><div></div><div>Maintenance file cross-check complete</div><div>Safety</div><div>X</div><div>Open recommendation carried to renewal file</div><div>UW</div><div>X</div><div>Claim trend reviewed with account manager</div><div>Safety</div><div></div><div>No additional field visit required</div><div>Safety</div></div>
+</div>
+
+</section>
+
+<section class="page worksheet">
+  <div class="page-head">
+    <span>Driver qualification audit</span>
+    <span>Loss Run Workpaper</span>
+  </div>
+
+<h2>Driver Qualification Audit</h2>
+<div class="worksheet-meta">
+  <div><span class="label">Audit file</span><br>DQ-SSPAGE-002</div>
+  <div><span class="label">Review type</span><br>Annual compliance sampling</div>
+  <div><span class="label">Reviewer</span><br>Safety desk</div>
+</div>
+
+<table class="data-table worksheet-table">
+  <thead><tr><th>Driver</th><th>License State</th><th>License #</th><th>Medical Exp.</th><th>Finding</th><th>Unit</th></tr></thead>
+  <tbody><tr><td>Driver-003, Alex</td><td>GA</td><td>D85262887</td><td>02/2026</td><td>Exception noted</td><td>600003</td></tr><tr><td>Driver-004, Alex</td><td>PA</td><td>D27326118</td><td>03/2027</td><td>Current</td><td>600004</td></tr><tr><td>Driver-005, Alex</td><td>IL</td><td>D33874024</td><td>04/2025</td><td>Exception noted</td><td>600005</td></tr><tr><td>Driver-006, Alex</td><td>MO</td><td>D17445848</td><td>05/2026</td><td>Current</td><td>600006</td></tr><tr><td>Driver-007, Alex</td><td>CA</td><td>D66434611</td><td>06/2027</td><td>Verified</td><td>600007</td></tr><tr><td>Driver-008, Alex</td><td>MO</td><td>D25255901</td><td>07/2025</td><td>Verified</td><td>600008</td></tr><tr><td>Driver-009, Alex</td><td>CA</td><td>D20377025</td><td>08/2026</td><td>Renewal due</td><td>600009</td></tr><tr><td>Driver-010, Alex</td><td>MO</td><td>D32524700</td><td>09/2027</td><td>Exception noted</td><td>600010</td></tr><tr><td>Driver-011, Alex</td><td>MO</td><td>D48208084</td><td>10/2025</td><td>Exception noted</td><td>600011</td></tr><tr><td>Driver-012, Alex</td><td>CA</td><td>D22646222</td><td>11/2026</td><td>Renewal due</td><td>600012</td></tr><tr><td>Driver-001, Alex</td><td>GA</td><td>D64644497</td><td>12/2027</td><td>Current</td><td>600001</td></tr><tr><td>Driver-002, Alex</td><td>TX</td><td>D89057573</td><td>01/2025</td><td>Verified</td><td>600002</td></tr><tr><td>Driver-003, Alex</td><td>GA</td><td>D69514025</td><td>02/2026</td><td>Exception noted</td><td>600003</td></tr><tr><td>Driver-004, Alex</td><td>TX</td><td>D39958572</td><td>03/2027</td><td>Verified</td><td>600004</td></tr><tr><td>Driver-005, Alex</td><td>IN</td><td>D11564886</td><td>04/2025</td><td>Exception noted</td><td>600005</td></tr><tr><td>Driver-006, Alex</td><td>AL</td><td>D70941543</td><td>05/2026</td><td>Exception noted</td><td>600006</td></tr></tbody>
+</table>
+
+
+</section>
+
+<section class="page sparse-report">
+  <div class="page-head">
+    <span>Prior carrier correspondence</span>
+    <span>Loss Run Workpaper</span>
+  </div>
+
+<div class="sparse-report">
+  <div class="sparse-title">PRIOR CARRIER REQUEST RESPONSE</div>
+  <div class="report-address">
+    ATTN: Account Review Desk<br>
+    Synthetic Motor Carrier File<br>
+    Packet MULTIHOP_012_001_CROSSPAGE
+  </div>
+  <div class="report-meta">
+    <div>Issue Date:</div><div>02-04-2024</div>
+    <div>Letter Id:</div><div>LC0035470</div>
+    <div>Case Id:</div><div>MULTIHOP_012_001_CROSSPAGE</div>
+  </div>
+  <p>Report of services provided. This page records prior-carrier correspondence
+  status and does not contain the complete claim schedule.</p>
+
+<table class="data-table worksheet-table">
+  <thead><tr><th>Reference</th><th>State</th><th>Response Date</th><th>Disposition</th></tr></thead>
+  <tbody><tr><td>L240004</td><td>IL</td><td>02/03/2024</td><td>Pending response</td></tr><tr><td>L240005</td><td>OK</td><td>03/05/2024</td><td>Prior term attached</td></tr><tr><td>L230006</td><td>AR</td><td>04/07/2024</td><td>Pending response</td></tr><tr><td>L240007</td><td>CA</td><td>05/09/2024</td><td>Acknowledged</td></tr><tr><td>L230008</td><td>OH</td><td>06/11/2024</td><td>Pending response</td></tr><tr><td>L230009</td><td>IL</td><td>07/13/2024</td><td>Acknowledged</td></tr></tbody>
+</table>
+
+</div>
+<div class="form-footer">Record services unit - synthetic correspondence page</div>
+
+</section>
+
+<section class="page worksheet">
+  <div class="page-head">
+    <span>Premium allocation worksheet</span>
+    <span>Loss Run Workpaper</span>
+  </div>
+
+<h2>Premium Allocation Worksheet</h2>
+<div class="worksheet-meta">
+  <div><span class="label">Packet</span><br>MULTIHOP_012_001_CROSSPAGE</div>
+  <div><span class="label">Worksheet period</span><br>2024 Policy Year</div>
+  <div><span class="label">Allocation basis</span><br>Written premium by jurisdiction</div>
+</div>
+
+<table class="data-table worksheet-table wide">
+  <thead><tr><th>Schedule</th><th>Jurisdiction</th><th>Surcharge</th><th>Written Premium</th><th>Taxable Premium</th><th>Tax Rate</th><th>Tax Due</th><th>Total Due</th></tr></thead>
+  <tbody><tr><td>Schedule 004</td><td>AL</td><td>Y</td><td>108,755</td><td>90,723</td><td>0.0275</td><td>$2,494.88</td><td>$2,701.88</td></tr><tr><td>Schedule 004</td><td>AR</td><td>Y</td><td>148,003</td><td>99,136</td><td>0.0275</td><td>$2,726.24</td><td>$2,766.24</td></tr><tr><td>Schedule 004</td><td>CA</td><td>N</td><td>144,721</td><td>139,150</td><td>0.0000</td><td>$0.00</td><td>$-10.00</td></tr><tr><td>Schedule 004</td><td>CO</td><td>Y</td><td>98,895</td><td>75,131</td><td>0.0180</td><td>$1,352.36</td><td>$1,420.36</td></tr><tr><td>Schedule 004</td><td>GA</td><td>Y</td><td>9,282</td><td>7,292</td><td>0.0000</td><td>$0.00</td><td>$-76.00</td></tr><tr><td>Schedule 004</td><td>IL</td><td>Y</td><td>20,979</td><td>14,240</td><td>0.0180</td><td>$256.32</td><td>$188.32</td></tr><tr><td>Schedule 004</td><td>IN</td><td>Y</td><td>146,595</td><td>108,295</td><td>0.0125</td><td>$1,353.69</td><td>$1,445.69</td></tr><tr><td>Schedule 004</td><td>IA</td><td>N</td><td>51,718</td><td>41,151</td><td>0.0000</td><td>$0.00</td><td>$-12.00</td></tr><tr><td>Schedule 004</td><td>KS</td><td>Y</td><td>104,402</td><td>90,235</td><td>0.0000</td><td>$0.00</td><td>$-61.00</td></tr><tr><td>Schedule 004</td><td>MO</td><td>Y</td><td>37,841</td><td>34,855</td><td>0.0000</td><td>$0.00</td><td>$-85.00</td></tr><tr><td>Schedule 004</td><td>NC</td><td>N</td><td>75,247</td><td>63,775</td><td>0.0275</td><td>$1,753.81</td><td>$1,809.81</td></tr><tr><td>Schedule 004</td><td>PA</td><td>N</td><td>181</td><td>142</td><td>0.0180</td><td>$2.56</td><td>$10.56</td></tr><tr><td>Schedule 004</td><td>TX</td><td>Y</td><td>41,293</td><td>29,993</td><td>0.0310</td><td>$929.78</td><td>$1,155.78</td></tr><tr><td>Schedule 004</td><td>VA</td><td>Y</td><td>41,145</td><td>34,623</td><td>0.0180</td><td>$623.21</td><td>$826.21</td></tr></tbody>
+</table>
+
+<div class="form-footer">Synthetic allocation worksheet. Jurisdiction rows are distractors and are not target incident records.</div>
+
+</section>
+
+<section class="page worksheet">
+  <div class="page-head">
+    <span>Subrogation diary extract</span>
+    <span>Loss Run Workpaper</span>
+  </div>
+
+<h2>Subrogation Diary Extract</h2>
+<div class="worksheet-meta">
+  <div><span class="label">Packet</span><br>MULTIHOP_012_001_CROSSPAGE</div>
+  <div><span class="label">Diary export</span><br>Subrogation module</div>
+  <div><span class="label">Printed</span><br>03/31/2024</div>
+</div>
+
+<table class="data-table worksheet-table">
+  <thead><tr><th>Diary Date</th><th>File #</th><th>Reference</th><th>Action</th><th>Status</th><th>Recovery Est.</th></tr></thead>
+  <tbody><tr><td>03/03/2024</td><td>SUB-005-01</td><td>L230006</td><td>Carrier tender</td><td>Closed</td><td>$13,377.00</td></tr><tr><td>03/05/2024</td><td>SUB-005-02</td><td>L240007</td><td>Closed no recovery</td><td>Closed</td><td>$6,142.00</td></tr><tr><td>03/07/2024</td><td>SUB-005-03</td><td>L230008</td><td>Arbitration pending</td><td>Diary</td><td>$14,694.00</td></tr><tr><td>03/09/2024</td><td>#30009</td><td>L230009</td><td>Diary follow-up</td><td>Review</td><td>$2,310.00</td></tr><tr><td>03/11/2024</td><td>SUB-005-05</td><td>L240010</td><td>Demand review</td><td>Review</td><td>$14,083.00</td></tr><tr><td>03/13/2024</td><td>SUB-005-06</td><td>L230011</td><td>Carrier tender</td><td>Open</td><td>$7,174.00</td></tr><tr><td>03/15/2024</td><td>SUB-005-07</td><td>L230012</td><td>Closed no recovery</td><td>Open</td><td>$12,409.00</td></tr><tr><td>03/17/2024</td><td>#30001</td><td>L240001</td><td>Arbitration pending</td><td>Diary</td><td>$8,979.00</td></tr><tr><td>03/19/2024</td><td>SUB-005-09</td><td>L230002</td><td>Diary follow-up</td><td>Closed</td><td>$1,861.00</td></tr><tr><td>03/21/2024</td><td>SUB-005-10</td><td>L230003</td><td>Demand review</td><td>Review</td><td>$184.00</td></tr><tr><td>03/23/2024</td><td>SUB-005-11</td><td>L240004</td><td>Carrier tender</td><td>Diary</td><td>$11,449.00</td></tr><tr><td>03/25/2024</td><td>#30005</td><td>L240005</td><td>Closed no recovery</td><td>Review</td><td>$17,054.00</td></tr><tr><td>03/27/2024</td><td>SUB-005-13</td><td>L230006</td><td>Arbitration pending</td><td>Open</td><td>$14,610.00</td></tr><tr><td>03/02/2024</td><td>SUB-005-14</td><td>L240007</td><td>Diary follow-up</td><td>Closed</td><td>$3,423.00</td></tr></tbody>
+</table>
+
+
+</section>
+
+<section class="page worksheet">
+  <div class="page-head">
+    <span>Monthly account activity</span>
+    <span>Loss Run Workpaper</span>
+  </div>
+
+<h2>Monthly Account Activity</h2>
+<div class="worksheet-meta">
+  <div><span class="label">Account batch</span><br>MULTIHOP_012_001_CROSSPAGE-006</div>
+  <div><span class="label">Accounting month</span><br>February 2024</div>
+  <div><span class="label">Source</span><br>Billing ledger export</div>
+</div>
+
+<table class="data-table worksheet-table ledger-lite">
+  <thead><tr><th>Date</th><th>Document</th><th>Activity</th><th>Policy</th><th>Status</th><th>Amount</th></tr></thead>
+  <tbody><tr><td>02/02/2024</td><td>ACCT-006-01</td><td>Audit adjustment</td><td>L24A9905</td><td>Posted</td><td>$7,894.51</td></tr><tr><td>02/03/2024</td><td>ACCT-006-02</td><td>Claim reserve</td><td>L23A1604</td><td>Reconciled</td><td>$9,309.04</td></tr><tr><td>02/04/2024</td><td>L230009</td><td>Fee reversal</td><td>L24A6859</td><td>Reconciled</td><td>$8,514.10</td></tr><tr><td>02/05/2024</td><td>ACCT-006-04</td><td>Premium receipt</td><td>L24A3974</td><td>Posted</td><td>$3,242.61</td></tr><tr><td>02/06/2024</td><td>ACCT-006-05</td><td>Endorsement</td><td>L24A9905</td><td>Reconciled</td><td>$-9,429.66</td></tr><tr><td>02/07/2024</td><td>L230012</td><td>Audit adjustment</td><td>L23A7440</td><td>Reconciled</td><td>$8,005.13</td></tr><tr><td>02/08/2024</td><td>ACCT-006-07</td><td>Claim reserve</td><td>L24A3974</td><td>Reconciled</td><td>$5,807.03</td></tr><tr><td>02/09/2024</td><td>ACCT-006-08</td><td>Fee reversal</td><td>L23A1955</td><td>Pending</td><td>$9,639.40</td></tr><tr><td>02/10/2024</td><td>L230003</td><td>Premium receipt</td><td>L23A3286</td><td>Pending</td><td>$4,378.81</td></tr><tr><td>02/11/2024</td><td>ACCT-006-10</td><td>Endorsement</td><td>L24A6859</td><td>Reconciled</td><td>$-8,951.96</td></tr><tr><td>02/12/2024</td><td>ACCT-006-11</td><td>Audit adjustment</td><td>L24A7575</td><td>Pending</td><td>$1,450.48</td></tr><tr><td>02/13/2024</td><td>L230006</td><td>Claim reserve</td><td>L23A2216</td><td>Pending</td><td>$8,507.43</td></tr><tr><td>02/14/2024</td><td>ACCT-006-13</td><td>Fee reversal</td><td>L24A9905</td><td>Posted</td><td>$492.98</td></tr><tr><td>02/15/2024</td><td>ACCT-006-14</td><td>Premium receipt</td><td>L23A1604</td><td>Reconciled</td><td>$6,282.77</td></tr><tr><td>02/16/2024</td><td>L230009</td><td>Endorsement</td><td>L24A6859</td><td>Posted</td><td>$-4,173.71</td></tr><tr><td>02/17/2024</td><td>ACCT-006-16</td><td>Audit adjustment</td><td>L24A3974</td><td>Reconciled</td><td>$3,385.87</td></tr><tr><td>02/18/2024</td><td>ACCT-006-17</td><td>Claim reserve</td><td>L24A9905</td><td>Posted</td><td>$2,335.22</td></tr><tr><td>02/19/2024</td><td>L230012</td><td>Fee reversal</td><td>L23A7440</td><td>Reconciled</td><td>$9,610.13</td></tr></tbody>
+</table>
+
+
+</section>
+
+<section class="page sparse-report">
+  <div class="page-head">
+    <span>Risk control follow-up notes</span>
+    <span>Loss Run Workpaper</span>
+  </div>
+
+<div class="sparse-report">
+  <div class="sparse-title">RISK CONTROL FOLLOW-UP NOTES</div>
+  <div class="report-meta">
+    <div>Packet:</div><div>MULTIHOP_012_001_CROSSPAGE</div>
+    <div>Related unit:</div><div>2024 PB 600008</div>
+    <div>Review cycle:</div><div>Renewal file checklist</div>
+  </div>
+  <div class="checklist"><div>X</div><div>Fleet safety meeting minutes retained</div><div>Fleet</div><div></div><div>Post-accident drug test documentation reviewed</div><div>Fleet</div><div>X</div><div>Driver remedial training assigned</div><div>UW</div><div>X</div><div>Telematics exception report requested</div><div>Safety</div><div></div><div>Maintenance file cross-check complete</div><div>Claims</div><div>X</div><div>Open recommendation carried to renewal file</div><div>Safety</div><div>X</div><div>Claim trend reviewed with account manager</div><div>Safety</div><div></div><div>No additional field visit required</div><div>UW</div></div>
+</div>
+
+</section>
+
+<section class="page worksheet">
+  <div class="page-head">
+    <span>Driver qualification audit</span>
+    <span>Loss Run Workpaper</span>
+  </div>
+
+<h2>Driver Qualification Audit</h2>
+<div class="worksheet-meta">
+  <div><span class="label">Audit file</span><br>DQ-SSPAGE-008</div>
+  <div><span class="label">Review type</span><br>Annual compliance sampling</div>
+  <div><span class="label">Reviewer</span><br>Safety desk</div>
+</div>
+
+<table class="data-table worksheet-table">
+  <thead><tr><th>Driver</th><th>License State</th><th>License #</th><th>Medical Exp.</th><th>Finding</th><th>Unit</th></tr></thead>
+  <tbody><tr><td>Driver-009, Alex</td><td>AL</td><td>D17795804</td><td>02/2026</td><td>Exception noted</td><td>600009</td></tr><tr><td>Driver-010, Alex</td><td>PA</td><td>D34338372</td><td>03/2027</td><td>Exception noted</td><td>600010</td></tr><tr><td>Driver-011, Alex</td><td>PA</td><td>D25768582</td><td>04/2025</td><td>Verified</td><td>600011</td></tr><tr><td>Driver-012, Alex</td><td>PA</td><td>D57540136</td><td>05/2026</td><td>Verified</td><td>600012</td></tr><tr><td>Driver-001, Alex</td><td>CA</td><td>D88804030</td><td>06/2027</td><td>Renewal due</td><td>600001</td></tr><tr><td>Driver-002, Alex</td><td>GA</td><td>D73959701</td><td>07/2025</td><td>Exception noted</td><td>600002</td></tr><tr><td>Driver-003, Alex</td><td>MO</td><td>D20191799</td><td>08/2026</td><td>Renewal due</td><td>600003</td></tr><tr><td>Driver-004, Alex</td><td>CA</td><td>D10449246</td><td>09/2027</td><td>Current</td><td>600004</td></tr><tr><td>Driver-005, Alex</td><td>MO</td><td>D47771261</td><td>10/2025</td><td>Current</td><td>600005</td></tr><tr><td>Driver-006, Alex</td><td>MO</td><td>D99466173</td><td>11/2026</td><td>Current</td><td>600006</td></tr><tr><td>Driver-007, Alex</td><td>TX</td><td>D82648194</td><td>12/2027</td><td>Current</td><td>600007</td></tr><tr><td>Driver-008, Alex</td><td>MO</td><td>D97993229</td><td>01/2025</td><td>Verified</td><td>600008</td></tr><tr><td>Driver-009, Alex</td><td>CA</td><td>D83999814</td><td>02/2026</td><td>Exception noted</td><td>600009</td></tr><tr><td>Driver-010, Alex</td><td>AL</td><td>D80316530</td><td>03/2027</td><td>Current</td><td>600010</td></tr><tr><td>Driver-011, Alex</td><td>IL</td><td>D26821579</td><td>04/2025</td><td>Renewal due</td><td>600011</td></tr><tr><td>Driver-012, Alex</td><td>TX</td><td>D36432661</td><td>05/2026</td><td>Renewal due</td><td>600012</td></tr></tbody>
+</table>
+
+
+</section>
+
+<section class="page sparse-report">
+  <div class="page-head">
+    <span>Prior carrier correspondence</span>
+    <span>Loss Run Workpaper</span>
+  </div>
+
+<div class="sparse-report">
+  <div class="sparse-title">PRIOR CARRIER REQUEST RESPONSE</div>
+  <div class="report-address">
+    ATTN: Account Review Desk<br>
+    Synthetic Motor Carrier File<br>
+    Packet MULTIHOP_012_001_CROSSPAGE
+  </div>
+  <div class="report-meta">
+    <div>Issue Date:</div><div>02-10-2024</div>
+    <div>Letter Id:</div><div>LC0091664</div>
+    <div>Case Id:</div><div>MULTIHOP_012_001_CROSSPAGE</div>
+  </div>
+  <p>Report of services provided. This page records prior-carrier correspondence
+  status and does not contain the complete claim schedule.</p>
+
+<table class="data-table worksheet-table">
+  <thead><tr><th>Reference</th><th>State</th><th>Response Date</th><th>Disposition</th></tr></thead>
+  <tbody><tr><td>L240010</td><td>AR</td><td>02/03/2024</td><td>Prior term attached</td></tr><tr><td>L230011</td><td>CA</td><td>03/05/2024</td><td>Acknowledged</td></tr><tr><td>L230012</td><td>TX</td><td>04/07/2024</td><td>Acknowledged</td></tr><tr><td>L240001</td><td>AR</td><td>05/09/2024</td><td>Prior term attached</td></tr><tr><td>L230002</td><td>OH</td><td>06/11/2024</td><td>No loss data</td></tr><tr><td>L230003</td><td>MO</td><td>07/13/2024</td><td>Pending response</td></tr></tbody>
+</table>
+
+</div>
+<div class="form-footer">Record services unit - synthetic correspondence page</div>
+
+</section>
+
+<section class="page worksheet">
+  <div class="page-head">
+    <span>Premium allocation worksheet</span>
+    <span>Loss Run Workpaper</span>
+  </div>
+
+<h2>Premium Allocation Worksheet</h2>
+<div class="worksheet-meta">
+  <div><span class="label">Packet</span><br>MULTIHOP_012_001_CROSSPAGE</div>
+  <div><span class="label">Worksheet period</span><br>2024 Policy Year</div>
+  <div><span class="label">Allocation basis</span><br>Written premium by jurisdiction</div>
+</div>
+
+<table class="data-table worksheet-table wide">
+  <thead><tr><th>Schedule</th><th>Jurisdiction</th><th>Surcharge</th><th>Written Premium</th><th>Taxable Premium</th><th>Tax Rate</th><th>Tax Due</th><th>Total Due</th></tr></thead>
+  <tbody><tr><td>Schedule 010</td><td>AL</td><td>N</td><td>91,243</td><td>86,409</td><td>0.0125</td><td>$1,080.11</td><td>$1,077.11</td></tr><tr><td>Schedule 010</td><td>AR</td><td>N</td><td>112,014</td><td>107,516</td><td>0.0310</td><td>$3,333.00</td><td>$3,338.00</td></tr><tr><td>Schedule 010</td><td>CA</td><td>N</td><td>36,633</td><td>29,602</td><td>0.0275</td><td>$814.05</td><td>$911.05</td></tr><tr><td>Schedule 010</td><td>CO</td><td>Y</td><td>142,604</td><td>120,868</td><td>0.0180</td><td>$2,175.62</td><td>$2,097.62</td></tr><tr><td>Schedule 010</td><td>GA</td><td>N</td><td>129,105</td><td>113,211</td><td>0.0125</td><td>$1,415.14</td><td>$1,597.14</td></tr><tr><td>Schedule 010</td><td>IL</td><td>N</td><td>116,042</td><td>77,268</td><td>0.0310</td><td>$2,395.31</td><td>$2,437.31</td></tr><tr><td>Schedule 010</td><td>IN</td><td>N</td><td>132,394</td><td>95,753</td><td>0.0310</td><td>$2,968.34</td><td>$2,920.34</td></tr><tr><td>Schedule 010</td><td>IA</td><td>Y</td><td>117,311</td><td>93,782</td><td>0.0310</td><td>$2,907.24</td><td>$2,954.24</td></tr><tr><td>Schedule 010</td><td>KS</td><td>Y</td><td>32,897</td><td>31,611</td><td>0.0180</td><td>$569.00</td><td>$642.00</td></tr><tr><td>Schedule 010</td><td>MO</td><td>N</td><td>167,740</td><td>149,639</td><td>0.0000</td><td>$0.00</td><td>$211.00</td></tr><tr><td>Schedule 010</td><td>NC</td><td>N</td><td>162,343</td><td>102,118</td><td>0.0180</td><td>$1,838.12</td><td>$2,013.12</td></tr><tr><td>Schedule 010</td><td>PA</td><td>N</td><td>112,297</td><td>84,417</td><td>0.0310</td><td>$2,616.93</td><td>$2,651.93</td></tr><tr><td>Schedule 010</td><td>TX</td><td>N</td><td>88,328</td><td>68,958</td><td>0.0180</td><td>$1,241.24</td><td>$1,358.24</td></tr><tr><td>Schedule 010</td><td>VA</td><td>N</td><td>119,464</td><td>102,438</td><td>0.0310</td><td>$3,175.58</td><td>$3,253.58</td></tr></tbody>
+</table>
+
+<div class="form-footer">Synthetic allocation worksheet. Jurisdiction rows are distractors and are not target incident records.</div>
+
+</section>
+
+<section class="page worksheet">
+  <div class="page-head">
+    <span>Subrogation diary extract</span>
+    <span>Loss Run Workpaper</span>
+  </div>
+
+<h2>Subrogation Diary Extract</h2>
+<div class="worksheet-meta">
+  <div><span class="label">Packet</span><br>MULTIHOP_012_001_CROSSPAGE</div>
+  <div><span class="label">Diary export</span><br>Subrogation module</div>
+  <div><span class="label">Printed</span><br>03/31/2024</div>
+</div>
+
+<table class="data-table worksheet-table">
+  <thead><tr><th>Diary Date</th><th>File #</th><th>Reference</th><th>Action</th><th>Status</th><th>Recovery Est.</th></tr></thead>
+  <tbody><tr><td>03/03/2024</td><td>SUB-011-01</td><td>L230012</td><td>Closed no recovery</td><td>Closed</td><td>$6,192.00</td></tr><tr><td>03/05/2024</td><td>SUB-011-02</td><td>L240001</td><td>Arbitration pending</td><td>Open</td><td>$4,481.00</td></tr><tr><td>03/07/2024</td><td>SUB-011-03</td><td>L230002</td><td>Diary follow-up</td><td>Diary</td><td>$14,550.00</td></tr><tr><td>03/09/2024</td><td>#30003</td><td>L230003</td><td>Demand review</td><td>Diary</td><td>$10,179.00</td></tr><tr><td>03/11/2024</td><td>SUB-011-05</td><td>L240004</td><td>Carrier tender</td><td>Diary</td><td>$16,459.00</td></tr><tr><td>03/13/2024</td><td>SUB-011-06</td><td>L240005</td><td>Closed no recovery</td><td>Open</td><td>$17,316.00</td></tr><tr><td>03/15/2024</td><td>SUB-011-07</td><td>L230006</td><td>Arbitration pending</td><td>Closed</td><td>$4,502.00</td></tr><tr><td>03/17/2024</td><td>#30007</td><td>L240007</td><td>Diary follow-up</td><td>Closed</td><td>$9,455.00</td></tr><tr><td>03/19/2024</td><td>SUB-011-09</td><td>L230008</td><td>Demand review</td><td>Open</td><td>$14,725.00</td></tr><tr><td>03/21/2024</td><td>SUB-011-10</td><td>L230009</td><td>Carrier tender</td><td>Closed</td><td>$17,226.00</td></tr><tr><td>03/23/2024</td><td>SUB-011-11</td><td>L240010</td><td>Closed no recovery</td><td>Open</td><td>$2,914.00</td></tr><tr><td>03/25/2024</td><td>#30011</td><td>L230011</td><td>Arbitration pending</td><td>Closed</td><td>$11,246.00</td></tr><tr><td>03/27/2024</td><td>SUB-011-13</td><td>L230012</td><td>Diary follow-up</td><td>Closed</td><td>$12,920.00</td></tr><tr><td>03/02/2024</td><td>SUB-011-14</td><td>L240001</td><td>Demand review</td><td>Open</td><td>$8,856.00</td></tr></tbody>
+</table>
+
+
+</section>
+
+<section class="page worksheet">
+  <div class="page-head">
+    <span>Monthly account activity</span>
+    <span>Loss Run Workpaper</span>
+  </div>
+
+<h2>Monthly Account Activity</h2>
+<div class="worksheet-meta">
+  <div><span class="label">Account batch</span><br>MULTIHOP_012_001_CROSSPAGE-012</div>
+  <div><span class="label">Accounting month</span><br>February 2024</div>
+  <div><span class="label">Source</span><br>Billing ledger export</div>
+</div>
+
+<table class="data-table worksheet-table ledger-lite">
+  <thead><tr><th>Date</th><th>Document</th><th>Activity</th><th>Policy</th><th>Status</th><th>Amount</th></tr></thead>
+  <tbody><tr><td>02/02/2024</td><td>ACCT-012-01</td><td>Claim reserve</td><td>L24A3974</td><td>Posted</td><td>$4,420.63</td></tr><tr><td>02/03/2024</td><td>ACCT-012-02</td><td>Fee reversal</td><td>L23A1955</td><td>Reconciled</td><td>$7,703.24</td></tr><tr><td>02/04/2024</td><td>L230003</td><td>Premium receipt</td><td>L23A3286</td><td>Posted</td><td>$2,320.85</td></tr><tr><td>02/05/2024</td><td>ACCT-012-04</td><td>Endorsement</td><td>L24A6859</td><td>Reconciled</td><td>$7,228.41</td></tr><tr><td>02/06/2024</td><td>ACCT-012-05</td><td>Audit adjustment</td><td>L24A7575</td><td>Reconciled</td><td>$-4,230.44</td></tr><tr><td>02/07/2024</td><td>L230006</td><td>Claim reserve</td><td>L23A2216</td><td>Reconciled</td><td>$2,411.24</td></tr><tr><td>02/08/2024</td><td>ACCT-012-07</td><td>Fee reversal</td><td>L24A9905</td><td>Reconciled</td><td>$270.19</td></tr><tr><td>02/09/2024</td><td>ACCT-012-08</td><td>Premium receipt</td><td>L23A1604</td><td>Reconciled</td><td>$4,068.45</td></tr><tr><td>02/10/2024</td><td>L230009</td><td>Endorsement</td><td>L24A6859</td><td>Posted</td><td>$4,338.55</td></tr><tr><td>02/11/2024</td><td>ACCT-012-10</td><td>Audit adjustment</td><td>L24A3974</td><td>Pending</td><td>$-4,186.35</td></tr><tr><td>02/12/2024</td><td>ACCT-012-11</td><td>Claim reserve</td><td>L24A9905</td><td>Pending</td><td>$254.34</td></tr><tr><td>02/13/2024</td><td>L230012</td><td>Fee reversal</td><td>L23A7440</td><td>Reconciled</td><td>$746.37</td></tr><tr><td>02/14/2024</td><td>ACCT-012-13</td><td>Premium receipt</td><td>L24A3974</td><td>Posted</td><td>$104.90</td></tr><tr><td>02/15/2024</td><td>ACCT-012-14</td><td>Endorsement</td><td>L23A1955</td><td>Pending</td><td>$5,995.45</td></tr><tr><td>02/16/2024</td><td>L230003</td><td>Audit adjustment</td><td>L23A3286</td><td>Pending</td><td>$-5,374.87</td></tr><tr><td>02/17/2024</td><td>ACCT-012-16</td><td>Claim reserve</td><td>L24A6859</td><td>Pending</td><td>$2,063.70</td></tr><tr><td>02/18/2024</td><td>ACCT-012-17</td><td>Fee reversal</td><td>L24A7575</td><td>Pending</td><td>$2,576.36</td></tr><tr><td>02/19/2024</td><td>L230006</td><td>Premium receipt</td><td>L23A2216</td><td>Posted</td><td>$6,655.12</td></tr></tbody>
+</table>
+
+
+</section>
+
+<section class="page sparse-report">
+  <div class="page-head">
+    <span>Risk control follow-up notes</span>
+    <span>Loss Run Workpaper</span>
+  </div>
+
+<div class="sparse-report">
+  <div class="sparse-title">RISK CONTROL FOLLOW-UP NOTES</div>
+  <div class="report-meta">
+    <div>Packet:</div><div>MULTIHOP_012_001_CROSSPAGE</div>
+    <div>Related unit:</div><div>2024 PB 600002</div>
+    <div>Review cycle:</div><div>Renewal file checklist</div>
+  </div>
+  <div class="checklist"><div>X</div><div>Fleet safety meeting minutes retained</div><div>Fleet</div><div></div><div>Post-accident drug test documentation reviewed</div><div>Fleet</div><div>X</div><div>Driver remedial training assigned</div><div>UW</div><div>X</div><div>Telematics exception report requested</div><div>Claims</div><div></div><div>Maintenance file cross-check complete</div><div>UW</div><div>X</div><div>Open recommendation carried to renewal file</div><div>UW</div><div>X</div><div>Claim trend reviewed with account manager</div><div>Claims</div><div></div><div>No additional field visit required</div><div>UW</div></div>
+</div>
+
+</section>
+
+<section class="page worksheet">
+  <div class="page-head">
+    <span>Driver qualification audit</span>
+    <span>Loss Run Workpaper</span>
+  </div>
+
+<h2>Driver Qualification Audit</h2>
+<div class="worksheet-meta">
+  <div><span class="label">Audit file</span><br>DQ-SSPAGE-014</div>
+  <div><span class="label">Review type</span><br>Annual compliance sampling</div>
+  <div><span class="label">Reviewer</span><br>Safety desk</div>
+</div>
+
+<table class="data-table worksheet-table">
+  <thead><tr><th>Driver</th><th>License State</th><th>License #</th><th>Medical Exp.</th><th>Finding</th><th>Unit</th></tr></thead>
+  <tbody><tr><td>Driver-003, Alex</td><td>IL</td><td>D89578631</td><td>02/2026</td><td>Exception noted</td><td>600003</td></tr><tr><td>Driver-004, Alex</td><td>MO</td><td>D84849509</td><td>03/2027</td><td>Verified</td><td>600004</td></tr><tr><td>Driver-005, Alex</td><td>GA</td><td>D66398420</td><td>04/2025</td><td>Renewal due</td><td>600005</td></tr><tr><td>Driver-006, Alex</td><td>IL</td><td>D69114712</td><td>05/2026</td><td>Renewal due</td><td>600006</td></tr><tr><td>Driver-007, Alex</td><td>IN</td><td>D70765815</td><td>06/2027</td><td>Current</td><td>600007</td></tr><tr><td>Driver-008, Alex</td><td>IL</td><td>D69604374</td><td>07/2025</td><td>Exception noted</td><td>600008</td></tr><tr><td>Driver-009, Alex</td><td>MO</td><td>D85424310</td><td>08/2026</td><td>Renewal due</td><td>600009</td></tr><tr><td>Driver-010, Alex</td><td>TX</td><td>D80888000</td><td>09/2027</td><td>Verified</td><td>600010</td></tr><tr><td>Driver-011, Alex</td><td>AL</td><td>D46929092</td><td>10/2025</td><td>Exception noted</td><td>600011</td></tr><tr><td>Driver-012, Alex</td><td>IL</td><td>D45249583</td><td>11/2026</td><td>Verified</td><td>600012</td></tr><tr><td>Driver-001, Alex</td><td>AL</td><td>D75953641</td><td>12/2027</td><td>Current</td><td>600001</td></tr><tr><td>Driver-002, Alex</td><td>IL</td><td>D42709326</td><td>01/2025</td><td>Current</td><td>600002</td></tr><tr><td>Driver-003, Alex</td><td>AL</td><td>D34566487</td><td>02/2026</td><td>Renewal due</td><td>600003</td></tr><tr><td>Driver-004, Alex</td><td>PA</td><td>D88878398</td><td>03/2027</td><td>Verified</td><td>600004</td></tr><tr><td>Driver-005, Alex</td><td>IN</td><td>D37723004</td><td>04/2025</td><td>Verified</td><td>600005</td></tr><tr><td>Driver-006, Alex</td><td>PA</td><td>D45430376</td><td>05/2026</td><td>Current</td><td>600006</td></tr></tbody>
+</table>
+
+
+</section>
+
+<section class="page sparse-report">
+  <div class="page-head">
+    <span>Prior carrier correspondence</span>
+    <span>Loss Run Workpaper</span>
+  </div>
+
+<div class="sparse-report">
+  <div class="sparse-title">PRIOR CARRIER REQUEST RESPONSE</div>
+  <div class="report-address">
+    ATTN: Account Review Desk<br>
+    Synthetic Motor Carrier File<br>
+    Packet MULTIHOP_012_001_CROSSPAGE
+  </div>
+  <div class="report-meta">
+    <div>Issue Date:</div><div>02-16-2024</div>
+    <div>Letter Id:</div><div>LC0154269</div>
+    <div>Case Id:</div><div>MULTIHOP_012_001_CROSSPAGE</div>
+  </div>
+  <p>Report of services provided. This page records prior-carrier correspondence
+  status and does not contain the complete claim schedule.</p>
+
+<table class="data-table worksheet-table">
+  <thead><tr><th>Reference</th><th>State</th><th>Response Date</th><th>Disposition</th></tr></thead>
+  <tbody><tr><td>L240004</td><td>IL</td><td>02/03/2024</td><td>Acknowledged</td></tr><tr><td>L240005</td><td>OK</td><td>03/05/2024</td><td>Acknowledged</td></tr><tr><td>L230006</td><td>AR</td><td>04/07/2024</td><td>Acknowledged</td></tr><tr><td>L240007</td><td>CA</td><td>05/09/2024</td><td>Pending response</td></tr><tr><td>L230008</td><td>OH</td><td>06/11/2024</td><td>Pending response</td></tr><tr><td>L230009</td><td>IL</td><td>07/13/2024</td><td>No loss data</td></tr></tbody>
+</table>
+
+</div>
+<div class="form-footer">Record services unit - synthetic correspondence page</div>
+
+</section>
+
+<section class="page worksheet">
+  <div class="page-head">
+    <span>Premium allocation worksheet</span>
+    <span>Loss Run Workpaper</span>
+  </div>
+
+<h2>Premium Allocation Worksheet</h2>
+<div class="worksheet-meta">
+  <div><span class="label">Packet</span><br>MULTIHOP_012_001_CROSSPAGE</div>
+  <div><span class="label">Worksheet period</span><br>2024 Policy Year</div>
+  <div><span class="label">Allocation basis</span><br>Written premium by jurisdiction</div>
+</div>
+
+<table class="data-table worksheet-table wide">
+  <thead><tr><th>Schedule</th><th>Jurisdiction</th><th>Surcharge</th><th>Written Premium</th><th>Taxable Premium</th><th>Tax Rate</th><th>Tax Due</th><th>Total Due</th></tr></thead>
+  <tbody><tr><td>Schedule 016</td><td>AL</td><td>N</td><td>167,585</td><td>130,971</td><td>0.0125</td><td>$1,637.14</td><td>$1,858.14</td></tr><tr><td>Schedule 016</td><td>AR</td><td>Y</td><td>164,662</td><td>140,231</td><td>0.0125</td><td>$1,752.89</td><td>$1,723.89</td></tr><tr><td>Schedule 016</td><td>CA</td><td>Y</td><td>79,910</td><td>75,760</td><td>0.0310</td><td>$2,348.56</td><td>$2,504.56</td></tr><tr><td>Schedule 016</td><td>CO</td><td>N</td><td>149,691</td><td>111,532</td><td>0.0125</td><td>$1,394.15</td><td>$1,315.15</td></tr><tr><td>Schedule 016</td><td>GA</td><td>Y</td><td>88,050</td><td>74,208</td><td>0.0125</td><td>$927.60</td><td>$839.60</td></tr><tr><td>Schedule 016</td><td>IL</td><td>N</td><td>57,023</td><td>54,825</td><td>0.0310</td><td>$1,699.58</td><td>$1,887.58</td></tr><tr><td>Schedule 016</td><td>IN</td><td>N</td><td>6,627</td><td>6,379</td><td>0.0180</td><td>$114.82</td><td>$105.82</td></tr><tr><td>Schedule 016</td><td>IA</td><td>Y</td><td>87,987</td><td>67,347</td><td>0.0125</td><td>$841.84</td><td>$1,073.84</td></tr><tr><td>Schedule 016</td><td>KS</td><td>N</td><td>172,744</td><td>122,596</td><td>0.0275</td><td>$3,371.39</td><td>$3,559.39</td></tr><tr><td>Schedule 016</td><td>MO</td><td>N</td><td>18,046</td><td>11,461</td><td>0.0310</td><td>$355.29</td><td>$559.29</td></tr><tr><td>Schedule 016</td><td>NC</td><td>N</td><td>148,490</td><td>120,676</td><td>0.0310</td><td>$3,740.96</td><td>$3,834.96</td></tr><tr><td>Schedule 016</td><td>PA</td><td>Y</td><td>60,121</td><td>41,420</td><td>0.0310</td><td>$1,284.02</td><td>$1,254.02</td></tr><tr><td>Schedule 016</td><td>TX</td><td>N</td><td>54,329</td><td>52,177</td><td>0.0125</td><td>$652.21</td><td>$701.21</td></tr><tr><td>Schedule 016</td><td>VA</td><td>Y</td><td>39,933</td><td>35,982</td><td>0.0180</td><td>$647.68</td><td>$877.68</td></tr></tbody>
+</table>
+
+<div class="form-footer">Synthetic allocation worksheet. Jurisdiction rows are distractors and are not target incident records.</div>
+
+</section>
+
+<section class="page worksheet">
+  <div class="page-head">
+    <span>Subrogation diary extract</span>
+    <span>Loss Run Workpaper</span>
+  </div>
+
+<h2>Subrogation Diary Extract</h2>
+<div class="worksheet-meta">
+  <div><span class="label">Packet</span><br>MULTIHOP_012_001_CROSSPAGE</div>
+  <div><span class="label">Diary export</span><br>Subrogation module</div>
+  <div><span class="label">Printed</span><br>03/31/2024</div>
+</div>
+
+<table class="data-table worksheet-table">
+  <thead><tr><th>Diary Date</th><th>File #</th><th>Reference</th><th>Action</th><th>Status</th><th>Recovery Est.</th></tr></thead>
+  <tbody><tr><td>03/03/2024</td><td>SUB-017-01</td><td>L230006</td><td>Arbitration pending</td><td>Open</td><td>$11,953.00</td></tr><tr><td>03/05/2024</td><td>SUB-017-02</td><td>L240007</td><td>Diary follow-up</td><td>Closed</td><td>$4,069.00</td></tr><tr><td>03/07/2024</td><td>SUB-017-03</td><td>L230008</td><td>Demand review</td><td>Open</td><td>$15,982.00</td></tr><tr><td>03/09/2024</td><td>#30009</td><td>L230009</td><td>Carrier tender</td><td>Diary</td><td>$12,928.00</td></tr><tr><td>03/11/2024</td><td>SUB-017-05</td><td>L240010</td><td>Closed no recovery</td><td>Review</td><td>$3,027.00</td></tr><tr><td>03/13/2024</td><td>SUB-017-06</td><td>L230011</td><td>Arbitration pending</td><td>Review</td><td>$6,113.00</td></tr><tr><td>03/15/2024</td><td>SUB-017-07</td><td>L230012</td><td>Diary follow-up</td><td>Closed</td><td>$4,721.00</td></tr><tr><td>03/17/2024</td><td>#30001</td><td>L240001</td><td>Demand review</td><td>Review</td><td>$6,771.00</td></tr><tr><td>03/19/2024</td><td>SUB-017-09</td><td>L230002</td><td>Carrier tender</td><td>Diary</td><td>$791.00</td></tr><tr><td>03/21/2024</td><td>SUB-017-10</td><td>L230003</td><td>Closed no recovery</td><td>Open</td><td>$9,801.00</td></tr><tr><td>03/23/2024</td><td>SUB-017-11</td><td>L240004</td><td>Arbitration pending</td><td>Open</td><td>$10,377.00</td></tr><tr><td>03/25/2024</td><td>#30005</td><td>L240005</td><td>Diary follow-up</td><td>Closed</td><td>$4,242.00</td></tr><tr><td>03/27/2024</td><td>SUB-017-13</td><td>L230006</td><td>Demand review</td><td>Open</td><td>$18,311.00</td></tr><tr><td>03/02/2024</td><td>SUB-017-14</td><td>L240007</td><td>Carrier tender</td><td>Open</td><td>$14,261.00</td></tr></tbody>
+</table>
+
+
+</section>
+
+<section class="page worksheet">
+  <div class="page-head">
+    <span>Monthly account activity</span>
+    <span>Loss Run Workpaper</span>
+  </div>
+
+<h2>Monthly Account Activity</h2>
+<div class="worksheet-meta">
+  <div><span class="label">Account batch</span><br>MULTIHOP_012_001_CROSSPAGE-018</div>
+  <div><span class="label">Accounting month</span><br>February 2024</div>
+  <div><span class="label">Source</span><br>Billing ledger export</div>
+</div>
+
+<table class="data-table worksheet-table ledger-lite">
+  <thead><tr><th>Date</th><th>Document</th><th>Activity</th><th>Policy</th><th>Status</th><th>Amount</th></tr></thead>
+  <tbody><tr><td>02/02/2024</td><td>ACCT-018-01</td><td>Fee reversal</td><td>L24A9905</td><td>Pending</td><td>$9,345.51</td></tr><tr><td>02/03/2024</td><td>ACCT-018-02</td><td>Premium receipt</td><td>L23A1604</td><td>Pending</td><td>$4,785.07</td></tr><tr><td>02/04/2024</td><td>L230009</td><td>Endorsement</td><td>L24A6859</td><td>Pending</td><td>$2,541.32</td></tr><tr><td>02/05/2024</td><td>ACCT-018-04</td><td>Audit adjustment</td><td>L24A3974</td><td>Posted</td><td>$1,458.40</td></tr><tr><td>02/06/2024</td><td>ACCT-018-05</td><td>Claim reserve</td><td>L24A9905</td><td>Pending</td><td>$-5,165.46</td></tr><tr><td>02/07/2024</td><td>L230012</td><td>Fee reversal</td><td>L23A7440</td><td>Posted</td><td>$9,433.11</td></tr><tr><td>02/08/2024</td><td>ACCT-018-07</td><td>Premium receipt</td><td>L24A3974</td><td>Posted</td><td>$4,524.38</td></tr><tr><td>02/09/2024</td><td>ACCT-018-08</td><td>Endorsement</td><td>L23A1955</td><td>Reconciled</td><td>$7,139.78</td></tr><tr><td>02/10/2024</td><td>L230003</td><td>Audit adjustment</td><td>L23A3286</td><td>Posted</td><td>$3,542.22</td></tr><tr><td>02/11/2024</td><td>ACCT-018-10</td><td>Claim reserve</td><td>L24A6859</td><td>Pending</td><td>$-7,265.95</td></tr><tr><td>02/12/2024</td><td>ACCT-018-11</td><td>Fee reversal</td><td>L24A7575</td><td>Posted</td><td>$4,652.90</td></tr><tr><td>02/13/2024</td><td>L230006</td><td>Premium receipt</td><td>L23A2216</td><td>Reconciled</td><td>$1,356.21</td></tr><tr><td>02/14/2024</td><td>ACCT-018-13</td><td>Endorsement</td><td>L24A9905</td><td>Pending</td><td>$8,872.20</td></tr><tr><td>02/15/2024</td><td>ACCT-018-14</td><td>Audit adjustment</td><td>L23A1604</td><td>Reconciled</td><td>$7,602.76</td></tr><tr><td>02/16/2024</td><td>L230009</td><td>Claim reserve</td><td>L24A6859</td><td>Posted</td><td>$-2,529.13</td></tr><tr><td>02/17/2024</td><td>ACCT-018-16</td><td>Fee reversal</td><td>L24A3974</td><td>Reconciled</td><td>$6,215.34</td></tr><tr><td>02/18/2024</td><td>ACCT-018-17</td><td>Premium receipt</td><td>L24A9905</td><td>Posted</td><td>$4,397.11</td></tr><tr><td>02/19/2024</td><td>L230012</td><td>Endorsement</td><td>L23A7440</td><td>Posted</td><td>$6,477.05</td></tr></tbody>
+</table>
+
+
+</section>
+
+<section class="page sparse-report">
+  <div class="page-head">
+    <span>Risk control follow-up notes</span>
+    <span>Loss Run Workpaper</span>
+  </div>
+
+<div class="sparse-report">
+  <div class="sparse-title">RISK CONTROL FOLLOW-UP NOTES</div>
+  <div class="report-meta">
+    <div>Packet:</div><div>MULTIHOP_012_001_CROSSPAGE</div>
+    <div>Related unit:</div><div>2024 PB 600008</div>
+    <div>Review cycle:</div><div>Renewal file checklist</div>
+  </div>
+  <div class="checklist"><div>X</div><div>Fleet safety meeting minutes retained</div><div>Fleet</div><div></div><div>Post-accident drug test documentation reviewed</div><div>Safety</div><div>X</div><div>Driver remedial training assigned</div><div>Claims</div><div>X</div><div>Telematics exception report requested</div><div>Safety</div><div></div><div>Maintenance file cross-check complete</div><div>UW</div><div>X</div><div>Open recommendation carried to renewal file</div><div>Claims</div><div>X</div><div>Claim trend reviewed with account manager</div><div>Claims</div><div></div><div>No additional field visit required</div><div>Safety</div></div>
+</div>
+
+</section>
+
+<section class="page worksheet">
+  <div class="page-head">
+    <span>Driver qualification audit</span>
+    <span>Loss Run Workpaper</span>
+  </div>
+
+<h2>Driver Qualification Audit</h2>
+<div class="worksheet-meta">
+  <div><span class="label">Audit file</span><br>DQ-SSPAGE-020</div>
+  <div><span class="label">Review type</span><br>Annual compliance sampling</div>
+  <div><span class="label">Reviewer</span><br>Safety desk</div>
+</div>
+
+<table class="data-table worksheet-table">
+  <thead><tr><th>Driver</th><th>License State</th><th>License #</th><th>Medical Exp.</th><th>Finding</th><th>Unit</th></tr></thead>
+  <tbody><tr><td>Driver-009, Alex</td><td>IL</td><td>D27337387</td><td>02/2026</td><td>Renewal due</td><td>600009</td></tr><tr><td>Driver-010, Alex</td><td>GA</td><td>D39773400</td><td>03/2027</td><td>Renewal due</td><td>600010</td></tr><tr><td>Driver-011, Alex</td><td>CA</td><td>D19205849</td><td>04/2025</td><td>Exception noted</td><td>600011</td></tr><tr><td>Driver-012, Alex</td><td>IL</td><td>D61576491</td><td>05/2026</td><td>Exception noted</td><td>600012</td></tr><tr><td>Driver-001, Alex</td><td>TX</td><td>D28581471</td><td>06/2027</td><td>Current</td><td>600001</td></tr><tr><td>Driver-002, Alex</td><td>TX</td><td>D62355194</td><td>07/2025</td><td>Renewal due</td><td>600002</td></tr><tr><td>Driver-003, Alex</td><td>GA</td><td>D98629996</td><td>08/2026</td><td>Exception noted</td><td>600003</td></tr><tr><td>Driver-004, Alex</td><td>AL</td><td>D17455429</td><td>09/2027</td><td>Exception noted</td><td>600004</td></tr><tr><td>Driver-005, Alex</td><td>IL</td><td>D60572621</td><td>10/2025</td><td>Exception noted</td><td>600005</td></tr><tr><td>Driver-006, Alex</td><td>IL</td><td>D50681843</td><td>11/2026</td><td>Renewal due</td><td>600006</td></tr><tr><td>Driver-007, Alex</td><td>IN</td><td>D25423086</td><td>12/2027</td><td>Current</td><td>600007</td></tr><tr><td>Driver-008, Alex</td><td>CA</td><td>D26290760</td><td>01/2025</td><td>Exception noted</td><td>600008</td></tr><tr><td>Driver-009, Alex</td><td>IL</td><td>D56954462</td><td>02/2026</td><td>Exception noted</td><td>600009</td></tr><tr><td>Driver-010, Alex</td><td>GA</td><td>D93252405</td><td>03/2027</td><td>Verified</td><td>600010</td></tr><tr><td>Driver-011, Alex</td><td>IL</td><td>D26330840</td><td>04/2025</td><td>Renewal due</td><td>600011</td></tr><tr><td>Driver-012, Alex</td><td>MO</td><td>D32334896</td><td>05/2026</td><td>Renewal due</td><td>600012</td></tr></tbody>
+</table>
+
+
+</section>
+
+<section class="page sparse-report">
+  <div class="page-head">
+    <span>Prior carrier correspondence</span>
+    <span>Loss Run Workpaper</span>
+  </div>
+
+<div class="sparse-report">
+  <div class="sparse-title">PRIOR CARRIER REQUEST RESPONSE</div>
+  <div class="report-address">
+    ATTN: Account Review Desk<br>
+    Synthetic Motor Carrier File<br>
+    Packet MULTIHOP_012_001_CROSSPAGE
+  </div>
+  <div class="report-meta">
+    <div>Issue Date:</div><div>02-22-2024</div>
+    <div>Letter Id:</div><div>LC0213645</div>
+    <div>Case Id:</div><div>MULTIHOP_012_001_CROSSPAGE</div>
+  </div>
+  <p>Report of services provided. This page records prior-carrier correspondence
+  status and does not contain the complete claim schedule.</p>
+
+<table class="data-table worksheet-table">
+  <thead><tr><th>Reference</th><th>State</th><th>Response Date</th><th>Disposition</th></tr></thead>
+  <tbody><tr><td>L240010</td><td>AR</td><td>02/03/2024</td><td>No loss data</td></tr><tr><td>L230011</td><td>CA</td><td>03/05/2024</td><td>Acknowledged</td></tr><tr><td>L230012</td><td>TX</td><td>04/07/2024</td><td>Pending response</td></tr><tr><td>L240001</td><td>AR</td><td>05/09/2024</td><td>Prior term attached</td></tr><tr><td>L230002</td><td>OH</td><td>06/11/2024</td><td>Pending response</td></tr><tr><td>L230003</td><td>MO</td><td>07/13/2024</td><td>Pending response</td></tr></tbody>
+</table>
+
+</div>
+<div class="form-footer">Record services unit - synthetic correspondence page</div>
+
+</section>
+
+<section class="page worksheet">
+  <div class="page-head">
+    <span>Premium allocation worksheet</span>
+    <span>Loss Run Workpaper</span>
+  </div>
+
+<h2>Premium Allocation Worksheet</h2>
+<div class="worksheet-meta">
+  <div><span class="label">Packet</span><br>MULTIHOP_012_001_CROSSPAGE</div>
+  <div><span class="label">Worksheet period</span><br>2024 Policy Year</div>
+  <div><span class="label">Allocation basis</span><br>Written premium by jurisdiction</div>
+</div>
+
+<table class="data-table worksheet-table wide">
+  <thead><tr><th>Schedule</th><th>Jurisdiction</th><th>Surcharge</th><th>Written Premium</th><th>Taxable Premium</th><th>Tax Rate</th><th>Tax Due</th><th>Total Due</th></tr></thead>
+  <tbody><tr><td>Schedule 022</td><td>AL</td><td>N</td><td>155,935</td><td>113,535</td><td>0.0180</td><td>$2,043.63</td><td>$2,146.63</td></tr><tr><td>Schedule 022</td><td>AR</td><td>Y</td><td>110,076</td><td>94,056</td><td>0.0310</td><td>$2,915.74</td><td>$2,872.74</td></tr><tr><td>Schedule 022</td><td>CA</td><td>N</td><td>131,508</td><td>92,281</td><td>0.0000</td><td>$0.00</td><td>$74.00</td></tr><tr><td>Schedule 022</td><td>CO</td><td>Y</td><td>58,048</td><td>41,073</td><td>0.0000</td><td>$0.00</td><td>$-78.00</td></tr><tr><td>Schedule 022</td><td>GA</td><td>Y</td><td>106,149</td><td>90,875</td><td>0.0180</td><td>$1,635.75</td><td>$1,572.75</td></tr><tr><td>Schedule 022</td><td>IL</td><td>N</td><td>112,083</td><td>86,428</td><td>0.0000</td><td>$0.00</td><td>$147.00</td></tr><tr><td>Schedule 022</td><td>IN</td><td>N</td><td>124,268</td><td>77,501</td><td>0.0125</td><td>$968.76</td><td>$1,195.76</td></tr><tr><td>Schedule 022</td><td>IA</td><td>N</td><td>37,138</td><td>24,335</td><td>0.0125</td><td>$304.19</td><td>$544.19</td></tr><tr><td>Schedule 022</td><td>KS</td><td>Y</td><td>160,698</td><td>110,710</td><td>0.0275</td><td>$3,044.53</td><td>$3,027.53</td></tr><tr><td>Schedule 022</td><td>MO</td><td>N</td><td>167,632</td><td>120,539</td><td>0.0275</td><td>$3,314.82</td><td>$3,294.82</td></tr><tr><td>Schedule 022</td><td>NC</td><td>N</td><td>22,592</td><td>20,996</td><td>0.0310</td><td>$650.88</td><td>$671.88</td></tr><tr><td>Schedule 022</td><td>PA</td><td>Y</td><td>74,886</td><td>57,895</td><td>0.0310</td><td>$1,794.74</td><td>$1,914.74</td></tr><tr><td>Schedule 022</td><td>TX</td><td>N</td><td>128,954</td><td>124,119</td><td>0.0310</td><td>$3,847.69</td><td>$4,029.69</td></tr><tr><td>Schedule 022</td><td>VA</td><td>N</td><td>34,687</td><td>30,901</td><td>0.0275</td><td>$849.78</td><td>$1,089.78</td></tr></tbody>
+</table>
+
+<div class="form-footer">Synthetic allocation worksheet. Jurisdiction rows are distractors and are not target incident records.</div>
+
+</section>
+
+<section class="page worksheet">
+  <div class="page-head">
+    <span>Subrogation diary extract</span>
+    <span>Loss Run Workpaper</span>
+  </div>
+
+<h2>Subrogation Diary Extract</h2>
+<div class="worksheet-meta">
+  <div><span class="label">Packet</span><br>MULTIHOP_012_001_CROSSPAGE</div>
+  <div><span class="label">Diary export</span><br>Subrogation module</div>
+  <div><span class="label">Printed</span><br>03/31/2024</div>
+</div>
+
+<table class="data-table worksheet-table">
+  <thead><tr><th>Diary Date</th><th>File #</th><th>Reference</th><th>Action</th><th>Status</th><th>Recovery Est.</th></tr></thead>
+  <tbody><tr><td>03/03/2024</td><td>SUB-023-01</td><td>L230012</td><td>Diary follow-up</td><td>Review</td><td>$8,043.00</td></tr><tr><td>03/05/2024</td><td>SUB-023-02</td><td>L240001</td><td>Demand review</td><td>Review</td><td>$7,860.00</td></tr><tr><td>03/07/2024</td><td>SUB-023-03</td><td>L230002</td><td>Carrier tender</td><td>Open</td><td>$2,815.00</td></tr><tr><td>03/09/2024</td><td>#30003</td><td>L230003</td><td>Closed no recovery</td><td>Diary</td><td>$15,075.00</td></tr><tr><td>03/11/2024</td><td>SUB-023-05</td><td>L240004</td><td>Arbitration pending</td><td>Closed</td><td>$3,569.00</td></tr><tr><td>03/13/2024</td><td>SUB-023-06</td><td>L240005</td><td>Diary follow-up</td><td>Open</td><td>$916.00</td></tr><tr><td>03/15/2024</td><td>SUB-023-07</td><td>L230006</td><td>Demand review</td><td>Open</td><td>$13,123.00</td></tr><tr><td>03/17/2024</td><td>#30007</td><td>L240007</td><td>Carrier tender</td><td>Open</td><td>$18,451.00</td></tr><tr><td>03/19/2024</td><td>SUB-023-09</td><td>L230008</td><td>Closed no recovery</td><td>Review</td><td>$15,075.00</td></tr><tr><td>03/21/2024</td><td>SUB-023-10</td><td>L230009</td><td>Arbitration pending</td><td>Closed</td><td>$6,671.00</td></tr><tr><td>03/23/2024</td><td>SUB-023-11</td><td>L240010</td><td>Diary follow-up</td><td>Closed</td><td>$4,106.00</td></tr><tr><td>03/25/2024</td><td>#30011</td><td>L230011</td><td>Demand review</td><td>Closed</td><td>$12,295.00</td></tr><tr><td>03/27/2024</td><td>SUB-023-13</td><td>L230012</td><td>Carrier tender</td><td>Review</td><td>$17,986.00</td></tr><tr><td>03/02/2024</td><td>SUB-023-14</td><td>L240001</td><td>Closed no recovery</td><td>Diary</td><td>$9,916.00</td></tr></tbody>
+</table>
+
+
+</section>
+
+<section class="page worksheet">
+  <div class="page-head">
+    <span>Monthly account activity</span>
+    <span>Loss Run Workpaper</span>
+  </div>
+
+<h2>Monthly Account Activity</h2>
+<div class="worksheet-meta">
+  <div><span class="label">Account batch</span><br>MULTIHOP_012_001_CROSSPAGE-024</div>
+  <div><span class="label">Accounting month</span><br>February 2024</div>
+  <div><span class="label">Source</span><br>Billing ledger export</div>
+</div>
+
+<table class="data-table worksheet-table ledger-lite">
+  <thead><tr><th>Date</th><th>Document</th><th>Activity</th><th>Policy</th><th>Status</th><th>Amount</th></tr></thead>
+  <tbody><tr><td>02/02/2024</td><td>ACCT-024-01</td><td>Premium receipt</td><td>L24A3974</td><td>Posted</td><td>$2,335.64</td></tr><tr><td>02/03/2024</td><td>ACCT-024-02</td><td>Endorsement</td><td>L23A1955</td><td>Posted</td><td>$1,618.42</td></tr><tr><td>02/04/2024</td><td>L230003</td><td>Audit adjustment</td><td>L23A3286</td><td>Pending</td><td>$6,961.99</td></tr><tr><td>02/05/2024</td><td>ACCT-024-04</td><td>Claim reserve</td><td>L24A6859</td><td>Pending</td><td>$4,608.12</td></tr><tr><td>02/06/2024</td><td>ACCT-024-05</td><td>Fee reversal</td><td>L24A7575</td><td>Reconciled</td><td>$-7,165.53</td></tr><tr><td>02/07/2024</td><td>L230006</td><td>Premium receipt</td><td>L23A2216</td><td>Reconciled</td><td>$2,673.80</td></tr><tr><td>02/08/2024</td><td>ACCT-024-07</td><td>Endorsement</td><td>L24A9905</td><td>Posted</td><td>$3,149.83</td></tr><tr><td>02/09/2024</td><td>ACCT-024-08</td><td>Audit adjustment</td><td>L23A1604</td><td>Pending</td><td>$9,038.27</td></tr><tr><td>02/10/2024</td><td>L230009</td><td>Claim reserve</td><td>L24A6859</td><td>Posted</td><td>$9,623.55</td></tr><tr><td>02/11/2024</td><td>ACCT-024-10</td><td>Fee reversal</td><td>L24A3974</td><td>Reconciled</td><td>$-220.34</td></tr><tr><td>02/12/2024</td><td>ACCT-024-11</td><td>Premium receipt</td><td>L24A9905</td><td>Posted</td><td>$1,297.73</td></tr><tr><td>02/13/2024</td><td>L230012</td><td>Endorsement</td><td>L23A7440</td><td>Posted</td><td>$518.14</td></tr><tr><td>02/14/2024</td><td>ACCT-024-13</td><td>Audit adjustment</td><td>L24A3974</td><td>Pending</td><td>$8,570.98</td></tr><tr><td>02/15/2024</td><td>ACCT-024-14</td><td>Claim reserve</td><td>L23A1955</td><td>Pending</td><td>$1,737.61</td></tr><tr><td>02/16/2024</td><td>L230003</td><td>Fee reversal</td><td>L23A3286</td><td>Posted</td><td>$-7,783.09</td></tr><tr><td>02/17/2024</td><td>ACCT-024-16</td><td>Premium receipt</td><td>L24A6859</td><td>Pending</td><td>$7,110.41</td></tr><tr><td>02/18/2024</td><td>ACCT-024-17</td><td>Endorsement</td><td>L24A7575</td><td>Pending</td><td>$9,004.08</td></tr><tr><td>02/19/2024</td><td>L230006</td><td>Audit adjustment</td><td>L23A2216</td><td>Posted</td><td>$7,365.35</td></tr></tbody>
+</table>
+
+
+</section>
+
+<section class="page sparse-report">
+  <div class="page-head">
+    <span>Risk control follow-up notes</span>
+    <span>Loss Run Workpaper</span>
+  </div>
+
+<div class="sparse-report">
+  <div class="sparse-title">RISK CONTROL FOLLOW-UP NOTES</div>
+  <div class="report-meta">
+    <div>Packet:</div><div>MULTIHOP_012_001_CROSSPAGE</div>
+    <div>Related unit:</div><div>2024 PB 600002</div>
+    <div>Review cycle:</div><div>Renewal file checklist</div>
+  </div>
+  <div class="checklist"><div>X</div><div>Fleet safety meeting minutes retained</div><div>UW</div><div></div><div>Post-accident drug test documentation reviewed</div><div>Fleet</div><div>X</div><div>Driver remedial training assigned</div><div>UW</div><div>X</div><div>Telematics exception report requested</div><div>UW</div><div></div><div>Maintenance file cross-check complete</div><div>Claims</div><div>X</div><div>Open recommendation carried to renewal file</div><div>Fleet</div><div>X</div><div>Claim trend reviewed with account manager</div><div>Safety</div><div></div><div>No additional field visit required</div><div>Fleet</div></div>
+</div>
+
+</section>
+
+<section class="page worksheet">
+  <div class="page-head">
+    <span>Driver qualification audit</span>
+    <span>Loss Run Workpaper</span>
+  </div>
+
+<h2>Driver Qualification Audit</h2>
+<div class="worksheet-meta">
+  <div><span class="label">Audit file</span><br>DQ-SSPAGE-026</div>
+  <div><span class="label">Review type</span><br>Annual compliance sampling</div>
+  <div><span class="label">Reviewer</span><br>Safety desk</div>
+</div>
+
+<table class="data-table worksheet-table">
+  <thead><tr><th>Driver</th><th>License State</th><th>License #</th><th>Medical Exp.</th><th>Finding</th><th>Unit</th></tr></thead>
+  <tbody><tr><td>Driver-003, Alex</td><td>IN</td><td>D66262384</td><td>02/2026</td><td>Exception noted</td><td>600003</td></tr><tr><td>Driver-004, Alex</td><td>IN</td><td>D16463405</td><td>03/2027</td><td>Current</td><td>600004</td></tr><tr><td>Driver-005, Alex</td><td>IN</td><td>D26503500</td><td>04/2025</td><td>Renewal due</td><td>600005</td></tr><tr><td>Driver-006, Alex</td><td>GA</td><td>D57958307</td><td>05/2026</td><td>Exception noted</td><td>600006</td></tr><tr><td>Driver-007, Alex</td><td>IL</td><td>D37293275</td><td>06/2027</td><td>Verified</td><td>600007</td></tr><tr><td>Driver-008, Alex</td><td>IL</td><td>D79270831</td><td>07/2025</td><td>Current</td><td>600008</td></tr><tr><td>Driver-009, Alex</td><td>MO</td><td>D10881867</td><td>08/2026</td><td>Exception noted</td><td>600009</td></tr><tr><td>Driver-010, Alex</td><td>TX</td><td>D98670743</td><td>09/2027</td><td>Verified</td><td>600010</td></tr><tr><td>Driver-011, Alex</td><td>IN</td><td>D56801036</td><td>10/2025</td><td>Current</td><td>600011</td></tr><tr><td>Driver-012, Alex</td><td>GA</td><td>D28740975</td><td>11/2026</td><td>Renewal due</td><td>600012</td></tr><tr><td>Driver-001, Alex</td><td>TX</td><td>D41774983</td><td>12/2027</td><td>Renewal due</td><td>600001</td></tr><tr><td>Driver-002, Alex</td><td>IL</td><td>D65915177</td><td>01/2025</td><td>Exception noted</td><td>600002</td></tr><tr><td>Driver-003, Alex</td><td>AL</td><td>D70608932</td><td>02/2026</td><td>Current</td><td>600003</td></tr><tr><td>Driver-004, Alex</td><td>TX</td><td>D22900524</td><td>03/2027</td><td>Current</td><td>600004</td></tr><tr><td>Driver-005, Alex</td><td>AL</td><td>D74443339</td><td>04/2025</td><td>Exception noted</td><td>600005</td></tr><tr><td>Driver-006, Alex</td><td>AL</td><td>D81545807</td><td>05/2026</td><td>Verified</td><td>600006</td></tr></tbody>
+</table>
+
+
+</section>
+
+<section class="page sparse-report">
+  <div class="page-head">
+    <span>Prior carrier correspondence</span>
+    <span>Loss Run Workpaper</span>
+  </div>
+
+<div class="sparse-report">
+  <div class="sparse-title">PRIOR CARRIER REQUEST RESPONSE</div>
+  <div class="report-address">
+    ATTN: Account Review Desk<br>
+    Synthetic Motor Carrier File<br>
+    Packet MULTIHOP_012_001_CROSSPAGE
+  </div>
+  <div class="report-meta">
+    <div>Issue Date:</div><div>02-01-2024</div>
+    <div>Letter Id:</div><div>LC0275206</div>
+    <div>Case Id:</div><div>MULTIHOP_012_001_CROSSPAGE</div>
+  </div>
+  <p>Report of services provided. This page records prior-carrier correspondence
+  status and does not contain the complete claim schedule.</p>
+
+<table class="data-table worksheet-table">
+  <thead><tr><th>Reference</th><th>State</th><th>Response Date</th><th>Disposition</th></tr></thead>
+  <tbody><tr><td>L240004</td><td>IL</td><td>02/03/2024</td><td>Prior term attached</td></tr><tr><td>L240005</td><td>OK</td><td>03/05/2024</td><td>No loss data</td></tr><tr><td>L230006</td><td>AR</td><td>04/07/2024</td><td>No loss data</td></tr><tr><td>L240007</td><td>CA</td><td>05/09/2024</td><td>Pending response</td></tr><tr><td>L230008</td><td>OH</td><td>06/11/2024</td><td>Acknowledged</td></tr><tr><td>L230009</td><td>IL</td><td>07/13/2024</td><td>Prior term attached</td></tr></tbody>
+</table>
+
+</div>
+<div class="form-footer">Record services unit - synthetic correspondence page</div>
+
+</section>
+
+<section class="page worksheet">
+  <div class="page-head">
+    <span>Premium allocation worksheet</span>
+    <span>Loss Run Workpaper</span>
+  </div>
+
+<h2>Premium Allocation Worksheet</h2>
+<div class="worksheet-meta">
+  <div><span class="label">Packet</span><br>MULTIHOP_012_001_CROSSPAGE</div>
+  <div><span class="label">Worksheet period</span><br>2024 Policy Year</div>
+  <div><span class="label">Allocation basis</span><br>Written premium by jurisdiction</div>
+</div>
+
+<table class="data-table worksheet-table wide">
+  <thead><tr><th>Schedule</th><th>Jurisdiction</th><th>Surcharge</th><th>Written Premium</th><th>Taxable Premium</th><th>Tax Rate</th><th>Tax Due</th><th>Total Due</th></tr></thead>
+  <tbody><tr><td>Schedule 028</td><td>AL</td><td>N</td><td>36,241</td><td>31,975</td><td>0.0275</td><td>$879.31</td><td>$1,076.31</td></tr><tr><td>Schedule 028</td><td>AR</td><td>N</td><td>83,258</td><td>58,099</td><td>0.0125</td><td>$726.24</td><td>$965.24</td></tr><tr><td>Schedule 028</td><td>CA</td><td>N</td><td>134,666</td><td>84,751</td><td>0.0000</td><td>$0.00</td><td>$97.00</td></tr><tr><td>Schedule 028</td><td>CO</td><td>Y</td><td>108,350</td><td>85,626</td><td>0.0125</td><td>$1,070.33</td><td>$1,079.33</td></tr><tr><td>Schedule 028</td><td>GA</td><td>Y</td><td>51,336</td><td>39,517</td><td>0.0180</td><td>$711.31</td><td>$825.31</td></tr><tr><td>Schedule 028</td><td>IL</td><td>N</td><td>89,797</td><td>74,072</td><td>0.0310</td><td>$2,296.23</td><td>$2,359.23</td></tr><tr><td>Schedule 028</td><td>IN</td><td>N</td><td>101,891</td><td>93,964</td><td>0.0000</td><td>$0.00</td><td>$-60.00</td></tr><tr><td>Schedule 028</td><td>IA</td><td>Y</td><td>37,717</td><td>34,562</td><td>0.0180</td><td>$622.12</td><td>$744.12</td></tr><tr><td>Schedule 028</td><td>KS</td><td>N</td><td>24,698</td><td>16,670</td><td>0.0275</td><td>$458.43</td><td>$452.43</td></tr><tr><td>Schedule 028</td><td>MO</td><td>N</td><td>4,326</td><td>3,000</td><td>0.0310</td><td>$93.00</td><td>$229.00</td></tr><tr><td>Schedule 028</td><td>NC</td><td>N</td><td>82,369</td><td>55,061</td><td>0.0310</td><td>$1,706.89</td><td>$1,743.89</td></tr><tr><td>Schedule 028</td><td>PA</td><td>N</td><td>102,374</td><td>68,931</td><td>0.0180</td><td>$1,240.76</td><td>$1,429.76</td></tr><tr><td>Schedule 028</td><td>TX</td><td>Y</td><td>161,825</td><td>115,706</td><td>0.0310</td><td>$3,586.89</td><td>$3,520.89</td></tr><tr><td>Schedule 028</td><td>VA</td><td>N</td><td>12,253</td><td>9,645</td><td>0.0000</td><td>$0.00</td><td>$10.00</td></tr></tbody>
+</table>
+
+<div class="form-footer">Synthetic allocation worksheet. Jurisdiction rows are distractors and are not target incident records.</div>
+
+</section>
+
+<section class="page ">
+  <div class="page-head">
+    <span>IFTA mileage schedule</span>
+    <span>Loss Run Workpaper</span>
+  </div>
+
+<div class="spreadsheet-page">
+  <h2>IFTA Mileage: All Trucks - Synthetic Quarter</h2>
+
+  <div class="mini-report">
+    <h3>Vehicle: 600001</h3>
+
+<table class="data-table">
+  <thead><tr><th>#</th><th>State</th><th>Qualified Miles</th><th>Unqualified Miles</th><th>Total</th></tr></thead>
+  <tbody><tr><td>1</td><td>Alabama</td><td>103.0</td><td>0.0</td><td>104.0</td></tr><tr><td>2</td><td>Arkansas</td><td>200.0</td><td>0.0</td><td>201.0</td></tr><tr><td>3</td><td>California</td><td>297.0</td><td>0.0</td><td>298.0</td></tr><tr><td>4</td><td>Colorado</td><td>394.0</td><td>0.0</td><td>395.0</td></tr><tr><td>5</td><td>Georgia</td><td>491.0</td><td>0.0</td><td>492.0</td></tr><tr><td>6</td><td>Illinois</td><td>588.0</td><td>0.0</td><td>589.0</td></tr><tr><td>7</td><td>Indiana</td><td>685.0</td><td>0.0</td><td>686.0</td></tr><tr><td>8</td><td>Iowa</td><td>782.0</td><td>0.0</td><td>783.0</td></tr></tbody>
+</table>
+
+  </div>
+  <div class="mini-report">
+    <h3>Vehicle: 600002</h3>
+
+<table class="data-table">
+  <thead><tr><th>#</th><th>State</th><th>Qualified Miles</th><th>Unqualified Miles</th><th>Total</th></tr></thead>
+  <tbody><tr><td>1</td><td>Alabama</td><td>103.0</td><td>0.0</td><td>104.0</td></tr><tr><td>2</td><td>Arkansas</td><td>200.0</td><td>0.0</td><td>201.0</td></tr><tr><td>3</td><td>California</td><td>297.0</td><td>0.0</td><td>298.0</td></tr><tr><td>4</td><td>Colorado</td><td>394.0</td><td>0.0</td><td>395.0</td></tr><tr><td>5</td><td>Georgia</td><td>491.0</td><td>0.0</td><td>492.0</td></tr><tr><td>6</td><td>Illinois</td><td>588.0</td><td>0.0</td><td>589.0</td></tr><tr><td>7</td><td>Indiana</td><td>685.0</td><td>0.0</td><td>686.0</td></tr><tr><td>8</td><td>Iowa</td><td>782.0</td><td>0.0</td><td>783.0</td></tr></tbody>
+</table>
+
+  </div>
+  <div class="mini-report">
+    <h3>Vehicle: 600003</h3>
+
+<table class="data-table">
+  <thead><tr><th>#</th><th>State</th><th>Qualified Miles</th><th>Unqualified Miles</th><th>Total</th></tr></thead>
+  <tbody><tr><td>1</td><td>Alabama</td><td>103.0</td><td>0.0</td><td>104.0</td></tr><tr><td>2</td><td>Arkansas</td><td>200.0</td><td>0.0</td><td>201.0</td></tr><tr><td>3</td><td>California</td><td>297.0</td><td>0.0</td><td>298.0</td></tr><tr><td>4</td><td>Colorado</td><td>394.0</td><td>0.0</td><td>395.0</td></tr><tr><td>5</td><td>Georgia</td><td>491.0</td><td>0.0</td><td>492.0</td></tr><tr><td>6</td><td>Illinois</td><td>588.0</td><td>0.0</td><td>589.0</td></tr><tr><td>7</td><td>Indiana</td><td>685.0</td><td>0.0</td><td>686.0</td></tr><tr><td>8</td><td>Iowa</td><td>782.0</td><td>0.0</td><td>783.0</td></tr></tbody>
+</table>
+
+  </div>
+</div>
+
+</section>
+
+<section class="page rotated-page">
+  <div class="page-head">
+    <span>Rotated driver schedule scan</span>
+    <span>Loss Run Workpaper</span>
+  </div>
+
+<div class="rotated-page">
+  <div class="sideways-marker">Broker attachment - rotated source page</div>
+  <div class="rotated-inner">
+    <h2 style="text-align: center; font-size: 11pt;">Drivers</h2>
+
+<table class="data-table">
+  <thead><tr><th>Driver</th><th>Unit</th><th>Reference</th><th>State</th><th>Date</th></tr></thead>
+  <tbody><tr><td>Driver-001, Alex</td><td>600001</td><td>L240001</td><td>MO</td><td>02/24/2024</td></tr><tr><td>Driver-002, Alex</td><td>600002</td><td>L230002</td><td>PA</td><td>09/18/2023</td></tr><tr><td>Driver-003, Alex</td><td>600003</td><td>L230003</td><td>AZ</td><td>08/27/2023</td></tr><tr><td>Driver-004, Alex</td><td>600004</td><td>L240004</td><td>PA</td><td>12/28/2024</td></tr><tr><td>Driver-005, Alex</td><td>600005</td><td>L240005</td><td>AR</td><td>12/09/2024</td></tr><tr><td>Driver-006, Alex</td><td>600006</td><td>L230006</td><td>NC</td><td>08/04/2023</td></tr><tr><td>Driver-007, Alex</td><td>600007</td><td>L240007</td><td>GA</td><td>05/19/2024</td></tr><tr><td>Driver-008, Alex</td><td>600008</td><td>L230008</td><td>TX</td><td>06/08/2023</td></tr><tr><td>Driver-009, Alex</td><td>600009</td><td>L230009</td><td>MO</td><td>08/28/2023</td></tr><tr><td>Driver-010, Alex</td><td>600010</td><td>L240010</td><td>OK</td><td>06/16/2024</td></tr><tr><td>Driver-011, Alex</td><td>600011</td><td>L230011</td><td>IL</td><td>11/11/2023</td></tr><tr><td>Driver-012, Alex</td><td>600012</td><td>L230012</td><td>AZ</td><td>05/15/2023</td></tr></tbody>
+</table>
+
+  </div>
+</div>
+
+</section>
+
+<section class="page ">
+  <div class="page-head">
+    <span>Fleet driver assignment roster</span>
+    <span>Loss Run Workpaper</span>
+  </div>
+
+<h2>Fleet Driver Assignment Roster</h2>
+<p>Driver assignment extract from the transportation management system.</p>
+
+<table class="data-table roster">
+  <thead><tr><th>Unit</th><th>Driver</th><th>Company</th><th>Domicile</th><th>Status</th></tr></thead>
+  <tbody><tr><td>2024 KW 600001</td><td>Driver-001, Alex</td><td>Stuart Freight Co</td><td>AR</td><td>Active</td></tr><tr><td>2024 PB 600002</td><td>Driver-002, Alex</td><td>Rollinschester Hauling</td><td>OH</td><td>Active</td></tr><tr><td>2024 VL 600003</td><td>Driver-003, Alex</td><td>Eagle Cargo LLC</td><td>MO</td><td>Active</td></tr><tr><td>2024 MK 600004</td><td>Driver-004, Alex</td><td>Burke Hauling Co</td><td>IL</td><td>Active</td></tr><tr><td>2024 IN 600005</td><td>Driver-005, Alex</td><td>Griffinborough Cargo</td><td>OK</td><td>Active</td></tr><tr><td>2024 FR 600006</td><td>Driver-006, Alex</td><td>South Ryan Cargo</td><td>AR</td><td>Active</td></tr><tr><td>2024 KW 600007</td><td>Driver-007, Alex</td><td>Heatherview Transport</td><td>CA</td><td>Active</td></tr><tr><td>2024 PB 600008</td><td>Driver-008, Alex</td><td>Port James Cargo</td><td>OH</td><td>Active</td></tr><tr><td>2024 VL 600009</td><td>Driver-009, Alex</td><td>Burke Hauling Co</td><td>IL</td><td>Active</td></tr><tr><td>2024 MK 600010</td><td>Driver-010, Alex</td><td>Stuart Freight Co</td><td>AR</td><td>Active</td></tr><tr><td>2024 IN 600011</td><td>Driver-011, Alex</td><td>Heatherview Transport</td><td>CA</td><td>Active</td></tr><tr><td>2024 FR 600012</td><td>Driver-012, Alex</td><td>Joshuaborough Freight</td><td>TX</td><td>Active</td></tr><tr><td>2023 ZZ 900001</td><td>Inactive-001, Sam</td><td>Archived Fleet</td><td>TX</td><td>Inactive</td></tr><tr><td>2023 ZZ 900002</td><td>Inactive-002, Sam</td><td>Archived Fleet</td><td>TX</td><td>Inactive</td></tr><tr><td>2023 ZZ 900003</td><td>Inactive-003, Sam</td><td>Archived Fleet</td><td>TX</td><td>Inactive</td></tr><tr><td>2023 ZZ 900004</td><td>Inactive-004, Sam</td><td>Archived Fleet</td><td>TX</td><td>Inactive</td></tr><tr><td>2023 ZZ 900005</td><td>Inactive-005, Sam</td><td>Archived Fleet</td><td>TX</td><td>Inactive</td></tr></tbody>
+</table>
+
+</section>
+
+<section class="page ">
+  <div class="page-head">
+    <span>Policy register</span>
+    <span>Loss Run Workpaper</span>
+  </div>
+
+<h2>Policy Register</h2>
+<p>Policy administration extract. Some rows represent inactive policy shells.</p>
+
+<table class="data-table">
+  <thead><tr><th>Policy</th><th>Company</th><th>Insured</th><th>Division</th><th>State</th><th>Agency</th></tr></thead>
+  <tbody><tr><td>L23A1604</td><td>Port James Cargo</td><td>Port James Cargo</td><td>General</td><td>OH</td><td></td></tr><tr><td>L23A1955</td><td>Rollinschester Hauling</td><td>Rollinschester Hauling</td><td>General</td><td>OH</td><td></td></tr><tr><td>L23A2216</td><td>South Ryan Cargo</td><td>South Ryan Cargo</td><td>General</td><td>AR</td><td></td></tr><tr><td>L23A3286</td><td>Eagle Cargo LLC</td><td>Eagle Cargo LLC</td><td>General</td><td>MO</td><td></td></tr><tr><td>L23A7440</td><td>Joshuaborough Freight</td><td>Joshuaborough Freight</td><td>General</td><td>TX</td><td></td></tr><tr><td>L24A3974</td><td>Stuart Freight Co</td><td>Stuart Freight Co</td><td>General</td><td>AR</td><td>Brokerage 001</td></tr><tr><td>L24A6859</td><td>Burke Hauling Co</td><td>Burke Hauling Co</td><td>General</td><td>IL</td><td>Brokerage 004</td></tr><tr><td>L24A7575</td><td>Griffinborough Cargo</td><td>Griffinborough Cargo</td><td>General</td><td>OK</td><td></td></tr><tr><td>L24A9905</td><td>Heatherview Transport</td><td>Heatherview Transport</td><td>General</td><td>CA</td><td>Robbins PLC</td></tr><tr><td>ARCH-001</td><td>Archive Holdings</td><td>Archive Holdings</td><td>Runoff</td><td>NY</td><td>Do Not Use</td></tr><tr><td>ARCH-002</td><td>Archive Holdings</td><td>Archive Holdings</td><td>Runoff</td><td>NY</td><td>Do Not Use</td></tr><tr><td>ARCH-003</td><td>Archive Holdings</td><td>Archive Holdings</td><td>Runoff</td><td>NY</td><td>Do Not Use</td></tr><tr><td>ARCH-004</td><td>Archive Holdings</td><td>Archive Holdings</td><td>Runoff</td><td>NY</td><td>Do Not Use</td></tr></tbody>
+</table>
+
+</section>
+
+<section class="page worksheet">
+  <div class="page-head">
+    <span>Subrogation diary extract</span>
+    <span>Loss Run Workpaper</span>
+  </div>
+
+<h2>Subrogation Diary Extract</h2>
+<div class="worksheet-meta">
+  <div><span class="label">Packet</span><br>MULTIHOP_012_001_CROSSPAGE</div>
+  <div><span class="label">Diary export</span><br>Subrogation module</div>
+  <div><span class="label">Printed</span><br>03/31/2024</div>
+</div>
+
+<table class="data-table worksheet-table">
+  <thead><tr><th>Diary Date</th><th>File #</th><th>Reference</th><th>Action</th><th>Status</th><th>Recovery Est.</th></tr></thead>
+  <tbody><tr><td>03/03/2024</td><td>SUB-029-01</td><td>L230006</td><td>Demand review</td><td>Diary</td><td>$4,961.00</td></tr><tr><td>03/05/2024</td><td>SUB-029-02</td><td>L240007</td><td>Carrier tender</td><td>Closed</td><td>$923.00</td></tr><tr><td>03/07/2024</td><td>SUB-029-03</td><td>L230008</td><td>Closed no recovery</td><td>Open</td><td>$10,814.00</td></tr><tr><td>03/09/2024</td><td>#30009</td><td>L230009</td><td>Arbitration pending</td><td>Review</td><td>$5,017.00</td></tr><tr><td>03/11/2024</td><td>SUB-029-05</td><td>L240010</td><td>Diary follow-up</td><td>Diary</td><td>$4,139.00</td></tr><tr><td>03/13/2024</td><td>SUB-029-06</td><td>L230011</td><td>Demand review</td><td>Closed</td><td>$15,192.00</td></tr><tr><td>03/15/2024</td><td>SUB-029-07</td><td>L230012</td><td>Carrier tender</td><td>Open</td><td>$14,072.00</td></tr><tr><td>03/17/2024</td><td>#30001</td><td>L240001</td><td>Closed no recovery</td><td>Diary</td><td>$6,299.00</td></tr><tr><td>03/19/2024</td><td>SUB-029-09</td><td>L230002</td><td>Arbitration pending</td><td>Open</td><td>$5,777.00</td></tr><tr><td>03/21/2024</td><td>SUB-029-10</td><td>L230003</td><td>Diary follow-up</td><td>Closed</td><td>$4,040.00</td></tr><tr><td>03/23/2024</td><td>SUB-029-11</td><td>L240004</td><td>Demand review</td><td>Review</td><td>$4,070.00</td></tr><tr><td>03/25/2024</td><td>#30005</td><td>L240005</td><td>Carrier tender</td><td>Open</td><td>$3,978.00</td></tr><tr><td>03/27/2024</td><td>SUB-029-13</td><td>L230006</td><td>Closed no recovery</td><td>Open</td><td>$2,890.00</td></tr><tr><td>03/02/2024</td><td>SUB-029-14</td><td>L240007</td><td>Arbitration pending</td><td>Review</td><td>$17,719.00</td></tr></tbody>
+</table>
+
+
+</section>
+
+<section class="page worksheet">
+  <div class="page-head">
+    <span>Monthly account activity</span>
+    <span>Loss Run Workpaper</span>
+  </div>
+
+<h2>Monthly Account Activity</h2>
+<div class="worksheet-meta">
+  <div><span class="label">Account batch</span><br>MULTIHOP_012_001_CROSSPAGE-030</div>
+  <div><span class="label">Accounting month</span><br>February 2024</div>
+  <div><span class="label">Source</span><br>Billing ledger export</div>
+</div>
+
+<table class="data-table worksheet-table ledger-lite">
+  <thead><tr><th>Date</th><th>Document</th><th>Activity</th><th>Policy</th><th>Status</th><th>Amount</th></tr></thead>
+  <tbody><tr><td>02/02/2024</td><td>ACCT-030-01</td><td>Endorsement</td><td>L24A9905</td><td>Reconciled</td><td>$1,332.37</td></tr><tr><td>02/03/2024</td><td>ACCT-030-02</td><td>Audit adjustment</td><td>L23A1604</td><td>Reconciled</td><td>$1,238.63</td></tr><tr><td>02/04/2024</td><td>L230009</td><td>Claim reserve</td><td>L24A6859</td><td>Pending</td><td>$5,037.92</td></tr><tr><td>02/05/2024</td><td>ACCT-030-04</td><td>Fee reversal</td><td>L24A3974</td><td>Posted</td><td>$2,052.90</td></tr><tr><td>02/06/2024</td><td>ACCT-030-05</td><td>Premium receipt</td><td>L24A9905</td><td>Reconciled</td><td>$-8,741.09</td></tr><tr><td>02/07/2024</td><td>L230012</td><td>Endorsement</td><td>L23A7440</td><td>Reconciled</td><td>$2,906.35</td></tr><tr><td>02/08/2024</td><td>ACCT-030-07</td><td>Audit adjustment</td><td>L24A3974</td><td>Reconciled</td><td>$5,607.76</td></tr><tr><td>02/09/2024</td><td>ACCT-030-08</td><td>Claim reserve</td><td>L23A1955</td><td>Posted</td><td>$6,239.06</td></tr><tr><td>02/10/2024</td><td>L230003</td><td>Fee reversal</td><td>L23A3286</td><td>Pending</td><td>$800.15</td></tr><tr><td>02/11/2024</td><td>ACCT-030-10</td><td>Premium receipt</td><td>L24A6859</td><td>Pending</td><td>$-6,895.77</td></tr><tr><td>02/12/2024</td><td>ACCT-030-11</td><td>Endorsement</td><td>L24A7575</td><td>Pending</td><td>$8,881.29</td></tr><tr><td>02/13/2024</td><td>L230006</td><td>Audit adjustment</td><td>L23A2216</td><td>Pending</td><td>$6,869.11</td></tr><tr><td>02/14/2024</td><td>ACCT-030-13</td><td>Claim reserve</td><td>L24A9905</td><td>Posted</td><td>$4,878.51</td></tr><tr><td>02/15/2024</td><td>ACCT-030-14</td><td>Fee reversal</td><td>L23A1604</td><td>Pending</td><td>$1,642.79</td></tr><tr><td>02/16/2024</td><td>L230009</td><td>Premium receipt</td><td>L24A6859</td><td>Posted</td><td>$-3,498.11</td></tr><tr><td>02/17/2024</td><td>ACCT-030-16</td><td>Endorsement</td><td>L24A3974</td><td>Reconciled</td><td>$6,652.44</td></tr><tr><td>02/18/2024</td><td>ACCT-030-17</td><td>Audit adjustment</td><td>L24A9905</td><td>Pending</td><td>$8,224.96</td></tr><tr><td>02/19/2024</td><td>L230012</td><td>Claim reserve</td><td>L23A7440</td><td>Reconciled</td><td>$2,268.36</td></tr></tbody>
+</table>
+
+
+</section>
+
+<section class="page sparse-report">
+  <div class="page-head">
+    <span>Risk control follow-up notes</span>
+    <span>Loss Run Workpaper</span>
+  </div>
+
+<div class="sparse-report">
+  <div class="sparse-title">RISK CONTROL FOLLOW-UP NOTES</div>
+  <div class="report-meta">
+    <div>Packet:</div><div>MULTIHOP_012_001_CROSSPAGE</div>
+    <div>Related unit:</div><div>2024 PB 600008</div>
+    <div>Review cycle:</div><div>Renewal file checklist</div>
+  </div>
+  <div class="checklist"><div>X</div><div>Fleet safety meeting minutes retained</div><div>UW</div><div></div><div>Post-accident drug test documentation reviewed</div><div>Fleet</div><div>X</div><div>Driver remedial training assigned</div><div>UW</div><div>X</div><div>Telematics exception report requested</div><div>UW</div><div></div><div>Maintenance file cross-check complete</div><div>Claims</div><div>X</div><div>Open recommendation carried to renewal file</div><div>Fleet</div><div>X</div><div>Claim trend reviewed with account manager</div><div>UW</div><div></div><div>No additional field visit required</div><div>UW</div></div>
+</div>
+
+</section>
+
+<section class="page worksheet">
+  <div class="page-head">
+    <span>Driver qualification audit</span>
+    <span>Loss Run Workpaper</span>
+  </div>
+
+<h2>Driver Qualification Audit</h2>
+<div class="worksheet-meta">
+  <div><span class="label">Audit file</span><br>DQ-SSPAGE-032</div>
+  <div><span class="label">Review type</span><br>Annual compliance sampling</div>
+  <div><span class="label">Reviewer</span><br>Safety desk</div>
+</div>
+
+<table class="data-table worksheet-table">
+  <thead><tr><th>Driver</th><th>License State</th><th>License #</th><th>Medical Exp.</th><th>Finding</th><th>Unit</th></tr></thead>
+  <tbody><tr><td>Driver-009, Alex</td><td>CA</td><td>D61098797</td><td>02/2026</td><td>Exception noted</td><td>600009</td></tr><tr><td>Driver-010, Alex</td><td>PA</td><td>D59298992</td><td>03/2027</td><td>Exception noted</td><td>600010</td></tr><tr><td>Driver-011, Alex</td><td>GA</td><td>D79245525</td><td>04/2025</td><td>Renewal due</td><td>600011</td></tr><tr><td>Driver-012, Alex</td><td>MO</td><td>D81852156</td><td>05/2026</td><td>Current</td><td>600012</td></tr><tr><td>Driver-001, Alex</td><td>CA</td><td>D86736241</td><td>06/2027</td><td>Current</td><td>600001</td></tr><tr><td>Driver-002, Alex</td><td>IN</td><td>D10448720</td><td>07/2025</td><td>Exception noted</td><td>600002</td></tr><tr><td>Driver-003, Alex</td><td>TX</td><td>D63461577</td><td>08/2026</td><td>Current</td><td>600003</td></tr><tr><td>Driver-004, Alex</td><td>IL</td><td>D78585802</td><td>09/2027</td><td>Verified</td><td>600004</td></tr><tr><td>Driver-005, Alex</td><td>IN</td><td>D40379788</td><td>10/2025</td><td>Renewal due</td><td>600005</td></tr><tr><td>Driver-006, Alex</td><td>PA</td><td>D42365190</td><td>11/2026</td><td>Exception noted</td><td>600006</td></tr><tr><td>Driver-007, Alex</td><td>AL</td><td>D20923988</td><td>12/2027</td><td>Exception noted</td><td>600007</td></tr><tr><td>Driver-008, Alex</td><td>TX</td><td>D96841000</td><td>01/2025</td><td>Renewal due</td><td>600008</td></tr><tr><td>Driver-009, Alex</td><td>TX</td><td>D23547581</td><td>02/2026</td><td>Current</td><td>600009</td></tr><tr><td>Driver-010, Alex</td><td>MO</td><td>D43822347</td><td>03/2027</td><td>Current</td><td>600010</td></tr><tr><td>Driver-011, Alex</td><td>TX</td><td>D61031286</td><td>04/2025</td><td>Verified</td><td>600011</td></tr><tr><td>Driver-012, Alex</td><td>PA</td><td>D77123863</td><td>05/2026</td><td>Renewal due</td><td>600012</td></tr></tbody>
+</table>
+
+
+</section>
+
+<section class="page sparse-report">
+  <div class="page-head">
+    <span>Prior carrier correspondence</span>
+    <span>Loss Run Workpaper</span>
+  </div>
+
+<div class="sparse-report">
+  <div class="sparse-title">PRIOR CARRIER REQUEST RESPONSE</div>
+  <div class="report-address">
+    ATTN: Account Review Desk<br>
+    Synthetic Motor Carrier File<br>
+    Packet MULTIHOP_012_001_CROSSPAGE
+  </div>
+  <div class="report-meta">
+    <div>Issue Date:</div><div>02-07-2024</div>
+    <div>Letter Id:</div><div>LC0333097</div>
+    <div>Case Id:</div><div>MULTIHOP_012_001_CROSSPAGE</div>
+  </div>
+  <p>Report of services provided. This page records prior-carrier correspondence
+  status and does not contain the complete claim schedule.</p>
+
+<table class="data-table worksheet-table">
+  <thead><tr><th>Reference</th><th>State</th><th>Response Date</th><th>Disposition</th></tr></thead>
+  <tbody><tr><td>L240010</td><td>AR</td><td>02/03/2024</td><td>Acknowledged</td></tr><tr><td>L230011</td><td>CA</td><td>03/05/2024</td><td>Pending response</td></tr><tr><td>L230012</td><td>TX</td><td>04/07/2024</td><td>Acknowledged</td></tr><tr><td>L240001</td><td>AR</td><td>05/09/2024</td><td>Pending response</td></tr><tr><td>L230002</td><td>OH</td><td>06/11/2024</td><td>Prior term attached</td></tr><tr><td>L230003</td><td>MO</td><td>07/13/2024</td><td>No loss data</td></tr></tbody>
+</table>
+
+</div>
+<div class="form-footer">Record services unit - synthetic correspondence page</div>
+
+</section>
+
+<section class="page worksheet">
+  <div class="page-head">
+    <span>Premium allocation worksheet</span>
+    <span>Loss Run Workpaper</span>
+  </div>
+
+<h2>Premium Allocation Worksheet</h2>
+<div class="worksheet-meta">
+  <div><span class="label">Packet</span><br>MULTIHOP_012_001_CROSSPAGE</div>
+  <div><span class="label">Worksheet period</span><br>2024 Policy Year</div>
+  <div><span class="label">Allocation basis</span><br>Written premium by jurisdiction</div>
+</div>
+
+<table class="data-table worksheet-table wide">
+  <thead><tr><th>Schedule</th><th>Jurisdiction</th><th>Surcharge</th><th>Written Premium</th><th>Taxable Premium</th><th>Tax Rate</th><th>Tax Due</th><th>Total Due</th></tr></thead>
+  <tbody><tr><td>Schedule 034</td><td>AL</td><td>Y</td><td>19,363</td><td>12,025</td><td>0.0310</td><td>$372.77</td><td>$564.77</td></tr><tr><td>Schedule 034</td><td>AR</td><td>Y</td><td>50,273</td><td>44,898</td><td>0.0180</td><td>$808.16</td><td>$953.16</td></tr><tr><td>Schedule 034</td><td>CA</td><td>Y</td><td>154,805</td><td>137,460</td><td>0.0125</td><td>$1,718.25</td><td>$1,709.25</td></tr><tr><td>Schedule 034</td><td>CO</td><td>N</td><td>28,947</td><td>24,141</td><td>0.0125</td><td>$301.76</td><td>$463.76</td></tr><tr><td>Schedule 034</td><td>GA</td><td>Y</td><td>173,890</td><td>153,787</td><td>0.0000</td><td>$0.00</td><td>$-70.00</td></tr><tr><td>Schedule 034</td><td>IL</td><td>Y</td><td>95,578</td><td>63,827</td><td>0.0000</td><td>$0.00</td><td>$225.00</td></tr><tr><td>Schedule 034</td><td>IN</td><td>Y</td><td>20,490</td><td>15,133</td><td>0.0125</td><td>$189.16</td><td>$359.16</td></tr><tr><td>Schedule 034</td><td>IA</td><td>N</td><td>24,756</td><td>21,368</td><td>0.0180</td><td>$384.62</td><td>$402.62</td></tr><tr><td>Schedule 034</td><td>KS</td><td>Y</td><td>116,610</td><td>113,444</td><td>0.0000</td><td>$0.00</td><td>$192.00</td></tr><tr><td>Schedule 034</td><td>MO</td><td>Y</td><td>3,443</td><td>2,352</td><td>0.0180</td><td>$42.34</td><td>$155.34</td></tr><tr><td>Schedule 034</td><td>NC</td><td>Y</td><td>111,766</td><td>81,995</td><td>0.0310</td><td>$2,541.84</td><td>$2,538.84</td></tr><tr><td>Schedule 034</td><td>PA</td><td>N</td><td>127,357</td><td>116,060</td><td>0.0000</td><td>$0.00</td><td>$-24.00</td></tr><tr><td>Schedule 034</td><td>TX</td><td>Y</td><td>160,080</td><td>150,143</td><td>0.0310</td><td>$4,654.43</td><td>$4,794.43</td></tr><tr><td>Schedule 034</td><td>VA</td><td>Y</td><td>43,903</td><td>42,469</td><td>0.0125</td><td>$530.86</td><td>$667.86</td></tr></tbody>
+</table>
+
+<div class="form-footer">Synthetic allocation worksheet. Jurisdiction rows are distractors and are not target incident records.</div>
+
+</section>
+
+<section class="page worksheet">
+  <div class="page-head">
+    <span>Subrogation diary extract</span>
+    <span>Loss Run Workpaper</span>
+  </div>
+
+<h2>Subrogation Diary Extract</h2>
+<div class="worksheet-meta">
+  <div><span class="label">Packet</span><br>MULTIHOP_012_001_CROSSPAGE</div>
+  <div><span class="label">Diary export</span><br>Subrogation module</div>
+  <div><span class="label">Printed</span><br>03/31/2024</div>
+</div>
+
+<table class="data-table worksheet-table">
+  <thead><tr><th>Diary Date</th><th>File #</th><th>Reference</th><th>Action</th><th>Status</th><th>Recovery Est.</th></tr></thead>
+  <tbody><tr><td>03/03/2024</td><td>SUB-035-01</td><td>L230012</td><td>Carrier tender</td><td>Diary</td><td>$6,644.00</td></tr><tr><td>03/05/2024</td><td>SUB-035-02</td><td>L240001</td><td>Closed no recovery</td><td>Diary</td><td>$11,493.00</td></tr><tr><td>03/07/2024</td><td>SUB-035-03</td><td>L230002</td><td>Arbitration pending</td><td>Closed</td><td>$2,925.00</td></tr><tr><td>03/09/2024</td><td>#30003</td><td>L230003</td><td>Diary follow-up</td><td>Open</td><td>$8,636.00</td></tr><tr><td>03/11/2024</td><td>SUB-035-05</td><td>L240004</td><td>Demand review</td><td>Review</td><td>$8,567.00</td></tr><tr><td>03/13/2024</td><td>SUB-035-06</td><td>L240005</td><td>Carrier tender</td><td>Diary</td><td>$8,035.00</td></tr><tr><td>03/15/2024</td><td>SUB-035-07</td><td>L230006</td><td>Closed no recovery</td><td>Review</td><td>$12,409.00</td></tr><tr><td>03/17/2024</td><td>#30007</td><td>L240007</td><td>Arbitration pending</td><td>Closed</td><td>$17,460.00</td></tr><tr><td>03/19/2024</td><td>SUB-035-09</td><td>L230008</td><td>Diary follow-up</td><td>Open</td><td>$6,653.00</td></tr><tr><td>03/21/2024</td><td>SUB-035-10</td><td>L230009</td><td>Demand review</td><td>Review</td><td>$8,912.00</td></tr><tr><td>03/23/2024</td><td>SUB-035-11</td><td>L240010</td><td>Carrier tender</td><td>Open</td><td>$2,303.00</td></tr><tr><td>03/25/2024</td><td>#30011</td><td>L230011</td><td>Closed no recovery</td><td>Diary</td><td>$12,623.00</td></tr><tr><td>03/27/2024</td><td>SUB-035-13</td><td>L230012</td><td>Arbitration pending</td><td>Open</td><td>$10,200.00</td></tr><tr><td>03/02/2024</td><td>SUB-035-14</td><td>L240001</td><td>Diary follow-up</td><td>Review</td><td>$9,918.00</td></tr></tbody>
+</table>
+
+
+</section>
+
+<section class="page worksheet">
+  <div class="page-head">
+    <span>Monthly account activity</span>
+    <span>Loss Run Workpaper</span>
+  </div>
+
+<h2>Monthly Account Activity</h2>
+<div class="worksheet-meta">
+  <div><span class="label">Account batch</span><br>MULTIHOP_012_001_CROSSPAGE-036</div>
+  <div><span class="label">Accounting month</span><br>February 2024</div>
+  <div><span class="label">Source</span><br>Billing ledger export</div>
+</div>
+
+<table class="data-table worksheet-table ledger-lite">
+  <thead><tr><th>Date</th><th>Document</th><th>Activity</th><th>Policy</th><th>Status</th><th>Amount</th></tr></thead>
+  <tbody><tr><td>02/02/2024</td><td>ACCT-036-01</td><td>Audit adjustment</td><td>L24A3974</td><td>Reconciled</td><td>$7,913.01</td></tr><tr><td>02/03/2024</td><td>ACCT-036-02</td><td>Claim reserve</td><td>L23A1955</td><td>Reconciled</td><td>$4,652.38</td></tr><tr><td>02/04/2024</td><td>L230003</td><td>Fee reversal</td><td>L23A3286</td><td>Reconciled</td><td>$8,536.44</td></tr><tr><td>02/05/2024</td><td>ACCT-036-04</td><td>Premium receipt</td><td>L24A6859</td><td>Posted</td><td>$6,041.96</td></tr><tr><td>02/06/2024</td><td>ACCT-036-05</td><td>Endorsement</td><td>L24A7575</td><td>Posted</td><td>$-9,278.87</td></tr><tr><td>02/07/2024</td><td>L230006</td><td>Audit adjustment</td><td>L23A2216</td><td>Pending</td><td>$2,492.46</td></tr><tr><td>02/08/2024</td><td>ACCT-036-07</td><td>Claim reserve</td><td>L24A9905</td><td>Reconciled</td><td>$6,384.29</td></tr><tr><td>02/09/2024</td><td>ACCT-036-08</td><td>Fee reversal</td><td>L23A1604</td><td>Reconciled</td><td>$2,378.07</td></tr><tr><td>02/10/2024</td><td>L230009</td><td>Premium receipt</td><td>L24A6859</td><td>Reconciled</td><td>$8,077.57</td></tr><tr><td>02/11/2024</td><td>ACCT-036-10</td><td>Endorsement</td><td>L24A3974</td><td>Pending</td><td>$-5,539.25</td></tr><tr><td>02/12/2024</td><td>ACCT-036-11</td><td>Audit adjustment</td><td>L24A9905</td><td>Reconciled</td><td>$1,858.39</td></tr><tr><td>02/13/2024</td><td>L230012</td><td>Claim reserve</td><td>L23A7440</td><td>Pending</td><td>$6,409.75</td></tr><tr><td>02/14/2024</td><td>ACCT-036-13</td><td>Fee reversal</td><td>L24A3974</td><td>Posted</td><td>$9,290.08</td></tr><tr><td>02/15/2024</td><td>ACCT-036-14</td><td>Premium receipt</td><td>L23A1955</td><td>Pending</td><td>$1,460.80</td></tr><tr><td>02/16/2024</td><td>L230003</td><td>Endorsement</td><td>L23A3286</td><td>Posted</td><td>$-9,371.94</td></tr><tr><td>02/17/2024</td><td>ACCT-036-16</td><td>Audit adjustment</td><td>L24A6859</td><td>Reconciled</td><td>$4,417.35</td></tr><tr><td>02/18/2024</td><td>ACCT-036-17</td><td>Claim reserve</td><td>L24A7575</td><td>Posted</td><td>$1,495.57</td></tr><tr><td>02/19/2024</td><td>L230006</td><td>Fee reversal</td><td>L23A2216</td><td>Posted</td><td>$7,152.72</td></tr></tbody>
+</table>
+
+
+</section>
+
+<section class="page sparse-report">
+  <div class="page-head">
+    <span>Risk control follow-up notes</span>
+    <span>Loss Run Workpaper</span>
+  </div>
+
+<div class="sparse-report">
+  <div class="sparse-title">RISK CONTROL FOLLOW-UP NOTES</div>
+  <div class="report-meta">
+    <div>Packet:</div><div>MULTIHOP_012_001_CROSSPAGE</div>
+    <div>Related unit:</div><div>2024 PB 600002</div>
+    <div>Review cycle:</div><div>Renewal file checklist</div>
+  </div>
+  <div class="checklist"><div>X</div><div>Fleet safety meeting minutes retained</div><div>Safety</div><div></div><div>Post-accident drug test documentation reviewed</div><div>Fleet</div><div>X</div><div>Driver remedial training assigned</div><div>Claims</div><div>X</div><div>Telematics exception report requested</div><div>Safety</div><div></div><div>Maintenance file cross-check complete</div><div>Safety</div><div>X</div><div>Open recommendation carried to renewal file</div><div>Safety</div><div>X</div><div>Claim trend reviewed with account manager</div><div>Safety</div><div></div><div>No additional field visit required</div><div>UW</div></div>
+</div>
+
+</section>
+
+<section class="page worksheet">
+  <div class="page-head">
+    <span>Driver qualification audit</span>
+    <span>Loss Run Workpaper</span>
+  </div>
+
+<h2>Driver Qualification Audit</h2>
+<div class="worksheet-meta">
+  <div><span class="label">Audit file</span><br>DQ-SSPAGE-038</div>
+  <div><span class="label">Review type</span><br>Annual compliance sampling</div>
+  <div><span class="label">Reviewer</span><br>Safety desk</div>
+</div>
+
+<table class="data-table worksheet-table">
+  <thead><tr><th>Driver</th><th>License State</th><th>License #</th><th>Medical Exp.</th><th>Finding</th><th>Unit</th></tr></thead>
+  <tbody><tr><td>Driver-003, Alex</td><td>CA</td><td>D55825503</td><td>02/2026</td><td>Current</td><td>600003</td></tr><tr><td>Driver-004, Alex</td><td>CA</td><td>D32544124</td><td>03/2027</td><td>Current</td><td>600004</td></tr><tr><td>Driver-005, Alex</td><td>PA</td><td>D67328954</td><td>04/2025</td><td>Exception noted</td><td>600005</td></tr><tr><td>Driver-006, Alex</td><td>GA</td><td>D67456119</td><td>05/2026</td><td>Exception noted</td><td>600006</td></tr><tr><td>Driver-007, Alex</td><td>AL</td><td>D42768880</td><td>06/2027</td><td>Renewal due</td><td>600007</td></tr><tr><td>Driver-008, Alex</td><td>IN</td><td>D77917381</td><td>07/2025</td><td>Exception noted</td><td>600008</td></tr><tr><td>Driver-009, Alex</td><td>PA</td><td>D50572867</td><td>08/2026</td><td>Current</td><td>600009</td></tr><tr><td>Driver-010, Alex</td><td>CA</td><td>D71267120</td><td>09/2027</td><td>Verified</td><td>600010</td></tr><tr><td>Driver-011, Alex</td><td>AL</td><td>D91808626</td><td>10/2025</td><td>Verified</td><td>600011</td></tr><tr><td>Driver-012, Alex</td><td>CA</td><td>D35256624</td><td>11/2026</td><td>Verified</td><td>600012</td></tr><tr><td>Driver-001, Alex</td><td>AL</td><td>D77526776</td><td>12/2027</td><td>Renewal due</td><td>600001</td></tr><tr><td>Driver-002, Alex</td><td>IL</td><td>D35407960</td><td>01/2025</td><td>Renewal due</td><td>600002</td></tr><tr><td>Driver-003, Alex</td><td>IL</td><td>D74779989</td><td>02/2026</td><td>Renewal due</td><td>600003</td></tr><tr><td>Driver-004, Alex</td><td>IL</td><td>D49933976</td><td>03/2027</td><td>Renewal due</td><td>600004</td></tr><tr><td>Driver-005, Alex</td><td>CA</td><td>D74182551</td><td>04/2025</td><td>Renewal due</td><td>600005</td></tr><tr><td>Driver-006, Alex</td><td>GA</td><td>D11014060</td><td>05/2026</td><td>Current</td><td>600006</td></tr></tbody>
+</table>
+
+
+</section>
+
+<section class="page sparse-report">
+  <div class="page-head">
+    <span>Prior carrier correspondence</span>
+    <span>Loss Run Workpaper</span>
+  </div>
+
+<div class="sparse-report">
+  <div class="sparse-title">PRIOR CARRIER REQUEST RESPONSE</div>
+  <div class="report-address">
+    ATTN: Account Review Desk<br>
+    Synthetic Motor Carrier File<br>
+    Packet MULTIHOP_012_001_CROSSPAGE
+  </div>
+  <div class="report-meta">
+    <div>Issue Date:</div><div>02-13-2024</div>
+    <div>Letter Id:</div><div>LC0393994</div>
+    <div>Case Id:</div><div>MULTIHOP_012_001_CROSSPAGE</div>
+  </div>
+  <p>Report of services provided. This page records prior-carrier correspondence
+  status and does not contain the complete claim schedule.</p>
+
+<table class="data-table worksheet-table">
+  <thead><tr><th>Reference</th><th>State</th><th>Response Date</th><th>Disposition</th></tr></thead>
+  <tbody><tr><td>L240004</td><td>IL</td><td>02/03/2024</td><td>Pending response</td></tr><tr><td>L240005</td><td>OK</td><td>03/05/2024</td><td>No loss data</td></tr><tr><td>L230006</td><td>AR</td><td>04/07/2024</td><td>Pending response</td></tr><tr><td>L240007</td><td>CA</td><td>05/09/2024</td><td>Acknowledged</td></tr><tr><td>L230008</td><td>OH</td><td>06/11/2024</td><td>Prior term attached</td></tr><tr><td>L230009</td><td>IL</td><td>07/13/2024</td><td>Prior term attached</td></tr></tbody>
+</table>
+
+</div>
+<div class="form-footer">Record services unit - synthetic correspondence page</div>
+
+</section>
+
+<section class="page worksheet">
+  <div class="page-head">
+    <span>Premium allocation worksheet</span>
+    <span>Loss Run Workpaper</span>
+  </div>
+
+<h2>Premium Allocation Worksheet</h2>
+<div class="worksheet-meta">
+  <div><span class="label">Packet</span><br>MULTIHOP_012_001_CROSSPAGE</div>
+  <div><span class="label">Worksheet period</span><br>2024 Policy Year</div>
+  <div><span class="label">Allocation basis</span><br>Written premium by jurisdiction</div>
+</div>
+
+<table class="data-table worksheet-table wide">
+  <thead><tr><th>Schedule</th><th>Jurisdiction</th><th>Surcharge</th><th>Written Premium</th><th>Taxable Premium</th><th>Tax Rate</th><th>Tax Due</th><th>Total Due</th></tr></thead>
+  <tbody><tr><td>Schedule 040</td><td>AL</td><td>N</td><td>171,825</td><td>109,525</td><td>0.0000</td><td>$0.00</td><td>$-4.00</td></tr><tr><td>Schedule 040</td><td>AR</td><td>Y</td><td>77,186</td><td>72,037</td><td>0.0125</td><td>$900.46</td><td>$1,009.46</td></tr><tr><td>Schedule 040</td><td>CA</td><td>Y</td><td>34,308</td><td>32,772</td><td>0.0310</td><td>$1,015.93</td><td>$1,073.93</td></tr><tr><td>Schedule 040</td><td>CO</td><td>N</td><td>152,829</td><td>99,389</td><td>0.0180</td><td>$1,789.00</td><td>$1,825.00</td></tr><tr><td>Schedule 040</td><td>GA</td><td>N</td><td>147,292</td><td>133,151</td><td>0.0000</td><td>$0.00</td><td>$-52.00</td></tr><tr><td>Schedule 040</td><td>IL</td><td>Y</td><td>39,121</td><td>25,102</td><td>0.0310</td><td>$778.16</td><td>$860.16</td></tr><tr><td>Schedule 040</td><td>IN</td><td>N</td><td>36,074</td><td>26,767</td><td>0.0275</td><td>$736.09</td><td>$870.09</td></tr><tr><td>Schedule 040</td><td>IA</td><td>N</td><td>87,803</td><td>72,357</td><td>0.0000</td><td>$0.00</td><td>$178.00</td></tr><tr><td>Schedule 040</td><td>KS</td><td>N</td><td>122,459</td><td>114,716</td><td>0.0000</td><td>$0.00</td><td>$41.00</td></tr><tr><td>Schedule 040</td><td>MO</td><td>Y</td><td>91,548</td><td>59,638</td><td>0.0310</td><td>$1,848.78</td><td>$1,921.78</td></tr><tr><td>Schedule 040</td><td>NC</td><td>Y</td><td>108,252</td><td>92,326</td><td>0.0310</td><td>$2,862.11</td><td>$3,070.11</td></tr><tr><td>Schedule 040</td><td>PA</td><td>Y</td><td>169,434</td><td>134,272</td><td>0.0180</td><td>$2,416.90</td><td>$2,539.90</td></tr><tr><td>Schedule 040</td><td>TX</td><td>N</td><td>142,203</td><td>139,291</td><td>0.0310</td><td>$4,318.02</td><td>$4,276.02</td></tr><tr><td>Schedule 040</td><td>VA</td><td>Y</td><td>40,703</td><td>26,977</td><td>0.0180</td><td>$485.59</td><td>$546.59</td></tr></tbody>
+</table>
+
+<div class="form-footer">Synthetic allocation worksheet. Jurisdiction rows are distractors and are not target incident records.</div>
+
+</section>
+
+<section class="page worksheet">
+  <div class="page-head">
+    <span>Subrogation diary extract</span>
+    <span>Loss Run Workpaper</span>
+  </div>
+
+<h2>Subrogation Diary Extract</h2>
+<div class="worksheet-meta">
+  <div><span class="label">Packet</span><br>MULTIHOP_012_001_CROSSPAGE</div>
+  <div><span class="label">Diary export</span><br>Subrogation module</div>
+  <div><span class="label">Printed</span><br>03/31/2024</div>
+</div>
+
+<table class="data-table worksheet-table">
+  <thead><tr><th>Diary Date</th><th>File #</th><th>Reference</th><th>Action</th><th>Status</th><th>Recovery Est.</th></tr></thead>
+  <tbody><tr><td>03/03/2024</td><td>SUB-041-01</td><td>L230006</td><td>Closed no recovery</td><td>Diary</td><td>$3,473.00</td></tr><tr><td>03/05/2024</td><td>SUB-041-02</td><td>L240007</td><td>Arbitration pending</td><td>Review</td><td>$13,025.00</td></tr><tr><td>03/07/2024</td><td>SUB-041-03</td><td>L230008</td><td>Diary follow-up</td><td>Open</td><td>$8,917.00</td></tr><tr><td>03/09/2024</td><td>#30009</td><td>L230009</td><td>Demand review</td><td>Open</td><td>$4,133.00</td></tr><tr><td>03/11/2024</td><td>SUB-041-05</td><td>L240010</td><td>Carrier tender</td><td>Open</td><td>$10,591.00</td></tr><tr><td>03/13/2024</td><td>SUB-041-06</td><td>L230011</td><td>Closed no recovery</td><td>Closed</td><td>$453.00</td></tr><tr><td>03/15/2024</td><td>SUB-041-07</td><td>L230012</td><td>Arbitration pending</td><td>Diary</td><td>$892.00</td></tr><tr><td>03/17/2024</td><td>#30001</td><td>L240001</td><td>Diary follow-up</td><td>Diary</td><td>$15,411.00</td></tr><tr><td>03/19/2024</td><td>SUB-041-09</td><td>L230002</td><td>Demand review</td><td>Closed</td><td>$17,958.00</td></tr><tr><td>03/21/2024</td><td>SUB-041-10</td><td>L230003</td><td>Carrier tender</td><td>Review</td><td>$13,054.00</td></tr><tr><td>03/23/2024</td><td>SUB-041-11</td><td>L240004</td><td>Closed no recovery</td><td>Closed</td><td>$15,128.00</td></tr><tr><td>03/25/2024</td><td>#30005</td><td>L240005</td><td>Arbitration pending</td><td>Diary</td><td>$5,742.00</td></tr><tr><td>03/27/2024</td><td>SUB-041-13</td><td>L230006</td><td>Diary follow-up</td><td>Diary</td><td>$15,717.00</td></tr><tr><td>03/02/2024</td><td>SUB-041-14</td><td>L240007</td><td>Demand review</td><td>Diary</td><td>$3,521.00</td></tr></tbody>
+</table>
+
+
+</section>
+
+<section class="page worksheet">
+  <div class="page-head">
+    <span>Monthly account activity</span>
+    <span>Loss Run Workpaper</span>
+  </div>
+
+<h2>Monthly Account Activity</h2>
+<div class="worksheet-meta">
+  <div><span class="label">Account batch</span><br>MULTIHOP_012_001_CROSSPAGE-042</div>
+  <div><span class="label">Accounting month</span><br>February 2024</div>
+  <div><span class="label">Source</span><br>Billing ledger export</div>
+</div>
+
+<table class="data-table worksheet-table ledger-lite">
+  <thead><tr><th>Date</th><th>Document</th><th>Activity</th><th>Policy</th><th>Status</th><th>Amount</th></tr></thead>
+  <tbody><tr><td>02/02/2024</td><td>ACCT-042-01</td><td>Claim reserve</td><td>L24A9905</td><td>Pending</td><td>$6,330.02</td></tr><tr><td>02/03/2024</td><td>ACCT-042-02</td><td>Fee reversal</td><td>L23A1604</td><td>Posted</td><td>$5,814.77</td></tr><tr><td>02/04/2024</td><td>L230009</td><td>Premium receipt</td><td>L24A6859</td><td>Posted</td><td>$3,475.85</td></tr><tr><td>02/05/2024</td><td>ACCT-042-04</td><td>Endorsement</td><td>L24A3974</td><td>Pending</td><td>$9,743.53</td></tr><tr><td>02/06/2024</td><td>ACCT-042-05</td><td>Audit adjustment</td><td>L24A9905</td><td>Reconciled</td><td>$-8,705.26</td></tr><tr><td>02/07/2024</td><td>L230012</td><td>Claim reserve</td><td>L23A7440</td><td>Pending</td><td>$387.96</td></tr><tr><td>02/08/2024</td><td>ACCT-042-07</td><td>Fee reversal</td><td>L24A3974</td><td>Posted</td><td>$1,681.19</td></tr><tr><td>02/09/2024</td><td>ACCT-042-08</td><td>Premium receipt</td><td>L23A1955</td><td>Posted</td><td>$4,804.53</td></tr><tr><td>02/10/2024</td><td>L230003</td><td>Endorsement</td><td>L23A3286</td><td>Reconciled</td><td>$2,498.86</td></tr><tr><td>02/11/2024</td><td>ACCT-042-10</td><td>Audit adjustment</td><td>L24A6859</td><td>Pending</td><td>$-8,266.84</td></tr><tr><td>02/12/2024</td><td>ACCT-042-11</td><td>Claim reserve</td><td>L24A7575</td><td>Reconciled</td><td>$276.04</td></tr><tr><td>02/13/2024</td><td>L230006</td><td>Fee reversal</td><td>L23A2216</td><td>Posted</td><td>$2,209.97</td></tr><tr><td>02/14/2024</td><td>ACCT-042-13</td><td>Premium receipt</td><td>L24A9905</td><td>Reconciled</td><td>$9,056.77</td></tr><tr><td>02/15/2024</td><td>ACCT-042-14</td><td>Endorsement</td><td>L23A1604</td><td>Reconciled</td><td>$1,235.76</td></tr><tr><td>02/16/2024</td><td>L230009</td><td>Audit adjustment</td><td>L24A6859</td><td>Posted</td><td>$-334.02</td></tr><tr><td>02/17/2024</td><td>ACCT-042-16</td><td>Claim reserve</td><td>L24A3974</td><td>Pending</td><td>$5,411.09</td></tr><tr><td>02/18/2024</td><td>ACCT-042-17</td><td>Fee reversal</td><td>L24A9905</td><td>Pending</td><td>$1,218.06</td></tr><tr><td>02/19/2024</td><td>L230012</td><td>Premium receipt</td><td>L23A7440</td><td>Pending</td><td>$795.10</td></tr></tbody>
+</table>
+
+
+</section>
+
+<section class="page sparse-report">
+  <div class="page-head">
+    <span>Risk control follow-up notes</span>
+    <span>Loss Run Workpaper</span>
+  </div>
+
+<div class="sparse-report">
+  <div class="sparse-title">RISK CONTROL FOLLOW-UP NOTES</div>
+  <div class="report-meta">
+    <div>Packet:</div><div>MULTIHOP_012_001_CROSSPAGE</div>
+    <div>Related unit:</div><div>2024 PB 600008</div>
+    <div>Review cycle:</div><div>Renewal file checklist</div>
+  </div>
+  <div class="checklist"><div>X</div><div>Fleet safety meeting minutes retained</div><div>Fleet</div><div></div><div>Post-accident drug test documentation reviewed</div><div>UW</div><div>X</div><div>Driver remedial training assigned</div><div>Claims</div><div>X</div><div>Telematics exception report requested</div><div>Claims</div><div></div><div>Maintenance file cross-check complete</div><div>Safety</div><div>X</div><div>Open recommendation carried to renewal file</div><div>Fleet</div><div>X</div><div>Claim trend reviewed with account manager</div><div>UW</div><div></div><div>No additional field visit required</div><div>Safety</div></div>
+</div>
+
+</section>
+
+<section class="page worksheet">
+  <div class="page-head">
+    <span>Driver qualification audit</span>
+    <span>Loss Run Workpaper</span>
+  </div>
+
+<h2>Driver Qualification Audit</h2>
+<div class="worksheet-meta">
+  <div><span class="label">Audit file</span><br>DQ-SSPAGE-044</div>
+  <div><span class="label">Review type</span><br>Annual compliance sampling</div>
+  <div><span class="label">Reviewer</span><br>Safety desk</div>
+</div>
+
+<table class="data-table worksheet-table">
+  <thead><tr><th>Driver</th><th>License State</th><th>License #</th><th>Medical Exp.</th><th>Finding</th><th>Unit</th></tr></thead>
+  <tbody><tr><td>Driver-009, Alex</td><td>TX</td><td>D36980675</td><td>02/2026</td><td>Verified</td><td>600009</td></tr><tr><td>Driver-010, Alex</td><td>TX</td><td>D57458702</td><td>03/2027</td><td>Current</td><td>600010</td></tr><tr><td>Driver-011, Alex</td><td>TX</td><td>D31535263</td><td>04/2025</td><td>Exception noted</td><td>600011</td></tr><tr><td>Driver-012, Alex</td><td>AL</td><td>D10302436</td><td>05/2026</td><td>Exception noted</td><td>600012</td></tr><tr><td>Driver-001, Alex</td><td>CA</td><td>D51249169</td><td>06/2027</td><td>Exception noted</td><td>600001</td></tr><tr><td>Driver-002, Alex</td><td>TX</td><td>D84100536</td><td>07/2025</td><td>Exception noted</td><td>600002</td></tr><tr><td>Driver-003, Alex</td><td>CA</td><td>D22096225</td><td>08/2026</td><td>Renewal due</td><td>600003</td></tr><tr><td>Driver-004, Alex</td><td>IL</td><td>D69730718</td><td>09/2027</td><td>Exception noted</td><td>600004</td></tr><tr><td>Driver-005, Alex</td><td>GA</td><td>D91503182</td><td>10/2025</td><td>Current</td><td>600005</td></tr><tr><td>Driver-006, Alex</td><td>MO</td><td>D26589811</td><td>11/2026</td><td>Exception noted</td><td>600006</td></tr><tr><td>Driver-007, Alex</td><td>TX</td><td>D79291673</td><td>12/2027</td><td>Current</td><td>600007</td></tr><tr><td>Driver-008, Alex</td><td>IL</td><td>D15332547</td><td>01/2025</td><td>Current</td><td>600008</td></tr><tr><td>Driver-009, Alex</td><td>TX</td><td>D21342006</td><td>02/2026</td><td>Verified</td><td>600009</td></tr><tr><td>Driver-010, Alex</td><td>PA</td><td>D75237016</td><td>03/2027</td><td>Current</td><td>600010</td></tr><tr><td>Driver-011, Alex</td><td>MO</td><td>D11731751</td><td>04/2025</td><td>Verified</td><td>600011</td></tr><tr><td>Driver-012, Alex</td><td>AL</td><td>D28042916</td><td>05/2026</td><td>Renewal due</td><td>600012</td></tr></tbody>
+</table>
+
+
+</section>
+
+<section class="page sparse-report">
+  <div class="page-head">
+    <span>Prior carrier correspondence</span>
+    <span>Loss Run Workpaper</span>
+  </div>
+
+<div class="sparse-report">
+  <div class="sparse-title">PRIOR CARRIER REQUEST RESPONSE</div>
+  <div class="report-address">
+    ATTN: Account Review Desk<br>
+    Synthetic Motor Carrier File<br>
+    Packet MULTIHOP_012_001_CROSSPAGE
+  </div>
+  <div class="report-meta">
+    <div>Issue Date:</div><div>02-19-2024</div>
+    <div>Letter Id:</div><div>LC0452316</div>
+    <div>Case Id:</div><div>MULTIHOP_012_001_CROSSPAGE</div>
+  </div>
+  <p>Report of services provided. This page records prior-carrier correspondence
+  status and does not contain the complete claim schedule.</p>
+
+<table class="data-table worksheet-table">
+  <thead><tr><th>Reference</th><th>State</th><th>Response Date</th><th>Disposition</th></tr></thead>
+  <tbody><tr><td>L240010</td><td>AR</td><td>02/03/2024</td><td>Pending response</td></tr><tr><td>L230011</td><td>CA</td><td>03/05/2024</td><td>Acknowledged</td></tr><tr><td>L230012</td><td>TX</td><td>04/07/2024</td><td>Prior term attached</td></tr><tr><td>L240001</td><td>AR</td><td>05/09/2024</td><td>No loss data</td></tr><tr><td>L230002</td><td>OH</td><td>06/11/2024</td><td>Pending response</td></tr><tr><td>L230003</td><td>MO</td><td>07/13/2024</td><td>No loss data</td></tr></tbody>
+</table>
+
+</div>
+<div class="form-footer">Record services unit - synthetic correspondence page</div>
+
+</section>
+
+<section class="page worksheet">
+  <div class="page-head">
+    <span>Premium allocation worksheet</span>
+    <span>Loss Run Workpaper</span>
+  </div>
+
+<h2>Premium Allocation Worksheet</h2>
+<div class="worksheet-meta">
+  <div><span class="label">Packet</span><br>MULTIHOP_012_001_CROSSPAGE</div>
+  <div><span class="label">Worksheet period</span><br>2024 Policy Year</div>
+  <div><span class="label">Allocation basis</span><br>Written premium by jurisdiction</div>
+</div>
+
+<table class="data-table worksheet-table wide">
+  <thead><tr><th>Schedule</th><th>Jurisdiction</th><th>Surcharge</th><th>Written Premium</th><th>Taxable Premium</th><th>Tax Rate</th><th>Tax Due</th><th>Total Due</th></tr></thead>
+  <tbody><tr><td>Schedule 046</td><td>AL</td><td>Y</td><td>75,966</td><td>51,361</td><td>0.0275</td><td>$1,412.43</td><td>$1,626.43</td></tr><tr><td>Schedule 046</td><td>AR</td><td>N</td><td>59,403</td><td>54,387</td><td>0.0180</td><td>$978.97</td><td>$943.97</td></tr><tr><td>Schedule 046</td><td>CA</td><td>N</td><td>50,345</td><td>33,003</td><td>0.0125</td><td>$412.54</td><td>$412.54</td></tr><tr><td>Schedule 046</td><td>CO</td><td>N</td><td>22,209</td><td>19,431</td><td>0.0125</td><td>$242.89</td><td>$321.89</td></tr><tr><td>Schedule 046</td><td>GA</td><td>Y</td><td>72,089</td><td>70,311</td><td>0.0275</td><td>$1,933.55</td><td>$1,922.55</td></tr><tr><td>Schedule 046</td><td>IL</td><td>N</td><td>146,535</td><td>113,956</td><td>0.0125</td><td>$1,424.45</td><td>$1,550.45</td></tr><tr><td>Schedule 046</td><td>IN</td><td>Y</td><td>127,282</td><td>86,092</td><td>0.0310</td><td>$2,668.85</td><td>$2,798.85</td></tr><tr><td>Schedule 046</td><td>IA</td><td>Y</td><td>155,821</td><td>104,153</td><td>0.0275</td><td>$2,864.21</td><td>$2,781.21</td></tr><tr><td>Schedule 046</td><td>KS</td><td>Y</td><td>130,996</td><td>89,888</td><td>0.0125</td><td>$1,123.60</td><td>$1,131.60</td></tr><tr><td>Schedule 046</td><td>MO</td><td>Y</td><td>70,620</td><td>65,036</td><td>0.0125</td><td>$812.95</td><td>$947.95</td></tr><tr><td>Schedule 046</td><td>NC</td><td>N</td><td>55,972</td><td>44,130</td><td>0.0275</td><td>$1,213.58</td><td>$1,352.58</td></tr><tr><td>Schedule 046</td><td>PA</td><td>Y</td><td>174,399</td><td>128,524</td><td>0.0000</td><td>$0.00</td><td>$3.00</td></tr><tr><td>Schedule 046</td><td>TX</td><td>Y</td><td>15,925</td><td>14,782</td><td>0.0125</td><td>$184.78</td><td>$341.77</td></tr><tr><td>Schedule 046</td><td>VA</td><td>Y</td><td>6,800</td><td>5,975</td><td>0.0000</td><td>$0.00</td><td>$-19.00</td></tr></tbody>
+</table>
+
+<div class="form-footer">Synthetic allocation worksheet. Jurisdiction rows are distractors and are not target incident records.</div>
+
+</section>
+
+<section class="page ">
+  <div class="page-head">
+    <span>Loss cause classification appendix</span>
+    <span>Loss Run Workpaper</span>
+  </div>
+
+<h2>Loss Cause Classification Appendix</h2>
+<p>Internal cause-code reference used by claim intake and reserving systems.</p>
+
+<table class="data-table">
+  <thead><tr><th>Cause</th><th>Coverage</th><th>Narrative Description</th><th>Handler</th></tr></thead>
+  <tbody><tr><td>BKD</td><td>Liability</td><td>Insured vehicle backed into fixed object or parked vehicle</td><td>Claims Adjuster</td></tr><tr><td>RER</td><td>Liability</td><td>Insured vehicle rear-ended another vehicle</td><td>Claims Adjuster</td></tr><tr><td>TRN</td><td>Liability</td><td>Wide turn or lane change contact with another vehicle</td><td>Claims Adjuster</td></tr><tr><td>ROL</td><td>Physical Damage</td><td>Rollover or loss of control damage to insured vehicle</td><td>Claims Adjuster</td></tr><tr><td>CGO</td><td>Cargo</td><td>Cargo shortage, damage, contamination, or spoilage</td><td>Claims Adjuster</td></tr><tr><td>IMD</td><td>Inland Marine</td><td>Equipment or transported vehicle damage during handling</td><td>Claims Adjuster</td></tr></tbody>
+</table>
+
+</section>
+
+<section class="page ">
+  <div class="page-head">
+    <span>Claimant notice index</span>
+    <span>Loss Run Workpaper</span>
+  </div>
+
+<h2>Claimant Notice and Adjuster Note Index</h2>
+<div class="two-col">
+  <p>This index was scanned from the claim correspondence module. It includes
+  claimants, claimant-side references, and adjuster diary snippets.</p>
+  <p>Rows may not appear in the same order as the primary schedule.</p>
+</div>
+
+<table class="data-table">
+  <thead><tr><th>Claim #</th><th>Claimants</th><th>Adjuster Notes</th></tr></thead>
+  <tbody><tr><td>#30001</td><td>Walker, Linda</td><td>Indexed claimant notice 001; verify ledger totals before closure.</td></tr><tr><td>#30002</td><td>Gonzalez, Kevin; Jordan LLC</td><td>Indexed claimant notice 002; verify ledger totals before closure.</td></tr><tr><td>#30003</td><td>Mcdonald, Donna; Haynes, Jason</td><td>Indexed claimant notice 003; verify ledger totals before closure.</td></tr><tr><td>#30004</td><td>Le and Sons; Martin, George</td><td>Indexed claimant notice 004; verify ledger totals before closure.</td></tr><tr><td>#30005</td><td>Martin, Tiffany; Watkins, Ashlee</td><td>Indexed claimant notice 005; verify ledger totals before closure.</td></tr><tr><td>#30006</td><td>Claimant-006</td><td>Indexed claimant notice 006; verify ledger totals before closure.</td></tr><tr><td>#30007</td><td>Rivera Inc</td><td>Indexed claimant notice 007; verify ledger totals before closure.</td></tr><tr><td>#30008</td><td>Claimant-008</td><td>Indexed claimant notice 008; verify ledger totals before closure.</td></tr><tr><td>#30009</td><td>Claimant-009</td><td>Indexed claimant notice 009; verify ledger totals before closure.</td></tr><tr><td>#30010</td><td>Claimant-010</td><td>Indexed claimant notice 010; verify ledger totals before closure.</td></tr><tr><td>#30011</td><td>Carter, Gabriel</td><td>Indexed claimant notice 011; verify ledger totals before closure.</td></tr><tr><td>#30012</td><td>Claimant-012</td><td>Indexed claimant notice 012; verify ledger totals before closure.</td></tr></tbody>
+</table>
+
+</section>
+
+<section class="page worksheet">
+  <div class="page-head">
+    <span>Subrogation diary extract</span>
+    <span>Loss Run Workpaper</span>
+  </div>
+
+<h2>Subrogation Diary Extract</h2>
+<div class="worksheet-meta">
+  <div><span class="label">Packet</span><br>MULTIHOP_012_001_CROSSPAGE</div>
+  <div><span class="label">Diary export</span><br>Subrogation module</div>
+  <div><span class="label">Printed</span><br>03/31/2024</div>
+</div>
+
+<table class="data-table worksheet-table">
+  <thead><tr><th>Diary Date</th><th>File #</th><th>Reference</th><th>Action</th><th>Status</th><th>Recovery Est.</th></tr></thead>
+  <tbody><tr><td>03/03/2024</td><td>SUB-047-01</td><td>L230012</td><td>Arbitration pending</td><td>Review</td><td>$1,755.00</td></tr><tr><td>03/05/2024</td><td>SUB-047-02</td><td>L240001</td><td>Diary follow-up</td><td>Closed</td><td>$6,036.00</td></tr><tr><td>03/07/2024</td><td>SUB-047-03</td><td>L230002</td><td>Demand review</td><td>Open</td><td>$10,583.00</td></tr><tr><td>03/09/2024</td><td>#30003</td><td>L230003</td><td>Carrier tender</td><td>Diary</td><td>$5,371.00</td></tr><tr><td>03/11/2024</td><td>SUB-047-05</td><td>L240004</td><td>Closed no recovery</td><td>Open</td><td>$16,756.00</td></tr><tr><td>03/13/2024</td><td>SUB-047-06</td><td>L240005</td><td>Arbitration pending</td><td>Open</td><td>$128.00</td></tr><tr><td>03/15/2024</td><td>SUB-047-07</td><td>L230006</td><td>Diary follow-up</td><td>Open</td><td>$11,121.00</td></tr><tr><td>03/17/2024</td><td>#30007</td><td>L240007</td><td>Demand review</td><td>Review</td><td>$16,235.00</td></tr><tr><td>03/19/2024</td><td>SUB-047-09</td><td>L230008</td><td>Carrier tender</td><td>Closed</td><td>$3,864.00</td></tr><tr><td>03/21/2024</td><td>SUB-047-10</td><td>L230009</td><td>Closed no recovery</td><td>Closed</td><td>$18,148.00</td></tr><tr><td>03/23/2024</td><td>SUB-047-11</td><td>L240010</td><td>Arbitration pending</td><td>Closed</td><td>$3,524.00</td></tr><tr><td>03/25/2024</td><td>#30011</td><td>L230011</td><td>Diary follow-up</td><td>Open</td><td>$6,876.00</td></tr><tr><td>03/27/2024</td><td>SUB-047-13</td><td>L230012</td><td>Demand review</td><td>Open</td><td>$3,339.00</td></tr><tr><td>03/02/2024</td><td>SUB-047-14</td><td>L240001</td><td>Carrier tender</td><td>Open</td><td>$383.00</td></tr></tbody>
+</table>
+
+
+</section>
+
+<section class="page worksheet">
+  <div class="page-head">
+    <span>Monthly account activity</span>
+    <span>Loss Run Workpaper</span>
+  </div>
+
+<h2>Monthly Account Activity</h2>
+<div class="worksheet-meta">
+  <div><span class="label">Account batch</span><br>MULTIHOP_012_001_CROSSPAGE-048</div>
+  <div><span class="label">Accounting month</span><br>February 2024</div>
+  <div><span class="label">Source</span><br>Billing ledger export</div>
+</div>
+
+<table class="data-table worksheet-table ledger-lite">
+  <thead><tr><th>Date</th><th>Document</th><th>Activity</th><th>Policy</th><th>Status</th><th>Amount</th></tr></thead>
+  <tbody><tr><td>02/02/2024</td><td>ACCT-048-01</td><td>Fee reversal</td><td>L24A3974</td><td>Pending</td><td>$4,381.17</td></tr><tr><td>02/03/2024</td><td>ACCT-048-02</td><td>Premium receipt</td><td>L23A1955</td><td>Posted</td><td>$1,273.65</td></tr><tr><td>02/04/2024</td><td>L230003</td><td>Endorsement</td><td>L23A3286</td><td>Reconciled</td><td>$3,832.73</td></tr><tr><td>02/05/2024</td><td>ACCT-048-04</td><td>Audit adjustment</td><td>L24A6859</td><td>Pending</td><td>$1,402.12</td></tr><tr><td>02/06/2024</td><td>ACCT-048-05</td><td>Claim reserve</td><td>L24A7575</td><td>Posted</td><td>$-3,940.86</td></tr><tr><td>02/07/2024</td><td>L230006</td><td>Fee reversal</td><td>L23A2216</td><td>Pending</td><td>$7,485.62</td></tr><tr><td>02/08/2024</td><td>ACCT-048-07</td><td>Premium receipt</td><td>L24A9905</td><td>Pending</td><td>$6,528.93</td></tr><tr><td>02/09/2024</td><td>ACCT-048-08</td><td>Endorsement</td><td>L23A1604</td><td>Posted</td><td>$6,123.61</td></tr><tr><td>02/10/2024</td><td>L230009</td><td>Audit adjustment</td><td>L24A6859</td><td>Posted</td><td>$7,348.05</td></tr><tr><td>02/11/2024</td><td>ACCT-048-10</td><td>Claim reserve</td><td>L24A3974</td><td>Pending</td><td>$-8,675.14</td></tr><tr><td>02/12/2024</td><td>ACCT-048-11</td><td>Fee reversal</td><td>L24A9905</td><td>Reconciled</td><td>$5,587.09</td></tr><tr><td>02/13/2024</td><td>L230012</td><td>Premium receipt</td><td>L23A7440</td><td>Reconciled</td><td>$6,536.95</td></tr><tr><td>02/14/2024</td><td>ACCT-048-13</td><td>Endorsement</td><td>L24A3974</td><td>Pending</td><td>$5,657.21</td></tr><tr><td>02/15/2024</td><td>ACCT-048-14</td><td>Audit adjustment</td><td>L23A1955</td><td>Pending</td><td>$4,824.87</td></tr><tr><td>02/16/2024</td><td>L230003</td><td>Claim reserve</td><td>L23A3286</td><td>Pending</td><td>$-5,207.17</td></tr><tr><td>02/17/2024</td><td>ACCT-048-16</td><td>Fee reversal</td><td>L24A6859</td><td>Pending</td><td>$5,408.48</td></tr><tr><td>02/18/2024</td><td>ACCT-048-17</td><td>Premium receipt</td><td>L24A7575</td><td>Posted</td><td>$9,567.26</td></tr><tr><td>02/19/2024</td><td>L230006</td><td>Endorsement</td><td>L23A2216</td><td>Posted</td><td>$2,059.86</td></tr></tbody>
+</table>
+
+
+</section>
+
+<section class="page sparse-report">
+  <div class="page-head">
+    <span>Risk control follow-up notes</span>
+    <span>Loss Run Workpaper</span>
+  </div>
+
+<div class="sparse-report">
+  <div class="sparse-title">RISK CONTROL FOLLOW-UP NOTES</div>
+  <div class="report-meta">
+    <div>Packet:</div><div>MULTIHOP_012_001_CROSSPAGE</div>
+    <div>Related unit:</div><div>2024 PB 600002</div>
+    <div>Review cycle:</div><div>Renewal file checklist</div>
+  </div>
+  <div class="checklist"><div>X</div><div>Fleet safety meeting minutes retained</div><div>Claims</div><div></div><div>Post-accident drug test documentation reviewed</div><div>UW</div><div>X</div><div>Driver remedial training assigned</div><div>Fleet</div><div>X</div><div>Telematics exception report requested</div><div>Claims</div><div></div><div>Maintenance file cross-check complete</div><div>Claims</div><div>X</div><div>Open recommendation carried to renewal file</div><div>Safety</div><div>X</div><div>Claim trend reviewed with account manager</div><div>UW</div><div></div><div>No additional field visit required</div><div>Fleet</div></div>
+</div>
+
+</section>
+
+<section class="page worksheet">
+  <div class="page-head">
+    <span>Driver qualification audit</span>
+    <span>Loss Run Workpaper</span>
+  </div>
+
+<h2>Driver Qualification Audit</h2>
+<div class="worksheet-meta">
+  <div><span class="label">Audit file</span><br>DQ-SSPAGE-050</div>
+  <div><span class="label">Review type</span><br>Annual compliance sampling</div>
+  <div><span class="label">Reviewer</span><br>Safety desk</div>
+</div>
+
+<table class="data-table worksheet-table">
+  <thead><tr><th>Driver</th><th>License State</th><th>License #</th><th>Medical Exp.</th><th>Finding</th><th>Unit</th></tr></thead>
+  <tbody><tr><td>Driver-003, Alex</td><td>TX</td><td>D53148717</td><td>02/2026</td><td>Renewal due</td><td>600003</td></tr><tr><td>Driver-004, Alex</td><td>IN</td><td>D53634799</td><td>03/2027</td><td>Current</td><td>600004</td></tr><tr><td>Driver-005, Alex</td><td>GA</td><td>D81456813</td><td>04/2025</td><td>Current</td><td>600005</td></tr><tr><td>Driver-006, Alex</td><td>CA</td><td>D34818384</td><td>05/2026</td><td>Exception noted</td><td>600006</td></tr><tr><td>Driver-007, Alex</td><td>IN</td><td>D39131683</td><td>06/2027</td><td>Verified</td><td>600007</td></tr><tr><td>Driver-008, Alex</td><td>TX</td><td>D76206804</td><td>07/2025</td><td>Current</td><td>600008</td></tr><tr><td>Driver-009, Alex</td><td>IL</td><td>D69947307</td><td>08/2026</td><td>Exception noted</td><td>600009</td></tr><tr><td>Driver-010, Alex</td><td>PA</td><td>D25891729</td><td>09/2027</td><td>Renewal due</td><td>600010</td></tr><tr><td>Driver-011, Alex</td><td>GA</td><td>D59367735</td><td>10/2025</td><td>Verified</td><td>600011</td></tr><tr><td>Driver-012, Alex</td><td>AL</td><td>D28123126</td><td>11/2026</td><td>Verified</td><td>600012</td></tr><tr><td>Driver-001, Alex</td><td>AL</td><td>D96191479</td><td>12/2027</td><td>Current</td><td>600001</td></tr><tr><td>Driver-002, Alex</td><td>PA</td><td>D95475198</td><td>01/2025</td><td>Current</td><td>600002</td></tr><tr><td>Driver-003, Alex</td><td>GA</td><td>D20582424</td><td>02/2026</td><td>Verified</td><td>600003</td></tr><tr><td>Driver-004, Alex</td><td>CA</td><td>D51033652</td><td>03/2027</td><td>Exception noted</td><td>600004</td></tr><tr><td>Driver-005, Alex</td><td>CA</td><td>D95434643</td><td>04/2025</td><td>Current</td><td>600005</td></tr><tr><td>Driver-006, Alex</td><td>AL</td><td>D38664250</td><td>05/2026</td><td>Renewal due</td><td>600006</td></tr></tbody>
+</table>
+
+
+</section>
+
+<section class="page sparse-report">
+  <div class="page-head">
+    <span>Prior carrier correspondence</span>
+    <span>Loss Run Workpaper</span>
+  </div>
+
+<div class="sparse-report">
+  <div class="sparse-title">PRIOR CARRIER REQUEST RESPONSE</div>
+  <div class="report-address">
+    ATTN: Account Review Desk<br>
+    Synthetic Motor Carrier File<br>
+    Packet MULTIHOP_012_001_CROSSPAGE
+  </div>
+  <div class="report-meta">
+    <div>Issue Date:</div><div>02-25-2024</div>
+    <div>Letter Id:</div><div>LC0511335</div>
+    <div>Case Id:</div><div>MULTIHOP_012_001_CROSSPAGE</div>
+  </div>
+  <p>Report of services provided. This page records prior-carrier correspondence
+  status and does not contain the complete claim schedule.</p>
+
+<table class="data-table worksheet-table">
+  <thead><tr><th>Reference</th><th>State</th><th>Response Date</th><th>Disposition</th></tr></thead>
+  <tbody><tr><td>L240004</td><td>IL</td><td>02/03/2024</td><td>Pending response</td></tr><tr><td>L240005</td><td>OK</td><td>03/05/2024</td><td>No loss data</td></tr><tr><td>L230006</td><td>AR</td><td>04/07/2024</td><td>Prior term attached</td></tr><tr><td>L240007</td><td>CA</td><td>05/09/2024</td><td>Pending response</td></tr><tr><td>L230008</td><td>OH</td><td>06/11/2024</td><td>Prior term attached</td></tr><tr><td>L230009</td><td>IL</td><td>07/13/2024</td><td>Pending response</td></tr></tbody>
+</table>
+
+</div>
+<div class="form-footer">Record services unit - synthetic correspondence page</div>
+
+</section>
+
+<section class="page worksheet">
+  <div class="page-head">
+    <span>Premium allocation worksheet</span>
+    <span>Loss Run Workpaper</span>
+  </div>
+
+<h2>Premium Allocation Worksheet</h2>
+<div class="worksheet-meta">
+  <div><span class="label">Packet</span><br>MULTIHOP_012_001_CROSSPAGE</div>
+  <div><span class="label">Worksheet period</span><br>2024 Policy Year</div>
+  <div><span class="label">Allocation basis</span><br>Written premium by jurisdiction</div>
+</div>
+
+<table class="data-table worksheet-table wide">
+  <thead><tr><th>Schedule</th><th>Jurisdiction</th><th>Surcharge</th><th>Written Premium</th><th>Taxable Premium</th><th>Tax Rate</th><th>Tax Due</th><th>Total Due</th></tr></thead>
+  <tbody><tr><td>Schedule 052</td><td>AL</td><td>Y</td><td>127,965</td><td>83,059</td><td>0.0125</td><td>$1,038.24</td><td>$1,131.24</td></tr><tr><td>Schedule 052</td><td>AR</td><td>N</td><td>160,338</td><td>110,267</td><td>0.0000</td><td>$0.00</td><td>$159.00</td></tr><tr><td>Schedule 052</td><td>CA</td><td>Y</td><td>4,289</td><td>2,968</td><td>0.0125</td><td>$37.10</td><td>$-0.90</td></tr><tr><td>Schedule 052</td><td>CO</td><td>Y</td><td>4,317</td><td>3,887</td><td>0.0180</td><td>$69.97</td><td>$251.97</td></tr><tr><td>Schedule 052</td><td>GA</td><td>N</td><td>28,775</td><td>21,665</td><td>0.0125</td><td>$270.81</td><td>$486.81</td></tr><tr><td>Schedule 052</td><td>IL</td><td>Y</td><td>51,641</td><td>35,134</td><td>0.0310</td><td>$1,089.15</td><td>$1,096.15</td></tr><tr><td>Schedule 052</td><td>IN</td><td>N</td><td>162,526</td><td>120,168</td><td>0.0125</td><td>$1,502.10</td><td>$1,477.10</td></tr><tr><td>Schedule 052</td><td>IA</td><td>Y</td><td>93,723</td><td>77,984</td><td>0.0310</td><td>$2,417.50</td><td>$2,471.50</td></tr><tr><td>Schedule 052</td><td>KS</td><td>N</td><td>2,939</td><td>2,337</td><td>0.0180</td><td>$42.07</td><td>$206.07</td></tr><tr><td>Schedule 052</td><td>MO</td><td>Y</td><td>14,867</td><td>12,900</td><td>0.0180</td><td>$232.20</td><td>$459.20</td></tr><tr><td>Schedule 052</td><td>NC</td><td>N</td><td>88,200</td><td>80,815</td><td>0.0125</td><td>$1,010.19</td><td>$1,111.19</td></tr><tr><td>Schedule 052</td><td>PA</td><td>Y</td><td>64,007</td><td>50,654</td><td>0.0275</td><td>$1,392.98</td><td>$1,365.98</td></tr><tr><td>Schedule 052</td><td>TX</td><td>N</td><td>83,620</td><td>61,960</td><td>0.0275</td><td>$1,703.90</td><td>$1,830.90</td></tr><tr><td>Schedule 052</td><td>VA</td><td>Y</td><td>109,488</td><td>72,995</td><td>0.0310</td><td>$2,262.84</td><td>$2,468.84</td></tr></tbody>
+</table>
+
+<div class="form-footer">Synthetic allocation worksheet. Jurisdiction rows are distractors and are not target incident records.</div>
+
+</section>
+
+<section class="page worksheet">
+  <div class="page-head">
+    <span>Subrogation diary extract</span>
+    <span>Loss Run Workpaper</span>
+  </div>
+
+<h2>Subrogation Diary Extract</h2>
+<div class="worksheet-meta">
+  <div><span class="label">Packet</span><br>MULTIHOP_012_001_CROSSPAGE</div>
+  <div><span class="label">Diary export</span><br>Subrogation module</div>
+  <div><span class="label">Printed</span><br>03/31/2024</div>
+</div>
+
+<table class="data-table worksheet-table">
+  <thead><tr><th>Diary Date</th><th>File #</th><th>Reference</th><th>Action</th><th>Status</th><th>Recovery Est.</th></tr></thead>
+  <tbody><tr><td>03/03/2024</td><td>SUB-053-01</td><td>L230006</td><td>Diary follow-up</td><td>Review</td><td>$4,674.00</td></tr><tr><td>03/05/2024</td><td>SUB-053-02</td><td>L240007</td><td>Demand review</td><td>Closed</td><td>$13,949.00</td></tr><tr><td>03/07/2024</td><td>SUB-053-03</td><td>L230008</td><td>Carrier tender</td><td>Open</td><td>$2,243.00</td></tr><tr><td>03/09/2024</td><td>#30009</td><td>L230009</td><td>Closed no recovery</td><td>Open</td><td>$2,723.00</td></tr><tr><td>03/11/2024</td><td>SUB-053-05</td><td>L240010</td><td>Arbitration pending</td><td>Open</td><td>$1,531.00</td></tr><tr><td>03/13/2024</td><td>SUB-053-06</td><td>L230011</td><td>Diary follow-up</td><td>Diary</td><td>$10,784.00</td></tr><tr><td>03/15/2024</td><td>SUB-053-07</td><td>L230012</td><td>Demand review</td><td>Closed</td><td>$10,653.00</td></tr><tr><td>03/17/2024</td><td>#30001</td><td>L240001</td><td>Carrier tender</td><td>Review</td><td>$11,561.00</td></tr><tr><td>03/19/2024</td><td>SUB-053-09</td><td>L230002</td><td>Closed no recovery</td><td>Closed</td><td>$11,142.00</td></tr><tr><td>03/21/2024</td><td>SUB-053-10</td><td>L230003</td><td>Arbitration pending</td><td>Diary</td><td>$8,009.00</td></tr><tr><td>03/23/2024</td><td>SUB-053-11</td><td>L240004</td><td>Diary follow-up</td><td>Review</td><td>$1,045.00</td></tr><tr><td>03/25/2024</td><td>#30005</td><td>L240005</td><td>Demand review</td><td>Closed</td><td>$5,012.00</td></tr><tr><td>03/27/2024</td><td>SUB-053-13</td><td>L230006</td><td>Carrier tender</td><td>Closed</td><td>$4,631.00</td></tr><tr><td>03/02/2024</td><td>SUB-053-14</td><td>L240007</td><td>Closed no recovery</td><td>Open</td><td>$12,942.00</td></tr></tbody>
+</table>
+
+
+</section>
+
+<section class="page worksheet">
+  <div class="page-head">
+    <span>Monthly account activity</span>
+    <span>Loss Run Workpaper</span>
+  </div>
+
+<h2>Monthly Account Activity</h2>
+<div class="worksheet-meta">
+  <div><span class="label">Account batch</span><br>MULTIHOP_012_001_CROSSPAGE-054</div>
+  <div><span class="label">Accounting month</span><br>February 2024</div>
+  <div><span class="label">Source</span><br>Billing ledger export</div>
+</div>
+
+<table class="data-table worksheet-table ledger-lite">
+  <thead><tr><th>Date</th><th>Document</th><th>Activity</th><th>Policy</th><th>Status</th><th>Amount</th></tr></thead>
+  <tbody><tr><td>02/02/2024</td><td>ACCT-054-01</td><td>Premium receipt</td><td>L24A9905</td><td>Pending</td><td>$6,906.79</td></tr><tr><td>02/03/2024</td><td>ACCT-054-02</td><td>Endorsement</td><td>L23A1604</td><td>Pending</td><td>$2,152.89</td></tr><tr><td>02/04/2024</td><td>L230009</td><td>Audit adjustment</td><td>L24A6859</td><td>Posted</td><td>$8,415.39</td></tr><tr><td>02/05/2024</td><td>ACCT-054-04</td><td>Claim reserve</td><td>L24A3974</td><td>Posted</td><td>$1,898.02</td></tr><tr><td>02/06/2024</td><td>ACCT-054-05</td><td>Fee reversal</td><td>L24A9905</td><td>Posted</td><td>$-4,045.73</td></tr><tr><td>02/07/2024</td><td>L230012</td><td>Premium receipt</td><td>L23A7440</td><td>Reconciled</td><td>$9,126.44</td></tr><tr><td>02/08/2024</td><td>ACCT-054-07</td><td>Endorsement</td><td>L24A3974</td><td>Reconciled</td><td>$8,175.54</td></tr><tr><td>02/09/2024</td><td>ACCT-054-08</td><td>Audit adjustment</td><td>L23A1955</td><td>Pending</td><td>$1,829.64</td></tr><tr><td>02/10/2024</td><td>L230003</td><td>Claim reserve</td><td>L23A3286</td><td>Posted</td><td>$6,792.70</td></tr><tr><td>02/11/2024</td><td>ACCT-054-10</td><td>Fee reversal</td><td>L24A6859</td><td>Reconciled</td><td>$-2,401.36</td></tr><tr><td>02/12/2024</td><td>ACCT-054-11</td><td>Premium receipt</td><td>L24A7575</td><td>Reconciled</td><td>$5,413.55</td></tr><tr><td>02/13/2024</td><td>L230006</td><td>Endorsement</td><td>L23A2216</td><td>Posted</td><td>$7,405.46</td></tr><tr><td>02/14/2024</td><td>ACCT-054-13</td><td>Audit adjustment</td><td>L24A9905</td><td>Pending</td><td>$490.63</td></tr><tr><td>02/15/2024</td><td>ACCT-054-14</td><td>Claim reserve</td><td>L23A1604</td><td>Posted</td><td>$2,451.91</td></tr><tr><td>02/16/2024</td><td>L230009</td><td>Fee reversal</td><td>L24A6859</td><td>Reconciled</td><td>$-687.40</td></tr><tr><td>02/17/2024</td><td>ACCT-054-16</td><td>Premium receipt</td><td>L24A3974</td><td>Reconciled</td><td>$378.00</td></tr><tr><td>02/18/2024</td><td>ACCT-054-17</td><td>Endorsement</td><td>L24A9905</td><td>Posted</td><td>$293.02</td></tr><tr><td>02/19/2024</td><td>L230012</td><td>Audit adjustment</td><td>L23A7440</td><td>Posted</td><td>$1,339.09</td></tr></tbody>
+</table>
+
+
+</section>
+
+<section class="page sparse-report">
+  <div class="page-head">
+    <span>Risk control follow-up notes</span>
+    <span>Loss Run Workpaper</span>
+  </div>
+
+<div class="sparse-report">
+  <div class="sparse-title">RISK CONTROL FOLLOW-UP NOTES</div>
+  <div class="report-meta">
+    <div>Packet:</div><div>MULTIHOP_012_001_CROSSPAGE</div>
+    <div>Related unit:</div><div>2024 PB 600008</div>
+    <div>Review cycle:</div><div>Renewal file checklist</div>
+  </div>
+  <div class="checklist"><div>X</div><div>Fleet safety meeting minutes retained</div><div>Fleet</div><div></div><div>Post-accident drug test documentation reviewed</div><div>Safety</div><div>X</div><div>Driver remedial training assigned</div><div>UW</div><div>X</div><div>Telematics exception report requested</div><div>UW</div><div></div><div>Maintenance file cross-check complete</div><div>UW</div><div>X</div><div>Open recommendation carried to renewal file</div><div>Fleet</div><div>X</div><div>Claim trend reviewed with account manager</div><div>Fleet</div><div></div><div>No additional field visit required</div><div>Fleet</div></div>
+</div>
+
+</section>
+
+<section class="page worksheet">
+  <div class="page-head">
+    <span>Driver qualification audit</span>
+    <span>Loss Run Workpaper</span>
+  </div>
+
+<h2>Driver Qualification Audit</h2>
+<div class="worksheet-meta">
+  <div><span class="label">Audit file</span><br>DQ-SSPAGE-056</div>
+  <div><span class="label">Review type</span><br>Annual compliance sampling</div>
+  <div><span class="label">Reviewer</span><br>Safety desk</div>
+</div>
+
+<table class="data-table worksheet-table">
+  <thead><tr><th>Driver</th><th>License State</th><th>License #</th><th>Medical Exp.</th><th>Finding</th><th>Unit</th></tr></thead>
+  <tbody><tr><td>Driver-009, Alex</td><td>TX</td><td>D49984021</td><td>02/2026</td><td>Current</td><td>600009</td></tr><tr><td>Driver-010, Alex</td><td>IN</td><td>D61858011</td><td>03/2027</td><td>Verified</td><td>600010</td></tr><tr><td>Driver-011, Alex</td><td>GA</td><td>D69940392</td><td>04/2025</td><td>Verified</td><td>600011</td></tr><tr><td>Driver-012, Alex</td><td>PA</td><td>D80002258</td><td>05/2026</td><td>Verified</td><td>600012</td></tr><tr><td>Driver-001, Alex</td><td>IL</td><td>D12133649</td><td>06/2027</td><td>Verified</td><td>600001</td></tr><tr><td>Driver-002, Alex</td><td>AL</td><td>D90961269</td><td>07/2025</td><td>Renewal due</td><td>600002</td></tr><tr><td>Driver-003, Alex</td><td>CA</td><td>D79742884</td><td>08/2026</td><td>Verified</td><td>600003</td></tr><tr><td>Driver-004, Alex</td><td>MO</td><td>D87706322</td><td>09/2027</td><td>Exception noted</td><td>600004</td></tr><tr><td>Driver-005, Alex</td><td>TX</td><td>D41761417</td><td>10/2025</td><td>Current</td><td>600005</td></tr><tr><td>Driver-006, Alex</td><td>IN</td><td>D14551279</td><td>11/2026</td><td>Renewal due</td><td>600006</td></tr><tr><td>Driver-007, Alex</td><td>TX</td><td>D54627967</td><td>12/2027</td><td>Exception noted</td><td>600007</td></tr><tr><td>Driver-008, Alex</td><td>IN</td><td>D39681575</td><td>01/2025</td><td>Renewal due</td><td>600008</td></tr><tr><td>Driver-009, Alex</td><td>GA</td><td>D29621565</td><td>02/2026</td><td>Verified</td><td>600009</td></tr><tr><td>Driver-010, Alex</td><td>IN</td><td>D26188271</td><td>03/2027</td><td>Exception noted</td><td>600010</td></tr><tr><td>Driver-011, Alex</td><td>AL</td><td>D68191507</td><td>04/2025</td><td>Exception noted</td><td>600011</td></tr><tr><td>Driver-012, Alex</td><td>IN</td><td>D49609349</td><td>05/2026</td><td>Verified</td><td>600012</td></tr></tbody>
+</table>
+
+
+</section>
+
+<section class="page sparse-report">
+  <div class="page-head">
+    <span>Prior carrier correspondence</span>
+    <span>Loss Run Workpaper</span>
+  </div>
+
+<div class="sparse-report">
+  <div class="sparse-title">PRIOR CARRIER REQUEST RESPONSE</div>
+  <div class="report-address">
+    ATTN: Account Review Desk<br>
+    Synthetic Motor Carrier File<br>
+    Packet MULTIHOP_012_001_CROSSPAGE
+  </div>
+  <div class="report-meta">
+    <div>Issue Date:</div><div>02-04-2024</div>
+    <div>Letter Id:</div><div>LC0573440</div>
+    <div>Case Id:</div><div>MULTIHOP_012_001_CROSSPAGE</div>
+  </div>
+  <p>Report of services provided. This page records prior-carrier correspondence
+  status and does not contain the complete claim schedule.</p>
+
+<table class="data-table worksheet-table">
+  <thead><tr><th>Reference</th><th>State</th><th>Response Date</th><th>Disposition</th></tr></thead>
+  <tbody><tr><td>L240010</td><td>AR</td><td>02/03/2024</td><td>No loss data</td></tr><tr><td>L230011</td><td>CA</td><td>03/05/2024</td><td>Prior term attached</td></tr><tr><td>L230012</td><td>TX</td><td>04/07/2024</td><td>Pending response</td></tr><tr><td>L240001</td><td>AR</td><td>05/09/2024</td><td>Pending response</td></tr><tr><td>L230002</td><td>OH</td><td>06/11/2024</td><td>No loss data</td></tr><tr><td>L230003</td><td>MO</td><td>07/13/2024</td><td>Acknowledged</td></tr></tbody>
+</table>
+
+</div>
+<div class="form-footer">Record services unit - synthetic correspondence page</div>
+
+</section>
+
+<section class="page worksheet">
+  <div class="page-head">
+    <span>Premium allocation worksheet</span>
+    <span>Loss Run Workpaper</span>
+  </div>
+
+<h2>Premium Allocation Worksheet</h2>
+<div class="worksheet-meta">
+  <div><span class="label">Packet</span><br>MULTIHOP_012_001_CROSSPAGE</div>
+  <div><span class="label">Worksheet period</span><br>2024 Policy Year</div>
+  <div><span class="label">Allocation basis</span><br>Written premium by jurisdiction</div>
+</div>
+
+<table class="data-table worksheet-table wide">
+  <thead><tr><th>Schedule</th><th>Jurisdiction</th><th>Surcharge</th><th>Written Premium</th><th>Taxable Premium</th><th>Tax Rate</th><th>Tax Due</th><th>Total Due</th></tr></thead>
+  <tbody><tr><td>Schedule 058</td><td>AL</td><td>N</td><td>101,252</td><td>94,061</td><td>0.0125</td><td>$1,175.76</td><td>$1,134.76</td></tr><tr><td>Schedule 058</td><td>AR</td><td>N</td><td>120,356</td><td>111,296</td><td>0.0125</td><td>$1,391.20</td><td>$1,397.20</td></tr><tr><td>Schedule 058</td><td>CA</td><td>N</td><td>106,851</td><td>101,951</td><td>0.0310</td><td>$3,160.48</td><td>$3,333.48</td></tr><tr><td>Schedule 058</td><td>CO</td><td>N</td><td>75,758</td><td>48,952</td><td>0.0000</td><td>$0.00</td><td>$194.00</td></tr><tr><td>Schedule 058</td><td>GA</td><td>N</td><td>92,168</td><td>71,482</td><td>0.0000</td><td>$0.00</td><td>$126.00</td></tr><tr><td>Schedule 058</td><td>IL</td><td>N</td><td>161,921</td><td>134,940</td><td>0.0275</td><td>$3,710.85</td><td>$3,840.85</td></tr><tr><td>Schedule 058</td><td>IN</td><td>N</td><td>80,872</td><td>51,016</td><td>0.0275</td><td>$1,402.94</td><td>$1,541.94</td></tr><tr><td>Schedule 058</td><td>IA</td><td>N</td><td>54,298</td><td>48,988</td><td>0.0000</td><td>$0.00</td><td>$-11.00</td></tr><tr><td>Schedule 058</td><td>KS</td><td>Y</td><td>141,653</td><td>102,073</td><td>0.0310</td><td>$3,164.26</td><td>$3,090.26</td></tr><tr><td>Schedule 058</td><td>MO</td><td>N</td><td>142,533</td><td>129,424</td><td>0.0000</td><td>$0.00</td><td>$207.00</td></tr><tr><td>Schedule 058</td><td>NC</td><td>Y</td><td>161,205</td><td>146,718</td><td>0.0180</td><td>$2,640.92</td><td>$2,753.92</td></tr><tr><td>Schedule 058</td><td>PA</td><td>Y</td><td>144,310</td><td>89,682</td><td>0.0000</td><td>$0.00</td><td>$234.00</td></tr><tr><td>Schedule 058</td><td>TX</td><td>Y</td><td>31,503</td><td>20,842</td><td>0.0310</td><td>$646.10</td><td>$735.10</td></tr><tr><td>Schedule 058</td><td>VA</td><td>Y</td><td>101,304</td><td>97,163</td><td>0.0275</td><td>$2,671.98</td><td>$2,687.98</td></tr></tbody>
+</table>
+
+<div class="form-footer">Synthetic allocation worksheet. Jurisdiction rows are distractors and are not target incident records.</div>
+
+</section>
+
+<section class="page worksheet">
+  <div class="page-head">
+    <span>Subrogation diary extract</span>
+    <span>Loss Run Workpaper</span>
+  </div>
+
+<h2>Subrogation Diary Extract</h2>
+<div class="worksheet-meta">
+  <div><span class="label">Packet</span><br>MULTIHOP_012_001_CROSSPAGE</div>
+  <div><span class="label">Diary export</span><br>Subrogation module</div>
+  <div><span class="label">Printed</span><br>03/31/2024</div>
+</div>
+
+<table class="data-table worksheet-table">
+  <thead><tr><th>Diary Date</th><th>File #</th><th>Reference</th><th>Action</th><th>Status</th><th>Recovery Est.</th></tr></thead>
+  <tbody><tr><td>03/03/2024</td><td>SUB-059-01</td><td>L230012</td><td>Demand review</td><td>Review</td><td>$13,508.00</td></tr><tr><td>03/05/2024</td><td>SUB-059-02</td><td>L240001</td><td>Carrier tender</td><td>Review</td><td>$12,195.00</td></tr><tr><td>03/07/2024</td><td>SUB-059-03</td><td>L230002</td><td>Closed no recovery</td><td>Review</td><td>$14,986.00</td></tr><tr><td>03/09/2024</td><td>#30003</td><td>L230003</td><td>Arbitration pending</td><td>Review</td><td>$9,764.00</td></tr><tr><td>03/11/2024</td><td>SUB-059-05</td><td>L240004</td><td>Diary follow-up</td><td>Open</td><td>$11,360.00</td></tr><tr><td>03/13/2024</td><td>SUB-059-06</td><td>L240005</td><td>Demand review</td><td>Diary</td><td>$10,027.00</td></tr><tr><td>03/15/2024</td><td>SUB-059-07</td><td>L230006</td><td>Carrier tender</td><td>Diary</td><td>$16,951.00</td></tr><tr><td>03/17/2024</td><td>#30007</td><td>L240007</td><td>Closed no recovery</td><td>Review</td><td>$10,200.00</td></tr><tr><td>03/19/2024</td><td>SUB-059-09</td><td>L230008</td><td>Arbitration pending</td><td>Diary</td><td>$14,471.00</td></tr><tr><td>03/21/2024</td><td>SUB-059-10</td><td>L230009</td><td>Diary follow-up</td><td>Review</td><td>$17,776.00</td></tr><tr><td>03/23/2024</td><td>SUB-059-11</td><td>L240010</td><td>Demand review</td><td>Open</td><td>$14,000.00</td></tr><tr><td>03/25/2024</td><td>#30011</td><td>L230011</td><td>Carrier tender</td><td>Closed</td><td>$11,383.00</td></tr><tr><td>03/27/2024</td><td>SUB-059-13</td><td>L230012</td><td>Closed no recovery</td><td>Closed</td><td>$13,090.00</td></tr><tr><td>03/02/2024</td><td>SUB-059-14</td><td>L240001</td><td>Arbitration pending</td><td>Closed</td><td>$2,678.00</td></tr></tbody>
+</table>
+
+
+</section>
+
+<section class="page worksheet">
+  <div class="page-head">
+    <span>Monthly account activity</span>
+    <span>Loss Run Workpaper</span>
+  </div>
+
+<h2>Monthly Account Activity</h2>
+<div class="worksheet-meta">
+  <div><span class="label">Account batch</span><br>MULTIHOP_012_001_CROSSPAGE-060</div>
+  <div><span class="label">Accounting month</span><br>February 2024</div>
+  <div><span class="label">Source</span><br>Billing ledger export</div>
+</div>
+
+<table class="data-table worksheet-table ledger-lite">
+  <thead><tr><th>Date</th><th>Document</th><th>Activity</th><th>Policy</th><th>Status</th><th>Amount</th></tr></thead>
+  <tbody><tr><td>02/02/2024</td><td>ACCT-060-01</td><td>Endorsement</td><td>L24A3974</td><td>Pending</td><td>$76.03</td></tr><tr><td>02/03/2024</td><td>ACCT-060-02</td><td>Audit adjustment</td><td>L23A1955</td><td>Pending</td><td>$7,035.76</td></tr><tr><td>02/04/2024</td><td>L230003</td><td>Claim reserve</td><td>L23A3286</td><td>Reconciled</td><td>$1,467.30</td></tr><tr><td>02/05/2024</td><td>ACCT-060-04</td><td>Fee reversal</td><td>L24A6859</td><td>Reconciled</td><td>$5,399.44</td></tr><tr><td>02/06/2024</td><td>ACCT-060-05</td><td>Premium receipt</td><td>L24A7575</td><td>Pending</td><td>$-4,946.66</td></tr><tr><td>02/07/2024</td><td>L230006</td><td>Endorsement</td><td>L23A2216</td><td>Posted</td><td>$8,963.16</td></tr><tr><td>02/08/2024</td><td>ACCT-060-07</td><td>Audit adjustment</td><td>L24A9905</td><td>Pending</td><td>$3,274.26</td></tr><tr><td>02/09/2024</td><td>ACCT-060-08</td><td>Claim reserve</td><td>L23A1604</td><td>Reconciled</td><td>$9,133.50</td></tr><tr><td>02/10/2024</td><td>L230009</td><td>Fee reversal</td><td>L24A6859</td><td>Posted</td><td>$1,983.45</td></tr><tr><td>02/11/2024</td><td>ACCT-060-10</td><td>Premium receipt</td><td>L24A3974</td><td>Pending</td><td>$-8,159.57</td></tr><tr><td>02/12/2024</td><td>ACCT-060-11</td><td>Endorsement</td><td>L24A9905</td><td>Reconciled</td><td>$5,666.83</td></tr><tr><td>02/13/2024</td><td>L230012</td><td>Audit adjustment</td><td>L23A7440</td><td>Reconciled</td><td>$3,324.26</td></tr><tr><td>02/14/2024</td><td>ACCT-060-13</td><td>Claim reserve</td><td>L24A3974</td><td>Pending</td><td>$5,065.97</td></tr><tr><td>02/15/2024</td><td>ACCT-060-14</td><td>Fee reversal</td><td>L23A1955</td><td>Pending</td><td>$9,078.67</td></tr><tr><td>02/16/2024</td><td>L230003</td><td>Premium receipt</td><td>L23A3286</td><td>Reconciled</td><td>$-8,238.04</td></tr><tr><td>02/17/2024</td><td>ACCT-060-16</td><td>Endorsement</td><td>L24A6859</td><td>Pending</td><td>$9,777.72</td></tr><tr><td>02/18/2024</td><td>ACCT-060-17</td><td>Audit adjustment</td><td>L24A7575</td><td>Posted</td><td>$3,577.77</td></tr><tr><td>02/19/2024</td><td>L230006</td><td>Claim reserve</td><td>L23A2216</td><td>Pending</td><td>$8,624.03</td></tr></tbody>
+</table>
+
+
+</section>
+
+<section class="page sparse-report">
+  <div class="page-head">
+    <span>Risk control follow-up notes</span>
+    <span>Loss Run Workpaper</span>
+  </div>
+
+<div class="sparse-report">
+  <div class="sparse-title">RISK CONTROL FOLLOW-UP NOTES</div>
+  <div class="report-meta">
+    <div>Packet:</div><div>MULTIHOP_012_001_CROSSPAGE</div>
+    <div>Related unit:</div><div>2024 PB 600002</div>
+    <div>Review cycle:</div><div>Renewal file checklist</div>
+  </div>
+  <div class="checklist"><div>X</div><div>Fleet safety meeting minutes retained</div><div>Fleet</div><div></div><div>Post-accident drug test documentation reviewed</div><div>Safety</div><div>X</div><div>Driver remedial training assigned</div><div>Claims</div><div>X</div><div>Telematics exception report requested</div><div>Safety</div><div></div><div>Maintenance file cross-check complete</div><div>Safety</div><div>X</div><div>Open recommendation carried to renewal file</div><div>Fleet</div><div>X</div><div>Claim trend reviewed with account manager</div><div>Claims</div><div></div><div>No additional field visit required</div><div>Claims</div></div>
+</div>
+
+</section>
+
+<section class="page worksheet">
+  <div class="page-head">
+    <span>Driver qualification audit</span>
+    <span>Loss Run Workpaper</span>
+  </div>
+
+<h2>Driver Qualification Audit</h2>
+<div class="worksheet-meta">
+  <div><span class="label">Audit file</span><br>DQ-SSPAGE-062</div>
+  <div><span class="label">Review type</span><br>Annual compliance sampling</div>
+  <div><span class="label">Reviewer</span><br>Safety desk</div>
+</div>
+
+<table class="data-table worksheet-table">
+  <thead><tr><th>Driver</th><th>License State</th><th>License #</th><th>Medical Exp.</th><th>Finding</th><th>Unit</th></tr></thead>
+  <tbody><tr><td>Driver-003, Alex</td><td>TX</td><td>D62577014</td><td>02/2026</td><td>Exception noted</td><td>600003</td></tr><tr><td>Driver-004, Alex</td><td>TX</td><td>D38204637</td><td>03/2027</td><td>Verified</td><td>600004</td></tr><tr><td>Driver-005, Alex</td><td>IL</td><td>D51730380</td><td>04/2025</td><td>Renewal due</td><td>600005</td></tr><tr><td>Driver-006, Alex</td><td>TX</td><td>D62924172</td><td>05/2026</td><td>Renewal due</td><td>600006</td></tr><tr><td>Driver-007, Alex</td><td>AL</td><td>D36982438</td><td>06/2027</td><td>Current</td><td>600007</td></tr><tr><td>Driver-008, Alex</td><td>IN</td><td>D80867523</td><td>07/2025</td><td>Current</td><td>600008</td></tr><tr><td>Driver-009, Alex</td><td>IN</td><td>D57443482</td><td>08/2026</td><td>Verified</td><td>600009</td></tr><tr><td>Driver-010, Alex</td><td>IL</td><td>D55868235</td><td>09/2027</td><td>Renewal due</td><td>600010</td></tr><tr><td>Driver-011, Alex</td><td>IL</td><td>D68941116</td><td>10/2025</td><td>Exception noted</td><td>600011</td></tr><tr><td>Driver-012, Alex</td><td>TX</td><td>D77072941</td><td>11/2026</td><td>Current</td><td>600012</td></tr><tr><td>Driver-001, Alex</td><td>IL</td><td>D99507200</td><td>12/2027</td><td>Renewal due</td><td>600001</td></tr><tr><td>Driver-002, Alex</td><td>GA</td><td>D44438335</td><td>01/2025</td><td>Current</td><td>600002</td></tr><tr><td>Driver-003, Alex</td><td>MO</td><td>D17940147</td><td>02/2026</td><td>Current</td><td>600003</td></tr><tr><td>Driver-004, Alex</td><td>IN</td><td>D19721728</td><td>03/2027</td><td>Exception noted</td><td>600004</td></tr><tr><td>Driver-005, Alex</td><td>GA</td><td>D50414275</td><td>04/2025</td><td>Verified</td><td>600005</td></tr><tr><td>Driver-006, Alex</td><td>PA</td><td>D71322062</td><td>05/2026</td><td>Renewal due</td><td>600006</td></tr></tbody>
+</table>
+
+
+</section>
+
+<section class="page sparse-report">
+  <div class="page-head">
+    <span>Prior carrier correspondence</span>
+    <span>Loss Run Workpaper</span>
+  </div>
+
+<div class="sparse-report">
+  <div class="sparse-title">PRIOR CARRIER REQUEST RESPONSE</div>
+  <div class="report-address">
+    ATTN: Account Review Desk<br>
+    Synthetic Motor Carrier File<br>
+    Packet MULTIHOP_012_001_CROSSPAGE
+  </div>
+  <div class="report-meta">
+    <div>Issue Date:</div><div>02-10-2024</div>
+    <div>Letter Id:</div><div>LC0635786</div>
+    <div>Case Id:</div><div>MULTIHOP_012_001_CROSSPAGE</div>
+  </div>
+  <p>Report of services provided. This page records prior-carrier correspondence
+  status and does not contain the complete claim schedule.</p>
+
+<table class="data-table worksheet-table">
+  <thead><tr><th>Reference</th><th>State</th><th>Response Date</th><th>Disposition</th></tr></thead>
+  <tbody><tr><td>L240004</td><td>IL</td><td>02/03/2024</td><td>No loss data</td></tr><tr><td>L240005</td><td>OK</td><td>03/05/2024</td><td>Prior term attached</td></tr><tr><td>L230006</td><td>AR</td><td>04/07/2024</td><td>Prior term attached</td></tr><tr><td>L240007</td><td>CA</td><td>05/09/2024</td><td>No loss data</td></tr><tr><td>L230008</td><td>OH</td><td>06/11/2024</td><td>Prior term attached</td></tr><tr><td>L230009</td><td>IL</td><td>07/13/2024</td><td>No loss data</td></tr></tbody>
+</table>
+
+</div>
+<div class="form-footer">Record services unit - synthetic correspondence page</div>
+
+</section>
+
+<section class="page worksheet">
+  <div class="page-head">
+    <span>Premium allocation worksheet</span>
+    <span>Loss Run Workpaper</span>
+  </div>
+
+<h2>Premium Allocation Worksheet</h2>
+<div class="worksheet-meta">
+  <div><span class="label">Packet</span><br>MULTIHOP_012_001_CROSSPAGE</div>
+  <div><span class="label">Worksheet period</span><br>2024 Policy Year</div>
+  <div><span class="label">Allocation basis</span><br>Written premium by jurisdiction</div>
+</div>
+
+<table class="data-table worksheet-table wide">
+  <thead><tr><th>Schedule</th><th>Jurisdiction</th><th>Surcharge</th><th>Written Premium</th><th>Taxable Premium</th><th>Tax Rate</th><th>Tax Due</th><th>Total Due</th></tr></thead>
+  <tbody><tr><td>Schedule 064</td><td>AL</td><td>Y</td><td>96,066</td><td>82,917</td><td>0.0310</td><td>$2,570.43</td><td>$2,577.43</td></tr><tr><td>Schedule 064</td><td>AR</td><td>Y</td><td>133,152</td><td>112,090</td><td>0.0000</td><td>$0.00</td><td>$111.00</td></tr><tr><td>Schedule 064</td><td>CA</td><td>N</td><td>88,138</td><td>66,432</td><td>0.0275</td><td>$1,826.88</td><td>$1,904.88</td></tr><tr><td>Schedule 064</td><td>CO</td><td>N</td><td>28,649</td><td>19,377</td><td>0.0180</td><td>$348.79</td><td>$489.79</td></tr><tr><td>Schedule 064</td><td>GA</td><td>N</td><td>170,709</td><td>131,301</td><td>0.0125</td><td>$1,641.26</td><td>$1,742.26</td></tr><tr><td>Schedule 064</td><td>IL</td><td>Y</td><td>103,950</td><td>96,051</td><td>0.0310</td><td>$2,977.58</td><td>$3,116.58</td></tr><tr><td>Schedule 064</td><td>IN</td><td>Y</td><td>26,185</td><td>16,523</td><td>0.0310</td><td>$512.21</td><td>$479.21</td></tr><tr><td>Schedule 064</td><td>IA</td><td>N</td><td>169,968</td><td>105,418</td><td>0.0180</td><td>$1,897.52</td><td>$2,026.52</td></tr><tr><td>Schedule 064</td><td>KS</td><td>N</td><td>40,695</td><td>27,057</td><td>0.0275</td><td>$744.07</td><td>$710.07</td></tr><tr><td>Schedule 064</td><td>MO</td><td>N</td><td>142,983</td><td>123,366</td><td>0.0125</td><td>$1,542.08</td><td>$1,568.08</td></tr><tr><td>Schedule 064</td><td>NC</td><td>N</td><td>108,577</td><td>83,003</td><td>0.0275</td><td>$2,282.58</td><td>$2,231.58</td></tr><tr><td>Schedule 064</td><td>PA</td><td>N</td><td>173,389</td><td>159,542</td><td>0.0000</td><td>$0.00</td><td>$135.00</td></tr><tr><td>Schedule 064</td><td>TX</td><td>Y</td><td>46,331</td><td>39,354</td><td>0.0180</td><td>$708.37</td><td>$905.37</td></tr><tr><td>Schedule 064</td><td>VA</td><td>N</td><td>89,404</td><td>67,823</td><td>0.0000</td><td>$0.00</td><td>$215.00</td></tr></tbody>
+</table>
+
+<div class="form-footer">Synthetic allocation worksheet. Jurisdiction rows are distractors and are not target incident records.</div>
+
+</section>
+
+<section class="page ">
+  <div class="page-head">
+    <span>Claim financial ledger</span>
+    <span>Loss Run Workpaper</span>
+  </div>
+
+<h2>Claim Financial Ledger</h2>
+<p>Reserve and payment ledger by coverage bucket. Printed from accounting close.</p>
+
+<table class="data-table wide ledger">
+  <thead><tr><th>Claim #</th><th>BI Res</th><th>BI Paid</th><th>BI Rec</th><th>BI Total</th><th>PD Res</th><th>PD Paid</th><th>PD Rec</th><th>PD Total</th><th>LAE Res</th><th>LAE Paid</th><th>LAE Rec</th><th>LAE Total</th><th>DED Res</th><th>DED Paid</th><th>DED Rec</th><th>DED Total</th></tr></thead>
+  <tbody><tr><td>#30001</td><td>$132,150.02</td><td>$0.00</td><td>$0.00</td><td>$132,150.02</td><td>$43,745.04</td><td>$0.00</td><td>$0.00</td><td>$43,745.04</td><td>$0.00</td><td>$0.00</td><td>$0.00</td><td>$0.00</td><td>$0.00</td><td>$0.00</td><td>$8,906.95</td><td>$-8,906.95</td></tr><tr><td>#30002</td><td>$0.00</td><td>$0.00</td><td>$0.00</td><td>$0.00</td><td>$36,010.10</td><td>$0.00</td><td>$0.00</td><td>$36,010.10</td><td>$0.00</td><td>$0.00</td><td>$0.00</td><td>$0.00</td><td>$0.00</td><td>$0.00</td><td>$0.00</td><td>$0.00</td></tr><tr><td>#30003</td><td>$0.00</td><td>$0.00</td><td>$0.00</td><td>$0.00</td><td>$52,735.56</td><td>$0.00</td><td>$0.00</td><td>$52,735.56</td><td>$0.00</td><td>$0.00</td><td>$0.00</td><td>$0.00</td><td>$0.00</td><td>$0.00</td><td>$22,350.14</td><td>$-22,350.14</td></tr><tr><td>#30004</td><td>$0.00</td><td>$0.00</td><td>$0.00</td><td>$0.00</td><td>$25,135.18</td><td>$0.00</td><td>$0.00</td><td>$25,135.18</td><td>$0.00</td><td>$0.00</td><td>$0.00</td><td>$0.00</td><td>$0.00</td><td>$0.00</td><td>$31,936.16</td><td>$-31,936.16</td></tr><tr><td>#30005</td><td>$0.00</td><td>$0.00</td><td>$0.00</td><td>$0.00</td><td>$19,894.26</td><td>$0.00</td><td>$0.00</td><td>$19,894.26</td><td>$0.00</td><td>$0.00</td><td>$0.00</td><td>$0.00</td><td>$0.00</td><td>$0.00</td><td>$10,003.02</td><td>$-10,003.02</td></tr><tr><td>#30006</td><td>$0.00</td><td>$0.00</td><td>$0.00</td><td>$0.00</td><td>$28,090.77</td><td>$0.00</td><td>$0.00</td><td>$28,090.77</td><td>$0.00</td><td>$0.00</td><td>$0.00</td><td>$0.00</td><td>$0.00</td><td>$0.00</td><td>$0.00</td><td>$0.00</td></tr><tr><td>#30007</td><td>$0.00</td><td>$0.00</td><td>$0.00</td><td>$0.00</td><td>$13,445.36</td><td>$3,481.59</td><td>$0.00</td><td>$16,926.95</td><td>$0.00</td><td>$0.00</td><td>$0.00</td><td>$0.00</td><td>$0.00</td><td>$0.00</td><td>$29,484.36</td><td>$-29,484.36</td></tr><tr><td>#30008</td><td>$0.00</td><td>$0.00</td><td>$0.00</td><td>$0.00</td><td>$0.00</td><td>$24,346.32</td><td>$0.00</td><td>$24,346.32</td><td>$0.00</td><td>$647.60</td><td>$0.00</td><td>$647.60</td><td>$0.00</td><td>$0.00</td><td>$2,633.82</td><td>$-2,633.82</td></tr><tr><td>#30009</td><td>$0.00</td><td>$0.00</td><td>$0.00</td><td>$0.00</td><td>$0.00</td><td>$28,277.20</td><td>$0.00</td><td>$28,277.20</td><td>$0.00</td><td>$400.71</td><td>$0.00</td><td>$400.71</td><td>$0.00</td><td>$0.00</td><td>$3,566.60</td><td>$-3,566.60</td></tr><tr><td>#30010</td><td>$0.00</td><td>$0.00</td><td>$0.00</td><td>$0.00</td><td>$28,431.13</td><td>$0.00</td><td>$0.00</td><td>$28,431.13</td><td>$0.00</td><td>$0.00</td><td>$0.00</td><td>$0.00</td><td>$0.00</td><td>$0.00</td><td>$0.00</td><td>$0.00</td></tr><tr><td>#30011</td><td>$0.00</td><td>$0.00</td><td>$0.00</td><td>$0.00</td><td>$0.00</td><td>$38,774.39</td><td>$0.00</td><td>$38,774.39</td><td>$0.00</td><td>$1,370.31</td><td>$0.00</td><td>$1,370.31</td><td>$0.00</td><td>$0.00</td><td>$0.00</td><td>$0.00</td></tr><tr><td>#30012</td><td>$0.00</td><td>$0.00</td><td>$0.00</td><td>$0.00</td><td>$47,820.35</td><td>$0.00</td><td>$0.00</td><td>$47,820.35</td><td>$0.00</td><td>$0.00</td><td>$0.00</td><td>$0.00</td><td>$0.00</td><td>$0.00</td><td>$31,030.90</td><td>$-31,030.90</td></tr></tbody>
+</table>
+
+</section>
+
+</body>
+</html>

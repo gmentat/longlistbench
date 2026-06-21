@@ -1,0 +1,123 @@
+{
+  "id": "multihop_025_001_crosspage",
+  "difficulty": "multihop",
+  "complexity_regime": "multihop",
+  "format": "crosspage",
+  "num_claims": 25,
+  "pages_estimate": 126,
+  "pdf_page_count": 126,
+  "document_count": 1,
+  "evidence_pattern": "single_document_long_range_cross_page_join",
+  "minimum_gap_pages_between_primary_and_last_evidence": 114,
+  "problems": [
+    "cross_page_join",
+    "long_range_evidence",
+    "many_to_one_policy",
+    "claimant_lookup"
+  ],
+  "layout_templates": [
+    "packet_cover",
+    "portal_receipt",
+    "official_request_response",
+    "primary_schedule",
+    "spreadsheet_unit_reference",
+    "mileage_schedule",
+    "rotated_scan_excerpt",
+    "long_range_appendices"
+  ],
+  "has_duplicates": false,
+  "seed": 6869,
+  "join_requirements": [
+    "policy_number -> policy register",
+    "incident_number -> claimant index",
+    "incident_number -> financial ledger"
+  ],
+  "evidence_map": [
+    {
+      "section": "primary_claim_extract",
+      "approx_page_after_cover": 1,
+      "fields": [
+        "incident_number",
+        "reference_number",
+        "policy_number",
+        "unit_number",
+        "cause_code",
+        "status",
+        "date_of_loss",
+        "loss_state",
+        "date_reported"
+      ]
+    },
+    {
+      "section": "fleet_driver_assignment_roster",
+      "approx_page_after_cover": 54,
+      "join_key": "unit_number",
+      "fields": [
+        "driver_name",
+        "company_name",
+        "policy_state"
+      ]
+    },
+    {
+      "section": "policy_register",
+      "approx_page_after_cover": 55,
+      "join_key": "policy_number",
+      "fields": [
+        "company_name",
+        "insured",
+        "division",
+        "policy_state",
+        "agency"
+      ]
+    },
+    {
+      "section": "loss_cause_classification_appendix",
+      "approx_page_after_cover": 90,
+      "join_key": "cause_code",
+      "fields": [
+        "coverage_type",
+        "description",
+        "handler"
+      ]
+    },
+    {
+      "section": "claimant_notice_index",
+      "approx_page_after_cover": 91,
+      "join_key": "incident_number",
+      "fields": [
+        "claimants",
+        "adjuster_notes"
+      ]
+    },
+    {
+      "section": "claim_financial_ledger",
+      "approx_page_after_cover": 120,
+      "join_key": "incident_number",
+      "fields": [
+        "bi",
+        "pd",
+        "lae",
+        "ded"
+      ]
+    }
+  ],
+  "files": {
+    "ground_truth": "ground_truth/multihop_025_001_crosspage.json",
+    "pdf": "pdfs/multihop_025_001_crosspage.pdf",
+    "html": "html/multihop_025_001_crosspage.html",
+    "canonical_md": "transcripts/canonical/multihop_025_001_crosspage.md",
+    "ocr_md": "transcripts/ocr_gemini/multihop_025_001_crosspage.md",
+    "json_size_bytes": 31277,
+    "pdf_size_bytes": 829064,
+    "html_size_bytes": 286575,
+    "canonical_size_bytes": 160141,
+    "ocr_size_bytes": 156626
+  },
+  "transcripts_available": [
+    "canonical",
+    "ocr"
+  ],
+  "domain": "claims",
+  "target_record_type": "loss_run_incident",
+  "num_target_records": 25
+}

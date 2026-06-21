@@ -15,8 +15,8 @@ Human annotators reviewed real insurance loss run documents from trucking compan
      \item \textbf{Problem configuration}: We identify recurring layout artifacts in real documents (e.g., page breaks splitting records, merged cells, and multi-column layouts) and encode them as configurable problem types.
      \item \textbf{Document rendering}: We generate synthetic incident records under the target schema, render them to HTML with selected problem types injected, and convert the resulting HTML to PDF via headless Chromium.
      \item \textbf{Canonical transcript}: We derive a clean transcript directly from the rendered HTML structure, preserving intended reading order, page boundaries, headers, tables, and distractor sections without OCR corruption.
-     \item \textbf{OCR transcript}: We obtain a noisy transcript for each PDF using Gemini OCR on rendered page images.
-     \item \textbf{Markdown output}: Both transcript conditions are stored as page-concatenated Markdown for evaluation.
+     \item \textbf{OCR transcript}: We can obtain a noisy transcript for each PDF using Gemini OCR on rendered page images. OCR is regenerated after PDF changes rather than treated as a reusable static artifact.
+     \item \textbf{Markdown output}: Canonical transcripts are stored as page-concatenated Markdown; OCR transcripts use the same layout after the OCR generation step.
  \end{enumerate}
 
 \begin{figure}[ht]
@@ -26,7 +26,7 @@ Human annotators reviewed real insurance loss run documents from trucking compan
     \label{fig:generation-pipeline}
 \end{figure}
 
-Documents are rendered in one of two formats: (i) \textbf{Detailed}, which uses repeated incident blocks with narrative text and financial tables, or (ii) \textbf{Table}, which uses a compact tabular representation. All generation uses seeded randomness for reproducibility.
+Documents are rendered in one of two formats: (i) \textbf{Detailed}, which uses repeated incident blocks with narrative text and financial tables, or (ii) \textbf{Table}, which uses a compact tabular representation. The rendered PDFs also include synthetic packet covers, spreadsheet-like exports, portal receipts, request/response pages, and rotated scan excerpts inspired by recurring real-document layout patterns, without reusing private document content. All generation uses seeded randomness for reproducibility.
 
 \subsection{Injected problem types}
 We inject seven recurring document phenomena that complicate long-list extraction. These effects are applied at the HTML level prior to PDF rendering.
@@ -94,21 +94,21 @@ Tables often use merged cells for visual grouping. A common pattern is merging t
 \end{figure}
 
 \subsection{Dataset scale}
-The released dataset (\texttt{longlistbench-v1}, version 1.0.2) contains 80 rendered documents (40 detailed, 40 table) with 6{,}828 incident rows and paired clean and OCR transcripts for evaluation. Difficulty tiers are configured as 15 easy base instances (seeded with 10 claims/PDF), 12 medium (25), 8 hard (50), and 5 extreme instances seeded with 100 claims/PDF and then expanded to 500 incidents per released document via \texttt{large\_doc}. Each base instance is rendered in both detailed and table formats, yielding 80 documents in total. Enabling \texttt{duplicates} injects additional duplicate rows, causing some documents to exceed the seed count.
+The core released suite (\texttt{longlistbench-v1}, version 1.0.2) contains 80 rendered documents (40 detailed, 40 table) with 6{,}828 incident rows and canonical transcripts for evaluation. Difficulty tiers are configured as 15 easy base instances (seeded with 10 claims/PDF), 12 medium (25), 8 hard (50), and 5 extreme instances seeded with 100 claims/PDF and then expanded to 500 incidents per released document via \texttt{large\_doc}. Each base instance is rendered in both detailed and table formats, yielding 80 documents in total. Enabling \texttt{duplicates} injects additional duplicate rows, causing some documents to exceed the seed count. OCR transcripts can be generated from the rendered PDFs and should be regenerated whenever PDFs are changed.
 
 Across the 80 documents, the most common injected issues are multi-row entities (62/80), page breaks (56/80), duplicates (56/80), and multiple tables (40/80).
 
-\subsection{Cross-document multi-hop extension}
-Many production extraction tasks are not contained in a single table or even a single PDF. A target loss-run record may require joining a primary schedule against policy registers, driver rosters, cause-code legends, claimant indexes, and payment ledgers. This pattern is awkward for one-shot extraction because the model must decide which documents to inspect, preserve join keys, and merge partial records without confusing distractor rows.
+\subsection{Long-range cross-page multi-hop extension}
+Many production extraction tasks are not contained in one adjacent table region. A target loss-run record may require joining a front-matter claim schedule against policy registers, driver rosters, cause-code appendices, claimant indexes, and payment ledgers that appear much later in the same PDF. This pattern is awkward for one-shot extraction and naive chunking because the model must preserve join keys across large page and token distances, then merge partial records without confusing distractor rows.
 
-To make this failure mode measurable, we add an initial multi-hop extension under \path{benchmarks/multihop\_claims}. It contains 3 packet cases, 15 rendered documents, and 77 target incidents. Each packet includes a \path{manifest.json} describing document roles and join requirements, a \path{ground\_truth.json} file using the same incident schema, rendered HTML/PDF artifacts, canonical transcripts, and Gemini OCR transcripts.
+To make this failure mode measurable, we add an initial multi-hop extension in the shared \path{data/} layout. It currently contains 6 single-document cross-page PDFs. Three claim-oriented cases contain 77 target incidents and use the same incident schema as the core suite; the rendered PDFs are 76, 126, and 198 pages. Three additional cases are synthetic commercial insurance policy packets: Businessowners Policy (BOP), Workers Compensation (WC), and Commercial General Liability (CGL). A policy packet is the contract document issued by an insurer; it combines declarations, covered locations or classifications, coverage limits and deductibles, rating or premium schedules, required forms, and endorsements that modify the base policy. These policy cases contain 345 target records across heterogeneous schemas for locations, coverage items, class-code or exposure items, forms, endorsements, and premiums. Each case includes one PDF, one HTML source, one \path{ground_truth} JSON file, a canonical transcript, reproducible OCR transcript generation, and per-sample metadata describing the evidence map and join requirements.
 
-The extension uses the following join patterns:
+The claim-oriented extension uses the following join patterns:
 \begin{itemize}
     \item \texttt{policy\_number} $\rightarrow$ policy register for company, insured, division, policy state, and agency fields.
     \item \texttt{unit\_number} $\rightarrow$ driver roster for driver identity.
-    \item \texttt{cause\_code} $\rightarrow$ cause-code legend for coverage type and normalized description.
+    \item \texttt{cause\_code} $\rightarrow$ cause-code appendix for coverage type and normalized description.
     \item \texttt{incident\_number} $\rightarrow$ claimant index and financial ledger for claimants, adjuster notes, and nested financial breakdowns.
 \end{itemize}
 
-The largest packet mixes all of these joins and includes a distractor claims export that reuses overlapping policy/reference values but contains out-of-packet incident identifiers. This design is intended to stress agentic extraction systems that can inspect multiple files, plan joins, and verify record completeness, while preserving comparability with the base single-document schema and scorer.
+The policy-oriented extension adds joins such as location/building numbers to described premises, form numbers to forms-and-endorsements schedules, class codes to rating schedules, and coverage or endorsement references to distant detail pages. The largest cross-page documents mix these joins with archived distractor sections that reuse overlapping policy/reference values but contain out-of-scope records. This design is intended to stress extraction systems that can inspect long documents, preserve join keys across distant sections, and verify record completeness. The claim-oriented cases preserve comparability with the base incident schema and scorer; the policy-oriented cases use the heterogeneous record-list scorer released with the evaluation pipeline.

@@ -2,7 +2,7 @@ import unittest
 import tempfile
 from pathlib import Path
 
-from benchmarks.ocr_claims_pdfs import build_arg_parser, collect_pdf_files
+from benchmarks.ocr_claims_pdfs import build_arg_parser, collect_pdf_files, ocr_output_path
 
 
 class OcrCliTests(unittest.TestCase):
@@ -25,6 +25,23 @@ class OcrCliTests(unittest.TestCase):
             self.assertEqual(
                 [path.name for path in pdfs],
                 ["top_level.pdf", "driver_roster.pdf", "loss_run_summary.pdf"],
+            )
+
+    def test_ocr_output_path_uses_organized_transcript_dir(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            pdf_dir = root / "pdfs"
+            transcript_dir = root / "transcripts" / "ocr_gemini"
+            (root / "ground_truth").mkdir(parents=True)
+            (root / "transcripts" / "canonical").mkdir(parents=True)
+            transcript_dir.mkdir(parents=True)
+            pdf_dir.mkdir()
+            pdf_path = pdf_dir / "multihop_012_001_crosspage.pdf"
+            pdf_path.write_bytes(b"%PDF-1.4\n")
+
+            self.assertEqual(
+                ocr_output_path(root, pdf_path, "_ocr.md"),
+                transcript_dir / "multihop_012_001_crosspage.md",
             )
 
 

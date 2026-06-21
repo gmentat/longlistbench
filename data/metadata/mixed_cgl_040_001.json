@@ -1,0 +1,196 @@
+{
+  "id": "mixed_cgl_040_001",
+  "difficulty": "mixed",
+  "complexity_regime": "mixed",
+  "format": "crosspage",
+  "domain": "policy_review",
+  "lob": "CGL",
+  "target_record_type": "policy_packet_item",
+  "target_record_types": [
+    "cgl_exposure_item",
+    "policy_endorsement_item",
+    "policy_form_item",
+    "policy_location_item",
+    "policy_premium_item"
+  ],
+  "primary_target_record_type": "cgl_exposure_item",
+  "schema_fields": [
+    "class_code",
+    "classification",
+    "coverage_part",
+    "edition_date",
+    "endorsement_effective_date",
+    "endorsement_number",
+    "exclusion_name",
+    "exposure",
+    "exposure_basis",
+    "form_number",
+    "form_title",
+    "item_id",
+    "limit",
+    "limit_type",
+    "lob",
+    "location_number",
+    "materiality",
+    "named_insured",
+    "policy_number",
+    "policy_period",
+    "premium",
+    "premium_basis",
+    "products_completed_ops_rate",
+    "rate",
+    "record_type",
+    "schedule_source",
+    "territory"
+  ],
+  "num_claims": 184,
+  "num_policy_items": 184,
+  "num_primary_policy_items": 40,
+  "num_target_records": 184,
+  "pages_estimate": 214,
+  "pdf_page_count": 214,
+  "document_count": 1,
+  "evidence_pattern": "single_document_policy_packet_long_range_join",
+  "minimum_gap_pages_between_primary_and_last_evidence": 174,
+  "problems": [
+    "commercial_general_liability",
+    "exposure_rating_rows",
+    "limits_forms_exclusions",
+    "long_range_evidence",
+    "heterogeneous_record_list",
+    "distractor_forms",
+    "distractor_locations"
+  ],
+  "layout_templates": [
+    "declarations",
+    "locations_or_classifications",
+    "coverage_or_limit_schedule",
+    "rating_schedule",
+    "forms_schedule",
+    "endorsement_detail",
+    "premium_summary",
+    "policy_conditions"
+  ],
+  "record_collections": {
+    "cgl_exposure_item": 40,
+    "policy_endorsement_item": 24,
+    "policy_form_item": 40,
+    "policy_location_item": 40,
+    "policy_premium_item": 40
+  },
+  "synthetic_text": {
+    "source": "synthetic",
+    "real_documents_used_for": "structural reference only",
+    "copied_source_text": false,
+    "text_generation": {
+      "generator": "gemini",
+      "model": "gemini-2.5-flash",
+      "prompt_files": [
+        "policy_writer_system.md",
+        "policy_page_bank.md",
+        "cgl_examples.md"
+      ],
+      "page_kinds": {
+        "policy_form": 5,
+        "notice": 2,
+        "amendatory": 2,
+        "billing": 2,
+        "endorsement": 4
+      }
+    }
+  },
+  "has_duplicates": false,
+  "seed": 35540498590913,
+  "join_requirements": [
+    "exposure_item_id -> cgl declarations",
+    "location_number/class_code -> classification schedule",
+    "class_code/exposure_basis -> rating schedule",
+    "coverage_part -> limits schedule",
+    "form_number -> forms and exclusions schedule",
+    "endorsement_number -> endorsement detail pages",
+    "exposure_item_id -> premium summary"
+  ],
+  "evidence_map": [
+    {
+      "section": "cgl_declarations",
+      "approx_page_after_cover": 1,
+      "join_key": "policy_number",
+      "fields": [
+        "named_insured",
+        "policy_period"
+      ]
+    },
+    {
+      "section": "limits_schedule",
+      "approx_page_after_cover": 61,
+      "join_key": "coverage_part",
+      "fields": [
+        "limit_type",
+        "limit"
+      ]
+    },
+    {
+      "section": "classification_and_location_schedule",
+      "approx_page_after_cover": 62,
+      "join_key": "location_number/class_code",
+      "fields": [
+        "classification",
+        "territory"
+      ]
+    },
+    {
+      "section": "exposure_and_rating_schedule",
+      "approx_page_after_cover": 63,
+      "join_key": "exposure_item_id",
+      "fields": [
+        "exposure_basis",
+        "exposure",
+        "rate",
+        "premium"
+      ]
+    },
+    {
+      "section": "forms_and_exclusions_schedule",
+      "approx_page_after_cover": 112,
+      "join_key": "form_number",
+      "fields": [
+        "form_title",
+        "exclusion_name"
+      ]
+    },
+    {
+      "section": "endorsement_detail_pages",
+      "approx_page_after_cover": 149,
+      "join_key": "endorsement_number",
+      "fields": [
+        "endorsement_effective_date",
+        "materiality"
+      ]
+    },
+    {
+      "section": "premium_summary",
+      "approx_page_after_cover": 182,
+      "join_key": "item_id",
+      "fields": [
+        "premium",
+        "estimated_premium"
+      ]
+    }
+  ],
+  "files": {
+    "ground_truth": "ground_truth/mixed_cgl_040_001.json",
+    "pdf": "pdfs/mixed_cgl_040_001.pdf",
+    "html": "html/mixed_cgl_040_001.html",
+    "canonical_md": "transcripts/canonical/mixed_cgl_040_001.md",
+    "ocr_md": "transcripts/ocr_gemini/mixed_cgl_040_001.md",
+    "json_size_bytes": 109370,
+    "pdf_size_bytes": 1468693,
+    "html_size_bytes": 797363,
+    "canonical_size_bytes": 555158,
+    "ocr_size_bytes": 693599
+  },
+  "transcripts_available": [
+    "canonical",
+    "ocr"
+  ]
+}

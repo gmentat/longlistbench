@@ -6,13 +6,32 @@ Saves OCR results as Markdown files alongside the PDFs.
 
 import asyncio
 import base64
+from datetime import datetime, timezone
 import io
+import json
 import os
 import re
 import subprocess
 import sys
 from pathlib import Path
 from typing import Any
+
+try:
+    from .dataset_layout import (
+        artifact_path,
+        collect_pdf_paths,
+        default_dataset_dir,
+        is_organized_dataset,
+        manifest_path,
+    )
+except ImportError:
+    from dataset_layout import (
+        artifact_path,
+        collect_pdf_paths,
+        default_dataset_dir,
+        is_organized_dataset,
+        manifest_path,
+    )
 
 try:
     from google import genai
@@ -99,6 +118,9 @@ OCR_RETRY_ATTEMPTS = int(os.getenv("OCR_RETRY_ATTEMPTS", "3"))
 OCR_RETRY_BACKOFF_MULTIPLIER = int(os.getenv("OCR_RETRY_BACKOFF_MULTIPLIER", "2"))
 OCR_RETRY_MIN_WAIT_SECONDS = int(os.getenv("OCR_RETRY_MIN_WAIT_SECONDS", "2"))
 OCR_RETRY_MAX_WAIT_SECONDS = int(os.getenv("OCR_RETRY_MAX_WAIT_SECONDS", "20"))
+DEFAULT_GEMINI_OCR_MODEL = "gemini-3.5-flash"
+DEFAULT_OPENROUTER_OCR_MODEL = "google/gemini-3.5-flash"
+GEMINI_API_KEY_ENV_VARS = ("VERTEX_AI_API_KEY", "GOOGLE_API_KEY", "GEMINI_API_KEY")
 
 
 # Build retriable exceptions tuple
@@ -126,6 +148,14 @@ retry_on_gemini_call = retry(
 )
 
 
+def _gemini_api_key() -> str | None:
+    for env_var in GEMINI_API_KEY_ENV_VARS:
+        api_key = os.getenv(env_var)
+        if api_key and api_key not in {"your-api-key-here", "your-gemini-api-key"}:
+            return api_key
+    return None
+
+
 def setup_gemini():
     """Configure Gemini API client with API key from environment variable."""
     if genai is None or types is None:
@@ -133,10 +163,10 @@ def setup_gemini():
         print("Install with: python -m pip install google-genai")
         sys.exit(1)
 
-    api_key = os.getenv('GEMINI_API_KEY')
-    if not api_key or api_key == 'your-api-key-here':
-        print("Error: GEMINI_API_KEY not set.")
-        print("Please set GEMINI_API_KEY environment variable")
+    api_key = _gemini_api_key()
+    if not api_key:
+        print(f"Error: none of {', '.join(GEMINI_API_KEY_ENV_VARS)} is set.")
+        print("Please set one of these environment variables before running Gemini OCR.")
         sys.exit(1)
     
     return genai.Client(api_key=api_key)
@@ -266,7 +296,7 @@ def convert_pdf_page(pdf_path, page_num, dpi=200):
 
 
 @retry_on_gemini_call
-async def ocr_image_async(client: Any, image: Any, model_name: str = "gemini-2.5-flash") -> str:
+async def ocr_image_async(client: Any, image: Any, model_name: str = DEFAULT_GEMINI_OCR_MODEL) -> str:
     """OCR a single image using Gemini async API with retries."""
     response = await asyncio.wait_for(
         client.aio.models.generate_content(
@@ -387,7 +417,7 @@ async def process_pdf_async(
 ) -> bool:
     """Process PDF pages with async concurrency control."""
     if not model_names:
-        model_names = ["google/gemini-3.5-flash"] if ocr_engine == "openrouter" else ["gemini-2.5-flash"]
+        model_names = [DEFAULT_OPENROUTER_OCR_MODEL] if ocr_engine == "openrouter" else [DEFAULT_GEMINI_OCR_MODEL]
 
     total_pages = get_page_count(pdf_path)
     if total_pages is None:
@@ -436,10 +466,11 @@ def collect_pdf_files(
     if file_name:
         pdf_path = Path(file_name)
         if not pdf_path.is_absolute():
-            pdf_path = claims_dir / file_name
+            organized_pdf_path = claims_dir / "pdfs" / file_name
+            pdf_path = organized_pdf_path if organized_pdf_path.exists() else claims_dir / file_name
         return [pdf_path] if pdf_path.exists() else []
 
-    candidates = claims_dir.rglob("*.pdf") if recursive else claims_dir.glob("*.pdf")
+    candidates = collect_pdf_paths(claims_dir, recursive=recursive)
     pdf_files = sorted(
         candidates,
         key=lambda path: (
@@ -455,6 +486,69 @@ def collect_pdf_files(
     return pdf_files
 
 
+def ocr_output_path(claims_dir: Path, pdf_path: Path, output_suffix: str) -> Path:
+    """Return the OCR output path for organized or legacy benchmark data."""
+    if is_organized_dataset(claims_dir) and output_suffix == "_ocr.md":
+        return artifact_path(claims_dir, pdf_path.stem, "ocr")
+    return pdf_path.parent / f"{pdf_path.stem}{output_suffix}"
+
+
+def _available_transcripts(dataset_dir: Path, sample_id: str) -> list[str]:
+    transcripts: list[str] = []
+    if artifact_path(dataset_dir, sample_id, "canonical").exists():
+        transcripts.append("canonical")
+    if artifact_path(dataset_dir, sample_id, "ocr").exists():
+        transcripts.append("ocr")
+    return transcripts
+
+
+def refresh_organized_manifest_transcripts(dataset_dir: Path) -> None:
+    """Update transcript availability after OCR writes organized-layout files."""
+    if not is_organized_dataset(dataset_dir):
+        return
+
+    manifest_file = manifest_path(dataset_dir)
+    if not manifest_file.exists():
+        return
+
+    try:
+        manifest = json.loads(manifest_file.read_text(encoding="utf-8"))
+    except Exception:
+        return
+
+    for instance in manifest.get("instances", []):
+        sample_id = instance.get("id")
+        if not sample_id:
+            continue
+        transcripts = _available_transcripts(dataset_dir, sample_id)
+        instance["transcripts_available"] = transcripts
+
+        sample_metadata_path = artifact_path(dataset_dir, sample_id, "metadata")
+        if sample_metadata_path.exists():
+            try:
+                sample_metadata = json.loads(sample_metadata_path.read_text(encoding="utf-8"))
+                sample_metadata["transcripts_available"] = transcripts
+                sample_metadata_path.write_text(
+                    json.dumps(sample_metadata, indent=2, ensure_ascii=False) + "\n",
+                    encoding="utf-8",
+                )
+            except Exception:
+                pass
+
+    manifest["transcript_conditions"] = sorted(
+        {
+            transcript
+            for instance in manifest.get("instances", [])
+            for transcript in instance.get("transcripts_available", [])
+        }
+    )
+    manifest["updated_at"] = datetime.now(timezone.utc).isoformat()
+    rendered = json.dumps(manifest, indent=2, ensure_ascii=False) + "\n"
+    for path in {dataset_dir / "manifest.json", dataset_dir / "metadata.json"}:
+        if path.exists():
+            path.write_text(rendered, encoding="utf-8")
+
+
 def build_arg_parser():
     import argparse
 
@@ -462,7 +556,7 @@ def build_arg_parser():
     parser.add_argument(
         "--claims-dir",
         type=str,
-        help="Directory containing PDFs (default: benchmarks/claims)",
+        help="Dataset directory containing PDFs (default: data/ when present, else benchmarks/claims)",
     )
     parser.add_argument(
         "--recursive",
@@ -472,17 +566,17 @@ def build_arg_parser():
     parser.add_argument(
         "--model", "-m",
         type=str,
-        default="gemini-2.5-flash",
+        default=DEFAULT_GEMINI_OCR_MODEL,
         help=(
             "Gemini model to use. For --ocr-engine openrouter, the default is "
-            "OPENROUTER_OCR_MODEL or google/gemini-3.5-flash."
+            f"OPENROUTER_OCR_MODEL or {DEFAULT_OPENROUTER_OCR_MODEL}."
         ),
     )
     parser.add_argument(
         "--fallback-models",
         type=str,
-        default="gemini-2.5-flash",
-        help="Comma-separated fallback models to try if a page fails (default: gemini-2.5-flash)",
+        default=DEFAULT_GEMINI_OCR_MODEL,
+        help=f"Comma-separated fallback models to try if a page fails (default: {DEFAULT_GEMINI_OCR_MODEL})",
     )
     parser.add_argument(
         "--file", "-f",
@@ -492,7 +586,7 @@ def build_arg_parser():
     parser.add_argument(
         "--tiers",
         nargs="+",
-        choices=["easy", "medium", "hard", "extreme"],
+        choices=["easy", "medium", "hard", "extreme", "multihop", "mixed"],
         help="Only process PDFs whose filename starts with one of these tiers",
     )
     parser.add_argument(
@@ -544,7 +638,7 @@ async def main_async() -> None:
 
     default_google_model = parser.get_default("model")
     if args.ocr_engine == "openrouter" and args.model == default_google_model:
-        args.model = os.getenv("OPENROUTER_OCR_MODEL", "google/gemini-3.5-flash")
+        args.model = os.getenv("OPENROUTER_OCR_MODEL", DEFAULT_OPENROUTER_OCR_MODEL)
     if args.ocr_engine == "openrouter" and args.fallback_models == parser.get_default("fallback_models"):
         args.fallback_models = args.model
 
@@ -556,7 +650,7 @@ async def main_async() -> None:
     
     # Setup paths
     script_dir = Path(__file__).parent
-    claims_dir = Path(args.claims_dir) if args.claims_dir else script_dir / "claims"
+    claims_dir = Path(args.claims_dir) if args.claims_dir else default_dataset_dir()
     
     if not claims_dir.exists():
         print(f"Error: Claims directory not found: {claims_dir}")
@@ -597,7 +691,8 @@ async def main_async() -> None:
     fail_count = 0
     
     for i, pdf_path in enumerate(pdf_files, 1):
-        output_path = pdf_path.parent / f"{pdf_path.stem}{args.output_suffix}"
+        output_path = ocr_output_path(claims_dir, pdf_path, args.output_suffix)
+        output_path.parent.mkdir(parents=True, exist_ok=True)
         
         # Skip if already processed (unless --force)
         if output_path.exists() and not args.force:
@@ -636,6 +731,7 @@ async def main_async() -> None:
     print(f"Processing complete!")
     print(f"  Success: {success_count}/{len(pdf_files)}")
     print(f"  Failed:  {fail_count}/{len(pdf_files)}")
+    refresh_organized_manifest_transcripts(claims_dir)
     print(f"\nRun validate_ocr_vs_golden.py to check coverage.")
 
 

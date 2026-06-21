@@ -1,0 +1,582 @@
+[
+  {
+    "incident_number": "#30001",
+    "reference_number": "L240001",
+    "company_name": "Stuart Freight Co",
+    "division": "General",
+    "coverage_type": "Inland Marine",
+    "status": "Open",
+    "policy_number": "L24A3974",
+    "policy_state": "AR",
+    "cause_code": "IMD",
+    "description": "Equipment or transported vehicle damage during handling",
+    "handler": "Claims Adjuster",
+    "unit_number": "2024 KW 600001",
+    "date_of_loss": "02/24/2024",
+    "loss_state": "MO",
+    "date_reported": "03/20/2024",
+    "agency": null,
+    "insured": "Stuart Freight Co",
+    "claimants": [
+      "Walker, Linda"
+    ],
+    "driver_name": "Driver-001, Alex",
+    "bi": {
+      "reserve": 132150.02,
+      "paid": 0.0,
+      "recovered": 0.0,
+      "total_incurred": 132150.02
+    },
+    "pd": {
+      "reserve": 43745.04,
+      "paid": 0.0,
+      "recovered": 0.0,
+      "total_incurred": 43745.04
+    },
+    "lae": {
+      "reserve": 0.0,
+      "paid": 0.0,
+      "recovered": 0.0,
+      "total_incurred": 0.0
+    },
+    "ded": {
+      "reserve": 0.0,
+      "paid": 0.0,
+      "recovered": 8906.95,
+      "total_incurred": -8906.95
+    },
+    "adjuster_notes": "Indexed claimant notice 001; verify ledger totals before closure."
+  },
+  {
+    "incident_number": "#30002",
+    "reference_number": "L230002",
+    "company_name": "Rollinschester Hauling",
+    "division": "General",
+    "coverage_type": "Liability",
+    "status": "Open",
+    "policy_number": "L23A1955",
+    "policy_state": "OH",
+    "cause_code": "BKD",
+    "description": "Insured vehicle backed into fixed object or parked vehicle",
+    "handler": "Claims Adjuster",
+    "unit_number": "2024 PB 600002",
+    "date_of_loss": "09/18/2023",
+    "loss_state": "PA",
+    "date_reported": "09/20/2023",
+    "agency": null,
+    "insured": "Rollinschester Hauling",
+    "claimants": [
+      "Gonzalez, Kevin",
+      "Jordan LLC"
+    ],
+    "driver_name": "Driver-002, Alex",
+    "bi": {
+      "reserve": 0.0,
+      "paid": 0.0,
+      "recovered": 0.0,
+      "total_incurred": 0.0
+    },
+    "pd": {
+      "reserve": 36010.1,
+      "paid": 0.0,
+      "recovered": 0.0,
+      "total_incurred": 36010.1
+    },
+    "lae": {
+      "reserve": 0.0,
+      "paid": 0.0,
+      "recovered": 0.0,
+      "total_incurred": 0.0
+    },
+    "ded": {
+      "reserve": 0.0,
+      "paid": 0.0,
+      "recovered": 0.0,
+      "total_incurred": 0.0
+    },
+    "adjuster_notes": "Indexed claimant notice 002; verify ledger totals before closure."
+  },
+  {
+    "incident_number": "#30003",
+    "reference_number": "L230003",
+    "company_name": "Eagle Cargo LLC",
+    "division": "General",
+    "coverage_type": "Physical Damage",
+    "status": "Open",
+    "policy_number": "L23A3286",
+    "policy_state": "MO",
+    "cause_code": "ROL",
+    "description": "Rollover or loss of control damage to insured vehicle",
+    "handler": "Claims Adjuster",
+    "unit_number": "2024 VL 600003",
+    "date_of_loss": "08/27/2023",
+    "loss_state": "AZ",
+    "date_reported": "09/24/2023",
+    "agency": null,
+    "insured": "Eagle Cargo LLC",
+    "claimants": [
+      "Mcdonald, Donna",
+      "Haynes, Jason"
+    ],
+    "driver_name": "Driver-003, Alex",
+    "bi": {
+      "reserve": 0.0,
+      "paid": 0.0,
+      "recovered": 0.0,
+      "total_incurred": 0.0
+    },
+    "pd": {
+      "reserve": 52735.56,
+      "paid": 0.0,
+      "recovered": 0.0,
+      "total_incurred": 52735.56
+    },
+    "lae": {
+      "reserve": 0.0,
+      "paid": 0.0,
+      "recovered": 0.0,
+      "total_incurred": 0.0
+    },
+    "ded": {
+      "reserve": 0.0,
+      "paid": 0.0,
+      "recovered": 22350.14,
+      "total_incurred": -22350.14
+    },
+    "adjuster_notes": "Indexed claimant notice 003; verify ledger totals before closure."
+  },
+  {
+    "incident_number": "#30004",
+    "reference_number": "L240004",
+    "company_name": "Burke Hauling Co",
+    "division": "General",
+    "coverage_type": "Liability",
+    "status": "Open",
+    "policy_number": "L24A6859",
+    "policy_state": "IL",
+    "cause_code": "BKD",
+    "description": "Insured vehicle backed into fixed object or parked vehicle",
+    "handler": "Claims Adjuster",
+    "unit_number": "2024 MK 600004",
+    "date_of_loss": "12/28/2024",
+    "loss_state": "PA",
+    "date_reported": "01/03/2025",
+    "agency": null,
+    "insured": "Burke Hauling Co",
+    "claimants": [
+      "Le and Sons",
+      "Martin, George"
+    ],
+    "driver_name": "Driver-004, Alex",
+    "bi": {
+      "reserve": 0.0,
+      "paid": 0.0,
+      "recovered": 0.0,
+      "total_incurred": 0.0
+    },
+    "pd": {
+      "reserve": 25135.18,
+      "paid": 0.0,
+      "recovered": 0.0,
+      "total_incurred": 25135.18
+    },
+    "lae": {
+      "reserve": 0.0,
+      "paid": 0.0,
+      "recovered": 0.0,
+      "total_incurred": 0.0
+    },
+    "ded": {
+      "reserve": 0.0,
+      "paid": 0.0,
+      "recovered": 31936.16,
+      "total_incurred": -31936.16
+    },
+    "adjuster_notes": "Indexed claimant notice 004; verify ledger totals before closure."
+  },
+  {
+    "incident_number": "#30005",
+    "reference_number": "L240005",
+    "company_name": "Griffinborough Cargo",
+    "division": "General",
+    "coverage_type": "Inland Marine",
+    "status": "Open",
+    "policy_number": "L24A7575",
+    "policy_state": "OK",
+    "cause_code": "IMD",
+    "description": "Equipment or transported vehicle damage during handling",
+    "handler": "Claims Adjuster",
+    "unit_number": "2024 IN 600005",
+    "date_of_loss": "12/09/2024",
+    "loss_state": "AR",
+    "date_reported": "12/10/2024",
+    "agency": null,
+    "insured": "Griffinborough Cargo",
+    "claimants": [
+      "Martin, Tiffany",
+      "Watkins, Ashlee"
+    ],
+    "driver_name": "Driver-005, Alex",
+    "bi": {
+      "reserve": 0.0,
+      "paid": 0.0,
+      "recovered": 0.0,
+      "total_incurred": 0.0
+    },
+    "pd": {
+      "reserve": 19894.26,
+      "paid": 0.0,
+      "recovered": 0.0,
+      "total_incurred": 19894.26
+    },
+    "lae": {
+      "reserve": 0.0,
+      "paid": 0.0,
+      "recovered": 0.0,
+      "total_incurred": 0.0
+    },
+    "ded": {
+      "reserve": 0.0,
+      "paid": 0.0,
+      "recovered": 10003.02,
+      "total_incurred": -10003.02
+    },
+    "adjuster_notes": "Indexed claimant notice 005; verify ledger totals before closure."
+  },
+  {
+    "incident_number": "#30006",
+    "reference_number": "L230006",
+    "company_name": "South Ryan Cargo",
+    "division": "General",
+    "coverage_type": "Cargo",
+    "status": "Open",
+    "policy_number": "L23A2216",
+    "policy_state": "AR",
+    "cause_code": "CGO",
+    "description": "Cargo shortage, damage, contamination, or spoilage",
+    "handler": "Claims Adjuster",
+    "unit_number": "2024 FR 600006",
+    "date_of_loss": "08/04/2023",
+    "loss_state": "NC",
+    "date_reported": "08/12/2023",
+    "agency": null,
+    "insured": "South Ryan Cargo",
+    "claimants": [
+      "Claimant-006"
+    ],
+    "driver_name": "Driver-006, Alex",
+    "bi": {
+      "reserve": 0.0,
+      "paid": 0.0,
+      "recovered": 0.0,
+      "total_incurred": 0.0
+    },
+    "pd": {
+      "reserve": 28090.77,
+      "paid": 0.0,
+      "recovered": 0.0,
+      "total_incurred": 28090.77
+    },
+    "lae": {
+      "reserve": 0.0,
+      "paid": 0.0,
+      "recovered": 0.0,
+      "total_incurred": 0.0
+    },
+    "ded": {
+      "reserve": 0.0,
+      "paid": 0.0,
+      "recovered": 0.0,
+      "total_incurred": 0.0
+    },
+    "adjuster_notes": "Indexed claimant notice 006; verify ledger totals before closure."
+  },
+  {
+    "incident_number": "#30007",
+    "reference_number": "L240007",
+    "company_name": "Heatherview Transport",
+    "division": "General",
+    "coverage_type": "Physical Damage",
+    "status": "Open",
+    "policy_number": "L24A9905",
+    "policy_state": "CA",
+    "cause_code": "ROL",
+    "description": "Rollover or loss of control damage to insured vehicle",
+    "handler": "Claims Adjuster",
+    "unit_number": "2024 KW 600007",
+    "date_of_loss": "05/19/2024",
+    "loss_state": "GA",
+    "date_reported": "05/24/2024",
+    "agency": "Robbins PLC",
+    "insured": "Heatherview Transport",
+    "claimants": [
+      "Rivera Inc"
+    ],
+    "driver_name": "Driver-007, Alex",
+    "bi": {
+      "reserve": 0.0,
+      "paid": 0.0,
+      "recovered": 0.0,
+      "total_incurred": 0.0
+    },
+    "pd": {
+      "reserve": 13445.36,
+      "paid": 3481.59,
+      "recovered": 0.0,
+      "total_incurred": 16926.95
+    },
+    "lae": {
+      "reserve": 0.0,
+      "paid": 0.0,
+      "recovered": 0.0,
+      "total_incurred": 0.0
+    },
+    "ded": {
+      "reserve": 0.0,
+      "paid": 0.0,
+      "recovered": 29484.36,
+      "total_incurred": -29484.36
+    },
+    "adjuster_notes": "Indexed claimant notice 007; verify ledger totals before closure."
+  },
+  {
+    "incident_number": "#30008",
+    "reference_number": "L230008",
+    "company_name": "Port James Cargo",
+    "division": "General",
+    "coverage_type": "Liability",
+    "status": "Closed",
+    "policy_number": "L23A1604",
+    "policy_state": "OH",
+    "cause_code": "BKD",
+    "description": "Insured vehicle backed into fixed object or parked vehicle",
+    "handler": "Claims Adjuster",
+    "unit_number": "2024 PB 600008",
+    "date_of_loss": "06/08/2023",
+    "loss_state": "TX",
+    "date_reported": "06/15/2023",
+    "agency": null,
+    "insured": "Port James Cargo",
+    "claimants": [
+      "Claimant-008"
+    ],
+    "driver_name": "Driver-008, Alex",
+    "bi": {
+      "reserve": 0.0,
+      "paid": 0.0,
+      "recovered": 0.0,
+      "total_incurred": 0.0
+    },
+    "pd": {
+      "reserve": 0.0,
+      "paid": 24346.32,
+      "recovered": 0.0,
+      "total_incurred": 24346.32
+    },
+    "lae": {
+      "reserve": 0.0,
+      "paid": 647.6,
+      "recovered": 0.0,
+      "total_incurred": 647.6
+    },
+    "ded": {
+      "reserve": 0.0,
+      "paid": 0.0,
+      "recovered": 2633.82,
+      "total_incurred": -2633.82
+    },
+    "adjuster_notes": "Indexed claimant notice 008; verify ledger totals before closure."
+  },
+  {
+    "incident_number": "#30009",
+    "reference_number": "L230009",
+    "company_name": "Burke Hauling Co",
+    "division": "General",
+    "coverage_type": "Physical Damage",
+    "status": "Closed",
+    "policy_number": "L24A6859",
+    "policy_state": "IL",
+    "cause_code": "ROL",
+    "description": "Rollover or loss of control damage to insured vehicle",
+    "handler": "Claims Adjuster",
+    "unit_number": "2024 VL 600009",
+    "date_of_loss": "08/28/2023",
+    "loss_state": "MO",
+    "date_reported": "09/01/2023",
+    "agency": "Brokerage 004",
+    "insured": "Burke Hauling Co",
+    "claimants": [
+      "Claimant-009"
+    ],
+    "driver_name": "Driver-009, Alex",
+    "bi": {
+      "reserve": 0.0,
+      "paid": 0.0,
+      "recovered": 0.0,
+      "total_incurred": 0.0
+    },
+    "pd": {
+      "reserve": 0.0,
+      "paid": 28277.2,
+      "recovered": 0.0,
+      "total_incurred": 28277.2
+    },
+    "lae": {
+      "reserve": 0.0,
+      "paid": 400.71,
+      "recovered": 0.0,
+      "total_incurred": 400.71
+    },
+    "ded": {
+      "reserve": 0.0,
+      "paid": 0.0,
+      "recovered": 3566.6,
+      "total_incurred": -3566.6
+    },
+    "adjuster_notes": "Indexed claimant notice 009; verify ledger totals before closure."
+  },
+  {
+    "incident_number": "#30010",
+    "reference_number": "L240010",
+    "company_name": "Stuart Freight Co",
+    "division": "General",
+    "coverage_type": "Liability",
+    "status": "Open",
+    "policy_number": "L24A3974",
+    "policy_state": "AR",
+    "cause_code": "BKD",
+    "description": "Insured vehicle backed into fixed object or parked vehicle",
+    "handler": "Claims Adjuster",
+    "unit_number": "2024 MK 600010",
+    "date_of_loss": "06/16/2024",
+    "loss_state": "OK",
+    "date_reported": "07/04/2024",
+    "agency": "Brokerage 001",
+    "insured": "Stuart Freight Co",
+    "claimants": [
+      "Claimant-010"
+    ],
+    "driver_name": "Driver-010, Alex",
+    "bi": {
+      "reserve": 0.0,
+      "paid": 0.0,
+      "recovered": 0.0,
+      "total_incurred": 0.0
+    },
+    "pd": {
+      "reserve": 28431.13,
+      "paid": 0.0,
+      "recovered": 0.0,
+      "total_incurred": 28431.13
+    },
+    "lae": {
+      "reserve": 0.0,
+      "paid": 0.0,
+      "recovered": 0.0,
+      "total_incurred": 0.0
+    },
+    "ded": {
+      "reserve": 0.0,
+      "paid": 0.0,
+      "recovered": 0.0,
+      "total_incurred": 0.0
+    },
+    "adjuster_notes": "Indexed claimant notice 010; verify ledger totals before closure."
+  },
+  {
+    "incident_number": "#30011",
+    "reference_number": "L230011",
+    "company_name": "Heatherview Transport",
+    "division": "General",
+    "coverage_type": "Liability",
+    "status": "Closed",
+    "policy_number": "L24A9905",
+    "policy_state": "CA",
+    "cause_code": "TRN",
+    "description": "Wide turn or lane change contact with another vehicle",
+    "handler": "Claims Adjuster",
+    "unit_number": "2024 IN 600011",
+    "date_of_loss": "11/11/2023",
+    "loss_state": "IL",
+    "date_reported": "12/04/2023",
+    "agency": "Robbins PLC",
+    "insured": "Heatherview Transport",
+    "claimants": [
+      "Carter, Gabriel"
+    ],
+    "driver_name": "Driver-011, Alex",
+    "bi": {
+      "reserve": 0.0,
+      "paid": 0.0,
+      "recovered": 0.0,
+      "total_incurred": 0.0
+    },
+    "pd": {
+      "reserve": 0.0,
+      "paid": 38774.39,
+      "recovered": 0.0,
+      "total_incurred": 38774.39
+    },
+    "lae": {
+      "reserve": 0.0,
+      "paid": 1370.31,
+      "recovered": 0.0,
+      "total_incurred": 1370.31
+    },
+    "ded": {
+      "reserve": 0.0,
+      "paid": 0.0,
+      "recovered": 0.0,
+      "total_incurred": 0.0
+    },
+    "adjuster_notes": "Indexed claimant notice 011; verify ledger totals before closure."
+  },
+  {
+    "incident_number": "#30012",
+    "reference_number": "L230012",
+    "company_name": "Joshuaborough Freight",
+    "division": "General",
+    "coverage_type": "Liability",
+    "status": "Open",
+    "policy_number": "L23A7440",
+    "policy_state": "TX",
+    "cause_code": "RER",
+    "description": "Insured vehicle rear-ended another vehicle",
+    "handler": "Claims Adjuster",
+    "unit_number": "2024 FR 600012",
+    "date_of_loss": "05/15/2023",
+    "loss_state": "AZ",
+    "date_reported": "05/19/2023",
+    "agency": null,
+    "insured": "Joshuaborough Freight",
+    "claimants": [
+      "Claimant-012"
+    ],
+    "driver_name": "Driver-012, Alex",
+    "bi": {
+      "reserve": 0.0,
+      "paid": 0.0,
+      "recovered": 0.0,
+      "total_incurred": 0.0
+    },
+    "pd": {
+      "reserve": 47820.35,
+      "paid": 0.0,
+      "recovered": 0.0,
+      "total_incurred": 47820.35
+    },
+    "lae": {
+      "reserve": 0.0,
+      "paid": 0.0,
+      "recovered": 0.0,
+      "total_incurred": 0.0
+    },
+    "ded": {
+      "reserve": 0.0,
+      "paid": 0.0,
+      "recovered": 31030.9,
+      "total_incurred": -31030.9
+    },
+    "adjuster_notes": "Indexed claimant notice 012; verify ledger totals before closure."
+  }
+]

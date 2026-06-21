@@ -2,10 +2,10 @@
 
 This directory contains benchmark generation and processing tools for the LongListBench project.
 
-Each benchmark instance can expose two transcript conditions:
+Each benchmark instance always exposes a clean transcript and can expose an OCR transcript after running OCR:
 
 - `canonical` - a clean transcript derived from the rendered HTML/document structure
-- `ocr` - a noisy transcript derived from Gemini OCR over rendered page images
+- `ocr` - a noisy transcript derived from Gemini OCR over rendered page images, created by `ocr_claims_pdfs.py`
 
 ## Setup
 
@@ -34,12 +34,13 @@ Run these commands from the repository root.
    ```
    Then edit the repo-root `.env` and set:
    ```
-   GEMINI_API_KEY=your-gemini-api-key
+   VERTEX_AI_API_KEY=your-gemini-or-vertex-api-key
+   GEMINI_API_KEY=your-gemini-api-key  # also supported
    OPENROUTER_API_KEY=your-openrouter-api-key  # optional, for --ocr-engine openrouter
    OPENAI_API_KEY=your-openai-api-key
 
-   # Optional override (only affects benchmarks/evaluate_models.py; default is gemini-2.5-flash)
-   GEMINI_MODEL_ID=gemini-2.5-flash
+   # Optional override (only affects benchmarks/evaluate_models.py; default is gemini-3.1-pro-preview)
+   GEMINI_MODEL_ID=gemini-3.1-pro-preview
 
    # Optional evaluation controls
    LLB_MODEL_WORKERS=2
@@ -52,16 +53,20 @@ Generate synthetic benchmark artifacts:
 
 ```bash
 python benchmarks/generate_claims_benchmark.py
+python benchmarks/organize_dataset.py --move
 ```
 
-This writes, for each instance:
+The generator first writes the legacy flat working directory, then the organizer moves artifacts into the public `data/` layout:
 
-- `<instance_id>.json`
-- `<instance_id>.html`
-- `<instance_id>.pdf`
-- `<instance_id>_canonical.md`
+- `data/pdfs/<instance_id>.pdf`
+- `data/html/<instance_id>.html`
+- `data/ground_truth/<instance_id>.json`
+- `data/transcripts/canonical/<instance_id>.md`
+- `data/metadata/<instance_id>.json`
 
-If you need to regenerate `claims/metadata.json` (without regenerating PDFs/HTML/JSON), run:
+`data/manifest.json` is the source of truth for artifact paths and transcript availability.
+
+If you need to regenerate the flat generator metadata before organizing, run:
 
 ```bash
 python benchmarks/generate_claims_benchmark.py --rebuild-metadata
@@ -69,32 +74,39 @@ python benchmarks/generate_claims_benchmark.py --rebuild-metadata
 
 ## Generate Multi-Hop Benchmark
 
-Generate cross-document packet cases where the full incident records require joins across multiple rendered documents:
+Generate single-document cross-page cases where the full incident records require joins across distant sections of one long PDF:
 
 ```bash
 python benchmarks/generate_multihop_benchmark.py
 ```
 
-This writes `benchmarks/multihop_claims/` with 3 case folders, 15 rendered documents, and 77 target incidents. Each case folder contains:
+This writes 3 additional samples into the same `data/` layout:
 
-- `manifest.json` - document roles, join requirements, available transcript conditions
-- `ground_truth.json` - target incident list under the same loss-run schema
-- `<document_role>.html`
-- `<document_role>.pdf`
-- `<document_role>_canonical.md`
-- `<document_role>_ocr.md` after OCR
+- `data/pdfs/<sample_id>.pdf`
+- `data/html/<sample_id>.html`
+- `data/ground_truth/<sample_id>.json`
+- `data/transcripts/canonical/<sample_id>.md`
+- `data/metadata/<sample_id>.json`
 
-Current join requirements include `policy_number -> policy_register`, `unit_number -> driver_roster`, `cause_code -> cause_code_legend`, and `incident_number -> claimant_index/financial_ledger`. The mixed packet also includes a distractor claims export with overlapping keys.
+The cross-page samples are `multihop_012_001_crosspage`, `multihop_025_001_crosspage`, and `mixed_040_001_crosspage`. They have one PDF each, but the evidence needed for one incident is separated by dozens to hundreds of pages. Current join requirements include `policy_number -> policy register`, `unit_number -> driver roster`, `cause_code -> cause classification appendix`, and `incident_number -> claimant index/financial ledger`. The mixed sample also includes archived distractor sections with overlapping reference values.
+
+To generate the LOB-specific policy multi-hop suite:
+
+```bash
+python benchmarks/generate_policy_multihop_benchmark.py
+```
+
+This writes `multihop_bop_012_001`, `multihop_wc_025_001`, and `mixed_cgl_040_001`. Each sample is one PDF, and each target record is a LOB-specific policy item assembled from distant sections such as declarations, described premises or classifications, coverage/limit schedules, payroll or exposure rating schedules, forms and endorsements, exclusion or endorsement detail pages, and premium summaries.
 
 ## Problem Matrix (Which files have which problems)
 
-The authoritative mapping of `instance_id -> problems` lives in the generated `<output_dir>/metadata.json` under `instances[]`.
+The authoritative mapping of `instance_id -> problems` lives in `data/manifest.json` under `instances[]`.
 
 Each instance is generated in **two formats** (`detailed` and `table`) and each format produces:
 
-- **PDF**: `<instance_id>.pdf`
-- **HTML**: `<instance_id>.html`
-- **Ground truth**: `<instance_id>.json`
+- **PDF**: `data/pdfs/<instance_id>.pdf`
+- **HTML**: `data/html/<instance_id>.html`
+- **Ground truth**: `data/ground_truth/<instance_id>.json`
 
 Below is the expected problem mapping based on `BENCHMARK_CONFIG` (the instance number cycles through the tier’s problem combinations).
 
@@ -138,24 +150,44 @@ Notes:
 
 ## OCR Claims PDFs
 
-Process PDF files in the `claims/` directory using Gemini OCR:
+## Policy Multi-Hop Generation
+
+Policy multi-hop fixtures are generated by `benchmarks/generate_policy_multihop_benchmark.py`, which delegates to the smaller `benchmarks/policy_multihop/` package. Deterministic Python code generates the ground-truth policy items; Markdown prompts in `benchmarks/policy_multihop/prompts/` describe how Gemini should write original synthetic BOP, WC, and CGL policy prose.
+
+Offline/template generation:
 
 ```bash
-python benchmarks/ocr_claims_pdfs.py
+python benchmarks/generate_policy_multihop_benchmark.py
 ```
 
-For multi-hop packets, OCR recursively below the case directory:
+Gemini-authored synthetic policy prose:
 
 ```bash
-python benchmarks/ocr_claims_pdfs.py --claims-dir benchmarks/multihop_claims --recursive --force
+python benchmarks/generate_policy_multihop_benchmark.py \
+  --text-generator gemini \
+  --gemini-model gemini-3.1-pro-preview \
+  --thinking-level high
+```
+
+Gemini outputs are cached under `data/generated_text/policy_multihop/` by default so regenerated HTML/PDF artifacts can reuse the same synthetic prose. This is separate from OCR; run OCR only after the PDFs are accepted.
+
+Process PDF files in `data/pdfs/` using Gemini OCR:
+
+```bash
+python benchmarks/ocr_claims_pdfs.py --model gemini-3.5-flash
+```
+
+For only the cross-page multi-hop cases:
+
+```bash
+python benchmarks/ocr_claims_pdfs.py --tiers multihop mixed --force
 ```
 
 If you use OpenRouter for Gemini OCR instead of a direct Gemini key:
 
 ```bash
 python benchmarks/ocr_claims_pdfs.py \
-  --claims-dir benchmarks/multihop_claims \
-  --recursive \
+  --tiers multihop mixed \
   --ocr-engine openrouter \
   --model google/gemini-3.5-flash
 ```
@@ -163,9 +195,11 @@ python benchmarks/ocr_claims_pdfs.py \
 This will:
 - Process all PDF files in parallel
 - Extract text using the Google Gemini vision model
-- Save results as `*_ocr.md` files alongside each PDF
+- Save results under `data/transcripts/ocr_gemini/{sample_id}.md`
 - Skip files that have already been processed
 - Handle multi-page PDFs efficiently
+
+After regenerating PDFs, rerun OCR with `--force`; OCR transcripts from older PDFs are intentionally not reusable.
 
 The default OCR path is `gemini`, not text-layer extraction. Text-layer mode remains available only as an explicit local/debug option.
 
@@ -175,10 +209,10 @@ Recommended staged workflow (validate each tier before moving on):
 
 ```bash
 python benchmarks/ocr_claims_pdfs.py --force --tiers easy
-python benchmarks/validate_ocr_vs_golden.py --claims-dir claims --tiers easy
+python benchmarks/validate_ocr_vs_golden.py --claims-dir data --tiers easy
 
 python benchmarks/ocr_claims_pdfs.py --force --tiers medium
-python benchmarks/validate_ocr_vs_golden.py --claims-dir claims --tiers medium
+python benchmarks/validate_ocr_vs_golden.py --claims-dir data --tiers medium
 ```
 
 ## Multi-Model Evaluation
@@ -188,11 +222,22 @@ Run extraction evaluation across the registered model/regime keys. Common keys a
 Note: running evaluation with `--offline` regenerates reports from saved `*_predicted.json` files without making API calls.
 
 ```bash
+# Default evaluation uses canonical transcripts available after generation
+python benchmarks/evaluate_models.py --models gemini gpt52 --parallel-models --model-workers 2
+
 # Full OCR-condition evaluation (all tiers, both formats)
 python benchmarks/evaluate_models.py --models gemini gpt52 --parallel-models --model-workers 2 --transcripts ocr
 
 # GPT-5.5 regime ablation on the OCR condition
 python benchmarks/evaluate_models.py --models gpt55_oneshot gpt55_chunked gpt55_agent --transcripts ocr
+
+# GPT-5.5 agentic extraction on the multi-hop OCR cases
+LLB_AGENT_REASONING_EFFORT=xhigh LLB_AGENT_VERBOSITY=high \
+python benchmarks/evaluate_models.py \
+  --models gpt55_agent \
+  --tiers multihop mixed \
+  --transcripts ocr \
+  --output-dir benchmarks/results/agentic_multihop_gpt55
 
 # Quick test (one sample per tier)
 python benchmarks/evaluate_models.py --quick
@@ -211,6 +256,7 @@ Results are written to the `--output-dir` (default: `benchmarks/results/scratch/
 When multiple transcript conditions are evaluated in the same run, reports include transcript-aware breakdowns in addition to tier/format summaries.
 
 This repository includes released evaluation artifacts under:
+- `benchmarks/results/agentic_multihop_gpt55/`
 - `benchmarks/results/local_two_regimes/`
 - `benchmarks/results/oneshot_gpt55/`
 - `benchmarks/results/chunked_gpt55/`
@@ -222,12 +268,19 @@ This repository includes released evaluation artifacts under:
 
 ## Directory Structure
 
-- `claims/` - Generated benchmark claims (PDFs, JSONs, canonical transcripts, and OCR transcripts)
-- `multihop_claims/` - Cross-document packet cases with manifests, ground truth, PDFs, canonical transcripts, and OCR transcripts
+- `../data/` - Public dataset artifacts organized by modality
+- `../data/manifest.json` - Dataset manifest and sample index
+- `../data/pdfs/` - Rendered PDFs
+- `../data/html/` - Rendered HTML sources
+- `../data/ground_truth/` - Ground-truth incident JSON files
+- `../data/transcripts/canonical/` - Clean transcripts derived from HTML
+- `../data/transcripts/ocr_gemini/` - Gemini OCR transcripts
+- `../data/metadata/` - Per-sample metadata and evidence maps
 - `results/scratch/` - Scratch evaluation output directory (default)
 - `results/released/` - Released evaluation artifacts per tier
 - `synthetic/` - Synthetic data generation tools
 - `generate_claims_benchmark.py` - Main benchmark generation script
-- `generate_multihop_benchmark.py` - Cross-document multi-hop packet generator
+- `organize_dataset.py` - Converts flat generator output into the public `data/` layout
+- `generate_multihop_benchmark.py` - Single-document cross-page multi-hop generator
 - `ocr_claims_pdfs.py` - OCR processing script for PDFs
 - `evaluate_models.py` - Multi-model evaluation script

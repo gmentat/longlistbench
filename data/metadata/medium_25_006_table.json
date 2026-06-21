@@ -1,0 +1,38 @@
+{
+  "id": "medium_25_006_table",
+  "difficulty": "medium",
+  "format": "table",
+  "num_claims": 25,
+  "pages_estimate": 21,
+  "problems": [
+    "page_breaks",
+    "multi_row",
+    "multiple_tables"
+  ],
+  "layout_templates": [
+    "loss_run_schedule",
+    "packet_cover",
+    "spreadsheet_reference",
+    "portal_receipt"
+  ],
+  "has_duplicates": false,
+  "seed": 2975,
+  "files": {
+    "ground_truth": "ground_truth/medium_25_006_table.json",
+    "pdf": "pdfs/medium_25_006_table.pdf",
+    "html": "html/medium_25_006_table.html",
+    "canonical_md": "transcripts/canonical/medium_25_006_table.md",
+    "ocr_md": "transcripts/ocr_gemini/medium_25_006_table.md",
+    "json_size_bytes": 28960,
+    "pdf_size_bytes": 353419,
+    "html_size_bytes": 52605,
+    "canonical_size_bytes": 23516,
+    "ocr_size_bytes": 0
+  },
+  "transcripts_available": [
+    "canonical"
+  ],
+  "complexity_regime": "medium",
+  "document_count": 1,
+  "evidence_pattern": "single_document"
+}

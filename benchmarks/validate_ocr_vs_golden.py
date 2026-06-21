@@ -2,14 +2,31 @@
 """
 Validate OCR output against golden JSON data.
 
-This script checks whether key identifiers from the golden JSON
-(incident_number, reference_number) appear in the OCR markdown text.
-It reports coverage metrics and lists missing identifiers.
+For loss-run claims, this checks incident and reference identifiers. For generic
+policy-record fixtures, it checks visible policy/item/form/class/location
+identifiers instead.
 """
 
 import json
 import re
 from pathlib import Path
+
+try:
+    from .dataset_layout import (
+        default_dataset_dir,
+        ground_truth_path,
+        iter_transcript_paths,
+        sample_id_from_transcript_path,
+        transcript_path,
+    )
+except ImportError:
+    from dataset_layout import (
+        default_dataset_dir,
+        ground_truth_path,
+        iter_transcript_paths,
+        sample_id_from_transcript_path,
+        transcript_path,
+    )
 
 
 def load_golden(json_path: Path) -> list[dict]:
@@ -23,8 +40,43 @@ def load_ocr_text(md_path: Path) -> str:
     return md_path.read_text(encoding="utf-8")
 
 
+def _has_policy_records(records: list[dict]) -> bool:
+    return any(isinstance(record, dict) and "record_type" in record for record in records)
+
+
 def extract_identifiers(claims: list[dict]) -> dict[str, set[str]]:
-    """Extract key identifiers from golden claims."""
+    """Extract key visible identifiers from golden records."""
+    if _has_policy_records(claims):
+        policy_numbers: set[str] = set()
+        item_ids: set[str] = set()
+        schedule_values: set[str] = set()
+
+        for record in claims:
+            for field in ("policy_number",):
+                value = str(record.get(field) or "").strip()
+                if value:
+                    policy_numbers.add(value)
+            for field in ("item_id",):
+                value = str(record.get(field) or "").strip()
+                if value:
+                    item_ids.add(value)
+            for field in (
+                "form_number",
+                "class_code",
+                "location_number",
+                "building_number",
+                "endorsement_number",
+            ):
+                value = str(record.get(field) or "").strip()
+                if value:
+                    schedule_values.add(value)
+
+        return {
+            "policy_numbers": policy_numbers,
+            "item_ids": item_ids,
+            "schedule_values": schedule_values,
+        }
+
     incident_numbers = set()
     reference_numbers = set()
     
@@ -80,8 +132,8 @@ def check_coverage(ocr_text: str, identifiers: dict[str, set[str]]) -> dict:
 
 def validate_sample(sample_name: str, claims_dir: Path, verbose: bool = False) -> dict | None:
     """Validate a single sample's OCR against golden data."""
-    json_path = claims_dir / f"{sample_name}.json"
-    ocr_path = claims_dir / f"{sample_name}_ocr.md"
+    json_path = ground_truth_path(claims_dir, sample_name)
+    ocr_path = transcript_path(claims_dir, sample_name, "ocr")
     
     if not json_path.exists():
         return None
@@ -92,6 +144,7 @@ def validate_sample(sample_name: str, claims_dir: Path, verbose: bool = False) -
     # Load data
     claims = load_golden(json_path)
     ocr_text = load_ocr_text(ocr_path)
+    is_policy = _has_policy_records(claims)
     
     # Extract identifiers and check coverage
     identifiers = extract_identifiers(claims)
@@ -100,16 +153,45 @@ def validate_sample(sample_name: str, claims_dir: Path, verbose: bool = False) -
     result = {
         "sample": sample_name,
         "num_claims": len(claims),
+        "record_kind": "policy_records" if is_policy else "claims",
         "ocr_chars": len(ocr_text),
-        "incident_coverage": coverage["incident_numbers"]["coverage"],
-        "reference_coverage": coverage["reference_numbers"]["coverage"],
-        "incident_missing": coverage["incident_numbers"]["missing"],
-        "reference_missing": coverage["reference_numbers"]["missing"],
+        "coverage": coverage,
     }
+
+    if is_policy:
+        nonempty = [item for item in coverage.values() if item["total"] > 0]
+        result["overall_coverage"] = (
+            sum(item["coverage"] for item in nonempty) / len(nonempty) if nonempty else 0.0
+        )
+        result["missing_total"] = sum(item["missing"] for item in coverage.values())
+    else:
+        result.update(
+            {
+                "incident_coverage": coverage["incident_numbers"]["coverage"],
+                "reference_coverage": coverage["reference_numbers"]["coverage"],
+                "incident_missing": coverage["incident_numbers"]["missing"],
+                "reference_missing": coverage["reference_numbers"]["missing"],
+                "overall_coverage": min(
+                    coverage["incident_numbers"]["coverage"],
+                    coverage["reference_numbers"]["coverage"],
+                ),
+                "missing_total": (
+                    coverage["incident_numbers"]["missing"]
+                    + coverage["reference_numbers"]["missing"]
+                ),
+            }
+        )
     
     if verbose:
-        result["missing_incident_ids"] = coverage["incident_numbers"]["missing_ids"]
-        result["missing_reference_ids"] = coverage["reference_numbers"]["missing_ids"]
+        if is_policy:
+            result["missing_identifiers"] = {
+                key: value["missing_ids"]
+                for key, value in coverage.items()
+                if value["missing_ids"]
+            }
+        else:
+            result["missing_incident_ids"] = coverage["incident_numbers"]["missing_ids"]
+            result["missing_reference_ids"] = coverage["reference_numbers"]["missing_ids"]
     
     return result
 
@@ -123,8 +205,8 @@ def main():
     parser.add_argument(
         "--claims-dir",
         type=str,
-        default="claims",
-        help="Directory containing claims data (default: claims/)",
+        default=None,
+        help="Dataset directory (default: data/ when present, else benchmarks/claims)",
     )
     parser.add_argument(
         "--sample",
@@ -134,7 +216,7 @@ def main():
     parser.add_argument(
         "--tiers",
         nargs="+",
-        choices=["easy", "medium", "hard", "extreme"],
+        choices=["easy", "medium", "hard", "extreme", "multihop", "mixed"],
         help="Only validate samples whose filename starts with one of these tiers",
     )
     parser.add_argument(
@@ -145,8 +227,7 @@ def main():
     
     args = parser.parse_args()
     
-    script_dir = Path(__file__).parent
-    claims_dir = script_dir / args.claims_dir
+    claims_dir = Path(args.claims_dir) if args.claims_dir else default_dataset_dir()
     
     if not claims_dir.exists():
         print(f"Error: Claims directory not found: {claims_dir}")
@@ -157,8 +238,8 @@ def main():
         samples = [args.sample]
     else:
         # Find all samples with OCR files
-        ocr_files = sorted(claims_dir.glob("*_ocr.md"))
-        samples = [f.stem.replace("_ocr", "") for f in ocr_files]
+        ocr_files = iter_transcript_paths(claims_dir, "ocr")
+        samples = [sample_id_from_transcript_path(claims_dir, f, "ocr") for f in ocr_files]
 
     if args.tiers and not args.sample:
         samples = [
@@ -177,9 +258,7 @@ def main():
     print()
     
     results = []
-    total_claims = 0
-    total_incident_found = 0
-    total_reference_found = 0
+    total_records = 0
     
     for sample in samples:
         result = validate_sample(sample, claims_dir, verbose=args.verbose)
@@ -193,31 +272,39 @@ def main():
         
         results.append(result)
         
-        inc_cov = result["incident_coverage"]
-        ref_cov = result["reference_coverage"]
+        overall_cov = result["overall_coverage"]
         
         # Determine status emoji
-        if inc_cov >= 0.95 and ref_cov >= 0.95:
+        if overall_cov >= 0.95:
             status = "✓"
-        elif inc_cov >= 0.80 and ref_cov >= 0.80:
+        elif overall_cov >= 0.80:
             status = "~"
         else:
             status = "✗"
         
         print(f"{status} {sample}")
-        print(f"    Claims: {result['num_claims']:4d}  |  "
-              f"Incident: {inc_cov:5.1%} ({result['incident_missing']} missing)  |  "
-              f"Reference: {ref_cov:5.1%} ({result['reference_missing']} missing)")
+        if result["record_kind"] == "policy_records":
+            parts = []
+            for key, value in result["coverage"].items():
+                if value["total"] == 0:
+                    continue
+                label = key.replace("_", " ").title()
+                parts.append(f"{label}: {value['coverage']:5.1%} ({value['missing']} missing)")
+            print(f"    Records: {result['num_claims']:4d}  |  " + "  |  ".join(parts))
+        else:
+            print(f"    Claims: {result['num_claims']:4d}  |  "
+                  f"Incident: {result['incident_coverage']:5.1%} ({result['incident_missing']} missing)  |  "
+                  f"Reference: {result['reference_coverage']:5.1%} ({result['reference_missing']} missing)")
         
         if args.verbose and result.get("missing_incident_ids"):
             print(f"    Missing incidents: {', '.join(result['missing_incident_ids'][:5])}")
         if args.verbose and result.get("missing_reference_ids"):
             print(f"    Missing references: {', '.join(result['missing_reference_ids'][:5])}")
+        if args.verbose and result.get("missing_identifiers"):
+            for key, missing in result["missing_identifiers"].items():
+                print(f"    Missing {key}: {', '.join(missing[:5])}")
         
-        total_claims += result["num_claims"]
-        # Approximate found counts
-        total_incident_found += int(inc_cov * result["num_claims"])
-        total_reference_found += int(ref_cov * result["num_claims"])
+        total_records += result["num_claims"]
     
     if results:
         print()
@@ -225,18 +312,16 @@ def main():
         print("SUMMARY")
         print("=" * 70)
         
-        avg_inc = sum(r["incident_coverage"] for r in results) / len(results)
-        avg_ref = sum(r["reference_coverage"] for r in results) / len(results)
+        avg_overall = sum(r["overall_coverage"] for r in results) / len(results)
         
         print(f"Samples validated: {len(results)}")
-        print(f"Total claims: {total_claims}")
-        print(f"Average incident coverage: {avg_inc:.1%}")
-        print(f"Average reference coverage: {avg_ref:.1%}")
+        print(f"Total records: {total_records}")
+        print(f"Average identifier coverage: {avg_overall:.1%}")
         
         # Count by coverage level
-        high = sum(1 for r in results if r["incident_coverage"] >= 0.95)
-        medium = sum(1 for r in results if 0.80 <= r["incident_coverage"] < 0.95)
-        low = sum(1 for r in results if r["incident_coverage"] < 0.80)
+        high = sum(1 for r in results if r["overall_coverage"] >= 0.95)
+        medium = sum(1 for r in results if 0.80 <= r["overall_coverage"] < 0.95)
+        low = sum(1 for r in results if r["overall_coverage"] < 0.80)
         
         print(f"\nCoverage breakdown:")
         print(f"  ≥95%: {high} samples")

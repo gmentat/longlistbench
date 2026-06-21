@@ -1,0 +1,41 @@
+{
+  "id": "hard_50_003_detailed",
+  "difficulty": "hard",
+  "format": "detailed",
+  "num_claims": 55,
+  "pages_estimate": 26,
+  "problems": [
+    "page_breaks",
+    "multi_row",
+    "duplicates",
+    "multi_column",
+    "merged_cells"
+  ],
+  "layout_templates": [
+    "loss_run_schedule",
+    "packet_cover",
+    "spreadsheet_reference",
+    "portal_receipt",
+    "rotated_scan_excerpt"
+  ],
+  "has_duplicates": true,
+  "seed": 7893,
+  "files": {
+    "ground_truth": "ground_truth/hard_50_003_detailed.json",
+    "pdf": "pdfs/hard_50_003_detailed.pdf",
+    "html": "html/hard_50_003_detailed.html",
+    "canonical_md": "transcripts/canonical/hard_50_003_detailed.md",
+    "ocr_md": "transcripts/ocr_gemini/hard_50_003_detailed.md",
+    "json_size_bytes": 63252,
+    "pdf_size_bytes": 417848,
+    "html_size_bytes": 148679,
+    "canonical_size_bytes": 23960,
+    "ocr_size_bytes": 0
+  },
+  "transcripts_available": [
+    "canonical"
+  ],
+  "complexity_regime": "hard",
+  "document_count": 1,
+  "evidence_pattern": "single_document"
+}

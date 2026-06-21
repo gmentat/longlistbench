@@ -13,9 +13,21 @@ if str(_SCRIPT_DIR) not in sys.path:
 
 from models.loss_run import FinancialBreakdown, LossRunIncident
 try:
-    from .evaluation_metrics import evaluate_extraction
+    from .evaluation_metrics import (
+        evaluate_extraction,
+        evaluate_record_extraction,
+        normalize_record_predictions,
+        uses_record_evaluator,
+    )
+    from .dataset_layout import default_dataset_dir, ground_truth_path
 except ImportError:
-    from evaluation_metrics import evaluate_extraction
+    from evaluation_metrics import (
+        evaluate_extraction,
+        evaluate_record_extraction,
+        normalize_record_predictions,
+        uses_record_evaluator,
+    )
+    from dataset_layout import default_dataset_dir, ground_truth_path
 
 
 _LOSS_RUN_FIELDS = set(LossRunIncident.model_fields.keys())
@@ -69,6 +81,18 @@ def _validate_and_normalize_predictions(raw: object) -> list[dict]:
         normalized.append(obj.model_dump(mode="json"))
 
     return normalized
+
+
+def _validate_predictions_for_ground_truth(raw: object, ground_truth: list[dict]) -> list[dict]:
+    if uses_record_evaluator(ground_truth):
+        return normalize_record_predictions(raw)
+    return _validate_and_normalize_predictions(raw)
+
+
+def _evaluate_predictions_for_ground_truth(predicted: list[dict], ground_truth: list[dict]) -> dict[str, Any]:
+    if uses_record_evaluator(ground_truth):
+        return evaluate_record_extraction(predicted, ground_truth)
+    return evaluate_extraction(predicted, ground_truth)
 
 
 def _is_close(a: float, b: float, tol: float) -> bool:
@@ -396,7 +420,7 @@ def main() -> int:
     args = parser.parse_args()
 
     script_dir = Path(__file__).parent
-    claims_dir = Path(args.claims_dir) if args.claims_dir else (script_dir / "claims")
+    claims_dir = Path(args.claims_dir) if args.claims_dir else default_dataset_dir()
     default_results_dir = script_dir / "results" / "scratch"
     if not default_results_dir.exists():
         default_results_dir = script_dir / "results"
@@ -438,20 +462,20 @@ def main() -> int:
             errors.append(f"{sample} [{transcript}] / {model}: missing predicted file {pred_path}")
             continue
 
-        gt_path = claims_dir / f"{sample}.json"
+        gt_path = ground_truth_path(claims_dir, sample)
         if not gt_path.exists():
             errors.append(f"{sample} [{transcript}] / {model}: missing ground truth file {gt_path}")
             continue
 
         predicted_raw = json.loads(pred_path.read_text(encoding="utf-8"))
+        ground_truth = json.loads(gt_path.read_text(encoding="utf-8"))
         try:
-            predicted = _validate_and_normalize_predictions(predicted_raw)
+            predicted = _validate_predictions_for_ground_truth(predicted_raw, ground_truth)
         except Exception as e:
             errors.append(f"{sample} [{transcript}] / {model}: predicted output failed schema validation: {e}")
             continue
-        ground_truth = json.loads(gt_path.read_text(encoding="utf-8"))
 
-        actual_metrics = evaluate_extraction(predicted, ground_truth)
+        actual_metrics = _evaluate_predictions_for_ground_truth(predicted, ground_truth)
         expected_metrics = entry.get("metrics") or {}
 
         errors.extend(

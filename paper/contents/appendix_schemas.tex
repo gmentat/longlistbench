@@ -212,7 +212,7 @@ Both predictions and ground truth are parsed as full \texttt{LossRunIncident} ob
 \end{itemize}
 
 \paragraph{Step 2: Flatten incidents into a multiset of field-value pairs.}
-For each canonicalized incident, we emit a list of triples (\path{incident\_id}, \path{field\_path}, \path{value}). Nested financial fields are represented with dotted paths (e.g., \path{bi.reserve}).
+For each canonicalized incident, we emit a list of triples (\path{incident_id}, \path{field_path}, \path{value}). Nested financial fields are represented with dotted paths (e.g., \path{bi.reserve}).
 
 \paragraph{Step 3: Compare using multiset intersection (supports duplicates).}
 Let $\mathcal{F}(G)$ be the multiset of flattened triples from the ground truth and $\mathcal{F}(P)$ the multiset from predictions. We compute
@@ -222,7 +222,7 @@ Let $\mathcal{F}(G)$ be the multiset of flattened triples from the ground truth 
 \mathrm{precision} &= \frac{\mathrm{found}}{|\mathcal{F}(P)|},\\
 \mathrm{F1} &= \frac{2\,\mathrm{precision}\,\mathrm{recall}}{\mathrm{precision}+\mathrm{recall}}.
 \end{align}
-The multiset formulation means that if a document contains exact duplicate incidents (same normalized \path{incident\_id}), they are counted with multiplicity, and the score only credits matches up to the minimum count in each multiset.
+The multiset formulation means that if a document contains exact duplicate incidents (same normalized \path{incident_id}), they are counted with multiplicity, and the score only credits matches up to the minimum count in each multiset.
 
 \paragraph{Additional diagnostics.}
 We also report:

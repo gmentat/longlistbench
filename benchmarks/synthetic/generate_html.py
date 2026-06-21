@@ -36,6 +36,7 @@ class LossRunHTMLGenerator:
             Faker.seed(seed)
         self.seed = seed
         self.format = format
+        self.last_layout_templates: list[str] = []
 
     @staticmethod
     def _page_break_split_indices(total: int) -> set[int]:
@@ -351,6 +352,146 @@ class LossRunHTMLGenerator:
             margin-left: 20px;
             font-style: italic;
         }}
+        .packet-cover {{
+            page-break-after: always;
+            min-height: 460px;
+            border: 2px solid #111;
+            padding: 26px;
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(180deg, #fff 0%, #f8fafc 100%);
+        }}
+        .packet-kicker {{
+            display: flex;
+            justify-content: space-between;
+            font-size: 7pt;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: #475569;
+            border-bottom: 1px solid #94a3b8;
+            padding-bottom: 6px;
+            margin-bottom: 28px;
+        }}
+        .packet-cover h1 {{
+            font-size: 22pt;
+            margin: 0 0 8px;
+            letter-spacing: -0.02em;
+        }}
+        .packet-grid {{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 14px;
+            margin-top: 24px;
+        }}
+        .packet-field {{
+            border: 1px solid #cbd5e1;
+            padding: 9px;
+            background: #fff;
+        }}
+        .field-label {{
+            color: #64748b;
+            font-size: 6.5pt;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }}
+        .field-value {{
+            font-size: 10pt;
+            font-weight: bold;
+            margin-top: 3px;
+        }}
+        .portal-page {{
+            page-break-after: always;
+            font-family: Arial, Helvetica, sans-serif;
+            display: grid;
+            grid-template-columns: 170px 1fr;
+            gap: 18px;
+            min-height: 430px;
+        }}
+        .portal-sidebar {{
+            border: 1px solid #111827;
+            padding: 10px;
+            font-size: 7pt;
+            background: #f8fafc;
+        }}
+        .portal-main h2 {{
+            margin: 0 0 10px;
+            font-size: 15pt;
+            color: #334155;
+        }}
+        .portal-summary {{
+            width: 100%;
+            border-collapse: collapse;
+            table-layout: fixed;
+            font-size: 7pt;
+        }}
+        .portal-summary th {{
+            background: #e2e8f0;
+            color: #111827;
+        }}
+        .spreadsheet-reference {{
+            page-break-after: always;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 7.3pt;
+            padding-top: 12px;
+        }}
+        .spreadsheet-reference h2 {{
+            font-size: 11pt;
+            margin: 0 0 10px;
+            text-align: center;
+        }}
+        .spreadsheet-reference table {{
+            width: 72%;
+            margin: 0 auto;
+            border-collapse: collapse;
+            table-layout: fixed;
+        }}
+        .spreadsheet-reference th,
+        .spreadsheet-reference td {{
+            border: 0;
+            padding: 2px 6px;
+            text-align: left;
+            font-size: 7pt;
+        }}
+        .spreadsheet-reference th {{
+            color: #111;
+            background: transparent;
+            font-weight: bold;
+        }}
+        .rotated-scan {{
+            page-break-after: always;
+            min-height: 430px;
+            position: relative;
+            font-family: Arial, Helvetica, sans-serif;
+        }}
+        .rotated-sheet {{
+            position: absolute;
+            left: 44%;
+            top: 55%;
+            width: 520px;
+            transform: translate(-50%, -50%) rotate(90deg);
+            transform-origin: center center;
+        }}
+        .rotated-sheet table {{
+            border-collapse: collapse;
+            width: 100%;
+            table-layout: fixed;
+            font-size: 7pt;
+        }}
+        .rotated-sheet th {{
+            background: #f1f5f9;
+            color: #111;
+            font-size: 6.8pt;
+        }}
+        .rotated-sheet td {{
+            font-size: 6.8pt;
+        }}
+        .side-note {{
+            position: absolute;
+            left: 18px;
+            top: 50%;
+            transform: rotate(90deg);
+            color: #64748b;
+            font-size: 7pt;
+        }}
         {column_css}
     </style>
 </head>
@@ -390,6 +531,134 @@ class LossRunHTMLGenerator:
         <div class="header-line"><strong>Account:</strong> {header_info['account_name']}, Acct. # {header_info['account_number']}</div>
         <div class="header-line"><strong>Policy Period:</strong> {header_info['policy_period']} ({header_info['policy_type']})</div>
         <div class="header-line"><strong>Run Date/Time:</strong> {header_info['run_date']}, {header_info['run_time']}</div>
+    </div>
+</div>
+"""
+
+    def _generate_packet_cover(self, header_info: dict, incidents: list[dict], problems: dict) -> str:
+        """Generate a realistic cover/packet page with synthetic metadata."""
+        templates = [k.replace("_", " ") for k, v in problems.items() if v]
+        template_text = ", ".join(templates) if templates else "standard schedule"
+        return f"""
+<div class="packet-cover">
+    <div class="packet-kicker">
+        <span>Commercial auto underwriting packet</span>
+        <span>Generated {header_info['run_date']} {header_info['run_time']}</span>
+    </div>
+    <h1>Loss Run Review Packet</h1>
+    <p>This synthetic packet combines system exports, account summaries, and
+    scanned workpaper-style pages. The claim schedule remains the authoritative
+    target list; other pages provide realistic layout noise.</p>
+    <div class="packet-grid">
+        <div class="packet-field"><div class="field-label">Account</div><div class="field-value">{header_info['account_name']}</div></div>
+        <div class="packet-field"><div class="field-label">Account #</div><div class="field-value">{header_info['account_number']}</div></div>
+        <div class="packet-field"><div class="field-label">Claim rows</div><div class="field-value">{len(incidents)}</div></div>
+        <div class="packet-field"><div class="field-label">Policy period</div><div class="field-value">{header_info['policy_period']}</div></div>
+        <div class="packet-field"><div class="field-label">Source mix</div><div class="field-value">{template_text}</div></div>
+        <div class="packet-field"><div class="field-label">Document type</div><div class="field-value">{self.format.title()} loss run</div></div>
+    </div>
+</div>
+"""
+
+    def _generate_portal_receipt(self, header_info: dict, incidents: list[dict]) -> str:
+        """Generate a portal-style account summary page."""
+        shown = incidents[: min(8, len(incidents))]
+        rows = []
+        for idx, incident in enumerate(shown, 1):
+            rows.append(
+                f"""
+            <tr>
+                <td>{idx}</td>
+                <td>{incident.get('policy_number', '')}</td>
+                <td>{incident.get('loss_state', '')}</td>
+                <td>{incident.get('status', '')}</td>
+                <td>{incident.get('date_reported', '')}</td>
+            </tr>"""
+            )
+        return f"""
+<div class="portal-page">
+    <aside class="portal-sidebar">
+        <strong>Account Portal</strong><br>
+        Login: synthetic-underwriter<br>
+        Account: {header_info['account_number']}<br>
+        Valuation: {header_info['run_date']}<br>
+        Rows staged: {len(incidents)}<br><br>
+        <strong>Navigation</strong><br>
+        Summary<br>
+        Loss History<br>
+        Driver Schedule<br>
+        Documents<br>
+        Export Queue
+    </aside>
+    <main class="portal-main">
+        <h2>Return Summary / Original Export Review</h2>
+        <p>This page imitates a carrier portal printout. It is intentionally
+        sparse and includes only partial account-level information.</p>
+        <table class="portal-summary">
+            <thead><tr><th>#</th><th>Policy</th><th>State</th><th>Status</th><th>Reported</th></tr></thead>
+            <tbody>{''.join(rows)}</tbody>
+        </table>
+        <p style="margin-top: 22px; text-align: right; font-weight: bold;">Pending review queue: {len(incidents)}</p>
+    </main>
+</div>
+"""
+
+    def _vehicle_label(self, incident: dict, idx: int) -> str:
+        unit = incident.get("unit_number")
+        if unit:
+            return str(unit).split()[-1]
+        return str(8000 + idx)
+
+    def _generate_spreadsheet_reference(self, incidents: list[dict]) -> str:
+        """Generate a sparse spreadsheet-like schedule."""
+        makes = ["Freightliner", "Kenworth", "Peterbilt", "Volvo", "Mack", "Utility", "Great Dane"]
+        body_types = ["TRACTOR", "TRAILER", "TRUCK", "REEFER", "FLATBED"]
+        rows = []
+        for idx, incident in enumerate(incidents[: min(34, len(incidents))], 1):
+            rows.append(
+                f"""
+            <tr>
+                <td>{self._vehicle_label(incident, idx)}</td>
+                <td>{incident.get('reference_number', '') if idx % 4 == 0 else ''}</td>
+                <td>{2012 + (idx % 13)}</td>
+                <td>{makes[idx % len(makes)]}</td>
+                <td>{body_types[idx % len(body_types)]}</td>
+                <td>{incident.get('policy_state', '')}</td>
+            </tr>"""
+            )
+        return f"""
+<div class="spreadsheet-reference">
+    <h2>Vehicle / Unit Reference Export</h2>
+    <table>
+        <thead><tr><th>Veh #</th><th>Company vehicle #</th><th>Year</th><th>Make</th><th>Body Type</th><th>State</th></tr></thead>
+        <tbody>{''.join(rows)}</tbody>
+    </table>
+</div>
+"""
+
+    def _generate_rotated_scan_excerpt(self, incidents: list[dict]) -> str:
+        """Generate a sideways schedule to mimic rotated scans."""
+        rows = []
+        for idx, incident in enumerate(incidents[: min(10, len(incidents))], 1):
+            rows.append(
+                f"""
+            <tr>
+                <td>{incident.get('driver_name') or 'Driver Pending'}</td>
+                <td>{incident.get('date_of_loss', '')}</td>
+                <td>{incident.get('reference_number', '')}</td>
+                <td>{incident.get('loss_state', '')}</td>
+                <td>{self._vehicle_label(incident, idx)}</td>
+            </tr>"""
+            )
+        return f"""
+<div class="rotated-scan">
+    <div class="side-note">Broker packet scan - rotated source page</div>
+    <div class="rotated-sheet">
+        <h2 style="font-size: 11pt; text-align: center;">Driver Schedule</h2>
+        <table>
+            <thead><tr><th>Name</th><th>Date of Loss</th><th>Reference</th><th>State</th><th>Unit</th></tr></thead>
+            <tbody>{''.join(rows)}</tbody>
+        </table>
     </div>
 </div>
 """
@@ -762,6 +1031,7 @@ class LossRunHTMLGenerator:
         """Generate complete loss run HTML document."""
         if problems is None:
             problems = {}
+        self.last_layout_templates = ["loss_run_schedule"]
         
         # Generate header info
         header_info = self._generate_header_info(incidents)
@@ -769,13 +1039,28 @@ class LossRunHTMLGenerator:
         # Start HTML
         title = f"{header_info['account_name']} - Loss Run"
         html = self._html_header(title, use_columns=problems.get("multi_column", False))
-        
-        # Problem 6: Multi-column layout
-        if problems.get("multi_column", False):
-            html += '<div class="content-wrapper">\n'
+
+        html += self._generate_packet_cover(header_info, incidents, problems)
+        self.last_layout_templates.append("packet_cover")
         
         # Document header
         html += self._generate_document_header(header_info)
+
+        if self.format == "table" or len(incidents) >= 25:
+            html += self._generate_spreadsheet_reference(incidents)
+            self.last_layout_templates.append("spreadsheet_reference")
+
+        if problems.get("multiple_tables", False) or len(incidents) >= 50:
+            html += self._generate_portal_receipt(header_info, incidents)
+            self.last_layout_templates.append("portal_receipt")
+
+        if problems.get("multi_column", False) or len(incidents) >= 50:
+            html += self._generate_rotated_scan_excerpt(incidents)
+            self.last_layout_templates.append("rotated_scan_excerpt")
+
+        # Problem 6: Multi-column layout
+        if problems.get("multi_column", False):
+            html += '<div class="content-wrapper">\n'
         
         # Problem 5: Add irrelevant content
         if problems.get("multiple_tables", False):
