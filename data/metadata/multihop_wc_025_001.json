@@ -1,0 +1,190 @@
+{
+  "id": "multihop_wc_025_001",
+  "difficulty": "multihop",
+  "complexity_regime": "policy_multi_hop",
+  "format": "crosspage",
+  "domain": "policy_review",
+  "lob": "WC",
+  "target_record_type": "policy_packet_item",
+  "target_record_types": [
+    "policy_endorsement_item",
+    "policy_form_item",
+    "policy_location_item",
+    "policy_premium_item",
+    "wc_class_code_item"
+  ],
+  "primary_target_record_type": "wc_class_code_item",
+  "schema_fields": [
+    "annual_payroll",
+    "class_code",
+    "classification",
+    "edition_date",
+    "endorsement_effective_date",
+    "endorsement_number",
+    "estimated_premium",
+    "experience_mod",
+    "form_number",
+    "form_title",
+    "governing_class",
+    "item_id",
+    "lob",
+    "location_number",
+    "manual_rate",
+    "materiality",
+    "named_insured",
+    "policy_number",
+    "policy_period",
+    "premium",
+    "premium_basis",
+    "record_type",
+    "schedule_credit_debit",
+    "schedule_source",
+    "state"
+  ],
+  "num_claims": 113,
+  "num_policy_items": 113,
+  "num_primary_policy_items": 25,
+  "num_target_records": 113,
+  "pages_estimate": 140,
+  "pdf_page_count": 140,
+  "document_count": 1,
+  "evidence_pattern": "single_document_policy_packet_long_range_join",
+  "minimum_gap_pages_between_primary_and_last_evidence": 116,
+  "problems": [
+    "workers_compensation_policy",
+    "class_code_payroll_rating",
+    "experience_mod_and_schedule_rating",
+    "long_range_evidence",
+    "heterogeneous_record_list"
+  ],
+  "layout_templates": [
+    "declarations",
+    "locations_or_classifications",
+    "coverage_or_limit_schedule",
+    "rating_schedule",
+    "forms_schedule",
+    "endorsement_detail",
+    "premium_summary",
+    "policy_conditions"
+  ],
+  "record_collections": {
+    "policy_endorsement_item": 13,
+    "policy_form_item": 25,
+    "policy_location_item": 25,
+    "policy_premium_item": 25,
+    "wc_class_code_item": 25
+  },
+  "synthetic_text": {
+    "source": "synthetic",
+    "real_documents_used_for": "structural reference only",
+    "copied_source_text": false,
+    "text_generation": {
+      "generator": "gemini",
+      "model": "gemini-2.5-flash",
+      "prompt_files": [
+        "policy_writer_system.md",
+        "policy_page_bank.md",
+        "wc_examples.md"
+      ],
+      "page_kinds": {
+        "policy_form": 5,
+        "notice": 2,
+        "amendatory": 2,
+        "billing": 2,
+        "endorsement": 4
+      }
+    }
+  },
+  "has_duplicates": false,
+  "seed": 195680388151197,
+  "join_requirements": [
+    "class_code_item_id -> workers compensation information page",
+    "state/class_code -> classification schedule",
+    "state/class_code -> payroll and rate schedule",
+    "form_number -> forms and endorsements schedule",
+    "endorsement_number -> owner/officer or waiver detail pages",
+    "class_code_item_id -> premium summary"
+  ],
+  "evidence_map": [
+    {
+      "section": "workers_comp_information_page",
+      "approx_page_after_cover": 1,
+      "join_key": "policy_number",
+      "fields": [
+        "named_insured",
+        "policy_period"
+      ]
+    },
+    {
+      "section": "classification_schedule",
+      "approx_page_after_cover": 41,
+      "join_key": "state/class_code",
+      "fields": [
+        "classification",
+        "governing_class"
+      ]
+    },
+    {
+      "section": "payroll_and_rate_schedule",
+      "approx_page_after_cover": 42,
+      "join_key": "class_code_item_id",
+      "fields": [
+        "annual_payroll",
+        "manual_rate",
+        "estimated_premium"
+      ]
+    },
+    {
+      "section": "experience_modification_summary",
+      "approx_page_after_cover": 43,
+      "join_key": "policy_number",
+      "fields": [
+        "experience_mod",
+        "schedule_credit_debit"
+      ]
+    },
+    {
+      "section": "forms_and_endorsements_schedule",
+      "approx_page_after_cover": 74,
+      "join_key": "form_number",
+      "fields": [
+        "form_title",
+        "edition_date"
+      ]
+    },
+    {
+      "section": "endorsement_detail_pages",
+      "approx_page_after_cover": 101,
+      "join_key": "endorsement_number",
+      "fields": [
+        "endorsement_effective_date",
+        "materiality"
+      ]
+    },
+    {
+      "section": "premium_summary",
+      "approx_page_after_cover": 124,
+      "join_key": "item_id",
+      "fields": [
+        "premium",
+        "estimated_premium"
+      ]
+    }
+  ],
+  "files": {
+    "ground_truth": "ground_truth/multihop_wc_025_001.json",
+    "pdf": "pdfs/multihop_wc_025_001.pdf",
+    "html": "html/multihop_wc_025_001.html",
+    "canonical_md": "transcripts/canonical/multihop_wc_025_001.md",
+    "ocr_md": "transcripts/ocr_gemini/multihop_wc_025_001.md",
+    "json_size_bytes": 62051,
+    "pdf_size_bytes": 1023003,
+    "html_size_bytes": 529449,
+    "canonical_size_bytes": 372754,
+    "ocr_size_bytes": 509607
+  },
+  "transcripts_available": [
+    "canonical",
+    "ocr"
+  ]
+}

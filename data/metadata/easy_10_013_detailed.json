@@ -1,0 +1,35 @@
+{
+  "id": "easy_10_013_detailed",
+  "difficulty": "easy",
+  "format": "detailed",
+  "num_claims": 10,
+  "pages_estimate": 9,
+  "problems": [
+    "multi_row",
+    "page_breaks"
+  ],
+  "layout_templates": [
+    "loss_run_schedule",
+    "packet_cover"
+  ],
+  "has_duplicates": false,
+  "seed": 3746,
+  "files": {
+    "ground_truth": "ground_truth/easy_10_013_detailed.json",
+    "pdf": "pdfs/easy_10_013_detailed.pdf",
+    "html": "html/easy_10_013_detailed.html",
+    "canonical_md": "transcripts/canonical/easy_10_013_detailed.md",
+    "ocr_md": "transcripts/ocr_gemini/easy_10_013_detailed.md",
+    "json_size_bytes": 11912,
+    "pdf_size_bytes": 221809,
+    "html_size_bytes": 34678,
+    "canonical_size_bytes": 6504,
+    "ocr_size_bytes": 0
+  },
+  "transcripts_available": [
+    "canonical"
+  ],
+  "complexity_regime": "easy",
+  "document_count": 1,
+  "evidence_pattern": "single_document"
+}

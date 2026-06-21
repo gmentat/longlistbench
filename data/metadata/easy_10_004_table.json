@@ -1,0 +1,35 @@
+{
+  "id": "easy_10_004_table",
+  "difficulty": "easy",
+  "format": "table",
+  "num_claims": 11,
+  "pages_estimate": 10,
+  "problems": [
+    "duplicates"
+  ],
+  "layout_templates": [
+    "loss_run_schedule",
+    "packet_cover",
+    "spreadsheet_reference"
+  ],
+  "has_duplicates": true,
+  "seed": 8327,
+  "files": {
+    "ground_truth": "ground_truth/easy_10_004_table.json",
+    "pdf": "pdfs/easy_10_004_table.pdf",
+    "html": "html/easy_10_004_table.html",
+    "canonical_md": "transcripts/canonical/easy_10_004_table.md",
+    "ocr_md": "transcripts/ocr_gemini/easy_10_004_table.md",
+    "json_size_bytes": 12682,
+    "pdf_size_bytes": 268861,
+    "html_size_bytes": 27792,
+    "canonical_size_bytes": 10513,
+    "ocr_size_bytes": 0
+  },
+  "transcripts_available": [
+    "canonical"
+  ],
+  "complexity_regime": "easy",
+  "document_count": 1,
+  "evidence_pattern": "single_document"
+}

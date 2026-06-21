@@ -1,0 +1,215 @@
+{
+  "$defs": {
+    "FinancialBreakdown": {
+      "description": "Financial breakdown by loss category.",
+      "properties": {
+        "reserve": {
+          "default": 0.0,
+          "description": "Amount reserved for potential payout",
+          "title": "Reserve",
+          "type": "number"
+        },
+        "paid": {
+          "default": 0.0,
+          "description": "Amount already paid",
+          "title": "Paid",
+          "type": "number"
+        },
+        "recovered": {
+          "default": 0.0,
+          "description": "Amount recovered (e.g., deductible)",
+          "title": "Recovered",
+          "type": "number"
+        },
+        "total_incurred": {
+          "default": 0.0,
+          "description": "Reserve + Paid - Recovered",
+          "title": "Total Incurred",
+          "type": "number"
+        }
+      },
+      "title": "FinancialBreakdown",
+      "type": "object"
+    }
+  },
+  "description": "Trucking insurance loss run incident record.",
+  "properties": {
+    "incident_number": {
+      "description": "Incident number (e.g., #12345)",
+      "title": "Incident Number",
+      "type": "string"
+    },
+    "reference_number": {
+      "description": "Reference ID (e.g., L240123)",
+      "title": "Reference Number",
+      "type": "string"
+    },
+    "company_name": {
+      "description": "Trucking company name",
+      "title": "Company Name",
+      "type": "string"
+    },
+    "division": {
+      "default": "General",
+      "description": "Company division",
+      "title": "Division",
+      "type": "string"
+    },
+    "coverage_type": {
+      "description": "Coverage type (Liability, Physical Damage, Inland Marine, Cargo)",
+      "title": "Coverage Type",
+      "type": "string"
+    },
+    "status": {
+      "description": "Open or Closed",
+      "title": "Status",
+      "type": "string"
+    },
+    "policy_number": {
+      "description": "Policy identifier",
+      "title": "Policy Number",
+      "type": "string"
+    },
+    "policy_state": {
+      "description": "Policy state abbreviation",
+      "title": "Policy State",
+      "type": "string"
+    },
+    "cause_code": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Internal cause code",
+      "title": "Cause Code"
+    },
+    "description": {
+      "description": "Detailed incident description",
+      "title": "Description",
+      "type": "string"
+    },
+    "handler": {
+      "default": "Claims Adjuster",
+      "description": "Claims handler",
+      "title": "Handler",
+      "type": "string"
+    },
+    "unit_number": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Vehicle/truck unit ID",
+      "title": "Unit Number"
+    },
+    "date_of_loss": {
+      "description": "Date incident occurred",
+      "title": "Date Of Loss",
+      "type": "string"
+    },
+    "loss_state": {
+      "description": "State where loss occurred",
+      "title": "Loss State",
+      "type": "string"
+    },
+    "date_reported": {
+      "description": "Date reported to insurance",
+      "title": "Date Reported",
+      "type": "string"
+    },
+    "agency": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Insurance agency name",
+      "title": "Agency"
+    },
+    "insured": {
+      "description": "Insured party name",
+      "title": "Insured",
+      "type": "string"
+    },
+    "claimants": {
+      "description": "List of claimants",
+      "items": {
+        "type": "string"
+      },
+      "title": "Claimants",
+      "type": "array"
+    },
+    "driver_name": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Driver name at time of incident",
+      "title": "Driver Name"
+    },
+    "bi": {
+      "$ref": "#/$defs/FinancialBreakdown",
+      "description": "Bodily Injury"
+    },
+    "pd": {
+      "$ref": "#/$defs/FinancialBreakdown",
+      "description": "Property Damage"
+    },
+    "lae": {
+      "$ref": "#/$defs/FinancialBreakdown",
+      "description": "Loss Adjustment Expense"
+    },
+    "ded": {
+      "$ref": "#/$defs/FinancialBreakdown",
+      "description": "Deductible"
+    },
+    "adjuster_notes": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Additional adjuster notes",
+      "title": "Adjuster Notes"
+    }
+  },
+  "required": [
+    "incident_number",
+    "reference_number",
+    "company_name",
+    "coverage_type",
+    "status",
+    "policy_number",
+    "policy_state",
+    "description",
+    "date_of_loss",
+    "loss_state",
+    "date_reported",
+    "insured"
+  ],
+  "title": "LossRunIncident",
+  "type": "object"
+}

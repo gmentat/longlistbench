@@ -6,7 +6,7 @@ import argparse
 import csv
 from html import escape
 import json
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 from urllib.parse import quote
@@ -15,6 +15,11 @@ try:
     from pdf2image import pdfinfo_from_path
 except ImportError:
     pdfinfo_from_path = None
+
+try:
+    from .dataset_layout import artifact_path, default_dataset_dir, manifest_path, target_record_count
+except ImportError:
+    from dataset_layout import artifact_path, default_dataset_dir, manifest_path, target_record_count
 
 
 def _get_pdf_page_count(pdf_path: Path) -> int | None:
@@ -60,7 +65,7 @@ def build_instance_index(dataset_dir: Path) -> dict[str, Any]:
             - total_instances: Count of instances in the index
             - instances: List of instance dictionaries with file info and metadata
     """
-    metadata_path = dataset_dir / "metadata.json"
+    metadata_path = manifest_path(dataset_dir)
     metadata = json.loads(metadata_path.read_text(encoding="utf-8"))
 
     out_instances: list[dict[str, Any]] = []
@@ -70,27 +75,32 @@ def build_instance_index(dataset_dir: Path) -> dict[str, Any]:
         if not instance_id:
             continue
 
-        pdf_path = dataset_dir / f"{instance_id}.pdf"
-        html_path = dataset_dir / f"{instance_id}.html"
-        json_path = dataset_dir / f"{instance_id}.json"
-        ocr_md_path = dataset_dir / f"{instance_id}_ocr.md"
-        canonical_md_path = dataset_dir / f"{instance_id}_canonical.md"
+        pdf_path = artifact_path(dataset_dir, instance_id, "pdf")
+        html_path = artifact_path(dataset_dir, instance_id, "html")
+        json_path = artifact_path(dataset_dir, instance_id, "ground_truth")
+        ocr_md_path = artifact_path(dataset_dir, instance_id, "ocr")
+        canonical_md_path = artifact_path(dataset_dir, instance_id, "canonical")
 
         out_instances.append(
             {
                 "id": instance_id,
                 "difficulty": inst.get("difficulty"),
                 "format": inst.get("format"),
+                "domain": inst.get("domain", "claims"),
+                "lob": inst.get("lob"),
+                "target_record_type": inst.get("target_record_type", "loss_run_incident"),
                 "problems": inst.get("problems", []),
                 "num_claims": inst.get("num_claims"),
+                "num_policy_items": inst.get("num_policy_items"),
+                "num_target_records": inst.get("num_target_records", target_record_count(inst)),
                 "pages_estimate": inst.get("pages_estimate"),
                 "seed": inst.get("seed"),
                 "files": {
-                    "pdf": str(pdf_path.name),
-                    "html": str(html_path.name),
-                    "ground_truth": str(json_path.name),
-                    "canonical_md": str(canonical_md_path.name),
-                    "ocr_md": str(ocr_md_path.name),
+                    "pdf": str(pdf_path.relative_to(dataset_dir)),
+                    "html": str(html_path.relative_to(dataset_dir)),
+                    "ground_truth": str(json_path.relative_to(dataset_dir)),
+                    "canonical_md": str(canonical_md_path.relative_to(dataset_dir)),
+                    "ocr_md": str(ocr_md_path.relative_to(dataset_dir)),
                     "pdf_exists": pdf_path.exists(),
                     "html_exists": html_path.exists(),
                     "ground_truth_exists": json_path.exists(),
@@ -108,7 +118,7 @@ def build_instance_index(dataset_dir: Path) -> dict[str, Any]:
         )
 
     return {
-        "built_at": datetime.now().isoformat(),
+        "built_at": datetime.now(timezone.utc).isoformat(),
         "dataset_dir": str(dataset_dir),
         "source_metadata": str(metadata_path.name),
         "total_instances": len(out_instances),
@@ -131,7 +141,12 @@ def write_csv(index: dict[str, Any], csv_path: Path) -> None:
                 "id": inst.get("id"),
                 "difficulty": inst.get("difficulty"),
                 "format": inst.get("format"),
+                "domain": inst.get("domain"),
+                "lob": inst.get("lob"),
+                "target_record_type": inst.get("target_record_type"),
                 "num_claims": inst.get("num_claims"),
+                "num_policy_items": inst.get("num_policy_items"),
+                "num_target_records": inst.get("num_target_records"),
                 "pages_estimate": inst.get("pages_estimate"),
                 "pdf_pages": files.get("pdf_pages"),
                 "transcripts_available": ";".join(inst.get("transcripts_available", [])),
@@ -148,7 +163,12 @@ def write_csv(index: dict[str, Any], csv_path: Path) -> None:
         "id",
         "difficulty",
         "format",
+        "domain",
+        "lob",
+        "target_record_type",
         "num_claims",
+        "num_policy_items",
+        "num_target_records",
         "pages_estimate",
         "pdf_pages",
         "transcripts_available",
@@ -161,7 +181,7 @@ def write_csv(index: dict[str, Any], csv_path: Path) -> None:
     ]
 
     with csv_path.open("w", encoding="utf-8", newline="") as f:
-        writer = csv.DictWriter(f, fieldnames=fieldnames)
+        writer = csv.DictWriter(f, fieldnames=fieldnames, lineterminator="\n")
         writer.writeheader()
         writer.writerows(rows)
 
@@ -207,6 +227,7 @@ def write_html(index: dict[str, Any], html_path: Path) -> None:
 
         pdf_pages = files.get("pdf_pages")
         pdf_pages_str = "" if pdf_pages is None else str(pdf_pages)
+        target_count = inst.get("num_policy_items") or inst.get("num_claims") or ""
 
         rows_html.append(
             "\n".join(
@@ -215,7 +236,10 @@ def write_html(index: dict[str, Any], html_path: Path) -> None:
                     f"  <td class=\"mono\">{escape(inst_id)}</td>",
                     f"  <td>{escape(str(inst.get('difficulty') or ''))}</td>",
                     f"  <td>{escape(str(inst.get('format') or ''))}</td>",
-                    f"  <td class=\"num\">{escape(str(inst.get('num_claims') or ''))}</td>",
+                    f"  <td>{escape(str(inst.get('domain') or 'claims'))}</td>",
+                    f"  <td>{escape(str(inst.get('lob') or ''))}</td>",
+                    f"  <td>{escape(str(inst.get('target_record_type') or 'loss_run_incident'))}</td>",
+                    f"  <td class=\"num\">{escape(str(target_count))}</td>",
                     f"  <td class=\"num\">{escape(str(inst.get('pages_estimate') or ''))}</td>",
                     f"  <td class=\"num\">{escape(pdf_pages_str)}</td>",
                     f"  <td>{escape(problems_str)}</td>",
@@ -393,7 +417,10 @@ def write_html(index: dict[str, Any], html_path: Path) -> None:
             <th data-type=\"text\">id</th>
             <th data-type=\"text\">tier</th>
             <th data-type=\"text\">format</th>
-            <th data-type=\"num\" class=\"num\">claims</th>
+            <th data-type=\"text\">domain</th>
+            <th data-type=\"text\">lob</th>
+            <th data-type=\"text\">record type</th>
+            <th data-type=\"num\" class=\"num\">records</th>
             <th data-type=\"num\" class=\"num\">est. pages</th>
             <th data-type=\"num\" class=\"num\">pdf pages</th>
             <th data-type=\"text\">problems</th>
@@ -472,8 +499,8 @@ def main() -> None:
     parser.add_argument(
         "--input",
         type=str,
-        default=str(Path(__file__).parent / "claims"),
-        help="Dataset directory containing metadata.json (default: benchmarks/claims)",
+        default=str(default_dataset_dir()),
+        help="Dataset directory containing manifest.json or metadata.json (default: data/ when present, else benchmarks/claims)",
     )
     parser.add_argument(
         "--json-out",
@@ -500,9 +527,9 @@ def main() -> None:
     if not dataset_dir.is_absolute():
         dataset_dir = (Path.cwd() / dataset_dir).resolve()
 
-    metadata_path = dataset_dir / "metadata.json"
+    metadata_path = manifest_path(dataset_dir)
     if not metadata_path.exists():
-        raise SystemExit(f"metadata.json not found in: {dataset_dir}")
+        raise SystemExit(f"manifest.json or metadata.json not found in: {dataset_dir}")
 
     index = build_instance_index(dataset_dir=dataset_dir)
 

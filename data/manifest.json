@@ -1,0 +1,4049 @@
+{
+  "dataset_name": "longlistbench-v1",
+  "version": "1.0.0",
+  "description": "Benchmark for long-list entity extraction under layout, OCR, scale, and long-range cross-page evidence complexity.",
+  "generated_at": "2026-06-20T16:42:37.729590+00:00",
+  "base_seed": 42,
+  "total_instances": 86,
+  "total_claims": 6905,
+  "schema_version": "1.0",
+  "transcript_conditions": [
+    "canonical",
+    "ocr"
+  ],
+  "difficulty_tiers": {
+    "easy": {
+      "seed_claims_per_pdf": 10,
+      "num_instances": 15,
+      "total_claims": 312,
+      "min_claims_per_document": 10,
+      "max_claims_per_document": 11
+    },
+    "medium": {
+      "seed_claims_per_pdf": 25,
+      "num_instances": 12,
+      "total_claims": 636,
+      "min_claims_per_document": 25,
+      "max_claims_per_document": 27
+    },
+    "hard": {
+      "seed_claims_per_pdf": 50,
+      "num_instances": 8,
+      "total_claims": 880,
+      "min_claims_per_document": 55,
+      "max_claims_per_document": 55
+    },
+    "extreme": {
+      "seed_claims_per_pdf": 100,
+      "num_instances": 5,
+      "total_claims": 5000,
+      "min_claims_per_document": 500,
+      "max_claims_per_document": 500
+    }
+  },
+  "instances": [
+    {
+      "id": "easy_10_001_detailed",
+      "difficulty": "easy",
+      "format": "detailed",
+      "num_claims": 10,
+      "pages_estimate": 9,
+      "problems": [
+        "multi_row"
+      ],
+      "layout_templates": [
+        "loss_run_schedule",
+        "packet_cover"
+      ],
+      "has_duplicates": false,
+      "seed": 3965,
+      "files": {
+        "ground_truth": "ground_truth/easy_10_001_detailed.json",
+        "pdf": "pdfs/easy_10_001_detailed.pdf",
+        "html": "html/easy_10_001_detailed.html",
+        "canonical_md": "transcripts/canonical/easy_10_001_detailed.md",
+        "ocr_md": "transcripts/ocr_gemini/easy_10_001_detailed.md",
+        "json_size_bytes": 11650,
+        "pdf_size_bytes": 221572,
+        "html_size_bytes": 34252,
+        "canonical_size_bytes": 6306,
+        "ocr_size_bytes": 0
+      },
+      "transcripts_available": [
+        "canonical"
+      ],
+      "complexity_regime": "easy",
+      "document_count": 1,
+      "evidence_pattern": "single_document"
+    },
+    {
+      "id": "easy_10_001_table",
+      "difficulty": "easy",
+      "format": "table",
+      "num_claims": 10,
+      "pages_estimate": 9,
+      "problems": [
+        "multi_row"
+      ],
+      "layout_templates": [
+        "loss_run_schedule",
+        "packet_cover",
+        "spreadsheet_reference"
+      ],
+      "has_duplicates": false,
+      "seed": 6452,
+      "files": {
+        "ground_truth": "ground_truth/easy_10_001_table.json",
+        "pdf": "pdfs/easy_10_001_table.pdf",
+        "html": "html/easy_10_001_table.html",
+        "canonical_md": "transcripts/canonical/easy_10_001_table.md",
+        "ocr_md": "transcripts/ocr_gemini/easy_10_001_table.md",
+        "json_size_bytes": 11607,
+        "pdf_size_bytes": 269305,
+        "html_size_bytes": 26547,
+        "canonical_size_bytes": 9712,
+        "ocr_size_bytes": 0
+      },
+      "transcripts_available": [
+        "canonical"
+      ],
+      "complexity_regime": "easy",
+      "document_count": 1,
+      "evidence_pattern": "single_document"
+    },
+    {
+      "id": "easy_10_002_detailed",
+      "difficulty": "easy",
+      "format": "detailed",
+      "num_claims": 10,
+      "pages_estimate": 8,
+      "problems": [
+        "page_breaks"
+      ],
+      "layout_templates": [
+        "loss_run_schedule",
+        "packet_cover"
+      ],
+      "has_duplicates": false,
+      "seed": 8966,
+      "files": {
+        "ground_truth": "ground_truth/easy_10_002_detailed.json",
+        "pdf": "pdfs/easy_10_002_detailed.pdf",
+        "html": "html/easy_10_002_detailed.html",
+        "canonical_md": "transcripts/canonical/easy_10_002_detailed.md",
+        "ocr_md": "transcripts/ocr_gemini/easy_10_002_detailed.md",
+        "json_size_bytes": 11644,
+        "pdf_size_bytes": 216336,
+        "html_size_bytes": 34050,
+        "canonical_size_bytes": 6284,
+        "ocr_size_bytes": 0
+      },
+      "transcripts_available": [
+        "canonical"
+      ],
+      "complexity_regime": "easy",
+      "document_count": 1,
+      "evidence_pattern": "single_document"
+    },
+    {
+      "id": "easy_10_002_table",
+      "difficulty": "easy",
+      "format": "table",
+      "num_claims": 10,
+      "pages_estimate": 10,
+      "problems": [
+        "page_breaks"
+      ],
+      "layout_templates": [
+        "loss_run_schedule",
+        "packet_cover",
+        "spreadsheet_reference"
+      ],
+      "has_duplicates": false,
+      "seed": 2671,
+      "files": {
+        "ground_truth": "ground_truth/easy_10_002_table.json",
+        "pdf": "pdfs/easy_10_002_table.pdf",
+        "html": "html/easy_10_002_table.html",
+        "canonical_md": "transcripts/canonical/easy_10_002_table.md",
+        "ocr_md": "transcripts/ocr_gemini/easy_10_002_table.md",
+        "json_size_bytes": 11634,
+        "pdf_size_bytes": 269139,
+        "html_size_bytes": 27691,
+        "canonical_size_bytes": 9946,
+        "ocr_size_bytes": 0
+      },
+      "transcripts_available": [
+        "canonical"
+      ],
+      "complexity_regime": "easy",
+      "document_count": 1,
+      "evidence_pattern": "single_document"
+    },
+    {
+      "id": "easy_10_003_detailed",
+      "difficulty": "easy",
+      "format": "detailed",
+      "num_claims": 10,
+      "pages_estimate": 9,
+      "problems": [
+        "multi_row",
+        "page_breaks"
+      ],
+      "layout_templates": [
+        "loss_run_schedule",
+        "packet_cover"
+      ],
+      "has_duplicates": false,
+      "seed": 1370,
+      "files": {
+        "ground_truth": "ground_truth/easy_10_003_detailed.json",
+        "pdf": "pdfs/easy_10_003_detailed.pdf",
+        "html": "html/easy_10_003_detailed.html",
+        "canonical_md": "transcripts/canonical/easy_10_003_detailed.md",
+        "ocr_md": "transcripts/ocr_gemini/easy_10_003_detailed.md",
+        "json_size_bytes": 11617,
+        "pdf_size_bytes": 219555,
+        "html_size_bytes": 33886,
+        "canonical_size_bytes": 6247,
+        "ocr_size_bytes": 0
+      },
+      "transcripts_available": [
+        "canonical"
+      ],
+      "complexity_regime": "easy",
+      "document_count": 1,
+      "evidence_pattern": "single_document"
+    },
+    {
+      "id": "easy_10_003_table",
+      "difficulty": "easy",
+      "format": "table",
+      "num_claims": 10,
+      "pages_estimate": 10,
+      "problems": [
+        "multi_row",
+        "page_breaks"
+      ],
+      "layout_templates": [
+        "loss_run_schedule",
+        "packet_cover",
+        "spreadsheet_reference"
+      ],
+      "has_duplicates": false,
+      "seed": 9909,
+      "files": {
+        "ground_truth": "ground_truth/easy_10_003_table.json",
+        "pdf": "pdfs/easy_10_003_table.pdf",
+        "html": "html/easy_10_003_table.html",
+        "canonical_md": "transcripts/canonical/easy_10_003_table.md",
+        "ocr_md": "transcripts/ocr_gemini/easy_10_003_table.md",
+        "json_size_bytes": 11694,
+        "pdf_size_bytes": 271398,
+        "html_size_bytes": 27760,
+        "canonical_size_bytes": 10014,
+        "ocr_size_bytes": 0
+      },
+      "transcripts_available": [
+        "canonical"
+      ],
+      "complexity_regime": "easy",
+      "document_count": 1,
+      "evidence_pattern": "single_document"
+    },
+    {
+      "id": "easy_10_004_detailed",
+      "difficulty": "easy",
+      "format": "detailed",
+      "num_claims": 11,
+      "pages_estimate": 8,
+      "problems": [
+        "duplicates"
+      ],
+      "layout_templates": [
+        "loss_run_schedule",
+        "packet_cover"
+      ],
+      "has_duplicates": true,
+      "seed": 1027,
+      "files": {
+        "ground_truth": "ground_truth/easy_10_004_detailed.json",
+        "pdf": "pdfs/easy_10_004_detailed.pdf",
+        "html": "html/easy_10_004_detailed.html",
+        "canonical_md": "transcripts/canonical/easy_10_004_detailed.md",
+        "ocr_md": "transcripts/ocr_gemini/easy_10_004_detailed.md",
+        "json_size_bytes": 12967,
+        "pdf_size_bytes": 218781,
+        "html_size_bytes": 36960,
+        "canonical_size_bytes": 7046,
+        "ocr_size_bytes": 0
+      },
+      "transcripts_available": [
+        "canonical"
+      ],
+      "complexity_regime": "easy",
+      "document_count": 1,
+      "evidence_pattern": "single_document"
+    },
+    {
+      "id": "easy_10_004_table",
+      "difficulty": "easy",
+      "format": "table",
+      "num_claims": 11,
+      "pages_estimate": 10,
+      "problems": [
+        "duplicates"
+      ],
+      "layout_templates": [
+        "loss_run_schedule",
+        "packet_cover",
+        "spreadsheet_reference"
+      ],
+      "has_duplicates": true,
+      "seed": 8327,
+      "files": {
+        "ground_truth": "ground_truth/easy_10_004_table.json",
+        "pdf": "pdfs/easy_10_004_table.pdf",
+        "html": "html/easy_10_004_table.html",
+        "canonical_md": "transcripts/canonical/easy_10_004_table.md",
+        "ocr_md": "transcripts/ocr_gemini/easy_10_004_table.md",
+        "json_size_bytes": 12682,
+        "pdf_size_bytes": 268861,
+        "html_size_bytes": 27792,
+        "canonical_size_bytes": 10513,
+        "ocr_size_bytes": 0
+      },
+      "transcripts_available": [
+        "canonical"
+      ],
+      "complexity_regime": "easy",
+      "document_count": 1,
+      "evidence_pattern": "single_document"
+    },
+    {
+      "id": "easy_10_005_detailed",
+      "difficulty": "easy",
+      "format": "detailed",
+      "num_claims": 11,
+      "pages_estimate": 8,
+      "problems": [
+        "multi_row",
+        "duplicates"
+      ],
+      "layout_templates": [
+        "loss_run_schedule",
+        "packet_cover"
+      ],
+      "has_duplicates": true,
+      "seed": 992,
+      "files": {
+        "ground_truth": "ground_truth/easy_10_005_detailed.json",
+        "pdf": "pdfs/easy_10_005_detailed.pdf",
+        "html": "html/easy_10_005_detailed.html",
+        "canonical_md": "transcripts/canonical/easy_10_005_detailed.md",
+        "ocr_md": "transcripts/ocr_gemini/easy_10_005_detailed.md",
+        "json_size_bytes": 12686,
+        "pdf_size_bytes": 215538,
+        "html_size_bytes": 36465,
+        "canonical_size_bytes": 6852,
+        "ocr_size_bytes": 0
+      },
+      "transcripts_available": [
+        "canonical"
+      ],
+      "complexity_regime": "easy",
+      "document_count": 1,
+      "evidence_pattern": "single_document"
+    },
+    {
+      "id": "easy_10_005_table",
+      "difficulty": "easy",
+      "format": "table",
+      "num_claims": 11,
+      "pages_estimate": 10,
+      "problems": [
+        "multi_row",
+        "duplicates"
+      ],
+      "layout_templates": [
+        "loss_run_schedule",
+        "packet_cover",
+        "spreadsheet_reference"
+      ],
+      "has_duplicates": true,
+      "seed": 8981,
+      "files": {
+        "ground_truth": "ground_truth/easy_10_005_table.json",
+        "pdf": "pdfs/easy_10_005_table.pdf",
+        "html": "html/easy_10_005_table.html",
+        "canonical_md": "transcripts/canonical/easy_10_005_table.md",
+        "ocr_md": "transcripts/ocr_gemini/easy_10_005_table.md",
+        "json_size_bytes": 12680,
+        "pdf_size_bytes": 271158,
+        "html_size_bytes": 27830,
+        "canonical_size_bytes": 10568,
+        "ocr_size_bytes": 0
+      },
+      "transcripts_available": [
+        "canonical"
+      ],
+      "complexity_regime": "easy",
+      "document_count": 1,
+      "evidence_pattern": "single_document"
+    },
+    {
+      "id": "easy_10_006_detailed",
+      "difficulty": "easy",
+      "format": "detailed",
+      "num_claims": 10,
+      "pages_estimate": 9,
+      "problems": [
+        "multi_row"
+      ],
+      "layout_templates": [
+        "loss_run_schedule",
+        "packet_cover"
+      ],
+      "has_duplicates": false,
+      "seed": 7541,
+      "files": {
+        "ground_truth": "ground_truth/easy_10_006_detailed.json",
+        "pdf": "pdfs/easy_10_006_detailed.pdf",
+        "html": "html/easy_10_006_detailed.html",
+        "canonical_md": "transcripts/canonical/easy_10_006_detailed.md",
+        "ocr_md": "transcripts/ocr_gemini/easy_10_006_detailed.md",
+        "json_size_bytes": 11782,
+        "pdf_size_bytes": 216713,
+        "html_size_bytes": 34048,
+        "canonical_size_bytes": 6296,
+        "ocr_size_bytes": 0
+      },
+      "transcripts_available": [
+        "canonical"
+      ],
+      "complexity_regime": "easy",
+      "document_count": 1,
+      "evidence_pattern": "single_document"
+    },
+    {
+      "id": "easy_10_006_table",
+      "difficulty": "easy",
+      "format": "table",
+      "num_claims": 10,
+      "pages_estimate": 9,
+      "problems": [
+        "multi_row"
+      ],
+      "layout_templates": [
+        "loss_run_schedule",
+        "packet_cover",
+        "spreadsheet_reference"
+      ],
+      "has_duplicates": false,
+      "seed": 2798,
+      "files": {
+        "ground_truth": "ground_truth/easy_10_006_table.json",
+        "pdf": "pdfs/easy_10_006_table.pdf",
+        "html": "html/easy_10_006_table.html",
+        "canonical_md": "transcripts/canonical/easy_10_006_table.md",
+        "ocr_md": "transcripts/ocr_gemini/easy_10_006_table.md",
+        "json_size_bytes": 11624,
+        "pdf_size_bytes": 270189,
+        "html_size_bytes": 26614,
+        "canonical_size_bytes": 9789,
+        "ocr_size_bytes": 0
+      },
+      "transcripts_available": [
+        "canonical"
+      ],
+      "complexity_regime": "easy",
+      "document_count": 1,
+      "evidence_pattern": "single_document"
+    },
+    {
+      "id": "easy_10_007_detailed",
+      "difficulty": "easy",
+      "format": "detailed",
+      "num_claims": 10,
+      "pages_estimate": 9,
+      "problems": [
+        "page_breaks"
+      ],
+      "layout_templates": [
+        "loss_run_schedule",
+        "packet_cover"
+      ],
+      "has_duplicates": false,
+      "seed": 8283,
+      "files": {
+        "ground_truth": "ground_truth/easy_10_007_detailed.json",
+        "pdf": "pdfs/easy_10_007_detailed.pdf",
+        "html": "html/easy_10_007_detailed.html",
+        "canonical_md": "transcripts/canonical/easy_10_007_detailed.md",
+        "ocr_md": "transcripts/ocr_gemini/easy_10_007_detailed.md",
+        "json_size_bytes": 11843,
+        "pdf_size_bytes": 219512,
+        "html_size_bytes": 35444,
+        "canonical_size_bytes": 6589,
+        "ocr_size_bytes": 0
+      },
+      "transcripts_available": [
+        "canonical"
+      ],
+      "complexity_regime": "easy",
+      "document_count": 1,
+      "evidence_pattern": "single_document"
+    },
+    {
+      "id": "easy_10_007_table",
+      "difficulty": "easy",
+      "format": "table",
+      "num_claims": 10,
+      "pages_estimate": 10,
+      "problems": [
+        "page_breaks"
+      ],
+      "layout_templates": [
+        "loss_run_schedule",
+        "packet_cover",
+        "spreadsheet_reference"
+      ],
+      "has_duplicates": false,
+      "seed": 691,
+      "files": {
+        "ground_truth": "ground_truth/easy_10_007_table.json",
+        "pdf": "pdfs/easy_10_007_table.pdf",
+        "html": "html/easy_10_007_table.html",
+        "canonical_md": "transcripts/canonical/easy_10_007_table.md",
+        "ocr_md": "transcripts/ocr_gemini/easy_10_007_table.md",
+        "json_size_bytes": 11657,
+        "pdf_size_bytes": 269725,
+        "html_size_bytes": 27736,
+        "canonical_size_bytes": 9967,
+        "ocr_size_bytes": 0
+      },
+      "transcripts_available": [
+        "canonical"
+      ],
+      "complexity_regime": "easy",
+      "document_count": 1,
+      "evidence_pattern": "single_document"
+    },
+    {
+      "id": "easy_10_008_detailed",
+      "difficulty": "easy",
+      "format": "detailed",
+      "num_claims": 10,
+      "pages_estimate": 10,
+      "problems": [
+        "multi_row",
+        "page_breaks"
+      ],
+      "layout_templates": [
+        "loss_run_schedule",
+        "packet_cover"
+      ],
+      "has_duplicates": false,
+      "seed": 4844,
+      "files": {
+        "ground_truth": "ground_truth/easy_10_008_detailed.json",
+        "pdf": "pdfs/easy_10_008_detailed.pdf",
+        "html": "html/easy_10_008_detailed.html",
+        "canonical_md": "transcripts/canonical/easy_10_008_detailed.md",
+        "ocr_md": "transcripts/ocr_gemini/easy_10_008_detailed.md",
+        "json_size_bytes": 11789,
+        "pdf_size_bytes": 222174,
+        "html_size_bytes": 35049,
+        "canonical_size_bytes": 6547,
+        "ocr_size_bytes": 0
+      },
+      "transcripts_available": [
+        "canonical"
+      ],
+      "complexity_regime": "easy",
+      "document_count": 1,
+      "evidence_pattern": "single_document"
+    },
+    {
+      "id": "easy_10_008_table",
+      "difficulty": "easy",
+      "format": "table",
+      "num_claims": 10,
+      "pages_estimate": 10,
+      "problems": [
+        "multi_row",
+        "page_breaks"
+      ],
+      "layout_templates": [
+        "loss_run_schedule",
+        "packet_cover",
+        "spreadsheet_reference"
+      ],
+      "has_duplicates": false,
+      "seed": 5401,
+      "files": {
+        "ground_truth": "ground_truth/easy_10_008_table.json",
+        "pdf": "pdfs/easy_10_008_table.pdf",
+        "html": "html/easy_10_008_table.html",
+        "canonical_md": "transcripts/canonical/easy_10_008_table.md",
+        "ocr_md": "transcripts/ocr_gemini/easy_10_008_table.md",
+        "json_size_bytes": 11984,
+        "pdf_size_bytes": 270040,
+        "html_size_bytes": 27962,
+        "canonical_size_bytes": 10224,
+        "ocr_size_bytes": 0
+      },
+      "transcripts_available": [
+        "canonical"
+      ],
+      "complexity_regime": "easy",
+      "document_count": 1,
+      "evidence_pattern": "single_document"
+    },
+    {
+      "id": "easy_10_009_detailed",
+      "difficulty": "easy",
+      "format": "detailed",
+      "num_claims": 11,
+      "pages_estimate": 8,
+      "problems": [
+        "duplicates"
+      ],
+      "layout_templates": [
+        "loss_run_schedule",
+        "packet_cover"
+      ],
+      "has_duplicates": true,
+      "seed": 2765,
+      "files": {
+        "ground_truth": "ground_truth/easy_10_009_detailed.json",
+        "pdf": "pdfs/easy_10_009_detailed.pdf",
+        "html": "html/easy_10_009_detailed.html",
+        "canonical_md": "transcripts/canonical/easy_10_009_detailed.md",
+        "ocr_md": "transcripts/ocr_gemini/easy_10_009_detailed.md",
+        "json_size_bytes": 12384,
+        "pdf_size_bytes": 208178,
+        "html_size_bytes": 34660,
+        "canonical_size_bytes": 6348,
+        "ocr_size_bytes": 0
+      },
+      "transcripts_available": [
+        "canonical"
+      ],
+      "complexity_regime": "easy",
+      "document_count": 1,
+      "evidence_pattern": "single_document"
+    },
+    {
+      "id": "easy_10_009_table",
+      "difficulty": "easy",
+      "format": "table",
+      "num_claims": 11,
+      "pages_estimate": 10,
+      "problems": [
+        "duplicates"
+      ],
+      "layout_templates": [
+        "loss_run_schedule",
+        "packet_cover",
+        "spreadsheet_reference"
+      ],
+      "has_duplicates": true,
+      "seed": 8743,
+      "files": {
+        "ground_truth": "ground_truth/easy_10_009_table.json",
+        "pdf": "pdfs/easy_10_009_table.pdf",
+        "html": "html/easy_10_009_table.html",
+        "canonical_md": "transcripts/canonical/easy_10_009_table.md",
+        "ocr_md": "transcripts/ocr_gemini/easy_10_009_table.md",
+        "json_size_bytes": 13054,
+        "pdf_size_bytes": 272970,
+        "html_size_bytes": 28160,
+        "canonical_size_bytes": 10871,
+        "ocr_size_bytes": 0
+      },
+      "transcripts_available": [
+        "canonical"
+      ],
+      "complexity_regime": "easy",
+      "document_count": 1,
+      "evidence_pattern": "single_document"
+    },
+    {
+      "id": "easy_10_010_detailed",
+      "difficulty": "easy",
+      "format": "detailed",
+      "num_claims": 11,
+      "pages_estimate": 10,
+      "problems": [
+        "multi_row",
+        "duplicates"
+      ],
+      "layout_templates": [
+        "loss_run_schedule",
+        "packet_cover"
+      ],
+      "has_duplicates": true,
+      "seed": 9156,
+      "files": {
+        "ground_truth": "ground_truth/easy_10_010_detailed.json",
+        "pdf": "pdfs/easy_10_010_detailed.pdf",
+        "html": "html/easy_10_010_detailed.html",
+        "canonical_md": "transcripts/canonical/easy_10_010_detailed.md",
+        "ocr_md": "transcripts/ocr_gemini/easy_10_010_detailed.md",
+        "json_size_bytes": 12929,
+        "pdf_size_bytes": 220730,
+        "html_size_bytes": 36516,
+        "canonical_size_bytes": 6916,
+        "ocr_size_bytes": 0
+      },
+      "transcripts_available": [
+        "canonical"
+      ],
+      "complexity_regime": "easy",
+      "document_count": 1,
+      "evidence_pattern": "single_document"
+    },
+    {
+      "id": "easy_10_010_table",
+      "difficulty": "easy",
+      "format": "table",
+      "num_claims": 11,
+      "pages_estimate": 10,
+      "problems": [
+        "multi_row",
+        "duplicates"
+      ],
+      "layout_templates": [
+        "loss_run_schedule",
+        "packet_cover",
+        "spreadsheet_reference"
+      ],
+      "has_duplicates": true,
+      "seed": 7385,
+      "files": {
+        "ground_truth": "ground_truth/easy_10_010_table.json",
+        "pdf": "pdfs/easy_10_010_table.pdf",
+        "html": "html/easy_10_010_table.html",
+        "canonical_md": "transcripts/canonical/easy_10_010_table.md",
+        "ocr_md": "transcripts/ocr_gemini/easy_10_010_table.md",
+        "json_size_bytes": 12856,
+        "pdf_size_bytes": 274264,
+        "html_size_bytes": 28048,
+        "canonical_size_bytes": 10766,
+        "ocr_size_bytes": 0
+      },
+      "transcripts_available": [
+        "canonical"
+      ],
+      "complexity_regime": "easy",
+      "document_count": 1,
+      "evidence_pattern": "single_document"
+    },
+    {
+      "id": "easy_10_011_detailed",
+      "difficulty": "easy",
+      "format": "detailed",
+      "num_claims": 10,
+      "pages_estimate": 7,
+      "problems": [
+        "multi_row"
+      ],
+      "layout_templates": [
+        "loss_run_schedule",
+        "packet_cover"
+      ],
+      "has_duplicates": false,
+      "seed": 614,
+      "files": {
+        "ground_truth": "ground_truth/easy_10_011_detailed.json",
+        "pdf": "pdfs/easy_10_011_detailed.pdf",
+        "html": "html/easy_10_011_detailed.html",
+        "canonical_md": "transcripts/canonical/easy_10_011_detailed.md",
+        "ocr_md": "transcripts/ocr_gemini/easy_10_011_detailed.md",
+        "json_size_bytes": 11347,
+        "pdf_size_bytes": 211872,
+        "html_size_bytes": 33104,
+        "canonical_size_bytes": 5890,
+        "ocr_size_bytes": 0
+      },
+      "transcripts_available": [
+        "canonical"
+      ],
+      "complexity_regime": "easy",
+      "document_count": 1,
+      "evidence_pattern": "single_document"
+    },
+    {
+      "id": "easy_10_011_table",
+      "difficulty": "easy",
+      "format": "table",
+      "num_claims": 10,
+      "pages_estimate": 9,
+      "problems": [
+        "multi_row"
+      ],
+      "layout_templates": [
+        "loss_run_schedule",
+        "packet_cover",
+        "spreadsheet_reference"
+      ],
+      "has_duplicates": false,
+      "seed": 5983,
+      "files": {
+        "ground_truth": "ground_truth/easy_10_011_table.json",
+        "pdf": "pdfs/easy_10_011_table.pdf",
+        "html": "html/easy_10_011_table.html",
+        "canonical_md": "transcripts/canonical/easy_10_011_table.md",
+        "ocr_md": "transcripts/ocr_gemini/easy_10_011_table.md",
+        "json_size_bytes": 11422,
+        "pdf_size_bytes": 268087,
+        "html_size_bytes": 26442,
+        "canonical_size_bytes": 9589,
+        "ocr_size_bytes": 0
+      },
+      "transcripts_available": [
+        "canonical"
+      ],
+      "complexity_regime": "easy",
+      "document_count": 1,
+      "evidence_pattern": "single_document"
+    },
+    {
+      "id": "easy_10_012_detailed",
+      "difficulty": "easy",
+      "format": "detailed",
+      "num_claims": 10,
+      "pages_estimate": 8,
+      "problems": [
+        "page_breaks"
+      ],
+      "layout_templates": [
+        "loss_run_schedule",
+        "packet_cover"
+      ],
+      "has_duplicates": false,
+      "seed": 8356,
+      "files": {
+        "ground_truth": "ground_truth/easy_10_012_detailed.json",
+        "pdf": "pdfs/easy_10_012_detailed.pdf",
+        "html": "html/easy_10_012_detailed.html",
+        "canonical_md": "transcripts/canonical/easy_10_012_detailed.md",
+        "ocr_md": "transcripts/ocr_gemini/easy_10_012_detailed.md",
+        "json_size_bytes": 11578,
+        "pdf_size_bytes": 219020,
+        "html_size_bytes": 34674,
+        "canonical_size_bytes": 6360,
+        "ocr_size_bytes": 0
+      },
+      "transcripts_available": [
+        "canonical"
+      ],
+      "complexity_regime": "easy",
+      "document_count": 1,
+      "evidence_pattern": "single_document"
+    },
+    {
+      "id": "easy_10_012_table",
+      "difficulty": "easy",
+      "format": "table",
+      "num_claims": 10,
+      "pages_estimate": 10,
+      "problems": [
+        "page_breaks"
+      ],
+      "layout_templates": [
+        "loss_run_schedule",
+        "packet_cover",
+        "spreadsheet_reference"
+      ],
+      "has_duplicates": false,
+      "seed": 4544,
+      "files": {
+        "ground_truth": "ground_truth/easy_10_012_table.json",
+        "pdf": "pdfs/easy_10_012_table.pdf",
+        "html": "html/easy_10_012_table.html",
+        "canonical_md": "transcripts/canonical/easy_10_012_table.md",
+        "ocr_md": "transcripts/ocr_gemini/easy_10_012_table.md",
+        "json_size_bytes": 11657,
+        "pdf_size_bytes": 268829,
+        "html_size_bytes": 27649,
+        "canonical_size_bytes": 9906,
+        "ocr_size_bytes": 0
+      },
+      "transcripts_available": [
+        "canonical"
+      ],
+      "complexity_regime": "easy",
+      "document_count": 1,
+      "evidence_pattern": "single_document"
+    },
+    {
+      "id": "easy_10_013_detailed",
+      "difficulty": "easy",
+      "format": "detailed",
+      "num_claims": 10,
+      "pages_estimate": 9,
+      "problems": [
+        "multi_row",
+        "page_breaks"
+      ],
+      "layout_templates": [
+        "loss_run_schedule",
+        "packet_cover"
+      ],
+      "has_duplicates": false,
+      "seed": 3746,
+      "files": {
+        "ground_truth": "ground_truth/easy_10_013_detailed.json",
+        "pdf": "pdfs/easy_10_013_detailed.pdf",
+        "html": "html/easy_10_013_detailed.html",
+        "canonical_md": "transcripts/canonical/easy_10_013_detailed.md",
+        "ocr_md": "transcripts/ocr_gemini/easy_10_013_detailed.md",
+        "json_size_bytes": 11912,
+        "pdf_size_bytes": 221809,
+        "html_size_bytes": 34678,
+        "canonical_size_bytes": 6504,
+        "ocr_size_bytes": 0
+      },
+      "transcripts_available": [
+        "canonical"
+      ],
+      "complexity_regime": "easy",
+      "document_count": 1,
+      "evidence_pattern": "single_document"
+    },
+    {
+      "id": "easy_10_013_table",
+      "difficulty": "easy",
+      "format": "table",
+      "num_claims": 10,
+      "pages_estimate": 10,
+      "problems": [
+        "multi_row",
+        "page_breaks"
+      ],
+      "layout_templates": [
+        "loss_run_schedule",
+        "packet_cover",
+        "spreadsheet_reference"
+      ],
+      "has_duplicates": false,
+      "seed": 5887,
+      "files": {
+        "ground_truth": "ground_truth/easy_10_013_table.json",
+        "pdf": "pdfs/easy_10_013_table.pdf",
+        "html": "html/easy_10_013_table.html",
+        "canonical_md": "transcripts/canonical/easy_10_013_table.md",
+        "ocr_md": "transcripts/ocr_gemini/easy_10_013_table.md",
+        "json_size_bytes": 11695,
+        "pdf_size_bytes": 272066,
+        "html_size_bytes": 27724,
+        "canonical_size_bytes": 9988,
+        "ocr_size_bytes": 0
+      },
+      "transcripts_available": [
+        "canonical"
+      ],
+      "complexity_regime": "easy",
+      "document_count": 1,
+      "evidence_pattern": "single_document"
+    },
+    {
+      "id": "easy_10_014_detailed",
+      "difficulty": "easy",
+      "format": "detailed",
+      "num_claims": 11,
+      "pages_estimate": 8,
+      "problems": [
+        "duplicates"
+      ],
+      "layout_templates": [
+        "loss_run_schedule",
+        "packet_cover"
+      ],
+      "has_duplicates": true,
+      "seed": 8210,
+      "files": {
+        "ground_truth": "ground_truth/easy_10_014_detailed.json",
+        "pdf": "pdfs/easy_10_014_detailed.pdf",
+        "html": "html/easy_10_014_detailed.html",
+        "canonical_md": "transcripts/canonical/easy_10_014_detailed.md",
+        "ocr_md": "transcripts/ocr_gemini/easy_10_014_detailed.md",
+        "json_size_bytes": 12914,
+        "pdf_size_bytes": 217416,
+        "html_size_bytes": 36098,
+        "canonical_size_bytes": 6827,
+        "ocr_size_bytes": 0
+      },
+      "transcripts_available": [
+        "canonical"
+      ],
+      "complexity_regime": "easy",
+      "document_count": 1,
+      "evidence_pattern": "single_document"
+    },
+    {
+      "id": "easy_10_014_table",
+      "difficulty": "easy",
+      "format": "table",
+      "num_claims": 11,
+      "pages_estimate": 10,
+      "problems": [
+        "duplicates"
+      ],
+      "layout_templates": [
+        "loss_run_schedule",
+        "packet_cover",
+        "spreadsheet_reference"
+      ],
+      "has_duplicates": true,
+      "seed": 4490,
+      "files": {
+        "ground_truth": "ground_truth/easy_10_014_table.json",
+        "pdf": "pdfs/easy_10_014_table.pdf",
+        "html": "html/easy_10_014_table.html",
+        "canonical_md": "transcripts/canonical/easy_10_014_table.md",
+        "ocr_md": "transcripts/ocr_gemini/easy_10_014_table.md",
+        "json_size_bytes": 12473,
+        "pdf_size_bytes": 268725,
+        "html_size_bytes": 27650,
+        "canonical_size_bytes": 10371,
+        "ocr_size_bytes": 0
+      },
+      "transcripts_available": [
+        "canonical"
+      ],
+      "complexity_regime": "easy",
+      "document_count": 1,
+      "evidence_pattern": "single_document"
+    },
+    {
+      "id": "easy_10_015_detailed",
+      "difficulty": "easy",
+      "format": "detailed",
+      "num_claims": 11,
+      "pages_estimate": 8,
+      "problems": [
+        "multi_row",
+        "duplicates"
+      ],
+      "layout_templates": [
+        "loss_run_schedule",
+        "packet_cover"
+      ],
+      "has_duplicates": true,
+      "seed": 2071,
+      "files": {
+        "ground_truth": "ground_truth/easy_10_015_detailed.json",
+        "pdf": "pdfs/easy_10_015_detailed.pdf",
+        "html": "html/easy_10_015_detailed.html",
+        "canonical_md": "transcripts/canonical/easy_10_015_detailed.md",
+        "ocr_md": "transcripts/ocr_gemini/easy_10_015_detailed.md",
+        "json_size_bytes": 12746,
+        "pdf_size_bytes": 218100,
+        "html_size_bytes": 36201,
+        "canonical_size_bytes": 6764,
+        "ocr_size_bytes": 0
+      },
+      "transcripts_available": [
+        "canonical"
+      ],
+      "complexity_regime": "easy",
+      "document_count": 1,
+      "evidence_pattern": "single_document"
+    },
+    {
+      "id": "easy_10_015_table",
+      "difficulty": "easy",
+      "format": "table",
+      "num_claims": 11,
+      "pages_estimate": 10,
+      "problems": [
+        "multi_row",
+        "duplicates"
+      ],
+      "layout_templates": [
+        "loss_run_schedule",
+        "packet_cover",
+        "spreadsheet_reference"
+      ],
+      "has_duplicates": true,
+      "seed": 9131,
+      "files": {
+        "ground_truth": "ground_truth/easy_10_015_table.json",
+        "pdf": "pdfs/easy_10_015_table.pdf",
+        "html": "html/easy_10_015_table.html",
+        "canonical_md": "transcripts/canonical/easy_10_015_table.md",
+        "ocr_md": "transcripts/ocr_gemini/easy_10_015_table.md",
+        "json_size_bytes": 12840,
+        "pdf_size_bytes": 270349,
+        "html_size_bytes": 27932,
+        "canonical_size_bytes": 10668,
+        "ocr_size_bytes": 0
+      },
+      "transcripts_available": [
+        "canonical"
+      ],
+      "complexity_regime": "easy",
+      "document_count": 1,
+      "evidence_pattern": "single_document"
+    },
+    {
+      "id": "extreme_100_001_detailed",
+      "difficulty": "extreme",
+      "format": "detailed",
+      "num_claims": 500,
+      "pages_estimate": 203,
+      "problems": [
+        "page_breaks",
+        "multi_row",
+        "duplicates",
+        "large_doc",
+        "multiple_tables",
+        "multi_column",
+        "merged_cells"
+      ],
+      "layout_templates": [
+        "loss_run_schedule",
+        "packet_cover",
+        "spreadsheet_reference",
+        "portal_receipt",
+        "rotated_scan_excerpt"
+      ],
+      "has_duplicates": true,
+      "seed": 4254,
+      "files": {
+        "ground_truth": "ground_truth/extreme_100_001_detailed.json",
+        "pdf": "pdfs/extreme_100_001_detailed.pdf",
+        "html": "html/extreme_100_001_detailed.html",
+        "canonical_md": "transcripts/canonical/extreme_100_001_detailed.md",
+        "ocr_md": "transcripts/ocr_gemini/extreme_100_001_detailed.md",
+        "json_size_bytes": 580687,
+        "pdf_size_bytes": 1037833,
+        "html_size_bytes": 1180138,
+        "canonical_size_bytes": 220518,
+        "ocr_size_bytes": 0
+      },
+      "transcripts_available": [
+        "canonical"
+      ],
+      "complexity_regime": "extreme",
+      "document_count": 1,
+      "evidence_pattern": "single_document"
+    },
+    {
+      "id": "extreme_100_001_table",
+      "difficulty": "extreme",
+      "format": "table",
+      "num_claims": 500,
+      "pages_estimate": 322,
+      "problems": [
+        "page_breaks",
+        "multi_row",
+        "duplicates",
+        "large_doc",
+        "multiple_tables",
+        "multi_column",
+        "merged_cells"
+      ],
+      "layout_templates": [
+        "loss_run_schedule",
+        "packet_cover",
+        "spreadsheet_reference",
+        "portal_receipt",
+        "rotated_scan_excerpt"
+      ],
+      "has_duplicates": true,
+      "seed": 8801,
+      "files": {
+        "ground_truth": "ground_truth/extreme_100_001_table.json",
+        "pdf": "pdfs/extreme_100_001_table.pdf",
+        "html": "html/extreme_100_001_table.html",
+        "canonical_md": "transcripts/canonical/extreme_100_001_table.md",
+        "ocr_md": "transcripts/ocr_gemini/extreme_100_001_table.md",
+        "json_size_bytes": 581536,
+        "pdf_size_bytes": 983931,
+        "html_size_bytes": 600903,
+        "canonical_size_bytes": 456679,
+        "ocr_size_bytes": 0
+      },
+      "transcripts_available": [
+        "canonical"
+      ],
+      "complexity_regime": "extreme",
+      "document_count": 1,
+      "evidence_pattern": "single_document"
+    },
+    {
+      "id": "extreme_100_002_detailed",
+      "difficulty": "extreme",
+      "format": "detailed",
+      "num_claims": 500,
+      "pages_estimate": 201,
+      "problems": [
+        "page_breaks",
+        "multi_row",
+        "duplicates",
+        "large_doc",
+        "multiple_tables",
+        "multi_column",
+        "merged_cells"
+      ],
+      "layout_templates": [
+        "loss_run_schedule",
+        "packet_cover",
+        "spreadsheet_reference",
+        "portal_receipt",
+        "rotated_scan_excerpt"
+      ],
+      "has_duplicates": true,
+      "seed": 708,
+      "files": {
+        "ground_truth": "ground_truth/extreme_100_002_detailed.json",
+        "pdf": "pdfs/extreme_100_002_detailed.pdf",
+        "html": "html/extreme_100_002_detailed.html",
+        "canonical_md": "transcripts/canonical/extreme_100_002_detailed.md",
+        "ocr_md": "transcripts/ocr_gemini/extreme_100_002_detailed.md",
+        "json_size_bytes": 581597,
+        "pdf_size_bytes": 1037500,
+        "html_size_bytes": 1178688,
+        "canonical_size_bytes": 221061,
+        "ocr_size_bytes": 0
+      },
+      "transcripts_available": [
+        "canonical"
+      ],
+      "complexity_regime": "extreme",
+      "document_count": 1,
+      "evidence_pattern": "single_document"
+    },
+    {
+      "id": "extreme_100_002_table",
+      "difficulty": "extreme",
+      "format": "table",
+      "num_claims": 500,
+      "pages_estimate": 332,
+      "problems": [
+        "page_breaks",
+        "multi_row",
+        "duplicates",
+        "large_doc",
+        "multiple_tables",
+        "multi_column",
+        "merged_cells"
+      ],
+      "layout_templates": [
+        "loss_run_schedule",
+        "packet_cover",
+        "spreadsheet_reference",
+        "portal_receipt",
+        "rotated_scan_excerpt"
+      ],
+      "has_duplicates": true,
+      "seed": 242,
+      "files": {
+        "ground_truth": "ground_truth/extreme_100_002_table.json",
+        "pdf": "pdfs/extreme_100_002_table.pdf",
+        "html": "html/extreme_100_002_table.html",
+        "canonical_md": "transcripts/canonical/extreme_100_002_table.md",
+        "ocr_md": "transcripts/ocr_gemini/extreme_100_002_table.md",
+        "json_size_bytes": 585600,
+        "pdf_size_bytes": 991041,
+        "html_size_bytes": 604812,
+        "canonical_size_bytes": 460568,
+        "ocr_size_bytes": 0
+      },
+      "transcripts_available": [
+        "canonical"
+      ],
+      "complexity_regime": "extreme",
+      "document_count": 1,
+      "evidence_pattern": "single_document"
+    },
+    {
+      "id": "extreme_100_003_detailed",
+      "difficulty": "extreme",
+      "format": "detailed",
+      "num_claims": 500,
+      "pages_estimate": 209,
+      "problems": [
+        "page_breaks",
+        "multi_row",
+        "duplicates",
+        "large_doc",
+        "multiple_tables",
+        "multi_column",
+        "merged_cells"
+      ],
+      "layout_templates": [
+        "loss_run_schedule",
+        "packet_cover",
+        "spreadsheet_reference",
+        "portal_receipt",
+        "rotated_scan_excerpt"
+      ],
+      "has_duplicates": true,
+      "seed": 557,
+      "files": {
+        "ground_truth": "ground_truth/extreme_100_003_detailed.json",
+        "pdf": "pdfs/extreme_100_003_detailed.pdf",
+        "html": "html/extreme_100_003_detailed.html",
+        "canonical_md": "transcripts/canonical/extreme_100_003_detailed.md",
+        "ocr_md": "transcripts/ocr_gemini/extreme_100_003_detailed.md",
+        "json_size_bytes": 582665,
+        "pdf_size_bytes": 1047913,
+        "html_size_bytes": 1188117,
+        "canonical_size_bytes": 223250,
+        "ocr_size_bytes": 0
+      },
+      "transcripts_available": [
+        "canonical"
+      ],
+      "complexity_regime": "extreme",
+      "document_count": 1,
+      "evidence_pattern": "single_document"
+    },
+    {
+      "id": "extreme_100_003_table",
+      "difficulty": "extreme",
+      "format": "table",
+      "num_claims": 500,
+      "pages_estimate": 329,
+      "problems": [
+        "page_breaks",
+        "multi_row",
+        "duplicates",
+        "large_doc",
+        "multiple_tables",
+        "multi_column",
+        "merged_cells"
+      ],
+      "layout_templates": [
+        "loss_run_schedule",
+        "packet_cover",
+        "spreadsheet_reference",
+        "portal_receipt",
+        "rotated_scan_excerpt"
+      ],
+      "has_duplicates": true,
+      "seed": 5493,
+      "files": {
+        "ground_truth": "ground_truth/extreme_100_003_table.json",
+        "pdf": "pdfs/extreme_100_003_table.pdf",
+        "html": "html/extreme_100_003_table.html",
+        "canonical_md": "transcripts/canonical/extreme_100_003_table.md",
+        "ocr_md": "transcripts/ocr_gemini/extreme_100_003_table.md",
+        "json_size_bytes": 581219,
+        "pdf_size_bytes": 982954,
+        "html_size_bytes": 601320,
+        "canonical_size_bytes": 456414,
+        "ocr_size_bytes": 0
+      },
+      "transcripts_available": [
+        "canonical"
+      ],
+      "complexity_regime": "extreme",
+      "document_count": 1,
+      "evidence_pattern": "single_document"
+    },
+    {
+      "id": "extreme_100_004_detailed",
+      "difficulty": "extreme",
+      "format": "detailed",
+      "num_claims": 500,
+      "pages_estimate": 199,
+      "problems": [
+        "page_breaks",
+        "multi_row",
+        "duplicates",
+        "large_doc",
+        "multiple_tables",
+        "multi_column",
+        "merged_cells"
+      ],
+      "layout_templates": [
+        "loss_run_schedule",
+        "packet_cover",
+        "spreadsheet_reference",
+        "portal_receipt",
+        "rotated_scan_excerpt"
+      ],
+      "has_duplicates": true,
+      "seed": 9028,
+      "files": {
+        "ground_truth": "ground_truth/extreme_100_004_detailed.json",
+        "pdf": "pdfs/extreme_100_004_detailed.pdf",
+        "html": "html/extreme_100_004_detailed.html",
+        "canonical_md": "transcripts/canonical/extreme_100_004_detailed.md",
+        "ocr_md": "transcripts/ocr_gemini/extreme_100_004_detailed.md",
+        "json_size_bytes": 582187,
+        "pdf_size_bytes": 1033016,
+        "html_size_bytes": 1179658,
+        "canonical_size_bytes": 221592,
+        "ocr_size_bytes": 0
+      },
+      "transcripts_available": [
+        "canonical"
+      ],
+      "complexity_regime": "extreme",
+      "document_count": 1,
+      "evidence_pattern": "single_document"
+    },
+    {
+      "id": "extreme_100_004_table",
+      "difficulty": "extreme",
+      "format": "table",
+      "num_claims": 500,
+      "pages_estimate": 310,
+      "problems": [
+        "page_breaks",
+        "multi_row",
+        "duplicates",
+        "large_doc",
+        "multiple_tables",
+        "multi_column",
+        "merged_cells"
+      ],
+      "layout_templates": [
+        "loss_run_schedule",
+        "packet_cover",
+        "spreadsheet_reference",
+        "portal_receipt",
+        "rotated_scan_excerpt"
+      ],
+      "has_duplicates": true,
+      "seed": 8214,
+      "files": {
+        "ground_truth": "ground_truth/extreme_100_004_table.json",
+        "pdf": "pdfs/extreme_100_004_table.pdf",
+        "html": "html/extreme_100_004_table.html",
+        "canonical_md": "transcripts/canonical/extreme_100_004_table.md",
+        "ocr_md": "transcripts/ocr_gemini/extreme_100_004_table.md",
+        "json_size_bytes": 582719,
+        "pdf_size_bytes": 959776,
+        "html_size_bytes": 601947,
+        "canonical_size_bytes": 457603,
+        "ocr_size_bytes": 0
+      },
+      "transcripts_available": [
+        "canonical"
+      ],
+      "complexity_regime": "extreme",
+      "document_count": 1,
+      "evidence_pattern": "single_document"
+    },
+    {
+      "id": "extreme_100_005_detailed",
+      "difficulty": "extreme",
+      "format": "detailed",
+      "num_claims": 500,
+      "pages_estimate": 203,
+      "problems": [
+        "page_breaks",
+        "multi_row",
+        "duplicates",
+        "large_doc",
+        "multiple_tables",
+        "multi_column",
+        "merged_cells"
+      ],
+      "layout_templates": [
+        "loss_run_schedule",
+        "packet_cover",
+        "spreadsheet_reference",
+        "portal_receipt",
+        "rotated_scan_excerpt"
+      ],
+      "has_duplicates": true,
+      "seed": 3728,
+      "files": {
+        "ground_truth": "ground_truth/extreme_100_005_detailed.json",
+        "pdf": "pdfs/extreme_100_005_detailed.pdf",
+        "html": "html/extreme_100_005_detailed.html",
+        "canonical_md": "transcripts/canonical/extreme_100_005_detailed.md",
+        "ocr_md": "transcripts/ocr_gemini/extreme_100_005_detailed.md",
+        "json_size_bytes": 583020,
+        "pdf_size_bytes": 1039505,
+        "html_size_bytes": 1182895,
+        "canonical_size_bytes": 223161,
+        "ocr_size_bytes": 0
+      },
+      "transcripts_available": [
+        "canonical"
+      ],
+      "complexity_regime": "extreme",
+      "document_count": 1,
+      "evidence_pattern": "single_document"
+    },
+    {
+      "id": "extreme_100_005_table",
+      "difficulty": "extreme",
+      "format": "table",
+      "num_claims": 500,
+      "pages_estimate": 330,
+      "problems": [
+        "page_breaks",
+        "multi_row",
+        "duplicates",
+        "large_doc",
+        "multiple_tables",
+        "multi_column",
+        "merged_cells"
+      ],
+      "layout_templates": [
+        "loss_run_schedule",
+        "packet_cover",
+        "spreadsheet_reference",
+        "portal_receipt",
+        "rotated_scan_excerpt"
+      ],
+      "has_duplicates": true,
+      "seed": 6143,
+      "files": {
+        "ground_truth": "ground_truth/extreme_100_005_table.json",
+        "pdf": "pdfs/extreme_100_005_table.pdf",
+        "html": "html/extreme_100_005_table.html",
+        "canonical_md": "transcripts/canonical/extreme_100_005_table.md",
+        "ocr_md": "transcripts/ocr_gemini/extreme_100_005_table.md",
+        "json_size_bytes": 583241,
+        "pdf_size_bytes": 988206,
+        "html_size_bytes": 602536,
+        "canonical_size_bytes": 458243,
+        "ocr_size_bytes": 0
+      },
+      "transcripts_available": [
+        "canonical"
+      ],
+      "complexity_regime": "extreme",
+      "document_count": 1,
+      "evidence_pattern": "single_document"
+    },
+    {
+      "id": "hard_50_001_detailed",
+      "difficulty": "hard",
+      "format": "detailed",
+      "num_claims": 55,
+      "pages_estimate": 24,
+      "problems": [
+        "page_breaks",
+        "multi_row",
+        "duplicates",
+        "multiple_tables",
+        "multi_column"
+      ],
+      "layout_templates": [
+        "loss_run_schedule",
+        "packet_cover",
+        "spreadsheet_reference",
+        "portal_receipt",
+        "rotated_scan_excerpt"
+      ],
+      "has_duplicates": true,
+      "seed": 1261,
+      "files": {
+        "ground_truth": "ground_truth/hard_50_001_detailed.json",
+        "pdf": "pdfs/hard_50_001_detailed.pdf",
+        "html": "html/hard_50_001_detailed.html",
+        "canonical_md": "transcripts/canonical/hard_50_001_detailed.md",
+        "ocr_md": "transcripts/ocr_gemini/hard_50_001_detailed.md",
+        "json_size_bytes": 64444,
+        "pdf_size_bytes": 435038,
+        "html_size_bytes": 148844,
+        "canonical_size_bytes": 31967,
+        "ocr_size_bytes": 0
+      },
+      "transcripts_available": [
+        "canonical"
+      ],
+      "complexity_regime": "hard",
+      "document_count": 1,
+      "evidence_pattern": "single_document"
+    },
+    {
+      "id": "hard_50_001_table",
+      "difficulty": "hard",
+      "format": "table",
+      "num_claims": 55,
+      "pages_estimate": 42,
+      "problems": [
+        "page_breaks",
+        "multi_row",
+        "duplicates",
+        "multiple_tables",
+        "multi_column"
+      ],
+      "layout_templates": [
+        "loss_run_schedule",
+        "packet_cover",
+        "spreadsheet_reference",
+        "portal_receipt",
+        "rotated_scan_excerpt"
+      ],
+      "has_duplicates": true,
+      "seed": 4160,
+      "files": {
+        "ground_truth": "ground_truth/hard_50_001_table.json",
+        "pdf": "pdfs/hard_50_001_table.pdf",
+        "html": "html/hard_50_001_table.html",
+        "canonical_md": "transcripts/canonical/hard_50_001_table.md",
+        "ocr_md": "transcripts/ocr_gemini/hard_50_001_table.md",
+        "json_size_bytes": 63868,
+        "pdf_size_bytes": 434647,
+        "html_size_bytes": 92855,
+        "canonical_size_bytes": 50824,
+        "ocr_size_bytes": 0
+      },
+      "transcripts_available": [
+        "canonical"
+      ],
+      "complexity_regime": "hard",
+      "document_count": 1,
+      "evidence_pattern": "single_document"
+    },
+    {
+      "id": "hard_50_002_detailed",
+      "difficulty": "hard",
+      "format": "detailed",
+      "num_claims": 55,
+      "pages_estimate": 46,
+      "problems": [
+        "page_breaks",
+        "multi_row",
+        "duplicates",
+        "multiple_tables",
+        "merged_cells"
+      ],
+      "layout_templates": [
+        "loss_run_schedule",
+        "packet_cover",
+        "spreadsheet_reference",
+        "portal_receipt",
+        "rotated_scan_excerpt"
+      ],
+      "has_duplicates": true,
+      "seed": 1679,
+      "files": {
+        "ground_truth": "ground_truth/hard_50_002_detailed.json",
+        "pdf": "pdfs/hard_50_002_detailed.pdf",
+        "html": "html/hard_50_002_detailed.html",
+        "canonical_md": "transcripts/canonical/hard_50_002_detailed.md",
+        "ocr_md": "transcripts/ocr_gemini/hard_50_002_detailed.md",
+        "json_size_bytes": 63828,
+        "pdf_size_bytes": 437346,
+        "html_size_bytes": 153908,
+        "canonical_size_bytes": 24646,
+        "ocr_size_bytes": 0
+      },
+      "transcripts_available": [
+        "canonical"
+      ],
+      "complexity_regime": "hard",
+      "document_count": 1,
+      "evidence_pattern": "single_document"
+    },
+    {
+      "id": "hard_50_002_table",
+      "difficulty": "hard",
+      "format": "table",
+      "num_claims": 55,
+      "pages_estimate": 43,
+      "problems": [
+        "page_breaks",
+        "multi_row",
+        "duplicates",
+        "multiple_tables",
+        "merged_cells"
+      ],
+      "layout_templates": [
+        "loss_run_schedule",
+        "packet_cover",
+        "spreadsheet_reference",
+        "portal_receipt",
+        "rotated_scan_excerpt"
+      ],
+      "has_duplicates": true,
+      "seed": 6853,
+      "files": {
+        "ground_truth": "ground_truth/hard_50_002_table.json",
+        "pdf": "pdfs/hard_50_002_table.pdf",
+        "html": "html/hard_50_002_table.html",
+        "canonical_md": "transcripts/canonical/hard_50_002_table.md",
+        "ocr_md": "transcripts/ocr_gemini/hard_50_002_table.md",
+        "json_size_bytes": 64224,
+        "pdf_size_bytes": 434947,
+        "html_size_bytes": 92217,
+        "canonical_size_bytes": 51175,
+        "ocr_size_bytes": 0
+      },
+      "transcripts_available": [
+        "canonical"
+      ],
+      "complexity_regime": "hard",
+      "document_count": 1,
+      "evidence_pattern": "single_document"
+    },
+    {
+      "id": "hard_50_003_detailed",
+      "difficulty": "hard",
+      "format": "detailed",
+      "num_claims": 55,
+      "pages_estimate": 26,
+      "problems": [
+        "page_breaks",
+        "multi_row",
+        "duplicates",
+        "multi_column",
+        "merged_cells"
+      ],
+      "layout_templates": [
+        "loss_run_schedule",
+        "packet_cover",
+        "spreadsheet_reference",
+        "portal_receipt",
+        "rotated_scan_excerpt"
+      ],
+      "has_duplicates": true,
+      "seed": 7893,
+      "files": {
+        "ground_truth": "ground_truth/hard_50_003_detailed.json",
+        "pdf": "pdfs/hard_50_003_detailed.pdf",
+        "html": "html/hard_50_003_detailed.html",
+        "canonical_md": "transcripts/canonical/hard_50_003_detailed.md",
+        "ocr_md": "transcripts/ocr_gemini/hard_50_003_detailed.md",
+        "json_size_bytes": 63252,
+        "pdf_size_bytes": 417848,
+        "html_size_bytes": 148679,
+        "canonical_size_bytes": 23960,
+        "ocr_size_bytes": 0
+      },
+      "transcripts_available": [
+        "canonical"
+      ],
+      "complexity_regime": "hard",
+      "document_count": 1,
+      "evidence_pattern": "single_document"
+    },
+    {
+      "id": "hard_50_003_table",
+      "difficulty": "hard",
+      "format": "table",
+      "num_claims": 55,
+      "pages_estimate": 41,
+      "problems": [
+        "page_breaks",
+        "multi_row",
+        "duplicates",
+        "multi_column",
+        "merged_cells"
+      ],
+      "layout_templates": [
+        "loss_run_schedule",
+        "packet_cover",
+        "spreadsheet_reference",
+        "portal_receipt",
+        "rotated_scan_excerpt"
+      ],
+      "has_duplicates": true,
+      "seed": 9266,
+      "files": {
+        "ground_truth": "ground_truth/hard_50_003_table.json",
+        "pdf": "pdfs/hard_50_003_table.pdf",
+        "html": "html/hard_50_003_table.html",
+        "canonical_md": "transcripts/canonical/hard_50_003_table.md",
+        "ocr_md": "transcripts/ocr_gemini/hard_50_003_table.md",
+        "json_size_bytes": 63736,
+        "pdf_size_bytes": 409047,
+        "html_size_bytes": 89027,
+        "canonical_size_bytes": 50731,
+        "ocr_size_bytes": 0
+      },
+      "transcripts_available": [
+        "canonical"
+      ],
+      "complexity_regime": "hard",
+      "document_count": 1,
+      "evidence_pattern": "single_document"
+    },
+    {
+      "id": "hard_50_004_detailed",
+      "difficulty": "hard",
+      "format": "detailed",
+      "num_claims": 55,
+      "pages_estimate": 26,
+      "problems": [
+        "page_breaks",
+        "multi_row",
+        "duplicates",
+        "multiple_tables",
+        "multi_column"
+      ],
+      "layout_templates": [
+        "loss_run_schedule",
+        "packet_cover",
+        "spreadsheet_reference",
+        "portal_receipt",
+        "rotated_scan_excerpt"
+      ],
+      "has_duplicates": true,
+      "seed": 2463,
+      "files": {
+        "ground_truth": "ground_truth/hard_50_004_detailed.json",
+        "pdf": "pdfs/hard_50_004_detailed.pdf",
+        "html": "html/hard_50_004_detailed.html",
+        "canonical_md": "transcripts/canonical/hard_50_004_detailed.md",
+        "ocr_md": "transcripts/ocr_gemini/hard_50_004_detailed.md",
+        "json_size_bytes": 64507,
+        "pdf_size_bytes": 442570,
+        "html_size_bytes": 152963,
+        "canonical_size_bytes": 32578,
+        "ocr_size_bytes": 0
+      },
+      "transcripts_available": [
+        "canonical"
+      ],
+      "complexity_regime": "hard",
+      "document_count": 1,
+      "evidence_pattern": "single_document"
+    },
+    {
+      "id": "hard_50_004_table",
+      "difficulty": "hard",
+      "format": "table",
+      "num_claims": 55,
+      "pages_estimate": 43,
+      "problems": [
+        "page_breaks",
+        "multi_row",
+        "duplicates",
+        "multiple_tables",
+        "multi_column"
+      ],
+      "layout_templates": [
+        "loss_run_schedule",
+        "packet_cover",
+        "spreadsheet_reference",
+        "portal_receipt",
+        "rotated_scan_excerpt"
+      ],
+      "has_duplicates": true,
+      "seed": 1070,
+      "files": {
+        "ground_truth": "ground_truth/hard_50_004_table.json",
+        "pdf": "pdfs/hard_50_004_table.pdf",
+        "html": "html/hard_50_004_table.html",
+        "canonical_md": "transcripts/canonical/hard_50_004_table.md",
+        "ocr_md": "transcripts/ocr_gemini/hard_50_004_table.md",
+        "json_size_bytes": 64423,
+        "pdf_size_bytes": 434964,
+        "html_size_bytes": 92748,
+        "canonical_size_bytes": 51243,
+        "ocr_size_bytes": 0
+      },
+      "transcripts_available": [
+        "canonical"
+      ],
+      "complexity_regime": "hard",
+      "document_count": 1,
+      "evidence_pattern": "single_document"
+    },
+    {
+      "id": "hard_50_005_detailed",
+      "difficulty": "hard",
+      "format": "detailed",
+      "num_claims": 55,
+      "pages_estimate": 53,
+      "problems": [
+        "page_breaks",
+        "multi_row",
+        "duplicates",
+        "multiple_tables",
+        "merged_cells"
+      ],
+      "layout_templates": [
+        "loss_run_schedule",
+        "packet_cover",
+        "spreadsheet_reference",
+        "portal_receipt",
+        "rotated_scan_excerpt"
+      ],
+      "has_duplicates": true,
+      "seed": 2671,
+      "files": {
+        "ground_truth": "ground_truth/hard_50_005_detailed.json",
+        "pdf": "pdfs/hard_50_005_detailed.pdf",
+        "html": "html/hard_50_005_detailed.html",
+        "canonical_md": "transcripts/canonical/hard_50_005_detailed.md",
+        "ocr_md": "transcripts/ocr_gemini/hard_50_005_detailed.md",
+        "json_size_bytes": 64533,
+        "pdf_size_bytes": 447217,
+        "html_size_bytes": 156880,
+        "canonical_size_bytes": 25534,
+        "ocr_size_bytes": 0
+      },
+      "transcripts_available": [
+        "canonical"
+      ],
+      "complexity_regime": "hard",
+      "document_count": 1,
+      "evidence_pattern": "single_document"
+    },
+    {
+      "id": "hard_50_005_table",
+      "difficulty": "hard",
+      "format": "table",
+      "num_claims": 55,
+      "pages_estimate": 43,
+      "problems": [
+        "page_breaks",
+        "multi_row",
+        "duplicates",
+        "multiple_tables",
+        "merged_cells"
+      ],
+      "layout_templates": [
+        "loss_run_schedule",
+        "packet_cover",
+        "spreadsheet_reference",
+        "portal_receipt",
+        "rotated_scan_excerpt"
+      ],
+      "has_duplicates": true,
+      "seed": 4476,
+      "files": {
+        "ground_truth": "ground_truth/hard_50_005_table.json",
+        "pdf": "pdfs/hard_50_005_table.pdf",
+        "html": "html/hard_50_005_table.html",
+        "canonical_md": "transcripts/canonical/hard_50_005_table.md",
+        "ocr_md": "transcripts/ocr_gemini/hard_50_005_table.md",
+        "json_size_bytes": 63913,
+        "pdf_size_bytes": 434490,
+        "html_size_bytes": 91362,
+        "canonical_size_bytes": 50852,
+        "ocr_size_bytes": 0
+      },
+      "transcripts_available": [
+        "canonical"
+      ],
+      "complexity_regime": "hard",
+      "document_count": 1,
+      "evidence_pattern": "single_document"
+    },
+    {
+      "id": "hard_50_006_detailed",
+      "difficulty": "hard",
+      "format": "detailed",
+      "num_claims": 55,
+      "pages_estimate": 28,
+      "problems": [
+        "page_breaks",
+        "multi_row",
+        "duplicates",
+        "multi_column",
+        "merged_cells"
+      ],
+      "layout_templates": [
+        "loss_run_schedule",
+        "packet_cover",
+        "spreadsheet_reference",
+        "portal_receipt",
+        "rotated_scan_excerpt"
+      ],
+      "has_duplicates": true,
+      "seed": 2401,
+      "files": {
+        "ground_truth": "ground_truth/hard_50_006_detailed.json",
+        "pdf": "pdfs/hard_50_006_detailed.pdf",
+        "html": "html/hard_50_006_detailed.html",
+        "canonical_md": "transcripts/canonical/hard_50_006_detailed.md",
+        "ocr_md": "transcripts/ocr_gemini/hard_50_006_detailed.md",
+        "json_size_bytes": 64174,
+        "pdf_size_bytes": 424056,
+        "html_size_bytes": 151612,
+        "canonical_size_bytes": 24785,
+        "ocr_size_bytes": 0
+      },
+      "transcripts_available": [
+        "canonical"
+      ],
+      "complexity_regime": "hard",
+      "document_count": 1,
+      "evidence_pattern": "single_document"
+    },
+    {
+      "id": "hard_50_006_table",
+      "difficulty": "hard",
+      "format": "table",
+      "num_claims": 55,
+      "pages_estimate": 41,
+      "problems": [
+        "page_breaks",
+        "multi_row",
+        "duplicates",
+        "multi_column",
+        "merged_cells"
+      ],
+      "layout_templates": [
+        "loss_run_schedule",
+        "packet_cover",
+        "spreadsheet_reference",
+        "portal_receipt",
+        "rotated_scan_excerpt"
+      ],
+      "has_duplicates": true,
+      "seed": 8070,
+      "files": {
+        "ground_truth": "ground_truth/hard_50_006_table.json",
+        "pdf": "pdfs/hard_50_006_table.pdf",
+        "html": "html/hard_50_006_table.html",
+        "canonical_md": "transcripts/canonical/hard_50_006_table.md",
+        "ocr_md": "transcripts/ocr_gemini/hard_50_006_table.md",
+        "json_size_bytes": 63971,
+        "pdf_size_bytes": 412015,
+        "html_size_bytes": 89227,
+        "canonical_size_bytes": 50913,
+        "ocr_size_bytes": 0
+      },
+      "transcripts_available": [
+        "canonical"
+      ],
+      "complexity_regime": "hard",
+      "document_count": 1,
+      "evidence_pattern": "single_document"
+    },
+    {
+      "id": "hard_50_007_detailed",
+      "difficulty": "hard",
+      "format": "detailed",
+      "num_claims": 55,
+      "pages_estimate": 26,
+      "problems": [
+        "page_breaks",
+        "multi_row",
+        "duplicates",
+        "multiple_tables",
+        "multi_column"
+      ],
+      "layout_templates": [
+        "loss_run_schedule",
+        "packet_cover",
+        "spreadsheet_reference",
+        "portal_receipt",
+        "rotated_scan_excerpt"
+      ],
+      "has_duplicates": true,
+      "seed": 3242,
+      "files": {
+        "ground_truth": "ground_truth/hard_50_007_detailed.json",
+        "pdf": "pdfs/hard_50_007_detailed.pdf",
+        "html": "html/hard_50_007_detailed.html",
+        "canonical_md": "transcripts/canonical/hard_50_007_detailed.md",
+        "ocr_md": "transcripts/ocr_gemini/hard_50_007_detailed.md",
+        "json_size_bytes": 64841,
+        "pdf_size_bytes": 439777,
+        "html_size_bytes": 151170,
+        "canonical_size_bytes": 32759,
+        "ocr_size_bytes": 0
+      },
+      "transcripts_available": [
+        "canonical"
+      ],
+      "complexity_regime": "hard",
+      "document_count": 1,
+      "evidence_pattern": "single_document"
+    },
+    {
+      "id": "hard_50_007_table",
+      "difficulty": "hard",
+      "format": "table",
+      "num_claims": 55,
+      "pages_estimate": 42,
+      "problems": [
+        "page_breaks",
+        "multi_row",
+        "duplicates",
+        "multiple_tables",
+        "multi_column"
+      ],
+      "layout_templates": [
+        "loss_run_schedule",
+        "packet_cover",
+        "spreadsheet_reference",
+        "portal_receipt",
+        "rotated_scan_excerpt"
+      ],
+      "has_duplicates": true,
+      "seed": 2046,
+      "files": {
+        "ground_truth": "ground_truth/hard_50_007_table.json",
+        "pdf": "pdfs/hard_50_007_table.pdf",
+        "html": "html/hard_50_007_table.html",
+        "canonical_md": "transcripts/canonical/hard_50_007_table.md",
+        "ocr_md": "transcripts/ocr_gemini/hard_50_007_table.md",
+        "json_size_bytes": 63653,
+        "pdf_size_bytes": 432615,
+        "html_size_bytes": 92021,
+        "canonical_size_bytes": 50621,
+        "ocr_size_bytes": 0
+      },
+      "transcripts_available": [
+        "canonical"
+      ],
+      "complexity_regime": "hard",
+      "document_count": 1,
+      "evidence_pattern": "single_document"
+    },
+    {
+      "id": "hard_50_008_detailed",
+      "difficulty": "hard",
+      "format": "detailed",
+      "num_claims": 55,
+      "pages_estimate": 49,
+      "problems": [
+        "page_breaks",
+        "multi_row",
+        "duplicates",
+        "multiple_tables",
+        "merged_cells"
+      ],
+      "layout_templates": [
+        "loss_run_schedule",
+        "packet_cover",
+        "spreadsheet_reference",
+        "portal_receipt",
+        "rotated_scan_excerpt"
+      ],
+      "has_duplicates": true,
+      "seed": 3109,
+      "files": {
+        "ground_truth": "ground_truth/hard_50_008_detailed.json",
+        "pdf": "pdfs/hard_50_008_detailed.pdf",
+        "html": "html/hard_50_008_detailed.html",
+        "canonical_md": "transcripts/canonical/hard_50_008_detailed.md",
+        "ocr_md": "transcripts/ocr_gemini/hard_50_008_detailed.md",
+        "json_size_bytes": 64305,
+        "pdf_size_bytes": 442045,
+        "html_size_bytes": 154544,
+        "canonical_size_bytes": 25220,
+        "ocr_size_bytes": 0
+      },
+      "transcripts_available": [
+        "canonical"
+      ],
+      "complexity_regime": "hard",
+      "document_count": 1,
+      "evidence_pattern": "single_document"
+    },
+    {
+      "id": "hard_50_008_table",
+      "difficulty": "hard",
+      "format": "table",
+      "num_claims": 55,
+      "pages_estimate": 42,
+      "problems": [
+        "page_breaks",
+        "multi_row",
+        "duplicates",
+        "multiple_tables",
+        "merged_cells"
+      ],
+      "layout_templates": [
+        "loss_run_schedule",
+        "packet_cover",
+        "spreadsheet_reference",
+        "portal_receipt",
+        "rotated_scan_excerpt"
+      ],
+      "has_duplicates": true,
+      "seed": 3725,
+      "files": {
+        "ground_truth": "ground_truth/hard_50_008_table.json",
+        "pdf": "pdfs/hard_50_008_table.pdf",
+        "html": "html/hard_50_008_table.html",
+        "canonical_md": "transcripts/canonical/hard_50_008_table.md",
+        "ocr_md": "transcripts/ocr_gemini/hard_50_008_table.md",
+        "json_size_bytes": 63540,
+        "pdf_size_bytes": 433533,
+        "html_size_bytes": 90502,
+        "canonical_size_bytes": 50485,
+        "ocr_size_bytes": 0
+      },
+      "transcripts_available": [
+        "canonical"
+      ],
+      "complexity_regime": "hard",
+      "document_count": 1,
+      "evidence_pattern": "single_document"
+    },
+    {
+      "id": "medium_25_001_detailed",
+      "difficulty": "medium",
+      "format": "detailed",
+      "num_claims": 27,
+      "pages_estimate": 17,
+      "problems": [
+        "page_breaks",
+        "multi_row",
+        "duplicates"
+      ],
+      "layout_templates": [
+        "loss_run_schedule",
+        "packet_cover",
+        "spreadsheet_reference"
+      ],
+      "has_duplicates": true,
+      "seed": 2131,
+      "files": {
+        "ground_truth": "ground_truth/medium_25_001_detailed.json",
+        "pdf": "pdfs/medium_25_001_detailed.pdf",
+        "html": "html/medium_25_001_detailed.html",
+        "canonical_md": "transcripts/canonical/medium_25_001_detailed.md",
+        "ocr_md": "transcripts/ocr_gemini/medium_25_001_detailed.md",
+        "json_size_bytes": 31246,
+        "pdf_size_bytes": 282556,
+        "html_size_bytes": 76118,
+        "canonical_size_bytes": 15677,
+        "ocr_size_bytes": 0
+      },
+      "transcripts_available": [
+        "canonical"
+      ],
+      "complexity_regime": "medium",
+      "document_count": 1,
+      "evidence_pattern": "single_document"
+    },
+    {
+      "id": "medium_25_001_table",
+      "difficulty": "medium",
+      "format": "table",
+      "num_claims": 27,
+      "pages_estimate": 21,
+      "problems": [
+        "page_breaks",
+        "multi_row",
+        "duplicates"
+      ],
+      "layout_templates": [
+        "loss_run_schedule",
+        "packet_cover",
+        "spreadsheet_reference"
+      ],
+      "has_duplicates": true,
+      "seed": 1075,
+      "files": {
+        "ground_truth": "ground_truth/medium_25_001_table.json",
+        "pdf": "pdfs/medium_25_001_table.pdf",
+        "html": "html/medium_25_001_table.html",
+        "canonical_md": "transcripts/canonical/medium_25_001_table.md",
+        "ocr_md": "transcripts/ocr_gemini/medium_25_001_table.md",
+        "json_size_bytes": 31381,
+        "pdf_size_bytes": 295956,
+        "html_size_bytes": 50513,
+        "canonical_size_bytes": 25410,
+        "ocr_size_bytes": 0
+      },
+      "transcripts_available": [
+        "canonical"
+      ],
+      "complexity_regime": "medium",
+      "document_count": 1,
+      "evidence_pattern": "single_document"
+    },
+    {
+      "id": "medium_25_002_detailed",
+      "difficulty": "medium",
+      "format": "detailed",
+      "num_claims": 25,
+      "pages_estimate": 20,
+      "problems": [
+        "page_breaks",
+        "multi_row",
+        "multiple_tables"
+      ],
+      "layout_templates": [
+        "loss_run_schedule",
+        "packet_cover",
+        "spreadsheet_reference",
+        "portal_receipt"
+      ],
+      "has_duplicates": false,
+      "seed": 3617,
+      "files": {
+        "ground_truth": "ground_truth/medium_25_002_detailed.json",
+        "pdf": "pdfs/medium_25_002_detailed.pdf",
+        "html": "html/medium_25_002_detailed.html",
+        "canonical_md": "transcripts/canonical/medium_25_002_detailed.md",
+        "ocr_md": "transcripts/ocr_gemini/medium_25_002_detailed.md",
+        "json_size_bytes": 29364,
+        "pdf_size_bytes": 342950,
+        "html_size_bytes": 79251,
+        "canonical_size_bytes": 15201,
+        "ocr_size_bytes": 0
+      },
+      "transcripts_available": [
+        "canonical"
+      ],
+      "complexity_regime": "medium",
+      "document_count": 1,
+      "evidence_pattern": "single_document"
+    },
+    {
+      "id": "medium_25_002_table",
+      "difficulty": "medium",
+      "format": "table",
+      "num_claims": 25,
+      "pages_estimate": 21,
+      "problems": [
+        "page_breaks",
+        "multi_row",
+        "multiple_tables"
+      ],
+      "layout_templates": [
+        "loss_run_schedule",
+        "packet_cover",
+        "spreadsheet_reference",
+        "portal_receipt"
+      ],
+      "has_duplicates": false,
+      "seed": 1982,
+      "files": {
+        "ground_truth": "ground_truth/medium_25_002_table.json",
+        "pdf": "pdfs/medium_25_002_table.pdf",
+        "html": "html/medium_25_002_table.html",
+        "canonical_md": "transcripts/canonical/medium_25_002_table.md",
+        "ocr_md": "transcripts/ocr_gemini/medium_25_002_table.md",
+        "json_size_bytes": 29353,
+        "pdf_size_bytes": 356098,
+        "html_size_bytes": 53674,
+        "canonical_size_bytes": 23716,
+        "ocr_size_bytes": 0
+      },
+      "transcripts_available": [
+        "canonical"
+      ],
+      "complexity_regime": "medium",
+      "document_count": 1,
+      "evidence_pattern": "single_document"
+    },
+    {
+      "id": "medium_25_003_detailed",
+      "difficulty": "medium",
+      "format": "detailed",
+      "num_claims": 27,
+      "pages_estimate": 24,
+      "problems": [
+        "multi_row",
+        "duplicates",
+        "multiple_tables"
+      ],
+      "layout_templates": [
+        "loss_run_schedule",
+        "packet_cover",
+        "spreadsheet_reference",
+        "portal_receipt"
+      ],
+      "has_duplicates": true,
+      "seed": 8991,
+      "files": {
+        "ground_truth": "ground_truth/medium_25_003_detailed.json",
+        "pdf": "pdfs/medium_25_003_detailed.pdf",
+        "html": "html/medium_25_003_detailed.html",
+        "canonical_md": "transcripts/canonical/medium_25_003_detailed.md",
+        "ocr_md": "transcripts/ocr_gemini/medium_25_003_detailed.md",
+        "json_size_bytes": 31992,
+        "pdf_size_bytes": 345982,
+        "html_size_bytes": 85665,
+        "canonical_size_bytes": 16720,
+        "ocr_size_bytes": 0
+      },
+      "transcripts_available": [
+        "canonical"
+      ],
+      "complexity_regime": "medium",
+      "document_count": 1,
+      "evidence_pattern": "single_document"
+    },
+    {
+      "id": "medium_25_003_table",
+      "difficulty": "medium",
+      "format": "table",
+      "num_claims": 27,
+      "pages_estimate": 22,
+      "problems": [
+        "multi_row",
+        "duplicates",
+        "multiple_tables"
+      ],
+      "layout_templates": [
+        "loss_run_schedule",
+        "packet_cover",
+        "spreadsheet_reference",
+        "portal_receipt"
+      ],
+      "has_duplicates": true,
+      "seed": 4336,
+      "files": {
+        "ground_truth": "ground_truth/medium_25_003_table.json",
+        "pdf": "pdfs/medium_25_003_table.pdf",
+        "html": "html/medium_25_003_table.html",
+        "canonical_md": "transcripts/canonical/medium_25_003_table.md",
+        "ocr_md": "transcripts/ocr_gemini/medium_25_003_table.md",
+        "json_size_bytes": 31637,
+        "pdf_size_bytes": 357783,
+        "html_size_bytes": 55018,
+        "canonical_size_bytes": 25352,
+        "ocr_size_bytes": 0
+      },
+      "transcripts_available": [
+        "canonical"
+      ],
+      "complexity_regime": "medium",
+      "document_count": 1,
+      "evidence_pattern": "single_document"
+    },
+    {
+      "id": "medium_25_004_detailed",
+      "difficulty": "medium",
+      "format": "detailed",
+      "num_claims": 27,
+      "pages_estimate": 23,
+      "problems": [
+        "page_breaks",
+        "duplicates",
+        "multiple_tables"
+      ],
+      "layout_templates": [
+        "loss_run_schedule",
+        "packet_cover",
+        "spreadsheet_reference",
+        "portal_receipt"
+      ],
+      "has_duplicates": true,
+      "seed": 5215,
+      "files": {
+        "ground_truth": "ground_truth/medium_25_004_detailed.json",
+        "pdf": "pdfs/medium_25_004_detailed.pdf",
+        "html": "html/medium_25_004_detailed.html",
+        "canonical_md": "transcripts/canonical/medium_25_004_detailed.md",
+        "ocr_md": "transcripts/ocr_gemini/medium_25_004_detailed.md",
+        "json_size_bytes": 31901,
+        "pdf_size_bytes": 346307,
+        "html_size_bytes": 85930,
+        "canonical_size_bytes": 16834,
+        "ocr_size_bytes": 0
+      },
+      "transcripts_available": [
+        "canonical"
+      ],
+      "complexity_regime": "medium",
+      "document_count": 1,
+      "evidence_pattern": "single_document"
+    },
+    {
+      "id": "medium_25_004_table",
+      "difficulty": "medium",
+      "format": "table",
+      "num_claims": 27,
+      "pages_estimate": 23,
+      "problems": [
+        "page_breaks",
+        "duplicates",
+        "multiple_tables"
+      ],
+      "layout_templates": [
+        "loss_run_schedule",
+        "packet_cover",
+        "spreadsheet_reference",
+        "portal_receipt"
+      ],
+      "has_duplicates": true,
+      "seed": 4627,
+      "files": {
+        "ground_truth": "ground_truth/medium_25_004_table.json",
+        "pdf": "pdfs/medium_25_004_table.pdf",
+        "html": "html/medium_25_004_table.html",
+        "canonical_md": "transcripts/canonical/medium_25_004_table.md",
+        "ocr_md": "transcripts/ocr_gemini/medium_25_004_table.md",
+        "json_size_bytes": 31357,
+        "pdf_size_bytes": 356538,
+        "html_size_bytes": 56030,
+        "canonical_size_bytes": 25259,
+        "ocr_size_bytes": 0
+      },
+      "transcripts_available": [
+        "canonical"
+      ],
+      "complexity_regime": "medium",
+      "document_count": 1,
+      "evidence_pattern": "single_document"
+    },
+    {
+      "id": "medium_25_005_detailed",
+      "difficulty": "medium",
+      "format": "detailed",
+      "num_claims": 27,
+      "pages_estimate": 21,
+      "problems": [
+        "page_breaks",
+        "multi_row",
+        "duplicates"
+      ],
+      "layout_templates": [
+        "loss_run_schedule",
+        "packet_cover",
+        "spreadsheet_reference"
+      ],
+      "has_duplicates": true,
+      "seed": 2287,
+      "files": {
+        "ground_truth": "ground_truth/medium_25_005_detailed.json",
+        "pdf": "pdfs/medium_25_005_detailed.pdf",
+        "html": "html/medium_25_005_detailed.html",
+        "canonical_md": "transcripts/canonical/medium_25_005_detailed.md",
+        "ocr_md": "transcripts/ocr_gemini/medium_25_005_detailed.md",
+        "json_size_bytes": 31889,
+        "pdf_size_bytes": 290177,
+        "html_size_bytes": 80917,
+        "canonical_size_bytes": 16913,
+        "ocr_size_bytes": 0
+      },
+      "transcripts_available": [
+        "canonical"
+      ],
+      "complexity_regime": "medium",
+      "document_count": 1,
+      "evidence_pattern": "single_document"
+    },
+    {
+      "id": "medium_25_005_table",
+      "difficulty": "medium",
+      "format": "table",
+      "num_claims": 27,
+      "pages_estimate": 21,
+      "problems": [
+        "page_breaks",
+        "multi_row",
+        "duplicates"
+      ],
+      "layout_templates": [
+        "loss_run_schedule",
+        "packet_cover",
+        "spreadsheet_reference"
+      ],
+      "has_duplicates": true,
+      "seed": 6054,
+      "files": {
+        "ground_truth": "ground_truth/medium_25_005_table.json",
+        "pdf": "pdfs/medium_25_005_table.pdf",
+        "html": "html/medium_25_005_table.html",
+        "canonical_md": "transcripts/canonical/medium_25_005_table.md",
+        "ocr_md": "transcripts/ocr_gemini/medium_25_005_table.md",
+        "json_size_bytes": 31361,
+        "pdf_size_bytes": 292577,
+        "html_size_bytes": 50523,
+        "canonical_size_bytes": 25400,
+        "ocr_size_bytes": 0
+      },
+      "transcripts_available": [
+        "canonical"
+      ],
+      "complexity_regime": "medium",
+      "document_count": 1,
+      "evidence_pattern": "single_document"
+    },
+    {
+      "id": "medium_25_006_detailed",
+      "difficulty": "medium",
+      "format": "detailed",
+      "num_claims": 25,
+      "pages_estimate": 20,
+      "problems": [
+        "page_breaks",
+        "multi_row",
+        "multiple_tables"
+      ],
+      "layout_templates": [
+        "loss_run_schedule",
+        "packet_cover",
+        "spreadsheet_reference",
+        "portal_receipt"
+      ],
+      "has_duplicates": false,
+      "seed": 6589,
+      "files": {
+        "ground_truth": "ground_truth/medium_25_006_detailed.json",
+        "pdf": "pdfs/medium_25_006_detailed.pdf",
+        "html": "html/medium_25_006_detailed.html",
+        "canonical_md": "transcripts/canonical/medium_25_006_detailed.md",
+        "ocr_md": "transcripts/ocr_gemini/medium_25_006_detailed.md",
+        "json_size_bytes": 29025,
+        "pdf_size_bytes": 338331,
+        "html_size_bytes": 77648,
+        "canonical_size_bytes": 14842,
+        "ocr_size_bytes": 0
+      },
+      "transcripts_available": [
+        "canonical"
+      ],
+      "complexity_regime": "medium",
+      "document_count": 1,
+      "evidence_pattern": "single_document"
+    },
+    {
+      "id": "medium_25_006_table",
+      "difficulty": "medium",
+      "format": "table",
+      "num_claims": 25,
+      "pages_estimate": 21,
+      "problems": [
+        "page_breaks",
+        "multi_row",
+        "multiple_tables"
+      ],
+      "layout_templates": [
+        "loss_run_schedule",
+        "packet_cover",
+        "spreadsheet_reference",
+        "portal_receipt"
+      ],
+      "has_duplicates": false,
+      "seed": 2975,
+      "files": {
+        "ground_truth": "ground_truth/medium_25_006_table.json",
+        "pdf": "pdfs/medium_25_006_table.pdf",
+        "html": "html/medium_25_006_table.html",
+        "canonical_md": "transcripts/canonical/medium_25_006_table.md",
+        "ocr_md": "transcripts/ocr_gemini/medium_25_006_table.md",
+        "json_size_bytes": 28960,
+        "pdf_size_bytes": 353419,
+        "html_size_bytes": 52605,
+        "canonical_size_bytes": 23516,
+        "ocr_size_bytes": 0
+      },
+      "transcripts_available": [
+        "canonical"
+      ],
+      "complexity_regime": "medium",
+      "document_count": 1,
+      "evidence_pattern": "single_document"
+    },
+    {
+      "id": "medium_25_007_detailed",
+      "difficulty": "medium",
+      "format": "detailed",
+      "num_claims": 27,
+      "pages_estimate": 23,
+      "problems": [
+        "multi_row",
+        "duplicates",
+        "multiple_tables"
+      ],
+      "layout_templates": [
+        "loss_run_schedule",
+        "packet_cover",
+        "spreadsheet_reference",
+        "portal_receipt"
+      ],
+      "has_duplicates": true,
+      "seed": 7816,
+      "files": {
+        "ground_truth": "ground_truth/medium_25_007_detailed.json",
+        "pdf": "pdfs/medium_25_007_detailed.pdf",
+        "html": "html/medium_25_007_detailed.html",
+        "canonical_md": "transcripts/canonical/medium_25_007_detailed.md",
+        "ocr_md": "transcripts/ocr_gemini/medium_25_007_detailed.md",
+        "json_size_bytes": 31719,
+        "pdf_size_bytes": 346898,
+        "html_size_bytes": 85101,
+        "canonical_size_bytes": 16517,
+        "ocr_size_bytes": 0
+      },
+      "transcripts_available": [
+        "canonical"
+      ],
+      "complexity_regime": "medium",
+      "document_count": 1,
+      "evidence_pattern": "single_document"
+    },
+    {
+      "id": "medium_25_007_table",
+      "difficulty": "medium",
+      "format": "table",
+      "num_claims": 27,
+      "pages_estimate": 23,
+      "problems": [
+        "multi_row",
+        "duplicates",
+        "multiple_tables"
+      ],
+      "layout_templates": [
+        "loss_run_schedule",
+        "packet_cover",
+        "spreadsheet_reference",
+        "portal_receipt"
+      ],
+      "has_duplicates": true,
+      "seed": 7682,
+      "files": {
+        "ground_truth": "ground_truth/medium_25_007_table.json",
+        "pdf": "pdfs/medium_25_007_table.pdf",
+        "html": "html/medium_25_007_table.html",
+        "canonical_md": "transcripts/canonical/medium_25_007_table.md",
+        "ocr_md": "transcripts/ocr_gemini/medium_25_007_table.md",
+        "json_size_bytes": 31995,
+        "pdf_size_bytes": 356839,
+        "html_size_bytes": 55554,
+        "canonical_size_bytes": 25651,
+        "ocr_size_bytes": 0
+      },
+      "transcripts_available": [
+        "canonical"
+      ],
+      "complexity_regime": "medium",
+      "document_count": 1,
+      "evidence_pattern": "single_document"
+    },
+    {
+      "id": "medium_25_008_detailed",
+      "difficulty": "medium",
+      "format": "detailed",
+      "num_claims": 27,
+      "pages_estimate": 23,
+      "problems": [
+        "page_breaks",
+        "duplicates",
+        "multiple_tables"
+      ],
+      "layout_templates": [
+        "loss_run_schedule",
+        "packet_cover",
+        "spreadsheet_reference",
+        "portal_receipt"
+      ],
+      "has_duplicates": true,
+      "seed": 8166,
+      "files": {
+        "ground_truth": "ground_truth/medium_25_008_detailed.json",
+        "pdf": "pdfs/medium_25_008_detailed.pdf",
+        "html": "html/medium_25_008_detailed.html",
+        "canonical_md": "transcripts/canonical/medium_25_008_detailed.md",
+        "ocr_md": "transcripts/ocr_gemini/medium_25_008_detailed.md",
+        "json_size_bytes": 32042,
+        "pdf_size_bytes": 346109,
+        "html_size_bytes": 86085,
+        "canonical_size_bytes": 16923,
+        "ocr_size_bytes": 0
+      },
+      "transcripts_available": [
+        "canonical"
+      ],
+      "complexity_regime": "medium",
+      "document_count": 1,
+      "evidence_pattern": "single_document"
+    },
+    {
+      "id": "medium_25_008_table",
+      "difficulty": "medium",
+      "format": "table",
+      "num_claims": 27,
+      "pages_estimate": 23,
+      "problems": [
+        "page_breaks",
+        "duplicates",
+        "multiple_tables"
+      ],
+      "layout_templates": [
+        "loss_run_schedule",
+        "packet_cover",
+        "spreadsheet_reference",
+        "portal_receipt"
+      ],
+      "has_duplicates": true,
+      "seed": 611,
+      "files": {
+        "ground_truth": "ground_truth/medium_25_008_table.json",
+        "pdf": "pdfs/medium_25_008_table.pdf",
+        "html": "html/medium_25_008_table.html",
+        "canonical_md": "transcripts/canonical/medium_25_008_table.md",
+        "ocr_md": "transcripts/ocr_gemini/medium_25_008_table.md",
+        "json_size_bytes": 31394,
+        "pdf_size_bytes": 357770,
+        "html_size_bytes": 56166,
+        "canonical_size_bytes": 25270,
+        "ocr_size_bytes": 0
+      },
+      "transcripts_available": [
+        "canonical"
+      ],
+      "complexity_regime": "medium",
+      "document_count": 1,
+      "evidence_pattern": "single_document"
+    },
+    {
+      "id": "medium_25_009_detailed",
+      "difficulty": "medium",
+      "format": "detailed",
+      "num_claims": 27,
+      "pages_estimate": 20,
+      "problems": [
+        "page_breaks",
+        "multi_row",
+        "duplicates"
+      ],
+      "layout_templates": [
+        "loss_run_schedule",
+        "packet_cover",
+        "spreadsheet_reference"
+      ],
+      "has_duplicates": true,
+      "seed": 1375,
+      "files": {
+        "ground_truth": "ground_truth/medium_25_009_detailed.json",
+        "pdf": "pdfs/medium_25_009_detailed.pdf",
+        "html": "html/medium_25_009_detailed.html",
+        "canonical_md": "transcripts/canonical/medium_25_009_detailed.md",
+        "ocr_md": "transcripts/ocr_gemini/medium_25_009_detailed.md",
+        "json_size_bytes": 31569,
+        "pdf_size_bytes": 288644,
+        "html_size_bytes": 77428,
+        "canonical_size_bytes": 15998,
+        "ocr_size_bytes": 0
+      },
+      "transcripts_available": [
+        "canonical"
+      ],
+      "complexity_regime": "medium",
+      "document_count": 1,
+      "evidence_pattern": "single_document"
+    },
+    {
+      "id": "medium_25_009_table",
+      "difficulty": "medium",
+      "format": "table",
+      "num_claims": 27,
+      "pages_estimate": 21,
+      "problems": [
+        "page_breaks",
+        "multi_row",
+        "duplicates"
+      ],
+      "layout_templates": [
+        "loss_run_schedule",
+        "packet_cover",
+        "spreadsheet_reference"
+      ],
+      "has_duplicates": true,
+      "seed": 4505,
+      "files": {
+        "ground_truth": "ground_truth/medium_25_009_table.json",
+        "pdf": "pdfs/medium_25_009_table.pdf",
+        "html": "html/medium_25_009_table.html",
+        "canonical_md": "transcripts/canonical/medium_25_009_table.md",
+        "ocr_md": "transcripts/ocr_gemini/medium_25_009_table.md",
+        "json_size_bytes": 31093,
+        "pdf_size_bytes": 294118,
+        "html_size_bytes": 50215,
+        "canonical_size_bytes": 25110,
+        "ocr_size_bytes": 0
+      },
+      "transcripts_available": [
+        "canonical"
+      ],
+      "complexity_regime": "medium",
+      "document_count": 1,
+      "evidence_pattern": "single_document"
+    },
+    {
+      "id": "medium_25_010_detailed",
+      "difficulty": "medium",
+      "format": "detailed",
+      "num_claims": 25,
+      "pages_estimate": 23,
+      "problems": [
+        "page_breaks",
+        "multi_row",
+        "multiple_tables"
+      ],
+      "layout_templates": [
+        "loss_run_schedule",
+        "packet_cover",
+        "spreadsheet_reference",
+        "portal_receipt"
+      ],
+      "has_duplicates": false,
+      "seed": 503,
+      "files": {
+        "ground_truth": "ground_truth/medium_25_010_detailed.json",
+        "pdf": "pdfs/medium_25_010_detailed.pdf",
+        "html": "html/medium_25_010_detailed.html",
+        "canonical_md": "transcripts/canonical/medium_25_010_detailed.md",
+        "ocr_md": "transcripts/ocr_gemini/medium_25_010_detailed.md",
+        "json_size_bytes": 28845,
+        "pdf_size_bytes": 340813,
+        "html_size_bytes": 78564,
+        "canonical_size_bytes": 14765,
+        "ocr_size_bytes": 0
+      },
+      "transcripts_available": [
+        "canonical"
+      ],
+      "complexity_regime": "medium",
+      "document_count": 1,
+      "evidence_pattern": "single_document"
+    },
+    {
+      "id": "medium_25_010_table",
+      "difficulty": "medium",
+      "format": "table",
+      "num_claims": 25,
+      "pages_estimate": 21,
+      "problems": [
+        "page_breaks",
+        "multi_row",
+        "multiple_tables"
+      ],
+      "layout_templates": [
+        "loss_run_schedule",
+        "packet_cover",
+        "spreadsheet_reference",
+        "portal_receipt"
+      ],
+      "has_duplicates": false,
+      "seed": 145,
+      "files": {
+        "ground_truth": "ground_truth/medium_25_010_table.json",
+        "pdf": "pdfs/medium_25_010_table.pdf",
+        "html": "html/medium_25_010_table.html",
+        "canonical_md": "transcripts/canonical/medium_25_010_table.md",
+        "ocr_md": "transcripts/ocr_gemini/medium_25_010_table.md",
+        "json_size_bytes": 29286,
+        "pdf_size_bytes": 353060,
+        "html_size_bytes": 53232,
+        "canonical_size_bytes": 23800,
+        "ocr_size_bytes": 0
+      },
+      "transcripts_available": [
+        "canonical"
+      ],
+      "complexity_regime": "medium",
+      "document_count": 1,
+      "evidence_pattern": "single_document"
+    },
+    {
+      "id": "medium_25_011_detailed",
+      "difficulty": "medium",
+      "format": "detailed",
+      "num_claims": 27,
+      "pages_estimate": 20,
+      "problems": [
+        "multi_row",
+        "duplicates",
+        "multiple_tables"
+      ],
+      "layout_templates": [
+        "loss_run_schedule",
+        "packet_cover",
+        "spreadsheet_reference",
+        "portal_receipt"
+      ],
+      "has_duplicates": true,
+      "seed": 7913,
+      "files": {
+        "ground_truth": "ground_truth/medium_25_011_detailed.json",
+        "pdf": "pdfs/medium_25_011_detailed.pdf",
+        "html": "html/medium_25_011_detailed.html",
+        "canonical_md": "transcripts/canonical/medium_25_011_detailed.md",
+        "ocr_md": "transcripts/ocr_gemini/medium_25_011_detailed.md",
+        "json_size_bytes": 31230,
+        "pdf_size_bytes": 342238,
+        "html_size_bytes": 81913,
+        "canonical_size_bytes": 15524,
+        "ocr_size_bytes": 0
+      },
+      "transcripts_available": [
+        "canonical"
+      ],
+      "complexity_regime": "medium",
+      "document_count": 1,
+      "evidence_pattern": "single_document"
+    },
+    {
+      "id": "medium_25_011_table",
+      "difficulty": "medium",
+      "format": "table",
+      "num_claims": 27,
+      "pages_estimate": 22,
+      "problems": [
+        "multi_row",
+        "duplicates",
+        "multiple_tables"
+      ],
+      "layout_templates": [
+        "loss_run_schedule",
+        "packet_cover",
+        "spreadsheet_reference",
+        "portal_receipt"
+      ],
+      "has_duplicates": true,
+      "seed": 3230,
+      "files": {
+        "ground_truth": "ground_truth/medium_25_011_table.json",
+        "pdf": "pdfs/medium_25_011_table.pdf",
+        "html": "html/medium_25_011_table.html",
+        "canonical_md": "transcripts/canonical/medium_25_011_table.md",
+        "ocr_md": "transcripts/ocr_gemini/medium_25_011_table.md",
+        "json_size_bytes": 31218,
+        "pdf_size_bytes": 356370,
+        "html_size_bytes": 55285,
+        "canonical_size_bytes": 25066,
+        "ocr_size_bytes": 0
+      },
+      "transcripts_available": [
+        "canonical"
+      ],
+      "complexity_regime": "medium",
+      "document_count": 1,
+      "evidence_pattern": "single_document"
+    },
+    {
+      "id": "medium_25_012_detailed",
+      "difficulty": "medium",
+      "format": "detailed",
+      "num_claims": 27,
+      "pages_estimate": 22,
+      "problems": [
+        "page_breaks",
+        "duplicates",
+        "multiple_tables"
+      ],
+      "layout_templates": [
+        "loss_run_schedule",
+        "packet_cover",
+        "spreadsheet_reference",
+        "portal_receipt"
+      ],
+      "has_duplicates": true,
+      "seed": 2332,
+      "files": {
+        "ground_truth": "ground_truth/medium_25_012_detailed.json",
+        "pdf": "pdfs/medium_25_012_detailed.pdf",
+        "html": "html/medium_25_012_detailed.html",
+        "canonical_md": "transcripts/canonical/medium_25_012_detailed.md",
+        "ocr_md": "transcripts/ocr_gemini/medium_25_012_detailed.md",
+        "json_size_bytes": 31769,
+        "pdf_size_bytes": 343701,
+        "html_size_bytes": 85867,
+        "canonical_size_bytes": 16614,
+        "ocr_size_bytes": 0
+      },
+      "transcripts_available": [
+        "canonical"
+      ],
+      "complexity_regime": "medium",
+      "document_count": 1,
+      "evidence_pattern": "single_document"
+    },
+    {
+      "id": "medium_25_012_table",
+      "difficulty": "medium",
+      "format": "table",
+      "num_claims": 27,
+      "pages_estimate": 23,
+      "problems": [
+        "page_breaks",
+        "duplicates",
+        "multiple_tables"
+      ],
+      "layout_templates": [
+        "loss_run_schedule",
+        "packet_cover",
+        "spreadsheet_reference",
+        "portal_receipt"
+      ],
+      "has_duplicates": true,
+      "seed": 7414,
+      "files": {
+        "ground_truth": "ground_truth/medium_25_012_table.json",
+        "pdf": "pdfs/medium_25_012_table.pdf",
+        "html": "html/medium_25_012_table.html",
+        "canonical_md": "transcripts/canonical/medium_25_012_table.md",
+        "ocr_md": "transcripts/ocr_gemini/medium_25_012_table.md",
+        "json_size_bytes": 31428,
+        "pdf_size_bytes": 357484,
+        "html_size_bytes": 56335,
+        "canonical_size_bytes": 25314,
+        "ocr_size_bytes": 0
+      },
+      "transcripts_available": [
+        "canonical"
+      ],
+      "complexity_regime": "medium",
+      "document_count": 1,
+      "evidence_pattern": "single_document"
+    },
+    {
+      "id": "mixed_040_001_crosspage",
+      "difficulty": "mixed",
+      "complexity_regime": "mixed",
+      "format": "crosspage",
+      "num_claims": 40,
+      "pages_estimate": 198,
+      "pdf_page_count": 198,
+      "document_count": 1,
+      "evidence_pattern": "single_document_long_range_cross_page_join",
+      "minimum_gap_pages_between_primary_and_last_evidence": 172,
+      "problems": [
+        "cross_page_join",
+        "long_range_evidence",
+        "mixed_layout",
+        "distractor_sections",
+        "longer_list"
+      ],
+      "layout_templates": [
+        "packet_cover",
+        "portal_receipt",
+        "official_request_response",
+        "primary_schedule",
+        "spreadsheet_unit_reference",
+        "mileage_schedule",
+        "rotated_scan_excerpt",
+        "long_range_appendices"
+      ],
+      "has_duplicates": false,
+      "seed": 10644,
+      "join_requirements": [
+        "policy_number -> policy register",
+        "unit_number -> driver roster",
+        "cause_code -> cause classification appendix",
+        "incident_number -> claimant index",
+        "incident_number -> financial ledger"
+      ],
+      "evidence_map": [
+        {
+          "section": "primary_claim_extract",
+          "approx_page_after_cover": 1,
+          "fields": [
+            "incident_number",
+            "reference_number",
+            "policy_number",
+            "unit_number",
+            "cause_code",
+            "status",
+            "date_of_loss",
+            "loss_state",
+            "date_reported"
+          ]
+        },
+        {
+          "section": "fleet_driver_assignment_roster",
+          "approx_page_after_cover": 80,
+          "join_key": "unit_number",
+          "fields": [
+            "driver_name",
+            "company_name",
+            "policy_state"
+          ]
+        },
+        {
+          "section": "policy_register",
+          "approx_page_after_cover": 81,
+          "join_key": "policy_number",
+          "fields": [
+            "company_name",
+            "insured",
+            "division",
+            "policy_state",
+            "agency"
+          ]
+        },
+        {
+          "section": "loss_cause_classification_appendix",
+          "approx_page_after_cover": 136,
+          "join_key": "cause_code",
+          "fields": [
+            "coverage_type",
+            "description",
+            "handler"
+          ]
+        },
+        {
+          "section": "claimant_notice_index",
+          "approx_page_after_cover": 137,
+          "join_key": "incident_number",
+          "fields": [
+            "claimants",
+            "adjuster_notes"
+          ]
+        },
+        {
+          "section": "claim_financial_ledger",
+          "approx_page_after_cover": 178,
+          "join_key": "incident_number",
+          "fields": [
+            "bi",
+            "pd",
+            "lae",
+            "ded"
+          ]
+        }
+      ],
+      "files": {
+        "ground_truth": "ground_truth/mixed_040_001_crosspage.json",
+        "pdf": "pdfs/mixed_040_001_crosspage.pdf",
+        "html": "html/mixed_040_001_crosspage.html",
+        "canonical_md": "transcripts/canonical/mixed_040_001_crosspage.md",
+        "ocr_md": "transcripts/ocr_gemini/mixed_040_001_crosspage.md",
+        "json_size_bytes": 50540,
+        "pdf_size_bytes": 1067499,
+        "html_size_bytes": 446168,
+        "canonical_size_bytes": 251898,
+        "ocr_size_bytes": 243031
+      },
+      "transcripts_available": [
+        "canonical",
+        "ocr"
+      ]
+    },
+    {
+      "id": "mixed_cgl_040_001",
+      "difficulty": "mixed",
+      "complexity_regime": "mixed",
+      "format": "crosspage",
+      "domain": "policy_review",
+      "lob": "CGL",
+      "target_record_type": "policy_packet_item",
+      "target_record_types": [
+        "cgl_exposure_item",
+        "policy_endorsement_item",
+        "policy_form_item",
+        "policy_location_item",
+        "policy_premium_item"
+      ],
+      "primary_target_record_type": "cgl_exposure_item",
+      "schema_fields": [
+        "class_code",
+        "classification",
+        "coverage_part",
+        "edition_date",
+        "endorsement_effective_date",
+        "endorsement_number",
+        "exclusion_name",
+        "exposure",
+        "exposure_basis",
+        "form_number",
+        "form_title",
+        "item_id",
+        "limit",
+        "limit_type",
+        "lob",
+        "location_number",
+        "materiality",
+        "named_insured",
+        "policy_number",
+        "policy_period",
+        "premium",
+        "premium_basis",
+        "products_completed_ops_rate",
+        "rate",
+        "record_type",
+        "schedule_source",
+        "territory"
+      ],
+      "num_claims": 184,
+      "num_policy_items": 184,
+      "num_primary_policy_items": 40,
+      "num_target_records": 184,
+      "pages_estimate": 214,
+      "pdf_page_count": 214,
+      "document_count": 1,
+      "evidence_pattern": "single_document_policy_packet_long_range_join",
+      "minimum_gap_pages_between_primary_and_last_evidence": 174,
+      "problems": [
+        "commercial_general_liability",
+        "exposure_rating_rows",
+        "limits_forms_exclusions",
+        "long_range_evidence",
+        "heterogeneous_record_list",
+        "distractor_forms",
+        "distractor_locations"
+      ],
+      "layout_templates": [
+        "declarations",
+        "locations_or_classifications",
+        "coverage_or_limit_schedule",
+        "rating_schedule",
+        "forms_schedule",
+        "endorsement_detail",
+        "premium_summary",
+        "policy_conditions"
+      ],
+      "record_collections": {
+        "cgl_exposure_item": 40,
+        "policy_endorsement_item": 24,
+        "policy_form_item": 40,
+        "policy_location_item": 40,
+        "policy_premium_item": 40
+      },
+      "synthetic_text": {
+        "source": "synthetic",
+        "real_documents_used_for": "structural reference only",
+        "copied_source_text": false,
+        "text_generation": {
+          "generator": "gemini",
+          "model": "gemini-2.5-flash",
+          "prompt_files": [
+            "policy_writer_system.md",
+            "policy_page_bank.md",
+            "cgl_examples.md"
+          ],
+          "page_kinds": {
+            "policy_form": 5,
+            "notice": 2,
+            "amendatory": 2,
+            "billing": 2,
+            "endorsement": 4
+          }
+        }
+      },
+      "has_duplicates": false,
+      "seed": 35540498590913,
+      "join_requirements": [
+        "exposure_item_id -> cgl declarations",
+        "location_number/class_code -> classification schedule",
+        "class_code/exposure_basis -> rating schedule",
+        "coverage_part -> limits schedule",
+        "form_number -> forms and exclusions schedule",
+        "endorsement_number -> endorsement detail pages",
+        "exposure_item_id -> premium summary"
+      ],
+      "evidence_map": [
+        {
+          "section": "cgl_declarations",
+          "approx_page_after_cover": 1,
+          "join_key": "policy_number",
+          "fields": [
+            "named_insured",
+            "policy_period"
+          ]
+        },
+        {
+          "section": "limits_schedule",
+          "approx_page_after_cover": 61,
+          "join_key": "coverage_part",
+          "fields": [
+            "limit_type",
+            "limit"
+          ]
+        },
+        {
+          "section": "classification_and_location_schedule",
+          "approx_page_after_cover": 62,
+          "join_key": "location_number/class_code",
+          "fields": [
+            "classification",
+            "territory"
+          ]
+        },
+        {
+          "section": "exposure_and_rating_schedule",
+          "approx_page_after_cover": 63,
+          "join_key": "exposure_item_id",
+          "fields": [
+            "exposure_basis",
+            "exposure",
+            "rate",
+            "premium"
+          ]
+        },
+        {
+          "section": "forms_and_exclusions_schedule",
+          "approx_page_after_cover": 112,
+          "join_key": "form_number",
+          "fields": [
+            "form_title",
+            "exclusion_name"
+          ]
+        },
+        {
+          "section": "endorsement_detail_pages",
+          "approx_page_after_cover": 149,
+          "join_key": "endorsement_number",
+          "fields": [
+            "endorsement_effective_date",
+            "materiality"
+          ]
+        },
+        {
+          "section": "premium_summary",
+          "approx_page_after_cover": 182,
+          "join_key": "item_id",
+          "fields": [
+            "premium",
+            "estimated_premium"
+          ]
+        }
+      ],
+      "files": {
+        "ground_truth": "ground_truth/mixed_cgl_040_001.json",
+        "pdf": "pdfs/mixed_cgl_040_001.pdf",
+        "html": "html/mixed_cgl_040_001.html",
+        "canonical_md": "transcripts/canonical/mixed_cgl_040_001.md",
+        "ocr_md": "transcripts/ocr_gemini/mixed_cgl_040_001.md",
+        "json_size_bytes": 109370,
+        "pdf_size_bytes": 1468693,
+        "html_size_bytes": 797363,
+        "canonical_size_bytes": 555158,
+        "ocr_size_bytes": 693599
+      },
+      "transcripts_available": [
+        "canonical",
+        "ocr"
+      ]
+    },
+    {
+      "id": "multihop_012_001_crosspage",
+      "difficulty": "multihop",
+      "complexity_regime": "multihop",
+      "format": "crosspage",
+      "num_claims": 12,
+      "pages_estimate": 76,
+      "pdf_page_count": 76,
+      "document_count": 1,
+      "evidence_pattern": "single_document_long_range_cross_page_join",
+      "minimum_gap_pages_between_primary_and_last_evidence": 64,
+      "problems": [
+        "cross_page_join",
+        "long_range_evidence",
+        "coded_values"
+      ],
+      "layout_templates": [
+        "packet_cover",
+        "portal_receipt",
+        "official_request_response",
+        "primary_schedule",
+        "spreadsheet_unit_reference",
+        "mileage_schedule",
+        "rotated_scan_excerpt",
+        "long_range_appendices"
+      ],
+      "has_duplicates": false,
+      "seed": 14114,
+      "join_requirements": [
+        "unit_number -> driver roster",
+        "cause_code -> cause classification appendix",
+        "incident_number -> financial ledger"
+      ],
+      "evidence_map": [
+        {
+          "section": "primary_claim_extract",
+          "approx_page_after_cover": 1,
+          "fields": [
+            "incident_number",
+            "reference_number",
+            "policy_number",
+            "unit_number",
+            "cause_code",
+            "status",
+            "date_of_loss",
+            "loss_state",
+            "date_reported"
+          ]
+        },
+        {
+          "section": "fleet_driver_assignment_roster",
+          "approx_page_after_cover": 30,
+          "join_key": "unit_number",
+          "fields": [
+            "driver_name",
+            "company_name",
+            "policy_state"
+          ]
+        },
+        {
+          "section": "policy_register",
+          "approx_page_after_cover": 31,
+          "join_key": "policy_number",
+          "fields": [
+            "company_name",
+            "insured",
+            "division",
+            "policy_state",
+            "agency"
+          ]
+        },
+        {
+          "section": "loss_cause_classification_appendix",
+          "approx_page_after_cover": 50,
+          "join_key": "cause_code",
+          "fields": [
+            "coverage_type",
+            "description",
+            "handler"
+          ]
+        },
+        {
+          "section": "claimant_notice_index",
+          "approx_page_after_cover": 51,
+          "join_key": "incident_number",
+          "fields": [
+            "claimants",
+            "adjuster_notes"
+          ]
+        },
+        {
+          "section": "claim_financial_ledger",
+          "approx_page_after_cover": 70,
+          "join_key": "incident_number",
+          "fields": [
+            "bi",
+            "pd",
+            "lae",
+            "ded"
+          ]
+        }
+      ],
+      "files": {
+        "ground_truth": "ground_truth/multihop_012_001_crosspage.json",
+        "pdf": "pdfs/multihop_012_001_crosspage.pdf",
+        "html": "html/multihop_012_001_crosspage.html",
+        "canonical_md": "transcripts/canonical/multihop_012_001_crosspage.md",
+        "ocr_md": "transcripts/ocr_gemini/multihop_012_001_crosspage.md",
+        "json_size_bytes": 14923,
+        "pdf_size_bytes": 652385,
+        "html_size_bytes": 167683,
+        "canonical_size_bytes": 91774,
+        "ocr_size_bytes": 92632
+      },
+      "transcripts_available": [
+        "canonical",
+        "ocr"
+      ],
+      "domain": "claims",
+      "target_record_type": "loss_run_incident",
+      "num_target_records": 12
+    },
+    {
+      "id": "multihop_025_001_crosspage",
+      "difficulty": "multihop",
+      "complexity_regime": "multihop",
+      "format": "crosspage",
+      "num_claims": 25,
+      "pages_estimate": 126,
+      "pdf_page_count": 126,
+      "document_count": 1,
+      "evidence_pattern": "single_document_long_range_cross_page_join",
+      "minimum_gap_pages_between_primary_and_last_evidence": 114,
+      "problems": [
+        "cross_page_join",
+        "long_range_evidence",
+        "many_to_one_policy",
+        "claimant_lookup"
+      ],
+      "layout_templates": [
+        "packet_cover",
+        "portal_receipt",
+        "official_request_response",
+        "primary_schedule",
+        "spreadsheet_unit_reference",
+        "mileage_schedule",
+        "rotated_scan_excerpt",
+        "long_range_appendices"
+      ],
+      "has_duplicates": false,
+      "seed": 6869,
+      "join_requirements": [
+        "policy_number -> policy register",
+        "incident_number -> claimant index",
+        "incident_number -> financial ledger"
+      ],
+      "evidence_map": [
+        {
+          "section": "primary_claim_extract",
+          "approx_page_after_cover": 1,
+          "fields": [
+            "incident_number",
+            "reference_number",
+            "policy_number",
+            "unit_number",
+            "cause_code",
+            "status",
+            "date_of_loss",
+            "loss_state",
+            "date_reported"
+          ]
+        },
+        {
+          "section": "fleet_driver_assignment_roster",
+          "approx_page_after_cover": 54,
+          "join_key": "unit_number",
+          "fields": [
+            "driver_name",
+            "company_name",
+            "policy_state"
+          ]
+        },
+        {
+          "section": "policy_register",
+          "approx_page_after_cover": 55,
+          "join_key": "policy_number",
+          "fields": [
+            "company_name",
+            "insured",
+            "division",
+            "policy_state",
+            "agency"
+          ]
+        },
+        {
+          "section": "loss_cause_classification_appendix",
+          "approx_page_after_cover": 90,
+          "join_key": "cause_code",
+          "fields": [
+            "coverage_type",
+            "description",
+            "handler"
+          ]
+        },
+        {
+          "section": "claimant_notice_index",
+          "approx_page_after_cover": 91,
+          "join_key": "incident_number",
+          "fields": [
+            "claimants",
+            "adjuster_notes"
+          ]
+        },
+        {
+          "section": "claim_financial_ledger",
+          "approx_page_after_cover": 120,
+          "join_key": "incident_number",
+          "fields": [
+            "bi",
+            "pd",
+            "lae",
+            "ded"
+          ]
+        }
+      ],
+      "files": {
+        "ground_truth": "ground_truth/multihop_025_001_crosspage.json",
+        "pdf": "pdfs/multihop_025_001_crosspage.pdf",
+        "html": "html/multihop_025_001_crosspage.html",
+        "canonical_md": "transcripts/canonical/multihop_025_001_crosspage.md",
+        "ocr_md": "transcripts/ocr_gemini/multihop_025_001_crosspage.md",
+        "json_size_bytes": 31277,
+        "pdf_size_bytes": 829064,
+        "html_size_bytes": 286575,
+        "canonical_size_bytes": 160141,
+        "ocr_size_bytes": 156626
+      },
+      "transcripts_available": [
+        "canonical",
+        "ocr"
+      ],
+      "domain": "claims",
+      "target_record_type": "loss_run_incident",
+      "num_target_records": 25
+    },
+    {
+      "id": "multihop_bop_012_001",
+      "difficulty": "multihop",
+      "complexity_regime": "policy_multi_hop",
+      "format": "crosspage",
+      "domain": "policy_review",
+      "lob": "BOP",
+      "target_record_type": "policy_packet_item",
+      "target_record_types": [
+        "bop_coverage_item",
+        "policy_endorsement_item",
+        "policy_form_item",
+        "policy_location_item",
+        "policy_premium_item"
+      ],
+      "primary_target_record_type": "bop_coverage_item",
+      "schema_fields": [
+        "building_number",
+        "business_income_basis",
+        "class_code",
+        "classification",
+        "coinsurance",
+        "coverage",
+        "deductible",
+        "edition_date",
+        "endorsement_effective_date",
+        "form_number",
+        "form_title",
+        "limit",
+        "lob",
+        "location_number",
+        "named_insured",
+        "policy_number",
+        "policy_period",
+        "premises_address",
+        "premium",
+        "premium_basis",
+        "record_type",
+        "schedule_source",
+        "valuation"
+      ],
+      "num_claims": 48,
+      "num_policy_items": 48,
+      "num_primary_policy_items": 12,
+      "num_target_records": 48,
+      "pages_estimate": 90,
+      "pdf_page_count": 90,
+      "document_count": 1,
+      "evidence_pattern": "single_document_policy_packet_long_range_join",
+      "minimum_gap_pages_between_primary_and_last_evidence": 74,
+      "problems": [
+        "businessowners_policy",
+        "location_scoped_coverage",
+        "form_endorsement_links",
+        "long_range_evidence",
+        "heterogeneous_record_list"
+      ],
+      "layout_templates": [
+        "declarations",
+        "locations_or_classifications",
+        "coverage_or_limit_schedule",
+        "rating_schedule",
+        "forms_schedule",
+        "endorsement_detail",
+        "premium_summary",
+        "policy_conditions"
+      ],
+      "record_collections": {
+        "bop_coverage_item": 12,
+        "policy_endorsement_item": 8,
+        "policy_form_item": 12,
+        "policy_location_item": 4,
+        "policy_premium_item": 12
+      },
+      "synthetic_text": {
+        "source": "synthetic",
+        "real_documents_used_for": "structural reference only",
+        "copied_source_text": false,
+        "text_generation": {
+          "generator": "gemini",
+          "model": "gemini-3.1-pro-preview",
+          "thinking_level": "high",
+          "prompt_files": [
+            "policy_writer_system.md",
+            "policy_page_bank.md",
+            "bop_examples.md"
+          ],
+          "page_kinds": {
+            "policy_form": 5,
+            "coverage_form": 12,
+            "notice": 2,
+            "amendatory": 2,
+            "billing": 2,
+            "endorsement": 4
+          }
+        }
+      },
+      "has_duplicates": false,
+      "seed": 268482452599190,
+      "join_requirements": [
+        "location_number/building_number -> businessowners declarations",
+        "location_number/building_number -> described premises schedule",
+        "location_number/building_number/class_code -> classification/rating schedule",
+        "form_number/edition_date/form_title -> forms and endorsements schedule",
+        "location_number/building_number/coverage/form_number -> endorsement detail pages",
+        "location_number/building_number/coverage -> premium summary"
+      ],
+      "evidence_map": [
+        {
+          "section": "businessowners_declarations",
+          "approx_page_after_cover": 1,
+          "join_key": "policy_number",
+          "fields": [
+            "named_insured",
+            "policy_period"
+          ]
+        },
+        {
+          "section": "described_premises_schedule",
+          "approx_page_after_cover": 25,
+          "join_key": "location_number/building_number",
+          "fields": [
+            "premises_address"
+          ]
+        },
+        {
+          "section": "property_and_liability_coverage_schedule",
+          "approx_page_after_cover": 26,
+          "join_key": "location_number/building_number/coverage",
+          "fields": [
+            "limit",
+            "deductible",
+            "valuation"
+          ]
+        },
+        {
+          "section": "classification_and_rating_schedule",
+          "approx_page_after_cover": 27,
+          "join_key": "location_number/building_number/class_code",
+          "fields": [
+            "classification",
+            "premium"
+          ]
+        },
+        {
+          "section": "forms_and_endorsements_schedule",
+          "approx_page_after_cover": 48,
+          "join_key": "form_number/edition_date/form_title",
+          "fields": [
+            "schedule_source"
+          ]
+        },
+        {
+          "section": "endorsement_detail_pages",
+          "approx_page_after_cover": 67,
+          "join_key": "location_number/building_number/coverage/form_number",
+          "fields": [
+            "endorsement_effective_date",
+            "limit",
+            "deductible"
+          ]
+        },
+        {
+          "section": "premium_summary",
+          "approx_page_after_cover": 82,
+          "join_key": "location_number/building_number/coverage",
+          "fields": [
+            "premium"
+          ]
+        }
+      ],
+      "files": {
+        "ground_truth": "ground_truth/multihop_bop_012_001.json",
+        "pdf": "pdfs/multihop_bop_012_001.pdf",
+        "html": "html/multihop_bop_012_001.html",
+        "canonical_md": "transcripts/canonical/multihop_bop_012_001.md",
+        "ocr_md": "transcripts/ocr_gemini/multihop_bop_012_001.md",
+        "json_size_bytes": 24285,
+        "pdf_size_bytes": 485523,
+        "html_size_bytes": 230234,
+        "canonical_size_bytes": 9,
+        "ocr_size_bytes": 227771
+      },
+      "transcripts_available": [
+        "canonical",
+        "ocr"
+      ]
+    },
+    {
+      "id": "multihop_wc_025_001",
+      "difficulty": "multihop",
+      "complexity_regime": "policy_multi_hop",
+      "format": "crosspage",
+      "domain": "policy_review",
+      "lob": "WC",
+      "target_record_type": "policy_packet_item",
+      "target_record_types": [
+        "policy_endorsement_item",
+        "policy_form_item",
+        "policy_location_item",
+        "policy_premium_item",
+        "wc_class_code_item"
+      ],
+      "primary_target_record_type": "wc_class_code_item",
+      "schema_fields": [
+        "annual_payroll",
+        "class_code",
+        "classification",
+        "edition_date",
+        "endorsement_effective_date",
+        "endorsement_number",
+        "estimated_premium",
+        "experience_mod",
+        "form_number",
+        "form_title",
+        "governing_class",
+        "item_id",
+        "lob",
+        "location_number",
+        "manual_rate",
+        "materiality",
+        "named_insured",
+        "policy_number",
+        "policy_period",
+        "premium",
+        "premium_basis",
+        "record_type",
+        "schedule_credit_debit",
+        "schedule_source",
+        "state"
+      ],
+      "num_claims": 113,
+      "num_policy_items": 113,
+      "num_primary_policy_items": 25,
+      "num_target_records": 113,
+      "pages_estimate": 140,
+      "pdf_page_count": 140,
+      "document_count": 1,
+      "evidence_pattern": "single_document_policy_packet_long_range_join",
+      "minimum_gap_pages_between_primary_and_last_evidence": 116,
+      "problems": [
+        "workers_compensation_policy",
+        "class_code_payroll_rating",
+        "experience_mod_and_schedule_rating",
+        "long_range_evidence",
+        "heterogeneous_record_list"
+      ],
+      "layout_templates": [
+        "declarations",
+        "locations_or_classifications",
+        "coverage_or_limit_schedule",
+        "rating_schedule",
+        "forms_schedule",
+        "endorsement_detail",
+        "premium_summary",
+        "policy_conditions"
+      ],
+      "record_collections": {
+        "policy_endorsement_item": 13,
+        "policy_form_item": 25,
+        "policy_location_item": 25,
+        "policy_premium_item": 25,
+        "wc_class_code_item": 25
+      },
+      "synthetic_text": {
+        "source": "synthetic",
+        "real_documents_used_for": "structural reference only",
+        "copied_source_text": false,
+        "text_generation": {
+          "generator": "gemini",
+          "model": "gemini-2.5-flash",
+          "prompt_files": [
+            "policy_writer_system.md",
+            "policy_page_bank.md",
+            "wc_examples.md"
+          ],
+          "page_kinds": {
+            "policy_form": 5,
+            "notice": 2,
+            "amendatory": 2,
+            "billing": 2,
+            "endorsement": 4
+          }
+        }
+      },
+      "has_duplicates": false,
+      "seed": 195680388151197,
+      "join_requirements": [
+        "class_code_item_id -> workers compensation information page",
+        "state/class_code -> classification schedule",
+        "state/class_code -> payroll and rate schedule",
+        "form_number -> forms and endorsements schedule",
+        "endorsement_number -> owner/officer or waiver detail pages",
+        "class_code_item_id -> premium summary"
+      ],
+      "evidence_map": [
+        {
+          "section": "workers_comp_information_page",
+          "approx_page_after_cover": 1,
+          "join_key": "policy_number",
+          "fields": [
+            "named_insured",
+            "policy_period"
+          ]
+        },
+        {
+          "section": "classification_schedule",
+          "approx_page_after_cover": 41,
+          "join_key": "state/class_code",
+          "fields": [
+            "classification",
+            "governing_class"
+          ]
+        },
+        {
+          "section": "payroll_and_rate_schedule",
+          "approx_page_after_cover": 42,
+          "join_key": "class_code_item_id",
+          "fields": [
+            "annual_payroll",
+            "manual_rate",
+            "estimated_premium"
+          ]
+        },
+        {
+          "section": "experience_modification_summary",
+          "approx_page_after_cover": 43,
+          "join_key": "policy_number",
+          "fields": [
+            "experience_mod",
+            "schedule_credit_debit"
+          ]
+        },
+        {
+          "section": "forms_and_endorsements_schedule",
+          "approx_page_after_cover": 74,
+          "join_key": "form_number",
+          "fields": [
+            "form_title",
+            "edition_date"
+          ]
+        },
+        {
+          "section": "endorsement_detail_pages",
+          "approx_page_after_cover": 101,
+          "join_key": "endorsement_number",
+          "fields": [
+            "endorsement_effective_date",
+            "materiality"
+          ]
+        },
+        {
+          "section": "premium_summary",
+          "approx_page_after_cover": 124,
+          "join_key": "item_id",
+          "fields": [
+            "premium",
+            "estimated_premium"
+          ]
+        }
+      ],
+      "files": {
+        "ground_truth": "ground_truth/multihop_wc_025_001.json",
+        "pdf": "pdfs/multihop_wc_025_001.pdf",
+        "html": "html/multihop_wc_025_001.html",
+        "canonical_md": "transcripts/canonical/multihop_wc_025_001.md",
+        "ocr_md": "transcripts/ocr_gemini/multihop_wc_025_001.md",
+        "json_size_bytes": 62051,
+        "pdf_size_bytes": 1023003,
+        "html_size_bytes": 529449,
+        "canonical_size_bytes": 372754,
+        "ocr_size_bytes": 509607
+      },
+      "transcripts_available": [
+        "canonical",
+        "ocr"
+      ]
+    }
+  ],
+  "layout": {
+    "type": "modality_separated",
+    "pdfs": "pdfs/{sample_id}.pdf",
+    "html": "html/{sample_id}.html",
+    "ground_truth": "ground_truth/{sample_id}.json",
+    "canonical_transcripts": "transcripts/canonical/{sample_id}.md",
+    "ocr_transcripts": "transcripts/ocr_gemini/{sample_id}.md",
+    "metadata": "metadata/{sample_id}.json"
+  },
+  "organized_at": "2026-06-20T16:42:37.885059+00:00",
+  "complexity_regimes": [
+    "easy",
+    "extreme",
+    "hard",
+    "medium",
+    "mixed",
+    "multihop",
+    "policy_multi_hop"
+  ],
+  "updated_at": "2026-06-21T17:52:02.250821+00:00",
+  "total_policy_items": 345,
+  "total_target_records": 7250
+}

@@ -13,6 +13,7 @@ from benchmarks.evaluate_models import (
     generate_report,
     run_evaluation_from_saved_predictions,
 )
+from benchmarks.evaluation_metrics import evaluate_record_extraction
 
 
 class EvaluatorRegressionTests(unittest.TestCase):
@@ -43,6 +44,88 @@ class EvaluatorRegressionTests(unittest.TestCase):
                     }
                 ]
             )
+
+    def test_policy_record_evaluator_matches_without_hidden_ids(self) -> None:
+        ground_truth = [
+            {
+                "record_type": "bop_coverage_item",
+                "policy_number": "P-1",
+                "named_insured": "Example LLC",
+                "coverage": "Building",
+                "location_number": "001",
+                "building_number": "001",
+                "limit": "$60,000",
+                "premium": "$210",
+            },
+            {
+                "record_type": "bop_coverage_item",
+                "policy_number": "P-1",
+                "named_insured": "Example LLC",
+                "coverage": "Equipment Breakdown",
+                "location_number": "002",
+                "building_number": "001",
+                "limit": "$125,000",
+                "premium": "$292",
+            },
+        ]
+        predicted = [
+            {
+                "record_type": "bop_coverage_item",
+                "policy_number": "P-1",
+                "named_insured": "Example LLC",
+                "coverage": "Equipment Breakdown",
+                "location_number": "002",
+                "building_number": "001",
+                "limit": "125000",
+                "premium": "292",
+            },
+            {
+                "record_type": "bop_coverage_item",
+                "policy_number": "P-1",
+                "named_insured": "Example LLC",
+                "coverage": "Building",
+                "location_number": "001",
+                "building_number": "001",
+                "limit": "60000",
+                "premium": "$999",
+            },
+        ]
+
+        metrics = evaluate_record_extraction(predicted, ground_truth)
+
+        self.assertEqual(metrics["ground_truth_count"], 2)
+        self.assertEqual(metrics["predicted_count"], 2)
+        self.assertEqual(metrics["missing"], 0)
+        self.assertEqual(metrics["extra"], 0)
+        self.assertEqual(metrics["found"], 13)
+        self.assertEqual(metrics["total_gold_field_pairs"], 14)
+        self.assertLess(metrics["f1"], 1.0)
+        self.assertGreater(metrics["f1"], 0.9)
+        self.assertEqual(metrics["by_record_type"]["bop_coverage_item"]["matched_records"], 2)
+
+    def test_policy_record_evaluator_requires_record_type_association(self) -> None:
+        ground_truth = [
+            {
+                "record_type": "policy_form_item",
+                "policy_number": "P-1",
+                "form_number": "BP 00 01",
+                "form_title": "Businessowners Coverage Form",
+            }
+        ]
+        predicted = [
+            {
+                "policy_number": "P-1",
+                "form_number": "BP 00 01",
+                "form_title": "Businessowners Coverage Form",
+            }
+        ]
+
+        metrics = evaluate_record_extraction(predicted, ground_truth)
+
+        self.assertEqual(metrics["found"], 0)
+        self.assertEqual(metrics["missing"], 1)
+        self.assertEqual(metrics["extra"], 1)
+        self.assertEqual(metrics["f1"], 0.0)
 
     def test_report_weighted_scores_include_failed_samples(self) -> None:
         out_dir = Path(tempfile.mkdtemp())
@@ -157,7 +240,7 @@ class EvaluatorRegressionTests(unittest.TestCase):
             0.5,
         )
 
-    def test_report_marks_missing_slices_as_na(self) -> None:
+    def test_report_omits_missing_tier_and_format_slices(self) -> None:
         out_dir = Path(tempfile.mkdtemp())
         generate_report(
             [
@@ -187,9 +270,12 @@ class EvaluatorRegressionTests(unittest.TestCase):
         )
 
         markdown = (out_dir / "evaluation_report.md").read_text(encoding="utf-8")
-        self.assertIn("| Gemini 2.5 | 100.0% | N/A | N/A | N/A |", markdown)
-        self.assertIn("| Gemini 2.5 | 100.0% | N/A |", markdown)
-        self.assertIn("| Gemini 2.5 | 100.0% | N/A |", markdown)
+        self.assertIn("| Model | Easy |", markdown)
+        self.assertNotIn("| Model | Easy | Medium | Hard | Extreme |", markdown)
+        self.assertIn("| Model | Detailed |", markdown)
+        self.assertNotIn("| Model | Detailed | Table |", markdown)
+        self.assertIn("| Model | Canonical | OCR |", markdown)
+        self.assertIn("| Gemini Pro Preview | 100.0% | N/A |", markdown)
 
     def test_offline_evaluation_loads_transcript_specific_predictions(self) -> None:
         claims_dir = Path(tempfile.mkdtemp())
@@ -242,6 +328,56 @@ class EvaluatorRegressionTests(unittest.TestCase):
         by_transcript = {result.transcript: result for result in results}
         self.assertEqual(by_transcript["canonical"].metrics["f1"], 1.0)
         self.assertEqual(by_transcript["ocr"].metrics["f1"], 0.0)
+
+    def test_offline_evaluation_uses_generic_policy_record_scorer(self) -> None:
+        dataset_dir = Path(tempfile.mkdtemp())
+        results_dir = Path(tempfile.mkdtemp())
+        (dataset_dir / "pdfs").mkdir(parents=True)
+        (dataset_dir / "ground_truth").mkdir(parents=True)
+        (dataset_dir / "transcripts" / "canonical").mkdir(parents=True)
+
+        sample = "multihop_bop_012_001"
+        records = [
+            {
+                "record_type": "policy_form_item",
+                "policy_number": "P-1",
+                "named_insured": "Example LLC",
+                "form_number": "BP 00 01",
+                "form_title": "Businessowners Coverage Form",
+                "edition_date": "12 23",
+            }
+        ]
+        (dataset_dir / "ground_truth" / f"{sample}.json").write_text(json.dumps(records), encoding="utf-8")
+        (dataset_dir / "transcripts" / "canonical" / f"{sample}.md").write_text(
+            "# Page 1\n\npolicy text\n",
+            encoding="utf-8",
+        )
+        (results_dir / f"{sample}_canonical_fake_policy_predicted.json").write_text(
+            json.dumps({"records": records}),
+            encoding="utf-8",
+        )
+
+        fake_config = evaluate_models.ModelConfig(
+            name="Fake Policy Extractor",
+            provider="Test",
+            model_id="fake-policy",
+            setup_fn=lambda: object(),
+            extract_fn=lambda *_: (_ for _ in ()).throw(AssertionError("offline should not extract")),
+        )
+        with mock.patch.dict(evaluate_models.MODELS, {"fake_policy": fake_config}):
+            results = run_evaluation_from_saved_predictions(
+                models=["fake_policy"],
+                samples=[sample],
+                transcripts=["canonical"],
+                claims_dir=dataset_dir,
+                output_dir=results_dir,
+            )
+
+        self.assertEqual(len(results), 1)
+        self.assertEqual(results[0].tier, "multihop")
+        self.assertEqual(results[0].format, "crosspage")
+        self.assertEqual(results[0].metrics["f1"], 1.0)
+        self.assertIn("policy_form_item", results[0].metrics["by_record_type"])
 
     def test_offline_evaluation_preserves_saved_cost_metadata(self) -> None:
         claims_dir = Path(tempfile.mkdtemp())
@@ -417,7 +553,7 @@ class EvaluatorRegressionTests(unittest.TestCase):
         ]:
             shutil.copyfile(
                 source_dir / f"{sample}_gemini_predicted.json",
-                out_dir / f"{sample}_gemini_predicted.json",
+                out_dir / f"{sample}_canonical_gemini_predicted.json",
             )
 
         argv = [

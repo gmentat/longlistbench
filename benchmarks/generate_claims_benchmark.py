@@ -17,13 +17,17 @@ import asyncio
 import hashlib
 import json
 import re
-from datetime import datetime
+import subprocess
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
 import sys
 
-from canonical_transcripts import write_canonical_markdown_from_html
+try:
+    from .canonical_transcripts import write_canonical_markdown_from_html
+except ImportError:
+    from canonical_transcripts import write_canonical_markdown_from_html
 
 
 # Benchmark configuration
@@ -216,7 +220,7 @@ async def generate_instance(
     json_size = json_path.stat().st_size
     pdf_size = pdf_path.stat().st_size
     canonical_size = canonical_path.stat().st_size
-    pdf_pages = estimate_pages(len(incidents_dicts), problems)
+    pdf_pages = count_pdf_pages(pdf_path) or estimate_pages(len(incidents_dicts), problems)
     
     print(f"  ✓ Generated: {instance_id}.pdf ({pdf_pages} pages, {pdf_size / 1024:.1f} KB)")
     
@@ -228,6 +232,7 @@ async def generate_instance(
         "num_claims": len(incidents_dicts),
         "pages_estimate": pdf_pages,
         "problems": enabled_problems,
+        "layout_templates": list(generator.last_layout_templates),
         "has_duplicates": problems.get("duplicates", False),
         "seed": seed,
         "files": {
@@ -282,7 +287,7 @@ def rebuild_metadata(output_dir: Path, base_seed: int) -> dict[str, Any]:
         if html_path.exists():
             write_canonical_markdown_from_html(html_path, canonical_path)
         canonical_size = canonical_path.stat().st_size if canonical_path.exists() else 0
-        pages_estimate = estimate_pages(len(data), problems)
+        pages_estimate = count_pdf_pages(pdf_path) or estimate_pages(len(data), problems)
         transcripts_available = []
         if canonical_path.exists():
             transcripts_available.append("canonical")
@@ -317,7 +322,7 @@ def rebuild_metadata(output_dir: Path, base_seed: int) -> dict[str, Any]:
         "dataset_name": _DATASET_NAME,
         "version": _dataset_version(),
         "description": _DATASET_DESCRIPTION,
-        "generated_at": datetime.now().isoformat(),
+        "generated_at": datetime.now(timezone.utc).isoformat(),
         "base_seed": base_seed,
         "total_instances": len(instances),
         "total_claims": total_claims,
@@ -346,6 +351,23 @@ def estimate_pages(num_claims: int, problems: dict[str, bool]) -> int:
         return max(3, int(num_claims / base_claims_per_page) + 2)
     
     return max(2, int(num_claims / base_claims_per_page))
+
+
+def count_pdf_pages(pdf_path: Path) -> int | None:
+    """Return rendered PDF page count when poppler/pdfinfo is available."""
+    if not pdf_path.exists():
+        return None
+    try:
+        result = subprocess.run(
+            ["pdfinfo", str(pdf_path)],
+            check=True,
+            capture_output=True,
+            text=True,
+        )
+    except (OSError, subprocess.CalledProcessError):
+        return None
+    match = re.search(r"^Pages:\s+(\d+)", result.stdout, flags=re.MULTILINE)
+    return int(match.group(1)) if match else None
 
 
 async def generate_tier(
@@ -440,7 +462,7 @@ async def generate_all_benchmarks(
         "dataset_name": _DATASET_NAME,
         "version": _dataset_version(),
         "description": _DATASET_DESCRIPTION,
-        "generated_at": datetime.now().isoformat(),
+        "generated_at": datetime.now(timezone.utc).isoformat(),
         "base_seed": base_seed,
         "total_instances": len(all_instances),
         "total_claims": total_claims,
@@ -490,7 +512,7 @@ Examples:
   # Custom seed for different dataset
   python benchmarks/generate_claims_benchmark.py -s 12345
 
-  # Rebuild claims/metadata.json from existing outputs
+  # Rebuild flat working metadata from existing outputs
   python benchmarks/generate_claims_benchmark.py --rebuild-metadata
         """,
     )
@@ -500,7 +522,7 @@ Examples:
         "--output",
         type=str,
         default="claims",
-        help="Output directory (default: claims/)",
+        help="Flat working output directory under benchmarks/ (default: claims/)",
     )
     parser.add_argument(
         "-s",

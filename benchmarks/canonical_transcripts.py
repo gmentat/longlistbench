@@ -201,12 +201,58 @@ def _render_simple_text(node: HtmlNode) -> str:
     return _collect_text(node, br_newline=True)
 
 
+def _has_descendant_table(node: HtmlNode) -> bool:
+    return any(child.tag == "table" or _has_descendant_table(child) for child in _iter_child_nodes(node))
+
+
+def _render_generic_page_section(node: HtmlNode) -> str:
+    """Render newer synthetic page sections that do not use legacy block classes."""
+    lines: list[str] = []
+
+    def walk(current: HtmlNode) -> None:
+        for child in _iter_child_nodes(current):
+            if child.tag in {"style", "script"}:
+                continue
+            if child.tag == "table":
+                table_md = _markdown_table(child)
+                if table_md:
+                    lines.append(table_md)
+                continue
+            if child.tag in {"h1", "h2", "h3", "p", "aside"}:
+                text = _collect_text(child, br_newline=True)
+                if text:
+                    lines.append(text)
+                continue
+            if _has_descendant_table(child):
+                walk(child)
+                continue
+            child_nodes = list(_iter_child_nodes(child))
+            text = _collect_text(child, br_newline=True)
+            if text and (not child_nodes or child.tag in {"div", "main"}):
+                lines.append(text)
+                continue
+            walk(child)
+
+    walk(node)
+
+    deduped: list[str] = []
+    for line in lines:
+        line = line.strip()
+        if line and (not deduped or deduped[-1] != line):
+            deduped.append(line)
+    return "\n\n".join(deduped)
+
+
 def _iter_blocks(node: HtmlNode) -> Iterable[tuple[str, str]]:
     for child in _iter_child_nodes(node):
         if child.tag in {"style", "script"}:
             continue
         if "page-break" in child.classes:
             yield ("page_break", "")
+            continue
+        if "page" in child.classes:
+            yield ("page_break", "")
+            yield ("block", _render_generic_page_section(child))
             continue
         if "header" in child.classes:
             yield ("block", _render_header(child))

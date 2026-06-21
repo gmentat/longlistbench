@@ -34,6 +34,7 @@ try:
         trace_dir,
         traces_enabled,
     )
+    from .evaluation_metrics import normalize_record_predictions, uses_record_evaluator
 except ImportError:
     from extraction_core import (
         _LOSS_RUN_EXTRACTION_SCHEMA_JSON,
@@ -44,15 +45,19 @@ except ImportError:
         trace_dir,
         traces_enabled,
     )
+    from evaluation_metrics import normalize_record_predictions, uses_record_evaluator
 
 
 _AGENT_INPUT_FILE = "docs/document_ocr.md"
+_INCIDENT_OUTPUT_FILE = "output/incidents.json"
+_RECORD_OUTPUT_FILE = "output/records.json"
+_POLICY_AGENT_EXCLUDED_FIELDS = {"record_id", "applies_to_record_id"}
 
-AGENT_INSTRUCTIONS = """You extract structured data from a document.
+AGENT_INCIDENT_INSTRUCTIONS = """You extract structured data from a document.
 
 In your sandbox workspace:
 - Input:  {input_file} — the OCR of one insurance loss-run document.
-- Output: output/incidents.json — write your result here.
+- Output: {output_file} — write your result here.
 
 You have a full Linux sandbox: you can run shell commands and Python, read,
 search, and slice files, install packages, and write files. The document may be
@@ -81,11 +86,15 @@ Verify your output before finishing — do not trust a first pass:
 
 Schema (JSON Schema):
 {schema_json}
-""".format(input_file=_AGENT_INPUT_FILE, schema_json=_LOSS_RUN_EXTRACTION_SCHEMA_JSON)
+""".format(
+    input_file=_AGENT_INPUT_FILE,
+    output_file=_INCIDENT_OUTPUT_FILE,
+    schema_json=_LOSS_RUN_EXTRACTION_SCHEMA_JSON,
+)
 
 
-_AGENT_TASK_PROMPT = (
-    f"Extract all incidents from {_AGENT_INPUT_FILE} into output/incidents.json."
+_INCIDENT_TASK_PROMPT = (
+    f"Extract all incidents from {_AGENT_INPUT_FILE} into {_INCIDENT_OUTPUT_FILE}."
 )
 
 # Per-document sandbox working dirs must live under the repo root: the SDK's
@@ -113,6 +122,90 @@ def _usage_to_dict(usage) -> dict | None:
         "reasoning_tokens": getattr(otd, "reasoning_tokens", None) if otd is not None else None,
         "total_tokens": getattr(usage, "total_tokens", None),
     }
+
+
+def _field_summary_for_records(ground_truth: list[dict]) -> str:
+    """Describe the policy-record output contract without leaking target values."""
+    by_type: dict[str, set[str]] = {}
+    all_fields: set[str] = set()
+    for record in ground_truth:
+        if not isinstance(record, dict):
+            continue
+        record_type = str(record.get("record_type") or "<missing_record_type>")
+        fields = {str(k) for k in record.keys()} - _POLICY_AGENT_EXCLUDED_FIELDS
+        by_type.setdefault(record_type, set()).update(fields)
+        all_fields.update(fields)
+
+    lines = [
+        "Output JSON shape:",
+        '{ "records": [ ... ] }',
+        "",
+        "General requirements:",
+        "- Extract every target policy record visible in the document.",
+        "- Every output object must include record_type.",
+        "- Use the exact field names below; do not invent benchmark-only fields that are not listed.",
+        "- If a listed field is not visible for a record, use an empty string.",
+        "- Preserve policy numbers, form numbers, edition dates, class codes, locations, limits, rates, and premiums exactly as shown.",
+        "- Do not deduplicate repeated records unless they are exact duplicate rows for the same policy item.",
+        "",
+        "Allowed record types and fields:",
+    ]
+    for record_type in sorted(by_type):
+        fields = ", ".join(sorted(by_type[record_type]))
+        lines.append(f"- {record_type}: {fields}")
+    lines.extend(
+        [
+            "",
+            "All allowed fields:",
+            ", ".join(sorted(all_fields)),
+            "",
+            "Target-scope rules:",
+            "- Extract scheduled records that match the listed record types and fields, not every policy limit, notice, condition, or generic form mention.",
+            "- Do not create records whose key scoping fields are blank when those fields are listed for that record type.",
+            "- For bop_coverage_item, require a location_number, building_number, scheduled coverage name, limit, class_code, and premium; ignore general liability limits that are not location/building scheduled property rows.",
+            "- For policy_premium_item, require the scheduled premium basis plus the item/location/class fields listed for that record type.",
+            "- For policy_form_item, extract form rows tied to the scheduled target items; do not extract unrelated policy-jacket, notice, or generic carrier form rows unless the listed fields tie them to a target item.",
+            "- For policy_endorsement_item, extract endorsement/detail rows tied to a scheduled target item; do not extract every reference to an endorsement title in prose.",
+            "- For policy_location_item, extract one record per unique scheduled location/building/classification row, not one per repeated mention.",
+        ]
+    )
+    return "\n".join(lines)
+
+
+def _build_agent_contract(ground_truth: list[dict] | None) -> tuple[str, str, str, bool]:
+    """Return instructions, task prompt, output file, and whether records are expected."""
+    if ground_truth and uses_record_evaluator(ground_truth):
+        record_contract = _field_summary_for_records(ground_truth)
+        instructions = f"""You extract structured data from a document.
+
+In your sandbox workspace:
+- Input:  {_AGENT_INPUT_FILE} - the OCR of one commercial insurance policy packet.
+- Output: {_RECORD_OUTPUT_FILE} - write your result here.
+
+You have a full Linux sandbox: you can run shell commands and Python, read,
+search, and slice files, install packages, and write files. The document may be
+large. How you approach the extraction is up to you - choose whatever you judge
+most reliable for this document.
+
+Goal: extract EVERY target policy record from the document into {_RECORD_OUTPUT_FILE}.
+
+The document may require long-range evidence joins across declarations,
+locations, rating schedules, forms, endorsements, and premium summaries. Verify
+records against multiple sections when a field is defined in a distant section.
+
+{record_contract}
+
+Verify your output before finishing:
+- Confirm you captured records across the beginning, middle, and end of the packet.
+- Spot-check records from each record_type against the source text.
+- Ensure each field holds only its own value, with no neighboring labels or carried-over values.
+- Ensure {_RECORD_OUTPUT_FILE} is valid JSON.
+- When finished, also print the final JSON object once as a ```json code block.
+"""
+        task_prompt = f"Extract all target policy records from {_AGENT_INPUT_FILE} into {_RECORD_OUTPUT_FILE}."
+        return instructions, task_prompt, _RECORD_OUTPUT_FILE, True
+
+    return AGENT_INCIDENT_INSTRUCTIONS, _INCIDENT_TASK_PROMPT, _INCIDENT_OUTPUT_FILE, False
 
 
 def _summarize_agent_behavior(new_items) -> list[dict]:
@@ -176,8 +269,9 @@ def setup_openai_agent():
     return {"docker_client": docker_client, "image": image}
 
 
-async def _agent_extract_async(client, model_id, work_dir, task_prompt):
+async def _agent_extract_async(client, model_id, work_dir, task_prompt, instructions, output_file):
     """Run the sandbox agent; return dict(final_output, file_bytes, usage, behavior)."""
+    from agents import ModelSettings
     from agents import Runner
     from agents.run import RunConfig
     from agents.sandbox import Manifest, SandboxAgent, SandboxRunConfig
@@ -187,15 +281,23 @@ async def _agent_extract_async(client, model_id, work_dir, task_prompt):
         DockerSandboxClient,
         DockerSandboxClientOptions,
     )
+    from openai.types.shared import Reasoning
 
     manifest = Manifest(entries={
         _AGENT_INPUT_FILE: LocalFile(src=work_dir / _AGENT_INPUT_FILE),
-        "output": Dir(description="Write the extracted incidents.json here."),
+        "output": Dir(description="Write the extracted JSON result here."),
     })
+    reasoning_effort = os.getenv("LLB_AGENT_REASONING_EFFORT", "xhigh").strip().lower()
+    verbosity = os.getenv("LLB_AGENT_VERBOSITY", "high").strip().lower()
+    model_settings = ModelSettings(
+        reasoning=Reasoning(effort=reasoning_effort) if reasoning_effort else None,
+        verbosity=verbosity if verbosity in {"low", "medium", "high"} else None,
+    )
     agent = SandboxAgent(
         name="LongListBench extractor",
         model=model_id,
-        instructions=AGENT_INSTRUCTIONS,
+        model_settings=model_settings,
+        instructions=instructions,
         default_manifest=manifest,
     )
     options = DockerSandboxClientOptions(image=client["image"])
@@ -218,7 +320,7 @@ async def _agent_extract_async(client, model_id, work_dir, task_prompt):
         usage = _usage_to_dict(getattr(getattr(result, "context_wrapper", None), "usage", None))
         behavior = _summarize_agent_behavior(getattr(result, "new_items", None))
         try:
-            stream = await session.read(Path("output/incidents.json"))
+            stream = await session.read(Path(output_file))
             data = stream.read()
             file_bytes = data if isinstance(data, bytes) else str(data).encode("utf-8")
         except Exception:
@@ -231,30 +333,38 @@ async def _agent_extract_async(client, model_id, work_dir, task_prompt):
     }
 
 
-def _run_agent_extraction(client, model_id, work_dir, task_prompt) -> dict:
+def _run_agent_extraction(client, model_id, work_dir, task_prompt, instructions, output_file) -> dict:
     """Sync wrapper around the async agent run.
 
     Safe to call ``asyncio.run`` here: the evaluation harness invokes extract_fn
     inside a fresh ThreadPoolExecutor worker that has no running event loop. This
     function is the seam unit tests monkeypatch to avoid real Docker/API.
     """
-    return asyncio.run(_agent_extract_async(client, model_id, work_dir, task_prompt))
+    return asyncio.run(_agent_extract_async(client, model_id, work_dir, task_prompt, instructions, output_file))
 
 
-def extract_with_openai_agent(client, ocr_text: str, model_id: str) -> list[dict]:
+def extract_with_openai_agent(
+    client,
+    ocr_text: str,
+    model_id: str,
+    *,
+    ground_truth: list[dict] | None = None,
+    sample: str | None = None,
+) -> list[dict]:
     """Agentic regime: the model explores the OCR file in a Docker sandbox and extracts itself.
 
     Not decorated with @retry: agent runs are long and expensive, so a failure
     should surface as an error rather than silently re-running multiple times.
     """
     _AGENT_RUN_ROOT.mkdir(parents=True, exist_ok=True)
+    instructions, task_prompt, output_file, expects_records = _build_agent_contract(ground_truth)
     work_dir = Path(tempfile.mkdtemp(prefix="llb_agent_", dir=_AGENT_RUN_ROOT))
     try:
         input_path = work_dir / _AGENT_INPUT_FILE
         input_path.parent.mkdir(parents=True, exist_ok=True)
         input_path.write_text(ocr_text, encoding="utf-8")
 
-        res = _run_agent_extraction(client, model_id, work_dir, _AGENT_TASK_PROMPT)
+        res = _run_agent_extraction(client, model_id, work_dir, task_prompt, instructions, output_file)
         final_output = res.get("final_output")
         file_bytes = res.get("file_bytes")
         usage = res.get("usage")
@@ -299,9 +409,9 @@ def extract_with_openai_agent(client, ocr_text: str, model_id: str) -> list[dict
             raw = parse_json_response(final_output)
         if raw is None:
             raise ValueError(
-                "Agent produced neither a readable output/incidents.json nor parseable final output"
+                f"Agent produced neither a readable {output_file} nor parseable final output"
             )
 
-        return _validate_and_normalize_predictions(raw)
+        return normalize_record_predictions(raw) if expects_records else _validate_and_normalize_predictions(raw)
     finally:
         shutil.rmtree(work_dir, ignore_errors=True)

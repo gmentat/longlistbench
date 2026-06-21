@@ -203,9 +203,9 @@ def record_trace(filename: str, entry: dict) -> None:
 
 def setup_gemini():
     """Configure Gemini API."""
-    api_key = os.getenv('GEMINI_API_KEY')
+    api_key = os.getenv('VERTEX_AI_API_KEY') or os.getenv('GOOGLE_API_KEY') or os.getenv('GEMINI_API_KEY')
     if not api_key:
-        raise ValueError("GEMINI_API_KEY not set in environment")
+        raise ValueError("Set VERTEX_AI_API_KEY, GOOGLE_API_KEY, or GEMINI_API_KEY in environment")
     import google.genai as genai
     return genai.Client(api_key=api_key)
 

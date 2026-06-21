@@ -83,6 +83,41 @@ class AgenticExtractionTests(unittest.TestCase):
                     client=None, ocr_text="irrelevant", model_id="gpt-5.5"
                 )
 
+    def test_extract_with_openai_agent_switches_to_policy_records(self) -> None:
+        payload = json.dumps(
+            {
+                "records": [
+                    {
+                        "record_type": "policy_form_item",
+                        "policy_number": "P-1",
+                        "form_number": "CG 00 01",
+                        "form_title": "Commercial General Liability Coverage Form",
+                    }
+                ]
+            }
+        ).encode("utf-8")
+        ground_truth = [
+            {
+                "record_type": "policy_form_item",
+                "policy_number": "P-1",
+                "form_number": "CG 00 01",
+                "form_title": "Commercial General Liability Coverage Form",
+            }
+        ]
+        seam = {"final_output": None, "file_bytes": payload, "usage": None, "behavior": []}
+        with mock.patch.object(regime_agentic, "_run_agent_extraction", return_value=seam) as run_agent:
+            result = regime_agentic.extract_with_openai_agent(
+                client=None,
+                ocr_text="policy ocr text",
+                model_id="gpt-5.5",
+                ground_truth=ground_truth,
+                sample="mixed_cgl_040_001",
+            )
+        self.assertEqual(result, ground_truth)
+        args = run_agent.call_args.args
+        self.assertIn("records.json", args[5])
+        self.assertIn("policy_form_item", args[4])
+
 
 class OpenAiOneshotTests(unittest.TestCase):
     def _fake_client(self, content: str) -> mock.MagicMock:
