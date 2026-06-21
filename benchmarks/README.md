@@ -47,6 +47,11 @@ Run these commands from the repository root.
    LLB_GEMINI_CHUNK_MAX_INPUT_TOKENS=12000
    ```
 
+4. Install optional Hugging Face export dependencies only when packaging the dataset for the Hub:
+   ```bash
+   python -m pip install -r benchmarks/requirements-hf.txt
+   ```
+
 ## Generate Claims Benchmark
 
 Generate synthetic benchmark artifacts:
@@ -265,6 +270,41 @@ This repository includes released evaluation artifacts under:
 - `benchmarks/results/released/medium/`
 - `benchmarks/results/released/hard/`
 - `benchmarks/results/released/extreme/`
+
+## Hugging Face Export
+
+Package the current `data/` directory as a Hugging Face dataset repository:
+
+```bash
+python -m pip install -r benchmarks/requirements-hf.txt
+python benchmarks/export_hf_dataset.py \
+  --input data \
+  --output dist/huggingface/longlistbench \
+  --repo-id kaydotai/LongListBench \
+  --overwrite
+```
+
+The export writes:
+
+- `README.md` - Hugging Face dataset card with config metadata.
+- `data/core_claims/test-00000-of-00001.parquet` - 80 core claim PDFs.
+- `data/claim_multihop/test-00000-of-00001.parquet` - 3 cross-page claim PDFs.
+- `data/policy_multihop/test-00000-of-00001.parquet` - 3 policy packets.
+- `schemas/*.schema.json` - public extraction schemas.
+- `metadata/manifest.json` - source manifest copied from `data/`.
+
+Each Parquet row includes `document_id`, `domain`, `difficulty`, `document_format`, `target_count`, embedded `pdf`, JSON-string `ground_truth`, JSON-string `metadata`, `canonical_transcript`, and `ocr_transcript` when available.
+
+To upload after inspection:
+
+```bash
+python benchmarks/export_hf_dataset.py \
+  --input data \
+  --output dist/huggingface/longlistbench \
+  --repo-id kaydotai/LongListBench \
+  --overwrite \
+  --upload
+```
 
 ## Directory Structure
 

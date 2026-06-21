@@ -1,11 +1,13 @@
 # Repository Makefile (convenience targets)
 
-.PHONY: help setup generate generate-multihop generate-policy-multihop ocr ocr-multihop eval paper paper-quick clean
+.PHONY: help setup generate generate-multihop generate-policy-multihop ocr ocr-multihop eval hf-export paper paper-quick clean
 
 VENV_DIR ?= .venv
 EVAL_OUT ?= benchmarks/results/scratch/eval_ocr100
 EVAL_MODELS ?= gemini gpt52
 EVAL_WORKERS ?= 2
+HF_OUT ?= dist/huggingface/longlistbench
+HF_REPO_ID ?= kaydotai/LongListBench
 OCR_ENGINE ?= gemini
 OCR_MODEL ?= gemini-3.5-flash
 POLICY_TEXT_GENERATOR ?= template
@@ -21,6 +23,7 @@ help:
 	@echo "  make ocr         - OCR all generated PDFs (requires GEMINI_API_KEY)"
 	@echo "  make ocr-multihop - OCR cross-page multi-hop PDFs"
 	@echo "  make eval        - Run evaluation (requires model API keys unless --offline)"
+	@echo "  make hf-export   - Build a local Hugging Face dataset package under dist/"
 	@echo "  make paper       - Build the paper PDF (full build with bibliography)"
 	@echo "  make paper-quick - Quick paper build (single pass, no bibliography update)"
 	@echo "  make clean       - Clean paper build artifacts"
@@ -51,6 +54,9 @@ ocr-multihop:
 
 eval:
 	. $(VENV_DIR)/bin/activate && python benchmarks/evaluate_models.py --models $(EVAL_MODELS) --parallel-models --model-workers $(EVAL_WORKERS) --output-dir $(EVAL_OUT)
+
+hf-export:
+	. $(VENV_DIR)/bin/activate && python benchmarks/export_hf_dataset.py --input data --output $(HF_OUT) --repo-id $(HF_REPO_ID) --overwrite
 
 paper:
 	$(MAKE) -C paper pdf

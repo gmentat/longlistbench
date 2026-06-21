@@ -48,6 +48,42 @@ make paper
 
 See [`benchmarks/README.md`](benchmarks/README.md) for benchmark documentation.
 
+## Hugging Face Dataset Package
+
+The repository can export a LongArray-style Hugging Face dataset package with one row per PDF, embedded PDF bytes, JSON ground truth, metadata, and available transcripts:
+
+```bash
+source .venv/bin/activate
+python -m pip install -r benchmarks/requirements-hf.txt
+
+make hf-export
+```
+
+By default this writes an ignored local package to `dist/huggingface/longlistbench/` for `kaydotai/LongListBench`. Override the target repo ID with:
+
+```bash
+HF_REPO_ID=your-org/your-dataset make hf-export
+```
+
+The exported Hugging Face configs are:
+
+| Config | Contents |
+|--------|----------|
+| `core_claims` | 80 claim loss-run PDFs across easy, medium, hard, and extreme regimes |
+| `claim_multihop` | 3 claim PDFs requiring long-range cross-page joins |
+| `policy_multihop` | 3 policy packets with heterogeneous BOP, WC, and CGL policy records |
+
+Upload only after inspecting the generated package:
+
+```bash
+python benchmarks/export_hf_dataset.py \
+  --input data \
+  --output dist/huggingface/longlistbench \
+  --repo-id kaydotai/LongListBench \
+  --overwrite \
+  --upload
+```
+
 ## Versioning and Citation
 
 - **Version**: see `VERSION`.
