@@ -138,6 +138,10 @@ class HuggingFaceExportTests(unittest.TestCase):
         self.assertIn("pretty_name: LongListBench", card)
         self.assertIn("path: data/core_claims/test-*.parquet", card)
         self.assertIn('load_dataset("kaydotai/LongListBench", "core_claims", split="test")', card)
+        self.assertIn("Pdf(decode=False)", card)
+        self.assertIn("## Canonical Scoring", card)
+        self.assertIn("schemas/policy_packet_item.schema.json", card)
+        self.assertIn("@misc{fedoruk2026longlistbench", card)
         self.assertIn("| policy_multihop |", card)
 
 
