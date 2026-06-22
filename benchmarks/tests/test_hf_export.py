@@ -122,27 +122,52 @@ class HuggingFaceExportTests(unittest.TestCase):
 
     def test_dataset_card_lists_hf_config_paths(self):
         summary = {
-            "core_claims": {"rows": 80, "targets": 6828, "min_pages": 7, "max_pages": 332, "domains": {"claims": 80}},
-            "claim_multihop": {"rows": 3, "targets": 77, "min_pages": 76, "max_pages": 198, "domains": {"claims": 3}},
+            "core_claims": {
+                "rows": 80,
+                "targets": 6828,
+                "min_targets": 10,
+                "max_targets": 500,
+                "min_pages": 7,
+                "max_pages": 332,
+                "domains": {"claims": 80},
+                "target_fields": ["incidents"],
+            },
+            "claim_multihop": {
+                "rows": 3,
+                "targets": 77,
+                "min_targets": 12,
+                "max_targets": 40,
+                "min_pages": 76,
+                "max_pages": 198,
+                "domains": {"claims": 3},
+                "target_fields": ["incidents"],
+            },
             "policy_multihop": {
                 "rows": 3,
                 "targets": 345,
+                "min_targets": 48,
+                "max_targets": 184,
                 "min_pages": 90,
                 "max_pages": 214,
                 "domains": {"policy_review": 3},
+                "target_fields": ["records"],
             },
         }
 
         card = export_hf_dataset.dataset_card("kaydotai/LongListBench", summary)
 
         self.assertIn("pretty_name: LongListBench", card)
+        self.assertIn("- benchmark", card)
         self.assertIn("path: data/core_claims/test-*.parquet", card)
+        self.assertIn("Records/doc range", card)
+        self.assertIn("| `core_claims` |", card)
         self.assertIn('load_dataset("kaydotai/LongListBench", "core_claims", split="test")', card)
         self.assertIn("Pdf(decode=False)", card)
         self.assertIn("## Canonical Scoring", card)
+        self.assertIn("def score_document", card)
         self.assertIn("schemas/policy_packet_item.schema.json", card)
         self.assertIn("@misc{fedoruk2026longlistbench", card)
-        self.assertIn("| policy_multihop |", card)
+        self.assertIn("| `policy_multihop` |", card)
 
 
 if __name__ == "__main__":

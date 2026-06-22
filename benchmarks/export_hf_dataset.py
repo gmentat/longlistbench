@@ -158,12 +158,16 @@ def summarize_rows(rows_by_config: dict[str, list[dict[str, Any]]]) -> dict[str,
         page_counts = [row["num_pages"] for row in rows]
         target_counts = [row["target_count"] for row in rows]
         domains = Counter(row["domain"] for row in rows)
+        target_fields = sorted(set(row["target_field"] for row in rows))
         summary[config_name] = {
             "rows": len(rows),
             "targets": sum(target_counts),
+            "min_targets": min(target_counts) if target_counts else 0,
+            "max_targets": max(target_counts) if target_counts else 0,
             "min_pages": min(page_counts) if page_counts else 0,
             "max_pages": max(page_counts) if page_counts else 0,
             "domains": dict(sorted(domains.items())),
+            "target_fields": target_fields,
         }
     return summary
 
@@ -232,9 +236,10 @@ def dataset_card(repo_id: str, summary: dict[str, dict[str, Any]]) -> str:
     )
     config_rows = "\n".join(
         [
-            "| {name} | {description} | {rows} | {targets} | {min_pages}-{max_pages} |".format(
+            "| `{name}` | {description} | `{target_field}` | {rows} | {min_targets}-{max_targets} | {targets} | {min_pages}-{max_pages} |".format(
                 name=config_name,
                 description=CONFIG_DESCRIPTIONS[config_name],
+                target_field="`, `".join(summary[config_name]["target_fields"]),
                 **summary[config_name],
             )
             for config_name in CONFIG_ORDER
@@ -251,6 +256,7 @@ language:
 license: mit
 tags:
 - document-extraction
+- benchmark
 - synthetic
 - pdf
 - ocr
@@ -278,8 +284,8 @@ The dataset contains {total_rows} PDF documents and {total_targets} target recor
 
 ## Configs and Data Viewer
 
-| Config | Description | Documents | Target records | Page range |
-|---|---|---:|---:|---:|
+| Config | Description | Target field | Documents | Records/doc range | Target records | Page range |
+|---|---|---|---:|---:|---:|---:|
 {config_rows}
 
 Pick one config when loading:
@@ -349,25 +355,62 @@ The source repository includes the reference evaluator in `benchmarks/evaluation
 4. **Metrics.** Recall is `found_gold_field_pairs / total_gold_field_pairs`. Precision is `found_field_pairs / total_pred_field_pairs`. F1 is the harmonic mean. Missing records reduce recall; extra predicted fields or records reduce precision.
 5. **Aggregation.** Reports include per-document metrics plus corpus-level micro scores over all field-value pairs. Always report `predicted_count` beside F1 because long-list failures often show up as truncation or over-extraction.
 
-Reference scoring skeleton:
+Official scoring uses the repository evaluator. The following compact scorer is self-contained and useful for smoke checks; it follows the same field-pair precision/recall idea, but the repository implementation adds stricter date/decimal canonicalization and policy-record matching details.
 
 ```python
 import json
+from collections import Counter
 from datasets import load_dataset
-from benchmarks.evaluation_metrics import evaluate_extraction, evaluate_record_extraction
 
-config = "policy_multihop"
+def flatten(value, prefix=""):
+    if isinstance(value, dict):
+        pairs = []
+        for key, child in sorted(value.items()):
+            name = f"{{prefix}}.{{key}}" if prefix else str(key)
+            pairs.extend(flatten(child, name))
+        return pairs
+    if isinstance(value, list):
+        pairs = []
+        for child in value:
+            pairs.extend(flatten(child, prefix))
+        return pairs
+    return [(prefix, "" if value is None else str(value).strip())]
+
+def row_key(row, target_field):
+    if target_field == "incidents":
+        return str(row.get("incident_number", "")).strip().lstrip("#")
+    signature_fields = [
+        "record_type", "item_id", "coverage", "coverage_part", "form_number",
+        "location_number", "building_number", "class_code", "state",
+    ]
+    return "|".join(str(row.get(field, "")).strip() for field in signature_fields)
+
+def field_pairs(obj, target_field):
+    rows = obj[target_field] if isinstance(obj, dict) else obj
+    pairs = Counter()
+    for row in rows:
+        if not isinstance(row, dict):
+            continue
+        key = row_key(row, target_field)
+        pairs.update((key, field, value) for field, value in flatten(row))
+    return pairs
+
+def score_document(pred, gold, target_field):
+    pred_pairs = field_pairs(pred, target_field)
+    gold_pairs = field_pairs(gold, target_field)
+    found = sum((pred_pairs & gold_pairs).values())
+    recall = found / sum(gold_pairs.values()) if gold_pairs else 0.0
+    precision = found / sum(pred_pairs.values()) if pred_pairs else 0.0
+    f1 = 2 * precision * recall / (precision + recall) if precision + recall else 0.0
+    return {{"f1": f1, "recall": recall, "precision": precision}}
+
+config = "claim_multihop"
 ds = load_dataset("{repo_id}", config, split="test")
 
 for row in ds.remove_columns("pdf"):
     gold = json.loads(row["ground_truth"])
     pred = my_predictions[row["document_id"]]
-
-    if row["target_record_type"] == "policy_packet_item":
-        metrics = evaluate_record_extraction(pred.get("records", pred), gold["records"])
-    else:
-        metrics = evaluate_extraction(pred.get("incidents", pred), gold["incidents"])
-
+    metrics = score_document(pred, gold, row["target_field"])
     print(row["document_id"], metrics["f1"], metrics["recall"], metrics["precision"])
 ```
 
@@ -391,7 +434,14 @@ All documents include canonical transcripts. The released multi-hop rows include
 
 ## Provenance
 
-The documents are synthetic. Policy packets are structurally inspired by commercial insurance policy workflows, but names, values, prose, and identifiers are generated fixtures. OCR transcripts are included only where OCR has been run and accepted for the released data.
+The documents are synthetic. Each sample is produced by a reproducible generation pipeline:
+
+1. Deterministic fixtures create the schema-shaped ground truth.
+2. Layout generators project the records into claim schedules, tables, rosters, ledgers, declarations, forms, endorsements, rating schedules, and policy conditions.
+3. HTML/CSS rendering produces the source PDF and a clean canonical transcript.
+4. Optional Gemini OCR over rendered page images produces an OCR transcript for rows where OCR has been run and accepted.
+
+Policy packets are structurally inspired by commercial insurance policy workflows, but names, values, prose, and identifiers are generated fixtures.
 
 No real insureds, claimants, policies, financial accounts, or customer documents are represented. Real documents were used only as structural references for layout and packet organization.
 
