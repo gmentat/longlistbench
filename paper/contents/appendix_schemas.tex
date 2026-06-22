@@ -82,9 +82,9 @@ ded & financial breakdown & \{\} & Deductible \\
 \end{longtable}
 \endgroup
 
-\subsection*{A.3 Extraction Output Schema}
+\subsection*{A.3 Extraction Output Shape}
 
-Models are expected to return a JSON object matching the following structure:
+Claim/loss-run tasks return incident records:
 
 \begingroup
 \small
@@ -99,9 +99,24 @@ incidents & list of LossRunIncident & required & List of extracted incident reco
 \end{tabular}
 \endgroup
 
+Other long-list tasks return generic records:
+
+\begingroup
+\small
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.16\textwidth} >{\raggedright\arraybackslash}p{0.20\textwidth} >{\raggedright\arraybackslash}p{0.16\textwidth} >{\raggedright\arraybackslash}p{0.36\textwidth}@{}}
+\toprule
+Field & Type & Default & Description \\
+\midrule
+records & list of objects & required & List of extracted target records using the fields specified for that document family \\
+\bottomrule
+\end{tabular}
+\endgroup
+
 \subsection*{A.4 Extraction Prompt Template}
 
-All providers use the same core prompt template shown below. The harness substitutes \texttt{\{schema\_json\}} with the JSON schema for the extraction object and \texttt{\{ocr\_text\}} with the selected transcript condition (`canonical` or `ocr`).
+Prompt-based claim multi-hop incident extraction uses the core template shown below. The harness substitutes \texttt{\{schema\_json\}} with the JSON schema for the extraction object and \texttt{\{ocr\_text\}} with the selected transcript.
 
 \begingroup
 \small
@@ -131,9 +146,20 @@ Document:
 \end{verbatim}
 \endgroup
 
+For generic operations and policy rows, the agentic harness uses a field contract derived from the ground-truth schema family. The output shape is:
+
+\begingroup
+\small
+\begin{verbatim}
+{
+  "records": [ ... ]
+}
+\end{verbatim}
+\endgroup
+
 \subsection*{A.5 Agentic Sandbox Instructions}
 
-The agentic regime uses the same output schema and scorer, but the transcript is provided as a sandbox file rather than inline prompt text. The following instructions are given to the sandbox agent; the harness substitutes the schema after the prompt.
+The agentic regime uses the same output contract and scorer, but the transcript is provided as a sandbox file rather than inline prompt text. The following instructions are given to the sandbox agent for claim incident tasks; generic record tasks, including external loss-run rows, use the same structure with \path{output/records.json} and the allowed field list for the document family.
 
 \begingroup
 \small

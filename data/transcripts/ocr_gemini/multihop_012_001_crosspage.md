@@ -1,31 +1,28 @@
 # Page 1
 
-ACCOUNT WORKPAPER COVER                                                      LOSS RUN WORKPAPER
-
-____________________________________________________________________________________________________
+ACCOUNT WORKPAPER COVER                                                       LOSS RUN WORKPAPER
+________________________________________________________________________________________________
 
   RENEWAL REVIEW COPY
 
   Commercial Auto Loss Run Workpaper
 
-  Prepared for underwriting review. This workpaper combines a primary claim extract with appendices,
-  register pages, handwritten-style notes, and ledger pages retained in the account file.
+  Prepared for underwriting review. This workpaper combines a primary claim extract with appendices, register pages, handwritten-style
+  notes, and ledger pages retained in the account file.
 
+  ACCOUNT                                           VALUATION DATE
+  Stuart Freight Co                                 01/31/2024
 
-  ACCOUNT                                             VALUATION DATE
-  Stuart Freight Co                                   01/31/2024
+  CLAIM COUNT                                       FILE REFERENCE
+  12                                                MULTIHOP_012_001_CROSSPAGE
 
-  CLAIM COUNT                                         FILE REFERENCE
-  12                                                  MULTIHOP_012_001_CROSSPAGE
-
-
-  | Some appendices were inserted from different source systems. Row keys and reference numbers are
-  | retained as printed in the source documents.
-____________________________________________________________________________________________________
+  | Some appendices were inserted from different source systems. Row keys and reference numbers are retained as printed in the
+  | source documents.
+________________________________________________________________________________________________
 
 # Page 2
 
-PORTAL EXPORT RECEIPT                                                        LOSS RUN WORKPAPER
+PORTAL EXPORT RECEIPT                                                           LOSS RUN WORKPAPER
 
 Account Portal
 Login: synthetic-reviewer
@@ -56,21 +53,20 @@ Carrier portal printout retained at the front of the account packet. The page is
 9,L24A6859,IL,Closed,09/01/2023
 10,L24A3974,AR,Open,07/04/2024
 
-Pending review queue: 12
+                                                                            Pending review queue: 12
 
 # Page 3
 
 OFFICIAL REQUEST RESPONSE                                                       LOSS RUN WORKPAPER
 __________________________________________________________________________________________________
 
-                                                   K
+                                              K
 
-                                 Department of Motor Carrier Records
+                             Department of Motor Carrier Records
 
-                                      Report of Services Provided
+                                 Report of Services Provided
 
-Note: This synthetic page imitates a public-records request response often embedded in claim packets. It is not
-a billing statement and does not contain the complete target schedule.
+Note: This synthetic page imitates a public-records request response often embedded in claim packets. It is not a billing statement and does not contain the complete target schedule.
 
 Reference,State,Event Date,Status
 L240001,MO,02/24/2024,Open
@@ -79,11 +75,11 @@ L230003,AZ,08/27/2023,Open
 L240004,PA,12/28/2024,Open
 L240005,AR,12/09/2024,Open
 
-                                       Do not pay from this report.
+                                   Do not pay from this report.
 
 # Page 4
 
-PRIMARY CLAIM EXTRACT                                                     LOSS RUN WORKPAPER
+PRIMARY CLAIM EXTRACT                                                    LOSS RUN WORKPAPER
 
 Claim Extract - Primary Schedule
 
@@ -105,7 +101,7 @@ Claim #,Reference,Policy,Unit,Cause,Status,DOL,State,Reported
 
 # Page 5
 
-VEHICLE UNIT REFERENCE EXPORT, LOSS RUN WORKPAPER
+VEHICLE UNIT REFERENCE EXPORT,LOSS RUN WORKPAPER
 
 Vehicle / Unit Reference Export
 
@@ -125,32 +121,32 @@ Veh #,Company vehicle #,Year,Make,Body Type,State
 
 # Page 6
 
-RISK CONTROL FOLLOW-UP NOTES                                    LOSS RUN WORKPAPER
-__________________________________________________________________________________
+RISK CONTROL FOLLOW-UP NOTES                                                LOSS RUN WORKPAPER
+_______________________________________________________________________________________________
 
-                           RISK CONTROL FOLLOW-UP NOTES
+                                  RISK CONTROL FOLLOW-UP NOTES
 
-Packet:             MULTIHOP_012_001_CROSSPAGE
-Related unit:       2024 PB 600002
-Review cycle:       Renewal file checklist
+Packet:                 MULTIHOP_012_001_CROSSPAGE
+Related unit:           2024 PB 600002
+Review cycle:           Renewal file checklist
 
-X,Fleet safety meeting minutes retained,Safety
-,Post-accident drug test documentation reviewed,Safety
-X,Driver remedial training assigned,Fleet
-X,Telematics exception report requested,UW
-,Maintenance file cross-check complete,Safety
-X,Open recommendation carried to renewal file,UW
-X,Claim trend reviewed with account manager,Safety
-,No additional field visit required,Safety
+[X],Fleet safety meeting minutes retained,Safety
+[ ],Post-accident drug test documentation reviewed,Safety
+[X],Driver remedial training assigned,Fleet
+[X],Telematics exception report requested,UW
+[ ],Maintenance file cross-check complete,Safety
+[X],Open recommendation carried to renewal file,UW
+[X],Claim trend reviewed with account manager,Safety
+[ ],No additional field visit required,Safety
 
 # Page 7
 
-DRIVER QUALIFICATION AUDIT                                                    LOSS RUN WORKPAPER
+DRIVER QUALIFICATION AUDIT                                                      LOSS RUN WORKPAPER
 
 Driver Qualification Audit
 
-AUDIT FILE                      REVIEW TYPE                             REVIEWER
-DQ-SSPAGE-002                   Annual compliance sampling              Safety desk
+AUDIT FILE                      REVIEW TYPE                                     REVIEWER
+DQ-SSPAGE-002                   Annual compliance sampling                      Safety desk
 
 "Driver","License State","License #","Medical Exp.","Finding","Unit"
 "Driver-003, Alex","GA","D85262887","02/2026","Exception noted","600003"
@@ -172,15 +168,15 @@ DQ-SSPAGE-002                   Annual compliance sampling              Safety d
 
 # Page 8
 
-PRIOR CARRIER CORRESPONDENCE                                         LOSS RUN WORKPAPER
-______________________________________________________________________________________
+PRIOR CARRIER CORRESPONDENCE                                                    LOSS RUN WORKPAPER
+__________________________________________________________________________________________________
 
-                           PRIOR CARRIER REQUEST RESPONSE
+                                 PRIOR CARRIER REQUEST RESPONSE
 
-Issue Date:          02-04-2024
-Letter Id:           LC0035470                  ATTN: Account Review Desk
-Case Id:             MULTIHOP_012_001_CROSSPAGE Synthetic Motor Carrier File
-                                                Packet MULTIHOP_012_001_CROSSPAGE
+Issue Date:         02-04-2024
+Letter Id:          LC0035470                     ATTN: Account Review Desk
+Case Id:            MULTIHOP_012_001_CROSSPAGE    Synthetic Motor Carrier File
+                                                  Packet MULTIHOP_012_001_CROSSPAGE
 
 Report of services provided. This page records prior-
 carrier correspondence status and does not contain the complete claim schedule.
@@ -193,18 +189,10 @@ L240007,CA,05/09/2024,Acknowledged
 L230008,OH,06/11/2024,Pending response
 L230009,IL,07/13/2024,Acknowledged
 
-______________________________________________________________________________________
-Record services unit - synthetic correspondence page
+__________________________________________________________________________________________________
+                             Record services unit - synthetic correspondence page
 
 # Page 9
-
-PREMIUM ALLOCATION WORKSHEET                                                 LOSS RUN WORKPAPER
-_________________________________________________________________________________________________
-
-Premium Allocation Worksheet
-
-PACKET                               WORKSHEET PERIOD                    ALLOCATION BASIS
-MULTIHOP_012_001_CROSSPAGE           2024 Policy Year                    Written premium by jurisdiction
 
 Schedule,Jurisdiction,Surcharge,Written Premium,Taxable Premium,Tax Rate,Tax Due,Total Due
 Schedule 004,AL,Y,"108,755","90,723",0.0275,"$2,494.88","$2,701.88"
@@ -222,18 +210,14 @@ Schedule 004,PA,N,181,142,0.0180,$2.56,$10.56
 Schedule 004,TX,Y,"41,293","29,993",0.0310,$929.78,"$1,155.78"
 Schedule 004,VA,Y,"41,145","34,623",0.0180,$623.21,$826.21
 
-_________________________________________________________________________________________________
-                          Synthetic allocation worksheet. Jurisdiction rows are distractors and are not target incident records.
-
 # Page 10
 
-SUBROGATION DIARY EXTRACT                                                                     LOSS RUN WORKPAPER
-________________________________________________________________________________________________________________
+SUBROGATION DIARY EXTRACT                                                      LOSS RUN WORKPAPER
 
 Subrogation Diary Extract
 
-PACKET                              DIARY EXPORT                        PRINTED
-MULTIHOP_012_001_CROSSPAGE          Subrogation module                  03/31/2024
+PACKET                               DIARY EXPORT                       PRINTED
+MULTIHOP_012_001_CROSSPAGE           Subrogation module                 03/31/2024
 
 Diary Date,File #,Reference,Action,Status,Recovery Est.
 03/03/2024,SUB-005-01,L230006,Carrier tender,Closed,"$13,377.00"
@@ -253,46 +237,37 @@ Diary Date,File #,Reference,Action,Status,Recovery Est.
 
 # Page 11
 
-MONTHLY ACCOUNT ACTIVITY                                                                         LOSS RUN WORKPAPER
-
-Monthly Account Activity
-
-ACCOUNT BATCH: MULTIHOP_012_001_CROSSPAGE-006
-ACCOUNTING MONTH: February 2024
-SOURCE: Billing ledger export
-
 Date,Document,Activity,Policy,Status,Amount
-02/02/2024,ACCT-006-01,Audit adjustment,L24A9905,Posted,"$7,894.51"
-02/03/2024,ACCT-006-02,Claim reserve,L23A1604,Reconciled,"$9,309.04"
-02/04/2024,L230009,Fee reversal,L24A6859,Reconciled,"$8,514.10"
-02/05/2024,ACCT-006-04,Premium receipt,L24A3974,Posted,"$3,242.61"
-02/06/2024,ACCT-006-05,Endorsement,L24A9905,Reconciled,"$-9,429.66"
-02/07/2024,L230012,Audit adjustment,L24A7440,Reconciled,"$8,005.13"
-02/08/2024,ACCT-006-07,Claim reserve,L24A3974,Reconciled,"$5,807.03"
-02/09/2024,ACCT-006-08,Fee reversal,L23A1955,Pending,"$9,639.40"
-02/10/2024,L230003,Premium receipt,L23A3286,Pending,"$4,378.81"
-02/11/2024,ACCT-006-10,Endorsement,L24A6859,Reconciled,"$-8,951.96"
-02/12/2024,ACCT-006-11,Audit adjustment,L24A7575,Pending,"$1,450.48"
-02/13/2024,L230006,Claim reserve,L23A2216,Pending,"$8,507.43"
-02/14/2024,ACCT-006-13,Fee reversal,L24A9905,Posted,"$492.98"
-02/15/2024,ACCT-006-14,Premium receipt,L23A1604,Reconciled,"$6,282.77"
-02/16/2024,L230009,Endorsement,L24A6859,Posted,"$-4,173.71"
-02/17/2024,ACCT-006-16,Audit adjustment,L24A3974,Reconciled,"$3,385.87"
-02/18/2024,ACCT-006-17,Claim reserve,L24A9905,Posted,"$2,335.22"
-02/19/2024,L230012,Fee reversal,L23A7440,Reconciled,"$9,610.13"
+02/02/2024,ACCT-006-01,Audit adjustment,L24A9905,Posted,$7,894.51
+02/03/2024,ACCT-006-02,Claim reserve,L23A1604,Reconciled,$9,309.04
+02/04/2024,L230009,Fee reversal,L24A6859,Reconciled,$8,514.10
+02/05/2024,ACCT-006-04,Premium receipt,L24A3974,Posted,$3,242.61
+02/06/2024,ACCT-006-05,Endorsement,L24A9905,Reconciled,$-9,429.66
+02/07/2024,L230012,Audit adjustment,L24A7440,Reconciled,$8,005.13
+02/08/2024,ACCT-006-07,Claim reserve,L24A3974,Reconciled,$5,807.03
+02/09/2024,ACCT-006-08,Fee reversal,L23A1955,Pending,$9,639.40
+02/10/2024,L230003,Premium receipt,L23A3286,Pending,$4,378.81
+02/11/2024,ACCT-006-10,Endorsement,L24A6859,Reconciled,$-8,951.96
+02/12/2024,ACCT-006-11,Audit adjustment,L24A7575,Pending,$1,450.48
+02/13/2024,L230006,Claim reserve,L23A2216,Pending,$8,507.43
+02/14/2024,ACCT-006-13,Fee reversal,L24A9905,Posted,$492.98
+02/15/2024,ACCT-006-14,Premium receipt,L23A1604,Reconciled,$6,282.77
+02/16/2024,L230009,Endorsement,L24A6859,Posted,$-4,173.71
+02/17/2024,ACCT-006-16,Audit adjustment,L24A3974,Reconciled,$3,385.87
+02/18/2024,ACCT-006-17,Claim reserve,L24A9905,Posted,$2,335.22
+02/19/2024,L230012,Fee reversal,L23A7440,Reconciled,$9,610.13
 
 # Page 12
 
 RISK CONTROL FOLLOW-UP NOTES                                                LOSS RUN WORKPAPER
-______________________________________________________________________________________________
+__________________________________________________________________________________________________
 
-                                RISK CONTROL FOLLOW-UP NOTES
+                                 RISK CONTROL FOLLOW-UP NOTES
 
-Packet:             MULTIHOP_012_001_CROSSPAGE
-Related unit:       2024 PB 600008
-Review cycle:       Renewal file checklist
+Packet:                 MULTIHOP_012_001_CROSSPAGE
+Related unit:           2024 PB 600008
+Review cycle:           Renewal file checklist
 
-Selection,Description,Department
 [X],Fleet safety meeting minutes retained,Fleet
 [ ],Post-accident drug test documentation reviewed,Fleet
 [X],Driver remedial training assigned,UW
@@ -304,12 +279,12 @@ Selection,Description,Department
 
 # Page 13
 
-DRIVER QUALIFICATION AUDIT                                                      LOSS RUN WORKPAPER
+DRIVER QUALIFICATION AUDIT                                                          LOSS RUN WORKPAPER
 
 Driver Qualification Audit
 
-AUDIT FILE                      REVIEW TYPE                             REVIEWER
-DQ-SSPAGE-008                   Annual compliance sampling              Safety desk
+AUDIT FILE                          REVIEW TYPE                            REVIEWER
+DQ-SSPAGE-008                       Annual compliance sampling             Safety desk
 
 Driver,License State,License #,Medical Exp.,Finding,Unit
 "Driver-009, Alex",AL,D17795804,02/2026,Exception noted,600009
@@ -331,15 +306,15 @@ Driver,License State,License #,Medical Exp.,Finding,Unit
 
 # Page 14
 
-PRIOR CARRIER CORRESPONDENCE                                                     LOSS RUN WORKPAPER
-__________________________________________________________________________________________________
+PRIOR CARRIER CORRESPONDENCE                                         LOSS RUN WORKPAPER
+______________________________________________________________________________________
 
-                                 PRIOR CARRIER REQUEST RESPONSE
+                             PRIOR CARRIER REQUEST RESPONSE
 
-Issue Date:           02-10-2024
-Letter Id:            LC0091664                 ATTN: Account Review Desk
-Case Id:              MULTIHOP_012_001_CROSSPAGE Synthetic Motor Carrier File
-                                                Packet MULTIHOP_012_001_CROSSPAGE
+Issue Date:         02-10-2024
+Letter Id:          LC0091644                     ATTN: Account Review Desk
+                                                  Synthetic Motor Carrier File
+Case Id:            MULTIHOP_012_001_CROSSPAGE    Packet MULTIHOP_012_001_CROSSPAGE
 
 Report of services provided. This page records prior-
 carrier correspondence status and does not contain the complete claim schedule.
@@ -352,17 +327,17 @@ L240001,AR,05/09/2024,Prior term attached
 L230002,OH,06/11/2024,No loss data
 L230003,MO,07/13/2024,Pending response
 
-__________________________________________________________________________________________________
-                               Record services unit - synthetic correspondence page
+______________________________________________________________________________________
+                             Record services unit - synthetic correspondence page
 
 # Page 15
 
-PREMIUM ALLOCATION WORKSHEET                                                        LOSS RUN WORKPAPER
+PREMIUM ALLOCATION WORKSHEET                                                    LOSS RUN WORKPAPER
 
 Premium Allocation Worksheet
 
-PACKET                                      WORKSHEET PERIOD                            ALLOCATION BASIS
-MULTIHOP_012_001_CROSSPAGE                  2024 Policy Year                            Written premium by jurisdiction
+PACKET                                WORKSHEET PERIOD                       ALLOCATION BASIS
+MULTIHOP_012_001_CROSSPAGE            2024 Policy Year                       Written premium by jurisdiction
 
 Schedule,Jurisdiction,Surcharge,Written Premium,Taxable Premium,Tax Rate,Tax Due,Total Due
 Schedule 010,AL,N,"91,243","86,409",0.0125,"$1,080.11","$1,077.11"
@@ -384,13 +359,14 @@ Synthetic allocation worksheet. Jurisdiction rows are distractors and are not ta
 
 # Page 16
 
-SUBROGATION DIARY EXTRACT                                                               LOSS RUN WORKPAPER
-____________________________________________________________________________________________________________
+SUBROGATION DIARY EXTRACT                                                           LOSS RUN WORKPAPER
+
+______________________________________________________________________________________________________
 
 Subrogation Diary Extract
 
-PACKET                               DIARY EXPORT                         PRINTED
-MULTIHOP_012_001_CROSSPAGE           Subrogation module                   03/31/2024
+PACKET                              DIARY EXPORT                        PRINTED
+MULTIHOP_012_001_CROSSPAGE          Subrogation module                  03/31/2024
 
 Diary Date,File #,Reference,Action,Status,Recovery Est.
 03/03/2024,SUB-011-01,L230012,Closed no recovery,Closed,"$6,192.00"
@@ -418,36 +394,38 @@ ACCOUNT BATCH,ACCOUNTING MONTH,SOURCE
 MULTIHOP_012_001_CROSSPAGE-012,February 2024,Billing ledger export
 
 Date,Document,Activity,Policy,Status,Amount
-02/02/2024,ACCT-012-01,Claim reserve,L24A3974,Posted,"$4,420.63"
-02/03/2024,ACCT-012-02,Fee reversal,L23A1955,Reconciled,"$7,703.24"
-02/04/2024,L230003,Premium receipt,L23A3286,Posted,"$2,320.85"
-02/05/2024,ACCT-012-04,Endorsement,L24A6859,Reconciled,"$7,228.41"
-02/06/2024,ACCT-012-05,Audit adjustment,L24A7575,Reconciled,"$-4,230.44"
-02/07/2024,L230006,Claim reserve,L23A2216,Reconciled,"$2,411.24"
+02/02/2024,ACCT-012-01,Claim reserve,L24A3974,Posted,$4,420.63
+02/03/2024,ACCT-012-02,Fee reversal,L23A1955,Reconciled,$7,703.24
+02/04/2024,L230003,Premium receipt,L23A3286,Posted,$2,320.85
+02/05/2024,ACCT-012-04,Endorsement,L24A6859,Reconciled,$7,228.41
+02/06/2024,ACCT-012-05,Audit adjustment,L24A7575,Reconciled,$-4,230.44
+02/07/2024,L230006,Claim reserve,L23A2216,Reconciled,$2,411.24
 02/08/2024,ACCT-012-07,Fee reversal,L24A9905,Reconciled,$270.19
-02/09/2024,ACCT-012-08,Premium receipt,L23A1604,Reconciled,"$4,068.45"
-02/10/2024,L230009,Endorsement,L24A6859,Posted,"$4,338.55"
-02/11/2024,ACCT-012-10,Audit adjustment,L24A3974,Pending,"$-4,186.35"
+02/09/2024,ACCT-012-08,Premium receipt,L23A1604,Reconciled,$4,068.45
+02/10/2024,L230009,Endorsement,L24A6859,Posted,$4,338.55
+02/11/2024,ACCT-012-10,Audit adjustment,L24A3974,Pending,$-4,186.35
 02/12/2024,ACCT-012-11,Claim reserve,L24A9905,Pending,$254.34
 02/13/2024,L230012,Fee reversal,L23A7440,Reconciled,$746.37
 02/14/2024,ACCT-012-13,Premium receipt,L24A3974,Posted,$104.90
-02/15/2024,ACCT-012-14,Endorsement,L23A1955,Pending,"$5,995.45"
-02/16/2024,L230003,Audit adjustment,L23A3286,Pending,"$-5,374.87"
-02/17/2024,ACCT-012-16,Claim reserve,L24A6859,Pending,"$2,063.70"
-02/18/2024,ACCT-012-17,Fee reversal,L24A7575,Pending,"$2,576.36"
-02/19/2024,L230006,Premium receipt,L23A2216,Posted,"$6,655.12"
+02/15/2024,ACCT-012-14,Endorsement,L23A1955,Pending,$5,995.45
+02/16/2024,L230003,Audit adjustment,L23A3286,Pending,$-5,374.87
+02/17/2024,ACCT-012-16,Claim reserve,L24A6859,Pending,$2,063.70
+02/18/2024,ACCT-012-17,Fee reversal,L24A7575,Pending,$2,576.36
+02/19/2024,L230006,Premium receipt,L23A2216,Posted,$6,655.12
 
 # Page 18
 
-RISK CONTROL FOLLOW-UP NOTES                                                LOSS RUN WORKPAPER
-__________________________________________________________________________________________________
+RISK CONTROL FOLLOW-UP NOTES                                                     LOSS RUN WORKPAPER
 
-                               RISK CONTROL FOLLOW-UP NOTES
+--------------------------------------------------------------------------------
 
-Packet:                 MULTIHOP_012_001_CROSSPAGE
-Related unit:           2024 PB 600002
-Review cycle:           Renewal file checklist
+RISK CONTROL FOLLOW-UP NOTES
 
+Packet:             MULTIHOP_012_001_CROSSPAGE
+Related unit:       2024 PB 600002
+Review cycle:       Renewal file checklist
+
+Status,Task,Department
 X,Fleet safety meeting minutes retained,Fleet
 ,Post-accident drug test documentation reviewed,Fleet
 X,Driver remedial training assigned,UW
@@ -459,12 +437,12 @@ X,Claim trend reviewed with account manager,Claims
 
 # Page 19
 
-DRIVER QUALIFICATION AUDIT                                                          LOSS RUN WORKPAPER
+DRIVER QUALIFICATION AUDIT                                                 LOSS RUN WORKPAPER
 
 Driver Qualification Audit
 
-AUDIT FILE                      REVIEW TYPE                             REVIEWER
-DQ-SSPAGE-014                   Annual compliance sampling              Safety desk
+AUDIT FILE                      REVIEW TYPE                         REVIEWER
+DQ-SSPAGE-014                   Annual compliance sampling          Safety desk
 
 Driver,License State,License #,Medical Exp.,Finding,Unit
 "Driver-003, Alex",IL,D89578631,02/2026,Exception noted,600003
@@ -486,18 +464,20 @@ Driver,License State,License #,Medical Exp.,Finding,Unit
 
 # Page 20
 
-PRIOR CARRIER CORRESPONDENCE                                                    LOSS RUN WORKPAPER
-__________________________________________________________________________________________________
+PRIOR CARRIER CORRESPONDENCE                                           LOSS RUN WORKPAPER
+__________________________________________________________________________________________
 
-                                 PRIOR CARRIER REQUEST RESPONSE
+                              PRIOR CARRIER REQUEST RESPONSE
 
-    Issue Date:           02-16-2024
-    Letter Id:            LC0154269                  ATTN: Account Review Desk
-                                                     Synthetic Motor Carrier File
-    Case Id:              MULTIHOP_012_001_CROSSPAGE Packet MULTIHOP_012_001_CROSSPAGE
+      Issue Date:         02-16-2024
+                                                ATTN: Account Review Desk
+      Letter Id:          LC0154269
+                                                Synthetic Motor Carrier File
+      Case Id:            MULTIHOP_012_001_CROSSPAGE
+                                                Packet MULTIHOP_012_001_CROSSPAGE
 
-Report of services provided. This page records prior-
-carrier correspondence status and does not contain the complete claim schedule.
+      Report of services provided. This page records prior-
+      carrier correspondence status and does not contain the complete claim schedule.
 
 Reference,State,Response Date,Disposition
 L240004,IL,02/03/2024,Acknowledged
@@ -507,8 +487,8 @@ L240007,CA,05/09/2024,Pending response
 L230008,OH,06/11/2024,Pending response
 L230009,IL,07/13/2024,No loss data
 
-__________________________________________________________________________________________________
-                            Record services unit - synthetic correspondence page
+__________________________________________________________________________________________
+                               Record services unit - synthetic correspondence page
 
 # Page 21
 
@@ -516,8 +496,8 @@ PREMIUM ALLOCATION WORKSHEET                                                    
 
 Premium Allocation Worksheet
 
-PACKET                                WORKSHEET PERIOD                  ALLOCATION BASIS
-MULTIHOP_012_001_CROSSPAGE            2024 Policy Year                  Written premium by jurisdiction
+PACKET                                WORKSHEET PERIOD                       ALLOCATION BASIS
+MULTIHOP_012_001_CROSSPAGE            2024 Policy Year                       Written premium by jurisdiction
 
 Schedule,Jurisdiction,Surcharge,Written Premium,Taxable Premium,Tax Rate,Tax Due,Total Due
 Schedule 016,AL,N,"167,585","130,971",0.0125,"$1,637.14","$1,858.14"
@@ -526,26 +506,26 @@ Schedule 016,CA,Y,"79,910","75,760",0.0310,"$2,348.56","$2,504.56"
 Schedule 016,CO,N,"149,691","111,532",0.0125,"$1,394.15","$1,315.15"
 Schedule 016,GA,Y,"88,050","74,208",0.0125,"$927.60","$839.60"
 Schedule 016,IL,N,"57,023","54,825",0.0310,"$1,699.58","$1,887.58"
-Schedule 016,IN,N,"6,627","6,379",0.0180,$114.82,$105.82
-Schedule 016,IA,Y,"87,987","67,347",0.0125,$841.84,"$1,073.84"
+Schedule 016,IN,N,"6,627","6,379",0.0180,"$114.82","$105.82"
+Schedule 016,IA,Y,"87,987","67,347",0.0125,"$841.84","$1,073.84"
 Schedule 016,KS,N,"172,744","122,596",0.0275,"$3,371.39","$3,559.39"
-Schedule 016,MO,N,"18,046","11,461",0.0310,$355.29,$559.29
+Schedule 016,MO,N,"18,046","11,461",0.0310,"$355.29","$559.29"
 Schedule 016,NC,N,"148,490","120,676",0.0310,"$3,740.96","$3,834.96"
 Schedule 016,PA,Y,"60,121","41,420",0.0310,"$1,284.02","$1,254.02"
-Schedule 016,TX,N,"54,329","52,177",0.0125,$652.21,$701.21
-Schedule 016,VA,Y,"39,933","35,982",0.0180,$647.68,$877.68
+Schedule 016,TX,N,"54,329","52,177",0.0125,"$652.21","$701.21"
+Schedule 016,VA,Y,"39,933","35,982",0.0180,"$647.68","$877.68"
 
 Synthetic allocation worksheet. Jurisdiction rows are distractors and are not target incident records.
 
 # Page 22
 
 SUBROGATION DIARY EXTRACT                                                                     LOSS RUN WORKPAPER
-__________________________________________________________________________________________________________________
+________________________________________________________________________________________________________________
 
 Subrogation Diary Extract
 
-PACKET                             DIARY EXPORT                       PRINTED
-MULTIHOP_012_001_CROSSPAGE         Subrogation module                 03/31/2024
+PACKET                          DIARY EXPORT                    PRINTED
+MULTIHOP_012_001_CROSSPAGE      Subrogation module              03/31/2024
 
 Diary Date,File #,Reference,Action,Status,Recovery Est.
 03/03/2024,SUB-017-01,L230006,Arbitration pending,Open,"$11,953.00"
@@ -565,12 +545,12 @@ Diary Date,File #,Reference,Action,Status,Recovery Est.
 
 # Page 23
 
-MONTHLY ACCOUNT ACTIVITY                                                    LOSS RUN WORKPAPER
+MONTHLY ACCOUNT ACTIVITY                                                     LOSS RUN WORKPAPER
 
 Monthly Account Activity
 
-ACCOUNT BATCH                       ACCOUNTING MONTH                      SOURCE
-MULTIHOP_012_001_CROSSPAGE-018      February 2024                         Billing ledger export
+ACCOUNT BATCH                   ACCOUNTING MONTH                    SOURCE
+MULTIHOP_012_001_CROSSPAGE-018  February 2024                       Billing ledger export
 
 Date,Document,Activity,Policy,Status,Amount
 02/02/2024,ACCT-018-01,Fee reversal,L24A9905,Pending,"$9,345.51"
@@ -594,16 +574,15 @@ Date,Document,Activity,Policy,Status,Amount
 
 # Page 24
 
-RISK CONTROL FOLLOW-UP NOTES                                            LOSS RUN WORKPAPER
-___________________________________________________________________________________________
+RISK CONTROL FOLLOW-UP NOTES                                                     LOSS RUN WORKPAPER
+__________________________________________________________________________________________________
 
-                               RISK CONTROL FOLLOW-UP NOTES
+                                   RISK CONTROL FOLLOW-UP NOTES
 
-Packet:             MULTIHOP_012_001_CROSSPAGE
-Related unit:       2024 PB 600008
-Review cycle:       Renewal file checklist
+Packet:                 MULTIHOP_012_001_CROSSPAGE
+Related unit:           2024 PB 600008
+Review cycle:           Renewal file checklist
 
-Status,Activity,Department
 X,Fleet safety meeting minutes retained,Fleet
 ,Post-accident drug test documentation reviewed,Safety
 X,Driver remedial training assigned,Claims
@@ -615,12 +594,13 @@ X,Claim trend reviewed with account manager,Claims
 
 # Page 25
 
-DRIVER QUALIFICATION AUDIT                                                      LOSS RUN WORKPAPER
+DRIVER QUALIFICATION AUDIT                                                     LOSS RUN WORKPAPER
+_________________________________________________________________________________________________
 
 Driver Qualification Audit
 
-AUDIT FILE                                REVIEW TYPE                                REVIEWER
-DQ-SSPAGE-020                             Annual compliance sampling                 Safety desk
+AUDIT FILE                      REVIEW TYPE                             REVIEWER
+DQ-SSPAGE-020                   Annual compliance sampling              Safety desk
 
 Driver,License State,License #,Medical Exp.,Finding,Unit
 "Driver-009, Alex",IL,D27337387,02/2026,Renewal due,600009
@@ -642,15 +622,15 @@ Driver,License State,License #,Medical Exp.,Finding,Unit
 
 # Page 26
 
-PRIOR CARRIER CORRESPONDENCE                                                       LOSS RUN WORKPAPER
+PRIOR CARRIER CORRESPONDENCE                                                    LOSS RUN WORKPAPER
 __________________________________________________________________________________________________
 
-                               PRIOR CARRIER REQUEST RESPONSE
+                                  PRIOR CARRIER REQUEST RESPONSE
 
-Issue Date:         02-22-2024
-Letter Id:          LC0213645                    ATTN: Account Review Desk
-Case Id:            MULTIHOP_012_001_CROSSPAGE   Synthetic Motor Carrier File
-                                                 Packet MULTIHOP_012_001_CROSSPAGE
+Issue Date:          02-22-2024
+Letter Id:           LC0213645                     ATTN: Account Review Desk
+Case Id:             MULTIHOP_012_001_CROSSPAGE    Synthetic Motor Carrier File
+                                                   Packet MULTIHOP_012_001_CROSSPAGE
 
 Report of services provided. This page records prior-
 carrier correspondence status and does not contain the complete claim schedule.
@@ -664,7 +644,7 @@ L230002,OH,06/11/2024,Pending response
 L230003,MO,07/13/2024,Pending response
 
 __________________________________________________________________________________________________
-                      Record services unit - synthetic correspondence page
+                               Record services unit - synthetic correspondence page
 
 # Page 27
 
@@ -672,36 +652,37 @@ PREMIUM ALLOCATION WORKSHEET                                                    
 
 Premium Allocation Worksheet
 
-PACKET: MULTIHOP_012_001_CROSSPAGE
-WORKSHEET PERIOD: 2024 Policy Year
-ALLOCATION BASIS: Written premium by jurisdiction
+PACKET                              WORKSHEET PERIOD                    ALLOCATION BASIS
+MULTIHOP_012_001_CROSSPAGE          2024 Policy Year                    Written premium by jurisdiction
 
 Schedule,Jurisdiction,Surcharge,Written Premium,Taxable Premium,Tax Rate,Tax Due,Total Due
 Schedule 022,AL,N,"155,935","113,535",0.0180,"$2,043.63","$2,146.63"
 Schedule 022,AR,Y,"110,076","94,056",0.0310,"$2,915.74","$2,872.74"
-Schedule 022,CA,N,"131,508","92,281",0.0000,$0.00,$74.00
-Schedule 022,CO,Y,"58,048","41,073",0.0000,$0.00,$-78.00
+Schedule 022,CA,N,"131,508","92,281",0.0000,"$0.00","$74.00"
+Schedule 022,CO,Y,"58,048","41,073",0.0000,"$0.00","$-78.00"
 Schedule 022,GA,Y,"106,149","90,875",0.0180,"$1,635.75","$1,572.75"
-Schedule 022,IL,N,"112,083","86,428",0.0000,$0.00,$147.00
-Schedule 022,IN,N,"124,268","77,501",0.0125,$968.76,"$1,195.76"
-Schedule 022,IA,N,"37,138","24,335",0.0125,$304.19,$544.19
+Schedule 022,IL,N,"112,083","86,428",0.0000,"$0.00","$147.00"
+Schedule 022,IN,N,"124,268","77,501",0.0125,"$968.76","$1,195.76"
+Schedule 022,IA,N,"37,138","24,335",0.0125,"$304.19","$544.19"
 Schedule 022,KS,Y,"160,698","110,710",0.0275,"$3,044.53","$3,027.53"
 Schedule 022,MO,N,"167,632","120,539",0.0275,"$3,314.82","$3,294.82"
-Schedule 022,NC,N,"22,592","20,996",0.0310,$650.88,$671.88
+Schedule 022,NC,N,"22,592","20,996",0.0310,"$650.88","$671.88"
 Schedule 022,PA,Y,"74,886","57,895",0.0310,"$1,794.74","$1,914.74"
 Schedule 022,TX,N,"128,954","124,119",0.0310,"$3,847.69","$4,029.69"
-Schedule 022,VA,N,"34,687","30,901",0.0275,$849.78,"$1,089.78"
+Schedule 022,VA,N,"34,687","30,901",0.0275,"$849.78","$1,089.78"
 
 Synthetic allocation worksheet. Jurisdiction rows are distractors and are not target incident records.
 
 # Page 28
 
 SUBROGATION DIARY EXTRACT                                                               LOSS RUN WORKPAPER
+____________________________________________________________________________________________________________
 
 Subrogation Diary Extract
 
-PACKET                                              DIARY EXPORT                                        PRINTED
-MULTIHOP_012_001_CROSSPAGE                          Subrogation module                                  03/31/2024
+PACKET: MULTIHOP_012_001_CROSSPAGE
+DIARY EXPORT: Subrogation module
+PRINTED: 03/31/2024
 
 Diary Date,File #,Reference,Action,Status,Recovery Est.
 03/03/2024,SUB-023-01,L230012,Diary follow-up,Review,"$8,043.00"
@@ -721,13 +702,12 @@ Diary Date,File #,Reference,Action,Status,Recovery Est.
 
 # Page 29
 
-MONTHLY ACCOUNT ACTIVITY                                                              LOSS RUN WORKPAPER
-__________________________________________________________________________________________________
+MONTHLY ACCOUNT ACTIVITY                                                    LOSS RUN WORKPAPER
 
 Monthly Account Activity
 
-ACCOUNT BATCH                       ACCOUNTING MONTH                    SOURCE
-MULTIHOP_012_001_CROSSPAGE-024      February 2024                       Billing ledger export
+ACCOUNT BATCH                        ACCOUNTING MONTH                    SOURCE
+MULTIHOP_012_001_CROSSPAGE-024       February 2024                       Billing ledger export
 
 Date,Document,Activity,Policy,Status,Amount
 02/02/2024,ACCT-024-01,Premium receipt,L24A3974,Posted,"$2,335.64"
@@ -739,9 +719,9 @@ Date,Document,Activity,Policy,Status,Amount
 02/08/2024,ACCT-024-07,Endorsement,L24A9905,Posted,"$3,149.83"
 02/09/2024,ACCT-024-08,Audit adjustment,L23A1604,Pending,"$9,038.27"
 02/10/2024,L230009,Claim reserve,L24A6859,Posted,"$9,623.55"
-02/11/2024,ACCT-024-10,Fee reversal,L24A3974,Reconciled,$-220.34
+02/11/2024,ACCT-024-10,Fee reversal,L24A3974,Reconciled,"$-220.34"
 02/12/2024,ACCT-024-11,Premium receipt,L24A9905,Posted,"$1,297.73"
-02/13/2024,L230012,Endorsement,L23A7440,Posted,$518.14
+02/13/2024,L230012,Endorsement,L23A7440,Posted,"$518.14"
 02/14/2024,ACCT-024-13,Audit adjustment,L24A3974,Pending,"$8,570.98"
 02/15/2024,ACCT-024-14,Claim reserve,L23A1955,Pending,"$1,737.61"
 02/16/2024,L230003,Fee reversal,L23A3286,Posted,"$-7,783.09"
@@ -751,52 +731,51 @@ Date,Document,Activity,Policy,Status,Amount
 
 # Page 30
 
-RISK CONTROL FOLLOW-UP NOTES                                                LOSS RUN WORKPAPER
-______________________________________________________________________________________________
+RISK CONTROL FOLLOW-UP NOTES                                                      LOSS RUN WORKPAPER
+____________________________________________________________________________________________________
 
-                                RISK CONTROL FOLLOW-UP NOTES
+                                    RISK CONTROL FOLLOW-UP NOTES
 
 Packet:             MULTIHOP_012_001_CROSSPAGE
 Related unit:       2024 PB 600002
 Review cycle:       Renewal file checklist
 
-Status,Description,Department
-X,Fleet safety meeting minutes retained,UW
-,Post-accident drug test documentation reviewed,Fleet
-X,Driver remedial training assigned,UW
-X,Telematics exception report requested,UW
-,Maintenance file cross-check complete,Claims
-X,Open recommendation carried to renewal file,Fleet
-X,Claim trend reviewed with account manager,Safety
-,No additional field visit required,Fleet
+"X","Fleet safety meeting minutes retained","UW"
+"","Post-accident drug test documentation reviewed","Fleet"
+"X","Driver remedial training assigned","UW"
+"X","Telematics exception report requested","UW"
+"","Maintenance file cross-check complete","Claims"
+"X","Open recommendation carried to renewal file","Fleet"
+"X","Claim trend reviewed with account manager","Safety"
+"","No additional field visit required","Fleet"
 
 # Page 31
 
-DRIVER QUALIFICATION AUDIT                                                          LOSS RUN WORKPAPER
-______________________________________________________________________________________________________
+DRIVER QUALIFICATION AUDIT                                                     LOSS RUN WORKPAPER
+_________________________________________________________________________________________________
 
 Driver Qualification Audit
 
-AUDIT FILE                     REVIEW TYPE                     REVIEWER
-DQ-SSPAGE-026                  Annual compliance sampling      Safety desk
+AUDIT FILE                      REVIEW TYPE                             REVIEWER
+DQ-SSPAGE-026                   Annual compliance sampling              Safety desk
 
-Driver,License State,License #,Medical Exp.,Finding,Unit
-"Driver-003, Alex",IN,D66262384,02/2026,Exception noted,600003
-"Driver-004, Alex",IN,D16463405,03/2027,Current,600004
-"Driver-005, Alex",IN,D26503500,04/2025,Renewal due,600005
-"Driver-006, Alex",GA,D57958307,05/2026,Exception noted,600006
-"Driver-007, Alex",IL,D37293275,06/2027,Verified,600007
-"Driver-008, Alex",IL,D79270831,07/2025,Current,600008
-"Driver-009, Alex",MO,D10881867,08/2026,Exception noted,600009
-"Driver-010, Alex",TX,D98670743,09/2027,Verified,600010
-"Driver-011, Alex",IN,D56801036,10/2025,Current,600011
-"Driver-012, Alex",GA,D28740975,11/2026,Renewal due,600012
-"Driver-001, Alex",TX,D41774983,12/2027,Renewal due,600001
-"Driver-002, Alex",IL,D65915177,01/2025,Exception noted,600002
-"Driver-003, Alex",AL,D70608932,02/2026,Current,600003
-"Driver-004, Alex",TX,D22900524,03/2027,Current,600004
-"Driver-005, Alex",AL,D74443339,04/2025,Exception noted,600005
-"Driver-006, Alex",AL,D81545807,05/2026,Verified,600006
+"Driver","License State","License #","Medical Exp.","Finding","Unit"
+"Driver-003, Alex","IN","D66262384","02/2026","Exception noted","600003"
+"Driver-004, Alex","IN","D16463405","03/2027","Current","600004"
+"Driver-005, Alex","IN","D26503500","04/2025","Renewal due","600005"
+"Driver-006, Alex","GA","D57958307","05/2026","Exception noted","600006"
+"Driver-007, Alex","IL","D37293275","06/2027","Verified","600007"
+"Driver-008, Alex","IL","D79270831","07/2025","Current","600008"
+"Driver-009, Alex","MO","D10881867","08/2026","Exception noted","600009"
+"Driver-010, Alex","TX","D98670743","09/2027","Verified","600010"
+"Driver-011, Alex","IN","D56801036","10/2025","Current","600011"
+"Driver-012, Alex","GA","D28740975","11/2026","Renewal due","600012"
+"Driver-001, Alex","TX","D41774983","12/2027","Renewal due","600001"
+"Driver-002, Alex","IL","D65915177","01/2025","Exception noted","600002"
+"Driver-003, Alex","AL","D70608932","02/2026","Current","600003"
+"Driver-004, Alex","TX","D22900524","03/2027","Current","600004"
+"Driver-005, Alex","AL","D74443339","04/2025","Exception noted","600005"
+"Driver-006, Alex","AL","D81545807","05/2026","Verified","600006"
 
 # Page 32
 
@@ -806,9 +785,9 @@ ________________________________________________________________________________
                                PRIOR CARRIER REQUEST RESPONSE
 
 Issue Date:         02-01-2024
-Letter Id:          LC0275206                     ATTN: Account Review Desk
-Case Id:            MULTIHOP_012_001_CROSSPAGE    Synthetic Motor Carrier File
-                                                  Packet MULTIHOP_012_001_CROSSPAGE
+Letter Id:          LC0275206                   ATTN: Account Review Desk
+Case Id:            MULTIHOP_012_001_CROSSPAGE  Synthetic Motor Carrier File
+                                                Packet MULTIHOP_012_001_CROSSPAGE
 
 Report of services provided. This page records prior-
 carrier correspondence status and does not contain the complete claim schedule.
@@ -822,45 +801,29 @@ L230008,OH,06/11/2024,Acknowledged
 L230009,IL,07/13/2024,Prior term attached
 
 _________________________________________________________________________________________
-                              Record services unit - synthetic correspondence page
+                           Record services unit - synthetic correspondence page
 
 # Page 33
 
-PREMIUM ALLOCATION WORKSHEET,LOSS RUN WORKPAPER
-
-Premium Allocation Worksheet
-
-PACKET: MULTIHOP_012_001_CROSSPAGE
-WORKSHEET PERIOD: 2024 Policy Year
-ALLOCATION BASIS: Written premium by jurisdiction
-
-"Schedule","Jurisdiction","Surcharge","Written Premium","Taxable Premium","Tax Rate","Tax Due","Total Due"
-"Schedule 028","AL","N","36,241","31,975","0.0275","$879.31","$1,076.31"
-"Schedule 028","AR","N","83,258","58,099","0.0125","$726.24","$965.24"
-"Schedule 028","CA","N","134,666","84,751","0.0000","$0.00","$97.00"
-"Schedule 028","CO","Y","108,350","85,626","0.0125","$1,070.33","$1,079.33"
-"Schedule 028","GA","Y","51,336","39,517","0.0180","$711.31","$825.31"
-"Schedule 028","IL","N","89,797","74,072","0.0310","$2,296.23","$2,359.23"
-"Schedule 028","IN","N","101,891","93,964","0.0000","$0.00","$-60.00"
-"Schedule 028","IA","Y","37,717","34,562","0.0180","$622.12","$744.12"
-"Schedule 028","KS","N","24,698","16,670","0.0275","$458.43","$452.43"
-"Schedule 028","MO","N","4,326","3,000","0.0310","$93.00","$229.00"
-"Schedule 028","NC","N","82,369","55,061","0.0310","$1,706.89","$1,743.89"
-"Schedule 028","PA","N","102,374","68,931","0.0180","$1,240.76","$1,429.76"
-"Schedule 028","TX","Y","161,825","115,706","0.0310","$3,586.89","$3,520.89"
-"Schedule 028","VA","N","12,253","9,645","0.0000","$0.00","$10.00"
-
-Synthetic allocation worksheet. Jurisdiction rows are distractors and are not target incident records.
+Schedule,Jurisdiction,Surcharge,Written Premium,Taxable Premium,Tax Rate,Tax Due,Total Due
+Schedule 028,AL,N,"36,241","31,975",0.0275,$879.31,"$1,076.31"
+Schedule 028,AR,N,"83,258","58,099",0.0125,$726.24,$965.24
+Schedule 028,CA,N,"134,666","84,751",0.0000,$0.00,$97.00
+Schedule 028,CO,Y,"108,350","85,626",0.0125,"$1,070.33","$1,079.33"
+Schedule 028,GA,Y,"51,336","39,517",0.0180,$711.31,$825.31
+Schedule 028,IL,N,"89,797","74,072",0.0310,"$2,296.23","$2,359.23"
+Schedule 028,IN,N,"101,891","93,964",0.0000,$0.00,$-60.00
+Schedule 028,IA,Y,"37,717","34,562",0.0180,$622.12,$744.12
+Schedule 028,KS,N,"24,698","16,670",0.0275,$458.43,$452.43
+Schedule 028,MO,N,"4,326","3,000",0.0310,$93.00,$229.00
+Schedule 028,NC,N,"82,369","55,061",0.0310,"$1,706.89","$1,743.89"
+Schedule 028,PA,N,"102,374","68,931",0.0180,"$1,240.76","$1,429.76"
+Schedule 028,TX,Y,"161,825","115,706",0.0310,"$3,586.89","$3,520.89"
+Schedule 028,VA,N,"12,253","9,645",0.0000,$0.00,$10.00
 
 # Page 34
 
-IFTA MILEAGE SCHEDULE                                                                    LOSS RUN WORKPAPER
-__________________________________________________________________________________________________________
-
-                                 IFTA Mileage: All Trucks - Synthetic Quarter
-
 Vehicle: 600001
-
 #,State,Qualified Miles,Unqualified Miles,Total
 1,Alabama,103.0,0.0,104.0
 2,Arkansas,200.0,0.0,201.0
@@ -870,11 +833,8 @@ Vehicle: 600001
 6,Illinois,588.0,0.0,589.0
 7,Indiana,685.0,0.0,686.0
 8,Iowa,782.0,0.0,783.0
-
-__________________________________________________________________________________________________________
 
 Vehicle: 600002
-
 #,State,Qualified Miles,Unqualified Miles,Total
 1,Alabama,103.0,0.0,104.0
 2,Arkansas,200.0,0.0,201.0
@@ -884,11 +844,8 @@ Vehicle: 600002
 6,Illinois,588.0,0.0,589.0
 7,Indiana,685.0,0.0,686.0
 8,Iowa,782.0,0.0,783.0
-
-__________________________________________________________________________________________________________
 
 Vehicle: 600003
-
 #,State,Qualified Miles,Unqualified Miles,Total
 1,Alabama,103.0,0.0,104.0
 2,Arkansas,200.0,0.0,201.0
@@ -899,13 +856,7 @@ Vehicle: 600003
 7,Indiana,685.0,0.0,686.0
 8,Iowa,782.0,0.0,783.0
 
-__________________________________________________________________________________________________________
-
 # Page 35
-
-ROTATED DRIVER SCHEDULE SCAN                                                     LOSS RUN WORKPAPER
-
-Drivers
 
 Driver,Unit,Reference,State,Date
 "Driver-001, Alex",600001,L240001,MO,02/24/2024
@@ -920,8 +871,6 @@ Driver,Unit,Reference,State,Date
 "Driver-010, Alex",600010,L240010,OK,06/16/2024
 "Driver-011, Alex",600011,L230011,IL,11/11/2023
 "Driver-012, Alex",600012,L230012,AZ,05/15/2023
-
-Broker attachment - rotated source page
 
 # Page 36
 
@@ -952,8 +901,7 @@ Unit,Driver,Company,Domicile,Status
 
 # Page 37
 
-POLICY REGISTER                                                                           LOSS RUN WORKPAPER
-____________________________________________________________________________________________________________
+POLICY REGISTER                                                        LOSS RUN WORKPAPER
 
 Policy Register
 
@@ -976,69 +924,71 @@ ARCH-004,Archive Holdings,Archive Holdings,Runoff,NY,Do Not Use
 
 # Page 38
 
-SUBROGATION DIARY EXTRACT                                                               LOSS RUN WORKPAPER
+SUBROGATION DIARY EXTRACT,LOSS RUN WORKPAPER
 
 Subrogation Diary Extract
 
-PACKET                                  DIARY EXPORT                           PRINTED
-MULTIHOP_012_001_CROSSPAGE              Subrogation module                     03/31/2024
+PACKET,DIARY EXPORT,PRINTED
+MULTIHOP_012_001_CROSSPAGE,Subrogation module,03/31/2024
 
 Diary Date,File #,Reference,Action,Status,Recovery Est.
-03/03/2024,SUB-029-01,L230006,Demand review,Diary,"$4,961.00"
-03/05/2024,SUB-029-02,L240007,Carrier tender,Closed,"$923.00"
-03/07/2024,SUB-029-03,L230008,Closed no recovery,Open,"$10,814.00"
-03/09/2024,#30009,L230009,Arbitration pending,Review,"$5,017.00"
-03/11/2024,SUB-029-05,L240010,Diary follow-up,Diary,"$4,139.00"
-03/13/2024,SUB-029-06,L230011,Demand review,Closed,"$15,192.00"
-03/15/2024,SUB-029-07,L230012,Carrier tender,Open,"$14,072.00"
-03/17/2024,#30001,L240001,Closed no recovery,Diary,"$6,299.00"
-03/19/2024,SUB-029-09,L230002,Arbitration pending,Open,"$5,777.00"
-03/21/2024,SUB-029-10,L230003,Diary follow-up,Closed,"$4,040.00"
-03/23/2024,SUB-029-11,L240004,Demand review,Review,"$4,070.00"
-03/25/2024,#30005,L240005,Carrier tender,Open,"$3,978.00"
-03/27/2024,SUB-029-13,L230006,Closed no recovery,Open,"$2,890.00"
-03/02/2024,SUB-029-14,L240007,Arbitration pending,Review,"$17,719.00"
+03/03/2024,SUB-029-01,L230006,Demand review,Diary,$4,961.00
+03/05/2024,SUB-029-02,L240007,Carrier tender,Closed,$923.00
+03/07/2024,SUB-029-03,L230008,Closed no recovery,Open,$10,814.00
+03/09/2024,#30009,L230009,Arbitration pending,Review,$5,017.00
+03/11/2024,SUB-029-05,L240010,Diary follow-up,Diary,$4,139.00
+03/13/2024,SUB-029-06,L230011,Demand review,Closed,$15,192.00
+03/15/2024,SUB-029-07,L230012,Carrier tender,Open,$14,072.00
+03/17/2024,#30001,L240001,Closed no recovery,Diary,$6,299.00
+03/19/2024,SUB-029-09,L230002,Arbitration pending,Open,$5,777.00
+03/21/2024,SUB-029-10,L230003,Diary follow-up,Closed,$4,040.00
+03/23/2024,SUB-029-11,L240004,Demand review,Review,$4,070.00
+03/25/2024,#30005,L240005,Carrier tender,Open,$3,978.00
+03/27/2024,SUB-029-13,L230006,Closed no recovery,Open,$2,890.00
+03/02/2024,SUB-029-14,L240007,Arbitration pending,Review,$17,719.00
 
 # Page 39
 
-MONTHLY ACCOUNT ACTIVITY                                                              LOSS RUN WORKPAPER
+MONTHLY ACCOUNT ACTIVITY                                                                         LOSS RUN WORKPAPER
 
 Monthly Account Activity
 
-ACCOUNT BATCH                         ACCOUNTING MONTH                      SOURCE
-MULTIHOP_012_001_CROSSPAGE-030         February 2024                         Billing ledger export
+ACCOUNT BATCH: MULTIHOP_012_001_CROSSPAGE-030
+ACCOUNTING MONTH: February 2024
+SOURCE: Billing ledger export
 
 Date,Document,Activity,Policy,Status,Amount
-02/02/2024,ACCT-030-01,Endorsement,L24A9905,Reconciled,$1,332.37
-02/03/2024,ACCT-030-02,Audit adjustment,L23A1604,Reconciled,$1,238.63
-02/04/2024,L230009,Claim reserve,L24A6859,Pending,$5,037.92
-02/05/2024,ACCT-030-04,Fee reversal,L24A3974,Posted,$2,052.90
-02/06/2024,ACCT-030-05,Premium receipt,L24A9905,Reconciled,$-8,741.09
-02/07/2024,L230012,Endorsement,L23A7440,Reconciled,$2,906.35
-02/08/2024,ACCT-030-07,Audit adjustment,L24A3974,Reconciled,$5,607.76
-02/09/2024,ACCT-030-08,Claim reserve,L23A1955,Posted,$6,239.06
-02/10/2024,L230003,Fee reversal,L23A3286,Pending,$800.15
-02/11/2024,ACCT-030-10,Premium receipt,L24A6859,Pending,$-6,895.77
-02/12/2024,ACCT-030-11,Endorsement,L24A7575,Pending,$8,881.29
-02/13/2024,L230006,Audit adjustment,L23A2216,Pending,$6,869.11
-02/14/2024,ACCT-030-13,Claim reserve,L24A9905,Posted,$4,878.51
-02/15/2024,ACCT-030-14,Fee reversal,L23A1604,Pending,$1,642.79
-02/16/2024,L230009,Premium receipt,L24A6859,Posted,$-3,498.11
-02/17/2024,ACCT-030-16,Endorsement,L24A3974,Reconciled,$6,652.44
-02/18/2024,ACCT-030-17,Audit adjustment,L24A9905,Pending,$8,224.96
-02/19/2024,L230012,Claim reserve,L23A7440,Reconciled,$2,268.36
+02/02/2024,ACCT-030-01,Endorsement,L24A9905,Reconciled,"$1,332.37"
+02/03/2024,ACCT-030-02,Audit adjustment,L23A1604,Reconciled,"$1,238.63"
+02/04/2024,L230009,Claim reserve,L24A6859,Pending,"$5,037.92"
+02/05/2024,ACCT-030-04,Fee reversal,L24A3974,Posted,"$2,052.90"
+02/06/2024,ACCT-030-05,Premium receipt,L24A9905,Reconciled,"$-8,741.09"
+02/07/2024,L230012,Endorsement,L23A7440,Reconciled,"$2,906.35"
+02/08/2024,ACCT-030-07,Audit adjustment,L24A3974,Reconciled,"$5,607.76"
+02/09/2024,ACCT-030-08,Claim reserve,L23A1955,Posted,"$6,239.06"
+02/10/2024,L230003,Fee reversal,L23A3286,Pending,"$800.15"
+02/11/2024,ACCT-030-10,Premium receipt,L24A6859,Pending,"$-6,895.77"
+02/12/2024,ACCT-030-11,Endorsement,L24A7575,Pending,"$8,881.29"
+02/13/2024,L230006,Audit adjustment,L23A2216,Pending,"$6,869.11"
+02/14/2024,ACCT-030-13,Claim reserve,L24A9905,Posted,"$4,878.51"
+02/15/2024,ACCT-030-14,Fee reversal,L23A1604,Pending,"$1,642.79"
+02/16/2024,L230009,Premium receipt,L24A6859,Posted,"$-3,498.11"
+02/17/2024,ACCT-030-16,Endorsement,L24A3974,Reconciled,"$6,652.44"
+02/18/2024,ACCT-030-17,Audit adjustment,L24A9905,Pending,"$8,224.96"
+02/19/2024,L230012,Claim reserve,L23A7440,Reconciled,"$2,268.36"
 
 # Page 40
 
-RISK CONTROL FOLLOW-UP NOTES                                            LOSS RUN WORKPAPER
-__________________________________________________________________________________________
+RISK CONTROL FOLLOW-UP NOTES                                                   LOSS RUN WORKPAPER
+__________________________________________________________________________________________________
 
-                                RISK CONTROL FOLLOW-UP NOTES
+                               RISK CONTROL FOLLOW-UP NOTES
 
-Packet:               MULTIHOP_012_001_CROSSPAGE
-Related unit:         2024 PB 600008
-Review cycle:         Renewal file checklist
+Packet:              MULTIHOP_012_001_CROSSPAGE
+Related unit:        2024 PB 600008
+Review cycle:        Renewal file checklist
 
+Status,Description,Department
 X,Fleet safety meeting minutes retained,UW
 ,Post-accident drug test documentation reviewed,Fleet
 X,Driver remedial training assigned,UW
@@ -1050,42 +1000,42 @@ X,Claim trend reviewed with account manager,UW
 
 # Page 41
 
-DRIVER QUALIFICATION AUDIT                                                     LOSS RUN WORKPAPER
+DRIVER QUALIFICATION AUDIT                                                                  LOSS RUN WORKPAPER
 
 Driver Qualification Audit
 
-AUDIT FILE                      REVIEW TYPE                     REVIEWER
-DQ-SSPAGE-032                   Annual compliance sampling      Safety desk
+AUDIT FILE                      REVIEW TYPE                                            REVIEWER
+DQ-SSPAGE-032                   Annual compliance sampling                             Safety desk
 
-Driver,License State,License #,Medical Exp.,Finding,Unit
-"Driver-009, Alex",CA,D61098797,02/2026,Exception noted,600009
-"Driver-010, Alex",PA,D59298992,03/2027,Exception noted,600010
-"Driver-011, Alex",GA,D79245525,04/2025,Renewal due,600011
-"Driver-012, Alex",MO,D81852156,05/2026,Current,600012
-"Driver-001, Alex",CA,D86736241,06/2027,Current,600001
-"Driver-002, Alex",IN,D10448720,07/2025,Exception noted,600002
-"Driver-003, Alex",TX,D63461577,08/2026,Current,600003
-"Driver-004, Alex",IL,D78585802,09/2027,Verified,600004
-"Driver-005, Alex",IN,D40379788,10/2025,Renewal due,600005
-"Driver-006, Alex",PA,D42365190,11/2026,Exception noted,600006
-"Driver-007, Alex",AL,D20923988,12/2027,Exception noted,600007
-"Driver-008, Alex",TX,D96841000,01/2025,Renewal due,600008
-"Driver-009, Alex",TX,D23547581,02/2026,Current,600009
-"Driver-010, Alex",MO,D43822347,03/2027,Current,600010
-"Driver-011, Alex",TX,D61031286,04/2025,Verified,600011
-"Driver-012, Alex",PA,D77123863,05/2026,Renewal due,600012
+"Driver","License State","License #","Medical Exp.","Finding","Unit"
+"Driver-009, Alex","CA","D61098797","02/2026","Exception noted","600009"
+"Driver-010, Alex","PA","D59298992","03/2027","Exception noted","600010"
+"Driver-011, Alex","GA","D79245525","04/2025","Renewal due","600011"
+"Driver-012, Alex","MO","D81852156","05/2026","Current","600012"
+"Driver-001, Alex","CA","D86736241","06/2027","Current","600001"
+"Driver-002, Alex","IN","D10448720","07/2025","Exception noted","600002"
+"Driver-003, Alex","TX","D63461577","08/2026","Current","600003"
+"Driver-004, Alex","IL","D78585802","09/2027","Verified","600004"
+"Driver-005, Alex","IN","D40379788","10/2025","Renewal due","600005"
+"Driver-006, Alex","PA","D42365190","11/2026","Exception noted","600006"
+"Driver-007, Alex","AL","D20923988","12/2027","Exception noted","600007"
+"Driver-008, Alex","TX","D96841000","01/2025","Renewal due","600008"
+"Driver-009, Alex","TX","D23547581","02/2026","Current","600009"
+"Driver-010, Alex","MO","D43822347","03/2027","Current","600010"
+"Driver-011, Alex","TX","D61031286","04/2025","Verified","600011"
+"Driver-012, Alex","PA","D77123863","05/2026","Renewal due","600012"
 
 # Page 42
 
 PRIOR CARRIER CORRESPONDENCE                                                     LOSS RUN WORKPAPER
-__________________________________________________________________________________________________
+---------------------------------------------------------------------------------------------------
 
                                  PRIOR CARRIER REQUEST RESPONSE
 
 Issue Date:          02-07-2024
-Letter Id:           LC0333097                  ATTN: Account Review Desk
+Letter Id:           LC0333097                   ATTN: Account Review Desk
 Case Id:             MULTIHOP_012_001_CROSSPAGE  Synthetic Motor Carrier File
-                                                Packet MULTIHOP_012_001_CROSSPAGE
+                                                 Packet MULTIHOP_012_001_CROSSPAGE
 
 Report of services provided. This page records prior-
 carrier correspondence status and does not contain the complete claim schedule.
@@ -1098,22 +1048,22 @@ L240001,AR,05/09/2024,Pending response
 L230002,OH,06/11/2024,Prior term attached
 L230003,MO,07/13/2024,No loss data
 
-__________________________________________________________________________________________________
-                                 Record services unit - synthetic correspondence page
+---------------------------------------------------------------------------------------------------
+                              Record services unit - synthetic correspondence page
 
 # Page 43
 
-PREMIUM ALLOCATION WORKSHEET                                                        LOSS RUN WORKPAPER
+PREMIUM ALLOCATION WORKSHEET                                                 LOSS RUN WORKPAPER
 
-# Premium Allocation Worksheet
+Premium Allocation Worksheet
 
-PACKET                                WORKSHEET PERIOD                            ALLOCATION BASIS
-MULTIHOP_012_001_CROSSPAGE            2024 Policy Year                            Written premium by jurisdiction
+PACKET                                WORKSHEET PERIOD                  ALLOCATION BASIS
+MULTIHOP_012_001_CROSSPAGE            2024 Policy Year                  Written premium by jurisdiction
 
 Schedule,Jurisdiction,Surcharge,Written Premium,Taxable Premium,Tax Rate,Tax Due,Total Due
 Schedule 034,AL,Y,"19,363","12,025",0.0310,$372.77,$564.77
 Schedule 034,AR,Y,"50,273","44,898",0.0180,$808.16,$953.16
-Schedule 034,CA,Y,"154,805","137,460",0.0125,$1,718.25,$1,709.25
+Schedule 034,CA,Y,"154,805","137,460",0.0125,"$1,718.25","$1,709.25"
 Schedule 034,CO,N,"28,947","24,141",0.0125,$301.76,$463.76
 Schedule 034,GA,Y,"173,890","153,787",0.0000,$0.00,$-70.00
 Schedule 034,IL,Y,"95,578","63,827",0.0000,$0.00,$225.00
@@ -1121,21 +1071,21 @@ Schedule 034,IN,Y,"20,490","15,133",0.0125,$189.16,$359.16
 Schedule 034,IA,N,"24,756","21,368",0.0180,$384.62,$402.62
 Schedule 034,KS,Y,"116,610","113,444",0.0000,$0.00,$192.00
 Schedule 034,MO,Y,"3,443","2,352",0.0180,$42.34,$155.34
-Schedule 034,NC,Y,"111,766","81,995",0.0310,$2,541.84,$2,538.84
+Schedule 034,NC,Y,"111,766","81,995",0.0310,"$2,541.84","$2,538.84"
 Schedule 034,PA,N,"127,357","116,060",0.0000,$0.00,$-24.00
-Schedule 034,TX,Y,"160,080","150,143",0.0310,$4,654.43,$4,794.43
+Schedule 034,TX,Y,"160,080","150,143",0.0310,"$4,654.43","$4,794.43"
 Schedule 034,VA,Y,"43,903","42,469",0.0125,$530.86,$667.86
 
 Synthetic allocation worksheet. Jurisdiction rows are distractors and are not target incident records.
 
 # Page 44
 
-SUBROGATION DIARY EXTRACT                                                               LOSS RUN WORKPAPER
+SUBROGATION DIARY EXTRACT                                                           LOSS RUN WORKPAPER
 
 Subrogation Diary Extract
 
-PACKET                                DIARY EXPORT                            PRINTED
-MULTIHOP_012_001_CROSSPAGE            Subrogation module                      03/31/2024
+PACKET                                  DIARY EXPORT                            PRINTED
+MULTIHOP_012_001_CROSSPAGE              Subrogation module                      03/31/2024
 
 Diary Date,File #,Reference,Action,Status,Recovery Est.
 03/03/2024,SUB-035-01,L230012,Carrier tender,Diary,"$6,644.00"
@@ -1159,8 +1109,9 @@ MONTHLY ACCOUNT ACTIVITY                                                    LOSS
 
 Monthly Account Activity
 
-ACCOUNT BATCH                   ACCOUNTING MONTH                SOURCE
-MULTIHOP_012_001_CROSSPAGE-036  February 2024                   Billing ledger export
+ACCOUNT BATCH: MULTIHOP_012_001_CROSSPAGE-036
+ACCOUNTING MONTH: February 2024
+SOURCE: Billing ledger export
 
 Date,Document,Activity,Policy,Status,Amount
 02/02/2024,ACCT-036-01,Audit adjustment,L24A3974,Reconciled,$7,913.01
@@ -1174,7 +1125,7 @@ Date,Document,Activity,Policy,Status,Amount
 02/10/2024,L230009,Premium receipt,L24A6859,Reconciled,$8,077.57
 02/11/2024,ACCT-036-10,Endorsement,L24A3974,Pending,$-5,539.25
 02/12/2024,ACCT-036-11,Audit adjustment,L24A9905,Reconciled,$1,858.39
-02/13/2024,L230012,Claim reserve,L23A7440,Pending,$6,409.75
+02/13/2024,L230012,Claim reserve,L23A7444,Pending,$6,409.75
 02/14/2024,ACCT-036-13,Fee reversal,L24A3974,Posted,$9,290.08
 02/15/2024,ACCT-036-14,Premium receipt,L23A1955,Pending,$1,460.80
 02/16/2024,L230003,Endorsement,L23A3286,Posted,$-9,371.94
@@ -1184,16 +1135,15 @@ Date,Document,Activity,Policy,Status,Amount
 
 # Page 46
 
-RISK CONTROL FOLLOW-UP NOTES                                                LOSS RUN WORKPAPER
-______________________________________________________________________________________________
+RISK CONTROL FOLLOW-UP NOTES                                                    LOSS RUN WORKPAPER
+__________________________________________________________________________________________________
 
-                                 RISK CONTROL FOLLOW-UP NOTES
+                                   RISK CONTROL FOLLOW-UP NOTES
 
-Packet:                 MULTIHOP_012_001_CROSSPAGE
-Related unit:           2024 PB 600002
-Review cycle:           Renewal file checklist
+Packet:             MULTIHOP_012_001_CROSSPAGE
+Related unit:       2024 PB 600002
+Review cycle:       Renewal file checklist
 
-Checked,Description,Department
 X,Fleet safety meeting minutes retained,Safety
 ,Post-accident drug test documentation reviewed,Fleet
 X,Driver remedial training assigned,Claims
@@ -1205,12 +1155,12 @@ X,Claim trend reviewed with account manager,Safety
 
 # Page 47
 
-DRIVER QUALIFICATION AUDIT                                                      LOSS RUN WORKPAPER
+DRIVER QUALIFICATION AUDIT                                                          LOSS RUN WORKPAPER
 
 Driver Qualification Audit
 
-AUDIT FILE                                REVIEW TYPE                               REVIEWER
-DQ-SSPAGE-038                             Annual compliance sampling                Safety desk
+AUDIT FILE                      REVIEW TYPE                             REVIEWER
+DQ-SSPAGE-038                   Annual compliance sampling              Safety desk
 
 Driver,License State,License #,Medical Exp.,Finding,Unit
 "Driver-003, Alex",CA,D55825503,02/2026,Current,600003
@@ -1232,15 +1182,15 @@ Driver,License State,License #,Medical Exp.,Finding,Unit
 
 # Page 48
 
-PRIOR CARRIER CORRESPONDENCE                                                 LOSS RUN WORKPAPER
-_______________________________________________________________________________________________
+PRIOR CARRIER CORRESPONDENCE                                                     LOSS RUN WORKPAPER
+__________________________________________________________________________________________________
 
-                                PRIOR CARRIER REQUEST RESPONSE
+                                 PRIOR CARRIER REQUEST RESPONSE
 
-Issue Date:         02-13-2024
-Letter Id:          LC0393944                   ATTN: Account Review Desk
-Case Id:            MULTIHOP_012_001_CROSSPAGE  Synthetic Motor Carrier File
-                                                Packet MULTIHOP_012_001_CROSSPAGE
+Issue Date:          02-13-2024
+Letter Id:           LC0393994                      ATTN: Account Review Desk
+Case Id:             MULTIHOP_012_001_CROSSPAGE     Synthetic Motor Carrier File
+                                                    Packet MULTIHOP_012_001_CROSSPAGE
 
 Report of services provided. This page records prior-
 carrier correspondence status and does not contain the complete claim schedule.
@@ -1253,17 +1203,10 @@ L240007,CA,05/09/2024,Acknowledged
 L230008,OH,06/11/2024,Prior term attached
 L230009,IL,07/13/2024,Prior term attached
 
-_______________________________________________________________________________________________
-                             Record services unit - synthetic correspondence page
+__________________________________________________________________________________________________
+                               Record services unit - synthetic correspondence page
 
 # Page 49
-
-PREMIUM ALLOCATION WORKSHEET                                                    LOSS RUN WORKPAPER
-
-Premium Allocation Worksheet
-
-PACKET                               WORKSHEET PERIOD                    ALLOCATION BASIS
-MULTIHOP_012_001_CROSSPAGE           2024 Policy Year                    Written premium by jurisdiction
 
 Schedule,Jurisdiction,Surcharge,Written Premium,Taxable Premium,Tax Rate,Tax Due,Total Due
 Schedule 040,AL,N,"171,825","109,525",0.0000,$0.00,$-4.00
@@ -1281,16 +1224,15 @@ Schedule 040,PA,Y,"169,434","134,272",0.0180,"$2,416.90","$2,539.90"
 Schedule 040,TX,N,"142,203","139,291",0.0310,"$4,318.02","$4,276.02"
 Schedule 040,VA,Y,"40,703","26,977",0.0180,$485.59,$546.59
 
-Synthetic allocation worksheet. Jurisdiction rows are distractors and are not target incident records.
-
 # Page 50
 
-SUBROGATION DIARY EXTRACT                                                    LOSS RUN WORKPAPER
+SUBROGATION DIARY EXTRACT                                                         LOSS RUN WORKPAPER
+____________________________________________________________________________________________________
 
 Subrogation Diary Extract
 
-PACKET                               DIARY EXPORT                            PRINTED
-MULTIHOP_012_001_CROSSPAGE           Subrogation module                      03/31/2024
+PACKET                               DIARY EXPORT                         PRINTED
+MULTIHOP_012_001_CROSSPAGE           Subrogation module                   03/31/2024
 
 Diary Date,File #,Reference,Action,Status,Recovery Est.
 03/03/2024,SUB-041-01,L230006,Closed no recovery,Diary,"$3,473.00"
@@ -1310,10 +1252,12 @@ Diary Date,File #,Reference,Action,Status,Recovery Est.
 
 # Page 51
 
-MONTHLY ACCOUNT ACTIVITY,LOSS RUN WORKPAPER
+MONTHLY ACCOUNT ACTIVITY                                                         LOSS RUN WORKPAPER
+
 Monthly Account Activity
-ACCOUNT BATCH,ACCOUNTING MONTH,SOURCE
-MULTIHOP_012_001_CROSSPAGE-042,February 2024,Billing ledger export
+
+ACCOUNT BATCH                    ACCOUNTING MONTH                  SOURCE
+MULTIHOP_012_001_CROSSPAGE-042   February 2024                     Billing ledger export
 
 Date,Document,Activity,Policy,Status,Amount
 02/02/2024,ACCT-042-01,Claim reserve,L24A9905,Pending,"$6,330.02"
@@ -1337,7 +1281,8 @@ Date,Document,Activity,Policy,Status,Amount
 
 # Page 52
 
-RISK CONTROL FOLLOW-UP NOTES                                                LOSS RUN WORKPAPER
+RISK CONTROL FOLLOW-UP NOTES                                            LOSS RUN WORKPAPER
+__________________________________________________________________________________________
 
                                RISK CONTROL FOLLOW-UP NOTES
 
@@ -1345,6 +1290,7 @@ Packet:             MULTIHOP_012_001_CROSSPAGE
 Related unit:       2024 PB 600008
 Review cycle:       Renewal file checklist
 
+Status,Description,Department
 [X],Fleet safety meeting minutes retained,Fleet
 [ ],Post-accident drug test documentation reviewed,UW
 [X],Driver remedial training assigned,Claims
@@ -1356,12 +1302,13 @@ Review cycle:       Renewal file checklist
 
 # Page 53
 
-DRIVER QUALIFICATION AUDIT                                                      LOSS RUN WORKPAPER
+DRIVER QUALIFICATION AUDIT                                                     LOSS RUN WORKPAPER
+__________________________________________________________________________________________________
 
-Driver Qualification Audit
+### Driver Qualification Audit
 
-AUDIT FILE                      REVIEW TYPE                         REVIEWER
-DQ-SSPAGE-044                   Annual compliance sampling          Safety desk
+AUDIT FILE                      REVIEW TYPE                             REVIEWER
+DQ-SSPAGE-044                   Annual compliance sampling              Safety desk
 
 Driver,License State,License #,Medical Exp.,Finding,Unit
 "Driver-009, Alex",TX,D36980675,02/2026,Verified,600009
@@ -1383,15 +1330,14 @@ Driver,License State,License #,Medical Exp.,Finding,Unit
 
 # Page 54
 
-PRIOR CARRIER CORRESPONDENCE                                            LOSS RUN WORKPAPER
-__________________________________________________________________________________________________
+PRIOR CARRIER CORRESPONDENCE                                           LOSS RUN WORKPAPER
 
-                               PRIOR CARRIER REQUEST RESPONSE
+                                PRIOR CARRIER REQUEST RESPONSE
 
 Issue Date:         02-19-2024
 Letter Id:          LC0452316                   ATTN: Account Review Desk
-                                                Synthetic Motor Carrier File
-Case Id:            MULTIHOP_012_001_CROSSPAGE   Packet MULTIHOP_012_001_CROSSPAGE
+Case Id:            MULTIHOP_012_001_CROSSPAGE  Synthetic Motor Carrier File
+                                                Packet MULTIHOP_012_001_CROSSPAGE
 
 Report of services provided. This page records prior-
 carrier correspondence status and does not contain the complete claim schedule.
@@ -1404,18 +1350,9 @@ L240001,AR,05/09/2024,No loss data
 L230002,OH,06/11/2024,Pending response
 L230003,MO,07/13/2024,No loss data
 
-__________________________________________________________________________________________________
-                              Record services unit - synthetic correspondence page
+Record services unit - synthetic correspondence page
 
 # Page 55
-
-PREMIUM ALLOCATION WORKSHEET LOSS RUN WORKPAPER
-
-Premium Allocation Worksheet
-
-PACKET: MULTIHOP_012_001_CROSSPAGE
-WORKSHEET PERIOD: 2024 Policy Year
-ALLOCATION BASIS: Written premium by jurisdiction
 
 Schedule,Jurisdiction,Surcharge,Written Premium,Taxable Premium,Tax Rate,Tax Due,Total Due
 Schedule 046,AL,Y,"75,966","51,361",0.0275,"$1,412.43","$1,626.43"
@@ -1433,12 +1370,10 @@ Schedule 046,PA,Y,"174,399","128,524",0.0000,"$0.00","$3.00"
 Schedule 046,TX,Y,"15,925","14,782",0.0125,"$184.78","$341.77"
 Schedule 046,VA,Y,"6,800","5,975",0.0000,"$0.00","$-19.00"
 
-Synthetic allocation worksheet. Jurisdiction rows are distractors and are not target incident records.
-
 # Page 56
 
-LOSS CAUSE CLASSIFICATION APPENDIX                                                                LOSS RUN WORKPAPER
-__________________________________________________________________________________________________________________
+LOSS CAUSE CLASSIFICATION APPENDIX                                                 LOSS RUN WORKPAPER
+____________________________________________________________________________________________________
 
 Loss Cause Classification Appendix
 
@@ -1454,33 +1389,37 @@ IMD,Inland Marine,Equipment or transported vehicle damage during handling,Claims
 
 # Page 57
 
-CLAIMANT NOTICE INDEX                                                         LOSS RUN WORKPAPER
-________________________________________________________________________________________________
+CLAIMANT NOTICE INDEX                                                     LOSS RUN WORKPAPER
+____________________________________________________________________________________________
 
 Claimant Notice and Adjuster Note Index
 
-This index was scanned from the claim correspondence module. It includes        Rows may not appear in the same order as the primary schedule.
-claimants, claimant-side references, and adjuster diary snippets.
+This index was scanned from the claim correspondence module. It includes claimants, claimant-side references, and adjuster diary snippets.
+Rows may not appear in the same order as the primary schedule.
 
-"Claim #","Claimants","Adjuster Notes"
-"#30001","Walker, Linda","Indexed claimant notice 001; verify ledger totals before closure."
-"#30002","Gonzalez, Kevin; Jordan LLC","Indexed claimant notice 002; verify ledger totals before closure."
-"#30003","Mcdonald, Donna; Haynes, Jason","Indexed claimant notice 003; verify ledger totals before closure."
-"#30004","Le and Sons; Martin, George","Indexed claimant notice 004; verify ledger totals before closure."
-"#30005","Martin, Tiffany; Watkins, Ashlee","Indexed claimant notice 005; verify ledger totals before closure."
-"#30006","Claimant-006","Indexed claimant notice 006; verify ledger totals before closure."
-"#30007","Rivera Inc","Indexed claimant notice 007; verify ledger totals before closure."
-"#30008","Claimant-008","Indexed claimant notice 008; verify ledger totals before closure."
-"#30009","Claimant-009","Indexed claimant notice 009; verify ledger totals before closure."
-"#30010","Claimant-010","Indexed claimant notice 010; verify ledger totals before closure."
-"#30011","Carter, Gabriel","Indexed claimant notice 011; verify ledger totals before closure."
-"#30012","Claimant-012","Indexed claimant notice 012; verify ledger totals before closure."
+Claim #,Claimants,Adjuster Notes
+#30001,"Walker, Linda","Indexed claimant notice 001; verify ledger totals before closure."
+#30002,"Gonzalez, Kevin; Jordan LLC","Indexed claimant notice 002; verify ledger totals before closure."
+#30003,"Mcdonald, Donna; Haynes, Jason","Indexed claimant notice 003; verify ledger totals before closure."
+#30004,"Le and Sons; Martin, George","Indexed claimant notice 004; verify ledger totals before closure."
+#30005,"Martin, Tiffany; Watkins, Ashlee","Indexed claimant notice 005; verify ledger totals before closure."
+#30006,"Claimant-006","Indexed claimant notice 006; verify ledger totals before closure."
+#30007,"Rivera Inc","Indexed claimant notice 007; verify ledger totals before closure."
+#30008,"Claimant-008","Indexed claimant notice 008; verify ledger totals before closure."
+#30009,"Claimant-009","Indexed claimant notice 009; verify ledger totals before closure."
+#30010,"Claimant-010","Indexed claimant notice 010; verify ledger totals before closure."
+#30011,"Carter, Gabriel","Indexed claimant notice 011; verify ledger totals before closure."
+#30012,"Claimant-012","Indexed claimant notice 012; verify ledger totals before closure."
 
 # Page 58
 
-SUBROGATION DIARY EXTRACT,LOSS RUN WORKPAPER
+SUBROGATION DIARY EXTRACT                                                                           LOSS RUN WORKPAPER
+____________________________________________________________________________________________________________________
+
 Subrogation Diary Extract
-PACKET: MULTIHOP_012_001_CROSSPAGE,DIARY EXPORT: Subrogation module,PRINTED: 03/31/2024
+
+PACKET                                    DIARY EXPORT                             PRINTED
+MULTIHOP_012_001_CROSSPAGE                Subrogation module                       03/31/2024
 
 Diary Date,File #,Reference,Action,Status,Recovery Est.
 03/03/2024,SUB-047-01,L230012,Arbitration pending,Review,"$1,755.00"
@@ -1499,13 +1438,6 @@ Diary Date,File #,Reference,Action,Status,Recovery Est.
 03/02/2024,SUB-047-14,L240001,Carrier tender,Open,"$383.00"
 
 # Page 59
-
-MONTHLY ACCOUNT ACTIVITY                                                LOSS RUN WORKPAPER
-
-Monthly Account Activity
-
-ACCOUNT BATCH                   ACCOUNTING MONTH                SOURCE
-MULTIHOP_012_001_CROSSPAGE-048   February 2024                   Billing ledger export
 
 Date,Document,Activity,Policy,Status,Amount
 02/02/2024,ACCT-048-01,Fee reversal,L24A3974,Pending,"$4,381.17"
@@ -1530,31 +1462,31 @@ Date,Document,Activity,Policy,Status,Amount
 # Page 60
 
 RISK CONTROL FOLLOW-UP NOTES                                                LOSS RUN WORKPAPER
-______________________________________________________________________________________________
+__________________________________________________________________________________________________
 
                                 RISK CONTROL FOLLOW-UP NOTES
 
-Packet:             MULTIHOP_012_001_CROSSPAGE
-Related unit:       2024 PB 600002
-Review cycle:       Renewal file checklist
+Packet:               MULTIHOP_012_001_CROSSPAGE
+Related unit:         2024 PB 600002
+Review cycle:         Renewal file checklist
 
-"X","Fleet safety meeting minutes retained","Claims"
-"","Post-accident drug test documentation reviewed","UW"
-"X","Driver remedial training assigned","Fleet"
-"X","Telematics exception report requested","Claims"
-"","Maintenance file cross-check complete","Claims"
-"X","Open recommendation carried to renewal file","Safety"
-"X","Claim trend reviewed with account manager","UW"
-"","No additional field visit required","Fleet"
+[X],Fleet safety meeting minutes retained,Claims
+[ ],Post-accident drug test documentation reviewed,UW
+[X],Driver remedial training assigned,Fleet
+[X],Telematics exception report requested,Claims
+[ ],Maintenance file cross-check complete,Claims
+[X],Open recommendation carried to renewal file,Safety
+[X],Claim trend reviewed with account manager,UW
+[ ],No additional field visit required,Fleet
 
 # Page 61
 
-DRIVER QUALIFICATION AUDIT                                                      LOSS RUN WORKPAPER
+DRIVER QUALIFICATION AUDIT                                                     LOSS RUN WORKPAPER
 
 Driver Qualification Audit
 
-AUDIT FILE                          REVIEW TYPE                         REVIEWER
-DQ-SSPAGE-050                       Annual compliance sampling          Safety desk
+AUDIT FILE                     REVIEW TYPE                           REVIEWER
+DQ-SSPAGE-050                  Annual compliance sampling            Safety desk
 
 Driver,License State,License #,Medical Exp.,Finding,Unit
 "Driver-003, Alex",TX,D53148717,02/2026,Renewal due,600003
@@ -1576,15 +1508,15 @@ Driver,License State,License #,Medical Exp.,Finding,Unit
 
 # Page 62
 
-PRIOR CARRIER CORRESPONDENCE                                           LOSS RUN WORKPAPER
-__________________________________________________________________________________________
+PRIOR CARRIER CORRESPONDENCE                                                 LOSS RUN WORKPAPER
+_______________________________________________________________________________________________
 
-                             PRIOR CARRIER REQUEST RESPONSE
+                                PRIOR CARRIER REQUEST RESPONSE
 
 Issue Date:         02-25-2024
-Letter Id:          LC0511335                  ATTN: Account Review Desk
+Letter Id:          LC0511335                   ATTN: Account Review Desk
 Case Id:            MULTIHOP_012_001_CROSSPAGE  Synthetic Motor Carrier File
-                                               Packet MULTIHOP_012_001_CROSSPAGE
+                                                Packet MULTIHOP_012_001_CROSSPAGE
 
 Report of services provided. This page records prior-
 carrier correspondence status and does not contain the complete claim schedule.
@@ -1597,13 +1529,12 @@ L240007,CA,05/09/2024,Pending response
 L230008,OH,06/11/2024,Prior term attached
 L230009,IL,07/13/2024,Pending response
 
-__________________________________________________________________________________________
+_______________________________________________________________________________________________
                                Record services unit - synthetic correspondence page
 
 # Page 63
 
-PREMIUM ALLOCATION WORKSHEET                                            LOSS RUN WORKPAPER
-__________________________________________________________________________________________
+PREMIUM ALLOCATION WORKSHEET                                                        LOSS RUN WORKPAPER
 
 Premium Allocation Worksheet
 
@@ -1611,33 +1542,25 @@ PACKET: MULTIHOP_012_001_CROSSPAGE
 WORKSHEET PERIOD: 2024 Policy Year
 ALLOCATION BASIS: Written premium by jurisdiction
 
-Schedule,Jurisdiction,Surcharge,Written Premium,Taxable Premium,Tax Rate,Tax Due,Total Due
-Schedule 052,AL,Y,"127,965","83,059",0.0125,"$1,038.24","$1,131.24"
-Schedule 052,AR,N,"160,338","110,267",0.0000,$0.00,$159.00
-Schedule 052,CA,Y,"4,289","2,968",0.0125,$37.10,$-0.90
-Schedule 052,CO,Y,"4,317","3,887",0.0180,$69.97,$251.97
-Schedule 052,GA,N,"28,775","21,665",0.0125,$270.81,$486.81
-Schedule 052,IL,Y,"51,641","35,134",0.0310,"$1,089.15","$1,096.15"
-Schedule 052,IN,N,"162,526","120,168",0.0125,"$1,502.10","$1,477.10"
-Schedule 052,IA,Y,"93,723","77,984",0.0310,"$2,417.50","$2,471.50"
-Schedule 052,KS,N,"2,939","2,337",0.0180,$42.07,$206.07
-Schedule 052,MO,Y,"14,867","12,900",0.0180,$232.20,$459.20
-Schedule 052,NC,N,"88,200","80,815",0.0125,"$1,010.19","$1,111.19"
-Schedule 052,PA,Y,"64,007","50,654",0.0275,"$1,392.98","$1,365.98"
-Schedule 052,TX,N,"83,620","61,960",0.0275,"$1,703.90","$1,830.90"
-Schedule 052,VA,Y,"109,488","72,995",0.0310,"$2,262.84","$2,468.84"
+"Schedule","Jurisdiction","Surcharge","Written Premium","Taxable Premium","Tax Rate","Tax Due","Total Due"
+"Schedule 052","AL","Y","127,965","83,059","0.0125","$1,038.24","$1,131.24"
+"Schedule 052","AR","N","160,338","110,267","0.0000","$0.00","$159.00"
+"Schedule 052","CA","Y","4,289","2,968","0.0125","$37.10","$-0.90"
+"Schedule 052","CO","Y","4,317","3,887","0.0180","$69.97","$251.97"
+"Schedule 052","GA","N","28,775","21,665","0.0125","$270.81","$486.81"
+"Schedule 052","IL","Y","51,641","35,134","0.0310","$1,089.15","$1,096.15"
+"Schedule 052","IN","N","162,526","120,168","0.0125","$1,502.10","$1,477.10"
+"Schedule 052","IA","Y","93,723","77,984","0.0310","$2,417.50","$2,471.50"
+"Schedule 052","KS","N","2,939","2,337","0.0180","$42.07","$206.07"
+"Schedule 052","MO","Y","14,867","12,900","0.0180","$232.20","$459.20"
+"Schedule 052","NC","N","88,200","80,815","0.0125","$1,010.19","$1,111.19"
+"Schedule 052","PA","Y","64,007","50,654","0.0275","$1,392.98","$1,365.98"
+"Schedule 052","TX","N","83,620","61,960","0.0275","$1,703.90","$1,830.90"
+"Schedule 052","VA","Y","109,488","72,995","0.0310","$2,262.84","$2,468.84"
 
-__________________________________________________________________________________________
 Synthetic allocation worksheet. Jurisdiction rows are distractors and are not target incident records.
 
 # Page 64
-
-SUBROGATION DIARY EXTRACT                                                 LOSS RUN WORKPAPER
-
-Subrogation Diary Extract
-
-PACKET                               DIARY EXPORT                         PRINTED
-MULTIHOP_012_001_CROSSPAGE           Subrogation module                   03/31/2024
 
 Diary Date,File #,Reference,Action,Status,Recovery Est.
 03/03/2024,SUB-053-01,L230006,Diary follow-up,Review,"$4,674.00"
@@ -1661,8 +1584,8 @@ MONTHLY ACCOUNT ACTIVITY                                                        
 
 Monthly Account Activity
 
-ACCOUNT BATCH                      ACCOUNTING MONTH                      SOURCE
-MULTIHOP_012_001_CROSSPAGE-054     February 2024                         Billing ledger export
+ACCOUNT BATCH                      ACCOUNTING MONTH                    SOURCE
+MULTIHOP_012_001_CROSSPAGE-054     February 2024                       Billing ledger export
 
 Date,Document,Activity,Policy,Status,Amount
 02/02/2024,ACCT-054-01,Premium receipt,L24A9905,Pending,"$6,906.79"
@@ -1677,42 +1600,41 @@ Date,Document,Activity,Policy,Status,Amount
 02/11/2024,ACCT-054-10,Fee reversal,L24A6859,Reconciled,"$-2,401.36"
 02/12/2024,ACCT-054-11,Premium receipt,L24A7575,Reconciled,"$5,413.55"
 02/13/2024,L230006,Endorsement,L23A2216,Posted,"$7,405.46"
-02/14/2024,ACCT-054-13,Audit adjustment,L24A9905,Pending,$490.63
+02/14/2024,ACCT-054-13,Audit adjustment,L24A9905,Pending,"$490.63"
 02/15/2024,ACCT-054-14,Claim reserve,L23A1604,Posted,"$2,451.91"
-02/16/2024,L230009,Fee reversal,L24A6859,Reconciled,$-687.40
-02/17/2024,ACCT-054-16,Premium receipt,L24A3974,Reconciled,$378.00
-02/18/2024,ACCT-054-17,Endorsement,L24A9905,Posted,$293.02
+02/16/2024,L230009,Fee reversal,L24A6859,Reconciled,"$-687.40"
+02/17/2024,ACCT-054-16,Premium receipt,L24A3974,Reconciled,"$378.00"
+02/18/2024,ACCT-054-17,Endorsement,L24A9905,Posted,"$293.02"
 02/19/2024,L230012,Audit adjustment,L23A7440,Posted,"$1,339.09"
 
 # Page 66
 
-RISK CONTROL FOLLOW-UP NOTES                                                 LOSS RUN WORKPAPER
------------------------------------------------------------------------------------------------
+RISK CONTROL FOLLOW-UP NOTES                                            LOSS RUN WORKPAPER
+__________________________________________________________________________________________
 
-                                 RISK CONTROL FOLLOW-UP NOTES
+                               RISK CONTROL FOLLOW-UP NOTES
 
-Packet:               MULTIHOP_012_001_CROSSPAGE
-Related unit:         2024 PB 600008
-Review cycle:         Renewal file checklist
+Packet:         MULTIHOP_012_001_CROSSPAGE
+Related unit:   2024 PB 600008
+Review cycle:   Renewal file checklist
 
-[X],Fleet safety meeting minutes retained,Fleet
-[ ],Post-accident drug test documentation reviewed,Safety
-[X],Driver remedial training assigned,UW
-[X],Telematics exception report requested,UW
-[ ],Maintenance file cross-check complete,UW
-[X],Open recommendation carried to renewal file,Fleet
-[X],Claim trend reviewed with account manager,Fleet
-[ ],No additional field visit required,Fleet
+"[X]","Fleet safety meeting minutes retained","Fleet"
+"[ ]","Post-accident drug test documentation reviewed","Safety"
+"[X]","Driver remedial training assigned","UW"
+"[X]","Telematics exception report requested","UW"
+"[ ]","Maintenance file cross-check complete","UW"
+"[X]","Open recommendation carried to renewal file","Fleet"
+"[X]","Claim trend reviewed with account manager","Fleet"
+"[ ]","No additional field visit required","Fleet"
 
 # Page 67
 
-DRIVER QUALIFICATION AUDIT                                                 LOSS RUN WORKPAPER
+DRIVER QUALIFICATION AUDIT                                                     LOSS RUN WORKPAPER
 
 Driver Qualification Audit
 
-AUDIT FILE: DQ-SSPAGE-056
-REVIEW TYPE: Annual compliance sampling
-REVIEWER: Safety desk
+AUDIT FILE                    REVIEW TYPE                             REVIEWER
+DQ-SSPAGE-056                 Annual compliance sampling              Safety desk
 
 Driver,License State,License #,Medical Exp.,Finding,Unit
 "Driver-009, Alex",TX,D49984021,02/2026,Current,600009
@@ -1734,15 +1656,15 @@ Driver,License State,License #,Medical Exp.,Finding,Unit
 
 # Page 68
 
-PRIOR CARRIER CORRESPONDENCE                                           LOSS RUN WORKPAPER
-_________________________________________________________________________________________
+PRIOR CARRIER CORRESPONDENCE                                              LOSS RUN WORKPAPER
+____________________________________________________________________________________________
 
-                            PRIOR CARRIER REQUEST RESPONSE
+                              PRIOR CARRIER REQUEST RESPONSE
 
 Issue Date:         02-04-2024
-                                            ATTN: Account Review Desk
-Letter Id:          LC0573440               Synthetic Motor Carrier File
-Case Id:            MULTIHOP_012_001_CROSSPAGE  Packet MULTIHOP_012_001_CROSSPAGE
+Letter Id:          LC0573440                     ATTN: Account Review Desk
+Case Id:            MULTIHOP_012_001_CROSSPAGE    Synthetic Motor Carrier File
+                                                  Packet MULTIHOP_012_001_CROSSPAGE
 
 Report of services provided. This page records prior-
 carrier correspondence status and does not contain the complete claim schedule.
@@ -1755,16 +1677,18 @@ L240001,AR,05/09/2024,Pending response
 L230002,OH,06/11/2024,No loss data
 L230003,MO,07/13/2024,Acknowledged
 
-_________________________________________________________________________________________
-                            Record services unit - synthetic correspondence page
+____________________________________________________________________________________________
+                           Record services unit - synthetic correspondence page
 
 # Page 69
 
-PREMIUM ALLOCATION WORKSHEET,,,LOSS RUN WORKPAPER,,,,
-Premium Allocation Worksheet,,,,,,,
-PACKET,,,WORKSHEET PERIOD,,,ALLOCATION BASIS,,
-MULTIHOP_012_001_CROSSPAGE,,,2024 Policy Year,,,Written premium by jurisdiction,,
-,,,,,,,
+PREMIUM ALLOCATION WORKSHEET                                                    LOSS RUN WORKPAPER
+
+Premium Allocation Worksheet
+
+PACKET                                WORKSHEET PERIOD                       ALLOCATION BASIS
+MULTIHOP_012_001_CROSSPAGE            2024 Policy Year                       Written premium by jurisdiction
+
 Schedule,Jurisdiction,Surcharge,Written Premium,Taxable Premium,Tax Rate,Tax Due,Total Due
 Schedule 058,AL,N,"101,252","94,061",0.0125,"$1,175.76","$1,134.76"
 Schedule 058,AR,N,"120,356","111,296",0.0125,"$1,391.20","$1,397.20"
@@ -1780,18 +1704,10 @@ Schedule 058,NC,Y,"161,205","146,718",0.0180,"$2,640.92","$2,753.92"
 Schedule 058,PA,Y,"144,310","89,682",0.0000,"$0.00","$234.00"
 Schedule 058,TX,Y,"31,503","20,842",0.0310,"$646.10","$735.10"
 Schedule 058,VA,Y,"101,304","97,163",0.0275,"$2,671.98","$2,687.98"
-,,,,,,,
-Synthetic allocation worksheet. Jurisdiction rows are distractors and are not target incident records.,,,,,,,
+
+Synthetic allocation worksheet. Jurisdiction rows are distractors and are not target incident records.
 
 # Page 70
-
-SUBROGATION DIARY EXTRACT                                                                     LOSS RUN WORKPAPER
-__________________________________________________________________________________________________________________
-
-Subrogation Diary Extract
-
-PACKET                               DIARY EXPORT                         PRINTED
-MULTIHOP_012_001_CROSSPAGE           Subrogation module                   03/31/2024
 
 Diary Date,File #,Reference,Action,Status,Recovery Est.
 03/03/2024,SUB-059-01,L230012,Demand review,Review,"$13,508.00"
@@ -1811,12 +1727,13 @@ Diary Date,File #,Reference,Action,Status,Recovery Est.
 
 # Page 71
 
-MONTHLY ACCOUNT ACTIVITY                                                    LOSS RUN WORKPAPER
+MONTHLY ACCOUNT ACTIVITY                                                     LOSS RUN WORKPAPER
+_______________________________________________________________________________________________
 
 Monthly Account Activity
 
-ACCOUNT BATCH                       ACCOUNTING MONTH                   SOURCE
-MULTIHOP_012_001_CROSSPAGE-060      February 2024                      Billing ledger export
+ACCOUNT BATCH,ACCOUNTING MONTH,SOURCE
+MULTIHOP_012_001_CROSSPAGE-060,February 2024,Billing ledger export
 
 Date,Document,Activity,Policy,Status,Amount
 02/02/2024,ACCT-060-01,Endorsement,L24A3974,Pending,$76.03
@@ -1840,24 +1757,23 @@ Date,Document,Activity,Policy,Status,Amount
 
 # Page 72
 
-RISK CONTROL FOLLOW-UP NOTES                                                 LOSS RUN WORKPAPER
-_______________________________________________________________________________________________
+RISK CONTROL FOLLOW-UP NOTES                                            LOSS RUN WORKPAPER
+__________________________________________________________________________________________
 
-                                RISK CONTROL FOLLOW-UP NOTES
+                               RISK CONTROL FOLLOW-UP NOTES
 
-Packet:             MULTIHOP_012_001_CROSSPAGE
-Related unit:       2024 PB 600002
-Review cycle:       Renewal file checklist
+Packet:              MULTIHOP_012_001_CROSSPAGE
+Related unit:        2024 PB 600002
+Review cycle:        Renewal file checklist
 
-"Status","Activity","Category"
-"X","Fleet safety meeting minutes retained","Fleet"
-"","Post-accident drug test documentation reviewed","Safety"
-"X","Driver remedial training assigned","Claims"
-"X","Telematics exception report requested","Safety"
-"","Maintenance file cross-check complete","Safety"
-"X","Open recommendation carried to renewal file","Fleet"
-"X","Claim trend reviewed with account manager","Claims"
-"","No additional field visit required","Claims"
+[X],Fleet safety meeting minutes retained,Fleet
+[ ],Post-accident drug test documentation reviewed,Safety
+[X],Driver remedial training assigned,Claims
+[X],Telematics exception report requested,Safety
+[ ],Maintenance file cross-check complete,Safety
+[X],Open recommendation carried to renewal file,Fleet
+[X],Claim trend reviewed with account manager,Claims
+[ ],No additional field visit required,Claims
 
 # Page 73
 
@@ -1865,10 +1781,10 @@ DRIVER QUALIFICATION AUDIT                                                      
 
 Driver Qualification Audit
 
-AUDIT FILE                      REVIEW TYPE                         REVIEWER
-DQ-SSPAGE-062                   Annual compliance sampling          Safety desk
+AUDIT FILE                     REVIEW TYPE                                      REVIEWER
+DQ-SSPAGE-062                  Annual compliance sampling                       Safety desk
 
-"Driver","License State","License #","Medical Exp.","Finding","Unit"
+Driver,License State,License #,Medical Exp.,Finding,Unit
 "Driver-003, Alex",TX,D62577014,02/2026,Exception noted,600003
 "Driver-004, Alex",TX,D38204637,03/2027,Verified,600004
 "Driver-005, Alex",IL,D51730380,04/2025,Renewal due,600005
@@ -1889,9 +1805,8 @@ DQ-SSPAGE-062                   Annual compliance sampling          Safety desk
 # Page 74
 
 PRIOR CARRIER CORRESPONDENCE                                                    LOSS RUN WORKPAPER
-__________________________________________________________________________________________________
 
-                                PRIOR CARRIER REQUEST RESPONSE
+                               PRIOR CARRIER REQUEST RESPONSE
 
 Issue Date:         02-10-2024
 Letter Id:          LC0635786                   ATTN: Account Review Desk
@@ -1909,7 +1824,6 @@ L240007,CA,05/09/2024,No loss data
 L230008,OH,06/11/2024,Prior term attached
 L230009,IL,07/13/2024,No loss data
 
-__________________________________________________________________________________________________
                                Record services unit - synthetic correspondence page
 
 # Page 75
@@ -1918,25 +1832,25 @@ PREMIUM ALLOCATION WORKSHEET,LOSS RUN WORKPAPER
 
 Premium Allocation Worksheet
 
-PACKET,MULTIHOP_012_001_CROSSPAGE
-WORKSHEET PERIOD,2024 Policy Year
-ALLOCATION BASIS,Written premium by jurisdiction
+PACKET: MULTIHOP_012_001_CROSSPAGE
+WORKSHEET PERIOD: 2024 Policy Year
+ALLOCATION BASIS: Written premium by jurisdiction
 
 Schedule,Jurisdiction,Surcharge,Written Premium,Taxable Premium,Tax Rate,Tax Due,Total Due
 Schedule 064,AL,Y,"96,066","82,917",0.0310,"$2,570.43","$2,577.43"
-Schedule 064,AR,Y,"133,152","112,090",0.0000,$0.00,$111.00
+Schedule 064,AR,Y,"133,152","112,090",0.0000,"$0.00","$111.00"
 Schedule 064,CA,N,"88,138","66,432",0.0275,"$1,826.88","$1,904.88"
-Schedule 064,CO,N,"28,649","19,377",0.0180,$348.79,$489.79
+Schedule 064,CO,N,"28,649","19,377",0.0180,"$348.79","$489.79"
 Schedule 064,GA,N,"170,709","131,301",0.0125,"$1,641.26","$1,742.26"
 Schedule 064,IL,Y,"103,950","96,051",0.0310,"$2,977.58","$3,116.58"
-Schedule 064,IN,Y,"26,185","16,523",0.0310,$512.21,$479.21
+Schedule 064,IN,Y,"26,185","16,523",0.0310,"$512.21","$479.21"
 Schedule 064,IA,N,"169,968","105,418",0.0180,"$1,897.52","$2,026.52"
-Schedule 064,KS,N,"40,695","27,057",0.0275,$744.07,$710.07
+Schedule 064,KS,N,"40,695","27,057",0.0275,"$744.07","$710.07"
 Schedule 064,MO,N,"142,983","123,366",0.0125,"$1,542.08","$1,568.08"
 Schedule 064,NC,N,"108,577","83,003",0.0275,"$2,282.58","$2,231.58"
-Schedule 064,PA,N,"173,839","159,542",0.0000,$0.00,$135.00
-Schedule 064,TX,Y,"46,331","39,354",0.0180,$708.37,$905.37
-Schedule 064,VA,N,"89,404","67,823",0.0000,$0.00,$215.00
+Schedule 064,PA,N,"173,889","159,542",0.0000,"$0.00","$135.00"
+Schedule 064,TX,Y,"46,331","39,354",0.0180,"$708.37","$905.37"
+Schedule 064,VA,N,"89,404","67,823",0.0000,"$0.00","$215.00"
 
 Synthetic allocation worksheet. Jurisdiction rows are distractors and are not target incident records.
 
@@ -1955,3 +1869,4 @@ Claim #,BI Res,BI Paid,BI Rec,BI Total,PD Res,PD Paid,PD Rec,PD Total,LAE Res,LA
 #30010,$0.00,$0.00,$0.00,$0.00,"$28,431.13",$0.00,$0.00,"$28,431.13",$0.00,$0.00,$0.00,$0.00,$0.00,$0.00,$0.00,$0.00
 #30011,$0.00,$0.00,$0.00,$0.00,$0.00,"$38,774.39",$0.00,"$38,774.39",$0.00,"$1,370.31",$0.00,"$1,370.31",$0.00,$0.00,$0.00,$0.00
 #30012,$0.00,$0.00,$0.00,$0.00,"$47,820.35",$0.00,$0.00,"$47,820.35",$0.00,$0.00,$0.00,$0.00,$0.00,$0.00,"$31,030.90","$-31,030.90"
+

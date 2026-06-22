@@ -39,7 +39,6 @@
     "schedule_source",
     "valuation"
   ],
-  "num_claims": 48,
   "num_policy_items": 48,
   "num_primary_policy_items": 12,
   "num_target_records": 48,
@@ -173,16 +172,18 @@
     "ground_truth": "ground_truth/multihop_bop_012_001.json",
     "pdf": "pdfs/multihop_bop_012_001.pdf",
     "html": "html/multihop_bop_012_001.html",
-    "canonical_md": "transcripts/canonical/multihop_bop_012_001.md",
+    "metadata": "metadata/multihop_bop_012_001.json",
     "ocr_md": "transcripts/ocr_gemini/multihop_bop_012_001.md",
     "json_size_bytes": 24285,
-    "pdf_size_bytes": 485523,
-    "html_size_bytes": 230234,
-    "canonical_size_bytes": 9,
-    "ocr_size_bytes": 227771
+    "pdf_size_bytes": 485095,
+    "html_size_bytes": 230238,
+    "ocr_size_bytes": 229971
   },
   "transcripts_available": [
-    "canonical",
     "ocr"
-  ]
+  ],
+  "template": "policy_multihop_bop",
+  "provenance": "Synthetic generated document. Private production references were used only for visual layout review; no production PDFs, names, account numbers, or raw customer data are included in this repository.",
+  "dataset_version": "2.0.0",
+  "hf_config": "policy_packets"
 }

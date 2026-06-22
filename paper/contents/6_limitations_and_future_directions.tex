@@ -1,35 +1,35 @@
 \subsection{Limitations}
-LongListBench is designed as a measurement tool for long-list extraction under controlled layout and OCR noise. The current release prioritizes reproducibility and targeted stressors over exhaustive coverage of document variability. Table~\ref{tab:benchmark-scope} summarizes what LongListBench v1 covers and what it does not.
+LongListBench is a measurement tool for long-list extraction under controlled synthetic conditions. Table~\ref{tab:benchmark-scope} summarizes the current scope.
 
 \begin{table}[t]
 \centering
-\caption{Scope of LongListBench v1.}
+\caption{Scope of the current LongListBench release.}
 \label{tab:benchmark-scope}
 \begin{tabular}{>{\raggedright\arraybackslash}p{0.46\linewidth} >{\raggedright\arraybackslash}p{0.46\linewidth}}
 \toprule
-Covered in v1 & Not covered / out of scope \\
+Covered & Not covered / out of scope \\
 \midrule
-Claims-style long lists (loss runs) in two renderings (detailed and table), plus initial claim and policy single-document cross-page multi-hop extensions & Other long-list families (invoices, purchase orders, medical billing, financial statements), non-English documents, and larger multi-hop corpora \\
-Programmatic layouts with seven injected phenomena (including some format-specific variants and exact duplicates) & Scan artifacts (skew, blur, stamps, handwriting), complex typography, and highly idiosyncratic templates \\
-Canonical transcript condition and VLM-OCR generation from rendered PDFs & Broader OCR stacks and prompt variants; OCR bounding boxes and reading-order supervision \\
-Schema-conformant, field-level micro scoring with canonicalization & Semantic equivalence, downstream task-based metrics, and duplicate-aware entity matching \\
+High-density insurance and fleet-operation lists, claim packets, and commercial policy packets & Non-English documents, handwriting, medical bills, invoices, purchase orders, and many other document families \\
+Production-like synthetic layouts based on observed document structures & Full visual diversity of private production corpora and carrier-specific edge cases \\
+OCR transcripts for every released PDF & Multiple OCR engines, scanned/noisy image variants, bounding boxes, and reading-order supervision \\
+Field-level scoring for claim incidents and generic record lists & Semantic equivalence scoring, downstream task metrics, and human adjudication of ambiguous fields \\
+Agentic sandbox support in the harness & Published current-corpus model leaderboard, latency/cost-normalized protocol comparison \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-In addition, our primary record identifier for the core claims suite is the incident number. This choice simplifies evaluation and enables stable alignment at scale, but it can understate performance when a model extracts most fields correctly while corrupting identifiers. It also complicates the interpretation of results on documents containing exact duplicate incidents. Some injected stressors are intentionally format-specific in v1: the strongest page-break and multi-column effects appear in detailed-format content, while table-format documents keep the main claims table single-span. The canonical-vs-OCR setup can isolate OCR penalty when both transcript conditions are evaluated, but it does not fully explain all failure modes: extraction protocols can still fail on clean transcripts because of long lists, layout structure, and schema-completion errors.
+The documents are synthetic. This is necessary for public release, but it means the benchmark cannot replace evaluation on a private production corpus. We used private documents only as structural references for layout and packet organization; the released names, identifiers, values, and prose are generated.
+
+The current release includes one OCR transcript condition. This supports reproducible OCR-conditioned evaluation, but it does not isolate OCR penalty by itself. Measuring OCR penalty requires adding another transcript or direct-PDF condition and running the same extraction protocol across both.
+
+Finally, the corpus now contains several operations record types whose public schema is represented by the ground-truth examples and generic scorer rather than separate hand-written JSON Schema files for every family. Adding explicit schemas for each operations family would improve reproducibility for prompt-based and agentic extractors.
 
 \subsection{Future directions}
-We view LongListBench as an extensible benchmark with a reproducible evaluation pipeline. The most valuable extensions are those that broaden the noise distribution, provide stronger signals for layout reconstruction, and benchmark extraction protocols that remain robust at hundreds of records.
-
-\paragraph{Broader OCR conditions and layout supervision.}
-An immediate next step is to expand OCR conditions beyond a single VLM-based OCR output. This includes scanned variants (blur, noise, skew, and resolution changes), classical OCR baselines, and prompt variations. For a small subset, releasing page-level supervision (e.g., table cell boxes or reading-order annotations) would enable controlled evaluation of layout-aware reconstruction methods.
-
-\paragraph{Agentic and retrieval-loop protocols.}
-The extreme tier (500 incidents) and the cross-page multi-hop extension are intended to pressure extraction protocols, not only base model quality. A natural extension is to benchmark agentic extraction systems, retrieval/loop-based methods, verification passes, chunking and merge strategies, and layout-aware segmentation under a unified interface, and to report cost and latency alongside accuracy.
-
-\paragraph{Richer evaluation views.}
-Field-level micro F1 is a stable aggregate, but it hides systematic error patterns. Future releases should include per-field breakdowns, record-level exact match rates, and duplicate-aware matching that treats repeated incidents as first-class entities rather than an edge case of identifier collisions.
-
-\paragraph{Broader document families.}
-Finally, expanding the benchmark to additional long-list domains and templates would test whether methods generalize beyond claims-style tables, and would make LongListBench a more comprehensive measurement suite for long-list extraction.
+We view LongListBench as a foundation for studying scalable, layout-robust extraction. The most important next steps are:
+\begin{itemize}
+    \item Run current-corpus one-shot and agentic baselines on all OCR transcripts and report accuracy, cost, and latency.
+    \item Add explicit JSON Schemas or field contracts for every operations record family.
+    \item Add more OCR and visual-noise conditions, including scans, skew, blur, compression, and alternate OCR engines.
+    \item Expand the multi-hop suite with more policy and claim packets where key fields are separated by large page distances.
+    \item Evaluate retrieval-loop and verification-based systems that can inspect, join, and audit records rather than relying on a fixed chunking policy.
+\end{itemize}

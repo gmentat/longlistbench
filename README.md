@@ -1,6 +1,6 @@
 # LongListBench
 
-Benchmark for long-list entity extraction from semi-structured documents under complex layouts, OCR noise, and long-range cross-page evidence complexity, inspired by recurring patterns observed in real-world claims documents.
+Benchmark for long-list entity extraction from complex semi-structured business PDFs, including dense layouts, OCR transcripts, and long-range cross-page evidence.
 
 This benchmark was developed at [Kay.ai](https://kay.ai).
 
@@ -18,12 +18,11 @@ python -m playwright install chromium
 # Set API keys (only needed for OCR/evaluation runs)
 cp .env.example .env
 
-# Generate the complete benchmark dataset and organize it under data/
-python benchmarks/generate_claims_benchmark.py
-python benchmarks/organize_dataset.py --move
+# Inspect the released dataset artifacts
+open data/index.html
 
-# Optional: add single-document cross-page multi-hop cases
-python benchmarks/generate_multihop_benchmark.py
+# Run OCR/evaluation only when regenerating transcripts or baselines
+python benchmarks/ocr_claims_pdfs.py --model gemini-3.5-flash
 ```
 
 ## Reproducibility
@@ -36,11 +35,8 @@ make help
 # Create venv + install deps + install Playwright Chromium
 make setup
 
-# Generate synthetic benchmark dataset and organize artifacts under data/
-make generate
-
-# Generate single-document cross-page multi-hop cases
-make generate-multihop
+# Build dataset indexes from the current data/ directory
+python benchmarks/build_instance_index.py --input data
 
 # Build the paper
 make paper
@@ -69,9 +65,9 @@ The exported Hugging Face configs are:
 
 | Config | Contents |
 |--------|----------|
-| `core_claims` | 80 claim loss-run PDFs across easy, medium, hard, and extreme regimes |
+| `core_operations` | 28 production-like commercial insurance and fleet-operation PDFs with dense repeated operations and loss-run records |
 | `claim_multihop` | 3 claim PDFs requiring long-range cross-page joins |
-| `policy_multihop` | 3 policy packets with heterogeneous BOP, WC, and CGL policy records |
+| `policy_packets` | 5 policy PDFs: 2 dense BOP declaration schedules plus 3 long BOP, WC, and CGL packets |
 
 Upload only after inspecting the generated package:
 
@@ -91,14 +87,14 @@ python benchmarks/export_hf_dataset.py \
 
 ## Benchmark Overview
 
-- **80 benchmark instances** across 4 difficulty tiers × 2 formats
-- **2,700 base claims** across all instances (some instances include additional rows due to `large_doc` and `duplicates`)
-- **7 implemented problem types** approximating common long-list failure modes
-- **2 document formats** (detailed and table views)
+- **36 benchmark instances** across 13 production-like template families
+- **33,110 target records** across commercial operations, claim, and policy extraction tasks
+- **28 core operations PDFs** covering IFTA, driver/MVR, vehicle schedule, and loss-run layouts
+- **5 policy PDFs** covering dense BOP declarations plus long BOP, WC, and CGL policy packets
+- **3 claim cross-page PDFs**, with 3 of the policy PDFs also requiring long-range cross-page extraction
 - **Ground truth annotations** in JSON format
-- **Canonical transcripts** derived from rendered HTML
-- **OCR transcript generation** via Gemini page-image OCR (run separately after PDF generation)
-- **Multi-hop extension** with single-document long-range cross-page evidence joins
+- **OCR transcripts** generated from rendered PDF page images
+- **Synthetic visible values only**; private production documents were used only as visual layout references
 
 ## Dataset Layout
 
@@ -110,43 +106,30 @@ data/
   pdfs/{sample_id}.pdf
   html/{sample_id}.html
   ground_truth/{sample_id}.json
-  transcripts/canonical/{sample_id}.md
-  transcripts/ocr_gemini/{sample_id}.md  # created after running OCR
+  transcripts/ocr_gemini/{sample_id}.md
   metadata/{sample_id}.json
-  schemas/loss_run_incident.schema.json
+  schemas/*.schema.json
 ```
 
-`data/manifest.json` is the source of truth for sample IDs, complexity regimes, artifact paths, transcript availability, and per-sample metadata.
+`data/manifest.json` is the source of truth for sample IDs, template regimes, artifact paths, transcript availability, and per-sample metadata.
 
-### Problem Types
+### Template Families
 
-| Code | Meaning |
-|------|---------|
-| `page_breaks` | Detailed documents can split one incident across pages; table documents insert row-boundary page breaks with repeated table headers. |
-| `multi_row` | Key fields (especially descriptions) span multiple lines/rows instead of being single-line. |
-| `duplicates` | Duplicate incidents are inserted (exact repeats) to test deduplication and counting. |
-| `large_doc` | Document is much longer than normal (many more incidents/pages). |
-| `multiple_tables` | Adds additional irrelevant tables/sections mixed in with the main claims content. |
-| `multi_column` | Uses a multi-column layout in detailed-format content and distractor sections to stress reading order. |
-| `merged_cells` | Uses merged table cells (e.g. `rowspan`/`colspan`) to make table structure harder. |
-
-The strongest `page_breaks` and `multi_column` effects are format-dependent: detailed documents receive split-record page breaks and multi-column primary content, while table documents keep the main claims table single-span.
-
-### Difficulty Tiers
-
-| Tier | Seed Claims/PDF | Released Rows/Doc | Instances | Formats | Problems |
-|------|-----------------|-------------------|-----------|---------|----------|
-| Easy | 10 | 10-11 | 15×2 = 30 | Detailed + Table | 1-2 |
-| Medium | 25 | 25-27 | 12×2 = 24 | Detailed + Table | 3-4 |
-| Hard | 50 | 55 | 8×2 = 16 | Detailed + Table | 5-6 |
-| Extreme | 100 | 500 | 5×2 = 10 | Detailed + Table | All 7 |
-
-The released dataset includes additional rows from `duplicates` and `large_doc`. Extreme filenames retain a legacy `_100_` seed-count suffix, but every released extreme document contains 500 incidents.
-
-### Document Formats
-
-- **Detailed**: Incident sections with line items and financial breakdowns
-- **Table**: Compact tabular format with all claims in rows
+| Family | PDFs | Target records |
+|--------|-----:|---------------:|
+| `ifta_mileage_by_vehicle` | 8 | 17,565 |
+| `ifta_return_schedule_details` | 5 | 4,923 |
+| `ifta_tax_return_summary` | 4 | 3,040 |
+| `driver_mvr_request_and_roster` | 3 | 1,260 |
+| `loss_run_external` | 3 | 900 |
+| `policy_ridgeview_businessowners_declarations` | 2 | 1,600 |
+| `vehicle_schedule_spreadsheet_export` | 2 | 1,600 |
+| `ifta_tax_return_inquiry_detail` | 2 | 1,300 |
+| `driver_schedule_spreadsheet_export` | 1 | 500 |
+| `claim_crosspage_multihop` | 3 | 77 |
+| `policy_multihop_bop` | 1 | 48 |
+| `policy_multihop_wc` | 1 | 113 |
+| `policy_multihop_cgl` | 1 | 184 |
 
 ### Multi-Hop Extensions
 
@@ -171,15 +154,7 @@ The cross-page PDFs are:
 
 Join/evidence metadata is recorded in `data/metadata/{sample_id}.json`; the rendered documents do not expose benchmark instructions such as "join on" labels.
 
-The policy multi-hop suite has 3 commercial insurance policy PDFs and 345 target policy records. A policy packet is the contract document issued by an insurer; it combines declarations, covered locations or classifications, coverage limits and deductibles, rating or premium schedules, required forms, and endorsements that modify the base policy. The samples cover Businessowners Policy (BOP), Workers Compensation (WC), and Commercial General Liability (CGL) schemas inspired by real policy-review workflows. The visible document content is synthetic, but the packet structure mirrors observed commercial policy packets.
-
-Policy prose generation is split from ground-truth generation. The item values are deterministic Python fixtures; the long policy-condition prose can be generated from Markdown prompts under `benchmarks/policy_multihop/prompts/` with Gemini:
-
-```bash
-POLICY_TEXT_GENERATOR=gemini make generate-policy-multihop
-```
-
-The default `POLICY_TEXT_GENERATOR=template` path stays offline for tests and contributors without API keys.
+The policy suite has 5 commercial insurance policy PDFs and 1,945 target policy records. A policy packet is the contract document issued by an insurer; it combines declarations, covered locations or classifications, coverage limits and deductibles, rating or premium schedules, required forms, and endorsements that modify the base policy. The samples cover Businessowners Policy (BOP), Workers Compensation (WC), and Commercial General Liability (CGL) schemas inspired by real policy-review workflows. The visible document content is synthetic, but the packet structure mirrors observed commercial policy packets.
 
 | Sample | Pages | Target policy records |
 |--------|-------|-----------------------|
@@ -189,7 +164,7 @@ The default `POLICY_TEXT_GENERATOR=template` path stays offline for tests and co
 
 ## Saved Evaluation Artifacts
 
-The core-suite reports under `benchmarks/results/` are archival snapshots from earlier layouts and earlier model defaults. After regenerating layouts, rerun OCR and evaluation before citing current-layout or current-model baselines. The evaluator supports direct clean-vs-OCR comparisons by running the same extractor over `canonical` and `ocr` transcript conditions.
+Saved reports under `benchmarks/results/` should be treated as local run artifacts unless their manifest hash matches the current `data/manifest.json`. After replacing layouts, rerun OCR and evaluation before citing current-layout or current-model baselines. The current released dataset includes OCR transcripts for every PDF.
 
 The current multi-hop OCR agentic run is saved under `benchmarks/results/agentic_multihop_gpt55/`.
 

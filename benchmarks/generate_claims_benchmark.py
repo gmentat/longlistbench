@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
-"""Generate complete benchmark dataset artifacts.
+"""Generate legacy claim-layout benchmark artifacts.
 
-This script generates the full benchmark suite across all difficulty tiers:
+This script generates the pre-2.0 claim-layout suite across all difficulty tiers:
 - Easy: seeded with 10 incidents each, 15 instances
 - Medium: seeded with 25 incidents each, 12 instances
 - Hard: seeded with 50 incidents each, 8 instances
 - Extreme: seeded with 100 incidents each, expanded to 500 incidents, 5 instances
 
-Total released rows in version 1.0.2: 6,828 incidents across 80 documents
+The current public release under data/ is assembled separately and should be
+treated as the source of truth for released sample counts.
 """
 
 from __future__ import annotations

@@ -3,8 +3,8 @@
 .PHONY: help setup generate generate-multihop generate-policy-multihop ocr ocr-multihop eval hf-export paper paper-quick clean
 
 VENV_DIR ?= .venv
-EVAL_OUT ?= benchmarks/results/scratch/eval_ocr100
-EVAL_MODELS ?= gemini gpt52
+EVAL_OUT ?= benchmarks/results/scratch/eval_ocr
+EVAL_MODELS ?= gpt55_oneshot
 EVAL_WORKERS ?= 2
 HF_OUT ?= dist/huggingface/longlistbench
 HF_REPO_ID ?= kaydotai/LongListBench
@@ -53,7 +53,7 @@ ocr-multihop:
 	. $(VENV_DIR)/bin/activate && python benchmarks/ocr_claims_pdfs.py --tiers multihop mixed --ocr-engine $(OCR_ENGINE) --model $(OCR_MODEL)
 
 eval:
-	. $(VENV_DIR)/bin/activate && python benchmarks/evaluate_models.py --models $(EVAL_MODELS) --parallel-models --model-workers $(EVAL_WORKERS) --output-dir $(EVAL_OUT)
+	. $(VENV_DIR)/bin/activate && python benchmarks/evaluate_models.py --models $(EVAL_MODELS) --transcripts ocr --parallel-models --model-workers $(EVAL_WORKERS) --output-dir $(EVAL_OUT)
 
 hf-export:
 	. $(VENV_DIR)/bin/activate && python benchmarks/export_hf_dataset.py --input data --output $(HF_OUT) --repo-id $(HF_REPO_ID) --overwrite

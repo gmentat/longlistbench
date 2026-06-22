@@ -40,15 +40,20 @@ def load_ocr_text(md_path: Path) -> str:
     return md_path.read_text(encoding="utf-8")
 
 
-def _has_policy_records(records: list[dict]) -> bool:
-    return any(isinstance(record, dict) and "record_type" in record for record in records)
+def _has_generic_records(records: list[dict]) -> bool:
+    if not records:
+        return False
+    return not any(
+        isinstance(record, dict) and ("incident_number" in record or "reference_number" in record)
+        for record in records
+    )
 
 
 def extract_identifiers(claims: list[dict]) -> dict[str, set[str]]:
     """Extract key visible identifiers from golden records."""
-    if _has_policy_records(claims):
+    if _has_generic_records(claims):
         policy_numbers: set[str] = set()
-        item_ids: set[str] = set()
+        primary_ids: set[str] = set()
         schedule_values: set[str] = set()
 
         for record in claims:
@@ -56,16 +61,35 @@ def extract_identifiers(claims: list[dict]) -> dict[str, set[str]]:
                 value = str(record.get(field) or "").strip()
                 if value:
                     policy_numbers.add(value)
-            for field in ("item_id",):
+            for field in (
+                "item_id",
+                "claim_number",
+                "vehicle",
+                "unit_number",
+                "vin",
+                "driver_name",
+                "name",
+                "license_number",
+                "driver_license_number",
+                "veh_number",
+                "company_vehicle_number",
+                "plate_number",
+            ):
                 value = str(record.get(field) or "").strip()
                 if value:
-                    item_ids.add(value)
+                    primary_ids.add(value)
             for field in (
                 "form_number",
                 "class_code",
                 "location_number",
                 "building_number",
                 "endorsement_number",
+                "coverage_or_form",
+                "coverage",
+                "coverage_part",
+                "state",
+                "jurisdiction",
+                "section",
             ):
                 value = str(record.get(field) or "").strip()
                 if value:
@@ -73,7 +97,7 @@ def extract_identifiers(claims: list[dict]) -> dict[str, set[str]]:
 
         return {
             "policy_numbers": policy_numbers,
-            "item_ids": item_ids,
+            "primary_ids": primary_ids,
             "schedule_values": schedule_values,
         }
 
@@ -103,6 +127,7 @@ def extract_identifiers(claims: list[dict]) -> dict[str, set[str]]:
 def check_coverage(ocr_text: str, identifiers: dict[str, set[str]]) -> dict:
     """Check how many identifiers appear in the OCR text."""
     results = {}
+    compact_ocr_text = re.sub(r"\s+", "", ocr_text)
     
     for id_type, id_set in identifiers.items():
         found = set()
@@ -110,7 +135,8 @@ def check_coverage(ocr_text: str, identifiers: dict[str, set[str]]) -> dict:
         
         for identifier in id_set:
             # Check if identifier appears in OCR text
-            if identifier in ocr_text:
+            compact_identifier = re.sub(r"\s+", "", identifier)
+            if identifier in ocr_text or compact_identifier in compact_ocr_text:
                 found.add(identifier)
             else:
                 missing.add(identifier)
@@ -144,7 +170,7 @@ def validate_sample(sample_name: str, claims_dir: Path, verbose: bool = False) -
     # Load data
     claims = load_golden(json_path)
     ocr_text = load_ocr_text(ocr_path)
-    is_policy = _has_policy_records(claims)
+    is_generic = _has_generic_records(claims)
     
     # Extract identifiers and check coverage
     identifiers = extract_identifiers(claims)
@@ -153,12 +179,12 @@ def validate_sample(sample_name: str, claims_dir: Path, verbose: bool = False) -
     result = {
         "sample": sample_name,
         "num_claims": len(claims),
-        "record_kind": "policy_records" if is_policy else "claims",
+        "record_kind": "generic_records" if is_generic else "claims",
         "ocr_chars": len(ocr_text),
         "coverage": coverage,
     }
 
-    if is_policy:
+    if is_generic:
         nonempty = [item for item in coverage.values() if item["total"] > 0]
         result["overall_coverage"] = (
             sum(item["coverage"] for item in nonempty) / len(nonempty) if nonempty else 0.0
@@ -283,7 +309,7 @@ def main():
             status = "✗"
         
         print(f"{status} {sample}")
-        if result["record_kind"] == "policy_records":
+        if result["record_kind"] == "generic_records":
             parts = []
             for key, value in result["coverage"].items():
                 if value["total"] == 0:

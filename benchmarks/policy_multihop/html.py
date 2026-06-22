@@ -1197,7 +1197,7 @@ def _bop_declaration_page_one(profile: dict[str, str], items: list[dict[str, Any
         "",
         f"  Estimated Businessowners Premium                                {money(total_premium):>12}",
     ]
-    return _typed_form_page(profile, lines=lines, form_id="BPF7102X ED. 05-24", continued=True)
+    return _typed_form_page(profile, lines=lines, form_id="CBF2102X ED. 05-24", continued=True)
 
 
 def _bop_declaration_page_two(profile: dict[str, str], items: list[dict[str, Any]]) -> str:
@@ -1206,12 +1206,12 @@ def _bop_declaration_page_two(profile: dict[str, str], items: list[dict[str, Any
     forms = []
     for item in items:
         forms.append(f"{item['form_number'].replace(' ', '')}({item['edition_date']})*")
-    forms.extend(["BPF003(05/24)*", "BPF211(02/25)*", "BPF430(05/24)*", "BPF710(11/25)*", "SL7004(03/25)*"])
+    forms.extend(["CBF003(05/24)*", "CBF211(02/25)*", "CBF430(05/24)*", "CBF210(11/25)*", "SL2404(03/25)*"])
     unique_forms = list(dict.fromkeys(forms))
     form_lines = textwrap.wrap(",  ".join(unique_forms), width=76, break_long_words=False, break_on_hyphens=False)
     optional_rows = [
-        ("Businessowners Extension Endorsement", "See BP7100"),
-        ("Auto Service Industry Extension", "See BP7340"),
+        ("Businessowners Extension Endorsement", "See RVI-X210"),
+        ("Auto Service Industry Extension", "See RVI-X340"),
         ("Employee Tools - Per Occurrence", "$    10,000"),
         ("                 Per Employee", "$     1,000"),
     ]
@@ -1246,7 +1246,7 @@ def _bop_declaration_page_two(profile: dict[str, str], items: list[dict[str, Any
     lines.extend(f"  {line}" for line in form_lines)
     lines.append("  ------------------------------------------------------------------------")
     lines.extend([""] * 12)
-    return _typed_form_page(profile, lines=lines, form_id="BPF7102X ED. 05-24", page_no=2)
+    return _typed_form_page(profile, lines=lines, form_id="CBF2102X ED. 05-24", page_no=2)
 
 
 def _draft_page(

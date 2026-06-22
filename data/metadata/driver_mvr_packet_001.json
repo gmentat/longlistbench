@@ -1,0 +1,41 @@
+{
+  "id": "driver_mvr_packet_001",
+  "template": "driver_mvr_request_and_roster",
+  "target_record_type": "driver_record",
+  "num_target_records": 260,
+  "source_batch": "batch-01",
+  "artifacts": {
+    "pdf": "pdfs/driver_mvr_packet_001.pdf",
+    "html": "html/driver_mvr_packet_001.html",
+    "ground_truth": "ground_truth/driver_mvr_packet_001.json"
+  },
+  "provenance": "Synthetic generated document. Private production references were used only for visual layout review; no production PDFs, names, account numbers, or raw customer data are included in this repository.",
+  "files": {
+    "ground_truth": "ground_truth/driver_mvr_packet_001.json",
+    "pdf": "pdfs/driver_mvr_packet_001.pdf",
+    "html": "html/driver_mvr_packet_001.html",
+    "metadata": "metadata/driver_mvr_packet_001.json",
+    "json_size_bytes": 91072,
+    "pdf_size_bytes": 405332,
+    "html_size_bytes": 70289,
+    "ocr_md": "transcripts/ocr_gemini/driver_mvr_packet_001.md",
+    "ocr_size_bytes": 33504
+  },
+  "transcripts_available": [
+    "ocr"
+  ],
+  "complexity_regime": "driver_mvr_request_and_roster",
+  "difficulty": "driver_mvr_request_and_roster",
+  "format": "production_like_pdf",
+  "domain": "commercial_insurance_operations",
+  "problems": [
+    "high_density_long_list",
+    "production_like_layout"
+  ],
+  "pages_estimate": 17,
+  "pdf_page_count": 17,
+  "dataset_version": "2.0.0",
+  "hf_config": "core_operations",
+  "document_count": 1,
+  "evidence_pattern": "single_document"
+}

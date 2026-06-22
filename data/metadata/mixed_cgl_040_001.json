@@ -43,7 +43,6 @@
     "schedule_source",
     "territory"
   ],
-  "num_claims": 184,
   "num_policy_items": 184,
   "num_primary_policy_items": 40,
   "num_target_records": 184,
@@ -84,7 +83,6 @@
     "copied_source_text": false,
     "text_generation": {
       "generator": "gemini",
-      "model": "gemini-2.5-flash",
       "prompt_files": [
         "policy_writer_system.md",
         "policy_page_bank.md",
@@ -96,7 +94,8 @@
         "amendatory": 2,
         "billing": 2,
         "endorsement": 4
-      }
+      },
+      "model_provenance": "legacy synthetic prose fixture; model identifier omitted from release metadata"
     }
   },
   "has_duplicates": false,
@@ -181,16 +180,18 @@
     "ground_truth": "ground_truth/mixed_cgl_040_001.json",
     "pdf": "pdfs/mixed_cgl_040_001.pdf",
     "html": "html/mixed_cgl_040_001.html",
-    "canonical_md": "transcripts/canonical/mixed_cgl_040_001.md",
+    "metadata": "metadata/mixed_cgl_040_001.json",
     "ocr_md": "transcripts/ocr_gemini/mixed_cgl_040_001.md",
     "json_size_bytes": 109370,
     "pdf_size_bytes": 1468693,
     "html_size_bytes": 797363,
-    "canonical_size_bytes": 555158,
-    "ocr_size_bytes": 693599
+    "ocr_size_bytes": 739095
   },
   "transcripts_available": [
-    "canonical",
     "ocr"
-  ]
+  ],
+  "template": "policy_multihop_cgl",
+  "provenance": "Synthetic generated document. Private production references were used only for visual layout review; no production PDFs, names, account numbers, or raw customer data are included in this repository.",
+  "dataset_version": "2.0.0",
+  "hf_config": "policy_packets"
 }

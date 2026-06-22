@@ -125,13 +125,14 @@ def _usage_to_dict(usage) -> dict | None:
 
 
 def _field_summary_for_records(ground_truth: list[dict]) -> str:
-    """Describe the policy-record output contract without leaking target values."""
+    """Describe the record output contract without leaking target values."""
     by_type: dict[str, set[str]] = {}
     all_fields: set[str] = set()
+    has_record_type = any(isinstance(record, dict) and "record_type" in record for record in ground_truth)
     for record in ground_truth:
         if not isinstance(record, dict):
             continue
-        record_type = str(record.get("record_type") or "<missing_record_type>")
+        record_type = str(record.get("record_type") or "record") if has_record_type else "record"
         fields = {str(k) for k in record.keys()} - _POLICY_AGENT_EXCLUDED_FIELDS
         by_type.setdefault(record_type, set()).update(fields)
         all_fields.update(fields)
@@ -141,15 +142,18 @@ def _field_summary_for_records(ground_truth: list[dict]) -> str:
         '{ "records": [ ... ] }',
         "",
         "General requirements:",
-        "- Extract every target policy record visible in the document.",
-        "- Every output object must include record_type.",
+        "- Extract every target record visible in the document.",
         "- Use the exact field names below; do not invent benchmark-only fields that are not listed.",
         "- If a listed field is not visible for a record, use an empty string.",
-        "- Preserve policy numbers, form numbers, edition dates, class codes, locations, limits, rates, and premiums exactly as shown.",
+        "- Preserve identifiers, dates, codes, locations, limits, rates, totals, names, and premiums exactly as shown.",
         "- Do not deduplicate repeated records unless they are exact duplicate rows for the same policy item.",
         "",
-        "Allowed record types and fields:",
+        "Allowed record groups and fields:",
     ]
+    if has_record_type:
+        lines.insert(lines.index("- Use the exact field names below; do not invent benchmark-only fields that are not listed."), "- Every output object must include record_type.")
+    else:
+        lines.insert(lines.index("- Use the exact field names below; do not invent benchmark-only fields that are not listed."), "- Do not add record_type unless it is visible in the document.")
     for record_type in sorted(by_type):
         fields = ", ".join(sorted(by_type[record_type]))
         lines.append(f"- {record_type}: {fields}")
@@ -160,7 +164,7 @@ def _field_summary_for_records(ground_truth: list[dict]) -> str:
             ", ".join(sorted(all_fields)),
             "",
             "Target-scope rules:",
-            "- Extract scheduled records that match the listed record types and fields, not every policy limit, notice, condition, or generic form mention.",
+            "- Extract records that match the listed fields, not every nearby note, notice, subtotal, or generic form mention.",
             "- Do not create records whose key scoping fields are blank when those fields are listed for that record type.",
             "- For bop_coverage_item, require a location_number, building_number, scheduled coverage name, limit, class_code, and premium; ignore general liability limits that are not location/building scheduled property rows.",
             "- For policy_premium_item, require the scheduled premium basis plus the item/location/class fields listed for that record type.",
@@ -179,7 +183,7 @@ def _build_agent_contract(ground_truth: list[dict] | None) -> tuple[str, str, st
         instructions = f"""You extract structured data from a document.
 
 In your sandbox workspace:
-- Input:  {_AGENT_INPUT_FILE} - the OCR of one commercial insurance policy packet.
+- Input:  {_AGENT_INPUT_FILE} - the OCR of one commercial insurance or fleet operations document.
 - Output: {_RECORD_OUTPUT_FILE} - write your result here.
 
 You have a full Linux sandbox: you can run shell commands and Python, read,
@@ -187,22 +191,23 @@ search, and slice files, install packages, and write files. The document may be
 large. How you approach the extraction is up to you - choose whatever you judge
 most reliable for this document.
 
-Goal: extract EVERY target policy record from the document into {_RECORD_OUTPUT_FILE}.
+Goal: extract EVERY target record from the document into {_RECORD_OUTPUT_FILE}.
 
-The document may require long-range evidence joins across declarations,
-locations, rating schedules, forms, endorsements, and premium summaries. Verify
-records against multiple sections when a field is defined in a distant section.
+The document may contain dense tables, spreadsheet exports, declarations,
+locations, rating schedules, forms, endorsements, premium summaries, or distant
+supporting sections. Verify records against multiple sections when a field is
+defined away from the main list.
 
 {record_contract}
 
 Verify your output before finishing:
 - Confirm you captured records across the beginning, middle, and end of the packet.
-- Spot-check records from each record_type against the source text.
+- Spot-check records from each record group against the source text.
 - Ensure each field holds only its own value, with no neighboring labels or carried-over values.
 - Ensure {_RECORD_OUTPUT_FILE} is valid JSON.
 - When finished, also print the final JSON object once as a ```json code block.
 """
-        task_prompt = f"Extract all target policy records from {_AGENT_INPUT_FILE} into {_RECORD_OUTPUT_FILE}."
+        task_prompt = f"Extract all target records from {_AGENT_INPUT_FILE} into {_RECORD_OUTPUT_FILE}."
         return instructions, task_prompt, _RECORD_OUTPUT_FILE, True
 
     return AGENT_INCIDENT_INSTRUCTIONS, _INCIDENT_TASK_PROMPT, _INCIDENT_OUTPUT_FILE, False

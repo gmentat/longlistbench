@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PolicyScheduleRecord",
+  "description": "Businessowners declaration schedule row used by the production-like policy declaration PDFs.",
+  "type": "object",
+  "additionalProperties": true,
+  "properties": {
+    "policy_number": {"type": "string"},
+    "section": {"type": "string"},
+    "coverage_or_form": {"type": "string"},
+    "limit": {"type": ["number", "string", "null"]},
+    "deductible": {"type": ["number", "string", "null"]},
+    "premium": {"type": ["number", "string", "null"]},
+    "page": {"type": "integer"}
+  },
+  "required": [
+    "policy_number",
+    "section",
+    "coverage_or_form",
+    "limit",
+    "deductible",
+    "premium",
+    "page"
+  ]
+}

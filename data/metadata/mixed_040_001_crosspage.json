@@ -108,16 +108,21 @@
     "ground_truth": "ground_truth/mixed_040_001_crosspage.json",
     "pdf": "pdfs/mixed_040_001_crosspage.pdf",
     "html": "html/mixed_040_001_crosspage.html",
-    "canonical_md": "transcripts/canonical/mixed_040_001_crosspage.md",
+    "metadata": "metadata/mixed_040_001_crosspage.json",
     "ocr_md": "transcripts/ocr_gemini/mixed_040_001_crosspage.md",
     "json_size_bytes": 50540,
     "pdf_size_bytes": 1067499,
     "html_size_bytes": 446168,
-    "canonical_size_bytes": 251898,
-    "ocr_size_bytes": 243031
+    "ocr_size_bytes": 246178
   },
   "transcripts_available": [
-    "canonical",
     "ocr"
-  ]
+  ],
+  "template": "claim_crosspage_multihop",
+  "num_target_records": 40,
+  "provenance": "Synthetic generated document. Private production references were used only for visual layout review; no production PDFs, names, account numbers, or raw customer data are included in this repository.",
+  "target_record_type": "loss_run_incident",
+  "dataset_version": "2.0.0",
+  "hf_config": "claim_multihop",
+  "domain": "claims"
 }

@@ -13,7 +13,6 @@ class HuggingFaceExportTests(unittest.TestCase):
         for relative in [
             "ground_truth",
             "pdfs",
-            "transcripts/canonical",
             "transcripts/ocr_gemini",
             "schemas",
         ]:
@@ -34,10 +33,6 @@ class HuggingFaceExportTests(unittest.TestCase):
             encoding="utf-8",
         )
         (self.data_dir / "pdfs" / f"{sample_id}.pdf").write_bytes(b"%PDF-1.4\n")
-        (self.data_dir / "transcripts" / "canonical" / f"{sample_id}.md").write_text(
-            f"canonical {sample_id}",
-            encoding="utf-8",
-        )
         if "ocr" in instance.get("transcripts_available", []):
             (self.data_dir / "transcripts" / "ocr_gemini" / f"{sample_id}.md").write_text(
                 f"ocr {sample_id}",
@@ -46,7 +41,6 @@ class HuggingFaceExportTests(unittest.TestCase):
         instance["files"] = {
             "ground_truth": f"ground_truth/{sample_id}.json",
             "pdf": f"pdfs/{sample_id}.pdf",
-            "canonical_md": f"transcripts/canonical/{sample_id}.md",
             "ocr_md": f"transcripts/ocr_gemini/{sample_id}.md",
         }
         return instance
@@ -55,13 +49,15 @@ class HuggingFaceExportTests(unittest.TestCase):
         instances = [
             self._write_instance(
                 {
-                    "id": "easy_10_001_detailed",
-                    "difficulty": "easy",
-                    "format": "detailed",
-                    "num_claims": 1,
+                    "id": "ifta_mileage_by_vehicle_001",
+                    "difficulty": "ifta_mileage_by_vehicle",
+                    "format": "production_like_pdf",
+                    "domain": "commercial_insurance_operations",
+                    "target_record_type": "vehicle_state_mileage_row",
+                    "num_target_records": 1,
                     "pages_estimate": 8,
-                    "problems": ["multi_row"],
-                    "transcripts_available": ["canonical"],
+                    "problems": ["high_density_long_list"],
+                    "transcripts_available": ["ocr"],
                 }
             ),
             self._write_instance(
@@ -74,7 +70,7 @@ class HuggingFaceExportTests(unittest.TestCase):
                     "num_target_records": 1,
                     "pdf_page_count": 76,
                     "problems": ["cross_page_join"],
-                    "transcripts_available": ["canonical", "ocr"],
+                    "transcripts_available": ["ocr"],
                 }
             ),
             self._write_instance(
@@ -87,7 +83,7 @@ class HuggingFaceExportTests(unittest.TestCase):
                     "num_target_records": 1,
                     "pdf_page_count": 90,
                     "problems": ["businessowners_policy"],
-                    "transcripts_available": ["canonical", "ocr"],
+                    "transcripts_available": ["ocr"],
                 }
             ),
         ]
@@ -98,23 +94,26 @@ class HuggingFaceExportTests(unittest.TestCase):
 
         rows_by_config = export_hf_dataset.build_config_rows(self.data_dir)
 
-        self.assertEqual([row["document_id"] for row in rows_by_config["core_claims"]], ["easy_10_001_detailed"])
+        self.assertEqual(
+            [row["document_id"] for row in rows_by_config["core_operations"]],
+            ["ifta_mileage_by_vehicle_001"],
+        )
         self.assertEqual(
             [row["document_id"] for row in rows_by_config["claim_multihop"]],
             ["multihop_012_001_crosspage"],
         )
         self.assertEqual(
-            [row["document_id"] for row in rows_by_config["policy_multihop"]],
+            [row["document_id"] for row in rows_by_config["policy_packets"]],
             ["multihop_bop_012_001"],
         )
 
-        core_row = rows_by_config["core_claims"][0]
-        self.assertEqual(core_row["domain"], "claims")
-        self.assertEqual(core_row["target_field"], "incidents")
-        self.assertEqual(json.loads(core_row["ground_truth"])["incidents"][0]["id"], "easy_10_001_detailed")
-        self.assertEqual(core_row["ocr_transcript"], "")
+        core_row = rows_by_config["core_operations"][0]
+        self.assertEqual(core_row["domain"], "commercial_insurance_operations")
+        self.assertEqual(core_row["target_field"], "records")
+        self.assertEqual(json.loads(core_row["ground_truth"])["records"][0]["id"], "ifta_mileage_by_vehicle_001")
+        self.assertEqual(core_row["ocr_transcript"], "ocr ifta_mileage_by_vehicle_001")
 
-        policy_row = rows_by_config["policy_multihop"][0]
+        policy_row = rows_by_config["policy_packets"][0]
         self.assertEqual(policy_row["target_field"], "records")
         self.assertEqual(policy_row["target_record_type"], "policy_packet_item")
         self.assertEqual(json.loads(policy_row["ground_truth"])["records"][0]["id"], "multihop_bop_012_001")
@@ -122,15 +121,15 @@ class HuggingFaceExportTests(unittest.TestCase):
 
     def test_dataset_card_lists_hf_config_paths(self):
         summary = {
-            "core_claims": {
-                "rows": 80,
-                "targets": 6828,
-                "min_targets": 10,
-                "max_targets": 500,
-                "min_pages": 7,
-                "max_pages": 332,
-                "domains": {"claims": 80},
-                "target_fields": ["incidents"],
+            "core_operations": {
+                "rows": 28,
+                "targets": 31088,
+                "min_targets": 260,
+                "max_targets": 2571,
+                "min_pages": 15,
+                "max_pages": 144,
+                "domains": {"commercial_insurance_operations": 28},
+                "target_fields": ["incidents", "records"],
             },
             "claim_multihop": {
                 "rows": 3,
@@ -142,14 +141,14 @@ class HuggingFaceExportTests(unittest.TestCase):
                 "domains": {"claims": 3},
                 "target_fields": ["incidents"],
             },
-            "policy_multihop": {
-                "rows": 3,
-                "targets": 345,
+            "policy_packets": {
+                "rows": 5,
+                "targets": 1945,
                 "min_targets": 48,
-                "max_targets": 184,
-                "min_pages": 90,
+                "max_targets": 800,
+                "min_pages": 30,
                 "max_pages": 214,
-                "domains": {"policy_review": 3},
+                "domains": {"policy_review": 5},
                 "target_fields": ["records"],
             },
         }
@@ -158,16 +157,18 @@ class HuggingFaceExportTests(unittest.TestCase):
 
         self.assertIn("pretty_name: LongListBench", card)
         self.assertIn("- benchmark", card)
-        self.assertIn("path: data/core_claims/test-*.parquet", card)
+        self.assertIn("path: data/core_operations/test-*.parquet", card)
         self.assertIn("Records/doc range", card)
-        self.assertIn("| `core_claims` |", card)
-        self.assertIn('load_dataset("kaydotai/LongListBench", "core_claims", split="test")', card)
+        self.assertIn("| `core_operations` |", card)
+        self.assertIn('load_dataset("kaydotai/LongListBench", "core_operations", split="test")', card)
         self.assertIn("Pdf(decode=False)", card)
         self.assertIn("## Canonical Scoring", card)
-        self.assertIn("def score_document", card)
+        self.assertIn("evaluate_record_extraction", card)
         self.assertIn("schemas/policy_packet_item.schema.json", card)
+        self.assertIn("schemas/loss_run_claim_row.schema.json", card)
+        self.assertIn("schemas/policy_schedule_record.schema.json", card)
         self.assertIn("@misc{fedoruk2026longlistbench", card)
-        self.assertIn("| `policy_multihop` |", card)
+        self.assertIn("| `policy_packets` |", card)
 
 
 if __name__ == "__main__":

@@ -1,31 +1,32 @@
-We summarize results for (i) the transcript-conditioned benchmark setup and (ii) baseline extraction performance on the OCR condition.
+This revision reports corpus validation rather than a new model leaderboard. Baseline reports from earlier revisions correspond to earlier dataset layouts and should be treated as archival until rerun on the current 36-document OCR corpus.
 
-\subsection{Transcript-conditioned setup}
-LongListBench exposes a clean canonical transcript for each rendered document and a reproducible OCR path for generating a noisy transcript from the same PDF. When both transcript conditions are generated and evaluated, this supports controlled clean-vs-OCR comparisons without changing the underlying layout, page structure, or ground truth. The quantitative baseline table in this revision focuses on an OCR-condition snapshot, which matches the saved tiered reports currently included in the repository.
+\subsection{Artifact completeness}
+The released data directory contains one PDF, one HTML source, one JSON ground-truth file, one per-sample metadata file, and one OCR transcript for each of the 36 manifest instances. The manifest totals are internally consistent: 31{,}165 non-policy target records, 1{,}945 policy target records, and 33{,}110 target records overall.
 
-\subsection{Extraction regimes}
-We compare three evaluation regimes that differ primarily in how they handle long transcripts. The first is full-context one-shot extraction, which submits the entire transcript in one call and salvages complete incidents from truncated JSON when necessary. The second is auto-chunked extraction, which splits long transcripts into fixed token-budget chunks and extracts each chunk independently before concatenating the resulting incident lists. The third is agentic sandbox extraction, in which the model is given only the transcript inside a code-execution sandbox and decides for itself how to inspect and parse the document (typically by writing and running code) rather than following a fixed chunking policy. We run all three regimes with the same model, GPT-5.5, so differences reflect the regime rather than the model. All regimes in Table~\ref{tab:two-regimes} are evaluated on the same synchronized 80-document OCR snapshot from this repository; the cross-page multi-hop extension is released with ground truth and canonical transcripts but is not included in this baseline table.
-
-\begin{table}[t]
+\begin{table}[H]
 \centering
 \small
-\caption{Same-model comparison of extraction regimes on the synchronized 80-document OCR snapshot. Columns report corpus-level weighted field-value micro $F_1$ overall and on the extreme tier.}
-\label{tab:two-regimes}
-\begin{tabular}{@{}llcc@{}}
+\caption{Current release validation summary.}
+\label{tab:release-validation}
+\begin{tabular}{@{}lr@{}}
 \toprule
-Regime & Model & Overall & Extreme \\
+Check & Value \\
 \midrule
-One-shot & GPT-5.5 & 29.9\% & 0.0\% \\
-Auto-chunked & GPT-5.5 & 85.4\% & 84.6\% \\
-Agentic sandbox & GPT-5.5 & 90.6\% & 89.4\% \\
+Manifest instances & 36 \\
+PDF artifacts & 36 \\
+HTML artifacts & 36 \\
+Ground-truth JSON files & 36 \\
+OCR transcripts & 36 \\
+Total target records & 33{,}110 \\
+Released transcript condition & OCR \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-Moving from full-context one-shot extraction to the local chunked baseline therefore improves overall weighted field-level $F_1$ by 55.5 points and extreme-tier weighted field-level $F_1$ by 84.6 points on the same snapshot. The GPT-5.5 one-shot baseline reaches 29.9\% overall weighted field-level $F_1$ (94.4\% precision but only 17.8\% recall): 91.2\% on easy, 93.1\% on medium, 56.5\% on hard, and 0.0\% on extreme. Notably, on the longest documents GPT-5.5 returns an empty result rather than a partial list, so a stronger model does not by itself rescue the one-shot regime; the failure is the protocol, not the model. By contrast, GPT-5.5 auto-chunked reaches 85.4\% overall and 84.6\% on extreme; by tier it reaches 91.3\% (easy), 92.6\% (medium), 82.1\% (hard), and 84.6\% (extreme), and by format it reaches 94.0\% on tables and 75.5\% on detailed documents. In other words, chunking substantially reduces the severe long-document degradation seen in the one-shot regime, but the local chunked baseline still shows a pronounced gap between long detailed documents and long tables, with residual errors concentrated in record recovery, reading order, and layout-sensitive field completion. Because the strongest page-break and multi-column stressors are concentrated in detailed-format content in v1, this detailed-versus-table gap should not be interpreted as a pure format effect.
+\subsection{Benchmark coverage}
+The largest family, IFTA mileage by vehicle, contributes 17{,}565 target records across 8 PDFs. The remaining core operations families add return schedules, tax summaries, driver/MVR rosters, vehicle schedules, and external loss-run rows. These documents stress high-density extraction where the main failure mode is list completeness across many pages.
 
-The agentic sandbox regime achieves the strongest results: 90.6\% overall weighted field-level $F_1$ (89.7\% recall, 91.4\% precision) with no extraction failures across all 80 documents. Holding the model fixed at GPT-5.5, the regime ordering is one-shot (29.9\%) $<$ auto-chunked (85.4\%) $<$ agentic (90.6\%) overall, and 0.0\% $<$ 84.6\% $<$ 89.4\% on the extreme tier, so the agentic regime's advantage over chunking (+5.2 overall, +4.8 on extreme) is a genuine regime effect rather than a model artifact. It largely closes the long-document gap because the model navigates and parses the document programmatically rather than relying on a fixed chunking policy. By tier it reaches 97.0\% (easy), 95.2\% (medium), and 91.4\% (hard); by format 93.2\% on tables and 87.9\% on detailed documents, preserving the same detailed-versus-table ordering seen in the other regimes. We treat cost and latency as report metadata rather than as a cross-regime conclusion in this revision, because token-usage metadata is present for the saved agentic run but not for every saved one-shot and chunked run.
+The multi-hop cases stress a different failure mode. The claim packets contain only 77 target incidents, but the evidence for each incident is distributed across distant packet sections. The policy packets contain 345 multi-hop policy records across BOP, WC, and CGL packets, while the two production-like BOP declaration PDFs add 1{,}600 policy schedule records. These policy documents make the target schema heterogeneous: a system must recover locations, coverage items, forms, endorsements, class-code rows, exposure items, and premium records rather than one repeated row shape.
 
-Qualitatively, errors often manifest as local field-level deviations (e.g., missing optional strings, numeric drift in financial breakdowns, or small identifier formatting mistakes) spread across an otherwise correct long list.
-
-These findings suggest that the main open challenge for long-list extraction is robustly segmenting and populating full per-incident records under layout disruptions (page breaks, multi-column order, distractor tables, merged cells) and scale (hundreds of incidents). The transcript-conditioned benchmark design is intended to separate this difficulty from OCR-specific degradation in follow-up evaluations by comparing canonical and OCR conditions directly.
+\subsection{Baseline status}
+The next empirical step is to rerun one-shot and agentic extraction on the current OCR corpus. We expect one-shot prompting to remain a weak lower bound on the largest PDFs, because the task requires preserving thousands of aligned fields. The stronger comparison for future method papers is among agentic, retrieval-loop, and verification-based systems that can inspect the document incrementally and check record counts against the source.

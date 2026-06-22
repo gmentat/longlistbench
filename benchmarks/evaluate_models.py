@@ -1166,10 +1166,10 @@ def generate_report(results: list[EvaluationResult], output_path: Path):
 
 def main():
     parser = argparse.ArgumentParser(description='Multi-model evaluation for LongListBench')
-    parser.add_argument('--models', nargs='+', default=['gemini', 'gpt52'],
+    parser.add_argument('--models', nargs='+', default=['gpt55_oneshot'],
                        choices=['gemini', 'gemini_oneshot', 'gemini25', 'gpt52', 'gpt4', 'claude',
                                 'gpt55_oneshot', 'gpt55_chunked', 'gpt55_agent'],
-                       help='Models to evaluate (default: gemini, gpt52)')
+                       help='Models to evaluate (default: gpt55_oneshot)')
     parser.add_argument('--output-dir', default=None,
                        help='Directory to write predictions and evaluation reports (default: benchmarks/results/scratch)')
     parser.add_argument('--tiers', nargs='+', default=None,
@@ -1178,9 +1178,9 @@ def main():
     parser.add_argument('--formats', nargs='+', default=None,
                        choices=['detailed', 'table', 'crosspage'],
                        help='Document formats to test (default: all)')
-    parser.add_argument('--transcripts', nargs='+', default=['canonical'],
+    parser.add_argument('--transcripts', nargs='+', default=['ocr'],
                        choices=['canonical', 'ocr'],
-                       help='Transcript conditions to test (default: canonical)')
+                       help='Transcript conditions to test (default: ocr)')
     parser.add_argument('--samples', nargs='+', default=None,
                        help='Specific samples to test (default: all available)')
     parser.add_argument('--quick', action='store_true',

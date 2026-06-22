@@ -79,7 +79,10 @@ def build_instance_index(dataset_dir: Path) -> dict[str, Any]:
         html_path = artifact_path(dataset_dir, instance_id, "html")
         json_path = artifact_path(dataset_dir, instance_id, "ground_truth")
         ocr_md_path = artifact_path(dataset_dir, instance_id, "ocr")
-        canonical_md_path = artifact_path(dataset_dir, instance_id, "canonical")
+
+        pdf_pages = _get_pdf_page_count(pdf_path)
+        if pdf_pages is None:
+            pdf_pages = inst.get("pdf_page_count") or inst.get("pages_estimate")
 
         out_instances.append(
             {
@@ -87,6 +90,7 @@ def build_instance_index(dataset_dir: Path) -> dict[str, Any]:
                 "difficulty": inst.get("difficulty"),
                 "format": inst.get("format"),
                 "domain": inst.get("domain", "claims"),
+                "hf_config": inst.get("hf_config"),
                 "lob": inst.get("lob"),
                 "target_record_type": inst.get("target_record_type", "loss_run_incident"),
                 "problems": inst.get("problems", []),
@@ -99,19 +103,16 @@ def build_instance_index(dataset_dir: Path) -> dict[str, Any]:
                     "pdf": str(pdf_path.relative_to(dataset_dir)),
                     "html": str(html_path.relative_to(dataset_dir)),
                     "ground_truth": str(json_path.relative_to(dataset_dir)),
-                    "canonical_md": str(canonical_md_path.relative_to(dataset_dir)),
                     "ocr_md": str(ocr_md_path.relative_to(dataset_dir)),
                     "pdf_exists": pdf_path.exists(),
                     "html_exists": html_path.exists(),
                     "ground_truth_exists": json_path.exists(),
-                    "canonical_md_exists": canonical_md_path.exists(),
                     "ocr_md_exists": ocr_md_path.exists(),
                     "pdf_size_bytes": _file_size_bytes(pdf_path),
                     "html_size_bytes": _file_size_bytes(html_path),
                     "json_size_bytes": _file_size_bytes(json_path),
-                    "canonical_md_size_bytes": _file_size_bytes(canonical_md_path),
                     "ocr_md_size_bytes": _file_size_bytes(ocr_md_path),
-                    "pdf_pages": _get_pdf_page_count(pdf_path),
+                    "pdf_pages": pdf_pages,
                 },
                 "transcripts_available": inst.get("transcripts_available", []),
             }
@@ -142,6 +143,7 @@ def write_csv(index: dict[str, Any], csv_path: Path) -> None:
                 "difficulty": inst.get("difficulty"),
                 "format": inst.get("format"),
                 "domain": inst.get("domain"),
+                "hf_config": inst.get("hf_config"),
                 "lob": inst.get("lob"),
                 "target_record_type": inst.get("target_record_type"),
                 "num_claims": inst.get("num_claims"),
@@ -154,7 +156,6 @@ def write_csv(index: dict[str, Any], csv_path: Path) -> None:
                 "pdf_size_bytes": files.get("pdf_size_bytes"),
                 "html_size_bytes": files.get("html_size_bytes"),
                 "json_size_bytes": files.get("json_size_bytes"),
-                "canonical_md_size_bytes": files.get("canonical_md_size_bytes"),
                 "ocr_md_size_bytes": files.get("ocr_md_size_bytes"),
             }
         )
@@ -164,6 +165,7 @@ def write_csv(index: dict[str, Any], csv_path: Path) -> None:
         "difficulty",
         "format",
         "domain",
+        "hf_config",
         "lob",
         "target_record_type",
         "num_claims",
@@ -176,7 +178,6 @@ def write_csv(index: dict[str, Any], csv_path: Path) -> None:
         "pdf_size_bytes",
         "html_size_bytes",
         "json_size_bytes",
-        "canonical_md_size_bytes",
         "ocr_md_size_bytes",
     ]
 
@@ -216,18 +217,27 @@ def write_html(index: dict[str, Any], html_path: Path) -> None:
         pdf_name = str(files.get("pdf") or "")
         html_name = str(files.get("html") or "")
         gt_name = str(files.get("ground_truth") or "")
-        canonical_name = str(files.get("canonical_md") or "")
         ocr_name = str(files.get("ocr_md") or "")
 
         pdf_href = "./" + quote(pdf_name) if pdf_name else ""
         html_href = "./" + quote(html_name) if html_name else ""
         gt_href = "./" + quote(gt_name) if gt_name else ""
-        canonical_href = "./" + quote(canonical_name) if canonical_name else ""
         ocr_href = "./" + quote(ocr_name) if ocr_name else ""
 
         pdf_pages = files.get("pdf_pages")
         pdf_pages_str = "" if pdf_pages is None else str(pdf_pages)
-        target_count = inst.get("num_policy_items") or inst.get("num_claims") or ""
+        target_count = inst.get("num_target_records") or inst.get("num_policy_items") or inst.get("num_claims") or ""
+        artifact_links = [
+            ("pdf", pdf_href, bool(files.get("pdf_exists"))),
+            ("html", html_href, bool(files.get("html_exists"))),
+            ("json", gt_href, bool(files.get("ground_truth_exists"))),
+            ("ocr", ocr_href, bool(files.get("ocr_md_exists"))),
+        ]
+        links_html = "\n".join(
+            f"    <a href=\"{escape(href)}\" target=\"_blank\" rel=\"noopener noreferrer\">{label}</a>"
+            for label, href, exists in artifact_links
+            if href and exists
+        )
 
         rows_html.append(
             "\n".join(
@@ -237,6 +247,7 @@ def write_html(index: dict[str, Any], html_path: Path) -> None:
                     f"  <td>{escape(str(inst.get('difficulty') or ''))}</td>",
                     f"  <td>{escape(str(inst.get('format') or ''))}</td>",
                     f"  <td>{escape(str(inst.get('domain') or 'claims'))}</td>",
+                    f"  <td>{escape(str(inst.get('hf_config') or ''))}</td>",
                     f"  <td>{escape(str(inst.get('lob') or ''))}</td>",
                     f"  <td>{escape(str(inst.get('target_record_type') or 'loss_run_incident'))}</td>",
                     f"  <td class=\"num\">{escape(str(target_count))}</td>",
@@ -244,11 +255,7 @@ def write_html(index: dict[str, Any], html_path: Path) -> None:
                     f"  <td class=\"num\">{escape(pdf_pages_str)}</td>",
                     f"  <td>{escape(problems_str)}</td>",
                     "  <td>",
-                    f"    <a href=\"{escape(pdf_href)}\" target=\"_blank\" rel=\"noopener noreferrer\">pdf</a>",
-                    f"    <a href=\"{escape(html_href)}\" target=\"_blank\" rel=\"noopener noreferrer\">html</a>",
-                    f"    <a href=\"{escape(gt_href)}\" target=\"_blank\" rel=\"noopener noreferrer\">json</a>",
-                    f"    <a href=\"{escape(canonical_href)}\" target=\"_blank\" rel=\"noopener noreferrer\">canonical</a>",
-                    f"    <a href=\"{escape(ocr_href)}\" target=\"_blank\" rel=\"noopener noreferrer\">ocr</a>",
+                    links_html,
                     "  </td>",
                     f"  <td class=\"num\">{escape(_fmt_bytes(files.get('pdf_size_bytes')))}</td>",
                     f"  <td class=\"num\">{escape(_fmt_bytes(files.get('html_size_bytes')))}</td>",
@@ -418,6 +425,7 @@ def write_html(index: dict[str, Any], html_path: Path) -> None:
             <th data-type=\"text\">tier</th>
             <th data-type=\"text\">format</th>
             <th data-type=\"text\">domain</th>
+            <th data-type=\"text\">HF config</th>
             <th data-type=\"text\">lob</th>
             <th data-type=\"text\">record type</th>
             <th data-type=\"num\" class=\"num\">records</th>
@@ -542,7 +550,7 @@ def main() -> None:
     write_html(index=index, html_path=html_path)
 
     if pdfinfo_from_path is None:
-        print("index built, but PDF page counts were not computed (missing dependency: pdf2image)")
+        print("index built using manifest page counts (missing dependency: pdf2image)")
 
     print(f"✓ Wrote: {json_path}")
     print(f"✓ Wrote: {csv_path}")

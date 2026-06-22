@@ -1,0 +1,41 @@
+{
+  "id": "ifta_tax_summary_002",
+  "template": "ifta_tax_return_summary",
+  "target_record_type": "tax_return_jurisdiction_row",
+  "num_target_records": 760,
+  "source_batch": "batches-02-05-review-ready",
+  "artifacts": {
+    "pdf": "pdfs/ifta_tax_summary_002.pdf",
+    "html": "html/ifta_tax_summary_002.html",
+    "ground_truth": "ground_truth/ifta_tax_summary_002.json"
+  },
+  "provenance": "Synthetic generated document. Private production references were used only for visual layout review; no production PDFs, names, account numbers, or raw customer data are included in this repository.",
+  "files": {
+    "ground_truth": "ground_truth/ifta_tax_summary_002.json",
+    "pdf": "pdfs/ifta_tax_summary_002.pdf",
+    "html": "html/ifta_tax_summary_002.html",
+    "metadata": "metadata/ifta_tax_summary_002.json",
+    "json_size_bytes": 260276,
+    "pdf_size_bytes": 483053,
+    "html_size_bytes": 186526,
+    "ocr_md": "transcripts/ocr_gemini/ifta_tax_summary_002.md",
+    "ocr_size_bytes": 94806
+  },
+  "transcripts_available": [
+    "ocr"
+  ],
+  "complexity_regime": "ifta_tax_return_summary",
+  "difficulty": "ifta_tax_return_summary",
+  "format": "production_like_pdf",
+  "domain": "commercial_insurance_operations",
+  "problems": [
+    "high_density_long_list",
+    "production_like_layout"
+  ],
+  "pages_estimate": 20,
+  "pdf_page_count": 20,
+  "dataset_version": "2.0.0",
+  "hf_config": "core_operations",
+  "document_count": 1,
+  "evidence_pattern": "single_document"
+}
