@@ -1,5 +1,5 @@
 {
-  "built_at": "2026-06-23T08:20:47.733242+00:00",
+  "built_at": "2026-06-23T10:54:07.940760+00:00",
   "dataset_dir": "/Users/anton/d/kay/longlistbench/data",
   "source_metadata": "manifest.json",
   "total_instances": 36,
@@ -969,10 +969,10 @@
         "html_exists": true,
         "ground_truth_exists": true,
         "ocr_md_exists": true,
-        "pdf_size_bytes": 1067499,
-        "html_size_bytes": 446168,
+        "pdf_size_bytes": 1382950,
+        "html_size_bytes": 706161,
         "json_size_bytes": 50540,
-        "ocr_md_size_bytes": 246178,
+        "ocr_md_size_bytes": 389738,
         "pdf_pages": 198
       },
       "transcripts_available": [
@@ -1010,10 +1010,10 @@
         "html_exists": true,
         "ground_truth_exists": true,
         "ocr_md_exists": true,
-        "pdf_size_bytes": 1468693,
-        "html_size_bytes": 797363,
-        "json_size_bytes": 109370,
-        "ocr_md_size_bytes": 739095,
+        "pdf_size_bytes": 1771556,
+        "html_size_bytes": 1011559,
+        "json_size_bytes": 105802,
+        "ocr_md_size_bytes": 1052199,
         "pdf_pages": 214
       },
       "transcripts_available": [
@@ -1047,10 +1047,10 @@
         "html_exists": true,
         "ground_truth_exists": true,
         "ocr_md_exists": true,
-        "pdf_size_bytes": 652385,
-        "html_size_bytes": 167683,
+        "pdf_size_bytes": 787058,
+        "html_size_bytes": 259635,
         "json_size_bytes": 14923,
-        "ocr_md_size_bytes": 89239,
+        "ocr_md_size_bytes": 138256,
         "pdf_pages": 76
       },
       "transcripts_available": [
@@ -1085,10 +1085,10 @@
         "html_exists": true,
         "ground_truth_exists": true,
         "ocr_md_exists": true,
-        "pdf_size_bytes": 829064,
-        "html_size_bytes": 286575,
+        "pdf_size_bytes": 1040855,
+        "html_size_bytes": 448519,
         "json_size_bytes": 31277,
-        "ocr_md_size_bytes": 153364,
+        "ocr_md_size_bytes": 246868,
         "pdf_pages": 126
       },
       "transcripts_available": [
@@ -1124,10 +1124,10 @@
         "html_exists": true,
         "ground_truth_exists": true,
         "ocr_md_exists": true,
-        "pdf_size_bytes": 485095,
-        "html_size_bytes": 230238,
+        "pdf_size_bytes": 627837,
+        "html_size_bytes": 353167,
         "json_size_bytes": 24285,
-        "ocr_md_size_bytes": 229971,
+        "ocr_md_size_bytes": 340861,
         "pdf_pages": 90
       },
       "transcripts_available": [
@@ -1163,10 +1163,10 @@
         "html_exists": true,
         "ground_truth_exists": true,
         "ocr_md_exists": true,
-        "pdf_size_bytes": 1023003,
-        "html_size_bytes": 529449,
-        "json_size_bytes": 62051,
-        "ocr_md_size_bytes": 504427,
+        "pdf_size_bytes": 1408959,
+        "html_size_bytes": 775600,
+        "json_size_bytes": 59782,
+        "ocr_md_size_bytes": 826218,
         "pdf_pages": 140
       },
       "transcripts_available": [

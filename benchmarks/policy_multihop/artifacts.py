@@ -13,7 +13,6 @@ from pathlib import Path
 from typing import Any
 
 try:
-    from ..canonical_transcripts import write_canonical_markdown_from_html
     from ..dataset_layout import (
         artifact_path,
         artifact_relative_path,
@@ -22,7 +21,6 @@ try:
         record_count_summary,
     )
 except ImportError:
-    from canonical_transcripts import write_canonical_markdown_from_html
     from dataset_layout import (
         artifact_path,
         artifact_relative_path,
@@ -60,10 +58,7 @@ async def _render_pdf(html_path: Path, pdf_path: Path) -> None:
 
 def _transcripts_available(dataset_dir: Path, sample_id: str) -> list[str]:
     available: list[str] = []
-    canonical = artifact_path(dataset_dir, sample_id, "canonical")
     ocr = artifact_path(dataset_dir, sample_id, "ocr")
-    if canonical.exists() and canonical.stat().st_size > 0:
-        available.append("canonical")
     if ocr.exists() and ocr.stat().st_size > 0:
         available.append("ocr")
     return available
@@ -74,14 +69,12 @@ def _instance_files(dataset_dir: Path, sample_id: str) -> dict[str, Any]:
         "ground_truth": artifact_relative_path(dataset_dir, sample_id, "ground_truth"),
         "pdf": artifact_relative_path(dataset_dir, sample_id, "pdf"),
         "html": artifact_relative_path(dataset_dir, sample_id, "html"),
-        "canonical_md": artifact_relative_path(dataset_dir, sample_id, "canonical"),
         "ocr_md": artifact_relative_path(dataset_dir, sample_id, "ocr"),
     }
     for key, artifact in [
         ("json_size_bytes", "ground_truth"),
         ("pdf_size_bytes", "pdf"),
         ("html_size_bytes", "html"),
-        ("canonical_size_bytes", "canonical"),
         ("ocr_size_bytes", "ocr"),
     ]:
         path = artifact_path(dataset_dir, sample_id, artifact)
@@ -223,12 +216,10 @@ def _write_case(
     html_path = artifact_path(dataset_dir, config.id, "html")
     pdf_path = artifact_path(dataset_dir, config.id, "pdf")
     ground_truth_path = artifact_path(dataset_dir, config.id, "ground_truth")
-    canonical_path = artifact_path(dataset_dir, config.id, "canonical")
     sample_metadata_path = artifact_path(dataset_dir, config.id, "metadata")
 
     html = case_html(config, profile, primary_items, text_bank=text_bank)
     html_path.write_text(html, encoding="utf-8")
-    write_canonical_markdown_from_html(html_path, canonical_path)
     write_json(ground_truth_path, target_records)
     if render_pdf:
         asyncio.run(_render_pdf(html_path, pdf_path))
@@ -300,7 +291,6 @@ def _empty_manifest(base_seed: int) -> dict[str, Any]:
             "pdfs": "pdfs/{sample_id}.pdf",
             "html": "html/{sample_id}.html",
             "ground_truth": "ground_truth/{sample_id}.json",
-            "canonical_transcripts": "transcripts/canonical/{sample_id}.md",
             "ocr_transcripts": "transcripts/ocr_gemini/{sample_id}.md",
             "metadata": "metadata/{sample_id}.json",
         },

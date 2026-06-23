@@ -319,6 +319,7 @@ def _base_record(item: dict[str, Any], record_type: str, record_id: str) -> dict
 
 def _primary_record(config: PolicyMultiHopCaseConfig, item: dict[str, Any]) -> dict[str, Any]:
     record = dict(item)
+    record.pop("materiality", None)
     record.update(_base_record(item, config.target_record_type, item["item_id"]))
     return record
 
@@ -336,7 +337,6 @@ def _form_record(item: dict[str, Any]) -> dict[str, Any]:
             "edition_date": item["edition_date"],
             "form_title": item["form_title"],
             "schedule_source": schedule_source,
-            "materiality": item["materiality"],
         }
     )
     if item["lob"] == "BOP":
@@ -407,7 +407,6 @@ def _premium_record(item: dict[str, Any]) -> dict[str, Any]:
             "premium_basis": item.get("premium_basis") or item.get("exposure_basis") or item.get("coverage", ""),
             "class_code": item.get("class_code", ""),
             "location_number": item.get("location_number", ""),
-            "materiality": item["materiality"],
         }
     )
     if item["lob"] == "WC":

@@ -112,7 +112,7 @@ h2 {{
   font-size: 10.5px;
   margin: 9px 0 5px;
 }}
-p {{ line-height: 1.3; margin: 4px 0 7px; }}
+p {{ line-height: 1.26; margin: 3px 0 5px; }}
 .policy-stamp {{
   border: 1px solid #8492a6;
   color: #314158;
@@ -220,8 +220,9 @@ p {{ line-height: 1.3; margin: 4px 0 7px; }}
   column-gap: 24px;
 }}
 .policy-form-body p {{
-  line-height: 1.28;
-  margin: 0 0 7px;
+  font-size: 8.6px;
+  line-height: 1.22;
+  margin: 0 0 4.5px;
   text-align: justify;
 }}
 .policy-form-body .clause-heading {{
@@ -235,12 +236,12 @@ p {{ line-height: 1.3; margin: 4px 0 7px; }}
 .letter-block {{
   background: #fff;
   border: 1px solid #d1d5db;
-  padding: 18px 22px;
+  padding: 14px 18px;
 }}
 .letter-block p {{
-  font-size: 10px;
-  line-height: 1.38;
-  margin: 0 0 11px;
+  font-size: 9px;
+  line-height: 1.28;
+  margin: 0 0 7px;
 }}
 .endorsement {{
   background: #fff;
@@ -521,14 +522,71 @@ def _supplemental_lines(profile: dict[str, str], kind: str, item: dict[str, Any]
     ]
 
 
+def _dense_policy_clause_lines(profile: dict[str, str], kind: str, item: dict[str, Any]) -> list[str]:
+    """Add realistic policy-form density for non-BOP long-range filler pages."""
+    if profile["lob"] == "WC":
+        state = item.get("state", "")
+        class_code = item.get("class_code", "")
+        classification = item.get("classification", "scheduled operation")
+        payroll = item.get("annual_payroll", "estimated remuneration")
+        return [
+            "Section A - Records And Audit",
+            f"The insured must keep payroll journals, tax filings, job-duty records, and contract labor records for {classification} assigned to class code {class_code} in {state}.",
+            f"The remuneration entry of {payroll} is an estimate for rating purposes and may be revised after audit without changing the coverage afforded by the policy.",
+            "Separate records are required when an employee performs duties that may fall under more than one classification or more than one covered state.",
+            "If adequate records are not available, remuneration may be assigned to the highest rated applicable classification permitted by the rating rules.",
+            "Section B - State And Classification Conditions",
+            "State amendatory endorsements, statutory benefit provisions, and assigned-risk rules apply before any conflicting general condition in this policy packet.",
+            "A classification shown on a schedule is not a warranty that all operations at the insured location are limited to that class.",
+            "Officer, partner, member, volunteer, leased-worker, and subcontractor treatment is determined by the attached endorsements and the applicable state rules.",
+            "Certificates from subcontractors must be available for audit and must identify the period of work, covered operations, and limits carried by the subcontractor.",
+            "Section C - Premium And Experience Rating",
+            "The experience modification factor, schedule rating factor, expense constant, assessments, and state surcharges are applied as shown on the information page or premium schedule.",
+            "A deposit premium, installment invoice, binder, or producer worksheet is not a substitute for the final audited premium calculation.",
+            "If operations change during the policy period, premium may be adjusted from the effective date of the change when the records support the adjustment.",
+            "The governing class, if any, is determined by the rating rules and not by the order in which entries appear on the schedule.",
+            "Section D - Notices And Endorsements",
+            "Cancellation, nonrenewal, waiver of subrogation, alternate employer, and designated workplace endorsements apply only when listed in the forms schedule.",
+            "Notice to a producer, certificate holder, or payroll service does not amend the policy unless the insurer issues an endorsement.",
+        ]
+    if profile["lob"] == "CGL":
+        class_code = item.get("class_code", "")
+        location = item.get("location_number", "")
+        exposure_basis = item.get("exposure_basis", "exposure basis")
+        exposure = item.get("exposure", "scheduled exposure")
+        return [
+            "Section A - Schedule References",
+            f"The declarations identify class code {class_code} at Location {location} with {exposure_basis.lower()} of {exposure}; that entry is used for rating and schedule reference purposes.",
+            "Coverage applies only as provided by the applicable coverage form, limits schedule, exclusion endorsements, and any additional-insured endorsement attached to the policy.",
+            "A location, project, classification, or exposure entry does not create coverage for operations that are otherwise excluded or outside the policy territory.",
+            "Section B - Limits And Aggregates",
+            "The each occurrence, damage to premises rented to you, medical expense, personal and advertising injury, products-completed operations, and general aggregate limits apply as stated in the declarations.",
+            "A sublimit, deductible, self-insured retention, or endorsement limit is part of the applicable limit and does not increase that limit.",
+            "When more than one scheduled operation could apply to a claim, the most specific applicable form and endorsement must be read with the declarations.",
+            "Section C - Additional Insureds And Contracts",
+            "Additional insured status applies only when the attached endorsement, written contract requirement, and completed schedule identify the party or operation.",
+            "A certificate of insurance, bid document, invoice, permit, or producer email does not amend the policy or waive an exclusion.",
+            "Contractual liability, primary and noncontributory wording, waiver of transfer rights, and completed-operations extensions apply only to the extent stated in an endorsement.",
+            "Section D - Records And Audit",
+            "The insured must retain sales records, payroll records, job-cost ledgers, subcontract agreements, certificates, lease records, and location records that support the exposure basis.",
+            "Final premium may be adjusted after audit if the actual exposure, classification, territory, or operation differs from the schedule.",
+            "If records are incomplete, exposure may be assigned according to the rating rules and the information available at audit.",
+            "Section E - Endorsement Order",
+            "Endorsements with later effective dates apply only from their effective dates and only to the classifications, locations, projects, or operations they identify.",
+            "The forms schedule, declarations, exposure schedule, and endorsement detail pages must be read together before determining whether a scheduled item is covered.",
+        ]
+    return []
+
+
 def _augment_lines(profile: dict[str, str], kind: str, item: dict[str, Any], lines: list[str]) -> list[str]:
     augmented = [line for line in lines if line.strip()]
-    if len(augmented) >= 12:
+    target = 16 if profile["lob"] == "BOP" else 22
+    if len(augmented) >= target:
         return augmented
-    for line in _supplemental_lines(profile, kind, item):
+    for line in [*_supplemental_lines(profile, kind, item), *_dense_policy_clause_lines(profile, kind, item)]:
         if line not in augmented:
             augmented.append(line)
-        if len(augmented) >= 12:
+        if len(augmented) >= target:
             break
     return augmented
 
@@ -700,8 +758,8 @@ def _bop_typed_draft_page(
             ]
         )
 
-    section_labels = ["A.", "B.", "C.", "D.", "E.", "F.", "G.", "H."]
-    for idx, line in enumerate(lines[:8]):
+    section_labels = ["A.", "B.", "C.", "D.", "E.", "F.", "G.", "H.", "I.", "J.", "K.", "L.", "M.", "N."]
+    for idx, line in enumerate(lines[:14]):
         text = re.sub(r"\s+", " ", str(line)).strip()
         if not text:
             continue
@@ -836,9 +894,16 @@ def _bop_coverage_form_page(
         para(f"Coverage for {coverage_key} is determined by reading the Declarations, this form, the forms schedule and any endorsement naming the same coverage and premises reference."),
         para("If the same coverage appears on multiple schedules, use the location, building, form number and effective date to connect the entries."),
     ]
-    body_parts = generated_parts() if generated_body else (
-        main_form_parts if item.get("form_number") == "BPF 00 13" else optional_form_parts
-    )
+    if generated_body:
+        body_parts = generated_parts()
+        supplemental_parts = main_form_parts if item.get("form_number") == "BPF 00 13" else optional_form_parts
+        for part in supplemental_parts[3:]:
+            if len(body_parts) >= 28:
+                break
+            if part not in body_parts:
+                body_parts.append(part)
+    else:
+        body_parts = main_form_parts if item.get("form_number") == "BPF 00 13" else optional_form_parts
 
     return f"""
 <section class="coverage-form-page">
@@ -877,6 +942,12 @@ def _bop_typed_endorsement_page(
         f"The limit shown for the affected scheduled coverage is {item.get('limit', '')}; the deductible shown is {item.get('deductible', '')}.",
         f"The valuation or rating basis shown for the scheduled coverage is {item.get('valuation', item.get('business_income_basis', 'as scheduled'))}.",
         "This endorsement does not change any other scheduled premises unless another schedule expressly states that it applies.",
+        "The declarations, coverage form, forms schedule, endorsement schedule and premium schedule must be read together before applying this endorsement.",
+        "A binder, certificate, producer request, invoice, audit worksheet or loss-control note does not change this endorsement unless a revised endorsement is issued.",
+        "If a location, building, coverage, form number or effective date differs between schedules, the later and more specific endorsement controls for that scheduled item.",
+        "The insured must keep occupancy records, valuation worksheets, lease agreements, payroll records, sales records and equipment schedules that support the scheduled entry.",
+        "Any premium adjustment arising from this endorsement is shown in the premium summary or later billing notice and does not expand the applicable limit.",
+        "This endorsement applies separately to each premises, coverage and form reference identified in the schedule unless the endorsement states otherwise.",
     ]
     content: list[str] = []
     content.extend(_typed_policy_header(profile))
@@ -896,7 +967,7 @@ def _bop_typed_endorsement_page(
             "",
         ]
     )
-    section_labels = ["A.", "B.", "C.", "D.", "E.", "F."]
+    section_labels = ["A.", "B.", "C.", "D.", "E.", "F.", "G.", "H.", "I.", "J.", "K.", "L."]
     for idx, line in enumerate(item_lines):
         text = re.sub(r"\s+", " ", str(line)).strip()
         if not text:
@@ -957,6 +1028,16 @@ def _bop_typed_notice_page(
             "Questions about billing, audit, loss reporting, or policy changes should",
             "be directed to the producer or servicing office shown in the declarations.",
             "",
+            "The forms schedule identifies the edition date for each coverage form,",
+            "endorsement, amendatory page and notice attached to the policy packet.",
+            "",
+            "If more than one schedule refers to the same location or building, read",
+            "the location number, building number, coverage name, form number, and",
+            "effective date together before relying on the entry.",
+            "",
+            "The insured should retain the full packet, including replaced pages,",
+            "because later endorsements may apply only from their effective dates.",
+            "",
             "-" * 78,
             "KEEP THIS NOTICE WITH YOUR POLICY FOR FUTURE REFERENCE.",
         ]
@@ -1005,6 +1086,16 @@ def _bop_typed_billing_page(
             "5. Return premium, additional premium, fees, and taxes are calculated using",
             "   the policy terms, rating plan, and applicable law.",
             "",
+            "6. Premium shown for a single scheduled coverage does not change limits,",
+            "   deductibles, valuation terms, covered premises, or exclusions.",
+            "",
+            "7. If the insured requests a change during the policy period, any resulting",
+            "   premium adjustment applies from the effective date shown on the",
+            "   endorsement or revised declarations page.",
+            "",
+            "8. Audit correspondence, worksheets, and installment notices are part of",
+            "   policy administration records and should be retained with this packet.",
+            "",
             "-" * 78,
             "THIS PAGE IS PART OF THE POLICY PACKET BUT DOES NOT GRANT COVERAGE.",
         ]
@@ -1051,6 +1142,15 @@ def _bop_typed_amendatory_page(
             "4. This endorsement does not change scheduled limits, deductibles, forms,",
             "   classifications, rating bases, or premiums unless a row in the schedule",
             "   or another endorsement specifically states the change.",
+            "",
+            "5. If this endorsement conflicts with another state amendatory endorsement,",
+            "   the provision applicable to the described premises controls.",
+            "",
+            "6. Notice periods, appraisal rights, cancellation terms, and suit limitation",
+            "   provisions apply only as amended for the state and policy period shown.",
+            "",
+            "7. This endorsement must be read with the declarations, coverage form,",
+            "   forms schedule, and any endorsement naming the same location or coverage.",
             "",
             "-" * 78,
             "ALL OTHER TERMS AND CONDITIONS OF THIS POLICY REMAIN UNCHANGED.",
@@ -1210,8 +1310,8 @@ def _bop_declaration_page_two(profile: dict[str, str], items: list[dict[str, Any
     unique_forms = list(dict.fromkeys(forms))
     form_lines = textwrap.wrap(",  ".join(unique_forms), width=76, break_long_words=False, break_on_hyphens=False)
     optional_rows = [
-        ("Businessowners Extension Endorsement", "See RVI-X210"),
-        ("Auto Service Industry Extension", "See RVI-X340"),
+        ("Businessowners Extension Endorsement", "See CBF210"),
+        ("Auto Service Industry Extension", "See CBF340"),
         ("Employee Tools - Per Occurrence", "$    10,000"),
         ("                 Per Employee", "$     1,000"),
     ]

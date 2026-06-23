@@ -24,7 +24,6 @@ from pathlib import Path
 from typing import Any
 
 try:
-    from .canonical_transcripts import write_canonical_markdown_from_html
     from .dataset_layout import (
         artifact_path,
         artifact_relative_path,
@@ -33,7 +32,6 @@ try:
         record_count_summary,
     )
 except ImportError:
-    from canonical_transcripts import write_canonical_markdown_from_html
     from dataset_layout import (
         artifact_path,
         artifact_relative_path,
@@ -176,6 +174,10 @@ def _stable_seed(base_seed: int, case_id: str, offset: int) -> int:
     seed_material = f"{base_seed}:{case_id}:{offset}".encode("utf-8")
     seed_offset = int(hashlib.md5(seed_material).hexdigest()[:8], 16) % 10000
     return base_seed + seed_offset
+
+
+def _review_reference(case_id: str, page_idx: int, prefix: str) -> str:
+    return f"{prefix}-{_stable_seed(1300 + page_idx, case_id, page_idx) % 900000 + 100000}"
 
 
 def _count_pdf_pages(pdf_path: Path) -> int | None:
@@ -340,9 +342,23 @@ def _html_document(title: str, body: str) -> str:
     }}
     .sparse-report {{
       font-family: Arial, Helvetica, sans-serif;
-      width: 82%;
-      margin: 16px auto 0;
+      width: 100%;
+      margin: 4px 0 0;
       font-size: 7.4pt;
+    }}
+    .dense-notes {{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px 12px;
+      margin-top: 9px;
+    }}
+    .dense-note {{
+      border: 1px solid #cbd5e1;
+      background: #f8fafc;
+      min-height: 58px;
+      padding: 6px;
+      font-size: 6.9pt;
+      line-height: 1.25;
     }}
     .sparse-title {{
       text-align: center;
@@ -564,6 +580,7 @@ def _generate_case_incidents(config: MultiHopCaseConfig, base_seed: int) -> list
 
 def _cover_page(config: MultiHopCaseConfig, incidents: list[dict[str, Any]]) -> str:
     insured = incidents[0]["insured"] if incidents else "Scheduled Insured"
+    file_reference = f"UW-{_stable_seed(1100, config.id, 0) % 900000 + 100000}"
     body = f"""
 <div class="cover">
   <div class="stamp">RENEWAL REVIEW COPY</div>
@@ -575,11 +592,12 @@ def _cover_page(config: MultiHopCaseConfig, incidents: list[dict[str, Any]]) -> 
     <div><div class="label">Account</div><div class="value">{escape(insured)}</div></div>
     <div><div class="label">Valuation Date</div><div class="value">01/31/2024</div></div>
     <div><div class="label">Claim Count</div><div class="value">{len(incidents)}</div></div>
-    <div><div class="label">File Reference</div><div class="value">{escape(config.id.upper())}</div></div>
+    <div><div class="label">File Reference</div><div class="value">{file_reference}</div></div>
   </div>
   <div class="notice">
-    Some appendices were inserted from different source systems. Row keys and
-    reference numbers are retained as printed in the source documents.
+    Appendices were received from the carrier portal, fleet schedule, financial
+    ledger, and prior-carrier response files. Row keys and reference numbers
+    are retained as printed in the account file.
   </div>
 </div>
 """
@@ -587,6 +605,7 @@ def _cover_page(config: MultiHopCaseConfig, incidents: list[dict[str, Any]]) -> 
 
 
 def _portal_receipt_page(config: MultiHopCaseConfig, incidents: list[dict[str, Any]]) -> str:
+    queue_id = f"RQ-{_stable_seed(1200, config.id, 0) % 900000 + 100000}"
     rows = [
         [
             idx,
@@ -601,8 +620,8 @@ def _portal_receipt_page(config: MultiHopCaseConfig, incidents: list[dict[str, A
 <div class="portal">
   <aside class="portal-side">
     <strong>Account Portal</strong><br>
-    Login: synthetic-reviewer<br>
-    Packet: {escape(config.id.upper())}<br>
+    User: account-review<br>
+    Queue: {queue_id}<br>
     Valuation: 01/31/2024<br>
     Rows staged: {len(incidents)}<br><br>
     <strong>Navigation</strong><br>
@@ -615,7 +634,7 @@ def _portal_receipt_page(config: MultiHopCaseConfig, incidents: list[dict[str, A
   <main class="portal-main">
     <h2>Return Summary / Original Export Review</h2>
     <p>Carrier portal printout retained at the front of the account packet.
-    The page is sparse by design and only previews a subset of records.</p>
+    The table below shows the first staged rows in the renewal review queue.</p>
     {_table(["#", "Policy", "State", "Status", "Reported"], rows)}
     <p style="margin-top: 18px; text-align: right; font-weight: bold;">Pending review queue: {len(incidents)}</p>
   </main>
@@ -639,9 +658,9 @@ def _letterhead_request_page(incidents: list[dict[str, Any]]) -> str:
   <div class="seal">K</div>
   <h2 style="text-align: center;">Department of Motor Carrier Records</h2>
   <p style="text-align: center;">Report of Services Provided</p>
-  <p><strong>Note:</strong> This synthetic page imitates a public-records
-  request response often embedded in claim packets. It is not a billing
-  statement and does not contain the complete target schedule.</p>
+  <p><strong>Note:</strong> This report summarizes record-search responses
+  received for underwriting review. It is not a billing statement and does not
+  contain the complete target schedule.</p>
   {_table(["Reference", "State", "Event Date", "Status"], rows)}
   <p style="text-align: center; margin-top: 22px;">Do not pay from this report.</p>
 </div>
@@ -788,7 +807,7 @@ def _monthly_account_activity_page(
     body = f"""
 <h2>Monthly Account Activity</h2>
 <div class="worksheet-meta">
-  <div><span class="label">Account batch</span><br>{escape(case_id.upper())}-{page_idx:03d}</div>
+  <div><span class="label">Account batch</span><br>{_review_reference(case_id, page_idx, "BATCH")}</div>
   <div><span class="label">Accounting month</span><br>February 2024</div>
   <div><span class="label">Source</span><br>Billing ledger export</div>
 </div>
@@ -825,12 +844,12 @@ def _premium_allocation_page(
     body = f"""
 <h2>Premium Allocation Worksheet</h2>
 <div class="worksheet-meta">
-  <div><span class="label">Packet</span><br>{escape(case_id.upper())}</div>
+  <div><span class="label">Account file</span><br>{_review_reference(case_id, page_idx, "ACCT")}</div>
   <div><span class="label">Worksheet period</span><br>2024 Policy Year</div>
   <div><span class="label">Allocation basis</span><br>Written premium by jurisdiction</div>
 </div>
 {_table(["Schedule", "Jurisdiction", "Surcharge", "Written Premium", "Taxable Premium", "Tax Rate", "Tax Due", "Total Due"], rows, class_name="data-table worksheet-table wide")}
-<div class="form-footer">Synthetic allocation worksheet. Jurisdiction rows are distractors and are not target incident records.</div>
+<div class="form-footer">Allocation worksheet. Jurisdiction rows are retained for premium reconciliation and are not claim records.</div>
 """
     return _page("Premium allocation worksheet", body, class_name="worksheet")
 
@@ -842,7 +861,7 @@ def _driver_qualification_audit_page(
     incidents: list[dict[str, Any]],
 ) -> str:
     rows = []
-    for idx, item in enumerate(_sample_window(incidents, page_idx, 16), start=1):
+    for idx, item in enumerate(_sample_window(incidents, page_idx, 22), start=1):
         rows.append(
             [
                 item["driver_name"],
@@ -856,7 +875,7 @@ def _driver_qualification_audit_page(
     body = f"""
 <h2>Driver Qualification Audit</h2>
 <div class="worksheet-meta">
-  <div><span class="label">Audit file</span><br>DQ-{escape(case_id[-6:].upper())}-{page_idx:03d}</div>
+  <div><span class="label">Audit file</span><br>{_review_reference(case_id, page_idx, "DQ")}</div>
   <div><span class="label">Review type</span><br>Annual compliance sampling</div>
   <div><span class="label">Reviewer</span><br>Safety desk</div>
 </div>
@@ -872,35 +891,44 @@ def _prior_carrier_correspondence_page(
     incidents: list[dict[str, Any]],
 ) -> str:
     rows = []
-    for idx, item in enumerate(_sample_window(incidents, page_idx, 6), start=1):
+    dispositions = ["Loss runs attached", "No known losses", "Claim detail pending", "Prior term attached", "Revised run received"]
+    for idx, item in enumerate(_sample_window(incidents, page_idx, 18), start=1):
         rows.append(
             [
+                f"REQ-{page_idx:03d}-{idx:02d}",
                 item["reference_number"],
+                item["company_name"],
                 item["policy_state"],
                 f"{(idx % 12) + 1:02d}/{(idx * 2 % 27) + 1:02d}/2024",
-                rng.choice(["Acknowledged", "No loss data", "Prior term attached", "Pending response"]),
+                rng.choice(dispositions),
+            ]
+        )
+    attachment_rows = []
+    for idx, item in enumerate(_sample_window(incidents, page_idx + 3, 10), start=1):
+        attachment_rows.append(
+            [
+                f"ATT-{page_idx:03d}-{idx:02d}",
+                item["policy_number"],
+                rng.choice(["PDF loss run", "Claim note extract", "Premium audit page", "Coverage verification"]),
+                rng.choice(["Indexed", "Pending review", "Matched to account", "Do not use"]),
             ]
         )
     body = f"""
-<div class="sparse-report">
-  <div class="sparse-title">PRIOR CARRIER REQUEST RESPONSE</div>
-  <div class="report-address">
-    ATTN: Account Review Desk<br>
-    Synthetic Motor Carrier File<br>
-    Packet {escape(case_id.upper())}
-  </div>
-  <div class="report-meta">
-    <div>Issue Date:</div><div>02-{(page_idx % 27) + 1:02d}-2024</div>
-    <div>Letter Id:</div><div>LC{page_idx:03d}{rng.randint(1000, 9999)}</div>
-    <div>Case Id:</div><div>{escape(case_id.upper())}</div>
-  </div>
-  <p>Report of services provided. This page records prior-carrier correspondence
-  status and does not contain the complete claim schedule.</p>
-  {_table(["Reference", "State", "Response Date", "Disposition"], rows, class_name="data-table worksheet-table")}
+<h2>Prior Carrier Request Response Log</h2>
+<div class="worksheet-meta">
+  <div><span class="label">Account file</span><br>{_review_reference(case_id, page_idx, "ACCT")}</div>
+  <div><span class="label">Issue Date</span><br>02/{(page_idx % 27) + 1:02d}/2024</div>
+  <div><span class="label">Extract ID</span><br>LC{page_idx:03d}{rng.randint(1000, 9999)}</div>
 </div>
-<div class="form-footer">Record services unit - synthetic correspondence page</div>
+{_table(["Request", "Reference", "Account", "State", "Response Date", "Disposition"], rows, class_name="data-table worksheet-table wide")}
+{_table(["Attachment", "Policy", "Document Type", "Index Status"], attachment_rows, class_name="data-table worksheet-table")}
+<div class="dense-notes">
+  <div class="dense-note"><strong>Review note.</strong> The correspondence log records prior-carrier response handling and document indexing. Rows may reference inactive or non-target files.</div>
+  <div class="dense-note"><strong>Routing note.</strong> Account review uses this page with the policy register, driver roster, and claim detail pages when resolving missing prior-loss evidence.</div>
+</div>
+<div class="form-footer">Record services unit - correspondence export</div>
 """
-    return _page("Prior carrier correspondence", body, class_name="sparse-report")
+    return _page("Prior carrier correspondence", body, class_name="worksheet")
 
 
 def _risk_control_followup_page(
@@ -918,24 +946,50 @@ def _risk_control_followup_page(
         "Open recommendation carried to renewal file",
         "Claim trend reviewed with account manager",
         "No additional field visit required",
+        "Annual MVR exception list sampled",
+        "Vehicle inspection evidence attached",
+        "Open claim reserve report compared to loss run",
+        "DOT authority status reviewed",
+        "Contracted driver certificate file requested",
+        "Large-loss narrative routed to underwriting",
+        "Driver assignment changes checked against roster",
+        "Policy state coding compared with account profile",
+        "Subrogation diary reviewed for open recovery",
+        "File note created for renewal referral",
     ]
     rows = []
     for idx, check in enumerate(checks, start=1):
         mark = "X" if (idx + page_idx) % 3 != 0 else ""
         owner = rng.choice(["Safety", "Claims", "UW", "Fleet"])
         rows.append(f"<div>{mark}</div><div>{escape(check)}</div><div>{escape(owner)}</div>")
+    sample_rows = []
+    statuses = ["Closed", "Open", "Referred", "Monitor", "No action"]
+    for idx, item in enumerate(_sample_window(incidents, page_idx + 5, 14), start=1):
+        sample_rows.append(
+            [
+                item["unit_number"],
+                item["driver_name"],
+                item["reference_number"],
+                rng.choice(["Collision", "Cargo", "Premises", "Vehicle", "Liability"]),
+                rng.choice(statuses),
+                f"04/{(idx * 3 % 27) + 1:02d}/2024",
+            ]
+        )
     body = f"""
-<div class="sparse-report">
-  <div class="sparse-title">RISK CONTROL FOLLOW-UP NOTES</div>
-  <div class="report-meta">
-    <div>Packet:</div><div>{escape(case_id.upper())}</div>
-    <div>Related unit:</div><div>{escape(incidents[page_idx % len(incidents)]["unit_number"])}</div>
-    <div>Review cycle:</div><div>Renewal file checklist</div>
-  </div>
-  <div class="checklist">{''.join(rows)}</div>
+<h2>Risk Control Follow-Up Notes</h2>
+<div class="worksheet-meta">
+  <div><span class="label">Account file</span><br>{_review_reference(case_id, page_idx, "ACCT")}</div>
+  <div><span class="label">Related unit</span><br>{escape(incidents[page_idx % len(incidents)]["unit_number"])}</div>
+  <div><span class="label">Review cycle</span><br>Renewal file checklist</div>
+</div>
+<div class="checklist">{''.join(rows)}</div>
+{_table(["Unit", "Driver", "Reference", "Review Area", "Status", "Diary Date"], sample_rows, class_name="data-table worksheet-table")}
+<div class="dense-notes">
+  <div class="dense-note"><strong>Risk control note.</strong> Follow-up items are sampled from the account service file and may not map one-to-one to the target incident schedule.</div>
+  <div class="dense-note"><strong>Underwriting note.</strong> Large-loss referrals remain open until the account manager confirms the driver, unit, policy state, and loss description.</div>
 </div>
 """
-    return _page("Risk control follow-up notes", body, class_name="sparse-report")
+    return _page("Risk control follow-up notes", body, class_name="worksheet")
 
 
 def _subrogation_diary_page(
@@ -946,7 +1000,7 @@ def _subrogation_diary_page(
 ) -> str:
     rows = []
     actions = ["Demand review", "Carrier tender", "Closed no recovery", "Arbitration pending", "Diary follow-up"]
-    for idx, item in enumerate(_sample_window(incidents, page_idx, 14), start=1):
+    for idx, item in enumerate(_sample_window(incidents, page_idx, 24), start=1):
         rows.append(
             [
                 f"03/{(idx * 2 % 27) + 1:02d}/2024",
@@ -960,11 +1014,15 @@ def _subrogation_diary_page(
     body = f"""
 <h2>Subrogation Diary Extract</h2>
 <div class="worksheet-meta">
-  <div><span class="label">Packet</span><br>{escape(case_id.upper())}</div>
+  <div><span class="label">Account file</span><br>{_review_reference(case_id, page_idx, "ACCT")}</div>
   <div><span class="label">Diary export</span><br>Subrogation module</div>
   <div><span class="label">Printed</span><br>03/31/2024</div>
 </div>
 {_table(["Diary Date", "File #", "Reference", "Action", "Status", "Recovery Est."], rows, class_name="data-table worksheet-table")}
+<div class="dense-notes">
+  <div class="dense-note"><strong>Diary note.</strong> The extract includes open and closed recovery activity. Some references are archival rows used by the claims team for reconciliation.</div>
+  <div class="dense-note"><strong>Routing note.</strong> Recoveries are compared with the financial ledger and claim detail pages before any account-level recovery credit is applied.</div>
+</div>
 """
     return _page("Subrogation diary extract", body, class_name="worksheet")
 
@@ -1151,10 +1209,7 @@ async def _render_pdf(html_path: Path, pdf_path: Path) -> None:
 
 def _transcripts_available(dataset_dir: Path, sample_id: str) -> list[str]:
     available: list[str] = []
-    canonical = artifact_path(dataset_dir, sample_id, "canonical")
     ocr = artifact_path(dataset_dir, sample_id, "ocr")
-    if canonical.exists() and canonical.stat().st_size > 0:
-        available.append("canonical")
     if ocr.exists() and ocr.stat().st_size > 0:
         available.append("ocr")
     return available
@@ -1165,14 +1220,12 @@ def _instance_files(dataset_dir: Path, sample_id: str) -> dict[str, Any]:
         "ground_truth": artifact_relative_path(dataset_dir, sample_id, "ground_truth"),
         "pdf": artifact_relative_path(dataset_dir, sample_id, "pdf"),
         "html": artifact_relative_path(dataset_dir, sample_id, "html"),
-        "canonical_md": artifact_relative_path(dataset_dir, sample_id, "canonical"),
         "ocr_md": artifact_relative_path(dataset_dir, sample_id, "ocr"),
     }
     for key, artifact in [
         ("json_size_bytes", "ground_truth"),
         ("pdf_size_bytes", "pdf"),
         ("html_size_bytes", "html"),
-        ("canonical_size_bytes", "canonical"),
         ("ocr_size_bytes", "ocr"),
     ]:
         path = artifact_path(dataset_dir, sample_id, artifact)
@@ -1249,12 +1302,10 @@ def _write_case(
     html_path = artifact_path(dataset_dir, config.id, "html")
     pdf_path = artifact_path(dataset_dir, config.id, "pdf")
     ground_truth_path = artifact_path(dataset_dir, config.id, "ground_truth")
-    canonical_path = artifact_path(dataset_dir, config.id, "canonical")
     sample_metadata_path = artifact_path(dataset_dir, config.id, "metadata")
 
     html = _case_html(config, incidents)
     html_path.write_text(html, encoding="utf-8")
-    write_canonical_markdown_from_html(html_path, canonical_path)
     _write_json(ground_truth_path, incidents)
     if render_pdf:
         asyncio.run(_render_pdf(html_path, pdf_path))
@@ -1311,7 +1362,6 @@ def _empty_manifest(base_seed: int) -> dict[str, Any]:
             "pdfs": "pdfs/{sample_id}.pdf",
             "html": "html/{sample_id}.html",
             "ground_truth": "ground_truth/{sample_id}.json",
-            "canonical_transcripts": "transcripts/canonical/{sample_id}.md",
             "ocr_transcripts": "transcripts/ocr_gemini/{sample_id}.md",
             "metadata": "metadata/{sample_id}.json",
         },
