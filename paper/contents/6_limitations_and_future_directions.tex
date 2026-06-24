@@ -22,6 +22,8 @@ The documents are synthetic. This is necessary for public release, but it means 
 
 The current release includes one OCR transcript condition. This supports reproducible OCR-conditioned evaluation, but it does not isolate OCR penalty by itself. Measuring OCR penalty requires adding another transcript or direct-PDF condition and running the same extraction protocol across both.
 
+OCR support should also be interpreted at the field level. A unique-identifier coverage check can look strong while a missing section header affects many records that inherit that header. The current validator reports both unique identifier coverage and affected records for tracked identifiers; richer future releases should extend this to all scored fields, not only identifiers.
+
 Finally, the corpus now contains several operations record types whose public schema is represented by the ground-truth examples and generic scorer rather than separate hand-written JSON Schema files for every family. Adding explicit schemas for each operations family would improve reproducibility for prompt-based and agentic extractors.
 
 \subsection{Future directions}
@@ -29,6 +31,7 @@ We view LongListBench as a foundation for studying scalable, layout-robust extra
 \begin{itemize}
     \item Run current-corpus one-shot and agentic baselines on all OCR transcripts and report accuracy, cost, and latency.
     \item Add explicit JSON Schemas or field contracts for every operations record family.
+    \item Add deterministic parser baselines as dataset sanity checks, and classify parser-friendly operational reports separately from complex packet cases.
     \item Add more OCR and visual-noise conditions, including scans, skew, blur, compression, and alternate OCR engines.
     \item Expand the multi-hop suite with more policy and claim packets where key fields are separated by large page distances.
     \item Evaluate retrieval-loop and verification-based systems that can inspect, join, and audit records rather than relying on a fixed chunking policy.

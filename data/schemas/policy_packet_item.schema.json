@@ -4,11 +4,33 @@
   "properties": {
     "annual_payroll": {"type": ["number", "string", "null"]},
     "building_number": {"type": "string"},
-    "business_income_basis": {"type": "string"},
+    "business_income_basis": {
+      "description": "Business income valuation or payroll basis when that value is explicitly shown for a coverage item.",
+      "type": "string"
+    },
     "class_code": {"type": "string"},
     "classification": {"type": "string"},
+    "clause_scope": {
+      "description": "Policy scope stated by a material clause, such as a location/building, state/class, or class/territory reference.",
+      "type": "string"
+    },
+    "clause_text": {
+      "description": "The material clause text to extract from the policy form or endorsement page.",
+      "type": "string"
+    },
+    "clause_title": {
+      "description": "Heading or short label for a material clause.",
+      "type": "string"
+    },
+    "clause_type": {
+      "description": "Clause category, such as condition, limitation, or exclusion.",
+      "type": "string"
+    },
     "coinsurance": {"type": "string"},
-    "coverage": {"type": "string"},
+    "coverage": {
+      "description": "Coverage, form, endorsement, classification, or schedule row label represented by the record.",
+      "type": "string"
+    },
     "coverage_part": {"type": "string"},
     "deductible": {"type": "string"},
     "edition_date": {"type": "string"},
@@ -34,7 +56,10 @@
     "policy_period": {"type": "string"},
     "premises_address": {"type": "string"},
     "premium": {"type": ["number", "string", "null"]},
-    "premium_basis": {"type": "string"},
+    "premium_basis": {
+      "description": "For policy_premium_item rows, the premium-summary row label or coverage name that the premium is charged against; this is not the business_income_basis field.",
+      "type": "string"
+    },
     "products_completed_ops_rate": {"type": ["number", "string", "null"]},
     "rate": {"type": ["number", "string", "null"]},
     "record_type": {
@@ -42,6 +67,7 @@
       "enum": [
         "bop_coverage_item",
         "cgl_exposure_item",
+        "policy_clause_item",
         "policy_endorsement_item",
         "policy_form_item",
         "policy_location_item",

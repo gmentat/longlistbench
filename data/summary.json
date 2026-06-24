@@ -1,6 +1,6 @@
 {
-  "num_pdfs": 36,
-  "total_target_records": 33110,
+  "num_pdfs": 34,
+  "total_target_records": 32654,
   "by_template": {
     "driver_mvr_request_and_roster": {
       "pdfs": 3,
@@ -34,21 +34,13 @@
       "pdfs": 3,
       "records": 77
     },
-    "policy_multihop_cgl": {
+    "mixed": {
       "pdfs": 1,
-      "records": 184
+      "records": 619
     },
-    "policy_multihop_bop": {
-      "pdfs": 1,
-      "records": 48
-    },
-    "policy_multihop_wc": {
-      "pdfs": 1,
-      "records": 113
-    },
-    "policy_ridgeview_businessowners_declarations": {
+    "multihop": {
       "pdfs": 2,
-      "records": 1600
+      "records": 870
     },
     "vehicle_schedule_spreadsheet_export": {
       "pdfs": 2,

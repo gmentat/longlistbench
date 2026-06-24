@@ -71,6 +71,15 @@ class PolicyMultiHopBenchmarkTests(unittest.TestCase):
                     self.assertNotIn("applies_to_record_id", sample_metadata["schema_fields"])
                     self.assertNotIn("materiality", sample_metadata["schema_fields"])
                     self.assertNotIn("item number", html.lower())
+                if sample_metadata["lob"] == "CGL":
+                    endorsement_records = [
+                        record for record in ground_truth if record["record_type"] == "policy_endorsement_item"
+                    ]
+                    for record in endorsement_records:
+                        self.assertIn(
+                            f'<div class="endorsement-title">{record["exclusion_name"]}</div>',
+                            html,
+                        )
                 self.assertIn("premium summary", html.lower())
                 self.assertNotIn("join on", html.lower())
                 self.assertNotIn("renewal application", html.lower())

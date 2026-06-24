@@ -122,6 +122,12 @@ def _evidence_map(config: PolicyMultiHopCaseConfig) -> list[dict[str, Any]]:
                     "fields": ["endorsement_effective_date", "limit", "deductible"],
                 },
                 {
+                    "section": "material_policy_provisions",
+                    "approx_page_after_cover": 7 + gap1 + gap2,
+                    "join_key": "form_number/coverage/location_number/building_number",
+                    "fields": ["clause_title", "clause_type", "clause_scope", "clause_text"],
+                },
+                {
                     "section": "premium_summary",
                     "approx_page_after_cover": 8 + gap1 + gap2 + gap3 + gap4,
                     "join_key": "location_number/building_number/coverage",
@@ -137,6 +143,12 @@ def _evidence_map(config: PolicyMultiHopCaseConfig) -> list[dict[str, Any]]:
                     "approx_page_after_cover": 7 + gap1 + gap2 + gap3,
                     "join_key": "endorsement_number",
                     "fields": ["endorsement_effective_date", "materiality"],
+                },
+                {
+                    "section": "material_policy_provisions",
+                    "approx_page_after_cover": 7 + gap1 + gap2,
+                    "join_key": "form_number/state_or_location/class_code",
+                    "fields": ["clause_title", "clause_type", "clause_scope", "clause_text"],
                 },
                 {
                     "section": "premium_summary",
@@ -253,6 +265,7 @@ def _write_case(
             "coverage_or_limit_schedule",
             "rating_schedule",
             "forms_schedule",
+            "material_policy_provisions",
             "endorsement_detail",
             "premium_summary",
             "policy_conditions",

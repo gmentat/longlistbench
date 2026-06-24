@@ -32,6 +32,8 @@ benchmarks/results/synced_structured_snapshot/
 benchmarks/results/*/
 !benchmarks/results/agentic_multihop_gpt55/
 !benchmarks/results/agentic_multihop_gpt55/**
+!benchmarks/results/codex_policy_cgl_probe_ocr/
+!benchmarks/results/codex_policy_cgl_probe_ocr/**
 
 # Virtual environment
 venv/

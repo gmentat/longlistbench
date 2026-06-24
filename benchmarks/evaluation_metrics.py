@@ -302,10 +302,13 @@ def _canonicalize_generic_value(value: Any) -> Any:
 
 
 def _canonicalize_record(item: dict) -> dict:
-    return {
-        str(k): _canonicalize_generic_value(v)
-        for k, v in sorted(item.items(), key=lambda item: str(item[0]))
-    }
+    canonical: dict[str, Any] = {}
+    for k, v in sorted(item.items(), key=lambda item: str(item[0])):
+        value = _canonicalize_generic_value(v)
+        if value is None:
+            continue
+        canonical[str(k)] = value
+    return canonical
 
 
 def uses_record_evaluator(ground_truth: list[dict]) -> bool:
@@ -334,6 +337,8 @@ def normalize_record_predictions(raw: object) -> list[dict]:
 
 
 def _flatten_record_value(field: str, value: Any, out: list[str]) -> None:
+    if value is None:
+        return
     if isinstance(value, dict):
         for k, v in sorted(value.items(), key=lambda item: str(item[0])):
             _flatten_record_value(f"{field}.{k}", v, out)

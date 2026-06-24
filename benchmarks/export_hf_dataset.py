@@ -17,7 +17,7 @@ CONFIG_ORDER = ("core_operations", "claim_multihop", "policy_packets")
 CONFIG_DESCRIPTIONS = {
     "core_operations": "28 production-like commercial insurance and fleet-operation PDFs with dense repeated operations and loss-run records.",
     "claim_multihop": "3 long claim PDFs where incident records must be assembled from distant sections.",
-    "policy_packets": "5 policy PDFs: 2 dense BOP declaration schedules plus 3 long BOP, WC, and CGL packets.",
+    "policy_packets": "3 long BOP, WC, and CGL policy packets where records must be assembled from distant sections.",
 }
 
 CLAIM_TARGET_TYPES = {"loss_run_incident"}
@@ -285,6 +285,8 @@ Most document-extraction benchmarks emphasize document-level header fields. Long
 
 The dataset contains {total_rows} PDF documents and {total_targets_text} target records. All visible document content is synthetic and does not contain real customer PII.
 
+The configs have different intended roles. `core_operations` contains high-density structured reports where deterministic row parsers may perform well and the main stressor is scale, OCR preservation, and output completeness. `claim_multihop` and `policy_packets` are the stronger complex-packet regimes: target records require inherited context, heterogeneous schemas, distant supporting sections, and distractor material.
+
 ## Configs and Data Viewer
 
 | Config | Description | Target field | Documents | Records/doc range | Target records | Page range |
@@ -391,16 +393,17 @@ Extraction schemas are published as standalone JSON Schema files under [`schemas
 
 - [`schemas/loss_run_incident.schema.json`](./schemas/loss_run_incident.schema.json) - `incidents[]` for claim multi-hop incident rows, including incident identifiers, policy fields, claimant/driver fields, dates, coverage fields, and nested financial breakdowns.
 - [`schemas/loss_run_claim_row.schema.json`](./schemas/loss_run_claim_row.schema.json) - `records[]` for external loss-run schedule rows in the core operations config.
-- [`schemas/policy_schedule_record.schema.json`](./schemas/policy_schedule_record.schema.json) - `records[]` for dense BOP declaration schedule rows.
-- [`schemas/policy_packet_item.schema.json`](./schemas/policy_packet_item.schema.json) - `records[]` for BOP/WC/CGL policy packet rows. Records are heterogeneous and may represent locations, coverages, forms, endorsements, exclusions, rating rows, or premium items depending on `record_type`.
+- [`schemas/policy_packet_item.schema.json`](./schemas/policy_packet_item.schema.json) - `records[]` for BOP/WC/CGL policy packet rows. Records are heterogeneous and may represent locations, coverages, forms, material clauses, endorsements, exclusions, rating rows, or premium items depending on `record_type`.
 
-These schemas describe the strict claim and policy extraction targets. Operations rows are represented by their ground-truth field contracts and the generic record-list scorer.
+These schemas describe the strict claim, external loss-run, and policy extraction targets. Other operations rows are represented by their ground-truth field contracts and the generic record-list scorer.
 
 ## Transcript Conditions
 
 The current release includes OCR transcripts for every PDF:
 
 - `ocr_transcript`: OCR text generated from rendered PDF page images.
+
+OCR validation passes on all released PDFs, with 100.0% average identifier coverage, 99.9% tracked identifier-field support, and 39 records with at least one tracked identifier missing from OCR. Interpret OCR-conditioned extraction scores with this ceiling in mind: a single omitted repeated header can affect many rows that inherit that value.
 
 If future releases add clean structural transcripts, they should be reported as a separate transcript condition rather than mixed with OCR-condition results.
 
@@ -419,7 +422,7 @@ No real insureds, claimants, policies, financial accounts, or customer documents
 
 ## Limitations
 
-LongListBench is intended for measuring long-list, layout, OCR-conditioned, and long-range-evidence extraction behavior. It is not a substitute for evaluation on a private production corpus. Synthetic documents can underrepresent the visual and linguistic diversity of real carrier packets, and OCR transcripts are included only for rows where the OCR path has been run and reviewed.
+LongListBench is intended for measuring long-list, layout, OCR-conditioned, and long-range-evidence extraction behavior. It is not a substitute for evaluation on a private production corpus. Synthetic documents can underrepresent the visual and linguistic diversity of real carrier packets. Some structured-report families are parser-friendly by design and should be interpreted as scale/completeness cases rather than as hard semantic extraction cases. OCR transcripts have been run and reviewed, but OCR support should be interpreted at the affected-record level: a missing section header can affect many rows even when unique row identifiers are present.
 
 ## License
 

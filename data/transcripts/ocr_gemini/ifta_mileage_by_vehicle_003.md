@@ -1,4328 +1,7486 @@
 # Page 1
 
-Generated: 11/02/2025 09:14 AM CST
+Hearthline Freight Cooperative                                                      IFTA MILEAGE DETAIL - 2025 Q3
+Quarterly IFTA workpaper packet                                                       Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
+____________________________________________________________________________________________________________________
 
-Prairie Route Carriers Inc
-1801 WESTFIELD CROSSING
-PLAINFIELD, IL 60544
-312-555-0101
++----------------------------------------------------------------------------------------------------------+
+|                                                                                                          |
+|   Vehicle Jurisdiction Mileage Detail                                                                    |
+|                                                                                                          |
+|   Reporting period: 07/01/2025 through 09/30/2025                                                        |
+|                                                                                                          |
+|   Units reviewed: 62  Quarter close packet                                                               |
+|                                                                                                          |
+|   This packet combines telematics mileage, dispatcher corrections, and exception review                  |
+|   notes. Fuel-purchase summaries are included for reconciliation only and are not mileage                |
+|   rows.                                                                                                  |
+|                                                                                                          |
++----------------------------------------------------------------------------------------------------------+
 
-# IFTA Mileage: All trucks - 2025 - Q 4
-### 7/1/2025 - 9/30/2025
+____________________________________       ____________________________________       ____________________________________
+Prepared by                                Source systems                             Review status
+Fuel tax review desk                       ELD mileage feed                           Quarter close workpaper
+Internal audit copy                        Dispatch trip ledger                       Exception tie-out retained
+                                           Fuel-card import
 
-## Vehicle: 8199
-
-| # | State | Identified Miles | Unidentified Miles | Total |
-|---|---|---|---|---|
-| 1 | Arizona | 1019.8 | 0.0 | 1019.8 |
-| 2 | Arkansas | 4828.2 | 0.0 | 4828.2 |
-| 3 | California | 4689.5 | 297.2 | 4986.7 |
-| 4 | Connecticut | 4283.0 | 0.0 | 4283.0 |
-| 5 | Delaware | 5686.8 | 0.0 | 5686.8 |
-| 6 | Florida | 1192.9 | 0.0 | 1192.9 |
-| 7 | Georgia | 5113.6 | 0.0 | 5113.6 |
-| 8 | Idaho | 98.3 | 130.6 | 228.9 |
-| 9 | Illinois | 3260.3 | 0.0 | 3260.3 |
-| 10 | Indiana | 1842.5 | 0.0 | 1842.5 |
-| 11 | Iowa | 4466.6 | 0.0 | 4466.6 |
-| 12 | Kansas | 1669.9 | 0.0 | 1669.9 |
-| 13 | Louisiana | 3712.1 | 0.0 | 3712.1 |
-| 14 | Maryland | 1352.6 | 0.0 | 1352.6 |
-| 15 | Michigan | 1720.5 | 98.2 | 1818.7 |
-| 16 | Minnesota | 4650.8 | 366.4 | 5017.2 |
-| 17 | Mississippi | 1473.4 | 0.0 | 1473.4 |
-| 18 | Missouri | 5202.3 | 0.0 | 5202.3 |
-| 19 | Montana | 1478.3 | 0.0 | 1478.3 |
-| 20 | Nebraska | 4692.1 | 0.0 | 4692.1 |
-| 21 | Nevada | 3034.3 | 0.0 | 3034.3 |
-| 22 | New Jersey | 6617.5 | 0.0 | 6617.5 |
-| 23 | New Mexico | 32.3 | 118.9 | 151.2 |
-| 24 | North Carolina | 648.2 | 0.0 | 648.2 |
-| 25 | North Dakota | 716.2 | 0.0 | 716.2 |
-| 26 | Oklahoma | 1040.2 | 236.7 | 1276.9 |
-| 27 | Oregon | 4323.5 | 0.0 | 4323.5 |
-| 28 | Pennsylvania | 101.1 | 0.0 | 101.1 |
-| 29 | South Carolina | 106.9 | 0.0 | 106.9 |
-
-Page 1 of 124
+                                                                                                                    Page 1
 
 # Page 2
 
-Generated: 11/02/2025 09:14 AM CST                                                     Prairie Route Carriers Inc
-                                                                                       1802 WESTFIELD CROSSING
-                                                                                          PLAINFIELD, IL 60544
-                                                                                                  312-555-0102
+Hearthline Freight Cooperative                                 COLUMN LEGEND AND REVIEW NOTES
+Quarterly IFTA workpaper packet                                     Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
+_________________________________________________________________________________________________
 
-                                 IFTA Mileage: All trucks - 2025 - Q 4
-                                          7/1/2025 - 9/30/2025
+How to read the mileage sections
 
-                                       Vehicle: 8199 continued
+"PRINTED LABEL","WORKPAPER USE","MEANING IN THE QUARTER FILE"
+"Accepted / identified","Return support","Miles supported by telematics, trip sheets, or odometer review."
+"Exception / unidentified","Exception carry-forward","Miles retained from exception handling where the source leg was incomplete."
+"Reported jurisdiction total","Return entry","Accepted plus exception miles for that vehicle and jurisdiction."
 
-| # | State | Identified Miles | Unidentified Miles | Total |
-| :--- | :--- | :--- | :--- | :--- |
-| 30 | Tennessee | 2995.2 | 0.0 | 2995.2 |
-| 31 | Texas | 6571.5 | 9.2 | 6580.7 |
-| 32 | Utah | 2429.1 | 0.0 | 2429.1 |
-| 33 | Virginia | 102.1 | 0.0 | 102.1 |
-| 34 | Washington | 4195.3 | 0.0 | 4195.3 |
-| 35 | West Virginia | 6402.9 | 0.0 | 6402.9 |
-| 36 | Wisconsin | 4006.7 | 0.0 | 4006.7 |
-| 37 | Wyoming | 698.0 | 0.0 | 698.0 |
-| | *Total* | *106454.5* | *1257.2* | *107711.7* |
 
-                                                                                               Page 2 of 124
+|  Mileage return entries are taken from the vehicle jurisdiction mileage tables. Fuel purchase snippets, unit
+|  summaries, quarter totals, and notes are retained as support only.
+
+
+COMMON REVIEW MARKS                                     OMITTED JURISDICTIONS
+
+ELD accepted, dispatch override, toll-road support,     States with no mileage for a unit may be omitted from
+fuel-card tie-out, and exception desk notes may appear  that unit section instead of printed as zero rows.
+below a jurisdiction name.
+
+
+
+
+                                                                                           Page 2
 
 # Page 3
 
-Generated: 11/02/2025 09:14 AM CST                                Prairie Route Carriers Inc
-                                                                 1803 WESTFIELD CROSSING
-                                                                 PLAINFIELD, IL 60544
-                                                                 312-555-0103
+Hearthline Freight Cooperative                                          VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                                         Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
+_____________________________________________________________________________________________________
 
+| UNIT | VIN suffix R166599 | Freightliner | Fleet ref FLT-185 |
+| **8199** | Plate AP61797 | yard relay / Memphis TN | Quarter: 2025 Q3 |
+_____________________________________________________________________________________________________
 
-# IFTA Mileage: All trucks - 2025 - Q 4
-### 7/1/2025 - 9/30/2025
+Mileage jurisdictions for this unit are listed below. The unit number is inherited by every row on this page.
 
-## Vehicle: 3122
+| JURISDICTION AND SOURCE NOTE | ACCEPTED / IDENTIFIED MILES | EXCEPTION / UNIDENTIFIED MILES | REPORTED JURISDICTION TOTAL |
+| :--- | :---: | :---: | :---: |
+| **Arizona** <br> telematics accepted; odometer tie-out reviewed | 1,019.8 | 0.0 | 1,019.8 |
+| **Arkansas** <br> route exception cleared by mileage desk | 4,828.2 | 0.0 | 4,828.2 |
+| **California** <br> telematics accepted; odometer tie-out reviewed | 4,689.5 | 297.2 | 4,986.7 |
+| **Connecticut** <br> E-ZPass and fuel stop support reviewed | 4,283.0 | 0.0 | 4,283.0 |
+| **Delaware** <br> telematics accepted; odometer tie-out reviewed | 5,686.8 | 0.0 | 5,686.8 |
+| **Florida** <br> E-ZPass and fuel stop support reviewed | 1,192.9 | 0.0 | 1,192.9 |
+| **Georgia** <br> E-ZPass and fuel stop support reviewed | 5,113.6 | 0.0 | 5,113.6 |
+| **Idaho** <br> manual correction retained in quarter workpaper | 98.3 | 130.6 | 228.9 |
+| **Illinois** <br> manual correction retained in quarter workpaper | 3,260.3 | 0.0 | 3,260.3 |
+| **Indiana** <br> cross-border segment verified from GPS batch | 1,842.5 | 0.0 | 1,842.5 |
+| **Iowa** <br> telematics accepted; odometer tie-out reviewed | 4,466.6 | 0.0 | 4,466.6 |
+| **Kansas** <br> route exception cleared by mileage desk | 1,669.9 | 0.0 | 1,669.9 |
 
-| # | State | Identified Miles | Unidentified Miles | Total |
-|---|---|---|---|---|
-| 1 | Alabama | 46.2 | 0.0 | 46.2 |
-| 2 | Arizona | 1984.6 | 0.0 | 1984.6 |
-| 3 | Arkansas | 905.9 | 0.0 | 905.9 |
-| 4 | California | 221.2 | 280.6 | 501.8 |
-| 5 | Connecticut | 34.7 | 0.0 | 34.7 |
-| 6 | Delaware | 49.8 | 139.2 | 189.0 |
-| 7 | Florida | 902.6 | 0.0 | 902.6 |
-| 8 | Georgia | 2647.7 | 0.0 | 2647.7 |
-| 9 | Idaho | 3878.0 | 0.0 | 3878.0 |
-| 10 | Indiana | 896.9 | 0.0 | 896.9 |
-| 11 | Iowa | 941.7 | 0.0 | 941.7 |
-| 12 | Kansas | 45.8 | 0.0 | 45.8 |
-| 13 | Kentucky | 3082.0 | 0.0 | 3082.0 |
-| 14 | Louisiana | 3221.4 | 0.0 | 3221.4 |
-| 15 | Maryland | 497.2 | 0.0 | 497.2 |
-| 16 | Michigan | 136.7 | 0.0 | 136.7 |
-| 17 | Minnesota | 178.8 | 0.0 | 178.8 |
-| 18 | Missouri | 5712.0 | 0.0 | 5712.0 |
-| 19 | New Jersey | 4564.1 | 14.0 | 4578.1 |
-| 20 | New Mexico | 6066.9 | 0.0 | 6066.9 |
-| 21 | North Carolina | 1271.9 | 0.0 | 1271.9 |
-| 22 | North Dakota | 2593.3 | 248.6 | 2841.9 |
-| 23 | Ohio | 1040.7 | 93.5 | 1134.2 |
-| 24 | Oregon | 6679.9 | 0.0 | 6679.9 |
-| 25 | South Carolina | 6197.9 | 259.8 | 6457.7 |
-| 26 | Tennessee | 76.3 | 0.0 | 76.3 |
-| 27 | Texas | 2788.2 | 0.0 | 2788.2 |
-| 28 | Washington | 2772.9 | 0.0 | 2772.9 |
-| 29 | West Virginia | 3787.8 | 0.0 | 3787.8 |
+_____________________________________________________________________________________________________
 
-Page 3 of 124
+**Unit quarter tie-out**
+Accepted: 106,454.5
+Exception: 1,257.2
+Reported: 107,711.7
+
+**Fuel-card reconciliation sample**
+| JUR | GALLONS | AMOUNT | NOTE |
+| :--- | :--- | :--- | :--- |
+| KY | 109.7 | $445.60 | fuel only - not a mileage jurisdiction row |
+| IN | 86.0 | $365.94 | fuel only - not a mileage jurisdiction row |
+| PA | 204.6 | $917.43 | fuel only - not a mileage jurisdiction row |
+
+Page 3
 
 # Page 4
 
-Generated: 11/02/2025 09:14 AM CST
+Hearthline Freight Cooperative                                                      VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                                                     Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
+_________________________________________________________________________________________________________________
 
-                                                     Prairie Route Carriers Inc
-                                                        1804 WESTFIELD CROSSING
-                                                           PLAINFIELD, IL 60544
-                                                                   312-555-0104
+| UNIT              | VIN suffix R166599 | Freightliner             | Fleet ref FLT-185 |
+| **8199**          | Plate AP61797      | yard relay / Memphis TN  | Quarter: 2025 Q3  |
+| continued         |                    |                          |                   |
+_________________________________________________________________________________________________________________
 
-# IFTA Mileage: All trucks - 2025 - Q 4
-### 7/1/2025 - 9/30/2025
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
 
-## Vehicle: 3122 continued
+| JURISDICTION AND SOURCE NOTE | ACCEPTED / IDENTIFIED MILES | EXCEPTION / UNIDENTIFIED MILES | REPORTED JURISDICTION TOTAL |
+| :--- | :---: | :---: | :---: |
+| **Louisiana** <br> cross-border segment verified from GPS batch | 3,712.1 | 0.0 | 3,712.1 |
+| **Maryland** <br> E-ZPass and fuel stop support reviewed | 1,352.6 | 0.0 | 1,352.6 |
+| **Michigan** <br> route exception cleared by mileage desk | 1,720.5 | 98.2 | 1,818.7 |
+| **Minnesota** <br> E-ZPass and fuel stop support reviewed | 4,650.8 | 366.4 | 5,017.2 |
+| **Mississippi** <br> E-ZPass and fuel stop support reviewed | 1,473.4 | 0.0 | 1,473.4 |
+| **Missouri** <br> route exception cleared by mileage desk | 5,202.3 | 0.0 | 5,202.3 |
+| **Montana** <br> route exception cleared by mileage desk | 1,478.3 | 0.0 | 1,478.3 |
+| **Nebraska** <br> telematics accepted; odometer tie-out reviewed | 4,692.1 | 0.0 | 4,692.1 |
+| **Nevada** <br> trip-sheet and dispatch legs reconciled | 3,034.3 | 0.0 | 3,034.3 |
+| **New Jersey** <br> E-ZPass and fuel stop support reviewed | 6,617.5 | 0.0 | 6,617.5 |
+| **New Mexico** <br> cross-border segment verified from GPS batch | 32.3 | 118.9 | 151.2 |
+| **North Carolina** <br> E-ZPass and fuel stop support reviewed | 648.2 | 0.0 | 648.2 |
+| **North Dakota** <br> E-ZPass and fuel stop support reviewed | 716.2 | 0.0 | 716.2 |
 
-| # | State | Identified Miles | Unidentified Miles | Total |
-| :--- | :--- | :--- | :--- | :--- |
-| 30 | Wisconsin | 5491.9 | 230.8 | 5722.7 |
-| 31 | Wyoming | 1700.4 | 0.0 | 1700.4 |
-| *Total* | | *70415.4* | *1266.5* | *71681.9* |
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-Page 4 of 124
+                                                                                                     Page 4
 
 # Page 5
 
-Generated: 11/02/2025 09:14 AM CST                                      Prairie Route Carriers Inc
-                                                                          1805 WESTFIELD CROSSING
-                                                                             PLAINFIELD, IL 60544
-                                                                                     312-555-0105
+Hearthline Freight Cooperative
+Quarterly IFTA workpaper packet
+Account HFC-742018 / Fleet mileage review
 
-                                  IFTA Mileage: All trucks - 2025 - Q 4
-                                          7/1/2025 - 9/30/2025
+VEHICLE MILEAGE SUPPORT
+Prepared 11/02/2025 09:14 CST
 
-                                              Vehicle: 418
+UNIT: 8199 continued
+VIN suffix R166599, Plate AP61797
+Freightliner, yard relay / Memphis TN
+Fleet ref FLT-185, Quarter: 2025 Q3
 
-| # | State | Identified Miles | Unidentified Miles | Total |
-|---|---|---|---|---|
-| 1 | Arizona | 4297.6 | 0.0 | 4297.6 |
-| 2 | Arkansas | 2479.0 | 0.0 | 2479.0 |
-| 3 | Colorado | 337.6 | 0.0 | 337.6 |
-| 4 | Connecticut | 124.1 | 0.0 | 124.1 |
-| 5 | Delaware | 3231.5 | 0.0 | 3231.5 |
-| 6 | Georgia | 3419.9 | 0.0 | 3419.9 |
-| 7 | Idaho | 5842.5 | 0.0 | 5842.5 |
-| 8 | Indiana | 3082.0 | 201.6 | 3283.6 |
-| 9 | Iowa | 5279.7 | 0.0 | 5279.7 |
-| 10 | Kansas | 30.4 | 0.0 | 30.4 |
-| 11 | Kentucky | 6853.4 | 0.0 | 6853.4 |
-| 12 | Louisiana | 5272.1 | 346.1 | 5618.2 |
-| 13 | Maryland | 973.2 | 0.0 | 973.2 |
-| 14 | Michigan | 6708.4 | 0.0 | 6708.4 |
-| 15 | Minnesota | 7.5 | 0.0 | 7.5 |
-| 16 | Mississippi | 5769.5 | 0.0 | 5769.5 |
-| 17 | Missouri | 2358.0 | 0.0 | 2358.0 |
-| 18 | Montana | 2376.1 | 0.0 | 2376.1 |
-| 19 | Nevada | 102.3 | 0.0 | 102.3 |
-| 20 | New Jersey | 4609.4 | 0.0 | 4609.4 |
-| 21 | New Mexico | 1291.0 | 0.0 | 1291.0 |
-| 22 | New York | 6614.1 | 0.0 | 6614.1 |
-| 23 | North Carolina | 5536.4 | 0.0 | 5536.4 |
-| 24 | Ohio | 10.4 | 0.0 | 10.4 |
-| 25 | Oregon | 4715.7 | 0.0 | 4715.7 |
-| 26 | Tennessee | 628.5 | 111.4 | 739.9 |
-| 27 | Texas | 5322.8 | 0.0 | 5322.8 |
-| 28 | Utah | 3196.1 | 0.0 | 3196.1 |
-| 29 | Virginia | 1079.3 | 0.0 | 1079.3 |
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
 
-                                                                                Page 5 of 124
+JURISDICTION AND SOURCE NOTE,ACCEPTED / IDENTIFIED MILES,EXCEPTION / UNIDENTIFIED MILES,REPORTED JURISDICTION TOTAL
+"Oklahoma
+E-ZPass and fuel stop support reviewed","1,040.2","236.7","1,276.9"
+"Oregon
+manual correction retained in quarter workpaper","4,323.5","0.0","4,323.5"
+"Pennsylvania
+E-ZPass and fuel stop support reviewed","101.1","0.0","101.1"
+"South Carolina
+manual correction retained in quarter workpaper","106.9","0.0","106.9"
+"Tennessee
+manual correction retained in quarter workpaper","2,995.2","0.0","2,995.2"
+"Texas
+trip-sheet and dispatch legs reconciled","6,571.5","9.2","6,580.7"
+"Utah
+telematics accepted; odometer tie-out reviewed","2,429.1","0.0","2,429.1"
+"Virginia
+route exception cleared by mileage desk","102.1","0.0","102.1"
+"Washington
+cross-border segment verified from GPS batch","4,195.3","0.0","4,195.3"
+"West Virginia
+trip-sheet and dispatch legs reconciled","6,402.9","0.0","6,402.9"
+"Wisconsin
+telematics accepted; odometer tie-out reviewed","4,006.7","0.0","4,006.7"
+"Wyoming
+telematics accepted; odometer tie-out reviewed","698.0","0.0","698.0"
+
+Page 5
 
 # Page 6
 
-Generated: 11/02/2025 09:14 AM CST                                      Prairie Route Carriers Inc
-                                                                       1806 WESTFIELD CROSSING
-                                                                          PLAINFIELD, IL 60544
-                                                                                312-555-0106
+Hearthline Freight Cooperative                                       VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                                      Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
 
-                               IFTA Mileage: All trucks - 2025 - Q 4
-                                       7/1/2025 - 9/30/2025
+***
 
-                                     Vehicle: 418 continued
+| UNIT | VIN suffix L245849 | International | Fleet ref FLT-524 |
+| :--- | :--- | :--- | :--- |
+| **3122** | Plate AP77755 | dedicated / Joliet IL | Quarter: 2025 Q3 |
 
-| # | State | Identified Miles | Unidentified Miles | Total |
-| :--- | :--- | :--- | :--- | :--- |
-| 30 | Washington | 2663.0 | 0.0 | 2663.0 |
-| 31 | West Virginia | 4314.9 | 0.0 | 4314.9 |
-| | Total | 98526.4 | 659.1 | 99185.5 |
+***
 
-Page 6 of 124
+Mileage jurisdictions for this unit are listed below. The unit number is inherited by every row on this page.
+
+| JURISDICTION AND SOURCE NOTE | ACCEPTED / IDENTIFIED MILES | EXCEPTION / UNIDENTIFIED MILES | REPORTED JURISDICTION TOTAL |
+| :--- | :---: | :---: | :---: |
+| **Alabama** <br> trip-sheet and dispatch legs reconciled | 46.2 | 0.0 | 46.2 |
+| **Arizona** <br> manual correction retained in quarter workpaper | 1,984.6 | 0.0 | 1,984.6 |
+| **Arkansas** <br> manual correction retained in quarter workpaper | 905.9 | 0.0 | 905.9 |
+| **California** <br> route exception cleared by mileage desk | 221.2 | 280.6 | 501.8 |
+| **Connecticut** <br> trip-sheet and dispatch legs reconciled | 34.7 | 0.0 | 34.7 |
+| **Delaware** <br> cross-border segment verified from GPS batch | 49.8 | 139.2 | 189.0 |
+| **Florida** <br> route exception cleared by mileage desk | 902.6 | 0.0 | 902.6 |
+| **Georgia** <br> telematics accepted; odometer tie-out reviewed | 2,647.7 | 0.0 | 2,647.7 |
+| **Idaho** <br> cross-border segment verified from GPS batch | 3,878.0 | 0.0 | 3,878.0 |
+| **Indiana** <br> route exception cleared by mileage desk | 896.9 | 0.0 | 896.9 |
+| **Iowa** <br> E-ZPass and fuel stop support reviewed | 941.7 | 0.0 | 941.7 |
+| **Kansas** <br> trip-sheet and dispatch legs reconciled | 45.8 | 0.0 | 45.8 |
+
+***
+
+### Unit quarter tie-out
+Accepted: 70,415.4  
+Exception: 1,266.5  
+Reported: 71,681.9  
+
+### Fuel-card reconciliation sample
+| JUR | GALLONS | AMOUNT | NOTE |
+| :--- | :---: | :---: | :--- |
+| MO | 371.5 | $1,436.76 | fuel only - not a mileage jurisdiction row |
+| GA | 118.1 | $430.85 | fuel only - not a mileage jurisdiction row |
+| IL | 381.6 | $1,499.39 | fuel only - not a mileage jurisdiction row |
+
+***
+Page 6
 
 # Page 7
 
-Generated: 11/02/2025 09:14 AM CST
+Hearthline Freight Cooperative                          VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                         Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
 
-Prairie Route Carriers Inc
-1807 WESTFIELD CROSSING
-PLAINFIELD, IL 60544
-312-555-0107
+---
 
-# IFTA Mileage: All trucks - 2025 - Q 4
-### 7/1/2025 - 9/30/2025
+| UNIT | VIN suffix L245849 | International | Fleet ref FLT-524 |
+| :--- | :--- | :--- | :--- |
+| **3122** <br> continued | Plate AP77755 | dedicated / Joliet IL | Quarter: 2025 Q3 |
 
-## Vehicle: 1976
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
 
-| # | State | Identified Miles | Unidentified Miles | Total |
-|---|---|---|---|---|
-| 1 | Alabama | 2769.8 | 0.0 | 2769.8 |
-| 2 | Arkansas | 3189.2 | 117.7 | 3306.9 |
-| 3 | California | 4498.9 | 0.0 | 4498.9 |
-| 4 | Colorado | 97.7 | 0.0 | 97.7 |
-| 5 | Connecticut | 3553.2 | 255.8 | 3809.0 |
-| 6 | Delaware | 3508.8 | 38.1 | 3546.9 |
-| 7 | Florida | 3698.9 | 0.0 | 3698.9 |
-| 8 | Georgia | 5884.0 | 0.0 | 5884.0 |
-| 9 | Idaho | 3670.4 | 0.0 | 3670.4 |
-| 10 | Illinois | 5748.3 | 28.5 | 5776.8 |
-| 11 | Indiana | 882.6 | 0.0 | 882.6 |
-| 12 | Iowa | 4100.1 | 0.0 | 4100.1 |
-| 13 | Kentucky | 1380.5 | 0.0 | 1380.5 |
-| 14 | Louisiana | 6693.2 | 112.8 | 6806.0 |
-| 15 | Maryland | 3386.0 | 0.0 | 3386.0 |
-| 16 | Michigan | 699.0 | 0.0 | 699.0 |
-| 17 | Minnesota | 7094.1 | 0.0 | 7094.1 |
-| 18 | Missouri | 36.8 | 0.0 | 36.8 |
-| 19 | Montana | 497.7 | 0.0 | 497.7 |
-| 20 | Nebraska | 1000.8 | 71.2 | 1072.0 |
-| 21 | Nevada | 2813.1 | 0.0 | 2813.1 |
-| 22 | New Jersey | 3898.8 | 0.0 | 3898.8 |
-| 23 | New Mexico | 7008.8 | 0.0 | 7008.8 |
-| 24 | New York | 4393.5 | 373.5 | 4767.0 |
-| 25 | North Carolina | 129.5 | 0.0 | 129.5 |
-| 26 | North Dakota | 17.8 | 0.0 | 17.8 |
-| 27 | Ohio | 2981.0 | 0.0 | 2981.0 |
-| 28 | Oklahoma | 1053.4 | 0.0 | 1053.4 |
-| 29 | Oregon | 66.3 | 0.0 | 66.3 |
+| JURISDICTION AND SOURCE NOTE | ACCEPTED / IDENTIFIED MILES | EXCEPTION / UNIDENTIFIED MILES | REPORTED JURISDICTION TOTAL |
+| :--- | :---: | :---: | :---: |
+| **Kentucky** <br> route exception cleared by mileage desk | 3,082.0 | 0.0 | 3,082.0 |
+| **Louisiana** <br> telematics accepted; odometer tie-out reviewed | 3,221.4 | 0.0 | 3,221.4 |
+| **Maryland** <br> E-ZPass and fuel stop support reviewed | 497.2 | 0.0 | 497.2 |
+| **Michigan** <br> manual correction retained in quarter workpaper | 136.7 | 0.0 | 136.7 |
+| **Minnesota** <br> route exception cleared by mileage desk | 178.8 | 0.0 | 178.8 |
+| **Missouri** <br> route exception cleared by mileage desk | 5,712.0 | 0.0 | 5,712.0 |
+| **New Jersey** <br> telematics accepted; odometer tie-out reviewed | 4,564.1 | 14.0 | 4,578.1 |
+| **New Mexico** <br> cross-border segment verified from GPS batch | 6,066.9 | 0.0 | 6,066.9 |
+| **North Carolina** <br> telematics accepted; odometer tie-out reviewed | 1,271.9 | 0.0 | 1,271.9 |
+| **North Dakota** <br> trip-sheet and dispatch legs reconciled | 2,593.3 | 248.6 | 2,841.9 |
 
-Page 7 of 124
+<p align="right">Page 7</p>
 
 # Page 8
 
-Generated: 11/02/2025 09:14 AM CST                                      Prairie Route Carriers Inc
-                                                                           1808 WESTFIELD CROSSING
-                                                                              PLAINFIELD, IL 60544
-                                                                                      312-555-0108
+Hearthline Freight Cooperative                                            VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                                           Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
 
-# IFTA Mileage: All trucks - 2025 - Q 4
-### 7/1/2025 - 9/30/2025
+____________________________________________________________________________________________________
+UNIT: 3122 (continued) | VIN suffix L245849 | Plate AP77755 | International dedicated / Joliet IL | Fleet ref FLT-524 | Quarter: 2025 Q3
+____________________________________________________________________________________________________
 
-## Vehicle: 1976 continued
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
 
-| # | State | Identified Miles | Unidentified Miles | Total |
-|---|---|---|---|---|
-| 30 | Pennsylvania | 5795.8 | 0.0 | 5795.8 |
-| 31 | South Carolina | 6286.2 | 0.0 | 6286.2 |
-| 32 | Tennessee | 3935.1 | 339.1 | 4274.2 |
-| 33 | Utah | 5869.5 | 0.0 | 5869.5 |
-| 34 | Washington | 43.8 | 0.0 | 43.8 |
-| 35 | West Virginia | 3663.7 | 0.0 | 3663.7 |
-| 36 | Wisconsin | 416.5 | 0.0 | 416.5 |
-| 37 | Wyoming | 6266.4 | 202.9 | 6469.3 |
-| | *Total* | *117029.2* | *1539.6* | *118568.8* |
+"JURISDICTION AND SOURCE NOTE","ACCEPTED / IDENTIFIED MILES","EXCEPTION / UNIDENTIFIED MILES","REPORTED JURISDICTION TOTAL"
+"Ohio
+route exception cleared by mileage desk","1,040.7","93.5","1,134.2"
+"Oregon
+manual correction retained in quarter workpaper","6,679.9","0.0","6,679.9"
+"South Carolina
+E-ZPass and fuel stop support reviewed","6,197.9","259.8","6,457.7"
+"Tennessee
+telematics accepted; odometer tie-out reviewed","76.3","0.0","76.3"
+"Texas
+E-ZPass and fuel stop support reviewed","2,788.2","0.0","2,788.2"
+"Washington
+manual correction retained in quarter workpaper","2,772.9","0.0","2,772.9"
+"West Virginia
+trip-sheet and dispatch legs reconciled","3,787.8","0.0","3,787.8"
+"Wisconsin
+trip-sheet and dispatch legs reconciled","5,491.9","230.8","5,722.7"
+"Wyoming
+trip-sheet and dispatch legs reconciled","1,700.4","0.0","1,700.4"
 
-<br>
-<p align="right">Page 8 of 124</p>
+Page 8
 
 # Page 9
 
-Generated: 11/02/2025 09:14 AM CST
+Hearthline Freight Cooperative                                          VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                                         Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
+____________________________________________________________________________________________________
 
-Prairie Route Carriers Inc
-1809 WESTFIELD CROSSING
-PLAINFIELD, IL 60544
-312-555-0109
+| UNIT | VIN suffix M346721 | Mack | Fleet ref FLT-293 |
+| :--- | :--- | :--- | :--- |
+| **418** | Plate AP84904 | yard relay / Gary IN | Quarter: 2025 Q3 |
+____________________________________________________________________________________________________
 
-# IFTA Mileage: All trucks - 2025 - Q 4
-### 7/1/2025 - 9/30/2025
+Mileage jurisdictions for this unit are listed below. The unit number is inherited by every row on this page.
 
-## Vehicle: 1119
+| JURISDICTION AND SOURCE NOTE | ACCEPTED / IDENTIFIED MILES | EXCEPTION / UNIDENTIFIED MILES | REPORTED JURISDICTION TOTAL |
+| :--- | ---: | ---: | ---: |
+| **Arizona** <br> route exception cleared by mileage desk | 4,297.6 | 0.0 | 4,297.6 |
+| **Arkansas** <br> manual correction retained in quarter workpaper | 2,479.0 | 0.0 | 2,479.0 |
+| **Colorado** <br> trip-sheet and dispatch legs reconciled | 337.6 | 0.0 | 337.6 |
+| **Connecticut** <br> E-ZPass and fuel stop support reviewed | 124.1 | 0.0 | 124.1 |
+| **Delaware** <br> route exception cleared by mileage desk | 3,231.5 | 0.0 | 3,231.5 |
+| **Georgia** <br> manual correction retained in quarter workpaper | 3,419.9 | 0.0 | 3,419.9 |
+| **Idaho** <br> telematics accepted; odometer tie-out reviewed | 5,842.5 | 0.0 | 5,842.5 |
+| **Indiana** <br> route exception cleared by mileage desk | 3,082.0 | 201.6 | 3,283.6 |
+| **Iowa** <br> manual correction retained in quarter workpaper | 5,279.7 | 0.0 | 5,279.7 |
+| **Kansas** <br> route exception cleared by mileage desk | 30.4 | 0.0 | 30.4 |
+| **Kentucky** <br> cross-border segment verified from GPS batch | 6,853.4 | 0.0 | 6,853.4 |
+| **Louisiana** <br> trip-sheet and dispatch legs reconciled | 5,272.1 | 346.1 | 5,618.2 |
 
-#,State,Identified Miles,Unidentified Miles,Total
-1,Alabama,330.8,0.0,330.8
-2,Arizona,1160.4,0.0,1160.4
-3,Arkansas,4044.0,359.3,4403.3
-4,California,5987.9,0.0,5987.9
-5,Colorado,4325.2,300.4,4625.6
-6,Connecticut,4613.4,0.0,4613.4
-7,Delaware,5828.9,0.0,5828.9
-8,Georgia,4145.5,0.0,4145.5
-9,Illinois,5930.2,0.0,5930.2
-10,Kentucky,241.2,339.2,580.4
-11,Michigan,55.4,0.0,55.4
-12,Minnesota,5696.6,0.0,5696.6
-13,Mississippi,3033.6,0.0,3033.6
-14,Missouri,3644.1,95.0,3739.1
-15,Montana,57.8,0.0,57.8
-16,Nevada,4607.3,0.0,4607.3
-17,New Jersey,5968.7,0.0,5968.7
-18,New Mexico,973.8,59.2,1033.0
-19,New York,4137.1,156.8,4293.9
-20,North Carolina,6220.4,0.0,6220.4
-21,North Dakota,3123.6,0.0,3123.6
-22,Ohio,675.2,0.0,675.2
-23,Oklahoma,6323.3,0.0,6323.3
-24,Oregon,6648.1,185.5,6833.6
-25,Pennsylvania,276.8,313.6,590.4
-26,South Carolina,5991.4,94.9,6086.3
-27,Texas,3895.3,0.0,3895.3
-28,Utah,2182.0,0.0,2182.0
-29,Virginia,2863.9,0.0,2863.9
+<br>
 
-Page 9 of 124
+| Unit quarter tie-out |
+| :--- |
+| Accepted: 98,526.4 |
+| Exception: 659.1 |
+| Reported: 99,185.5 |
+
+<br>
+
+| Fuel-card reconciliation sample | | | |
+| :--- | ---: | ---: | :--- |
+| **JUR** | **GALLONS** | **AMOUNT** | **NOTE** |
+| IL | 203.4 | $960.34 | fuel only - not a mileage jurisdiction row |
+| WI | 316.7 | $1,308.07 | fuel only - not a mileage jurisdiction row |
+| OH | 153.1 | $594.52 | fuel only - not a mileage jurisdiction row |
+
+<br>
+Page 9
 
 # Page 10
 
-Generated: 11/02/2025 09:14 AM CST
+Hearthline Freight Cooperative                          VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                        Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
 
-Prairie Route Carriers Inc
-1810 WESTFIELD CROSSING
-PLAINFIELD, IL 60544
-312-555-0110
+-----------------------------------------------------------------------------------------
+UNIT: 418 (continued)
+VIN suffix M346721 / Plate AP84904
+Mack yard relay / Gary IN
+Fleet ref FLT-293 / Quarter: 2025 Q3
+-----------------------------------------------------------------------------------------
 
-# IFTA Mileage: All trucks - 2025 - Q 4
-### 7/1/2025 - 9/30/2025
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
 
-## Vehicle: 1119 continued
+"JURISDICTION AND SOURCE NOTE","ACCEPTED / IDENTIFIED MILES","EXCEPTION / UNIDENTIFIED MILES","REPORTED JURISDICTION TOTAL"
+"Maryland
+route exception cleared by mileage desk",973.2,0.0,973.2
+"Michigan
+E-ZPass and fuel stop support reviewed","6,708.4",0.0,"6,708.4"
+"Minnesota
+manual correction retained in quarter workpaper",7.5,0.0,7.5
+"Mississippi
+cross-border segment verified from GPS batch","5,769.5",0.0,"5,769.5"
+"Missouri
+cross-border segment verified from GPS batch","2,358.0",0.0,"2,358.0"
+"Montana
+E-ZPass and fuel stop support reviewed","2,376.1",0.0,"2,376.1"
+"Nevada
+cross-border segment verified from GPS batch",102.3,0.0,102.3
+"New Jersey
+telematics accepted; odometer tie-out reviewed","4,609.4",0.0,"4,609.4"
+"New Mexico
+E-ZPass and fuel stop support reviewed","1,291.0",0.0,"1,291.0"
+"New York
+telematics accepted; odometer tie-out reviewed","6,614.1",0.0,"6,614.1"
 
-| # | State | Identified Miles | Unidentified Miles | Total |
-|---|---|---|---|---|
-| 30 | Washington | 2591.3 | 0.0 | 2591.3 |
-| 31 | West Virginia | 1.8 | 321.9 | 323.7 |
-| 32 | Wisconsin | 3575.5 | 0.0 | 3575.5 |
-| 33 | Wyoming | 1120.1 | 131.8 | 1251.9 |
-| | Total | 110270.6 | 2357.6 | 112628.2 |
-
-Page 10 of 124
+Page 10
 
 # Page 11
 
-Generated: 11/02/2025 09:14 AM CST                                      Prairie Route Carriers Inc
-                                                                       1811 WESTFIELD CROSSING
-                                                                          PLAINFIELD, IL 60544
-                                                                                  312-555-0111
+Hearthline Freight Cooperative                       VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                     Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
 
-# IFTA Mileage: All trucks - 2025 - Q 4
-### 7/1/2025 - 9/30/2025
+---------------------------------------------------------------------------------------------------------
+| UNIT                     | VIN suffix M346721    | Mack                     | Fleet ref FLT-293       |
+| **418**                  | Plate AP84904         | yard relay / Gary IN     | Quarter: 2025 Q3        |
+| continued                |                       |                          |                         |
+---------------------------------------------------------------------------------------------------------
 
-## Vehicle: 466
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
 
-| # | State | Identified Miles | Unidentified Miles | Total |
-|---|:---|---:|---:|---:|
-| 1 | Alabama | 2345.0 | 121.3 | 2466.3 |
-| 2 | Arizona | 1381.3 | 0.0 | 1381.3 |
-| 3 | Arkansas | 3972.5 | 0.0 | 3972.5 |
-| 4 | Colorado | 519.5 | 0.0 | 519.5 |
-| 5 | Connecticut | 6459.6 | 0.0 | 6459.6 |
-| 6 | Delaware | 36.1 | 0.0 | 36.1 |
-| 7 | Florida | 62.8 | 0.0 | 62.8 |
-| 8 | Georgia | 300.1 | 0.0 | 300.1 |
-| 9 | Idaho | 4722.9 | 0.0 | 4722.9 |
-| 10 | Illinois | 5544.9 | 0.0 | 5544.9 |
-| 11 | Indiana | 74.3 | 0.0 | 74.3 |
-| 12 | Iowa | 5772.4 | 0.0 | 5772.4 |
-| 13 | Kansas | 841.3 | 0.0 | 841.3 |
-| 14 | Kentucky | 2698.2 | 0.0 | 2698.2 |
-| 15 | Louisiana | 45.5 | 0.0 | 45.5 |
-| 16 | Maryland | 3134.7 | 0.0 | 3134.7 |
-| 17 | Michigan | 3506.7 | 282.3 | 3789.0 |
-| 18 | Minnesota | 2793.2 | 0.0 | 2793.2 |
-| 19 | Mississippi | 2872.5 | 0.0 | 2872.5 |
-| 20 | Missouri | 2267.0 | 306.3 | 2573.3 |
-| 21 | Montana | 5635.8 | 0.0 | 5635.8 |
-| 22 | Nebraska | 2352.2 | 0.0 | 2352.2 |
-| 23 | New Jersey | 6893.4 | 223.3 | 7116.7 |
-| 24 | North Carolina | 1987.4 | 0.0 | 1987.4 |
-| 25 | North Dakota | 95.0 | 0.0 | 95.0 |
-| 26 | Ohio | 2415.7 | 0.0 | 2415.7 |
-| 27 | Oklahoma | 6869.0 | 0.0 | 6869.0 |
-| 28 | Oregon | 3692.6 | 0.0 | 3692.6 |
-| 29 | Pennsylvania | 552.7 | 0.0 | 552.7 |
+| JURISDICTION AND SOURCE NOTE | ACCEPTED / IDENTIFIED MILES | EXCEPTION / UNIDENTIFIED MILES | REPORTED JURISDICTION TOTAL |
+| :--- | :---: | :---: | :---: |
+| **North Carolina**<br>trip-sheet and dispatch legs reconciled | 5,536.4 | 0.0 | 5,536.4 |
+| **Ohio**<br>E-ZPass and fuel stop support reviewed | 10.4 | 0.0 | 10.4 |
+| **Oregon**<br>telematics accepted; odometer tie-out reviewed | 4,715.7 | 0.0 | 4,715.7 |
+| **Tennessee**<br>telematics accepted; odometer tie-out reviewed | 628.5 | 111.4 | 739.9 |
+| **Texas**<br>E-ZPass and fuel stop support reviewed | 5,322.8 | 0.0 | 5,322.8 |
+| **Utah**<br>cross-border segment verified from GPS batch | 3,196.1 | 0.0 | 3,196.1 |
+| **Virginia**<br>manual correction retained in quarter workpaper | 1,079.3 | 0.0 | 1,079.3 |
+| **Washington**<br>cross-border segment verified from GPS batch | 2,663.0 | 0.0 | 2,663.0 |
+| **West Virginia**<br>route exception cleared by mileage desk | 4,314.9 | 0.0 | 4,314.9 |
 
-                                                                                Page 11 of 124
+<br>
+<br>
+
+Page 11
 
 # Page 12
 
-Generated: 11/02/2025 09:14 AM CST
+Hearthline Freight Cooperative                                               VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                                              Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
 
-Prairie Route Carriers Inc
-1812 WESTFIELD CROSSING
-PLAINFIELD, IL 60544
-312-555-0112
+***
 
-# IFTA Mileage: All trucks - 2025 - Q 4
-### 7/1/2025 - 9/30/2025
+| UNIT | VIN suffix L217317 <br> Plate AP41736 | International <br> yard relay / Toledo OH | Fleet ref FLT-496 <br> Quarter: 2025 Q3 |
+| :--- | :--- | :--- | :--- |
+| **1976** | | | |
 
-## Vehicle: 466 continued
+***
 
-| # | State | Identified Miles | Unidentified Miles | Total |
-|---|---|---|---|---|
-| 30 | South Carolina | 5979.8 | 0.0 | 5979.8 |
-| 31 | Tennessee | 5437.1 | 274.1 | 5711.2 |
-| 32 | Texas | 6475.4 | 0.0 | 6475.4 |
-| 33 | Virginia | 5587.7 | 0.0 | 5587.7 |
-| 34 | Washington | 2351.8 | 0.0 | 2351.8 |
-| 35 | West Virginia | 2586.6 | 216.1 | 2802.7 |
-| 36 | Wisconsin | 6537.5 | 0.0 | 6537.5 |
-| 37 | Wyoming | 768.0 | 0.0 | 768.0 |
-| | **Total** | **115568.2** | **1423.4** | **116991.6** |
+Mileage jurisdictions for this unit are listed below. The unit number is inherited by every row on this page.
 
-Page 12 of 124
+| JURISDICTION AND SOURCE NOTE | ACCEPTED / IDENTIFIED MILES | EXCEPTION / UNIDENTIFIED MILES | REPORTED JURISDICTION TOTAL |
+| :--- | :---: | :---: | :---: |
+| **Alabama** <br> trip-sheet and dispatch legs reconciled | 2,769.8 | 0.0 | 2,769.8 |
+| **Arkansas** <br> E-ZPass and fuel stop support reviewed | 3,189.2 | 117.7 | 3,306.9 |
+| **California** <br> telematics accepted; odometer tie-out reviewed | 4,498.9 | 0.0 | 4,498.9 |
+| **Colorado** <br> route exception cleared by mileage desk | 97.7 | 0.0 | 97.7 |
+| **Connecticut** <br> cross-border segment verified from GPS batch | 3,553.2 | 255.8 | 3,809.0 |
+| **Delaware** <br> telematics accepted; odometer tie-out reviewed | 3,508.8 | 38.1 | 3,546.9 |
+| **Florida** <br> manual correction retained in quarter workpaper | 3,698.9 | 0.0 | 3,698.9 |
+| **Georgia** <br> telematics accepted; odometer tie-out reviewed | 5,884.0 | 0.0 | 5,884.0 |
+| **Idaho** <br> trip-sheet and dispatch legs reconciled | 3,670.4 | 0.0 | 3,670.4 |
+| **Illinois** <br> trip-sheet and dispatch legs reconciled | 5,748.3 | 28.5 | 5,776.8 |
+| **Indiana** <br> trip-sheet and dispatch legs reconciled | 882.6 | 0.0 | 882.6 |
+| **Iowa** <br> manual correction retained in quarter workpaper | 4,100.1 | 0.0 | 4,100.1 |
+
+***
+
+### Unit quarter tie-out
+Accepted: 117,029.2  
+Exception: 1,539.6  
+Reported: 118,568.8  
+
+### Fuel-card reconciliation sample
+| JUR | GALLONS | AMOUNT | NOTE |
+| :--- | :---: | :---: | :--- |
+| MO | 381.7 | $1,659.62 | fuel only - not a mileage jurisdiction row |
+| GA | 322.3 | $1,366.09 | fuel only - not a mileage jurisdiction row |
+| PA | 361.0 | $1,497.84 | fuel only - not a mileage jurisdiction row |
+
+<br>
+
+Page 12
 
 # Page 13
 
-Generated: 11/02/2025 09:14 AM CST
+Hearthline Freight Cooperative                                            VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                                          Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
+______________________________________________________________________________________________________
 
-Prairie Route Carriers Inc
-1813 WESTFIELD CROSSING
-PLAINFIELD, IL 60544
-312-555-0113
+| UNIT <br><br> **1976** <br> continued | VIN suffix L217317 <br> Plate AP41736 | International <br> yard relay / Toledo OH | Fleet ref FLT-496 <br> Quarter: 2025 Q3 |
+| :--- | :--- | :--- | :--- |
 
-# IFTA Mileage: All trucks - 2025 - Q 4
-### 7/1/2025 - 9/30/2025
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
 
-## Vehicle: 817
+| JURISDICTION AND SOURCE NOTE | ACCEPTED / IDENTIFIED MILES | EXCEPTION / UNIDENTIFIED MILES | REPORTED JURISDICTION TOTAL |
+| :--- | :---: | :---: | :---: |
+| **Kentucky** <br> telematics accepted; odometer tie-out reviewed | 1,380.5 | 0.0 | 1,380.5 |
+| **Louisiana** <br> route exception cleared by mileage desk | 6,693.2 | 112.8 | 6,806.0 |
+| **Maryland** <br> cross-border segment verified from GPS batch | 3,386.0 | 0.0 | 3,386.0 |
+| **Michigan** <br> route exception cleared by mileage desk | 699.0 | 0.0 | 699.0 |
+| **Minnesota** <br> route exception cleared by mileage desk | 7,094.1 | 0.0 | 7,094.1 |
+| **Missouri** <br> E-ZPass and fuel stop support reviewed | 36.8 | 0.0 | 36.8 |
+| **Montana** <br> trip-sheet and dispatch legs reconciled | 497.7 | 0.0 | 497.7 |
+| **Nebraska** <br> cross-border segment verified from GPS batch | 1,000.8 | 71.2 | 1,072.0 |
+| **Nevada** <br> cross-border segment verified from GPS batch | 2,813.1 | 0.0 | 2,813.1 |
+| **New Jersey** <br> telematics accepted; odometer tie-out reviewed | 3,898.8 | 0.0 | 3,898.8 |
+| **New Mexico** <br> manual correction retained in quarter workpaper | 7,008.8 | 0.0 | 7,008.8 |
+| **New York** <br> E-ZPass and fuel stop support reviewed | 4,393.5 | 373.5 | 4,767.0 |
+| **North Carolina** <br> manual correction retained in quarter workpaper | 129.5 | 0.0 | 129.5 |
 
-| # | State | Identified Miles | Unidentified Miles | Total |
-|---|---|---|---|---|
-| 1 | Alabama | 5571.8 | 0.0 | 5571.8 |
-| 2 | Arizona | 7084.3 | 0.0 | 7084.3 |
-| 3 | Arkansas | 2429.4 | 140.0 | 2569.4 |
-| 4 | California | 3461.6 | 0.0 | 3461.6 |
-| 5 | Colorado | 23.8 | 0.0 | 23.8 |
-| 6 | Connecticut | 56.0 | 0.0 | 56.0 |
-| 7 | Delaware | 1493.2 | 49.9 | 1543.1 |
-| 8 | Florida | 5583.5 | 336.1 | 5919.6 |
-| 9 | Georgia | 1672.3 | 0.0 | 1672.3 |
-| 10 | Idaho | 5557.3 | 0.0 | 5557.3 |
-| 11 | Illinois | 1702.9 | 200.8 | 1903.7 |
-| 12 | Iowa | 6362.2 | 113.8 | 6476.0 |
-| 13 | Kansas | 4780.3 | 0.0 | 4780.3 |
-| 14 | Kentucky | 518.9 | 307.9 | 826.8 |
-| 15 | Louisiana | 311.5 | 0.0 | 311.5 |
-| 16 | Maryland | 1246.7 | 0.0 | 1246.7 |
-| 17 | Michigan | 2926.6 | 0.0 | 2926.6 |
-| 18 | Minnesota | 1053.7 | 0.0 | 1053.7 |
-| 19 | Mississippi | 6079.0 | 0.0 | 6079.0 |
-| 20 | Missouri | 58.3 | 0.0 | 58.3 |
-| 21 | Nebraska | 2124.1 | 0.0 | 2124.1 |
-| 22 | Nevada | 4433.8 | 0.0 | 4433.8 |
-| 23 | New Jersey | 2675.3 | 0.0 | 2675.3 |
-| 24 | New Mexico | 4100.0 | 0.0 | 4100.0 |
-| 25 | New York | 2525.0 | 0.0 | 2525.0 |
-| 26 | North Carolina | 5720.2 | 0.0 | 5720.2 |
-| 27 | North Dakota | 5817.4 | 0.0 | 5817.4 |
-| 28 | Ohio | 464.9 | 0.0 | 464.9 |
-| 29 | Oklahoma | 18.5 | 0.0 | 18.5 |
-
-Page 13 of 124
+<br>
+<p align="right">Page 13</p>
 
 # Page 14
 
-Generated: 11/02/2025 09:14 AM CST
+Hearthline Freight Cooperative
+Quarterly IFTA workpaper packet
+Account HFC-742018 / Fleet mileage review
 
-                                                     Prairie Route Carriers Inc
-                                                        1814 WESTFIELD CROSSING
-                                                           PLAINFIELD, IL 60544
-                                                                   312-555-0114
+VEHICLE MILEAGE SUPPORT
+Prepared 11/02/2025 09:14 CST
 
+UNIT: 1976 (continued)
+VIN suffix L217317 Plate AP41736
+International yard relay / Toledo OH
+Fleet ref FLT-496 Quarter: 2025 Q3
 
-                      IFTA Mileage: All trucks - 2025 - Q 4
-                              7/1/2025 - 9/30/2025
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
 
-                           Vehicle: 817 continued
+"JURISDICTION AND SOURCE NOTE","ACCEPTED / IDENTIFIED MILES","EXCEPTION / UNIDENTIFIED MILES","REPORTED JURISDICTION TOTAL"
+"North Dakota
+telematics accepted; odometer tie-out reviewed","17.8","0.0","17.8"
+"Ohio
+trip-sheet and dispatch legs reconciled","2,981.0","0.0","2,981.0"
+"Oklahoma
+cross-border segment verified from GPS batch","1,053.4","0.0","1,053.4"
+"Oregon
+trip-sheet and dispatch legs reconciled","66.3","0.0","66.3"
+"Pennsylvania
+cross-border segment verified from GPS batch","5,795.8","0.0","5,795.8"
+"South Carolina
+route exception cleared by mileage desk","6,286.2","0.0","6,286.2"
+"Tennessee
+manual correction retained in quarter workpaper","3,935.1","339.1","4,274.2"
+"Utah
+trip-sheet and dispatch legs reconciled","5,869.5","0.0","5,869.5"
+"Washington
+telematics accepted; odometer tie-out reviewed","43.8","0.0","43.8"
+"West Virginia
+telematics accepted; odometer tie-out reviewed","3,663.7","0.0","3,663.7"
+"Wisconsin
+trip-sheet and dispatch legs reconciled","416.5","0.0","416.5"
+"Wyoming
+trip-sheet and dispatch legs reconciled","6,266.4","202.9","6,469.3"
 
-
-| # | State | Identified Miles | Unidentified Miles | Total |
-| :--- | :--- | :--- | :--- | :--- |
-| 30 | Oregon | 1999.4 | 0.0 | 1999.4 |
-| 31 | South Carolina | 2744.3 | 0.0 | 2744.3 |
-| 32 | Tennessee | 709.7 | 0.0 | 709.7 |
-| 33 | Texas | 4553.8 | 0.0 | 4553.8 |
-| 34 | Utah | 2565.1 | 185.6 | 2750.7 |
-| 35 | Virginia | 4102.4 | 113.4 | 4215.8 |
-| 36 | Washington | 11.0 | 66.4 | 77.4 |
-| 37 | West Virginia | 4856.8 | 0.0 | 4856.8 |
-| 38 | Wisconsin | 2883.4 | 0.0 | 2883.4 |
-| 39 | Wyoming | 2472.8 | 0.0 | 2472.8 |
-| | Total | 112751.2 | 1513.9 | 114265.1 |
-
-
-                                                                   Page 14 of 124
+Page 14
 
 # Page 15
 
-Generated: 11/02/2025 09:14 AM CST                     Prairie Route Carriers Inc
-                                                       1815 WESTFIELD CROSSING
-                                                          PLAINFIELD, IL 60544
-                                                                  312-555-0115
+Hearthline Freight Cooperative                                          VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                                         Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
+____________________________________________________________________________________________________
 
-                     IFTA Mileage: All trucks - 2025 - Q 4
-                              7/1/2025 - 9/30/2025
+| UNIT | VIN suffix W952209 | Peterbilt | Fleet ref FLT-297 |
+| **1119** | Plate AP71478 | intermodal / Toledo OH | Quarter: 2025 Q3 |
+____________________________________________________________________________________________________
 
-                                 Vehicle: 8931
+Mileage jurisdictions for this unit are listed below. The unit number is inherited by every row on this page.
 
-| # | State | Identified Miles | Unidentified Miles | Total |
-|---|---|---|---|---|
-| 1 | Alabama | 323.4 | 0.0 | 323.4 |
-| 2 | Arizona | 1794.1 | 379.2 | 2173.3 |
-| 3 | Arkansas | 1758.2 | 0.0 | 1758.2 |
-| 4 | California | 177.9 | 0.0 | 177.9 |
-| 5 | Colorado | 5980.3 | 0.0 | 5980.3 |
-| 6 | Florida | 6869.3 | 0.0 | 6869.3 |
-| 7 | Idaho | 5003.7 | 0.0 | 5003.7 |
-| 8 | Illinois | 172.4 | 0.0 | 172.4 |
-| 9 | Indiana | 4213.3 | 0.0 | 4213.3 |
-| 10 | Iowa | 31.3 | 0.0 | 31.3 |
-| 11 | Kansas | 3435.1 | 102.5 | 3537.6 |
-| 12 | Kentucky | 7.1 | 0.0 | 7.1 |
-| 13 | Louisiana | 4121.0 | 0.0 | 4121.0 |
-| 14 | Maryland | 4731.3 | 0.0 | 4731.3 |
-| 15 | Michigan | 4694.2 | 287.5 | 4981.7 |
-| 16 | Minnesota | 1411.5 | 0.0 | 1411.5 |
-| 17 | Mississippi | 3216.2 | 0.0 | 3216.2 |
-| 18 | Missouri | 3521.9 | 0.0 | 3521.9 |
-| 19 | Montana | 69.3 | 0.0 | 69.3 |
-| 20 | Nebraska | 1382.8 | 0.0 | 1382.8 |
-| 21 | Nevada | 9.9 | 0.0 | 9.9 |
-| 22 | New Mexico | 5122.3 | 0.0 | 5122.3 |
-| 23 | New York | 1938.9 | 0.0 | 1938.9 |
-| 24 | North Carolina | 4918.7 | 0.0 | 4918.7 |
-| 25 | North Dakota | 5196.7 | 48.3 | 5245.0 |
-| 26 | Ohio | 5934.8 | 0.0 | 5934.8 |
-| 27 | Oklahoma | 5703.8 | 0.0 | 5703.8 |
-| 28 | Oregon | 46.4 | 0.0 | 46.4 |
-| 29 | Pennsylvania | 1695.3 | 0.0 | 1695.3 |
+| JURISDICTION AND SOURCE NOTE | ACCEPTED / IDENTIFIED MILES | EXCEPTION / UNIDENTIFIED MILES | REPORTED JURISDICTION TOTAL |
+| :--- | ---: | ---: | ---: |
+| **Alabama** <br> route exception cleared by mileage desk | 330.8 | 0.0 | 330.8 |
+| **Arizona** <br> route exception cleared by mileage desk | 1,160.4 | 0.0 | 1,160.4 |
+| **Arkansas** <br> E-ZPass and fuel stop support reviewed | 4,044.0 | 359.3 | 4,403.3 |
+| **California** <br> trip-sheet and dispatch legs reconciled | 5,987.9 | 0.0 | 5,987.9 |
+| **Colorado** <br> trip-sheet and dispatch legs reconciled | 4,325.2 | 300.4 | 4,625.6 |
+| **Connecticut** <br> route exception cleared by mileage desk | 4,613.4 | 0.0 | 4,613.4 |
+| **Delaware** <br> route exception cleared by mileage desk | 5,828.9 | 0.0 | 5,828.9 |
+| **Georgia** <br> manual correction retained in quarter workpaper | 4,145.5 | 0.0 | 4,145.5 |
+| **Illinois** <br> E-ZPass and fuel stop support reviewed | 5,930.2 | 0.0 | 5,930.2 |
+| **Kentucky** <br> manual correction retained in quarter workpaper | 241.2 | 339.2 | 580.4 |
+| **Michigan** <br> E-ZPass and fuel stop support reviewed | 55.4 | 0.0 | 55.4 |
+| **Minnesota** <br> cross-border segment verified from GPS batch | 5,696.6 | 0.0 | 5,696.6 |
 
-                                                               Page 15 of 124
+***
+
+### Unit quarter tie-out
+Accepted: 110,270.6
+Exception: 2,357.6
+Reported: 112,628.2
+
+***
+
+### Fuel-card reconciliation sample
+| JUR | GALLONS | AMOUNT | NOTE |
+| :--- | ---: | ---: | :--- |
+| PA | 95.6 | $388.88 | fuel only - not a mileage jurisdiction row |
+| IL | 128.9 | $551.33 | fuel only - not a mileage jurisdiction row |
+| TX | 168.8 | $612.46 | fuel only - not a mileage jurisdiction row |
+
+<br>
+<div align="right">Page 15</div>
 
 # Page 16
 
-Generated: 11/02/2025 09:14 AM CST
+Hearthline Freight Cooperative                                           VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                                         Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
 
-Prairie Route Carriers Inc
-1816 WESTFIELD CROSSING
-PLAINFIELD, IL 60544
-312-555-0116
+_______________________________________________________________________________________________________
 
-# IFTA Mileage: All trucks - 2025 - Q 4
-### 7/1/2025 - 9/30/2025
+UNIT                     VIN suffix W952209       Peterbilt                Fleet ref FLT-297
+1119                     Plate AP71478            intermodal / Toledo OH   Quarter: 2025 Q3
+continued
+_______________________________________________________________________________________________________
 
-## Vehicle: 8931 continued
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
 
-#,State,Identified Miles,Unidentified Miles,Total
-30,South Carolina,6454.5,0.0,6454.5
-31,Tennessee,5515.3,0.0,5515.3
-32,Texas,695.1,0.0,695.1
-33,Utah,2082.0,273.1,2355.1
-34,Virginia,2643.9,0.0,2643.9
-35,Washington,3432.0,0.0,3432.0
-36,West Virginia,89.1,0.0,89.1
-37,Wisconsin,3971.1,0.0,3971.1
-38,Wyoming,2006.0,0.0,2006.0
-,Total,110370.1,1090.6,111460.7
+| JURISDICTION AND SOURCE NOTE | ACCEPTED / IDENTIFIED MILES | EXCEPTION / UNIDENTIFIED MILES | REPORTED JURISDICTION TOTAL |
+| :--- | :---: | :---: | :---: |
+| **Mississippi**<br>route exception cleared by mileage desk | 3,033.6 | 0.0 | 3,033.6 |
+| **Missouri**<br>manual correction retained in quarter workpaper | 3,644.1 | 95.0 | 3,739.1 |
+| **Montana**<br>manual correction retained in quarter workpaper | 57.8 | 0.0 | 57.8 |
+| **Nevada**<br>E-ZPass and fuel stop support reviewed | 4,607.3 | 0.0 | 4,607.3 |
+| **New Jersey**<br>cross-border segment verified from GPS batch | 5,968.7 | 0.0 | 5,968.7 |
+| **New Mexico**<br>telematics accepted; odometer tie-out reviewed | 973.8 | 59.2 | 1,033.0 |
+| **New York**<br>cross-border segment verified from GPS batch | 4,137.1 | 156.8 | 4,293.9 |
+| **North Carolina**<br>cross-border segment verified from GPS batch | 6,220.4 | 0.0 | 6,220.4 |
+| **North Dakota**<br>route exception cleared by mileage desk | 3,123.6 | 0.0 | 3,123.6 |
+| **Ohio**<br>telematics accepted; odometer tie-out reviewed | 675.2 | 0.0 | 675.2 |
+| **Oklahoma**<br>E-ZPass and fuel stop support reviewed | 6,323.3 | 0.0 | 6,323.3 |
 
-Page 16 of 124
+<br>
+
+Page 16
 
 # Page 17
 
-Generated: 11/02/2025 09:14 AM CST                                      Prairie Route Carriers Inc
-                                                                       1817 WESTFIELD CROSSING
-                                                                          PLAINFIELD, IL 60544
-                                                                                  312-555-0117
+Hearthline Freight Cooperative
+Quarterly IFTA workpaper packet
+Account HFC-742018 / Fleet mileage review
 
-                                IFTA Mileage: All trucks - 2025 - Q 4
-                                         7/1/2025 - 9/30/2025
+VEHICLE MILEAGE SUPPORT
+Prepared 11/02/2025 09:14 CST
 
-                                             Vehicle: 604
+---
 
-| # | State | Identified Miles | Unidentified Miles | Total |
-|---|---|---|---|---|
-| 1 | Alabama | 751.1 | 0.0 | 751.1 |
-| 2 | Arizona | 2113.4 | 0.0 | 2113.4 |
-| 3 | Arkansas | 4790.5 | 42.0 | 4832.5 |
-| 4 | California | 2083.8 | 0.0 | 2083.8 |
-| 5 | Colorado | 5251.5 | 0.0 | 5251.5 |
-| 6 | Connecticut | 77.6 | 210.4 | 288.0 |
-| 7 | Delaware | 613.6 | 0.0 | 613.6 |
-| 8 | Florida | 945.6 | 0.0 | 945.6 |
-| 9 | Georgia | 1931.1 | 0.0 | 1931.1 |
-| 10 | Idaho | 3306.0 | 0.0 | 3306.0 |
-| 11 | Illinois | 3.1 | 0.0 | 3.1 |
-| 12 | Indiana | 98.2 | 0.0 | 98.2 |
-| 13 | Iowa | 2516.4 | 0.0 | 2516.4 |
-| 14 | Kansas | 7095.5 | 0.0 | 7095.5 |
-| 15 | Kentucky | 359.8 | 0.0 | 359.8 |
-| 16 | Louisiana | 1116.7 | 0.0 | 1116.7 |
-| 17 | Michigan | 6971.5 | 0.0 | 6971.5 |
-| 18 | Minnesota | 54.6 | 0.0 | 54.6 |
-| 19 | Mississippi | 4373.0 | 0.0 | 4373.0 |
-| 20 | Montana | 21.9 | 0.0 | 21.9 |
-| 21 | Nebraska | 6248.3 | 0.0 | 6248.3 |
-| 22 | Nevada | 1429.4 | 0.0 | 1429.4 |
-| 23 | New Jersey | 5439.0 | 0.0 | 5439.0 |
-| 24 | New Mexico | 5083.3 | 0.0 | 5083.3 |
-| 25 | New York | 6772.6 | 0.0 | 6772.6 |
-| 26 | North Carolina | 1155.3 | 0.0 | 1155.3 |
-| 27 | North Dakota | 3875.7 | 0.0 | 3875.7 |
-| 28 | Ohio | 6247.8 | 0.0 | 6247.8 |
-| 29 | Oklahoma | 2032.5 | 0.0 | 2032.5 |
+| UNIT | VIN suffix W952209 | Peterbilt | Fleet ref FLT-297 |
+| :--- | :--- | :--- | :--- |
+| **1119**<br>continued | Plate AP71478 | intermodal / Toledo OH | Quarter: 2025 Q3 |
 
-                                                                                  Page 17 of 124
+---
+
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
+
+| JURISDICTION AND SOURCE NOTE | ACCEPTED / IDENTIFIED MILES | EXCEPTION / UNIDENTIFIED MILES | REPORTED JURISDICTION TOTAL |
+| :--- | :---: | :---: | :---: |
+| **Oregon**<br>E-ZPass and fuel stop support reviewed | 6,648.1 | 185.5 | 6,833.6 |
+| **Pennsylvania**<br>manual correction retained in quarter workpaper | 276.8 | 313.6 | 590.4 |
+| **South Carolina**<br>manual correction retained in quarter workpaper | 5,991.4 | 94.9 | 6,086.3 |
+| **Texas**<br>cross-border segment verified from GPS batch | 3,895.3 | 0.0 | 3,895.3 |
+| **Utah**<br>E-ZPass and fuel stop support reviewed | 2,182.0 | 0.0 | 2,182.0 |
+| **Virginia**<br>manual correction retained in quarter workpaper | 2,863.9 | 0.0 | 2,863.9 |
+| **Washington**<br>telematics accepted; odometer tie-out reviewed | 2,591.3 | 0.0 | 2,591.3 |
+| **West Virginia**<br>route exception cleared by mileage desk | 1.8 | 321.9 | 323.7 |
+| **Wisconsin**<br>E-ZPass and fuel stop support reviewed | 3,575.5 | 0.0 | 3,575.5 |
+| **Wyoming**<br>manual correction retained in quarter workpaper | 1,120.1 | 131.8 | 1,251.9 |
+
+<br>
+
+Page 17
 
 # Page 18
 
-#,State,Identified Miles,Unidentified Miles,Total
-30,Oregon,284.3,163.2,447.5
-31,Pennsylvania,6755.3,0.0,6755.3
-32,Tennessee,4053.8,0.0,4053.8
-33,Texas,6891.5,97.7,6989.2
-34,Utah,6796.8,0.0,6796.8
-35,Virginia,5946.3,0.0,5946.3
-36,Washington,492.9,0.0,492.9
-37,West Virginia,4480.1,0.0,4480.1
-38,Wisconsin,406.6,0.0,406.6
-39,Wyoming,45.7,220.0,265.7
-,Total,118912.1,733.3,119645.4
+Hearthline Freight Cooperative
+Quarterly IFTA workpaper packet
+Account HFC-742018 / Fleet mileage review
+
+VEHICLE MILEAGE SUPPORT
+Prepared 11/02/2025 09:14 CST
+
+UNIT,VIN suffix,Plate,Vehicle details,Fleet ref,Quarter
+466,T872771,AP14914,Kenworth intermodal / Memphis TN,FLT-655,2025 Q3
+
+Mileage jurisdictions for this unit are listed below. The unit number is inherited by every row on this page.
+
+JURISDICTION,SOURCE NOTE,ACCEPTED / IDENTIFIED MILES,EXCEPTION / UNIDENTIFIED MILES,REPORTED JURISDICTION TOTAL
+Alabama,cross-border segment verified from GPS batch,"2,345.0",121.3,"2,466.3"
+Arizona,cross-border segment verified from GPS batch,"1,381.3",0.0,"1,381.3"
+Arkansas,manual correction retained in quarter workpaper,"3,972.5",0.0,"3,972.5"
+Colorado,route exception cleared by mileage desk,519.5,0.0,519.5
+Connecticut,E-ZPass and fuel stop support reviewed,"6,459.6",0.0,"6,459.6"
+Delaware,route exception cleared by mileage desk,36.1,0.0,36.1
+Florida,E-ZPass and fuel stop support reviewed,62.8,0.0,62.8
+Georgia,E-ZPass and fuel stop support reviewed,300.1,0.0,300.1
+Idaho,manual correction retained in quarter workpaper,"4,722.9",0.0,"4,722.9"
+Illinois,cross-border segment verified from GPS batch,"5,544.9",0.0,"5,544.9"
+Indiana,route exception cleared by mileage desk,74.3,0.0,74.3
+Iowa,"telematics accepted; odometer tie-out reviewed","5,772.4",0.0,"5,772.4"
+
+Unit quarter tie-out,Value
+Accepted,"115,568.2"
+Exception,"1,423.4"
+Reported,"116,991.6"
+
+Fuel-card reconciliation sample
+JUR,GALLONS,AMOUNT,NOTE
+MO,156.0,$662.38,fuel only - not a mileage jurisdiction row
+MO,264.7,"$1,194.66",fuel only - not a mileage jurisdiction row
+PA,169.3,$662.97,fuel only - not a mileage jurisdiction row
+
+Page 18
 
 # Page 19
 
-Generated: 11/02/2025 09:14 AM CST                                       Prairie Route Carriers Inc
-                                                                            1819 WESTFIELD CROSSING
-                                                                               PLAINFIELD, IL 60544
-                                                                                       312-555-0119
+Hearthline Freight Cooperative                                            VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                                            Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
+________________________________________________________________________________________________________
 
-                              IFTA Mileage: All trucks - 2025 - Q 4
-                                      7/1/2025 - 9/30/2025
+| UNIT<br><br>**466**<br>continued | VIN suffix T872771<br>Plate AP14914 | Kenworth<br>intermodal / Memphis TN | Fleet ref FLT-655<br>Quarter: 2025 Q3 |
+| :--- | :--- | :--- | :--- |
 
-                                          Vehicle: 933
+________________________________________________________________________________________________________
 
-| # | State | Identified Miles | Unidentified Miles | Total |
-|---|---|---|---|---|
-| 1 | Alabama | 2458.6 | 0.0 | 2458.6 |
-| 2 | Arizona | 5430.4 | 160.6 | 5591.0 |
-| 3 | Arkansas | 2215.0 | 0.0 | 2215.0 |
-| 4 | California | 4300.5 | 0.0 | 4300.5 |
-| 5 | Colorado | 5109.9 | 360.2 | 5470.1 |
-| 6 | Connecticut | 3589.6 | 0.0 | 3589.6 |
-| 7 | Delaware | 1679.4 | 0.0 | 1679.4 |
-| 8 | Florida | 1150.3 | 309.8 | 1460.1 |
-| 9 | Georgia | 2080.3 | 0.0 | 2080.3 |
-| 10 | Idaho | 2848.1 | 0.0 | 2848.1 |
-| 11 | Illinois | 4290.8 | 0.0 | 4290.8 |
-| 12 | Indiana | 963.2 | 205.7 | 1168.9 |
-| 13 | Iowa | 833.5 | 0.0 | 833.5 |
-| 14 | Kansas | 6832.4 | 0.0 | 6832.4 |
-| 15 | Kentucky | 265.4 | 0.0 | 265.4 |
-| 16 | Louisiana | 3241.4 | 0.0 | 3241.4 |
-| 17 | Maryland | 1057.9 | 370.0 | 1427.9 |
-| 18 | Michigan | 4065.7 | 0.0 | 4065.7 |
-| 19 | Minnesota | 1407.0 | 0.0 | 1407.0 |
-| 20 | Mississippi | 114.2 | 15.5 | 129.7 |
-| 21 | Missouri | 3582.5 | 0.0 | 3582.5 |
-| 22 | Montana | 4553.8 | 0.0 | 4553.8 |
-| 23 | Nebraska | 19.5 | 0.0 | 19.5 |
-| 24 | Nevada | 6240.9 | 0.0 | 6240.9 |
-| 25 | New Jersey | 2229.6 | 0.0 | 2229.6 |
-| 26 | New Mexico | 2885.3 | 0.0 | 2885.3 |
-| 27 | New York | 1853.0 | 0.0 | 1853.0 |
-| 28 | North Carolina | 3817.8 | 297.2 | 4115.0 |
-| 29 | Oklahoma | 560.1 | 0.0 | 560.1 |
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
 
-                                                                                Page 19 of 124
+| JURISDICTION AND SOURCE NOTE | ACCEPTED /<br>IDENTIFIED MILES | EXCEPTION /<br>UNIDENTIFIED MILES | REPORTED<br>JURISDICTION TOTAL |
+| :--- | :---: | :---: | :---: |
+| **Kansas**<br>telematics accepted; odometer tie-out reviewed | 841.3 | 0.0 | 841.3 |
+| **Kentucky**<br>route exception cleared by mileage desk | 2,698.2 | 0.0 | 2,698.2 |
+| **Louisiana**<br>cross-border segment verified from GPS batch | 45.5 | 0.0 | 45.5 |
+| **Maryland**<br>route exception cleared by mileage desk | 3,134.7 | 0.0 | 3,134.7 |
+| **Michigan**<br>route exception cleared by mileage desk | 3,506.7 | 282.3 | 3,789.0 |
+| **Minnesota**<br>E-ZPass and fuel stop support reviewed | 2,793.2 | 0.0 | 2,793.2 |
+| **Mississippi**<br>manual correction retained in quarter workpaper | 2,872.5 | 0.0 | 2,872.5 |
+| **Missouri**<br>telematics accepted; odometer tie-out reviewed | 2,267.0 | 306.3 | 2,573.3 |
+| **Montana**<br>telematics accepted; odometer tie-out reviewed | 5,635.8 | 0.0 | 5,635.8 |
+| **Nebraska**<br>E-ZPass and fuel stop support reviewed | 2,352.2 | 0.0 | 2,352.2 |
+| **New Jersey**<br>E-ZPass and fuel stop support reviewed | 6,893.4 | 223.3 | 7,116.7 |
+| **North Carolina**<br>manual correction retained in quarter workpaper | 1,987.4 | 0.0 | 1,987.4 |
+| **North Dakota**<br>cross-border segment verified from GPS batch | 95.0 | 0.0 | 95.0 |
+
+<br><br>
+Page 19
 
 # Page 20
 
-Generated: 11/02/2025 09:14 AM CST
+Hearthline Freight Cooperative                                VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                               Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
+____________________________________________________________________________________________________
 
-                                                               Prairie Route Carriers Inc
-                                                              1820 WESTFIELD CROSSING
-                                                                 PLAINFIELD, IL 60544
-                                                                         312-555-0120
+UNIT                      VIN suffix T872771        Kenworth                  Fleet ref FLT-655
+466                       Plate AP14914             intermodal / Memphis TN   Quarter: 2025 Q3
+continued
+____________________________________________________________________________________________________
 
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
 
-                     IFTA Mileage: All trucks - 2025 - Q 4
-                             7/1/2025 - 9/30/2025
+"JURISDICTION AND SOURCE NOTE","ACCEPTED / IDENTIFIED MILES","EXCEPTION / UNIDENTIFIED MILES","REPORTED JURISDICTION TOTAL"
+"Ohio\nroute exception cleared by mileage desk","2,415.7","0.0","2,415.7"
+"Oklahoma\nmanual correction retained in quarter workpaper","6,869.0","0.0","6,869.0"
+"Oregon\ntelematics accepted; odometer tie-out reviewed","3,692.6","0.0","3,692.6"
+"Pennsylvania\ncross-border segment verified from GPS batch","552.7","0.0","552.7"
+"South Carolina\nroute exception cleared by mileage desk","5,979.8","0.0","5,979.8"
+"Tennessee\nroute exception cleared by mileage desk","5,437.1","274.1","5,711.2"
+"Texas\nroute exception cleared by mileage desk","6,475.4","0.0","6,475.4"
+"Virginia\nroute exception cleared by mileage desk","5,587.7","0.0","5,587.7"
+"Washington\nmanual correction retained in quarter workpaper","2,351.8","0.0","2,351.8"
+"West Virginia\ntrip-sheet and dispatch legs reconciled","2,586.6","216.1","2,802.7"
+"Wisconsin\ntelematics accepted; odometer tie-out reviewed","6,537.5","0.0","6,537.5"
+"Wyoming\nroute exception cleared by mileage desk","768.0","0.0","768.0"
 
-                          Vehicle: 933 continued
-
-| # | State | Identified Miles | Unidentified Miles | Total |
-| :--- | :--- | :--- | :--- | :--- |
-| 30 | Oregon | 3158.9 | 264.4 | 3423.3 |
-| 31 | Tennessee | 5407.6 | 0.0 | 5407.6 |
-| 32 | Texas | 6808.8 | 0.0 | 6808.8 |
-| 33 | Utah | 1541.4 | 0.0 | 1541.4 |
-| 34 | Virginia | 279.9 | 0.0 | 279.9 |
-| 35 | Washington | 2872.2 | 0.0 | 2872.2 |
-| 36 | Wyoming | 7053.7 | 0.0 | 7053.7 |
-| | *Total* | *106798.6* | *1983.4* | *108782.0* |
-
-                                                                        Page 20 of 124
+                                                                                    Page 20
 
 # Page 21
 
-Generated: 11/02/2025 09:14 AM CST                                       Prairie Route Carriers Inc
-                                                                        1821 WESTFIELD CROSSING
-                                                                          PLAINFIELD, IL 60544
-                                                                                  312-555-0121
+Hearthline Freight Cooperative                                           VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                                          Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
+____________________________________________________________________________________________________
 
-                               IFTA Mileage: All trucks - 2025 - Q 4
-                                        7/1/2025 - 9/30/2025
+====================================================================================================
+| UNIT                     | VIN suffix M255060       | Freightliner             | Fleet ref FLT-633   |
+| **817**                  | Plate AP47048            | dedicated / Toledo OH    | Quarter: 2025 Q3    |
+====================================================================================================
 
-                                            Vehicle: 2000
+Mileage jurisdictions for this unit are listed below. The unit number is inherited by every row on this page.
 
-| # | State | Identified Miles | Unidentified Miles | Total |
-|---|---|---|---|---|
-| 1 | Alabama | 49.0 | 0.0 | 49.0 |
-| 2 | Arkansas | 5875.3 | 0.0 | 5875.3 |
-| 3 | California | 66.9 | 0.0 | 66.9 |
-| 4 | Colorado | 1944.5 | 0.0 | 1944.5 |
-| 5 | Connecticut | 4900.1 | 0.0 | 4900.1 |
-| 6 | Florida | 2200.2 | 93.8 | 2294.0 |
-| 7 | Georgia | 3059.2 | 283.5 | 3342.7 |
-| 8 | Idaho | 21.5 | 0.0 | 21.5 |
-| 9 | Indiana | 1199.4 | 157.7 | 1357.1 |
-| 10 | Iowa | 7008.2 | 0.0 | 7008.2 |
-| 11 | Kansas | 5650.7 | 0.0 | 5650.7 |
-| 12 | Louisiana | 5389.8 | 0.0 | 5389.8 |
-| 13 | Maryland | 1436.9 | 0.0 | 1436.9 |
-| 14 | Michigan | 4845.1 | 0.0 | 4845.1 |
-| 15 | Minnesota | 1075.5 | 0.0 | 1075.5 |
-| 16 | Mississippi | 2674.3 | 361.2 | 3035.5 |
-| 17 | Missouri | 177.4 | 0.0 | 177.4 |
-| 18 | Montana | 3589.0 | 368.0 | 3957.0 |
-| 19 | Nevada | 4776.0 | 0.0 | 4776.0 |
-| 20 | New Jersey | 5376.6 | 0.0 | 5376.6 |
-| 21 | New Mexico | 5361.2 | 0.0 | 5361.2 |
-| 22 | New York | 2692.3 | 0.0 | 2692.3 |
-| 23 | North Dakota | 3113.9 | 0.0 | 3113.9 |
-| 24 | Oklahoma | 2845.8 | 0.0 | 2845.8 |
-| 25 | South Carolina | 4999.2 | 8.8 | 5008.0 |
-| 26 | Tennessee | 1532.3 | 0.0 | 1532.3 |
-| 27 | Utah | 3809.6 | 0.0 | 3809.6 |
-| 28 | Virginia | 23.5 | 0.0 | 23.5 |
-| 29 | Washington | 4078.0 | 0.0 | 4078.0 |
+| JURISDICTION AND SOURCE NOTE | ACCEPTED / IDENTIFIED MILES | EXCEPTION / UNIDENTIFIED MILES | REPORTED JURISDICTION TOTAL |
+| :--- | :---: | :---: | :---: |
+| **Alabama** <br> E-ZPass and fuel stop support reviewed | 5,571.8 | 0.0 | 5,571.8 |
+| **Arizona** <br> E-ZPass and fuel stop support reviewed | 7,084.3 | 0.0 | 7,084.3 |
+| **Arkansas** <br> trip-sheet and dispatch legs reconciled | 2,429.4 | 140.0 | 2,569.4 |
+| **California** <br> trip-sheet and dispatch legs reconciled | 3,461.6 | 0.0 | 3,461.6 |
+| **Colorado** <br> telematics accepted; odometer tie-out reviewed | 23.8 | 0.0 | 23.8 |
+| **Connecticut** <br> trip-sheet and dispatch legs reconciled | 56.0 | 0.0 | 56.0 |
+| **Delaware** <br> cross-border segment verified from GPS batch | 1,493.2 | 49.9 | 1,543.1 |
+| **Florida** <br> cross-border segment verified from GPS batch | 5,583.5 | 336.1 | 5,919.6 |
+| **Georgia** <br> cross-border segment verified from GPS batch | 1,672.3 | 0.0 | 1,672.3 |
+| **Idaho** <br> trip-sheet and dispatch legs reconciled | 5,557.3 | 0.0 | 5,557.3 |
+| **Illinois** <br> telematics accepted; odometer tie-out reviewed | 1,702.9 | 200.8 | 1,903.7 |
+| **Iowa** <br> manual correction retained in quarter workpaper | 6,362.2 | 113.8 | 6,476.0 |
 
-                                                                                  Page 21 of 124
+
++----------------------------------------+
+| **Unit quarter tie-out**               |
+| Accepted: 112,751.2                    |
+| Exception: 1,513.9                     |
+| Reported: 114,265.1                    |
++----------------------------------------+
+
+**Fuel-card reconciliation sample**
+
+| JUR | GALLONS | AMOUNT | NOTE |
+| :--- | :---: | :---: | :--- |
+| PA | 158.6 | $733.46 | fuel only - not a mileage jurisdiction row |
+| IL | 323.7 | $1,503.38 | fuel only - not a mileage jurisdiction row |
+| OH | 238.5 | $1,006.43 | fuel only - not a mileage jurisdiction row |
+
+                                                                                             Page 21
 
 # Page 22
 
-Generated: 11/02/2025 09:14 AM CST
+Hearthline Freight Cooperative                                              VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                                             Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
+________________________________________________________________________________________________________
 
-Prairie Route Carriers Inc
-1822 WESTFIELD CROSSING
-PLAINFIELD, IL 60544
-312-555-0122
+| UNIT | VIN suffix M255060 | Freightliner | Fleet ref FLT-663 |
+| **817** | Plate AP47048 | dedicated / Toledo OH | Quarter: 2025 Q3 |
+| continued | | | |
+________________________________________________________________________________________________________
 
-IFTA Mileage: All trucks - 2025 - Q 4
-7/1/2025 - 9/30/2025
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
 
-Vehicle: 2000 continued
+| JURISDICTION AND SOURCE NOTE | ACCEPTED / IDENTIFIED MILES | EXCEPTION / UNIDENTIFIED MILES | REPORTED JURISDICTION TOTAL |
+| :--- | ---: | ---: | ---: |
+| **Kansas**<br>telematics accepted; odometer tie-out reviewed | 4,780.3 | 0.0 | 4,780.3 |
+| **Kentucky**<br>cross-border segment verified from GPS batch | 518.9 | 307.9 | 826.8 |
+| **Louisiana**<br>cross-border segment verified from GPS batch | 311.5 | 0.0 | 311.5 |
+| **Maryland**<br>manual correction retained in quarter workpaper | 1,246.7 | 0.0 | 1,246.7 |
+| **Michigan**<br>cross-border segment verified from GPS batch | 2,926.6 | 0.0 | 2,926.6 |
+| **Minnesota**<br>route exception cleared by mileage desk | 1,053.7 | 0.0 | 1,053.7 |
+| **Mississippi**<br>cross-border segment verified from GPS batch | 6,079.0 | 0.0 | 6,079.0 |
+| **Missouri**<br>route exception cleared by mileage desk | 58.3 | 0.0 | 58.3 |
+| **Nebraska**<br>manual correction retained in quarter workpaper | 2,124.1 | 0.0 | 2,124.1 |
+| **Nevada**<br>E-ZPass and fuel stop support reviewed | 4,433.8 | 0.0 | 4,433.8 |
+| **New Jersey**<br>E-ZPass and fuel stop support reviewed | 2,675.3 | 0.0 | 2,675.3 |
+| **New Mexico**<br>trip-sheet and dispatch legs reconciled | 4,100.0 | 0.0 | 4,100.0 |
+| **New York**<br>manual correction retained in quarter workpaper | 2,525.0 | 0.0 | 2,525.0 |
+| **North Carolina**<br>route exception cleared by mileage desk | 5,720.2 | 0.0 | 5,720.2 |
 
-#,State,Identified Miles,Unidentified Miles,Total
-30,West Virginia,57.5,0.0,57.5
-31,Wyoming,6075.4,0.0,6075.4
-Total,,95904.3,1273.0,97177.3
-
-Page 22 of 124
+Page 22
 
 # Page 23
 
-Generated: 11/02/2025 09:14 AM CST                                       Prairie Route Carriers Inc
-                                                                        1823 WESTFIELD CROSSING
-                                                                           PLAINFIELD, IL 60544
-                                                                                   312-555-0123
+Hearthline Freight Cooperative                  VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                 Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
 
-                         IFTA Mileage: All trucks - 2025 - Q 4
-                                 7/1/2025 - 9/30/2025
+_________________________________________________________________________________
+| UNIT                  | VIN suffix M255060     | Freightliner           | Fleet ref FLT-663     |
+| **817**               | Plate AP47048          | dedicated / Toledo OH  | Quarter: 2025 Q3      |
+| continued             |                        |                        |                       |
+_________________________________________________________________________________
 
-                                     Vehicle: 459
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
 
-| # | State | Identified Miles | Unidentified Miles | Total |
-| :--- | :--- | :--- | :--- | :--- |
-| 1 | Alabama | 1513.2 | 0.0 | 1513.2 |
-| 2 | Arizona | 2140.0 | 0.0 | 2140.0 |
-| 3 | Arkansas | 1383.8 | 11.5 | 1395.3 |
-| 4 | California | 3545.5 | 0.0 | 3545.5 |
-| 5 | Colorado | 4355.1 | 0.0 | 4355.1 |
-| 6 | Connecticut | 6332.7 | 0.0 | 6332.7 |
-| 7 | Georgia | 6710.9 | 0.0 | 6710.9 |
-| 8 | Illinois | 5706.9 | 305.8 | 6012.7 |
-| 9 | Indiana | 6905.2 | 108.6 | 7013.8 |
-| 10 | Iowa | 2183.2 | 0.0 | 2183.2 |
-| 11 | Kansas | 1351.0 | 0.0 | 1351.0 |
-| 12 | Kentucky | 495.7 | 0.0 | 495.7 |
-| 13 | Louisiana | 5891.0 | 0.0 | 5891.0 |
-| 14 | Maryland | 2592.3 | 0.0 | 2592.3 |
-| 15 | Minnesota | 6785.3 | 0.0 | 6785.3 |
-| 16 | Mississippi | 636.8 | 0.0 | 636.8 |
-| 17 | Missouri | 5652.8 | 0.0 | 5652.8 |
-| 18 | Nebraska | 6561.6 | 333.8 | 6895.4 |
-| 19 | Nevada | 6796.3 | 0.0 | 6796.3 |
-| 20 | New Jersey | 256.8 | 0.0 | 256.8 |
-| 21 | New Mexico | 3467.6 | 44.2 | 3511.8 |
-| 22 | New York | 82.5 | 0.0 | 82.5 |
-| 23 | North Carolina | 6743.9 | 95.3 | 6839.2 |
-| 24 | North Dakota | 3239.8 | 0.0 | 3239.8 |
-| 25 | Ohio | 1337.1 | 0.0 | 1337.1 |
-| 26 | Oklahoma | 729.2 | 0.0 | 729.2 |
-| 27 | Pennsylvania | 81.3 | 0.0 | 81.3 |
-| 28 | South Carolina | 177.7 | 0.0 | 177.7 |
-| 29 | Tennessee | 25.9 | 0.0 | 25.9 |
+| JURISDICTION AND SOURCE NOTE | ACCEPTED / IDENTIFIED MILES | EXCEPTION / UNIDENTIFIED MILES | REPORTED JURISDICTION TOTAL |
+| :--- | :---: | :---: | :---: |
+| **North Dakota**<br>manual correction retained in quarter workpaper | 5,817.4 | 0.0 | 5,817.4 |
+| **Ohio**<br>trip-sheet and dispatch legs reconciled | 464.9 | 0.0 | 464.9 |
+| **Oklahoma**<br>E-ZPass and fuel stop support reviewed | 18.5 | 0.0 | 18.5 |
+| **Oregon**<br>trip-sheet and dispatch legs reconciled | 1,999.4 | 0.0 | 1,999.4 |
+| **South Carolina**<br>cross-border segment verified from GPS batch | 2,744.3 | 0.0 | 2,744.3 |
+| **Tennessee**<br>cross-border segment verified from GPS batch | 709.7 | 0.0 | 709.7 |
+| **Texas**<br>E-ZPass and fuel stop support reviewed | 4,553.8 | 0.0 | 4,553.8 |
+| **Utah**<br>route exception cleared by mileage desk | 2,565.1 | 185.6 | 2,750.7 |
+| **Virginia**<br>E-ZPass and fuel stop support reviewed | 4,102.4 | 113.4 | 4,215.8 |
+| **Washington**<br>E-ZPass and fuel stop support reviewed | 11.0 | 66.4 | 77.4 |
+| **West Virginia**<br>E-ZPass and fuel stop support reviewed | 4,856.8 | 0.0 | 4,856.8 |
+| **Wisconsin**<br>trip-sheet and dispatch legs reconciled | 2,883.4 | 0.0 | 2,883.4 |
+| **Wyoming**<br>trip-sheet and dispatch legs reconciled | 2,472.8 | 0.0 | 2,472.8 |
 
-                                                                                Page 23 of 124
+<br>
+
+Page 23
 
 # Page 24
 
-Generated: 11/02/2025 09:14 AM CST
+Hearthline Freight Cooperative                                            VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                                          Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
 
-Prairie Route Carriers Inc
-1824 WESTFIELD CROSSING
-PLAINFIELD, IL 60544
-312-555-0124
+______________________________________________________________________________________________________
 
-# IFTA Mileage: All trucks - 2025 - Q 4
-### 7/1/2025 - 9/30/2025
+| UNIT | VIN suffix J350047<br>Plate AP58034 | Kenworth<br>intermodal / Davenport IA | Fleet ref FLT-381<br>Quarter: 2025 Q3 |
+| :--- | :--- | :--- | :--- |
+| **8931** | | | |
 
-## Vehicle: 459 continued
+______________________________________________________________________________________________________
 
-| # | State | Identified Miles | Unidentified Miles | Total |
-| :--- | :--- | :--- | :--- | :--- |
-| 30 | Texas | 762.9 | 132.5 | 895.4 |
-| 31 | Virginia | 33.4 | 131.8 | 165.2 |
-| 32 | Washington | 1486.0 | 123.7 | 1609.7 |
-| 33 | West Virginia | 2780.5 | 216.3 | 2996.8 |
-| 34 | Wisconsin | 1247.9 | 0.0 | 1247.9 |
-| 35 | Wyoming | 2978.6 | 0.0 | 2978.6 |
-| | Total | 102970.4 | 1503.5 | 104473.9 |
+Mileage jurisdictions for this unit are listed below. The unit number is inherited by every row on this page.
 
-Page 24 of 124
+| JURISDICTION AND SOURCE NOTE | ACCEPTED / IDENTIFIED MILES | EXCEPTION / UNIDENTIFIED MILES | REPORTED JURISDICTION TOTAL |
+| :--- | :---: | :---: | :---: |
+| **Alabama**<br>trip-sheet and dispatch legs reconciled | 323.4 | 0.0 | 323.4 |
+| **Arizona**<br>cross-border segment verified from GPS batch | 1,794.1 | 379.2 | 2,173.3 |
+| **Arkansas**<br>telematics accepted; odometer tie-out reviewed | 1,758.2 | 0.0 | 1,758.2 |
+| **California**<br>E-ZPass and fuel stop support reviewed | 177.9 | 0.0 | 177.9 |
+| **Colorado**<br>cross-border segment verified from GPS batch | 5,980.3 | 0.0 | 5,980.3 |
+| **Florida**<br>cross-border segment verified from GPS batch | 6,869.3 | 0.0 | 6,869.3 |
+| **Idaho**<br>manual correction retained in quarter workpaper | 5,003.7 | 0.0 | 5,003.7 |
+| **Illinois**<br>telematics accepted; odometer tie-out reviewed | 172.4 | 0.0 | 172.4 |
+| **Indiana**<br>E-ZPass and fuel stop support reviewed | 4,213.3 | 0.0 | 4,213.3 |
+| **Iowa**<br>E-ZPass and fuel stop support reviewed | 31.3 | 0.0 | 31.3 |
+| **Kansas**<br>telematics accepted; odometer tie-out reviewed | 3,435.1 | 102.5 | 3,537.6 |
+| **Kentucky**<br>route exception cleared by mileage desk | 7.1 | 0.0 | 7.1 |
+
+<br>
+
+| **Unit quarter tie-out** |
+| :--- |
+| Accepted: 110,370.1 |
+| Exception: 1,090.6 |
+| Reported: 111,460.7 |
+
+<br>
+
+| **Fuel-card reconciliation sample** | | | |
+| :--- | :---: | :---: | :--- |
+| **JUR** | **GALLONS** | **AMOUNT** | **NOTE** |
+| TX | 255.8 | $991.77 | fuel only - not a mileage jurisdiction row |
+| OH | 150.0 | $538.99 | fuel only - not a mileage jurisdiction row |
+| MO | 324.9 | $1,361.96 | fuel only - not a mileage jurisdiction row |
+
+<br>
+
+Page 24
 
 # Page 25
 
-Generated: 11/02/2025 09:14 AM CST
+Hearthline Freight Cooperative                                       VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                                     Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
+_________________________________________________________________________________________________
 
-Prairie Route Carriers Inc
-1825 WESTFIELD CROSSING
-PLAINFIELD, IL 60544
-312-555-0125
+| UNIT | VIN suffix J350047 | Kenworth | Fleet ref FLT-381 |
+| :--- | :--- | :--- | :--- |
+| **8931** | Plate AP58034 | intermodal / Davenport IA | Quarter: 2025 Q3 |
+| continued | | | |
+_________________________________________________________________________________________________
 
-# IFTA Mileage: All trucks - 2025 - Q 4
-### 7/1/2025 - 9/30/2025
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
 
-## Vehicle: 7662
+| JURISDICTION AND SOURCE NOTE | ACCEPTED / IDENTIFIED MILES | EXCEPTION / UNIDENTIFIED MILES | REPORTED JURISDICTION TOTAL |
+| :--- | :---: | :---: | :---: |
+| **Louisiana** <br> route exception cleared by mileage desk | 4,121.0 | 0.0 | 4,121.0 |
+| **Maryland** <br> manual correction retained in quarter workpaper | 4,731.3 | 0.0 | 4,731.3 |
+| **Michigan** <br> route exception cleared by mileage desk | 4,694.2 | 287.5 | 4,981.7 |
+| **Minnesota** <br> cross-border segment verified from GPS batch | 1,411.5 | 0.0 | 1,411.5 |
+| **Mississippi** <br> cross-border segment verified from GPS batch | 3,216.2 | 0.0 | 3,216.2 |
+| **Missouri** <br> telematics accepted; odometer tie-out reviewed | 3,521.9 | 0.0 | 3,521.9 |
+| **Montana** <br> telematics accepted; odometer tie-out reviewed | 69.3 | 0.0 | 69.3 |
+| **Nebraska** <br> manual correction retained in quarter workpaper | 1,382.8 | 0.0 | 1,382.8 |
+| **Nevada** <br> E-ZPass and fuel stop support reviewed | 9.9 | 0.0 | 9.9 |
+| **New Mexico** <br> E-ZPass and fuel stop support reviewed | 5,122.3 | 0.0 | 5,122.3 |
+| **New York** <br> cross-border segment verified from GPS batch | 1,938.9 | 0.0 | 1,938.9 |
+| **North Carolina** <br> telematics accepted; odometer tie-out reviewed | 4,918.7 | 0.0 | 4,918.7 |
+| **North Dakota** <br> manual correction retained in quarter workpaper | 5,196.7 | 48.3 | 5,245.0 |
 
-| # | State | Identified Miles | Unidentified Miles | Total |
-|---|---|---|---|---|
-| 1 | Alabama | 6486.9 | 0.0 | 6486.9 |
-| 2 | Arizona | 3605.2 | 44.2 | 3649.4 |
-| 3 | Arkansas | 3605.5 | 0.0 | 3605.5 |
-| 4 | California | 2915.1 | 0.0 | 2915.1 |
-| 5 | Colorado | 5471.1 | 0.0 | 5471.1 |
-| 6 | Florida | 6342.6 | 123.8 | 6466.4 |
-| 7 | Georgia | 5627.3 | 0.0 | 5627.3 |
-| 8 | Idaho | 3231.6 | 337.2 | 3568.8 |
-| 9 | Illinois | 6526.2 | 0.0 | 6526.2 |
-| 10 | Indiana | 2836.2 | 304.3 | 3140.5 |
-| 11 | Iowa | 3547.9 | 0.0 | 3547.9 |
-| 12 | Kansas | 5216.9 | 0.0 | 5216.9 |
-| 13 | Kentucky | 56.6 | 0.0 | 56.6 |
-| 14 | Louisiana | 6861.9 | 192.5 | 7054.4 |
-| 15 | Maryland | 3512.5 | 79.7 | 3592.2 |
-| 16 | Michigan | 70.6 | 0.0 | 70.6 |
-| 17 | Minnesota | 2716.8 | 149.7 | 2866.5 |
-| 18 | Mississippi | 4663.1 | 284.1 | 4947.2 |
-| 19 | Missouri | 4560.9 | 0.0 | 4560.9 |
-| 20 | Nevada | 72.3 | 290.1 | 362.4 |
-| 21 | New Jersey | 5794.4 | 0.0 | 5794.4 |
-| 22 | New York | 863.3 | 0.0 | 863.3 |
-| 23 | North Carolina | 26.9 | 0.0 | 26.9 |
-| 24 | North Dakota | 3159.9 | 0.0 | 3159.9 |
-| 25 | Ohio | 3429.0 | 92.3 | 3521.3 |
-| 26 | Oklahoma | 5228.9 | 0.0 | 5228.9 |
-| 27 | Oregon | 5795.4 | 0.0 | 5795.4 |
-| 28 | Pennsylvania | 444.7 | 0.0 | 444.7 |
-| 29 | South Carolina | 2853.8 | 0.0 | 2853.8 |
+<br>
+<br>
 
-Page 25 of 124
+Page 25
 
 # Page 26
 
-#,State,Identified Miles,Unidentified Miles,Total
-30,Texas,5401.9,321.8,5723.7
-31,Virginia,5245.6,0.0,5245.6
-32,Washington,5979.4,0.0,5979.4
-33,West Virginia,99.3,0.0,99.3
-34,Wisconsin,3734.4,0.0,3734.4
-35,Wyoming,5405.0,0.0,5405.0
-,Total,131389.1,2219.7,133608.8
+Hearthline Freight Cooperative                           VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                           Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
+____________________________________________________________________________________
+
+| UNIT | VIN suffix J350047 | Kenworth | Fleet ref FLT-381 |
+| :--- | :--- | :--- | :--- |
+| **8931**<br>continued | Plate AP58034 | intermodal / Davenport IA | Quarter: 2025 Q3 |
+
+____________________________________________________________________________________
+
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
+
+| JURISDICTION AND SOURCE NOTE | ACCEPTED / IDENTIFIED MILES | EXCEPTION / UNIDENTIFIED MILES | REPORTED JURISDICTION TOTAL |
+| :--- | :---: | :---: | :---: |
+| **Ohio**<br>E-ZPass and fuel stop support reviewed | 5,934.8 | 0.0 | 5,934.8 |
+| **Oklahoma**<br>cross-border segment verified from GPS batch | 5,703.8 | 0.0 | 5,703.8 |
+| **Oregon**<br>manual correction retained in quarter workpaper | 46.4 | 0.0 | 46.4 |
+| **Pennsylvania**<br>E-ZPass and fuel stop support reviewed | 1,695.3 | 0.0 | 1,695.3 |
+| **South Carolina**<br>manual correction retained in quarter workpaper | 6,454.5 | 0.0 | 6,454.5 |
+| **Tennessee**<br>E-ZPass and fuel stop support reviewed | 5,515.3 | 0.0 | 5,515.3 |
+| **Texas**<br>cross-border segment verified from GPS batch | 695.1 | 0.0 | 695.1 |
+| **Utah**<br>manual correction retained in quarter workpaper | 2,082.0 | 273.1 | 2,355.1 |
+| **Virginia**<br>cross-border segment verified from GPS batch | 2,643.9 | 0.0 | 2,643.9 |
+| **Washington**<br>cross-border segment verified from GPS batch | 3,432.0 | 0.0 | 3,432.0 |
+| **West Virginia**<br>route exception cleared by mileage desk | 89.1 | 0.0 | 89.1 |
+| **Wisconsin**<br>cross-border segment verified from GPS batch | 3,971.1 | 0.0 | 3,971.1 |
+| **Wyoming**<br>telematics accepted; odometer tie-out reviewed | 2,006.0 | 0.0 | 2,006.0 |
+
+<br>
+
+Page 26
 
 # Page 27
 
-Generated: 11/02/2025 09:14 AM CST, Prairie Route Carriers Inc
-,,1827 WESTFIELD CROSSING
-,,PLAINFIELD, IL 60544
-,,312-555-0127
+Hearthline Freight Cooperative                                          VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                                        Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
 
-IFTA Mileage: All trucks - 2025 - Q 4
-7/1/2025 - 9/30/2025
+----------------------------------------------------------------------------------------------------
+| UNIT     | VIN suffix H322073          | International          | Fleet ref FLT-186              |
+| 604      | Plate AP26261               | linehaul / Toledo OH   | Quarter: 2025 Q3               |
+----------------------------------------------------------------------------------------------------
 
-Vehicle: 3977
+Mileage jurisdictions for this unit are listed below. The unit number is inherited by every row on this page.
 
-#,State,Identified Miles,Unidentified Miles,Total
-1,Alabama,6405.5,0.0,6405.5
-2,Arizona,6319.2,0.0,6319.2
-3,California,1480.9,0.0,1480.9
-4,Colorado,3440.0,362.1,3802.1
-5,Connecticut,4629.9,120.0,4749.9
-6,Delaware,5205.5,2.8,5208.3
-7,Florida,200.3,75.0,275.3
-8,Georgia,3913.2,0.0,3913.2
-9,Idaho,5975.1,0.0,5975.1
-10,Illinois,6647.6,0.0,6647.6
-11,Iowa,2736.1,0.0,2736.1
-12,Kansas,2917.7,0.0,2917.7
-13,Kentucky,6809.7,0.0,6809.7
-14,Louisiana,4631.6,346.6,4978.2
-15,Maryland,5285.3,0.0,5285.3
-16,Michigan,3310.3,0.5,3310.8
-17,Minnesota,2722.8,0.0,2722.8
-18,Mississippi,7081.8,0.0,7081.8
-19,Missouri,4535.4,39.2,4574.6
-20,Montana,588.2,0.0,588.2
-21,Nebraska,6031.9,0.0,6031.9
-22,Nevada,3623.7,71.3,3695.0
-23,New Jersey,1087.3,0.0,1087.3
-24,New Mexico,6005.0,0.0,6005.0
-25,New York,2382.3,0.0,2382.3
-26,North Dakota,6715.7,0.0,6715.7
-27,Ohio,6682.2,0.0,6682.2
-28,Oregon,2317.9,0.0,2317.9
-29,Pennsylvania,1693.2,54.3,1747.5
+JURISDICTION AND SOURCE NOTE,ACCEPTED / IDENTIFIED MILES,EXCEPTION / UNIDENTIFIED MILES,REPORTED JURISDICTION TOTAL
+"Alabama
+telematics accepted; odometer tie-out reviewed",751.1,0.0,751.1
+"Arizona
+trip-sheet and dispatch legs reconciled","2,113.4",0.0,"2,113.4"
+"Arkansas
+E-ZPass and fuel stop support reviewed","4,790.5",42.0,"4,832.5"
+"California
+route exception cleared by mileage desk","2,083.8",0.0,"2,083.8"
+"Colorado
+telematics accepted; odometer tie-out reviewed","5,251.5",0.0,"5,251.5"
+"Connecticut
+route exception cleared by mileage desk",77.6,210.4,288.0
+"Delaware
+manual correction retained in quarter workpaper",613.6,0.0,613.6
+"Florida
+trip-sheet and dispatch legs reconciled",945.6,0.0,945.6
+"Georgia
+trip-sheet and dispatch legs reconciled","1,931.1",0.0,"1,931.1"
+"Idaho
+cross-border segment verified from GPS batch","3,306.0",0.0,"3,306.0"
+"Illinois
+manual correction retained in quarter workpaper",3.1,0.0,3.1
+"Indiana
+route exception cleared by mileage desk",98.2,0.0,98.2
 
-Page 27 of 124
+
+Unit quarter tie-out
+Accepted: 118,912.1
+Exception: 733.3
+Reported: 119,645.4
+
+
+Fuel-card reconciliation sample
+JUR,GALLONS,AMOUNT,NOTE
+MO,117.5,$558.47,fuel only - not a mileage jurisdiction row
+PA,273.4,"$1,035.95",fuel only - not a mileage jurisdiction row
+MO,245.4,"$1,060.89",fuel only - not a mileage jurisdiction row
+
+
+Page 27
 
 # Page 28
 
-Generated: 11/02/2025 09:14 AM CST
+Hearthline Freight Cooperative
+Quarterly IFTA workpaper packet
+Account HFC-742018 / Fleet mileage review
 
-**Prairie Route Carriers Inc**
-1828 WESTFIELD CROSSING
-PLAINFIELD, IL 60544
-312-555-0128
+VEHICLE MILEAGE SUPPORT
+Prepared 11/02/2025 09:14 CST
 
-# IFTA Mileage: All trucks - 2025 - Q 4
-### 7/1/2025 - 9/30/2025
+--------------------------------------------------------------------------------
+UNIT: 604 (continued)
+VIN suffix: H322073
+Plate: AP26261
+International linehaul / Toledo OH
+Fleet ref: FLT-186
+Quarter: 2025 Q3
+--------------------------------------------------------------------------------
 
-## Vehicle: 3977 continued
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
 
-| # | State | Identified Miles | Unidentified Miles | Total |
-|---|---|---|---|---|
-| 30 | South Carolina | 4747.2 | 0.0 | 4747.2 |
-| 31 | Tennessee | 5426.2 | 0.0 | 5426.2 |
-| 32 | Texas | 4935.8 | 0.0 | 4935.8 |
-| 33 | Utah | 6548.6 | 0.0 | 6548.6 |
-| 34 | Virginia | 4787.1 | 0.0 | 4787.1 |
-| 35 | Washington | 3817.4 | 0.0 | 3817.4 |
-| 36 | West Virginia | 1890.3 | 0.0 | 1890.3 |
-| 37 | Wyoming | 63.0 | 242.3 | 305.3 |
-|  | *Total* | *153590.9* | *1314.1* | *154905.0* |
+"JURISDICTION AND SOURCE NOTE","ACCEPTED / IDENTIFIED MILES","EXCEPTION / UNIDENTIFIED MILES","REPORTED JURISDICTION TOTAL"
+"Iowa
+E-ZPass and fuel stop support reviewed","2,516.4","0.0","2,516.4"
+"Kansas
+route exception cleared by mileage desk","7,095.5","0.0","7,095.5"
+"Kentucky
+manual correction retained in quarter workpaper","359.8","0.0","359.8"
+"Louisiana
+route exception cleared by mileage desk","1,116.7","0.0","1,116.7"
+"Michigan
+telematics accepted; odometer tie-out reviewed","6,971.5","0.0","6,971.5"
+"Minnesota
+telematics accepted; odometer tie-out reviewed","54.6","0.0","54.6"
+"Mississippi
+route exception cleared by mileage desk","4,373.0","0.0","4,373.0"
+"Montana
+cross-border segment verified from GPS batch","21.9","0.0","21.9"
+"Nebraska
+E-ZPass and fuel stop support reviewed","6,248.3","0.0","6,248.3"
+"Nevada
+E-ZPass and fuel stop support reviewed","1,429.4","0.0","1,429.4"
+"New Jersey
+cross-border segment verified from GPS batch","5,439.0","0.0","5,439.0"
+"New Mexico
+telematics accepted; odometer tie-out reviewed","5,083.3","0.0","5,083.3"
+"New York
+cross-border segment verified from GPS batch","6,772.6","0.0","6,772.6"
+"North Carolina
+manual correction retained in quarter workpaper","1,155.3","0.0","1,155.3"
 
-Page 28 of 124
+Page 28
 
 # Page 29
 
-Generated: 11/02/2025 09:14 AM CST                                       Prairie Route Carriers Inc
-                                                                           1829 WESTFIELD CROSSING
-                                                                              PLAINFIELD, IL 60544
-                                                                                      312-555-0129
+Hearthline Freight Cooperative,VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet,Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review,
 
-                         IFTA Mileage: All trucks - 2025 - Q 4
-                                 7/1/2025 - 9/30/2025
+UNIT: 604 continued,VIN suffix H322073 Plate AP26261,International linehaul / Toledo OH,Fleet ref FLT-186 Quarter: 2025 Q3
 
-                                     Vehicle: 906
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
 
-| # | State | Identified Miles | Unidentified Miles | Total |
-|---|---|---|---|---|
-| 1 | Alabama | 231.7 | 90.9 | 322.6 |
-| 2 | Arkansas | 3437.8 | 0.0 | 3437.8 |
-| 3 | California | 3995.7 | 0.0 | 3995.7 |
-| 4 | Colorado | 1712.4 | 0.0 | 1712.4 |
-| 5 | Connecticut | 1536.0 | 0.0 | 1536.0 |
-| 6 | Florida | 6450.5 | 0.0 | 6450.5 |
-| 7 | Idaho | 5532.0 | 0.0 | 5532.0 |
-| 8 | Illinois | 6973.3 | 0.0 | 6973.3 |
-| 9 | Indiana | 5839.3 | 0.0 | 5839.3 |
-| 10 | Kansas | 5018.5 | 0.0 | 5018.5 |
-| 11 | Kentucky | 5611.9 | 0.0 | 5611.9 |
-| 12 | Louisiana | 1359.8 | 0.0 | 1359.8 |
-| 13 | Maryland | 6681.5 | 19.7 | 6701.2 |
-| 14 | Michigan | 764.1 | 0.0 | 764.1 |
-| 15 | Mississippi | 6030.6 | 0.0 | 6030.6 |
-| 16 | Montana | 1538.1 | 0.0 | 1538.1 |
-| 17 | Nebraska | 5336.2 | 0.0 | 5336.2 |
-| 18 | New Jersey | 6983.6 | 186.1 | 7169.7 |
-| 19 | New Mexico | 426.1 | 0.0 | 426.1 |
-| 20 | New York | 2513.3 | 0.0 | 2513.3 |
-| 21 | North Dakota | 5335.4 | 0.0 | 5335.4 |
-| 22 | Ohio | 54.9 | 0.0 | 54.9 |
-| 23 | Oklahoma | 5952.0 | 0.0 | 5952.0 |
-| 24 | Oregon | 711.4 | 210.5 | 921.9 |
-| 25 | Pennsylvania | 3774.0 | 0.0 | 3774.0 |
-| 26 | South Carolina | 6971.5 | 0.0 | 6971.5 |
-| 27 | Texas | 7063.1 | 180.1 | 7243.2 |
-| 28 | Utah | 6622.6 | 151.6 | 6774.2 |
-| 29 | Virginia | 3446.4 | 0.0 | 3446.4 |
+"JURISDICTION AND SOURCE NOTE","ACCEPTED / IDENTIFIED MILES","EXCEPTION / UNIDENTIFIED MILES","REPORTED JURISDICTION TOTAL"
+"North Dakota
+trip-sheet and dispatch legs reconciled","3,875.7","0.0","3,875.7"
+"Ohio
+route exception cleared by mileage desk","6,247.8","0.0","6,247.8"
+"Oklahoma
+trip-sheet and dispatch legs reconciled","2,032.5","0.0","2,032.5"
+"Oregon
+E-ZPass and fuel stop support reviewed","284.3","163.2","447.5"
+"Pennsylvania
+route exception cleared by mileage desk","6,755.3","0.0","6,755.3"
+"Tennessee
+telematics accepted; odometer tie-out reviewed","4,053.8","0.0","4,053.8"
+"Texas
+manual correction retained in quarter workpaper","6,891.5","97.7","6,989.2"
+"Utah
+manual correction retained in quarter workpaper","6,796.8","0.0","6,796.8"
+"Virginia
+cross-border segment verified from GPS batch","5,946.3","0.0","5,946.3"
+"Washington
+manual correction retained in quarter workpaper","492.9","0.0","492.9"
+"West Virginia
+E-ZPass and fuel stop support reviewed","4,480.1","0.0","4,480.1"
+"Wisconsin
+route exception cleared by mileage desk","406.6","0.0","406.6"
+"Wyoming
+telematics accepted; odometer tie-out reviewed","45.7","220.0","265.7"
 
-                                                                                  Page 29 of 124
+Page 29
 
 # Page 30
 
-Generated: 11/02/2025 09:14 AM CST                                       Prairie Route Carriers Inc
-                                                                        1830 WESTFIELD CROSSING
-                                                                        PLAINFIELD, IL 60544
-                                                                        312-555-0130
+Hearthline Freight Cooperative
+Quarterly IFTA workpaper packet
+Account HFC-742018 / Fleet mileage review
 
+VEHICLE MILEAGE SUPPORT
+Prepared 11/02/2025 09:14 CST
 
-                     IFTA Mileage: All trucks - 2025 - Q 4
-                             7/1/2025 - 9/30/2025
+--------------------------------------------------------------------------------------------------
 
-                            Vehicle: 906 continued
+UNIT: 933
+VIN suffix S894091 | Plate AP82210
+International yard relay / Davenport IA
+Fleet ref FLT-196 | Quarter: 2025 Q3
 
-| # | State | Identified Miles | Unidentified Miles | Total |
-|:---|:---|:---|:---|:---|
-| 30 | Washington | 30.9 | 0.0 | 30.9 |
-| 31 | Wisconsin | 4266.5 | 0.0 | 4266.5 |
-| 32 | Wyoming | 3141.9 | 0.0 | 3141.9 |
-| | *Total* | *125343.0* | *838.9* | *126181.9* |
+--------------------------------------------------------------------------------------------------
 
-                                                                                  Page 30 of 124
+Mileage jurisdictions for this unit are listed below. The unit number is inherited by every row on this page.
+
+"JURISDICTION AND SOURCE NOTE","ACCEPTED / IDENTIFIED MILES","EXCEPTION / UNIDENTIFIED MILES","REPORTED JURISDICTION TOTAL"
+"Alabama\ntelematics accepted; odometer tie-out reviewed","2,458.6","0.0","2,458.6"
+"Arizona\ntrip-sheet and dispatch legs reconciled","5,430.4","160.6","5,591.0"
+"Arkansas\ntrip-sheet and dispatch legs reconciled","2,215.0","0.0","2,215.0"
+"California\ntelematics accepted; odometer tie-out reviewed","4,300.5","0.0","4,300.5"
+"Colorado\nroute exception cleared by mileage desk","5,109.9","360.2","5,470.1"
+"Connecticut\nmanual correction retained in quarter workpaper","3,589.6","0.0","3,589.6"
+"Delaware\nE-ZPass and fuel stop support reviewed","1,679.4","0.0","1,679.4"
+"Florida\nE-ZPass and fuel stop support reviewed","1,150.3","309.8","1,460.1"
+"Georgia\nE-ZPass and fuel stop support reviewed","2,080.3","0.0","2,080.3"
+"Idaho\nE-ZPass and fuel stop support reviewed","2,848.1","0.0","2,848.1"
+"Illinois\nmanual correction retained in quarter workpaper","4,290.8","0.0","4,290.8"
+"Indiana\nE-ZPass and fuel stop support reviewed","963.2","205.7","1,168.9"
+
+--------------------------------------------------------------------------------------------------
+
+Unit quarter tie-out
+Accepted: 106,798.6
+Exception: 1,983.4
+Reported: 108,782.0
+
+Fuel-card reconciliation sample
+"JUR","GALLONS","AMOUNT","NOTE"
+"TN","113.8","$471.46","fuel only - not a mileage jurisdiction row"
+"WI","213.5","$790.94","fuel only - not a mileage jurisdiction row"
+"WI","312.2","$1,348.46","fuel only - not a mileage jurisdiction row"
+
+Page 30
 
 # Page 31
 
-Generated: 11/02/2025 09:14 AM CST                                Prairie Route Carriers Inc
-                                                                      1831 WESTFIELD CROSSING
-                                                                         PLAINFIELD, IL 60544
-                                                                                 312-555-0131
+Hearthline Freight Cooperative                                          VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                                         Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
 
-                          IFTA Mileage: All trucks - 2025 - Q 4
-                                   7/1/2025 - 9/30/2025
+-------------------------------------------------------------------------------------------------------------
+UNIT: 933 (continued) | VIN suffix S894091 Plate AP82210 | International yard relay / Davenport IA | Fleet ref FLT-196 Quarter: 2025 Q3
+-------------------------------------------------------------------------------------------------------------
 
-                                       Vehicle: 900
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
 
-| # | State | Identified Miles | Unidentified Miles | Total |
-|---|---|---|---|---|
-| 1 | Alabama | 5644.9 | 0.0 | 5644.9 |
-| 2 | Arkansas | 6172.1 | 0.0 | 6172.1 |
-| 3 | California | 92.1 | 297.4 | 389.5 |
-| 4 | Connecticut | 3222.2 | 0.0 | 3222.2 |
-| 5 | Delaware | 3647.3 | 0.0 | 3647.3 |
-| 6 | Florida | 171.1 | 0.0 | 171.1 |
-| 7 | Georgia | 6955.0 | 0.0 | 6955.0 |
-| 8 | Idaho | 5757.2 | 342.3 | 6099.5 |
-| 9 | Illinois | 777.1 | 0.0 | 777.1 |
-| 10 | Indiana | 5757.1 | 0.0 | 5757.1 |
-| 11 | Iowa | 153.8 | 0.0 | 153.8 |
-| 12 | Kansas | 78.6 | 161.7 | 240.3 |
-| 13 | Kentucky | 102.4 | 0.0 | 102.4 |
-| 14 | Louisiana | 805.3 | 0.0 | 805.3 |
-| 15 | Minnesota | 27.6 | 0.0 | 27.6 |
-| 16 | Mississippi | 806.8 | 189.8 | 996.6 |
-| 17 | Missouri | 5628.6 | 0.0 | 5628.6 |
-| 18 | Montana | 5995.7 | 0.0 | 5995.7 |
-| 19 | New Jersey | 4983.8 | 0.0 | 4983.8 |
-| 20 | New Mexico | 3684.4 | 0.0 | 3684.4 |
-| 21 | New York | 6969.5 | 0.0 | 6969.5 |
-| 22 | North Carolina | 5623.5 | 0.0 | 5623.5 |
-| 23 | North Dakota | 1384.5 | 49.8 | 1434.3 |
-| 24 | Oklahoma | 6554.0 | 0.0 | 6554.0 |
-| 25 | Pennsylvania | 5861.0 | 0.0 | 5861.0 |
-| 26 | South Carolina | 2768.9 | 0.0 | 2768.9 |
-| 27 | Texas | 797.8 | 224.6 | 1022.4 |
-| 28 | Virginia | 4743.0 | 0.0 | 4743.0 |
-| 29 | Washington | 1870.7 | 0.0 | 1870.7 |
+"JURISDICTION AND SOURCE NOTE","ACCEPTED / IDENTIFIED MILES","EXCEPTION / UNIDENTIFIED MILES","REPORTED JURISDICTION TOTAL"
+"Iowa\ntelematics accepted; odometer tie-out reviewed",833.5,0.0,833.5
+"Kansas\nE-ZPass and fuel stop support reviewed","6,832.4",0.0,"6,832.4"
+"Kentucky\ntrip-sheet and dispatch legs reconciled",265.4,0.0,265.4
+"Louisiana\nE-ZPass and fuel stop support reviewed","3,241.4",0.0,"3,241.4"
+"Maryland\ntelematics accepted; odometer tie-out reviewed","1,057.9",370.0,"1,427.9"
+"Michigan\ntrip-sheet and dispatch legs reconciled","4,065.7",0.0,"4,065.7"
+"Minnesota\ntelematics accepted; odometer tie-out reviewed","1,407.0",0.0,"1,407.0"
+"Mississippi\nE-ZPass and fuel stop support reviewed",114.2,15.5,129.7
+"Missouri\nmanual correction retained in quarter workpaper","3,582.5",0.0,"3,582.5"
+"Montana\ntrip-sheet and dispatch legs reconciled","4,553.8",0.0,"4,553.8"
+"Nebraska\ntrip-sheet and dispatch legs reconciled",19.5,0.0,19.5
+"Nevada\ntelematics accepted; odometer tie-out reviewed","6,240.9",0.0,"6,240.9"
 
-                                                                                Page 31 of 124
+Page 31
 
 # Page 32
 
-Generated: 11/02/2025 09:14 AM CST                                Prairie Route Carriers Inc
-                                                            1823 WESTFIELD CROSSING
-                                                             PLAINFIELD, IL 60544
-                                                                     312-555-0132
+Hearthline Freight Cooperative                             VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                           Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
+____________________________________________________________________________________
 
+| UNIT       | VIN suffix S894091 | International             | Fleet ref FLT-196 |
+| 933        | Plate AP82210      | yard relay / Davenport IA | Quarter: 2025 Q3  |
+| continued  |                    |                           |                   |
+____________________________________________________________________________________
 
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
 
-                     IFTA Mileage: All trucks - 2025 - Q 4
-                             7/1/2025 - 9/30/2025
+"JURISDICTION AND SOURCE NOTE","ACCEPTED / IDENTIFIED MILES","EXCEPTION / UNIDENTIFIED MILES","REPORTED JURISDICTION TOTAL"
+"New Jersey
+route exception cleared by mileage desk",2229.6,0.0,2229.6
+"New Mexico
+trip-sheet and dispatch legs reconciled",2885.3,0.0,2885.3
+"New York
+telematics accepted; odometer tie-out reviewed",1853.0,0.0,1853.0
+"North Carolina
+trip-sheet and dispatch legs reconciled",3817.8,297.2,4115.0
+"Oklahoma
+E-ZPass and fuel stop support reviewed",560.1,0.0,560.1
+"Oregon
+cross-border segment verified from GPS batch",3158.9,264.4,3423.3
+"Tennessee
+manual correction retained in quarter workpaper",5407.6,0.0,5407.6
+"Texas
+cross-border segment verified from GPS batch",6808.8,0.0,6808.8
+"Utah
+cross-border segment verified from GPS batch",1541.4,0.0,1541.4
+"Virginia
+trip-sheet and dispatch legs reconciled",279.9,0.0,279.9
+"Washington
+manual correction retained in quarter workpaper",2872.2,0.0,2872.2
+"Wyoming
+manual correction retained in quarter workpaper",7053.7,0.0,7053.7
 
-                            Vehicle: 900 continued
-
-
-| # | State | Identified Miles | Unidentified Miles | Total |
-|---|---|---|---|---|
-| 30 | West Virginia | 2749.6 | 149.6 | 2899.2 |
-| 31 | Wisconsin | 6724.7 | 0.0 | 6724.7 |
-| 32 | Wyoming | 4776.8 | 27.6 | 4804.4 |
-| | *Total* | 111287.1 | 1442.8 | 112729.9 |
-
-
-
-
-                                                                    Page 32 of 124
+Page 32
 
 # Page 33
 
-Generated: 11/02/2025 09:14 AM CST                                Prairie Route Carriers Inc
-                                                                 1833 WESTFIELD CROSSING
-                                                                    PLAINFIELD, IL 60544
-                                                                            312-555-0133
+Hearthline Freight Cooperative
+Quarterly IFTA workpaper packet
+Account HFC-742018 / Fleet mileage review
 
-                       IFTA Mileage: All trucks - 2025 - Q 4
-                               7/1/2025 - 9/30/2025
+VEHICLE MILEAGE SUPPORT
+Prepared 11/02/2025 09:14 CST
 
-                                  Vehicle: 7321
+***
 
-| # | State | Identified Miles | Unidentified Miles | Total |
-|---|---|---|---|---|
-| 1 | Alabama | 942.7 | 0.0 | 942.7 |
-| 2 | Arizona | 6313.5 | 0.0 | 6313.5 |
-| 3 | Arkansas | 4976.7 | 0.0 | 4976.7 |
-| 4 | California | 2326.9 | 0.0 | 2326.9 |
-| 5 | Colorado | 101.8 | 0.0 | 101.8 |
-| 6 | Connecticut | 2037.0 | 0.0 | 2037.0 |
-| 7 | Florida | 4197.4 | 0.0 | 4197.4 |
-| 8 | Georgia | 5615.9 | 335.7 | 5951.6 |
-| 9 | Idaho | 12.3 | 0.0 | 12.3 |
-| 10 | Illinois | 5644.8 | 0.0 | 5644.8 |
-| 11 | Indiana | 6600.2 | 0.0 | 6600.2 |
-| 12 | Iowa | 5991.6 | 0.0 | 5991.6 |
-| 13 | Kentucky | 513.0 | 0.0 | 513.0 |
-| 14 | Louisiana | 1005.9 | 0.0 | 1005.9 |
-| 15 | Maryland | 1674.5 | 190.5 | 1865.0 |
-| 16 | Michigan | 5908.1 | 111.0 | 6019.1 |
-| 17 | Minnesota | 4671.6 | 0.0 | 4671.6 |
-| 18 | Missouri | 299.0 | 0.0 | 299.0 |
-| 19 | Montana | 2343.8 | 186.7 | 2530.5 |
-| 20 | Nebraska | 2524.9 | 0.0 | 2524.9 |
-| 21 | Nevada | 3864.8 | 0.0 | 3864.8 |
-| 22 | New Jersey | 3875.3 | 0.0 | 3875.3 |
-| 23 | North Carolina | 79.8 | 0.0 | 79.8 |
-| 24 | North Dakota | 3384.5 | 0.0 | 3384.5 |
-| 25 | Ohio | 3216.5 | 0.0 | 3216.5 |
-| 26 | Oregon | 3318.8 | 0.0 | 3318.8 |
-| 27 | South Carolina | 256.3 | 0.0 | 256.3 |
-| 28 | Tennessee | 3937.9 | 0.0 | 3937.9 |
-| 29 | Texas | 4539.5 | 130.3 | 4669.8 |
+| UNIT | VIN suffix Z661309<br>Plate AP34189 | International intermodal / Kansas City MO | Fleet ref FLT-306<br>Quarter: 2025 Q3 |
+| :--- | :--- | :--- | :--- |
+| **2000** | | | |
 
-Page 33 of 124
+***
+
+Mileage jurisdictions for this unit are listed below. The unit number is inherited by every row on this page.
+
+| JURISDICTION AND SOURCE NOTE | ACCEPTED / IDENTIFIED MILES | EXCEPTION / UNIDENTIFIED MILES | REPORTED JURISDICTION TOTAL |
+| :--- | :---: | :---: | :---: |
+| **Alabama**<br>telematics accepted; odometer tie-out reviewed | 49.0 | 0.0 | 49.0 |
+| **Arkansas**<br>manual correction retained in quarter workpaper | 5,875.3 | 0.0 | 5,875.3 |
+| **California**<br>trip-sheet and dispatch legs reconciled | 66.9 | 0.0 | 66.9 |
+| **Colorado**<br>E-ZPass and fuel stop support reviewed | 1,944.5 | 0.0 | 1,944.5 |
+| **Connecticut**<br>route exception cleared by mileage desk | 4,900.1 | 0.0 | 4,900.1 |
+| **Florida**<br>manual correction retained in quarter workpaper | 2,200.2 | 93.8 | 2,294.0 |
+| **Georgia**<br>cross-border segment verified from GPS batch | 3,059.2 | 283.5 | 3,342.7 |
+| **Idaho**<br>E-ZPass and fuel stop support reviewed | 21.5 | 0.0 | 21.5 |
+| **Indiana**<br>cross-border segment verified from GPS batch | 1,199.4 | 157.7 | 1,357.1 |
+| **Iowa**<br>telematics accepted; odometer tie-out reviewed | 7,008.2 | 0.0 | 7,008.2 |
+| **Kansas**<br>manual correction retained in quarter workpaper | 5,650.7 | 0.0 | 5,650.7 |
+| **Louisiana**<br>cross-border segment verified from GPS batch | 5,389.8 | 0.0 | 5,389.8 |
+
+***
+
+### Unit quarter tie-out
+* Accepted: 95,904.3
+* Exception: 1,273.0
+* Reported: 97,177.3
+
+### Fuel-card reconciliation sample
+| JUR | GALLONS | AMOUNT | NOTE |
+| :--- | :---: | :---: | :--- |
+| PA | 160.0 | $749.32 | fuel only - not a mileage jurisdiction row |
+| IL | 352.6 | $1,265.60 | fuel only - not a mileage jurisdiction row |
+| TX | 43.2 | $188.83 | fuel only - not a mileage jurisdiction row |
+
+Page 33
 
 # Page 34
 
-Generated: 11/02/2025 09:14 AM CST
+Hearthline Freight Cooperative                                              VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                                             Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
 
-                                                      Prairie Route Carriers Inc
-                                                         1834 WESTFIELD CROSSING
-                                                            PLAINFIELD, IL 60544
-                                                                    312-555-0134
+_________________________________________________________________________________________________________
+| UNIT              | VIN suffix Z661309     | International             | Fleet ref FLT-306     |
+| **2000**          | Plate AP34189          | intermodal / Kansas City  | Quarter: 2025 Q3      |
+| continued         |                        | MO                        |                       |
+_________________________________________________________________________________________________________
 
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
 
-                IFTA Mileage: All trucks - 2025 - Q 4
-                        7/1/2025 - 9/30/2025
+| JURISDICTION AND SOURCE NOTE | ACCEPTED / IDENTIFIED MILES | EXCEPTION / UNIDENTIFIED MILES | REPORTED JURISDICTION TOTAL |
+| :--- | :---: | :---: | :---: |
+| **Maryland**<br>manual correction retained in quarter workpaper | 1,436.9 | 0.0 | 1,436.9 |
+| **Michigan**<br>manual correction retained in quarter workpaper | 4,845.1 | 0.0 | 4,845.1 |
+| **Minnesota**<br>cross-border segment verified from GPS batch | 1,075.5 | 0.0 | 1,075.5 |
+| **Mississippi**<br>route exception cleared by mileage desk | 2,674.3 | 361.2 | 3,035.5 |
+| **Missouri**<br>telematics accepted; odometer tie-out reviewed | 177.4 | 0.0 | 177.4 |
+| **Montana**<br>route exception cleared by mileage desk | 3,589.0 | 368.0 | 3,957.0 |
+| **Nevada**<br>route exception cleared by mileage desk | 4,776.0 | 0.0 | 4,776.0 |
+| **New Jersey**<br>trip-sheet and dispatch legs reconciled | 5,376.6 | 0.0 | 5,376.6 |
+| **New Mexico**<br>route exception cleared by mileage desk | 5,361.2 | 0.0 | 5,361.2 |
+| **New York**<br>cross-border segment verified from GPS batch | 2,692.3 | 0.0 | 2,692.3 |
 
-                     Vehicle: 7321 continued
-
-
-| # | State | Identified Miles | Unidentified Miles | Total |
-|---|---|---|---|---|
-| 30 | Utah | 1656.4 | 0.0 | 1656.4 |
-| 31 | Virginia | 71.9 | 111.1 | 183.0 |
-| 32 | Washington | 3216.9 | 0.0 | 3216.9 |
-| 33 | West Virginia | 4173.7 | 0.0 | 4173.7 |
-| 34 | Wisconsin | 0.3 | 0.0 | 0.3 |
-| 35 | Wyoming | 28.0 | 0.0 | 28.0 |
-| | **Total** | **99322.2** | **1065.3** | **100387.5** |
-
-
-                                                                   Page 34 of 124
+Page 34
 
 # Page 35
 
-Generated: 11/02/2025 09:14 AM CST                                      Prairie Route Carriers Inc
-                                                                     1835 WESTFIELD CROSSING
-                                                                        PLAINFIELD, IL 60544
-                                                                                312-555-0135
-
-                         IFTA Mileage: All trucks - 2025 - Q 4
-                                  7/1/2025 - 9/30/2025
-
-                                      Vehicle: 373
-
-| # | State | Identified Miles | Unidentified Miles | Total |
-|---|---|---|---|---|
-| 1 | Alabama | 3031.4 | 0.0 | 3031.4 |
-| 2 | California | 1467.1 | 0.0 | 1467.1 |
-| 3 | Colorado | 5871.8 | 0.0 | 5871.8 |
-| 4 | Connecticut | 6316.4 | 135.2 | 6451.6 |
-| 5 | Delaware | 1062.8 | 0.0 | 1062.8 |
-| 6 | Florida | 2142.0 | 84.6 | 2226.6 |
-| 7 | Georgia | 2344.4 | 187.6 | 2532.0 |
-| 8 | Idaho | 2581.6 | 205.9 | 2787.5 |
-| 9 | Illinois | 5307.4 | 300.2 | 5607.6 |
-| 10 | Indiana | 3534.9 | 325.5 | 3860.4 |
-| 11 | Iowa | 2225.6 | 0.0 | 2225.6 |
-| 12 | Kansas | 5079.1 | 0.0 | 5079.1 |
-| 13 | Kentucky | 32.8 | 327.6 | 360.4 |
-| 14 | Maryland | 385.9 | 0.0 | 385.9 |
-| 15 | Michigan | 132.2 | 324.8 | 457.0 |
-| 16 | Minnesota | 2467.7 | 0.0 | 2467.7 |
-| 17 | Mississippi | 3751.3 | 0.0 | 3751.3 |
-| 18 | Missouri | 287.2 | 15.7 | 302.9 |
-| 19 | Montana | 2994.7 | 0.0 | 2994.7 |
-| 20 | Nebraska | 3094.1 | 0.0 | 3094.1 |
-| 21 | Nevada | 3210.4 | 0.0 | 3210.4 |
-| 22 | New Jersey | 6670.5 | 0.0 | 6670.5 |
-| 23 | New York | 3873.6 | 0.0 | 3873.6 |
-| 24 | North Carolina | 4352.5 | 181.2 | 4533.7 |
-| 25 | North Dakota | 997.6 | 0.0 | 997.6 |
-| 26 | Ohio | 32.3 | 0.0 | 32.3 |
-| 27 | Oklahoma | 74.4 | 0.0 | 74.4 |
-| 28 | Oregon | 4080.9 | 0.0 | 4080.9 |
-| 29 | Pennsylvania | 4895.8 | 0.0 | 4895.8 |
-
-Page 35 of 124
+"JURISDICTION AND SOURCE NOTE","ACCEPTED / IDENTIFIED MILES","EXCEPTION / UNIDENTIFIED MILES","REPORTED JURISDICTION TOTAL"
+"North Dakota
+route exception cleared by mileage desk","3,113.9","0.0","3,113.9"
+"Oklahoma
+telematics accepted; odometer tie-out reviewed","2,845.8","0.0","2,845.8"
+"South Carolina
+route exception cleared by mileage desk","4,999.2","8.8","5,008.0"
+"Tennessee
+E-ZPass and fuel stop support reviewed","1,532.3","0.0","1,532.3"
+"Utah
+E-ZPass and fuel stop support reviewed","3,809.6","0.0","3,809.6"
+"Virginia
+manual correction retained in quarter workpaper","23.5","0.0","23.5"
+"Washington
+E-ZPass and fuel stop support reviewed","4,078.0","0.0","4,078.0"
+"West Virginia
+cross-border segment verified from GPS batch","57.5","0.0","57.5"
+"Wyoming
+route exception cleared by mileage desk","6,075.4","0.0","6,075.4"
 
 # Page 36
 
-Generated: 11/02/2025 09:14 AM CST
+Hearthline Freight Cooperative
+Quarterly IFTA workpaper packet
+Account HFC-742018 / Fleet mileage review
 
-Prairie Route Carriers Inc
-1836 WESTFIELD CROSSING
-PLAINFIELD, IL 60544
-312-555-0136
+VEHICLE MILEAGE SUPPORT
+Prepared 11/02/2025 09:14 CST
 
-# IFTA Mileage: All trucks - 2025 - Q 4
-### 7/1/2025 - 9/30/2025
+***
 
-## Vehicle: 373 continued
+| UNIT | VIN suffix Z584495<br>Plate AP79401 | Kenworth<br>linehaul / Kansas City MO | Fleet ref FLT-817<br>Quarter: 2025 Q3 |
+| :--- | :--- | :--- | :--- |
+| **459** | | | |
 
-| # | State | Identified Miles | Unidentified Miles | Total |
-| :--- | :--- | :--- | :--- | :--- |
-| 30 | South Carolina | 1055.3 | 181.3 | 1236.6 |
-| 31 | Tennessee | 3417.0 | 0.0 | 3417.0 |
-| 32 | Texas | 2759.9 | 0.0 | 2759.9 |
-| 33 | Utah | 759.9 | 274.5 | 1034.4 |
-| 34 | Virginia | 5422.6 | 239.4 | 5662.0 |
-| 35 | Washington | 4939.5 | 0.0 | 4939.5 |
-| 36 | West Virginia | 4952.5 | 0.0 | 4952.5 |
-| 37 | Wisconsin | 5893.5 | 42.3 | 5935.8 |
-| 38 | Wyoming | 4879.2 | 212.5 | 5091.7 |
-| | **Total** | **116377.8** | **3038.3** | **119416.1** |
+***
 
-Page 36 of 124
+Mileage jurisdictions for this unit are listed below. The unit number is inherited by every row on this page.
+
+| JURISDICTION AND SOURCE NOTE | ACCEPTED /<br>IDENTIFIED MILES | EXCEPTION /<br>UNIDENTIFIED MILES | REPORTED<br>JURISDICTION TOTAL |
+| :--- | :---: | :---: | :---: |
+| **Alabama**<br>telematics accepted; odometer tie-out reviewed | 1,513.2 | 0.0 | 1,513.2 |
+| **Arizona**<br>route exception cleared by mileage desk | 2,140.0 | 0.0 | 2,140.0 |
+| **Arkansas**<br>cross-border segment verified from GPS batch | 1,383.8 | 11.5 | 1,395.3 |
+| **California**<br>trip-sheet and dispatch legs reconciled | 3,545.5 | 0.0 | 3,545.5 |
+| **Colorado**<br>trip-sheet and dispatch legs reconciled | 4,355.1 | 0.0 | 4,355.1 |
+| **Connecticut**<br>trip-sheet and dispatch legs reconciled | 6,332.7 | 0.0 | 6,332.7 |
+| **Georgia**<br>cross-border segment verified from GPS batch | 6,710.9 | 0.0 | 6,710.9 |
+| **Illinois**<br>telematics accepted; odometer tie-out reviewed | 5,706.9 | 305.8 | 6,012.7 |
+| **Indiana**<br>trip-sheet and dispatch legs reconciled | 6,905.2 | 108.6 | 7,013.8 |
+| **Iowa**<br>route exception cleared by mileage desk | 2,183.2 | 0.0 | 2,183.2 |
+| **Kansas**<br>trip-sheet and dispatch legs reconciled | 1,351.0 | 0.0 | 1,351.0 |
+| **Kentucky**<br>route exception cleared by mileage desk | 495.7 | 0.0 | 495.7 |
+
+***
+
+### Unit quarter tie-out
+Accepted: 102,970.4
+Exception: 1,503.5
+Reported: 104,473.9
+
+### Fuel-card reconciliation sample
+| JUR | GALLONS | AMOUNT | NOTE |
+| :--- | :---: | :---: | :--- |
+| OH | 207.7 | $869.30 | fuel only - not a mileage jurisdiction row |
+| WI | 113.5 | $526.88 | fuel only - not a mileage jurisdiction row |
+| TX | 101.1 | $480.06 | fuel only - not a mileage jurisdiction row |
+
+Page 36
 
 # Page 37
 
-Generated: 11/02/2025 09:14 AM CST, Prairie Route Carriers Inc
-    ,,1837 WESTFIELD CROSSING
-    ,,PLAINFIELD, IL 60544
-    ,,312-555-0137
-    ,,
-    IFTA Mileage: All trucks - 2025 - Q 4,,
-    7/1/2025 - 9/30/2025,,
-    Vehicle: 9690,,
-    ,,
-    #,State,Identified Miles,Unidentified Miles,Total
-    1,Arizona,7032.8,0.0,7032.8
-    2,California,5444.6,0.0,5444.6
-    3,Colorado,26.1,375.9,402.0
-    4,Connecticut,5209.7,0.0,5209.7
-    5,Delaware,25.9,36.9,62.8
-    6,Florida,6770.4,268.2,7038.6
-    7,Georgia,3035.7,61.6,3097.3
-    8,Idaho,4908.5,0.0,4908.5
-    9,Illinois,5351.6,0.0,5351.6
-    10,Indiana,764.2,0.0,764.2
-    11,Iowa,5373.1,345.7,5718.8
-    12,Kansas,3591.8,0.0,3591.8
-    13,Louisiana,6339.7,0.0,6339.7
-    14,Maryland,83.9,0.0,83.9
-    15,Michigan,3531.6,119.0,3650.6
-    16,Minnesota,4261.0,0.0,4261.0
-    17,Mississippi,842.1,174.9,1017.0
-    18,Missouri,6520.5,231.1,6751.6
-    19,Nebraska,3838.5,0.0,3838.5
-    20,Nevada,5862.4,1.2,5863.6
-    21,New Jersey,6939.5,329.3,7268.8
-    22,New York,66.6,374.2,440.8
-    23,North Carolina,1705.4,0.0,1705.4
-    24,North Dakota,6722.5,0.0,6722.5
-    25,Ohio,3405.9,0.0,3405.9
-    26,Oklahoma,6450.9,0.0,6450.9
-    27,Oregon,947.9,195.4,1143.3
-    28,South Carolina,212.7,0.0,212.7
-    29,Tennessee,2901.1,0.0,2901.1
-    ,,
-    Page 37 of 124,,
+Hearthline Freight Cooperative,VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet,Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review,
+
+UNIT: 459 (continued),VIN suffix Z584495 Plate AP79401,Kenworth linehaul / Kansas City MO,Fleet ref FLT-817 Quarter: 2025 Q3
+
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
+
+JURISDICTION AND SOURCE NOTE,ACCEPTED / IDENTIFIED MILES,EXCEPTION / UNIDENTIFIED MILES,REPORTED JURISDICTION TOTAL
+"Louisiana
+trip-sheet and dispatch legs reconciled",5891.0,0.0,5891.0
+"Maryland
+trip-sheet and dispatch legs reconciled",2592.3,0.0,2592.3
+"Minnesota
+telematics accepted; odometer tie-out reviewed",6785.3,0.0,6785.3
+"Mississippi
+manual correction retained in quarter workpaper",636.8,0.0,636.8
+"Missouri
+manual correction retained in quarter workpaper",5652.8,0.0,5652.8
+"Nebraska
+route exception cleared by mileage desk",6561.6,333.8,6895.4
+"Nevada
+trip-sheet and dispatch legs reconciled",6796.3,0.0,6796.3
+"New Jersey
+cross-border segment verified from GPS batch",256.8,0.0,256.8
+"New Mexico
+E-ZPass and fuel stop support reviewed",3467.6,44.2,3511.8
+"New York
+manual correction retained in quarter workpaper",82.5,0.0,82.5
+"North Carolina
+trip-sheet and dispatch legs reconciled",6743.9,95.3,6839.2
+"North Dakota
+E-ZPass and fuel stop support reviewed",3239.8,0.0,3239.8
+
+Page 37
 
 # Page 38
 
-#,State,Identified Miles,Unidentified Miles,Total
-30,Virginia,1450.2,0.0,1450.2
-31,Washington,6015.4,17.8,6033.2
-32,Wisconsin,4984.2,123.5,5107.7
-33,Wyoming,1245.7,17.0,1262.7
-,Total,121862.1,2671.7,124533.8
+Hearthline Freight Cooperative                                                      VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                                                     Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
+
+-------------------------------------------------------------------------------------------------------------------------
+| UNIT                      | VIN suffix Z584495          | Kenworth                    | Fleet ref FLT-817             |
+| 459                       | Plate AP79401               | linehaul / Kansas City MO   | Quarter: 2025 Q3              |
+| continued                 |                             |                             |                               |
+-------------------------------------------------------------------------------------------------------------------------
+
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
+
+| JURISDICTION AND SOURCE NOTE | ACCEPTED / IDENTIFIED MILES | EXCEPTION / UNIDENTIFIED MILES | REPORTED JURISDICTION TOTAL |
+| :--- | :---: | :---: | :---: |
+| **Ohio** <br> E-ZPass and fuel stop support reviewed | 1,337.1 | 0.0 | 1,337.1 |
+| **Oklahoma** <br> cross-border segment verified from GPS batch | 729.2 | 0.0 | 729.2 |
+| **Pennsylvania** <br> E-ZPass and fuel stop support reviewed | 81.3 | 0.0 | 81.3 |
+| **South Carolina** <br> telematics accepted; odometer tie-out reviewed | 177.7 | 0.0 | 177.7 |
+| **Tennessee** <br> trip-sheet and dispatch legs reconciled | 25.9 | 0.0 | 25.9 |
+| **Texas** <br> route exception cleared by mileage desk | 762.9 | 132.5 | 895.4 |
+| **Virginia** <br> telematics accepted; odometer tie-out reviewed | 33.4 | 131.8 | 165.2 |
+| **Washington** <br> telematics accepted; odometer tie-out reviewed | 1,486.0 | 123.7 | 1,609.7 |
+| **West Virginia** <br> trip-sheet and dispatch legs reconciled | 2,780.5 | 216.3 | 2,996.8 |
+| **Wisconsin** <br> E-ZPass and fuel stop support reviewed | 1,247.9 | 0.0 | 1,247.9 |
+| **Wyoming** <br> trip-sheet and dispatch legs reconciled | 2,978.6 | 0.0 | 2,978.6 |
+
+Page 38
 
 # Page 39
 
-Generated: 11/02/2025 09:14 AM CST
-
-                                                                    Prairie Route Carriers Inc
-                                                                     1839 WESTFIELD CROSSING
-                                                                        PLAINFIELD, IL 60544
-                                                                                312-555-0139
-
-
-                    IFTA Mileage: All trucks - 2025 - Q 4
-                              7/1/2025 - 9/30/2025
-
-                                  Vehicle: 646
-
-
-| # | State | Identified Miles | Unidentified Miles | Total |
-|---|---|---|---|---|
-| 1 | Alabama | 5766.1 | 0.0 | 5766.1 |
-| 2 | Arizona | 6338.2 | 319.0 | 6657.2 |
-| 3 | Arkansas | 3698.5 | 0.0 | 3698.5 |
-| 4 | California | 6182.7 | 0.0 | 6182.7 |
-| 5 | Colorado | 4263.7 | 0.0 | 4263.7 |
-| 6 | Delaware | 570.9 | 0.0 | 570.9 |
-| 7 | Florida | 5486.3 | 0.0 | 5486.3 |
-| 8 | Georgia | 2171.2 | 0.0 | 2171.2 |
-| 9 | Idaho | 4669.5 | 0.0 | 4669.5 |
-| 10 | Illinois | 4712.3 | 0.0 | 4712.3 |
-| 11 | Indiana | 6.3 | 322.6 | 328.9 |
-| 12 | Iowa | 890.7 | 289.4 | 1180.1 |
-| 13 | Kansas | 2781.4 | 0.0 | 2781.4 |
-| 14 | Kentucky | 391.7 | 0.0 | 391.7 |
-| 15 | Louisiana | 6424.6 | 153.9 | 6578.5 |
-| 16 | Maryland | 3360.1 | 0.0 | 3360.1 |
-| 17 | Michigan | 442.2 | 0.0 | 442.2 |
-| 18 | Minnesota | 5479.0 | 0.0 | 5479.0 |
-| 19 | Mississippi | 6637.5 | 0.0 | 6637.5 |
-| 20 | Nebraska | 5242.5 | 0.0 | 5242.5 |
-| 21 | Nevada | 2489.5 | 372.1 | 2861.6 |
-| 22 | New Jersey | 30.2 | 280.7 | 310.9 |
-| 23 | New Mexico | 5265.4 | 0.0 | 5265.4 |
-| 24 | New York | 1421.6 | 0.0 | 1421.6 |
-| 25 | North Carolina | 6334.9 | 0.0 | 6334.9 |
-| 26 | North Dakota | 6062.8 | 234.7 | 6297.5 |
-| 27 | Ohio | 3282.8 | 356.9 | 3639.7 |
-| 28 | Oklahoma | 3697.2 | 0.0 | 3697.2 |
-| 29 | Oregon | 3365.8 | 0.0 | 3365.8 |
-
-
-                                                                              Page 39 of 124
+"Hearthline Freight Cooperative","","","","VEHICLE MILEAGE SUPPORT"
+"Quarterly IFTA workpaper packet","","","","Prepared 11/02/2025 09:14 CST"
+"Account HFC-742018 / Fleet mileage review","","","",""
+"","","","",""
+"UNIT","VIN suffix E118027","Kenworth","Fleet ref FLT-633",""
+"7662","Plate AP80608","regional / Memphis TN","Quarter: 2025 Q3",""
+"","","","",""
+"Mileage jurisdictions for this unit are listed below. The unit number is inherited by every row on this page.","","","",""
+"","","","",""
+"JURISDICTION","SOURCE NOTE","ACCEPTED / IDENTIFIED MILES","EXCEPTION / UNIDENTIFIED MILES","REPORTED JURISDICTION TOTAL"
+"Alabama","trip-sheet and dispatch legs reconciled","6,486.9","0.0","6,486.9"
+"Arizona","manual correction retained in quarter workpaper","3,605.2","44.2","3,649.4"
+"Arkansas","route exception cleared by mileage desk","3,605.5","0.0","3,605.5"
+"California","manual correction retained in quarter workpaper","2,915.1","0.0","2,915.1"
+"Colorado","E-ZPass and fuel stop support reviewed","5,471.1","0.0","5,471.1"
+"Florida","route exception cleared by mileage desk","6,342.6","123.8","6,466.4"
+"Georgia","telematics accepted; odometer tie-out reviewed","5,627.3","0.0","5,627.3"
+"Idaho","cross-border segment verified from GPS batch","3,231.6","337.2","3,568.8"
+"Illinois","manual correction retained in quarter workpaper","6,526.2","0.0","6,526.2"
+"Indiana","route exception cleared by mileage desk","2,836.2","304.3","3,140.5"
+"Iowa","telematics accepted; odometer tie-out reviewed","3,547.9","0.0","3,547.9"
+"Kansas","manual correction retained in quarter workpaper","5,216.9","0.0","5,216.9"
+"","","","",""
+"Unit quarter tie-out","","Fuel-card reconciliation sample","",""
+"Accepted: 131,389.1","","JUR","GALLONS","AMOUNT","NOTE"
+"Exception: 2,219.7","","IL","188.7","$861.32","fuel only - not a mileage jurisdiction row"
+"Reported: 133,608.8","","IN","167.4","$792.68","fuel only - not a mileage jurisdiction row"
+"","","IN","358.7","$1,577.43","fuel only - not a mileage jurisdiction row"
+"","","","",""
+"Page 39","","","",""
 
 # Page 40
 
-Generated: 11/02/2025 09:14 AM CST
+Hearthline Freight Cooperative                                             VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                                            Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
+_________________________________________________________________________________________________________
 
-                                                      Prairie Route Carriers Inc
-                                                         1840 WESTFIELD CROSSING
-                                                            PLAINFIELD, IL 60544
-                                                                    312-555-0140
+| UNIT | VIN suffix E118027 | Kenworth | Fleet ref FLT-633 |
+| :--- | :--- | :--- | :--- |
+| **7662** | Plate AP80608 | regional / Memphis TN | Quarter: 2025 Q3 |
+| continued | | | |
+_________________________________________________________________________________________________________
 
-                  IFTA Mileage: All trucks - 2025 - Q 4
-                          7/1/2025 - 9/30/2025
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
 
-                         Vehicle: 646 continued
+| JURISDICTION AND SOURCE NOTE | ACCEPTED / IDENTIFIED MILES | EXCEPTION / UNIDENTIFIED MILES | REPORTED JURISDICTION TOTAL |
+| :--- | :---: | :---: | :---: |
+| **Kentucky**<br>telematics accepted; odometer tie-out reviewed | 56.6 | 0.0 | 56.6 |
+| **Louisiana**<br>manual correction retained in quarter workpaper | 6,861.9 | 192.5 | 7,054.4 |
+| **Maryland**<br>E-ZPass and fuel stop support reviewed | 3,512.5 | 79.7 | 3,592.2 |
+| **Michigan**<br>manual correction retained in quarter workpaper | 70.6 | 0.0 | 70.6 |
+| **Minnesota**<br>E-ZPass and fuel stop support reviewed | 2,716.8 | 149.7 | 2,866.5 |
+| **Mississippi**<br>E-ZPass and fuel stop support reviewed | 4,663.1 | 284.1 | 4,947.2 |
+| **Missouri**<br>trip-sheet and dispatch legs reconciled | 4,560.9 | 0.0 | 4,560.9 |
+| **Nevada**<br>manual correction retained in quarter workpaper | 72.3 | 290.1 | 362.4 |
+| **New Jersey**<br>manual correction retained in quarter workpaper | 5,794.4 | 0.0 | 5,794.4 |
+| **New York**<br>cross-border segment verified from GPS batch | 863.3 | 0.0 | 863.3 |
+| **North Carolina**<br>route exception cleared by mileage desk | 26.9 | 0.0 | 26.9 |
+| **North Dakota**<br>manual correction retained in quarter workpaper | 3,159.9 | 0.0 | 3,159.9 |
 
-| # | State | Identified Miles | Unidentified Miles | Total |
-|---|---|---|---|---|
-| 30 | Pennsylvania | 2403.1 | 0.0 | 2403.1 |
-| 31 | South Carolina | 4921.5 | 0.0 | 4921.5 |
-| 32 | Tennessee | 17.4 | 0.0 | 17.4 |
-| 33 | Texas | 2357.9 | 0.0 | 2357.9 |
-| 34 | Virginia | 6002.3 | 2.1 | 6004.4 |
-| 35 | Washington | 4410.4 | 0.0 | 4410.4 |
-| 36 | West Virginia | 3223.3 | 196.1 | 3419.4 |
-| 37 | Wisconsin | 2686.2 | 0.0 | 2686.2 |
-| 38 | Wyoming | 81.5 | 0.0 | 81.5 |
-|    | Total | 133569.2 | 2527.5 | 136096.7 |
+<br>
 
-                                                                  Page 40 of 124
+<div align="right">Page 40</div>
 
 # Page 41
 
-Generated: 11/02/2025 09:14 AM CST                                Prairie Route Carriers Inc
-                                                                1841 WESTFIELD CROSSING
-                                                                   PLAINFIELD, IL 60544
-                                                                           312-555-0141
+Hearthline Freight Cooperative                             VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                            Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
 
-                          IFTA Mileage: All trucks - 2025 - Q 4
-                                  7/1/2025 - 9/30/2025
+_________________________________________________________________________________________________
+| UNIT            | VIN suffix E118027   | Kenworth              | Fleet ref FLT-633 |
+| **7662**        | Plate AP80608        | regional / Memphis TN | Quarter: 2025 Q3   |
+| continued       |                      |                       |                   |
+_________________________________________________________________________________________________
 
-                                      Vehicle: 618
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
 
-| # | State | Identified Miles | Unidentified Miles | Total |
-|---|---|---|---|---|
-| 1 | Alabama | 4618.9 | 0.0 | 4618.9 |
-| 2 | Arizona | 4336.2 | 0.0 | 4336.2 |
-| 3 | Arkansas | 4563.9 | 0.0 | 4563.9 |
-| 4 | California | 3383.1 | 0.0 | 3383.1 |
-| 5 | Colorado | 2144.9 | 0.0 | 2144.9 |
-| 6 | Connecticut | 5965.0 | 0.0 | 5965.0 |
-| 7 | Delaware | 2488.8 | 0.0 | 2488.8 |
-| 8 | Florida | 1157.7 | 15.5 | 1173.2 |
-| 9 | Georgia | 6633.1 | 0.0 | 6633.1 |
-| 10 | Idaho | 6147.5 | 0.0 | 6147.5 |
-| 11 | Illinois | 758.6 | 0.0 | 758.6 |
-| 12 | Indiana | 1246.5 | 0.0 | 1246.5 |
-| 13 | Iowa | 5680.1 | 0.0 | 5680.1 |
-| 14 | Kansas | 5456.3 | 0.0 | 5456.3 |
-| 15 | Louisiana | 6467.0 | 0.0 | 6467.0 |
-| 16 | Maryland | 1260.6 | 326.1 | 1586.7 |
-| 17 | Minnesota | 2280.3 | 0.0 | 2280.3 |
-| 18 | Mississippi | 6506.1 | 0.0 | 6506.1 |
-| 19 | Missouri | 5491.4 | 0.0 | 5491.4 |
-| 20 | Nebraska | 444.0 | 0.0 | 444.0 |
-| 21 | New Jersey | 5610.5 | 286.1 | 5896.6 |
-| 22 | New York | 4520.1 | 0.0 | 4520.1 |
-| 23 | North Carolina | 4996.5 | 0.0 | 4996.5 |
-| 24 | North Dakota | 2913.7 | 241.0 | 3154.7 |
-| 25 | Ohio | 1027.7 | 0.0 | 1027.7 |
-| 26 | Oklahoma | 1575.8 | 373.8 | 1949.6 |
-| 27 | Oregon | 5910.2 | 0.0 | 5910.2 |
-| 28 | Pennsylvania | 2057.8 | 0.0 | 2057.8 |
-| 29 | South Carolina | 875.6 | 354.0 | 1229.6 |
+| JURISDICTION AND SOURCE NOTE | ACCEPTED / IDENTIFIED MILES | EXCEPTION / UNIDENTIFIED MILES | REPORTED JURISDICTION TOTAL |
+| :--- | :---: | :---: | :---: |
+| **Ohio**<br>cross-border segment verified from GPS batch | 3,429.0 | 92.3 | 3,521.3 |
+| **Oklahoma**<br>route exception cleared by mileage desk | 5,228.9 | 0.0 | 5,228.9 |
+| **Oregon**<br>E-ZPass and fuel stop support reviewed | 5,795.4 | 0.0 | 5,795.4 |
+| **Pennsylvania**<br>manual correction retained in quarter workpaper | 444.7 | 0.0 | 444.7 |
+| **South Carolina**<br>route exception cleared by mileage desk | 2,853.8 | 0.0 | 2,853.8 |
+| **Texas**<br>E-ZPass and fuel stop support reviewed | 5,401.9 | 321.8 | 5,723.7 |
+| **Virginia**<br>manual correction retained in quarter workpaper | 5,245.6 | 0.0 | 5,245.6 |
+| **Washington**<br>cross-border segment verified from GPS batch | 5,979.4 | 0.0 | 5,979.4 |
+| **West Virginia**<br>trip-sheet and dispatch legs reconciled | 99.3 | 0.0 | 99.3 |
+| **Wisconsin**<br>route exception cleared by mileage desk | 3,734.4 | 0.0 | 3,734.4 |
+| **Wyoming**<br>telematics accepted; odometer tie-out reviewed | 5,405.0 | 0.0 | 5,405.0 |
 
-                                                                          Page 41 of 124
+Page 41
 
 # Page 42
 
-Generated: 11/02/2025 09:14 AM CST                     Prairie Route Carriers Inc
-                                                    1842 WESTFIELD CROSSING
-                                                       PLAINFIELD, IL 60544
-                                                               312-555-0142
+Hearthline Freight Cooperative                                          VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                                         Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
 
-                     IFTA Mileage: All trucks - 2025 - Q 4
-                             7/1/2025 - 9/30/2025
+----------------------------------------------------------------------------------------------------
+| UNIT       | VIN suffix C528093         | Kenworth                   | Fleet ref FLT-821     |
+| 3977       | Plate AP39464              | dedicated / Memphis TN     | Quarter: 2025 Q3      |
+----------------------------------------------------------------------------------------------------
 
-                          Vehicle: 618 continued
+Mileage jurisdictions for this unit are listed below. The unit number is inherited by every row on this page.
 
-| # | State | Identified Miles | Unidentified Miles | Total |
-|---|---|---|---|---|
-| 30 | Tennessee | 4973.7 | 0.0 | 4973.7 |
-| 31 | Virginia | 13.2 | 0.0 | 13.2 |
-| 32 | Washington | 6370.2 | 0.0 | 6370.2 |
-| 33 | West Virginia | 4739.0 | 70.4 | 4809.4 |
-| 34 | Wisconsin | 5785.6 | 0.0 | 5785.6 |
-| 35 | Wyoming | 5335.0 | 0.0 | 5335.0 |
-| | *Total* | *133734.6* | *1666.9* | *135401.5* |
+JURISDICTION AND SOURCE NOTE,ACCEPTED / IDENTIFIED MILES,EXCEPTION / UNIDENTIFIED MILES,REPORTED JURISDICTION TOTAL
+"Alabama\nE-ZPass and fuel stop support reviewed","6,405.5","0.0","6,405.5"
+"Arizona\nroute exception cleared by mileage desk","6,319.2","0.0","6,319.2"
+"California\ntelematics accepted; odometer tie-out reviewed","1,480.9","0.0","1,480.9"
+"Colorado\nmanual correction retained in quarter workpaper","3,440.0","362.1","3,802.1"
+"Connecticut\nmanual correction retained in quarter workpaper","4,629.9","120.0","4,749.9"
+"Delaware\ntrip-sheet and dispatch legs reconciled","5,205.5","2.8","5,208.3"
+"Florida\ncross-border segment verified from GPS batch","200.3","75.0","275.3"
+"Georgia\ntrip-sheet and dispatch legs reconciled","3,913.2","0.0","3,913.2"
+"Idaho\nE-ZPass and fuel stop support reviewed","5,975.1","0.0","5,975.1"
+"Illinois\ncross-border segment verified from GPS batch","6,647.6","0.0","6,647.6"
+"Iowa\ntelematics accepted; odometer tie-out reviewed","2,736.1","0.0","2,736.1"
+"Kansas\nroute exception cleared by mileage desk","2,917.7","0.0","2,917.7"
 
-                                                               Page 42 of 124
+
+Unit quarter tie-out
+Accepted: 153,590.9
+Exception: 1,314.1
+Reported: 154,905.0
+
+
+Fuel-card reconciliation sample
+JUR,GALLONS,AMOUNT,NOTE
+PA,239.1,"$1,103.25",fuel only - not a mileage jurisdiction row
+TN,44.3,$201.26,fuel only - not a mileage jurisdiction row
+GA,206.6,$926.42,fuel only - not a mileage jurisdiction row
+
+
+Page 42
 
 # Page 43
 
-Generated: 11/02/2025 09:14 AM CST,Prairie Route Carriers Inc
-,"1843 WESTFIELD CROSSING"
-,"PLAINFIELD, IL 60544"
-,312-555-0143
-IFTA Mileage: All trucks - 2025 - Q 4,
-7/1/2025 - 9/30/2025,
-Vehicle: 950,
-#,State,Identified Miles,Unidentified Miles,Total
-1,Arkansas,41.6,0.0,41.6
-2,California,4796.8,0.0,4796.8
-3,Colorado,3287.3,0.0,3287.3
-4,Connecticut,2018.8,0.0,2018.8
-5,Florida,5243.2,0.0,5243.2
-6,Georgia,3387.0,0.0,3387.0
-7,Idaho,77.3,0.0,77.3
-8,Illinois,3348.3,0.0,3348.3
-9,Indiana,4884.9,0.0,4884.9
-10,Iowa,2539.4,0.0,2539.4
-11,Kansas,5228.2,0.0,5228.2
-12,Kentucky,27.7,0.0,27.7
-13,Louisiana,6121.8,0.0,6121.8
-14,Maryland,5953.4,0.0,5953.4
-15,Michigan,7098.0,0.0,7098.0
-16,Minnesota,57.3,0.0,57.3
-17,Mississippi,2281.1,63.6,2344.7
-18,Montana,6358.7,0.0,6358.7
-19,Nebraska,1121.2,0.0,1121.2
-20,New Mexico,6765.5,0.0,6765.5
-21,New York,54.2,0.0,54.2
-22,North Carolina,367.5,0.0,367.5
-23,North Dakota,3121.8,0.0,3121.8
-24,Oklahoma,1258.8,0.0,1258.8
-25,Oregon,1849.9,159.6,2009.5
-26,Pennsylvania,3424.9,0.0,3424.9
-27,Tennessee,2671.7,193.4,2865.1
-28,Texas,710.7,72.0,782.7
-29,Utah,5864.6,282.5,6147.1
-Page 43 of 124,
+Hearthline Freight Cooperative,VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet,Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review,
+
+UNIT,VIN suffix / Plate,Vehicle / Terminal,Fleet / Quarter
+"3977
+continued","VIN suffix C528093
+Plate AP39464","Kenworth
+dedicated / Memphis TN","Fleet ref FLT-821
+Quarter: 2025 Q3"
+
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
+
+JURISDICTION AND SOURCE NOTE,ACCEPTED / IDENTIFIED MILES,EXCEPTION / UNIDENTIFIED MILES,REPORTED JURISDICTION TOTAL
+"Kentucky
+route exception cleared by mileage desk","6,809.7",0.0,"6,809.7"
+"Louisiana
+trip-sheet and dispatch legs reconciled","4,631.6",346.6,"4,978.2"
+"Maryland
+E-ZPass and fuel stop support reviewed","5,285.3",0.0,"5,285.3"
+"Michigan
+route exception cleared by mileage desk","3,310.3",0.5,"3,310.8"
+"Minnesota
+telematics accepted; odometer tie-out reviewed","2,722.8",0.0,"2,722.8"
+"Mississippi
+cross-border segment verified from GPS batch","7,081.8",0.0,"7,081.8"
+"Missouri
+trip-sheet and dispatch legs reconciled","4,535.4",39.2,"4,574.6"
+"Montana
+manual correction retained in quarter workpaper",588.2,0.0,588.2
+"Nebraska
+cross-border segment verified from GPS batch","6,031.9",0.0,"6,031.9"
+"Nevada
+cross-border segment verified from GPS batch","3,623.7",71.3,"3,695.0"
+"New Jersey
+route exception cleared by mileage desk","1,087.3",0.0,"1,087.3"
+"New Mexico
+route exception cleared by mileage desk","6,005.0",0.0,"6,005.0"
+"New York
+manual correction retained in quarter workpaper","2,382.3",0.0,"2,382.3"
+
+Page 43
 
 # Page 44
 
-Generated: 11/02/2025 09:14 AM CST
+Hearthline Freight Cooperative                       VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                      Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
+________________________________________________________________________________
 
-<div style="text-align: right;">
-<b>Prairie Route Carriers Inc</b><br>
-1844 WESTFIELD CROSSING<br>
-PLAINFIELD, IL 60544<br>
-312-555-0144
-</div>
+UNIT: 3977 (continued)
+VIN suffix C528093 | Plate AP39464
+Kenworth | dedicated / Memphis TN
+Fleet ref FLT-821 | Quarter: 2025 Q3
+________________________________________________________________________________
 
-<div style="text-align: center;">
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
 
-# IFTA Mileage: All trucks - 2025 - Q 4
-### 7/1/2025 - 9/30/2025
+"JURISDICTION AND SOURCE NOTE","ACCEPTED / IDENTIFIED MILES","EXCEPTION / UNIDENTIFIED MILES","REPORTED JURISDICTION TOTAL"
+"North Dakota
+E-ZPass and fuel stop support reviewed","6,715.7","0.0","6,715.7"
+"Ohio
+E-ZPass and fuel stop support reviewed","6,682.2","0.0","6,682.2"
+"Oregon
+E-ZPass and fuel stop support reviewed","2,317.9","0.0","2,317.9"
+"Pennsylvania
+telematics accepted; odometer tie-out reviewed","1,693.2","54.3","1,747.5"
+"South Carolina
+trip-sheet and dispatch legs reconciled","4,747.2","0.0","4,747.2"
+"Tennessee
+E-ZPass and fuel stop support reviewed","5,426.2","0.0","5,426.2"
+"Texas
+E-ZPass and fuel stop support reviewed","4,935.8","0.0","4,935.8"
+"Utah
+manual correction retained in quarter workpaper","6,548.6","0.0","6,548.6"
+"Virginia
+E-ZPass and fuel stop support reviewed","4,787.1","0.0","4,787.1"
+"Washington
+trip-sheet and dispatch legs reconciled","3,817.4","0.0","3,817.4"
+"West Virginia
+E-ZPass and fuel stop support reviewed","1,890.3","0.0","1,890.3"
+"Wyoming
+E-ZPass and fuel stop support reviewed","63.0","242.3","305.3"
 
-## Vehicle: 950 continued
-
-</div>
-
-| # | State | Identified Miles | Unidentified Miles | Total |
-|---|---|---|---|---|
-| 30 | Virginia | 6949.6 | 0.0 | 6949.6 |
-| 31 | Washington | 3032.8 | 0.0 | 3032.8 |
-| 32 | West Virginia | 2.2 | 118.6 | 120.8 |
-| 33 | Wisconsin | 6138.4 | 0.0 | 6138.4 |
-| 34 | Wyoming | 826.3 | 0.0 | 826.3 |
-| | **Total** | **106910.9** | **889.7** | **107800.6** |
-
-<div style="text-align: right; margin-top: 200px;">
-Page 44 of 124
-</div>
+Page 44
 
 # Page 45
 
-Generated: 11/02/2025 09:14 AM CST                                      Prairie Route Carriers Inc
-                                                                          1845 WESTFIELD CROSSING
-                                                                            PLAINFIELD, IL 60544
-                                                                                  312-555-0145
+Hearthline Freight Cooperative
+Quarterly IFTA workpaper packet
+Account HFC-742018 / Fleet mileage review
 
+VEHICLE MILEAGE SUPPORT
+Prepared 11/02/2025 09:14 CST
 
-                            IFTA Mileage: All trucks - 2025 - Q 4
-                                    7/1/2025 - 9/30/2025
+| UNIT | VIN suffix N348252 Plate AP15617 | Peterbilt regional / Joliet IL | Fleet ref FLT-373 Quarter: 2025 Q3 |
+| :--- | :--- | :--- | :--- |
+| **906** | | | |
 
-                                        Vehicle: 369
+Mileage jurisdictions for this unit are listed below. The unit number is inherited by every row on this page.
 
-| # | State | Identified Miles | Unidentified Miles | Total |
-|---|---|---|---|---|
-| 1 | Alabama | 4258.8 | 0.0 | 4258.8 |
-| 2 | Arizona | 6179.6 | 0.0 | 6179.6 |
-| 3 | Arkansas | 5974.3 | 5.2 | 5979.5 |
-| 4 | Colorado | 55.1 | 0.0 | 55.1 |
-| 5 | Connecticut | 5953.1 | 0.0 | 5953.1 |
-| 6 | Georgia | 5069.2 | 0.0 | 5069.2 |
-| 7 | Idaho | 778.2 | 0.0 | 778.2 |
-| 8 | Illinois | 1054.8 | 0.0 | 1054.8 |
-| 9 | Indiana | 3451.1 | 0.0 | 3451.1 |
-| 10 | Iowa | 4004.0 | 0.0 | 4004.0 |
-| 11 | Kentucky | 4243.1 | 0.0 | 4243.1 |
-| 12 | Louisiana | 4446.2 | 0.0 | 4446.2 |
-| 13 | Maryland | 5253.5 | 0.0 | 5253.5 |
-| 14 | Michigan | 1399.3 | 0.0 | 1399.3 |
-| 15 | Minnesota | 5723.7 | 0.0 | 5723.7 |
-| 16 | Mississippi | 2158.1 | 0.0 | 2158.1 |
-| 17 | Missouri | 5108.3 | 29.9 | 5138.2 |
-| 18 | Montana | 5044.4 | 0.0 | 5044.4 |
-| 19 | New Jersey | 5727.8 | 0.0 | 5727.8 |
-| 20 | New Mexico | 49.6 | 0.0 | 49.6 |
-| 21 | New York | 1521.0 | 0.0 | 1521.0 |
-| 22 | North Carolina | 6090.2 | 0.0 | 6090.2 |
-| 23 | Ohio | 2432.6 | 0.0 | 2432.6 |
-| 24 | Oregon | 3467.7 | 0.0 | 3467.7 |
-| 25 | Pennsylvania | 6976.8 | 0.0 | 6976.8 |
-| 26 | South Carolina | 66.8 | 0.0 | 66.8 |
-| 27 | Texas | 6632.2 | 0.0 | 6632.2 |
-| 28 | Utah | 18.0 | 0.0 | 18.0 |
-| 29 | Virginia | 3289.1 | 0.0 | 3289.1 |
+| JURISDICTION AND SOURCE NOTE | ACCEPTED / IDENTIFIED MILES | EXCEPTION / UNIDENTIFIED MILES | REPORTED JURISDICTION TOTAL |
+| :--- | :---: | :---: | :---: |
+| **Alabama** <br> E-ZPass and fuel stop support reviewed | 231.7 | 90.9 | 322.6 |
+| **Arkansas** <br> E-ZPass and fuel stop support reviewed | 3,437.8 | 0.0 | 3,437.8 |
+| **California** <br> route exception cleared by mileage desk | 3,995.7 | 0.0 | 3,995.7 |
+| **Colorado** <br> manual correction retained in quarter workpaper | 1,712.4 | 0.0 | 1,712.4 |
+| **Connecticut** <br> route exception cleared by mileage desk | 1,536.0 | 0.0 | 1,536.0 |
+| **Florida** <br> cross-border segment verified from GPS batch | 6,450.5 | 0.0 | 6,450.5 |
+| **Idaho** <br> trip-sheet and dispatch legs reconciled | 5,532.0 | 0.0 | 5,532.0 |
+| **Illinois** <br> cross-border segment verified from GPS batch | 6,973.3 | 0.0 | 6,973.3 |
+| **Indiana** <br> manual correction retained in quarter workpaper | 5,839.3 | 0.0 | 5,839.3 |
+| **Kansas** <br> telematics accepted; odometer tie-out reviewed | 5,018.5 | 0.0 | 5,018.5 |
+| **Kentucky** <br> telematics accepted; odometer tie-out reviewed | 5,611.9 | 0.0 | 5,611.9 |
+| **Louisiana** <br> manual correction retained in quarter workpaper | 1,359.8 | 0.0 | 1,359.8 |
 
-                                                                                 Page 45 of 124
+**Unit quarter tie-out**
+Accepted: 125,343.0
+Exception: 838.9
+Reported: 126,181.9
+
+**Fuel-card reconciliation sample**
+
+| JUR | GALLONS | AMOUNT | NOTE |
+| :--- | :---: | :---: | :--- |
+| KY | 349.0 | $1,279.64 | fuel only - not a mileage jurisdiction row |
+| PA | 251.1 | $1,138.03 | fuel only - not a mileage jurisdiction row |
+| WI | 114.3 | $430.73 | fuel only - not a mileage jurisdiction row |
+
+Page 45
 
 # Page 46
 
-Generated: 11/02/2025 09:14 AM CST
+Hearthline Freight Cooperative                                           VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                                          Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
 
-Prairie Route Carriers Inc
-1846 WESTFIELD CROSSING
-PLAINFIELD, IL 60544
-312-555-0146
+___________________________________________________________________________________________________________
+|                                                                                                         |
+|  UNIT                       VIN suffix N348252         Peterbilt                  Fleet ref FLT-373     |
+|  906                        Plate AP15617              regional / Joliet IL       Quarter: 2025 Q3      |
+|  continued                                                                                              |
+|_________________________________________________________________________________________________________|
 
-# IFTA Mileage: All trucks - 2025 - Q 4
-### 7/1/2025 - 9/30/2025
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
 
-## Vehicle: 369 continued
+| JURISDICTION AND SOURCE NOTE                  | ACCEPTED /       | EXCEPTION /        | REPORTED           |
+|                                               | IDENTIFIED MILES | UNIDENTIFIED MILES | JURISDICTION TOTAL |
+|-----------------------------------------------|-----------------:|-------------------:|-------------------:|
+| Maryland                                      |          6,681.5 |               19.7 |            6,701.2 |
+| trip-sheet and dispatch legs reconciled        |                  |                    |                    |
+|-----------------------------------------------|-----------------:|-------------------:|-------------------:|
+| Michigan                                      |            764.1 |                0.0 |              764.1 |
+| manual correction retained in quarter workpaper|                  |                    |                    |
+|-----------------------------------------------|-----------------:|-------------------:|-------------------:|
+| Mississippi                                   |          6,030.6 |                0.0 |            6,030.6 |
+| telematics accepted; odometer tie-out reviewed |                  |                    |                    |
+|-----------------------------------------------|-----------------:|-------------------:|-------------------:|
+| Montana                                       |          1,538.1 |                0.0 |            1,538.1 |
+| route exception cleared by mileage desk        |                  |                    |                    |
+|-----------------------------------------------|-----------------:|-------------------:|-------------------:|
+| Nebraska                                      |          5,336.2 |                0.0 |            5,336.2 |
+| route exception cleared by mileage desk        |                  |                    |                    |
+|-----------------------------------------------|-----------------:|-------------------:|-------------------:|
+| New Jersey                                    |          6,983.6 |              186.1 |            7,169.7 |
+| route exception cleared by mileage desk        |                  |                    |                    |
+|-----------------------------------------------|-----------------:|-------------------:|-------------------:|
+| New Mexico                                    |            426.1 |                0.0 |              426.1 |
+| manual correction retained in quarter workpaper|                  |                    |                    |
+|-----------------------------------------------|-----------------:|-------------------:|-------------------:|
+| New York                                      |          2,513.3 |                0.0 |            2,513.3 |
+| cross-border segment verified from GPS batch  |                  |                    |                    |
+|-----------------------------------------------|-----------------:|-------------------:|-------------------:|
+| North Dakota                                  |          5,335.4 |                0.0 |            5,335.4 |
+| route exception cleared by mileage desk        |                  |                    |                    |
+|-----------------------------------------------|-----------------:|-------------------:|-------------------:|
+| Ohio                                          |             54.9 |                0.0 |               54.9 |
+| manual correction retained in quarter workpaper|                  |                    |                    |
+|_______________________________________________|__________________|____________________|____________________|
 
-| # | State | Identified Miles | Unidentified Miles | Total |
-| :--- | :--- | :--- | :--- | :--- |
-| 30 | Washington | 1197.9 | 0.0 | 1197.9 |
-| 31 | Wyoming | 3507.5 | 0.0 | 3507.5 |
-| | *Total* | *111132.0* | *35.1* | *111167.1* |
-
-Page 46 of 124
+Page 46
 
 # Page 47
 
-Generated: 11/02/2025 09:14 AM CST                                       Prairie Route Carriers Inc
-                                                                            1847 WESTFIELD CROSSING
-                                                                               PLAINFIELD, IL 60544
-                                                                                       312-555-0147
+Hearthline Freight Cooperative                                          VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                                        Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
 
-                                   IFTA Mileage: All trucks - 2025 - Q 4
-                                            7/1/2025 - 9/30/2025
+"UNIT","VIN suffix N348252","Peterbilt","Fleet ref FLT-373"
+"906","Plate AP15617","regional / Joliet IL","Quarter: 2025 Q3"
+"continued","","",""
 
-                                                Vehicle: 568
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
 
-| # | State | Identified Miles | Unidentified Miles | Total |
-|---|---|---|---|---|
-| 1 | Alabama | 781.7 | 0.0 | 781.7 |
-| 2 | Arizona | 3903.8 | 329.9 | 4233.7 |
-| 3 | Arkansas | 5863.5 | 0.0 | 5863.5 |
-| 4 | California | 555.5 | 0.0 | 555.5 |
-| 5 | Colorado | 34.2 | 36.9 | 71.1 |
-| 6 | Connecticut | 6952.5 | 0.0 | 6952.5 |
-| 7 | Delaware | 4168.4 | 0.0 | 4168.4 |
-| 8 | Georgia | 3518.3 | 0.0 | 3518.3 |
-| 9 | Idaho | 5788.9 | 220.4 | 6009.3 |
-| 10 | Illinois | 92.3 | 0.0 | 92.3 |
-| 11 | Indiana | 4401.5 | 8.4 | 4409.9 |
-| 12 | Iowa | 5817.9 | 0.0 | 5817.9 |
-| 13 | Kansas | 6702.9 | 0.0 | 6702.9 |
-| 14 | Kentucky | 5011.0 | 0.0 | 5011.0 |
-| 15 | Louisiana | 2586.7 | 0.0 | 2586.7 |
-| 16 | Maryland | 1511.8 | 0.0 | 1511.8 |
-| 17 | Michigan | 857.8 | 0.0 | 857.8 |
-| 18 | Minnesota | 1568.8 | 0.0 | 1568.8 |
-| 19 | Mississippi | 2764.6 | 202.0 | 2966.6 |
-| 20 | Missouri | 5043.3 | 0.0 | 5043.3 |
-| 21 | Montana | 2891.0 | 0.0 | 2891.0 |
-| 22 | Nebraska | 1928.9 | 0.0 | 1928.9 |
-| 23 | Nevada | 958.0 | 0.0 | 958.0 |
-| 24 | New Jersey | 4172.2 | 0.0 | 4172.2 |
-| 25 | New Mexico | 1114.8 | 0.0 | 1114.8 |
-| 26 | North Carolina | 6908.4 | 262.3 | 7170.7 |
-| 27 | North Dakota | 5929.4 | 0.0 | 5929.4 |
-| 28 | Ohio | 1242.4 | 0.0 | 1242.4 |
-| 29 | Oklahoma | 1089.7 | 116.2 | 1205.9 |
+"JURISDICTION AND SOURCE NOTE","ACCEPTED / IDENTIFIED MILES","EXCEPTION / UNIDENTIFIED MILES","REPORTED JURISDICTION TOTAL"
+"Oklahoma
+E-ZPass and fuel stop support reviewed","5,952.0","0.0","5,952.0"
+"Oregon
+trip-sheet and dispatch legs reconciled","711.4","210.5","921.9"
+"Pennsylvania
+route exception cleared by mileage desk","3,774.0","0.0","3,774.0"
+"South Carolina
+telematics accepted; odometer tie-out reviewed","6,971.5","0.0","6,971.5"
+"Texas
+E-ZPass and fuel stop support reviewed","7,063.1","180.1","7,243.2"
+"Utah
+E-ZPass and fuel stop support reviewed","6,622.6","151.6","6,774.2"
+"Virginia
+telematics accepted; odometer tie-out reviewed","3,446.4","0.0","3,446.4"
+"Washington
+E-ZPass and fuel stop support reviewed","30.9","0.0","30.9"
+"Wisconsin
+E-ZPass and fuel stop support reviewed","4,266.5","0.0","4,266.5"
+"Wyoming
+route exception cleared by mileage desk","3,141.9","0.0","3,141.9"
 
-                                                                                      Page 47 of 124
+Page 47
 
 # Page 48
 
-#,State,Identified Miles,Unidentified Miles,Total
-30,Oregon,2832.9,0.0,2832.9
-31,Pennsylvania,27.1,325.4,352.5
-32,South Carolina,29.9,0.0,29.9
-33,Tennessee,3980.3,0.0,3980.3
-34,Texas,4182.9,0.0,4182.9
-35,Utah,4029.8,161.6,4191.4
-36,Virginia,6488.9,63.9,6552.8
-37,Washington,1411.2,0.0,1411.2
-38,West Virginia,496.4,0.0,496.4
-39,Wisconsin,5205.4,0.0,5205.4
-40,Wyoming,6928.9,0.0,6928.9
-,Total,129773.9,1727.0,131500.9
+Hearthline Freight Cooperative                              VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                              Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
+__________________________________________________________________________________________
+
++----------------------------------------------------------------------------------------+
+| UNIT         | VIN suffix S683834      | Mack                     | Fleet ref FLT-377      |
+| 900          | Plate AP50763           | regional / Davenport IA  | Quarter: 2025 Q3       |
++----------------------------------------------------------------------------------------+
+
+Mileage jurisdictions for this unit are listed below. The unit number is inherited by every row on this page.
+
+----------------------------------------------------------------------------------------------------
+           JURISDICTION AND SOURCE NOTE             |  ACCEPTED /   |  EXCEPTION /   |   REPORTED   
+                                                    | IDENTIFIED MI | UNIDENTIFIED M | JURISDICTION 
+----------------------------------------------------------------------------------------------------
+Alabama                                             |       5,644.9 |            0.0 |      5,644.9 
+E-ZPass and fuel stop support reviewed              |               |                |              
+----------------------------------------------------------------------------------------------------
+Arkansas                                            |       6,172.1 |            0.0 |      6,172.1 
+cross-border segment verified from GPS batch        |               |                |              
+----------------------------------------------------------------------------------------------------
+California                                          |          92.1 |          297.4 |        389.5 
+manual correction retained in quarter workpaper     |               |                |              
+----------------------------------------------------------------------------------------------------
+Connecticut                                         |       3,222.2 |            0.0 |      3,222.2 
+trip-sheet and dispatch legs reconciled             |               |                |              
+----------------------------------------------------------------------------------------------------
+Delaware                                            |       3,647.3 |            0.0 |      3,647.3 
+cross-border segment verified from GPS batch        |               |                |              
+----------------------------------------------------------------------------------------------------
+Florida                                             |         171.1 |            0.0 |        171.1 
+telematics accepted; odometer tie-out reviewed      |               |                |              
+----------------------------------------------------------------------------------------------------
+Georgia                                             |       6,955.0 |            0.0 |      6,955.0 
+route exception cleared by mileage desk             |               |                |              
+----------------------------------------------------------------------------------------------------
+Idaho                                               |       5,757.2 |          342.3 |      6,099.5 
+manual correction retained in quarter workpaper     |               |                |              
+----------------------------------------------------------------------------------------------------
+Illinois                                            |         777.1 |            0.0 |        777.1 
+telematics accepted; odometer tie-out reviewed      |               |                |              
+----------------------------------------------------------------------------------------------------
+Indiana                                             |       5,757.1 |            0.0 |      5,757.1 
+E-ZPass and fuel stop support reviewed              |               |                |              
+----------------------------------------------------------------------------------------------------
+Iowa                                                |         153.8 |            0.0 |        153.8 
+trip-sheet and dispatch legs reconciled             |               |                |              
+----------------------------------------------------------------------------------------------------
+Kansas                                              |          78.6 |          161.7 |        240.3 
+E-ZPass and fuel stop support reviewed              |               |                |              
+----------------------------------------------------------------------------------------------------
+
++---------------------------------------+   +------------------------------------------------------------------------------+
+| Unit quarter tie-out                  |   | Fuel-card reconciliation sample                                              |
+| Accepted: 111,287.1                   |   |                                                                              |
+| Exception: 1,442.8                    |   | JUR    GALLONS     AMOUNT      NOTE                                          |
+| Reported: 112,729.9                   |   | TN       268.4  $1,103.42      fuel only - not a mileage jurisdiction row    |
+|                                       |   | WI       122.2    $531.96      fuel only - not a mileage jurisdiction row    |
+|                                       |   | IL       258.2    $940.77      fuel only - not a mileage jurisdiction row    |
++---------------------------------------+   +------------------------------------------------------------------------------+
+
+                                                                                                                   Page 48
 
 # Page 49
 
-#,State,Identified Miles,Unidentified Miles,Total
-1,Alabama,2524.1,0.0,2524.1
-2,Arizona,6535.6,0.0,6535.6
-3,Arkansas,6012.1,0.0,6012.1
-4,California,3993.2,0.0,3993.2
-5,Connecticut,3476.1,0.0,3476.1
-6,Delaware,82.2,225.5,307.7
-7,Florida,3892.9,0.0,3892.9
-8,Georgia,263.6,0.0,263.6
-9,Idaho,752.9,0.5,753.4
-10,Illinois,3342.5,0.0,3342.5
-11,Indiana,2168.7,0.0,2168.7
-12,Iowa,1192.8,0.0,1192.8
-13,Kansas,784.4,0.0,784.4
-14,Kentucky,1199.9,0.0,1199.9
-15,Louisiana,2880.2,348.7,3228.9
-16,Maryland,2845.3,0.0,2845.3
-17,Michigan,66.1,0.0,66.1
-18,Minnesota,3052.6,0.0,3052.6
-19,Mississippi,1924.3,0.0,1924.3
-20,Missouri,646.6,155.4,802.0
-21,Montana,6368.9,0.0,6368.9
-22,Nebraska,4832.5,0.0,4832.5
-23,Nevada,5368.3,104.8,5473.1
-24,New Jersey,2489.0,0.0,2489.0
-25,New Mexico,2976.2,0.0,2976.2
-26,New York,54.0,0.0,54.0
-27,North Carolina,1470.9,0.0,1470.9
-28,North Dakota,1272.6,0.0,1272.6
-29,Ohio,8.3,243.1,251.4
+Hearthline Freight Cooperative                           VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                          Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
+
+________________________________________________________________________________
+| UNIT             | VIN suffix S683834 | Mack                    | Fleet ref FLT-377  |
+| 900              | Plate AP50763      | regional / Davenport IA | Quarter: 2025 Q3   |
+| continued        |                    |                         |                    |
+________________________________________________________________________________
+
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
+
+"JURISDICTION AND SOURCE NOTE","ACCEPTED / IDENTIFIED MILES","EXCEPTION / UNIDENTIFIED MILES","REPORTED JURISDICTION TOTAL"
+"Kentucky
+trip-sheet and dispatch legs reconciled","102.4","0.0","102.4"
+"Louisiana
+telematics accepted; odometer tie-out reviewed","805.3","0.0","805.3"
+"Minnesota
+manual correction retained in quarter workpaper","27.6","0.0","27.6"
+"Mississippi
+cross-border segment verified from GPS batch","806.8","189.8","996.6"
+"Missouri
+route exception cleared by mileage desk","5,628.6","0.0","5,628.6"
+"Montana
+E-ZPass and fuel stop support reviewed","5,995.7","0.0","5,995.7"
+"New Jersey
+route exception cleared by mileage desk","4,983.8","0.0","4,983.8"
+"New Mexico
+trip-sheet and dispatch legs reconciled","3,684.4","0.0","3,684.4"
+"New York
+manual correction retained in quarter workpaper","6,969.5","0.0","6,969.5"
+"North Carolina
+manual correction retained in quarter workpaper","5,623.5","0.0","5,623.5"
+
+Page 49
 
 # Page 50
 
-Generated: 11/02/2025 09:14 AM CST                     Prairie Route Carriers Inc
-                                                       1850 WESTFIELD CROSSING
-                                                          PLAINFIELD, IL 60544
-                                                                312-555-0150
+Hearthline Freight Cooperative                                          VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                                          Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
+_________________________________________________________________________________________________________
 
++--------------------+----------------------+-----------------------+-------------------------+
+| UNIT               | VIN suffix S683834   | Mack                  | Fleet ref FLT-377       |
+| **900**            | Plate AP50763        | regional /            | Quarter: 2025 Q3        |
+| continued          |                      | Davenport IA          |                         |
++--------------------+----------------------+-----------------------+-------------------------+
 
-                  IFTA Mileage: All trucks - 2025 - Q 4
-                          7/1/2025 - 9/30/2025
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
 
-                        Vehicle: 8074 continued
+| JURISDICTION AND SOURCE NOTE | ACCEPTED / IDENTIFIED MILES | EXCEPTION / UNIDENTIFIED MILES | REPORTED JURISDICTION TOTAL |
+| :--- | :---: | :---: | :---: |
+| **North Dakota** <br>route exception cleared by mileage desk | 1,384.5 | 49.8 | 1,434.3 |
+| **Oklahoma** <br>E-ZPass and fuel stop support reviewed | 6,554.0 | 0.0 | 6,554.0 |
+| **Pennsylvania** <br>E-ZPass and fuel stop support reviewed | 5,861.0 | 0.0 | 5,861.0 |
+| **South Carolina** <br>cross-border segment verified from GPS batch | 2,768.9 | 0.0 | 2,768.9 |
+| **Texas** <br>manual correction retained in quarter workpaper | 797.8 | 224.6 | 1,022.4 |
+| **Virginia** <br>cross-border segment verified from GPS batch | 4,743.0 | 0.0 | 4,743.0 |
+| **Washington** <br>manual correction retained in quarter workpaper | 1,870.7 | 0.0 | 1,870.7 |
+| **West Virginia** <br>manual correction retained in quarter workpaper | 2,749.6 | 149.6 | 2,899.2 |
+| **Wisconsin** <br>E-ZPass and fuel stop support reviewed | 6,724.7 | 0.0 | 6,724.7 |
+| **Wyoming** <br>E-ZPass and fuel stop support reviewed | 4,776.8 | 27.6 | 4,804.4 |
 
+<br>
 
-| # | State | Identified Miles | Unidentified Miles | Total |
-|---|---|---|---|---|
-| 30 | Oregon | 55.8 | 0.0 | 55.8 |
-| 31 | Pennsylvania | 4863.3 | 0.0 | 4863.3 |
-| 32 | Tennessee | 3644.8 | 0.0 | 3644.8 |
-| 33 | Texas | 2779.9 | 330.9 | 3110.8 |
-| 34 | Utah | 5787.2 | 0.0 | 5787.2 |
-| 35 | Virginia | 6048.4 | 0.0 | 6048.4 |
-| 36 | Washington | 5818.8 | 359.6 | 6178.4 |
-| 37 | West Virginia | 5806.0 | 148.7 | 5954.7 |
-| 38 | Wisconsin | 2392.2 | 0.0 | 2392.2 |
-| 39 | Wyoming | 7088.6 | 0.0 | 7088.6 |
-| | *Total* | *116761.8* | *1917.2* | *118679.0* |
-
-
-                                                               Page 50 of 124
+<div style="text-align: right;">Page 50</div>
 
 # Page 51
 
-Generated: 11/02/2025 09:14 AM CST                                      Prairie Route Carriers Inc
-                                                                        1851 WESTFIELD CROSSING
-                                                                        PLAINFIELD, IL 60544
-                                                                        312-555-0151
+Hearthline Freight Cooperative                                    VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                                    Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
+____________________________________________________________________________________________________
 
-# IFTA Mileage: All trucks - 2025 - Q 4
-### 7/1/2025 - 9/30/2025
+| UNIT | VIN suffix E415138 | Kenworth | Fleet ref FLT-600 |
+| **7321** | Plate AP11033 | intermodal / Kansas City | Quarter: 2025 Q3 |
+| | | MO | |
+____________________________________________________________________________________________________
 
-## Vehicle: 230
+Mileage jurisdictions for this unit are listed below. The unit number is inherited by every row on this page.
 
-| # | State | Identified Miles | Unidentified Miles | Total |
-|---|---|---|---|---|
-| 1 | Alabama | 2006.4 | 0.0 | 2006.4 |
-| 2 | Arizona | 2765.0 | 0.0 | 2765.0 |
-| 3 | Arkansas | 5234.2 | 0.0 | 5234.2 |
-| 4 | California | 72.4 | 0.0 | 72.4 |
-| 5 | Colorado | 2927.4 | 0.0 | 2927.4 |
-| 6 | Connecticut | 4173.3 | 0.0 | 4173.3 |
-| 7 | Delaware | 4778.8 | 0.0 | 4778.8 |
-| 8 | Florida | 6718.1 | 148.1 | 6866.2 |
-| 9 | Georgia | 4988.5 | 0.0 | 4988.5 |
-| 10 | Idaho | 1409.3 | 0.0 | 1409.3 |
-| 11 | Illinois | 2208.6 | 0.0 | 2208.6 |
-| 12 | Iowa | 6358.8 | 0.0 | 6358.8 |
-| 13 | Kentucky | 798.4 | 0.0 | 798.4 |
-| 14 | Louisiana | 6337.4 | 0.0 | 6337.4 |
-| 15 | Maryland | 2172.8 | 0.0 | 2172.8 |
-| 16 | Michigan | 1474.4 | 0.0 | 1474.4 |
-| 17 | Minnesota | 4233.5 | 0.0 | 4233.5 |
-| 18 | Mississippi | 1187.2 | 315.7 | 1502.9 |
-| 19 | Missouri | 3585.0 | 0.0 | 3585.0 |
-| 20 | Montana | 5695.6 | 0.0 | 5695.6 |
-| 21 | New Jersey | 5684.5 | 0.0 | 5684.5 |
-| 22 | New Mexico | 46.2 | 0.0 | 46.2 |
-| 23 | New York | 5019.9 | 5.1 | 5025.0 |
-| 24 | North Carolina | 2302.4 | 0.0 | 2302.4 |
-| 25 | North Dakota | 33.0 | 0.0 | 33.0 |
-| 26 | Ohio | 4882.3 | 0.0 | 4882.3 |
-| 27 | Oklahoma | 2620.2 | 0.0 | 2620.2 |
-| 28 | Pennsylvania | 4328.8 | 60.8 | 4389.6 |
-| 29 | South Carolina | 3931.1 | 0.0 | 3931.1 |
+| JURISDICTION AND SOURCE NOTE | ACCEPTED / IDENTIFIED MILES | EXCEPTION / UNIDENTIFIED MILES | REPORTED JURISDICTION TOTAL |
+| :--- | ---: | ---: | ---: |
+| **Alabama**<br>telematics accepted; odometer tie-out reviewed | 942.7 | 0.0 | 942.7 |
+| **Arizona**<br>telematics accepted; odometer tie-out reviewed | 6,313.5 | 0.0 | 6,313.5 |
+| **Arkansas**<br>E-ZPass and fuel stop support reviewed | 4,976.7 | 0.0 | 4,976.7 |
+| **California**<br>cross-border segment verified from GPS batch | 2,326.9 | 0.0 | 2,326.9 |
+| **Colorado**<br>telematics accepted; odometer tie-out reviewed | 101.8 | 0.0 | 101.8 |
+| **Connecticut**<br>telematics accepted; odometer tie-out reviewed | 2,037.0 | 0.0 | 2,037.0 |
+| **Florida**<br>route exception cleared by mileage desk | 4,197.4 | 0.0 | 4,197.4 |
+| **Georgia**<br>route exception cleared by mileage desk | 5,615.9 | 335.7 | 5,951.6 |
+| **Idaho**<br>E-ZPass and fuel stop support reviewed | 12.3 | 0.0 | 12.3 |
+| **Illinois**<br>trip-sheet and dispatch legs reconciled | 5,644.8 | 0.0 | 5,644.8 |
+| **Indiana**<br>manual correction retained in quarter workpaper | 6,600.2 | 0.0 | 6,600.2 |
+| **Iowa**<br>E-ZPass and fuel stop support reviewed | 5,991.6 | 0.0 | 5,991.6 |
 
-Page 51 of 124
+____________________________________________________________________________________________________
+
+**Unit quarter tie-out**
+Accepted: 99,322.2
+Exception: 1,065.3
+Reported: 100,387.5
+
+____________________________________________________________________________________________________
+
+**Fuel-card reconciliation sample**
+
+| JUR | GALLONS | AMOUNT | NOTE |
+| :--- | ---: | ---: | :--- |
+| OH | 309.9 | $1,453.85 | fuel only - not a mileage jurisdiction row |
+| OH | 95.0 | $341.18 | fuel only - not a mileage jurisdiction row |
+| IN | 151.9 | $597.16 | fuel only - not a mileage jurisdiction row |
+
+____________________________________________________________________________________________________
+Page 51
 
 # Page 52
 
-Generated: 11/02/2025 09:14 AM CST                             Prairie Route Carriers Inc
-                                                                  1852 WESTFIELD CROSSING
-                                                                     PLAINFIELD, IL 60544
-                                                                             312-555-0152
+Hearthline Freight Cooperative
+Quarterly IFTA workpaper packet
+Account HFC-742018 / Fleet mileage review
 
+VEHICLE MILEAGE SUPPORT
+Prepared 11/02/2025 09:14 CST
 
-                     IFTA Mileage: All trucks - 2025 - Q 4
-                             7/1/2025 - 9/30/2025
+----------------------------------------------------------------------------------------------------
+UNIT: 7321 (continued) | VIN suffix E415138, Plate AP11033 | Kenworth intermodal / Kansas City MO | Fleet ref FLT-600, Quarter: 2025 Q3
+----------------------------------------------------------------------------------------------------
 
-                            Vehicle: 230 continued
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
 
+JURISDICTION AND SOURCE NOTE,ACCEPTED / IDENTIFIED MILES,EXCEPTION / UNIDENTIFIED MILES,REPORTED JURISDICTION TOTAL
+"Kentucky
+cross-border segment verified from GPS batch",513.0,0.0,513.0
+"Louisiana
+trip-sheet and dispatch legs reconciled","1,005.9",0.0,"1,005.9"
+"Maryland
+E-ZPass and fuel stop support reviewed","1,674.5",190.5,"1,865.0"
+"Michigan
+trip-sheet and dispatch legs reconciled","5,908.1",111.0,"6,019.1"
+"Minnesota
+telematics accepted; odometer tie-out reviewed","4,671.6",0.0,"4,671.6"
+"Missouri
+manual correction retained in quarter workpaper",299.0,0.0,299.0
+"Montana
+E-ZPass and fuel stop support reviewed","2,343.8",186.7,"2,530.5"
+"Nebraska
+telematics accepted; odometer tie-out reviewed","2,524.9",0.0,"2,524.9"
+"Nevada
+manual correction retained in quarter workpaper","3,864.8",0.0,"3,864.8"
+"New Jersey
+telematics accepted; odometer tie-out reviewed","3,875.3",0.0,"3,875.3"
+"North Carolina
+cross-border segment verified from GPS batch",79.8,0.0,79.8
+"North Dakota
+telematics accepted; odometer tie-out reviewed","3,384.5",0.0,"3,384.5"
 
-| # | State | Identified Miles | Unidentified Miles | Total |
-|---|---|---|---|---|
-| 30 | Tennessee | 2287.7 | 368.8 | 2656.5 |
-| 31 | Texas | 98.3 | 0.0 | 98.3 |
-| 32 | Virginia | 1931.8 | 0.0 | 1931.8 |
-| 33 | Washington | 6431.6 | 0.0 | 6431.6 |
-| 34 | West Virginia | 931.6 | 0.0 | 931.6 |
-| 35 | Wisconsin | 5690.7 | 0.0 | 5690.7 |
-| 36 | Wyoming | 1628.0 | 0.0 | 1628.0 |
-| | _Total_ | _116973.2_ | _898.5_ | _117871.7_ |
-
-
-                                                                           Page 52 of 124
+Page 52
 
 # Page 53
 
-Generated: 11/02/2025 09:14 AM CST
+Hearthline Freight Cooperative                           VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                          Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
 
-Prairie Route Carriers Inc
-1853 WESTFIELD CROSSING
-PLAINFIELD, IL 60544
-312-555-0153
+========================================================================================
+| UNIT              | VIN suffix E415138      | Kenworth                 | Fleet ref FLT-600  |
+| **7321**           | Plate AP11033           | intermodal / Kansas City | Quarter: 2025 Q3   |
+| continued         |                         | MO                       |                    |
+========================================================================================
 
-# IFTA Mileage: All trucks - 2025 - Q 4
-### 7/1/2025 - 9/30/2025
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
 
-## Vehicle: 3140
+| JURISDICTION AND SOURCE NOTE | ACCEPTED / IDENTIFIED MILES | EXCEPTION / UNIDENTIFIED MILES | REPORTED JURISDICTION TOTAL |
+| :--- | :---: | :---: | :---: |
+| **Ohio** <br> cross-border segment verified from GPS batch | 3,216.5 | 0.0 | 3,216.5 |
+| **Oregon** <br> E-ZPass and fuel stop support reviewed | 3,318.8 | 0.0 | 3,318.8 |
+| **South Carolina** <br> cross-border segment verified from GPS batch | 256.3 | 0.0 | 256.3 |
+| **Tennessee** <br> cross-border segment verified from GPS batch | 3,937.9 | 0.0 | 3,937.9 |
+| **Texas** <br> telematics accepted; odometer tie-out reviewed | 4,539.5 | 130.3 | 4,669.8 |
+| **Utah** <br> E-ZPass and fuel stop support reviewed | 1,656.4 | 0.0 | 1,656.4 |
+| **Virginia** <br> telematics accepted; odometer tie-out reviewed | 71.9 | 111.1 | 183.0 |
+| **Washington** <br> telematics accepted; odometer tie-out reviewed | 3,216.9 | 0.0 | 3,216.9 |
+| **West Virginia** <br> telematics accepted; odometer tie-out reviewed | 4,173.7 | 0.0 | 4,173.7 |
+| **Wisconsin** <br> trip-sheet and dispatch legs reconciled | 0.3 | 0.0 | 0.3 |
+| **Wyoming** <br> E-ZPass and fuel stop support reviewed | 28.0 | 0.0 | 28.0 |
 
-| # | State | Identified Miles | Unidentified Miles | Total |
-|---|---|---|---|---|
-| 1 | Alabama | 931.5 | 0.0 | 931.5 |
-| 2 | Arizona | 6177.3 | 0.0 | 6177.3 |
-| 3 | California | 6839.2 | 0.0 | 6839.2 |
-| 4 | Colorado | 5491.9 | 54.9 | 5546.8 |
-| 5 | Connecticut | 3264.4 | 0.0 | 3264.4 |
-| 6 | Delaware | 2242.6 | 290.2 | 2532.8 |
-| 7 | Florida | 3955.2 | 74.1 | 4029.3 |
-| 8 | Idaho | 76.8 | 213.7 | 290.5 |
-| 9 | Illinois | 5711.5 | 368.1 | 6079.6 |
-| 10 | Indiana | 3745.9 | 0.0 | 3745.9 |
-| 11 | Kansas | 6108.7 | 328.9 | 6437.6 |
-| 12 | Kentucky | 6942.6 | 0.0 | 6942.6 |
-| 13 | Louisiana | 4434.0 | 0.0 | 4434.0 |
-| 14 | Maryland | 83.0 | 0.0 | 83.0 |
-| 15 | Michigan | 3844.9 | 0.0 | 3844.9 |
-| 16 | Mississippi | 21.1 | 79.4 | 100.5 |
-| 17 | Missouri | 2289.5 | 57.8 | 2347.3 |
-| 18 | Nebraska | 2627.7 | 0.0 | 2627.7 |
-| 19 | Nevada | 498.5 | 26.6 | 525.1 |
-| 20 | New Jersey | 5947.4 | 0.0 | 5947.4 |
-| 21 | New Mexico | 6732.3 | 0.0 | 6732.3 |
-| 22 | New York | 3073.1 | 0.0 | 3073.1 |
-| 23 | North Carolina | 1340.1 | 0.0 | 1340.1 |
-| 24 | North Dakota | 6110.7 | 0.0 | 6110.7 |
-| 25 | Ohio | 3812.1 | 0.0 | 3812.1 |
-| 26 | Oregon | 2128.6 | 0.0 | 2128.6 |
-| 27 | South Carolina | 2600.6 | 251.9 | 2852.5 |
-| 28 | Tennessee | 3953.2 | 240.5 | 4193.7 |
-| 29 | Utah | 6916.0 | 0.0 | 6916.0 |
-
-Page 53 of 124
+Page 53
 
 # Page 54
 
-Generated: 11/02/2025 09:14 AM CST
+Hearthline Freight Cooperative                                            VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                                           Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
+_______________________________________________________________________________________________________
 
-<div style="text-align: right;">
-<b>Prairie Route Carriers Inc</b><br>
-1854 WESTFIELD CROSSING<br>
-PLAINFIELD, IL 60544<br>
-312-555-0154
-</div>
+| UNIT | VIN suffix G398605 <br> Plate AP17277 | Mack <br> dedicated / Joliet IL | Fleet ref FLT-350 <br> Quarter: 2025 Q3 |
+| :--- | :--- | :--- | :--- |
+| **373** | | | |
+
+Mileage jurisdictions for this unit are listed below. The unit number is inherited by every row on this page.
+
+| JURISDICTION AND SOURCE NOTE | ACCEPTED / IDENTIFIED MILES | EXCEPTION / UNIDENTIFIED MILES | REPORTED JURISDICTION TOTAL |
+| :--- | :---: | :---: | :---: |
+| **Alabama** <br> cross-border segment verified from GPS batch | 3,031.4 | 0.0 | 3,031.4 |
+| **California** <br> manual correction retained in quarter workpaper | 1,467.1 | 0.0 | 1,467.1 |
+| **Colorado** <br> telematics accepted; odometer tie-out reviewed | 5,871.8 | 0.0 | 5,871.8 |
+| **Connecticut** <br> trip-sheet and dispatch legs reconciled | 6,316.4 | 135.2 | 6,451.6 |
+| **Delaware** <br> E-ZPass and fuel stop support reviewed | 1,062.8 | 0.0 | 1,062.8 |
+| **Florida** <br> E-ZPass and fuel stop support reviewed | 2,142.0 | 84.6 | 2,226.6 |
+| **Georgia** <br> telematics accepted; odometer tie-out reviewed | 2,344.4 | 187.6 | 2,532.0 |
+| **Idaho** <br> manual correction retained in quarter workpaper | 2,581.6 | 205.9 | 2,787.5 |
+| **Illinois** <br> cross-border segment verified from GPS batch | 5,307.4 | 300.2 | 5,607.6 |
+| **Indiana** <br> manual correction retained in quarter workpaper | 3,534.9 | 325.5 | 3,860.4 |
+| **Iowa** <br> trip-sheet and dispatch legs reconciled | 2,225.6 | 0.0 | 2,225.6 |
+| **Kansas** <br> manual correction retained in quarter workpaper | 5,079.1 | 0.0 | 5,079.1 |
+
+***
+
+### Unit quarter tie-out
+* Accepted: 116,377.8
+* Exception: 3,038.3
+* Reported: 119,416.1
+
+### Fuel-card reconciliation sample
+| JUR | GALLONS | AMOUNT | NOTE |
+| :--- | :---: | :---: | :--- |
+| PA | 235.1 | $908.54 | fuel only - not a mileage jurisdiction row |
+| IL | 122.6 | $444.66 | fuel only - not a mileage jurisdiction row |
+| IL | 290.1 | $1,296.34 | fuel only - not a mileage jurisdiction row |
 
 <br>
 
-<div style="text-align: center;">
-  <h2>IFTA Mileage: All trucks - 2025 - Q 4</h2>
-  <h3>7/1/2025 - 9/30/2025</h3>
-  <h2>Vehicle: 3140 <small>continued</small></h2>
-</div>
-
-<br>
-
-| # | State | Identified Miles | Unidentified Miles | Total |
-|---|---|---|---|---|
-| 30 | Washington | 3768.7 | 343.3 | 4112.0 |
-| 31 | Wisconsin | 3075.3 | 0.0 | 3075.3 |
-| | *Total* | *114744.4* | *2329.4* | *117073.8* |
-
-<br><br><br><br><br><br><br><br><br><br><br><br>
-
-<div style="text-align: right;">
-Page 54 of 124
-</div>
+Page 54
 
 # Page 55
 
-Generated: 11/02/2025 09:14 AM CST
+Hearthline Freight Cooperative                  VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                 Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
+________________________________________________________________________________
 
-                                                    Prairie Route Carriers Inc
-                                                    1855 WESTFIELD CROSSING
-                                                    PLAINFIELD, IL 60544
-                                                    312-555-0155
+UNIT: 373 continued
+VIN suffix G398605 / Plate AP17277
+Mack dedicated / Joliet IL
+Fleet ref FLT-350 / Quarter: 2025 Q3
+________________________________________________________________________________
 
-                     IFTA Mileage: All trucks - 2025 - Q 4
-                              7/1/2025 - 9/30/2025
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
 
-                                 Vehicle: 8566
+"JURISDICTION AND SOURCE NOTE","ACCEPTED / IDENTIFIED MILES","EXCEPTION / UNIDENTIFIED MILES","REPORTED JURISDICTION TOTAL"
+"Kentucky
+cross-border segment verified from GPS batch","32.8","327.6","360.4"
+"Maryland
+trip-sheet and dispatch legs reconciled","385.9","0.0","385.9"
+"Michigan
+telematics accepted; odometer tie-out reviewed","132.2","324.8","457.0"
+"Minnesota
+trip-sheet and dispatch legs reconciled","2,467.7","0.0","2,467.7"
+"Mississippi
+route exception cleared by mileage desk","3,751.3","0.0","3,751.3"
+"Missouri
+cross-border segment verified from GPS batch","287.2","15.7","302.9"
+"Montana
+cross-border segment verified from GPS batch","2,994.7","0.0","2,994.7"
+"Nebraska
+trip-sheet and dispatch legs reconciled","3,094.1","0.0","3,094.1"
+"Nevada
+E-ZPass and fuel stop support reviewed","3,210.4","0.0","3,210.4"
+"New Jersey
+route exception cleared by mileage desk","6,670.5","0.0","6,670.5"
+"New York
+telematics accepted; odometer tie-out reviewed","3,873.6","0.0","3,873.6"
+"North Carolina
+manual correction retained in quarter workpaper","4,352.5","181.2","4,533.7"
+"North Dakota
+cross-border segment verified from GPS batch","997.6","0.0","997.6"
 
-| # | State | Identified Miles | Unidentified Miles | Total |
-|---|---|---|---|---|
-| 1 | Alabama | 562.9 | 349.7 | 912.6 |
-| 2 | Arkansas | 3683.7 | 0.0 | 3683.7 |
-| 3 | California | 87.4 | 0.0 | 87.4 |
-| 4 | Colorado | 152.2 | 0.0 | 152.2 |
-| 5 | Connecticut | 6338.9 | 0.0 | 6338.9 |
-| 6 | Delaware | 308.8 | 0.0 | 308.8 |
-| 7 | Florida | 7.7 | 0.0 | 7.7 |
-| 8 | Georgia | 5757.2 | 371.8 | 6129.0 |
-| 9 | Idaho | 11.3 | 12.8 | 24.1 |
-| 10 | Illinois | 808.0 | 0.0 | 808.0 |
-| 11 | Indiana | 40.5 | 0.0 | 40.5 |
-| 12 | Iowa | 3236.6 | 123.9 | 3360.5 |
-| 13 | Kansas | 961.1 | 0.0 | 961.1 |
-| 14 | Kentucky | 3397.1 | 0.0 | 3397.1 |
-| 15 | Louisiana | 6032.2 | 274.6 | 6306.8 |
-| 16 | Maryland | 1914.9 | 212.7 | 2127.6 |
-| 17 | Michigan | 3030.6 | 0.0 | 3030.6 |
-| 18 | Minnesota | 14.8 | 0.0 | 14.8 |
-| 19 | Mississippi | 4332.0 | 175.0 | 4507.0 |
-| 20 | Missouri | 6924.3 | 153.8 | 7078.1 |
-| 21 | Montana | 2485.2 | 0.0 | 2485.2 |
-| 22 | Nevada | 2513.3 | 56.5 | 2569.8 |
-| 23 | New Mexico | 2266.5 | 0.0 | 2266.5 |
-| 24 | New York | 1501.3 | 194.1 | 1695.4 |
-| 25 | North Carolina | 3490.5 | 10.3 | 3500.8 |
-| 26 | North Dakota | 6635.9 | 0.0 | 6635.9 |
-| 27 | Ohio | 3440.0 | 5.5 | 3445.5 |
-| 28 | Oklahoma | 3267.7 | 0.0 | 3267.7 |
-| 29 | Oregon | 6397.4 | 332.2 | 6729.6 |
-
-                                                               Page 55 of 124
+Page 55
 
 # Page 56
 
-Generated: 11/02/2025 09:14 AM CST,,,,Prairie Route Carriers Inc
-,,,,1856 WESTFIELD CROSSING
-,,,,PLAINFIELD, IL 60544
-,,,,312-555-0156
-,,,,
-IFTA Mileage: All trucks - 2025 - Q 4,,,,
-7/1/2025 - 9/30/2025,,,,
-,,,,
-Vehicle: 8566 continued,,,,
-,,,,
-#,State,Identified Miles,Unidentified Miles,Total
-30,Pennsylvania,3401.9,0.0,3401.9
-31,South Carolina,5120.5,0.0,5120.5
-32,Tennessee,2746.4,0.0,2746.4
-33,Texas,4208.5,162.8,4371.3
-34,Utah,941.3,0.0,941.3
-35,Virginia,4652.5,0.0,4652.5
-36,West Virginia,1593.5,276.0,1869.5
-37,Wyoming,978.2,0.0,978.2
-,Total,103242.8,2711.7,105954.5
-,,,,
-,,,,Page 56 of 124
+Hearthline Freight Cooperative                       VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                      Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
+
+_________________________________________________________________________________________________
+| UNIT             | VIN suffix G398605       | Mack                    | Fleet ref FLT-350     |
+| 373              | Plate AP17277            | dedicated / Joliet IL   | Quarter: 2025 Q3      |
+| continued        |                          |                         |                       |
+|__________________|__________________________|_________________________|_______________________|
+
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
+
+JURISDICTION AND SOURCE NOTE,ACCEPTED / IDENTIFIED MILES,EXCEPTION / UNIDENTIFIED MILES,REPORTED JURISDICTION TOTAL
+"Ohio
+manual correction retained in quarter workpaper",32.3,0.0,32.3
+"Oklahoma
+route exception cleared by mileage desk",74.4,0.0,74.4
+"Oregon
+telematics accepted; odometer tie-out reviewed",4,080.9,0.0,"4,080.9"
+"Pennsylvania
+route exception cleared by mileage desk",4,895.8,0.0,"4,895.8"
+"South Carolina
+trip-sheet and dispatch legs reconciled",1,055.3,181.3,"1,236.6"
+"Tennessee
+manual correction retained in quarter workpaper",3,417.0,0.0,"3,417.0"
+"Texas
+trip-sheet and dispatch legs reconciled",2,759.9,0.0,"2,759.9"
+"Utah
+telematics accepted; odometer tie-out reviewed",759.9,274.5,"1,034.4"
+"Virginia
+route exception cleared by mileage desk",5,422.6,239.4,"5,662.0"
+"Washington
+cross-border segment verified from GPS batch",4,939.5,0.0,"4,939.5"
+"West Virginia
+cross-border segment verified from GPS batch",4,952.5,0.0,"4,952.5"
+"Wisconsin
+telematics accepted; odometer tie-out reviewed",5,893.5,42.3,"5,935.8"
+"Wyoming
+cross-border segment verified from GPS batch",4,879.2,212.5,"5,091.7"
+
+Page 56
 
 # Page 57
 
-Generated: 11/02/2025 09:14 AM CST                                      Prairie Route Carriers Inc
-                                                                        1857 WESTFIELD CROSSING
-                                                                           PLAINFIELD, IL 60544
-                                                                                   312-555-0157
+Hearthline Freight Cooperative                                                  VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                                                 Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
 
-                 IFTA Mileage: All trucks - 2025 - Q 4
-                          7/1/2025 - 9/30/2025
++-------------------------------------+-------------------------------------+-------------------------------------+-------------------------------------+
+| UNIT                                | VIN suffix W657405                  | International                       | Fleet ref FLT-747                   |
+| **9690**                            | Plate AP19154                       | regional / Memphis TN               | Quarter: 2025 Q3                     |
++-------------------------------------+-------------------------------------+-------------------------------------+-------------------------------------+
 
-                              Vehicle: 1555
+Mileage jurisdictions for this unit are listed below. The unit number is inherited by every row on this page.
 
-| # | State | Identified Miles | Unidentified Miles | Total |
-|---|---|---|---|---|
-| 1 | Alabama | 73.5 | 0.0 | 73.5 |
-| 2 | Arizona | 3783.7 | 0.0 | 3783.7 |
-| 3 | Arkansas | 4658.8 | 0.0 | 4658.8 |
-| 4 | California | 5142.0 | 0.0 | 5142.0 |
-| 5 | Colorado | 2655.5 | 364.5 | 3020.0 |
-| 6 | Connecticut | 2487.2 | 0.0 | 2487.2 |
-| 7 | Delaware | 1817.0 | 0.0 | 1817.0 |
-| 8 | Florida | 2957.7 | 0.0 | 2957.7 |
-| 9 | Georgia | 4549.9 | 0.0 | 4549.9 |
-| 10 | Illinois | 3899.3 | 0.0 | 3899.3 |
-| 11 | Indiana | 6332.5 | 0.0 | 6332.5 |
-| 12 | Iowa | 3919.5 | 37.6 | 3957.1 |
-| 13 | Kansas | 43.0 | 0.0 | 43.0 |
-| 14 | Louisiana | 4161.1 | 181.5 | 4342.6 |
-| 15 | Maryland | 879.1 | 260.5 | 1139.6 |
-| 16 | Michigan | 3675.9 | 0.0 | 3675.9 |
-| 17 | Minnesota | 1071.0 | 0.0 | 1071.0 |
-| 18 | Mississippi | 23.5 | 0.0 | 23.5 |
-| 19 | Montana | 6642.5 | 0.0 | 6642.5 |
-| 20 | Nebraska | 69.2 | 0.0 | 69.2 |
-| 21 | Nevada | 3668.8 | 345.3 | 4014.1 |
-| 22 | New Jersey | 566.9 | 51.1 | 618.0 |
-| 23 | New Mexico | 19.9 | 0.0 | 19.9 |
-| 24 | New York | 3800.8 | 0.0 | 3800.8 |
-| 25 | Ohio | 2125.6 | 0.0 | 2125.6 |
-| 26 | Oklahoma | 4810.1 | 0.0 | 4810.1 |
-| 27 | Oregon | 4188.8 | 0.0 | 4188.8 |
-| 28 | South Carolina | 6426.5 | 0.0 | 6426.5 |
-| 29 | Tennessee | 2313.8 | 0.0 | 2313.8 |
+| JURISDICTION AND SOURCE NOTE | ACCEPTED / IDENTIFIED MILES | EXCEPTION / UNIDENTIFIED MILES | REPORTED JURISDICTION TOTAL |
+| :--- | :---: | :---: | :---: |
+| **Arizona** <br><sub>telematics accepted; odometer tie-out reviewed</sub> | 7,032.8 | 0.0 | 7,032.8 |
+| **California** <br><sub>manual correction retained in quarter workpaper</sub> | 5,444.6 | 0.0 | 5,444.6 |
+| **Colorado** <br><sub>cross-border segment verified from GPS batch</sub> | 26.1 | 375.9 | 402.0 |
+| **Connecticut** <br><sub>telematics accepted; odometer tie-out reviewed</sub> | 5,209.7 | 0.0 | 5,209.7 |
+| **Delaware** <br><sub>trip-sheet and dispatch legs reconciled</sub> | 25.9 | 36.9 | 62.8 |
+| **Florida** <br><sub>E-ZPass and fuel stop support reviewed</sub> | 6,770.4 | 268.2 | 7,038.6 |
+| **Georgia** <br><sub>manual correction retained in quarter workpaper</sub> | 3,035.7 | 61.6 | 3,097.3 |
+| **Idaho** <br><sub>route exception cleared by mileage desk</sub> | 4,908.5 | 0.0 | 4,908.5 |
+| **Illinois** <br><sub>telematics accepted; odometer tie-out reviewed</sub> | 5,351.6 | 0.0 | 5,351.6 |
+| **Indiana** <br><sub>trip-sheet and dispatch legs reconciled</sub> | 764.2 | 0.0 | 764.2 |
+| **Iowa** <br><sub>route exception cleared by mileage desk</sub> | 5,373.1 | 345.7 | 5,718.8 |
+| **Kansas** <br><sub>cross-border segment verified from GPS batch</sub> | 3,591.8 | 0.0 | 3,591.8 |
 
-Page 57 of 124
+<br>
+
+| Unit quarter tie-out |
+| :--- |
+| Accepted: 121,862.1 |
+| Exception: 2,671.7 |
+| Reported: 124,533.8 |
+
+<br>
+
+| Fuel-card reconciliation sample | | | |
+| :--- | :---: | :---: | :--- |
+| **JUR** | **GALLONS** | **AMOUNT** | **NOTE** |
+| PA | 60.5 | $256.41 | fuel only - not a mileage jurisdiction row |
+| MO | 189.9 | $813.27 | fuel only - not a mileage jurisdiction row |
+| PA | 265.6 | $962.34 | fuel only - not a mileage jurisdiction row |
+
+<br>
+
+Page 57
 
 # Page 58
 
-Generated: 11/02/2025 09:14 AM CST
+Hearthline Freight Cooperative                                            VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                                             Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
+________________________________________________________________________________________________________
 
-                                                   Prairie Route Carriers Inc
-                                                      1858 WESTFIELD CROSSING
-                                                         PLAINFIELD, IL 60544
-                                                                 312-555-0158
+| UNIT                 | VIN suffix W657405      | International               | Fleet ref FLT-747      |
+| 9690                 | Plate AP19154           | regional / Memphis TN       | Quarter: 2025 Q3       |
+| continued            |                         |                             |                        |
+________________________________________________________________________________________________________
 
-                    IFTA Mileage: All trucks - 2025 - Q 4
-                            7/1/2025 - 9/30/2025
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
 
-                         Vehicle: 1555 continued
+| JURISDICTION AND SOURCE NOTE | ACCEPTED / IDENTIFIED MILES | EXCEPTION / UNIDENTIFIED MILES | REPORTED JURISDICTION TOTAL |
+| :--- | ---: | ---: | ---: |
+| **Louisiana**<br>cross-border segment verified from GPS batch | 6,339.7 | 0.0 | 6,339.7 |
+| **Maryland**<br>cross-border segment verified from GPS batch | 83.9 | 0.0 | 83.9 |
+| **Michigan**<br>telematics accepted; odometer tie-out reviewed | 3,531.6 | 119.0 | 3,650.6 |
+| **Minnesota**<br>cross-border segment verified from GPS batch | 4,261.0 | 0.0 | 4,261.0 |
+| **Mississippi**<br>manual correction retained in quarter workpaper | 842.1 | 174.9 | 1,017.0 |
+| **Missouri**<br>E-ZPass and fuel stop support reviewed | 6,520.5 | 231.1 | 6,751.6 |
+| **Nebraska**<br>E-ZPass and fuel stop support reviewed | 3,838.5 | 0.0 | 3,838.5 |
+| **Nevada**<br>trip-sheet and dispatch legs reconciled | 5,862.4 | 1.2 | 5,863.6 |
+| **New Jersey**<br>route exception cleared by mileage desk | 6,939.5 | 329.3 | 7,268.8 |
+| **New York**<br>manual correction retained in quarter workpaper | 66.6 | 374.2 | 440.8 |
+| **North Carolina**<br>manual correction retained in quarter workpaper | 1,705.4 | 0.0 | 1,705.4 |
 
-| # | State | Identified Miles | Unidentified Miles | Total |
-| :--- | :--- | :--- | :--- | :--- |
-| 30 | Texas | 1226.7 | 227.5 | 1454.2 |
-| 31 | Virginia | 6597.4 | 0.0 | 6597.4 |
-| 32 | Washington | 0.0 | 0.0 | 0.0 |
-| 33 | West Virginia | 4645.7 | 0.0 | 4645.7 |
-| 34 | Wisconsin | 3726.5 | 333.0 | 4059.5 |
-| | *Total* | 102959.4 | 1801.0 | 104760.4 |
-
-                                                               Page 58 of 124
+Page 58
 
 # Page 59
 
-Generated: 11/02/2025 09:14 AM CST,,,,Prairie Route Carriers Inc
-,,,,1859 WESTFIELD CROSSING
-,,,,PLAINFIELD, IL 60544
-,,,,312-555-0159
-,,,,
-,,IFTA Mileage: All trucks - 2025 - Q 4,,
-,,7/1/2025 - 9/30/2025,,
-,,,,
-,,Vehicle: 2942,,
-,,,,
-#,State,Identified Miles,Unidentified Miles,Total
-1,Arizona,1940.2,77.0,2017.2
-2,California,1899.8,0.0,1899.8
-3,Colorado,4522.1,0.0,4522.1
-4,Delaware,6046.0,0.0,6046.0
-5,Florida,6499.3,0.0,6499.3
-6,Georgia,3137.0,0.0,3137.0
-7,Idaho,6322.7,0.0,6322.7
-8,Illinois,3257.8,0.0,3257.8
-9,Iowa,2747.6,0.0,2747.6
-10,Kansas,3926.4,353.8,4280.2
-11,Kentucky,996.8,0.0,996.8
-12,Michigan,79.6,258.8,338.4
-13,Minnesota,4973.7,0.0,4973.7
-14,Mississippi,5426.3,0.0,5426.3
-15,Missouri,2155.6,206.6,2362.2
-16,Montana,3566.7,0.0,3566.7
-17,Nebraska,6453.9,0.0,6453.9
-18,Nevada,1782.9,0.0,1782.9
-19,New Jersey,3427.3,0.0,3427.3
-20,New Mexico,242.9,0.0,242.9
-21,New York,231.1,0.0,231.1
-22,North Dakota,4295.9,0.0,4295.9
-23,Ohio,832.3,0.0,832.3
-24,Oklahoma,5825.0,0.0,5825.0
-25,Oregon,6518.4,0.0,6518.4
-26,Pennsylvania,4697.3,0.0,4697.3
-27,Texas,4070.8,0.0,4070.8
-28,Utah,1237.2,0.0,1237.2
-29,Virginia,5064.6,262.4,5327.0
-,,,,
-,,,,Page 59 of 124
+Hearthline Freight Cooperative
+Quarterly IFTA workpaper packet
+Account HFC-742018 / Fleet mileage review
+
+VEHICLE MILEAGE SUPPORT
+Prepared 11/02/2025 09:14 CST
+
+----------------------------------------------------------------------------------------------
+| UNIT             | VIN suffix W657405 | International         | Fleet ref FLT-747          |
+| 9690             | Plate AP19154      | regional / Memphis TN | Quarter: 2025 Q3           |
+| continued        |                    |                       |                            |
+----------------------------------------------------------------------------------------------
+
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
+
+| JURISDICTION AND SOURCE NOTE | ACCEPTED / IDENTIFIED MILES | EXCEPTION / UNIDENTIFIED MILES | REPORTED JURISDICTION TOTAL |
+| :--- | :---: | :---: | :---: |
+| **North Dakota**<br>manual correction retained in quarter workpaper | 6,722.5 | 0.0 | 6,722.5 |
+| **Ohio**<br>cross-border segment verified from GPS batch | 3,405.9 | 0.0 | 3,405.9 |
+| **Oklahoma**<br>manual correction retained in quarter workpaper | 6,450.9 | 0.0 | 6,450.9 |
+| **Oregon**<br>route exception cleared by mileage desk | 947.9 | 195.4 | 1,143.3 |
+| **South Carolina**<br>E-ZPass and fuel stop support reviewed | 212.7 | 0.0 | 212.7 |
+| **Tennessee**<br>route exception cleared by mileage desk | 2,901.1 | 0.0 | 2,901.1 |
+| **Virginia**<br>trip-sheet and dispatch legs reconciled | 1,450.2 | 0.0 | 1,450.2 |
+| **Washington**<br>E-ZPass and fuel stop support reviewed | 6,015.4 | 17.8 | 6,033.2 |
+| **Wisconsin**<br>cross-border segment verified from GPS batch | 4,984.2 | 123.5 | 5,107.7 |
+| **Wyoming**<br>E-ZPass and fuel stop support reviewed | 1,245.7 | 17.0 | 1,262.7 |
+
+Page 59
 
 # Page 60
 
-Generated: 11/02/2025 09:14 AM CST
+Hearthline Freight Cooperative
+Quarterly IFTA workpaper packet
+Account HFC-742018 / Fleet mileage review
 
-                                                             Prairie Route Carriers Inc
-                                                                1860 WESTFIELD CROSSING
-                                                                   PLAINFIELD, IL 60544
-                                                                           312-555-0160
+VEHICLE MILEAGE SUPPORT
+Prepared 11/02/2025 09:14 CST
 
-                      IFTA Mileage: All trucks - 2025 - Q 4
-                              7/1/2025 - 9/30/2025
+UNIT: 646
+VIN suffix U872187, Plate AP60992
+Kenworth, yard relay / Gary IN
+Fleet ref FLT-910, Quarter: 2025 Q3
 
-                           Vehicle: 2942 continued
+Mileage jurisdictions for this unit are listed below. The unit number is inherited by every row on this page.
 
-#,State,Identified Miles,Unidentified Miles,Total
-30,Washington,5066.4,0.0,5066.4
-31,West Virginia,2810.5,0.0,2810.5
-,Total,110054.1,1158.6,111212.7
+"JURISDICTION AND SOURCE NOTE","ACCEPTED / IDENTIFIED MILES","EXCEPTION / UNIDENTIFIED MILES","REPORTED JURISDICTION TOTAL"
+"Alabama
+E-ZPass and fuel stop support reviewed","5,766.1","0.0","5,766.1"
+"Arizona
+trip-sheet and dispatch legs reconciled","6,338.2","319.0","6,657.2"
+"Arkansas
+manual correction retained in quarter workpaper","3,698.5","0.0","3,698.5"
+"California
+telematics accepted; odometer tie-out reviewed","6,182.7","0.0","6,182.7"
+"Colorado
+route exception cleared by mileage desk","4,263.7","0.0","4,263.7"
+"Delaware
+route exception cleared by mileage desk","570.9","0.0","570.9"
+"Florida
+cross-border segment verified from GPS batch","5,486.3","0.0","5,486.3"
+"Georgia
+manual correction retained in quarter workpaper","2,171.2","0.0","2,171.2"
+"Idaho
+route exception cleared by mileage desk","4,669.5","0.0","4,669.5"
+"Illinois
+telematics accepted; odometer tie-out reviewed","4,712.3","0.0","4,712.3"
+"Indiana
+manual correction retained in quarter workpaper","6.3","322.6","328.9"
+"Iowa
+route exception cleared by mileage desk","890.7","289.4","1,180.1"
 
-                                                                         Page 60 of 124
+Unit quarter tie-out
+Accepted: 133,569.2
+Exception: 2,527.5
+Reported: 136,096.7
+
+Fuel-card reconciliation sample
+"JUR","GALLONS","AMOUNT","NOTE"
+"TN","233.2","$1,087.16","fuel only - not a mileage jurisdiction row"
+"KY","302.3","$1,397.68","fuel only - not a mileage jurisdiction row"
+"KY","313.9","$1,304.71","fuel only - not a mileage jurisdiction row"
+
+Page 60
 
 # Page 61
 
-Generated: 11/02/2025 09:14 AM CST,,,Prairie Route Carriers Inc
-,,,1861 WESTFIELD CROSSING
-,,,PLAINFIELD, IL 60544
-,,,312-555-0161
-,,,
-,,,
-IFTA Mileage: All trucks - 2025 - Q 4,,,
-7/1/2025 - 9/30/2025,,,
-,,,
-Vehicle: 841,,,
-,,,
-#,State,Identified Miles,Unidentified Miles,Total
-1,Alabama,31.7,295.0,326.7
-2,Arizona,6088.4,0.0,6088.4
-3,California,3500.4,0.0,3500.4
-4,Colorado,4483.9,0.0,4483.9
-5,Connecticut,1621.5,298.5,1920.0
-6,Delaware,55.7,0.0,55.7
-7,Florida,3127.9,238.5,3366.4
-8,Idaho,169.9,268.2,438.1
-9,Illinois,1991.0,343.1,2334.1
-10,Indiana,2374.9,0.0,2374.9
-11,Iowa,424.2,0.0,424.2
-12,Kansas,6528.8,61.8,6590.6
-13,Kentucky,1695.3,0.0,1695.3
-14,Louisiana,5167.8,0.0,5167.8
-15,Maryland,535.3,0.0,535.3
-16,Michigan,6617.1,263.2,6880.3
-17,Minnesota,5779.6,0.0,5779.6
-18,Mississippi,34.9,152.7,187.6
-19,Missouri,65.2,0.0,65.2
-20,Montana,4476.0,58.5,4534.5
-21,Nebraska,6543.4,0.0,6543.4
-22,Nevada,3959.4,0.0,3959.4
-23,New Jersey,4898.2,78.9,4977.1
-24,New Mexico,5425.8,263.7,5689.5
-25,New York,6543.9,0.0,6543.9
-26,North Carolina,6535.3,210.6,6745.9
-27,North Dakota,6219.2,0.0,6219.2
-28,Oklahoma,3689.9,0.0,3689.9
-29,Oregon,1077.0,0.0,1077.0
-,,,
-Page 61 of 124,,,
+Hearthline Freight Cooperative
+Quarterly IFTA workpaper packet
+Account HFC-742018 / Fleet mileage review
+
+VEHICLE MILEAGE SUPPORT
+Prepared 11/02/2025 09:14 CST
+
+------------------------------------------------------------------------------------
+UNIT: 646 (continued)
+VIN suffix U872187 | Plate AP60992
+Kenworth | yard relay / Gary IN
+Fleet ref FLT-910 | Quarter: 2025 Q3
+------------------------------------------------------------------------------------
+
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
+
+JURISDICTION AND SOURCE NOTE,ACCEPTED / IDENTIFIED MILES,EXCEPTION / UNIDENTIFIED MILES,REPORTED JURISDICTION TOTAL
+"Kansas
+manual correction retained in quarter workpaper","2,781.4","0.0","2,781.4"
+"Kentucky
+manual correction retained in quarter workpaper","391.7","0.0","391.7"
+"Louisiana
+trip-sheet and dispatch legs reconciled","6,424.6","153.9","6,578.5"
+"Maryland
+trip-sheet and dispatch legs reconciled","3,360.1","0.0","3,360.1"
+"Michigan
+trip-sheet and dispatch legs reconciled","442.2","0.0","442.2"
+"Minnesota
+trip-sheet and dispatch legs reconciled","5,479.0","0.0","5,479.0"
+"Mississippi
+cross-border segment verified from GPS batch","6,637.5","0.0","6,637.5"
+"Nebraska
+trip-sheet and dispatch legs reconciled","5,242.5","0.0","5,242.5"
+"Nevada
+telematics accepted; odometer tie-out reviewed","2,489.5","372.1","2,861.6"
+"New Jersey
+telematics accepted; odometer tie-out reviewed","30.2","280.7","310.9"
+"New Mexico
+E-ZPass and fuel stop support reviewed","5,265.4","0.0","5,265.4"
+"New York
+E-ZPass and fuel stop support reviewed","1,421.6","0.0","1,421.6"
+"North Carolina
+manual correction retained in quarter workpaper","6,334.9","0.0","6,334.9"
+
+Page 61
 
 # Page 62
 
-Generated: 11/02/2025 09:14 AM CST
+Hearthline Freight Cooperative                                          VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                                         Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
+__________________________________________________________________________________________________
 
-Prairie Route Carriers Inc
-1862 WESTFIELD CROSSING
-PLAINFIELD, IL 60544
-312-555-0162
+| UNIT <br><br> **646** <br><br> continued | VIN suffix U872187 <br> Plate AP60992 | Kenworth <br> yard relay / Gary IN | Fleet ref FLT-910 <br> Quarter: 2025 Q3 |
+| :--- | :--- | :--- | :--- |
 
-# IFTA Mileage: All trucks - 2025 - Q 4
-### 7/1/2025 - 9/30/2025
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
 
-## Vehicle: 841 continued
+| JURISDICTION AND SOURCE NOTE | ACCEPTED / IDENTIFIED MILES | EXCEPTION / UNIDENTIFIED MILES | REPORTED JURISDICTION TOTAL |
+| :--- | :---: | :---: | :---: |
+| **North Dakota** <br> route exception cleared by mileage desk | 6,062.8 | 234.7 | 6,297.5 |
+| **Ohio** <br> manual correction retained in quarter workpaper | 3,282.8 | 356.9 | 3,639.7 |
+| **Oklahoma** <br> trip-sheet and dispatch legs reconciled | 3,697.2 | 0.0 | 3,697.2 |
+| **Oregon** <br> E-ZPass and fuel stop support reviewed | 3,365.8 | 0.0 | 3,365.8 |
+| **Pennsylvania** <br> telematics accepted; odometer tie-out reviewed | 2,403.1 | 0.0 | 2,403.1 |
+| **South Carolina** <br> E-ZPass and fuel stop support reviewed | 4,921.5 | 0.0 | 4,921.5 |
+| **Tennessee** <br> manual correction retained in quarter workpaper | 17.4 | 0.0 | 17.4 |
+| **Texas** <br> manual correction retained in quarter workpaper | 2,357.9 | 0.0 | 2,357.9 |
+| **Virginia** <br> telematics accepted; odometer tie-out reviewed | 6,002.3 | 2.1 | 6,004.4 |
+| **Washington** <br> trip-sheet and dispatch legs reconciled | 4,410.4 | 0.0 | 4,410.4 |
+| **West Virginia** <br> E-ZPass and fuel stop support reviewed | 3,223.3 | 196.1 | 3,419.4 |
+| **Wisconsin** <br> route exception cleared by mileage desk | 2,686.2 | 0.0 | 2,686.2 |
+| **Wyoming** <br> telematics accepted; odometer tie-out reviewed | 81.5 | 0.0 | 81.5 |
 
-| # | State | Identified Miles | Unidentified Miles | Total |
-| :--- | :--- | :--- | :--- | :--- |
-| 30 | Pennsylvania | 5386.8 | 0.0 | 5386.8 |
-| 31 | Texas | 82.7 | 0.0 | 82.7 |
-| 32 | Virginia | 1784.3 | 0.0 | 1784.3 |
-| 33 | Washington | 5499.2 | 0.0 | 5499.2 |
-| 34 | West Virginia | 4980.5 | 0.0 | 4980.5 |
-| 35 | Wisconsin | 1496.4 | 0.0 | 1496.4 |
-| 36 | Wyoming | 4025.1 | 55.2 | 4080.3 |
-| | *Total* | *122916.6* | *2587.9* | *125504.5* |
 
-Page 62 of 124
+Page 62
 
 # Page 63
 
-Generated: 11/02/2025 09:14 AM CST                                      Prairie Route Carriers Inc
-                                                                           1863 WESTFIELD CROSSING
-                                                                              PLAINFIELD, IL 60544
-                                                                                      312-555-0163
+Hearthline Freight Cooperative                             VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                           Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
 
-                                IFTA Mileage: All trucks - 2025 - Q 4
-                                        7/1/2025 - 9/30/2025
+_________________________________________________________________________________________________
 
-                                            Vehicle: 824
+| UNIT | VIN suffix M251845 | International | Fleet ref FLT-198 |
+| :--- | :--- | :--- | :--- |
+| **618** | Plate AP52781 | linehaul / Davenport IA | Quarter: 2025 Q3 |
 
-| # | State | Identified Miles | Unidentified Miles | Total |
-|---|---|---|---|---|
-| 1 | Alabama | 5753.8 | 0.0 | 5753.8 |
-| 2 | Arizona | 5313.8 | 0.0 | 5313.8 |
-| 3 | Arkansas | 3287.8 | 0.0 | 3287.8 |
-| 4 | California | 20.8 | 0.0 | 20.8 |
-| 5 | Colorado | 100.7 | 0.0 | 100.7 |
-| 6 | Connecticut | 488.1 | 0.0 | 488.1 |
-| 7 | Florida | 5300.4 | 0.0 | 5300.4 |
-| 8 | Georgia | 15.4 | 0.0 | 15.4 |
-| 9 | Idaho | 4672.1 | 0.0 | 4672.1 |
-| 10 | Illinois | 4679.2 | 0.0 | 4679.2 |
-| 11 | Indiana | 5768.1 | 0.0 | 5768.1 |
-| 12 | Iowa | 3990.1 | 0.0 | 3990.1 |
-| 13 | Kansas | 97.8 | 350.1 | 447.9 |
-| 14 | Kentucky | 6131.0 | 0.0 | 6131.0 |
-| 15 | Louisiana | 4947.5 | 0.0 | 4947.5 |
-| 16 | Maryland | 4169.5 | 0.0 | 4169.5 |
-| 17 | Michigan | 273.4 | 0.0 | 273.4 |
-| 18 | Minnesota | 1818.9 | 0.0 | 1818.9 |
-| 19 | Mississippi | 4244.1 | 0.0 | 4244.1 |
-| 20 | Missouri | 2671.7 | 0.0 | 2671.7 |
-| 21 | Montana | 5187.0 | 0.0 | 5187.0 |
-| 22 | Nebraska | 786.3 | 0.0 | 786.3 |
-| 23 | New Jersey | 5205.6 | 214.7 | 5420.3 |
-| 24 | New Mexico | 1475.7 | 0.0 | 1475.7 |
-| 25 | New York | 4023.4 | 229.3 | 4252.7 |
-| 26 | North Carolina | 61.7 | 0.0 | 61.7 |
-| 27 | North Dakota | 1809.1 | 0.0 | 1809.1 |
-| 28 | Ohio | 5892.6 | 293.8 | 6186.4 |
-| 29 | Oklahoma | 1444.1 | 161.4 | 1605.5 |
+_________________________________________________________________________________________________
 
-Page 63 of 124
+Mileage jurisdictions for this unit are listed below. The unit number is inherited by every row on this page.
+
+| JURISDICTION AND SOURCE NOTE | ACCEPTED / IDENTIFIED MILES | EXCEPTION / UNIDENTIFIED MILES | REPORTED JURISDICTION TOTAL |
+| :--- | :---: | :---: | :---: |
+| **Alabama** <br> route exception cleared by mileage desk | 4,618.9 | 0.0 | 4,618.9 |
+| **Arizona** <br> E-ZPass and fuel stop support reviewed | 4,336.2 | 0.0 | 4,336.2 |
+| **Arkansas** <br> telematics accepted; odometer tie-out reviewed | 4,563.9 | 0.0 | 4,563.9 |
+| **California** <br> cross-border segment verified from GPS batch | 3,383.1 | 0.0 | 3,383.1 |
+| **Colorado** <br> telematics accepted; odometer tie-out reviewed | 2,144.9 | 0.0 | 2,144.9 |
+| **Connecticut** <br> trip-sheet and dispatch legs reconciled | 5,965.0 | 0.0 | 5,965.0 |
+| **Delaware** <br> E-ZPass and fuel stop support reviewed | 2,488.8 | 0.0 | 2,488.8 |
+| **Florida** <br> route exception cleared by mileage desk | 1,157.7 | 15.5 | 1,173.2 |
+| **Georgia** <br> cross-border segment verified from GPS batch | 6,633.1 | 0.0 | 6,633.1 |
+| **Idaho** <br> cross-border segment verified from GPS batch | 6,147.5 | 0.0 | 6,147.5 |
+| **Illinois** <br> E-ZPass and fuel stop support reviewed | 758.6 | 0.0 | 758.6 |
+| **Indiana** <br> manual correction retained in quarter workpaper | 1,246.5 | 0.0 | 1,246.5 |
+
+<br>
+
+| **Unit quarter tie-out** |
+| :--- |
+| Accepted: 133,734.6 |
+| Exception: 1,666.9 |
+| Reported: 135,401.5 |
+
+<br>
+
+**Fuel-card reconciliation sample**
+
+| JUR | GALLONS | AMOUNT | NOTE |
+| :--- | :---: | :---: | :--- |
+| TX | 73.1 | $274.28 | fuel only - not a mileage jurisdiction row |
+| IN | 295.2 | $1,268.32 | fuel only - not a mileage jurisdiction row |
+| KY | 353.0 | $1,333.22 | fuel only - not a mileage jurisdiction row |
+
+<br>
+
+Page 63
 
 # Page 64
 
-#,State,Identified Miles,Unidentified Miles,Total
-30,Oregon,277.4,0.0,277.4
-31,Pennsylvania,664.7,318.0,982.7
-32,South Carolina,24.5,152.6,177.1
-33,Tennessee,2048.0,0.0,2048.0
-34,Texas,194.4,0.0,194.4
-35,Utah,7093.0,0.0,7093.0
-36,Virginia,1693.0,0.0,1693.0
-37,Washington,2116.5,0.0,2116.5
-38,Wisconsin,5621.8,0.0,5621.8
-39,Wyoming,2311.1,0.0,2311.1
-,Total,111674.1,1719.9,113394.0
+Hearthline Freight Cooperative                                               VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                                              Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
+
+_________________________________________________________________________________________________________
+
+| UNIT <br><br> **618** <br> continued | VIN suffix M251845 <br> Plate AP52781 | International <br> linehaul / Davenport IA | Fleet ref FLT-198 <br> Quarter: 2025 Q3 |
+| :--- | :--- | :--- | :--- |
+
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
+
+| JURISDICTION AND SOURCE NOTE | ACCEPTED / IDENTIFIED MILES | EXCEPTION / UNIDENTIFIED MILES | REPORTED JURISDICTION TOTAL |
+| :--- | :---: | :---: | :---: |
+| **Iowa** <br> manual correction retained in quarter workpaper | 5,680.1 | 0.0 | 5,680.1 |
+| **Kansas** <br> manual correction retained in quarter workpaper | 5,456.3 | 0.0 | 5,456.3 |
+| **Louisiana** <br> E-ZPass and fuel stop support reviewed | 6,467.0 | 0.0 | 6,467.0 |
+| **Maryland** <br> telematics accepted; odometer tie-out reviewed | 1,260.6 | 326.1 | 1,586.7 |
+| **Minnesota** <br> E-ZPass and fuel stop support reviewed | 2,280.3 | 0.0 | 2,280.3 |
+| **Mississippi** <br> telematics accepted; odometer tie-out reviewed | 6,506.1 | 0.0 | 6,506.1 |
+| **Missouri** <br> telematics accepted; odometer tie-out reviewed | 5,491.4 | 0.0 | 5,491.4 |
+| **Nebraska** <br> telematics accepted; odometer tie-out reviewed | 444.0 | 0.0 | 444.0 |
+| **New Jersey** <br> cross-border segment verified from GPS batch | 5,610.5 | 286.1 | 5,896.6 |
+| **New York** <br> trip-sheet and dispatch legs reconciled | 4,520.1 | 0.0 | 4,520.1 |
+| **North Carolina** <br> manual correction retained in quarter workpaper | 4,996.5 | 0.0 | 4,996.5 |
+| **North Dakota** <br> cross-border segment verified from GPS batch | 2,913.7 | 241.0 | 3,154.7 |
+
+<br>
+
+Page 64
 
 # Page 65
 
-Generated: 11/02/2025 09:14 AM CST
+Hearthline Freight Cooperative
+Quarterly IFTA workpaper packet
+Account HFC-742018 / Fleet mileage review
 
-                                                      Prairie Route Carriers Inc
-                                                         1865 WESTFIELD CROSSING
-                                                            PLAINFIELD, IL 60544
-                                                                    312-555-0165
+VEHICLE MILEAGE SUPPORT
+Prepared 11/02/2025 09:14 CST
 
-                IFTA Mileage: All trucks - 2025 - Q 4
-                        7/1/2025 - 9/30/2025
+UNIT: 618 continued
+VIN suffix M251845
+Plate AP52781
+International linehaul / Davenport IA
+Fleet ref FLT-198
+Quarter: 2025 Q3
 
-                           Vehicle: 2764
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
 
-| # | State | Identified Miles | Unidentified Miles | Total |
-|---|---|---|---|---|
-| 1 | Alabama | 4912.9 | 186.0 | 5098.9 |
-| 2 | Arizona | 44.1 | 0.0 | 44.1 |
-| 3 | Arkansas | 6192.9 | 0.0 | 6192.9 |
-| 4 | Colorado | 6314.8 | 0.0 | 6314.8 |
-| 5 | Connecticut | 6423.3 | 0.0 | 6423.3 |
-| 6 | Delaware | 1574.9 | 15.3 | 1590.2 |
-| 7 | Florida | 4449.6 | 0.0 | 4449.6 |
-| 8 | Georgia | 3758.1 | 146.1 | 3904.2 |
-| 9 | Idaho | 1791.3 | 0.0 | 1791.3 |
-| 10 | Indiana | 808.3 | 0.0 | 808.3 |
-| 11 | Iowa | 1607.1 | 0.0 | 1607.1 |
-| 12 | Kansas | 909.5 | 0.0 | 909.5 |
-| 13 | Kentucky | 4922.1 | 0.0 | 4922.1 |
-| 14 | Louisiana | 6580.6 | 168.6 | 6749.2 |
-| 15 | Maryland | 3607.3 | 0.0 | 3607.3 |
-| 16 | Minnesota | 5273.8 | 0.0 | 5273.8 |
-| 17 | Mississippi | 6466.2 | 0.0 | 6466.2 |
-| 18 | Missouri | 335.1 | 267.7 | 602.8 |
-| 19 | Montana | 4353.6 | 0.0 | 4353.6 |
-| 20 | Nevada | 5597.8 | 0.0 | 5597.8 |
-| 21 | New Jersey | 622.7 | 56.8 | 679.5 |
-| 22 | New Mexico | 4560.7 | 0.0 | 4560.7 |
-| 23 | New York | 6199.5 | 0.0 | 6199.5 |
-| 24 | North Dakota | 6147.2 | 211.3 | 6358.5 |
-| 25 | Ohio | 6131.9 | 0.0 | 6131.9 |
-| 26 | Oklahoma | 944.2 | 240.4 | 1184.6 |
-| 27 | Oregon | 292.2 | 0.0 | 292.2 |
-| 28 | Pennsylvania | 5804.9 | 24.6 | 5829.5 |
-| 29 | South Carolina | 1620.2 | 0.0 | 1620.2 |
+"JURISDICTION AND SOURCE NOTE","ACCEPTED / IDENTIFIED MILES","EXCEPTION / UNIDENTIFIED MILES","REPORTED JURISDICTION TOTAL"
+"Ohio
+E-ZPass and fuel stop support reviewed","1,027.7","0.0","1,027.7"
+"Oklahoma
+E-ZPass and fuel stop support reviewed","1,575.8","373.8","1,949.6"
+"Oregon
+route exception cleared by mileage desk","5,910.2","0.0","5,910.2"
+"Pennsylvania
+cross-border segment verified from GPS batch","2,057.8","0.0","2,057.8"
+"South Carolina
+trip-sheet and dispatch legs reconciled","875.6","354.0","1,229.6"
+"Tennessee
+cross-border segment verified from GPS batch","4,973.7","0.0","4,973.7"
+"Virginia
+E-ZPass and fuel stop support reviewed","13.2","0.0","13.2"
+"Washington
+cross-border segment verified from GPS batch","6,370.2","0.0","6,370.2"
+"West Virginia
+trip-sheet and dispatch legs reconciled","4,739.0","70.4","4,809.4"
+"Wisconsin
+manual correction retained in quarter workpaper","5,785.6","0.0","5,785.6"
+"Wyoming
+manual correction retained in quarter workpaper","5,335.0","0.0","5,335.0"
 
-                                                                  Page 65 of 124
+Page 65
 
 # Page 66
 
-Generated: 11/02/2025 09:14 AM CST
+Hearthline Freight Cooperative                                                 VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                                                Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
 
-Prairie Route Carriers Inc
-1866 WESTFIELD CROSSING
-PLAINFIELD, IL 60544
-312-555-0166
+_______________________________________________________________________________________________________________
 
-IFTA Mileage: All trucks - 2025 - Q 4
-7/1/2025 - 9/30/2025
+UNIT: 950
+VIN suffix L467429 | Plate AP18214
+Freightliner | intermodal / Davenport IA
+Fleet ref FLT-436 | Quarter: 2025 Q3
+_______________________________________________________________________________________________________________
 
-Vehicle: 2764 continued
+Mileage jurisdictions for this unit are listed below. The unit number is inherited by every row on this page.
 
-#,State,Identified Miles,Unidentified Miles,Total
-30,Tennessee,3947.0,239.4,4186.4
-31,Texas,4040.3,0.0,4040.3
-32,Virginia,1897.8,0.0,1897.8
-33,Washington,3758.7,0.0,3758.7
-34,West Virginia,2723.0,0.0,2723.0
-,Total,124613.6,1556.2,126169.8
+JURISDICTION AND SOURCE NOTE,ACCEPTED / IDENTIFIED MILES,EXCEPTION / UNIDENTIFIED MILES,REPORTED JURISDICTION TOTAL
+"Arkansas
+route exception cleared by mileage desk",41.6,0.0,41.6
+"California
+manual correction retained in quarter workpaper","4,796.8",0.0,"4,796.8"
+"Colorado
+cross-border segment verified from GPS batch","3,287.3",0.0,"3,287.3"
+"Connecticut
+telematics accepted; odometer tie-out reviewed","2,018.8",0.0,"2,018.8"
+"Florida
+E-ZPass and fuel stop support reviewed","5,243.2",0.0,"5,243.2"
+"Georgia
+E-ZPass and fuel stop support reviewed","3,387.0",0.0,"3,387.0"
+"Idaho
+trip-sheet and dispatch legs reconciled",77.3,0.0,77.3
+"Illinois
+E-ZPass and fuel stop support reviewed","3,348.3",0.0,"3,348.3"
+"Indiana
+route exception cleared by mileage desk","4,884.9",0.0,"4,884.9"
+"Iowa
+trip-sheet and dispatch legs reconciled","2,539.4",0.0,"2,539.4"
+"Kansas
+manual correction retained in quarter workpaper","5,228.2",0.0,"5,228.2"
+"Kentucky
+route exception cleared by mileage desk",27.7,0.0,27.7
 
-Page 66 of 124
+Unit quarter tie-out
+Accepted: 106,910.9
+Exception: 889.7
+Reported: 107,800.6
+
+Fuel-card reconciliation sample:
+JUR,GALLONS,AMOUNT,NOTE
+TN,114.3,$539.07,fuel only - not a mileage jurisdiction row
+OH,188.9,$710.56,fuel only - not a mileage jurisdiction row
+KY,301.0,"$1,233.38",fuel only - not a mileage jurisdiction row
+
+Page 66
 
 # Page 67
 
-Generated: 11/02/2025 09:14 AM CST
+Hearthline Freight Cooperative                                              VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                                             Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
 
-Prairie Route Carriers Inc
-1867 WESTFIELD CROSSING
-PLAINFIELD, IL 60544
-312-555-0167
+------------------------------------------------------------------------------------------------------
+UNIT: 950 (continued)
+VIN suffix L467429 / Plate AP18214
+Freightliner / intermodal / Davenport IA
+Fleet ref FLT-436 / Quarter: 2025 Q3
+------------------------------------------------------------------------------------------------------
 
-# IFTA Mileage: All trucks - 2025 - Q 4
-### 7/1/2025 - 9/30/2025
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
 
-## Vehicle: 7962
+"JURISDICTION AND SOURCE NOTE","ACCEPTED / IDENTIFIED MILES","EXCEPTION / UNIDENTIFIED MILES","REPORTED JURISDICTION TOTAL"
+"Louisiana\nroute exception cleared by mileage desk","6,121.8","0.0","6,121.8"
+"Maryland\nE-ZPass and fuel stop support reviewed","5,953.4","0.0","5,953.4"
+"Michigan\nroute exception cleared by mileage desk","7,098.0","0.0","7,098.0"
+"Minnesota\nmanual correction retained in quarter workpaper","57.3","0.0","57.3"
+"Mississippi\nroute exception cleared by mileage desk","2,281.1","63.6","2,344.7"
+"Montana\nmanual correction retained in quarter workpaper","6,358.7","0.0","6,358.7"
+"Nebraska\ncross-border segment verified from GPS batch","1,121.2","0.0","1,121.2"
+"New Mexico\nmanual correction retained in quarter workpaper","6,765.5","0.0","6,765.5"
+"New York\ntelematics accepted; odometer tie-out reviewed","54.2","0.0","54.2"
+"North Carolina\ntrip-sheet and dispatch legs reconciled","367.5","0.0","367.5"
+"North Dakota\ntrip-sheet and dispatch legs reconciled","3,121.8","0.0","3,121.8"
 
-| # | State | Identified Miles | Unidentified Miles | Total |
-|---|---|---|---|---|
-| 1 | Arizona | 3163.5 | 0.0 | 3163.5 |
-| 2 | California | 3060.1 | 0.0 | 3060.1 |
-| 3 | Connecticut | 1869.9 | 0.0 | 1869.9 |
-| 4 | Delaware | 5757.2 | 0.0 | 5757.2 |
-| 5 | Florida | 719.1 | 0.0 | 719.1 |
-| 6 | Georgia | 5123.4 | 207.2 | 5330.6 |
-| 7 | Idaho | 1381.3 | 0.0 | 1381.3 |
-| 8 | Illinois | 803.5 | 0.0 | 803.5 |
-| 9 | Indiana | 1163.3 | 0.0 | 1163.3 |
-| 10 | Iowa | 5364.4 | 0.0 | 5364.4 |
-| 11 | Kansas | 7064.1 | 0.0 | 7064.1 |
-| 12 | Kentucky | 4966.3 | 85.5 | 5051.8 |
-| 13 | Louisiana | 5099.3 | 0.0 | 5099.3 |
-| 14 | Maryland | 20.7 | 44.5 | 65.2 |
-| 15 | Michigan | 3173.6 | 0.0 | 3173.6 |
-| 16 | Minnesota | 447.4 | 0.0 | 447.4 |
-| 17 | Mississippi | 45.8 | 0.0 | 45.8 |
-| 18 | Missouri | 3425.3 | 0.0 | 3425.3 |
-| 19 | Nebraska | 6538.5 | 0.0 | 6538.5 |
-| 20 | Nevada | 3892.3 | 204.6 | 4096.9 |
-| 21 | New Jersey | 3087.2 | 0.0 | 3087.2 |
-| 22 | New York | 6692.7 | 0.0 | 6692.7 |
-| 23 | North Carolina | 5424.8 | 0.0 | 5424.8 |
-| 24 | North Dakota | 1772.4 | 363.4 | 2135.8 |
-| 25 | Ohio | 6360.7 | 330.0 | 6690.7 |
-| 26 | Pennsylvania | 5176.6 | 0.0 | 5176.6 |
-| 27 | South Carolina | 4952.3 | 0.0 | 4952.3 |
-| 28 | Tennessee | 671.2 | 0.0 | 671.2 |
-| 29 | Texas | 28.8 | 115.7 | 144.5 |
-
-Page 67 of 124
+Page 67
 
 # Page 68
 
-Generated: 11/02/2025 09:14 AM CST
+Hearthline Freight Cooperative
+Quarterly IFTA workpaper packet
+Account HFC-742018 / Fleet mileage review
 
-<div style="text-align: right;">
-<strong>Prairie Route Carriers Inc</strong><br>
-1868 WESTFIELD CROSSING<br>
-PLAINFIELD, IL 60544<br>
-312-555-0168
-</div>
+VEHICLE MILEAGE SUPPORT
+Prepared 11/02/2025 09:14 CST
 
-<div style="text-align: center;">
+--------------------------------------------------------------------------------
+UNIT: 950 (continued)
+VIN suffix L467429 | Plate AP18214
+Freightliner | intermodal / Davenport IA
+Fleet ref FLT-436 | Quarter: 2025 Q3
+--------------------------------------------------------------------------------
 
-## IFTA Mileage: All trucks - 2025 - Q 4
-### 7/1/2025 - 9/30/2025
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
 
-## Vehicle: 7962 continued
+"JURISDICTION AND SOURCE NOTE","ACCEPTED / IDENTIFIED MILES","EXCEPTION / UNIDENTIFIED MILES","REPORTED JURISDICTION TOTAL"
+"Oklahoma
+trip-sheet and dispatch legs reconciled","1,258.8","0.0","1,258.8"
+"Oregon
+manual correction retained in quarter workpaper","1,849.9","159.6","2,009.5"
+"Pennsylvania
+telematics accepted; odometer tie-out reviewed","3,424.9","0.0","3,424.9"
+"Tennessee
+route exception cleared by mileage desk","2,671.7","193.4","2,865.1"
+"Texas
+trip-sheet and dispatch legs reconciled","710.7","72.0","782.7"
+"Utah
+cross-border segment verified from GPS batch","5,864.6","282.5","6,147.1"
+"Virginia
+trip-sheet and dispatch legs reconciled","6,949.6","0.0","6,949.6"
+"Washington
+manual correction retained in quarter workpaper","3,032.8","0.0","3,032.8"
+"West Virginia
+cross-border segment verified from GPS batch","2.2","118.6","120.8"
+"Wisconsin
+trip-sheet and dispatch legs reconciled","6,138.4","0.0","6,138.4"
+"Wyoming
+trip-sheet and dispatch legs reconciled","826.3","0.0","826.3"
 
-</div>
-
-| # | State | Identified Miles | Unidentified Miles | Total |
-|:---|:---|:---|:---|:---|
-| 30 | Utah | 1398.3 | 0.0 | 1398.3 |
-| 31 | Virginia | 6146.3 | 306.3 | 6452.6 |
-| 32 | Washington | 2074.6 | 311.5 | 2386.1 |
-| 33 | West Virginia | 6404.4 | 341.7 | 6746.1 |
-| 34 | Wisconsin | 2343.5 | 0.0 | 2343.5 |
-| | *Total* | *115612.8* | *2310.4* | *117923.2* |
-
-<br>
-<div style="text-align: right;">
-Page 68 of 124
-</div>
+Page 68
 
 # Page 69
 
-Generated: 11/02/2025 09:14 AM CST                                      Prairie Route Carriers Inc
-                                                                        1869 WESTFIELD CROSSING
-                                                                        PLAINFIELD, IL 60544
-                                                                        312-555-0169
+Hearthline Freight Cooperative
+Quarterly IFTA workpaper packet
+Account HFC-742018 / Fleet mileage review
 
-# IFTA Mileage: All trucks - 2025 - Q 4
-### 7/1/2025 - 9/30/2025
+VEHICLE MILEAGE SUPPORT
+Prepared 11/02/2025 09:14 CST
 
-## Vehicle: 382
+---------------------------------------------------------------------------------------------------------
+UNIT: 369 | VIN suffix J128500, Plate AP15531 | Kenworth, intermodal / Davenport IA | Fleet ref FLT-135, Quarter: 2025 Q3
+---------------------------------------------------------------------------------------------------------
 
-| # | State | Identified Miles | Unidentified Miles | Total |
-|---|---|---|---|---|
-| 1 | Alabama | 4875.3 | 0.0 | 4875.3 |
-| 2 | Arizona | 2859.0 | 0.0 | 2859.0 |
-| 3 | Arkansas | 1556.6 | 0.0 | 1556.6 |
-| 4 | Colorado | 22.3 | 0.0 | 22.3 |
-| 5 | Connecticut | 6999.0 | 371.6 | 7370.6 |
-| 6 | Delaware | 7038.3 | 0.0 | 7038.3 |
-| 7 | Florida | 3050.9 | 0.0 | 3050.9 |
-| 8 | Georgia | 337.3 | 0.0 | 337.3 |
-| 9 | Iowa | 26.0 | 0.0 | 26.0 |
-| 10 | Kansas | 5742.4 | 0.0 | 5742.4 |
-| 11 | Kentucky | 4702.0 | 201.4 | 4903.4 |
-| 12 | Louisiana | 6981.4 | 0.0 | 6981.4 |
-| 13 | Maryland | 4669.7 | 0.0 | 4669.7 |
-| 14 | Michigan | 3125.1 | 0.0 | 3125.1 |
-| 15 | Minnesota | 843.3 | 0.0 | 843.3 |
-| 16 | Mississippi | 99.2 | 0.0 | 99.2 |
-| 17 | Missouri | 2890.6 | 0.0 | 2890.6 |
-| 18 | Nebraska | 2575.0 | 0.0 | 2575.0 |
-| 19 | Nevada | 5687.8 | 0.0 | 5687.8 |
-| 20 | New Jersey | 6784.6 | 0.0 | 6784.6 |
-| 21 | New Mexico | 1126.5 | 0.0 | 1126.5 |
-| 22 | New York | 1273.5 | 0.0 | 1273.5 |
-| 23 | North Dakota | 1616.0 | 0.0 | 1616.0 |
-| 24 | Oklahoma | 6006.9 | 0.0 | 6006.9 |
-| 25 | Oregon | 1142.3 | 0.0 | 1142.3 |
-| 26 | Pennsylvania | 778.0 | 0.0 | 778.0 |
-| 27 | South Carolina | 6648.6 | 0.0 | 6648.6 |
-| 28 | Tennessee | 3847.8 | 0.0 | 3847.8 |
-| 29 | Texas | 3821.3 | 0.0 | 3821.3 |
+Mileage jurisdictions for this unit are listed below. The unit number is inherited by every row on this page.
 
-                                                                                            Page 69 of 124
+"JURISDICTION AND SOURCE NOTE","ACCEPTED / IDENTIFIED MILES","EXCEPTION / UNIDENTIFIED MILES","REPORTED JURISDICTION TOTAL"
+"Alabama
+route exception cleared by mileage desk","4,258.8","0.0","4,258.8"
+"Arizona
+E-ZPass and fuel stop support reviewed","6,179.6","0.0","6,179.6"
+"Arkansas
+E-ZPass and fuel stop support reviewed","5,974.3","5.2","5,979.5"
+"Colorado
+manual correction retained in quarter workpaper","55.1","0.0","55.1"
+"Connecticut
+E-ZPass and fuel stop support reviewed","5,953.1","0.0","5,953.1"
+"Georgia
+telematics accepted; odometer tie-out reviewed","5,069.2","0.0","5,069.2"
+"Idaho
+E-ZPass and fuel stop support reviewed","778.2","0.0","778.2"
+"Illinois
+cross-border segment verified from GPS batch","1,054.8","0.0","1,054.8"
+"Indiana
+E-ZPass and fuel stop support reviewed","3,451.1","0.0","3,451.1"
+"Iowa
+telematics accepted; odometer tie-out reviewed","4,004.0","0.0","4,004.0"
+"Kentucky
+E-ZPass and fuel stop support reviewed","4,243.1","0.0","4,243.1"
+"Louisiana
+manual correction retained in quarter workpaper","4,446.2","0.0","4,446.2"
+
+---------------------------------------------------------------------------------------------------------
+
+Unit quarter tie-out
+Accepted: 111,132.0
+Exception: 35.1
+Reported: 111,167.1
+
+Fuel-card reconciliation sample
+"JUR","GALLONS","AMOUNT","NOTE"
+"GA","226.8","$1,004.33","fuel only - not a mileage jurisdiction row"
+"PA","382.6","$1,680.57","fuel only - not a mileage jurisdiction row"
+"TX","216.1","$795.68","fuel only - not a mileage jurisdiction row"
+
+Page 69
 
 # Page 70
 
-#,State,Identified Miles,Unidentified Miles,Total
-30,Virginia,1455.6,0.0,1455.6
-31,Washington,4350.4,0.0,4350.4
-32,West Virginia,5480.1,0.0,5480.1
-33,Wisconsin,918.8,0.0,918.8
-34,Wyoming,1892.6,0.0,1892.6
-,Total,111224.2,573.0,111797.2
+Hearthline Freight Cooperative,VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet,Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review,
+
+"UNIT: 369 continued","VIN suffix J128500 Plate AP15531","Kenworth intermodal / Davenport IA","Fleet ref FLT-135 Quarter: 2025 Q3"
+
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
+
+"JURISDICTION AND SOURCE NOTE","ACCEPTED / IDENTIFIED MILES","EXCEPTION / UNIDENTIFIED MILES","REPORTED JURISDICTION TOTAL"
+"Maryland
+trip-sheet and dispatch legs reconciled","5,253.5","0.0","5,253.5"
+"Michigan
+E-ZPass and fuel stop support reviewed","1,399.3","0.0","1,399.3"
+"Minnesota
+telematics accepted; odometer tie-out reviewed","5,723.7","0.0","5,723.7"
+"Mississippi
+trip-sheet and dispatch legs reconciled","2,158.1","0.0","2,158.1"
+"Missouri
+cross-border segment verified from GPS batch","5,108.3","29.9","5,138.2"
+"Montana
+cross-border segment verified from GPS batch","5,044.4","0.0","5,044.4"
+"New Jersey
+telematics accepted; odometer tie-out reviewed","5,727.8","0.0","5,727.8"
+"New Mexico
+route exception cleared by mileage desk","49.6","0.0","49.6"
+"New York
+route exception cleared by mileage desk","1,521.0","0.0","1,521.0"
+"North Carolina
+cross-border segment verified from GPS batch","6,090.2","0.0","6,090.2"
+
+Page 70
 
 # Page 71
 
-Generated: 11/02/2025 09:14 AM CST                                      Prairie Route Carriers Inc
-                                                                         1871 WESTFIELD CROSSING
-                                                                            PLAINFIELD, IL 60544
-                                                                                  312-555-0171
+Hearthline Freight Cooperative                                               VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                                              Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
 
-                                  IFTA Mileage: All trucks - 2025 - Q 4
-                                          7/1/2025 - 9/30/2025
+---------------------------------------------------------------------------------------------------------
+| UNIT: 369 continued   | VIN suffix J128500        | Kenworth                     | Fleet ref FLT-135  |
+|                       | Plate AP15531             | intermodal / Davenport IA    | Quarter: 2025 Q3   |
+---------------------------------------------------------------------------------------------------------
 
-                                              Vehicle: 905
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
 
-| # | State | Identified Miles | Unidentified Miles | Total |
-|---|---|---|---|---|
-| 1 | Alabama | 4450.7 | 0.0 | 4450.7 |
-| 2 | Arizona | 1367.2 | 0.0 | 1367.2 |
-| 3 | California | 4971.6 | 0.0 | 4971.6 |
-| 4 | Colorado | 618.2 | 0.0 | 618.2 |
-| 5 | Connecticut | 3145.6 | 103.0 | 3248.6 |
-| 6 | Delaware | 2221.2 | 0.0 | 2221.2 |
-| 7 | Georgia | 6362.1 | 0.0 | 6362.1 |
-| 8 | Illinois | 3688.1 | 174.6 | 3862.7 |
-| 9 | Indiana | 101.4 | 0.0 | 101.4 |
-| 10 | Iowa | 6559.1 | 0.0 | 6559.1 |
-| 11 | Kansas | 175.3 | 0.0 | 175.3 |
-| 12 | Kentucky | 105.0 | 0.0 | 105.0 |
-| 13 | Louisiana | 6446.7 | 0.0 | 6446.7 |
-| 14 | Michigan | 749.8 | 0.0 | 749.8 |
-| 15 | Mississippi | 4494.3 | 0.0 | 4494.3 |
-| 16 | Montana | 3605.6 | 0.0 | 3605.6 |
-| 17 | Nebraska | 106.0 | 0.0 | 106.0 |
-| 18 | Nevada | 5341.4 | 0.0 | 5341.4 |
-| 19 | New Mexico | 514.5 | 0.0 | 514.5 |
-| 20 | New York | 4637.0 | 0.0 | 4637.0 |
-| 21 | North Dakota | 6701.6 | 371.0 | 7072.6 |
-| 22 | Ohio | 591.4 | 338.3 | 929.7 |
-| 23 | Oklahoma | 5723.2 | 0.0 | 5723.2 |
-| 24 | Oregon | 335.1 | 0.0 | 335.1 |
-| 25 | South Carolina | 2874.7 | 0.0 | 2874.7 |
-| 26 | Tennessee | 478.6 | 124.9 | 603.5 |
-| 27 | Virginia | 3912.7 | 0.0 | 3912.7 |
-| 28 | Washington | 5802.5 | 0.0 | 5802.5 |
-| 29 | West Virginia | 6534.8 | 0.0 | 6534.8 |
+"JURISDICTION AND SOURCE NOTE","ACCEPTED / IDENTIFIED MILES","EXCEPTION / UNIDENTIFIED MILES","REPORTED JURISDICTION TOTAL"
+"Ohio
+telematics accepted; odometer tie-out reviewed",2432.6,0.0,2432.6
+"Oregon
+telematics accepted; odometer tie-out reviewed",3467.7,0.0,3467.7
+"Pennsylvania
+route exception cleared by mileage desk",6976.8,0.0,6976.8
+"South Carolina
+manual correction retained in quarter workpaper",66.8,0.0,66.8
+"Texas
+manual correction retained in quarter workpaper",6632.2,0.0,6632.2
+"Utah
+cross-border segment verified from GPS batch",18.0,0.0,18.0
+"Virginia
+route exception cleared by mileage desk",3289.1,0.0,3289.1
+"Washington
+telematics accepted; odometer tie-out reviewed",1197.9,0.0,1197.9
+"Wyoming
+cross-border segment verified from GPS batch",3507.5,0.0,3507.5
 
-                                                                                    Page 71 of 124
+Page 71
 
 # Page 72
 
-Generated: 11/02/2025 09:14 AM CST
+Hearthline Freight Cooperative                                                      VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                                                     Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
+__________________________________________________________________________________________________________________
 
-Prairie Route Carriers Inc
-1872 WESTFIELD CROSSING
-PLAINFIELD, IL 60544
-312-555-0172
++-----------------------+-------------------------+-------------------------+-------------------------+
+| UNIT                  | VIN suffix B150884      | International           | Fleet ref FLT-354       |
+| **568**               | Plate AP19400           | regional / Gary IN      | Quarter: 2025 Q3        |
++-----------------------+-------------------------+-------------------------+-------------------------+
 
-IFTA Mileage: All trucks - 2025 - Q 4
-7/1/2025 - 9/30/2025
+Mileage jurisdictions for this unit are listed below. The unit number is inherited by every row on this page.
 
-Vehicle: 905 continued
+| JURISDICTION AND SOURCE NOTE | ACCEPTED / IDENTIFIED MILES | EXCEPTION / UNIDENTIFIED MILES | REPORTED JURISDICTION TOTAL |
+| :--- | :---: | :---: | :---: |
+| **Alabama** <br> cross-border segment verified from GPS batch | 781.7 | 0.0 | 781.7 |
+| **Arizona** <br> route exception cleared by mileage desk | 3,903.8 | 329.9 | 4,233.7 |
+| **Arkansas** <br> manual correction retained in quarter workpaper | 5,863.5 | 0.0 | 5,863.5 |
+| **California** <br> route exception cleared by mileage desk | 555.5 | 0.0 | 555.5 |
+| **Colorado** <br> manual correction retained in quarter workpaper | 34.2 | 36.9 | 71.1 |
+| **Connecticut** <br> trip-sheet and dispatch legs reconciled | 6,952.5 | 0.0 | 6,952.5 |
+| **Delaware** <br> manual correction retained in quarter workpaper | 4,168.4 | 0.0 | 4,168.4 |
+| **Georgia** <br> telematics accepted; odometer tie-out reviewed | 3,518.3 | 0.0 | 3,518.3 |
+| **Idaho** <br> telematics accepted; odometer tie-out reviewed | 5,788.9 | 220.4 | 6,009.3 |
+| **Illinois** <br> telematics accepted; odometer tie-out reviewed | 92.3 | 0.0 | 92.3 |
+| **Indiana** <br> E-ZPass and fuel stop support reviewed | 4,401.5 | 8.4 | 4,409.9 |
+| **Iowa** <br> telematics accepted; odometer tie-out reviewed | 5,817.9 | 0.0 | 5,817.9 |
 
-#,State,Identified Miles,Unidentified Miles,Total
-30,Wisconsin,2428.4,0.0,2428.4
-31,Wyoming,1455.1,0.0,1455.1
-,Total,96498.9,1111.8,97610.7
 
-Page 72 of 124
++--------------------------------------+   +------------------------------------------------------------------------------------+
+| **Unit quarter tie-out**             |   | **Fuel-card reconciliation sample**                                                |
+| Accepted: 129,773.9                  |   |                                                                                    |
+| Exception: 1,727.0                   |   | JUR   GALLONS     AMOUNT      NOTE                                                 |
+| Reported: 131,500.9                  |   | MO      203.6    $913.36      fuel only - not a mileage jurisdiction row           |
+|                                      |   | TN      293.6  $1,333.91      fuel only - not a mileage jurisdiction row           |
+|                                      |   | IN      335.0  $1,201.44      fuel only - not a mileage jurisdiction row           |
++--------------------------------------+   +------------------------------------------------------------------------------------+
+
+                                                                                                             Page 72
 
 # Page 73
 
-Generated: 11/02/2025 09:14 AM CST                                      Prairie Route Carriers Inc
-                                                                            1873 WESTFIELD CROSSING
-                                                                            PLAINFIELD, IL 60544
-                                                                            312-555-0173
+Hearthline Freight Cooperative,VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet,Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review,
 
-                                IFTA Mileage: All trucks - 2025 - Q 4
-                                         7/1/2025 - 9/30/2025
+UNIT: 568 continued,VIN suffix B150884 Plate AP19400,International regional / Gary IN,Fleet ref FLT-354 Quarter: 2025 Q3
 
-                                            Vehicle: 1695
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
 
-| # | State | Identified Miles | Unidentified Miles | Total |
-|---|---|---|---|---|
-| 1 | Alabama | 836.4 | 0.0 | 836.4 |
-| 2 | Arizona | 4456.1 | 0.0 | 4456.1 |
-| 3 | California | 903.2 | 0.0 | 903.2 |
-| 4 | Colorado | 4852.0 | 289.2 | 5141.2 |
-| 5 | Connecticut | 1381.1 | 162.3 | 1543.4 |
-| 6 | Delaware | 3631.6 | 0.0 | 3631.6 |
-| 7 | Florida | 6535.5 | 0.0 | 6535.5 |
-| 8 | Georgia | 4793.6 | 0.0 | 4793.6 |
-| 9 | Idaho | 5488.0 | 115.4 | 5603.4 |
-| 10 | Indiana | 4219.5 | 366.1 | 4585.6 |
-| 11 | Iowa | 4333.5 | 0.0 | 4333.5 |
-| 12 | Kentucky | 350.2 | 0.0 | 350.2 |
-| 13 | Louisiana | 5414.9 | 0.0 | 5414.9 |
-| 14 | Maryland | 5206.8 | 0.0 | 5206.8 |
-| 15 | Minnesota | 1331.4 | 0.0 | 1331.4 |
-| 16 | Mississippi | 5031.7 | 0.0 | 5031.7 |
-| 17 | Missouri | 2762.3 | 0.0 | 2762.3 |
-| 18 | Montana | 7037.0 | 0.0 | 7037.0 |
-| 19 | Nebraska | 1244.4 | 0.0 | 1244.4 |
-| 20 | Nevada | 685.9 | 60.3 | 746.2 |
-| 21 | New Jersey | 531.5 | 0.0 | 531.5 |
-| 22 | New Mexico | 4526.0 | 0.0 | 4526.0 |
-| 23 | New York | 5585.1 | 0.0 | 5585.1 |
-| 24 | North Carolina | 1334.4 | 0.0 | 1334.4 |
-| 25 | North Dakota | 3420.7 | 0.0 | 3420.7 |
-| 26 | Ohio | 4042.5 | 0.0 | 4042.5 |
-| 27 | Oklahoma | 4930.4 | 220.4 | 5150.8 |
-| 28 | Oregon | 6030.0 | 0.0 | 6030.0 |
-| 29 | Tennessee | 198.6 | 0.0 | 198.6 |
+"JURISDICTION AND SOURCE NOTE","ACCEPTED / IDENTIFIED MILES","EXCEPTION / UNIDENTIFIED MILES","REPORTED JURISDICTION TOTAL"
+"Kansas
+manual correction retained in quarter workpaper","6,702.9","0.0","6,702.9"
+"Kentucky
+E-ZPass and fuel stop support reviewed","5,011.0","0.0","5,011.0"
+"Louisiana
+cross-border segment verified from GPS batch","2,586.7","0.0","2,586.7"
+"Maryland
+manual correction retained in quarter workpaper","1,511.8","0.0","1,511.8"
+"Michigan
+cross-border segment verified from GPS batch","857.8","0.0","857.8"
+"Minnesota
+manual correction retained in quarter workpaper","1,568.8","0.0","1,568.8"
+"Mississippi
+trip-sheet and dispatch legs reconciled","2,764.6","202.0","2,966.6"
+"Missouri
+route exception cleared by mileage desk","5,043.3","0.0","5,043.3"
+"Montana
+trip-sheet and dispatch legs reconciled","2,891.0","0.0","2,891.0"
+"Nebraska
+trip-sheet and dispatch legs reconciled","1,928.9","0.0","1,928.9"
+"Nevada
+trip-sheet and dispatch legs reconciled","958.0","0.0","958.0"
+"New Jersey
+telematics accepted; odometer tie-out reviewed","4,172.2","0.0","4,172.2"
+"New Mexico
+E-ZPass and fuel stop support reviewed","1,114.8","0.0","1,114.8"
+"North Carolina
+route exception cleared by mileage desk","6,908.4","262.3","7,170.7"
 
-                                                                                    Page 73 of 124
+Page 73
 
 # Page 74
 
-Generated: 11/02/2025 09:14 AM CST                                      Prairie Route Carriers Inc
-                                                                       1874 WESTFIELD CROSSING
-                                                                          PLAINFIELD, IL 60544
-                                                                                  312-555-0174
-
-                          IFTA Mileage: All trucks - 2025 - Q 4
-                                  7/1/2025 - 9/30/2025
-
-                              Vehicle: 1695 continued
-
-| #  | State         | Identified Miles | Unidentified Miles | Total    |
-|----|---------------|------------------|--------------------|----------|
-| 30 | Texas         | 2555.4           | 0.0                | 2555.4   |
-| 31 | Utah          | 863.7            | 199.9              | 1063.6   |
-| 32 | Virginia      | 2240.4           | 0.0                | 2240.4   |
-| 33 | Washington    | 234.9            | 0.0                | 234.9    |
-| 34 | West Virginia | 6284.0           | 3.8                | 6287.8   |
-| 35 | Wyoming       | 853.0            | 116.5              | 969.5    |
-|    | Total         | 114125.7         | 1533.9             | 115659.6 |
-
-                                                                                  Page 74 of 124
+"JURISDICTION AND SOURCE NOTE","ACCEPTED / IDENTIFIED MILES","EXCEPTION / UNIDENTIFIED MILES","REPORTED JURISDICTION TOTAL"
+"North Dakota
+E-ZPass and fuel stop support reviewed","5,929.4","0.0","5,929.4"
+"Ohio
+cross-border segment verified from GPS batch","1,242.4","0.0","1,242.4"
+"Oklahoma
+telematics accepted; odometer tie-out reviewed","1,089.7","116.2","1,205.9"
+"Oregon
+telematics accepted; odometer tie-out reviewed","2,832.9","0.0","2,832.9"
+"Pennsylvania
+trip-sheet and dispatch legs reconciled","27.1","325.4","352.5"
+"South Carolina
+cross-border segment verified from GPS batch","29.9","0.0","29.9"
+"Tennessee
+manual correction retained in quarter workpaper","3,980.3","0.0","3,980.3"
+"Texas
+trip-sheet and dispatch legs reconciled","4,182.9","0.0","4,182.9"
+"Utah
+telematics accepted; odometer tie-out reviewed","4,029.8","161.6","4,191.4"
+"Virginia
+telematics accepted; odometer tie-out reviewed","6,488.9","63.9","6,552.8"
+"Washington
+manual correction retained in quarter workpaper","1,411.2","0.0","1,411.2"
+"West Virginia
+trip-sheet and dispatch legs reconciled","496.4","0.0","496.4"
+"Wisconsin
+telematics accepted; odometer tie-out reviewed","5,205.4","0.0","5,205.4"
+"Wyoming
+telematics accepted; odometer tie-out reviewed","6,928.9","0.0","6,928.9"
 
 # Page 75
 
-Generated: 11/02/2025 09:14 AM CST                                       Prairie Route Carriers Inc
-                                                                        1875 WESTFIELD CROSSING
-                                                                           PLAINFIELD, IL 60544
-                                                                                   312-555-0175
+Hearthline Freight Cooperative
+Quarterly IFTA workpaper packet
+Account HFC-742018 / Fleet mileage review
 
-                        IFTA Mileage: All trucks - 2025 - Q 4
-                                 7/1/2025 - 9/30/2025
+VEHICLE MILEAGE SUPPORT
+Prepared 11/02/2025 09:14 CST
 
-                                     Vehicle: 992
+----------------------------------------------------------------------------------------
+UNIT: 8074
+VIN suffix A862769 | Plate AP50363
+Freightliner intermodal / Gary IN
+Fleet ref FLT-272 | Quarter: 2025 Q3
+----------------------------------------------------------------------------------------
 
-| # | State | Identified Miles | Unidentified Miles | Total |
-|---|---|---|---|---|
-| 1 | Alabama | 1729.2 | 0.0 | 1729.2 |
-| 2 | Arkansas | 3678.9 | 0.0 | 3678.9 |
-| 3 | California | 4978.9 | 360.5 | 5339.4 |
-| 4 | Colorado | 2689.5 | 290.8 | 2980.3 |
-| 5 | Connecticut | 140.6 | 0.0 | 140.6 |
-| 6 | Florida | 3780.8 | 222.1 | 4002.9 |
-| 7 | Georgia | 120.4 | 0.0 | 120.4 |
-| 8 | Idaho | 3398.3 | 0.0 | 3398.3 |
-| 9 | Illinois | 789.4 | 0.0 | 789.4 |
-| 10 | Indiana | 1789.8 | 233.6 | 2023.4 |
-| 11 | Iowa | 4598.7 | 0.0 | 4598.7 |
-| 12 | Kansas | 5366.5 | 0.0 | 5366.5 |
-| 13 | Kentucky | 6204.7 | 0.0 | 6204.7 |
-| 14 | Louisiana | 951.7 | 0.0 | 951.7 |
-| 15 | Maryland | 50.3 | 61.9 | 112.2 |
-| 16 | Minnesota | 2579.1 | 0.0 | 2579.1 |
-| 17 | Montana | 5205.8 | 0.0 | 5205.8 |
-| 18 | Nebraska | 1653.9 | 342.1 | 1996.0 |
-| 19 | New Jersey | 6982.8 | 0.0 | 6982.8 |
-| 20 | New Mexico | 70.4 | 0.0 | 70.4 |
-| 21 | New York | 3331.4 | 0.0 | 3331.4 |
-| 22 | North Carolina | 2552.0 | 131.2 | 2683.2 |
-| 23 | North Dakota | 6281.5 | 0.0 | 6281.5 |
-| 24 | Ohio | 2094.3 | 0.0 | 2094.3 |
-| 25 | Oklahoma | 7025.0 | 0.0 | 7025.0 |
-| 26 | Oregon | 4939.1 | 0.0 | 4939.1 |
-| 27 | Pennsylvania | 6482.6 | 0.0 | 6482.6 |
-| 28 | Tennessee | 6323.6 | 0.0 | 6323.6 |
-| 29 | Texas | 4518.4 | 0.0 | 4518.4 |
+Mileage jurisdictions for this unit are listed below. The unit number is inherited by every row on this page.
 
-                                                                                  Page 75 of 124
+JURISDICTION AND SOURCE NOTE,ACCEPTED / IDENTIFIED MILES,EXCEPTION / UNIDENTIFIED MILES,REPORTED JURISDICTION TOTAL
+"Alabama
+route exception cleared by mileage desk",2524.1,0.0,2524.1
+"Arizona
+telematics accepted; odometer tie-out reviewed",6535.6,0.0,6535.6
+"Arkansas
+cross-border segment verified from GPS batch",6012.1,0.0,6012.1
+"California
+manual correction retained in quarter workpaper",3993.2,0.0,3993.2
+"Connecticut
+telematics accepted; odometer tie-out reviewed",3476.1,0.0,3476.1
+"Delaware
+E-ZPass and fuel stop support reviewed",82.2,225.5,307.7
+"Florida
+E-ZPass and fuel stop support reviewed",3892.9,0.0,3892.9
+"Georgia
+E-ZPass and fuel stop support reviewed",263.6,0.0,263.6
+"Idaho
+E-ZPass and fuel stop support reviewed",752.9,0.5,753.4
+"Illinois
+trip-sheet and dispatch legs reconciled",3342.5,0.0,3342.5
+"Indiana
+route exception cleared by mileage desk",2168.7,0.0,2168.7
+"Iowa
+cross-border segment verified from GPS batch",1192.8,0.0,1192.8
+
+Unit quarter tie-out
+Accepted: 116,761.8
+Exception: 1,917.2
+Reported: 118,679.0
+
+Fuel-card reconciliation sample
+JUR,GALLONS,AMOUNT,NOTE
+IN,48.8,$219.68,fuel only - not a mileage jurisdiction row
+TX,289.5,$1,365.29,fuel only - not a mileage jurisdiction row
+MO,52.2,$230.75,fuel only - not a mileage jurisdiction row
+
+Page 75
 
 # Page 76
 
-#,State,Identified Miles,Unidentified Miles,Total
-30,Utah,2278.7,0.0,2278.7
-31,Virginia,4731.5,0.0,4731.5
-32,Washington,2297.6,0.0,2297.6
-33,West Virginia,1571.3,0.0,1571.3
-34,Wisconsin,6895.6,371.5,7267.1
-35,Wyoming,540.3,0.0,540.3
-,Total,118622.6,2013.7,120636.3
+Jurisdiction,Source Note,Accepted / Identified Miles,Exception / Unidentified Miles,Reported Jurisdiction Total
+Kansas,telematics accepted; odometer tie-out reviewed,784.4,0.0,784.4
+Kentucky,manual correction retained in quarter workpaper,"1,199.9",0.0,"1,199.9"
+Louisiana,route exception cleared by mileage desk,"2,880.2",348.7,"3,228.9"
+Maryland,route exception cleared by mileage desk,"2,845.3",0.0,"2,845.3"
+Michigan,telematics accepted; odometer tie-out reviewed,66.1,0.0,66.1
+Minnesota,telematics accepted; odometer tie-out reviewed,"3,052.6",0.0,"3,052.6"
+Mississippi,cross-border segment verified from GPS batch,"1,924.3",0.0,"1,924.3"
+Missouri,trip-sheet and dispatch legs reconciled,646.6,155.4,802.0
+Montana,cross-border segment verified from GPS batch,"6,368.9",0.0,"6,368.9"
+Nebraska,trip-sheet and dispatch legs reconciled,"4,832.5",0.0,"4,832.5"
+Nevada,cross-border segment verified from GPS batch,"5,368.3",104.8,"5,473.1"
+New Jersey,manual correction retained in quarter workpaper,"2,489.0",0.0,"2,489.0"
+New Mexico,trip-sheet and dispatch legs reconciled,"2,976.2",0.0,"2,976.2"
+New York,E-ZPass and fuel stop support reviewed,54.0,0.0,54.0
 
 # Page 77
 
-#,State,Identified Miles,Unidentified Miles,Total
-1,Alabama,2696.5,0.0,2696.5
-2,Arizona,3450.5,0.0,3450.5
-3,Arkansas,4984.3,198.2,5182.5
-4,California,5231.0,0.0,5231.0
-5,Colorado,252.2,359.6,611.8
-6,Connecticut,4082.9,0.0,4082.9
-7,Delaware,2843.4,0.0,2843.4
-8,Florida,6849.5,7.4,6856.9
-9,Georgia,5350.8,0.0,5350.8
-10,Idaho,6024.9,0.0,6024.9
-11,Illinois,6153.5,0.0,6153.5
-12,Indiana,68.9,131.9,200.8
-13,Iowa,6704.6,0.0,6704.6
-14,Kansas,615.7,363.5,979.2
-15,Kentucky,3988.2,0.0,3988.2
-16,Louisiana,2153.0,0.0,2153.0
-17,Maryland,5603.7,272.5,5876.2
-18,Michigan,6164.6,362.3,6526.9
-19,Minnesota,1.0,140.6,141.6
-20,Mississippi,4645.7,0.0,4645.7
-21,Montana,154.5,182.3,336.8
-22,Nebraska,99.1,0.0,99.1
-23,Nevada,76.8,0.0,76.8
-24,New Jersey,2218.1,310.3,2528.4
-25,New Mexico,6221.5,0.0,6221.5
-26,New York,4900.4,0.0,4900.4
-27,North Carolina,1034.4,0.0,1034.4
-28,North Dakota,1143.4,0.0,1143.4
-29,Ohio,2283.9,0.0,2283.9
+Hearthline Freight Cooperative                                          VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                                         Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
+____________________________________________________________________________________________________
+
++-----------------------+----------------------+----------------------+----------------------+
+| UNIT                  | VIN suffix A862769   | Freightliner         | Fleet ref FLT-272    |
+| **8074**              | Plate AP50363        | intermodal / Gary IN | Quarter: 2025 Q3     |
+| continued             |                      |                      |                      |
++-----------------------+----------------------+----------------------+----------------------+
+
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
+
+| JURISDICTION AND SOURCE NOTE | ACCEPTED / IDENTIFIED MILES | EXCEPTION / UNIDENTIFIED MILES | REPORTED JURISDICTION TOTAL |
+| :--- | :---: | :---: | :---: |
+| **North Carolina**<br>route exception cleared by mileage desk | 1,470.9 | 0.0 | 1,470.9 |
+| **North Dakota**<br>cross-border segment verified from GPS batch | 1,272.6 | 0.0 | 1,272.6 |
+| **Ohio**<br>E-ZPass and fuel stop support reviewed | 8.3 | 243.1 | 251.4 |
+| **Oregon**<br>manual correction retained in quarter workpaper | 55.8 | 0.0 | 55.8 |
+| **Pennsylvania**<br>E-ZPass and fuel stop support reviewed | 4,863.3 | 0.0 | 4,863.3 |
+| **Tennessee**<br>E-ZPass and fuel stop support reviewed | 3,644.8 | 0.0 | 3,644.8 |
+| **Texas**<br>cross-border segment verified from GPS batch | 2,779.9 | 330.9 | 3,110.8 |
+| **Utah**<br>trip-sheet and dispatch legs reconciled | 5,787.2 | 0.0 | 5,787.2 |
+| **Virginia**<br>cross-border segment verified from GPS batch | 6,048.4 | 0.0 | 6,048.4 |
+| **Washington**<br>E-ZPass and fuel stop support reviewed | 5,818.8 | 359.6 | 6,178.4 |
+| **West Virginia**<br>route exception cleared by mileage desk | 5,806.0 | 148.7 | 5,954.7 |
+| **Wisconsin**<br>trip-sheet and dispatch legs reconciled | 2,392.2 | 0.0 | 2,392.2 |
+| **Wyoming**<br>telematics accepted; odometer tie-out reviewed | 7,088.6 | 0.0 | 7,088.6 |
+
+<br>
+
+<div align="right">Page 77</div>
 
 # Page 78
 
-Generated: 11/02/2025 09:14 AM CST
+Hearthline Freight Cooperative
+Quarterly IFTA workpaper packet
+Account HFC-742018 / Fleet mileage review
 
-**Prairie Route Carriers Inc**  
-1878 WESTFIELD CROSSING  
-PLAINFIELD, IL 60544  
-312-555-0178  
+VEHICLE MILEAGE SUPPORT
+Prepared 11/02/2025 09:14 CST
 
-# IFTA Mileage: All trucks - 2025 - Q 4
-### 7/1/2025 - 9/30/2025
+| UNIT | VIN suffix C575402 Plate AP21803 | Peterbilt yard relay / Kansas City MO | Fleet ref FLT-476 Quarter: 2025 Q3 |
+| :--- | :--- | :--- | :--- |
+| **230** | | | |
 
-## Vehicle: 202 continued
+Mileage jurisdictions for this unit are listed below. The unit number is inherited by every row on this page.
 
-| # | State | Identified Miles | Unidentified Miles | Total |
-| :--- | :--- | :--- | :--- | :--- |
-| 30 | Oklahoma | 4924.5 | 0.0 | 4924.5 |
-| 31 | Oregon | 1809.8 | 0.0 | 1809.8 |
-| 32 | Pennsylvania | 4309.8 | 0.0 | 4309.8 |
-| 33 | South Carolina | 6174.5 | 0.0 | 6174.5 |
-| 34 | Tennessee | 6500.9 | 0.0 | 6500.9 |
-| 35 | Texas | 3692.1 | 0.0 | 3692.1 |
-| 36 | Utah | 3340.6 | 337.2 | 3677.8 |
-| 37 | Virginia | 1036.1 | 352.9 | 1389.0 |
-| 38 | Washington | 5266.8 | 0.0 | 5266.8 |
-| 39 | Wisconsin | 1549.3 | 0.0 | 1549.3 |
-| 40 | Wyoming | 1795.2 | 0.0 | 1795.2 |
-| | *Total* | *136396.6* | *3018.7* | *139415.3* |
+| JURISDICTION AND SOURCE NOTE | ACCEPTED / IDENTIFIED MILES | EXCEPTION / UNIDENTIFIED MILES | REPORTED JURISDICTION TOTAL |
+| :--- | :---: | :---: | :---: |
+| **Alabama**<br>route exception cleared by mileage desk | 2,006.4 | 0.0 | 2,006.4 |
+| **Arizona**<br>trip-sheet and dispatch legs reconciled | 2,765.0 | 0.0 | 2,765.0 |
+| **Arkansas**<br>route exception cleared by mileage desk | 5,234.2 | 0.0 | 5,234.2 |
+| **California**<br>manual correction retained in quarter workpaper | 72.4 | 0.0 | 72.4 |
+| **Colorado**<br>cross-border segment verified from GPS batch | 2,927.4 | 0.0 | 2,927.4 |
+| **Connecticut**<br>route exception cleared by mileage desk | 4,173.3 | 0.0 | 4,173.3 |
+| **Delaware**<br>telematics accepted; odometer tie-out reviewed | 4,778.8 | 0.0 | 4,778.8 |
+| **Florida**<br>route exception cleared by mileage desk | 6,718.1 | 148.1 | 6,866.2 |
+| **Georgia**<br>E-ZPass and fuel stop support reviewed | 4,988.5 | 0.0 | 4,988.5 |
+| **Idaho**<br>cross-border segment verified from GPS batch | 1,409.3 | 0.0 | 1,409.3 |
+| **Illinois**<br>E-ZPass and fuel stop support reviewed | 2,208.6 | 0.0 | 2,208.6 |
+| **Iowa**<br>cross-border segment verified from GPS batch | 6,358.8 | 0.0 | 6,358.8 |
 
-Page 78 of 124
+***
+
+### Unit quarter tie-out
+Accepted: 116,973.2  
+Exception: 898.5  
+Reported: 117,871.7  
+
+***
+
+### Fuel-card reconciliation sample
+
+| JUR | GALLONS | AMOUNT | NOTE |
+| :--- | :---: | :---: | :--- |
+| KY | 311.0 | $1,443.86 | fuel only - not a mileage jurisdiction row |
+| WI | 323.6 | $1,320.29 | fuel only - not a mileage jurisdiction row |
+| OH | 248.2 | $1,025.35 | fuel only - not a mileage jurisdiction row |
+
+Page 78
 
 # Page 79
 
-Generated: 11/02/2025 09:14 AM CST                                Prairie Route Carriers Inc
-                                                            1879 WESTFIELD CROSSING
-                                                               PLAINFIELD, IL 60544
-                                                                       312-555-0179
+Hearthline Freight Cooperative, VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet, Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review,
 
-# IFTA Mileage: All trucks - 2025 - Q 4
-### 7/1/2025 - 9/30/2025
-### Vehicle: 8958
+UNIT, VIN suffix / Plate, Vehicle Description, Fleet / Quarter
+"230 (continued)", "VIN suffix C575402, Plate AP21803", "Peterbilt yard relay / Kansas City MO", "Fleet ref FLT-476, Quarter: 2025 Q3"
 
-| # | State | Identified Miles | Unidentified Miles | Total |
-|---|---|---|---|---|
-| 1 | Alabama | 4025.2 | 216.8 | 4242.0 |
-| 2 | Arizona | 6985.6 | 0.0 | 6985.6 |
-| 3 | Arkansas | 1138.2 | 0.0 | 1138.2 |
-| 4 | California | 1523.0 | 0.0 | 1523.0 |
-| 5 | Colorado | 6517.7 | 0.0 | 6517.7 |
-| 6 | Delaware | 6221.3 | 0.0 | 6221.3 |
-| 7 | Florida | 21.8 | 51.4 | 73.2 |
-| 8 | Idaho | 6482.0 | 104.7 | 6586.7 |
-| 9 | Illinois | 6671.7 | 0.0 | 6671.7 |
-| 10 | Indiana | 3919.1 | 0.0 | 3919.1 |
-| 11 | Kentucky | 208.5 | 0.0 | 208.5 |
-| 12 | Louisiana | 6426.9 | 246.0 | 6672.9 |
-| 13 | Maryland | 6461.1 | 0.0 | 6461.1 |
-| 14 | Minnesota | 4978.8 | 240.9 | 5219.7 |
-| 15 | Missouri | 3523.6 | 0.0 | 3523.6 |
-| 16 | Nebraska | 116.2 | 39.4 | 155.6 |
-| 17 | Nevada | 4501.0 | 0.0 | 4501.0 |
-| 18 | New Jersey | 400.5 | 0.0 | 400.5 |
-| 19 | New Mexico | 6278.1 | 0.0 | 6278.1 |
-| 20 | New York | 4621.4 | 0.0 | 4621.4 |
-| 21 | North Carolina | 21.7 | 0.0 | 21.7 |
-| 22 | Ohio | 3075.4 | 0.0 | 3075.4 |
-| 23 | Oklahoma | 3118.2 | 164.1 | 3282.3 |
-| 24 | Oregon | 55.5 | 152.9 | 208.4 |
-| 25 | Pennsylvania | 7082.6 | 0.0 | 7082.6 |
-| 26 | South Carolina | 5755.3 | 0.0 | 5755.3 |
-| 27 | Texas | 1369.8 | 0.0 | 1369.8 |
-| 28 | Utah | 1679.5 | 0.0 | 1679.5 |
-| 29 | Washington | 534.5 | 0.0 | 534.5 |
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
 
-Page 79 of 124
+"JURISDICTION AND SOURCE NOTE","ACCEPTED / IDENTIFIED MILES","EXCEPTION / UNIDENTIFIED MILES","REPORTED JURISDICTION TOTAL"
+"Kentucky
+E-ZPass and fuel stop support reviewed",798.4,0.0,798.4
+"Louisiana
+route exception cleared by mileage desk","6,337.4",0.0,"6,337.4"
+"Maryland
+trip-sheet and dispatch legs reconciled","2,172.8",0.0,"2,172.8"
+"Michigan
+E-ZPass and fuel stop support reviewed","1,474.4",0.0,"1,474.4"
+"Minnesota
+route exception cleared by mileage desk","4,233.5",0.0,"4,233.5"
+"Mississippi
+route exception cleared by mileage desk","1,187.2",315.7,"1,502.9"
+"Missouri
+trip-sheet and dispatch legs reconciled","3,585.0",0.0,"3,585.0"
+"Montana
+route exception cleared by mileage desk","5,695.6",0.0,"5,695.6"
+"New Jersey
+manual correction retained in quarter workpaper","5,684.5",0.0,"5,684.5"
+"New Mexico
+trip-sheet and dispatch legs reconciled",46.2,0.0,46.2
+"New York
+cross-border segment verified from GPS batch","5,019.9",5.1,"5,025.0"
+"North Carolina
+E-ZPass and fuel stop support reviewed","2,302.4",0.0,"2,302.4"
+
+Page 79
 
 # Page 80
 
-Generated: 11/02/2025 09:14 AM CST
+Hearthline Freight Cooperative,VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet,Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review,
 
-                                                    Prairie Route Carriers Inc
-                                                       1880 WESTFIELD CROSSING
-                                                          PLAINFIELD, IL 60544
-                                                                  312-555-0180
+UNIT,VIN suffix C575402,Peterbilt,Fleet ref FLT-476
+230,Plate AP21803,yard relay / Kansas City MO,Quarter: 2025 Q3
+continued,,,
 
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
 
-                     IFTA Mileage: All trucks - 2025 - Q 4
-                              7/1/2025 - 9/30/2025
+JURISDICTION AND SOURCE NOTE,ACCEPTED / IDENTIFIED MILES,EXCEPTION / UNIDENTIFIED MILES,REPORTED JURISDICTION TOTAL
+"North Dakota
+trip-sheet and dispatch legs reconciled",33.0,0.0,33.0
+"Ohio
+route exception cleared by mileage desk","4,882.3",0.0,"4,882.3"
+"Oklahoma
+route exception cleared by mileage desk","2,620.2",0.0,"2,620.2"
+"Pennsylvania
+manual correction retained in quarter workpaper","4,328.8",60.8,"4,389.6"
+"South Carolina
+trip-sheet and dispatch legs reconciled","3,931.1",0.0,"3,931.1"
+"Tennessee
+route exception cleared by mileage desk","2,287.7",368.8,"2,656.5"
+"Texas
+route exception cleared by mileage desk",98.3,0.0,98.3
+"Virginia
+E-ZPass and fuel stop support reviewed","1,931.8",0.0,"1,931.8"
+"Washington
+telematics accepted; odometer tie-out reviewed","6,431.6",0.0,"6,431.6"
+"West Virginia
+trip-sheet and dispatch legs reconciled",931.6,0.0,931.6
+"Wisconsin
+telematics accepted; odometer tie-out reviewed","5,690.7",0.0,"5,690.7"
+"Wyoming
+manual correction retained in quarter workpaper","1,628.0",0.0,"1,628.0"
 
-                           Vehicle: 8958 continued
-
-
-| # | State | Identified Miles | Unidentified Miles | Total |
-|:---|:---|:---|:---|:---|
-| 30 | West Virginia | 90.2 | 0.0 | 90.2 |
-| 31 | Wyoming | 1791.9 | 0.0 | 1791.9 |
-| | *Total* | *105596.3* | *1216.2* | *106812.5* |
-
-
-                                                               Page 80 of 124
+Page 80
 
 # Page 81
 
-Generated: 11/02/2025 09:14 AM CST
+Hearthline Freight Cooperative                                               VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                                              Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
+____________________________________________________________________________________________________
 
-Prairie Route Carriers Inc
-1881 WESTFIELD CROSSING
-PLAINFIELD, IL 60544
-312-555-0181
+UNIT,VIN suffix / Plate,Vehicle Type,Fleet / Quarter
+3140,"VIN suffix F880047\nPlate AP53454","International\nlinehaul / Memphis TN","Fleet ref FLT-183\nQuarter: 2025 Q3"
 
-# IFTA Mileage: All trucks - 2025 - Q 4
-### 7/1/2025 - 9/30/2025
+Mileage jurisdictions for this unit are listed below. The unit number is inherited by every row on this page.
 
-## Vehicle: 2431
+JURISDICTION AND SOURCE NOTE,ACCEPTED / IDENTIFIED MILES,EXCEPTION / UNIDENTIFIED MILES,REPORTED JURISDICTION TOTAL
+"Alabama
+E-ZPass and fuel stop support reviewed",931.5,0.0,931.5
+"Arizona
+telematics accepted; odometer tie-out reviewed","6,177.3",0.0,"6,177.3"
+"California
+cross-border segment verified from GPS batch","6,839.2",0.0,"6,839.2"
+"Colorado
+telematics accepted; odometer tie-out reviewed","5,491.9",54.9,"5,546.8"
+"Connecticut
+manual correction retained in quarter workpaper","3,264.4",0.0,"3,264.4"
+"Delaware
+manual correction retained in quarter workpaper","2,242.6",290.2,"2,532.8"
+"Florida
+manual correction retained in quarter workpaper","3,955.2",74.1,"4,029.3"
+"Idaho
+E-ZPass and fuel stop support reviewed",76.8,213.7,290.5
+"Illinois
+manual correction retained in quarter workpaper","5,711.5",368.1,"6,079.6"
+"Indiana
+telematics accepted; odometer tie-out reviewed","3,745.9",0.0,"3,745.9"
+"Kansas
+manual correction retained in quarter workpaper","6,108.7",328.9,"6,437.6"
+"Kentucky
+route exception cleared by mileage desk","6,942.6",0.0,"6,942.6"
 
-| # | State | Identified Miles | Unidentified Miles | Total |
-|---|---|---|---|---|
-| 1 | Alabama | 6885.4 | 273.6 | 7159.0 |
-| 2 | Arizona | 1651.5 | 0.0 | 1651.5 |
-| 3 | Arkansas | 477.2 | 0.0 | 477.2 |
-| 4 | California | 4135.8 | 0.0 | 4135.8 |
-| 5 | Colorado | 2259.6 | 0.0 | 2259.6 |
-| 6 | Connecticut | 2288.6 | 0.0 | 2288.6 |
-| 7 | Delaware | 6715.8 | 0.0 | 6715.8 |
-| 8 | Idaho | 2513.9 | 0.0 | 2513.9 |
-| 9 | Illinois | 2207.4 | 0.0 | 2207.4 |
-| 10 | Indiana | 5341.9 | 0.0 | 5341.9 |
-| 11 | Iowa | 12.1 | 0.0 | 12.1 |
-| 12 | Kansas | 5716.5 | 0.0 | 5716.5 |
-| 13 | Kentucky | 92.1 | 373.6 | 465.7 |
-| 14 | Louisiana | 1232.5 | 0.0 | 1232.5 |
-| 15 | Maryland | 3577.7 | 0.0 | 3577.7 |
-| 16 | Minnesota | 2613.2 | 0.0 | 2613.2 |
-| 17 | Mississippi | 4652.0 | 0.0 | 4652.0 |
-| 18 | Missouri | 41.5 | 64.1 | 105.6 |
-| 19 | Montana | 4262.7 | 106.8 | 4369.5 |
-| 20 | Nevada | 2310.8 | 0.0 | 2310.8 |
-| 21 | New Jersey | 2764.7 | 122.0 | 2886.7 |
-| 22 | New Mexico | 6847.6 | 0.0 | 6847.6 |
-| 23 | New York | 4408.9 | 0.0 | 4408.9 |
-| 24 | North Carolina | 3239.5 | 74.1 | 3313.6 |
-| 25 | North Dakota | 6765.3 | 0.0 | 6765.3 |
-| 26 | Ohio | 6844.4 | 0.0 | 6844.4 |
-| 27 | Oklahoma | 6589.3 | 0.0 | 6589.3 |
-| 28 | Pennsylvania | 3299.2 | 0.0 | 3299.2 |
-| 29 | South Carolina | 49.7 | 0.0 | 49.7 |
+Unit quarter tie-out
+Accepted: 114,744.4
+Exception: 2,329.4
+Reported: 117,073.8
 
-Page 81 of 124
+Fuel-card reconciliation sample
+JUR,GALLONS,AMOUNT,NOTE
+TN,365.5,"$1,709.02",fuel only - not a mileage jurisdiction row
+KY,372.5,"$1,707.31",fuel only - not a mileage jurisdiction row
+TN,283.5,"$1,118.00",fuel only - not a mileage jurisdiction row
+
+Page 81
 
 # Page 82
 
-#,State,Identified Miles,Unidentified Miles,Total
-30,Tennessee,4318.7,157.6,4476.3
-31,Utah,3761.1,41.5,3802.6
-32,Virginia,1627.7,0.0,1627.7
-33,Washington,2386.7,0.0,2386.7
-34,West Virginia,2010.4,0.0,2010.4
-35,Wisconsin,472.5,0.0,472.5
-36,Wyoming,452.4,0.0,452.4
-,Total,114826.3,1213.3,116039.6
+Hearthline Freight Cooperative                                                      VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                                                     Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
+
+__________________________________________________________________________________________________________________
+
+| UNIT | VIN suffix F880047 | International | Fleet ref FLT-183 |
+| :--- | :--- | :--- | :--- |
+| **3140**<br>continued | Plate AP53454 | linehaul / Memphis TN | Quarter: 2025 Q3 |
+
+__________________________________________________________________________________________________________________
+
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
+
+| JURISDICTION AND SOURCE NOTE | ACCEPTED / IDENTIFIED MILES | EXCEPTION / UNIDENTIFIED MILES | REPORTED JURISDICTION TOTAL |
+| :--- | :---: | :---: | :---: |
+| **Louisiana**<br>route exception cleared by mileage desk | 4,434.0 | 0.0 | 4,434.0 |
+| **Maryland**<br>E-ZPass and fuel stop support reviewed | 83.0 | 0.0 | 83.0 |
+| **Michigan**<br>route exception cleared by mileage desk | 3,844.9 | 0.0 | 3,844.9 |
+| **Mississippi**<br>manual correction retained in quarter workpaper | 21.1 | 79.4 | 100.5 |
+| **Missouri**<br>manual correction retained in quarter workpaper | 2,289.5 | 57.8 | 2,347.3 |
+| **Nebraska**<br>trip-sheet and dispatch legs reconciled | 2,627.7 | 0.0 | 2,627.7 |
+| **Nevada**<br>manual correction retained in quarter workpaper | 498.5 | 26.6 | 525.1 |
+| **New Jersey**<br>manual correction retained in quarter workpaper | 5,947.4 | 0.0 | 5,947.4 |
+| **New Mexico**<br>telematics accepted; odometer tie-out reviewed | 6,732.3 | 0.0 | 6,732.3 |
+| **New York**<br>E-ZPass and fuel stop support reviewed | 3,073.1 | 0.0 | 3,073.1 |
+
+<br><br><br><br><br><br><br><br>
+Page 82
 
 # Page 83
 
-#,State,Identified Miles,Unidentified Miles,Total
-1,Alabama,1648.3,0.0,1648.3
-2,Arizona,4242.0,0.0,4242.0
-3,Arkansas,6136.3,0.0,6136.3
-4,California,6094.2,0.0,6094.2
-5,Colorado,105.4,0.0,105.4
-6,Connecticut,7.7,0.0,7.7
-7,Delaware,5738.3,0.0,5738.3
-8,Florida,1363.5,88.3,1451.8
-9,Idaho,4351.5,379.9,4731.4
-10,Illinois,4709.2,0.0,4709.2
-11,Iowa,4725.6,0.0,4725.6
-12,Kansas,2083.0,77.4,2160.4
-13,Louisiana,4167.3,230.8,4398.1
-14,Maryland,28.5,0.0,28.5
-15,Minnesota,6490.4,0.0,6490.4
-16,Mississippi,7055.9,0.0,7055.9
-17,Montana,1477.6,0.0,1477.6
-18,Nebraska,4202.1,220.5,4422.6
-19,Nevada,4704.4,0.0,4704.4
-20,New Jersey,5271.0,0.0,5271.0
-21,New York,5428.0,0.0,5428.0
-22,North Carolina,2496.9,83.2,2580.1
-23,North Dakota,7058.0,0.0,7058.0
-24,Ohio,7042.6,0.0,7042.6
-25,Oklahoma,4912.0,0.0,4912.0
-26,Pennsylvania,2810.5,0.0,2810.5
-27,South Carolina,2140.0,0.0,2140.0
-28,Tennessee,2979.9,0.0,2979.9
-29,Texas,4235.2,0.0,4235.2
+Hearthline Freight Cooperative                                                     VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                                                     Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
+______________________________________________________________________________________________________
+
+| UNIT | VIN suffix F880047 | International | Fleet ref FLT-183 |
+| :--- | :--- | :--- | :--- |
+| **3140** <br> continued | Plate AP53454 | linehaul / Memphis TN | Quarter: 2025 Q3 |
+______________________________________________________________________________________________________
+
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
+
+| JURISDICTION AND SOURCE NOTE | ACCEPTED / IDENTIFIED MILES | EXCEPTION / UNIDENTIFIED MILES | REPORTED JURISDICTION TOTAL |
+| :--- | :---: | :---: | :---: |
+| **North Carolina** <br> manual correction retained in quarter workpaper | 1,340.1 | 0.0 | 1,340.1 |
+| **North Dakota** <br> manual correction retained in quarter workpaper | 6,110.7 | 0.0 | 6,110.7 |
+| **Ohio** <br> telematics accepted; odometer tie-out reviewed | 3,812.1 | 0.0 | 3,812.1 |
+| **Oregon** <br> telematics accepted; odometer tie-out reviewed | 2,128.6 | 0.0 | 2,128.6 |
+| **South Carolina** <br> trip-sheet and dispatch legs reconciled | 2,600.6 | 251.9 | 2,852.5 |
+| **Tennessee** <br> manual correction retained in quarter workpaper | 3,953.2 | 240.5 | 4,193.7 |
+| **Utah** <br> manual correction retained in quarter workpaper | 6,916.0 | 0.0 | 6,916.0 |
+| **Washington** <br> cross-border segment verified from GPS batch | 3,768.7 | 343.3 | 4,112.0 |
+| **Wisconsin** <br> trip-sheet and dispatch legs reconciled | 3,075.3 | 0.0 | 3,075.3 |
+
+<br>
+<p align="right">Page 83</p>
 
 # Page 84
 
-Generated: 11/02/2025 09:14 AM CST
+Hearthline Freight Cooperative                          VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                        Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
 
-                                                             Prairie Route Carriers Inc
-                                                            1884 WESTFIELD CROSSING
-                                                               PLAINFIELD, IL 60544
-                                                                       312-555-0184
+_________________________________________________________________________________________________
 
-                     IFTA Mileage: All trucks - 2025 - Q 4
-                             7/1/2025 - 9/30/2025
+| UNIT **8566** | VIN suffix S164901<br>Plate AP25175 | Volvo<br>regional / Kansas City MO | Fleet ref FLT-486<br>Quarter: 2025 Q3 |
+_________________________________________________________________________________________________
 
-                         Vehicle: 362 continued
+Mileage jurisdictions for this unit are listed below. The unit number is inherited by every row on this page.
 
-| # | State | Identified Miles | Unidentified Miles | Total |
-|---|---|---|---|---|
-| 30 | Utah | 2012.7 | 0.0 | 2012.7 |
-| 31 | Virginia | 4763.0 | 0.0 | 4763.0 |
-| 32 | Washington | 757.8 | 363.0 | 1120.8 |
-| 33 | West Virginia | 0.0 | 0.0 | 0.0 |
-| 34 | Wisconsin | 1430.2 | 0.0 | 1430.2 |
-| | Total | 122669.0 | 1443.1 | 124112.1 |
+| JURISDICTION AND SOURCE NOTE | ACCEPTED / IDENTIFIED MILES | EXCEPTION / UNIDENTIFIED MILES | REPORTED JURISDICTION TOTAL |
+| :--- | ---: | ---: | ---: |
+| **Alabama** <br><sub>route exception cleared by mileage desk</sub> | 562.9 | 349.7 | 912.6 |
+| **Arkansas** <br><sub>trip-sheet and dispatch legs reconciled</sub> | 3,683.7 | 0.0 | 3,683.7 |
+| **California** <br><sub>trip-sheet and dispatch legs reconciled</sub> | 87.4 | 0.0 | 87.4 |
+| **Colorado** <br><sub>telematics accepted; odometer tie-out reviewed</sub> | 152.2 | 0.0 | 152.2 |
+| **Connecticut** <br><sub>cross-border segment verified from GPS batch</sub> | 6,338.9 | 0.0 | 6,338.9 |
+| **Delaware** <br><sub>manual correction retained in quarter workpaper</sub> | 308.8 | 0.0 | 308.8 |
+| **Florida** <br><sub>route exception cleared by mileage desk</sub> | 7.7 | 0.0 | 7.7 |
+| **Georgia** <br><sub>route exception cleared by mileage desk</sub> | 5,757.2 | 371.8 | 6,129.0 |
+| **Idaho** <br><sub>cross-border segment verified from GPS batch</sub> | 11.3 | 12.8 | 24.1 |
+| **Illinois** <br><sub>telematics accepted; odometer tie-out reviewed</sub> | 808.0 | 0.0 | 808.0 |
+| **Indiana** <br><sub>cross-border segment verified from GPS batch</sub> | 40.5 | 0.0 | 40.5 |
+| **Iowa** <br><sub>cross-border segment verified from GPS batch</sub> | 3,236.6 | 123.9 | 3,360.5 |
 
-Page 84 of 124
+<br>
+
+| **Unit quarter tie-out** <br><br> Accepted: 103,242.8 <br> Exception: 2,711.7 <br> Reported: 105,954.5 | **Fuel-card reconciliation sample** <br><br> <table><thead><tr><th>JUR</th><th>GALLONS</th><th>AMOUNT</th><th>NOTE</th></tr></thead><tbody><tr><td>GA</td><td>156.9</td><td>$598.32</td><td>fuel only - not a mileage jurisdiction row</td></tr><tr><td>KY</td><td>294.0</td><td>$1,141.91</td><td>fuel only - not a mileage jurisdiction row</td></tr><tr><td>GA</td><td>356.8</td><td>$1,345.43</td><td>fuel only - not a mileage jurisdiction row</td></tr></tbody></table> |
+| :--- | :--- |
+
+<br>
+<p align="right">Page 84</p>
 
 # Page 85
 
-#,State,Identified Miles,Unidentified Miles,Total
-1,Alabama,1727.9,0.0,1727.9
-2,Arizona,6304.1,0.0,6304.1
-3,Arkansas,5773.9,195.2,5969.1
-4,California,1845.0,0.0,1845.0
-5,Colorado,614.4,0.0,614.4
-6,Delaware,4736.9,0.0,4736.9
-7,Florida,6078.9,0.0,6078.9
-8,Georgia,196.4,0.0,196.4
-9,Idaho,2580.6,0.0,2580.6
-10,Illinois,1140.9,223.6,1364.5
-11,Indiana,3209.6,0.0,3209.6
-12,Iowa,62.9,297.5,360.4
-13,Kansas,5084.4,0.0,5084.4
-14,Kentucky,1773.0,0.0,1773.0
-15,Louisiana,5659.5,0.0,5659.5
-16,Maryland,4993.5,0.0,4993.5
-17,Minnesota,9.7,0.0,9.7
-18,Mississippi,4830.6,0.0,4830.6
-19,Missouri,5744.2,191.8,5936.0
-20,Montana,5112.8,89.9,5202.7
-21,Nebraska,129.7,0.0,129.7
-22,Nevada,6170.6,0.0,6170.6
-23,New Jersey,96.0,4.6,100.6
-24,New Mexico,280.9,257.3,538.2
-25,New York,41.1,0.0,41.1
-26,North Carolina,3512.0,0.0,3512.0
-27,North Dakota,3117.2,0.0,3117.2
-28,Ohio,98.2,335.2,433.4
-29,Oklahoma,4646.4,0.0,4646.4
+"JURISDICTION AND SOURCE NOTE","ACCEPTED / IDENTIFIED MILES","EXCEPTION / UNIDENTIFIED MILES","REPORTED JURISDICTION TOTAL"
+"Kansas
+manual correction retained in quarter workpaper","961.1","0.0","961.1"
+"Kentucky
+E-ZPass and fuel stop support reviewed","3,397.1","0.0","3,397.1"
+"Louisiana
+manual correction retained in quarter workpaper","6,032.2","274.6","6,306.8"
+"Maryland
+route exception cleared by mileage desk","1,914.9","212.7","2,127.6"
+"Michigan
+trip-sheet and dispatch legs reconciled","3,030.6","0.0","3,030.6"
+"Minnesota
+trip-sheet and dispatch legs reconciled","14.8","0.0","14.8"
+"Mississippi
+route exception cleared by mileage desk","4,332.0","175.0","4,507.0"
+"Missouri
+manual correction retained in quarter workpaper","6,924.3","153.8","7,078.1"
+"Montana
+manual correction retained in quarter workpaper","2,485.2","0.0","2,485.2"
+"Nevada
+route exception cleared by mileage desk","2,513.3","56.5","2,569.8"
+"New Mexico
+route exception cleared by mileage desk","2,266.5","0.0","2,266.5"
+"New York
+cross-border segment verified from GPS batch","1,501.3","194.1","1,695.4"
+"North Carolina
+manual correction retained in quarter workpaper","3,490.5","10.3","3,500.8"
 
 # Page 86
 
-Generated: 11/02/2025 09:14 AM CST
+Hearthline Freight Cooperative                   VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                 Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
+________________________________________________________________________________
 
-Prairie Route Carriers Inc
-1886 WESTFIELD CROSSING
-PLAINFIELD, IL 60544
-312-555-0186
+| UNIT <br><br> **8566** <br> continued | VIN suffix S164901 <br> Plate AP25175 | Volvo <br> regional / Kansas City MO | Fleet ref FLT-486 <br> Quarter: 2025 Q3 |
+| :--- | :--- | :--- | :--- |
 
-# IFTA Mileage: All trucks - 2025 - Q 4
-### 7/1/2025 - 9/30/2025
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
 
-## Vehicle: 1240 continued
-
-| # | State | Identified Miles | Unidentified Miles | Total |
-| :--- | :--- | :--- | :--- | :--- |
-| 30 | Oregon | 63.0 | 0.0 | 63.0 |
-| 31 | Pennsylvania | 5883.3 | 0.0 | 5883.3 |
-| 32 | South Carolina | 6061.2 | 0.0 | 6061.2 |
-| 33 | Tennessee | 5351.9 | 0.0 | 5351.9 |
-| 34 | Texas | 6538.8 | 0.0 | 6538.8 |
-| 35 | Utah | 2639.5 | 0.0 | 2639.5 |
-| 36 | Virginia | 5440.3 | 0.0 | 5440.3 |
-| 37 | Wisconsin | 6137.3 | 0.0 | 6137.3 |
-| 38 | Wyoming | 156.4 | 0.0 | 156.4 |
-| | **Total** | **123843.0** | **1595.1** | **125438.1** |
+| JURISDICTION AND SOURCE NOTE | ACCEPTED / IDENTIFIED MILES | EXCEPTION / UNIDENTIFIED MILES | REPORTED JURISDICTION TOTAL |
+| :--- | :---: | :---: | :---: |
+| **North Dakota** <br> _cross-border segment verified from GPS batch_ | 6,635.9 | 0.0 | 6,635.9 |
+| **Ohio** <br> _route exception cleared by mileage desk_ | 3,440.0 | 5.5 | 3,445.5 |
+| **Oklahoma** <br> _cross-border segment verified from GPS batch_ | 3,267.7 | 0.0 | 3,267.7 |
+| **Oregon** <br> _trip-sheet and dispatch legs reconciled_ | 6,397.4 | 332.2 | 6,729.6 |
+| **Pennsylvania** <br> _manual correction retained in quarter workpaper_ | 3,401.9 | 0.0 | 3,401.9 |
+| **South Carolina** <br> _telematics accepted; odometer tie-out reviewed_ | 5,120.5 | 0.0 | 5,120.5 |
+| **Tennessee** <br> _cross-border segment verified from GPS batch_ | 2,746.4 | 0.0 | 2,746.4 |
+| **Texas** <br> _route exception cleared by mileage desk_ | 4,208.5 | 162.8 | 4,371.3 |
+| **Utah** <br> _trip-sheet and dispatch legs reconciled_ | 941.3 | 0.0 | 941.3 |
+| **Virginia** <br> _trip-sheet and dispatch legs reconciled_ | 4,652.5 | 0.0 | 4,652.5 |
+| **West Virginia** <br> _E-ZPass and fuel stop support reviewed_ | 1,593.5 | 276.0 | 1,869.5 |
+| **Wyoming** <br> _cross-border segment verified from GPS batch_ | 978.2 | 0.0 | 978.2 |
 
 <br>
-
-Page 86 of 124
+<p align="right">Page 86</p>
 
 # Page 87
 
-Generated: 11/02/2025 09:14 AM CST                                      Prairie Route Carriers Inc
-                                                                           1887 WESTFIELD CROSSING
-                                                                              PLAINFIELD, IL 60544
-                                                                                      312-555-0187
+Hearthline Freight Cooperative                           VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                          Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
 
-                             IFTA Mileage: All trucks - 2025 - Q 4
-                                      7/1/2025 - 9/30/2025
+---------------------------------------------------------------------------------
+UNIT: 1555          VIN suffix G237617        Kenworth               Fleet ref FLT-727
+                    Plate AP49216             dedicated /            Quarter: 2025 Q3
+                                              Kansas City MO
+---------------------------------------------------------------------------------
 
-                                          Vehicle: 904
+Mileage jurisdictions for this unit are listed below. The unit number is inherited by every row on this page.
 
-| # | State | Identified Miles | Unidentified Miles | Total |
-|---|---|---|---|---|
-| 1 | Alabama | 22.7 | 0.0 | 22.7 |
-| 2 | Arizona | 59.1 | 0.0 | 59.1 |
-| 3 | California | 5897.4 | 0.0 | 5897.4 |
-| 4 | Colorado | 4327.7 | 0.0 | 4327.7 |
-| 5 | Connecticut | 6391.1 | 0.0 | 6391.1 |
-| 6 | Florida | 2988.2 | 0.0 | 2988.2 |
-| 7 | Georgia | 83.3 | 85.4 | 168.7 |
-| 8 | Illinois | 1252.9 | 0.0 | 1252.9 |
-| 9 | Indiana | 4039.4 | 0.0 | 4039.4 |
-| 10 | Iowa | 5059.4 | 0.0 | 5059.4 |
-| 11 | Kansas | 5228.3 | 0.0 | 5228.3 |
-| 12 | Louisiana | 2708.6 | 81.4 | 2790.0 |
-| 13 | Maryland | 1197.1 | 0.0 | 1197.1 |
-| 14 | Minnesota | 373.2 | 0.0 | 373.2 |
-| 15 | Mississippi | 3937.2 | 0.0 | 3937.2 |
-| 16 | Montana | 4252.3 | 0.0 | 4252.3 |
-| 17 | Nebraska | 1925.7 | 0.0 | 1925.7 |
-| 18 | Nevada | 6979.4 | 0.0 | 6979.4 |
-| 19 | New York | 840.2 | 368.3 | 1208.5 |
-| 20 | North Carolina | 0.6 | 0.0 | 0.6 |
-| 21 | North Dakota | 6262.0 | 0.0 | 6262.0 |
-| 22 | Ohio | 4676.3 | 0.0 | 4676.3 |
-| 23 | Oklahoma | 2.5 | 121.7 | 124.2 |
-| 24 | Oregon | 5817.7 | 0.0 | 5817.7 |
-| 25 | Pennsylvania | 3989.8 | 296.6 | 4286.4 |
-| 26 | South Carolina | 8.3 | 0.0 | 8.3 |
-| 27 | Texas | 3528.9 | 0.0 | 3528.9 |
-| 28 | Utah | 5846.3 | 0.0 | 5846.3 |
-| 29 | Washington | 2682.1 | 0.0 | 2682.1 |
+JURISDICTION AND SOURCE NOTE,ACCEPTED / IDENTIFIED MILES,EXCEPTION / UNIDENTIFIED MILES,REPORTED JURISDICTION TOTAL
+"Alabama
+cross-border segment verified from GPS batch",73.5,0.0,73.5
+"Arizona
+manual correction retained in quarter workpaper","3,783.7",0.0,"3,783.7"
+"Arkansas
+manual correction retained in quarter workpaper","4,658.8",0.0,"4,658.8"
+"California
+route exception cleared by mileage desk","5,142.0",0.0,"5,142.0"
+"Colorado
+trip-sheet and dispatch legs reconciled","2,655.5",364.5,"3,020.0"
+"Connecticut
+route exception cleared by mileage desk","2,487.2",0.0,"2,487.2"
+"Delaware
+trip-sheet and dispatch legs reconciled","1,817.0",0.0,"1,817.0"
+"Florida
+trip-sheet and dispatch legs reconciled","2,957.7",0.0,"2,957.7"
+"Georgia
+cross-border segment verified from GPS batch","4,549.9",0.0,"4,549.9"
+"Illinois
+E-ZPass and fuel stop support reviewed","3,899.3",0.0,"3,899.3"
+"Indiana
+trip-sheet and dispatch legs reconciled","6,332.5",0.0,"6,332.5"
+"Iowa
+E-ZPass and fuel stop support reviewed","3,919.5",37.6,"3,957.1"
 
-<br>
 
-<p align="right">Page 87 of 124</p>
+Unit quarter tie-out
+Accepted: 102,959.4
+Exception: 1,801.0
+Reported: 104,760.4
+
+
+Fuel-card reconciliation sample
+JUR,GALLONS,AMOUNT,NOTE
+PA,261.1,"$1,035.19",fuel only - not a mileage jurisdiction row
+WI,75.9,$290.43,fuel only - not a mileage jurisdiction row
+WI,82.8,$316.51,fuel only - not a mileage jurisdiction row
+
+
+                                                                          Page 87
 
 # Page 88
 
-Generated: 11/02/2025 09:14 AM CST                     Prairie Route Carriers Inc
-                                                    1888 WESTFIELD CROSSING
-                                                       PLAINFIELD, IL 60544
-                                                               312-555-0188
+Hearthline Freight Cooperative
+Quarterly IFTA workpaper packet
+Account HFC-742018 / Fleet mileage review
 
-# IFTA Mileage: All trucks - 2025 - Q 4
-### 7/1/2025 - 9/30/2025
+VEHICLE MILEAGE SUPPORT
+Prepared 11/02/2025 09:14 CST
 
-## Vehicle: 904 continued
+-----------------------------------------------------------------------------------------
+UNIT: 1555 (continued)
+VIN suffix G237617 | Plate AP49216
+Kenworth dedicated / Kansas City MO
+Fleet ref FLT-727 | Quarter: 2025 Q3
+-----------------------------------------------------------------------------------------
 
-| # | State | Identified Miles | Unidentified Miles | Total |
-|---|---|---|---|---|
-| 30 | West Virginia | 5014.6 | 0.0 | 5014.6 |
-| 31 | Wisconsin | 1507.3 | 0.0 | 1507.3 |
-| 32 | Wyoming | 3217.3 | 315.7 | 3533.0 |
-| | *Total* | *100116.9* | *1269.1* | *101386.0* |
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
 
-Page 88 of 124
+"JURISDICTION AND SOURCE NOTE","ACCEPTED / IDENTIFIED MILES","EXCEPTION / UNIDENTIFIED MILES","REPORTED JURISDICTION TOTAL"
+"Kansas (telematics accepted; odometer tie-out reviewed)",43.0,0.0,43.0
+"Louisiana (E-ZPass and fuel stop support reviewed)","4,161.1",181.5,"4,342.6"
+"Maryland (E-ZPass and fuel stop support reviewed)",879.1,260.5,"1,139.6"
+"Michigan (manual correction retained in quarter workpaper)","3,675.9",0.0,"3,675.9"
+"Minnesota (route exception cleared by mileage desk)","1,071.0",0.0,"1,071.0"
+"Mississippi (trip-sheet and dispatch legs reconciled)",23.5,0.0,23.5
+"Montana (manual correction retained in quarter workpaper)","6,642.5",0.0,"6,642.5"
+"Nebraska (route exception cleared by mileage desk)",69.2,0.0,69.2
+"Nevada (E-ZPass and fuel stop support reviewed)","3,668.8",345.3,"4,014.1"
+"New Jersey (cross-border segment verified from GPS batch)",566.9,51.1,618.0
+"New Mexico (trip-sheet and dispatch legs reconciled)",19.9,0.0,19.9
+
+Page 88
 
 # Page 89
 
-#,State,Identified Miles,Unidentified Miles,Total
-1,Alabama,2571.6,0.0,2571.6
-2,Arizona,1427.1,0.0,1427.1
-3,California,5138.6,0.0,5138.6
-4,Colorado,1363.2,0.0,1363.2
-5,Connecticut,6024.5,0.0,6024.5
-6,Delaware,2058.7,0.0,2058.7
-7,Idaho,1401.1,0.0,1401.1
-8,Illinois,4806.8,0.0,4806.8
-9,Indiana,6664.1,0.0,6664.1
-10,Iowa,4688.3,0.0,4688.3
-11,Louisiana,752.4,0.0,752.4
-12,Maryland,5336.9,0.0,5336.9
-13,Michigan,5129.7,0.0,5129.7
-14,Minnesota,1481.1,289.5,1770.6
-15,Mississippi,3725.8,0.0,3725.8
-16,Montana,5948.4,0.0,5948.4
-17,Nebraska,6480.5,0.0,6480.5
-18,Nevada,5914.3,203.9,6118.2
-19,New York,1015.4,0.0,1015.4
-20,North Carolina,197.3,0.0,197.3
-21,North Dakota,6575.6,0.0,6575.6
-22,Ohio,5806.9,0.0,5806.9
-23,Oklahoma,4516.2,0.0,4516.2
-24,South Carolina,6022.7,311.9,6334.6
-25,Tennessee,54.7,0.0,54.7
-26,Texas,5862.2,0.0,5862.2
-27,Utah,6993.9,0.0,6993.9
-28,Virginia,4169.7,0.0,4169.7
-29,Washington,6.9,0.0,6.9
+"JURISDICTION AND SOURCE NOTE","ACCEPTED / IDENTIFIED MILES","EXCEPTION / UNIDENTIFIED MILES","REPORTED JURISDICTION TOTAL"
+"New York
+E-ZPass and fuel stop support reviewed","3,800.8","0.0","3,800.8"
+"Ohio
+trip-sheet and dispatch legs reconciled","2,125.6","0.0","2,125.6"
+"Oklahoma
+cross-border segment verified from GPS batch","4,810.1","0.0","4,810.1"
+"Oregon
+cross-border segment verified from GPS batch","4,188.8","0.0","4,188.8"
+"South Carolina
+cross-border segment verified from GPS batch","6,426.5","0.0","6,426.5"
+"Tennessee
+cross-border segment verified from GPS batch","2,313.8","0.0","2,313.8"
+"Texas
+trip-sheet and dispatch legs reconciled","1,226.7","227.5","1,454.2"
+"Virginia
+manual correction retained in quarter workpaper","6,597.4","0.0","6,597.4"
+"Washington
+cross-border segment verified from GPS batch","0.0","0.0","0.0"
+"West Virginia
+cross-border segment verified from GPS batch","4,645.7","0.0","4,645.7"
+"Wisconsin
+cross-border segment verified from GPS batch","3,726.5","333.0","4,059.5"
 
 # Page 90
 
-Generated: 11/02/2025 09:14 AM CST                                Prairie Route Carriers Inc
-                                                                 1890 WESTFIELD CROSSING
-                                                                    PLAINFIELD, IL 60544
-                                                                            312-555-0100
+Hearthline Freight Cooperative
+Quarterly IFTA workpaper packet
+Account HFC-742018 / Fleet mileage review
 
-                              IFTA Mileage: All trucks - 2025 - Q 4
-                                       7/1/2025 - 9/30/2025
+VEHICLE MILEAGE SUPPORT
+Prepared 11/02/2025 09:14 CST
 
-                                     Vehicle: 7341 continued
+UNIT: 2942
+VIN suffix C945585, Plate AP23028
+International, yard relay / Toledo OH
+Fleet ref FLT-337, Quarter: 2025 Q3
 
-| # | State | Identified Miles | Unidentified Miles | Total |
-|---|---|---|---|---|
-| 30 | West Virginia | 2424.1 | 0.0 | 2424.1 |
-| 31 | Wyoming | 3999.2 | 80.0 | 4079.2 |
-| | Total | 118557.9 | 885.3 | 119443.2 |
+Mileage jurisdictions for this unit are listed below. The unit number is inherited by every row on this page.
 
-                                                                          Page 90 of 124
+JURISDICTION AND SOURCE NOTE,ACCEPTED / IDENTIFIED MILES,EXCEPTION / UNIDENTIFIED MILES,REPORTED JURISDICTION TOTAL
+"Arizona
+cross-border segment verified from GPS batch",1940.2,77.0,2017.2
+"California
+telematics accepted; odometer tie-out reviewed",1899.8,0.0,1899.8
+"Colorado
+cross-border segment verified from GPS batch",4522.1,0.0,4522.1
+"Delaware
+manual correction retained in quarter workpaper",6046.0,0.0,6046.0
+"Florida
+telematics accepted; odometer tie-out reviewed",6499.3,0.0,6499.3
+"Georgia
+E-ZPass and fuel stop support reviewed",3137.0,0.0,3137.0
+"Idaho
+route exception cleared by mileage desk",6322.7,0.0,6322.7
+"Illinois
+route exception cleared by mileage desk",3257.8,0.0,3257.8
+"Iowa
+route exception cleared by mileage desk",2747.6,0.0,2747.6
+"Kansas
+cross-border segment verified from GPS batch",3926.4,353.8,4280.2
+"Kentucky
+trip-sheet and dispatch legs reconciled",996.8,0.0,996.8
+"Michigan
+cross-border segment verified from GPS batch",79.6,258.8,338.4
+
+Unit quarter tie-out
+Accepted: 110,054.1
+Exception: 1,158.6
+Reported: 111,212.7
+
+Fuel-card reconciliation sample
+JUR,GALLONS,AMOUNT,NOTE
+KY,74.7,$282.95,fuel only - not a mileage jurisdiction row
+IN,377.1,$1,775.63,fuel only - not a mileage jurisdiction row
+PA,317.0,$1,195.95,fuel only - not a mileage jurisdiction row
+
+Page 90
 
 # Page 91
 
-Generated: 11/02/2025 09:14 AM CST                                       Prairie Route Carriers Inc
-                                                                        1891 WESTFIELD CROSSING
-                                                                          PLAINFIELD, IL 60544
-                                                                                  312-555-0101
+Hearthline Freight Cooperative                                  VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                                 Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
+__________________________________________________________________________________________________
 
-                         IFTA Mileage: All trucks - 2025 - Q 4
-                                 7/1/2025 - 9/30/2025
+| UNIT | VIN suffix C945585 | International | Fleet ref FLT-337 |
+| **2942** | Plate AP23028 | yard relay / Toledo OH | Quarter: 2025 Q3 |
+| continued | | | |
 
-                                     Vehicle: 8920
+__________________________________________________________________________________________________
 
-| # | State | Identified Miles | Unidentified Miles | Total |
-|---|---|---|---|---|
-| 1 | Alabama | 6469.5 | 0.0 | 6469.5 |
-| 2 | Arizona | 3229.7 | 0.0 | 3229.7 |
-| 3 | California | 3242.9 | 0.0 | 3242.9 |
-| 4 | Colorado | 497.2 | 0.0 | 497.2 |
-| 5 | Connecticut | 2268.0 | 0.0 | 2268.0 |
-| 6 | Delaware | 3468.8 | 0.0 | 3468.8 |
-| 7 | Florida | 1588.8 | 0.0 | 1588.8 |
-| 8 | Idaho | 6962.9 | 0.0 | 6962.9 |
-| 9 | Illinois | 436.8 | 0.0 | 436.8 |
-| 10 | Indiana | 1156.1 | 0.0 | 1156.1 |
-| 11 | Iowa | 1282.1 | 0.0 | 1282.1 |
-| 12 | Kansas | 3475.1 | 0.0 | 3475.1 |
-| 13 | Kentucky | 5882.4 | 0.0 | 5882.4 |
-| 14 | Louisiana | 6785.0 | 0.0 | 6785.0 |
-| 15 | Maryland | 3198.1 | 0.0 | 3198.1 |
-| 16 | Michigan | 4950.0 | 0.0 | 4950.0 |
-| 17 | Minnesota | 3832.4 | 0.0 | 3832.4 |
-| 18 | Mississippi | 5069.5 | 0.0 | 5069.5 |
-| 19 | Montana | 3777.9 | 0.0 | 3777.9 |
-| 20 | Nebraska | 52.8 | 0.0 | 52.8 |
-| 21 | Nevada | 6534.4 | 0.0 | 6534.4 |
-| 22 | New Mexico | 6919.1 | 154.9 | 7074.0 |
-| 23 | New York | 5844.6 | 0.0 | 5844.6 |
-| 24 | North Carolina | 3298.9 | 0.0 | 3298.9 |
-| 25 | North Dakota | 6172.3 | 294.3 | 6466.6 |
-| 26 | Ohio | 4852.5 | 0.0 | 4852.5 |
-| 27 | Oklahoma | 3896.8 | 259.6 | 4156.4 |
-| 28 | Oregon | 6107.1 | 0.0 | 6107.1 |
-| 29 | Pennsylvania | 865.5 | 0.0 | 865.5 |
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
 
-<p align="right">Page 91 of 124</p>
+| JURISDICTION AND SOURCE NOTE | ACCEPTED / IDENTIFIED MILES | EXCEPTION / UNIDENTIFIED MILES | REPORTED JURISDICTION TOTAL |
+| :--- | :---: | :---: | :---: |
+| **Minnesota**<br>cross-border segment verified from GPS batch | 4,973.7 | 0.0 | 4,973.7 |
+| **Mississippi**<br>trip-sheet and dispatch legs reconciled | 5,426.3 | 0.0 | 5,426.3 |
+| **Missouri**<br>route exception cleared by mileage desk | 2,155.6 | 206.6 | 2,362.2 |
+| **Montana**<br>cross-border segment verified from GPS batch | 3,566.7 | 0.0 | 3,566.7 |
+| **Nebraska**<br>trip-sheet and dispatch legs reconciled | 6,453.9 | 0.0 | 6,453.9 |
+| **Nevada**<br>E-ZPass and fuel stop support reviewed | 1,782.9 | 0.0 | 1,782.9 |
+| **New Jersey**<br>telematics accepted; odometer tie-out reviewed | 3,427.3 | 0.0 | 3,427.3 |
+| **New Mexico**<br>route exception cleared by mileage desk | 242.9 | 0.0 | 242.9 |
+| **New York**<br>route exception cleared by mileage desk | 231.1 | 0.0 | 231.1 |
+| **North Dakota**<br>trip-sheet and dispatch legs reconciled | 4,295.9 | 0.0 | 4,295.9 |
+
+<br>
+<p align="right">Page 91</p>
 
 # Page 92
 
-Generated: 11/02/2025 09:14 AM CST,,,,Prairie Route Carriers Inc
-,,,,1892 WESTFIELD CROSSING
-,,,,PLAINFIELD, IL 60544
-,,,,312-555-0102
-,,,,
-"IFTA Mileage: All trucks - 2025 - Q 4",,,,
-"7/1/2025 - 9/30/2025",,,,
-"Vehicle: 8920 continued",,,,
-,,,,
-#,State,Identified Miles,Unidentified Miles,Total
-30,South Carolina,551.9,147.8,699.7
-31,Tennessee,2613.8,0.0,2613.8
-32,Texas,3570.2,0.0,3570.2
-33,Virginia,1664.5,147.6,1812.1
-34,Washington,1787.7,0.0,1787.7
-35,West Virginia,102.0,0.0,102.0
-36,Wisconsin,43.5,0.0,43.5
-37,Wyoming,213.7,0.0,213.7
-Total,,122664.5,1004.2,123668.7
-,,,,
-,,,,
-,,,,Page 92 of 124
+Hearthline Freight Cooperative
+Quarterly IFTA workpaper packet
+Account HFC-742018 / Fleet mileage review
+
+VEHICLE MILEAGE SUPPORT
+Prepared 11/02/2025 09:14 CST
+
+__________________________________________________________________________________________________
+| UNIT                      | VIN suffix C945585          | International               | Fleet ref FLT-337          |
+| 2942                      | Plate AP23028               | yard relay / Toledo OH      | Quarter: 2025 Q3           |
+| continued                 |                             |                             |                            |
+__________________________________________________________________________________________________
+
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
+
+"JURISDICTION AND SOURCE NOTE","ACCEPTED / IDENTIFIED MILES","EXCEPTION / UNIDENTIFIED MILES","REPORTED JURISDICTION TOTAL"
+"Ohio
+manual correction retained in quarter workpaper",832.3,0.0,832.3
+"Oklahoma
+cross-border segment verified from GPS batch","5,825.0",0.0,"5,825.0"
+"Oregon
+route exception cleared by mileage desk","6,518.4",0.0,"6,518.4"
+"Pennsylvania
+trip-sheet and dispatch legs reconciled","4,697.3",0.0,"4,697.3"
+"Texas
+telematics accepted; odometer tie-out reviewed","4,070.8",0.0,"4,070.8"
+"Utah
+trip-sheet and dispatch legs reconciled","1,237.2",0.0,"1,237.2"
+"Virginia
+trip-sheet and dispatch legs reconciled","5,064.6",262.4,"5,327.0"
+"Washington
+telematics accepted; odometer tie-out reviewed","5,066.4",0.0,"5,066.4"
+"West Virginia
+trip-sheet and dispatch legs reconciled","2,810.5",0.0,"2,810.5"
+
+Page 92
 
 # Page 93
 
-#,State,Identified Miles,Unidentified Miles,Total
-1,Alabama,4805.9,0.0,4805.9
-2,Arizona,5405.2,0.0,5405.2
-3,Arkansas,6.7,0.0,6.7
-4,California,1630.2,0.0,1630.2
-5,Colorado,1987.8,123.2,2111.0
-6,Connecticut,3540.3,229.3,3769.6
-7,Idaho,1116.9,0.0,1116.9
-8,Illinois,6033.9,0.0,6033.9
-9,Indiana,3478.5,0.0,3478.5
-10,Kansas,331.6,0.0,331.6
-11,Kentucky,3.4,0.0,3.4
-12,Louisiana,5314.9,0.0,5314.9
-13,Michigan,6187.0,0.0,6187.0
-14,Minnesota,6248.1,0.0,6248.1
-15,Mississippi,1680.5,0.0,1680.5
-16,Missouri,4306.5,0.0,4306.5
-17,Montana,87.8,0.0,87.8
-18,Nebraska,5075.7,0.0,5075.7
-19,Nevada,6828.9,0.0,6828.9
-20,New Jersey,2941.1,0.0,2941.1
-21,New Mexico,2183.4,181.9,2365.3
-22,New York,658.5,0.0,658.5
-23,North Carolina,69.2,0.0,69.2
-24,North Dakota,4032.9,0.0,4032.9
-25,Ohio,6827.5,0.0,6827.5
-26,Oregon,5471.1,230.3,5701.4
-27,Pennsylvania,6545.1,0.0,6545.1
-28,South Carolina,3655.2,240.8,3896.0
-29,Tennessee,796.4,79.4,875.8
+Hearthline Freight Cooperative
+Quarterly IFTA workpaper packet
+Account HFC-742018 / Fleet mileage review
+
+VEHICLE MILEAGE SUPPORT
+Prepared 11/02/2025 09:14 CST
+
+--------------------------------------------------------------------------------
+UNIT: 841
+VIN suffix: U521295
+Plate: AP55139
+Freightliner yard relay / Davenport IA
+Fleet ref: FLT-245
+Quarter: 2025 Q3
+--------------------------------------------------------------------------------
+
+Mileage jurisdictions for this unit are listed below. The unit number is inherited by every row on this page.
+
+JURISDICTION AND SOURCE NOTE,ACCEPTED / IDENTIFIED MILES,EXCEPTION / UNIDENTIFIED MILES,REPORTED JURISDICTION TOTAL
+"Alabama
+route exception cleared by mileage desk",31.7,295.0,326.7
+"Arizona
+trip-sheet and dispatch legs reconciled","6,088.4",0.0,"6,088.4"
+"California
+route exception cleared by mileage desk","3,500.4",0.0,"3,500.4"
+"Colorado
+route exception cleared by mileage desk","4,483.9",0.0,"4,483.9"
+"Connecticut
+telematics accepted; odometer tie-out reviewed","1,621.5",298.5,"1,920.0"
+"Delaware
+telematics accepted; odometer tie-out reviewed",55.7,0.0,55.7
+"Florida
+trip-sheet and dispatch legs reconciled","3,127.9",238.5,"3,366.4"
+"Idaho
+cross-border segment verified from GPS batch",169.9,268.2,438.1
+"Illinois
+telematics accepted; odometer tie-out reviewed","1,991.0",343.1,"2,334.1"
+"Indiana
+E-ZPass and fuel stop support reviewed","2,374.9",0.0,"2,374.9"
+"Iowa
+route exception cleared by mileage desk",424.2,0.0,424.2
+"Kansas
+E-ZPass and fuel stop support reviewed","6,528.8",61.8,"6,590.6"
+
+Unit quarter tie-out
+Accepted: 122,916.6
+Exception: 2,587.9
+Reported: 125,504.5
+
+Fuel-card reconciliation sample
+JUR,GALLONS,AMOUNT,NOTE
+MO,104.8,$483.43,fuel only - not a mileage jurisdiction row
+PA,272.3,"$1,000.02",fuel only - not a mileage jurisdiction row
+KY,208.8,$843.95,fuel only - not a mileage jurisdiction row
+
+Page 93
 
 # Page 94
 
-Generated: 11/02/2025 09:14 AM CST                                       Prairie Route Carriers Inc
-                                                                        1894 WESTFIELD CROSSING
-                                                                           PLAINFIELD, IL 60544
-                                                                                   312-555-0104
+Hearthline Freight Cooperative                                           VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                                          Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
+________________________________________________________________________________________________________
 
-                            IFTA Mileage: All trucks - 2025 - Q 4
-                                    7/1/2025 - 9/30/2025
+UNIT: 841 (continued)
+VIN suffix U521295, Plate AP55139
+Freightliner, yard relay / Davenport IA
+Fleet ref FLT-245, Quarter: 2025 Q3
+________________________________________________________________________________________________________
 
-                                  Vehicle: 9986 continued
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
 
-| # | State | Identified Miles | Unidentified Miles | Total |
-| :--- | :--- | :--- | :--- | :--- |
-| 30 | Texas | 4.2 | 0.0 | 4.2 |
-| 31 | Utah | 74.6 | 0.0 | 74.6 |
-| 32 | Virginia | 6878.5 | 0.0 | 6878.5 |
-| 33 | Washington | 1883.2 | 0.0 | 1883.2 |
-| 34 | West Virginia | 4782.0 | 0.0 | 4782.0 |
-| 35 | Wisconsin | 1734.8 | 0.0 | 1734.8 |
-| 36 | Wyoming | 6780.6 | 297.1 | 7077.7 |
-| | **Total** | **119388.1** | **1382.0** | **120770.1** |
+"JURISDICTION AND SOURCE NOTE","ACCEPTED / IDENTIFIED MILES","EXCEPTION / UNIDENTIFIED MILES","REPORTED JURISDICTION TOTAL"
+"Kentucky\nmanual correction retained in quarter workpaper","1,695.3","0.0","1,695.3"
+"Louisiana\ntrip-sheet and dispatch legs reconciled","5,167.8","0.0","5,167.8"
+"Maryland\nmanual correction retained in quarter workpaper","535.3","0.0","535.3"
+"Michigan\ntelematics accepted; odometer tie-out reviewed","6,617.1","263.2","6,880.3"
+"Minnesota\ntelematics accepted; odometer tie-out reviewed","5,779.6","0.0","5,779.6"
+"Mississippi\ntelematics accepted; odometer tie-out reviewed","34.9","152.7","187.6"
+"Missouri\nE-ZPass and fuel stop support reviewed","65.2","0.0","65.2"
+"Montana\nroute exception cleared by mileage desk","4,476.0","58.5","4,534.5"
+"Nebraska\nroute exception cleared by mileage desk","6,543.4","0.0","6,543.4"
+"Nevada\ntrip-sheet and dispatch legs reconciled","3,959.4","0.0","3,959.4"
+"New Jersey\ntelematics accepted; odometer tie-out reviewed","4,898.2","78.9","4,977.1"
+"New Mexico\ntrip-sheet and dispatch legs reconciled","5,425.8","263.7","5,689.5"
 
-<br>
-<br>
-<br>
-<p align="right">Page 94 of 124</p>
+Page 94
 
 # Page 95
 
-Generated: 11/02/2025 09:14 AM CST
+Hearthline Freight Cooperative                        VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                       Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
+________________________________________________________________________________
 
-Prairie Route Carriers Inc
-1895 WESTFIELD CROSSING
-PLAINFIELD, IL 60544
-312-555-0105
+UNIT                  | VIN suffix U521295        | Freightliner               | Fleet ref FLT-245
+841                   | Plate AP55139             | yard relay / Davenport IA  | Quarter: 2025 Q3
+continued             |                           |                            |
+________________________________________________________________________________
 
-# IFTA Mileage: All trucks - 2025 - Q 4
-### 7/1/2025 - 9/30/2025
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
 
-## Vehicle: 441
+"JURISDICTION AND SOURCE NOTE","ACCEPTED / IDENTIFIED MILES","EXCEPTION / UNIDENTIFIED MILES","REPORTED JURISDICTION TOTAL"
+"New York
+trip-sheet and dispatch legs reconciled",6543.9,0.0,6543.9
+"North Carolina
+telematics accepted; odometer tie-out reviewed",6535.3,210.6,6745.9
+"North Dakota
+manual correction retained in quarter workpaper",6219.2,0.0,6219.2
+"Oklahoma
+manual correction retained in quarter workpaper",3689.9,0.0,3689.9
+"Oregon
+cross-border segment verified from GPS batch",1077.0,0.0,1077.0
+"Pennsylvania
+E-ZPass and fuel stop support reviewed",5386.8,0.0,5386.8
+"Texas
+E-ZPass and fuel stop support reviewed",82.7,0.0,82.7
+"Virginia
+manual correction retained in quarter workpaper",1784.3,0.0,1784.3
+"Washington
+trip-sheet and dispatch legs reconciled",5499.2,0.0,5499.2
+"West Virginia
+trip-sheet and dispatch legs reconciled",4980.5,0.0,4980.5
+"Wisconsin
+telematics accepted; odometer tie-out reviewed",1496.4,0.0,1496.4
+"Wyoming
+manual correction retained in quarter workpaper",4025.1,55.2,4080.3
 
-| # | State | Identified Miles | Unidentified Miles | Total |
-|---|---|---|---|---|
-| 1 | Arizona | 3534.2 | 0.0 | 3534.2 |
-| 2 | Arkansas | 5201.6 | 0.0 | 5201.6 |
-| 3 | California | 6528.7 | 0.0 | 6528.7 |
-| 4 | Colorado | 6.9 | 126.9 | 133.8 |
-| 5 | Connecticut | 2949.4 | 0.0 | 2949.4 |
-| 6 | Delaware | 7073.7 | 0.0 | 7073.7 |
-| 7 | Florida | 5847.7 | 0.0 | 5847.7 |
-| 8 | Georgia | 83.4 | 0.0 | 83.4 |
-| 9 | Idaho | 2158.6 | 0.0 | 2158.6 |
-| 10 | Illinois | 3925.3 | 0.0 | 3925.3 |
-| 11 | Iowa | 1862.7 | 0.0 | 1862.7 |
-| 12 | Kansas | 1325.5 | 0.0 | 1325.5 |
-| 13 | Kentucky | 37.7 | 0.0 | 37.7 |
-| 14 | Louisiana | 576.5 | 49.6 | 626.1 |
-| 15 | Michigan | 3671.7 | 0.0 | 3671.7 |
-| 16 | Mississippi | 80.8 | 271.2 | 352.0 |
-| 17 | Missouri | 393.1 | 0.0 | 393.1 |
-| 18 | Montana | 6062.6 | 54.5 | 6117.1 |
-| 19 | Nebraska | 6666.6 | 0.0 | 6666.6 |
-| 20 | New Jersey | 6681.0 | 0.0 | 6681.0 |
-| 21 | New Mexico | 2449.1 | 0.0 | 2449.1 |
-| 22 | New York | 4.4 | 364.3 | 368.7 |
-| 23 | North Carolina | 2606.3 | 268.0 | 2874.3 |
-| 24 | North Dakota | 905.6 | 0.0 | 905.6 |
-| 25 | Oklahoma | 4485.5 | 0.0 | 4485.5 |
-| 26 | Oregon | 3058.7 | 0.0 | 3058.7 |
-| 27 | Pennsylvania | 500.6 | 0.0 | 500.6 |
-| 28 | South Carolina | 3201.1 | 0.0 | 3201.1 |
-| 29 | Texas | 982.8 | 0.0 | 982.8 |
-
-Page 95 of 124
+Page 95
 
 # Page 96
 
-Generated: 11/02/2025 09:14 AM CST
+Hearthline Freight Cooperative                                            VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                                            Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
+________________________________________________________________________________________________________________
 
-**Prairie Route Carriers Inc**
-1896 WESTFIELD CROSSING
-PLAINFIELD, IL 60544
-312-555-0106
++-----------------------+-----------------------+-----------------------+-----------------------+
+| UNIT                  | VIN suffix G272688    | Kenworth              | Fleet ref FLT-179     |
+| 824                   | Plate AP83716         | linehaul / Toledo OH  | Quarter: 2025 Q3      |
++-----------------------+-----------------------+-----------------------+-----------------------+
 
-# IFTA Mileage: All trucks - 2025 - Q 4
-### 7/1/2025 - 9/30/2025
+Mileage jurisdictions for this unit are listed below. The unit number is inherited by every row on this page.
 
-## Vehicle: 441 continued
+| JURISDICTION AND SOURCE NOTE | ACCEPTED / IDENTIFIED MILES | EXCEPTION / UNIDENTIFIED MILES | REPORTED JURISDICTION TOTAL |
+| :--- | :---: | :---: | :---: |
+| **Alabama** <br> route exception cleared by mileage desk | 5,753.8 | 0.0 | 5,753.8 |
+| **Arizona** <br> trip-sheet and dispatch legs reconciled | 5,313.8 | 0.0 | 5,313.8 |
+| **Arkansas** <br> cross-border segment verified from GPS batch | 3,287.8 | 0.0 | 3,287.8 |
+| **California** <br> telematics accepted; odometer tie-out reviewed | 20.8 | 0.0 | 20.8 |
+| **Colorado** <br> manual correction retained in quarter workpaper | 100.7 | 0.0 | 100.7 |
+| **Connecticut** <br> cross-border segment verified from GPS batch | 488.1 | 0.0 | 488.1 |
+| **Florida** <br> E-ZPass and fuel stop support reviewed | 5,300.4 | 0.0 | 5,300.4 |
+| **Georgia** <br> manual correction retained in quarter workpaper | 15.4 | 0.0 | 15.4 |
+| **Idaho** <br> manual correction retained in quarter workpaper | 4,672.1 | 0.0 | 4,672.1 |
+| **Illinois** <br> trip-sheet and dispatch legs reconciled | 4,679.2 | 0.0 | 4,679.2 |
+| **Indiana** <br> cross-border segment verified from GPS batch | 5,768.1 | 0.0 | 5,768.1 |
+| **Iowa** <br> trip-sheet and dispatch legs reconciled | 3,990.1 | 0.0 | 3,990.1 |
 
-| # | State | Identified Miles | Unidentified Miles | Total |
-| :--- | :--- | :--- | :--- | :--- |
-| 30 | Utah | 93.8 | 100.7 | 194.5 |
-| 31 | Virginia | 2372.6 | 0.0 | 2372.6 |
-| 32 | Washington | 1813.2 | 0.0 | 1813.2 |
-| 33 | West Virginia | 5075.4 | 0.0 | 5075.4 |
-| 34 | Wyoming | 4420.8 | 87.1 | 4507.9 |
-| | *Total* | 96637.6 | 1322.3 | 97959.9 |
 
-<br>
++-----------------------------------+       +-----------------------------------------------------------------------------------------+
+| **Unit quarter tie-out**          |       | **Fuel-card reconciliation sample**                                                     |
+| Accepted: 111,674.1               |       |                                                                                         |
+| Exception: 1,719.9                |       | | JUR | GALLONS | AMOUNT    | NOTE                                                      | |
+| Reported: 113,394.0               |       | | :--- | :---: | :---: | :--- |                                                      |
+|                                   |       | | IN  | 250.5   | $1,070.57 | fuel only - not a mileage jurisdiction row                | |
+|                                   |       | | TN  | 198.1   | $752.45   | fuel only - not a mileage jurisdiction row                | |
+|                                   |       | | IN  | 301.1   | $1,219.69 | fuel only - not a mileage jurisdiction row                | |
++-----------------------------------+       +-----------------------------------------------------------------------------------------+
 
-Page 96 of 124
+Page 96
 
 # Page 97
 
-Generated: 11/02/2025 09:14 AM CST
-
-                                                        Prairie Route Carriers Inc
-                                                           1897 WESTFIELD CROSSING
-                                                              PLAINFIELD, IL 60544
-                                                                      312-555-0107
-
-# IFTA Mileage: All trucks - 2025 - Q 4
-### 7/1/2025 - 9/30/2025
-
-## Vehicle: 593
-
-| # | State | Identified Miles | Unidentified Miles | Total |
-|---|---|---|---|---|
-| 1 | Alabama | 2151.9 | 0.0 | 2151.9 |
-| 2 | Arizona | 5100.0 | 0.0 | 5100.0 |
-| 3 | Arkansas | 829.7 | 0.0 | 829.7 |
-| 4 | California | 4883.5 | 0.0 | 4883.5 |
-| 5 | Colorado | 1631.7 | 0.0 | 1631.7 |
-| 6 | Connecticut | 6196.5 | 310.9 | 6507.4 |
-| 7 | Delaware | 647.1 | 59.2 | 706.3 |
-| 8 | Florida | 55.2 | 203.4 | 258.6 |
-| 9 | Georgia | 126.8 | 0.0 | 126.8 |
-| 10 | Idaho | 777.8 | 0.0 | 777.8 |
-| 11 | Illinois | 5663.3 | 0.0 | 5663.3 |
-| 12 | Indiana | 6772.1 | 13.9 | 6786.0 |
-| 13 | Iowa | 6678.5 | 0.0 | 6678.5 |
-| 14 | Kansas | 6109.4 | 0.0 | 6109.4 |
-| 15 | Louisiana | 787.8 | 0.0 | 787.8 |
-| 16 | Maryland | 4571.5 | 0.0 | 4571.5 |
-| 17 | Michigan | 4885.0 | 80.9 | 4965.9 |
-| 18 | Minnesota | 4619.8 | 0.0 | 4619.8 |
-| 19 | Mississippi | 6941.3 | 0.0 | 6941.3 |
-| 20 | Missouri | 1912.0 | 0.0 | 1912.0 |
-| 21 | Nebraska | 107.0 | 0.0 | 107.0 |
-| 22 | Nevada | 2392.3 | 163.6 | 2555.9 |
-| 23 | New Jersey | 872.4 | 0.0 | 872.4 |
-| 24 | New Mexico | 9.5 | 0.0 | 9.5 |
-| 25 | New York | 3553.1 | 0.0 | 3553.1 |
-| 26 | North Carolina | 3647.4 | 0.0 | 3647.4 |
-| 27 | North Dakota | 97.2 | 0.0 | 97.2 |
-| 28 | Ohio | 105.0 | 0.0 | 105.0 |
-| 29 | Oklahoma | 276.1 | 0.0 | 276.1 |
-
-Page 97 of 124
+"Jurisdiction","Source Note","Accepted / Identified Miles","Exception / Unidentified Miles","Reported Jurisdiction Total"
+"Kansas","manual correction retained in quarter workpaper","97.8","350.1","447.9"
+"Kentucky","route exception cleared by mileage desk","6,131.0","0.0","6,131.0"
+"Louisiana","E-ZPass and fuel stop support reviewed","4,947.5","0.0","4,947.5"
+"Maryland","route exception cleared by mileage desk","4,169.5","0.0","4,169.5"
+"Michigan","telematics accepted; odometer tie-out reviewed","273.4","0.0","273.4"
+"Minnesota","telematics accepted; odometer tie-out reviewed","1,818.9","0.0","1,818.9"
+"Mississippi","cross-border segment verified from GPS batch","4,244.1","0.0","4,244.1"
+"Missouri","cross-border segment verified from GPS batch","2,671.7","0.0","2,671.7"
+"Montana","cross-border segment verified from GPS batch","5,187.0","0.0","5,187.0"
+"Nebraska","route exception cleared by mileage desk","786.3","0.0","786.3"
+"New Jersey","E-ZPass and fuel stop support reviewed","5,205.6","214.7","5,420.3"
+"New Mexico","E-ZPass and fuel stop support reviewed","1,475.7","0.0","1,475.7"
+"New York","manual correction retained in quarter workpaper","4,023.4","229.3","4,252.7"
+"North Carolina","manual correction retained in quarter workpaper","61.7","0.0","61.7"
 
 # Page 98
 
-Generated: 11/02/2025 09:14 AM CST
+Hearthline Freight Cooperative
+Quarterly IFTA workpaper packet
+Account HFC-742018 / Fleet mileage review
 
-<div align="right">
-<b>Prairie Route Carriers Inc</b><br>
-1898 WESTFIELD CROSSING<br>
-PLAINFIELD, IL 60544<br>
-312-555-0108
-</div>
+VEHICLE MILEAGE SUPPORT
+Prepared 11/02/2025 09:14 CST
 
-<div align="center">
+| UNIT | VIN suffix G272688 | Kenworth | Fleet ref FLT-179 |
+| :--- | :--- | :--- | :--- |
+| **824** <br> continued | Plate AP83716 | linehaul / Toledo OH | Quarter: 2025 Q3 |
 
-# IFTA Mileage: All trucks - 2025 - Q 4
-### 7/1/2025 - 9/30/2025
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
 
-## Vehicle: 593 <small>continued</small>
+| JURISDICTION AND SOURCE NOTE | ACCEPTED / IDENTIFIED MILES | EXCEPTION / UNIDENTIFIED MILES | REPORTED JURISDICTION TOTAL |
+| :--- | :---: | :---: | :---: |
+| **North Dakota** <br> manual correction retained in quarter workpaper | 1,809.1 | 0.0 | 1,809.1 |
+| **Ohio** <br> trip-sheet and dispatch legs reconciled | 5,892.6 | 293.8 | 6,186.4 |
+| **Oklahoma** <br> manual correction retained in quarter workpaper | 1,444.1 | 161.4 | 1,605.5 |
+| **Oregon** <br> cross-border segment verified from GPS batch | 277.4 | 0.0 | 277.4 |
+| **Pennsylvania** <br> telematics accepted; odometer tie-out reviewed | 664.7 | 318.0 | 982.7 |
+| **South Carolina** <br> E-ZPass and fuel stop support reviewed | 24.5 | 152.6 | 177.1 |
+| **Tennessee** <br> cross-border segment verified from GPS batch | 2,048.0 | 0.0 | 2,048.0 |
+| **Texas** <br> cross-border segment verified from GPS batch | 194.4 | 0.0 | 194.4 |
+| **Utah** <br> cross-border segment verified from GPS batch | 7,093.0 | 0.0 | 7,093.0 |
+| **Virginia** <br> manual correction retained in quarter workpaper | 1,693.0 | 0.0 | 1,693.0 |
+| **Washington** <br> telematics accepted; odometer tie-out reviewed | 2,116.5 | 0.0 | 2,116.5 |
+| **Wisconsin** <br> route exception cleared by mileage desk | 5,621.8 | 0.0 | 5,621.8 |
+| **Wyoming** <br> telematics accepted; odometer tie-out reviewed | 2,311.1 | 0.0 | 2,311.1 |
 
-</div>
-
-| # | State | Identified Miles | Unidentified Miles | Total |
-| :--- | :--- | :--- | :--- | :--- |
-| 30 | Oregon | 5182.6 | 0.0 | 5182.6 |
-| 31 | Pennsylvania | 3827.9 | 0.0 | 3827.9 |
-| 32 | South Carolina | 5429.5 | 0.0 | 5429.5 |
-| 33 | Tennessee | 4247.8 | 0.0 | 4247.8 |
-| 34 | Texas | 1083.5 | 0.0 | 1083.5 |
-| 35 | Utah | 1432.2 | 0.0 | 1432.2 |
-| 36 | Virginia | 104.7 | 0.0 | 104.7 |
-| 37 | Washington | 11.3 | 0.0 | 11.3 |
-| 38 | West Virginia | 3275.4 | 0.0 | 3275.4 |
-| 39 | Wisconsin | 2025.9 | 116.2 | 2142.1 |
-| 40 | Wyoming | 6853.2 | 0.0 | 6853.2 |
-| | *Total* | *115874.9* | *948.1* | *116823.0* |
-
-<br><br><br>
-
-<div align="right">
-Page 98 of 124
-</div>
+Page 98
 
 # Page 99
 
-Generated: 11/02/2025 09:14 AM CST
+Hearthline Freight Cooperative                          VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                         Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
 
-Prairie Route Carriers Inc
-1899 WESTFIELD CROSSING
-PLAINFIELD, IL 60544
-312-555-0109
+________________________________________________________________________________
 
++------------------+------------------------+------------------------+--------------------+
+| UNIT             | VIN suffix U503199     | Volvo                  | Fleet ref FLT-287  |
+| **2764**         | Plate AP26525          | linehaul / Memphis TN  | Quarter: 2025 Q3   |
++------------------+------------------------+------------------------+--------------------+
 
-IFTA Mileage: All trucks - 2025 - Q 4
-7/1/2025 - 9/30/2025
+Mileage jurisdictions for this unit are listed below. The unit number is inherited by every row on this page.
 
-Vehicle: 2148
+| JURISDICTION AND SOURCE NOTE | ACCEPTED / IDENTIFIED MILES | EXCEPTION / UNIDENTIFIED MILES | REPORTED JURISDICTION TOTAL |
+| :--- | :---: | :---: | :---: |
+| **Alabama** <br> manual correction retained in quarter workpaper | 4,912.9 | 186.0 | 5,098.9 |
+| **Arizona** <br> cross-border segment verified from GPS batch | 44.1 | 0.0 | 44.1 |
+| **Arkansas** <br> cross-border segment verified from GPS batch | 6,192.9 | 0.0 | 6,192.9 |
+| **Colorado** <br> trip-sheet and dispatch legs reconciled | 6,314.8 | 0.0 | 6,314.8 |
+| **Connecticut** <br> cross-border segment verified from GPS batch | 6,423.3 | 0.0 | 6,423.3 |
+| **Delaware** <br> E-ZPass and fuel stop support reviewed | 1,574.9 | 15.3 | 1,590.2 |
+| **Florida** <br> E-ZPass and fuel stop support reviewed | 4,449.6 | 0.0 | 4,449.6 |
+| **Georgia** <br> telematics accepted; odometer tie-out reviewed | 3,758.1 | 146.1 | 3,904.2 |
+| **Idaho** <br> telematics accepted; odometer tie-out reviewed | 1,791.3 | 0.0 | 1,791.3 |
+| **Indiana** <br> telematics accepted; odometer tie-out reviewed | 808.3 | 0.0 | 808.3 |
+| **Iowa** <br> trip-sheet and dispatch legs reconciled | 1,607.1 | 0.0 | 1,607.1 |
+| **Kansas** <br> E-ZPass and fuel stop support reviewed | 909.5 | 0.0 | 909.5 |
 
-| # | State | Identified Miles | Unidentified Miles | Total |
-|---|---|---|---|---|
-| 1 | Alabama | 2381.6 | 293.2 | 2674.8 |
-| 2 | Arizona | 6421.1 | 0.0 | 6421.1 |
-| 3 | California | 2976.6 | 79.2 | 3055.8 |
-| 4 | Colorado | 5037.2 | 238.6 | 5275.8 |
-| 5 | Connecticut | 5425.4 | 0.0 | 5425.4 |
-| 6 | Florida | 2557.1 | 0.0 | 2557.1 |
-| 7 | Georgia | 5786.1 | 0.0 | 5786.1 |
-| 8 | Idaho | 1.6 | 0.0 | 1.6 |
-| 9 | Illinois | 4886.3 | 0.0 | 4886.3 |
-| 10 | Iowa | 6782.3 | 0.0 | 6782.3 |
-| 11 | Kansas | 3264.9 | 0.0 | 3264.9 |
-| 12 | Kentucky | 60.7 | 354.2 | 414.9 |
-| 13 | Louisiana | 109.7 | 351.0 | 460.7 |
-| 14 | Maryland | 668.5 | 303.3 | 971.8 |
-| 15 | Minnesota | 2174.0 | 0.0 | 2174.0 |
-| 16 | Missouri | 21.9 | 0.0 | 21.9 |
-| 17 | Montana | 6589.0 | 0.0 | 6589.0 |
-| 18 | Nevada | 1020.5 | 127.3 | 1147.8 |
-| 19 | New Jersey | 9.4 | 0.0 | 9.4 |
-| 20 | New Mexico | 4459.2 | 0.0 | 4459.2 |
-| 21 | New York | 286.0 | 0.0 | 286.0 |
-| 22 | North Carolina | 3761.9 | 2.0 | 3763.9 |
-| 23 | North Dakota | 3119.2 | 0.0 | 3119.2 |
-| 24 | Ohio | 5544.4 | 0.0 | 5544.4 |
-| 25 | Oklahoma | 5996.1 | 0.0 | 5996.1 |
-| 26 | Oregon | 2095.3 | 77.0 | 2172.3 |
-| 27 | Pennsylvania | 6296.6 | 0.0 | 6296.6 |
-| 28 | South Carolina | 6166.3 | 0.0 | 6166.3 |
-| 29 | Tennessee | 719.8 | 0.0 | 719.8 |
+________________________________________________________________________________
 
-Page 99 of 124
+### Unit quarter tie-out
+Accepted: 124,613.6  
+Exception: 1,556.2  
+Reported: 126,169.8  
+
+### Fuel-card reconciliation sample
+| JUR | GALLONS | AMOUNT | NOTE |
+| :--- | :---: | :---: | :--- |
+| GA | 295.1 | $1,157.38 | fuel only - not a mileage jurisdiction row |
+| IL | 152.5 | $620.93 | fuel only - not a mileage jurisdiction row |
+| TN | 173.2 | $757.45 | fuel only - not a mileage jurisdiction row |
+
+<br>
+<p align="right">Page 99</p>
 
 # Page 100
 
-Generated: 11/02/2025 09:14 AM CST                                      Prairie Route Carriers Inc
-                                                                     1900 WESTFIELD CROSSING
-                                                                        PLAINFIELD, IL 60544
-                                                                                312-555-0110
+Hearthline Freight Cooperative
+Quarterly IFTA workpaper packet
+Account HFC-742018 / Fleet mileage review
 
-                           IFTA Mileage: All trucks - 2025 - Q 4
-                                   7/1/2025 - 9/30/2025
+VEHICLE MILEAGE SUPPORT
+Prepared 11/02/2025 09:14 CST
 
-                                Vehicle: 2148 continued
+---
 
-| # | State | Identified Miles | Unidentified Miles | Total |
-|---|---|---|---|---|
-| 30 | Texas | 6504.0 | 0.0 | 6504.0 |
-| 31 | Utah | 2739.7 | 337.6 | 3077.3 |
-| 32 | Virginia | 78.7 | 0.0 | 78.7 |
-| 33 | Washington | 36.3 | 0.0 | 36.3 |
-| 34 | West Virginia | 4721.7 | 0.0 | 4721.7 |
-| 35 | Wisconsin | 101.7 | 0.0 | 101.7 |
-| 36 | Wyoming | 1684.0 | 0.0 | 1684.0 |
-| | **Total** | **110484.8** | **2163.4** | **112648.2** |
+| UNIT | VIN suffix U503199 | Volvo | Fleet ref FLT-287 |
+| :--- | :--- | :--- | :--- |
+| **2764**<br>continued | Plate AP26525 | linehaul / Memphis TN | Quarter: 2025 Q3 |
 
-                                                                            Page 100 of 124
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
+
+| JURISDICTION AND SOURCE NOTE | ACCEPTED / IDENTIFIED MILES | EXCEPTION / UNIDENTIFIED MILES | REPORTED JURISDICTION TOTAL |
+| :--- | :---: | :---: | :---: |
+| **Kentucky**<br>E-ZPass and fuel stop support reviewed | 4,922.1 | 0.0 | 4,922.1 |
+| **Louisiana**<br>route exception cleared by mileage desk | 6,580.6 | 168.6 | 6,749.2 |
+| **Maryland**<br>trip-sheet and dispatch legs reconciled | 3,607.3 | 0.0 | 3,607.3 |
+| **Minnesota**<br>telematics accepted; odometer tie-out reviewed | 5,273.8 | 0.0 | 5,273.8 |
+| **Mississippi**<br>cross-border segment verified from GPS batch | 6,466.2 | 0.0 | 6,466.2 |
+| **Missouri**<br>E-ZPass and fuel stop support reviewed | 335.1 | 267.7 | 602.8 |
+| **Montana**<br>cross-border segment verified from GPS batch | 4,353.6 | 0.0 | 4,353.6 |
+| **Nevada**<br>E-ZPass and fuel stop support reviewed | 5,597.8 | 0.0 | 5,597.8 |
+| **New Jersey**<br>telematics accepted; odometer tie-out reviewed | 622.7 | 56.8 | 679.5 |
+| **New Mexico**<br>trip-sheet and dispatch legs reconciled | 4,560.7 | 0.0 | 4,560.7 |
+| **New York**<br>trip-sheet and dispatch legs reconciled | 6,199.5 | 0.0 | 6,199.5 |
+
+Page 100
 
 # Page 101
 
-#,State,Identified Miles,Unidentified Miles,Total
-1,Alabama,3689.3,0.0,3689.3
-2,Arizona,4363.9,0.0,4363.9
-3,California,5445.9,173.1,5619.0
-4,Colorado,4659.7,0.0,4659.7
-5,Connecticut,5247.8,0.0,5247.8
-6,Delaware,835.9,0.0,835.9
-7,Florida,4731.6,0.0,4731.6
-8,Georgia,2518.3,47.7,2566.0
-9,Idaho,6269.3,0.0,6269.3
-10,Illinois,2019.3,0.0,2019.3
-11,Indiana,779.6,0.0,779.6
-12,Iowa,106.0,278.9,384.9
-13,Kansas,1766.5,0.0,1766.5
-14,Kentucky,4406.2,0.0,4406.2
-15,Louisiana,677.8,0.0,677.8
-16,Maryland,6605.6,0.0,6605.6
-17,Michigan,1785.2,0.0,1785.2
-18,Minnesota,3873.3,0.0,3873.3
-19,Mississippi,5479.7,59.1,5538.8
-20,Missouri,5718.7,0.0,5718.7
-21,Montana,5592.6,0.0,5592.6
-22,Nebraska,4387.9,0.0,4387.9
-23,New Mexico,1218.7,0.0,1218.7
-24,North Carolina,1122.5,0.0,1122.5
-25,Ohio,2349.5,0.0,2349.5
-26,Oklahoma,2103.2,0.0,2103.2
-27,Oregon,4615.5,0.0,4615.5
-28,Pennsylvania,4997.7,0.0,4997.7
-29,South Carolina,2691.6,0.0,2691.6
+Hearthline Freight Cooperative
+Quarterly IFTA workpaper packet
+Account HFC-742018 / Fleet mileage review
+
+VEHICLE MILEAGE SUPPORT
+Prepared 11/02/2025 09:14 CST
+
+| | | | |
+| :--- | :--- | :--- | :--- |
+| UNIT<br>**2764**<br>continued | VIN suffix U503199<br>Plate AP26525 | Volvo<br>linehaul / Memphis TN | Fleet ref FLT-287<br>Quarter: 2025 Q3 |
+
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
+
+| JURISDICTION AND SOURCE NOTE | ACCEPTED / IDENTIFIED MILES | EXCEPTION / UNIDENTIFIED MILES | REPORTED JURISDICTION TOTAL |
+| :--- | :---: | :---: | :---: |
+| **North Dakota**<br>trip-sheet and dispatch legs reconciled | 6,147.2 | 211.3 | 6,358.5 |
+| **Ohio**<br>cross-border segment verified from GPS batch | 6,131.9 | 0.0 | 6,131.9 |
+| **Oklahoma**<br>manual correction retained in quarter workpaper | 944.2 | 240.4 | 1,184.6 |
+| **Oregon**<br>trip-sheet and dispatch legs reconciled | 292.2 | 0.0 | 292.2 |
+| **Pennsylvania**<br>telematics accepted; odometer tie-out reviewed | 5,804.9 | 24.6 | 5,829.5 |
+| **South Carolina**<br>manual correction retained in quarter workpaper | 1,620.2 | 0.0 | 1,620.2 |
+| **Tennessee**<br>telematics accepted; odometer tie-out reviewed | 3,947.0 | 239.4 | 4,186.4 |
+| **Texas**<br>trip-sheet and dispatch legs reconciled | 4,040.3 | 0.0 | 4,040.3 |
+| **Virginia**<br>telematics accepted; odometer tie-out reviewed | 1,897.8 | 0.0 | 1,897.8 |
+| **Washington**<br>cross-border segment verified from GPS batch | 3,758.7 | 0.0 | 3,758.7 |
+| **West Virginia**<br>telematics accepted; odometer tie-out reviewed | 2,723.0 | 0.0 | 2,723.0 |
+
+Page 101
 
 # Page 102
 
-Generated: 11/02/2025 09:14 AM CST                                Prairie Route Carriers Inc
-                                                             1902 WESTFIELD CROSSING
-                                                                PLAINFIELD, IL 60544
-                                                                        312-555-0112
+Hearthline Freight Cooperative
+Quarterly IFTA workpaper packet
+Account HFC-742018 / Fleet mileage review
 
-                        IFTA Mileage: All trucks - 2025 - Q 4
-                                7/1/2025 - 9/30/2025
+**VEHICLE MILEAGE SUPPORT**
+Prepared 11/02/2025 09:14 CST
 
-                             Vehicle: 9272 continued
+---
 
-| # | State | Identified Miles | Unidentified Miles | Total |
-|---|---|---|---|---|
-| 30 | Tennessee | 5398.0 | 0.0 | 5398.0 |
-| 31 | Texas | 6829.6 | 0.0 | 6829.6 |
-| 32 | Utah | 4463.6 | 0.0 | 4463.6 |
-| 33 | Virginia | 4784.5 | 0.0 | 4784.5 |
-| 34 | West Virginia | 1445.2 | 0.0 | 1445.2 |
-| 35 | Wisconsin | 452.6 | 0.0 | 452.6 |
-| 36 | Wyoming | 6877.8 | 0.0 | 6877.8 |
-| | *Total* | *130310.1* | *558.8* | *130868.9* |
+| UNIT | VIN suffix T850714 | Kenworth | Fleet ref FLT-331 |
+| :--- | :--- | :--- | :--- |
+| **7962** | Plate AP36623 | yard relay / Gary IN | Quarter: 2025 Q3 |
 
-                                                                    Page 102 of 124
+---
+
+Mileage jurisdictions for this unit are listed below. The unit number is inherited by every row on this page.
+
+| JURISDICTION AND SOURCE NOTE | ACCEPTED / IDENTIFIED MILES | EXCEPTION / UNIDENTIFIED MILES | REPORTED JURISDICTION TOTAL |
+| :--- | :---: | :---: | :---: |
+| **Arizona**<br>manual correction retained in quarter workpaper | 3,163.5 | 0.0 | 3,163.5 |
+| **California**<br>route exception cleared by mileage desk | 3,060.1 | 0.0 | 3,060.1 |
+| **Connecticut**<br>cross-border segment verified from GPS batch | 1,869.9 | 0.0 | 1,869.9 |
+| **Delaware**<br>telematics accepted; odometer tie-out reviewed | 5,757.2 | 0.0 | 5,757.2 |
+| **Florida**<br>telematics accepted; odometer tie-out reviewed | 719.1 | 0.0 | 719.1 |
+| **Georgia**<br>manual correction retained in quarter workpaper | 5,123.4 | 207.2 | 5,330.6 |
+| **Idaho**<br>cross-border segment verified from GPS batch | 1,381.3 | 0.0 | 1,381.3 |
+| **Illinois**<br>telematics accepted; odometer tie-out reviewed | 803.5 | 0.0 | 803.5 |
+| **Indiana**<br>manual correction retained in quarter workpaper | 1,163.3 | 0.0 | 1,163.3 |
+| **Iowa**<br>manual correction retained in quarter workpaper | 5,364.4 | 0.0 | 5,364.4 |
+| **Kansas**<br>telematics accepted; odometer tie-out reviewed | 7,064.1 | 0.0 | 7,064.1 |
+| **Kentucky**<br>E-ZPass and fuel stop support reviewed | 4,966.3 | 85.5 | 5,051.8 |
+
+---
+
+### Unit quarter tie-out
+* Accepted: 115,612.8
+* Exception: 2,310.4
+* Reported: 117,923.2
+
+### Fuel-card reconciliation sample
+| JUR | GALLONS | AMOUNT | NOTE |
+| :--- | :---: | :---: | :--- |
+| MO | 133.8 | $581.75 | fuel only - not a mileage jurisdiction row |
+| OH | 51.7 | $242.72 | fuel only - not a mileage jurisdiction row |
+| TN | 226.2 | $825.78 | fuel only - not a mileage jurisdiction row |
+
+Page 102
 
 # Page 103
 
-Generated: 11/02/2025 09:14 AM CST                                      Prairie Route Carriers Inc
-                                                                           1903 WESTFIELD CROSSING
-                                                                           PLAINFIELD, IL 60544
-                                                                           312-555-0113
+Hearthline Freight Cooperative                              VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                             Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
 
-# IFTA Mileage: All trucks - 2025 - Q 4
-### 7/1/2025 - 9/30/2025
+_________________________________________________________________________________________________
+| UNIT                  | VIN suffix T850714     | Kenworth               | Fleet ref FLT-331      |
+| **7962**              | Plate AP36623          | yard relay / Gary IN   | Quarter: 2025 Q3       |
+| continued             |                        |                        |                        |
+_________________________________________________________________________________________________
 
-# Vehicle: 915
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
 
-| # | State | Identified Miles | Unidentified Miles | Total |
-|---|---|---|---|---|
-| 1 | Alabama | 3535.0 | 0.0 | 3535.0 |
-| 2 | Arizona | 5414.2 | 0.0 | 5414.2 |
-| 3 | California | 5500.7 | 133.1 | 5633.8 |
-| 4 | Colorado | 1228.8 | 0.0 | 1228.8 |
-| 5 | Connecticut | 5910.5 | 178.9 | 6089.4 |
-| 6 | Delaware | 4570.8 | 0.0 | 4570.8 |
-| 7 | Florida | 4435.3 | 0.0 | 4435.3 |
-| 8 | Georgia | 1149.1 | 0.0 | 1149.1 |
-| 9 | Idaho | 2757.2 | 0.0 | 2757.2 |
-| 10 | Illinois | 4571.2 | 0.0 | 4571.2 |
-| 11 | Indiana | 4811.1 | 0.0 | 4811.1 |
-| 12 | Iowa | 518.2 | 0.0 | 518.2 |
-| 13 | Kansas | 5922.6 | 0.0 | 5922.6 |
-| 14 | Louisiana | 6020.3 | 0.0 | 6020.3 |
-| 15 | Maryland | 4481.0 | 110.9 | 4591.9 |
-| 16 | Minnesota | 3685.5 | 356.5 | 4042.0 |
-| 17 | Mississippi | 2137.3 | 0.0 | 2137.3 |
-| 18 | Missouri | 3283.3 | 0.0 | 3283.3 |
-| 19 | Montana | 274.2 | 0.0 | 274.2 |
-| 20 | Nebraska | 6651.3 | 0.0 | 6651.3 |
-| 21 | New Jersey | 2327.9 | 191.6 | 2519.5 |
-| 22 | New Mexico | 5696.8 | 0.0 | 5696.8 |
-| 23 | New York | 3253.6 | 0.0 | 3253.6 |
-| 24 | North Carolina | 5900.9 | 0.0 | 5900.9 |
-| 25 | Ohio | 3268.0 | 0.0 | 3268.0 |
-| 26 | Oklahoma | 5421.2 | 0.0 | 5421.2 |
-| 27 | Oregon | 10.1 | 342.9 | 353.0 |
-| 28 | Pennsylvania | 5607.6 | 0.0 | 5607.6 |
-| 29 | Tennessee | 28.7 | 0.0 | 28.7 |
+| JURISDICTION AND SOURCE NOTE | ACCEPTED / IDENTIFIED MILES | EXCEPTION / UNIDENTIFIED MILES | REPORTED JURISDICTION TOTAL |
+| :--- | :---: | :---: | :---: |
+| **Louisiana** <br> manual correction retained in quarter workpaper | 5,099.3 | 0.0 | 5,099.3 |
+| **Maryland** <br> trip-sheet and dispatch legs reconciled | 20.7 | 44.5 | 65.2 |
+| **Michigan** <br> trip-sheet and dispatch legs reconciled | 3,173.6 | 0.0 | 3,173.6 |
+| **Minnesota** <br> telematics accepted; odometer tie-out reviewed | 447.4 | 0.0 | 447.4 |
+| **Mississippi** <br> route exception cleared by mileage desk | 45.8 | 0.0 | 45.8 |
+| **Missouri** <br> E-ZPass and fuel stop support reviewed | 3,425.3 | 0.0 | 3,425.3 |
+| **Nebraska** <br> cross-border segment verified from GPS batch | 6,538.5 | 0.0 | 6,538.5 |
+| **Nevada** <br> cross-border segment verified from GPS batch | 3,892.3 | 204.6 | 4,096.9 |
+| **New Jersey** <br> cross-border segment verified from GPS batch | 3,087.2 | 0.0 | 3,087.2 |
+| **New York** <br> trip-sheet and dispatch legs reconciled | 6,692.7 | 0.0 | 6,692.7 |
+| **North Carolina** <br> manual correction retained in quarter workpaper | 5,424.8 | 0.0 | 5,424.8 |
 
-                                                                           Page 103 of 124
+Page 103
 
 # Page 104
 
-Generated: 11/02/2025 09:14 AM CST                                      Prairie Route Carriers Inc
-                                                                             1904 WESTFIELD CROSSING
-                                                                                PLAINFIELD, IL 60544
-                                                                                        312-555-0114
+Hearthline Freight Cooperative                           VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                          Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
+____________________________________________________________________________________
 
-                          IFTA Mileage: All trucks - 2025 - Q 4
-                                  7/1/2025 - 9/30/2025
++--------------------------+-------------------------+-----------------------+-------------------------+
+| UNIT                     | VIN suffix T850714      | Kenworth              | Fleet ref FLT-331       |
+| **7962**                 | Plate AP36623           | yard relay / Gary IN  | Quarter: 2025 Q3        |
+| continued                |                         |                       |                         |
++--------------------------+-------------------------+-----------------------+-------------------------+
 
-                               Vehicle: 915 continued
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
 
-| # | State | Identified Miles | Unidentified Miles | Total |
-|---|---|---|---|---|
-| 30 | Utah | 3703.4 | 0.0 | 3703.4 |
-| 31 | Virginia | 602.0 | 0.0 | 602.0 |
-| 32 | Washington | 3728.3 | 258.5 | 3986.8 |
-| 33 | West Virginia | 1259.3 | 0.0 | 1259.3 |
-| 34 | Wisconsin | 1489.9 | 0.0 | 1489.9 |
-| 35 | Wyoming | 7005.0 | 0.0 | 7005.0 |
-| | *Total* | *126160.3* | *1572.4* | *127732.7* |
+| JURISDICTION AND SOURCE NOTE | ACCEPTED / IDENTIFIED MILES | EXCEPTION / UNIDENTIFIED MILES | REPORTED JURISDICTION TOTAL |
+| :--- | :---: | :---: | :---: |
+| **North Dakota**<br>telematics accepted; odometer tie-out reviewed | 1,772.4 | 363.4 | 2,135.8 |
+| **Ohio**<br>E-ZPass and fuel stop support reviewed | 6,360.7 | 330.0 | 6,690.7 |
+| **Pennsylvania**<br>route exception cleared by mileage desk | 5,176.6 | 0.0 | 5,176.6 |
+| **South Carolina**<br>telematics accepted; odometer tie-out reviewed | 4,952.3 | 0.0 | 4,952.3 |
+| **Tennessee**<br>route exception cleared by mileage desk | 671.2 | 0.0 | 671.2 |
+| **Texas**<br>manual correction retained in quarter workpaper | 28.8 | 115.7 | 144.5 |
+| **Utah**<br>manual correction retained in quarter workpaper | 1,398.3 | 0.0 | 1,398.3 |
+| **Virginia**<br>manual correction retained in quarter workpaper | 6,146.3 | 306.3 | 6,452.6 |
+| **Washington**<br>trip-sheet and dispatch legs reconciled | 2,074.6 | 311.5 | 2,386.1 |
+| **West Virginia**<br>route exception cleared by mileage desk | 6,404.4 | 341.7 | 6,746.1 |
+| **Wisconsin**<br>telematics accepted; odometer tie-out reviewed | 2,343.5 | 0.0 | 2,343.5 |
 
-                                                                                     Page 104 of 124
+Page 104
 
 # Page 105
 
-Generated: 11/02/2025 09:14 AM CST,,,,,Prairie Route Carriers Inc
-,,,,,1905 WESTFIELD CROSSING
-,,,,,PLAINFIELD, IL 60544
-,,,,,312-555-0115
-,,,,,
-,,IFTA Mileage: All trucks - 2025 - Q 4,,,
-,,7/1/2025 - 9/30/2025,,,
-,,Vehicle: 3251,,,
-,,,,,
-#,State,Identified Miles,Unidentified Miles,Total
-1,Alabama,4420.6,0.0,4420.6
-2,Arizona,6764.2,0.0,6764.2
-3,Arkansas,3945.5,0.0,3945.5
-4,California,2275.5,0.0,2275.5
-5,Colorado,37.9,0.0,37.9
-6,Connecticut,4199.0,81.6,4280.6
-7,Delaware,5675.6,0.0,5675.6
-8,Florida,3647.9,222.5,3870.4
-9,Georgia,3566.4,0.0,3566.4
-10,Idaho,5561.0,0.0,5561.0
-11,Illinois,3451.8,71.5,3523.3
-12,Iowa,6204.8,0.0,6204.8
-13,Kansas,4082.5,0.0,4082.5
-14,Kentucky,71.9,0.0,71.9
-15,Louisiana,3971.8,0.0,3971.8
-16,Maryland,6487.5,0.0,6487.5
-17,Michigan,2396.9,42.3,2439.2
-18,Minnesota,5317.4,71.3,5388.7
-19,Mississippi,3601.6,0.0,3601.6
-20,Missouri,1438.0,0.0,1438.0
-21,Montana,3133.3,0.0,3133.3
-22,Nebraska,90.6,0.0,90.6
-23,Nevada,4225.5,0.0,4225.5
-24,New Jersey,2981.7,0.0,2981.7
-25,New Mexico,5741.7,298.2,6039.9
-26,New York,283.4,0.0,283.4
-27,North Carolina,85.5,57.8,143.3
-28,North Dakota,6638.1,189.6,6827.7
-29,Ohio,1627.7,0.0,1627.7
-,,,,,
-,,,,,Page 105 of 124
+Hearthline Freight Cooperative
+Quarterly IFTA workpaper packet
+Account HFC-742018 / Fleet mileage review
+
+VEHICLE MILEAGE SUPPORT
+Prepared 11/02/2025 09:14 CST
+
+| UNIT | VIN suffix U139967 Plate AP92427 | International intermodal / Kansas City MO | Fleet ref FLT-121 Quarter: 2025 Q3 |
+| :--- | :--- | :--- | :--- |
+| **382** | | | |
+
+Mileage jurisdictions for this unit are listed below. The unit number is inherited by every row on this page.
+
+| JURISDICTION AND SOURCE NOTE | ACCEPTED / IDENTIFIED MILES | EXCEPTION / UNIDENTIFIED MILES | REPORTED JURISDICTION TOTAL |
+| :--- | :---: | :---: | :---: |
+| **Alabama** <br>trip-sheet and dispatch legs reconciled | 4,875.3 | 0.0 | 4,875.3 |
+| **Arizona** <br>trip-sheet and dispatch legs reconciled | 2,859.0 | 0.0 | 2,859.0 |
+| **Arkansas** <br>cross-border segment verified from GPS batch | 1,556.6 | 0.0 | 1,556.6 |
+| **Colorado** <br>trip-sheet and dispatch legs reconciled | 22.3 | 0.0 | 22.3 |
+| **Connecticut** <br>trip-sheet and dispatch legs reconciled | 6,999.0 | 371.6 | 7,370.6 |
+| **Delaware** <br>route exception cleared by mileage desk | 7,038.3 | 0.0 | 7,038.3 |
+| **Florida** <br>manual correction retained in quarter workpaper | 3,050.9 | 0.0 | 3,050.9 |
+| **Georgia** <br>trip-sheet and dispatch legs reconciled | 337.3 | 0.0 | 337.3 |
+| **Iowa** <br>telematics accepted; odometer tie-out reviewed | 26.0 | 0.0 | 26.0 |
+| **Kansas** <br>route exception cleared by mileage desk | 5,742.4 | 0.0 | 5,742.4 |
+| **Kentucky** <br>E-ZPass and fuel stop support reviewed | 4,702.0 | 201.4 | 4,903.4 |
+| **Louisiana** <br>trip-sheet and dispatch legs reconciled | 6,981.4 | 0.0 | 6,981.4 |
+
+***
+
+### Unit quarter tie-out
+Accepted: 111,224.2
+Exception: 573.0
+Reported: 111,797.2
+
+***
+
+### Fuel-card reconciliation sample
+
+| JUR | GALLONS | AMOUNT | NOTE |
+| :--- | :---: | :---: | :--- |
+| KY | 204.6 | $883.96 | fuel only - not a mileage jurisdiction row |
+| MO | 254.0 | $1,107.84 | fuel only - not a mileage jurisdiction row |
+| OH | 84.9 | $377.62 | fuel only - not a mileage jurisdiction row |
+
+Page 105
 
 # Page 106
 
-Generated: 11/02/2025 09:14 AM CST
+Hearthline Freight Cooperative                                       VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                                 Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
+_____________________________________________________________________________________________
 
-                                                                    **Prairie Route Carriers Inc**
-                                                                       1906 WESTFIELD CROSSING
-                                                                          PLAINFIELD, IL 60544
-                                                                                  312-555-0116
+| UNIT **382** continued | VIN suffix U139967 Plate AP92427 | International intermodal / Kansas City MO | Fleet ref FLT-121 Quarter: 2025 Q3 |
+| :--- | :--- | :--- | :--- |
 
+_____________________________________________________________________________________________
 
-# IFTA Mileage: All trucks - 2025 - Q 4
-### 7/1/2025 - 9/30/2025
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
 
-## Vehicle: 3251 continued
+| JURISDICTION AND SOURCE NOTE | ACCEPTED / IDENTIFIED MILES | EXCEPTION / UNIDENTIFIED MILES | REPORTED JURISDICTION TOTAL |
+| :--- | :---: | :---: | :---: |
+| **Maryland**<br>telematics accepted; odometer tie-out reviewed | 4,669.7 | 0.0 | 4,669.7 |
+| **Michigan**<br>telematics accepted; odometer tie-out reviewed | 3,125.1 | 0.0 | 3,125.1 |
+| **Minnesota**<br>trip-sheet and dispatch legs reconciled | 843.3 | 0.0 | 843.3 |
+| **Mississippi**<br>trip-sheet and dispatch legs reconciled | 99.2 | 0.0 | 99.2 |
+| **Missouri**<br>route exception cleared by mileage desk | 2,890.6 | 0.0 | 2,890.6 |
+| **Nebraska**<br>telematics accepted; odometer tie-out reviewed | 2,575.0 | 0.0 | 2,575.0 |
+| **Nevada**<br>E-ZPass and fuel stop support reviewed | 5,687.8 | 0.0 | 5,687.8 |
+| **New Jersey**<br>E-ZPass and fuel stop support reviewed | 6,784.6 | 0.0 | 6,784.6 |
+| **New Mexico**<br>E-ZPass and fuel stop support reviewed | 1,126.5 | 0.0 | 1,126.5 |
+| **New York**<br>route exception cleared by mileage desk | 1,273.5 | 0.0 | 1,273.5 |
+| **North Dakota**<br>E-ZPass and fuel stop support reviewed | 1,616.0 | 0.0 | 1,616.0 |
 
-| # | State | Identified Miles | Unidentified Miles | Total |
-|---|-------|------------------|--------------------|-------|
-| 30 | Oregon | 929.4 | 0.0 | 929.4 |
-| 31 | Pennsylvania | 26.5 | 0.0 | 26.5 |
-| 32 | South Carolina | 5454.5 | 0.0 | 5454.5 |
-| 33 | Tennessee | 6000.1 | 0.0 | 6000.1 |
-| 34 | Texas | 6899.4 | 0.0 | 6899.4 |
-| 35 | Utah | 83.9 | 0.0 | 83.9 |
-| 36 | Virginia | 2518.8 | 0.0 | 2518.8 |
-| 37 | Washington | 2624.3 | 0.0 | 2624.3 |
-| 38 | West Virginia | 4378.0 | 0.0 | 4378.0 |
-| 39 | Wisconsin | 3553.2 | 157.4 | 3710.6 |
-| 40 | Wyoming | 6428.7 | 0.0 | 6428.7 |
-| | **Total** | **140822.1** | **1192.2** | **142014.3** |
-
-
-<br><br><br><br><br><br><br><br><br><br><br><br><br>
-Page 106 of 124
+<br>
+<p align="right">Page 106</p>
 
 # Page 107
 
-Generated: 11/02/2025 09:14 AM CST                                Prairie Route Carriers Inc
-                                                                     1907 WESTFIELD CROSSING
-                                                                        PLAINFIELD, IL 60544
-                                                                                312-555-0117
+Hearthline Freight Cooperative                                                  VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                                                 Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
+________________________________________________________________________________________________________________________
 
-                             IFTA Mileage: All trucks - 2025 - Q 4
-                                      7/1/2025 - 9/30/2025
+| UNIT             | VIN suffix U139967 | International               | Fleet ref FLT-121  |
+| 382              | Plate AP92427      | intermodal / Kansas City    | Quarter: 2025 Q3   |
+| continued        |                    | MO                          |                    |
+________________________________________________________________________________________________________________________
 
-                                         Vehicle: 7690
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
 
-| # | State | Identified Miles | Unidentified Miles | Total |
-|---|---|---|---|---|
-| 1 | Alabama | 106.6 | 261.8 | 368.4 |
-| 2 | Arizona | 27.4 | 0.0 | 27.4 |
-| 3 | Arkansas | 4534.8 | 109.4 | 4644.2 |
-| 4 | California | 6805.3 | 0.0 | 6805.3 |
-| 5 | Colorado | 3602.6 | 0.0 | 3602.6 |
-| 6 | Connecticut | 104.0 | 165.9 | 269.9 |
-| 7 | Delaware | 4432.3 | 0.0 | 4432.3 |
-| 8 | Florida | 6.8 | 0.0 | 6.8 |
-| 9 | Georgia | 5297.4 | 0.0 | 5297.4 |
-| 10 | Illinois | 6758.4 | 10.4 | 6768.8 |
-| 11 | Indiana | 84.4 | 0.0 | 84.4 |
-| 12 | Iowa | 2462.1 | 0.0 | 2462.1 |
-| 13 | Kansas | 2399.0 | 129.8 | 2528.8 |
-| 14 | Kentucky | 92.8 | 0.0 | 92.8 |
-| 15 | Louisiana | 1090.0 | 0.0 | 1090.0 |
-| 16 | Maryland | 2662.9 | 15.2 | 2678.1 |
-| 17 | Michigan | 1743.9 | 0.0 | 1743.9 |
-| 18 | Minnesota | 145.4 | 0.0 | 145.4 |
-| 19 | Mississippi | 4254.9 | 0.0 | 4254.9 |
-| 20 | Missouri | 5174.6 | 0.0 | 5174.6 |
-| 21 | Montana | 2429.1 | 0.0 | 2429.1 |
-| 22 | Nevada | 1002.5 | 45.2 | 1047.7 |
-| 23 | New Mexico | 5450.4 | 0.0 | 5450.4 |
-| 24 | New York | 233.9 | 0.0 | 233.9 |
-| 25 | North Carolina | 1321.5 | 0.0 | 1321.5 |
-| 26 | North Dakota | 645.2 | 190.9 | 836.1 |
-| 27 | Ohio | 68.5 | 0.0 | 68.5 |
-| 28 | Oklahoma | 2289.0 | 0.0 | 2289.0 |
-| 29 | Oregon | 3778.3 | 0.0 | 3778.3 |
+"JURISDICTION AND SOURCE NOTE","ACCEPTED / IDENTIFIED MILES","EXCEPTION / UNIDENTIFIED MILES","REPORTED JURISDICTION TOTAL"
+"Oklahoma
+trip-sheet and dispatch legs reconciled","6,006.9",0.0,"6,006.9"
+"Oregon
+cross-border segment verified from GPS batch","1,142.3",0.0,"1,142.3"
+"Pennsylvania
+cross-border segment verified from GPS batch",778.0,0.0,778.0
+"South Carolina
+cross-border segment verified from GPS batch","6,648.6",0.0,"6,648.6"
+"Tennessee
+route exception cleared by mileage desk","3,847.8",0.0,"3,847.8"
+"Texas
+trip-sheet and dispatch legs reconciled","3,821.3",0.0,"3,821.3"
+"Virginia
+E-ZPass and fuel stop support reviewed","1,455.6",0.0,"1,455.6"
+"Washington
+telematics accepted; odometer tie-out reviewed","4,350.4",0.0,"4,350.4"
+"West Virginia
+route exception cleared by mileage desk","5,480.1",0.0,"5,480.1"
+"Wisconsin
+E-ZPass and fuel stop support reviewed",918.8,0.0,918.8
+"Wyoming
+telematics accepted; odometer tie-out reviewed","1,892.6",0.0,"1,892.6"
 
-                                                                             Page 107 of 124
+Page 107
 
 # Page 108
 
-Generated: 11/02/2025 09:14 AM CST                                      Prairie Route Carriers Inc
-                                                                               1908 WESTFIELD CROSSING
-                                                                                  PLAINFIELD, IL 60544
-                                                                                          312-555-0118
+Hearthline Freight Cooperative
+Quarterly IFTA workpaper packet
+Account HFC-742018 / Fleet mileage review
 
-                            IFTA Mileage: All trucks - 2025 - Q 4
-                                    7/1/2025 - 9/30/2025
+VEHICLE MILEAGE SUPPORT
+Prepared 11/02/2025 09:14 CST
 
-                                 Vehicle: 7690 continued
+__________________________________________________________________________________________________
 
-| # | State | Identified Miles | Unidentified Miles | Total |
-|---|---|---|---|---|
-| 30 | Pennsylvania | 91.0 | 307.4 | 398.4 |
-| 31 | South Carolina | 6034.3 | 0.0 | 6034.3 |
-| 32 | Tennessee | 6851.2 | 0.0 | 6851.2 |
-| 33 | Texas | 4629.6 | 0.0 | 4629.6 |
-| 34 | Utah | 1343.9 | 0.0 | 1343.9 |
-| 35 | Virginia | 92.5 | 258.8 | 351.3 |
-| 36 | Washington | 3519.7 | 0.0 | 3519.7 |
-| 37 | Wisconsin | 54.9 | 0.0 | 54.9 |
-| 38 | Wyoming | 26.5 | 225.2 | 251.7 |
-| | **Total** | **91647.6** | **1720.0** | **93367.6** |
+| UNIT<br>**905** | VIN suffix J259951<br>Plate AP94295 | Kenworth<br>dedicated / Toledo OH | Fleet ref FLT-524<br>Quarter: 2025 Q3 |
+| :--- | :--- | :--- | :--- |
+
+__________________________________________________________________________________________________
+
+Mileage jurisdictions for this unit are listed below. The unit number is inherited by every row on this page.
+
+| JURISDICTION AND SOURCE NOTE | ACCEPTED / IDENTIFIED MILES | EXCEPTION / UNIDENTIFIED MILES | REPORTED JURISDICTION TOTAL |
+| :--- | :---: | :---: | :---: |
+| **Alabama**<br>cross-border segment verified from GPS batch | 4,450.7 | 0.0 | 4,450.7 |
+| **Arizona**<br>cross-border segment verified from GPS batch | 1,367.2 | 0.0 | 1,367.2 |
+| **California**<br>E-ZPass and fuel stop support reviewed | 4,971.6 | 0.0 | 4,971.6 |
+| **Colorado**<br>manual correction retained in quarter workpaper | 618.2 | 0.0 | 618.2 |
+| **Connecticut**<br>E-ZPass and fuel stop support reviewed | 3,145.6 | 103.0 | 3,248.6 |
+| **Delaware**<br>telematics accepted; odometer tie-out reviewed | 2,221.2 | 0.0 | 2,221.2 |
+| **Georgia**<br>route exception cleared by mileage desk | 6,362.1 | 0.0 | 6,362.1 |
+| **Illinois**<br>manual correction retained in quarter workpaper | 3,688.1 | 174.6 | 3,862.7 |
+| **Indiana**<br>route exception cleared by mileage desk | 101.4 | 0.0 | 101.4 |
+| **Iowa**<br>telematics accepted; odometer tie-out reviewed | 6,559.1 | 0.0 | 6,559.1 |
+| **Kansas**<br>trip-sheet and dispatch legs reconciled | 175.3 | 0.0 | 175.3 |
+| **Kentucky**<br>cross-border segment verified from GPS batch | 105.0 | 0.0 | 105.0 |
 
 <br>
+
+| **Unit quarter tie-out** | **Fuel-card reconciliation sample** |
+| :--- | :--- |
+| Accepted: 96,498.9<br>Exception: 1,111.8<br>Reported: 97,610.7 | <table><thead><tr><th>JUR</th><th>GALLONS</th><th>AMOUNT</th><th>NOTE</th></tr></thead><tbody><tr><td>MO</td><td>154.6</td><td>$694.02</td><td>fuel only - not a mileage jurisdiction row</td></tr><tr><td>GA</td><td>322.5</td><td>$1,444.08</td><td>fuel only - not a mileage jurisdiction row</td></tr><tr><td>TX</td><td>112.8</td><td>$515.34</td><td>fuel only - not a mileage jurisdiction row</td></tr></tbody></table> |
+
 <br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-                                                                                      Page 108 of 124
+
+Page 108
 
 # Page 109
 
-Generated: 11/02/2025 09:14 AM CST                                      Prairie Route Carriers Inc
-                                                                        1909 WESTFIELD CROSSING
-                                                                           PLAINFIELD, IL 60544
-                                                                                   312-555-0119
+Hearthline Freight Cooperative                                          VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                                         Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
+__________________________________________________________________________________________________
 
-                     IFTA Mileage: All trucks - 2025 - Q 4
-                              7/1/2025 - 9/30/2025
+| UNIT                   | VIN suffix J259951     | Kenworth               | Fleet ref FLT-524     |
+| 905                    | Plate AP94295          | dedicated / Toledo OH  | Quarter: 2025 Q3      |
+| continued              |                        |                        |                       |
+__________________________________________________________________________________________________
 
-                                  Vehicle: 148
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
 
-| # | State | Identified Miles | Unidentified Miles | Total |
-|---|---|---|---|---|
-| 1 | Alabama | 2807.5 | 183.8 | 2991.3 |
-| 2 | Arizona | 6488.1 | 0.0 | 6488.1 |
-| 3 | Arkansas | 1169.6 | 0.0 | 1169.6 |
-| 4 | California | 6536.5 | 314.8 | 6851.3 |
-| 5 | Delaware | 5867.8 | 0.0 | 5867.8 |
-| 6 | Florida | 6890.7 | 0.0 | 6890.7 |
-| 7 | Georgia | 6526.9 | 0.0 | 6526.9 |
-| 8 | Idaho | 5368.1 | 0.0 | 5368.1 |
-| 9 | Illinois | 6665.8 | 0.0 | 6665.8 |
-| 10 | Iowa | 2064.9 | 0.0 | 2064.9 |
-| 11 | Kansas | 3317.4 | 0.0 | 3317.4 |
-| 12 | Kentucky | 45.9 | 106.7 | 152.6 |
-| 13 | Louisiana | 2539.1 | 295.6 | 2834.7 |
-| 14 | Michigan | 4677.2 | 0.0 | 4677.2 |
-| 15 | Mississippi | 66.2 | 0.0 | 66.2 |
-| 16 | Missouri | 6459.3 | 0.0 | 6459.3 |
-| 17 | Montana | 3141.9 | 0.0 | 3141.9 |
-| 18 | Nebraska | 5151.3 | 160.3 | 5311.6 |
-| 19 | Nevada | 1496.2 | 351.2 | 1847.4 |
-| 20 | New Jersey | 1378.4 | 146.4 | 1524.8 |
-| 21 | New Mexico | 2211.4 | 0.0 | 2211.4 |
-| 22 | North Carolina | 5176.3 | 357.0 | 5533.3 |
-| 23 | North Dakota | 5315.8 | 0.0 | 5315.8 |
-| 24 | Ohio | 2890.9 | 0.0 | 2890.9 |
-| 25 | Oklahoma | 1197.9 | 170.6 | 1368.5 |
-| 26 | Oregon | 2942.2 | 29.0 | 2971.2 |
-| 27 | Pennsylvania | 1156.9 | 0.0 | 1156.9 |
-| 28 | South Carolina | 4113.4 | 0.0 | 4113.4 |
-| 29 | Texas | 7030.2 | 195.3 | 7225.5 |
+"JURISDICTION AND SOURCE NOTE","ACCEPTED / IDENTIFIED MILES","EXCEPTION / UNIDENTIFIED MILES","REPORTED JURISDICTION TOTAL"
+"Louisiana (manual correction retained in quarter workpaper)","6,446.7","0.0","6,446.7"
+"Michigan (trip-sheet and dispatch legs reconciled)","749.8","0.0","749.8"
+"Mississippi (E-ZPass and fuel stop support reviewed)","4,494.3","0.0","4,494.3"
+"Montana (E-ZPass and fuel stop support reviewed)","3,605.6","0.0","3,605.6"
+"Nebraska (route exception cleared by mileage desk)","106.0","0.0","106.0"
+"Nevada (telematics accepted; odometer tie-out reviewed)","5,341.4","0.0","5,341.4"
+"New Mexico (telematics accepted; odometer tie-out reviewed)","514.5","0.0","514.5"
+"New York (cross-border segment verified from GPS batch)","4,637.0","0.0","4,637.0"
+"North Dakota (trip-sheet and dispatch legs reconciled)","6,701.6","371.0","7,072.6"
+"Ohio (trip-sheet and dispatch legs reconciled)","591.4","338.3","929.7"
 
-Page 109 of 124
+Page 109
 
 # Page 110
 
-Generated: 11/02/2025 09:14 AM CST                                       Prairie Route Carriers Inc
-                                                                          1910 WESTFIELD CROSSING
-                                                                             PLAINFIELD, IL 60544
-                                                                                     312-555-0120
+Hearthline Freight Cooperative                                          VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                                         Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
 
+____________________________________________________________________________________________________
 
+UNIT                                 VIN suffix J259951         Kenworth                   Fleet ref FLT-524
+905                                  Plate AP94295              dedicated / Toledo OH      Quarter: 2025 Q3
+continued
+____________________________________________________________________________________________________
 
-# IFTA Mileage: All trucks - 2025 - Q 4
-### 7/1/2025 - 9/30/2025
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
 
-## Vehicle: 148 continued
+"JURISDICTION AND SOURCE NOTE","ACCEPTED / IDENTIFIED MILES","EXCEPTION / UNIDENTIFIED MILES","REPORTED JURISDICTION TOTAL"
+"Oklahoma
+cross-border segment verified from GPS batch","5,723.2","0.0","5,723.2"
+"Oregon
+E-ZPass and fuel stop support reviewed","335.1","0.0","335.1"
+"South Carolina
+manual correction retained in quarter workpaper","2,874.7","0.0","2,874.7"
+"Tennessee
+telematics accepted; odometer tie-out reviewed","478.6","124.9","603.5"
+"Virginia
+trip-sheet and dispatch legs reconciled","3,912.7","0.0","3,912.7"
+"Washington
+telematics accepted; odometer tie-out reviewed","5,802.5","0.0","5,802.5"
+"West Virginia
+route exception cleared by mileage desk","6,534.8","0.0","6,534.8"
+"Wisconsin
+telematics accepted; odometer tie-out reviewed","2,428.4","0.0","2,428.4"
+"Wyoming
+E-ZPass and fuel stop support reviewed","1,455.1","0.0","1,455.1"
 
-
-
-| # | State | Identified Miles | Unidentified Miles | Total |
-| :--- | :--- | :--- | :--- | :--- |
-| 30 | Utah | 1158.9 | 0.0 | 1158.9 |
-| 31 | Virginia | 884.9 | 0.0 | 884.9 |
-| 32 | Washington | 2091.4 | 0.0 | 2091.4 |
-| 33 | West Virginia | 4292.8 | 0.0 | 4292.8 |
-| 34 | Wisconsin | 1625.5 | 0.0 | 1625.5 |
-| 35 | Wyoming | 1693.2 | 0.0 | 1693.2 |
-| | *Total* | *122440.5* | *2310.7* | *124751.2* |
-
-
-<br><br><br><br><br><br><br><br><br><br><br><br>
-
-Page 110 of 124
+Page 110
 
 # Page 111
 
-Generated: 11/02/2025 09:14 AM CST                                      Prairie Route Carriers Inc
-                                                                        1911 WESTFIELD CROSSING
-                                                                           PLAINFIELD, IL 60544
-                                                                                   312-555-0121
+Hearthline Freight Cooperative                                                 **VEHICLE MILEAGE SUPPORT**
+Quarterly IFTA workpaper packet                                                Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
 
-# IFTA Mileage: All trucks - 2025 - Q 4
-### 7/1/2025 - 9/30/2025
+---
 
-## Vehicle: 2308
+| UNIT | VIN suffix M315195 <br> Plate AP17637 | Mack <br> linehaul / Toledo OH | Fleet ref FLT-883 <br> Quarter: 2025 Q3 |
+| :--- | :--- | :--- | :--- |
+| **1695** | | | |
 
-| # | State | Identified Miles | Unidentified Miles | Total |
-|---|---|---|---|---|
-| 1 | Alabama | 45.9 | 0.0 | 45.9 |
-| 2 | Arizona | 3467.3 | 0.0 | 3467.3 |
-| 3 | Arkansas | 558.1 | 0.0 | 558.1 |
-| 4 | California | 1596.3 | 0.0 | 1596.3 |
-| 5 | Connecticut | 274.8 | 0.0 | 274.8 |
-| 6 | Delaware | 2431.4 | 0.0 | 2431.4 |
-| 7 | Florida | 2013.6 | 0.0 | 2013.6 |
-| 8 | Georgia | 5722.0 | 0.0 | 5722.0 |
-| 9 | Idaho | 1382.5 | 275.9 | 1658.4 |
-| 10 | Illinois | 5507.5 | 0.0 | 5507.5 |
-| 11 | Indiana | 4641.1 | 0.0 | 4641.1 |
-| 12 | Iowa | 2967.7 | 323.2 | 3290.9 |
-| 13 | Kansas | 5167.3 | 76.3 | 5243.6 |
-| 14 | Kentucky | 3148.0 | 0.0 | 3148.0 |
-| 15 | Louisiana | 3498.0 | 0.0 | 3498.0 |
-| 16 | Maryland | 4994.2 | 245.4 | 5239.6 |
-| 17 | Michigan | 4357.4 | 0.0 | 4357.4 |
-| 18 | Minnesota | 3831.6 | 0.0 | 3831.6 |
-| 19 | Mississippi | 7045.1 | 329.9 | 7375.0 |
-| 20 | Missouri | 3580.3 | 275.4 | 3855.7 |
-| 21 | Montana | 5172.1 | 0.0 | 5172.1 |
-| 22 | Nebraska | 6482.2 | 0.0 | 6482.2 |
-| 23 | Nevada | 4692.5 | 302.7 | 4995.2 |
-| 24 | New Jersey | 107.1 | 0.0 | 107.1 |
-| 25 | New Mexico | 5183.9 | 0.0 | 5183.9 |
-| 26 | New York | 16.1 | 0.0 | 16.1 |
-| 27 | North Carolina | 1280.1 | 0.0 | 1280.1 |
-| 28 | North Dakota | 3994.1 | 0.0 | 3994.1 |
-| 29 | Ohio | 25.6 | 27.3 | 52.9 |
+---
 
-<div align="right">Page 111 of 124</div>
+Mileage jurisdictions for this unit are listed below. The unit number is inherited by every row on this page.
+
+| JURISDICTION AND SOURCE NOTE | ACCEPTED / IDENTIFIED MILES | EXCEPTION / UNIDENTIFIED MILES | REPORTED JURISDICTION TOTAL |
+| :--- | :---: | :---: | :---: |
+| **Alabama** <br> trip-sheet and dispatch legs reconciled | 836.4 | 0.0 | 836.4 |
+| **Arizona** <br> cross-border segment verified from GPS batch | 4,456.1 | 0.0 | 4,456.1 |
+| **California** <br> manual correction retained in quarter workpaper | 903.2 | 0.0 | 903.2 |
+| **Colorado** <br> trip-sheet and dispatch legs reconciled | 4,852.0 | 289.2 | 5,141.2 |
+| **Connecticut** <br> cross-border segment verified from GPS batch | 1,381.1 | 162.3 | 1,543.4 |
+| **Delaware** <br> E-ZPass and fuel stop support reviewed | 3,631.6 | 0.0 | 3,631.6 |
+| **Florida** <br> route exception cleared by mileage desk | 6,535.5 | 0.0 | 6,535.5 |
+| **Georgia** <br> cross-border segment verified from GPS batch | 4,793.6 | 0.0 | 4,793.6 |
+| **Idaho** <br> E-ZPass and fuel stop support reviewed | 5,488.0 | 115.4 | 5,603.4 |
+| **Indiana** <br> route exception cleared by mileage desk | 4,219.5 | 366.1 | 4,585.6 |
+| **Iowa** <br> telematics accepted; odometer tie-out reviewed | 4,333.5 | 0.0 | 4,333.5 |
+| **Kentucky** <br> cross-border segment verified from GPS batch | 350.2 | 0.0 | 350.2 |
+
+<br>
+
+### Unit quarter tie-out
+Accepted: 114,125.7  
+Exception: 1,533.9  
+Reported: 115,659.6  
+
+<br>
+
+### Fuel-card reconciliation sample
+| JUR | GALLONS | AMOUNT | NOTE |
+| :--- | :---: | :---: | :--- |
+| KY | 53.8 | $252.91 | fuel only - not a mileage jurisdiction row |
+| PA | 100.2 | $386.65 | fuel only - not a mileage jurisdiction row |
+| PA | 251.4 | $1,132.80 | fuel only - not a mileage jurisdiction row |
+
+<br>
+
+Page 111
 
 # Page 112
 
-Generated: 11/02/2025 09:14 AM CST                                Prairie Route Carriers Inc
-                                                                     1912 WESTFIELD CROSSING
-                                                                        PLAINFIELD, IL 60544
-                                                                                312-555-0122
+Hearthline Freight Cooperative
+Quarterly IFTA workpaper packet
+Account HFC-742018 / Fleet mileage review
 
-                       IFTA Mileage: All trucks - 2025 - Q 4
-                                7/1/2025 - 9/30/2025
+VEHICLE MILEAGE SUPPORT
+Prepared 11/02/2025 09:14 CST
 
-                              Vehicle: 2308 continued
+| UNIT | VIN suffix M315195 | Mack | Fleet ref FLT-883 |
+| :--- | :--- | :--- | :--- |
+| **1695** <br> continued | Plate AP17637 | linehaul / Toledo OH | Quarter: 2025 Q3 |
 
-| # | State | Identified Miles | Unidentified Miles | Total |
-|---|---|---|---|---|
-| 30 | Oklahoma | 97.0 | 0.0 | 97.0 |
-| 31 | Oregon | 6144.2 | 0.0 | 6144.2 |
-| 32 | Pennsylvania | 58.6 | 0.0 | 58.6 |
-| 33 | South Carolina | 5356.3 | 0.0 | 5356.3 |
-| 34 | Tennessee | 1147.5 | 0.0 | 1147.5 |
-| 35 | Texas | 11.1 | 207.8 | 218.9 |
-| 36 | Utah | 45.5 | 193.8 | 239.3 |
-| 37 | Washington | 3855.6 | 0.0 | 3855.6 |
-| 38 | West Virginia | 4929.5 | 356.0 | 5285.5 |
-| 39 | Wisconsin | 5146.6 | 0.0 | 5146.6 |
-| 40 | Wyoming | 1522.3 | 0.0 | 1522.3 |
-|    | Total | 121498.0 | 2613.7 | 124111.7 |
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
 
-                                                                             Page 112 of 124
+| JURISDICTION AND SOURCE NOTE | ACCEPTED / IDENTIFIED MILES | EXCEPTION / UNIDENTIFIED MILES | REPORTED JURISDICTION TOTAL |
+| :--- | :---: | :---: | :---: |
+| **Louisiana** <br> route exception cleared by mileage desk | 5,414.9 | 0.0 | 5,414.9 |
+| **Maryland** <br> E-ZPass and fuel stop support reviewed | 5,206.8 | 0.0 | 5,206.8 |
+| **Minnesota** <br> E-ZPass and fuel stop support reviewed | 1,331.4 | 0.0 | 1,331.4 |
+| **Mississippi** <br> cross-border segment verified from GPS batch | 5,031.7 | 0.0 | 5,031.7 |
+| **Missouri** <br> manual correction retained in quarter workpaper | 2,762.3 | 0.0 | 2,762.3 |
+| **Montana** <br> route exception cleared by mileage desk | 7,037.0 | 0.0 | 7,037.0 |
+| **Nebraska** <br> E-ZPass and fuel stop support reviewed | 1,244.4 | 0.0 | 1,244.4 |
+| **Nevada** <br> trip-sheet and dispatch legs reconciled | 685.9 | 60.3 | 746.2 |
+| **New Jersey** <br> route exception cleared by mileage desk | 531.5 | 0.0 | 531.5 |
+| **New Mexico** <br> manual correction retained in quarter workpaper | 4,526.0 | 0.0 | 4,526.0 |
+| **New York** <br> telematics accepted; odometer tie-out reviewed | 5,585.1 | 0.0 | 5,585.1 |
+| **North Carolina** <br> trip-sheet and dispatch legs reconciled | 1,334.4 | 0.0 | 1,334.4 |
+
+Page 112
 
 # Page 113
 
-#,State,Identified Miles,Unidentified Miles,Total
-1,Alabama,6194.5,103.4,6297.9
-2,Arizona,6449.1,0.0,6449.1
-3,Arkansas,2833.2,276.6,3109.8
-4,California,2284.3,129.5,2413.8
-5,Colorado,5060.9,0.0,5060.9
-6,Connecticut,350.0,0.0,350.0
-7,Delaware,3780.8,340.5,4121.3
-8,Florida,6675.0,0.0,6675.0
-9,Georgia,5617.4,0.0,5617.4
-10,Idaho,2983.4,0.0,2983.4
-11,Indiana,0.8,0.0,0.8
-12,Iowa,4409.9,0.0,4409.9
-13,Kansas,3825.6,0.0,3825.6
-14,Kentucky,6966.0,0.0,6966.0
-15,Louisiana,267.3,0.0,267.3
-16,Minnesota,6973.7,0.0,6973.7
-17,Mississippi,444.1,0.0,444.1
-18,Missouri,1147.5,0.0,1147.5
-19,Montana,844.6,261.5,1106.1
-20,Nevada,1177.2,0.0,1177.2
-21,New Jersey,6.7,0.0,6.7
-22,New Mexico,6890.7,0.0,6890.7
-23,New York,5706.0,0.0,5706.0
-24,North Carolina,3139.6,0.0,3139.6
-25,North Dakota,5254.8,0.0,5254.8
-26,Ohio,370.8,0.0,370.8
-27,Oregon,98.5,0.0,98.5
-28,Pennsylvania,5848.7,0.0,5848.7
-29,South Carolina,159.8,0.0,159.8
+Hearthline Freight Cooperative
+Quarterly IFTA workpaper packet
+Account HFC-742018 / Fleet mileage review
+
+VEHICLE MILEAGE SUPPORT
+Prepared 11/02/2025 09:14 CST
+
+| UNIT | VIN suffix M315195 | Mack | Fleet ref FLT-883 |
+| :--- | :--- | :--- | :--- |
+| **1695** <br> continued | Plate AP17637 | linehaul / Toledo OH | Quarter: 2025 Q3 |
+
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
+
+| JURISDICTION AND SOURCE NOTE | ACCEPTED / IDENTIFIED MILES | EXCEPTION / UNIDENTIFIED MILES | REPORTED JURISDICTION TOTAL |
+| :--- | :---: | :---: | :---: |
+| **North Dakota** <br> telematics accepted; odometer tie-out reviewed | 3,420.7 | 0.0 | 3,420.7 |
+| **Ohio** <br> telematics accepted; odometer tie-out reviewed | 4,042.5 | 0.0 | 4,042.5 |
+| **Oklahoma** <br> manual correction retained in quarter workpaper | 4,930.4 | 220.4 | 5,150.8 |
+| **Oregon** <br> trip-sheet and dispatch legs reconciled | 6,030.0 | 0.0 | 6,030.0 |
+| **Tennessee** <br> manual correction retained in quarter workpaper | 198.6 | 0.0 | 198.6 |
+| **Texas** <br> manual correction retained in quarter workpaper | 2,555.4 | 0.0 | 2,555.4 |
+| **Utah** <br> trip-sheet and dispatch legs reconciled | 863.7 | 199.9 | 1,063.6 |
+| **Virginia** <br> E-ZPass and fuel stop support reviewed | 2,240.4 | 0.0 | 2,240.4 |
+| **Washington** <br> cross-border segment verified from GPS batch | 234.9 | 0.0 | 234.9 |
+| **West Virginia** <br> trip-sheet and dispatch legs reconciled | 6,284.0 | 3.8 | 6,287.8 |
+| **Wyoming** <br> manual correction retained in quarter workpaper | 853.0 | 116.5 | 969.5 |
+
+Page 113
 
 # Page 114
 
-Generated: 11/02/2025 09:14 AM CST                                      Prairie Route Carriers Inc
-                                                                        1914 WESTFIELD CROSSING
-                                                                           PLAINFIELD, IL 60544
-                                                                                   312-555-0124
+Hearthline Freight Cooperative                                                      VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                                                     Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
 
-# IFTA Mileage: All trucks - 2025 - Q 4
-### 7/1/2025 - 9/30/2025
+__________________________________________________________________________________________________________________
 
-## Vehicle: 8120 continued
+| UNIT | VIN suffix F747112 | Kenworth | Fleet ref FLT-937 |
+| **992** | Plate AP12974 | linehaul / Joliet IL | Quarter: 2025 Q3 |
+__________________________________________________________________________________________________________________
 
-| # | State | Identified Miles | Unidentified Miles | Total |
-|---|---|---|---|---|
-| 30 | Tennessee | 6235.6 | 0.0 | 6235.6 |
-| 31 | Texas | 188.1 | 0.0 | 188.1 |
-| 32 | Utah | 1925.2 | 0.0 | 1925.2 |
-| 33 | Washington | 5438.9 | 80.6 | 5519.5 |
-| 34 | West Virginia | 4957.9 | 0.0 | 4957.9 |
-| 35 | Wisconsin | 4586.9 | 0.0 | 4586.9 |
-| 36 | Wyoming | 5731.5 | 0.0 | 5731.5 |
-| | **Total** | **124825.0** | **1192.1** | **126017.1** |
+Mileage jurisdictions for this unit are listed below. The unit number is inherited by every row on this page.
+
+| JURISDICTION AND SOURCE NOTE | ACCEPTED / IDENTIFIED MILES | EXCEPTION / UNIDENTIFIED MILES | REPORTED JURISDICTION TOTAL |
+| :--- | :---: | :---: | :---: |
+| **Alabama** <br> trip-sheet and dispatch legs reconciled | 1,729.2 | 0.0 | 1,729.2 |
+| **Arkansas** <br> telematics accepted; odometer tie-out reviewed | 3,678.9 | 0.0 | 3,678.9 |
+| **California** <br> route exception cleared by mileage desk | 4,978.9 | 360.5 | 5,339.4 |
+| **Colorado** <br> telematics accepted; odometer tie-out reviewed | 2,689.5 | 290.8 | 2,980.3 |
+| **Connecticut** <br> manual correction retained in quarter workpaper | 140.6 | 0.0 | 140.6 |
+| **Florida** <br> route exception cleared by mileage desk | 3,780.8 | 222.1 | 4,002.9 |
+| **Georgia** <br> telematics accepted; odometer tie-out reviewed | 120.4 | 0.0 | 120.4 |
+| **Idaho** <br> E-ZPass and fuel stop support reviewed | 3,398.3 | 0.0 | 3,398.3 |
+| **Illinois** <br> E-ZPass and fuel stop support reviewed | 789.4 | 0.0 | 789.4 |
+| **Indiana** <br> E-ZPass and fuel stop support reviewed | 1,789.8 | 233.6 | 2,023.4 |
+| **Iowa** <br> cross-border segment verified from GPS batch | 4,598.7 | 0.0 | 4,598.7 |
+| **Kansas** <br> trip-sheet and dispatch legs reconciled | 5,366.5 | 0.0 | 5,366.5 |
 
 <br>
-<p align="right">Page 114 of 124</p>
+
+### Unit quarter tie-out
+Accepted: 118,622.6  
+Exception: 2,013.7  
+Reported: 120,636.3  
+
+<br>
+
+### Fuel-card reconciliation sample
+| JUR | GALLONS | AMOUNT | NOTE |
+| :--- | :---: | :---: | :--- |
+| PA | 384.2 | $1,681.56 | fuel only - not a mileage jurisdiction row |
+| TX | 174.4 | $663.92 | fuel only - not a mileage jurisdiction row |
+| GA | 153.6 | $577.05 | fuel only - not a mileage jurisdiction row |
+
+<br>
+<br>
+
+Page 114
 
 # Page 115
 
-#,State,Identified Miles,Unidentified Miles,Total
-1,Alabama,4544.2,0.0,4544.2
-2,Arkansas,1733.8,0.0,1733.8
-3,Colorado,1152.7,0.0,1152.7
-4,Connecticut,5764.9,0.0,5764.9
-5,Florida,6364.4,0.0,6364.4
-6,Georgia,2501.3,0.0,2501.3
-7,Illinois,4642.3,0.0,4642.3
-8,Indiana,5253.1,0.0,5253.1
-9,Iowa,3889.0,0.0,3889.0
-10,Kansas,827.6,0.0,827.6
-11,Louisiana,6573.8,273.7,6847.5
-12,Maryland,734.4,0.0,734.4
-13,Michigan,2927.1,0.0,2927.1
-14,Minnesota,6262.3,0.0,6262.3
-15,Mississippi,4483.7,0.0,4483.7
-16,Missouri,326.1,0.0,326.1
-17,Montana,151.8,0.0,151.8
-18,Nebraska,2310.3,0.0,2310.3
-19,New Jersey,4147.7,0.0,4147.7
-20,New Mexico,4388.3,0.0,4388.3
-21,North Carolina,1619.1,0.0,1619.1
-22,North Dakota,2878.3,0.0,2878.3
-23,Ohio,5690.1,0.0,5690.1
-24,Oklahoma,4426.8,121.6,4548.4
-25,Oregon,5181.4,0.0,5181.4
-26,Pennsylvania,97.4,0.0,97.4
-27,South Carolina,48.8,0.0,48.8
-28,Tennessee,2465.6,0.0,2465.6
-29,Utah,4371.6,249.7,4621.3
+Hearthline Freight Cooperative                                              VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                                             Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
+
+_________________________________________________________________________________________________________
+| UNIT                     | VIN suffix F747112        | Kenworth                  | Fleet ref FLT-937  |
+| 992                      | Plate AP12974             | linehaul / Joliet IL      | Quarter: 2025 Q3   |
+| continued                |                           |                           |                    |
+_________________________________________________________________________________________________________
+
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
+
+JURISDICTION AND SOURCE NOTE,ACCEPTED / IDENTIFIED MILES,EXCEPTION / UNIDENTIFIED MILES,REPORTED JURISDICTION TOTAL
+"Kentucky\ncross-border segment verified from GPS batch","6,204.7",0.0,"6,204.7"
+"Louisiana\ncross-border segment verified from GPS batch",951.7,0.0,951.7
+"Maryland\ntrip-sheet and dispatch legs reconciled",50.3,61.9,112.2
+"Minnesota\ncross-border segment verified from GPS batch","2,579.1",0.0,"2,579.1"
+"Montana\ntelematics accepted; odometer tie-out reviewed","5,205.8",0.0,"5,205.8"
+"Nebraska\nmanual correction retained in quarter workpaper","1,653.9",342.1,"1,996.0"
+"New Jersey\nroute exception cleared by mileage desk","6,982.8",0.0,"6,982.8"
+"New Mexico\nE-ZPass and fuel stop support reviewed",70.4,0.0,70.4
+"New York\ntrip-sheet and dispatch legs reconciled","3,331.4",0.0,"3,331.4"
+"North Carolina\nmanual correction retained in quarter workpaper","2,552.0",131.2,"2,683.2"
+"North Dakota\nmanual correction retained in quarter workpaper","6,281.5",0.0,"6,281.5"
+"Ohio\ntelematics accepted; odometer tie-out reviewed","2,094.3",0.0,"2,094.3"
+
+Page 115
 
 # Page 116
 
-#,State,Identified Miles,Unidentified Miles,Total
-30,West Virginia,1924.9,0.0,1924.9
-31,Wisconsin,388.6,0.0,388.6
-32,Wyoming,2661.4,106.0,2767.4
-,Total,100732.8,751.0,101483.8
+Hearthline Freight Cooperative                                                 VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                                                Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
+
+________________________________________________________________________________________________________
+
+| UNIT <br><br> **992** <br> continued | VIN suffix F747112 <br> Plate AP12974 | Kenworth <br> linehaul / Joliet IL | Fleet ref FLT-937 <br> Quarter: 2025 Q3 |
+| :--- | :--- | :--- | :--- |
+
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
+
+| JURISDICTION AND SOURCE NOTE | ACCEPTED / IDENTIFIED MILES | EXCEPTION / UNIDENTIFIED MILES | REPORTED JURISDICTION TOTAL |
+| :--- | :---: | :---: | :---: |
+| **Oklahoma** <br> telematics accepted; odometer tie-out reviewed | 7,025.0 | 0.0 | 7,025.0 |
+| **Oregon** <br> E-ZPass and fuel stop support reviewed | 4,939.1 | 0.0 | 4,939.1 |
+| **Pennsylvania** <br> trip-sheet and dispatch legs reconciled | 6,482.6 | 0.0 | 6,482.6 |
+| **Tennessee** <br> manual correction retained in quarter workpaper | 6,323.6 | 0.0 | 6,323.6 |
+| **Texas** <br> cross-border segment verified from GPS batch | 4,518.4 | 0.0 | 4,518.4 |
+| **Utah** <br> E-ZPass and fuel stop support reviewed | 2,278.7 | 0.0 | 2,278.7 |
+| **Virginia** <br> manual correction retained in quarter workpaper | 4,731.5 | 0.0 | 4,731.5 |
+| **Washington** <br> telematics accepted; odometer tie-out reviewed | 2,297.6 | 0.0 | 2,297.6 |
+| **West Virginia** <br> route exception cleared by mileage desk | 1,571.3 | 0.0 | 1,571.3 |
+| **Wisconsin** <br> trip-sheet and dispatch legs reconciled | 6,895.6 | 371.5 | 7,267.1 |
+| **Wyoming** <br> route exception cleared by mileage desk | 540.3 | 0.0 | 540.3 |
+
+<br><br><br>
+Page 116
 
 # Page 117
 
-Generated: 11/02/2025 09:14 AM CST
+Hearthline Freight Cooperative                          VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                         Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
+____________________________________________________________________________________
 
-                                                          Prairie Route Carriers Inc
-                                                             1917 WESTFIELD CROSSING
-                                                                PLAINFIELD, IL 60544
-                                                                        312-555-0127
+| UNIT | VIN suffix X470799 | Freightliner | Fleet ref FLT-354 |
+| **202** | Plate AP88525 | regional / Kansas City MO | Quarter: 2025 Q3 |
+____________________________________________________________________________________
 
-                     IFTA Mileage: All trucks - 2025 - Q 4
-                              7/1/2025 - 9/30/2025
+Mileage jurisdictions for this unit are listed below. The unit number is inherited by every row on this page.
 
-                                 Vehicle: 3139
+| JURISDICTION AND SOURCE NOTE | ACCEPTED / IDENTIFIED MILES | EXCEPTION / UNIDENTIFIED MILES | REPORTED JURISDICTION TOTAL |
+| :--- | ---: | ---: | ---: |
+| **Alabama** <br> manual correction retained in quarter workpaper | 2,696.5 | 0.0 | 2,696.5 |
+| **Arizona** <br> trip-sheet and dispatch legs reconciled | 3,450.5 | 0.0 | 3,450.5 |
+| **Arkansas** <br> manual correction retained in quarter workpaper | 4,984.3 | 198.2 | 5,182.5 |
+| **California** <br> route exception cleared by mileage desk | 5,231.0 | 0.0 | 5,231.0 |
+| **Colorado** <br> telematics accepted; odometer tie-out reviewed | 252.2 | 359.6 | 611.8 |
+| **Connecticut** <br> trip-sheet and dispatch legs reconciled | 4,082.9 | 0.0 | 4,082.9 |
+| **Delaware** <br> E-ZPass and fuel stop support reviewed | 2,843.4 | 0.0 | 2,843.4 |
+| **Florida** <br> telematics accepted; odometer tie-out reviewed | 6,849.5 | 7.4 | 6,856.9 |
+| **Georgia** <br> E-ZPass and fuel stop support reviewed | 5,350.8 | 0.0 | 5,350.8 |
+| **Idaho** <br> manual correction retained in quarter workpaper | 6,024.9 | 0.0 | 6,024.9 |
+| **Illinois** <br> telematics accepted; odometer tie-out reviewed | 6,153.5 | 0.0 | 6,153.5 |
+| **Indiana** <br> telematics accepted; odometer tie-out reviewed | 68.9 | 131.9 | 200.8 |
 
-| # | State | Identified Miles | Unidentified Miles | Total |
-|---|---|---|---|---|
-| 1 | Alabama | 2477.4 | 0.0 | 2477.4 |
-| 2 | Arizona | 6302.7 | 0.0 | 6302.7 |
-| 3 | Arkansas | 4612.0 | 0.0 | 4612.0 |
-| 4 | California | 690.7 | 0.0 | 690.7 |
-| 5 | Colorado | 5360.1 | 0.0 | 5360.1 |
-| 6 | Connecticut | 5442.3 | 0.0 | 5442.3 |
-| 7 | Delaware | 6127.1 | 0.0 | 6127.1 |
-| 8 | Florida | 5309.2 | 0.0 | 5309.2 |
-| 9 | Georgia | 6517.7 | 0.0 | 6517.7 |
-| 10 | Idaho | 5259.9 | 0.0 | 5259.9 |
-| 11 | Illinois | 1383.1 | 112.5 | 1495.6 |
-| 12 | Indiana | 5417.4 | 0.0 | 5417.4 |
-| 13 | Iowa | 3829.3 | 0.0 | 3829.3 |
-| 14 | Kansas | 1553.9 | 0.0 | 1553.9 |
-| 15 | Kentucky | 6873.3 | 0.0 | 6873.3 |
-| 16 | Louisiana | 2748.7 | 0.0 | 2748.7 |
-| 17 | Maryland | 2624.9 | 0.0 | 2624.9 |
-| 18 | Michigan | 4989.2 | 0.0 | 4989.2 |
-| 19 | Minnesota | 7.3 | 0.0 | 7.3 |
-| 20 | Mississippi | 817.9 | 0.0 | 817.9 |
-| 21 | Missouri | 6120.1 | 0.0 | 6120.1 |
-| 22 | Montana | 6995.4 | 0.0 | 6995.4 |
-| 23 | Nebraska | 3012.9 | 0.0 | 3012.9 |
-| 24 | New Jersey | 2049.6 | 0.0 | 2049.6 |
-| 25 | New Mexico | 39.7 | 0.0 | 39.7 |
-| 26 | New York | 5046.2 | 0.0 | 5046.2 |
-| 27 | North Carolina | 82.0 | 0.0 | 82.0 |
-| 28 | North Dakota | 4344.6 | 0.0 | 4344.6 |
-| 29 | Ohio | 2715.7 | 0.0 | 2715.7 |
+____________________________________________________________________________________
 
-                                                                    Page 117 of 124
+**Unit quarter tie-out**
+Accepted: 136,396.6
+Exception: 3,018.7
+Reported: 139,415.3
+
+____________________________________________________________________________________
+
+**Fuel-card reconciliation sample**
+
+| JUR | GALLONS | AMOUNT | NOTE |
+| :--- | ---: | ---: | :--- |
+| IL | 158.8 | $699.28 | fuel only - not a mileage jurisdiction row |
+| TN | 222.8 | $900.91 | fuel only - not a mileage jurisdiction row |
+| TX | 121.0 | $462.05 | fuel only - not a mileage jurisdiction row |
+
+____________________________________________________________________________________
+Page 117
 
 # Page 118
 
-#,State,Identified Miles,Unidentified Miles,Total
-30,Oregon,5668.2,0.0,5668.2
-31,Pennsylvania,3654.3,375.9,4030.2
-32,South Carolina,3589.6,0.0,3589.6
-33,Tennessee,5700.7,0.0,5700.7
-34,Texas,2289.2,0.0,2289.2
-35,Utah,3693.2,0.0,3693.2
-36,Virginia,3872.6,0.0,3872.6
-37,Washington,6456.6,0.0,6456.6
-38,West Virginia,6021.7,0.0,6021.7
-39,Wisconsin,1534.2,0.0,1534.2
-40,Wyoming,5802.1,0.0,5802.1
-,Total,157032.7,488.4,157521.1
+Hearthline Freight Cooperative                                            VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                                           Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
+
+| UNIT | VIN suffix X470799 | Freightliner | Fleet ref FLT-354 |
+| :--- | :--- | :--- | :--- |
+| **202**<br>continued | Plate AP88525 | regional / Kansas City MO | Quarter: 2025 Q3 |
+
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
+
+| JURISDICTION AND SOURCE NOTE | ACCEPTED / IDENTIFIED MILES | EXCEPTION / UNIDENTIFIED MILES | REPORTED JURISDICTION TOTAL |
+| :--- | :---: | :---: | :---: |
+| **Iowa**<br>manual correction retained in quarter workpaper | 6,704.6 | 0.0 | 6,704.6 |
+| **Kansas**<br>telematics accepted; odometer tie-out reviewed | 615.7 | 363.5 | 979.2 |
+| **Kentucky**<br>E-ZPass and fuel stop support reviewed | 3,988.2 | 0.0 | 3,988.2 |
+| **Louisiana**<br>route exception cleared by mileage desk | 2,153.0 | 0.0 | 2,153.0 |
+| **Maryland**<br>cross-border segment verified from GPS batch | 5,603.7 | 272.5 | 5,876.2 |
+| **Michigan**<br>manual correction retained in quarter workpaper | 6,164.6 | 362.3 | 6,526.9 |
+| **Minnesota**<br>E-ZPass and fuel stop support reviewed | 1.0 | 140.6 | 141.6 |
+| **Mississippi**<br>manual correction retained in quarter workpaper | 4,645.7 | 0.0 | 4,645.7 |
+| **Montana**<br>telematics accepted; odometer tie-out reviewed | 154.5 | 182.3 | 336.8 |
+| **Nebraska**<br>trip-sheet and dispatch legs reconciled | 99.1 | 0.0 | 99.1 |
+| **Nevada**<br>telematics accepted; odometer tie-out reviewed | 76.8 | 0.0 | 76.8 |
+| **New Jersey**<br>route exception cleared by mileage desk | 2,218.1 | 310.3 | 2,528.4 |
+| **New Mexico**<br>cross-border segment verified from GPS batch | 6,221.5 | 0.0 | 6,221.5 |
+| **New York**<br>telematics accepted; odometer tie-out reviewed | 4,900.4 | 0.0 | 4,900.4 |
+
+Page 118
 
 # Page 119
 
-Generated: 11/02/2025 09:14 AM CST
-Prairie Route Carriers Inc
-1919 WESTFIELD CROSSING
-PLAINFIELD, IL 60544
-312-555-0129
+Hearthline Freight Cooperative
+Quarterly IFTA workpaper packet
+Account HFC-742018 / Fleet mileage review
 
-# IFTA Mileage: All trucks - 2025 - Q 4
-### 7/1/2025 - 9/30/2025
+VEHICLE MILEAGE SUPPORT
+Prepared 11/02/2025 09:14 CST
 
-## Vehicle: 973
+UNIT: 202 (continued)
+VIN suffix X470799
+Plate AP88525
+Freightliner regional / Kansas City MO
+Fleet ref FLT-354
+Quarter: 2025 Q3
 
-| # | State | Identified Miles | Unidentified Miles | Total |
-|---|---|---|---|---|
-| 1 | Arizona | 3090.0 | 335.0 | 3425.0 |
-| 2 | Arkansas | 2967.6 | 0.0 | 2967.6 |
-| 3 | California | 3769.8 | 0.0 | 3769.8 |
-| 4 | Colorado | 4907.9 | 0.0 | 4907.9 |
-| 5 | Connecticut | 691.7 | 135.6 | 827.3 |
-| 6 | Delaware | 52.9 | 0.0 | 52.9 |
-| 7 | Florida | 5329.3 | 211.0 | 5540.3 |
-| 8 | Georgia | 303.3 | 0.0 | 303.3 |
-| 9 | Idaho | 2168.1 | 334.7 | 2502.8 |
-| 10 | Illinois | 2169.8 | 353.9 | 2523.7 |
-| 11 | Indiana | 5511.8 | 0.0 | 5511.8 |
-| 12 | Kansas | 5198.3 | 0.0 | 5198.3 |
-| 13 | Louisiana | 4552.3 | 0.0 | 4552.3 |
-| 14 | Maryland | 6497.8 | 0.0 | 6497.8 |
-| 15 | Michigan | 5930.5 | 0.0 | 5930.5 |
-| 16 | Mississippi | 1762.6 | 0.0 | 1762.6 |
-| 17 | Missouri | 5962.0 | 0.0 | 5962.0 |
-| 18 | Montana | 2037.2 | 0.0 | 2037.2 |
-| 19 | Nebraska | 5027.1 | 0.0 | 5027.1 |
-| 20 | Nevada | 5675.1 | 352.7 | 6027.8 |
-| 21 | New Mexico | 1785.9 | 318.1 | 2104.0 |
-| 22 | New York | 4679.6 | 0.0 | 4679.6 |
-| 23 | North Carolina | 2698.4 | 0.0 | 2698.4 |
-| 24 | North Dakota | 3.1 | 0.0 | 3.1 |
-| 25 | Ohio | 672.8 | 237.4 | 910.2 |
-| 26 | Oklahoma | 3716.3 | 0.0 | 3716.3 |
-| 27 | Oregon | 2322.5 | 0.0 | 2322.5 |
-| 28 | South Carolina | 2149.6 | 0.0 | 2149.6 |
-| 29 | Tennessee | 2897.6 | 0.0 | 2897.6 |
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
 
-Page 119 of 124
+"JURISDICTION AND SOURCE NOTE","ACCEPTED / IDENTIFIED MILES","EXCEPTION / UNIDENTIFIED MILES","REPORTED JURISDICTION TOTAL"
+"North Carolina
+trip-sheet and dispatch legs reconciled","1,034.4","0.0","1,034.4"
+"North Dakota
+route exception cleared by mileage desk","1,143.4","0.0","1,143.4"
+"Ohio
+cross-border segment verified from GPS batch","2,283.9","0.0","2,283.9"
+"Oklahoma
+trip-sheet and dispatch legs reconciled","4,924.5","0.0","4,924.5"
+"Oregon
+manual correction retained in quarter workpaper","1,809.8","0.0","1,809.8"
+"Pennsylvania
+trip-sheet and dispatch legs reconciled","4,309.8","0.0","4,309.8"
+"South Carolina
+telematics accepted; odometer tie-out reviewed","6,174.5","0.0","6,174.5"
+"Tennessee
+cross-border segment verified from GPS batch","6,500.9","0.0","6,500.9"
+"Texas
+telematics accepted; odometer tie-out reviewed","3,692.1","0.0","3,692.1"
+"Utah
+manual correction retained in quarter workpaper","3,340.6","337.2","3,677.8"
+"Virginia
+telematics accepted; odometer tie-out reviewed","1,036.1","352.9","1,389.0"
+"Washington
+telematics accepted; odometer tie-out reviewed","5,266.8","0.0","5,266.8"
+"Wisconsin
+telematics accepted; odometer tie-out reviewed","1,549.3","0.0","1,549.3"
+"Wyoming
+telematics accepted; odometer tie-out reviewed","1,795.2","0.0","1,795.2"
+
+Page 119
 
 # Page 120
 
-Generated: 11/02/2025 09:14 AM CST                                       Prairie Route Carriers Inc
-                                                                            1920 WESTFIELD CROSSING
-                                                                               PLAINFIELD, IL 60544
-                                                                                       312-555-0130
+Hearthline Freight Cooperative                                       VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                                      Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
 
-                             IFTA Mileage: All trucks - 2025 - Q 4
-                                      7/1/2025 - 9/30/2025
+-----------------------------------------------------------------------------------------
+| UNIT             | VIN suffix Z624207       | Peterbilt            | Fleet ref FLT-811  |
+| **8958**         | Plate AP48920            | regional / Joliet IL | Quarter: 2025 Q3   |
+-----------------------------------------------------------------------------------------
 
-                                   Vehicle: 973 continued
+Mileage jurisdictions for this unit are listed below. The unit number is inherited by every row on this page.
 
-| # | State | Identified Miles | Unidentified Miles | Total |
-| :--- | :--- | :--- | :--- | :--- |
-| 30 | Texas | 159.9 | 0.0 | 159.9 |
-| 31 | Utah | 2207.4 | 0.0 | 2207.4 |
-| 32 | Virginia | 361.8 | 0.0 | 361.8 |
-| 33 | Washington | 97.2 | 0.0 | 97.2 |
-| 34 | West Virginia | 3583.2 | 0.0 | 3583.2 |
-| 35 | Wisconsin | 2134.5 | 0.0 | 2134.5 |
-| 36 | Wyoming | 3383.4 | 0.0 | 3383.4 |
-| | **Total** | **106458.3** | **2278.4** | **108736.7** |
+| JURISDICTION AND SOURCE NOTE | ACCEPTED / IDENTIFIED MILES | EXCEPTION / UNIDENTIFIED MILES | REPORTED JURISDICTION TOTAL |
+| :--- | :---: | :---: | :---: |
+| **Alabama** <br> trip-sheet and dispatch legs reconciled | 4,025.2 | 216.8 | 4,242.0 |
+| **Arizona** <br> manual correction retained in quarter workpaper | 6,985.6 | 0.0 | 6,985.6 |
+| **Arkansas** <br> cross-border segment verified from GPS batch | 1,138.2 | 0.0 | 1,138.2 |
+| **California** <br> E-ZPass and fuel stop support reviewed | 1,523.0 | 0.0 | 1,523.0 |
+| **Colorado** <br> E-ZPass and fuel stop support reviewed | 6,517.7 | 0.0 | 6,517.7 |
+| **Delaware** <br> manual correction retained in quarter workpaper | 6,221.3 | 0.0 | 6,221.3 |
+| **Florida** <br> manual correction retained in quarter workpaper | 21.8 | 51.4 | 73.2 |
+| **Idaho** <br> manual correction retained in quarter workpaper | 6,482.0 | 104.7 | 6,586.7 |
+| **Illinois** <br> trip-sheet and dispatch legs reconciled | 6,671.7 | 0.0 | 6,671.7 |
+| **Indiana** <br> route exception cleared by mileage desk | 3,919.1 | 0.0 | 3,919.1 |
+| **Kentucky** <br> E-ZPass and fuel stop support reviewed | 208.5 | 0.0 | 208.5 |
+| **Louisiana** <br> E-ZPass and fuel stop support reviewed | 6,426.9 | 246.0 | 6,672.9 |
 
-                                                                                    Page 120 of 124
+***
+
+### Unit quarter tie-out
+Accepted: 105,596.3  
+Exception: 1,216.2  
+Reported: 106,812.5  
+
+### Fuel-card reconciliation sample
+| JUR | GALLONS | AMOUNT | NOTE |
+| :--- | :---: | :---: | :--- |
+| MO | 55.3 | $218.16 | fuel only - not a mileage jurisdiction row |
+| MO | 109.7 | $448.90 | fuel only - not a mileage jurisdiction row |
+| MO | 305.1 | $1,361.24 | fuel only - not a mileage jurisdiction row |
+
+<br>
+
+Page 120
 
 # Page 121
 
-Generated: 11/02/2025 09:14 AM CST
+Hearthline Freight Cooperative                                              VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                                             Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
 
-Prairie Route Carriers Inc
-1921 WESTFIELD CROSSING
-PLAINFIELD, IL 60544
-312-555-0131
+--------------------------------------------------------------------------------------------------------
+UNIT: 8958 (continued)
+VIN suffix Z624207 | Plate AP48920
+Peterbilt regional / Joliet IL
+Fleet ref FLT-811 | Quarter: 2025 Q3
+--------------------------------------------------------------------------------------------------------
 
-### IFTA Mileage: All trucks - 2025 - Q 4
-#### 7/1/2025 - 9/30/2025
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
 
-### Vehicle: 2204
+"JURISDICTION AND SOURCE NOTE","ACCEPTED / IDENTIFIED MILES","EXCEPTION / UNIDENTIFIED MILES","REPORTED JURISDICTION TOTAL"
+"Maryland - telematics accepted; odometer tie-out reviewed","6,461.1","0.0","6,461.1"
+"Minnesota - telematics accepted; odometer tie-out reviewed","4,978.8","240.9","5,219.7"
+"Missouri - trip-sheet and dispatch legs reconciled","3,523.6","0.0","3,523.6"
+"Nebraska - E-ZPass and fuel stop support reviewed","116.2","39.4","155.6"
+"Nevada - telematics accepted; odometer tie-out reviewed","4,501.0","0.0","4,501.0"
+"New Jersey - manual correction retained in quarter workpaper","400.5","0.0","400.5"
+"New Mexico - E-ZPass and fuel stop support reviewed","6,278.1","0.0","6,278.1"
+"New York - E-ZPass and fuel stop support reviewed","4,621.4","0.0","4,621.4"
+"North Carolina - E-ZPass and fuel stop support reviewed","21.7","0.0","21.7"
+"Ohio - cross-border segment verified from GPS batch","3,075.4","0.0","3,075.4"
 
-| # | State | Identified Miles | Unidentified Miles | Total |
-|---|---|---|---|---|
-| 1 | Alabama | 2196.8 | 0.0 | 2196.8 |
-| 2 | Arizona | 4407.3 | 0.0 | 4407.3 |
-| 3 | Arkansas | 2377.1 | 86.3 | 2463.4 |
-| 4 | California | 5529.7 | 0.0 | 5529.7 |
-| 5 | Colorado | 5406.1 | 0.0 | 5406.1 |
-| 6 | Delaware | 6855.2 | 0.0 | 6855.2 |
-| 7 | Florida | 1546.1 | 0.0 | 1546.1 |
-| 8 | Georgia | 5779.4 | 0.0 | 5779.4 |
-| 9 | Idaho | 54.9 | 0.0 | 54.9 |
-| 10 | Illinois | 5454.0 | 312.3 | 5766.3 |
-| 11 | Indiana | 252.8 | 0.0 | 252.8 |
-| 12 | Kansas | 3776.4 | 0.0 | 3776.4 |
-| 13 | Kentucky | 5384.3 | 0.0 | 5384.3 |
-| 14 | Louisiana | 5329.3 | 18.4 | 5347.7 |
-| 15 | Maryland | 4478.4 | 0.0 | 4478.4 |
-| 16 | Michigan | 1847.2 | 0.0 | 1847.2 |
-| 17 | Minnesota | 5741.5 | 0.0 | 5741.5 |
-| 18 | Mississippi | 1998.2 | 0.0 | 1998.2 |
-| 19 | Montana | 4589.3 | 205.7 | 4795.0 |
-| 20 | Nebraska | 6535.1 | 0.0 | 6535.1 |
-| 21 | Nevada | 4801.0 | 0.0 | 4801.0 |
-| 22 | New Mexico | 5149.0 | 0.0 | 5149.0 |
-| 23 | North Carolina | 651.0 | 0.0 | 651.0 |
-| 24 | North Dakota | 4680.0 | 0.0 | 4680.0 |
-| 25 | Ohio | 5227.9 | 0.0 | 5227.9 |
-| 26 | Oklahoma | 4853.1 | 0.0 | 4853.1 |
-| 27 | Oregon | 4241.3 | 0.0 | 4241.3 |
-| 28 | Pennsylvania | 5796.8 | 0.0 | 5796.8 |
-| 29 | South Carolina | 2754.8 | 0.0 | 2754.8 |
-
-Page 121 of 124
+Page 121
 
 # Page 122
 
-Generated: 11/02/2025 09:14 AM CST
+Hearthline Freight Cooperative                      VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                     Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
 
-Prairie Route Carriers Inc
-1922 WESTFIELD CROSSING
-PLAINFIELD, IL 60544
-312-555-0132
+_________________________________________________________________________________________________
 
-# IFTA Mileage: All trucks - 2025 - Q 4
-### 7/1/2025 - 9/30/2025
+| UNIT | VIN suffix Z624207 | Peterbilt | Fleet ref FLT-811 |
+| **8958** | Plate AP48920 | regional / Joliet IL | Quarter: 2025 Q3 |
+| continued | | | |
+_________________________________________________________________________________________________
 
-## Vehicle: 2204 continued
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
 
-| # | State | Identified Miles | Unidentified Miles | Total |
-|---|---|---|---|---|
-| 30 | Tennessee | 4305.2 | 0.0 | 4305.2 |
-| 31 | Texas | 865.7 | 0.0 | 865.7 |
-| 32 | Utah | 460.7 | 0.0 | 460.7 |
-| 33 | Virginia | 1337.0 | 0.0 | 1337.0 |
-| 34 | Washington | 6425.1 | 0.0 | 6425.1 |
-| 35 | West Virginia | 5869.3 | 0.0 | 5869.3 |
-| 36 | Wisconsin | 95.4 | 0.0 | 95.4 |
-| 37 | Wyoming | 6515.3 | 312.0 | 6827.3 |
-| | Total | 143567.7 | 934.7 | 144502.4 |
+| JURISDICTION AND SOURCE NOTE | ACCEPTED / IDENTIFIED MILES | EXCEPTION / UNIDENTIFIED MILES | REPORTED JURISDICTION TOTAL |
+| :--- | :---: | :---: | :---: |
+| **Oklahoma** <br> cross-border segment verified from GPS batch | 3,118.2 | 164.1 | 3,282.3 |
+| **Oregon** <br> trip-sheet and dispatch legs reconciled | 55.5 | 152.9 | 208.4 |
+| **Pennsylvania** <br> trip-sheet and dispatch legs reconciled | 7,082.6 | 0.0 | 7,082.6 |
+| **South Carolina** <br> route exception cleared by mileage desk | 5,755.3 | 0.0 | 5,755.3 |
+| **Texas** <br> E-ZPass and fuel stop support reviewed | 1,369.8 | 0.0 | 1,369.8 |
+| **Utah** <br> manual correction retained in quarter workpaper | 1,679.5 | 0.0 | 1,679.5 |
+| **Washington** <br> E-ZPass and fuel stop support reviewed | 534.5 | 0.0 | 534.5 |
+| **West Virginia** <br> cross-border segment verified from GPS batch | 90.2 | 0.0 | 90.2 |
+| **Wyoming** <br> manual correction retained in quarter workpaper | 1,791.9 | 0.0 | 1,791.9 |
 
-Page 122 of 124
+<br>
+
+Page 122
 
 # Page 123
 
-Generated: 11/02/2025 09:14 AM CST,,,Prairie Route Carriers Inc
-,,,1923 WESTFIELD CROSSING
-,,,"PLAINFIELD, IL 60544"
-,,,312-555-0133
-,,,
-IFTA Mileage: All trucks - 2025 - Q 4,,,,
-7/1/2025 - 9/30/2025,,,,
-Vehicle: 674,,,,
-,,,
-#,State,Identified Miles,Unidentified Miles,Total
-1,Alabama,6798.9,0.0,6798.9
-2,Arizona,5097.5,0.0,5097.5
-3,California,2526.2,0.0,2526.2
-4,Colorado,3.8,0.0,3.8
-5,Connecticut,2701.4,0.0,2701.4
-6,Delaware,3247.3,0.0,3247.3
-7,Florida,764.5,0.0,764.5
-8,Idaho,30.5,0.0,30.5
-9,Illinois,4896.2,0.0,4896.2
-10,Indiana,3990.6,8.7,3999.3
-11,Iowa,1866.0,0.0,1866.0
-12,Kansas,3.2,0.0,3.2
-13,Kentucky,2874.7,0.0,2874.7
-14,Louisiana,6929.4,0.0,6929.4
-15,Maryland,7019.9,368.6,7388.5
-16,Michigan,2814.6,0.0,2814.6
-17,Minnesota,4531.0,0.0,4531.0
-18,Mississippi,3695.4,0.0,3695.4
-19,Montana,1050.7,55.8,1106.5
-20,Nebraska,2808.5,0.0,2808.5
-21,Nevada,2041.2,0.0,2041.2
-22,New Jersey,4271.1,0.0,4271.1
-23,New Mexico,91.8,102.0,193.8
-24,North Carolina,1633.7,0.0,1633.7
-25,North Dakota,6195.9,173.1,6369.0
-26,Ohio,2837.2,0.0,2837.2
-27,Oklahoma,5997.4,0.0,5997.4
-28,Oregon,626.4,0.0,626.4
-29,Pennsylvania,2971.6,0.0,2971.6
-,,,
-Page 123 of 124,,,,
+Hearthline Freight Cooperative
+Quarterly IFTA workpaper packet
+Account HFC-742018 / Fleet mileage review
+
+VEHICLE MILEAGE SUPPORT
+Prepared 11/02/2025 09:14 CST
+
+-----------------------------------------------------------------------------------------------------------------
+UNIT: 2431 | VIN suffix N225759, Plate AP55139 | Mack linehaul / Toledo OH | Fleet ref FLT-491, Quarter: 2025 Q3
+-----------------------------------------------------------------------------------------------------------------
+
+Mileage jurisdictions for this unit are listed below. The unit number is inherited by every row on this page.
+
+"JURISDICTION AND SOURCE NOTE","ACCEPTED / IDENTIFIED MILES","EXCEPTION / UNIDENTIFIED MILES","REPORTED JURISDICTION TOTAL"
+"Alabama
+route exception cleared by mileage desk","6,885.4","273.6","7,159.0"
+"Arizona
+route exception cleared by mileage desk","1,651.5","0.0","1,651.5"
+"Arkansas
+trip-sheet and dispatch legs reconciled","477.2","0.0","477.2"
+"California
+manual correction retained in quarter workpaper","4,135.8","0.0","4,135.8"
+"Colorado
+cross-border segment verified from GPS batch","2,259.6","0.0","2,259.6"
+"Connecticut
+telematics accepted; odometer tie-out reviewed","2,288.6","0.0","2,288.6"
+"Delaware
+telematics accepted; odometer tie-out reviewed","6,715.8","0.0","6,715.8"
+"Idaho
+route exception cleared by mileage desk","2,513.9","0.0","2,513.9"
+"Illinois
+cross-border segment verified from GPS batch","2,207.4","0.0","2,207.4"
+"Indiana
+manual correction retained in quarter workpaper","5,341.9","0.0","5,341.9"
+"Iowa
+cross-border segment verified from GPS batch","12.1","0.0","12.1"
+"Kansas
+route exception cleared by mileage desk","5,716.5","0.0","5,716.5"
+
+
+Unit quarter tie-out
+Accepted: 114,826.3
+Exception: 1,213.3
+Reported: 116,039.6
+
+
+Fuel-card reconciliation sample
+"JUR","GALLONS","AMOUNT","NOTE"
+"WI","219.2","$1,020.10","fuel only - not a mileage jurisdiction row"
+"KY","245.8","$1,078.72","fuel only - not a mileage jurisdiction row"
+"IN","165.8","$778.46","fuel only - not a mileage jurisdiction row"
+
+
+Page 123
 
 # Page 124
 
-Generated: 11/02/2025 09:14 AM CST
+Hearthline Freight Cooperative
+Quarterly IFTA workpaper packet
+Account HFC-742018 / Fleet mileage review
 
-                                                               Prairie Route Carriers Inc
-                                                              1924 WESTFIELD CROSSING
-                                                                 PLAINFIELD, IL 60544
-                                                                         312-555-0134
+VEHICLE MILEAGE SUPPORT
+Prepared 11/02/2025 09:14 CST
 
-                                   IFTA Mileage: All trucks - 2025 - Q 4
-                                           7/1/2025 - 9/30/2025
+-------------------------------------------------------------------------
+UNIT: 2431 continued
+VIN suffix N225759
+Plate AP55139
+Mack linehaul / Toledo OH
+Fleet ref FLT-491
+Quarter: 2025 Q3
+-------------------------------------------------------------------------
 
-                                               Vehicle: 674 continued
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
 
-| # | State | Identified Miles | Unidentified Miles | Total |
-|---|---|---|---|---|
-| 30 | South Carolina | 4775.4 | 0.0 | 4775.4 |
-| 31 | Tennessee | 885.5 | 0.0 | 885.5 |
-| 32 | Texas | 2021.0 | 0.0 | 2021.0 |
-| 33 | Washington | 6076.0 | 0.0 | 6076.0 |
-| 34 | West Virginia | 3998.7 | 0.0 | 3998.7 |
-| 35 | Wyoming | 1695.7 | 0.0 | 1695.7 |
-| | *Total* | 109768.9 | 708.2 | 110477.1 |
+JURISDICTION AND SOURCE NOTE,ACCEPTED / IDENTIFIED MILES,EXCEPTION / UNIDENTIFIED MILES,REPORTED JURISDICTION TOTAL
+"Kentucky
+telematics accepted; odometer tie-out reviewed",92.1,373.6,465.7
+"Louisiana
+manual correction retained in quarter workpaper","1,232.5",0.0,"1,232.5"
+"Maryland
+route exception cleared by mileage desk","3,577.7",0.0,"3,577.7"
+"Minnesota
+manual correction retained in quarter workpaper","2,613.2",0.0,"2,613.2"
+"Mississippi
+cross-border segment verified from GPS batch","4,652.0",0.0,"4,652.0"
+"Missouri
+trip-sheet and dispatch legs reconciled",41.5,64.1,105.6
+"Montana
+trip-sheet and dispatch legs reconciled","4,262.7",106.8,"4,369.5"
+"Nevada
+manual correction retained in quarter workpaper","2,310.8",0.0,"2,310.8"
+"New Jersey
+manual correction retained in quarter workpaper","2,764.7",122.0,"2,886.7"
+"New Mexico
+route exception cleared by mileage desk","6,847.6",0.0,"6,847.6"
+"New York
+cross-border segment verified from GPS batch","4,408.9",0.0,"4,408.9"
+"North Carolina
+telematics accepted; odometer tie-out reviewed","3,239.5",74.1,"3,313.6"
+
+Page 124
+
+# Page 125
+
+Hearthline Freight Cooperative                                               VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                                                Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
+
+-------------------------------------------------------------------------------------------------------------
+UNIT                          | VIN suffix N225759            | Mack                          | Fleet ref FLT-491
+2431                          | Plate AP55139                 | linehaul / Toledo OH          | Quarter: 2025 Q3
+continued                     |                               |                               |
+-------------------------------------------------------------------------------------------------------------
+
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
+
+JURISDICTION AND SOURCE NOTE,ACCEPTED / IDENTIFIED MILES,EXCEPTION / UNIDENTIFIED MILES,REPORTED JURISDICTION TOTAL
+"North Dakota
+manual correction retained in quarter workpaper",6765.3,0.0,6765.3
+"Ohio
+trip-sheet and dispatch legs reconciled",6844.4,0.0,6844.4
+"Oklahoma
+E-ZPass and fuel stop support reviewed",6589.3,0.0,6589.3
+"Pennsylvania
+telematics accepted; odometer tie-out reviewed",3299.2,0.0,3299.2
+"South Carolina
+manual correction retained in quarter workpaper",49.7,0.0,49.7
+"Tennessee
+manual correction retained in quarter workpaper",4318.7,157.6,4476.3
+"Utah
+telematics accepted; odometer tie-out reviewed",3761.1,41.5,3802.6
+"Virginia
+route exception cleared by mileage desk",1627.7,0.0,1627.7
+"Washington
+cross-border segment verified from GPS batch",2386.7,0.0,2386.7
+"West Virginia
+trip-sheet and dispatch legs reconciled",2010.4,0.0,2010.4
+"Wisconsin
+E-ZPass and fuel stop support reviewed",472.5,0.0,472.5
+"Wyoming
+cross-border segment verified from GPS batch",452.4,0.0,452.4
+
+Page 125
+
+# Page 126
+
+Hearthline Freight Cooperative
+Quarterly IFTA workpaper packet
+Account HFC-742018 / Fleet mileage review
+
+VEHICLE MILEAGE SUPPORT
+Prepared 11/02/2025 09:14 CST
+
+| UNIT | VIN suffix V528492 Plate AP62631 | International intermodal / Davenport IA | Fleet ref FLT-861 Quarter: 2025 Q3 |
+| :--- | :--- | :--- | :--- |
+| **362** | | | |
+
+Mileage jurisdictions for this unit are listed below. The unit number is inherited by every row on this page.
+
+| JURISDICTION AND SOURCE NOTE | ACCEPTED / IDENTIFIED MILES | EXCEPTION / UNIDENTIFIED MILES | REPORTED JURISDICTION TOTAL |
+| :--- | :---: | :---: | :---: |
+| **Alabama** <br>telematics accepted; odometer tie-out reviewed | 1,648.3 | 0.0 | 1,648.3 |
+| **Arizona** <br>telematics accepted; odometer tie-out reviewed | 4,242.0 | 0.0 | 4,242.0 |
+| **Arkansas** <br>route exception cleared by mileage desk | 6,136.3 | 0.0 | 6,136.3 |
+| **California** <br>E-ZPass and fuel stop support reviewed | 6,094.2 | 0.0 | 6,094.2 |
+| **Colorado** <br>route exception cleared by mileage desk | 105.4 | 0.0 | 105.4 |
+| **Connecticut** <br>manual correction retained in quarter workpaper | 7.7 | 0.0 | 7.7 |
+| **Delaware** <br>manual correction retained in quarter workpaper | 5,738.3 | 0.0 | 5,738.3 |
+| **Florida** <br>telematics accepted; odometer tie-out reviewed | 1,363.5 | 88.3 | 1,451.8 |
+| **Idaho** <br>manual correction retained in quarter workpaper | 4,351.5 | 379.9 | 4,731.4 |
+| **Illinois** <br>telematics accepted; odometer tie-out reviewed | 4,709.2 | 0.0 | 4,709.2 |
+| **Iowa** <br>cross-border segment verified from GPS batch | 4,725.6 | 0.0 | 4,725.6 |
+| **Kansas** <br>manual correction retained in quarter workpaper | 2,083.0 | 77.4 | 2,160.4 |
+
+**Unit quarter tie-out**
+* Accepted: 122,669.0
+* Exception: 1,443.1
+* Reported: 124,112.1
+
+**Fuel-card reconciliation sample**
+| JUR | GALLONS | AMOUNT | NOTE |
+| :--- | :---: | :---: | :--- |
+| IL | 47.8 | $220.24 | fuel only - not a mileage jurisdiction row |
+| IL | 197.1 | $728.44 | fuel only - not a mileage jurisdiction row |
+| IN | 354.6 | $1,485.06 | fuel only - not a mileage jurisdiction row |
+
+Page 126
+
+# Page 127
+
+"JURISDICTION AND SOURCE NOTE","ACCEPTED / IDENTIFIED MILES","EXCEPTION / UNIDENTIFIED MILES","REPORTED JURISDICTION TOTAL"
+"Louisiana
+telematics accepted; odometer tie-out reviewed","4,167.3","230.8","4,398.1"
+"Maryland
+route exception cleared by mileage desk","28.5","0.0","28.5"
+"Minnesota
+E-ZPass and fuel stop support reviewed","6,490.4","0.0","6,490.4"
+"Mississippi
+cross-border segment verified from GPS batch","7,055.9","0.0","7,055.9"
+"Montana
+trip-sheet and dispatch legs reconciled","1,477.6","0.0","1,477.6"
+"Nebraska
+cross-border segment verified from GPS batch","4,202.1","220.5","4,422.6"
+"Nevada
+cross-border segment verified from GPS batch","4,704.4","0.0","4,704.4"
+"New Jersey
+telematics accepted; odometer tie-out reviewed","5,271.0","0.0","5,271.0"
+"New York
+trip-sheet and dispatch legs reconciled","5,428.0","0.0","5,428.0"
+"North Carolina
+manual correction retained in quarter workpaper","2,496.9","83.2","2,580.1"
+"North Dakota
+E-ZPass and fuel stop support reviewed","7,058.0","0.0","7,058.0"
+
+# Page 128
+
+Hearthline Freight Cooperative
+Quarterly IFTA workpaper packet
+Account HFC-742018 / Fleet mileage review
+
+VEHICLE MILEAGE SUPPORT
+Prepared 11/02/2025 09:14 CST
+
++-----------------------+----------------------+---------------------------+-------------------+
+| UNIT                  | VIN suffix V528492   | International             | Fleet ref FLT-861 |
+| **362**               | Plate AP62631        | intermodal / Davenport IA | Quarter: 2025 Q3  |
+| continued             |                      |                           |                   |
++-----------------------+----------------------+---------------------------+-------------------+
+
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
+
+| JURISDICTION AND SOURCE NOTE | ACCEPTED / IDENTIFIED MILES | EXCEPTION / UNIDENTIFIED MILES | REPORTED JURISDICTION TOTAL |
+| :--- | ---: | ---: | ---: |
+| **Ohio**<br>telematics accepted; odometer tie-out reviewed | 7,042.6 | 0.0 | 7,042.6 |
+| **Oklahoma**<br>manual correction retained in quarter workpaper | 4,912.0 | 0.0 | 4,912.0 |
+| **Pennsylvania**<br>telematics accepted; odometer tie-out reviewed | 2,810.5 | 0.0 | 2,810.5 |
+| **South Carolina**<br>E-ZPass and fuel stop support reviewed | 2,140.0 | 0.0 | 2,140.0 |
+| **Tennessee**<br>telematics accepted; odometer tie-out reviewed | 2,979.9 | 0.0 | 2,979.9 |
+| **Texas**<br>manual correction retained in quarter workpaper | 4,235.2 | 0.0 | 4,235.2 |
+| **Utah**<br>telematics accepted; odometer tie-out reviewed | 2,012.7 | 0.0 | 2,012.7 |
+| **Virginia**<br>route exception cleared by mileage desk | 4,763.0 | 0.0 | 4,763.0 |
+| **Washington**<br>cross-border segment verified from GPS batch | 757.8 | 363.0 | 1,120.8 |
+| **West Virginia**<br>E-ZPass and fuel stop support reviewed | 0.0 | 0.0 | 0.0 |
+| **Wisconsin**<br>manual correction retained in quarter workpaper | 1,430.2 | 0.0 | 1,430.2 |
+
+Page 128
+
+# Page 129
+
+Hearthline Freight Cooperative,VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet,Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review,
+
+UNIT,VIN suffix,Plate,Info,Fleet ref,Quarter
+1240,G558606,AP70723,Kenworth intermodal / Joliet IL,FLT-435,2025 Q3
+
+Mileage jurisdictions for this unit are listed below. The unit number is inherited by every row on this page.
+
+JURISDICTION AND SOURCE NOTE,ACCEPTED / IDENTIFIED MILES,EXCEPTION / UNIDENTIFIED MILES,REPORTED JURISDICTION TOTAL
+"Alabama
+trip-sheet and dispatch legs reconciled",1727.9,0.0,1727.9
+"Arizona
+route exception cleared by mileage desk",6304.1,0.0,6304.1
+"Arkansas
+cross-border segment verified from GPS batch",5773.9,195.2,5969.1
+"California
+route exception cleared by mileage desk",1845.0,0.0,1845.0
+"Colorado
+route exception cleared by mileage desk",614.4,0.0,614.4
+"Delaware
+cross-border segment verified from GPS batch",4736.9,0.0,4736.9
+"Florida
+telematics accepted; odometer tie-out reviewed",6078.9,0.0,6078.9
+"Georgia
+manual correction retained in quarter workpaper",196.4,0.0,196.4
+"Idaho
+manual correction retained in quarter workpaper",2580.6,0.0,2580.6
+"Illinois
+route exception cleared by mileage desk",1140.9,223.6,1364.5
+"Indiana
+manual correction retained in quarter workpaper",3209.6,0.0,3209.6
+"Iowa
+E-ZPass and fuel stop support reviewed",62.9,297.5,360.4
+
+Unit quarter tie-out
+Accepted: 123,843.0
+Exception: 1,595.1
+Reported: 125,438.1
+
+Fuel-card reconciliation sample
+JUR,GALLONS,AMOUNT,NOTE
+GA,275.8,$1244.55,fuel only - not a mileage jurisdiction row
+IN,290.1,$1085.21,fuel only - not a mileage jurisdiction row
+GA,375.7,$1589.67,fuel only - not a mileage jurisdiction row
+
+Page 129
+
+# Page 130
+
+Hearthline Freight Cooperative
+Quarterly IFTA workpaper packet
+Account HFC-742018 / Fleet mileage review
+
+VEHICLE MILEAGE SUPPORT
+Prepared 11/02/2025 09:14 CST
+
+| | | | |
+| :--- | :--- | :--- | :--- |
+| UNIT<br>**1240**<br>continued | VIN suffix G558606<br>Plate AP70723 | Kenworth<br>intermodal / Joliet IL | Fleet ref FLT-435<br>Quarter: 2025 Q3 |
+
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
+
+| JURISDICTION AND SOURCE NOTE | ACCEPTED / IDENTIFIED MILES | EXCEPTION / UNIDENTIFIED MILES | REPORTED JURISDICTION TOTAL |
+| :--- | :--- | :--- | :--- |
+| **Kansas**<br>E-ZPass and fuel stop support reviewed | 5,084.4 | 0.0 | 5,084.4 |
+| **Kentucky**<br>manual correction retained in quarter workpaper | 1,773.0 | 0.0 | 1,773.0 |
+| **Louisiana**<br>cross-border segment verified from GPS batch | 5,659.5 | 0.0 | 5,659.5 |
+| **Maryland**<br>route exception cleared by mileage desk | 4,993.5 | 0.0 | 4,993.5 |
+| **Minnesota**<br>telematics accepted; odometer tie-out reviewed | 9.7 | 0.0 | 9.7 |
+| **Mississippi**<br>route exception cleared by mileage desk | 4,830.6 | 0.0 | 4,830.6 |
+| **Missouri**<br>manual correction retained in quarter workpaper | 5,744.2 | 191.8 | 5,936.0 |
+| **Montana**<br>telematics accepted; odometer tie-out reviewed | 5,112.8 | 89.9 | 5,202.7 |
+| **Nebraska**<br>cross-border segment verified from GPS batch | 129.7 | 0.0 | 129.7 |
+| **Nevada**<br>route exception cleared by mileage desk | 6,170.6 | 0.0 | 6,170.6 |
+| **New Jersey**<br>telematics accepted; odometer tie-out reviewed | 96.0 | 4.6 | 100.6 |
+| **New Mexico**<br>route exception cleared by mileage desk | 280.9 | 257.3 | 538.2 |
+| **New York**<br>E-ZPass and fuel stop support reviewed | 41.1 | 0.0 | 41.1 |
+
+Page 130
+
+# Page 131
+
+Hearthline Freight Cooperative                                VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                               Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
+__________________________________________________________________________________________________
+
+UNIT: 1240 | VIN suffix G558606 | Kenworth | Fleet ref FLT-435
+continued | Plate AP70723 | intermodal / Joliet IL | Quarter: 2025 Q3
+__________________________________________________________________________________________________
+
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
+
+"JURISDICTION AND SOURCE NOTE","ACCEPTED / IDENTIFIED MILES","EXCEPTION / UNIDENTIFIED MILES","REPORTED JURISDICTION TOTAL"
+"North Carolina\nroute exception cleared by mileage desk","3,512.0","0.0","3,512.0"
+"North Dakota\nroute exception cleared by mileage desk","3,117.2","0.0","3,117.2"
+"Ohio\ncross-border segment verified from GPS batch","98.2","335.2","433.4"
+"Oklahoma\nE-ZPass and fuel stop support reviewed","4,646.4","0.0","4,646.4"
+"Oregon\ntelematics accepted; odometer tie-out reviewed","63.0","0.0","63.0"
+"Pennsylvania\ntrip-sheet and dispatch legs reconciled","5,883.3","0.0","5,883.3"
+"South Carolina\nmanual correction retained in quarter workpaper","6,061.2","0.0","6,061.2"
+"Tennessee\ntelematics accepted; odometer tie-out reviewed","5,351.9","0.0","5,351.9"
+"Texas\nroute exception cleared by mileage desk","6,538.8","0.0","6,538.8"
+"Utah\ncross-border segment verified from GPS batch","2,639.5","0.0","2,639.5"
+"Virginia\nmanual correction retained in quarter workpaper","5,440.3","0.0","5,440.3"
+"Wisconsin\nroute exception cleared by mileage desk","6,137.3","0.0","6,137.3"
+"Wyoming\nmanual correction retained in quarter workpaper","156.4","0.0","156.4"
+
+Page 131
+
+# Page 132
+
+Hearthline Freight Cooperative                     VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                   Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
+
+________________________________________________________________________________
+
+UNIT: 904
+VIN suffix L338521
+Plate AP18746
+International regional / Memphis TN
+Fleet ref FLT-722
+Quarter: 2025 Q3
+
+________________________________________________________________________________
+
+Mileage jurisdictions for this unit are listed below. The unit number is inherited by every row on this page.
+
+JURISDICTION AND SOURCE NOTE,ACCEPTED / IDENTIFIED MILES,EXCEPTION / UNIDENTIFIED MILES,REPORTED JURISDICTION TOTAL
+"Alabama
+cross-border segment verified from GPS batch",22.7,0.0,22.7
+"Arizona
+trip-sheet and dispatch legs reconciled",59.1,0.0,59.1
+"California
+route exception cleared by mileage desk","5,897.4",0.0,"5,897.4"
+"Colorado
+E-ZPass and fuel stop support reviewed","4,327.7",0.0,"4,327.7"
+"Connecticut
+E-ZPass and fuel stop support reviewed","6,391.1",0.0,"6,391.1"
+"Florida
+manual correction retained in quarter workpaper","2,988.2",0.0,"2,988.2"
+"Georgia
+cross-border segment verified from GPS batch",83.3,85.4,168.7
+"Illinois
+trip-sheet and dispatch legs reconciled","1,252.9",0.0,"1,252.9"
+"Indiana
+route exception cleared by mileage desk","4,039.4",0.0,"4,039.4"
+"Iowa
+route exception cleared by mileage desk","5,059.4",0.0,"5,059.4"
+"Kansas
+cross-border segment verified from GPS batch","5,228.3",0.0,"5,228.3"
+"Louisiana
+cross-border segment verified from GPS batch","2,708.6",81.4,"2,790.0"
+
+Unit quarter tie-out
+Accepted: 100,116.9
+Exception: 1,269.1
+Reported: 101,386.0
+
+Fuel-card reconciliation sample
+JUR,GALLONS,AMOUNT,NOTE
+IN,78.8,$306.66,fuel only - not a mileage jurisdiction row
+IL,176.7,$668.18,fuel only - not a mileage jurisdiction row
+IN,327.9,$1,384.92,fuel only - not a mileage jurisdiction row
+
+Page 132
+
+# Page 133
+
+JURISDICTION AND SOURCE NOTE,ACCEPTED / IDENTIFIED MILES,EXCEPTION / UNIDENTIFIED MILES,REPORTED JURISDICTION TOTAL
+"Maryland
+route exception cleared by mileage desk",1197.1,0.0,1197.1
+"Minnesota
+telematics accepted; odometer tie-out reviewed",373.2,0.0,373.2
+"Mississippi
+cross-border segment verified from GPS batch",3937.2,0.0,3937.2
+"Montana
+cross-border segment verified from GPS batch",4252.3,0.0,4252.3
+"Nebraska
+route exception cleared by mileage desk",1925.7,0.0,1925.7
+"Nevada
+trip-sheet and dispatch legs reconciled",6979.4,0.0,6979.4
+"New York
+manual correction retained in quarter workpaper",840.2,368.3,1208.5
+"North Carolina
+cross-border segment verified from GPS batch",0.6,0.0,0.6
+"North Dakota
+manual correction retained in quarter workpaper",6262.0,0.0,6262.0
+"Ohio
+manual correction retained in quarter workpaper",4676.3,0.0,4676.3
+
+# Page 134
+
+Hearthline Freight Cooperative
+Quarterly IFTA workpaper packet
+Account HFC-742018 / Fleet mileage review
+
+VEHICLE MILEAGE SUPPORT
+Prepared 11/02/2025 09:14 CST
+
+| | | | |
+| :--- | :--- | :--- | :--- |
+| **UNIT**<br><br>**904**<br><br>continued | VIN suffix L338521<br>Plate AP18746 | International<br>regional / Memphis TN | Fleet ref FLT-722<br>Quarter: 2025 Q3 |
+
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
+
+| JURISDICTION AND SOURCE NOTE | ACCEPTED / IDENTIFIED MILES | EXCEPTION / UNIDENTIFIED MILES | REPORTED JURISDICTION TOTAL |
+| :--- | :---: | :---: | :---: |
+| **Oklahoma**<br>trip-sheet and dispatch legs reconciled | 2.5 | 121.7 | 124.2 |
+| **Oregon**<br>telematics accepted; odometer tie-out reviewed | 5,817.7 | 0.0 | 5,817.7 |
+| **Pennsylvania**<br>E-ZPass and fuel stop support reviewed | 3,989.8 | 296.6 | 4,286.4 |
+| **South Carolina**<br>telematics accepted; odometer tie-out reviewed | 8.3 | 0.0 | 8.3 |
+| **Texas**<br>telematics accepted; odometer tie-out reviewed | 3,528.9 | 0.0 | 3,528.9 |
+| **Utah**<br>telematics accepted; odometer tie-out reviewed | 5,846.3 | 0.0 | 5,846.3 |
+| **Washington**<br>route exception cleared by mileage desk | 2,682.1 | 0.0 | 2,682.1 |
+| **West Virginia**<br>route exception cleared by mileage desk | 5,014.6 | 0.0 | 5,014.6 |
+| **Wisconsin**<br>telematics accepted; odometer tie-out reviewed | 1,507.3 | 0.0 | 1,507.3 |
+| **Wyoming**<br>E-ZPass and fuel stop support reviewed | 3,217.3 | 315.7 | 3,533.0 |
+
+Page 134
+
+# Page 135
+
+Hearthline Freight Cooperative
+Quarterly IFTA workpaper packet
+Account HFC-742018 / Fleet mileage review
+
+VEHICLE MILEAGE SUPPORT
+Prepared 11/02/2025 09:14 CST
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+UNIT: 7341 | VIN suffix H444451, Plate AP53742 | Freightliner spotter / Joliet IL | Fleet ref FLT-135, Quarter: 2025 Q3
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+Mileage jurisdictions for this unit are listed below. The unit number is inherited by every row on this page.
+
+JURISDICTION AND SOURCE NOTE,ACCEPTED / IDENTIFIED MILES,EXCEPTION / UNIDENTIFIED MILES,REPORTED JURISDICTION TOTAL
+"Alabama
+telematics accepted; odometer tie-out reviewed","2,571.6",0.0,"2,571.6"
+"Arizona
+manual correction retained in quarter workpaper","1,427.1",0.0,"1,427.1"
+"California
+route exception cleared by mileage desk","5,138.6",0.0,"5,138.6"
+"Colorado
+E-ZPass and fuel stop support reviewed","1,363.2",0.0,"1,363.2"
+"Connecticut
+cross-border segment verified from GPS batch","6,024.5",0.0,"6,024.5"
+"Delaware
+manual correction retained in quarter workpaper","2,058.7",0.0,"2,058.7"
+"Idaho
+cross-border segment verified from GPS batch","1,401.1",0.0,"1,401.1"
+"Illinois
+route exception cleared by mileage desk","4,806.8",0.0,"4,806.8"
+"Indiana
+cross-border segment verified from GPS batch","6,664.1",0.0,"6,664.1"
+"Iowa
+trip-sheet and dispatch legs reconciled","4,688.3",0.0,"4,688.3"
+"Louisiana
+trip-sheet and dispatch legs reconciled",752.4,0.0,752.4
+"Maryland
+manual correction retained in quarter workpaper","5,336.9",0.0,"5,336.9"
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+Unit quarter tie-out
+Accepted: 118,557.9
+Exception: 885.3
+Reported: 119,443.2
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+Fuel-card reconciliation sample
+
+JUR,GALLONS,AMOUNT,NOTE
+PA,220.9,$947.56,fuel only - not a mileage jurisdiction row
+IN,153.7,$596.39,fuel only - not a mileage jurisdiction row
+TX,233.4,$962.02,fuel only - not a mileage jurisdiction row
+
+Page 135
+
+# Page 136
+
+Hearthline Freight Cooperative                                          VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                                           Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
+
+____________________________________________________________________________________________________
+
+| UNIT          | VIN suffix H444451 | Freightliner       | Fleet ref FLT-135  |
+| 7341          | Plate AP53742      | spotter / Joliet IL| Quarter: 2025 Q3   |
+| continued     |                    |                    |                    |
+____________________________________________________________________________________________________
+
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
+
+| JURISDICTION AND SOURCE NOTE | ACCEPTED / IDENTIFIED MILES | EXCEPTION / UNIDENTIFIED MILES | REPORTED JURISDICTION TOTAL |
+| :--- | :---: | :---: | :---: |
+| **Michigan**<br>route exception cleared by mileage desk | 5,129.7 | 0.0 | 5,129.7 |
+| **Minnesota**<br>cross-border segment verified from GPS batch | 1,481.1 | 289.5 | 1,770.6 |
+| **Mississippi**<br>telematics accepted; odometer tie-out reviewed | 3,725.8 | 0.0 | 3,725.8 |
+| **Montana**<br>trip-sheet and dispatch legs reconciled | 5,948.4 | 0.0 | 5,948.4 |
+| **Nebraska**<br>route exception cleared by mileage desk | 6,480.5 | 0.0 | 6,480.5 |
+| **Nevada**<br>telematics accepted; odometer tie-out reviewed | 5,914.3 | 203.9 | 6,118.2 |
+| **New York**<br>trip-sheet and dispatch legs reconciled | 1,015.4 | 0.0 | 1,015.4 |
+| **North Carolina**<br>cross-border segment verified from GPS batch | 197.3 | 0.0 | 197.3 |
+| **North Dakota**<br>manual correction retained in quarter workpaper | 6,575.6 | 0.0 | 6,575.6 |
+| **Ohio**<br>manual correction retained in quarter workpaper | 5,806.9 | 0.0 | 5,806.9 |
+
+Page 136
+
+# Page 137
+
+Hearthline Freight Cooperative                  VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                 Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
+________________________________________________________________________________
+
+UNIT: 7341 (continued)
+VIN suffix: H444451
+Plate: AP53742
+Freightliner spotter / Joliet IL
+Fleet ref: FLT-135
+Quarter: 2025 Q3
+________________________________________________________________________________
+
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
+
+"JURISDICTION AND SOURCE NOTE","ACCEPTED / IDENTIFIED MILES","EXCEPTION / UNIDENTIFIED MILES","REPORTED JURISDICTION TOTAL"
+"Oklahoma
+cross-border segment verified from GPS batch","4,516.2","0.0","4,516.2"
+"South Carolina
+manual correction retained in quarter workpaper","6,022.7","311.9","6,334.6"
+"Tennessee
+cross-border segment verified from GPS batch","54.7","0.0","54.7"
+"Texas
+trip-sheet and dispatch legs reconciled","5,862.2","0.0","5,862.2"
+"Utah
+telematics accepted; odometer tie-out reviewed","6,993.9","0.0","6,993.9"
+"Virginia
+manual correction retained in quarter workpaper","4,169.7","0.0","4,169.7"
+"Washington
+route exception cleared by mileage desk","6.9","0.0","6.9"
+"West Virginia
+manual correction retained in quarter workpaper","2,424.1","0.0","2,424.1"
+"Wyoming
+trip-sheet and dispatch legs reconciled","3,999.2","80.0","4,079.2"
+
+Page 137
+
+# Page 138
+
+Hearthline Freight Cooperative **VEHICLE MILEAGE SUPPORT**
+Quarterly IFTA workpaper packet Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
+
+***
+
+| UNIT | VIN suffix N110899 Plate AP22759 | Mack yard relay / Joliet IL | Fleet ref FLT-465 Quarter: 2025 Q3 |
+| :--- | :--- | :--- | :--- |
+| **8920** | | | |
+
+***
+
+Mileage jurisdictions for this unit are listed below. The unit number is inherited by every row on this page.
+
+| JURISDICTION AND SOURCE NOTE | ACCEPTED / IDENTIFIED MILES | EXCEPTION / UNIDENTIFIED MILES | REPORTED JURISDICTION TOTAL |
+| :--- | :---: | :---: | :---: |
+| **Alabama** <br> telematics accepted; odometer tie-out reviewed | 6,469.5 | 0.0 | 6,469.5 |
+| **Arizona** <br> telematics accepted; odometer tie-out reviewed | 3,229.7 | 0.0 | 3,229.7 |
+| **California** <br> route exception cleared by mileage desk | 3,242.9 | 0.0 | 3,242.9 |
+| **Colorado** <br> telematics accepted; odometer tie-out reviewed | 497.2 | 0.0 | 497.2 |
+| **Connecticut** <br> route exception cleared by mileage desk | 2,268.0 | 0.0 | 2,268.0 |
+| **Delaware** <br> route exception cleared by mileage desk | 3,468.8 | 0.0 | 3,468.8 |
+| **Florida** <br> route exception cleared by mileage desk | 1,588.8 | 0.0 | 1,588.8 |
+| **Idaho** <br> manual correction retained in quarter workpaper | 6,962.9 | 0.0 | 6,962.9 |
+| **Illinois** <br> telematics accepted; odometer tie-out reviewed | 436.8 | 0.0 | 436.8 |
+| **Indiana** <br> telematics accepted; odometer tie-out reviewed | 1,156.1 | 0.0 | 1,156.1 |
+| **Iowa** <br> cross-border segment verified from GPS batch | 1,282.1 | 0.0 | 1,282.1 |
+| **Kansas** <br> telematics accepted; odometer tie-out reviewed | 3,475.1 | 0.0 | 3,475.1 |
+
+***
+
+### Unit quarter tie-out
+Accepted: 122,664.5  
+Exception: 1,004.2  
+Reported: 123,668.7  
+
+***
+
+### Fuel-card reconciliation sample
+| JUR | GALLONS | AMOUNT | NOTE |
+| :--- | :---: | :---: | :--- |
+| PA | 325.6 | $1,538.86 | fuel only - not a mileage jurisdiction row |
+| OH | 126.1 | $458.61 | fuel only - not a mileage jurisdiction row |
+| PA | 198.5 | $832.70 | fuel only - not a mileage jurisdiction row |
+
+***
+Page 138
+
+# Page 139
+
+Hearthline Freight Cooperative
+Quarterly IFTA workpaper packet
+Account HFC-742018 / Fleet mileage review
+
+VEHICLE MILEAGE SUPPORT
+Prepared 11/02/2025 09:14 CST
+
+***
+
+| UNIT | VIN suffix N110899 | Mack | Fleet ref FLT-465 |
+| :--- | :--- | :--- | :--- |
+| **8920**<br>continued | Plate AP22759 | yard relay / Joliet IL | Quarter: 2025 Q3 |
+
+***
+
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
+
+| JURISDICTION AND SOURCE NOTE | ACCEPTED / IDENTIFIED MILES | EXCEPTION / UNIDENTIFIED MILES | REPORTED JURISDICTION TOTAL |
+| :--- | :---: | :---: | :---: |
+| **Kentucky**<br>route exception cleared by mileage desk | 5,882.4 | 0.0 | 5,882.4 |
+| **Louisiana**<br>cross-border segment verified from GPS batch | 6,785.0 | 0.0 | 6,785.0 |
+| **Maryland**<br>manual correction retained in quarter workpaper | 3,198.1 | 0.0 | 3,198.1 |
+| **Michigan**<br>telematics accepted; odometer tie-out reviewed | 4,950.0 | 0.0 | 4,950.0 |
+| **Minnesota**<br>route exception cleared by mileage desk | 3,832.4 | 0.0 | 3,832.4 |
+| **Mississippi**<br>trip-sheet and dispatch legs reconciled | 5,069.5 | 0.0 | 5,069.5 |
+| **Montana**<br>route exception cleared by mileage desk | 3,777.9 | 0.0 | 3,777.9 |
+| **Nebraska**<br>trip-sheet and dispatch legs reconciled | 52.8 | 0.0 | 52.8 |
+| **Nevada**<br>cross-border segment verified from GPS batch | 6,534.4 | 0.0 | 6,534.4 |
+| **New Mexico**<br>trip-sheet and dispatch legs reconciled | 6,919.1 | 154.9 | 7,074.0 |
+| **New York**<br>route exception cleared by mileage desk | 5,844.6 | 0.0 | 5,844.6 |
+| **North Carolina**<br>manual correction retained in quarter workpaper | 3,298.9 | 0.0 | 3,298.9 |
+| **North Dakota**<br>trip-sheet and dispatch legs reconciled | 6,172.3 | 294.3 | 6,466.6 |
+
+<br>
+
+Page 139
+
+# Page 140
+
+Hearthline Freight Cooperative                                          VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                                         Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
+
+____________________________________________________________________________________________________
+
+UNIT: 8920 (continued) | VIN suffix N110899, Plate AP22759 | Mack yard relay / Joliet IL | Fleet ref FLT-465, Quarter: 2025 Q3
+____________________________________________________________________________________________________
+
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
+
+"JURISDICTION AND SOURCE NOTE","ACCEPTED / IDENTIFIED MILES","EXCEPTION / UNIDENTIFIED MILES","REPORTED JURISDICTION TOTAL"
+"Ohio
+telematics accepted; odometer tie-out reviewed","4,852.5","0.0","4,852.5"
+"Oklahoma
+manual correction retained in quarter workpaper","3,896.8","259.6","4,156.4"
+"Oregon
+trip-sheet and dispatch legs reconciled","6,107.1","0.0","6,107.1"
+"Pennsylvania
+route exception cleared by mileage desk","865.5","0.0","865.5"
+"South Carolina
+trip-sheet and dispatch legs reconciled","551.9","147.8","699.7"
+"Tennessee
+telematics accepted; odometer tie-out reviewed","2,613.8","0.0","2,613.8"
+"Texas
+cross-border segment verified from GPS batch","3,570.2","0.0","3,570.2"
+"Virginia
+route exception cleared by mileage desk","1,664.5","147.6","1,812.1"
+"Washington
+telematics accepted; odometer tie-out reviewed","1,787.7","0.0","1,787.7"
+"West Virginia
+telematics accepted; odometer tie-out reviewed","102.0","0.0","102.0"
+"Wisconsin
+route exception cleared by mileage desk","43.5","0.0","43.5"
+"Wyoming
+manual correction retained in quarter workpaper","213.7","0.0","213.7"
+
+Page 140
+
+# Page 141
+
+Hearthline Freight Cooperative                                                      VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                                                     Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
+
+--------------------------------------------------------------------------------------------------------------------
+| UNIT                       | VIN suffix P135097          | International               | Fleet ref FLT-927           |
+| 9986                       | Plate AP17556               | dedicated / Davenport IA    | Quarter: 2025 Q3            |
+--------------------------------------------------------------------------------------------------------------------
+
+Mileage jurisdictions for this unit are listed below. The unit number is inherited by every row on this page.
+
+| JURISDICTION AND SOURCE NOTE | ACCEPTED / IDENTIFIED MILES | EXCEPTION / UNIDENTIFIED MILES | REPORTED JURISDICTION TOTAL |
+| :--- | :---: | :---: | :---: |
+| **Alabama** <br> trip-sheet and dispatch legs reconciled | 4,805.9 | 0.0 | 4,805.9 |
+| **Arizona** <br> trip-sheet and dispatch legs reconciled | 5,405.2 | 0.0 | 5,405.2 |
+| **Arkansas** <br> manual correction retained in quarter workpaper | 6.7 | 0.0 | 6.7 |
+| **California** <br> E-ZPass and fuel stop support reviewed | 1,630.2 | 0.0 | 1,630.2 |
+| **Colorado** <br> telematics accepted; odometer tie-out reviewed | 1,987.8 | 123.2 | 2,111.0 |
+| **Connecticut** <br> cross-border segment verified from GPS batch | 3,540.3 | 229.3 | 3,769.6 |
+| **Idaho** <br> E-ZPass and fuel stop support reviewed | 1,116.9 | 0.0 | 1,116.9 |
+| **Illinois** <br> manual correction retained in quarter workpaper | 6,033.9 | 0.0 | 6,033.9 |
+| **Indiana** <br> route exception cleared by mileage desk | 3,478.5 | 0.0 | 3,478.5 |
+| **Kansas** <br> trip-sheet and dispatch legs reconciled | 331.6 | 0.0 | 331.6 |
+| **Kentucky** <br> telematics accepted; odometer tie-out reviewed | 3.4 | 0.0 | 3.4 |
+| **Louisiana** <br> trip-sheet and dispatch legs reconciled | 5,314.9 | 0.0 | 5,314.9 |
+
+--------------------------------------------------------------------------------------------------------------------
+
+**Unit quarter tie-out**
+Accepted: 119,388.1
+Exception: 1,382.0
+Reported: 120,770.1
+
+**Fuel-card reconciliation sample**
+| JUR | GALLONS | AMOUNT | NOTE |
+| :--- | :---: | :---: | :--- |
+| IN | 111.2 | $477.92 | fuel only - not a mileage jurisdiction row |
+| TN | 364.3 | $1,728.47 | fuel only - not a mileage jurisdiction row |
+| TX | 277.8 | $1,158.85 | fuel only - not a mileage jurisdiction row |
+
+Page 141
+
+# Page 142
+
+Hearthline Freight Cooperative                          VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                         Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
+
+__________________________________________________________________________________________________
+
+| UNIT | VIN suffix P135097 | International | Fleet ref FLT-927 |
+| :--- | :--- | :--- | :--- |
+| **9986** <br> continued | Plate AP17556 | dedicated / Davenport IA | Quarter: 2025 Q3 |
+
+__________________________________________________________________________________________________
+
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
+
+| JURISDICTION AND SOURCE NOTE | ACCEPTED / IDENTIFIED MILES | EXCEPTION / UNIDENTIFIED MILES | REPORTED JURISDICTION TOTAL |
+| :--- | :---: | :---: | :---: |
+| **Michigan** <br> telematics accepted; odometer tie-out reviewed | 6,187.0 | 0.0 | 6,187.0 |
+| **Minnesota** <br> E-ZPass and fuel stop support reviewed | 6,248.1 | 0.0 | 6,248.1 |
+| **Mississippi** <br> E-ZPass and fuel stop support reviewed | 1,680.5 | 0.0 | 1,680.5 |
+| **Missouri** <br> E-ZPass and fuel stop support reviewed | 4,306.5 | 0.0 | 4,306.5 |
+| **Montana** <br> manual correction retained in quarter workpaper | 87.8 | 0.0 | 87.8 |
+| **Nebraska** <br> route exception cleared by mileage desk | 5,075.7 | 0.0 | 5,075.7 |
+| **Nevada** <br> manual correction retained in quarter workpaper | 6,828.9 | 0.0 | 6,828.9 |
+| **New Jersey** <br> telematics accepted; odometer tie-out reviewed | 2,941.1 | 0.0 | 2,941.1 |
+| **New Mexico** <br> cross-border segment verified from GPS batch | 2,183.4 | 181.9 | 2,365.3 |
+| **New York** <br> telematics accepted; odometer tie-out reviewed | 658.5 | 0.0 | 658.5 |
+| **North Carolina** <br> E-ZPass and fuel stop support reviewed | 69.2 | 0.0 | 69.2 |
+| **North Dakota** <br> telematics accepted; odometer tie-out reviewed | 4,032.9 | 0.0 | 4,032.9 |
 
 <br>
 <br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+
+Page 142
+
+# Page 143
+
+Hearthline Freight Cooperative
+Quarterly IFTA workpaper packet
+Account HFC-742018 / Fleet mileage review
+
+VEHICLE MILEAGE SUPPORT
+Prepared 11/02/2025 09:14 CST
+
+UNIT: 9986 (continued)
+VIN suffix P135097 | Plate AP17556
+International | dedicated / Davenport IA
+Fleet ref FLT-927 | Quarter: 2025 Q3
+
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
+
+"JURISDICTION AND SOURCE NOTE","ACCEPTED / IDENTIFIED MILES","EXCEPTION / UNIDENTIFIED MILES","REPORTED JURISDICTION TOTAL"
+"Ohio
+manual correction retained in quarter workpaper",6827.5,0.0,6827.5
+"Oregon
+route exception cleared by mileage desk",5471.1,230.3,5701.4
+"Pennsylvania
+cross-border segment verified from GPS batch",6545.1,0.0,6545.1
+"South Carolina
+telematics accepted; odometer tie-out reviewed",3655.2,240.8,3896.0
+"Tennessee
+manual correction retained in quarter workpaper",796.4,79.4,875.8
+"Texas
+E-ZPass and fuel stop support reviewed",4.2,0.0,4.2
+"Utah
+route exception cleared by mileage desk",74.6,0.0,74.6
+"Virginia
+route exception cleared by mileage desk",6878.5,0.0,6878.5
+"Washington
+E-ZPass and fuel stop support reviewed",1883.2,0.0,1883.2
+"West Virginia
+route exception cleared by mileage desk",4782.0,0.0,4782.0
+"Wisconsin
+telematics accepted; odometer tie-out reviewed",1734.8,0.0,1734.8
+"Wyoming
+telematics accepted; odometer tie-out reviewed",6780.6,297.1,7077.7
+
+Page 143
+
+# Page 144
+
+Hearthline Freight Cooperative                                                      VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                                                     Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
+__________________________________________________________________________________________________________________
+
++-----------------------+-----------------------+-----------------------+-----------------------+
+| UNIT                  | VIN suffix C357812    | Mack                  | Fleet ref FLT-166     |
+| **441**               | Plate AP27242         | spotter / Gary IN     | Quarter: 2025 Q3      |
++-----------------------+-----------------------+-----------------------+-----------------------+
+
+Mileage jurisdictions for this unit are listed below. The unit number is inherited by every row on this page.
+
+| JURISDICTION AND SOURCE NOTE | ACCEPTED / IDENTIFIED MILES | EXCEPTION / UNIDENTIFIED MILES | REPORTED JURISDICTION TOTAL |
+| :--- | :---: | :---: | :---: |
+| **Arizona** <br> trip-sheet and dispatch legs reconciled | 3,534.2 | 0.0 | 3,534.2 |
+| **Arkansas** <br> telematics accepted; odometer tie-out reviewed | 5,201.6 | 0.0 | 5,201.6 |
+| **California** <br> trip-sheet and dispatch legs reconciled | 6,528.7 | 0.0 | 6,528.7 |
+| **Colorado** <br> manual correction retained in quarter workpaper | 6.9 | 126.9 | 133.8 |
+| **Connecticut** <br> trip-sheet and dispatch legs reconciled | 2,949.4 | 0.0 | 2,949.4 |
+| **Delaware** <br> cross-border segment verified from GPS batch | 7,073.7 | 0.0 | 7,073.7 |
+| **Florida** <br> manual correction retained in quarter workpaper | 5,847.7 | 0.0 | 5,847.7 |
+| **Georgia** <br> trip-sheet and dispatch legs reconciled | 83.4 | 0.0 | 83.4 |
+| **Idaho** <br> manual correction retained in quarter workpaper | 2,158.6 | 0.0 | 2,158.6 |
+| **Illinois** <br> manual correction retained in quarter workpaper | 3,925.3 | 0.0 | 3,925.3 |
+| **Iowa** <br> trip-sheet and dispatch legs reconciled | 1,862.7 | 0.0 | 1,862.7 |
+| **Kansas** <br> manual correction retained in quarter workpaper | 1,325.5 | 0.0 | 1,325.5 |
+
 <br>
 
-                                                                          Page 124 of 124
+| **Unit quarter tie-out** | | **Fuel-card reconciliation sample** |
+| :--- | :--- | :--- |
+| Accepted: 96,637.6 | | JUR \| GALLONS \| AMOUNT \| NOTE |
+| Exception: 1,322.3 | | IL \| 319.0 \| $1,500.42 \| fuel only - not a mileage jurisdiction row |
+| Reported: 97,959.9 | | PA \| 51.3 \| $235.16 \| fuel only - not a mileage jurisdiction row |
+| | | OH \| 356.8 \| $1,349.55 \| fuel only - not a mileage jurisdiction row |
+
+<br>
+
+Page 144
+
+# Page 145
+
+Hearthline Freight Cooperative
+Quarterly IFTA workpaper packet
+Account HFC-742018 / Fleet mileage review
+
+VEHICLE MILEAGE SUPPORT
+Prepared 11/02/2025 09:14 CST
+
+-------------------------------------------------------------------------------------------------
+UNIT: 441 continued
+VIN suffix C357812 | Plate AP27242
+Mack | spotter / Gary IN
+Fleet ref FLT-166 | Quarter: 2025 Q3
+-------------------------------------------------------------------------------------------------
+
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
+
+JURISDICTION AND SOURCE NOTE,ACCEPTED / IDENTIFIED MILES,EXCEPTION / UNIDENTIFIED MILES,REPORTED JURISDICTION TOTAL
+"Kentucky
+telematics accepted; odometer tie-out reviewed",37.7,0.0,37.7
+"Louisiana
+E-ZPass and fuel stop support reviewed",576.5,49.6,626.1
+"Michigan
+trip-sheet and dispatch legs reconciled","3,671.7",0.0,"3,671.7"
+"Mississippi
+manual correction retained in quarter workpaper",80.8,271.2,352.0
+"Missouri
+telematics accepted; odometer tie-out reviewed",393.1,0.0,393.1
+"Montana
+cross-border segment verified from GPS batch","6,062.6",54.5,"6,117.1"
+"Nebraska
+trip-sheet and dispatch legs reconciled","6,666.6",0.0,"6,666.6"
+"New Jersey
+manual correction retained in quarter workpaper","6,681.0",0.0,"6,681.0"
+"New Mexico
+manual correction retained in quarter workpaper","2,449.1",0.0,"2,449.1"
+"New York
+E-ZPass and fuel stop support reviewed",4.4,364.3,368.7
+"North Carolina
+trip-sheet and dispatch legs reconciled","2,606.3",268.0,"2,874.3"
+
+Page 145
+
+# Page 146
+
+Hearthline Freight Cooperative                                       VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                                    Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
+
++-----------------------+-----------------------+-----------------------+-----------------------+
+| UNIT                  | VIN suffix C357812    | Mack                  | Fleet ref FLT-166     |
+| **441**               | Plate AP27242         | spotter / Gary IN     | Quarter: 2025 Q3      |
+| continued             |                       |                       |                       |
++-----------------------+-----------------------+-----------------------+-----------------------+
+
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
+
+| JURISDICTION AND SOURCE NOTE | ACCEPTED / IDENTIFIED MILES | EXCEPTION / UNIDENTIFIED MILES | REPORTED JURISDICTION TOTAL |
+| :--- | :---: | :---: | :---: |
+| **North Dakota**<br>route exception cleared by mileage desk | 905.6 | 0.0 | 905.6 |
+| **Oklahoma**<br>telematics accepted; odometer tie-out reviewed | 4,485.5 | 0.0 | 4,485.5 |
+| **Oregon**<br>route exception cleared by mileage desk | 3,058.7 | 0.0 | 3,058.7 |
+| **Pennsylvania**<br>cross-border segment verified from GPS batch | 500.6 | 0.0 | 500.6 |
+| **South Carolina**<br>manual correction retained in quarter workpaper | 3,201.1 | 0.0 | 3,201.1 |
+| **Texas**<br>cross-border segment verified from GPS batch | 982.8 | 0.0 | 982.8 |
+| **Utah**<br>telematics accepted; odometer tie-out reviewed | 93.8 | 100.7 | 194.5 |
+| **Virginia**<br>E-ZPass and fuel stop support reviewed | 2,372.6 | 0.0 | 2,372.6 |
+| **Washington**<br>route exception cleared by mileage desk | 1,813.2 | 0.0 | 1,813.2 |
+| **West Virginia**<br>trip-sheet and dispatch legs reconciled | 5,075.4 | 0.0 | 5,075.4 |
+| **Wyoming**<br>manual correction retained in quarter workpaper | 4,420.8 | 87.1 | 4,507.9 |
+
+<br>
+
+Page 146
+
+# Page 147
+
+Hearthline Freight Cooperative                       VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                      Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
+_________________________________________________________________________________
+
+| UNIT | VIN suffix S688476 | Volvo | Fleet ref FLT-758 |
+| :--- | :--- | :--- | :--- |
+| **593** | Plate AP62329 | linehaul / Joliet IL | Quarter: 2025 Q3 |
+
+Mileage jurisdictions for this unit are listed below. The unit number is inherited by every row on this page.
+
+| JURISDICTION AND SOURCE NOTE | ACCEPTED / IDENTIFIED MILES | EXCEPTION / UNIDENTIFIED MILES | REPORTED JURISDICTION TOTAL |
+| :--- | :---: | :---: | :---: |
+| **Alabama** <br> cross-border segment verified from GPS batch | 2,151.9 | 0.0 | 2,151.9 |
+| **Arizona** <br> trip-sheet and dispatch legs reconciled | 5,100.0 | 0.0 | 5,100.0 |
+| **Arkansas** <br> trip-sheet and dispatch legs reconciled | 829.7 | 0.0 | 829.7 |
+| **California** <br> manual correction retained in quarter workpaper | 4,883.5 | 0.0 | 4,883.5 |
+| **Colorado** <br> E-ZPass and fuel stop support reviewed | 1,631.7 | 0.0 | 1,631.7 |
+| **Connecticut** <br> cross-border segment verified from GPS batch | 6,196.5 | 310.9 | 6,507.4 |
+| **Delaware** <br> trip-sheet and dispatch legs reconciled | 647.1 | 59.2 | 706.3 |
+| **Florida** <br> telematics accepted; odometer tie-out reviewed | 55.2 | 203.4 | 258.6 |
+| **Georgia** <br> route exception cleared by mileage desk | 126.8 | 0.0 | 126.8 |
+| **Idaho** <br> trip-sheet and dispatch legs reconciled | 777.8 | 0.0 | 777.8 |
+| **Illinois** <br> E-ZPass and fuel stop support reviewed | 5,663.3 | 0.0 | 5,663.3 |
+| **Indiana** <br> E-ZPass and fuel stop support reviewed | 6,772.1 | 13.9 | 6,786.0 |
+
+***
+
+### Unit quarter tie-out
+Accepted: 115,874.9
+Exception: 948.1
+Reported: 116,823.0
+
+### Fuel-card reconciliation sample
+| JUR | GALLONS | AMOUNT | NOTE |
+| :--- | :--- | :--- | :--- |
+| TX | 130.5 | $470.42 | fuel only - not a mileage jurisdiction row |
+| WI | 328.9 | $1,317.60 | fuel only - not a mileage jurisdiction row |
+| GA | 257.4 | $1,080.35 | fuel only - not a mileage jurisdiction row |
+
+<br>
+Page 147
+
+# Page 148
+
+Hearthline Freight Cooperative              VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet             Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
+
+--------------------------------------------------------------------------------
+UNIT: 593 (continued)
+VIN suffix S688476 | Plate AP62329
+Volvo | linehaul / Joliet IL
+Fleet ref FLT-758 | Quarter: 2025 Q3
+--------------------------------------------------------------------------------
+
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
+
+"JURISDICTION AND SOURCE NOTE","ACCEPTED / IDENTIFIED MILES","EXCEPTION / UNIDENTIFIED MILES","REPORTED JURISDICTION TOTAL"
+"Iowa
+cross-border segment verified from GPS batch","6,678.5","0.0","6,678.5"
+"Kansas
+manual correction retained in quarter workpaper","6,109.4","0.0","6,109.4"
+"Louisiana
+manual correction retained in quarter workpaper","787.8","0.0","787.8"
+"Maryland
+route exception cleared by mileage desk","4,571.5","0.0","4,571.5"
+"Michigan
+manual correction retained in quarter workpaper","4,885.0","80.9","4,965.9"
+"Minnesota
+trip-sheet and dispatch legs reconciled","4,619.8","0.0","4,619.8"
+"Mississippi
+E-ZPass and fuel stop support reviewed","6,941.3","0.0","6,941.3"
+"Missouri
+telematics accepted; odometer tie-out reviewed","1,912.0","0.0","1,912.0"
+"Nebraska
+telematics accepted; odometer tie-out reviewed","107.0","0.0","107.0"
+"Nevada
+trip-sheet and dispatch legs reconciled","2,392.3","163.6","2,555.9"
+"New Jersey
+manual correction retained in quarter workpaper","872.4","0.0","872.4"
+"New Mexico
+manual correction retained in quarter workpaper","9.5","0.0","9.5"
+"New York
+route exception cleared by mileage desk","3,553.1","0.0","3,553.1"
+"North Carolina
+route exception cleared by mileage desk","3,647.4","0.0","3,647.4"
+
+Page 148
+
+# Page 149
+
+Hearthline Freight Cooperative
+Quarterly IFTA workpaper packet
+Account HFC-742018 / Fleet mileage review
+
+VEHICLE MILEAGE SUPPORT
+Prepared 11/02/2025 09:14 CST
+
+UNIT: 593 (continued)
+VIN suffix S688476 | Plate AP62329
+Volvo | linehaul / Joliet IL
+Fleet ref FLT-758 | Quarter: 2025 Q3
+
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
+
+JURISDICTION AND SOURCE NOTE,ACCEPTED / IDENTIFIED MILES,EXCEPTION / UNIDENTIFIED MILES,REPORTED JURISDICTION TOTAL
+"North Dakota
+cross-border segment verified from GPS batch",97.2,0.0,97.2
+"Ohio
+E-ZPass and fuel stop support reviewed",105.0,0.0,105.0
+"Oklahoma
+cross-border segment verified from GPS batch",276.1,0.0,276.1
+"Oregon
+telematics accepted; odometer tie-out reviewed","5,182.6",0.0,"5,182.6"
+"Pennsylvania
+manual correction retained in quarter workpaper","3,827.9",0.0,"3,827.9"
+"South Carolina
+cross-border segment verified from GPS batch","5,429.5",0.0,"5,429.5"
+"Tennessee
+E-ZPass and fuel stop support reviewed","4,247.8",0.0,"4,247.8"
+"Texas
+trip-sheet and dispatch legs reconciled","1,083.5",0.0,"1,083.5"
+"Utah
+route exception cleared by mileage desk","1,432.2",0.0,"1,432.2"
+"Virginia
+E-ZPass and fuel stop support reviewed",104.7,0.0,104.7
+"Washington
+E-ZPass and fuel stop support reviewed",11.3,0.0,11.3
+"West Virginia
+telematics accepted; odometer tie-out reviewed","3,275.4",0.0,"3,275.4"
+"Wisconsin
+cross-border segment verified from GPS batch","2,025.9",116.2,"2,142.1"
+"Wyoming
+trip-sheet and dispatch legs reconciled","6,853.2",0.0,"6,853.2"
+
+Page 149
+
+# Page 150
+
+Hearthline Freight Cooperative                                               VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                                             Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
+
+***
+
+| UNIT | VIN suffix K270639 | International | Fleet ref FLT-688 |
+| :--- | :--- | :--- | :--- |
+| **2148** | Plate AP88682 | dedicated / Kansas City <br> MO | Quarter: 2025 Q3 |
+
+***
+
+Mileage jurisdictions for this unit are listed below. The unit number is inherited by every row on this page.
+
+| JURISDICTION AND SOURCE NOTE | ACCEPTED / IDENTIFIED MILES | EXCEPTION / UNIDENTIFIED MILES | REPORTED JURISDICTION TOTAL |
+| :--- | :---: | :---: | :---: |
+| **Alabama** <br> trip-sheet and dispatch legs reconciled | 2,381.6 | 293.2 | 2,674.8 |
+| **Arizona** <br> trip-sheet and dispatch legs reconciled | 6,421.1 | 0.0 | 6,421.1 |
+| **California** <br> manual correction retained in quarter workpaper | 2,976.6 | 79.2 | 3,055.8 |
+| **Colorado** <br> telematics accepted; odometer tie-out reviewed | 5,037.2 | 238.6 | 5,275.8 |
+| **Connecticut** <br> route exception cleared by mileage desk | 5,425.4 | 0.0 | 5,425.4 |
+| **Florida** <br> telematics accepted; odometer tie-out reviewed | 2,557.1 | 0.0 | 2,557.1 |
+| **Georgia** <br> E-ZPass and fuel stop support reviewed | 5,786.1 | 0.0 | 5,786.1 |
+| **Idaho** <br> manual correction retained in quarter workpaper | 1.6 | 0.0 | 1.6 |
+| **Illinois** <br> manual correction retained in quarter workpaper | 4,886.3 | 0.0 | 4,886.3 |
+| **Iowa** <br> route exception cleared by mileage desk | 6,782.3 | 0.0 | 6,782.3 |
+| **Kansas** <br> E-ZPass and fuel stop support reviewed | 3,264.9 | 0.0 | 3,264.9 |
+| **Kentucky** <br> telematics accepted; odometer tie-out reviewed | 60.7 | 354.2 | 414.9 |
+
+***
+
+### Unit quarter tie-out
+Accepted: 110,484.8
+Exception: 2,163.4
+Reported: 112,648.2
+
+***
+
+### Fuel-card reconciliation sample
+
+| JUR | GALLONS | AMOUNT | NOTE |
+| :--- | :---: | :---: | :--- |
+| MO | 121.2 | $535.90 | fuel only - not a mileage jurisdiction row |
+| MO | 95.4 | $390.95 | fuel only - not a mileage jurisdiction row |
+| GA | 149.9 | $648.35 | fuel only - not a mileage jurisdiction row |
+
+***
+                                                                                                 Page 150
+
+# Page 151
+
+Hearthline Freight Cooperative
+Quarterly IFTA workpaper packet
+Account HFC-742018 / Fleet mileage review
+
+VEHICLE MILEAGE SUPPORT
+Prepared 11/02/2025 09:14 CST
+
+***
+
+| UNIT | VIN suffix K270639<br>Plate AP88682 | International<br>dedicated / Kansas City MO | Fleet ref FLT-688<br>Quarter: 2025 Q3 |
+| :--- | :--- | :--- | :--- |
+| **2148**<br>continued | | | |
+
+***
+
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
+
+| JURISDICTION AND SOURCE NOTE | ACCEPTED / IDENTIFIED MILES | EXCEPTION / UNIDENTIFIED MILES | REPORTED JURISDICTION TOTAL |
+| :--- | :---: | :---: | :---: |
+| **Louisiana**<br>trip-sheet and dispatch legs reconciled | 109.7 | 351.0 | 460.7 |
+| **Maryland**<br>manual correction retained in quarter workpaper | 668.5 | 303.3 | 971.8 |
+| **Minnesota**<br>route exception cleared by mileage desk | 2,174.0 | 0.0 | 2,174.0 |
+| **Missouri**<br>cross-border segment verified from GPS batch | 21.9 | 0.0 | 21.9 |
+| **Montana**<br>trip-sheet and dispatch legs reconciled | 6,589.0 | 0.0 | 6,589.0 |
+| **Nevada**<br>trip-sheet and dispatch legs reconciled | 1,020.5 | 127.3 | 1,147.8 |
+| **New Jersey**<br>route exception cleared by mileage desk | 9.4 | 0.0 | 9.4 |
+| **New Mexico**<br>telematics accepted; odometer tie-out reviewed | 4,459.2 | 0.0 | 4,459.2 |
+| **New York**<br>E-ZPass and fuel stop support reviewed | 286.0 | 0.0 | 286.0 |
+| **North Carolina**<br>route exception cleared by mileage desk | 3,761.9 | 2.0 | 3,763.9 |
+| **North Dakota**<br>trip-sheet and dispatch legs reconciled | 3,119.2 | 0.0 | 3,119.2 |
+| **Ohio**<br>telematics accepted; odometer tie-out reviewed | 5,544.4 | 0.0 | 5,544.4 |
+
+Page 151
+
+# Page 152
+
+Hearthline Freight Cooperative,,VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet,,Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review,,
+
+UNIT,VIN suffix K270639,International,Fleet ref FLT-688
+2148,Plate AP88682,dedicated / Kansas City,Quarter: 2025 Q3
+continued,,MO,
+
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.,,,
+
+JURISDICTION AND SOURCE NOTE,ACCEPTED / IDENTIFIED MILES,EXCEPTION / UNIDENTIFIED MILES,REPORTED JURISDICTION TOTAL
+"Oklahoma
+manual correction retained in quarter workpaper",5996.1,0.0,5996.1
+"Oregon
+telematics accepted; odometer tie-out reviewed",2095.3,77.0,2172.3
+"Pennsylvania
+telematics accepted; odometer tie-out reviewed",6296.6,0.0,6296.6
+"South Carolina
+route exception cleared by mileage desk",6166.3,0.0,6166.3
+"Tennessee
+E-ZPass and fuel stop support reviewed",719.8,0.0,719.8
+"Texas
+E-ZPass and fuel stop support reviewed",6504.0,0.0,6504.0
+"Utah
+telematics accepted; odometer tie-out reviewed",2739.7,337.6,3077.3
+"Virginia
+trip-sheet and dispatch legs reconciled",78.7,0.0,78.7
+"Washington
+cross-border segment verified from GPS batch",36.3,0.0,36.3
+"West Virginia
+E-ZPass and fuel stop support reviewed",4721.7,0.0,4721.7
+"Wisconsin
+trip-sheet and dispatch legs reconciled",101.7,0.0,101.7
+"Wyoming
+route exception cleared by mileage desk",1684.0,0.0,1684.0
+
+,,,Page 152
+
+# Page 153
+
+Hearthline Freight Cooperative                                           VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                                          Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
+
+-------------------------------------------------------------------------------------------------
+| UNIT          | VIN suffix F152018             | Volvo                          | Fleet ref FLT-693     |
+| **9272**      | Plate AP84533                  | intermodal / Toledo OH         | Quarter: 2025 Q3       |
+-------------------------------------------------------------------------------------------------
+
+Mileage jurisdictions for this unit are listed below. The unit number is inherited by every row on this page.
+
+| JURISDICTION AND SOURCE NOTE | ACCEPTED / IDENTIFIED MILES | EXCEPTION / UNIDENTIFIED MILES | REPORTED JURISDICTION TOTAL |
+| :--- | :---: | :---: | :---: |
+| **Alabama**<br>trip-sheet and dispatch legs reconciled | 3,689.3 | 0.0 | 3,689.3 |
+| **Arizona**<br>cross-border segment verified from GPS batch | 4,363.9 | 0.0 | 4,363.9 |
+| **California**<br>trip-sheet and dispatch legs reconciled | 5,445.9 | 173.1 | 5,619.0 |
+| **Colorado**<br>manual correction retained in quarter workpaper | 4,659.7 | 0.0 | 4,659.7 |
+| **Connecticut**<br>trip-sheet and dispatch legs reconciled | 5,247.8 | 0.0 | 5,247.8 |
+| **Delaware**<br>trip-sheet and dispatch legs reconciled | 835.9 | 0.0 | 835.9 |
+| **Florida**<br>trip-sheet and dispatch legs reconciled | 4,731.6 | 0.0 | 4,731.6 |
+| **Georgia**<br>route exception cleared by mileage desk | 2,518.3 | 47.7 | 2,566.0 |
+| **Idaho**<br>trip-sheet and dispatch legs reconciled | 6,269.3 | 0.0 | 6,269.3 |
+| **Illinois**<br>cross-border segment verified from GPS batch | 2,019.3 | 0.0 | 2,019.3 |
+| **Indiana**<br>manual correction retained in quarter workpaper | 779.6 | 0.0 | 779.6 |
+| **Iowa**<br>E-ZPass and fuel stop support reviewed | 106.0 | 278.9 | 384.9 |
+
+***
+
+### Unit quarter tie-out
+Accepted: 130,310.1
+Exception: 558.8
+Reported: 130,868.9
+
+### Fuel-card reconciliation sample
+| JUR | GALLONS | AMOUNT | NOTE |
+| :--- | :---: | :---: | :--- |
+| MO | 92.8 | $381.75 | fuel only - not a mileage jurisdiction row |
+| MO | 74.4 | $287.15 | fuel only - not a mileage jurisdiction row |
+| TN | 153.7 | $617.46 | fuel only - not a mileage jurisdiction row |
+
+Page 153
+
+# Page 154
+
+Hearthline Freight Cooperative                                                      VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                                                     Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
+_________________________________________________________________________________________________________________
+
+| UNIT<br>**9272**<br>continued | VIN suffix F152018<br>Plate AP84533 | Volvo<br>intermodal / Toledo OH | Fleet ref FLT-693<br>Quarter: 2025 Q3 |
+| :--- | :--- | :--- | :--- |
+
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
+
+| JURISDICTION AND SOURCE NOTE | ACCEPTED /<br>IDENTIFIED MILES | EXCEPTION /<br>UNIDENTIFIED MILES | REPORTED<br>JURISDICTION TOTAL |
+| :--- | ---: | ---: | ---: |
+| **Kansas**<br>trip-sheet and dispatch legs reconciled | 1,766.5 | 0.0 | 1,766.5 |
+| **Kentucky**<br>telematics accepted; odometer tie-out reviewed | 4,406.2 | 0.0 | 4,406.2 |
+| **Louisiana**<br>trip-sheet and dispatch legs reconciled | 677.8 | 0.0 | 677.8 |
+| **Maryland**<br>trip-sheet and dispatch legs reconciled | 6,605.6 | 0.0 | 6,605.6 |
+| **Michigan**<br>E-ZPass and fuel stop support reviewed | 1,785.2 | 0.0 | 1,785.2 |
+| **Minnesota**<br>trip-sheet and dispatch legs reconciled | 3,873.3 | 0.0 | 3,873.3 |
+| **Mississippi**<br>trip-sheet and dispatch legs reconciled | 5,479.7 | 59.1 | 5,538.8 |
+| **Missouri**<br>E-ZPass and fuel stop support reviewed | 5,718.7 | 0.0 | 5,718.7 |
+| **Montana**<br>E-ZPass and fuel stop support reviewed | 5,592.6 | 0.0 | 5,592.6 |
+| **Nebraska**<br>route exception cleared by mileage desk | 4,387.9 | 0.0 | 4,387.9 |
+| **New Mexico**<br>trip-sheet and dispatch legs reconciled | 1,218.7 | 0.0 | 1,218.7 |
+| **North Carolina**<br>manual correction retained in quarter workpaper | 1,122.5 | 0.0 | 1,122.5 |
+
+<br>
+Page 154
+
+# Page 155
+
+Hearthline Freight Cooperative                                            VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                                           Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
+
++-----------------------------------+-----------------------------------+-----------------------------------+-----------------------------------+
+| UNIT                              | VIN suffix F152018                | Volvo                             | Fleet ref FLT-693                 |
+| **9272**                          | Plate AP84533                     | intermodal / Toledo OH            | Quarter: 2025 Q3                  |
+| continued                         |                                   |                                   |                                   |
++-----------------------------------+-----------------------------------+-----------------------------------+-----------------------------------+
+
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
+
+| JURISDICTION AND SOURCE NOTE | ACCEPTED / IDENTIFIED MILES | EXCEPTION / UNIDENTIFIED MILES | REPORTED JURISDICTION TOTAL |
+| :--- | :---: | :---: | :---: |
+| **Ohio** <br> telematics accepted; odometer tie-out reviewed | 2,349.5 | 0.0 | 2,349.5 |
+| **Oklahoma** <br> cross-border segment verified from GPS batch | 2,103.2 | 0.0 | 2,103.2 |
+| **Oregon** <br> E-ZPass and fuel stop support reviewed | 4,615.5 | 0.0 | 4,615.5 |
+| **Pennsylvania** <br> E-ZPass and fuel stop support reviewed | 4,997.7 | 0.0 | 4,997.7 |
+| **South Carolina** <br> trip-sheet and dispatch legs reconciled | 2,691.6 | 0.0 | 2,691.6 |
+| **Tennessee** <br> route exception cleared by mileage desk | 5,398.0 | 0.0 | 5,398.0 |
+| **Texas** <br> cross-border segment verified from GPS batch | 6,829.6 | 0.0 | 6,829.6 |
+| **Utah** <br> route exception cleared by mileage desk | 4,463.6 | 0.0 | 4,463.6 |
+| **Virginia** <br> manual correction retained in quarter workpaper | 4,784.5 | 0.0 | 4,784.5 |
+| **West Virginia** <br> cross-border segment verified from GPS batch | 1,445.2 | 0.0 | 1,445.2 |
+| **Wisconsin** <br> cross-border segment verified from GPS batch | 452.6 | 0.0 | 452.6 |
+| **Wyoming** <br> telematics accepted; odometer tie-out reviewed | 6,877.8 | 0.0 | 6,877.8 |
+
+<br>
+<p align="right">Page 155</p>
+
+# Page 156
+
+Hearthline Freight Cooperative
+Quarterly IFTA workpaper packet
+Account HFC-742018 / Fleet mileage review
+
+VEHICLE MILEAGE SUPPORT
+Prepared 11/02/2025 09:14 CST
+
+| UNIT | VIN suffix H722219<br>Plate AP95446 | Volvo<br>dedicated / Davenport IA | Fleet ref FLT-391<br>Quarter: 2025 Q3 |
+| :--- | :--- | :--- | :--- |
+| **915** | | | |
+
+Mileage jurisdictions for this unit are listed below. The unit number is inherited by every row on this page.
+
+| JURISDICTION AND SOURCE NOTE | ACCEPTED / IDENTIFIED MILES | EXCEPTION / UNIDENTIFIED MILES | REPORTED JURISDICTION TOTAL |
+| :--- | :---: | :---: | :---: |
+| **Alabama**<br>telematics accepted; odometer tie-out reviewed | 3,535.0 | 0.0 | 3,535.0 |
+| **Arizona**<br>telematics accepted; odometer tie-out reviewed | 5,414.2 | 0.0 | 5,414.2 |
+| **California**<br>trip-sheet and dispatch legs reconciled | 5,500.7 | 133.1 | 5,633.8 |
+| **Colorado**<br>trip-sheet and dispatch legs reconciled | 1,228.8 | 0.0 | 1,228.8 |
+| **Connecticut**<br>telematics accepted; odometer tie-out reviewed | 5,910.5 | 178.9 | 6,089.4 |
+| **Delaware**<br>manual correction retained in quarter workpaper | 4,570.8 | 0.0 | 4,570.8 |
+| **Florida**<br>E-ZPass and fuel stop support reviewed | 4,435.3 | 0.0 | 4,435.3 |
+| **Georgia**<br>route exception cleared by mileage desk | 1,149.1 | 0.0 | 1,149.1 |
+| **Idaho**<br>trip-sheet and dispatch legs reconciled | 2,757.2 | 0.0 | 2,757.2 |
+| **Illinois**<br>E-ZPass and fuel stop support reviewed | 4,571.2 | 0.0 | 4,571.2 |
+| **Indiana**<br>telematics accepted; odometer tie-out reviewed | 4,811.1 | 0.0 | 4,811.1 |
+| **Iowa**<br>cross-border segment verified from GPS batch | 518.2 | 0.0 | 518.2 |
+
+<br>
+
+| Unit quarter tie-out |
+| :--- |
+| Accepted: 126,160.3 |
+| Exception: 1,572.4 |
+| Reported: 127,732.7 |
+
+<br>
+
+**Fuel-card reconciliation sample**
+
+| JUR | GALLONS | AMOUNT | NOTE |
+| :--- | :---: | :---: | :--- |
+| TX | 184.8 | $841.01 | fuel only - not a mileage jurisdiction row |
+| OH | 107.9 | $460.19 | fuel only - not a mileage jurisdiction row |
+| KY | 74.2 | $332.62 | fuel only - not a mileage jurisdiction row |
+
+Page 156
+
+# Page 157
+
+Hearthline Freight Cooperative, VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet, Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
+
+UNIT: 915 continued, VIN suffix H722219 Plate AP95446, Volvo dedicated / Davenport IA, Fleet ref FLT-391 Quarter: 2025 Q3
+
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
+
+"JURISDICTION AND SOURCE NOTE","ACCEPTED / IDENTIFIED MILES","EXCEPTION / UNIDENTIFIED MILES","REPORTED JURISDICTION TOTAL"
+"Kansas
+E-ZPass and fuel stop support reviewed",5922.6,0.0,5922.6
+"Louisiana
+route exception cleared by mileage desk",6020.3,0.0,6020.3
+"Maryland
+cross-border segment verified from GPS batch",4481.0,110.9,4591.9
+"Minnesota
+manual correction retained in quarter workpaper",3685.5,356.5,4042.0
+"Mississippi
+trip-sheet and dispatch legs reconciled",2137.3,0.0,2137.3
+"Missouri
+route exception cleared by mileage desk",3283.3,0.0,3283.3
+"Montana
+telematics accepted; odometer tie-out reviewed",274.2,0.0,274.2
+"Nebraska
+route exception cleared by mileage desk",6651.3,0.0,6651.3
+"New Jersey
+manual correction retained in quarter workpaper",2327.9,191.6,2519.5
+"New Mexico
+route exception cleared by mileage desk",5696.8,0.0,5696.8
+"New York
+trip-sheet and dispatch legs reconciled",3253.6,0.0,3253.6
+"North Carolina
+manual correction retained in quarter workpaper",5900.9,0.0,5900.9
+
+Page 157
+
+# Page 158
+
+Hearthline Freight Cooperative
+Quarterly IFTA workpaper packet
+Account HFC-742018 / Fleet mileage review
+
+VEHICLE MILEAGE SUPPORT
+Prepared 11/02/2025 09:14 CST
+
+***
+
+| UNIT | VIN suffix H722219 | Volvo | Fleet ref FLT-391 |
+| :--- | :--- | :--- | :--- |
+| **915** <br> continued | Plate AP95446 | dedicated / Davenport IA | Quarter: 2025 Q3 |
+
+***
+
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
+
+| JURISDICTION AND SOURCE NOTE | ACCEPTED / IDENTIFIED MILES | EXCEPTION / UNIDENTIFIED MILES | REPORTED JURISDICTION TOTAL |
+| :--- | :---: | :---: | :---: |
+| **Ohio** <br> E-ZPass and fuel stop support reviewed | 3,268.0 | 0.0 | 3,268.0 |
+| **Oklahoma** <br> telematics accepted; odometer tie-out reviewed | 5,421.2 | 0.0 | 5,421.2 |
+| **Oregon** <br> E-ZPass and fuel stop support reviewed | 10.1 | 342.9 | 353.0 |
+| **Pennsylvania** <br> telematics accepted; odometer tie-out reviewed | 5,607.6 | 0.0 | 5,607.6 |
+| **Tennessee** <br> manual correction retained in quarter workpaper | 28.7 | 0.0 | 28.7 |
+| **Utah** <br> E-ZPass and fuel stop support reviewed | 3,703.4 | 0.0 | 3,703.4 |
+| **Virginia** <br> trip-sheet and dispatch legs reconciled | 602.0 | 0.0 | 602.0 |
+| **Washington** <br> cross-border segment verified from GPS batch | 3,728.3 | 258.5 | 3,986.8 |
+| **West Virginia** <br> trip-sheet and dispatch legs reconciled | 1,259.3 | 0.0 | 1,259.3 |
+| **Wisconsin** <br> telematics accepted; odometer tie-out reviewed | 1,489.9 | 0.0 | 1,489.9 |
+| **Wyoming** <br> manual correction retained in quarter workpaper | 7,005.0 | 0.0 | 7,005.0 |
+
+Page 158
+
+# Page 159
+
+Hearthline Freight Cooperative                                                 VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                                                Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
+
+--------------------------------------------------------------------------------------------------------
+UNIT: 3251 | VIN suffix Z877102, Plate AP77313 | Volvo, linehaul / Toledo OH | Fleet ref FLT-952, Quarter: 2025 Q3
+--------------------------------------------------------------------------------------------------------
+
+Mileage jurisdictions for this unit are listed below. The unit number is inherited by every row on this page.
+
+JURISDICTION AND SOURCE NOTE,ACCEPTED / IDENTIFIED MILES,EXCEPTION / UNIDENTIFIED MILES,REPORTED JURISDICTION TOTAL
+"Alabama
+manual correction retained in quarter workpaper",4420.6,0.0,4420.6
+"Arizona
+manual correction retained in quarter workpaper",6764.2,0.0,6764.2
+"Arkansas
+route exception cleared by mileage desk",3945.5,0.0,3945.5
+"California
+route exception cleared by mileage desk",2275.5,0.0,2275.5
+"Colorado
+telematics accepted; odometer tie-out reviewed",37.9,0.0,37.9
+"Connecticut
+cross-border segment verified from GPS batch",4199.0,81.6,4280.6
+"Delaware
+manual correction retained in quarter workpaper",5675.6,0.0,5675.6
+"Florida
+telematics accepted; odometer tie-out reviewed",3647.9,222.5,3870.4
+"Georgia
+manual correction retained in quarter workpaper",3566.4,0.0,3566.4
+"Idaho
+route exception cleared by mileage desk",5561.0,0.0,5561.0
+"Illinois
+telematics accepted; odometer tie-out reviewed",3451.8,71.5,3523.3
+"Iowa
+manual correction retained in quarter workpaper",6204.8,0.0,6204.8
+
+Unit quarter tie-out
+Accepted: 140,822.1
+Exception: 1,192.2
+Reported: 142,014.3
+
+Fuel-card reconciliation sample
+JUR,GALLONS,AMOUNT,NOTE
+MO,343.5,$1520.06,fuel only - not a mileage jurisdiction row
+TX,222.7,$866.61,fuel only - not a mileage jurisdiction row
+GA,376.5,$1721.66,fuel only - not a mileage jurisdiction row
+
+Page 159
+
+# Page 160
+
+Hearthline Freight Cooperative                           VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                           Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
+_________________________________________________________________________________________
+
+| UNIT           | VIN suffix Z877102 | Volvo                | Fleet ref FLT-952 |
+| 3251           | Plate AP77313      | linehaul / Toledo OH | Quarter: 2025 Q3  |
+| continued      |                    |                      |                   |
+_________________________________________________________________________________________
+
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
+
+| JURISDICTION AND SOURCE NOTE | ACCEPTED / IDENTIFIED MILES | EXCEPTION / UNIDENTIFIED MILES | REPORTED JURISDICTION TOTAL |
+|:---|:---:|:---:|:---:|
+| **Kansas**<br>cross-border segment verified from GPS batch | 4,082.5 | 0.0 | 4,082.5 |
+| **Kentucky**<br>cross-border segment verified from GPS batch | 71.9 | 0.0 | 71.9 |
+| **Louisiana**<br>E-ZPass and fuel stop support reviewed | 3,971.8 | 0.0 | 3,971.8 |
+| **Maryland**<br>E-ZPass and fuel stop support reviewed | 6,487.5 | 0.0 | 6,487.5 |
+| **Michigan**<br>telematics accepted; odometer tie-out reviewed | 2,396.9 | 42.3 | 2,439.2 |
+| **Minnesota**<br>trip-sheet and dispatch legs reconciled | 5,317.4 | 71.3 | 5,388.7 |
+| **Mississippi**<br>E-ZPass and fuel stop support reviewed | 3,601.6 | 0.0 | 3,601.6 |
+| **Missouri**<br>telematics accepted; odometer tie-out reviewed | 1,438.0 | 0.0 | 1,438.0 |
+| **Montana**<br>cross-border segment verified from GPS batch | 3,133.3 | 0.0 | 3,133.3 |
+| **Nebraska**<br>manual correction retained in quarter workpaper | 90.6 | 0.0 | 90.6 |
+| **Nevada**<br>cross-border segment verified from GPS batch | 4,225.5 | 0.0 | 4,225.5 |
+| **New Jersey**<br>cross-border segment verified from GPS batch | 2,981.7 | 0.0 | 2,981.7 |
+| **New Mexico**<br>trip-sheet and dispatch legs reconciled | 5,741.7 | 298.2 | 6,039.9 |
+| **New York**<br>route exception cleared by mileage desk | 283.4 | 0.0 | 283.4 |
+
+Page 160
+
+# Page 161
+
+Hearthline Freight Cooperative, VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet, Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review,
+
+UNIT: 3251 continued, VIN suffix Z877102 / Plate AP77313, Volvo / linehaul / Toledo OH, Fleet ref FLT-952 / Quarter: 2025 Q3
+
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
+
+"JURISDICTION AND SOURCE NOTE","ACCEPTED / IDENTIFIED MILES","EXCEPTION / UNIDENTIFIED MILES","REPORTED JURISDICTION TOTAL"
+"North Carolina
+trip-sheet and dispatch legs reconciled",85.5,57.8,143.3
+"North Dakota
+cross-border segment verified from GPS batch","6,638.1",189.6,"6,827.7"
+"Ohio
+E-ZPass and fuel stop support reviewed","1,627.7",0.0,"1,627.7"
+"Oregon
+route exception cleared by mileage desk",929.4,0.0,929.4
+"Pennsylvania
+E-ZPass and fuel stop support reviewed",26.5,0.0,26.5
+"South Carolina
+cross-border segment verified from GPS batch","5,454.5",0.0,"5,454.5"
+"Tennessee
+manual correction retained in quarter workpaper","6,000.1",0.0,"6,000.1"
+"Texas
+manual correction retained in quarter workpaper","6,899.4",0.0,"6,899.4"
+"Utah
+telematics accepted; odometer tie-out reviewed",83.9,0.0,83.9
+"Virginia
+cross-border segment verified from GPS batch","2,518.8",0.0,"2,518.8"
+"Washington
+E-ZPass and fuel stop support reviewed","2,624.3",0.0,"2,624.3"
+"West Virginia
+trip-sheet and dispatch legs reconciled","4,378.0",0.0,"4,378.0"
+"Wisconsin
+E-ZPass and fuel stop support reviewed","3,553.2",157.4,"3,710.6"
+"Wyoming
+trip-sheet and dispatch legs reconciled","6,428.7",0.0,"6,428.7"
+
+Page 161
+
+# Page 162
+
+Hearthline Freight Cooperative                                                      VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                                                     Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
+
+__________________________________________________________________________________________________________________
+
+| UNIT <br><br> **7690** | VIN suffix K320513 <br> Plate AP30759 | Mack <br> dedicated / Davenport IA | Fleet ref FLT-254 <br> Quarter: 2025 Q3 |
+| :--- | :--- | :--- | :--- |
+__________________________________________________________________________________________________________________
+
+Mileage jurisdictions for this unit are listed below. The unit number is inherited by every row on this page.
+
+| JURISDICTION AND SOURCE NOTE | ACCEPTED / IDENTIFIED MILES | EXCEPTION / UNIDENTIFIED MILES | REPORTED JURISDICTION TOTAL |
+| :--- | :---: | :---: | :---: |
+| **Alabama** <br> manual correction retained in quarter workpaper | 106.6 | 261.8 | 368.4 |
+| **Arizona** <br> manual correction retained in quarter workpaper | 27.4 | 0.0 | 27.4 |
+| **Arkansas** <br> route exception cleared by mileage desk | 4,534.8 | 109.4 | 4,644.2 |
+| **California** <br> E-ZPass and fuel stop support reviewed | 6,805.3 | 0.0 | 6,805.3 |
+| **Colorado** <br> cross-border segment verified from GPS batch | 3,602.6 | 0.0 | 3,602.6 |
+| **Connecticut** <br> manual correction retained in quarter workpaper | 104.0 | 165.9 | 269.9 |
+| **Delaware** <br> E-ZPass and fuel stop support reviewed | 4,432.3 | 0.0 | 4,432.3 |
+| **Florida** <br> telematics accepted; odometer tie-out reviewed | 6.8 | 0.0 | 6.8 |
+| **Georgia** <br> cross-border segment verified from GPS batch | 5,297.4 | 0.0 | 5,297.4 |
+| **Illinois** <br> E-ZPass and fuel stop support reviewed | 6,758.4 | 10.4 | 6,768.8 |
+| **Indiana** <br> route exception cleared by mileage desk | 84.4 | 0.0 | 84.4 |
+| **Iowa** <br> E-ZPass and fuel stop support reviewed | 2,462.1 | 0.0 | 2,462.1 |
+
+***
+
+**Unit quarter tie-out**
+* Accepted: 91,647.6
+* Exception: 1,720.0
+* Reported: 93,367.6
+
+***
+
+**Fuel-card reconciliation sample**
+
+| JUR | GALLONS | AMOUNT | NOTE |
+| :--- | :--- | :--- | :--- |
+| IL | 197.3 | $713.38 | fuel only - not a mileage jurisdiction row |
+| KY | 266.1 | $1,243.52 | fuel only - not a mileage jurisdiction row |
+| WI | 377.9 | $1,365.05 | fuel only - not a mileage jurisdiction row |
+
+<br>
+Page 162
+
+# Page 163
+
+Hearthline Freight Cooperative,VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet,Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review,
+
+UNIT,VIN suffix K320513,Mack,Fleet ref FLT-254
+7690,Plate AP30759,dedicated / Davenport IA,Quarter: 2025 Q3
+continued,,,
+
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
+
+JURISDICTION AND SOURCE NOTE,ACCEPTED / IDENTIFIED MILES,EXCEPTION / UNIDENTIFIED MILES,REPORTED JURISDICTION TOTAL
+"Kansas
+trip-sheet and dispatch legs reconciled","2,399.0",129.8,"2,528.8"
+"Kentucky
+cross-border segment verified from GPS batch",92.8,0.0,92.8
+"Louisiana
+E-ZPass and fuel stop support reviewed","1,090.0",0.0,"1,090.0"
+"Maryland
+route exception cleared by mileage desk","2,662.9",15.2,"2,678.1"
+"Michigan
+route exception cleared by mileage desk","1,743.9",0.0,"1,743.9"
+"Minnesota
+trip-sheet and dispatch legs reconciled",145.4,0.0,145.4
+"Mississippi
+manual correction retained in quarter workpaper","4,254.9",0.0,"4,254.9"
+"Missouri
+telematics accepted; odometer tie-out reviewed","5,174.6",0.0,"5,174.6"
+"Montana
+cross-border segment verified from GPS batch","2,429.1",0.0,"2,429.1"
+"Nevada
+manual correction retained in quarter workpaper","1,002.5",45.2,"1,047.7"
+"New Mexico
+route exception cleared by mileage desk","5,450.4",0.0,"5,450.4"
+"New York
+telematics accepted; odometer tie-out reviewed",233.9,0.0,233.9
+"North Carolina
+manual correction retained in quarter workpaper","1,321.5",0.0,"1,321.5"
+
+Page 163
+
+# Page 164
+
+Hearthline Freight Cooperative                                  VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                                 Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
+____________________________________________________________________________________________
+
+| UNIT <br><br> **7690** <br> continued | VIN suffix K320513 <br> Plate AP30759 | Mack <br> dedicated / Davenport IA | Fleet ref FLT-254 <br> Quarter: 2025 Q3 |
+| :--- | :--- | :--- | :--- |
+
+<br>
+
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
+
+| JURISDICTION AND SOURCE NOTE | ACCEPTED / IDENTIFIED MILES | EXCEPTION / UNIDENTIFIED MILES | REPORTED JURISDICTION TOTAL |
+| :--- | :---: | :---: | :---: |
+| **North Dakota** <br> telematics accepted; odometer tie-out reviewed | 645.2 | 190.9 | 836.1 |
+| **Ohio** <br> trip-sheet and dispatch legs reconciled | 68.5 | 0.0 | 68.5 |
+| **Oklahoma** <br> route exception cleared by mileage desk | 2,289.0 | 0.0 | 2,289.0 |
+| **Oregon** <br> E-ZPass and fuel stop support reviewed | 3,778.3 | 0.0 | 3,778.3 |
+| **Pennsylvania** <br> telematics accepted; odometer tie-out reviewed | 91.0 | 307.4 | 398.4 |
+| **South Carolina** <br> manual correction retained in quarter workpaper | 6,034.3 | 0.0 | 6,034.3 |
+| **Tennessee** <br> E-ZPass and fuel stop support reviewed | 6,851.2 | 0.0 | 6,851.2 |
+| **Texas** <br> trip-sheet and dispatch legs reconciled | 4,629.6 | 0.0 | 4,629.6 |
+| **Utah** <br> route exception cleared by mileage desk | 1,343.9 | 0.0 | 1,343.9 |
+| **Virginia** <br> route exception cleared by mileage desk | 92.5 | 258.8 | 351.3 |
+| **Washington** <br> route exception cleared by mileage desk | 3,519.7 | 0.0 | 3,519.7 |
+| **Wisconsin** <br> telematics accepted; odometer tie-out reviewed | 54.9 | 0.0 | 54.9 |
+| **Wyoming** <br> trip-sheet and dispatch legs reconciled | 26.5 | 225.2 | 251.7 |
+
+<br>
+
+Page 164
+
+# Page 165
+
+Hearthline Freight Cooperative                           VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                          Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
+
+_________________________________________________________________________________________
+| UNIT          | VIN suffix X995534     | International          | Fleet ref FLT-378    |
+|               | Plate AP84423          | linehaul / Memphis TN  | Quarter: 2025 Q3     |
+|   148         |                        |                        |                      |
+_________________________________________________________________________________________
+
+Mileage jurisdictions for this unit are listed below. The unit number is inherited by every row on this page.
+
+| JURISDICTION AND SOURCE NOTE | ACCEPTED / IDENTIFIED MILES | EXCEPTION / UNIDENTIFIED MILES | REPORTED JURISDICTION TOTAL |
+| :--- | :---: | :---: | :---: |
+| **Alabama** <br> E-ZPass and fuel stop support reviewed | 2,807.5 | 183.8 | 2,991.3 |
+| **Arizona** <br> telematics accepted; odometer tie-out reviewed | 6,488.1 | 0.0 | 6,488.1 |
+| **Arkansas** <br> E-ZPass and fuel stop support reviewed | 1,169.6 | 0.0 | 1,169.6 |
+| **California** <br> cross-border segment verified from GPS batch | 6,536.5 | 314.8 | 6,851.3 |
+| **Delaware** <br> cross-border segment verified from GPS batch | 5,867.8 | 0.0 | 5,867.8 |
+| **Florida** <br> route exception cleared by mileage desk | 6,890.7 | 0.0 | 6,890.7 |
+| **Georgia** <br> manual correction retained in quarter workpaper | 6,526.9 | 0.0 | 6,526.9 |
+| **Idaho** <br> manual correction retained in quarter workpaper | 5,368.1 | 0.0 | 5,368.1 |
+| **Illinois** <br> telematics accepted; odometer tie-out reviewed | 6,665.8 | 0.0 | 6,665.8 |
+| **Iowa** <br> manual correction retained in quarter workpaper | 2,064.9 | 0.0 | 2,064.9 |
+| **Kansas** <br> manual correction retained in quarter workpaper | 3,317.4 | 0.0 | 3,317.4 |
+| **Kentucky** <br> manual correction retained in quarter workpaper | 45.9 | 106.7 | 152.6 |
+
+***
+
+**Unit quarter tie-out**
+Accepted: 122,440.5
+Exception: 2,310.7
+Reported: 124,751.2
+
+***
+
+**Fuel-card reconciliation sample**
+
+| JUR | GALLONS | AMOUNT | NOTE |
+| :--- | :---: | :---: | :--- |
+| IL | 353.2 | $1,625.51 | fuel only - not a mileage jurisdiction row |
+| MO | 305.8 | $1,317.29 | fuel only - not a mileage jurisdiction row |
+| PA | 263.5 | $982.45 | fuel only - not a mileage jurisdiction row |
+
+<br>
+Page 165
+
+# Page 166
+
+Hearthline Freight Cooperative                                           VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                                          Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
+________________________________________________________________________________________________________
+
++-------------------+--------------------+-----------------------+---------------------+
+| UNIT              | VIN suffix X995534 | International         | Fleet ref FLT-378   |
+| **148**           | Plate AP84423      | linehaul / Memphis TN | Quarter: 2025 Q3    |
+| continued         |                    |                       |                     |
++-------------------+--------------------+-----------------------+---------------------+
+
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
+
+| JURISDICTION AND SOURCE NOTE | ACCEPTED / IDENTIFIED MILES | EXCEPTION / UNIDENTIFIED MILES | REPORTED JURISDICTION TOTAL |
+| :--- | :---: | :---: | :---: |
+| **Louisiana** <br> route exception cleared by mileage desk | 2,539.1 | 295.6 | 2,834.7 |
+| **Michigan** <br> E-ZPass and fuel stop support reviewed | 4,677.2 | 0.0 | 4,677.2 |
+| **Mississippi** <br> route exception cleared by mileage desk | 66.2 | 0.0 | 66.2 |
+| **Missouri** <br> route exception cleared by mileage desk | 6,459.3 | 0.0 | 6,459.3 |
+| **Montana** <br> trip-sheet and dispatch legs reconciled | 3,141.9 | 0.0 | 3,141.9 |
+| **Nebraska** <br> cross-border segment verified from GPS batch | 5,151.3 | 160.3 | 5,311.6 |
+| **Nevada** <br> trip-sheet and dispatch legs reconciled | 1,496.2 | 351.2 | 1,847.4 |
+| **New Jersey** <br> trip-sheet and dispatch legs reconciled | 1,378.4 | 146.4 | 1,524.8 |
+| **New Mexico** <br> E-ZPass and fuel stop support reviewed | 2,211.4 | 0.0 | 2,211.4 |
+| **North Carolina** <br> E-ZPass and fuel stop support reviewed | 5,176.3 | 357.0 | 5,533.3 |
+| **North Dakota** <br> trip-sheet and dispatch legs reconciled | 5,315.8 | 0.0 | 5,315.8 |
+| **Ohio** <br> manual correction retained in quarter workpaper | 2,890.9 | 0.0 | 2,890.9 |
+
+<br>
+
+Page 166
+
+# Page 167
+
+Hearthline Freight Cooperative                                       VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                                      Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
+
+__________________________________________________________________________________________________
+
+| UNIT | VIN suffix X995534 | International | Fleet ref FLT-378 |
+| **148** | Plate AP84423 | linehaul / Memphis TN | Quarter: 2025 Q3 |
+| continued | | | |
+__________________________________________________________________________________________________
+
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
+
+| JURISDICTION AND SOURCE NOTE | ACCEPTED / IDENTIFIED MILES | EXCEPTION / UNIDENTIFIED MILES | REPORTED JURISDICTION TOTAL |
+| :--- | :---: | :---: | :---: |
+| **Oklahoma**<br>route exception cleared by mileage desk | 1,197.9 | 170.6 | 1,368.5 |
+| **Oregon**<br>manual correction retained in quarter workpaper | 2,942.2 | 29.0 | 2,971.2 |
+| **Pennsylvania**<br>manual correction retained in quarter workpaper | 1,156.9 | 0.0 | 1,156.9 |
+| **South Carolina**<br>manual correction retained in quarter workpaper | 4,113.4 | 0.0 | 4,113.4 |
+| **Texas**<br>manual correction retained in quarter workpaper | 7,030.2 | 195.3 | 7,225.5 |
+| **Utah**<br>trip-sheet and dispatch legs reconciled | 1,158.9 | 0.0 | 1,158.9 |
+| **Virginia**<br>manual correction retained in quarter workpaper | 884.9 | 0.0 | 884.9 |
+| **Washington**<br>route exception cleared by mileage desk | 2,091.4 | 0.0 | 2,091.4 |
+| **West Virginia**<br>telematics accepted; odometer tie-out reviewed | 4,292.8 | 0.0 | 4,292.8 |
+| **Wisconsin**<br>cross-border segment verified from GPS batch | 1,625.5 | 0.0 | 1,625.5 |
+| **Wyoming**<br>trip-sheet and dispatch legs reconciled | 1,693.2 | 0.0 | 1,693.2 |
+
+<br>
+
+Page 167
+
+# Page 168
+
+Hearthline Freight Cooperative                                  VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                                 Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
+__________________________________________________________________________________________________
+
+UNIT: 2308 | VIN suffix A233002, Plate AP14661 | Volvo, regional / Gary IN | Fleet ref FLT-798, Quarter: 2025 Q3
+__________________________________________________________________________________________________
+
+Mileage jurisdictions for this unit are listed below. The unit number is inherited by every row on this page.
+
+JURISDICTION AND SOURCE NOTE,ACCEPTED / IDENTIFIED MILES,EXCEPTION / UNIDENTIFIED MILES,REPORTED JURISDICTION TOTAL
+"Alabama
+route exception cleared by mileage desk",45.9,0.0,45.9
+"Arizona
+telematics accepted; odometer tie-out reviewed","3,467.3",0.0,"3,467.3"
+"Arkansas
+route exception cleared by mileage desk",558.1,0.0,558.1
+"California
+cross-border segment verified from GPS batch","1,596.3",0.0,"1,596.3"
+"Connecticut
+telematics accepted; odometer tie-out reviewed",274.8,0.0,274.8
+"Delaware
+route exception cleared by mileage desk","2,431.4",0.0,"2,431.4"
+"Florida
+cross-border segment verified from GPS batch","2,013.6",0.0,"2,013.6"
+"Georgia
+E-ZPass and fuel stop support reviewed","5,722.0",0.0,"5,722.0"
+"Idaho
+manual correction retained in quarter workpaper","1,382.5",275.9,"1,658.4"
+"Illinois
+cross-border segment verified from GPS batch","5,507.5",0.0,"5,507.5"
+"Indiana
+E-ZPass and fuel stop support reviewed","4,641.1",0.0,"4,641.1"
+"Iowa
+telematics accepted; odometer tie-out reviewed","2,967.7",323.2,"3,290.9"
+
+Unit quarter tie-out
+Accepted: 121,498.0
+Exception: 2,613.7
+Reported: 124,111.7
+
+Fuel-card reconciliation sample
+JUR,GALLONS,AMOUNT,NOTE
+GA,131.7,$590.56,fuel only - not a mileage jurisdiction row
+TX,355.8,"$1,409.45",fuel only - not a mileage jurisdiction row
+OH,63.7,$278.96,fuel only - not a mileage jurisdiction row
+
+Page 168
+
+# Page 169
+
+Hearthline Freight Cooperative                                               VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                                              Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
+
+____________________________________________________________________________________________________
+| UNIT                  | VIN suffix A233002         | Volvo                     | Fleet ref FLT-798    |
+| **2308**              | Plate AP14661              | regional / Gary IN        | Quarter: 2025 Q3     |
+| continued             |                            |                           |                      |
+____________________________________________________________________________________________________
+
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
+
+| JURISDICTION AND SOURCE NOTE | ACCEPTED / IDENTIFIED MILES | EXCEPTION / UNIDENTIFIED MILES | REPORTED JURISDICTION TOTAL |
+| :--- | :---: | :---: | :---: |
+| **Kansas**<br>cross-border segment verified from GPS batch | 5,167.3 | 76.3 | 5,243.6 |
+| **Kentucky**<br>route exception cleared by mileage desk | 3,148.0 | 0.0 | 3,148.0 |
+| **Louisiana**<br>manual correction retained in quarter workpaper | 3,498.0 | 0.0 | 3,498.0 |
+| **Maryland**<br>cross-border segment verified from GPS batch | 4,994.2 | 245.4 | 5,239.6 |
+| **Michigan**<br>manual correction retained in quarter workpaper | 4,357.4 | 0.0 | 4,357.4 |
+| **Minnesota**<br>telematics accepted; odometer tie-out reviewed | 3,831.6 | 0.0 | 3,831.6 |
+| **Mississippi**<br>route exception cleared by mileage desk | 7,045.1 | 329.9 | 7,375.0 |
+| **Missouri**<br>E-ZPass and fuel stop support reviewed | 3,580.3 | 275.4 | 3,855.7 |
+| **Montana**<br>route exception cleared by mileage desk | 5,172.1 | 0.0 | 5,172.1 |
+| **Nebraska**<br>route exception cleared by mileage desk | 6,482.2 | 0.0 | 6,482.2 |
+| **Nevada**<br>manual correction retained in quarter workpaper | 4,692.5 | 302.7 | 4,995.2 |
+| **New Jersey**<br>telematics accepted; odometer tie-out reviewed | 107.1 | 0.0 | 107.1 |
+| **New Mexico**<br>E-ZPass and fuel stop support reviewed | 5,183.9 | 0.0 | 5,183.9 |
+| **New York**<br>route exception cleared by mileage desk | 16.1 | 0.0 | 16.1 |
+
+Page 169
+
+# Page 170
+
+Hearthline Freight Cooperative                                  VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                                 Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
+_________________________________________________________________________________________
+
+UNIT: 2308 (continued)
+VIN suffix A233002, Plate AP14661
+Volvo regional / Gary IN
+Fleet ref FLT-798, Quarter: 2025 Q3
+_________________________________________________________________________________________
+
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
+
+"JURISDICTION AND SOURCE NOTE","ACCEPTED / IDENTIFIED MILES","EXCEPTION / UNIDENTIFIED MILES","REPORTED JURISDICTION TOTAL"
+"North Carolina
+telematics accepted; odometer tie-out reviewed","1,280.1","0.0","1,280.1"
+"North Dakota
+telematics accepted; odometer tie-out reviewed","3,994.1","0.0","3,994.1"
+"Ohio
+E-ZPass and fuel stop support reviewed","25.6","27.3","52.9"
+"Oklahoma
+telematics accepted; odometer tie-out reviewed","97.0","0.0","97.0"
+"Oregon
+manual correction retained in quarter workpaper","6,144.2","0.0","6,144.2"
+"Pennsylvania
+telematics accepted; odometer tie-out reviewed","58.6","0.0","58.6"
+"South Carolina
+telematics accepted; odometer tie-out reviewed","5,356.3","0.0","5,356.3"
+"Tennessee
+telematics accepted; odometer tie-out reviewed","1,147.5","0.0","1,147.5"
+"Texas
+route exception cleared by mileage desk","11.1","207.8","218.9"
+"Utah
+route exception cleared by mileage desk","45.5","193.8","239.3"
+"Washington
+telematics accepted; odometer tie-out reviewed","3,855.6","0.0","3,855.6"
+"West Virginia
+E-ZPass and fuel stop support reviewed","4,929.5","356.0","5,285.5"
+"Wisconsin
+manual correction retained in quarter workpaper","5,146.6","0.0","5,146.6"
+"Wyoming
+telematics accepted; odometer tie-out reviewed","1,522.3","0.0","1,522.3"
+
+Page 170
+
+# Page 171
+
+Hearthline Freight Cooperative              VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet             Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
+
+--------------------------------------------------------------------------------
+UNIT: 8120
+VIN suffix P795072 / Plate AP13601
+Peterbilt spotter / Memphis TN
+Fleet ref FLT-778 / Quarter: 2025 Q3
+--------------------------------------------------------------------------------
+
+Mileage jurisdictions for this unit are listed below. The unit number is inherited by every row on this page.
+
+JURISDICTION AND SOURCE NOTE,ACCEPTED / IDENTIFIED MILES,EXCEPTION / UNIDENTIFIED MILES,REPORTED JURISDICTION TOTAL
+"Alabama\nE-ZPass and fuel stop support reviewed",6,194.5,103.4,6,297.9
+"Arizona\nmanual correction retained in quarter workpaper",6,449.1,0.0,6,449.1
+"Arkansas\nE-ZPass and fuel stop support reviewed",2,833.2,276.6,3,109.8
+"California\nE-ZPass and fuel stop support reviewed",2,284.3,129.5,2,413.8
+"Colorado\nroute exception cleared by mileage desk",5,060.9,0.0,5,060.9
+"Connecticut\nmanual correction retained in quarter workpaper",350.0,0.0,350.0
+"Delaware\nroute exception cleared by mileage desk",3,780.8,340.5,4,121.3
+"Florida\ncross-border segment verified from GPS batch",6,675.0,0.0,6,675.0
+"Georgia\nE-ZPass and fuel stop support reviewed",5,617.4,0.0,5,617.4
+"Idaho\nmanual correction retained in quarter workpaper",2,983.4,0.0,2,983.4
+"Indiana\nroute exception cleared by mileage desk",0.8,0.0,0.8
+"Iowa\ntelematics accepted; odometer tie-out reviewed",4,409.9,0.0,4,409.9
+
+Unit quarter tie-out
+Accepted: 124,825.0
+Exception: 1,192.1
+Reported: 126,017.1
+
+Fuel-card reconciliation sample
+JUR,GALLONS,AMOUNT,NOTE
+PA,108.3,$497.83,fuel only - not a mileage jurisdiction row
+IN,325.9,$1,177.14,fuel only - not a mileage jurisdiction row
+WI,381.3,$1,576.94,fuel only - not a mileage jurisdiction row
+
+Page 171
+
+# Page 172
+
+Hearthline Freight Cooperative
+Quarterly IFTA workpaper packet
+Account HFC-742018 / Fleet mileage review
+
+VEHICLE MILEAGE SUPPORT
+Prepared 11/02/2025 09:14 CST
+
+----------------------------------------------------------------------------------------------------
+UNIT: 8120 (continued) | VIN suffix P795072, Plate AP13601 | Peterbilt spotter / Memphis TN | Fleet ref FLT-778, Quarter: 2025 Q3
+----------------------------------------------------------------------------------------------------
+
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
+
+"JURISDICTION AND SOURCE NOTE","ACCEPTED / IDENTIFIED MILES","EXCEPTION / UNIDENTIFIED MILES","REPORTED JURISDICTION TOTAL"
+"Kansas
+telematics accepted; odometer tie-out reviewed","3,825.6","0.0","3,825.6"
+"Kentucky
+trip-sheet and dispatch legs reconciled","6,966.0","0.0","6,966.0"
+"Louisiana
+route exception cleared by mileage desk","267.3","0.0","267.3"
+"Minnesota
+cross-border segment verified from GPS batch","6,973.7","0.0","6,973.7"
+"Mississippi
+cross-border segment verified from GPS batch","444.1","0.0","444.1"
+"Missouri
+telematics accepted; odometer tie-out reviewed","1,147.5","0.0","1,147.5"
+"Montana
+route exception cleared by mileage desk","844.6","261.5","1,106.1"
+"Nevada
+trip-sheet and dispatch legs reconciled","1,177.2","0.0","1,177.2"
+"New Jersey
+cross-border segment verified from GPS batch","6.7","0.0","6.7"
+"New Mexico
+E-ZPass and fuel stop support reviewed","6,890.7","0.0","6,890.7"
+"New York
+route exception cleared by mileage desk","5,706.0","0.0","5,706.0"
+"North Carolina
+E-ZPass and fuel stop support reviewed","3,139.6","0.0","3,139.6"
+
+Page 172
+
+# Page 173
+
+Hearthline Freight Cooperative,VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet,Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review,
+,,
+UNIT,VIN suffix P795072,Peterbilt,Fleet ref FLT-778
+8120,Plate AP13601,spotter / Memphis TN,Quarter: 2025 Q3
+continued,,
+,,
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.,,,
+,,
+JURISDICTION AND SOURCE NOTE,ACCEPTED / IDENTIFIED MILES,EXCEPTION / UNIDENTIFIED MILES,REPORTED JURISDICTION TOTAL
+"North Dakota
+E-ZPass and fuel stop support reviewed","5,254.8",0.0,"5,254.8"
+"Ohio
+route exception cleared by mileage desk",370.8,0.0,370.8
+"Oregon
+E-ZPass and fuel stop support reviewed",98.5,0.0,98.5
+"Pennsylvania
+manual correction retained in quarter workpaper","5,848.7",0.0,"5,848.7"
+"South Carolina
+telematics accepted; odometer tie-out reviewed",159.8,0.0,159.8
+"Tennessee
+trip-sheet and dispatch legs reconciled","6,235.6",0.0,"6,235.6"
+"Texas
+E-ZPass and fuel stop support reviewed",188.1,0.0,188.1
+"Utah
+E-ZPass and fuel stop support reviewed","1,925.2",0.0,"1,925.2"
+"Washington
+cross-border segment verified from GPS batch","5,438.9",80.6,"5,519.5"
+"West Virginia
+trip-sheet and dispatch legs reconciled","4,957.9",0.0,"4,957.9"
+"Wisconsin
+telematics accepted; odometer tie-out reviewed","4,586.9",0.0,"4,586.9"
+"Wyoming
+manual correction retained in quarter workpaper","5,731.5",0.0,"5,731.5"
+,,,
+Page 173,,,
+
+# Page 174
+
+JURISDICTION,SOURCE NOTE,ACCEPTED / IDENTIFIED MILES,EXCEPTION / UNIDENTIFIED MILES,REPORTED JURISDICTION TOTAL
+Alabama,telematics accepted; odometer tie-out reviewed,4544.2,0.0,4544.2
+Arkansas,E-ZPass and fuel stop support reviewed,1733.8,0.0,1733.8
+Colorado,cross-border segment verified from GPS batch,1152.7,0.0,1152.7
+Connecticut,cross-border segment verified from GPS batch,5764.9,0.0,5764.9
+Florida,route exception cleared by mileage desk,6364.4,0.0,6364.4
+Georgia,telematics accepted; odometer tie-out reviewed,2501.3,0.0,2501.3
+Illinois,manual correction retained in quarter workpaper,4642.3,0.0,4642.3
+Indiana,manual correction retained in quarter workpaper,5253.1,0.0,5253.1
+Iowa,telematics accepted; odometer tie-out reviewed,3889.0,0.0,3889.0
+Kansas,route exception cleared by mileage desk,827.6,0.0,827.6
+Louisiana,route exception cleared by mileage desk,6573.8,273.7,6847.5
+Maryland,telematics accepted; odometer tie-out reviewed,734.4,0.0,734.4
+
+JUR,GALLONS,AMOUNT,NOTE
+TN,107.3,$384.87,fuel only - not a mileage jurisdiction row
+KY,157.5,$686.30,fuel only - not a mileage jurisdiction row
+OH,380.1,$1721.52,fuel only - not a mileage jurisdiction row
+
+# Page 175
+
+Hearthline Freight Cooperative                                VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                              Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
+_________________________________________________________________________________________________
+
+UNIT                          | VIN suffix G328852       | International             | Fleet ref FLT-337
+983                           | Plate AP61750            | regional / Memphis TN     | Quarter: 2025 Q3
+continued                     |                          |                           | 
+_________________________________________________________________________________________________
+
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
+
+"JURISDICTION AND SOURCE NOTE","ACCEPTED / IDENTIFIED MILES","EXCEPTION / UNIDENTIFIED MILES","REPORTED JURISDICTION TOTAL"
+"Michigan
+manual correction retained in quarter workpaper","2,927.1","0.0","2,927.1"
+"Minnesota
+telematics accepted; odometer tie-out reviewed","6,262.3","0.0","6,262.3"
+"Mississippi
+manual correction retained in quarter workpaper","4,483.7","0.0","4,483.7"
+"Missouri
+manual correction retained in quarter workpaper","326.1","0.0","326.1"
+"Montana
+trip-sheet and dispatch legs reconciled","151.8","0.0","151.8"
+"Nebraska
+E-ZPass and fuel stop support reviewed","2,310.3","0.0","2,310.3"
+"New Jersey
+route exception cleared by mileage desk","4,147.7","0.0","4,147.7"
+"New Mexico
+route exception cleared by mileage desk","4,388.3","0.0","4,388.3"
+"North Carolina
+route exception cleared by mileage desk","1,619.1","0.0","1,619.1"
+"North Dakota
+cross-border segment verified from GPS batch","2,878.3","0.0","2,878.3"
+
+Page 175
+
+# Page 176
+
+Hearthline Freight Cooperative                                          VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                                         Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
+
+----------------------------------------------------------------------------------------------------
+UNIT: 983 (continued)
+VIN suffix G328852 | Plate AP61750
+International / regional / Memphis TN
+Fleet ref FLT-337 | Quarter: 2025 Q3
+----------------------------------------------------------------------------------------------------
+
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
+
+"JURISDICTION AND SOURCE NOTE","ACCEPTED / IDENTIFIED MILES","EXCEPTION / UNIDENTIFIED MILES","REPORTED JURISDICTION TOTAL"
+"Ohio
+cross-border segment verified from GPS batch","5,690.1","0.0","5,690.1"
+"Oklahoma
+E-ZPass and fuel stop support reviewed","4,426.8","121.6","4,548.4"
+"Oregon
+cross-border segment verified from GPS batch","5,181.4","0.0","5,181.4"
+"Pennsylvania
+E-ZPass and fuel stop support reviewed","97.4","0.0","97.4"
+"South Carolina
+manual correction retained in quarter workpaper","48.8","0.0","48.8"
+"Tennessee
+telematics accepted; odometer tie-out reviewed","2,465.6","0.0","2,465.6"
+"Utah
+manual correction retained in quarter workpaper","4,371.6","249.7","4,621.3"
+"West Virginia
+E-ZPass and fuel stop support reviewed","1,924.9","0.0","1,924.9"
+"Wisconsin
+E-ZPass and fuel stop support reviewed","388.6","0.0","388.6"
+"Wyoming
+telematics accepted; odometer tie-out reviewed","2,661.4","106.0","2,767.4"
+
+Page 176
+
+# Page 177
+
+Hearthline Freight Cooperative                                    **VEHICLE MILEAGE SUPPORT**
+Quarterly IFTA workpaper packet                                   Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
+____________________________________________________________________________________________________
+
+| UNIT | VIN suffix C654765<br>Plate AP66266 | Peterbilt<br>dedicated / Joliet IL | Fleet ref FLT-585<br>Quarter: 2025 Q3 |
+| :--- | :--- | :--- | :--- |
+| **3139** | | | |
+____________________________________________________________________________________________________
+
+Mileage jurisdictions for this unit are listed below. The unit number is inherited by every row on this page.
+
+| JURISDICTION AND SOURCE NOTE | ACCEPTED /<br>IDENTIFIED MILES | EXCEPTION /<br>UNIDENTIFIED MILES | REPORTED<br>JURISDICTION TOTAL |
+| :--- | :---: | :---: | :---: |
+| **Alabama**<br>route exception cleared by mileage desk | 2,477.4 | 0.0 | 2,477.4 |
+| **Arizona**<br>route exception cleared by mileage desk | 6,302.7 | 0.0 | 6,302.7 |
+| **Arkansas**<br>trip-sheet and dispatch legs reconciled | 4,612.0 | 0.0 | 4,612.0 |
+| **California**<br>E-ZPass and fuel stop support reviewed | 690.7 | 0.0 | 690.7 |
+| **Colorado**<br>cross-border segment verified from GPS batch | 5,360.1 | 0.0 | 5,360.1 |
+| **Connecticut**<br>cross-border segment verified from GPS batch | 5,442.3 | 0.0 | 5,442.3 |
+| **Delaware**<br>manual correction retained in quarter workpaper | 6,127.1 | 0.0 | 6,127.1 |
+| **Florida**<br>manual correction retained in quarter workpaper | 5,309.2 | 0.0 | 5,309.2 |
+| **Georgia**<br>manual correction retained in quarter workpaper | 6,517.7 | 0.0 | 6,517.7 |
+| **Idaho**<br>manual correction retained in quarter workpaper | 5,259.9 | 0.0 | 5,259.9 |
+| **Illinois**<br>E-ZPass and fuel stop support reviewed | 1,383.1 | 112.5 | 1,495.6 |
+| **Indiana**<br>E-ZPass and fuel stop support reviewed | 5,417.4 | 0.0 | 5,417.4 |
+
+<br>
+
+| **Unit quarter tie-out** |
+| :--- |
+| Accepted: 157,032.7 |
+| Exception: 488.4 |
+| Reported: 157,521.1 |
+
+<br>
+
+| **Fuel-card reconciliation sample** | | | |
+| :--- | :--- | :--- | :--- |
+| **JUR** | **GALLONS** | **AMOUNT** | **NOTE** |
+| IL | 265.8 | $1,123.28 | fuel only - not a mileage jurisdiction row |
+| GA | 257.8 | $1,174.64 | fuel only - not a mileage jurisdiction row |
+| TN | 175.9 | $681.08 | fuel only - not a mileage jurisdiction row |
+
+<br>
+<div align="right">Page 177</div>
+
+# Page 178
+
+"JURISDICTION AND SOURCE NOTE","ACCEPTED / IDENTIFIED MILES","EXCEPTION / UNIDENTIFIED MILES","REPORTED JURISDICTION TOTAL"
+"Iowa
+cross-border segment verified from GPS batch","3,829.3","0.0","3,829.3"
+"Kansas
+trip-sheet and dispatch legs reconciled","1,553.9","0.0","1,553.9"
+"Kentucky
+manual correction retained in quarter workpaper","6,873.3","0.0","6,873.3"
+"Louisiana
+E-ZPass and fuel stop support reviewed","2,748.7","0.0","2,748.7"
+"Maryland
+manual correction retained in quarter workpaper","2,624.9","0.0","2,624.9"
+"Michigan
+manual correction retained in quarter workpaper","4,989.2","0.0","4,989.2"
+"Minnesota
+cross-border segment verified from GPS batch","7.3","0.0","7.3"
+"Mississippi
+route exception cleared by mileage desk","817.9","0.0","817.9"
+"Missouri
+cross-border segment verified from GPS batch","6,120.1","0.0","6,120.1"
+"Montana
+route exception cleared by mileage desk","6,995.4","0.0","6,995.4"
+"Nebraska
+E-ZPass and fuel stop support reviewed","3,012.9","0.0","3,012.9"
+"New Jersey
+E-ZPass and fuel stop support reviewed","2,049.6","0.0","2,049.6"
+"New Mexico
+cross-border segment verified from GPS batch","39.7","0.0","39.7"
+"New York
+route exception cleared by mileage desk","5,046.2","0.0","5,046.2"
+
+# Page 179
+
+Hearthline Freight Cooperative                                                    VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                                                 Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
+
+__________________________________________________________________________________________________________________
+
+| UNIT <br><br> **3139** <br><br> continued | VIN suffix C654765 <br> Plate AP66266 | Peterbilt <br> dedicated / Joliet IL | Fleet ref FLT-585 <br> Quarter: 2025 Q3 |
+| :--- | :--- | :--- | :--- |
+__________________________________________________________________________________________________________________
+
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
+
+| JURISDICTION AND SOURCE NOTE | ACCEPTED / IDENTIFIED MILES | EXCEPTION / UNIDENTIFIED MILES | REPORTED JURISDICTION TOTAL |
+| :--- | :---: | :---: | :---: |
+| **North Carolina**<br>manual correction retained in quarter workpaper | 82.0 | 0.0 | 82.0 |
+| **North Dakota**<br>cross-border segment verified from GPS batch | 4,344.6 | 0.0 | 4,344.6 |
+| **Ohio**<br>route exception cleared by mileage desk | 2,715.7 | 0.0 | 2,715.7 |
+| **Oregon**<br>route exception cleared by mileage desk | 5,668.2 | 0.0 | 5,668.2 |
+| **Pennsylvania**<br>manual correction retained in quarter workpaper | 3,654.3 | 375.9 | 4,030.2 |
+| **South Carolina**<br>manual correction retained in quarter workpaper | 3,589.6 | 0.0 | 3,589.6 |
+| **Tennessee**<br>route exception cleared by mileage desk | 5,700.7 | 0.0 | 5,700.7 |
+| **Texas**<br>manual correction retained in quarter workpaper | 2,289.2 | 0.0 | 2,289.2 |
+| **Utah**<br>trip-sheet and dispatch legs reconciled | 3,693.2 | 0.0 | 3,693.2 |
+| **Virginia**<br>E-ZPass and fuel stop support reviewed | 3,872.6 | 0.0 | 3,872.6 |
+| **Washington**<br>route exception cleared by mileage desk | 6,456.6 | 0.0 | 6,456.6 |
+| **West Virginia**<br>manual correction retained in quarter workpaper | 6,021.7 | 0.0 | 6,021.7 |
+| **Wisconsin**<br>route exception cleared by mileage desk | 1,534.2 | 0.0 | 1,534.2 |
+| **Wyoming**<br>telematics accepted; odometer tie-out reviewed | 5,802.1 | 0.0 | 5,802.1 |
+
+<br>
+<div style="text-align: right;">Page 179</div>
+
+# Page 180
+
+Hearthline Freight Cooperative
+Quarterly IFTA workpaper packet
+Account HFC-742018 / Fleet mileage review
+
+VEHICLE MILEAGE SUPPORT
+Prepared 11/02/2025 09:14 CST
+
+UNIT: 973
+VIN suffix: C901836
+Plate: AP70696
+International spotter / Joliet IL
+Fleet ref: FLT-145
+Quarter: 2025 Q3
+
+Mileage jurisdictions for this unit are listed below. The unit number is inherited by every row on this page.
+
+JURISDICTION AND SOURCE NOTE,ACCEPTED / IDENTIFIED MILES,EXCEPTION / UNIDENTIFIED MILES,REPORTED JURISDICTION TOTAL
+"Arizona - telematics accepted; odometer tie-out reviewed",3090.0,335.0,3425.0
+"Arkansas - E-ZPass and fuel stop support reviewed",2967.6,0.0,2967.6
+"California - trip-sheet and dispatch legs reconciled",3769.8,0.0,3769.8
+"Colorado - telematics accepted; odometer tie-out reviewed",4907.9,0.0,4907.9
+"Connecticut - route exception cleared by mileage desk",691.7,135.6,827.3
+"Delaware - cross-border segment verified from GPS batch",52.9,0.0,52.9
+"Florida - route exception cleared by mileage desk",5329.3,211.0,5540.3
+"Georgia - E-ZPass and fuel stop support reviewed",303.3,0.0,303.3
+"Idaho - route exception cleared by mileage desk",2168.1,334.7,2502.8
+"Illinois - route exception cleared by mileage desk",2169.8,353.9,2523.7
+"Indiana - E-ZPass and fuel stop support reviewed",5511.8,0.0,5511.8
+"Kansas - telematics accepted; odometer tie-out reviewed",5198.3,0.0,5198.3
+
+Unit quarter tie-out
+Accepted: 106,458.3
+Exception: 2,278.4
+Reported: 108,736.7
+
+Fuel-card reconciliation sample
+JUR,GALLONS,AMOUNT,NOTE
+TN,122.3,$480.41,fuel only - not a mileage jurisdiction row
+TN,234.3,$974.02,fuel only - not a mileage jurisdiction row
+GA,181.1,$765.10,fuel only - not a mileage jurisdiction row
+
+Page 180
+
+# Page 181
+
+Hearthline Freight Cooperative                      VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                     Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
+________________________________________________________________________________
+
+| UNIT <br><br> **973** <br> continued | VIN suffix C901836 <br> Plate AP70696 | International <br> spotter / Joliet IL | Fleet ref FLT-145 <br> Quarter: 2025 Q3 |
+| :--- | :--- | :--- | :--- |
+
+________________________________________________________________________________
+
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
+
+| JURISDICTION AND SOURCE NOTE | ACCEPTED / IDENTIFIED MILES | EXCEPTION / UNIDENTIFIED MILES | REPORTED JURISDICTION TOTAL |
+| :--- | :---: | :---: | :---: |
+| **Louisiana** <br> trip-sheet and dispatch legs reconciled | 4,552.3 | 0.0 | 4,552.3 |
+| **Maryland** <br> trip-sheet and dispatch legs reconciled | 6,497.8 | 0.0 | 6,497.8 |
+| **Michigan** <br> E-ZPass and fuel stop support reviewed | 5,930.5 | 0.0 | 5,930.5 |
+| **Mississippi** <br> manual correction retained in quarter workpaper | 1,762.6 | 0.0 | 1,762.6 |
+| **Missouri** <br> trip-sheet and dispatch legs reconciled | 5,962.0 | 0.0 | 5,962.0 |
+| **Montana** <br> telematics accepted; odometer tie-out reviewed | 2,037.2 | 0.0 | 2,037.2 |
+| **Nebraska** <br> E-ZPass and fuel stop support reviewed | 5,027.1 | 0.0 | 5,027.1 |
+| **Nevada** <br> cross-border segment verified from GPS batch | 5,675.1 | 352.7 | 6,027.8 |
+| **New Mexico** <br> cross-border segment verified from GPS batch | 1,785.9 | 318.1 | 2,104.0 |
+| **New York** <br> route exception cleared by mileage desk | 4,679.6 | 0.0 | 4,679.6 |
+| **North Carolina** <br> E-ZPass and fuel stop support reviewed | 2,698.4 | 0.0 | 2,698.4 |
+| **North Dakota** <br> manual correction retained in quarter workpaper | 3.1 | 0.0 | 3.1 |
+
+<br><br><br><br><br>
+Page 181
+
+# Page 182
+
+Hearthline Freight Cooperative
+Quarterly IFTA workpaper packet
+Account HFC-742018 / Fleet mileage review
+
+VEHICLE MILEAGE SUPPORT
+Prepared 11/02/2025 09:14 CST
+
+UNIT: 973 continued
+VIN suffix C901836 | Plate AP70696
+International spotter / Joliet IL
+Fleet ref FLT-145 | Quarter: 2025 Q3
+
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
+
+"JURISDICTION AND SOURCE NOTE","ACCEPTED / IDENTIFIED MILES","EXCEPTION / UNIDENTIFIED MILES","REPORTED JURISDICTION TOTAL"
+"Ohio
+cross-border segment verified from GPS batch","672.8","237.4","910.2"
+"Oklahoma
+cross-border segment verified from GPS batch","3,716.3","0.0","3,716.3"
+"Oregon
+trip-sheet and dispatch legs reconciled","2,322.5","0.0","2,322.5"
+"South Carolina
+manual correction retained in quarter workpaper","2,149.6","0.0","2,149.6"
+"Tennessee
+E-ZPass and fuel stop support reviewed","2,897.6","0.0","2,897.6"
+"Texas
+E-ZPass and fuel stop support reviewed","159.9","0.0","159.9"
+"Utah
+cross-border segment verified from GPS batch","2,207.4","0.0","2,207.4"
+"Virginia
+route exception cleared by mileage desk","361.8","0.0","361.8"
+"Washington
+cross-border segment verified from GPS batch","97.2","0.0","97.2"
+"West Virginia
+trip-sheet and dispatch legs reconciled","3,583.2","0.0","3,583.2"
+"Wisconsin
+telematics accepted; odometer tie-out reviewed","2,134.5","0.0","2,134.5"
+"Wyoming
+E-ZPass and fuel stop support reviewed","3,383.4","0.0","3,383.4"
+
+Page 182
+
+# Page 183
+
+Hearthline Freight Cooperative
+Quarterly IFTA workpaper packet
+Account HFC-742018 / Fleet mileage review
+
+VEHICLE MILEAGE SUPPORT
+Prepared 11/02/2025 09:14 CST
+
+____________________________________________________________________________________________________
+
+| UNIT | VIN suffix W604955 | Kenworth | Fleet ref FLT-347 |
+| **2204** | Plate AP41192 | intermodal / Memphis TN | Quarter: 2025 Q3 |
+____________________________________________________________________________________________________
+
+Mileage jurisdictions for this unit are listed below. The unit number is inherited by every row on this page.
+
+| JURISDICTION AND SOURCE NOTE | ACCEPTED / IDENTIFIED MILES | EXCEPTION / UNIDENTIFIED MILES | REPORTED JURISDICTION TOTAL |
+| :--- | :---: | :---: | :---: |
+| **Alabama** <br> route exception cleared by mileage desk | 2,196.8 | 0.0 | 2,196.8 |
+| **Arizona** <br> E-ZPass and fuel stop support reviewed | 4,407.3 | 0.0 | 4,407.3 |
+| **Arkansas** <br> telematics accepted; odometer tie-out reviewed | 2,377.1 | 86.3 | 2,463.4 |
+| **California** <br> trip-sheet and dispatch legs reconciled | 5,529.7 | 0.0 | 5,529.7 |
+| **Colorado** <br> route exception cleared by mileage desk | 5,406.1 | 0.0 | 5,406.1 |
+| **Delaware** <br> trip-sheet and dispatch legs reconciled | 6,855.2 | 0.0 | 6,855.2 |
+| **Florida** <br> E-ZPass and fuel stop support reviewed | 1,546.1 | 0.0 | 1,546.1 |
+| **Georgia** <br> manual correction retained in quarter workpaper | 5,779.4 | 0.0 | 5,779.4 |
+| **Idaho** <br> E-ZPass and fuel stop support reviewed | 54.9 | 0.0 | 54.9 |
+| **Illinois** <br> trip-sheet and dispatch legs reconciled | 5,454.0 | 312.3 | 5,766.3 |
+| **Indiana** <br> E-ZPass and fuel stop support reviewed | 252.8 | 0.0 | 252.8 |
+| **Kansas** <br> trip-sheet and dispatch legs reconciled | 3,776.4 | 0.0 | 3,776.4 |
+
+<br>
+
+| Unit quarter tie-out |
+| :--- |
+| Accepted: 143,567.7 |
+| Exception: 934.7 |
+| Reported: 144,502.4 |
+
+<br>
+
+| Fuel-card reconciliation sample | | | |
+| :--- | :---: | :---: | :--- |
+| **JUR** | **GALLONS** | **AMOUNT** | **NOTE** |
+| MO | 318.7 | $1,256.34 | fuel only - not a mileage jurisdiction row |
+| GA | 145.1 | $560.24 | fuel only - not a mileage jurisdiction row |
+| KY | 96.0 | $434.63 | fuel only - not a mileage jurisdiction row |
+
+<br>
+
+Page 183
+
+# Page 184
+
+Hearthline Freight Cooperative
+Quarterly IFTA workpaper packet
+Account HFC-742018 / Fleet mileage review
+
+VEHICLE MILEAGE SUPPORT
+Prepared 11/02/2025 09:14 CST
+
+------------------------------------------------------------------------------------------------------------------------
+| UNIT                                | VIN suffix W604955                  | Kenworth                            | Fleet ref FLT-347                   |
+| **2204**                            | Plate AP41192                       | intermodal / Memphis TN             | Quarter: 2025 Q3                     |
+| continued                           |                                     |                                     |                                     |
+------------------------------------------------------------------------------------------------------------------------
+
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
+
+| JURISDICTION AND SOURCE NOTE | ACCEPTED / IDENTIFIED MILES | EXCEPTION / UNIDENTIFIED MILES | REPORTED JURISDICTION TOTAL |
+| :--- | :---: | :---: | :---: |
+| **Kentucky**<br>cross-border segment verified from GPS batch | 5,384.3 | 0.0 | 5,384.3 |
+| **Louisiana**<br>E-ZPass and fuel stop support reviewed | 5,329.3 | 18.4 | 5,347.7 |
+| **Maryland**<br>E-ZPass and fuel stop support reviewed | 4,478.4 | 0.0 | 4,478.4 |
+| **Michigan**<br>trip-sheet and dispatch legs reconciled | 1,847.2 | 0.0 | 1,847.2 |
+| **Minnesota**<br>telematics accepted; odometer tie-out reviewed | 5,741.5 | 0.0 | 5,741.5 |
+| **Mississippi**<br>trip-sheet and dispatch legs reconciled | 1,998.2 | 0.0 | 1,998.2 |
+| **Montana**<br>telematics accepted; odometer tie-out reviewed | 4,589.3 | 205.7 | 4,795.0 |
+| **Nebraska**<br>cross-border segment verified from GPS batch | 6,535.1 | 0.0 | 6,535.1 |
+| **Nevada**<br>route exception cleared by mileage desk | 4,801.0 | 0.0 | 4,801.0 |
+| **New Mexico**<br>telematics accepted; odometer tie-out reviewed | 5,149.0 | 0.0 | 5,149.0 |
+| **North Carolina**<br>telematics accepted; odometer tie-out reviewed | 651.0 | 0.0 | 651.0 |
+| **North Dakota**<br>cross-border segment verified from GPS batch | 4,680.0 | 0.0 | 4,680.0 |
+| **Ohio**<br>trip-sheet and dispatch legs reconciled | 5,227.9 | 0.0 | 5,227.9 |
+
+Page 184
+
+# Page 185
+
+Hearthline Freight Cooperative                             VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                            Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
+
+--------------------------------------------------------------------------------------
+UNIT: 2204 (continued)
+VIN suffix: W604955
+Plate: AP41192
+Kenworth intermodal / Memphis TN
+Fleet ref: FLT-347
+Quarter: 2025 Q3
+--------------------------------------------------------------------------------------
+
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
+
+"JURISDICTION AND SOURCE NOTE","ACCEPTED / IDENTIFIED MILES","EXCEPTION / UNIDENTIFIED MILES","REPORTED JURISDICTION TOTAL"
+"Oklahoma
+cross-border segment verified from GPS batch",4853.1,0.0,4853.1
+"Oregon
+cross-border segment verified from GPS batch",4241.3,0.0,4241.3
+"Pennsylvania
+telematics accepted; odometer tie-out reviewed",5796.8,0.0,5796.8
+"South Carolina
+trip-sheet and dispatch legs reconciled",2754.8,0.0,2754.8
+"Tennessee
+route exception cleared by mileage desk",4305.2,0.0,4305.2
+"Texas
+telematics accepted; odometer tie-out reviewed",865.7,0.0,865.7
+"Utah
+cross-border segment verified from GPS batch",460.7,0.0,460.7
+"Virginia
+telematics accepted; odometer tie-out reviewed",1337.0,0.0,1337.0
+"Washington
+manual correction retained in quarter workpaper",6425.1,0.0,6425.1
+"West Virginia
+trip-sheet and dispatch legs reconciled",5869.3,0.0,5869.3
+"Wisconsin
+telematics accepted; odometer tie-out reviewed",95.4,0.0,95.4
+"Wyoming
+E-ZPass and fuel stop support reviewed",6515.3,312.0,6827.3
+
+Page 185
+
+# Page 186
+
+Hearthline Freight Cooperative                                            VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                                           Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
+________________________________________________________________________________________________________
+
++------------------+------------------------+------------------------+----------------------+
+| UNIT             | VIN suffix U105650     | International          | Fleet ref FLT-244    |
+| 674              | Plate AP52648          | spotter / Joliet IL    | Quarter: 2025 Q3     |
++------------------+------------------------+------------------------+----------------------+
+
+Mileage jurisdictions for this unit are listed below. The unit number is inherited by every row on this page.
+
+--------------------------------------------------------------------------------------------------------
+JURISDICTION AND SOURCE NOTE                      ACCEPTED /       EXCEPTION /          REPORTED
+                                            IDENTIFIED MILES   UNIDENTIFIED MILES   JURISDICTION TOTAL
+--------------------------------------------------------------------------------------------------------
+Alabama                                              6,798.9                  0.0              6,798.9
+manual correction retained in quarter workpaper
+
+Arizona                                              5,097.5                  0.0              5,097.5
+cross-border segment verified from GPS batch
+
+California                                           2,526.2                  0.0              2,526.2
+manual correction retained in quarter workpaper
+
+Colorado                                                 3.8                  0.0                  3.8
+cross-border segment verified from GPS batch
+
+Connecticut                                          2,701.4                  0.0              2,701.4
+cross-border segment verified from GPS batch
+
+Delaware                                             3,247.3                  0.0              3,247.3
+manual correction retained in quarter workpaper
+
+Florida                                                764.5                  0.0                764.5
+cross-border segment verified from GPS batch
+
+Idaho                                                   30.5                  0.0                 30.5
+route exception cleared by mileage desk
+
+Illinois                                             4,896.2                  0.0              4,896.2
+manual correction retained in quarter workpaper
+
+Indiana                                              3,990.6                  8.7              3,999.3
+route exception cleared by mileage desk
+
+Iowa                                                 1,866.0                  0.0              1,866.0
+E-ZPass and fuel stop support reviewed
+
+Kansas                                                   3.2                  0.0                  3.2
+cross-border segment verified from GPS batch
+--------------------------------------------------------------------------------------------------------
+
++------------------------------------+      +---------------------------------------------------------------------------+
+| Unit quarter tie-out               |      | Fuel-card reconciliation sample                                           |
+| Accepted: 109,768.9                |      |                                                                           |
+| Exception: 708.2                   |      | JUR   GALLONS     AMOUNT      NOTE                                        |
+| Reported: 110,477.1                |      | MO       82.5     $390.79     fuel only - not a mileage jurisdiction row  |
+|                                    |      | GA      129.1     $517.04     fuel only - not a mileage jurisdiction row  |
+|                                    |      | IL      229.4     $829.00     fuel only - not a mileage jurisdiction row  |
++------------------------------------+      +---------------------------------------------------------------------------+
+
+                                                                                                Page 186
+
+# Page 187
+
+Hearthline Freight Cooperative
+Quarterly IFTA workpaper packet
+Account HFC-742018 / Fleet mileage review
+
+VEHICLE MILEAGE SUPPORT
+Prepared 11/02/2025 09:14 CST
+
++-----------------------------------+-----------------------------------+-----------------------------------+-----------------------------------+
+| UNIT                              | VIN suffix U105650                | International                     | Fleet ref FLT-244                 |
+| **674**                           | Plate AP52648                     | spotter / Joliet IL               | Quarter: 2025 Q3                  |
+| continued                         |                                   |                                   |                                   |
++-----------------------------------+-----------------------------------+-----------------------------------+-----------------------------------+
+
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
+
+| JURISDICTION AND SOURCE NOTE | ACCEPTED / IDENTIFIED MILES | EXCEPTION / UNIDENTIFIED MILES | REPORTED JURISDICTION TOTAL |
+| :--- | :---: | :---: | :---: |
+| **Kentucky**<br>E-ZPass and fuel stop support reviewed | 2,874.7 | 0.0 | 2,874.7 |
+| **Louisiana**<br>trip-sheet and dispatch legs reconciled | 6,929.4 | 0.0 | 6,929.4 |
+| **Maryland**<br>telematics accepted; odometer tie-out reviewed | 7,019.9 | 368.6 | 7,388.5 |
+| **Michigan**<br>telematics accepted; odometer tie-out reviewed | 2,814.6 | 0.0 | 2,814.6 |
+| **Minnesota**<br>trip-sheet and dispatch legs reconciled | 4,531.0 | 0.0 | 4,531.0 |
+| **Mississippi**<br>telematics accepted; odometer tie-out reviewed | 3,695.4 | 0.0 | 3,695.4 |
+| **Montana**<br>trip-sheet and dispatch legs reconciled | 1,050.7 | 55.8 | 1,106.5 |
+| **Nebraska**<br>trip-sheet and dispatch legs reconciled | 2,808.5 | 0.0 | 2,808.5 |
+| **Nevada**<br>route exception cleared by mileage desk | 2,041.2 | 0.0 | 2,041.2 |
+| **New Jersey**<br>E-ZPass and fuel stop support reviewed | 4,271.1 | 0.0 | 4,271.1 |
+| **New Mexico**<br>telematics accepted; odometer tie-out reviewed | 91.8 | 102.0 | 193.8 |
+| **North Carolina**<br>route exception cleared by mileage desk | 1,633.7 | 0.0 | 1,633.7 |
+
+<br>
+
+Page 187
+
+# Page 188
+
+Hearthline Freight Cooperative                                              VEHICLE MILEAGE SUPPORT
+Quarterly IFTA workpaper packet                                             Prepared 11/02/2025 09:14 CST
+Account HFC-742018 / Fleet mileage review
+_________________________________________________________________________________________________________
+
+| UNIT                               | VIN suffix U105650                 | International                      | Fleet ref FLT-244                  |
+| **674**                            | Plate AP52648                      | spotter / Joliet IL               | Quarter: 2025 Q3                   |
+| continued                          |                                    |                                    |                                    |
+_________________________________________________________________________________________________________
+
+Continuation page. Use the same unit number shown in the header for each jurisdiction row.
+
+| JURISDICTION AND SOURCE NOTE | ACCEPTED / IDENTIFIED MILES | EXCEPTION / UNIDENTIFIED MILES | REPORTED JURISDICTION TOTAL |
+| :--- | :---: | :---: | :---: |
+| **North Dakota**<br>E-ZPass and fuel stop support reviewed | 6,195.9 | 173.1 | 6,369.0 |
+| **Ohio**<br>trip-sheet and dispatch legs reconciled | 2,837.2 | 0.0 | 2,837.2 |
+| **Oklahoma**<br>cross-border segment verified from GPS batch | 5,997.4 | 0.0 | 5,997.4 |
+| **Oregon**<br>E-ZPass and fuel stop support reviewed | 626.4 | 0.0 | 626.4 |
+| **Pennsylvania**<br>telematics accepted; odometer tie-out reviewed | 2,971.6 | 0.0 | 2,971.6 |
+| **South Carolina**<br>manual correction retained in quarter workpaper | 4,775.4 | 0.0 | 4,775.4 |
+| **Tennessee**<br>trip-sheet and dispatch legs reconciled | 885.5 | 0.0 | 885.5 |
+| **Texas**<br>cross-border segment verified from GPS batch | 2,021.0 | 0.0 | 2,021.0 |
+| **Washington**<br>route exception cleared by mileage desk | 6,076.0 | 0.0 | 6,076.0 |
+| **West Virginia**<br>cross-border segment verified from GPS batch | 3,998.7 | 0.0 | 3,998.7 |
+| **Wyoming**<br>E-ZPass and fuel stop support reviewed | 1,695.7 | 0.0 | 1,695.7 |
+
+Page 188
 

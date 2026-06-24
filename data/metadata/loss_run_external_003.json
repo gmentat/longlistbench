@@ -3,7 +3,7 @@
   "template": "loss_run_external",
   "target_record_type": "loss_run_claim_row",
   "num_target_records": 300,
-  "source_batch": "batches-02-05-review-ready",
+  "source_batch": "loss-run-hardened",
   "artifacts": {
     "pdf": "pdfs/loss_run_external_003.pdf",
     "html": "html/loss_run_external_003.html",
@@ -15,11 +15,11 @@
     "pdf": "pdfs/loss_run_external_003.pdf",
     "html": "html/loss_run_external_003.html",
     "metadata": "metadata/loss_run_external_003.json",
-    "json_size_bytes": 152482,
-    "pdf_size_bytes": 361110,
-    "html_size_bytes": 197192,
+    "json_size_bytes": 161889,
+    "pdf_size_bytes": 585065,
+    "html_size_bytes": 299568,
     "ocr_md": "transcripts/ocr_gemini/loss_run_external_003.md",
-    "ocr_size_bytes": 97535
+    "ocr_size_bytes": 135126
   },
   "transcripts_available": [
     "ocr"
@@ -30,10 +30,14 @@
   "domain": "commercial_insurance_operations",
   "problems": [
     "high_density_long_list",
-    "production_like_layout"
+    "production_like_layout",
+    "variable_policy_sections",
+    "continuation_notes",
+    "summary_distractors",
+    "sparse_driver_fields"
   ],
-  "pages_estimate": 39,
-  "pdf_page_count": 39,
+  "pages_estimate": 44,
+  "pdf_page_count": 44,
   "dataset_version": "2.0.0",
   "hf_config": "core_operations",
   "num_claims": 300,

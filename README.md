@@ -67,7 +67,7 @@ The exported Hugging Face configs are:
 |--------|----------|
 | `core_operations` | 28 production-like commercial insurance and fleet-operation PDFs with dense repeated operations and loss-run records |
 | `claim_multihop` | 3 claim PDFs requiring long-range cross-page joins |
-| `policy_packets` | 5 policy PDFs: 2 dense BOP declaration schedules plus 3 long BOP, WC, and CGL packets |
+| `policy_packets` | 3 long BOP, WC, and CGL policy packets requiring cross-page extraction |
 
 Upload only after inspecting the generated package:
 
@@ -87,13 +87,14 @@ python benchmarks/export_hf_dataset.py \
 
 ## Benchmark Overview
 
-- **36 benchmark instances** across 13 production-like template families
-- **33,110 target records** across commercial operations, claim, and policy extraction tasks
+- **34 benchmark instances** across 12 production-like template families
+- **32,654 target records** across commercial operations, claim, and policy extraction tasks
 - **28 core operations PDFs** covering IFTA, driver/MVR, vehicle schedule, and loss-run layouts
-- **5 policy PDFs** covering dense BOP declarations plus long BOP, WC, and CGL policy packets
+- **3 policy PDFs** covering long BOP, WC, and CGL policy packets
 - **3 claim cross-page PDFs**, with 3 of the policy PDFs also requiring long-range cross-page extraction
 - **Ground truth annotations** in JSON format
 - **OCR transcripts** generated from rendered PDF page images
+- **OCR support validation**: 100.0% average identifier coverage, 99.9% tracked identifier-field support, and 39 records with at least one tracked identifier missing from OCR
 - **Synthetic visible values only**; private production documents were used only as visual layout references
 
 ## Dataset Layout
@@ -122,14 +123,13 @@ data/
 | `ifta_tax_return_summary` | 4 | 3,040 |
 | `driver_mvr_request_and_roster` | 3 | 1,260 |
 | `loss_run_external` | 3 | 900 |
-| `policy_ridgeview_businessowners_declarations` | 2 | 1,600 |
 | `vehicle_schedule_spreadsheet_export` | 2 | 1,600 |
 | `ifta_tax_return_inquiry_detail` | 2 | 1,300 |
 | `driver_schedule_spreadsheet_export` | 1 | 500 |
 | `claim_crosspage_multihop` | 3 | 77 |
-| `policy_multihop_bop` | 1 | 48 |
-| `policy_multihop_wc` | 1 | 113 |
-| `policy_multihop_cgl` | 1 | 184 |
+| `policy_multihop_bop` | 1 | 360 |
+| `policy_multihop_wc` | 1 | 510 |
+| `policy_multihop_cgl` | 1 | 619 |
 
 ### Multi-Hop Extensions
 
@@ -154,23 +154,23 @@ The cross-page PDFs are:
 
 Join/evidence metadata is recorded in `data/metadata/{sample_id}.json`; the rendered documents do not expose benchmark instructions such as "join on" labels.
 
-The policy suite has 5 commercial insurance policy PDFs and 1,945 target policy records. A policy packet is the contract document issued by an insurer; it combines declarations, covered locations or classifications, coverage limits and deductibles, rating or premium schedules, required forms, and endorsements that modify the base policy. The samples cover Businessowners Policy (BOP), Workers Compensation (WC), and Commercial General Liability (CGL) schemas inspired by real policy-review workflows. The visible document content is synthetic, but the packet structure mirrors observed commercial policy packets.
+The policy suite has 3 commercial insurance policy PDFs and 1,489 target policy records. A policy packet is the contract document issued by an insurer; it combines declarations, covered locations or classifications, coverage limits and deductibles, rating or premium schedules, required forms, material policy clauses, and endorsements that modify the base policy. The samples cover Businessowners Policy (BOP), Workers Compensation (WC), and Commercial General Liability (CGL) schemas inspired by real policy-review workflows. The visible document content is synthetic, but the packet structure mirrors observed commercial policy packets.
+
+Interpret the configs separately. `core_operations` contains high-density structured reports where deterministic row parsers can perform well; these files measure scale, OCR preservation, and output completeness. The claim and policy packet configs are the stronger complex cases, with inherited context, heterogeneous record types, distant supporting sections, and distractor material.
+
+OCR support should be interpreted at the affected-record level, not only by unique identifier coverage. For example, a single missing repeated header can affect many rows that inherit that value. The current validation reports 39 affected records across 32,654 total targets.
 
 | Sample | Pages | Target policy records |
 |--------|-------|-----------------------|
-| `multihop_bop_012_001` | 90 | 48 |
-| `multihop_wc_025_001` | 140 | 113 |
-| `mixed_cgl_040_001` | 214 | 184 |
+| `multihop_bop_012_001` | 142 | 360 |
+| `multihop_wc_025_001` | 194 | 510 |
+| `mixed_cgl_040_001` | 278 | 619 |
 
 ## Saved Evaluation Artifacts
 
 Saved reports under `benchmarks/results/` should be treated as local run artifacts unless their manifest hash matches the current `data/manifest.json`. After replacing layouts, rerun OCR and evaluation before citing current-layout or current-model baselines. The current released dataset includes OCR transcripts for every PDF.
 
-The current multi-hop OCR agentic run is saved under `benchmarks/results/agentic_multihop_gpt55/`.
-
-## Development
-
-For development and testing, see [`benchmarks/synthetic/README.md`](benchmarks/synthetic/README.md) for the synthetic data generator.
+A current single-sample Codex CGL OCR probe is saved under `benchmarks/results/codex_policy_cgl_probe_ocr/`. It is a diagnostic run on `mixed_cgl_040_001`, not a full current-corpus leaderboard.
 
 ## Development Setup
 

@@ -1,0 +1,14 @@
+{
+  "exact_record_matches": 328,
+  "extra": 0,
+  "f1": 0.9268463914630721,
+  "ground_truth_count": 619,
+  "missing": 0,
+  "precision": 0.9562509054034478,
+  "predicted_count": 619,
+  "prediction": "benchmarks/results/codex_policy_cgl_probe_ocr/mixed_cgl_040_001_ocr_codex_gpt55_predicted.json",
+  "recall": 0.8991962947827271,
+  "sample_id": "mixed_cgl_040_001",
+  "total_gold_field_pairs": 7341,
+  "total_pred_field_pairs": 6903
+}

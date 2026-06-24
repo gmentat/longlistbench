@@ -1,8 +1,8 @@
 {
-  "built_at": "2026-06-23T10:54:07.940760+00:00",
+  "built_at": "2026-06-24T15:42:54.294284+00:00",
   "dataset_dir": "/Users/anton/d/kay/longlistbench/data",
   "source_metadata": "manifest.json",
-  "total_instances": 36,
+  "total_instances": 34,
   "instances": [
     {
       "id": "driver_mvr_packet_001",
@@ -163,7 +163,7 @@
       "num_claims": null,
       "num_policy_items": null,
       "num_target_records": 1159,
-      "pages_estimate": 67,
+      "pages_estimate": 97,
       "seed": null,
       "files": {
         "pdf": "pdfs/ifta_mileage_by_vehicle_001.pdf",
@@ -174,11 +174,11 @@
         "html_exists": true,
         "ground_truth_exists": true,
         "ocr_md_exists": true,
-        "pdf_size_bytes": 357214,
-        "html_size_bytes": 165576,
+        "pdf_size_bytes": 3321655,
+        "html_size_bytes": 522907,
         "json_size_bytes": 167015,
-        "ocr_md_size_bytes": 83322,
-        "pdf_pages": 67
+        "ocr_md_size_bytes": 193688,
+        "pdf_pages": 97
       },
       "transcripts_available": [
         "ocr"
@@ -199,7 +199,7 @@
       "num_claims": null,
       "num_policy_items": null,
       "num_target_records": 2143,
-      "pages_estimate": 120,
+      "pages_estimate": 182,
       "seed": null,
       "files": {
         "pdf": "pdfs/ifta_mileage_by_vehicle_002.pdf",
@@ -210,11 +210,11 @@
         "html_exists": true,
         "ground_truth_exists": true,
         "ocr_md_exists": true,
-        "pdf_size_bytes": 537450,
-        "html_size_bytes": 276365,
+        "pdf_size_bytes": 6024072,
+        "html_size_bytes": 961006,
         "json_size_bytes": 308972,
-        "ocr_md_size_bytes": 137245,
-        "pdf_pages": 120
+        "ocr_md_size_bytes": 358934,
+        "pdf_pages": 182
       },
       "transcripts_available": [
         "ocr"
@@ -235,7 +235,7 @@
       "num_claims": null,
       "num_policy_items": null,
       "num_target_records": 2195,
-      "pages_estimate": 124,
+      "pages_estimate": 188,
       "seed": null,
       "files": {
         "pdf": "pdfs/ifta_mileage_by_vehicle_003.pdf",
@@ -246,11 +246,11 @@
         "html_exists": true,
         "ground_truth_exists": true,
         "ocr_md_exists": true,
-        "pdf_size_bytes": 547618,
-        "html_size_bytes": 283768,
+        "pdf_size_bytes": 6186876,
+        "html_size_bytes": 986557,
         "json_size_bytes": 316038,
-        "ocr_md_size_bytes": 148205,
-        "pdf_pages": 124
+        "ocr_md_size_bytes": 367483,
+        "pdf_pages": 188
       },
       "transcripts_available": [
         "ocr"
@@ -271,7 +271,7 @@
       "num_claims": null,
       "num_policy_items": null,
       "num_target_records": 2239,
-      "pages_estimate": 127,
+      "pages_estimate": 193,
       "seed": null,
       "files": {
         "pdf": "pdfs/ifta_mileage_by_vehicle_004.pdf",
@@ -282,11 +282,11 @@
         "html_exists": true,
         "ground_truth_exists": true,
         "ocr_md_exists": true,
-        "pdf_size_bytes": 557240,
-        "html_size_bytes": 289357,
+        "pdf_size_bytes": 6314819,
+        "html_size_bytes": 1006556,
         "json_size_bytes": 322650,
-        "ocr_md_size_bytes": 154234,
-        "pdf_pages": 127
+        "ocr_md_size_bytes": 385216,
+        "pdf_pages": 193
       },
       "transcripts_available": [
         "ocr"
@@ -307,7 +307,7 @@
       "num_claims": null,
       "num_policy_items": null,
       "num_target_records": 2379,
-      "pages_estimate": 130,
+      "pages_estimate": 198,
       "seed": null,
       "files": {
         "pdf": "pdfs/ifta_mileage_by_vehicle_005.pdf",
@@ -318,11 +318,11 @@
         "html_exists": true,
         "ground_truth_exists": true,
         "ocr_md_exists": true,
-        "pdf_size_bytes": 577544,
-        "html_size_bytes": 304562,
+        "pdf_size_bytes": 6622646,
+        "html_size_bytes": 1060936,
         "json_size_bytes": 342692,
-        "ocr_md_size_bytes": 151588,
-        "pdf_pages": 130
+        "ocr_md_size_bytes": 393894,
+        "pdf_pages": 198
       },
       "transcripts_available": [
         "ocr"
@@ -343,7 +343,7 @@
       "num_claims": null,
       "num_policy_items": null,
       "num_target_records": 2434,
-      "pages_estimate": 136,
+      "pages_estimate": 206,
       "seed": null,
       "files": {
         "pdf": "pdfs/ifta_mileage_by_vehicle_006.pdf",
@@ -354,11 +354,11 @@
         "html_exists": true,
         "ground_truth_exists": true,
         "ocr_md_exists": true,
-        "pdf_size_bytes": 589222,
-        "html_size_bytes": 313214,
+        "pdf_size_bytes": 6820485,
+        "html_size_bytes": 1090042,
         "json_size_bytes": 350661,
-        "ocr_md_size_bytes": 159214,
-        "pdf_pages": 136
+        "ocr_md_size_bytes": 416454,
+        "pdf_pages": 206
       },
       "transcripts_available": [
         "ocr"
@@ -379,7 +379,7 @@
       "num_claims": null,
       "num_policy_items": null,
       "num_target_records": 2445,
-      "pages_estimate": 139,
+      "pages_estimate": 210,
       "seed": null,
       "files": {
         "pdf": "pdfs/ifta_mileage_by_vehicle_007.pdf",
@@ -390,11 +390,11 @@
         "html_exists": true,
         "ground_truth_exists": true,
         "ocr_md_exists": true,
-        "pdf_size_bytes": 598501,
-        "html_size_bytes": 316977,
+        "pdf_size_bytes": 6881976,
+        "html_size_bytes": 1098335,
         "json_size_bytes": 352530,
-        "ocr_md_size_bytes": 167750,
-        "pdf_pages": 139
+        "ocr_md_size_bytes": 412391,
+        "pdf_pages": 210
       },
       "transcripts_available": [
         "ocr"
@@ -415,7 +415,7 @@
       "num_claims": null,
       "num_policy_items": null,
       "num_target_records": 2571,
-      "pages_estimate": 144,
+      "pages_estimate": 218,
       "seed": null,
       "files": {
         "pdf": "pdfs/ifta_mileage_by_vehicle_008.pdf",
@@ -426,11 +426,11 @@
         "html_exists": true,
         "ground_truth_exists": true,
         "ocr_md_exists": true,
-        "pdf_size_bytes": 616705,
-        "html_size_bytes": 330893,
+        "pdf_size_bytes": 7203037,
+        "html_size_bytes": 1152156,
         "json_size_bytes": 370369,
-        "ocr_md_size_bytes": 168916,
-        "pdf_pages": 144
+        "ocr_md_size_bytes": 438583,
+        "pdf_pages": 218
       },
       "transcripts_available": [
         "ocr"
@@ -842,12 +842,16 @@
       "target_record_type": "loss_run_claim_row",
       "problems": [
         "high_density_long_list",
-        "production_like_layout"
+        "production_like_layout",
+        "variable_policy_sections",
+        "continuation_notes",
+        "summary_distractors",
+        "sparse_driver_fields"
       ],
       "num_claims": 300,
       "num_policy_items": null,
       "num_target_records": 300,
-      "pages_estimate": 39,
+      "pages_estimate": 43,
       "seed": null,
       "files": {
         "pdf": "pdfs/loss_run_external_001.pdf",
@@ -858,11 +862,11 @@
         "html_exists": true,
         "ground_truth_exists": true,
         "ocr_md_exists": true,
-        "pdf_size_bytes": 360674,
-        "html_size_bytes": 196770,
-        "json_size_bytes": 152425,
-        "ocr_md_size_bytes": 93554,
-        "pdf_pages": 39
+        "pdf_size_bytes": 581364,
+        "html_size_bytes": 296648,
+        "json_size_bytes": 161771,
+        "ocr_md_size_bytes": 131330,
+        "pdf_pages": 43
       },
       "transcripts_available": [
         "ocr"
@@ -878,12 +882,16 @@
       "target_record_type": "loss_run_claim_row",
       "problems": [
         "high_density_long_list",
-        "production_like_layout"
+        "production_like_layout",
+        "variable_policy_sections",
+        "continuation_notes",
+        "summary_distractors",
+        "sparse_driver_fields"
       ],
       "num_claims": 300,
       "num_policy_items": null,
       "num_target_records": 300,
-      "pages_estimate": 39,
+      "pages_estimate": 42,
       "seed": null,
       "files": {
         "pdf": "pdfs/loss_run_external_002.pdf",
@@ -894,11 +902,11 @@
         "html_exists": true,
         "ground_truth_exists": true,
         "ocr_md_exists": true,
-        "pdf_size_bytes": 359573,
-        "html_size_bytes": 196630,
-        "json_size_bytes": 152486,
-        "ocr_md_size_bytes": 102237,
-        "pdf_pages": 39
+        "pdf_size_bytes": 581787,
+        "html_size_bytes": 297170,
+        "json_size_bytes": 161836,
+        "ocr_md_size_bytes": 129750,
+        "pdf_pages": 42
       },
       "transcripts_available": [
         "ocr"
@@ -914,12 +922,16 @@
       "target_record_type": "loss_run_claim_row",
       "problems": [
         "high_density_long_list",
-        "production_like_layout"
+        "production_like_layout",
+        "variable_policy_sections",
+        "continuation_notes",
+        "summary_distractors",
+        "sparse_driver_fields"
       ],
       "num_claims": 300,
       "num_policy_items": null,
       "num_target_records": 300,
-      "pages_estimate": 39,
+      "pages_estimate": 44,
       "seed": null,
       "files": {
         "pdf": "pdfs/loss_run_external_003.pdf",
@@ -930,11 +942,11 @@
         "html_exists": true,
         "ground_truth_exists": true,
         "ocr_md_exists": true,
-        "pdf_size_bytes": 361110,
-        "html_size_bytes": 197192,
-        "json_size_bytes": 152482,
-        "ocr_md_size_bytes": 97535,
-        "pdf_pages": 39
+        "pdf_size_bytes": 585065,
+        "html_size_bytes": 299568,
+        "json_size_bytes": 161889,
+        "ocr_md_size_bytes": 135126,
+        "pdf_pages": 44
       },
       "transcripts_available": [
         "ocr"
@@ -984,22 +996,23 @@
       "difficulty": "mixed",
       "format": "crosspage",
       "domain": "policy_review",
-      "hf_config": "policy_packets",
+      "hf_config": null,
       "lob": "CGL",
       "target_record_type": "policy_packet_item",
       "problems": [
         "commercial_general_liability",
         "exposure_rating_rows",
         "limits_forms_exclusions",
+        "material_clause_extraction",
         "long_range_evidence",
         "heterogeneous_record_list",
         "distractor_forms",
         "distractor_locations"
       ],
-      "num_claims": null,
-      "num_policy_items": 184,
-      "num_target_records": 184,
-      "pages_estimate": 214,
+      "num_claims": 619,
+      "num_policy_items": 619,
+      "num_target_records": 619,
+      "pages_estimate": 278,
       "seed": 35540498590913,
       "files": {
         "pdf": "pdfs/mixed_cgl_040_001.pdf",
@@ -1010,11 +1023,11 @@
         "html_exists": true,
         "ground_truth_exists": true,
         "ocr_md_exists": true,
-        "pdf_size_bytes": 1771556,
-        "html_size_bytes": 1011559,
-        "json_size_bytes": 105802,
-        "ocr_md_size_bytes": 1052199,
-        "pdf_pages": 214
+        "pdf_size_bytes": 2005923,
+        "html_size_bytes": 1375584,
+        "json_size_bytes": 458192,
+        "ocr_md_size_bytes": 1195630,
+        "pdf_pages": 278
       },
       "transcripts_available": [
         "ocr"
@@ -1087,7 +1100,7 @@
         "ocr_md_exists": true,
         "pdf_size_bytes": 1040855,
         "html_size_bytes": 448519,
-        "json_size_bytes": 31277,
+        "json_size_bytes": 31323,
         "ocr_md_size_bytes": 246868,
         "pdf_pages": 126
       },
@@ -1100,20 +1113,21 @@
       "difficulty": "multihop",
       "format": "crosspage",
       "domain": "policy_review",
-      "hf_config": "policy_packets",
+      "hf_config": null,
       "lob": "BOP",
       "target_record_type": "policy_packet_item",
       "problems": [
         "businessowners_policy",
         "location_scoped_coverage",
         "form_endorsement_links",
+        "material_clause_extraction",
         "long_range_evidence",
         "heterogeneous_record_list"
       ],
-      "num_claims": null,
-      "num_policy_items": 48,
-      "num_target_records": 48,
-      "pages_estimate": 90,
+      "num_claims": 360,
+      "num_policy_items": 360,
+      "num_target_records": 360,
+      "pages_estimate": 142,
       "seed": 268482452599190,
       "files": {
         "pdf": "pdfs/multihop_bop_012_001.pdf",
@@ -1124,11 +1138,11 @@
         "html_exists": true,
         "ground_truth_exists": true,
         "ocr_md_exists": true,
-        "pdf_size_bytes": 627837,
-        "html_size_bytes": 353167,
-        "json_size_bytes": 24285,
-        "ocr_md_size_bytes": 340861,
-        "pdf_pages": 90
+        "pdf_size_bytes": 777865,
+        "html_size_bytes": 495559,
+        "json_size_bytes": 239867,
+        "ocr_md_size_bytes": 459807,
+        "pdf_pages": 142
       },
       "transcripts_available": [
         "ocr"
@@ -1139,20 +1153,21 @@
       "difficulty": "multihop",
       "format": "crosspage",
       "domain": "policy_review",
-      "hf_config": "policy_packets",
+      "hf_config": null,
       "lob": "WC",
       "target_record_type": "policy_packet_item",
       "problems": [
         "workers_compensation_policy",
         "class_code_payroll_rating",
         "experience_mod_and_schedule_rating",
+        "material_clause_extraction",
         "long_range_evidence",
         "heterogeneous_record_list"
       ],
-      "num_claims": null,
-      "num_policy_items": 113,
-      "num_target_records": 113,
-      "pages_estimate": 140,
+      "num_claims": 510,
+      "num_policy_items": 510,
+      "num_target_records": 510,
+      "pages_estimate": 194,
       "seed": 195680388151197,
       "files": {
         "pdf": "pdfs/multihop_wc_025_001.pdf",
@@ -1163,85 +1178,11 @@
         "html_exists": true,
         "ground_truth_exists": true,
         "ocr_md_exists": true,
-        "pdf_size_bytes": 1408959,
-        "html_size_bytes": 775600,
-        "json_size_bytes": 59782,
-        "ocr_md_size_bytes": 826218,
-        "pdf_pages": 140
-      },
-      "transcripts_available": [
-        "ocr"
-      ]
-    },
-    {
-      "id": "policy_ridgeview_declarations_001",
-      "difficulty": "policy_ridgeview_businessowners_declarations",
-      "format": "production_like_pdf",
-      "domain": "policy_review",
-      "hf_config": "policy_packets",
-      "lob": null,
-      "target_record_type": "policy_schedule_record",
-      "problems": [
-        "high_density_long_list",
-        "production_like_layout",
-        "heterogeneous_policy_records"
-      ],
-      "num_claims": null,
-      "num_policy_items": 800,
-      "num_target_records": 800,
-      "pages_estimate": 30,
-      "seed": null,
-      "files": {
-        "pdf": "pdfs/policy_ridgeview_declarations_001.pdf",
-        "html": "html/policy_ridgeview_declarations_001.html",
-        "ground_truth": "ground_truth/policy_ridgeview_declarations_001.json",
-        "ocr_md": "transcripts/ocr_gemini/policy_ridgeview_declarations_001.md",
-        "pdf_exists": true,
-        "html_exists": true,
-        "ground_truth_exists": true,
-        "ocr_md_exists": true,
-        "pdf_size_bytes": 285279,
-        "html_size_bytes": 119002,
-        "json_size_bytes": 170219,
-        "ocr_md_size_bytes": 80212,
-        "pdf_pages": 30
-      },
-      "transcripts_available": [
-        "ocr"
-      ]
-    },
-    {
-      "id": "policy_ridgeview_declarations_002",
-      "difficulty": "policy_ridgeview_businessowners_declarations",
-      "format": "production_like_pdf",
-      "domain": "policy_review",
-      "hf_config": "policy_packets",
-      "lob": null,
-      "target_record_type": "policy_schedule_record",
-      "problems": [
-        "high_density_long_list",
-        "production_like_layout",
-        "heterogeneous_policy_records"
-      ],
-      "num_claims": null,
-      "num_policy_items": 800,
-      "num_target_records": 800,
-      "pages_estimate": 30,
-      "seed": null,
-      "files": {
-        "pdf": "pdfs/policy_ridgeview_declarations_002.pdf",
-        "html": "html/policy_ridgeview_declarations_002.html",
-        "ground_truth": "ground_truth/policy_ridgeview_declarations_002.json",
-        "ocr_md": "transcripts/ocr_gemini/policy_ridgeview_declarations_002.md",
-        "pdf_exists": true,
-        "html_exists": true,
-        "ground_truth_exists": true,
-        "ocr_md_exists": true,
-        "pdf_size_bytes": 285623,
-        "html_size_bytes": 118943,
-        "json_size_bytes": 170220,
-        "ocr_md_size_bytes": 78467,
-        "pdf_pages": 30
+        "pdf_size_bytes": 1383431,
+        "html_size_bytes": 911008,
+        "json_size_bytes": 327471,
+        "ocr_md_size_bytes": 777435,
+        "pdf_pages": 194
       },
       "transcripts_available": [
         "ocr"

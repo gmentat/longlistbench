@@ -8,6 +8,7 @@
   "target_record_type": "policy_packet_item",
   "target_record_types": [
     "cgl_exposure_item",
+    "policy_clause_item",
     "policy_endorsement_item",
     "policy_form_item",
     "policy_location_item",
@@ -17,6 +18,10 @@
   "schema_fields": [
     "class_code",
     "classification",
+    "clause_scope",
+    "clause_text",
+    "clause_title",
+    "clause_type",
     "coverage_part",
     "edition_date",
     "endorsement_effective_date",
@@ -43,11 +48,12 @@
     "schedule_source",
     "territory"
   ],
-  "num_policy_items": 184,
-  "num_primary_policy_items": 40,
-  "num_target_records": 184,
-  "pages_estimate": 214,
-  "pdf_page_count": 214,
+  "num_claims": 619,
+  "num_policy_items": 619,
+  "num_primary_policy_items": 72,
+  "num_target_records": 619,
+  "pages_estimate": 278,
+  "pdf_page_count": 278,
   "document_count": 1,
   "evidence_pattern": "single_document_policy_packet_long_range_join",
   "minimum_gap_pages_between_primary_and_last_evidence": 174,
@@ -55,6 +61,7 @@
     "commercial_general_liability",
     "exposure_rating_rows",
     "limits_forms_exclusions",
+    "material_clause_extraction",
     "long_range_evidence",
     "heterogeneous_record_list",
     "distractor_forms",
@@ -66,38 +73,26 @@
     "coverage_or_limit_schedule",
     "rating_schedule",
     "forms_schedule",
+    "material_policy_provisions",
     "endorsement_detail",
     "premium_summary",
     "policy_conditions"
   ],
   "record_collections": {
-    "cgl_exposure_item": 40,
-    "policy_endorsement_item": 24,
-    "policy_form_item": 40,
-    "policy_location_item": 40,
-    "policy_premium_item": 40
+    "cgl_exposure_item": 72,
+    "policy_clause_item": 288,
+    "policy_endorsement_item": 43,
+    "policy_form_item": 72,
+    "policy_location_item": 72,
+    "policy_premium_item": 72
   },
   "synthetic_text": {
     "source": "synthetic",
     "real_documents_used_for": "structural reference only",
     "copied_source_text": false,
     "text_generation": {
-      "generator": "gemini",
-      "model": "gemini-3.1-pro-preview",
-      "thinking_level": "high",
-      "prompt_files": [
-        "policy_writer_system.md",
-        "policy_page_bank.md",
-        "cgl_examples.md"
-      ],
-      "page_kinds": {
-        "policy_form": 5,
-        "coverage_form": 0,
-        "notice": 2,
-        "amendatory": 2,
-        "billing": 2,
-        "endorsement": 4
-      }
+      "generator": "template",
+      "model": null
     }
   },
   "has_duplicates": false,
@@ -109,7 +104,8 @@
     "coverage_part -> limits schedule",
     "form_number -> forms and exclusions schedule",
     "endorsement_number -> endorsement detail pages",
-    "exposure_item_id -> premium summary"
+    "exposure_item_id -> premium summary",
+    "location_number/class_code/form_number -> material clause pages"
   ],
   "evidence_map": [
     {
@@ -169,6 +165,17 @@
       ]
     },
     {
+      "section": "material_policy_provisions",
+      "approx_page_after_cover": 113,
+      "join_key": "form_number/state_or_location/class_code",
+      "fields": [
+        "clause_title",
+        "clause_type",
+        "clause_scope",
+        "clause_text"
+      ]
+    },
+    {
       "section": "premium_summary",
       "approx_page_after_cover": 182,
       "join_key": "item_id",
@@ -183,17 +190,12 @@
     "pdf": "pdfs/mixed_cgl_040_001.pdf",
     "html": "html/mixed_cgl_040_001.html",
     "ocr_md": "transcripts/ocr_gemini/mixed_cgl_040_001.md",
-    "json_size_bytes": 105802,
-    "pdf_size_bytes": 1771556,
-    "html_size_bytes": 1011559,
-    "ocr_size_bytes": 1052199,
-    "metadata": "metadata/mixed_cgl_040_001.json"
+    "json_size_bytes": 458192,
+    "pdf_size_bytes": 2005923,
+    "html_size_bytes": 1375584,
+    "ocr_size_bytes": 1098593
   },
   "transcripts_available": [
     "ocr"
-  ],
-  "template": "policy_multihop_cgl",
-  "provenance": "Synthetic generated document. Private production references were used only for visual layout review; no production PDFs, names, account numbers, or raw customer data are included in this repository.",
-  "hf_config": "policy_packets",
-  "dataset_version": "2.0.0"
+  ]
 }

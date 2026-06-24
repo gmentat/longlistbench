@@ -22,7 +22,7 @@ The core operations documents contain dense lists from insurance and fleet workf
     \label{fig:generation-pipeline}
 \end{figure}
 
-The current release prioritizes fewer, larger, more realistic PDFs rather than many small template variants. This choice reflects the intended use case: measuring list-completeness failures at scale. Several PDFs contain more than 1{,}000 target records, and the full corpus contains 33{,}110 target records across 36 PDFs.
+The current release prioritizes fewer, larger, more realistic PDFs rather than many small template variants. This choice reflects the intended use case: measuring list-completeness failures at scale. Several PDFs contain more than 1{,}000 target records, and the full corpus contains 32{,}654 target records across 34 PDFs.
 
 \subsection{Template families}
 \Cref{tab:dataset-scale} summarizes the released corpus. The `core operations' group contains production-like layouts with dense repeated rows. The claim and policy multi-hop groups keep one PDF per sample, but required fields are distributed across distant sections.
@@ -41,16 +41,15 @@ Template family & PDFs & Target records \\
 \texttt{ifta\_tax\_return\_summary} & 4 & 3{,}040 \\
 \texttt{driver\_mvr\_request\_and\_roster} & 3 & 1{,}260 \\
 \texttt{loss\_run\_external} & 3 & 900 \\
-\texttt{policy\_emc\_businessowners\_declarations} & 2 & 1{,}600 \\
 \texttt{vehicle\_schedule\_spreadsheet\_export} & 2 & 1{,}600 \\
 \texttt{ifta\_tax\_return\_inquiry\_detail} & 2 & 1{,}300 \\
 \texttt{driver\_schedule\_spreadsheet\_export} & 1 & 500 \\
 \texttt{claim\_crosspage\_multihop} & 3 & 77 \\
-\texttt{policy\_multihop\_bop} & 1 & 48 \\
-\texttt{policy\_multihop\_wc} & 1 & 113 \\
-\texttt{policy\_multihop\_cgl} & 1 & 184 \\
+\texttt{policy\_multihop\_bop} & 1 & 360 \\
+\texttt{policy\_multihop\_wc} & 1 & 510 \\
+\texttt{policy\_multihop\_cgl} & 1 & 619 \\
 \midrule
-\textbf{Total} & \textbf{36} & \textbf{33{,}110} \\
+\textbf{Total} & \textbf{34} & \textbf{32{,}654} \\
 \bottomrule
 \end{tabular}
 \end{table}

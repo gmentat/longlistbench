@@ -1,7 +1,7 @@
-This revision reports corpus validation rather than a new model leaderboard. Baseline reports from earlier revisions correspond to earlier dataset layouts and should be treated as archival until rerun on the current 36-document OCR corpus.
+This revision reports corpus validation rather than a new model leaderboard. Baseline reports from earlier revisions correspond to earlier dataset layouts and should be treated as archival until rerun on the current 34-document OCR corpus.
 
 \subsection{Artifact completeness}
-The released data directory contains one PDF, one HTML source, one JSON ground-truth file, one per-sample metadata file, and one OCR transcript for each of the 36 manifest instances. The manifest totals are internally consistent: 31{,}165 non-policy target records, 1{,}945 policy target records, and 33{,}110 target records overall.
+The released data directory contains one PDF, one HTML source, one JSON ground-truth file, one per-sample metadata file, and one OCR transcript for each of the 34 manifest instances. The manifest totals are internally consistent: 31{,}165 non-policy target records, 1{,}489 policy target records, and 32{,}654 target records overall.
 
 \begin{table}[H]
 \centering
@@ -12,13 +12,16 @@ The released data directory contains one PDF, one HTML source, one JSON ground-t
 \toprule
 Check & Value \\
 \midrule
-Manifest instances & 36 \\
-PDF artifacts & 36 \\
-HTML artifacts & 36 \\
-Ground-truth JSON files & 36 \\
-OCR transcripts & 36 \\
-Total target records & 33{,}110 \\
+Manifest instances & 34 \\
+PDF artifacts & 34 \\
+HTML artifacts & 34 \\
+Ground-truth JSON files & 34 \\
+OCR transcripts & 34 \\
+Total target records & 32{,}654 \\
 Released transcript condition & OCR \\
+Average identifier coverage & 100.0\% \\
+Tracked identifier-field support & 99.9\% \\
+Records with missing tracked OCR identifiers & 39 \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -26,7 +29,29 @@ Released transcript condition & OCR \\
 \subsection{Benchmark coverage}
 The largest family, IFTA mileage by vehicle, contributes 17{,}565 target records across 8 PDFs. The remaining core operations families add return schedules, tax summaries, driver/MVR rosters, vehicle schedules, and external loss-run rows. These documents stress high-density extraction where the main failure mode is list completeness across many pages.
 
-The multi-hop cases stress a different failure mode. The claim packets contain only 77 target incidents, but the evidence for each incident is distributed across distant packet sections. The policy packets contain 345 multi-hop policy records across BOP, WC, and CGL packets, while the two production-like BOP declaration PDFs add 1{,}600 policy schedule records. These policy documents make the target schema heterogeneous: a system must recover locations, coverage items, forms, endorsements, class-code rows, exposure items, and premium records rather than one repeated row shape.
+Some operations families are intentionally structured reports. Deterministic row parsers can perform well on parts of these files, especially when OCR preserves table headers and row boundaries. We therefore treat them as scale and completeness cases rather than as the primary evidence for hard semantic extraction. The harder regimes are the claim and policy packets, where target records require inherited context, heterogeneous schemas, distant supporting sections, and distractor material.
+
+The multi-hop cases stress a different failure mode. The claim packets contain only 77 target incidents, but the evidence for each incident is distributed across distant packet sections. The policy packets contain 1{,}489 multi-hop policy records across BOP, WC, and CGL packets. These policy documents make the target schema heterogeneous: a system must recover locations, coverage items, forms, material clauses, endorsements, class-code rows, exposure items, and premium records rather than one repeated row shape.
+
+OCR validation checks whether tracked identifiers from the ground truth are visible in the released transcripts. All 34 samples pass the 95\% identifier-coverage threshold, with 100.0\% average identifier coverage and 99.9\% support across tracked identifier field instances. The affected-record count is more conservative: 39 of 32{,}654 records have at least one tracked identifier missing from OCR, mostly because a small number of repeated section headers or row identifiers were not transcribed. These records remain in the release so OCR-conditioned evaluations can measure the practical ceiling imposed by the released transcripts.
 
 \subsection{Baseline status}
-The next empirical step is to rerun one-shot and agentic extraction on the current OCR corpus. We expect one-shot prompting to remain a weak lower bound on the largest PDFs, because the task requires preserving thousands of aligned fields. The stronger comparison for future method papers is among agentic, retrieval-loop, and verification-based systems that can inspect the document incrementally and check record counts against the source.
+We ran one current-corpus diagnostic extraction on the largest CGL policy packet. The input was the released Gemini OCR transcript and the public policy-record field contract; the sandbox workspace did not include the ground-truth file. A Codex GPT-5.5 agentic run with filesystem and code execution produced 619 records for 619 gold records. Field-level F1 was 92.7\%, with 89.9\% recall and 95.6\% precision.
+
+\begin{table}[H]
+\centering
+\small
+\caption{Single-sample agentic OCR probe on the current CGL policy packet.}
+\label{tab:agentic-cgl-probe}
+\begin{tabular}{@{}lrrrrr@{}}
+\toprule
+Sample & Gold & Predicted & F1 & Recall & Precision \\
+\midrule
+\texttt{mixed\_cgl\_040\_001} & 619 & 619 & 92.7\% & 89.9\% & 95.6\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The near-complete record count indicates that an agent with code execution can recover the overall list structure from this OCR transcript. The remaining errors are concentrated in the material policy-clause records: schedule-like families such as forms, endorsements, premiums, exposures, and locations score near perfectly, while exact clause extraction scores lower. This is a useful sanity check for the policy-packet design, but it is not a full leaderboard.
+
+The next empirical step is to rerun one-shot and agentic extraction on the full current OCR corpus. We expect one-shot prompting to remain a weak lower bound on the largest PDFs, because the task requires preserving thousands of aligned fields. The stronger comparison for future method papers is among agentic, retrieval-loop, and verification-based systems that can inspect the document incrementally and check record counts against the source.

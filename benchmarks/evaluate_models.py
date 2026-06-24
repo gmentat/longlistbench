@@ -237,10 +237,10 @@ class EvaluationResult:
 
 
 _QUICK_SAMPLES = [
-    "easy_10_001_detailed",
-    "medium_25_001_detailed",
-    "hard_50_001_detailed",
-    "extreme_100_001_detailed",
+    "loss_run_external_002",
+    "ifta_mileage_by_vehicle_008",
+    "multihop_025_001_crosspage",
+    "mixed_cgl_040_001",
 ]
 
 
@@ -391,13 +391,24 @@ def _discover_evaluation_inputs(
 
 def get_sample_info(sample_name: str) -> tuple[str, str]:
     """Extract tier and format from sample name."""
+    if sample_name.startswith(
+        (
+            "driver_mvr_packet_",
+            "driver_schedule_sparse_",
+            "ifta_",
+            "loss_run_external_",
+            "vehicle_schedule_sparse_",
+        )
+    ):
+        return "core_operations", "production_like_pdf"
+    if sample_name.startswith(("multihop_bop_", "multihop_wc_", "mixed_cgl_")):
+        return "policy_packets", "crosspage"
+    if sample_name.startswith(("multihop_", "mixed_")):
+        return "claim_multihop", "crosspage"
+
     parts = sample_name.split('_')
-    if sample_name.startswith("multihop_"):
-        return "multihop", "crosspage"
-    if sample_name.startswith("mixed_"):
-        return "mixed", "crosspage"
-    tier = parts[0]  # easy, medium, hard, extreme
-    fmt = parts[-1]  # detailed, table
+    tier = parts[0]
+    fmt = parts[-1]
     return tier, fmt
 
 
@@ -1100,12 +1111,22 @@ def generate_report(results: list[EvaluationResult], output_path: Path):
     _append_group_table(
         "## Results by Difficulty Tier",
         "by_tier",
-        ["easy", "medium", "hard", "extreme", "multihop", "mixed"],
+        [
+            "core_operations",
+            "claim_multihop",
+            "policy_packets",
+            "easy",
+            "medium",
+            "hard",
+            "extreme",
+            "multihop",
+            "mixed",
+        ],
     )
     _append_group_table(
         "## Results by Document Format",
         "by_format",
-        ["detailed", "table", "crosspage"],
+        ["production_like_pdf", "crosspage", "detailed", "table"],
     )
 
     md_lines.extend([
@@ -1173,10 +1194,11 @@ def main():
     parser.add_argument('--output-dir', default=None,
                        help='Directory to write predictions and evaluation reports (default: benchmarks/results/scratch)')
     parser.add_argument('--tiers', nargs='+', default=None,
-                       choices=['easy', 'medium', 'hard', 'extreme', 'multihop', 'mixed'],
+                       choices=['easy', 'medium', 'hard', 'extreme', 'multihop', 'mixed',
+                                'core_operations', 'claim_multihop', 'policy_packets'],
                        help='Difficulty tiers to test (default: all)')
     parser.add_argument('--formats', nargs='+', default=None,
-                       choices=['detailed', 'table', 'crosspage'],
+                       choices=['detailed', 'table', 'crosspage', 'production_like_pdf'],
                        help='Document formats to test (default: all)')
     parser.add_argument('--transcripts', nargs='+', default=['ocr'],
                        choices=['canonical', 'ocr'],
@@ -1184,7 +1206,7 @@ def main():
     parser.add_argument('--samples', nargs='+', default=None,
                        help='Specific samples to test (default: all available)')
     parser.add_argument('--quick', action='store_true',
-                       help='Quick test with one sample per tier')
+                       help='Quick test with representative current-release samples')
     parser.add_argument('--offline', action='store_true',
                        help='Regenerate reports from saved *_predicted.json files (no API calls)')
     parser.add_argument('--previous-report', default=None,
@@ -1198,7 +1220,7 @@ def main():
     
     args = parser.parse_args()
     
-    # Quick mode: one sample per tier
+    # Quick mode: representative current-release samples.
     if args.quick:
         args.samples = list(_QUICK_SAMPLES)
     

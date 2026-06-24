@@ -129,7 +129,7 @@ class HuggingFaceExportTests(unittest.TestCase):
                 "min_pages": 15,
                 "max_pages": 144,
                 "domains": {"commercial_insurance_operations": 28},
-                "target_fields": ["incidents", "records"],
+                "target_fields": ["records"],
             },
             "claim_multihop": {
                 "rows": 3,
@@ -142,13 +142,13 @@ class HuggingFaceExportTests(unittest.TestCase):
                 "target_fields": ["incidents"],
             },
             "policy_packets": {
-                "rows": 5,
-                "targets": 1945,
-                "min_targets": 48,
-                "max_targets": 800,
-                "min_pages": 30,
-                "max_pages": 214,
-                "domains": {"policy_review": 5},
+                "rows": 3,
+                "targets": 1489,
+                "min_targets": 360,
+                "max_targets": 619,
+                "min_pages": 142,
+                "max_pages": 278,
+                "domains": {"policy_review": 3},
                 "target_fields": ["records"],
             },
         }
@@ -166,9 +166,10 @@ class HuggingFaceExportTests(unittest.TestCase):
         self.assertIn("evaluate_record_extraction", card)
         self.assertIn("schemas/policy_packet_item.schema.json", card)
         self.assertIn("schemas/loss_run_claim_row.schema.json", card)
-        self.assertIn("schemas/policy_schedule_record.schema.json", card)
+        self.assertNotIn("schemas/policy_schedule_record.schema.json", card)
         self.assertIn("@misc{fedoruk2026longlistbench", card)
         self.assertIn("| `policy_packets` |", card)
+        self.assertIn("The dataset contains 34 PDF documents and 32,654 target records.", card)
 
 
 if __name__ == "__main__":

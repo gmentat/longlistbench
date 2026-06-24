@@ -120,7 +120,8 @@ OCR_RETRY_MIN_WAIT_SECONDS = int(os.getenv("OCR_RETRY_MIN_WAIT_SECONDS", "2"))
 OCR_RETRY_MAX_WAIT_SECONDS = int(os.getenv("OCR_RETRY_MAX_WAIT_SECONDS", "20"))
 DEFAULT_GEMINI_OCR_MODEL = "gemini-3.5-flash"
 DEFAULT_OPENROUTER_OCR_MODEL = "google/gemini-3.5-flash"
-GEMINI_API_KEY_ENV_VARS = ("VERTEX_AI_API_KEY", "GOOGLE_API_KEY", "GEMINI_API_KEY")
+GEMINI_API_KEY_ENV_VARS = ("GOOGLE_API_KEY", "GEMINI_API_KEY")
+VERTEX_API_KEY_ENV_VARS = ("VERTEX_EXPRESS_API_KEY", "VERTEX_AI_API_KEY", "GOOGLE_VERTEX_API_KEY")
 
 
 # Build retriable exceptions tuple
@@ -156,6 +157,18 @@ def _gemini_api_key() -> str | None:
     return None
 
 
+def _vertex_api_key() -> str | None:
+    for env_var in VERTEX_API_KEY_ENV_VARS:
+        api_key = os.getenv(env_var)
+        if api_key and api_key not in {"your-api-key-here", "your-gemini-api-key"}:
+            return api_key
+    return None
+
+
+def _env_truthy(name: str) -> bool:
+    return str(os.getenv(name) or "").strip().lower() in {"1", "true", "yes", "on"}
+
+
 def setup_gemini():
     """Configure Gemini API client with API key from environment variable."""
     if genai is None or types is None:
@@ -163,13 +176,24 @@ def setup_gemini():
         print("Install with: python -m pip install google-genai")
         sys.exit(1)
 
-    api_key = _gemini_api_key()
-    if not api_key:
-        print(f"Error: none of {', '.join(GEMINI_API_KEY_ENV_VARS)} is set.")
-        print("Please set one of these environment variables before running Gemini OCR.")
-        sys.exit(1)
-    
-    return genai.Client(api_key=api_key)
+    gemini_api_key = _gemini_api_key()
+    vertex_api_key = _vertex_api_key()
+
+    if _env_truthy("GOOGLE_GENAI_USE_VERTEXAI") or (vertex_api_key and not gemini_api_key):
+        kwargs: dict[str, Any] = {"vertexai": True}
+        if vertex_api_key:
+            kwargs["api_key"] = vertex_api_key
+        return genai.Client(**kwargs)
+
+    if gemini_api_key:
+        return genai.Client(api_key=gemini_api_key)
+
+    print(
+        "Error: none of "
+        f"{', '.join((*GEMINI_API_KEY_ENV_VARS, *VERTEX_API_KEY_ENV_VARS))} is set."
+    )
+    print("Please set one of these environment variables before running Gemini OCR.")
+    sys.exit(1)
 
 
 def setup_openrouter():

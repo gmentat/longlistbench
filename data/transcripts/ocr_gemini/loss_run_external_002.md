@@ -1,1529 +1,2047 @@
 # Page 1
 
-CLAIMS
-DIRECT ACCESS
++------------+                    Loss Run Report                                     Run ID LR-0001
+|   CLAIMS   |         External carrier loss history - as valued 02/26/2026                     Page 1 of 42
+|   DIRECT   |                                                                            Printed 02/26/2026
+|   ACCESS   |
++------------+
 
-Loss Run Report
+INSURED NAME                        CUSTOMER NO.          POLICY NO.                 STATE          POLICY TERM
+Harborline Produce Transport Inc    C043200               SC00928274                 NJ             04/23/19 - 04/22/20
 
-Insured Name: Pine Delta Transport LLC          Customer No. C190001          Number of Claims: 3
-Policy No. SC00928774                           State: PA
+Effective Date,Claim Rptd,Claim Number,Claimant,Date Reported,Date of Loss,Status,Date Closed,Adjuster,Reserve,Paid,Recovered
+04/23/19,X,00928274-10000,Fairmont Cold Storage,05/14/19,05/13/19,Pending,,Jordan U. Hollis,$1,200.86,$0.00,$0.00
+  Initial Claim Description: roll-up door damage noted during post-trip inspection; rental and downtime amounts were still being reconciled; salvage credit had not posted to the run
+  Continuation: payment history may exclude late-posted recovery activity. Unit TR-1000.
+04/23/19,X,00928274-10001,Bayline Warehouse,05/26/19,05/20/19,Reopened,,Zion P. Larkin,$5,329.23,$339.35,$0.00
+  Initial Claim Description: trailer door contacted by loading equipment | Driver: Rowan X. Foster
+04/23/19,X,00928274-10002,Grove Street Produce,06/07/19,05/27/19,Closed,08/08/19,Morgan T. Ivers,$0.00,$6,424.71,$0.00
+  Initial Claim Description: claim opened from late-submitted repair documentation Unit TR-1034 / Operator Dakota F. Serrano
+  Continuation: payment history may exclude late-posted recovery activity. Unit TR-1034.
+04/23/19,X,00928274-10003,Alder Logistics Repair,06/19/19,06/03/19,Open,,see ledger,see below,see below,see below
+  Initial Claim Description: claim opened from late-submitted repair documentation Unit TR-1051 / Operator Casey Y. Keller
+  Claim ledger: adjuster Taylor D. Ramos; reserve $13,587.04; paid $462.75; recovery $0.00.
+04/23/19,X,00928274-10004,Harbor Medical Supply,07/01/19,06/10/19,Pending,,Morgan H. Mercer,$17,716.98,$1,357.40,$0.00
+  Initial Claim Description: windshield and cowl damage attributed to road debris Driver not supplied in carrier export
+04/23/19,X,00928274-10005,Lakeview Auto Glass,07/13/19,06/17/19,Closed,10/16/19,Zion R. Benton,pending ledger,$14,935.01,$302.00
+  Initial Claim Description: steer tire failure led to roadside service invoice Scheduled driver noted separately: Parker G. Gaines
+  Financial detail: reserve carried as $0.00; payments $14,935.01; recoveries $302.00.
+04/23/19,X,00928274-10006,Tamarack Freight,07/25/19,06/24/19,Closed,11/08/19,Morgan M. Hollis,$0.00,$17,772.54,$0.00
+  Initial Claim Description: cargo shortage noticed after consignee inspection | Driver: Kai U. Gaines
+04/23/19,X,00928274-10007,Alder Logistics Repair,08/06/19,07/01/19,Reopened,,see ledger,see below,see below,see below
+  Initial Claim Description: roll-up door damage noted during post-trip inspection; supplemental invoice was requested from the vendor | Driver: Emery K. Ellis
+  Claim ledger: adjuster Avery Z. Larkin; reserve $30,103.24; paid $2,375.45; recovery $0.00.
+  Continuation: liability review remains tied to the listed unit file. Unit TR-1119.
+Policy period total for SC00928274,,,,,,,,, $67,937.35, $43,667.21, $302.00
 
-Effective Date,Claim Reported,Claim Number,Claimant,Date Reported,Date of Loss,Claim Status,Date Closed,Adjuster,Claim Reserves,Claim Paid,Claim Recovered
-04/13/19,X,00928774-01000,Ridgeway Collision,05/27/21,11/02/19,Closed,03/13/22,Milan Y. Santos,$0.00,$0.00,$0.00
-"Initial Claim Description: Property damage at loading dock",,,,,,,,,,,"Driver: Andre G. Carver"
-04/14/19,X,00928774-01001,Pioneer Equipment Rental,05/28/21,11/03/19,Closed,03/14/22,Maya D. Moreno,$0.00,"$11,298.13","$5,975.30"
-"Initial Claim Description: Trailer door impact during delivery",,,,,,,,,,,"Driver: Mateo L. Gaines"
-04/15/19,X,00928774-01002,Hillcrest Auto Body,05/29/21,11/04/19,Closed,03/15/22,Farah I. Bishop,$0.00,$0.00,"$7,671.71"
-"Initial Claim Description: Parked unit struck overnight",,,,,,,,,,,"Driver: Noemi Q. Serrano"
-Total Incurred for SC00928774:,,,,,,,,,$0.00,"$11,298.13","$13,647.01"
 
----
+INSURED NAME                        CUSTOMER NO.          POLICY NO.                 STATE          POLICY TERM
+Harborline Produce Transport Inc    C043201               SC00928275                 MD             04/22/20 - 04/22/21
 
-CLAIMS
-DIRECT ACCESS
+Effective Date,Claim Rptd,Claim Number,Claimant,Date Reported,Date of Loss,Status,Date Closed,Adjuster,Reserve,Paid,Recovered
+No Claims Reported as of: 02/26/2026,,,,,,,,,,,
+Policy period total,,,,,,,,, $0.00, $0.00, $0.00
 
-Loss Run Report
+Closed claims can reopen if a supplemental medical bill or repair invoice is received.
 
-Insured Name: Pine Delta Transport LLC          Customer No. C190002          Number of Claims: 0
-Policy No. SC00928774                           State: PA
 
-Effective Date,Claim Reported,Claim Number,Claimant,Date Reported,Date of Loss,Claim Status,Date Closed,Adjuster,Claim Reserves,Claim Paid,Claim Recovered
-"No Claims Reported as of: 02/26/2026",,,,,,,,,,,
-Total Incurred:,,,,,,,,,$0.00,$0.00,$0.00
-
----
-
-Page 1 of 39                                                      Printed On: Thursday, February 26, 2026
+Carrier claim history export - underwriting copy                                                                 Page 1 of 42
 
 # Page 2
 
-CLAIMS DIRECT ACCESS
++-----------------------+
+|  CLAIMS DIRECT ACCESS |
++-----------------------+
 
-Loss Run Report
+                                                      Loss Run Report                                               Run ID LR-0002
+                                        External carrier loss history - as valued 02/26/2026                           Page 2 of 42
+                                                                                                                    Printed 02/26/2026
 
-Insured Name: Pine Delta Transport LLC      Customer No. C190002      Number of Claims: 3
-Policy No. SC00928774                       State: PA
+INSURED NAME: Harborline Produce Transport Inc       CUSTOMER NO.: C043202     POLICY NO.: SC00928276     STATE: VA     POLICY TERM: 04/22/21 - 04/22/22
 
-Effective Date,Claim Reported,Claim Number,Claimant,Date Reported,Date of Loss,Claim Status,Date Closed,Adjuster,Claim Reserves,Claim Paid,Claim Recovered
-04/16/19,X,00928774-01003,Alder Foods Distribution,05/30/21,11/05/19,Open,,Marta N. Carver,$27,093.76,$0.00,$3,866.07
-"Initial Claim Description: Backing incident in private yard",,,,,,,,,,Driver: Leah V. Abbott,
-04/17/19,X,00928774-01004,North County Repair,05/31/21,11/06/19,Pending,,Owen S. Gaines,$48,773.91,$0.00,$0.00
-"Initial Claim Description: Parked unit struck overnight",,,,,,,,,,Driver: Caleb A. Talbot,
-04/18/19,X,00928774-01005,Summit Materials,06/01/21,11/07/19,Open,,Priya X. Serrano,$46,999.63,$0.00,$3,794.39
-"Initial Claim Description: Trailer door impact during delivery",,,,,,,,,,Driver: Tessa F. Foster,
-Total Incurred for SC00928774:,,,,,,,,,$122,867.30,$0.00,$7,660.46
+CLAIM SUMMARY CARDS - POLICY PERIOD ACTIVITY
 
----
+CLAIM NUMBER,CLAIMANT,LOSS DATE,REPORTED,RPTD,STATUS,CLOSED,HANDLER / DRIVER,AMOUNTS,DESCRIPTION
+00928276-10008,Canyon Fleet Body,07/07/21,08/17/21,X,Open,,Sawyer F. Voss,"Reserve $34,232.10; paid $1,234.00; recovered $0.00.","reefer unit service call included in repair estimate"
+00928276-10009,East Ridge Collision,07/14/21,07/18/21,X,Pending,,Taylor J. Nolan / Unit TR-1153 / Operator Harper O. Carver,"Reserve $38,361.07; paid $3,054.15; recovered $0.00.","forklift contact with parked trailer during unloading"
+00928276-10010,Bayline Warehouse,07/21/21,07/30/21,X,Closed,12/27/21,Dakota I. Priest / Scheduled driver: Rowan R. Hollis,"Reserve $0.00; paid $29,120.21; recovered $604.00.","fuel-island scrape reported during yard maneuver"
+00928276-10011,Dover Equipment Rental,07/28/21,08/11/21,X,Reopened,,Kai L. Priest / Scheduled driver: Taylor U. Larkin,"Reserve $46,619.11; paid $3,732.85; recovered $0.00.","subrogation file opened for possible third-party recovery; medical reserve was reviewed without closing the file Continuation: vendor documentation was indexed after first notice. TR-1187."
+00928276-10012,Keystone Materials,08/04/21,08/23/21,X,Closed,02/11/22,see adjacent ledger,"Separate ledger entry: Rowan F. Keller; reserve $0.00; paid $34,794.97; recovery $0.00.","towing and storage reimbursement requested after disablement"
 
-CLAIMS DIRECT ACCESS
+POLICY PERIOD TOTAL FOR SC00928276 Reserve $119,212.28 Paid $71,936.18 Recovered $604.00
 
-Loss Run Report
-
-Insured Name: Pine Delta Transport LLC      Customer No. C190003      Number of Claims: 0
-Policy No. SC00928774                       State: PA
-
-Effective Date,Claim Reported,Claim Number,Claimant,Date Reported,Date of Loss,Claim Status,Date Closed,Adjuster,Claim Reserves,Claim Paid,Claim Recovered
-No Claims Reported as of: 02/26/2026,,,,,,,,,,,
-Total Incurred:,,,,,,,,,$0.00,$0.00,$0.00
-
----
-
-Page 2 of 39                                                     Printed On: Thursday, February 26, 2026
+Carrier claim history export - underwriting copy                                                                                 Page 2 of 42
 
 # Page 3
 
 CLAIMS DIRECT ACCESS
-
 Loss Run Report
+External carrier loss history - as valued 02/26/2026
+Run ID LR-0003
+Page 3 of 42
+Printed 02/26/2026
 
-Insured Name: Pine Delta Transport LLC             Customer No. C190003             Number of Claims: 3
-Policy No. SC00928774                              State: PA
+INSURED NAME: Harborline Produce Transport Inc
+CUSTOMER NO.: C043203
+POLICY NO.: SC00928277
+STATE: NY
+POLICY TERM: 04/22/22 - 04/22/23
 
-Effective Date,Claim Reported,Claim Number,Claimant,Date Reported,Date of Loss,Claim Status,Date Closed,Adjuster,Claim Reserves,Claim Paid,Claim Recovered
-04/19/19,X,00928774-01006,Tollway Freight Services,06/02/21,11/08/19,Closed,03/19/22,Sonia C. Abbott,$0.00,$0.00,$0.00
-"Initial Claim Description: Windshield damage from road debris",,,,,,,,,,,"Driver: Greta K. Kaminski"
-04/20/19,X,00928774-01007,Civic Transit Authority,06/03/21,11/09/19,Closed,03/20/22,Cedric H. Talbot,$0.00,$0.00,$0.00
-"Initial Claim Description: Trailer door impact during delivery",,,,,,,,,,,"Driver: Elena P. Haddad"
-04/21/19,X,00928774-01008,Farmstead Supply Co,06/04/21,11/10/19,Closed,03/21/22,Samir M. Foster,$0.00,$0.00,$0.00
-"Initial Claim Description: Cargo shift during hard brake",,,,,,,,,,,"Driver: Milan U. Markovic"
-"Total Incurred for SC00928774:",,,,,,,,,$0.00,$0.00,$0.00
+Effective Date,Claim Rptd,Claim Number,Claimant,Date Reported,Date of Loss,Status,Date Closed,Adjuster,Reserve,Paid,Recovered
+04/22/22,X,00928277-10013,Tamarack Freight,09/04/22,08/11/22,Pending,,Avery B. Quint,"$54,877.20","$4,411.55",$0.00
+"Initial Claim Description: claim opened from late-submitted repair documentation | Driver: Avery C. Serrano",,,,,,,,,,,
+04/22/22,X,00928277-10014,Keystone Materials,09/16/22,08/18/22,Pending,,Winter J. Larkin,pending ledger,"$4,750.90",$0.00
+"Initial Claim Description: windshield and cowl damage attributed to road debris; salvage credit had not posted to the run Unit TR-1238 / Operator Vaughn Z. Carver",,,,,,,,,,,
+"Financial detail: reserve carried as $59,006.58; payments $4,750.90; recoveries $0.00.",,,,,,,,,,,
+"Continuation: closing date reflects carrier system status at valuation. Unit TR-1238.",,,,,,,,,,,
+04/22/22,X,00928277-10015,Quarry Road Terminal,09/28/22,08/25/22,Open,,Morgan I. Priest,"$63,135.93","$2,313.75",$906.00
+"Initial Claim Description: parked tractor struck during overnight staging Unit TR-1255 / Operator Blake S. Carver",,,,,,,,,,,
+04/22/22,X,00928277-10016,East Ridge Collision,10/10/22,09/01/22,Pending,,see ledger,see below,see below,see below
+"Initial Claim Description: claim opened from late-submitted repair documentation Driver not supplied in carrier export",,,,,,,,,,,
+"Claim ledger: adjuster Rowan A. Foster; reserve $67,264.34; paid $5,429.60; recovery $0.00.",,,,,,,,,,,
+04/22/22,X,00928277-10017,Oak Valley Repair,09/10/22,09/08/22,Pending,,Avery O. Priest,"$71,393.76","$5,768.95",$0.00
+"Initial Claim Description: parked tractor struck during overnight staging Scheduled driver noted separately: Reese K. Aldridge",,,,,,,,,,,
+04/22/22,X,00928277-10018,Canyon Fleet Body,09/22/22,09/15/22,Open,,Finley J. Nolan,"$75,522.99","$2,776.50",$0.00
+"Initial Claim Description: parked tractor struck during overnight staging | Driver: Logan W. Keller",,,,,,,,,,,
+"Continuation: vendor documentation was indexed after first notice. Unit TR-1306.",,,,,,,,,,,
+04/22/22,X,00928277-10019,Tamarack Freight,10/04/22,09/22/22,Reopened,,Kai Y. Gaines,"$79,651.75","$6,447.65",$0.00
+"Initial Claim Description: forklift contact with parked trailer during unloading | Driver: Logan K. Osborne",,,,,,,,,,,
+"Section note: Recoveries shown above may not include salvage posted after the valuation date.",,,,,,,,,,,
+04/22/22,X,00928277-10020,Lakeview Auto Glass,10/16/22,09/29/22,Reopened,,Morgan X. Mercer,"$83,780.50","$6,787.00","$1,208.00"
+"Initial Claim Description: rear impact while backing toward a dock door",,,,,,,,,,,
+"Continuation: vendor documentation was indexed after first notice. Unit TR-1340.",,,,,,,,,,,
+04/22/22,X,00928277-10021,Dover Equipment Rental,10/28/22,10/06/22,Reopened,12/28/22,see ledger,see below,see below,see below
+"Initial Claim Description: parking-lot contact reported by third-party claimant; repair estimate remains under carrier review Unit TR-1357 / Operator Quinn I. Osborne",,,,,,,,,,,
+"Claim ledger: adjuster Casey K. Hollis; reserve $87,909.68; paid $7,126.35; recovery $0.00.",,,,,,,,,,,
+"Continuation: claim office noted deductible handling outside this extract. Unit TR-1357.",,,,,,,,,,,
+04/22/22,X,00928277-10022,Grove Street Produce,11/09/22,10/13/22,Pending,,Kai W. Mercer,"$92,038.82","$7,465.70",$0.00
+"Initial Claim Description: loading bay bollard contact reported by warehouse staff; photos were received with the initial notice Scheduled driver noted separately: Avery Y. Nolan",,,,,,,,,,,
+"Continuation: reserve position retained pending supervisor diary review. Unit TR-1374.",,,,,,,,,,,
+04/22/22,X,00928277-10023,Harbor Medical Supply,11/21/22,10/20/22,Open,,Emery P. Benton,pending ledger,"$3,547.75",$0.00
+"Initial Claim Description: trailer door contacted by loading equipment Scheduled driver noted separately: Parker R. Nolan",,,,,,,,,,,
+"Financial detail: reserve carried as $4,167.23; payments $3,547.75; recoveries $0.00.",,,,,,,,,,,
+04/22/22,X,00928277-10024,Mason Retail Group,12/03/22,10/27/22,Reopened,03/07/23,Quinn K. Nolan,"$8,296.68","$8,144.40",$0.00
+"Initial Claim Description: minor bodily injury allegation after a lane-change contact",,,,,,,,,,,
+Policy period total for SC00928277,,,,,,,,,"$747,045.46","$64,970.10","$2,114.00"
 
+continued on next page
 
-CLAIMS DIRECT ACCESS
-
-Loss Run Report
-
-Insured Name: Pine Delta Transport LLC             Customer No. C190004             Number of Claims: 3
-Policy No. SC00928774                              State: PA
-
-Effective Date,Claim Reported,Claim Number,Claimant,Date Reported,Date of Loss,Claim Status,Date Closed,Adjuster,Claim Reserves,Claim Paid,Claim Recovered
-04/22/19,X,00928774-01009,Union Parcel Depot,06/05/21,11/11/19,Closed,03/22/22,Nina R. Kaminski,$0.00,"$30,357.61",$0.00
-"Initial Claim Description: Windshield damage from road debris",,,,,,,,,,,"Driver: Maya Z. Singh"
-04/23/19,X,00928774-01010,Pineview Medical Group,06/06/21,11/12/19,Pending,,Clara W. Haddad,"$12,671.95","$15,228.44",$0.00
-"Initial Claim Description: Windshield damage from road debris",,,,,,,,,,,"Driver: Farah E. Okafor"
-04/24/19,X,00928774-01011,Metro Storage Yard,06/07/21,11/13/19,Pending,,Elias B. Markovic,"$25,500.64","$19,328.33",$594.86
-"Initial Claim Description: Trailer door impact during delivery",,,,,,,,,,,"Driver: Marta J. Keller"
-"Total Incurred for SC00928774:",,,,,,,,,"$38,172.59","$64,914.38",$594.86
-
-
-Page 3 of 39                                                                        Printed On: Thursday, February 26, 2026
+Carrier claim history export - underwriting copy
+Page 3 of 42
 
 # Page 4
 
 CLAIMS DIRECT ACCESS
 
 Loss Run Report
+External carrier loss history - as valued 02/26/2026
 
-Insured Name: Pine Delta Transport LLC    Customer No. C190004    Number of Claims: 6
-Policy No. SC00928774    State: PA
+Run ID LR-0004
+Page 4 of 42
+Printed 02/26/2026
 
-Effective Date,Claim Reported,Claim Number,Claimant,Date Reported,Date of Loss,Claim Status,Date Closed,Adjuster,Claim Reserves,Claim Paid,Claim Recovered
-04/25/19,X,00928811-01012,Riverside Concrete,06/08/21,11/14/19,Closed,03/25/22,Victor G. Singh,$0.00,"$17,054.83","$6,585.29"
-Initial Claim Description: Backing incident in private yard,,,,,,,,,,,Driver: Owen O. Velasquez
-04/26/19,X,00928811-01013,Broad Street Produce,06/09/21,11/15/19,Closed,03/26/22,Rosa L. Okafor,$0.00,$0.00,"$1,140.44"
-Initial Claim Description: Rear-end contact during lane merge,,,,,,,,,,,Driver: Priya T. Ilyin
-04/27/19,X,00928811-01014,Midway Trailer Works,06/10/21,11/16/19,Closed,03/27/22,Tessa Q. Keller,$0.00,$0.00,$0.00
-Initial Claim Description: Minor bodily injury allegation,,,,,,,,,,,Driver: Sonia Y. Rahman
-04/28/19,X,00928811-01015,Ridgeway Collision,06/11/21,11/17/19,Closed,03/28/22,Greta V. Velasquez,$0.00,$0.00,$0.00
-Initial Claim Description: Trailer door impact during delivery,,,,,,,,,,,Driver: Cedric D. Novak
-04/29/19,X,00928811-01016,Pioneer Equipment Rental,06/12/21,11/18/19,Closed,03/29/22,Elena A. Ilyin,$0.00,"$18,773.05","$2,035.05"
-Initial Claim Description: Cargo shift during hard brake,,,,,,,,,,,Driver: Samir I. Roman
-04/30/19,X,00928811-01017,Hillcrest Auto Body,06/13/21,11/19/19,Closed,03/30/22,Milan F. Rahman,$0.00,$0.00,"$7,251.30"
-Initial Claim Description: Trailer door impact during delivery,,,,,,,,,,,Driver: Nina N. Barrera
-Total Incurred for SC00928774:,,,,,,,,,$0.00,"$35,827.88","$17,012.08"
+INSURED NAME: Harborline Produce Transport Inc
+CUSTOMER NO.: C043204
+POLICY NO.: SC00928278
+STATE: PA
+POLICY TERM: 04/22/23 - 04/21/24
 
----
+Effective Date,Claim Rptd,Claim Number,Claimant,Date Reported,Date of Loss,Status,Date Closed,Adjuster,Reserve,Paid,Recovered
+04/22/23,X,00928278-10025,Alder Logistics Repair,12/15/23,11/03/23,Open,,see ledger,see below,see below,see below
+
+Initial Claim Description: forklift contact with parked trailer during unloading | Driver: Parker L. Hollis
+Claim ledger: adjuster Sawyer J. Quint; reserve $12,425.28; paid $3,856.25; recovery $1,510.00.
+
+Policy period total for SC00928278,,,,,,,,, "$12,425.28","$3,856.25","$1,510.00"
+
+Carrier claim history export - underwriting copy
+Page 4 of 42
+
+# Page 5
 
 CLAIMS DIRECT ACCESS
 
 Loss Run Report
+External carrier loss history - as valued 02/26/2026
 
-Insured Name: Pine Delta Transport LLC    Customer No. C190005    Number of Claims: 5
-Policy No. SC00928774    State: PA
+Run ID LR-0005
+Page 5 of 42
+Printed 02/26/2026
 
-Effective Date,Claim Reported,Claim Number,Claimant,Date Reported,Date of Loss,Claim Status,Date Closed,Adjuster,Claim Reserves,Claim Paid,Claim Recovered
-05/01/19,X,00928811-01018,Alder Foods Distribution,06/14/21,11/20/19,Open,,Maya K. Novak,"$8,142.62","$34,271.68",$0.00
-Initial Claim Description: Side-swipe reported near ramp,,,,,,,,,,,Driver: Clara S. Nguyen
-05/02/19,X,00928811-01019,North County Repair,06/15/21,11/21/19,Open,,Farah P. Roman,"$9,697.73","$32,906.09","$1,838.77"
-Initial Claim Description: Rear-end contact during lane merge,,,,,,,,,,,Driver: Elias X. Ivers
-05/03/19,X,00928811-01020,Summit Materials,06/16/21,11/22/19,Closed,04/02/22,Marta U. Talbot,$0.00,$0.00,"$4,241.20"
-Initial Claim Description: Side-swipe reported near ramp,,,,,,,,,,,Driver: Leah C. Haddad
-05/04/19,X,00928811-01021,Tollway Freight Services,06/17/21,11/23/19,Closed,04/03/22,Owen Z. Foster,$0.00,"$1,530.72",$0.00
-Initial Claim Description: Towing and storage reimbursement,,,,,,,,,,,Driver: Caleb H. Markovic
-05/05/19,X,00928811-01022,Civic Transit Authority,06/18/21,11/24/19,Closed,04/04/22,Priya E. Kaminski,$0.00,$0.00,$0.00
-Initial Claim Description: Windshield damage from road debris,,,,,,,,,,,Driver: Tessa M. Singh
-Total Incurred for SC00928774:,,,,,,,,,"$17,840.35","$68,708.49","$6,079.97"
+INSURED NAME: Harborline Produce Transport Inc
+CUSTOMER NO.: C043205
+POLICY NO.: SC00928279
+STATE: OH
+POLICY TERM: 05/10/19 - 05/09/20
 
-Page 4 of 39    Printed On: Thursday, February 26, 2026
+Effective Date,Claim Rptd,Claim Number,Claimant,Date Reported,Date of Loss,Status,Date Closed,Adjuster,Reserve,Paid,Recovered
+05/10/19,X,00928279-10026,Northline Distribution,12/03/19,11/28/19,Open,,Emery J. Larkin,"$16,554.09","$4,010.50","$0.00"
+"Initial Claim Description: property damage reported at a private receiving yard  Unit TR-1442 / Operator Winter X. Gaines",,,,,,,,,,,
+05/10/19,X,00928279-10027,Bayline Warehouse,12/15/19,12/05/19,Open,,Avery N. Carver,"$20,683.97","$4,164.75","$0.00"
+"Initial Claim Description: reefer unit service call included in repair estimate  Unit TR-1459 / Operator Morgan Q. Talbot",,,,,,,,,,,
+05/10/19,X,00928279-10028,Oak Valley Repair,12/27/19,12/12/19,Pending,,Sawyer O. Hollis,"$24,812.10","$9,501.80","$0.00"
+"Initial Claim Description: cargo shortage noticed after consignee inspection; rental and downtime amounts were still being reconciled  Driver not supplied in carrier export",,,,,,,,,,,
+"Continuation: payment history may exclude late-posted recovery activity. Unit TR-1476.",,,,,,,,,,,
+05/10/19,X,00928279-10029,Bayline Warehouse,01/08/20,12/19/19,Closed,06/05/20,Taylor T. Benton,"$0.00","$15,023.29","$0.00"
+"Initial Claim Description: fuel-island scrape reported during yard maneuver  Scheduled driver noted separately: Avery L. Gaines",,,,,,,,,,,
+"Continuation: liability review remains tied to the listed unit file. Unit TR-1493.",,,,,,,,,,,
+05/10/19,X,00928279-10030,Ironwood Trailer Works,01/20/20,12/26/19,Closed,06/28/20,see ledger,see below,see below,see below
+"Initial Claim Description: side-swipe contact reported near an interstate ramp  |  Driver: Kai J. Priest",,,,,,,,,,,
+"Claim ledger: adjuster Taylor O. Foster; reserve $0.00; paid $17,860.56; recovery $1,812.00.",,,,,,,,,,,
+05/10/19,X,00928279-10031,Quarry Road Terminal,02/01/20,01/02/20,Closed,07/21/20,Reese P. Keller,"$0.00","$20,697.19","$0.00"
+"Initial Claim Description: roll-up door damage noted during post-trip inspection  |  Driver: Jordan X. Ramos",,,,,,,,,,,
+05/10/19,X,00928279-10032,Northline Distribution,02/13/20,01/09/20,Reopened,,Winter Y. Benton,pending ledger,"$10,859.20","$0.00"
+"Initial Claim Description: subrogation file opened for possible third-party recovery",,,,,,,,,,,
+"Financial detail: reserve carried as $41,328.41; payments $10,859.20; recoveries $0.00.",,,,,,,,,,,
+05/10/19,X,00928279-10033,Stonebridge Foods,02/25/20,01/16/20,Pending,,Logan S. Gaines,"$45,457.42","$11,198.55","$0.00"
+"Initial Claim Description: steer tire failure led to roadside service invoice; repair estimate remains under carrier review  Unit TR-1561 / Operator Kai A. Ellis",,,,,,,,,,,
+"Continuation: payment history may exclude late-posted recovery activity. Unit TR-1561.",,,,,,,,,,,
+05/10/19,X,00928279-10034,Grove Street Produce,01/26/20,01/23/20,Reopened,,see ledger,see below,see below,see below
+"Initial Claim Description: subrogation file opened for possible third-party recovery  Scheduled driver noted separately: Harper Z. Benton",,,,,,,,,,,
+"Claim ledger: adjuster Reese Q. Talbot; reserve $49,586.35; paid $11,537.90; recovery $0.00.",,,,,,,,,,,
+05/10/19,X,00928279-10035,Tamarack Freight,02/07/20,01/30/20,Open,,Sawyer A. Hollis,"$53,715.30","$5,398.75","$2,114.00"
+"Initial Claim Description: reefer unit service call included in repair estimate; medical reserve was reviewed without closing the file  Scheduled driver noted separately: Winter G. Keller",,,,,,,,,,,
+"Continuation: claim office noted deductible handling outside this extract. Unit TR-1595.",,,,,,,,,,,
+05/10/19,X,00928279-10036,Harbor Medical Supply,02/19/20,02/06/20,Closed,10/02/20,Zion G. Carver,"$0.00","$34,882.20","$0.00"
+"Initial Claim Description: towing and storage reimbursement requested after disablement",,,,,,,,,,,
+"Continuation: liability review remains tied to the listed unit file. Unit TR-1612.",,,,,,,,,,,
+"Policy period total for SC00928279",,,,,,,,,"$252,137.64","$145,134.69","$3,926.00"
 
-# Page 5
+                                                                                                       continued on next page
 
-Loss Run Report
-
-Insured Name: Pine Delta Transport LLC
-Customer No. C190005
-Number of Claims: 6
-Policy No. SC00928774
-State: PA
-
-Effective Date,Claim Reported,Claim Number,Claimant,Date Reported,Date of Loss,Claim Status,Date Closed,Adjuster,Claim Reserves,Claim Paid,Claim Recovered,Initial Claim Description,Driver
-05/06/19,X,00928811-01023,Farmstead Supply Co,06/19/21,11/25/19,Open,,Sonia J. Haddad,"$13,984.00",$0.00,$0.00,Backing incident in private yard,Greta R. Okafor
-05/07/19,X,00928848-01024,Union Parcel Depot,06/20/21,11/26/19,Open,,Cedric O. Markovic,"$74,925.07","$20,674.91",$0.00,Backing incident in private yard,Elena W. Keller
-05/08/19,X,00928848-01025,Pineview Medical Group,06/21/21,11/27/19,Closed,04/07/22,Samir T. Singh,$0.00,"$24,085.31",$0.00,Cargo shift during hard brake,Milan B. Velasquez
-05/09/19,X,00928848-01026,Metro Storage Yard,06/22/21,11/28/19,Closed,04/08/22,Nina Y. Okafor,$0.00,$0.00,$0.00,Backing incident in private yard,Maya G. Ilyin
-05/10/19,X,00928848-01027,Riverside Concrete,06/23/21,11/29/19,Open,,Clara D. Keller,"$4,219.88",$0.00,"$5,793.47",Minor bodily injury allegation,Farah L. Rahman
-05/11/19,X,00928848-01028,Broad Street Produce,06/24/21,11/30/19,Closed,04/10/22,Eias I. Velasquez,$0.00,$0.00,$0.00,Rear-end contact during lane merge,Marta Q. Novak
-Total Incurred for SC00928774,,,,,,,,,"$93,128.95","$44,760.22","$5,793.47",,
-
-
-Loss Run Report
-
-Insured Name: Pine Delta Transport LLC
-Customer No. C190006
-Number of Claims: 6
-Policy No. SC00928774
-State: PA
-
-Effective Date,Claim Reported,Claim Number,Claimant,Date Reported,Date of Loss,Claim Status,Date Closed,Adjuster,Claim Reserves,Claim Paid,Claim Recovered,Initial Claim Description,Driver
-05/12/19,X,00928848-01029,Midway Trailer Works,06/25/21,12/01/19,Open,,Victor N. Ilyin,"$39,886.79",$0.00,"$5,152.03",Side-swipe reported near ramp,Owen V. Roman
-05/13/19,X,00928848-01030,Ridgeway Collision,06/26/21,12/02/19,Closed,04/12/22,Rosa S. Rahman,$0.00,$0.00,$0.00,Trailer door impact during delivery,Priya A. Barrera
-05/14/19,X,00928848-01031,Pioneer Equipment Rental,06/27/21,12/03/19,Pending,,Arman X. Novak,"$25,511.27",$0.00,$0.00,Trailer door impact during delivery,Sonia F. Nguyen
-05/15/19,X,00928848-01032,Hillcrest Auto Body,06/28/21,12/04/19,Closed,04/14/22,Lucian C. Roman,$0.00,"$11,063.70",$0.00,Windshield damage from road debris,Cedric K. Ivers
-05/16/19,X,00928848-01033,Alder Foods Distribution,06/29/21,12/05/19,Closed,04/15/22,Ibrahim H. Barrera,$0.00,"$25,175.31","$6,188.24",Cargo shift during hard brake,Samir P. Petrov
-05/17/19,X,00928848-01034,North County Repair,06/30/21,12/06/19,Pending,,Anika M. Nguyen,"$34,264.43","$28,779.16",$0.00,Cargo shift during hard brake,Nina U. Santos
-Total Incurred for SC00928774,,,,,,,,,"$99,662.49","$65,018.17","$11,340.27",,
-
-Page 5 of 39
-Printed On: Thursday, February 26, 2026
+Carrier claim history export - underwriting copy                                                                 Page 5 of 42
 
 # Page 6
 
 CLAIMS DIRECT ACCESS
 
 Loss Run Report
+External carrier loss history - as valued 02/26/2026
 
-Insured Name: Pine Delta Transport LLC   Customer No. C190006   Number of Claims: 6
-Policy No. SC00928774                    State: PA
+Run ID LR-0006
+Page 6 of 42
+Printed 02/26/2026
 
-Effective Date,Claim Reported,Claim Number,Claimant,Date Reported,Date of Loss,Claim Status,Date Closed,Adjuster,Claim Reserves,Claim Paid,Claim Recovered,Initial Claim Description,Driver
-05/18/19,X,00928848-01035,Summit Materials,07/01/21,12/07/19,Closed,04/17/22,Jonah R. Ivers,$0.00,$0.00,$552.49,Trailer door impact during delivery,Clara Z. Moreno
-05/19/19,X,00928885-01036,Tollway Freight Services,07/02/21,12/08/19,Open,,Reed W. Petrov,$46,424.80,$0.00,$0.00,Rear-end contact during lane merge,Elias E. Bishop
-05/20/19,X,00928885-01037,Civic Transit Authority,07/03/21,12/09/19,Open,,Nolan B. Santos,$36,311.59,$3,697.63,$0.00,Windshield damage from road debris,Victor J. Carver
-05/21/19,X,00928885-01038,Farmstead Supply Co,07/04/21,12/10/19,Open,,Owen G. Moreno,$39,319.74,$6,563.97,$0.00,Minor bodily injury allegation,Rosa O. Gaines
-05/22/19,X,00928885-01039,Union Parcel Depot,07/05/21,12/11/19,Pending,,Priya L. Bishop,$44,398.25,$0.00,$0.00,Minor bodily injury allegation,Arman T. Serrano
-05/23/19,X,00928885-01040,Pineview Medical Group,07/06/21,12/12/19,Closed,04/22/22,Sonia Q. Carver,$0.00,$31,599.51,$8,128.78,Towing and storage reimbursement,Lucian Y. Abbott
-Total Incurred for SC00928774:,,,,,,,,,$166,454.38,$41,861.11,$8,681.27,,
+***
 
+INSURED NAME: Harborline Produce Transport Inc
+CUSTOMER NO.: C043206
+POLICY NO.: SC00928280
+STATE: NJ
+POLICY TERM: 05/09/20 - 05/09/21
 
-CLAIMS DIRECT ACCESS
+"Effective Date","Claim Rptd","Claim Number","Claimant","Date Reported","Date of Loss","Status","Date Closed","Adjuster","Reserve","Paid","Recovered"
+"No Claims Reported as of: 02/26/2026",,,,,,,,,,,
+"Policy period total",,,,,,,,,"$0.00","$0.00","$0.00"
 
-Loss Run Report
+***
 
-Insured Name: Pine Delta Transport LLC   Customer No. C190007   Number of Claims: 5
-Policy No. SC00928774                    State: PA
+INSURED NAME: Harborline Produce Transport Inc
+CUSTOMER NO.: C043207
+POLICY NO.: SC00928281
+STATE: MD
+POLICY TERM: 05/09/21 - 05/09/22
 
-Effective Date,Claim Reported,Claim Number,Claimant,Date Reported,Date of Loss,Claim Status,Date Closed,Adjuster,Claim Reserves,Claim Paid,Claim Recovered,Initial Claim Description,Driver
-05/24/19,X,00928885-01041,Metro Storage Yard,07/07/21,12/13/19,Open,,Cedric V. Gaines,$62,118.65,$25,342.55,$0.00,Minor bodily injury allegation,Ibrahim D. Talbot
-05/25/19,X,00928885-01042,Riverside Concrete,07/08/21,12/14/19,Open,,Samir A. Serrano,$40,952.35,$31,090.86,$0.00,Cargo shift during hard brake,Anika I. Foster
-05/26/19,X,00928885-01043,Broad Street Produce,07/09/21,12/15/19,Open,,Nina F. Abbott,$28,336.23,$4,291.94,$0.00,Towing and storage reimbursement,Jonah N. Kaminski
-05/27/19,X,00928885-01044,Midway Trailer Works,07/10/21,12/16/19,Open,,Clara K. Talbot,$85,760.90,$0.00,$0.00,Windshield damage from road debris,Farah S. Haddad
-05/28/19,X,00928885-01045,Ridgeway Collision,07/11/21,12/17/19,Closed,04/27/22,Elias P. Foster,$0.00,$0.00,$0.00,Minor bodily injury allegation,Marta X. Markovic
-Total Incurred for SC00928774:,,,,,,,,,$217,168.13,$60,725.35,$0.00,,
+RESERVE LEDGER VIEW - OPEN AND CLOSED CLAIM ACTIVITY
 
+"CLAIM / RPTD","CLAIMANT / NOTES","DATES","STATUS","HANDLING","AMOUNTS"
+"00928281-10037
+eff. 05/09/21; rptd X","Juniper Transit Yard
+claim opened from late-submitted repair documentation","02/12/22
+reported 03/02/22","Open
+closed -","Parker X. Nolan
+Driver: Harper V. Hollis","reserve $61,973.09
+paid $5,707.25
+recovered $0.00"
+"00928281-10038
+eff. 05/09/21; rptd X","Dover Equipment Rental
+trailer door contacted by loading equipment","02/19/22
+reported 03/14/22","Closed
+closed 11/17/22","Harper B. Ramos
+Unit TR-1646 / Operator Zion Q. Voss","reserve $0.00
+paid $40,556.76
+recovered $0.00"
+"00928281-10039
+eff. 05/09/21; rptd X","Ironwood Trailer Works
+loading bay bollard contact reported by warehouse staff","02/26/22
+reported 03/26/22","Reopened
+closed 05/14/22","Winter J. Keller
+Unit TR-1663 / Operator Dakota E. Aldridge","reserve $70,231.95
+paid $13,234.65
+recovered $0.00"
+"Policy period total for SC00928281",,,,,"reserve $132,205.04
+paid $59,498.66
+recovered $0.00"
 
-Page 6 of 39                                                           Printed On: Thursday, February 26, 2026
+***
+
+Carrier claim history export - underwriting copy
+Page 6 of 42
 
 # Page 7
 
-       Loss Run Report
-CLAIMS
-DIRECT ACCESS  Insured Name: Pine Delta Transport LLC             Customer No. C190007                 Number of Claims: 6
-               Policy No. SC00928774                               State: PA
+CLAIMS DIRECT ACCESS                     Loss Run Report                                     Run ID LR-0007
+                                External carrier loss history - as valued 02/26/2026                      Page 7 of 42
+                                                                                                    Printed 02/26/2026
 
-   Effective     Claim       Claim Number            Claimant            Date      Date of    Claim Status    Date        Adjuster         Claim Reserves    Claim Paid    Claim Recovered
-     Date      Reported                                                Reported     Loss                     Closed
-   05/29/19        X        00928885-01046   Pioneer Equipment Rental  07/12/21   12/18/19      Pending                 Victor U. Kaminski      $3,363.27      $4,036.62              $0.00
-   Initial Claim Description: Windshield damage from road debris                                                                                                     Driver: Owen C. Singh
-   05/30/19        X        00928885-01047   Hillcrest Auto Body       07/13/21   12/19/19      Closed       04/29/22   Rosa Z. Haddad              $0.00          $0.00              $0.00
-   Initial Claim Description: Parked unit struck overnight                                                                                                          Driver: Priya H. Okafor
-   05/31/19        X        00928922-01048   Alder Foods Distribution  07/14/21   12/20/19      Pending                 Arman E. Markovic      $32,593.67     $15,845.81              $0.00
-   Initial Claim Description: Trailer door impact during delivery                                                                                                   Driver: Sonia M. Keller
-   06/01/19        X        00928922-01049   North County Repair       07/15/21   12/21/19      Pending                 Lucian J. Singh        $20,600.85     $26,038.93              $0.00
-   Initial Claim Description: Side-swipe reported near ramp                                                                                                        Driver: Cedric R. Velasquez
-   06/02/19        X        00928922-01050   Summit Materials          07/16/21   12/22/19      Closed       05/02/22   Ibrahim O. Santos           $0.00     $21,093.50              $0.00
-   Initial Claim Description: Side-swipe reported near ramp                                                                                                          Driver: Samir W. Carver
-   06/03/19        X        00928922-01051   Tollway Freight Services  07/17/21   12/23/19      Closed       05/03/22   Anika T. Moreno             $0.00          $0.00              $0.00
-   Initial Claim Description: Parked unit struck overnight                                                                                                           Driver: Nina B. Gaines
-                                                                                                                   Total Incurred for SC00928774:  $56,557.79     $67,014.86              $0.00
-___________________________________________________________________________________________________________________________________________________________________________________________
+INSURED NAME: Harborline Produce Transport Inc   CUSTOMER NO.: C043208   POLICY NO.: SC00928282   STATE: VA   POLICY TERM: 05/09/22 - 05/09/23
 
-       Loss Run Report
-CLAIMS
-DIRECT ACCESS  Insured Name: Pine Delta Transport LLC             Customer No. C190008                 Number of Claims: 6
-               Policy No. SC00928774                               State: PA
+Effective Date,Claim Rptd,Claim Number,Claimant,Date Reported,Date of Loss,Status,Date Closed,Adjuster,Reserve,Paid,Recovered
+05/09/22,X,00928282-10040,Oak Valley Repair,04/07/23,03/05/23,Closed,06/06/23,Casey B. Delaney,$0.00,"$46,230.13","$2,416.00"
+05/09/22,X,00928282-10041,Oak Valley Repair,04/19/23,03/12/23,Pending,,Avery E. Serrano,pending ledger,"$13,913.35",$0.00
+05/09/22,X,00928282-10042,Juniper Transit Yard,03/20/23,03/19/23,Reopened,06/10/23,Rowan M. Ivers,"$82,618.48","$14,252.70",$0.00
+05/09/22,X,00928282-10043,Riverbend Concrete,06/05/22,05/30/22,Closed,09/06/22,see ledger,see below,see below,see below
+05/09/22,X,00928282-10044,Grove Street Produce,06/17/22,06/06/22,Closed,09/29/22,Jordan M. Serrano,$0.00,"$57,578.12",$0.00
+05/09/22,X,00928282-10045,Dover Equipment Rental,06/29/22,06/13/22,Open,,Sawyer T. Ivers,"$3,005.40","$6,941.25","$2,718.00"
 
-   Effective     Claim       Claim Number            Claimant            Date      Date of    Claim Status    Date        Adjuster         Claim Reserves    Claim Paid    Claim Recovered
-     Date      Reported                                                Reported     Loss                     Closed
-   06/04/19        X        00928922-01052   Civic Transit Authority   07/18/21   12/24/19      Open                    Jonah Y. Bishop        $20,806.99     $14,338.89          $2,228.44
-   Initial Claim Description: Towing and storage reimbursement                                                                                                     Driver: Clara G. Serrano
-   06/05/19        X        00928922-01053   Farmstead Supply Co       07/19/21   12/25/19      Pending                 Reed D. Carver         $59,280.01     $12,782.88              $0.00
-   Initial Claim Description: Trailer door impact during delivery                                                                                                    Driver: Elias L. Abbott
-   06/06/19        X        00928922-01054   Union Parcel Depot        07/20/21   12/26/19      Closed       05/06/22   Nolan I. Gaines             $0.00          $0.00              $0.00
-   Initial Claim Description: Side-swipe reported near ramp                                                                                                         Driver: Victor Q. Talbot
-   06/07/19        X        00928922-01055   Pineview Medical Group    07/21/21   12/27/19      Open                    Daria N. Serrano       $44,940.67          $0.00              $0.00
-   Initial Claim Description: Cargo shift during hard brake                                                                                                           Driver: Rosa V. Foster
-   06/08/19        X        00928922-01056   Metro Storage Yard        07/22/21   12/28/19      Open                    Andre S. Abbott         $5,295.27          $0.00          $2,411.49
-   Initial Claim Description: Parked unit struck overnight                                                                                                          Driver: Arman A. Kaminski
-   06/09/19        X        00928922-01057   Riverside Concrete        07/23/21   12/29/19      Closed       05/09/22   Mateo X. Talbot             $0.00      $5,362.68              $0.00
-   Initial Claim Description: Windshield damage from road debris                                                                                                    Driver: Lucian F. Haddad
-                                                                                                                   Total Incurred for SC00928774: $130,322.94     $32,484.45          $4,639.93
-___________________________________________________________________________________________________________________________________________________________________________________________
-Page 7 of 39                                                                                                                                              Printed On: Thursday, February 26, 2026
+Claim Notes & Details:
+
+00928282-10040:
+  Initial Claim Description: parked tractor struck during overnight staging  Driver not supplied in carrier export
+
+00928282-10041:
+  Initial Claim Description: parking-lot contact reported by third-party claimant  Scheduled driver noted separately: Taylor S. Ivers
+  Financial detail: reserve carried as $78,489.61; payments $13,913.35; recoveries $0.00.
+
+00928282-10042:
+  Initial Claim Description: mirror and fairing damage found after delivery; rental and downtime amounts were still being reconciled  |  Driver: Quinn A. Mercer
+  Continuation: closing date reflects carrier system status at valuation. Unit TR-1714.
+
+00928282-10043:
+  Initial Claim Description: roll-up door damage noted during post-trip inspection  |  Driver: Parker X. Keller
+  Claim ledger: adjuster Vaughn G. Ramos; reserve $0.00; paid $54,741.24; recovery $0.00.
+  Continuation: reserve position retained pending supervisor diary review. Unit TR-1731.
+
+00928282-10044:
+  Initial Claim Description: parked tractor struck during overnight staging; supplemental invoice was requested from the vendor
+  Continuation: claim office noted deductible handling outside this extract. Unit TR-1748.
+
+00928282-10045:
+  Initial Claim Description: side-swipe contact reported near an interstate ramp Unit TR-1765 / Operator Avery P. Voss
+  Continuation: payment history may exclude late-posted recovery activity. Unit TR-1765.
+
+Policy period total for SC00928282:
+Reserves: $164,113.49
+Paid: $193,656.79
+Recovered: $5,134.00
+                                                                                                                   continued on next page
+
+Carrier claim history export - underwriting copy                                                                             Page 7 of 42
 
 # Page 8
 
 CLAIMS DIRECT ACCESS
 
-# Loss Run Report
+Loss Run Report
+External carrier loss history - as valued 02/26/2026
 
-Insured Name: Pine Delta Transport LLC       Customer No. C190008       Number of Claims: 1
-Policy No. SC00928774                       State: PA
+Run ID LR-0008
+Page 8 of 42
+Printed 02/26/2026
 
-Effective Date,Claim Reported,Claim Number,Claimant,Date Reported,Date of Loss,Claim Status,Date Closed,Adjuster,Claim Reserves,Claim Paid,Claim Recovered
-06/10/19,X,00928922-01058,Broad Street Produce,07/24/21,12/30/19,Closed,05/10/22,Noemi C. Foster,$0.00,$13,660.16,$0.00
+INSURED NAME: Harborline Produce Transport Inc
+CUSTOMER NO.: C043209
+POLICY NO.: SC00928283
+STATE: NY
+POLICY TERM: 05/09/23 - 05/08/24
 
-Initial Claim Description: Parked unit struck overnight
-Driver: Ibrahim K. Markovic
+Effective Date,Claim Rptd,Claim Number,Claimant,Date Reported,Date of Loss,Status,Date Closed,Adjuster,Reserve,Paid,Recovered,Description
+05/09/23,X,00928283-10046,Juniper Transit Yard,07/11/23,06/20/23,Pending,,Kai P. Talbot,$7,134.80,$15,610.10,$0.00,Initial Claim Description: fuel-island scrape reported during yard maneuver Scheduled driver noted separately: Emery M. Ivers
+05/09/23,X,00928283-10047,Fairmont Cold Storage,07/23/23,06/27/23,Pending,,Avery S. Delaney,$11,263.99,$15,949.45,$0.00,Initial Claim Description: minor bodily injury allegation after a lane-change contact Scheduled driver noted separately: Dakota U. Aldridge
+05/09/23,X,00928283-10048,Tamarack Freight,08/04/23,07/04/23,Pending,,see ledger,see below,see below,see below,"Initial Claim Description: side-swipe contact reported near an interstate ramp; Claim ledger: adjuster Parker C. Priest; reserve $15,392.56; paid $16,288.80; recovery $0.00."
+05/09/23,X,00928283-10049,Lakeview Auto Glass,08/16/23,07/11/23,Open,,Taylor Z. Gaines,$19,521.05,$7,558.25,$0.00,"Initial Claim Description: fuel-island scrape reported during yard maneuver; claim notes reference separate correspondence from the claimant | Driver: Dakota L. Talbot; Continuation: claim office noted deductible handling outside this extract. Unit TR-1833."
+05/09/23,X,00928283-10050,Lakeview Auto Glass,08/28/23,07/18/23,Reopened,,Rowan G. Delaney,pending ledger,$16,967.50,$3,020.00,"Initial Claim Description: property damage reported at a private receiving yard Unit TR-1850 / Operator Jordan A. Talbot; Financial detail: reserve carried as $23,650.24; payments $16,967.50; recoveries $3,020.00."
+05/09/23,X,00928283-10051,Quarry Road Terminal,07/29/23,07/25/23,Reopened,01/26/24,Logan A. Foster,$27,779.10,$17,306.85,$0.00,Initial Claim Description: roll-up door damage noted during post-trip inspection Unit TR-1867 / Operator Vaughn U. Serrano
+05/09/23,X,00928283-10052,Canyon Fleet Body,08/10/23,08/01/23,Reopened,,see ledger,see below,see below,see below,"Initial Claim Description: rear impact while backing toward a dock door Driver not supplied in carrier export; Claim ledger: adjuster Casey X. Ellis; reserve $31,908.10; paid $17,646.20; recovery $0.00."
+05/09/23,X,00928283-10053,Northline Distribution,08/22/23,08/08/23,Closed,03/12/24,Zion W. Talbot,$0.00,$15,111.99,$0.00,"Initial Claim Description: rear impact while backing toward a dock door Scheduled driver noted separately: Emery Y. Ramos; Continuation: closing date reflects carrier system status at valuation. Unit TR-1901."
+05/09/23,X,00928283-10054,Northline Distribution,09/03/23,08/15/23,Reopened,04/04/24,Finley O. Voss,$40,166.50,$18,324.90,$0.00,Initial Claim Description: parking-lot contact reported by third-party claimant | Driver: Sawyer U. Ivers
+Policy period total for SC00928283,,,,,,,,, $176,816.34, $140,764.04, $3,020.00,
 
-Total Incurred for SC00928774:,,,,, , , , ,$0.00,$13,660.16,$0.00
+continued on next page
 
----
-
-CLAIMS DIRECT ACCESS
-
-# Loss Run Report
-
-Insured Name: Pine Delta Transport LLC       Customer No. C190009       Number of Claims: 0
-Policy No. SC00928774                       State: PA
-
-Effective Date,Claim Reported,Claim Number,Claimant,Date Reported,Date of Loss,Claim Status,Date Closed,Adjuster,Claim Reserves,Claim Paid,Claim Recovered
-,,,,No Claims Reported as of: 02/26/2026,,,,,,,
-
-Total Incurred:,,,,, , , , ,$0.00,$0.00,$0.00
-
-Page 8 of 39                                                              Printed On: Thursday, February 26, 2026
+Carrier claim history export - underwriting copy
+Page 8 of 42
 
 # Page 9
 
-CLAIMS DIRECT ACCESS
++-------------------+
+|      CLAIMS       |
+|      DIRECT       |
+|      ACCESS       |
++-------------------+
 
-# Loss Run Report
+Loss Run Report
+External carrier loss history - as valued 02/26/2026
 
-**Insured Name:** Pine Delta Transport LLC
-**Customer No.** C190009
-**Number of Claims:** 5
-**Policy No.** SC00928774
-**State:** PA
+Run ID LR-0009
+Page 9 of 42
+Printed 02/26/2026
 
-Effective Date,Claim Reported,Claim Number,Claimant,Date Reported,Date of Loss,Claim Status,Date Closed,Adjuster,Claim Reserves,Claim Paid,Claim Recovered,Initial Claim Description,Driver
-06/11/19,X,00928922-01059,Midway Trailer Works,07/25/21,12/31/19,Closed,05/11/22,Leah H. Kaminski,$0.00,"$24,900.91",$0.00,Cargo shift during hard brake,Anika P. Singh
-06/12/19,X,00928959-01060,Ridgeway Collision,07/26/21,01/01/20,Closed,05/12/22,Caleb M. Haddad,$0.00,$0.00,$0.00,Side-swipe reported near ramp,Jonah U. Okafor
-06/13/19,X,00928959-01061,Pioneer Equipment Rental,07/27/21,01/02/20,Closed,05/13/22,Tessa R. Markovic,$0.00,$0.00,$0.00,Trailer door impact during delivery,Reed Z. Keller
-06/14/19,X,00928959-01062,Hillcrest Auto Body,07/28/21,01/03/20,Pending,,Elias W. Singh,"$58,916.97",$0.00,$0.00,Towing and storage reimbursement,Nolan E. Velasquez
-06/15/19,X,00928959-01063,Alder Foods Distribution,07/29/21,01/04/20,Pending,,Victor B. Okafor,"$36,294.01","$23,685.86",$0.00,Side-swipe reported near ramp,Daria J. Ilyin
-Total Incurred for SC00928774:,,,,,,,,,"$95,210.98","$48,586.77",$0.00,,
+INSURED NAME,CUSTOMER NO.,POLICY NO.,STATE,POLICY TERM
+Harborline Produce Transport Inc,C043210,SC00928284,PA,05/27/19 - 05/26/20
 
----
+CLAIM SUMMARY CARDS - POLICY PERIOD ACTIVITY
 
-CLAIMS DIRECT ACCESS
+CLAIM NUMBER,CLAIMANT,LOSS DATE,REPORTED,RPTD,STATUS,CLOSED,HANDLER / DRIVER,AMOUNTS,DESCRIPTION
+00928284-10055,Juniper Transit Yard,09/09/19,10/03/19,X,Pending,,"Zion L. Delaney\nDriver: Winter D. Ellis","Reserve $44,295.62; paid $18,664.25; recovered $3,322.00","cargo shortage noticed after consignee inspection; rental and downtime amounts were still being reconciled\nContinuation: liability review remains tied to the listed unit file. TR-1935."
+00928284-10056,Fairmont Cold Storage,09/16/19,10/15/19,X,Open,,"Reese U. Nolan","Reserve $48,424.10; paid $8,638.00; recovered $0.00","mirror and fairing damage found after delivery; liability position was not final at valuation date"
+00928284-10057,Riverbend Concrete,09/23/19,10/27/19,X,Open,,"see adjacent ledger\nUnit TR-1969 / Operator Rowan L. Foster","Separate ledger entry: Avery O. Quint; reserve $52,553.58; paid $8,792.25; recovery $0.00","trailer door contacted by loading equipment"
+00928284-10058,Mason Retail Group,09/30/19,11/08/19,X,Pending,,"Quinn G. Talbot\nScheduled driver: Vaughn C. Hollis","Reserve $56,682.71; paid $19,682.30; recovered $0.00","parked tractor struck during overnight staging"
 
-# Loss Run Report
+POLICY PERIOD TOTAL FOR SC00928284 Reserve $201,956.01 Paid $55,776.80 Recovered $3,322.00
 
-**Insured Name:** Pine Delta Transport LLC
-**Customer No.** C190010
-**Number of Claims:** 4
-**Policy No.** SC00928774
-**State:** PA
+continued on next page
 
-Effective Date,Claim Reported,Claim Number,Claimant,Date Reported,Date of Loss,Claim Status,Date Closed,Adjuster,Claim Reserves,Claim Paid,Claim Recovered,Initial Claim Description,Driver
-06/16/19,X,00928959-01064,North County Repair,07/30/21,01/05/20,Open,,Rosa G. Keller,"$40,588.02",$0.00,$0.00,Parked unit struck overnight,Andre O. Rahman
-06/17/19,X,00928959-01065,Summit Materials,07/31/21,01/06/20,Closed,05/17/22,Arman L. Velasquez,$0.00,$0.00,$0.00,Minor bodily injury allegation,Mateo T. Novak
-06/18/19,X,00928959-01066,Tollway Freight Services,08/01/21,01/07/20,Closed,05/18/22,Lucian Q. Ilyin,$0.00,"$9,147.43",$0.00,Backing incident in private yard,Noemi Y. Roman
-06/19/19,X,00928959-01067,Civic Transit Authority,08/02/21,01/08/20,Closed,05/19/22,Ibrahim V. Rahman,$0.00,"$30,205.44",$0.00,Side-swipe reported near ramp,Leah D. Barrera
-Total Incurred for SC00928774:,,,,,,,,,"$40,588.02","$39,352.87",$0.00,,
-
-Page 9 of 39
-Printed On: Thursday, February 26, 2026
+Carrier claim history export - underwriting copy
+Page 9 of 42
 
 # Page 10
 
-CLAIMS DIRECT ACCESS
+CLAIMS
+DIRECT
+ACCESS
 
 Loss Run Report
+External carrier loss history - as valued 02/26/2026
 
-Insured Name: Pine Delta Transport LLC
-Customer No. C190010
-Number of Claims: 6
-Policy No. SC00928774
-State: PA
+Run ID LR-0010
+Page 10 of 42
+Printed 02/26/2026
 
-Effective Date,Claim Reported,Claim Number,Claimant,Date Reported,Date of Loss,Claim Status,Date Closed,Adjuster,Claim Reserves,Claim Paid,Claim Recovered,Initial Claim Description,Driver
-06/20/19,X,00928959-01068,Farmstead Supply Co,08/03/21,01/09/20,Open,,Anika A. Novak,"$38,657.35","$0.00","$0.00","Minor bodily injury allegation","Nina I. Nguyen"
-06/21/19,X,00928959-01069,Union Parcel Depot,08/04/21,01/10/20,Pending,,Jonah F. Roman,"$55,574.00","$4,377.72","$0.00","Cargo shift during hard brake","Clara N. Ivers"
-06/22/19,X,00928959-01070,Pineview Medical Group,08/05/21,01/11/20,Pending,,Reed K. Barrera,"$42,922.71","$9,592.55","$0.00","Towing and storage reimbursement","Elias S. Petrov"
-06/23/19,X,00928959-01071,Metro Storage Yard,08/06/21,01/12/20,Closed,05/23/22,Nolan P. Nguyen,"$0.00","$0.00","$0.00","Towing and storage reimbursement","Victor X. Santos"
-06/24/19,X,00928996-01072,Riverside Concrete,08/07/21,01/13/20,Closed,05/24/22,Daria U. Ivers,"$0.00","$10,946.18","$0.00","Parked unit struck overnight","Rosa C. Moreno"
-06/25/19,X,00928996-01073,Broad Street Produce,08/08/21,01/14/20,Open,,Andre Z. Petrov,"$39,691.08","$0.00","$0.00","Windshield damage from road debris","Arman H. Bishop"
-Total Incurred for SC00928774:,,,,,,,,,"$176,845.14","$24,916.45","$0.00",,
+INSURED NAME: Harborline Produce Transport Inc
+CUSTOMER NO.: C043211
+POLICY NO.: SC00928285
+STATE: OH
+POLICY TERM: 05/26/20 - 05/26/21
 
+Effective Date,Claim Rptd,Claim Number,Claimant,Date Reported,Date of Loss,Status,Date Closed,Adjuster,Reserve,Paid,Recovered
+05/26/20,X,00928285-10059,Tamarack Freight,10/08/20,10/06/20,Pending,,Taylor W. Mercer,pending ledger,$20,021.65,$0.00
+"Initial Claim Description: property damage reported at a private receiving yard  Scheduled driver noted separately: Jordan V. Nolan"
+"Financial detail: reserve carried as $60,811.29; payments $20,021.65; recoveries $0.00."
+05/26/20,X,00928285-10060,Tamarack Freight,10/20/20,10/13/20,Closed,12/29/20,Parker Q. Ivers,$0.00,$34,970.50,$3,624.00
+"Initial Claim Description: fuel-island scrape reported during yard maneuver"
+05/26/20,X,00928285-10061,Northline Distribution,11/01/20,10/20/20,Closed,01/21/21,see ledger,see below,see below,see below
+"Initial Claim Description: minor bodily injury allegation after a lane-change contact | Driver: Casey O. Delaney"
+"Claim ledger: adjuster Harper Q. Quint; reserve $0.00; paid $37,807.36; recovery $0.00."
+05/26/20,X,00928285-10062,Keystone Materials,11/13/20,10/27/20,Open,,Morgan J. Priest,$73,198.69,$9,563.50,$0.00
+"Initial Claim Description: property damage reported at a private receiving yard  Unit TR-2054 / Operator Dakota N. Quint"
+05/26/20,X,00928285-10063,Grove Street Produce,11/25/20,11/03/20,Reopened,03/08/21,Casey G. Osborne,$77,327.67,$21,379.05,$0.00
+"Initial Claim Description: cargo shortage noticed after consignee inspection; salvage credit had not posted to the run  Unit TR-2071 / Operator Rowan B. Delaney"
+"Continuation: vendor documentation was indexed after first notice. Unit TR-2071."
+05/26/20,X,00928285-10064,East Ridge Collision,12/07/20,11/10/20,Pending,,Taylor J. Larkin,$81,456.81,$21,718.40,$0.00
+"Initial Claim Description: parked tractor struck during overnight staging  Driver not supplied in carrier export"
+"Continuation: claim office noted deductible handling outside this extract. Unit TR-2088."
+05/26/20,X,00928285-10065,Oak Valley Repair,12/19/20,11/17/20,Pending,,Morgan V. Osborne,$85,585.73,$22,057.75,$3,926.00
+"Initial Claim Description: side-swipe contact reported near an interstate ramp  Scheduled driver noted separately: Reese N. Carver"
+"Section note: Recoveries shown above may not include salvage posted after the valuation date."
+05/26/20,X,00928285-10066,Juniper Transit Yard,12/31/20,11/24/20,Pending,,see ledger,see below,see below,see below
+"Initial Claim Description: forklift contact with parked trailer during unloading; subrogation diary was retained for follow-up | Driver: Reese O. Nolan"
+"Claim ledger: adjuster Parker N. Benton; reserve $89,714.25; paid $22,397.10; recovery $0.00."
+"Continuation: payment history may exclude late-posted recovery activity. Unit TR-2122."
+05/26/20,X,00928285-10067,Canyon Fleet Body,01/12/21,12/01/20,Pending,,Reese V. Ivers,$1,843.05,$22,736.45,$0.00
+"Initial Claim Description: steer tire failure led to roadside service invoice | Driver: Zion J. Keller"
+"Continuation: closing date reflects carrier system status at valuation. Unit TR-2139."
+05/26/20,X,00928285-10068,Tamarack Freight,12/13/20,12/08/20,Closed,05/20/21,Jordan C. Delaney,pending ledger,$57,666.20,$0.00
+"Initial Claim Description: fuel-island scrape reported during yard maneuver"
+"Financial detail: reserve carried as $0.00; payments $57,666.20; recoveries $0.00."
+05/26/20,X,00928285-10069,Quarry Road Terminal,12/25/20,12/15/20,Reopened,06/12/21,Zion G. Quint,$10,101.03,$315.15,$0.00
+"Initial Claim Description: trailer door contacted by loading equipment  Unit TR-2173 / Operator Vaughn N. Ellis"
+05/26/20,X,00928285-10070,Alder Logistics Repair,01/06/21,12/22/20,Reopened,,see ledger,see below,see below,see below
+"Initial Claim Description: reefer unit service call included in repair estimate; repair estimate remains under carrier review  Scheduled driver noted separately: Rowan J. Ellis"
+"Claim ledger: adjuster Winter I. Hollis; reserve $14,230.92; paid $654.50; recovery $4,228.00."
+"Continuation: closing date reflects carrier system status at valuation. Unit TR-2190."
+Policy period total for SC00928285,,,,,,,,,$494,269.44,$271,287.61,$11,778.00
 
-CLAIMS DIRECT ACCESS
+                                                                                                       continued on next page
 
-Loss Run Report
-
-Insured Name: Pine Delta Transport LLC
-Customer No. C190011
-Number of Claims: 5
-Policy No. SC00928774
-State: PA
-
-Effective Date,Claim Reported,Claim Number,Claimant,Date Reported,Date of Loss,Claim Status,Date Closed,Adjuster,Claim Reserves,Claim Paid,Claim Recovered,Initial Claim Description,Driver
-06/26/19,X,00928996-01074,Midway Trailer Works,08/09/21,01/15/20,Closed,05/26/22,Mateo E. Santos,"$0.00","$32,411.95","$0.00","Windshield damage from road debris","Lucian M. Carver"
-06/27/19,X,00928996-01075,Ridgeway Collision,08/10/21,01/16/20,Closed,05/27/22,Noemi J. Moreno,"$0.00","$3,202.20","$0.00","Cargo shift during hard brake","Ibrahim R. Gaines"
-06/28/19,X,00928996-01076,Pioneer Equipment Rental,08/11/21,01/17/20,Closed,05/28/22,Leah O. Bishop,"$0.00","$5,714.92","$0.00","Trailer door impact during delivery","Anika W. Serrano"
-06/29/19,X,00928996-01077,Hillcrest Auto Body,08/12/21,01/18/20,Pending,,Caleb T. Carver,"$7,972.20","$0.00","$0.00","Trailer door impact during delivery","Jonah B. Abbott"
-06/30/19,X,00928996-01078,Alder Foods Distribution,08/13/21,01/19/20,Closed,05/30/22,Tessa Y. Gaines,"$0.00","$0.00","$4,714.99","Rear-end contact during lane merge","Reed G. Talbot"
-Total Incurred for SC00928774:,,,,,,,,,"$7,972.20","$41,329.07","$4,714.99",,
-
-Page 10 of 39
-Printed On: Thursday, February 26, 2026
+Carrier claim history export - underwriting copy                                                       Page 10 of 42
 
 # Page 11
 
-CLAIMS DIRECT ACCESS
-
-Loss Run Report
-
-Insured Name: Pine Delta Transport LLC, Customer No. C190011, Number of Claims: 6
-Policy No. SC00928774, State: PA
-
-Effective Date,Claim Reported,Claim Number,Claimant,Date Reported,Date of Loss,Claim Status,Date Closed,Adjuster,Claim Reserves,Claim Paid,Claim Recovered,Initial Claim Description,Driver
-07/01/19,X,00928996-01079,North County Repair,08/14/21,01/20/20,Pending,,Greta D. Serrano,"$43,117.81","$39,632.49","$6,515.06",Windshield damage from road debris,Nolan L. Foster
-07/02/19,X,00928996-01080,Summit Materials,08/15/21,01/21/20,Open,,Elena I. Rahman,"$77,517.06",$0.00,$0.00,Rear-end contact during lane merge,Daria Q. Barrera
-07/03/19,X,00928996-01081,Tollway Freight Services,08/16/21,01/22/20,Closed,06/02/22,Milan N. Novak,$0.00,"$18,998.15",$0.00,Property damage at loading dock,Andre V. Nguyen
-07/04/19,X,00928996-01082,Civic Transit Authority,08/17/21,01/23/20,Closed,06/03/22,Maya S. Roman,$0.00,"$28,095.58","$8,305.82",Property damage at loading dock,Mateo A. Ivers
-07/05/19,X,00928996-01083,Farmstead Supply Co,08/18/21,01/24/20,Closed,06/04/22,Farah X. Barrera,$0.00,$0.00,$0.00,Side-swipe reported near ramp,Noemi F. Petrov
-07/06/19,X,00929033-01084,Union Parcel Depot,08/19/21,01/25/20,Closed,06/05/22,Marta C. Nguyen,$0.00,$0.00,"$6,727.94",Backing incident in private yard,Leah K. Santos
-Total Incurred for SC00928774:,,,,,,,,, "$120,634.87","$86,726.22","$21,548.82",,
-
-----------------------------------------------------------------------------------------------------
+Run ID LR-0011
+Page 11 of 42
+Printed 02/26/2026
 
 CLAIMS DIRECT ACCESS
-
 Loss Run Report
+External carrier loss history - as valued 02/26/2026
 
-Insured Name: Pine Delta Transport LLC, Customer No. C190012, Number of Claims: 6
-Policy No. SC00928774, State: PA
+INSURED NAME: Harborline Produce Transport Inc
+CUSTOMER NO: C043212
+POLICY NO: SC00928286
+STATE: NJ
+POLICY TERM: 05/26/21 - 05/26/22
 
-Effective Date,Claim Reported,Claim Number,Claimant,Date Reported,Date of Loss,Claim Status,Date Closed,Adjuster,Claim Reserves,Claim Paid,Claim Recovered,Initial Claim Description,Driver
-07/07/19,X,00929033-01085,Pineview Medical Group,08/20/21,01/26/20,Open,,Owen H. Ivers,"$11,683.22","$8,708.26",$0.00,Towing and storage reimbursement,Caleb P. Moreno
-07/08/19,X,00929033-01086,Metro Storage Yard,08/21/21,01/27/20,Open,,Jonah M. Petrov,"$70,263.44",$0.00,"$6,616.32",Cargo shift during hard brake,Tessa U. Bishop
-07/09/19,X,00929033-01087,Riverside Concrete,08/22/21,01/28/20,Open,,Reed R. Santos,"$72,029.47","$9,472.33",$0.00,Cargo shift during hard brake,Greta Z. Carver
-07/10/19,X,00929033-01088,Broad Street Produce,08/23/21,01/29/20,Closed,06/09/22,Nolan W. Moreno,$0.00,$0.00,$0.00,Backing incident in private yard,Elena E. Gaines
-07/11/19,X,00929033-01089,Midway Trailer Works,08/24/21,01/30/20,Closed,06/10/22,Daria B. Bishop,$0.00,"$40,597.07","$2,024.27",Side-swipe reported near ramp,Milan J. Serrano
-07/12/19,X,00929033-01090,Ridgeway Collision,08/25/21,01/31/20,Closed,06/11/22,Andre G. Carver,$0.00,$0.00,"$5,920.34",Minor bodily injury allegation,Maya O. Abbott
-Total Incurred for SC00928774:,,,,,,,,, "$153,976.13","$58,777.66","$14,560.93",,
+Effective Date,Claim Rptd,Claim Number,Claimant,Date Reported,Date of Loss,Status,Date Closed,Adjuster,Reserve,Paid,Recovered
+No Claims Reported as of: 02/26/2026,,,,,,,,,,,
+Policy period total,,,,,,,,,$0.00,$0.00,$0.00
 
-Page 11 of 39, Printed On: Thursday, February 26, 2026
+INSURED NAME: Harborline Produce Transport Inc
+CUSTOMER NO: C043213
+POLICY NO: SC00928287
+STATE: MD
+POLICY TERM: 05/26/22 - 05/26/23
+
+Effective Date,Claim Rptd,Claim Number,Claimant,Date Reported,Date of Loss,Status,Date Closed,Adjuster,Reserve,Paid,Recovered
+05/26/22,X,00928287-10071,Juniper Transit Yard,01/18/23,12/29/22,Open,,Sawyer H. Benton,"$18,359.07",$451.75,$0.00
+Initial Claim Description: cargo shortage noticed after consignee inspection Scheduled driver noted separately: Dakota K. Gaines,,,,,,,,,,,
+05/26/22,X,00928287-10072,Harbor Medical Supply,01/30/23,01/05/23,Open,,Taylor H. Quint,"$22,488.54",$606.00,$0.00
+Initial Claim Description: trailer door contacted by loading equipment,,,,,,,,,,,
+Continuation: payment history may exclude late-posted recovery activity. Unit TR-2224.,,,,,,,,,,,
+05/26/22,X,00928287-10073,Harbor Medical Supply,02/11/23,01/12/23,Open,,Harper I. Delaney,"$26,617.64",$760.25,$0.00
+Initial Claim Description: roll-up door damage noted during post-trip inspection | Driver: Kai Z. Quint,,,,,,,,,,,
+Continuation: claim office noted deductible handling outside this extract. Unit TR-2241.,,,,,,,,,,,
+05/26/22,X,00928287-10074,Harbor Medical Supply,02/23/23,01/19/23,Pending,,Parker S. Nolan,"$30,746.49","$2,011.90",$0.00
+Initial Claim Description: steer tire failure led to roadside service invoice Unit TR-2258 / Operator Harper G. Talbot,,,,,,,,,,,
+05/26/22,X,00928287-10075,Lakeview Auto Glass,03/07/23,01/26/23,Reopened,10/28/23,see ledger,see below,see below,see below
+Initial Claim Description: claim opened from late-submitted repair documentation Unit TR-2275 / Operator Morgan T. Quint,,,,,,,,,,,
+Claim ledger: adjuster Logan X. Gaines; reserve $34,875.10; paid $2,351.25; recovery $4,530.00.,,,,,,,,,,,
+05/26/22,X,00928287-10076,Oak Valley Repair,02/05/23,02/02/23,Closed,10/09/23,Sawyer O. Larkin,$0.00,"$12,362.11",$0.00
+Initial Claim Description: towing and storage reimbursement requested after disablement Driver not supplied in carrier export,,,,,,,,,,,
+05/26/22,X,00928287-10077,Alder Logistics Repair,02/17/23,02/09/23,Open,,Quinn O. Carver,pending ledger,"$1,377.25",$0.00
+Initial Claim Description: roll-up door damage noted during post-trip inspection; photos were received with the initial notice; repair estimate remains under carrier review Scheduled driver noted separately: Logan H. Keller,,,,,,,,,,,
+Financial detail: reserve carried as $43,133.64; payments $1,377.25; recoveries $0.00.,,,,,,,,,,,
+Continuation: liability review remains tied to the listed unit file. Unit TR-2309.,,,,,,,,,,,
+Policy period total for SC00928287,,,,,,,,,"$176,220.48","$19,920.51","$4,530.00"
+
+Carrier claim history export - underwriting copy
+Page 11 of 42
 
 # Page 12
 
 CLAIMS DIRECT ACCESS
+Loss Run Report
+External carrier loss history - as valued 02/26/2026
 
-# Loss Run Report
+Run ID LR-0012
+Page 12 of 42
+Printed 02/26/2026
 
-**Insured Name:** Pine Delta Transport LLC
-**Customer No.** C190012
-**Number of Claims:** 3
-**Policy No.** SC00928774
-**State:** PA
+INSURED NAME: Harborline Produce Transport Inc
+CUSTOMER NO.: C043214
+POLICY NO.: SC00928288
+STATE: VA
+POLICY TERM: 05/26/23 - 05/25/24
 
-Effective Date,Claim Reported,Claim Number,Claimant,Date Reported,Date of Loss,Claim Status,Date Closed,Adjuster,Claim Reserves,Claim Paid,Claim Recovered
-07/13/19,X,00929033-01091,Pioneer Equipment Rental,08/26/21,02/01/20,Closed,06/12/22,Mateo L. Gaines,"$0.00","$0.00","$0.00"
-"Initial Claim Description: Minor bodily injury allegation",,,,,,,,,,,Driver: Farah T. Talbot
-07/14/19,X,00929033-01092,Hillcrest Auto Body,08/27/21,02/02/20,Closed,06/13/22,Noemi Q. Serrano,"$0.00","$9,255.07","$6,401.27"
-"Initial Claim Description: Windshield damage from road debris",,,,,,,,,,,Driver: Ibrahim Y. Foster
-07/15/19,X,00929033-01093,Alder Foods Distribution,08/28/21,02/03/20,Pending,,Leah V. Abbott,"$12,230.99","$19,542.65","$363.21"
-"Initial Claim Description: Property damage at loading dock",,,,,,,,,,,Driver: Anika D. Kaminski
-Total Incurred for SC00928774:,,,,,,,,, "$12,230.99","$28,797.72","$6,764.48"
+Effective Date,Claim Rptd,Claim Number,Claimant,Date Reported,Date of Loss,Status,Date Closed,Adjuster,Reserve,Paid,Recovered
+05/26/23,X,00928288-10078,Harbor Medical Supply,02/29/24,02/16/24,Pending,,Logan N. Aldridge,"$47,262.62","$3,369.30",$0.00
+"Initial Claim Description: subrogation file opened for possible third-party recovery | Driver: Blake Z. Foster",,,,,,,,,,,
+05/26/23,X,00928288-10079,Canyon Fleet Body,03/12/24,02/23/24,Pending,,see ledger,see below,see below,see below
+"Initial Claim Description: parked tractor struck during overnight staging | Driver: Kai S. Carver",,,,,,,,,,,
+"Claim ledger: adjuster Emery P. Priest; reserve $51,391.81; paid $3,708.65; recovery $0.00.",,,,,,,,,,,
+05/26/23,X,00928288-10080,Tamarack Freight,03/24/24,03/01/24,Closed,06/12/24,Sawyer Z. Serrano,$0.00,"$23,710.36","$4,832.00"
+"Initial Claim Description: trailer door contacted by loading equipment",,,,,,,,,,,
+05/26/23,X,00928288-10081,Dover Equipment Rental,04/05/24,03/08/24,Pending,,Morgan K. Priest,"$59,649.90","$4,387.35",$0.00
+"Initial Claim Description: forklift contact with parked trailer during unloading Unit TR-2377 / Operator Rowan E. Gaines",,,,,,,,,,,
+05/26/23,X,00928288-10082,Grove Street Produce,04/17/24,03/15/24,Pending,,Jordan G. Keller,"$63,778.77","$4,726.70",$0.00
+"Initial Claim Description: towing and storage reimbursement requested after disablement Scheduled driver noted separately: Taylor T. Delaney",,,,,,,,,,,
+05/26/23,X,00928288-10083,Mason Retail Group,04/29/24,03/22/24,Reopened,,Morgan S. Carver,"$67,907.37","$5,066.05",$0.00
+"Initial Claim Description: loading bay bollard contact reported by warehouse staff Scheduled driver noted separately: Taylor U. Nolan",,,,,,,,,,,
+05/26/23,X,00928288-10084,Palisade Container,03/30/24,03/29/24,Open,,see ledger,see below,see below,see below
+"Initial Claim Description: rear impact while backing toward a dock door; supplemental invoice was requested from the vendor",,,,,,,,,,,
+"Claim ledger: adjuster Morgan D. Carver; reserve $72,036.99; paid $2,457.00; recovery $0.00.",,,,,,,,,,,
+"Continuation: claim office noted deductible handling outside this extract. Unit TR-2428.",,,,,,,,,,,
+05/26/23,X,00928288-10085,Dover Equipment Rental,04/11/24,04/05/24,Reopened,,Avery J. Larkin,"$76,165.08","$5,744.75","$5,134.00"
+"Initial Claim Description: windshield and cowl damage attributed to road debris | Driver: Taylor U. Foster",,,,,,,,,,,
+05/26/23,X,00928288-10086,East Ridge Collision,06/28/23,06/17/23,Open,,Emery G. Keller,pending ledger,"$2,765.50",$0.00
+"Initial Claim Description: fuel-island scrape reported during yard maneuver Unit TR-2462 / Operator Quinn F. Foster",,,,,,,,,,,
+"Financial detail: reserve carried as $80,294.08; payments $2,765.50; recoveries $0.00.",,,,,,,,,,,
+05/26/23,X,00928288-10087,Canyon Fleet Body,07/10/23,06/24/23,Reopened,12/14/23,Rowan V. Mercer,"$84,423.40","$6,423.45",$0.00
+"Initial Claim Description: trailer door contacted by loading equipment Unit TR-2479 / Operator Morgan R. Keller",,,,,,,,,,,
+Policy period total for SC00928288,,,,,,,,, "$602,910.02","$62,359.11","$9,966.00"
 
----
+Driver information is shown only when included in the carrier export.
+continued on next page
 
-CLAIMS DIRECT ACCESS
-
-# Loss Run Report
-
-**Insured Name:** Pine Delta Transport LLC
-**Customer No.** C190013
-**Number of Claims:** 2
-**Policy No.** SC00928774
-**State:** PA
-
-Effective Date,Claim Reported,Claim Number,Claimant,Date Reported,Date of Loss,Claim Status,Date Closed,Adjuster,Claim Reserves,Claim Paid,Claim Recovered
-07/16/19,X,00929033-01094,North County Repair,08/29/21,02/04/20,Closed,06/15/22,Caleb A. Talbot,"$0.00","$20,788.22","$0.00"
-"Initial Claim Description: Towing and storage reimbursement",,,,,,,,,,,Driver: Jonah I. Haddad
-07/17/19,X,00929033-01095,Summit Materials,08/30/21,02/05/20,Pending,,Tessa F. Foster,"$52,209.11","$0.00","$8,843.55"
-"Initial Claim Description: Towing and storage reimbursement",,,,,,,,,,,Driver: Reed N. Markovic
-Total Incurred for SC00928774:,,,,,,,,, "$52,209.11","$20,788.22","$8,843.55"
-
----
-
-Page 12 of 39  
-Printed On: Thursday, February 26, 2026
+Carrier claim history export - underwriting copy
+Page 12 of 42
 
 # Page 13
 
-CLAIMS DIRECT ACCESS
+  CLAIMS
+  DIRECT
+  ACCESS
+
 Loss Run Report
+External carrier loss history - as valued 02/26/2026
 
-Insured Name: Pine Delta Transport LLC
-Customer No. C190013
-Number of Claims: 3
-Policy No. SC00928774
-State: PA
+Run ID LR-0013
+Page 13 of 42
+Printed 02/26/2026
 
-Effective Date,Claim Reported,Claim Number,Claimant,Date Reported,Date of Loss,Claim Status,Date Closed,Adjuster,Claim Reserves,Claim Paid,Claim Recovered
-07/18/19,X,00929070-01096,Tollway Freight Services,08/31/21,02/06/20,Closed,06/17/22,Greta K. Kaminski,$0.00,"$19,930.92","$6,915.45"
-"Initial Claim Description: Towing and storage reimbursement",,,,,,,,,,,Driver: Nolan S. Singh
-07/19/19,X,00929070-01097,Civic Transit Authority,09/01/21,02/07/20,Pending,,Elena P. Haddad,"$79,932.87",$0.00,"$7,132.09"
-"Initial Claim Description: Property damage at loading dock",,,,,,,,,,,Driver: Daria X. Okafor
-07/20/19,X,00929070-01098,Farmstead Supply Co,09/02/21,02/08/20,Closed,06/19/22,Milan U. Markovic,$0.00,$0.00,$0.00
-"Initial Claim Description: Towing and storage reimbursement",,,,,,,,,,,Driver: Andre C. Keller
-"Total Incurred for SC00928774:",,,,,,,,,"$79,932.87","$19,930.92","$14,047.54"
+INSURED NAME: Harborline Produce Transport Inc
+CUSTOMER NO.: C043215
+POLICY NO.: SC00928289
+STATE: NY
+POLICY TERM: 06/13/19 - 06/12/20
 
-------------------------------------------------------------------------------------------------------
+RESERVE LEDGER VIEW - OPEN AND CLOSED CLAIM ACTIVITY
 
-CLAIMS DIRECT ACCESS
-Loss Run Report
+"CLAIM / RPTD","CLAIMANT / NOTES","DATES","STATUS","HANDLING","AMOUNTS"
+"00928289-10088
+eff. 06/13/19; rptd X","Canyon Fleet Body
+windshield and cowl damage attributed to road debris; liability position was not final at valuation date","07/19/19
+reported 08/09/19","Closed
+closed 01/24/20","Parker C. Gaines
+Driver not supplied in carrier export","reserve $0.00
+paid $46,406.60
+recovered $0.00"
+"00928289-10089
+eff. 06/13/19; rptd X","Quarry Road Terminal
+cargo load shifted during an abrupt traffic stop","07/16/19
+reported 08/21/19","Closed
+closed 02/16/20","Casey V. Benton
+Scheduled driver: Reese K. Serrano","reserve $0.00
+paid $49,243.95
+recovered $0.00"
+"Policy period total for SC00928289","","","","","reserve $0.00
+paid $95,650.55
+recovered $0.00"
 
-Insured Name: Pine Delta Transport LLC
-Customer No. C190014
-Number of Claims: 0
-Policy No. SC00928774
-State: PA
+continued on next page
 
-Effective Date,Claim Reported,Claim Number,Claimant,Date Reported,Date of Loss,Claim Status,Date Closed,Adjuster,Claim Reserves,Claim Paid,Claim Recovered
-"No Claims Reported as of: 02/26/2026",,,,,,,,,,,
-"Total Incurred:",,,,,,,,,$0.00,$0.00,$0.00
-
-------------------------------------------------------------------------------------------------------
-
-Page 13 of 39
-Printed On: Thursday, February 26, 2026
+Carrier claim history export - underwriting copy
+Page 13 of 42
 
 # Page 14
 
 CLAIMS DIRECT ACCESS
 
-Loss Run Report
+                                         Loss Run Report                                     Run ID LR-0014
+                                External carrier loss history - as valued 02/26/2026         Page 14 of 42
+                                                                                             Printed 02/26/2026
 
-Insured Name: Pine Delta Transport LLC           Customer No. C190014           Number of Claims: 3
-Policy No. SC00928774                          State: PA
+INSURED NAME: Harborline Produce Transport Inc       CUSTOMER NO.: C043216        POLICY NO.: SC00928290      STATE: PA      POLICY TERM: 06/12/20 - 06/12/21
 
-Effective Date,Claim Reported,Claim Number,Claimant,Date Reported,Date of Loss,Claim Status,Date Closed,Adjuster,Claim Reserves,Claim Paid,Claim Recovered
-07/21/19,X,00929070-01099,Union Parcel Depot,09/03/21,02/09/20,Closed,06/20/22,Maya Z. Singh,$0.00,$36,877.91,$8,589.97
-Initial Claim Description: Cargo shift during hard brake,,,,,,,,,,,Driver: Mateo H. Velasquez
-07/22/19,X,00929070-01100,Pineview Medical Group,09/04/21,02/10/20,Pending,,,Farah E. Okafor,$42,627.29,$12,762.50,$4,959.45
-Initial Claim Description: Towing and storage reimbursement,,,,,,,,,,,Driver: Noemi M. Ilyin
-07/23/19,X,00929070-01101,Metro Storage Yard,09/05/21,02/11/20,Open,,,Marta J. Keller,$39,420.17,$30,203.75,$0.00
-Initial Claim Description: Backing incident in private yard,,,,,,,,,,,Driver: Leah R. Rahman
-Total Incurred for SC00928774:,,,,,,,,,$82,047.46,$79,844.16,$13,549.42
+Effective Date,Claim Rptd,Claim Number,Claimant,Date Reported,Date of Loss,Status,Date Closed,Adjuster,Reserve,Paid,Recovered
+06/12/20,X,00928290-10090,Ironwood Trailer Works,09/01/20,08/01/20,Closed,03/10/21,Casey P. Gaines,$0.00,"$52,080.94","$5,436.00"
+"Initial Claim Description: parking-lot contact reported by third-party claimant | Driver: Taylor M. Foster"
+06/12/20,X,00928290-10091,Lakeview Auto Glass,09/13/20,08/08/20,Reopened,,Taylor M. Serrano,"$8,939.18","$7,780.85",$0.00
+"Initial Claim Description: subrogation file opened for possible third-party recovery; medical reserve was reviewed without closing the file | Driver: Harper A. Osborne"
+"Continuation: vendor documentation was indexed after first notice. Unit TR-2547."
+06/12/20,X,00928290-10092,Canyon Fleet Body,09/25/20,08/15/20,Reopened,,Dakota J. Gaines,"$13,068.15","$8,120.20",$0.00
+"Initial Claim Description: mirror and fairing damage found after delivery"
+"Continuation: claim office noted deductible handling outside this extract. Unit TR-2564."
+06/12/20,X,00928290-10093,Palisade Container,08/26/20,08/22/20,Pending,,see ledger,see below,see below,see below
+"Initial Claim Description: subrogation file opened for possible third-party recovery Unit TR-2581 / Operator Vaughn I. Talbot"
+"Claim ledger: adjuster Morgan U. Quint; reserve $17,197.80; paid $8,459.55; recovery $0.00."
+06/12/20,X,00928290-10094,Riverbend Concrete,09/07/20,08/29/20,Open,,Jordan H. Ramos,"$21,326.83","$3,999.50",$0.00
+"Initial Claim Description: roll-up door damage noted during post-trip inspection Scheduled driver noted separately: Reese Y. Talbot"
+06/12/20,X,00928290-10095,Juniper Transit Yard,09/19/20,09/05/20,Pending,,Dakota A. Carver,pending ledger,"$9,138.25","$5,738.00"
+"Initial Claim Description: subrogation file opened for possible third-party recovery Scheduled driver noted separately: Emery G. Ivers"
+"Financial detail: reserve carried as $25,455.97; payments $9,138.25; recoveries $5,738.00."
+06/12/20,X,00928290-10096,Alder Logistics Repair,10/01/20,09/12/20,Open,,Logan K. Quint,"$29,584.43","$4,308.00",$0.00
+"Initial Claim Description: cargo shortage noticed after consignee inspection"
+06/12/20,X,00928290-10097,Grove Street Produce,10/13/20,09/19/20,Pending,,see ledger,see below,see below,see below
+"Initial Claim Description: towing and storage reimbursement requested after disablement | Driver: Dakota I. Talbot"
+"Claim ledger: adjuster Kai V. Benton; reserve $33,713.05; paid $9,816.95; recovery $0.00."
+06/12/20,X,00928290-10098,Harbor Medical Supply,10/25/20,09/26/20,Reopened,,Logan X. Mercer,"$37,842.72","$10,156.30",$0.00
+"Initial Claim Description: roll-up door damage noted during post-trip inspection; repair estimate remains under carrier review Unit TR-2666 / Operator Harper O. Foster"
+"Continuation: closing date reflects carrier system status at valuation. Unit TR-2666."
+06/12/20,X,00928290-10099,Bayline Warehouse,11/06/20,10/03/20,Pending,,Taylor N. Mercer,"$41,971.07","$10,495.65",$0.00
+"Initial Claim Description: parked tractor struck during overnight staging; coverage was accepted subject to deductible application Unit TR-2683 / Operator Emery O. Ramos"
+"Continuation: closing date reflects carrier system status at valuation. Unit TR-2683."
+06/12/20,X,00928290-10100,Juniper Transit Yard,11/18/20,10/10/20,Reopened,,Winter C. Voss,"$46,100.38","$10,835.00","$6,040.00"
+"Initial Claim Description: windshield and cowl damage attributed to road debris Driver not supplied in carrier export"
+06/12/20,X,00928290-10101,Alder Logistics Repair,10/19/20,10/17/20,Reopened,,Jordan B. Serrano,"$50,229.51","$11,174.35",$0.00
+"Initial Claim Description: forklift contact with parked trailer during unloading Scheduled driver noted separately: Rowan T. Aldridge"
+06/12/20,X,00928290-10102,Bayline Warehouse,10/31/20,10/24/20,Open,,see ledger,see below,see below,see below
+"Initial Claim Description: steer tire failure led to roadside service invoice | Driver: Quinn F. Osborne"
+"Claim ledger: adjuster Taylor T. Nolan; reserve $54,358.26; paid $5,233.50; recovery $0.00."
+"Policy period total for SC00928290",,,,,,,,"$379,787.35","$151,599.04","$17,214.00"
 
-
-CLAIMS DIRECT ACCESS
-
-Loss Run Report
-
-Insured Name: Pine Delta Transport LLC           Customer No. C190015           Number of Claims: 0
-Policy No. SC00928774                          State: PA
-
-Effective Date,Claim Reported,Claim Number,Claimant,Date Reported,Date of Loss,Claim Status,Date Closed,Adjuster,Claim Reserves,Claim Paid,Claim Recovered
-No Claims Reported as of: 02/26/2026,,,,,,,,,,,
-Total Incurred:,,,,,,,,,$0.00,$0.00,$0.00
-
-
-Page 14 of 39                                                                        Printed On: Thursday, February 26, 2026
+Carrier claim history export - underwriting copy                                              Page 14 of 42
 
 # Page 15
 
 CLAIMS DIRECT ACCESS
+Loss Run Report
+External carrier loss history - as valued 02/26/2026
 
-# Loss Run Report
+Run ID LR-0015
+Page 15 of 42
+Printed 02/26/2026
 
-**Insured Name:** Pine Delta Transport LLC  
-**Customer No.** C190015  
-**Number of Claims:** 3  
-**Policy No.** SC00928774  
-**State:** PA  
+INSURED NAME: Harborline Produce Transport Inc
+CUSTOMER NO.: C043217
+POLICY NO.: SC00928291
+STATE: OH
+POLICY TERM: 06/12/21 - 06/12/22
 
-Effective Date,Claim Reported,Claim Number,Claimant,Date Reported,Date of Loss,Claim Status,Date Closed,Adjuster,Claim Reserves,Claim Paid,Claim Recovered
-07/24/19,X,00929070-01102,Riverside Concrete,09/06/21,02/12/20,Closed,06/23/22,Owen O. Velasquez,$0.00,$0.00,$0.00
-Initial Claim Description: Property damage at loading dock,,,,,,,,,Driver: Caleb W. Novak,,
-07/25/19,X,00929070-01103,Broad Street Produce,09/07/21,02/13/20,Closed,06/24/22,Priya T. Ilyin,$0.00,"$39,812.82",$0.00
-Initial Claim Description: Minor bodily injury allegation,,,,,,,,,Driver: Tessa B. Roman,,
-07/26/19,X,00929070-01104,Midway Trailer Works,09/08/21,02/14/20,Closed,06/25/22,Sonia Y. Rahman,$0.00,$0.00,$0.00
-Initial Claim Description: Rear-end contact during lane merge,,,,,,,,,Driver: Greta G. Barrera,,
-,,,,,,,,Total Incurred for SC00928774:,$0.00,"$39,812.82",$0.00
+Effective Date,Claim Rptd,Claim Number,Claimant,Date Reported,Date of Loss,Status,Date Closed,Adjuster,Reserve,Paid,Recovered
+No Claims Reported as of: 02/26/2026,,,,,,,,,,,
+Policy period total,,,,,,,,,0.00,0.00,0.00
 
----
+INSURED NAME: Harborline Produce Transport Inc
+CUSTOMER NO.: C043218
+POLICY NO.: SC00928292
+STATE: NJ
+POLICY TERM: 06/12/22 - 06/12/23
 
-CLAIMS DIRECT ACCESS
+CLAIM SUMMARY CARDS - POLICY PERIOD ACTIVITY
 
-# Loss Run Report
+CLAIM NUMBER,CLAIMANT,LOSS DATE,REPORTED,RPTD,STATUS,CLOSED,HANDLER / DRIVER,AMOUNTS,DESCRIPTION
+00928292-10103,Keystone Materials,10/31/22,11/12/22,X,Closed,03/15/23,Logan A. Talbot (Driver: Dakota F. Priest),Reserve $0.00; paid $20,961.32; recovered $0.00.,cargo load shifted during an abrupt traffic stop
+00928292-10104,Quarry Road Terminal,11/07/22,11/24/22,X,Pending,,Jordan T. Aldridge,"Pending ledger: reserve $62,616.29; payments $12,192.40; recoveries $0.00.",fuel-island scrape reported during yard maneuver
+00928292-10105,Alder Logistics Repair,11/14/22,12/06/22,X,Closed,04/30/23,Rowan U. Osborne (Unit TR-2785 / Operator Emery L. Gaines),Reserve $0.00; paid $26,635.20; recovered $6,342.00.,"rear impact while backing toward a dock door; rental and downtime amounts were still being reconciled; Continuation: vendor documentation was indexed after first notice. TR-2785."
+00928292-10106,Harbor Medical Supply,11/21/22,12/18/22,X,Open,,see adjacent ledger (Scheduled driver: Finley G. Mercer),"Separate ledger entry: Winter C. Osborne; reserve $70,874.61; paid $5,850.50; recovery $0.00.",windshield and cowl damage attributed to road debris
+00928292-10107,Juniper Transit Yard,11/28/22,12/30/22,X,Pending,,Jordan U. Talbot (Scheduled driver: Jordan C. Delaney),Reserve $75,003.11; paid $13,210.45; recovered $0.00.,subrogation file opened for possible third-party recovery
 
-**Insured Name:** Pine Delta Transport LLC  
-**Customer No.** C190016  
-**Number of Claims:** 3  
-**Policy No.** SC00928774  
-**State:** PA  
+POLICY PERIOD TOTAL FOR SC00928292 Reserve $208,494.01 Paid $78,849.87 Recovered $6,342.00
 
-Effective Date,Claim Reported,Claim Number,Claimant,Date Reported,Date of Loss,Claim Status,Date Closed,Adjuster,Claim Reserves,Claim Paid,Claim Recovered
-07/27/19,X,00929070-01105,Ridgeway Collision,09/09/21,02/15/20,Closed,06/26/22,Cedric D. Novak,$0.00,$0.00,$0.00
-Initial Claim Description: Property damage at loading dock,,,,,,,,,Driver: Elena L. Nguyen,,
-07/28/19,X,00929070-01106,Pioneer Equipment Rental,09/10/21,02/16/20,Closed,06/27/22,Samir I. Roman,$0.00,$0.00,$0.00
-Initial Claim Description: Property damage at loading dock,,,,,,,,,Driver: Milan Q. Ivers,,
-07/29/19,X,00929070-01107,Hillcrest Auto Body,09/11/21,02/17/20,Closed,06/28/22,Nina N. Barrera,$0.00,$0.00,$0.00
-Initial Claim Description: Towing and storage reimbursement,,,,,,,,,Driver: Maya V. Petrov,,
-,,,,,,,,Total Incurred for SC00928774:,$0.00,$0.00,$0.00
-
----
-
-Page 15 of 39  
-Printed On: Thursday, February 26, 2026
+Carrier claim history export - underwriting copy
+Page 15 of 42
 
 # Page 16
 
+CLAIMS DIRECT ACCESS
 Loss Run Report
+External carrier loss history - as valued 02/26/2026
+Run ID LR-0016
+Page 16 of 42
+Printed 02/26/2026
 
-"Insured Name","Pine Delta Transport LLC","Customer No.","C190016","Number of Claims","6"
-"Policy No.","SC00928774","State","PA"
-"Effective Date","Claim Reported","Claim Number","Claimant","Date Reported","Date of Loss","Claim Status","Date Closed","Adjuster","Claim Reserves","Claim Paid","Claim Recovered","Initial Claim Description","Driver"
-"07/30/19","X","00929107-01108","Alder Foods Distribution","09/12/21","02/18/20","Closed","06/29/22","Clara S. Nguyen","$0.00","$16,210.17","$7,399.99","Side-swipe reported near ramp","Farah A. Santos"
-"07/31/19","X","00929107-01109","North County Repair","09/13/21","02/19/20","Closed","06/30/22","Elias X. Ivers","$0.00","$0.00","$0.00","Rear-end contact during lane merge","Marta F. Moreno"
-"08/01/19","X","00929107-01110","Summit Materials","09/14/21","02/20/20","Open","","Leah C. Haddad","$57,732.08","$0.00","$5,083.00","Minor bodily injury allegation","Owen K. Okafor"
-"08/02/19","X","00929107-01111","Tollway Freight Services","09/15/21","02/21/20","Closed","07/02/22","Caleb H. Markovic","$0.00","$0.00","$0.00","Property damage at loading dock","Priya P. Keller"
-"08/03/19","X","00929107-01112","Civic Transit Authority","09/16/21","02/22/20","Closed","07/03/22","Tessa M. Singh","$0.00","$0.00","$1,630.59","Side-swipe reported near ramp","Sonia U. Velasquez"
-"08/04/19","X","00929107-01113","Farmstead Supply Co","09/17/21","02/23/20","Closed","07/04/22","Greta R. Okafor","$0.00","$0.00","$1,685.81","Property damage at loading dock","Cedric Z. Ilyin"
-"Total Incurred for SC00928774","","","","","","","","","$57,732.08","$16,210.17","$15,799.39"
+INSURED NAME: Harborline Produce Transport Inc
+CUSTOMER NO.: C043219
+POLICY NO.: SC00928293
+STATE: MD
+POLICY TERM: 06/12/23 - 06/11/24
 
+RESERVE LEDGER VIEW - OPEN AND CLOSED CLAIM ACTIVITY
 
-Loss Run Report
+CLAIM / RPTD,CLAIMANT / NOTES,DATES,STATUS,HANDLING,AMOUNTS
+"00928293-10108
+eff. 06/12/23; rptd X","East Ridge Collision
+roll-up door damage noted during post-trip inspection","12/05/23
+reported 01/11/24","Reopened
+closed 07/07/24","Emery T. Benton","reserve $79,132.65
+paid $13,549.80
+recovered $0.00"
+"00928293-10109
+eff. 06/12/23; rptd X","Stonebridge Foods
+cargo load shifted during an abrupt traffic stop","12/12/23
+reported 01/23/24","Open
+closed -","Avery E. Ivers
+Driver: Quinn W. Gaines","reserve $83,261.89
+paid $6,313.25
+recovered $0.00"
+"00928293-10110
+eff. 06/12/23; rptd X","Fairmont Cold Storage
+cargo load shifted during an abrupt traffic stop; claim notes reference separate correspondence from the claimant","12/19/23
+reported 12/24/23","Reopened
+closed -","Blake J. Osborne
+Unit TR-2870 / Operator Reese V. Hollis","reserve $87,390.24
+paid $14,228.50
+recovered $6,644.00"
+"00928293-10111
+eff. 06/12/23; rptd X","Ironwood Trailer Works
+trailer door contacted by loading equipment","12/26/23
+reported 01/05/24","Open
+closed -","Emery M. Nolan
+Unit TR-2887 / Operator Logan D. Serrano","reserve $91,519.40
+paid $6,621.75
+recovered $0.00"
+"00928293-10112
+eff. 06/12/23; rptd X","Grove Street Produce
+cargo load shifted during an abrupt traffic stop; coverage was accepted subject to deductible application","01/02/24
+reported 01/17/24","Reopened
+closed -","Rowan D. Nolan
+Driver not supplied in carrier export","reserve $3,648.62
+paid $14,907.20
+recovered $0.00"
+"00928293-10113
+eff. 06/12/23; rptd X","Northline Distribution
+property damage reported at a private receiving yard","01/09/24
+reported 01/29/24","Closed
+closed 09/18/24","Reese K. Voss
+Scheduled driver: Finley K. Quint","reserve $0.00
+paid $49,331.85
+recovered $0.00"
+"00928293-10114
+eff. 06/12/23; rptd X","Grove Street Produce
+steer tire failure led to roadside service invoice","01/16/24
+reported 02/10/24","Reopened
+closed 10/11/24","Winter S. Serrano
+Driver: Logan Q. Quint","reserve $11,906.81
+paid $15,585.90
+recovered $0.00"
+"00928293-10115
+eff. 06/12/23; rptd X","Stonebridge Foods
+trailer door contacted by loading equipment","01/23/24
+reported 02/22/24","Open
+closed -","Rowan S. Priest
+Driver: Taylor G. Foster","reserve $16,035.05
+paid $7,238.75
+recovered $6,946.00"
+"Policy period total for SC00928293",,,,,"reserve $372,894.66
+paid $127,777.00
+recovered $13,590.00"
 
-"Insured Name","Pine Delta Transport LLC","Customer No.","C190017","Number of Claims","5"
-"Policy No.","SC00928774","State","PA"
-"Effective Date","Claim Reported","Claim Number","Claimant","Date Reported","Date of Loss","Claim Status","Date Closed","Adjuster","Claim Reserves","Claim Paid","Claim Recovered","Initial Claim Description","Driver"
-"08/05/19","X","00929107-01114","Union Parcel Depot","09/18/21","02/24/20","Pending","","Elena W. Keller","$74,807.85","$24,244.03","$0.00","Rear-end contact during lane merge","Samir E. Rahman"
-"08/06/19","X","00929107-01115","Pineview Medical Group","09/19/21","02/25/20","Closed","07/06/22","Milan B. Velasquez","$0.00","$20,188.12","$0.00","Side-swipe reported near ramp","Nina J. Novak"
-"08/07/19","X","00929107-01116","Metro Storage Yard","09/20/21","02/26/20","Closed","07/07/22","Maya G. Ilyin","$0.00","$0.00","$0.00","Side-swipe reported near ramp","Mateo O. Roman"
-"08/08/19","X","00929107-01117","Riverside Concrete","09/21/21","02/27/20","Closed","07/08/22","Farah L. Rahman","$0.00","$10,577.60","$6,024.05","Trailer door impact during delivery","Noemi T. Barrera"
-"08/09/19","X","00929107-01118","Broad Street Produce","09/22/21","02/28/20","Pending","","Marta Q. Novak","$40,774.61","$0.00","$0.00","Side-swipe reported near ramp","Leah Y. Nguyen"
-"Total Incurred for SC00928774","","","","","","","","","$115,582.46","$55,009.75","$6,024.05"
+INSURED NAME: Harborline Produce Transport Inc
+CUSTOMER NO.: C043220
+POLICY NO.: SC00928294
+STATE: VA
+POLICY TERM: 06/30/19 - 06/29/20
 
-Page 16 of 39
-Printed On: Thursday, February 26, 2026
+Effective Date,Claim Rptd,Claim Number,Claimant,Date Reported,Date of Loss,Status,Date Closed,Adjuster,Reserve,Paid,Recovered
+06/30/19,X,00928294-10116,Quarry Road Terminal,03/23/20,02/17/20,Reopened,,Parker J. Foster,$20,164.21,$16,264.60,$0.00
+"Initial Claim Description: property damage reported at a private receiving yard",,,,,,,,,,,
+06/30/19,X,00928294-10117,Canyon Fleet Body,04/04/20,02/24/20,Pending,,Rowan B. Keller,$24,293.36,$16,603.95,$0.00
+"Initial Claim Description: side-swipe contact reported near an interstate ramp Unit TR-2989 / Operator Morgan I. Priest",,,,,,,,,,,
+06/30/19,X,00928294-10118,Quarry Road Terminal,03/05/20,03/02/20,Closed,05/22/20,Zion G. Mercer,$0.00,$63,516.51,$0.00
+"Initial Claim Description: windshield and cowl damage attributed to road debris Scheduled driver noted separately: Quinn L. Osborne",,,,,,,,,,,
+"Continuation: vendor documentation was indexed after first notice. Unit TR-3006.",,,,,,,,,,,
+"Policy period total for SC00928294",,,,,,,,,$44,457.57,$96,385.06,$0.00
+
+continued on next page
+Carrier claim history export - underwriting copy
+Page 16 of 42
 
 # Page 17
 
-Loss Run Report
-Insured Name: Pine Delta Transport LLC,Customer No. C190017,Number of Claims: 6
-Policy No. SC00928774,State: PA
-Effective Date,Claim Reported,Claim Number,Claimant,Date Reported,Date of Loss,Claim Status,Date Closed,Adjuster,Claim Reserves,Claim Paid,Claim Recovered,Initial Claim Description,Driver
-08/10/19,X,0092907-01119,Midway Trailer Works,09/23/21,02/29/20,Closed,07/10/22,Owen V. Roman,$0.00,$0.00,"$5,191.06",Parked unit struck overnight,Caleb D. Ivers
-08/11/19,X,00929144-01120,Ridgeway Collision,09/24/21,03/01/20,Closed,07/11/22,Priya A. Barrera,$0.00,$0.00,"$2,009.92",Trailer door impact during delivery,Tessa I. Petrov
-08/12/19,X,00929144-01121,Pioneer Equipment Rental,09/25/21,03/02/20,Pending,,Sonia F. Nguyen,"$84,185.08","$3,879.13","$4,721.85",Windshield damage from road debris,Greta N. Santos
-08/13/19,X,00929144-01122,Hillcrest Auto Body,09/26/21,03/03/20,Pending,,Cedric K. Ivers,"$66,882.67","$16,852.48","$8,325.98",Trailer door impact during delivery,Elena S. Moreno
-08/14/19,X,00929144-01123,Alder Foods Distribution,09/27/21,03/04/20,Pending,,Samir P. Petrov,"$2,492.28",$0.00,$0.00,Windshield damage from road debris,Milan X. Bishop
-08/15/19,X,00929144-01124,North County Repair,09/28/21,03/05/20,Pending,,Nina U. Santos,"$26,885.99","$8,655.06",$0.00,Minor bodily injury allegation,Maya C. Carver
-Total Incurred for SC00928774,,,,,,,,,"$180,446.02","$29,386.67","$20,248.81",,
+CLAIMS DIRECT ACCESS
+                                            Loss Run Report                                               Run ID LR-0017
+                               External carrier loss history - as valued 02/26/2026                         Page 17 of 42
+                                                                                                        Printed 02/26/2026
 
-Loss Run Report
-Insured Name: Pine Delta Transport LLC,Customer No. C190018,Number of Claims: 6
-Policy No. SC00928774,State: PA
-Effective Date,Claim Reported,Claim Number,Claimant,Date Reported,Date of Loss,Claim Status,Date Closed,Adjuster,Claim Reserves,Claim Paid,Claim Recovered,Initial Claim Description,Driver
-08/16/19,X,00929144-01125,Summit Materials,09/29/21,03/06/20,Pending,,Clara Z. Moreno,"$3,267.68","$9,389.53",$0.00,Trailer door impact during delivery,Farah H. Gaines
-08/17/19,X,00929144-01126,Tollway Freight Services,09/30/21,03/07/20,Closed,07/17/22,Elias E. Bishop,$0.00,$0.00,$0.00,Towing and storage reimbursement,Marta M. Serrano
-08/18/19,X,00929144-01127,Civic Transit Authority,10/01/21,03/08/20,Pending,,Victor J. Carver,"$13,072.77","$15,950.76","$7,950.85",Windshield damage from road debris,Owen R. Abbott
-08/19/19,X,00929144-01128,Farmstead Supply Co,10/02/21,03/09/20,Pending,,Rosa O. Gaines,"$88,151.60","$17,748.70","$1,246.88",Parked unit struck overnight,Priya W. Talbot
-08/20/19,X,00929144-01129,Union Parcel Depot,10/03/21,03/10/20,Closed,07/20/22,Arman T. Serrano,$0.00,"$26,029.39",$0.00,Cargo shift during hard brake,Sonia B. Foster
-08/21/19,X,00929144-01130,Pineview Medical Group,10/04/21,03/11/20,Open,,Lucian Y. Abbott,"$77,021.37","$5,502.38",$0.00,Side-swipe reported near ramp,Cedric G. Kaminski
-Total Incurred for SC00928774,,,,,,,,,"$181,513.42","$74,620.76","$9,197.73",,
+INSURED NAME: Harborline Produce Transport Inc
+CUSTOMER NO.: C043221
+POLICY NO.: SC00928295
+STATE: NY
+POLICY TERM: 06/29/20 - 06/29/21
 
-Page 17 of 39
-Printed On: Thursday, February 26, 2026
+Effective Date,Claim Rptd,Claim Number,Claimant,Date Reported,Date of Loss,Status,Date Closed,Adjuster,Reserve,Paid,Recovered
+06/29/20,X,00928295-10119,Grove Street Produce,03/17/21,03/09/21,Open,,Rowan A. Carver,"$32,551.67","$7,855.75",$0.00
+"Initial Claim Description: steer tire failure led to roadside service invoice; repair estimate remains under carrier review  Scheduled driver noted separately: Taylor V. Talbot",,,,,,,,,,,
+"Continuation: reserve position retained pending supervisor diary review. Unit TR-3023.",,,,,,,,,,,
+06/29/20,X,00928295-10120,Palisade Container,03/29/21,03/16/21,Pending,,see ledger,see below,see below,see below
+"Initial Claim Description: fuel-island scrape reported during yard maneuver",,,,,,,,,,,
+"Claim ledger: adjuster Rowan O. Carver; reserve $36,680.77; paid $17,622.00; recovery $7,248.00.",,,,,,,,,,,
+"Continuation: reserve position retained pending supervisor diary review. Unit TR-3040.",,,,,,,,,,,
+06/29/20,X,00928295-10121,Quarry Road Terminal,04/10/21,03/23/21,Pending,,Avery M. Serrano,"$40,809.25","$17,961.35",$0.00
+"Initial Claim Description: mirror and fairing damage found after delivery; photos were received with the initial notice | Driver: Emery I. Benton",,,,,,,,,,,
+"Continuation: liability review remains tied to the listed unit file. Unit TR-3057.",,,,,,,,,,,
+06/29/20,X,00928295-10122,Mason Retail Group,04/22/21,03/30/21,Closed,08/22/21,Dakota U. Delaney,pending ledger,"$6,864.01",$0.00
+"Initial Claim Description: forklift contact with parked trailer during unloading  Unit TR-3074 / Operator Dakota I. Ellis",,,,,,,,,,,
+"Financial detail: reserve carried as $0.00; payments $6,864.01; recoveries $0.00.",,,,,,,,,,,
+06/29/20,X,00928295-10123,Lakeview Auto Glass,05/04/21,04/06/21,Closed,09/14/21,Quinn V. Priest,$0.00,"$9,701.94",$0.00
+"Initial Claim Description: side-swipe contact reported near an interstate ramp  Unit TR-3091 / Operator Dakota M. Keller",,,,,,,,,,,
+"Continuation: reserve position retained pending supervisor diary review. Unit TR-3091.",,,,,,,,,,,
+06/29/20,X,00928295-10124,Oak Valley Repair,05/16/21,04/13/21,Pending,,see ledger,see below,see below,see below
+"Initial Claim Description: reefer unit service call included in repair estimate  Driver not supplied in carrier export",,,,,,,,,,,
+"Claim ledger: adjuster Reese Z. Keller; reserve $53,196.38; paid $18,979.40; recovery $0.00.",,,,,,,,,,,
+06/29/20,X,00928295-10125,Dover Equipment Rental,05/28/21,04/20/21,Pending,,Winter B. Ellis,"$57,325.22","$19,318.75","$7,550.00"
+"Initial Claim Description: subrogation file opened for possible third-party recovery  Scheduled driver noted separately: Quinn V. Foster",,,,,,,,,,,
+"Section note: Recoveries shown above may not include salvage posted after the valuation date.",,,,,,,,,,,
+06/29/20,X,00928295-10126,East Ridge Collision,04/28/21,04/27/21,Reopened,10/11/21,Kai S. Voss,"$61,454.17","$19,658.10",$0.00
+"Initial Claim Description: rear impact while backing toward a dock door; medical reserve was reviewed without closing the file | Driver: Kai S. Hollis",,,,,,,,,,,
+"Continuation: closing date reflects carrier system status at valuation. Unit TR-3142.",,,,,,,,,,,
+06/29/20,X,00928295-10127,Lakeview Auto Glass,05/10/21,05/04/21,Open,,Sawyer Y. Ramos,"$65,583.05","$9,089.75",$0.00
+"Initial Claim Description: reefer unit service call included in repair estimate | Driver: Avery R. Talbot",,,,,,,,,,,
+Policy period total for SC00928295,,,,,,,,,"$347,600.51","$127,051.05","$14,798.00"
+
+Carrier claim history export - underwriting copy                                                   Page 17 of 42
 
 # Page 18
 
-Loss Run Report
-Insured Name: Pine Delta Transport LLC,Customer No. C190018,,Number of Claims: 6
-Policy No. SC00928774,State: PA
-Effective Date,Claim Reported,Claim Number,Claimant,Date Reported,Date of Loss,Claim Status,Date Closed,Adjuster,Claim Reserves,Claim Paid,Claim Recovered
-08/22/19,X,00929144-01131,Metro Storage Yard,10/05/21,03/12/20,Open,,Ibrahim D. Talbot,$48,295.41,$8,843.41,$0.00
-Initial Claim Description: Parked unit struck overnight,,,,,,,,,,,Driver: Samir L. Haddad
-08/23/19,X,00929181-01132,Riverside Concrete,10/06/21,03/13/20,Pending,,Anika I. Foster,$87,721.42,$0.00,$6,782.24
-Initial Claim Description: Side-swipe reported near ramp,,,,,,,,,,,Driver: Nina Q. Markovic
-08/24/19,X,00929181-01133,Broad Street Produce,10/07/21,03/14/20,Open,,Jonah N. Kaminski,$65,259.37,$24,865.21,$0.00
-Initial Claim Description: Trailer door impact during delivery,,,,,,,,,,,Driver: Clara V. Singh
-08/25/19,X,00929181-01134,Midway Trailer Works,10/08/21,03/15/20,Closed,07/25/22,Farah S. Haddad,$0.00,$40,115.59,$0.00
-Initial Claim Description: Towing and storage reimbursement,,,,,,,,,,,Driver: Elias A. Okafor
-08/26/19,X,00929181-01135,Ridgeway Collision,10/09/21,03/16/20,Open,,Marta X. Markovic,$63,048.07,$15,436.03,$0.00
-Initial Claim Description: Backing incident in private yard,,,,,,,,,,,Driver: Victor F. Keller
-08/27/19,X,00929181-01136,Pioneer Equipment Rental,10/10/21,03/17/20,Open,,Owen C. Singh,$41,498.21,$19,037.13,$5,709.67
-Initial Claim Description: Cargo shift during hard brake,,,,,,,,,,,Driver: Rosa K. Velasquez
-Total Incurred for SC00928774:,,,,,,,,$305,822.48,$108,297.37,$12,491.91
+CLAIMS DIRECT ACCESS
 
 Loss Run Report
-Insured Name: Pine Delta Transport LLC,Customer No. C190019,,Number of Claims: 5
-Policy No. SC00928774,State: PA
-Effective Date,Claim Reported,Claim Number,Claimant,Date Reported,Date of Loss,Claim Status,Date Closed,Adjuster,Claim Reserves,Claim Paid,Claim Recovered
-08/28/19,X,00929181-01137,Hillcrest Auto Body,10/11/21,03/18/20,Closed,07/28/22,Priya H. Okafor,$0.00,$20,129.30,$0.00
-Initial Claim Description: Trailer door impact during delivery,,,,,,,,,,,Driver: Arman P. Ilyin
-08/29/19,X,00929181-01138,Alder Foods Distribution,10/12/21,03/19/20,Closed,07/29/22,Sonia M. Keller,$0.00,$0.00,$7,206.13
-Initial Claim Description: Rear-end contact during lane merge,,,,,,,,,,,Driver: Lucian U. Rahman
-08/30/19,X,00929181-01139,North County Repair,10/13/21,03/20/20,Pending,,Cedric R. Velasquez,$6,090.00,$3,171.61,$8,416.72
-Initial Claim Description: Minor bodily injury allegation,,,,,,,,,,,Driver: Ibrahim Z. Novak
-08/31/19,X,00929181-01140,Summit Materials,10/14/21,03/21/20,Open,,Samir W. Carver,$11,899.96,$0.00,$7,732.99
-Initial Claim Description: Cargo shift during hard brake,,,,,,,,,,,Driver: Milan E. Abbott
-09/01/19,X,00929181-01141,Tollway Freight Services,10/15/21,03/22/20,Closed,08/01/22,Nina B. Gaines,$0.00,$35,451.33,$0.00
-Initial Claim Description: Side-swipe reported near ramp,,,,,,,,,,,Driver: Maya J. Talbot
-Total Incurred for SC00928774:,,,,,,,,$17,989.96,$58,752.24,$23,355.84
+External carrier loss history - as valued 02/26/2026
 
-Page 18 of 39,,,,,Printed On: Thursday, February 26, 2026
+Run ID LR-0018
+Page 18 of 42
+Printed 02/26/2026
+
+INSURED NAME: Harborline Produce Transport Inc
+CUSTOMER NO.: C043222
+POLICY NO.: SC00928296
+STATE: PA
+POLICY TERM: 06/29/21 - 06/29/22
+
+Effective Date,Claim Rptd,Claim Number,Claimant,Date Reported,Date of Loss,Status,Date Closed,Adjuster,Reserve,Paid,Recovered
+06/29/21,X,00928296-10128,Oak Valley Repair,05/22/22,05/11/22,Pending,,Jordan J. Talbot,$69,712.95,$20,336.80,$0.00
+"Initial Claim Description: cargo load shifted during an abrupt traffic stop",,,,,,,,,,,
+"Continuation: claim office noted deductible handling outside this extract. Unit TR-3176.",,,,,,,,,,,
+06/29/21,X,00928296-10129,Fairmont Cold Storage,08/07/21,07/22/21,Pending,,see ledger,see below,see below,see below
+"Initial Claim Description: reefer unit service call included in repair estimate Unit TR-3193 / Operator Reese Y. Voss",,,,,,,,,,,
+"Claim ledger: adjuster Vaughn M. Gaines; reserve $73,841.28; paid $20,676.15; recovery $0.00.",,,,,,,,,,,
+06/29/21,X,00928296-10130,Alder Logistics Repair,08/19/21,07/29/21,Closed,03/17/22,Taylor X. Serrano,$0.00,$29,560.99,$252.00
+"Initial Claim Description: minor bodily injury allegation after a lane-change contact Scheduled driver noted separately: Avery G. Osborne",,,,,,,,,,,
+06/29/21,X,00928296-10131,Ironwood Trailer Works,08/31/21,08/05/21,Closed,04/09/22,Taylor D. Nolan,pending ledger,$32,397.34,$0.00
+"Initial Claim Description: trailer door contacted by loading equipment Scheduled driver noted separately: Avery Z. Aldridge",,,,,,,,,,,
+"Financial detail: reserve carried as $0.00; payments $32,397.34; recoveries $0.00.",,,,,,,,,,,
+06/29/21,X,00928296-10132,Stonebridge Foods,09/12/21,08/12/21,Open,,Harper N. Foster,$86,228.32,$9,861.00,$0.00
+"Initial Claim Description: forklift contact with parked trailer during unloading; coverage was accepted subject to deductible application",,,,,,,,,,,
+"Continuation: reserve position retained pending supervisor diary review. Unit TR-3244.",,,,,,,,,,,
+06/29/21,X,00928296-10133,East Ridge Collision,09/24/21,08/19/21,Pending,,see ledger,see below,see below,see below
+"Initial Claim Description: property damage reported at a private receiving yard; supplemental invoice was requested from the vendor | Driver: Harper D. Keller",,,,,,,,,,,
+"Claim ledger: adjuster Logan X. Delaney; reserve $90,357.98; paid $22,033.55; recovery $0.00.",,,,,,,,,,,
+"Continuation: closing date reflects carrier system status at valuation. Unit TR-3261.",,,,,,,,,,,
+06/29/21,X,00928296-10134,Tamarack Freight,10/06/21,08/26/21,Open,,Logan M. Keller,$2,486.74,$10,169.50,$0.00
+"Initial Claim Description: steer tire failure led to roadside service invoice Unit TR-3278 / Operator Finley F. Carver",,,,,,,,,,,
+"Section note: Rows marked pending are subject to reserve review by the carrier claim office.",,,,,,,,,,,
+06/29/21,X,00928296-10135,Mason Retail Group,09/06/21,09/02/21,Closed,10/31/21,Casey S. Serrano,$0.00,$43,745.58,$554.00
+"Initial Claim Description: property damage reported at a private receiving yard Unit TR-3295 / Operator Vaughn L. Priest",,,,,,,,,,,
+Policy period total for SC00928296,,,,,,,,, $322,627.27, $188,780.91, $806.00
+
+
+INSURED NAME: Harborline Produce Transport Inc
+CUSTOMER NO.: C043223
+POLICY NO.: SC00928297
+STATE: OH
+POLICY TERM: 06/29/22 - 06/29/23
+
+Effective Date,Claim Rptd,Claim Number,Claimant,Date Reported,Date of Loss,Status,Date Closed,Adjuster,Reserve,Paid,Recovered
+No Claims Reported as of: 02/26/2026,,,,,,,,,,,
+Policy period total,,,,,,,,, $0.00, $0.00, $0.00
+
+
+continued on next page
+Carrier claim history export - underwriting copy
+Page 18 of 42
 
 # Page 19
 
-   CLAIMS
-DIRECT ACCESS   Loss Run Report
+CLAIMS DIRECT ACCESS
+Loss Run Report
+External carrier loss history - as valued 02/26/2026
 
-                Insured Name: Pine Delta Transport LLC                 Customer No. C190019                 Number of Claims: 6
-                Policy No. SC00928774                                 State: PA
+Run ID LR-0019
+Page 19 of 42
+Printed 02/26/2026
 
-                Effective    Claim       Claim Number         Claimant           Date       Date of    Claim Status    Date          Adjuster           Claim Reserves     Claim Paid     Claim Recovered
-                  Date      Reported                                           Reported      Loss                     Closed
-                09/02/19       X        00929181-01142   Civic Transit Authority  10/16/21   03/23/20     Closed      08/02/22    Clara G. Serrano                 $0.00     $31,214.46               $0.00
-                Initial Claim Description: Side-swipe reported near ramp                                                                                                          Driver: Farah O. Foster
-                09/03/19       X        00929181-01143   Farmstead Supply Co      10/17/21   03/24/20     Pending                 Elias L. Abbott             $52,596.33          $0.00             $785.22
-                Initial Claim Description: Minor bodily injury allegation                                                                                                       Driver: Marta T. Kaminski
-                09/04/19       X        00929218-01144   Union Parcel Depot       10/18/21   03/25/20     Open                    Victor Q. Talbot            $15,967.76     $30,629.45               $0.00
-                Initial Claim Description: Parked unit struck overnight                                                                                                           Driver: Owen Y. Haddad
-                09/05/19       X        00929218-01145   Pineview Medical Group   10/19/21   03/26/20     Open                    Rosa V. Foster              $46,086.95     $39,628.76           $7,783.80
-                Initial Claim Description: Side-swipe reported near ramp                                                                                                          Driver: Priya D. Markovic
-                09/06/19       X        00929218-01146   Metro Storage Yard       10/20/21   03/27/20     Pending                 Arman A. Kaminski           $84,387.78     $16,566.59               $0.00
-                Initial Claim Description: Cargo shift during hard brake                                                                                                           Driver: Sonia I. Singh
-                09/07/19       X        00929218-01147   Riverside Concrete       10/21/21   03/28/20     Open                    Lucian F. Haddad            $27,291.08          $0.00               $0.00
-                Initial Claim Description: Minor bodily injury allegation                                                                                                         Driver: Cedric N. Okafor
-                                                                                                                          Total Incurred for SC00928774:   $226,329.90    $118,039.26           $8,569.02
+INSURED NAME: Harborline Produce Transport Inc
+CUSTOMER NO: C043224
+POLICY NO: SC00928298
+STATE: NJ
+POLICY TERM: 06/29/23 - 06/28/24
 
+Effective Date,Claim Rptd,Claim Number,Claimant,Date Reported,Date of Loss,Status,Date Closed,Adjuster,Reserve,Paid,Recovered
+06/29/23,X,00928298-10136,Grove Street Produce,09/18/23,09/09/23,Closed,11/23/23,Casey P. Ellis,$0.00,$46,582.16,$0.00
+"Initial Claim Description: parking-lot contact reported by third-party claimant  Driver not supplied in carrier export",,,,,,,,,,,
+06/29/23,X,00928298-10137,Harbor Medical Supply,09/30/23,09/16/23,Closed,12/16/23,Casey I. Keller,$0.00,$49,419.41,$0.00
+"Initial Claim Description: parked tractor struck during overnight staging  Scheduled driver noted separately: Kai P. Ivers",,,,,,,,,,,
+06/29/23,X,00928298-10138,Oak Valley Repair,10/12/23,09/23/23,Closed,01/08/24,see ledger,see below,see below,see below
+"Initial Claim Description: loading bay bollard contact reported by warehouse staff  |  Driver: Harper U. Mercer",,,,,,,,,,,
+"Claim ledger: adjuster Vaughn F. Gaines; reserve $0.00; paid $52,256.12; recovery $0.00.",,,,,,,,,,,
+"Continuation: claim office noted deductible handling outside this extract. Unit TR-3346.",,,,,,,,,,,
+06/29/23,X,00928298-10139,Harbor Medical Supply,10/24/23,09/30/23,Pending,,Jordan T. Carver,$23,131.79,$969.65,$0.00
+"Initial Claim Description: reefer unit service call included in repair estimate  |  Driver: Avery D. Quint",,,,,,,,,,,
+06/29/23,X,00928298-10140,Lakeview Auto Glass,11/05/23,10/07/23,Open,,Vaughn X. Foster,pending ledger,$595.00,$856.00
+"Initial Claim Description: reefer unit service call included in repair estimate; coverage was accepted subject to deductible application",,,,,,,,,,,
+"Financial detail: reserve carried as $27,260.48; payments $595.00; recoveries $856.00.",,,,,,,,,,,
+"Continuation: vendor documentation was indexed after first notice. Unit TR-3380.",,,,,,,,,,,
+Policy period total for SC00928298,,,,,,,,, $50,392.27, $149,822.34, $856.00
 
-________________________________________________________________________________________________________________________________________________________________________________________________________
-
-   CLAIMS
-DIRECT ACCESS   Loss Run Report
-
-                Insured Name: Pine Delta Transport LLC                 Customer No. C190020                 Number of Claims: 6
-                Policy No. SC00928774                                 State: PA
-
-                Effective    Claim       Claim Number         Claimant           Date       Date of    Claim Status    Date          Adjuster           Claim Reserves     Claim Paid     Claim Recovered
-                  Date      Reported                                           Reported      Loss                     Closed
-                09/08/19       X        00929218-01148   Broad Street Produce     10/22/21   03/29/20     Pending                 Ibrahim K. Markovic          $6,264.90     $28,646.29           $5,505.74
-                Initial Claim Description: Trailer door impact during delivery                                                                                                    Driver: Samir S. Keller
-                09/09/19       X        00929218-01149   Midway Trailer Works     10/23/21   03/30/20     Closed      08/09/22    Anika P. Singh                   $0.00     $11,748.08               $0.00
-                Initial Claim Description: Property damage at loading dock                                                                                                      Driver: Nina X. Velasquez
-                09/10/19       X        00929218-01150   Ridgeway Collision       10/24/21   03/31/20     Pending                 Jonah U. Okafor             $33,670.61      $1,190.28               $0.00
-                Initial Claim Description: Trailer door impact during delivery                                                                                                      Driver: Clara C. Ilyin
-                09/11/19       X        00929218-01151   Pioneer Equipment Rental 10/25/21   04/01/20     Open                    Reed Z. Keller              $39,240.34     $28,251.71               $0.00
-                Initial Claim Description: Trailer door impact during delivery                                                                                                     Driver: Elias H. Rahman
-                09/12/19       X        00929218-01152   Hillcrest Auto Body      10/26/21   04/02/20     Closed      08/12/22    Nolan E. Velasquez               $0.00     $21,464.30               $0.00
-                Initial Claim Description: Parked unit struck overnight                                                                                                           Driver: Victor M. Novak
-                09/13/19       X        00929218-01153   Alder Foods Distribution 10/27/21   04/03/20     Closed      08/13/22    Daria J. Ilyin                   $0.00          $0.00               $0.00
-                Initial Claim Description: Towing and storage reimbursement                                                                                                         Driver: Rosa R. Roman
-                                                                                                                          Total Incurred for SC00928774:    $79,175.85     $91,300.66           $5,505.74
-
-
-________________________________________________________________________________________________________________________________________________________________________________________________________
-
-                                                                       Page 19 of 39                                                           Printed On: Thursday, February 26, 2026
+Carrier claim history export - underwriting copy
+Page 19 of 42
 
 # Page 20
 
 CLAIMS DIRECT ACCESS
+
 Loss Run Report
+External carrier loss history - as valued 02/26/2026
 
-Insured Name: Pine Delta Transport LLC        Customer No. C190020        Number of Claims: 1
-Policy No. SC00928774                         State: PA
+Run ID LR-0020
+Page 20 of 42
+Printed 02/26/2026
 
-Effective Date,Claim Reported,Claim Number,Claimant,Date Reported,Date of Loss,Claim Status,Date Closed,Adjuster,Claim Reserves,Claim Paid,Claim Recovered
-09/14/19,X,00929218-01154,North County Repair,10/28/21,04/04/20,Closed,08/14/22,Andre O. Rahman,$0.00,$0.00,$8,738.23
+INSURED NAME: Harborline Produce Transport Inc
+CUSTOMER NO.: C043225
+POLICY NO.: SC00928299
+STATE: MD
+POLICY TERM: 07/17/19 - 07/16/20
 
-Initial Claim Description: Towing and storage reimbursement                                                 Driver: Arman W. Barrera
-Total Incurred for SC00928774:                                                                           $0.00          $0.00         $8,738.23
+"Effective Date","Claim Rptd","Claim Number","Claimant","Date Reported","Date of Loss","Status","Date Closed","Adjuster","Reserve","Paid","Recovered"
+"07/17/19","X","00928299-10141","Bayline Warehouse","12/05/19","11/01/19","Reopened","04/04/20","Dakota Z. Ramos","$31,389.60","$1,648.35","$0.00"
+"","","Initial Claim Description: windshield and cowl damage attributed to road debris Unit TR-3397 / Operator Taylor H. Larkin"
+"07/17/19","X","00928299-10142","Stonebridge Foods","12/17/19","11/08/19","Closed","04/27/20","see ledger","see below","see below","see below"
+"","","Initial Claim Description: cargo load shifted during an abrupt traffic stop Scheduled driver noted separately: Dakota U. Serrano"
+"","","Claim ledger: adjuster Avery G. Voss; reserve $0.00; paid $63,604.50; recovery $0.00."
+"","","Continuation: vendor documentation was indexed after first notice. Unit TR-3414."
+"07/17/19","X","00928299-10143","Alder Logistics Repair","11/17/19","11/15/19","Reopened","","Jordan C. Ellis","$39,647.04","$2,327.05","$0.00"
+"","","Initial Claim Description: minor bodily injury allegation after a lane-change contact; coverage was accepted subject to deductible application Scheduled driver noted separately: Finley S. Mercer"
+"","","Continuation: liability review remains tied to the listed unit file. Unit TR-3431."
+"07/17/19","X","00928299-10144","Northline Distribution","11/29/19","11/22/19","Closed","05/01/20","Winter M. Keller","$0.00","$1,278.06","$0.00"
+"","","Initial Claim Description: cargo load shifted during an abrupt traffic stop"
+"07/17/19","X","00928299-10145","Keystone Materials","12/11/19","11/29/19","Open","","Quinn F. Ellis","$47,905.75","$1,366.25","$1,158.00"
+"","","Initial Claim Description: towing and storage reimbursement requested after disablement | Driver: Emery N. Foster"
+"07/17/19","X","00928299-10146","Canyon Fleet Body","12/23/19","12/06/19","Pending","","Kai L. Foster","$52,034.51","$3,345.10","$0.00"
+"","","Initial Claim Description: loading bay bollard contact reported by warehouse staff Unit TR-3482 / Operator Casey J. Ivers"
+"07/17/19","X","00928299-10147","Alder Logistics Repair","01/04/20","12/13/19","Pending","","see ledger","see below","see below","see below"
+"","","Initial Claim Description: parked tractor struck during overnight staging; photos were received with the initial notice Unit TR-3499 / Operator Winter R. Foster"
+"","","Claim ledger: adjuster Finley W. Hollis; reserve $56,163.02; paid $3,684.45; recovery $0.00."
+"","","Continuation: closing date reflects carrier system status at valuation. Unit TR-3499."
+"07/17/19","X","00928299-10148","Keystone Materials","01/16/20","12/20/19","Pending","","Finley N. Osborne","$60,292.03","$4,023.80","$0.00"
+"","","Initial Claim Description: windshield and cowl damage attributed to road debris Driver not supplied in carrier export"
+"07/17/19","X","00928299-10149","Oak Valley Repair","01/28/20","12/27/19","Reopened","","Parker D. Ivers","pending ledger","$4,363.15","$0.00"
+"","","Initial Claim Description: claim opened from late-submitted repair documentation Scheduled driver noted separately: Winter I. Aldridge"
+"","","Financial detail: reserve carried as $64,421.47; payments $4,363.15; recoveries $0.00."
+"","","Continuation: claim office noted deductible handling outside this extract. Unit TR-3533."
+"07/17/19","X","00928299-10150","Grove Street Produce","02/09/20","01/03/20","Pending","","Finley Q. Ellis","$68,550.57","$4,702.50","$1,460.00"
+"","","Initial Claim Description: parked tractor struck during overnight staging | Driver: Emery I. Osborne"
+"07/17/19","X","00928299-10151","Canyon Fleet Body","02/21/20","01/10/20","Reopened","","see ledger","see below","see below","see below"
+"","","Initial Claim Description: rear impact while backing toward a dock door | Driver: Reese T. Voss"
+"","","Claim ledger: adjuster Winter F. Quint; reserve $72,679.94; paid $5,041.85; recovery $0.00."
+"07/17/19","X","00928299-10152","Fairmont Cold Storage","01/22/20","01/17/20","Closed","09/20/20","Harper C. Osborne","$0.00","$23,974.79","$0.00"
+"","","Initial Claim Description: claim opened from late-submitted repair documentation"
+"Policy period total for SC00928299","","","","","","","","","$493,083.93","$119,359.85","$2,618.00"
 
-_________________________________________________________________________________________________________________________________
-
-CLAIMS DIRECT ACCESS
-Loss Run Report
-
-Insured Name: Pine Delta Transport LLC        Customer No. C190021        Number of Claims: 0
-Policy No. SC00928774                         State: PA
-
-Effective Date,Claim Reported,Claim Number,Claimant,Date Reported,Date of Loss,Claim Status,Date Closed,Adjuster,Claim Reserves,Claim Paid,Claim Recovered
-No Claims Reported as of: 02/26/2026,,,,,,,,,,,
-
-Total Incurred:                                                                                          $0.00          $0.00            $0.00
-
-_________________________________________________________________________________________________________________________________
-
-Page 20 of 39                                                                               Printed On: Thursday, February 26, 2026
+Carrier claim history export - underwriting copy
+Page 20 of 42
 
 # Page 21
 
 CLAIMS DIRECT ACCESS
-
 Loss Run Report
+External carrier loss history - as valued 02/26/2026
 
-Insured Name: Pine Delta Transport LLC
-Customer No. C190021
-Number of Claims: 5
-Policy No. SC00928774
-State: PA
+Run ID LR-0021
+Page 21 of 42
+Printed 02/26/2026
 
-Effective Date,Claim Reported,Claim Number,Claimant,Date Reported,Date of Loss,Claim Status,Date Closed,Adjuster,Claim Reserves,Claim Paid,Claim Recovered,Initial Claim Description,Driver
-09/15/19,X,00929218-01155,Summit Materials,10/29/21,04/05/20,Pending,,Mateo T. Novak,"$61,996.17",$0.00,$0.00,Side-swipe reported near ramp,Lucian B. Nguyen
-09/16/19,X,00929255-01156,Tollway Freight Services,10/30/21,04/06/20,Closed,08/16/22,Noemi Y. Roman,$0.00,"$13,059.95",$0.00,Minor bodily injury allegation,Ibrahim G. Ivers
-09/17/19,X,00929255-01157,Civic Transit Authority,10/31/21,04/07/20,Closed,08/17/22,Leah D. Barrera,$0.00,$0.00,$0.00,Cargo shift during hard brake,Anika L. Petrov
-09/18/19,X,00929255-01158,Farmstead Supply Co,11/01/21,04/08/20,Pending,,Nina I. Nguyen,"$47,851.58","$25,932.48",$0.00,Property damage at loading dock,Jonah Q. Santos
-09/19/19,X,00929255-01159,Union Parcel Depot,11/02/21,04/09/20,Pending,,Clara N. Ivers,"$28,954.05","$26,377.52",$0.00,Property damage at loading dock,Reed V. Moreno
-Total Incurred for SC00928774:,,,,,,,,,"$138,801.80","$65,369.95",$0.00,,
+"INSURED NAME","CUSTOMER NO.","POLICY NO.","STATE","POLICY TERM"
+"Harborline Produce Transport Inc","C043226","SC00928300","VA","07/16/20 - 07/16/21"
 
+CLAIM SUMMARY CARDS - POLICY PERIOD ACTIVITY
 
-CLAIMS DIRECT ACCESS
+"CLAIM NUMBER","CLAIMANT","LOSS DATE","REPORTED"
+"00928300-10153","Fairmont Cold Storage","01/23/21","02/02/21"
 
-Loss Run Report
+"RPTD","STATUS","CLOSED","HANDLER / DRIVER"
+"X","Reopened","03/17/21","Logan L. Carver\nUnit TR-3601 / Operator Taylor R. Delaney"
 
-Insured Name: Pine Delta Transport LLC
-Customer No. C190022
-Number of Claims: 4
-Policy No. SC00928774
-State: PA
+AMOUNTS Reserve $80,937.29; paid $5,720.55; recovered $0.00.
+DESCRIPTION trailer door contacted by loading equipment
+POLICY PERIOD TOTAL FOR SC00928300 Reserve $80,937.29 Paid $5,720.55 Recovered $0.00
 
-Effective Date,Claim Reported,Claim Number,Claimant,Date Reported,Date of Loss,Claim Status,Date Closed,Adjuster,Claim Reserves,Claim Paid,Claim Recovered,Initial Claim Description,Driver
-09/20/19,X,00929255-01160,Pineview Medical Group,11/03/21,04/10/20,Pending,,Elias S. Petrov,"$42,197.20","$17,361.40",$0.00,Property damage at loading dock,Nolan A. Bishop
-09/21/19,X,00929255-01161,Metro Storage Yard,11/04/21,04/11/20,Closed,08/21/22,Victor X. Santos,$0.00,"$41,748.36",$0.00,Windshield damage from road debris,Daria F. Carver
-09/22/19,X,00929255-01162,Riverside Concrete,11/05/21,04/12/20,Closed,08/22/22,Rosa C. Moreno,$0.00,"$19,161.91","$6,268.73",Parked unit struck overnight,Andre K. Gaines
-09/23/19,X,00929255-01163,Broad Street Produce,11/06/21,04/13/20,Pending,,Arman H. Bishop,"$89,410.58","$29,238.99",$0.00,Side-swipe reported near ramp,Mateo P. Serrano
-Total Incurred for SC00928774:,,,,,,,,,"$131,607.78","$107,510.66","$6,268.73",,
+continued on next page
 
+CLAIM COPY
 
-Page 21 of 39
-Printed On: Thursday, February 26, 2026
+Carrier claim history export - underwriting copy
+Page 21 of 42
 
 # Page 22
 
-CLAIMS DIRECT ACCESS
+CLAIMS DIRECT ACCESS                       Loss Run Report                          Run ID LR-0022
+                               External carrier loss history - as valued 02/26/2026          Page 22 of 42
+                                                                                           Printed 02/26/2026
 
-Loss Run Report
+INSURED NAME                      CUSTOMER NO.           POLICY NO.            STATE      POLICY TERM
+Harborline Produce Transport Inc  C043227                SC00928301            NY         07/16/21 - 07/16/22
 
-Insured Name: Pine Delta Transport LLC
-Customer No. C190022
-Number of Claims: 6
-Policy No. SC00928774
-State: PA
+Effective Date,Claim Rptd,Claim Number,Claimant,Date Reported,Date of Loss,Status,Date Closed,Adjuster,Reserve,Paid,Recovered
+07/16/21,X,00928301-10154,Bayline Warehouse,02/14/22,01/30/22,Open,,Winter Q. Quint,$85,066.65,$2,754.50,$0.00
+,,,"Initial Claim Description: mirror and fairing damage found after delivery; photos were received with the initial notice; rental and downtime amounts were still being reconciled Scheduled driver noted separately: Winter C. Ivers",,,,,,,,
+,,,"Continuation: vendor documentation was indexed after first notice. Unit TR-3618.",,,,,,,,
+07/16/21,X,00928301-10155,Alder Logistics Repair,02/26/22,02/06/22,Open,,Vaughn L. Keller,$89,195.79,$2,908.75,$1,762.00
+,,,"Initial Claim Description: cargo load shifted during an abrupt traffic stop Scheduled driver noted separately: Blake Z. Keller",,,,,,,,
+07/16/21,X,00928301-10156,Mason Retail Group,03/10/22,02/13/22,Pending,,see ledger,see below,see below,see below
+,,,"Initial Claim Description: trailer door contacted by loading equipment",,,,,,,,
+,,,"Claim ledger: adjuster Emery E. Ivers; reserve $1,324.89; paid $6,738.60; recovery $0.00.",,,,,,,,
+,,,"Continuation: claim office noted deductible handling outside this extract. Unit TR-3652.",,,,,,,,
+07/16/21,X,00928301-10157,Grove Street Produce,03/22/22,02/20/22,Pending,,Taylor V. Mercer,$5,453.42,$7,077.95,$0.00
+,,,"Initial Claim Description: cargo load shifted during an abrupt traffic stop | Driver: Sawyer M. Hollis",,,,,,,,
+07/16/21,X,00928301-10158,Riverbend Concrete,04/03/22,02/27/22,Pending,,Morgan C. Benton,pending ledger,$7,417.30,$0.00
+,,,"Initial Claim Description: forklift contact with parked trailer during unloading Unit TR-3686 / Operator Sawyer N. Nolan",,,,,,,,
+,,,"Financial detail: reserve carried as $9,582.14; payments $7,417.30; recoveries $0.00.",,,,,,,,
+07/16/21,X,00928301-10159,Canyon Fleet Body,04/15/22,03/06/22,Pending,,Blake M. Hollis,$13,711.70,$7,756.65,$0.00
+,,,"Initial Claim Description: parked tractor struck during overnight staging Unit TR-3703 / Operator Rowan H. Gaines",,,,,,,,
+07/16/21,X,00928301-10160,Riverbend Concrete,03/16/22,03/13/22,Pending,,see ledger,see below,see below,see below
+,,,"Initial Claim Description: minor bodily injury allegation after a lane-change contact Driver not supplied in carrier export",,,,,,,,
+,,,"Claim ledger: adjuster Avery Z. Priest; reserve $17,840.51; paid $8,096.00; recovery $2,064.00.",,,,,,,,
+07/16/21,X,00928301-10161,Northline Distribution,03/28/22,03/20/22,Open,,Dakota O. Serrano,$21,969.97,$3,834.25,$0.00
+,,,"Initial Claim Description: mirror and fairing damage found after delivery; rental and downtime amounts were still being reconciled Scheduled driver noted separately: Kai Z. Ellis",,,,,,,,
+,,,"Continuation: liability review remains tied to the listed unit file. Unit TR-3737.",,,,,,,,
+07/16/21,X,00928301-10162,Quarry Road Terminal,04/09/22,03/27/22,Pending,,Reese F. Ellis,$26,098.39,$8,774.70,$0.00
+,,,"Initial Claim Description: parked tractor struck during overnight staging | Driver: Sawyer D. Serrano",,,,,,,,
+07/16/21,X,00928301-10163,Canyon Fleet Body,04/21/22,04/03/22,Pending,,Jordan N. Larkin,$30,227.96,$9,114.05,$0.00
+,,,"Initial Claim Description: trailer door contacted by loading equipment | Driver: Logan A. Ramos",,,,,,,,
+07/16/21,X,00928301-10164,Alder Logistics Repair,05/03/22,04/10/22,Reopened,,Casey N. Ellis,$34,356.16,$9,453.40,$0.00
+,,,"Initial Claim Description: subrogation file opened for possible third-party recovery",,,,,,,,
+Policy period total for SC00928301,,,,,,,,,$334,827.58,$73,926.15,$3,826.00
 
-Effective Date,Claim Reported,Claim Number,Claimant,Date Reported,Date of Loss,Claim Status,Date Closed,Adjuster,Claim Reserves,Claim Paid,Claim Recovered,Initial Claim Description,Driver
-09/24/19,X,00929255-01164,Midway Trailer Works,11/07/21,04/14/20,Closed,08/24/22,Lucian M. Carver,$0.00,"$14,989.74",$0.00,Parked unit struck overnight,Cedric U. Abbott
-09/25/19,X,00929255-01165,Ridgeway Collision,11/08/21,04/15/20,Closed,08/25/22,Ibrahim R. Gaines,$0.00,$0.00,$0.00,Property damage at loading dock,Samir Z. Talbot
-09/26/19,X,00929255-01166,Pioneer Equipment Rental,11/09/21,04/16/20,Closed,08/26/22,Anika W. Serrano,$0.00,$0.00,$0.00,Minor bodily injury allegation,Nina E. Foster
-09/27/19,X,00929255-01167,Hillcrest Auto Body,11/10/21,04/17/20,Pending,,Jonah B. Abbott,"$65,655.35",$0.00,$0.00,Minor bodily injury allegation,Clara J. Kaminski
-09/28/19,X,00929292-01168,Alder Foods Distribution,11/11/21,04/18/20,Pending,,Reed G. Talbot,"$5,552.37","$9,918.98",$0.00,Backing incident in private yard,Elias O. Haddad
-09/29/19,X,00929292-01169,North County Repair,11/12/21,04/19/20,Closed,08/29/22,Nolan L. Foster,$0.00,$0.00,$0.00,Property damage at loading dock,Victor T. Markovic
-
-Total Incurred for SC00928774: Claim Reserves: $71,207.22, Claim Paid: $24,908.72, Claim Recovered: $0.00
-
-***
-
-CLAIMS DIRECT ACCESS
-
-Loss Run Report
-
-Insured Name: Pine Delta Transport LLC
-Customer No. C190023
-Number of Claims: 5
-Policy No. SC00928774
-State: PA
-
-Effective Date,Claim Reported,Claim Number,Claimant,Date Reported,Date of Loss,Claim Status,Date Closed,Adjuster,Claim Reserves,Claim Paid,Claim Recovered,Initial Claim Description,Driver
-09/30/19,X,00929292-01170,Summit Materials,11/13/21,04/20/20,Closed,08/30/22,Daria Q. Barrera,$0.00,"$22,506.80",$0.00,Trailer door impact during delivery,Rosa Y. Petrov
-10/01/19,X,00929292-01171,Tollway Freight Services,11/14/21,04/21/20,Closed,08/31/22,Andre V. Nguyen,$0.00,"$36,250.09",$0.00,Backing incident in private yard,Arman D. Santos
-10/02/19,X,00929292-01172,Civic Transit Authority,11/15/21,04/22/20,Pending,,Mateo A. Ivers,"$54,191.04",$0.00,"$7,255.35",Rear-end contact during lane merge,Lucian I. Moreno
-10/03/19,X,00929292-01173,Farmstead Supply Co,11/16/21,04/23/20,Closed,09/02/22,Noemi F. Petrov,$0.00,$0.00,$0.00,Trailer door impact during delivery,Ibrahim N. Bishop
-10/04/19,X,00929292-01174,Union Parcel Depot,11/17/21,04/24/20,Open,,Leah K. Santos,"$34,920.80","$27,533.58",$0.00,Minor bodily injury allegation,Anika S. Carver
-
-Total Incurred for SC00928774: Claim Reserves: $89,111.84, Claim Paid: $86,290.47, Claim Recovered: $7,255.35
-
-***
-
-Page 22 of 39
-Printed On: Thursday, February 26, 2026
+Carrier claim history export - underwriting copy                                                 Page 22 of 42
 
 # Page 23
 
-CLAIMS DIRECT ACCESS
+| CLAIMS DIRECT ACCESS |   Loss Run Report   | Run ID LR-0023 |
+|---|---|---|
+| | External carrier loss history - as valued 02/26/2026 | Page 23 of 42 |
+| | | Printed 02/26/2026 |
 
-Loss Run Report
+INSURED NAME: Harborline Produce Transport Inc
+CUSTOMER NO.: C043228
+POLICY NO.: SC00928302
+STATE: PA
+POLICY TERM: 07/16/22 - 07/16/23
 
-Insured Name: Pine Delta Transport LLC
-Customer No. C190023
-Number of Claims: 6
-Policy No. SC00928774
-State: PA
+"Effective Date","Claim Rptd","Claim Number","Claimant","Date Reported","Date of Loss","Status","Date Closed","Adjuster","Reserve","Paid","Recovered"
+"No Claims Reported as of: 02/26/2026",,,,,,,,,,,
+"Policy period total",,,,,,,,,"$0.00","$0.00","$0.00"
 
-Effective Date,Claim Reported,Claim Number,Claimant,Date Reported,Date of Loss,Claim Status,Date Closed,Adjuster,Claim Reserves,Claim Paid,Claim Recovered,Initial Claim Description,Driver
-10/05/19,X,00929292-01175,Pineview Medical Group,11/18/21,04/25/20,Closed,09/04/22,Caleb P. Moreno,$0.00,"$9,185.74",$0.00,Cargo shift during hard brake,Jonah X. Gaines
-10/06/19,X,00929292-01176,Metro Storage Yard,11/19/21,04/26/20,Open,,Tessa U. Bishop,"$46,034.54",$0.00,"$5,443.21",Backing incident in private yard,Reed C. Serrano
-10/07/19,X,00929292-01177,Riverside Concrete,11/20/21,04/27/20,Open,,Greta Z. Carver,"$62,996.58",$0.00,"$6,378.76",Minor bodily injury allegation,Nolan H. Abbott
-10/08/19,X,00929292-01178,Broad Street Produce,11/21/21,04/28/20,Open,,Elena E. Gaines,"$24,296.25",$0.00,$0.00,Side-swipe reported near ramp,Daria M. Talbot
-10/09/19,X,00929292-01179,Midway Trailer Works,11/22/21,04/29/20,Open,,Milan J. Serrano,"$8,140.04",$0.00,$0.00,Trailer door impact during delivery,Andre R. Foster
-10/10/19,X,00929329-01180,Ridgeway Collision,11/23/21,04/30/20,Closed,09/09/22,Maya O. Abbott,$0.00,$0.00,$0.00,Property damage at loading dock,Mateo W. Kaminski
+INSURED NAME: Harborline Produce Transport Inc
+CUSTOMER NO.: C043229
+POLICY NO.: SC00928303
+STATE: OH
+POLICY TERM: 07/16/23 - 07/15/24
 
-Total Incurred for SC00928774:
-Claim Reserves: $141,467.41
-Claim Paid: $9,185.74
-Claim Recovered: $11,821.97
+CLAIM FILE REGISTER - CARRIER HISTORY EXTRACT
 
 ***
 
-CLAIMS DIRECT ACCESS
+**CLAIM FILE:** 00928303-10165
+**Effective:** 07/16/23
+**CLAIMANT / LOSS:** Stonebridge Foods
+**DOL:** 04/16/24; reported 05/14/24
+**STATUS:** Closed
+**Closed:** 11/05/24
+**RPTD:** X
 
-Loss Run Report
+**ASSIGNED HANDLING:** Sawyer R. Voss
+Unit TR-3805 / Operator Dakota E. Benton
 
-Insured Name: Pine Delta Transport LLC
-Customer No. C190024
-Number of Claims: 6
-Policy No. SC00928774
-State: PA
+**FINANCIAL POSITION:** Reserve $0.00 / Paid $60,855.14 / Recovered $2,366.00
 
-Effective Date,Claim Reported,Claim Number,Claimant,Date Reported,Date of Loss,Claim Status,Date Closed,Adjuster,Claim Reserves,Claim Paid,Claim Recovered,Initial Claim Description,Driver
-10/11/19,X,00929329-01181,Pioneer Equipment Rental,11/24/21,05/01/20,Open,,Farah T. Talbot,"$57,659.64",$968.74,"$8,005.57",Parked unit struck overnight,Noemi B. Haddad
-10/12/19,X,00929329-01182,Hillcrest Auto Body,11/25/21,05/02/20,Closed,09/11/22,Ibrahim Y. Foster,$0.00,"$8,807.26",$0.00,Property damage at loading dock,Leah G. Markovic
-10/13/19,X,00929329-01183,Alder Foods Distribution,11/26/21,05/03/20,Pending,,Anika D. Kaminski,"$63,886.57","$22,132.79",$0.00,Rear-end contact during lane merge,Caleb L. Singh
-10/14/19,X,00929329-01184,North County Repair,11/27/21,05/04/20,Closed,09/13/22,Jonah I. Haddad,$0.00,$0.00,$0.00,Towing and storage reimbursement,Tessa Q. Okafor
-10/15/19,X,00929329-01185,Summit Materials,11/28/21,05/05/20,Closed,09/14/22,Reed N. Markovic,$0.00,$0.00,$0.00,Minor bodily injury allegation,Greta V. Keller
-10/16/19,X,00929329-01186,Tollway Freight Services,11/29/21,05/06/20,Closed,09/15/22,Nolan S. Singh,$0.00,$0.00,$0.00,Side-swipe reported near ramp,Elena A. Velasquez
+**CLAIM DESCRIPTION:** trailer door contacted by loading equipment; coverage was accepted subject to deductible application
+Claim office notes may continue on adjacent lines in the source export.
 
-Total Incurred for SC00928774:
-Claim Reserves: $121,546.21
-Claim Paid: $31,908.79
-Claim Recovered: $8,005.57
+***
 
-Page 23 of 39
-Printed On: Thursday, February 26, 2026
+**CLAIM FILE:** 00928303-10166
+**Effective:** 07/16/23
+**CLAIMANT / LOSS:** Tamarack Freight
+**DOL:** 04/23/24; reported 05/26/24
+**STATUS:** Open
+**Closed:** not closed
+**RPTD:** X
+
+**ASSIGNED HANDLING:** Parker J. Quint
+Scheduled driver: Winter A. Ellis
+
+**FINANCIAL POSITION:** Reserve $42,614.35 / Paid $4,605.50 / Recovered $0.00
+
+**CLAIM DESCRIPTION:** towing and storage reimbursement requested after disablement
+Loss data imported from carrier history rather than agency summary.
+
+***
+
+**CLAIM FILE:** 00928303-10167
+**Effective:** 07/16/23
+**CLAIMANT / LOSS:** Tamarack Freight
+**DOL:** 04/30/24; reported 06/07/24
+**STATUS:** Pending
+**Closed:** not closed
+**RPTD:** X
+
+**ASSIGNED HANDLING:** Dakota S. Delaney
+Scheduled driver: Jordan Y. Voss
+
+**FINANCIAL POSITION:** Reserve $46,743.59 / Paid $10,471.45 / Recovered $0.00
+
+**CLAIM DESCRIPTION:** steer tire failure led to roadside service invoice
+Loss data imported from carrier history rather than agency summary.
+
+***
+
+**POLICY PERIOD TOTAL FOR SC00928303** Reserve $89,357.94  Paid $75,932.09  Recovered $2,366.00
+
+***
+
+Driver information is shown only when included in the carrier export.
+
+Carrier claim history export - underwriting copy                                                   Page 23 of 42
 
 # Page 24
 
+CLAIMS DIRECT ACCESS
 Loss Run Report
-"Insured Name:","Pine Delta Transport LLC","Customer No.","C190024","Number of Claims:",3
-"Policy No.","SC00928774","State:","PA"
-"Effective Date","Claim Reported","Claim Number","Claimant","Date Reported","Date of Loss","Claim Status","Date Closed","Adjuster","Claim Reserves","Claim Paid","Claim Recovered","Initial Claim Description","Driver"
-"10/17/19","X","00929329-01187","Civic Transit Authority","11/30/21","05/07/20","Open","","Daria X. Okafor","$84,724.31","$0.00","$0.00","Minor bodily injury allegation","Milan F. Ilyin"
-"10/18/19","X","00929329-01188","Farmstead Supply Co","12/01/21","05/08/20","Closed","09/17/22","Andre C. Keller","$0.00","$24,524.79","$0.00","Towing and storage reimbursement","Arman K. Rahman"
-"10/19/19","X","00929329-01189","Union Parcel Depot","12/02/21","05/09/20","Closed","09/18/22","Mateo H. Velasquez","$0.00","$16,646.31","$0.00","Side-swipe reported near ramp","Lucian P. Novak"
-"Total Incurred for SC00928774:","","","","","","","","","$84,724.31","$41,171.10","$0.00"
+External carrier loss history - as valued 02/26/2026
 
-Loss Run Report
-"Insured Name:","Pine Delta Transport LLC","Customer No.","C190025","Number of Claims:",2
-"Policy No.","SC00928774","State:","PA"
-"Effective Date","Claim Reported","Claim Number","Claimant","Date Reported","Date of Loss","Claim Status","Date Closed","Adjuster","Claim Reserves","Claim Paid","Claim Recovered","Initial Claim Description","Driver"
-"10/20/19","X","00929329-01190","Pineview Medical Group","12/03/21","05/10/20","Pending","","Noemi M. Ilyin","$44,296.06","$0.00","$0.00","Cargo shift during hard brake","Ibrahim U. Roman"
-"10/21/19","X","00929329-01191","Metro Storage Yard","12/04/21","05/11/20","Closed","09/20/22","Leah R. Rahman","$0.00","$0.00","$0.00","Towing and storage reimbursement","Anika Z. Barrera"
-"Total Incurred for SC00928774:","","","","","","","","","$44,296.06","$0.00","$0.00"
+Run ID LR-0024
+Page 24 of 42
+Printed 02/26/2026
 
-"Page 24 of 39","Printed On: Thursday, February 26, 2026"
+INSURED NAME: Harborline Produce Transport Inc
+CUSTOMER NO.: C043230
+POLICY NO.: SC00928304
+STATE: NJ
+POLICY TERM: 08/03/19 - 08/02/20
+
+Effective Date,Claim Rptd,Claim Number,Claimant,Date Reported,Date of Loss,Status,Date Closed,Adjuster,Reserve,Paid,Recovered
+08/03/19,X,00928304-10168,Mason Retail Group,05/26/20,05/25/20,Open,,Vaughn A. Talbot,"$50,872.64","$4,914.00",$0.00
+Initial Claim Description: steer tire failure led to roadside service invoice; supplemental invoice was requested from the vendor,,,,,,,,,,,
+Continuation: liability review remains tied to the listed unit file. Unit TR-3856.,,,,,,,,,,,
+08/03/19,X,00928304-10169,Ironwood Trailer Works,06/07/20,06/01/20,Closed,01/12/21,see ledger,see below,see below,see below
+Initial Claim Description: side-swipe contact reported near an interstate ramp | Driver: Kai X. Benton,,,,,,,,,,,
+"Claim ledger: adjuster Vaughn H. Ivers; reserve $0.00; paid $4,203.49; recovery $0.00.",,,,,,,,,,,
+08/03/19,X,00928304-10170,Tamarack Freight,06/19/20,06/08/20,Closed,02/04/21,Jordan A. Serrano,$0.00,"$7,040.71","$2,668.00
+Initial Claim Description: claim opened from late-submitted repair documentation Unit TR-3890 / Operator Zion T. Voss,,,,,,,,,,,
+08/03/19,X,00928304-10171,Harbor Medical Supply,07/01/20,06/15/20,Reopened,02/27/21,Emery O. Benton,"$63,259.00","$11,828.85",$0.00
+Initial Claim Description: claim opened from late-submitted repair documentation Unit TR-3807 / Operator Vaughn Z. Quint,,,,,,,,,,,
+08/03/19,X,00928304-10172,Lakeview Auto Glass,09/17/19,08/27/19,Reopened,,Quinn W. Aldridge,"$67,388.59","$12,168.20",$0.00
+Initial Claim Description: property damage reported at a private receiving yard Driver not supplied in carrier export,,,,,,,,,,,
+08/03/19,X,00928304-10173,Canyon Fleet Body,09/29/19,09/03/19,Pending,,Casey G. Osborne,"$71,517.31","$12,507.55",$0.00
+Initial Claim Description: claim opened from late-submitted repair documentation Scheduled driver noted separately: Winter H. Ivers,,,,,,,,,,,
+Policy period total for SC00928304,,,,,,,,,"$253,037.54","$52,662.80","$2,668.00"
+
+Carrier claim history export - underwriting copy
+Page 24 of 42
 
 # Page 25
 
-CLAIMS DIRECT ACCESS
+| CLAIMS DIRECT ACCESS | Loss Run Report <br> External carrier loss history - as valued 02/26/2026 | Run ID LR-0025 <br> Page 25 of 42 <br> Printed 02/26/2026 |
+| :--- | :--- | :--- |
 
-Loss Run Report
+| INSURED NAME <br> **Harborline Produce Transport Inc** | CUSTOMER NO. <br> **C043231** | POLICY NO. <br> **SC00928305** | STATE <br> **MD** | POLICY TERM <br> **08/02/20 - 08/02/21** |
+| :--- | :--- | :--- | :--- | :--- |
 
-Insured Name: Pine Delta Transport LLC        Customer No. C190025        Number of Claims: 3
-Policy No. SC00928774                        State: PA
+<br>
 
-Effective Date,Claim Reported,Claim Number,Claimant,Date Reported,Date of Loss,Claim Status,Date Closed,Adjuster,Claim Reserves,Claim Paid,Claim Recovered
-10/22/19,X,00929366-01192,Riverside Concrete,12/05/21,05/12/20,Pending,,Caleb W. Novak,"$5,480.94",$0.00,$0.00
-"Initial Claim Description: Property damage at loading dock",,,,,,,,,,,"Driver: Jonah E. Nguyen"
-10/23/19,X,00929366-01193,Broad Street Produce,12/06/21,05/13/20,Closed,09/22/22,Tessa B. Roman,$0.00,$0.00,$0.00
-"Initial Claim Description: Rear-end contact during lane merge",,,,,,,,,,,"Driver: Reed J. Ivers"
-10/24/19,X,00929366-01194,Midway Trailer Works,12/07/21,05/14/20,Closed,09/23/22,Greta G. Barrera,$0.00,"$28,165.39",$0.00
-"Initial Claim Description: Backing incident in private yard",,,,,,,,,,,"Driver: Nolan O. Petrov"
-"Total Incurred for SC00928774:",,,,,,,,,"$5,480.94","$28,165.39","$0.00"
+**RESERVE LEDGER VIEW - OPEN AND CLOSED CLAIM ACTIVITY**
 
----
+| CLAIM / RPTD | CLAIMANT / NOTES | DATES | STATUS | HANDLING | AMOUNTS |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| 00928305-10174 <br> eff. 08/02/20; rptd X | Lakeview Auto Glass <br> forklift contact with parked trailer during unloading | 09/09/20 <br> reported 10/10/20 | Pending <br> closed - | Taylor N. Mercer <br> Driver: Logan F. Ivers | reserve $75,646.43 <br> paid $12,846.90 <br> recovered $0.00 |
+| 00928305-10175 <br> eff. 08/02/20; rptd X | Northline Distribution <br> parked tractor struck during overnight staging; salvage credit had not posted to the run | 09/16/20 <br> reported 10/22/20 | Pending <br> closed - | Blake J. Hollis <br> Driver: Winter F. Keller | reserve $79,775.55 <br> paid $13,186.25 <br> recovered $2,970.00 |
+| 00928305-10176 <br> eff. 08/02/20; rptd X | Riverbend Concrete <br> towing and storage reimbursement requested after disablement; photos were received with the initial notice | 09/23/20 <br> reported 11/03/20 | Pending <br> closed - | Emery G. Quint | reserve $83,904.03 <br> paid $13,525.60 <br> recovered $0.00 |
+| 00928305-10177 <br> eff. 08/02/20; rptd X | Bayline Warehouse <br> towing and storage reimbursement requested after disablement | 09/30/20 <br> reported 10/04/20 | Reopened <br> closed 01/09/21 | Vaughn D. Nolan <br> Unit TR-4009 / Operator Zion W. Ivers | reserve $88,033.63 <br> paid $13,864.95 <br> recovered $0.00 |
+| 00928305-10178 <br> eff. 08/02/20; rptd X | East Ridge Collision <br> claim opened from late-submitted repair documentation | 10/07/20 <br> reported 10/16/20 | Reopened <br> closed - | Winter X. Aldridge <br> Scheduled driver: Morgan B. Mercer | reserve $92,162.69 <br> paid $14,204.30 <br> recovered $0.00 |
+| 00928305-10179 <br> eff. 08/02/20; rptd X | Tamarack Freight <br> roll-up door damage noted during post-trip inspection | 10/14/20 <br> reported 10/28/20 | Reopened <br> closed - | Harper Y. Delaney <br> Scheduled driver: Kai H. Quint | reserve $4,291.99 <br> paid $14,543.65 <br> recovered $0.00 |
+| 00928305-10180 <br> eff. 08/02/20; rptd X | Riverbend Concrete <br> side-swipe contact reported near an interstate ramp | 10/21/20 <br> reported 11/09/20 | Reopened <br> closed 03/19/21 | Zion X. Hollis | reserve $8,420.69 <br> paid $14,883.00 <br> recovered $3,272.00 |
+| _Section note:_ | _Rows marked pending are subject to reserve review by the carrier claim office._ | | | | |
+| 00928305-10181 <br> eff. 08/02/20; rptd X | East Ridge Collision <br> windshield and cowl damage attributed to road debris | 10/28/20 <br> reported 11/21/20 | Reopened <br> closed - | Jordan D. Hollis <br> Driver: Zion O. Serrano | reserve $12,549.39 <br> paid $15,222.35 <br> recovered $0.00 |
+| 00928305-10182 <br> eff. 08/02/20; rptd X | Quarry Road Terminal <br> parking-lot contact reported by third-party claimant; rental and downtime amounts were still being reconciled | 11/04/20 <br> reported 12/03/20 | Pending <br> closed - | Harper U. Benton <br> Unit TR-4094 / Operator Emery U. Gaines | reserve $16,678.34 <br> paid $15,561.70 <br> recovered $0.00 |
+| Policy period total for SC00928305 | | | | | reserve $461,462.74 <br> paid $127,838.70 <br> recovered $6,242.00 |
 
-CLAIMS DIRECT ACCESS
-
-Loss Run Report
-
-Insured Name: Pine Delta Transport LLC        Customer No. C190026        Number of Claims: 0
-Policy No. SC00928774                        State: PA
-
-Effective Date,Claim Reported,Claim Number,Claimant,Date Reported,Date of Loss,Claim Status,Date Closed,Adjuster,Claim Reserves,Claim Paid,Claim Recovered
-No Claims Reported as of: 02/26/2026,,,,,,,,,,,
-"Total Incurred:",,,,,,,,,$0.00,$0.00,$0.00
+<br>
 
 ---
-
-Page 25 of 39                                                            Printed On: Thursday, February 26, 2026
+Carrier claim history export - underwriting copy <span style="float: right;">Page 25 of 42</span>
 
 # Page 26
 
-CLAIMS DIRECT ACCESS
+CLAIMS
+DIRECT
+ACCESS
 
-Loss Run Report
+                                                Loss Run Report                                       Run ID LR-0026
+                                   External carrier loss history - as valued 02/26/2026                 Page 26 of 42
+                                                                                                    Printed 02/26/2026
 
-Insured Name: Pine Delta Transport LLC
-Customer No. C190026
-Number of Claims: 3
-Policy No. SC00928774
-State: PA
+INSURED NAME                        CUSTOMER NO.        POLICY NO.             STATE        POLICY TERM
+Harborline Produce Transport Inc    C043232             SC00928306             VA           08/02/21 - 08/02/22
 
-"Effective Date","Claim Reported","Claim Number","Claimant","Date Reported","Date of Loss","Claim Status","Date Closed","Adjuster","Claim Reserves","Claim Paid","Claim Recovered"
-"10/25/19","X","00929366-01195","Ridgeway Collision","12/08/21","05/15/20","Open","","Elena L. Nguyen","$32,711.90","$37,804.84","$0.00"
-"Initial Claim Description: Rear-end contact during lane merge",,,,,,,,,,,"Driver: Daria T. Santos"
-"10/26/19","X","00929366-01196","Pioneer Equipment Rental","12/09/21","05/16/20","Pending","","Milan Q. Ivers","$21,395.26","$29,091.53","$3,328.12"
-"Initial Claim Description: Rear-end contact during lane merge",,,,,,,,,,,"Driver: Andre Y. Moreno"
-"10/27/19","X","00929366-01197","Hillcrest Auto Body","12/10/21","05/17/20","Closed","09/26/22","Maya V. Petrov","$0.00","$36,960.97","$0.00"
-"Initial Claim Description: Towing and storage reimbursement",,,,,,,,,,,"Driver: Mateo D. Bishop"
-"Total Incurred for SC00928774:",,,,,,,,,"$54,107.16","$103,857.34","$3,328.12"
+Effective Date,Claim Rptd,Claim Number,Claimant,Date Reported,Date of Loss,Status,Date Closed,Adjuster,Reserve,Paid,Recovered
+08/02/21,X,00928306-10183,Harbor Medical Supply,12/15/21,11/11/21,Open,,see ledger,see below,see below,see below
+"  Initial Claim Description: reefer unit service call included in repair estimate Unit TR-4111 / Operator Kai H. Priest",,,,,,,,,,,
+"  Claim ledger: adjuster Dakota E. Osborne; reserve $20,807.12; paid $7,227.75; recovery $0.00.",,,,,,,,,,,
+08/02/21,X,00928306-10184,Bayline Warehouse,12/27/21,11/18/21,Open,,Quinn P. Quint,$24,936.34,$7,382.00,$0.00
+"  Initial Claim Description: rear impact while backing toward a dock door  Driver not supplied in carrier export",,,,,,,,,,,
+08/02/21,X,00928306-10185,Dover Equipment Rental,11/27/21,11/25/21,Open,,Reese H. Priest,pending ledger,$7,536.25,$3,574.00
+"  Initial Claim Description: rear impact while backing toward a dock door  Scheduled driver noted separately: Reese Y. Larkin",,,,,,,,,,,
+"  Financial detail: reserve carried as $29,065.84; payments $7,536.25; recoveries $3,574.00.",,,,,,,,,,,
+08/02/21,X,00928306-10186,Tamarack Freight,12/09/21,12/02/21,Reopened,06/23/22,Logan M. Foster,$33,194.57,$16,919.10,$0.00
+"  Initial Claim Description: claim opened from late-submitted repair documentation | Driver: Quinn Y. Foster",,,,,,,,,,,
+"Policy period total for SC00928306",,,,,,,,,$108,003.87,$39,065.10,$3,574.00
 
+Rows marked pending are subject to reserve review by the carrier claim office.
 
-CLAIMS DIRECT ACCESS
-
-Loss Run Report
-
-Insured Name: Pine Delta Transport LLC
-Customer No. C190027
-Number of Claims: 0
-Policy No. SC00928774
-State: PA
-
-"Effective Date","Claim Reported","Claim Number","Claimant","Date Reported","Date of Loss","Claim Status","Date Closed","Adjuster","Claim Reserves","Claim Paid","Claim Recovered"
-"No Claims Reported as of: 02/26/2026",,,,,,,,,,,
-,,,,,,,,"Total Incurred:","$0.00","$0.00","$0.00"
-
-
-Page 26 of 39
-Printed On: Thursday, February 26, 2026
+Carrier claim history export - underwriting copy                                                   Page 26 of 42
 
 # Page 27
 
 CLAIMS DIRECT ACCESS
 
 Loss Run Report
+External carrier loss history - as valued 02/26/2026
 
-Insured Name: Pine Delta Transport LLC                      Customer No. C190027                  Number of Claims: 3
-Policy No. SC00928774                                      State: PA
+Run ID LR-0027
+Page 27 of 42
+Printed 02/26/2026
 
-"Effective Date","Claim Reported","Claim Number","Claimant","Date Reported","Date of Loss","Claim Status","Date Closed","Adjuster","Claim Reserves","Claim Paid","Claim Recovered"
-"10/28/19","X","00929366-01198","Alder Foods Distribution","12/11/21","05/18/20","Open","","Farah A. Santos","$23,300.37","$10,595.96","$0.00"
-"Initial Claim Description: Property damage at loading dock",,,,,,,,,,,"Driver: Noemi I. Carver"
-"10/29/19","X","00929366-01199","North County Repair","12/12/21","05/19/20","Pending","","Marta F. Moreno","$69,107.47","$0.00","$0.00"
-"Initial Claim Description: Parked unit struck overnight",,,,,,,,,,,"Driver: Leah N. Gaines"
-"10/30/19","X","00929366-01200","Summit Materials","12/13/21","05/20/20","Pending","","Owen K. Okafor","$52,107.88","$0.00","$1,334.60"
-"Initial Claim Description: Minor bodily injury allegation",,,,,,,,,,,"Driver: Caleb S. Ilyin"
-"Total Incurred for SC00928774:",,,,,,,,,"$144,515.72","$10,595.96","$1,334.60"
+INSURED NAME: Harborline Produce Transport Inc
+CUSTOMER NO: C043233
+POLICY NO.: SC00928307
+STATE: NY
+POLICY TERM: 08/02/22 - 08/02/23
 
+Effective Date,Claim Rptd,Claim Number,Claimant,Date Reported,Date of Loss,Status,Date Closed,Adjuster,Reserve,Paid,Recovered,Description/Notes
+08/02/22,X,00928307-10187,Lakeview Auto Glass,12/21/22,12/09/22,Open,,see ledger,see below,see below,see below,"Initial Claim Description: side-swipe contact reported near an interstate ramp; salvage credit had not posted to the run | Driver: Blake G. Serrano
+Claim ledger: adjuster Vaughn Q. Ramos; reserve $37,323.79; paid $7,844.75; recovery $0.00.
+Continuation: payment history may exclude late-posted recovery activity. Unit TR-4179."
+08/02/22,X,00928307-10188,Northline Distribution,01/02/23,12/16/22,Pending,,Quinn P. Benton,"$41,452.52","$17,597.80",$0.00,"Initial Claim Description: forklift contact with parked trailer during unloading"
+08/02/22,X,00928307-10189,Northline Distribution,01/14/23,12/23/22,Pending,,Morgan A. Gaines,"$45,581.01","$17,937.15",$0.00,"Initial Claim Description: cargo shortage noticed after consignee inspection; repair estimate remains under carrier review Unit TR-4213 / Operator Zion P. Quint
+Continuation: liability review remains tied to the listed unit file. Unit TR-4213."
+08/02/22,X,00928307-10190,Canyon Fleet Body,01/26/23,12/30/22,Closed,09/23/23,Avery L. Osborne,$0.00,"$63,780.35","$3,876.00","Initial Claim Description: loading bay bollard contact reported by warehouse staff Scheduled driver noted separately: Finley Y. Gaines"
+08/02/22,X,00928307-10191,Grove Street Produce,02/07/23,01/06/23,Open,,Winter P. Mercer,"$53,839.69","$8,461.75",$0.00,"Initial Claim Description: roll-up door damage noted during post-trip inspection Scheduled driver noted separately: Vaughn A. Carver"
+08/02/22,X,00928307-10192,East Ridge Collision,02/19/23,01/13/23,Reopened,04/12/23,see ledger,see below,see below,see below,"Initial Claim Description: parked tractor struck during overnight staging
+Claim ledger: adjuster Kai Y. Benton; reserve $57,968.74; paid $18,955.20; recovery $0.00."
+08/02/22,X,00928307-10193,Mason Retail Group,03/03/23,01/20/23,Reopened,,Quinn Y. Aldridge,"$62,097.99","$19,294.55",$0.00,"Initial Claim Description: cargo load shifted during an abrupt traffic stop | Driver: Parker G. Ramos"
+08/02/22,X,00928307-10194,Alder Logistics Repair,02/01/23,01/27/23,Open,,Rowan F. Larkin,pending ledger,"$8,924.50",$0.00,"Initial Claim Description: mirror and fairing damage found after delivery Unit TR-4298 / Operator Reese Z. Carver
+Financial detail: reserve carried as $66,226.57; payments $8,924.50; recoveries $0.00.
+Continuation: claim office noted deductible handling outside this extract. Unit TR-4298."
+08/02/22,X,00928307-10195,Keystone Materials,02/13/23,02/03/23,Pending,,Blake X. Keller,"$70,355.93","$19,973.25","$4,178.00","Initial Claim Description: side-swipe contact reported near an interstate ramp Unit TR-4315 / Operator Blake V. Serrano
+Continuation: liability review remains tied to the listed unit file. Unit TR-4315."
+08/02/22,X,00928307-10196,Fairmont Cold Storage,02/25/23,02/10/23,Closed,06/01/23,see ledger,see below,see below,see below,"Initial Claim Description: cargo load shifted during an abrupt traffic stop; coverage was accepted subject to deductible application Driver not supplied in carrier export
+Claim ledger: adjuster Taylor D. Voss; reserve $0.00; paid $12,802.23; recovery $0.00.
+Continuation: closing date reflects carrier system status at valuation. Unit TR-4332."
+08/02/22,X,00928307-10197,Keystone Materials,03/09/23,02/17/23,Pending,,Taylor H. Hollis,"$78,613.17","$20,651.95",$0.00,"Initial Claim Description: property damage reported at a private receiving yard Scheduled driver noted separately: Finley G. Larkin"
+08/02/22,X,00928307-10198,Harbor Medical Supply,03/21/23,02/24/23,Reopened,07/17/23,Kai N. Osborne,"$82,742.32","$20,991.30",$0.00,"Initial Claim Description: loading bay bollard contact reported by warehouse staff; subrogation diary was retained for follow-up | Driver: Taylor O. Serrano
+Continuation: payment history may exclude late-posted recovery activity. Unit TR-4366."
+Policy period total for SC00928307,,,,,,,,, "$596,201.73","$237,214.78","$8,054.00",
 
-CLAIMS DIRECT ACCESS
-
-Loss Run Report
-
-Insured Name: Pine Delta Transport LLC                      Customer No. C190028                  Number of Claims: 3
-Policy No. SC00928774                                      State: PA
-
-"Effective Date","Claim Reported","Claim Number","Claimant","Date Reported","Date of Loss","Claim Status","Date Closed","Adjuster","Claim Reserves","Claim Paid","Claim Recovered"
-"10/31/19","X","00929366-01201","Tollway Freight Services","12/14/21","05/21/20","Pending","","Priya P. Keller","$51,422.77","$13,991.27","$8,986.86"
-"Initial Claim Description: Side-swipe reported near ramp",,,,,,,,,,,"Driver: Tessa X. Rahman"
-"11/01/19","X","00929366-01202","Civic Transit Authority","12/15/21","05/22/20","Closed","10/01/22","Sonia U. Velasquez","$0.00","$0.00","$0.00"
-"Initial Claim Description: Rear-end contact during lane merge",,,,,,,,,,,"Driver: Greta C. Novak"
-"11/02/19","X","00929366-01203","Farmstead Supply Co","12/16/21","05/23/20","Closed","10/02/22","Cedric Z. Ilyin","$0.00","$0.00","$0.00"
-"Initial Claim Description: Trailer door impact during delivery",,,,,,,,,,,"Driver: Elena H. Roman"
-"Total Incurred for SC00928774:",,,,,,,,,"$51,422.77","$13,991.27","$8,986.86"
-
-
-Page 27 of 39                                                                                Printed On: Thursday, February 26, 2026
+Carrier claim history export - underwriting copy                                                                            Page 27 of 42
 
 # Page 28
 
 CLAIMS DIRECT ACCESS
+
 Loss Run Report
+External carrier loss history - as valued 02/26/2026
 
-Insured Name: Pine Delta Transport LLC, Customer No. C190028, Number of Claims: 6
-Policy No. SC00928774, State: PA
+Run ID LR-0028
+Page 28 of 42
+Printed 02/26/2026
 
-Effective Date,Claim Reported,Claim Number,Claimant,Date Reported,Date of Loss,Claim Status,Date Closed,Adjuster,Claim Reserves,Claim Paid,Claim Recovered,Initial Claim Description,Driver
-11/03/19,X,00929403-01204,Union Parcel Depot,12/17/21,05/24/20,Closed,10/03/22,Samir E. Rahman,$0.00,$0.00,$0.00,Property damage at loading dock,Milan M. Barrera
-11/04/19,X,00929403-01205,Pineview Medical Group,12/18/21,05/25/20,Closed,10/04/22,Nina J. Novak,$0.00,$0.00,$0.00,Side-swipe reported near ramp,Maya R. Nguyen
-11/05/19,X,00929403-01206,Metro Storage Yard,12/19/21,05/26/20,Pending,,Mateo O. Roman,"$83,033.42","$30,169.53",$0.00,Property damage at loading dock,Farah W. Ivers
-11/06/19,X,00929403-01207,Riverside Concrete,12/20/21,05/27/20,Open,,Noemi T. Barrera,"$12,489.56",$0.00,$0.00,Cargo shift during hard brake,Marta B. Petrov
-11/07/19,X,00929403-01208,Broad Street Produce,12/21/21,05/28/20,Closed,10/07/22,Leah Y. Nguyen,$0.00,"$24,819.50",$0.00,Trailer door impact during delivery,Owen G. Santos
-11/08/19,X,00929403-01209,Midway Trailer Works,12/22/21,05/29/20,Closed,10/08/22,Caleb D. Ivers,$0.00,"$14,732.70",$0.00,Towing and storage reimbursement,Priya L. Moreno
+INSURED NAME: Harborline Produce Transport Inc
+CUSTOMER NO.: C043234
+POLICY NO.: SC00928308
+STATE: PA
+POLICY TERM: 08/02/23 - 08/01/24
 
-Total Incurred for SC00928774,,,,,,,,, "$95,522.98", "$69,721.73",$0.00
+Effective Date,Claim Rptd,Claim Number,Claimant,Date Reported,Date of Loss,Status,Date Closed,Adjuster,Reserve,Paid,Recovered
+No Claims Reported as of: 02/26/2026,,,,,,,,,,,
+Policy period total,,,,,,,,, $0.00, $0.00, $0.00
 
+Some zero activity policy periods are retained for underwriting continuity.
 
-CLAIMS DIRECT ACCESS
-Loss Run Report
+INSURED NAME: Harborline Produce Transport Inc
+CUSTOMER NO.: C043235
+POLICY NO.: SC00928309
+STATE: OH
+POLICY TERM: 08/20/19 - 08/19/20
 
-Insured Name: Pine Delta Transport LLC, Customer No. C190029, Number of Claims: 5
-Policy No. SC00928774, State: PA
+RESERVE LEDGER VIEW - OPEN AND CLOSED CLAIM ACTIVITY
 
-Effective Date,Claim Reported,Claim Number,Claimant,Date Reported,Date of Loss,Claim Status,Date Closed,Adjuster,Claim Reserves,Claim Paid,Claim Recovered,Initial Claim Description,Driver
-11/09/19,X,00929403-01210,Ridgeway Collision,12/23/21,05/30/20,Closed,10/09/22,Tessa I. Petrov,$0.00,"$8,245.21",$0.00,Windshield damage from road debris,Sonia Q. Bishop
-11/10/19,X,00929403-01211,Pioneer Equipment Rental,12/24/21,05/31/20,Closed,10/10/22,Greta N. Santos,$0.00,$0.00,$0.00,Trailer door impact during delivery,Cedric V. Carver
-11/11/19,X,00929403-01212,Hillcrest Auto Body,12/25/21,06/01/20,Pending,,Elena S. Moreno,"$16,886.24","$13,364.09",$0.00,Backing incident in private yard,Daria A. Gaines
-11/12/19,X,00929403-01213,Alder Foods Distribution,12/26/21,06/02/20,Closed,10/12/22,Milan X. Bishop,$0.00,$0.00,$0.00,Trailer door impact during delivery,Andre F. Serrano
-11/13/19,X,00929403-01214,North County Repair,12/27/21,06/03/20,Closed,10/13/22,Maya C. Carver,$0.00,$0.00,$0.00,Parked unit struck overnight,Mateo K. Abbott
+CLAIM / RPTD,CLAIMANT / NOTES,DATES,STATUS,HANDLING,AMOUNTS
+"00928309-10199
+eff. 08/20/19; rptd X","Alder Logistics Repair
+reefer unit service call included in repair estimate","03/20/20
+reported 04/19/20","Open
+closed -","Logan H. Foster
+Driver: Vaughn A. Serrano","reserve $86,871.96
+paid $9,695.75
+recovered $0.00"
+"00928309-10200
+eff. 08/20/19; rptd X","Palisade Container
+cargo load shifted during an abrupt traffic stop","03/27/20
+reported 05/01/20","Closed
+closed 09/18/20","Finley Z. Gaines","reserve $0.00
+paid $24,150.98
+recovered $4,480.00"
+"00928309-10201
+eff. 08/20/19; rptd X","Mason Retail Group
+steer tire failure led to roadside service invoice","04/03/20
+reported 05/13/20","Reopened
+closed 10/11/20","Logan S. Benton
+Unit TR-4417 / Operator Vaughn E. Priest","reserve $3,129.46
+paid $22,009.35
+recovered $0.00"
+"00928309-10202
+eff. 08/20/19; rptd X","Juniper Transit Yard
+subrogation file opened for possible third-party recovery","04/10/20
+reported 04/13/20","Pending
+closed -","Parker P. Keller
+Scheduled driver: Sawyer U. Foster","reserve $7,258.65
+paid $22,348.70
+recovered $0.00"
+"00928309-10203
+eff. 08/20/19; rptd X","Alder Logistics Repair
+property damage reported at a private receiving yard; rental and downtime amounts were still being reconciled","04/17/20
+reported 04/25/20","Closed
+closed 10/15/20","Dakota P. Ramos
+Scheduled driver: Dakota X. Foster","reserve $0.00
+paid $32,661.09
+recovered $0.00"
+"00928309-10204
+eff. 08/20/19; rptd X","Canyon Fleet Body
+property damage reported at a private receiving yard","04/24/20
+reported 05/07/20","Closed
+closed 11/07/20","Reese N. Osborne","reserve $0.00
+paid $35,498.08
+recovered $0.00"
+"00928309-10205
+eff. 08/20/19; rptd X","Grove Street Produce
+parked tractor struck during overnight staging","05/01/20
+reported 05/19/20","Pending
+closed -","Logan B. Ellis
+Driver: Morgan K. Foster","reserve $19,645.50
+paid $266.75
+recovered $4,782.00"
+"Policy period total for SC00928309",,,,,,"reserve $116,905.57
+paid $146,330.70
+recovered $9,262.00"
 
-Total Incurred for SC00928774,,,,,,,,, "$16,886.24", "$21,609.30",$0.00
+continued on next page
 
-
-Page 28 of 39
-Printed On: Thursday, February 26, 2026
+Carrier claim history export - underwriting copy                                                                    Page 28 of 42
 
 # Page 29
 
+CLAIMS DIRECT ACCESS
 Loss Run Report
-"Insured Name: Pine Delta Transport LLC","Customer No. C190029","Number of Claims: 6"
-"Policy No. SC00928774","State: PA"
-"Effective Date","Claim Reported","Claim Number","Claimant","Date Reported","Date of Loss","Claim Status","Date Closed","Adjuster","Claim Reserves","Claim Paid","Claim Recovered","Initial Claim Description","Driver"
-"11/14/19","X","00929403-01215","Summit Materials","12/28/21","06/04/20","Open","","Farah H. Gaines","$74,079.50","$12,994.18","$0.00","Minor bodily injury allegation","Noemi P. Talbot"
-"11/15/19","X","00929440-01216","Tollway Freight Services","12/29/21","06/05/20","Closed","10/15/22","Marta M. Serrano","$0.00","$22,944.41","$7,674.74","Minor bodily injury allegation","Leah U. Foster"
-"11/16/19","X","00929440-01217","Civic Transit Authority","12/30/21","06/06/20","Pending","","Owen R. Abbott","$72,942.89","$6,785.63","$2,372.20","Trailer door impact during delivery","Caleb Z. Kaminski"
-"11/17/19","X","00929440-01218","Farmstead Supply Co","12/31/21","06/07/20","Open","","Priya W. Talbot","$42,533.37","$34,886.71","$0.00","Minor bodily injury allegation","Tessa E. Haddad"
-"11/18/19","X","00929440-01219","Union Parcel Depot","01/01/22","06/08/20","Closed","10/18/22","Sonia B. Foster","$0.00","$40,162.02","$0.00","Cargo shift during hard brake","Greta J. Markovic"
-"11/19/19","X","00929440-01220","Pineview Medical Group","01/02/22","06/09/20","Closed","10/19/22","Cedric G. Kaminski","$0.00","$32,161.43","$0.00","Rear-end contact during lane merge","Elena O. Singh"
-"Total Incurred for SC00928774",,,,,,,,,"$189,555.76","$149,934.38","$10,046.94",,
+External carrier loss history - as valued 02/26/2026
 
-Loss Run Report
-"Insured Name: Pine Delta Transport LLC","Customer No. C190030","Number of Claims: 6"
-"Policy No. SC00928774","State: PA"
-"Effective Date","Claim Reported","Claim Number","Claimant","Date Reported","Date of Loss","Claim Status","Date Closed","Adjuster","Claim Reserves","Claim Paid","Claim Recovered","Initial Claim Description","Driver"
-"11/20/19","X","00929440-01221","Metro Storage Yard","01/03/22","06/10/20","Closed","10/20/22","Samir L. Haddad","$0.00","$0.00","$0.00","Windshield damage from road debris","Milan T. Okafor"
-"11/21/19","X","00929440-01222","Riverside Concrete","01/04/22","06/11/20","Closed","10/21/22","Nina Q. Markovic","$0.00","$0.00","$2,243.38","Parked unit struck overnight","Maya Y. Keller"
-"11/22/19","X","00929440-01223","Broad Street Produce","01/05/22","06/12/20","Pending","","Clara V. Singh","$48,622.18","$8,004.52","$4,528.39","Minor bodily injury allegation","Farah D. Velasquez"
-"11/23/19","X","00929440-01224","Midway Trailer Works","01/06/22","06/13/20","Open","","Elias A. Okafor","$33,211.83","$10,780.76","$0.00","Side-swipe reported near ramp","Marta I. Ilyin"
-"11/24/19","X","00929440-01225","Ridgeway Collision","01/07/22","06/14/20","Closed","10/24/22","Victor F. Keller","$0.00","$0.00","$0.00","Cargo shift during hard brake","Owen N. Rahman"
-"11/25/19","X","00929440-01226","Pioneer Equipment Rental","01/08/22","06/15/20","Pending","","Rosa K. Velasquez","$7,412.07","$19,688.66","$0.00","Rear-end contact during lane merge","Priya S. Novak"
-"Total Incurred for SC00928774",,,,,,,,,"$89,246.08","$38,473.94","$6,771.77",,
+Run ID LR-0029
+Page 29 of 42
+Printed 02/26/2026
 
-"Page 29 of 39",,,,,,,,,,,,"Printed On: Thursday, February 26, 2026"
+INSURED NAME: Harborline Produce Transport Inc
+CUSTOMER NO.: C043236
+POLICY NO.: SC00928310
+STATE: NJ
+POLICY TERM: 08/19/20 - 08/19/21
+
+Effective Date,Claim Rptd,Claim Number,Claimant,Date Reported,Date of Loss,Status,Date Closed,Adjuster,Reserve,Paid,Recovered
+08/19/20,X,00928310-10206,Harbor Medical Supply,05/31/21,05/08/21,Reopened,,Avery L. Ivers,"$23,774.56",$606.10,$0.00
+"Initial Claim Description: side-swipe contact reported near an interstate ramp Unit TR-4502 / Operator Casey N. Osborne"
+08/19/20,X,00928310-10207,Canyon Fleet Body,06/12/21,05/15/21,Reopened,01/15/22,Quinn Q. Keller,"$27,903.22",$945.45,$0.00
+"Initial Claim Description: parked tractor struck during overnight staging Unit TR-4519 / Operator Vaughn E. Ivers"
+08/19/20,X,00928310-10208,Tamarack Freight,06/24/21,05/22/21,Reopened,,Vaughn Z. Ramos,"$32,032.20","$1,284.80",$0.00
+"Initial Claim Description: steer tire failure led to roadside service invoice Driver not supplied in carrier export"
+08/19/20,X,00928310-10209,Dover Equipment Rental,07/06/21,05/29/21,Closed,03/02/22,Kai P. Mercer,$0.00,"$49,683.34",$0.00
+"Initial Claim Description: minor bodily injury allegation after a lane-change contact; medical reserve was reviewed without closing the file Scheduled driver noted separately: Winter S. Gaines"
+"Continuation: claim office noted deductible handling outside this extract. Unit TR-4553."
+08/19/20,X,00928310-10210,Tamarack Freight,06/06/21,06/05/21,Pending,,see ledger,see below,see below,see below
+"Initial Claim Description: windshield and cowl damage attributed to road debris; subrogation diary was retained for follow-up | Driver: Emery X. Hollis"
+"Claim ledger: adjuster Blake K. Priest; reserve $40,290.11; paid $1,963.50; recovery $5,084.00."
+"Continuation: reserve position retained pending supervisor diary review. Unit TR-4570."
+08/19/20,X,00928310-10211,Oak Valley Repair,06/18/21,06/12/21,Reopened,,Harper K. Benton,"$44,419.02","$2,302.85",$0.00
+"Initial Claim Description: property damage reported at a private receiving yard | Driver: Dakota A. Gaines"
+08/19/20,X,00928310-10212,Ironwood Trailer Works,06/30/21,06/19/21,Pending,,Winter E. Serrano,pending ledger,"$2,642.20",$0.00
+"Initial Claim Description: minor bodily injury allegation after a lane-change contact"
+"Financial detail: reserve carried as $48,548.25; payments $2,642.20; recoveries $0.00."
+08/19/20,X,00928310-10213,Alder Logistics Repair,07/12/21,06/26/21,Open,,Rowan X. Mercer,"$52,677.93","$1,355.25",$0.00
+"Initial Claim Description: claim opened from late-submitted repair documentation Unit TR-4621 / Operator Avery D. Talbot"
+08/19/20,X,00928310-10214,Ironwood Trailer Works,07/24/21,07/03/21,Open,,see ledger,see below,see below,see below
+"Initial Claim Description: claim opened from late-submitted repair documentation Scheduled driver noted separately: Winter D. Ramos"
+"Claim ledger: adjuster Reese G. Keller; reserve $56,806.06; paid $1,509.50; recovery $0.00."
+08/19/20,X,00928310-10215,Northline Distribution,10/09/20,09/13/20,Pending,,Blake B. Ellis,"$60,935.60","$3,660.25","$5,386.00"
+"Initial Claim Description: forklift contact with parked trailer during unloading Scheduled driver noted separately: Blake N. Gaines"
+Policy period total for SC00928310,,,,,,,,,"$387,386.95","$65,953.24","$10,470.00"
+
+continued on next page
+
+Carrier claim history export - underwriting copy                                                 Page 29 of 42
 
 # Page 30
 
 CLAIMS DIRECT ACCESS
 
 Loss Run Report
-Insured Name: Pine Delta Transport LLC
-Customer No. C190030
-Number of Claims: 6
-Policy No. SC00928774
-State: PA
+External carrier loss history - as valued 02/26/2026
 
-Effective Date,Claim Reported,Claim Number,Claimant,Date Reported,Date of Loss,Claim Status,Date Closed,Adjuster,Claim Reserves,Claim Paid,Claim Recovered,Initial Claim Description,Driver
-11/26/19,X,00929440-01227,Hillcrest Auto Body,01/09/22,06/16/20,Closed,10/26/22,Arman P. Ilyin,$0.00,$0.00,$0.00,Cargo shift during hard brake,Sonia X. Roman
-11/27/19,X,00929477-01228,Alder Foods Distribution,01/10/22,06/17/20,Closed,10/27/22,Lucian U. Rahman,$0.00,"$41,717.12","$2,141.96",Backing incident in private yard,Cedric C. Barrera
-11/28/19,X,00929477-01229,North County Repair,01/11/22,06/18/20,Pending,,Ibrahim Z. Novak,"$52,594.95","$10,881.14","$6,986.36",Towing and storage reimbursement,Samir H. Nguyen
-11/29/19,X,00929477-01230,Summit Materials,01/12/22,06/19/20,Open,,Milan E. Abbott,"$24,898.85",$0.00,$0.00,Backing incident in private yard,Nina M. Kaminski
-11/30/19,X,00929477-01231,Tollway Freight Services,01/13/22,06/20/20,Closed,10/30/22,Maya J. Talbot,$0.00,$0.00,$0.00,Property damage at loading dock,Clara R. Haddad
-12/01/19,X,00929477-01232,Civic Transit Authority,01/14/22,06/21/20,Open,,Farah O. Foster,"$80,287.42","$30,241.48",$0.00,Towing and storage reimbursement,Elias W. Markovic
-Total Incurred for SC00928774:,,,,,,,,, "$157,781.22","$82,839.74","$9,128.32",,
+Run ID LR-0030
+Page 30 of 42
+Printed 02/26/2026
 
+INSURED NAME,CUSTOMER NO.,POLICY NO.,STATE,POLICY TERM
+Harborline Produce Transport Inc,C043237,SC00928311,MD,08/19/21 - 08/19/22
 
-CLAIMS DIRECT ACCESS
+CLAIM FILE REGISTER - CARRIER HISTORY EXTRACT
 
-Loss Run Report
-Insured Name: Pine Delta Transport LLC
-Customer No. C190031
-Number of Claims: 5
-Policy No. SC00928774
-State: PA
+CLAIM FILE,EFFECTIVE,CLAIMANT / LOSS,DOL / REPORTED,STATUS,CLOSED,RPTD,ASSIGNED HANDLING,FINANCIAL POSITION,CLAIM DESCRIPTION
+00928311-10216,08/19/21,Lakeview Auto Glass,DOL 09/20/21; reported 10/21/21,Reopened,Closed: 02/04/22,X,Blake T. Voss,Reserve $65,064.03 / Paid $3,999.60 / Recovered $0.00,"claim opened from late-submitted repair documentation. Claim office notes may continue on adjacent lines in the source export."
+00928311-10217,08/19/21,Lakeview Auto Glass,DOL 09/27/21; reported 11/02/21,Reopened,Closed: not closed,X,"Emery X. Priest (Driver: Rowan A. Delaney)",Reserve $69,193.89 / Paid $4,338.95 / Recovered $0.00,"towing and storage reimbursement requested after disablement; liability position was not final at valuation date. Claim office notes may continue on adjacent lines in the source export."
 
-Effective Date,Claim Reported,Claim Number,Claimant,Date Reported,Date of Loss,Claim Status,Date Closed,Adjuster,Claim Reserves,Claim Paid,Claim Recovered,Initial Claim Description,Driver
-12/02/19,X,00929477-01233,Farmstead Supply Co,01/15/22,06/22/20,Closed,11/01/22,Marta T. Kaminski,$0.00,"$7,720.79",$0.00,Cargo shift during hard brake,Victor B. Singh
-12/03/19,X,00929477-01234,Union Parcel Depot,01/16/22,06/23/20,Pending,,Owen Y. Haddad,"$23,798.75","$18,834.60",$0.00,Cargo shift during hard brake,Rosa G. Okafor
-12/04/19,X,00929477-01235,Pineview Medical Group,01/17/22,06/24/20,Closed,11/03/22,Priya D. Markovic,$0.00,"$41,415.24",$356.55,Property damage at loading dock,Arman L. Keller
-12/05/19,X,00929477-01236,Metro Storage Yard,01/18/22,06/25/20,Closed,11/04/22,Sonia I. Singh,$0.00,"$4,603.71","$4,043.46",Side-swipe reported near ramp,Greta Q. Velasquez
-12/06/19,X,00929477-01237,Riverside Concrete,01/19/22,06/26/20,Pending,,Cedric N. Okafor,"$29,609.06","$36,370.64","$7,728.71",Parked unit struck overnight,Elena V. Ilyin
-Total Incurred for SC00928774:,,,,,,,,, "$53,407.81","$108,944.98","$12,128.72",,
+POLICY PERIOD TOTAL FOR SC00928311 Reserve $134,257.92 Paid $8,338.55 Recovered $0.00
 
+continued on next page
 
-Page 30 of 39
-Printed On: Thursday, February 26, 2026
+Carrier claim history export - underwriting copy
+Page 30 of 42
 
 # Page 31
 
 CLAIMS DIRECT ACCESS
 
 Loss Run Report
-Insured Name: Pine Delta Transport LLC,Customer No. C190031,Number of Claims: 6
-Policy No. SC00928774,State: PA
+External carrier loss history - as valued 02/26/2026
 
-Effective Date,Claim Reported,Claim Number,Claimant,Date Reported,Date of Loss,Claim Status,Date Closed,Adjuster,Claim Reserves,Claim Paid,Claim Recovered,Initial Claim Description,Driver
-12/07/19,X,00929477-01238,Broad Street Produce,01/20/22,06/27/20,Closed,11/06/22,Samir S. Keller,$0.00,$0.00,"$4,643.23",Property damage at loading dock,Milan A. Rahman
-12/08/19,X,00929477-01239,Midway Trailer Works,01/21/22,06/28/20,Pending,,Nina X. Velasquez,"$8,770.87",$0.00,$0.00,Property damage at loading dock,Maya F. Novak
-12/09/19,X,00929514-01240,Ridgeway Collision,01/22/22,06/29/20,Closed,11/08/22,Clara C. Ilyin,$0.00,$0.00,$0.00,Towing and storage reimbursement,Farah K. Roman
-12/10/19,X,00929514-01241,Pioneer Equipment Rental,01/23/22,06/30/20,Closed,11/09/22,Elias H. Rahman,$0.00,$0.00,$0.00,Towing and storage reimbursement,Marta P. Barrera
-12/11/19,X,00929514-01242,Hillcrest Auto Body,01/24/22,07/01/20,Closed,11/10/22,Victor M. Novak,$0.00,$0.00,"$3,889.12",Backing incident in private yard,Owen U. Nguyen
-12/12/19,X,00929514-01243,Alder Foods Distribution,01/25/22,07/02/20,Closed,11/11/22,Rosa R. Roman,$0.00,"$25,546.94",$0.00,Cargo shift during hard brake,Priya Z. Ivers
-Total Incurred for SC00928774,,,,,,,,,"$8,770.87","$25,546.94","$8,532.35",,
+Run ID LR-0031
+Page 31 of 42
+Printed 02/26/2026
 
-CLAIMS DIRECT ACCESS
+INSURED NAME: Harborline Produce Transport Inc
+CUSTOMER NO.: C043238
+POLICY NO.: SC00928312
+STATE: VA
+POLICY TERM: 08/19/22 - 08/19/23
 
-Loss Run Report
-Insured Name: Pine Delta Transport LLC,Customer No. C190032,Number of Claims: 6
-Policy No. SC00928774,State: PA
+Effective Date,Claim Rptd,Claim Number,Claimant,Date Reported,Date of Loss,Status,Date Closed,Adjuster,Reserve,Paid,Recovered,Notes
+08/19/22,X,00928312-10218,Grove Street Produce,11/14/22,10/04/22,Closed,03/22/23,Dakota G. Voss,$0.00,"$7,216.12",$0.00,"Initial Claim Description: rear impact while backing toward a dock door Unit TR-4706 / Operator Blake H. Voss"
+08/19/22,X,00928312-10219,Mason Retail Group,10/15/22,10/11/22,Closed,03/03/23,see ledger,see below,see below,see below,"Initial Claim Description: towing and storage reimbursement requested after disablement Unit TR-4723 / Operator Zion H. Talbot | Claim ledger: adjuster Zion U. Carver; reserve $0.00; paid $10,053.26; recovery $0.00."
+08/19/22,X,00928312-10220,Harbor Medical Supply,10/27/22,10/18/22,Closed,03/26/23,Finley T. Serrano,$0.00,"$12,890.55","$5,688.00","Initial Claim Description: parked tractor struck during overnight staging; subrogation diary was retained for follow-up Driver not supplied in carrier export | Continuation: payment history may exclude late-posted recovery activity. Unit TR-4740."
+08/19/22,X,00928312-10221,Ironwood Trailer Works,11/08/22,10/25/22,Open,,Jordan K. Larkin,pending ledger,"$2,589.25",$0.00,"Initial Claim Description: roll-up door damage noted during post-trip inspection Scheduled driver noted separately: Reese K. Benton | Financial detail: reserve carried as $85,709.50; payments $2,589.25; recoveries $0.00."
+08/19/22,X,00928312-10222,Bayline Warehouse,11/20/22,11/01/22,Open,,Kai J. Delaney,"$89,838.80","$2,743.50",$0.00,"Initial Claim Description: towing and storage reimbursement requested after disablement | Driver: Quinn R. Delaney"
+08/19/22,X,00928312-10223,Mason Retail Group,12/02/22,11/08/22,Pending,,see ledger,see below,see below,see below,"Initial Claim Description: windshield and cowl damage attributed to road debris | Driver: Kai S. Keller | Claim ledger: adjuster Casey L. Delaney; reserve $1,967.06; paid $6,375.05; recovery $0.00."
+08/19/22,X,00928312-10224,Oak Valley Repair,12/14/22,11/15/22,Open,,Finley G. Ramos,"$6,096.17","$3,052.00",$0.00,"Initial Claim Description: cargo load shifted during an abrupt traffic stop; repair estimate remains under carrier review | Continuation: vendor documentation was indexed after first notice. Unit TR-4808."
+08/19/22,X,00928312-10225,Mason Retail Group,12/26/22,11/22/22,Closed,07/19/23,Logan D. Aldridge,$0.00,"$27,075.69","$5,990.00","Initial Claim Description: rear impact while backing toward a dock door Unit TR-4825 / Operator Quinn M. Ivers"
+08/19/22,X,00928312-10226,Fairmont Cold Storage,01/07/23,11/29/22,Closed,08/11/23,Sawyer T. Hollis,$0.00,"$29,912.48",$0.00,"Initial Claim Description: parking-lot contact reported by third-party claimant Scheduled driver noted separately: Casey M. Hollis"
+08/19/22,X,00928312-10227,Lakeview Auto Glass,12/08/22,12/06/22,Closed,07/23/23,Harper P. Hollis,$0.00,"$32,749.22",$0.00,"Initial Claim Description: subrogation file opened for possible third-party recovery Scheduled driver noted separately: Winter M. Aldridge"
+08/19/22,X,00928312-10228,Stonebridge Foods,12/20/22,12/13/22,Reopened,08/15/23,see ledger,see below,see below,see below,"Initial Claim Description: parked tractor struck during overnight staging | Claim ledger: adjuster Avery Z. Ellis; reserve $22,612.86; paid $8,071.80; recovery $0.00."
+08/19/22,X,00928312-10229,East Ridge Collision,01/01/23,12/20/22,Reopened,,Kai K. Hollis,"$26,741.07","$8,411.15",$0.00,"Initial Claim Description: parking-lot contact reported by third-party claimant | Driver: Blake T. Keller"
+08/19/22,X,00928312-10230,Alder Logistics Repair,01/13/23,12/27/22,Pending,,Casey F. Priest,pending ledger,"$8,750.50","$6,292.00","Initial Claim Description: roll-up door damage noted during post-trip inspection Unit TR-4910 / Operator Quinn N. Keller | Financial detail: reserve carried as $30,870.89; payments $8,750.50; recoveries $6,292.00. | Continuation: claim office noted deductible handling outside this extract. Unit TR-4910."
+Policy period total for SC00928312,,,,,,,,,"$263,836.35","$159,890.57","$17,970.00",
 
-Effective Date,Claim Reported,Claim Number,Claimant,Date Reported,Date of Loss,Claim Status,Date Closed,Adjuster,Claim Reserves,Claim Paid,Claim Recovered,Initial Claim Description,Driver
-12/13/19,X,00929514-01244,North County Repair,01/26/22,07/03/20,Open,,Arman W. Barrera,"$87,178.74",$0.00,$0.00,Minor bodily injury allegation,Sonia E. Petrov
-12/14/19,X,00929514-01245,Summit Materials,01/27/22,07/04/20,Pending,,Lucian B. Nguyen,"$77,775.12","$15,939.35",$0.00,Parked unit struck overnight,Cedric J. Santos
-12/15/19,X,00929514-01246,Tollway Freight Services,01/28/22,07/05/20,Pending,,Ibrahim G. Ivers,"$9,971.41","$25,131.44",$0.00,Parked unit struck overnight,Samir O. Moreno
-12/16/19,X,00929514-01247,Civic Transit Authority,01/29/22,07/06/20,Pending,,Anika L. Petrov,"$9,583.50",$0.00,"$2,815.59",Trailer door impact during delivery,Nina T. Bishop
-12/17/19,X,00929514-01248,Farmstead Supply Co,01/30/22,07/07/20,Open,,Jonah Q. Santos,"$80,055.28",$0.00,$0.00,Side-swipe reported near ramp,Clara Y. Carver
-12/18/19,X,00929514-01249,Union Parcel Depot,01/31/22,07/08/20,Closed,11/17/22,Reed V. Moreno,$0.00,"$10,231.73",$0.00,Minor bodily injury allegation,Elias D. Gaines
-Total Incurred for SC00928774,,,,,,,,,"$264,564.05","$51,302.52","$2,815.59",,
-
-Page 31 of 39,Printed On: Thursday, February 26, 2026
+Carrier claim history export - underwriting copy
+Page 31 of 42
 
 # Page 32
 
 CLAIMS DIRECT ACCESS
 Loss Run Report
+External carrier loss history - as valued 02/26/2026
 
-Insured Name: Pine Delta Transport LLC                     Customer No. C190032                     Number of Claims: 1
-Policy No. SC00928774                                     State: PA
+Run ID LR-0032
+Page 32 of 42
+Printed 02/26/2026
 
-Effective Date,Claim Reported,Claim Number,Claimant,Date Reported,Date of Loss,Claim Status,Date Closed,Adjuster,Claim Reserves,Claim Paid,Claim Recovered
-12/19/19,X,00929514-01250,Pineview Medical Group,02/01/22,07/09/20,Closed,11/18/22,Nolan A. Bishop,$0.00,$0.00,$0.00
+INSURED NAME: Harborline Produce Transport Inc
+CUSTOMER NO.: C043239
+POLICY NO.: SC00928313
+STATE: NY
+POLICY TERM: 08/19/23 - 08/18/24
 
-Initial Claim Description: Trailer door impact during delivery                                     Driver: Victor I. Serrano
+Effective Date,Claim Rptd,Claim Number,Claimant,Date Reported,Date of Loss,Status,Date Closed,Adjuster,Reserve,Paid,Recovered
+No Claims Reported as of: 02/26/2026,,,,,,,,,,,
+Policy period total,,,,,,,,,$0.00,$0.00,$0.00
 
-Total Incurred for SC00928774:                                                                     $0.00,$0.00,$0.00
+INSURED NAME: Harborline Produce Transport Inc
+CUSTOMER NO.: C043240
+POLICY NO.: SC00928314
+STATE: PA
+POLICY TERM: 09/06/19 - 09/05/20
 
-------------------------------------------------------------------------------------------------------------------------
+Effective Date,Claim Rptd,Claim Number,Claimant,Date Reported,Date of Loss,Status,Date Closed,Adjuster,Reserve,Paid,Recovered
+09/06/19,X,00928314-10231,Northline Distribution,02/12/20,01/21/20,Pending,,Parker W. Ramos,"$34,999.07","$9,089.85",$0.00
+"Initial Claim Description: property damage reported at a private receiving yard; repair estimate remains under carrier review; claim notes reference separate correspondence from the claimant Unit TR-4927 / Operator Vaughn C. Hollis",,,,,,,,,,,
+"Continuation: claim office noted deductible handling outside this extract. Unit TR-4927.",,,,,,,,,,,
+09/06/19,X,00928314-10232,Dover Equipment Rental,02/24/20,01/28/20,Closed,05/06/20,see ledger,see below,see below,see below
+"Initial Claim Description: trailer door contacted by loading equipment Driver not supplied in carrier export",,,,,,,,,,,
+"Claim ledger: adjuster Zion Q. Aldridge; reserve $0.00; paid $46,934.52; recovery $0.00.",,,,,,,,,,,
+09/06/19,X,00928314-10233,East Ridge Collision,03/07/20,02/04/20,Closed,05/29/20,Kai E. Keller,$0.00,"$49,771.54",$0.00
+"Initial Claim Description: mirror and fairing damage found after delivery Scheduled driver noted separately: Emery J. Hollis",,,,,,,,,,,
+09/06/19,X,00928314-10234,Lakeview Auto Glass,03/19/20,02/11/20,Closed,06/21/20,Parker L. Gaines,$0.00,"$52,608.43",$0.00
+"Initial Claim Description: subrogation file opened for possible third-party recovery | Driver: Logan B. Priest",,,,,,,,,,,
+09/06/19,X,00928314-10235,Harbor Medical Supply,03/31/20,02/18/20,Closed,07/14/20,Vaughn W. Quint,$0.00,"$55,445.15","$6,594.00"
+"Initial Claim Description: property damage reported at a private receiving yard | Driver: Taylor B. Benton",,,,,,,,,,,
+"Continuation: claim office noted deductible handling outside this extract. Unit TR-4995.",,,,,,,,,,,
+Policy period total for SC00928314,,,,,,,,,"$34,999.07","$213,849.49","$6,594.00"
 
-CLAIMS DIRECT ACCESS
-Loss Run Report
+Rows marked pending are subject to reserve review by the carrier claim office.
+                                                                                       continued on next page
 
-Insured Name: Pine Delta Transport LLC                     Customer No. C190033                     Number of Claims: 0
-Policy No. SC00928774                                     State: PA
-
-Effective Date,Claim Reported,Claim Number,Claimant,Date Reported,Date of Loss,Claim Status,Date Closed,Adjuster,Claim Reserves,Claim Paid,Claim Recovered
-,,,,,,No Claims Reported as of: 02/26/2026,,,,,
-
-Total Incurred:                                                                                    $0.00,$0.00,$0.00
-
-------------------------------------------------------------------------------------------------------------------------
-                                            Page 32 of 39                           Printed On: Thursday, February 26, 2026
+Carrier claim history export - underwriting copy                                                   Page 32 of 42
 
 # Page 33
 
 CLAIMS DIRECT ACCESS
-Loss Run Report
 
-Insured Name: Pine Delta Transport LLC        Customer No. C190033        Number of Claims: 5
-Policy No. SC00928774                         State: PA
+                                                 Loss Run Report                                               Run ID LR-0033
+                                    External carrier loss history - as valued 02/26/2026                         Page 33 of 42
+                                                                                                               Printed 02/26/2026
 
-Effective Date,Claim Reported,Claim Number,Claimant,Date Reported,Date of Loss,Claim Status,Date Closed,Adjuster,Claim Reserves,Claim Paid,Claim Recovered,Description,Driver
-12/20/19,X,00929514-01251,Metro Storage Yard,02/02/22,07/10/20,Closed,11/19/22,Daria F. Carver,$0.00,"$26,468.50",$0.00,Towing and storage reimbursement,Rosa N. Abbott
-12/21/19,X,00929551-01252,Riverside Concrete,02/03/22,07/11/20,Pending,,Andre K. Gaines,"$13,195.11",$0.00,$0.00,Towing and storage reimbursement,Arman S. Talbot
-12/22/19,X,00929551-01253,Broad Street Produce,02/04/22,07/12/20,Pending,,Mateo P. Serrano,"$41,177.25",$0.00,$0.00,Trailer door impact during delivery,Lucian X. Foster
-12/23/19,X,00929551-01254,Midway Trailer Works,02/05/22,07/13/20,Closed,11/22/22,Cedric U. Abbott,$0.00,"$3,305.22",$0.00,Windshield damage from road debris,Ibrahim C. Kaminski
-12/24/19,X,00929551-01255,Ridgeway Collision,02/06/22,07/14/20,Pending,,Samir Z. Talbot,"$52,775.53",$0.00,"$1,635.78",Property damage at loading dock,Anika H. Haddad
-Total Incurred for SC00928774,,,,,,,,, "$107,147.89", "$29,773.72", "$1,635.78",,
+INSURED NAME                      CUSTOMER NO.        POLICY NO.          STATE       POLICY TERM
+Harborline Produce Transport Inc  C043241             SC00928315          OH          09/05/20 - 09/05/21
 
-------------------------------------------------------------------------------------------------------------------------
+Effective Date,Claim Rptd,Claim Number,Claimant,Date Reported,Date of Loss,Status,Date Closed,Adjuster,Reserve,Paid,Recovered
+09/05/20,X,00928315-10236,Oak Valley Repair,03/01/21,02/24/21,Reopened,,Morgan Q. Benton,"$55,644.06","$10,786.60",$0.00
+"  Initial Claim Description: parked tractor struck during overnight staging",,,,,,,,,,,
+09/05/20,X,00928315-10237,Mason Retail Group,03/13/21,03/03/21,Open,,see ledger,see below,see below,see below
+"  Initial Claim Description: claim opened from late-submitted repair documentation  Unit TR-5029 / Operator Zion D. Ellis",,,,,,,,,,,
+"  Claim ledger: adjuster Emery J. Carver; reserve $59,773.98; paid $5,057.25; recovery $0.00.",,,,,,,,,,,
+"  Continuation: liability review remains tied to the listed unit file. Unit TR-5029.",,,,,,,,,,,
+09/05/20,X,00928315-10238,East Ridge Collision,03/25/21,03/10/21,Open,,Casey Z. Talbot,"$63,902.17","$5,211.50",$0.00
+"  Initial Claim Description: trailer door contacted by loading equipment; salvage credit had not posted to the run  Scheduled driver noted separately: Parker K. Larkin",,,,,,,,,,,
+"  Continuation: liability review remains tied to the listed unit file. Unit TR-5046.",,,,,,,,,,,
+09/05/20,X,00928315-10239,Harbor Medical Supply,04/06/21,03/17/21,Open,,Finley Z. Voss,pending ledger,"$5,365.75",$0.00
+"  Initial Claim Description: minor bodily injury allegation after a lane-change contact  Scheduled driver noted separately: Dakota E. Mercer",,,,,,,,,,,
+"  Financial detail: reserve carried as $68,031.97; payments $5,365.75; recoveries $0.00.",,,,,,,,,,,
+09/05/20,X,00928315-10240,Harbor Medical Supply,04/18/21,03/24/21,Reopened,09/25/21,Logan L. Hollis,"$72,160.91","$12,144.00","$6,896.00"
+"  Initial Claim Description: property damage reported at a private receiving yard",,,,,,,,,,,
+09/05/20,X,00928315-10241,Lakeview Auto Glass,04/30/21,03/31/21,Open,,see ledger,see below,see below,see below
+"  Initial Claim Description: loading bay bollard contact reported by warehouse staff | Driver: Harper B. Voss",,,,,,,,,,,
+"  Claim ledger: adjuster Rowan P. Nolan; reserve $76,289.80; paid $5,674.25; recovery $0.00.",,,,,,,,,,,
+09/05/20,X,00928315-10242,Palisade Container,05/12/21,04/07/21,Closed,11/10/21,Winter B. Aldridge,$0.00,"$7,304.53",$0.00
+"  Initial Claim Description: fuel-island scrape reported during yard maneuver; repair estimate remains under carrier review  Unit TR-5114 / Operator Emery V. Quint",,,,,,,,,,,
+"  Continuation: vendor documentation was indexed after first notice. Unit TR-5114.",,,,,,,,,,,
+"  Section note: Recoveries shown above may not include salvage posted after the valuation date.",,,,,,,,,,,
+09/05/20,X,00928315-10243,Canyon Fleet Body,05/24/21,04/14/21,Pending,,Finley L. Hollis,"$84,547.01","$13,162.05",$0.00
+"  Initial Claim Description: reefer unit service call included in repair estimate  Unit TR-5131 / Operator Sawyer Q. Priest",,,,,,,,,,,
+"  Continuation: vendor documentation was indexed after first notice. Unit TR-5131.",,,,,,,,,,,
+Policy period total for SC00928315,,,,,,,,,"$480,349.90","$64,705.93","$6,896.00"
 
-CLAIMS DIRECT ACCESS
-Loss Run Report
+Closed claims can reopen if a supplemental medical bill or repair invoice is received.
+                                                                                                       continued on next page
 
-Insured Name: Pine Delta Transport LLC        Customer No. C190034        Number of Claims: 4
-Policy No. SC00928774                         State: PA
-
-Effective Date,Claim Reported,Claim Number,Claimant,Date Reported,Date of Loss,Claim Status,Date Closed,Adjuster,Claim Reserves,Claim Paid,Claim Recovered,Description,Driver
-12/25/19,X,00929551-01256,Pioneer Equipment Rental,02/07/22,07/15/20,Closed,11/24/22,Nina E. Foster,$0.00,"$37,048.23",$0.00,Windshield damage from road debris,Jonah M. Markovic
-12/26/19,X,00929551-01257,Hillcrest Auto Body,02/08/22,07/16/20,Closed,11/25/22,Clara J. Kaminski,$0.00,$0.00,$0.00,Cargo shift during hard brake,Reed R. Singh
-12/27/19,X,00929551-01258,Alder Foods Distribution,02/09/22,07/17/20,Closed,11/26/22,Elias O. Haddad,$0.00,"$16,316.94",$0.00,Rear-end contact during lane merge,Nolan W. Okafor
-12/28/19,X,00929551-01259,North County Repair,02/10/22,07/18/20,Open,,Victor T. Markovic,"$62,982.00",$0.00,$0.00,Backing incident in private yard,Daria B. Keller
-Total Incurred for SC00928774,,,,,,,,, "$62,982.00", "$53,365.17", $0.00,,
-
-------------------------------------------------------------------------------------------------------------------------
-
-Page 33 of 39                                                            Printed On: Thursday, February 26, 2026
+Carrier history export - underwriting copy                                                                      Page 33 of 42
 
 # Page 34
 
-Loss Run Report
+┌────────────────┐
+│     CLAIMS     │                    Loss Run Report                            Run ID LR-0034
+│     DIRECT     │          External carrier loss history - as valued 02/26/2026          Page 34 of 42
+│     ACCESS     │                                                              Printed 02/26/2026
+└────────────────┘
 
-Insured Name: Pine Delta Transport LLC
-Customer No. C190034
-Number of Claims: 6
-Policy No. SC00928774
-State: PA
+INSURED NAME,CUSTOMER NO.,POLICY NO.,STATE,POLICY TERM
+Harborline Produce Transport Inc,C043242,SC00928316,NJ,09/05/21 - 09/05/22
 
-Effective Date,Claim Reported,Claim Number,Claimant,Date Reported,Date of Loss,Claim Status,Date Closed,Adjuster,Claim Reserves,Claim Paid,Claim Recovered,Initial Claim Description,Driver
-12/29/19,X,00929551-01260,Summit Materials,02/11/22,07/19/20,Open,,Rosa Y. Petrov,"$39,002.04",$0.00,$0.00,Rear-end contact during lane merge,Priya G. Bishop
-12/30/19,X,00929551-01261,Tollway Freight Services,02/12/22,07/20/20,Open,,Arman D. Santos,"$79,178.58",$0.00,"$1,177.33",Towing and storage reimbursement,Sonia L. Carver
-12/31/19,X,00929551-01262,Civic Transit Authority,02/13/22,07/21/20,Closed,11/30/22,Lucian I. Moreno,$0.00,$0.00,"$5,512.07",Rear-end contact during lane merge,Cedric Q. Gaines
-01/01/20,X,00929551-01263,Farmstead Supply Co,02/14/22,07/22/20,Pending,,Ibrahim N. Bishop,"$88,686.94","$12,931.35","$3,317.32",Cargo shift during hard brake,Samir V. Serrano
-01/02/20,X,00929588-01264,Union Parcel Depot,02/15/22,07/23/20,Closed,12/02/22,Anika S. Carver,$0.00,"$27,850.32",$0.00,Trailer door impact during delivery,Nina A. Abbott
-01/03/20,X,00929588-01265,Pineview Medical Group,02/16/22,07/24/20,Pending,,Jonah X. Gaines,"$35,623.21","$28,733.98",$0.00,Parked unit struck overnight,Clara F. Talbot
-Total Incurred for SC00928774,,,,,,,,,,"$242,490.77","$69,515.65","$10,006.72",,
+CLAIM SUMMARY CARDS - POLICY PERIOD ACTIVITY
 
+CLAIM NUMBER,CLAIMANT,LOSS DATE,REPORTED
+00928316-10244,Keystone Materials,04/21/22,04/24/22
 
-Loss Run Report
+RPTD,STATUS,CLOSED,HANDLER / DRIVER
+X,Pending,,Zion T. Gaines
+,,,Driver not supplied in carrier export
 
-Insured Name: Pine Delta Transport LLC
-Customer No. C190035
-Number of Claims: 5
-Policy No. SC00928774
-State: PA
+AMOUNTS Reserve $88,676.31; paid $13,501.40; recovered $0.00.
+DESCRIPTION windshield and cowl damage attributed to road debris
 
-Effective Date,Claim Reported,Claim Number,Claimant,Date Reported,Date of Loss,Claim Status,Date Closed,Adjuster,Claim Reserves,Claim Paid,Claim Recovered,Initial Claim Description,Driver
-01/04/20,X,00929588-01266,Metro Storage Yard,02/17/22,07/25/20,Closed,12/04/22,Reed C. Serrano,$0.00,"$40,425.09",$0.00,Minor bodily injury allegation,Elias K. Foster
-01/05/20,X,00929588-01267,Riverside Concrete,02/18/22,07/26/20,Closed,12/05/22,Nolan H. Abbott,$0.00,"$40,327.40",$0.00,Side-swipe reported near ramp,Victor P. Kaminski
-01/06/20,X,00929588-01268,Broad Street Produce,02/19/22,07/27/20,Open,,Daria M. Talbot,"$62,461.98","$21,654.25",$0.00,Towing and storage reimbursement,Rosa U. Haddad
-01/07/20,X,00929588-01269,Midway Trailer Works,02/20/22,07/28/20,Open,,Andre R. Foster,"$10,860.59","$39,272.55",$0.00,Trailer door impact during delivery,Arman Z. Markovic
-01/08/20,X,00929588-01270,Ridgeway Collision,02/21/22,07/29/20,Open,,Mateo W. Kaminski,"$87,418.27","$8,666.14",$0.00,Windshield damage from road debris,Lucian E. Singh
-Total Incurred for SC00928774,,,,,,,,,,"$160,740.84","$150,345.43",$0.00,,
+CLAIM NUMBER,CLAIMANT,LOSS DATE,REPORTED
+00928316-10245,Mason Retail Group,04/28/22,05/06/22
 
-Page 34 of 39
-Printed On: Thursday, February 26, 2026
+RPTD,STATUS,CLOSED,HANDLER / DRIVER
+X,Open,,Logan D. Ramos
+,,,Scheduled driver: Dakota W. Osborne
+
+AMOUNTS Reserve $92,805.20; paid $6,291.25; recovered $7,198.00.
+DESCRIPTION roll-up door damage noted during post-trip inspection; claim notes reference separate correspondence from the claimant
+
+CLAIM NUMBER,CLAIMANT,LOSS DATE,REPORTED
+00928316-10246,Ironwood Trailer Works,05/05/22,05/18/22
+
+RPTD,STATUS,CLOSED,HANDLER / DRIVER
+X,Reopened,12/30/22,see adjacent ledger
+,,,Driver: Kai C. Osborne
+
+AMOUNTS Separate ledger entry: Blake I. Delaney; reserve $4,934.69; paid $14,180.10; recovery $0.00.
+DESCRIPTION reefer unit service call included in repair estimate
+
+POLICY PERIOD TOTAL FOR SC00928316 Reserve $186,416.20 Paid $33,972.75 Recovered $7,198.00
+
+Carrier claim history export - underwriting copy                                                   Page 34 of 42
 
 # Page 35
 
-CLAIMS DIRECT ACCESS
+|------------------|
+|      CLAIMS      |
+|      DIRECT      |
+|      ACCESS      |
+|------------------|
 
-# Loss Run Report
+                                                  Loss Run Report                                                 Run ID LR-0035
+                                    External carrier loss history - as valued 02/26/2026                          Page 35 of 42
+                                                                                                                  Printed 02/26/2026
 
-**Insured Name:** Pine Delta Transport LLC  
-**Customer No.** C190035  
-**Number of Claims:** 6  
-**Policy No.** SC00928774  
-**State:** PA  
+INSURED NAME                     CUSTOMER NO.            POLICY NO.                 STATE                  POLICY TERM
+Harborline Produce Transport Inc C043243                 SC00928317                 MD                     09/05/22 - 09/05/23
 
-| Effective Date | Claim Reported | Claim Number | Claimant | Date Reported | Date of Loss | Claim Status | Date Closed | Adjuster | Claim Reserves | Claim Paid | Claim Recovered |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 01/09/20 | X | 00929588-01271 | Pioneer Equipment Rental | 02/22/22 | 07/30/20 | Open | | Noemi B. Haddad | $75,541.20 | $0.00 | $0.00 |
-| *Initial Claim Description: Property damage at loading dock* | | | | | | | | | | **Driver:** Ibrahim J. Okafor |
-| 01/10/20 | X | 00929588-01272 | Hillcrest Auto Body | 02/23/22 | 07/31/20 | Pending | | Leah G. Markovic | $44,263.50 | $1,981.62 | $0.00 |
-| *Initial Claim Description: Parked unit struck overnight* | | | | | | | | | | **Driver:** Anika O. Keller |
-| 01/11/20 | X | 00929588-01273 | Alder Foods Distribution | 02/24/22 | 08/01/20 | Closed | 12/11/22 | Caleb L. Singh | $0.00 | $35,622.39 | $0.00 |
-| *Initial Claim Description: Cargo shift during hard brake* | | | | | | | | | | **Driver:** Jonah T. Velasquez |
-| 01/12/20 | X | 00929588-01274 | North County Repair | 02/25/22 | 08/02/20 | Closed | 12/12/22 | Tessa Q. Okafor | $0.00 | $35,528.57 | $0.00 |
-| *Initial Claim Description: Towing and storage reimbursement* | | | | | | | | | | **Driver:** Reed Y. Ilyin |
-| 01/13/20 | X | 00929588-01275 | Summit Materials | 02/26/22 | 08/03/20 | Pending | | Greta V. Keller | $79,286.85 | $0.00 | $2,143.60 |
-| *Initial Claim Description: Windshield damage from road debris* | | | | | | | | | | **Driver:** Nolan D. Rahman |
-| 01/14/20 | X | 00929625-01276 | Tollway Freight Services | 02/27/22 | 08/04/20 | Pending | | Elena A. Velasquez | $71,018.72 | $0.00 | $0.00 |
-| *Initial Claim Description: Parked unit struck overnight* | | | | | | | | | | **Driver:** Daria I. Novak |
+RESERVE LEDGER VIEW - OPEN AND CLOSED CLAIM ACTIVITY
 
-**Total Incurred for SC00928774:**  
-* **Claim Reserves:** $270,110.27  
-* **Claim Paid:** $73,132.58  
-* **Claim Recovered:** $2,143.60  
+"CLAIM / RPTD","CLAIMANT / NOTES","DATES","STATUS","HANDLING","AMOUNTS"
+"00928317-10247
+eff. 09/05/22; rptd X","Riverbend Concrete
+minor bodily injury allegation after a lane-change contact","05/12/23
+reported 05/30/23","Reopened
+closed -","Casey H. Quint
+Driver: Harper N. Delaney","reserve $9,063.67
+paid $14,519.45
+recovered $0.00"
+"00928317-10248
+eff. 09/05/22; rptd X","Northline Distribution
+subrogation file opened for possible third-party recovery","05/19/23
+reported 06/11/23","Pending
+closed -","Reese E. Keller","reserve $13,192.00
+paid $14,858.80
+recovered $0.00"
+"00928317-10249
+eff. 09/05/22; rptd X","Palisade Container
+windshield and cowl damage attributed to road debris","05/26/23
+reported 06/23/23","Closed
+closed 08/11/23","Morgan C. Aldridge
+Unit TR-5233 / Operator Avery Y. Talbot","reserve $0.00
+paid $27,163.80
+recovered $0.00"
+"00928317-10250
+eff. 09/05/22; rptd X","Riverbend Concrete
+towing and storage reimbursement requested after disablement","06/02/23
+reported 07/05/23","Reopened
+closed -","Logan A. Gaines
+Scheduled driver: Rowan G. Delaney","reserve $21,450.72
+paid $15,537.50
+recovered $7,500.00"
+"00928317-10251
+eff. 09/05/22; rptd X","Northline Distribution
+subrogation file opened for possible third-party recovery","06/09/23
+reported 07/17/23","Reopened
+closed -","Avery K. Aldridge
+Scheduled driver: Morgan O. Foster","reserve $25,579.09
+paid $15,876.85
+recovered $0.00"
+"00928317-10252
+eff. 09/05/22; rptd X","Alder Logistics Repair
+cargo shortage noticed after consignee inspection; salvage credit had not posted to the run","06/16/23
+reported 06/17/23","Closed
+closed 09/07/23","Taylor D. Larkin","reserve $0.00
+paid $35,674.40
+recovered $0.00"
+"00928317-10253
+eff. 09/05/22; rptd X","Canyon Fleet Body
+minor bodily injury allegation after a lane-change contact; photos were received with the initial notice","06/23/23
+reported 06/29/23","Open
+closed -","Dakota K. Benton
+Driver: Avery L. Talbot","reserve $33,837.43
+paid $7,525.25
+recovered $0.00"
+"Section note: Driver information is shown only when included in the carrier export."
+"00928317-10254
+eff. 09/05/22; rptd X","Keystone Materials
+cargo shortage noticed after consignee inspection","06/30/23
+reported 07/11/23","Reopened
+closed -","Blake D. Benton
+Unit TR-5318 / Operator Harper N. Keller","reserve $37,966.37
+paid $16,894.90
+recovered $0.00"
+"00928317-10255
+eff. 09/05/22; rptd X","Tamarack Freight
+roll-up door damage noted during post-trip inspection","07/07/23
+reported 07/23/23","Reopened
+closed 11/15/23","Avery L. Mercer
+Unit TR-5335 / Operator Zion L. Serrano","reserve $42,095.19
+paid $17,234.25
+recovered $202.00"
+"Policy period total for SC00928317",,,,,"reserve $183,184.47
+paid $165,285.20
+recovered $7,702.00"
 
----
-
-CLAIMS DIRECT ACCESS
-
-# Loss Run Report
-
-**Insured Name:** Pine Delta Transport LLC  
-**Customer No.** C190036  
-**Number of Claims:** 6  
-**Policy No.** SC00928774  
-**State:** PA  
-
-| Effective Date | Claim Reported | Claim Number | Claimant | Date Reported | Date of Loss | Claim Status | Date Closed | Adjuster | Claim Reserves | Claim Paid | Claim Recovered |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 01/15/20 | X | 00929625-01277 | Civic Transit Authority | 02/28/22 | 08/05/20 | Pending | | Milan F. Ilyin | $24,771.98 | $13,186.83 | $4,754.17 |
-| *Initial Claim Description: Trailer door impact during delivery* | | | | | | | | | | **Driver:** Andre N. Roman |
-| 01/16/20 | X | 00929625-01278 | Farmstead Supply Co | 03/01/22 | 08/06/20 | Closed | 12/16/22 | Arman K. Rahman | $0.00 | $0.00 | $680.63 |
-| *Initial Claim Description: Minor bodily injury allegation* | | | | | | | | | | **Driver:** Mateo S. Barrera |
-| 01/17/20 | X | 00929625-01279 | Union Parcel Depot | 03/02/22 | 08/07/20 | Closed | 12/17/22 | Lucian P. Novak | $0.00 | $16,776.55 | $8,081.03 |
-| *Initial Claim Description: Minor bodily injury allegation* | | | | | | | | | | **Driver:** Noemi X. Nguyen |
-| 01/18/20 | X | 00929625-01280 | Pineview Medical Group | 03/03/22 | 08/08/20 | Open | | Ibrahim U. Roman | $79,469.26 | $0.00 | $0.00 |
-| *Initial Claim Description: Side-swipe reported near ramp* | | | | | | | | | | **Driver:** Leah C. Ivers |
-| 01/19/20 | X | 00929625-01281 | Metro Storage Yard | 03/04/22 | 08/09/20 | Open | | Anika Z. Barrera | $1,530.88 | $11,645.52 | $0.00 |
-| *Initial Claim Description: Towing and storage reimbursement* | | | | | | | | | | **Driver:** Caleb H. Petrov |
-| 01/20/20 | X | 00929625-01282 | Riverside Concrete | 03/05/22 | 08/10/20 | Pending | | Jonah E. Nguyen | $7,259.22 | $2,585.23 | $0.00 |
-| *Initial Claim Description: Windshield damage from road debris* | | | | | | | | | | **Driver:** Tessa M. Santos |
-
-**Total Incurred for SC00928774:**  
-* **Claim Reserves:** $113,031.34  
-* **Claim Paid:** $44,194.13  
-* **Claim Recovered:** $13,515.83  
-
-Page 35 of 39  
-Printed On: Thursday, February 26, 2026
+Carrier claim history export - underwriting copy                                                                 Page 35 of 42
 
 # Page 36
 
 CLAIMS DIRECT ACCESS
-
 Loss Run Report
+External carrier loss history - as valued 02/26/2026
+Run ID LR-0036
+Page 36 of 42
+Printed 02/26/2026
 
-Insured Name: Pine Delta Transport LLC, Customer No. C190036, Number of Claims: 3
-Policy No. SC00928774, State: PA
+INSURED NAME: Harborline Produce Transport Inc
+CUSTOMER NO.: C043244
+POLICY NO.: SC00928318
+STATE: VA
+POLICY TERM: 09/05/23 - 09/04/24
 
-Effective Date,Claim Reported,Claim Number,Claimant,Date Reported,Date of Loss,Claim Status,Date Closed,Adjuster,Claim Reserves,Claim Paid,Claim Recovered
-01/21/20,X,00929625-01283,Broad Street Produce,03/06/22,08/11/20,Closed,12/21/22,Reed J. Ivers,$0.00,"$20,699.05",$0.00
-Initial Claim Description: Minor bodily injury allegation,,,,,,,,,,,Driver: Greta R. Moreno
-01/22/20,X,00929625-01284,Midway Trailer Works,03/07/22,08/12/20,Closed,12/22/22,Nolan O. Petrov,$0.00,"$22,795.30","$1,362.31"
-Initial Claim Description: Side-swipe reported near ramp,,,,,,,,,,,Driver: Victor W. Bishop
-01/23/20,X,00929625-01285,Ridgeway Collision,03/08/22,08/13/20,Closed,12/23/22,Daria T. Santos,$0.00,"$34,710.86",$0.00
-Initial Claim Description: Backing incident in private yard,,,,,,,,,,,Driver: Rosa B. Carver
-Total Incurred for SC00928774:,,,,,,,,, $0.00,"$78,205.21","$1,362.31"
+Effective Date,Claim Rptd,Claim Number,Claimant,Date Reported,Date of Loss,Status,Date Closed,Adjuster,Reserve,Paid,Recovered
+09/05/23,X,00928318-10256,Bayline Warehouse,08/03/24,07/13/24,Open,,Rowan V. Gaines,"$46,224.36","$7,988.00",$0.00
+"Initial Claim Description: parking-lot contact reported by third-party claimant Driver not supplied in carrier export"
+09/05/23,X,00928318-10257,Fairmont Cold Storage,08/15/24,07/20/24,Pending,,Reese I. Carver,pending ledger,"$17,912.95",$0.00
+"Initial Claim Description: parking-lot contact reported by third-party claimant Scheduled driver noted separately: Vaughn D. Ivers"
+"Financial detail: reserve carried as $50,353.58; payments $17,912.95; recoveries $0.00."
+09/05/23,X,00928318-10258,Bayline Warehouse,11/01/23,10/01/23,Pending,,Zion T. Voss,"$54,482.61","$18,252.30",$0.00
+"Initial Claim Description: roll-up door damage noted during post-trip inspection | Driver: Quinn I. Carver"
+09/05/23,X,00928318-10259,Lakeview Auto Glass,11/13/23,10/08/23,Open,,see ledger,see below,see below,see below
+"Initial Claim Description: forklift contact with parked trailer during unloading; rental and downtime amounts were still being reconciled | Driver: Jordan M. Ramos"
+"Claim ledger: adjuster Logan O. Quint; reserve $58,611.43; paid $8,450.75; recovery $0.00."
+"Continuation: closing date reflects carrier system status at valuation. Unit TR-5403."
+09/05/23,X,00928318-10260,Fairmont Cold Storage,11/25/23,10/15/23,Pending,,Emery H. Serrano,"$62,740.02","$18,931.00",$504.00
+"Initial Claim Description: property damage reported at a private receiving yard"
+09/05/23,X,00928318-10261,Grove Street Produce,10/26/23,10/22/23,Pending,,Blake Y. Ivers,"$66,869.44","$19,270.35",$0.00
+"Initial Claim Description: loading bay bollard contact reported by warehouse staff Unit TR-5437 / Operator Kai X. Serrano"
+09/05/23,X,00928318-10262,Alder Logistics Repair,11/07/23,10/29/23,Closed,05/17/24,Dakota O. Talbot,$0.00,"$64,044.90",$0.00
+"Initial Claim Description: subrogation file opened for possible third-party recovery Scheduled driver noted separately: Vaughn Q. Benton"
+"Continuation: claim office noted deductible handling outside this extract. Unit TR-5454."
+"Section note: Rows marked pending are subject to reserve review by the carrier claim office."
+09/05/23,X,00928318-10263,Riverbend Concrete,11/19/23,11/05/23,Open,,Blake G. Quint,"$75,127.19","$9,067.75",$0.00
+"Initial Claim Description: rear impact while backing toward a dock door Scheduled driver noted separately: Vaughn B. Voss"
+"Policy period total for SC00928318",,,,,,,,,"$414,408.63","$163,918.00",$504.00
 
-------------------------------------------------------------------------------------------------------------------------
+INSURED NAME: Harborline Produce Transport Inc
+CUSTOMER NO.: C043245
+POLICY NO.: SC00928319
+STATE: NY
+POLICY TERM: 09/23/19 - 09/22/20
 
-CLAIMS DIRECT ACCESS
+Effective Date,Claim Rptd,Claim Number,Claimant,Date Reported,Date of Loss,Status,Date Closed,Adjuster,Reserve,Paid,Recovered
+"No Claims Reported as of: 02/26/2026"
+"Policy period total",,,,,,,,,"$0.00","$0.00","$0.00"
 
-Loss Run Report
+Recoveries shown above may not include salvage posted after the valuation date.
 
-Insured Name: Pine Delta Transport LLC, Customer No. C190037, Number of Claims: 2
-Policy No. SC00928774, State: PA
-
-Effective Date,Claim Reported,Claim Number,Claimant,Date Reported,Date of Loss,Claim Status,Date Closed,Adjuster,Claim Reserves,Claim Paid,Claim Recovered
-01/24/20,X,00929625-01286,Pioneer Equipment Rental,03/09/22,08/14/20,Pending,,Andre Y. Moreno,"$12,690.83",$0.00,$0.00
-Initial Claim Description: Minor bodily injury allegation,,,,,,,,,,,Driver: Arman G. Gaines
-01/25/20,X,00929625-01287,Hillcrest Auto Body,03/10/22,08/15/20,Closed,12/25/22,Mateo D. Bishop,$0.00,$0.00,"$7,158.53"
-Initial Claim Description: Parked unit struck overnight,,,,,,,,,,,Driver: Lucian L. Serrano
-Total Incurred for SC00928774:,,,,,,,,, "$12,690.83",$0.00,"$7,158.53"
-
-------------------------------------------------------------------------------------------------------------------------
-
-Page 36 of 39                                                                        Printed On: Thursday, February 26, 2026
+Carrier claim history export - underwriting copy
+Page 36 of 42
 
 # Page 37
 
-CLAIMS DIRECT ACCESS
-
-# Loss Run Report
-
-Insured Name: Pine Delta Transport LLC
-Customer No. C190037
-Number of Claims: 3
-Policy No. SC00928774
-State: PA
-
-Effective Date,Claim Reported,Claim Number,Claimant,Date Reported,Date of Loss,Claim Status,Date Closed,Adjuster,Claim Reserves,Claim Paid,Claim Recovered
-01/26/20,X,00929662-01288,Alder Foods Distribution,03/11/22,08/16/20,Closed,12/26/22,Noemi I. Carver,$0.00,"$33,462.98",$0.00
-"Initial Claim Description: Windshield damage from road debris",,,,,,,,,"Driver: Ibrahim Q. Abbott",,
-01/27/20,X,00929662-01289,North County Repair,03/12/22,08/17/20,Closed,12/27/22,Leah N. Gaines,$0.00,"$21,762.87","$1,398.75"
-"Initial Claim Description: Property damage at loading dock",,,,,,,,,"Driver: Anika V. Talbot",,
-01/28/20,X,00929662-01290,Summit Materials,03/13/22,08/18/20,Open,,Caleb S. Ilyin,"$9,977.99",$0.00,$0.00
-"Initial Claim Description: Minor bodily injury allegation",,,,,,,,,"Driver: Jonah A. Roman",,
-"Total Incurred for SC00928774:",,,,,,,,,"$9,977.99","$55,225.85","$1,398.75"
-
-***
+Run ID LR-0037
+Page 37 of 42
+Printed 02/26/2026
 
 CLAIMS DIRECT ACCESS
 
-# Loss Run Report
+Loss Run Report
+External carrier loss history - as valued 02/26/2026
 
-Insured Name: Pine Delta Transport LLC
-Customer No. C190038
-Number of Claims: 0
-Policy No. SC00928774
-State: PA
+INSURED NAME,CUSTOMER NO.,POLICY NO.,STATE,POLICY TERM
+Harborline Produce Transport Inc,C043246,SC00928320,PA,09/22/20 - 09/22/21
 
-Effective Date,Claim Reported,Claim Number,Claimant,Date Reported,Date of Loss,Claim Status,Date Closed,Adjuster,Claim Reserves,Claim Paid,Claim Recovered
-"No Claims Reported as of: 02/26/2026",,,,,,,,,,,
-"Total Incurred:",,,,,,,,,$0.00,$0.00,$0.00
+### CLAIM SUMMARY CARDS - POLICY PERIOD ACTIVITY
 
-***
+CLAIM NUMBER,CLAIMANT,LOSS DATE,REPORTED,RPTD,STATUS,CLOSED,HANDLER / DRIVER,AMOUNTS,DESCRIPTION
+00928320-10264,Stonebridge Foods,11/29/20,12/18/20,X,Reopened,07/20/21,see adjacent ledger,"Separate ledger entry: Kai I. Quint; reserve $79,256.13; paid $20,288.40; recovery $0.00.","steer tire failure led to roadside service invoice; repair estimate remains under carrier review"
+00928320-10265,Palisade Container,12/06/20,12/30/20,X,Reopened,,Quinn Y. Serrano / Driver: Reese Q. Voss,"Reserve $83,385.62; paid $20,627.75; recovered $806.00.","trailer door contacted by loading equipment"
+00928320-10266,East Ridge Collision,12/13/20,01/11/21,X,Closed,09/04/21,Reese S. Mercer / Unit TR-5522 / Operator Parker I. Ivers,"Pending ledger: reserve $0.00; payments $7,392.85; recoveries $0.00.","minor bodily injury allegation after a lane-change contact; repair estimate remains under carrier review"
+00928320-10267,Alder Logistics Repair,12/20/20,01/23/21,X,Pending,,Reese R. Hollis / Unit TR-5539 / Operator Vaughn F. Serrano,"Reserve $91,643.41; paid $21,306.45; recovered $0.00.","forklift contact with parked trailer during unloading\nContinuation: liability review remains tied to the listed unit file. TR-5539."
+00928320-10268,Grove Street Produce,12/27/20,02/04/21,X,Pending,,see adjacent ledger / Driver not supplied in carrier export,"Separate ledger entry: Blake P. Aldridge; reserve $3,772.35; paid $21,645.80; recovery $0.00.","fuel-island scrape reported during yard maneuver"
 
-Page 37 of 39
-Printed On: Thursday, February 26, 2026
+POLICY PERIOD TOTAL FOR SC00928320 Reserve $258,057.51 Paid $91,261.25 Recovered $806.00
+
+Carrier claim history export - underwriting copy
+Page 37 of 42
 
 # Page 38
 
 CLAIMS DIRECT ACCESS
-
 Loss Run Report
+External carrier loss history - as valued 02/26/2026
 
-Insured Name: Pine Delta Transport LLC
-Customer No. C190038
-Number of Claims: 3
-Policy No. SC00928774
-State: PA
+Run ID LR-0038
+Page 38 of 42
+Printed 02/26/2026
 
-Effective Date,Claim Reported,Claim Number,Claimant,Date Reported,Date of Loss,Claim Status,Date Closed,Adjuster,Claim Reserves,Claim Paid,Claim Recovered
-01/29/20,X,00929662-01291,Tollway Freight Services,03/14/22,08/19/20,Closed,12/29/22,Tessa X. Rahman,$0.00,"$29,298.68",$0.00
-Initial Claim Description: Side-swipe reported near ramp,,,,,,,,,,Driver: Reed F. Barrera,
-01/30/20,X,00929662-01292,Civic Transit Authority,03/15/22,08/20/20,Closed,12/30/22,Greta C. Novak,$0.00,"$34,150.39","$3,540.93"
-Initial Claim Description: Windshield damage from road debris,,,,,,,,,,Driver: Nolan K. Nguyen,
-01/31/20,X,00929662-01293,Farmstead Supply Co,03/16/22,08/21/20,Pending,,Elena H. Roman,"$37,925.35",$0.00,"$5,014.78"
-Initial Claim Description: Property damage at loading dock,,,,,,,,,,Driver: Daria P. Ivers,
-Total Incurred for SC00928774:,,,,,,,,,/,,,"$37,925.35","$63,449.07","$8,555.71"
+INSURED NAME: Harborline Produce Transport Inc
+CUSTOMER NO.: C043247
+POLICY NO.: SC00928321
+STATE: OH
+POLICY TERM: 09/22/21 - 09/22/22
 
+Effective Date,Claim Rptd,Claim Number,Claimant,Date Reported,Date of Loss,Status,Date Closed,Adjuster,Reserve,Paid,Recovered,Description/Notes
+09/22/21,X,00928321-10269,Mason Retail Group,01/05/22,01/03/22,Reopened,,Harper Y. Mercer,$7,901.82,$21,985.15,$0.00,"Initial Claim Description: parking-lot contact reported by third-party claimant Scheduled driver noted separately: Dakota Y. Foster; Continuation: payment history may exclude late-posted recovery activity. Unit TR-5573."
+09/22/21,X,00928321-10270,Keystone Materials,01/17/22,01/10/22,Pending,,Blake M. Keller,$12,030.59,$22,324.50,$1,108.00,"Initial Claim Description: parking-lot contact reported by third-party claimant | Driver: Parker D. Ellis"
+09/22/21,X,00928321-10271,Juniper Transit Yard,01/29/22,01/17/22,Open,,Dakota Q. Keller,$16,159.88,$10,301.75,$0.00,"Initial Claim Description: parking-lot contact reported by third-party claimant | Driver: Harper S. Larkin"
+09/22/21,X,00928321-10272,Lakeview Auto Glass,02/10/22,01/24/22,Open,,Avery Q. Larkin,$20,288.28,$10,456.00,$0.00,"Initial Claim Description: towing and storage reimbursement requested after disablement"
+09/22/21,X,00928321-10273,Alder Logistics Repair,02/22/22,01/31/22,Reopened,06/05/22,see ledger,see below,see below,see below,"Initial Claim Description: towing and storage reimbursement requested after disablement; coverage was accepted subject to deductible application Unit TR-5641 / Operator Avery A. Ramos; Claim ledger: adjuster Avery Q. Quint; reserve $24,417.39; paid $242.55; recovery $0.00.; Continuation: closing date reflects carrier system status at valuation. Unit TR-5641."
+09/22/21,X,00928321-10274,East Ridge Collision,03/06/22,02/07/22,Reopened,,Parker P. Serrano,$28,546.18,$581.90,$0.00,"Initial Claim Description: steer tire failure led to roadside service invoice Scheduled driver noted separately: Casey Y. Foster"
+09/22/21,X,00928321-10275,Dover Equipment Rental,03/18/22,02/14/22,Closed,07/21/22,Rowan T. Hollis,pending ledger,$32,925.05,$1,410.00,"Initial Claim Description: forklift contact with parked trailer during unloading; repair estimate remains under carrier review Scheduled driver noted separately: Jordan T. Gaines; Financial detail: reserve carried as $0.00; payments $32,925.05; recoveries $1,410.00.; Continuation: closing date reflects carrier system status at valuation. Unit TR-5675."
+09/22/21,X,00928321-10276,Lakeview Auto Glass,03/30/22,02/21/22,Closed,08/13/22,Winter T. Benton,$0.00,$35,762.83,$0.00,"Initial Claim Description: cargo shortage noticed after consignee inspection"
+09/22/21,X,00928321-10277,Harbor Medical Supply,04/11/22,02/28/22,Closed,09/05/22,see ledger,see below,see below,see below,"Initial Claim Description: towing and storage reimbursement requested after disablement | Driver: Avery U. Larkin; Claim ledger: adjuster Zion B. Serrano; reserve $0.00; paid $38,599.53; recovery $0.00.; Continuation: payment history may exclude late-posted recovery activity. Unit TR-5709."
+09/22/21,X,00928321-10278,Juniper Transit Yard,03/12/22,03/07/22,Pending,,Finley D. Voss,$45,062.30,$1,939.30,$0.00,"Initial Claim Description: fuel-island scrape reported during yard maneuver Unit TR-5726 / Operator Rowan F. Priest; Continuation: payment history may exclude late-posted recovery activity. Unit TR-5726."
+09/22/21,X,00928321-10279,Mason Retail Group,03/24/22,03/14/22,Open,,Reese L. Ivers,$49,191.56,$1,035.75,$0.00,"Initial Claim Description: rear impact while backing toward a dock door Unit TR-5743 / Operator Sawyer P. Hollis"
+09/22/21,X,00928321-10280,Mason Retail Group,04/05/22,03/21/22,Closed,10/02/22,Sawyer B. Larkin,$0.00,$47,110.57,$1,712.00,"Initial Claim Description: property damage reported at a private receiving yard; liability position was not final at valuation date Driver not supplied in carrier export; Continuation: liability review remains tied to the listed unit file. Unit TR-5760."
+Policy period total for SC00928321,,,,,,,,, $203,598.00 , $223,264.88 , $4,230.00 ,
 
-CLAIMS DIRECT ACCESS
-
-Loss Run Report
-
-Insured Name: Pine Delta Transport LLC
-Customer No. C190039
-Number of Claims: 0
-Policy No. SC00928774
-State: PA
-
-Effective Date,Claim Reported,Claim Number,Claimant,Date Reported,Date of Loss,Claim Status,Date Closed,Adjuster,Claim Reserves,Claim Paid,Claim Recovered
-No Claims Reported as of: 02/26/2026,,,,,,,,,,,
-Total Incurred:,,,,,,,,,"$0.00","$0.00","$0.00"
-
-
-Page 38 of 39
-Printed On: Thursday, February 26, 2026
+Carrier claim history export - underwriting copy
+Page 38 of 42
 
 # Page 39
 
 CLAIMS DIRECT ACCESS
 
 Loss Run Report
+External carrier loss history - as valued 02/26/2026
 
-Insured Name: Pine Delta Transport LLC        Customer No. C190039        Number of Claims: 3
-Policy No. SC00928774                         State: PA
+Run ID LR-0039
+Page 39 of 42
+Printed 02/26/2026
 
-Effective Date,Claim Reported,Claim Number,Claimant,Date Reported,Date of Loss,Claim Status,Date Closed,Adjuster,Claim Reserves,Claim Paid,Claim Recovered,Initial Claim Description,Driver
-02/01/20,X,00929662-01294,Union Parcel Depot,03/17/22,08/22/20,Open,,Milan M. Barrera,$89,864.71,$36,867.35,$0.00,Parked unit struck overnight,Andre U. Petrov
-02/02/20,X,00929662-01295,Pineview Medical Group,03/18/22,08/23/20,Closed,01/02/23,Maya R. Nguyen,$0.00,$0.00,$0.00,Towing and storage reimbursement,Mateo Z. Santos
-02/03/20,X,00929662-01296,Metro Storage Yard,03/19/22,08/24/20,Closed,01/03/23,Farah W. Ivers,$0.00,$3,297.37,$0.00,Backing incident in private yard,Noemi E. Moreno
-Total Incurred for SC00928774,,,,,,,,, $89,864.71, $40,164.72, $0.00,,
+INSURED NAME: Harborline Produce Transport Inc
+CUSTOMER NO.: C043248
+POLICY NO.: SC00928322
+STATE: NJ
+POLICY TERM: 09/22/22 - 09/22/23
 
+Effective Date,Claim Rptd,Claim Number,Claimant,Date Reported,Date of Loss,Status,Date Closed,Adjuster,Reserve,Paid,Recovered
+09/22/22,X,00928322-10281,Harbor Medical Supply,04/17/23,03/28/23,Open,,Rowan J. Ellis,$57,449.66,$1,344.25,$0.00
+
+Initial Claim Description: cargo load shifted during an abrupt traffic stop Scheduled driver noted separately: Winter Q. Osborne
+
+Policy period total for SC00928322:
+Reserve: $57,449.66
+Paid: $1,344.25
+Recovered: $0.00
+
+Carrier claim history export - underwriting copy
+Page 39 of 42
+
+# Page 40
 
 CLAIMS DIRECT ACCESS
 
 Loss Run Report
+External carrier loss history - as valued 02/26/2026
 
-Insured Name: Pine Delta Transport LLC        Customer No. C190040        Number of Claims: 3
-Policy No. SC00928774                         State: PA
+Run ID LR-0040
+Page 40 of 42
+Printed 02/26/2026
 
-Effective Date,Claim Reported,Claim Number,Claimant,Date Reported,Date of Loss,Claim Status,Date Closed,Adjuster,Claim Reserves,Claim Paid,Claim Recovered,Initial Claim Description,Driver
-02/04/20,X,00929662-01297,Riverside Concrete,03/20/22,08/25/20,Pending,,Marta B. Petrov,$31,079.30,$0.00,$0.00,Parked unit struck overnight,Leah J. Bishop
-02/05/20,X,00929662-01298,Broad Street Produce,03/21/22,08/26/20,Closed,01/05/23,Owen G. Santos,$0.00,$7,897.43,$105.19,Towing and storage reimbursement,Caleb O. Carver
-02/06/20,X,00929662-01299,Midway Trailer Works,03/22/22,08/27/20,Closed,01/06/23,Priya L. Moreno,$0.00,$27,622.96,$0.00,Backing incident in private yard,Tessa T. Gaines
-Total Incurred for SC00928774,,,,,,,,, $31,079.30, $35,520.39, $105.19,,
+INSURED NAME: Harborline Produce Transport Inc
+CUSTOMER NO.: C043249
+POLICY NO.: SC00928323
+STATE: MD
+POLICY TERM: 09/22/23 - 09/21/24
 
+"Effective Date","Claim Rptd","Claim Number","Claimant","Date Reported","Date of Loss","Status","Date Closed","Adjuster","Reserve","Paid","Recovered","Details"
+"09/22/23","X","00928323-10282","Quarry Road Terminal","04/28/24","04/03/24","Open","","see ledger","see below","see below","see below","Initial Claim Description: steer tire failure led to roadside service invoice | Driver: Kai N. Foster\nClaim ledger: adjuster Quinn L. Hollis; reserve $61,578.78; paid $1,498.50; recovery $0.00."
+"09/22/23","X","00928323-10283","Alder Logistics Repair","05/10/24","04/10/24","Closed","12/09/24","Jordan X. Nolan","$0.00","$55,621.78","$0.00","Initial Claim Description: forklift contact with parked trailer during unloading | Driver: Vaughn J. Quint"
+"09/22/23","X","00928323-10284","Northline Distribution","05/22/24","04/17/24","Reopened","","Kai G. Nolan","pending ledger","$3,975.40","$0.00","Initial Claim Description: mirror and fairing damage found after delivery\nFinancial detail: reserve carried as $69,836.77; payments $3,975.40; recoveries $0.00."
+"09/22/23","X","00928323-10285","Stonebridge Foods","06/03/24","04/24/24","Open","","Winter I. Delaney","$73,965.56","$1,961.25","$2,014.00","Initial Claim Description: reefer unit service call included in repair estimate Unit TR-5845 / Operator Dakota Q. Larkin\nContinuation: claim office noted deductible handling outside this extract. Unit TR-5845."
+"09/22/23","X","00928323-10286","Ironwood Trailer Works","05/04/24","05/01/24","Open","","see ledger","see below","see below","see below","Initial Claim Description: roll-up door damage noted during post-trip inspection; repair estimate remains under carrier review Scheduled driver noted separately: Reese T. Carver\nClaim ledger: adjuster Finley Q. Osborne; reserve $78,094.27; paid $2,115.50; recovery $0.00.\nContinuation: vendor documentation was indexed after first notice. Unit TR-5862."
+"09/22/23","X","00928323-10287","Ironwood Trailer Works","05/16/24","05/08/24","Reopened","","Zion P. Mercer","$82,223.43","$4,993.45","$0.00","Initial Claim Description: loading bay bollard contact reported by warehouse staff; medical reserve was reviewed without closing the file Scheduled driver noted separately: Rowan H. Quint\nContinuation: closing date reflects carrier system status at valuation. Unit TR-5879."
+"09/22/23","X","00928323-10288","East Ridge Collision","05/28/24","05/15/24","Closed","07/25/24","Jordan P. Priest","$0.00","$1,806.95","$0.00","Initial Claim Description: loading bay bollard contact reported by warehouse staff\nContinuation: claim office noted deductible handling outside this extract. Unit TR-5896."
+"09/22/23","X","00928323-10289","Palisade Container","06/09/24","05/22/24","Open","","Harper V. Ramos","$90,481.40","$2,578.25","$0.00","Initial Claim Description: mirror and fairing damage found after delivery | Driver: Casey C. Aldridge"
+"09/22/23","X","00928323-10290","Riverbend Concrete","06/21/24","05/29/24","Reopened","","Taylor H. Priest","$2,610.29","$6,011.50","$2,316.00","Initial Claim Description: roll-up door damage noted during post-trip inspection Unit TR-5930 / Operator Kai O. Delaney"
+"09/22/23","X","00928323-10291","East Ridge Collision","07/03/24","06/05/24","Pending","","see ledger","see below","see below","see below","Initial Claim Description: mirror and fairing damage found after delivery Unit TR-5947 / Operator Reese R. Priest\nClaim ledger: adjuster Finley H. Benton; reserve $6,739.75; paid $6,350.85; recovery $0.00."
+"09/22/23","X","00928323-10292","Northline Distribution","07/15/24","06/12/24","Pending","","Avery H. Benton","$10,868.99","$6,690.20","$0.00","Initial Claim Description: rear impact while backing toward a dock door Driver not supplied in carrier export"
+"Policy period total for SC00928323",,,,,,,,,"$476,399.24","$93,603.63","$4,330.00",
 
-Page 39 of 39                                                            Printed On: Thursday, February 26, 2026
+Carrier claim history export - underwriting copy
+Page 40 of 42
+
+# Page 41
+
+CLAIMS DIRECT ACCESS
+
+# Loss Run Report
+### External carrier loss history - as valued 02/26/2026
+
+Run ID LR-0041
+Page 41 of 42
+Printed 02/26/2026
+
+---
+
+**INSURED NAME:** Harborline Produce Transport Inc  
+**CUSTOMER NO.:** C043250  
+**POLICY NO.:** SC00928324  
+**STATE:** VA  
+**POLICY TERM:** 10/10/19 - 10/09/20  
+
+Effective Date,Claim Rptd,Claim Number,Claimant,Date Reported,Date of Loss,Status,Date Closed,Adjuster,Reserve,Paid,Recovered
+No Claims Reported as of: 02/26/2026,,,,,,,,,,,
+Policy period total,,,,,,,,,$0.00,$0.00,$0.00
+
+---
+
+**INSURED NAME:** Harborline Produce Transport Inc  
+**CUSTOMER NO.:** C043251  
+**POLICY NO.:** SC00928325  
+**STATE:** NY  
+**POLICY TERM:** 10/09/20 - 10/09/21  
+
+### RESERVE LEDGER VIEW - OPEN AND CLOSED CLAIM ACTIVITY
+
+CLAIM / RPTD,CLAIMANT / NOTES,DATES,STATUS,HANDLING,AMOUNTS
+"00928325-10293\neff. 10/09/20; rptd X","Tamarack Freight\nloading bay bollard contact reported by warehouse staff","07/07/21\nreported 08/14/21",Pending\nclosed -,"Kai C. Foster\nScheduled driver: Logan E. Larkin","reserve $14,997.13\npaid $7,029.55\nrecovered $0.00"
+"00928325-10294\neff. 10/09/20; rptd X","Alder Logistics Repair\ntowing and storage reimbursement requested after disablement; repair estimate remains under carrier review","07/14/21\nreported 07/15/21",Reopened\nclosed 11/16/21,"Vaughn E. Serrano\nDriver: Dakota C. Serrano","reserve $19,126.21\npaid $7,368.90\nrecovered $0.00"
+"00928325-10295\neff. 10/09/20; rptd X","Tamarack Freight\nmirror and fairing damage found after delivery","07/21/21\nreported 07/27/21",Pending\nclosed -,"Sawyer Z. Keller\nDriver: Sawyer X. Keller","reserve $23,255.90\npaid $7,708.25\nrecovered $2,618.00"
+Policy period total for SC00928325,,,,,reserve $57,379.24\npaid $22,106.70\nrecovered $2,618.00
+
+Driver information is shown only when included in the carrier export.
+
+---
+
+**INSURED NAME:** Harborline Produce Transport Inc  
+**CUSTOMER NO.:** C043252  
+**POLICY NO.:** SC00928326  
+**STATE:** PA  
+**POLICY TERM:** 10/09/21 - 10/09/22  
+
+Effective Date,Claim Rptd,Claim Number,Claimant,Date Reported,Date of Loss,Status,Date Closed,Adjuster,Reserve,Paid,Recovered
+10/09/21,X,00928326-10296,Bayline Warehouse,08/08/22,07/28/22,Reopened,,Emery G. Nolan,"$27,384.64","$8,047.60","$0.00"
+"Initial Claim Description: towing and storage reimbursement requested after disablement",,,,,,,,,,,
+"Continuation: closing date reflects carrier system status at valuation. Unit TR-6032.",,,,,,,,,,,
+10/09/21,X,00928326-10297,Lakeview Auto Glass,08/20/22,08/04/22,Pending,,Avery T. Foster,"$31,513.74","$8,386.95","$0.00"
+"Initial Claim Description: forklift contact with parked trailer during unloading; claim notes reference separate correspondence from the claimant Unit TR-6049 / Operator Blake K. Larkin",,,,,,,,,,,
+"Continuation: vendor documentation was indexed after first notice. Unit TR-6049.",,,,,,,,,,,
+10/09/21,X,00928326-10298,Oak Valley Repair,09/01/22,08/11/22,Open,,Reese K. Carver,"$35,642.08","$3,966.50","$0.00"
+"Initial Claim Description: windshield and cowl damage attributed to road debris Scheduled driver noted separately: Dakota G. Larkin",,,,,,,,,,,
+10/09/21,X,00928326-10299,Quarry Road Terminal,09/13/22,08/18/22,Open,,Casey E. Benton,"$39,771.98","$4,120.75","$0.00"
+"Initial Claim Description: parking-lot contact reported by third-party claimant Scheduled driver noted separately: Finley F. Voss",,,,,,,,,,,
+Policy period total for SC00928326,,,,,,,,,"$134,312.44","$24,521.80","$0.00"
+
+continued on next page
+
+---
+Carrier claim history export - underwriting copy
+Page 41 of 42
+
+# Page 42
+
+CLAIMS DIRECT ACCESS
+
+Loss Run Report
+External carrier loss history - as valued 02/26/2026
+
+Run ID LR-0042
+Page 42 of 42
+Printed 02/26/2026
+
+***
+
+INSURED NAME: Harborline Produce Transport Inc
+CUSTOMER NO.: C043253
+POLICY NO.: SC00928327
+STATE: OH
+POLICY TERM: 10/09/22 - 10/09/23
+
+Effective Date,Claim Rptd,Claim Number,Claimant,Date Reported,Date of Loss,Status,Date Closed,Adjuster,Reserve,Paid,Recovered
+No Claims Reported as of: 02/26/2026,,,,,,,,,,,
+Policy period total,,,,,,,,, $0.00, $0.00, $0.00
+
+***
+
+INSURED NAME: Harborline Produce Transport Inc
+CUSTOMER NO.: C043254
+POLICY NO.: SC00928328
+STATE: NJ
+POLICY TERM: 10/09/23 - 10/08/24
+
+Effective Date,Claim Rptd,Claim Number,Claimant,Date Reported,Date of Loss,Status,Date Closed,Adjuster,Reserve,Paid,Recovered
+No Claims Reported as of: 02/26/2026,,,,,,,,,,,
+Policy period total,,,,,,,,, $0.00, $0.00, $0.00
+
+***
+
+INSURED NAME: Harborline Produce Transport Inc
+CUSTOMER NO.: C043255
+POLICY NO.: SC00928329
+STATE: MD
+POLICY TERM: 10/27/19 - 10/26/20
+
+Effective Date,Claim Rptd,Claim Number,Claimant,Date Reported,Date of Loss,Status,Date Closed,Adjuster,Reserve,Paid,Recovered
+No Claims Reported as of: 02/26/2026,,,,,,,,,,,
+Policy period total,,,,,,,,, $0.00, $0.00, $0.00
+
+***
+
+INSURED NAME: Harborline Produce Transport Inc
+CUSTOMER NO.: C043256
+POLICY NO.: SC00928330
+STATE: VA
+POLICY TERM: 10/26/20 - 10/26/21
+
+Effective Date,Claim Rptd,Claim Number,Claimant,Date Reported,Date of Loss,Status,Date Closed,Adjuster,Reserve,Paid,Recovered
+No Claims Reported as of: 02/26/2026,,,,,,,,,,,
+Policy period total,,,,,,,,, $0.00, $0.00, $0.00
+
+***
+
+Carrier claim history export - underwriting copy
+Page 42 of 42
 

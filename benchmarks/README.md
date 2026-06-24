@@ -10,8 +10,8 @@ The current `data/` release contains:
 |---|---:|---:|---|
 | `core_operations` | 28 | 31,088 | Production-like IFTA, driver/MVR, vehicle schedule, and loss-run layouts. |
 | `claim_multihop` | 3 | 77 | Long claim PDFs requiring cross-page joins. |
-| `policy_packets` | 5 | 1,945 | Two dense BOP declaration schedules plus long BOP, WC, and CGL policy packets. |
-| **Total** | **36** | **33,110** | Every PDF has OCR and JSON ground truth. |
+| `policy_packets` | 3 | 1,489 | Long BOP, WC, and CGL policy packets requiring cross-page extraction. |
+| **Total** | **34** | **32,654** | Every PDF has OCR and JSON ground truth. |
 
 The released transcript condition is `ocr`. The current corpus does not ship clean structural transcripts.
 
@@ -95,6 +95,14 @@ python benchmarks/ocr_claims_pdfs.py --model gemini-3.5-flash --force
 
 The script writes transcripts under `data/transcripts/ocr_gemini/{sample_id}.md`, updates manifest transcript availability, and skips existing OCR files unless `--force` is provided. After any PDF replacement, rerun OCR; transcripts from older PDFs are not reusable.
 
+Validate OCR support against the released ground truth:
+
+```bash
+python benchmarks/validate_ocr_vs_golden.py --claims-dir data
+```
+
+The current release validates all 34 PDFs with 100.0% average identifier coverage, 99.9% tracked identifier-field support, and 39 target records with at least one tracked identifier missing from OCR.
+
 If using OpenRouter for Gemini OCR:
 
 ```bash
@@ -106,7 +114,7 @@ python benchmarks/ocr_claims_pdfs.py \
 
 ## Evaluation
 
-Run extraction evaluation across registered model/regime keys. Common keys include `gemini`, `gemini_oneshot`, `gpt52`, `gpt55_oneshot`, `gpt55_chunked`, and `gpt55_agent`.
+Run extraction evaluation across registered model/regime keys. Common keys include `gemini`, `gemini_oneshot`, `gpt52`, `gpt55_oneshot`, and `gpt55_agent`.
 
 ```bash
 # OCR-condition evaluation
@@ -118,7 +126,7 @@ python benchmarks/evaluate_models.py \
   --models gpt55_agent \
   --tiers multihop mixed \
   --transcripts ocr \
-  --output-dir benchmarks/results/agentic_multihop_gpt55
+  --output-dir benchmarks/results/scratch_gpt55_agent_ocr
 
 # Regenerate a report offline from an existing results directory
 python benchmarks/evaluate_models.py --offline --output-dir benchmarks/results/scratch --transcripts ocr
@@ -130,6 +138,8 @@ Results are written to the `--output-dir`:
 - `evaluation_report.md` - human-readable summary.
 
 Saved reports under `benchmarks/results/` may refer to earlier corpus versions. Do not cite them as current-layout baselines unless they have been rerun against the current `data/` manifest.
+
+The saved `benchmarks/results/codex_policy_cgl_probe_ocr/` artifact is a narrow diagnostic run on `mixed_cgl_040_001`: Codex GPT-5.5 produced 619 records for 619 gold records from the released Gemini OCR transcript, with 92.7% field-level F1, 89.9% recall, and 95.6% precision. It is not a full current-corpus leaderboard.
 
 ## Hugging Face Export
 
@@ -149,7 +159,7 @@ The export writes:
 - `README.md` - Hugging Face dataset card.
 - `data/core_operations/test-00000-of-00001.parquet` - 28 core operations PDFs.
 - `data/claim_multihop/test-00000-of-00001.parquet` - 3 cross-page claim PDFs.
-- `data/policy_packets/test-00000-of-00001.parquet` - 5 policy PDFs.
+- `data/policy_packets/test-00000-of-00001.parquet` - 3 policy PDFs.
 - `schemas/*.schema.json` - public extraction schemas.
 - `metadata/manifest.json` - source manifest copied from `data/`.
 

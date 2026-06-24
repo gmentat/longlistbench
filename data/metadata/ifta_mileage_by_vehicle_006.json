@@ -16,10 +16,10 @@
     "html": "html/ifta_mileage_by_vehicle_006.html",
     "metadata": "metadata/ifta_mileage_by_vehicle_006.json",
     "json_size_bytes": 350661,
-    "pdf_size_bytes": 589222,
-    "html_size_bytes": 313214,
+    "pdf_size_bytes": 6820485,
+    "html_size_bytes": 1090042,
     "ocr_md": "transcripts/ocr_gemini/ifta_mileage_by_vehicle_006.md",
-    "ocr_size_bytes": 159214
+    "ocr_size_bytes": 416454
   },
   "transcripts_available": [
     "ocr"
@@ -32,8 +32,8 @@
     "high_density_long_list",
     "production_like_layout"
   ],
-  "pages_estimate": 136,
-  "pdf_page_count": 136,
+  "pages_estimate": 206,
+  "pdf_page_count": 206,
   "dataset_version": "2.0.0",
   "hf_config": "core_operations",
   "document_count": 1,

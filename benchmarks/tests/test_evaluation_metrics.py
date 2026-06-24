@@ -86,6 +86,29 @@ class EvaluationMetricsTests(unittest.TestCase):
         self.assertEqual(metrics["total_gold_field_pairs"], 1)
         self.assertEqual(metrics["recall"], 0.0)
 
+    def test_blank_generic_fields_are_not_scored_as_required_facts(self):
+        ground_truth = [
+            {
+                "record_type": "cgl_exposure_item",
+                "item_id": "CGL-0002",
+                "form_number": "CG 20 10",
+                "endorsement_number": "",
+                "endorsement_effective_date": "",
+            }
+        ]
+        predicted = [
+            {
+                "record_type": "cgl_exposure_item",
+                "item_id": "CGL-0002",
+                "form_number": "CG 20 10",
+            }
+        ]
+
+        metrics = evaluate_record_extraction(predicted, ground_truth)
+
+        self.assertEqual(metrics["f1"], 1.0)
+        self.assertEqual(metrics["total_gold_field_pairs"], metrics["total_pred_field_pairs"])
+
     def test_generic_accounting_parentheses_match_negative_numbers(self):
         ground_truth = [{"jurisdiction": "PA", "tax_due_credit": -116.08}]
         predicted = [{"jurisdiction": "PA", "tax_due_credit": "($116.08)"}]
