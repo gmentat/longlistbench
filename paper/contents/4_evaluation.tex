@@ -4,7 +4,7 @@ We evaluate systems on the task of extracting a complete list of target records 
 The current release includes an OCR transcript for every PDF. The evaluator treats the transcript condition as part of the experiment configuration, so future runs can compare OCR transcripts, direct PDF inputs, or additional OCR engines without changing the ground truth. Results should therefore report the input condition, model, extraction protocol, and whether the run includes long-range multi-hop samples.
 
 \subsection{Extraction protocols}
-LongListBench is designed to compare extraction protocols, not only base models. The harness supports prompt-based extraction and an agentic sandbox protocol.
+LongListBench is designed to compare extraction protocols, not only base models. The evaluator scripts support prompt-based extraction and an agentic sandbox protocol.
 
 \paragraph{Full-context one-shot extraction.}
 The entire selected transcript is provided to the model in a single call. This regime is intentionally simple and is expected to fail on long documents when the model truncates, omits middle records, merges rows, or cannot maintain the full schema across thousands of fields. It is useful as a lower-bound calibration.
@@ -13,7 +13,7 @@ The entire selected transcript is provided to the model in a single call. This r
 The agentic regime places the OCR transcript inside a sandbox and gives the model filesystem and code-execution tools. The model receives the target schema or field contract, decides how to inspect and segment the document, writes a JSON output file, and can run verification code before finishing. This protocol is a better match for long-list and long-range evidence tasks because it can search, slice, parse tables, and verify counts programmatically.
 
 \paragraph{Other protocols.}
-The harness can also support fixed chunking, retrieval loops, and verification passes. These are extraction protocols and should be reported explicitly, because protocol design can dominate performance on long documents.
+The evaluator scripts can also support fixed chunking, retrieval loops, and verification passes. These are extraction protocols and should be reported explicitly, because protocol design can dominate performance on long documents.
 
 \subsection{Validation and report regeneration}
 Model outputs are parsed, normalized, and scored against the per-document ground truth. Reports are stored as machine-readable JSON with Markdown summaries. The checker can regenerate metrics from saved predictions and golden data, which makes it possible to audit reports without rerunning model calls.

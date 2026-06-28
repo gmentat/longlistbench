@@ -87,6 +87,8 @@ def build_instance_index(dataset_dir: Path) -> dict[str, Any]:
         out_instances.append(
             {
                 "id": instance_id,
+                "complexity_regime": inst.get("complexity_regime") or inst.get("difficulty"),
+                "template_family": inst.get("template") or inst.get("difficulty"),
                 "difficulty": inst.get("difficulty"),
                 "format": inst.get("format"),
                 "domain": inst.get("domain", "claims"),
@@ -140,7 +142,8 @@ def write_csv(index: dict[str, Any], csv_path: Path) -> None:
         rows.append(
             {
                 "id": inst.get("id"),
-                "difficulty": inst.get("difficulty"),
+                "complexity_regime": inst.get("complexity_regime"),
+                "template_family": inst.get("template_family"),
                 "format": inst.get("format"),
                 "domain": inst.get("domain"),
                 "hf_config": inst.get("hf_config"),
@@ -162,7 +165,8 @@ def write_csv(index: dict[str, Any], csv_path: Path) -> None:
 
     fieldnames = [
         "id",
-        "difficulty",
+        "complexity_regime",
+        "template_family",
         "format",
         "domain",
         "hf_config",
@@ -190,12 +194,15 @@ def write_csv(index: dict[str, Any], csv_path: Path) -> None:
 def write_html(index: dict[str, Any], html_path: Path) -> None:
     instances = index.get("instances", [])
 
-    difficulty_counts: dict[str, int] = {}
+    regime_counts: dict[str, int] = {}
+    template_counts: dict[str, int] = {}
     format_counts: dict[str, int] = {}
     for inst in instances:
-        d = str(inst.get("difficulty") or "")
+        r = str(inst.get("complexity_regime") or "")
+        t = str(inst.get("template_family") or "")
         f = str(inst.get("format") or "")
-        difficulty_counts[d] = difficulty_counts.get(d, 0) + 1
+        regime_counts[r] = regime_counts.get(r, 0) + 1
+        template_counts[t] = template_counts.get(t, 0) + 1
         format_counts[f] = format_counts.get(f, 0) + 1
 
     def _fmt_bytes(n: int | None) -> str:
@@ -244,7 +251,8 @@ def write_html(index: dict[str, Any], html_path: Path) -> None:
                 [
                     "<tr>",
                     f"  <td class=\"mono\">{escape(inst_id)}</td>",
-                    f"  <td>{escape(str(inst.get('difficulty') or ''))}</td>",
+                    f"  <td>{escape(str(inst.get('complexity_regime') or ''))}</td>",
+                    f"  <td>{escape(str(inst.get('template_family') or ''))}</td>",
                     f"  <td>{escape(str(inst.get('format') or ''))}</td>",
                     f"  <td>{escape(str(inst.get('domain') or 'claims'))}</td>",
                     f"  <td>{escape(str(inst.get('hf_config') or ''))}</td>",
@@ -269,8 +277,11 @@ def write_html(index: dict[str, Any], html_path: Path) -> None:
     dataset_dir = escape(str(index.get("dataset_dir") or ""))
     total_instances = escape(str(index.get("total_instances") or ""))
 
-    difficulty_summary = ", ".join(
-        f"{escape(k)}: {v}" for k, v in sorted(difficulty_counts.items()) if k
+    regime_summary = ", ".join(
+        f"{escape(k)}: {v}" for k, v in sorted(regime_counts.items()) if k
+    )
+    template_summary = ", ".join(
+        f"{escape(k)}: {v}" for k, v in sorted(template_counts.items()) if k
     )
     format_summary = ", ".join(
         f"{escape(k)}: {v}" for k, v in sorted(format_counts.items()) if k
@@ -406,13 +417,14 @@ def write_html(index: dict[str, Any], html_path: Path) -> None:
       <div><span class=\"mono\">{dataset_dir}</span></div>
       <div>Built at: <span class=\"mono\">{built_at}</span></div>
       <div>Total instances: <span class=\"mono\">{total_instances}</span></div>
-      <div>By tier: <span class=\"mono\">{difficulty_summary}</span></div>
+      <div>By regime: <span class=\"mono\">{regime_summary}</span></div>
+      <div>By template: <span class=\"mono\">{template_summary}</span></div>
       <div>By format: <span class=\"mono\">{format_summary}</span></div>
     </div>
 
     <div class=\"panel\">
       <div class=\"controls\">
-        <input id=\"search\" type=\"search\" placeholder=\"Filter by id / problems / tier / format...\" oninput=\"filterRows()\" />
+        <input id=\"search\" type=\"search\" placeholder=\"Filter by id / problems / regime / template / format...\" oninput=\"filterRows()\" />
       </div>
       <div class=\"hint\">Click a column header to sort. Links open the corresponding benchmark artifacts in this directory.</div>
     </div>
@@ -422,7 +434,8 @@ def write_html(index: dict[str, Any], html_path: Path) -> None:
         <thead>
           <tr>
             <th data-type=\"text\">id</th>
-            <th data-type=\"text\">tier</th>
+            <th data-type=\"text\">complexity regime</th>
+            <th data-type=\"text\">template family</th>
             <th data-type=\"text\">format</th>
             <th data-type=\"text\">domain</th>
             <th data-type=\"text\">HF config</th>

@@ -126,15 +126,16 @@
     <h1>Benchmark Instance Index</h1>
     <div class="meta">
       <div><span class="mono">/Users/anton/d/kay/longlistbench/data</span></div>
-      <div>Built at: <span class="mono">2026-06-24T15:42:54.294284+00:00</span></div>
+      <div>Built at: <span class="mono">2026-06-26T08:50:26.166921+00:00</span></div>
       <div>Total instances: <span class="mono">34</span></div>
-      <div>By tier: <span class="mono">driver_mvr_request_and_roster: 3, driver_schedule_spreadsheet_export: 1, ifta_mileage_by_vehicle: 8, ifta_return_schedule_details: 5, ifta_tax_return_inquiry_detail: 2, ifta_tax_return_summary: 4, loss_run_external: 3, mixed: 2, multihop: 4, vehicle_schedule_spreadsheet_export: 2</span></div>
+      <div>By regime: <span class="mono">claim_crosspage_multihop: 3, driver_mvr_request_and_roster: 3, driver_schedule_spreadsheet_export: 1, ifta_mileage_by_vehicle: 8, ifta_return_schedule_details: 5, ifta_tax_return_inquiry_detail: 2, ifta_tax_return_summary: 4, loss_run_external: 3, policy_multi_hop: 3, vehicle_schedule_spreadsheet_export: 2</span></div>
+      <div>By template: <span class="mono">claim_crosspage_multihop: 3, driver_mvr_request_and_roster: 3, driver_schedule_spreadsheet_export: 1, ifta_mileage_by_vehicle: 8, ifta_return_schedule_details: 5, ifta_tax_return_inquiry_detail: 2, ifta_tax_return_summary: 4, loss_run_external: 3, policy_multihop_bop: 1, policy_multihop_cgl: 1, policy_multihop_wc: 1, vehicle_schedule_spreadsheet_export: 2</span></div>
       <div>By format: <span class="mono">crosspage: 6, production_like_pdf: 28</span></div>
     </div>
 
     <div class="panel">
       <div class="controls">
-        <input id="search" type="search" placeholder="Filter by id / problems / tier / format..." oninput="filterRows()" />
+        <input id="search" type="search" placeholder="Filter by id / problems / regime / template / format..." oninput="filterRows()" />
       </div>
       <div class="hint">Click a column header to sort. Links open the corresponding benchmark artifacts in this directory.</div>
     </div>
@@ -144,7 +145,8 @@
         <thead>
           <tr>
             <th data-type="text">id</th>
-            <th data-type="text">tier</th>
+            <th data-type="text">complexity regime</th>
+            <th data-type="text">template family</th>
             <th data-type="text">format</th>
             <th data-type="text">domain</th>
             <th data-type="text">HF config</th>
@@ -164,6 +166,7 @@
           <tr>
   <td class="mono">driver_mvr_packet_001</td>
   <td>driver_mvr_request_and_roster</td>
+  <td>driver_mvr_request_and_roster</td>
   <td>production_like_pdf</td>
   <td>commercial_insurance_operations</td>
   <td>core_operations</td>
@@ -172,7 +175,7 @@
   <td class="num">260</td>
   <td class="num">17</td>
   <td class="num">17</td>
-  <td>high_density_long_list, production_like_layout</td>
+  <td>high_density_long_list, production_like_layout, ocr_condition, page_breaks, multiple_tables, multi_row</td>
   <td>
     <a href="./pdfs/driver_mvr_packet_001.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
     <a href="./html/driver_mvr_packet_001.html" target="_blank" rel="noopener noreferrer">html</a>
@@ -186,6 +189,7 @@
 <tr>
   <td class="mono">driver_mvr_packet_002</td>
   <td>driver_mvr_request_and_roster</td>
+  <td>driver_mvr_request_and_roster</td>
   <td>production_like_pdf</td>
   <td>commercial_insurance_operations</td>
   <td>core_operations</td>
@@ -194,7 +198,7 @@
   <td class="num">500</td>
   <td class="num">24</td>
   <td class="num">24</td>
-  <td>high_density_long_list, production_like_layout</td>
+  <td>high_density_long_list, production_like_layout, ocr_condition, page_breaks, multiple_tables, multi_row</td>
   <td>
     <a href="./pdfs/driver_mvr_packet_002.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
     <a href="./html/driver_mvr_packet_002.html" target="_blank" rel="noopener noreferrer">html</a>
@@ -208,6 +212,7 @@
 <tr>
   <td class="mono">driver_mvr_packet_003</td>
   <td>driver_mvr_request_and_roster</td>
+  <td>driver_mvr_request_and_roster</td>
   <td>production_like_pdf</td>
   <td>commercial_insurance_operations</td>
   <td>core_operations</td>
@@ -216,7 +221,7 @@
   <td class="num">500</td>
   <td class="num">24</td>
   <td class="num">24</td>
-  <td>high_density_long_list, production_like_layout</td>
+  <td>high_density_long_list, production_like_layout, ocr_condition, page_breaks, multiple_tables, multi_row</td>
   <td>
     <a href="./pdfs/driver_mvr_packet_003.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
     <a href="./html/driver_mvr_packet_003.html" target="_blank" rel="noopener noreferrer">html</a>
@@ -230,6 +235,7 @@
 <tr>
   <td class="mono">driver_schedule_sparse_001</td>
   <td>driver_schedule_spreadsheet_export</td>
+  <td>driver_schedule_spreadsheet_export</td>
   <td>production_like_pdf</td>
   <td>commercial_insurance_operations</td>
   <td>core_operations</td>
@@ -238,7 +244,7 @@
   <td class="num">500</td>
   <td class="num">15</td>
   <td class="num">15</td>
-  <td>high_density_long_list, production_like_layout</td>
+  <td>high_density_long_list, production_like_layout, ocr_condition, page_breaks, large_doc, multiple_tables</td>
   <td>
     <a href="./pdfs/driver_schedule_sparse_001.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
     <a href="./html/driver_schedule_sparse_001.html" target="_blank" rel="noopener noreferrer">html</a>
@@ -252,6 +258,7 @@
 <tr>
   <td class="mono">ifta_mileage_by_vehicle_001</td>
   <td>ifta_mileage_by_vehicle</td>
+  <td>ifta_mileage_by_vehicle</td>
   <td>production_like_pdf</td>
   <td>commercial_insurance_operations</td>
   <td>core_operations</td>
@@ -260,19 +267,20 @@
   <td class="num">1159</td>
   <td class="num">97</td>
   <td class="num">97</td>
-  <td>high_density_long_list, production_like_layout</td>
+  <td>high_density_long_list, production_like_layout, ocr_condition, page_breaks, large_doc, multiple_tables, multi_row</td>
   <td>
     <a href="./pdfs/ifta_mileage_by_vehicle_001.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
     <a href="./html/ifta_mileage_by_vehicle_001.html" target="_blank" rel="noopener noreferrer">html</a>
     <a href="./ground_truth/ifta_mileage_by_vehicle_001.json" target="_blank" rel="noopener noreferrer">json</a>
     <a href="./transcripts/ocr_gemini/ifta_mileage_by_vehicle_001.md" target="_blank" rel="noopener noreferrer">ocr</a>
   </td>
-  <td class="num">3.17 MB</td>
-  <td class="num">510.7 KB</td>
+  <td class="num">574.5 KB</td>
+  <td class="num">499.0 KB</td>
   <td class="num">163.1 KB</td>
 </tr>
 <tr>
   <td class="mono">ifta_mileage_by_vehicle_002</td>
+  <td>ifta_mileage_by_vehicle</td>
   <td>ifta_mileage_by_vehicle</td>
   <td>production_like_pdf</td>
   <td>commercial_insurance_operations</td>
@@ -282,19 +290,20 @@
   <td class="num">2143</td>
   <td class="num">182</td>
   <td class="num">182</td>
-  <td>high_density_long_list, production_like_layout</td>
+  <td>high_density_long_list, production_like_layout, ocr_condition, page_breaks, large_doc, multiple_tables, multi_row</td>
   <td>
     <a href="./pdfs/ifta_mileage_by_vehicle_002.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
     <a href="./html/ifta_mileage_by_vehicle_002.html" target="_blank" rel="noopener noreferrer">html</a>
     <a href="./ground_truth/ifta_mileage_by_vehicle_002.json" target="_blank" rel="noopener noreferrer">json</a>
     <a href="./transcripts/ocr_gemini/ifta_mileage_by_vehicle_002.md" target="_blank" rel="noopener noreferrer">ocr</a>
   </td>
-  <td class="num">5.75 MB</td>
-  <td class="num">938.5 KB</td>
+  <td class="num">947.0 KB</td>
+  <td class="num">916.6 KB</td>
   <td class="num">301.7 KB</td>
 </tr>
 <tr>
   <td class="mono">ifta_mileage_by_vehicle_003</td>
+  <td>ifta_mileage_by_vehicle</td>
   <td>ifta_mileage_by_vehicle</td>
   <td>production_like_pdf</td>
   <td>commercial_insurance_operations</td>
@@ -304,19 +313,20 @@
   <td class="num">2195</td>
   <td class="num">188</td>
   <td class="num">188</td>
-  <td>high_density_long_list, production_like_layout</td>
+  <td>high_density_long_list, production_like_layout, ocr_condition, page_breaks, large_doc, multiple_tables, multi_row</td>
   <td>
     <a href="./pdfs/ifta_mileage_by_vehicle_003.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
     <a href="./html/ifta_mileage_by_vehicle_003.html" target="_blank" rel="noopener noreferrer">html</a>
     <a href="./ground_truth/ifta_mileage_by_vehicle_003.json" target="_blank" rel="noopener noreferrer">json</a>
     <a href="./transcripts/ocr_gemini/ifta_mileage_by_vehicle_003.md" target="_blank" rel="noopener noreferrer">ocr</a>
   </td>
-  <td class="num">5.90 MB</td>
-  <td class="num">963.4 KB</td>
+  <td class="num">973.6 KB</td>
+  <td class="num">940.9 KB</td>
   <td class="num">308.6 KB</td>
 </tr>
 <tr>
   <td class="mono">ifta_mileage_by_vehicle_004</td>
+  <td>ifta_mileage_by_vehicle</td>
   <td>ifta_mileage_by_vehicle</td>
   <td>production_like_pdf</td>
   <td>commercial_insurance_operations</td>
@@ -326,19 +336,20 @@
   <td class="num">2239</td>
   <td class="num">193</td>
   <td class="num">193</td>
-  <td>high_density_long_list, production_like_layout</td>
+  <td>high_density_long_list, production_like_layout, ocr_condition, page_breaks, large_doc, multiple_tables, multi_row</td>
   <td>
     <a href="./pdfs/ifta_mileage_by_vehicle_004.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
     <a href="./html/ifta_mileage_by_vehicle_004.html" target="_blank" rel="noopener noreferrer">html</a>
     <a href="./ground_truth/ifta_mileage_by_vehicle_004.json" target="_blank" rel="noopener noreferrer">json</a>
     <a href="./transcripts/ocr_gemini/ifta_mileage_by_vehicle_004.md" target="_blank" rel="noopener noreferrer">ocr</a>
   </td>
-  <td class="num">6.02 MB</td>
-  <td class="num">983.0 KB</td>
+  <td class="num">991.8 KB</td>
+  <td class="num">959.8 KB</td>
   <td class="num">315.1 KB</td>
 </tr>
 <tr>
   <td class="mono">ifta_mileage_by_vehicle_005</td>
+  <td>ifta_mileage_by_vehicle</td>
   <td>ifta_mileage_by_vehicle</td>
   <td>production_like_pdf</td>
   <td>commercial_insurance_operations</td>
@@ -348,19 +359,20 @@
   <td class="num">2379</td>
   <td class="num">198</td>
   <td class="num">198</td>
-  <td>high_density_long_list, production_like_layout</td>
+  <td>high_density_long_list, production_like_layout, ocr_condition, page_breaks, large_doc, multiple_tables, multi_row</td>
   <td>
     <a href="./pdfs/ifta_mileage_by_vehicle_005.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
     <a href="./html/ifta_mileage_by_vehicle_005.html" target="_blank" rel="noopener noreferrer">html</a>
     <a href="./ground_truth/ifta_mileage_by_vehicle_005.json" target="_blank" rel="noopener noreferrer">json</a>
     <a href="./transcripts/ocr_gemini/ifta_mileage_by_vehicle_005.md" target="_blank" rel="noopener noreferrer">ocr</a>
   </td>
-  <td class="num">6.32 MB</td>
-  <td class="num">1.01 MB</td>
+  <td class="num">1022.2 KB</td>
+  <td class="num">1012.3 KB</td>
   <td class="num">334.7 KB</td>
 </tr>
 <tr>
   <td class="mono">ifta_mileage_by_vehicle_006</td>
+  <td>ifta_mileage_by_vehicle</td>
   <td>ifta_mileage_by_vehicle</td>
   <td>production_like_pdf</td>
   <td>commercial_insurance_operations</td>
@@ -370,19 +382,20 @@
   <td class="num">2434</td>
   <td class="num">206</td>
   <td class="num">206</td>
-  <td>high_density_long_list, production_like_layout</td>
+  <td>high_density_long_list, production_like_layout, ocr_condition, page_breaks, large_doc, multiple_tables, multi_row</td>
   <td>
     <a href="./pdfs/ifta_mileage_by_vehicle_006.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
     <a href="./html/ifta_mileage_by_vehicle_006.html" target="_blank" rel="noopener noreferrer">html</a>
     <a href="./ground_truth/ifta_mileage_by_vehicle_006.json" target="_blank" rel="noopener noreferrer">json</a>
     <a href="./transcripts/ocr_gemini/ifta_mileage_by_vehicle_006.md" target="_blank" rel="noopener noreferrer">ocr</a>
   </td>
-  <td class="num">6.50 MB</td>
-  <td class="num">1.04 MB</td>
+  <td class="num">1.03 MB</td>
+  <td class="num">1.02 MB</td>
   <td class="num">342.4 KB</td>
 </tr>
 <tr>
   <td class="mono">ifta_mileage_by_vehicle_007</td>
+  <td>ifta_mileage_by_vehicle</td>
   <td>ifta_mileage_by_vehicle</td>
   <td>production_like_pdf</td>
   <td>commercial_insurance_operations</td>
@@ -392,19 +405,20 @@
   <td class="num">2445</td>
   <td class="num">210</td>
   <td class="num">210</td>
-  <td>high_density_long_list, production_like_layout</td>
+  <td>high_density_long_list, production_like_layout, ocr_condition, page_breaks, large_doc, multiple_tables, multi_row</td>
   <td>
     <a href="./pdfs/ifta_mileage_by_vehicle_007.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
     <a href="./html/ifta_mileage_by_vehicle_007.html" target="_blank" rel="noopener noreferrer">html</a>
     <a href="./ground_truth/ifta_mileage_by_vehicle_007.json" target="_blank" rel="noopener noreferrer">json</a>
     <a href="./transcripts/ocr_gemini/ifta_mileage_by_vehicle_007.md" target="_blank" rel="noopener noreferrer">ocr</a>
   </td>
-  <td class="num">6.56 MB</td>
-  <td class="num">1.05 MB</td>
+  <td class="num">1.04 MB</td>
+  <td class="num">1.02 MB</td>
   <td class="num">344.3 KB</td>
 </tr>
 <tr>
   <td class="mono">ifta_mileage_by_vehicle_008</td>
+  <td>ifta_mileage_by_vehicle</td>
   <td>ifta_mileage_by_vehicle</td>
   <td>production_like_pdf</td>
   <td>commercial_insurance_operations</td>
@@ -414,19 +428,20 @@
   <td class="num">2571</td>
   <td class="num">218</td>
   <td class="num">218</td>
-  <td>high_density_long_list, production_like_layout</td>
+  <td>high_density_long_list, production_like_layout, ocr_condition, page_breaks, large_doc, multiple_tables, multi_row</td>
   <td>
     <a href="./pdfs/ifta_mileage_by_vehicle_008.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
     <a href="./html/ifta_mileage_by_vehicle_008.html" target="_blank" rel="noopener noreferrer">html</a>
     <a href="./ground_truth/ifta_mileage_by_vehicle_008.json" target="_blank" rel="noopener noreferrer">json</a>
     <a href="./transcripts/ocr_gemini/ifta_mileage_by_vehicle_008.md" target="_blank" rel="noopener noreferrer">ocr</a>
   </td>
-  <td class="num">6.87 MB</td>
-  <td class="num">1.10 MB</td>
+  <td class="num">1.08 MB</td>
+  <td class="num">1.07 MB</td>
   <td class="num">361.7 KB</td>
 </tr>
 <tr>
   <td class="mono">ifta_return_schedule_001</td>
+  <td>ifta_return_schedule_details</td>
   <td>ifta_return_schedule_details</td>
   <td>production_like_pdf</td>
   <td>commercial_insurance_operations</td>
@@ -436,7 +451,7 @@
   <td class="num">582</td>
   <td class="num">33</td>
   <td class="num">33</td>
-  <td>high_density_long_list, production_like_layout</td>
+  <td>high_density_long_list, production_like_layout, ocr_condition, page_breaks, large_doc, multiple_tables</td>
   <td>
     <a href="./pdfs/ifta_return_schedule_001.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
     <a href="./html/ifta_return_schedule_001.html" target="_blank" rel="noopener noreferrer">html</a>
@@ -450,6 +465,7 @@
 <tr>
   <td class="mono">ifta_return_schedule_002</td>
   <td>ifta_return_schedule_details</td>
+  <td>ifta_return_schedule_details</td>
   <td>production_like_pdf</td>
   <td>commercial_insurance_operations</td>
   <td>core_operations</td>
@@ -458,7 +474,7 @@
   <td class="num">998</td>
   <td class="num">53</td>
   <td class="num">53</td>
-  <td>high_density_long_list, production_like_layout</td>
+  <td>high_density_long_list, production_like_layout, ocr_condition, page_breaks, large_doc, multiple_tables</td>
   <td>
     <a href="./pdfs/ifta_return_schedule_002.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
     <a href="./html/ifta_return_schedule_002.html" target="_blank" rel="noopener noreferrer">html</a>
@@ -472,6 +488,7 @@
 <tr>
   <td class="mono">ifta_return_schedule_003</td>
   <td>ifta_return_schedule_details</td>
+  <td>ifta_return_schedule_details</td>
   <td>production_like_pdf</td>
   <td>commercial_insurance_operations</td>
   <td>core_operations</td>
@@ -480,7 +497,7 @@
   <td class="num">1085</td>
   <td class="num">58</td>
   <td class="num">58</td>
-  <td>high_density_long_list, production_like_layout</td>
+  <td>high_density_long_list, production_like_layout, ocr_condition, page_breaks, large_doc, multiple_tables</td>
   <td>
     <a href="./pdfs/ifta_return_schedule_003.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
     <a href="./html/ifta_return_schedule_003.html" target="_blank" rel="noopener noreferrer">html</a>
@@ -494,6 +511,7 @@
 <tr>
   <td class="mono">ifta_return_schedule_004</td>
   <td>ifta_return_schedule_details</td>
+  <td>ifta_return_schedule_details</td>
   <td>production_like_pdf</td>
   <td>commercial_insurance_operations</td>
   <td>core_operations</td>
@@ -502,7 +520,7 @@
   <td class="num">1101</td>
   <td class="num">58</td>
   <td class="num">58</td>
-  <td>high_density_long_list, production_like_layout</td>
+  <td>high_density_long_list, production_like_layout, ocr_condition, page_breaks, large_doc, multiple_tables</td>
   <td>
     <a href="./pdfs/ifta_return_schedule_004.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
     <a href="./html/ifta_return_schedule_004.html" target="_blank" rel="noopener noreferrer">html</a>
@@ -516,6 +534,7 @@
 <tr>
   <td class="mono">ifta_return_schedule_005</td>
   <td>ifta_return_schedule_details</td>
+  <td>ifta_return_schedule_details</td>
   <td>production_like_pdf</td>
   <td>commercial_insurance_operations</td>
   <td>core_operations</td>
@@ -524,7 +543,7 @@
   <td class="num">1157</td>
   <td class="num">61</td>
   <td class="num">61</td>
-  <td>high_density_long_list, production_like_layout</td>
+  <td>high_density_long_list, production_like_layout, ocr_condition, page_breaks, large_doc, multiple_tables</td>
   <td>
     <a href="./pdfs/ifta_return_schedule_005.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
     <a href="./html/ifta_return_schedule_005.html" target="_blank" rel="noopener noreferrer">html</a>
@@ -538,6 +557,7 @@
 <tr>
   <td class="mono">ifta_tax_inquiry_001</td>
   <td>ifta_tax_return_inquiry_detail</td>
+  <td>ifta_tax_return_inquiry_detail</td>
   <td>production_like_pdf</td>
   <td>commercial_insurance_operations</td>
   <td>core_operations</td>
@@ -546,7 +566,7 @@
   <td class="num">650</td>
   <td class="num">17</td>
   <td class="num">17</td>
-  <td>high_density_long_list, production_like_layout</td>
+  <td>high_density_long_list, production_like_layout, ocr_condition, page_breaks, large_doc, multiple_tables, merged_cells</td>
   <td>
     <a href="./pdfs/ifta_tax_inquiry_001.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
     <a href="./html/ifta_tax_inquiry_001.html" target="_blank" rel="noopener noreferrer">html</a>
@@ -560,6 +580,7 @@
 <tr>
   <td class="mono">ifta_tax_inquiry_002</td>
   <td>ifta_tax_return_inquiry_detail</td>
+  <td>ifta_tax_return_inquiry_detail</td>
   <td>production_like_pdf</td>
   <td>commercial_insurance_operations</td>
   <td>core_operations</td>
@@ -568,7 +589,7 @@
   <td class="num">650</td>
   <td class="num">17</td>
   <td class="num">17</td>
-  <td>high_density_long_list, production_like_layout</td>
+  <td>high_density_long_list, production_like_layout, ocr_condition, page_breaks, large_doc, multiple_tables, merged_cells</td>
   <td>
     <a href="./pdfs/ifta_tax_inquiry_002.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
     <a href="./html/ifta_tax_inquiry_002.html" target="_blank" rel="noopener noreferrer">html</a>
@@ -582,6 +603,7 @@
 <tr>
   <td class="mono">ifta_tax_summary_001</td>
   <td>ifta_tax_return_summary</td>
+  <td>ifta_tax_return_summary</td>
   <td>production_like_pdf</td>
   <td>commercial_insurance_operations</td>
   <td>core_operations</td>
@@ -590,7 +612,7 @@
   <td class="num">760</td>
   <td class="num">20</td>
   <td class="num">20</td>
-  <td>high_density_long_list, production_like_layout</td>
+  <td>high_density_long_list, production_like_layout, ocr_condition, page_breaks, large_doc, multiple_tables</td>
   <td>
     <a href="./pdfs/ifta_tax_summary_001.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
     <a href="./html/ifta_tax_summary_001.html" target="_blank" rel="noopener noreferrer">html</a>
@@ -604,6 +626,7 @@
 <tr>
   <td class="mono">ifta_tax_summary_002</td>
   <td>ifta_tax_return_summary</td>
+  <td>ifta_tax_return_summary</td>
   <td>production_like_pdf</td>
   <td>commercial_insurance_operations</td>
   <td>core_operations</td>
@@ -612,7 +635,7 @@
   <td class="num">760</td>
   <td class="num">20</td>
   <td class="num">20</td>
-  <td>high_density_long_list, production_like_layout</td>
+  <td>high_density_long_list, production_like_layout, ocr_condition, page_breaks, large_doc, multiple_tables</td>
   <td>
     <a href="./pdfs/ifta_tax_summary_002.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
     <a href="./html/ifta_tax_summary_002.html" target="_blank" rel="noopener noreferrer">html</a>
@@ -626,6 +649,7 @@
 <tr>
   <td class="mono">ifta_tax_summary_003</td>
   <td>ifta_tax_return_summary</td>
+  <td>ifta_tax_return_summary</td>
   <td>production_like_pdf</td>
   <td>commercial_insurance_operations</td>
   <td>core_operations</td>
@@ -634,7 +658,7 @@
   <td class="num">760</td>
   <td class="num">20</td>
   <td class="num">20</td>
-  <td>high_density_long_list, production_like_layout</td>
+  <td>high_density_long_list, production_like_layout, ocr_condition, page_breaks, large_doc, multiple_tables</td>
   <td>
     <a href="./pdfs/ifta_tax_summary_003.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
     <a href="./html/ifta_tax_summary_003.html" target="_blank" rel="noopener noreferrer">html</a>
@@ -648,6 +672,7 @@
 <tr>
   <td class="mono">ifta_tax_summary_004</td>
   <td>ifta_tax_return_summary</td>
+  <td>ifta_tax_return_summary</td>
   <td>production_like_pdf</td>
   <td>commercial_insurance_operations</td>
   <td>core_operations</td>
@@ -656,7 +681,7 @@
   <td class="num">760</td>
   <td class="num">20</td>
   <td class="num">20</td>
-  <td>high_density_long_list, production_like_layout</td>
+  <td>high_density_long_list, production_like_layout, ocr_condition, page_breaks, large_doc, multiple_tables</td>
   <td>
     <a href="./pdfs/ifta_tax_summary_004.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
     <a href="./html/ifta_tax_summary_004.html" target="_blank" rel="noopener noreferrer">html</a>
@@ -670,6 +695,7 @@
 <tr>
   <td class="mono">loss_run_external_001</td>
   <td>loss_run_external</td>
+  <td>loss_run_external</td>
   <td>production_like_pdf</td>
   <td>commercial_insurance_operations</td>
   <td>core_operations</td>
@@ -678,7 +704,7 @@
   <td class="num">300</td>
   <td class="num">43</td>
   <td class="num">43</td>
-  <td>high_density_long_list, production_like_layout, variable_policy_sections, continuation_notes, summary_distractors, sparse_driver_fields</td>
+  <td>high_density_long_list, production_like_layout, ocr_condition, page_breaks, large_doc, multiple_tables, merged_cells, multi_row, duplicates, distractor_sections, variable_policy_sections, continuation_notes, summary_distractors, sparse_driver_fields</td>
   <td>
     <a href="./pdfs/loss_run_external_001.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
     <a href="./html/loss_run_external_001.html" target="_blank" rel="noopener noreferrer">html</a>
@@ -692,6 +718,7 @@
 <tr>
   <td class="mono">loss_run_external_002</td>
   <td>loss_run_external</td>
+  <td>loss_run_external</td>
   <td>production_like_pdf</td>
   <td>commercial_insurance_operations</td>
   <td>core_operations</td>
@@ -700,7 +727,7 @@
   <td class="num">300</td>
   <td class="num">42</td>
   <td class="num">42</td>
-  <td>high_density_long_list, production_like_layout, variable_policy_sections, continuation_notes, summary_distractors, sparse_driver_fields</td>
+  <td>high_density_long_list, production_like_layout, ocr_condition, page_breaks, large_doc, multiple_tables, merged_cells, multi_row, duplicates, distractor_sections, variable_policy_sections, continuation_notes, summary_distractors, sparse_driver_fields</td>
   <td>
     <a href="./pdfs/loss_run_external_002.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
     <a href="./html/loss_run_external_002.html" target="_blank" rel="noopener noreferrer">html</a>
@@ -714,6 +741,7 @@
 <tr>
   <td class="mono">loss_run_external_003</td>
   <td>loss_run_external</td>
+  <td>loss_run_external</td>
   <td>production_like_pdf</td>
   <td>commercial_insurance_operations</td>
   <td>core_operations</td>
@@ -722,7 +750,7 @@
   <td class="num">300</td>
   <td class="num">44</td>
   <td class="num">44</td>
-  <td>high_density_long_list, production_like_layout, variable_policy_sections, continuation_notes, summary_distractors, sparse_driver_fields</td>
+  <td>high_density_long_list, production_like_layout, ocr_condition, page_breaks, large_doc, multiple_tables, merged_cells, multi_row, duplicates, distractor_sections, variable_policy_sections, continuation_notes, summary_distractors, sparse_driver_fields</td>
   <td>
     <a href="./pdfs/loss_run_external_003.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
     <a href="./html/loss_run_external_003.html" target="_blank" rel="noopener noreferrer">html</a>
@@ -735,7 +763,8 @@
 </tr>
 <tr>
   <td class="mono">mixed_040_001_crosspage</td>
-  <td>mixed</td>
+  <td>claim_crosspage_multihop</td>
+  <td>claim_crosspage_multihop</td>
   <td>crosspage</td>
   <td>claims</td>
   <td>claim_multihop</td>
@@ -744,7 +773,7 @@
   <td class="num">40</td>
   <td class="num">198</td>
   <td class="num">198</td>
-  <td>cross_page_join, long_range_evidence, mixed_layout, distractor_sections, longer_list</td>
+  <td>mixed_layout, longer_list, cross_page_join, long_range_evidence, distractor_sections, ocr_condition, page_breaks, large_doc, multiple_tables, multi_row, multi_column, duplicates</td>
   <td>
     <a href="./pdfs/mixed_040_001_crosspage.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
     <a href="./html/mixed_040_001_crosspage.html" target="_blank" rel="noopener noreferrer">html</a>
@@ -752,21 +781,22 @@
     <a href="./transcripts/ocr_gemini/mixed_040_001_crosspage.md" target="_blank" rel="noopener noreferrer">ocr</a>
   </td>
   <td class="num">1.32 MB</td>
-  <td class="num">689.6 KB</td>
+  <td class="num">689.5 KB</td>
   <td class="num">49.4 KB</td>
 </tr>
 <tr>
   <td class="mono">mixed_cgl_040_001</td>
-  <td>mixed</td>
+  <td>policy_multi_hop</td>
+  <td>policy_multihop_cgl</td>
   <td>crosspage</td>
   <td>policy_review</td>
-  <td></td>
+  <td>policy_packets</td>
   <td>CGL</td>
   <td>policy_packet_item</td>
   <td class="num">619</td>
   <td class="num">278</td>
   <td class="num">278</td>
-  <td>commercial_general_liability, exposure_rating_rows, limits_forms_exclusions, material_clause_extraction, long_range_evidence, heterogeneous_record_list, distractor_forms, distractor_locations</td>
+  <td>commercial_general_liability, exposure_rating_rows, limits_forms_exclusions, distractor_forms, distractor_locations, material_clause_extraction, long_range_evidence, heterogeneous_record_list, ocr_condition, page_breaks, large_doc, multiple_tables, multi_row, multi_column, duplicates, distractor_sections</td>
   <td>
     <a href="./pdfs/mixed_cgl_040_001.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
     <a href="./html/mixed_cgl_040_001.html" target="_blank" rel="noopener noreferrer">html</a>
@@ -779,7 +809,8 @@
 </tr>
 <tr>
   <td class="mono">multihop_012_001_crosspage</td>
-  <td>multihop</td>
+  <td>claim_crosspage_multihop</td>
+  <td>claim_crosspage_multihop</td>
   <td>crosspage</td>
   <td>claims</td>
   <td>claim_multihop</td>
@@ -788,20 +819,21 @@
   <td class="num">12</td>
   <td class="num">76</td>
   <td class="num">76</td>
-  <td>cross_page_join, long_range_evidence, coded_values</td>
+  <td>coded_values, cross_page_join, long_range_evidence, distractor_sections, ocr_condition, page_breaks, large_doc, multiple_tables, multi_row, multi_column, duplicates</td>
   <td>
     <a href="./pdfs/multihop_012_001_crosspage.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
     <a href="./html/multihop_012_001_crosspage.html" target="_blank" rel="noopener noreferrer">html</a>
     <a href="./ground_truth/multihop_012_001_crosspage.json" target="_blank" rel="noopener noreferrer">json</a>
     <a href="./transcripts/ocr_gemini/multihop_012_001_crosspage.md" target="_blank" rel="noopener noreferrer">ocr</a>
   </td>
-  <td class="num">768.6 KB</td>
+  <td class="num">768.4 KB</td>
   <td class="num">253.5 KB</td>
   <td class="num">14.6 KB</td>
 </tr>
 <tr>
   <td class="mono">multihop_025_001_crosspage</td>
-  <td>multihop</td>
+  <td>claim_crosspage_multihop</td>
+  <td>claim_crosspage_multihop</td>
   <td>crosspage</td>
   <td>claims</td>
   <td>claim_multihop</td>
@@ -810,29 +842,30 @@
   <td class="num">25</td>
   <td class="num">126</td>
   <td class="num">126</td>
-  <td>cross_page_join, long_range_evidence, many_to_one_policy, claimant_lookup</td>
+  <td>claimant_lookup, many_to_one_policy, cross_page_join, long_range_evidence, distractor_sections, ocr_condition, page_breaks, large_doc, multiple_tables, multi_row, multi_column, duplicates</td>
   <td>
     <a href="./pdfs/multihop_025_001_crosspage.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
     <a href="./html/multihop_025_001_crosspage.html" target="_blank" rel="noopener noreferrer">html</a>
     <a href="./ground_truth/multihop_025_001_crosspage.json" target="_blank" rel="noopener noreferrer">json</a>
     <a href="./transcripts/ocr_gemini/multihop_025_001_crosspage.md" target="_blank" rel="noopener noreferrer">ocr</a>
   </td>
-  <td class="num">1016.5 KB</td>
+  <td class="num">1016.2 KB</td>
   <td class="num">438.0 KB</td>
   <td class="num">30.6 KB</td>
 </tr>
 <tr>
   <td class="mono">multihop_bop_012_001</td>
-  <td>multihop</td>
+  <td>policy_multi_hop</td>
+  <td>policy_multihop_bop</td>
   <td>crosspage</td>
   <td>policy_review</td>
-  <td></td>
+  <td>policy_packets</td>
   <td>BOP</td>
   <td>policy_packet_item</td>
   <td class="num">360</td>
   <td class="num">142</td>
   <td class="num">142</td>
-  <td>businessowners_policy, location_scoped_coverage, form_endorsement_links, material_clause_extraction, long_range_evidence, heterogeneous_record_list</td>
+  <td>businessowners_policy, location_scoped_coverage, form_endorsement_links, material_clause_extraction, long_range_evidence, heterogeneous_record_list, ocr_condition, page_breaks, large_doc, multi_row, multi_column, duplicates, distractor_sections</td>
   <td>
     <a href="./pdfs/multihop_bop_012_001.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
     <a href="./html/multihop_bop_012_001.html" target="_blank" rel="noopener noreferrer">html</a>
@@ -845,16 +878,17 @@
 </tr>
 <tr>
   <td class="mono">multihop_wc_025_001</td>
-  <td>multihop</td>
+  <td>policy_multi_hop</td>
+  <td>policy_multihop_wc</td>
   <td>crosspage</td>
   <td>policy_review</td>
-  <td></td>
+  <td>policy_packets</td>
   <td>WC</td>
   <td>policy_packet_item</td>
   <td class="num">510</td>
   <td class="num">194</td>
   <td class="num">194</td>
-  <td>workers_compensation_policy, class_code_payroll_rating, experience_mod_and_schedule_rating, material_clause_extraction, long_range_evidence, heterogeneous_record_list</td>
+  <td>workers_compensation_policy, class_code_payroll_rating, experience_mod_and_schedule_rating, material_clause_extraction, long_range_evidence, heterogeneous_record_list, ocr_condition, page_breaks, large_doc, multiple_tables, multi_row, multi_column, duplicates, distractor_sections</td>
   <td>
     <a href="./pdfs/multihop_wc_025_001.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
     <a href="./html/multihop_wc_025_001.html" target="_blank" rel="noopener noreferrer">html</a>
@@ -862,11 +896,12 @@
     <a href="./transcripts/ocr_gemini/multihop_wc_025_001.md" target="_blank" rel="noopener noreferrer">ocr</a>
   </td>
   <td class="num">1.32 MB</td>
-  <td class="num">889.7 KB</td>
+  <td class="num">889.9 KB</td>
   <td class="num">319.8 KB</td>
 </tr>
 <tr>
   <td class="mono">vehicle_schedule_sparse_001</td>
+  <td>vehicle_schedule_spreadsheet_export</td>
   <td>vehicle_schedule_spreadsheet_export</td>
   <td>production_like_pdf</td>
   <td>commercial_insurance_operations</td>
@@ -876,7 +911,7 @@
   <td class="num">800</td>
   <td class="num">25</td>
   <td class="num">25</td>
-  <td>high_density_long_list, production_like_layout</td>
+  <td>high_density_long_list, production_like_layout, ocr_condition, page_breaks, large_doc, multiple_tables</td>
   <td>
     <a href="./pdfs/vehicle_schedule_sparse_001.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
     <a href="./html/vehicle_schedule_sparse_001.html" target="_blank" rel="noopener noreferrer">html</a>
@@ -890,6 +925,7 @@
 <tr>
   <td class="mono">vehicle_schedule_sparse_002</td>
   <td>vehicle_schedule_spreadsheet_export</td>
+  <td>vehicle_schedule_spreadsheet_export</td>
   <td>production_like_pdf</td>
   <td>commercial_insurance_operations</td>
   <td>core_operations</td>
@@ -898,7 +934,7 @@
   <td class="num">800</td>
   <td class="num">25</td>
   <td class="num">25</td>
-  <td>high_density_long_list, production_like_layout</td>
+  <td>high_density_long_list, production_like_layout, ocr_condition, page_breaks, large_doc, multiple_tables</td>
   <td>
     <a href="./pdfs/vehicle_schedule_sparse_002.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
     <a href="./html/vehicle_schedule_sparse_002.html" target="_blank" rel="noopener noreferrer">html</a>

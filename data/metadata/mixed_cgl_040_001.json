@@ -1,9 +1,10 @@
 {
   "id": "mixed_cgl_040_001",
   "difficulty": "mixed",
-  "complexity_regime": "mixed",
+  "complexity_regime": "policy_multi_hop",
   "format": "crosspage",
   "domain": "policy_review",
+  "hf_config": "policy_packets",
   "lob": "CGL",
   "target_record_type": "policy_packet_item",
   "target_record_types": [
@@ -61,11 +62,19 @@
     "commercial_general_liability",
     "exposure_rating_rows",
     "limits_forms_exclusions",
+    "distractor_forms",
+    "distractor_locations",
     "material_clause_extraction",
     "long_range_evidence",
     "heterogeneous_record_list",
-    "distractor_forms",
-    "distractor_locations"
+    "ocr_condition",
+    "page_breaks",
+    "large_doc",
+    "multiple_tables",
+    "multi_row",
+    "multi_column",
+    "duplicates",
+    "distractor_sections"
   ],
   "layout_templates": [
     "declarations",
@@ -191,11 +200,13 @@
     "html": "html/mixed_cgl_040_001.html",
     "ocr_md": "transcripts/ocr_gemini/mixed_cgl_040_001.md",
     "json_size_bytes": 458192,
-    "pdf_size_bytes": 2005923,
-    "html_size_bytes": 1375584,
-    "ocr_size_bytes": 1098593
+    "pdf_size_bytes": 2007673,
+    "html_size_bytes": 1376002,
+    "ocr_size_bytes": 1195630,
+    "metadata": "metadata/mixed_cgl_040_001.json"
   },
   "transcripts_available": [
     "ocr"
-  ]
+  ],
+  "template": "policy_multihop_cgl"
 }

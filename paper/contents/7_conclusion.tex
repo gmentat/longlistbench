@@ -1,12 +1,13 @@
-LongListBench targets a persistent gap in document understanding evaluation: extracting long lists of repeated entities from semi-structured business documents with complex layouts, OCR-transcribed text, and long-range evidence requirements. The current release provides 34 synthetic PDFs, 32{,}654 target records, OCR transcripts, structured ground truth, per-sample metadata, and an evaluation harness for field-level scoring.
+LongListBench targets a persistent gap in document understanding evaluation: extracting long lists of repeated entities from semi-structured business documents with complex layouts, OCR-transcribed text, and long-range evidence requirements. The current release provides 34 synthetic PDFs, 32{,}654 target records, OCR transcripts, structured ground truth, per-sample metadata, and evaluator scripts for field-level scoring.
 
 \subsection{Summary}
 Our main contributions are:
 \begin{itemize}
-    \item A public synthetic corpus of production-like insurance and fleet-operation documents with high-density target lists.
+    \item A public synthetic corpus of production-like insurance and trucking-operation documents with high-density target lists.
+    \item Per-document complexity metadata that preserves the original stressor taxonomy while keeping the visible PDFs free of benchmark labels.
     \item A long-range evidence suite where target claim and policy records must be assembled from distant sections of a single PDF.
     \item A reproducible artifact layout with PDFs, HTML sources, OCR transcripts, JSON ground truth, metadata, and HF export tooling.
-    \item An evaluation harness that supports claim-specific scoring, generic record-list scoring, and agentic sandbox extraction.
+    \item Supporting evaluator scripts for claim-specific scoring, generic record-list scoring, and agentic sandbox extraction.
 \end{itemize}
 
 \subsection{Practical takeaways}

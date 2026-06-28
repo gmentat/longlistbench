@@ -660,7 +660,7 @@ def _letterhead_request_page(incidents: list[dict[str, Any]]) -> str:
   <p style="text-align: center;">Report of Services Provided</p>
   <p><strong>Note:</strong> This report summarizes record-search responses
   received for underwriting review. It is not a billing statement and does not
-  contain the complete target schedule.</p>
+  contain the complete claim detail schedule.</p>
   {_table(["Reference", "State", "Event Date", "Status"], rows)}
   <p style="text-align: center; margin-top: 22px;">Do not pay from this report.</p>
 </div>
@@ -709,7 +709,7 @@ def _mileage_summary_page(incidents: list[dict[str, Any]]) -> str:
         )
     body = """
 <div class="spreadsheet-page">
-  <h2>IFTA Mileage: All Trucks - Synthetic Quarter</h2>
+  <h2>IFTA Mileage: All Units - Quarter Activity</h2>
 """ + "".join(chunks) + """
 </div>
 """
@@ -923,7 +923,7 @@ def _prior_carrier_correspondence_page(
 {_table(["Request", "Reference", "Account", "State", "Response Date", "Disposition"], rows, class_name="data-table worksheet-table wide")}
 {_table(["Attachment", "Policy", "Document Type", "Index Status"], attachment_rows, class_name="data-table worksheet-table")}
 <div class="dense-notes">
-  <div class="dense-note"><strong>Review note.</strong> The correspondence log records prior-carrier response handling and document indexing. Rows may reference inactive or non-target files.</div>
+  <div class="dense-note"><strong>Review note.</strong> The correspondence log records prior-carrier response handling and document indexing. Rows may reference inactive or closed files.</div>
   <div class="dense-note"><strong>Routing note.</strong> Account review uses this page with the policy register, driver roster, and claim detail pages when resolving missing prior-loss evidence.</div>
 </div>
 <div class="form-footer">Record services unit - correspondence export</div>
@@ -985,7 +985,7 @@ def _risk_control_followup_page(
 <div class="checklist">{''.join(rows)}</div>
 {_table(["Unit", "Driver", "Reference", "Review Area", "Status", "Diary Date"], sample_rows, class_name="data-table worksheet-table")}
 <div class="dense-notes">
-  <div class="dense-note"><strong>Risk control note.</strong> Follow-up items are sampled from the account service file and may not map one-to-one to the target incident schedule.</div>
+  <div class="dense-note"><strong>Risk control note.</strong> Follow-up items are sampled from the account service file and may not map one-to-one to the current incident schedule.</div>
   <div class="dense-note"><strong>Underwriting note.</strong> Large-loss referrals remain open until the account manager confirms the driver, unit, policy state, and loss description.</div>
 </div>
 """
@@ -1169,7 +1169,7 @@ def _archived_distractor_section(config: MultiHopCaseConfig, incidents: list[dic
 <h2>Archived Claims Extract</h2>
 <div class="notice">
   Archived extract retained for prior-year comparison. Incident identifiers do
-  not belong to the current target schedule.
+  not belong to the current claim schedule.
 </div>
 """ + _table(["Claim #", "Reference", "Policy", "Archive Note"], rows)
     return _page("Archived claims extract", body)

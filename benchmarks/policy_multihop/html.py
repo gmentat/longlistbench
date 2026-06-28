@@ -1907,7 +1907,7 @@ def _clause_detail_pages(profile: dict[str, str], items: list[dict[str, Any]]) -
             paragraphs.append(f"<p>{escape(clause['clause_text'])}</p>")
         notice = """
 <div class="schedule-note">
-  Material provisions in this section are current-policy provisions. Similar prior-term or advisory notes in archive pages are not target records.
+  Material provisions in this section apply to the current policy term. Similar prior-term or advisory notes in archive pages are retained for underwriting reference.
 </div>
 """
         body = notice + '<div class="policy-form-body two-column">' + "".join(paragraphs) + "</div>"
@@ -2031,7 +2031,7 @@ def _distractor_section(config: PolicyMultiHopCaseConfig, profile: dict[str, str
     for idx, item in enumerate(items[: min(36, len(items))], start=1):
         rows.append([f"ARCH-{idx:03d}", item["form_number"], item.get("exclusion_name", item["form_title"]), item.get("limit", item.get("premium", "")), "Prior term only"])
     body = f"""
-<p>Archived prior-term forms and advisory clause notes are retained with the file. They do not control the current policy period and are not current-policy target records.</p>
+<p>Archived prior-term forms and advisory clause notes are retained with the file. They do not control the current policy period and are kept for underwriting reference.</p>
 {_table(["Archive ID", "Form", "Subject", "Value", "Status"], rows, class_name="policy-table compact")}
 """
     return _page(profile, "Archived Prior-Term Forms", body, form_id="ARCH")

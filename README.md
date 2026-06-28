@@ -65,7 +65,7 @@ The exported Hugging Face configs are:
 
 | Config | Contents |
 |--------|----------|
-| `core_operations` | 28 production-like commercial insurance and fleet-operation PDFs with dense repeated operations and loss-run records |
+| `core_operations` | 28 production-like commercial insurance and trucking-operation PDFs with dense repeated operations and loss-run records |
 | `claim_multihop` | 3 claim PDFs requiring long-range cross-page joins |
 | `policy_packets` | 3 long BOP, WC, and CGL policy packets requiring cross-page extraction |
 
@@ -87,7 +87,7 @@ python benchmarks/export_hf_dataset.py \
 
 ## Benchmark Overview
 
-- **34 benchmark instances** across 12 production-like template families
+- **34 benchmark instances** across 12 production-like document families
 - **32,654 target records** across commercial operations, claim, and policy extraction tasks
 - **28 core operations PDFs** covering IFTA, driver/MVR, vehicle schedule, and loss-run layouts
 - **3 policy PDFs** covering long BOP, WC, and CGL policy packets
@@ -114,7 +114,7 @@ data/
 
 `data/manifest.json` is the source of truth for sample IDs, template regimes, artifact paths, transcript availability, and per-sample metadata.
 
-### Template Families
+### Document Families
 
 | Family | PDFs | Target records |
 |--------|-----:|---------------:|
@@ -130,6 +130,40 @@ data/
 | `policy_multihop_bop` | 1 | 360 |
 | `policy_multihop_wc` | 1 | 510 |
 | `policy_multihop_cgl` | 1 | 619 |
+
+### Complexity Stressors
+
+LongListBench tracks cross-cutting stressors in each instance's `problems` metadata. The original generator exposed seven document-problem flags; version 2.0 keeps the same ideas but implements them in production-like layouts rather than as obvious synthetic toggles.
+
+| Tag | Meaning |
+|-----|---------|
+| `page_breaks` | Target lists or supporting sections span page boundaries with repeated headers or inherited context. |
+| `multi_row` | One logical record contains wrapped notes, long descriptions, clause prose, or continuation rows. |
+| `duplicates` | Duplicate or near-duplicate distractor material appears, usually as prior-term/archive sections rather than exact duplicate target rows. |
+| `large_doc` | Documents contain hundreds to thousands of targets or enough pages to expose truncation/list-completeness failures. |
+| `multiple_tables` | Target records are mixed with summaries, ledgers, support tables, schedules, or empty/no-claims tables. |
+| `multi_column` | Two-column or form-like layouts stress reading order. |
+| `merged_cells` | Tables use merged cells, section-spanning rows, or `colspan`/`rowspan` structure. |
+| `ocr_condition` | Released transcripts are OCR output from rendered PDF page images. |
+| `long_range_evidence` | Required fields must be joined from distant sections of the same PDF. |
+| `heterogeneous_record_list` | One output list contains multiple schema families, especially in policy packets. |
+
+These tags are present in `data/manifest.json`, `data/metadata/{sample_id}.json`, the browsable `data/index.html`, and the Hugging Face export.
+
+The PDFs do not print these labels, but the stressors are visible in the document structure. This map gives representative pages to inspect; the full per-instance mapping is in the metadata.
+
+| Stressor | Representative PDF/pages | What to check |
+|----------|--------------------------|---------------|
+| `page_breaks` | `ifta_mileage_by_vehicle_001`, pages 3-4 | Unit 118 spans two pages with the same unit header and jurisdiction rows split across the page boundary. |
+| `multi_row` | `loss_run_external_001`, pages 1-2; `driver_mvr_packet_001`, page 10 | Claim rows include description/detail rows; driver records include roster/MVR detail blocks. |
+| `duplicates` | `loss_run_external_001`, pages 1-2; `multihop_bop_012_001`, page 142 | Summary/no-claim rows and archived/prior-term sections create near-duplicate distractors. |
+| `large_doc` | `ifta_mileage_by_vehicle_008`, whole PDF; `mixed_cgl_040_001`, whole PDF | Long files with 218 and 278 pages respectively, including thousands of operation rows or many policy records. |
+| `multiple_tables` | `ifta_tax_inquiry_001`, page 1; `loss_run_external_001`, pages 1-2 | Target tables appear alongside support tables, empty tables, summaries, and section totals. |
+| `multi_column` | `mixed_cgl_040_001`, pages 139-150; `multihop_wc_025_001`, pages 95-106 | Material policy provisions are laid out in two-column policy-form pages. |
+| `merged_cells` | `loss_run_external_001`, page 1; `ifta_tax_inquiry_001`, page 1 | Section-spanning rows and wide description/status cells interrupt the tabular structure. |
+| `ocr_condition` | Any PDF with `data/transcripts/ocr_gemini/{sample_id}.md`, for example `loss_run_external_001`, page 1 | The released text input is OCR output from rendered page images, not the HTML text layer. |
+| `long_range_evidence` | `multihop_012_001_crosspage`, pages 4, 36, 56, 57, 76; `mixed_040_001_crosspage`, pages 4, 86, 143, 144, 186 | A front claim row must be joined to driver, policy, cause-code, claimant, and ledger sections far apart in one PDF. |
+| `heterogeneous_record_list` | `multihop_bop_012_001`, pages 26, 48, 94, 127, 142; `mixed_cgl_040_001`, pages 66-73 and 139-150 | One output list mixes locations/classifications, coverage items, forms, endorsements, premiums, and clause records. |
 
 ### Multi-Hop Extensions
 

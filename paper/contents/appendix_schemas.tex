@@ -116,7 +116,7 @@ records & list of objects & required & List of extracted target records using th
 
 \subsection*{A.4 Extraction Prompt Template}
 
-Prompt-based claim multi-hop incident extraction uses the core template shown below. The harness substitutes \texttt{\{schema\_json\}} with the JSON schema for the extraction object and \texttt{\{ocr\_text\}} with the selected transcript.
+Prompt-based claim multi-hop incident extraction uses the core template shown below. The evaluation code substitutes \texttt{\{schema\_json\}} with the JSON schema for the extraction object and \texttt{\{ocr\_text\}} with the selected transcript.
 
 \begingroup
 \small
@@ -146,7 +146,7 @@ Document:
 \end{verbatim}
 \endgroup
 
-For generic operations and policy rows, the agentic harness uses a field contract derived from the ground-truth schema family. The output shape is:
+For generic operations and policy rows, the agentic extraction script uses a field contract derived from the ground-truth schema family. The output shape is:
 
 \begingroup
 \small

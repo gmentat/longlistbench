@@ -17,6 +17,42 @@ The released transcript condition is `ocr`. The current corpus does not ship cle
 
 `data/manifest.json` is the source of truth for sample IDs, artifact paths, target counts, transcript availability, and provenance notes.
 
+## Complexity Stressors
+
+The released documents are not only grouped by config. Each sample also carries a `problems` list that records the modeled complexity stressors:
+
+| Tag | Meaning |
+|---|---|
+| `page_breaks` | Lists or supporting evidence span pages with repeated headers or inherited context. |
+| `multi_row` | Records include wrapped notes, descriptions, clauses, or continuation rows. |
+| `duplicates` | Prior-term, archived, duplicate, or near-duplicate distractor material is present. |
+| `large_doc` | The document is long enough to stress truncation and record-completeness behavior. |
+| `multiple_tables` | Target rows are mixed with summaries, ledgers, schedules, support tables, or empty tables. |
+| `multi_column` | Pages use two-column or form-like layouts that stress reading order. |
+| `merged_cells` | Tables include section-spanning or merged-cell structures. |
+| `ocr_condition` | The released text condition is OCR from rendered page images. |
+| `long_range_evidence` | Fields must be joined from distant sections of one PDF. |
+| `heterogeneous_record_list` | A target list contains several record schemas. |
+
+The authoritative mapping is in `data/manifest.json`; `python benchmarks/build_instance_index.py --input data` projects it into `data/index.*`.
+
+Use the stressor metadata as an audit aid, not as document text. The current PDFs show the stressors through their structure: IFTA mileage packets have page-spanning unit sections and repeated unit headers; external loss runs combine target rows with description/detail rows and summary cards; claim multi-hop packets separate claim rows from policy, driver, claimant, cause-code, and ledger evidence; policy packets mix declarations, schedules, forms, endorsements, premiums, and clause prose in one target list.
+
+Representative pages for visual audit:
+
+| Stressor | PDF/pages | Visible evidence |
+|---|---|---|
+| `page_breaks` | `ifta_mileage_by_vehicle_001`, pages 3-4 | Same unit section spans two pages with repeated unit context. |
+| `multi_row` | `loss_run_external_001`, pages 1-2; `driver_mvr_packet_001`, page 10 | Description/detail rows and driver/MVR detail blocks. |
+| `duplicates` | `loss_run_external_001`, pages 1-2; `multihop_bop_012_001`, page 142 | No-claim/summary rows and archived prior-term distractors. |
+| `large_doc` | `ifta_mileage_by_vehicle_008`, whole PDF; `mixed_cgl_040_001`, whole PDF | 218-page operations packet and 278-page policy packet. |
+| `multiple_tables` | `ifta_tax_inquiry_001`, page 1; `loss_run_external_001`, pages 1-2 | Target tables mixed with support, empty, and summary tables. |
+| `multi_column` | `mixed_cgl_040_001`, pages 139-150; `multihop_wc_025_001`, pages 95-106 | Two-column material-provision pages. |
+| `merged_cells` | `loss_run_external_001`, page 1; `ifta_tax_inquiry_001`, page 1 | Section-spanning and wide description/status cells. |
+| `ocr_condition` | Any PDF plus `data/transcripts/ocr_gemini/{sample_id}.md` | Released text condition is OCR from rendered page images. |
+| `long_range_evidence` | `multihop_012_001_crosspage`, pages 4, 36, 56, 57, 76; `mixed_040_001_crosspage`, pages 4, 86, 143, 144, 186 | Claim rows joined to distant driver, policy, cause-code, claimant, and ledger sections. |
+| `heterogeneous_record_list` | `multihop_bop_012_001`, pages 26, 48, 94, 127, 142; `mixed_cgl_040_001`, pages 66-73 and 139-150 | One extraction list mixes multiple policy record schemas. |
+
 ## Setup
 
 Run these commands from the repository root.
@@ -124,7 +160,7 @@ python benchmarks/evaluate_models.py --models gpt55_oneshot --transcripts ocr
 LLB_AGENT_REASONING_EFFORT=xhigh LLB_AGENT_VERBOSITY=high \
 python benchmarks/evaluate_models.py \
   --models gpt55_agent \
-  --tiers multihop mixed \
+  --tiers claim_multihop policy_packets \
   --transcripts ocr \
   --output-dir benchmarks/results/scratch_gpt55_agent_ocr
 
@@ -180,4 +216,4 @@ python benchmarks/export_hf_dataset.py \
 
 The repository contains synthetic generated artifacts only. Private production PDFs were used as visual layout references during template design, but production documents, names, account numbers, and raw customer data are not included in the repo.
 
-The generator scripts that produced the current production-like templates are intentionally kept outside the repository. The repo ships the dataset artifacts and evaluation harness.
+The generator scripts that produced the current production-like templates are intentionally kept outside the repository. The repo ships the dataset artifacts and evaluation scripts.

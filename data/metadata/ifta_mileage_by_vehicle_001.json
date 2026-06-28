@@ -16,8 +16,8 @@
     "html": "html/ifta_mileage_by_vehicle_001.html",
     "metadata": "metadata/ifta_mileage_by_vehicle_001.json",
     "json_size_bytes": 167015,
-    "pdf_size_bytes": 3321655,
-    "html_size_bytes": 522907,
+    "pdf_size_bytes": 588299,
+    "html_size_bytes": 511013,
     "ocr_md": "transcripts/ocr_gemini/ifta_mileage_by_vehicle_001.md",
     "ocr_size_bytes": 193688
   },
@@ -30,7 +30,12 @@
   "domain": "commercial_insurance_operations",
   "problems": [
     "high_density_long_list",
-    "production_like_layout"
+    "production_like_layout",
+    "ocr_condition",
+    "page_breaks",
+    "large_doc",
+    "multiple_tables",
+    "multi_row"
   ],
   "pages_estimate": 97,
   "pdf_page_count": 97,

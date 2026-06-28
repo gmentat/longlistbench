@@ -10,7 +10,7 @@ Claim-oriented documents use a loss-run incident schema with claim identifiers, 
 Policy-oriented documents use heterogeneous records for locations, coverages, forms, endorsements, exclusions, rating rows, and premium items. A policy packet is the contract document issued by an insurer; it combines declarations, covered locations or classifications, coverage limits and deductibles, rating or premium schedules, required forms, and endorsements that modify the base policy. The released policy packets cover Businessowners Policy (BOP), Workers Compensation (WC), and Commercial General Liability (CGL).
 
 \paragraph{Operations records.}
-The core operations documents contain dense lists from insurance and fleet workflows, including IFTA mileage rows, IFTA return rows, tax inquiry rows, driver records, vehicle schedule rows, and external loss-run rows. These record types are evaluated as generic field-value records rather than forced into the claim incident schema.
+The core operations documents contain dense lists from insurance and trucking workflows, including IFTA mileage rows, IFTA return rows, tax inquiry rows, driver records, vehicle schedule rows, and external loss-run rows. These record types are evaluated as generic field-value records rather than forced into the claim incident schema.
 
 \subsection{Document design and provenance}
 \Cref{fig:generation-pipeline} illustrates the benchmark construction pipeline. Private production PDFs were reviewed to identify recurring document structures, such as portal exports, spreadsheet schedules, carrier loss-run tables, policy declarations, forms, endorsements, and long packet layouts. Those private files are not included in the repository. The released documents use generated names, identifiers, dates, values, and prose, and the repository contains only synthetic artifacts.
@@ -24,17 +24,17 @@ The core operations documents contain dense lists from insurance and fleet workf
 
 The current release prioritizes fewer, larger, more realistic PDFs rather than many small template variants. This choice reflects the intended use case: measuring list-completeness failures at scale. Several PDFs contain more than 1{,}000 target records, and the full corpus contains 32{,}654 target records across 34 PDFs.
 
-\subsection{Template families}
-\Cref{tab:dataset-scale} summarizes the released corpus. The `core operations' group contains production-like layouts with dense repeated rows. The claim and policy multi-hop groups keep one PDF per sample, but required fields are distributed across distant sections.
+\subsection{Document-family inventory}
+\Cref{tab:dataset-scale} summarizes the released corpus by document family. This table is an inventory, not a difficulty scale: the same family can carry several cross-cutting stressors, and stressors are recorded separately in the \texttt{problems} metadata. The `core operations' group contains production-like layouts with dense repeated rows. The claim and policy multi-hop groups keep one PDF per sample, but required fields are distributed across distant sections.
 
-\begin{table}[t]
+\begin{table}[H]
 \centering
 \small
 \caption{Current LongListBench corpus.}
 \label{tab:dataset-scale}
 \begin{tabular}{@{}lrr@{}}
 \toprule
-Template family & PDFs & Target records \\
+Document family & PDFs & Target records \\
 \midrule
 \texttt{ifta\_mileage\_by\_vehicle} & 8 & 17{,}565 \\
 \texttt{ifta\_return\_schedule\_details} & 5 & 4{,}923 \\
@@ -50,6 +50,79 @@ Template family & PDFs & Target records \\
 \texttt{policy\_multihop\_cgl} & 1 & 619 \\
 \midrule
 \textbf{Total} & \textbf{34} & \textbf{32{,}654} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Complexity regimes}
+Each instance carries explicit regime metadata in the manifest and Hugging Face export. The \texttt{complexity\_regime} field records the high-level regime or document family, while the \texttt{problems} field records cross-cutting stressors. This separation is important: the same PDF may be both a large-document case, a multi-table case, an OCR-conditioned case, and a long-range evidence case. We group the current release into three evaluation regimes:
+
+\begin{table}[H]
+\centering
+\small
+\caption{Complexity regimes in the current release.}
+\label{tab:complexity-regimes}
+\begin{tabular}{@{}p{0.26\linewidth}rrp{0.42\linewidth}@{}}
+\toprule
+Regime & PDFs & Records & Main stressors \\
+\midrule
+Core operations & 28 & 31{,}088 & High-density repeated records, production-like tables and exports, OCR preservation, and output completeness. \\
+Claim multi-hop & 3 & 77 & Long-range joins from claim schedules to policy registers, driver rosters, claimant indexes, cause-code appendices, and ledgers. \\
+Policy packets & 3 & 1{,}489 & Heterogeneous policy records across declarations, locations or classifications, forms, material clauses, endorsements, rating schedules, and premium summaries. \\
+\midrule
+\textbf{Total} & \textbf{34} & \textbf{32{,}654} & \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+These regimes are intentionally not a single difficulty ladder. Core operations files primarily test scale and completeness; deterministic parsers may perform well when OCR preserves row boundaries. Claim and policy packets test different complexity: inherited context, distant evidence, mixed layouts, heterogeneous schemas, and distractor sections. Results should therefore be reported by regime rather than only as one aggregate score.
+
+\Cref{tab:complexity-stressors} lists the cross-cutting stressors. The first seven originate from the earlier generator's problem taxonomy. In the current release they are implemented in more production-like layouts rather than as visibly synthetic toggles. For example, page breaks appear as page-spanning sections with repeated headers; duplicate pressure appears mainly as prior-term, archived, or near-duplicate distractor material rather than exact duplicate target rows.
+
+\begin{table}[t]
+\centering
+\small
+\caption{Cross-cutting complexity stressors tracked in release metadata.}
+\label{tab:complexity-stressors}
+\begin{tabular}{@{}p{0.25\linewidth}p{0.67\linewidth}@{}}
+\toprule
+Stressor & What it tests \\
+\midrule
+\path{page_breaks} & Target lists and supporting sections span page boundaries, often with repeated headers or inherited context. \\
+\path{multi_row} & One logical record includes wrapped notes, descriptions, clause prose, or continuation rows. \\
+\path{duplicates} & Duplicate or near-duplicate distractor material, especially prior-term or archive sections that should not be extracted as current targets. \\
+\path{large_doc} & Hundreds to thousands of targets, or enough pages to expose truncation and list-completeness failures. \\
+\path{multiple_tables} & Target rows are mixed with summaries, ledgers, schedules, support tables, or empty/no-claims tables. \\
+\path{multi_column} & Two-column or form-like layouts that stress reading order. \\
+\path{merged_cells} & Merged-cell and section-spanning table structures such as \texttt{colspan} rows. \\
+\path{ocr_condition} & Released text is OCR output from rendered PDF page images. \\
+\path{long_range_evidence} & Required fields are separated by distant pages within the same PDF. \\
+\path{heterogeneous_record_list} & A single output list contains multiple schema families, as in policy packets. \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\Cref{tab:complexity-doc-examples} shows how these labels appear in the released documents. We do not print benchmark labels inside the PDFs; that would make the documents less realistic and could make extraction easier. Instead, the stressors are visible in the layout and content organization, while the exact labels are recorded in sidecar metadata.
+
+\begin{table}[t]
+\centering
+\scriptsize
+\caption{Representative pages for auditing stressors in the rendered documents. Page numbers refer to the released PDFs.}
+\label{tab:complexity-doc-examples}
+\begin{tabular}{@{}p{0.20\linewidth}p{0.34\linewidth}p{0.36\linewidth}@{}}
+\toprule
+Stressor & Example PDF pages & Visible document evidence \\
+\midrule
+\path{page_breaks} & \path{ifta_mileage_by_vehicle_001}, pages 3--4 & One unit section spans two pages with repeated unit context and jurisdiction rows on both pages. \\
+\path{multi_row} & \path{loss_run_external_001}, pages 1--2; \path{driver_mvr_packet_001}, page 10 & Records include description/detail rows and driver or MVR detail blocks. \\
+\path{duplicates} & \path{loss_run_external_001}, pages 1--2; \path{multihop_bop_012_001}, page 142 & Summary, no-claim, archived, or prior-term material creates near-duplicate distractors. \\
+\path{large_doc} & \path{ifta_mileage_by_vehicle_008}, whole PDF; \path{mixed_cgl_040_001}, whole PDF & Long files reach 218 and 278 pages, respectively. \\
+\path{multiple_tables} & \path{ifta_tax_inquiry_001}, page 1; \path{loss_run_external_001}, pages 1--2 & Target tables appear alongside support tables, empty tables, summaries, and section totals. \\
+\path{multi_column} & \path{mixed_cgl_040_001}, pages 139--150; \path{multihop_wc_025_001}, pages 95--106 & Material policy provisions are laid out in two-column policy-form pages. \\
+\path{merged_cells} & \path{loss_run_external_001}, page 1; \path{ifta_tax_inquiry_001}, page 1 & Section-spanning rows and wide description/status cells interrupt regular table structure. \\
+\path{ocr_condition} & Any PDF with its matching OCR file under \path{data/transcripts/ocr_gemini/} & The released text input is OCR output from rendered page images, not the HTML source text. \\
+\path{long_range_evidence} & \path{multihop_012_001_crosspage}, pages 4, 36, 56, 57, 76 & A front claim row must be joined to distant driver, policy, cause-code, claimant, and ledger sections. \\
+\path{heterogeneous_record_list} & \path{multihop_bop_012_001}, pages 26, 48, 94, 127, 142; \path{mixed_cgl_040_001}, pages 66--73 and 139--150 & One output list mixes locations or classifications, coverages, forms, endorsements, premiums, and clause records. \\
 \bottomrule
 \end{tabular}
 \end{table}

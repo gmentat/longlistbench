@@ -30,7 +30,11 @@
   "domain": "commercial_insurance_operations",
   "problems": [
     "high_density_long_list",
-    "production_like_layout"
+    "production_like_layout",
+    "ocr_condition",
+    "page_breaks",
+    "large_doc",
+    "multiple_tables"
   ],
   "pages_estimate": 58,
   "pdf_page_count": 58,

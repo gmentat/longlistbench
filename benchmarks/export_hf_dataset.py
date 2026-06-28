@@ -287,6 +287,34 @@ The dataset contains {total_rows} PDF documents and {total_targets_text} target 
 
 The configs have different intended roles. `core_operations` contains high-density structured reports where deterministic row parsers may perform well and the main stressor is scale, OCR preservation, and output completeness. `claim_multihop` and `policy_packets` are the stronger complex-packet regimes: target records require inherited context, heterogeneous schemas, distant supporting sections, and distractor material.
 
+## Complexity Stressors
+
+LongListBench differs from array-only extraction datasets by explicitly tracking document-complexity stressors. Each row has a `problems` list with the stressors present in that PDF:
+
+| Tag | Meaning |
+|---|---|
+| `page_breaks` | Lists or supporting evidence continue across pages with repeated headers or inherited context. |
+| `multi_row` | Records include wrapped notes, descriptions, clauses, or continuation rows. |
+| `duplicates` | Prior-term, archived, duplicate, or near-duplicate distractor material is present. |
+| `large_doc` | The document is long enough to stress truncation and record-completeness behavior. |
+| `multiple_tables` | Target rows are mixed with summaries, ledgers, schedules, support tables, or empty tables. |
+| `multi_column` | Pages use two-column or form-like layouts that stress reading order. |
+| `merged_cells` | Tables include section-spanning or merged-cell structures. |
+| `ocr_condition` | The released text condition is OCR from rendered page images. |
+| `long_range_evidence` | Fields must be joined from distant sections of one PDF. |
+| `heterogeneous_record_list` | A target list contains several record schemas, especially in policy packets. |
+
+The stressor labels are metadata labels, not text printed inside the PDFs. The PDFs are designed to remain realistic source documents.
+
+The mapping is intended to be visually auditable:
+
+| Family or config | Stressors visible in the document |
+|---|---|
+| `ifta_mileage_by_vehicle` | Page-spanning unit sections, inherited unit headers, and source notes inside jurisdiction rows. |
+| `loss_run_external` | Target rows mixed with description rows, continuation notes, summary cards, no-claims tables, and merged policy-period rows. |
+| `claim_multihop` | Claim schedules separated from policy registers, driver rosters, claimant indexes, cause-code appendices, and ledgers by many pages. |
+| `policy_packets` | Heterogeneous records across declarations, locations or classifications, forms, endorsements, rating or premium pages, and clause prose. |
+
 ## Configs and Data Viewer
 
 | Config | Description | Target field | Documents | Records/doc range | Target records | Page range |
@@ -309,7 +337,7 @@ print(ds)  # each row is one PDF document
 |---|---|---|
 | `document_id` | string | Stable sample identifier, e.g. `ifta_mileage_by_vehicle_001` or `multihop_bop_012_001`. |
 | `domain` | string | `commercial_insurance_operations`, `claims`, or `policy_review`. |
-| `complexity_regime` | string | Template or stress regime, such as `ifta_mileage_by_vehicle`, `loss_run_external`, `multihop`, or `policy_multi_hop`. |
+| `complexity_regime` | string | Template or stress regime, such as `ifta_mileage_by_vehicle`, `loss_run_external`, `claim_crosspage_multihop`, or `policy_multi_hop`. |
 | `difficulty` | string | Historical field retained for compatibility; in this release it stores the template or multi-hop regime. |
 | `document_format` | string | Rendered layout family, currently `production_like_pdf` or `crosspage`. |
 | `num_pages` | int32 | Page count recorded by the generator. |

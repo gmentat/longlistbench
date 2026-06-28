@@ -1,7 +1,7 @@
 {
   "id": "multihop_012_001_crosspage",
   "difficulty": "multihop",
-  "complexity_regime": "multihop",
+  "complexity_regime": "claim_crosspage_multihop",
   "format": "crosspage",
   "domain": "claims",
   "target_record_type": "loss_run_incident",
@@ -13,9 +13,17 @@
   "evidence_pattern": "single_document_long_range_cross_page_join",
   "minimum_gap_pages_between_primary_and_last_evidence": 64,
   "problems": [
+    "coded_values",
     "cross_page_join",
     "long_range_evidence",
-    "coded_values"
+    "distractor_sections",
+    "ocr_condition",
+    "page_breaks",
+    "large_doc",
+    "multiple_tables",
+    "multi_row",
+    "multi_column",
+    "duplicates"
   ],
   "layout_templates": [
     "packet_cover",
@@ -109,8 +117,8 @@
     "html": "html/multihop_012_001_crosspage.html",
     "ocr_md": "transcripts/ocr_gemini/multihop_012_001_crosspage.md",
     "json_size_bytes": 14923,
-    "pdf_size_bytes": 787058,
-    "html_size_bytes": 259635,
+    "pdf_size_bytes": 786889,
+    "html_size_bytes": 259606,
     "ocr_size_bytes": 138256,
     "metadata": "metadata/multihop_012_001_crosspage.json"
   },

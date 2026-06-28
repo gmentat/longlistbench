@@ -1,11 +1,13 @@
 {
-  "built_at": "2026-06-24T15:42:54.294284+00:00",
+  "built_at": "2026-06-26T08:50:26.166921+00:00",
   "dataset_dir": "/Users/anton/d/kay/longlistbench/data",
   "source_metadata": "manifest.json",
   "total_instances": 34,
   "instances": [
     {
       "id": "driver_mvr_packet_001",
+      "complexity_regime": "driver_mvr_request_and_roster",
+      "template_family": "driver_mvr_request_and_roster",
       "difficulty": "driver_mvr_request_and_roster",
       "format": "production_like_pdf",
       "domain": "commercial_insurance_operations",
@@ -14,7 +16,11 @@
       "target_record_type": "driver_record",
       "problems": [
         "high_density_long_list",
-        "production_like_layout"
+        "production_like_layout",
+        "ocr_condition",
+        "page_breaks",
+        "multiple_tables",
+        "multi_row"
       ],
       "num_claims": null,
       "num_policy_items": null,
@@ -42,6 +48,8 @@
     },
     {
       "id": "driver_mvr_packet_002",
+      "complexity_regime": "driver_mvr_request_and_roster",
+      "template_family": "driver_mvr_request_and_roster",
       "difficulty": "driver_mvr_request_and_roster",
       "format": "production_like_pdf",
       "domain": "commercial_insurance_operations",
@@ -50,7 +58,11 @@
       "target_record_type": "driver_record",
       "problems": [
         "high_density_long_list",
-        "production_like_layout"
+        "production_like_layout",
+        "ocr_condition",
+        "page_breaks",
+        "multiple_tables",
+        "multi_row"
       ],
       "num_claims": null,
       "num_policy_items": null,
@@ -78,6 +90,8 @@
     },
     {
       "id": "driver_mvr_packet_003",
+      "complexity_regime": "driver_mvr_request_and_roster",
+      "template_family": "driver_mvr_request_and_roster",
       "difficulty": "driver_mvr_request_and_roster",
       "format": "production_like_pdf",
       "domain": "commercial_insurance_operations",
@@ -86,7 +100,11 @@
       "target_record_type": "driver_record",
       "problems": [
         "high_density_long_list",
-        "production_like_layout"
+        "production_like_layout",
+        "ocr_condition",
+        "page_breaks",
+        "multiple_tables",
+        "multi_row"
       ],
       "num_claims": null,
       "num_policy_items": null,
@@ -114,6 +132,8 @@
     },
     {
       "id": "driver_schedule_sparse_001",
+      "complexity_regime": "driver_schedule_spreadsheet_export",
+      "template_family": "driver_schedule_spreadsheet_export",
       "difficulty": "driver_schedule_spreadsheet_export",
       "format": "production_like_pdf",
       "domain": "commercial_insurance_operations",
@@ -122,7 +142,11 @@
       "target_record_type": "driver_schedule_row",
       "problems": [
         "high_density_long_list",
-        "production_like_layout"
+        "production_like_layout",
+        "ocr_condition",
+        "page_breaks",
+        "large_doc",
+        "multiple_tables"
       ],
       "num_claims": null,
       "num_policy_items": null,
@@ -150,6 +174,8 @@
     },
     {
       "id": "ifta_mileage_by_vehicle_001",
+      "complexity_regime": "ifta_mileage_by_vehicle",
+      "template_family": "ifta_mileage_by_vehicle",
       "difficulty": "ifta_mileage_by_vehicle",
       "format": "production_like_pdf",
       "domain": "commercial_insurance_operations",
@@ -158,7 +184,12 @@
       "target_record_type": "vehicle_state_mileage_row",
       "problems": [
         "high_density_long_list",
-        "production_like_layout"
+        "production_like_layout",
+        "ocr_condition",
+        "page_breaks",
+        "large_doc",
+        "multiple_tables",
+        "multi_row"
       ],
       "num_claims": null,
       "num_policy_items": null,
@@ -174,8 +205,8 @@
         "html_exists": true,
         "ground_truth_exists": true,
         "ocr_md_exists": true,
-        "pdf_size_bytes": 3321655,
-        "html_size_bytes": 522907,
+        "pdf_size_bytes": 588299,
+        "html_size_bytes": 511013,
         "json_size_bytes": 167015,
         "ocr_md_size_bytes": 193688,
         "pdf_pages": 97
@@ -186,6 +217,8 @@
     },
     {
       "id": "ifta_mileage_by_vehicle_002",
+      "complexity_regime": "ifta_mileage_by_vehicle",
+      "template_family": "ifta_mileage_by_vehicle",
       "difficulty": "ifta_mileage_by_vehicle",
       "format": "production_like_pdf",
       "domain": "commercial_insurance_operations",
@@ -194,7 +227,12 @@
       "target_record_type": "vehicle_state_mileage_row",
       "problems": [
         "high_density_long_list",
-        "production_like_layout"
+        "production_like_layout",
+        "ocr_condition",
+        "page_breaks",
+        "large_doc",
+        "multiple_tables",
+        "multi_row"
       ],
       "num_claims": null,
       "num_policy_items": null,
@@ -210,8 +248,8 @@
         "html_exists": true,
         "ground_truth_exists": true,
         "ocr_md_exists": true,
-        "pdf_size_bytes": 6024072,
-        "html_size_bytes": 961006,
+        "pdf_size_bytes": 969746,
+        "html_size_bytes": 938626,
         "json_size_bytes": 308972,
         "ocr_md_size_bytes": 358934,
         "pdf_pages": 182
@@ -222,6 +260,8 @@
     },
     {
       "id": "ifta_mileage_by_vehicle_003",
+      "complexity_regime": "ifta_mileage_by_vehicle",
+      "template_family": "ifta_mileage_by_vehicle",
       "difficulty": "ifta_mileage_by_vehicle",
       "format": "production_like_pdf",
       "domain": "commercial_insurance_operations",
@@ -230,7 +270,12 @@
       "target_record_type": "vehicle_state_mileage_row",
       "problems": [
         "high_density_long_list",
-        "production_like_layout"
+        "production_like_layout",
+        "ocr_condition",
+        "page_breaks",
+        "large_doc",
+        "multiple_tables",
+        "multi_row"
       ],
       "num_claims": null,
       "num_policy_items": null,
@@ -246,8 +291,8 @@
         "html_exists": true,
         "ground_truth_exists": true,
         "ocr_md_exists": true,
-        "pdf_size_bytes": 6186876,
-        "html_size_bytes": 986557,
+        "pdf_size_bytes": 996988,
+        "html_size_bytes": 963431,
         "json_size_bytes": 316038,
         "ocr_md_size_bytes": 367483,
         "pdf_pages": 188
@@ -258,6 +303,8 @@
     },
     {
       "id": "ifta_mileage_by_vehicle_004",
+      "complexity_regime": "ifta_mileage_by_vehicle",
+      "template_family": "ifta_mileage_by_vehicle",
       "difficulty": "ifta_mileage_by_vehicle",
       "format": "production_like_pdf",
       "domain": "commercial_insurance_operations",
@@ -266,7 +313,12 @@
       "target_record_type": "vehicle_state_mileage_row",
       "problems": [
         "high_density_long_list",
-        "production_like_layout"
+        "production_like_layout",
+        "ocr_condition",
+        "page_breaks",
+        "large_doc",
+        "multiple_tables",
+        "multi_row"
       ],
       "num_claims": null,
       "num_policy_items": null,
@@ -282,8 +334,8 @@
         "html_exists": true,
         "ground_truth_exists": true,
         "ocr_md_exists": true,
-        "pdf_size_bytes": 6314819,
-        "html_size_bytes": 1006556,
+        "pdf_size_bytes": 1015593,
+        "html_size_bytes": 982821,
         "json_size_bytes": 322650,
         "ocr_md_size_bytes": 385216,
         "pdf_pages": 193
@@ -294,6 +346,8 @@
     },
     {
       "id": "ifta_mileage_by_vehicle_005",
+      "complexity_regime": "ifta_mileage_by_vehicle",
+      "template_family": "ifta_mileage_by_vehicle",
       "difficulty": "ifta_mileage_by_vehicle",
       "format": "production_like_pdf",
       "domain": "commercial_insurance_operations",
@@ -302,7 +356,12 @@
       "target_record_type": "vehicle_state_mileage_row",
       "problems": [
         "high_density_long_list",
-        "production_like_layout"
+        "production_like_layout",
+        "ocr_condition",
+        "page_breaks",
+        "large_doc",
+        "multiple_tables",
+        "multi_row"
       ],
       "num_claims": null,
       "num_policy_items": null,
@@ -318,8 +377,8 @@
         "html_exists": true,
         "ground_truth_exists": true,
         "ocr_md_exists": true,
-        "pdf_size_bytes": 6622646,
-        "html_size_bytes": 1060936,
+        "pdf_size_bytes": 1046767,
+        "html_size_bytes": 1036592,
         "json_size_bytes": 342692,
         "ocr_md_size_bytes": 393894,
         "pdf_pages": 198
@@ -330,6 +389,8 @@
     },
     {
       "id": "ifta_mileage_by_vehicle_006",
+      "complexity_regime": "ifta_mileage_by_vehicle",
+      "template_family": "ifta_mileage_by_vehicle",
       "difficulty": "ifta_mileage_by_vehicle",
       "format": "production_like_pdf",
       "domain": "commercial_insurance_operations",
@@ -338,7 +399,12 @@
       "target_record_type": "vehicle_state_mileage_row",
       "problems": [
         "high_density_long_list",
-        "production_like_layout"
+        "production_like_layout",
+        "ocr_condition",
+        "page_breaks",
+        "large_doc",
+        "multiple_tables",
+        "multi_row"
       ],
       "num_claims": null,
       "num_policy_items": null,
@@ -354,8 +420,8 @@
         "html_exists": true,
         "ground_truth_exists": true,
         "ocr_md_exists": true,
-        "pdf_size_bytes": 6820485,
-        "html_size_bytes": 1090042,
+        "pdf_size_bytes": 1079911,
+        "html_size_bytes": 1064678,
         "json_size_bytes": 350661,
         "ocr_md_size_bytes": 416454,
         "pdf_pages": 206
@@ -366,6 +432,8 @@
     },
     {
       "id": "ifta_mileage_by_vehicle_007",
+      "complexity_regime": "ifta_mileage_by_vehicle",
+      "template_family": "ifta_mileage_by_vehicle",
       "difficulty": "ifta_mileage_by_vehicle",
       "format": "production_like_pdf",
       "domain": "commercial_insurance_operations",
@@ -374,7 +442,12 @@
       "target_record_type": "vehicle_state_mileage_row",
       "problems": [
         "high_density_long_list",
-        "production_like_layout"
+        "production_like_layout",
+        "ocr_condition",
+        "page_breaks",
+        "large_doc",
+        "multiple_tables",
+        "multi_row"
       ],
       "num_claims": null,
       "num_policy_items": null,
@@ -390,8 +463,8 @@
         "html_exists": true,
         "ground_truth_exists": true,
         "ocr_md_exists": true,
-        "pdf_size_bytes": 6881976,
-        "html_size_bytes": 1098335,
+        "pdf_size_bytes": 1094699,
+        "html_size_bytes": 1072480,
         "json_size_bytes": 352530,
         "ocr_md_size_bytes": 412391,
         "pdf_pages": 210
@@ -402,6 +475,8 @@
     },
     {
       "id": "ifta_mileage_by_vehicle_008",
+      "complexity_regime": "ifta_mileage_by_vehicle",
+      "template_family": "ifta_mileage_by_vehicle",
       "difficulty": "ifta_mileage_by_vehicle",
       "format": "production_like_pdf",
       "domain": "commercial_insurance_operations",
@@ -410,7 +485,12 @@
       "target_record_type": "vehicle_state_mileage_row",
       "problems": [
         "high_density_long_list",
-        "production_like_layout"
+        "production_like_layout",
+        "ocr_condition",
+        "page_breaks",
+        "large_doc",
+        "multiple_tables",
+        "multi_row"
       ],
       "num_claims": null,
       "num_policy_items": null,
@@ -426,8 +506,8 @@
         "html_exists": true,
         "ground_truth_exists": true,
         "ocr_md_exists": true,
-        "pdf_size_bytes": 7203037,
-        "html_size_bytes": 1152156,
+        "pdf_size_bytes": 1133809,
+        "html_size_bytes": 1125300,
         "json_size_bytes": 370369,
         "ocr_md_size_bytes": 438583,
         "pdf_pages": 218
@@ -438,6 +518,8 @@
     },
     {
       "id": "ifta_return_schedule_001",
+      "complexity_regime": "ifta_return_schedule_details",
+      "template_family": "ifta_return_schedule_details",
       "difficulty": "ifta_return_schedule_details",
       "format": "production_like_pdf",
       "domain": "commercial_insurance_operations",
@@ -446,7 +528,11 @@
       "target_record_type": "return_schedule_row",
       "problems": [
         "high_density_long_list",
-        "production_like_layout"
+        "production_like_layout",
+        "ocr_condition",
+        "page_breaks",
+        "large_doc",
+        "multiple_tables"
       ],
       "num_claims": null,
       "num_policy_items": null,
@@ -474,6 +560,8 @@
     },
     {
       "id": "ifta_return_schedule_002",
+      "complexity_regime": "ifta_return_schedule_details",
+      "template_family": "ifta_return_schedule_details",
       "difficulty": "ifta_return_schedule_details",
       "format": "production_like_pdf",
       "domain": "commercial_insurance_operations",
@@ -482,7 +570,11 @@
       "target_record_type": "return_schedule_row",
       "problems": [
         "high_density_long_list",
-        "production_like_layout"
+        "production_like_layout",
+        "ocr_condition",
+        "page_breaks",
+        "large_doc",
+        "multiple_tables"
       ],
       "num_claims": null,
       "num_policy_items": null,
@@ -510,6 +602,8 @@
     },
     {
       "id": "ifta_return_schedule_003",
+      "complexity_regime": "ifta_return_schedule_details",
+      "template_family": "ifta_return_schedule_details",
       "difficulty": "ifta_return_schedule_details",
       "format": "production_like_pdf",
       "domain": "commercial_insurance_operations",
@@ -518,7 +612,11 @@
       "target_record_type": "return_schedule_row",
       "problems": [
         "high_density_long_list",
-        "production_like_layout"
+        "production_like_layout",
+        "ocr_condition",
+        "page_breaks",
+        "large_doc",
+        "multiple_tables"
       ],
       "num_claims": null,
       "num_policy_items": null,
@@ -546,6 +644,8 @@
     },
     {
       "id": "ifta_return_schedule_004",
+      "complexity_regime": "ifta_return_schedule_details",
+      "template_family": "ifta_return_schedule_details",
       "difficulty": "ifta_return_schedule_details",
       "format": "production_like_pdf",
       "domain": "commercial_insurance_operations",
@@ -554,7 +654,11 @@
       "target_record_type": "return_schedule_row",
       "problems": [
         "high_density_long_list",
-        "production_like_layout"
+        "production_like_layout",
+        "ocr_condition",
+        "page_breaks",
+        "large_doc",
+        "multiple_tables"
       ],
       "num_claims": null,
       "num_policy_items": null,
@@ -582,6 +686,8 @@
     },
     {
       "id": "ifta_return_schedule_005",
+      "complexity_regime": "ifta_return_schedule_details",
+      "template_family": "ifta_return_schedule_details",
       "difficulty": "ifta_return_schedule_details",
       "format": "production_like_pdf",
       "domain": "commercial_insurance_operations",
@@ -590,7 +696,11 @@
       "target_record_type": "return_schedule_row",
       "problems": [
         "high_density_long_list",
-        "production_like_layout"
+        "production_like_layout",
+        "ocr_condition",
+        "page_breaks",
+        "large_doc",
+        "multiple_tables"
       ],
       "num_claims": null,
       "num_policy_items": null,
@@ -618,6 +728,8 @@
     },
     {
       "id": "ifta_tax_inquiry_001",
+      "complexity_regime": "ifta_tax_return_inquiry_detail",
+      "template_family": "ifta_tax_return_inquiry_detail",
       "difficulty": "ifta_tax_return_inquiry_detail",
       "format": "production_like_pdf",
       "domain": "commercial_insurance_operations",
@@ -626,7 +738,12 @@
       "target_record_type": "tax_inquiry_record",
       "problems": [
         "high_density_long_list",
-        "production_like_layout"
+        "production_like_layout",
+        "ocr_condition",
+        "page_breaks",
+        "large_doc",
+        "multiple_tables",
+        "merged_cells"
       ],
       "num_claims": null,
       "num_policy_items": null,
@@ -654,6 +771,8 @@
     },
     {
       "id": "ifta_tax_inquiry_002",
+      "complexity_regime": "ifta_tax_return_inquiry_detail",
+      "template_family": "ifta_tax_return_inquiry_detail",
       "difficulty": "ifta_tax_return_inquiry_detail",
       "format": "production_like_pdf",
       "domain": "commercial_insurance_operations",
@@ -662,7 +781,12 @@
       "target_record_type": "tax_inquiry_record",
       "problems": [
         "high_density_long_list",
-        "production_like_layout"
+        "production_like_layout",
+        "ocr_condition",
+        "page_breaks",
+        "large_doc",
+        "multiple_tables",
+        "merged_cells"
       ],
       "num_claims": null,
       "num_policy_items": null,
@@ -690,6 +814,8 @@
     },
     {
       "id": "ifta_tax_summary_001",
+      "complexity_regime": "ifta_tax_return_summary",
+      "template_family": "ifta_tax_return_summary",
       "difficulty": "ifta_tax_return_summary",
       "format": "production_like_pdf",
       "domain": "commercial_insurance_operations",
@@ -698,7 +824,11 @@
       "target_record_type": "tax_return_jurisdiction_row",
       "problems": [
         "high_density_long_list",
-        "production_like_layout"
+        "production_like_layout",
+        "ocr_condition",
+        "page_breaks",
+        "large_doc",
+        "multiple_tables"
       ],
       "num_claims": null,
       "num_policy_items": null,
@@ -726,6 +856,8 @@
     },
     {
       "id": "ifta_tax_summary_002",
+      "complexity_regime": "ifta_tax_return_summary",
+      "template_family": "ifta_tax_return_summary",
       "difficulty": "ifta_tax_return_summary",
       "format": "production_like_pdf",
       "domain": "commercial_insurance_operations",
@@ -734,7 +866,11 @@
       "target_record_type": "tax_return_jurisdiction_row",
       "problems": [
         "high_density_long_list",
-        "production_like_layout"
+        "production_like_layout",
+        "ocr_condition",
+        "page_breaks",
+        "large_doc",
+        "multiple_tables"
       ],
       "num_claims": null,
       "num_policy_items": null,
@@ -762,6 +898,8 @@
     },
     {
       "id": "ifta_tax_summary_003",
+      "complexity_regime": "ifta_tax_return_summary",
+      "template_family": "ifta_tax_return_summary",
       "difficulty": "ifta_tax_return_summary",
       "format": "production_like_pdf",
       "domain": "commercial_insurance_operations",
@@ -770,7 +908,11 @@
       "target_record_type": "tax_return_jurisdiction_row",
       "problems": [
         "high_density_long_list",
-        "production_like_layout"
+        "production_like_layout",
+        "ocr_condition",
+        "page_breaks",
+        "large_doc",
+        "multiple_tables"
       ],
       "num_claims": null,
       "num_policy_items": null,
@@ -798,6 +940,8 @@
     },
     {
       "id": "ifta_tax_summary_004",
+      "complexity_regime": "ifta_tax_return_summary",
+      "template_family": "ifta_tax_return_summary",
       "difficulty": "ifta_tax_return_summary",
       "format": "production_like_pdf",
       "domain": "commercial_insurance_operations",
@@ -806,7 +950,11 @@
       "target_record_type": "tax_return_jurisdiction_row",
       "problems": [
         "high_density_long_list",
-        "production_like_layout"
+        "production_like_layout",
+        "ocr_condition",
+        "page_breaks",
+        "large_doc",
+        "multiple_tables"
       ],
       "num_claims": null,
       "num_policy_items": null,
@@ -834,6 +982,8 @@
     },
     {
       "id": "loss_run_external_001",
+      "complexity_regime": "loss_run_external",
+      "template_family": "loss_run_external",
       "difficulty": "loss_run_external",
       "format": "production_like_pdf",
       "domain": "commercial_insurance_operations",
@@ -843,6 +993,14 @@
       "problems": [
         "high_density_long_list",
         "production_like_layout",
+        "ocr_condition",
+        "page_breaks",
+        "large_doc",
+        "multiple_tables",
+        "merged_cells",
+        "multi_row",
+        "duplicates",
+        "distractor_sections",
         "variable_policy_sections",
         "continuation_notes",
         "summary_distractors",
@@ -874,6 +1032,8 @@
     },
     {
       "id": "loss_run_external_002",
+      "complexity_regime": "loss_run_external",
+      "template_family": "loss_run_external",
       "difficulty": "loss_run_external",
       "format": "production_like_pdf",
       "domain": "commercial_insurance_operations",
@@ -883,6 +1043,14 @@
       "problems": [
         "high_density_long_list",
         "production_like_layout",
+        "ocr_condition",
+        "page_breaks",
+        "large_doc",
+        "multiple_tables",
+        "merged_cells",
+        "multi_row",
+        "duplicates",
+        "distractor_sections",
         "variable_policy_sections",
         "continuation_notes",
         "summary_distractors",
@@ -914,6 +1082,8 @@
     },
     {
       "id": "loss_run_external_003",
+      "complexity_regime": "loss_run_external",
+      "template_family": "loss_run_external",
       "difficulty": "loss_run_external",
       "format": "production_like_pdf",
       "domain": "commercial_insurance_operations",
@@ -923,6 +1093,14 @@
       "problems": [
         "high_density_long_list",
         "production_like_layout",
+        "ocr_condition",
+        "page_breaks",
+        "large_doc",
+        "multiple_tables",
+        "merged_cells",
+        "multi_row",
+        "duplicates",
+        "distractor_sections",
         "variable_policy_sections",
         "continuation_notes",
         "summary_distractors",
@@ -954,6 +1132,8 @@
     },
     {
       "id": "mixed_040_001_crosspage",
+      "complexity_regime": "claim_crosspage_multihop",
+      "template_family": "claim_crosspage_multihop",
       "difficulty": "mixed",
       "format": "crosspage",
       "domain": "claims",
@@ -961,11 +1141,18 @@
       "lob": null,
       "target_record_type": "loss_run_incident",
       "problems": [
+        "mixed_layout",
+        "longer_list",
         "cross_page_join",
         "long_range_evidence",
-        "mixed_layout",
         "distractor_sections",
-        "longer_list"
+        "ocr_condition",
+        "page_breaks",
+        "large_doc",
+        "multiple_tables",
+        "multi_row",
+        "multi_column",
+        "duplicates"
       ],
       "num_claims": 40,
       "num_policy_items": null,
@@ -981,8 +1168,8 @@
         "html_exists": true,
         "ground_truth_exists": true,
         "ocr_md_exists": true,
-        "pdf_size_bytes": 1382950,
-        "html_size_bytes": 706161,
+        "pdf_size_bytes": 1382491,
+        "html_size_bytes": 706075,
         "json_size_bytes": 50540,
         "ocr_md_size_bytes": 389738,
         "pdf_pages": 198
@@ -993,21 +1180,31 @@
     },
     {
       "id": "mixed_cgl_040_001",
+      "complexity_regime": "policy_multi_hop",
+      "template_family": "policy_multihop_cgl",
       "difficulty": "mixed",
       "format": "crosspage",
       "domain": "policy_review",
-      "hf_config": null,
+      "hf_config": "policy_packets",
       "lob": "CGL",
       "target_record_type": "policy_packet_item",
       "problems": [
         "commercial_general_liability",
         "exposure_rating_rows",
         "limits_forms_exclusions",
+        "distractor_forms",
+        "distractor_locations",
         "material_clause_extraction",
         "long_range_evidence",
         "heterogeneous_record_list",
-        "distractor_forms",
-        "distractor_locations"
+        "ocr_condition",
+        "page_breaks",
+        "large_doc",
+        "multiple_tables",
+        "multi_row",
+        "multi_column",
+        "duplicates",
+        "distractor_sections"
       ],
       "num_claims": 619,
       "num_policy_items": 619,
@@ -1023,8 +1220,8 @@
         "html_exists": true,
         "ground_truth_exists": true,
         "ocr_md_exists": true,
-        "pdf_size_bytes": 2005923,
-        "html_size_bytes": 1375584,
+        "pdf_size_bytes": 2007673,
+        "html_size_bytes": 1376002,
         "json_size_bytes": 458192,
         "ocr_md_size_bytes": 1195630,
         "pdf_pages": 278
@@ -1035,6 +1232,8 @@
     },
     {
       "id": "multihop_012_001_crosspage",
+      "complexity_regime": "claim_crosspage_multihop",
+      "template_family": "claim_crosspage_multihop",
       "difficulty": "multihop",
       "format": "crosspage",
       "domain": "claims",
@@ -1042,9 +1241,17 @@
       "lob": null,
       "target_record_type": "loss_run_incident",
       "problems": [
+        "coded_values",
         "cross_page_join",
         "long_range_evidence",
-        "coded_values"
+        "distractor_sections",
+        "ocr_condition",
+        "page_breaks",
+        "large_doc",
+        "multiple_tables",
+        "multi_row",
+        "multi_column",
+        "duplicates"
       ],
       "num_claims": 12,
       "num_policy_items": null,
@@ -1060,8 +1267,8 @@
         "html_exists": true,
         "ground_truth_exists": true,
         "ocr_md_exists": true,
-        "pdf_size_bytes": 787058,
-        "html_size_bytes": 259635,
+        "pdf_size_bytes": 786889,
+        "html_size_bytes": 259606,
         "json_size_bytes": 14923,
         "ocr_md_size_bytes": 138256,
         "pdf_pages": 76
@@ -1072,6 +1279,8 @@
     },
     {
       "id": "multihop_025_001_crosspage",
+      "complexity_regime": "claim_crosspage_multihop",
+      "template_family": "claim_crosspage_multihop",
       "difficulty": "multihop",
       "format": "crosspage",
       "domain": "claims",
@@ -1079,10 +1288,18 @@
       "lob": null,
       "target_record_type": "loss_run_incident",
       "problems": [
+        "claimant_lookup",
+        "many_to_one_policy",
         "cross_page_join",
         "long_range_evidence",
-        "many_to_one_policy",
-        "claimant_lookup"
+        "distractor_sections",
+        "ocr_condition",
+        "page_breaks",
+        "large_doc",
+        "multiple_tables",
+        "multi_row",
+        "multi_column",
+        "duplicates"
       ],
       "num_claims": 25,
       "num_policy_items": null,
@@ -1098,8 +1315,8 @@
         "html_exists": true,
         "ground_truth_exists": true,
         "ocr_md_exists": true,
-        "pdf_size_bytes": 1040855,
-        "html_size_bytes": 448519,
+        "pdf_size_bytes": 1040565,
+        "html_size_bytes": 448466,
         "json_size_bytes": 31323,
         "ocr_md_size_bytes": 246868,
         "pdf_pages": 126
@@ -1110,10 +1327,12 @@
     },
     {
       "id": "multihop_bop_012_001",
+      "complexity_regime": "policy_multi_hop",
+      "template_family": "policy_multihop_bop",
       "difficulty": "multihop",
       "format": "crosspage",
       "domain": "policy_review",
-      "hf_config": null,
+      "hf_config": "policy_packets",
       "lob": "BOP",
       "target_record_type": "policy_packet_item",
       "problems": [
@@ -1122,7 +1341,14 @@
         "form_endorsement_links",
         "material_clause_extraction",
         "long_range_evidence",
-        "heterogeneous_record_list"
+        "heterogeneous_record_list",
+        "ocr_condition",
+        "page_breaks",
+        "large_doc",
+        "multi_row",
+        "multi_column",
+        "duplicates",
+        "distractor_sections"
       ],
       "num_claims": 360,
       "num_policy_items": 360,
@@ -1138,8 +1364,8 @@
         "html_exists": true,
         "ground_truth_exists": true,
         "ocr_md_exists": true,
-        "pdf_size_bytes": 777865,
-        "html_size_bytes": 495559,
+        "pdf_size_bytes": 777876,
+        "html_size_bytes": 495557,
         "json_size_bytes": 239867,
         "ocr_md_size_bytes": 459807,
         "pdf_pages": 142
@@ -1150,10 +1376,12 @@
     },
     {
       "id": "multihop_wc_025_001",
+      "complexity_regime": "policy_multi_hop",
+      "template_family": "policy_multihop_wc",
       "difficulty": "multihop",
       "format": "crosspage",
       "domain": "policy_review",
-      "hf_config": null,
+      "hf_config": "policy_packets",
       "lob": "WC",
       "target_record_type": "policy_packet_item",
       "problems": [
@@ -1162,7 +1390,15 @@
         "experience_mod_and_schedule_rating",
         "material_clause_extraction",
         "long_range_evidence",
-        "heterogeneous_record_list"
+        "heterogeneous_record_list",
+        "ocr_condition",
+        "page_breaks",
+        "large_doc",
+        "multiple_tables",
+        "multi_row",
+        "multi_column",
+        "duplicates",
+        "distractor_sections"
       ],
       "num_claims": 510,
       "num_policy_items": 510,
@@ -1178,8 +1414,8 @@
         "html_exists": true,
         "ground_truth_exists": true,
         "ocr_md_exists": true,
-        "pdf_size_bytes": 1383431,
-        "html_size_bytes": 911008,
+        "pdf_size_bytes": 1384647,
+        "html_size_bytes": 911306,
         "json_size_bytes": 327471,
         "ocr_md_size_bytes": 777435,
         "pdf_pages": 194
@@ -1190,6 +1426,8 @@
     },
     {
       "id": "vehicle_schedule_sparse_001",
+      "complexity_regime": "vehicle_schedule_spreadsheet_export",
+      "template_family": "vehicle_schedule_spreadsheet_export",
       "difficulty": "vehicle_schedule_spreadsheet_export",
       "format": "production_like_pdf",
       "domain": "commercial_insurance_operations",
@@ -1198,7 +1436,11 @@
       "target_record_type": "vehicle_schedule_row",
       "problems": [
         "high_density_long_list",
-        "production_like_layout"
+        "production_like_layout",
+        "ocr_condition",
+        "page_breaks",
+        "large_doc",
+        "multiple_tables"
       ],
       "num_claims": null,
       "num_policy_items": null,
@@ -1226,6 +1468,8 @@
     },
     {
       "id": "vehicle_schedule_sparse_002",
+      "complexity_regime": "vehicle_schedule_spreadsheet_export",
+      "template_family": "vehicle_schedule_spreadsheet_export",
       "difficulty": "vehicle_schedule_spreadsheet_export",
       "format": "production_like_pdf",
       "domain": "commercial_insurance_operations",
@@ -1234,7 +1478,11 @@
       "target_record_type": "vehicle_schedule_row",
       "problems": [
         "high_density_long_list",
-        "production_like_layout"
+        "production_like_layout",
+        "ocr_condition",
+        "page_breaks",
+        "large_doc",
+        "multiple_tables"
       ],
       "num_claims": null,
       "num_policy_items": null,

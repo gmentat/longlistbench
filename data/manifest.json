@@ -42,13 +42,17 @@
       "instances": 3,
       "target_records": 900
     },
-    "mixed": {
+    "policy_multihop_bop": {
+      "instances": 1,
+      "target_records": 360
+    },
+    "policy_multihop_cgl": {
       "instances": 1,
       "target_records": 619
     },
-    "multihop": {
-      "instances": 2,
-      "target_records": 870
+    "policy_multihop_wc": {
+      "instances": 1,
+      "target_records": 510
     },
     "vehicle_schedule_spreadsheet_export": {
       "instances": 2,
@@ -80,7 +84,11 @@
       "source_batch": "batch-01",
       "problems": [
         "high_density_long_list",
-        "production_like_layout"
+        "production_like_layout",
+        "ocr_condition",
+        "page_breaks",
+        "multiple_tables",
+        "multi_row"
       ],
       "files": {
         "ground_truth": "ground_truth/driver_mvr_packet_001.json",
@@ -115,7 +123,11 @@
       "source_batch": "batches-02-05-review-ready",
       "problems": [
         "high_density_long_list",
-        "production_like_layout"
+        "production_like_layout",
+        "ocr_condition",
+        "page_breaks",
+        "multiple_tables",
+        "multi_row"
       ],
       "files": {
         "ground_truth": "ground_truth/driver_mvr_packet_002.json",
@@ -150,7 +162,11 @@
       "source_batch": "batches-02-05-review-ready",
       "problems": [
         "high_density_long_list",
-        "production_like_layout"
+        "production_like_layout",
+        "ocr_condition",
+        "page_breaks",
+        "multiple_tables",
+        "multi_row"
       ],
       "files": {
         "ground_truth": "ground_truth/driver_mvr_packet_003.json",
@@ -185,7 +201,11 @@
       "source_batch": "batches-02-05-review-ready",
       "problems": [
         "high_density_long_list",
-        "production_like_layout"
+        "production_like_layout",
+        "ocr_condition",
+        "page_breaks",
+        "large_doc",
+        "multiple_tables"
       ],
       "files": {
         "ground_truth": "ground_truth/driver_schedule_sparse_001.json",
@@ -220,7 +240,12 @@
       "source_batch": "batch-01",
       "problems": [
         "high_density_long_list",
-        "production_like_layout"
+        "production_like_layout",
+        "ocr_condition",
+        "page_breaks",
+        "large_doc",
+        "multiple_tables",
+        "multi_row"
       ],
       "files": {
         "ground_truth": "ground_truth/ifta_mileage_by_vehicle_001.json",
@@ -228,8 +253,8 @@
         "html": "html/ifta_mileage_by_vehicle_001.html",
         "metadata": "metadata/ifta_mileage_by_vehicle_001.json",
         "json_size_bytes": 167015,
-        "pdf_size_bytes": 3321655,
-        "html_size_bytes": 522907,
+        "pdf_size_bytes": 588299,
+        "html_size_bytes": 511013,
         "ocr_md": "transcripts/ocr_gemini/ifta_mileage_by_vehicle_001.md",
         "ocr_size_bytes": 193688
       },
@@ -255,7 +280,12 @@
       "source_batch": "batches-02-05-review-ready",
       "problems": [
         "high_density_long_list",
-        "production_like_layout"
+        "production_like_layout",
+        "ocr_condition",
+        "page_breaks",
+        "large_doc",
+        "multiple_tables",
+        "multi_row"
       ],
       "files": {
         "ground_truth": "ground_truth/ifta_mileage_by_vehicle_002.json",
@@ -263,8 +293,8 @@
         "html": "html/ifta_mileage_by_vehicle_002.html",
         "metadata": "metadata/ifta_mileage_by_vehicle_002.json",
         "json_size_bytes": 308972,
-        "pdf_size_bytes": 6024072,
-        "html_size_bytes": 961006,
+        "pdf_size_bytes": 969746,
+        "html_size_bytes": 938626,
         "ocr_md": "transcripts/ocr_gemini/ifta_mileage_by_vehicle_002.md",
         "ocr_size_bytes": 358934
       },
@@ -290,7 +320,12 @@
       "source_batch": "batches-02-05-review-ready",
       "problems": [
         "high_density_long_list",
-        "production_like_layout"
+        "production_like_layout",
+        "ocr_condition",
+        "page_breaks",
+        "large_doc",
+        "multiple_tables",
+        "multi_row"
       ],
       "files": {
         "ground_truth": "ground_truth/ifta_mileage_by_vehicle_003.json",
@@ -298,8 +333,8 @@
         "html": "html/ifta_mileage_by_vehicle_003.html",
         "metadata": "metadata/ifta_mileage_by_vehicle_003.json",
         "json_size_bytes": 316038,
-        "pdf_size_bytes": 6186876,
-        "html_size_bytes": 986557,
+        "pdf_size_bytes": 996988,
+        "html_size_bytes": 963431,
         "ocr_md": "transcripts/ocr_gemini/ifta_mileage_by_vehicle_003.md",
         "ocr_size_bytes": 367483
       },
@@ -325,7 +360,12 @@
       "source_batch": "batches-02-05-review-ready",
       "problems": [
         "high_density_long_list",
-        "production_like_layout"
+        "production_like_layout",
+        "ocr_condition",
+        "page_breaks",
+        "large_doc",
+        "multiple_tables",
+        "multi_row"
       ],
       "files": {
         "ground_truth": "ground_truth/ifta_mileage_by_vehicle_004.json",
@@ -333,8 +373,8 @@
         "html": "html/ifta_mileage_by_vehicle_004.html",
         "metadata": "metadata/ifta_mileage_by_vehicle_004.json",
         "json_size_bytes": 322650,
-        "pdf_size_bytes": 6314819,
-        "html_size_bytes": 1006556,
+        "pdf_size_bytes": 1015593,
+        "html_size_bytes": 982821,
         "ocr_md": "transcripts/ocr_gemini/ifta_mileage_by_vehicle_004.md",
         "ocr_size_bytes": 385216
       },
@@ -360,7 +400,12 @@
       "source_batch": "batches-02-05-review-ready",
       "problems": [
         "high_density_long_list",
-        "production_like_layout"
+        "production_like_layout",
+        "ocr_condition",
+        "page_breaks",
+        "large_doc",
+        "multiple_tables",
+        "multi_row"
       ],
       "files": {
         "ground_truth": "ground_truth/ifta_mileage_by_vehicle_005.json",
@@ -368,8 +413,8 @@
         "html": "html/ifta_mileage_by_vehicle_005.html",
         "metadata": "metadata/ifta_mileage_by_vehicle_005.json",
         "json_size_bytes": 342692,
-        "pdf_size_bytes": 6622646,
-        "html_size_bytes": 1060936,
+        "pdf_size_bytes": 1046767,
+        "html_size_bytes": 1036592,
         "ocr_md": "transcripts/ocr_gemini/ifta_mileage_by_vehicle_005.md",
         "ocr_size_bytes": 393894
       },
@@ -395,7 +440,12 @@
       "source_batch": "batches-02-05-review-ready",
       "problems": [
         "high_density_long_list",
-        "production_like_layout"
+        "production_like_layout",
+        "ocr_condition",
+        "page_breaks",
+        "large_doc",
+        "multiple_tables",
+        "multi_row"
       ],
       "files": {
         "ground_truth": "ground_truth/ifta_mileage_by_vehicle_006.json",
@@ -403,8 +453,8 @@
         "html": "html/ifta_mileage_by_vehicle_006.html",
         "metadata": "metadata/ifta_mileage_by_vehicle_006.json",
         "json_size_bytes": 350661,
-        "pdf_size_bytes": 6820485,
-        "html_size_bytes": 1090042,
+        "pdf_size_bytes": 1079911,
+        "html_size_bytes": 1064678,
         "ocr_md": "transcripts/ocr_gemini/ifta_mileage_by_vehicle_006.md",
         "ocr_size_bytes": 416454
       },
@@ -430,7 +480,12 @@
       "source_batch": "batches-02-05-review-ready",
       "problems": [
         "high_density_long_list",
-        "production_like_layout"
+        "production_like_layout",
+        "ocr_condition",
+        "page_breaks",
+        "large_doc",
+        "multiple_tables",
+        "multi_row"
       ],
       "files": {
         "ground_truth": "ground_truth/ifta_mileage_by_vehicle_007.json",
@@ -438,8 +493,8 @@
         "html": "html/ifta_mileage_by_vehicle_007.html",
         "metadata": "metadata/ifta_mileage_by_vehicle_007.json",
         "json_size_bytes": 352530,
-        "pdf_size_bytes": 6881976,
-        "html_size_bytes": 1098335,
+        "pdf_size_bytes": 1094699,
+        "html_size_bytes": 1072480,
         "ocr_md": "transcripts/ocr_gemini/ifta_mileage_by_vehicle_007.md",
         "ocr_size_bytes": 412391
       },
@@ -465,7 +520,12 @@
       "source_batch": "batches-02-05-review-ready",
       "problems": [
         "high_density_long_list",
-        "production_like_layout"
+        "production_like_layout",
+        "ocr_condition",
+        "page_breaks",
+        "large_doc",
+        "multiple_tables",
+        "multi_row"
       ],
       "files": {
         "ground_truth": "ground_truth/ifta_mileage_by_vehicle_008.json",
@@ -473,8 +533,8 @@
         "html": "html/ifta_mileage_by_vehicle_008.html",
         "metadata": "metadata/ifta_mileage_by_vehicle_008.json",
         "json_size_bytes": 370369,
-        "pdf_size_bytes": 7203037,
-        "html_size_bytes": 1152156,
+        "pdf_size_bytes": 1133809,
+        "html_size_bytes": 1125300,
         "ocr_md": "transcripts/ocr_gemini/ifta_mileage_by_vehicle_008.md",
         "ocr_size_bytes": 438583
       },
@@ -500,7 +560,11 @@
       "source_batch": "batch-01",
       "problems": [
         "high_density_long_list",
-        "production_like_layout"
+        "production_like_layout",
+        "ocr_condition",
+        "page_breaks",
+        "large_doc",
+        "multiple_tables"
       ],
       "files": {
         "ground_truth": "ground_truth/ifta_return_schedule_001.json",
@@ -535,7 +599,11 @@
       "source_batch": "batches-02-05-review-ready",
       "problems": [
         "high_density_long_list",
-        "production_like_layout"
+        "production_like_layout",
+        "ocr_condition",
+        "page_breaks",
+        "large_doc",
+        "multiple_tables"
       ],
       "files": {
         "ground_truth": "ground_truth/ifta_return_schedule_002.json",
@@ -570,7 +638,11 @@
       "source_batch": "batches-02-05-review-ready",
       "problems": [
         "high_density_long_list",
-        "production_like_layout"
+        "production_like_layout",
+        "ocr_condition",
+        "page_breaks",
+        "large_doc",
+        "multiple_tables"
       ],
       "files": {
         "ground_truth": "ground_truth/ifta_return_schedule_003.json",
@@ -605,7 +677,11 @@
       "source_batch": "batches-02-05-review-ready",
       "problems": [
         "high_density_long_list",
-        "production_like_layout"
+        "production_like_layout",
+        "ocr_condition",
+        "page_breaks",
+        "large_doc",
+        "multiple_tables"
       ],
       "files": {
         "ground_truth": "ground_truth/ifta_return_schedule_004.json",
@@ -640,7 +716,11 @@
       "source_batch": "batches-02-05-review-ready",
       "problems": [
         "high_density_long_list",
-        "production_like_layout"
+        "production_like_layout",
+        "ocr_condition",
+        "page_breaks",
+        "large_doc",
+        "multiple_tables"
       ],
       "files": {
         "ground_truth": "ground_truth/ifta_return_schedule_005.json",
@@ -675,7 +755,12 @@
       "source_batch": "batches-02-05-review-ready",
       "problems": [
         "high_density_long_list",
-        "production_like_layout"
+        "production_like_layout",
+        "ocr_condition",
+        "page_breaks",
+        "large_doc",
+        "multiple_tables",
+        "merged_cells"
       ],
       "files": {
         "ground_truth": "ground_truth/ifta_tax_inquiry_001.json",
@@ -710,7 +795,12 @@
       "source_batch": "batches-02-05-review-ready",
       "problems": [
         "high_density_long_list",
-        "production_like_layout"
+        "production_like_layout",
+        "ocr_condition",
+        "page_breaks",
+        "large_doc",
+        "multiple_tables",
+        "merged_cells"
       ],
       "files": {
         "ground_truth": "ground_truth/ifta_tax_inquiry_002.json",
@@ -745,7 +835,11 @@
       "source_batch": "batches-02-05-review-ready",
       "problems": [
         "high_density_long_list",
-        "production_like_layout"
+        "production_like_layout",
+        "ocr_condition",
+        "page_breaks",
+        "large_doc",
+        "multiple_tables"
       ],
       "files": {
         "ground_truth": "ground_truth/ifta_tax_summary_001.json",
@@ -780,7 +874,11 @@
       "source_batch": "batches-02-05-review-ready",
       "problems": [
         "high_density_long_list",
-        "production_like_layout"
+        "production_like_layout",
+        "ocr_condition",
+        "page_breaks",
+        "large_doc",
+        "multiple_tables"
       ],
       "files": {
         "ground_truth": "ground_truth/ifta_tax_summary_002.json",
@@ -815,7 +913,11 @@
       "source_batch": "batches-02-05-review-ready",
       "problems": [
         "high_density_long_list",
-        "production_like_layout"
+        "production_like_layout",
+        "ocr_condition",
+        "page_breaks",
+        "large_doc",
+        "multiple_tables"
       ],
       "files": {
         "ground_truth": "ground_truth/ifta_tax_summary_003.json",
@@ -850,7 +952,11 @@
       "source_batch": "batches-02-05-review-ready",
       "problems": [
         "high_density_long_list",
-        "production_like_layout"
+        "production_like_layout",
+        "ocr_condition",
+        "page_breaks",
+        "large_doc",
+        "multiple_tables"
       ],
       "files": {
         "ground_truth": "ground_truth/ifta_tax_summary_004.json",
@@ -907,6 +1013,14 @@
       "problems": [
         "high_density_long_list",
         "production_like_layout",
+        "ocr_condition",
+        "page_breaks",
+        "large_doc",
+        "multiple_tables",
+        "merged_cells",
+        "multi_row",
+        "duplicates",
+        "distractor_sections",
         "variable_policy_sections",
         "continuation_notes",
         "summary_distractors",
@@ -953,6 +1067,14 @@
       "problems": [
         "high_density_long_list",
         "production_like_layout",
+        "ocr_condition",
+        "page_breaks",
+        "large_doc",
+        "multiple_tables",
+        "merged_cells",
+        "multi_row",
+        "duplicates",
+        "distractor_sections",
         "variable_policy_sections",
         "continuation_notes",
         "summary_distractors",
@@ -999,6 +1121,14 @@
       "problems": [
         "high_density_long_list",
         "production_like_layout",
+        "ocr_condition",
+        "page_breaks",
+        "large_doc",
+        "multiple_tables",
+        "merged_cells",
+        "multi_row",
+        "duplicates",
+        "distractor_sections",
         "variable_policy_sections",
         "continuation_notes",
         "summary_distractors",
@@ -1015,7 +1145,7 @@
     {
       "id": "mixed_040_001_crosspage",
       "difficulty": "mixed",
-      "complexity_regime": "mixed",
+      "complexity_regime": "claim_crosspage_multihop",
       "format": "crosspage",
       "domain": "claims",
       "target_record_type": "loss_run_incident",
@@ -1027,11 +1157,18 @@
       "evidence_pattern": "single_document_long_range_cross_page_join",
       "minimum_gap_pages_between_primary_and_last_evidence": 172,
       "problems": [
+        "mixed_layout",
+        "longer_list",
         "cross_page_join",
         "long_range_evidence",
-        "mixed_layout",
         "distractor_sections",
-        "longer_list"
+        "ocr_condition",
+        "page_breaks",
+        "large_doc",
+        "multiple_tables",
+        "multi_row",
+        "multi_column",
+        "duplicates"
       ],
       "layout_templates": [
         "packet_cover",
@@ -1127,8 +1264,8 @@
         "html": "html/mixed_040_001_crosspage.html",
         "ocr_md": "transcripts/ocr_gemini/mixed_040_001_crosspage.md",
         "json_size_bytes": 50540,
-        "pdf_size_bytes": 1382950,
-        "html_size_bytes": 706161,
+        "pdf_size_bytes": 1382491,
+        "html_size_bytes": 706075,
         "ocr_size_bytes": 389738,
         "metadata": "metadata/mixed_040_001_crosspage.json"
       },
@@ -1142,9 +1279,10 @@
     {
       "id": "mixed_cgl_040_001",
       "difficulty": "mixed",
-      "complexity_regime": "mixed",
+      "complexity_regime": "policy_multi_hop",
       "format": "crosspage",
       "domain": "policy_review",
+      "hf_config": "policy_packets",
       "lob": "CGL",
       "target_record_type": "policy_packet_item",
       "target_record_types": [
@@ -1202,11 +1340,19 @@
         "commercial_general_liability",
         "exposure_rating_rows",
         "limits_forms_exclusions",
+        "distractor_forms",
+        "distractor_locations",
         "material_clause_extraction",
         "long_range_evidence",
         "heterogeneous_record_list",
-        "distractor_forms",
-        "distractor_locations"
+        "ocr_condition",
+        "page_breaks",
+        "large_doc",
+        "multiple_tables",
+        "multi_row",
+        "multi_column",
+        "duplicates",
+        "distractor_sections"
       ],
       "layout_templates": [
         "declarations",
@@ -1332,18 +1478,20 @@
         "html": "html/mixed_cgl_040_001.html",
         "ocr_md": "transcripts/ocr_gemini/mixed_cgl_040_001.md",
         "json_size_bytes": 458192,
-        "pdf_size_bytes": 2005923,
-        "html_size_bytes": 1375584,
-        "ocr_size_bytes": 1098593
+        "pdf_size_bytes": 2007673,
+        "html_size_bytes": 1376002,
+        "ocr_size_bytes": 1195630,
+        "metadata": "metadata/mixed_cgl_040_001.json"
       },
       "transcripts_available": [
         "ocr"
-      ]
+      ],
+      "template": "policy_multihop_cgl"
     },
     {
       "id": "multihop_012_001_crosspage",
       "difficulty": "multihop",
-      "complexity_regime": "multihop",
+      "complexity_regime": "claim_crosspage_multihop",
       "format": "crosspage",
       "domain": "claims",
       "target_record_type": "loss_run_incident",
@@ -1355,9 +1503,17 @@
       "evidence_pattern": "single_document_long_range_cross_page_join",
       "minimum_gap_pages_between_primary_and_last_evidence": 64,
       "problems": [
+        "coded_values",
         "cross_page_join",
         "long_range_evidence",
-        "coded_values"
+        "distractor_sections",
+        "ocr_condition",
+        "page_breaks",
+        "large_doc",
+        "multiple_tables",
+        "multi_row",
+        "multi_column",
+        "duplicates"
       ],
       "layout_templates": [
         "packet_cover",
@@ -1451,8 +1607,8 @@
         "html": "html/multihop_012_001_crosspage.html",
         "ocr_md": "transcripts/ocr_gemini/multihop_012_001_crosspage.md",
         "json_size_bytes": 14923,
-        "pdf_size_bytes": 787058,
-        "html_size_bytes": 259635,
+        "pdf_size_bytes": 786889,
+        "html_size_bytes": 259606,
         "ocr_size_bytes": 138256,
         "metadata": "metadata/multihop_012_001_crosspage.json"
       },
@@ -1466,7 +1622,7 @@
     {
       "id": "multihop_025_001_crosspage",
       "difficulty": "multihop",
-      "complexity_regime": "multihop",
+      "complexity_regime": "claim_crosspage_multihop",
       "format": "crosspage",
       "domain": "claims",
       "target_record_type": "loss_run_incident",
@@ -1478,10 +1634,18 @@
       "evidence_pattern": "single_document_long_range_cross_page_join",
       "minimum_gap_pages_between_primary_and_last_evidence": 114,
       "problems": [
+        "claimant_lookup",
+        "many_to_one_policy",
         "cross_page_join",
         "long_range_evidence",
-        "many_to_one_policy",
-        "claimant_lookup"
+        "distractor_sections",
+        "ocr_condition",
+        "page_breaks",
+        "large_doc",
+        "multiple_tables",
+        "multi_row",
+        "multi_column",
+        "duplicates"
       ],
       "layout_templates": [
         "packet_cover",
@@ -1575,8 +1739,8 @@
         "html": "html/multihop_025_001_crosspage.html",
         "ocr_md": "transcripts/ocr_gemini/multihop_025_001_crosspage.md",
         "json_size_bytes": 31323,
-        "pdf_size_bytes": 1040855,
-        "html_size_bytes": 448519,
+        "pdf_size_bytes": 1040565,
+        "html_size_bytes": 448466,
         "ocr_size_bytes": 246868,
         "metadata": "metadata/multihop_025_001_crosspage.json"
       },
@@ -1593,6 +1757,7 @@
       "complexity_regime": "policy_multi_hop",
       "format": "crosspage",
       "domain": "policy_review",
+      "hf_config": "policy_packets",
       "lob": "BOP",
       "target_record_type": "policy_packet_item",
       "target_record_types": [
@@ -1648,7 +1813,14 @@
         "form_endorsement_links",
         "material_clause_extraction",
         "long_range_evidence",
-        "heterogeneous_record_list"
+        "heterogeneous_record_list",
+        "ocr_condition",
+        "page_breaks",
+        "large_doc",
+        "multi_row",
+        "multi_column",
+        "duplicates",
+        "distractor_sections"
       ],
       "layout_templates": [
         "declarations",
@@ -1770,13 +1942,15 @@
         "html": "html/multihop_bop_012_001.html",
         "ocr_md": "transcripts/ocr_gemini/multihop_bop_012_001.md",
         "json_size_bytes": 239867,
-        "pdf_size_bytes": 777865,
-        "html_size_bytes": 495559,
-        "ocr_size_bytes": 462353
+        "pdf_size_bytes": 777876,
+        "html_size_bytes": 495557,
+        "ocr_size_bytes": 459807,
+        "metadata": "metadata/multihop_bop_012_001.json"
       },
       "transcripts_available": [
         "ocr"
-      ]
+      ],
+      "template": "policy_multihop_bop"
     },
     {
       "id": "multihop_wc_025_001",
@@ -1784,6 +1958,7 @@
       "complexity_regime": "policy_multi_hop",
       "format": "crosspage",
       "domain": "policy_review",
+      "hf_config": "policy_packets",
       "lob": "WC",
       "target_record_type": "policy_packet_item",
       "target_record_types": [
@@ -1841,7 +2016,15 @@
         "experience_mod_and_schedule_rating",
         "material_clause_extraction",
         "long_range_evidence",
-        "heterogeneous_record_list"
+        "heterogeneous_record_list",
+        "ocr_condition",
+        "page_breaks",
+        "large_doc",
+        "multiple_tables",
+        "multi_row",
+        "multi_column",
+        "duplicates",
+        "distractor_sections"
       ],
       "layout_templates": [
         "declarations",
@@ -1965,13 +2148,15 @@
         "html": "html/multihop_wc_025_001.html",
         "ocr_md": "transcripts/ocr_gemini/multihop_wc_025_001.md",
         "json_size_bytes": 327471,
-        "pdf_size_bytes": 1383431,
-        "html_size_bytes": 911008,
-        "ocr_size_bytes": 708084
+        "pdf_size_bytes": 1384647,
+        "html_size_bytes": 911306,
+        "ocr_size_bytes": 777435,
+        "metadata": "metadata/multihop_wc_025_001.json"
       },
       "transcripts_available": [
         "ocr"
-      ]
+      ],
+      "template": "policy_multihop_wc"
     },
     {
       "id": "vehicle_schedule_sparse_001",
@@ -1984,7 +2169,11 @@
       "source_batch": "batches-02-05-review-ready",
       "problems": [
         "high_density_long_list",
-        "production_like_layout"
+        "production_like_layout",
+        "ocr_condition",
+        "page_breaks",
+        "large_doc",
+        "multiple_tables"
       ],
       "files": {
         "ground_truth": "ground_truth/vehicle_schedule_sparse_001.json",
@@ -2019,7 +2208,11 @@
       "source_batch": "batches-02-05-review-ready",
       "problems": [
         "high_density_long_list",
-        "production_like_layout"
+        "production_like_layout",
+        "ocr_condition",
+        "page_breaks",
+        "large_doc",
+        "multiple_tables"
       ],
       "files": {
         "ground_truth": "ground_truth/vehicle_schedule_sparse_002.json",
@@ -2049,6 +2242,7 @@
   "total_claim_records": 77,
   "total_policy_records": 1489,
   "complexity_regimes": [
+    "claim_crosspage_multihop",
     "driver_mvr_request_and_roster",
     "driver_schedule_spreadsheet_export",
     "ifta_mileage_by_vehicle",
@@ -2056,10 +2250,57 @@
     "ifta_tax_return_inquiry_detail",
     "ifta_tax_return_summary",
     "loss_run_external",
-    "mixed",
-    "multihop",
     "policy_multi_hop",
     "vehicle_schedule_spreadsheet_export"
   ],
-  "total_documents": 34
+  "total_documents": 34,
+  "complexity_stressors": {
+    "page_breaks": "Target lists or supporting sections continue across page boundaries, often with repeated headers or inherited context.",
+    "multi_row": "One logical record can include wrapped notes, descriptions, source notes, clause prose, or continuation rows rather than a single flat row.",
+    "duplicates": "Duplicate or near-duplicate distractor material appears in support sections. Version 2.0 emphasizes prior-term, archive, summary-card, and repeated-support distractors rather than exact duplicate target rows.",
+    "large_doc": "Documents contain hundreds to thousands of target records, or enough pages to expose truncation and list-completeness failures.",
+    "multiple_tables": "Target records are mixed with summaries, ledgers, schedules, support tables, or empty/no-claims tables.",
+    "multi_column": "Some pages use two-column or form-like layouts that stress reading order.",
+    "merged_cells": "Tables use merged cells, section-spanning rows, or colspan/rowspan-style layout structure.",
+    "ocr_condition": "Released transcripts are OCR output from rendered PDF page images.",
+    "long_range_evidence": "A target record may require joining evidence from distant sections of the same PDF.",
+    "heterogeneous_record_list": "A single output list may contain several record types with different fields."
+  },
+  "problem_tags": [
+    "businessowners_policy",
+    "claimant_lookup",
+    "class_code_payroll_rating",
+    "coded_values",
+    "commercial_general_liability",
+    "continuation_notes",
+    "cross_page_join",
+    "distractor_forms",
+    "distractor_locations",
+    "distractor_sections",
+    "duplicates",
+    "experience_mod_and_schedule_rating",
+    "exposure_rating_rows",
+    "form_endorsement_links",
+    "heterogeneous_record_list",
+    "high_density_long_list",
+    "large_doc",
+    "limits_forms_exclusions",
+    "location_scoped_coverage",
+    "long_range_evidence",
+    "longer_list",
+    "many_to_one_policy",
+    "material_clause_extraction",
+    "merged_cells",
+    "mixed_layout",
+    "multi_column",
+    "multi_row",
+    "multiple_tables",
+    "ocr_condition",
+    "page_breaks",
+    "production_like_layout",
+    "sparse_driver_fields",
+    "summary_distractors",
+    "variable_policy_sections",
+    "workers_compensation_policy"
+  ]
 }

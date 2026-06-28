@@ -4,6 +4,7 @@
   "complexity_regime": "policy_multi_hop",
   "format": "crosspage",
   "domain": "policy_review",
+  "hf_config": "policy_packets",
   "lob": "WC",
   "target_record_type": "policy_packet_item",
   "target_record_types": [
@@ -61,7 +62,15 @@
     "experience_mod_and_schedule_rating",
     "material_clause_extraction",
     "long_range_evidence",
-    "heterogeneous_record_list"
+    "heterogeneous_record_list",
+    "ocr_condition",
+    "page_breaks",
+    "large_doc",
+    "multiple_tables",
+    "multi_row",
+    "multi_column",
+    "duplicates",
+    "distractor_sections"
   ],
   "layout_templates": [
     "declarations",
@@ -185,11 +194,13 @@
     "html": "html/multihop_wc_025_001.html",
     "ocr_md": "transcripts/ocr_gemini/multihop_wc_025_001.md",
     "json_size_bytes": 327471,
-    "pdf_size_bytes": 1383431,
-    "html_size_bytes": 911008,
-    "ocr_size_bytes": 708084
+    "pdf_size_bytes": 1384647,
+    "html_size_bytes": 911306,
+    "ocr_size_bytes": 777435,
+    "metadata": "metadata/multihop_wc_025_001.json"
   },
   "transcripts_available": [
     "ocr"
-  ]
+  ],
+  "template": "policy_multihop_wc"
 }

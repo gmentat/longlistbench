@@ -4,6 +4,7 @@
   "complexity_regime": "policy_multi_hop",
   "format": "crosspage",
   "domain": "policy_review",
+  "hf_config": "policy_packets",
   "lob": "BOP",
   "target_record_type": "policy_packet_item",
   "target_record_types": [
@@ -59,7 +60,14 @@
     "form_endorsement_links",
     "material_clause_extraction",
     "long_range_evidence",
-    "heterogeneous_record_list"
+    "heterogeneous_record_list",
+    "ocr_condition",
+    "page_breaks",
+    "large_doc",
+    "multi_row",
+    "multi_column",
+    "duplicates",
+    "distractor_sections"
   ],
   "layout_templates": [
     "declarations",
@@ -181,11 +189,13 @@
     "html": "html/multihop_bop_012_001.html",
     "ocr_md": "transcripts/ocr_gemini/multihop_bop_012_001.md",
     "json_size_bytes": 239867,
-    "pdf_size_bytes": 777865,
-    "html_size_bytes": 495559,
-    "ocr_size_bytes": 462353
+    "pdf_size_bytes": 777876,
+    "html_size_bytes": 495557,
+    "ocr_size_bytes": 459807,
+    "metadata": "metadata/multihop_bop_012_001.json"
   },
   "transcripts_available": [
     "ocr"
-  ]
+  ],
+  "template": "policy_multihop_bop"
 }
