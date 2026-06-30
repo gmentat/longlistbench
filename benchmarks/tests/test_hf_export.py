@@ -122,8 +122,8 @@ class HuggingFaceExportTests(unittest.TestCase):
     def test_dataset_card_lists_hf_config_paths(self):
         summary = {
             "core_operations": {
-                "rows": 28,
-                "targets": 31088,
+                "rows": 30,
+                "targets": 31884,
                 "min_targets": 260,
                 "max_targets": 2571,
                 "min_pages": 15,
@@ -166,10 +166,10 @@ class HuggingFaceExportTests(unittest.TestCase):
         self.assertIn("evaluate_record_extraction", card)
         self.assertIn("schemas/policy_packet_item.schema.json", card)
         self.assertIn("schemas/loss_run_claim_row.schema.json", card)
-        self.assertNotIn("schemas/policy_schedule_record.schema.json", card)
+        self.assertIn("schemas/ifta_multisection_jurisdiction_row.schema.json", card)
         self.assertIn("@misc{fedoruk2026longlistbench", card)
         self.assertIn("| `policy_packets` |", card)
-        self.assertIn("The dataset contains 34 PDF documents and 32,654 target records.", card)
+        self.assertIn("The dataset contains 36 PDF documents and 33,450 target records.", card)
 
 
 if __name__ == "__main__":

@@ -19,7 +19,7 @@
     "pdf_size_bytes": 241682,
     "html_size_bytes": 236812,
     "ocr_md": "transcripts/ocr_gemini/ifta_return_schedule_001.md",
-    "ocr_size_bytes": 64677
+    "ocr_size_bytes": 125901
   },
   "transcripts_available": [
     "ocr"
@@ -34,12 +34,25 @@
     "ocr_condition",
     "page_breaks",
     "large_doc",
-    "multiple_tables"
+    "multiple_tables",
+    "layout_randomization",
+    "inherited_context",
+    "split_records",
+    "non_target_rows"
   ],
-  "pages_estimate": 33,
-  "pdf_page_count": 33,
+  "pages_estimate": 72,
+  "pdf_page_count": 72,
   "dataset_version": "2.0.0",
   "hf_config": "core_operations",
   "document_count": 1,
-  "evidence_pattern": "single_document"
+  "evidence_pattern": "single_document",
+  "pdf_size_bytes": 386861,
+  "html_size_bytes": 215584,
+  "layout_revision": {
+    "date": "2026-06-28T09:18:30.846734+00:00",
+    "purpose": "reduce deterministic parser friendliness with production-like layout variation",
+    "ocr_status": "regenerated_from_current_pdf",
+    "ocr_regenerated_at": "2026-06-28T21:44:24.950682+00:00"
+  },
+  "ocr_md_size_bytes": 125901
 }

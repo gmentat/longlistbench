@@ -19,7 +19,7 @@
     "pdf_size_bytes": 184722,
     "html_size_bytes": 59033,
     "ocr_md": "transcripts/ocr_gemini/ifta_tax_inquiry_001.md",
-    "ocr_size_bytes": 30824
+    "ocr_size_bytes": 44541
   },
   "transcripts_available": [
     "ocr"
@@ -35,12 +35,25 @@
     "page_breaks",
     "large_doc",
     "multiple_tables",
-    "merged_cells"
+    "merged_cells",
+    "layout_randomization",
+    "inherited_context",
+    "split_records",
+    "non_target_rows"
   ],
-  "pages_estimate": 17,
-  "pdf_page_count": 17,
+  "pages_estimate": 29,
+  "pdf_page_count": 29,
   "dataset_version": "2.0.0",
   "hf_config": "core_operations",
   "document_count": 1,
-  "evidence_pattern": "single_document"
+  "evidence_pattern": "single_document",
+  "pdf_size_bytes": 222722,
+  "html_size_bytes": 84423,
+  "layout_revision": {
+    "date": "2026-06-28T09:33:22.772287+00:00",
+    "purpose": "reduce deterministic parser friendliness with production-like layout variation",
+    "ocr_status": "regenerated_from_current_pdf",
+    "ocr_regenerated_at": "2026-06-28T21:44:24.950682+00:00"
+  },
+  "ocr_md_size_bytes": 44541
 }

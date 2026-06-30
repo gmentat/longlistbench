@@ -53,8 +53,8 @@
   "num_policy_items": 619,
   "num_primary_policy_items": 72,
   "num_target_records": 619,
-  "pages_estimate": 278,
-  "pdf_page_count": 278,
+  "pages_estimate": 316,
+  "pdf_page_count": 316,
   "document_count": 1,
   "evidence_pattern": "single_document_policy_packet_long_range_join",
   "minimum_gap_pages_between_primary_and_last_evidence": 174,
@@ -74,7 +74,11 @@
     "multi_row",
     "multi_column",
     "duplicates",
-    "distractor_sections"
+    "distractor_sections",
+    "natural_long_range_join",
+    "inherited_context",
+    "split_records",
+    "non_target_rows"
   ],
   "layout_templates": [
     "declarations",
@@ -202,11 +206,20 @@
     "json_size_bytes": 458192,
     "pdf_size_bytes": 2007673,
     "html_size_bytes": 1376002,
-    "ocr_size_bytes": 1195630,
+    "ocr_size_bytes": 807375,
     "metadata": "metadata/mixed_cgl_040_001.json"
   },
   "transcripts_available": [
     "ocr"
   ],
-  "template": "policy_multihop_cgl"
+  "template": "policy_multihop_cgl",
+  "pdf_size_bytes": 1461026,
+  "html_size_bytes": 1169180,
+  "layout_revision": {
+    "date": "2026-06-28T09:38:55.491297+00:00",
+    "purpose": "reduce deterministic parser friendliness with production-like layout variation",
+    "ocr_status": "regenerated_from_current_pdf",
+    "ocr_regenerated_at": "2026-06-28T21:44:24.950682+00:00"
+  },
+  "ocr_md_size_bytes": 807375
 }

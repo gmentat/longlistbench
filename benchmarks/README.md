@@ -8,10 +8,10 @@ The current `data/` release contains:
 
 | Split/config | PDFs | Target records | Notes |
 |---|---:|---:|---|
-| `core_operations` | 28 | 31,088 | Production-like IFTA, driver/MVR, vehicle schedule, and loss-run layouts. |
+| `core_operations` | 30 | 31,884 | Production-like IFTA, driver/MVR, vehicle schedule, and loss-run layouts. |
 | `claim_multihop` | 3 | 77 | Long claim PDFs requiring cross-page joins. |
 | `policy_packets` | 3 | 1,489 | Long BOP, WC, and CGL policy packets requiring cross-page extraction. |
-| **Total** | **34** | **32,654** | Every PDF has OCR and JSON ground truth. |
+| **Total** | **36** | **33,450** | Every PDF has OCR and JSON ground truth. |
 
 The released transcript condition is `ocr`. The current corpus does not ship clean structural transcripts.
 
@@ -31,6 +31,9 @@ The released documents are not only grouped by config. Each sample also carries 
 | `multi_column` | Pages use two-column or form-like layouts that stress reading order. |
 | `merged_cells` | Tables include section-spanning or merged-cell structures. |
 | `ocr_condition` | The released text condition is OCR from rendered page images. |
+| `ocr_layout_condition` | OCR preserves visual spacing and reading order instead of converting tables into clean CSV-style rows. |
+| `cross_section_join` | Target records must be assembled from separately labeled sections. |
+| `repeated_keys` | Common keys repeat across sections or returns, so a key alone is insufficient for matching. |
 | `long_range_evidence` | Fields must be joined from distant sections of one PDF. |
 | `heterogeneous_record_list` | A target list contains several record schemas. |
 
@@ -137,7 +140,7 @@ Validate OCR support against the released ground truth:
 python benchmarks/validate_ocr_vs_golden.py --claims-dir data
 ```
 
-The current release validates all 34 PDFs with 100.0% average identifier coverage, 99.9% tracked identifier-field support, and 39 target records with at least one tracked identifier missing from OCR.
+The current release validates all 36 PDFs with 100.0% average identifier coverage, 99.9% tracked identifier-field support, and 39 target records with at least one tracked identifier missing from OCR.
 
 If using OpenRouter for Gemini OCR:
 
@@ -173,9 +176,13 @@ Results are written to the `--output-dir`:
 - `evaluation_report.json` - full metrics data.
 - `evaluation_report.md` - human-readable summary.
 
+Primary benchmark comparisons should use per-document extraction protocols: the model or agent receives one PDF/OCR transcript plus the schema or field contract, then returns the complete target list for that document. Deterministic parsers are useful diagnostics for parser-friendly control families, but they should not be treated as the main benchmark target unless the paper is explicitly about template-transfer parsing.
+
 Saved reports under `benchmarks/results/` may refer to earlier corpus versions. Do not cite them as current-layout baselines unless they have been rerun against the current `data/` manifest.
 
-The saved `benchmarks/results/codex_policy_cgl_probe_ocr/` artifact is a narrow diagnostic run on `mixed_cgl_040_001`: Codex GPT-5.5 produced 619 records for 619 gold records from the released Gemini OCR transcript, with 92.7% field-level F1, 89.9% recall, and 95.6% precision. It is not a full current-corpus leaderboard.
+The current full-corpus Codex/xhigh sandbox OCR run is saved under `benchmarks/results/codex_full_current_ocr_v2/`: 36 documents, 33,450 target records, 0 extraction errors, 97.8% micro-F1, 96.9% recall, 98.7% precision, and 96.7% document-macro F1.
+
+The strongest stressor signal is regime-specific. Driver schedule, driver/MVR, multisection IFTA, and policy packet regimes score 87.7-92.8% F1, while parser-friendly IFTA mileage and vehicle schedule regimes are near-perfect controls. Treat single-sample probe folders as older diagnostics unless rerun against the current manifest.
 
 ## Hugging Face Export
 
@@ -193,7 +200,7 @@ python benchmarks/export_hf_dataset.py \
 The export writes:
 
 - `README.md` - Hugging Face dataset card.
-- `data/core_operations/test-00000-of-00001.parquet` - 28 core operations PDFs.
+- `data/core_operations/test-00000-of-00001.parquet` - 30 core operations PDFs.
 - `data/claim_multihop/test-00000-of-00001.parquet` - 3 cross-page claim PDFs.
 - `data/policy_packets/test-00000-of-00001.parquet` - 3 policy PDFs.
 - `schemas/*.schema.json` - public extraction schemas.

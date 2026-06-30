@@ -183,7 +183,7 @@ def _build_agent_contract(ground_truth: list[dict] | None) -> tuple[str, str, st
         instructions = f"""You extract structured data from a document.
 
 In your sandbox workspace:
-- Input:  {_AGENT_INPUT_FILE} - the OCR of one commercial insurance or fleet operations document.
+- Input:  {_AGENT_INPUT_FILE} - the OCR of one commercial insurance or trucking operations document.
 - Output: {_RECORD_OUTPUT_FILE} - write your result here.
 
 You have a full Linux sandbox: you can run shell commands and Python, read,

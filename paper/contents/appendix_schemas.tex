@@ -4,7 +4,7 @@
 
 A recurring challenge with existing document extraction benchmarks is incomplete or ambiguous schema documentation. Without clear specifications, it can be difficult to understand expected field formats, handling of optional values, or normalization rules. Researchers attempting to reproduce results must often reverse-engineer these details from examples or evaluation scripts, leading to inconsistent implementations and incomparable metrics.
 
-To ensure full reproducibility, we provide complete schemas with explicit type annotations, default values, and field descriptions. The evaluation script validates model outputs against these schemas before scoring, ensuring that format errors are caught early rather than silently degrading metrics.
+To improve reproducibility, we provide explicit schemas for claim incidents and the main heterogeneous row families that benefit most from a public field contract. Other operations families are defined by their ground-truth field contracts and scored by the generic record-list evaluator. The evaluation scripts normalize model outputs before scoring so format errors are caught early rather than silently degrading metrics.
 
 \subsection*{A.1 Financial Breakdown Schema}
 
@@ -113,6 +113,8 @@ records & list of objects & required & List of extracted target records using th
 \bottomrule
 \end{tabular}
 \endgroup
+
+The repository publishes standalone JSON Schema files for \path{loss_run_incident}, \path{loss_run_claim_row}, \path{ifta_multisection_jurisdiction_row}, \path{policy_schedule_record}, and \path{policy_packet_item}. The multisection IFTA schema requires each jurisdiction row to include return context (\path{return_id}, year, quarter, filing type), Schedule A mileage/gallon fields, and Jurisdictions tax-detail fields.
 
 \subsection*{A.4 Extraction Prompt Template}
 

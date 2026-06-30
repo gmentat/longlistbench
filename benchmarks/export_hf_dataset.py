@@ -15,7 +15,7 @@ from typing import Any
 DEFAULT_REPO_ID = "kaydotai/LongListBench"
 CONFIG_ORDER = ("core_operations", "claim_multihop", "policy_packets")
 CONFIG_DESCRIPTIONS = {
-    "core_operations": "28 production-like commercial insurance and fleet-operation PDFs with dense repeated operations and loss-run records.",
+    "core_operations": "30 production-like commercial insurance and trucking-operation PDFs with dense repeated operations, IFTA, and loss-run records.",
     "claim_multihop": "3 long claim PDFs where incident records must be assembled from distant sections.",
     "policy_packets": "3 long BOP, WC, and CGL policy packets where records must be assembled from distant sections.",
 }
@@ -279,13 +279,13 @@ configs:
 
 # LongListBench
 
-LongListBench is a synthetic benchmark for measuring **long-list structured extraction** from insurance and fleet-operation PDFs: the task of extracting every item in a large repeating record set, without dropping records, merging neighboring records, inventing extras, or losing fields when the document has complex layout, OCR-transcribed text, or evidence spread across distant pages.
+LongListBench is a synthetic benchmark for measuring **long-list structured extraction** from insurance and commercial trucking PDFs: the task of extracting every item in a large repeating record set, without dropping records, merging neighboring records, inventing extras, or losing fields when the document has complex layout, OCR-transcribed text, or evidence spread across distant pages.
 
 Most document-extraction benchmarks emphasize document-level header fields. LongListBench focuses on the production failure mode that appears once the target is a long list: recall and precision degrade as the model must preserve many records, normalize repeated fields, and sometimes join values from sections separated by dozens or hundreds of pages.
 
 The dataset contains {total_rows} PDF documents and {total_targets_text} target records. All visible document content is synthetic and does not contain real customer PII.
 
-The configs have different intended roles. `core_operations` contains high-density structured reports where deterministic row parsers may perform well and the main stressor is scale, OCR preservation, and output completeness. `claim_multihop` and `policy_packets` are the stronger complex-packet regimes: target records require inherited context, heterogeneous schemas, distant supporting sections, and distractor material.
+The intended task is per-document extraction: give a system one PDF or OCR transcript plus the target schema or field contract, then score the complete list it returns. The configs have different roles. `core_operations` contains high-density structured reports where deterministic row parsers or document-specific agent code may perform well; those files mainly test scale, OCR preservation, and output completeness. Its multisection IFTA packets additionally test OCR-layout preservation and cross-section joins. `claim_multihop` and `policy_packets` are the complex-packet regimes: target records require inherited context, heterogeneous schemas, distant supporting sections, and distractor material.
 
 ## Complexity Stressors
 
@@ -301,7 +301,10 @@ LongListBench differs from array-only extraction datasets by explicitly tracking
 | `multi_column` | Pages use two-column or form-like layouts that stress reading order. |
 | `merged_cells` | Tables include section-spanning or merged-cell structures. |
 | `ocr_condition` | The released text condition is OCR from rendered page images. |
+| `ocr_layout_condition` | OCR preserves visual spacing and reading order instead of converting tables into clean CSV-style rows. |
 | `long_range_evidence` | Fields must be joined from distant sections of one PDF. |
+| `cross_section_join` | A target record must be assembled from separately labeled sections, such as return summary, distance/gallon schedules, and liability schedules. |
+| `repeated_keys` | Common keys such as states or jurisdictions repeat across sections or returns, so the key alone is insufficient for matching. |
 | `heterogeneous_record_list` | A target list contains several record schemas, especially in policy packets. |
 
 The stressor labels are metadata labels, not text printed inside the PDFs. The PDFs are designed to remain realistic source documents.
@@ -311,6 +314,7 @@ The mapping is intended to be visually auditable:
 | Family or config | Stressors visible in the document |
 |---|---|
 | `ifta_mileage_by_vehicle` | Page-spanning unit sections, inherited unit headers, and source notes inside jurisdiction rows. |
+| `ifta_multisection_return_packet` | Return-level context, Schedule A distance/gallon rows, and dense Jurisdictions tax-detail rows must be joined across pages; OCR keeps the visual layout rather than a clean row table. |
 | `loss_run_external` | Target rows mixed with description rows, continuation notes, summary cards, no-claims tables, and merged policy-period rows. |
 | `claim_multihop` | Claim schedules separated from policy registers, driver rosters, claimant indexes, cause-code appendices, and ledgers by many pages. |
 | `policy_packets` | Heterogeneous records across declarations, locations or classifications, forms, endorsements, rating or premium pages, and clause prose. |
@@ -415,15 +419,44 @@ for row in ds.remove_columns("pdf"):
     print(row["document_id"], metrics["f1"], metrics["recall"], metrics["precision"])
 ```
 
+## Current Baseline
+
+The repository includes one full-corpus OCR-conditioned agentic baseline. It is a protocol baseline, not a raw one-shot model score: each run gives a Codex/xhigh sandbox agent one OCR transcript and the public field contract, without ground-truth access, and allows it to inspect the document, write temporary code, validate JSON, and return the complete list.
+
+Overall result on the released OCR transcripts:
+
+| Protocol | Documents | Target records | Errors | Micro-F1 | Recall | Precision |
+|---|---:|---:|---:|---:|---:|---:|
+| Codex/xhigh sandbox agent | 36 | 33,450 | 0 | 97.8% | 96.9% | 98.7% |
+
+Regime slices show why aggregate scores should not be interpreted alone:
+
+| Regime | Documents | Target records | Micro-F1 |
+|---|---:|---:|---:|
+| Driver schedule spreadsheet export | 1 | 500 | 87.7% |
+| Driver/MVR request and roster | 3 | 1,260 | 89.1% |
+| IFTA multisection return packet | 2 | 796 | 91.1% |
+| Policy multi-hop | 3 | 1,489 | 92.8% |
+| Claim cross-page multi-hop | 3 | 77 | 97.1% |
+| External loss run | 3 | 900 | 97.2% |
+| IFTA return schedule details | 5 | 4,923 | 98.0% |
+| IFTA tax return inquiry detail | 2 | 1,300 | 99.4% |
+| IFTA tax return summary | 4 | 3,040 | 99.6% |
+| IFTA mileage by vehicle | 8 | 17,565 | 100.0% |
+| Vehicle schedule spreadsheet export | 2 | 1,600 | 100.0% |
+
+Full-context one-shot prompting is useful as a lower-bound stress test, but it is not a practical full-corpus protocol for this release. Larger documents can hit model output limits or latency timeouts before returning a scoreable complete list.
+
 ## Schemas
 
 Extraction schemas are published as standalone JSON Schema files under [`schemas/`](./schemas):
 
 - [`schemas/loss_run_incident.schema.json`](./schemas/loss_run_incident.schema.json) - `incidents[]` for claim multi-hop incident rows, including incident identifiers, policy fields, claimant/driver fields, dates, coverage fields, and nested financial breakdowns.
 - [`schemas/loss_run_claim_row.schema.json`](./schemas/loss_run_claim_row.schema.json) - `records[]` for external loss-run schedule rows in the core operations config.
+- [`schemas/ifta_multisection_jurisdiction_row.schema.json`](./schemas/ifta_multisection_jurisdiction_row.schema.json) - `records[]` for multisection IFTA return rows assembled from return headers, Schedule A mileage/gallon rows, and Jurisdictions tax-detail rows.
 - [`schemas/policy_packet_item.schema.json`](./schemas/policy_packet_item.schema.json) - `records[]` for BOP/WC/CGL policy packet rows. Records are heterogeneous and may represent locations, coverages, forms, material clauses, endorsements, exclusions, rating rows, or premium items depending on `record_type`.
 
-These schemas describe the strict claim, external loss-run, and policy extraction targets. Other operations rows are represented by their ground-truth field contracts and the generic record-list scorer.
+These schemas describe the strict claim, external loss-run, multisection IFTA, and policy extraction targets. Other operations rows are represented by their ground-truth field contracts and the generic record-list scorer.
 
 ## Transcript Conditions
 
@@ -450,7 +483,7 @@ No real insureds, claimants, policies, financial accounts, or customer documents
 
 ## Limitations
 
-LongListBench is intended for measuring long-list, layout, OCR-conditioned, and long-range-evidence extraction behavior. It is not a substitute for evaluation on a private production corpus. Synthetic documents can underrepresent the visual and linguistic diversity of real carrier packets. Some structured-report families are parser-friendly by design and should be interpreted as scale/completeness cases rather than as hard semantic extraction cases. OCR transcripts have been run and reviewed, but OCR support should be interpreted at the affected-record level: a missing section header can affect many rows even when unique row identifiers are present.
+LongListBench is intended for measuring long-list, layout, OCR-conditioned, and long-range-evidence extraction behavior. It is not a substitute for evaluation on a private production corpus. Synthetic documents can underrepresent the visual and linguistic diversity of real carrier packets. Some structured-report families are parser-friendly by design and should be interpreted as scale/completeness controls rather than as hard semantic extraction cases. Parser-transfer baselines can be useful diagnostics, but the main benchmark task is per-document extraction where the system may inspect the current document and choose its own extraction strategy. OCR transcripts have been run and reviewed, but OCR support should be interpreted at the affected-record level: a missing section header can affect many rows even when unique row identifiers are present.
 
 ## License
 

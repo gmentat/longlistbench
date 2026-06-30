@@ -19,7 +19,7 @@
     "pdf_size_bytes": 482730,
     "html_size_bytes": 186451,
     "ocr_md": "transcripts/ocr_gemini/ifta_tax_summary_004.md",
-    "ocr_size_bytes": 95038
+    "ocr_size_bytes": 125340
   },
   "transcripts_available": [
     "ocr"
@@ -34,12 +34,25 @@
     "ocr_condition",
     "page_breaks",
     "large_doc",
-    "multiple_tables"
+    "multiple_tables",
+    "layout_randomization",
+    "inherited_context",
+    "split_records",
+    "non_target_rows"
   ],
-  "pages_estimate": 20,
-  "pdf_page_count": 20,
+  "pages_estimate": 34,
+  "pdf_page_count": 34,
   "dataset_version": "2.0.0",
   "hf_config": "core_operations",
   "document_count": 1,
-  "evidence_pattern": "single_document"
+  "evidence_pattern": "single_document",
+  "pdf_size_bytes": 448697,
+  "html_size_bytes": 269827,
+  "layout_revision": {
+    "date": "2026-06-28T15:32:40.733150+00:00",
+    "purpose": "reduce deterministic parser friendliness with production-like layout variation",
+    "ocr_status": "regenerated_from_current_pdf",
+    "ocr_regenerated_at": "2026-06-28T21:44:24.950682+00:00"
+  },
+  "ocr_md_size_bytes": 125340
 }

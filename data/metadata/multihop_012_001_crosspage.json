@@ -7,15 +7,15 @@
   "target_record_type": "loss_run_incident",
   "num_claims": 12,
   "num_target_records": 12,
-  "pages_estimate": 76,
-  "pdf_page_count": 76,
+  "pages_estimate": 80,
+  "pdf_page_count": 80,
   "document_count": 1,
   "evidence_pattern": "single_document_long_range_cross_page_join",
   "minimum_gap_pages_between_primary_and_last_evidence": 64,
   "problems": [
-    "coded_values",
     "cross_page_join",
     "long_range_evidence",
+    "coded_values",
     "distractor_sections",
     "ocr_condition",
     "page_breaks",
@@ -23,17 +23,26 @@
     "multiple_tables",
     "multi_row",
     "multi_column",
-    "duplicates"
+    "duplicates",
+    "natural_long_range_join",
+    "inherited_context",
+    "non_target_rows",
+    "mixed_prose_tables",
+    "non_sequential_identifiers"
   ],
   "layout_templates": [
     "packet_cover",
     "portal_receipt",
     "official_request_response",
-    "primary_schedule",
+    "claim_file_cards",
     "spreadsheet_unit_reference",
     "mileage_schedule",
     "rotated_scan_excerpt",
-    "long_range_appendices"
+    "driver_assignment_cards",
+    "policy_register_cards",
+    "cause_classification_narrative",
+    "claimant_notice_cards",
+    "financial_ledger_blocks"
   ],
   "has_duplicates": false,
   "seed": 14114,
@@ -44,7 +53,7 @@
   ],
   "evidence_map": [
     {
-      "section": "primary_claim_extract",
+      "section": "claim_intake_file_cards",
       "approx_page_after_cover": 1,
       "fields": [
         "incident_number",
@@ -59,7 +68,7 @@
       ]
     },
     {
-      "section": "fleet_driver_assignment_roster",
+      "section": "fleet_driver_assignment_cards",
       "approx_page_after_cover": 30,
       "join_key": "unit_number",
       "fields": [
@@ -69,7 +78,7 @@
       ]
     },
     {
-      "section": "policy_register",
+      "section": "policy_register_cards",
       "approx_page_after_cover": 31,
       "join_key": "policy_number",
       "fields": [
@@ -81,7 +90,7 @@
       ]
     },
     {
-      "section": "loss_cause_classification_appendix",
+      "section": "loss_cause_classification_narrative",
       "approx_page_after_cover": 50,
       "join_key": "cause_code",
       "fields": [
@@ -91,18 +100,18 @@
       ]
     },
     {
-      "section": "claimant_notice_index",
+      "section": "claimant_notice_cards",
       "approx_page_after_cover": 51,
-      "join_key": "incident_number",
+      "join_key": "reference_number",
       "fields": [
         "claimants",
         "adjuster_notes"
       ]
     },
     {
-      "section": "claim_financial_ledger",
+      "section": "claim_financial_ledger_blocks",
       "approx_page_after_cover": 70,
-      "join_key": "incident_number",
+      "join_key": "reference_number",
       "fields": [
         "bi",
         "pd",
@@ -116,17 +125,12 @@
     "pdf": "pdfs/multihop_012_001_crosspage.pdf",
     "html": "html/multihop_012_001_crosspage.html",
     "ocr_md": "transcripts/ocr_gemini/multihop_012_001_crosspage.md",
-    "json_size_bytes": 14923,
-    "pdf_size_bytes": 786889,
-    "html_size_bytes": 259606,
-    "ocr_size_bytes": 138256,
-    "metadata": "metadata/multihop_012_001_crosspage.json"
+    "json_size_bytes": 15364,
+    "pdf_size_bytes": 981600,
+    "html_size_bytes": 296086,
+    "ocr_size_bytes": 276175
   },
   "transcripts_available": [
     "ocr"
-  ],
-  "template": "claim_crosspage_multihop",
-  "provenance": "Synthetic generated document. Private production references were used only for visual layout review; no production PDFs, names, account numbers, or raw customer data are included in this repository.",
-  "hf_config": "claim_multihop",
-  "dataset_version": "2.0.0"
+  ]
 }

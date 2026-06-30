@@ -1,64 +1,29 @@
 {
   "dataset_name": "longlistbench",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Benchmark for long-list entity extraction under layout, OCR, scale, and long-range cross-page evidence complexity.",
   "generated_at": "2026-06-22T17:44:33.070606+00:00",
   "schema_version": "2.0",
   "transcript_conditions": [
     "ocr"
   ],
-  "total_instances": 34,
-  "total_target_records": 32654,
-  "template_families": {
-    "claim_crosspage_multihop": {
-      "instances": 3,
-      "target_records": 77
-    },
-    "driver_mvr_request_and_roster": {
-      "instances": 3,
-      "target_records": 1260
-    },
-    "driver_schedule_spreadsheet_export": {
-      "instances": 1,
-      "target_records": 500
-    },
-    "ifta_mileage_by_vehicle": {
-      "instances": 8,
-      "target_records": 17565
-    },
-    "ifta_return_schedule_details": {
-      "instances": 5,
-      "target_records": 4923
-    },
-    "ifta_tax_return_inquiry_detail": {
-      "instances": 2,
-      "target_records": 1300
-    },
-    "ifta_tax_return_summary": {
-      "instances": 4,
-      "target_records": 3040
-    },
-    "loss_run_external": {
-      "instances": 3,
-      "target_records": 900
-    },
-    "policy_multihop_bop": {
-      "instances": 1,
-      "target_records": 360
-    },
-    "policy_multihop_cgl": {
-      "instances": 1,
-      "target_records": 619
-    },
-    "policy_multihop_wc": {
-      "instances": 1,
-      "target_records": 510
-    },
-    "vehicle_schedule_spreadsheet_export": {
-      "instances": 2,
-      "target_records": 1600
-    }
-  },
+  "total_instances": 36,
+  "total_target_records": 33450,
+  "template_families": [
+    "claim_crosspage_multihop",
+    "driver_mvr_request_and_roster",
+    "driver_schedule_spreadsheet_export",
+    "ifta_mileage_by_vehicle",
+    "ifta_multisection_return_packet",
+    "ifta_return_schedule_details",
+    "ifta_tax_return_inquiry_detail",
+    "ifta_tax_return_summary",
+    "loss_run_external",
+    "policy_multihop_bop",
+    "policy_multihop_cgl",
+    "policy_multihop_wc",
+    "vehicle_schedule_spreadsheet_export"
+  ],
   "layout": {
     "type": "modality_separated",
     "pdfs": "pdfs/{sample_id}.pdf",
@@ -110,7 +75,8 @@
       "provenance": "Synthetic generated document. Private production references were used only for visual layout review; no production PDFs, names, account numbers, or raw customer data are included in this repository.",
       "pages_estimate": 17,
       "pdf_page_count": 17,
-      "hf_config": "core_operations"
+      "hf_config": "core_operations",
+      "ocr_md_size_bytes": 33504
     },
     {
       "id": "driver_mvr_packet_002",
@@ -149,7 +115,8 @@
       "provenance": "Synthetic generated document. Private production references were used only for visual layout review; no production PDFs, names, account numbers, or raw customer data are included in this repository.",
       "pages_estimate": 24,
       "pdf_page_count": 24,
-      "hf_config": "core_operations"
+      "hf_config": "core_operations",
+      "ocr_md_size_bytes": 52067
     },
     {
       "id": "driver_mvr_packet_003",
@@ -188,7 +155,8 @@
       "provenance": "Synthetic generated document. Private production references were used only for visual layout review; no production PDFs, names, account numbers, or raw customer data are included in this repository.",
       "pages_estimate": 24,
       "pdf_page_count": 24,
-      "hf_config": "core_operations"
+      "hf_config": "core_operations",
+      "ocr_md_size_bytes": 52920
     },
     {
       "id": "driver_schedule_sparse_001",
@@ -205,7 +173,11 @@
         "ocr_condition",
         "page_breaks",
         "large_doc",
-        "multiple_tables"
+        "multiple_tables",
+        "layout_randomization",
+        "inherited_context",
+        "split_records",
+        "non_target_rows"
       ],
       "files": {
         "ground_truth": "ground_truth/driver_schedule_sparse_001.json",
@@ -216,7 +188,7 @@
         "pdf_size_bytes": 87194,
         "html_size_bytes": 45040,
         "ocr_md": "transcripts/ocr_gemini/driver_schedule_sparse_001.md",
-        "ocr_size_bytes": 24512
+        "ocr_size_bytes": 28768
       },
       "transcripts_available": [
         "ocr"
@@ -225,9 +197,22 @@
       "document_count": 1,
       "evidence_pattern": "single_document",
       "provenance": "Synthetic generated document. Private production references were used only for visual layout review; no production PDFs, names, account numbers, or raw customer data are included in this repository.",
-      "pages_estimate": 15,
-      "pdf_page_count": 15,
-      "hf_config": "core_operations"
+      "pages_estimate": 16,
+      "pdf_page_count": 16,
+      "hf_config": "core_operations",
+      "pdf_size_bytes": 207224,
+      "html_size_bytes": 59605,
+      "layout_revision": {
+        "date": "2026-06-28T09:18:30.380520+00:00",
+        "purpose": "reduce deterministic parser friendliness with production-like layout variation",
+        "ocr_status": "regenerated_from_current_pdf",
+        "ocr_regenerated_at": "2026-06-28T21:44:24.950682+00:00"
+      },
+      "artifacts": {
+        "pdf_sha256": "2db5b83a8c0f06cd7766d9dd756cf278713e60cf27db57df31bcb3410bcb3f27",
+        "html_sha256": "948d164ea461650c683c246835b9350f143cf7f027ee8a0cc07d0288893bdb4c"
+      },
+      "ocr_md_size_bytes": 28768
     },
     {
       "id": "ifta_mileage_by_vehicle_001",
@@ -267,7 +252,8 @@
       "provenance": "Synthetic generated document. Private production references were used only for visual layout review; no production PDFs, names, account numbers, or raw customer data are included in this repository.",
       "pages_estimate": 97,
       "pdf_page_count": 97,
-      "hf_config": "core_operations"
+      "hf_config": "core_operations",
+      "ocr_md_size_bytes": 193688
     },
     {
       "id": "ifta_mileage_by_vehicle_002",
@@ -307,7 +293,8 @@
       "provenance": "Synthetic generated document. Private production references were used only for visual layout review; no production PDFs, names, account numbers, or raw customer data are included in this repository.",
       "pages_estimate": 182,
       "pdf_page_count": 182,
-      "hf_config": "core_operations"
+      "hf_config": "core_operations",
+      "ocr_md_size_bytes": 358934
     },
     {
       "id": "ifta_mileage_by_vehicle_003",
@@ -347,7 +334,8 @@
       "provenance": "Synthetic generated document. Private production references were used only for visual layout review; no production PDFs, names, account numbers, or raw customer data are included in this repository.",
       "pages_estimate": 188,
       "pdf_page_count": 188,
-      "hf_config": "core_operations"
+      "hf_config": "core_operations",
+      "ocr_md_size_bytes": 367483
     },
     {
       "id": "ifta_mileage_by_vehicle_004",
@@ -387,7 +375,8 @@
       "provenance": "Synthetic generated document. Private production references were used only for visual layout review; no production PDFs, names, account numbers, or raw customer data are included in this repository.",
       "pages_estimate": 193,
       "pdf_page_count": 193,
-      "hf_config": "core_operations"
+      "hf_config": "core_operations",
+      "ocr_md_size_bytes": 385216
     },
     {
       "id": "ifta_mileage_by_vehicle_005",
@@ -427,7 +416,8 @@
       "provenance": "Synthetic generated document. Private production references were used only for visual layout review; no production PDFs, names, account numbers, or raw customer data are included in this repository.",
       "pages_estimate": 198,
       "pdf_page_count": 198,
-      "hf_config": "core_operations"
+      "hf_config": "core_operations",
+      "ocr_md_size_bytes": 393894
     },
     {
       "id": "ifta_mileage_by_vehicle_006",
@@ -467,7 +457,8 @@
       "provenance": "Synthetic generated document. Private production references were used only for visual layout review; no production PDFs, names, account numbers, or raw customer data are included in this repository.",
       "pages_estimate": 206,
       "pdf_page_count": 206,
-      "hf_config": "core_operations"
+      "hf_config": "core_operations",
+      "ocr_md_size_bytes": 416454
     },
     {
       "id": "ifta_mileage_by_vehicle_007",
@@ -507,7 +498,8 @@
       "provenance": "Synthetic generated document. Private production references were used only for visual layout review; no production PDFs, names, account numbers, or raw customer data are included in this repository.",
       "pages_estimate": 210,
       "pdf_page_count": 210,
-      "hf_config": "core_operations"
+      "hf_config": "core_operations",
+      "ocr_md_size_bytes": 412391
     },
     {
       "id": "ifta_mileage_by_vehicle_008",
@@ -547,7 +539,124 @@
       "provenance": "Synthetic generated document. Private production references were used only for visual layout review; no production PDFs, names, account numbers, or raw customer data are included in this repository.",
       "pages_estimate": 218,
       "pdf_page_count": 218,
-      "hf_config": "core_operations"
+      "hf_config": "core_operations",
+      "ocr_md_size_bytes": 438583
+    },
+    {
+      "id": "ifta_multisection_return_001",
+      "template": "ifta_multisection_return_packet",
+      "target_record_type": "ifta_multisection_jurisdiction_row",
+      "num_target_records": 335,
+      "source_batch": "ifta-hardening-experiment",
+      "provenance": "Synthetic generated document. Private production references were used only for visual layout review; no production PDFs, names, account numbers, or raw customer data are included in this repository.",
+      "files": {
+        "ground_truth": "ground_truth/ifta_multisection_return_001.json",
+        "pdf": "pdfs/ifta_multisection_return_001.pdf",
+        "html": "html/ifta_multisection_return_001.html",
+        "metadata": "metadata/ifta_multisection_return_001.json",
+        "ocr_md": "transcripts/ocr_gemini/ifta_multisection_return_001.md",
+        "json_size_bytes": 150517,
+        "pdf_size_bytes": 7339936,
+        "html_size_bytes": 203496,
+        "ocr_size_bytes": 194328
+      },
+      "transcripts_available": [
+        "ocr"
+      ],
+      "complexity_regime": "ifta_multisection_return_packet",
+      "difficulty": "ifta_multisection_return_packet",
+      "format": "production_like_pdf",
+      "domain": "commercial_insurance_operations",
+      "problems": [
+        "high_density_long_list",
+        "production_like_layout",
+        "ocr_condition",
+        "ocr_layout_condition",
+        "page_breaks",
+        "large_doc",
+        "multiple_tables",
+        "multi_row",
+        "inherited_context",
+        "split_records",
+        "non_target_rows",
+        "repeated_keys",
+        "cross_section_join"
+      ],
+      "pages_estimate": 60,
+      "pdf_page_count": 60,
+      "hf_config": "core_operations",
+      "document_count": 1,
+      "evidence_pattern": "single_document",
+      "ocr_md_size_bytes": 260669,
+      "artifacts": {
+        "pdf": "pdfs/ifta_multisection_return_001.pdf",
+        "html": "html/ifta_multisection_return_001.html",
+        "ground_truth": "ground_truth/ifta_multisection_return_001.json"
+      },
+      "dataset_version": "2.0.0",
+      "layout_revision": {
+        "date": "2026-06-29",
+        "purpose": "hard IFTA table extraction condition with fields split across return sections",
+        "ocr_status": "layout-preserving Gemini OCR over scanned image PDF"
+      }
+    },
+    {
+      "id": "ifta_multisection_return_002",
+      "template": "ifta_multisection_return_packet",
+      "target_record_type": "ifta_multisection_jurisdiction_row",
+      "num_target_records": 461,
+      "source_batch": "ifta-hardening-experiment",
+      "provenance": "Synthetic generated document. Private production references were used only for visual layout review; no production PDFs, names, account numbers, or raw customer data are included in this repository.",
+      "files": {
+        "ground_truth": "ground_truth/ifta_multisection_return_002.json",
+        "pdf": "pdfs/ifta_multisection_return_002.pdf",
+        "html": "html/ifta_multisection_return_002.html",
+        "metadata": "metadata/ifta_multisection_return_002.json",
+        "ocr_md": "transcripts/ocr_gemini/ifta_multisection_return_002.md",
+        "json_size_bytes": 207018,
+        "pdf_size_bytes": 10208903,
+        "html_size_bytes": 280581,
+        "ocr_size_bytes": 272619
+      },
+      "transcripts_available": [
+        "ocr"
+      ],
+      "complexity_regime": "ifta_multisection_return_packet",
+      "difficulty": "ifta_multisection_return_packet",
+      "format": "production_like_pdf",
+      "domain": "commercial_insurance_operations",
+      "problems": [
+        "high_density_long_list",
+        "production_like_layout",
+        "ocr_condition",
+        "ocr_layout_condition",
+        "page_breaks",
+        "large_doc",
+        "multiple_tables",
+        "multi_row",
+        "inherited_context",
+        "split_records",
+        "non_target_rows",
+        "repeated_keys",
+        "cross_section_join"
+      ],
+      "pages_estimate": 84,
+      "pdf_page_count": 84,
+      "hf_config": "core_operations",
+      "document_count": 1,
+      "evidence_pattern": "single_document",
+      "ocr_md_size_bytes": 367421,
+      "artifacts": {
+        "pdf": "pdfs/ifta_multisection_return_002.pdf",
+        "html": "html/ifta_multisection_return_002.html",
+        "ground_truth": "ground_truth/ifta_multisection_return_002.json"
+      },
+      "dataset_version": "2.0.0",
+      "layout_revision": {
+        "date": "2026-06-29",
+        "purpose": "hard IFTA table extraction condition with fields split across return sections",
+        "ocr_status": "layout-preserving Gemini OCR over scanned image PDF"
+      }
     },
     {
       "id": "ifta_return_schedule_001",
@@ -564,7 +673,11 @@
         "ocr_condition",
         "page_breaks",
         "large_doc",
-        "multiple_tables"
+        "multiple_tables",
+        "layout_randomization",
+        "inherited_context",
+        "split_records",
+        "non_target_rows"
       ],
       "files": {
         "ground_truth": "ground_truth/ifta_return_schedule_001.json",
@@ -575,7 +688,7 @@
         "pdf_size_bytes": 241682,
         "html_size_bytes": 236812,
         "ocr_md": "transcripts/ocr_gemini/ifta_return_schedule_001.md",
-        "ocr_size_bytes": 64677
+        "ocr_size_bytes": 125901
       },
       "transcripts_available": [
         "ocr"
@@ -584,9 +697,22 @@
       "document_count": 1,
       "evidence_pattern": "single_document",
       "provenance": "Synthetic generated document. Private production references were used only for visual layout review; no production PDFs, names, account numbers, or raw customer data are included in this repository.",
-      "pages_estimate": 33,
-      "pdf_page_count": 33,
-      "hf_config": "core_operations"
+      "pages_estimate": 72,
+      "pdf_page_count": 72,
+      "hf_config": "core_operations",
+      "pdf_size_bytes": 386861,
+      "html_size_bytes": 215584,
+      "layout_revision": {
+        "date": "2026-06-28T09:18:30.846734+00:00",
+        "purpose": "reduce deterministic parser friendliness with production-like layout variation",
+        "ocr_status": "regenerated_from_current_pdf",
+        "ocr_regenerated_at": "2026-06-28T21:44:24.950682+00:00"
+      },
+      "artifacts": {
+        "pdf_sha256": "e79d5f301e0bc84a1ac2cd921dc8bc0d178fb75bcd479c7e3d3dfd21886dffd8",
+        "html_sha256": "335a5178fdc5dfd518aeeb64be6a620ff6bee0bc2d2a02dfd103871715db1344"
+      },
+      "ocr_md_size_bytes": 125901
     },
     {
       "id": "ifta_return_schedule_002",
@@ -603,7 +729,11 @@
         "ocr_condition",
         "page_breaks",
         "large_doc",
-        "multiple_tables"
+        "multiple_tables",
+        "layout_randomization",
+        "inherited_context",
+        "split_records",
+        "non_target_rows"
       ],
       "files": {
         "ground_truth": "ground_truth/ifta_return_schedule_002.json",
@@ -614,7 +744,7 @@
         "pdf_size_bytes": 383511,
         "html_size_bytes": 369490,
         "ocr_md": "transcripts/ocr_gemini/ifta_return_schedule_002.md",
-        "ocr_size_bytes": 112469
+        "ocr_size_bytes": 195868
       },
       "transcripts_available": [
         "ocr"
@@ -623,9 +753,22 @@
       "document_count": 1,
       "evidence_pattern": "single_document",
       "provenance": "Synthetic generated document. Private production references were used only for visual layout review; no production PDFs, names, account numbers, or raw customer data are included in this repository.",
-      "pages_estimate": 53,
-      "pdf_page_count": 53,
-      "hf_config": "core_operations"
+      "pages_estimate": 108,
+      "pdf_page_count": 108,
+      "hf_config": "core_operations",
+      "pdf_size_bytes": 523651,
+      "html_size_bytes": 362237,
+      "layout_revision": {
+        "date": "2026-06-28T09:18:31.381592+00:00",
+        "purpose": "reduce deterministic parser friendliness with production-like layout variation",
+        "ocr_status": "regenerated_from_current_pdf",
+        "ocr_regenerated_at": "2026-06-28T21:44:24.950682+00:00"
+      },
+      "artifacts": {
+        "pdf_sha256": "50e8ed9373f496cc5280fc0fb66cd00561ca03bdd3319c9449c6692525718c3f",
+        "html_sha256": "d341546375eec81aca4608e3f6fac38ad610b56cb7aeb8cd1898af82901fe52a"
+      },
+      "ocr_md_size_bytes": 195868
     },
     {
       "id": "ifta_return_schedule_003",
@@ -642,7 +785,11 @@
         "ocr_condition",
         "page_breaks",
         "large_doc",
-        "multiple_tables"
+        "multiple_tables",
+        "layout_randomization",
+        "inherited_context",
+        "split_records",
+        "non_target_rows"
       ],
       "files": {
         "ground_truth": "ground_truth/ifta_return_schedule_003.json",
@@ -653,7 +800,7 @@
         "pdf_size_bytes": 410229,
         "html_size_bytes": 402258,
         "ocr_md": "transcripts/ocr_gemini/ifta_return_schedule_003.md",
-        "ocr_size_bytes": 124298
+        "ocr_size_bytes": 212715
       },
       "transcripts_available": [
         "ocr"
@@ -662,9 +809,22 @@
       "document_count": 1,
       "evidence_pattern": "single_document",
       "provenance": "Synthetic generated document. Private production references were used only for visual layout review; no production PDFs, names, account numbers, or raw customer data are included in this repository.",
-      "pages_estimate": 58,
-      "pdf_page_count": 58,
-      "hf_config": "core_operations"
+      "pages_estimate": 114,
+      "pdf_page_count": 114,
+      "hf_config": "core_operations",
+      "pdf_size_bytes": 549322,
+      "html_size_bytes": 392610,
+      "layout_revision": {
+        "date": "2026-06-28T09:18:31.942088+00:00",
+        "purpose": "reduce deterministic parser friendliness with production-like layout variation",
+        "ocr_status": "regenerated_from_current_pdf",
+        "ocr_regenerated_at": "2026-06-28T21:44:24.950682+00:00"
+      },
+      "artifacts": {
+        "pdf_sha256": "69e92661da97faf3c3c1385588419c95f10b597ae5f7bbbb4a19ec143488f321",
+        "html_sha256": "6412f10331fc8822d83c0bd3ae4ff12689818e415b9b6204514dc37e5178925b"
+      },
+      "ocr_md_size_bytes": 212715
     },
     {
       "id": "ifta_return_schedule_004",
@@ -681,7 +841,11 @@
         "ocr_condition",
         "page_breaks",
         "large_doc",
-        "multiple_tables"
+        "multiple_tables",
+        "layout_randomization",
+        "inherited_context",
+        "split_records",
+        "non_target_rows"
       ],
       "files": {
         "ground_truth": "ground_truth/ifta_return_schedule_004.json",
@@ -692,7 +856,7 @@
         "pdf_size_bytes": 414081,
         "html_size_bytes": 407442,
         "ocr_md": "transcripts/ocr_gemini/ifta_return_schedule_004.md",
-        "ocr_size_bytes": 124842
+        "ocr_size_bytes": 209128
       },
       "transcripts_available": [
         "ocr"
@@ -701,9 +865,22 @@
       "document_count": 1,
       "evidence_pattern": "single_document",
       "provenance": "Synthetic generated document. Private production references were used only for visual layout review; no production PDFs, names, account numbers, or raw customer data are included in this repository.",
-      "pages_estimate": 58,
-      "pdf_page_count": 58,
-      "hf_config": "core_operations"
+      "pages_estimate": 120,
+      "pdf_page_count": 120,
+      "hf_config": "core_operations",
+      "pdf_size_bytes": 561678,
+      "html_size_bytes": 399750,
+      "layout_revision": {
+        "date": "2026-06-28T09:18:32.518234+00:00",
+        "purpose": "reduce deterministic parser friendliness with production-like layout variation",
+        "ocr_status": "regenerated_from_current_pdf",
+        "ocr_regenerated_at": "2026-06-28T21:44:24.950682+00:00"
+      },
+      "artifacts": {
+        "pdf_sha256": "c88f7a16d8397cd56b4cd6b95fafee1c4af4862729ae1ff2b222e0aca611882e",
+        "html_sha256": "83b1b8c73b3a79615c5f58e7c0c96e55e22e3ab279a97cdab53f15fa76fcaccc"
+      },
+      "ocr_md_size_bytes": 209128
     },
     {
       "id": "ifta_return_schedule_005",
@@ -720,7 +897,11 @@
         "ocr_condition",
         "page_breaks",
         "large_doc",
-        "multiple_tables"
+        "multiple_tables",
+        "layout_randomization",
+        "inherited_context",
+        "split_records",
+        "non_target_rows"
       ],
       "files": {
         "ground_truth": "ground_truth/ifta_return_schedule_005.json",
@@ -731,7 +912,7 @@
         "pdf_size_bytes": 431257,
         "html_size_bytes": 428038,
         "ocr_md": "transcripts/ocr_gemini/ifta_return_schedule_005.md",
-        "ocr_size_bytes": 130772
+        "ocr_size_bytes": 229500
       },
       "transcripts_available": [
         "ocr"
@@ -740,9 +921,22 @@
       "document_count": 1,
       "evidence_pattern": "single_document",
       "provenance": "Synthetic generated document. Private production references were used only for visual layout review; no production PDFs, names, account numbers, or raw customer data are included in this repository.",
-      "pages_estimate": 61,
-      "pdf_page_count": 61,
-      "hf_config": "core_operations"
+      "pages_estimate": 126,
+      "pdf_page_count": 126,
+      "hf_config": "core_operations",
+      "pdf_size_bytes": 581634,
+      "html_size_bytes": 420774,
+      "layout_revision": {
+        "date": "2026-06-28T09:18:33.084931+00:00",
+        "purpose": "reduce deterministic parser friendliness with production-like layout variation",
+        "ocr_status": "regenerated_from_current_pdf",
+        "ocr_regenerated_at": "2026-06-28T21:44:24.950682+00:00"
+      },
+      "artifacts": {
+        "pdf_sha256": "1ebe04aad69e48cd9f1b96c86219b26bb7291df44875cf803db7c53554a23fd2",
+        "html_sha256": "01dd65c98e18570167f3f90b377472d227f3b22647362622605b40a583889f17"
+      },
+      "ocr_md_size_bytes": 229500
     },
     {
       "id": "ifta_tax_inquiry_001",
@@ -760,7 +954,11 @@
         "page_breaks",
         "large_doc",
         "multiple_tables",
-        "merged_cells"
+        "merged_cells",
+        "layout_randomization",
+        "inherited_context",
+        "split_records",
+        "non_target_rows"
       ],
       "files": {
         "ground_truth": "ground_truth/ifta_tax_inquiry_001.json",
@@ -771,7 +969,7 @@
         "pdf_size_bytes": 184722,
         "html_size_bytes": 59033,
         "ocr_md": "transcripts/ocr_gemini/ifta_tax_inquiry_001.md",
-        "ocr_size_bytes": 30824
+        "ocr_size_bytes": 44541
       },
       "transcripts_available": [
         "ocr"
@@ -780,9 +978,22 @@
       "document_count": 1,
       "evidence_pattern": "single_document",
       "provenance": "Synthetic generated document. Private production references were used only for visual layout review; no production PDFs, names, account numbers, or raw customer data are included in this repository.",
-      "pages_estimate": 17,
-      "pdf_page_count": 17,
-      "hf_config": "core_operations"
+      "pages_estimate": 29,
+      "pdf_page_count": 29,
+      "hf_config": "core_operations",
+      "pdf_size_bytes": 222722,
+      "html_size_bytes": 84423,
+      "layout_revision": {
+        "date": "2026-06-28T09:33:22.772287+00:00",
+        "purpose": "reduce deterministic parser friendliness with production-like layout variation",
+        "ocr_status": "regenerated_from_current_pdf",
+        "ocr_regenerated_at": "2026-06-28T21:44:24.950682+00:00"
+      },
+      "artifacts": {
+        "pdf_sha256": "b624e1b1932c75dcdac027097fa83c668a65a38ccff00cd13cf464a67991afb6",
+        "html_sha256": "8356126cc13d956d4687b11248ac3b21c21708b95eeb55dc0cdf4441f9f7a9e7"
+      },
+      "ocr_md_size_bytes": 44541
     },
     {
       "id": "ifta_tax_inquiry_002",
@@ -800,7 +1011,11 @@
         "page_breaks",
         "large_doc",
         "multiple_tables",
-        "merged_cells"
+        "merged_cells",
+        "layout_randomization",
+        "inherited_context",
+        "split_records",
+        "non_target_rows"
       ],
       "files": {
         "ground_truth": "ground_truth/ifta_tax_inquiry_002.json",
@@ -811,7 +1026,7 @@
         "pdf_size_bytes": 185230,
         "html_size_bytes": 59027,
         "ocr_md": "transcripts/ocr_gemini/ifta_tax_inquiry_002.md",
-        "ocr_size_bytes": 29014
+        "ocr_size_bytes": 55125
       },
       "transcripts_available": [
         "ocr"
@@ -820,9 +1035,22 @@
       "document_count": 1,
       "evidence_pattern": "single_document",
       "provenance": "Synthetic generated document. Private production references were used only for visual layout review; no production PDFs, names, account numbers, or raw customer data are included in this repository.",
-      "pages_estimate": 17,
-      "pdf_page_count": 17,
-      "hf_config": "core_operations"
+      "pages_estimate": 29,
+      "pdf_page_count": 29,
+      "hf_config": "core_operations",
+      "pdf_size_bytes": 222223,
+      "html_size_bytes": 84423,
+      "layout_revision": {
+        "date": "2026-06-28T09:33:23.104936+00:00",
+        "purpose": "reduce deterministic parser friendliness with production-like layout variation",
+        "ocr_status": "regenerated_from_current_pdf",
+        "ocr_regenerated_at": "2026-06-28T21:44:24.950682+00:00"
+      },
+      "artifacts": {
+        "pdf_sha256": "f260e9b0986b162b9ed1206c01a4edb1f43c2e8df08efdea52b95de9e5608739",
+        "html_sha256": "5f389c710b430ecc52a75427cfdbd4e0baa53c22b191042977fb03db90a1da51"
+      },
+      "ocr_md_size_bytes": 55125
     },
     {
       "id": "ifta_tax_summary_001",
@@ -839,7 +1067,11 @@
         "ocr_condition",
         "page_breaks",
         "large_doc",
-        "multiple_tables"
+        "multiple_tables",
+        "layout_randomization",
+        "inherited_context",
+        "split_records",
+        "non_target_rows"
       ],
       "files": {
         "ground_truth": "ground_truth/ifta_tax_summary_001.json",
@@ -850,7 +1082,7 @@
         "pdf_size_bytes": 483008,
         "html_size_bytes": 186607,
         "ocr_md": "transcripts/ocr_gemini/ifta_tax_summary_001.md",
-        "ocr_size_bytes": 95874
+        "ocr_size_bytes": 131101
       },
       "transcripts_available": [
         "ocr"
@@ -859,9 +1091,22 @@
       "document_count": 1,
       "evidence_pattern": "single_document",
       "provenance": "Synthetic generated document. Private production references were used only for visual layout review; no production PDFs, names, account numbers, or raw customer data are included in this repository.",
-      "pages_estimate": 20,
-      "pdf_page_count": 20,
-      "hf_config": "core_operations"
+      "pages_estimate": 34,
+      "pdf_page_count": 34,
+      "hf_config": "core_operations",
+      "pdf_size_bytes": 449343,
+      "html_size_bytes": 269909,
+      "layout_revision": {
+        "date": "2026-06-28T15:32:39.452062+00:00",
+        "purpose": "reduce deterministic parser friendliness with production-like layout variation",
+        "ocr_status": "regenerated_from_current_pdf",
+        "ocr_regenerated_at": "2026-06-28T21:44:24.950682+00:00"
+      },
+      "artifacts": {
+        "pdf_sha256": "d7049767a110f96efeda33a9381fcdf651fa12ece6427cd3a9d7695ef16a9a27",
+        "html_sha256": "d279f156aa332ade48e508b957aea5ed1301fc573d7571425011907dc8193838"
+      },
+      "ocr_md_size_bytes": 131101
     },
     {
       "id": "ifta_tax_summary_002",
@@ -878,7 +1123,11 @@
         "ocr_condition",
         "page_breaks",
         "large_doc",
-        "multiple_tables"
+        "multiple_tables",
+        "layout_randomization",
+        "inherited_context",
+        "split_records",
+        "non_target_rows"
       ],
       "files": {
         "ground_truth": "ground_truth/ifta_tax_summary_002.json",
@@ -889,7 +1138,7 @@
         "pdf_size_bytes": 483053,
         "html_size_bytes": 186526,
         "ocr_md": "transcripts/ocr_gemini/ifta_tax_summary_002.md",
-        "ocr_size_bytes": 94806
+        "ocr_size_bytes": 130446
       },
       "transcripts_available": [
         "ocr"
@@ -898,9 +1147,22 @@
       "document_count": 1,
       "evidence_pattern": "single_document",
       "provenance": "Synthetic generated document. Private production references were used only for visual layout review; no production PDFs, names, account numbers, or raw customer data are included in this repository.",
-      "pages_estimate": 20,
-      "pdf_page_count": 20,
-      "hf_config": "core_operations"
+      "pages_estimate": 34,
+      "pdf_page_count": 34,
+      "hf_config": "core_operations",
+      "pdf_size_bytes": 449048,
+      "html_size_bytes": 269842,
+      "layout_revision": {
+        "date": "2026-06-28T15:32:39.874113+00:00",
+        "purpose": "reduce deterministic parser friendliness with production-like layout variation",
+        "ocr_status": "regenerated_from_current_pdf",
+        "ocr_regenerated_at": "2026-06-28T21:44:24.950682+00:00"
+      },
+      "artifacts": {
+        "pdf_sha256": "4d68a84f2cde5303f508a5fcedbb09798a7ef743aa3ecf1d4c9451e7d9648703",
+        "html_sha256": "7f0f3143955733096e362c295fb2b9d6ee9e0c193c79fde256f2f30694041d26"
+      },
+      "ocr_md_size_bytes": 130446
     },
     {
       "id": "ifta_tax_summary_003",
@@ -917,7 +1179,11 @@
         "ocr_condition",
         "page_breaks",
         "large_doc",
-        "multiple_tables"
+        "multiple_tables",
+        "layout_randomization",
+        "inherited_context",
+        "split_records",
+        "non_target_rows"
       ],
       "files": {
         "ground_truth": "ground_truth/ifta_tax_summary_003.json",
@@ -928,7 +1194,7 @@
         "pdf_size_bytes": 482986,
         "html_size_bytes": 186831,
         "ocr_md": "transcripts/ocr_gemini/ifta_tax_summary_003.md",
-        "ocr_size_bytes": 95557
+        "ocr_size_bytes": 117693
       },
       "transcripts_available": [
         "ocr"
@@ -937,9 +1203,22 @@
       "document_count": 1,
       "evidence_pattern": "single_document",
       "provenance": "Synthetic generated document. Private production references were used only for visual layout review; no production PDFs, names, account numbers, or raw customer data are included in this repository.",
-      "pages_estimate": 20,
-      "pdf_page_count": 20,
-      "hf_config": "core_operations"
+      "pages_estimate": 34,
+      "pdf_page_count": 34,
+      "hf_config": "core_operations",
+      "pdf_size_bytes": 449645,
+      "html_size_bytes": 270176,
+      "layout_revision": {
+        "date": "2026-06-28T15:32:40.306676+00:00",
+        "purpose": "reduce deterministic parser friendliness with production-like layout variation",
+        "ocr_status": "regenerated_from_current_pdf",
+        "ocr_regenerated_at": "2026-06-28T21:44:24.950682+00:00"
+      },
+      "artifacts": {
+        "pdf_sha256": "4a3634a61b453772863648e5396767005873148f88db81f4ca3b9c79fa5b1db2",
+        "html_sha256": "14ade3ee9d9168456eb40fa30c067318ce0fa666c80984fb69cc40399d1ad885"
+      },
+      "ocr_md_size_bytes": 117693
     },
     {
       "id": "ifta_tax_summary_004",
@@ -956,7 +1235,11 @@
         "ocr_condition",
         "page_breaks",
         "large_doc",
-        "multiple_tables"
+        "multiple_tables",
+        "layout_randomization",
+        "inherited_context",
+        "split_records",
+        "non_target_rows"
       ],
       "files": {
         "ground_truth": "ground_truth/ifta_tax_summary_004.json",
@@ -967,7 +1250,7 @@
         "pdf_size_bytes": 482730,
         "html_size_bytes": 186451,
         "ocr_md": "transcripts/ocr_gemini/ifta_tax_summary_004.md",
-        "ocr_size_bytes": 95038
+        "ocr_size_bytes": 125340
       },
       "transcripts_available": [
         "ocr"
@@ -976,9 +1259,22 @@
       "document_count": 1,
       "evidence_pattern": "single_document",
       "provenance": "Synthetic generated document. Private production references were used only for visual layout review; no production PDFs, names, account numbers, or raw customer data are included in this repository.",
-      "pages_estimate": 20,
-      "pdf_page_count": 20,
-      "hf_config": "core_operations"
+      "pages_estimate": 34,
+      "pdf_page_count": 34,
+      "hf_config": "core_operations",
+      "pdf_size_bytes": 448697,
+      "html_size_bytes": 269827,
+      "layout_revision": {
+        "date": "2026-06-28T15:32:40.733150+00:00",
+        "purpose": "reduce deterministic parser friendliness with production-like layout variation",
+        "ocr_status": "regenerated_from_current_pdf",
+        "ocr_regenerated_at": "2026-06-28T21:44:24.950682+00:00"
+      },
+      "artifacts": {
+        "pdf_sha256": "4e0735408650bea9f7fa45bc80c36292957b1dd82c789247c49fa589e9e94e11",
+        "html_sha256": "f73a48b73a4947e37fa00218f4446d9838dffd3716356e94ed663d0d63847009"
+      },
+      "ocr_md_size_bytes": 125340
     },
     {
       "id": "loss_run_external_001",
@@ -1032,7 +1328,8 @@
       "hf_config": "core_operations",
       "num_claims": 300,
       "document_count": 1,
-      "evidence_pattern": "single_document"
+      "evidence_pattern": "single_document",
+      "ocr_md_size_bytes": 131330
     },
     {
       "id": "loss_run_external_002",
@@ -1086,7 +1383,8 @@
       "hf_config": "core_operations",
       "num_claims": 300,
       "document_count": 1,
-      "evidence_pattern": "single_document"
+      "evidence_pattern": "single_document",
+      "ocr_md_size_bytes": 129750
     },
     {
       "id": "loss_run_external_003",
@@ -1140,7 +1438,8 @@
       "hf_config": "core_operations",
       "num_claims": 300,
       "document_count": 1,
-      "evidence_pattern": "single_document"
+      "evidence_pattern": "single_document",
+      "ocr_md_size_bytes": 135126
     },
     {
       "id": "mixed_040_001_crosspage",
@@ -1151,34 +1450,43 @@
       "target_record_type": "loss_run_incident",
       "num_claims": 40,
       "num_target_records": 40,
-      "pages_estimate": 198,
-      "pdf_page_count": 198,
+      "pages_estimate": 209,
+      "pdf_page_count": 209,
       "document_count": 1,
       "evidence_pattern": "single_document_long_range_cross_page_join",
       "minimum_gap_pages_between_primary_and_last_evidence": 172,
       "problems": [
-        "mixed_layout",
-        "longer_list",
         "cross_page_join",
         "long_range_evidence",
+        "mixed_layout",
         "distractor_sections",
+        "longer_list",
         "ocr_condition",
         "page_breaks",
         "large_doc",
         "multiple_tables",
         "multi_row",
         "multi_column",
-        "duplicates"
+        "duplicates",
+        "natural_long_range_join",
+        "inherited_context",
+        "non_target_rows",
+        "mixed_prose_tables",
+        "non_sequential_identifiers"
       ],
       "layout_templates": [
         "packet_cover",
         "portal_receipt",
         "official_request_response",
-        "primary_schedule",
+        "claim_file_cards",
         "spreadsheet_unit_reference",
         "mileage_schedule",
         "rotated_scan_excerpt",
-        "long_range_appendices"
+        "driver_assignment_cards",
+        "policy_register_cards",
+        "cause_classification_narrative",
+        "claimant_notice_cards",
+        "financial_ledger_blocks"
       ],
       "has_duplicates": false,
       "seed": 10644,
@@ -1191,7 +1499,7 @@
       ],
       "evidence_map": [
         {
-          "section": "primary_claim_extract",
+          "section": "claim_intake_file_cards",
           "approx_page_after_cover": 1,
           "fields": [
             "incident_number",
@@ -1206,7 +1514,7 @@
           ]
         },
         {
-          "section": "fleet_driver_assignment_roster",
+          "section": "fleet_driver_assignment_cards",
           "approx_page_after_cover": 80,
           "join_key": "unit_number",
           "fields": [
@@ -1216,7 +1524,7 @@
           ]
         },
         {
-          "section": "policy_register",
+          "section": "policy_register_cards",
           "approx_page_after_cover": 81,
           "join_key": "policy_number",
           "fields": [
@@ -1228,7 +1536,7 @@
           ]
         },
         {
-          "section": "loss_cause_classification_appendix",
+          "section": "loss_cause_classification_narrative",
           "approx_page_after_cover": 136,
           "join_key": "cause_code",
           "fields": [
@@ -1238,18 +1546,18 @@
           ]
         },
         {
-          "section": "claimant_notice_index",
+          "section": "claimant_notice_cards",
           "approx_page_after_cover": 137,
-          "join_key": "incident_number",
+          "join_key": "reference_number",
           "fields": [
             "claimants",
             "adjuster_notes"
           ]
         },
         {
-          "section": "claim_financial_ledger",
+          "section": "claim_financial_ledger_blocks",
           "approx_page_after_cover": 178,
-          "join_key": "incident_number",
+          "join_key": "reference_number",
           "fields": [
             "bi",
             "pd",
@@ -1263,18 +1571,14 @@
         "pdf": "pdfs/mixed_040_001_crosspage.pdf",
         "html": "html/mixed_040_001_crosspage.html",
         "ocr_md": "transcripts/ocr_gemini/mixed_040_001_crosspage.md",
-        "json_size_bytes": 50540,
-        "pdf_size_bytes": 1382491,
-        "html_size_bytes": 706075,
-        "ocr_size_bytes": 389738,
-        "metadata": "metadata/mixed_040_001_crosspage.json"
+        "json_size_bytes": 51549,
+        "pdf_size_bytes": 1797630,
+        "html_size_bytes": 807202,
+        "ocr_size_bytes": 758443
       },
       "transcripts_available": [
         "ocr"
-      ],
-      "template": "claim_crosspage_multihop",
-      "provenance": "Synthetic generated document. Private production references were used only for visual layout review; no production PDFs, names, account numbers, or raw customer data are included in this repository.",
-      "hf_config": "claim_multihop"
+      ]
     },
     {
       "id": "mixed_cgl_040_001",
@@ -1331,8 +1635,8 @@
       "num_policy_items": 619,
       "num_primary_policy_items": 72,
       "num_target_records": 619,
-      "pages_estimate": 278,
-      "pdf_page_count": 278,
+      "pages_estimate": 316,
+      "pdf_page_count": 316,
       "document_count": 1,
       "evidence_pattern": "single_document_policy_packet_long_range_join",
       "minimum_gap_pages_between_primary_and_last_evidence": 174,
@@ -1352,7 +1656,11 @@
         "multi_row",
         "multi_column",
         "duplicates",
-        "distractor_sections"
+        "distractor_sections",
+        "natural_long_range_join",
+        "inherited_context",
+        "split_records",
+        "non_target_rows"
       ],
       "layout_templates": [
         "declarations",
@@ -1480,13 +1788,26 @@
         "json_size_bytes": 458192,
         "pdf_size_bytes": 2007673,
         "html_size_bytes": 1376002,
-        "ocr_size_bytes": 1195630,
+        "ocr_size_bytes": 807375,
         "metadata": "metadata/mixed_cgl_040_001.json"
       },
       "transcripts_available": [
         "ocr"
       ],
-      "template": "policy_multihop_cgl"
+      "template": "policy_multihop_cgl",
+      "pdf_size_bytes": 1461026,
+      "html_size_bytes": 1169180,
+      "layout_revision": {
+        "date": "2026-06-28T09:38:55.491297+00:00",
+        "purpose": "reduce deterministic parser friendliness with production-like layout variation",
+        "ocr_status": "regenerated_from_current_pdf",
+        "ocr_regenerated_at": "2026-06-28T21:44:24.950682+00:00"
+      },
+      "artifacts": {
+        "pdf_sha256": "7b989dbeee4aa9c0b55d257f8de0495bbaf4b4155a433fc492d62bee3df1493d",
+        "html_sha256": "bc8f42bb07b71cc430d29d06bd1af630f665a7124871cf71f6c7c2ac156ac3b2"
+      },
+      "ocr_md_size_bytes": 807375
     },
     {
       "id": "multihop_012_001_crosspage",
@@ -1497,15 +1818,15 @@
       "target_record_type": "loss_run_incident",
       "num_claims": 12,
       "num_target_records": 12,
-      "pages_estimate": 76,
-      "pdf_page_count": 76,
+      "pages_estimate": 80,
+      "pdf_page_count": 80,
       "document_count": 1,
       "evidence_pattern": "single_document_long_range_cross_page_join",
       "minimum_gap_pages_between_primary_and_last_evidence": 64,
       "problems": [
-        "coded_values",
         "cross_page_join",
         "long_range_evidence",
+        "coded_values",
         "distractor_sections",
         "ocr_condition",
         "page_breaks",
@@ -1513,17 +1834,26 @@
         "multiple_tables",
         "multi_row",
         "multi_column",
-        "duplicates"
+        "duplicates",
+        "natural_long_range_join",
+        "inherited_context",
+        "non_target_rows",
+        "mixed_prose_tables",
+        "non_sequential_identifiers"
       ],
       "layout_templates": [
         "packet_cover",
         "portal_receipt",
         "official_request_response",
-        "primary_schedule",
+        "claim_file_cards",
         "spreadsheet_unit_reference",
         "mileage_schedule",
         "rotated_scan_excerpt",
-        "long_range_appendices"
+        "driver_assignment_cards",
+        "policy_register_cards",
+        "cause_classification_narrative",
+        "claimant_notice_cards",
+        "financial_ledger_blocks"
       ],
       "has_duplicates": false,
       "seed": 14114,
@@ -1534,7 +1864,7 @@
       ],
       "evidence_map": [
         {
-          "section": "primary_claim_extract",
+          "section": "claim_intake_file_cards",
           "approx_page_after_cover": 1,
           "fields": [
             "incident_number",
@@ -1549,7 +1879,7 @@
           ]
         },
         {
-          "section": "fleet_driver_assignment_roster",
+          "section": "fleet_driver_assignment_cards",
           "approx_page_after_cover": 30,
           "join_key": "unit_number",
           "fields": [
@@ -1559,7 +1889,7 @@
           ]
         },
         {
-          "section": "policy_register",
+          "section": "policy_register_cards",
           "approx_page_after_cover": 31,
           "join_key": "policy_number",
           "fields": [
@@ -1571,7 +1901,7 @@
           ]
         },
         {
-          "section": "loss_cause_classification_appendix",
+          "section": "loss_cause_classification_narrative",
           "approx_page_after_cover": 50,
           "join_key": "cause_code",
           "fields": [
@@ -1581,18 +1911,18 @@
           ]
         },
         {
-          "section": "claimant_notice_index",
+          "section": "claimant_notice_cards",
           "approx_page_after_cover": 51,
-          "join_key": "incident_number",
+          "join_key": "reference_number",
           "fields": [
             "claimants",
             "adjuster_notes"
           ]
         },
         {
-          "section": "claim_financial_ledger",
+          "section": "claim_financial_ledger_blocks",
           "approx_page_after_cover": 70,
-          "join_key": "incident_number",
+          "join_key": "reference_number",
           "fields": [
             "bi",
             "pd",
@@ -1606,18 +1936,14 @@
         "pdf": "pdfs/multihop_012_001_crosspage.pdf",
         "html": "html/multihop_012_001_crosspage.html",
         "ocr_md": "transcripts/ocr_gemini/multihop_012_001_crosspage.md",
-        "json_size_bytes": 14923,
-        "pdf_size_bytes": 786889,
-        "html_size_bytes": 259606,
-        "ocr_size_bytes": 138256,
-        "metadata": "metadata/multihop_012_001_crosspage.json"
+        "json_size_bytes": 15364,
+        "pdf_size_bytes": 981600,
+        "html_size_bytes": 296086,
+        "ocr_size_bytes": 276175
       },
       "transcripts_available": [
         "ocr"
-      ],
-      "template": "claim_crosspage_multihop",
-      "provenance": "Synthetic generated document. Private production references were used only for visual layout review; no production PDFs, names, account numbers, or raw customer data are included in this repository.",
-      "hf_config": "claim_multihop"
+      ]
     },
     {
       "id": "multihop_025_001_crosspage",
@@ -1628,16 +1954,16 @@
       "target_record_type": "loss_run_incident",
       "num_claims": 25,
       "num_target_records": 25,
-      "pages_estimate": 126,
-      "pdf_page_count": 126,
+      "pages_estimate": 136,
+      "pdf_page_count": 136,
       "document_count": 1,
       "evidence_pattern": "single_document_long_range_cross_page_join",
       "minimum_gap_pages_between_primary_and_last_evidence": 114,
       "problems": [
-        "claimant_lookup",
-        "many_to_one_policy",
         "cross_page_join",
         "long_range_evidence",
+        "many_to_one_policy",
+        "claimant_lookup",
         "distractor_sections",
         "ocr_condition",
         "page_breaks",
@@ -1645,17 +1971,26 @@
         "multiple_tables",
         "multi_row",
         "multi_column",
-        "duplicates"
+        "duplicates",
+        "natural_long_range_join",
+        "inherited_context",
+        "non_target_rows",
+        "mixed_prose_tables",
+        "non_sequential_identifiers"
       ],
       "layout_templates": [
         "packet_cover",
         "portal_receipt",
         "official_request_response",
-        "primary_schedule",
+        "claim_file_cards",
         "spreadsheet_unit_reference",
         "mileage_schedule",
         "rotated_scan_excerpt",
-        "long_range_appendices"
+        "driver_assignment_cards",
+        "policy_register_cards",
+        "cause_classification_narrative",
+        "claimant_notice_cards",
+        "financial_ledger_blocks"
       ],
       "has_duplicates": false,
       "seed": 6869,
@@ -1666,7 +2001,7 @@
       ],
       "evidence_map": [
         {
-          "section": "primary_claim_extract",
+          "section": "claim_intake_file_cards",
           "approx_page_after_cover": 1,
           "fields": [
             "incident_number",
@@ -1681,7 +2016,7 @@
           ]
         },
         {
-          "section": "fleet_driver_assignment_roster",
+          "section": "fleet_driver_assignment_cards",
           "approx_page_after_cover": 54,
           "join_key": "unit_number",
           "fields": [
@@ -1691,7 +2026,7 @@
           ]
         },
         {
-          "section": "policy_register",
+          "section": "policy_register_cards",
           "approx_page_after_cover": 55,
           "join_key": "policy_number",
           "fields": [
@@ -1703,7 +2038,7 @@
           ]
         },
         {
-          "section": "loss_cause_classification_appendix",
+          "section": "loss_cause_classification_narrative",
           "approx_page_after_cover": 90,
           "join_key": "cause_code",
           "fields": [
@@ -1713,18 +2048,18 @@
           ]
         },
         {
-          "section": "claimant_notice_index",
+          "section": "claimant_notice_cards",
           "approx_page_after_cover": 91,
-          "join_key": "incident_number",
+          "join_key": "reference_number",
           "fields": [
             "claimants",
             "adjuster_notes"
           ]
         },
         {
-          "section": "claim_financial_ledger",
+          "section": "claim_financial_ledger_blocks",
           "approx_page_after_cover": 120,
-          "join_key": "incident_number",
+          "join_key": "reference_number",
           "fields": [
             "bi",
             "pd",
@@ -1738,18 +2073,14 @@
         "pdf": "pdfs/multihop_025_001_crosspage.pdf",
         "html": "html/multihop_025_001_crosspage.html",
         "ocr_md": "transcripts/ocr_gemini/multihop_025_001_crosspage.md",
-        "json_size_bytes": 31323,
-        "pdf_size_bytes": 1040565,
-        "html_size_bytes": 448466,
-        "ocr_size_bytes": 246868,
-        "metadata": "metadata/multihop_025_001_crosspage.json"
+        "json_size_bytes": 32067,
+        "pdf_size_bytes": 1335078,
+        "html_size_bytes": 515445,
+        "ocr_size_bytes": 471615
       },
       "transcripts_available": [
         "ocr"
-      ],
-      "template": "claim_crosspage_multihop",
-      "provenance": "Synthetic generated document. Private production references were used only for visual layout review; no production PDFs, names, account numbers, or raw customer data are included in this repository.",
-      "hf_config": "claim_multihop"
+      ]
     },
     {
       "id": "multihop_bop_012_001",
@@ -1802,8 +2133,8 @@
       "num_policy_items": 360,
       "num_primary_policy_items": 48,
       "num_target_records": 360,
-      "pages_estimate": 142,
-      "pdf_page_count": 142,
+      "pages_estimate": 158,
+      "pdf_page_count": 158,
       "document_count": 1,
       "evidence_pattern": "single_document_policy_packet_long_range_join",
       "minimum_gap_pages_between_primary_and_last_evidence": 74,
@@ -1820,7 +2151,11 @@
         "multi_row",
         "multi_column",
         "duplicates",
-        "distractor_sections"
+        "distractor_sections",
+        "natural_long_range_join",
+        "inherited_context",
+        "split_records",
+        "non_target_rows"
       ],
       "layout_templates": [
         "declarations",
@@ -1944,13 +2279,26 @@
         "json_size_bytes": 239867,
         "pdf_size_bytes": 777876,
         "html_size_bytes": 495557,
-        "ocr_size_bytes": 459807,
+        "ocr_size_bytes": 402001,
         "metadata": "metadata/multihop_bop_012_001.json"
       },
       "transcripts_available": [
         "ocr"
       ],
-      "template": "policy_multihop_bop"
+      "template": "policy_multihop_bop",
+      "pdf_size_bytes": 820073,
+      "html_size_bytes": 582894,
+      "layout_revision": {
+        "date": "2026-06-28T09:38:53.785980+00:00",
+        "purpose": "reduce deterministic parser friendliness with production-like layout variation",
+        "ocr_status": "regenerated_from_current_pdf",
+        "ocr_regenerated_at": "2026-06-28T21:44:24.950682+00:00"
+      },
+      "artifacts": {
+        "pdf_sha256": "68ef7778a4237d30daa9475a3583b118f3e4ae146f43137e6459ffd2225424a9",
+        "html_sha256": "2dc789d29e1ced7c103a0fff0b553c613e9c5258778728eae99f1c94984741aa"
+      },
+      "ocr_md_size_bytes": 402001
     },
     {
       "id": "multihop_wc_025_001",
@@ -2005,8 +2353,8 @@
       "num_policy_items": 510,
       "num_primary_policy_items": 60,
       "num_target_records": 510,
-      "pages_estimate": 194,
-      "pdf_page_count": 194,
+      "pages_estimate": 220,
+      "pdf_page_count": 220,
       "document_count": 1,
       "evidence_pattern": "single_document_policy_packet_long_range_join",
       "minimum_gap_pages_between_primary_and_last_evidence": 116,
@@ -2024,7 +2372,11 @@
         "multi_row",
         "multi_column",
         "duplicates",
-        "distractor_sections"
+        "distractor_sections",
+        "natural_long_range_join",
+        "inherited_context",
+        "split_records",
+        "non_target_rows"
       ],
       "layout_templates": [
         "declarations",
@@ -2150,13 +2502,26 @@
         "json_size_bytes": 327471,
         "pdf_size_bytes": 1384647,
         "html_size_bytes": 911306,
-        "ocr_size_bytes": 777435,
+        "ocr_size_bytes": 537185,
         "metadata": "metadata/multihop_wc_025_001.json"
       },
       "transcripts_available": [
         "ocr"
       ],
-      "template": "policy_multihop_wc"
+      "template": "policy_multihop_wc",
+      "pdf_size_bytes": 1056909,
+      "html_size_bytes": 799989,
+      "layout_revision": {
+        "date": "2026-06-28T09:38:54.527948+00:00",
+        "purpose": "reduce deterministic parser friendliness with production-like layout variation",
+        "ocr_status": "regenerated_from_current_pdf",
+        "ocr_regenerated_at": "2026-06-28T21:44:24.950682+00:00"
+      },
+      "artifacts": {
+        "pdf_sha256": "ed649fd8a97fea912c6ad8ead87f15236ab2f5d39e7cce766879ad8089ce284b",
+        "html_sha256": "5eb0cc1acb38e18a4a54364bba050d9c8e8ff581b866e9af7c8fb79f26ad8f89"
+      },
+      "ocr_md_size_bytes": 537185
     },
     {
       "id": "vehicle_schedule_sparse_001",
@@ -2173,7 +2538,11 @@
         "ocr_condition",
         "page_breaks",
         "large_doc",
-        "multiple_tables"
+        "multiple_tables",
+        "layout_randomization",
+        "inherited_context",
+        "split_records",
+        "non_target_rows"
       ],
       "files": {
         "ground_truth": "ground_truth/vehicle_schedule_sparse_001.json",
@@ -2184,7 +2553,7 @@
         "pdf_size_bytes": 99528,
         "html_size_bytes": 87711,
         "ocr_md": "transcripts/ocr_gemini/vehicle_schedule_sparse_001.md",
-        "ocr_size_bytes": 32746
+        "ocr_size_bytes": 68892
       },
       "transcripts_available": [
         "ocr"
@@ -2193,9 +2562,22 @@
       "document_count": 1,
       "evidence_pattern": "single_document",
       "provenance": "Synthetic generated document. Private production references were used only for visual layout review; no production PDFs, names, account numbers, or raw customer data are included in this repository.",
-      "pages_estimate": 25,
-      "pdf_page_count": 25,
-      "hf_config": "core_operations"
+      "pages_estimate": 37,
+      "pdf_page_count": 37,
+      "hf_config": "core_operations",
+      "pdf_size_bytes": 442739,
+      "html_size_bytes": 171500,
+      "layout_revision": {
+        "date": "2026-06-28T14:34:58.086757+00:00",
+        "purpose": "reduce deterministic parser friendliness with production-like layout variation",
+        "ocr_status": "regenerated_from_current_pdf",
+        "ocr_regenerated_at": "2026-06-28T21:44:24.950682+00:00"
+      },
+      "artifacts": {
+        "pdf_sha256": "8cac2eb40553d40115be6a7fd34bc07ec14151f46a5dd947276bc8b232216de1",
+        "html_sha256": "674179a4f56b2141d4cdf14f42dfb5d2eda6695470d8a9fccabd423abd9b7849"
+      },
+      "ocr_md_size_bytes": 68892
     },
     {
       "id": "vehicle_schedule_sparse_002",
@@ -2212,7 +2594,11 @@
         "ocr_condition",
         "page_breaks",
         "large_doc",
-        "multiple_tables"
+        "multiple_tables",
+        "layout_randomization",
+        "inherited_context",
+        "split_records",
+        "non_target_rows"
       ],
       "files": {
         "ground_truth": "ground_truth/vehicle_schedule_sparse_002.json",
@@ -2223,7 +2609,7 @@
         "pdf_size_bytes": 99664,
         "html_size_bytes": 87672,
         "ocr_md": "transcripts/ocr_gemini/vehicle_schedule_sparse_002.md",
-        "ocr_size_bytes": 32858
+        "ocr_size_bytes": 65201
       },
       "transcripts_available": [
         "ocr"
@@ -2232,13 +2618,26 @@
       "document_count": 1,
       "evidence_pattern": "single_document",
       "provenance": "Synthetic generated document. Private production references were used only for visual layout review; no production PDFs, names, account numbers, or raw customer data are included in this repository.",
-      "pages_estimate": 25,
-      "pdf_page_count": 25,
-      "hf_config": "core_operations"
+      "pages_estimate": 37,
+      "pdf_page_count": 37,
+      "hf_config": "core_operations",
+      "pdf_size_bytes": 441856,
+      "html_size_bytes": 171463,
+      "layout_revision": {
+        "date": "2026-06-28T14:34:58.488572+00:00",
+        "purpose": "reduce deterministic parser friendliness with production-like layout variation",
+        "ocr_status": "regenerated_from_current_pdf",
+        "ocr_regenerated_at": "2026-06-28T21:44:24.950682+00:00"
+      },
+      "artifacts": {
+        "pdf_sha256": "b3103e7d82701ffd8ce82d2ed87635e5578e3b66b19f4d80197d7caf8eb6ddde",
+        "html_sha256": "2f425d9fc1d1e17d45ae6c41635bff567dc72a5a2eb170395e230905b4eafe6a"
+      },
+      "ocr_md_size_bytes": 65201
     }
   ],
-  "updated_at": "2026-06-24T15:42:39.180873+00:00",
-  "total_core_operations_records": 31088,
+  "updated_at": "2026-06-29T07:16:19.604937+00:00",
+  "total_core_operations_records": 31884,
   "total_claim_records": 77,
   "total_policy_records": 1489,
   "complexity_regimes": [
@@ -2246,6 +2645,7 @@
     "driver_mvr_request_and_roster",
     "driver_schedule_spreadsheet_export",
     "ifta_mileage_by_vehicle",
+    "ifta_multisection_return_packet",
     "ifta_return_schedule_details",
     "ifta_tax_return_inquiry_detail",
     "ifta_tax_return_summary",
@@ -2253,7 +2653,7 @@
     "policy_multi_hop",
     "vehicle_schedule_spreadsheet_export"
   ],
-  "total_documents": 34,
+  "total_documents": 36,
   "complexity_stressors": {
     "page_breaks": "Target lists or supporting sections continue across page boundaries, often with repeated headers or inherited context.",
     "multi_row": "One logical record can include wrapped notes, descriptions, source notes, clause prose, or continuation rows rather than a single flat row.",
@@ -2264,7 +2664,12 @@
     "merged_cells": "Tables use merged cells, section-spanning rows, or colspan/rowspan-style layout structure.",
     "ocr_condition": "Released transcripts are OCR output from rendered PDF page images.",
     "long_range_evidence": "A target record may require joining evidence from distant sections of the same PDF.",
-    "heterogeneous_record_list": "A single output list may contain several record types with different fields."
+    "heterogeneous_record_list": "A single output list may contain several record types with different fields.",
+    "layout_randomization": "Rows use several realistic layouts within one document, including tables, cards, wrapped audit lines, and continuation blocks.",
+    "inherited_context": "Fields such as schedule, fuel type, policy period, location, or coverage scope must be inherited from section headers.",
+    "split_records": "One target record can be split across multiple visible lines or cards.",
+    "non_target_rows": "Support, subtotal, prior-period, and note rows are interleaved with target records.",
+    "natural_long_range_join": "Distant evidence is connected by normal business references rather than explicit benchmark join instructions."
   },
   "problem_tags": [
     "businessowners_policy",
@@ -2274,6 +2679,7 @@
     "commercial_general_liability",
     "continuation_notes",
     "cross_page_join",
+    "cross_section_join",
     "distractor_forms",
     "distractor_locations",
     "distractor_sections",
@@ -2283,7 +2689,9 @@
     "form_endorsement_links",
     "heterogeneous_record_list",
     "high_density_long_list",
+    "inherited_context",
     "large_doc",
+    "layout_randomization",
     "limits_forms_exclusions",
     "location_scoped_coverage",
     "long_range_evidence",
@@ -2295,10 +2703,15 @@
     "multi_column",
     "multi_row",
     "multiple_tables",
+    "natural_long_range_join",
+    "non_target_rows",
     "ocr_condition",
+    "ocr_layout_condition",
     "page_breaks",
     "production_like_layout",
+    "repeated_keys",
     "sparse_driver_fields",
+    "split_records",
     "summary_distractors",
     "variable_policy_sections",
     "workers_compensation_policy"

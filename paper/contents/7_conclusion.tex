@@ -1,4 +1,4 @@
-LongListBench targets a persistent gap in document understanding evaluation: extracting long lists of repeated entities from semi-structured business documents with complex layouts, OCR-transcribed text, and long-range evidence requirements. The current release provides 34 synthetic PDFs, 32{,}654 target records, OCR transcripts, structured ground truth, per-sample metadata, and evaluator scripts for field-level scoring.
+LongListBench targets a persistent gap in document understanding evaluation: extracting long lists of repeated entities from semi-structured business documents with complex layouts, OCR-transcribed text, and long-range evidence requirements. The current release provides 36 synthetic PDFs, 33{,}450 target records, OCR transcripts, structured ground truth, per-sample metadata, and evaluator scripts for field-level scoring.
 
 \subsection{Summary}
 Our main contributions are:
@@ -13,4 +13,4 @@ Our main contributions are:
 \subsection{Practical takeaways}
 The benchmark is designed to measure list completeness, field alignment, and long-document extraction behavior. A useful result report should include the input condition, model, extraction protocol, target record count, corpus-level micro precision/recall/$F_1$, document-macro summaries, predicted record counts, and whether the run includes multi-hop samples.
 
-The next step is empirical: rerun one-shot and agentic extraction on the current OCR corpus, then compare protocols that can inspect, join, and verify records across long documents. We expect this dataset to be most useful for future method papers that study agentic or retrieval-loop extraction systems rather than for demonstrating a single fixed prompt.
+The current release includes an OCR-conditioned agentic baseline across all 36 documents. We expect this dataset to be most useful for future method papers that compare agentic, retrieval-loop, and verification-based extraction systems across the same public corpus, rather than for demonstrating a single fixed prompt or a template-specific parser.

@@ -1,4 +1,4 @@
-We evaluate systems on the task of extracting a complete list of target records from each rendered PDF or from its OCR transcript. A valid prediction is a JSON object whose top-level list is \texttt{incidents} for claim multi-hop incident tasks and \texttt{records} for operations, external loss-run, and policy list tasks.
+We evaluate systems on the task of extracting a complete list of target records from each rendered PDF or from its OCR transcript. Each sample is evaluated as a new document: the extractor receives the document input and the target schema or field contract, then returns all records for that document. A valid prediction is a JSON object whose top-level list is \texttt{incidents} for claim multi-hop incident tasks and \texttt{records} for operations, external loss-run, and policy list tasks.
 
 \subsection{Input condition}
 The current release includes an OCR transcript for every PDF. The evaluator treats the transcript condition as part of the experiment configuration, so future runs can compare OCR transcripts, direct PDF inputs, or additional OCR engines without changing the ground truth. Results should therefore report the input condition, model, extraction protocol, and whether the run includes long-range multi-hop samples.
@@ -12,8 +12,14 @@ The entire selected transcript is provided to the model in a single call. This r
 \paragraph{Agentic sandbox extraction.}
 The agentic regime places the OCR transcript inside a sandbox and gives the model filesystem and code-execution tools. The model receives the target schema or field contract, decides how to inspect and segment the document, writes a JSON output file, and can run verification code before finishing. This protocol is a better match for long-list and long-range evidence tasks because it can search, slice, parse tables, and verify counts programmatically.
 
+\paragraph{Parser and template diagnostics.}
+Template-specific parsers are useful sanity checks, especially for structured operations families, but they are not the central benchmark target. In realistic agentic extraction, the system is given the current document and may write document-specific code if that is the most reliable way to recover the records. A parser trained on one template and frozen for another answers a different question: template-transfer robustness. We therefore treat deterministic parsers as diagnostics for identifying control families and parser-friendly layouts, while primary comparisons should use per-document extraction protocols run under the same input condition.
+
 \paragraph{Other protocols.}
 The evaluator scripts can also support fixed chunking, retrieval loops, and verification passes. These are extraction protocols and should be reported explicitly, because protocol design can dominate performance on long documents.
+
+\subsection{Regime-aware reporting}
+Aggregate micro-$F_1$ is useful, but it can hide which document complexities matter. We recommend reporting results by release config and by stressor metadata. The core operations config contains scale and completeness controls, including IFTA and spreadsheet-like reports where table extraction can be nearly deterministic. The claim and policy packet configs are the primary hard regimes: they require inherited context, distant evidence, heterogeneous schemas, and distractor handling inside one document. A strong result report should therefore include at least: corpus micro-$F_1$, document-macro summaries, predicted record counts, per-config scores, and stressor slices for \path{ocr_layout_condition}, \path{cross_section_join}, \path{long_range_evidence}, and \path{heterogeneous_record_list}.
 
 \subsection{Validation and report regeneration}
 Model outputs are parsed, normalized, and scored against the per-document ground truth. Reports are stored as machine-readable JSON with Markdown summaries. The checker can regenerate metrics from saved predictions and golden data, which makes it possible to audit reports without rerunning model calls.

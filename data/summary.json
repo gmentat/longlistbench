@@ -1,7 +1,11 @@
 {
-  "num_pdfs": 34,
-  "total_target_records": 32654,
+  "num_pdfs": 36,
+  "total_target_records": 33450,
   "by_template": {
+    "claim_crosspage_multihop": {
+      "pdfs": 3,
+      "records": 77
+    },
     "driver_mvr_request_and_roster": {
       "pdfs": 3,
       "records": 1260
@@ -13,6 +17,10 @@
     "ifta_mileage_by_vehicle": {
       "pdfs": 8,
       "records": 17565
+    },
+    "ifta_multisection_return_packet": {
+      "pdfs": 2,
+      "records": 796
     },
     "ifta_return_schedule_details": {
       "pdfs": 5,
@@ -30,17 +38,17 @@
       "pdfs": 3,
       "records": 900
     },
-    "claim_crosspage_multihop": {
-      "pdfs": 3,
-      "records": 77
+    "policy_multihop_bop": {
+      "pdfs": 1,
+      "records": 360
     },
-    "mixed": {
+    "policy_multihop_cgl": {
       "pdfs": 1,
       "records": 619
     },
-    "multihop": {
-      "pdfs": 2,
-      "records": 870
+    "policy_multihop_wc": {
+      "pdfs": 1,
+      "records": 510
     },
     "vehicle_schedule_spreadsheet_export": {
       "pdfs": 2,

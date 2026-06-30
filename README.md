@@ -4,6 +4,8 @@ Benchmark for long-list entity extraction from complex semi-structured business 
 
 This benchmark was developed at [Kay.ai](https://kay.ai).
 
+LongListBench is intended for per-document extraction evaluation: give a system one PDF or OCR transcript plus the target schema/field contract, then score the complete list it returns. Structured operations families such as IFTA are useful controls for scale, OCR preservation, and row completeness; claim and policy packets are the harder regimes for agentic or retrieval-loop extraction because records require distant evidence, inherited context, and heterogeneous schemas.
+
 ## Quick Start
 
 ```bash
@@ -65,7 +67,7 @@ The exported Hugging Face configs are:
 
 | Config | Contents |
 |--------|----------|
-| `core_operations` | 28 production-like commercial insurance and trucking-operation PDFs with dense repeated operations and loss-run records |
+| `core_operations` | 30 production-like commercial insurance and trucking-operation PDFs with dense repeated operations, IFTA, and loss-run records |
 | `claim_multihop` | 3 claim PDFs requiring long-range cross-page joins |
 | `policy_packets` | 3 long BOP, WC, and CGL policy packets requiring cross-page extraction |
 
@@ -87,9 +89,9 @@ python benchmarks/export_hf_dataset.py \
 
 ## Benchmark Overview
 
-- **34 benchmark instances** across 12 production-like document families
-- **32,654 target records** across commercial operations, claim, and policy extraction tasks
-- **28 core operations PDFs** covering IFTA, driver/MVR, vehicle schedule, and loss-run layouts
+- **36 benchmark instances** across 13 production-like document families
+- **33,450 target records** across commercial operations, claim, and policy extraction tasks
+- **30 core operations PDFs** covering IFTA, driver/MVR, vehicle schedule, and loss-run layouts
 - **3 policy PDFs** covering long BOP, WC, and CGL policy packets
 - **3 claim cross-page PDFs**, with 3 of the policy PDFs also requiring long-range cross-page extraction
 - **Ground truth annotations** in JSON format
@@ -119,6 +121,7 @@ data/
 | Family | PDFs | Target records |
 |--------|-----:|---------------:|
 | `ifta_mileage_by_vehicle` | 8 | 17,565 |
+| `ifta_multisection_return_packet` | 2 | 796 |
 | `ifta_return_schedule_details` | 5 | 4,923 |
 | `ifta_tax_return_summary` | 4 | 3,040 |
 | `driver_mvr_request_and_roster` | 3 | 1,260 |
@@ -145,7 +148,10 @@ LongListBench tracks cross-cutting stressors in each instance's `problems` metad
 | `multi_column` | Two-column or form-like layouts stress reading order. |
 | `merged_cells` | Tables use merged cells, section-spanning rows, or `colspan`/`rowspan` structure. |
 | `ocr_condition` | Released transcripts are OCR output from rendered PDF page images. |
+| `ocr_layout_condition` | OCR preserves visual spacing and reading order instead of converting tables into clean CSV-style rows. |
 | `long_range_evidence` | Required fields must be joined from distant sections of the same PDF. |
+| `cross_section_join` | A target record must be assembled from separately labeled sections, such as return summary, distance/gallon schedules, and liability schedules. |
+| `repeated_keys` | Common keys such as states or jurisdictions repeat across sections or returns, so the key alone is insufficient for matching. |
 | `heterogeneous_record_list` | One output list contains multiple schema families, especially in policy packets. |
 
 These tags are present in `data/manifest.json`, `data/metadata/{sample_id}.json`, the browsable `data/index.html`, and the Hugging Face export.
@@ -162,7 +168,10 @@ The PDFs do not print these labels, but the stressors are visible in the documen
 | `multi_column` | `mixed_cgl_040_001`, pages 139-150; `multihop_wc_025_001`, pages 95-106 | Material policy provisions are laid out in two-column policy-form pages. |
 | `merged_cells` | `loss_run_external_001`, page 1; `ifta_tax_inquiry_001`, page 1 | Section-spanning rows and wide description/status cells interrupt the tabular structure. |
 | `ocr_condition` | Any PDF with `data/transcripts/ocr_gemini/{sample_id}.md`, for example `loss_run_external_001`, page 1 | The released text input is OCR output from rendered page images, not the HTML text layer. |
+| `ocr_layout_condition` | `ifta_multisection_return_001`, pages 2 and 4 | OCR preserves the visual Schedule A table and dense Jurisdictions tax-detail table instead of a clean row table. |
 | `long_range_evidence` | `multihop_012_001_crosspage`, pages 4, 36, 56, 57, 76; `mixed_040_001_crosspage`, pages 4, 86, 143, 144, 186 | A front claim row must be joined to driver, policy, cause-code, claimant, and ledger sections far apart in one PDF. |
+| `cross_section_join` | `ifta_multisection_return_001`, pages 1, 2, 4 | Each jurisdiction row combines return header context, Schedule A mileage/gallon values, and Jurisdictions tax-detail values while ignoring adjustment/support rows. |
+| `repeated_keys` | `ifta_multisection_return_001`, pages 2, 4, 8, 10 | The same jurisdiction codes recur across returns and sections, so state code alone is not a unique row key. |
 | `heterogeneous_record_list` | `multihop_bop_012_001`, pages 26, 48, 94, 127, 142; `mixed_cgl_040_001`, pages 66-73 and 139-150 | One output list mixes locations/classifications, coverage items, forms, endorsements, premiums, and clause records. |
 
 ### Multi-Hop Extensions
@@ -190,9 +199,9 @@ Join/evidence metadata is recorded in `data/metadata/{sample_id}.json`; the rend
 
 The policy suite has 3 commercial insurance policy PDFs and 1,489 target policy records. A policy packet is the contract document issued by an insurer; it combines declarations, covered locations or classifications, coverage limits and deductibles, rating or premium schedules, required forms, material policy clauses, and endorsements that modify the base policy. The samples cover Businessowners Policy (BOP), Workers Compensation (WC), and Commercial General Liability (CGL) schemas inspired by real policy-review workflows. The visible document content is synthetic, but the packet structure mirrors observed commercial policy packets.
 
-Interpret the configs separately. `core_operations` contains high-density structured reports where deterministic row parsers can perform well; these files measure scale, OCR preservation, and output completeness. The claim and policy packet configs are the stronger complex cases, with inherited context, heterogeneous record types, distant supporting sections, and distractor material.
+Interpret the configs separately. `core_operations` contains high-density structured reports where deterministic row parsers or document-specific agent code can perform well; those files measure scale, OCR preservation, and output completeness. The multisection IFTA files within `core_operations` add OCR-layout preservation and cross-section joins. The claim and policy packet configs are the stronger complex packet cases, with inherited context, heterogeneous record types, distant supporting sections, and distractor material.
 
-OCR support should be interpreted at the affected-record level, not only by unique identifier coverage. For example, a single missing repeated header can affect many rows that inherit that value. The current validation reports 39 affected records across 32,654 total targets.
+OCR support should be interpreted at the affected-record level, not only by unique identifier coverage. For example, a single missing repeated header can affect many rows that inherit that value. The current validation reports 39 affected records across 33,450 total targets.
 
 | Sample | Pages | Target policy records |
 |--------|-------|-----------------------|
@@ -204,7 +213,25 @@ OCR support should be interpreted at the affected-record level, not only by uniq
 
 Saved reports under `benchmarks/results/` should be treated as local run artifacts unless their manifest hash matches the current `data/manifest.json`. After replacing layouts, rerun OCR and evaluation before citing current-layout or current-model baselines. The current released dataset includes OCR transcripts for every PDF.
 
-A current single-sample Codex CGL OCR probe is saved under `benchmarks/results/codex_policy_cgl_probe_ocr/`. It is a diagnostic run on `mixed_cgl_040_001`, not a full current-corpus leaderboard.
+The current full-corpus Codex/xhigh sandbox OCR run is saved under `benchmarks/results/codex_full_current_ocr_v2/`: 36 documents, 33,450 target records, 0 extraction errors, 97.8% micro-F1, 96.9% recall, 98.7% precision, and 96.7% document-macro F1.
+
+Key regime slices from that run:
+
+| Regime | Documents | Target records | Micro-F1 |
+|--------|----------:|---------------:|---------:|
+| Driver schedule spreadsheet export | 1 | 500 | 87.7% |
+| Driver/MVR request and roster | 3 | 1,260 | 89.1% |
+| IFTA multisection return packet | 2 | 796 | 91.1% |
+| Policy multi-hop | 3 | 1,489 | 92.8% |
+| Claim cross-page multi-hop | 3 | 77 | 97.1% |
+| External loss run | 3 | 900 | 97.2% |
+| IFTA return schedule details | 5 | 4,923 | 98.0% |
+| IFTA tax return inquiry detail | 2 | 1,300 | 99.4% |
+| IFTA tax return summary | 4 | 3,040 | 99.6% |
+| IFTA mileage by vehicle | 8 | 17,565 | 100.0% |
+| Vehicle schedule spreadsheet export | 2 | 1,600 | 100.0% |
+
+Full-context one-shot prompting is not treated as a full-corpus protocol for this release. It is useful as a lower-bound stress test, but the largest documents can hit model output limits or latency timeouts before returning a scoreable complete list.
 
 ## Development Setup
 

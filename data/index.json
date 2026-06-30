@@ -1,8 +1,8 @@
 {
-  "built_at": "2026-06-26T08:50:26.166921+00:00",
+  "built_at": "2026-06-29T06:52:21.719965+00:00",
   "dataset_dir": "/Users/anton/d/kay/longlistbench/data",
   "source_metadata": "manifest.json",
-  "total_instances": 34,
+  "total_instances": 36,
   "instances": [
     {
       "id": "driver_mvr_packet_001",
@@ -146,12 +146,16 @@
         "ocr_condition",
         "page_breaks",
         "large_doc",
-        "multiple_tables"
+        "multiple_tables",
+        "layout_randomization",
+        "inherited_context",
+        "split_records",
+        "non_target_rows"
       ],
       "num_claims": null,
       "num_policy_items": null,
       "num_target_records": 500,
-      "pages_estimate": 15,
+      "pages_estimate": 16,
       "seed": null,
       "files": {
         "pdf": "pdfs/driver_schedule_sparse_001.pdf",
@@ -162,11 +166,11 @@
         "html_exists": true,
         "ground_truth_exists": true,
         "ocr_md_exists": true,
-        "pdf_size_bytes": 87194,
-        "html_size_bytes": 45040,
+        "pdf_size_bytes": 207224,
+        "html_size_bytes": 59605,
         "json_size_bytes": 71571,
-        "ocr_md_size_bytes": 24512,
-        "pdf_pages": 15
+        "ocr_md_size_bytes": 28768,
+        "pdf_pages": 16
       },
       "transcripts_available": [
         "ocr"
@@ -517,6 +521,104 @@
       ]
     },
     {
+      "id": "ifta_multisection_return_001",
+      "complexity_regime": "ifta_multisection_return_packet",
+      "template_family": "ifta_multisection_return_packet",
+      "difficulty": "ifta_multisection_return_packet",
+      "format": "production_like_pdf",
+      "domain": "commercial_insurance_operations",
+      "hf_config": "core_operations",
+      "lob": null,
+      "target_record_type": "ifta_multisection_jurisdiction_row",
+      "problems": [
+        "high_density_long_list",
+        "production_like_layout",
+        "ocr_condition",
+        "ocr_layout_condition",
+        "page_breaks",
+        "large_doc",
+        "multiple_tables",
+        "multi_row",
+        "inherited_context",
+        "split_records",
+        "non_target_rows",
+        "repeated_keys",
+        "cross_section_join"
+      ],
+      "num_claims": null,
+      "num_policy_items": null,
+      "num_target_records": 335,
+      "pages_estimate": 60,
+      "seed": null,
+      "files": {
+        "pdf": "pdfs/ifta_multisection_return_001.pdf",
+        "html": "html/ifta_multisection_return_001.html",
+        "ground_truth": "ground_truth/ifta_multisection_return_001.json",
+        "ocr_md": "transcripts/ocr_gemini/ifta_multisection_return_001.md",
+        "pdf_exists": true,
+        "html_exists": true,
+        "ground_truth_exists": true,
+        "ocr_md_exists": true,
+        "pdf_size_bytes": 7339936,
+        "html_size_bytes": 203496,
+        "json_size_bytes": 150517,
+        "ocr_md_size_bytes": 194328,
+        "pdf_pages": 60
+      },
+      "transcripts_available": [
+        "ocr"
+      ]
+    },
+    {
+      "id": "ifta_multisection_return_002",
+      "complexity_regime": "ifta_multisection_return_packet",
+      "template_family": "ifta_multisection_return_packet",
+      "difficulty": "ifta_multisection_return_packet",
+      "format": "production_like_pdf",
+      "domain": "commercial_insurance_operations",
+      "hf_config": "core_operations",
+      "lob": null,
+      "target_record_type": "ifta_multisection_jurisdiction_row",
+      "problems": [
+        "high_density_long_list",
+        "production_like_layout",
+        "ocr_condition",
+        "ocr_layout_condition",
+        "page_breaks",
+        "large_doc",
+        "multiple_tables",
+        "multi_row",
+        "inherited_context",
+        "split_records",
+        "non_target_rows",
+        "repeated_keys",
+        "cross_section_join"
+      ],
+      "num_claims": null,
+      "num_policy_items": null,
+      "num_target_records": 461,
+      "pages_estimate": 84,
+      "seed": null,
+      "files": {
+        "pdf": "pdfs/ifta_multisection_return_002.pdf",
+        "html": "html/ifta_multisection_return_002.html",
+        "ground_truth": "ground_truth/ifta_multisection_return_002.json",
+        "ocr_md": "transcripts/ocr_gemini/ifta_multisection_return_002.md",
+        "pdf_exists": true,
+        "html_exists": true,
+        "ground_truth_exists": true,
+        "ocr_md_exists": true,
+        "pdf_size_bytes": 10208903,
+        "html_size_bytes": 280581,
+        "json_size_bytes": 207018,
+        "ocr_md_size_bytes": 272619,
+        "pdf_pages": 84
+      },
+      "transcripts_available": [
+        "ocr"
+      ]
+    },
+    {
       "id": "ifta_return_schedule_001",
       "complexity_regime": "ifta_return_schedule_details",
       "template_family": "ifta_return_schedule_details",
@@ -532,12 +634,16 @@
         "ocr_condition",
         "page_breaks",
         "large_doc",
-        "multiple_tables"
+        "multiple_tables",
+        "layout_randomization",
+        "inherited_context",
+        "split_records",
+        "non_target_rows"
       ],
       "num_claims": null,
       "num_policy_items": null,
       "num_target_records": 582,
-      "pages_estimate": 33,
+      "pages_estimate": 72,
       "seed": null,
       "files": {
         "pdf": "pdfs/ifta_return_schedule_001.pdf",
@@ -548,11 +654,11 @@
         "html_exists": true,
         "ground_truth_exists": true,
         "ocr_md_exists": true,
-        "pdf_size_bytes": 241682,
-        "html_size_bytes": 236812,
+        "pdf_size_bytes": 386861,
+        "html_size_bytes": 215584,
         "json_size_bytes": 205146,
-        "ocr_md_size_bytes": 64677,
-        "pdf_pages": 33
+        "ocr_md_size_bytes": 125901,
+        "pdf_pages": 72
       },
       "transcripts_available": [
         "ocr"
@@ -574,12 +680,16 @@
         "ocr_condition",
         "page_breaks",
         "large_doc",
-        "multiple_tables"
+        "multiple_tables",
+        "layout_randomization",
+        "inherited_context",
+        "split_records",
+        "non_target_rows"
       ],
       "num_claims": null,
       "num_policy_items": null,
       "num_target_records": 998,
-      "pages_estimate": 53,
+      "pages_estimate": 108,
       "seed": null,
       "files": {
         "pdf": "pdfs/ifta_return_schedule_002.pdf",
@@ -590,11 +700,11 @@
         "html_exists": true,
         "ground_truth_exists": true,
         "ocr_md_exists": true,
-        "pdf_size_bytes": 383511,
-        "html_size_bytes": 369490,
+        "pdf_size_bytes": 523651,
+        "html_size_bytes": 362237,
         "json_size_bytes": 352507,
-        "ocr_md_size_bytes": 112469,
-        "pdf_pages": 53
+        "ocr_md_size_bytes": 195868,
+        "pdf_pages": 108
       },
       "transcripts_available": [
         "ocr"
@@ -616,12 +726,16 @@
         "ocr_condition",
         "page_breaks",
         "large_doc",
-        "multiple_tables"
+        "multiple_tables",
+        "layout_randomization",
+        "inherited_context",
+        "split_records",
+        "non_target_rows"
       ],
       "num_claims": null,
       "num_policy_items": null,
       "num_target_records": 1085,
-      "pages_estimate": 58,
+      "pages_estimate": 114,
       "seed": null,
       "files": {
         "pdf": "pdfs/ifta_return_schedule_003.pdf",
@@ -632,11 +746,11 @@
         "html_exists": true,
         "ground_truth_exists": true,
         "ocr_md_exists": true,
-        "pdf_size_bytes": 410229,
-        "html_size_bytes": 402258,
+        "pdf_size_bytes": 549322,
+        "html_size_bytes": 392610,
         "json_size_bytes": 383530,
-        "ocr_md_size_bytes": 124298,
-        "pdf_pages": 58
+        "ocr_md_size_bytes": 212715,
+        "pdf_pages": 114
       },
       "transcripts_available": [
         "ocr"
@@ -658,12 +772,16 @@
         "ocr_condition",
         "page_breaks",
         "large_doc",
-        "multiple_tables"
+        "multiple_tables",
+        "layout_randomization",
+        "inherited_context",
+        "split_records",
+        "non_target_rows"
       ],
       "num_claims": null,
       "num_policy_items": null,
       "num_target_records": 1101,
-      "pages_estimate": 58,
+      "pages_estimate": 120,
       "seed": null,
       "files": {
         "pdf": "pdfs/ifta_return_schedule_004.pdf",
@@ -674,11 +792,11 @@
         "html_exists": true,
         "ground_truth_exists": true,
         "ocr_md_exists": true,
-        "pdf_size_bytes": 414081,
-        "html_size_bytes": 407442,
+        "pdf_size_bytes": 561678,
+        "html_size_bytes": 399750,
         "json_size_bytes": 389184,
-        "ocr_md_size_bytes": 124842,
-        "pdf_pages": 58
+        "ocr_md_size_bytes": 209128,
+        "pdf_pages": 120
       },
       "transcripts_available": [
         "ocr"
@@ -700,12 +818,16 @@
         "ocr_condition",
         "page_breaks",
         "large_doc",
-        "multiple_tables"
+        "multiple_tables",
+        "layout_randomization",
+        "inherited_context",
+        "split_records",
+        "non_target_rows"
       ],
       "num_claims": null,
       "num_policy_items": null,
       "num_target_records": 1157,
-      "pages_estimate": 61,
+      "pages_estimate": 126,
       "seed": null,
       "files": {
         "pdf": "pdfs/ifta_return_schedule_005.pdf",
@@ -716,11 +838,11 @@
         "html_exists": true,
         "ground_truth_exists": true,
         "ocr_md_exists": true,
-        "pdf_size_bytes": 431257,
-        "html_size_bytes": 428038,
+        "pdf_size_bytes": 581634,
+        "html_size_bytes": 420774,
         "json_size_bytes": 408894,
-        "ocr_md_size_bytes": 130772,
-        "pdf_pages": 61
+        "ocr_md_size_bytes": 229500,
+        "pdf_pages": 126
       },
       "transcripts_available": [
         "ocr"
@@ -743,12 +865,16 @@
         "page_breaks",
         "large_doc",
         "multiple_tables",
-        "merged_cells"
+        "merged_cells",
+        "layout_randomization",
+        "inherited_context",
+        "split_records",
+        "non_target_rows"
       ],
       "num_claims": null,
       "num_policy_items": null,
       "num_target_records": 650,
-      "pages_estimate": 17,
+      "pages_estimate": 29,
       "seed": null,
       "files": {
         "pdf": "pdfs/ifta_tax_inquiry_001.pdf",
@@ -759,11 +885,11 @@
         "html_exists": true,
         "ground_truth_exists": true,
         "ocr_md_exists": true,
-        "pdf_size_bytes": 184722,
-        "html_size_bytes": 59033,
+        "pdf_size_bytes": 222722,
+        "html_size_bytes": 84423,
         "json_size_bytes": 82865,
-        "ocr_md_size_bytes": 30824,
-        "pdf_pages": 17
+        "ocr_md_size_bytes": 44541,
+        "pdf_pages": 29
       },
       "transcripts_available": [
         "ocr"
@@ -786,12 +912,16 @@
         "page_breaks",
         "large_doc",
         "multiple_tables",
-        "merged_cells"
+        "merged_cells",
+        "layout_randomization",
+        "inherited_context",
+        "split_records",
+        "non_target_rows"
       ],
       "num_claims": null,
       "num_policy_items": null,
       "num_target_records": 650,
-      "pages_estimate": 17,
+      "pages_estimate": 29,
       "seed": null,
       "files": {
         "pdf": "pdfs/ifta_tax_inquiry_002.pdf",
@@ -802,11 +932,11 @@
         "html_exists": true,
         "ground_truth_exists": true,
         "ocr_md_exists": true,
-        "pdf_size_bytes": 185230,
-        "html_size_bytes": 59027,
+        "pdf_size_bytes": 222223,
+        "html_size_bytes": 84423,
         "json_size_bytes": 82865,
-        "ocr_md_size_bytes": 29014,
-        "pdf_pages": 17
+        "ocr_md_size_bytes": 55125,
+        "pdf_pages": 29
       },
       "transcripts_available": [
         "ocr"
@@ -828,12 +958,16 @@
         "ocr_condition",
         "page_breaks",
         "large_doc",
-        "multiple_tables"
+        "multiple_tables",
+        "layout_randomization",
+        "inherited_context",
+        "split_records",
+        "non_target_rows"
       ],
       "num_claims": null,
       "num_policy_items": null,
       "num_target_records": 760,
-      "pages_estimate": 20,
+      "pages_estimate": 34,
       "seed": null,
       "files": {
         "pdf": "pdfs/ifta_tax_summary_001.pdf",
@@ -844,11 +978,11 @@
         "html_exists": true,
         "ground_truth_exists": true,
         "ocr_md_exists": true,
-        "pdf_size_bytes": 483008,
-        "html_size_bytes": 186607,
+        "pdf_size_bytes": 449343,
+        "html_size_bytes": 269909,
         "json_size_bytes": 260441,
-        "ocr_md_size_bytes": 95874,
-        "pdf_pages": 20
+        "ocr_md_size_bytes": 131101,
+        "pdf_pages": 34
       },
       "transcripts_available": [
         "ocr"
@@ -870,12 +1004,16 @@
         "ocr_condition",
         "page_breaks",
         "large_doc",
-        "multiple_tables"
+        "multiple_tables",
+        "layout_randomization",
+        "inherited_context",
+        "split_records",
+        "non_target_rows"
       ],
       "num_claims": null,
       "num_policy_items": null,
       "num_target_records": 760,
-      "pages_estimate": 20,
+      "pages_estimate": 34,
       "seed": null,
       "files": {
         "pdf": "pdfs/ifta_tax_summary_002.pdf",
@@ -886,11 +1024,11 @@
         "html_exists": true,
         "ground_truth_exists": true,
         "ocr_md_exists": true,
-        "pdf_size_bytes": 483053,
-        "html_size_bytes": 186526,
+        "pdf_size_bytes": 449048,
+        "html_size_bytes": 269842,
         "json_size_bytes": 260276,
-        "ocr_md_size_bytes": 94806,
-        "pdf_pages": 20
+        "ocr_md_size_bytes": 130446,
+        "pdf_pages": 34
       },
       "transcripts_available": [
         "ocr"
@@ -912,12 +1050,16 @@
         "ocr_condition",
         "page_breaks",
         "large_doc",
-        "multiple_tables"
+        "multiple_tables",
+        "layout_randomization",
+        "inherited_context",
+        "split_records",
+        "non_target_rows"
       ],
       "num_claims": null,
       "num_policy_items": null,
       "num_target_records": 760,
-      "pages_estimate": 20,
+      "pages_estimate": 34,
       "seed": null,
       "files": {
         "pdf": "pdfs/ifta_tax_summary_003.pdf",
@@ -928,11 +1070,11 @@
         "html_exists": true,
         "ground_truth_exists": true,
         "ocr_md_exists": true,
-        "pdf_size_bytes": 482986,
-        "html_size_bytes": 186831,
+        "pdf_size_bytes": 449645,
+        "html_size_bytes": 270176,
         "json_size_bytes": 260638,
-        "ocr_md_size_bytes": 95557,
-        "pdf_pages": 20
+        "ocr_md_size_bytes": 117693,
+        "pdf_pages": 34
       },
       "transcripts_available": [
         "ocr"
@@ -954,12 +1096,16 @@
         "ocr_condition",
         "page_breaks",
         "large_doc",
-        "multiple_tables"
+        "multiple_tables",
+        "layout_randomization",
+        "inherited_context",
+        "split_records",
+        "non_target_rows"
       ],
       "num_claims": null,
       "num_policy_items": null,
       "num_target_records": 760,
-      "pages_estimate": 20,
+      "pages_estimate": 34,
       "seed": null,
       "files": {
         "pdf": "pdfs/ifta_tax_summary_004.pdf",
@@ -970,11 +1116,11 @@
         "html_exists": true,
         "ground_truth_exists": true,
         "ocr_md_exists": true,
-        "pdf_size_bytes": 482730,
-        "html_size_bytes": 186451,
+        "pdf_size_bytes": 448697,
+        "html_size_bytes": 269827,
         "json_size_bytes": 260468,
-        "ocr_md_size_bytes": 95038,
-        "pdf_pages": 20
+        "ocr_md_size_bytes": 125340,
+        "pdf_pages": 34
       },
       "transcripts_available": [
         "ocr"
@@ -1133,31 +1279,36 @@
     {
       "id": "mixed_040_001_crosspage",
       "complexity_regime": "claim_crosspage_multihop",
-      "template_family": "claim_crosspage_multihop",
+      "template_family": "mixed",
       "difficulty": "mixed",
       "format": "crosspage",
       "domain": "claims",
-      "hf_config": "claim_multihop",
+      "hf_config": null,
       "lob": null,
       "target_record_type": "loss_run_incident",
       "problems": [
-        "mixed_layout",
-        "longer_list",
         "cross_page_join",
         "long_range_evidence",
+        "mixed_layout",
         "distractor_sections",
+        "longer_list",
         "ocr_condition",
         "page_breaks",
         "large_doc",
         "multiple_tables",
         "multi_row",
         "multi_column",
-        "duplicates"
+        "duplicates",
+        "natural_long_range_join",
+        "inherited_context",
+        "non_target_rows",
+        "mixed_prose_tables",
+        "non_sequential_identifiers"
       ],
       "num_claims": 40,
       "num_policy_items": null,
       "num_target_records": 40,
-      "pages_estimate": 198,
+      "pages_estimate": 209,
       "seed": 10644,
       "files": {
         "pdf": "pdfs/mixed_040_001_crosspage.pdf",
@@ -1168,11 +1319,11 @@
         "html_exists": true,
         "ground_truth_exists": true,
         "ocr_md_exists": true,
-        "pdf_size_bytes": 1382491,
-        "html_size_bytes": 706075,
-        "json_size_bytes": 50540,
-        "ocr_md_size_bytes": 389738,
-        "pdf_pages": 198
+        "pdf_size_bytes": 1797630,
+        "html_size_bytes": 807202,
+        "json_size_bytes": 51549,
+        "ocr_md_size_bytes": 758443,
+        "pdf_pages": 209
       },
       "transcripts_available": [
         "ocr"
@@ -1204,12 +1355,16 @@
         "multi_row",
         "multi_column",
         "duplicates",
-        "distractor_sections"
+        "distractor_sections",
+        "natural_long_range_join",
+        "inherited_context",
+        "split_records",
+        "non_target_rows"
       ],
       "num_claims": 619,
       "num_policy_items": 619,
       "num_target_records": 619,
-      "pages_estimate": 278,
+      "pages_estimate": 316,
       "seed": 35540498590913,
       "files": {
         "pdf": "pdfs/mixed_cgl_040_001.pdf",
@@ -1220,11 +1375,11 @@
         "html_exists": true,
         "ground_truth_exists": true,
         "ocr_md_exists": true,
-        "pdf_size_bytes": 2007673,
-        "html_size_bytes": 1376002,
+        "pdf_size_bytes": 1461026,
+        "html_size_bytes": 1169180,
         "json_size_bytes": 458192,
-        "ocr_md_size_bytes": 1195630,
-        "pdf_pages": 278
+        "ocr_md_size_bytes": 807375,
+        "pdf_pages": 316
       },
       "transcripts_available": [
         "ocr"
@@ -1233,17 +1388,17 @@
     {
       "id": "multihop_012_001_crosspage",
       "complexity_regime": "claim_crosspage_multihop",
-      "template_family": "claim_crosspage_multihop",
+      "template_family": "multihop",
       "difficulty": "multihop",
       "format": "crosspage",
       "domain": "claims",
-      "hf_config": "claim_multihop",
+      "hf_config": null,
       "lob": null,
       "target_record_type": "loss_run_incident",
       "problems": [
-        "coded_values",
         "cross_page_join",
         "long_range_evidence",
+        "coded_values",
         "distractor_sections",
         "ocr_condition",
         "page_breaks",
@@ -1251,12 +1406,17 @@
         "multiple_tables",
         "multi_row",
         "multi_column",
-        "duplicates"
+        "duplicates",
+        "natural_long_range_join",
+        "inherited_context",
+        "non_target_rows",
+        "mixed_prose_tables",
+        "non_sequential_identifiers"
       ],
       "num_claims": 12,
       "num_policy_items": null,
       "num_target_records": 12,
-      "pages_estimate": 76,
+      "pages_estimate": 80,
       "seed": 14114,
       "files": {
         "pdf": "pdfs/multihop_012_001_crosspage.pdf",
@@ -1267,11 +1427,11 @@
         "html_exists": true,
         "ground_truth_exists": true,
         "ocr_md_exists": true,
-        "pdf_size_bytes": 786889,
-        "html_size_bytes": 259606,
-        "json_size_bytes": 14923,
-        "ocr_md_size_bytes": 138256,
-        "pdf_pages": 76
+        "pdf_size_bytes": 981600,
+        "html_size_bytes": 296086,
+        "json_size_bytes": 15364,
+        "ocr_md_size_bytes": 276175,
+        "pdf_pages": 80
       },
       "transcripts_available": [
         "ocr"
@@ -1280,18 +1440,18 @@
     {
       "id": "multihop_025_001_crosspage",
       "complexity_regime": "claim_crosspage_multihop",
-      "template_family": "claim_crosspage_multihop",
+      "template_family": "multihop",
       "difficulty": "multihop",
       "format": "crosspage",
       "domain": "claims",
-      "hf_config": "claim_multihop",
+      "hf_config": null,
       "lob": null,
       "target_record_type": "loss_run_incident",
       "problems": [
-        "claimant_lookup",
-        "many_to_one_policy",
         "cross_page_join",
         "long_range_evidence",
+        "many_to_one_policy",
+        "claimant_lookup",
         "distractor_sections",
         "ocr_condition",
         "page_breaks",
@@ -1299,12 +1459,17 @@
         "multiple_tables",
         "multi_row",
         "multi_column",
-        "duplicates"
+        "duplicates",
+        "natural_long_range_join",
+        "inherited_context",
+        "non_target_rows",
+        "mixed_prose_tables",
+        "non_sequential_identifiers"
       ],
       "num_claims": 25,
       "num_policy_items": null,
       "num_target_records": 25,
-      "pages_estimate": 126,
+      "pages_estimate": 136,
       "seed": 6869,
       "files": {
         "pdf": "pdfs/multihop_025_001_crosspage.pdf",
@@ -1315,11 +1480,11 @@
         "html_exists": true,
         "ground_truth_exists": true,
         "ocr_md_exists": true,
-        "pdf_size_bytes": 1040565,
-        "html_size_bytes": 448466,
-        "json_size_bytes": 31323,
-        "ocr_md_size_bytes": 246868,
-        "pdf_pages": 126
+        "pdf_size_bytes": 1335078,
+        "html_size_bytes": 515445,
+        "json_size_bytes": 32067,
+        "ocr_md_size_bytes": 471615,
+        "pdf_pages": 136
       },
       "transcripts_available": [
         "ocr"
@@ -1348,12 +1513,16 @@
         "multi_row",
         "multi_column",
         "duplicates",
-        "distractor_sections"
+        "distractor_sections",
+        "natural_long_range_join",
+        "inherited_context",
+        "split_records",
+        "non_target_rows"
       ],
       "num_claims": 360,
       "num_policy_items": 360,
       "num_target_records": 360,
-      "pages_estimate": 142,
+      "pages_estimate": 158,
       "seed": 268482452599190,
       "files": {
         "pdf": "pdfs/multihop_bop_012_001.pdf",
@@ -1364,11 +1533,11 @@
         "html_exists": true,
         "ground_truth_exists": true,
         "ocr_md_exists": true,
-        "pdf_size_bytes": 777876,
-        "html_size_bytes": 495557,
+        "pdf_size_bytes": 820073,
+        "html_size_bytes": 582894,
         "json_size_bytes": 239867,
-        "ocr_md_size_bytes": 459807,
-        "pdf_pages": 142
+        "ocr_md_size_bytes": 402001,
+        "pdf_pages": 158
       },
       "transcripts_available": [
         "ocr"
@@ -1398,12 +1567,16 @@
         "multi_row",
         "multi_column",
         "duplicates",
-        "distractor_sections"
+        "distractor_sections",
+        "natural_long_range_join",
+        "inherited_context",
+        "split_records",
+        "non_target_rows"
       ],
       "num_claims": 510,
       "num_policy_items": 510,
       "num_target_records": 510,
-      "pages_estimate": 194,
+      "pages_estimate": 220,
       "seed": 195680388151197,
       "files": {
         "pdf": "pdfs/multihop_wc_025_001.pdf",
@@ -1414,11 +1587,11 @@
         "html_exists": true,
         "ground_truth_exists": true,
         "ocr_md_exists": true,
-        "pdf_size_bytes": 1384647,
-        "html_size_bytes": 911306,
+        "pdf_size_bytes": 1056909,
+        "html_size_bytes": 799989,
         "json_size_bytes": 327471,
-        "ocr_md_size_bytes": 777435,
-        "pdf_pages": 194
+        "ocr_md_size_bytes": 537185,
+        "pdf_pages": 220
       },
       "transcripts_available": [
         "ocr"
@@ -1440,12 +1613,16 @@
         "ocr_condition",
         "page_breaks",
         "large_doc",
-        "multiple_tables"
+        "multiple_tables",
+        "layout_randomization",
+        "inherited_context",
+        "split_records",
+        "non_target_rows"
       ],
       "num_claims": null,
       "num_policy_items": null,
       "num_target_records": 800,
-      "pages_estimate": 25,
+      "pages_estimate": 37,
       "seed": null,
       "files": {
         "pdf": "pdfs/vehicle_schedule_sparse_001.pdf",
@@ -1456,11 +1633,11 @@
         "html_exists": true,
         "ground_truth_exists": true,
         "ocr_md_exists": true,
-        "pdf_size_bytes": 99528,
-        "html_size_bytes": 87711,
+        "pdf_size_bytes": 442739,
+        "html_size_bytes": 171500,
         "json_size_bytes": 146971,
-        "ocr_md_size_bytes": 32746,
-        "pdf_pages": 25
+        "ocr_md_size_bytes": 68892,
+        "pdf_pages": 37
       },
       "transcripts_available": [
         "ocr"
@@ -1482,12 +1659,16 @@
         "ocr_condition",
         "page_breaks",
         "large_doc",
-        "multiple_tables"
+        "multiple_tables",
+        "layout_randomization",
+        "inherited_context",
+        "split_records",
+        "non_target_rows"
       ],
       "num_claims": null,
       "num_policy_items": null,
       "num_target_records": 800,
-      "pages_estimate": 25,
+      "pages_estimate": 37,
       "seed": null,
       "files": {
         "pdf": "pdfs/vehicle_schedule_sparse_002.pdf",
@@ -1498,11 +1679,11 @@
         "html_exists": true,
         "ground_truth_exists": true,
         "ocr_md_exists": true,
-        "pdf_size_bytes": 99664,
-        "html_size_bytes": 87672,
+        "pdf_size_bytes": 441856,
+        "html_size_bytes": 171463,
         "json_size_bytes": 146932,
-        "ocr_md_size_bytes": 32858,
-        "pdf_pages": 25
+        "ocr_md_size_bytes": 65201,
+        "pdf_pages": 37
       },
       "transcripts_available": [
         "ocr"

@@ -91,6 +91,14 @@ class ModelConfig:
     extract_fn: Callable
 
 
+def _setup_offline_only_model():
+    raise RuntimeError("This model key is for offline scoring of externally generated predictions")
+
+
+def _extract_offline_only_model(*args, **kwargs):
+    raise RuntimeError("This model key is for offline scoring of externally generated predictions")
+
+
 # ============================================================================
 # Extraction regimes — shared core + one module per regime
 # ============================================================================
@@ -211,6 +219,13 @@ MODELS = {
         setup_fn=setup_openai_agent,
         extract_fn=extract_with_openai_agent,
     ),
+    'codex_gpt55': ModelConfig(
+        name='Codex GPT-5.5 (CLI Agentic)',
+        provider='OpenAI/Codex',
+        model_id='gpt-5.5',
+        setup_fn=_setup_offline_only_model,
+        extract_fn=_extract_offline_only_model,
+    ),
 }
 
 
@@ -314,6 +329,9 @@ def _load_saved_result_metadata(
                 report_paths.append(previous_report_path)
         except Exception:
             report_paths.append(previous_report_path)
+    per_sample_dir = output_dir / "per_sample_reports"
+    if per_sample_dir.exists():
+        report_paths.extend(sorted(per_sample_dir.glob("*.json")))
 
     for report_path in report_paths:
         if report_path.exists():
@@ -336,6 +354,7 @@ def _load_saved_result_metadata(
                 f"HEAD:{rel_report_path.as_posix()}",
             ],
             text=True,
+            stderr=subprocess.DEVNULL,
         )
         head_report = json.loads(head_json)
         for entry in head_report.get("detailed_results", []):
@@ -850,9 +869,62 @@ def run_evaluation_from_saved_predictions(
     return results
 
 
+def _new_group_stats() -> dict:
+    return {
+        'count': 0,
+        'rows': 0,
+        'f1_sum': 0,
+        'recall_sum': 0,
+        'found_sum': 0,
+        'gold_pairs_sum': 0,
+        'pred_pairs_sum': 0,
+    }
+
+
+def _add_result_to_group(group: dict, r: EvaluationResult) -> None:
+    group['count'] += 1
+    group['rows'] += r.metrics.get('ground_truth_count', 0)
+    group['f1_sum'] += r.metrics['f1']
+    group['recall_sum'] += r.metrics['recall']
+    group['found_sum'] += r.metrics.get('found', 0)
+    group['gold_pairs_sum'] += r.metrics.get('total_gold_field_pairs', 0)
+    group['pred_pairs_sum'] += r.metrics.get('total_pred_field_pairs', 0)
+
+
+def _finalize_group_stats(groups: dict[str, dict]) -> None:
+    for group in groups.values():
+        c = group['count']
+        group['avg_f1'] = group['f1_sum'] / c if c > 0 else 0
+        group['avg_recall'] = group['recall_sum'] / c if c > 0 else 0
+        gold_pairs = group['gold_pairs_sum']
+        pred_pairs = group['pred_pairs_sum']
+        found_sum = group['found_sum']
+        group['weighted_recall'] = found_sum / gold_pairs if gold_pairs > 0 else 0
+        group['weighted_precision'] = found_sum / pred_pairs if pred_pairs > 0 else 0
+        group['weighted_f1'] = (
+            2 * group['weighted_precision'] * group['weighted_recall'] / (group['weighted_precision'] + group['weighted_recall'])
+            if (group['weighted_precision'] + group['weighted_recall']) > 0 else 0
+        )
+
+
+def _load_manifest_metadata_by_sample() -> dict[str, dict]:
+    manifest_path = default_dataset_dir() / "manifest.json"
+    try:
+        manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    except Exception:
+        return {}
+    out: dict[str, dict] = {}
+    for inst in manifest.get("instances", []):
+        sample_id = inst.get("id")
+        if sample_id:
+            out[str(sample_id)] = inst
+    return out
+
+
 def generate_report(results: list[EvaluationResult], output_path: Path):
     """Generate summary report in JSON and Markdown formats."""
 
+    metadata_by_sample = _load_manifest_metadata_by_sample()
     model_order: list[str] = []
     for r in results:
         if r.model not in model_order:
@@ -879,6 +951,8 @@ def generate_report(results: list[EvaluationResult], output_path: Path):
                 'by_tier': {},
                 'by_format': {},
                 'by_transcript': {},
+                'by_complexity_regime': {},
+                'by_stressor': {},
             }
 
         stats = model_stats[r.model]
@@ -899,61 +973,25 @@ def generate_report(results: list[EvaluationResult], output_path: Path):
             stats['errors'] += 1
         
         # By tier
-        if r.tier not in stats['by_tier']:
-            stats['by_tier'][r.tier] = {
-                'count': 0,
-                'rows': 0,
-                'f1_sum': 0,
-                'recall_sum': 0,
-                'found_sum': 0,
-                'gold_pairs_sum': 0,
-                'pred_pairs_sum': 0,
-            }
-        stats['by_tier'][r.tier]['count'] += 1
-        stats['by_tier'][r.tier]['rows'] += r.metrics.get('ground_truth_count', 0)
-        stats['by_tier'][r.tier]['f1_sum'] += r.metrics['f1']
-        stats['by_tier'][r.tier]['recall_sum'] += r.metrics['recall']
-        stats['by_tier'][r.tier]['found_sum'] += r.metrics.get('found', 0)
-        stats['by_tier'][r.tier]['gold_pairs_sum'] += r.metrics.get('total_gold_field_pairs', 0)
-        stats['by_tier'][r.tier]['pred_pairs_sum'] += r.metrics.get('total_pred_field_pairs', 0)
+        _add_result_to_group(stats['by_tier'].setdefault(r.tier, _new_group_stats()), r)
         
         # By format
-        if r.format not in stats['by_format']:
-            stats['by_format'][r.format] = {
-                'count': 0,
-                'rows': 0,
-                'f1_sum': 0,
-                'recall_sum': 0,
-                'found_sum': 0,
-                'gold_pairs_sum': 0,
-                'pred_pairs_sum': 0,
-            }
-        stats['by_format'][r.format]['count'] += 1
-        stats['by_format'][r.format]['rows'] += r.metrics.get('ground_truth_count', 0)
-        stats['by_format'][r.format]['f1_sum'] += r.metrics['f1']
-        stats['by_format'][r.format]['recall_sum'] += r.metrics['recall']
-        stats['by_format'][r.format]['found_sum'] += r.metrics.get('found', 0)
-        stats['by_format'][r.format]['gold_pairs_sum'] += r.metrics.get('total_gold_field_pairs', 0)
-        stats['by_format'][r.format]['pred_pairs_sum'] += r.metrics.get('total_pred_field_pairs', 0)
+        _add_result_to_group(stats['by_format'].setdefault(r.format, _new_group_stats()), r)
 
         # By transcript condition
-        if r.transcript not in stats['by_transcript']:
-            stats['by_transcript'][r.transcript] = {
-                'count': 0,
-                'rows': 0,
-                'f1_sum': 0,
-                'recall_sum': 0,
-                'found_sum': 0,
-                'gold_pairs_sum': 0,
-                'pred_pairs_sum': 0,
-            }
-        stats['by_transcript'][r.transcript]['count'] += 1
-        stats['by_transcript'][r.transcript]['rows'] += r.metrics.get('ground_truth_count', 0)
-        stats['by_transcript'][r.transcript]['f1_sum'] += r.metrics['f1']
-        stats['by_transcript'][r.transcript]['recall_sum'] += r.metrics['recall']
-        stats['by_transcript'][r.transcript]['found_sum'] += r.metrics.get('found', 0)
-        stats['by_transcript'][r.transcript]['gold_pairs_sum'] += r.metrics.get('total_gold_field_pairs', 0)
-        stats['by_transcript'][r.transcript]['pred_pairs_sum'] += r.metrics.get('total_pred_field_pairs', 0)
+        _add_result_to_group(stats['by_transcript'].setdefault(r.transcript, _new_group_stats()), r)
+
+        metadata = metadata_by_sample.get(r.sample, {})
+        complexity_regime = metadata.get("complexity_regime") or metadata.get("difficulty") or r.tier
+        _add_result_to_group(
+            stats['by_complexity_regime'].setdefault(str(complexity_regime), _new_group_stats()),
+            r,
+        )
+        for stressor in sorted(set(metadata.get("problems") or [])):
+            _add_result_to_group(
+                stats['by_stressor'].setdefault(str(stressor), _new_group_stats()),
+                r,
+            )
     
     # Compute averages
     for model, stats in model_stats.items():
@@ -971,47 +1009,11 @@ def generate_report(results: list[EvaluationResult], output_path: Path):
             if (stats['weighted_precision'] + stats['weighted_recall']) > 0 else 0
         )
         
-        for tier_stats in stats['by_tier'].values():
-            c = tier_stats['count']
-            tier_stats['avg_f1'] = tier_stats['f1_sum'] / c if c > 0 else 0
-            tier_stats['avg_recall'] = tier_stats['recall_sum'] / c if c > 0 else 0
-            gold_pairs = tier_stats['gold_pairs_sum']
-            pred_pairs = tier_stats['pred_pairs_sum']
-            found_sum = tier_stats['found_sum']
-            tier_stats['weighted_recall'] = found_sum / gold_pairs if gold_pairs > 0 else 0
-            tier_stats['weighted_precision'] = found_sum / pred_pairs if pred_pairs > 0 else 0
-            tier_stats['weighted_f1'] = (
-                2 * tier_stats['weighted_precision'] * tier_stats['weighted_recall'] / (tier_stats['weighted_precision'] + tier_stats['weighted_recall'])
-                if (tier_stats['weighted_precision'] + tier_stats['weighted_recall']) > 0 else 0
-            )
-        
-        for fmt_stats in stats['by_format'].values():
-            c = fmt_stats['count']
-            fmt_stats['avg_f1'] = fmt_stats['f1_sum'] / c if c > 0 else 0
-            fmt_stats['avg_recall'] = fmt_stats['recall_sum'] / c if c > 0 else 0
-            gold_pairs = fmt_stats['gold_pairs_sum']
-            pred_pairs = fmt_stats['pred_pairs_sum']
-            found_sum = fmt_stats['found_sum']
-            fmt_stats['weighted_recall'] = found_sum / gold_pairs if gold_pairs > 0 else 0
-            fmt_stats['weighted_precision'] = found_sum / pred_pairs if pred_pairs > 0 else 0
-            fmt_stats['weighted_f1'] = (
-                2 * fmt_stats['weighted_precision'] * fmt_stats['weighted_recall'] / (fmt_stats['weighted_precision'] + fmt_stats['weighted_recall'])
-                if (fmt_stats['weighted_precision'] + fmt_stats['weighted_recall']) > 0 else 0
-            )
-
-        for transcript_stats in stats['by_transcript'].values():
-            c = transcript_stats['count']
-            transcript_stats['avg_f1'] = transcript_stats['f1_sum'] / c if c > 0 else 0
-            transcript_stats['avg_recall'] = transcript_stats['recall_sum'] / c if c > 0 else 0
-            gold_pairs = transcript_stats['gold_pairs_sum']
-            pred_pairs = transcript_stats['pred_pairs_sum']
-            found_sum = transcript_stats['found_sum']
-            transcript_stats['weighted_recall'] = found_sum / gold_pairs if gold_pairs > 0 else 0
-            transcript_stats['weighted_precision'] = found_sum / pred_pairs if pred_pairs > 0 else 0
-            transcript_stats['weighted_f1'] = (
-                2 * transcript_stats['weighted_precision'] * transcript_stats['weighted_recall'] / (transcript_stats['weighted_precision'] + transcript_stats['weighted_recall'])
-                if (transcript_stats['weighted_precision'] + transcript_stats['weighted_recall']) > 0 else 0
-            )
+        _finalize_group_stats(stats['by_tier'])
+        _finalize_group_stats(stats['by_format'])
+        _finalize_group_stats(stats['by_transcript'])
+        _finalize_group_stats(stats['by_complexity_regime'])
+        _finalize_group_stats(stats['by_stressor'])
     
     # Save JSON report
     report = {
@@ -1129,6 +1131,44 @@ def generate_report(results: list[EvaluationResult], output_path: Path):
         ["production_like_pdf", "crosspage", "detailed", "table"],
     )
 
+    _append_group_table(
+        "## Results by Complexity Regime",
+        "by_complexity_regime",
+        [
+            "ifta_mileage_by_vehicle",
+            "ifta_multisection_return_packet",
+            "ifta_return_schedule_details",
+            "ifta_tax_return_summary",
+            "driver_mvr_request_and_roster",
+            "loss_run_external",
+            "vehicle_schedule_spreadsheet_export",
+            "ifta_tax_return_inquiry_detail",
+            "driver_schedule_spreadsheet_export",
+            "claim_crosspage_multihop",
+            "policy_multi_hop",
+        ],
+    )
+
+    _append_group_table(
+        "## Results by Key Stressor",
+        "by_stressor",
+        [
+            "ocr_layout_condition",
+            "cross_section_join",
+            "long_range_evidence",
+            "heterogeneous_record_list",
+            "multi_column",
+            "merged_cells",
+            "multi_row",
+            "duplicates",
+            "distractor_sections",
+            "repeated_keys",
+            "large_doc",
+            "high_density_long_list",
+            "page_breaks",
+        ],
+    )
+
     md_lines.extend([
         "",
         "## Results by Transcript Condition",
@@ -1189,7 +1229,7 @@ def main():
     parser = argparse.ArgumentParser(description='Multi-model evaluation for LongListBench')
     parser.add_argument('--models', nargs='+', default=['gpt55_oneshot'],
                        choices=['gemini', 'gemini_oneshot', 'gemini25', 'gpt52', 'gpt4', 'claude',
-                                'gpt55_oneshot', 'gpt55_chunked', 'gpt55_agent'],
+                                'gpt55_oneshot', 'gpt55_chunked', 'gpt55_agent', 'codex_gpt55'],
                        help='Models to evaluate (default: gpt55_oneshot)')
     parser.add_argument('--output-dir', default=None,
                        help='Directory to write predictions and evaluation reports (default: benchmarks/results/scratch)')

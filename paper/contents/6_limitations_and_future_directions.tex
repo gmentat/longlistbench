@@ -10,14 +10,14 @@ Covered & Not covered / out of scope \\
 \midrule
 High-density insurance and trucking-operation lists, claim packets, and commercial policy packets & Non-English documents, handwriting, medical bills, invoices, purchase orders, and many other document families \\
 Production-like synthetic layouts based on observed document structures & Full visual diversity of private production corpora and carrier-specific edge cases \\
-OCR transcripts for every released PDF & Multiple OCR engines, scanned/noisy image variants, bounding boxes, and reading-order supervision \\
+OCR transcripts for every released PDF, including a limited scanned-image IFTA condition & Multiple OCR engines, broad scan-quality sweeps, bounding boxes, and reading-order supervision \\
 Field-level scoring for claim incidents and generic record lists & Semantic equivalence scoring, downstream task metrics, and human adjudication of ambiguous fields \\
-Agentic sandbox support in evaluator scripts & Published current-corpus model leaderboard, latency/cost-normalized protocol comparison \\
+Agentic sandbox support and one full-corpus OCR baseline & Latency/cost-normalized comparisons across multiple agentic and retrieval-loop protocols \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-The documents are synthetic. This is necessary for public release, but it means the benchmark cannot replace evaluation on a private production corpus. We used private documents only as structural references for layout and packet organization; the released names, identifiers, values, and prose are generated.
+The documents are synthetic. This is necessary for public release, but it means the benchmark cannot replace evaluation on a private production corpus. We used private documents only as structural references for layout and packet organization; the released names, identifiers, values, and prose are generated. Some sections are intentionally composed to cover benchmark stressors, so the corpus should be read as production-inspired measurement data rather than exact replicas of source documents.
 
 The current release includes one OCR transcript condition. This supports reproducible OCR-conditioned evaluation, but it does not isolate OCR penalty by itself. Measuring OCR penalty requires adding another transcript or direct-PDF condition and running the same extraction protocol across both.
 
@@ -25,6 +25,6 @@ OCR support should also be interpreted at the field level. A unique-identifier c
 
 Finally, the corpus now contains several operations record types whose public schema is represented by the ground-truth examples and generic scorer rather than separate hand-written JSON Schema files for every family. Adding explicit schemas for each operations family would improve reproducibility for prompt-based and agentic extractors.
 
-The intended use of LongListBench is regime-aware measurement. It should be used to compare extraction systems on record completeness, field alignment, OCR-conditioned robustness, and long-range evidence handling. We recommend reporting results separately for core operations, claim multi-hop, and policy packet configs, rather than relying only on an aggregate score. The benchmark is also useful for dataset sanity checks such as deterministic parser baselines and for future agentic or retrieval-loop systems that can inspect, join, and audit records incrementally.
+The intended use of LongListBench is regime-aware measurement. It should be used to compare extraction systems on record completeness, field alignment, OCR-conditioned robustness, and long-range evidence handling. We recommend reporting results separately for core operations, claim multi-hop, and policy packet configs, rather than relying only on an aggregate score. Parser-friendly operations families should be interpreted as scale and completeness controls; they are useful for sanity checks, but benchmark claims about hard document extraction should come from per-document protocols on the packet and cross-section regimes.
 
-LongListBench should not be read as a complete model leaderboard. The current release includes a diagnostic Codex run on one CGL policy packet, but full one-shot, agentic, cost, and latency comparisons remain outside the scope of this paper. It should also not be treated as a substitute for private production evaluation, since synthetic public documents cannot cover the full visual and linguistic diversity of real carrier packets.
+LongListBench should not be read as a complete model leaderboard. The current release includes one full-corpus OCR-conditioned Codex/xhigh sandbox baseline, but it does not include a latency/cost-normalized comparison across multiple models and extraction protocols. Full-context one-shot prompting is not a practical full-corpus protocol for the largest documents because output length and latency become limiting factors. The benchmark should also not be treated as a substitute for private production evaluation, since synthetic public documents cannot cover the full visual and linguistic diversity of real carrier packets.

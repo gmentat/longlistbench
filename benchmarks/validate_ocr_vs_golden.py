@@ -100,8 +100,14 @@ def _identifier_found(
     compact_ocr_text: str,
     field: str = "",
 ) -> bool:
+    lower_ocr_text = ocr_text.lower()
+    lower_compact_ocr_text = compact_ocr_text.lower()
     for alias in _value_aliases(field, value):
-        if alias in ocr_text or _compact(alias) in compact_ocr_text:
+        lower_alias = alias.lower()
+        if (
+            lower_alias in lower_ocr_text
+            or _compact(lower_alias) in lower_compact_ocr_text
+        ):
             return True
     return False
 

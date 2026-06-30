@@ -122,6 +122,25 @@ DEFAULT_GEMINI_OCR_MODEL = "gemini-3.5-flash"
 DEFAULT_OPENROUTER_OCR_MODEL = "google/gemini-3.5-flash"
 GEMINI_API_KEY_ENV_VARS = ("GOOGLE_API_KEY", "GEMINI_API_KEY")
 VERTEX_API_KEY_ENV_VARS = ("VERTEX_EXPRESS_API_KEY", "VERTEX_AI_API_KEY", "GOOGLE_VERTEX_API_KEY")
+TABLE_OUTPUT_MODES = ("csv", "layout")
+
+
+def ocr_user_prompt(table_output_mode: str) -> str:
+    """Return the per-page OCR instruction for the selected table output mode."""
+    if table_output_mode == "csv":
+        return (
+            "OCR the image into Markdown. Format tables as CSV. "
+            "Do not surround your output with triple backticks."
+        )
+    if table_output_mode == "layout":
+        return (
+            "OCR the image into Markdown and preserve the visible table layout. "
+            "Do not convert tables to CSV or Markdown pipe tables. Use spaces, "
+            "line breaks, and indentation to keep columns, repeated headers, "
+            "page breaks, wrapped cells, and continuation rows as they appear. "
+            "Do not surround your output with triple backticks."
+        )
+    raise ValueError(f"Unknown table output mode: {table_output_mode}")
 
 
 # Build retriable exceptions tuple
@@ -320,7 +339,13 @@ def convert_pdf_page(pdf_path, page_num, dpi=200):
 
 
 @retry_on_gemini_call
-async def ocr_image_async(client: Any, image: Any, model_name: str = DEFAULT_GEMINI_OCR_MODEL) -> str:
+async def ocr_image_async(
+    client: Any,
+    image: Any,
+    model_name: str = DEFAULT_GEMINI_OCR_MODEL,
+    *,
+    table_output_mode: str = "csv",
+) -> str:
     """OCR a single image using Gemini async API with retries."""
     response = await asyncio.wait_for(
         client.aio.models.generate_content(
@@ -328,7 +353,7 @@ async def ocr_image_async(client: Any, image: Any, model_name: str = DEFAULT_GEM
             config=types.GenerateContentConfig(system_instruction=SYSTEM_PROMPT),
             contents=[
                 image,
-                "OCR the image into Markdown. Format tables as CSV. Do not surround your output with triple backticks.",
+                ocr_user_prompt(table_output_mode),
             ],
         ),
         timeout=OCR_PAGE_TIMEOUT_SECONDS,
@@ -343,7 +368,13 @@ def _image_data_url(image: Any) -> str:
     return f"data:image/png;base64,{encoded}"
 
 
-async def ocr_image_openrouter_async(client: Any, image: Any, model_name: str) -> str:
+async def ocr_image_openrouter_async(
+    client: Any,
+    image: Any,
+    model_name: str,
+    *,
+    table_output_mode: str = "csv",
+) -> str:
     """OCR a single image through OpenRouter using a Gemini vision model."""
     response = await asyncio.wait_for(
         client.chat.completions.create(
@@ -356,10 +387,7 @@ async def ocr_image_openrouter_async(client: Any, image: Any, model_name: str) -
                     "content": [
                         {
                             "type": "text",
-                            "text": (
-                                "OCR the image into Markdown. Format tables as CSV. "
-                                "Do not surround your output with triple backticks."
-                            ),
+                            "text": ocr_user_prompt(table_output_mode),
                         },
                         {
                             "type": "image_url",
@@ -374,12 +402,24 @@ async def ocr_image_openrouter_async(client: Any, image: Any, model_name: str) -
     return response.choices[0].message.content or ""
 
 
-async def ocr_page_with_gemini(client: Any, image: Any, page_num: int, model_names: list[str]) -> str:
+async def ocr_page_with_gemini(
+    client: Any,
+    image: Any,
+    page_num: int,
+    model_names: list[str],
+    *,
+    table_output_mode: str = "csv",
+) -> str:
     """Send a single image to Gemini for OCR and return Markdown text."""
     last_error: Exception | None = None
     for model_name in model_names:
         try:
-            page_text = await ocr_image_async(client, image, model_name)
+            page_text = await ocr_image_async(
+                client,
+                image,
+                model_name,
+                table_output_mode=table_output_mode,
+            )
             if page_text.strip():
                 return f"# Page {page_num}\n\n{page_text}\n\n"
             last_error = ValueError(f"Empty response (model={model_name})")
@@ -391,12 +431,24 @@ async def ocr_page_with_gemini(client: Any, image: Any, page_num: int, model_nam
     return f"# Page {page_num}\n\n[Error: {last_error}]\n\n"
 
 
-async def ocr_page_with_openrouter(client: Any, image: Any, page_num: int, model_names: list[str]) -> str:
+async def ocr_page_with_openrouter(
+    client: Any,
+    image: Any,
+    page_num: int,
+    model_names: list[str],
+    *,
+    table_output_mode: str = "csv",
+) -> str:
     """Send a single image to OpenRouter Gemini OCR and return Markdown text."""
     last_error: Exception | None = None
     for model_name in model_names:
         try:
-            page_text = await ocr_image_openrouter_async(client, image, model_name)
+            page_text = await ocr_image_openrouter_async(
+                client,
+                image,
+                model_name,
+                table_output_mode=table_output_mode,
+            )
             if page_text.strip():
                 return f"# Page {page_num}\n\n{page_text}\n\n"
             last_error = ValueError(f"Empty response (model={model_name})")
@@ -416,6 +468,7 @@ async def process_page_async(
     model_names: list[str],
     dpi: int = 200,
     ocr_engine: str = "gemini",
+    table_output_mode: str = "csv",
 ) -> tuple[int, str]:
     """Process a single page with semaphore for concurrency control."""
     async with semaphore:
@@ -424,9 +477,21 @@ async def process_page_async(
             return (page_num, f"# Page {page_num}\n\n[Error: Could not convert page]\n\n")
 
         if ocr_engine == "openrouter":
-            page_text = await ocr_page_with_openrouter(client, image, page_num, model_names)
+            page_text = await ocr_page_with_openrouter(
+                client,
+                image,
+                page_num,
+                model_names,
+                table_output_mode=table_output_mode,
+            )
         else:
-            page_text = await ocr_page_with_gemini(client, image, page_num, model_names)
+            page_text = await ocr_page_with_gemini(
+                client,
+                image,
+                page_num,
+                model_names,
+                table_output_mode=table_output_mode,
+            )
         return (page_num, page_text)
 
 
@@ -438,6 +503,7 @@ async def process_pdf_async(
     model_names: list[str] | None = None,
     dpi: int = 200,
     ocr_engine: str = "gemini",
+    table_output_mode: str = "csv",
 ) -> bool:
     """Process PDF pages with async concurrency control."""
     if not model_names:
@@ -454,7 +520,16 @@ async def process_pdf_async(
     
     # Create tasks for all pages
     tasks = [
-        process_page_async(client, pdf_path, page_num, semaphore, model_names, dpi, ocr_engine)
+        process_page_async(
+            client,
+            pdf_path,
+            page_num,
+            semaphore,
+            model_names,
+            dpi,
+            ocr_engine,
+            table_output_mode,
+        )
         for page_num in range(1, total_pages + 1)
     ]
     
@@ -473,9 +548,29 @@ async def process_pdf_async(
     return True
 
 
-def process_pdf(client: Any, pdf_path: Path, output_path: Path, max_concurrent: int = 3, model_names: list[str] | None = None, dpi: int = 200, ocr_engine: str = "gemini") -> bool:
+def process_pdf(
+    client: Any,
+    pdf_path: Path,
+    output_path: Path,
+    max_concurrent: int = 3,
+    model_names: list[str] | None = None,
+    dpi: int = 200,
+    ocr_engine: str = "gemini",
+    table_output_mode: str = "csv",
+) -> bool:
     """Synchronous wrapper for async PDF processing."""
-    return asyncio.run(process_pdf_async(client, pdf_path, output_path, max_concurrent, model_names, dpi, ocr_engine))
+    return asyncio.run(
+        process_pdf_async(
+            client,
+            pdf_path,
+            output_path,
+            max_concurrent,
+            model_names,
+            dpi,
+            ocr_engine,
+            table_output_mode,
+        )
+    )
 
 
 def collect_pdf_files(
@@ -653,6 +748,16 @@ def build_arg_parser():
             "text-layer (pdftotext only)."
         ),
     )
+    parser.add_argument(
+        "--table-output-mode",
+        choices=TABLE_OUTPUT_MODES,
+        default="csv",
+        help=(
+            "How vision OCR should render tables. "
+            "csv preserves the historical benchmark OCR behavior; "
+            "layout keeps visible table layout without delimited normalization."
+        ),
+    )
     return parser
 
 
@@ -696,6 +801,7 @@ async def main_async() -> None:
     print(f"OCR engine: {args.ocr_engine}")
     if args.ocr_engine in {"auto", "gemini", "openrouter"}:
         print(f"Models: {' -> '.join(model_chain)}, DPI: {args.dpi}")
+        print(f"Table output mode: {args.table_output_mode}")
     print()
 
     client = None
@@ -739,6 +845,7 @@ async def main_async() -> None:
                 model_names=model_chain,
                 dpi=args.dpi,
                 ocr_engine="openrouter" if args.ocr_engine == "openrouter" else "gemini",
+                table_output_mode=args.table_output_mode,
             )
         
         if success:

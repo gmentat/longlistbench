@@ -100,6 +100,18 @@ def _norm_str(v: Any, *, optional: bool) -> Any:
     return s
 
 
+def _norm_description(v: Any) -> str:
+    return str(_norm_str(v, optional=False)).rstrip(".").strip()
+
+
+def _norm_unit_number(v: Any) -> Any:
+    s = _norm_str(v, optional=True)
+    if s is None:
+        return None
+    match = re.search(r"(\d{5,})$", s)
+    return match.group(1) if match else s
+
+
 def _norm_float(v: Any) -> float:
     try:
         f = float(v)
@@ -129,6 +141,10 @@ def _canonicalize_incident(item: dict) -> dict:
             obj[k] = sorted(cleaned)
         elif k in _DATE_FIELDS:
             obj[k] = _normalize_date(v)
+        elif k == "description":
+            obj[k] = _norm_description(v)
+        elif k == "unit_number":
+            obj[k] = _norm_unit_number(v)
         elif isinstance(v, str) or v is None:
             obj[k] = _norm_str(v, optional=(k in _OPTIONAL_STR_FIELDS))
         else:

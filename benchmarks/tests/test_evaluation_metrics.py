@@ -157,6 +157,53 @@ class EvaluationMetricsTests(unittest.TestCase):
         self.assertLess(metrics["recall"], 1.0)
         self.assertEqual(metrics["total_gold_field_pairs"], metrics["total_pred_field_pairs"] + 2)
 
+    def test_claim_description_trailing_period_is_normalized(self):
+        ground_truth = [
+            {
+                "incident_number": "#10001",
+                "reference_number": "L260001",
+                "company_name": "Example Trucking",
+                "coverage_type": "Liability",
+                "status": "Open",
+                "policy_number": "P1",
+                "policy_state": "PA",
+                "description": "Rear-end collision",
+                "date_of_loss": "01/01/2026",
+                "loss_state": "PA",
+                "date_reported": "01/02/2026",
+                "insured": "Example Trucking",
+            }
+        ]
+        predicted = [{**ground_truth[0], "description": "Rear-end collision."}]
+
+        metrics = evaluate_extraction(predicted, ground_truth)
+
+        self.assertEqual(metrics["f1"], 1.0)
+
+    def test_claim_unit_number_matches_full_vehicle_context_by_suffix(self):
+        ground_truth = [
+            {
+                "incident_number": "#10001",
+                "reference_number": "L260001",
+                "company_name": "Example Trucking",
+                "coverage_type": "Liability",
+                "status": "Open",
+                "policy_number": "P1",
+                "policy_state": "PA",
+                "unit_number": "2024 KW 600001",
+                "description": "Rear-end collision",
+                "date_of_loss": "01/01/2026",
+                "loss_state": "PA",
+                "date_reported": "01/02/2026",
+                "insured": "Example Trucking",
+            }
+        ]
+        predicted = [{**ground_truth[0], "unit_number": "600001"}]
+
+        metrics = evaluate_extraction(predicted, ground_truth)
+
+        self.assertEqual(metrics["f1"], 1.0)
+
     def test_empty_incident_number_does_not_match_known_incident(self):
         ground_truth = [
             {

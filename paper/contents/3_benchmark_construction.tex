@@ -10,10 +10,10 @@ Claim-oriented documents use a loss-run incident schema with claim identifiers, 
 Policy-oriented documents use heterogeneous records for locations, coverages, forms, endorsements, exclusions, rating rows, and premium items. A policy packet is the contract document issued by an insurer; it combines declarations, covered locations or classifications, coverage limits and deductibles, rating or premium schedules, required forms, and endorsements that modify the base policy. The released policy packets cover Businessowners Policy (BOP), Workers Compensation (WC), and Commercial General Liability (CGL).
 
 \paragraph{Operations records.}
-The core operations documents contain dense lists from insurance and trucking workflows, including IFTA mileage rows, IFTA return rows, tax inquiry rows, driver records, vehicle schedule rows, and external loss-run rows. These record types are evaluated as generic field-value records rather than forced into the claim incident schema.
+The core operations documents contain dense lists from insurance and trucking workflows, including IFTA mileage rows, multisection IFTA return rows, IFTA return rows, tax inquiry rows, driver records, vehicle schedule rows, and external loss-run rows. These record types are evaluated as generic field-value records rather than forced into the claim incident schema.
 
 \subsection{Document design and provenance}
-\Cref{fig:generation-pipeline} illustrates the benchmark construction pipeline. Private production PDFs were reviewed to identify recurring document structures, such as portal exports, spreadsheet schedules, carrier loss-run tables, policy declarations, forms, endorsements, and long packet layouts. Those private files are not included in the repository. The released documents use generated names, identifiers, dates, values, and prose, and the repository contains only synthetic artifacts.
+\Cref{fig:generation-pipeline} illustrates the benchmark construction pipeline. Private production PDFs were reviewed to identify recurring document structures, such as portal exports, spreadsheet schedules, carrier loss-run tables, policy declarations, forms, endorsements, and long packet layouts. Those private files are not included in the repository. The released documents use generated names, identifiers, dates, values, and prose, and the repository contains only synthetic artifacts. The documents are production-inspired rather than facsimiles of any single source packet. Some sections combine realistic business-document conventions with deliberately selected stressors, such as sparse schedules, repeated keys, multi-section tables, and long-range joins, to ensure coverage of the benchmark's complexity taxonomy.
 
 \begin{figure}[ht]
     \centering
@@ -22,7 +22,7 @@ The core operations documents contain dense lists from insurance and trucking wo
     \label{fig:generation-pipeline}
 \end{figure}
 
-The current release prioritizes fewer, larger, more realistic PDFs rather than many small template variants. This choice reflects the intended use case: measuring list-completeness failures at scale. Several PDFs contain more than 1{,}000 target records, and the full corpus contains 32{,}654 target records across 34 PDFs.
+The current release prioritizes fewer, larger, more realistic PDFs rather than many small template variants. This choice reflects the intended use case: measuring list-completeness failures at scale. Several PDFs contain more than 1{,}000 target records, and the full corpus contains 33{,}450 target records across 36 PDFs.
 
 \subsection{Document-family inventory}
 \Cref{tab:dataset-scale} summarizes the released corpus by document family. This table is an inventory, not a difficulty scale: the same family can carry several cross-cutting stressors, and stressors are recorded separately in the \texttt{problems} metadata. The `core operations' group contains production-like layouts with dense repeated rows. The claim and policy multi-hop groups keep one PDF per sample, but required fields are distributed across distant sections.
@@ -37,6 +37,7 @@ The current release prioritizes fewer, larger, more realistic PDFs rather than m
 Document family & PDFs & Target records \\
 \midrule
 \texttt{ifta\_mileage\_by\_vehicle} & 8 & 17{,}565 \\
+\texttt{ifta\_multisection\_return\_packet} & 2 & 796 \\
 \texttt{ifta\_return\_schedule\_details} & 5 & 4{,}923 \\
 \texttt{ifta\_tax\_return\_summary} & 4 & 3{,}040 \\
 \texttt{driver\_mvr\_request\_and\_roster} & 3 & 1{,}260 \\
@@ -49,7 +50,7 @@ Document family & PDFs & Target records \\
 \texttt{policy\_multihop\_wc} & 1 & 510 \\
 \texttt{policy\_multihop\_cgl} & 1 & 619 \\
 \midrule
-\textbf{Total} & \textbf{34} & \textbf{32{,}654} \\
+\textbf{Total} & \textbf{36} & \textbf{33{,}450} \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -66,16 +67,16 @@ Each instance carries explicit regime metadata in the manifest and Hugging Face 
 \toprule
 Regime & PDFs & Records & Main stressors \\
 \midrule
-Core operations & 28 & 31{,}088 & High-density repeated records, production-like tables and exports, OCR preservation, and output completeness. \\
+Core operations & 30 & 31{,}884 & High-density repeated records, production-like tables and exports, OCR preservation, cross-section joins, and output completeness. \\
 Claim multi-hop & 3 & 77 & Long-range joins from claim schedules to policy registers, driver rosters, claimant indexes, cause-code appendices, and ledgers. \\
 Policy packets & 3 & 1{,}489 & Heterogeneous policy records across declarations, locations or classifications, forms, material clauses, endorsements, rating schedules, and premium summaries. \\
 \midrule
-\textbf{Total} & \textbf{34} & \textbf{32{,}654} & \\
+\textbf{Total} & \textbf{36} & \textbf{33{,}450} & \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-These regimes are intentionally not a single difficulty ladder. Core operations files primarily test scale and completeness; deterministic parsers may perform well when OCR preserves row boundaries. Claim and policy packets test different complexity: inherited context, distant evidence, mixed layouts, heterogeneous schemas, and distractor sections. Results should therefore be reported by regime rather than only as one aggregate score.
+These regimes are intentionally not a single difficulty ladder. Many core operations files primarily test scale and completeness; deterministic parsers may perform well when OCR preserves row boundaries. The multisection IFTA packets within core operations add OCR-layout and cross-section join stressors. Claim and policy packets test different complexity: inherited context, distant evidence, mixed layouts, heterogeneous schemas, and distractor sections. Results should therefore be reported by regime rather than only as one aggregate score.
 
 \Cref{tab:complexity-stressors} lists the cross-cutting stressors. The first seven originate from the earlier generator's problem taxonomy. In the current release they are implemented in more production-like layouts rather than as visibly synthetic toggles. For example, page breaks appear as page-spanning sections with repeated headers; duplicate pressure appears mainly as prior-term, archived, or near-duplicate distractor material rather than exact duplicate target rows.
 
@@ -96,7 +97,10 @@ Stressor & What it tests \\
 \path{multi_column} & Two-column or form-like layouts that stress reading order. \\
 \path{merged_cells} & Merged-cell and section-spanning table structures such as \texttt{colspan} rows. \\
 \path{ocr_condition} & Released text is OCR output from rendered PDF page images. \\
+\path{ocr_layout_condition} & OCR preserves visual spacing and reading order instead of converting tables into clean CSV-style rows. \\
 \path{long_range_evidence} & Required fields are separated by distant pages within the same PDF. \\
+\path{cross_section_join} & A target row must be assembled from separately labeled sections, such as return summary, distance/gallon schedules, and liability schedules. \\
+\path{repeated_keys} & Common keys such as states or jurisdictions recur across sections or returns, so the key alone is not a unique target identifier. \\
 \path{heterogeneous_record_list} & A single output list contains multiple schema families, as in policy packets. \\
 \bottomrule
 \end{tabular}
@@ -121,7 +125,10 @@ Stressor & Example PDF pages & Visible document evidence \\
 \path{multi_column} & \path{mixed_cgl_040_001}, pages 139--150; \path{multihop_wc_025_001}, pages 95--106 & Material policy provisions are laid out in two-column policy-form pages. \\
 \path{merged_cells} & \path{loss_run_external_001}, page 1; \path{ifta_tax_inquiry_001}, page 1 & Section-spanning rows and wide description/status cells interrupt regular table structure. \\
 \path{ocr_condition} & Any PDF with its matching OCR file under \path{data/transcripts/ocr_gemini/} & The released text input is OCR output from rendered page images, not the HTML source text. \\
+\path{ocr_layout_condition} & \path{ifta_multisection_return_001}, pages 2 and 4 & OCR preserves the visual Schedule A table and dense Jurisdictions tax-detail table instead of a clean row table. \\
 \path{long_range_evidence} & \path{multihop_012_001_crosspage}, pages 4, 36, 56, 57, 76 & A front claim row must be joined to distant driver, policy, cause-code, claimant, and ledger sections. \\
+\path{cross_section_join} & \path{ifta_multisection_return_001}, pages 1, 2, 4 & Each jurisdiction row combines return header context, Schedule A mileage/gallon values, and Jurisdictions tax-detail values while ignoring adjustment/support rows. \\
+\path{repeated_keys} & \path{ifta_multisection_return_001}, pages 2, 4, 8, 10 & Jurisdiction codes recur across returns and sections, so state code alone is not a unique row key. \\
 \path{heterogeneous_record_list} & \path{multihop_bop_012_001}, pages 26, 48, 94, 127, 142; \path{mixed_cgl_040_001}, pages 66--73 and 139--150 & One output list mixes locations or classifications, coverages, forms, endorsements, premiums, and clause records. \\
 \bottomrule
 \end{tabular}

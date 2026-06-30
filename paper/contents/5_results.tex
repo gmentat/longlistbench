@@ -1,7 +1,7 @@
-This revision reports corpus validation rather than a new model leaderboard. Baseline reports from earlier revisions correspond to earlier dataset layouts and should be treated as archival until rerun on the current 34-document OCR corpus.
+This revision reports corpus validation and one current OCR-conditioned agentic extraction baseline. Baseline reports from earlier revisions correspond to earlier dataset layouts and should be treated as archival unless rerun on the current 36-document OCR corpus.
 
 \subsection{Artifact completeness}
-The released data directory contains one PDF, one HTML source, one JSON ground-truth file, one per-sample metadata file, and one OCR transcript for each of the 34 manifest instances. The manifest totals are internally consistent: 31{,}165 non-policy target records, 1{,}489 policy target records, and 32{,}654 target records overall.
+The released data directory contains one PDF, one HTML source, one JSON ground-truth file, one per-sample metadata file, and one OCR transcript for each of the 36 manifest instances. The manifest totals are internally consistent: 31{,}961 non-policy target records, 1{,}489 policy target records, and 33{,}450 target records overall.
 
 \begin{table}[H]
 \centering
@@ -12,12 +12,12 @@ The released data directory contains one PDF, one HTML source, one JSON ground-t
 \toprule
 Check & Value \\
 \midrule
-Manifest instances & 34 \\
-PDF artifacts & 34 \\
-HTML artifacts & 34 \\
-Ground-truth JSON files & 34 \\
-OCR transcripts & 34 \\
-Total target records & 32{,}654 \\
+Manifest instances & 36 \\
+PDF artifacts & 36 \\
+HTML artifacts & 36 \\
+Ground-truth JSON files & 36 \\
+OCR transcripts & 36 \\
+Total target records & 33{,}450 \\
 Released transcript condition & OCR \\
 Average identifier coverage & 100.0\% \\
 Tracked identifier-field support & 99.9\% \\
@@ -27,31 +27,55 @@ Records with missing tracked OCR identifiers & 39 \\
 \end{table}
 
 \subsection{Benchmark coverage}
-The largest family, IFTA mileage by vehicle, contributes 17{,}565 target records across 8 PDFs. The remaining core operations families add return schedules, tax summaries, driver/MVR rosters, vehicle schedules, and external loss-run rows. These documents stress high-density extraction where the main failure mode is list completeness across many pages.
+The largest family, IFTA mileage by vehicle, contributes 17{,}565 target records across 8 PDFs. The remaining core operations families add return schedules, tax summaries, multisection IFTA return packets, driver/MVR rosters, vehicle schedules, and external loss-run rows. These documents stress high-density extraction where the main failure mode is list completeness across many pages.
 
 Some operations families are intentionally structured reports. Deterministic row parsers can perform well on parts of these files, especially when OCR preserves table headers and row boundaries. We therefore treat them as scale and completeness cases rather than as the primary evidence for hard semantic extraction. The harder regimes are the claim and policy packets, where target records require inherited context, heterogeneous schemas, distant supporting sections, and distractor material.
 
 The multi-hop cases stress a different failure mode. The claim packets contain only 77 target incidents, but the evidence for each incident is distributed across distant packet sections. The policy packets contain 1{,}489 multi-hop policy records across BOP, WC, and CGL packets. These policy documents make the target schema heterogeneous: a system must recover locations, coverage items, forms, material clauses, endorsements, class-code rows, exposure items, and premium records rather than one repeated row shape.
 
-OCR validation checks whether tracked identifiers from the ground truth are visible in the released transcripts. All 34 samples pass the 95\% identifier-coverage threshold, with 100.0\% average identifier coverage and 99.9\% support across tracked identifier field instances. The affected-record count is more conservative: 39 of 32{,}654 records have at least one tracked identifier missing from OCR, mostly because a small number of repeated section headers or row identifiers were not transcribed. These records remain in the release so OCR-conditioned evaluations can measure the practical ceiling imposed by the released transcripts.
+OCR validation checks whether tracked identifiers from the ground truth are visible in the released transcripts. All 36 samples pass the 95\% identifier-coverage threshold, with 100.0\% average identifier coverage and 99.9\% support across tracked identifier field instances. The affected-record count is more conservative: 39 of 33{,}450 records have at least one tracked identifier missing from OCR, mostly because a small number of repeated section headers or row identifiers were not transcribed. These records remain in the release so OCR-conditioned evaluations can measure the practical ceiling imposed by the released transcripts.
 
-\subsection{Baseline status}
-We ran one current-corpus diagnostic extraction on the largest CGL policy packet. The input was the released Gemini OCR transcript and the public policy-record field contract; the sandbox workspace did not include the ground-truth file. A Codex GPT-5.5 agentic run with filesystem and code execution produced 619 records for 619 gold records. Field-level F1 was 92.7\%, with 89.9\% recall and 95.6\% precision.
+\subsection{Current OCR extraction baseline}
+We ran an agentic OCR-conditioned baseline on all 36 released documents. The extractor received one OCR transcript and the public field contract in an isolated sandbox workspace, without access to the ground-truth file or generator code. It was allowed to inspect the transcript, write temporary code, validate JSON, and return the complete record list for that document. This is a protocol baseline, not a claim about a single model's raw one-shot ability: it measures a per-document agentic extraction setting where code execution and document-specific verification are allowed.
 
 \begin{table}[H]
 \centering
-\small
-\caption{Single-sample agentic OCR probe on the current CGL policy packet.}
-\label{tab:agentic-cgl-probe}
-\begin{tabular}{@{}lrrrrr@{}}
+\footnotesize
+\caption{Full-corpus agentic OCR baseline on the current release.}
+\label{tab:agentic-full-corpus}
+\begin{tabular}{@{}p{0.36\linewidth}rrrrrr@{}}
 \toprule
-Sample & Gold & Predicted & F1 & Recall & Precision \\
+Protocol & Docs & Records & Errors & Micro-F1 & Recall & Precision \\
 \midrule
-\texttt{mixed\_cgl\_040\_001} & 619 & 619 & 92.7\% & 89.9\% & 95.6\% \\
+Codex/xhigh sandbox agent, OCR input & 36 & 33{,}450 & 0 & 97.8\% & 96.9\% & 98.7\% \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-The near-complete record count indicates that an agent with code execution can recover the overall list structure from this OCR transcript. The remaining errors are concentrated in the material policy-clause records: schedule-like families such as forms, endorsements, premiums, exposures, and locations score near perfectly, while exact clause extraction scores lower. This is a useful sanity check for the policy-packet design, but it is not a full leaderboard.
+\begin{table}[H]
+\centering
+\scriptsize
+\caption{Agentic OCR baseline by complexity regime.}
+\label{tab:agentic-by-regime}
+\begin{tabular}{@{}p{0.36\linewidth}rrrrp{0.28\linewidth}@{}}
+\toprule
+Regime & Docs & Records & F1 & Recall & Interpretation \\
+\midrule
+Driver schedule spreadsheet export & 1 & 500 & 87.7\% & 87.7\% & Sparse fields and split vehicle details \\
+Driver/MVR request and roster & 3 & 1{,}260 & 89.1\% & 80.4\% & Roster rows plus sparse MVR enrichments \\
+IFTA multisection return packet & 2 & 796 & 91.1\% & 91.1\% & OCR-layout preservation and cross-section joins \\
+Policy multi-hop & 3 & 1{,}489 & 92.8\% & 92.7\% & Heterogeneous policy records and material clauses \\
+Claim cross-page multi-hop & 3 & 77 & 97.1\% & 97.1\% & Long-range joins across packet sections \\
+External loss run & 3 & 900 & 97.2\% & 97.6\% & Continuation notes and distractor summaries \\
+IFTA return schedule details & 5 & 4{,}923 & 98.0\% & 96.2\% & Structured return rows with layout variation \\
+IFTA tax return inquiry detail & 2 & 1{,}300 & 99.4\% & 99.3\% & Structured inquiry rows \\
+IFTA tax return summary & 4 & 3{,}040 & 99.6\% & 99.6\% & Parser-friendly tax-summary controls \\
+IFTA mileage by vehicle & 8 & 17{,}565 & 100.0\% & 100.0\% & Scale and row-completeness controls \\
+Vehicle schedule spreadsheet export & 2 & 1{,}600 & 100.0\% & 100.0\% & Structured vehicle-table controls \\
+\bottomrule
+\end{tabular}
+\end{table}
 
-The next empirical step is to rerun one-shot and agentic extraction on the full current OCR corpus. We expect one-shot prompting to remain a weak lower bound on the largest PDFs, because the task requires preserving thousands of aligned fields. The stronger comparison for future method papers is among agentic, retrieval-loop, and verification-based systems that can inspect the document incrementally and check record counts against the source.
+The results confirm that not all stressors have the same role. High-density IFTA mileage and vehicle schedules are useful scale controls: an agent that can inspect the OCR and write document-specific code can recover them almost perfectly. Lower scores appear where the document structure requires more than row copying. The \path{ocr_layout_condition}, \path{cross_section_join}, and \path{repeated_keys} slices score 91.1\%; the heterogeneous policy-record slice scores 92.8\%; and the long-range-evidence slice scores 93.2\%. These slices are the more relevant evidence for difficult extraction, while the near-perfect structured reports should be interpreted as scale, completeness, and OCR-preservation controls.
+
+Full-context one-shot extraction is not a practical full-corpus protocol for this release. The small claim packet and one driver/MVR packet returned scoreable outputs, but larger claim packets reached the model output limit and loss-run samples timed out under the same one-shot setup. This is expected for a benchmark containing documents with hundreds to thousands of target records: the one-shot condition is a lower-bound operational stress test, not the primary protocol for full-document evaluation. Future method papers should compare per-document agentic, retrieval-loop, and verification-based systems under the same OCR input condition.

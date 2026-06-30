@@ -126,11 +126,11 @@
     <h1>Benchmark Instance Index</h1>
     <div class="meta">
       <div><span class="mono">/Users/anton/d/kay/longlistbench/data</span></div>
-      <div>Built at: <span class="mono">2026-06-26T08:50:26.166921+00:00</span></div>
-      <div>Total instances: <span class="mono">34</span></div>
-      <div>By regime: <span class="mono">claim_crosspage_multihop: 3, driver_mvr_request_and_roster: 3, driver_schedule_spreadsheet_export: 1, ifta_mileage_by_vehicle: 8, ifta_return_schedule_details: 5, ifta_tax_return_inquiry_detail: 2, ifta_tax_return_summary: 4, loss_run_external: 3, policy_multi_hop: 3, vehicle_schedule_spreadsheet_export: 2</span></div>
-      <div>By template: <span class="mono">claim_crosspage_multihop: 3, driver_mvr_request_and_roster: 3, driver_schedule_spreadsheet_export: 1, ifta_mileage_by_vehicle: 8, ifta_return_schedule_details: 5, ifta_tax_return_inquiry_detail: 2, ifta_tax_return_summary: 4, loss_run_external: 3, policy_multihop_bop: 1, policy_multihop_cgl: 1, policy_multihop_wc: 1, vehicle_schedule_spreadsheet_export: 2</span></div>
-      <div>By format: <span class="mono">crosspage: 6, production_like_pdf: 28</span></div>
+      <div>Built at: <span class="mono">2026-06-29T06:52:21.719965+00:00</span></div>
+      <div>Total instances: <span class="mono">36</span></div>
+      <div>By regime: <span class="mono">claim_crosspage_multihop: 3, driver_mvr_request_and_roster: 3, driver_schedule_spreadsheet_export: 1, ifta_mileage_by_vehicle: 8, ifta_multisection_return_packet: 2, ifta_return_schedule_details: 5, ifta_tax_return_inquiry_detail: 2, ifta_tax_return_summary: 4, loss_run_external: 3, policy_multi_hop: 3, vehicle_schedule_spreadsheet_export: 2</span></div>
+      <div>By template: <span class="mono">driver_mvr_request_and_roster: 3, driver_schedule_spreadsheet_export: 1, ifta_mileage_by_vehicle: 8, ifta_multisection_return_packet: 2, ifta_return_schedule_details: 5, ifta_tax_return_inquiry_detail: 2, ifta_tax_return_summary: 4, loss_run_external: 3, mixed: 1, multihop: 2, policy_multihop_bop: 1, policy_multihop_cgl: 1, policy_multihop_wc: 1, vehicle_schedule_spreadsheet_export: 2</span></div>
+      <div>By format: <span class="mono">crosspage: 6, production_like_pdf: 30</span></div>
     </div>
 
     <div class="panel">
@@ -242,17 +242,17 @@
   <td></td>
   <td>driver_schedule_row</td>
   <td class="num">500</td>
-  <td class="num">15</td>
-  <td class="num">15</td>
-  <td>high_density_long_list, production_like_layout, ocr_condition, page_breaks, large_doc, multiple_tables</td>
+  <td class="num">16</td>
+  <td class="num">16</td>
+  <td>high_density_long_list, production_like_layout, ocr_condition, page_breaks, large_doc, multiple_tables, layout_randomization, inherited_context, split_records, non_target_rows</td>
   <td>
     <a href="./pdfs/driver_schedule_sparse_001.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
     <a href="./html/driver_schedule_sparse_001.html" target="_blank" rel="noopener noreferrer">html</a>
     <a href="./ground_truth/driver_schedule_sparse_001.json" target="_blank" rel="noopener noreferrer">json</a>
     <a href="./transcripts/ocr_gemini/driver_schedule_sparse_001.md" target="_blank" rel="noopener noreferrer">ocr</a>
   </td>
-  <td class="num">85.2 KB</td>
-  <td class="num">44.0 KB</td>
+  <td class="num">202.4 KB</td>
+  <td class="num">58.2 KB</td>
   <td class="num">69.9 KB</td>
 </tr>
 <tr>
@@ -440,6 +440,52 @@
   <td class="num">361.7 KB</td>
 </tr>
 <tr>
+  <td class="mono">ifta_multisection_return_001</td>
+  <td>ifta_multisection_return_packet</td>
+  <td>ifta_multisection_return_packet</td>
+  <td>production_like_pdf</td>
+  <td>commercial_insurance_operations</td>
+  <td>core_operations</td>
+  <td></td>
+  <td>ifta_multisection_jurisdiction_row</td>
+  <td class="num">335</td>
+  <td class="num">60</td>
+  <td class="num">60</td>
+  <td>high_density_long_list, production_like_layout, ocr_condition, ocr_layout_condition, page_breaks, large_doc, multiple_tables, multi_row, inherited_context, split_records, non_target_rows, repeated_keys, cross_section_join</td>
+  <td>
+    <a href="./pdfs/ifta_multisection_return_001.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
+    <a href="./html/ifta_multisection_return_001.html" target="_blank" rel="noopener noreferrer">html</a>
+    <a href="./ground_truth/ifta_multisection_return_001.json" target="_blank" rel="noopener noreferrer">json</a>
+    <a href="./transcripts/ocr_gemini/ifta_multisection_return_001.md" target="_blank" rel="noopener noreferrer">ocr</a>
+  </td>
+  <td class="num">7.00 MB</td>
+  <td class="num">198.7 KB</td>
+  <td class="num">147.0 KB</td>
+</tr>
+<tr>
+  <td class="mono">ifta_multisection_return_002</td>
+  <td>ifta_multisection_return_packet</td>
+  <td>ifta_multisection_return_packet</td>
+  <td>production_like_pdf</td>
+  <td>commercial_insurance_operations</td>
+  <td>core_operations</td>
+  <td></td>
+  <td>ifta_multisection_jurisdiction_row</td>
+  <td class="num">461</td>
+  <td class="num">84</td>
+  <td class="num">84</td>
+  <td>high_density_long_list, production_like_layout, ocr_condition, ocr_layout_condition, page_breaks, large_doc, multiple_tables, multi_row, inherited_context, split_records, non_target_rows, repeated_keys, cross_section_join</td>
+  <td>
+    <a href="./pdfs/ifta_multisection_return_002.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
+    <a href="./html/ifta_multisection_return_002.html" target="_blank" rel="noopener noreferrer">html</a>
+    <a href="./ground_truth/ifta_multisection_return_002.json" target="_blank" rel="noopener noreferrer">json</a>
+    <a href="./transcripts/ocr_gemini/ifta_multisection_return_002.md" target="_blank" rel="noopener noreferrer">ocr</a>
+  </td>
+  <td class="num">9.74 MB</td>
+  <td class="num">274.0 KB</td>
+  <td class="num">202.2 KB</td>
+</tr>
+<tr>
   <td class="mono">ifta_return_schedule_001</td>
   <td>ifta_return_schedule_details</td>
   <td>ifta_return_schedule_details</td>
@@ -449,17 +495,17 @@
   <td></td>
   <td>return_schedule_row</td>
   <td class="num">582</td>
-  <td class="num">33</td>
-  <td class="num">33</td>
-  <td>high_density_long_list, production_like_layout, ocr_condition, page_breaks, large_doc, multiple_tables</td>
+  <td class="num">72</td>
+  <td class="num">72</td>
+  <td>high_density_long_list, production_like_layout, ocr_condition, page_breaks, large_doc, multiple_tables, layout_randomization, inherited_context, split_records, non_target_rows</td>
   <td>
     <a href="./pdfs/ifta_return_schedule_001.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
     <a href="./html/ifta_return_schedule_001.html" target="_blank" rel="noopener noreferrer">html</a>
     <a href="./ground_truth/ifta_return_schedule_001.json" target="_blank" rel="noopener noreferrer">json</a>
     <a href="./transcripts/ocr_gemini/ifta_return_schedule_001.md" target="_blank" rel="noopener noreferrer">ocr</a>
   </td>
-  <td class="num">236.0 KB</td>
-  <td class="num">231.3 KB</td>
+  <td class="num">377.8 KB</td>
+  <td class="num">210.5 KB</td>
   <td class="num">200.3 KB</td>
 </tr>
 <tr>
@@ -472,17 +518,17 @@
   <td></td>
   <td>return_schedule_row</td>
   <td class="num">998</td>
-  <td class="num">53</td>
-  <td class="num">53</td>
-  <td>high_density_long_list, production_like_layout, ocr_condition, page_breaks, large_doc, multiple_tables</td>
+  <td class="num">108</td>
+  <td class="num">108</td>
+  <td>high_density_long_list, production_like_layout, ocr_condition, page_breaks, large_doc, multiple_tables, layout_randomization, inherited_context, split_records, non_target_rows</td>
   <td>
     <a href="./pdfs/ifta_return_schedule_002.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
     <a href="./html/ifta_return_schedule_002.html" target="_blank" rel="noopener noreferrer">html</a>
     <a href="./ground_truth/ifta_return_schedule_002.json" target="_blank" rel="noopener noreferrer">json</a>
     <a href="./transcripts/ocr_gemini/ifta_return_schedule_002.md" target="_blank" rel="noopener noreferrer">ocr</a>
   </td>
-  <td class="num">374.5 KB</td>
-  <td class="num">360.8 KB</td>
+  <td class="num">511.4 KB</td>
+  <td class="num">353.7 KB</td>
   <td class="num">344.2 KB</td>
 </tr>
 <tr>
@@ -495,17 +541,17 @@
   <td></td>
   <td>return_schedule_row</td>
   <td class="num">1085</td>
-  <td class="num">58</td>
-  <td class="num">58</td>
-  <td>high_density_long_list, production_like_layout, ocr_condition, page_breaks, large_doc, multiple_tables</td>
+  <td class="num">114</td>
+  <td class="num">114</td>
+  <td>high_density_long_list, production_like_layout, ocr_condition, page_breaks, large_doc, multiple_tables, layout_randomization, inherited_context, split_records, non_target_rows</td>
   <td>
     <a href="./pdfs/ifta_return_schedule_003.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
     <a href="./html/ifta_return_schedule_003.html" target="_blank" rel="noopener noreferrer">html</a>
     <a href="./ground_truth/ifta_return_schedule_003.json" target="_blank" rel="noopener noreferrer">json</a>
     <a href="./transcripts/ocr_gemini/ifta_return_schedule_003.md" target="_blank" rel="noopener noreferrer">ocr</a>
   </td>
-  <td class="num">400.6 KB</td>
-  <td class="num">392.8 KB</td>
+  <td class="num">536.4 KB</td>
+  <td class="num">383.4 KB</td>
   <td class="num">374.5 KB</td>
 </tr>
 <tr>
@@ -518,17 +564,17 @@
   <td></td>
   <td>return_schedule_row</td>
   <td class="num">1101</td>
-  <td class="num">58</td>
-  <td class="num">58</td>
-  <td>high_density_long_list, production_like_layout, ocr_condition, page_breaks, large_doc, multiple_tables</td>
+  <td class="num">120</td>
+  <td class="num">120</td>
+  <td>high_density_long_list, production_like_layout, ocr_condition, page_breaks, large_doc, multiple_tables, layout_randomization, inherited_context, split_records, non_target_rows</td>
   <td>
     <a href="./pdfs/ifta_return_schedule_004.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
     <a href="./html/ifta_return_schedule_004.html" target="_blank" rel="noopener noreferrer">html</a>
     <a href="./ground_truth/ifta_return_schedule_004.json" target="_blank" rel="noopener noreferrer">json</a>
     <a href="./transcripts/ocr_gemini/ifta_return_schedule_004.md" target="_blank" rel="noopener noreferrer">ocr</a>
   </td>
-  <td class="num">404.4 KB</td>
-  <td class="num">397.9 KB</td>
+  <td class="num">548.5 KB</td>
+  <td class="num">390.4 KB</td>
   <td class="num">380.1 KB</td>
 </tr>
 <tr>
@@ -541,17 +587,17 @@
   <td></td>
   <td>return_schedule_row</td>
   <td class="num">1157</td>
-  <td class="num">61</td>
-  <td class="num">61</td>
-  <td>high_density_long_list, production_like_layout, ocr_condition, page_breaks, large_doc, multiple_tables</td>
+  <td class="num">126</td>
+  <td class="num">126</td>
+  <td>high_density_long_list, production_like_layout, ocr_condition, page_breaks, large_doc, multiple_tables, layout_randomization, inherited_context, split_records, non_target_rows</td>
   <td>
     <a href="./pdfs/ifta_return_schedule_005.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
     <a href="./html/ifta_return_schedule_005.html" target="_blank" rel="noopener noreferrer">html</a>
     <a href="./ground_truth/ifta_return_schedule_005.json" target="_blank" rel="noopener noreferrer">json</a>
     <a href="./transcripts/ocr_gemini/ifta_return_schedule_005.md" target="_blank" rel="noopener noreferrer">ocr</a>
   </td>
-  <td class="num">421.1 KB</td>
-  <td class="num">418.0 KB</td>
+  <td class="num">568.0 KB</td>
+  <td class="num">410.9 KB</td>
   <td class="num">399.3 KB</td>
 </tr>
 <tr>
@@ -564,17 +610,17 @@
   <td></td>
   <td>tax_inquiry_record</td>
   <td class="num">650</td>
-  <td class="num">17</td>
-  <td class="num">17</td>
-  <td>high_density_long_list, production_like_layout, ocr_condition, page_breaks, large_doc, multiple_tables, merged_cells</td>
+  <td class="num">29</td>
+  <td class="num">29</td>
+  <td>high_density_long_list, production_like_layout, ocr_condition, page_breaks, large_doc, multiple_tables, merged_cells, layout_randomization, inherited_context, split_records, non_target_rows</td>
   <td>
     <a href="./pdfs/ifta_tax_inquiry_001.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
     <a href="./html/ifta_tax_inquiry_001.html" target="_blank" rel="noopener noreferrer">html</a>
     <a href="./ground_truth/ifta_tax_inquiry_001.json" target="_blank" rel="noopener noreferrer">json</a>
     <a href="./transcripts/ocr_gemini/ifta_tax_inquiry_001.md" target="_blank" rel="noopener noreferrer">ocr</a>
   </td>
-  <td class="num">180.4 KB</td>
-  <td class="num">57.6 KB</td>
+  <td class="num">217.5 KB</td>
+  <td class="num">82.4 KB</td>
   <td class="num">80.9 KB</td>
 </tr>
 <tr>
@@ -587,17 +633,17 @@
   <td></td>
   <td>tax_inquiry_record</td>
   <td class="num">650</td>
-  <td class="num">17</td>
-  <td class="num">17</td>
-  <td>high_density_long_list, production_like_layout, ocr_condition, page_breaks, large_doc, multiple_tables, merged_cells</td>
+  <td class="num">29</td>
+  <td class="num">29</td>
+  <td>high_density_long_list, production_like_layout, ocr_condition, page_breaks, large_doc, multiple_tables, merged_cells, layout_randomization, inherited_context, split_records, non_target_rows</td>
   <td>
     <a href="./pdfs/ifta_tax_inquiry_002.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
     <a href="./html/ifta_tax_inquiry_002.html" target="_blank" rel="noopener noreferrer">html</a>
     <a href="./ground_truth/ifta_tax_inquiry_002.json" target="_blank" rel="noopener noreferrer">json</a>
     <a href="./transcripts/ocr_gemini/ifta_tax_inquiry_002.md" target="_blank" rel="noopener noreferrer">ocr</a>
   </td>
-  <td class="num">180.9 KB</td>
-  <td class="num">57.6 KB</td>
+  <td class="num">217.0 KB</td>
+  <td class="num">82.4 KB</td>
   <td class="num">80.9 KB</td>
 </tr>
 <tr>
@@ -610,17 +656,17 @@
   <td></td>
   <td>tax_return_jurisdiction_row</td>
   <td class="num">760</td>
-  <td class="num">20</td>
-  <td class="num">20</td>
-  <td>high_density_long_list, production_like_layout, ocr_condition, page_breaks, large_doc, multiple_tables</td>
+  <td class="num">34</td>
+  <td class="num">34</td>
+  <td>high_density_long_list, production_like_layout, ocr_condition, page_breaks, large_doc, multiple_tables, layout_randomization, inherited_context, split_records, non_target_rows</td>
   <td>
     <a href="./pdfs/ifta_tax_summary_001.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
     <a href="./html/ifta_tax_summary_001.html" target="_blank" rel="noopener noreferrer">html</a>
     <a href="./ground_truth/ifta_tax_summary_001.json" target="_blank" rel="noopener noreferrer">json</a>
     <a href="./transcripts/ocr_gemini/ifta_tax_summary_001.md" target="_blank" rel="noopener noreferrer">ocr</a>
   </td>
-  <td class="num">471.7 KB</td>
-  <td class="num">182.2 KB</td>
+  <td class="num">438.8 KB</td>
+  <td class="num">263.6 KB</td>
   <td class="num">254.3 KB</td>
 </tr>
 <tr>
@@ -633,17 +679,17 @@
   <td></td>
   <td>tax_return_jurisdiction_row</td>
   <td class="num">760</td>
-  <td class="num">20</td>
-  <td class="num">20</td>
-  <td>high_density_long_list, production_like_layout, ocr_condition, page_breaks, large_doc, multiple_tables</td>
+  <td class="num">34</td>
+  <td class="num">34</td>
+  <td>high_density_long_list, production_like_layout, ocr_condition, page_breaks, large_doc, multiple_tables, layout_randomization, inherited_context, split_records, non_target_rows</td>
   <td>
     <a href="./pdfs/ifta_tax_summary_002.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
     <a href="./html/ifta_tax_summary_002.html" target="_blank" rel="noopener noreferrer">html</a>
     <a href="./ground_truth/ifta_tax_summary_002.json" target="_blank" rel="noopener noreferrer">json</a>
     <a href="./transcripts/ocr_gemini/ifta_tax_summary_002.md" target="_blank" rel="noopener noreferrer">ocr</a>
   </td>
-  <td class="num">471.7 KB</td>
-  <td class="num">182.2 KB</td>
+  <td class="num">438.5 KB</td>
+  <td class="num">263.5 KB</td>
   <td class="num">254.2 KB</td>
 </tr>
 <tr>
@@ -656,17 +702,17 @@
   <td></td>
   <td>tax_return_jurisdiction_row</td>
   <td class="num">760</td>
-  <td class="num">20</td>
-  <td class="num">20</td>
-  <td>high_density_long_list, production_like_layout, ocr_condition, page_breaks, large_doc, multiple_tables</td>
+  <td class="num">34</td>
+  <td class="num">34</td>
+  <td>high_density_long_list, production_like_layout, ocr_condition, page_breaks, large_doc, multiple_tables, layout_randomization, inherited_context, split_records, non_target_rows</td>
   <td>
     <a href="./pdfs/ifta_tax_summary_003.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
     <a href="./html/ifta_tax_summary_003.html" target="_blank" rel="noopener noreferrer">html</a>
     <a href="./ground_truth/ifta_tax_summary_003.json" target="_blank" rel="noopener noreferrer">json</a>
     <a href="./transcripts/ocr_gemini/ifta_tax_summary_003.md" target="_blank" rel="noopener noreferrer">ocr</a>
   </td>
-  <td class="num">471.7 KB</td>
-  <td class="num">182.5 KB</td>
+  <td class="num">439.1 KB</td>
+  <td class="num">263.8 KB</td>
   <td class="num">254.5 KB</td>
 </tr>
 <tr>
@@ -679,17 +725,17 @@
   <td></td>
   <td>tax_return_jurisdiction_row</td>
   <td class="num">760</td>
-  <td class="num">20</td>
-  <td class="num">20</td>
-  <td>high_density_long_list, production_like_layout, ocr_condition, page_breaks, large_doc, multiple_tables</td>
+  <td class="num">34</td>
+  <td class="num">34</td>
+  <td>high_density_long_list, production_like_layout, ocr_condition, page_breaks, large_doc, multiple_tables, layout_randomization, inherited_context, split_records, non_target_rows</td>
   <td>
     <a href="./pdfs/ifta_tax_summary_004.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
     <a href="./html/ifta_tax_summary_004.html" target="_blank" rel="noopener noreferrer">html</a>
     <a href="./ground_truth/ifta_tax_summary_004.json" target="_blank" rel="noopener noreferrer">json</a>
     <a href="./transcripts/ocr_gemini/ifta_tax_summary_004.md" target="_blank" rel="noopener noreferrer">ocr</a>
   </td>
-  <td class="num">471.4 KB</td>
-  <td class="num">182.1 KB</td>
+  <td class="num">438.2 KB</td>
+  <td class="num">263.5 KB</td>
   <td class="num">254.4 KB</td>
 </tr>
 <tr>
@@ -764,25 +810,25 @@
 <tr>
   <td class="mono">mixed_040_001_crosspage</td>
   <td>claim_crosspage_multihop</td>
-  <td>claim_crosspage_multihop</td>
+  <td>mixed</td>
   <td>crosspage</td>
   <td>claims</td>
-  <td>claim_multihop</td>
+  <td></td>
   <td></td>
   <td>loss_run_incident</td>
   <td class="num">40</td>
-  <td class="num">198</td>
-  <td class="num">198</td>
-  <td>mixed_layout, longer_list, cross_page_join, long_range_evidence, distractor_sections, ocr_condition, page_breaks, large_doc, multiple_tables, multi_row, multi_column, duplicates</td>
+  <td class="num">209</td>
+  <td class="num">209</td>
+  <td>cross_page_join, long_range_evidence, mixed_layout, distractor_sections, longer_list, ocr_condition, page_breaks, large_doc, multiple_tables, multi_row, multi_column, duplicates, natural_long_range_join, inherited_context, non_target_rows, mixed_prose_tables, non_sequential_identifiers</td>
   <td>
     <a href="./pdfs/mixed_040_001_crosspage.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
     <a href="./html/mixed_040_001_crosspage.html" target="_blank" rel="noopener noreferrer">html</a>
     <a href="./ground_truth/mixed_040_001_crosspage.json" target="_blank" rel="noopener noreferrer">json</a>
     <a href="./transcripts/ocr_gemini/mixed_040_001_crosspage.md" target="_blank" rel="noopener noreferrer">ocr</a>
   </td>
-  <td class="num">1.32 MB</td>
-  <td class="num">689.5 KB</td>
-  <td class="num">49.4 KB</td>
+  <td class="num">1.71 MB</td>
+  <td class="num">788.3 KB</td>
+  <td class="num">50.3 KB</td>
 </tr>
 <tr>
   <td class="mono">mixed_cgl_040_001</td>
@@ -794,64 +840,64 @@
   <td>CGL</td>
   <td>policy_packet_item</td>
   <td class="num">619</td>
-  <td class="num">278</td>
-  <td class="num">278</td>
-  <td>commercial_general_liability, exposure_rating_rows, limits_forms_exclusions, distractor_forms, distractor_locations, material_clause_extraction, long_range_evidence, heterogeneous_record_list, ocr_condition, page_breaks, large_doc, multiple_tables, multi_row, multi_column, duplicates, distractor_sections</td>
+  <td class="num">316</td>
+  <td class="num">316</td>
+  <td>commercial_general_liability, exposure_rating_rows, limits_forms_exclusions, distractor_forms, distractor_locations, material_clause_extraction, long_range_evidence, heterogeneous_record_list, ocr_condition, page_breaks, large_doc, multiple_tables, multi_row, multi_column, duplicates, distractor_sections, natural_long_range_join, inherited_context, split_records, non_target_rows</td>
   <td>
     <a href="./pdfs/mixed_cgl_040_001.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
     <a href="./html/mixed_cgl_040_001.html" target="_blank" rel="noopener noreferrer">html</a>
     <a href="./ground_truth/mixed_cgl_040_001.json" target="_blank" rel="noopener noreferrer">json</a>
     <a href="./transcripts/ocr_gemini/mixed_cgl_040_001.md" target="_blank" rel="noopener noreferrer">ocr</a>
   </td>
-  <td class="num">1.91 MB</td>
-  <td class="num">1.31 MB</td>
+  <td class="num">1.39 MB</td>
+  <td class="num">1.12 MB</td>
   <td class="num">447.5 KB</td>
 </tr>
 <tr>
   <td class="mono">multihop_012_001_crosspage</td>
   <td>claim_crosspage_multihop</td>
-  <td>claim_crosspage_multihop</td>
+  <td>multihop</td>
   <td>crosspage</td>
   <td>claims</td>
-  <td>claim_multihop</td>
+  <td></td>
   <td></td>
   <td>loss_run_incident</td>
   <td class="num">12</td>
-  <td class="num">76</td>
-  <td class="num">76</td>
-  <td>coded_values, cross_page_join, long_range_evidence, distractor_sections, ocr_condition, page_breaks, large_doc, multiple_tables, multi_row, multi_column, duplicates</td>
+  <td class="num">80</td>
+  <td class="num">80</td>
+  <td>cross_page_join, long_range_evidence, coded_values, distractor_sections, ocr_condition, page_breaks, large_doc, multiple_tables, multi_row, multi_column, duplicates, natural_long_range_join, inherited_context, non_target_rows, mixed_prose_tables, non_sequential_identifiers</td>
   <td>
     <a href="./pdfs/multihop_012_001_crosspage.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
     <a href="./html/multihop_012_001_crosspage.html" target="_blank" rel="noopener noreferrer">html</a>
     <a href="./ground_truth/multihop_012_001_crosspage.json" target="_blank" rel="noopener noreferrer">json</a>
     <a href="./transcripts/ocr_gemini/multihop_012_001_crosspage.md" target="_blank" rel="noopener noreferrer">ocr</a>
   </td>
-  <td class="num">768.4 KB</td>
-  <td class="num">253.5 KB</td>
-  <td class="num">14.6 KB</td>
+  <td class="num">958.6 KB</td>
+  <td class="num">289.1 KB</td>
+  <td class="num">15.0 KB</td>
 </tr>
 <tr>
   <td class="mono">multihop_025_001_crosspage</td>
   <td>claim_crosspage_multihop</td>
-  <td>claim_crosspage_multihop</td>
+  <td>multihop</td>
   <td>crosspage</td>
   <td>claims</td>
-  <td>claim_multihop</td>
+  <td></td>
   <td></td>
   <td>loss_run_incident</td>
   <td class="num">25</td>
-  <td class="num">126</td>
-  <td class="num">126</td>
-  <td>claimant_lookup, many_to_one_policy, cross_page_join, long_range_evidence, distractor_sections, ocr_condition, page_breaks, large_doc, multiple_tables, multi_row, multi_column, duplicates</td>
+  <td class="num">136</td>
+  <td class="num">136</td>
+  <td>cross_page_join, long_range_evidence, many_to_one_policy, claimant_lookup, distractor_sections, ocr_condition, page_breaks, large_doc, multiple_tables, multi_row, multi_column, duplicates, natural_long_range_join, inherited_context, non_target_rows, mixed_prose_tables, non_sequential_identifiers</td>
   <td>
     <a href="./pdfs/multihop_025_001_crosspage.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
     <a href="./html/multihop_025_001_crosspage.html" target="_blank" rel="noopener noreferrer">html</a>
     <a href="./ground_truth/multihop_025_001_crosspage.json" target="_blank" rel="noopener noreferrer">json</a>
     <a href="./transcripts/ocr_gemini/multihop_025_001_crosspage.md" target="_blank" rel="noopener noreferrer">ocr</a>
   </td>
-  <td class="num">1016.2 KB</td>
-  <td class="num">438.0 KB</td>
-  <td class="num">30.6 KB</td>
+  <td class="num">1.27 MB</td>
+  <td class="num">503.4 KB</td>
+  <td class="num">31.3 KB</td>
 </tr>
 <tr>
   <td class="mono">multihop_bop_012_001</td>
@@ -863,17 +909,17 @@
   <td>BOP</td>
   <td>policy_packet_item</td>
   <td class="num">360</td>
-  <td class="num">142</td>
-  <td class="num">142</td>
-  <td>businessowners_policy, location_scoped_coverage, form_endorsement_links, material_clause_extraction, long_range_evidence, heterogeneous_record_list, ocr_condition, page_breaks, large_doc, multi_row, multi_column, duplicates, distractor_sections</td>
+  <td class="num">158</td>
+  <td class="num">158</td>
+  <td>businessowners_policy, location_scoped_coverage, form_endorsement_links, material_clause_extraction, long_range_evidence, heterogeneous_record_list, ocr_condition, page_breaks, large_doc, multi_row, multi_column, duplicates, distractor_sections, natural_long_range_join, inherited_context, split_records, non_target_rows</td>
   <td>
     <a href="./pdfs/multihop_bop_012_001.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
     <a href="./html/multihop_bop_012_001.html" target="_blank" rel="noopener noreferrer">html</a>
     <a href="./ground_truth/multihop_bop_012_001.json" target="_blank" rel="noopener noreferrer">json</a>
     <a href="./transcripts/ocr_gemini/multihop_bop_012_001.md" target="_blank" rel="noopener noreferrer">ocr</a>
   </td>
-  <td class="num">759.6 KB</td>
-  <td class="num">483.9 KB</td>
+  <td class="num">800.9 KB</td>
+  <td class="num">569.2 KB</td>
   <td class="num">234.2 KB</td>
 </tr>
 <tr>
@@ -886,17 +932,17 @@
   <td>WC</td>
   <td>policy_packet_item</td>
   <td class="num">510</td>
-  <td class="num">194</td>
-  <td class="num">194</td>
-  <td>workers_compensation_policy, class_code_payroll_rating, experience_mod_and_schedule_rating, material_clause_extraction, long_range_evidence, heterogeneous_record_list, ocr_condition, page_breaks, large_doc, multiple_tables, multi_row, multi_column, duplicates, distractor_sections</td>
+  <td class="num">220</td>
+  <td class="num">220</td>
+  <td>workers_compensation_policy, class_code_payroll_rating, experience_mod_and_schedule_rating, material_clause_extraction, long_range_evidence, heterogeneous_record_list, ocr_condition, page_breaks, large_doc, multiple_tables, multi_row, multi_column, duplicates, distractor_sections, natural_long_range_join, inherited_context, split_records, non_target_rows</td>
   <td>
     <a href="./pdfs/multihop_wc_025_001.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
     <a href="./html/multihop_wc_025_001.html" target="_blank" rel="noopener noreferrer">html</a>
     <a href="./ground_truth/multihop_wc_025_001.json" target="_blank" rel="noopener noreferrer">json</a>
     <a href="./transcripts/ocr_gemini/multihop_wc_025_001.md" target="_blank" rel="noopener noreferrer">ocr</a>
   </td>
-  <td class="num">1.32 MB</td>
-  <td class="num">889.9 KB</td>
+  <td class="num">1.01 MB</td>
+  <td class="num">781.2 KB</td>
   <td class="num">319.8 KB</td>
 </tr>
 <tr>
@@ -909,17 +955,17 @@
   <td></td>
   <td>vehicle_schedule_row</td>
   <td class="num">800</td>
-  <td class="num">25</td>
-  <td class="num">25</td>
-  <td>high_density_long_list, production_like_layout, ocr_condition, page_breaks, large_doc, multiple_tables</td>
+  <td class="num">37</td>
+  <td class="num">37</td>
+  <td>high_density_long_list, production_like_layout, ocr_condition, page_breaks, large_doc, multiple_tables, layout_randomization, inherited_context, split_records, non_target_rows</td>
   <td>
     <a href="./pdfs/vehicle_schedule_sparse_001.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
     <a href="./html/vehicle_schedule_sparse_001.html" target="_blank" rel="noopener noreferrer">html</a>
     <a href="./ground_truth/vehicle_schedule_sparse_001.json" target="_blank" rel="noopener noreferrer">json</a>
     <a href="./transcripts/ocr_gemini/vehicle_schedule_sparse_001.md" target="_blank" rel="noopener noreferrer">ocr</a>
   </td>
-  <td class="num">97.2 KB</td>
-  <td class="num">85.7 KB</td>
+  <td class="num">432.4 KB</td>
+  <td class="num">167.5 KB</td>
   <td class="num">143.5 KB</td>
 </tr>
 <tr>
@@ -932,17 +978,17 @@
   <td></td>
   <td>vehicle_schedule_row</td>
   <td class="num">800</td>
-  <td class="num">25</td>
-  <td class="num">25</td>
-  <td>high_density_long_list, production_like_layout, ocr_condition, page_breaks, large_doc, multiple_tables</td>
+  <td class="num">37</td>
+  <td class="num">37</td>
+  <td>high_density_long_list, production_like_layout, ocr_condition, page_breaks, large_doc, multiple_tables, layout_randomization, inherited_context, split_records, non_target_rows</td>
   <td>
     <a href="./pdfs/vehicle_schedule_sparse_002.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
     <a href="./html/vehicle_schedule_sparse_002.html" target="_blank" rel="noopener noreferrer">html</a>
     <a href="./ground_truth/vehicle_schedule_sparse_002.json" target="_blank" rel="noopener noreferrer">json</a>
     <a href="./transcripts/ocr_gemini/vehicle_schedule_sparse_002.md" target="_blank" rel="noopener noreferrer">ocr</a>
   </td>
-  <td class="num">97.3 KB</td>
-  <td class="num">85.6 KB</td>
+  <td class="num">431.5 KB</td>
+  <td class="num">167.4 KB</td>
   <td class="num">143.5 KB</td>
 </tr>
         </tbody>
