@@ -221,7 +221,7 @@ MODELS = {
         extract_fn=extract_with_openai_agent,
     ),
     'codex_gpt55': ModelConfig(
-        name='Codex GPT-5.5 (CLI Agentic)',
+        name='Codex GPT-5.5 (CLI Agentic, xhigh)',
         provider='OpenAI/Codex',
         model_id='gpt-5.5',
         setup_fn=_setup_offline_only_model,
