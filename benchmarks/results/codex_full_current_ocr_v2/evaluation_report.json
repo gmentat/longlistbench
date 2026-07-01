@@ -1,10 +1,11 @@
 {
-  "timestamp": "2026-07-01T06:15:31.336973+00:00",
+  "timestamp": "2026-07-01T11:40:00.402056+00:00",
+  "evaluation_mode": "offline_replay",
   "dataset": {
     "manifest_path": "/Users/anton/d/kay/longlistbench/data/manifest.json",
     "manifest_sha256": "971e26def302810c9f87cc4eda36336c2ff82f54990f2d08aa00e3445ce4e2bc",
-    "git_sha": "f9f8538a230bd786b6de97b99f4cfa775f9c8899",
-    "git_dirty": true
+    "git_sha": "3f905a4adff175390c5ac9ddedf58f4bbe9b78ae",
+    "git_dirty": false
   },
   "model_stats": {
     "codex_gpt55": {
