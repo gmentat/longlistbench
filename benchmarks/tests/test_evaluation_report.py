@@ -32,9 +32,13 @@ def test_evaluation_report_includes_manifest_provenance(tmp_path, monkeypatch):
         extraction_time=0.0,
     )
 
-    evaluate_models.generate_report([result], tmp_path)
+    evaluate_models.generate_report([result], tmp_path, evaluation_mode="offline_replay")
 
     report = json.loads((tmp_path / "evaluation_report.json").read_text())
+    report_md = (tmp_path / "evaluation_report.md").read_text()
     assert report["dataset"]["manifest_sha256"] == hashlib.sha256(manifest_bytes).hexdigest()
     assert report["dataset"]["manifest_path"].endswith("manifest.json")
     assert "git_sha" in report["dataset"]
+    assert report["evaluation_mode"] == "offline_replay"
+    assert "Evaluation mode: `offline_replay`" in report_md
+    assert " N/A | N/A |" in report_md

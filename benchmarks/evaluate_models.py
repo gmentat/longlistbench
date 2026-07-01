@@ -15,7 +15,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed, TimeoutError as
 from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Callable
+from typing import Callable, Iterable
 
 _SCRIPT_DIR = Path(__file__).parent
 if str(_SCRIPT_DIR) not in sys.path:
@@ -934,26 +934,42 @@ def _current_git_sha() -> str | None:
         return None
 
 
-def _git_dirty() -> bool | None:
+def _git_dirty(ignore_paths: Iterable[Path] = ()) -> bool | None:
+    repo_root = Path(__file__).resolve().parents[1]
+    ignored: set[str] = set()
+    for path in ignore_paths:
+        try:
+            ignored.add(path.resolve().relative_to(repo_root).as_posix())
+        except ValueError:
+            continue
+
     try:
         output = subprocess.check_output(
             ["git", "status", "--porcelain"],
-            cwd=Path(__file__).resolve().parents[1],
+            cwd=repo_root,
             text=True,
             stderr=subprocess.DEVNULL,
         )
-        return bool(output.strip())
+        for line in output.splitlines():
+            if not line:
+                continue
+            path = line[3:] if len(line) > 3 else ""
+            if " -> " in path:
+                path = path.split(" -> ", 1)[1]
+            if path not in ignored:
+                return True
+        return False
     except Exception:
         return None
 
 
-def _dataset_provenance() -> dict:
+def _dataset_provenance(ignore_dirty_paths: Iterable[Path] = ()) -> dict:
     manifest_path = default_dataset_dir() / "manifest.json"
     provenance = {
         "manifest_path": str(manifest_path),
         "manifest_sha256": None,
         "git_sha": _current_git_sha(),
-        "git_dirty": _git_dirty(),
+        "git_dirty": _git_dirty(ignore_dirty_paths),
     }
     try:
         manifest_bytes = manifest_path.read_bytes()
@@ -963,7 +979,11 @@ def _dataset_provenance() -> dict:
     return provenance
 
 
-def generate_report(results: list[EvaluationResult], output_path: Path):
+def generate_report(
+    results: list[EvaluationResult],
+    output_path: Path,
+    evaluation_mode: str = "live",
+):
     """Generate summary report in JSON and Markdown formats."""
 
     metadata_by_sample = _load_manifest_metadata_by_sample()
@@ -1057,10 +1077,15 @@ def generate_report(results: list[EvaluationResult], output_path: Path):
         _finalize_group_stats(stats['by_complexity_regime'])
         _finalize_group_stats(stats['by_stressor'])
     
-    # Save JSON report
-    dataset_provenance = _dataset_provenance()
+    json_path = output_path / 'evaluation_report.json'
+    md_path = output_path / 'evaluation_report.md'
+
+    # Save JSON report. Ignore the report files themselves when recording
+    # provenance so a report refresh can still point to a clean code/data tree.
+    dataset_provenance = _dataset_provenance(ignore_dirty_paths=[json_path, md_path])
     report = {
         'timestamp': datetime.now(timezone.utc).isoformat(),
+        'evaluation_mode': evaluation_mode,
         'dataset': dataset_provenance,
         'model_stats': model_stats,
         'detailed_results': [
@@ -1080,7 +1105,6 @@ def generate_report(results: list[EvaluationResult], output_path: Path):
         ],
     }
     
-    json_path = output_path / 'evaluation_report.json'
     with open(json_path, 'w') as f:
         json.dump(report, f, indent=2)
     
@@ -1089,6 +1113,7 @@ def generate_report(results: list[EvaluationResult], output_path: Path):
         "# Multi-Model Evaluation Report",
         "",
         f"Generated: {datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M:%S %Z')}",
+        f"Evaluation mode: `{evaluation_mode}`",
         f"Dataset manifest SHA-256: `{dataset_provenance.get('manifest_sha256') or 'unknown'}`",
         f"Git SHA: `{dataset_provenance.get('git_sha') or 'unknown'}`; dirty: `{dataset_provenance.get('git_dirty')}`",
         "",
@@ -1115,6 +1140,21 @@ def generate_report(results: list[EvaluationResult], output_path: Path):
 
     def _label_group_key(key: str) -> str:
         return key.replace("_", " ").title()
+
+    def _format_summary_time(seconds: float) -> str:
+        if evaluation_mode == "offline_replay":
+            return "N/A"
+        return f"{seconds:.0f}"
+
+    def _format_summary_cost(cost_usd: float) -> str:
+        if evaluation_mode == "offline_replay":
+            return "N/A"
+        return f"${cost_usd:.4f}"
+
+    def _format_detail_time(seconds: float) -> str:
+        if evaluation_mode == "offline_replay":
+            return "N/A"
+        return f"{seconds:.1f}s"
 
     def _append_group_table(title: str, stats_key: str, preferred_order: list[str]) -> None:
         group_keys = _observed_group_keys(stats_key, preferred_order)
@@ -1148,7 +1188,7 @@ def generate_report(results: list[EvaluationResult], output_path: Path):
             md_lines.append(
                 f"| {name} | {s['weighted_f1']:.1%} | {s['weighted_recall']:.1%} | "
                 f"{s['weighted_precision']:.1%} | {s['avg_f1']:.1%} | {s['total_rows']} | {s['total_samples']} | {s['errors']} | "
-                f"{s.get('total_extraction_time', 0):.0f} | ${s.get('total_cost_usd', 0):.4f} |"
+                f"{_format_summary_time(s.get('total_extraction_time', 0.0))} | {_format_summary_cost(s.get('total_cost_usd', 0.0))} |"
             )
     
     md_lines.extend([
@@ -1257,12 +1297,11 @@ def generate_report(results: list[EvaluationResult], output_path: Path):
                     else:
                         md_lines.append(
                             f"| {name} | {m['f1']:.1%} | {m['recall']:.1%} | "
-                            f"{m['precision']:.1%} | {m['predicted_count']} | {r2.extraction_time:.1f}s |"
+                            f"{m['precision']:.1%} | {m['predicted_count']} | {_format_detail_time(r2.extraction_time)} |"
                         )
             
             md_lines.append("")
     
-    md_path = output_path / 'evaluation_report.md'
     with open(md_path, 'w') as f:
         f.write('\n'.join(md_lines))
     
@@ -1347,7 +1386,7 @@ def main():
         )
     
     # Generate reports
-    generate_report(results, output_dir)
+    generate_report(results, output_dir, evaluation_mode="offline_replay" if args.offline else "live")
     
     print()
     print("="*70)
