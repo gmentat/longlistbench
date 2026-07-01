@@ -163,7 +163,7 @@ The PDFs do not print these labels, but the stressors are visible in the documen
 | `page_breaks` | `ifta_mileage_by_vehicle_001`, pages 3-4 | Unit 118 spans two pages with the same unit header and jurisdiction rows split across the page boundary. |
 | `multi_row` | `loss_run_external_001`, pages 1-2; `driver_mvr_packet_001`, page 10 | Claim rows include description/detail rows; driver records include roster/MVR detail blocks. |
 | `duplicates` | `loss_run_external_001`, pages 1-2; `multihop_bop_012_001`, page 142 | Summary/no-claim rows and archived/prior-term sections create near-duplicate distractors. |
-| `large_doc` | `ifta_mileage_by_vehicle_008`, whole PDF; `mixed_cgl_040_001`, whole PDF | Long files with 218 and 278 pages respectively, including thousands of operation rows or many policy records. |
+| `large_doc` | `ifta_mileage_by_vehicle_008`, whole PDF; `mixed_cgl_040_001`, whole PDF | Long files with 218 and 316 pages respectively, including thousands of operation rows or many policy records. |
 | `multiple_tables` | `ifta_tax_inquiry_001`, page 1; `loss_run_external_001`, pages 1-2 | Target tables appear alongside support tables, empty tables, summaries, and section totals. |
 | `multi_column` | `mixed_cgl_040_001`, pages 139-150; `multihop_wc_025_001`, pages 95-106 | Material policy provisions are laid out in two-column policy-form pages. |
 | `merged_cells` | `loss_run_external_001`, page 1; `ifta_tax_inquiry_001`, page 1 | Section-spanning rows and wide description/status cells interrupt the tabular structure. |
@@ -207,13 +207,13 @@ OCR support should be interpreted at the affected-record and field level, not on
 |--------|-------|-----------------------|
 | `multihop_bop_012_001` | 142 | 360 |
 | `multihop_wc_025_001` | 194 | 510 |
-| `mixed_cgl_040_001` | 278 | 619 |
+| `mixed_cgl_040_001` | 316 | 619 |
 
 ## Saved Evaluation Artifacts
 
 Saved reports under `benchmarks/results/` should be treated as local run artifacts unless their manifest hash matches the current `data/manifest.json`. After replacing layouts, rerun OCR and evaluation before citing current-layout or current-model baselines. The current released dataset includes OCR transcripts for every PDF.
 
-The current full-corpus Codex/xhigh sandbox OCR run is saved under `benchmarks/results/codex_full_current_ocr_v2/`: 36 documents, 33,450 target records, 0 extraction errors, 97.7% micro-F1, 96.8% recall, 98.7% precision, and 96.7% document-macro F1.
+The current full-corpus Codex CLI `gpt-5.5` sandbox OCR run with `model_reasoning_effort="xhigh"` is saved under `benchmarks/results/codex_full_current_ocr_v2/`: 36 documents, 33,450 target records, 0 extraction errors, 97.7% micro-F1, 96.8% recall, 98.7% precision, and 96.7% document-macro F1.
 
 Key regime slices from that run:
 

@@ -22,6 +22,37 @@ The core operations documents contain dense lists from insurance and trucking wo
     \label{fig:generation-pipeline}
 \end{figure}
 
+The released PDFs include dense tables, wrapped rows, form-like pages, and policy packet sections rather than only clean spreadsheet exports. \Cref{fig:layout-examples} shows representative rendered pages used to audit the visible stressors.
+
+\begin{figure}[t]
+    \centering
+    \begin{subfigure}[t]{0.48\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{figures/example_page_breaks.png}
+        \caption{Page-spanning repeated rows}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.48\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{figures/example_multi_row.png}
+        \caption{Multi-row record details}
+    \end{subfigure}
+    \vspace{0.75em}
+    \begin{subfigure}[t]{0.48\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{figures/example_merged_cells.png}
+        \caption{Merged or section-spanning cells}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.48\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{figures/example_multi_column.png}
+        \caption{Two-column policy text}
+    \end{subfigure}
+    \caption{Examples of rendered layout stressors in LongListBench documents. The documents do not print benchmark labels; these examples illustrate the visible structures associated with the metadata tags.}
+    \label{fig:layout-examples}
+\end{figure}
+
 The current release prioritizes fewer, larger, more realistic PDFs rather than many small template variants. This choice reflects the intended use case: measuring list-completeness failures at scale. Several PDFs contain more than 1{,}000 target records, and the full corpus contains 33{,}450 target records across 36 PDFs.
 
 \subsection{Document-family inventory}
@@ -78,7 +109,7 @@ Policy packets & 3 & 1{,}489 & Heterogeneous policy records across declarations,
 
 These regimes are intentionally not a single difficulty ladder. Many core operations files primarily test scale and completeness; deterministic parsers may perform well when OCR preserves row boundaries. The multisection IFTA packets within core operations add OCR-layout and cross-section join stressors. Claim and policy packets test different complexity: inherited context, distant evidence, mixed layouts, heterogeneous schemas, and distractor sections. Results should therefore be reported by regime rather than only as one aggregate score.
 
-\Cref{tab:complexity-stressors} lists the cross-cutting stressors. The first seven originate from the earlier generator's problem taxonomy. In the current release they are implemented in more production-like layouts rather than as visibly synthetic toggles. For example, page breaks appear as page-spanning sections with repeated headers; duplicate pressure appears mainly as prior-term, archived, or near-duplicate distractor material rather than exact duplicate target rows.
+\Cref{tab:complexity-stressors} lists the canonical cross-cutting stressors. The first seven originate from the earlier generator's problem taxonomy. In the current release they are implemented in more production-like layouts rather than as visibly synthetic toggles. For example, page breaks appear as page-spanning sections with repeated headers; duplicate pressure appears mainly as prior-term, archived, or near-duplicate distractor material rather than exact duplicate target rows. Per-sample metadata also includes finer domain-specific tags, such as policy-line or endorsement tags, for audit and slicing; those tags are not separate canonical stressor categories.
 
 \begin{table}[t]
 \centering
@@ -120,7 +151,7 @@ Stressor & Example PDF pages & Visible document evidence \\
 \path{page_breaks} & \path{ifta_mileage_by_vehicle_001}, pages 3--4 & One unit section spans two pages with repeated unit context and jurisdiction rows on both pages. \\
 \path{multi_row} & \path{loss_run_external_001}, pages 1--2; \path{driver_mvr_packet_001}, page 10 & Records include description/detail rows and driver or MVR detail blocks. \\
 \path{duplicates} & \path{loss_run_external_001}, pages 1--2; \path{multihop_bop_012_001}, page 142 & Summary, no-claim, archived, or prior-term material creates near-duplicate distractors. \\
-\path{large_doc} & \path{ifta_mileage_by_vehicle_008}, whole PDF; \path{mixed_cgl_040_001}, whole PDF & Long files reach 218 and 278 pages, respectively. \\
+\path{large_doc} & \path{ifta_mileage_by_vehicle_008}, whole PDF; \path{mixed_cgl_040_001}, whole PDF & Long files reach 218 and 316 pages, respectively. \\
 \path{multiple_tables} & \path{ifta_tax_inquiry_001}, page 1; \path{loss_run_external_001}, pages 1--2 & Target tables appear alongside support tables, empty tables, summaries, and section totals. \\
 \path{multi_column} & \path{mixed_cgl_040_001}, pages 139--150; \path{multihop_wc_025_001}, pages 95--106 & Material policy provisions are laid out in two-column policy-form pages. \\
 \path{merged_cells} & \path{loss_run_external_001}, page 1; \path{ifta_tax_inquiry_001}, page 1 & Section-spanning rows and wide description/status cells interrupt regular table structure. \\
@@ -135,7 +166,7 @@ Stressor & Example PDF pages & Visible document evidence \\
 \end{table}
 
 \subsection{OCR condition}
-Every released PDF has an OCR transcript generated from rendered page images. The OCR transcript is the released text condition for this version. We treat OCR as a controlled input condition: a system may evaluate directly from the PDF, from the OCR transcript, or from its own OCR pipeline, but reported results should state the input condition clearly.
+Every released PDF has an OCR transcript generated from rendered page images. The released transcript condition was produced with Google Gemini 3.5 Flash vision OCR through the direct Google/Vertex Gemini API path, after rasterizing PDF pages at 200 DPI. The OCR transcript is the released text condition for this version; it is not the PDF text layer or the HTML source text. We treat OCR as a controlled input condition: a system may evaluate directly from the PDF, from the OCR transcript, or from its own OCR pipeline, but reported results should state the input condition clearly.
 
 \subsection{Long-range evidence}
 LongListBench includes single-document multi-hop cases because many production tasks are not contained in one adjacent table region. A target loss-run record may require joining a front claim schedule against policy registers, driver rosters, cause-code appendices, claimant indexes, and payment ledgers that appear dozens or hundreds of pages later. Policy packets require similar joins across declarations, location schedules, forms, endorsements, rating pages, and premium summaries.

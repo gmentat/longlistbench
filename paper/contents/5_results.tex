@@ -37,21 +37,23 @@ The multi-hop cases stress a different failure mode. The claim packets contain o
 OCR validation checks whether tracked identifiers from the ground truth are visible in the released transcripts. All 36 samples pass the 95\% identifier-coverage threshold, with 100.0\% average identifier coverage and 99.9\% support across tracked identifier field instances. The affected-record count is more conservative: 39 of 33{,}450 records have at least one tracked identifier missing from OCR, mostly because a small number of repeated section headers or row identifiers were not transcribed. We also run a numeric-fidelity gate over all ground-truth numeric values with absolute value at least 10; the current release has 0 unrecoverable numeric values under that check. These validations bound the released OCR transcript condition before extraction scoring; they are not extraction scores. Extraction runs are evaluated against all flattened field-value pairs in the predicted records.
 
 \subsection{Current OCR extraction baseline}
-We ran an agentic OCR-conditioned baseline on all 36 released documents. The extractor received one OCR transcript and the public field contract in an isolated sandbox workspace, without access to the ground-truth file or generator code. It was allowed to inspect the transcript, write temporary code, validate JSON, and return the complete record list for that document. This is a protocol baseline, not a claim about a single model's raw one-shot ability: it measures a per-document agentic extraction setting where code execution and document-specific verification are allowed.
+We ran an agentic OCR-conditioned baseline on all 36 released documents. The extractor received one OCR transcript and the public field contract in an isolated sandbox workspace, without access to the ground-truth file or generator code. It was allowed to inspect the transcript, write temporary code, validate JSON, and return the complete record list for that document. This is a protocol baseline, not a claim about a single model's raw one-shot ability: it measures a per-document agentic extraction setting where code execution and document-specific verification are allowed. The saved run uses model key \texttt{codex\_gpt55}: Codex CLI invoking \texttt{gpt-5.5} with \texttt{model\_reasoning\_effort="xhigh"} on July 1, 2026.
 
 \begin{table}[H]
 \centering
 \footnotesize
 \caption{Full-corpus agentic OCR baseline on the current release.}
 \label{tab:agentic-full-corpus}
-\begin{tabular}{@{}p{0.36\linewidth}rrrrrr@{}}
+\begin{tabular}{@{}p{0.30\linewidth}rrrrrrr@{}}
 \toprule
-Protocol & Docs & Records & Errors & Micro-F1 & Recall & Precision \\
+Protocol & Docs & Records & Errors & Micro-F1 & Macro-F1 & Recall & Precision \\
 \midrule
-Codex/xhigh sandbox agent, OCR input & 36 & 33{,}450 & 0 & 97.7\% & 96.8\% & 98.7\% \\
+Codex CLI \texttt{gpt-5.5}, xhigh reasoning, OCR input & 36 & 33{,}450 & 0 & 97.7\% & 96.7\% & 96.8\% & 98.7\% \\
 \bottomrule
 \end{tabular}
 \end{table}
+
+The micro score is intentionally field-pair weighted: larger documents contribute more evidence. This also means the aggregate is influenced by large parser-friendly controls. The \texttt{ifta\_mileage\_by\_vehicle} family contributes 17{,}565 of 33{,}450 target records (52.5\%) and 34.5\% of scored gold field pairs, and it scores 100.0\%. We therefore report document-macro F1 and regime slices alongside the headline micro-F1.
 
 \begin{table}[H]
 \centering

@@ -48,7 +48,7 @@ Representative pages for visual audit:
 | `page_breaks` | `ifta_mileage_by_vehicle_001`, pages 3-4 | Same unit section spans two pages with repeated unit context. |
 | `multi_row` | `loss_run_external_001`, pages 1-2; `driver_mvr_packet_001`, page 10 | Description/detail rows and driver/MVR detail blocks. |
 | `duplicates` | `loss_run_external_001`, pages 1-2; `multihop_bop_012_001`, page 142 | No-claim/summary rows and archived prior-term distractors. |
-| `large_doc` | `ifta_mileage_by_vehicle_008`, whole PDF; `mixed_cgl_040_001`, whole PDF | 218-page operations packet and 278-page policy packet. |
+| `large_doc` | `ifta_mileage_by_vehicle_008`, whole PDF; `mixed_cgl_040_001`, whole PDF | 218-page operations packet and 316-page policy packet. |
 | `multiple_tables` | `ifta_tax_inquiry_001`, page 1; `loss_run_external_001`, pages 1-2 | Target tables mixed with support, empty, and summary tables. |
 | `multi_column` | `mixed_cgl_040_001`, pages 139-150; `multihop_wc_025_001`, pages 95-106 | Two-column material-provision pages. |
 | `merged_cells` | `loss_run_external_001`, page 1; `ifta_tax_inquiry_001`, page 1 | Section-spanning and wide description/status cells. |
@@ -175,7 +175,7 @@ Primary benchmark comparisons should use per-document extraction protocols: the 
 
 Saved reports under `benchmarks/results/` may refer to earlier corpus versions. Do not cite them as current-layout baselines unless their report provenance records the current `data/manifest.json` hash.
 
-The current full-corpus Codex/xhigh sandbox OCR run is saved under `benchmarks/results/codex_full_current_ocr_v2/`: 36 documents, 33,450 target records, 0 extraction errors, 97.7% micro-F1, 96.8% recall, 98.7% precision, and 96.7% document-macro F1.
+The current full-corpus Codex CLI `gpt-5.5` sandbox OCR run with `model_reasoning_effort="xhigh"` is saved under `benchmarks/results/codex_full_current_ocr_v2/`: 36 documents, 33,450 target records, 0 extraction errors, 97.7% micro-F1, 96.8% recall, 98.7% precision, and 96.7% document-macro F1.
 
 The strongest stressor signal is regime-specific. Driver schedule, driver/MVR, multisection IFTA, and policy packet regimes score 87.7-92.8% F1, while parser-friendly IFTA mileage and vehicle schedule regimes are near-perfect controls. Treat single-sample probe folders as older diagnostics unless rerun against the current manifest.
 
