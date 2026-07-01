@@ -1,5 +1,5 @@
 {
-  "built_at": "2026-07-01T04:59:18.601040+00:00",
+  "built_at": "2026-07-01T12:01:33.829272+00:00",
   "dataset_dir": "/Users/anton/d/kay/longlistbench/data",
   "source_metadata": "manifest.json",
   "total_instances": 36,
@@ -1283,7 +1283,7 @@
       "difficulty": "mixed",
       "format": "crosspage",
       "domain": "claims",
-      "hf_config": null,
+      "hf_config": "claim_multihop",
       "lob": null,
       "target_record_type": "loss_run_incident",
       "problems": [
@@ -1392,7 +1392,7 @@
       "difficulty": "multihop",
       "format": "crosspage",
       "domain": "claims",
-      "hf_config": null,
+      "hf_config": "claim_multihop",
       "lob": null,
       "target_record_type": "loss_run_incident",
       "problems": [
@@ -1444,7 +1444,7 @@
       "difficulty": "multihop",
       "format": "crosspage",
       "domain": "claims",
-      "hf_config": null,
+      "hf_config": "claim_multihop",
       "lob": null,
       "target_record_type": "loss_run_incident",
       "problems": [

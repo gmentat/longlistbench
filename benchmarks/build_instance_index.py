@@ -47,6 +47,19 @@ def _file_size_bytes(path: Path) -> int | None:
         return None
 
 
+def _hf_config_for_instance(instance: dict[str, Any]) -> str:
+    configured = instance.get("hf_config")
+    if configured:
+        return str(configured)
+
+    domain = instance.get("domain")
+    if domain == "policy_review":
+        return "policy_packets"
+    if domain == "claims" and instance.get("format") == "crosspage":
+        return "claim_multihop"
+    return "core_operations"
+
+
 def build_instance_index(dataset_dir: Path) -> dict[str, Any]:
     """Build a comprehensive index of benchmark instances from dataset metadata.
 
@@ -92,7 +105,7 @@ def build_instance_index(dataset_dir: Path) -> dict[str, Any]:
                 "difficulty": inst.get("difficulty"),
                 "format": inst.get("format"),
                 "domain": inst.get("domain", "claims"),
-                "hf_config": inst.get("hf_config"),
+                "hf_config": _hf_config_for_instance(inst),
                 "lob": inst.get("lob"),
                 "target_record_type": inst.get("target_record_type", "loss_run_incident"),
                 "problems": inst.get("problems", []),
