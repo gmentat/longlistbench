@@ -50,5 +50,6 @@
   "hf_config": "core_operations",
   "num_claims": 300,
   "document_count": 1,
-  "evidence_pattern": "single_document"
+  "evidence_pattern": "single_document",
+  "ocr_md_size_bytes": 135126
 }

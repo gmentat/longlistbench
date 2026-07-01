@@ -198,8 +198,8 @@
     "html": "html/multihop_wc_025_001.html",
     "ocr_md": "transcripts/ocr_gemini/multihop_wc_025_001.md",
     "json_size_bytes": 327471,
-    "pdf_size_bytes": 1384647,
-    "html_size_bytes": 911306,
+    "pdf_size_bytes": 1056909,
+    "html_size_bytes": 799989,
     "ocr_size_bytes": 537185,
     "metadata": "metadata/multihop_wc_025_001.json"
   },

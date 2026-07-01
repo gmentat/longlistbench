@@ -117,6 +117,30 @@ class EvaluationMetricsTests(unittest.TestCase):
 
         self.assertEqual(metrics["f1"], 1.0)
 
+    def test_generic_id_only_prediction_does_not_pass_full_record_scoring(self):
+        ground_truth = [
+            {
+                "unit_number": "TRK-101",
+                "jurisdiction": "PA",
+                "taxable_miles": 12500,
+                "tax_due": 742.19,
+            }
+        ]
+        predicted = [
+            {
+                "unit_number": "TRK-101",
+                "jurisdiction": "PA",
+            }
+        ]
+
+        metrics = evaluate_record_extraction(predicted, ground_truth)
+
+        self.assertEqual(metrics["found"], 2)
+        self.assertEqual(metrics["total_gold_field_pairs"], 4)
+        self.assertEqual(metrics["total_pred_field_pairs"], 2)
+        self.assertEqual(metrics["recall"], 0.5)
+        self.assertLess(metrics["f1"], 1.0)
+
     def test_zero_default_financial_breakdowns_are_not_scored(self):
         ground_truth = [
             {
@@ -242,6 +266,50 @@ class EvaluationMetricsTests(unittest.TestCase):
 
         self.assertEqual(metrics["found"], 0)
         self.assertEqual(metrics["f1"], 0.0)
+
+    def test_claim_id_only_prediction_does_not_pass_full_incident_scoring(self):
+        ground_truth = [
+            {
+                "incident_number": "#10001",
+                "reference_number": "L260001",
+                "company_name": "Example Trucking",
+                "coverage_type": "Liability",
+                "status": "Open",
+                "policy_number": "P1",
+                "policy_state": "PA",
+                "description": "Rear-end collision",
+                "date_of_loss": "01/01/2026",
+                "loss_state": "PA",
+                "date_reported": "01/02/2026",
+                "insured": "Example Trucking",
+                "bi": {"reserve": 1000.0, "paid": 250.0, "recovered": 0.0, "total_incurred": 1250.0},
+            }
+        ]
+        predicted = [
+            {
+                **ground_truth[0],
+                "company_name": "Wrong Company",
+                "coverage_type": "Cargo",
+                "status": "Closed",
+                "policy_number": "P2",
+                "policy_state": "OH",
+                "description": "Wrong loss description",
+                "date_of_loss": "02/01/2026",
+                "loss_state": "OH",
+                "date_reported": "02/02/2026",
+                "insured": "Wrong Insured",
+                "bi": {"reserve": 0.0, "paid": 0.0, "recovered": 0.0, "total_incurred": 0.0},
+            }
+        ]
+
+        metrics = evaluate_extraction(predicted, ground_truth)
+
+        self.assertEqual(metrics["found"], 10)
+        self.assertEqual(metrics["total_gold_field_pairs"], 23)
+        self.assertEqual(metrics["total_pred_field_pairs"], 20)
+        self.assertEqual(metrics["exact_record_matches"], 0)
+        self.assertLess(metrics["recall"], 0.5)
+        self.assertLess(metrics["f1"], 0.5)
 
 
 if __name__ == "__main__":

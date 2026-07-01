@@ -96,7 +96,7 @@ python benchmarks/export_hf_dataset.py \
 - **3 claim cross-page PDFs**, with 3 of the policy PDFs also requiring long-range cross-page extraction
 - **Ground truth annotations** in JSON format
 - **OCR transcripts** generated from rendered PDF page images
-- **OCR support validation**: 100.0% average identifier coverage, 99.9% tracked identifier-field support, and 39 records with at least one tracked identifier missing from OCR
+- **OCR support validation**: 100.0% average identifier coverage, 99.9% tracked identifier-field support, 39 records with at least one tracked identifier missing from OCR, and 0 unrecoverable ground-truth numeric values at the default numeric-fidelity threshold
 - **Synthetic visible values only**; private production documents were used only as visual layout references
 
 ## Dataset Layout
@@ -201,7 +201,7 @@ The policy suite has 3 commercial insurance policy PDFs and 1,489 target policy 
 
 Interpret the configs separately. `core_operations` contains high-density structured reports where deterministic row parsers or document-specific agent code can perform well; those files measure scale, OCR preservation, and output completeness. The multisection IFTA files within `core_operations` add OCR-layout preservation and cross-section joins. The claim and policy packet configs are the stronger complex packet cases, with inherited context, heterogeneous record types, distant supporting sections, and distractor material.
 
-OCR support should be interpreted at the affected-record level, not only by unique identifier coverage. For example, a single missing repeated header can affect many rows that inherit that value. The current validation reports 39 affected records across 33,450 total targets.
+OCR support should be interpreted at the affected-record and field level, not only by unique identifier coverage. For example, a single missing repeated header can affect many rows that inherit that value. The current identifier validation reports 39 affected records across 33,450 total targets. The numeric-fidelity gate also checks that every ground-truth numeric value with absolute value at least 10 is recoverable from the released OCR transcript; the current release has 0 unrecoverable numeric values under that gate. These OCR support gates do not score extraction quality by themselves. Extraction quality is scored by the evaluator over all flattened field-value pairs in the predicted records, so a prediction that recovers only IDs receives low recall.
 
 | Sample | Pages | Target policy records |
 |--------|-------|-----------------------|
@@ -213,7 +213,7 @@ OCR support should be interpreted at the affected-record level, not only by uniq
 
 Saved reports under `benchmarks/results/` should be treated as local run artifacts unless their manifest hash matches the current `data/manifest.json`. After replacing layouts, rerun OCR and evaluation before citing current-layout or current-model baselines. The current released dataset includes OCR transcripts for every PDF.
 
-The current full-corpus Codex/xhigh sandbox OCR run is saved under `benchmarks/results/codex_full_current_ocr_v2/`: 36 documents, 33,450 target records, 0 extraction errors, 97.8% micro-F1, 96.9% recall, 98.7% precision, and 96.7% document-macro F1.
+The current full-corpus Codex/xhigh sandbox OCR run is saved under `benchmarks/results/codex_full_current_ocr_v2/`: 36 documents, 33,450 target records, 0 extraction errors, 97.7% micro-F1, 96.8% recall, 98.7% precision, and 96.7% document-macro F1.
 
 Key regime slices from that run:
 
@@ -225,9 +225,9 @@ Key regime slices from that run:
 | Policy multi-hop | 3 | 1,489 | 92.8% |
 | Claim cross-page multi-hop | 3 | 77 | 97.1% |
 | External loss run | 3 | 900 | 97.2% |
-| IFTA return schedule details | 5 | 4,923 | 98.0% |
+| IFTA return schedule details | 5 | 4,923 | 97.7% |
 | IFTA tax return inquiry detail | 2 | 1,300 | 99.4% |
-| IFTA tax return summary | 4 | 3,040 | 99.6% |
+| IFTA tax return summary | 4 | 3,040 | 99.7% |
 | IFTA mileage by vehicle | 8 | 17,565 | 100.0% |
 | Vehicle schedule spreadsheet export | 2 | 1,600 | 100.0% |
 

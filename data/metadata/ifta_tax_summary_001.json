@@ -16,8 +16,8 @@
     "html": "html/ifta_tax_summary_001.html",
     "metadata": "metadata/ifta_tax_summary_001.json",
     "json_size_bytes": 260441,
-    "pdf_size_bytes": 483008,
-    "html_size_bytes": 186607,
+    "pdf_size_bytes": 449343,
+    "html_size_bytes": 269909,
     "ocr_md": "transcripts/ocr_gemini/ifta_tax_summary_001.md",
     "ocr_size_bytes": 131101
   },

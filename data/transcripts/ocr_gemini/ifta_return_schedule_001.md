@@ -296,7 +296,7 @@ Jurisdiction,
 Return schedule,Return Totals (Quarterly Return 2)
 Distance / taxable distance,472,006 / 471,764
 Taxable / paid / net volume,79,993 / 34,213 / 45,780
-Rate and amounts,"; $13,169.38; $27.42; $13,169.80"
+Rate and amounts,"; $13,169.38; $27.42; $13,196.80"
 
 ____________________________________________________________________________________________________
 IFTA return support                                                                           Page 9
@@ -1762,7 +1762,7 @@ IFTA RETURN SUPPORT | | IFTA FILE EEEF1B8
 
 | | |
 | :--- | :--- |
-| **QUARTERLY RETURN 23 / NC**<br>Surcharge: **N**. Distance reviewed: **11,624**; taxable distance: **11,624**.<br><br>Volumes - taxable 1,871, tax-paid 0, net 1,871. Rate 0.703; due/credit $1,315.31; interest $0.00; total $1,315.31. | **QUARTERLY RETURN 23 / IN**<br>Surcharge: **N**. Distance reviewed: **20,072**; taxable distance: **20,072**.<br><br>Volumes - taxable 3,062, tax-paid 0, net 3,062. Rate 0.6498; due/credit $1,989.69; interest $0.00; total $1,989.69. |
+| **QUARTERLY RETURN 23 / NC**<br>Surcharge: **N**. Distance reviewed: **11,624**; taxable distance: **11,624**.<br><br>Volumes - taxable 1,871, tax-paid 0, net 1,871. Rate 0.703; due/credit $1,315.31; interest $0.00; total $1,315.31. | **QUARTERLY RETURN 23 / IN**<br>Surcharge: **N**. Distance reviewed: **20,072**; taxable distance: **20,070**.<br><br>Volumes - taxable 3,062, tax-paid 0, net 3,062. Rate 0.6498; due/credit $1,989.69; interest $0.00; total $1,989.69. |
 | | |
 | **QUARTERLY RETURN 23 / CO**<br>Surcharge: **N**. Distance reviewed: **17,484**; taxable distance: **17,484**.<br><br>Volumes - taxable 3,198, tax-paid 9,413, net -6,215. Rate 0.731; due/credit -$4,543.16; interest $0.00; total -$4,543.16. | **QUARTERLY RETURN 23 / WY**<br>Surcharge: **N**. Distance reviewed: **27,810**; taxable distance: **27,810**.<br><br>Volumes - taxable 4,524, tax-paid 12,050, net -7,526. Rate 0.4838; due/credit -$3,641.08; interest $0.00; total -$3,641.08. |
 | | |
@@ -1817,4 +1817,3 @@ Taxable / paid / net volume,65,190 / 65,062 / 128
 Rate and amounts,; -$26.67; $8.35; -$18.32
 
 IFTA return support                                                                         Page 72
-

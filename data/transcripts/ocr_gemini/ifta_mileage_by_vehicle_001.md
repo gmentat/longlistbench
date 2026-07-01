@@ -3863,7 +3863,7 @@ Continuation page. Use the same unit number shown in the header for each jurisdi
 "Virginia\ntrip-sheet and dispatch legs reconciled","2,224.7","100.6","2,325.3"
 "Washington\ntrip-sheet and dispatch legs reconciled","1,698.7","0.0","1,698.7"
 "West Virginia\nroute exception cleared by mileage desk","1,496.0","223.8","1,719.8"
-"Wyoming\ntrip-sheet and dispatch legs reconciled","1,493.8","0.0","1,493.8"
+"Wyoming\ntrip-sheet and dispatch legs reconciled","1,943.8","0.0","1,943.8"
 
 Page 94
 
@@ -3973,4 +3973,3 @@ Continuation page. Use the same unit number shown in the header for each jurisdi
 | **Washington** <br> telematics accepted; odometer tie-out reviewed | 3,503.8 | 0.0 | 3,503.8 |
 
 Page 97
-

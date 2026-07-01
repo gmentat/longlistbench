@@ -21,7 +21,7 @@ The documents are synthetic. This is necessary for public release, but it means 
 
 The current release includes one OCR transcript condition. This supports reproducible OCR-conditioned evaluation, but it does not isolate OCR penalty by itself. Measuring OCR penalty requires adding another transcript or direct-PDF condition and running the same extraction protocol across both.
 
-OCR support should also be interpreted at the field level. A unique-identifier coverage check can look strong while a missing section header affects many records that inherit that header. The current validator reports both unique identifier coverage and affected records for tracked identifiers; richer future releases should extend this to all scored fields, not only identifiers.
+OCR support should also be interpreted at the field level. A unique-identifier coverage check can look strong while a missing section header affects many records that inherit that header. The current validation reports unique identifier coverage, affected records for tracked identifiers, and a numeric-fidelity gate over ground-truth numeric values with absolute value at least 10. Richer future releases should extend this with row-local OCR checks and multiple OCR engines.
 
 Finally, the corpus now contains several operations record types whose public schema is represented by the ground-truth examples and generic scorer rather than separate hand-written JSON Schema files for every family. Adding explicit schemas for each operations family would improve reproducibility for prompt-based and agentic extractors.
 

@@ -16,10 +16,10 @@
     "html": "html/ifta_tax_summary_002.html",
     "metadata": "metadata/ifta_tax_summary_002.json",
     "json_size_bytes": 260276,
-    "pdf_size_bytes": 483053,
-    "html_size_bytes": 186526,
+    "pdf_size_bytes": 449048,
+    "html_size_bytes": 269842,
     "ocr_md": "transcripts/ocr_gemini/ifta_tax_summary_002.md",
-    "ocr_size_bytes": 130446
+    "ocr_size_bytes": 130445
   },
   "transcripts_available": [
     "ocr"
@@ -54,5 +54,5 @@
     "ocr_status": "regenerated_from_current_pdf",
     "ocr_regenerated_at": "2026-06-28T21:44:24.950682+00:00"
   },
-  "ocr_md_size_bytes": 130446
+  "ocr_md_size_bytes": 130445
 }

@@ -138,18 +138,10 @@ Validate OCR support against the released ground truth:
 
 ```bash
 python benchmarks/validate_ocr_vs_golden.py --claims-dir data
+python benchmarks/validate_ocr_numeric_fidelity.py --claims-dir data --min-abs 10
 ```
 
-The current release validates all 36 PDFs with 100.0% average identifier coverage, 99.9% tracked identifier-field support, and 39 target records with at least one tracked identifier missing from OCR.
-
-If using OpenRouter for Gemini OCR:
-
-```bash
-python benchmarks/ocr_claims_pdfs.py \
-  --ocr-engine openrouter \
-  --model google/gemini-3.5-flash \
-  --force
-```
+The current release validates all 36 PDFs with 100.0% average identifier coverage, 99.9% tracked identifier-field support, 39 target records with at least one tracked identifier missing from OCR, and 0 unrecoverable ground-truth numeric values at the default numeric-fidelity threshold. These commands validate released OCR support, not extraction correctness. Extraction correctness is checked by the evaluator against the full ground-truth records using flattened field-value micro-F1, so IDs alone are not sufficient for a high score.
 
 ## Evaluation
 
@@ -169,6 +161,9 @@ python benchmarks/evaluate_models.py \
 
 # Regenerate a report offline from an existing results directory
 python benchmarks/evaluate_models.py --offline --output-dir benchmarks/results/scratch --transcripts ocr
+
+# Audit a saved report by recomputing full field-value metrics from predictions
+python benchmarks/check_evaluation_report.py --results-dir benchmarks/results/scratch
 ```
 
 Results are written to the `--output-dir`:
@@ -178,9 +173,9 @@ Results are written to the `--output-dir`:
 
 Primary benchmark comparisons should use per-document extraction protocols: the model or agent receives one PDF/OCR transcript plus the schema or field contract, then returns the complete target list for that document. Deterministic parsers are useful diagnostics for parser-friendly control families, but they should not be treated as the main benchmark target unless the paper is explicitly about template-transfer parsing.
 
-Saved reports under `benchmarks/results/` may refer to earlier corpus versions. Do not cite them as current-layout baselines unless they have been rerun against the current `data/` manifest.
+Saved reports under `benchmarks/results/` may refer to earlier corpus versions. Do not cite them as current-layout baselines unless their report provenance records the current `data/manifest.json` hash.
 
-The current full-corpus Codex/xhigh sandbox OCR run is saved under `benchmarks/results/codex_full_current_ocr_v2/`: 36 documents, 33,450 target records, 0 extraction errors, 97.8% micro-F1, 96.9% recall, 98.7% precision, and 96.7% document-macro F1.
+The current full-corpus Codex/xhigh sandbox OCR run is saved under `benchmarks/results/codex_full_current_ocr_v2/`: 36 documents, 33,450 target records, 0 extraction errors, 97.7% micro-F1, 96.8% recall, 98.7% precision, and 96.7% document-macro F1.
 
 The strongest stressor signal is regime-specific. Driver schedule, driver/MVR, multisection IFTA, and policy packet regimes score 87.7-92.8% F1, while parser-friendly IFTA mileage and vehicle schedule regimes are near-perfect controls. Treat single-sample probe folders as older diagnostics unless rerun against the current manifest.
 

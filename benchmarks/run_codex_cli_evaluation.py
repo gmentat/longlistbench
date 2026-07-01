@@ -19,6 +19,7 @@ import shutil
 import subprocess
 import sys
 import tempfile
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
 try:
@@ -245,6 +246,7 @@ def main() -> int:
     parser.add_argument("--timeout-seconds", type=int, default=1800)
     parser.add_argument("--workspace-root", default="/tmp/longlistbench-codex-workspaces")
     parser.add_argument("--no-resume", action="store_true")
+    parser.add_argument("--workers", type=int, default=1, help="Number of samples to run in parallel")
     args = parser.parse_args()
 
     if shutil.which("sandbox-exec") is None:
@@ -259,20 +261,51 @@ def main() -> int:
 
     samples = discover_samples(dataset_dir, args.transcript, args.samples)
     statuses: list[tuple[str, int | str]] = []
-    for index, sample in enumerate(samples, start=1):
-        print(f"[{index}/{len(samples)}] codex_gpt55 {sample}", flush=True)
-        sample_id, status = run_sample(
-            dataset_dir=dataset_dir,
-            repo_root=repo_root,
-            output_dir=output_dir,
-            workspace_root=workspace_root,
-            sample=sample,
-            transcript=args.transcript,
-            timeout_seconds=args.timeout_seconds,
-            no_resume=args.no_resume,
-        )
-        statuses.append((sample_id, status))
-        print(f"  -> {status}", flush=True)
+    worker_count = max(1, args.workers)
+    if worker_count == 1:
+        for index, sample in enumerate(samples, start=1):
+            print(f"[{index}/{len(samples)}] codex_gpt55 {sample}", flush=True)
+            sample_id, status = run_sample(
+                dataset_dir=dataset_dir,
+                repo_root=repo_root,
+                output_dir=output_dir,
+                workspace_root=workspace_root,
+                sample=sample,
+                transcript=args.transcript,
+                timeout_seconds=args.timeout_seconds,
+                no_resume=args.no_resume,
+            )
+            statuses.append((sample_id, status))
+            print(f"  -> {status}", flush=True)
+    else:
+        with ThreadPoolExecutor(max_workers=min(worker_count, len(samples) or 1)) as executor:
+            future_to_sample = {}
+            for index, sample in enumerate(samples, start=1):
+                print(f"[{index}/{len(samples)}] codex_gpt55 {sample} QUEUED", flush=True)
+                future = executor.submit(
+                    run_sample,
+                    dataset_dir=dataset_dir,
+                    repo_root=repo_root,
+                    output_dir=output_dir,
+                    workspace_root=workspace_root,
+                    sample=sample,
+                    transcript=args.transcript,
+                    timeout_seconds=args.timeout_seconds,
+                    no_resume=args.no_resume,
+                )
+                future_to_sample[future] = sample
+
+            for future in as_completed(future_to_sample):
+                sample = future_to_sample[future]
+                try:
+                    sample_id, status = future.result()
+                except Exception as exc:
+                    sample_id, status = sample, f"error: {exc}"
+                statuses.append((sample_id, status))
+                print(f"[DONE] codex_gpt55 {sample_id} -> {status}", flush=True)
+
+        status_order = {sample: index for index, sample in enumerate(samples)}
+        statuses.sort(key=lambda item: status_order.get(item[0], len(status_order)))
 
     (output_dir / "per_sample_status.tsv").write_text(
         "sample\tstatus\n" + "\n".join(f"{sample}\t{status}" for sample, status in statuses) + "\n",

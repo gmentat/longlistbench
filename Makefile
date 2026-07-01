@@ -19,7 +19,7 @@ help:
 	@echo "  make setup       - Create .venv + install benchmark deps + install Playwright Chromium"
 	@echo "  make generate-multihop - Generate single-document cross-page multi-hop cases"
 	@echo "  make generate-policy-multihop - Generate BOP/WC/CGL policy multi-hop cases"
-	@echo "  make ocr         - OCR all generated PDFs (requires GEMINI_API_KEY)"
+	@echo "  make ocr         - OCR all generated PDFs (requires VERTEX_AI_API_KEY or GEMINI_API_KEY)"
 	@echo "  make ocr-multihop - OCR cross-page multi-hop PDFs"
 	@echo "  make eval        - Run evaluation (requires model API keys unless --offline)"
 	@echo "  make hf-export   - Build a local Hugging Face dataset package under dist/"

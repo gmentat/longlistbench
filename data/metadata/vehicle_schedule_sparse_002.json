@@ -16,8 +16,8 @@
     "html": "html/vehicle_schedule_sparse_002.html",
     "metadata": "metadata/vehicle_schedule_sparse_002.json",
     "json_size_bytes": 146932,
-    "pdf_size_bytes": 99664,
-    "html_size_bytes": 87672,
+    "pdf_size_bytes": 441856,
+    "html_size_bytes": 171463,
     "ocr_md": "transcripts/ocr_gemini/vehicle_schedule_sparse_002.md",
     "ocr_size_bytes": 65201
   },

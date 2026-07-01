@@ -53,5 +53,6 @@
     "date": "2026-06-29",
     "purpose": "hard IFTA table extraction condition with fields split across return sections",
     "ocr_status": "layout-preserving Gemini OCR over scanned image PDF"
-  }
+  },
+  "ocr_md_size_bytes": 272619
 }

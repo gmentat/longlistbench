@@ -22,7 +22,7 @@ The intended task is per-document extraction: a system receives one PDF or OCR t
 - 3 claim multi-hop PDFs with 77 records.
 - 3 policy PDFs with 1,489 records.
 
-OCR validation passes on all 36 PDFs. The current transcripts have 100.0% average identifier coverage, 99.9% tracked identifier-field support, and 39 target records with at least one tracked identifier missing from OCR.
+OCR validation passes on all 36 PDFs. The current transcripts have 100.0% average identifier coverage, 99.9% tracked identifier-field support, 39 target records with at least one tracked identifier missing from OCR, and 0 unrecoverable ground-truth numeric values at the default numeric-fidelity threshold.
 
 ## Complexity Stressors
 

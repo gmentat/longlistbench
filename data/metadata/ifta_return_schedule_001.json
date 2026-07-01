@@ -16,10 +16,10 @@
     "html": "html/ifta_return_schedule_001.html",
     "metadata": "metadata/ifta_return_schedule_001.json",
     "json_size_bytes": 205146,
-    "pdf_size_bytes": 241682,
-    "html_size_bytes": 236812,
+    "pdf_size_bytes": 386861,
+    "html_size_bytes": 215584,
     "ocr_md": "transcripts/ocr_gemini/ifta_return_schedule_001.md",
-    "ocr_size_bytes": 125901
+    "ocr_size_bytes": 125900
   },
   "transcripts_available": [
     "ocr"
@@ -54,5 +54,5 @@
     "ocr_status": "regenerated_from_current_pdf",
     "ocr_regenerated_at": "2026-06-28T21:44:24.950682+00:00"
   },
-  "ocr_md_size_bytes": 125901
+  "ocr_md_size_bytes": 125900
 }

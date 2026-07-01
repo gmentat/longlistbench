@@ -16,8 +16,8 @@
     "html": "html/ifta_tax_inquiry_002.html",
     "metadata": "metadata/ifta_tax_inquiry_002.json",
     "json_size_bytes": 82865,
-    "pdf_size_bytes": 185230,
-    "html_size_bytes": 59027,
+    "pdf_size_bytes": 222223,
+    "html_size_bytes": 84423,
     "ocr_md": "transcripts/ocr_gemini/ifta_tax_inquiry_002.md",
     "ocr_size_bytes": 55125
   },

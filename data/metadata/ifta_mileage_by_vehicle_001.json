@@ -19,7 +19,7 @@
     "pdf_size_bytes": 588299,
     "html_size_bytes": 511013,
     "ocr_md": "transcripts/ocr_gemini/ifta_mileage_by_vehicle_001.md",
-    "ocr_size_bytes": 193688
+    "ocr_size_bytes": 193687
   },
   "transcripts_available": [
     "ocr"
@@ -42,5 +42,6 @@
   "dataset_version": "2.0.0",
   "hf_config": "core_operations",
   "document_count": 1,
-  "evidence_pattern": "single_document"
+  "evidence_pattern": "single_document",
+  "ocr_md_size_bytes": 193687
 }

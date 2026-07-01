@@ -151,7 +151,7 @@ Return Totals (Quarterly Return 1) - jurisdiction worksheet
 The schedule name above applies to every jurisdiction line until the next schedule heading.
 
 "JURIS.","SURCH.","DISTANCE","TAXABLE DIST.","TAX VOL.","TAX PAID VOL.","NET VOL.","RATE","DUE / CREDIT","INTEREST","TOTAL"
-"","","727,535","726,765","118,772","31,276","87,496","","$43,616.36","$11.31","$43,627.67"
+"","","727,535","726,675","118,772","31,276","87,496","","$43,616.36","$11.31","$43,627.67"
 
 IFTA return support                                                               Page 6
 
@@ -181,7 +181,7 @@ SC,Quarterly Return 2,Y,"44,907","44,907","6,864",0,"6,864",0.2322,"$1,593.82","
 
 Jurisdiction,Return schedule,Distance / taxable distance,Taxable / paid / net volume,Rate and amounts
 TX,Quarterly Return 2,"36,106 / 36,106","5,654 / 0 / 5,654","0.5171; $2,923.68; $0.00; $2,923.68"
-UT,Quarterly Return 2,"22,609 / 22,609","3,483 / 1,217 / 2,226","0.7454; $1,689.08; $0.00; $1,689.08"
+UT,Quarterly Return 2,"22,609 / 22,609","3,483 / 1,217 / 2,266","0.7454; $1,689.08; $0.00; $1,689.08"
 WA,Quarterly Return 2,"32,091 / 32,064","5,840 / 0 / 5,840","0.5803; $3,388.95; $37.82; $3,426.77"
 WI,Quarterly Return 2,"25,163 / 25,163","3,980 / 1,971 / 2,009","0.3078; $618.37; $0.00; $618.37"
 
@@ -548,7 +548,7 @@ Return Totals (Quarterly Return 6) - audit-line continuation
 
 +--------------------------------------------------------------------------------------------------+
 | RETURN TOTALS (QUARTERLY RETURN 6) /                                                             |
-| Surcharge: . Distance reviewed: 675,930; taxable distance: 675,855.                              |
+| Surcharge: . Distance reviewed: 675,930; taxable distance: 675,585.                              |
 | Volumes - taxable 111,884, tax-paid 90,312, net 21,572. Rate ; due/credit $3,884.04; interest    |
 | $6.42; total $3,890.46.                                                                          |
 +--------------------------------------------------------------------------------------------------+
@@ -972,7 +972,7 @@ IL,Y,"14,912","14,912","2,146",0,"2,146",0.369,$791.87,$0.00,$791.87
 IN,N,"9,562","9,562","1,380",0,"1,380",0.3239,$446.98,$0.00,$446.98
 KY,N,"8,771","8,771","1,373","1,606",-233,0.5374,"-$125.21",$0.00,"-$125.21"
 LA,N,"25,172","25,172","4,722",0,"4,722",0.6748,"$3,186.41",$0.00,"$3,186.41"
-MD,N,"27,389","27,389","4,808",0,"4,808",0.3881,"$1,865.98",$0.00,"$1,865.98"
+MD,N,"27,389","27,328","4,808",0,"4,808",0.3881,"$1,865.98",$0.00,"$1,865.98"
 MI,N,"45,318","45,318","7,924",0,"7,924",0.3052,"$2,418.40",$0.00,"$2,418.40"
 Audit support note: prior-quarter comparison retained here for reviewer tie-out only.,,,,,,,,,,
 MN,N,493,493,77,0,77,0.6912,$53.22,$0.00,$53.22
@@ -1433,7 +1433,7 @@ IFTA RETURN SUPPORT                                                             
 | **QUARTERLY RETURN 18 / ND**<br>Surcharge: **N**. Distance reviewed: **22,434**; taxable distance: **22,434**.<br>Volumes - taxable 3,431, tax-paid 0, net 3,431. Rate 0.2408; due/credit $826.18; interest $0.00;<br>total $826.18. | **QUARTERLY RETURN 18 / NE**<br>Surcharge: **Y**. Distance reviewed: **27,681**; taxable distance: **27,681**.<br>Volumes - taxable 4,594, tax-paid 0, net 4,594. Rate 0.5376; due/credit $2,469.73; interest<br>$0.00; total $2,469.73. |
 | **QUARTERLY RETURN 18 / NJ**<br>Surcharge: **N**. Distance reviewed: **35,735**; taxable distance: **35,643**.<br>Volumes - taxable 6,534, tax-paid 0, net 6,534. Rate 0.3761; due/credit $2,457.44; interest<br>$0.00; total $2,457.44. | **QUARTERLY RETURN 18 / PA**<br>Surcharge: **N**. Distance reviewed: **12,115**; taxable distance: **12,115**.<br>Volumes - taxable 1,955, tax-paid 0, net 1,955. Rate 0.6385; due/credit $1,248.27; interest<br>$0.00; total $1,248.27. |
 | **QUARTERLY RETURN 18 / SC**<br>Surcharge: **N**. Distance reviewed: **28,564**; taxable distance: **28,564**.<br>Volumes - taxable 4,972, tax-paid 0, net 4,972. Rate 0.2404; due/credit $1,195.27; interest<br>$0.00; total $1,195.27. | **QUARTERLY RETURN 18 / TN**<br>Surcharge: **Y**. Distance reviewed: **28,983**; taxable distance: **28,983**.<br>Volumes - taxable 4,230, tax-paid 0, net 4,230. Rate 0.6653; due/credit $2,814.22; interest<br>$41.10; total $2,855.32. |
-| **QUARTERLY RETURN 18 / TX**<br>Surcharge: **N**. Distance reviewed: **11,530**; taxable distance: **11,530**.<br>Volumes - taxable 2,060, tax-paid 5,286, net -3,226. Rate 0.5355; due/credit -$1,272.52; interest<br>$0.00; total -$1,272.52. | **QUARTERLY RETURN 18 / WI**<br>Surcharge: **N**. Distance reviewed: **32,766**; taxable distance: **32,766**.<br>Volumes - taxable 5,601, tax-paid 0, net 5,601. Rate 0.3061; due/credit $1,714.47; interest<br>$8.14; total $1,722.61. |
+| **QUARTERLY RETURN 18 / TX**<br>Surcharge: **N**. Distance reviewed: **11,530**; taxable distance: **11,530**.<br>Volumes - taxable 2,060, tax-paid 5,286, net -3,226. Rate 0.5355; due/credit -$1,727.52; interest<br>$0.00; total -$1,727.52. | **QUARTERLY RETURN 18 / WI**<br>Surcharge: **N**. Distance reviewed: **32,766**; taxable distance: **32,766**.<br>Volumes - taxable 5,601, tax-paid 0, net 5,601. Rate 0.3061; due/credit $1,714.47; interest<br>$8.14; total $1,722.61. |
 | **QUARTERLY RETURN 18 / WV**<br>Surcharge: **N**. Distance reviewed: **29,978**; taxable distance: **29,978**.<br>Volumes - taxable 5,175, tax-paid 12,185, net -7,010. Rate 0.3626; due/credit -$2,541.83;<br>interest $0.00; total -$2,541.83. | **QUARTERLY RETURN 18 / WY**<br>Surcharge: **N**. Distance reviewed: **10,143**; taxable distance: **10,053**.<br>Volumes - taxable 1,810, tax-paid 848, net 962. Rate 0.7525; due/credit $723.90; interest $0.00;<br>total $723.90. |
 
 ---
@@ -2937,4 +2937,3 @@ JURIS.,SURCH.,DISTANCE,TAXABLE DIST.,TAX VOL.,TAX PAID VOL.,NET VOL.,RATE,DUE / 
 
 IFTA return support
 Page 114
-

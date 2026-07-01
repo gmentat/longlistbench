@@ -3,6 +3,7 @@
 
 import argparse
 import contextlib
+import hashlib
 import inspect
 import json
 import os
@@ -921,6 +922,47 @@ def _load_manifest_metadata_by_sample() -> dict[str, dict]:
     return out
 
 
+def _current_git_sha() -> str | None:
+    try:
+        return subprocess.check_output(
+            ["git", "rev-parse", "HEAD"],
+            cwd=Path(__file__).resolve().parents[1],
+            text=True,
+            stderr=subprocess.DEVNULL,
+        ).strip()
+    except Exception:
+        return None
+
+
+def _git_dirty() -> bool | None:
+    try:
+        output = subprocess.check_output(
+            ["git", "status", "--porcelain"],
+            cwd=Path(__file__).resolve().parents[1],
+            text=True,
+            stderr=subprocess.DEVNULL,
+        )
+        return bool(output.strip())
+    except Exception:
+        return None
+
+
+def _dataset_provenance() -> dict:
+    manifest_path = default_dataset_dir() / "manifest.json"
+    provenance = {
+        "manifest_path": str(manifest_path),
+        "manifest_sha256": None,
+        "git_sha": _current_git_sha(),
+        "git_dirty": _git_dirty(),
+    }
+    try:
+        manifest_bytes = manifest_path.read_bytes()
+    except Exception:
+        return provenance
+    provenance["manifest_sha256"] = hashlib.sha256(manifest_bytes).hexdigest()
+    return provenance
+
+
 def generate_report(results: list[EvaluationResult], output_path: Path):
     """Generate summary report in JSON and Markdown formats."""
 
@@ -1016,8 +1058,10 @@ def generate_report(results: list[EvaluationResult], output_path: Path):
         _finalize_group_stats(stats['by_stressor'])
     
     # Save JSON report
+    dataset_provenance = _dataset_provenance()
     report = {
         'timestamp': datetime.now(timezone.utc).isoformat(),
+        'dataset': dataset_provenance,
         'model_stats': model_stats,
         'detailed_results': [
             {
@@ -1045,6 +1089,8 @@ def generate_report(results: list[EvaluationResult], output_path: Path):
         "# Multi-Model Evaluation Report",
         "",
         f"Generated: {datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M:%S %Z')}",
+        f"Dataset manifest SHA-256: `{dataset_provenance.get('manifest_sha256') or 'unknown'}`",
+        f"Git SHA: `{dataset_provenance.get('git_sha') or 'unknown'}`; dirty: `{dataset_provenance.get('git_dirty')}`",
         "",
         "## Overall Results",
         "",

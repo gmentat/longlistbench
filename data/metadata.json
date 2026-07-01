@@ -185,8 +185,8 @@
         "html": "html/driver_schedule_sparse_001.html",
         "metadata": "metadata/driver_schedule_sparse_001.json",
         "json_size_bytes": 71571,
-        "pdf_size_bytes": 87194,
-        "html_size_bytes": 45040,
+        "pdf_size_bytes": 207224,
+        "html_size_bytes": 59605,
         "ocr_md": "transcripts/ocr_gemini/driver_schedule_sparse_001.md",
         "ocr_size_bytes": 28768
       },
@@ -241,7 +241,7 @@
         "pdf_size_bytes": 588299,
         "html_size_bytes": 511013,
         "ocr_md": "transcripts/ocr_gemini/ifta_mileage_by_vehicle_001.md",
-        "ocr_size_bytes": 193688
+        "ocr_size_bytes": 193687
       },
       "transcripts_available": [
         "ocr"
@@ -253,7 +253,7 @@
       "pages_estimate": 97,
       "pdf_page_count": 97,
       "hf_config": "core_operations",
-      "ocr_md_size_bytes": 193688
+      "ocr_md_size_bytes": 193687
     },
     {
       "id": "ifta_mileage_by_vehicle_002",
@@ -587,7 +587,7 @@
       "hf_config": "core_operations",
       "document_count": 1,
       "evidence_pattern": "single_document",
-      "ocr_md_size_bytes": 260669,
+      "ocr_md_size_bytes": 194328,
       "artifacts": {
         "pdf": "pdfs/ifta_multisection_return_001.pdf",
         "html": "html/ifta_multisection_return_001.html",
@@ -645,7 +645,7 @@
       "hf_config": "core_operations",
       "document_count": 1,
       "evidence_pattern": "single_document",
-      "ocr_md_size_bytes": 367421,
+      "ocr_md_size_bytes": 272619,
       "artifacts": {
         "pdf": "pdfs/ifta_multisection_return_002.pdf",
         "html": "html/ifta_multisection_return_002.html",
@@ -685,10 +685,10 @@
         "html": "html/ifta_return_schedule_001.html",
         "metadata": "metadata/ifta_return_schedule_001.json",
         "json_size_bytes": 205146,
-        "pdf_size_bytes": 241682,
-        "html_size_bytes": 236812,
+        "pdf_size_bytes": 386861,
+        "html_size_bytes": 215584,
         "ocr_md": "transcripts/ocr_gemini/ifta_return_schedule_001.md",
-        "ocr_size_bytes": 125901
+        "ocr_size_bytes": 125900
       },
       "transcripts_available": [
         "ocr"
@@ -712,7 +712,7 @@
         "pdf_sha256": "e79d5f301e0bc84a1ac2cd921dc8bc0d178fb75bcd479c7e3d3dfd21886dffd8",
         "html_sha256": "335a5178fdc5dfd518aeeb64be6a620ff6bee0bc2d2a02dfd103871715db1344"
       },
-      "ocr_md_size_bytes": 125901
+      "ocr_md_size_bytes": 125900
     },
     {
       "id": "ifta_return_schedule_002",
@@ -741,10 +741,10 @@
         "html": "html/ifta_return_schedule_002.html",
         "metadata": "metadata/ifta_return_schedule_002.json",
         "json_size_bytes": 352507,
-        "pdf_size_bytes": 383511,
-        "html_size_bytes": 369490,
+        "pdf_size_bytes": 523651,
+        "html_size_bytes": 362237,
         "ocr_md": "transcripts/ocr_gemini/ifta_return_schedule_002.md",
-        "ocr_size_bytes": 195868
+        "ocr_size_bytes": 195867
       },
       "transcripts_available": [
         "ocr"
@@ -768,7 +768,7 @@
         "pdf_sha256": "50e8ed9373f496cc5280fc0fb66cd00561ca03bdd3319c9449c6692525718c3f",
         "html_sha256": "d341546375eec81aca4608e3f6fac38ad610b56cb7aeb8cd1898af82901fe52a"
       },
-      "ocr_md_size_bytes": 195868
+      "ocr_md_size_bytes": 195867
     },
     {
       "id": "ifta_return_schedule_003",
@@ -797,10 +797,10 @@
         "html": "html/ifta_return_schedule_003.html",
         "metadata": "metadata/ifta_return_schedule_003.json",
         "json_size_bytes": 383530,
-        "pdf_size_bytes": 410229,
-        "html_size_bytes": 402258,
+        "pdf_size_bytes": 549322,
+        "html_size_bytes": 392610,
         "ocr_md": "transcripts/ocr_gemini/ifta_return_schedule_003.md",
-        "ocr_size_bytes": 212715
+        "ocr_size_bytes": 212714
       },
       "transcripts_available": [
         "ocr"
@@ -824,7 +824,7 @@
         "pdf_sha256": "69e92661da97faf3c3c1385588419c95f10b597ae5f7bbbb4a19ec143488f321",
         "html_sha256": "6412f10331fc8822d83c0bd3ae4ff12689818e415b9b6204514dc37e5178925b"
       },
-      "ocr_md_size_bytes": 212715
+      "ocr_md_size_bytes": 212714
     },
     {
       "id": "ifta_return_schedule_004",
@@ -853,10 +853,10 @@
         "html": "html/ifta_return_schedule_004.html",
         "metadata": "metadata/ifta_return_schedule_004.json",
         "json_size_bytes": 389184,
-        "pdf_size_bytes": 414081,
-        "html_size_bytes": 407442,
+        "pdf_size_bytes": 561678,
+        "html_size_bytes": 399750,
         "ocr_md": "transcripts/ocr_gemini/ifta_return_schedule_004.md",
-        "ocr_size_bytes": 209128
+        "ocr_size_bytes": 209129
       },
       "transcripts_available": [
         "ocr"
@@ -880,7 +880,7 @@
         "pdf_sha256": "c88f7a16d8397cd56b4cd6b95fafee1c4af4862729ae1ff2b222e0aca611882e",
         "html_sha256": "83b1b8c73b3a79615c5f58e7c0c96e55e22e3ab279a97cdab53f15fa76fcaccc"
       },
-      "ocr_md_size_bytes": 209128
+      "ocr_md_size_bytes": 209129
     },
     {
       "id": "ifta_return_schedule_005",
@@ -909,8 +909,8 @@
         "html": "html/ifta_return_schedule_005.html",
         "metadata": "metadata/ifta_return_schedule_005.json",
         "json_size_bytes": 408894,
-        "pdf_size_bytes": 431257,
-        "html_size_bytes": 428038,
+        "pdf_size_bytes": 581634,
+        "html_size_bytes": 420774,
         "ocr_md": "transcripts/ocr_gemini/ifta_return_schedule_005.md",
         "ocr_size_bytes": 229500
       },
@@ -966,8 +966,8 @@
         "html": "html/ifta_tax_inquiry_001.html",
         "metadata": "metadata/ifta_tax_inquiry_001.json",
         "json_size_bytes": 82865,
-        "pdf_size_bytes": 184722,
-        "html_size_bytes": 59033,
+        "pdf_size_bytes": 222722,
+        "html_size_bytes": 84423,
         "ocr_md": "transcripts/ocr_gemini/ifta_tax_inquiry_001.md",
         "ocr_size_bytes": 44541
       },
@@ -1023,8 +1023,8 @@
         "html": "html/ifta_tax_inquiry_002.html",
         "metadata": "metadata/ifta_tax_inquiry_002.json",
         "json_size_bytes": 82865,
-        "pdf_size_bytes": 185230,
-        "html_size_bytes": 59027,
+        "pdf_size_bytes": 222223,
+        "html_size_bytes": 84423,
         "ocr_md": "transcripts/ocr_gemini/ifta_tax_inquiry_002.md",
         "ocr_size_bytes": 55125
       },
@@ -1079,8 +1079,8 @@
         "html": "html/ifta_tax_summary_001.html",
         "metadata": "metadata/ifta_tax_summary_001.json",
         "json_size_bytes": 260441,
-        "pdf_size_bytes": 483008,
-        "html_size_bytes": 186607,
+        "pdf_size_bytes": 449343,
+        "html_size_bytes": 269909,
         "ocr_md": "transcripts/ocr_gemini/ifta_tax_summary_001.md",
         "ocr_size_bytes": 131101
       },
@@ -1135,10 +1135,10 @@
         "html": "html/ifta_tax_summary_002.html",
         "metadata": "metadata/ifta_tax_summary_002.json",
         "json_size_bytes": 260276,
-        "pdf_size_bytes": 483053,
-        "html_size_bytes": 186526,
+        "pdf_size_bytes": 449048,
+        "html_size_bytes": 269842,
         "ocr_md": "transcripts/ocr_gemini/ifta_tax_summary_002.md",
-        "ocr_size_bytes": 130446
+        "ocr_size_bytes": 130445
       },
       "transcripts_available": [
         "ocr"
@@ -1162,7 +1162,7 @@
         "pdf_sha256": "4d68a84f2cde5303f508a5fcedbb09798a7ef743aa3ecf1d4c9451e7d9648703",
         "html_sha256": "7f0f3143955733096e362c295fb2b9d6ee9e0c193c79fde256f2f30694041d26"
       },
-      "ocr_md_size_bytes": 130446
+      "ocr_md_size_bytes": 130445
     },
     {
       "id": "ifta_tax_summary_003",
@@ -1191,10 +1191,10 @@
         "html": "html/ifta_tax_summary_003.html",
         "metadata": "metadata/ifta_tax_summary_003.json",
         "json_size_bytes": 260638,
-        "pdf_size_bytes": 482986,
-        "html_size_bytes": 186831,
+        "pdf_size_bytes": 449645,
+        "html_size_bytes": 270176,
         "ocr_md": "transcripts/ocr_gemini/ifta_tax_summary_003.md",
-        "ocr_size_bytes": 117693
+        "ocr_size_bytes": 117692
       },
       "transcripts_available": [
         "ocr"
@@ -1218,7 +1218,7 @@
         "pdf_sha256": "4a3634a61b453772863648e5396767005873148f88db81f4ca3b9c79fa5b1db2",
         "html_sha256": "14ade3ee9d9168456eb40fa30c067318ce0fa666c80984fb69cc40399d1ad885"
       },
-      "ocr_md_size_bytes": 117693
+      "ocr_md_size_bytes": 117692
     },
     {
       "id": "ifta_tax_summary_004",
@@ -1247,10 +1247,10 @@
         "html": "html/ifta_tax_summary_004.html",
         "metadata": "metadata/ifta_tax_summary_004.json",
         "json_size_bytes": 260468,
-        "pdf_size_bytes": 482730,
-        "html_size_bytes": 186451,
+        "pdf_size_bytes": 448697,
+        "html_size_bytes": 269827,
         "ocr_md": "transcripts/ocr_gemini/ifta_tax_summary_004.md",
-        "ocr_size_bytes": 125340
+        "ocr_size_bytes": 125339
       },
       "transcripts_available": [
         "ocr"
@@ -1274,7 +1274,7 @@
         "pdf_sha256": "4e0735408650bea9f7fa45bc80c36292957b1dd82c789247c49fa589e9e94e11",
         "html_sha256": "f73a48b73a4947e37fa00218f4446d9838dffd3716356e94ed663d0d63847009"
       },
-      "ocr_md_size_bytes": 125340
+      "ocr_md_size_bytes": 125339
     },
     {
       "id": "loss_run_external_001",
@@ -1574,11 +1574,18 @@
         "json_size_bytes": 51549,
         "pdf_size_bytes": 1797630,
         "html_size_bytes": 807202,
-        "ocr_size_bytes": 758443
+        "ocr_size_bytes": 769475
       },
       "transcripts_available": [
         "ocr"
-      ]
+      ],
+      "ocr_md_size_bytes": 769475,
+      "layout_revision": {
+        "date": "2026-06-29T09:52:21+00:00",
+        "purpose": "reduce deterministic parser friendliness with production-like layout variation",
+        "ocr_status": "regenerated_from_current_pdf",
+        "ocr_regenerated_at": "2026-06-29T10:16:19+00:00"
+      }
     },
     {
       "id": "mixed_cgl_040_001",
@@ -1786,8 +1793,8 @@
         "html": "html/mixed_cgl_040_001.html",
         "ocr_md": "transcripts/ocr_gemini/mixed_cgl_040_001.md",
         "json_size_bytes": 458192,
-        "pdf_size_bytes": 2007673,
-        "html_size_bytes": 1376002,
+        "pdf_size_bytes": 1461026,
+        "html_size_bytes": 1169180,
         "ocr_size_bytes": 807375,
         "metadata": "metadata/mixed_cgl_040_001.json"
       },
@@ -1939,11 +1946,18 @@
         "json_size_bytes": 15364,
         "pdf_size_bytes": 981600,
         "html_size_bytes": 296086,
-        "ocr_size_bytes": 276175
+        "ocr_size_bytes": 271333
       },
       "transcripts_available": [
         "ocr"
-      ]
+      ],
+      "ocr_md_size_bytes": 271333,
+      "layout_revision": {
+        "date": "2026-06-29T09:52:19+00:00",
+        "purpose": "reduce deterministic parser friendliness with production-like layout variation",
+        "ocr_status": "regenerated_from_current_pdf",
+        "ocr_regenerated_at": "2026-06-29T09:56:43+00:00"
+      }
     },
     {
       "id": "multihop_025_001_crosspage",
@@ -2076,11 +2090,18 @@
         "json_size_bytes": 32067,
         "pdf_size_bytes": 1335078,
         "html_size_bytes": 515445,
-        "ocr_size_bytes": 471615
+        "ocr_size_bytes": 478563
       },
       "transcripts_available": [
         "ocr"
-      ]
+      ],
+      "ocr_md_size_bytes": 478563,
+      "layout_revision": {
+        "date": "2026-06-29T09:52:20+00:00",
+        "purpose": "reduce deterministic parser friendliness with production-like layout variation",
+        "ocr_status": "regenerated_from_current_pdf",
+        "ocr_regenerated_at": "2026-06-29T10:05:17+00:00"
+      }
     },
     {
       "id": "multihop_bop_012_001",
@@ -2277,8 +2298,8 @@
         "html": "html/multihop_bop_012_001.html",
         "ocr_md": "transcripts/ocr_gemini/multihop_bop_012_001.md",
         "json_size_bytes": 239867,
-        "pdf_size_bytes": 777876,
-        "html_size_bytes": 495557,
+        "pdf_size_bytes": 820073,
+        "html_size_bytes": 582894,
         "ocr_size_bytes": 402001,
         "metadata": "metadata/multihop_bop_012_001.json"
       },
@@ -2500,8 +2521,8 @@
         "html": "html/multihop_wc_025_001.html",
         "ocr_md": "transcripts/ocr_gemini/multihop_wc_025_001.md",
         "json_size_bytes": 327471,
-        "pdf_size_bytes": 1384647,
-        "html_size_bytes": 911306,
+        "pdf_size_bytes": 1056909,
+        "html_size_bytes": 799989,
         "ocr_size_bytes": 537185,
         "metadata": "metadata/multihop_wc_025_001.json"
       },
@@ -2550,8 +2571,8 @@
         "html": "html/vehicle_schedule_sparse_001.html",
         "metadata": "metadata/vehicle_schedule_sparse_001.json",
         "json_size_bytes": 146971,
-        "pdf_size_bytes": 99528,
-        "html_size_bytes": 87711,
+        "pdf_size_bytes": 442739,
+        "html_size_bytes": 171500,
         "ocr_md": "transcripts/ocr_gemini/vehicle_schedule_sparse_001.md",
         "ocr_size_bytes": 68892
       },
@@ -2606,8 +2627,8 @@
         "html": "html/vehicle_schedule_sparse_002.html",
         "metadata": "metadata/vehicle_schedule_sparse_002.json",
         "json_size_bytes": 146932,
-        "pdf_size_bytes": 99664,
-        "html_size_bytes": 87672,
+        "pdf_size_bytes": 441856,
+        "html_size_bytes": 171463,
         "ocr_md": "transcripts/ocr_gemini/vehicle_schedule_sparse_002.md",
         "ocr_size_bytes": 65201
       },

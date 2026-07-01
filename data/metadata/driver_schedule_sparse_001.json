@@ -16,8 +16,8 @@
     "html": "html/driver_schedule_sparse_001.html",
     "metadata": "metadata/driver_schedule_sparse_001.json",
     "json_size_bytes": 71571,
-    "pdf_size_bytes": 87194,
-    "html_size_bytes": 45040,
+    "pdf_size_bytes": 207224,
+    "html_size_bytes": 59605,
     "ocr_md": "transcripts/ocr_gemini/driver_schedule_sparse_001.md",
     "ocr_size_bytes": 28768
   },

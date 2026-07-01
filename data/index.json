@@ -1,5 +1,5 @@
 {
-  "built_at": "2026-06-29T06:52:21.719965+00:00",
+  "built_at": "2026-07-01T04:59:18.601040+00:00",
   "dataset_dir": "/Users/anton/d/kay/longlistbench/data",
   "source_metadata": "manifest.json",
   "total_instances": 36,
@@ -212,7 +212,7 @@
         "pdf_size_bytes": 588299,
         "html_size_bytes": 511013,
         "json_size_bytes": 167015,
-        "ocr_md_size_bytes": 193688,
+        "ocr_md_size_bytes": 193687,
         "pdf_pages": 97
       },
       "transcripts_available": [
@@ -657,7 +657,7 @@
         "pdf_size_bytes": 386861,
         "html_size_bytes": 215584,
         "json_size_bytes": 205146,
-        "ocr_md_size_bytes": 125901,
+        "ocr_md_size_bytes": 125900,
         "pdf_pages": 72
       },
       "transcripts_available": [
@@ -703,7 +703,7 @@
         "pdf_size_bytes": 523651,
         "html_size_bytes": 362237,
         "json_size_bytes": 352507,
-        "ocr_md_size_bytes": 195868,
+        "ocr_md_size_bytes": 195867,
         "pdf_pages": 108
       },
       "transcripts_available": [
@@ -749,7 +749,7 @@
         "pdf_size_bytes": 549322,
         "html_size_bytes": 392610,
         "json_size_bytes": 383530,
-        "ocr_md_size_bytes": 212715,
+        "ocr_md_size_bytes": 212714,
         "pdf_pages": 114
       },
       "transcripts_available": [
@@ -795,7 +795,7 @@
         "pdf_size_bytes": 561678,
         "html_size_bytes": 399750,
         "json_size_bytes": 389184,
-        "ocr_md_size_bytes": 209128,
+        "ocr_md_size_bytes": 209129,
         "pdf_pages": 120
       },
       "transcripts_available": [
@@ -1027,7 +1027,7 @@
         "pdf_size_bytes": 449048,
         "html_size_bytes": 269842,
         "json_size_bytes": 260276,
-        "ocr_md_size_bytes": 130446,
+        "ocr_md_size_bytes": 130445,
         "pdf_pages": 34
       },
       "transcripts_available": [
@@ -1073,7 +1073,7 @@
         "pdf_size_bytes": 449645,
         "html_size_bytes": 270176,
         "json_size_bytes": 260638,
-        "ocr_md_size_bytes": 117693,
+        "ocr_md_size_bytes": 117692,
         "pdf_pages": 34
       },
       "transcripts_available": [
@@ -1119,7 +1119,7 @@
         "pdf_size_bytes": 448697,
         "html_size_bytes": 269827,
         "json_size_bytes": 260468,
-        "ocr_md_size_bytes": 125340,
+        "ocr_md_size_bytes": 125339,
         "pdf_pages": 34
       },
       "transcripts_available": [
@@ -1322,7 +1322,7 @@
         "pdf_size_bytes": 1797630,
         "html_size_bytes": 807202,
         "json_size_bytes": 51549,
-        "ocr_md_size_bytes": 758443,
+        "ocr_md_size_bytes": 769475,
         "pdf_pages": 209
       },
       "transcripts_available": [
@@ -1430,7 +1430,7 @@
         "pdf_size_bytes": 981600,
         "html_size_bytes": 296086,
         "json_size_bytes": 15364,
-        "ocr_md_size_bytes": 276175,
+        "ocr_md_size_bytes": 271333,
         "pdf_pages": 80
       },
       "transcripts_available": [
@@ -1483,7 +1483,7 @@
         "pdf_size_bytes": 1335078,
         "html_size_bytes": 515445,
         "json_size_bytes": 32067,
-        "ocr_md_size_bytes": 471615,
+        "ocr_md_size_bytes": 478563,
         "pdf_pages": 136
       },
       "transcripts_available": [

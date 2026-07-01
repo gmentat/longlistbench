@@ -131,9 +131,16 @@
     "json_size_bytes": 51549,
     "pdf_size_bytes": 1797630,
     "html_size_bytes": 807202,
-    "ocr_size_bytes": 758443
+    "ocr_size_bytes": 769475
   },
   "transcripts_available": [
     "ocr"
-  ]
+  ],
+  "ocr_md_size_bytes": 769475,
+  "layout_revision": {
+    "date": "2026-06-29T09:52:21+00:00",
+    "purpose": "reduce deterministic parser friendliness with production-like layout variation",
+    "ocr_status": "regenerated_from_current_pdf",
+    "ocr_regenerated_at": "2026-06-29T10:16:19+00:00"
+  }
 }
