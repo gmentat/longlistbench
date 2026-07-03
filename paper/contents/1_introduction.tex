@@ -2,10 +2,10 @@ Long-list entity extraction, the recovery of hundreds or thousands of repeated r
 
 Many established benchmarks focus on key-value extraction or short, form-like documents, such as FUNSD~\cite{jaume2019funsd}, SROIE~\cite{huang2021sroie}, and CORD~\cite{park2019cord}. Document question answering benchmarks such as DocVQA~\cite{mathew2021docvqa} and MP-DocVQA~\cite{tito2022mpdocvqa} highlight the difficulty of reasoning over pages, but they do not require recovering every record in a large repeated list. More recent business-document datasets such as DocILE~\cite{simsa2023docile} and VRDU~\cite{wang2023vrdu} move closer to repeated structured fields, yet long-list extraction in production often has additional stressors: dense spreadsheet exports, repeated headers, small fonts, OCR artifacts, cross-page references, and records whose fields are distributed across distant packet sections.
 
-We introduce LongListBench, a synthetic benchmark designed to measure these long-list extraction failures. The current release contains 36 single-PDF instances with 33{,}450 target records. The corpus is inspired by recurring layouts observed in insurance and commercial trucking workflows, but all names, identifiers, values, and visible document content are synthetic. The dataset includes high-density single-list documents, multisection return packets that require cross-section joins, claim packets that require long-range joins, and policy packets where target records span declarations, location schedules, rating pages, forms, material clauses, endorsements, and premium summaries.
+We introduce LongListBench, a synthetic benchmark designed to measure these long-list extraction failures. The current release contains 36 single-PDF instances with 33{,}450 target records. The corpus is inspired by recurring layouts observed in business-document automation, but all names, identifiers, values, and visible document content are synthetic. The dataset includes high-density repeated lists, multi-section packets that require joins across tables, long documents with supporting details many pages apart, and mixed-schema packets where one output list contains several record types.
 
 \subsection{Background and Motivation}
-This work was motivated by production document-automation tasks involving long schedules, loss runs, IFTA filings, driver rosters, vehicle schedules, and commercial insurance policies. In these settings, a single PDF can contain hundreds or thousands of repeated entities. A system may perform well on the first page but silently drop records in the middle, merge neighboring rows, misread OCR tables, or fail to join supporting details that appear many pages away. These errors are hard to diagnose with small form benchmarks because the primary difficulty is not a single field; it is preserving list completeness and field alignment at scale.
+This work was motivated by production document-automation tasks where a single PDF can contain hundreds or thousands of repeated entities. A system may perform well on the first page but silently drop records in the middle, merge neighboring rows, misread OCR tables, or fail to join supporting details that appear many pages away. These errors are hard to diagnose with small form benchmarks because the primary difficulty is not a single field; it is preserving list completeness and field alignment at scale.
 
 \subsection{Research Questions}
 This release is organized around four practical questions:
@@ -21,9 +21,8 @@ We address these questions by releasing structured ground truth, rendered HTML/P
 \subsection{Contributions}
 We make the following contributions:
 \begin{itemize}
-    \item A 36-document synthetic benchmark with 33{,}450 target records across 13 production-like document families.
-    \item High-density commercial operations documents covering IFTA, driver/MVR, vehicle-schedule, and loss-run layouts; these include parser-friendly control tables, OCR-layout stressors, and multisection return packets.
-    \item A single-document long-range evidence suite with 3 claim packets and 3 policy packets where records must be assembled from distant sections of the same PDF; these packet regimes are the primary hard cases for agentic and retrieval-loop extractors.
-    \item OCR transcripts for every released PDF, plus JSON ground truth, HTML sources, per-document metadata, and a browsable artifact index.
-    \item Supporting evaluator scripts for strict loss-run incident scoring, generic record-list scoring, and per-document agentic sandbox extraction protocols.
+    \item A 36-document synthetic benchmark with 33{,}450 target records and explicit metadata for long-list extraction stressors.
+    \item Public artifacts for each instance: rendered PDF, OCR transcript, HTML source, JSON ground truth, per-document metadata, and a browsable artifact index.
+    \item A problem-oriented complexity taxonomy covering scale, OCR layout preservation, repeated keys, cross-section joins, long-range evidence, and heterogeneous output schemas.
+    \item Evaluator scripts for field-level scoring, report regeneration, and per-document agentic sandbox extraction protocols.
 \end{itemize}
