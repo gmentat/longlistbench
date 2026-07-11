@@ -13,64 +13,205 @@ Policy-oriented documents use heterogeneous records for locations, coverages, fo
 The core operations documents contain dense repeated lists from business operations workflows, including mileage rows, multi-section return rows, tax inquiry rows, driver records, vehicle schedule rows, and external loss-run rows. These record types are evaluated as generic field-value records rather than forced into the claim incident schema.
 
 \subsection{Document design and provenance}
-Private production PDFs were reviewed to identify recurring document structures, such as portal exports, spreadsheet schedules, carrier loss-run tables, policy declarations, forms, endorsements, and long packet layouts. Those private files are not included in the repository. The released documents use generated names, identifiers, dates, values, and prose, and the repository contains only synthetic artifacts. The documents are production-inspired rather than facsimiles of any single source packet. Some sections combine realistic business-document conventions with deliberately selected stressors, such as sparse schedules, repeated keys, multi-section tables, and long-range joins, to ensure coverage of the benchmark's complexity taxonomy.
+Private production PDFs were reviewed to identify recurring document structures, such as portal exports, spreadsheet schedules, carrier loss-run tables, policy declarations, forms, endorsements, and long packet layouts. Those private files are not included in the repository, and the released documents are production-inspired rather than facsimiles of any single source packet.
 
-The released PDFs include dense tables, wrapped rows, form-like pages, and policy packet sections rather than only clean spreadsheet exports. \Cref{fig:layout-examples} shows representative rendered pages used to audit the visible stressors.
+\Cref{fig:pipeline} summarizes how the corpus was built. In production, data extracted from raw customer PDFs is reviewed and corrected by humans; the recurring corrections surface the edge cases where extraction actually fails. Engineers studied those edge cases alongside the source documents and distilled them into generation scripts: per-family templates, seeded value generators, and the stressor taxonomy of \Cref{tab:complexity-stressors}. No production data leaves this step --- only the structural findings do. The scripts then produce the release: they first emit the structured target records (every name, identifier, date, value, and prose passage is generated, so no customer-sensitive data exists in the release), then render those records through HTML templates --- where the stressors are physically injected --- to PDF via headless Chromium, and finally transcribe the pages with vision OCR into the released text condition (\Cref{subsec:ocr-condition}). Because each released document is rendered from its own ground-truth records, labels are correct by construction and require no human annotation. The claim and policy multi-hop packets are generated end-to-end by the released code with recorded seeds; the 30 core-operations PDFs come from an earlier generation batch of the same design.
 
 \begin{figure}[H]
-    \centering
-    \begin{subfigure}[t]{0.98\linewidth}
-        \centering
-        \includegraphics[width=0.48\linewidth]{figures/example_split_record_schedule.png}
-        \hfill
-        \includegraphics[width=0.48\linewidth]{figures/example_split_record_detail.png}
-        \caption{One target record split across sections}
-    \end{subfigure}
-    \vspace{0.75em}
-    \begin{subfigure}[t]{0.48\linewidth}
-        \centering
-        \includegraphics[width=\linewidth]{figures/example_multi_row.png}
-        \caption{Multi-row record details}
-    \end{subfigure}
-    \vspace{0.75em}
-    \begin{subfigure}[t]{0.48\linewidth}
-        \centering
-        \includegraphics[width=\linewidth]{figures/example_merged_cells.png}
-        \caption{Merged or section-spanning cells}
-    \end{subfigure}
-    \hfill
-    \begin{subfigure}[t]{0.48\linewidth}
-        \centering
-        \includegraphics[width=\linewidth]{figures/example_multi_column.png}
-        \caption{Two-column policy text}
-    \end{subfigure}
-    \caption{Examples of rendered layout stressors in LongListBench documents. Red boxes are figure annotations; the released PDFs do not print benchmark labels.}
-    \label{fig:layout-examples}
+\centering
+\begin{tikzpicture}[
+  lab/.style={font=\sffamily\scriptsize, align=center},
+  lane/.style={font=\sffamily\tiny\bfseries},
+  arr/.style={-{Stealth[length=2.6mm]}, line width=0.9pt, black!60},
+  ico/.style={line width=0.9pt, black!75},
+  pics/docstack/.style={code={
+    \draw[ico, fill=white] (0.10,0.10) -- (0.10,0.80) -- (0.46,0.80) -- (0.62,0.64) -- (0.62,0.10) -- cycle;
+    \draw[ico, fill=white] (-0.02,-0.02) -- (-0.02,0.68) -- (0.34,0.68) -- (0.50,0.52) -- (0.50,-0.02) -- cycle;
+    \draw[ico] (0.34,0.68) -- (0.34,0.52) -- (0.50,0.52);
+    \draw[black!45] (0.06,0.12) -- (0.40,0.12) (0.06,0.24) -- (0.40,0.24) (0.06,0.36) -- (0.40,0.36);
+  }},
+  pics/tablegrid/.style={code={
+    \draw[ico, fill=white] (-0.36,0.06) rectangle (0.36,0.62);
+    \draw[ico, fill=black!20] (-0.36,0.48) rectangle (0.36,0.62);
+    \draw[black!45] (-0.36,0.34) -- (0.36,0.34) (-0.36,0.20) -- (0.36,0.20)
+                    (-0.12,0.06) -- (-0.12,0.62) (0.12,0.06) -- (0.12,0.62);
+  }},
+  pics/person/.style={code={
+    \fill[black!65] (-0.14,0.44) circle (0.11);
+    \fill[black!65] (-0.38,0.02) to[out=80,in=180] (-0.14,0.26) to[out=0,in=100] (0.10,0.02) -- cycle;
+  }},
+  pics/warn/.style={code={
+    \draw[ico, red!70!black] (-0.32,0.02) -- (0.32,0.02) -- (0,0.58) -- cycle;
+    \node[red!70!black, font=\footnotesize\bfseries] at (0,0.22) {!};
+  }},
+  pics/magnify/.style={code={
+    \draw[ico] (0,0.42) circle (0.24);
+    \draw[line width=1.8pt, black!75] (0.17,0.25) -- (0.42,0.00);
+    \draw[black!45] (-0.11,0.48) -- (0.11,0.48) (-0.11,0.37) -- (0.05,0.37);
+  }},
+  pics/script/.style={code={
+    \draw[ico, fill=white] (-0.38,0.02) rectangle (0.38,0.62);
+    \draw[ico] (-0.38,0.48) -- (0.38,0.48);
+    \fill[black!45] (-0.30,0.55) circle (0.025) (-0.22,0.55) circle (0.025) (-0.14,0.55) circle (0.025);
+    \node[font=\tiny\ttfamily\bfseries, text=blue!40!black] at (0,0.25) {</>};
+  }},
+  pics/gendoc/.style={code={
+    \draw[ico, fill=white] (-0.26,-0.02) -- (-0.26,0.68) -- (0.10,0.68) -- (0.26,0.52) -- (0.26,-0.02) -- cycle;
+    \draw[ico] (0.10,0.68) -- (0.10,0.52) -- (0.26,0.52);
+    \draw[black!45] (-0.18,0.36) -- (0.16,0.36) (-0.18,0.48) -- (0.16,0.48);
+    \foreach \a in {0,45,...,315} \draw[ico, blue!40!black] ($(0.26,0.08)+(\a:0.08)$) -- ($(0.26,0.08)+(\a:0.16)$);
+    \draw[ico, blue!40!black, fill=white] (0.26,0.08) circle (0.08);
+  }},
+  pics/eye/.style={code={
+    \draw[ico] (-0.32,0.32) .. controls (-0.12,0.56) and (0.12,0.56) .. (0.32,0.32)
+               .. controls (0.12,0.08) and (-0.12,0.08) .. (-0.32,0.32);
+    \fill[black!75] (0,0.32) circle (0.085);
+  }},
+  pics/db/.style={code={
+    \draw[ico, fill=white] (-0.26,0.14) -- (-0.26,0.56) (-0.26,0.14) arc (180:360:0.26 and 0.09) (0.26,0.14) -- (0.26,0.56);
+    \draw[ico, fill=white] (0,0.56) ellipse (0.26 and 0.09);
+  }},
+]
+% ---- lane backgrounds ----
+\fill[orange!10, rounded corners=7pt] (-0.95,-0.85) rectangle (14.55,1.15);
+\fill[blue!7,   rounded corners=7pt] (-0.95,-3.65) rectangle (14.55,-1.75);
+\node[lane, rotate=90, text=orange!50!black] at (-0.68,0.15)  {Production};
+\node[lane, rotate=90, text=blue!45!black]   at (-0.68,-2.7) {Benchmark};
+% ---- production lane (labels above icons) ----
+\node[minimum size=1.1cm] (raw)  at (0.6,0)  {}; \pic at ($(raw.center)+(-0.30,-0.40)$) {docstack};
+\node[minimum size=1.1cm] (ext)  at (3.8,0)  {}; \pic at ($(ext.center)+(0,-0.34)$)     {tablegrid};
+\node[minimum size=1.1cm] (hum)  at (7.0,0)  {}; \pic at ($(hum.center)+(0.10,-0.26)$) {person};
+\node[minimum size=1.1cm] (edge) at (10.2,0) {}; \pic at ($(edge.center)+(0,-0.32)$)    {warn};
+\node[lab, anchor=south] at ($(raw.north)+(0,-0.12)$)  {Raw PDFs};
+\node[lab, anchor=south] at ($(ext.north)+(0,-0.12)$)  {Extraction};
+\node[lab, anchor=south] at ($(hum.north)+(0,-0.12)$)  {Human Review};
+\node[lab, anchor=south] at ($(edge.north)+(0,-0.12)$) {Edge Cases};
+% ---- benchmark lane (labels below icons) ----
+\node[minimum size=1.1cm] (eng)     at (0.6,-2.35)  {}; \pic at ($(eng.center)+(0,-0.30)$)     {magnify};
+\node[minimum size=1.1cm] (scripts) at (3.8,-2.35)  {}; \pic at ($(scripts.center)+(0,-0.34)$) {script};
+\node[minimum size=1.1cm] (gen)     at (7.0,-2.35)  {}; \pic at ($(gen.center)+(0,-0.36)$)     {gendoc};
+\node[minimum size=1.1cm] (ocr)     at (10.2,-2.35) {}; \pic at ($(ocr.center)+(0,-0.32)$)     {eye};
+\node[minimum size=1.1cm] (ds)      at (13.4,-2.35) {}; \pic at ($(ds.center)+(-0.06,-0.36)$)  {db};
+\node[lab, anchor=north] at ($(eng.south)+(0,0.14)$)     {Engineer Review};
+\node[lab, anchor=north] at ($(scripts.south)+(0,0.14)$) {Generation Scripts};
+\node[lab, anchor=north] at ($(gen.south)+(0,0.14)$)     {Synthetic PDFs};
+\node[lab, anchor=north] at ($(ocr.south)+(0,0.14)$)     {OCR};
+\node[lab, anchor=north] at ($(ds.south)+(0,0.14)$)      {Dataset};
+% ---- flow ----
+\draw[arr] (raw) -- (ext);
+\draw[arr] (ext) -- (hum);
+\draw[arr] (hum) -- (edge);
+\draw[arr] ($(raw.south)+(-0.25,0.12)$) -- ($(eng.north)+(-0.25,-0.15)$);
+\draw[arr] ($(edge.south)+(0,0.12)$) -- ++(0,-0.55) -| ($(eng.north)+(0.25,-0.15)$);
+\draw[arr] (eng) -- (scripts);
+\draw[arr] (scripts) -- (gen);
+\draw[arr] (gen) -- (ocr);
+\draw[arr] (ocr) -- (ds);
+\end{tikzpicture}
+\caption{How the dataset was built. Human-reviewed production extraction surfaces the edge cases where extraction fails; engineers study those alongside the source documents and distill them into seeded generation scripts. The scripts write ground-truth records first and render the synthetic PDFs from them, so labels are correct by construction and no production data is released.}
+\label{fig:pipeline}
 \end{figure}
 
-\Cref{fig:long-range-example} shows the second class of problem: fields for one output record can be distributed across distant sections of the same PDF. The front claim card gives an initial row and reference keys, while later pages provide driver, correspondence, attachment, and audit details that must be joined back to the same target record.
+The released PDFs include dense tables, wrapped rows, form-like pages, and policy packet sections rather than only clean spreadsheet exports. \Cref{fig:split-record,fig:multi-row,fig:merged-cells,fig:multi-column} show representative rendered pages used to audit the visible stressors. Red boxes in these figures are annotations added for the paper; the released PDFs do not print benchmark labels.
 
 \begin{figure}[H]
     \centering
-    \begin{subfigure}[t]{0.32\linewidth}
+    \begin{subfigure}{\linewidth}
         \centering
-        \includegraphics[width=\linewidth]{figures/example_long_range_p4.png}
-        \caption{Front claim cards}
+        \includegraphics[width=\linewidth]{figures/example_split_record_schedule_annot.png}
+        \caption{The Schedule A distance-and-gallons table of a multisection IFTA return.}
+        \label{fig:split-record-schedule}
     \end{subfigure}
-    \hfill
-    \begin{subfigure}[t]{0.32\linewidth}
+    \vspace{0.75em}
+    \begin{subfigure}{\linewidth}
         \centering
-        \includegraphics[width=\linewidth]{figures/example_long_range_p57.png}
-        \caption{Later correspondence index}
+        \includegraphics[width=\linewidth]{figures/example_split_record_detail_annot.png}
+        \caption{The Jurisdictions tax-detail table from a later section of the same packet.}
+        \label{fig:split-record-detail}
     \end{subfigure}
-    \hfill
-    \begin{subfigure}[t]{0.32\linewidth}
+    \caption{One target record split across sections of the same packet.}
+    \label{fig:split-record}
+\end{figure}
+
+\Cref{fig:split-record} shows both halves of a split target record. The Schedule A section (\subref{fig:split-record-schedule}) lists per-jurisdiction total miles, taxable miles, and taxable gallons; these values are only part of each jurisdiction record, so copying this table alone yields incomplete records. The remaining fields live in the Jurisdictions table (\subref{fig:split-record-detail}) from a separately labeled section later in the same packet: the tax rate, net tax due, interest, and total-due fields for the same jurisdiction records. Because the rows appear in a different order in the two sections, an extractor must join them by jurisdiction code, assembling one output record from two distant visual sections rather than copying a single row. This is the \path{split_records} stressor in its purest form.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{figures/example_multi_row_annot.png}
+    \caption{Multi-row record details in an external loss-run report.}
+    \label{fig:multi-row}
+\end{figure}
+
+\Cref{fig:multi-row} illustrates multi-row record details. In this external loss-run report, one logical incident record spans several physical rows: wrapped description and note text continues underneath the main row (red box). Systems that treat each visual row as one record either fragment the target or attach the continuation text to the wrong item.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{figures/example_merged_cells_annot.png}
+    \caption{Merged or section-spanning cells in an incident table.}
+    \label{fig:merged-cells}
+\end{figure}
+
+\Cref{fig:merged-cells} shows merged and section-spanning cells. The highlighted coverage cell spans multiple incident rows, so the shared value must be propagated to each affected record. Such \texttt{colspan}- and \texttt{rowspan}-style structures interrupt the regular one-row-one-record grid that simple table parsers assume.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{figures/example_multi_column_annot.png}
+    \caption{Two-column layout mixing target content with a reference-only directory table.}
+    \label{fig:multi-column}
+\end{figure}
+
+\Cref{fig:multi-column} shows a two-column, form-like page. Side-by-side blocks stress reading order: a naive left-to-right pass interleaves unrelated columns, and the reference-only company directory acts as distractor material that should not be extracted as target records.
+
+\Cref{fig:long-range} shows the second class of problem: fields for one output record can be distributed across distant sections of the same PDF. In one released claim packet, a target record starts on page 4, but supporting fields are found many pages later. The figure is cropped to the evidence chain for a single record; the numbered markers \textcircled{\scriptsize 1}--\textcircled{\scriptsize 3} tie each join key on the claim card to the distant row where it resolves.
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}{\linewidth}
         \centering
-        \includegraphics[width=\linewidth]{figures/example_long_range_p76.png}
-        \caption{Later driver audit}
+        \includegraphics[width=\linewidth]{figures/longrange_card.png}
+        \caption{Page 4: intake note and the first row of front claim cards. The boxed card carries three join keys --- reference \texttt{LR23-H8037} \textcircled{\scriptsize 1}, policy \texttt{L23A1955} \textcircled{\scriptsize 2}, and equipment number \texttt{399841} \textcircled{\scriptsize 3}.}
+        \label{fig:long-range-card}
     \end{subfigure}
-    \caption{Long-range evidence example from one released claim packet. A target record starts on page 4, but supporting fields are found many pages later.}
-    \label{fig:long-range-example}
+    \vspace{0.9em}
+    \begin{subfigure}{\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{figures/longrange_index.png}
+        \caption{Page 57: the same reference \textcircled{\scriptsize 1} appears in two request-log rows, and the attachment index lists a loss-run PDF for the card's policy \textcircled{\scriptsize 2}.}
+        \label{fig:long-range-index}
+    \end{subfigure}
+    \vspace{0.9em}
+    \begin{subfigure}{\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{figures/longrange_audit.png}
+        \caption{Page 76: the driver audit row whose unit \textcircled{\scriptsize 3} matches the card's equipment number supplies the driver and medical-expiry fields.}
+        \label{fig:long-range-audit}
+    \end{subfigure}
+    \caption{Long-range evidence chain for one target record in a released claim packet. Rows not involved in this record are cropped out.}
+    \label{fig:long-range}
+\end{figure}
+
+Tracing the chain: the card in \Cref{fig:long-range-card} seeds one output record but leaves driver, correspondence, and audit fields unresolved. Fifty-three pages later (\Cref{fig:long-range-index}), reference \texttt{LR23-H8037} \textcircled{\scriptsize 1} matches two request-log rows (a prior-term attachment and a revised run), and policy \texttt{L23A1955} \textcircled{\scriptsize 2} matches an indexed loss-run PDF in the attachment table. On page 76 (\Cref{fig:long-range-audit}), unit \texttt{399841} \textcircled{\scriptsize 3} matches the card's equipment number and attaches the driver and medical-expiry fields. \Cref{fig:long-range-record} shows the resulting ground-truth record with each field mapped back to its hop. Completing a single record therefore requires preserving join keys across more than seventy pages --- exactly the failure mode the \path{long_range_evidence} stressor is designed to expose.
+
+\begin{figure}[H]
+\begin{scriptsize}
+\begin{verbatim}
+{                                              // one output record, assembled from 3 hops
+  "incident_number":  "#84508-K",              // (1) page-4 card: LOSS FILE
+  "reference_number": "LR23-H8037",            // (1) page-4 card: REFERENCE
+  "cause_code":       "ROL",                   // (1) page-4 card: CAUSE / STATUS
+  "status":           "Open",                  // (1) page-4 card: CAUSE / STATUS
+  "date_of_loss":     "09/18/2023",            // (1) page-4 card: prose line
+  "loss_state":       "PA",                    // (1) page-4 card: prose line
+  "policy_number":    "L23A1955",              // (2) card key -> page-57 attachment row
+  "company_name":     "Rollinschester Hauling",// (1) card key -> page-57 request rows
+  "unit_number":      "2023 PB 399841",        // (3) card key -> page-76 audit: Unit
+  "driver_name":      "Ramsey, Taylor",        // (3) page-76 audit: Driver
+  ...                                          // 12 more fields from other distant sections
+}
+\end{verbatim}
+\end{scriptsize}
+\caption{The assembled ground-truth record for the boxed card in \Cref{fig:long-range-card} (abridged). The markers \texttt{(1)}--\texttt{(3)} correspond to the circled join keys in \Cref{fig:long-range}.}
+\label{fig:long-range-record}
 \end{figure}
 
 The current release prioritizes fewer, larger, more realistic PDFs rather than many small template variants. This choice reflects the intended use case: measuring list-completeness failures at scale. Several PDFs contain more than 1{,}000 target records, and the full corpus contains 33{,}450 target records across 36 PDFs.
@@ -188,6 +329,7 @@ Stressor & Example PDF pages & Visible document evidence \\
 \end{table}
 
 \subsection{OCR condition}
+\label{subsec:ocr-condition}
 Every released PDF has an OCR transcript generated from rendered page images. The released transcript condition was produced with Google Gemini 3.5 Flash vision OCR through the direct Google/Vertex Gemini API path, after rasterizing PDF pages at 200 DPI. The OCR transcript is the released text condition for this version; it is not the PDF text layer or the HTML source text. We treat OCR as a controlled input condition: a system may evaluate directly from the PDF, from the OCR transcript, or from its own OCR pipeline, but reported results should state the input condition clearly.
 
 \subsection{Long-range evidence}
