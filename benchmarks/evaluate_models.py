@@ -54,6 +54,11 @@ except ImportError:
     )
 
 try:
+    from .evaluation_roles import evaluation_role
+except ImportError:
+    from evaluation_roles import evaluation_role
+
+try:
     from dotenv import load_dotenv
 except ModuleNotFoundError:
     load_dotenv = None
@@ -227,6 +232,13 @@ MODELS = {
         setup_fn=_setup_offline_only_model,
         extract_fn=_extract_offline_only_model,
     ),
+    'claude_opus48': ModelConfig(
+        name='Claude Opus 4.8 (Claude Code CLI Agentic, xhigh)',
+        provider='Anthropic/Claude Code',
+        model_id='claude-opus-4-8',
+        setup_fn=_setup_offline_only_model,
+        extract_fn=_extract_offline_only_model,
+    ),
 }
 
 
@@ -245,7 +257,7 @@ class EvaluationResult:
     tier: str
     format: str
     metrics: dict
-    extraction_time: float
+    extraction_time: float | None
     error: str = None
     transcript: str = "ocr"
     tokens: dict = None
@@ -859,7 +871,7 @@ def run_evaluation_from_saved_predictions(
                     tier=entry.tier,
                     format=entry.format,
                     metrics=metrics,
-                    extraction_time=metadata.get("extraction_time", 0.0),
+                    extraction_time=metadata.get("extraction_time"),
                     error=error,
                     transcript=entry.transcript,
                     tokens=metadata.get("tokens"),
@@ -874,6 +886,9 @@ def _new_group_stats() -> dict:
     return {
         'count': 0,
         'rows': 0,
+        'pred_rows': 0,
+        'exact_record_matches': 0,
+        'complete_documents': 0,
         'f1_sum': 0,
         'recall_sum': 0,
         'found_sum': 0,
@@ -885,6 +900,9 @@ def _new_group_stats() -> dict:
 def _add_result_to_group(group: dict, r: EvaluationResult) -> None:
     group['count'] += 1
     group['rows'] += r.metrics.get('ground_truth_count', 0)
+    group['pred_rows'] += r.metrics.get('predicted_count', 0)
+    group['exact_record_matches'] += r.metrics.get('exact_record_matches', 0)
+    group['complete_documents'] += int(bool(r.metrics.get('complete_document', False)))
     group['f1_sum'] += r.metrics['f1']
     group['recall_sum'] += r.metrics['recall']
     group['found_sum'] += r.metrics.get('found', 0)
@@ -900,6 +918,16 @@ def _finalize_group_stats(groups: dict[str, dict]) -> None:
         gold_pairs = group['gold_pairs_sum']
         pred_pairs = group['pred_pairs_sum']
         found_sum = group['found_sum']
+        exact_matches = group['exact_record_matches']
+        pred_rows = group['pred_rows']
+        group['exact_record_recall'] = exact_matches / group['rows'] if group['rows'] > 0 else 0
+        group['exact_record_precision'] = exact_matches / pred_rows if pred_rows > 0 else 0
+        group['exact_record_f1'] = (
+            2 * group['exact_record_precision'] * group['exact_record_recall']
+            / (group['exact_record_precision'] + group['exact_record_recall'])
+            if (group['exact_record_precision'] + group['exact_record_recall']) > 0 else 0
+        )
+        group['complete_document_rate'] = group['complete_documents'] / c if c > 0 else 0
         group['weighted_recall'] = found_sum / gold_pairs if gold_pairs > 0 else 0
         group['weighted_precision'] = found_sum / pred_pairs if pred_pairs > 0 else 0
         group['weighted_f1'] = (
@@ -964,9 +992,14 @@ def _git_dirty(ignore_paths: Iterable[Path] = ()) -> bool | None:
 
 
 def _dataset_provenance(ignore_dirty_paths: Iterable[Path] = ()) -> dict:
+    repo_root = Path(__file__).resolve().parents[1]
     manifest_path = default_dataset_dir() / "manifest.json"
+    try:
+        manifest_display_path = manifest_path.resolve().relative_to(repo_root).as_posix()
+    except ValueError:
+        manifest_display_path = manifest_path.name
     provenance = {
-        "manifest_path": str(manifest_path),
+        "manifest_path": manifest_display_path,
         "manifest_sha256": None,
         "git_sha": _current_git_sha(),
         "git_dirty": _git_dirty(ignore_dirty_paths),
@@ -1005,15 +1038,19 @@ def generate_report(
                 'total_gold_field_pairs': 0,
                 'total_pred_field_pairs': 0,
                 'total_rows': 0,
+                'total_pred_rows': 0,
+                'total_exact_record_matches': 0,
+                'complete_documents': 0,
                 'errors': 0,
-                'total_cost_usd': 0.0,
-                'total_input_tokens': 0,
-                'total_output_tokens': 0,
-                'total_extraction_time': 0.0,
+                'total_cost_usd': None,
+                'total_input_tokens': None,
+                'total_output_tokens': None,
+                'total_extraction_time': None,
                 'by_tier': {},
                 'by_format': {},
                 'by_transcript': {},
                 'by_complexity_regime': {},
+                'by_evaluation_role': {},
                 'by_stressor': {},
             }
 
@@ -1026,11 +1063,22 @@ def generate_report(
         stats['total_gold_field_pairs'] += r.metrics.get('total_gold_field_pairs', 0)
         stats['total_pred_field_pairs'] += r.metrics.get('total_pred_field_pairs', 0)
         stats['total_rows'] += r.metrics.get('ground_truth_count', 0)
-        stats['total_cost_usd'] += r.cost_usd or 0.0
-        stats['total_extraction_time'] += r.extraction_time or 0.0
+        stats['total_pred_rows'] += r.metrics.get('predicted_count', 0)
+        stats['total_exact_record_matches'] += r.metrics.get('exact_record_matches', 0)
+        stats['complete_documents'] += int(bool(r.metrics.get('complete_document', False)))
+        if r.cost_usd is not None:
+            stats['total_cost_usd'] = (stats['total_cost_usd'] or 0.0) + r.cost_usd
+        if r.extraction_time is not None:
+            stats['total_extraction_time'] = (
+                stats['total_extraction_time'] or 0.0
+            ) + r.extraction_time
         if r.tokens:
-            stats['total_input_tokens'] += r.tokens.get('input_tokens', 0)
-            stats['total_output_tokens'] += r.tokens.get('output_tokens', 0)
+            stats['total_input_tokens'] = (
+                stats['total_input_tokens'] or 0
+            ) + r.tokens.get('input_tokens', 0)
+            stats['total_output_tokens'] = (
+                stats['total_output_tokens'] or 0
+            ) + r.tokens.get('output_tokens', 0)
         if r.error:
             stats['errors'] += 1
         
@@ -1049,6 +1097,12 @@ def generate_report(
             stats['by_complexity_regime'].setdefault(str(complexity_regime), _new_group_stats()),
             r,
         )
+        _add_result_to_group(
+            stats['by_evaluation_role'].setdefault(
+                evaluation_role(str(complexity_regime)), _new_group_stats()
+            ),
+            r,
+        )
         for stressor in sorted(set(metadata.get("problems") or [])):
             _add_result_to_group(
                 stats['by_stressor'].setdefault(str(stressor), _new_group_stats()),
@@ -1064,6 +1118,16 @@ def generate_report(
         total_found = stats['total_found']
         total_gold = stats['total_gold_field_pairs']
         total_pred = stats['total_pred_field_pairs']
+        exact_matches = stats['total_exact_record_matches']
+        total_pred_rows = stats['total_pred_rows']
+        stats['exact_record_recall'] = exact_matches / stats['total_rows'] if stats['total_rows'] > 0 else 0
+        stats['exact_record_precision'] = exact_matches / total_pred_rows if total_pred_rows > 0 else 0
+        stats['exact_record_f1'] = (
+            2 * stats['exact_record_precision'] * stats['exact_record_recall']
+            / (stats['exact_record_precision'] + stats['exact_record_recall'])
+            if (stats['exact_record_precision'] + stats['exact_record_recall']) > 0 else 0
+        )
+        stats['complete_document_rate'] = stats['complete_documents'] / n if n > 0 else 0
         stats['weighted_recall'] = total_found / total_gold if total_gold > 0 else 0
         stats['weighted_precision'] = total_found / total_pred if total_pred > 0 else 0
         stats['weighted_f1'] = (
@@ -1075,6 +1139,7 @@ def generate_report(
         _finalize_group_stats(stats['by_format'])
         _finalize_group_stats(stats['by_transcript'])
         _finalize_group_stats(stats['by_complexity_regime'])
+        _finalize_group_stats(stats['by_evaluation_role'])
         _finalize_group_stats(stats['by_stressor'])
     
     json_path = output_path / 'evaluation_report.json'
@@ -1119,14 +1184,14 @@ def generate_report(
         "",
         "## Overall Results",
         "",
-        "| Model | Weighted F1 | Weighted Recall | Weighted Precision | Macro F1 | Rows | Samples | Errors | Time (s) | Cost (USD) |",
-        "|-------|-------------|-----------------|--------------------|----------|------|---------|--------|----------|------------|",
+        "| Model | Exact-record recall | Complete documents | Field micro-F1 | Field macro-F1 | Rows | Samples | Errors | Time (s) | Cost (USD) |",
+        "|-------|---------------------|--------------------|----------------|----------------|------|---------|--------|----------|------------|",
     ]
 
-    def _format_weighted_pct(group_stats: dict | None) -> str:
+    def _format_group_pct(group_stats: dict | None, metric: str) -> str:
         if not group_stats or group_stats.get("count", 0) == 0:
             return "N/A"
-        return f"{group_stats['weighted_f1']:.1%}"
+        return f"{group_stats[metric]:.1%}"
 
     def _observed_group_keys(stats_key: str, preferred_order: list[str]) -> list[str]:
         observed: set[str] = set()
@@ -1141,18 +1206,18 @@ def generate_report(
     def _label_group_key(key: str) -> str:
         return key.replace("_", " ").title()
 
-    def _format_summary_time(seconds: float) -> str:
-        if evaluation_mode == "offline_replay":
+    def _format_summary_time(seconds: float | None) -> str:
+        if evaluation_mode == "offline_replay" or seconds is None:
             return "N/A"
         return f"{seconds:.0f}"
 
-    def _format_summary_cost(cost_usd: float) -> str:
-        if evaluation_mode == "offline_replay":
+    def _format_summary_cost(cost_usd: float | None) -> str:
+        if evaluation_mode == "offline_replay" or cost_usd is None:
             return "N/A"
         return f"${cost_usd:.4f}"
 
-    def _format_detail_time(seconds: float) -> str:
-        if evaluation_mode == "offline_replay":
+    def _format_detail_time(seconds: float | None) -> str:
+        if evaluation_mode == "offline_replay" or seconds is None:
             return "N/A"
         return f"{seconds:.1f}s"
 
@@ -1177,7 +1242,8 @@ def generate_report(
                 s = model_stats[model_key]
                 name = MODELS[model_key].name
                 scores = [
-                    _format_weighted_pct(s[stats_key].get(key)) for key in group_keys
+                    _format_group_pct(s[stats_key].get(key), "exact_record_recall")
+                    for key in group_keys
                 ]
                 md_lines.append(f"| {name} | {' | '.join(scores)} |")
 
@@ -1186,18 +1252,26 @@ def generate_report(
             s = model_stats[model_key]
             name = MODELS[model_key].name
             md_lines.append(
-                f"| {name} | {s['weighted_f1']:.1%} | {s['weighted_recall']:.1%} | "
-                f"{s['weighted_precision']:.1%} | {s['avg_f1']:.1%} | {s['total_rows']} | {s['total_samples']} | {s['errors']} | "
+                f"| {name} | {s['exact_record_recall']:.1%} | "
+                f"{s['complete_documents']}/{s['total_samples']} ({s['complete_document_rate']:.1%}) | "
+                f"{s['weighted_f1']:.1%} | {s['avg_f1']:.1%} | {s['total_rows']} | "
+                f"{s['total_samples']} | {s['errors']} | "
                 f"{_format_summary_time(s.get('total_extraction_time', 0.0))} | {_format_summary_cost(s.get('total_cost_usd', 0.0))} |"
             )
     
     md_lines.extend([
         "",
-        "Primary scores use corpus-level micro aggregation over all field-value pairs, so larger incident lists contribute proportionally more evidence than smaller documents.",
+        "The primary score is exact-record recall: a target counts only when every normalized field in one predicted record matches one ground-truth record. Complete-document success additionally requires the predicted and ground-truth record multisets to be identical. Record order is not scored. Field-pair F1 remains a secondary diagnostic.",
     ])
 
     _append_group_table(
-        "## Results by Difficulty Tier",
+        "## Strict Completeness by Evaluation Role",
+        "by_evaluation_role",
+        ["structural_challenge", "scale_control", "unclassified"],
+    )
+
+    _append_group_table(
+        "## Strict Completeness by Difficulty Tier",
         "by_tier",
         [
             "core_operations",
@@ -1212,13 +1286,13 @@ def generate_report(
         ],
     )
     _append_group_table(
-        "## Results by Document Format",
+        "## Strict Completeness by Document Format",
         "by_format",
         ["production_like_pdf", "crosspage", "detailed", "table"],
     )
 
     _append_group_table(
-        "## Results by Complexity Regime",
+        "## Strict Completeness by Complexity Regime",
         "by_complexity_regime",
         [
             "ifta_mileage_by_vehicle",
@@ -1236,7 +1310,7 @@ def generate_report(
     )
 
     _append_group_table(
-        "## Results by Key Stressor",
+        "## Strict Completeness by Key Stressor",
         "by_stressor",
         [
             "ocr_layout_condition",
@@ -1257,7 +1331,7 @@ def generate_report(
 
     md_lines.extend([
         "",
-        "## Results by Transcript Condition",
+        "## Strict Completeness by Transcript Condition",
         "",
         "| Model | Canonical | OCR |",
         "|-------|-----------|-----|",
@@ -1267,8 +1341,8 @@ def generate_report(
         if model_key in model_stats:
             s = model_stats[model_key]
             name = MODELS[model_key].name
-            canonical = _format_weighted_pct(s["by_transcript"].get("canonical"))
-            ocr = _format_weighted_pct(s["by_transcript"].get("ocr"))
+            canonical = _format_group_pct(s["by_transcript"].get("canonical"), "exact_record_recall")
+            ocr = _format_group_pct(s["by_transcript"].get("ocr"), "exact_record_recall")
             md_lines.append(f"| {name} | {canonical} | {ocr} |")
     
     md_lines.extend([
@@ -1285,8 +1359,8 @@ def generate_report(
             samples_seen.add(sample_key)
             md_lines.append(f"### {r.sample} ({r.transcript})")
             md_lines.append("")
-            md_lines.append("| Model | F1 | Recall | Precision | Predicted | Time |")
-            md_lines.append("|-------|-----|--------|-----------|-----------|------|")
+            md_lines.append("| Model | Exact records | Complete | Field F1 | Predicted | Time |")
+            md_lines.append("|-------|---------------|----------|----------|-----------|------|")
             
             for r2 in results:
                 if r2.sample == r.sample and r2.transcript == r.transcript:
@@ -1295,9 +1369,21 @@ def generate_report(
                     if r2.error:
                         md_lines.append(f"| {name} | ERROR | - | - | - | - |")
                     else:
+                        gold_count = m.get('ground_truth_count', 0)
+                        predicted_count = m.get('predicted_count', 0)
+                        exact_matches = m.get('exact_record_matches', 0)
+                        exact_recall = m.get(
+                            'exact_record_recall',
+                            exact_matches / gold_count if gold_count > 0 else float(predicted_count == 0),
+                        )
+                        complete_document = m.get(
+                            'complete_document',
+                            exact_matches == gold_count == predicted_count,
+                        )
                         md_lines.append(
-                            f"| {name} | {m['f1']:.1%} | {m['recall']:.1%} | "
-                            f"{m['precision']:.1%} | {m['predicted_count']} | {_format_detail_time(r2.extraction_time)} |"
+                            f"| {name} | {exact_recall:.1%} | "
+                            f"{'yes' if complete_document else 'no'} | {m['f1']:.1%} | "
+                            f"{m['predicted_count']} | {_format_detail_time(r2.extraction_time)} |"
                         )
             
             md_lines.append("")
@@ -1314,7 +1400,8 @@ def main():
     parser = argparse.ArgumentParser(description='Multi-model evaluation for LongListBench')
     parser.add_argument('--models', nargs='+', default=['gpt55_oneshot'],
                        choices=['gemini', 'gemini_oneshot', 'gemini25', 'gpt52', 'gpt4', 'claude',
-                                'gpt55_oneshot', 'gpt55_chunked', 'gpt55_agent', 'codex_gpt55'],
+                                'gpt55_oneshot', 'gpt55_chunked', 'gpt55_agent', 'codex_gpt55',
+                                'claude_opus48'],
                        help='Models to evaluate (default: gpt55_oneshot)')
     parser.add_argument('--output-dir', default=None,
                        help='Directory to write predictions and evaluation reports (default: benchmarks/results/scratch)')

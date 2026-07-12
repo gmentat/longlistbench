@@ -140,3 +140,19 @@ def test_every_declared_complexity_stressor_has_artifact_coverage() -> None:
 
     assert not failures
     assert all(coverage_counts[stressor] > 0 for stressor in STRESSORS)
+
+
+def test_manifest_alias_and_instance_metadata_paths_are_current() -> None:
+    manifest = _load_json(DATA_DIR / "manifest.json")
+    assert manifest == _load_json(DATA_DIR / "metadata.json")
+
+    for instance in manifest["instances"]:
+        sample_id = instance["id"]
+        relative_path = Path("metadata") / f"{sample_id}.json"
+        assert instance["files"]["metadata"] == relative_path.as_posix()
+
+        metadata_path = DATA_DIR / relative_path
+        assert metadata_path.is_file()
+        sample_metadata = _load_json(metadata_path)
+        assert sample_metadata["id"] == sample_id
+        assert sample_metadata["files"]["metadata"] == relative_path.as_posix()

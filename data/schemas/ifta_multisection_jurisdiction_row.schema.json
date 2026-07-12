@@ -9,8 +9,14 @@
     "filing_year": {"type": ["integer", "string"]},
     "quarter": {"type": "string"},
     "filing_type": {"type": "string"},
-    "jurisdiction": {"type": "string"},
-    "fuel_type": {"type": "string"},
+    "jurisdiction": {
+      "description": "Two-letter jurisdiction code when the document shows both a name and code.",
+      "type": "string"
+    },
+    "fuel_type": {
+      "description": "Short fuel code shown in parentheses, such as DI for Diesel (DI).",
+      "type": "string"
+    },
     "total_miles": {"type": ["number", "integer", "string"]},
     "taxable_miles": {"type": ["number", "integer", "string"]},
     "taxable_gallons": {"type": ["number", "integer", "string"]},

@@ -4,18 +4,18 @@ LongListBench\footnote{Code, data, and implementation details are available at \
 The released corpus contains three broad target families.
 
 \paragraph{Claim incidents.}
-Claim-oriented documents use a loss-run incident schema with claim identifiers, policy metadata, claimant and driver fields, loss dates, coverage fields, status fields, and nested financial breakdowns. These records are scored with stricter incident normalization, including date normalization, claimant-list sorting, and monetary rounding.
+Claim-oriented documents use a loss-run incident schema with claim identifiers, policy metadata, claimant and driver fields, loss dates, coverage fields, status fields, and nested financial breakdowns. These records use strict normalized-record comparison plus field diagnostics, including date normalization, claimant-list sorting, and monetary rounding.
 
 \paragraph{Policy records.}
 Policy-oriented documents use heterogeneous records for locations, coverages, forms, endorsements, exclusions, rating rows, and premium items. A policy packet is the contract document issued by an insurer; it combines declarations, covered locations or classifications, coverage limits and deductibles, rating or premium schedules, required forms, and endorsements that modify the base policy. The released policy packets cover Businessowners Policy (BOP), Workers Compensation (WC), and Commercial General Liability (CGL).
 
 \paragraph{Operations records.}
-The core operations documents contain dense repeated lists from business operations workflows, including mileage rows, multi-section return rows, tax inquiry rows, driver records, vehicle schedule rows, and external loss-run rows. These record types are evaluated as generic field-value records rather than forced into the claim incident schema.
+The core operations documents contain dense repeated lists from business operations workflows, including mileage rows, multi-section return rows, tax inquiry rows, driver records, vehicle schedule rows, and external loss-run rows. These record types use generic normalized-record comparison rather than being forced into the claim incident schema.
 
 \subsection{Document design and provenance}
-Private production PDFs were reviewed to identify recurring document structures, such as portal exports, spreadsheet schedules, carrier loss-run tables, policy declarations, forms, endorsements, and long packet layouts. Those private files are not included in the repository, and the released documents are production-inspired rather than facsimiles of any single source packet.
+Private production PDFs were reviewed only to identify recurring structures such as portal exports, spreadsheet schedules, loss-run tables, declarations, forms, endorsements, and long packet organization. The released documents are production-inspired, not facsimiles of source packets.
 
-\Cref{fig:pipeline} summarizes how the corpus was built. In production, data extracted from raw customer PDFs is reviewed and corrected by humans; the recurring corrections surface the edge cases where extraction actually fails. Engineers studied those edge cases alongside the source documents and distilled them into generation scripts: per-family templates, seeded value generators, and the stressor taxonomy of \Cref{tab:complexity-stressors}. No production data leaves this step --- only the structural findings do. The scripts then produce the release: they first emit the structured target records (every name, identifier, date, value, and prose passage is generated, so no customer-sensitive data exists in the release), then render those records through HTML templates --- where the stressors are physically injected --- to PDF via headless Chromium, and finally transcribe the pages with vision OCR into the released text condition (\Cref{subsec:ocr-condition}). Because each released document is rendered from its own ground-truth records, labels are correct by construction and require no human annotation. The claim and policy multi-hop packets are generated end-to-end by the released code with recorded seeds; the 30 core-operations PDFs come from an earlier generation batch of the same design.
+\Cref{fig:pipeline} summarizes construction. Human corrections to production extraction surfaced recurring failure patterns, which engineers translated into seeded generators, family-specific templates, and the stressor taxonomy in \Cref{tab:complexity-stressors}. Generators write target records first, render them through HTML templates to PDF, and transcribe page images with vision OCR. Every visible name, identifier, value, and prose passage is generated. The multi-hop packets are reproducible from released code and seeds; the 30 core-operations PDFs come from an earlier batch using the same design.
 
 \begin{figure}[H]
 \centering
@@ -108,7 +108,7 @@ Private production PDFs were reviewed to identify recurring document structures,
 \draw[arr] (gen) -- (ocr);
 \draw[arr] (ocr) -- (ds);
 \end{tikzpicture}
-\caption{How the dataset was built. Human-reviewed production extraction surfaces the edge cases where extraction fails; engineers study those alongside the source documents and distill them into seeded generation scripts. The scripts write ground-truth records first and render the synthetic PDFs from them, so labels are correct by construction and no production data is released.}
+\caption{Dataset construction. Production failures inform structural templates; seeded generators write ground truth first, then render synthetic PDFs and OCR transcripts. No production values are released.}
 \label{fig:pipeline}
 \end{figure}
 
@@ -133,7 +133,7 @@ The released PDFs include dense tables, wrapped rows, form-like pages, and polic
     \label{fig:split-record}
 \end{figure}
 
-\Cref{fig:split-record} shows both halves of a split target record. The Schedule A section (\subref{fig:split-record-schedule}) lists per-jurisdiction total miles, taxable miles, and taxable gallons; these values are only part of each jurisdiction record, so copying this table alone yields incomplete records. The remaining fields live in the Jurisdictions table (\subref{fig:split-record-detail}) from a separately labeled section later in the same packet: the tax rate, net tax due, interest, and total-due fields for the same jurisdiction records. Because the rows appear in a different order in the two sections, an extractor must join them by jurisdiction code, assembling one output record from two distant visual sections rather than copying a single row. This is the \path{split_records} stressor in its purest form.
+\Cref{fig:split-record} shows two row-level evidence blocks for one target. Return headers supply reporting context, Schedule A supplies mileage and gallons, and a later Jurisdictions table supplies tax fields. The sections order jurisdictions differently, so the extractor must join by return and jurisdiction rather than copy one row. This is the \path{split_records} stressor.
 
 \begin{figure}[H]
     \centering
@@ -142,7 +142,7 @@ The released PDFs include dense tables, wrapped rows, form-like pages, and polic
     \label{fig:multi-row}
 \end{figure}
 
-\Cref{fig:multi-row} illustrates multi-row record details. In this external loss-run report, one logical incident record spans several physical rows: wrapped description and note text continues underneath the main row (red box). Systems that treat each visual row as one record either fragment the target or attach the continuation text to the wrong item.
+In \Cref{fig:multi-row}, description and note text continue below an incident's main row. A one-row-one-record parser can fragment the target or attach text to the wrong item.
 
 \begin{figure}[H]
     \centering
@@ -151,7 +151,7 @@ The released PDFs include dense tables, wrapped rows, form-like pages, and polic
     \label{fig:merged-cells}
 \end{figure}
 
-\Cref{fig:merged-cells} shows merged and section-spanning cells. The highlighted coverage cell spans multiple incident rows, so the shared value must be propagated to each affected record. Such \texttt{colspan}- and \texttt{rowspan}-style structures interrupt the regular one-row-one-record grid that simple table parsers assume.
+In \Cref{fig:merged-cells}, a shared coverage cell spans several incidents and must be propagated to each record, breaking the regular grid assumed by simple table parsers.
 
 \begin{figure}[H]
     \centering
@@ -160,59 +160,37 @@ The released PDFs include dense tables, wrapped rows, form-like pages, and polic
     \label{fig:multi-column}
 \end{figure}
 
-\Cref{fig:multi-column} shows a two-column, form-like page. Side-by-side blocks stress reading order: a naive left-to-right pass interleaves unrelated columns, and the reference-only company directory acts as distractor material that should not be extracted as target records.
+\Cref{fig:multi-column} pairs target content with a reference-only directory. Naive reading order can interleave the columns or extract distractor rows.
 
-\Cref{fig:long-range} shows the second class of problem: fields for one output record can be distributed across distant sections of the same PDF. In one released claim packet, a target record starts on page 4, but supporting fields are found many pages later. The figure is cropped to the evidence chain for a single record; the numbered markers \textcircled{\scriptsize 1}--\textcircled{\scriptsize 3} tie each join key on the claim card to the distant row where it resolves.
+\Cref{fig:long-range} illustrates long-range evidence for one claim. The target begins on page 4; three join keys recur in distant sections. These crops show only part of the full evidence chain.
 
 \begin{figure}[H]
     \centering
     \begin{subfigure}{\linewidth}
         \centering
         \includegraphics[width=\linewidth]{figures/longrange_card.png}
-        \caption{Page 4: intake note and the first row of front claim cards. The boxed card carries three join keys --- reference \texttt{LR23-H8037} \textcircled{\scriptsize 1}, policy \texttt{L23A1955} \textcircled{\scriptsize 2}, and equipment number \texttt{399841} \textcircled{\scriptsize 3}.}
+        \caption{Page 4: a claim card carries reference \texttt{LR23-H8037} \textcircled{\scriptsize 1}, policy \texttt{L23A1955} \textcircled{\scriptsize 2}, and unit \texttt{399841} \textcircled{\scriptsize 3}.}
         \label{fig:long-range-card}
     \end{subfigure}
     \vspace{0.9em}
     \begin{subfigure}{\linewidth}
         \centering
         \includegraphics[width=\linewidth]{figures/longrange_index.png}
-        \caption{Page 57: the same reference \textcircled{\scriptsize 1} appears in two request-log rows, and the attachment index lists a loss-run PDF for the card's policy \textcircled{\scriptsize 2}.}
+        \caption{Page 57: request rows corroborate the account for reference \textcircled{\scriptsize 1}; the attachment index corroborates policy \textcircled{\scriptsize 2}. Middle request rows are omitted from the crop.}
         \label{fig:long-range-index}
     \end{subfigure}
     \vspace{0.9em}
     \begin{subfigure}{\linewidth}
         \centering
         \includegraphics[width=\linewidth]{figures/longrange_audit.png}
-        \caption{Page 76: the driver audit row whose unit \textcircled{\scriptsize 3} matches the card's equipment number supplies the driver and medical-expiry fields.}
+        \caption{Page 76: a driver-audit row matches unit \textcircled{\scriptsize 3} and supplies the driver name.}
         \label{fig:long-range-audit}
     \end{subfigure}
-    \caption{Long-range evidence chain for one target record in a released claim packet. Rows not involved in this record are cropped out.}
+    \caption{Three distant references for one target claim. The complete record uses six evidence sections; unrelated rows are cropped out.}
     \label{fig:long-range}
 \end{figure}
 
-Tracing the chain: the card in \Cref{fig:long-range-card} seeds one output record but leaves driver, correspondence, and audit fields unresolved. Fifty-three pages later (\Cref{fig:long-range-index}), reference \texttt{LR23-H8037} \textcircled{\scriptsize 1} matches two request-log rows (a prior-term attachment and a revised run), and policy \texttt{L23A1955} \textcircled{\scriptsize 2} matches an indexed loss-run PDF in the attachment table. On page 76 (\Cref{fig:long-range-audit}), unit \texttt{399841} \textcircled{\scriptsize 3} matches the card's equipment number and attaches the driver and medical-expiry fields. \Cref{fig:long-range-record} shows the resulting ground-truth record with each field mapped back to its hop. Completing a single record therefore requires preserving join keys across more than seventy pages --- exactly the failure mode the \path{long_range_evidence} stressor is designed to expose.
-
-\begin{figure}[H]
-\begin{scriptsize}
-\begin{verbatim}
-{                                              // one output record, assembled from 3 hops
-  "incident_number":  "#84508-K",              // (1) page-4 card: LOSS FILE
-  "reference_number": "LR23-H8037",            // (1) page-4 card: REFERENCE
-  "cause_code":       "ROL",                   // (1) page-4 card: CAUSE / STATUS
-  "status":           "Open",                  // (1) page-4 card: CAUSE / STATUS
-  "date_of_loss":     "09/18/2023",            // (1) page-4 card: prose line
-  "loss_state":       "PA",                    // (1) page-4 card: prose line
-  "policy_number":    "L23A1955",              // (2) card key -> page-57 attachment row
-  "company_name":     "Rollinschester Hauling",// (1) card key -> page-57 request rows
-  "unit_number":      "2023 PB 399841",        // (3) card key -> page-76 audit: Unit
-  "driver_name":      "Ramsey, Taylor",        // (3) page-76 audit: Driver
-  ...                                          // 12 more fields from other distant sections
-}
-\end{verbatim}
-\end{scriptsize}
-\caption{The assembled ground-truth record for the boxed card in \Cref{fig:long-range-card} (abridged). The markers \texttt{(1)}--\texttt{(3)} correspond to the circled join keys in \Cref{fig:long-range}.}
-\label{fig:long-range-record}
-\end{figure}
+The three crops are illustrative, not complete provenance. The scored claim has 24 top-level fields plus nested financials. Its metadata maps six evidence blocks: intake cards, driver assignments, policy registers, cause narratives, claimant notices, and financial ledgers. The first and last primary blocks are separated by at least 64 pages, so extraction must preserve several join keys across the packet.
 
 The current release prioritizes fewer, larger, more realistic PDFs rather than many small template variants. This choice reflects the intended use case: measuring list-completeness failures at scale. Several PDFs contain more than 1{,}000 target records, and the full corpus contains 33{,}450 target records across 36 PDFs.
 
@@ -247,17 +225,17 @@ Document family & PDFs & Target records \\
 \end{tabular}
 \end{table}
 
-\subsection{Complexity regimes}
-Each instance carries explicit regime metadata in the manifest and Hugging Face export. The \texttt{complexity\_regime} field records the high-level regime or document family, while the \texttt{problems} field records cross-cutting stressors. This separation is important: the same PDF may be both a large-document case, a multi-table case, an OCR-conditioned case, and a long-range evidence case. We group the current release into three evaluation regimes:
+\subsection{Evaluation configurations}
+Each instance carries three levels of metadata. The \texttt{hf\_config} field assigns one of three release configurations, \texttt{complexity\_regime} identifies its document family, and \texttt{problems} records cross-cutting stressors. A PDF can therefore be large, multi-table, OCR-conditioned, and long-range at the same time.
 
 \begin{table}[H]
 \centering
 \small
-\caption{Complexity regimes in the current release.}
-\label{tab:complexity-regimes}
-\begin{tabular}{@{}p{0.26\linewidth}rrp{0.42\linewidth}@{}}
+\caption{Evaluation configurations in the current release.}
+\label{tab:evaluation-configurations}
+\begin{tabular}{@{}p{0.26\linewidth}rr>{\raggedright\arraybackslash}p{0.42\linewidth}@{}}
 \toprule
-Regime & PDFs & Records & Main stressors \\
+Configuration & PDFs & Records & Main contents \\
 \midrule
 Core operations & 30 & 31{,}884 & High-density repeated records, production-like tables and exports, OCR preservation, cross-section joins, and output completeness. \\
 Claim multi-hop & 3 & 77 & Long-range joins from claim schedules to policy registers, driver rosters, claimant indexes, cause-code appendices, and ledgers. \\
@@ -268,9 +246,9 @@ Policy packets & 3 & 1{,}489 & Heterogeneous policy records across declarations,
 \end{tabular}
 \end{table}
 
-These regimes are intentionally not a single difficulty ladder. Many core operations files primarily test scale and completeness; deterministic parsers may perform well when OCR preserves row boundaries. The multisection IFTA packets within core operations add OCR-layout and cross-section join stressors. Claim and policy packets test different complexity: inherited context, distant evidence, mixed layouts, heterogeneous schemas, and distractor sections. Results should therefore be reported by regime rather than only as one aggregate score.
+These configurations are not a difficulty ladder. Core operations includes both parser-friendly scale controls and multisection joins. Claim and policy packets emphasize inherited context, distant evidence, heterogeneous schemas, and distractors. Results should therefore be sliced by evaluation role, family, and stressor rather than reduced to one ranking.
 
-\Cref{tab:complexity-stressors} lists the canonical cross-cutting stressors. The earlier generator included simple pagination stressors; in the current release we separate those from harder item-level splits. A page break by itself mainly tests pagination and list completeness. The harder case is a split record, where fields for one target item must be assembled from separate visual sections or pages. Duplicate pressure likewise appears mainly as prior-term, archived, or near-duplicate distractor material rather than exact duplicate target rows. Per-sample metadata also includes finer domain-specific tags, such as policy-line or endorsement tags, for audit and slicing; those tags are not separate canonical stressor categories.
+\Cref{tab:complexity-stressors} defines 14 canonical cross-cutting stressors. The 45 distinct tokens currently found in \texttt{problems} also include finer domain and implementation tags for audit slices; they are not additional canonical categories. A page break tests pagination and completeness, while \path{split_records} requires assembling one target from separate visual blocks. Duplicate pressure is represented mainly by prior-term, archived, or near-duplicate distractors.
 
 \begin{table}[t]
 \centering

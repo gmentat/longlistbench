@@ -148,7 +148,7 @@ Document:
 \end{verbatim}
 \endgroup
 
-For generic operations and policy rows, the agentic extraction script uses a field contract derived from the ground-truth schema family. The output shape is:
+For generic operations and policy rows, the runner derives a sample-specific field contract from the keys and record groups present in the ground-truth object structure. This is schema disclosure: the contract contains field and group names but no target values, target counts, or ground-truth files. The output shape is:
 
 \begingroup
 \small
@@ -161,67 +161,49 @@ For generic operations and policy rows, the agentic extraction script uses a fie
 
 \subsection*{A.5 Agentic Sandbox Instructions}
 
-The agentic regime uses the same output contract and scorer, but the transcript is provided as a sandbox file rather than inline prompt text. The following instructions are given to the sandbox agent for claim incident tasks; generic record tasks, including external loss-run rows, use the same structure with \path{output/records.json} and the allowed field list for the document family.
+The released Codex and Claude Code runners use the same task prompt. The temporary workspace contains only the OCR transcript, a field contract, the prompt, and an empty output directory. A macOS profile denies access to the benchmark repository, and the prompt prohibits using other host files. For claim tasks, the output path is \path{output/incidents.json}; generic tasks use \path{output/records.json}.
 
 \begingroup
 \small
 \begin{verbatim}
-You extract structured data from a document.
+You are dispatched as a subagent for a specific extraction task; skip
+superpowers skills.
 
-In your sandbox workspace:
-- Input:  docs/document_ocr.md - the OCR of one insurance loss-run document.
-- Output: output/incidents.json - write your result here.
+Your workspace contains:
+- document_ocr.md: OCR transcript of one benchmark PDF.
+- field_contract.md: the target output shape and allowed fields.
 
-You have a full Linux sandbox: you can run shell commands and Python, read,
-search, and slice files, install packages, and write files. The document may be
-large. How you approach the extraction is up to you - choose whatever you judge
-most reliable for this document.
+The official ground truth is not present. Do not use files outside this
+workspace.
 
-Goal: extract EVERY incident record from the document into output/incidents.json
-as a JSON object of the form {"incidents": [ ... ]}.
+Task:
+Extract the complete target list from document_ocr.md according to
+field_contract.md.
+Write valid JSON to output/incidents.json.
 
-Field requirements (per the schema below):
-- Every incident must include ALL fields in the schema.
-- Unknown values: required string fields -> "" ; optional fields -> null ;
-  list fields -> [] ; numeric fields -> 0.0.
-- Capture the underlying value only: strip OCR/markdown artifacts such as
-  surrounding *emphasis* markers or alignment padding.
+You may inspect the document, write temporary scripts, and verify counts.
+Before finishing:
+- Confirm the JSON parses.
+- Spot-check beginning, middle, and end records against the OCR.
+- Ensure field names match field_contract.md exactly.
+- Ensure every target row or target record type requested by the contract is
+  represented.
 
-Verify your output before finishing - do not trust a first pass:
-- Confirm you captured every record and none are missing or truncated.
-- Spot-check records from different parts of the document (beginning, middle,
-  and end), comparing every field against the source - not just the first few
-  records.
-- Each field must hold only its own value: no text belonging to a neighboring
-  field or label, and no value carried over from another record or from a
-  header.
-- Fix any mismatches you find, then re-check.
-- Ensure output/incidents.json is valid JSON that conforms to the schema.
-- When finished, also print the final JSON object once as a JSON code block.
-
-Schema (JSON Schema):
-{schema_json}
+Do not include explanations in the JSON file.
 \end{verbatim}
 \endgroup
 
-The task message for each run is:
-
-\begingroup
-\small
-\begin{verbatim}
-Extract all incidents from docs/document_ocr.md into output/incidents.json.
-\end{verbatim}
-\endgroup
+The field contract contains the claim JSON Schema or the generic record groups and allowed fields described in Appendix~A.4. It contains no record values or target counts.
 
 \subsection*{A.6 Field Scoring Rules}
 
-We compute schema-conformant, field-level precision/recall/F1 by canonicalizing records under the schema and comparing multisets of field-value pairs.
+We compute strict normalized-record completeness first, then schema-conformant field precision/recall/F1 as partial-credit diagnostics.
 
 \paragraph{Step 1: Canonicalize each incident (schema validation + normalization).}
 Both predictions and ground truth are parsed as full \texttt{LossRunIncident} objects and then normalized:
 \begin{itemize}
-    \item \textbf{Incident identifier}: we compute a normalized incident ID by stripping common prefixes from \texttt{incident\_number} (e.g., \texttt{Incident \#}, \texttt{\#}, \texttt{INC}) and trimming whitespace.
-    \item \textbf{String fields}: all strings are trimmed. For optional string fields, the empty string is treated as \texttt{null}. Optional string fields are:
+    \item \textbf{Incident identifier}: common prefixes in \path{incident_number} (e.g., \texttt{Incident \#}, \texttt{\#}, \texttt{INC}) are stripped; whitespace and case are normalized.
+    \item \textbf{String fields}: all strings are trimmed and compared case-insensitively. For optional string fields, the empty string is treated as \texttt{null}. Optional string fields are:
     \begin{itemize}
         \item \texttt{cause\_code}
         \item \texttt{unit\_number}
@@ -229,8 +211,9 @@ Both predictions and ground truth are parsed as full \texttt{LossRunIncident} ob
         \item \texttt{driver\_name}
         \item \texttt{adjuster\_notes}
     \end{itemize}
-    \item \textbf{Claimants}: coerced to a list; each entry is trimmed; empty entries are dropped; the list is sorted.
-    \item \textbf{Financial breakdowns}: for each breakdown object (\texttt{bi}, \texttt{pd}, \texttt{lae}, \texttt{ded}), we ensure it is an object and normalize each numeric field by converting to float, rounding to two decimals, and mapping negative zero to zero. Unparseable values are treated as 0.0. Breakdown numeric fields are:
+    \item \textbf{Dates}: supported date forms are normalized to \texttt{MM/DD/YYYY}.
+    \item \textbf{Claimants}: coerced to a list; each entry is trimmed and case-normalized; empty entries are dropped; the list is sorted.
+    \item \textbf{Financial breakdowns}: for each breakdown object (\texttt{bi}, \texttt{pd}, \texttt{lae}, \texttt{ded}), we ensure it is an object and normalize each numeric field by converting to float, rounding to two decimals, and mapping negative zero to zero. Unparseable values are treated as 0.0. Zero-valued default breakdown fields are not scored. Breakdown numeric fields are:
     \begin{itemize}
         \item \texttt{reserve}
         \item \texttt{paid}
@@ -239,10 +222,15 @@ Both predictions and ground truth are parsed as full \texttt{LossRunIncident} ob
     \end{itemize}
 \end{itemize}
 
-\paragraph{Step 2: Flatten incidents into a multiset of field-value pairs.}
+Generic records are canonicalized recursively. Blank fields are omitted; strings are whitespace-normalized and compared case-insensitively; dates, decimals, percentages, currency values, and accounting-parenthesis negatives are canonicalized; and list values are order-normalized. State and jurisdiction names normalize to two-letter codes, fuel descriptions to parenthetical codes, policy line-of-business names to BOP/WC/CGL acronyms, and \texttt{Applies within} clause-scope wrappers to the core scope phrase. Records are matched greedily by overlapping non-global field pairs for field diagnostics. The \path{record_type} field, hidden row identifiers, and repeated document-level policy fields are excluded from field matching and field-pair scoring. Strict exact-record comparison uses the complete normalized public record.
+
+\paragraph{Step 2: Compare complete normalized records.}
+Let $R_G$ and $R_P$ be multisets of normalized ground-truth and predicted records. Exact-record recall is $|R_G \cap R_P|/|R_G|$. A document is complete only when $R_G=R_P$, so missing records, extra records, wrong fields, and duplicate multiplicity all affect strict completeness. Record-list order is not scored in this release.
+
+\paragraph{Step 3: Flatten incidents into a multiset of field-value pairs.}
 For each canonicalized incident, we emit a list of triples (\path{incident_id}, \path{field_path}, \path{value}). Nested financial fields are represented with dotted paths (e.g., \path{bi.reserve}).
 
-\paragraph{Step 3: Compare using multiset intersection (supports duplicates).}
+\paragraph{Step 4: Compute partial-credit field diagnostics.}
 Let $\mathcal{F}(G)$ be the multiset of flattened triples from the ground truth and $\mathcal{F}(P)$ the multiset from predictions. We compute
 \begin{align}
 \mathrm{found} &= |\mathcal{F}(G) \cap \mathcal{F}(P)|,\\
@@ -256,5 +244,6 @@ The multiset formulation means that if a document contains exact duplicate incid
 We also report:
 \begin{itemize}
     \item \textbf{Missing/extra incident IDs}: computed from the set of normalized incident IDs present in each list.
-    \item \textbf{Exact record matches}: the number of fully-matching incident objects, computed as a multiset intersection over canonicalized incident JSON objects grouped by incident ID.
+    \item \textbf{Exact-record precision and $F_1$}: computed from the same normalized-record intersection when systems over-extract.
+    \item \textbf{Evaluation-role and stressor slices}: aggregated from the public family and problem metadata.
 \end{itemize}

@@ -1,6 +1,6 @@
 LongListBench is a measurement tool for long-list extraction under controlled synthetic conditions. Table~\ref{tab:benchmark-scope} summarizes the current scope.
 
-\begin{table}[t]
+\begin{table}[H]
 \centering
 \caption{Scope of the current LongListBench release.}
 \label{tab:benchmark-scope}
@@ -11,8 +11,8 @@ Covered & Not covered / out of scope \\
 High-density repeated lists, cross-section joins, long-range evidence packets, and mixed-schema output lists & Non-English documents, handwriting, medical bills, invoices, purchase orders, and many other document families \\
 Production-like synthetic layouts based on observed document structures & Full visual diversity of private production corpora and carrier-specific edge cases \\
 OCR transcripts for every released PDF, including a limited scanned-image IFTA condition & Multiple OCR engines, broad scan-quality sweeps, bounding boxes, and reading-order supervision \\
-Field-level scoring for claim incidents and generic record lists & Semantic equivalence scoring, downstream task metrics, and human adjudication of ambiguous fields \\
-Agentic sandbox support and one full-corpus OCR baseline & Latency/cost-normalized comparisons across multiple agentic and retrieval-loop protocols \\
+Strict normalized-record completeness plus field diagnostics & Source-order scoring, semantic equivalence, downstream task metrics, and human adjudication of ambiguous fields \\
+Agentic sandbox support and two full-corpus OCR baselines & Latency/cost-normalized comparisons across broader agentic and retrieval-loop protocols \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -21,10 +21,16 @@ The documents are synthetic. This is necessary for public release, but it means 
 
 The current release includes one OCR transcript condition. This supports reproducible OCR-conditioned evaluation, but it does not isolate OCR penalty by itself. Measuring OCR penalty requires adding another transcript or direct-PDF condition and running the same extraction protocol across both.
 
+The released output contract treats records as an unordered multiset. Exact-record and complete-document metrics therefore test values and multiplicity, not source order. An order-sensitive task should declare ordering in the contract and rerun extractors under that requirement rather than retroactively penalizing the saved predictions.
+
+The coding-agent runs denied access to the benchmark repository but did not use a host-wide filesystem allowlist. Ground truth remained inside the denied repository. Future comparisons should use an allowlisted container or virtual machine and retain tool traces; the Claude result format did not include them.
+
 OCR support should also be interpreted at the field level. A unique-identifier coverage check can look strong while a missing section header affects many records that inherit that header. The current validation reports unique identifier coverage, affected records for tracked identifiers, and a numeric-fidelity gate over ground-truth numeric values with absolute value at least 10. Richer future releases should extend this with row-local OCR checks and multiple OCR engines.
 
 Finally, the corpus now contains several operations record types whose public schema is represented by the ground-truth examples and generic scorer rather than separate hand-written JSON Schema files for every family. Adding explicit schemas for each operations family would improve reproducibility for prompt-based and agentic extractors.
 
-The intended use of LongListBench is regime-aware measurement. It should be used to compare extraction systems on record completeness, field alignment, OCR-conditioned robustness, and long-range evidence handling. We recommend reporting results separately for core operations, claim multi-hop, and policy packet configs, rather than relying only on an aggregate score. Parser-friendly operations families should be interpreted as scale and completeness controls; they are useful for sanity checks, but benchmark claims about hard document extraction should come from per-document protocols on the packet and cross-section regimes.
+LongListBench is intended for configuration-, family-, and stressor-aware measurement of record completeness, field alignment, OCR-conditioned extraction, and long-range evidence handling. Parser-friendly operations families are scale controls; claims about difficult extraction should rely on packet and cross-section families as well as aggregate scores.
 
-LongListBench should not be read as a complete model leaderboard. The current release includes one full-corpus OCR-conditioned Codex CLI \texttt{gpt-5.5} sandbox baseline with xhigh reasoning, but it does not include a latency/cost-normalized comparison across multiple models and extraction protocols. Full-context one-shot prompting is not a practical full-corpus protocol for the largest documents because output length and latency become limiting factors. The benchmark should also not be treated as a substitute for private production evaluation, since synthetic public documents cannot cover the full visual and linguistic diversity of real carrier packets.
+Complexity slices are observational. Tags overlap, and document families differ in length, schema, and layout, so lower performance in a tagged slice does not identify one stressor as the cause. Paired renderings that hold records constant while adding one stressor would be required for causal attribution.
+
+The release is not a complete model leaderboard. It includes full-corpus Codex CLI \texttt{gpt-5.5} and Claude Code \texttt{opus-4-8} baselines under one agentic protocol, but no latency- or cost-normalized comparison across broader models and protocols. Full-context one-shot runs are impractical on the largest outputs, and synthetic public documents cannot replace private production evaluation.

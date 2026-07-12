@@ -1,0 +1,46 @@
+name: Tests
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: >-
+          pip install pytest
+          -r benchmarks/requirements.txt
+          -r benchmarks/requirements-hf.txt
+
+      - name: Run tests
+        run: python -m pytest -q
+
+      - name: Verify released Codex evaluation report
+        run: >-
+          python benchmarks/check_evaluation_report.py
+          --results-dir benchmarks/results/codex_full_current_ocr_v2
+
+      - name: Verify released Claude evaluation report
+        run: >-
+          python benchmarks/check_evaluation_report.py
+          --results-dir benchmarks/results/claude_opus48_full_current_ocr_v2
+
+      - name: Verify OCR identifier coverage
+        run: python benchmarks/validate_ocr_vs_golden.py --claims-dir data
+
+      - name: Verify OCR numeric fidelity
+        run: python benchmarks/validate_ocr_numeric_fidelity.py --claims-dir data

@@ -11,8 +11,18 @@ from collections import Counter
 from pathlib import Path
 from typing import Any
 
+try:
+    from .evaluation_roles import SCALE_CONTROL_REGIMES, evaluation_role
+except ImportError:
+    from evaluation_roles import SCALE_CONTROL_REGIMES, evaluation_role
+
 
 DEFAULT_REPO_ID = "kaydotai/LongListBench"
+DEFAULT_BASELINE_REPORTS = (
+    Path(__file__).resolve().parent / "results" / "codex_full_current_ocr_v2" / "evaluation_report.json",
+    Path(__file__).resolve().parent / "results" / "claude_opus48_full_current_ocr_v2" / "evaluation_report.json",
+)
+DEFAULT_BASELINE_REPORT = DEFAULT_BASELINE_REPORTS[0]
 CONFIG_ORDER = ("core_operations", "claim_multihop", "policy_packets")
 CONFIG_DESCRIPTIONS = {
     "core_operations": "30 production-like commercial insurance and trucking-operation PDFs with dense repeated operations, IFTA, and loss-run records.",
@@ -21,6 +31,32 @@ CONFIG_DESCRIPTIONS = {
 }
 
 CLAIM_TARGET_TYPES = {"loss_run_incident"}
+BASELINE_MODEL_KEY = "codex_gpt55"
+BASELINE_PRESENTATIONS = {
+    "codex_gpt55": {
+        "label": "Codex CLI `gpt-5.5`, xhigh reasoning",
+        "family_label": "Codex exact records",
+        "description": "Codex CLI invoked `gpt-5.5` with xhigh reasoning",
+    },
+    "claude_opus48": {
+        "label": "Claude Code CLI `claude-opus-4-8`, xhigh effort",
+        "family_label": "Claude exact records",
+        "description": "Claude Code CLI invoked `claude-opus-4-8` with xhigh effort",
+    },
+}
+BASELINE_REGIMES = (
+    ("ifta_multisection_return_packet", "IFTA multisection return packet"),
+    ("driver_mvr_request_and_roster", "Driver/MVR request and roster"),
+    ("policy_multi_hop", "Policy multi-hop"),
+    ("claim_crosspage_multihop", "Claim cross-page multi-hop"),
+    ("ifta_return_schedule_details", "IFTA return schedule details"),
+    ("loss_run_external", "External loss run"),
+    ("ifta_tax_return_inquiry_detail", "IFTA tax return inquiry detail"),
+    ("ifta_tax_return_summary", "IFTA tax return summary"),
+    ("driver_schedule_spreadsheet_export", "Driver schedule spreadsheet export"),
+    ("ifta_mileage_by_vehicle", "IFTA mileage by vehicle"),
+    ("vehicle_schedule_spreadsheet_export", "Vehicle schedule spreadsheet export"),
+)
 
 
 def read_json(path: Path) -> Any:
@@ -120,6 +156,7 @@ def row_for_instance(dataset_dir: Path, instance: dict[str, Any]) -> dict[str, A
 
     normalized_domain = instance_domain(instance)
     normalized_target_field = target_field(instance)
+    complexity_regime = str(instance.get("complexity_regime") or instance.get("difficulty") or "")
     metadata = {
         "manifest_instance": instance,
         "source_files": instance.get("files", {}),
@@ -130,7 +167,8 @@ def row_for_instance(dataset_dir: Path, instance: dict[str, Any]) -> dict[str, A
     return {
         "document_id": sid,
         "domain": normalized_domain,
-        "complexity_regime": str(instance.get("complexity_regime") or instance.get("difficulty") or ""),
+        "complexity_regime": complexity_regime,
+        "evaluation_role": evaluation_role(complexity_regime),
         "difficulty": str(instance.get("difficulty") or ""),
         "document_format": str(instance.get("format") or ""),
         "num_pages": page_count(instance),
@@ -175,6 +213,166 @@ def summarize_rows(rows_by_config: dict[str, list[dict[str, Any]]]) -> dict[str,
     return summary
 
 
+def load_release_baseline(
+    report_path: Path,
+    dataset_dir: Path,
+    model_key: str | None = None,
+) -> dict[str, Any]:
+    """Load the released baseline and verify that it targets this manifest."""
+    report = read_json(report_path)
+    provenance = report.get("dataset") or {}
+    expected_manifest_hash = sha256_file(dataset_dir / "manifest.json")
+    if provenance.get("manifest_sha256") != expected_manifest_hash:
+        raise ValueError(
+            "Baseline report manifest hash does not match the dataset being exported: "
+            f"{report_path}"
+        )
+
+    all_model_stats = report.get("model_stats") or {}
+    if model_key is None:
+        if len(all_model_stats) != 1:
+            raise ValueError(
+                f"Baseline report must contain exactly one model or specify model_key: {report_path}"
+            )
+        model_key = next(iter(all_model_stats))
+    model_stats = all_model_stats.get(model_key)
+    if not isinstance(model_stats, dict):
+        raise ValueError(f"Baseline report is missing model_stats.{model_key}: {report_path}")
+    if model_key not in BASELINE_PRESENTATIONS:
+        raise ValueError(f"No dataset-card presentation is registered for baseline model {model_key}")
+
+    return {
+        "report_path": report_path,
+        "report": report,
+        "model_stats": model_stats,
+        "model_key": model_key,
+        "presentation": BASELINE_PRESENTATIONS[model_key],
+    }
+
+
+def _baseline_list(
+    baselines: dict[str, Any] | list[dict[str, Any]] | tuple[dict[str, Any], ...] | None,
+) -> list[dict[str, Any]]:
+    if baselines is None:
+        return []
+    if isinstance(baselines, dict):
+        return [baselines]
+    return list(baselines)
+
+
+def _baseline_section(
+    baselines: dict[str, Any] | list[dict[str, Any]] | tuple[dict[str, Any], ...] | None,
+) -> str:
+    baseline_list = _baseline_list(baselines)
+    if not baseline_list:
+        return ""
+
+    overall_rows = []
+    for baseline in baseline_list:
+        stats = baseline["model_stats"]
+        presentation = baseline.get("presentation") or BASELINE_PRESENTATIONS[BASELINE_MODEL_KEY]
+        overall_rows.append(
+            f"| {presentation['label']} | {stats['total_samples']} | {stats['total_rows']:,} | "
+            f"{stats['errors']} | {stats['exact_record_recall']:.1%} | "
+            f"{stats['complete_documents']}/{stats['total_samples']} ({stats['complete_document_rate']:.1%}) | "
+            f"{stats['weighted_f1']:.1%} |"
+        )
+
+    family_headers = [
+        (baseline.get("presentation") or BASELINE_PRESENTATIONS[BASELINE_MODEL_KEY])["family_label"]
+        for baseline in baseline_list
+    ]
+    regime_rows = []
+    for regime_key, label in BASELINE_REGIMES:
+        regimes = []
+        for baseline in baseline_list:
+            regime = (baseline["model_stats"].get("by_complexity_regime") or {}).get(regime_key)
+            if not isinstance(regime, dict):
+                raise ValueError(f"Baseline report is missing document-family metrics: {regime_key}")
+            regimes.append(regime)
+        first_regime = regimes[0]
+        if any(
+            regime["count"] != first_regime["count"] or regime["rows"] != first_regime["rows"]
+            for regime in regimes[1:]
+        ):
+            raise ValueError(f"Baseline reports disagree on document-family coverage: {regime_key}")
+        regime_rows.append(
+            f"| {label} | "
+            f"{'Scale control' if regime_key in SCALE_CONTROL_REGIMES else 'Structural challenge'} | "
+            f"{first_regime['count']} | {first_regime['rows']:,} | "
+            + " | ".join(f"{regime['exact_record_recall']:.1%}" for regime in regimes)
+            + " |"
+        )
+
+    role_rows = []
+    for role_key, role_label in (
+        ("structural_challenge", "Structural challenges"),
+        ("scale_control", "Scale controls"),
+    ):
+        role_stats = []
+        for baseline in baseline_list:
+            role = (baseline["model_stats"].get("by_evaluation_role") or {}).get(role_key)
+            if not isinstance(role, dict):
+                raise ValueError(f"Baseline report is missing evaluation-role metrics: {role_key}")
+            role_stats.append(role)
+        first_role = role_stats[0]
+        if any(
+            role["count"] != first_role["count"] or role["rows"] != first_role["rows"]
+            for role in role_stats[1:]
+        ):
+            raise ValueError(f"Baseline reports disagree on evaluation-role coverage: {role_key}")
+        role_rows.append(
+            f"| {role_label} | {first_role['count']} | {first_role['rows']:,} | "
+            + " | ".join(f"{role['exact_record_recall']:.1%}" for role in role_stats)
+            + " |"
+        )
+
+    descriptions = "; ".join(
+        (baseline.get("presentation") or BASELINE_PRESENTATIONS[BASELINE_MODEL_KEY])["description"]
+        for baseline in baseline_list
+    )
+    result_dir_names = [
+        Path(baseline["report_path"]).parent.name
+        if baseline.get("report_path")
+        else (
+            "claude_opus48_full_current_ocr_v2"
+            if baseline.get("model_key") == "claude_opus48"
+            else "codex_full_current_ocr_v2"
+        )
+        for baseline in baseline_list
+    ]
+    links = " and ".join(
+        f"[{name}](./evaluation/{name}/)" for name in result_dir_names
+    )
+    return f"""## Current Baseline
+
+The release includes {len(baseline_list)} full-corpus OCR-conditioned agentic baseline{'s' if len(baseline_list) != 1 else ''}. {descriptions}. For each document, the runner created a temporary workspace containing the OCR transcript, field contract, prompt, and output directory. A macOS sandbox profile denied access to the benchmark repository, and the prompt prohibited using files outside the workspace. This was repository isolation, not a host-wide filesystem allowlist. Target values, target counts, ground-truth files, and generator code were not copied into the workspace. For generic records, the workspace did include a sample-specific field contract containing public field names and record groups derived from ground-truth object structure.
+
+Strict completeness on the released OCR transcripts:
+
+| Protocol | Documents | Target records | Errors | Exact-record recall | Complete documents | Field micro-F1 |
+|---|---:|---:|---:|---:|---:|---:|
+{chr(10).join(overall_rows)}
+
+An exact record must match every normalized target field. A complete document must contain exactly the gold record multiset, with no missing or extra records. Record order is not scored. Field micro-F1 is retained as a secondary partial-credit diagnostic.
+
+The release distinguishes parser-friendly scale controls from structural challenges:
+
+| Evaluation role | Documents | Target records | {' | '.join(family_headers)} |
+|---|---:|---:|{'|'.join(['---:'] * len(family_headers))}|
+{chr(10).join(role_rows)}
+
+Exact-record recall by document family shows why aggregate scores should not be interpreted alone:
+
+| Document family | Evaluation role | Documents | Target records | {' | '.join(family_headers)} |
+|---|---|---:|---:|{'|'.join(['---:'] * len(family_headers))}|
+{chr(10).join(regime_rows)}
+
+The saved predictions and reports in {links} allow the metrics to be recomputed without rerunning the models. Full-context raw-API prompting remains a lower-bound stress test rather than a practical full-corpus protocol because large outputs can hit output or latency limits. The repository also includes raw OpenAI API and OpenAI Agents SDK adapters for future protocol comparisons on this release.
+
+"""
+
+
 def write_parquet_export(rows_by_config: dict[str, list[dict[str, Any]]], output_dir: Path) -> None:
     try:
         from datasets import Dataset, Features, Pdf, Sequence, Value
@@ -189,6 +387,7 @@ def write_parquet_export(rows_by_config: dict[str, list[dict[str, Any]]], output
             "document_id": Value("string"),
             "domain": Value("string"),
             "complexity_regime": Value("string"),
+            "evaluation_role": Value("string"),
             "difficulty": Value("string"),
             "document_format": Value("string"),
             "num_pages": Value("int32"),
@@ -226,7 +425,50 @@ def write_metadata_files(dataset_dir: Path, output_dir: Path) -> None:
         shutil.copy2(schema_path, schema_dir / schema_path.name)
 
 
-def dataset_card(repo_id: str, summary: dict[str, dict[str, Any]]) -> str:
+def write_evaluation_files(
+    baselines: dict[str, Any] | list[dict[str, Any]] | tuple[dict[str, Any], ...],
+    output_dir: Path,
+) -> None:
+    for baseline in _baseline_list(baselines):
+        _write_evaluation_files_for_baseline(baseline, output_dir)
+
+
+def _write_evaluation_files_for_baseline(baseline: dict[str, Any], output_dir: Path) -> None:
+    report_path = Path(baseline["report_path"])
+    report = baseline["report"]
+    results_dir = report_path.parent
+    target_dir = output_dir / "evaluation" / results_dir.name
+    target_dir.mkdir(parents=True, exist_ok=True)
+
+    detailed_results = report.get("detailed_results") or []
+    status_lines = ["sample\tstatus"]
+    for entry in detailed_results:
+        status_lines.append(f"{entry['sample']}\t{1 if entry.get('error') else 0}")
+        if entry.get("error"):
+            continue
+        prediction = results_dir / (
+            f"{entry['sample']}_{entry.get('transcript', 'ocr')}_{entry['model']}_predicted.json"
+        )
+        if not prediction.exists():
+            raise FileNotFoundError(f"Missing released baseline prediction: {prediction}")
+        shutil.copy2(prediction, target_dir / prediction.name)
+
+    (target_dir / "per_sample_status.tsv").write_text(
+        "\n".join(status_lines) + "\n",
+        encoding="utf-8",
+    )
+
+    for filename in ("README.md", "evaluation_report.json", "evaluation_report.md", "run_metadata.json"):
+        source = results_dir / filename
+        if source.exists():
+            shutil.copy2(source, target_dir / source.name)
+
+
+def dataset_card(
+    repo_id: str,
+    summary: dict[str, dict[str, Any]],
+    baseline: dict[str, Any] | list[dict[str, Any]] | None = None,
+) -> str:
     config_yaml = "\n".join(
         [
             f"- config_name: {config_name}\n"
@@ -251,6 +493,7 @@ def dataset_card(repo_id: str, summary: dict[str, dict[str, Any]]) -> str:
     total_rows = sum(item["rows"] for item in summary.values())
     total_targets = sum(item["targets"] for item in summary.values())
     total_targets_text = f"{total_targets:,}"
+    baseline_section = _baseline_section(baseline)
 
     return f"""---
 pretty_name: LongListBench
@@ -294,6 +537,7 @@ LongListBench differs from array-only extraction datasets by explicitly tracking
 | Tag | Meaning |
 |---|---|
 | `page_breaks` | Lists or supporting evidence continue across pages with repeated headers or inherited context. |
+| `split_records` | One target record has fields in separate visual blocks, sections, or pages and must be assembled. |
 | `multi_row` | Records include wrapped notes, descriptions, clauses, or continuation rows. |
 | `duplicates` | Prior-term, archived, duplicate, or near-duplicate distractor material is present. |
 | `large_doc` | The document is long enough to stress truncation and record-completeness behavior. |
@@ -307,7 +551,7 @@ LongListBench differs from array-only extraction datasets by explicitly tracking
 | `repeated_keys` | Common keys such as states or jurisdictions repeat across sections or returns, so the key alone is insufficient for matching. |
 | `heterogeneous_record_list` | A target list contains several record schemas, especially in policy packets. |
 
-The stressor labels are metadata labels, not text printed inside the PDFs. The PDFs are designed to remain realistic source documents.
+These 14 tags are the canonical taxonomy. The manifest contains 45 distinct `problems` tokens because it also retains finer domain and implementation tags for auditing. Labels are metadata, not text printed inside the PDFs.
 
 The mapping is intended to be visually auditable:
 
@@ -341,7 +585,8 @@ print(ds)  # each row is one PDF document
 |---|---|---|
 | `document_id` | string | Stable sample identifier, e.g. `ifta_mileage_by_vehicle_001` or `multihop_bop_012_001`. |
 | `domain` | string | `commercial_insurance_operations`, `claims`, or `policy_review`. |
-| `complexity_regime` | string | Template or stress regime, such as `ifta_mileage_by_vehicle`, `loss_run_external`, `claim_crosspage_multihop`, or `policy_multi_hop`. |
+| `complexity_regime` | string | Document family, such as `ifta_mileage_by_vehicle`, `loss_run_external`, `claim_crosspage_multihop`, or `policy_multi_hop`. |
+| `evaluation_role` | string | Preassigned interpretation role: `scale_control` or `structural_challenge`. |
 | `difficulty` | string | Historical field retained for compatibility; in this release it stores the template or multi-hop regime. |
 | `document_format` | string | Rendered layout family, currently `production_like_pdf` or `crosspage`. |
 | `num_pages` | int32 | Page count recorded by the generator. |
@@ -381,17 +626,17 @@ with open(f"{{row['document_id']}}.pdf", "wb") as f:
 
 ## Canonical Scoring
 
-The source repository includes the reference evaluator in `benchmarks/evaluation_metrics.py`. Scores are computed over field-value pairs, not just record counts.
+The source repository includes the reference evaluator in `benchmarks/evaluation_metrics.py`. Strict normalized-record completeness is primary; field-value overlap is a secondary diagnostic.
 
 ### Method
 
 1. **Shape.** Run your extractor on each PDF or transcript and return an object matching `ground_truth`: `{{"incidents": [...]}}` for claim multi-hop rows or `{{"records": [...]}}` for all other list families. A bare list is also accepted by the repository evaluator.
-2. **Claims matching.** Claim multi-hop incident rows are keyed by normalized `incident_number`. Dates are normalized to `MM/DD/YYYY`, claimant lists are sorted, zero-valued default financial-breakdown cells are not scored, and non-zero financial breakdowns are rounded to cents. Each flattened `(incident_number, field_path, value)` tuple is one scored field-value pair.
-3. **Generic record matching.** Operations, external loss-run, and policy rows are heterogeneous. The evaluator greedily matches records using overlapping non-global field pairs, then scores flattened field-value pairs. `record_type` and hidden row identifiers are not required for matching or scoring.
-4. **Metrics.** Recall is `found_gold_field_pairs / total_gold_field_pairs`. Precision is `found_field_pairs / total_pred_field_pairs`. F1 is the harmonic mean. Missing records reduce recall; extra predicted fields or records reduce precision.
-5. **Aggregation.** Reports include per-document metrics plus corpus-level micro scores over all field-value pairs. Always report `predicted_count` beside F1 because long-list failures often show up as truncation or over-extraction.
+2. **Claims matching.** Claim multi-hop incident rows are keyed by normalized `incident_number`. Strings are compared case-insensitively, dates are normalized to `MM/DD/YYYY`, claimant lists are sorted, zero-valued default financial-breakdown cells are omitted from field diagnostics, and non-zero financial breakdowns are rounded to cents. Each flattened `(incident_number, field_path, value)` tuple is one field-value diagnostic.
+3. **Generic record matching.** Operations, external loss-run, and policy rows are heterogeneous. Strings are whitespace-normalized and compared case-insensitively; dates, decimals, percentages, currency, and accounting negatives are canonicalized. Unambiguous domain labels also normalize to the published target form: region names to codes, fuel descriptions to parenthetical codes, line-of-business names to acronyms, and visible `Applies within` wrappers to their core clause scope. For field diagnostics, the evaluator greedily matches records using overlapping non-global field pairs. `record_type`, hidden row identifiers, and repeated document-level policy fields are excluded from field matching and field-pair scoring, but strict comparison uses the complete normalized public record.
+4. **Strict completeness.** An exact record must match every normalized target field. Exact-record recall is `exact_record_matches / ground_truth_count`. A document is complete only when the normalized predicted and ground-truth record multisets are identical, including duplicate multiplicity and with no extra records. Record order is not scored in this release.
+5. **Field diagnostics.** Field recall is `found_gold_field_pairs / total_gold_field_pairs`; precision is `found_field_pairs / total_pred_field_pairs`; F1 is their harmonic mean. Reports retain document-macro and corpus-micro field F1 to show partial correctness, but these are not substitutes for complete-list recovery.
 
-Official scoring uses the repository evaluator. Use it directly rather than copying an abbreviated scorer into another project; the evaluator contains the canonical date, decimal, accounting-negative, list, global-field, and heterogeneous-record normalization rules.
+Official scoring uses the repository evaluator. Use it directly rather than copying an abbreviated scorer into another project; the evaluator contains the canonical case, date, decimal, accounting-negative, list, global-field, and heterogeneous-record normalization rules.
 
 ```python
 import json
@@ -416,36 +661,15 @@ for row in ds.remove_columns("pdf"):
         if uses_record_evaluator(gold_rows)
         else evaluate_extraction(pred_rows, gold_rows)
     )
-    print(row["document_id"], metrics["f1"], metrics["recall"], metrics["precision"])
+    print(
+        row["document_id"],
+        metrics["exact_record_recall"],
+        metrics["complete_document"],
+        metrics["f1"],
+    )
 ```
 
-## Current Baseline
-
-The repository includes one full-corpus OCR-conditioned agentic baseline. It is a protocol baseline, not a raw one-shot model score: each run gives a Codex/xhigh sandbox agent one OCR transcript and the public field contract, without ground-truth access, and allows it to inspect the document, write temporary code, validate JSON, and return the complete list.
-
-Overall result on the released OCR transcripts:
-
-| Protocol | Documents | Target records | Errors | Micro-F1 | Recall | Precision |
-|---|---:|---:|---:|---:|---:|---:|
-| Codex/xhigh sandbox agent | 36 | 33,450 | 0 | 97.8% | 96.9% | 98.7% |
-
-Regime slices show why aggregate scores should not be interpreted alone:
-
-| Regime | Documents | Target records | Micro-F1 |
-|---|---:|---:|---:|
-| Driver schedule spreadsheet export | 1 | 500 | 87.7% |
-| Driver/MVR request and roster | 3 | 1,260 | 89.1% |
-| IFTA multisection return packet | 2 | 796 | 91.1% |
-| Policy multi-hop | 3 | 1,489 | 92.8% |
-| Claim cross-page multi-hop | 3 | 77 | 97.1% |
-| External loss run | 3 | 900 | 97.2% |
-| IFTA return schedule details | 5 | 4,923 | 98.0% |
-| IFTA tax return inquiry detail | 2 | 1,300 | 99.4% |
-| IFTA tax return summary | 4 | 3,040 | 99.6% |
-| IFTA mileage by vehicle | 8 | 17,565 | 100.0% |
-| Vehicle schedule spreadsheet export | 2 | 1,600 | 100.0% |
-
-Full-context one-shot prompting is useful as a lower-bound stress test, but it is not a practical full-corpus protocol for this release. Larger documents can hit model output limits or latency timeouts before returning a scoreable complete list.
+{baseline_section}
 
 ## Schemas
 
@@ -503,8 +727,16 @@ LongListBench is intended for measuring long-list, layout, OCR-conditioned, and 
 """
 
 
-def write_dataset_card(output_dir: Path, repo_id: str, summary: dict[str, dict[str, Any]]) -> None:
-    (output_dir / "README.md").write_text(dataset_card(repo_id, summary), encoding="utf-8")
+def write_dataset_card(
+    output_dir: Path,
+    repo_id: str,
+    summary: dict[str, dict[str, Any]],
+    baseline: dict[str, Any] | list[dict[str, Any]],
+) -> None:
+    (output_dir / "README.md").write_text(
+        dataset_card(repo_id, summary, baseline),
+        encoding="utf-8",
+    )
 
 
 def upload_to_hub(output_dir: Path, repo_id: str) -> None:
@@ -530,6 +762,13 @@ def parse_args() -> argparse.Namespace:
         help="Output directory for the Hugging Face dataset package.",
     )
     parser.add_argument("--repo-id", default=DEFAULT_REPO_ID, help="Target Hugging Face dataset repo ID.")
+    parser.add_argument(
+        "--baseline-report",
+        type=Path,
+        nargs="+",
+        default=list(DEFAULT_BASELINE_REPORTS),
+        help="Released evaluation report(s) used to populate and package dataset-card baselines.",
+    )
     parser.add_argument("--overwrite", action="store_true", help="Remove the output directory before writing.")
     parser.add_argument("--upload", action="store_true", help="Upload the generated package to Hugging Face Hub.")
     return parser.parse_args()
@@ -547,9 +786,11 @@ def main() -> None:
 
     rows_by_config = build_config_rows(dataset_dir)
     summary = summarize_rows(rows_by_config)
+    baselines = [load_release_baseline(path, dataset_dir) for path in args.baseline_report]
     write_parquet_export(rows_by_config, output_dir)
     write_metadata_files(dataset_dir, output_dir)
-    write_dataset_card(output_dir, args.repo_id, summary)
+    write_evaluation_files(baselines, output_dir)
+    write_dataset_card(output_dir, args.repo_id, summary, baselines)
 
     print(json.dumps({"output": str(output_dir), "repo_id": args.repo_id, "configs": summary}, indent=2))
     if args.upload:

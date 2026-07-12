@@ -1,0 +1,3896 @@
+[
+  {
+    "field": "jurisdiction row 1",
+    "page": "2",
+    "section": "Schedule B Detail",
+    "value": "AL 1,000 miles"
+  },
+  {
+    "field": "jurisdiction row 2",
+    "page": "2",
+    "section": "Schedule B Detail",
+    "value": "AZ 1,017 miles"
+  },
+  {
+    "field": "jurisdiction row 3",
+    "page": "2",
+    "section": "Schedule B Detail",
+    "value": "AR 1,034 miles"
+  },
+  {
+    "field": "jurisdiction row 4",
+    "page": "2",
+    "section": "Schedule B Detail",
+    "value": "CA 1,051 miles"
+  },
+  {
+    "field": "jurisdiction row 5",
+    "page": "2",
+    "section": "Schedule B Detail",
+    "value": "CO 1,068 miles"
+  },
+  {
+    "field": "jurisdiction row 6",
+    "page": "2",
+    "section": "Schedule B Detail",
+    "value": "CT 1,085 miles"
+  },
+  {
+    "field": "jurisdiction row 7",
+    "page": "2",
+    "section": "Schedule B Detail",
+    "value": "DE 1,102 miles"
+  },
+  {
+    "field": "jurisdiction row 8",
+    "page": "2",
+    "section": "Schedule B Detail",
+    "value": "FL 1,119 miles"
+  },
+  {
+    "field": "jurisdiction row 9",
+    "page": "2",
+    "section": "Schedule B Detail",
+    "value": "GA 1,136 miles"
+  },
+  {
+    "field": "jurisdiction row 10",
+    "page": "2",
+    "section": "Schedule B Detail",
+    "value": "ID 1,153 miles"
+  },
+  {
+    "field": "jurisdiction row 11",
+    "page": "2",
+    "section": "Schedule B Detail",
+    "value": "IL 1,170 miles"
+  },
+  {
+    "field": "jurisdiction row 12",
+    "page": "2",
+    "section": "Schedule B Detail",
+    "value": "IN 1,187 miles"
+  },
+  {
+    "field": "jurisdiction row 13",
+    "page": "2",
+    "section": "Schedule B Detail",
+    "value": "IA 1,204 miles"
+  },
+  {
+    "field": "jurisdiction row 14",
+    "page": "2",
+    "section": "Schedule B Detail",
+    "value": "KS 1,221 miles"
+  },
+  {
+    "field": "jurisdiction row 15",
+    "page": "2",
+    "section": "Schedule B Detail",
+    "value": "KY 1,238 miles"
+  },
+  {
+    "field": "jurisdiction row 16",
+    "page": "2",
+    "section": "Schedule B Detail",
+    "value": "LA 1,255 miles"
+  },
+  {
+    "field": "jurisdiction row 17",
+    "page": "2",
+    "section": "Schedule B Detail",
+    "value": "MD 1,272 miles"
+  },
+  {
+    "field": "jurisdiction row 18",
+    "page": "2",
+    "section": "Schedule B Detail",
+    "value": "MI 1,289 miles"
+  },
+  {
+    "field": "jurisdiction row 19",
+    "page": "2",
+    "section": "SCHEDULE B DETAIL",
+    "value": "MN 1,306 miles"
+  },
+  {
+    "field": "jurisdiction row 20",
+    "page": "2",
+    "section": "SCHEDULE B DETAIL",
+    "value": "MS 1,323 miles"
+  },
+  {
+    "field": "jurisdiction row 21",
+    "page": "2",
+    "section": "SCHEDULE B DETAIL",
+    "value": "MO 1,340 miles"
+  },
+  {
+    "field": "jurisdiction row 22",
+    "page": "2",
+    "section": "SCHEDULE B DETAIL",
+    "value": "MT 1,357 miles"
+  },
+  {
+    "field": "jurisdiction row 23",
+    "page": "2",
+    "section": "SCHEDULE B DETAIL",
+    "value": "NE 1,374 miles"
+  },
+  {
+    "field": "jurisdiction row 24",
+    "page": "2",
+    "section": "SCHEDULE B DETAIL",
+    "value": "NV 1,391 miles"
+  },
+  {
+    "field": "jurisdiction row 25",
+    "page": "2",
+    "section": "SCHEDULE B DETAIL",
+    "value": "NJ 1,408 miles"
+  },
+  {
+    "field": "jurisdiction row 26",
+    "page": "2",
+    "section": "SCHEDULE B DETAIL",
+    "value": "NM 1,425 miles"
+  },
+  {
+    "field": "jurisdiction row 27",
+    "page": "2",
+    "section": "SCHEDULE B DETAIL",
+    "value": "NY 1,442 miles"
+  },
+  {
+    "field": "jurisdiction row 28",
+    "page": "2",
+    "section": "SCHEDULE B DETAIL",
+    "value": "NC 1,459 miles"
+  },
+  {
+    "field": "jurisdiction row 29",
+    "page": "2",
+    "section": "SCHEDULE B DETAIL",
+    "value": "ND 1,476 miles"
+  },
+  {
+    "field": "jurisdiction row 30",
+    "page": "2",
+    "section": "SCHEDULE B DETAIL",
+    "value": "OH 1,493 miles"
+  },
+  {
+    "field": "jurisdiction row 31",
+    "page": "2",
+    "section": "SCHEDULE B DETAIL",
+    "value": "OK 1,510 miles"
+  },
+  {
+    "field": "jurisdiction row 32",
+    "page": "2",
+    "section": "SCHEDULE B DETAIL",
+    "value": "OR 1,527 miles"
+  },
+  {
+    "field": "jurisdiction row 33",
+    "page": "2",
+    "section": "SCHEDULE B DETAIL",
+    "value": "PA 1,544 miles"
+  },
+  {
+    "field": "jurisdiction row 34",
+    "page": "2",
+    "section": "SCHEDULE B DETAIL",
+    "value": "SC 1,561 miles"
+  },
+  {
+    "field": "jurisdiction row 35",
+    "page": "2",
+    "section": "SCHEDULE B DETAIL",
+    "value": "TN 1,578 miles"
+  },
+  {
+    "field": "jurisdiction row 36",
+    "page": "2",
+    "section": "SCHEDULE B DETAIL",
+    "value": "TX 1,595 miles"
+  },
+  {
+    "field": "jurisdiction row 37",
+    "page": "2",
+    "section": "SCHEDULE B DETAIL",
+    "value": "UT 1,612 miles"
+  },
+  {
+    "field": "jurisdiction row 38",
+    "page": "2",
+    "section": "SCHEDULE B DETAIL",
+    "value": "VA 1,629 miles"
+  },
+  {
+    "field": "jurisdiction row 39",
+    "page": "2",
+    "section": "SCHEDULE B DETAIL",
+    "value": "WA 1,646 miles"
+  },
+  {
+    "field": "jurisdiction row 40",
+    "page": "2",
+    "section": "SCHEDULE B DETAIL",
+    "value": "WV 1,663 miles"
+  },
+  {
+    "field": "jurisdiction row 41",
+    "page": "2",
+    "section": "SCHEDULE B DETAIL",
+    "value": "WI 1,680 miles"
+  },
+  {
+    "field": "jurisdiction row 42",
+    "page": "2",
+    "section": "SCHEDULE B DETAIL",
+    "value": "WY 1,697 miles"
+  },
+  {
+    "field": "jurisdiction row 43",
+    "page": "3",
+    "section": "SCHEDULE B DETAIL",
+    "value": "AL 1,714 miles"
+  },
+  {
+    "field": "jurisdiction row 44",
+    "page": "3",
+    "section": "SCHEDULE B DETAIL",
+    "value": "AZ 1,731 miles"
+  },
+  {
+    "field": "jurisdiction row 45",
+    "page": "3",
+    "section": "SCHEDULE B DETAIL",
+    "value": "AR 1,748 miles"
+  },
+  {
+    "field": "jurisdiction row 46",
+    "page": "3",
+    "section": "SCHEDULE B DETAIL",
+    "value": "CA 1,765 miles"
+  },
+  {
+    "field": "jurisdiction row 47",
+    "page": "3",
+    "section": "SCHEDULE B DETAIL",
+    "value": "CO 1,782 miles"
+  },
+  {
+    "field": "jurisdiction row 48",
+    "page": "3",
+    "section": "SCHEDULE B DETAIL",
+    "value": "CT 1,799 miles"
+  },
+  {
+    "field": "jurisdiction row 49",
+    "page": "3",
+    "section": "SCHEDULE B DETAIL",
+    "value": "DE 1,816 miles"
+  },
+  {
+    "field": "jurisdiction row 50",
+    "page": "3",
+    "section": "SCHEDULE B DETAIL",
+    "value": "FL 1,833 miles"
+  },
+  {
+    "field": "jurisdiction row 51",
+    "page": "3",
+    "section": "SCHEDULE B DETAIL",
+    "value": "GA 1,850 miles"
+  },
+  {
+    "field": "jurisdiction row 52",
+    "page": "3",
+    "section": "SCHEDULE B DETAIL",
+    "value": "ID 1,867 miles"
+  },
+  {
+    "field": "jurisdiction row 53",
+    "page": "3",
+    "section": "SCHEDULE B DETAIL",
+    "value": "IL 1,884 miles"
+  },
+  {
+    "field": "jurisdiction row 54",
+    "page": "3",
+    "section": "SCHEDULE B DETAIL",
+    "value": "IN 1,901 miles"
+  },
+  {
+    "field": "jurisdiction row 55",
+    "page": "3",
+    "section": "SCHEDULE B DETAIL",
+    "value": "IA 1,918 miles"
+  },
+  {
+    "field": "jurisdiction row 56",
+    "page": "3",
+    "section": "SCHEDULE B DETAIL",
+    "value": "KS 1,935 miles"
+  },
+  {
+    "field": "jurisdiction row 57",
+    "page": "3",
+    "section": "SCHEDULE B DETAIL",
+    "value": "KY 1,952 miles"
+  },
+  {
+    "field": "jurisdiction row 58",
+    "page": "3",
+    "section": "SCHEDULE B DETAIL",
+    "value": "LA 1,969 miles"
+  },
+  {
+    "field": "jurisdiction row 59",
+    "page": "3",
+    "section": "SCHEDULE B DETAIL",
+    "value": "MD 1,986 miles"
+  },
+  {
+    "field": "jurisdiction row 60",
+    "page": "3",
+    "section": "SCHEDULE B DETAIL",
+    "value": "MI 2,003 miles"
+  },
+  {
+    "field": "jurisdiction row 61",
+    "page": "3",
+    "section": "SCHEDULE B DETAIL",
+    "value": "MN 2,020 miles"
+  },
+  {
+    "field": "jurisdiction row 62",
+    "page": "3",
+    "section": "SCHEDULE B DETAIL",
+    "value": "MS 2,037 miles"
+  },
+  {
+    "field": "jurisdiction row 63",
+    "page": "3",
+    "section": "SCHEDULE B DETAIL",
+    "value": "MO 2,054 miles"
+  },
+  {
+    "field": "jurisdiction row 64",
+    "page": "3",
+    "section": "SCHEDULE B DETAIL",
+    "value": "MT 2,071 miles"
+  },
+  {
+    "field": "jurisdiction row 65",
+    "page": "3",
+    "section": "SCHEDULE B DETAIL",
+    "value": "NE 2,088 miles"
+  },
+  {
+    "field": "jurisdiction row 66",
+    "page": "3",
+    "section": "SCHEDULE B DETAIL",
+    "value": "NV 2,105 miles"
+  },
+  {
+    "field": "jurisdiction row 67",
+    "page": "3",
+    "section": "SCHEDULE B DETAIL",
+    "value": "NJ 2,122 miles"
+  },
+  {
+    "field": "jurisdiction row 68",
+    "page": "3",
+    "section": "SCHEDULE B DETAIL",
+    "value": "NM 2,139 miles"
+  },
+  {
+    "field": "jurisdiction row 69",
+    "page": "3",
+    "section": "SCHEDULE B DETAIL",
+    "value": "NY 2,156 miles"
+  },
+  {
+    "field": "jurisdiction row 70",
+    "page": "3",
+    "section": "SCHEDULE B DETAIL",
+    "value": "NC 2,173 miles"
+  },
+  {
+    "field": "jurisdiction row 71",
+    "page": "3",
+    "section": "SCHEDULE B DETAIL",
+    "value": "ND 2,190 miles"
+  },
+  {
+    "field": "jurisdiction row 72",
+    "page": "3",
+    "section": "SCHEDULE B DETAIL",
+    "value": "OH 2,207 miles"
+  },
+  {
+    "field": "jurisdiction row 73",
+    "page": "3",
+    "section": "SCHEDULE B DETAIL",
+    "value": "OK 2,224 miles"
+  },
+  {
+    "field": "jurisdiction row 74",
+    "page": "3",
+    "section": "SCHEDULE B DETAIL",
+    "value": "OR 2,241 miles"
+  },
+  {
+    "field": "jurisdiction row 75",
+    "page": "3",
+    "section": "SCHEDULE B DETAIL",
+    "value": "PA 2,258 miles"
+  },
+  {
+    "field": "jurisdiction row 76",
+    "page": "3",
+    "section": "SCHEDULE B DETAIL",
+    "value": "SC 2,275 miles"
+  },
+  {
+    "field": "jurisdiction row 77",
+    "page": "3",
+    "section": "SCHEDULE B DETAIL",
+    "value": "TN 2,292 miles"
+  },
+  {
+    "field": "jurisdiction row 78",
+    "page": "3",
+    "section": "SCHEDULE B DETAIL",
+    "value": "TX 2,309 miles"
+  },
+  {
+    "field": "jurisdiction row 79",
+    "page": "3",
+    "section": "SCHEDULE B DETAIL",
+    "value": "UT 2,326 miles"
+  },
+  {
+    "field": "jurisdiction row 80",
+    "page": "3",
+    "section": "SCHEDULE B DETAIL",
+    "value": "VA 2,343 miles"
+  },
+  {
+    "field": "jurisdiction row 81",
+    "page": "3",
+    "section": "SCHEDULE B DETAIL",
+    "value": "WA 2,360 miles"
+  },
+  {
+    "field": "jurisdiction row 82",
+    "page": "3",
+    "section": "SCHEDULE B DETAIL",
+    "value": "WV 2,377 miles"
+  },
+  {
+    "field": "jurisdiction row 83",
+    "page": "3",
+    "section": "SCHEDULE B DETAIL",
+    "value": "WI 2,394 miles"
+  },
+  {
+    "field": "jurisdiction row 84",
+    "page": "3",
+    "section": "SCHEDULE B DETAIL",
+    "value": "WY 2,411 miles"
+  },
+  {
+    "field": "jurisdiction row 85",
+    "page": "4",
+    "section": "SCHEDULE B DETAIL",
+    "value": "AL 2,428 miles"
+  },
+  {
+    "field": "jurisdiction row 86",
+    "page": "4",
+    "section": "SCHEDULE B DETAIL",
+    "value": "AZ 2,445 miles"
+  },
+  {
+    "field": "jurisdiction row 87",
+    "page": "4",
+    "section": "SCHEDULE B DETAIL",
+    "value": "AR 2,462 miles"
+  },
+  {
+    "field": "jurisdiction row 88",
+    "page": "4",
+    "section": "SCHEDULE B DETAIL",
+    "value": "CA 2,479 miles"
+  },
+  {
+    "field": "jurisdiction row 89",
+    "page": "4",
+    "section": "SCHEDULE B DETAIL",
+    "value": "CO 2,496 miles"
+  },
+  {
+    "field": "jurisdiction row 90",
+    "page": "4",
+    "section": "SCHEDULE B DETAIL",
+    "value": "CT 2,513 miles"
+  },
+  {
+    "field": "jurisdiction row 91",
+    "page": "4",
+    "section": "SCHEDULE B DETAIL",
+    "value": "DE 2,530 miles"
+  },
+  {
+    "field": "jurisdiction row 92",
+    "page": "4",
+    "section": "SCHEDULE B DETAIL",
+    "value": "FL 2,547 miles"
+  },
+  {
+    "field": "jurisdiction row 93",
+    "page": "4",
+    "section": "SCHEDULE B DETAIL",
+    "value": "GA 2,564 miles"
+  },
+  {
+    "field": "jurisdiction row 94",
+    "page": "4",
+    "section": "SCHEDULE B DETAIL",
+    "value": "ID 2,581 miles"
+  },
+  {
+    "field": "jurisdiction row 95",
+    "page": "4",
+    "section": "SCHEDULE B DETAIL",
+    "value": "IL 2,598 miles"
+  },
+  {
+    "field": "jurisdiction row 96",
+    "page": "4",
+    "section": "SCHEDULE B DETAIL",
+    "value": "IN 2,615 miles"
+  },
+  {
+    "field": "jurisdiction row 97",
+    "page": "4",
+    "section": "SCHEDULE B DETAIL",
+    "value": "IA 2,632 miles"
+  },
+  {
+    "field": "jurisdiction row 98",
+    "page": "4",
+    "section": "SCHEDULE B DETAIL",
+    "value": "KS 2,649 miles"
+  },
+  {
+    "field": "jurisdiction row 99",
+    "page": "4",
+    "section": "SCHEDULE B DETAIL",
+    "value": "KY 2,666 miles"
+  },
+  {
+    "field": "jurisdiction row 100",
+    "page": "4",
+    "section": "SCHEDULE B DETAIL",
+    "value": "LA 2,683 miles"
+  },
+  {
+    "field": "jurisdiction row 101",
+    "page": "4",
+    "section": "SCHEDULE B DETAIL",
+    "value": "MD 2,700 miles"
+  },
+  {
+    "field": "jurisdiction row 102",
+    "page": "4",
+    "section": "SCHEDULE B DETAIL",
+    "value": "MI 2,717 miles"
+  },
+  {
+    "field": "jurisdiction row 103",
+    "page": "4",
+    "section": "SCHEDULE B DETAIL",
+    "value": "MN 2,734 miles"
+  },
+  {
+    "field": "jurisdiction row 104",
+    "page": "4",
+    "section": "SCHEDULE B DETAIL",
+    "value": "MS 2,751 miles"
+  },
+  {
+    "field": "jurisdiction row 105",
+    "page": "4",
+    "section": "SCHEDULE B DETAIL",
+    "value": "MO 2,768 miles"
+  },
+  {
+    "field": "jurisdiction row 106",
+    "page": "4",
+    "section": "SCHEDULE B DETAIL",
+    "value": "MT 2,785 miles"
+  },
+  {
+    "field": "jurisdiction row 107",
+    "page": "4",
+    "section": "SCHEDULE B DETAIL",
+    "value": "NE 2,802 miles"
+  },
+  {
+    "field": "jurisdiction row 108",
+    "page": "4",
+    "section": "SCHEDULE B DETAIL",
+    "value": "NV 2,819 miles"
+  },
+  {
+    "field": "jurisdiction row 109",
+    "page": "4",
+    "section": "SCHEDULE B DETAIL",
+    "value": "NJ 2,836 miles"
+  },
+  {
+    "field": "jurisdiction row 110",
+    "page": "4",
+    "section": "SCHEDULE B DETAIL",
+    "value": "NM 2,853 miles"
+  },
+  {
+    "field": "jurisdiction row 111",
+    "page": "4",
+    "section": "SCHEDULE B DETAIL",
+    "value": "NY 2,870 miles"
+  },
+  {
+    "field": "jurisdiction row 112",
+    "page": "4",
+    "section": "SCHEDULE B DETAIL",
+    "value": "NC 2,887 miles"
+  },
+  {
+    "field": "jurisdiction row 113",
+    "page": "4",
+    "section": "SCHEDULE B DETAIL",
+    "value": "ND 2,904 miles"
+  },
+  {
+    "field": "jurisdiction row 114",
+    "page": "4",
+    "section": "SCHEDULE B DETAIL",
+    "value": "OH 2,921 miles"
+  },
+  {
+    "field": "jurisdiction row 115",
+    "page": "4",
+    "section": "SCHEDULE B DETAIL",
+    "value": "OK 2,938 miles"
+  },
+  {
+    "field": "jurisdiction row 116",
+    "page": "4",
+    "section": "SCHEDULE B DETAIL",
+    "value": "OR 2,955 miles"
+  },
+  {
+    "field": "jurisdiction row 117",
+    "page": "4",
+    "section": "SCHEDULE B DETAIL",
+    "value": "PA 2,972 miles"
+  },
+  {
+    "field": "jurisdiction row 118",
+    "page": "4",
+    "section": "SCHEDULE B DETAIL",
+    "value": "SC 2,989 miles"
+  },
+  {
+    "field": "jurisdiction row 119",
+    "page": "4",
+    "section": "SCHEDULE B DETAIL",
+    "value": "TN 3,006 miles"
+  },
+  {
+    "field": "jurisdiction row 120",
+    "page": "4",
+    "section": "SCHEDULE B DETAIL",
+    "value": "TX 3,023 miles"
+  },
+  {
+    "field": "jurisdiction row 121",
+    "page": "4",
+    "section": "SCHEDULE B DETAIL",
+    "value": "UT 3,040 miles"
+  },
+  {
+    "field": "jurisdiction row 122",
+    "page": "4",
+    "section": "SCHEDULE B DETAIL",
+    "value": "VA 3,057 miles"
+  },
+  {
+    "field": "jurisdiction row 123",
+    "page": "4",
+    "section": "SCHEDULE B DETAIL",
+    "value": "WA 3,074 miles"
+  },
+  {
+    "field": "jurisdiction row 124",
+    "page": "4",
+    "section": "SCHEDULE B DETAIL",
+    "value": "WV 3,091 miles"
+  },
+  {
+    "field": "jurisdiction row 125",
+    "page": "4",
+    "section": "SCHEDULE B DETAIL",
+    "value": "WI 3,108 miles"
+  },
+  {
+    "field": "jurisdiction row 126",
+    "page": "4",
+    "section": "SCHEDULE B DETAIL",
+    "value": "WY 3,125 miles"
+  },
+  {
+    "field": "jurisdiction row 127",
+    "page": "5",
+    "section": "SCHEDULE B DETAIL",
+    "value": "AL 3,142 miles"
+  },
+  {
+    "field": "jurisdiction row 128",
+    "page": "5",
+    "section": "SCHEDULE B DETAIL",
+    "value": "AZ 3,159 miles"
+  },
+  {
+    "field": "jurisdiction row 129",
+    "page": "5",
+    "section": "SCHEDULE B DETAIL",
+    "value": "AR 3,176 miles"
+  },
+  {
+    "field": "jurisdiction row 130",
+    "page": "5",
+    "section": "SCHEDULE B DETAIL",
+    "value": "CA 3,193 miles"
+  },
+  {
+    "field": "jurisdiction row 131",
+    "page": "5",
+    "section": "SCHEDULE B DETAIL",
+    "value": "CO 3,210 miles"
+  },
+  {
+    "field": "jurisdiction row 132",
+    "page": "5",
+    "section": "SCHEDULE B DETAIL",
+    "value": "CT 3,227 miles"
+  },
+  {
+    "field": "jurisdiction row 133",
+    "page": "5",
+    "section": "SCHEDULE B DETAIL",
+    "value": "DE 3,244 miles"
+  },
+  {
+    "field": "jurisdiction row 134",
+    "page": "5",
+    "section": "SCHEDULE B DETAIL",
+    "value": "FL 3,261 miles"
+  },
+  {
+    "field": "jurisdiction row 135",
+    "page": "5",
+    "section": "SCHEDULE B DETAIL",
+    "value": "GA 3,278 miles"
+  },
+  {
+    "field": "jurisdiction row 136",
+    "page": "5",
+    "section": "SCHEDULE B DETAIL",
+    "value": "ID 3,295 miles"
+  },
+  {
+    "field": "jurisdiction row 137",
+    "page": "5",
+    "section": "SCHEDULE B DETAIL",
+    "value": "IL 3,312 miles"
+  },
+  {
+    "field": "jurisdiction row 138",
+    "page": "5",
+    "section": "SCHEDULE B DETAIL",
+    "value": "IN 3,329 miles"
+  },
+  {
+    "field": "jurisdiction row 139",
+    "page": "5",
+    "section": "SCHEDULE B DETAIL",
+    "value": "IA 3,346 miles"
+  },
+  {
+    "field": "jurisdiction row 140",
+    "page": "5",
+    "section": "SCHEDULE B DETAIL",
+    "value": "KS 3,363 miles"
+  },
+  {
+    "field": "jurisdiction row 141",
+    "page": "5",
+    "section": "SCHEDULE B DETAIL",
+    "value": "KY 3,380 miles"
+  },
+  {
+    "field": "jurisdiction row 142",
+    "page": "5",
+    "section": "SCHEDULE B DETAIL",
+    "value": "LA 3,397 miles"
+  },
+  {
+    "field": "jurisdiction row 143",
+    "page": "5",
+    "section": "SCHEDULE B DETAIL",
+    "value": "MD 3,414 miles"
+  },
+  {
+    "field": "jurisdiction row 144",
+    "page": "5",
+    "section": "SCHEDULE B DETAIL",
+    "value": "MI 3,431 miles"
+  },
+  {
+    "field": "jurisdiction row 145",
+    "page": "5",
+    "section": "SCHEDULE B DETAIL",
+    "value": "MN 3,448 miles"
+  },
+  {
+    "field": "jurisdiction row 146",
+    "page": "5",
+    "section": "SCHEDULE B DETAIL",
+    "value": "MS 3,465 miles"
+  },
+  {
+    "field": "jurisdiction row 147",
+    "page": "5",
+    "section": "SCHEDULE B DETAIL",
+    "value": "MO 3,482 miles"
+  },
+  {
+    "field": "jurisdiction row 148",
+    "page": "5",
+    "section": "SCHEDULE B DETAIL",
+    "value": "MT 3,499 miles"
+  },
+  {
+    "field": "jurisdiction row 149",
+    "page": "5",
+    "section": "SCHEDULE B DETAIL",
+    "value": "NE 3,516 miles"
+  },
+  {
+    "field": "jurisdiction row 150",
+    "page": "5",
+    "section": "SCHEDULE B DETAIL",
+    "value": "NV 3,533 miles"
+  },
+  {
+    "field": "jurisdiction row 151",
+    "page": "5",
+    "section": "SCHEDULE B DETAIL",
+    "value": "NJ 3,550 miles"
+  },
+  {
+    "field": "jurisdiction row 152",
+    "page": "5",
+    "section": "SCHEDULE B DETAIL",
+    "value": "NM 3,567 miles"
+  },
+  {
+    "field": "jurisdiction row 153",
+    "page": "5",
+    "section": "SCHEDULE B DETAIL",
+    "value": "NY 3,584 miles"
+  },
+  {
+    "field": "jurisdiction row 154",
+    "page": "5",
+    "section": "SCHEDULE B DETAIL",
+    "value": "NC 3,601 miles"
+  },
+  {
+    "field": "jurisdiction row 155",
+    "page": "5",
+    "section": "SCHEDULE B DETAIL",
+    "value": "ND 3,618 miles"
+  },
+  {
+    "field": "jurisdiction row 156",
+    "page": "5",
+    "section": "SCHEDULE B DETAIL",
+    "value": "OH 3,635 miles"
+  },
+  {
+    "field": "jurisdiction row 157",
+    "page": "5",
+    "section": "SCHEDULE B DETAIL",
+    "value": "OK 3,652 miles"
+  },
+  {
+    "field": "jurisdiction row 158",
+    "page": "5",
+    "section": "SCHEDULE B DETAIL",
+    "value": "OR 3,669 miles"
+  },
+  {
+    "field": "jurisdiction row 159",
+    "page": "5",
+    "section": "SCHEDULE B DETAIL",
+    "value": "PA 3,686 miles"
+  },
+  {
+    "field": "jurisdiction row 160",
+    "page": "5",
+    "section": "SCHEDULE B DETAIL",
+    "value": "SC 3,703 miles"
+  },
+  {
+    "field": "jurisdiction row 161",
+    "page": "5",
+    "section": "SCHEDULE B DETAIL",
+    "value": "TN 3,720 miles"
+  },
+  {
+    "field": "jurisdiction row 162",
+    "page": "5",
+    "section": "SCHEDULE B DETAIL",
+    "value": "TX 3,737 miles"
+  },
+  {
+    "field": "jurisdiction row 163",
+    "page": "5",
+    "section": "SCHEDULE B DETAIL",
+    "value": "UT 3,754 miles"
+  },
+  {
+    "field": "jurisdiction row 164",
+    "page": "5",
+    "section": "SCHEDULE B DETAIL",
+    "value": "VA 3,771 miles"
+  },
+  {
+    "field": "jurisdiction row 165",
+    "page": "5",
+    "section": "SCHEDULE B DETAIL",
+    "value": "WA 3,788 miles"
+  },
+  {
+    "field": "jurisdiction row 166",
+    "page": "5",
+    "section": "SCHEDULE B DETAIL",
+    "value": "WV 3,805 miles"
+  },
+  {
+    "field": "jurisdiction row 167",
+    "page": "5",
+    "section": "SCHEDULE B DETAIL",
+    "value": "WI 3,822 miles"
+  },
+  {
+    "field": "jurisdiction row 168",
+    "page": "5",
+    "section": "SCHEDULE B DETAIL",
+    "value": "WY 3,839 miles"
+  },
+  {
+    "field": "jurisdiction row 169",
+    "page": "6",
+    "section": "SCHEDULE B DETAIL",
+    "value": "AL 3,856 miles"
+  },
+  {
+    "field": "jurisdiction row 170",
+    "page": "6",
+    "section": "SCHEDULE B DETAIL",
+    "value": "AZ 3,873 miles"
+  },
+  {
+    "field": "jurisdiction row 171",
+    "page": "6",
+    "section": "SCHEDULE B DETAIL",
+    "value": "AR 3,890 miles"
+  },
+  {
+    "field": "jurisdiction row 172",
+    "page": "6",
+    "section": "SCHEDULE B DETAIL",
+    "value": "CA 3,907 miles"
+  },
+  {
+    "field": "jurisdiction row 173",
+    "page": "6",
+    "section": "SCHEDULE B DETAIL",
+    "value": "CO 3,924 miles"
+  },
+  {
+    "field": "jurisdiction row 174",
+    "page": "6",
+    "section": "SCHEDULE B DETAIL",
+    "value": "CT 3,941 miles"
+  },
+  {
+    "field": "jurisdiction row 175",
+    "page": "6",
+    "section": "SCHEDULE B DETAIL",
+    "value": "DE 3,958 miles"
+  },
+  {
+    "field": "jurisdiction row 176",
+    "page": "6",
+    "section": "SCHEDULE B DETAIL",
+    "value": "FL 3,975 miles"
+  },
+  {
+    "field": "jurisdiction row 177",
+    "page": "6",
+    "section": "SCHEDULE B DETAIL",
+    "value": "GA 3,992 miles"
+  },
+  {
+    "field": "jurisdiction row 178",
+    "page": "6",
+    "section": "SCHEDULE B DETAIL",
+    "value": "ID 4,009 miles"
+  },
+  {
+    "field": "jurisdiction row 179",
+    "page": "6",
+    "section": "SCHEDULE B DETAIL",
+    "value": "IL 4,026 miles"
+  },
+  {
+    "field": "jurisdiction row 180",
+    "page": "6",
+    "section": "SCHEDULE B DETAIL",
+    "value": "IN 4,043 miles"
+  },
+  {
+    "field": "jurisdiction row 181",
+    "page": "6",
+    "section": "SCHEDULE B DETAIL",
+    "value": "IA 4,060 miles"
+  },
+  {
+    "field": "jurisdiction row 182",
+    "page": "6",
+    "section": "SCHEDULE B DETAIL",
+    "value": "KS 4,077 miles"
+  },
+  {
+    "field": "jurisdiction row 183",
+    "page": "6",
+    "section": "SCHEDULE B DETAIL",
+    "value": "KY 4,094 miles"
+  },
+  {
+    "field": "jurisdiction row 184",
+    "page": "6",
+    "section": "SCHEDULE B DETAIL",
+    "value": "LA 4,111 miles"
+  },
+  {
+    "field": "jurisdiction row 185",
+    "page": "6",
+    "section": "SCHEDULE B DETAIL",
+    "value": "MD 4,128 miles"
+  },
+  {
+    "field": "jurisdiction row 186",
+    "page": "6",
+    "section": "SCHEDULE B DETAIL",
+    "value": "MI 4,145 miles"
+  },
+  {
+    "field": "jurisdiction row 187",
+    "page": "6",
+    "section": "SCHEDULE B DETAIL",
+    "value": "MN 4,162 miles"
+  },
+  {
+    "field": "jurisdiction row 188",
+    "page": "6",
+    "section": "SCHEDULE B DETAIL",
+    "value": "MS 4,179 miles"
+  },
+  {
+    "field": "jurisdiction row 189",
+    "page": "6",
+    "section": "SCHEDULE B DETAIL",
+    "value": "MO 4,196 miles"
+  },
+  {
+    "field": "jurisdiction row 190",
+    "page": "6",
+    "section": "SCHEDULE B DETAIL",
+    "value": "MT 4,213 miles"
+  },
+  {
+    "field": "jurisdiction row 191",
+    "page": "6",
+    "section": "SCHEDULE B DETAIL",
+    "value": "NE 4,230 miles"
+  },
+  {
+    "field": "jurisdiction row 192",
+    "page": "6",
+    "section": "SCHEDULE B DETAIL",
+    "value": "NV 4,247 miles"
+  },
+  {
+    "field": "jurisdiction row 193",
+    "page": "6",
+    "section": "SCHEDULE B DETAIL",
+    "value": "NJ 4,264 miles"
+  },
+  {
+    "field": "jurisdiction row 194",
+    "page": "6",
+    "section": "SCHEDULE B DETAIL",
+    "value": "NM 4,281 miles"
+  },
+  {
+    "field": "jurisdiction row 195",
+    "page": "6",
+    "section": "SCHEDULE B DETAIL",
+    "value": "NY 4,298 miles"
+  },
+  {
+    "field": "jurisdiction row 196",
+    "page": "6",
+    "section": "SCHEDULE B DETAIL",
+    "value": "NC 4,315 miles"
+  },
+  {
+    "field": "jurisdiction row 197",
+    "page": "6",
+    "section": "SCHEDULE B DETAIL",
+    "value": "ND 4,332 miles"
+  },
+  {
+    "field": "jurisdiction row 198",
+    "page": "6",
+    "section": "SCHEDULE B DETAIL",
+    "value": "OH 4,349 miles"
+  },
+  {
+    "field": "jurisdiction row 199",
+    "page": "6",
+    "section": "SCHEDULE B DETAIL",
+    "value": "OK 4,366 miles"
+  },
+  {
+    "field": "jurisdiction row 200",
+    "page": "6",
+    "section": "SCHEDULE B DETAIL",
+    "value": "OR 4,383 miles"
+  },
+  {
+    "field": "jurisdiction row 201",
+    "page": "6",
+    "section": "SCHEDULE B DETAIL",
+    "value": "PA 4,400 miles"
+  },
+  {
+    "field": "jurisdiction row 202",
+    "page": "6",
+    "section": "SCHEDULE B DETAIL",
+    "value": "SC 4,417 miles"
+  },
+  {
+    "field": "jurisdiction row 203",
+    "page": "6",
+    "section": "SCHEDULE B DETAIL",
+    "value": "TN 4,434 miles"
+  },
+  {
+    "field": "jurisdiction row 204",
+    "page": "6",
+    "section": "SCHEDULE B DETAIL",
+    "value": "TX 4,451 miles"
+  },
+  {
+    "field": "jurisdiction row 205",
+    "page": "6",
+    "section": "SCHEDULE B DETAIL",
+    "value": "UT 4,468 miles"
+  },
+  {
+    "field": "jurisdiction row 206",
+    "page": "6",
+    "section": "SCHEDULE B DETAIL",
+    "value": "VA 4,485 miles"
+  },
+  {
+    "field": "jurisdiction row 207",
+    "page": "6",
+    "section": "SCHEDULE B DETAIL",
+    "value": "WA 4,502 miles"
+  },
+  {
+    "field": "jurisdiction row 208",
+    "page": "6",
+    "section": "SCHEDULE B DETAIL",
+    "value": "WV 4,519 miles"
+  },
+  {
+    "field": "jurisdiction row 209",
+    "page": "6",
+    "section": "SCHEDULE B DETAIL",
+    "value": "WI 4,536 miles"
+  },
+  {
+    "field": "jurisdiction row 210",
+    "page": "6",
+    "section": "SCHEDULE B DETAIL",
+    "value": "WY 4,553 miles"
+  },
+  {
+    "field": "jurisdiction row 211",
+    "page": "7",
+    "section": "SCHEDULE B DETAIL",
+    "value": "AL 4,570 miles"
+  },
+  {
+    "field": "jurisdiction row 212",
+    "page": "7",
+    "section": "SCHEDULE B DETAIL",
+    "value": "AZ 4,587 miles"
+  },
+  {
+    "field": "jurisdiction row 213",
+    "page": "7",
+    "section": "SCHEDULE B DETAIL",
+    "value": "AR 4,604 miles"
+  },
+  {
+    "field": "jurisdiction row 214",
+    "page": "7",
+    "section": "SCHEDULE B DETAIL",
+    "value": "CA 4,621 miles"
+  },
+  {
+    "field": "jurisdiction row 215",
+    "page": "7",
+    "section": "SCHEDULE B DETAIL",
+    "value": "CO 4,638 miles"
+  },
+  {
+    "field": "jurisdiction row 216",
+    "page": "7",
+    "section": "SCHEDULE B DETAIL",
+    "value": "CT 4,655 miles"
+  },
+  {
+    "field": "jurisdiction row 217",
+    "page": "7",
+    "section": "SCHEDULE B DETAIL",
+    "value": "DE 4,672 miles"
+  },
+  {
+    "field": "jurisdiction row 218",
+    "page": "7",
+    "section": "SCHEDULE B DETAIL",
+    "value": "FL 4,689 miles"
+  },
+  {
+    "field": "jurisdiction row 219",
+    "page": "7",
+    "section": "SCHEDULE B DETAIL",
+    "value": "GA 4,706 miles"
+  },
+  {
+    "field": "jurisdiction row 220",
+    "page": "7",
+    "section": "SCHEDULE B DETAIL",
+    "value": "ID 4,723 miles"
+  },
+  {
+    "field": "jurisdiction row 221",
+    "page": "7",
+    "section": "SCHEDULE B DETAIL",
+    "value": "IL 4,740 miles"
+  },
+  {
+    "field": "jurisdiction row 222",
+    "page": "7",
+    "section": "SCHEDULE B DETAIL",
+    "value": "IN 4,757 miles"
+  },
+  {
+    "field": "row 223",
+    "page": "7",
+    "section": "Schedule B Detail",
+    "value": "IA 4,774"
+  },
+  {
+    "field": "row 224",
+    "page": "7",
+    "section": "Schedule B Detail",
+    "value": "KS 4,791"
+  },
+  {
+    "field": "row 225",
+    "page": "7",
+    "section": "Schedule B Detail",
+    "value": "KY 4,808"
+  },
+  {
+    "field": "row 226",
+    "page": "7",
+    "section": "Schedule B Detail",
+    "value": "LA 4,825"
+  },
+  {
+    "field": "row 227",
+    "page": "7",
+    "section": "Schedule B Detail",
+    "value": "MD 4,842"
+  },
+  {
+    "field": "row 228",
+    "page": "7",
+    "section": "Schedule B Detail",
+    "value": "MI 4,859"
+  },
+  {
+    "field": "row 229",
+    "page": "7",
+    "section": "Schedule B Detail",
+    "value": "MN 4,876"
+  },
+  {
+    "field": "row 230",
+    "page": "7",
+    "section": "Schedule B Detail",
+    "value": "MS 4,893"
+  },
+  {
+    "field": "row 231",
+    "page": "7",
+    "section": "Schedule B Detail",
+    "value": "MO 4,910"
+  },
+  {
+    "field": "row 232",
+    "page": "7",
+    "section": "Schedule B Detail",
+    "value": "MT 4,927"
+  },
+  {
+    "field": "row 233",
+    "page": "7",
+    "section": "Schedule B Detail",
+    "value": "NE 4,944"
+  },
+  {
+    "field": "row 234",
+    "page": "7",
+    "section": "Schedule B Detail",
+    "value": "NV 4,961"
+  },
+  {
+    "field": "row 235",
+    "page": "7",
+    "section": "Schedule B Detail",
+    "value": "NJ 4,978"
+  },
+  {
+    "field": "row 236",
+    "page": "7",
+    "section": "Schedule B Detail",
+    "value": "NM 4,995"
+  },
+  {
+    "field": "row 237",
+    "page": "7",
+    "section": "Schedule B Detail",
+    "value": "NY 5,012"
+  },
+  {
+    "field": "row 238",
+    "page": "7",
+    "section": "Schedule B Detail",
+    "value": "NC 5,029"
+  },
+  {
+    "field": "row 239",
+    "page": "7",
+    "section": "Schedule B Detail",
+    "value": "ND 5,046"
+  },
+  {
+    "field": "row 240",
+    "page": "7",
+    "section": "Schedule B Detail",
+    "value": "OH 5,063"
+  },
+  {
+    "field": "row 241",
+    "page": "7",
+    "section": "Schedule B Detail",
+    "value": "OK 5,080"
+  },
+  {
+    "field": "row 242",
+    "page": "7",
+    "section": "Schedule B Detail",
+    "value": "OR 5,097"
+  },
+  {
+    "field": "row 243",
+    "page": "7",
+    "section": "Schedule B Detail",
+    "value": "PA 5,114"
+  },
+  {
+    "field": "row 244",
+    "page": "7",
+    "section": "Schedule B Detail",
+    "value": "SC 5,131"
+  },
+  {
+    "field": "row 245",
+    "page": "7",
+    "section": "Schedule B Detail",
+    "value": "TN 5,148"
+  },
+  {
+    "field": "row 246",
+    "page": "7",
+    "section": "Schedule B Detail",
+    "value": "TX 5,165"
+  },
+  {
+    "field": "row 247",
+    "page": "7",
+    "section": "Schedule B Detail",
+    "value": "UT 5,182"
+  },
+  {
+    "field": "row 248",
+    "page": "7",
+    "section": "Schedule B Detail",
+    "value": "VA 5,199"
+  },
+  {
+    "field": "row 249",
+    "page": "7",
+    "section": "Schedule B Detail",
+    "value": "WA 5,216"
+  },
+  {
+    "field": "row 250",
+    "page": "7",
+    "section": "Schedule B Detail",
+    "value": "WV 5,233"
+  },
+  {
+    "field": "jurisdiction row 251",
+    "page": "7",
+    "section": "SCHEDULE B DETAIL",
+    "value": "WI 5,250 miles"
+  },
+  {
+    "field": "jurisdiction row 252",
+    "page": "7",
+    "section": "SCHEDULE B DETAIL",
+    "value": "WY 5,267 miles"
+  },
+  {
+    "field": "jurisdiction row 253",
+    "page": "8",
+    "section": "SCHEDULE B DETAIL",
+    "value": "AL 5,284 miles"
+  },
+  {
+    "field": "jurisdiction row 254",
+    "page": "8",
+    "section": "SCHEDULE B DETAIL",
+    "value": "AZ 5,301 miles"
+  },
+  {
+    "field": "jurisdiction row 255",
+    "page": "8",
+    "section": "SCHEDULE B DETAIL",
+    "value": "AR 5,318 miles"
+  },
+  {
+    "field": "jurisdiction row 256",
+    "page": "8",
+    "section": "SCHEDULE B DETAIL",
+    "value": "CA 5,335 miles"
+  },
+  {
+    "field": "jurisdiction row 257",
+    "page": "8",
+    "section": "SCHEDULE B DETAIL",
+    "value": "CO 5,352 miles"
+  },
+  {
+    "field": "jurisdiction row 258",
+    "page": "8",
+    "section": "SCHEDULE B DETAIL",
+    "value": "CT 5,369 miles"
+  },
+  {
+    "field": "jurisdiction row 259",
+    "page": "8",
+    "section": "SCHEDULE B DETAIL",
+    "value": "DE 5,386 miles"
+  },
+  {
+    "field": "jurisdiction row 260",
+    "page": "8",
+    "section": "SCHEDULE B DETAIL",
+    "value": "FL 5,403 miles"
+  },
+  {
+    "field": "jurisdiction row 261",
+    "page": "8",
+    "section": "SCHEDULE B DETAIL",
+    "value": "GA 5,420 miles"
+  },
+  {
+    "field": "jurisdiction row 262",
+    "page": "8",
+    "section": "SCHEDULE B DETAIL",
+    "value": "ID 5,437 miles"
+  },
+  {
+    "field": "jurisdiction row 263",
+    "page": "8",
+    "section": "SCHEDULE B DETAIL",
+    "value": "IL 5,454 miles"
+  },
+  {
+    "field": "jurisdiction row 264",
+    "page": "8",
+    "section": "SCHEDULE B DETAIL",
+    "value": "IN 5,471 miles"
+  },
+  {
+    "field": "jurisdiction row 265",
+    "page": "8",
+    "section": "SCHEDULE B DETAIL",
+    "value": "IA 5,488 miles"
+  },
+  {
+    "field": "jurisdiction row 266",
+    "page": "8",
+    "section": "SCHEDULE B DETAIL",
+    "value": "KS 5,505 miles"
+  },
+  {
+    "field": "jurisdiction row 267",
+    "page": "8",
+    "section": "SCHEDULE B DETAIL",
+    "value": "KY 5,522 miles"
+  },
+  {
+    "field": "jurisdiction row 268",
+    "page": "8",
+    "section": "SCHEDULE B DETAIL",
+    "value": "LA 5,539 miles"
+  },
+  {
+    "field": "jurisdiction row 269",
+    "page": "8",
+    "section": "SCHEDULE B DETAIL",
+    "value": "MD 5,556 miles"
+  },
+  {
+    "field": "jurisdiction row 270",
+    "page": "8",
+    "section": "SCHEDULE B DETAIL",
+    "value": "MI 5,573 miles"
+  },
+  {
+    "field": "jurisdiction row 271",
+    "page": "8",
+    "section": "SCHEDULE B DETAIL",
+    "value": "MN 5,590 miles"
+  },
+  {
+    "field": "jurisdiction row 272",
+    "page": "8",
+    "section": "SCHEDULE B DETAIL",
+    "value": "MS 5,607 miles"
+  },
+  {
+    "field": "jurisdiction row 273",
+    "page": "8",
+    "section": "SCHEDULE B DETAIL",
+    "value": "MO 5,624 miles"
+  },
+  {
+    "field": "jurisdiction row 274",
+    "page": "8",
+    "section": "SCHEDULE B DETAIL",
+    "value": "MT 5,641 miles"
+  },
+  {
+    "field": "jurisdiction row 275",
+    "page": "8",
+    "section": "SCHEDULE B DETAIL",
+    "value": "NE 5,658 miles"
+  },
+  {
+    "field": "jurisdiction row 276",
+    "page": "8",
+    "section": "SCHEDULE B DETAIL",
+    "value": "NV 5,675 miles"
+  },
+  {
+    "field": "jurisdiction row 277",
+    "page": "8",
+    "section": "SCHEDULE B DETAIL",
+    "value": "NJ 5,692 miles"
+  },
+  {
+    "field": "jurisdiction row 278",
+    "page": "8",
+    "section": "SCHEDULE B DETAIL",
+    "value": "NM 5,709 miles"
+  },
+  {
+    "field": "jurisdiction row 279",
+    "page": "8",
+    "section": "SCHEDULE B DETAIL",
+    "value": "NY 5,726 miles"
+  },
+  {
+    "field": "jurisdiction row 280",
+    "page": "8",
+    "section": "SCHEDULE B DETAIL",
+    "value": "NC 5,743 miles"
+  },
+  {
+    "field": "jurisdiction row 281",
+    "page": "8",
+    "section": "SCHEDULE B DETAIL",
+    "value": "ND 5,760 miles"
+  },
+  {
+    "field": "jurisdiction row 282",
+    "page": "8",
+    "section": "SCHEDULE B DETAIL",
+    "value": "OH 5,777 miles"
+  },
+  {
+    "field": "jurisdiction row 283",
+    "page": "8",
+    "section": "SCHEDULE B DETAIL",
+    "value": "OK 5,794 miles"
+  },
+  {
+    "field": "jurisdiction row 284",
+    "page": "8",
+    "section": "SCHEDULE B DETAIL",
+    "value": "OR 5,811 miles"
+  },
+  {
+    "field": "jurisdiction row 285",
+    "page": "8",
+    "section": "SCHEDULE B DETAIL",
+    "value": "PA 5,828 miles"
+  },
+  {
+    "field": "jurisdiction row 286",
+    "page": "8",
+    "section": "SCHEDULE B DETAIL",
+    "value": "SC 5,845 miles"
+  },
+  {
+    "field": "jurisdiction row 287",
+    "page": "8",
+    "section": "SCHEDULE B DETAIL",
+    "value": "TN 5,862 miles"
+  },
+  {
+    "field": "jurisdiction row 288",
+    "page": "8",
+    "section": "SCHEDULE B DETAIL",
+    "value": "TX 5,879 miles"
+  },
+  {
+    "field": "jurisdiction row 289",
+    "page": "8",
+    "section": "SCHEDULE B DETAIL",
+    "value": "UT 5,896 miles"
+  },
+  {
+    "field": "jurisdiction row 290",
+    "page": "8",
+    "section": "SCHEDULE B DETAIL",
+    "value": "VA 5,913 miles"
+  },
+  {
+    "field": "291",
+    "page": "8",
+    "section": "SCHEDULE B DETAIL",
+    "value": "WA 5,930"
+  },
+  {
+    "field": "292",
+    "page": "8",
+    "section": "SCHEDULE B DETAIL",
+    "value": "WV 5,947"
+  },
+  {
+    "field": "293",
+    "page": "8",
+    "section": "SCHEDULE B DETAIL",
+    "value": "WI 5,964"
+  },
+  {
+    "field": "294",
+    "page": "8",
+    "section": "SCHEDULE B DETAIL",
+    "value": "WY 5,981"
+  },
+  {
+    "field": "295",
+    "page": "9",
+    "section": "SCHEDULE B DETAIL",
+    "value": "AL 5,998"
+  },
+  {
+    "field": "296",
+    "page": "9",
+    "section": "SCHEDULE B DETAIL",
+    "value": "AZ 6,015"
+  },
+  {
+    "field": "297",
+    "page": "9",
+    "section": "SCHEDULE B DETAIL",
+    "value": "AR 6,032"
+  },
+  {
+    "field": "298",
+    "page": "9",
+    "section": "SCHEDULE B DETAIL",
+    "value": "CA 6,049"
+  },
+  {
+    "field": "299",
+    "page": "9",
+    "section": "SCHEDULE B DETAIL",
+    "value": "CO 6,066"
+  },
+  {
+    "field": "300",
+    "page": "9",
+    "section": "SCHEDULE B DETAIL",
+    "value": "CT 6,083"
+  },
+  {
+    "field": "301",
+    "page": "9",
+    "section": "SCHEDULE B DETAIL",
+    "value": "DE 6,100"
+  },
+  {
+    "field": "302",
+    "page": "9",
+    "section": "SCHEDULE B DETAIL",
+    "value": "FL 6,117"
+  },
+  {
+    "field": "303",
+    "page": "9",
+    "section": "SCHEDULE B DETAIL",
+    "value": "GA 6,134"
+  },
+  {
+    "field": "304",
+    "page": "9",
+    "section": "SCHEDULE B DETAIL",
+    "value": "ID 6,151"
+  },
+  {
+    "field": "305",
+    "page": "9",
+    "section": "SCHEDULE B DETAIL",
+    "value": "IL 6,168"
+  },
+  {
+    "field": "306",
+    "page": "9",
+    "section": "SCHEDULE B DETAIL",
+    "value": "IN 6,185"
+  },
+  {
+    "field": "307",
+    "page": "9",
+    "section": "SCHEDULE B DETAIL",
+    "value": "IA 6,202"
+  },
+  {
+    "field": "308",
+    "page": "9",
+    "section": "SCHEDULE B DETAIL",
+    "value": "KS 6,219"
+  },
+  {
+    "field": "309",
+    "page": "9",
+    "section": "SCHEDULE B DETAIL",
+    "value": "KY 6,236"
+  },
+  {
+    "field": "310",
+    "page": "9",
+    "section": "SCHEDULE B DETAIL",
+    "value": "LA 6,253"
+  },
+  {
+    "field": "311",
+    "page": "9",
+    "section": "SCHEDULE B DETAIL",
+    "value": "MD 6,270"
+  },
+  {
+    "field": "312",
+    "page": "9",
+    "section": "SCHEDULE B DETAIL",
+    "value": "MI 6,287"
+  },
+  {
+    "field": "313",
+    "page": "9",
+    "section": "SCHEDULE B DETAIL",
+    "value": "MN 6,304"
+  },
+  {
+    "field": "314",
+    "page": "9",
+    "section": "SCHEDULE B DETAIL",
+    "value": "MS 6,321"
+  },
+  {
+    "field": "315",
+    "page": "9",
+    "section": "SCHEDULE B DETAIL",
+    "value": "MO 6,338"
+  },
+  {
+    "field": "316",
+    "page": "9",
+    "section": "SCHEDULE B DETAIL",
+    "value": "MT 6,355"
+  },
+  {
+    "field": "317",
+    "page": "9",
+    "section": "SCHEDULE B DETAIL",
+    "value": "NE 6,372"
+  },
+  {
+    "field": "318",
+    "page": "9",
+    "section": "SCHEDULE B DETAIL",
+    "value": "NV 6,389"
+  },
+  {
+    "field": "row 319",
+    "page": "9",
+    "section": "SCHEDULE B DETAIL",
+    "value": "NJ 6,406 miles"
+  },
+  {
+    "field": "row 320",
+    "page": "9",
+    "section": "SCHEDULE B DETAIL",
+    "value": "NM 6,423 miles"
+  },
+  {
+    "field": "row 321",
+    "page": "9",
+    "section": "SCHEDULE B DETAIL",
+    "value": "NY 6,440 miles"
+  },
+  {
+    "field": "row 322",
+    "page": "9",
+    "section": "SCHEDULE B DETAIL",
+    "value": "NC 6,457 miles"
+  },
+  {
+    "field": "row 323",
+    "page": "9",
+    "section": "SCHEDULE B DETAIL",
+    "value": "ND 6,474 miles"
+  },
+  {
+    "field": "row 324",
+    "page": "9",
+    "section": "SCHEDULE B DETAIL",
+    "value": "OH 6,491 miles"
+  },
+  {
+    "field": "jurisdiction row 325",
+    "page": "9",
+    "section": "SCHEDULE B DETAIL",
+    "value": "OK 6,508 miles"
+  },
+  {
+    "field": "jurisdiction row 326",
+    "page": "9",
+    "section": "SCHEDULE B DETAIL",
+    "value": "OR 6,525 miles"
+  },
+  {
+    "field": "jurisdiction row 327",
+    "page": "9",
+    "section": "SCHEDULE B DETAIL",
+    "value": "PA 6,542 miles"
+  },
+  {
+    "field": "jurisdiction row 328",
+    "page": "9",
+    "section": "SCHEDULE B DETAIL",
+    "value": "SC 6,559 miles"
+  },
+  {
+    "field": "jurisdiction row 329",
+    "page": "9",
+    "section": "SCHEDULE B DETAIL",
+    "value": "TN 6,576 miles"
+  },
+  {
+    "field": "jurisdiction row 330",
+    "page": "9",
+    "section": "SCHEDULE B DETAIL",
+    "value": "TX 6,593 miles"
+  },
+  {
+    "field": "jurisdiction row 331",
+    "page": "9",
+    "section": "SCHEDULE B DETAIL",
+    "value": "UT 6,610 miles"
+  },
+  {
+    "field": "jurisdiction row 332",
+    "page": "9",
+    "section": "SCHEDULE B DETAIL",
+    "value": "VA 6,627 miles"
+  },
+  {
+    "field": "jurisdiction row 333",
+    "page": "9",
+    "section": "SCHEDULE B DETAIL",
+    "value": "WA 6,644 miles"
+  },
+  {
+    "field": "jurisdiction row 334",
+    "page": "9",
+    "section": "SCHEDULE B DETAIL",
+    "value": "WV 6,661 miles"
+  },
+  {
+    "field": "jurisdiction row 335",
+    "page": "9",
+    "section": "SCHEDULE B DETAIL",
+    "value": "WI 6,678 miles"
+  },
+  {
+    "field": "jurisdiction row 336",
+    "page": "9",
+    "section": "SCHEDULE B DETAIL",
+    "value": "WY 6,695 miles"
+  },
+  {
+    "field": "jurisdiction row 337",
+    "page": "10",
+    "section": "SCHEDULE B DETAIL",
+    "value": "AL 6,712 miles"
+  },
+  {
+    "field": "jurisdiction row 338",
+    "page": "10",
+    "section": "SCHEDULE B DETAIL",
+    "value": "AZ 6,729 miles"
+  },
+  {
+    "field": "jurisdiction row 339",
+    "page": "10",
+    "section": "SCHEDULE B DETAIL",
+    "value": "AR 6,746 miles"
+  },
+  {
+    "field": "jurisdiction row 340",
+    "page": "10",
+    "section": "SCHEDULE B DETAIL",
+    "value": "CA 6,763 miles"
+  },
+  {
+    "field": "jurisdiction row 341",
+    "page": "10",
+    "section": "SCHEDULE B DETAIL",
+    "value": "CO 6,780 miles"
+  },
+  {
+    "field": "jurisdiction row 342",
+    "page": "10",
+    "section": "SCHEDULE B DETAIL",
+    "value": "CT 6,797 miles"
+  },
+  {
+    "field": "jurisdiction row 343",
+    "page": "10",
+    "section": "SCHEDULE B DETAIL",
+    "value": "DE 6,814 miles"
+  },
+  {
+    "field": "jurisdiction row 344",
+    "page": "10",
+    "section": "SCHEDULE B DETAIL",
+    "value": "FL 6,831 miles"
+  },
+  {
+    "field": "jurisdiction row 345",
+    "page": "10",
+    "section": "SCHEDULE B DETAIL",
+    "value": "GA 6,848 miles"
+  },
+  {
+    "field": "jurisdiction row 346",
+    "page": "10",
+    "section": "SCHEDULE B DETAIL",
+    "value": "ID 6,865 miles"
+  },
+  {
+    "field": "jurisdiction row 347",
+    "page": "10",
+    "section": "SCHEDULE B DETAIL",
+    "value": "IL 6,882 miles"
+  },
+  {
+    "field": "jurisdiction row 348",
+    "page": "10",
+    "section": "SCHEDULE B DETAIL",
+    "value": "IN 6,899 miles"
+  },
+  {
+    "field": "jurisdiction row 349",
+    "page": "10",
+    "section": "SCHEDULE B DETAIL",
+    "value": "IA 6,916 miles"
+  },
+  {
+    "field": "jurisdiction row 350",
+    "page": "10",
+    "section": "SCHEDULE B DETAIL",
+    "value": "KS 6,933 miles"
+  },
+  {
+    "field": "jurisdiction row 351",
+    "page": "10",
+    "section": "SCHEDULE B DETAIL",
+    "value": "KY 6,950 miles"
+  },
+  {
+    "field": "jurisdiction row 352",
+    "page": "10",
+    "section": "SCHEDULE B DETAIL",
+    "value": "LA 6,967 miles"
+  },
+  {
+    "field": "jurisdiction row 353",
+    "page": "10",
+    "section": "SCHEDULE B DETAIL",
+    "value": "MD 6,984 miles"
+  },
+  {
+    "field": "jurisdiction row 354",
+    "page": "10",
+    "section": "SCHEDULE B DETAIL",
+    "value": "MI 7,001 miles"
+  },
+  {
+    "field": "jurisdiction row 355",
+    "page": "10",
+    "section": "SCHEDULE B DETAIL",
+    "value": "MN 7,018 miles"
+  },
+  {
+    "field": "jurisdiction row 356",
+    "page": "10",
+    "section": "SCHEDULE B DETAIL",
+    "value": "MS 7,035 miles"
+  },
+  {
+    "field": "jurisdiction row 357",
+    "page": "10",
+    "section": "SCHEDULE B DETAIL",
+    "value": "MO 7,052 miles"
+  },
+  {
+    "field": "jurisdiction row 358",
+    "page": "10",
+    "section": "SCHEDULE B DETAIL",
+    "value": "MT 7,069 miles"
+  },
+  {
+    "field": "jurisdiction row 359",
+    "page": "10",
+    "section": "SCHEDULE B DETAIL",
+    "value": "NE 7,086 miles"
+  },
+  {
+    "field": "jurisdiction row 360",
+    "page": "10",
+    "section": "SCHEDULE B DETAIL",
+    "value": "NV 7,103 miles"
+  },
+  {
+    "field": "jurisdiction row 361",
+    "page": "10",
+    "section": "SCHEDULE B DETAIL",
+    "value": "NJ 7,120 miles"
+  },
+  {
+    "field": "jurisdiction row 362",
+    "page": "10",
+    "section": "SCHEDULE B DETAIL",
+    "value": "NM 7,137 miles"
+  },
+  {
+    "field": "jurisdiction row 363",
+    "page": "10",
+    "section": "SCHEDULE B DETAIL",
+    "value": "NY 7,154 miles"
+  },
+  {
+    "field": "jurisdiction row 364",
+    "page": "10",
+    "section": "SCHEDULE B DETAIL",
+    "value": "NC 7,171 miles"
+  },
+  {
+    "field": "jurisdiction row 365",
+    "page": "10",
+    "section": "SCHEDULE B DETAIL",
+    "value": "ND 7,188 miles"
+  },
+  {
+    "field": "jurisdiction row 366",
+    "page": "10",
+    "section": "SCHEDULE B DETAIL",
+    "value": "OH 7,205 miles"
+  },
+  {
+    "field": "jurisdiction row 367",
+    "page": "10",
+    "section": "SCHEDULE B DETAIL",
+    "value": "OK 7,222 miles"
+  },
+  {
+    "field": "jurisdiction row 368",
+    "page": "10",
+    "section": "SCHEDULE B DETAIL",
+    "value": "OR 7,239 miles"
+  },
+  {
+    "field": "jurisdiction row 369",
+    "page": "10",
+    "section": "SCHEDULE B DETAIL",
+    "value": "PA 7,256 miles"
+  },
+  {
+    "field": "jurisdiction row 370",
+    "page": "10",
+    "section": "SCHEDULE B DETAIL",
+    "value": "SC 7,273 miles"
+  },
+  {
+    "field": "jurisdiction row 371",
+    "page": "10",
+    "section": "SCHEDULE B DETAIL",
+    "value": "TN 7,290 miles"
+  },
+  {
+    "field": "jurisdiction row 372",
+    "page": "10",
+    "section": "SCHEDULE B DETAIL",
+    "value": "TX 7,307 miles"
+  },
+  {
+    "field": "jurisdiction row 373",
+    "page": "10",
+    "section": "SCHEDULE B DETAIL",
+    "value": "UT 7,324 miles"
+  },
+  {
+    "field": "jurisdiction row 374",
+    "page": "10",
+    "section": "SCHEDULE B DETAIL",
+    "value": "VA 7,341 miles"
+  },
+  {
+    "field": "jurisdiction row 375",
+    "page": "10",
+    "section": "SCHEDULE B DETAIL",
+    "value": "WA 7,358 miles"
+  },
+  {
+    "field": "jurisdiction row 376",
+    "page": "10",
+    "section": "SCHEDULE B DETAIL",
+    "value": "WV 7,375 miles"
+  },
+  {
+    "field": "jurisdiction row 377",
+    "page": "10",
+    "section": "SCHEDULE B DETAIL",
+    "value": "WI 7,392 miles"
+  },
+  {
+    "field": "jurisdiction row 378",
+    "page": "10",
+    "section": "SCHEDULE B DETAIL",
+    "value": "WY 7,409 miles"
+  },
+  {
+    "field": "jurisdiction row 379",
+    "page": "11",
+    "section": "SCHEDULE B DETAIL",
+    "value": "AL 7,426 miles"
+  },
+  {
+    "field": "jurisdiction row 380",
+    "page": "11",
+    "section": "SCHEDULE B DETAIL",
+    "value": "AZ 7,443 miles"
+  },
+  {
+    "field": "jurisdiction row 381",
+    "page": "11",
+    "section": "SCHEDULE B DETAIL",
+    "value": "AR 7,460 miles"
+  },
+  {
+    "field": "jurisdiction row 382",
+    "page": "11",
+    "section": "SCHEDULE B DETAIL",
+    "value": "CA 7,477 miles"
+  },
+  {
+    "field": "jurisdiction row 383",
+    "page": "11",
+    "section": "SCHEDULE B DETAIL",
+    "value": "CO 7,494 miles"
+  },
+  {
+    "field": "jurisdiction row 384",
+    "page": "11",
+    "section": "SCHEDULE B DETAIL",
+    "value": "CT 7,511 miles"
+  },
+  {
+    "field": "jurisdiction row 385",
+    "page": "11",
+    "section": "SCHEDULE B DETAIL",
+    "value": "DE 7,528 miles"
+  },
+  {
+    "field": "jurisdiction row 386",
+    "page": "11",
+    "section": "SCHEDULE B DETAIL",
+    "value": "FL 7,545 miles"
+  },
+  {
+    "field": "jurisdiction row 387",
+    "page": "11",
+    "section": "SCHEDULE B DETAIL",
+    "value": "GA 7,562 miles"
+  },
+  {
+    "field": "jurisdiction row 388",
+    "page": "11",
+    "section": "SCHEDULE B DETAIL",
+    "value": "ID 7,579 miles"
+  },
+  {
+    "field": "jurisdiction row 389",
+    "page": "11",
+    "section": "SCHEDULE B DETAIL",
+    "value": "IL 7,596 miles"
+  },
+  {
+    "field": "jurisdiction row 390",
+    "page": "11",
+    "section": "SCHEDULE B DETAIL",
+    "value": "IN 7,613 miles"
+  },
+  {
+    "field": "jurisdiction row 391",
+    "page": "11",
+    "section": "SCHEDULE B DETAIL",
+    "value": "IA 7,630 miles"
+  },
+  {
+    "field": "jurisdiction row 392",
+    "page": "11",
+    "section": "SCHEDULE B DETAIL",
+    "value": "KS 7,647 miles"
+  },
+  {
+    "field": "jurisdiction row 393",
+    "page": "11",
+    "section": "SCHEDULE B DETAIL",
+    "value": "KY 7,664 miles"
+  },
+  {
+    "field": "jurisdiction row 394",
+    "page": "11",
+    "section": "SCHEDULE B DETAIL",
+    "value": "LA 7,681 miles"
+  },
+  {
+    "field": "jurisdiction row 395",
+    "page": "11",
+    "section": "SCHEDULE B DETAIL",
+    "value": "MD 7,698 miles"
+  },
+  {
+    "field": "jurisdiction row 396",
+    "page": "11",
+    "section": "SCHEDULE B DETAIL",
+    "value": "MI 7,715 miles"
+  },
+  {
+    "field": "jurisdiction row 397",
+    "page": "11",
+    "section": "SCHEDULE B DETAIL",
+    "value": "MN 7,732 miles"
+  },
+  {
+    "field": "jurisdiction row 398",
+    "page": "11",
+    "section": "SCHEDULE B DETAIL",
+    "value": "MS 7,749 miles"
+  },
+  {
+    "field": "jurisdiction row 399",
+    "page": "11",
+    "section": "SCHEDULE B DETAIL",
+    "value": "MO 7,766 miles"
+  },
+  {
+    "field": "jurisdiction row 400",
+    "page": "11",
+    "section": "SCHEDULE B DETAIL",
+    "value": "MT 7,783 miles"
+  },
+  {
+    "field": "jurisdiction row 401",
+    "page": "11",
+    "section": "SCHEDULE B DETAIL",
+    "value": "NE 7,800 miles"
+  },
+  {
+    "field": "jurisdiction row 402",
+    "page": "11",
+    "section": "SCHEDULE B DETAIL",
+    "value": "NV 7,817 miles"
+  },
+  {
+    "field": "jurisdiction row 403",
+    "page": "11",
+    "section": "SCHEDULE B DETAIL",
+    "value": "NJ 7,834 miles"
+  },
+  {
+    "field": "jurisdiction row 404",
+    "page": "11",
+    "section": "SCHEDULE B DETAIL",
+    "value": "NM 7,851 miles"
+  },
+  {
+    "field": "jurisdiction row 405",
+    "page": "11",
+    "section": "SCHEDULE B DETAIL",
+    "value": "NY 7,868 miles"
+  },
+  {
+    "field": "jurisdiction row 406",
+    "page": "11",
+    "section": "SCHEDULE B DETAIL",
+    "value": "NC 7,885 miles"
+  },
+  {
+    "field": "jurisdiction row 407",
+    "page": "11",
+    "section": "SCHEDULE B DETAIL",
+    "value": "ND 7,902 miles"
+  },
+  {
+    "field": "jurisdiction row 408",
+    "page": "11",
+    "section": "SCHEDULE B DETAIL",
+    "value": "OH 7,919 miles"
+  },
+  {
+    "field": "jurisdiction row 409",
+    "page": "11",
+    "section": "SCHEDULE B DETAIL",
+    "value": "OK 7,936 miles"
+  },
+  {
+    "field": "jurisdiction row 410",
+    "page": "11",
+    "section": "SCHEDULE B DETAIL",
+    "value": "OR 7,953 miles"
+  },
+  {
+    "field": "jurisdiction row 411",
+    "page": "11",
+    "section": "SCHEDULE B DETAIL",
+    "value": "PA 7,970 miles"
+  },
+  {
+    "field": "jurisdiction row 412",
+    "page": "11",
+    "section": "SCHEDULE B DETAIL",
+    "value": "SC 7,987 miles"
+  },
+  {
+    "field": "jurisdiction row 413",
+    "page": "11",
+    "section": "SCHEDULE B DETAIL",
+    "value": "TN 8,004 miles"
+  },
+  {
+    "field": "jurisdiction row 414",
+    "page": "11",
+    "section": "SCHEDULE B DETAIL",
+    "value": "TX 8,021 miles"
+  },
+  {
+    "field": "jurisdiction row 415",
+    "page": "11",
+    "section": "SCHEDULE B DETAIL",
+    "value": "UT 8,038 miles"
+  },
+  {
+    "field": "jurisdiction row 416",
+    "page": "11",
+    "section": "SCHEDULE B DETAIL",
+    "value": "VA 8,055 miles"
+  },
+  {
+    "field": "jurisdiction row 417",
+    "page": "11",
+    "section": "SCHEDULE B DETAIL",
+    "value": "WA 8,072 miles"
+  },
+  {
+    "field": "jurisdiction row 418",
+    "page": "11",
+    "section": "SCHEDULE B DETAIL",
+    "value": "WV 8,089 miles"
+  },
+  {
+    "field": "jurisdiction row 419",
+    "page": "11",
+    "section": "SCHEDULE B DETAIL",
+    "value": "WI 8,106 miles"
+  },
+  {
+    "field": "jurisdiction row 420",
+    "page": "11",
+    "section": "SCHEDULE B DETAIL",
+    "value": "WY 8,123 miles"
+  },
+  {
+    "field": "jurisdiction row 421",
+    "page": "12",
+    "section": "SCHEDULE B DETAIL",
+    "value": "AL 8,140 miles"
+  },
+  {
+    "field": "jurisdiction row 422",
+    "page": "12",
+    "section": "SCHEDULE B DETAIL",
+    "value": "AZ 8,157 miles"
+  },
+  {
+    "field": "jurisdiction row 423",
+    "page": "12",
+    "section": "SCHEDULE B DETAIL",
+    "value": "AR 8,174 miles"
+  },
+  {
+    "field": "jurisdiction row 424",
+    "page": "12",
+    "section": "SCHEDULE B DETAIL",
+    "value": "CA 8,191 miles"
+  },
+  {
+    "field": "jurisdiction row 425",
+    "page": "12",
+    "section": "SCHEDULE B DETAIL",
+    "value": "CO 8,208 miles"
+  },
+  {
+    "field": "jurisdiction row 426",
+    "page": "12",
+    "section": "SCHEDULE B DETAIL",
+    "value": "CT 8,225 miles"
+  },
+  {
+    "field": "jurisdiction row 427",
+    "page": "12",
+    "section": "SCHEDULE B DETAIL",
+    "value": "DE 8,242 miles"
+  },
+  {
+    "field": "jurisdiction row 428",
+    "page": "12",
+    "section": "SCHEDULE B DETAIL",
+    "value": "FL 8,259 miles"
+  },
+  {
+    "field": "jurisdiction row 429",
+    "page": "12",
+    "section": "SCHEDULE B DETAIL",
+    "value": "GA 8,276 miles"
+  },
+  {
+    "field": "jurisdiction row 430",
+    "page": "12",
+    "section": "SCHEDULE B DETAIL",
+    "value": "ID 8,293 miles"
+  },
+  {
+    "field": "jurisdiction row 431",
+    "page": "12",
+    "section": "SCHEDULE B DETAIL",
+    "value": "IL 8,310 miles"
+  },
+  {
+    "field": "jurisdiction row 432",
+    "page": "12",
+    "section": "SCHEDULE B DETAIL",
+    "value": "IN 8,327 miles"
+  },
+  {
+    "field": "jurisdiction row 433",
+    "page": "12",
+    "section": "SCHEDULE B DETAIL",
+    "value": "IA 8,344 miles"
+  },
+  {
+    "field": "jurisdiction row 434",
+    "page": "12",
+    "section": "SCHEDULE B DETAIL",
+    "value": "KS 8,361 miles"
+  },
+  {
+    "field": "jurisdiction row 435",
+    "page": "12",
+    "section": "SCHEDULE B DETAIL",
+    "value": "KY 8,378 miles"
+  },
+  {
+    "field": "jurisdiction row 436",
+    "page": "12",
+    "section": "SCHEDULE B DETAIL",
+    "value": "LA 8,395 miles"
+  },
+  {
+    "field": "jurisdiction row 437",
+    "page": "12",
+    "section": "SCHEDULE B DETAIL",
+    "value": "MD 8,412 miles"
+  },
+  {
+    "field": "jurisdiction row 438",
+    "page": "12",
+    "section": "SCHEDULE B DETAIL",
+    "value": "MI 8,429 miles"
+  },
+  {
+    "field": "jurisdiction row 439",
+    "page": "12",
+    "section": "SCHEDULE B DETAIL",
+    "value": "MN 8,446 miles"
+  },
+  {
+    "field": "jurisdiction row 440",
+    "page": "12",
+    "section": "SCHEDULE B DETAIL",
+    "value": "MS 8,463 miles"
+  },
+  {
+    "field": "jurisdiction row 441",
+    "page": "12",
+    "section": "SCHEDULE B DETAIL",
+    "value": "MO 8,480 miles"
+  },
+  {
+    "field": "jurisdiction row 442",
+    "page": "12",
+    "section": "SCHEDULE B DETAIL",
+    "value": "MT 8,497 miles"
+  },
+  {
+    "field": "jurisdiction row 443",
+    "page": "12",
+    "section": "SCHEDULE B DETAIL",
+    "value": "NE 8,514 miles"
+  },
+  {
+    "field": "jurisdiction row 444",
+    "page": "12",
+    "section": "SCHEDULE B DETAIL",
+    "value": "NV 8,531 miles"
+  },
+  {
+    "field": "jurisdiction row 445",
+    "page": "12",
+    "section": "SCHEDULE B DETAIL",
+    "value": "NJ 8,548 miles"
+  },
+  {
+    "field": "jurisdiction row 446",
+    "page": "12",
+    "section": "SCHEDULE B DETAIL",
+    "value": "NM 8,565 miles"
+  },
+  {
+    "field": "jurisdiction row 447",
+    "page": "12",
+    "section": "SCHEDULE B DETAIL",
+    "value": "NY 8,582 miles"
+  },
+  {
+    "field": "jurisdiction row 448",
+    "page": "12",
+    "section": "SCHEDULE B DETAIL",
+    "value": "NC 8,599 miles"
+  },
+  {
+    "field": "jurisdiction row 449",
+    "page": "12",
+    "section": "SCHEDULE B DETAIL",
+    "value": "ND 8,616 miles"
+  },
+  {
+    "field": "jurisdiction row 450",
+    "page": "12",
+    "section": "SCHEDULE B DETAIL",
+    "value": "OH 8,633 miles"
+  },
+  {
+    "field": "jurisdiction row 451",
+    "page": "12",
+    "section": "SCHEDULE B DETAIL",
+    "value": "OK 8,650 miles"
+  },
+  {
+    "field": "jurisdiction row 452",
+    "page": "12",
+    "section": "SCHEDULE B DETAIL",
+    "value": "OR 8,667 miles"
+  },
+  {
+    "field": "jurisdiction row 453",
+    "page": "12",
+    "section": "SCHEDULE B DETAIL",
+    "value": "PA 8,684 miles"
+  },
+  {
+    "field": "jurisdiction row 454",
+    "page": "12",
+    "section": "SCHEDULE B DETAIL",
+    "value": "SC 8,701 miles"
+  },
+  {
+    "field": "jurisdiction row 455",
+    "page": "12",
+    "section": "SCHEDULE B DETAIL",
+    "value": "TN 8,718 miles"
+  },
+  {
+    "field": "jurisdiction row 456",
+    "page": "12",
+    "section": "SCHEDULE B DETAIL",
+    "value": "TX 8,735 miles"
+  },
+  {
+    "field": "jurisdiction row 457",
+    "page": "12",
+    "section": "SCHEDULE B DETAIL",
+    "value": "UT 8,752 miles"
+  },
+  {
+    "field": "jurisdiction row 458",
+    "page": "12",
+    "section": "SCHEDULE B DETAIL",
+    "value": "VA 8,769 miles"
+  },
+  {
+    "field": "jurisdiction row 459",
+    "page": "12",
+    "section": "SCHEDULE B DETAIL",
+    "value": "WA 8,786 miles"
+  },
+  {
+    "field": "jurisdiction row 460",
+    "page": "12",
+    "section": "SCHEDULE B DETAIL",
+    "value": "WV 8,803 miles"
+  },
+  {
+    "field": "jurisdiction row 461",
+    "page": "12",
+    "section": "SCHEDULE B DETAIL",
+    "value": "WI 8,820 miles"
+  },
+  {
+    "field": "jurisdiction row 462",
+    "page": "12",
+    "section": "SCHEDULE B DETAIL",
+    "value": "WY 8,837 miles"
+  },
+  {
+    "field": "jurisdiction row 463",
+    "page": "13",
+    "section": "SCHEDULE B DETAIL",
+    "value": "AL 8,854 miles"
+  },
+  {
+    "field": "jurisdiction row 464",
+    "page": "13",
+    "section": "SCHEDULE B DETAIL",
+    "value": "AZ 8,871 miles"
+  },
+  {
+    "field": "jurisdiction row 465",
+    "page": "13",
+    "section": "SCHEDULE B DETAIL",
+    "value": "AR 8,888 miles"
+  },
+  {
+    "field": "jurisdiction row 466",
+    "page": "13",
+    "section": "SCHEDULE B DETAIL",
+    "value": "CA 8,905 miles"
+  },
+  {
+    "field": "jurisdiction row 467",
+    "page": "13",
+    "section": "SCHEDULE B DETAIL",
+    "value": "CO 8,922 miles"
+  },
+  {
+    "field": "jurisdiction row 468",
+    "page": "13",
+    "section": "SCHEDULE B DETAIL",
+    "value": "CT 8,939 miles"
+  },
+  {
+    "field": "jurisdiction row 469",
+    "page": "13",
+    "section": "SCHEDULE B DETAIL",
+    "value": "DE 8,956 miles"
+  },
+  {
+    "field": "jurisdiction row 470",
+    "page": "13",
+    "section": "SCHEDULE B DETAIL",
+    "value": "FL 8,973 miles"
+  },
+  {
+    "field": "jurisdiction row 471",
+    "page": "13",
+    "section": "SCHEDULE B DETAIL",
+    "value": "GA 8,990 miles"
+  },
+  {
+    "field": "jurisdiction row 472",
+    "page": "13",
+    "section": "SCHEDULE B DETAIL",
+    "value": "ID 9,007 miles"
+  },
+  {
+    "field": "jurisdiction row 473",
+    "page": "13",
+    "section": "SCHEDULE B DETAIL",
+    "value": "IL 9,024 miles"
+  },
+  {
+    "field": "jurisdiction row 474",
+    "page": "13",
+    "section": "SCHEDULE B DETAIL",
+    "value": "IN 9,041 miles"
+  },
+  {
+    "field": "jurisdiction row 475",
+    "page": "13",
+    "section": "SCHEDULE B DETAIL",
+    "value": "IA 9,058 miles"
+  },
+  {
+    "field": "jurisdiction row 476",
+    "page": "13",
+    "section": "SCHEDULE B DETAIL",
+    "value": "KS 9,075 miles"
+  },
+  {
+    "field": "jurisdiction row 477",
+    "page": "13",
+    "section": "SCHEDULE B DETAIL",
+    "value": "KY 9,092 miles"
+  },
+  {
+    "field": "jurisdiction row 478",
+    "page": "13",
+    "section": "SCHEDULE B DETAIL",
+    "value": "LA 9,109 miles"
+  },
+  {
+    "field": "jurisdiction row 479",
+    "page": "13",
+    "section": "SCHEDULE B DETAIL",
+    "value": "MD 9,126 miles"
+  },
+  {
+    "field": "jurisdiction row 480",
+    "page": "13",
+    "section": "SCHEDULE B DETAIL",
+    "value": "MI 9,143 miles"
+  },
+  {
+    "field": "jurisdiction row 481",
+    "page": "13",
+    "section": "SCHEDULE B DETAIL",
+    "value": "MN 9,160 miles"
+  },
+  {
+    "field": "jurisdiction row 482",
+    "page": "13",
+    "section": "SCHEDULE B DETAIL",
+    "value": "MS 9,177 miles"
+  },
+  {
+    "field": "jurisdiction row 483",
+    "page": "13",
+    "section": "SCHEDULE B DETAIL",
+    "value": "MO 9,194 miles"
+  },
+  {
+    "field": "jurisdiction row 484",
+    "page": "13",
+    "section": "SCHEDULE B DETAIL",
+    "value": "MT 9,211 miles"
+  },
+  {
+    "field": "jurisdiction row 485",
+    "page": "13",
+    "section": "SCHEDULE B DETAIL",
+    "value": "NE 9,228 miles"
+  },
+  {
+    "field": "jurisdiction row 486",
+    "page": "13",
+    "section": "SCHEDULE B DETAIL",
+    "value": "NV 9,245 miles"
+  },
+  {
+    "field": "jurisdiction row 487",
+    "page": "13",
+    "section": "SCHEDULE B DETAIL",
+    "value": "NJ 9,262 miles"
+  },
+  {
+    "field": "jurisdiction row 488",
+    "page": "13",
+    "section": "SCHEDULE B DETAIL",
+    "value": "NM 9,279 miles"
+  },
+  {
+    "field": "jurisdiction row 489",
+    "page": "13",
+    "section": "SCHEDULE B DETAIL",
+    "value": "NY 9,296 miles"
+  },
+  {
+    "field": "jurisdiction row 490",
+    "page": "13",
+    "section": "SCHEDULE B DETAIL",
+    "value": "NC 9,313 miles"
+  },
+  {
+    "field": "jurisdiction row 491",
+    "page": "13",
+    "section": "SCHEDULE B DETAIL",
+    "value": "ND 9,330 miles"
+  },
+  {
+    "field": "jurisdiction row 492",
+    "page": "13",
+    "section": "SCHEDULE B DETAIL",
+    "value": "OH 9,347 miles"
+  },
+  {
+    "field": "jurisdiction row 493",
+    "page": "13",
+    "section": "SCHEDULE B DETAIL",
+    "value": "OK 9,364 miles"
+  },
+  {
+    "field": "jurisdiction row 494",
+    "page": "13",
+    "section": "SCHEDULE B DETAIL",
+    "value": "OR 9,381 miles"
+  },
+  {
+    "field": "495",
+    "page": "13",
+    "section": "SCHEDULE B DETAIL",
+    "value": "PA 9,398"
+  },
+  {
+    "field": "496",
+    "page": "13",
+    "section": "SCHEDULE B DETAIL",
+    "value": "SC 9,415"
+  },
+  {
+    "field": "497",
+    "page": "13",
+    "section": "SCHEDULE B DETAIL",
+    "value": "TN 9,432"
+  },
+  {
+    "field": "498",
+    "page": "13",
+    "section": "SCHEDULE B DETAIL",
+    "value": "TX 9,449"
+  },
+  {
+    "field": "499",
+    "page": "13",
+    "section": "SCHEDULE B DETAIL",
+    "value": "UT 9,466"
+  },
+  {
+    "field": "500",
+    "page": "13",
+    "section": "SCHEDULE B DETAIL",
+    "value": "VA 9,483"
+  },
+  {
+    "field": "501",
+    "page": "13",
+    "section": "SCHEDULE B DETAIL",
+    "value": "WA 9,500"
+  },
+  {
+    "field": "502",
+    "page": "13",
+    "section": "SCHEDULE B DETAIL",
+    "value": "WV 9,517"
+  },
+  {
+    "field": "503",
+    "page": "13",
+    "section": "SCHEDULE B DETAIL",
+    "value": "WI 9,534"
+  },
+  {
+    "field": "504",
+    "page": "13",
+    "section": "SCHEDULE B DETAIL",
+    "value": "WY 9,551"
+  },
+  {
+    "field": "505",
+    "page": "14",
+    "section": "SCHEDULE B DETAIL",
+    "value": "AL 9,568"
+  },
+  {
+    "field": "506",
+    "page": "14",
+    "section": "SCHEDULE B DETAIL",
+    "value": "AZ 9,585"
+  },
+  {
+    "field": "507",
+    "page": "14",
+    "section": "SCHEDULE B DETAIL",
+    "value": "AR 9,602"
+  },
+  {
+    "field": "508",
+    "page": "14",
+    "section": "SCHEDULE B DETAIL",
+    "value": "CA 9,619"
+  },
+  {
+    "field": "509",
+    "page": "14",
+    "section": "SCHEDULE B DETAIL",
+    "value": "CO 9,636"
+  },
+  {
+    "field": "510",
+    "page": "14",
+    "section": "SCHEDULE B DETAIL",
+    "value": "CT 9,653"
+  },
+  {
+    "field": "511",
+    "page": "14",
+    "section": "SCHEDULE B DETAIL",
+    "value": "DE 9,670"
+  },
+  {
+    "field": "512",
+    "page": "14",
+    "section": "SCHEDULE B DETAIL",
+    "value": "FL 9,687"
+  },
+  {
+    "field": "513",
+    "page": "14",
+    "section": "SCHEDULE B DETAIL",
+    "value": "GA 9,704"
+  },
+  {
+    "field": "514",
+    "page": "14",
+    "section": "SCHEDULE B DETAIL",
+    "value": "ID 9,721"
+  },
+  {
+    "field": "515",
+    "page": "14",
+    "section": "SCHEDULE B DETAIL",
+    "value": "IL 9,738"
+  },
+  {
+    "field": "516",
+    "page": "14",
+    "section": "SCHEDULE B DETAIL",
+    "value": "IN 9,755"
+  },
+  {
+    "field": "517",
+    "page": "14",
+    "section": "SCHEDULE B DETAIL",
+    "value": "IA 9,772"
+  },
+  {
+    "field": "518",
+    "page": "14",
+    "section": "SCHEDULE B DETAIL",
+    "value": "KS 9,789"
+  },
+  {
+    "field": "519",
+    "page": "14",
+    "section": "SCHEDULE B DETAIL",
+    "value": "KY 9,806"
+  },
+  {
+    "field": "520",
+    "page": "14",
+    "section": "SCHEDULE B DETAIL",
+    "value": "LA 9,823"
+  },
+  {
+    "field": "521",
+    "page": "14",
+    "section": "SCHEDULE B DETAIL",
+    "value": "MD 9,840"
+  },
+  {
+    "field": "522",
+    "page": "14",
+    "section": "SCHEDULE B DETAIL",
+    "value": "MI 9,857"
+  },
+  {
+    "field": "jurisdiction row 523",
+    "page": "14",
+    "section": "SCHEDULE B DETAIL",
+    "value": "MN 9,874 miles"
+  },
+  {
+    "field": "jurisdiction row 524",
+    "page": "14",
+    "section": "SCHEDULE B DETAIL",
+    "value": "MS 9,891 miles"
+  },
+  {
+    "field": "jurisdiction row 525",
+    "page": "14",
+    "section": "SCHEDULE B DETAIL",
+    "value": "MO 9,908 miles"
+  },
+  {
+    "field": "jurisdiction row 526",
+    "page": "14",
+    "section": "SCHEDULE B DETAIL",
+    "value": "MT 9,925 miles"
+  },
+  {
+    "field": "jurisdiction row 527",
+    "page": "14",
+    "section": "SCHEDULE B DETAIL",
+    "value": "NE 9,942 miles"
+  },
+  {
+    "field": "jurisdiction row 528",
+    "page": "14",
+    "section": "SCHEDULE B DETAIL",
+    "value": "NV 9,959 miles"
+  },
+  {
+    "field": "jurisdiction row 529",
+    "page": "14",
+    "section": "SCHEDULE B DETAIL",
+    "value": "NJ 9,976 miles"
+  },
+  {
+    "field": "jurisdiction row 530",
+    "page": "14",
+    "section": "SCHEDULE B DETAIL",
+    "value": "NM 9,993 miles"
+  },
+  {
+    "field": "jurisdiction row 531",
+    "page": "14",
+    "section": "SCHEDULE B DETAIL",
+    "value": "NY 10,010 miles"
+  },
+  {
+    "field": "jurisdiction row 532",
+    "page": "14",
+    "section": "SCHEDULE B DETAIL",
+    "value": "NC 10,027 miles"
+  },
+  {
+    "field": "jurisdiction row 533",
+    "page": "14",
+    "section": "SCHEDULE B DETAIL",
+    "value": "ND 10,044 miles"
+  },
+  {
+    "field": "jurisdiction row 534",
+    "page": "14",
+    "section": "SCHEDULE B DETAIL",
+    "value": "OH 10,061 miles"
+  },
+  {
+    "field": "jurisdiction row 535",
+    "page": "14",
+    "section": "SCHEDULE B DETAIL",
+    "value": "OK 10,078 miles"
+  },
+  {
+    "field": "jurisdiction row 536",
+    "page": "14",
+    "section": "SCHEDULE B DETAIL",
+    "value": "OR 10,095 miles"
+  },
+  {
+    "field": "jurisdiction row 537",
+    "page": "14",
+    "section": "SCHEDULE B DETAIL",
+    "value": "PA 10,112 miles"
+  },
+  {
+    "field": "jurisdiction row 538",
+    "page": "14",
+    "section": "SCHEDULE B DETAIL",
+    "value": "SC 10,129 miles"
+  },
+  {
+    "field": "jurisdiction row 539",
+    "page": "14",
+    "section": "SCHEDULE B DETAIL",
+    "value": "TN 10,146 miles"
+  },
+  {
+    "field": "jurisdiction row 540",
+    "page": "14",
+    "section": "SCHEDULE B DETAIL",
+    "value": "TX 10,163 miles"
+  },
+  {
+    "field": "jurisdiction row 541",
+    "page": "14",
+    "section": "SCHEDULE B DETAIL",
+    "value": "UT 10,180 miles"
+  },
+  {
+    "field": "jurisdiction row 542",
+    "page": "14",
+    "section": "SCHEDULE B DETAIL",
+    "value": "VA 10,197 miles"
+  },
+  {
+    "field": "jurisdiction row 543",
+    "page": "14",
+    "section": "SCHEDULE B DETAIL",
+    "value": "WA 10,214 miles"
+  },
+  {
+    "field": "jurisdiction row 544",
+    "page": "14",
+    "section": "SCHEDULE B DETAIL",
+    "value": "WV 10,231 miles"
+  },
+  {
+    "field": "jurisdiction row 545",
+    "page": "14",
+    "section": "SCHEDULE B DETAIL",
+    "value": "WI 10,248 miles"
+  },
+  {
+    "field": "jurisdiction row 546",
+    "page": "14",
+    "section": "SCHEDULE B DETAIL",
+    "value": "WY 10,265 miles"
+  },
+  {
+    "field": "jurisdiction row 547",
+    "page": "15",
+    "section": "SCHEDULE B DETAIL",
+    "value": "AL 10,282 miles"
+  },
+  {
+    "field": "jurisdiction row 548",
+    "page": "15",
+    "section": "SCHEDULE B DETAIL",
+    "value": "AZ 10,299 miles"
+  },
+  {
+    "field": "jurisdiction row 549",
+    "page": "15",
+    "section": "SCHEDULE B DETAIL",
+    "value": "AR 10,316 miles"
+  },
+  {
+    "field": "jurisdiction row 550",
+    "page": "15",
+    "section": "SCHEDULE B DETAIL",
+    "value": "CA 10,333 miles"
+  },
+  {
+    "field": "jurisdiction row 551",
+    "page": "15",
+    "section": "SCHEDULE B DETAIL",
+    "value": "CO 10,350 miles"
+  },
+  {
+    "field": "jurisdiction row 552",
+    "page": "15",
+    "section": "SCHEDULE B DETAIL",
+    "value": "CT 10,367 miles"
+  },
+  {
+    "field": "jurisdiction row 553",
+    "page": "15",
+    "section": "SCHEDULE B DETAIL",
+    "value": "DE 10,384 miles"
+  },
+  {
+    "field": "jurisdiction row 554",
+    "page": "15",
+    "section": "SCHEDULE B DETAIL",
+    "value": "FL 10,401 miles"
+  },
+  {
+    "field": "jurisdiction row 555",
+    "page": "15",
+    "section": "SCHEDULE B DETAIL",
+    "value": "GA 10,418 miles"
+  },
+  {
+    "field": "jurisdiction row 556",
+    "page": "15",
+    "section": "SCHEDULE B DETAIL",
+    "value": "ID 10,435 miles"
+  },
+  {
+    "field": "jurisdiction row 557",
+    "page": "15",
+    "section": "SCHEDULE B DETAIL",
+    "value": "IL 10,452 miles"
+  },
+  {
+    "field": "jurisdiction row 558",
+    "page": "15",
+    "section": "SCHEDULE B DETAIL",
+    "value": "IN 10,469 miles"
+  },
+  {
+    "field": "jurisdiction row 559",
+    "page": "15",
+    "section": "SCHEDULE B DETAIL",
+    "value": "IA 10,486 miles"
+  },
+  {
+    "field": "jurisdiction row 560",
+    "page": "15",
+    "section": "SCHEDULE B DETAIL",
+    "value": "KS 10,503 miles"
+  },
+  {
+    "field": "jurisdiction row 561",
+    "page": "15",
+    "section": "SCHEDULE B DETAIL",
+    "value": "KY 10,520 miles"
+  },
+  {
+    "field": "jurisdiction row 562",
+    "page": "15",
+    "section": "SCHEDULE B DETAIL",
+    "value": "LA 10,537 miles"
+  },
+  {
+    "field": "563",
+    "page": "15",
+    "section": "SCHEDULE B DETAIL",
+    "value": "MD 10,554"
+  },
+  {
+    "field": "564",
+    "page": "15",
+    "section": "SCHEDULE B DETAIL",
+    "value": "MI 10,571"
+  },
+  {
+    "field": "565",
+    "page": "15",
+    "section": "SCHEDULE B DETAIL",
+    "value": "MN 10,588"
+  },
+  {
+    "field": "566",
+    "page": "15",
+    "section": "SCHEDULE B DETAIL",
+    "value": "MS 10,605"
+  },
+  {
+    "field": "567",
+    "page": "15",
+    "section": "SCHEDULE B DETAIL",
+    "value": "MO 10,622"
+  },
+  {
+    "field": "568",
+    "page": "15",
+    "section": "SCHEDULE B DETAIL",
+    "value": "MT 10,639"
+  },
+  {
+    "field": "569",
+    "page": "15",
+    "section": "SCHEDULE B DETAIL",
+    "value": "NE 10,656"
+  },
+  {
+    "field": "570",
+    "page": "15",
+    "section": "SCHEDULE B DETAIL",
+    "value": "NV 10,673"
+  },
+  {
+    "field": "571",
+    "page": "15",
+    "section": "SCHEDULE B DETAIL",
+    "value": "NJ 10,690"
+  },
+  {
+    "field": "572",
+    "page": "15",
+    "section": "SCHEDULE B DETAIL",
+    "value": "NM 10,707"
+  },
+  {
+    "field": "573",
+    "page": "15",
+    "section": "SCHEDULE B DETAIL",
+    "value": "NY 10,724"
+  },
+  {
+    "field": "574",
+    "page": "15",
+    "section": "SCHEDULE B DETAIL",
+    "value": "NC 10,741"
+  },
+  {
+    "field": "575",
+    "page": "15",
+    "section": "SCHEDULE B DETAIL",
+    "value": "ND 10,758"
+  },
+  {
+    "field": "576",
+    "page": "15",
+    "section": "SCHEDULE B DETAIL",
+    "value": "OH 10,775"
+  },
+  {
+    "field": "577",
+    "page": "15",
+    "section": "SCHEDULE B DETAIL",
+    "value": "OK 10,792"
+  },
+  {
+    "field": "578",
+    "page": "15",
+    "section": "SCHEDULE B DETAIL",
+    "value": "OR 10,809"
+  },
+  {
+    "field": "579",
+    "page": "15",
+    "section": "SCHEDULE B DETAIL",
+    "value": "PA 10,826"
+  },
+  {
+    "field": "580",
+    "page": "15",
+    "section": "SCHEDULE B DETAIL",
+    "value": "SC 10,843"
+  },
+  {
+    "field": "581",
+    "page": "15",
+    "section": "SCHEDULE B DETAIL",
+    "value": "TN 10,860"
+  },
+  {
+    "field": "582",
+    "page": "15",
+    "section": "SCHEDULE B DETAIL",
+    "value": "TX 10,877"
+  },
+  {
+    "field": "583",
+    "page": "15",
+    "section": "SCHEDULE B DETAIL",
+    "value": "UT 10,894"
+  },
+  {
+    "field": "584",
+    "page": "15",
+    "section": "SCHEDULE B DETAIL",
+    "value": "VA 10,911"
+  },
+  {
+    "field": "585",
+    "page": "15",
+    "section": "SCHEDULE B DETAIL",
+    "value": "WA 10,928"
+  },
+  {
+    "field": "586",
+    "page": "15",
+    "section": "SCHEDULE B DETAIL",
+    "value": "WV 10,945"
+  },
+  {
+    "field": "587",
+    "page": "15",
+    "section": "SCHEDULE B DETAIL",
+    "value": "WI 10,962"
+  },
+  {
+    "field": "588",
+    "page": "15",
+    "section": "SCHEDULE B DETAIL",
+    "value": "WY 10,979"
+  },
+  {
+    "field": "589",
+    "page": "16",
+    "section": "SCHEDULE B DETAIL",
+    "value": "AL 10,996"
+  },
+  {
+    "field": "590",
+    "page": "16",
+    "section": "SCHEDULE B DETAIL",
+    "value": "AZ 11,013"
+  },
+  {
+    "field": "jurisdiction row 591",
+    "page": "16",
+    "section": "SCHEDULE B DETAIL",
+    "value": "AR 11,030 miles"
+  },
+  {
+    "field": "jurisdiction row 592",
+    "page": "16",
+    "section": "SCHEDULE B DETAIL",
+    "value": "CA 11,047 miles"
+  },
+  {
+    "field": "jurisdiction row 593",
+    "page": "16",
+    "section": "SCHEDULE B DETAIL",
+    "value": "CO 11,064 miles"
+  },
+  {
+    "field": "jurisdiction row 594",
+    "page": "16",
+    "section": "SCHEDULE B DETAIL",
+    "value": "CT 11,081 miles"
+  },
+  {
+    "field": "jurisdiction row 595",
+    "page": "16",
+    "section": "SCHEDULE B DETAIL",
+    "value": "DE 11,098 miles"
+  },
+  {
+    "field": "jurisdiction row 596",
+    "page": "16",
+    "section": "SCHEDULE B DETAIL",
+    "value": "FL 11,115 miles"
+  },
+  {
+    "field": "jurisdiction row 597",
+    "page": "16",
+    "section": "SCHEDULE B DETAIL",
+    "value": "GA 11,132 miles"
+  },
+  {
+    "field": "jurisdiction row 598",
+    "page": "16",
+    "section": "SCHEDULE B DETAIL",
+    "value": "ID 11,149 miles"
+  },
+  {
+    "field": "jurisdiction row 599",
+    "page": "16",
+    "section": "SCHEDULE B DETAIL",
+    "value": "IL 11,166 miles"
+  },
+  {
+    "field": "jurisdiction row 600",
+    "page": "16",
+    "section": "SCHEDULE B DETAIL",
+    "value": "IN 11,183 miles"
+  },
+  {
+    "field": "jurisdiction row 601",
+    "page": "16",
+    "section": "SCHEDULE B DETAIL",
+    "value": "IA 11,200 miles"
+  },
+  {
+    "field": "jurisdiction row 602",
+    "page": "16",
+    "section": "SCHEDULE B DETAIL",
+    "value": "KS 11,217 miles"
+  },
+  {
+    "field": "jurisdiction row 603",
+    "page": "16",
+    "section": "SCHEDULE B DETAIL",
+    "value": "KY 11,234 miles"
+  },
+  {
+    "field": "jurisdiction row 604",
+    "page": "16",
+    "section": "SCHEDULE B DETAIL",
+    "value": "LA 11,251 miles"
+  },
+  {
+    "field": "jurisdiction row 605",
+    "page": "16",
+    "section": "SCHEDULE B DETAIL",
+    "value": "MD 11,268 miles"
+  },
+  {
+    "field": "jurisdiction row 606",
+    "page": "16",
+    "section": "SCHEDULE B DETAIL",
+    "value": "MI 11,285 miles"
+  },
+  {
+    "field": "jurisdiction row 607",
+    "page": "16",
+    "section": "SCHEDULE B DETAIL",
+    "value": "MN 11,302 miles"
+  },
+  {
+    "field": "jurisdiction row 608",
+    "page": "16",
+    "section": "SCHEDULE B DETAIL",
+    "value": "MS 11,319 miles"
+  },
+  {
+    "field": "jurisdiction row 609",
+    "page": "16",
+    "section": "SCHEDULE B DETAIL",
+    "value": "MO 11,336 miles"
+  },
+  {
+    "field": "jurisdiction row 610",
+    "page": "16",
+    "section": "SCHEDULE B DETAIL",
+    "value": "MT 11,353 miles"
+  },
+  {
+    "field": "jurisdiction row 611",
+    "page": "16",
+    "section": "SCHEDULE B DETAIL",
+    "value": "NE 11,370 miles"
+  },
+  {
+    "field": "jurisdiction row 612",
+    "page": "16",
+    "section": "SCHEDULE B DETAIL",
+    "value": "NV 11,387 miles"
+  },
+  {
+    "field": "jurisdiction row 613",
+    "page": "16",
+    "section": "SCHEDULE B DETAIL",
+    "value": "NJ 11,404 miles"
+  },
+  {
+    "field": "jurisdiction row 614",
+    "page": "16",
+    "section": "SCHEDULE B DETAIL",
+    "value": "NM 11,421 miles"
+  },
+  {
+    "field": "jurisdiction row 615",
+    "page": "16",
+    "section": "SCHEDULE B DETAIL",
+    "value": "NY 11,438 miles"
+  },
+  {
+    "field": "jurisdiction row 616",
+    "page": "16",
+    "section": "SCHEDULE B DETAIL",
+    "value": "NC 11,455 miles"
+  },
+  {
+    "field": "jurisdiction row 617",
+    "page": "16",
+    "section": "SCHEDULE B DETAIL",
+    "value": "ND 11,472 miles"
+  },
+  {
+    "field": "jurisdiction row 618",
+    "page": "16",
+    "section": "SCHEDULE B DETAIL",
+    "value": "OH 11,489 miles"
+  },
+  {
+    "field": "jurisdiction row 619",
+    "page": "16",
+    "section": "SCHEDULE B DETAIL",
+    "value": "OK 11,506 miles"
+  },
+  {
+    "field": "jurisdiction row 620",
+    "page": "16",
+    "section": "SCHEDULE B DETAIL",
+    "value": "OR 11,523 miles"
+  },
+  {
+    "field": "jurisdiction row 621",
+    "page": "16",
+    "section": "SCHEDULE B DETAIL",
+    "value": "PA 11,540 miles"
+  },
+  {
+    "field": "jurisdiction row 622",
+    "page": "16",
+    "section": "SCHEDULE B DETAIL",
+    "value": "SC 11,557 miles"
+  },
+  {
+    "field": "jurisdiction row 623",
+    "page": "16",
+    "section": "SCHEDULE B DETAIL",
+    "value": "TN 11,574 miles"
+  },
+  {
+    "field": "jurisdiction row 624",
+    "page": "16",
+    "section": "SCHEDULE B DETAIL",
+    "value": "TX 11,591 miles"
+  },
+  {
+    "field": "jurisdiction row 625",
+    "page": "16",
+    "section": "SCHEDULE B DETAIL",
+    "value": "UT 11,608 miles"
+  },
+  {
+    "field": "jurisdiction row 626",
+    "page": "16",
+    "section": "SCHEDULE B DETAIL",
+    "value": "VA 11,625 miles"
+  },
+  {
+    "field": "jurisdiction row 627",
+    "page": "16",
+    "section": "SCHEDULE B DETAIL",
+    "value": "WA 11,642 miles"
+  },
+  {
+    "field": "jurisdiction row 628",
+    "page": "16",
+    "section": "SCHEDULE B DETAIL",
+    "value": "WV 11,659 miles"
+  },
+  {
+    "field": "jurisdiction row 629",
+    "page": "16",
+    "section": "SCHEDULE B DETAIL",
+    "value": "WI 11,676 miles"
+  },
+  {
+    "field": "jurisdiction row 630",
+    "page": "16",
+    "section": "SCHEDULE B DETAIL",
+    "value": "WY 11,693 miles"
+  },
+  {
+    "field": "jurisdiction row 631",
+    "page": "17",
+    "section": "SCHEDULE B DETAIL",
+    "value": "AL 11,710 miles"
+  },
+  {
+    "field": "jurisdiction row 632",
+    "page": "17",
+    "section": "SCHEDULE B DETAIL",
+    "value": "AZ 11,727 miles"
+  },
+  {
+    "field": "jurisdiction row 633",
+    "page": "17",
+    "section": "SCHEDULE B DETAIL",
+    "value": "AR 11,744 miles"
+  },
+  {
+    "field": "jurisdiction row 634",
+    "page": "17",
+    "section": "SCHEDULE B DETAIL",
+    "value": "CA 11,761 miles"
+  },
+  {
+    "field": "jurisdiction row 635",
+    "page": "17",
+    "section": "SCHEDULE B DETAIL",
+    "value": "CO 11,778 miles"
+  },
+  {
+    "field": "jurisdiction row 636",
+    "page": "17",
+    "section": "SCHEDULE B DETAIL",
+    "value": "CT 11,795 miles"
+  },
+  {
+    "field": "jurisdiction row 637",
+    "page": "17",
+    "section": "SCHEDULE B DETAIL",
+    "value": "DE 11,812 miles"
+  },
+  {
+    "field": "jurisdiction row 638",
+    "page": "17",
+    "section": "SCHEDULE B DETAIL",
+    "value": "FL 11,829 miles"
+  },
+  {
+    "field": "jurisdiction row 639",
+    "page": "17",
+    "section": "SCHEDULE B DETAIL",
+    "value": "GA 11,846 miles"
+  },
+  {
+    "field": "jurisdiction row 640",
+    "page": "17",
+    "section": "SCHEDULE B DETAIL",
+    "value": "ID 11,863 miles"
+  },
+  {
+    "field": "jurisdiction row 641",
+    "page": "17",
+    "section": "SCHEDULE B DETAIL",
+    "value": "IL 11,880 miles"
+  },
+  {
+    "field": "jurisdiction row 642",
+    "page": "17",
+    "section": "SCHEDULE B DETAIL",
+    "value": "IN 11,897 miles"
+  },
+  {
+    "field": "jurisdiction row 643",
+    "page": "17",
+    "section": "SCHEDULE B DETAIL",
+    "value": "IA 11,914 miles"
+  },
+  {
+    "field": "jurisdiction row 644",
+    "page": "17",
+    "section": "SCHEDULE B DETAIL",
+    "value": "KS 11,931 miles"
+  },
+  {
+    "field": "jurisdiction row 645",
+    "page": "17",
+    "section": "SCHEDULE B DETAIL",
+    "value": "KY 11,948 miles"
+  },
+  {
+    "field": "jurisdiction row 646",
+    "page": "17",
+    "section": "SCHEDULE B DETAIL",
+    "value": "LA 11,965 miles"
+  },
+  {
+    "field": "jurisdiction row 647",
+    "page": "17",
+    "section": "SCHEDULE B DETAIL",
+    "value": "MD 11,982 miles"
+  },
+  {
+    "field": "jurisdiction row 648",
+    "page": "17",
+    "section": "SCHEDULE B DETAIL",
+    "value": "MI 11,999 miles"
+  },
+  {
+    "field": "jurisdiction row 649",
+    "page": "17",
+    "section": "SCHEDULE B DETAIL",
+    "value": "MN 12,016 miles"
+  }
+]

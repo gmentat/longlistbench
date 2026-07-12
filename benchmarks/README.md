@@ -19,11 +19,12 @@ The released transcript condition is `ocr`. The current corpus does not ship cle
 
 ## Complexity Stressors
 
-The released documents are not only grouped by config. Each sample also carries a `problems` list that records the modeled complexity stressors:
+The released documents are not only grouped by config. Each sample carries 14 canonical complexity stressors in `problems`; the manifest's 45 distinct tokens also include finer audit tags.
 
 | Tag | Meaning |
 |---|---|
 | `page_breaks` | Lists or supporting evidence span pages with repeated headers or inherited context. |
+| `split_records` | One target record has fields in separate visual blocks, sections, or pages. |
 | `multi_row` | Records include wrapped notes, descriptions, clauses, or continuation rows. |
 | `duplicates` | Prior-term, archived, duplicate, or near-duplicate distractor material is present. |
 | `large_doc` | The document is long enough to stress truncation and record-completeness behavior. |
@@ -46,6 +47,7 @@ Representative pages for visual audit:
 | Stressor | PDF/pages | Visible evidence |
 |---|---|---|
 | `page_breaks` | `ifta_mileage_by_vehicle_001`, pages 3-4 | Same unit section spans two pages with repeated unit context. |
+| `split_records` | `ifta_multisection_return_001`, pages 1, 2, and 4 | Return context, Schedule A values, and tax details form one jurisdiction record. |
 | `multi_row` | `loss_run_external_001`, pages 1-2; `driver_mvr_packet_001`, page 10 | Description/detail rows and driver/MVR detail blocks. |
 | `duplicates` | `loss_run_external_001`, pages 1-2; `multihop_bop_012_001`, page 142 | No-claim/summary rows and archived prior-term distractors. |
 | `large_doc` | `ifta_mileage_by_vehicle_008`, whole PDF; `mixed_cgl_040_001`, whole PDF | 218-page operations packet and 316-page policy packet. |
@@ -141,7 +143,7 @@ python benchmarks/validate_ocr_vs_golden.py --claims-dir data
 python benchmarks/validate_ocr_numeric_fidelity.py --claims-dir data --min-abs 10
 ```
 
-The current release validates all 36 PDFs with 100.0% average identifier coverage, 99.9% tracked identifier-field support, 39 target records with at least one tracked identifier missing from OCR, and 0 unrecoverable ground-truth numeric values at the default numeric-fidelity threshold. These commands validate released OCR support, not extraction correctness. Extraction correctness is checked by the evaluator against the full ground-truth records using flattened field-value micro-F1, so IDs alone are not sufficient for a high score.
+The current release validates all 36 PDFs with 100.0% average identifier coverage, 99.9% tracked identifier-field support, 39 target records with at least one tracked identifier missing from OCR, and 0 unrecoverable ground-truth numeric values at the default numeric-fidelity threshold. These commands validate released OCR support, not extraction correctness. The evaluator checks exact normalized records and complete documents, with flattened field-value micro-F1 retained as secondary partial credit, so IDs alone are not sufficient for a high score.
 
 ## Evaluation
 
@@ -162,8 +164,19 @@ python benchmarks/evaluate_models.py \
 # Regenerate a report offline from an existing results directory
 python benchmarks/evaluate_models.py --offline --output-dir benchmarks/results/scratch --transcripts ocr
 
-# Audit a saved report by recomputing full field-value metrics from predictions
+# Audit a saved report by recomputing strict and field metrics from predictions
 python benchmarks/check_evaluation_report.py --results-dir benchmarks/results/scratch
+
+# Reproduce the released Codex CLI protocol (macOS sandbox-exec required)
+uv run python benchmarks/run_codex_cli_evaluation.py \
+  --output-dir benchmarks/results/codex_full_current_ocr_v2 \
+  --workers 4
+
+# Reproduce the released Claude Code protocol with subscription authentication
+uv run python benchmarks/run_claude_cli_evaluation.py \
+  --output-dir benchmarks/results/claude_opus48_full_current_ocr_v2 \
+  --workers 4 \
+  --timeout-seconds 3600
 ```
 
 Results are written to the `--output-dir`:
@@ -173,11 +186,13 @@ Results are written to the `--output-dir`:
 
 Primary benchmark comparisons should use per-document extraction protocols: the model or agent receives one PDF/OCR transcript plus the schema or field contract, then returns the complete target list for that document. Deterministic parsers are useful diagnostics for parser-friendly control families, but they should not be treated as the main benchmark target unless the paper is explicitly about template-transfer parsing.
 
+For generic records, the current runners derive sample-specific field names and record groups from ground-truth object structure before creating the model workspace. This is output-schema disclosure, not value access: target values, target counts, ground-truth files, and generator code are not placed in the sandbox.
+
 Saved reports under `benchmarks/results/` may refer to earlier corpus versions. Do not cite them as current-layout baselines unless their report provenance records the current `data/manifest.json` hash.
 
-The current full-corpus Codex CLI `gpt-5.5` sandbox OCR run with `model_reasoning_effort="xhigh"` is saved under `benchmarks/results/codex_full_current_ocr_v2/`: 36 documents, 33,450 target records, 0 extraction errors, 97.7% micro-F1, 96.8% recall, 98.7% precision, and 96.7% document-macro F1.
+The current full-corpus results use the same repository-denied OCR protocol. Codex CLI `gpt-5.5` recovers 89.5% of target records exactly and completes 12/36 documents; Claude Code `claude-opus-4-8` recovers 86.9% exactly and completes 13/36. On the 21 structural-challenge documents, exact-record recall is 68.9% and 60.7%; both agents reach 99.3% on the 15 scale controls. Field micro-F1 remains available as a partial-credit diagnostic at 98.7% and 98.6%. Both runs cover 33,450 targets with zero execution errors. Saved predictions are under `benchmarks/results/codex_full_current_ocr_v2/` and `benchmarks/results/claude_opus48_full_current_ocr_v2/`.
 
-The strongest stressor signal is regime-specific. Driver schedule, driver/MVR, multisection IFTA, and policy packet regimes score 87.7-92.8% F1, while parser-friendly IFTA mileage and vehicle schedule regimes are near-perfect controls. Treat single-sample probe folders as older diagnostics unless rerun against the current manifest.
+The strongest shared exact-record gaps are driver/MVR enrichment (1.9% Codex, 0.0% Claude) and return schedules (65.2% and 63.9%). Multisection IFTA joins reach 99.9% for both, showing that a tagged stressor need not reduce every agent's accuracy. The scorer canonicalizes case, whitespace, dates, decimals, accounting negatives, and documented domain-label equivalents. Treat single-sample probe folders as older diagnostics unless rerun against the current manifest.
 
 ## Hugging Face Export
 
@@ -200,6 +215,8 @@ The export writes:
 - `data/policy_packets/test-00000-of-00001.parquet` - 3 policy PDFs.
 - `schemas/*.schema.json` - public extraction schemas.
 - `metadata/manifest.json` - source manifest copied from `data/`.
+- `evaluation/codex_full_current_ocr_v2/` - the released Codex report and all 36 saved predictions.
+- `evaluation/claude_opus48_full_current_ocr_v2/` - the released Claude report, run metadata, and all 36 saved predictions.
 
 Each Parquet row includes `document_id`, `domain`, `complexity_regime`, `document_format`, `target_field`, `target_record_type`, `target_count`, embedded `pdf`, JSON-string `ground_truth`, JSON-string `metadata`, and `ocr_transcript`. Claim multi-hop rows use `target_field="incidents"`; operations, external loss-run, and policy rows use `target_field="records"`.
 

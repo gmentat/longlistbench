@@ -11,7 +11,7 @@
     "class_code": {"type": "string"},
     "classification": {"type": "string"},
     "clause_scope": {
-      "description": "Policy scope stated by a material clause, such as a location/building, state/class, or class/territory reference.",
+      "description": "Core policy scope stated by a material clause, without an 'Applies within' prefix or semicolon-delimited repeated details.",
       "type": "string"
     },
     "clause_text": {
@@ -47,7 +47,11 @@
     "item_id": {"type": "string"},
     "limit": {"type": ["number", "string", "null"]},
     "limit_type": {"type": "string"},
-    "lob": {"type": "string"},
+    "lob": {
+      "description": "Line-of-business acronym: BOP, WC, or CGL.",
+      "enum": ["BOP", "WC", "CGL"],
+      "type": "string"
+    },
     "location_number": {"type": "string"},
     "manual_rate": {"type": ["number", "string", "null"]},
     "materiality": {"type": "string"},

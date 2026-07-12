@@ -33,11 +33,79 @@ class EvaluationMetricsTests(unittest.TestCase):
         self.assertEqual(metrics["ground_truth_count"], 1)
         self.assertEqual(metrics["predicted_count"], 1)
         self.assertEqual(metrics["f1"], 1.0)
+        self.assertEqual(metrics["exact_record_recall"], 1.0)
+        self.assertEqual(metrics["exact_record_precision"], 1.0)
+        self.assertEqual(metrics["exact_record_f1"], 1.0)
+        self.assertTrue(metrics["complete_document"])
+
+    def test_partial_field_overlap_is_not_strict_record_completion(self):
+        ground_truth = [{"record_type": "vehicle", "unit": "101", "state": "PA"}]
+        predicted = [{"record_type": "vehicle", "unit": "101", "state": "OH"}]
+
+        metrics = evaluate_record_extraction(predicted, ground_truth)
+
+        self.assertGreater(metrics["f1"], 0.0)
+        self.assertEqual(metrics["exact_record_matches"], 0)
+        self.assertEqual(metrics["exact_record_recall"], 0.0)
+        self.assertFalse(metrics["complete_document"])
+
+    def test_extra_record_prevents_complete_document(self):
+        ground_truth = [{"record_type": "vehicle", "unit": "101", "state": "PA"}]
+        predicted = [
+            {"record_type": "vehicle", "unit": "101", "state": "PA"},
+            {"record_type": "vehicle", "unit": "102", "state": "OH"},
+        ]
+
+        metrics = evaluate_record_extraction(predicted, ground_truth)
+
+        self.assertEqual(metrics["exact_record_recall"], 1.0)
+        self.assertEqual(metrics["exact_record_precision"], 0.5)
+        self.assertFalse(metrics["complete_document"])
 
     def test_loss_run_incidents_keep_incident_evaluator(self):
         ground_truth = [{"incident_number": "INC001", "policy_number": "P1"}]
 
         self.assertFalse(uses_record_evaluator(ground_truth))
+
+    def test_claim_strings_and_identifiers_are_case_insensitive(self):
+        ground_truth = [
+            {
+                "incident_number": "INC001",
+                "reference_number": "REF001",
+                "company_name": "Example Logistics",
+                "coverage_type": "Liability",
+                "status": "Open",
+                "policy_number": "POL001",
+                "policy_state": "PA",
+                "description": "Rear-end collision",
+                "date_of_loss": "01/01/2026",
+                "loss_state": "PA",
+                "date_reported": "01/02/2026",
+                "insured": "Example Logistics",
+                "claimants": ["Jane Doe"],
+            }
+        ]
+        predicted = [
+            {
+                "incident_number": "inc001",
+                "reference_number": "ref001",
+                "company_name": "EXAMPLE LOGISTICS",
+                "coverage_type": "LIABILITY",
+                "status": "OPEN",
+                "policy_number": "pol001",
+                "policy_state": "pa",
+                "description": "REAR-END COLLISION.",
+                "date_of_loss": "01/01/2026",
+                "loss_state": "pa",
+                "date_reported": "01/02/2026",
+                "insured": "EXAMPLE LOGISTICS",
+                "claimants": ["JANE DOE"],
+            }
+        ]
+
+        metrics = evaluate_extraction(predicted, ground_truth)
+
+        self.assertEqual(metrics["f1"], 1.0)
 
     def test_record_type_is_not_required_for_generic_matching(self):
         ground_truth = [
@@ -116,6 +184,42 @@ class EvaluationMetricsTests(unittest.TestCase):
         metrics = evaluate_record_extraction(predicted, ground_truth)
 
         self.assertEqual(metrics["f1"], 1.0)
+
+    def test_generic_strings_are_case_insensitive(self):
+        ground_truth = [{"section": "Schedule B Detail", "value": "Acme, LLC"}]
+        predicted = [{"section": "SCHEDULE B DETAIL", "value": "ACME, LLC"}]
+
+        metrics = evaluate_record_extraction(predicted, ground_truth)
+
+        self.assertEqual(metrics["f1"], 1.0)
+
+    def test_domain_labels_use_published_canonical_forms(self):
+        ground_truth = [
+            {
+                "record_type": "policy_clause_item",
+                "jurisdiction": "AL",
+                "fuel_type": "DI",
+                "lob": "CGL",
+                "clause_scope": "Location 6, Class 47103, Territory 007",
+            }
+        ]
+        predicted = [
+            {
+                "record_type": "policy_clause_item",
+                "jurisdiction": "Alabama (AL)",
+                "fuel_type": "Diesel (DI)",
+                "lob": "Commercial General Liability",
+                "clause_scope": (
+                    "Applies within Location 6, Class 47103, Territory 007; "
+                    "location 6; class 47103"
+                ),
+            }
+        ]
+
+        metrics = evaluate_record_extraction(predicted, ground_truth)
+
+        self.assertEqual(metrics["exact_record_recall"], 1.0)
+        self.assertTrue(metrics["complete_document"])
 
     def test_generic_id_only_prediction_does_not_pass_full_record_scoring(self):
         ground_truth = [

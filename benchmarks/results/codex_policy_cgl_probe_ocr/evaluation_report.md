@@ -2,7 +2,7 @@
 
 Generated: 2026-06-25
 
-This is a narrow diagnostic run, not a full current-corpus leaderboard. The run uses the current `mixed_cgl_040_001` OCR transcript, the public policy field contract, and an isolated Codex sandbox with code execution enabled. The workspace did not include ground-truth files.
+This is a narrow diagnostic run, not a full current-corpus leaderboard. The run uses the current `mixed_cgl_040_001` OCR transcript, the public policy field contract, and a Codex workspace with code execution enabled while the benchmark repository is denied. The workspace did not include ground-truth files.
 
 | Sample | Input | Model/protocol | Gold records | Predicted records | F1 | Recall | Precision |
 | --- | --- | --- | ---: | ---: | ---: | ---: | ---: |

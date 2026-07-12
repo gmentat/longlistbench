@@ -1,28 +1,14 @@
-Long-list entity extraction, the recovery of hundreds or thousands of repeated records from semi-structured documents, is a core requirement for document automation in domains such as insurance, finance, logistics, and procurement. Recent document-understanding models and general-purpose LLMs have improved extraction quality on short forms and narrow schemas, but robust evaluation of long-list scenarios remains limited.
+Long-list entity extraction recovers hundreds or thousands of repeated records from semi-structured documents. It is common in insurance, finance, logistics, and procurement, but remains difficult to measure. A system may extract the first page correctly while dropping middle records, merging neighboring rows, or losing inherited context later in the document.
 
-Many established benchmarks focus on key-value extraction or short, form-like documents, such as FUNSD~\cite{jaume2019funsd}, SROIE~\cite{huang2021sroie}, and CORD~\cite{park2019cord}. Document question answering benchmarks such as DocVQA~\cite{mathew2021docvqa} and MP-DocVQA~\cite{tito2022mpdocvqa} highlight the difficulty of reasoning over pages, but they do not require recovering every record in a large repeated list. More recent business-document datasets such as DocILE~\cite{simsa2023docile} and VRDU~\cite{wang2023vrdu} move closer to repeated structured fields, yet long-list extraction in production often has additional stressors: dense spreadsheet exports, repeated headers, small fonts, OCR artifacts, cross-page references, and records whose fields are distributed across distant packet sections.
+Established benchmarks such as FUNSD~\cite{jaume2019funsd}, SROIE~\cite{huang2021sroie}, and CORD~\cite{park2019cord} emphasize key-value fields or short forms. DocVQA~\cite{mathew2021docvqa} and MP-DocVQA~\cite{tito2022mpdocvqa} test multi-page reasoning, but not exhaustive recovery of large repeated lists. DocILE~\cite{simsa2023docile} and VRDU~\cite{wang2023vrdu} include richer business documents, yet production extraction also encounters dense exports, repeated headers, OCR artifacts, split records, and fields distributed across distant packet sections.
 
-We introduce LongListBench, a synthetic benchmark designed to measure these long-list extraction failures. The current release contains 36 single-PDF instances with 33{,}450 target records. The corpus is inspired by recurring layouts observed in business-document automation, but all names, identifiers, values, and visible document content are synthetic. The dataset includes high-density repeated lists, multi-section packets that require joins across tables, long documents with supporting details many pages apart, and mixed-schema packets where one output list contains several record types.
+LongListBench is designed to measure these failures. For each PDF, a system must reconstruct the entire target list under a declared output schema. The current release contains 36 single-PDF instances and 33{,}450 target records. It combines high-density controls with cross-section joins, long-range evidence, distractors, and heterogeneous policy records. All names, identifiers, values, and visible prose are synthetic; private documents were used only to study recurring layout and packet structure.
 
-\subsection{Background and Motivation}
-This work was motivated by production document-automation tasks where a single PDF can contain hundreds or thousands of repeated entities. A system may perform well on the first page but silently drop records in the middle, merge neighboring rows, misread OCR tables, or fail to join supporting details that appear many pages away. These errors are hard to diagnose with small form benchmarks because the primary difficulty is not a single field; it is preserving list completeness and field alignment at scale.
-
-\subsection{Research Questions}
-This release is organized around four practical questions:
+The release makes three contributions:
 \begin{itemize}
-    \item How should long-list extraction be measured when target lists contain hundreds or thousands of records per PDF?
-    \item Which document families act as useful controls, and which complexities materially stress per-document extraction systems?
-    \item What metadata, schemas, and scoring views are needed so future systems can compare one-shot, agentic, retrieval-loop, and verification-based protocols fairly?
-    \item Can a public synthetic corpus approximate the visual structure of sensitive production documents without exposing private data?
+    \item A public long-list corpus with explicit document-family and cross-cutting stressor metadata.
+    \item Auditable artifacts for every instance: PDF, HTML source, OCR transcript, JSON ground truth, and per-document metadata.
+    \item Strict record and document completeness metrics, secondary field diagnostics, report regeneration, and reference extraction protocols.
 \end{itemize}
 
-We address these questions by releasing structured ground truth, rendered HTML/PDF artifacts, OCR transcripts, per-sample metadata, and a reproducible evaluator. We intentionally frame LongListBench as a benchmark dataset for measurement, not as a method paper. Baseline model results should be rerun on the current OCR corpus before being cited as method conclusions.
-
-\subsection{Contributions}
-We make the following contributions:
-\begin{itemize}
-    \item A 36-document synthetic benchmark with 33{,}450 target records and explicit metadata for long-list extraction stressors.
-    \item Public artifacts for each instance: rendered PDF, OCR transcript, HTML source, JSON ground truth, per-document metadata, and a browsable artifact index.
-    \item A problem-oriented complexity taxonomy covering scale, OCR layout preservation, repeated keys, cross-section joins, long-range evidence, and heterogeneous output schemas.
-    \item Evaluator scripts for field-level scoring, report regeneration, and per-document agentic sandbox extraction protocols.
-\end{itemize}
+LongListBench is designed as a benchmark for measuring extraction systems under realistic long-list document conditions. Results should identify the input condition and extraction protocol and report strict completeness by evaluation role, document family, and stressor rather than relying on one partial-credit aggregate.

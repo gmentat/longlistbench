@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Run isolated Codex CLI extraction and score saved predictions.
+"""Run repository-denied Codex CLI extraction and score saved predictions.
 
 Each sample is copied into a temporary workspace containing only:
 - document_ocr.md
@@ -7,9 +7,9 @@ Each sample is copied into a temporary workspace containing only:
 - prompt.md
 
 The Codex process is wrapped in a macOS sandbox profile that denies read/write
-access to this repository, so it cannot inspect ground truth or source scripts.
-It writes output/records.json or output/incidents.json; this runner validates
-that file and copies the normalized prediction into a standard results dir.
+access to this repository. The prompt also prohibits using files outside the
+temporary workspace. This is repository isolation, not a host-wide filesystem
+allowlist. The runner validates the output and saves the normalized prediction.
 """
 
 import argparse
@@ -158,6 +158,10 @@ def sandbox_profile(repo_root: Path) -> str:
     )
 
 
+def _all_statuses_succeeded(statuses: list[tuple[str, int | str]]) -> bool:
+    return bool(statuses) and all(status in (0, "skip") for _sample, status in statuses)
+
+
 def run_codex(workspace: Path, repo_root: Path, timeout_seconds: int) -> tuple[int | str, str]:
     prompt = (workspace / "prompt.md").read_text(encoding="utf-8")
     cmd = [
@@ -198,7 +202,7 @@ def run_codex(workspace: Path, repo_root: Path, timeout_seconds: int) -> tuple[i
 def load_prediction(workspace: Path, output_file: Path, expects_records: bool) -> list[dict]:
     path = workspace / output_file
     if not path.exists():
-        raise FileNotFoundError(f"Codex did not write {output_file.as_posix()}")
+        raise FileNotFoundError(f"Agent did not write {output_file.as_posix()}")
     raw_text = path.read_text(encoding="utf-8")
     raw = parse_json_response(raw_text)
     return normalize_record_predictions(raw) if expects_records else _validate_and_normalize_predictions(raw)
@@ -227,19 +231,22 @@ def run_sample(
         transcript=transcript,
         workspace_root=workspace_root,
     )
-    status, log = run_codex(workspace, repo_root, timeout_seconds)
-    (logs_dir / f"{sample}_{transcript}_{MODEL_KEY}.log").write_text(log, encoding="utf-8")
-
-    if status == 0:
-        predicted = load_prediction(workspace, output_file, expects_records)
-        pred_path.write_text(json.dumps(predicted, indent=2), encoding="utf-8")
-
-    shutil.rmtree(workspace, ignore_errors=True)
-    return sample, status
+    try:
+        status, log = run_codex(workspace, repo_root, timeout_seconds)
+        (logs_dir / f"{sample}_{transcript}_{MODEL_KEY}.log").write_text(
+            log,
+            encoding="utf-8",
+        )
+        if status == 0:
+            predicted = load_prediction(workspace, output_file, expects_records)
+            pred_path.write_text(json.dumps(predicted, indent=2), encoding="utf-8")
+        return sample, status
+    finally:
+        shutil.rmtree(workspace, ignore_errors=True)
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Run isolated Codex CLI extraction")
+    parser = argparse.ArgumentParser(description="Run repository-denied Codex CLI extraction")
     parser.add_argument("--output-dir", required=True)
     parser.add_argument("--transcript", default="ocr", choices=["ocr", "canonical"])
     parser.add_argument("--samples", nargs="+", default=None)
@@ -250,7 +257,7 @@ def main() -> int:
     args = parser.parse_args()
 
     if shutil.which("sandbox-exec") is None:
-        raise SystemExit("sandbox-exec is required for isolated Codex CLI runs")
+        raise SystemExit("sandbox-exec is required for repository-denied Codex CLI runs")
 
     repo_root = Path(__file__).resolve().parents[1]
     dataset_dir = default_dataset_dir()
@@ -318,7 +325,7 @@ def main() -> int:
         output_dir=output_dir,
     )
     generate_report(results, output_dir)
-    return 0
+    return 0 if _all_statuses_succeeded(statuses) else 1
 
 
 if __name__ == "__main__":

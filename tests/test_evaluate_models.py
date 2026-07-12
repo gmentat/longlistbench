@@ -16,6 +16,32 @@ from benchmarks.evaluation_metrics import evaluate_record_extraction
 
 
 class EvaluatorRegressionTests(unittest.TestCase):
+    def test_dataset_provenance_uses_repository_relative_manifest_path(self) -> None:
+        provenance = evaluate_models._dataset_provenance()
+
+        self.assertEqual(provenance["manifest_path"], "data/manifest.json")
+        self.assertFalse(Path(provenance["manifest_path"]).is_absolute())
+
+    def test_release_families_have_fixed_evaluation_roles(self) -> None:
+        manifest_path = Path(__file__).resolve().parents[1] / "data" / "manifest.json"
+        manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+        totals = {
+            "scale_control": {"documents": 0, "records": 0},
+            "structural_challenge": {"documents": 0, "records": 0},
+        }
+
+        for instance in manifest["instances"]:
+            role = evaluate_models.evaluation_role(instance["complexity_regime"])
+            self.assertNotEqual(role, "unclassified", instance["id"])
+            totals[role]["documents"] += 1
+            totals[role]["records"] += instance["num_target_records"]
+
+        self.assertEqual(totals["scale_control"], {"documents": 15, "records": 22_705})
+        self.assertEqual(
+            totals["structural_challenge"],
+            {"documents": 21, "records": 10_745},
+        )
+
     def test_checker_reuses_main_evaluator_metrics_function(self) -> None:
         self.assertIs(
             check_evaluation_report.evaluate_extraction,
@@ -142,6 +168,8 @@ class EvaluatorRegressionTests(unittest.TestCase):
                         "found": 10,
                         "ground_truth_count": 1,
                         "predicted_count": 1,
+                        "exact_record_matches": 1,
+                        "complete_document": True,
                         "missing": 0,
                         "extra": 0,
                         "total_gold_field_pairs": 10,
@@ -163,6 +191,8 @@ class EvaluatorRegressionTests(unittest.TestCase):
                         "found": 0,
                         "ground_truth_count": 1,
                         "predicted_count": 0,
+                        "exact_record_matches": 0,
+                        "complete_document": False,
                         "missing": 1,
                         "extra": 0,
                         "total_gold_field_pairs": 10,
@@ -176,6 +206,9 @@ class EvaluatorRegressionTests(unittest.TestCase):
         )
         report = json.loads((out_dir / "evaluation_report.json").read_text(encoding="utf-8"))
         self.assertLess(report["model_stats"]["gemini"]["weighted_f1"], 1.0)
+        self.assertEqual(report["model_stats"]["gemini"]["exact_record_recall"], 0.5)
+        self.assertEqual(report["model_stats"]["gemini"]["complete_documents"], 1)
+        self.assertEqual(report["model_stats"]["gemini"]["complete_document_rate"], 0.5)
 
     def test_report_includes_transcript_condition_breakdown(self) -> None:
         out_dir = Path(tempfile.mkdtemp())
@@ -194,6 +227,8 @@ class EvaluatorRegressionTests(unittest.TestCase):
                         "found": 10,
                         "ground_truth_count": 1,
                         "predicted_count": 1,
+                        "exact_record_matches": 1,
+                        "complete_document": True,
                         "missing": 0,
                         "extra": 0,
                         "total_gold_field_pairs": 10,
@@ -255,6 +290,8 @@ class EvaluatorRegressionTests(unittest.TestCase):
                         "found": 10,
                         "ground_truth_count": 1,
                         "predicted_count": 1,
+                        "exact_record_matches": 1,
+                        "complete_document": True,
                         "missing": 0,
                         "extra": 0,
                         "total_gold_field_pairs": 10,

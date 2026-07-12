@@ -1,39 +1,47 @@
-We evaluate systems on the task of extracting a complete list of target records from each rendered PDF or from its OCR transcript. Each sample is evaluated as a new document: the extractor receives the document input and the target schema or field contract, then returns all records for that document. A valid prediction is a JSON object whose top-level list is \texttt{incidents} for claim multi-hop incident tasks and \texttt{records} for operations, external loss-run, and policy list tasks.
+For each PDF, the system must reconstruct the complete target list under a declared output contract. Predictions use \texttt{incidents} for claim tasks and \texttt{records} for operations, external loss-run, and policy tasks.
 
 \subsection{Input condition}
-The current release includes an OCR transcript for every PDF. The evaluator treats the transcript condition as part of the experiment configuration, so future runs can compare OCR transcripts, direct PDF inputs, or additional OCR engines without changing the ground truth. Results should therefore report the input condition, model, extraction protocol, and whether the run includes long-range multi-hop samples.
+Every PDF has a released OCR transcript. Experiments may instead use direct PDF input or another OCR system, but must report the input condition, model, protocol, and included samples.
 
 \subsection{Extraction protocols}
-LongListBench is designed to compare extraction protocols, not only base models. The evaluator scripts support prompt-based extraction and an agentic sandbox protocol.
+\label{subsec:extraction-protocols}
+The repository includes a raw full-context API adapter, an OpenAI Agents SDK sandbox adapter, and repository-denied Codex and Claude Code CLI runners. Both CLI runners have current full-corpus results under the same OCR-conditioned protocol.
 
 \paragraph{Full-context one-shot extraction.}
-The entire selected transcript is provided to the model in a single call. This regime is intentionally simple and is expected to fail on long documents when the model truncates, omits middle records, merges rows, or cannot maintain the full schema across thousands of fields. It is useful as a lower-bound calibration.
+The entire transcript is sent in one request. This is a useful lower-bound calibration, but long outputs may truncate or time out.
 
 \paragraph{Agentic sandbox extraction.}
-The agentic regime places the OCR transcript inside a sandbox and gives the model filesystem and code-execution tools. The model receives the target schema or field contract, decides how to inspect and segment the document, writes a JSON output file, and can run verification code before finishing. This protocol is a better match for long-list and long-range evidence tasks because it can search, slice, parse tables, and verify counts programmatically.
+The runner creates a temporary workspace containing the transcript, field contract, prompt, and output directory. A macOS sandbox profile denies the benchmark repository, while the task prompt prohibits using files outside the workspace. This is repository isolation, not a host-wide filesystem allowlist. The model may search, parse, and verify the current document before writing JSON.
 
-\paragraph{Parser and template diagnostics.}
-Template-specific parsers are useful sanity checks, especially for structured operations families, but they are not the central benchmark target. In realistic agentic extraction, the system is given the current document and may write document-specific code if that is the most reliable way to recover the records. A parser trained on one template and frozen for another answers a different question: template-transfer robustness. We therefore treat deterministic parsers as diagnostics for identifying control families and parser-friendly layouts, while primary comparisons should use per-document extraction protocols run under the same input condition.
+\paragraph{Parser diagnostics.}
+Template parsers are useful for structured control families. A frozen parser evaluated on unseen templates measures transfer robustness, while a per-document agent may write code for the current input. These protocols answer different questions and must be labeled separately.
 
-\paragraph{Other protocols.}
-The evaluator scripts can also support fixed chunking, retrieval loops, and verification passes. These are extraction protocols and should be reported explicitly, because protocol design can dominate performance on long documents.
+Claim runs receive the published JSON Schema. Generic-record runs receive sample-specific field names and record groups derived from the ground-truth object structure before workspace creation. This exposes the required output schema, not target values or counts. Ground-truth files, generator code, target values, and target counts are not copied into the workspace, and the repository path is denied.
 
-\subsection{Regime-aware reporting}
-Aggregate micro-$F_1$ is useful, but it can hide which document complexities matter. We recommend reporting results by release config and by stressor metadata. The core operations config contains scale and completeness controls, including IFTA and spreadsheet-like reports where table extraction can be nearly deterministic. The claim and policy packet configs are the primary hard regimes: they require inherited context, distant evidence, heterogeneous schemas, and distractor handling inside one document. A strong result report should therefore include at least: corpus micro-$F_1$, document-macro summaries, predicted record counts, per-config scores, and stressor slices for \path{ocr_layout_condition}, \path{cross_section_join}, \path{long_range_evidence}, and \path{heterogeneous_record_list}.
+\paragraph{Why use an agentic baseline.}
+The largest targets contain thousands of rows, so a single response can hit output or latency limits before returning a complete list. Fixed chunking avoids that limit but introduces chunk size, overlap, boundary repair, and merge parameters that can dominate the result. A per-document sandbox instead lets the extractor choose how to inspect, segment, parse, and verify each new document under one output contract. We use this as a reproducible full-corpus reference protocol, not as a raw measure of either base model alone.
+
+\subsection{Configuration-aware reporting}
+Field-pair micro-$F_1$ can hide incomplete records because it gives partial credit and large control families dominate field counts. Reports should lead with exact-record recall and document completion. Secondary reporting includes field diagnostics, predicted counts, configuration and family results, and stressor slices such as \path{cross_section_join}, \path{long_range_evidence}, and \path{heterogeneous_record_list}. We classify four parser-friendly families as scale controls and the remaining seven families as structural challenges using a fixed family mapping.
 
 \subsection{Validation and report regeneration}
-Model outputs are parsed, normalized, and scored against the per-document ground truth. Reports are stored as machine-readable JSON with Markdown summaries. The checker can regenerate metrics from saved predictions and golden data, which makes it possible to audit reports without rerunning model calls.
+Reports are stored as JSON and Markdown. The checker recomputes every metric from saved predictions and ground truth without rerunning a model.
 
-\subsection{Field-level matching and metrics}
-The primary metric is corpus-level micro precision/recall/$F_1$ over flattened field-value pairs. This weighting reflects the benchmark's purpose: a 2{,}000-row document should contribute more evidence than a 50-row document.
+\subsection{Strict completeness and field diagnostics}
+The primary metrics are exact-record recall and complete-document success. A predicted record is exact only when every normalized target field equals one ground-truth record. Let $R_G$ and $R_P$ be the ground-truth and predicted record multisets after normalization. We compute:
+\begin{align}
+\mathrm{ExactRecordRecall} &= \frac{|R_G \cap R_P|}{|R_G|},\\
+\mathrm{CompleteDocument} &= \mathbb{1}[R_G = R_P].
+\end{align}
+The multiset comparison preserves duplicate multiplicity and rejects extra records at the document level. The current release treats the output as an unordered record collection because source order was not part of the released agent contract.
 
-For claim incidents, records are keyed by normalized incident identifiers. Dates are normalized to \texttt{MM/DD/YYYY}, claimant lists are sorted, zero-valued default financial-breakdown cells are not scored, and non-zero monetary fields are rounded to cents before scoring. For generic record lists, records are matched greedily by overlapping non-global field pairs; \texttt{record\_type} and hidden row identifiers are not required for matching or scoring.
+For claim incidents, records are keyed by normalized incident identifiers. String values are whitespace-normalized and compared case-insensitively, dates are normalized to \texttt{MM/DD/YYYY}, claimant lists are sorted, zero-valued default financial-breakdown cells are omitted from field diagnostics, and non-zero monetary fields are rounded to cents. Generic records use the same string normalization. Unambiguous domain labels are canonicalized: jurisdiction names to codes, fuel descriptions to parenthetical codes, line-of-business names to acronyms, and visible \texttt{Applies within} wrappers to their core clause scope. Generic records are matched greedily by overlapping non-global field pairs; \texttt{record\_type}, global policy fields, and hidden row identifiers are excluded from field matching and field-pair scoring. These field-level exclusions do not relax exact-record comparison, which uses the full normalized public record.
 
-Let $G$ be the multiset of flattened field-value pairs from the ground truth and $P$ the multiset from predictions after canonicalization. We compute:
+For secondary partial-credit diagnostics, let $G$ be the multiset of normalized ground-truth field-value pairs and $P$ the prediction multiset. We compute:
 \begin{align}
 \mathrm{found} &= |G \cap P|,\\
 \mathrm{recall} &= \frac{\mathrm{found}}{|G|},\\
 \mathrm{precision} &= \frac{\mathrm{found}}{|P|},\\
 \mathrm{F1} &= \frac{2\,\mathrm{precision}\,\mathrm{recall}}{\mathrm{precision}+\mathrm{recall}}.
 \end{align}
-Reports also include predicted record counts, missing and extra record diagnostics, exact-record matches where meaningful, and per-document summaries.
+Reports also include exact-record precision/$F_1$, predicted counts, missing and extra records, document-macro field $F_1$, and family, evaluation-role, and stressor summaries. Because stressors co-occur, stressor slices describe associations; they are not causal estimates of one layout feature's effect.

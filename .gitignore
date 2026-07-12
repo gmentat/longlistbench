@@ -34,6 +34,10 @@ benchmarks/results/*/
 !benchmarks/results/agentic_multihop_gpt55/**
 !benchmarks/results/codex_policy_cgl_probe_ocr/
 !benchmarks/results/codex_policy_cgl_probe_ocr/**
+!benchmarks/results/codex_full_current_ocr_v2/
+!benchmarks/results/codex_full_current_ocr_v2/**
+!benchmarks/results/claude_opus48_full_current_ocr_v2/
+!benchmarks/results/claude_opus48_full_current_ocr_v2/**
 
 # Virtual environment
 venv/
@@ -68,3 +72,4 @@ data/generated_text/policy_multihop/
 
 # Per-run debug traces (LLB_CAPTURE_TRACES) — keep local, do not commit
 benchmarks/results/*/traces/
+benchmarks/results/*/logs/

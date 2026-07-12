@@ -4,7 +4,7 @@ Benchmark for long-list entity extraction from complex semi-structured business 
 
 This benchmark was developed at [Kay.ai](https://kay.ai).
 
-LongListBench is intended for per-document extraction evaluation: give a system one PDF or OCR transcript plus the target schema/field contract, then score the complete list it returns. Structured operations families such as IFTA are useful controls for scale, OCR preservation, and row completeness; claim and policy packets are the harder regimes for agentic or retrieval-loop extraction because records require distant evidence, inherited context, and heterogeneous schemas.
+LongListBench evaluates complete per-document extraction: give a system one PDF or OCR transcript plus the target output contract, then measure exact records and fully complete documents. Structured operations families are scale and completeness controls; claim and policy packets add distant evidence, inherited context, and heterogeneous schemas.
 
 ## Quick Start
 
@@ -114,7 +114,7 @@ data/
   schemas/*.schema.json
 ```
 
-`data/manifest.json` is the source of truth for sample IDs, template regimes, artifact paths, transcript availability, and per-sample metadata.
+`data/manifest.json` is the source of truth for sample IDs, document families, artifact paths, transcript availability, and per-sample metadata.
 
 ### Document Families
 
@@ -136,11 +136,12 @@ data/
 
 ### Complexity Stressors
 
-LongListBench tracks cross-cutting stressors in each instance's `problems` metadata. The original generator exposed seven document-problem flags; version 2.0 keeps the same ideas but implements them in production-like layouts rather than as obvious synthetic toggles.
+LongListBench defines 14 canonical cross-cutting stressors in each instance's `problems` metadata. The manifest contains 45 distinct problem tokens because it also retains finer domain and implementation tags for audit slices.
 
 | Tag | Meaning |
 |-----|---------|
 | `page_breaks` | Target lists or supporting sections span page boundaries with repeated headers or inherited context. |
+| `split_records` | One target record has fields in separate visual blocks, sections, or pages and must be assembled. |
 | `multi_row` | One logical record contains wrapped notes, long descriptions, clause prose, or continuation rows. |
 | `duplicates` | Duplicate or near-duplicate distractor material appears, usually as prior-term/archive sections rather than exact duplicate target rows. |
 | `large_doc` | Documents contain hundreds to thousands of targets or enough pages to expose truncation/list-completeness failures. |
@@ -161,6 +162,7 @@ The PDFs do not print these labels, but the stressors are visible in the documen
 | Stressor | Representative PDF/pages | What to check |
 |----------|--------------------------|---------------|
 | `page_breaks` | `ifta_mileage_by_vehicle_001`, pages 3-4 | Unit 118 spans two pages with the same unit header and jurisdiction rows split across the page boundary. |
+| `split_records` | `ifta_multisection_return_001`, pages 1, 2, and 4 | One jurisdiction record combines return-header context, Schedule A mileage/gallons, and later tax-detail fields. |
 | `multi_row` | `loss_run_external_001`, pages 1-2; `driver_mvr_packet_001`, page 10 | Claim rows include description/detail rows; driver records include roster/MVR detail blocks. |
 | `duplicates` | `loss_run_external_001`, pages 1-2; `multihop_bop_012_001`, page 142 | Summary/no-claim rows and archived/prior-term sections create near-duplicate distractors. |
 | `large_doc` | `ifta_mileage_by_vehicle_008`, whole PDF; `mixed_cgl_040_001`, whole PDF | Long files with 218 and 316 pages respectively, including thousands of operation rows or many policy records. |
@@ -191,9 +193,9 @@ The cross-page PDFs are:
 
 | Sample | Pages | Target incidents |
 |--------|-------|------------------|
-| `multihop_012_001_crosspage` | 76 | 12 |
-| `multihop_025_001_crosspage` | 126 | 25 |
-| `mixed_040_001_crosspage` | 198 | 40 |
+| `multihop_012_001_crosspage` | 80 | 12 |
+| `multihop_025_001_crosspage` | 136 | 25 |
+| `mixed_040_001_crosspage` | 209 | 40 |
 
 Join/evidence metadata is recorded in `data/metadata/{sample_id}.json`; the rendered documents do not expose benchmark instructions such as "join on" labels.
 
@@ -201,7 +203,7 @@ The policy suite has 3 commercial insurance policy PDFs and 1,489 target policy 
 
 Interpret the configs separately. `core_operations` contains high-density structured reports where deterministic row parsers or document-specific agent code can perform well; those files measure scale, OCR preservation, and output completeness. The multisection IFTA files within `core_operations` add OCR-layout preservation and cross-section joins. The claim and policy packet configs are the stronger complex packet cases, with inherited context, heterogeneous record types, distant supporting sections, and distractor material.
 
-OCR support should be interpreted at the affected-record and field level, not only by unique identifier coverage. For example, a single missing repeated header can affect many rows that inherit that value. The current identifier validation reports 39 affected records across 33,450 total targets. The numeric-fidelity gate also checks that every ground-truth numeric value with absolute value at least 10 is recoverable from the released OCR transcript; the current release has 0 unrecoverable numeric values under that gate. These OCR support gates do not score extraction quality by themselves. Extraction quality is scored by the evaluator over all flattened field-value pairs in the predicted records, so a prediction that recovers only IDs receives low recall.
+OCR support should be interpreted at the affected-record and field level, not only by unique identifier coverage. For example, a single missing repeated header can affect many rows that inherit that value. The current identifier validation reports 39 affected records across 33,450 total targets. The numeric-fidelity gate also checks that every ground-truth numeric value with absolute value at least 10 is recoverable from the released OCR transcript; the current release has 0 unrecoverable numeric values under that gate. These OCR support gates do not score extraction quality by themselves. The evaluator compares complete normalized records first and reports flattened field-value overlap as secondary partial credit, so recovering identifiers alone is insufficient.
 
 | Sample | Pages | Target policy records |
 |--------|-------|-----------------------|
@@ -213,25 +215,43 @@ OCR support should be interpreted at the affected-record and field level, not on
 
 Saved reports under `benchmarks/results/` should be treated as local run artifacts unless their manifest hash matches the current `data/manifest.json`. After replacing layouts, rerun OCR and evaluation before citing current-layout or current-model baselines. The current released dataset includes OCR transcripts for every PDF.
 
-The current full-corpus Codex CLI `gpt-5.5` sandbox OCR run with `model_reasoning_effort="xhigh"` is saved under `benchmarks/results/codex_full_current_ocr_v2/`: 36 documents, 33,450 target records, 0 extraction errors, 97.7% micro-F1, 96.8% recall, 98.7% precision, and 96.7% document-macro F1.
+The release includes two full-corpus repository-denied coding-agent runs under the same OCR input and field-contract protocol. Both directories include all 36 predictions and reports that can be checked offline.
 
-Key regime slices from that run:
+| Agent | Documents | Target records | Errors | Exact-record recall | Complete documents | Field micro-F1 |
+|---|---:|---:|---:|---:|---:|---:|
+| Codex CLI `gpt-5.5`, xhigh | 36 | 33,450 | 0 | 89.5% | 12/36 (33.3%) | 98.7% |
+| Claude Code `claude-opus-4-8`, xhigh | 36 | 33,450 | 0 | 86.9% | 13/36 (36.1%) | 98.6% |
 
-| Regime | Documents | Target records | Micro-F1 |
-|--------|----------:|---------------:|---------:|
-| Driver schedule spreadsheet export | 1 | 500 | 87.7% |
-| Driver/MVR request and roster | 3 | 1,260 | 89.1% |
-| IFTA multisection return packet | 2 | 796 | 91.1% |
-| Policy multi-hop | 3 | 1,489 | 92.8% |
-| Claim cross-page multi-hop | 3 | 77 | 97.1% |
-| External loss run | 3 | 900 | 97.2% |
-| IFTA return schedule details | 5 | 4,923 | 97.7% |
-| IFTA tax return inquiry detail | 2 | 1,300 | 99.4% |
-| IFTA tax return summary | 4 | 3,040 | 99.7% |
-| IFTA mileage by vehicle | 8 | 17,565 | 100.0% |
-| Vehicle schedule spreadsheet export | 2 | 1,600 | 100.0% |
+The saved results are under `benchmarks/results/codex_full_current_ocr_v2/` and `benchmarks/results/claude_opus48_full_current_ocr_v2/`.
+
+An exact record must match every normalized target field. Complete-document success requires the predicted and ground-truth record multisets to be identical, including duplicates and with no extra records. Record order is not scored. Field-pair F1 remains a secondary partial-credit diagnostic.
+
+The evaluator uses a fixed document-family mapping for scale-control and structural-challenge roles:
+
+| Evaluation role | Documents | Target records | Codex exact records | Claude exact records | Codex complete docs | Claude complete docs |
+|---|---:|---:|---:|---:|---:|---:|
+| Structural challenges | 21 | 10,745 | 68.9% | 60.7% | 2/21 (9.5%) | 3/21 (14.3%) |
+| Scale controls | 15 | 22,705 | 99.3% | 99.3% | 10/15 (66.7%) | 10/15 (66.7%) |
+
+Strict exact-record recall by document family:
+
+| Document family | Documents | Target records | Codex exact records | Claude exact records |
+|---|---:|---:|---:|---:|
+| Driver/MVR request and roster | 3 | 1,260 | 1.9% | 0.0% |
+| Claim cross-page multi-hop | 3 | 77 | 32.5% | 98.7% |
+| IFTA return schedule details | 5 | 4,923 | 65.2% | 63.9% |
+| External loss run | 3 | 900 | 71.4% | 93.9% |
+| IFTA tax return inquiry detail | 2 | 1,300 | 97.7% | 90.8% |
+| Policy multi-hop | 3 | 1,489 | 96.4% | 32.0% |
+| IFTA multisection return packet | 2 | 796 | 99.9% | 99.9% |
+| IFTA tax return summary | 4 | 3,040 | 96.0% | 99.9% |
+| Driver schedule spreadsheet export | 1 | 500 | 99.4% | 99.4% |
+| IFTA mileage by vehicle | 8 | 17,565 | 99.8% | 99.1% |
+| Vehicle schedule spreadsheet export | 2 | 1,600 | 100.0% | 100.0% |
 
 Full-context one-shot prompting is not treated as a full-corpus protocol for this release. It is useful as a lower-bound stress test, but the largest documents can hit model output limits or latency timeouts before returning a scoreable complete list.
+
+For both released runs, claim tasks received the published JSON Schema. Generic tasks received sample-specific field names and record groups derived from ground-truth object structure. This disclosed the output schema but not target values or counts. Each temporary workspace contained only the OCR transcript, field contract, prompt, and output directory; the macOS sandbox denied the benchmark repository, and the prompt prohibited other host files. This was repository isolation rather than a host-wide filesystem allowlist. Scoring normalizes whitespace, dates, decimals, accounting negatives, string case, and documented region/fuel/line-of-business/clause-scope representations before comparing complete records and secondary field-value pairs.
 
 ## Development Setup
 

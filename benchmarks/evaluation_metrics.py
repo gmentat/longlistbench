@@ -58,6 +58,83 @@ _GENERIC_SIGNATURE_FIELDS = [
 ]
 _MAX_MATCH_PAIR_FANOUT = 250
 _MAX_MATCH_CANDIDATES = 5_000_000
+_REGION_CODES = {
+    "alabama": "al",
+    "alaska": "ak",
+    "alberta": "ab",
+    "arizona": "az",
+    "arkansas": "ar",
+    "british columbia": "bc",
+    "california": "ca",
+    "colorado": "co",
+    "connecticut": "ct",
+    "delaware": "de",
+    "district of columbia": "dc",
+    "florida": "fl",
+    "georgia": "ga",
+    "hawaii": "hi",
+    "idaho": "id",
+    "illinois": "il",
+    "indiana": "in",
+    "iowa": "ia",
+    "kansas": "ks",
+    "kentucky": "ky",
+    "louisiana": "la",
+    "maine": "me",
+    "manitoba": "mb",
+    "maryland": "md",
+    "massachusetts": "ma",
+    "michigan": "mi",
+    "minnesota": "mn",
+    "mississippi": "ms",
+    "missouri": "mo",
+    "montana": "mt",
+    "nebraska": "ne",
+    "nevada": "nv",
+    "new brunswick": "nb",
+    "new hampshire": "nh",
+    "new jersey": "nj",
+    "new mexico": "nm",
+    "new york": "ny",
+    "newfoundland and labrador": "nl",
+    "newfoundland": "nl",
+    "north carolina": "nc",
+    "north dakota": "nd",
+    "northwest territories": "nt",
+    "nova scotia": "ns",
+    "nunavut": "nu",
+    "ohio": "oh",
+    "oklahoma": "ok",
+    "ontario": "on",
+    "oregon": "or",
+    "pennsylvania": "pa",
+    "prince edward island": "pe",
+    "puerto rico": "pr",
+    "quebec": "qc",
+    "rhode island": "ri",
+    "saskatchewan": "sk",
+    "south carolina": "sc",
+    "south dakota": "sd",
+    "tennessee": "tn",
+    "texas": "tx",
+    "utah": "ut",
+    "vermont": "vt",
+    "virginia": "va",
+    "washington": "wa",
+    "washington dc": "dc",
+    "west virginia": "wv",
+    "wisconsin": "wi",
+    "wyoming": "wy",
+    "yukon": "yt",
+}
+_LOB_CODES = {
+    "businessowners": "bop",
+    "businessowners policy": "bop",
+    "business owners policy": "bop",
+    "commercial general liability": "cgl",
+    "workers compensation": "wc",
+    "workers' compensation": "wc",
+}
 
 
 def _normalize_date(value: Any) -> str:
@@ -86,9 +163,9 @@ def normalize_incident_number(incident_num: str) -> str:
         return ""
     incident_num = str(incident_num).strip()
     for prefix in ["Incident #", "Incident#", "Incident ", "#", "INC"]:
-        if incident_num.startswith(prefix):
+        if incident_num.casefold().startswith(prefix.casefold()):
             incident_num = incident_num[len(prefix):]
-    return incident_num.strip()
+    return incident_num.strip().casefold()
 
 
 def _norm_str(v: Any, *, optional: bool) -> Any:
@@ -97,7 +174,7 @@ def _norm_str(v: Any, *, optional: bool) -> Any:
     s = str(v).strip()
     if optional and s == "":
         return None
-    return s
+    return s.casefold()
 
 
 def _norm_description(v: Any) -> str:
@@ -123,6 +200,16 @@ def _norm_float(v: Any) -> float:
     return f
 
 
+def _normalize_region(value: Any) -> Any:
+    normalized = _norm_str(value, optional=True)
+    if normalized is None:
+        return None
+    parenthetical = re.search(r"\(([a-z]{2})\)\s*$", normalized)
+    if parenthetical:
+        return parenthetical.group(1)
+    return _REGION_CODES.get(normalized, normalized)
+
+
 def _canonicalize_incident(item: dict) -> dict:
     obj = LossRunIncident.model_validate(item).model_dump(mode="json")
 
@@ -137,7 +224,7 @@ def _canonicalize_incident(item: dict) -> dict:
         elif k == "claimants":
             if not isinstance(v, list):
                 v = []
-            cleaned = [str(x).strip() for x in v if str(x).strip()]
+            cleaned = [str(x).strip().casefold() for x in v if str(x).strip()]
             obj[k] = sorted(cleaned)
         elif k in _DATE_FIELDS:
             obj[k] = _normalize_date(v)
@@ -145,6 +232,8 @@ def _canonicalize_incident(item: dict) -> dict:
             obj[k] = _norm_description(v)
         elif k == "unit_number":
             obj[k] = _norm_unit_number(v)
+        elif k in {"policy_state", "loss_state"}:
+            obj[k] = _normalize_region(v)
         elif isinstance(v, str) or v is None:
             obj[k] = _norm_str(v, optional=(k in _OPTIONAL_STR_FIELDS))
         else:
@@ -176,6 +265,19 @@ def _flatten_pairs(incident_id: str, obj: dict) -> list[str]:
                 )
             )
     return pairs
+
+
+def _exact_record_metrics(exact_matches: int, gold_count: int, predicted_count: int) -> dict[str, Any]:
+    """Summarize strict normalized-record recovery independently of field overlap."""
+    recall = exact_matches / gold_count if gold_count > 0 else float(predicted_count == 0)
+    precision = exact_matches / predicted_count if predicted_count > 0 else float(gold_count == 0)
+    f1 = 2 * precision * recall / (precision + recall) if (precision + recall) > 0 else 0.0
+    return {
+        "exact_record_recall": recall,
+        "exact_record_precision": precision,
+        "exact_record_f1": f1,
+        "complete_document": exact_matches == gold_count == predicted_count,
+    }
 
 
 def evaluate_extraction(predicted: list[dict], ground_truth: list[dict]) -> dict[str, Any]:
@@ -242,6 +344,7 @@ def evaluate_extraction(predicted: list[dict], ground_truth: list[dict]) -> dict
         "missing_ids": missing_ids,
         "extra_ids": extra_ids,
         "exact_record_matches": exact_record_matches,
+        **_exact_record_metrics(exact_record_matches, gt_count, pred_count),
         "total_gold_field_pairs": total_gt_pairs,
         "total_pred_field_pairs": total_pred_pairs,
     }
@@ -297,12 +400,12 @@ def _normalize_generic_scalar(value: Any) -> Any:
             continue
 
     if "%" in s:
-        return re.sub(r"\s+", "", s)
+        return re.sub(r"\s+", "", s).casefold()
     decimal_like = bool(re.fullmatch(r"-?\$?\d[\d,]*(?:\.\d+)?", s))
     parenthesized_decimal = bool(re.fullmatch(r"\(\s*\$?-?\d[\d,]*(?:\.\d+)?\s*\)", s))
-    if "$" in s or "," in s or ("." in s and decimal_like) or parenthesized_decimal:
+    if decimal_like or parenthesized_decimal:
         return _normalize_decimal_string(s)
-    return s
+    return s.casefold()
 
 
 def _canonicalize_generic_value(value: Any) -> Any:
@@ -320,11 +423,30 @@ def _canonicalize_generic_value(value: Any) -> Any:
 def _canonicalize_record(item: dict) -> dict:
     canonical: dict[str, Any] = {}
     for k, v in sorted(item.items(), key=lambda item: str(item[0])):
-        value = _canonicalize_generic_value(v)
+        value = _normalize_generic_field(str(k), _canonicalize_generic_value(v))
         if value is None:
             continue
         canonical[str(k)] = value
     return canonical
+
+
+def _normalize_generic_field(field: str, value: Any) -> Any:
+    if not isinstance(value, str):
+        return value
+    if field in {"jurisdiction", "state", "policy_state", "loss_state"}:
+        return _normalize_region(value)
+    if field == "fuel_type":
+        parenthetical = re.search(r"\(([a-z0-9-]+)\)\s*$", value)
+        if parenthetical:
+            return parenthetical.group(1)
+        if value == "diesel":
+            return "di"
+    if field == "lob":
+        return _LOB_CODES.get(value, value)
+    if field == "clause_scope":
+        value = re.sub(r"^applies\s+within\s+", "", value).strip()
+        return value.split(";", 1)[0].strip()
+    return value
 
 
 def uses_record_evaluator(ground_truth: list[dict]) -> bool:
@@ -577,6 +699,7 @@ def evaluate_record_extraction(predicted: list[dict], ground_truth: list[dict]) 
         "missing_ids": missing_ids,
         "extra_ids": extra_ids,
         "exact_record_matches": exact_record_matches,
+        **_exact_record_metrics(exact_record_matches, len(gt_records), len(pred_records)),
         "total_gold_field_pairs": gt_pairs_total,
         "total_pred_field_pairs": pred_pairs_total,
         "by_record_type": by_record_type,

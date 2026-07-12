@@ -97,7 +97,7 @@ If arXiv asks which source file is the entry point, select `main.tex`.
 
 - Suggested categories are likely in the document-understanding / information-extraction area (for example `cs.AI` or `cs.CL`), but choose the final category manually at submission time.
 - Paste the abstract from `contents/0_abstract.tex` into the arXiv metadata form.
-- Add a short comment such as `18 pages, 5 figures` if desired.
+- Add a short comment with the final page and figure counts from `main.pdf` if desired.
 - Avoid adding copyright language that conflicts with arXiv redistribution.
 
 ## If Something Fails on arXiv
@@ -110,7 +110,7 @@ If arXiv asks which source file is the entry point, select `main.tex`.
 
 ### Missing figure
 
-- Ensure the figure path is relative (for example `figures/generation.png`)
+- Ensure the figure path is relative (for example `figures/example_multi_row_annot.png`)
 - Ensure the file is present inside `arxiv_submission/figures/`
 
 ### Package or compilation issue
@@ -124,4 +124,3 @@ If arXiv asks which source file is the entry point, select `main.tex`.
 - arXiv TeX submission guide: https://info.arxiv.org/help/submit_tex.html
 - arXiv format requirements: https://info.arxiv.org/help/policies/format_requirements.html
 - arXiv submission help: https://info.arxiv.org/help/submit/index.html
-
