@@ -22,6 +22,25 @@ class EvaluatorRegressionTests(unittest.TestCase):
         self.assertEqual(provenance["manifest_path"], "data/manifest.json")
         self.assertFalse(Path(provenance["manifest_path"]).is_absolute())
 
+    @mock.patch.object(
+        evaluate_models.subprocess,
+        "check_output",
+        return_value=(
+            " M benchmarks/results/codex/evaluation_report.json\n"
+            "?? benchmarks/results/claude/evaluation_report.md\n"
+        ),
+    )
+    def test_git_dirty_ignores_generated_reports(self, _check_output) -> None:
+        self.assertFalse(evaluate_models._git_dirty())
+
+    @mock.patch.object(
+        evaluate_models.subprocess,
+        "check_output",
+        return_value=" M benchmarks/evaluation_metrics.py\n",
+    )
+    def test_git_dirty_keeps_source_changes(self, _check_output) -> None:
+        self.assertTrue(evaluate_models._git_dirty())
+
     def test_release_families_have_fixed_evaluation_roles(self) -> None:
         manifest_path = Path(__file__).resolve().parents[1] / "data" / "manifest.json"
         manifest = json.loads(manifest_path.read_text(encoding="utf-8"))

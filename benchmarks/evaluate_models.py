@@ -984,6 +984,11 @@ def _git_dirty(ignore_paths: Iterable[Path] = ()) -> bool | None:
             path = line[3:] if len(line) > 3 else ""
             if " -> " in path:
                 path = path.split(" -> ", 1)[1]
+            if (
+                path.startswith("benchmarks/results/")
+                and Path(path).name in {"evaluation_report.json", "evaluation_report.md"}
+            ):
+                continue
             if path not in ignored:
                 return True
         return False
