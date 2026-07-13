@@ -620,6 +620,15 @@ class EvaluatorRegressionTests(unittest.TestCase):
         samples = {entry["sample"] for entry in report["detailed_results"]}
         self.assertEqual(samples, set(evaluate_models._QUICK_SAMPLES))
 
+    def test_cli_model_choices_follow_model_registry(self) -> None:
+        parser = evaluate_models.build_argument_parser()
+
+        args = parser.parse_args(["--models", "codex_gpt56_sol", "claude_fable5"])
+
+        self.assertEqual(args.models, ["codex_gpt56_sol", "claude_fable5"])
+        models_action = next(action for action in parser._actions if action.dest == "models")
+        self.assertEqual(set(models_action.choices), set(evaluate_models.MODELS))
+
 
 if __name__ == "__main__":
     unittest.main()

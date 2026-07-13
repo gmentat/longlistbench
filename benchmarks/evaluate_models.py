@@ -1415,12 +1415,10 @@ def generate_report(
     print(f"  - {md_path}")
 
 
-def main():
+def build_argument_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description='Multi-model evaluation for LongListBench')
     parser.add_argument('--models', nargs='+', default=['gpt55_oneshot'],
-                       choices=['gemini', 'gemini_oneshot', 'gemini25', 'gpt52', 'gpt4', 'claude',
-                                'gpt55_oneshot', 'gpt55_chunked', 'gpt55_agent', 'codex_gpt55',
-                                'claude_opus48'],
+                       choices=sorted(MODELS),
                        help='Models to evaluate (default: gpt55_oneshot)')
     parser.add_argument('--output-dir', default=None,
                        help='Directory to write predictions and evaluation reports (default: benchmarks/results/scratch)')
@@ -1448,7 +1446,11 @@ def main():
                        help='Max number of parallel model workers (default: len(models) or LLB_MODEL_WORKERS)')
     parser.add_argument('--no-resume', action='store_true',
                        help='Do not reuse existing *_predicted.json files; always rerun extractions')
-    
+    return parser
+
+
+def main():
+    parser = build_argument_parser()
     args = parser.parse_args()
     
     # Quick mode: representative current-release samples.
