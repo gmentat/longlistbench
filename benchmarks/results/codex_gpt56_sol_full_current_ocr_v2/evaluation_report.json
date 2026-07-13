@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-07-13T18:22:29.045716+00:00",
-  "evaluation_mode": "live",
+  "timestamp": "2026-07-13T19:20:52.692967+00:00",
+  "evaluation_mode": "offline_replay",
   "dataset": {
     "manifest_path": "data/manifest.json",
     "manifest_sha256": "f0fbc3c3bb8a524cf2a8785c00d1adb6a7ecf8e04efee5dd5e47f6dec3851bbe",
-    "git_sha": "4ffdcc9ff786f442a8a23b019d7fa81023026dc7",
-    "git_dirty": true
+    "git_sha": "0a4f2cca9d5b5ecc88deb425e21517b373097925",
+    "git_dirty": false
   },
   "model_stats": {
     "codex_gpt56_sol": {

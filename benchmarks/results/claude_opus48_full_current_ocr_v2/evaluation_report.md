@@ -1,15 +1,15 @@
 # Multi-Model Evaluation Report
 
-Generated: 2026-07-13 19:00:34 UTC
-Evaluation mode: `subscription_cli`
+Generated: 2026-07-13 19:20:52 UTC
+Evaluation mode: `offline_replay`
 Dataset manifest SHA-256: `f0fbc3c3bb8a524cf2a8785c00d1adb6a7ecf8e04efee5dd5e47f6dec3851bbe`
-Git SHA: `4ffdcc9ff786f442a8a23b019d7fa81023026dc7`; dirty: `True`
+Git SHA: `0a4f2cca9d5b5ecc88deb425e21517b373097925`; dirty: `False`
 
 ## Overall Results
 
 | Model | Exact-record recall | Complete documents | Field micro-F1 | Field macro-F1 | Rows | Samples | Errors | Time (s) | Cost (USD) |
 |-------|---------------------|--------------------|----------------|----------------|------|---------|--------|----------|------------|
-| Claude Opus 4.8 (Claude Code CLI Agentic, xhigh) | 85.8% | 11/36 (30.6%) | 98.7% | 98.5% | 33450 | 36 | 0 | 27569 | N/A |
+| Claude Opus 4.8 (Claude Code CLI Agentic, xhigh) | 85.8% | 11/36 (30.6%) | 98.7% | 98.5% | 33450 | 36 | 0 | N/A | N/A |
 
 The primary score is exact-record recall: a target counts only when every normalized field in one predicted record matches one ground-truth record. Complete-document success additionally requires the predicted and ground-truth record multisets to be identical. Record order is not scored. Field-pair F1 remains a secondary diagnostic.
 
@@ -55,214 +55,214 @@ The primary score is exact-record recall: a target counts only when every normal
 
 | Model | Exact records | Complete | Field F1 | Predicted | Time |
 |-------|---------------|----------|----------|-----------|------|
-| Claude Opus 4.8 (Claude Code CLI Agentic, xhigh) | 0.0% | no | 87.9% | 268 | 150.8s |
+| Claude Opus 4.8 (Claude Code CLI Agentic, xhigh) | 0.0% | no | 87.9% | 268 | N/A |
 
 ### driver_mvr_packet_002 (ocr)
 
 | Model | Exact records | Complete | Field F1 | Predicted | Time |
 |-------|---------------|----------|----------|-----------|------|
-| Claude Opus 4.8 (Claude Code CLI Agentic, xhigh) | 0.0% | no | 88.3% | 508 | 221.6s |
+| Claude Opus 4.8 (Claude Code CLI Agentic, xhigh) | 0.0% | no | 88.3% | 508 | N/A |
 
 ### driver_mvr_packet_003 (ocr)
 
 | Model | Exact records | Complete | Field F1 | Predicted | Time |
 |-------|---------------|----------|----------|-----------|------|
-| Claude Opus 4.8 (Claude Code CLI Agentic, xhigh) | 0.0% | no | 88.4% | 508 | 146.1s |
+| Claude Opus 4.8 (Claude Code CLI Agentic, xhigh) | 0.0% | no | 88.4% | 508 | N/A |
 
 ### driver_schedule_sparse_001 (ocr)
 
 | Model | Exact records | Complete | Field F1 | Predicted | Time |
 |-------|---------------|----------|----------|-----------|------|
-| Claude Opus 4.8 (Claude Code CLI Agentic, xhigh) | 99.4% | no | 99.9% | 500 | 120.2s |
+| Claude Opus 4.8 (Claude Code CLI Agentic, xhigh) | 99.4% | no | 99.9% | 500 | N/A |
 
 ### ifta_mileage_by_vehicle_001 (ocr)
 
 | Model | Exact records | Complete | Field F1 | Predicted | Time |
 |-------|---------------|----------|----------|-----------|------|
-| Claude Opus 4.8 (Claude Code CLI Agentic, xhigh) | 100.0% | yes | 100.0% | 1159 | 392.5s |
+| Claude Opus 4.8 (Claude Code CLI Agentic, xhigh) | 100.0% | yes | 100.0% | 1159 | N/A |
 
 ### ifta_mileage_by_vehicle_002 (ocr)
 
 | Model | Exact records | Complete | Field F1 | Predicted | Time |
 |-------|---------------|----------|----------|-----------|------|
-| Claude Opus 4.8 (Claude Code CLI Agentic, xhigh) | 100.0% | yes | 100.0% | 2143 | 673.9s |
+| Claude Opus 4.8 (Claude Code CLI Agentic, xhigh) | 100.0% | yes | 100.0% | 2143 | N/A |
 
 ### ifta_mileage_by_vehicle_003 (ocr)
 
 | Model | Exact records | Complete | Field F1 | Predicted | Time |
 |-------|---------------|----------|----------|-----------|------|
-| Claude Opus 4.8 (Claude Code CLI Agentic, xhigh) | 100.0% | yes | 100.0% | 2195 | 807.1s |
+| Claude Opus 4.8 (Claude Code CLI Agentic, xhigh) | 100.0% | yes | 100.0% | 2195 | N/A |
 
 ### ifta_mileage_by_vehicle_004 (ocr)
 
 | Model | Exact records | Complete | Field F1 | Predicted | Time |
 |-------|---------------|----------|----------|-----------|------|
-| Claude Opus 4.8 (Claude Code CLI Agentic, xhigh) | 100.0% | yes | 100.0% | 2239 | 736.8s |
+| Claude Opus 4.8 (Claude Code CLI Agentic, xhigh) | 100.0% | yes | 100.0% | 2239 | N/A |
 
 ### ifta_mileage_by_vehicle_005 (ocr)
 
 | Model | Exact records | Complete | Field F1 | Predicted | Time |
 |-------|---------------|----------|----------|-----------|------|
-| Claude Opus 4.8 (Claude Code CLI Agentic, xhigh) | 99.4% | no | 99.7% | 2365 | 558.9s |
+| Claude Opus 4.8 (Claude Code CLI Agentic, xhigh) | 99.4% | no | 99.7% | 2365 | N/A |
 
 ### ifta_mileage_by_vehicle_006 (ocr)
 
 | Model | Exact records | Complete | Field F1 | Predicted | Time |
 |-------|---------------|----------|----------|-----------|------|
-| Claude Opus 4.8 (Claude Code CLI Agentic, xhigh) | 100.0% | yes | 100.0% | 2434 | 630.3s |
+| Claude Opus 4.8 (Claude Code CLI Agentic, xhigh) | 100.0% | yes | 100.0% | 2434 | N/A |
 
 ### ifta_mileage_by_vehicle_007 (ocr)
 
 | Model | Exact records | Complete | Field F1 | Predicted | Time |
 |-------|---------------|----------|----------|-----------|------|
-| Claude Opus 4.8 (Claude Code CLI Agentic, xhigh) | 94.2% | no | 98.1% | 2445 | 679.7s |
+| Claude Opus 4.8 (Claude Code CLI Agentic, xhigh) | 94.2% | no | 98.1% | 2445 | N/A |
 
 ### ifta_mileage_by_vehicle_008 (ocr)
 
 | Model | Exact records | Complete | Field F1 | Predicted | Time |
 |-------|---------------|----------|----------|-----------|------|
-| Claude Opus 4.8 (Claude Code CLI Agentic, xhigh) | 100.0% | yes | 100.0% | 2571 | 598.3s |
+| Claude Opus 4.8 (Claude Code CLI Agentic, xhigh) | 100.0% | yes | 100.0% | 2571 | N/A |
 
 ### ifta_multisection_return_001 (ocr)
 
 | Model | Exact records | Complete | Field F1 | Predicted | Time |
 |-------|---------------|----------|----------|-----------|------|
-| Claude Opus 4.8 (Claude Code CLI Agentic, xhigh) | 100.0% | yes | 100.0% | 335 | 299.7s |
+| Claude Opus 4.8 (Claude Code CLI Agentic, xhigh) | 100.0% | yes | 100.0% | 335 | N/A |
 
 ### ifta_multisection_return_002 (ocr)
 
 | Model | Exact records | Complete | Field F1 | Predicted | Time |
 |-------|---------------|----------|----------|-----------|------|
-| Claude Opus 4.8 (Claude Code CLI Agentic, xhigh) | 99.8% | no | 100.0% | 461 | 434.1s |
+| Claude Opus 4.8 (Claude Code CLI Agentic, xhigh) | 99.8% | no | 100.0% | 461 | N/A |
 
 ### ifta_return_schedule_001 (ocr)
 
 | Model | Exact records | Complete | Field F1 | Predicted | Time |
 |-------|---------------|----------|----------|-----------|------|
-| Claude Opus 4.8 (Claude Code CLI Agentic, xhigh) | 63.7% | no | 97.0% | 558 | 1492.8s |
+| Claude Opus 4.8 (Claude Code CLI Agentic, xhigh) | 63.7% | no | 97.0% | 558 | N/A |
 
 ### ifta_return_schedule_002 (ocr)
 
 | Model | Exact records | Complete | Field F1 | Predicted | Time |
 |-------|---------------|----------|----------|-----------|------|
-| Claude Opus 4.8 (Claude Code CLI Agentic, xhigh) | 64.1% | no | 97.1% | 962 | 1668.7s |
+| Claude Opus 4.8 (Claude Code CLI Agentic, xhigh) | 64.1% | no | 97.1% | 962 | N/A |
 
 ### ifta_return_schedule_003 (ocr)
 
 | Model | Exact records | Complete | Field F1 | Predicted | Time |
 |-------|---------------|----------|----------|-----------|------|
-| Claude Opus 4.8 (Claude Code CLI Agentic, xhigh) | 64.1% | no | 97.2% | 1047 | 1103.9s |
+| Claude Opus 4.8 (Claude Code CLI Agentic, xhigh) | 64.1% | no | 97.2% | 1047 | N/A |
 
 ### ifta_return_schedule_004 (ocr)
 
 | Model | Exact records | Complete | Field F1 | Predicted | Time |
 |-------|---------------|----------|----------|-----------|------|
-| Claude Opus 4.8 (Claude Code CLI Agentic, xhigh) | 64.7% | no | 97.2% | 1061 | 1820.4s |
+| Claude Opus 4.8 (Claude Code CLI Agentic, xhigh) | 64.7% | no | 97.2% | 1061 | N/A |
 
 ### ifta_return_schedule_005 (ocr)
 
 | Model | Exact records | Complete | Field F1 | Predicted | Time |
 |-------|---------------|----------|----------|-----------|------|
-| Claude Opus 4.8 (Claude Code CLI Agentic, xhigh) | 62.9% | no | 97.1% | 1115 | 1300.8s |
+| Claude Opus 4.8 (Claude Code CLI Agentic, xhigh) | 62.9% | no | 97.1% | 1115 | N/A |
 
 ### ifta_tax_inquiry_001 (ocr)
 
 | Model | Exact records | Complete | Field F1 | Predicted | Time |
 |-------|---------------|----------|----------|-----------|------|
-| Claude Opus 4.8 (Claude Code CLI Agentic, xhigh) | 99.8% | no | 99.9% | 649 | 245.6s |
+| Claude Opus 4.8 (Claude Code CLI Agentic, xhigh) | 99.8% | no | 99.9% | 649 | N/A |
 
 ### ifta_tax_inquiry_002 (ocr)
 
 | Model | Exact records | Complete | Field F1 | Predicted | Time |
 |-------|---------------|----------|----------|-----------|------|
-| Claude Opus 4.8 (Claude Code CLI Agentic, xhigh) | 99.8% | no | 99.9% | 649 | 264.2s |
+| Claude Opus 4.8 (Claude Code CLI Agentic, xhigh) | 99.8% | no | 99.9% | 649 | N/A |
 
 ### ifta_tax_summary_001 (ocr)
 
 | Model | Exact records | Complete | Field F1 | Predicted | Time |
 |-------|---------------|----------|----------|-----------|------|
-| Claude Opus 4.8 (Claude Code CLI Agentic, xhigh) | 99.9% | no | 100.0% | 760 | 354.1s |
+| Claude Opus 4.8 (Claude Code CLI Agentic, xhigh) | 99.9% | no | 100.0% | 760 | N/A |
 
 ### ifta_tax_summary_002 (ocr)
 
 | Model | Exact records | Complete | Field F1 | Predicted | Time |
 |-------|---------------|----------|----------|-----------|------|
-| Claude Opus 4.8 (Claude Code CLI Agentic, xhigh) | 100.0% | yes | 100.0% | 760 | 507.4s |
+| Claude Opus 4.8 (Claude Code CLI Agentic, xhigh) | 100.0% | yes | 100.0% | 760 | N/A |
 
 ### ifta_tax_summary_003 (ocr)
 
 | Model | Exact records | Complete | Field F1 | Predicted | Time |
 |-------|---------------|----------|----------|-----------|------|
-| Claude Opus 4.8 (Claude Code CLI Agentic, xhigh) | 100.0% | yes | 100.0% | 760 | 620.6s |
+| Claude Opus 4.8 (Claude Code CLI Agentic, xhigh) | 100.0% | yes | 100.0% | 760 | N/A |
 
 ### ifta_tax_summary_004 (ocr)
 
 | Model | Exact records | Complete | Field F1 | Predicted | Time |
 |-------|---------------|----------|----------|-----------|------|
-| Claude Opus 4.8 (Claude Code CLI Agentic, xhigh) | 99.9% | no | 100.0% | 760 | 1912.3s |
+| Claude Opus 4.8 (Claude Code CLI Agentic, xhigh) | 99.9% | no | 100.0% | 760 | N/A |
 
 ### loss_run_external_001 (ocr)
 
 | Model | Exact records | Complete | Field F1 | Predicted | Time |
 |-------|---------------|----------|----------|-----------|------|
-| Claude Opus 4.8 (Claude Code CLI Agentic, xhigh) | 98.3% | no | 99.9% | 300 | 1074.6s |
+| Claude Opus 4.8 (Claude Code CLI Agentic, xhigh) | 98.3% | no | 99.9% | 300 | N/A |
 
 ### loss_run_external_002 (ocr)
 
 | Model | Exact records | Complete | Field F1 | Predicted | Time |
 |-------|---------------|----------|----------|-----------|------|
-| Claude Opus 4.8 (Claude Code CLI Agentic, xhigh) | 91.7% | no | 99.7% | 300 | 940.2s |
+| Claude Opus 4.8 (Claude Code CLI Agentic, xhigh) | 91.7% | no | 99.7% | 300 | N/A |
 
 ### loss_run_external_003 (ocr)
 
 | Model | Exact records | Complete | Field F1 | Predicted | Time |
 |-------|---------------|----------|----------|-----------|------|
-| Claude Opus 4.8 (Claude Code CLI Agentic, xhigh) | 91.7% | no | 99.5% | 301 | 899.7s |
+| Claude Opus 4.8 (Claude Code CLI Agentic, xhigh) | 91.7% | no | 99.5% | 301 | N/A |
 
 ### mixed_040_001_crosspage (ocr)
 
 | Model | Exact records | Complete | Field F1 | Predicted | Time |
 |-------|---------------|----------|----------|-----------|------|
-| Claude Opus 4.8 (Claude Code CLI Agentic, xhigh) | 100.0% | yes | 100.0% | 40 | 603.3s |
+| Claude Opus 4.8 (Claude Code CLI Agentic, xhigh) | 100.0% | yes | 100.0% | 40 | N/A |
 
 ### mixed_cgl_040_001 (ocr)
 
 | Model | Exact records | Complete | Field F1 | Predicted | Time |
 |-------|---------------|----------|----------|-----------|------|
-| Claude Opus 4.8 (Claude Code CLI Agentic, xhigh) | 0.0% | no | 99.5% | 619 | 2007.0s |
+| Claude Opus 4.8 (Claude Code CLI Agentic, xhigh) | 0.0% | no | 99.5% | 619 | N/A |
 
 ### multihop_012_001_crosspage (ocr)
 
 | Model | Exact records | Complete | Field F1 | Predicted | Time |
 |-------|---------------|----------|----------|-----------|------|
-| Claude Opus 4.8 (Claude Code CLI Agentic, xhigh) | 100.0% | yes | 100.0% | 12 | 347.5s |
+| Claude Opus 4.8 (Claude Code CLI Agentic, xhigh) | 100.0% | yes | 100.0% | 12 | N/A |
 
 ### multihop_025_001_crosspage (ocr)
 
 | Model | Exact records | Complete | Field F1 | Predicted | Time |
 |-------|---------------|----------|----------|-----------|------|
-| Claude Opus 4.8 (Claude Code CLI Agentic, xhigh) | 96.0% | no | 99.7% | 25 | 432.2s |
+| Claude Opus 4.8 (Claude Code CLI Agentic, xhigh) | 96.0% | no | 99.7% | 25 | N/A |
 
 ### multihop_bop_012_001 (ocr)
 
 | Model | Exact records | Complete | Field F1 | Predicted | Time |
 |-------|---------------|----------|----------|-----------|------|
-| Claude Opus 4.8 (Claude Code CLI Agentic, xhigh) | 0.0% | no | 99.7% | 360 | 1285.6s |
+| Claude Opus 4.8 (Claude Code CLI Agentic, xhigh) | 0.0% | no | 99.7% | 360 | N/A |
 
 ### multihop_wc_025_001 (ocr)
 
 | Model | Exact records | Complete | Field F1 | Predicted | Time |
 |-------|---------------|----------|----------|-----------|------|
-| Claude Opus 4.8 (Claude Code CLI Agentic, xhigh) | 0.0% | no | 100.0% | 510 | 829.5s |
+| Claude Opus 4.8 (Claude Code CLI Agentic, xhigh) | 0.0% | no | 100.0% | 510 | N/A |
 
 ### vehicle_schedule_sparse_001 (ocr)
 
 | Model | Exact records | Complete | Field F1 | Predicted | Time |
 |-------|---------------|----------|----------|-----------|------|
-| Claude Opus 4.8 (Claude Code CLI Agentic, xhigh) | 99.9% | no | 100.0% | 800 | 512.9s |
+| Claude Opus 4.8 (Claude Code CLI Agentic, xhigh) | 99.9% | no | 100.0% | 800 | N/A |
 
 ### vehicle_schedule_sparse_002 (ocr)
 
 | Model | Exact records | Complete | Field F1 | Predicted | Time |
 |-------|---------------|----------|----------|-----------|------|
-| Claude Opus 4.8 (Claude Code CLI Agentic, xhigh) | 99.9% | no | 100.0% | 800 | 895.6s |
+| Claude Opus 4.8 (Claude Code CLI Agentic, xhigh) | 99.9% | no | 100.0% | 800 | N/A |
