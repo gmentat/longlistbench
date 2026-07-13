@@ -20,7 +20,7 @@ from pathlib import Path
 
 try:
     from .dataset_layout import default_dataset_dir
-    from .evaluate_models import generate_report, run_evaluation_from_saved_predictions
+    from .evaluate_models import MODELS, generate_report, run_evaluation_from_saved_predictions
     from .run_codex_cli_evaluation import (
         discover_samples,
         _all_statuses_succeeded,
@@ -30,7 +30,7 @@ try:
     )
 except ImportError:
     from dataset_layout import default_dataset_dir
-    from evaluate_models import generate_report, run_evaluation_from_saved_predictions
+    from evaluate_models import MODELS, generate_report, run_evaluation_from_saved_predictions
     from run_codex_cli_evaluation import (
         discover_samples,
         _all_statuses_succeeded,
@@ -40,14 +40,14 @@ except ImportError:
     )
 
 
-MODEL_KEY = "claude_opus48"
-CLAUDE_MODEL = "claude-opus-4-8"
-CLAUDE_EFFORT = "xhigh"
+DEFAULT_MODEL_KEY = "claude_opus48"
+DEFAULT_CLAUDE_MODEL = "claude-opus-4-8"
+DEFAULT_CLAUDE_EFFORT = "xhigh"
 RUN_METADATA_FILE = "run_metadata.json"
 
 
-def prediction_path(output_dir: Path, sample: str, transcript: str) -> Path:
-    return output_dir / f"{sample}_{transcript}_{MODEL_KEY}_predicted.json"
+def prediction_path(output_dir: Path, sample: str, transcript: str, model_key: str) -> Path:
+    return output_dir / f"{sample}_{transcript}_{model_key}_predicted.json"
 
 
 def _parse_result_payload(log: str) -> dict:
@@ -77,12 +77,17 @@ def _parse_result_payload(log: str) -> dict:
     return payload
 
 
-def _metadata_from_payload(payload: dict) -> dict:
+def _metadata_from_payload(payload: dict, requested_model: str, effort: str) -> dict:
     model_usage = payload.get("modelUsage") or {}
     observed_models = sorted(model_usage)
-    if CLAUDE_MODEL not in model_usage:
+    matching_models = [
+        model
+        for model in observed_models
+        if model == requested_model or model.startswith(f"{requested_model}[")
+    ]
+    if not matching_models:
         raise ValueError(
-            f"Requested {CLAUDE_MODEL}, but Claude Code reported {observed_models or 'no model'}"
+            f"Requested {requested_model}, but Claude Code reported {observed_models or 'no model'}"
         )
 
     input_tokens = 0
@@ -97,9 +102,10 @@ def _metadata_from_payload(payload: dict) -> dict:
 
     duration_ms = payload.get("duration_ms")
     return {
-        "requested_model": CLAUDE_MODEL,
+        "requested_model": requested_model,
+        "matching_inference_models": matching_models,
         "observed_models": observed_models,
-        "effort": CLAUDE_EFFORT,
+        "effort": effort,
         "duration_seconds": float(duration_ms) / 1000 if duration_ms is not None else None,
         "tokens": {
             "requests": int(payload.get("num_turns") or 0),
@@ -132,6 +138,8 @@ def run_claude(
     workspace: Path,
     repo_root: Path,
     timeout_seconds: int,
+    model: str,
+    effort: str,
 ) -> tuple[int | str, str, dict | None]:
     cli_version = _claude_cli_version()
     prompt = (workspace / "prompt.md").read_text(encoding="utf-8")
@@ -142,9 +150,9 @@ def run_claude(
         "claude",
         "-p",
         "--model",
-        CLAUDE_MODEL,
+        model,
         "--effort",
-        CLAUDE_EFFORT,
+        effort,
         "--safe-mode",
         "--disable-slash-commands",
         "--no-chrome",
@@ -177,7 +185,7 @@ def run_claude(
         return completed.returncode, completed.stdout, None
     try:
         payload = _parse_result_payload(completed.stdout)
-        metadata = _metadata_from_payload(payload)
+        metadata = _metadata_from_payload(payload, model, effort)
         metadata["claude_cli_version"] = cli_version
     except ValueError as exc:
         return f"invalid_result: {exc}", completed.stdout, None
@@ -194,8 +202,11 @@ def run_sample(
     transcript: str,
     timeout_seconds: int,
     no_resume: bool,
+    model_key: str,
+    model: str,
+    effort: str,
 ) -> tuple[str, int | str, dict | None]:
-    pred_path = prediction_path(output_dir, sample, transcript)
+    pred_path = prediction_path(output_dir, sample, transcript, model_key)
     if pred_path.exists() and pred_path.stat().st_size > 0 and not no_resume:
         return sample, "skip", None
 
@@ -208,8 +219,14 @@ def run_sample(
         workspace_root=workspace_root,
     )
     try:
-        status, log, metadata = run_claude(workspace, repo_root, timeout_seconds)
-        (logs_dir / f"{sample}_{transcript}_{MODEL_KEY}.log").write_text(
+        status, log, metadata = run_claude(
+            workspace,
+            repo_root,
+            timeout_seconds,
+            model,
+            effort,
+        )
+        (logs_dir / f"{sample}_{transcript}_{model_key}.log").write_text(
             log,
             encoding="utf-8",
         )
@@ -237,13 +254,16 @@ def _write_run_metadata(
     output_dir: Path,
     transcript: str,
     sample_metadata: dict[str, dict],
+    model_key: str,
+    requested_model: str,
+    effort: str,
 ) -> None:
     payload = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "runner": Path(__file__).name,
-        "model_key": MODEL_KEY,
-        "requested_model": CLAUDE_MODEL,
-        "effort": CLAUDE_EFFORT,
+        "model_key": model_key,
+        "requested_model": requested_model,
+        "effort": effort,
         "transcript": transcript,
         "cli_version_observed_at_metadata_write": _claude_cli_version(),
         "authentication": "Claude subscription; credentials are not stored",
@@ -264,12 +284,17 @@ def main() -> int:
     parser.add_argument("--workspace-root", default="/tmp/longlistbench-claude-workspaces")
     parser.add_argument("--no-resume", action="store_true")
     parser.add_argument("--workers", type=int, default=1, help="Number of samples to run in parallel")
+    parser.add_argument("--model-key", default=DEFAULT_MODEL_KEY, help="Offline scorer model key")
+    parser.add_argument("--model", default=DEFAULT_CLAUDE_MODEL, help="Claude model slug")
+    parser.add_argument("--effort", default=DEFAULT_CLAUDE_EFFORT, help="Claude effort level")
     args = parser.parse_args()
 
     if shutil.which("sandbox-exec") is None:
         raise SystemExit("sandbox-exec is required for repository-denied Claude Code CLI runs")
     if shutil.which("claude") is None:
         raise SystemExit("claude is required for Claude Code CLI runs")
+    if args.model_key not in MODELS:
+        raise SystemExit(f"Unknown offline scorer model key: {args.model_key}")
 
     repo_root = Path(__file__).resolve().parents[1]
     dataset_dir = default_dataset_dir()
@@ -292,12 +317,15 @@ def main() -> int:
                 output_dir=output_dir,
                 transcript=args.transcript,
                 sample_metadata=sample_metadata,
+                model_key=args.model_key,
+                requested_model=args.model,
+                effort=args.effort,
             )
-        print(f"[DONE] {MODEL_KEY} {sample_id} -> {status}", flush=True)
+        print(f"[DONE] {args.model_key} {sample_id} -> {status}", flush=True)
 
     if worker_count == 1:
         for index, sample in enumerate(samples, start=1):
-            print(f"[{index}/{len(samples)}] {MODEL_KEY} {sample}", flush=True)
+            print(f"[{index}/{len(samples)}] {args.model_key} {sample}", flush=True)
             record_result(
                 run_sample(
                     dataset_dir=dataset_dir,
@@ -308,13 +336,16 @@ def main() -> int:
                     transcript=args.transcript,
                     timeout_seconds=args.timeout_seconds,
                     no_resume=args.no_resume,
+                    model_key=args.model_key,
+                    model=args.model,
+                    effort=args.effort,
                 )
             )
     else:
         with ThreadPoolExecutor(max_workers=min(worker_count, len(samples) or 1)) as executor:
             future_to_sample = {}
             for index, sample in enumerate(samples, start=1):
-                print(f"[{index}/{len(samples)}] {MODEL_KEY} {sample} QUEUED", flush=True)
+                print(f"[{index}/{len(samples)}] {args.model_key} {sample} QUEUED", flush=True)
                 future = executor.submit(
                     run_sample,
                     dataset_dir=dataset_dir,
@@ -325,6 +356,9 @@ def main() -> int:
                     transcript=args.transcript,
                     timeout_seconds=args.timeout_seconds,
                     no_resume=args.no_resume,
+                    model_key=args.model_key,
+                    model=args.model,
+                    effort=args.effort,
                 )
                 future_to_sample[future] = sample
 
@@ -347,10 +381,13 @@ def main() -> int:
         output_dir=output_dir,
         transcript=args.transcript,
         sample_metadata=sample_metadata,
+        model_key=args.model_key,
+        requested_model=args.model,
+        effort=args.effort,
     )
 
     results = run_evaluation_from_saved_predictions(
-        models=[MODEL_KEY],
+        models=[args.model_key],
         samples=args.samples,
         transcripts=[args.transcript],
         output_dir=output_dir,

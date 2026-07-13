@@ -31,7 +31,7 @@ def test_parse_result_payload_and_metadata() -> None:
     }
 
     parsed = runner._parse_result_payload("warning\n" + json.dumps(payload))
-    metadata = runner._metadata_from_payload(parsed)
+    metadata = runner._metadata_from_payload(parsed, "claude-opus-4-8", "xhigh")
 
     assert metadata["requested_model"] == "claude-opus-4-8"
     assert metadata["duration_seconds"] == 1.25
@@ -53,6 +53,9 @@ def test_cli_version_is_labeled_as_metadata_write_observation(tmp_path, monkeypa
         output_dir=tmp_path,
         transcript="ocr",
         sample_metadata={},
+        model_key="claude_opus48",
+        requested_model="claude-opus-4-8",
+        effort="xhigh",
     )
 
     payload = json.loads((tmp_path / runner.RUN_METADATA_FILE).read_text(encoding="utf-8"))
@@ -70,5 +73,26 @@ def test_metadata_rejects_unexpected_inference_model() -> None:
                         "outputTokens": 1,
                     }
                 }
-            }
+            },
+            "claude-opus-4-8",
+            "xhigh",
         )
+
+
+def test_metadata_accepts_context_qualified_requested_model() -> None:
+    metadata = runner._metadata_from_payload(
+        {
+            "type": "result",
+            "modelUsage": {
+                "claude-fable-5[1m]": {
+                    "inputTokens": 1,
+                    "outputTokens": 2,
+                }
+            },
+        },
+        "claude-fable-5",
+        "xhigh",
+    )
+
+    assert metadata["requested_model"] == "claude-fable-5"
+    assert metadata["matching_inference_models"] == ["claude-fable-5[1m]"]

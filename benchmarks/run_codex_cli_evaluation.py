@@ -20,6 +20,7 @@ import subprocess
 import sys
 import tempfile
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from datetime import datetime, timezone
 from pathlib import Path
 
 try:
@@ -30,7 +31,7 @@ try:
         sample_id_from_transcript_path,
         transcript_path,
     )
-    from .evaluate_models import run_evaluation_from_saved_predictions, generate_report
+    from .evaluate_models import MODELS, generate_report, run_evaluation_from_saved_predictions
     from .evaluation_metrics import normalize_record_predictions, uses_record_evaluator
     from .extraction_core import (
         _LOSS_RUN_EXTRACTION_SCHEMA_JSON,
@@ -46,7 +47,7 @@ except ImportError:
         sample_id_from_transcript_path,
         transcript_path,
     )
-    from evaluate_models import run_evaluation_from_saved_predictions, generate_report
+    from evaluate_models import MODELS, generate_report, run_evaluation_from_saved_predictions
     from evaluation_metrics import normalize_record_predictions, uses_record_evaluator
     from extraction_core import (
         _LOSS_RUN_EXTRACTION_SCHEMA_JSON,
@@ -56,7 +57,10 @@ except ImportError:
     )
 
 
-MODEL_KEY = "codex_gpt55"
+DEFAULT_MODEL_KEY = "codex_gpt55"
+DEFAULT_CODEX_MODEL = "gpt-5.5"
+DEFAULT_REASONING_EFFORT = "xhigh"
+RUN_METADATA_FILE = "run_metadata.json"
 OUTPUT_FILE_RECORDS = Path("output/records.json")
 OUTPUT_FILE_INCIDENTS = Path("output/incidents.json")
 
@@ -79,8 +83,8 @@ def discover_samples(dataset_dir: Path, transcript: str, requested: list[str] | 
     return [sample for _count, sample in sorted(set(samples))]
 
 
-def prediction_path(output_dir: Path, sample: str, transcript: str) -> Path:
-    return output_dir / f"{sample}_{transcript}_{MODEL_KEY}_predicted.json"
+def prediction_path(output_dir: Path, sample: str, transcript: str, model_key: str) -> Path:
+    return output_dir / f"{sample}_{transcript}_{model_key}_predicted.json"
 
 
 def build_incident_contract() -> str:
@@ -162,7 +166,13 @@ def _all_statuses_succeeded(statuses: list[tuple[str, int | str]]) -> bool:
     return bool(statuses) and all(status in (0, "skip") for _sample, status in statuses)
 
 
-def run_codex(workspace: Path, repo_root: Path, timeout_seconds: int) -> tuple[int | str, str]:
+def run_codex(
+    workspace: Path,
+    repo_root: Path,
+    timeout_seconds: int,
+    model: str,
+    effort: str,
+) -> tuple[int | str, str]:
     prompt = (workspace / "prompt.md").read_text(encoding="utf-8")
     cmd = [
         "sandbox-exec",
@@ -173,9 +183,9 @@ def run_codex(workspace: Path, repo_root: Path, timeout_seconds: int) -> tuple[i
         "--ephemeral",
         "--skip-git-repo-check",
         "-m",
-        "gpt-5.5",
+        model,
         "-c",
-        'model_reasoning_effort="xhigh"',
+        f'model_reasoning_effort="{effort}"',
         "--cd",
         str(workspace),
         "--dangerously-bypass-approvals-and-sandbox",
@@ -218,8 +228,11 @@ def run_sample(
     transcript: str,
     timeout_seconds: int,
     no_resume: bool,
+    model_key: str,
+    model: str,
+    effort: str,
 ) -> tuple[str, int | str]:
-    pred_path = prediction_path(output_dir, sample, transcript)
+    pred_path = prediction_path(output_dir, sample, transcript, model_key)
     if pred_path.exists() and pred_path.stat().st_size > 0 and not no_resume:
         return sample, "skip"
 
@@ -232,8 +245,8 @@ def run_sample(
         workspace_root=workspace_root,
     )
     try:
-        status, log = run_codex(workspace, repo_root, timeout_seconds)
-        (logs_dir / f"{sample}_{transcript}_{MODEL_KEY}.log").write_text(
+        status, log = run_codex(workspace, repo_root, timeout_seconds, model, effort)
+        (logs_dir / f"{sample}_{transcript}_{model_key}.log").write_text(
             log,
             encoding="utf-8",
         )
@@ -245,6 +258,43 @@ def run_sample(
         shutil.rmtree(workspace, ignore_errors=True)
 
 
+def _codex_cli_version() -> str | None:
+    try:
+        return subprocess.check_output(
+            ["codex", "--version"],
+            text=True,
+            stderr=subprocess.STDOUT,
+        ).strip()
+    except (OSError, subprocess.CalledProcessError):
+        return None
+
+
+def _write_run_metadata(
+    *,
+    output_dir: Path,
+    transcript: str,
+    model_key: str,
+    requested_model: str,
+    effort: str,
+    statuses: list[tuple[str, int | str]],
+) -> None:
+    payload = {
+        "generated_at": datetime.now(timezone.utc).isoformat(),
+        "runner": Path(__file__).name,
+        "model_key": model_key,
+        "requested_model": requested_model,
+        "effort": effort,
+        "transcript": transcript,
+        "cli_version_observed_at_metadata_write": _codex_cli_version(),
+        "authentication": "Codex subscription; credentials are not stored",
+        "sample_statuses": {sample: status for sample, status in statuses},
+    }
+    (output_dir / RUN_METADATA_FILE).write_text(
+        json.dumps(payload, indent=2) + "\n",
+        encoding="utf-8",
+    )
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description="Run repository-denied Codex CLI extraction")
     parser.add_argument("--output-dir", required=True)
@@ -254,10 +304,15 @@ def main() -> int:
     parser.add_argument("--workspace-root", default="/tmp/longlistbench-codex-workspaces")
     parser.add_argument("--no-resume", action="store_true")
     parser.add_argument("--workers", type=int, default=1, help="Number of samples to run in parallel")
+    parser.add_argument("--model-key", default=DEFAULT_MODEL_KEY, help="Offline scorer model key")
+    parser.add_argument("--model", default=DEFAULT_CODEX_MODEL, help="Codex model slug")
+    parser.add_argument("--effort", default=DEFAULT_REASONING_EFFORT, help="Codex reasoning effort")
     args = parser.parse_args()
 
     if shutil.which("sandbox-exec") is None:
         raise SystemExit("sandbox-exec is required for repository-denied Codex CLI runs")
+    if args.model_key not in MODELS:
+        raise SystemExit(f"Unknown offline scorer model key: {args.model_key}")
 
     repo_root = Path(__file__).resolve().parents[1]
     dataset_dir = default_dataset_dir()
@@ -271,7 +326,7 @@ def main() -> int:
     worker_count = max(1, args.workers)
     if worker_count == 1:
         for index, sample in enumerate(samples, start=1):
-            print(f"[{index}/{len(samples)}] codex_gpt55 {sample}", flush=True)
+            print(f"[{index}/{len(samples)}] {args.model_key} {sample}", flush=True)
             sample_id, status = run_sample(
                 dataset_dir=dataset_dir,
                 repo_root=repo_root,
@@ -281,6 +336,9 @@ def main() -> int:
                 transcript=args.transcript,
                 timeout_seconds=args.timeout_seconds,
                 no_resume=args.no_resume,
+                model_key=args.model_key,
+                model=args.model,
+                effort=args.effort,
             )
             statuses.append((sample_id, status))
             print(f"  -> {status}", flush=True)
@@ -288,7 +346,7 @@ def main() -> int:
         with ThreadPoolExecutor(max_workers=min(worker_count, len(samples) or 1)) as executor:
             future_to_sample = {}
             for index, sample in enumerate(samples, start=1):
-                print(f"[{index}/{len(samples)}] codex_gpt55 {sample} QUEUED", flush=True)
+                print(f"[{index}/{len(samples)}] {args.model_key} {sample} QUEUED", flush=True)
                 future = executor.submit(
                     run_sample,
                     dataset_dir=dataset_dir,
@@ -299,6 +357,9 @@ def main() -> int:
                     transcript=args.transcript,
                     timeout_seconds=args.timeout_seconds,
                     no_resume=args.no_resume,
+                    model_key=args.model_key,
+                    model=args.model,
+                    effort=args.effort,
                 )
                 future_to_sample[future] = sample
 
@@ -309,7 +370,7 @@ def main() -> int:
                 except Exception as exc:
                     sample_id, status = sample, f"error: {exc}"
                 statuses.append((sample_id, status))
-                print(f"[DONE] codex_gpt55 {sample_id} -> {status}", flush=True)
+                print(f"[DONE] {args.model_key} {sample_id} -> {status}", flush=True)
 
         status_order = {sample: index for index, sample in enumerate(samples)}
         statuses.sort(key=lambda item: status_order.get(item[0], len(status_order)))
@@ -318,8 +379,16 @@ def main() -> int:
         "sample\tstatus\n" + "\n".join(f"{sample}\t{status}" for sample, status in statuses) + "\n",
         encoding="utf-8",
     )
+    _write_run_metadata(
+        output_dir=output_dir,
+        transcript=args.transcript,
+        model_key=args.model_key,
+        requested_model=args.model,
+        effort=args.effort,
+        statuses=statuses,
+    )
     results = run_evaluation_from_saved_predictions(
-        models=[MODEL_KEY],
+        models=[args.model_key],
         samples=args.samples,
         transcripts=[args.transcript],
         output_dir=output_dir,
