@@ -9,10 +9,7 @@ from dataclasses import dataclass, field
 from html.parser import HTMLParser
 from pathlib import Path
 
-try:
-    from pdf2image import pdfinfo_from_path
-except ImportError:
-    pdfinfo_from_path = None
+from pypdf import PdfReader
 
 
 @dataclass(frozen=True)
@@ -159,8 +156,8 @@ def find_page_scaffold_mismatches(dataset_dir: Path) -> list[tuple[str, int, int
         if parser.page_count == 0:
             continue
         pdf_path = dataset_dir / "pdfs" / f"{html_path.stem}.pdf"
-        if pdfinfo_from_path is not None and pdf_path.exists():
-            pdf_page_count = int(pdfinfo_from_path(str(pdf_path))["Pages"])
+        if pdf_path.exists():
+            pdf_page_count = len(PdfReader(pdf_path).pages)
         else:
             metadata_path = metadata_dir / f"{html_path.stem}.json"
             metadata = json.loads(metadata_path.read_text(encoding="utf-8"))
