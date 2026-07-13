@@ -42,5 +42,8 @@
   "hf_config": "core_operations",
   "document_count": 1,
   "evidence_pattern": "single_document",
-  "ocr_md_size_bytes": 52067
+  "ocr_md_size_bytes": 52067,
+  "pdf_size_bytes": 450868,
+  "html_size_bytes": 119492,
+  "json_size_bytes": 175399
 }

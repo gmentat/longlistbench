@@ -16,10 +16,10 @@
     "html": "html/ifta_tax_inquiry_001.html",
     "metadata": "metadata/ifta_tax_inquiry_001.json",
     "json_size_bytes": 82865,
-    "pdf_size_bytes": 222722,
-    "html_size_bytes": 84423,
+    "pdf_size_bytes": 227380,
+    "html_size_bytes": 88985,
     "ocr_md": "transcripts/ocr_gemini/ifta_tax_inquiry_001.md",
-    "ocr_size_bytes": 44541
+    "ocr_size_bytes": 60310
   },
   "transcripts_available": [
     "ocr"
@@ -47,13 +47,14 @@
   "hf_config": "core_operations",
   "document_count": 1,
   "evidence_pattern": "single_document",
-  "pdf_size_bytes": 222722,
-  "html_size_bytes": 84423,
+  "pdf_size_bytes": 227380,
+  "html_size_bytes": 88985,
   "layout_revision": {
-    "date": "2026-06-28T09:33:22.772287+00:00",
-    "purpose": "reduce deterministic parser friendliness with production-like layout variation",
+    "date": "2026-07-13T17:41:09.033745+00:00",
+    "purpose": "eliminate headerless table continuations while preserving production-like layout variation",
     "ocr_status": "regenerated_from_current_pdf",
-    "ocr_regenerated_at": "2026-06-28T21:44:24.950682+00:00"
+    "ocr_regenerated_at": "2026-07-13T18:04:41.001836+00:00"
   },
-  "ocr_md_size_bytes": 44541
+  "ocr_md_size_bytes": 60310,
+  "json_size_bytes": 82865
 }

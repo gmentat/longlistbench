@@ -18,7 +18,7 @@ Every run reported `claude-fable-5` in model usage. Claude Code also reported au
 
 | Documents | Target records | Errors | Exact-record recall | Complete documents | Field micro-F1 | Field macro-F1 |
 |---:|---:|---:|---:|---:|---:|---:|
-| 36 | 33,450 | 0 | 90.6% | 15/36 (41.7%) | 98.9% | 98.7% |
+| 36 | 33,450 | 0 | 90.7% | 15/36 (41.7%) | 98.9% | 98.6% |
 
 Exact-record recall requires every normalized target field to match. Complete-document success requires an identical record multiset with no missing or extra records; source order is not scored.
 

@@ -1,9 +1,11 @@
 # Page 1
 
 FLEET UNIT LISTING
-Vehicle Schedule                                                                                         FLEET FILE 984A698
+Vehicle Schedule
 
-| The vehicle list is printed from multiple source tabs. Blank company-unit or plate values are intentional and must be preserved.
+FLEET FILE 984A698
+
+The vehicle list is printed from multiple source tabs. Blank company-unit or plate values are intentional and must be preserved.
 
 Scheduled units - tabular export
 
@@ -16,7 +18,7 @@ SCHEDULE UNIT,PLATE,BODY,YEAR,MANUFACTURER,MODEL,COMPANY UNIT
 3208,,T,2009,Kenworth,579,
 3275,,TRAILER,2006,Peterbilt,T680,106
 6308,,TKTR,2019,Freightliner,TRACTOR,
-Registration import note retained for audit review.,,,,,,
+Registration import note retained for audit review.
 2918,R974701,T,2009,Volvo,TRAILER,
 4733,,TKTR,2020,UTILITY,TKTR,109
 8178,,TRACTOR,2024,WABASH,T,
@@ -28,7 +30,7 @@ Registration import note retained for audit review.,,,,,,
 6182,R104644,TKTR,2005,UTILITY,TKTR,
 6247,,TRAILER,2008,WABASH,T,
 7662,,TRACTOR,2007,GREAT DANE,VNL,118
-Registration import note retained for audit review.,,,,,,
+Registration import note retained for audit review.
 2991,,T,1999,Kenworth,579,
 6389,R534992,T,2002,Peterbilt,T680,
 410,,TRAILER,2018,Freightliner,TRACTOR,121
@@ -41,477 +43,611 @@ Registration import note retained for audit review.,,,,,,
 5851,R403723,TKTR,2007,Freightliner,TRACTOR,
 2915,,TRAILER,2023,Volvo,TRAILER,
 
-Fleet unit listing                                                                                                  Page 1
+Fleet unit listing,Page 1
 
 # Page 2
 
-FLEET UNIT LISTING,FLEET FILE 984A698
-Vehicle Schedule
-Vehicle cards - registration tab
+FLEET UNIT LISTING
+# Vehicle Schedule
 
-UNIT SCHEDULE REF,Vehicle Details,Company unit,registration plate
-6673,2004 UTILITY TKTR; body/body style T.,130,(blank)
-1726,2006 WABASH T; body/body style TRACTOR.,(blank),(blank)
-3629,1997 GREAT DANE VNL; body/body style TRAILER.,(blank),R290697
-7453,1997 Kenworth 579; body/body style TKTR.,133,(blank)
-5198,2018 Peterbilt T680; body/body style TRACTOR.,(blank),(blank)
-8098,2012 Freightliner TRACTOR; body/body style TRAILER.,(blank),(blank)
-1448,2023 Volvo TRAILER; body/body style T.,136,R747358
-9123,2007 UTILITY TKTR; body/body style TRACTOR.,(blank),(blank)
-9962,2012 WABASH T; body/body style T.,(blank),(blank)
-1728,1998 GREAT DANE VNL; body/body style TRACTOR.,139,(blank)
-9676,1997 Kenworth 579; body/body style TRAILER.,(blank),R605565
-5925,2018 Peterbilt T680; body/body style TRAILER.,(blank),(blank)
-5359,2023 Freightliner TRACTOR; body/body style TRAILER.,142,(blank)
-247,2015 Volvo TRAILER; body/body style TRAILER.,(blank),(blank)
-7544,2020 UTILITY TKTR; body/body style T.,(blank),R308083
-186,1997 WABASH T; body/body style TRACTOR.,145,(blank)
-6269,2023 GREAT DANE VNL; body/body style TKTR.,(blank),(blank)
-8468,2024 Kenworth 579; body/body style T.,(blank),(blank)
-1576,2017 Peterbilt T680; body/body style T.,148,R891131
-1526,2024 Freightliner TRACTOR; body/body style TKTR.,(blank),(blank)
-7207,2015 Volvo TRAILER; body/body style T.,(blank),(blank)
-6130,2001 UTILITY TKTR; body/body style TRACTOR.,151,(blank)
-8616,2009 WABASH T; body/body style T.,(blank),R942334
-8245,2026 GREAT DANE VNL; body/body style TRACTOR.,(blank),(blank)
-6727,2000 Kenworth 579; body/body style TKTR.,154,(blank)
-9686,2016 Peterbilt T680; body/body style TKTR.,(blank),(blank)
-4043,2003 Freightliner TRACTOR; body/body style TRACTOR.,(blank),R770920
-1044,2011 Volvo TRAILER; body/body style TRACTOR.,157,(blank)
-3113,2024 UTILITY TKTR; body/body style TRAILER.,(blank),(blank)
-4714,2017 WABASH T; body/body style TKTR.,(blank),(blank)
+| FLEET FILE 984A698 |
+|-------------------|
+
+### Vehicle cards - registration tab
+
++--------------------------------------------+--------------------------------------------+--------------------------------------------+
+| UNIT SCHEDULE REF 6673                     | UNIT SCHEDULE REF 1726                     | UNIT SCHEDULE REF 3629                     |
+| 2004 UTILITY TKTR; body/body style **T.**  | 2006 WABASH T; body/body style **TRACTOR.**  | 1997 GREAT DANE VNL; body/body style **TRAILER.**|
+| Company unit **130**; registration plate **(blank)**. | Company unit **(blank)**; registration plate **(blank)**. | Company unit **(blank)**; registration plate **R290697**. |
++--------------------------------------------+--------------------------------------------+--------------------------------------------+
+| UNIT SCHEDULE REF 7453                     | UNIT SCHEDULE REF 5198                     | UNIT SCHEDULE REF 8098                     |
+| 1997 Kenworth 579; body/body style **TKTR.**| 2018 Peterbilt T680; body/body style **TRACTOR.** | 2012 Freightliner TRACTOR; body/body style **TRAILER.**|
+| Company unit **133**; registration plate **(blank)**. | Company unit **(blank)**; registration plate **(blank)**. | Company unit **(blank)**; registration plate **(blank)**. |
++--------------------------------------------+--------------------------------------------+--------------------------------------------+
+| UNIT SCHEDULE REF 1448                     | UNIT SCHEDULE REF 9123                     | UNIT SCHEDULE REF 9962                     |
+| 2023 Volvo TRAILER; body/body style **T.** | 2007 UTILITY TKTR; body/body style **TRACTOR.**  | 2012 WABASH T; body/body style **T.**      |
+| Company unit **136**; registration plate **R747358**. | Company unit **(blank)**; registration plate **(blank)**. | Company unit **(blank)**; registration plate **(blank)**. |
++--------------------------------------------+--------------------------------------------+--------------------------------------------+
+| UNIT SCHEDULE REF 1728                     | UNIT SCHEDULE REF 9676                     | UNIT SCHEDULE REF 5925                     |
+| 1998 GREAT DANE VNL; body/body style **TRACTOR.**| 1997 Kenworth 579; body/body style **TRAILER.**| 2018 Peterbilt T680; body/body style **TRAILER.** |
+| Company unit **139**; registration plate **(blank)**. | Company unit **(blank)**; registration plate **R605565**. | Company unit **(blank)**; registration plate **(blank)**. |
++--------------------------------------------+--------------------------------------------+--------------------------------------------+
+| UNIT SCHEDULE REF 5359                     | UNIT SCHEDULE REF 247                      | UNIT SCHEDULE REF 7544                     |
+| 2023 Freightliner TRACTOR; body/body style **TRAILER.**| 2015 Volvo TRAILER; body/body style **TRAILER.**| 2020 UTILITY TKTR; body/body style **T.**  |
+| Company unit **142**; registration plate **(blank)**. | Company unit **(blank)**; registration plate **(blank)**. | Company unit **(blank)**; registration plate **R308083**. |
++--------------------------------------------+--------------------------------------------+--------------------------------------------+
+| UNIT SCHEDULE REF 186                      | UNIT SCHEDULE REF 6269                     | UNIT SCHEDULE REF 8468                     |
+| 1997 WABASH T; body/body style **TRACTOR.**| 2023 GREAT DANE VNL; body/body style **TKTR.**| 2024 Kenworth 579; body/body style **T.**   |
+| Company unit **145**; registration plate **(blank)**. | Company unit **(blank)**; registration plate **(blank)**. | Company unit **(blank)**; registration plate **(blank)**. |
++--------------------------------------------+--------------------------------------------+--------------------------------------------+
+| UNIT SCHEDULE REF 1576                     | UNIT SCHEDULE REF 1526                     | UNIT SCHEDULE REF 7207                     |
+| 2017 Peterbilt T680; body/body style **T.**| 2024 Freightliner TRACTOR; body/body style **TKTR.**| 2015 Volvo TRAILER; body/body style **T.** |
+| Company unit **148**; registration plate **R891131**. | Company unit **(blank)**; registration plate **(blank)**. | Company unit **(blank)**; registration plate **(blank)**. |
++--------------------------------------------+--------------------------------------------+--------------------------------------------+
+| UNIT SCHEDULE REF 6130                     | UNIT SCHEDULE REF 8616                     | UNIT SCHEDULE REF 8245                     |
+| 2001 UTILITY TKTR; body/body style **TRACTOR.**| 2009 WABASH T; body/body style **T.**      | 2026 GREAT DANE VNL; body/body style **TRACTOR.**|
+| Company unit **151**; registration plate **(blank)**. | Company unit **(blank)**; registration plate **R942334**. | Company unit **(blank)**; registration plate **(blank)**. |
++--------------------------------------------+--------------------------------------------+--------------------------------------------+
+| UNIT SCHEDULE REF 6727                     | UNIT SCHEDULE REF 9686                     | UNIT SCHEDULE REF 4043                     |
+| 2000 Kenworth 579; body/body style **TKTR.**| 2016 Peterbilt T680; body/body style **TKTR.**| 2003 Freightliner TRACTOR; body/body style **TRACTOR.**|
+| Company unit **154**; registration plate **(blank)**. | Company unit **(blank)**; registration plate **(blank)**. | Company unit **(blank)**; registration plate **R770920**. |
++--------------------------------------------+--------------------------------------------+--------------------------------------------+
+| UNIT SCHEDULE REF 1044                     | UNIT SCHEDULE REF 3113                     | UNIT SCHEDULE REF 4714                     |
+| 2011 Volvo TRAILER; body/body style **TRACTOR.**| 2024 UTILITY TKTR; body/body style **TRAILER.**| 2017 WABASH T; body/body style **TKTR.**   |
+| Company unit **157**; registration plate **(blank)**. | Company unit **(blank)**; registration plate **(blank)**. | Company unit **(blank)**; registration plate **(blank)**. |
++--------------------------------------------+--------------------------------------------+--------------------------------------------+
+
+|                      |        |
+|----------------------|--------|
+| Fleet unit listing   | Page 2 |
 
 # Page 3
 
-Veh #,Year / make,Model / body,Company / plate
-8582,2001 GREAT DANE,VNL / T,160 / R568530
-676,2010 Kenworth,579 / TRAILER,(blank) / (blank)
-2543,2025 Peterbilt,T680 / T,(blank) / (blank)
-3486,2026 Freightliner,TRACTOR / T,163 / (blank)
-8783,2025 Volvo,TRAILER / TRACTOR,(blank) / R243726
-2399,2001 UTILITY,TKTR / TRACTOR,(blank) / (blank)
-6981,2000 WABASH,T / TRACTOR,166 / (blank)
-7468,2013 GREAT DANE,VNL / TKTR,(blank) / (blank)
-4926,2000 Kenworth,579 / TKTR,(blank) / R753282
-8908,2021 Peterbilt,T680 / TKTR,169 / (blank)
-9203,1998 Freightliner,TRACTOR / TRACTOR,(blank) / (blank)
-5090,2026 Volvo,TRAILER / T,(blank) / (blank)
-2204,2007 UTILITY,TKTR / TRACTOR,172 / R764056
-2448,2003 WABASH,T / TKTR,(blank) / (blank)
-3640,2022 GREAT DANE,VNL / TRAILER,(blank) / (blank)
-5462,2008 Kenworth,579 / T,175 / (blank)
-1148,2007 Peterbilt,T680 / T,(blank) / R433685
-1864,2014 Freightliner,TRACTOR / TKTR,(blank) / (blank)
-7642,2009 Volvo,TRAILER / TRAILER,178 / (blank)
-1689,2003 UTILITY,TKTR / TRACTOR,(blank) / (blank)
-1968,2002 WABASH,T / TRAILER,(blank) / R915272
-3307,2009 GREAT DANE,VNL / TRAILER,181 / (blank)
-4244,2013 Kenworth,579 / TKTR,(blank) / (blank)
-5141,2023 Peterbilt,T680 / T,(blank) / (blank)
+FLEET UNIT LISTING,
+Vehicle Schedule,FLEET FILE 984A698
+
+Continuation - unit detail blocks,
+Veh #,8582,Veh #,676
+Year / make,2001 GREAT DANE,Year / make,2010 Kenworth
+Model / body,VNL / T,Model / body,579 / TRAILER
+Company / plate,160 / R568530,Company / plate,(blank) / (blank)
+
+Veh #,2543,Veh #,3486
+Year / make,2025 Peterbilt,Year / make,2026 Freightliner
+Model / body,T680 / T,Model / body,TRACTOR / T
+Company / plate,(blank) / (blank),Company / plate,163 / (blank)
+
+Veh #,8783,Veh #,2399
+Year / make,2025 Volvo,Year / make,2001 UTILITY
+Model / body,TRAILER / TRACTOR,Model / body,TKTR / TRACTOR
+Company / plate,(blank) / R243726,Company / plate,(blank) / (blank)
+
+Veh #,6981,Veh #,7468
+Year / make,2000 WABASH,Year / make,2013 GREAT DANE
+Model / body,T / TRACTOR,Model / body,VNL / TKTR
+Company / plate,166 / (blank),Company / plate,(blank) / (blank)
+
+Veh #,4926,Veh #,8908
+Year / make,2000 Kenworth,Year / make,2021 Peterbilt
+Model / body,579 / TKTR,Model / body,T680 / TKTR
+Company / plate,(blank) / R753282,Company / plate,169 / (blank)
+
+Veh #,9203,Veh #,5090
+Year / make,1998 Freightliner,Year / make,2026 Volvo
+Model / body,TRACTOR / TRACTOR,Model / body,TRAILER / T
+Company / plate,(blank) / (blank),Company / plate,(blank) / (blank)
+
+Veh #,2204,Veh #,2448
+Year / make,2007 UTILITY,Year / make,2003 WABASH
+Model / body,TKTR / TRACTOR,Model / body,T / TKTR
+Company / plate,172 / R764056,Company / plate,(blank) / (blank)
+
+Veh #,3640,Veh #,5462
+Year / make,2022 GREAT DANE,Year / make,2008 Kenworth
+Model / body,VNL / TRAILER,Model / body,579 / T
+Company / plate,(blank) / (blank),Company / plate,175 / (blank)
+
+Veh #,1148,Veh #,1864
+Year / make,2007 Peterbilt,Year / make,2014 Freightliner
+Model / body,T680 / T,Model / body,TRACTOR / TKTR
+Company / plate,(blank) / R433685,Company / plate,(blank) / (blank)
+
+Veh #,7642,Veh #,1689
+Year / make,2009 Volvo,Year / make,2003 UTILITY
+Model / body,TRAILER / TRAILER,Model / body,TKTR / TRACTOR
+Company / plate,178 / (blank),Company / plate,(blank) / (blank)
+
+Veh #,1968,Veh #,3307
+Year / make,2002 WABASH,Year / make,2009 GREAT DANE
+Model / body,T / TRAILER,Model / body,VNL / TRAILER
+Company / plate,(blank) / R915272,Company / plate,181 / (blank)
+
+Veh #,4244,Veh #,5141
+Year / make,2013 Kenworth,Year / make,2023 Peterbilt
+Model / body,579 / TKTR,Model / body,T680 / T
+Company / plate,(blank) / (blank),Company / plate,(blank) / (blank)
+
+Fleet unit listing,Page 3
 
 # Page 4
 
-FLEET UNIT LISTING                                                                FLEET FILE 984A698
+FLEET UNIT LISTING
+**Vehicle Schedule**
+FLEET FILE 984A698
 
-Vehicle Schedule
-Equipment and registration split view
+---
+
+**Equipment and registration split view**
 The unit number ties the equipment description to the registration block.
 
-Equipment description
-UNIT,YR,MAKE,MODEL,BODY
-503,2005,Freightliner,TRACTOR,TRAILER
-8531,2020,Volvo,TRAILER,TKTR
-913,2008,UTILITY,TKTR,TKTR
-4674,2002,WABASH,T,TKTR
-6329,2010,GREAT DANE,VNL,TKTR
-228,2021,Kenworth,579,TRAILER
-961,2001,Peterbilt,T680,T
-6516,2011,Freightliner,TRACTOR,TKTR
-9708,2002,Volvo,TRAILER,TKTR
-524,2003,UTILITY,TKTR,TKTR
-9333,2017,WABASH,T,TRAILER
-7808,2016,GREAT DANE,VNL,TRAILER
-8281,2023,Kenworth,579,TRAILER
-4695,2025,Peterbilt,T680,T
-8872,1998,Freightliner,TRACTOR,T
-3473,2017,Volvo,TRAILER,TKTR
-4465,2009,UTILITY,TKTR,T
-1916,2001,WABASH,T,TKTR
-1933,2015,GREAT DANE,VNL,T
-5462,2005,Kenworth,579,TRAILER
-4420,2015,Peterbilt,T680,T
-3911,2008,Freightliner,TRACTOR,TRAILER
-4368,2015,Volvo,TRAILER,TKTR
-3862,2021,UTILITY,TKTR,TRACTOR
-2980,2006,WABASH,T,TRACTOR
-8834,2012,GREAT DANE,VNL,TRAILER
+**Equipment description**
 
-Registration cross-reference
-UNIT,COMPANY UNIT,PLATE
-503,184,R283444
-8531,(blank),(blank)
-913,(blank),(blank)
-4674,187,(blank)
-6329,(blank),R601080
-228,(blank),(blank)
-961,190,(blank)
-6516,(blank),(blank)
-9708,(blank),R733377
-524,193,(blank)
-9333,(blank),(blank)
-7808,(blank),(blank)
-8281,196,R565246
-4695,(blank),(blank)
-8872,(blank),(blank)
-3473,199,(blank)
-4465,(blank),R290352
-1916,(blank),(blank)
-1933,202,(blank)
-5462,(blank),(blank)
-4420,(blank),R197150
-3911,205,(blank)
-4368,(blank),(blank)
-3862,(blank),(blank)
-2980,208,R210448
-8834,(blank),(blank)
+| UNIT | YR | MAKE | MODEL | BODY |
+|---|---|---|---|---|
+| 503 | 2005 | Freightliner | TRACTOR | TRAILER |
+| 8531 | 2020 | Volvo | TRAILER | TKTR |
+| 913 | 2008 | UTILITY | TKTR | TKTR |
+| 4674 | 2002 | WABASH | T | TKTR |
+| 6329 | 2010 | GREAT DANE | VNL | TKTR |
+| 228 | 2021 | Kenworth | 579 | TRAILER |
+| 961 | 2001 | Peterbilt | T680 | T |
+| 6516 | 2011 | Freightliner | TRACTOR | TKTR |
+| 9708 | 2002 | Volvo | TRAILER | TKTR |
+| 524 | 2003 | UTILITY | TKTR | TKTR |
+| 9333 | 2017 | WABASH | T | TRAILER |
+| 7808 | 2016 | GREAT DANE | VNL | TRAILER |
+| 8281 | 2023 | Kenworth | 579 | TRAILER |
+| 4695 | 2025 | Peterbilt | T680 | T |
+| 8872 | 1998 | Freightliner | TRACTOR | T |
+| 3473 | 2017 | Volvo | TRAILER | TKTR |
+| 4465 | 2009 | UTILITY | TKTR | T |
+| 1916 | 2001 | WABASH | T | TKTR |
+| 1933 | 2015 | GREAT DANE | VNL | T |
+| 5462 | 2005 | Kenworth | 579 | TRAILER |
+| 4420 | 2015 | Peterbilt | T680 | T |
+| 3911 | 2008 | Freightliner | TRACTOR | TRAILER |
+| 4368 | 2015 | Volvo | TRAILER | TKTR |
+| 3862 | 2021 | UTILITY | TKTR | TRACTOR |
+| 2980 | 2006 | WABASH | T | TRACTOR |
+| 8834 | 2012 | GREAT DANE | VNL | TRAILER |
+
+
+**Registration cross-reference**
+
+| UNIT | COMPANY UNIT | PLATE |
+|---|---|---|
+| 503 | 184 | R283444 |
+| 8531 | (blank) | (blank) |
+| 913 | (blank) | (blank) |
+| 4674 | 187 | (blank) |
+| 6329 | (blank) | R601080 |
+| 228 | (blank) | (blank) |
+| 961 | 190 | (blank) |
+| 6516 | (blank) | (blank) |
+| 9708 | (blank) | R733377 |
+| 524 | 193 | (blank) |
+| 9333 | (blank) | (blank) |
+| 7808 | (blank) | (blank) |
+| 8281 | 196 | R565246 |
+| 4695 | (blank) | (blank) |
+| 8872 | (blank) | (blank) |
+| 3473 | 199 | (blank) |
+| 4465 | (blank) | R290352 |
+| 1916 | (blank) | (blank) |
+| 1933 | 202 | (blank) |
+| 5462 | (blank) | (blank) |
+| 4420 | (blank) | R197150 |
+| 3911 | 205 | (blank) |
+| 4368 | (blank) | (blank) |
+| 3862 | (blank) | (blank) |
+| 2980 | 208 | R210448 |
+| 8834 | (blank) | (blank) |
 
 Some registration fields are blank in the source export.
 
-Fleet unit listing                                                                            Page 4
+---
+Fleet unit listing Page 4
 
 # Page 5
 
 FLEET UNIT LISTING
-FLEET FILE 984A698
 Vehicle Schedule
 
-Fleet import exception format
+FLEET FILE 984A698
 
-Schedule Unit,Year/Make,Equipment,Company Listing,Registration
-Schedule unit 4790,2005 Kenworth,"579
-T",Unit (blank),(blank)
-Schedule unit 8968,2019 Peterbilt,"T680
-TRACTOR",Unit 211,(blank)
-Schedule unit 424,2014 Freightliner,"TRACTOR
-TRAILER",Unit (blank),R796917
-Schedule unit 4654,2011 Volvo,"TRAILER
-TRAILER",Unit (blank),(blank)
-Schedule unit 8177,2007 UTILITY,"TKTR
-T",Unit 214,(blank)
-Schedule unit 1813,1999 WABASH,"T
-TRACTOR",Unit (blank),(blank)
-Schedule unit 7533,2001 GREAT DANE,"VNL
-T",Unit (blank),R662607
-Schedule unit 7366,2016 Kenworth,"579
-TRACTOR",Unit 217,(blank)
-Schedule unit 2975,2004 Peterbilt,"T680
-T",Unit (blank),(blank)
-Schedule unit 6923,2023 Freightliner,"TRACTOR
-TKTR",Unit (blank),(blank)
+### Fleet import exception format
+
+| Schedule unit 4790 | 2005 Kenworth |
+| :--- | :--- | :--- |
+| EQUIPMENT<br>579<br>T | COMPANY LISTING<br>Unit (blank) | REGISTRATION<br>(blank) |
+
+| Schedule unit 8968 | 2019 Peterbilt |
+| :--- | :--- | :--- |
+| EQUIPMENT<br>T680<br>TRACTOR | COMPANY LISTING<br>Unit 211 | REGISTRATION<br>(blank) |
+
+| Schedule unit 424 | 2014 Freightliner |
+| :--- | :--- | :--- |
+| EQUIPMENT<br>TRACTOR<br>TRAILER | COMPANY LISTING<br>Unit (blank) | REGISTRATION<br>R796917 |
+
+| Schedule unit 4654 | 2011 Volvo |
+| :--- | :--- | :--- |
+| EQUIPMENT<br>TRAILER<br>TRAILER | COMPANY LISTING<br>Unit (blank) | REGISTRATION<br>(blank) |
+
+| Schedule unit 8177 | 2007 UTILITY |
+| :--- | :--- | :--- |
+| EQUIPMENT<br>TKTR<br>T | COMPANY LISTING<br>Unit 214 | REGISTRATION<br>(blank) |
+
+| Schedule unit 1813 | 1999 WABASH |
+| :--- | :--- | :--- |
+| EQUIPMENT<br>T<br>TRACTOR | COMPANY LISTING<br>Unit (blank) | REGISTRATION<br>(blank) |
+
+| Schedule unit 7533 | 2001 GREAT DANE |
+| :--- | :--- | :--- |
+| EQUIPMENT<br>VNL<br>T | COMPANY LISTING<br>Unit (blank) | REGISTRATION<br>R662607 |
+
+| Schedule unit 7366 | 2016 Kenworth |
+| :--- | :--- | :--- |
+| EQUIPMENT<br>579<br>TRACTOR | COMPANY LISTING<br>Unit 217 | REGISTRATION<br>(blank) |
+
+| Schedule unit 2975 | 2004 Peterbilt |
+| :--- | :--- | :--- |
+| EQUIPMENT<br>T680<br>T | COMPANY LISTING<br>Unit (blank) | REGISTRATION<br>(blank) |
+
+| Schedule unit 6923 | 2023 Freightliner |
+| :--- | :--- | :--- |
+| EQUIPMENT<br>TRACTOR<br>TKTR | COMPANY LISTING<br>Unit (blank) | REGISTRATION<br>(blank) |
 
 Fleet import exception reviewed by underwriting operations.
 
-Schedule unit 4596,2015 Volvo,"TRAILER
-TRAILER",Unit 220,R356361
-Schedule unit 9230,2007 UTILITY,"TKTR
-TRACTOR",Unit (blank),(blank)
-Schedule unit 4783,2015 WABASH,"T
-TKTR",Unit (blank),(blank)
+| Schedule unit 4596 | 2015 Volvo |
+| :--- | :--- | :--- |
+| EQUIPMENT<br>TRAILER<br>TRAILER | COMPANY LISTING<br>Unit 220 | REGISTRATION<br>R356361 |
+
+| Schedule unit 9230 | 2007 UTILITY |
+| :--- | :--- | :--- |
+| EQUIPMENT<br>TKTR<br>TRACTOR | COMPANY LISTING<br>Unit (blank) | REGISTRATION<br>(blank) |
+
+| Schedule unit 4783 | 2015 WABASH |
+| :--- | :--- | :--- |
+| EQUIPMENT<br>T<br>TKTR | COMPANY LISTING<br>Unit (blank) | REGISTRATION<br>(blank) |
+
+| Schedule unit 5913 | 2002 GREAT DANE |
+| :--- | :--- | :--- |
+| EQUIPMENT<br>VNL<br>TRAILER | COMPANY LISTING<br>Unit 223 | REGISTRATION<br>(blank) |
+
+| Schedule unit 8585 | 2026 Kenworth |
+| :--- | :--- | :--- |
+| EQUIPMENT<br>579<br>TRACTOR | COMPANY LISTING<br>Unit (blank) | REGISTRATION<br>R270127 |
+
+| Schedule unit 4859 | 2009 Peterbilt |
+| :--- | :--- | :--- |
+| EQUIPMENT<br>T680<br>T | COMPANY LISTING<br>Unit (blank) | REGISTRATION<br>(blank) |
+
+| Schedule unit 742 | 2005 Freightliner |
+| :--- | :--- | :--- |
+| EQUIPMENT<br>TRACTOR<br>TRACTOR | COMPANY LISTING<br>Unit 226 | REGISTRATION<br>(blank) |
+
+| Schedule unit 5947 | 2013 Volvo |
+| :--- | :--- | :--- |
+| EQUIPMENT<br>TRAILER<br>TKTR | COMPANY LISTING<br>Unit (blank) | REGISTRATION<br>(blank) |
+
+| Schedule unit 1550 | 2012 UTILITY |
+| :--- | :--- | :--- |
+| EQUIPMENT<br>TKTR<br>T | COMPANY LISTING<br>Unit (blank) | REGISTRATION<br>R592164 |
+
+| Schedule unit 5914 | 1999 WABASH |
+| :--- | :--- | :--- |
+| EQUIPMENT<br>T<br>TRACTOR | COMPANY LISTING<br>Unit 229 | REGISTRATION<br>(blank) |
+
+Fleet unit listing Page 5
 
 # Page 6
 
-Schedule unit,Year/Make,EQUIPMENT,COMPANY LISTING,REGISTRATION
-Schedule unit 5913,2002 GREAT DANE,VNL TRAILER,Unit 223,(blank)
-Schedule unit 8585,2026 Kenworth,579 TRACTOR,Unit (blank),R270127
-Schedule unit 4859,2009 Peterbilt,T680 T,Unit (blank),(blank)
-Schedule unit 742,2005 Freightliner,TRACTOR TRACTOR,Unit 226,(blank)
-Schedule unit 5947,2013 Volvo,TRAILER TKTR,Unit (blank),(blank)
-Schedule unit 1550,2012 UTILITY,TKTR T,Unit (blank),R592164
-Schedule unit 5914,1999 WABASH,T TRACTOR,Unit 229,(blank)
+FLEET UNIT LISTING
+Vehicle Schedule
+
+FLEET FILE 984A698
+
+Scheduled units - tabular export
+
+| SCHEDULE UNIT | PLATE | BODY | YEAR | MANUFACTURER | MODEL | COMPANY UNIT |
+|---|---|---|---|---|---|---|
+| 1377 |  | TRAILER | 2009 | GREAT DANE | VNL |  |
+| 253 |  | TKTR | 2001 | Kenworth | 579 |  |
+| 4400 | R668150 | TRACTOR | 2007 | Peterbilt | T680 | 232 |
+| 6368 |  | T | 2016 | Freightliner | TRACTOR |  |
+| 6644 |  | TKTR | 2010 | Volvo | TRAILER |  |
+| 8250 |  | T | 2023 | UTILITY | TKTR | 235 |
+| 9083 | R807751 | TRACTOR | 2017 | WABASH | T |  |
+| 3638 |  | TRAILER | 2020 | GREAT DANE | VNL |  |
+| _Registration import note retained for audit review._ |
+| 2715 |  | TRACTOR | 2013 | Kenworth | 579 | 238 |
+| 9032 |  | T | 1998 | Peterbilt | T680 |  |
+| 9252 | R992605 | TKTR | 2005 | Freightliner | TRACTOR |  |
+| 122 |  | TKTR | 2007 | Volvo | TRAILER | 241 |
+| 8603 |  | TRACTOR | 2007 | UTILITY | TKTR |  |
+| 1924 |  | TRAILER | 2026 | WABASH | T |  |
+| 6606 | R747717 | T | 2008 | GREAT DANE | VNL | 244 |
+| 7196 |  | TKTR | 2015 | Kenworth | 579 |  |
+| 9671 |  | T | 2018 | Peterbilt | T680 |  |
+| 4210 |  | TRAILER | 2019 | Freightliner | TRACTOR | 247 |
+| 8905 | R788307 | TRAILER | 2007 | Volvo | TRAILER |  |
+| _Registration import note retained for audit review._ |
+| 4472 |  | TRAILER | 1999 | UTILITY | TKTR |  |
+| 3517 |  | TRAILER | 2003 | WABASH | T | 250 |
+| 9249 |  | T | 2018 | GREAT DANE | VNL |  |
+| 2100 | R917695 | TRAILER | 2006 | Kenworth | 579 |  |
+| 9287 |  | T | 1997 | Peterbilt | T680 | 253 |
+| 5857 |  | TRAILER | 2010 | Freightliner | TRACTOR |  |
+| 2413 |  | T | 2024 | Volvo | TRAILER |  |
+| 8637 | R941703 | TRACTOR | 2023 | UTILITY | TKTR | 256 |
+| 4465 |  | T | 2009 | WABASH | T |  |
+| 4676 |  | TRAILER | 2009 | GREAT DANE | VNL |  |
+| 1408 |  | TKTR | 2024 | Kenworth | 579 | 259 |
+
+Fleet unit listing
+Page 6of
+
 
 # Page 7
 
 FLEET UNIT LISTING
 Vehicle Schedule
+
 FLEET FILE 984A698
-
-Scheduled units - tabular export
-
-SCHEDULE UNIT,PLATE,BODY,YEAR,MANUFACTURER,MODEL,COMPANY UNIT
-1377,,TRAILER,2009,GREAT DANE,VNL,
-253,,TKTR,2001,Kenworth,579,
-4400,R668150,TRACTOR,2007,Peterbilt,T680,232
-6368,,T,2016,Freightliner,TRACTOR,
-6644,,TKTR,2010,Volvo,TRAILER,
-8250,,T,2023,UTILITY,TKTR,235
-9083,R807751,TRACTOR,2017,WABASH,T,
-3638,,TRAILER,2020,GREAT DANE,VNL,
-Registration import note retained for audit review.,,,,,,
-2715,,TRACTOR,2013,Kenworth,579,238
-9032,,T,1998,Peterbilt,T680,
-9252,R992605,TKTR,2005,Freightliner,TRACTOR,
-122,,TKTR,2007,Volvo,TRAILER,241
-8603,,TRACTOR,2007,UTILITY,TKTR,
-1924,,TRAILER,2026,WABASH,T,
-6606,R747717,T,2008,GREAT DANE,VNL,244
-7196,,TKTR,2015,Kenworth,579,
-9671,,T,2018,Peterbilt,T680,
-4210,,TRAILER,2019,Freightliner,TRACTOR,247
-8905,R788307,TRAILER,2007,Volvo,TRAILER,
-Registration import note retained for audit review.,,,,,,
-4472,,TRAILER,1999,UTILITY,TKTR,
-3517,,TRAILER,2003,WABASH,T,250
-9249,,T,2018,GREAT DANE,VNL,
-2100,R917695,TRAILER,2006,Kenworth,579,
-9287,,T,1997,Peterbilt,T680,253
-5857,,TRAILER,2010,Freightliner,TRACTOR,
-2413,,T,2024,Volvo,TRAILER,
-8637,R941703,TRACTOR,2023,UTILITY,TKTR,256
-4465,,T,2009,WABASH,T,
-4676,,TRAILER,2009,GREAT DANE,VNL,
-1408,,TKTR,2024,Kenworth,579,259
-
-Fleet unit listing
-Page 6
-
-# Page 8
-
-FLEET UNIT LISTING                                                                                     FLEET FILE 984A698
-Vehicle Schedule
 
 Vehicle cards - registration tab
 
-"UNIT SCHEDULE REF","Vehicle Details","Company unit","Registration plate"
-"1609","2006 Peterbilt T680; body/body style TRAILER.","(blank)","R551640"
-"3793","2008 Freightliner TRACTOR; body/body style T.","(blank)","(blank)"
-"76","2024 Volvo TRAILER; body/body style T.","262","(blank)"
-"4802","2009 UTILITY TKTR; body/body style T.","(blank)","(blank)"
-"9825","1998 WABASH T; body/body style TRAILER.","(blank)","R183599"
-"9200","2000 GREAT DANE VNL; body/body style TRAILER.","265","(blank)"
-"9570","2025 Kenworth 579; body/body style TRAILER.","(blank)","(blank)"
-"3977","2013 Peterbilt T680; body/body style T.","(blank)","(blank)"
-"3405","2020 Freightliner TRACTOR; body/body style TRACTOR.","268","R411983"
-"4430","2024 Volvo TRAILER; body/body style TRAILER.","(blank)","(blank)"
-"3314","1999 UTILITY TKTR; body/body style TRACTOR.","(blank)","(blank)"
-"9402","2022 WABASH T; body/body style TRACTOR.","271","(blank)"
-"4355","2015 GREAT DANE VNL; body/body style TKTR.","(blank)","R652142"
-"4373","2002 Kenworth 579; body/body style T.","(blank)","(blank)"
-"8828","2006 Peterbilt T680; body/body style TRACTOR.","274","(blank)"
-"2469","2005 Freightliner TRACTOR; body/body style TKTR.","(blank)","(blank)"
-"583","2011 Volvo TRAILER; body/body style TKTR.","(blank)","R154624"
-"4755","2003 UTILITY TKTR; body/body style TRAILER.","277","(blank)"
-"2894","2009 WABASH T; body/body style T.","(blank)","(blank)"
-"5799","2010 GREAT DANE VNL; body/body style TKTR.","(blank)","(blank)"
-"4897","2007 Kenworth 579; body/body style TRACTOR.","280","R803756"
-"2663","1999 Peterbilt T680; body/body style T.","(blank)","(blank)"
-"3847","2015 Freightliner TRACTOR; body/body style T.","(blank)","(blank)"
-"1622","2017 Volvo TRAILER; body/body style TKTR.","283","(blank)"
-"8725","2006 UTILITY TKTR; body/body style T.","(blank)","R399706"
-"2440","2024 WABASH T; body/body style TRAILER.","(blank)","(blank)"
-"7786","2008 GREAT DANE VNL; body/body style T.","286","(blank)"
-"2568","2021 Kenworth 579; body/body style TRACTOR.","(blank)","(blank)"
-"627","2000 Peterbilt T680; body/body style TKTR.","(blank)","R327737"
-"9910","2009 Freightliner TRACTOR; body/body style TRAILER.","289","(blank)"
++-----------------------------------------------+-----------------------------------------------+-----------------------------------------------+
+| UNIT SCHEDULE REF 1609                         | UNIT SCHEDULE REF 3793                         | UNIT SCHEDULE REF 76                          |
+| 2006 Peterbilt T680; body/body style TRAILER.  | 2008 Freightliner TRACTOR; body/body style T. | 2024 Volvo TRAILER; body/body style T.        |
+| Company unit (blank); registration plate R551640. | Company unit (blank); registration plate (blank). | Company unit 262; registration plate (blank). |
++-----------------------------------------------+-----------------------------------------------+-----------------------------------------------+
+| UNIT SCHEDULE REF 4802                         | UNIT SCHEDULE REF 9825                         | UNIT SCHEDULE REF 9200                         |
+| 2009 UTILITY TKTR; body/body style T.         | 1998 WABASH T; body/body style TRAILER.       | 2000 GREAT DANE VNL; body/body style TRAILER.  |
+| Company unit (blank); registration plate (blank). | Company unit (blank); registration plate R183599. | Company unit 265; registration plate (blank). |
++-----------------------------------------------+-----------------------------------------------+-----------------------------------------------+
+| UNIT SCHEDULE REF 9570                         | UNIT SCHEDULE REF 3977                         | UNIT SCHEDULE REF 3405                         |
+| 2025 Kenworth 579; body/body style TRAILER.   | 2013 Peterbilt T680; body/body style T.        | 2020 Freightliner TRACTOR; body/body style TRACTOR. |
+| Company unit (blank); registration plate (blank). | Company unit (blank); registration plate (blank). | Company unit 268; registration plate R411983. |
++-----------------------------------------------+-----------------------------------------------+-----------------------------------------------+
+| UNIT SCHEDULE REF 4430                         | UNIT SCHEDULE REF 3314                         | UNIT SCHEDULE REF 9402                         |
+| 2024 Volvo TRAILER; body/body style TRAILER.  | 1999 UTILITY TKTR; body/body style TRACTOR.   | 2022 WABASH T; body/body style TRACTOR.       |
+| Company unit (blank); registration plate (blank). | Company unit (blank); registration plate (blank). | Company unit 271; registration plate (blank). |
++-----------------------------------------------+-----------------------------------------------+-----------------------------------------------+
+| UNIT SCHEDULE REF 4355                         | UNIT SCHEDULE REF 4373                         | UNIT SCHEDULE REF 8828                         |
+| 2015 GREAT DANE VNL; body/body style TKTR.    | 2002 Kenworth 579; body/body style T.         | 2006 Peterbilt T680; body/body style TRACTOR.  |
+| Company unit (blank); registration plate R652142. | Company unit (blank); registration plate (blank). | Company unit 274; registration plate (blank). |
++-----------------------------------------------+-----------------------------------------------+-----------------------------------------------+
+| UNIT SCHEDULE REF 2469                         | UNIT SCHEDULE REF 583                          | UNIT SCHEDULE REF 4755                         |
+| 2005 Freightliner TRACTOR; body/body style TKTR. | 2011 Volvo TRAILER; body/body style TKTR.     | 2003 UTILITY TKTR; body/body style TRAILER.   |
+| Company unit (blank); registration plate (blank). | Company unit (blank); registration plate R154624. | Company unit 277; registration plate (blank). |
++-----------------------------------------------+-----------------------------------------------+-----------------------------------------------+
+| UNIT SCHEDULE REF 2894                         | UNIT SCHEDULE REF 5799                         | UNIT SCHEDULE REF 4897                         |
+| 2009 WABASH T; body/body style T.             | 2010 GREAT DANE VNL; body/body style TKTR.    | 2007 Kenworth 579; body/body style TRACTOR.   |
+| Company unit (blank); registration plate (blank). | Company unit (blank); registration plate (blank). | Company unit 280; registration plate R803756. |
++-----------------------------------------------+-----------------------------------------------+-----------------------------------------------+
+| UNIT SCHEDULE REF 2663                         | UNIT SCHEDULE REF 3847                         | UNIT SCHEDULE REF 1622                         |
+| 1999 Peterbilt T680; body/body style T.        | 2015 Freightliner TRACTOR; body/body style T. | 2017 Volvo TRAILER; body/body style TKTR.     |
+| Company unit (blank); registration plate (blank). | Company unit (blank); registration plate (blank). | Company unit 283; registration plate (blank). |
++-----------------------------------------------+-----------------------------------------------+-----------------------------------------------+
+| UNIT SCHEDULE REF 8725                         | UNIT SCHEDULE REF 2440                         | UNIT SCHEDULE REF 7786                         |
+| 2006 UTILITY TKTR; body/body style T.         | 2024 WABASH T; body/body style TRAILER.       | 2008 GREAT DANE VNL; body/body style T.        |
+| Company unit (blank); registration plate R399706. | Company unit (blank); registration plate (blank). | Company unit 286; registration plate (blank). |
++-----------------------------------------------+-----------------------------------------------+-----------------------------------------------+
+| UNIT SCHEDULE REF 2568                         | UNIT SCHEDULE REF 627                          | UNIT SCHEDULE REF 9910                         |
+| 2021 Kenworth 579; body/body style TRACTOR.   | 2000 Peterbilt T680; body/body style TKTR.    | 2009 Freightliner TRACTOR; body/body style TRAILER. |
+| Company unit (blank); registration plate (blank). | Company unit (blank); registration plate R327737. | Company unit 289; registration plate (blank). |
++-----------------------------------------------+-----------------------------------------------+-----------------------------------------------+
 
-Fleet unit listing                                                                                             Page 7
+Fleet unit listing
+Page 7
+
+# Page 8
+
+FLEET UNIT LISTING
+Vehicle Schedule                                                          FLEET FILE 984A698
+
+Continuation - unit detail blocks
+
++--------------------+---------------------+--------------------+--------------------+
+| Veh #              | 401                 | Veh #              | 1886               |
+| Year / make        | 2012 Volvo          | Year / make        | 2021 UTILITY       |
+| Model / body       | TRAILER / TRAILER   | Model / body       | TKTR / TRAILER     |
+| Company / plate    | (blank) / (blank)   | Company / plate    | (blank) / (blank)  |
++--------------------+---------------------+--------------------+--------------------+
+| Veh #              | 2444                | Veh #              | 827            |
+| Year / make        | 2010 WABASH         | Year / make        | 2013 GREAT DANE    |
+| Model / body       | T / TRAILER         | Model / body       | VNL / T            |
+| Company / plate    | 292 / R342683       | Company / plate    | (blank) / (blank)  |
++--------------------+---------------------+--------------------+--------------------+
+| Veh #              | 3991                | Veh #              | 8624               |
+| Year / make        | 2001 Kenworth       | Year / make        | 2003 Peterbilt     |
+| Model / body       | 579 / TRAILER       | Model / body       | T680 / T           |
+| Company / plate    | (blank) / (blank)   | Company / plate    | 295 / (blank)      |
++--------------------+---------------------+--------------------+--------------------+
+| Veh #              | 4556                | Veh #              | 8307               |
+| Year / make        | 2014 Freightliner   | Year / make        | 2023 Volvo         |
+| Model / body       | TRACTOR / TRAILER   | Model / body       | TRAILER / TRACTOR  |
+| Company / plate    | (blank) / R331140   | Company / plate    | (blank) / (blank)  |
++--------------------+---------------------+--------------------+--------------------+
+| Veh #              | 8973                | Veh #              | 1873               |
+| Year / make        | 2002 UTILITY        | Year / make        | 2005 WABASH        |
+| Model / body       | TKTR / TKTR         | Model / body       | T / TRAILER        |
+| Company / plate    | 298 / (blank)       | Company / plate    | (blank) / (blank)  |
++--------------------+---------------------+--------------------+--------------------+
+| Veh #              | 3833                | Veh #              | 4713               |
+| Year / make        | 2024 GREAT DANE     | Year / make        | 2010 Kenworth      |
+| Model / body       | VNL / TRACTOR       | Model / body       | 579 / TKTR         |
+| Company / plate    | (blank) / R888199   | Company / plate    | 301 / (blank)      |
++--------------------+---------------------+--------------------+--------------------+
+| Veh #              | 8276                | Veh #              | 9918               |
+| Year / make        | 2008 Peterbilt      | Year / make        | 2013 Freightliner  |
+| Model / body       | T680 / T            | Model / body       | TRACTOR / TRACTOR  |
+| Company / plate    | (blank) / (blank)   | Company / plate    | (blank) / (blank)  |
++--------------------+---------------------+--------------------+--------------------+
+| Veh #              | 7951                | Veh #              | 7164               |
+| Year / make        | 2022 Volvo          | Year / make        | 2015 UTILITY       |
+| Model / body       | TRAILER / TRAILER   | Model / body       | TKTR / TRACTOR     |
+| Company / plate    | 304 / R373162       | Company / plate    | (blank) / (blank)  |
++--------------------+---------------------+--------------------+--------------------+
+| Veh #              | 4143                | Veh #              | 9334               |
+| Year / make        | 2020 WABASH         | Year / make        | 2024 GREAT DANE    |
+| Model / body       | T / TRAILER         | Model / body       | VNL / TRAILER      |
+| Company / plate    | (blank) / (blank)   | Company / plate    | 307 / (blank)      |
++--------------------+---------------------+--------------------+--------------------+
+| Veh #              | 344                 | Veh #              | 1952               |
+| Year / make        | 2006 Kenworth       | Year / make        | 2024 Peterbilt     |
+| Model / body       | 579 / TRACTOR       | Model / body       | T680 / TRACTOR     |
+| Company / plate    | (blank) / R430860   | Company / plate    | (blank) / (blank)  |
++--------------------+---------------------+--------------------+--------------------+
+| Veh #              | 4563                | Veh #              | 2000               |
+| Year / make        | 2011 Freightliner   | Year / make        | 1997 Volvo         |
+| Model / body       | TRACTOR / TKTR      | Model / body       | TRAILER / TRACTOR  |
+| Company / plate    | 310 / (blank)       | Company / plate    | (blank) / (blank)  |
++--------------------+---------------------+--------------------+--------------------+
+| Veh #              | 4733                | Veh #              | 5833               |
+| Year / make        | 2009 UTILITY        | Year / make        | 2021 WABASH        |
+| Model / body       | TKTR / TKTR         | Model / body       | T / TRAILER        |
+| Company / plate    | (blank) / R233290   | Company / plate    | 313 / (blank)      |
++--------------------+---------------------+--------------------+--------------------+
+
+Fleet unit listing                                                                     Page 8
 
 # Page 9
 
-FLEET UNIT LISTING                                                    +--------------------+
-                                                                      | FLEET FILE 984A698 |
-                                                                      +--------------------+
-
+FLEET UNIT LISTING
 # Vehicle Schedule
 
-## Continuation - unit detail blocks
+| FLEET FILE 984A698 |
+|--------------------|
 
-```text
-+-----------------------------------------------+-----------------------------------------------+
-| Veh #                 401                     | Veh #                 1886                    |
-| Year / make           2012 Volvo              | Year / make           2021 UTILITY            |
-| Model / body          TRAILER / TRAILER       | Model / body          TKTR / TRAILER          |
-| Company / plate       (blank) / (blank)       | Company / plate       (blank) / (blank)       |
-+-----------------------------------------------+-----------------------------------------------+
-| Veh #                 2444                    | Veh #                 827                     |
-| Year / make           2010 WABASH             | Year / make           2013 GREAT DANE         |
-| Model / body          T / TRAILER             | Model / body          VNL / T                 |
-| Company / plate       292 / R342683           | Company / plate       (blank) / (blank)       |
-+-----------------------------------------------+-----------------------------------------------+
-| Veh #                 3991                    | Veh #                 8624                    |
-| Year / make           2001 Kenworth           | Year / make           2003 Peterbilt          |
-| Model / body          579 / TRAILER           | Model / body          T680 / T                |
-| Company / plate       (blank) / (blank)       | Company / plate       295 / (blank)           |
-+-----------------------------------------------+-----------------------------------------------+
-| Veh #                 4556                    | Veh #                 8307                    |
-| Year / make           2014 Freightliner       | Year / make           2023 Volvo              |
-| Model / body          TRACTOR / TRAILER       | Model / body          TRAILER / TRACTOR       |
-| Company / plate       (blank) / R331140       | Company / plate       (blank) / (blank)       |
-+-----------------------------------------------+-----------------------------------------------+
-| Veh #                 8973                    | Veh #                 1873                    |
-| Year / make           2002 UTILITY            | Year / make           2005 WABASH             |
-| Model / body          TKTR / TKTR             | Model / body          T / TRAILER             |
-| Company / plate       298 / (blank)           | Company / plate       (blank) / (blank)       |
-+-----------------------------------------------+-----------------------------------------------+
-| Veh #                 3833                    | Veh #                 4713                    |
-| Year / make           2024 GREAT DANE         | Year / make           2010 Kenworth           |
-| Model / body          VNL / TRACTOR           | Model / body          579 / TKTR              |
-| Company / plate       (blank) / R888199       | Company / plate       301 / (blank)           |
-+-----------------------------------------------+-----------------------------------------------+
-| Veh #                 8276                    | Veh #                 9918                    |
-| Year / make           2008 Peterbilt          | Year / make           2013 Freightliner       |
-| Model / body          T680 / T                | Model / body          TRACTOR / TRACTOR       |
-| Company / plate       (blank) / (blank)       | Company / plate       (blank) / (blank)       |
-+-----------------------------------------------+-----------------------------------------------+
-| Veh #                 7951                    | Veh #                 7164                    |
-| Year / make           2022 Volvo              | Year / make           2015 UTILITY            |
-| Model / body          TRAILER / TRAILER       | Model / body          TKTR / TRACTOR          |
-| Company / plate       304 / R373162           | Company / plate       (blank) / (blank)       |
-+-----------------------------------------------+-----------------------------------------------+
-| Veh #                 4143                    | Veh #                 9334                    |
-| Year / make           2020 WABASH             | Year / make           2024 GREAT DANE         |
-| Model / body          T / TRAILER             | Model / body          VNL / TRAILER           |
-| Company / plate       (blank) / (blank)       | Company / plate       307 / (blank)           |
-+-----------------------------------------------+-----------------------------------------------+
-| Veh #                 344                     | Veh #                 1952                    |
-| Year / make           2006 Kenworth           | Year / make           2024 Peterbilt          |
-| Model / body          579 / TRACTOR           | Model / body          T680 / TRACTOR          |
-| Company / plate       (blank) / R430860       | Company / plate       (blank) / (blank)       |
-+-----------------------------------------------+-----------------------------------------------+
-| Veh #                 4563                    | Veh #                 2000                    |
-| Year / make           2011 Freightliner       | Year / make           1997 Volvo              |
-| Model / body          TRACTOR / TKTR          | Model / body          TRAILER / TRACTOR       |
-| Company / plate       310 / (blank)           | Company / plate       (blank) / (blank)       |
-+-----------------------------------------------+-----------------------------------------------+
-| Veh #                 4733                    | Veh #                 5833                    |
-| Year / make           2009 UTILITY            | Year / make           2021 WABASH             |
-| Model / body          TKTR / TKTR             | Model / body          T / TRAILER             |
-| Company / plate       (blank) / R233290       | Company / plate       313 / (blank)           |
-+-----------------------------------------------+-----------------------------------------------+
-```
-
-Fleet unit listing                                                                        Page 8
-
-# Page 10
-
-FLEET UNIT LISTING                                                                         FLEET FILE 984A698
-
-Vehicle Schedule
-
-Equipment and registration split view
+## Equipment and registration split view
 The unit number ties the equipment description to the registration block.
 
-Equipment description
-UNIT,YR,MAKE,MODEL,BODY
-5271,2013,GREAT DANE,VNL,TRAILER
-8444,1999,Kenworth,579,TKTR
-3234,1997,Peterbilt,T680,TKTR
-6685,2023,Freightliner,TRACTOR,TRACTOR
-5745,2013,Volvo,TRAILER,TRACTOR
-3507,1997,UTILITY,TKTR,TRAILER
-4223,2005,WABASH,T,T
-7594,2020,GREAT DANE,VNL,TKTR
-3837,2008,Kenworth,579,T
-6938,2008,Peterbilt,T680,TRACTOR
-8528,2005,Freightliner,TRACTOR,TRAILER
-9790,2024,Volvo,TRAILER,TKTR
-980,2024,UTILITY,TKTR,T
-402,2018,WABASH,T,TRAILER
-2499,1999,GREAT DANE,VNL,TRACTOR
-4960,2015,Kenworth,579,TRACTOR
-4602,2003,Peterbilt,T680,TKTR
-5412,2001,Freightliner,TRACTOR,TRACTOR
-2569,2007,Volvo,TRAILER,T
-6481,2004,UTILITY,TKTR,TRAILER
-9408,2021,WABASH,T,T
-7976,2018,GREAT DANE,VNL,TRACTOR
-195,2006,Kenworth,579,T
-2944,2014,Peterbilt,T680,TRAILER
-5618,2009,Freightliner,TRACTOR,T
-9492,2007,Volvo,TRAILER,T
+### Equipment description
+| UNIT | YR | MAKE | MODEL | BODY |
+|---|---|---|---|---|
+| 5271 | 2013 | GREAT DANE | VNL | TRAILER |
+| 8444 | 1999 | Kenworth | 579 | TKTR |
+| 3234 | 1997 | Peterbilt | T680 | TKTR |
+| 6685 | 2023 | Freightliner | TRACTOR | TRACTOR |
+| 5745 | 2013 | Volvo | TRAILER | TRACTOR |
+| 3507 | 1997 | UTILITY | TKTR | TRAILER |
+| 4223 | 2005 | WABASH | T | T |
+| 7594 | 2020 | GREAT DANE | VNL | TKTR |
+| 3837 | 2008 | Kenworth | 579 | T |
+| 6938 | 2008 | Peterbilt | T680 | TRACTOR |
+| 8528 | 2005 | Freightliner | TRACTOR | TRAILER |
+| 9790 | 2024 | Volvo | TRAILER | TKTR |
+| 980 | 2024 | UTILITY | TKTR | T |
+| 402 | 2018 | WABASH | T | TRAILER |
+| 2499 | 1999 | GREAT DANE | VNL | TRACTOR |
+| 4960 | 2015 | Kenworth | 579 | TRACTOR |
+| 4602 | 2003 | Peterbilt | T680 | TKTR |
+| 5412 | 2001 | Freightliner | TRACTOR | TRACTOR |
+| 2569 | 2007 | Volvo | TRAILER | T |
+| 6481 | 2004 | UTILITY | TKTR | TRAILER |
+| 9408 | 2021 | WABASH | T | T |
+| 7976 | 2018 | GREAT DANE | VNL | TRACTOR |
+| 195 | 2006 | Kenworth | 579 | T |
+| 2944 | 2014 | Peterbilt | T680 | TRAILER |
+| 5618 | 2009 | Freightliner | TRACTOR | T |
+| 9492 | 2007 | Volvo | TRAILER | T |
 
-Registration cross-reference
-UNIT,COMPANY UNIT,PLATE
-5271,(blank),(blank)
-8444,(blank),(blank)
-3234,316,R342276
-6685,(blank),(blank)
-5745,(blank),(blank)
-3507,319,(blank)
-4223,(blank),R958056
-7594,(blank),(blank)
-3837,322,(blank)
-6938,(blank),(blank)
-8528,(blank),R175528
-9790,325,(blank)
-980,(blank),(blank)
-402,(blank),(blank)
-2499,328,R406698
-4960,(blank),(blank)
-4602,(blank),(blank)
-5412,331,(blank)
-2569,(blank),R339288
-6481,(blank),(blank)
-9408,334,(blank)
-7976,(blank),(blank)
-195,(blank),R567170
-2944,337,(blank)
-5618,(blank),(blank)
-9492,(blank),(blank)
+### Registration cross-reference
+| UNIT | COMPANY UNIT | PLATE |
+|---|---|---|
+| 5271 | (blank) | (blank) |
+| 8444 | (blank) | (blank) |
+| 3234 | 316 | R342276 |
+| 6685 | (blank) | (blank) |
+| 5745 | (blank) | (blank) |
+| 3507 | 319 | (blank) |
+| 4223 | (blank) | R958056 |
+| 7594 | (blank) | (blank) |
+| 3837 | 322 | (blank) |
+| 6938 | (blank) | (blank) |
+| 8528 | (blank) | R175528 |
+| 9790 | 325 | (blank) |
+| 980 | (blank) | (blank) |
+| 402 | (blank) | (blank) |
+| 2499 | 328 | R406698 |
+| 4960 | (blank) | (blank) |
+| 4602 | (blank) | (blank) |
+| 5412 | 331 | (blank) |
+| 2569 | (blank) | R339288 |
+| 6481 | (blank) | (blank) |
+| 9408 | 334 | (blank) |
+| 7976 | (blank) | (blank) |
+| 195 | (blank) | R567170 |
+| 2944 | 337 | (blank) |
+| 5618 | (blank) | (blank) |
+| 9492 | (blank) | (blank) |
 
 Some registration fields are blank in the source export.
 
-Fleet unit listing                                                                                        Page 9
+Fleet unit listing | Page 9
 
-# Page 11
+# Page 10
 
 FLEET UNIT LISTING
 Vehicle Schedule
 FLEET FILE 984A698
 
-Fleet import exception format
+### Fleet import exception format
 
-Schedule Unit,Year/Make,Equipment,Company Listing,Registration
-Schedule unit 114,2014 UTILITY,"TKTR TRACTOR",Unit 340,R974916
-Schedule unit 20,1999 WABASH,"T TRAILER",Unit (blank),(blank)
-Schedule unit 7298,2021 GREAT DANE,"VNL TRACTOR",Unit (blank),(blank)
-Schedule unit 4888,2004 Kenworth,"579 TRACTOR",Unit 343,(blank)
-Schedule unit 757,2002 Peterbilt,"T680 TRAILER",Unit (blank),R794407
-Schedule unit 6639,2017 Freightliner,"TRACTOR TRAILER",Unit (blank),(blank)
-Schedule unit 9637,2019 Volvo,"TRAILER TRACTOR",Unit 346,(blank)
-Schedule unit 4894,2017 UTILITY,"TKTR TRAILER",Unit (blank),(blank)
-Schedule unit 3453,2021 WABASH,"T TRACTOR",Unit (blank),R180677
-Schedule unit 9078,2006 GREAT DANE,"VNL T",Unit 349,(blank)
+| Schedule unit 114 | 2014 UTILITY | Schedule unit 20 | 1999 WABASH |
+| :--- | :--- | :--- | :--- |
+| **EQUIPMENT**<br>TKTR<br>TRACTOR | **COMPANY LISTING**<br>Unit 340 | **REGISTRATION**<br>R974916 | **EQUIPMENT**<br>T<br>TRAILER | **COMPANY LISTING**<br>Unit (blank) | **REGISTRATION**<br>(blank) |
 
-Fleet import exception reviewed by underwriting operations.
+| Schedule unit 7298 | 2021 GREAT DANE | Schedule unit 4888 | 2004 Kenworth |
+| :--- | :--- | :--- | :--- |
+| **EQUIPMENT**<br>VNL<br>TRACTOR | **COMPANY LISTING**<br>Unit (blank) | **REGISTRATION**<br>(blank) | **EQUIPMENT**<br>579<br>TRACTOR | **COMPANY LISTING**<br>Unit 343 | **REGISTRATION**<br>(blank) |
 
-Schedule Unit,Year/Make,Equipment,Company Listing,Registration
-Schedule unit 5700,2014 Kenworth,"579 TKTR",Unit (blank),(blank)
-Schedule unit 5534,2012 Peterbilt,"T680 TRAILER",Unit (blank),(blank)
-Schedule unit 3780,2021 Freightliner,"TRACTOR T",Unit 352,R494174
+| Schedule unit 757 | 2002 Peterbilt | Schedule unit 6639 | 2017 Freightliner |
+| :--- | :--- | :--- | :--- |
+| **EQUIPMENT**<br>T680<br>TRAILER | **COMPANY LISTING**<br>Unit (blank) | **REGISTRATION**<br>R794407 | **EQUIPMENT**<br>TRACTOR<br>TRAILER | **COMPANY LISTING**<br>Unit (blank) | **REGISTRATION**<br>(blank) |
 
-# Page 12
+| Schedule unit 9637 | 2019 Volvo | Schedule unit 4894 | 2017 UTILITY |
+| :--- | :--- | :--- | :--- |
+| **EQUIPMENT**<br>TRAILER<br>TRACTOR | **COMPANY LISTING**<br>Unit 346 | **REGISTRATION**<br>(blank) | **EQUIPMENT**<br>TKTR<br>TRAILER | **COMPANY LISTING**<br>Unit (blank) | **REGISTRATION**<br>(blank) |
 
-Schedule Unit,Year/Make,Equipment,Company Listing,Registration
-Schedule unit 8391,2003 Volvo,"TRAILER
-TRAILER",Unit (blank),(blank)
-Schedule unit 1503,2019 UTILITY,"TKTR
-T",Unit (blank),(blank)
-Schedule unit 9157,2016 WABASH,"T
-T",Unit 355,(blank)
-Schedule unit 2344,2023 GREAT DANE,"VNL
-TKTR",Unit (blank),R300159
-Schedule unit 3580,2007 Kenworth,"579
-TRACTOR",Unit (blank),(blank)
-Schedule unit 1619,2019 Peterbilt,"T680
-TRAILER",Unit 358,(blank)
-Schedule unit 3678,2006 Freightliner,"TRACTOR
-TKTR",Unit (blank),(blank)
+| Schedule unit 3453 | 2021 WABASH | Schedule unit 9078 | 2006 GREAT DANE |
+| :--- | :--- | :--- | :--- |
+| **EQUIPMENT**<br>T<br>TRACTOR | **COMPANY LISTING**<br>Unit (blank) | **REGISTRATION**<br>R180677 | **EQUIPMENT**<br>VNL<br>T | **COMPANY LISTING**<br>Unit 349 | **REGISTRATION**<br>(blank) |
 
-# Page 13
+| Fleet import exception reviewed by underwriting operations. |
+| :--- |
 
-FLEET UNIT LISTING                                                          FLEET FILE 984A698
+| Schedule unit 5700 | 2014 Kenworth | Schedule unit 5534 | 2012 Peterbilt |
+| :--- | :--- | :--- | :--- |
+| **EQUIPMENT**<br>579<br>TKTR | **COMPANY LISTING**<br>Unit (blank) | **REGISTRATION**<br>(blank) | **EQUIPMENT**<br>T680<br>TRAILER | **COMPANY LISTING**<br>Unit (blank) | **REGISTRATION**<br>(blank) |
 
+| Schedule unit 3780 | 2021 Freightliner | Schedule unit 8391 | 2003 Volvo |
+| :--- | :--- | :--- | :--- |
+| **EQUIPMENT**<br>TRACTOR<br>T | **COMPANY LISTING**<br>Unit 352 | **REGISTRATION**<br>R494174 | **EQUIPMENT**<br>TRAILER<br>TRAILER | **COMPANY LISTING**<br>Unit (blank) | **REGISTRATION**<br>(blank) |
+
+| Schedule unit 1503 | 2019 UTILITY | Schedule unit 9157 | 2016 WABASH |
+| :--- | :--- | :--- | :--- |
+| **EQUIPMENT**<br>TKTR<br>T | **COMPANY LISTING**<br>Unit (blank) | **REGISTRATION**<br>(blank) | **EQUIPMENT**<br>T<br>T | **COMPANY LISTING**<br>Unit 355 | **REGISTRATION**<br>(blank) |
+
+| Schedule unit 2344 | 2023 GREAT DANE | Schedule unit 3580 | 2007 Kenworth |
+| :--- | :--- | :--- | :--- |
+| **EQUIPMENT**<br>VNL<br>TKTR | **COMPANY LISTING**<br>Unit (blank) | **REGISTRATION**<br>R300159 | **EQUIPMENT**<br>579<br>TRACTOR | **COMPANY LISTING**<br>Unit (blank) | **REGISTRATION**<br>(blank) |
+
+| Schedule unit 1619 | 2019 Peterbilt | Schedule unit 3678 | 2006 Freightliner |
+| :--- | :--- | :--- | :--- |
+| **EQUIPMENT**<br>T680<br>TRAILER | **COMPANY LISTING**<br>Unit 358 | **REGISTRATION**<br>(blank) | **EQUIPMENT**<br>TRACTOR<br>TKTR | **COMPANY LISTING**<br>Unit (blank) | **REGISTRATION**<br>(blank) |
+
+Fleet unit listing
+Page 10
+
+# Page 11
+
+FLEET UNIT LIST
 Vehicle Schedule
+FLEET FILE 984A698
 
 Scheduled units - tabular export
 
@@ -524,7 +660,7 @@ SCHEDULE UNIT,PLATE,BODY,YEAR,MANUFACTURER,MODEL,COMPANY UNIT
 1499,,TRAILER,1999,Peterbilt,T680,
 1281,,T,2014,Freightliner,TRACTOR,
 3332,,TRACTOR,2016,Volvo,TRAILER,367
-Registration import note retained for audit review.,,,,,,
+Registration import note retained for audit review.,,,,,,,
 3822,R811846,TRACTOR,2002,UTILITY,TKTR,
 2645,,TRACTOR,2020,WABASH,T,
 3742,,T,2002,GREAT DANE,VNL,370
@@ -536,7 +672,7 @@ Registration import note retained for audit review.,,,,,,
 9773,R255675,TRACTOR,2015,WABASH,T,376
 7142,,T,2016,GREAT DANE,VNL,
 5742,,TKTR,2003,Kenworth,579,
-Registration import note retained for audit review.,,,,,,
+Registration import note retained for audit review.,,,,,,,
 7645,,TKTR,1999,Peterbilt,T680,379
 9198,R501859,TKTR,2022,Freightliner,TRACTOR,
 8006,,TRAILER,2008,Volvo,TRAILER,
@@ -549,87 +685,167 @@ Registration import note retained for audit review.,,,,,,
 8270,R581067,TRACTOR,2022,Volvo,TRAILER,388
 8311,,TRAILER,2012,UTILITY,TKTR,
 
-Fleet unit listing                                                                    Page 11
+Fleet unit listing
+Page 11
 
-# Page 14
+# Page 12
 
-FLEET UNIT LISTING,FLEET FILE 984A698
+FLEET UNIT LISTING
 Vehicle Schedule
+FLEET FILE 984A698
 
 Vehicle cards - registration tab
 
-Unit Schedule Ref,Vehicle Description,Company Unit,Registration Plate
-481,2001 WABASH T; body/body style TRAILER.,(blank),(blank)
-4580,2023 GREAT DANE VNL; body/body style T.,391,(blank)
-3752,2013 Kenworth 579; body/body style TKTR.,(blank),R429838.
-2631,2011 Peterbilt T680; body/body style TKTR.,(blank),(blank)
-301,2017 Freightliner TRACTOR; body/body style TRACTOR.,394,(blank)
-2774,2008 Volvo TRAILER; body/body style T.,(blank),(blank)
-8423,2004 UTILITY TKTR; body/body style TRAILER.,(blank),R841905.
-6605,2022 WABASH T; body/body style T.,397,(blank)
-4817,2020 GREAT DANE VNL; body/body style TKTR.,(blank),(blank)
-9829,2005 Kenworth 579; body/body style TRAILER.,(blank),(blank)
-6360,2023 Peterbilt T680; body/body style TRAILER.,400,R447117.
-8993,2023 Freightliner TRACTOR; body/body style TRACTOR.,(blank),(blank)
-4230,2009 Volvo TRAILER; body/body style TRAILER.,(blank),(blank)
-4010,2011 UTILITY TKTR; body/body style TRACTOR.,403,(blank)
-6387,2009 WABASH T; body/body style TKTR.,(blank),R757958.
-4207,2004 GREAT DANE VNL; body/body style TRAILER.,(blank),(blank)
-1046,2009 Kenworth 579; body/body style T.,406,(blank)
-438,1999 Peterbilt T680; body/body style TRAILER.,(blank),(blank)
-7854,1999 Freightliner TRACTOR; body/body style TRACTOR.,(blank),R857684.
-8227,2005 Volvo TRAILER; body/body style TRACTOR.,409,(blank)
-5033,2003 UTILITY TKTR; body/body style TRAILER.,(blank),(blank)
-6469,2004 WABASH T; body/body style TRAILER.,(blank),(blank)
-6345,2000 GREAT DANE VNL; body/body style T.,412,R158818.
-3656,2022 Kenworth 579; body/body style TRACTOR.,(blank),(blank)
-296,2014 Peterbilt T680; body/body style TRAILER.,(blank),(blank)
-4249,2012 Freightliner TRACTOR; body/body style T.,415,(blank)
-1308,2001 Volvo TRAILER; body/body style TRACTOR.,(blank),R548481.
-2595,2002 UTILITY TKTR; body/body style TRAILER.,(blank),(blank)
-9392,2026 WABASH T; body/body style TRACTOR.,418,(blank)
-4022,2007 GREAT DANE VNL; body/body style TKTR.,(blank),(blank)
+UNIT SCHEDULE REF 481
+2001 WABASH T; body/body style TRAILER.
+Company unit (blank); registration plate (blank).
 
-Fleet unit listing,Page 12
+UNIT SCHEDULE REF 4580
+2023 GREAT DANE VNL; body/body style T.
+Company unit 391; registration plate (blank).
 
-# Page 15
+UNIT SCHEDULE REF 3752
+2013 Kenworth 579; body/body style TKTR.
+Company unit (blank); registration plate R429838.
 
-Veh #,Year / make,Model / body,Company / plate
-7173,2000 Kenworth,579 / TRACTOR,(blank) / R182895
-936,2017 Peterbilt,T680 / TKTR,421 / (blank)
-5479,2023 Freightliner,TRACTOR / TRAILER,(blank) / (blank)
-9608,2004 Volvo,TRAILER / TRAILER,(blank) / (blank)
-8103,2018 UTILITY,TKTR / TKTR,424 / R242925
-8712,2025 WABASH,T / T,(blank) / (blank)
-6216,2005 GREAT DANE,VNL / T,(blank) / (blank)
-8394,2011 Kenworth,579 / TRACTOR,427 / (blank)
-6422,1998 Peterbilt,T680 / T,(blank) / R506374
-7190,2001 Freightliner,TRACTOR / T,(blank) / (blank)
-7120,2000 Volvo,TRAILER / T,430 / (blank)
-3785,2018 UTILITY,TKTR / TKTR,(blank) / (blank)
-105,2009 WABASH,T / TRAILER,(blank) / R891745
-4372,2008 GREAT DANE,VNL / TRACTOR,433 / (blank)
-7738,2000 Kenworth,579 / TRAILER,(blank) / (blank)
-2299,2003 Peterbilt,T680 / T,(blank) / (blank)
-6659,2022 Freightliner,TRACTOR / TRACTOR,436 / R241473
-9215,2003 Volvo,TRAILER / TRACTOR,(blank) / (blank)
-875,1997 UTILITY,TKTR / T,(blank) / (blank)
-97,2025 WABASH,T / TRACTOR,439 / (blank)
-8342,2018 GREAT DANE,VNL / T,(blank) / R788129
-9585,2022 Kenworth,579 / TRACTOR,(blank) / (blank)
-4722,2011 Peterbilt,T680 / TKTR,442 / (blank)
-8755,2005 Freightliner,TRACTOR / TKTR,(blank) / (blank)
+UNIT SCHEDULE REF 2631
+2011 Peterbilt T680; body/body style TKTR.
+Company unit (blank); registration plate (blank).
 
-# Page 16
+UNIT SCHEDULE REF 301
+2017 Freightliner TRACTOR; body/body style TRACTOR.
+Company unit 394; registration plate (blank).
 
-FLEET UNIT LISTING                                                                FLEET FILE 984A698
+UNIT SCHEDULE REF 2774
+2008 Volvo TRAILER; body/body style T.
+Company unit (blank); registration plate (blank).
 
-Vehicle Schedule
+UNIT SCHEDULE REF 8423
+2004 UTILITY TKTR; body/body style TRAILER.
+Company unit (blank); registration plate R841905.
 
-Equipment and registration split view
+UNIT SCHEDULE REF 6605
+2022 WABASH T; body/body style T.
+Company unit 397; registration plate (blank).
+
+UNIT SCHEDULE REF 4817
+2020 GREAT DANE VNL; body/body style TKTR.
+Company unit (blank); registration plate (blank).
+
+UNIT SCHEDULE REF 9829
+2005 Kenworth 579; body/body style TRAILER.
+Company unit (blank); registration plate (blank).
+
+UNIT SCHEDULE REF 6360
+2023 Peterbilt T680; body/body style TRAILER.
+Company unit 400; registration plate R447117.
+
+UNIT SCHEDULE REF 8993
+2023 Freightliner TRACTOR; body/body style TRACTOR.
+Company unit (blank); registration plate (blank).
+
+UNIT SCHEDULE REF 4230
+2009 Volvo TRAILER; body/body style TRAILER.
+Company unit (blank); registration plate (blank).
+
+UNIT SCHEDULE REF 4010
+2011 UTILITY TKTR; body/body style TRACTOR.
+Company unit 403; registration plate (blank).
+
+UNIT SCHEDULE REF 6387
+2009 WABASH T; body/body style TKTR.
+Company unit (blank); registration plate R757958.
+
+UNIT SCHEDULE REF 4207
+2004 GREAT DANE VNL; body/body style TRAILER.
+Company unit (blank); registration plate (blank).
+
+UNIT SCHEDULE REF 1046
+2009 Kenworth 579; body/body style T.
+Company unit 406; registration plate (blank).
+
+UNIT SCHEDULE REF 438
+1999 Peterbilt T680; body/body style TRAILER.
+Company unit (blank); registration plate (blank).
+
+UNIT SCHEDULE REF 7854
+1999 Freightliner TRACTOR; body/body style TRACTOR.
+Company unit (blank); registration plate R857684.
+
+UNIT SCHEDULE REF 8227
+2005 Volvo TRAILER; body/body style TRACTOR.
+Company unit 409; registration plate (blank).
+
+UNIT SCHEDULE REF 5033
+2003 UTILITY TKTR; body/body style TRAILER.
+Company unit (blank); registration plate (blank).
+
+UNIT SCHEDULE REF 6469
+2004 WABASH T; body/body style TRAILER.
+Company unit (blank); registration plate (blank).
+
+UNIT SCHEDULE REF 6345
+2000 GREAT DANE VNL; body/body style T.
+Company unit 412; registration plate R158818.
+
+UNIT SCHEDULE REF 3656
+2022 Kenworth 579; body/body style TRACTOR.
+Company unit (blank); registration plate (blank).
+
+UNIT SCHEDULE REF 296
+2014 Peterbilt T680; body/body style TRAILER.
+Company unit (blank); registration plate (blank).
+
+UNIT SCHEDULE REF 4249
+2012 Freightliner TRACTOR; body/body style T.
+Company unit 415; registration plate (blank).
+
+UNIT SCHEDULE REF 1308
+2001 Volvo TRAILER; body/body style TRACTOR.
+Company unit (blank); registration plate R548481.
+
+UNIT SCHEDULE REF 2595
+2002 UTILITY TKTR; body/body style TRAILER.
+Company unit (blank); registration plate (blank).
+
+UNIT SCHEDULE REF 9392
+2026 WABASH T; body/body style TRACTOR.
+Company unit 418; registration plate (blank).
+
+UNIT SCHEDULE REF 4022
+2007 GREAT DANE VNL; body/body style TKTR.
+Company unit (blank); registration plate (blank).
+
+Fleet unit listing
+Page 12
+
+# Page 13
+
+"Veh #","Year / make","Model / body","Company / plate","","Veh #","Year / make","Model / body","Company / plate"
+"7173","2000 Kenworth","579 / TRACTOR","(blank) / R182895","","936","2017 Peterbilt","T680 / TKTR","421 / (blank)"
+"5479","2023 Freightliner","TRACTOR / TRAILER","(blank) / (blank)","","9608","2004 Volvo","TRAILER / TRAILER","(blank) / (blank)"
+"8103","2018 UTILITY","TKTR / TKTR","424 / R242925","","8712","2025 WABASH","T / T","(blank) / (blank)"
+"6216","2005 GREAT DANE","VNL / T","(blank) / (blank)","","8394","2011 Kenworth","579 / TRACTOR","427 / (blank)"
+"6422","1998 Peterbilt","T680 / T","(blank) / R506374","","7190","2001 Freightliner","TRACTOR / T","(blank) / (blank)"
+"7120","2000 Volvo","TRAILER / T","430 / (blank)","","3785","2018 UTILITY","TKTR / TKTR","(blank) / (blank)"
+"105","2009 WABASH","T / TRAILER","(blank) / R891745","","4372","2008 GREAT DANE","VNL / TRACTOR","433 / (blank)"
+"7738","2000 Kenworth","579 / TRAILER","(blank) / (blank)","","2299","2003 Peterbilt","T680 / T","(blank) / (blank)"
+"6659","2022 Freightliner","TRACTOR / TRACTOR","436 / R241473","","9215","2003 Volvo","TRAILER / TRACTOR","(blank) / (blank)"
+"875","1997 UTILITY","TKTR / T","(blank) / (blank)","","97","2025 WABASH","T / TRACTOR","439 / (blank)"
+"8342","2018 GREAT DANE","VNL / T","(blank) / R788129","","9585","2022 Kenworth","579 / TRACTOR","(blank) / (blank)"
+"4722","2011 Peterbilt","T680 / TKTR","442 / (blank)","","8755","2005 Freightliner","TRACTOR / TKTR","(blank) / (blank)"
+
+# Page 14
+
+FLEET UNIT LISTING
+**Vehicle Schedule**
+FLEET FILE 984A698
+
+### Equipment and registration split view
 The unit number ties the equipment description to the registration block.
 
-Equipment description
+#### Equipment description
+```csv
 UNIT,YR,MAKE,MODEL,BODY
 8388,2013,Volvo,TRAILER,TRACTOR
 9453,2017,UTILITY,TKTR,TRAILER
@@ -657,8 +873,10 @@ UNIT,YR,MAKE,MODEL,BODY
 349,2013,WABASH,T,T
 1713,2022,GREAT DANE,VNL,T
 1010,1998,Kenworth,579,TRACTOR
+```
 
-Registration cross-reference
+#### Registration cross-reference
+```csv
 UNIT,COMPANY UNIT,PLATE
 8388,(blank),R609794
 9453,445,(blank)
@@ -686,59 +904,155 @@ UNIT,COMPANY UNIT,PLATE
 349,(blank),(blank)
 1713,(blank),R920929
 1010,469,(blank)
+```
 
-Some registration fields are blank in the source export.
+| Some registration fields are blank in the source export. |
+| :--- |
 
-Fleet unit listing                                                                                 Page 14
+Fleet unit listing
+Page 14
 
-# Page 17
+# Page 15
 
-Schedule Unit,Year Make,Equipment,Company Listing,Registration
-Schedule unit 6736,1998 Peterbilt,"T680
-TKTR",Unit (blank),(blank)
-Schedule unit 9688,1998 Freightliner,"TRACTOR
-TRAILER",Unit (blank),(blank)
-Schedule unit 4260,2003 Volvo,"TRAILER
-TKTR",Unit 472,R230221
-Schedule unit 5979,2018 UTILITY,"TKTR
-TKTR",Unit (blank),(blank)
-Schedule unit 8291,2009 WABASH,"T
-T",Unit (blank),(blank)
-Schedule unit 4983,2018 GREAT DANE,"VNL
-TRACTOR",Unit 475,(blank)
-Schedule unit 47,2006 Kenworth,"579
-TRAILER",Unit (blank),R251101
-Schedule unit 6391,2009 Peterbilt,"T680
-TRAILER",Unit (blank),(blank)
-Schedule unit 6793,2009 Freightliner,"TRACTOR
-T",Unit 478,(blank)
-Schedule unit 1699,2014 Volvo,"TRAILER
-TRACTOR",Unit (blank),(blank)
-Schedule unit 2470,2015 UTILITY,"TKTR
-TRACTOR",Unit (blank),R875062
-Schedule unit 6197,2019 WABASH,"T
-TKTR",Unit 481,(blank)
-Schedule unit 2598,2009 GREAT DANE,"VNL
-T",Unit (blank),(blank)
+FLEET UNIT LISTING                                                                | FLEET FILE 984A698 |
+Vehicle Schedule                                                                 --------------------
+------------------------------------------------------------------------------------------------------
 
-# Page 18
+Fleet import exception format
 
-Schedule unit,Year/Make,EQUIPMENT,COMPANY LISTING,REGISTRATION
-7199,2019 Kenworth,"579 / T",Unit (blank),(blank)
-3856,2013 Peterbilt,"T680 / T",Unit 484,R116255
-3120,2011 Freightliner,"TRACTOR / TRACTOR",Unit (blank),(blank)
-3730,2005 Volvo,"TRAILER / TRAILER",Unit (blank),(blank)
-2735,2010 UTILITY,"TKTR / TKTR",Unit 487,(blank)
-1905,2019 WABASH,"T / TRAILER",Unit (blank),R623055
-3066,2014 GREAT DANE,"VNL / T",Unit (blank),(blank)
+------------------------------------------------------------------------------------------------------
+| Schedule unit 6736                                               1998 Peterbilt                     |
+|                                                                                                     |
+| EQUIPMENT            COMPANY LISTING               REGISTRATION                                     |
+| T680                 Unit (blank)                  (blank)                                          |
+| TKTR                                                                                                |
+------------------------------------------------------------------------------------------------------
+| Schedule unit 9688                                               1998 Freightliner                  |
+|                                                                                                     |
+| EQUIPMENT            COMPANY LISTING               REGISTRATION                                     |
+| TRACTOR              Unit (blank)                  (blank)                                          |
+| TRAILER                                                                                             |
+------------------------------------------------------------------------------------------------------
+| Schedule unit 4260                                               2003 Volvo                         |
+|                                                                                                     |
+| EQUIPMENT            COMPANY LISTING               REGISTRATION                                     |
+| TRAILER              Unit 472                      R230221                                          |
+| TKTR                                                                                                |
+------------------------------------------------------------------------------------------------------
+| Schedule unit 5979                                               2018 UTILITY                       |
+|                                                                                                     |
+| EQUIPMENT            COMPANY LISTING               REGISTRATION                                     |
+| TKTR                 Unit (blank)                  (blank)                                          |
+| TKTR                                                                                                |
+------------------------------------------------------------------------------------------------------
+| Schedule unit 8291                                               2009 WABASH                        |
+|                                                                                                     |
+| EQUIPMENT            COMPANY LISTING               REGISTRATION                                     |
+| T                    Unit (blank)                  (blank)                                          |
+| T                                                                                                   |
+------------------------------------------------------------------------------------------------------
+| Schedule unit 4983                                               2018 GREAT DANE                    |
+|                                                                                                     |
+| EQUIPMENT            COMPANY LISTING               REGISTRATION                                     |
+| VNL                  Unit 475                      (blank)                                          |
+| TRACTOR                                                                                             |
+------------------------------------------------------------------------------------------------------
+| Schedule unit 47                                                 2006 Kenworth                      |
+|                                                                                                     |
+| EQUIPMENT            COMPANY LISTING               REGISTRATION                                     |
+| 579                  Unit (blank)                  R251101                                          |
+| TRAILER                                                                                             |
+------------------------------------------------------------------------------------------------------
+| Schedule unit 6391                                               2009 Peterbilt                     |
+|                                                                                                     |
+| EQUIPMENT            COMPANY LISTING               REGISTRATION                                     |
+| T680                 Unit (blank)                  (blank)                                          |
+| TRAILER                                                                                             |
+------------------------------------------------------------------------------------------------------
+| Schedule unit 6793                                               2009 Freightliner                  |
+|                                                                                                     |
+| EQUIPMENT            COMPANY LISTING               REGISTRATION                                     |
+| TRACTOR              Unit 478                      (blank)                                          |
+| T                                                                                                   |
+------------------------------------------------------------------------------------------------------
+| Schedule unit 1699                                               2014 Volvo                         |
+|                                                                                                     |
+| EQUIPMENT            COMPANY LISTING               REGISTRATION                                     |
+| TRAILER              Unit (blank)                  (blank)                                          |
+| TRACTOR                                                                                             |
+------------------------------------------------------------------------------------------------------
 
-Fleet unit listing,Page 15
+| Fleet import exception reviewed by underwriting operations.                                         |
 
-# Page 19
+------------------------------------------------------------------------------------------------------
+| Schedule unit 2470                                               2015 UTILITY                       |
+|                                                                                                     |
+| EQUIPMENT            COMPANY LISTING               REGISTRATION                                     |
+| TKTR                 Unit (blank)                  R875062                                          |
+| TRACTOR                                                                                             |
+------------------------------------------------------------------------------------------------------
+| Schedule unit 6197                                               2019 WABASH                        |
+|                                                                                                     |
+| EQUIPMENT            COMPANY LISTING               REGISTRATION                                     |
+| T                    Unit 481                      (blank)                                          |
+| TKTR                                                                                                |
+------------------------------------------------------------------------------------------------------
+| Schedule unit 2598                                               2009 GREAT DANE                    |
+|                                                                                                     |
+| EQUIPMENT            COMPANY LISTING               REGISTRATION                                     |
+| VNL                  Unit (blank)                  (blank)                                          |
+| T                                                                                                   |
+------------------------------------------------------------------------------------------------------
+| Schedule unit 7199                                               2019 Kenworth                      |
+|                                                                                                     |
+| EQUIPMENT            COMPANY LISTING               REGISTRATION                                     |
+| 579                  Unit (blank)                  (blank)                                          |
+| T                                                                                                   |
+------------------------------------------------------------------------------------------------------
+| Schedule unit 3856                                               2013 Peterbilt                     |
+|                                                                                                     |
+| EQUIPMENT            COMPANY LISTING               REGISTRATION                                     |
+| T680                 Unit 484                      R116255                                          |
+| T                                                                                                   |
+------------------------------------------------------------------------------------------------------
+| Schedule unit 3120                                               2011 Freightliner                  |
+|                                                                                                     |
+| EQUIPMENT            COMPANY LISTING               REGISTRATION                                     |
+| TRACTOR              Unit (blank)                  (blank)                                          |
+| TRACTOR                                                                                             |
+------------------------------------------------------------------------------------------------------
+| Schedule unit 3730                                               2005 Volvo                         |
+|                                                                                                     |
+| EQUIPMENT            COMPANY LISTING               REGISTRATION                                     |
+| TRAILER              Unit (blank)                  (blank)                                          |
+| TRAILER                                                                                             |
+------------------------------------------------------------------------------------------------------
+| Schedule unit 2735                                               2010 UTILITY                       |
+|                                                                                                     |
+| EQUIPMENT            COMPANY LISTING               REGISTRATION                                     |
+| TKTR                 Unit 487                      (blank)                                          |
+| TKTR                                                                                                |
+------------------------------------------------------------------------------------------------------
+| Schedule unit 1905                                               2019 WABASH                        |
+|                                                                                                     |
+| EQUIPMENT            COMPANY LISTING               REGISTRATION                                     |
+| T                    Unit (blank)                  R623055                                          |
+| TRAILER                                                                                             |
+------------------------------------------------------------------------------------------------------
+| Schedule unit 3066                                               2014 GREAT DANE                    |
+|                                                                                                     |
+| EQUIPMENT            COMPANY LISTING               REGISTRATION                                     |
+| VNL                  Unit (blank)                  (blank)                                          |
+| T                                                                                                   |
+------------------------------------------------------------------------------------------------------
 
-FLEET UNIT LISTING                                                          FLEET FILE 984A698
+Fleet unit listing                                                                                Page 15
 
+# Page 16
+
+FLEET UNIT LISTING
 Vehicle Schedule
+FLEET FILE 984A698
 
 Scheduled units - tabular export
 
@@ -751,7 +1065,7 @@ SCHEDULE UNIT,PLATE,BODY,YEAR,MANUFACTURER,MODEL,COMPANY UNIT
 1542,,TRAILER,2002,WABASH,T,
 2603,R433175,T,1998,GREAT DANE,VNL,496
 7413,,TRAILER,1999,Kenworth,579,
-"Registration import note retained for audit review.",,,,,,
+Registration import note retained for audit review.,,,,,,
 1692,,T,2000,Peterbilt,T680,
 1861,,T,2007,Freightliner,TRACTOR,499
 7997,R327399,T,2004,Volvo,TRAILER,
@@ -763,7 +1077,7 @@ SCHEDULE UNIT,PLATE,BODY,YEAR,MANUFACTURER,MODEL,COMPANY UNIT
 4947,,TRACTOR,2004,Freightliner,TRACTOR,
 4962,,TRAILER,2012,Volvo,TRAILER,
 3659,R846105,TKTR,2007,UTILITY,TKTR,508
-"Registration import note retained for audit review.",,,,,,
+Registration import note retained for audit review.,,,,,,
 4954,,T,2009,WABASH,T,
 1477,,TRAILER,2001,GREAT DANE,VNL,
 463,,TKTR,2016,Kenworth,579,511
@@ -776,205 +1090,267 @@ SCHEDULE UNIT,PLATE,BODY,YEAR,MANUFACTURER,MODEL,COMPANY UNIT
 9237,,TKTR,2024,Kenworth,579,
 646,,TRAILER,2015,Peterbilt,T680,
 
-Fleet unit listing                                                                     Page 16
+Fleet unit listing
+Page 16
+
+# Page 17
+
+FLEET UNIT LISTING
+Vehicle Schedule
+FLEET FILE 984A698
+
+Vehicle cards - registration tab
+
++---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+
+| UNIT SCHEDULE REF 5763                            | UNIT SCHEDULE REF 6895                            | UNIT SCHEDULE REF 5137                            |
+| 2006 Freightliner TRACTOR; body/body style TRACTOR.| 1999 Volvo TRAILER; body/body style TRACTOR.      | 2016 UTILITY TKTR; body/body style TRAILER.       |
+| Company unit 520; registration plate R726371.     | Company unit (blank); registration plate (blank). | Company unit (blank); registration plate (blank). |
++---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+
+| UNIT SCHEDULE REF 8430                            | UNIT SCHEDULE REF 1895                            | UNIT SCHEDULE REF 354                             |
+| 1999 WABASH T; body/body style TRAILER.           | 2026 GREAT DANE VNL; body/body style T.           | 2016 Kenworth 579; body/body style TRAILER.       |
+| Company unit 523; registration plate (blank).     | Company unit (blank); registration plate R867544. | Company unit (blank); registration plate (blank). |
++---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+
+| UNIT SCHEDULE REF 1878                            | UNIT SCHEDULE REF 2452                            | UNIT SCHEDULE REF 7226                            |
+| 2013 Peterbilt T680; body/body style TRACTOR.     | 2008 Freightliner TRACTOR; body/body style TKTR.  | 2022 Volvo TRAILER; body/body style TKTR.         |
+| Company unit 526; registration plate (blank).     | Company unit (blank); registration plate (blank). | Company unit (blank); registration plate R723217. |
++---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+
+| UNIT SCHEDULE REF 2319                            | UNIT SCHEDULE REF 6616                            | UNIT SCHEDULE REF 9211                            |
+| 2020 UTILITY TKTR; body/body style TRAILER.       | 2026 WABASH T; body/body style TRACTOR.           | 2020 GREAT DANE VNL; body/body style TRAILER.     |
+| Company unit 529; registration plate (blank).     | Company unit (blank); registration plate (blank). | Company unit (blank); registration plate (blank). |
++---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+
+| UNIT SCHEDULE REF 9103                            | UNIT SCHEDULE REF 6707                            | UNIT SCHEDULE REF 4035                            |
+| 2025 Kenworth 579; body/body style TKTR.          | 2012 Peterbilt T680; body/body style T.           | 2014 Freightliner TRACTOR; body/body style TRAILER|
+| Company unit 532; registration plate R751609.     | Company unit (blank); registration plate (blank). | Company unit (blank); registration plate (blank). |
++---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+
+| UNIT SCHEDULE REF 1002                            | UNIT SCHEDULE REF 5729                            | UNIT SCHEDULE REF 6074                            |
+| 2009 Volvo TRAILER; body/body style T.            | 2022 UTILITY TKTR; body/body style T.             | 2000 WABASH T; body/body style TKTR.              |
+| Company unit 535; registration plate (blank).     | Company unit (blank); registration plate R542616. | Company unit (blank); registration plate (blank). |
++---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+
+| UNIT SCHEDULE REF 6447                            | UNIT SCHEDULE REF 6828                            | UNIT SCHEDULE REF 8693                            |
+| 2013 GREAT DANE VNL; body/body style TRACTOR.     | 2025 Kenworth 579; body/body style TKTR.          | 2025 Peterbilt T680; body/body style TKTR.        |
+| Company unit 538; registration plate (blank).     | Company unit (blank); registration plate (blank). | Company unit (blank); registration plate R713697. |
++---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+
+| UNIT SCHEDULE REF 8556                            | UNIT SCHEDULE REF 5738                            | UNIT SCHEDULE REF 2366                            |
+| 2007 Freightliner TRACTOR; body/body style TRACTOR.| 2008 Volvo TRAILER; body/body style TRACTOR.      | 2012 UTILITY TKTR; body/body style TRACTOR.       |
+| Company unit 541; registration plate (blank).     | Company unit (blank); registration plate (blank). | Company unit (blank); registration plate (blank). |
++---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+
+| UNIT SCHEDULE REF 2110                            | UNIT SCHEDULE REF 939                             | UNIT SCHEDULE REF 8149                            |
+| 2006 WABASH T; body/body style TRAILER.           | 2017 GREAT DANE VNL; body/body style TRAILER.     | 2008 Kenworth 579; body/body style TRACTOR.       |
+| Company unit 544; registration plate R378943.     | Company unit (blank); registration plate (blank). | Company unit (blank); registration plate (blank). |
++---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+
+| UNIT SCHEDULE REF 1116                            | UNIT SCHEDULE REF 7624                            | UNIT SCHEDULE REF 5227                            |
+| 1997 Peterbilt T680; body/body style TRAILER.     | 2010 Freightliner TRACTOR; body/body style TRACTOR| 2018 Volvo TRAILER; body/body style TRAILER.      |
+| Company unit 547; registration plate (blank).     | Company unit (blank); registration plate R728913. | Company unit (blank); registration plate (blank). |
++---------------------------------------------------+---------------------------------------------------+---------------------------------------------------+
+
+Fleet unit listing
+Page 17
+
+# Page 18
+
+FLEET UNIT LISTING,FLEET FILE 984A698
+Vehicle Schedule,
+
+Continuation - unit detail blocks,
+Veh #,6021,Veh #,2899
+Year / make,2017 UTILITY,Year / make,2015 WABASH
+Model / body,TKTR / T,Model / body,T / TRAILER
+Company / plate,550 / (blank),Company / plate,(blank) / (blank)
+
+Veh #,9025,Veh #,1639
+Year / make,2018 GREAT DANE,Year / make,1998 Kenworth
+Model / body,VNL / TKTR,Model / body,579 / T
+Company / plate,(blank) / R290715,Company / plate,553 / (blank)
+
+Veh #,8542,Veh #,9775
+Year / make,2017 Peterbilt,Year / make,2000 Freightliner
+Model / body,T680 / T,Model / body,TRACTOR / TRAILER
+Company / plate,(blank) / (blank),Company / plate,(blank) / (blank)
+
+Veh #,8070,Veh #,5629
+Year / make,2009 Volvo,Year / make,2021 UTILITY
+Model / body,TRAILER / T,Model / body,TKTR / TRAILER
+Company / plate,556 / R983790,Company / plate,(blank) / (blank)
+
+Veh #,7124,Veh #,5893
+Year / make,2013 WABASH,Year / make,2019 GREAT DANE
+Model / body,T / TRACTOR,Model / body,VNL / TRACTOR
+Company / plate,(blank) / (blank),Company / plate,559 / (blank)
+
+Veh #,1467,Veh #,5249
+Year / make,2008 Kenworth,Year / make,2016 Peterbilt
+Model / body,579 / TRACTOR,Model / body,T680 / TKTR
+Company / plate,(blank) / R718238,Company / plate,(blank) / (blank)
+
+Veh #,2304,Veh #,7737
+Year / make,2020 Freightliner,Year / make,2001 Volvo
+Model / body,TRACTOR / TKTR,Model / body,TRAILER / TRACTOR
+Company / plate,562 / (blank),Company / plate,(blank) / (blank)
+
+Veh #,6854,Veh #,8292
+Year / make,2017 UTILITY,Year / make,2009 WABASH
+Model / body,TKTR / TRACTOR,Model / body,T / TKTR
+Company / plate,(blank) / R386681,Company / plate,565 / (blank)
+
+Veh #,97,Veh #,4852
+Year / make,2012 GREAT DANE,Year / make,2021 Kenworth
+Model / body,VNL / T,Model / body,579 / TRACTOR
+Company / plate,(blank) / (blank),Company / plate,(blank) / (blank)
+
+Veh #,7399,Veh #,9990
+Year / make,2013 Peterbilt,Year / make,2013 Freightliner
+Model / body,T680 / T,Model / body,TRACTOR / T
+Company / plate,568 / R345807,Company / plate,(blank) / (blank)
+
+Veh #,2763,Veh #,4540
+Year / make,2011 Volvo,Year / make,2023 UTILITY
+Model / body,TRAILER / T,Model / body,TKTR / TRAILER
+Company / plate,(blank) / (blank),Company / plate,571 / (blank)
+
+Veh #,6609,Veh #,5098
+Year / make,1997 WABASH,Year / make,2025 GREAT DANE
+Model / body,T / TKTR,Model / body,VNL / TKTR
+Company / plate,(blank) / R407268,Company / plate,(blank) / (blank)
+
+Fleet unit listing,Page 18
+
+# Page 19
+
+FLEET UNIT LISTING                                                                                           FLEET FILE 984A698
+**Vehicle Schedule**
+
+***
+
+**Equipment and registration split view**
+The unit number ties the equipment description to the registration block.
+
+**Equipment description**
+
+| UNIT | YR | MAKE | MODEL | BODY |
+| :--- | :--- | :--- | :--- | :--- |
+| 9722 | 2021 | Kenworth | 579 | TRACTOR |
+| 7516 | 2014 | Peterbilt | T680 | TRAILER |
+| 9663 | 1997 | Freightliner | TRACTOR | T |
+| 6870 | 2007 | Volvo | TRAILER | TKTR |
+| 4139 | 2001 | UTILITY | TKTR | TKTR |
+| 9654 | 1997 | WABASH | T | TRACTOR |
+| 4753 | 2023 | GREAT DANE | VNL | T |
+| 3156 | 2017 | Kenworth | 579 | TRAILER |
+| 3932 | 2001 | Peterbilt | T680 | T |
+| 1354 | 2000 | Freightliner | TRACTOR | TRACTOR |
+| 4404 | 2006 | Volvo | TRAILER | TRACTOR |
+| 5050 | 2020 | UTILITY | TKTR | TKTR |
+| 4591 | 2008 | WABASH | T | T |
+| 7845 | 2015 | GREAT DANE | VNL | TRAILER |
+| 4973 | 2013 | Kenworth | 579 | TRAILER |
+| 3923 | 2022 | Peterbilt | T680 | TKTR |
+| 3072 | 2011 | Freightliner | TRACTOR | TRACTOR |
+| 259 | 2017 | Volvo | TRAILER | T |
+| 7815 | 2000 | UTILITY | TKTR | T |
+| 8536 | 2014 | WABASH | T | TKTR |
+| 29 | 1997 | GREAT DANE | VNL | TKTR |
+| 576 | 2010 | Kenworth | 579 | TRAILER |
+| 1576 | 2019 | Peterbilt | T680 | TRACTOR |
+| 7175 | 2013 | Freightliner | TRACTOR | TRAILER |
+| 9731 | 2016 | Volvo | TRAILER | TRAILER |
+| 7298 | 2010 | UTILITY | TKTR | T |
+
+**Registration cross-reference**
+
+| UNIT | COMPANY UNIT | PLATE |
+| :--- | :--- | :--- |
+| 9722 | 574 | (blank) |
+| 7516 | (blank) | (blank) |
+| 9663 | (blank) | R247338 |
+| 6870 | 577 | (blank) |
+| 4139 | (blank) | (blank) |
+| 9654 | (blank) | (blank) |
+| 4753 | 580 | R435535 |
+| 3156 | (blank) | (blank) |
+| 3932 | (blank) | (blank) |
+| 1354 | 583 | (blank) |
+| 4404 | (blank) | R626114 |
+| 5050 | (blank) | (blank) |
+| 4591 | 586 | (blank) |
+| 7845 | (blank) | (blank) |
+| 4973 | (blank) | R199207 |
+| 3923 | 589 | (blank) |
+| 3072 | (blank) | (blank) |
+| 259 | (blank) | (blank) |
+| 7815 | 592 | R383285 |
+| 8536 | (blank) | (blank) |
+| 29 | (blank) | (blank) |
+| 576 | 595 | (blank) |
+| 1576 | (blank) | R924568 |
+| 7175 | (blank) | (blank) |
+| 9731 | 598 | (blank) |
+| 7298 | (blank) | (blank) |
+
+| | Some registration fields are blank in the source export. |
+| :--- | :--- |
+
+***
+Fleet unit listing                                                                                              Page 19
 
 # Page 20
 
-FLEET UNIT LISTING | FLEET FILE 984A698
+FLEET UNIT LISTING
 Vehicle Schedule
----------------------------------------------------------------------------------------------------------------------------------
-Vehicle cards - registration tab
 
-| | | |
-| :--- | :--- | :--- |
-| **UNIT SCHEDULE REF 5763**<br>2006 Freightliner TRACTOR; body/body style **TRACTOR**.<br>Company unit **520**; registration plate **R726371**. | **UNIT SCHEDULE REF 6895**<br>1999 Volvo TRAILER; body/body style **TRACTOR**.<br>Company unit **(blank)**; registration plate **(blank)**. | **UNIT SCHEDULE REF 5137**<br>2016 UTILITY TKTR; body/body style **TRAILER**.<br>Company unit **(blank)**; registration plate **(blank)**. |
-| **UNIT SCHEDULE REF 8430**<br>1999 WABASH T; body/body style **TRAILER**.<br>Company unit **523**; registration plate **(blank)**. | **UNIT SCHEDULE REF 1895**<br>2026 GREAT DANE VNL; body/body style **T**.<br>Company unit **(blank)**; registration plate **R867544**. | **UNIT SCHEDULE REF 354**<br>2016 Kenworth 579; body/body style **TRAILER**.<br>Company unit **(blank)**; registration plate **(blank)**. |
-| **UNIT SCHEDULE REF 1878**<br>2013 Peterbilt T680; body/body style **TRACTOR**.<br>Company unit **526**; registration plate **(blank)**. | **UNIT SCHEDULE REF 2452**<br>2008 Freightliner TRACTOR; body/body style **TKTR**.<br>Company unit **(blank)**; registration plate **(blank)**. | **UNIT SCHEDULE REF 7226**<br>2022 Volvo TRAILER; body/body style **TKTR**.<br>Company unit **(blank)**; registration plate **R723217**. |
-| **UNIT SCHEDULE REF 2319**<br>2020 UTILITY TKTR; body/body style **TRAILER**.<br>Company unit **529**; registration plate **(blank)**. | **UNIT SCHEDULE REF 6616**<br>2026 WABASH T; body/body style **TRACTOR**.<br>Company unit **(blank)**; registration plate **(blank)**. | **UNIT SCHEDULE REF 9211**<br>2020 GREAT DANE VNL; body/body style **TRAILER**.<br>Company unit **(blank)**; registration plate **(blank)**. |
-| **UNIT SCHEDULE REF 9103**<br>2025 Kenworth 579; body/body style **TKTR**.<br>Company unit **532**; registration plate **R751609**. | **UNIT SCHEDULE REF 6707**<br>2012 Peterbilt T680; body/body style **T**.<br>Company unit **(blank)**; registration plate **(blank)**. | **UNIT SCHEDULE REF 4035**<br>2014 Freightliner TRACTOR; body/body style **TRAILER**.<br>Company unit **(blank)**; registration plate **(blank)**. |
-| **UNIT SCHEDULE REF 1002**<br>2009 Volvo TRAILER; body/body style **T**.<br>Company unit **535**; registration plate **(blank)**. | **UNIT SCHEDULE REF 5729**<br>2022 UTILITY TKTR; body/body style **T**.<br>Company unit **(blank)**; registration plate **R542616**. | **UNIT SCHEDULE REF 6074**<br>2000 WABASH T; body/body style **TKTR**.<br>Company unit **(blank)**; registration plate **(blank)**. |
-| **UNIT SCHEDULE REF 6447**<br>2013 GREAT DANE VNL; body/body style **TRACTOR**.<br>Company unit **538**; registration plate **(blank)**. | **UNIT SCHEDULE REF 6828**<br>2025 Kenworth 579; body/body style **TKTR**.<br>Company unit **(blank)**; registration plate **(blank)**. | **UNIT SCHEDULE REF 8693**<br>2025 Peterbilt T680; body/body style **TKTR**.<br>Company unit **(blank)**; registration plate **R713697**. |
-| **UNIT SCHEDULE REF 8556**<br>2007 Freightliner TRACTOR; body/body style **TRACTOR**.<br>Company unit **541**; registration plate **(blank)**. | **UNIT SCHEDULE REF 5738**<br>2008 Volvo TRAILER; body/body style **TRACTOR**.<br>Company unit **(blank)**; registration plate **(blank)**. | **UNIT SCHEDULE REF 2366**<br>2012 UTILITY TKTR; body/body style **TRACTOR**.<br>Company unit **(blank)**; registration plate **(blank)**. |
-| **UNIT SCHEDULE REF 2110**<br>2006 WABASH T; body/body style **TRAILER**.<br>Company unit **544**; registration plate **R378943**. | **UNIT SCHEDULE REF 939**<br>2017 GREAT DANE VNL; body/body style **TRAILER**.<br>Company unit **(blank)**; registration plate **(blank)**. | **UNIT SCHEDULE REF 8149**<br>2008 Kenworth 579; body/body style **TRACTOR**.<br>Company unit **(blank)**; registration plate **(blank)**. |
-| **UNIT SCHEDULE REF 1116**<br>1997 Peterbilt T680; body/body style **TRAILER**.<br>Company unit **547**; registration plate **(blank)**. | **UNIT SCHEDULE REF 7624**<br>2010 Freightliner TRACTOR; body/body style **TRACTOR**.<br>Company unit **(blank)**; registration plate **R728913**. | **UNIT SCHEDULE REF 5227**<br>2018 Volvo TRAILER; body/body style **TRAILER**.<br>Company unit **(blank)**; registration plate **(blank)**. |
+FLEET FILE 984A698
 
-Fleet unit listing | Page 17
+### Fleet import exception format
+
+| Schedule unit 3515 | 2018 WABASH | Schedule unit 3183 | 2023 GREAT DANE |
+| :--- | :--- | :--- | :--- |
+| **EQUIPMENT**<br>T<br>TRAILER | **COMPANY LISTING**<br>Unit (blank) | **REGISTRATION**<br>R860095 | **EQUIPMENT**<br>VNL<br>T | **COMPANY LISTING**<br>Unit 601 | **REGISTRATION**<br>(blank) |
+
+| Schedule unit 7190 | 2016 Kenworth | Schedule unit 3417 | 2006 Peterbilt |
+| :--- | :--- | :--- | :--- |
+| **EQUIPMENT**<br>579<br>TRACTOR | **COMPANY LISTING**<br>Unit (blank) | **REGISTRATION**<br>(blank) | **EQUIPMENT**<br>T680<br>T | **COMPANY LISTING**<br>Unit (blank) | **REGISTRATION**<br>(blank) |
+
+| Schedule unit 6567 | 2021 Freightliner | Schedule unit 4782 | 2012 Volvo |
+| :--- | :--- | :--- | :--- |
+| **EQUIPMENT**<br>TRACTOR<br>TKTR | **COMPANY LISTING**<br>Unit 604 | **REGISTRATION**<br>R115784 | **EQUIPMENT**<br>TRAILER<br>TRACTOR | **COMPANY LISTING**<br>Unit (blank) | **REGISTRATION**<br>(blank) |
+
+| Schedule unit 1764 | 2016 UTILITY | Schedule unit 3588 | 2003 WABASH |
+| :--- | :--- | :--- | :--- |
+| **EQUIPMENT**<br>TKTR<br>TRAILER | **COMPANY LISTING**<br>Unit (blank) | **REGISTRATION**<br>(blank) | **EQUIPMENT**<br>T<br>TKTR | **COMPANY LISTING**<br>Unit 607 | **REGISTRATION**<br>(blank) |
+
+| Schedule unit 476 | 2024 GREAT DANE | Schedule unit 4211 | 2020 Kenworth |
+| :--- | :--- | :--- | :--- |
+| **EQUIPMENT**<br>VNL<br>TRAILER | **COMPANY LISTING**<br>Unit (blank) | **REGISTRATION**<br>R803565 | **EQUIPMENT**<br>579<br>TKTR | **COMPANY LISTING**<br>Unit (blank) | **REGISTRATION**<br>(blank) |
+
+ Fleet import exception reviewed by underwriting operations.
+
+| Schedule unit 6266 | 2010 Peterbilt | Schedule unit 9650 | 2017 Freightliner |
+| :--- | :--- | :--- | :--- |
+| **EQUIPMENT**<br>T680<br>TRACTOR | **COMPANY LISTING**<br>Unit 610 | **REGISTRATION**<br>(blank) | **EQUIPMENT**<br>TRACTOR<br>TRACTOR | **COMPANY LISTING**<br>Unit (blank) | **REGISTRATION**<br>(blank) |
+
+| Schedule unit 2315 | 2001 Volvo | Schedule unit 7449 | 2001 UTILITY |
+| :--- | :--- | :--- | :--- |
+| **EQUIPMENT**<br>TRAILER<br>TRAILER | **COMPANY LISTING**<br>Unit (blank) | **REGISTRATION**<br>R937088 | **EQUIPMENT**<br>TKTR<br>T | **COMPANY LISTING**<br>Unit 613 | **REGISTRATION**<br>(blank) |
+
+| Schedule unit 5533 | 2001 WABASH | Schedule unit 3029 | 2005 GREAT DANE |
+| :--- | :--- | :--- | :--- |
+| **EQUIPMENT**<br>T<br>TRAILER | **COMPANY LISTING**<br>Unit (blank) | **REGISTRATION**<br>(blank) | **EQUIPMENT**<br>VNL<br>TKTR | **COMPANY LISTING**<br>Unit (blank) | **REGISTRATION**<br>(blank) |
+
+| Schedule unit 2458 | 2000 Kenworth | Schedule unit 7437 | 2009 Peterbilt |
+| :--- | :--- | :--- | :--- |
+| **EQUIPMENT**<br>579<br>T | **COMPANY LISTING**<br>Unit 616 | **REGISTRATION**<br>R432113 | **EQUIPMENT**<br>T680<br>TKTR | **COMPANY LISTING**<br>Unit (blank) | **REGISTRATION**<br>(blank) |
+
+| Schedule unit 5221 | 2019 Freightliner | Schedule unit 3243 | 2015 Volvo |
+| :--- | :--- | :--- | :--- |
+| **EQUIPMENT**<br>TRACTOR<br>T | **COMPANY LISTING**<br>Unit (blank) | **REGISTRATION**<br>(blank) | **EQUIPMENT**<br>TRAILER<br>TRACTOR | **COMPANY LISTING**<br>Unit 619 | **REGISTRATION**<br>(blank) |
+
+Fleet unit listing | Page 20
 
 # Page 21
 
-FLEET UNIT LISTING                                                          +--------------------+
-Vehicle Schedule                                                            | FLEET FILE 984A698 |
-                                                                            +--------------------+
-
-Continuation - unit detail blocks
-
-Veh #                   6021                        Veh #                   2899
-Year / make             2017 UTILITY                Year / make             2015 WABASH
-Model / body            TKTR / T                    Model / body            T / TRAILER
-Company / plate         550 / (blank)               Company / plate         (blank) / (blank)
-
-Veh #                   9025                        Veh #                   1639
-Year / make             2018 GREAT DANE             Year / make             1998 Kenworth
-Model / body            VNL / TKTR                  Model / body            579 / T
-Company / plate         (blank) / R290715           Company / plate         553 / (blank)
-
-Veh #                   8542                        Veh #                   9775
-Year / make             2017 Peterbilt              Year / make             2000 Freightliner
-Model / body            T680 / T                    Model / body            TRACTOR / TRAILER
-Company / plate         (blank) / (blank)           Company / plate         (blank) / (blank)
-
-Veh #                   8070                        Veh #                   5629
-Year / make             2009 Volvo                  Year / make             2021 UTILITY
-Model / body            TRAILER / T                 Model / body            TKTR / TRAILER
-Company / plate         556 / R983790               Company / plate         (blank) / (blank)
-
-Veh #                   7124                        Veh #                   5893
-Year / make             2013 WABASH                 Year / make             2019 GREAT DANE
-Model / body            T / TRACTOR                 Model / body            VNL / TRACTOR
-Company / plate         (blank) / (blank)           Company / plate         559 / (blank)
-
-Veh #                   1467                        Veh #                   5249
-Year / make             2008 Kenworth               Year / make             2016 Peterbilt
-Model / body            579 / TRACTOR               Model / body            T680 / TKTR
-Company / plate         (blank) / R718238           Company / plate         (blank) / (blank)
-
-Veh #                   2304                        Veh #                   7737
-Year / make             2020 Freightliner           Year / make             2001 Volvo
-Model / body            TRACTOR / TKTR              Model / body            TRAILER / TRACTOR
-Company / plate         562 / (blank)               Company / plate         (blank) / (blank)
-
-Veh #                   6854                        Veh #                   8292
-Year / make             2017 UTILITY                Year / make             2009 WABASH
-Model / body            TKTR / TRACTOR              Model / body            T / TKTR
-Company / plate         (blank) / R386681           Company / plate         565 / (blank)
-
-Veh #                   97                          Veh #                   4852
-Year / make             2012 GREAT DANE             Year / make             2021 Kenworth
-Model / body            VNL / T                     Model / body            579 / TRACTOR
-Company / plate         (blank) / (blank)           Company / plate         (blank) / (blank)
-
-Veh #                   7399                        Veh #                   9990
-Year / make             2013 Peterbilt              Year / make             2013 Freightliner
-Model / body            T680 / T                    Model / body            TRACTOR / T
-Company / plate         568 / R345807               Company / plate         (blank) / (blank)
-
-Veh #                   2763                        Veh #                   4540
-Year / make             2011 Volvo                  Year / make             2023 UTILITY
-Model / body            TRAILER / T                 Model / body            TKTR / TRAILER
-Company / plate         (blank) / (blank)           Company / plate         571 / (blank)
-
-Veh #                   6609                        Veh #                   5098
-Year / make             1997 WABASH                 Year / make             2025 GREAT DANE
-Model / body            T / TKTR                    Model / body            VNL / TKTR
-Company / plate         (blank) / R407268           Company / plate         (blank) / (blank)
-
-Fleet unit listing                                                                          Page 18
-
-# Page 22
-
 FLEET UNIT LISTING
-FLEET FILE 984A698
-
-# Vehicle Schedule
-
-### Equipment and registration split view
-The unit number ties the equipment description to the registration block.
-
-### Equipment description
-UNIT,YR,MAKE,MODEL,BODY
-9722,2021,Kenworth,579,TRACTOR
-7516,2014,Peterbilt,T680,TRAILER
-9663,1997,Freightliner,TRACTOR,T
-6870,2007,Volvo,TRAILER,TKTR
-4139,2001,UTILITY,TKTR,TKTR
-9654,1997,WABASH,T,TRACTOR
-4753,2023,GREAT DANE,VNL,T
-3156,2017,Kenworth,579,TRAILER
-3932,2001,Peterbilt,T680,T
-1354,2000,Freightliner,TRACTOR,TRACTOR
-4404,2006,Volvo,TRAILER,TRACTOR
-5050,2020,UTILITY,TKTR,TKTR
-4591,2008,WABASH,T,T
-7845,2015,GREAT DANE,VNL,TRAILER
-4973,2013,Kenworth,579,TRAILER
-3923,2022,Peterbilt,T680,TKTR
-3072,2011,Freightliner,TRACTOR,TRACTOR
-259,2017,Volvo,TRAILER,T
-7815,2000,UTILITY,TKTR,T
-8536,2014,WABASH,T,TKTR
-29,1997,GREAT DANE,VNL,TKTR
-576,2010,Kenworth,579,TRAILER
-1576,2019,Peterbilt,T680,TRACTOR
-7175,2013,Freightliner,TRACTOR,TRAILER
-9731,2016,Volvo,TRAILER,TRAILER
-7298,2010,UTILITY,TKTR,T
-
-### Registration cross-reference
-UNIT,COMPANY UNIT,PLATE
-9722,574,(blank)
-7516,(blank),(blank)
-9663,(blank),R247338
-6870,577,(blank)
-4139,(blank),(blank)
-9654,(blank),(blank)
-4753,580,R435535
-3156,(blank),(blank)
-3932,(blank),(blank)
-1354,583,(blank)
-4404,(blank),R626114
-5050,(blank),(blank)
-4591,586,(blank)
-7845,(blank),(blank)
-4973,(blank),R199207
-3923,589,(blank)
-3072,(blank),(blank)
-259,(blank),(blank)
-7815,592,R383285
-8536,(blank),(blank)
-29,(blank),(blank)
-576,595,(blank)
-1576,(blank),R924568
-7175,(blank),(blank)
-9731,598,(blank)
-7298,(blank),(blank)
-
-Some registration fields are blank in the source export.
-
-Fleet unit listing
-Page 19
-
-# Page 23
-
-Schedule Unit,Year/Make,Equipment,Company Listing,Registration
-3515,2018 WABASH,"T, TRAILER",Unit (blank),R860095
-3183,2023 GREAT DANE,"VNL, T",Unit 601,(blank)
-7190,2016 Kenworth,"579, TRACTOR",Unit (blank),(blank)
-3417,2006 Peterbilt,"T680, T",Unit (blank),(blank)
-6567,2021 Freightliner,"TRACTOR, TKTR",Unit 604,R115784
-4782,2012 Volvo,"TRAILER, TRACTOR",Unit (blank),(blank)
-1764,2016 UTILITY,"TKTR, TRAILER",Unit (blank),(blank)
-3588,2003 WABASH,"T, TKTR",Unit 607,(blank)
-476,2024 GREAT DANE,"VNL, TRAILER",Unit (blank),R803565
-4211,2020 Kenworth,"579, TKTR",Unit (blank),(blank)
-6266,2010 Peterbilt,"T680, TRACTOR",Unit 610,(blank)
-9650,2017 Freightliner,"TRACTOR, TRACTOR",Unit (blank),(blank)
-2315,2001 Volvo,"TRAILER, TRAILER",Unit (blank),R937088
-
-# Page 24
-
-Schedule Unit,Year/Make,Equipment,Company Listing,Registration
-7449,2001 UTILITY,"TKTR T",Unit 613,(blank)
-5533,2001 WABASH,"T TRAILER",Unit (blank),(blank)
-3029,2005 GREAT DANE,"VNL TKTR",Unit (blank),(blank)
-2458,2000 Kenworth,"579 T",Unit 616,R432113
-7437,2009 Peterbilt,"T680 TKTR",Unit (blank),(blank)
-5221,2019 Freightliner,"TRACTOR T",Unit (blank),(blank)
-3243,2015 Volvo,"TRAILER TRACTOR",Unit 619,(blank)
-
-# Page 25
-
-FLEET UNIT LISTING                                                               FLEET FILE 984A698
 Vehicle Schedule
+
+FLEET FILE 984A698
 
 Scheduled units - tabular export
 
@@ -987,7 +1363,7 @@ SCHEDULE UNIT,PLATE,BODY,YEAR,MANUFACTURER,MODEL,COMPANY UNIT
 1215,,TKTR,2002,Freightliner,TRACTOR,625
 1197,,T,2024,Volvo,TRAILER,
 2967,,TRACTOR,2012,UTILITY,TKTR,
-Registration import note retained for audit review.,,,,,,
+Registration import note retained for audit review.
 3084,R820172,T,2025,WABASH,T,628
 7059,,T,2000,GREAT DANE,VNL,
 7654,,TRAILER,2014,Kenworth,579,
@@ -999,7 +1375,7 @@ Registration import note retained for audit review.,,,,,,
 8104,R346190,TKTR,2026,GREAT DANE,VNL,
 3812,,TKTR,2011,Kenworth,579,637
 7469,,T,2015,Peterbilt,T680,
-Registration import note retained for audit review.,,,,,,
+Registration import note retained for audit review.
 8413,,TKTR,2000,Freightliner,TRACTOR,
 672,R360461,TKTR,2008,Volvo,TRAILER,640
 371,,TKTR,2002,UTILITY,TKTR,
@@ -1008,126 +1384,145 @@ Registration import note retained for audit review.,,,,,,
 9340,R173006,TRACTOR,2009,Kenworth,579,
 1794,,T,1998,Peterbilt,T680,
 3008,,TRACTOR,2013,Freightliner,TRACTOR,646
-4518,,TRACTOR,1998,Volvo,TRAILER,
+4518,,TRAILER,1998,Volvo,TRAILER,
 8078,R726612,T,2012,UTILITY,TKTR,
 7522,,T,2019,WABASH,T,649
 
-Fleet unit listing                                                                      Page 21
+Fleet unit listing,Page 21
 
-# Page 26
+# Page 22
 
-"FLEET UNIT LISTING","","FLEET FILE 984A698"
-"Vehicle Schedule","",""
-"Vehicle cards - registration tab","",""
-"UNIT SCHEDULE REF 7630
-2025 GREAT DANE VNL; body/body style TRAILER.
-Company unit (blank); registration plate (blank).","UNIT SCHEDULE REF 810
-2012 Kenworth 579; body/body style TKTR.
-Company unit (blank); registration plate (blank).","UNIT SCHEDULE REF 611
-2007 Peterbilt T680; body/body style T.
-Company unit 652; registration plate R533546."
-"UNIT SCHEDULE REF 3854
-1998 Freightliner TRACTOR; body/body style TKTR.
-Company unit (blank); registration plate (blank).","UNIT SCHEDULE REF 8265
-2020 Volvo TRAILER; body/body style TRAILER.
-Company unit (blank); registration plate (blank).","UNIT SCHEDULE REF 2882
-2026 UTILITY TKTR; body/body style TRACTOR.
-Company unit 655; registration plate (blank)."
-"UNIT SCHEDULE REF 7050
-2000 WABASH T; body/body style T.
-Company unit (blank); registration plate R412570.","UNIT SCHEDULE REF 6784
-2005 GREAT DANE VNL; body/body style T.
-Company unit (blank); registration plate (blank).","UNIT SCHEDULE REF 3196
-1997 Kenworth 579; body/body style T.
-Company unit 658; registration plate (blank)."
-"UNIT SCHEDULE REF 8877
-2004 Peterbilt T680; body/body style TRACTOR.
-Company unit (blank); registration plate (blank).","UNIT SCHEDULE REF 8628
-2014 Freightliner TRACTOR; body/body style TRACTOR.
-Company unit (blank); registration plate R105808.","UNIT SCHEDULE REF 6962
-2025 Volvo TRAILER; body/body style TRAILER.
-Company unit 661; registration plate (blank)."
-"UNIT SCHEDULE REF 1800
-2017 UTILITY TKTR; body/body style T.
-Company unit (blank); registration plate (blank).","UNIT SCHEDULE REF 9972
-1998 WABASH T; body/body style TRAILER.
-Company unit (blank); registration plate (blank).","UNIT SCHEDULE REF 3893
-2020 GREAT DANE VNL; body/body style TRACTOR.
-Company unit 664; registration plate R317195."
-"UNIT SCHEDULE REF 9311
-2004 Kenworth 579; body/body style TRACTOR.
-Company unit (blank); registration plate (blank).","UNIT SCHEDULE REF 9666
-2023 Peterbilt T680; body/body style T.
-Company unit (blank); registration plate (blank).","UNIT SCHEDULE REF 836
-2026 Freightliner TRACTOR; body/body style TRACTOR.
-Company unit 667; registration plate (blank)."
-"UNIT SCHEDULE REF 1629
-2000 Volvo TRAILER; body/body style TRACTOR.
-Company unit (blank); registration plate R858676.","UNIT SCHEDULE REF 1311
-2015 UTILITY TKTR; body/body style TKTR.
-Company unit (blank); registration plate (blank).","UNIT SCHEDULE REF 3546
-2006 WABASH T; body/body style TRACTOR.
-Company unit 670; registration plate (blank)."
-"UNIT SCHEDULE REF 5209
-2004 GREAT DANE VNL; body/body style TRACTOR.
-Company unit (blank); registration plate (blank).","UNIT SCHEDULE REF 6711
-2017 Kenworth 579; body/body style TKTR.
-Company unit (blank); registration plate R205231.","UNIT SCHEDULE REF 8056
-2005 Peterbilt T680; body/body style TKTR.
-Company unit 673; registration plate (blank)."
-"UNIT SCHEDULE REF 5946
-2023 Freightliner TRACTOR; body/body style TRAILER.
-Company unit (blank); registration plate (blank).","UNIT SCHEDULE REF 3475
-2007 Volvo TRAILER; body/body style TRACTOR.
-Company unit (blank); registration plate (blank).","UNIT SCHEDULE REF 3181
-1997 UTILITY TKTR; body/body style T.
-Company unit 676; registration plate R515405."
-"UNIT SCHEDULE REF 8216
-2025 WABASH T; body/body style TKTR.
-Company unit (blank); registration plate (blank).","UNIT SCHEDULE REF 8654
-2002 GREAT DANE VNL; body/body style TKTR.
-Company unit (blank); registration plate (blank).","UNIT SCHEDULE REF 8151
-2013 Kenworth 579; body/body style T.
-Company unit 679; registration plate (blank)."
-"Fleet unit listing","","Page 22"
-
-# Page 27
-
-Veh #,Year / make,Model / body,Company / plate
-1253,2002 Peterbilt,T680 / TRACTOR,(blank) / R967300
-6278,1999 Freightliner,TRACTOR / TRAILER,(blank) / (blank)
-9138,2008 Volvo,TRAILER / TRACTOR,682 / (blank)
-8366,2016 UTILITY,TKTR / T,(blank) / (blank)
-8043,2009 WABASH,T / TRAILER,(blank) / R169823
-9482,2015 GREAT DANE,VNL / TKTR,685 / (blank)
-4986,2026 Kenworth,579 / TRACTOR,(blank) / (blank)
-3138,2004 Peterbilt,T680 / TKTR,(blank) / (blank)
-8685,2021 Freightliner,TRACTOR / T,688 / R936261
-3567,1999 Volvo,TRAILER / TKTR,(blank) / (blank)
-6132,2026 UTILITY,TKTR / TRACTOR,(blank) / (blank)
-802,2024 WABASH,T / TKTR,691 / (blank)
-5641,2004 GREAT DANE,VNL / TKTR,(blank) / R358705
-3600,2002 Kenworth,579 / TRACTOR,(blank) / (blank)
-2429,2014 Peterbilt,T680 / TKTR,694 / (blank)
-7509,2022 Freightliner,TRACTOR / TRACTOR,(blank) / (blank)
-4067,2014 Volvo,TRAILER / TRACTOR,(blank) / R512370
-4698,2012 UTILITY,TKTR / TRACTOR,697 / (blank)
-5395,2016 WABASH,T / TKTR,(blank) / (blank)
-4191,2008 GREAT DANE,VNL / TKTR,(blank) / (blank)
-5142,2009 Kenworth,579 / TKTR,700 / R781226
-8109,2023 Peterbilt,T680 / TRACTOR,(blank) / (blank)
-8981,1999 Freightliner,TRACTOR / T,(blank) / (blank)
-9310,2007 Volvo,TRAILER / TRACTOR,703 / (blank)
-
-# Page 28
-
-FLEET UNIT LISTING                                                 FLEET FILE 984A698
+FLEET UNIT LISTING                                                                               FLEET FILE 984A698
 Vehicle Schedule
 
-Equipment and registration split view
+Vehicle cards - registration tab
+
++-------------------------------------------------+-------------------------------------------------+-------------------------------------------------+
+| UNIT SCHEDULE REF 7630                          | UNIT SCHEDULE REF 810                           | UNIT SCHEDULE REF 611                           |
+| 2025 GREAT DANE VNL; body/body style TRAILER.  | 2012 Kenworth 579; body/body style TKTR.        | 2007 Peterbilt T680; body/body style T.         |
+| Company unit (blank); registration plate (blank).| Company unit (blank); registration plate (blank).| Company unit 652; registration plate R533546.   |
++-------------------------------------------------+-------------------------------------------------+-------------------------------------------------+
+| UNIT SCHEDULE REF 3854                          | UNIT SCHEDULE REF 8265                          | UNIT SCHEDULE REF 2882                          |
+| 1998 Freightliner TRACTOR; body/body style TKTR. | 2020 Volvo TRAILER; body/body style TRAILER.    | 2026 UTILITY TKTR; body/body style TRACTOR.     |
+| Company unit (blank); registration plate (blank).| Company unit (blank); registration plate (blank).| Company unit 655; registration plate (blank).   |
++-------------------------------------------------+-------------------------------------------------+-------------------------------------------------+
+| UNIT SCHEDULE REF 7050                          | UNIT SCHEDULE REF 6784                          | UNIT SCHEDULE REF 3196                          |
+| 2000 WABASH T; body/body style T.               | 2005 GREAT DANE VNL; body/body style T.         | 1997 Kenworth 579; body/body style T.           |
+| Company unit (blank); registration plate R412570.| Company unit (blank); registration plate (blank).| Company unit 658; registration plate (blank).   |
++-------------------------------------------------+-------------------------------------------------+-------------------------------------------------+
+| UNIT SCHEDULE REF 8877                          | UNIT SCHEDULE REF 8628                          | UNIT SCHEDULE REF 6962                          |
+| 2004 Peterbilt T680; body/body style TRACTOR.   | 2014 Freightliner TRACTOR; body/body style      | 2025 Volvo TRAILER; body/body style TRAILER.    |
+| Company unit (blank); registration plate (blank).| TRACTOR.                                        | Company unit 661; registration plate (blank).   |
+|                                                 | Company unit (blank); registration plate R105808.|                                                 |
++-------------------------------------------------+-------------------------------------------------+-------------------------------------------------+
+| UNIT SCHEDULE REF 1800                          | UNIT SCHEDULE REF 9972                          | UNIT SCHEDULE REF 3893                          |
+| 2017 UTILITY TKTR; body/body style T.           | 1998 WABASH T; body/body style TRAILER.         | 2020 GREAT DANE VNL; body/body style TRACTOR.   |
+| Company unit (blank); registration plate (blank).| Company unit (blank); registration plate (blank).| Company unit 664; registration plate R317195.   |
++-------------------------------------------------+-------------------------------------------------+-------------------------------------------------+
+| UNIT SCHEDULE REF 9311                          | UNIT SCHEDULE REF 9666                          | UNIT SCHEDULE REF 836                           |
+| 2004 Kenworth 579; body/body style TRACTOR.     | 2023 Peterbilt T680; body/body style T.         | 2026 Freightliner TRACTOR; body/body style      |
+| Company unit (blank); registration plate (blank).| Company unit (blank); registration plate (blank).| TRACTOR.                                        |
+|                                                 |                                                 | Company unit 667; registration plate (blank).   |
++-------------------------------------------------+-------------------------------------------------+-------------------------------------------------+
+| UNIT SCHEDULE REF 1629                          | UNIT SCHEDULE REF 1311                          | UNIT SCHEDULE REF 3546                          |
+| 2000 Volvo TRAILER; body/body style TRACTOR.    | 2015 UTILITY TKTR; body/body style TKTR.        | 2006 WABASH T; body/body style TRACTOR.         |
+| Company unit (blank); registration plate R858676.| Company unit (blank); registration plate (blank).| Company unit 670; registration plate (blank).   |
++-------------------------------------------------+-------------------------------------------------+-------------------------------------------------+
+| UNIT SCHEDULE REF 5209                          | UNIT SCHEDULE REF 6711                          | UNIT SCHEDULE REF 8056                          |
+| 2004 GREAT DANE VNL; body/body style TRACTOR.   | 2017 Kenworth 579; body/body style TKTR.        | 2005 Peterbilt T680; body/body style TKTR.      |
+| Company unit (blank); registration plate (blank).| Company unit (blank); registration plate R205231.| Company unit 673; registration plate (blank).   |
++-------------------------------------------------+-------------------------------------------------+-------------------------------------------------+
+| UNIT SCHEDULE REF 5946                          | UNIT SCHEDULE REF 3475                          | UNIT SCHEDULE REF 3181                          |
+| 2023 Freightliner TRACTOR; body/body style      | 2007 Volvo TRAILER; body/body style TRACTOR.    | 1997 UTILITY TKTR; body/body style T.           |
+| TRAILER.                                        | Company unit (blank); registration plate (blank).| Company unit 676; registration plate R515405.   |
+| Company unit (blank); registration plate (blank).|                                                 |                                                 |
++-------------------------------------------------+-------------------------------------------------+-------------------------------------------------+
+| UNIT SCHEDULE REF 8216                          | UNIT SCHEDULE REF 8654                          | UNIT SCHEDULE REF 8151                          |
+| 2025 WABASH T; body/body style TKTR.            | 2002 GREAT DANE VNL; body/body style TKTR.      | 2013 Kenworth 579; body/body style T.           |
+| Company unit (blank); registration plate (blank).| Company unit (blank); registration plate (blank).| Company unit 679; registration plate (blank).   |
++-------------------------------------------------+-------------------------------------------------+-------------------------------------------------+
+
+Fleet unit listing                                                                                 Page 22
+
+# Page 23
+
+FLEET UNIT LISTING,FLEET FILE 984A698
+Vehicle Schedule,
+
+Continuation - unit detail blocks,
+
+Veh #,1253,Veh #,6278
+Year / make,2002 Peterbilt,Year / make,1999 Freightliner
+Model / body,T680 / TRACTOR,Model / body,TRACTOR / TRAILER
+Company / plate,(blank) / R967300,Company / plate,(blank) / (blank)
+
+Veh #,9138,Veh #,8366
+Year / make,2008 Volvo,Year / make,2016 UTILITY
+Model / body,TRAILER / TRACTOR,Model / body,TKTR / T
+Company / plate,682 / (blank),Company / plate,(blank) / (blank)
+
+Veh #,8043,Veh #,9482
+Year / make,2009 WABASH,Year / make,2015 GREAT DANE
+Model / body,T / TRAILER,Model / body,VNL / TKTR
+Company / plate,(blank) / R169823,Company / plate,685 / (blank)
+
+Veh #,4986,Veh #,3138
+Year / make,2026 Kenworth,Year / make,2004 Peterbilt
+Model / body,579 / TRACTOR,Model / body,T680 / TKTR
+Company / plate,(blank) / (blank),Company / plate,(blank) / (blank)
+
+Veh #,8685,Veh #,3567
+Year / make,2021 Freightliner,Year / make,1999 Volvo
+Model / body,TRACTOR / T,Model / body,TRAILER / TKTR
+Company / plate,688 / R936261,Company / plate,(blank) / (blank)
+
+Veh #,6132,Veh #,802
+Year / make,2026 UTILITY,Year / make,2024 WABASH
+Model / body,TKTR / TRACTOR,Model / body,T / TKTR
+Company / plate,(blank) / (blank),Company / plate,691 / (blank)
+
+Veh #,5641,Veh #,3600
+Year / make,2004 GREAT DANE,Year / make,2002 Kenworth
+Model / body,VNL / TKTR,Model / body,579 / TRACTOR
+Company / plate,(blank) / R358705,Company / plate,(blank) / (blank)
+
+Veh #,2429,Veh #,7509
+Year / make,2014 Peterbilt,Year / make,2022 Freightliner
+Model / body,T680 / TKTR,Model / body,TRACTOR / TRACTOR
+Company / plate,694 / (blank),Company / plate,(blank) / (blank)
+
+Veh #,4067,Veh #,4698
+Year / make,2014 Volvo,Year / make,2012 UTILITY
+Model / body,TRAILER / TRACTOR,Model / body,TKTR / TRACTOR
+Company / plate,(blank) / R512370,Company / plate,697 / (blank)
+
+Veh #,5395,Veh #,4191
+Year / make,2016 WABASH,Year / make,2008 GREAT DANE
+Model / body,T / TKTR,Model / body,VNL / TKTR
+Company / plate,(blank) / (blank),Company / plate,(blank) / (blank)
+
+Veh #,5142,Veh #,8109
+Year / make,2009 Kenworth,Year / make,2023 Peterbilt
+Model / body,579 / TKTR,Model / body,T680 / TRACTOR
+Company / plate,700 / R781226,Company / plate,(blank) / (blank)
+
+Veh #,8981,Veh #,9310
+Year / make,1999 Freightliner,Year / make,2007 Volvo
+Model / body,TRACTOR / T,Model / body,TRAILER / TRACTOR
+Company / plate,(blank) / (blank),Company / plate,703 / (blank)
+
+Fleet unit listing,Page 23
+
+# Page 24
+
+FLEET UNIT LISTING                                                                               | FLEET FILE 984A698 |
+Vehicle Schedule
+
+# Equipment and registration split view
 The unit number ties the equipment description to the registration block.
 
-Equipment description
+## Equipment description
+
 UNIT,YR,MAKE,MODEL,BODY
 6594,2012,UTILITY,TKTR,TRAILER
 8817,1997,WABASH,T,T
@@ -1156,7 +1551,8 @@ UNIT,YR,MAKE,MODEL,BODY
 9260,2005,Kenworth,579,TRAILER
 2559,2001,Peterbilt,T680,TRAILER
 
-Registration cross-reference
+## Registration cross-reference
+
 UNIT,COMPANY UNIT,PLATE
 6594,(blank),R689817
 8817,(blank),(blank)
@@ -1185,54 +1581,99 @@ UNIT,COMPANY UNIT,PLATE
 9260,(blank),R640748
 2559,(blank),(blank)
 
-Some registration fields are blank in the source export.
+| Some registration fields are blank in the source export.
 
-Fleet unit listing                                                                    Page 24
+Fleet unit listing                                                                                     Page 24
 
-# Page 29
+# Page 25
 
-FLEET UNIT LISTING,FLEET FILE 984A698
-Vehicle Schedule
-
+FLEET UNIT LISTING                                                                               | FLEET FILE 984A698 |
+Vehicle Schedule                                                                                └───────────────────┘
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
 Fleet import exception format
 
-"Schedule Unit","Year/Make","Equipment","Company Listing","Registration"
-"Schedule unit 8528","2006 Freightliner","TRACTOR\nTRAILER","Unit 730","(blank)"
-"Schedule unit 3085","2013 Volvo","TRAILER\nTRACTOR","Unit (blank)","(blank)"
-"Schedule unit 3352","2010 UTILITY","TKTR\nTRAILER","Unit (blank)","R974087"
-"Schedule unit 5371","1998 WABASH","T\nT","Unit 733","(blank)"
-"Schedule unit 5405","1999 GREAT DANE","VNL\nTKTR","Unit (blank)","(blank)"
-"Schedule unit 2325","2004 Kenworth","579\nT","Unit (blank)","(blank)"
-"Schedule unit 9463","2000 Peterbilt","T680\nTRAILER","Unit 736","R215231"
-"Schedule unit 4697","2022 Freightliner","TRACTOR\nTRAILER","Unit (blank)","(blank)"
-"Schedule unit 6619","2013 Volvo","TRAILER\nTKTR","Unit (blank)","(blank)"
-"Schedule unit 6780","2001 UTILITY","TKTR\nTRAILER","Unit 739","(blank)"
+┌─────────────────────────────────────────────────────────────┐ ┌─────────────────────────────────────────────────────────────┐
+│ Schedule unit 8528                         2006 Freightliner│ │ Schedule unit 3085                         2013 Volvo       │
+│ ─────────────────────────────────────────────────────────── │ │ ─────────────────────────────────────────────────────────── │
+│ EQUIPMENT         COMPANY LISTING       REGISTRATION        │ │ EQUIPMENT         COMPANY LISTING       REGISTRATION        │
+│ TRACTOR           Unit 730              (blank)             │ │ TRAILER           Unit (blank)          (blank)             │
+│ TRAILER                                                     │ │ TRACTOR                                                     │
+└─────────────────────────────────────────────────────────────┘ └─────────────────────────────────────────────────────────────┘
+┌─────────────────────────────────────────────────────────────┐ ┌─────────────────────────────────────────────────────────────┐
+│ Schedule unit 3352                         2010 UTILITY     │ │ Schedule unit 5371                         1998 WABASH      │
+│ ─────────────────────────────────────────────────────────── │ │ ─────────────────────────────────────────────────────────── │
+│ EQUIPMENT         COMPANY LISTING       REGISTRATION        │ │ EQUIPMENT         COMPANY LISTING       REGISTRATION        │
+│ TKTR              Unit (blank)          R974087             │ │ T                 Unit 733              (blank)             │
+│ TRAILER                                                     │ │ T                                                           │
+└─────────────────────────────────────────────────────────────┘ └─────────────────────────────────────────────────────────────┘
+┌─────────────────────────────────────────────────────────────┐ ┌─────────────────────────────────────────────────────────────┐
+│ Schedule unit 5405                         1999 GREAT DANE  │ │ Schedule unit 2325                         2004 Kenworth    │
+│ ─────────────────────────────────────────────────────────── │ │ ─────────────────────────────────────────────────────────── │
+│ EQUIPMENT         COMPANY LISTING       REGISTRATION        │ │ EQUIPMENT         COMPANY LISTING       REGISTRATION        │
+│ VNL               Unit (blank)          (blank)             │ │ 579               Unit (blank)          (blank)             │
+│ TKTR                                                        │ │ T                                                           │
+└─────────────────────────────────────────────────────────────┘ └─────────────────────────────────────────────────────────────┘
+┌─────────────────────────────────────────────────────────────┐ ┌─────────────────────────────────────────────────────────────┐
+│ Schedule unit 9463                         2000 Peterbilt   │ │ Schedule unit 4697                         2022 Freightliner│
+│ ─────────────────────────────────────────────────────────── │ │ ─────────────────────────────────────────────────────────── │
+│ EQUIPMENT         COMPANY LISTING       REGISTRATION        │ │ EQUIPMENT         COMPANY LISTING       REGISTRATION        │
+│ T680              Unit 736              R215231             │ │ TRACTOR           Unit (blank)          (blank)             │
+│ TRAILER                                                     │ │ TRAILER                                                     │
+└─────────────────────────────────────────────────────────────┘ └─────────────────────────────────────────────────────────────┘
+┌─────────────────────────────────────────────────────────────┐ ┌─────────────────────────────────────────────────────────────┐
+│ Schedule unit 6619                         2013 Volvo       │ │ Schedule unit 6780                         2001 UTILITY     │
+│ ─────────────────────────────────────────────────────────── │ │ ─────────────────────────────────────────────────────────── │
+│ EQUIPMENT         COMPANY LISTING       REGISTRATION        │ │ EQUIPMENT         COMPANY LISTING       REGISTRATION        │
+│ TRAILER           Unit (blank)          (blank)             │ │ TKTR              Unit 739              (blank)             │
+│ TKTR                                                        │ │ TRAILER                                                     │
+└─────────────────────────────────────────────────────────────┘ └─────────────────────────────────────────────────────────────┘
 
-Fleet import exception reviewed by underwriting operations.
+  Fleet import exception reviewed by underwriting operations.
 
-"Schedule Unit","Year/Make","Equipment","Company Listing","Registration"
-"Schedule unit 4045","2013 WABASH","T\nT","Unit (blank)","R909935"
-"Schedule unit 2799","2004 GREAT DANE","VNL\nTRAILER","Unit (blank)","(blank)"
-"Schedule unit 269","1998 Kenworth","579\nTRACTOR","Unit 742","(blank)"
+┌─────────────────────────────────────────────────────────────┐ ┌─────────────────────────────────────────────────────────────┐
+│ Schedule unit 4045                         2013 WABASH      │ │ Schedule unit 2799                         2004 GREAT DANE  │
+│ ─────────────────────────────────────────────────────────── │ │ ─────────────────────────────────────────────────────────── │
+│ EQUIPMENT         COMPANY LISTING       REGISTRATION        │ │ EQUIPMENT         COMPANY LISTING       REGISTRATION        │
+│ T                 Unit (blank)          R909935             │ │ VNL               Unit (blank)          (blank)             │
+│ T                                                           │ │ TRAILER                                                     │
+└─────────────────────────────────────────────────────────────┘ └─────────────────────────────────────────────────────────────┘
+┌─────────────────────────────────────────────────────────────┐ ┌─────────────────────────────────────────────────────────────┐
+│ Schedule unit 269                          1998 Kenworth    │ │ Schedule unit 1324                         2022 Peterbilt   │
+│ ─────────────────────────────────────────────────────────── │ │ ─────────────────────────────────────────────────────────── │
+│ EQUIPMENT         COMPANY LISTING       REGISTRATION        │ │ EQUIPMENT         COMPANY LISTING       REGISTRATION        │
+│ 579               Unit 742              (blank)             │ │ T680              Unit (blank)          (blank)             │
+│ TRACTOR                                                     │ │ TKTR                                                        │
+└─────────────────────────────────────────────────────────────┘ └─────────────────────────────────────────────────────────────┘
+┌─────────────────────────────────────────────────────────────┐ ┌─────────────────────────────────────────────────────────────┐
+│ Schedule unit 3428                         2012 Freightliner│ │ Schedule unit 2930                         2009 Volvo       │
+│ ─────────────────────────────────────────────────────────── │ │ ─────────────────────────────────────────────────────────── │
+│ EQUIPMENT         COMPANY LISTING       REGISTRATION        │ │ EQUIPMENT         COMPANY LISTING       REGISTRATION        │
+│ TRACTOR           Unit (blank)          R354098             │ │ TRAILER           Unit 745              (blank)             │
+│ TKTR                                                        │ │ T                                                           │
+└─────────────────────────────────────────────────────────────┘ └─────────────────────────────────────────────────────────────┘
+┌─────────────────────────────────────────────────────────────┐ ┌─────────────────────────────────────────────────────────────┐
+│ Schedule unit 220                          2023 UTILITY     │ │ Schedule unit 1736                         2016 WABASH      │
+│ ─────────────────────────────────────────────────────────── │ │ ─────────────────────────────────────────────────────────── │
+│ EQUIPMENT         COMPANY LISTING       REGISTRATION        │ │ EQUIPMENT         COMPANY LISTING       REGISTRATION        │
+│ TKTR              Unit (blank)          (blank)             │ │ T                 Unit (blank)          (blank)             │
+│ TRAILER                                                     │ │ TRACTOR                                                     │
+└─────────────────────────────────────────────────────────────┘ └─────────────────────────────────────────────────────────────┘
+┌─────────────────────────────────────────────────────────────┐ ┌─────────────────────────────────────────────────────────────┐
+│ Schedule unit 8939                         2015 GREAT DANE  │ │ Schedule unit 1487                         2025 Kenworth    │
+│ ─────────────────────────────────────────────────────────── │ │ ─────────────────────────────────────────────────────────── │
+│ EQUIPMENT         COMPANY LISTING       REGISTRATION        │ │ EQUIPMENT         COMPANY LISTING       REGISTRATION        │
+│ VNL               Unit 748              R349197             │ │ 579               Unit (blank)          (blank)             │
+│ TRAILER                                                     │ │ TRAILER                                                     │
+└─────────────────────────────────────────────────────────────┘ └─────────────────────────────────────────────────────────────┘
 
-# Page 30
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Fleet unit listing                                                                                             Page 25
 
-Schedule Unit,Year/Brand,Equipment,Company Listing,Registration
-1324,2022 Peterbilt,"T680, TKTR",Unit (blank),(blank)
-3428,2012 Freightliner,"TRACTOR, TKTR",Unit (blank),R354098
-2930,2009 Volvo,"TRAILER, T",Unit 745,(blank)
-220,2023 UTILITY,"TKTR, TRAILER",Unit (blank),(blank)
-1736,2016 WABASH,"T, TRACTOR",Unit (blank),(blank)
-8939,2015 GREAT DANE,"VNL, TRAILER",Unit 748,R349197
-1487,2025 Kenworth,"579, TRAILER",Unit (blank),(blank)
+# Page 26
 
-Fleet unit listing,Page 25
-
-# Page 31
-
-FLEET UNIT LISTING                                                 [FLEET FILE 984A698]
-
+FLEET UNIT LISTING
 Vehicle Schedule
+FLEET FILE 984A698
 
 Scheduled units - tabular export
 
@@ -1245,7 +1686,7 @@ SCHEDULE UNIT,PLATE,BODY,YEAR,MANUFACTURER,MODEL,COMPANY UNIT
 1377,,TRACTOR,2025,GREAT DANE,VNL,
 8098,R244998,TKTR,2021,Kenworth,579,
 5943,,TRAILER,1999,Peterbilt,T680,757
-*Registration import note retained for audit review.*
+Registration import note retained for audit review.
 3930,,TRACTOR,2025,Freightliner,TRACTOR,
 7581,,TKTR,2001,Volvo,TRAILER,
 2554,R465365,TKTR,2015,UTILITY,TKTR,760
@@ -1257,7 +1698,7 @@ SCHEDULE UNIT,PLATE,BODY,YEAR,MANUFACTURER,MODEL,COMPANY UNIT
 4278,,TKTR,1999,Volvo,TRAILER,766
 859,,TRAILER,2010,UTILITY,TKTR,
 4252,R536014,TKTR,2019,WABASH,T,
-*Registration import note retained for audit review.*
+Registration import note retained for audit review.
 8037,,TRACTOR,2009,GREAT DANE,VNL,769
 206,,TRAILER,2022,Kenworth,579,
 4888,,TRAILER,2017,Peterbilt,T680,
@@ -1270,116 +1711,153 @@ SCHEDULE UNIT,PLATE,BODY,YEAR,MANUFACTURER,MODEL,COMPANY UNIT
 8162,,TRACTOR,2013,Peterbilt,T680,778
 7385,,TRACTOR,2007,Freightliner,TRACTOR,
 
-Fleet unit listing                                                             Page 26
+Fleet unit listing,Page 26
 
-# Page 32
+# Page 27
 
-Unit Schedule Ref,Vehicle Details,Body/Body Style,Company Unit,Registration Plate
-8465,2010 Volvo TRAILER,TRAILER,(blank),R153150
-2796,2015 UTILITY TKTR,T,781,(blank)
-9462,2016 WABASH T,TRACTOR,(blank),(blank)
-2379,2000 GREAT DANE VNL,TRAILER,(blank),(blank)
-1605,2007 Kenworth 579,TRAILER,784,R122586
-1821,1999 Peterbilt T680,TKTR,(blank),(blank)
-595,2020 Freightliner TRACTOR,TKTR,(blank),(blank)
-9522,2001 Volvo TRAILER,TRAILER,787,(blank)
-5932,2024 UTILITY TKTR,TKTR,(blank),R648362
-3145,2005 WABASH T,TRAILER,(blank),(blank)
-9840,2008 GREAT DANE VNL,T,790,(blank)
-5299,2007 Kenworth 579,T,(blank),(blank)
-925,2005 Peterbilt T680,TKTR,(blank),R717281
-5013,2016 Freightliner TRACTOR,TKTR,793,(blank)
-2401,2005 Volvo TRAILER,TRAILER,(blank),(blank)
-5744,2021 UTILITY TKTR,T,(blank),(blank)
-361,2023 WABASH T,TKTR,796,R822706
-7931,2006 GREAT DANE VNL,TRACTOR,(blank),(blank)
-6448,2016 Kenworth 579,T,(blank),(blank)
-3462,2023 Peterbilt T680,TKTR,799,(blank)
-9532,2016 Freightliner TRACTOR,TRAILER,(blank),R300470
-4528,2026 Volvo TRAILER,TRAILER,(blank),(blank)
-7019,2003 UTILITY TKTR,TKTR,802,(blank)
-1803,2000 WABASH T,T,(blank),(blank)
-1503,2000 GREAT DANE VNL,TRAILER,(blank),R852868
-9567,2017 Kenworth 579,TKTR,805,(blank)
-5461,2013 Peterbilt T680,T,(blank),(blank)
-8274,1997 Freightliner TRACTOR,TKTR,(blank),(blank)
-7113,2007 Volvo TRAILER,T,808,R915405
-3372,2001 UTILITY TKTR,T,(blank),(blank)
-
-# Page 33
-
-FLEET UNIT LISTING                                                              +--------------------+
-Vehicle Schedule                                                                | FLEET FILE 984A698 |
-                                                                                +--------------------+
-
-Continuation - unit detail blocks
-
-Veh #               5211                                Veh #               1234
-Year / make         2006 WABASH                         Year / make         2003 GREAT DANE
-Model / body        T / T                               Model / body        VNL / TRACTOR
-Company / plate     (blank) / (blank)                   Company / plate     811 / (blank)
-
-Veh #               8059                                Veh #               3365
-Year / make         2018 Kenworth                       Year / make         2003 Peterbilt
-Model / body        579 / TRAILER                       Model / body        T680 / TRACTOR
-Company / plate     (blank) / R300284                   Company / plate     (blank) / (blank)
-
-Veh #               3720                                Veh #               1240
-Year / make         2022 Freightliner                   Year / make         2014 Volvo
-Model / body        TRACTOR / TRACTOR                   Model / body        TRAILER / T
-Company / plate     814 / (blank)                       Company / plate     (blank) / (blank)
-
-Veh #               1403                                Veh #               7481
-Year / make         2017 UTILITY                        Year / make         1997 WABASH
-Model / body        TKTR / T                            Model / body        T / TRAILER
-Company / plate     (blank) / R445893                   Company / plate     817 / (blank)
-
-Veh #               7340                                Veh #               3507
-Year / make         2002 GREAT DANE                     Year / make         2012 Kenworth
-Model / body        VNL / TKTR                          Model / body        579 / TRACTOR
-Company / plate     (blank) / (blank)                   Company / plate     (blank) / (blank)
-
-Veh #               3992                                Veh #               626
-Year / make         1997 Peterbilt                      Year / make         2022 Freightliner
-Model / body        T680 / TKTR                         Model / body        TRACTOR / TKTR
-Company / plate     820 / R200509                       Company / plate     (blank) / (blank)
-
-Veh #               4115                                Veh #               2628
-Year / make         2026 Volvo                          Year / make         2004 UTILITY
-Model / body        TRAILER / T                         Model / body        TKTR / T
-Company / plate     (blank) / (blank)                   Company / plate     823 / (blank)
-
-Veh #               2932                                Veh #               3928
-Year / make         2000 WABASH                         Year / make         2007 GREAT DANE
-Model / body        T / TRAILER                         Model / body        VNL / TRAILER
-Company / plate     (blank) / R296494                   Company / plate     (blank) / (blank)
-
-Veh #               6013                                Veh #               5484
-Year / make         2014 Kenworth                       Year / make         1998 Peterbilt
-Model / body        579 / TKTR                          Model / body        T680 / TRAILER
-Company / plate     826 / (blank)                       Company / plate     (blank) / (blank)
-
-Veh #               2431                                Veh #               8666
-Year / make         2017 Freightliner                   Year / make         2020 Volvo
-Model / body        TRACTOR / TKTR                      Model / body        TRAILER / TRACTOR
-Company / plate     (blank) / R795547                   Company / plate     829 / (blank)
-
-Veh #               210                                 Veh #               7791
-Year / make         2022 UTILITY                        Year / make         2004 WABASH
-Model / body        TKTR / T                            Model / body        T / T
-Company / plate     (blank) / (blank)                   Company / plate     (blank) / (blank)
-
-Veh #               6677                                Veh #               6152
-Year / make         2010 GREAT DANE                     Year / make         2017 Kenworth
-Model / body        VNL / TRACTOR                       Model / body        579 / T
-Company / plate     832 / R160360                       Company / plate     (blank) / (blank)
-
-Fleet unit listing                                                                               Page 28
-
-# Page 34
-
-FLEET UNIT LISTING                                                                    FLEET FILE 984A698
+FLEET UNIT LISTING                                                                | FLEET FILE 984A698 |
 Vehicle Schedule
+____________________________________________________________________________________________________
+
+Vehicle cards - registration tab
+
++-------------------------------------------------+  +-------------------------------------------------+  +-------------------------------------------------+
+| UNIT SCHEDULE REF 8465                          |  | UNIT SCHEDULE REF 2796                          |  | UNIT SCHEDULE REF 9462                          |
+| 2010 Volvo TRAILER; body/body style TRAILER.    |  | 2015 UTILITY TKTR; body/body style T.           |  | 2016 WABASH T; body/body style TRACTOR.         |
+| Company unit (blank); registration plate R153150|  | Company unit 781; registration plate (blank).   |  | Company unit (blank); registration plate (blank)|
++-------------------------------------------------+  +-------------------------------------------------+  +-------------------------------------------------+
+
++-------------------------------------------------+  +-------------------------------------------------+  +-------------------------------------------------+
+| UNIT SCHEDULE REF 2379                          |  | UNIT SCHEDULE REF 1605                          |  | UNIT SCHEDULE REF 1821                          |
+| 2000 GREAT DANE VNL; body/body style TRAILER.   |  | 2007 Kenworth 579; body/body style TRAILER.     |  | 1999 Peterbilt T680; body/body style TKTR.      |
+| Company unit (blank); registration plate (blank)|  | Company unit 784; registration plate R122586.   |  | Company unit (blank); registration plate (blank)|
++-------------------------------------------------+  +-------------------------------------------------+  +-------------------------------------------------+
+
++-------------------------------------------------+  +-------------------------------------------------+  +-------------------------------------------------+
+| UNIT SCHEDULE REF 595                           |  | UNIT SCHEDULE REF 9522                          |  | UNIT SCHEDULE REF 5932                          |
+| 2020 Freightliner TRACTOR; body/body style TKTR.|  | 2001 Volvo TRAILER; body/body style TRAILER.    |  | 2024 UTILITY TKTR; body/body style TKTR.        |
+| Company unit (blank); registration plate (blank)|  | Company unit 787; registration plate (blank).   |  | Company unit (blank); registration plate R648362|
++-------------------------------------------------+  +-------------------------------------------------+  +-------------------------------------------------+
+
++-------------------------------------------------+  +-------------------------------------------------+  +-------------------------------------------------+
+| UNIT SCHEDULE REF 3145                          |  | UNIT SCHEDULE REF 9840                          |  | UNIT SCHEDULE REF 5299                          |
+| 2005 WABASH T; body/body style TRAILER.         |  | 2008 GREAT DANE VNL; body/body style T.         |  | 2007 Kenworth 579; body/body style T.           |
+| Company unit (blank); registration plate (blank)|  | Company unit 790; registration plate (blank).   |  | Company unit (blank); registration plate (blank)|
++-------------------------------------------------+  +-------------------------------------------------+  +-------------------------------------------------+
+
++-------------------------------------------------+  +-------------------------------------------------+  +-------------------------------------------------+
+| UNIT SCHEDULE REF 925                           |  | UNIT SCHEDULE REF 5013                          |  | UNIT SCHEDULE REF 2401                          |
+| 2005 Peterbilt T680; body/body style TKTR.      |  | 2016 Freightliner TRACTOR; body/body style TKTR.|  | 2005 Volvo TRAILER; body/body style TRAILER.    |
+| Company unit (blank); registration plate R717281|  | Company unit 793; registration plate (blank).   |  | Company unit (blank); registration plate (blank)|
++-------------------------------------------------+  +-------------------------------------------------+  +-------------------------------------------------+
+
++-------------------------------------------------+  +-------------------------------------------------+  +-------------------------------------------------+
+| UNIT SCHEDULE REF 5744                          |  | UNIT SCHEDULE REF 361                           |  | UNIT SCHEDULE REF 7931                          |
+| 2021 UTILITY TKTR; body/body style T.           |  | 2023 WABASH T; body/body style TKTR.            |  | 2006 GREAT DANE VNL; body/body style TRACTOR.   |
+| Company unit (blank); registration plate (blank)|  | Company unit 796; registration plate R822706.   |  | Company unit (blank); registration plate (blank)|
++-------------------------------------------------+  +-------------------------------------------------+  +-------------------------------------------------+
+
++-------------------------------------------------+  +-------------------------------------------------+  +-------------------------------------------------+
+| UNIT SCHEDULE REF 6448                          |  | UNIT SCHEDULE REF 3462                          |  | UNIT SCHEDULE REF 9532                          |
+| 2016 Kenworth 579; body/body style T.           |  | 2023 Peterbilt T680; body/body style TKTR.      |  | 2016 Freightliner TRACTOR; body/body style TRAIL|
+| Company unit (blank); registration plate (blank)|  | Company unit 799; registration plate (blank).   |  | Company unit (blank); registration plate R300470|
++-------------------------------------------------+  +-------------------------------------------------+  +-------------------------------------------------+
+
++-------------------------------------------------+  +-------------------------------------------------+  +-------------------------------------------------+
+| UNIT SCHEDULE REF 4528                          |  | UNIT SCHEDULE REF 7019                          |  | UNIT SCHEDULE REF 1803                          |
+| 2026 Volvo TRAILER; body/body style TRAILER.    |  | 2003 UTILITY TKTR; body/body style TKTR.        |  | 2000 WABASH T; body/body style T.               |
+| Company unit (blank); registration plate (blank)|  | Company unit 802; registration plate (blank).   |  | Company unit (blank); registration plate (blank)|
++-------------------------------------------------+  +-------------------------------------------------+  +-------------------------------------------------+
+
++-------------------------------------------------+  +-------------------------------------------------+  +-------------------------------------------------+
+| UNIT SCHEDULE REF 1503                          |  | UNIT SCHEDULE REF 9567                          |  | UNIT SCHEDULE REF 5461                          |
+| 2000 GREAT DANE VNL; body/body style TRAILER.   |  | 2017 Kenworth 579; body/body style TKTR.        |  | 2013 Peterbilt T680; body/body style T.         |
+| Company unit (blank); registration plate R852868.  | Company unit 805; registration plate (blank).   |  | Company unit (blank); registration plate (blank)|
++-------------------------------------------------+  +-------------------------------------------------+  +-------------------------------------------------+
+
++-------------------------------------------------+  +-------------------------------------------------+  +-------------------------------------------------+
+| UNIT SCHEDULE REF 8274                          |  | UNIT SCHEDULE REF 7113                          |  | UNIT SCHEDULE REF 3372                          |
+| 1997 Freightliner TRACTOR; body/body style TKTR.|  | 2007 Volvo TRAILER; body/body style T.          |  | 2001 UTILITY TKTR; body/body style T.           |
+| Company unit (blank); registration plate (blank)|  | Company unit 808; registration plate R915405.   |  | Company unit (blank); registration plate (blank)|
++-------------------------------------------------+  +-------------------------------------------------+  +-------------------------------------------------+
+
+____________________________________________________________________________________________________
+Fleet unit listing                                                                           Page 27
+
+# Page 28
+
+FLEET UNIT LISTING,FLEET FILE 984A698
+Vehicle Schedule,,
+
+Continuation - unit detail blocks,,
+Veh #,5211,Veh #,1234
+Year / make,2006 WABASH,Year / make,2003 GREAT DANE
+Model / body,T / T,Model / body,VNL / TRACTOR
+Company / plate,(blank) / (blank),Company / plate,811 / (blank)
+
+Veh #,8059,Veh #,3365
+Year / make,2018 Kenworth,Year / make,2003 Peterbilt
+Model / body,579 / TRAILER,Model / body,T680 / TRACTOR
+Company / plate,(blank) / R300284,Company / plate,(blank) / (blank)
+
+Veh #,3720,Veh #,1240
+Year / make,2022 Freightliner,Year / make,2014 Volvo
+Model / body,TRACTOR / TRACTOR,Model / body,TRAILER / T
+Company / plate,814 / (blank),Company / plate,(blank) / (blank)
+
+Veh #,1403,Veh #,7481
+Year / make,2017 UTILITY,Year / make,1997 WABASH
+Model / body,TKTR / T,Model / body,T / TRAILER
+Company / plate,(blank) / R445893,Company / plate,817 / (blank)
+
+Veh #,7340,Veh #,3507
+Year / make,2002 GREAT DANE,Year / make,2012 Kenworth
+Model / body,VNL / TKTR,Model / body,579 / TRACTOR
+Company / plate,(blank) / (blank),Company / plate,(blank) / (blank)
+
+Veh #,3992,Veh #,626
+Year / make,1997 Peterbilt,Year / make,2022 Freightliner
+Model / body,T680 / TKTR,Model / body,TRACTOR / TKTR
+Company / plate,820 / R200509,Company / plate,(blank) / (blank)
+
+Veh #,4115,Veh #,2628
+Year / make,2026 Volvo,Year / make,2004 UTILITY
+Model / body,TRAILER / T,Model / body,TKTR / T
+Company / plate,(blank) / (blank),Company / plate,823 / (blank)
+
+Veh #,2932,Veh #,3928
+Year / make,2000 WABASH,Year / make,2007 GREAT DANE
+Model / body,T / TRAILER,Model / body,VNL / TRAILER
+Company / plate,(blank) / R296494,Company / plate,(blank) / (blank)
+
+Veh #,6013,Veh #,5484
+Year / make,2014 Kenworth,Year / make,1998 Peterbilt
+Model / body,579 / TKTR,Model / body,T680 / TRAILER
+Company / plate,826 / (blank),Company / plate,(blank) / (blank)
+
+Veh #,2431,Veh #,8666
+Year / make,2017 Freightliner,Year / make,2020 Volvo
+Model / body,TRACTOR / TKTR,Model / body,TRAILER / TRACTOR
+Company / plate,(blank) / R795547,Company / plate,829 / (blank)
+
+Veh #,210,Veh #,7791
+Year / make,2022 UTILITY,Year / make,2004 WABASH
+Model / body,TKTR / T,Model / body,T / T
+Company / plate,(blank) / (blank),Company / plate,(blank) / (blank)
+
+Veh #,6677,Veh #,6152
+Year / make,2010 GREAT DANE,Year / make,2017 Kenworth
+Model / body,VNL / TRACTOR,Model / body,579 / T
+Company / plate,832 / R160360,Company / plate,(blank) / (blank)
+
+Fleet unit listing,,Page 28
+
+# Page 29
+
+FLEET UNIT LISTING
+Vehicle Schedule
+
+FLEET FILE 984A698
 
 Equipment and registration split view
 The unit number ties the equipment description to the registration block.
@@ -1444,51 +1922,114 @@ UNIT,COMPANY UNIT,PLATE
 
 Some registration fields are blank in the source export.
 
-Fleet unit listing                                                                               Page 29
+Fleet unit listing
+Page 29
 
-# Page 35
-
-Schedule Unit,Vehicle Details,Equipment,Company Listing,Registration
-8866,2022 GREAT DANE,"VNL, TKTR",Unit (blank),R749066
-5137,2007 Kenworth,"579, TKTR",Unit (blank),(blank)
-6120,2024 Peterbilt,"T680, TRAILER",Unit 862,(blank)
-3624,2005 Freightliner,"TRACTOR, TKTR",Unit (blank),(blank)
-6074,1998 Volvo,"TRAILER, TRACTOR",Unit (blank),R916058
-6966,2023 UTILITY,"TKTR, TRAILER",Unit 865,(blank)
-9686,2023 WABASH,"T, TRAILER",Unit (blank),(blank)
-6560,2002 GREAT DANE,"VNL, TRACTOR",Unit (blank),(blank)
-7190,2012 Kenworth,"579, TKTR",Unit 868,R167052
-9835,1997 Peterbilt,"T680, TRAILER",Unit (blank),(blank)
-1351,2006 Freightliner,"TRACTOR, TKTR",Unit (blank),(blank)
-2873,2008 Volvo,"TRAILER, TKTR",Unit 871,(blank)
-1398,2017 UTILITY,"TKTR, TRACTOR",Unit (blank),R677695
-
-# Page 36
-
-Schedule Unit,Year/Make,EQUIPMENT,COMPANY LISTING,REGISTRATION
-"Schedule unit 4785","1997 WABASH","T
-TRAILER","Unit (blank)","(blank)"
-"Schedule unit 2157","2019 GREAT DANE","VNL
-TKTR","Unit 874","(blank)"
-"Schedule unit 5132","2022 Kenworth","579
-T","Unit (blank)","(blank)"
-"Schedule unit 5329","2024 Peterbilt","T680
-TRAILER","Unit (blank)","R346166"
-"Schedule unit 3481","2000 Freightliner","TRACTOR
-TRACTOR","Unit 877","(blank)"
-"Schedule unit 6302","2014 Volvo","TRAILER
-T","Unit (blank)","(blank)"
-"Schedule unit 1214","2016 UTILITY","TKTR
-T","Unit (blank)","(blank)"
-
-# Page 37
+# Page 30
 
 FLEET UNIT LISTING
-FLEET FILE 984A698
-
 # Vehicle Schedule
 
-### Scheduled units - tabular export
+| FLEET FILE 984A698 |
+| :--- |
+
+## Fleet import exception format
+
+| Schedule unit 8866 | 2022 GREAT DANE |
+| :--- | :--- |
+| **EQUIPMENT**<br>VNL<br>TKTR | **COMPANY LISTING**<br>Unit (blank) | **REGISTRATION**<br>R749066 |
+
+| Schedule unit 5137 | 2007 Kenworth |
+| :--- | :--- |
+| **EQUIPMENT**<br>579<br>TKTR | **COMPANY LISTING**<br>Unit (blank) | **REGISTRATION**<br>(blank) |
+
+| Schedule unit 6120 | 2024 Peterbilt |
+| :--- | :--- |
+| **EQUIPMENT**<br>T680<br>TRAILER | **COMPANY LISTING**<br>Unit 862 | **REGISTRATION**<br>(blank) |
+
+| Schedule unit 3624 | 2005 Freightliner |
+| :--- | :--- |
+| **EQUIPMENT**<br>TRACTOR<br>TKTR | **COMPANY LISTING**<br>Unit (blank) | **REGISTRATION**<br>(blank) |
+
+| Schedule unit 6074 | 1998 Volvo |
+| :--- | :--- |
+| **EQUIPMENT**<br>TRAILER<br>TRACTOR | **COMPANY LISTING**<br>Unit (blank) | **REGISTRATION**<br>R916058 |
+
+| Schedule unit 6966 | 2023 UTILITY |
+| :--- | :--- |
+| **EQUIPMENT**<br>TKTR<br>TRAILER | **COMPANY LISTING**<br>Unit 865 | **REGISTRATION**<br>(blank) |
+
+| Schedule unit 9686 | 2023 WABASH |
+| :--- | :--- |
+| **EQUIPMENT**<br>T<br>TRAILER | **COMPANY LISTING**<br>Unit (blank) | **REGISTRATION**<br>(blank) |
+
+| Schedule unit 6560 | 2002 GREAT DANE |
+| :--- | :--- |
+| **EQUIPMENT**<br>VNL<br>TRACTOR | **COMPANY LISTING**<br>Unit (blank) | **REGISTRATION**<br>(blank) |
+
+| Schedule unit 7190 | 2012 Kenworth |
+| :--- | :--- |
+| **EQUIPMENT**<br>579<br>TKTR | **COMPANY LISTING**<br>Unit 868 | **REGISTRATION**<br>R167052 |
+
+| Schedule unit 9835 | 1997 Peterbilt |
+| :--- | :--- |
+| **EQUIPMENT**<br>T680<br>TRAILER | **COMPANY LISTING**<br>Unit (blank) | **REGISTRATION**<br>(blank) |
+
+| Fleet import exception reviewed by underwriting operations. |
+| :--- |
+
+| Schedule unit 1351 | 2006 Freightliner |
+| :--- | :--- |
+| **EQUIPMENT**<br>TRACTOR<br>TKTR | **COMPANY LISTING**<br>Unit (blank) | **REGISTRATION**<br>(blank) |
+
+| Schedule unit 2873 | 2008 Volvo |
+| :--- | :--- |
+| **EQUIPMENT**<br>TRAILER<br>TKTR | **COMPANY LISTING**<br>Unit 871 | **REGISTRATION**<br>(blank) |
+
+| Schedule unit 1398 | 2017 UTILITY |
+| :--- | :--- |
+| **EQUIPMENT**<br>TKTR<br>TRACTOR | **COMPANY LISTING**<br>Unit (blank) | **REGISTRATION**<br>R677695 |
+
+| Schedule unit 4785 | 1997 WABASH |
+| :--- | :--- |
+| **EQUIPMENT**<br>T<br>TRAILER | **COMPANY LISTING**<br>Unit (blank) | **REGISTRATION**<br>(blank) |
+
+| Schedule unit 2157 | 2019 GREAT DANE |
+| :--- | :--- |
+| **EQUIPMENT**<br>VNL<br>TKTR | **COMPANY LISTING**<br>Unit 874 | **REGISTRATION**<br>(blank) |
+
+| Schedule unit 5132 | 2022 Kenworth |
+| :--- | :--- |
+| **EQUIPMENT**<br>579<br>T | **COMPANY LISTING**<br>Unit (blank) | **REGISTRATION**<br>(blank) |
+
+| Schedule unit 5329 | 2024 Peterbilt |
+| :--- | :--- |
+| **EQUIPMENT**<br>T680<br>TRAILER | **COMPANY LISTING**<br>Unit (blank) | **REGISTRATION**<br>R346166 |
+
+| Schedule unit 3481 | 2000 Freightliner |
+| :--- | :--- |
+| **EQUIPMENT**<br>TRACTOR<br>TRACTOR | **COMPANY LISTING**<br>Unit 877 | **REGISTRATION**<br>(blank) |
+
+| Schedule unit 6302 | 2014 Volvo |
+| :--- | :--- |
+| **EQUIPMENT**<br>TRAILER<br>T | **COMPANY LISTING**<br>Unit (blank) | **REGISTRATION**<br>(blank) |
+
+| Schedule unit 1214 | 2016 UTILITY |
+| :--- | :--- |
+| **EQUIPMENT**<br>TKTR<br>T | **COMPANY LISTING**<br>Unit (blank) | **REGISTRATION**<br>(blank) |
+
+Fleet unit listing
+
+Page 30
+
+# Page 31
+
+FLEET UNIT LISTING
+Vehicle Schedule
+
+FLEET FILE 984A698
+
+Scheduled units - tabular export
 
 SCHEDULE UNIT,PLATE,BODY,YEAR,MANUFACTURER,MODEL,COMPANY UNIT
 6333,R915126,TRACTOR,2014,WABASH,T,880
@@ -1499,7 +2040,7 @@ SCHEDULE UNIT,PLATE,BODY,YEAR,MANUFACTURER,MODEL,COMPANY UNIT
 7141,,TKTR,2016,Volvo,TRAILER,
 7456,,TRACTOR,2008,UTILITY,TKTR,886
 8999,,TKTR,2005,WABASH,T,
-Registration import note retained for audit review.,,,,,,
+Registration import note retained for audit review.
 5321,R212180,TRACTOR,2024,GREAT DANE,VNL,
 4998,,T,2009,Kenworth,579,889
 3491,,TRAILER,2021,Peterbilt,T680,
@@ -1511,7 +2052,7 @@ Registration import note retained for audit review.,,,,,,
 47,R686042,TRAILER,2011,Kenworth,579,
 3357,,TRACTOR,1999,Peterbilt,T680,
 735,,TRAILER,2000,Freightliner,TRACTOR,898
-Registration import note retained for audit review.,,,,,,
+Registration import note retained for audit review.
 1410,,T,2000,Volvo,TRAILER,
 
 Fleet unit listing

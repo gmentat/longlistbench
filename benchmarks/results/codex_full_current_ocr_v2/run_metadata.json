@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-13T18:22:16.356049+00:00",
+  "generated_at": "2026-07-13T18:26:27.375945+00:00",
   "runner": "run_codex_cli_evaluation.py",
-  "model_key": "codex_gpt56_sol",
-  "requested_model": "gpt-5.6-sol",
+  "model_key": "codex_gpt55",
+  "requested_model": "gpt-5.5",
   "effort": "xhigh",
   "transcript": "ocr",
   "cli_version_observed_at_metadata_write": "codex-cli 0.144.1",

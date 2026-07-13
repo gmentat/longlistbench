@@ -16,10 +16,10 @@
     "html": "html/vehicle_schedule_sparse_001.html",
     "metadata": "metadata/vehicle_schedule_sparse_001.json",
     "json_size_bytes": 146971,
-    "pdf_size_bytes": 442739,
-    "html_size_bytes": 171500,
+    "pdf_size_bytes": 394390,
+    "html_size_bytes": 171817,
     "ocr_md": "transcripts/ocr_gemini/vehicle_schedule_sparse_001.md",
-    "ocr_size_bytes": 68892
+    "ocr_size_bytes": 91864
   },
   "transcripts_available": [
     "ocr"
@@ -40,19 +40,20 @@
     "split_records",
     "non_target_rows"
   ],
-  "pages_estimate": 37,
-  "pdf_page_count": 37,
+  "pages_estimate": 31,
+  "pdf_page_count": 31,
   "dataset_version": "2.0.0",
   "hf_config": "core_operations",
   "document_count": 1,
   "evidence_pattern": "single_document",
-  "pdf_size_bytes": 442739,
-  "html_size_bytes": 171500,
+  "pdf_size_bytes": 394390,
+  "html_size_bytes": 171817,
   "layout_revision": {
-    "date": "2026-06-28T14:34:58.086757+00:00",
-    "purpose": "reduce deterministic parser friendliness with production-like layout variation",
+    "date": "2026-07-13T17:41:10.075398+00:00",
+    "purpose": "eliminate headerless table continuations while preserving production-like layout variation",
     "ocr_status": "regenerated_from_current_pdf",
-    "ocr_regenerated_at": "2026-06-28T21:44:24.950682+00:00"
+    "ocr_regenerated_at": "2026-07-13T18:04:41.001836+00:00"
   },
-  "ocr_md_size_bytes": 68892
+  "ocr_md_size_bytes": 91864,
+  "json_size_bytes": 146971
 }

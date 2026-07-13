@@ -52,11 +52,11 @@ Representative pages for visual audit:
 | `duplicates` | `loss_run_external_001`, pages 1-2; `multihop_bop_012_001`, page 142 | No-claim/summary rows and archived prior-term distractors. |
 | `large_doc` | `ifta_mileage_by_vehicle_008`, whole PDF; `mixed_cgl_040_001`, whole PDF | 218-page operations packet and 316-page policy packet. |
 | `multiple_tables` | `ifta_tax_inquiry_001`, page 1; `loss_run_external_001`, pages 1-2 | Target tables mixed with support, empty, and summary tables. |
-| `multi_column` | `mixed_cgl_040_001`, pages 139-150; `multihop_wc_025_001`, pages 95-106 | Two-column material-provision pages. |
+| `multi_column` | `mixed_cgl_040_001`, pages 158-181; `multihop_wc_025_001`, pages 110-129 | Two-column material-provision pages. |
 | `merged_cells` | `loss_run_external_001`, page 1; `ifta_tax_inquiry_001`, page 1 | Section-spanning and wide description/status cells. |
 | `ocr_condition` | Any PDF plus `data/transcripts/ocr_gemini/{sample_id}.md` | Released text condition is OCR from rendered page images. |
 | `long_range_evidence` | `multihop_012_001_crosspage`, pages 4, 36, 56, 57, 76; `mixed_040_001_crosspage`, pages 4, 86, 143, 144, 186 | Claim rows joined to distant driver, policy, cause-code, claimant, and ledger sections. |
-| `heterogeneous_record_list` | `multihop_bop_012_001`, pages 26, 48, 94, 127, 142; `mixed_cgl_040_001`, pages 66-73 and 139-150 | One extraction list mixes multiple policy record schemas. |
+| `heterogeneous_record_list` | `multihop_bop_012_001`, pages 2-13 and 79-94; `mixed_cgl_040_001`, pages 2-22 and 158-181 | One extraction list mixes multiple policy record schemas. |
 
 ## Setup
 
@@ -88,6 +88,7 @@ cp .env.example .env
 Common variables:
 
 ```bash
+GOOGLE_GENAI_USE_VERTEXAI=true
 VERTEX_AI_API_KEY=your-gemini-or-vertex-api-key
 GEMINI_API_KEY=your-gemini-api-key
 OPENAI_API_KEY=your-openai-api-key
@@ -128,10 +129,13 @@ python benchmarks/build_instance_index.py --input data
 
 ## OCR
 
-Process all PDFs with Gemini OCR:
+Process all PDFs with Gemini OCR through the direct Vertex API route configured above:
 
 ```bash
-python benchmarks/ocr_claims_pdfs.py --model gemini-3.5-flash --force
+python benchmarks/ocr_claims_pdfs.py \
+  --ocr-engine gemini \
+  --model gemini-3.5-flash \
+  --force
 ```
 
 The script writes transcripts under `data/transcripts/ocr_gemini/{sample_id}.md`, updates manifest transcript availability, and skips existing OCR files unless `--force` is provided. After any PDF replacement, rerun OCR; transcripts from older PDFs are not reusable.
@@ -197,9 +201,9 @@ For generic records, the current runners derive sample-specific field names and 
 
 Saved reports under `benchmarks/results/` may refer to earlier corpus versions. Do not cite them as current-layout baselines unless their report provenance records the current `data/manifest.json` hash.
 
-The current full-corpus results use the same repository-denied OCR protocol. GPT-5.6-Sol recovers 89.0% of target records exactly and completes 13/36 documents; Fable 5 recovers 90.6% exactly and completes 15/36. On the 21 structural-challenge documents, exact-record recall is 66.4% and 71.2%; on the 15 scale tests it is 99.7% and 99.8%. Field micro-F1 remains a partial-credit diagnostic at 97.3% and 98.9%. Both runs cover 33,450 targets with zero execution errors. The earlier GPT-5.5 and Opus 4.8 runs remain available for comparison.
+The current full-corpus results use the same repository-denied OCR protocol. GPT-5.6-Sol recovers 89.9% of target records exactly and completes 14/36 documents; Fable 5 recovers 90.7% exactly and completes 15/36. On the 21 structural-challenge documents, exact-record recall is 69.0% and 71.5%; on the 15 scale tests it is 99.7% and 99.8%. Field micro-F1 remains a partial-credit diagnostic at 97.8% and 98.9%. Both runs cover 33,450 targets with zero execution errors. The earlier GPT-5.5 and Opus 4.8 configurations remain available for comparison.
 
-The strongest shared exact-record gaps are sparse driver/MVR enrichment (1.9% for both) and split return schedules (58.5% and 64.6%). Heterogeneous policy records score 78.7% and 92.5%, while long-range claim joins and multisection return joins are effectively solved by both. A tagged stressor therefore need not reduce every agent's accuracy. The scorer canonicalizes case, whitespace, dates, decimals, accounting negatives, and documented domain-label equivalents. Treat single-sample probe folders as older diagnostics unless rerun against the current manifest.
+The strongest shared exact-record gaps are sparse driver/MVR enrichment (1.9% for both) and split return schedules (58.5% and 64.6%). Heterogeneous policy records score 99.4% and 96.8%, while long-range claim joins and multisection return joins are effectively solved by both. A tagged stressor therefore need not reduce every agent's accuracy. The scorer canonicalizes case, whitespace, dates, decimals, accounting negatives, and documented domain-label equivalents. Treat single-sample probe folders as older diagnostics unless rerun against the current manifest.
 
 ## Hugging Face Export
 

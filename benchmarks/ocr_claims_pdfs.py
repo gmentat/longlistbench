@@ -621,8 +621,46 @@ def _available_transcripts(dataset_dir: Path, sample_id: str) -> list[str]:
     return transcripts
 
 
-def refresh_organized_manifest_transcripts(dataset_dir: Path) -> None:
-    """Update transcript availability after OCR writes organized-layout files."""
+def _refresh_artifact_sizes(payload: dict[str, Any], dataset_dir: Path, sample_id: str) -> None:
+    paths = {
+        "pdf": artifact_path(dataset_dir, sample_id, "pdf"),
+        "html": artifact_path(dataset_dir, sample_id, "html"),
+        "json": artifact_path(dataset_dir, sample_id, "ground_truth"),
+        "ocr": artifact_path(dataset_dir, sample_id, "ocr"),
+    }
+    sizes = {
+        name: path.stat().st_size if path.exists() else None
+        for name, path in paths.items()
+    }
+
+    payload["pdf_size_bytes"] = sizes["pdf"]
+    payload["html_size_bytes"] = sizes["html"]
+    payload["json_size_bytes"] = sizes["json"]
+    payload["ocr_md_size_bytes"] = sizes["ocr"]
+
+    files = payload.get("files")
+    if isinstance(files, dict):
+        files["pdf_size_bytes"] = sizes["pdf"]
+        files["html_size_bytes"] = sizes["html"]
+        files["json_size_bytes"] = sizes["json"]
+        files["ocr_size_bytes"] = sizes["ocr"]
+        if "ocr_md_size_bytes" in files:
+            files["ocr_md_size_bytes"] = sizes["ocr"]
+
+
+def _mark_ocr_regenerated(payload: dict[str, Any], regenerated_at: str) -> None:
+    revision = payload.get("layout_revision")
+    if not isinstance(revision, dict):
+        return
+    revision["ocr_status"] = "regenerated_from_current_pdf"
+    revision["ocr_regenerated_at"] = regenerated_at
+
+
+def refresh_organized_manifest_transcripts(
+    dataset_dir: Path,
+    regenerated_sample_ids: set[str] | None = None,
+) -> None:
+    """Refresh transcript availability, artifact sizes, and OCR provenance."""
     if not is_organized_dataset(dataset_dir):
         return
 
@@ -635,18 +673,27 @@ def refresh_organized_manifest_transcripts(dataset_dir: Path) -> None:
     except Exception:
         return
 
+    regenerated_sample_ids = regenerated_sample_ids or set()
+    regenerated_at = datetime.now(timezone.utc).isoformat()
+
     for instance in manifest.get("instances", []):
         sample_id = instance.get("id")
         if not sample_id:
             continue
         transcripts = _available_transcripts(dataset_dir, sample_id)
         instance["transcripts_available"] = transcripts
+        _refresh_artifact_sizes(instance, dataset_dir, sample_id)
+        if sample_id in regenerated_sample_ids:
+            _mark_ocr_regenerated(instance, regenerated_at)
 
         sample_metadata_path = artifact_path(dataset_dir, sample_id, "metadata")
         if sample_metadata_path.exists():
             try:
                 sample_metadata = json.loads(sample_metadata_path.read_text(encoding="utf-8"))
                 sample_metadata["transcripts_available"] = transcripts
+                _refresh_artifact_sizes(sample_metadata, dataset_dir, sample_id)
+                if sample_id in regenerated_sample_ids:
+                    _mark_ocr_regenerated(sample_metadata, regenerated_at)
                 sample_metadata_path.write_text(
                     json.dumps(sample_metadata, indent=2, ensure_ascii=False) + "\n",
                     encoding="utf-8",
@@ -819,6 +866,7 @@ async def main_async() -> None:
     # Process each PDF
     success_count = 0
     fail_count = 0
+    regenerated_sample_ids: set[str] = set()
     
     for i, pdf_path in enumerate(pdf_files, 1):
         output_path = ocr_output_path(claims_dir, pdf_path, args.output_suffix)
@@ -851,6 +899,7 @@ async def main_async() -> None:
         if success:
             print(f"  ✓ Saved to: {output_path.name}")
             success_count += 1
+            regenerated_sample_ids.add(pdf_path.stem)
         else:
             print(f"  ✗ Failed to process")
             fail_count += 1
@@ -862,7 +911,7 @@ async def main_async() -> None:
     print(f"Processing complete!")
     print(f"  Success: {success_count}/{len(pdf_files)}")
     print(f"  Failed:  {fail_count}/{len(pdf_files)}")
-    refresh_organized_manifest_transcripts(claims_dir)
+    refresh_organized_manifest_transcripts(claims_dir, regenerated_sample_ids)
     print(f"\nRun validate_ocr_vs_golden.py to check coverage.")
 
 

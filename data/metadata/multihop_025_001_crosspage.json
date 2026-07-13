@@ -142,5 +142,8 @@
     "purpose": "reduce deterministic parser friendliness with production-like layout variation",
     "ocr_status": "regenerated_from_current_pdf",
     "ocr_regenerated_at": "2026-06-29T10:05:17+00:00"
-  }
+  },
+  "pdf_size_bytes": 1335078,
+  "html_size_bytes": 515445,
+  "json_size_bytes": 32067
 }

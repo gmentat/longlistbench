@@ -5,7 +5,7 @@ This directory contains the saved predictions and recomputable report for the Lo
 ## Protocol
 
 - Input: one released Gemini OCR transcript per run.
-- Extractor: Codex CLI invoking `gpt-5.5` with `model_reasoning_effort="xhigh"` on July 1, 2026.
+- Extractor: Codex CLI invoking `gpt-5.5` with `model_reasoning_effort="xhigh"`. The original run was July 1, 2026; seven regenerated inputs were rerun on July 13 with Codex CLI 0.144.1.
 - Isolation: each run used a temporary document workspace, and a macOS sandbox denied the benchmark repository. The prompt prohibited other host files. This was repository isolation, not a host-wide filesystem allowlist. Ground truth, target values and counts, and generator code were not copied into the workspace.
 - Contract: claim runs received the published claim schema. Generic-record runs received the public output shape plus the sample-specific field names and record groups derived from the ground-truth schema structure. They did not receive field values.
 - Tools: the agent could inspect the transcript, write temporary parsing code, validate its output, and save JSON.
@@ -17,7 +17,7 @@ The report records the current evaluator and manifest provenance. The prediction
 
 | Documents | Target records | Errors | Exact-record recall | Complete documents | Field micro-F1 |
 |---:|---:|---:|---:|---:|---:|
-| 36 | 33,450 | 0 | 89.5% | 12/36 (33.3%) | 98.7% |
+| 36 | 33,450 | 0 | 89.7% | 12/36 (33.3%) | 98.8% |
 
 Exact-record recall requires every normalized target field to match. Complete-document success requires an identical record multiset with no missing or extra records; source order is not scored.
 

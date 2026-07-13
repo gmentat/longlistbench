@@ -51,5 +51,8 @@
   "num_claims": 300,
   "document_count": 1,
   "evidence_pattern": "single_document",
-  "ocr_md_size_bytes": 129750
+  "ocr_md_size_bytes": 129750,
+  "pdf_size_bytes": 581787,
+  "html_size_bytes": 297170,
+  "json_size_bytes": 161836
 }

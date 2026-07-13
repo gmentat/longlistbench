@@ -5,7 +5,7 @@ This directory contains the saved predictions and recomputable report for the Lo
 ## Protocol
 
 - Input: one released Gemini OCR transcript per run.
-- Extractor: Claude Code CLI invoking `claude-opus-4-8` with `--effort xhigh` on July 12, 2026. `run_metadata.json` records the CLI version observed when metadata was finalized; it is not asserted as a per-call version.
+- Extractor: Claude Code CLI invoking `claude-opus-4-8` with `--effort xhigh`. The initial run was produced on July 12, 2026; seven documents changed by the policy-table correction were rerun on July 13 while the other 29 predictions were retained. `run_metadata.json` records the CLI version observed when metadata was finalized; it is not asserted as a per-call version.
 - Authentication: Claude Max subscription. The CLI's per-run dollar values are API-equivalent estimates, not billed API cost.
 - Isolation: each run used a temporary document workspace, and a macOS sandbox denied the benchmark repository. The prompt prohibited other host files. This was repository isolation, not a host-wide filesystem allowlist. Ground truth, target values and counts, and generator code were not copied into the workspace. Claude Code safe mode disabled project instructions, skills, plugins, hooks, and MCP servers.
 - Contract: claim runs received the published claim schema. Generic-record runs received the public output shape plus sample-specific field names and record groups derived from the ground-truth schema structure. They did not receive field values.
@@ -18,7 +18,7 @@ The runner verified that every extraction call reported `claude-opus-4-8`. Claud
 
 | Documents | Target records | Errors | Exact-record recall | Complete documents | Field micro-F1 |
 |---:|---:|---:|---:|---:|---:|
-| 36 | 33,450 | 0 | 86.9% | 13/36 (36.1%) | 98.6% |
+| 36 | 33,450 | 0 | 85.8% | 11/36 (30.6%) | 98.7% |
 
 Exact-record recall requires every normalized target field to match. Complete-document success requires an identical record multiset with no missing or extra records; source order is not scored.
 

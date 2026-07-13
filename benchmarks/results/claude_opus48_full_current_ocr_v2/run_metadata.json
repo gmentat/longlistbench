@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-12T15:17:31.000767+00:00",
+  "generated_at": "2026-07-13T19:00:18.111428+00:00",
   "runner": "run_claude_cli_evaluation.py",
   "model_key": "claude_opus48",
   "requested_model": "claude-opus-4-8",
@@ -226,75 +226,91 @@
     },
     "multihop_bop_012_001": {
       "requested_model": "claude-opus-4-8",
+      "matching_inference_models": [
+        "claude-opus-4-8"
+      ],
       "observed_models": [
         "claude-haiku-4-5-20251001",
         "claude-opus-4-8"
       ],
       "effort": "xhigh",
-      "duration_seconds": 1120.077,
+      "duration_seconds": 1285.628,
       "tokens": {
-        "requests": 35,
-        "input_tokens": 3747583,
-        "cached_input_tokens": 3568420,
-        "cache_creation_input_tokens": 178383,
-        "output_tokens": 90354,
-        "total_tokens": 3837937
+        "requests": 39,
+        "input_tokens": 4582991,
+        "cached_input_tokens": 4382310,
+        "cache_creation_input_tokens": 199893,
+        "output_tokens": 85760,
+        "total_tokens": 4668751
       },
-      "estimated_api_cost_usd": 5.15867375
+      "estimated_api_cost_usd": 5.585246250000001,
+      "claude_cli_version": "2.1.207 (Claude Code)"
     },
     "multihop_wc_025_001": {
       "requested_model": "claude-opus-4-8",
+      "matching_inference_models": [
+        "claude-opus-4-8"
+      ],
       "observed_models": [
         "claude-haiku-4-5-20251001",
         "claude-opus-4-8"
       ],
       "effort": "xhigh",
-      "duration_seconds": 919.653,
+      "duration_seconds": 829.501,
       "tokens": {
-        "requests": 39,
-        "input_tokens": 4485418,
-        "cached_input_tokens": 4208164,
-        "cache_creation_input_tokens": 276466,
-        "output_tokens": 72982,
-        "total_tokens": 4558400
+        "requests": 30,
+        "input_tokens": 3182607,
+        "cached_input_tokens": 3007673,
+        "cache_creation_input_tokens": 174164,
+        "output_tokens": 61680,
+        "total_tokens": 3244287
       },
-      "estimated_api_cost_usd": 5.6573045
+      "estimated_api_cost_usd": 4.135031499999999,
+      "claude_cli_version": "2.1.207 (Claude Code)"
     },
     "ifta_tax_inquiry_001": {
       "requested_model": "claude-opus-4-8",
+      "matching_inference_models": [
+        "claude-opus-4-8"
+      ],
       "observed_models": [
         "claude-haiku-4-5-20251001",
         "claude-opus-4-8"
       ],
       "effort": "xhigh",
-      "duration_seconds": 512.465,
+      "duration_seconds": 245.609,
       "tokens": {
-        "requests": 12,
-        "input_tokens": 608165,
-        "cached_input_tokens": 538403,
-        "cache_creation_input_tokens": 69026,
-        "output_tokens": 41396,
-        "total_tokens": 649561
+        "requests": 11,
+        "input_tokens": 446848,
+        "cached_input_tokens": 395058,
+        "cache_creation_input_tokens": 51056,
+        "output_tokens": 18586,
+        "total_tokens": 465434
       },
-      "estimated_api_cost_usd": 1.7360539999999998
+      "estimated_api_cost_usd": 0.981769,
+      "claude_cli_version": "2.1.207 (Claude Code)"
     },
     "ifta_tax_inquiry_002": {
       "requested_model": "claude-opus-4-8",
+      "matching_inference_models": [
+        "claude-opus-4-8"
+      ],
       "observed_models": [
         "claude-haiku-4-5-20251001",
         "claude-opus-4-8"
       ],
       "effort": "xhigh",
-      "duration_seconds": 375.925,
+      "duration_seconds": 264.236,
       "tokens": {
-        "requests": 12,
-        "input_tokens": 574297,
-        "cached_input_tokens": 511877,
-        "cache_creation_input_tokens": 60452,
-        "output_tokens": 29977,
-        "total_tokens": 604274
+        "requests": 10,
+        "input_tokens": 399980,
+        "cached_input_tokens": 345353,
+        "cache_creation_input_tokens": 53895,
+        "output_tokens": 21197,
+        "total_tokens": 421177
       },
-      "estimated_api_cost_usd": 1.3898485
+      "estimated_api_cost_usd": 1.03992525,
+      "claude_cli_version": "2.1.207 (Claude Code)"
     },
     "ifta_tax_summary_001": {
       "requested_model": "claude-opus-4-8",
@@ -334,21 +350,25 @@
     },
     "mixed_cgl_040_001": {
       "requested_model": "claude-opus-4-8",
+      "matching_inference_models": [
+        "claude-opus-4-8"
+      ],
       "observed_models": [
         "claude-haiku-4-5-20251001",
         "claude-opus-4-8"
       ],
       "effort": "xhigh",
-      "duration_seconds": 1710.446,
+      "duration_seconds": 2007.011,
       "tokens": {
-        "requests": 46,
-        "input_tokens": 7131276,
-        "cached_input_tokens": 6878571,
-        "cache_creation_input_tokens": 251903,
-        "output_tokens": 130372,
-        "total_tokens": 7261648
+        "requests": 51,
+        "input_tokens": 6764231,
+        "cached_input_tokens": 6353832,
+        "cache_creation_input_tokens": 409585,
+        "output_tokens": 116063,
+        "total_tokens": 6880294
       },
-      "estimated_api_cost_usd": 8.273829250000002
+      "estimated_api_cost_usd": 8.639267250000001,
+      "claude_cli_version": "2.1.207 (Claude Code)"
     },
     "ifta_tax_summary_002": {
       "requested_model": "claude-opus-4-8",
@@ -388,39 +408,47 @@
     },
     "vehicle_schedule_sparse_001": {
       "requested_model": "claude-opus-4-8",
+      "matching_inference_models": [
+        "claude-opus-4-8"
+      ],
       "observed_models": [
         "claude-haiku-4-5-20251001",
         "claude-opus-4-8"
       ],
       "effort": "xhigh",
-      "duration_seconds": 431.279,
+      "duration_seconds": 512.924,
       "tokens": {
-        "requests": 10,
-        "input_tokens": 541564,
-        "cached_input_tokens": 423214,
-        "cache_creation_input_tokens": 117466,
-        "output_tokens": 34707,
-        "total_tokens": 576271
+        "requests": 12,
+        "input_tokens": 831642,
+        "cached_input_tokens": 684672,
+        "cache_creation_input_tokens": 146234,
+        "output_tokens": 41744,
+        "total_tokens": 873386
       },
-      "estimated_api_cost_usd": 1.8146844999999996
+      "estimated_api_cost_usd": 2.3003985,
+      "claude_cli_version": "2.1.207 (Claude Code)"
     },
     "vehicle_schedule_sparse_002": {
       "requested_model": "claude-opus-4-8",
+      "matching_inference_models": [
+        "claude-opus-4-8"
+      ],
       "observed_models": [
         "claude-haiku-4-5-20251001",
         "claude-opus-4-8"
       ],
       "effort": "xhigh",
-      "duration_seconds": 473.115,
+      "duration_seconds": 895.553,
       "tokens": {
-        "requests": 11,
-        "input_tokens": 616102,
-        "cached_input_tokens": 498275,
-        "cache_creation_input_tokens": 116941,
-        "output_tokens": 37941,
-        "total_tokens": 654043
+        "requests": 19,
+        "input_tokens": 1833850,
+        "cached_input_tokens": 1644853,
+        "cache_creation_input_tokens": 188247,
+        "output_tokens": 69369,
+        "total_tokens": 1903219
       },
-      "estimated_api_cost_usd": 1.92979375
+      "estimated_api_cost_usd": 3.7337652499999994,
+      "claude_cli_version": "2.1.207 (Claude Code)"
     },
     "ifta_return_schedule_003": {
       "requested_model": "claude-opus-4-8",

@@ -24,7 +24,9 @@ cp .env.example .env
 open data/index.html
 
 # Run OCR/evaluation only when regenerating transcripts or baselines
-python benchmarks/ocr_claims_pdfs.py --model gemini-3.5-flash
+python benchmarks/ocr_claims_pdfs.py \
+  --ocr-engine gemini \
+  --model gemini-3.5-flash
 ```
 
 ## Reproducibility
@@ -167,14 +169,14 @@ The PDFs do not print these labels, but the stressors are visible in the documen
 | `duplicates` | `loss_run_external_001`, pages 1-2; `multihop_bop_012_001`, page 142 | Summary/no-claim rows and archived/prior-term sections create near-duplicate distractors. |
 | `large_doc` | `ifta_mileage_by_vehicle_008`, whole PDF; `mixed_cgl_040_001`, whole PDF | Long files with 218 and 316 pages respectively, including thousands of operation rows or many policy records. |
 | `multiple_tables` | `ifta_tax_inquiry_001`, page 1; `loss_run_external_001`, pages 1-2 | Target tables appear alongside support tables, empty tables, summaries, and section totals. |
-| `multi_column` | `mixed_cgl_040_001`, pages 139-150; `multihop_wc_025_001`, pages 95-106 | Material policy provisions are laid out in two-column policy-form pages. |
+| `multi_column` | `mixed_cgl_040_001`, pages 158-181; `multihop_wc_025_001`, pages 110-129 | Material policy provisions are laid out in two-column policy-form pages. |
 | `merged_cells` | `loss_run_external_001`, page 1; `ifta_tax_inquiry_001`, page 1 | Section-spanning rows and wide description/status cells interrupt the tabular structure. |
 | `ocr_condition` | Any PDF with `data/transcripts/ocr_gemini/{sample_id}.md`, for example `loss_run_external_001`, page 1 | The released text input is OCR output from rendered page images, not the HTML text layer. |
 | `ocr_layout_condition` | `ifta_multisection_return_001`, pages 2 and 4 | OCR preserves the visual Schedule A table and dense Jurisdictions tax-detail table instead of a clean row table. |
 | `long_range_evidence` | `multihop_012_001_crosspage`, pages 4, 36, 56, 57, 76; `mixed_040_001_crosspage`, pages 4, 86, 143, 144, 186 | A front claim row must be joined to driver, policy, cause-code, claimant, and ledger sections far apart in one PDF. |
 | `cross_section_join` | `ifta_multisection_return_001`, pages 1, 2, 4 | Each jurisdiction row combines return header context, Schedule A mileage/gallon values, and Jurisdictions tax-detail values while ignoring adjustment/support rows. |
 | `repeated_keys` | `ifta_multisection_return_001`, pages 2, 4, 8, 10 | The same jurisdiction codes recur across returns and sections, so state code alone is not a unique row key. |
-| `heterogeneous_record_list` | `multihop_bop_012_001`, pages 26, 48, 94, 127, 142; `mixed_cgl_040_001`, pages 66-73 and 139-150 | One output list mixes locations/classifications, coverage items, forms, endorsements, premiums, and clause records. |
+| `heterogeneous_record_list` | `multihop_bop_012_001`, pages 2-13 and 79-94; `mixed_cgl_040_001`, pages 2-22 and 158-181 | One output list mixes locations/classifications, coverage items, forms, endorsements, premiums, and clause records. |
 
 ### Multi-Hop Extensions
 
@@ -207,8 +209,8 @@ OCR support should be interpreted at the affected-record and field level, not on
 
 | Sample | Pages | Target policy records |
 |--------|-------|-----------------------|
-| `multihop_bop_012_001` | 142 | 360 |
-| `multihop_wc_025_001` | 194 | 510 |
+| `multihop_bop_012_001` | 158 | 360 |
+| `multihop_wc_025_001` | 220 | 510 |
 | `mixed_cgl_040_001` | 316 | 619 |
 
 ## Saved Evaluation Artifacts
@@ -219,10 +221,10 @@ The release includes four full-corpus repository-denied coding-agent runs under 
 
 | Agent | Documents | Target records | Errors | Exact-record recall | Complete documents | Field micro-F1 |
 |---|---:|---:|---:|---:|---:|---:|
-| Codex CLI `gpt-5.6-sol`, xhigh | 36 | 33,450 | 0 | 89.0% | 13/36 (36.1%) | 97.3% |
-| Claude Code `claude-fable-5`, xhigh | 36 | 33,450 | 0 | 90.6% | 15/36 (41.7%) | 98.9% |
-| Codex CLI `gpt-5.5`, xhigh | 36 | 33,450 | 0 | 89.5% | 12/36 (33.3%) | 98.7% |
-| Claude Code `claude-opus-4-8`, xhigh | 36 | 33,450 | 0 | 86.9% | 13/36 (36.1%) | 98.6% |
+| Codex CLI `gpt-5.6-sol`, xhigh | 36 | 33,450 | 0 | 89.9% | 14/36 (38.9%) | 97.8% |
+| Claude Code `claude-fable-5`, xhigh | 36 | 33,450 | 0 | 90.7% | 15/36 (41.7%) | 98.9% |
+| Codex CLI `gpt-5.5`, xhigh | 36 | 33,450 | 0 | 89.7% | 12/36 (33.3%) | 98.8% |
+| Claude Code `claude-opus-4-8`, xhigh | 36 | 33,450 | 0 | 85.8% | 11/36 (30.6%) | 98.7% |
 
 The latest saved results are under `benchmarks/results/codex_gpt56_sol_full_current_ocr_v2/` and `benchmarks/results/claude_fable5_full_current_ocr_v2/`; the GPT-5.5 and Opus 4.8 comparison runs remain available beside them.
 
@@ -232,8 +234,8 @@ The evaluator uses a fixed document-family mapping for scale-test and structural
 
 | Evaluation role | Documents | Target records | GPT-5.6-Sol exact | Fable 5 exact | GPT-5.6-Sol complete | Fable 5 complete |
 |---|---:|---:|---:|---:|---:|---:|
-| Structural challenges | 21 | 10,745 | 66.4% | 71.2% | 4/21 (19.0%) | 4/21 (19.0%) |
-| Scale tests | 15 | 22,705 | 99.7% | 99.8% | 9/15 (60.0%) | 11/15 (73.3%) |
+| Structural challenges | 21 | 10,745 | 69.0% | 71.5% | 6/21 (28.6%) | 6/21 (28.6%) |
+| Scale tests | 15 | 22,705 | 99.7% | 99.8% | 8/15 (53.3%) | 9/15 (60.0%) |
 
 Strict exact-record recall for the latest models, labeled by the extraction problem each family emphasizes:
 
@@ -243,13 +245,13 @@ Strict exact-record recall for the latest models, labeled by the extraction prob
 | Long-range claim joins | 3 | 77 | 100.0% | 100.0% |
 | Split return schedules | 5 | 4,923 | 58.5% | 64.6% |
 | Mixed row/detail loss runs | 3 | 900 | 98.6% | 99.2% |
-| Tax inquiry detail tables | 2 | 1,300 | 99.8% | 99.8% |
-| Heterogeneous policy records | 3 | 1,489 | 78.7% | 92.5% |
+| Tax inquiry detail tables | 2 | 1,300 | 98.1% | 98.1% |
+| Heterogeneous policy records | 3 | 1,489 | 99.4% | 96.8% |
 | Cross-section return joins | 2 | 796 | 99.9% | 99.9% |
 | Tax-summary scale tests | 4 | 3,040 | 99.9% | 99.9% |
 | Driver-schedule scale test | 1 | 500 | 99.4% | 99.4% |
 | Mileage-by-vehicle scale tests | 8 | 17,565 | 99.7% | 99.8% |
-| Vehicle-schedule scale tests | 2 | 1,600 | 99.6% | 100.0% |
+| Vehicle-schedule scale tests | 2 | 1,600 | 99.8% | 99.9% |
 
 Full-context one-shot prompting is not treated as a full-corpus protocol for this release. It is useful as a lower-bound stress test, but the largest documents can hit model output limits or latency timeouts before returning a scoreable complete list.
 

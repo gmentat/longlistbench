@@ -18,7 +18,7 @@ The 36 local execution logs reported `gpt-5.6-sol` with xhigh reasoning. Logs ar
 
 | Documents | Target records | Errors | Exact-record recall | Complete documents | Field micro-F1 | Field macro-F1 |
 |---:|---:|---:|---:|---:|---:|---:|
-| 36 | 33,450 | 0 | 89.0% | 13/36 (36.1%) | 97.3% | 96.6% |
+| 36 | 33,450 | 0 | 89.9% | 14/36 (38.9%) | 97.8% | 97.8% |
 
 Exact-record recall requires every normalized target field to match. Complete-document success requires an identical record multiset with no missing or extra records; source order is not scored.
 

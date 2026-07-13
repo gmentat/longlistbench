@@ -241,6 +241,8 @@ class HuggingFaceExportTests(unittest.TestCase):
         self.assertIn("GPT-5.5 exact records | Opus 4.8 exact records", card)
         self.assertIn("Structural challenges", card)
         self.assertIn("saved predictions and reports", card)
+        self.assertIn("Gemini 3.5 Flash", card)
+        self.assertIn("direct Vertex AI API", card)
 
     def test_default_release_baselines_include_all_four_agent_runs(self):
         self.assertEqual(len(export_hf_dataset.DEFAULT_BASELINE_REPORTS), 4)

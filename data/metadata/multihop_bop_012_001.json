@@ -193,22 +193,23 @@
     "html": "html/multihop_bop_012_001.html",
     "ocr_md": "transcripts/ocr_gemini/multihop_bop_012_001.md",
     "json_size_bytes": 239867,
-    "pdf_size_bytes": 820073,
-    "html_size_bytes": 582894,
-    "ocr_size_bytes": 402001,
+    "pdf_size_bytes": 823575,
+    "html_size_bytes": 595940,
+    "ocr_size_bytes": 482436,
     "metadata": "metadata/multihop_bop_012_001.json"
   },
   "transcripts_available": [
     "ocr"
   ],
   "template": "policy_multihop_bop",
-  "pdf_size_bytes": 820073,
-  "html_size_bytes": 582894,
+  "pdf_size_bytes": 823575,
+  "html_size_bytes": 595940,
   "layout_revision": {
-    "date": "2026-06-28T09:38:53.785980+00:00",
-    "purpose": "reduce deterministic parser friendliness with production-like layout variation",
+    "date": "2026-07-13T17:41:11.467986+00:00",
+    "purpose": "replace generic policy tables with record-specific schedules and eliminate page overflow",
     "ocr_status": "regenerated_from_current_pdf",
-    "ocr_regenerated_at": "2026-06-28T21:44:24.950682+00:00"
+    "ocr_regenerated_at": "2026-07-13T18:04:41.001836+00:00"
   },
-  "ocr_md_size_bytes": 402001
+  "ocr_md_size_bytes": 482436,
+  "json_size_bytes": 239867
 }

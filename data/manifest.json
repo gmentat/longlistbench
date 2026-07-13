@@ -76,7 +76,10 @@
       "pages_estimate": 17,
       "pdf_page_count": 17,
       "hf_config": "core_operations",
-      "ocr_md_size_bytes": 33504
+      "ocr_md_size_bytes": 33504,
+      "pdf_size_bytes": 405332,
+      "html_size_bytes": 70289,
+      "json_size_bytes": 91072
     },
     {
       "id": "driver_mvr_packet_002",
@@ -116,7 +119,10 @@
       "pages_estimate": 24,
       "pdf_page_count": 24,
       "hf_config": "core_operations",
-      "ocr_md_size_bytes": 52067
+      "ocr_md_size_bytes": 52067,
+      "pdf_size_bytes": 450868,
+      "html_size_bytes": 119492,
+      "json_size_bytes": 175399
     },
     {
       "id": "driver_mvr_packet_003",
@@ -156,7 +162,10 @@
       "pages_estimate": 24,
       "pdf_page_count": 24,
       "hf_config": "core_operations",
-      "ocr_md_size_bytes": 52920
+      "ocr_md_size_bytes": 52920,
+      "pdf_size_bytes": 452207,
+      "html_size_bytes": 119550,
+      "json_size_bytes": 175367
     },
     {
       "id": "driver_schedule_sparse_001",
@@ -212,7 +221,8 @@
         "pdf_sha256": "2db5b83a8c0f06cd7766d9dd756cf278713e60cf27db57df31bcb3410bcb3f27",
         "html_sha256": "948d164ea461650c683c246835b9350f143cf7f027ee8a0cc07d0288893bdb4c"
       },
-      "ocr_md_size_bytes": 28768
+      "ocr_md_size_bytes": 28768,
+      "json_size_bytes": 71571
     },
     {
       "id": "ifta_mileage_by_vehicle_001",
@@ -253,7 +263,10 @@
       "pages_estimate": 97,
       "pdf_page_count": 97,
       "hf_config": "core_operations",
-      "ocr_md_size_bytes": 193687
+      "ocr_md_size_bytes": 193687,
+      "pdf_size_bytes": 588299,
+      "html_size_bytes": 511013,
+      "json_size_bytes": 167015
     },
     {
       "id": "ifta_mileage_by_vehicle_002",
@@ -294,7 +307,10 @@
       "pages_estimate": 182,
       "pdf_page_count": 182,
       "hf_config": "core_operations",
-      "ocr_md_size_bytes": 358934
+      "ocr_md_size_bytes": 358934,
+      "pdf_size_bytes": 969746,
+      "html_size_bytes": 938626,
+      "json_size_bytes": 308972
     },
     {
       "id": "ifta_mileage_by_vehicle_003",
@@ -335,7 +351,10 @@
       "pages_estimate": 188,
       "pdf_page_count": 188,
       "hf_config": "core_operations",
-      "ocr_md_size_bytes": 367483
+      "ocr_md_size_bytes": 367483,
+      "pdf_size_bytes": 996988,
+      "html_size_bytes": 963431,
+      "json_size_bytes": 316038
     },
     {
       "id": "ifta_mileage_by_vehicle_004",
@@ -376,7 +395,10 @@
       "pages_estimate": 193,
       "pdf_page_count": 193,
       "hf_config": "core_operations",
-      "ocr_md_size_bytes": 385216
+      "ocr_md_size_bytes": 385216,
+      "pdf_size_bytes": 1015593,
+      "html_size_bytes": 982821,
+      "json_size_bytes": 322650
     },
     {
       "id": "ifta_mileage_by_vehicle_005",
@@ -417,7 +439,10 @@
       "pages_estimate": 198,
       "pdf_page_count": 198,
       "hf_config": "core_operations",
-      "ocr_md_size_bytes": 393894
+      "ocr_md_size_bytes": 393894,
+      "pdf_size_bytes": 1046767,
+      "html_size_bytes": 1036592,
+      "json_size_bytes": 342692
     },
     {
       "id": "ifta_mileage_by_vehicle_006",
@@ -458,7 +483,10 @@
       "pages_estimate": 206,
       "pdf_page_count": 206,
       "hf_config": "core_operations",
-      "ocr_md_size_bytes": 416454
+      "ocr_md_size_bytes": 416454,
+      "pdf_size_bytes": 1079911,
+      "html_size_bytes": 1064678,
+      "json_size_bytes": 350661
     },
     {
       "id": "ifta_mileage_by_vehicle_007",
@@ -499,7 +527,10 @@
       "pages_estimate": 210,
       "pdf_page_count": 210,
       "hf_config": "core_operations",
-      "ocr_md_size_bytes": 412391
+      "ocr_md_size_bytes": 412391,
+      "pdf_size_bytes": 1094699,
+      "html_size_bytes": 1072480,
+      "json_size_bytes": 352530
     },
     {
       "id": "ifta_mileage_by_vehicle_008",
@@ -540,7 +571,10 @@
       "pages_estimate": 218,
       "pdf_page_count": 218,
       "hf_config": "core_operations",
-      "ocr_md_size_bytes": 438583
+      "ocr_md_size_bytes": 438583,
+      "pdf_size_bytes": 1133809,
+      "html_size_bytes": 1125300,
+      "json_size_bytes": 370369
     },
     {
       "id": "ifta_multisection_return_001",
@@ -598,7 +632,10 @@
         "date": "2026-06-29",
         "purpose": "hard IFTA table extraction condition with fields split across return sections",
         "ocr_status": "layout-preserving Gemini OCR over scanned image PDF"
-      }
+      },
+      "pdf_size_bytes": 7339936,
+      "html_size_bytes": 203496,
+      "json_size_bytes": 150517
     },
     {
       "id": "ifta_multisection_return_002",
@@ -656,7 +693,10 @@
         "date": "2026-06-29",
         "purpose": "hard IFTA table extraction condition with fields split across return sections",
         "ocr_status": "layout-preserving Gemini OCR over scanned image PDF"
-      }
+      },
+      "pdf_size_bytes": 10208903,
+      "html_size_bytes": 280581,
+      "json_size_bytes": 207018
     },
     {
       "id": "ifta_return_schedule_001",
@@ -712,7 +752,8 @@
         "pdf_sha256": "e79d5f301e0bc84a1ac2cd921dc8bc0d178fb75bcd479c7e3d3dfd21886dffd8",
         "html_sha256": "335a5178fdc5dfd518aeeb64be6a620ff6bee0bc2d2a02dfd103871715db1344"
       },
-      "ocr_md_size_bytes": 125900
+      "ocr_md_size_bytes": 125900,
+      "json_size_bytes": 205146
     },
     {
       "id": "ifta_return_schedule_002",
@@ -768,7 +809,8 @@
         "pdf_sha256": "50e8ed9373f496cc5280fc0fb66cd00561ca03bdd3319c9449c6692525718c3f",
         "html_sha256": "d341546375eec81aca4608e3f6fac38ad610b56cb7aeb8cd1898af82901fe52a"
       },
-      "ocr_md_size_bytes": 195867
+      "ocr_md_size_bytes": 195867,
+      "json_size_bytes": 352507
     },
     {
       "id": "ifta_return_schedule_003",
@@ -824,7 +866,8 @@
         "pdf_sha256": "69e92661da97faf3c3c1385588419c95f10b597ae5f7bbbb4a19ec143488f321",
         "html_sha256": "6412f10331fc8822d83c0bd3ae4ff12689818e415b9b6204514dc37e5178925b"
       },
-      "ocr_md_size_bytes": 212714
+      "ocr_md_size_bytes": 212714,
+      "json_size_bytes": 383530
     },
     {
       "id": "ifta_return_schedule_004",
@@ -880,7 +923,8 @@
         "pdf_sha256": "c88f7a16d8397cd56b4cd6b95fafee1c4af4862729ae1ff2b222e0aca611882e",
         "html_sha256": "83b1b8c73b3a79615c5f58e7c0c96e55e22e3ab279a97cdab53f15fa76fcaccc"
       },
-      "ocr_md_size_bytes": 209129
+      "ocr_md_size_bytes": 209129,
+      "json_size_bytes": 389184
     },
     {
       "id": "ifta_return_schedule_005",
@@ -936,7 +980,8 @@
         "pdf_sha256": "1ebe04aad69e48cd9f1b96c86219b26bb7291df44875cf803db7c53554a23fd2",
         "html_sha256": "01dd65c98e18570167f3f90b377472d227f3b22647362622605b40a583889f17"
       },
-      "ocr_md_size_bytes": 229500
+      "ocr_md_size_bytes": 229500,
+      "json_size_bytes": 408894
     },
     {
       "id": "ifta_tax_inquiry_001",
@@ -966,10 +1011,10 @@
         "html": "html/ifta_tax_inquiry_001.html",
         "metadata": "metadata/ifta_tax_inquiry_001.json",
         "json_size_bytes": 82865,
-        "pdf_size_bytes": 222722,
-        "html_size_bytes": 84423,
+        "pdf_size_bytes": 227380,
+        "html_size_bytes": 88985,
         "ocr_md": "transcripts/ocr_gemini/ifta_tax_inquiry_001.md",
-        "ocr_size_bytes": 44541
+        "ocr_size_bytes": 60310
       },
       "transcripts_available": [
         "ocr"
@@ -981,19 +1026,20 @@
       "pages_estimate": 29,
       "pdf_page_count": 29,
       "hf_config": "core_operations",
-      "pdf_size_bytes": 222722,
-      "html_size_bytes": 84423,
+      "pdf_size_bytes": 227380,
+      "html_size_bytes": 88985,
       "layout_revision": {
-        "date": "2026-06-28T09:33:22.772287+00:00",
-        "purpose": "reduce deterministic parser friendliness with production-like layout variation",
+        "date": "2026-07-13T17:41:09.033745+00:00",
+        "purpose": "eliminate headerless table continuations while preserving production-like layout variation",
         "ocr_status": "regenerated_from_current_pdf",
-        "ocr_regenerated_at": "2026-06-28T21:44:24.950682+00:00"
+        "ocr_regenerated_at": "2026-07-13T18:04:41.001836+00:00"
       },
       "artifacts": {
-        "pdf_sha256": "b624e1b1932c75dcdac027097fa83c668a65a38ccff00cd13cf464a67991afb6",
-        "html_sha256": "8356126cc13d956d4687b11248ac3b21c21708b95eeb55dc0cdf4441f9f7a9e7"
+        "pdf_sha256": "1f56f5bc040d2c808388b9a34faed31dff2d38ce1bbf39784be5cde40670f661",
+        "html_sha256": "4ff716bf0fd5eddf7281620201f8fe488b3892dc9a6d9c929fae145325825d3d"
       },
-      "ocr_md_size_bytes": 44541
+      "ocr_md_size_bytes": 60310,
+      "json_size_bytes": 82865
     },
     {
       "id": "ifta_tax_inquiry_002",
@@ -1023,10 +1069,10 @@
         "html": "html/ifta_tax_inquiry_002.html",
         "metadata": "metadata/ifta_tax_inquiry_002.json",
         "json_size_bytes": 82865,
-        "pdf_size_bytes": 222223,
-        "html_size_bytes": 84423,
+        "pdf_size_bytes": 226886,
+        "html_size_bytes": 88985,
         "ocr_md": "transcripts/ocr_gemini/ifta_tax_inquiry_002.md",
-        "ocr_size_bytes": 55125
+        "ocr_size_bytes": 58093
       },
       "transcripts_available": [
         "ocr"
@@ -1038,19 +1084,20 @@
       "pages_estimate": 29,
       "pdf_page_count": 29,
       "hf_config": "core_operations",
-      "pdf_size_bytes": 222223,
-      "html_size_bytes": 84423,
+      "pdf_size_bytes": 226886,
+      "html_size_bytes": 88985,
       "layout_revision": {
-        "date": "2026-06-28T09:33:23.104936+00:00",
-        "purpose": "reduce deterministic parser friendliness with production-like layout variation",
+        "date": "2026-07-13T17:41:09.486154+00:00",
+        "purpose": "eliminate headerless table continuations while preserving production-like layout variation",
         "ocr_status": "regenerated_from_current_pdf",
-        "ocr_regenerated_at": "2026-06-28T21:44:24.950682+00:00"
+        "ocr_regenerated_at": "2026-07-13T18:04:41.001836+00:00"
       },
       "artifacts": {
-        "pdf_sha256": "f260e9b0986b162b9ed1206c01a4edb1f43c2e8df08efdea52b95de9e5608739",
-        "html_sha256": "5f389c710b430ecc52a75427cfdbd4e0baa53c22b191042977fb03db90a1da51"
+        "pdf_sha256": "9e083a62c5f0ae926716eeb7c9c170a4b0bcb9896b21804ba0d08015cd26d3c9",
+        "html_sha256": "f2c80af546871ab7c8263e60ce09f00c64be772600826da3b04b97171abc8ffc"
       },
-      "ocr_md_size_bytes": 55125
+      "ocr_md_size_bytes": 58093,
+      "json_size_bytes": 82865
     },
     {
       "id": "ifta_tax_summary_001",
@@ -1106,7 +1153,8 @@
         "pdf_sha256": "d7049767a110f96efeda33a9381fcdf651fa12ece6427cd3a9d7695ef16a9a27",
         "html_sha256": "d279f156aa332ade48e508b957aea5ed1301fc573d7571425011907dc8193838"
       },
-      "ocr_md_size_bytes": 131101
+      "ocr_md_size_bytes": 131101,
+      "json_size_bytes": 260441
     },
     {
       "id": "ifta_tax_summary_002",
@@ -1162,7 +1210,8 @@
         "pdf_sha256": "4d68a84f2cde5303f508a5fcedbb09798a7ef743aa3ecf1d4c9451e7d9648703",
         "html_sha256": "7f0f3143955733096e362c295fb2b9d6ee9e0c193c79fde256f2f30694041d26"
       },
-      "ocr_md_size_bytes": 130445
+      "ocr_md_size_bytes": 130445,
+      "json_size_bytes": 260276
     },
     {
       "id": "ifta_tax_summary_003",
@@ -1218,7 +1267,8 @@
         "pdf_sha256": "4a3634a61b453772863648e5396767005873148f88db81f4ca3b9c79fa5b1db2",
         "html_sha256": "14ade3ee9d9168456eb40fa30c067318ce0fa666c80984fb69cc40399d1ad885"
       },
-      "ocr_md_size_bytes": 117692
+      "ocr_md_size_bytes": 117692,
+      "json_size_bytes": 260638
     },
     {
       "id": "ifta_tax_summary_004",
@@ -1274,7 +1324,8 @@
         "pdf_sha256": "4e0735408650bea9f7fa45bc80c36292957b1dd82c789247c49fa589e9e94e11",
         "html_sha256": "f73a48b73a4947e37fa00218f4446d9838dffd3716356e94ed663d0d63847009"
       },
-      "ocr_md_size_bytes": 125339
+      "ocr_md_size_bytes": 125339,
+      "json_size_bytes": 260468
     },
     {
       "id": "loss_run_external_001",
@@ -1329,7 +1380,10 @@
       "num_claims": 300,
       "document_count": 1,
       "evidence_pattern": "single_document",
-      "ocr_md_size_bytes": 131330
+      "ocr_md_size_bytes": 131330,
+      "pdf_size_bytes": 581364,
+      "html_size_bytes": 296648,
+      "json_size_bytes": 161771
     },
     {
       "id": "loss_run_external_002",
@@ -1384,7 +1438,10 @@
       "num_claims": 300,
       "document_count": 1,
       "evidence_pattern": "single_document",
-      "ocr_md_size_bytes": 129750
+      "ocr_md_size_bytes": 129750,
+      "pdf_size_bytes": 581787,
+      "html_size_bytes": 297170,
+      "json_size_bytes": 161836
     },
     {
       "id": "loss_run_external_003",
@@ -1439,7 +1496,10 @@
       "num_claims": 300,
       "document_count": 1,
       "evidence_pattern": "single_document",
-      "ocr_md_size_bytes": 135126
+      "ocr_md_size_bytes": 135126,
+      "pdf_size_bytes": 585065,
+      "html_size_bytes": 299568,
+      "json_size_bytes": 161889
     },
     {
       "id": "mixed_040_001_crosspage",
@@ -1587,7 +1647,10 @@
         "purpose": "reduce deterministic parser friendliness with production-like layout variation",
         "ocr_status": "regenerated_from_current_pdf",
         "ocr_regenerated_at": "2026-06-29T10:16:19+00:00"
-      }
+      },
+      "pdf_size_bytes": 1797630,
+      "html_size_bytes": 807202,
+      "json_size_bytes": 51549
     },
     {
       "id": "mixed_cgl_040_001",
@@ -1795,28 +1858,29 @@
         "html": "html/mixed_cgl_040_001.html",
         "ocr_md": "transcripts/ocr_gemini/mixed_cgl_040_001.md",
         "json_size_bytes": 458192,
-        "pdf_size_bytes": 1461026,
-        "html_size_bytes": 1169180,
-        "ocr_size_bytes": 807375,
+        "pdf_size_bytes": 1488270,
+        "html_size_bytes": 1216336,
+        "ocr_size_bytes": 936194,
         "metadata": "metadata/mixed_cgl_040_001.json"
       },
       "transcripts_available": [
         "ocr"
       ],
       "template": "policy_multihop_cgl",
-      "pdf_size_bytes": 1461026,
-      "html_size_bytes": 1169180,
+      "pdf_size_bytes": 1488270,
+      "html_size_bytes": 1216336,
       "layout_revision": {
-        "date": "2026-06-28T09:38:55.491297+00:00",
-        "purpose": "reduce deterministic parser friendliness with production-like layout variation",
+        "date": "2026-07-13T17:41:13.817440+00:00",
+        "purpose": "replace generic policy tables with record-specific schedules and eliminate page overflow",
         "ocr_status": "regenerated_from_current_pdf",
-        "ocr_regenerated_at": "2026-06-28T21:44:24.950682+00:00"
+        "ocr_regenerated_at": "2026-07-13T18:04:41.001836+00:00"
       },
       "artifacts": {
-        "pdf_sha256": "7b989dbeee4aa9c0b55d257f8de0495bbaf4b4155a433fc492d62bee3df1493d",
-        "html_sha256": "bc8f42bb07b71cc430d29d06bd1af630f665a7124871cf71f6c7c2ac156ac3b2"
+        "pdf_sha256": "1df26cc25f08c4447d9e631009541bb8ff3f968bff43f7108da2c91d4cdfb17d",
+        "html_sha256": "ad3b250aca6bbcf47907679af2f8330cbcebc04d2078d15f3bba9541c3e875c3"
       },
-      "ocr_md_size_bytes": 807375
+      "ocr_md_size_bytes": 936194,
+      "json_size_bytes": 458192
     },
     {
       "id": "multihop_012_001_crosspage",
@@ -1961,7 +2025,10 @@
         "purpose": "reduce deterministic parser friendliness with production-like layout variation",
         "ocr_status": "regenerated_from_current_pdf",
         "ocr_regenerated_at": "2026-06-29T09:56:43+00:00"
-      }
+      },
+      "pdf_size_bytes": 981600,
+      "html_size_bytes": 296086,
+      "json_size_bytes": 15364
     },
     {
       "id": "multihop_025_001_crosspage",
@@ -2107,7 +2174,10 @@
         "purpose": "reduce deterministic parser friendliness with production-like layout variation",
         "ocr_status": "regenerated_from_current_pdf",
         "ocr_regenerated_at": "2026-06-29T10:05:17+00:00"
-      }
+      },
+      "pdf_size_bytes": 1335078,
+      "html_size_bytes": 515445,
+      "json_size_bytes": 32067
     },
     {
       "id": "multihop_bop_012_001",
@@ -2304,28 +2374,29 @@
         "html": "html/multihop_bop_012_001.html",
         "ocr_md": "transcripts/ocr_gemini/multihop_bop_012_001.md",
         "json_size_bytes": 239867,
-        "pdf_size_bytes": 820073,
-        "html_size_bytes": 582894,
-        "ocr_size_bytes": 402001,
+        "pdf_size_bytes": 823575,
+        "html_size_bytes": 595940,
+        "ocr_size_bytes": 482436,
         "metadata": "metadata/multihop_bop_012_001.json"
       },
       "transcripts_available": [
         "ocr"
       ],
       "template": "policy_multihop_bop",
-      "pdf_size_bytes": 820073,
-      "html_size_bytes": 582894,
+      "pdf_size_bytes": 823575,
+      "html_size_bytes": 595940,
       "layout_revision": {
-        "date": "2026-06-28T09:38:53.785980+00:00",
-        "purpose": "reduce deterministic parser friendliness with production-like layout variation",
+        "date": "2026-07-13T17:41:11.467986+00:00",
+        "purpose": "replace generic policy tables with record-specific schedules and eliminate page overflow",
         "ocr_status": "regenerated_from_current_pdf",
-        "ocr_regenerated_at": "2026-06-28T21:44:24.950682+00:00"
+        "ocr_regenerated_at": "2026-07-13T18:04:41.001836+00:00"
       },
       "artifacts": {
-        "pdf_sha256": "68ef7778a4237d30daa9475a3583b118f3e4ae146f43137e6459ffd2225424a9",
-        "html_sha256": "2dc789d29e1ced7c103a0fff0b553c613e9c5258778728eae99f1c94984741aa"
+        "pdf_sha256": "c2ed460a7f5ea94415e9f1b9f28f027e7e395a4e38272a77941ccb4e4c7bbc85",
+        "html_sha256": "3873aa4abb797de206a84e79bf6818045f179ec4da0de1a2a86bfb8c412bcfdf"
       },
-      "ocr_md_size_bytes": 402001
+      "ocr_md_size_bytes": 482436,
+      "json_size_bytes": 239867
     },
     {
       "id": "multihop_wc_025_001",
@@ -2527,28 +2598,29 @@
         "html": "html/multihop_wc_025_001.html",
         "ocr_md": "transcripts/ocr_gemini/multihop_wc_025_001.md",
         "json_size_bytes": 327471,
-        "pdf_size_bytes": 1056909,
-        "html_size_bytes": 799989,
-        "ocr_size_bytes": 537185,
+        "pdf_size_bytes": 1075715,
+        "html_size_bytes": 828608,
+        "ocr_size_bytes": 603578,
         "metadata": "metadata/multihop_wc_025_001.json"
       },
       "transcripts_available": [
         "ocr"
       ],
       "template": "policy_multihop_wc",
-      "pdf_size_bytes": 1056909,
-      "html_size_bytes": 799989,
+      "pdf_size_bytes": 1075715,
+      "html_size_bytes": 828608,
       "layout_revision": {
-        "date": "2026-06-28T09:38:54.527948+00:00",
-        "purpose": "reduce deterministic parser friendliness with production-like layout variation",
+        "date": "2026-07-13T17:41:12.604967+00:00",
+        "purpose": "replace generic policy tables with record-specific schedules and eliminate page overflow",
         "ocr_status": "regenerated_from_current_pdf",
-        "ocr_regenerated_at": "2026-06-28T21:44:24.950682+00:00"
+        "ocr_regenerated_at": "2026-07-13T18:04:41.001836+00:00"
       },
       "artifacts": {
-        "pdf_sha256": "ed649fd8a97fea912c6ad8ead87f15236ab2f5d39e7cce766879ad8089ce284b",
-        "html_sha256": "5eb0cc1acb38e18a4a54364bba050d9c8e8ff581b866e9af7c8fb79f26ad8f89"
+        "pdf_sha256": "a57abe38d57d05d8a49b92ff3b71ca3362477b637a66bc486d9601ba17fb4fdd",
+        "html_sha256": "58ed30befebb21db4c94baaa34f7beafb43288c92720b85c50cbc5a943391357"
       },
-      "ocr_md_size_bytes": 537185
+      "ocr_md_size_bytes": 603578,
+      "json_size_bytes": 327471
     },
     {
       "id": "vehicle_schedule_sparse_001",
@@ -2577,10 +2649,10 @@
         "html": "html/vehicle_schedule_sparse_001.html",
         "metadata": "metadata/vehicle_schedule_sparse_001.json",
         "json_size_bytes": 146971,
-        "pdf_size_bytes": 442739,
-        "html_size_bytes": 171500,
+        "pdf_size_bytes": 394390,
+        "html_size_bytes": 171817,
         "ocr_md": "transcripts/ocr_gemini/vehicle_schedule_sparse_001.md",
-        "ocr_size_bytes": 68892
+        "ocr_size_bytes": 91864
       },
       "transcripts_available": [
         "ocr"
@@ -2589,22 +2661,23 @@
       "document_count": 1,
       "evidence_pattern": "single_document",
       "provenance": "Synthetic generated document. Private production references were used only for visual layout review; no production PDFs, names, account numbers, or raw customer data are included in this repository.",
-      "pages_estimate": 37,
-      "pdf_page_count": 37,
+      "pages_estimate": 31,
+      "pdf_page_count": 31,
       "hf_config": "core_operations",
-      "pdf_size_bytes": 442739,
-      "html_size_bytes": 171500,
+      "pdf_size_bytes": 394390,
+      "html_size_bytes": 171817,
       "layout_revision": {
-        "date": "2026-06-28T14:34:58.086757+00:00",
-        "purpose": "reduce deterministic parser friendliness with production-like layout variation",
+        "date": "2026-07-13T17:41:10.075398+00:00",
+        "purpose": "eliminate headerless table continuations while preserving production-like layout variation",
         "ocr_status": "regenerated_from_current_pdf",
-        "ocr_regenerated_at": "2026-06-28T21:44:24.950682+00:00"
+        "ocr_regenerated_at": "2026-07-13T18:04:41.001836+00:00"
       },
       "artifacts": {
-        "pdf_sha256": "8cac2eb40553d40115be6a7fd34bc07ec14151f46a5dd947276bc8b232216de1",
-        "html_sha256": "674179a4f56b2141d4cdf14f42dfb5d2eda6695470d8a9fccabd423abd9b7849"
+        "pdf_sha256": "e24f75e59f5965518e89c8635592b11d86ecf90321bed78a12c3b8103b3d2184",
+        "html_sha256": "a5e3cf5801c81c8add2c8ea25bd4f4e038ff29db41d4fc487bd8c414c26f3c16"
       },
-      "ocr_md_size_bytes": 68892
+      "ocr_md_size_bytes": 91864,
+      "json_size_bytes": 146971
     },
     {
       "id": "vehicle_schedule_sparse_002",
@@ -2633,10 +2706,10 @@
         "html": "html/vehicle_schedule_sparse_002.html",
         "metadata": "metadata/vehicle_schedule_sparse_002.json",
         "json_size_bytes": 146932,
-        "pdf_size_bytes": 441856,
-        "html_size_bytes": 171463,
+        "pdf_size_bytes": 393558,
+        "html_size_bytes": 171780,
         "ocr_md": "transcripts/ocr_gemini/vehicle_schedule_sparse_002.md",
-        "ocr_size_bytes": 65201
+        "ocr_size_bytes": 121283
       },
       "transcripts_available": [
         "ocr"
@@ -2645,25 +2718,26 @@
       "document_count": 1,
       "evidence_pattern": "single_document",
       "provenance": "Synthetic generated document. Private production references were used only for visual layout review; no production PDFs, names, account numbers, or raw customer data are included in this repository.",
-      "pages_estimate": 37,
-      "pdf_page_count": 37,
+      "pages_estimate": 31,
+      "pdf_page_count": 31,
       "hf_config": "core_operations",
-      "pdf_size_bytes": 441856,
-      "html_size_bytes": 171463,
+      "pdf_size_bytes": 393558,
+      "html_size_bytes": 171780,
       "layout_revision": {
-        "date": "2026-06-28T14:34:58.488572+00:00",
-        "purpose": "reduce deterministic parser friendliness with production-like layout variation",
+        "date": "2026-07-13T17:41:10.599556+00:00",
+        "purpose": "eliminate headerless table continuations while preserving production-like layout variation",
         "ocr_status": "regenerated_from_current_pdf",
-        "ocr_regenerated_at": "2026-06-28T21:44:24.950682+00:00"
+        "ocr_regenerated_at": "2026-07-13T18:04:41.001836+00:00"
       },
       "artifacts": {
-        "pdf_sha256": "b3103e7d82701ffd8ce82d2ed87635e5578e3b66b19f4d80197d7caf8eb6ddde",
-        "html_sha256": "2f425d9fc1d1e17d45ae6c41635bff567dc72a5a2eb170395e230905b4eafe6a"
+        "pdf_sha256": "dfc48073f9eb0f422b4f4c6edef2694e0377f6d8988e9f4efb7106af84cef5ba",
+        "html_sha256": "514c4a6b47723e9489b84232287965203bfd179de4b67cf79e441da2790eb51b"
       },
-      "ocr_md_size_bytes": 65201
+      "ocr_md_size_bytes": 121283,
+      "json_size_bytes": 146932
     }
   ],
-  "updated_at": "2026-06-29T07:16:19.604937+00:00",
+  "updated_at": "2026-07-13T18:04:41.016574+00:00",
   "total_core_operations_records": 31884,
   "total_claim_records": 77,
   "total_policy_records": 1489,

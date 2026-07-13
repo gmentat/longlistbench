@@ -54,5 +54,8 @@
     "purpose": "hard IFTA table extraction condition with fields split across return sections",
     "ocr_status": "layout-preserving Gemini OCR over scanned image PDF"
   },
-  "ocr_md_size_bytes": 194328
+  "ocr_md_size_bytes": 194328,
+  "pdf_size_bytes": 7339936,
+  "html_size_bytes": 203496,
+  "json_size_bytes": 150517
 }

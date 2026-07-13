@@ -30,7 +30,7 @@ The largest scale family, mileage by vehicle, contributes 17{,}565 records acros
 \label{subsec:current-ocr-baseline}
 Each run received one OCR transcript and the public field contract in a temporary workspace. A macOS sandbox denied the benchmark repository, and ground truth, target values and counts, and generator code were absent. Agents could inspect the transcript, write temporary code, validate JSON, and return the complete list. These are protocol baselines, not raw one-shot model measurements.
 
-The two earlier runs used Codex CLI with \texttt{gpt-5.5} at xhigh reasoning on July 1, 2026, and Claude Code with \texttt{claude-opus-4-8} at xhigh effort on July 12. The new runs used Codex CLI 0.144.1 with \texttt{gpt-5.6-sol} and Claude Code 2.1.207 with \texttt{claude-fable-5}, both at xhigh effort on July 13. Claude Code safe mode disabled project instructions, skills, plugins, hooks, and MCP servers. Its usage metadata listed Fable 5 for every run and auxiliary Haiku 4.5 routing, so this is a Claude Code/Fable 5 protocol rather than a raw-model score. All four runs cover the same manifest and 33{,}450 targets with zero execution errors; saved predictions reproduce every score in \Cref{tab:agentic-full-corpus}.
+The initial GPT-5.5 and Opus 4.8 runs were produced on July 1 and July 12, 2026; GPT-5.6-Sol and Fable 5 were run on July 13. After seven document layouts were corrected, those inputs were rerun for all four configurations under the same xhigh protocol, while the 29 unchanged-document predictions were retained. The current runners used Codex CLI 0.144.1 and Claude Code 2.1.207. Claude Code safe mode disabled project instructions, skills, plugins, hooks, and MCP servers. Its usage metadata listed Fable 5 for every Fable run and auxiliary Haiku 4.5 routing, so this is a Claude Code/Fable 5 protocol rather than a raw-model score. All four reports cover the same manifest and 33{,}450 targets with zero execution errors; saved predictions reproduce every score in \Cref{tab:agentic-full-corpus}.
 
 \begin{table}[H]
 \centering
@@ -41,15 +41,15 @@ The two earlier runs used Codex CLI with \texttt{gpt-5.5} at xhigh reasoning on 
 \toprule
 Agent and model & Exact recall & Complete docs & Micro-$F_1$ & Macro-$F_1$ \\
 \midrule
-Codex CLI, GPT-5.6-Sol (xhigh) & 89.0\% & 13/36 (36.1\%) & 97.3\% & 96.6\% \\
-Claude Code, Fable 5 (xhigh) & 90.6\% & 15/36 (41.7\%) & 98.9\% & 98.7\% \\
-Codex CLI, GPT-5.5 (xhigh) & 89.5\% & 12/36 (33.3\%) & 98.7\% & 98.2\% \\
-Claude Code, Opus 4.8 (xhigh) & 86.9\% & 13/36 (36.1\%) & 98.6\% & 98.2\% \\
+Codex CLI, GPT-5.6-Sol (xhigh) & 89.9\% & 14/36 (38.9\%) & 97.8\% & 97.8\% \\
+Claude Code, Fable 5 (xhigh) & 90.7\% & 15/36 (41.7\%) & 98.9\% & 98.6\% \\
+Codex CLI, GPT-5.5 (xhigh) & 89.7\% & 12/36 (33.3\%) & 98.8\% & 98.2\% \\
+Claude Code, Opus 4.8 (xhigh) & 85.8\% & 11/36 (30.6\%) & 98.7\% & 98.5\% \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-No configuration completes even half of the documents. Model recency is also not a monotonic aggregate improvement: GPT-5.6-Sol completes one more document than GPT-5.5 but has slightly lower exact-record and field scores, while Fable 5 improves over Opus 4.8. The family results below explain more than the overall ranking.
+No configuration completes even half of the documents. GPT-5.6-Sol improves exact recall and document completion over GPT-5.5 but has lower field $F_1$, while Fable 5 improves over Opus 4.8. The family results below explain more than the overall ranking.
 
 We preassign four parser-friendly families as scale tests and the other seven as structural challenges. \Cref{tab:agentic-by-role} reports the latest models by role.
 
@@ -62,8 +62,8 @@ We preassign four parser-friendly families as scale tests and the other seven as
 \toprule
 Role & Docs & Records & Sol exact & Fable exact & Sol complete & Fable complete \\
 \midrule
-Structural challenges & 21 & 10{,}745 & 66.4\% & 71.2\% & 4/21 (19.0\%) & 4/21 (19.0\%) \\
-Scale tests & 15 & 22{,}705 & 99.7\% & 99.8\% & 9/15 (60.0\%) & 11/15 (73.3\%) \\
+Structural challenges & 21 & 10{,}745 & 69.0\% & 71.5\% & 6/21 (28.6\%) & 6/21 (28.6\%) \\
+Scale tests & 15 & 22{,}705 & 99.7\% & 99.8\% & 8/15 (53.3\%) & 9/15 (60.0\%) \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -83,20 +83,20 @@ Sparse record enrichment (driver/MVR) & 3 & 1{,}260 & 1.9\% & 1.9\% \\
 Long-range claim joins & 3 & 77 & 100.0\% & 100.0\% \\
 Split return schedules & 5 & 4{,}923 & 58.5\% & 64.6\% \\
 Mixed row/detail loss runs & 3 & 900 & 98.6\% & 99.2\% \\
-Tax inquiry detail tables & 2 & 1{,}300 & 99.8\% & 99.8\% \\
-Heterogeneous policy records & 3 & 1{,}489 & 78.7\% & 92.5\% \\
+Tax inquiry detail tables & 2 & 1{,}300 & 98.1\% & 98.1\% \\
+Heterogeneous policy records & 3 & 1{,}489 & 99.4\% & 96.8\% \\
 Cross-section return joins & 2 & 796 & 99.9\% & 99.9\% \\
 \midrule
 Tax-summary scale tests & 4 & 3{,}040 & 99.9\% & 99.9\% \\
 Driver-schedule scale test & 1 & 500 & 99.4\% & 99.4\% \\
 Mileage-by-vehicle scale tests & 8 & 17{,}565 & 99.7\% & 99.8\% \\
-Vehicle-schedule scale tests & 2 & 1{,}600 & 99.6\% & 100.0\% \\
+Vehicle-schedule scale tests & 2 & 1{,}600 & 99.8\% & 99.9\% \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-The failures differ in kind. Both agents return all 1{,}260 driver rows, but only 24 are exact because sparse MVR fields are not joined back into the roster; field micro-$F_1$ is still 89.1\%. On split return schedules, GPT-5.6-Sol returns 4{,}326 of 4{,}923 rows and Fable 5 returns 4{,}779, with additional field errors. Policy packets expose model-specific behavior: GPT-5.6-Sol omits 192 BOP records, while Fable returns the full policy record counts but still misses fields. In contrast, both agents recover all 77 long-range claim records exactly, and each misses only one of 796 cross-section return records.
+The failures differ in kind. Both agents return all 1{,}260 driver rows, but only 24 are exact because sparse MVR fields are not joined back into the roster; field micro-$F_1$ is still 89.1\%. On split return schedules, GPT-5.6-Sol returns 4{,}326 of 4{,}923 rows and Fable 5 returns 4{,}779, with additional field errors. On page 18 of \path{ifta_tax_inquiry_002}, Gemini converted a card grid to CSV and omitted 23 visible row-label prefixes; this transcript loss explains most of the shared 98.1\% family score and is not solely an agent error. Both agents now complete the BOP and WC policy lists after the policy schedules were corrected, but the CGL packet remains incomplete at 98.5\% and 92.4\% exact recall. In contrast, both recover all 77 long-range claim records exactly, and each misses only one of 796 cross-section return records.
 
-Cross-cutting slices reinforce this variation. Exact-record recall for GPT-5.6-Sol and Fable 5 is 78.7\% and 92.5\% on heterogeneous lists, 79.8\% and 92.9\% on long-range evidence, 82.6\% and 86.4\% on split records, 82.7\% and 86.4\% on inherited context, and 81.9\% and 84.6\% under layout randomization. Duplicate-bearing documents score 86.6\% and 95.2\%. By contrast, cross-section joins and repeated keys score 99.9\% for both. These are observational associations because tags overlap and document families differ; paired renderings would be needed to estimate one stressor's causal effect.
+Cross-cutting slices reinforce this variation. Exact-record recall for GPT-5.6-Sol and Fable 5 is 99.4\% and 96.8\% on heterogeneous lists, 99.4\% and 97.0\% on long-range evidence, 84.7\% and 86.7\% on split records, 84.8\% and 86.7\% on inherited context, and 81.7\% and 84.4\% under layout randomization. Duplicate-bearing documents score 99.1\% and 97.8\%. Cross-section joins and repeated keys score 99.9\% for both. These are observational associations because tags overlap and document families differ; paired renderings would be needed to estimate one stressor's causal effect.
 
 Full-context one-shot extraction is not a practical full-corpus protocol here. Small claim packets can return scoreable outputs, but larger outputs reach model limits or time out. We therefore treat one-shot prompting as a lower-bound operational stress test and use the per-document agentic protocol for full-corpus comparison.

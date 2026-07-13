@@ -698,9 +698,9 @@ These schemas describe the strict claim, external loss-run, multisection IFTA, a
 
 The current release includes OCR transcripts for every PDF:
 
-- `ocr_transcript`: OCR text generated from rendered PDF page images.
+- `ocr_transcript`: OCR text generated from 200-DPI rendered PDF page images with Google Gemini 3.5 Flash vision OCR through the direct Vertex AI API.
 
-OCR validation passes on all released PDFs, with 100.0% average identifier coverage, 99.9% tracked identifier-field support, and 39 records with at least one tracked identifier missing from OCR. Interpret OCR-conditioned extraction scores with this ceiling in mind: a single omitted repeated header can affect many rows that inherit that value.
+OCR validation passes on all released PDFs, with 100.0% average identifier coverage, 99.9% tracked identifier-field support, 39 records with at least one tracked identifier missing from OCR, and no unrecoverable ground-truth numeric values with absolute value at least 10. Interpret OCR-conditioned extraction scores with this ceiling in mind: a single omitted repeated header can affect many rows that inherit that value. For example, page 18 of `ifta_tax_inquiry_002` is transcribed as CSV without 23 visible row-label prefixes.
 
 If future releases add clean structural transcripts, they should be reported as a separate transcript condition rather than mixed with OCR-condition results.
 
