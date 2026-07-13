@@ -167,14 +167,21 @@ python benchmarks/evaluate_models.py --offline --output-dir benchmarks/results/s
 # Audit a saved report by recomputing strict and field metrics from predictions
 python benchmarks/check_evaluation_report.py --results-dir benchmarks/results/scratch
 
-# Reproduce the released Codex CLI protocol (macOS sandbox-exec required)
-uv run python benchmarks/run_codex_cli_evaluation.py \
-  --output-dir benchmarks/results/codex_full_current_ocr_v2 \
-  --workers 4
+# Reproduce the released GPT-5.6-Sol protocol (macOS sandbox-exec required)
+python benchmarks/run_codex_cli_evaluation.py \
+  --output-dir benchmarks/results/codex_gpt56_sol_full_current_ocr_v2 \
+  --model-key codex_gpt56_sol \
+  --model gpt-5.6-sol \
+  --effort xhigh \
+  --workers 4 \
+  --timeout-seconds 3600
 
-# Reproduce the released Claude Code protocol with subscription authentication
-uv run python benchmarks/run_claude_cli_evaluation.py \
-  --output-dir benchmarks/results/claude_opus48_full_current_ocr_v2 \
+# Reproduce the released Fable 5 protocol with subscription authentication
+python benchmarks/run_claude_cli_evaluation.py \
+  --output-dir benchmarks/results/claude_fable5_full_current_ocr_v2 \
+  --model-key claude_fable5 \
+  --model claude-fable-5 \
+  --effort xhigh \
   --workers 4 \
   --timeout-seconds 3600
 ```
@@ -190,9 +197,9 @@ For generic records, the current runners derive sample-specific field names and 
 
 Saved reports under `benchmarks/results/` may refer to earlier corpus versions. Do not cite them as current-layout baselines unless their report provenance records the current `data/manifest.json` hash.
 
-The current full-corpus results use the same repository-denied OCR protocol. Codex CLI `gpt-5.5` recovers 89.5% of target records exactly and completes 12/36 documents; Claude Code `claude-opus-4-8` recovers 86.9% exactly and completes 13/36. On the 21 structural-challenge documents, exact-record recall is 68.9% and 60.7%; both agents reach 99.3% on the 15 scale tests. Field micro-F1 remains available as a partial-credit diagnostic at 98.7% and 98.6%. Both runs cover 33,450 targets with zero execution errors. Saved predictions are under `benchmarks/results/codex_full_current_ocr_v2/` and `benchmarks/results/claude_opus48_full_current_ocr_v2/`.
+The current full-corpus results use the same repository-denied OCR protocol. GPT-5.6-Sol recovers 89.0% of target records exactly and completes 13/36 documents; Fable 5 recovers 90.6% exactly and completes 15/36. On the 21 structural-challenge documents, exact-record recall is 66.4% and 71.2%; on the 15 scale tests it is 99.7% and 99.8%. Field micro-F1 remains a partial-credit diagnostic at 97.3% and 98.9%. Both runs cover 33,450 targets with zero execution errors. The earlier GPT-5.5 and Opus 4.8 runs remain available for comparison.
 
-The strongest shared exact-record gaps are driver/MVR enrichment (1.9% Codex, 0.0% Claude) and return schedules (65.2% and 63.9%). Multisection IFTA joins reach 99.9% for both, showing that a tagged stressor need not reduce every agent's accuracy. The scorer canonicalizes case, whitespace, dates, decimals, accounting negatives, and documented domain-label equivalents. Treat single-sample probe folders as older diagnostics unless rerun against the current manifest.
+The strongest shared exact-record gaps are sparse driver/MVR enrichment (1.9% for both) and split return schedules (58.5% and 64.6%). Heterogeneous policy records score 78.7% and 92.5%, while long-range claim joins and multisection return joins are effectively solved by both. A tagged stressor therefore need not reduce every agent's accuracy. The scorer canonicalizes case, whitespace, dates, decimals, accounting negatives, and documented domain-label equivalents. Treat single-sample probe folders as older diagnostics unless rerun against the current manifest.
 
 ## Hugging Face Export
 
@@ -217,6 +224,8 @@ The export writes:
 - `metadata/manifest.json` - source manifest copied from `data/`.
 - `evaluation/codex_full_current_ocr_v2/` - the released Codex report and all 36 saved predictions.
 - `evaluation/claude_opus48_full_current_ocr_v2/` - the released Claude report, run metadata, and all 36 saved predictions.
+- `evaluation/codex_gpt56_sol_full_current_ocr_v2/` - the released GPT-5.6-Sol report, run metadata, and all 36 saved predictions.
+- `evaluation/claude_fable5_full_current_ocr_v2/` - the released Fable 5 report, run metadata, and all 36 saved predictions.
 
 Each Parquet row includes `document_id`, `domain`, `complexity_regime`, `document_format`, `target_field`, `target_record_type`, `target_count`, embedded `pdf`, JSON-string `ground_truth`, JSON-string `metadata`, and `ocr_transcript`. Claim multi-hop rows use `target_field="incidents"`; operations, external loss-run, and policy rows use `target_field="records"`.
 

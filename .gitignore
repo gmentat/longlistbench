@@ -38,6 +38,10 @@ benchmarks/results/*/
 !benchmarks/results/codex_full_current_ocr_v2/**
 !benchmarks/results/claude_opus48_full_current_ocr_v2/
 !benchmarks/results/claude_opus48_full_current_ocr_v2/**
+!benchmarks/results/codex_gpt56_sol_full_current_ocr_v2/
+!benchmarks/results/codex_gpt56_sol_full_current_ocr_v2/**
+!benchmarks/results/claude_fable5_full_current_ocr_v2/
+!benchmarks/results/claude_fable5_full_current_ocr_v2/**
 
 # Virtual environment
 venv/

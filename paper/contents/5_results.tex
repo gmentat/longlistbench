@@ -1,9 +1,7 @@
-This revision reports corpus validation and two current OCR-conditioned agentic extraction baselines. Reports from earlier revisions correspond to earlier dataset layouts and should be treated as archival unless rerun on the current 36-document OCR corpus.
-
-Earlier prerelease experiments on an 80-document development version of LongListBench compared full-context one-shot prompting, fixed transcript chunking, and an OpenAI Agents SDK sandbox loop. Those runs helped shape the benchmark by showing that extraction protocol can dominate long-list recall, especially when one-shot prompting is forced to emit hundreds or thousands of rows. We do not mix those numbers into the current results because the released corpus, schemas, document templates, and scoring logic changed substantially. Current method comparisons should be rerun on the released OCR corpus and reported with the input condition, protocol, and manifest hash.
+This revision reports corpus validation and four OCR-conditioned agentic extraction baselines on the released corpus of 36 documents. Earlier prerelease experiments used a development set of 80 documents with different templates, schemas, and scoring. We retain those experiments as development history but do not mix their scores with the current release.
 
 \subsection{Artifact completeness}
-The released data directory contains one PDF, one HTML source, one JSON ground-truth file, one per-sample metadata file, and one OCR transcript for each of the 36 manifest instances. The manifest totals are internally consistent: 31{,}961 non-policy target records, 1{,}489 policy target records, and 33{,}450 target records overall. \Cref{tab:release-validation} summarizes the release validation checks.
+Each manifest instance has one PDF, HTML source, JSON ground-truth file, metadata file, and OCR transcript. The release contains 31{,}961 non-policy records and 1{,}489 policy records, for 33{,}450 targets overall. \Cref{tab:release-validation} summarizes the release gates.
 
 \begin{table}[H]
 \centering
@@ -15,10 +13,7 @@ The released data directory contains one PDF, one HTML source, one JSON ground-t
 Check & Value \\
 \midrule
 Manifest instances & 36 \\
-PDF artifacts & 36 \\
-HTML artifacts & 36 \\
-Ground-truth JSON files & 36 \\
-OCR transcripts & 36 \\
+PDF, HTML, ground-truth, metadata, and OCR artifacts & 36 each \\
 Total target records & 33{,}450 \\
 Released transcript condition & OCR \\
 Average identifier coverage & 100.0\% \\
@@ -29,80 +24,79 @@ Unrecoverable numeric GT values in OCR & 0 \\
 \end{tabular}
 \end{table}
 
-\subsection{Benchmark coverage}
-The largest family, IFTA mileage by vehicle, contributes 17{,}565 target records across 8 PDFs. The remaining core operations families add return schedules, tax summaries, multisection IFTA return packets, driver/MVR rosters, vehicle schedules, and external loss-run rows. These documents stress high-density extraction where the main failure mode is list completeness across many pages.
+The largest scale family, mileage by vehicle, contributes 17{,}565 records across eight PDFs. Structural families add sparse enrichment, split schedules, mixed row/detail blocks, heterogeneous records, and evidence distributed across sections. All 36 OCR transcripts pass the 95\% identifier-coverage gate. A numeric-fidelity gate also finds no unrecoverable ground-truth values with absolute value at least 10. These checks bound the released OCR condition; they are not extraction scores.
 
-Some operations families are intentionally structured reports. Deterministic row parsers can perform well on parts of these files, especially when OCR preserves table headers and row boundaries. We therefore treat them as scale and completeness cases rather than as the primary evidence for hard semantic extraction. The harder regimes are the claim and policy packets, where target records require inherited context, heterogeneous schemas, distant supporting sections, and distractor material.
-
-The multi-hop cases stress a different failure mode. The claim packets contain only 77 target incidents, but the evidence for each incident is distributed across distant packet sections. The policy packets contain 1{,}489 multi-hop policy records across BOP, WC, and CGL packets. These policy documents make the target schema heterogeneous: a system must recover locations, coverage items, forms, material clauses, endorsements, class-code rows, exposure items, and premium records rather than one repeated row shape.
-
-OCR validation checks whether tracked identifiers from the ground truth are visible in the released transcripts. All 36 samples pass the 95\% identifier-coverage threshold, with 100.0\% average identifier coverage and 99.9\% support across tracked identifier field instances. The affected-record count is more conservative: 39 of 33{,}450 records have at least one tracked identifier missing from OCR, mostly because a small number of repeated section headers or row identifiers were not transcribed. We also run a numeric-fidelity gate over all ground-truth numeric values with absolute value at least 10; the current release has 0 unrecoverable numeric values under that check. These validations bound the released OCR transcript condition before extraction scoring; they are not extraction scores. Extraction runs are evaluated first by complete normalized records, then by flattened field-value pairs for partial credit.
-
-\subsection{Current OCR extraction baselines}
+\subsection{Agentic OCR baselines}
 \label{subsec:current-ocr-baseline}
-We ran the same per-document protocol with two coding agents on all 36 released documents; \Cref{tab:agentic-full-corpus} reports the full-corpus results. Each received one OCR transcript and the public field contract in a temporary workspace, while a macOS sandbox denied the benchmark repository. Ground truth, target values and counts, and generator code were not copied into the workspace. Each agent could inspect the transcript, write temporary code, validate JSON, and return the complete record list. The saved \texttt{codex\_gpt55} run used Codex CLI with \texttt{gpt-5.5} and xhigh reasoning, completed July 1, 2026. The \texttt{claude\_opus48} run used Claude Code CLI with \texttt{claude-opus-4-8} and xhigh effort, completed July 12, 2026. Claude Code safe mode disabled custom instructions, skills, plugins, hooks, and MCP servers. These are protocol baselines, not raw one-shot model measurements.
+Each run received one OCR transcript and the public field contract in a temporary workspace. A macOS sandbox denied the benchmark repository, and ground truth, target values and counts, and generator code were absent. Agents could inspect the transcript, write temporary code, validate JSON, and return the complete list. These are protocol baselines, not raw one-shot model measurements.
+
+The two earlier runs used Codex CLI with \texttt{gpt-5.5} at xhigh reasoning on July 1, 2026, and Claude Code with \texttt{claude-opus-4-8} at xhigh effort on July 12. The new runs used Codex CLI 0.144.1 with \texttt{gpt-5.6-sol} and Claude Code 2.1.207 with \texttt{claude-fable-5}, both at xhigh effort on July 13. Claude Code safe mode disabled project instructions, skills, plugins, hooks, and MCP servers. Its usage metadata listed Fable 5 for every run and auxiliary Haiku 4.5 routing, so this is a Claude Code/Fable 5 protocol rather than a raw-model score. All four runs cover the same manifest and 33{,}450 targets with zero execution errors; saved predictions reproduce every score in \Cref{tab:agentic-full-corpus}.
 
 \begin{table}[H]
 \centering
 \footnotesize
-\caption{Full-corpus agentic OCR baselines. Strict completeness is primary; field micro-$F_1$ is secondary partial credit.}
+\caption{Full-corpus agentic OCR baselines. Strict completeness is primary; field $F_1$ is secondary partial credit.}
 \label{tab:agentic-full-corpus}
-\begin{tabular}{@{}p{0.37\linewidth}rrrrr@{}}
+\begin{tabular}{@{}p{0.31\linewidth}rrrr@{}}
 \toprule
-Protocol & Docs & Records & Exact records & Complete docs & Field F1 \\
+Agent and model & Exact recall & Complete docs & Micro-$F_1$ & Macro-$F_1$ \\
 \midrule
-Codex CLI \texttt{gpt-5.5}, xhigh reasoning & 36 & 33{,}450 & 89.5\% & 12/36 (33.3\%) & 98.7\% \\
-Claude Code \texttt{opus-4-8}, xhigh effort & 36 & 33{,}450 & 86.9\% & 13/36 (36.1\%) & 98.6\% \\
+Codex CLI, GPT-5.6-Sol (xhigh) & 89.0\% & 13/36 (36.1\%) & 97.3\% & 96.6\% \\
+Claude Code, Fable 5 (xhigh) & 90.6\% & 15/36 (41.7\%) & 98.9\% & 98.7\% \\
+Codex CLI, GPT-5.5 (xhigh) & 89.5\% & 12/36 (33.3\%) & 98.7\% & 98.2\% \\
+Claude Code, Opus 4.8 (xhigh) & 86.9\% & 13/36 (36.1\%) & 98.6\% & 98.2\% \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-The strict result changes the interpretation of the apparently high field scores. Codex and Claude recover 89.5\% and 86.9\% of records with every normalized target field correct, yet only about one-third of documents are complete. The field-pair metric remains near 99\% because it gives partial credit to records with one or more wrong fields.
+No configuration completes even half of the documents. Model recency is also not a monotonic aggregate improvement: GPT-5.6-Sol completes one more document than GPT-5.5 but has slightly lower exact-record and field scores, while Fable 5 improves over Opus 4.8. The family results below explain more than the overall ranking.
 
-We partition document families by their intended design rather than a numerical score threshold. Scale tests contain repeated structured rows and test volume, OCR preservation, and output completeness. Structural challenges require enrichment, reconciliation, inherited context, heterogeneous records, or cross-section joins. \Cref{tab:agentic-by-role} reports strict completeness by role, and \Cref{tab:agentic-by-regime} breaks results down by document family.
+We preassign four parser-friendly families as scale tests and the other seven as structural challenges. \Cref{tab:agentic-by-role} reports the latest models by role.
 
 \begin{table}[H]
 \centering
 \scriptsize
-\caption{Strict completeness by evaluation role. Exact records are corpus-level exact-record recall within each role.}
+\caption{Strict completeness by evaluation role for the latest models.}
 \label{tab:agentic-by-role}
-\begin{tabular}{@{}p{0.22\linewidth}rrrrrr@{}}
+\begin{tabular}{@{}p{0.24\linewidth}rrrrrr@{}}
 \toprule
-Role & Docs & Records & Codex exact & Claude exact & Codex complete & Claude complete \\
+Role & Docs & Records & Sol exact & Fable exact & Sol complete & Fable complete \\
 \midrule
-Structural challenges & 21 & 10{,}745 & 68.9\% & 60.7\% & 2/21 (9.5\%) & 3/21 (14.3\%) \\
-Scale tests & 15 & 22{,}705 & 99.3\% & 99.3\% & 10/15 (66.7\%) & 10/15 (66.7\%) \\
+Structural challenges & 21 & 10{,}745 & 66.4\% & 71.2\% & 4/21 (19.0\%) & 4/21 (19.0\%) \\
+Scale tests & 15 & 22{,}705 & 99.7\% & 99.8\% & 9/15 (60.0\%) & 11/15 (73.3\%) \\
 \bottomrule
 \end{tabular}
 \end{table}
+
+\Cref{tab:agentic-by-regime} uses problem-first labels so the extraction challenge is visible without domain knowledge. Labels map one-to-one to the public \texttt{complexity\_regime} values.
 
 \begin{table}[H]
 \centering
 \scriptsize
-\caption{Agentic OCR results by document family. Exact-record recall is primary; field-pair $F_1$ shows partial correctness. The rule separates structural challenges (above the divider) from scale tests (below it).}
+\caption{Latest-model exact-record recall by extraction problem. The divider separates structural challenges from scale tests.}
 \label{tab:agentic-by-regime}
-\begin{tabular}{@{}p{0.31\linewidth}rrrrrr@{}}
+\begin{tabular}{@{}p{0.47\linewidth}rrrr@{}}
 \toprule
-Document family & Docs & Records & Codex exact & Claude exact & Codex F1 & Claude F1 \\
+Extraction problem & Docs & Records & GPT-5.6-Sol & Fable 5 \\
 \midrule
-Driver/MVR request and roster & 3 & 1{,}260 & 1.9\% & 0.0\% & 89.1\% & 88.3\% \\
-Claim cross-page multi-hop & 3 & 77 & 32.5\% & 98.7\% & 97.1\% & 99.9\% \\
-IFTA return schedule details & 5 & 4{,}923 & 65.2\% & 63.9\% & 97.7\% & 97.1\% \\
-External loss run & 3 & 900 & 71.4\% & 93.9\% & 97.2\% & 99.7\% \\
-IFTA tax return inquiry detail & 2 & 1{,}300 & 97.7\% & 90.8\% & 99.4\% & 95.5\% \\
-Policy multi-hop & 3 & 1{,}489 & 96.4\% & 32.0\% & 99.8\% & 99.4\% \\
-IFTA multisection return packet & 2 & 796 & 99.9\% & 99.9\% & 100.0\% & 100.0\% \\
+Sparse record enrichment (driver/MVR) & 3 & 1{,}260 & 1.9\% & 1.9\% \\
+Long-range claim joins & 3 & 77 & 100.0\% & 100.0\% \\
+Split return schedules & 5 & 4{,}923 & 58.5\% & 64.6\% \\
+Mixed row/detail loss runs & 3 & 900 & 98.6\% & 99.2\% \\
+Tax inquiry detail tables & 2 & 1{,}300 & 99.8\% & 99.8\% \\
+Heterogeneous policy records & 3 & 1{,}489 & 78.7\% & 92.5\% \\
+Cross-section return joins & 2 & 796 & 99.9\% & 99.9\% \\
 \midrule
-IFTA tax return summary & 4 & 3{,}040 & 96.0\% & 99.9\% & 99.7\% & 100.0\% \\
-Driver schedule spreadsheet export & 1 & 500 & 99.4\% & 99.4\% & 99.9\% & 99.9\% \\
-IFTA mileage by vehicle & 8 & 17{,}565 & 99.8\% & 99.1\% & 100.0\% & 99.7\% \\
-Vehicle schedule spreadsheet export & 2 & 1{,}600 & 100.0\% & 100.0\% & 100.0\% & 100.0\% \\
+Tax-summary scale tests & 4 & 3{,}040 & 99.9\% & 99.9\% \\
+Driver-schedule scale test & 1 & 500 & 99.4\% & 99.4\% \\
+Mileage-by-vehicle scale tests & 8 & 17{,}565 & 99.7\% & 99.8\% \\
+Vehicle-schedule scale tests & 2 & 1{,}600 & 99.6\% & 100.0\% \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-The strict metric exposes failures hidden by partial credit. Driver/MVR packets have 1.9\% and 0.0\% exact-record recall because roster rows require sparse MVR enrichment; return schedules reach only 65.2\% and 63.9\% because surcharge fields and some rows are omitted. In contrast, the multisection cross-section join reaches 99.9\% for both agents after canonicalizing equivalent jurisdiction and fuel labels, so that construction does not challenge these systems. The packet families reverse by agent: Codex scores 96.4\% on policies but 32.5\% on claims, while Claude scores 32.0\% and 98.7\%. A family label therefore does not define a universal difficulty ordering.
+The failures differ in kind. Both agents return all 1{,}260 driver rows, but only 24 are exact because sparse MVR fields are not joined back into the roster; field micro-$F_1$ is still 89.1\%. On split return schedules, GPT-5.6-Sol returns 4{,}326 of 4{,}923 rows and Fable 5 returns 4{,}779, with additional field errors. Policy packets expose model-specific behavior: GPT-5.6-Sol omits 192 BOP records, while Fable returns the full policy record counts but still misses fields. In contrast, both agents recover all 77 long-range claim records exactly, and each misses only one of 796 cross-section return records.
 
-Cross-cutting slices show the same system dependence. Cross-section joins and repeated keys score 99.9\% for both agents. Heterogeneous lists score 96.4\% for Codex and 32.0\% for Claude; long-range evidence scores 93.3\% and 35.2\%; split records score 85.9\% and 78.6\%; inherited context scores 85.6\% and 78.7\%. These are associations, not causal effects, because tags overlap and some slices contain only a few documents. A controlled estimate would require paired renderings of the same records with and without one stressor.
+Cross-cutting slices reinforce this variation. Exact-record recall for GPT-5.6-Sol and Fable 5 is 78.7\% and 92.5\% on heterogeneous lists, 79.8\% and 92.9\% on long-range evidence, 82.6\% and 86.4\% on split records, 82.7\% and 86.4\% on inherited context, and 81.9\% and 84.6\% under layout randomization. Duplicate-bearing documents score 86.6\% and 95.2\%. By contrast, cross-section joins and repeated keys score 99.9\% for both. These are observational associations because tags overlap and document families differ; paired renderings would be needed to estimate one stressor's causal effect.
 
-Full-context one-shot extraction is not a practical full-corpus protocol for this release. The small claim packet and one driver/MVR packet returned scoreable outputs, but larger claim packets reached the model output limit and loss-run samples timed out under the same one-shot setup. This is expected for a benchmark containing documents with hundreds to thousands of target records: the one-shot condition is a lower-bound operational stress test, not the primary protocol for full-document evaluation. Future method papers should compare per-document agentic, retrieval-loop, and verification-based systems under the same OCR input condition.
+Full-context one-shot extraction is not a practical full-corpus protocol here. Small claim packets can return scoreable outputs, but larger outputs reach model limits or time out. We therefore treat one-shot prompting as a lower-bound operational stress test and use the per-document agentic protocol for full-corpus comparison.

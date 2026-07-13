@@ -5,7 +5,7 @@ Every PDF has a released OCR transcript. Experiments may instead use direct PDF 
 
 \subsection{Extraction protocols}
 \label{subsec:extraction-protocols}
-The repository includes a raw full-context API adapter, an OpenAI Agents SDK sandbox adapter, and repository-denied Codex and Claude Code CLI runners. Both CLI runners have current full-corpus results under the same OCR-conditioned protocol.
+The repository includes a raw full-context API adapter, an OpenAI Agents SDK sandbox adapter, and repository-denied Codex and Claude Code CLI runners. Four full-corpus CLI results use the same OCR-conditioned protocol.
 
 \paragraph{Full-context one-shot extraction.}
 The entire transcript is sent in one request. This is a useful lower-bound calibration, but long outputs may truncate or time out.
@@ -28,32 +28,20 @@ Field-pair micro-$F_1$ can hide incomplete records because it gives partial cred
 Reports are stored as JSON and Markdown. The checker recomputes every metric from saved predictions and ground truth without rerunning a model.
 
 \subsection{Strict completeness and field diagnostics}
-The primary metrics are exact-record recall and complete-document success. A predicted record is exact only when every normalized target field equals one ground-truth record. We compute:
+The primary metrics are exact-record recall and complete-document success. A predicted record is exact only when every normalized target field equals one ground-truth record. We compute
 \begin{align}
 \mathrm{ExactRecordRecall} &= \frac{|R_G \cap R_P|}{|R_G|},\\
 \mathrm{CompleteDocument} &= \mathds{1}[R_G = R_P],
 \end{align}
-where
-\begin{itemize}
-    \item $R_G$ is the multiset of ground-truth records after normalization;
-    \item $R_P$ is the multiset of predicted records after normalization;
-    \item $R_G \cap R_P$ is the multiset intersection, so duplicate records count with their multiplicity;
-    \item $\mathds{1}[R_G = R_P]$ equals 1 only when the two multisets are identical, so both missing and extra records fail the document.
-\end{itemize}
-The current release treats the output as an unordered record collection because source order was not part of the released agent contract.
+where $R_G$ and $R_P$ are the normalized ground-truth and predicted record multisets. The intersection preserves duplicate multiplicity, and $\mathds{1}[R_G=R_P]$ is one only when neither records nor duplicates are missing or extra. Source order is not part of the released contract.
 
 For claim incidents, records are keyed by normalized incident identifiers. String values are whitespace-normalized and compared case-insensitively, dates are normalized to \texttt{MM/DD/YYYY}, claimant lists are sorted, zero-valued default financial-breakdown cells are omitted from field diagnostics, and non-zero monetary fields are rounded to cents. Generic records use the same string normalization. Unambiguous domain labels are canonicalized: jurisdiction names to codes, fuel descriptions to parenthetical codes, line-of-business names to acronyms, and visible \texttt{Applies within} wrappers to their core clause scope. Generic records are matched greedily by overlapping non-global field pairs; \texttt{record\_type}, global policy fields, and hidden row identifiers are excluded from field matching and field-pair scoring. These field-level exclusions do not relax exact-record comparison, which uses the full normalized public record.
 
-For secondary partial-credit diagnostics we compute:
+For secondary partial-credit diagnostics we compute
 \begin{align}
 \mathrm{found} &= |G \cap P|,\\
 \mathrm{recall} &= \frac{\mathrm{found}}{|G|},\\
 \mathrm{precision} &= \frac{\mathrm{found}}{|P|},\\
 \mathrm{F1} &= \frac{2\,\mathrm{precision}\,\mathrm{recall}}{\mathrm{precision}+\mathrm{recall}},
 \end{align}
-where
-\begin{itemize}
-    \item $G$ is the multiset of normalized ground-truth field-value pairs;
-    \item $P$ is the multiset of predicted field-value pairs.
-\end{itemize}
-Reports also include exact-record precision/$F_1$, predicted counts, missing and extra records, document-macro field $F_1$, and family, evaluation-role, and stressor summaries. Because stressors co-occur, stressor slices describe associations; they are not causal estimates of one layout feature's effect.
+where $G$ and $P$ are the normalized ground-truth and predicted field-value multisets. Reports also include exact-record precision/$F_1$, predicted counts, missing and extra records, document-macro field $F_1$, and family, evaluation-role, and stressor summaries. Because stressors co-occur, stressor slices describe associations rather than causal effects.

@@ -247,3 +247,64 @@ We also report:
     \item \textbf{Exact-record precision and $F_1$}: computed from the same normalized-record intersection when systems over-extract.
     \item \textbf{Evaluation-role and stressor slices}: aggregated from the public family and problem metadata.
 \end{itemize}
+
+\subsection*{A.7 Corpus Inventory and Stressor Map}
+
+\Cref{tab:dataset-scale} lists the technical document families used by the manifest. It is an inventory, not a difficulty ordering.
+
+\begin{table}[H]
+\centering
+\small
+\caption{Current LongListBench corpus by technical family.}
+\label{tab:dataset-scale}
+\begin{tabular}{@{}lrr@{}}
+\toprule
+Document family & PDFs & Target records \\
+\midrule
+\texttt{ifta\_mileage\_by\_vehicle} & 8 & 17{,}565 \\
+\texttt{ifta\_multisection\_return\_packet} & 2 & 796 \\
+\texttt{ifta\_return\_schedule\_details} & 5 & 4{,}923 \\
+\texttt{ifta\_tax\_return\_summary} & 4 & 3{,}040 \\
+\texttt{driver\_mvr\_request\_and\_roster} & 3 & 1{,}260 \\
+\texttt{loss\_run\_external} & 3 & 900 \\
+\texttt{vehicle\_schedule\_spreadsheet\_export} & 2 & 1{,}600 \\
+\texttt{ifta\_tax\_return\_inquiry\_detail} & 2 & 1{,}300 \\
+\texttt{driver\_schedule\_spreadsheet\_export} & 1 & 500 \\
+\texttt{claim\_crosspage\_multihop} & 3 & 77 \\
+\texttt{policy\_multihop\_bop} & 1 & 360 \\
+\texttt{policy\_multihop\_wc} & 1 & 510 \\
+\texttt{policy\_multihop\_cgl} & 1 & 619 \\
+\midrule
+\textbf{Total} & \textbf{36} & \textbf{33{,}450} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{longtable}{@{}p{0.20\linewidth}p{0.32\linewidth}p{0.38\linewidth}@{}}
+\caption{Representative pages for auditing canonical stressors. Page numbers refer to released PDFs.}
+\label{tab:complexity-doc-examples}\\
+\toprule
+Stressor & Example PDF pages & Visible document evidence \\
+\midrule
+\endfirsthead
+\toprule
+Stressor & Example PDF pages & Visible document evidence \\
+\midrule
+\endhead
+\bottomrule
+\endlastfoot
+\path{page_breaks} & \path{ifta_mileage_by_vehicle_001}, pages 3--4 & A repeated list continues with inherited unit context; this is pagination pressure, not an item-level split. \\
+\path{split_records} & \path{ifta_multisection_return_001}, pages 2 and 4 & One jurisdiction record combines mileage and gallon fields with later tax-detail fields. \\
+\path{multi_row} & \path{loss_run_external_001}, pages 1--2; \path{driver_mvr_packet_001}, page 10 & Records include description rows and driver or MVR detail blocks. \\
+\path{duplicates} & \path{loss_run_external_001}, pages 1--2; \path{multihop_bop_012_001}, page 142 & Summary, archived, or prior-term material creates near-duplicate distractors. \\
+\path{large_doc} & \path{ifta_mileage_by_vehicle_008}; \path{mixed_cgl_040_001} & The files reach 218 and 316 pages. \\
+\path{multiple_tables} & \path{ifta_tax_inquiry_001}, page 1; \path{loss_run_external_001}, pages 1--2 & Targets appear beside support tables, empty tables, summaries, and totals. \\
+\path{multi_column} & \path{mixed_cgl_040_001}, pages 139--150; \path{multihop_wc_025_001}, pages 95--106 & Policy provisions use two-column form pages. \\
+\path{merged_cells} & \path{loss_run_external_001}, page 1; \path{ifta_tax_inquiry_001}, page 1 & Section-spanning rows interrupt regular table structure. \\
+\path{ocr_condition} & Any PDF and matching file under \path{data/transcripts/ocr_gemini/} & Released text is OCR from page images, not HTML source text. \\
+\path{ocr_layout_condition} & \path{ifta_multisection_return_001}, pages 2 and 4 & OCR preserves two visually distinct tables rather than a clean joined row. \\
+\path{long_range_evidence} & \path{multihop_012_001_crosspage}, pages 4, 36, 56, 57, 76 & A front claim row joins to distant driver, policy, cause, claimant, and ledger sections. \\
+\path{cross_section_join} & \path{ifta_multisection_return_001}, pages 1, 2, 4 & A target combines return context, mileage/gallons, and tax-detail values. \\
+\path{repeated_keys} & \path{ifta_multisection_return_001}, pages 2, 4, 8, 10 & Jurisdiction codes recur across returns, so state alone is not a unique key. \\
+\path{heterogeneous_record_list} & \path{multihop_bop_012_001}, pages 26, 48, 94, 127, 142 & One list mixes locations, coverages, forms, endorsements, premiums, and clauses. \\
+\end{longtable}

@@ -1,0 +1,804 @@
+{
+  "generated_at": "2026-07-13T13:09:48.964711+00:00",
+  "runner": "run_claude_cli_evaluation.py",
+  "model_key": "claude_fable5",
+  "requested_model": "claude-fable-5",
+  "effort": "xhigh",
+  "transcript": "ocr",
+  "cli_version_observed_at_metadata_write": "2.1.207 (Claude Code)",
+  "authentication": "Claude subscription; credentials are not stored",
+  "samples": {
+    "driver_mvr_packet_001": {
+      "requested_model": "claude-fable-5",
+      "matching_inference_models": [
+        "claude-fable-5"
+      ],
+      "observed_models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001"
+      ],
+      "effort": "xhigh",
+      "duration_seconds": 98.29,
+      "tokens": {
+        "requests": 8,
+        "input_tokens": 172954,
+        "cached_input_tokens": 142695,
+        "cache_creation_input_tokens": 29531,
+        "output_tokens": 5713,
+        "total_tokens": 178667
+      },
+      "estimated_api_cost_usd": 0.7976075,
+      "claude_cli_version": "2.1.207 (Claude Code)"
+    },
+    "multihop_012_001_crosspage": {
+      "requested_model": "claude-fable-5",
+      "matching_inference_models": [
+        "claude-fable-5"
+      ],
+      "observed_models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001"
+      ],
+      "effort": "xhigh",
+      "duration_seconds": 306.111,
+      "tokens": {
+        "requests": 17,
+        "input_tokens": 1061587,
+        "cached_input_tokens": 943327,
+        "cache_creation_input_tokens": 117514,
+        "output_tokens": 17310,
+        "total_tokens": 1078897
+      },
+      "estimated_api_cost_usd": 3.278057,
+      "claude_cli_version": "2.1.207 (Claude Code)"
+    },
+    "multihop_025_001_crosspage": {
+      "requested_model": "claude-fable-5",
+      "matching_inference_models": [
+        "claude-fable-5"
+      ],
+      "observed_models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001"
+      ],
+      "effort": "xhigh",
+      "duration_seconds": 355.644,
+      "tokens": {
+        "requests": 19,
+        "input_tokens": 1437307,
+        "cached_input_tokens": 1299346,
+        "cache_creation_input_tokens": 137211,
+        "output_tokens": 21496,
+        "total_tokens": 1458803
+      },
+      "estimated_api_cost_usd": 4.089628500000001,
+      "claude_cli_version": "2.1.207 (Claude Code)"
+    },
+    "mixed_040_001_crosspage": {
+      "requested_model": "claude-fable-5",
+      "matching_inference_models": [
+        "claude-fable-5"
+      ],
+      "observed_models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001"
+      ],
+      "effort": "xhigh",
+      "duration_seconds": 403.866,
+      "tokens": {
+        "requests": 17,
+        "input_tokens": 875046,
+        "cached_input_tokens": 766296,
+        "cache_creation_input_tokens": 108006,
+        "output_tokens": 31471,
+        "total_tokens": 906517
+      },
+      "estimated_api_cost_usd": 3.6902060000000003,
+      "claude_cli_version": "2.1.207 (Claude Code)"
+    },
+    "ifta_multisection_return_001": {
+      "requested_model": "claude-fable-5",
+      "matching_inference_models": [
+        "claude-fable-5"
+      ],
+      "observed_models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001"
+      ],
+      "effort": "xhigh",
+      "duration_seconds": 277.594,
+      "tokens": {
+        "requests": 15,
+        "input_tokens": 607886,
+        "cached_input_tokens": 530936,
+        "cache_creation_input_tokens": 76208,
+        "output_tokens": 14303,
+        "total_tokens": 622189
+      },
+      "estimated_api_cost_usd": 2.1989509999999997,
+      "claude_cli_version": "2.1.207 (Claude Code)"
+    },
+    "loss_run_external_001": {
+      "requested_model": "claude-fable-5",
+      "matching_inference_models": [
+        "claude-fable-5"
+      ],
+      "observed_models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001"
+      ],
+      "effort": "xhigh",
+      "duration_seconds": 657.669,
+      "tokens": {
+        "requests": 17,
+        "input_tokens": 1225931,
+        "cached_input_tokens": 1025893,
+        "cache_creation_input_tokens": 199292,
+        "output_tokens": 48467,
+        "total_tokens": 1274398
+      },
+      "estimated_api_cost_usd": 5.940697999999999,
+      "claude_cli_version": "2.1.207 (Claude Code)"
+    },
+    "ifta_multisection_return_002": {
+      "requested_model": "claude-fable-5",
+      "matching_inference_models": [
+        "claude-fable-5"
+      ],
+      "observed_models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001"
+      ],
+      "effort": "xhigh",
+      "duration_seconds": 276.956,
+      "tokens": {
+        "requests": 18,
+        "input_tokens": 898907,
+        "cached_input_tokens": 800132,
+        "cache_creation_input_tokens": 98027,
+        "output_tokens": 14185,
+        "total_tokens": 913092
+      },
+      "estimated_api_cost_usd": 2.7350445,
+      "claude_cli_version": "2.1.207 (Claude Code)"
+    },
+    "driver_mvr_packet_002": {
+      "requested_model": "claude-fable-5",
+      "matching_inference_models": [
+        "claude-fable-5"
+      ],
+      "observed_models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001"
+      ],
+      "effort": "xhigh",
+      "duration_seconds": 103.469,
+      "tokens": {
+        "requests": 8,
+        "input_tokens": 219707,
+        "cached_input_tokens": 177526,
+        "cache_creation_input_tokens": 41453,
+        "output_tokens": 6403,
+        "total_tokens": 226110
+      },
+      "estimated_api_cost_usd": 1.0159635,
+      "claude_cli_version": "2.1.207 (Claude Code)"
+    },
+    "loss_run_external_003": {
+      "requested_model": "claude-fable-5",
+      "matching_inference_models": [
+        "claude-fable-5"
+      ],
+      "observed_models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001"
+      ],
+      "effort": "xhigh",
+      "duration_seconds": 797.159,
+      "tokens": {
+        "requests": 18,
+        "input_tokens": 1378124,
+        "cached_input_tokens": 1170962,
+        "cache_creation_input_tokens": 206414,
+        "output_tokens": 56811,
+        "total_tokens": 1434935
+      },
+      "estimated_api_cost_usd": 6.592012,
+      "claude_cli_version": "2.1.207 (Claude Code)"
+    },
+    "loss_run_external_002": {
+      "requested_model": "claude-fable-5",
+      "matching_inference_models": [
+        "claude-fable-5"
+      ],
+      "observed_models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001"
+      ],
+      "effort": "xhigh",
+      "duration_seconds": 859.427,
+      "tokens": {
+        "requests": 26,
+        "input_tokens": 2321426,
+        "cached_input_tokens": 2102130,
+        "cache_creation_input_tokens": 218534,
+        "output_tokens": 61503,
+        "total_tokens": 2382929
+      },
+      "estimated_api_cost_usd": 7.90933,
+      "claude_cli_version": "2.1.207 (Claude Code)"
+    },
+    "driver_schedule_sparse_001": {
+      "requested_model": "claude-fable-5",
+      "matching_inference_models": [
+        "claude-fable-5"
+      ],
+      "observed_models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001"
+      ],
+      "effort": "xhigh",
+      "duration_seconds": 95.772,
+      "tokens": {
+        "requests": 8,
+        "input_tokens": 152083,
+        "cached_input_tokens": 126526,
+        "cache_creation_input_tokens": 24829,
+        "output_tokens": 5156,
+        "total_tokens": 157239
+      },
+      "estimated_api_cost_usd": 0.6948135,
+      "claude_cli_version": "2.1.207 (Claude Code)"
+    },
+    "driver_mvr_packet_003": {
+      "requested_model": "claude-fable-5",
+      "matching_inference_models": [
+        "claude-fable-5"
+      ],
+      "observed_models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001"
+      ],
+      "effort": "xhigh",
+      "duration_seconds": 117.774,
+      "tokens": {
+        "requests": 8,
+        "input_tokens": 258413,
+        "cached_input_tokens": 214324,
+        "cache_creation_input_tokens": 43361,
+        "output_tokens": 7357,
+        "total_tokens": 265770
+      },
+      "estimated_api_cost_usd": 1.1243115000000001,
+      "claude_cli_version": "2.1.207 (Claude Code)"
+    },
+    "multihop_bop_012_001": {
+      "requested_model": "claude-fable-5",
+      "matching_inference_models": [
+        "claude-fable-5"
+      ],
+      "observed_models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001"
+      ],
+      "effort": "xhigh",
+      "duration_seconds": 764.738,
+      "tokens": {
+        "requests": 23,
+        "input_tokens": 1887279,
+        "cached_input_tokens": 1649499,
+        "cache_creation_input_tokens": 237026,
+        "output_tokens": 59363,
+        "total_tokens": 1946642
+      },
+      "estimated_api_cost_usd": 7.580859000000002,
+      "claude_cli_version": "2.1.207 (Claude Code)"
+    },
+    "ifta_tax_inquiry_001": {
+      "requested_model": "claude-fable-5",
+      "matching_inference_models": [
+        "claude-fable-5"
+      ],
+      "observed_models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001"
+      ],
+      "effort": "xhigh",
+      "duration_seconds": 152.893,
+      "tokens": {
+        "requests": 7,
+        "input_tokens": 174456,
+        "cached_input_tokens": 135526,
+        "cache_creation_input_tokens": 38204,
+        "output_tokens": 11141,
+        "total_tokens": 185597
+      },
+      "estimated_api_cost_usd": 1.170231,
+      "claude_cli_version": "2.1.207 (Claude Code)"
+    },
+    "ifta_tax_inquiry_002": {
+      "requested_model": "claude-fable-5",
+      "matching_inference_models": [
+        "claude-fable-5"
+      ],
+      "observed_models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001"
+      ],
+      "effort": "xhigh",
+      "duration_seconds": 112.76,
+      "tokens": {
+        "requests": 6,
+        "input_tokens": 135173,
+        "cached_input_tokens": 96245,
+        "cache_creation_input_tokens": 38204,
+        "output_tokens": 8180,
+        "total_tokens": 143353
+      },
+      "estimated_api_cost_usd": 0.9828800000000001,
+      "claude_cli_version": "2.1.207 (Claude Code)"
+    },
+    "ifta_return_schedule_001": {
+      "requested_model": "claude-fable-5",
+      "matching_inference_models": [
+        "claude-fable-5"
+      ],
+      "observed_models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001"
+      ],
+      "effort": "xhigh",
+      "duration_seconds": 575.178,
+      "tokens": {
+        "requests": 12,
+        "input_tokens": 857698,
+        "cached_input_tokens": 676911,
+        "cache_creation_input_tokens": 180051,
+        "output_tokens": 46924,
+        "total_tokens": 904622
+      },
+      "estimated_api_cost_usd": 5.273953500000001,
+      "claude_cli_version": "2.1.207 (Claude Code)"
+    },
+    "multihop_wc_025_001": {
+      "requested_model": "claude-fable-5",
+      "matching_inference_models": [
+        "claude-fable-5"
+      ],
+      "observed_models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001"
+      ],
+      "effort": "xhigh",
+      "duration_seconds": 769.163,
+      "tokens": {
+        "requests": 34,
+        "input_tokens": 2422447,
+        "cached_input_tokens": 2255538,
+        "cache_creation_input_tokens": 166141,
+        "output_tokens": 50562,
+        "total_tokens": 2473009
+      },
+      "estimated_api_cost_usd": 6.8609255000000005,
+      "claude_cli_version": "2.1.207 (Claude Code)"
+    },
+    "ifta_tax_summary_001": {
+      "requested_model": "claude-fable-5",
+      "matching_inference_models": [
+        "claude-fable-5"
+      ],
+      "observed_models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001"
+      ],
+      "effort": "xhigh",
+      "duration_seconds": 322.005,
+      "tokens": {
+        "requests": 16,
+        "input_tokens": 956668,
+        "cached_input_tokens": 856975,
+        "cache_creation_input_tokens": 98949,
+        "output_tokens": 23461,
+        "total_tokens": 980129
+      },
+      "estimated_api_cost_usd": 3.2671275000000004,
+      "claude_cli_version": "2.1.207 (Claude Code)"
+    },
+    "ifta_tax_summary_002": {
+      "requested_model": "claude-fable-5",
+      "matching_inference_models": [
+        "claude-fable-5"
+      ],
+      "observed_models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001"
+      ],
+      "effort": "xhigh",
+      "duration_seconds": 306.281,
+      "tokens": {
+        "requests": 10,
+        "input_tokens": 617101,
+        "cached_input_tokens": 516149,
+        "cache_creation_input_tokens": 100220,
+        "output_tokens": 25143,
+        "total_tokens": 642244
+      },
+      "estimated_api_cost_usd": 3.0263039999999997,
+      "claude_cli_version": "2.1.207 (Claude Code)"
+    },
+    "ifta_tax_summary_003": {
+      "requested_model": "claude-fable-5",
+      "matching_inference_models": [
+        "claude-fable-5"
+      ],
+      "observed_models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001"
+      ],
+      "effort": "xhigh",
+      "duration_seconds": 391.751,
+      "tokens": {
+        "requests": 10,
+        "input_tokens": 585135,
+        "cached_input_tokens": 482578,
+        "cache_creation_input_tokens": 101825,
+        "output_tokens": 32140,
+        "total_tokens": 617275
+      },
+      "estimated_api_cost_usd": 3.3625555,
+      "claude_cli_version": "2.1.207 (Claude Code)"
+    },
+    "mixed_cgl_040_001": {
+      "requested_model": "claude-fable-5",
+      "matching_inference_models": [
+        "claude-fable-5"
+      ],
+      "observed_models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001"
+      ],
+      "effort": "xhigh",
+      "duration_seconds": 1090.173,
+      "tokens": {
+        "requests": 54,
+        "input_tokens": 5991237,
+        "cached_input_tokens": 5802190,
+        "cache_creation_input_tokens": 188237,
+        "output_tokens": 68047,
+        "total_tokens": 6059284
+      },
+      "estimated_api_cost_usd": 11.558447499999996,
+      "claude_cli_version": "2.1.207 (Claude Code)"
+    },
+    "vehicle_schedule_sparse_001": {
+      "requested_model": "claude-fable-5",
+      "matching_inference_models": [
+        "claude-fable-5"
+      ],
+      "observed_models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001"
+      ],
+      "effort": "xhigh",
+      "duration_seconds": 226.346,
+      "tokens": {
+        "requests": 9,
+        "input_tokens": 345477,
+        "cached_input_tokens": 284666,
+        "cache_creation_input_tokens": 60081,
+        "output_tokens": 16835,
+        "total_tokens": 362312
+      },
+      "estimated_api_cost_usd": 1.8775734999999998,
+      "claude_cli_version": "2.1.207 (Claude Code)"
+    },
+    "ifta_tax_summary_004": {
+      "requested_model": "claude-fable-5",
+      "matching_inference_models": [
+        "claude-fable-5"
+      ],
+      "observed_models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001"
+      ],
+      "effort": "xhigh",
+      "duration_seconds": 542.329,
+      "tokens": {
+        "requests": 15,
+        "input_tokens": 1221901,
+        "cached_input_tokens": 1027914,
+        "cache_creation_input_tokens": 193245,
+        "output_tokens": 42444,
+        "total_tokens": 1264345
+      },
+      "estimated_api_cost_usd": 5.5659415,
+      "claude_cli_version": "2.1.207 (Claude Code)"
+    },
+    "vehicle_schedule_sparse_002": {
+      "requested_model": "claude-fable-5",
+      "matching_inference_models": [
+        "claude-fable-5"
+      ],
+      "observed_models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001"
+      ],
+      "effort": "xhigh",
+      "duration_seconds": 317.035,
+      "tokens": {
+        "requests": 13,
+        "input_tokens": 610389,
+        "cached_input_tokens": 545406,
+        "cache_creation_input_tokens": 64245,
+        "output_tokens": 22005,
+        "total_tokens": 632394
+      },
+      "estimated_api_cost_usd": 2.4489435000000004,
+      "claude_cli_version": "2.1.207 (Claude Code)"
+    },
+    "ifta_return_schedule_003": {
+      "requested_model": "claude-fable-5",
+      "matching_inference_models": [
+        "claude-fable-5"
+      ],
+      "observed_models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001"
+      ],
+      "effort": "xhigh",
+      "duration_seconds": 669.009,
+      "tokens": {
+        "requests": 22,
+        "input_tokens": 2141628,
+        "cached_input_tokens": 1858228,
+        "cache_creation_input_tokens": 282644,
+        "output_tokens": 49937,
+        "total_tokens": 2191565
+      },
+      "estimated_api_cost_usd": 7.888532999999999,
+      "claude_cli_version": "2.1.207 (Claude Code)"
+    },
+    "ifta_return_schedule_002": {
+      "requested_model": "claude-fable-5",
+      "matching_inference_models": [
+        "claude-fable-5"
+      ],
+      "observed_models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001"
+      ],
+      "effort": "xhigh",
+      "duration_seconds": 878.117,
+      "tokens": {
+        "requests": 21,
+        "input_tokens": 2204411,
+        "cached_input_tokens": 1926790,
+        "cache_creation_input_tokens": 276867,
+        "output_tokens": 70567,
+        "total_tokens": 2274978
+      },
+      "estimated_api_cost_usd": 8.916362500000002,
+      "claude_cli_version": "2.1.207 (Claude Code)"
+    },
+    "ifta_mileage_by_vehicle_001": {
+      "requested_model": "claude-fable-5",
+      "matching_inference_models": [
+        "claude-fable-5"
+      ],
+      "observed_models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001"
+      ],
+      "effort": "xhigh",
+      "duration_seconds": 230.088,
+      "tokens": {
+        "requests": 11,
+        "input_tokens": 829940,
+        "cached_input_tokens": 708086,
+        "cache_creation_input_tokens": 121120,
+        "output_tokens": 15174,
+        "total_tokens": 845114
+      },
+      "estimated_api_cost_usd": 2.980971,
+      "claude_cli_version": "2.1.207 (Claude Code)"
+    },
+    "ifta_return_schedule_005": {
+      "requested_model": "claude-fable-5",
+      "matching_inference_models": [
+        "claude-fable-5"
+      ],
+      "observed_models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001"
+      ],
+      "effort": "xhigh",
+      "duration_seconds": 671.152,
+      "tokens": {
+        "requests": 15,
+        "input_tokens": 1607227,
+        "cached_input_tokens": 1313564,
+        "cache_creation_input_tokens": 292923,
+        "output_tokens": 54328,
+        "total_tokens": 1661555
+      },
+      "estimated_api_cost_usd": 7.691746500000001,
+      "claude_cli_version": "2.1.207 (Claude Code)"
+    },
+    "ifta_return_schedule_004": {
+      "requested_model": "claude-fable-5",
+      "matching_inference_models": [
+        "claude-fable-5"
+      ],
+      "observed_models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001"
+      ],
+      "effort": "xhigh",
+      "duration_seconds": 770.492,
+      "tokens": {
+        "requests": 16,
+        "input_tokens": 1927572,
+        "cached_input_tokens": 1643777,
+        "cache_creation_input_tokens": 283051,
+        "output_tokens": 66264,
+        "total_tokens": 1993836
+      },
+      "estimated_api_cost_usd": 8.4953995,
+      "claude_cli_version": "2.1.207 (Claude Code)"
+    },
+    "ifta_mileage_by_vehicle_002": {
+      "requested_model": "claude-fable-5",
+      "matching_inference_models": [
+        "claude-fable-5"
+      ],
+      "observed_models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001"
+      ],
+      "effort": "xhigh",
+      "duration_seconds": 508.694,
+      "tokens": {
+        "requests": 25,
+        "input_tokens": 1605687,
+        "cached_input_tokens": 1471380,
+        "cache_creation_input_tokens": 133547,
+        "output_tokens": 28034,
+        "total_tokens": 1633721
+      },
+      "estimated_api_cost_usd": 4.542862499999999,
+      "claude_cli_version": "2.1.207 (Claude Code)"
+    },
+    "ifta_mileage_by_vehicle_003": {
+      "requested_model": "claude-fable-5",
+      "matching_inference_models": [
+        "claude-fable-5"
+      ],
+      "observed_models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001"
+      ],
+      "effort": "xhigh",
+      "duration_seconds": 477.49,
+      "tokens": {
+        "requests": 24,
+        "input_tokens": 2490771,
+        "cached_input_tokens": 2252339,
+        "cache_creation_input_tokens": 237676,
+        "output_tokens": 28527,
+        "total_tokens": 2519298
+      },
+      "estimated_api_cost_usd": 6.650044,
+      "claude_cli_version": "2.1.207 (Claude Code)"
+    },
+    "ifta_mileage_by_vehicle_004": {
+      "requested_model": "claude-fable-5",
+      "matching_inference_models": [
+        "claude-fable-5"
+      ],
+      "observed_models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001"
+      ],
+      "effort": "xhigh",
+      "duration_seconds": 617.623,
+      "tokens": {
+        "requests": 38,
+        "input_tokens": 2719851,
+        "cached_input_tokens": 2573104,
+        "cache_creation_input_tokens": 145973,
+        "output_tokens": 34773,
+        "total_tokens": 2754624
+      },
+      "estimated_api_cost_usd": 6.137001499999999,
+      "claude_cli_version": "2.1.207 (Claude Code)"
+    },
+    "ifta_mileage_by_vehicle_005": {
+      "requested_model": "claude-fable-5",
+      "matching_inference_models": [
+        "claude-fable-5"
+      ],
+      "observed_models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001"
+      ],
+      "effort": "xhigh",
+      "duration_seconds": 671.325,
+      "tokens": {
+        "requests": 45,
+        "input_tokens": 2807955,
+        "cached_input_tokens": 2705569,
+        "cache_creation_input_tokens": 101594,
+        "output_tokens": 36046,
+        "total_tokens": 2844001
+      },
+      "estimated_api_cost_usd": 5.778559,
+      "claude_cli_version": "2.1.207 (Claude Code)"
+    },
+    "ifta_mileage_by_vehicle_006": {
+      "requested_model": "claude-fable-5",
+      "matching_inference_models": [
+        "claude-fable-5"
+      ],
+      "observed_models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001"
+      ],
+      "effort": "xhigh",
+      "duration_seconds": 617.266,
+      "tokens": {
+        "requests": 40,
+        "input_tokens": 1869175,
+        "cached_input_tokens": 1777202,
+        "cache_creation_input_tokens": 91195,
+        "output_tokens": 34261,
+        "total_tokens": 1903436
+      },
+      "estimated_api_cost_usd": 4.6308145,
+      "claude_cli_version": "2.1.207 (Claude Code)"
+    },
+    "ifta_mileage_by_vehicle_007": {
+      "requested_model": "claude-fable-5",
+      "matching_inference_models": [
+        "claude-fable-5"
+      ],
+      "observed_models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001"
+      ],
+      "effort": "xhigh",
+      "duration_seconds": 810.368,
+      "tokens": {
+        "requests": 48,
+        "input_tokens": 3834111,
+        "cached_input_tokens": 3692671,
+        "cache_creation_input_tokens": 140644,
+        "output_tokens": 44260,
+        "total_tokens": 3878371
+      },
+      "estimated_api_cost_usd": 7.664526000000002,
+      "claude_cli_version": "2.1.207 (Claude Code)"
+    },
+    "ifta_mileage_by_vehicle_008": {
+      "requested_model": "claude-fable-5",
+      "matching_inference_models": [
+        "claude-fable-5"
+      ],
+      "observed_models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001"
+      ],
+      "effort": "xhigh",
+      "duration_seconds": 758.847,
+      "tokens": {
+        "requests": 36,
+        "input_tokens": 1834334,
+        "cached_input_tokens": 1710237,
+        "cache_creation_input_tokens": 123331,
+        "output_tokens": 44862,
+        "total_tokens": 1879196
+      },
+      "estimated_api_cost_usd": 5.495479500000001,
+      "claude_cli_version": "2.1.207 (Claude Code)"
+    }
+  }
+}

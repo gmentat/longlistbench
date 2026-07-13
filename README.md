@@ -215,43 +215,45 @@ OCR support should be interpreted at the affected-record and field level, not on
 
 Saved reports under `benchmarks/results/` should be treated as local run artifacts unless their manifest hash matches the current `data/manifest.json`. After replacing layouts, rerun OCR and evaluation before citing current-layout or current-model baselines. The current released dataset includes OCR transcripts for every PDF.
 
-The release includes two full-corpus repository-denied coding-agent runs under the same OCR input and field-contract protocol. Both directories include all 36 predictions and reports that can be checked offline.
+The release includes four full-corpus repository-denied coding-agent runs under the same OCR input and field-contract protocol. Each result directory includes all 36 predictions and a report that can be checked offline.
 
 | Agent | Documents | Target records | Errors | Exact-record recall | Complete documents | Field micro-F1 |
 |---|---:|---:|---:|---:|---:|---:|
+| Codex CLI `gpt-5.6-sol`, xhigh | 36 | 33,450 | 0 | 89.0% | 13/36 (36.1%) | 97.3% |
+| Claude Code `claude-fable-5`, xhigh | 36 | 33,450 | 0 | 90.6% | 15/36 (41.7%) | 98.9% |
 | Codex CLI `gpt-5.5`, xhigh | 36 | 33,450 | 0 | 89.5% | 12/36 (33.3%) | 98.7% |
 | Claude Code `claude-opus-4-8`, xhigh | 36 | 33,450 | 0 | 86.9% | 13/36 (36.1%) | 98.6% |
 
-The saved results are under `benchmarks/results/codex_full_current_ocr_v2/` and `benchmarks/results/claude_opus48_full_current_ocr_v2/`.
+The latest saved results are under `benchmarks/results/codex_gpt56_sol_full_current_ocr_v2/` and `benchmarks/results/claude_fable5_full_current_ocr_v2/`; the GPT-5.5 and Opus 4.8 comparison runs remain available beside them.
 
 An exact record must match every normalized target field. Complete-document success requires the predicted and ground-truth record multisets to be identical, including duplicates and with no extra records. Record order is not scored. Field-pair F1 remains a secondary partial-credit diagnostic.
 
-The evaluator uses a fixed document-family mapping for scale-control and structural-challenge roles:
+The evaluator uses a fixed document-family mapping for scale-test and structural-challenge roles:
 
-| Evaluation role | Documents | Target records | Codex exact records | Claude exact records | Codex complete docs | Claude complete docs |
+| Evaluation role | Documents | Target records | GPT-5.6-Sol exact | Fable 5 exact | GPT-5.6-Sol complete | Fable 5 complete |
 |---|---:|---:|---:|---:|---:|---:|
-| Structural challenges | 21 | 10,745 | 68.9% | 60.7% | 2/21 (9.5%) | 3/21 (14.3%) |
-| Scale tests | 15 | 22,705 | 99.3% | 99.3% | 10/15 (66.7%) | 10/15 (66.7%) |
+| Structural challenges | 21 | 10,745 | 66.4% | 71.2% | 4/21 (19.0%) | 4/21 (19.0%) |
+| Scale tests | 15 | 22,705 | 99.7% | 99.8% | 9/15 (60.0%) | 11/15 (73.3%) |
 
-Strict exact-record recall by document family:
+Strict exact-record recall for the latest models, labeled by the extraction problem each family emphasizes:
 
-| Document family | Documents | Target records | Codex exact records | Claude exact records |
+| Extraction problem | Documents | Target records | GPT-5.6-Sol | Fable 5 |
 |---|---:|---:|---:|---:|
-| Driver/MVR request and roster | 3 | 1,260 | 1.9% | 0.0% |
-| Claim cross-page multi-hop | 3 | 77 | 32.5% | 98.7% |
-| IFTA return schedule details | 5 | 4,923 | 65.2% | 63.9% |
-| External loss run | 3 | 900 | 71.4% | 93.9% |
-| IFTA tax return inquiry detail | 2 | 1,300 | 97.7% | 90.8% |
-| Policy multi-hop | 3 | 1,489 | 96.4% | 32.0% |
-| IFTA multisection return packet | 2 | 796 | 99.9% | 99.9% |
-| IFTA tax return summary | 4 | 3,040 | 96.0% | 99.9% |
-| Driver schedule spreadsheet export | 1 | 500 | 99.4% | 99.4% |
-| IFTA mileage by vehicle | 8 | 17,565 | 99.8% | 99.1% |
-| Vehicle schedule spreadsheet export | 2 | 1,600 | 100.0% | 100.0% |
+| Sparse record enrichment (driver/MVR) | 3 | 1,260 | 1.9% | 1.9% |
+| Long-range claim joins | 3 | 77 | 100.0% | 100.0% |
+| Split return schedules | 5 | 4,923 | 58.5% | 64.6% |
+| Mixed row/detail loss runs | 3 | 900 | 98.6% | 99.2% |
+| Tax inquiry detail tables | 2 | 1,300 | 99.8% | 99.8% |
+| Heterogeneous policy records | 3 | 1,489 | 78.7% | 92.5% |
+| Cross-section return joins | 2 | 796 | 99.9% | 99.9% |
+| Tax-summary scale tests | 4 | 3,040 | 99.9% | 99.9% |
+| Driver-schedule scale test | 1 | 500 | 99.4% | 99.4% |
+| Mileage-by-vehicle scale tests | 8 | 17,565 | 99.7% | 99.8% |
+| Vehicle-schedule scale tests | 2 | 1,600 | 99.6% | 100.0% |
 
 Full-context one-shot prompting is not treated as a full-corpus protocol for this release. It is useful as a lower-bound stress test, but the largest documents can hit model output limits or latency timeouts before returning a scoreable complete list.
 
-For both released runs, claim tasks received the published JSON Schema. Generic tasks received sample-specific field names and record groups derived from ground-truth object structure. This disclosed the output schema but not target values or counts. Each temporary workspace contained only the OCR transcript, field contract, prompt, and output directory; the macOS sandbox denied the benchmark repository, and the prompt prohibited other host files. This was repository isolation rather than a host-wide filesystem allowlist. Scoring normalizes whitespace, dates, decimals, accounting negatives, string case, and documented region/fuel/line-of-business/clause-scope representations before comparing complete records and secondary field-value pairs.
+For all released runs, claim tasks received the published JSON Schema. Generic tasks received sample-specific field names and record groups derived from ground-truth object structure. This disclosed the output schema but not target values or counts. Each temporary workspace contained only the OCR transcript, field contract, prompt, and output directory; the macOS sandbox denied the benchmark repository, and the prompt prohibited other host files. This was repository isolation rather than a host-wide filesystem allowlist. Scoring normalizes whitespace, dates, decimals, accounting negatives, string case, and documented region/fuel/line-of-business/clause-scope representations before comparing complete records and secondary field-value pairs.
 
 ## Development Setup
 

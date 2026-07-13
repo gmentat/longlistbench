@@ -19,6 +19,8 @@ except ImportError:
 
 DEFAULT_REPO_ID = "kaydotai/LongListBench"
 DEFAULT_BASELINE_REPORTS = (
+    Path(__file__).resolve().parent / "results" / "codex_gpt56_sol_full_current_ocr_v2" / "evaluation_report.json",
+    Path(__file__).resolve().parent / "results" / "claude_fable5_full_current_ocr_v2" / "evaluation_report.json",
     Path(__file__).resolve().parent / "results" / "codex_full_current_ocr_v2" / "evaluation_report.json",
     Path(__file__).resolve().parent / "results" / "claude_opus48_full_current_ocr_v2" / "evaluation_report.json",
 )
@@ -33,29 +35,39 @@ CONFIG_DESCRIPTIONS = {
 CLAIM_TARGET_TYPES = {"loss_run_incident"}
 BASELINE_MODEL_KEY = "codex_gpt55"
 BASELINE_PRESENTATIONS = {
+    "codex_gpt56_sol": {
+        "label": "Codex CLI `gpt-5.6-sol`, xhigh reasoning",
+        "family_label": "GPT-5.6-Sol exact records",
+        "description": "Codex CLI invoked `gpt-5.6-sol` with xhigh reasoning",
+    },
+    "claude_fable5": {
+        "label": "Claude Code CLI `claude-fable-5`, xhigh effort",
+        "family_label": "Fable 5 exact records",
+        "description": "Claude Code CLI invoked `claude-fable-5` with xhigh effort",
+    },
     "codex_gpt55": {
         "label": "Codex CLI `gpt-5.5`, xhigh reasoning",
-        "family_label": "Codex exact records",
+        "family_label": "GPT-5.5 exact records",
         "description": "Codex CLI invoked `gpt-5.5` with xhigh reasoning",
     },
     "claude_opus48": {
         "label": "Claude Code CLI `claude-opus-4-8`, xhigh effort",
-        "family_label": "Claude exact records",
+        "family_label": "Opus 4.8 exact records",
         "description": "Claude Code CLI invoked `claude-opus-4-8` with xhigh effort",
     },
 }
 BASELINE_REGIMES = (
-    ("ifta_multisection_return_packet", "IFTA multisection return packet"),
-    ("driver_mvr_request_and_roster", "Driver/MVR request and roster"),
-    ("policy_multi_hop", "Policy multi-hop"),
-    ("claim_crosspage_multihop", "Claim cross-page multi-hop"),
-    ("ifta_return_schedule_details", "IFTA return schedule details"),
-    ("loss_run_external", "External loss run"),
-    ("ifta_tax_return_inquiry_detail", "IFTA tax return inquiry detail"),
-    ("ifta_tax_return_summary", "IFTA tax return summary"),
-    ("driver_schedule_spreadsheet_export", "Driver schedule spreadsheet export"),
-    ("ifta_mileage_by_vehicle", "IFTA mileage by vehicle"),
-    ("vehicle_schedule_spreadsheet_export", "Vehicle schedule spreadsheet export"),
+    ("driver_mvr_request_and_roster", "Sparse record enrichment (driver/MVR)"),
+    ("claim_crosspage_multihop", "Long-range claim joins"),
+    ("ifta_return_schedule_details", "Split return schedules"),
+    ("loss_run_external", "Mixed row/detail loss runs"),
+    ("ifta_tax_return_inquiry_detail", "Tax inquiry detail tables"),
+    ("policy_multi_hop", "Heterogeneous policy records"),
+    ("ifta_multisection_return_packet", "Cross-section return joins"),
+    ("ifta_tax_return_summary", "Tax-summary scale tests"),
+    ("driver_schedule_spreadsheet_export", "Driver-schedule scale test"),
+    ("ifta_mileage_by_vehicle", "Mileage-by-vehicle scale tests"),
+    ("vehicle_schedule_spreadsheet_export", "Vehicle-schedule scale tests"),
 )
 
 
@@ -341,10 +353,10 @@ def _baseline_section(
         )
         for baseline in baseline_list
     ]
-    links = " and ".join(
+    links = ", ".join(
         f"[{name}](./evaluation/{name}/)" for name in result_dir_names
     )
-    return f"""## Current Baseline
+    return f"""## Current Baselines
 
 The release includes {len(baseline_list)} full-corpus OCR-conditioned agentic baseline{'s' if len(baseline_list) != 1 else ''}. {descriptions}. For each document, the runner created a temporary workspace containing the OCR transcript, field contract, prompt, and output directory. A macOS sandbox profile denied access to the benchmark repository, and the prompt prohibited using files outside the workspace. This was repository isolation, not a host-wide filesystem allowlist. Target values, target counts, ground-truth files, and generator code were not copied into the workspace. For generic records, the workspace did include a sample-specific field contract containing public field names and record groups derived from ground-truth object structure.
 
@@ -362,9 +374,9 @@ The release distinguishes parser-friendly scale tests from structural challenges
 |---|---:|---:|{'|'.join(['---:'] * len(family_headers))}|
 {chr(10).join(role_rows)}
 
-Exact-record recall by document family shows why aggregate scores should not be interpreted alone:
+Exact-record recall by extraction problem shows why aggregate scores should not be interpreted alone:
 
-| Document family | Evaluation role | Documents | Target records | {' | '.join(family_headers)} |
+| Extraction problem | Evaluation role | Documents | Target records | {' | '.join(family_headers)} |
 |---|---|---:|---:|{'|'.join(['---:'] * len(family_headers))}|
 {chr(10).join(regime_rows)}
 

@@ -151,7 +151,7 @@ class HuggingFaceExportTests(unittest.TestCase):
                 "min_targets": 360,
                 "max_targets": 619,
                 "min_pages": 142,
-                "max_pages": 278,
+                "max_pages": 316,
                 "domains": {"policy_review": 3},
                 "target_fields": ["records"],
             },
@@ -238,9 +238,21 @@ class HuggingFaceExportTests(unittest.TestCase):
         self.assertIn("The dataset contains 36 PDF documents and 33,450 target records.", card)
         self.assertIn("89.5% | 12/36 (33.3%) | 98.7%", card)
         self.assertIn("86.9% | 13/36 (36.1%) | 98.6%", card)
-        self.assertIn("Codex exact records | Claude exact records", card)
+        self.assertIn("GPT-5.5 exact records | Opus 4.8 exact records", card)
         self.assertIn("Structural challenges", card)
         self.assertIn("saved predictions and reports", card)
+
+    def test_default_release_baselines_include_all_four_agent_runs(self):
+        self.assertEqual(len(export_hf_dataset.DEFAULT_BASELINE_REPORTS), 4)
+        self.assertEqual(
+            {path.parent.name for path in export_hf_dataset.DEFAULT_BASELINE_REPORTS},
+            {
+                "codex_gpt56_sol_full_current_ocr_v2",
+                "claude_fable5_full_current_ocr_v2",
+                "codex_full_current_ocr_v2",
+                "claude_opus48_full_current_ocr_v2",
+            },
+        )
 
     def test_release_baseline_requires_matching_manifest_and_predictions(self):
         (self.data_dir / "manifest.json").write_text(

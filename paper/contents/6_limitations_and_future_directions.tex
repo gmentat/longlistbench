@@ -12,7 +12,7 @@ High-density repeated lists, cross-section joins, long-range evidence packets, a
 Production-like synthetic layouts based on observed document structures & Full visual diversity of private production corpora and carrier-specific edge cases \\
 OCR transcripts for every released PDF, including a limited scanned-image IFTA condition & Multiple OCR engines, broad scan-quality sweeps, bounding boxes, and reading-order supervision \\
 Strict normalized-record completeness plus field diagnostics & Source-order scoring, semantic equivalence, downstream task metrics, and human adjudication of ambiguous fields \\
-Agentic sandbox support and two full-corpus OCR baselines & Latency/cost-normalized comparisons across broader agentic and retrieval-loop protocols \\
+Agentic sandbox support and four full-corpus OCR baselines & Latency/cost-normalized comparisons across broader agentic and retrieval-loop protocols \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -33,4 +33,4 @@ LongListBench is intended for configuration-, family-, and stressor-aware measur
 
 Complexity slices are observational. Tags overlap, and document families differ in length, schema, and layout, so lower performance in a tagged slice does not identify one stressor as the cause. Paired renderings that hold records constant while adding one stressor would be required for causal attribution.
 
-The release is not a complete model leaderboard. It includes full-corpus Codex CLI \texttt{gpt-5.5} and Claude Code \texttt{opus-4-8} baselines under one agentic protocol, but no latency- or cost-normalized comparison across broader models and protocols. Full-context one-shot runs are impractical on the largest outputs, and synthetic public documents cannot replace private production evaluation.
+The release is not a complete model leaderboard. It includes GPT-5.5, GPT-5.6-Sol, Opus 4.8, and Fable 5 under one agentic protocol, but no latency- or cost-normalized comparison across broader models and protocols. Full-context one-shot runs are impractical on the largest outputs, and synthetic public documents cannot replace private production evaluation.
