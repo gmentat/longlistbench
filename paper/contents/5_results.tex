@@ -3,7 +3,7 @@ This revision reports corpus validation and two current OCR-conditioned agentic 
 Earlier prerelease experiments on an 80-document development version of LongListBench compared full-context one-shot prompting, fixed transcript chunking, and an OpenAI Agents SDK sandbox loop. Those runs helped shape the benchmark by showing that extraction protocol can dominate long-list recall, especially when one-shot prompting is forced to emit hundreds or thousands of rows. We do not mix those numbers into the current results because the released corpus, schemas, document templates, and scoring logic changed substantially. Current method comparisons should be rerun on the released OCR corpus and reported with the input condition, protocol, and manifest hash.
 
 \subsection{Artifact completeness}
-The released data directory contains one PDF, one HTML source, one JSON ground-truth file, one per-sample metadata file, and one OCR transcript for each of the 36 manifest instances. The manifest totals are internally consistent: 31{,}961 non-policy target records, 1{,}489 policy target records, and 33{,}450 target records overall.
+The released data directory contains one PDF, one HTML source, one JSON ground-truth file, one per-sample metadata file, and one OCR transcript for each of the 36 manifest instances. The manifest totals are internally consistent: 31{,}961 non-policy target records, 1{,}489 policy target records, and 33{,}450 target records overall. \Cref{tab:release-validation} summarizes the release validation checks.
 
 \begin{table}[H]
 \centering
@@ -40,7 +40,7 @@ OCR validation checks whether tracked identifiers from the ground truth are visi
 
 \subsection{Current OCR extraction baselines}
 \label{subsec:current-ocr-baseline}
-We ran the same per-document protocol with two coding agents on all 36 released documents. Each received one OCR transcript and the public field contract in a temporary workspace, while a macOS sandbox denied the benchmark repository. Ground truth, target values and counts, and generator code were not copied into the workspace. Each agent could inspect the transcript, write temporary code, validate JSON, and return the complete record list. The saved \texttt{codex\_gpt55} run used Codex CLI with \texttt{gpt-5.5} and xhigh reasoning, completed July 1, 2026. The \texttt{claude\_opus48} run used Claude Code CLI with \texttt{claude-opus-4-8} and xhigh effort, completed July 12, 2026. Claude Code safe mode disabled custom instructions, skills, plugins, hooks, and MCP servers. These are protocol baselines, not raw one-shot model measurements.
+We ran the same per-document protocol with two coding agents on all 36 released documents; \Cref{tab:agentic-full-corpus} reports the full-corpus results. Each received one OCR transcript and the public field contract in a temporary workspace, while a macOS sandbox denied the benchmark repository. Ground truth, target values and counts, and generator code were not copied into the workspace. Each agent could inspect the transcript, write temporary code, validate JSON, and return the complete record list. The saved \texttt{codex\_gpt55} run used Codex CLI with \texttt{gpt-5.5} and xhigh reasoning, completed July 1, 2026. The \texttt{claude\_opus48} run used Claude Code CLI with \texttt{claude-opus-4-8} and xhigh effort, completed July 12, 2026. Claude Code safe mode disabled custom instructions, skills, plugins, hooks, and MCP servers. These are protocol baselines, not raw one-shot model measurements.
 
 \begin{table}[H]
 \centering
@@ -59,7 +59,7 @@ Claude Code \texttt{opus-4-8}, xhigh effort & 36 & 33{,}450 & 86.9\% & 13/36 (36
 
 The strict result changes the interpretation of the apparently high field scores. Codex and Claude recover 89.5\% and 86.9\% of records with every normalized target field correct, yet only about one-third of documents are complete. The field-pair metric remains near 99\% because it gives partial credit to records with one or more wrong fields.
 
-We partition document families by their intended design rather than a numerical score threshold. Scale controls contain repeated structured rows and test volume, OCR preservation, and output completeness. Structural challenges require enrichment, reconciliation, inherited context, heterogeneous records, or cross-section joins.
+We partition document families by their intended design rather than a numerical score threshold. Scale tests contain repeated structured rows and test volume, OCR preservation, and output completeness. Structural challenges require enrichment, reconciliation, inherited context, heterogeneous records, or cross-section joins. \Cref{tab:agentic-by-role} reports strict completeness by role, and \Cref{tab:agentic-by-regime} breaks results down by document family.
 
 \begin{table}[H]
 \centering
@@ -71,7 +71,7 @@ We partition document families by their intended design rather than a numerical 
 Role & Docs & Records & Codex exact & Claude exact & Codex complete & Claude complete \\
 \midrule
 Structural challenges & 21 & 10{,}745 & 68.9\% & 60.7\% & 2/21 (9.5\%) & 3/21 (14.3\%) \\
-Scale controls & 15 & 22{,}705 & 99.3\% & 99.3\% & 10/15 (66.7\%) & 10/15 (66.7\%) \\
+Scale tests & 15 & 22{,}705 & 99.3\% & 99.3\% & 10/15 (66.7\%) & 10/15 (66.7\%) \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -79,7 +79,7 @@ Scale controls & 15 & 22{,}705 & 99.3\% & 99.3\% & 10/15 (66.7\%) & 10/15 (66.7\
 \begin{table}[H]
 \centering
 \scriptsize
-\caption{Agentic OCR results by document family. Exact-record recall is primary; field-pair $F_1$ shows partial correctness. The rule separates structural challenges (above the divider) from scale controls (below it).}
+\caption{Agentic OCR results by document family. Exact-record recall is primary; field-pair $F_1$ shows partial correctness. The rule separates structural challenges (above the divider) from scale tests (below it).}
 \label{tab:agentic-by-regime}
 \begin{tabular}{@{}p{0.31\linewidth}rrrrrr@{}}
 \toprule

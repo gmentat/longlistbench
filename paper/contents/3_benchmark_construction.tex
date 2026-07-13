@@ -7,17 +7,17 @@ The released corpus contains three broad target families.
 Claim-oriented documents use a loss-run incident schema with claim identifiers, policy metadata, claimant and driver fields, loss dates, coverage fields, status fields, and nested financial breakdowns. These records use strict normalized-record comparison plus field diagnostics, including date normalization, claimant-list sorting, and monetary rounding.
 
 \paragraph{Policy records.}
-Policy-oriented documents use heterogeneous records for locations, coverages, forms, endorsements, exclusions, rating rows, and premium items. A policy packet is the contract document issued by an insurer; it combines declarations, covered locations or classifications, coverage limits and deductibles, rating or premium schedules, required forms, and endorsements that modify the base policy. The released policy packets cover Businessowners Policy (BOP), Workers Compensation (WC), and Commercial General Liability (CGL).
+Policy-oriented documents use heterogeneous records for locations, coverages, forms, endorsements, exclusions, rating rows, and premium items. A policy packet is the contract document issued by an insurer; it combines declarations, covered locations or classifications, coverage limits and deductibles, rating or premium schedules, required forms, and endorsements that modify the base policy. The released packets cover Businessowners Policy (BOP), Workers Compensation (WC), and Commercial General Liability (CGL).
 
 \paragraph{Operations records.}
-The core operations documents contain dense repeated lists from business operations workflows, including mileage rows, multi-section return rows, tax inquiry rows, driver records, vehicle schedule rows, and external loss-run rows. These record types use generic normalized-record comparison rather than being forced into the claim incident schema.
+The core operations documents contain dense repeated lists from business operations workflows, including mileage rows, multi-section return rows, tax inquiry rows, driver records, vehicle schedule rows, and external loss-run rows. These records use generic normalized-record comparison rather than being forced into the claim incident schema.
 
 \subsection{Document design and provenance}
 Private production PDFs were reviewed only to identify recurring structures such as portal exports, spreadsheet schedules, loss-run tables, declarations, forms, endorsements, and long packet organization. The released documents are production-inspired, not facsimiles of source packets.
 
 \Cref{fig:pipeline} summarizes construction. Human corrections to production extraction surfaced recurring failure patterns, which engineers translated into seeded generators, family-specific templates, and the stressor taxonomy in \Cref{tab:complexity-stressors}. Generators write target records first, render them through HTML templates to PDF, and transcribe page images with vision OCR. Every visible name, identifier, value, and prose passage is generated. The multi-hop packets are reproducible from released code and seeds; the 30 core-operations PDFs come from an earlier batch using the same design.
 
-\begin{figure}[H]
+\begin{figure}[tb]
 \centering
 \begin{tikzpicture}[
   lab/.style={font=\sffamily\scriptsize, align=center},
@@ -114,6 +114,8 @@ Private production PDFs were reviewed only to identify recurring structures such
 
 The released PDFs include dense tables, wrapped rows, form-like pages, and policy packet sections rather than only clean spreadsheet exports. \Cref{fig:split-record,fig:multi-row,fig:merged-cells,fig:multi-column} show representative rendered pages used to audit the visible stressors. Red boxes in these figures are annotations added for the paper; the released PDFs do not print benchmark labels.
 
+\Cref{fig:split-record} shows two row-level evidence blocks for one target. Return headers supply reporting context, Schedule A supplies mileage and gallons, and a later Jurisdictions table supplies tax fields. The sections order jurisdictions differently, so the extractor must join by return and jurisdiction rather than copy one row. This is the \path{split_records} stressor.
+
 \begin{figure}[H]
     \centering
     \begin{subfigure}{\linewidth}
@@ -133,7 +135,8 @@ The released PDFs include dense tables, wrapped rows, form-like pages, and polic
     \label{fig:split-record}
 \end{figure}
 
-\Cref{fig:split-record} shows two row-level evidence blocks for one target. Return headers supply reporting context, Schedule A supplies mileage and gallons, and a later Jurisdictions table supplies tax fields. The sections order jurisdictions differently, so the extractor must join by return and jurisdiction rather than copy one row. This is the \path{split_records} stressor.
+\newpage
+In \Cref{fig:multi-row}, description text continues below an incident's main row. A one-row-one-record parser can fragment the target or attach text to the wrong item.
 
 \begin{figure}[H]
     \centering
@@ -142,7 +145,7 @@ The released PDFs include dense tables, wrapped rows, form-like pages, and polic
     \label{fig:multi-row}
 \end{figure}
 
-In \Cref{fig:multi-row}, description and note text continue below an incident's main row. A one-row-one-record parser can fragment the target or attach text to the wrong item.
+In \Cref{fig:merged-cells}, a shared coverage cell spans several incidents and must be propagated to each record, breaking the regular grid assumed by simple table parsers.
 
 \begin{figure}[H]
     \centering
@@ -151,7 +154,7 @@ In \Cref{fig:multi-row}, description and note text continue below an incident's 
     \label{fig:merged-cells}
 \end{figure}
 
-In \Cref{fig:merged-cells}, a shared coverage cell spans several incidents and must be propagated to each record, breaking the regular grid assumed by simple table parsers.
+\Cref{fig:multi-column} pairs target content with a reference-only directory. Naive reading order can interleave the columns or extract distractor rows.
 
 \begin{figure}[H]
     \centering
@@ -159,8 +162,6 @@ In \Cref{fig:merged-cells}, a shared coverage cell spans several incidents and m
     \caption{Two-column layout mixing target content with a reference-only directory table.}
     \label{fig:multi-column}
 \end{figure}
-
-\Cref{fig:multi-column} pairs target content with a reference-only directory. Naive reading order can interleave the columns or extract distractor rows.
 
 \Cref{fig:long-range} illustrates long-range evidence for one claim. The target begins on page 4; three join keys recur in distant sections. These crops show only part of the full evidence chain.
 
@@ -226,9 +227,9 @@ Document family & PDFs & Target records \\
 \end{table}
 
 \subsection{Evaluation configurations}
-Each instance carries three levels of metadata. The \texttt{hf\_config} field assigns one of three release configurations, \texttt{complexity\_regime} identifies its document family, and \texttt{problems} records cross-cutting stressors. A PDF can therefore be large, multi-table, OCR-conditioned, and long-range at the same time.
+Each instance carries three levels of metadata. The \texttt{hf\_config} field assigns one of three release configurations (\Cref{tab:evaluation-configurations}), \texttt{complexity\_regime} identifies its document family, and \texttt{problems} records cross-cutting stressors. A PDF can therefore be large, multi-table, OCR-conditioned, and long-range at the same time.
 
-\begin{table}[H]
+\begin{table}[t]
 \centering
 \small
 \caption{Evaluation configurations in the current release.}
@@ -246,11 +247,11 @@ Policy packets & 3 & 1{,}489 & Heterogeneous policy records across declarations,
 \end{tabular}
 \end{table}
 
-These configurations are not a difficulty ladder. Core operations includes both parser-friendly scale controls and multisection joins. Claim and policy packets emphasize inherited context, distant evidence, heterogeneous schemas, and distractors. Results should therefore be sliced by evaluation role, family, and stressor rather than reduced to one ranking.
+These configurations are not a difficulty ladder. Core operations includes both parser-friendly scale tests and multisection joins. Claim and policy packets emphasize inherited context, distant evidence, heterogeneous schemas, and distractors. Results should therefore be sliced by evaluation role, family, and stressor rather than reduced to one ranking.
 
 \Cref{tab:complexity-stressors} defines 14 canonical cross-cutting stressors. The 45 distinct tokens currently found in \texttt{problems} also include finer domain and implementation tags for audit slices; they are not additional canonical categories. A page break tests pagination and completeness, while \path{split_records} requires assembling one target from separate visual blocks. Duplicate pressure is represented mainly by prior-term, archived, or near-duplicate distractors.
 
-\begin{table}[t]
+\begin{table}[tp]
 \centering
 \small
 \caption{Cross-cutting complexity stressors tracked in release metadata.}
@@ -279,7 +280,7 @@ Stressor & What it tests \\
 
 \Cref{tab:complexity-doc-examples} shows how these labels appear in the released documents. We do not print benchmark labels inside the PDFs; that would make the documents less realistic and could make extraction easier. Instead, the stressors are visible in the layout and content organization, while the exact labels are recorded in sidecar metadata.
 
-\begin{table}[t]
+\begin{table}[tp]
 \centering
 \scriptsize
 \caption{Representative pages for auditing stressors in the rendered documents. Page numbers refer to the released PDFs.}

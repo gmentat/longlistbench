@@ -231,7 +231,7 @@ The evaluator uses a fixed document-family mapping for scale-control and structu
 | Evaluation role | Documents | Target records | Codex exact records | Claude exact records | Codex complete docs | Claude complete docs |
 |---|---:|---:|---:|---:|---:|---:|
 | Structural challenges | 21 | 10,745 | 68.9% | 60.7% | 2/21 (9.5%) | 3/21 (14.3%) |
-| Scale controls | 15 | 22,705 | 99.3% | 99.3% | 10/15 (66.7%) | 10/15 (66.7%) |
+| Scale tests | 15 | 22,705 | 99.3% | 99.3% | 10/15 (66.7%) | 10/15 (66.7%) |
 
 Strict exact-record recall by document family:
 

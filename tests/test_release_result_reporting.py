@@ -77,7 +77,7 @@ def test_release_tables_match_saved_reports() -> None:
 
     for role_key, role_label in (
         ("structural_challenge", "Structural challenges"),
-        ("scale_control", "Scale controls"),
+        ("scale_control", "Scale tests"),
     ):
         codex_role = codex["by_evaluation_role"][role_key]
         claude_role = claude["by_evaluation_role"][role_key]

@@ -29,7 +29,7 @@ OCR support should also be interpreted at the field level. A unique-identifier c
 
 Finally, the corpus now contains several operations record types whose public schema is represented by the ground-truth examples and generic scorer rather than separate hand-written JSON Schema files for every family. Adding explicit schemas for each operations family would improve reproducibility for prompt-based and agentic extractors.
 
-LongListBench is intended for configuration-, family-, and stressor-aware measurement of record completeness, field alignment, OCR-conditioned extraction, and long-range evidence handling. Parser-friendly operations families are scale controls; claims about difficult extraction should rely on packet and cross-section families as well as aggregate scores.
+LongListBench is intended for configuration-, family-, and stressor-aware measurement of record completeness, field alignment, OCR-conditioned extraction, and long-range evidence handling. Parser-friendly operations families are scale tests; claims about difficult extraction should rely on packet and cross-section families as well as aggregate scores.
 
 Complexity slices are observational. Tags overlap, and document families differ in length, schema, and layout, so lower performance in a tagged slice does not identify one stressor as the cause. Paired renderings that hold records constant while adding one stressor would be required for causal attribution.
 

@@ -298,7 +298,7 @@ def _baseline_section(
             raise ValueError(f"Baseline reports disagree on document-family coverage: {regime_key}")
         regime_rows.append(
             f"| {label} | "
-            f"{'Scale control' if regime_key in SCALE_CONTROL_REGIMES else 'Structural challenge'} | "
+            f"{'Scale test' if regime_key in SCALE_CONTROL_REGIMES else 'Structural challenge'} | "
             f"{first_regime['count']} | {first_regime['rows']:,} | "
             + " | ".join(f"{regime['exact_record_recall']:.1%}" for regime in regimes)
             + " |"
@@ -307,7 +307,7 @@ def _baseline_section(
     role_rows = []
     for role_key, role_label in (
         ("structural_challenge", "Structural challenges"),
-        ("scale_control", "Scale controls"),
+        ("scale_control", "Scale tests"),
     ):
         role_stats = []
         for baseline in baseline_list:
@@ -356,7 +356,7 @@ Strict completeness on the released OCR transcripts:
 
 An exact record must match every normalized target field. A complete document must contain exactly the gold record multiset, with no missing or extra records. Record order is not scored. Field micro-F1 is retained as a secondary partial-credit diagnostic.
 
-The release distinguishes parser-friendly scale controls from structural challenges:
+The release distinguishes parser-friendly scale tests from structural challenges:
 
 | Evaluation role | Documents | Target records | {' | '.join(family_headers)} |
 |---|---:|---:|{'|'.join(['---:'] * len(family_headers))}|
