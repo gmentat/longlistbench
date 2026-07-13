@@ -1,30 +1,14 @@
-Long-list entity extraction, the recovery of hundreds or sometimes thousands of repeated records from semi-structured documents, is a core requirement for document automation in domains such as insurance, finance, and procurement. While recent advances in document understanding models (e.g., layout-aware pretraining~\cite{xu2020layoutlm,huang2022layoutlmv3} and OCR-free approaches~\cite{kim2022donut}) and general-purpose LLMs have improved extraction quality, robust evaluation of long-list scenarios remains limited.
+Long-list entity extraction recovers hundreds or thousands of repeated records from semi-structured documents. It is common in insurance, finance, logistics, and procurement, but remains difficult to measure. A system may extract the first page correctly while dropping middle records, merging neighboring rows, or losing inherited context later in the document.
 
-Many established benchmarks focus on key-value style extraction or relatively short, form-like documents (e.g., FUNSD~\cite{jaume2019funsd}) or narrow document types such as receipts (SROIE~\cite{huang2021sroie}, CORD~\cite{park2019cord}). Document question answering benchmarks such as DocVQA~\cite{mathew2021docvqa} and MP-DocVQA~\cite{tito2022mpdocvqa} highlight the additional difficulty of reasoning over document pages, especially in the multi-page setting. More recent datasets such as DocILE~\cite{simsa2023docile} include business documents and line items, but long lists in the wild often exhibit additional failure modes: repeated entities, page breaks, multi-column reading order, distractor tables, and table constructs such as merged cells. VRDU~\cite{wang2023vrdu} highlights that hierarchical and long-list fields remain challenging for LLM-based extraction.
+Established benchmarks such as FUNSD~\cite{jaume2019funsd}, SROIE~\cite{huang2021sroie}, and CORD~\cite{park2019cord} emphasize key-value fields or short forms. DocVQA~\cite{mathew2021docvqa} and MP-DocVQA~\cite{tito2022mpdocvqa} test multi-page reasoning, but not exhaustive recovery of large repeated lists. DocILE~\cite{simsa2023docile} and VRDU~\cite{wang2023vrdu} include richer business documents, yet production extraction also encounters dense exports, repeated headers, OCR artifacts, split records, and fields distributed across distant packet sections.
 
-We introduce LongListBench, a benchmark designed to stress-test long-list extraction from semi-structured business documents with long incident and line-item lists under systematically injected document phenomena. The benchmark is inspired by recurring patterns observed in real-world claims and policy-review documents. The core release is a controlled 80-document claims suite; we also include a 6-document single-PDF multi-hop extension for cases where target records must be assembled by joining fields across distant pages within the same PDF.
+LongListBench is designed to measure these failures. For each PDF, a system must reconstruct the entire target list under a declared output schema. The current release contains 36 single-PDF instances and 33{,}450 target records. It combines high-density scale tests with cross-section joins, long-range evidence, distractors, and heterogeneous policy records. All names, identifiers, values, and visible prose are synthetic; private documents were used only to study recurring layout and packet structure.
 
-\subsection{Background and Motivation}
-This work was motivated by production document-automation tasks involving long schedules, loss runs, and itemized bills. In these settings, a single document can contain hundreds or thousands of repeated entities spread across heterogeneous layouts, page breaks, and noisy OCR. Existing extraction systems often handled short forms adequately but degraded as list length and layout complexity increased. These observations motivated a benchmark that measures whether extraction methods remain reliable as list length grows and as layout artifacts accumulate.
-
-\subsection{Research Questions}
-This work is organized around four practical questions:
+The release makes three contributions:
 \begin{itemize}
-    \item How do document format and tiered long-list stressors (page breaks, duplicates, multi-row entities, large documents, distractor tables, multi-column layouts, merged cells) affect extraction quality?
-    \item To what extent are end-to-end failures attributable to OCR versus downstream extraction?
-    \item How does a simple full-context one-shot baseline fail as documents grow longer and more complex?
-    \item What benchmark structure is needed to evaluate contemporary agentic extraction systems, including cases that require long-range cross-page joins?
+    \item A public long-list corpus with explicit document-family and cross-cutting stressor metadata.
+    \item Auditable artifacts for every instance: PDF, HTML source, OCR transcript, JSON ground truth, and per-document metadata.
+    \item Strict record and document completeness metrics, secondary field diagnostics, report regeneration, and reference extraction protocols.
 \end{itemize}
 
-
-We address these questions by reporting baseline extraction performance by format and difficulty tier, releasing canonical transcripts plus reproducible OCR transcript generation for paired transcript-condition evaluation, shipping a standardized evaluation pipeline with saved predictions and regenerable reports, and adding a long-range cross-page multi-hop extension aimed at agentic extraction systems.
-
-\subsection{Contributions}
-We make the following contributions:
-\begin{itemize}
-    \item A reproducible benchmark generation pipeline that produces paired ground truth JSON, rendered HTML/PDF artifacts, canonical transcripts, and reproducible OCR transcript generation.
-    \item A core suite of 80 documents (40 detailed, 40 table) containing 6{,}828 incident rows across four difficulty tiers, with an extreme tier reaching 500 incidents per document.
-    \item A single-document cross-page multi-hop extension with 6 long PDFs: 3 claim-oriented cases with 77 target incidents and 3 commercial insurance policy cases with 345 target records across Businessowners Policy (BOP), Workers Compensation (WC), and Commercial General Liability (CGL) packets.
-    \item A taxonomy of seven injected problem types and evaluation scripts for field-level scoring across clean and OCR transcripts.
-    \item Baseline extraction artifacts that calibrate the task: one-shot prompting exposes severe long-document recall failures, while stronger protocols such as auto-chunking and an agentic code-execution sandbox illustrate why future work should evaluate the extraction protocol, not only the base model.
-\end{itemize}
+LongListBench is designed as a benchmark for measuring extraction systems under realistic long-list document conditions. Results should identify the input condition and extraction protocol and report strict completeness by evaluation role, document family, and stressor rather than relying on one partial-credit aggregate.

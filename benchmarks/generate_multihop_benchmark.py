@@ -24,7 +24,6 @@ from pathlib import Path
 from typing import Any
 
 try:
-    from .canonical_transcripts import write_canonical_markdown_from_html
     from .dataset_layout import (
         artifact_path,
         artifact_relative_path,
@@ -33,7 +32,6 @@ try:
         record_count_summary,
     )
 except ImportError:
-    from canonical_transcripts import write_canonical_markdown_from_html
     from dataset_layout import (
         artifact_path,
         artifact_relative_path,
@@ -126,35 +124,136 @@ CAUSE_CODES = [
         "code": "BKD",
         "coverage_type": "Liability",
         "description": "Insured vehicle backed into fixed object or parked vehicle",
+        "handler": "Auto Liability Unit",
     },
     {
         "code": "RER",
         "coverage_type": "Liability",
         "description": "Insured vehicle rear-ended another vehicle",
+        "handler": "Auto Liability Unit",
     },
     {
         "code": "TRN",
         "coverage_type": "Liability",
         "description": "Wide turn or lane change contact with another vehicle",
+        "handler": "Complex Liability Desk",
     },
     {
         "code": "ROL",
         "coverage_type": "Physical Damage",
         "description": "Rollover or loss of control damage to insured vehicle",
+        "handler": "Physical Damage Desk",
     },
     {
         "code": "CGO",
         "coverage_type": "Cargo",
         "description": "Cargo shortage, damage, contamination, or spoilage",
+        "handler": "Cargo Claims Desk",
     },
     {
         "code": "IMD",
         "coverage_type": "Inland Marine",
         "description": "Equipment or transported vehicle damage during handling",
+        "handler": "Inland Marine Unit",
     },
 ]
 
 TRUCK_PREFIXES = ("FR", "KW", "PB", "VL", "MK", "IN")
+DRIVER_FIRST_NAMES = (
+    "Jordan",
+    "Morgan",
+    "Taylor",
+    "Casey",
+    "Riley",
+    "Avery",
+    "Cameron",
+    "Hayden",
+    "Parker",
+    "Quinn",
+    "Reese",
+    "Sawyer",
+)
+DRIVER_LAST_NAMES = (
+    "Bennett",
+    "Collins",
+    "Foster",
+    "Griffin",
+    "Hayes",
+    "Madden",
+    "Nolan",
+    "Porter",
+    "Ramsey",
+    "Sutton",
+    "Vaughn",
+    "Whitaker",
+)
+CLAIMANT_FIRST_NAMES = (
+    "Alicia",
+    "Brandon",
+    "Carmen",
+    "Derek",
+    "Elena",
+    "Felix",
+    "Greta",
+    "Hector",
+    "Iris",
+    "Julian",
+    "Kara",
+    "Lena",
+    "Micah",
+    "Nina",
+    "Omar",
+    "Priya",
+)
+CLAIMANT_LAST_NAMES = (
+    "Archer",
+    "Blake",
+    "Calder",
+    "Diaz",
+    "Ellis",
+    "Finch",
+    "Gaines",
+    "Holloway",
+    "Ibarra",
+    "Keane",
+    "Lowell",
+    "Morris",
+    "Navarro",
+    "Olsen",
+    "Patel",
+    "Quintero",
+)
+ADJUSTER_NOTE_TEMPLATES = (
+    "Driver statement and first notice are indexed; reserve review is pending supervisor sign-off.",
+    "Claimant packet was matched after mail-room review; liability diary remains open.",
+    "Repair estimate and coverage page were attached separately for underwriting review.",
+    "Prior-carrier note conflicts with the current roster; use the active roster before closing.",
+    "Subrogation diary remains open while deductible recovery is reconciled to the ledger.",
+    "Coverage coding was updated after review of the loss narrative and unit assignment.",
+    "Medical and property files were split during intake; both references belong to this claim.",
+    "Late notice was accepted after the account manager confirmed the reported loss date.",
+    "Reserve worksheet was revised at close; use the final ledger block for incurred amounts.",
+    "Claimant correspondence was scanned out of order and should be read with the notice index.",
+    "Coverage counsel requested a follow-up diary; no coverage change is shown in this packet.",
+    "The unit roster and policy register must both be checked before assigning the account name.",
+)
+COMMON_CLAIM_STRESSORS = (
+    "cross_page_join",
+    "long_range_evidence",
+    "distractor_sections",
+    "ocr_condition",
+    "page_breaks",
+    "large_doc",
+    "multiple_tables",
+    "multi_row",
+    "multi_column",
+    "duplicates",
+    "natural_long_range_join",
+    "inherited_context",
+    "non_target_rows",
+    "mixed_prose_tables",
+    "non_sequential_identifiers",
+)
 
 
 def _dataset_version() -> str:
@@ -176,6 +275,10 @@ def _stable_seed(base_seed: int, case_id: str, offset: int) -> int:
     seed_material = f"{base_seed}:{case_id}:{offset}".encode("utf-8")
     seed_offset = int(hashlib.md5(seed_material).hexdigest()[:8], 16) % 10000
     return base_seed + seed_offset
+
+
+def _review_reference(case_id: str, page_idx: int, prefix: str) -> str:
+    return f"{prefix}-{_stable_seed(1300 + page_idx, case_id, page_idx) % 900000 + 100000}"
 
 
 def _count_pdf_pages(pdf_path: Path) -> int | None:
@@ -340,9 +443,23 @@ def _html_document(title: str, body: str) -> str:
     }}
     .sparse-report {{
       font-family: Arial, Helvetica, sans-serif;
-      width: 82%;
-      margin: 16px auto 0;
+      width: 100%;
+      margin: 4px 0 0;
       font-size: 7.4pt;
+    }}
+    .dense-notes {{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px 12px;
+      margin-top: 9px;
+    }}
+    .dense-note {{
+      border: 1px solid #cbd5e1;
+      background: #f8fafc;
+      min-height: 58px;
+      padding: 6px;
+      font-size: 6.9pt;
+      line-height: 1.25;
     }}
     .sparse-title {{
       text-align: center;
@@ -402,6 +519,80 @@ def _html_document(title: str, body: str) -> str:
       column-gap: 22px;
       font-family: Arial, Helvetica, sans-serif;
       font-size: 7.4pt;
+    }}
+    .claim-card-grid,
+    .policy-card-grid,
+    .ledger-grid,
+    .claimant-grid {{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px 10px;
+      margin-top: 10px;
+    }}
+    .claim-card,
+    .policy-card,
+    .claimant-card,
+    .ledger-claim {{
+      break-inside: avoid;
+      border: 1px solid #94a3b8;
+      background: #fff;
+      padding: 6px 7px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 7.1pt;
+      line-height: 1.25;
+      min-height: 86px;
+    }}
+    .claim-card:nth-child(3n),
+    .policy-card:nth-child(4n),
+    .claimant-card:nth-child(5n) {{
+      background: #f8fafc;
+    }}
+    .card-line {{
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      border-bottom: 1px dotted #cbd5e1;
+      padding: 1px 0;
+    }}
+    .card-line span:first-child {{
+      color: #475569;
+      font-size: 6.7pt;
+      text-transform: uppercase;
+    }}
+    .card-note {{
+      margin-top: 4px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 7pt;
+    }}
+    .cause-list {{
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 8pt;
+      line-height: 1.35;
+      margin-top: 12px;
+    }}
+    .cause-entry {{
+      break-inside: avoid;
+      margin: 0 0 9px;
+      padding-bottom: 7px;
+      border-bottom: 1px solid #cbd5e1;
+    }}
+    .ledger-strip {{
+      display: grid;
+      grid-template-columns: 42px repeat(4, 1fr);
+      gap: 0;
+      margin-top: 4px;
+      border-left: 1px solid #cbd5e1;
+      border-top: 1px solid #cbd5e1;
+    }}
+    .ledger-strip div {{
+      border-right: 1px solid #cbd5e1;
+      border-bottom: 1px solid #cbd5e1;
+      padding: 2px 3px;
+      font-size: 6.4pt;
+    }}
+    .ledger-strip .ledger-label {{
+      background: #f1f5f9;
+      font-weight: 700;
     }}
     .portal {{
       display: grid;
@@ -513,11 +704,30 @@ def _assign_join_fields(incidents: list[dict[str, Any]], seed: int) -> list[dict
     rng = random.Random(seed)
     enriched: list[dict[str, Any]] = []
     policy_pool: list[dict[str, str]] = []
+    used_claim_ids: set[str] = set()
+    used_references: set[str] = set()
+    used_units: set[str] = set()
 
     for idx, incident in enumerate(incidents, start=1):
         item = json.loads(json.dumps(incident))
         cause = CAUSE_CODES[(idx + rng.randint(0, len(CAUSE_CODES) - 1)) % len(CAUSE_CODES)]
-        unit = f"2024 {TRUCK_PREFIXES[idx % len(TRUCK_PREFIXES)]} {600000 + idx:06d}"
+        while True:
+            claim_id = f"#{rng.randint(41000, 98999)}-{rng.choice('ABCDEFGHJKLMNPQRSTUVWXYZ')}"
+            if claim_id not in used_claim_ids:
+                used_claim_ids.add(claim_id)
+                break
+        while True:
+            reference = f"LR{rng.randint(23, 26)}-{rng.choice('ABCDEFGHJKLMNPQRSTUVWXYZ')}{rng.randint(1000, 9999)}"
+            if reference not in used_references:
+                used_references.add(reference)
+                break
+        while True:
+            unit = f"{rng.randint(2018, 2025)} {rng.choice(TRUCK_PREFIXES)} {rng.randint(200000, 899999):06d}"
+            if unit not in used_units:
+                used_units.add(unit)
+                break
+        item["incident_number"] = claim_id
+        item["reference_number"] = reference
 
         if idx <= 8 or idx % 4 == 0 or not policy_pool:
             policy = {
@@ -529,6 +739,7 @@ def _assign_join_fields(incidents: list[dict[str, Any]], seed: int) -> list[dict
                 "agency": item.get("agency") or f"Brokerage {idx:03d}",
             }
             policy_pool.append(policy)
+            item["agency"] = policy["agency"]
         else:
             policy = rng.choice(policy_pool)
             item["policy_number"] = policy["policy_number"]
@@ -539,15 +750,19 @@ def _assign_join_fields(incidents: list[dict[str, Any]], seed: int) -> list[dict
             item["agency"] = policy["agency"]
 
         item["unit_number"] = unit
-        item["driver_name"] = f"Driver-{idx:03d}, Alex"
+        first = DRIVER_FIRST_NAMES[(idx + rng.randint(0, 4)) % len(DRIVER_FIRST_NAMES)]
+        last = DRIVER_LAST_NAMES[(idx * 3 + rng.randint(0, 7)) % len(DRIVER_LAST_NAMES)]
+        item["driver_name"] = f"{last}, {first}"
         item["cause_code"] = cause["code"]
         item["coverage_type"] = cause["coverage_type"]
         item["description"] = cause["description"]
-        item["handler"] = "Claims Adjuster"
+        item["handler"] = cause["handler"]
         if not item.get("claimants"):
-            item["claimants"] = [f"Claimant-{idx:03d}"]
-        if not item.get("adjuster_notes"):
-            item["adjuster_notes"] = f"Indexed claimant notice {idx:03d}; verify ledger totals before closure."
+            first = CLAIMANT_FIRST_NAMES[(idx + rng.randint(0, 5)) % len(CLAIMANT_FIRST_NAMES)]
+            last = CLAIMANT_LAST_NAMES[(idx * 5 + rng.randint(0, 9)) % len(CLAIMANT_LAST_NAMES)]
+            item["claimants"] = [f"{last}, {first}"]
+        if not item.get("adjuster_notes") or re.fullmatch(r"Indexed claimant notice \d{3};.*", str(item.get("adjuster_notes"))):
+            item["adjuster_notes"] = ADJUSTER_NOTE_TEMPLATES[(idx + rng.randint(0, 5)) % len(ADJUSTER_NOTE_TEMPLATES)]
         enriched.append(item)
 
     return enriched
@@ -564,6 +779,7 @@ def _generate_case_incidents(config: MultiHopCaseConfig, base_seed: int) -> list
 
 def _cover_page(config: MultiHopCaseConfig, incidents: list[dict[str, Any]]) -> str:
     insured = incidents[0]["insured"] if incidents else "Scheduled Insured"
+    file_reference = f"UW-{_stable_seed(1100, config.id, 0) % 900000 + 100000}"
     body = f"""
 <div class="cover">
   <div class="stamp">RENEWAL REVIEW COPY</div>
@@ -575,11 +791,12 @@ def _cover_page(config: MultiHopCaseConfig, incidents: list[dict[str, Any]]) -> 
     <div><div class="label">Account</div><div class="value">{escape(insured)}</div></div>
     <div><div class="label">Valuation Date</div><div class="value">01/31/2024</div></div>
     <div><div class="label">Claim Count</div><div class="value">{len(incidents)}</div></div>
-    <div><div class="label">File Reference</div><div class="value">{escape(config.id.upper())}</div></div>
+    <div><div class="label">File Reference</div><div class="value">{file_reference}</div></div>
   </div>
   <div class="notice">
-    Some appendices were inserted from different source systems. Row keys and
-    reference numbers are retained as printed in the source documents.
+    Appendices were received from the carrier portal, fleet schedule, financial
+    ledger, and prior-carrier response files. Row keys and reference numbers
+    are retained as printed in the account file.
   </div>
 </div>
 """
@@ -587,6 +804,7 @@ def _cover_page(config: MultiHopCaseConfig, incidents: list[dict[str, Any]]) -> 
 
 
 def _portal_receipt_page(config: MultiHopCaseConfig, incidents: list[dict[str, Any]]) -> str:
+    queue_id = f"RQ-{_stable_seed(1200, config.id, 0) % 900000 + 100000}"
     rows = [
         [
             idx,
@@ -601,8 +819,8 @@ def _portal_receipt_page(config: MultiHopCaseConfig, incidents: list[dict[str, A
 <div class="portal">
   <aside class="portal-side">
     <strong>Account Portal</strong><br>
-    Login: synthetic-reviewer<br>
-    Packet: {escape(config.id.upper())}<br>
+    User: account-review<br>
+    Queue: {queue_id}<br>
     Valuation: 01/31/2024<br>
     Rows staged: {len(incidents)}<br><br>
     <strong>Navigation</strong><br>
@@ -615,7 +833,7 @@ def _portal_receipt_page(config: MultiHopCaseConfig, incidents: list[dict[str, A
   <main class="portal-main">
     <h2>Return Summary / Original Export Review</h2>
     <p>Carrier portal printout retained at the front of the account packet.
-    The page is sparse by design and only previews a subset of records.</p>
+    The table below shows the first staged rows in the renewal review queue.</p>
     {_table(["#", "Policy", "State", "Status", "Reported"], rows)}
     <p style="margin-top: 18px; text-align: right; font-weight: bold;">Pending review queue: {len(incidents)}</p>
   </main>
@@ -639,9 +857,9 @@ def _letterhead_request_page(incidents: list[dict[str, Any]]) -> str:
   <div class="seal">K</div>
   <h2 style="text-align: center;">Department of Motor Carrier Records</h2>
   <p style="text-align: center;">Report of Services Provided</p>
-  <p><strong>Note:</strong> This synthetic page imitates a public-records
-  request response often embedded in claim packets. It is not a billing
-  statement and does not contain the complete target schedule.</p>
+  <p><strong>Note:</strong> This report summarizes record-search responses
+  received for underwriting review. It is not a billing statement and does not
+  contain the complete claim detail schedule.</p>
   {_table(["Reference", "State", "Event Date", "Status"], rows)}
   <p style="text-align: center; margin-top: 22px;">Do not pay from this report.</p>
 </div>
@@ -690,7 +908,7 @@ def _mileage_summary_page(incidents: list[dict[str, Any]]) -> str:
         )
     body = """
 <div class="spreadsheet-page">
-  <h2>IFTA Mileage: All Trucks - Synthetic Quarter</h2>
+  <h2>IFTA Mileage: All Units - Quarter Activity</h2>
 """ + "".join(chunks) + """
 </div>
 """
@@ -721,46 +939,56 @@ def _rotated_scan_page(incidents: list[dict[str, Any]]) -> str:
 
 
 def _primary_schedule_page(incidents: list[dict[str, Any]]) -> str:
-    rows = [
-        [
-            item["incident_number"],
-            item["reference_number"],
-            item["policy_number"],
-            item["unit_number"],
-            item["cause_code"],
-            item["status"],
-            item["date_of_loss"],
-            item["loss_state"],
-            item["date_reported"],
-        ]
-        for item in incidents
-    ]
-    body = """
-<h2>Claim Extract - Primary Schedule</h2>
+    pages: list[str] = []
+    for page_index, chunk in enumerate(_chunks(incidents, 10), start=1):
+        cards = []
+        for idx, item in enumerate(chunk, start=1 + (page_index - 1) * 10):
+            unit_short = item["unit_number"].split()[-1]
+            claim_label = _label(("Claim file", "File no.", "Loss file"), idx)
+            ref_label = _label(("Reference", "Loss run ref.", "Carrier ref."), idx + 1)
+            policy_label = _label(("Policy shown", "Policy on loss", "Policy ref."), idx + 2)
+            unit_label = _label(("Unit listed", "Sched. unit", "Equipment no."), idx + 3)
+            cause_label = _label(("Cause / status", "Coding / disposition", "Loss code / status"), idx + 4)
+            cards.append(
+                f"""
+<article class="claim-card">
+  <div class="card-line"><span>{escape(claim_label)}</span><strong>{escape(item["incident_number"])}</strong></div>
+  <div class="card-line"><span>{escape(ref_label)}</span><strong>{escape(item["reference_number"])}</strong></div>
+  <div class="card-line"><span>{escape(policy_label)}</span><strong>{escape(item["policy_number"])}</strong></div>
+  <div class="card-line"><span>{escape(unit_label)}</span><strong>{escape(unit_short)}</strong></div>
+  <div class="card-line"><span>{escape(cause_label)}</span><strong>{escape(item["cause_code"])} / {escape(item["status"])}</strong></div>
+  <div class="card-note">
+    Loss was entered for {escape(item["loss_state"])} with a loss date of
+    {escape(item["date_of_loss"])} and report date {escape(item["date_reported"])}.
+    The intake card was staged from the claim queue; driver, claimant, and
+    financial detail are attached elsewhere in the account file.
+  </div>
+</article>"""
+            )
+        body = f"""
+<h2>Claim Intake File Cards</h2>
 <div class="notice">
-  Exported from the claim intake system. Narrative, driver, claimant, policy,
-  and financial fields are retained in later workpaper sections.
+  These file cards were printed from the intake queue. Policy, unit, and cause
+  references are copied from source systems; supporting appendices appear later
+  in the workpaper.
 </div>
-""" + _table(
-        [
-            "Claim #",
-            "Reference",
-            "Policy",
-            "Unit",
-            "Cause",
-            "Status",
-            "DOL",
-            "State",
-            "Reported",
-        ],
-        rows,
-        class_name="data-table wide",
-    )
-    return _page("Primary claim extract", body)
+<div class="claim-card-grid">{''.join(cards)}</div>
+"""
+        title = "Primary claim file cards" if page_index == 1 else "Primary claim file cards continued"
+        pages.append(_page(title, body))
+    return "".join(pages)
 
 
 def _sample_window(incidents: list[dict[str, Any]], page_idx: int, size: int) -> list[dict[str, Any]]:
     return [incidents[(page_idx + offset) % len(incidents)] for offset in range(size)]
+
+
+def _chunks(items: list[dict[str, Any]], size: int) -> list[list[dict[str, Any]]]:
+    return [items[index : index + size] for index in range(0, len(items), size)]
+
+
+def _label(options: tuple[str, ...], index: int) -> str:
+    return options[index % len(options)]
 
 
 def _monthly_account_activity_page(
@@ -788,7 +1016,7 @@ def _monthly_account_activity_page(
     body = f"""
 <h2>Monthly Account Activity</h2>
 <div class="worksheet-meta">
-  <div><span class="label">Account batch</span><br>{escape(case_id.upper())}-{page_idx:03d}</div>
+  <div><span class="label">Account batch</span><br>{_review_reference(case_id, page_idx, "BATCH")}</div>
   <div><span class="label">Accounting month</span><br>February 2024</div>
   <div><span class="label">Source</span><br>Billing ledger export</div>
 </div>
@@ -825,12 +1053,12 @@ def _premium_allocation_page(
     body = f"""
 <h2>Premium Allocation Worksheet</h2>
 <div class="worksheet-meta">
-  <div><span class="label">Packet</span><br>{escape(case_id.upper())}</div>
+  <div><span class="label">Account file</span><br>{_review_reference(case_id, page_idx, "ACCT")}</div>
   <div><span class="label">Worksheet period</span><br>2024 Policy Year</div>
   <div><span class="label">Allocation basis</span><br>Written premium by jurisdiction</div>
 </div>
 {_table(["Schedule", "Jurisdiction", "Surcharge", "Written Premium", "Taxable Premium", "Tax Rate", "Tax Due", "Total Due"], rows, class_name="data-table worksheet-table wide")}
-<div class="form-footer">Synthetic allocation worksheet. Jurisdiction rows are distractors and are not target incident records.</div>
+<div class="form-footer">Allocation worksheet. Jurisdiction rows are retained for premium reconciliation and are not claim records.</div>
 """
     return _page("Premium allocation worksheet", body, class_name="worksheet")
 
@@ -842,7 +1070,7 @@ def _driver_qualification_audit_page(
     incidents: list[dict[str, Any]],
 ) -> str:
     rows = []
-    for idx, item in enumerate(_sample_window(incidents, page_idx, 16), start=1):
+    for idx, item in enumerate(_sample_window(incidents, page_idx, 22), start=1):
         rows.append(
             [
                 item["driver_name"],
@@ -856,7 +1084,7 @@ def _driver_qualification_audit_page(
     body = f"""
 <h2>Driver Qualification Audit</h2>
 <div class="worksheet-meta">
-  <div><span class="label">Audit file</span><br>DQ-{escape(case_id[-6:].upper())}-{page_idx:03d}</div>
+  <div><span class="label">Audit file</span><br>{_review_reference(case_id, page_idx, "DQ")}</div>
   <div><span class="label">Review type</span><br>Annual compliance sampling</div>
   <div><span class="label">Reviewer</span><br>Safety desk</div>
 </div>
@@ -872,35 +1100,44 @@ def _prior_carrier_correspondence_page(
     incidents: list[dict[str, Any]],
 ) -> str:
     rows = []
-    for idx, item in enumerate(_sample_window(incidents, page_idx, 6), start=1):
+    dispositions = ["Loss runs attached", "No known losses", "Claim detail pending", "Prior term attached", "Revised run received"]
+    for idx, item in enumerate(_sample_window(incidents, page_idx, 18), start=1):
         rows.append(
             [
+                f"REQ-{page_idx:03d}-{idx:02d}",
                 item["reference_number"],
+                item["company_name"],
                 item["policy_state"],
                 f"{(idx % 12) + 1:02d}/{(idx * 2 % 27) + 1:02d}/2024",
-                rng.choice(["Acknowledged", "No loss data", "Prior term attached", "Pending response"]),
+                rng.choice(dispositions),
+            ]
+        )
+    attachment_rows = []
+    for idx, item in enumerate(_sample_window(incidents, page_idx + 3, 10), start=1):
+        attachment_rows.append(
+            [
+                f"ATT-{page_idx:03d}-{idx:02d}",
+                item["policy_number"],
+                rng.choice(["PDF loss run", "Claim note extract", "Premium audit page", "Coverage verification"]),
+                rng.choice(["Indexed", "Pending review", "Matched to account", "Do not use"]),
             ]
         )
     body = f"""
-<div class="sparse-report">
-  <div class="sparse-title">PRIOR CARRIER REQUEST RESPONSE</div>
-  <div class="report-address">
-    ATTN: Account Review Desk<br>
-    Synthetic Motor Carrier File<br>
-    Packet {escape(case_id.upper())}
-  </div>
-  <div class="report-meta">
-    <div>Issue Date:</div><div>02-{(page_idx % 27) + 1:02d}-2024</div>
-    <div>Letter Id:</div><div>LC{page_idx:03d}{rng.randint(1000, 9999)}</div>
-    <div>Case Id:</div><div>{escape(case_id.upper())}</div>
-  </div>
-  <p>Report of services provided. This page records prior-carrier correspondence
-  status and does not contain the complete claim schedule.</p>
-  {_table(["Reference", "State", "Response Date", "Disposition"], rows, class_name="data-table worksheet-table")}
+<h2>Prior Carrier Request Response Log</h2>
+<div class="worksheet-meta">
+  <div><span class="label">Account file</span><br>{_review_reference(case_id, page_idx, "ACCT")}</div>
+  <div><span class="label">Issue Date</span><br>02/{(page_idx % 27) + 1:02d}/2024</div>
+  <div><span class="label">Extract ID</span><br>LC{page_idx:03d}{rng.randint(1000, 9999)}</div>
 </div>
-<div class="form-footer">Record services unit - synthetic correspondence page</div>
+{_table(["Request", "Reference", "Account", "State", "Response Date", "Disposition"], rows, class_name="data-table worksheet-table wide")}
+{_table(["Attachment", "Policy", "Document Type", "Index Status"], attachment_rows, class_name="data-table worksheet-table")}
+<div class="dense-notes">
+  <div class="dense-note"><strong>Review note.</strong> The correspondence log records prior-carrier response handling and document indexing. Rows may reference inactive or closed files.</div>
+  <div class="dense-note"><strong>Routing note.</strong> Account review uses this page with the policy register, driver roster, and claim detail pages when resolving missing prior-loss evidence.</div>
+</div>
+<div class="form-footer">Record services unit - correspondence export</div>
 """
-    return _page("Prior carrier correspondence", body, class_name="sparse-report")
+    return _page("Prior carrier correspondence", body, class_name="worksheet")
 
 
 def _risk_control_followup_page(
@@ -918,24 +1155,50 @@ def _risk_control_followup_page(
         "Open recommendation carried to renewal file",
         "Claim trend reviewed with account manager",
         "No additional field visit required",
+        "Annual MVR exception list sampled",
+        "Vehicle inspection evidence attached",
+        "Open claim reserve report compared to loss run",
+        "DOT authority status reviewed",
+        "Contracted driver certificate file requested",
+        "Large-loss narrative routed to underwriting",
+        "Driver assignment changes checked against roster",
+        "Policy state coding compared with account profile",
+        "Subrogation diary reviewed for open recovery",
+        "File note created for renewal referral",
     ]
     rows = []
     for idx, check in enumerate(checks, start=1):
         mark = "X" if (idx + page_idx) % 3 != 0 else ""
         owner = rng.choice(["Safety", "Claims", "UW", "Fleet"])
         rows.append(f"<div>{mark}</div><div>{escape(check)}</div><div>{escape(owner)}</div>")
+    sample_rows = []
+    statuses = ["Closed", "Open", "Referred", "Monitor", "No action"]
+    for idx, item in enumerate(_sample_window(incidents, page_idx + 5, 14), start=1):
+        sample_rows.append(
+            [
+                item["unit_number"],
+                item["driver_name"],
+                item["reference_number"],
+                rng.choice(["Collision", "Cargo", "Premises", "Vehicle", "Liability"]),
+                rng.choice(statuses),
+                f"04/{(idx * 3 % 27) + 1:02d}/2024",
+            ]
+        )
     body = f"""
-<div class="sparse-report">
-  <div class="sparse-title">RISK CONTROL FOLLOW-UP NOTES</div>
-  <div class="report-meta">
-    <div>Packet:</div><div>{escape(case_id.upper())}</div>
-    <div>Related unit:</div><div>{escape(incidents[page_idx % len(incidents)]["unit_number"])}</div>
-    <div>Review cycle:</div><div>Renewal file checklist</div>
-  </div>
-  <div class="checklist">{''.join(rows)}</div>
+<h2>Risk Control Follow-Up Notes</h2>
+<div class="worksheet-meta">
+  <div><span class="label">Account file</span><br>{_review_reference(case_id, page_idx, "ACCT")}</div>
+  <div><span class="label">Related unit</span><br>{escape(incidents[page_idx % len(incidents)]["unit_number"])}</div>
+  <div><span class="label">Review cycle</span><br>Renewal file checklist</div>
+</div>
+<div class="checklist">{''.join(rows)}</div>
+{_table(["Unit", "Driver", "Reference", "Review Area", "Status", "Diary Date"], sample_rows, class_name="data-table worksheet-table")}
+<div class="dense-notes">
+  <div class="dense-note"><strong>Risk control note.</strong> Follow-up items are sampled from the account service file and may not map one-to-one to the current incident schedule.</div>
+  <div class="dense-note"><strong>Underwriting note.</strong> Large-loss referrals remain open until the account manager confirms the driver, unit, policy state, and loss description.</div>
 </div>
 """
-    return _page("Risk control follow-up notes", body, class_name="sparse-report")
+    return _page("Risk control follow-up notes", body, class_name="worksheet")
 
 
 def _subrogation_diary_page(
@@ -946,7 +1209,7 @@ def _subrogation_diary_page(
 ) -> str:
     rows = []
     actions = ["Demand review", "Carrier tender", "Closed no recovery", "Arbitration pending", "Diary follow-up"]
-    for idx, item in enumerate(_sample_window(incidents, page_idx, 14), start=1):
+    for idx, item in enumerate(_sample_window(incidents, page_idx, 24), start=1):
         rows.append(
             [
                 f"03/{(idx * 2 % 27) + 1:02d}/2024",
@@ -960,11 +1223,15 @@ def _subrogation_diary_page(
     body = f"""
 <h2>Subrogation Diary Extract</h2>
 <div class="worksheet-meta">
-  <div><span class="label">Packet</span><br>{escape(case_id.upper())}</div>
+  <div><span class="label">Account file</span><br>{_review_reference(case_id, page_idx, "ACCT")}</div>
   <div><span class="label">Diary export</span><br>Subrogation module</div>
   <div><span class="label">Printed</span><br>03/31/2024</div>
 </div>
 {_table(["Diary Date", "File #", "Reference", "Action", "Status", "Recovery Est."], rows, class_name="data-table worksheet-table")}
+<div class="dense-notes">
+  <div class="dense-note"><strong>Diary note.</strong> The extract includes open and closed recovery activity. Some references are archival rows used by the claims team for reconciliation.</div>
+  <div class="dense-note"><strong>Routing note.</strong> Recoveries are compared with the financial ledger and claim detail pages before any account-level recovery credit is applied.</div>
+</div>
 """
     return _page("Subrogation diary extract", body, class_name="worksheet")
 
@@ -988,113 +1255,190 @@ def _spacer_pages(config: MultiHopCaseConfig, count: int, start: int, incidents:
 
 
 def _driver_roster_section(incidents: list[dict[str, Any]]) -> str:
-    rows = [
-        [
-            item["unit_number"],
-            item["driver_name"],
-            item["company_name"],
-            item["policy_state"],
-            "Active",
-        ]
-        for item in incidents
+    pages: list[str] = []
+    roster_rows = incidents + [
+        {
+            "unit_number": f"2023 ZZ {900000 + i}",
+            "driver_name": f"{DRIVER_LAST_NAMES[i % len(DRIVER_LAST_NAMES)]}, Sam",
+            "company_name": "Archived Fleet Services",
+            "policy_state": "TX",
+            "reference_number": f"ARCH-{i:03d}",
+        }
+        for i in range(1, 7)
     ]
-    rows.extend(
-        [
-            [f"2023 ZZ {900000 + i}", f"Inactive-{i:03d}, Sam", "Archived Fleet", "TX", "Inactive"]
-            for i in range(1, 6)
-        ]
-    )
-    body = """
+    for page_index, chunk in enumerate(_chunks(roster_rows, 14), start=1):
+        entries = []
+        for idx, item in enumerate(chunk, start=1 + (page_index - 1) * 14):
+            status = "inactive prior-term unit" if str(item["unit_number"]).startswith("2023 ZZ") else "active scheduled unit"
+            unit_label = _label(("Unit", "Equipment", "Scheduled auto"), idx)
+            driver_label = _label(("Assigned driver", "Driver assigned", "Operator shown"), idx + 1)
+            account_label = _label(("Account / domicile", "Operating account", "Domicile record"), idx + 2)
+            entries.append(
+                f"""
+<article class="claim-card">
+  <div class="card-line"><span>{escape(unit_label)}</span><strong>{escape(item["unit_number"])}</strong></div>
+  <div class="card-line"><span>{escape(driver_label)}</span><strong>{escape(item["driver_name"])}</strong></div>
+  <div class="card-line"><span>{escape(account_label)}</span><strong>{escape(item["company_name"])} - {escape(item["policy_state"])}</strong></div>
+  <div class="card-note">Roster status: {escape(status)}. Dispatch reference on file: {escape(item.get("reference_number") or "not shown")}.</div>
+</article>"""
+            )
+        body = f"""
 <h2>Fleet Driver Assignment Roster</h2>
-<p>Driver assignment extract from the transportation management system.</p>
-""" + _table(["Unit", "Driver", "Company", "Domicile", "Status"], rows, class_name="data-table roster")
-    return _page("Fleet driver assignment roster", body)
+<p>Driver assignment cards from the transportation management system. Archived
+units are retained in this roster and must not be treated as current losses.</p>
+<div class="claim-card-grid">{''.join(entries)}</div>
+"""
+        title = "Fleet driver assignment roster" if page_index == 1 else "Fleet driver assignment roster continued"
+        pages.append(_page(title, body))
+    return "".join(pages)
 
 
 def _policy_register_section(incidents: list[dict[str, Any]]) -> str:
     by_policy: dict[str, dict[str, Any]] = {}
     for item in incidents:
         by_policy[item["policy_number"]] = item
-    rows = [
-        [
-            policy,
-            item["company_name"],
-            item["insured"],
-            item.get("division") or "General",
-            item["policy_state"],
-            item.get("agency") or "",
-        ]
-        for policy, item in sorted(by_policy.items())
-    ]
+    rows = list(sorted(by_policy.items()))
     rows.extend(
         [
-            [f"ARCH-{i:03d}", "Archive Holdings", "Archive Holdings", "Runoff", "NY", "Do Not Use"]
+            (
+                f"ARCH-{i:03d}",
+                {
+                    "company_name": "Archive Holdings",
+                    "insured": "Archive Holdings",
+                    "division": "Runoff",
+                    "policy_state": "NY",
+                    "agency": "Do Not Use",
+                },
+            )
             for i in range(1, 5)
         ]
     )
-    body = """
+    pages: list[str] = []
+    for page_index, chunk in enumerate([rows[i : i + 10] for i in range(0, len(rows), 10)], start=1):
+        cards = []
+        for idx, (policy, item) in enumerate(chunk, start=1 + (page_index - 1) * 10):
+            agency = item.get("agency") or "agency not printed"
+            policy_label = _label(("Policy file", "Account policy", "Policy ref."), idx)
+            insured_label = _label(("Named insured", "Insured shown", "Insured account"), idx + 1)
+            company_label = _label(("Operating company", "Risk name", "Account name"), idx + 2)
+            division_label = _label(("Division / state", "Operating division", "State/division"), idx + 3)
+            cards.append(
+                f"""
+<article class="policy-card">
+  <div class="card-line"><span>{escape(policy_label)}</span><strong>{escape(policy)}</strong></div>
+  <div class="card-line"><span>{escape(insured_label)}</span><strong>{escape(item["insured"])}</strong></div>
+  <div class="card-line"><span>{escape(company_label)}</span><strong>{escape(item["company_name"])}</strong></div>
+  <div class="card-line"><span>{escape(division_label)}</span><strong>{escape(item.get("division") or "General")} - {escape(item["policy_state"])}</strong></div>
+  <div class="card-note">Producer or agency note: {escape(agency)}. Runoff cards are retained for account history only.</div>
+</article>"""
+            )
+        body = f"""
 <h2>Policy Register</h2>
-<p>Policy administration extract. Some rows represent inactive policy shells.</p>
-""" + _table(["Policy", "Company", "Insured", "Division", "State", "Agency"], rows)
-    return _page("Policy register", body)
+<p>Policy administration cards. The same policy may support more than one
+current claim, and archived cards may resemble active account numbers.</p>
+<div class="policy-card-grid">{''.join(cards)}</div>
+"""
+        title = "Policy register" if page_index == 1 else "Policy register continued"
+        pages.append(_page(title, body))
+    return "".join(pages)
 
 
 def _cause_code_section() -> str:
-    rows = [
-        [item["code"], item["coverage_type"], item["description"], "Claims Adjuster"]
-        for item in CAUSE_CODES
-    ]
-    body = """
+    entries = []
+    for item in CAUSE_CODES:
+        entries.append(
+            f"""
+<div class="cause-entry">
+  <strong>{escape(item["code"])}</strong> is assigned to {escape(item["coverage_type"])}
+  when the intake narrative describes {escape(item["description"])}. Files coded
+  this way are normally routed to <strong>{escape(item["handler"])}</strong> unless
+  the reserve authority note requires manager review.
+</div>"""
+        )
+    entries.append(
+        """
+<div class="cause-entry">
+  <strong>REV</strong> appears in older extracts as a review marker. It is not a
+  claim cause and should not be used to classify current losses.
+</div>"""
+    )
+    body = f"""
 <h2>Loss Cause Classification Appendix</h2>
-<p>Internal cause-code reference used by claim intake and reserving systems.</p>
-""" + _table(["Cause", "Coverage", "Narrative Description", "Handler"], rows)
+<p>Internal reference page used by claim intake and reserving systems. The
+definitions below are written as filing instructions rather than as a data export.</p>
+<div class="cause-list">{''.join(entries)}</div>
+"""
     return _page("Loss cause classification appendix", body)
 
 
 def _claimant_index_section(incidents: list[dict[str, Any]]) -> str:
-    rows = [
-        [
-            item["incident_number"],
-            "; ".join(item.get("claimants") or []),
-            item.get("adjuster_notes") or "",
-        ]
-        for item in incidents
-    ]
-    body = """
+    pages: list[str] = []
+    for page_index, chunk in enumerate(_chunks(incidents, 12), start=1):
+        cards = []
+        for idx, item in enumerate(chunk, start=1 + (page_index - 1) * 12):
+            claimants = "; ".join(item.get("claimants") or [])
+            claim_label = _label(("Claim file", "Notice file", "Mail-room file"), idx)
+            party_label = _label(("Notice parties", "Claimant list", "Parties named"), idx + 1)
+            ref_label = _label(("Notice ref.", "Mail ref.", "Loss-run ref."), idx + 2)
+            cards.append(
+                f"""
+<article class="claimant-card">
+  <div class="card-line"><span>{escape(ref_label)}</span><strong>{escape(item["reference_number"])}</strong></div>
+  <div class="card-line"><span>{escape(party_label)}</span><strong>{escape(claimants)}</strong></div>
+  <div class="card-note">{escape(item.get("adjuster_notes") or "")}</div>
+</article>"""
+            )
+        body = f"""
 <h2>Claimant Notice and Adjuster Note Index</h2>
 <div class="two-col">
-  <p>This index was scanned from the claim correspondence module. It includes
-  claimants, claimant-side references, and adjuster diary snippets.</p>
-  <p>Rows may not appear in the same order as the primary schedule.</p>
+  <p>This correspondence index includes claimant-side references and adjuster
+  diary snippets. Items are indexed by loss-run reference and may be sorted by
+  mail-room receipt rather than by claim number.</p>
+  <p>Short diary notes are included only when the scanned notice packet retained
+  them in the account file.</p>
 </div>
-""" + _table(["Claim #", "Claimants", "Adjuster Notes"], rows)
-    return _page("Claimant notice index", body)
+<div class="claimant-grid">{''.join(cards)}</div>
+"""
+        title = "Claimant notice index" if page_index == 1 else "Claimant notice index continued"
+        pages.append(_page(title, body))
+    return "".join(pages)
 
 
 def _financial_ledger_section(incidents: list[dict[str, Any]]) -> str:
-    rows = []
-    for item in incidents:
-        row = [item["incident_number"]]
-        for key in ("bi", "pd", "lae", "ded"):
-            values = item.get(key) or {}
-            row.extend(
-                [
-                    _money(values.get("reserve")),
-                    _money(values.get("paid")),
-                    _money(values.get("recovered")),
-                    _money(values.get("total_incurred")),
-                ]
+    pages: list[str] = []
+    for page_index, chunk in enumerate(_chunks(incidents, 8), start=1):
+        blocks = []
+        for item in chunk:
+            cells = []
+            for label, key in (("BI", "bi"), ("PD", "pd"), ("LAE", "lae"), ("DED", "ded")):
+                values = item.get(key) or {}
+                cells.extend(
+                    [
+                        f'<div class="ledger-label">{label}</div>',
+                        f"<div>Reserve<br><strong>{_money(values.get('reserve'))}</strong></div>",
+                        f"<div>Paid<br><strong>{_money(values.get('paid'))}</strong></div>",
+                        f"<div>Recovered<br><strong>{_money(values.get('recovered'))}</strong></div>",
+                        f"<div>Incurred<br><strong>{_money(values.get('total_incurred'))}</strong></div>",
+                    ]
+                )
+            blocks.append(
+                f"""
+<article class="ledger-claim">
+  <div class="card-line"><span>Accounting ref</span><strong>{escape(item["reference_number"])}</strong></div>
+  <div class="card-note">Accounting close extract; match this reference to the intake card before assigning claim number.</div>
+  <div class="ledger-strip">{''.join(cells)}</div>
+</article>"""
             )
-        rows.append(row)
-
-    headers = ["Claim #"]
-    for prefix in ("BI", "PD", "LAE", "DED"):
-        headers.extend([f"{prefix} Res", f"{prefix} Paid", f"{prefix} Rec", f"{prefix} Total"])
-    body = """
+        body = f"""
 <h2>Claim Financial Ledger</h2>
-<p>Reserve and payment ledger by coverage bucket. Printed from accounting close.</p>
-""" + _table(headers, rows, class_name="data-table wide ledger")
-    return _page("Claim financial ledger", body)
+<p>Reserve and payment ledger by coverage bucket. Each claim block is printed
+from the accounting close packet and is keyed by the loss-run reference rather
+than by claim number.</p>
+<div class="ledger-grid">{''.join(blocks)}</div>
+"""
+        title = "Claim financial ledger" if page_index == 1 else "Claim financial ledger continued"
+        pages.append(_page(title, body))
+    return "".join(pages)
 
 
 def _archived_distractor_section(config: MultiHopCaseConfig, incidents: list[dict[str, Any]]) -> str:
@@ -1111,7 +1455,7 @@ def _archived_distractor_section(config: MultiHopCaseConfig, incidents: list[dic
 <h2>Archived Claims Extract</h2>
 <div class="notice">
   Archived extract retained for prior-year comparison. Incident identifiers do
-  not belong to the current target schedule.
+  not belong to the current claim schedule.
 </div>
 """ + _table(["Claim #", "Reference", "Policy", "Archive Note"], rows)
     return _page("Archived claims extract", body)
@@ -1151,10 +1495,7 @@ async def _render_pdf(html_path: Path, pdf_path: Path) -> None:
 
 def _transcripts_available(dataset_dir: Path, sample_id: str) -> list[str]:
     available: list[str] = []
-    canonical = artifact_path(dataset_dir, sample_id, "canonical")
     ocr = artifact_path(dataset_dir, sample_id, "ocr")
-    if canonical.exists() and canonical.stat().st_size > 0:
-        available.append("canonical")
     if ocr.exists() and ocr.stat().st_size > 0:
         available.append("ocr")
     return available
@@ -1165,14 +1506,12 @@ def _instance_files(dataset_dir: Path, sample_id: str) -> dict[str, Any]:
         "ground_truth": artifact_relative_path(dataset_dir, sample_id, "ground_truth"),
         "pdf": artifact_relative_path(dataset_dir, sample_id, "pdf"),
         "html": artifact_relative_path(dataset_dir, sample_id, "html"),
-        "canonical_md": artifact_relative_path(dataset_dir, sample_id, "canonical"),
         "ocr_md": artifact_relative_path(dataset_dir, sample_id, "ocr"),
     }
     for key, artifact in [
         ("json_size_bytes", "ground_truth"),
         ("pdf_size_bytes", "pdf"),
         ("html_size_bytes", "html"),
-        ("canonical_size_bytes", "canonical"),
         ("ocr_size_bytes", "ocr"),
     ]:
         path = artifact_path(dataset_dir, sample_id, artifact)
@@ -1184,7 +1523,7 @@ def _evidence_map(config: MultiHopCaseConfig) -> list[dict[str, Any]]:
     first_gap, second_gap, third_gap = config.spacer_pages
     return [
         {
-            "section": "primary_claim_extract",
+            "section": "claim_intake_file_cards",
             "approx_page_after_cover": 1,
             "fields": [
                 "incident_number",
@@ -1199,33 +1538,33 @@ def _evidence_map(config: MultiHopCaseConfig) -> list[dict[str, Any]]:
             ],
         },
         {
-            "section": "fleet_driver_assignment_roster",
+            "section": "fleet_driver_assignment_cards",
             "approx_page_after_cover": 2 + first_gap,
             "join_key": "unit_number",
             "fields": ["driver_name", "company_name", "policy_state"],
         },
         {
-            "section": "policy_register",
+            "section": "policy_register_cards",
             "approx_page_after_cover": 3 + first_gap,
             "join_key": "policy_number",
             "fields": ["company_name", "insured", "division", "policy_state", "agency"],
         },
         {
-            "section": "loss_cause_classification_appendix",
+            "section": "loss_cause_classification_narrative",
             "approx_page_after_cover": 4 + first_gap + second_gap,
             "join_key": "cause_code",
             "fields": ["coverage_type", "description", "handler"],
         },
         {
-            "section": "claimant_notice_index",
+            "section": "claimant_notice_cards",
             "approx_page_after_cover": 5 + first_gap + second_gap,
-            "join_key": "incident_number",
+            "join_key": "reference_number",
             "fields": ["claimants", "adjuster_notes"],
         },
         {
-            "section": "claim_financial_ledger",
+            "section": "claim_financial_ledger_blocks",
             "approx_page_after_cover": 6 + first_gap + second_gap + third_gap,
-            "join_key": "incident_number",
+            "join_key": "reference_number",
             "fields": ["bi", "pd", "lae", "ded"],
         },
     ]
@@ -1249,12 +1588,10 @@ def _write_case(
     html_path = artifact_path(dataset_dir, config.id, "html")
     pdf_path = artifact_path(dataset_dir, config.id, "pdf")
     ground_truth_path = artifact_path(dataset_dir, config.id, "ground_truth")
-    canonical_path = artifact_path(dataset_dir, config.id, "canonical")
     sample_metadata_path = artifact_path(dataset_dir, config.id, "metadata")
 
     html = _case_html(config, incidents)
     html_path.write_text(html, encoding="utf-8")
-    write_canonical_markdown_from_html(html_path, canonical_path)
     _write_json(ground_truth_path, incidents)
     if render_pdf:
         asyncio.run(_render_pdf(html_path, pdf_path))
@@ -1265,7 +1602,7 @@ def _write_case(
     metadata = {
         "id": config.id,
         "difficulty": config.case_type,
-        "complexity_regime": config.case_type,
+        "complexity_regime": "claim_crosspage_multihop",
         "format": "crosspage",
         "domain": "claims",
         "target_record_type": "loss_run_incident",
@@ -1276,16 +1613,20 @@ def _write_case(
         "document_count": 1,
         "evidence_pattern": "single_document_long_range_cross_page_join",
         "minimum_gap_pages_between_primary_and_last_evidence": sum(config.spacer_pages),
-        "problems": list(config.complexity_tags),
+        "problems": list(dict.fromkeys((*config.complexity_tags, *COMMON_CLAIM_STRESSORS))),
         "layout_templates": [
             "packet_cover",
             "portal_receipt",
             "official_request_response",
-            "primary_schedule",
+            "claim_file_cards",
             "spreadsheet_unit_reference",
             "mileage_schedule",
             "rotated_scan_excerpt",
-            "long_range_appendices",
+            "driver_assignment_cards",
+            "policy_register_cards",
+            "cause_classification_narrative",
+            "claimant_notice_cards",
+            "financial_ledger_blocks",
         ],
         "has_duplicates": False,
         "seed": seed,
@@ -1311,7 +1652,6 @@ def _empty_manifest(base_seed: int) -> dict[str, Any]:
             "pdfs": "pdfs/{sample_id}.pdf",
             "html": "html/{sample_id}.html",
             "ground_truth": "ground_truth/{sample_id}.json",
-            "canonical_transcripts": "transcripts/canonical/{sample_id}.md",
             "ocr_transcripts": "transcripts/ocr_gemini/{sample_id}.md",
             "metadata": "metadata/{sample_id}.json",
         },

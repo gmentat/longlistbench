@@ -1,3094 +1,1458 @@
 {
-  "dataset_name": "longlistbench-v1",
-  "version": "1.0.0",
+  "dataset_name": "longlistbench",
+  "version": "2.0.0",
   "description": "Benchmark for long-list entity extraction under layout, OCR, scale, and long-range cross-page evidence complexity.",
-  "generated_at": "2026-06-20T16:42:37.729590+00:00",
-  "base_seed": 42,
-  "total_instances": 86,
-  "total_claims": 6905,
-  "schema_version": "1.0",
+  "generated_at": "2026-06-22T17:44:33.070606+00:00",
+  "schema_version": "2.0",
   "transcript_conditions": [
-    "canonical",
     "ocr"
   ],
-  "difficulty_tiers": {
-    "easy": {
-      "seed_claims_per_pdf": 10,
-      "num_instances": 15,
-      "total_claims": 312,
-      "min_claims_per_document": 10,
-      "max_claims_per_document": 11
-    },
-    "medium": {
-      "seed_claims_per_pdf": 25,
-      "num_instances": 12,
-      "total_claims": 636,
-      "min_claims_per_document": 25,
-      "max_claims_per_document": 27
-    },
-    "hard": {
-      "seed_claims_per_pdf": 50,
-      "num_instances": 8,
-      "total_claims": 880,
-      "min_claims_per_document": 55,
-      "max_claims_per_document": 55
-    },
-    "extreme": {
-      "seed_claims_per_pdf": 100,
-      "num_instances": 5,
-      "total_claims": 5000,
-      "min_claims_per_document": 500,
-      "max_claims_per_document": 500
-    }
+  "total_instances": 36,
+  "total_target_records": 33450,
+  "template_families": [
+    "claim_crosspage_multihop",
+    "driver_mvr_request_and_roster",
+    "driver_schedule_spreadsheet_export",
+    "ifta_mileage_by_vehicle",
+    "ifta_multisection_return_packet",
+    "ifta_return_schedule_details",
+    "ifta_tax_return_inquiry_detail",
+    "ifta_tax_return_summary",
+    "loss_run_external",
+    "policy_multihop_bop",
+    "policy_multihop_cgl",
+    "policy_multihop_wc",
+    "vehicle_schedule_spreadsheet_export"
+  ],
+  "layout": {
+    "type": "modality_separated",
+    "pdfs": "pdfs/{sample_id}.pdf",
+    "html": "html/{sample_id}.html",
+    "ground_truth": "ground_truth/{sample_id}.json",
+    "ocr_transcripts": "transcripts/ocr_gemini/{sample_id}.md",
+    "metadata": "metadata/{sample_id}.json"
+  },
+  "provenance": {
+    "generated_artifacts_only": true,
+    "production_references_included": false,
+    "note": "Private production documents were used only for visual layout review. The repository contains synthetic generated artifacts only."
   },
   "instances": [
     {
-      "id": "easy_10_001_detailed",
-      "difficulty": "easy",
-      "format": "detailed",
-      "num_claims": 10,
-      "pages_estimate": 9,
+      "id": "driver_mvr_packet_001",
+      "difficulty": "driver_mvr_request_and_roster",
+      "format": "production_like_pdf",
+      "domain": "commercial_insurance_operations",
+      "template": "driver_mvr_request_and_roster",
+      "target_record_type": "driver_record",
+      "num_target_records": 260,
+      "source_batch": "batch-01",
       "problems": [
+        "high_density_long_list",
+        "production_like_layout",
+        "ocr_condition",
+        "page_breaks",
+        "multiple_tables",
         "multi_row"
       ],
-      "layout_templates": [
-        "loss_run_schedule",
-        "packet_cover"
-      ],
-      "has_duplicates": false,
-      "seed": 3965,
       "files": {
-        "ground_truth": "ground_truth/easy_10_001_detailed.json",
-        "pdf": "pdfs/easy_10_001_detailed.pdf",
-        "html": "html/easy_10_001_detailed.html",
-        "canonical_md": "transcripts/canonical/easy_10_001_detailed.md",
-        "ocr_md": "transcripts/ocr_gemini/easy_10_001_detailed.md",
-        "json_size_bytes": 11650,
-        "pdf_size_bytes": 221572,
-        "html_size_bytes": 34252,
-        "canonical_size_bytes": 6306,
-        "ocr_size_bytes": 0
+        "ground_truth": "ground_truth/driver_mvr_packet_001.json",
+        "pdf": "pdfs/driver_mvr_packet_001.pdf",
+        "html": "html/driver_mvr_packet_001.html",
+        "metadata": "metadata/driver_mvr_packet_001.json",
+        "json_size_bytes": 91072,
+        "pdf_size_bytes": 405332,
+        "html_size_bytes": 70289,
+        "ocr_md": "transcripts/ocr_gemini/driver_mvr_packet_001.md",
+        "ocr_size_bytes": 33504
       },
       "transcripts_available": [
-        "canonical"
+        "ocr"
       ],
-      "complexity_regime": "easy",
+      "complexity_regime": "driver_mvr_request_and_roster",
       "document_count": 1,
-      "evidence_pattern": "single_document"
-    },
-    {
-      "id": "easy_10_001_table",
-      "difficulty": "easy",
-      "format": "table",
-      "num_claims": 10,
-      "pages_estimate": 9,
-      "problems": [
-        "multi_row"
-      ],
-      "layout_templates": [
-        "loss_run_schedule",
-        "packet_cover",
-        "spreadsheet_reference"
-      ],
-      "has_duplicates": false,
-      "seed": 6452,
-      "files": {
-        "ground_truth": "ground_truth/easy_10_001_table.json",
-        "pdf": "pdfs/easy_10_001_table.pdf",
-        "html": "html/easy_10_001_table.html",
-        "canonical_md": "transcripts/canonical/easy_10_001_table.md",
-        "ocr_md": "transcripts/ocr_gemini/easy_10_001_table.md",
-        "json_size_bytes": 11607,
-        "pdf_size_bytes": 269305,
-        "html_size_bytes": 26547,
-        "canonical_size_bytes": 9712,
-        "ocr_size_bytes": 0
-      },
-      "transcripts_available": [
-        "canonical"
-      ],
-      "complexity_regime": "easy",
-      "document_count": 1,
-      "evidence_pattern": "single_document"
-    },
-    {
-      "id": "easy_10_002_detailed",
-      "difficulty": "easy",
-      "format": "detailed",
-      "num_claims": 10,
-      "pages_estimate": 8,
-      "problems": [
-        "page_breaks"
-      ],
-      "layout_templates": [
-        "loss_run_schedule",
-        "packet_cover"
-      ],
-      "has_duplicates": false,
-      "seed": 8966,
-      "files": {
-        "ground_truth": "ground_truth/easy_10_002_detailed.json",
-        "pdf": "pdfs/easy_10_002_detailed.pdf",
-        "html": "html/easy_10_002_detailed.html",
-        "canonical_md": "transcripts/canonical/easy_10_002_detailed.md",
-        "ocr_md": "transcripts/ocr_gemini/easy_10_002_detailed.md",
-        "json_size_bytes": 11644,
-        "pdf_size_bytes": 216336,
-        "html_size_bytes": 34050,
-        "canonical_size_bytes": 6284,
-        "ocr_size_bytes": 0
-      },
-      "transcripts_available": [
-        "canonical"
-      ],
-      "complexity_regime": "easy",
-      "document_count": 1,
-      "evidence_pattern": "single_document"
-    },
-    {
-      "id": "easy_10_002_table",
-      "difficulty": "easy",
-      "format": "table",
-      "num_claims": 10,
-      "pages_estimate": 10,
-      "problems": [
-        "page_breaks"
-      ],
-      "layout_templates": [
-        "loss_run_schedule",
-        "packet_cover",
-        "spreadsheet_reference"
-      ],
-      "has_duplicates": false,
-      "seed": 2671,
-      "files": {
-        "ground_truth": "ground_truth/easy_10_002_table.json",
-        "pdf": "pdfs/easy_10_002_table.pdf",
-        "html": "html/easy_10_002_table.html",
-        "canonical_md": "transcripts/canonical/easy_10_002_table.md",
-        "ocr_md": "transcripts/ocr_gemini/easy_10_002_table.md",
-        "json_size_bytes": 11634,
-        "pdf_size_bytes": 269139,
-        "html_size_bytes": 27691,
-        "canonical_size_bytes": 9946,
-        "ocr_size_bytes": 0
-      },
-      "transcripts_available": [
-        "canonical"
-      ],
-      "complexity_regime": "easy",
-      "document_count": 1,
-      "evidence_pattern": "single_document"
-    },
-    {
-      "id": "easy_10_003_detailed",
-      "difficulty": "easy",
-      "format": "detailed",
-      "num_claims": 10,
-      "pages_estimate": 9,
-      "problems": [
-        "multi_row",
-        "page_breaks"
-      ],
-      "layout_templates": [
-        "loss_run_schedule",
-        "packet_cover"
-      ],
-      "has_duplicates": false,
-      "seed": 1370,
-      "files": {
-        "ground_truth": "ground_truth/easy_10_003_detailed.json",
-        "pdf": "pdfs/easy_10_003_detailed.pdf",
-        "html": "html/easy_10_003_detailed.html",
-        "canonical_md": "transcripts/canonical/easy_10_003_detailed.md",
-        "ocr_md": "transcripts/ocr_gemini/easy_10_003_detailed.md",
-        "json_size_bytes": 11617,
-        "pdf_size_bytes": 219555,
-        "html_size_bytes": 33886,
-        "canonical_size_bytes": 6247,
-        "ocr_size_bytes": 0
-      },
-      "transcripts_available": [
-        "canonical"
-      ],
-      "complexity_regime": "easy",
-      "document_count": 1,
-      "evidence_pattern": "single_document"
-    },
-    {
-      "id": "easy_10_003_table",
-      "difficulty": "easy",
-      "format": "table",
-      "num_claims": 10,
-      "pages_estimate": 10,
-      "problems": [
-        "multi_row",
-        "page_breaks"
-      ],
-      "layout_templates": [
-        "loss_run_schedule",
-        "packet_cover",
-        "spreadsheet_reference"
-      ],
-      "has_duplicates": false,
-      "seed": 9909,
-      "files": {
-        "ground_truth": "ground_truth/easy_10_003_table.json",
-        "pdf": "pdfs/easy_10_003_table.pdf",
-        "html": "html/easy_10_003_table.html",
-        "canonical_md": "transcripts/canonical/easy_10_003_table.md",
-        "ocr_md": "transcripts/ocr_gemini/easy_10_003_table.md",
-        "json_size_bytes": 11694,
-        "pdf_size_bytes": 271398,
-        "html_size_bytes": 27760,
-        "canonical_size_bytes": 10014,
-        "ocr_size_bytes": 0
-      },
-      "transcripts_available": [
-        "canonical"
-      ],
-      "complexity_regime": "easy",
-      "document_count": 1,
-      "evidence_pattern": "single_document"
-    },
-    {
-      "id": "easy_10_004_detailed",
-      "difficulty": "easy",
-      "format": "detailed",
-      "num_claims": 11,
-      "pages_estimate": 8,
-      "problems": [
-        "duplicates"
-      ],
-      "layout_templates": [
-        "loss_run_schedule",
-        "packet_cover"
-      ],
-      "has_duplicates": true,
-      "seed": 1027,
-      "files": {
-        "ground_truth": "ground_truth/easy_10_004_detailed.json",
-        "pdf": "pdfs/easy_10_004_detailed.pdf",
-        "html": "html/easy_10_004_detailed.html",
-        "canonical_md": "transcripts/canonical/easy_10_004_detailed.md",
-        "ocr_md": "transcripts/ocr_gemini/easy_10_004_detailed.md",
-        "json_size_bytes": 12967,
-        "pdf_size_bytes": 218781,
-        "html_size_bytes": 36960,
-        "canonical_size_bytes": 7046,
-        "ocr_size_bytes": 0
-      },
-      "transcripts_available": [
-        "canonical"
-      ],
-      "complexity_regime": "easy",
-      "document_count": 1,
-      "evidence_pattern": "single_document"
-    },
-    {
-      "id": "easy_10_004_table",
-      "difficulty": "easy",
-      "format": "table",
-      "num_claims": 11,
-      "pages_estimate": 10,
-      "problems": [
-        "duplicates"
-      ],
-      "layout_templates": [
-        "loss_run_schedule",
-        "packet_cover",
-        "spreadsheet_reference"
-      ],
-      "has_duplicates": true,
-      "seed": 8327,
-      "files": {
-        "ground_truth": "ground_truth/easy_10_004_table.json",
-        "pdf": "pdfs/easy_10_004_table.pdf",
-        "html": "html/easy_10_004_table.html",
-        "canonical_md": "transcripts/canonical/easy_10_004_table.md",
-        "ocr_md": "transcripts/ocr_gemini/easy_10_004_table.md",
-        "json_size_bytes": 12682,
-        "pdf_size_bytes": 268861,
-        "html_size_bytes": 27792,
-        "canonical_size_bytes": 10513,
-        "ocr_size_bytes": 0
-      },
-      "transcripts_available": [
-        "canonical"
-      ],
-      "complexity_regime": "easy",
-      "document_count": 1,
-      "evidence_pattern": "single_document"
-    },
-    {
-      "id": "easy_10_005_detailed",
-      "difficulty": "easy",
-      "format": "detailed",
-      "num_claims": 11,
-      "pages_estimate": 8,
-      "problems": [
-        "multi_row",
-        "duplicates"
-      ],
-      "layout_templates": [
-        "loss_run_schedule",
-        "packet_cover"
-      ],
-      "has_duplicates": true,
-      "seed": 992,
-      "files": {
-        "ground_truth": "ground_truth/easy_10_005_detailed.json",
-        "pdf": "pdfs/easy_10_005_detailed.pdf",
-        "html": "html/easy_10_005_detailed.html",
-        "canonical_md": "transcripts/canonical/easy_10_005_detailed.md",
-        "ocr_md": "transcripts/ocr_gemini/easy_10_005_detailed.md",
-        "json_size_bytes": 12686,
-        "pdf_size_bytes": 215538,
-        "html_size_bytes": 36465,
-        "canonical_size_bytes": 6852,
-        "ocr_size_bytes": 0
-      },
-      "transcripts_available": [
-        "canonical"
-      ],
-      "complexity_regime": "easy",
-      "document_count": 1,
-      "evidence_pattern": "single_document"
-    },
-    {
-      "id": "easy_10_005_table",
-      "difficulty": "easy",
-      "format": "table",
-      "num_claims": 11,
-      "pages_estimate": 10,
-      "problems": [
-        "multi_row",
-        "duplicates"
-      ],
-      "layout_templates": [
-        "loss_run_schedule",
-        "packet_cover",
-        "spreadsheet_reference"
-      ],
-      "has_duplicates": true,
-      "seed": 8981,
-      "files": {
-        "ground_truth": "ground_truth/easy_10_005_table.json",
-        "pdf": "pdfs/easy_10_005_table.pdf",
-        "html": "html/easy_10_005_table.html",
-        "canonical_md": "transcripts/canonical/easy_10_005_table.md",
-        "ocr_md": "transcripts/ocr_gemini/easy_10_005_table.md",
-        "json_size_bytes": 12680,
-        "pdf_size_bytes": 271158,
-        "html_size_bytes": 27830,
-        "canonical_size_bytes": 10568,
-        "ocr_size_bytes": 0
-      },
-      "transcripts_available": [
-        "canonical"
-      ],
-      "complexity_regime": "easy",
-      "document_count": 1,
-      "evidence_pattern": "single_document"
-    },
-    {
-      "id": "easy_10_006_detailed",
-      "difficulty": "easy",
-      "format": "detailed",
-      "num_claims": 10,
-      "pages_estimate": 9,
-      "problems": [
-        "multi_row"
-      ],
-      "layout_templates": [
-        "loss_run_schedule",
-        "packet_cover"
-      ],
-      "has_duplicates": false,
-      "seed": 7541,
-      "files": {
-        "ground_truth": "ground_truth/easy_10_006_detailed.json",
-        "pdf": "pdfs/easy_10_006_detailed.pdf",
-        "html": "html/easy_10_006_detailed.html",
-        "canonical_md": "transcripts/canonical/easy_10_006_detailed.md",
-        "ocr_md": "transcripts/ocr_gemini/easy_10_006_detailed.md",
-        "json_size_bytes": 11782,
-        "pdf_size_bytes": 216713,
-        "html_size_bytes": 34048,
-        "canonical_size_bytes": 6296,
-        "ocr_size_bytes": 0
-      },
-      "transcripts_available": [
-        "canonical"
-      ],
-      "complexity_regime": "easy",
-      "document_count": 1,
-      "evidence_pattern": "single_document"
-    },
-    {
-      "id": "easy_10_006_table",
-      "difficulty": "easy",
-      "format": "table",
-      "num_claims": 10,
-      "pages_estimate": 9,
-      "problems": [
-        "multi_row"
-      ],
-      "layout_templates": [
-        "loss_run_schedule",
-        "packet_cover",
-        "spreadsheet_reference"
-      ],
-      "has_duplicates": false,
-      "seed": 2798,
-      "files": {
-        "ground_truth": "ground_truth/easy_10_006_table.json",
-        "pdf": "pdfs/easy_10_006_table.pdf",
-        "html": "html/easy_10_006_table.html",
-        "canonical_md": "transcripts/canonical/easy_10_006_table.md",
-        "ocr_md": "transcripts/ocr_gemini/easy_10_006_table.md",
-        "json_size_bytes": 11624,
-        "pdf_size_bytes": 270189,
-        "html_size_bytes": 26614,
-        "canonical_size_bytes": 9789,
-        "ocr_size_bytes": 0
-      },
-      "transcripts_available": [
-        "canonical"
-      ],
-      "complexity_regime": "easy",
-      "document_count": 1,
-      "evidence_pattern": "single_document"
-    },
-    {
-      "id": "easy_10_007_detailed",
-      "difficulty": "easy",
-      "format": "detailed",
-      "num_claims": 10,
-      "pages_estimate": 9,
-      "problems": [
-        "page_breaks"
-      ],
-      "layout_templates": [
-        "loss_run_schedule",
-        "packet_cover"
-      ],
-      "has_duplicates": false,
-      "seed": 8283,
-      "files": {
-        "ground_truth": "ground_truth/easy_10_007_detailed.json",
-        "pdf": "pdfs/easy_10_007_detailed.pdf",
-        "html": "html/easy_10_007_detailed.html",
-        "canonical_md": "transcripts/canonical/easy_10_007_detailed.md",
-        "ocr_md": "transcripts/ocr_gemini/easy_10_007_detailed.md",
-        "json_size_bytes": 11843,
-        "pdf_size_bytes": 219512,
-        "html_size_bytes": 35444,
-        "canonical_size_bytes": 6589,
-        "ocr_size_bytes": 0
-      },
-      "transcripts_available": [
-        "canonical"
-      ],
-      "complexity_regime": "easy",
-      "document_count": 1,
-      "evidence_pattern": "single_document"
-    },
-    {
-      "id": "easy_10_007_table",
-      "difficulty": "easy",
-      "format": "table",
-      "num_claims": 10,
-      "pages_estimate": 10,
-      "problems": [
-        "page_breaks"
-      ],
-      "layout_templates": [
-        "loss_run_schedule",
-        "packet_cover",
-        "spreadsheet_reference"
-      ],
-      "has_duplicates": false,
-      "seed": 691,
-      "files": {
-        "ground_truth": "ground_truth/easy_10_007_table.json",
-        "pdf": "pdfs/easy_10_007_table.pdf",
-        "html": "html/easy_10_007_table.html",
-        "canonical_md": "transcripts/canonical/easy_10_007_table.md",
-        "ocr_md": "transcripts/ocr_gemini/easy_10_007_table.md",
-        "json_size_bytes": 11657,
-        "pdf_size_bytes": 269725,
-        "html_size_bytes": 27736,
-        "canonical_size_bytes": 9967,
-        "ocr_size_bytes": 0
-      },
-      "transcripts_available": [
-        "canonical"
-      ],
-      "complexity_regime": "easy",
-      "document_count": 1,
-      "evidence_pattern": "single_document"
-    },
-    {
-      "id": "easy_10_008_detailed",
-      "difficulty": "easy",
-      "format": "detailed",
-      "num_claims": 10,
-      "pages_estimate": 10,
-      "problems": [
-        "multi_row",
-        "page_breaks"
-      ],
-      "layout_templates": [
-        "loss_run_schedule",
-        "packet_cover"
-      ],
-      "has_duplicates": false,
-      "seed": 4844,
-      "files": {
-        "ground_truth": "ground_truth/easy_10_008_detailed.json",
-        "pdf": "pdfs/easy_10_008_detailed.pdf",
-        "html": "html/easy_10_008_detailed.html",
-        "canonical_md": "transcripts/canonical/easy_10_008_detailed.md",
-        "ocr_md": "transcripts/ocr_gemini/easy_10_008_detailed.md",
-        "json_size_bytes": 11789,
-        "pdf_size_bytes": 222174,
-        "html_size_bytes": 35049,
-        "canonical_size_bytes": 6547,
-        "ocr_size_bytes": 0
-      },
-      "transcripts_available": [
-        "canonical"
-      ],
-      "complexity_regime": "easy",
-      "document_count": 1,
-      "evidence_pattern": "single_document"
-    },
-    {
-      "id": "easy_10_008_table",
-      "difficulty": "easy",
-      "format": "table",
-      "num_claims": 10,
-      "pages_estimate": 10,
-      "problems": [
-        "multi_row",
-        "page_breaks"
-      ],
-      "layout_templates": [
-        "loss_run_schedule",
-        "packet_cover",
-        "spreadsheet_reference"
-      ],
-      "has_duplicates": false,
-      "seed": 5401,
-      "files": {
-        "ground_truth": "ground_truth/easy_10_008_table.json",
-        "pdf": "pdfs/easy_10_008_table.pdf",
-        "html": "html/easy_10_008_table.html",
-        "canonical_md": "transcripts/canonical/easy_10_008_table.md",
-        "ocr_md": "transcripts/ocr_gemini/easy_10_008_table.md",
-        "json_size_bytes": 11984,
-        "pdf_size_bytes": 270040,
-        "html_size_bytes": 27962,
-        "canonical_size_bytes": 10224,
-        "ocr_size_bytes": 0
-      },
-      "transcripts_available": [
-        "canonical"
-      ],
-      "complexity_regime": "easy",
-      "document_count": 1,
-      "evidence_pattern": "single_document"
-    },
-    {
-      "id": "easy_10_009_detailed",
-      "difficulty": "easy",
-      "format": "detailed",
-      "num_claims": 11,
-      "pages_estimate": 8,
-      "problems": [
-        "duplicates"
-      ],
-      "layout_templates": [
-        "loss_run_schedule",
-        "packet_cover"
-      ],
-      "has_duplicates": true,
-      "seed": 2765,
-      "files": {
-        "ground_truth": "ground_truth/easy_10_009_detailed.json",
-        "pdf": "pdfs/easy_10_009_detailed.pdf",
-        "html": "html/easy_10_009_detailed.html",
-        "canonical_md": "transcripts/canonical/easy_10_009_detailed.md",
-        "ocr_md": "transcripts/ocr_gemini/easy_10_009_detailed.md",
-        "json_size_bytes": 12384,
-        "pdf_size_bytes": 208178,
-        "html_size_bytes": 34660,
-        "canonical_size_bytes": 6348,
-        "ocr_size_bytes": 0
-      },
-      "transcripts_available": [
-        "canonical"
-      ],
-      "complexity_regime": "easy",
-      "document_count": 1,
-      "evidence_pattern": "single_document"
-    },
-    {
-      "id": "easy_10_009_table",
-      "difficulty": "easy",
-      "format": "table",
-      "num_claims": 11,
-      "pages_estimate": 10,
-      "problems": [
-        "duplicates"
-      ],
-      "layout_templates": [
-        "loss_run_schedule",
-        "packet_cover",
-        "spreadsheet_reference"
-      ],
-      "has_duplicates": true,
-      "seed": 8743,
-      "files": {
-        "ground_truth": "ground_truth/easy_10_009_table.json",
-        "pdf": "pdfs/easy_10_009_table.pdf",
-        "html": "html/easy_10_009_table.html",
-        "canonical_md": "transcripts/canonical/easy_10_009_table.md",
-        "ocr_md": "transcripts/ocr_gemini/easy_10_009_table.md",
-        "json_size_bytes": 13054,
-        "pdf_size_bytes": 272970,
-        "html_size_bytes": 28160,
-        "canonical_size_bytes": 10871,
-        "ocr_size_bytes": 0
-      },
-      "transcripts_available": [
-        "canonical"
-      ],
-      "complexity_regime": "easy",
-      "document_count": 1,
-      "evidence_pattern": "single_document"
-    },
-    {
-      "id": "easy_10_010_detailed",
-      "difficulty": "easy",
-      "format": "detailed",
-      "num_claims": 11,
-      "pages_estimate": 10,
-      "problems": [
-        "multi_row",
-        "duplicates"
-      ],
-      "layout_templates": [
-        "loss_run_schedule",
-        "packet_cover"
-      ],
-      "has_duplicates": true,
-      "seed": 9156,
-      "files": {
-        "ground_truth": "ground_truth/easy_10_010_detailed.json",
-        "pdf": "pdfs/easy_10_010_detailed.pdf",
-        "html": "html/easy_10_010_detailed.html",
-        "canonical_md": "transcripts/canonical/easy_10_010_detailed.md",
-        "ocr_md": "transcripts/ocr_gemini/easy_10_010_detailed.md",
-        "json_size_bytes": 12929,
-        "pdf_size_bytes": 220730,
-        "html_size_bytes": 36516,
-        "canonical_size_bytes": 6916,
-        "ocr_size_bytes": 0
-      },
-      "transcripts_available": [
-        "canonical"
-      ],
-      "complexity_regime": "easy",
-      "document_count": 1,
-      "evidence_pattern": "single_document"
-    },
-    {
-      "id": "easy_10_010_table",
-      "difficulty": "easy",
-      "format": "table",
-      "num_claims": 11,
-      "pages_estimate": 10,
-      "problems": [
-        "multi_row",
-        "duplicates"
-      ],
-      "layout_templates": [
-        "loss_run_schedule",
-        "packet_cover",
-        "spreadsheet_reference"
-      ],
-      "has_duplicates": true,
-      "seed": 7385,
-      "files": {
-        "ground_truth": "ground_truth/easy_10_010_table.json",
-        "pdf": "pdfs/easy_10_010_table.pdf",
-        "html": "html/easy_10_010_table.html",
-        "canonical_md": "transcripts/canonical/easy_10_010_table.md",
-        "ocr_md": "transcripts/ocr_gemini/easy_10_010_table.md",
-        "json_size_bytes": 12856,
-        "pdf_size_bytes": 274264,
-        "html_size_bytes": 28048,
-        "canonical_size_bytes": 10766,
-        "ocr_size_bytes": 0
-      },
-      "transcripts_available": [
-        "canonical"
-      ],
-      "complexity_regime": "easy",
-      "document_count": 1,
-      "evidence_pattern": "single_document"
-    },
-    {
-      "id": "easy_10_011_detailed",
-      "difficulty": "easy",
-      "format": "detailed",
-      "num_claims": 10,
-      "pages_estimate": 7,
-      "problems": [
-        "multi_row"
-      ],
-      "layout_templates": [
-        "loss_run_schedule",
-        "packet_cover"
-      ],
-      "has_duplicates": false,
-      "seed": 614,
-      "files": {
-        "ground_truth": "ground_truth/easy_10_011_detailed.json",
-        "pdf": "pdfs/easy_10_011_detailed.pdf",
-        "html": "html/easy_10_011_detailed.html",
-        "canonical_md": "transcripts/canonical/easy_10_011_detailed.md",
-        "ocr_md": "transcripts/ocr_gemini/easy_10_011_detailed.md",
-        "json_size_bytes": 11347,
-        "pdf_size_bytes": 211872,
-        "html_size_bytes": 33104,
-        "canonical_size_bytes": 5890,
-        "ocr_size_bytes": 0
-      },
-      "transcripts_available": [
-        "canonical"
-      ],
-      "complexity_regime": "easy",
-      "document_count": 1,
-      "evidence_pattern": "single_document"
-    },
-    {
-      "id": "easy_10_011_table",
-      "difficulty": "easy",
-      "format": "table",
-      "num_claims": 10,
-      "pages_estimate": 9,
-      "problems": [
-        "multi_row"
-      ],
-      "layout_templates": [
-        "loss_run_schedule",
-        "packet_cover",
-        "spreadsheet_reference"
-      ],
-      "has_duplicates": false,
-      "seed": 5983,
-      "files": {
-        "ground_truth": "ground_truth/easy_10_011_table.json",
-        "pdf": "pdfs/easy_10_011_table.pdf",
-        "html": "html/easy_10_011_table.html",
-        "canonical_md": "transcripts/canonical/easy_10_011_table.md",
-        "ocr_md": "transcripts/ocr_gemini/easy_10_011_table.md",
-        "json_size_bytes": 11422,
-        "pdf_size_bytes": 268087,
-        "html_size_bytes": 26442,
-        "canonical_size_bytes": 9589,
-        "ocr_size_bytes": 0
-      },
-      "transcripts_available": [
-        "canonical"
-      ],
-      "complexity_regime": "easy",
-      "document_count": 1,
-      "evidence_pattern": "single_document"
-    },
-    {
-      "id": "easy_10_012_detailed",
-      "difficulty": "easy",
-      "format": "detailed",
-      "num_claims": 10,
-      "pages_estimate": 8,
-      "problems": [
-        "page_breaks"
-      ],
-      "layout_templates": [
-        "loss_run_schedule",
-        "packet_cover"
-      ],
-      "has_duplicates": false,
-      "seed": 8356,
-      "files": {
-        "ground_truth": "ground_truth/easy_10_012_detailed.json",
-        "pdf": "pdfs/easy_10_012_detailed.pdf",
-        "html": "html/easy_10_012_detailed.html",
-        "canonical_md": "transcripts/canonical/easy_10_012_detailed.md",
-        "ocr_md": "transcripts/ocr_gemini/easy_10_012_detailed.md",
-        "json_size_bytes": 11578,
-        "pdf_size_bytes": 219020,
-        "html_size_bytes": 34674,
-        "canonical_size_bytes": 6360,
-        "ocr_size_bytes": 0
-      },
-      "transcripts_available": [
-        "canonical"
-      ],
-      "complexity_regime": "easy",
-      "document_count": 1,
-      "evidence_pattern": "single_document"
-    },
-    {
-      "id": "easy_10_012_table",
-      "difficulty": "easy",
-      "format": "table",
-      "num_claims": 10,
-      "pages_estimate": 10,
-      "problems": [
-        "page_breaks"
-      ],
-      "layout_templates": [
-        "loss_run_schedule",
-        "packet_cover",
-        "spreadsheet_reference"
-      ],
-      "has_duplicates": false,
-      "seed": 4544,
-      "files": {
-        "ground_truth": "ground_truth/easy_10_012_table.json",
-        "pdf": "pdfs/easy_10_012_table.pdf",
-        "html": "html/easy_10_012_table.html",
-        "canonical_md": "transcripts/canonical/easy_10_012_table.md",
-        "ocr_md": "transcripts/ocr_gemini/easy_10_012_table.md",
-        "json_size_bytes": 11657,
-        "pdf_size_bytes": 268829,
-        "html_size_bytes": 27649,
-        "canonical_size_bytes": 9906,
-        "ocr_size_bytes": 0
-      },
-      "transcripts_available": [
-        "canonical"
-      ],
-      "complexity_regime": "easy",
-      "document_count": 1,
-      "evidence_pattern": "single_document"
-    },
-    {
-      "id": "easy_10_013_detailed",
-      "difficulty": "easy",
-      "format": "detailed",
-      "num_claims": 10,
-      "pages_estimate": 9,
-      "problems": [
-        "multi_row",
-        "page_breaks"
-      ],
-      "layout_templates": [
-        "loss_run_schedule",
-        "packet_cover"
-      ],
-      "has_duplicates": false,
-      "seed": 3746,
-      "files": {
-        "ground_truth": "ground_truth/easy_10_013_detailed.json",
-        "pdf": "pdfs/easy_10_013_detailed.pdf",
-        "html": "html/easy_10_013_detailed.html",
-        "canonical_md": "transcripts/canonical/easy_10_013_detailed.md",
-        "ocr_md": "transcripts/ocr_gemini/easy_10_013_detailed.md",
-        "json_size_bytes": 11912,
-        "pdf_size_bytes": 221809,
-        "html_size_bytes": 34678,
-        "canonical_size_bytes": 6504,
-        "ocr_size_bytes": 0
-      },
-      "transcripts_available": [
-        "canonical"
-      ],
-      "complexity_regime": "easy",
-      "document_count": 1,
-      "evidence_pattern": "single_document"
-    },
-    {
-      "id": "easy_10_013_table",
-      "difficulty": "easy",
-      "format": "table",
-      "num_claims": 10,
-      "pages_estimate": 10,
-      "problems": [
-        "multi_row",
-        "page_breaks"
-      ],
-      "layout_templates": [
-        "loss_run_schedule",
-        "packet_cover",
-        "spreadsheet_reference"
-      ],
-      "has_duplicates": false,
-      "seed": 5887,
-      "files": {
-        "ground_truth": "ground_truth/easy_10_013_table.json",
-        "pdf": "pdfs/easy_10_013_table.pdf",
-        "html": "html/easy_10_013_table.html",
-        "canonical_md": "transcripts/canonical/easy_10_013_table.md",
-        "ocr_md": "transcripts/ocr_gemini/easy_10_013_table.md",
-        "json_size_bytes": 11695,
-        "pdf_size_bytes": 272066,
-        "html_size_bytes": 27724,
-        "canonical_size_bytes": 9988,
-        "ocr_size_bytes": 0
-      },
-      "transcripts_available": [
-        "canonical"
-      ],
-      "complexity_regime": "easy",
-      "document_count": 1,
-      "evidence_pattern": "single_document"
-    },
-    {
-      "id": "easy_10_014_detailed",
-      "difficulty": "easy",
-      "format": "detailed",
-      "num_claims": 11,
-      "pages_estimate": 8,
-      "problems": [
-        "duplicates"
-      ],
-      "layout_templates": [
-        "loss_run_schedule",
-        "packet_cover"
-      ],
-      "has_duplicates": true,
-      "seed": 8210,
-      "files": {
-        "ground_truth": "ground_truth/easy_10_014_detailed.json",
-        "pdf": "pdfs/easy_10_014_detailed.pdf",
-        "html": "html/easy_10_014_detailed.html",
-        "canonical_md": "transcripts/canonical/easy_10_014_detailed.md",
-        "ocr_md": "transcripts/ocr_gemini/easy_10_014_detailed.md",
-        "json_size_bytes": 12914,
-        "pdf_size_bytes": 217416,
-        "html_size_bytes": 36098,
-        "canonical_size_bytes": 6827,
-        "ocr_size_bytes": 0
-      },
-      "transcripts_available": [
-        "canonical"
-      ],
-      "complexity_regime": "easy",
-      "document_count": 1,
-      "evidence_pattern": "single_document"
-    },
-    {
-      "id": "easy_10_014_table",
-      "difficulty": "easy",
-      "format": "table",
-      "num_claims": 11,
-      "pages_estimate": 10,
-      "problems": [
-        "duplicates"
-      ],
-      "layout_templates": [
-        "loss_run_schedule",
-        "packet_cover",
-        "spreadsheet_reference"
-      ],
-      "has_duplicates": true,
-      "seed": 4490,
-      "files": {
-        "ground_truth": "ground_truth/easy_10_014_table.json",
-        "pdf": "pdfs/easy_10_014_table.pdf",
-        "html": "html/easy_10_014_table.html",
-        "canonical_md": "transcripts/canonical/easy_10_014_table.md",
-        "ocr_md": "transcripts/ocr_gemini/easy_10_014_table.md",
-        "json_size_bytes": 12473,
-        "pdf_size_bytes": 268725,
-        "html_size_bytes": 27650,
-        "canonical_size_bytes": 10371,
-        "ocr_size_bytes": 0
-      },
-      "transcripts_available": [
-        "canonical"
-      ],
-      "complexity_regime": "easy",
-      "document_count": 1,
-      "evidence_pattern": "single_document"
-    },
-    {
-      "id": "easy_10_015_detailed",
-      "difficulty": "easy",
-      "format": "detailed",
-      "num_claims": 11,
-      "pages_estimate": 8,
-      "problems": [
-        "multi_row",
-        "duplicates"
-      ],
-      "layout_templates": [
-        "loss_run_schedule",
-        "packet_cover"
-      ],
-      "has_duplicates": true,
-      "seed": 2071,
-      "files": {
-        "ground_truth": "ground_truth/easy_10_015_detailed.json",
-        "pdf": "pdfs/easy_10_015_detailed.pdf",
-        "html": "html/easy_10_015_detailed.html",
-        "canonical_md": "transcripts/canonical/easy_10_015_detailed.md",
-        "ocr_md": "transcripts/ocr_gemini/easy_10_015_detailed.md",
-        "json_size_bytes": 12746,
-        "pdf_size_bytes": 218100,
-        "html_size_bytes": 36201,
-        "canonical_size_bytes": 6764,
-        "ocr_size_bytes": 0
-      },
-      "transcripts_available": [
-        "canonical"
-      ],
-      "complexity_regime": "easy",
-      "document_count": 1,
-      "evidence_pattern": "single_document"
-    },
-    {
-      "id": "easy_10_015_table",
-      "difficulty": "easy",
-      "format": "table",
-      "num_claims": 11,
-      "pages_estimate": 10,
-      "problems": [
-        "multi_row",
-        "duplicates"
-      ],
-      "layout_templates": [
-        "loss_run_schedule",
-        "packet_cover",
-        "spreadsheet_reference"
-      ],
-      "has_duplicates": true,
-      "seed": 9131,
-      "files": {
-        "ground_truth": "ground_truth/easy_10_015_table.json",
-        "pdf": "pdfs/easy_10_015_table.pdf",
-        "html": "html/easy_10_015_table.html",
-        "canonical_md": "transcripts/canonical/easy_10_015_table.md",
-        "ocr_md": "transcripts/ocr_gemini/easy_10_015_table.md",
-        "json_size_bytes": 12840,
-        "pdf_size_bytes": 270349,
-        "html_size_bytes": 27932,
-        "canonical_size_bytes": 10668,
-        "ocr_size_bytes": 0
-      },
-      "transcripts_available": [
-        "canonical"
-      ],
-      "complexity_regime": "easy",
-      "document_count": 1,
-      "evidence_pattern": "single_document"
-    },
-    {
-      "id": "extreme_100_001_detailed",
-      "difficulty": "extreme",
-      "format": "detailed",
-      "num_claims": 500,
-      "pages_estimate": 203,
-      "problems": [
-        "page_breaks",
-        "multi_row",
-        "duplicates",
-        "large_doc",
-        "multiple_tables",
-        "multi_column",
-        "merged_cells"
-      ],
-      "layout_templates": [
-        "loss_run_schedule",
-        "packet_cover",
-        "spreadsheet_reference",
-        "portal_receipt",
-        "rotated_scan_excerpt"
-      ],
-      "has_duplicates": true,
-      "seed": 4254,
-      "files": {
-        "ground_truth": "ground_truth/extreme_100_001_detailed.json",
-        "pdf": "pdfs/extreme_100_001_detailed.pdf",
-        "html": "html/extreme_100_001_detailed.html",
-        "canonical_md": "transcripts/canonical/extreme_100_001_detailed.md",
-        "ocr_md": "transcripts/ocr_gemini/extreme_100_001_detailed.md",
-        "json_size_bytes": 580687,
-        "pdf_size_bytes": 1037833,
-        "html_size_bytes": 1180138,
-        "canonical_size_bytes": 220518,
-        "ocr_size_bytes": 0
-      },
-      "transcripts_available": [
-        "canonical"
-      ],
-      "complexity_regime": "extreme",
-      "document_count": 1,
-      "evidence_pattern": "single_document"
-    },
-    {
-      "id": "extreme_100_001_table",
-      "difficulty": "extreme",
-      "format": "table",
-      "num_claims": 500,
-      "pages_estimate": 322,
-      "problems": [
-        "page_breaks",
-        "multi_row",
-        "duplicates",
-        "large_doc",
-        "multiple_tables",
-        "multi_column",
-        "merged_cells"
-      ],
-      "layout_templates": [
-        "loss_run_schedule",
-        "packet_cover",
-        "spreadsheet_reference",
-        "portal_receipt",
-        "rotated_scan_excerpt"
-      ],
-      "has_duplicates": true,
-      "seed": 8801,
-      "files": {
-        "ground_truth": "ground_truth/extreme_100_001_table.json",
-        "pdf": "pdfs/extreme_100_001_table.pdf",
-        "html": "html/extreme_100_001_table.html",
-        "canonical_md": "transcripts/canonical/extreme_100_001_table.md",
-        "ocr_md": "transcripts/ocr_gemini/extreme_100_001_table.md",
-        "json_size_bytes": 581536,
-        "pdf_size_bytes": 983931,
-        "html_size_bytes": 600903,
-        "canonical_size_bytes": 456679,
-        "ocr_size_bytes": 0
-      },
-      "transcripts_available": [
-        "canonical"
-      ],
-      "complexity_regime": "extreme",
-      "document_count": 1,
-      "evidence_pattern": "single_document"
-    },
-    {
-      "id": "extreme_100_002_detailed",
-      "difficulty": "extreme",
-      "format": "detailed",
-      "num_claims": 500,
-      "pages_estimate": 201,
-      "problems": [
-        "page_breaks",
-        "multi_row",
-        "duplicates",
-        "large_doc",
-        "multiple_tables",
-        "multi_column",
-        "merged_cells"
-      ],
-      "layout_templates": [
-        "loss_run_schedule",
-        "packet_cover",
-        "spreadsheet_reference",
-        "portal_receipt",
-        "rotated_scan_excerpt"
-      ],
-      "has_duplicates": true,
-      "seed": 708,
-      "files": {
-        "ground_truth": "ground_truth/extreme_100_002_detailed.json",
-        "pdf": "pdfs/extreme_100_002_detailed.pdf",
-        "html": "html/extreme_100_002_detailed.html",
-        "canonical_md": "transcripts/canonical/extreme_100_002_detailed.md",
-        "ocr_md": "transcripts/ocr_gemini/extreme_100_002_detailed.md",
-        "json_size_bytes": 581597,
-        "pdf_size_bytes": 1037500,
-        "html_size_bytes": 1178688,
-        "canonical_size_bytes": 221061,
-        "ocr_size_bytes": 0
-      },
-      "transcripts_available": [
-        "canonical"
-      ],
-      "complexity_regime": "extreme",
-      "document_count": 1,
-      "evidence_pattern": "single_document"
-    },
-    {
-      "id": "extreme_100_002_table",
-      "difficulty": "extreme",
-      "format": "table",
-      "num_claims": 500,
-      "pages_estimate": 332,
-      "problems": [
-        "page_breaks",
-        "multi_row",
-        "duplicates",
-        "large_doc",
-        "multiple_tables",
-        "multi_column",
-        "merged_cells"
-      ],
-      "layout_templates": [
-        "loss_run_schedule",
-        "packet_cover",
-        "spreadsheet_reference",
-        "portal_receipt",
-        "rotated_scan_excerpt"
-      ],
-      "has_duplicates": true,
-      "seed": 242,
-      "files": {
-        "ground_truth": "ground_truth/extreme_100_002_table.json",
-        "pdf": "pdfs/extreme_100_002_table.pdf",
-        "html": "html/extreme_100_002_table.html",
-        "canonical_md": "transcripts/canonical/extreme_100_002_table.md",
-        "ocr_md": "transcripts/ocr_gemini/extreme_100_002_table.md",
-        "json_size_bytes": 585600,
-        "pdf_size_bytes": 991041,
-        "html_size_bytes": 604812,
-        "canonical_size_bytes": 460568,
-        "ocr_size_bytes": 0
-      },
-      "transcripts_available": [
-        "canonical"
-      ],
-      "complexity_regime": "extreme",
-      "document_count": 1,
-      "evidence_pattern": "single_document"
-    },
-    {
-      "id": "extreme_100_003_detailed",
-      "difficulty": "extreme",
-      "format": "detailed",
-      "num_claims": 500,
-      "pages_estimate": 209,
-      "problems": [
-        "page_breaks",
-        "multi_row",
-        "duplicates",
-        "large_doc",
-        "multiple_tables",
-        "multi_column",
-        "merged_cells"
-      ],
-      "layout_templates": [
-        "loss_run_schedule",
-        "packet_cover",
-        "spreadsheet_reference",
-        "portal_receipt",
-        "rotated_scan_excerpt"
-      ],
-      "has_duplicates": true,
-      "seed": 557,
-      "files": {
-        "ground_truth": "ground_truth/extreme_100_003_detailed.json",
-        "pdf": "pdfs/extreme_100_003_detailed.pdf",
-        "html": "html/extreme_100_003_detailed.html",
-        "canonical_md": "transcripts/canonical/extreme_100_003_detailed.md",
-        "ocr_md": "transcripts/ocr_gemini/extreme_100_003_detailed.md",
-        "json_size_bytes": 582665,
-        "pdf_size_bytes": 1047913,
-        "html_size_bytes": 1188117,
-        "canonical_size_bytes": 223250,
-        "ocr_size_bytes": 0
-      },
-      "transcripts_available": [
-        "canonical"
-      ],
-      "complexity_regime": "extreme",
-      "document_count": 1,
-      "evidence_pattern": "single_document"
-    },
-    {
-      "id": "extreme_100_003_table",
-      "difficulty": "extreme",
-      "format": "table",
-      "num_claims": 500,
-      "pages_estimate": 329,
-      "problems": [
-        "page_breaks",
-        "multi_row",
-        "duplicates",
-        "large_doc",
-        "multiple_tables",
-        "multi_column",
-        "merged_cells"
-      ],
-      "layout_templates": [
-        "loss_run_schedule",
-        "packet_cover",
-        "spreadsheet_reference",
-        "portal_receipt",
-        "rotated_scan_excerpt"
-      ],
-      "has_duplicates": true,
-      "seed": 5493,
-      "files": {
-        "ground_truth": "ground_truth/extreme_100_003_table.json",
-        "pdf": "pdfs/extreme_100_003_table.pdf",
-        "html": "html/extreme_100_003_table.html",
-        "canonical_md": "transcripts/canonical/extreme_100_003_table.md",
-        "ocr_md": "transcripts/ocr_gemini/extreme_100_003_table.md",
-        "json_size_bytes": 581219,
-        "pdf_size_bytes": 982954,
-        "html_size_bytes": 601320,
-        "canonical_size_bytes": 456414,
-        "ocr_size_bytes": 0
-      },
-      "transcripts_available": [
-        "canonical"
-      ],
-      "complexity_regime": "extreme",
-      "document_count": 1,
-      "evidence_pattern": "single_document"
-    },
-    {
-      "id": "extreme_100_004_detailed",
-      "difficulty": "extreme",
-      "format": "detailed",
-      "num_claims": 500,
-      "pages_estimate": 199,
-      "problems": [
-        "page_breaks",
-        "multi_row",
-        "duplicates",
-        "large_doc",
-        "multiple_tables",
-        "multi_column",
-        "merged_cells"
-      ],
-      "layout_templates": [
-        "loss_run_schedule",
-        "packet_cover",
-        "spreadsheet_reference",
-        "portal_receipt",
-        "rotated_scan_excerpt"
-      ],
-      "has_duplicates": true,
-      "seed": 9028,
-      "files": {
-        "ground_truth": "ground_truth/extreme_100_004_detailed.json",
-        "pdf": "pdfs/extreme_100_004_detailed.pdf",
-        "html": "html/extreme_100_004_detailed.html",
-        "canonical_md": "transcripts/canonical/extreme_100_004_detailed.md",
-        "ocr_md": "transcripts/ocr_gemini/extreme_100_004_detailed.md",
-        "json_size_bytes": 582187,
-        "pdf_size_bytes": 1033016,
-        "html_size_bytes": 1179658,
-        "canonical_size_bytes": 221592,
-        "ocr_size_bytes": 0
-      },
-      "transcripts_available": [
-        "canonical"
-      ],
-      "complexity_regime": "extreme",
-      "document_count": 1,
-      "evidence_pattern": "single_document"
-    },
-    {
-      "id": "extreme_100_004_table",
-      "difficulty": "extreme",
-      "format": "table",
-      "num_claims": 500,
-      "pages_estimate": 310,
-      "problems": [
-        "page_breaks",
-        "multi_row",
-        "duplicates",
-        "large_doc",
-        "multiple_tables",
-        "multi_column",
-        "merged_cells"
-      ],
-      "layout_templates": [
-        "loss_run_schedule",
-        "packet_cover",
-        "spreadsheet_reference",
-        "portal_receipt",
-        "rotated_scan_excerpt"
-      ],
-      "has_duplicates": true,
-      "seed": 8214,
-      "files": {
-        "ground_truth": "ground_truth/extreme_100_004_table.json",
-        "pdf": "pdfs/extreme_100_004_table.pdf",
-        "html": "html/extreme_100_004_table.html",
-        "canonical_md": "transcripts/canonical/extreme_100_004_table.md",
-        "ocr_md": "transcripts/ocr_gemini/extreme_100_004_table.md",
-        "json_size_bytes": 582719,
-        "pdf_size_bytes": 959776,
-        "html_size_bytes": 601947,
-        "canonical_size_bytes": 457603,
-        "ocr_size_bytes": 0
-      },
-      "transcripts_available": [
-        "canonical"
-      ],
-      "complexity_regime": "extreme",
-      "document_count": 1,
-      "evidence_pattern": "single_document"
-    },
-    {
-      "id": "extreme_100_005_detailed",
-      "difficulty": "extreme",
-      "format": "detailed",
-      "num_claims": 500,
-      "pages_estimate": 203,
-      "problems": [
-        "page_breaks",
-        "multi_row",
-        "duplicates",
-        "large_doc",
-        "multiple_tables",
-        "multi_column",
-        "merged_cells"
-      ],
-      "layout_templates": [
-        "loss_run_schedule",
-        "packet_cover",
-        "spreadsheet_reference",
-        "portal_receipt",
-        "rotated_scan_excerpt"
-      ],
-      "has_duplicates": true,
-      "seed": 3728,
-      "files": {
-        "ground_truth": "ground_truth/extreme_100_005_detailed.json",
-        "pdf": "pdfs/extreme_100_005_detailed.pdf",
-        "html": "html/extreme_100_005_detailed.html",
-        "canonical_md": "transcripts/canonical/extreme_100_005_detailed.md",
-        "ocr_md": "transcripts/ocr_gemini/extreme_100_005_detailed.md",
-        "json_size_bytes": 583020,
-        "pdf_size_bytes": 1039505,
-        "html_size_bytes": 1182895,
-        "canonical_size_bytes": 223161,
-        "ocr_size_bytes": 0
-      },
-      "transcripts_available": [
-        "canonical"
-      ],
-      "complexity_regime": "extreme",
-      "document_count": 1,
-      "evidence_pattern": "single_document"
-    },
-    {
-      "id": "extreme_100_005_table",
-      "difficulty": "extreme",
-      "format": "table",
-      "num_claims": 500,
-      "pages_estimate": 330,
-      "problems": [
-        "page_breaks",
-        "multi_row",
-        "duplicates",
-        "large_doc",
-        "multiple_tables",
-        "multi_column",
-        "merged_cells"
-      ],
-      "layout_templates": [
-        "loss_run_schedule",
-        "packet_cover",
-        "spreadsheet_reference",
-        "portal_receipt",
-        "rotated_scan_excerpt"
-      ],
-      "has_duplicates": true,
-      "seed": 6143,
-      "files": {
-        "ground_truth": "ground_truth/extreme_100_005_table.json",
-        "pdf": "pdfs/extreme_100_005_table.pdf",
-        "html": "html/extreme_100_005_table.html",
-        "canonical_md": "transcripts/canonical/extreme_100_005_table.md",
-        "ocr_md": "transcripts/ocr_gemini/extreme_100_005_table.md",
-        "json_size_bytes": 583241,
-        "pdf_size_bytes": 988206,
-        "html_size_bytes": 602536,
-        "canonical_size_bytes": 458243,
-        "ocr_size_bytes": 0
-      },
-      "transcripts_available": [
-        "canonical"
-      ],
-      "complexity_regime": "extreme",
-      "document_count": 1,
-      "evidence_pattern": "single_document"
-    },
-    {
-      "id": "hard_50_001_detailed",
-      "difficulty": "hard",
-      "format": "detailed",
-      "num_claims": 55,
-      "pages_estimate": 24,
-      "problems": [
-        "page_breaks",
-        "multi_row",
-        "duplicates",
-        "multiple_tables",
-        "multi_column"
-      ],
-      "layout_templates": [
-        "loss_run_schedule",
-        "packet_cover",
-        "spreadsheet_reference",
-        "portal_receipt",
-        "rotated_scan_excerpt"
-      ],
-      "has_duplicates": true,
-      "seed": 1261,
-      "files": {
-        "ground_truth": "ground_truth/hard_50_001_detailed.json",
-        "pdf": "pdfs/hard_50_001_detailed.pdf",
-        "html": "html/hard_50_001_detailed.html",
-        "canonical_md": "transcripts/canonical/hard_50_001_detailed.md",
-        "ocr_md": "transcripts/ocr_gemini/hard_50_001_detailed.md",
-        "json_size_bytes": 64444,
-        "pdf_size_bytes": 435038,
-        "html_size_bytes": 148844,
-        "canonical_size_bytes": 31967,
-        "ocr_size_bytes": 0
-      },
-      "transcripts_available": [
-        "canonical"
-      ],
-      "complexity_regime": "hard",
-      "document_count": 1,
-      "evidence_pattern": "single_document"
-    },
-    {
-      "id": "hard_50_001_table",
-      "difficulty": "hard",
-      "format": "table",
-      "num_claims": 55,
-      "pages_estimate": 42,
-      "problems": [
-        "page_breaks",
-        "multi_row",
-        "duplicates",
-        "multiple_tables",
-        "multi_column"
-      ],
-      "layout_templates": [
-        "loss_run_schedule",
-        "packet_cover",
-        "spreadsheet_reference",
-        "portal_receipt",
-        "rotated_scan_excerpt"
-      ],
-      "has_duplicates": true,
-      "seed": 4160,
-      "files": {
-        "ground_truth": "ground_truth/hard_50_001_table.json",
-        "pdf": "pdfs/hard_50_001_table.pdf",
-        "html": "html/hard_50_001_table.html",
-        "canonical_md": "transcripts/canonical/hard_50_001_table.md",
-        "ocr_md": "transcripts/ocr_gemini/hard_50_001_table.md",
-        "json_size_bytes": 63868,
-        "pdf_size_bytes": 434647,
-        "html_size_bytes": 92855,
-        "canonical_size_bytes": 50824,
-        "ocr_size_bytes": 0
-      },
-      "transcripts_available": [
-        "canonical"
-      ],
-      "complexity_regime": "hard",
-      "document_count": 1,
-      "evidence_pattern": "single_document"
-    },
-    {
-      "id": "hard_50_002_detailed",
-      "difficulty": "hard",
-      "format": "detailed",
-      "num_claims": 55,
-      "pages_estimate": 46,
-      "problems": [
-        "page_breaks",
-        "multi_row",
-        "duplicates",
-        "multiple_tables",
-        "merged_cells"
-      ],
-      "layout_templates": [
-        "loss_run_schedule",
-        "packet_cover",
-        "spreadsheet_reference",
-        "portal_receipt",
-        "rotated_scan_excerpt"
-      ],
-      "has_duplicates": true,
-      "seed": 1679,
-      "files": {
-        "ground_truth": "ground_truth/hard_50_002_detailed.json",
-        "pdf": "pdfs/hard_50_002_detailed.pdf",
-        "html": "html/hard_50_002_detailed.html",
-        "canonical_md": "transcripts/canonical/hard_50_002_detailed.md",
-        "ocr_md": "transcripts/ocr_gemini/hard_50_002_detailed.md",
-        "json_size_bytes": 63828,
-        "pdf_size_bytes": 437346,
-        "html_size_bytes": 153908,
-        "canonical_size_bytes": 24646,
-        "ocr_size_bytes": 0
-      },
-      "transcripts_available": [
-        "canonical"
-      ],
-      "complexity_regime": "hard",
-      "document_count": 1,
-      "evidence_pattern": "single_document"
-    },
-    {
-      "id": "hard_50_002_table",
-      "difficulty": "hard",
-      "format": "table",
-      "num_claims": 55,
-      "pages_estimate": 43,
-      "problems": [
-        "page_breaks",
-        "multi_row",
-        "duplicates",
-        "multiple_tables",
-        "merged_cells"
-      ],
-      "layout_templates": [
-        "loss_run_schedule",
-        "packet_cover",
-        "spreadsheet_reference",
-        "portal_receipt",
-        "rotated_scan_excerpt"
-      ],
-      "has_duplicates": true,
-      "seed": 6853,
-      "files": {
-        "ground_truth": "ground_truth/hard_50_002_table.json",
-        "pdf": "pdfs/hard_50_002_table.pdf",
-        "html": "html/hard_50_002_table.html",
-        "canonical_md": "transcripts/canonical/hard_50_002_table.md",
-        "ocr_md": "transcripts/ocr_gemini/hard_50_002_table.md",
-        "json_size_bytes": 64224,
-        "pdf_size_bytes": 434947,
-        "html_size_bytes": 92217,
-        "canonical_size_bytes": 51175,
-        "ocr_size_bytes": 0
-      },
-      "transcripts_available": [
-        "canonical"
-      ],
-      "complexity_regime": "hard",
-      "document_count": 1,
-      "evidence_pattern": "single_document"
-    },
-    {
-      "id": "hard_50_003_detailed",
-      "difficulty": "hard",
-      "format": "detailed",
-      "num_claims": 55,
-      "pages_estimate": 26,
-      "problems": [
-        "page_breaks",
-        "multi_row",
-        "duplicates",
-        "multi_column",
-        "merged_cells"
-      ],
-      "layout_templates": [
-        "loss_run_schedule",
-        "packet_cover",
-        "spreadsheet_reference",
-        "portal_receipt",
-        "rotated_scan_excerpt"
-      ],
-      "has_duplicates": true,
-      "seed": 7893,
-      "files": {
-        "ground_truth": "ground_truth/hard_50_003_detailed.json",
-        "pdf": "pdfs/hard_50_003_detailed.pdf",
-        "html": "html/hard_50_003_detailed.html",
-        "canonical_md": "transcripts/canonical/hard_50_003_detailed.md",
-        "ocr_md": "transcripts/ocr_gemini/hard_50_003_detailed.md",
-        "json_size_bytes": 63252,
-        "pdf_size_bytes": 417848,
-        "html_size_bytes": 148679,
-        "canonical_size_bytes": 23960,
-        "ocr_size_bytes": 0
-      },
-      "transcripts_available": [
-        "canonical"
-      ],
-      "complexity_regime": "hard",
-      "document_count": 1,
-      "evidence_pattern": "single_document"
-    },
-    {
-      "id": "hard_50_003_table",
-      "difficulty": "hard",
-      "format": "table",
-      "num_claims": 55,
-      "pages_estimate": 41,
-      "problems": [
-        "page_breaks",
-        "multi_row",
-        "duplicates",
-        "multi_column",
-        "merged_cells"
-      ],
-      "layout_templates": [
-        "loss_run_schedule",
-        "packet_cover",
-        "spreadsheet_reference",
-        "portal_receipt",
-        "rotated_scan_excerpt"
-      ],
-      "has_duplicates": true,
-      "seed": 9266,
-      "files": {
-        "ground_truth": "ground_truth/hard_50_003_table.json",
-        "pdf": "pdfs/hard_50_003_table.pdf",
-        "html": "html/hard_50_003_table.html",
-        "canonical_md": "transcripts/canonical/hard_50_003_table.md",
-        "ocr_md": "transcripts/ocr_gemini/hard_50_003_table.md",
-        "json_size_bytes": 63736,
-        "pdf_size_bytes": 409047,
-        "html_size_bytes": 89027,
-        "canonical_size_bytes": 50731,
-        "ocr_size_bytes": 0
-      },
-      "transcripts_available": [
-        "canonical"
-      ],
-      "complexity_regime": "hard",
-      "document_count": 1,
-      "evidence_pattern": "single_document"
-    },
-    {
-      "id": "hard_50_004_detailed",
-      "difficulty": "hard",
-      "format": "detailed",
-      "num_claims": 55,
-      "pages_estimate": 26,
-      "problems": [
-        "page_breaks",
-        "multi_row",
-        "duplicates",
-        "multiple_tables",
-        "multi_column"
-      ],
-      "layout_templates": [
-        "loss_run_schedule",
-        "packet_cover",
-        "spreadsheet_reference",
-        "portal_receipt",
-        "rotated_scan_excerpt"
-      ],
-      "has_duplicates": true,
-      "seed": 2463,
-      "files": {
-        "ground_truth": "ground_truth/hard_50_004_detailed.json",
-        "pdf": "pdfs/hard_50_004_detailed.pdf",
-        "html": "html/hard_50_004_detailed.html",
-        "canonical_md": "transcripts/canonical/hard_50_004_detailed.md",
-        "ocr_md": "transcripts/ocr_gemini/hard_50_004_detailed.md",
-        "json_size_bytes": 64507,
-        "pdf_size_bytes": 442570,
-        "html_size_bytes": 152963,
-        "canonical_size_bytes": 32578,
-        "ocr_size_bytes": 0
-      },
-      "transcripts_available": [
-        "canonical"
-      ],
-      "complexity_regime": "hard",
-      "document_count": 1,
-      "evidence_pattern": "single_document"
-    },
-    {
-      "id": "hard_50_004_table",
-      "difficulty": "hard",
-      "format": "table",
-      "num_claims": 55,
-      "pages_estimate": 43,
-      "problems": [
-        "page_breaks",
-        "multi_row",
-        "duplicates",
-        "multiple_tables",
-        "multi_column"
-      ],
-      "layout_templates": [
-        "loss_run_schedule",
-        "packet_cover",
-        "spreadsheet_reference",
-        "portal_receipt",
-        "rotated_scan_excerpt"
-      ],
-      "has_duplicates": true,
-      "seed": 1070,
-      "files": {
-        "ground_truth": "ground_truth/hard_50_004_table.json",
-        "pdf": "pdfs/hard_50_004_table.pdf",
-        "html": "html/hard_50_004_table.html",
-        "canonical_md": "transcripts/canonical/hard_50_004_table.md",
-        "ocr_md": "transcripts/ocr_gemini/hard_50_004_table.md",
-        "json_size_bytes": 64423,
-        "pdf_size_bytes": 434964,
-        "html_size_bytes": 92748,
-        "canonical_size_bytes": 51243,
-        "ocr_size_bytes": 0
-      },
-      "transcripts_available": [
-        "canonical"
-      ],
-      "complexity_regime": "hard",
-      "document_count": 1,
-      "evidence_pattern": "single_document"
-    },
-    {
-      "id": "hard_50_005_detailed",
-      "difficulty": "hard",
-      "format": "detailed",
-      "num_claims": 55,
-      "pages_estimate": 53,
-      "problems": [
-        "page_breaks",
-        "multi_row",
-        "duplicates",
-        "multiple_tables",
-        "merged_cells"
-      ],
-      "layout_templates": [
-        "loss_run_schedule",
-        "packet_cover",
-        "spreadsheet_reference",
-        "portal_receipt",
-        "rotated_scan_excerpt"
-      ],
-      "has_duplicates": true,
-      "seed": 2671,
-      "files": {
-        "ground_truth": "ground_truth/hard_50_005_detailed.json",
-        "pdf": "pdfs/hard_50_005_detailed.pdf",
-        "html": "html/hard_50_005_detailed.html",
-        "canonical_md": "transcripts/canonical/hard_50_005_detailed.md",
-        "ocr_md": "transcripts/ocr_gemini/hard_50_005_detailed.md",
-        "json_size_bytes": 64533,
-        "pdf_size_bytes": 447217,
-        "html_size_bytes": 156880,
-        "canonical_size_bytes": 25534,
-        "ocr_size_bytes": 0
-      },
-      "transcripts_available": [
-        "canonical"
-      ],
-      "complexity_regime": "hard",
-      "document_count": 1,
-      "evidence_pattern": "single_document"
-    },
-    {
-      "id": "hard_50_005_table",
-      "difficulty": "hard",
-      "format": "table",
-      "num_claims": 55,
-      "pages_estimate": 43,
-      "problems": [
-        "page_breaks",
-        "multi_row",
-        "duplicates",
-        "multiple_tables",
-        "merged_cells"
-      ],
-      "layout_templates": [
-        "loss_run_schedule",
-        "packet_cover",
-        "spreadsheet_reference",
-        "portal_receipt",
-        "rotated_scan_excerpt"
-      ],
-      "has_duplicates": true,
-      "seed": 4476,
-      "files": {
-        "ground_truth": "ground_truth/hard_50_005_table.json",
-        "pdf": "pdfs/hard_50_005_table.pdf",
-        "html": "html/hard_50_005_table.html",
-        "canonical_md": "transcripts/canonical/hard_50_005_table.md",
-        "ocr_md": "transcripts/ocr_gemini/hard_50_005_table.md",
-        "json_size_bytes": 63913,
-        "pdf_size_bytes": 434490,
-        "html_size_bytes": 91362,
-        "canonical_size_bytes": 50852,
-        "ocr_size_bytes": 0
-      },
-      "transcripts_available": [
-        "canonical"
-      ],
-      "complexity_regime": "hard",
-      "document_count": 1,
-      "evidence_pattern": "single_document"
-    },
-    {
-      "id": "hard_50_006_detailed",
-      "difficulty": "hard",
-      "format": "detailed",
-      "num_claims": 55,
-      "pages_estimate": 28,
-      "problems": [
-        "page_breaks",
-        "multi_row",
-        "duplicates",
-        "multi_column",
-        "merged_cells"
-      ],
-      "layout_templates": [
-        "loss_run_schedule",
-        "packet_cover",
-        "spreadsheet_reference",
-        "portal_receipt",
-        "rotated_scan_excerpt"
-      ],
-      "has_duplicates": true,
-      "seed": 2401,
-      "files": {
-        "ground_truth": "ground_truth/hard_50_006_detailed.json",
-        "pdf": "pdfs/hard_50_006_detailed.pdf",
-        "html": "html/hard_50_006_detailed.html",
-        "canonical_md": "transcripts/canonical/hard_50_006_detailed.md",
-        "ocr_md": "transcripts/ocr_gemini/hard_50_006_detailed.md",
-        "json_size_bytes": 64174,
-        "pdf_size_bytes": 424056,
-        "html_size_bytes": 151612,
-        "canonical_size_bytes": 24785,
-        "ocr_size_bytes": 0
-      },
-      "transcripts_available": [
-        "canonical"
-      ],
-      "complexity_regime": "hard",
-      "document_count": 1,
-      "evidence_pattern": "single_document"
-    },
-    {
-      "id": "hard_50_006_table",
-      "difficulty": "hard",
-      "format": "table",
-      "num_claims": 55,
-      "pages_estimate": 41,
-      "problems": [
-        "page_breaks",
-        "multi_row",
-        "duplicates",
-        "multi_column",
-        "merged_cells"
-      ],
-      "layout_templates": [
-        "loss_run_schedule",
-        "packet_cover",
-        "spreadsheet_reference",
-        "portal_receipt",
-        "rotated_scan_excerpt"
-      ],
-      "has_duplicates": true,
-      "seed": 8070,
-      "files": {
-        "ground_truth": "ground_truth/hard_50_006_table.json",
-        "pdf": "pdfs/hard_50_006_table.pdf",
-        "html": "html/hard_50_006_table.html",
-        "canonical_md": "transcripts/canonical/hard_50_006_table.md",
-        "ocr_md": "transcripts/ocr_gemini/hard_50_006_table.md",
-        "json_size_bytes": 63971,
-        "pdf_size_bytes": 412015,
-        "html_size_bytes": 89227,
-        "canonical_size_bytes": 50913,
-        "ocr_size_bytes": 0
-      },
-      "transcripts_available": [
-        "canonical"
-      ],
-      "complexity_regime": "hard",
-      "document_count": 1,
-      "evidence_pattern": "single_document"
-    },
-    {
-      "id": "hard_50_007_detailed",
-      "difficulty": "hard",
-      "format": "detailed",
-      "num_claims": 55,
-      "pages_estimate": 26,
-      "problems": [
-        "page_breaks",
-        "multi_row",
-        "duplicates",
-        "multiple_tables",
-        "multi_column"
-      ],
-      "layout_templates": [
-        "loss_run_schedule",
-        "packet_cover",
-        "spreadsheet_reference",
-        "portal_receipt",
-        "rotated_scan_excerpt"
-      ],
-      "has_duplicates": true,
-      "seed": 3242,
-      "files": {
-        "ground_truth": "ground_truth/hard_50_007_detailed.json",
-        "pdf": "pdfs/hard_50_007_detailed.pdf",
-        "html": "html/hard_50_007_detailed.html",
-        "canonical_md": "transcripts/canonical/hard_50_007_detailed.md",
-        "ocr_md": "transcripts/ocr_gemini/hard_50_007_detailed.md",
-        "json_size_bytes": 64841,
-        "pdf_size_bytes": 439777,
-        "html_size_bytes": 151170,
-        "canonical_size_bytes": 32759,
-        "ocr_size_bytes": 0
-      },
-      "transcripts_available": [
-        "canonical"
-      ],
-      "complexity_regime": "hard",
-      "document_count": 1,
-      "evidence_pattern": "single_document"
-    },
-    {
-      "id": "hard_50_007_table",
-      "difficulty": "hard",
-      "format": "table",
-      "num_claims": 55,
-      "pages_estimate": 42,
-      "problems": [
-        "page_breaks",
-        "multi_row",
-        "duplicates",
-        "multiple_tables",
-        "multi_column"
-      ],
-      "layout_templates": [
-        "loss_run_schedule",
-        "packet_cover",
-        "spreadsheet_reference",
-        "portal_receipt",
-        "rotated_scan_excerpt"
-      ],
-      "has_duplicates": true,
-      "seed": 2046,
-      "files": {
-        "ground_truth": "ground_truth/hard_50_007_table.json",
-        "pdf": "pdfs/hard_50_007_table.pdf",
-        "html": "html/hard_50_007_table.html",
-        "canonical_md": "transcripts/canonical/hard_50_007_table.md",
-        "ocr_md": "transcripts/ocr_gemini/hard_50_007_table.md",
-        "json_size_bytes": 63653,
-        "pdf_size_bytes": 432615,
-        "html_size_bytes": 92021,
-        "canonical_size_bytes": 50621,
-        "ocr_size_bytes": 0
-      },
-      "transcripts_available": [
-        "canonical"
-      ],
-      "complexity_regime": "hard",
-      "document_count": 1,
-      "evidence_pattern": "single_document"
-    },
-    {
-      "id": "hard_50_008_detailed",
-      "difficulty": "hard",
-      "format": "detailed",
-      "num_claims": 55,
-      "pages_estimate": 49,
-      "problems": [
-        "page_breaks",
-        "multi_row",
-        "duplicates",
-        "multiple_tables",
-        "merged_cells"
-      ],
-      "layout_templates": [
-        "loss_run_schedule",
-        "packet_cover",
-        "spreadsheet_reference",
-        "portal_receipt",
-        "rotated_scan_excerpt"
-      ],
-      "has_duplicates": true,
-      "seed": 3109,
-      "files": {
-        "ground_truth": "ground_truth/hard_50_008_detailed.json",
-        "pdf": "pdfs/hard_50_008_detailed.pdf",
-        "html": "html/hard_50_008_detailed.html",
-        "canonical_md": "transcripts/canonical/hard_50_008_detailed.md",
-        "ocr_md": "transcripts/ocr_gemini/hard_50_008_detailed.md",
-        "json_size_bytes": 64305,
-        "pdf_size_bytes": 442045,
-        "html_size_bytes": 154544,
-        "canonical_size_bytes": 25220,
-        "ocr_size_bytes": 0
-      },
-      "transcripts_available": [
-        "canonical"
-      ],
-      "complexity_regime": "hard",
-      "document_count": 1,
-      "evidence_pattern": "single_document"
-    },
-    {
-      "id": "hard_50_008_table",
-      "difficulty": "hard",
-      "format": "table",
-      "num_claims": 55,
-      "pages_estimate": 42,
-      "problems": [
-        "page_breaks",
-        "multi_row",
-        "duplicates",
-        "multiple_tables",
-        "merged_cells"
-      ],
-      "layout_templates": [
-        "loss_run_schedule",
-        "packet_cover",
-        "spreadsheet_reference",
-        "portal_receipt",
-        "rotated_scan_excerpt"
-      ],
-      "has_duplicates": true,
-      "seed": 3725,
-      "files": {
-        "ground_truth": "ground_truth/hard_50_008_table.json",
-        "pdf": "pdfs/hard_50_008_table.pdf",
-        "html": "html/hard_50_008_table.html",
-        "canonical_md": "transcripts/canonical/hard_50_008_table.md",
-        "ocr_md": "transcripts/ocr_gemini/hard_50_008_table.md",
-        "json_size_bytes": 63540,
-        "pdf_size_bytes": 433533,
-        "html_size_bytes": 90502,
-        "canonical_size_bytes": 50485,
-        "ocr_size_bytes": 0
-      },
-      "transcripts_available": [
-        "canonical"
-      ],
-      "complexity_regime": "hard",
-      "document_count": 1,
-      "evidence_pattern": "single_document"
-    },
-    {
-      "id": "medium_25_001_detailed",
-      "difficulty": "medium",
-      "format": "detailed",
-      "num_claims": 27,
+      "evidence_pattern": "single_document",
+      "provenance": "Synthetic generated document. Private production references were used only for visual layout review; no production PDFs, names, account numbers, or raw customer data are included in this repository.",
       "pages_estimate": 17,
-      "problems": [
-        "page_breaks",
-        "multi_row",
-        "duplicates"
-      ],
-      "layout_templates": [
-        "loss_run_schedule",
-        "packet_cover",
-        "spreadsheet_reference"
-      ],
-      "has_duplicates": true,
-      "seed": 2131,
-      "files": {
-        "ground_truth": "ground_truth/medium_25_001_detailed.json",
-        "pdf": "pdfs/medium_25_001_detailed.pdf",
-        "html": "html/medium_25_001_detailed.html",
-        "canonical_md": "transcripts/canonical/medium_25_001_detailed.md",
-        "ocr_md": "transcripts/ocr_gemini/medium_25_001_detailed.md",
-        "json_size_bytes": 31246,
-        "pdf_size_bytes": 282556,
-        "html_size_bytes": 76118,
-        "canonical_size_bytes": 15677,
-        "ocr_size_bytes": 0
-      },
-      "transcripts_available": [
-        "canonical"
-      ],
-      "complexity_regime": "medium",
-      "document_count": 1,
-      "evidence_pattern": "single_document"
+      "pdf_page_count": 17,
+      "hf_config": "core_operations",
+      "ocr_md_size_bytes": 33504
     },
     {
-      "id": "medium_25_001_table",
-      "difficulty": "medium",
-      "format": "table",
-      "num_claims": 27,
-      "pages_estimate": 21,
+      "id": "driver_mvr_packet_002",
+      "difficulty": "driver_mvr_request_and_roster",
+      "format": "production_like_pdf",
+      "domain": "commercial_insurance_operations",
+      "template": "driver_mvr_request_and_roster",
+      "target_record_type": "driver_record",
+      "num_target_records": 500,
+      "source_batch": "batches-02-05-review-ready",
       "problems": [
+        "high_density_long_list",
+        "production_like_layout",
+        "ocr_condition",
         "page_breaks",
-        "multi_row",
-        "duplicates"
+        "multiple_tables",
+        "multi_row"
       ],
-      "layout_templates": [
-        "loss_run_schedule",
-        "packet_cover",
-        "spreadsheet_reference"
-      ],
-      "has_duplicates": true,
-      "seed": 1075,
       "files": {
-        "ground_truth": "ground_truth/medium_25_001_table.json",
-        "pdf": "pdfs/medium_25_001_table.pdf",
-        "html": "html/medium_25_001_table.html",
-        "canonical_md": "transcripts/canonical/medium_25_001_table.md",
-        "ocr_md": "transcripts/ocr_gemini/medium_25_001_table.md",
-        "json_size_bytes": 31381,
-        "pdf_size_bytes": 295956,
-        "html_size_bytes": 50513,
-        "canonical_size_bytes": 25410,
-        "ocr_size_bytes": 0
+        "ground_truth": "ground_truth/driver_mvr_packet_002.json",
+        "pdf": "pdfs/driver_mvr_packet_002.pdf",
+        "html": "html/driver_mvr_packet_002.html",
+        "metadata": "metadata/driver_mvr_packet_002.json",
+        "json_size_bytes": 175399,
+        "pdf_size_bytes": 450868,
+        "html_size_bytes": 119492,
+        "ocr_md": "transcripts/ocr_gemini/driver_mvr_packet_002.md",
+        "ocr_size_bytes": 52067
       },
       "transcripts_available": [
-        "canonical"
+        "ocr"
       ],
-      "complexity_regime": "medium",
+      "complexity_regime": "driver_mvr_request_and_roster",
       "document_count": 1,
-      "evidence_pattern": "single_document"
-    },
-    {
-      "id": "medium_25_002_detailed",
-      "difficulty": "medium",
-      "format": "detailed",
-      "num_claims": 25,
-      "pages_estimate": 20,
-      "problems": [
-        "page_breaks",
-        "multi_row",
-        "multiple_tables"
-      ],
-      "layout_templates": [
-        "loss_run_schedule",
-        "packet_cover",
-        "spreadsheet_reference",
-        "portal_receipt"
-      ],
-      "has_duplicates": false,
-      "seed": 3617,
-      "files": {
-        "ground_truth": "ground_truth/medium_25_002_detailed.json",
-        "pdf": "pdfs/medium_25_002_detailed.pdf",
-        "html": "html/medium_25_002_detailed.html",
-        "canonical_md": "transcripts/canonical/medium_25_002_detailed.md",
-        "ocr_md": "transcripts/ocr_gemini/medium_25_002_detailed.md",
-        "json_size_bytes": 29364,
-        "pdf_size_bytes": 342950,
-        "html_size_bytes": 79251,
-        "canonical_size_bytes": 15201,
-        "ocr_size_bytes": 0
-      },
-      "transcripts_available": [
-        "canonical"
-      ],
-      "complexity_regime": "medium",
-      "document_count": 1,
-      "evidence_pattern": "single_document"
-    },
-    {
-      "id": "medium_25_002_table",
-      "difficulty": "medium",
-      "format": "table",
-      "num_claims": 25,
-      "pages_estimate": 21,
-      "problems": [
-        "page_breaks",
-        "multi_row",
-        "multiple_tables"
-      ],
-      "layout_templates": [
-        "loss_run_schedule",
-        "packet_cover",
-        "spreadsheet_reference",
-        "portal_receipt"
-      ],
-      "has_duplicates": false,
-      "seed": 1982,
-      "files": {
-        "ground_truth": "ground_truth/medium_25_002_table.json",
-        "pdf": "pdfs/medium_25_002_table.pdf",
-        "html": "html/medium_25_002_table.html",
-        "canonical_md": "transcripts/canonical/medium_25_002_table.md",
-        "ocr_md": "transcripts/ocr_gemini/medium_25_002_table.md",
-        "json_size_bytes": 29353,
-        "pdf_size_bytes": 356098,
-        "html_size_bytes": 53674,
-        "canonical_size_bytes": 23716,
-        "ocr_size_bytes": 0
-      },
-      "transcripts_available": [
-        "canonical"
-      ],
-      "complexity_regime": "medium",
-      "document_count": 1,
-      "evidence_pattern": "single_document"
-    },
-    {
-      "id": "medium_25_003_detailed",
-      "difficulty": "medium",
-      "format": "detailed",
-      "num_claims": 27,
+      "evidence_pattern": "single_document",
+      "provenance": "Synthetic generated document. Private production references were used only for visual layout review; no production PDFs, names, account numbers, or raw customer data are included in this repository.",
       "pages_estimate": 24,
+      "pdf_page_count": 24,
+      "hf_config": "core_operations",
+      "ocr_md_size_bytes": 52067
+    },
+    {
+      "id": "driver_mvr_packet_003",
+      "difficulty": "driver_mvr_request_and_roster",
+      "format": "production_like_pdf",
+      "domain": "commercial_insurance_operations",
+      "template": "driver_mvr_request_and_roster",
+      "target_record_type": "driver_record",
+      "num_target_records": 500,
+      "source_batch": "batches-02-05-review-ready",
       "problems": [
+        "high_density_long_list",
+        "production_like_layout",
+        "ocr_condition",
+        "page_breaks",
+        "multiple_tables",
+        "multi_row"
+      ],
+      "files": {
+        "ground_truth": "ground_truth/driver_mvr_packet_003.json",
+        "pdf": "pdfs/driver_mvr_packet_003.pdf",
+        "html": "html/driver_mvr_packet_003.html",
+        "metadata": "metadata/driver_mvr_packet_003.json",
+        "json_size_bytes": 175367,
+        "pdf_size_bytes": 452207,
+        "html_size_bytes": 119550,
+        "ocr_md": "transcripts/ocr_gemini/driver_mvr_packet_003.md",
+        "ocr_size_bytes": 52920
+      },
+      "transcripts_available": [
+        "ocr"
+      ],
+      "complexity_regime": "driver_mvr_request_and_roster",
+      "document_count": 1,
+      "evidence_pattern": "single_document",
+      "provenance": "Synthetic generated document. Private production references were used only for visual layout review; no production PDFs, names, account numbers, or raw customer data are included in this repository.",
+      "pages_estimate": 24,
+      "pdf_page_count": 24,
+      "hf_config": "core_operations",
+      "ocr_md_size_bytes": 52920
+    },
+    {
+      "id": "driver_schedule_sparse_001",
+      "difficulty": "driver_schedule_spreadsheet_export",
+      "format": "production_like_pdf",
+      "domain": "commercial_insurance_operations",
+      "template": "driver_schedule_spreadsheet_export",
+      "target_record_type": "driver_schedule_row",
+      "num_target_records": 500,
+      "source_batch": "batches-02-05-review-ready",
+      "problems": [
+        "high_density_long_list",
+        "production_like_layout",
+        "ocr_condition",
+        "page_breaks",
+        "large_doc",
+        "multiple_tables",
+        "layout_randomization",
+        "inherited_context",
+        "split_records",
+        "non_target_rows"
+      ],
+      "files": {
+        "ground_truth": "ground_truth/driver_schedule_sparse_001.json",
+        "pdf": "pdfs/driver_schedule_sparse_001.pdf",
+        "html": "html/driver_schedule_sparse_001.html",
+        "metadata": "metadata/driver_schedule_sparse_001.json",
+        "json_size_bytes": 71571,
+        "pdf_size_bytes": 207224,
+        "html_size_bytes": 59605,
+        "ocr_md": "transcripts/ocr_gemini/driver_schedule_sparse_001.md",
+        "ocr_size_bytes": 28768
+      },
+      "transcripts_available": [
+        "ocr"
+      ],
+      "complexity_regime": "driver_schedule_spreadsheet_export",
+      "document_count": 1,
+      "evidence_pattern": "single_document",
+      "provenance": "Synthetic generated document. Private production references were used only for visual layout review; no production PDFs, names, account numbers, or raw customer data are included in this repository.",
+      "pages_estimate": 16,
+      "pdf_page_count": 16,
+      "hf_config": "core_operations",
+      "pdf_size_bytes": 207224,
+      "html_size_bytes": 59605,
+      "layout_revision": {
+        "date": "2026-06-28T09:18:30.380520+00:00",
+        "purpose": "reduce deterministic parser friendliness with production-like layout variation",
+        "ocr_status": "regenerated_from_current_pdf",
+        "ocr_regenerated_at": "2026-06-28T21:44:24.950682+00:00"
+      },
+      "artifacts": {
+        "pdf_sha256": "2db5b83a8c0f06cd7766d9dd756cf278713e60cf27db57df31bcb3410bcb3f27",
+        "html_sha256": "948d164ea461650c683c246835b9350f143cf7f027ee8a0cc07d0288893bdb4c"
+      },
+      "ocr_md_size_bytes": 28768
+    },
+    {
+      "id": "ifta_mileage_by_vehicle_001",
+      "difficulty": "ifta_mileage_by_vehicle",
+      "format": "production_like_pdf",
+      "domain": "commercial_insurance_operations",
+      "template": "ifta_mileage_by_vehicle",
+      "target_record_type": "vehicle_state_mileage_row",
+      "num_target_records": 1159,
+      "source_batch": "batch-01",
+      "problems": [
+        "high_density_long_list",
+        "production_like_layout",
+        "ocr_condition",
+        "page_breaks",
+        "large_doc",
+        "multiple_tables",
+        "multi_row"
+      ],
+      "files": {
+        "ground_truth": "ground_truth/ifta_mileage_by_vehicle_001.json",
+        "pdf": "pdfs/ifta_mileage_by_vehicle_001.pdf",
+        "html": "html/ifta_mileage_by_vehicle_001.html",
+        "metadata": "metadata/ifta_mileage_by_vehicle_001.json",
+        "json_size_bytes": 167015,
+        "pdf_size_bytes": 588299,
+        "html_size_bytes": 511013,
+        "ocr_md": "transcripts/ocr_gemini/ifta_mileage_by_vehicle_001.md",
+        "ocr_size_bytes": 193687
+      },
+      "transcripts_available": [
+        "ocr"
+      ],
+      "complexity_regime": "ifta_mileage_by_vehicle",
+      "document_count": 1,
+      "evidence_pattern": "single_document",
+      "provenance": "Synthetic generated document. Private production references were used only for visual layout review; no production PDFs, names, account numbers, or raw customer data are included in this repository.",
+      "pages_estimate": 97,
+      "pdf_page_count": 97,
+      "hf_config": "core_operations",
+      "ocr_md_size_bytes": 193687
+    },
+    {
+      "id": "ifta_mileage_by_vehicle_002",
+      "difficulty": "ifta_mileage_by_vehicle",
+      "format": "production_like_pdf",
+      "domain": "commercial_insurance_operations",
+      "template": "ifta_mileage_by_vehicle",
+      "target_record_type": "vehicle_state_mileage_row",
+      "num_target_records": 2143,
+      "source_batch": "batches-02-05-review-ready",
+      "problems": [
+        "high_density_long_list",
+        "production_like_layout",
+        "ocr_condition",
+        "page_breaks",
+        "large_doc",
+        "multiple_tables",
+        "multi_row"
+      ],
+      "files": {
+        "ground_truth": "ground_truth/ifta_mileage_by_vehicle_002.json",
+        "pdf": "pdfs/ifta_mileage_by_vehicle_002.pdf",
+        "html": "html/ifta_mileage_by_vehicle_002.html",
+        "metadata": "metadata/ifta_mileage_by_vehicle_002.json",
+        "json_size_bytes": 308972,
+        "pdf_size_bytes": 969746,
+        "html_size_bytes": 938626,
+        "ocr_md": "transcripts/ocr_gemini/ifta_mileage_by_vehicle_002.md",
+        "ocr_size_bytes": 358934
+      },
+      "transcripts_available": [
+        "ocr"
+      ],
+      "complexity_regime": "ifta_mileage_by_vehicle",
+      "document_count": 1,
+      "evidence_pattern": "single_document",
+      "provenance": "Synthetic generated document. Private production references were used only for visual layout review; no production PDFs, names, account numbers, or raw customer data are included in this repository.",
+      "pages_estimate": 182,
+      "pdf_page_count": 182,
+      "hf_config": "core_operations",
+      "ocr_md_size_bytes": 358934
+    },
+    {
+      "id": "ifta_mileage_by_vehicle_003",
+      "difficulty": "ifta_mileage_by_vehicle",
+      "format": "production_like_pdf",
+      "domain": "commercial_insurance_operations",
+      "template": "ifta_mileage_by_vehicle",
+      "target_record_type": "vehicle_state_mileage_row",
+      "num_target_records": 2195,
+      "source_batch": "batches-02-05-review-ready",
+      "problems": [
+        "high_density_long_list",
+        "production_like_layout",
+        "ocr_condition",
+        "page_breaks",
+        "large_doc",
+        "multiple_tables",
+        "multi_row"
+      ],
+      "files": {
+        "ground_truth": "ground_truth/ifta_mileage_by_vehicle_003.json",
+        "pdf": "pdfs/ifta_mileage_by_vehicle_003.pdf",
+        "html": "html/ifta_mileage_by_vehicle_003.html",
+        "metadata": "metadata/ifta_mileage_by_vehicle_003.json",
+        "json_size_bytes": 316038,
+        "pdf_size_bytes": 996988,
+        "html_size_bytes": 963431,
+        "ocr_md": "transcripts/ocr_gemini/ifta_mileage_by_vehicle_003.md",
+        "ocr_size_bytes": 367483
+      },
+      "transcripts_available": [
+        "ocr"
+      ],
+      "complexity_regime": "ifta_mileage_by_vehicle",
+      "document_count": 1,
+      "evidence_pattern": "single_document",
+      "provenance": "Synthetic generated document. Private production references were used only for visual layout review; no production PDFs, names, account numbers, or raw customer data are included in this repository.",
+      "pages_estimate": 188,
+      "pdf_page_count": 188,
+      "hf_config": "core_operations",
+      "ocr_md_size_bytes": 367483
+    },
+    {
+      "id": "ifta_mileage_by_vehicle_004",
+      "difficulty": "ifta_mileage_by_vehicle",
+      "format": "production_like_pdf",
+      "domain": "commercial_insurance_operations",
+      "template": "ifta_mileage_by_vehicle",
+      "target_record_type": "vehicle_state_mileage_row",
+      "num_target_records": 2239,
+      "source_batch": "batches-02-05-review-ready",
+      "problems": [
+        "high_density_long_list",
+        "production_like_layout",
+        "ocr_condition",
+        "page_breaks",
+        "large_doc",
+        "multiple_tables",
+        "multi_row"
+      ],
+      "files": {
+        "ground_truth": "ground_truth/ifta_mileage_by_vehicle_004.json",
+        "pdf": "pdfs/ifta_mileage_by_vehicle_004.pdf",
+        "html": "html/ifta_mileage_by_vehicle_004.html",
+        "metadata": "metadata/ifta_mileage_by_vehicle_004.json",
+        "json_size_bytes": 322650,
+        "pdf_size_bytes": 1015593,
+        "html_size_bytes": 982821,
+        "ocr_md": "transcripts/ocr_gemini/ifta_mileage_by_vehicle_004.md",
+        "ocr_size_bytes": 385216
+      },
+      "transcripts_available": [
+        "ocr"
+      ],
+      "complexity_regime": "ifta_mileage_by_vehicle",
+      "document_count": 1,
+      "evidence_pattern": "single_document",
+      "provenance": "Synthetic generated document. Private production references were used only for visual layout review; no production PDFs, names, account numbers, or raw customer data are included in this repository.",
+      "pages_estimate": 193,
+      "pdf_page_count": 193,
+      "hf_config": "core_operations",
+      "ocr_md_size_bytes": 385216
+    },
+    {
+      "id": "ifta_mileage_by_vehicle_005",
+      "difficulty": "ifta_mileage_by_vehicle",
+      "format": "production_like_pdf",
+      "domain": "commercial_insurance_operations",
+      "template": "ifta_mileage_by_vehicle",
+      "target_record_type": "vehicle_state_mileage_row",
+      "num_target_records": 2379,
+      "source_batch": "batches-02-05-review-ready",
+      "problems": [
+        "high_density_long_list",
+        "production_like_layout",
+        "ocr_condition",
+        "page_breaks",
+        "large_doc",
+        "multiple_tables",
+        "multi_row"
+      ],
+      "files": {
+        "ground_truth": "ground_truth/ifta_mileage_by_vehicle_005.json",
+        "pdf": "pdfs/ifta_mileage_by_vehicle_005.pdf",
+        "html": "html/ifta_mileage_by_vehicle_005.html",
+        "metadata": "metadata/ifta_mileage_by_vehicle_005.json",
+        "json_size_bytes": 342692,
+        "pdf_size_bytes": 1046767,
+        "html_size_bytes": 1036592,
+        "ocr_md": "transcripts/ocr_gemini/ifta_mileage_by_vehicle_005.md",
+        "ocr_size_bytes": 393894
+      },
+      "transcripts_available": [
+        "ocr"
+      ],
+      "complexity_regime": "ifta_mileage_by_vehicle",
+      "document_count": 1,
+      "evidence_pattern": "single_document",
+      "provenance": "Synthetic generated document. Private production references were used only for visual layout review; no production PDFs, names, account numbers, or raw customer data are included in this repository.",
+      "pages_estimate": 198,
+      "pdf_page_count": 198,
+      "hf_config": "core_operations",
+      "ocr_md_size_bytes": 393894
+    },
+    {
+      "id": "ifta_mileage_by_vehicle_006",
+      "difficulty": "ifta_mileage_by_vehicle",
+      "format": "production_like_pdf",
+      "domain": "commercial_insurance_operations",
+      "template": "ifta_mileage_by_vehicle",
+      "target_record_type": "vehicle_state_mileage_row",
+      "num_target_records": 2434,
+      "source_batch": "batches-02-05-review-ready",
+      "problems": [
+        "high_density_long_list",
+        "production_like_layout",
+        "ocr_condition",
+        "page_breaks",
+        "large_doc",
+        "multiple_tables",
+        "multi_row"
+      ],
+      "files": {
+        "ground_truth": "ground_truth/ifta_mileage_by_vehicle_006.json",
+        "pdf": "pdfs/ifta_mileage_by_vehicle_006.pdf",
+        "html": "html/ifta_mileage_by_vehicle_006.html",
+        "metadata": "metadata/ifta_mileage_by_vehicle_006.json",
+        "json_size_bytes": 350661,
+        "pdf_size_bytes": 1079911,
+        "html_size_bytes": 1064678,
+        "ocr_md": "transcripts/ocr_gemini/ifta_mileage_by_vehicle_006.md",
+        "ocr_size_bytes": 416454
+      },
+      "transcripts_available": [
+        "ocr"
+      ],
+      "complexity_regime": "ifta_mileage_by_vehicle",
+      "document_count": 1,
+      "evidence_pattern": "single_document",
+      "provenance": "Synthetic generated document. Private production references were used only for visual layout review; no production PDFs, names, account numbers, or raw customer data are included in this repository.",
+      "pages_estimate": 206,
+      "pdf_page_count": 206,
+      "hf_config": "core_operations",
+      "ocr_md_size_bytes": 416454
+    },
+    {
+      "id": "ifta_mileage_by_vehicle_007",
+      "difficulty": "ifta_mileage_by_vehicle",
+      "format": "production_like_pdf",
+      "domain": "commercial_insurance_operations",
+      "template": "ifta_mileage_by_vehicle",
+      "target_record_type": "vehicle_state_mileage_row",
+      "num_target_records": 2445,
+      "source_batch": "batches-02-05-review-ready",
+      "problems": [
+        "high_density_long_list",
+        "production_like_layout",
+        "ocr_condition",
+        "page_breaks",
+        "large_doc",
+        "multiple_tables",
+        "multi_row"
+      ],
+      "files": {
+        "ground_truth": "ground_truth/ifta_mileage_by_vehicle_007.json",
+        "pdf": "pdfs/ifta_mileage_by_vehicle_007.pdf",
+        "html": "html/ifta_mileage_by_vehicle_007.html",
+        "metadata": "metadata/ifta_mileage_by_vehicle_007.json",
+        "json_size_bytes": 352530,
+        "pdf_size_bytes": 1094699,
+        "html_size_bytes": 1072480,
+        "ocr_md": "transcripts/ocr_gemini/ifta_mileage_by_vehicle_007.md",
+        "ocr_size_bytes": 412391
+      },
+      "transcripts_available": [
+        "ocr"
+      ],
+      "complexity_regime": "ifta_mileage_by_vehicle",
+      "document_count": 1,
+      "evidence_pattern": "single_document",
+      "provenance": "Synthetic generated document. Private production references were used only for visual layout review; no production PDFs, names, account numbers, or raw customer data are included in this repository.",
+      "pages_estimate": 210,
+      "pdf_page_count": 210,
+      "hf_config": "core_operations",
+      "ocr_md_size_bytes": 412391
+    },
+    {
+      "id": "ifta_mileage_by_vehicle_008",
+      "difficulty": "ifta_mileage_by_vehicle",
+      "format": "production_like_pdf",
+      "domain": "commercial_insurance_operations",
+      "template": "ifta_mileage_by_vehicle",
+      "target_record_type": "vehicle_state_mileage_row",
+      "num_target_records": 2571,
+      "source_batch": "batches-02-05-review-ready",
+      "problems": [
+        "high_density_long_list",
+        "production_like_layout",
+        "ocr_condition",
+        "page_breaks",
+        "large_doc",
+        "multiple_tables",
+        "multi_row"
+      ],
+      "files": {
+        "ground_truth": "ground_truth/ifta_mileage_by_vehicle_008.json",
+        "pdf": "pdfs/ifta_mileage_by_vehicle_008.pdf",
+        "html": "html/ifta_mileage_by_vehicle_008.html",
+        "metadata": "metadata/ifta_mileage_by_vehicle_008.json",
+        "json_size_bytes": 370369,
+        "pdf_size_bytes": 1133809,
+        "html_size_bytes": 1125300,
+        "ocr_md": "transcripts/ocr_gemini/ifta_mileage_by_vehicle_008.md",
+        "ocr_size_bytes": 438583
+      },
+      "transcripts_available": [
+        "ocr"
+      ],
+      "complexity_regime": "ifta_mileage_by_vehicle",
+      "document_count": 1,
+      "evidence_pattern": "single_document",
+      "provenance": "Synthetic generated document. Private production references were used only for visual layout review; no production PDFs, names, account numbers, or raw customer data are included in this repository.",
+      "pages_estimate": 218,
+      "pdf_page_count": 218,
+      "hf_config": "core_operations",
+      "ocr_md_size_bytes": 438583
+    },
+    {
+      "id": "ifta_multisection_return_001",
+      "template": "ifta_multisection_return_packet",
+      "target_record_type": "ifta_multisection_jurisdiction_row",
+      "num_target_records": 335,
+      "source_batch": "ifta-hardening-experiment",
+      "provenance": "Synthetic generated document. Private production references were used only for visual layout review; no production PDFs, names, account numbers, or raw customer data are included in this repository.",
+      "files": {
+        "ground_truth": "ground_truth/ifta_multisection_return_001.json",
+        "pdf": "pdfs/ifta_multisection_return_001.pdf",
+        "html": "html/ifta_multisection_return_001.html",
+        "metadata": "metadata/ifta_multisection_return_001.json",
+        "ocr_md": "transcripts/ocr_gemini/ifta_multisection_return_001.md",
+        "json_size_bytes": 150517,
+        "pdf_size_bytes": 7339936,
+        "html_size_bytes": 203496,
+        "ocr_size_bytes": 194328
+      },
+      "transcripts_available": [
+        "ocr"
+      ],
+      "complexity_regime": "ifta_multisection_return_packet",
+      "difficulty": "ifta_multisection_return_packet",
+      "format": "production_like_pdf",
+      "domain": "commercial_insurance_operations",
+      "problems": [
+        "high_density_long_list",
+        "production_like_layout",
+        "ocr_condition",
+        "ocr_layout_condition",
+        "page_breaks",
+        "large_doc",
+        "multiple_tables",
+        "multi_row",
+        "inherited_context",
+        "split_records",
+        "non_target_rows",
+        "repeated_keys",
+        "cross_section_join"
+      ],
+      "pages_estimate": 60,
+      "pdf_page_count": 60,
+      "hf_config": "core_operations",
+      "document_count": 1,
+      "evidence_pattern": "single_document",
+      "ocr_md_size_bytes": 194328,
+      "artifacts": {
+        "pdf": "pdfs/ifta_multisection_return_001.pdf",
+        "html": "html/ifta_multisection_return_001.html",
+        "ground_truth": "ground_truth/ifta_multisection_return_001.json"
+      },
+      "dataset_version": "2.0.0",
+      "layout_revision": {
+        "date": "2026-06-29",
+        "purpose": "hard IFTA table extraction condition with fields split across return sections",
+        "ocr_status": "layout-preserving Gemini OCR over scanned image PDF"
+      }
+    },
+    {
+      "id": "ifta_multisection_return_002",
+      "template": "ifta_multisection_return_packet",
+      "target_record_type": "ifta_multisection_jurisdiction_row",
+      "num_target_records": 461,
+      "source_batch": "ifta-hardening-experiment",
+      "provenance": "Synthetic generated document. Private production references were used only for visual layout review; no production PDFs, names, account numbers, or raw customer data are included in this repository.",
+      "files": {
+        "ground_truth": "ground_truth/ifta_multisection_return_002.json",
+        "pdf": "pdfs/ifta_multisection_return_002.pdf",
+        "html": "html/ifta_multisection_return_002.html",
+        "metadata": "metadata/ifta_multisection_return_002.json",
+        "ocr_md": "transcripts/ocr_gemini/ifta_multisection_return_002.md",
+        "json_size_bytes": 207018,
+        "pdf_size_bytes": 10208903,
+        "html_size_bytes": 280581,
+        "ocr_size_bytes": 272619
+      },
+      "transcripts_available": [
+        "ocr"
+      ],
+      "complexity_regime": "ifta_multisection_return_packet",
+      "difficulty": "ifta_multisection_return_packet",
+      "format": "production_like_pdf",
+      "domain": "commercial_insurance_operations",
+      "problems": [
+        "high_density_long_list",
+        "production_like_layout",
+        "ocr_condition",
+        "ocr_layout_condition",
+        "page_breaks",
+        "large_doc",
+        "multiple_tables",
+        "multi_row",
+        "inherited_context",
+        "split_records",
+        "non_target_rows",
+        "repeated_keys",
+        "cross_section_join"
+      ],
+      "pages_estimate": 84,
+      "pdf_page_count": 84,
+      "hf_config": "core_operations",
+      "document_count": 1,
+      "evidence_pattern": "single_document",
+      "ocr_md_size_bytes": 272619,
+      "artifacts": {
+        "pdf": "pdfs/ifta_multisection_return_002.pdf",
+        "html": "html/ifta_multisection_return_002.html",
+        "ground_truth": "ground_truth/ifta_multisection_return_002.json"
+      },
+      "dataset_version": "2.0.0",
+      "layout_revision": {
+        "date": "2026-06-29",
+        "purpose": "hard IFTA table extraction condition with fields split across return sections",
+        "ocr_status": "layout-preserving Gemini OCR over scanned image PDF"
+      }
+    },
+    {
+      "id": "ifta_return_schedule_001",
+      "difficulty": "ifta_return_schedule_details",
+      "format": "production_like_pdf",
+      "domain": "commercial_insurance_operations",
+      "template": "ifta_return_schedule_details",
+      "target_record_type": "return_schedule_row",
+      "num_target_records": 582,
+      "source_batch": "batch-01",
+      "problems": [
+        "high_density_long_list",
+        "production_like_layout",
+        "ocr_condition",
+        "page_breaks",
+        "large_doc",
+        "multiple_tables",
+        "layout_randomization",
+        "inherited_context",
+        "split_records",
+        "non_target_rows"
+      ],
+      "files": {
+        "ground_truth": "ground_truth/ifta_return_schedule_001.json",
+        "pdf": "pdfs/ifta_return_schedule_001.pdf",
+        "html": "html/ifta_return_schedule_001.html",
+        "metadata": "metadata/ifta_return_schedule_001.json",
+        "json_size_bytes": 205146,
+        "pdf_size_bytes": 386861,
+        "html_size_bytes": 215584,
+        "ocr_md": "transcripts/ocr_gemini/ifta_return_schedule_001.md",
+        "ocr_size_bytes": 125900
+      },
+      "transcripts_available": [
+        "ocr"
+      ],
+      "complexity_regime": "ifta_return_schedule_details",
+      "document_count": 1,
+      "evidence_pattern": "single_document",
+      "provenance": "Synthetic generated document. Private production references were used only for visual layout review; no production PDFs, names, account numbers, or raw customer data are included in this repository.",
+      "pages_estimate": 72,
+      "pdf_page_count": 72,
+      "hf_config": "core_operations",
+      "pdf_size_bytes": 386861,
+      "html_size_bytes": 215584,
+      "layout_revision": {
+        "date": "2026-06-28T09:18:30.846734+00:00",
+        "purpose": "reduce deterministic parser friendliness with production-like layout variation",
+        "ocr_status": "regenerated_from_current_pdf",
+        "ocr_regenerated_at": "2026-06-28T21:44:24.950682+00:00"
+      },
+      "artifacts": {
+        "pdf_sha256": "e79d5f301e0bc84a1ac2cd921dc8bc0d178fb75bcd479c7e3d3dfd21886dffd8",
+        "html_sha256": "335a5178fdc5dfd518aeeb64be6a620ff6bee0bc2d2a02dfd103871715db1344"
+      },
+      "ocr_md_size_bytes": 125900
+    },
+    {
+      "id": "ifta_return_schedule_002",
+      "difficulty": "ifta_return_schedule_details",
+      "format": "production_like_pdf",
+      "domain": "commercial_insurance_operations",
+      "template": "ifta_return_schedule_details",
+      "target_record_type": "return_schedule_row",
+      "num_target_records": 998,
+      "source_batch": "batches-02-05-review-ready",
+      "problems": [
+        "high_density_long_list",
+        "production_like_layout",
+        "ocr_condition",
+        "page_breaks",
+        "large_doc",
+        "multiple_tables",
+        "layout_randomization",
+        "inherited_context",
+        "split_records",
+        "non_target_rows"
+      ],
+      "files": {
+        "ground_truth": "ground_truth/ifta_return_schedule_002.json",
+        "pdf": "pdfs/ifta_return_schedule_002.pdf",
+        "html": "html/ifta_return_schedule_002.html",
+        "metadata": "metadata/ifta_return_schedule_002.json",
+        "json_size_bytes": 352507,
+        "pdf_size_bytes": 523651,
+        "html_size_bytes": 362237,
+        "ocr_md": "transcripts/ocr_gemini/ifta_return_schedule_002.md",
+        "ocr_size_bytes": 195867
+      },
+      "transcripts_available": [
+        "ocr"
+      ],
+      "complexity_regime": "ifta_return_schedule_details",
+      "document_count": 1,
+      "evidence_pattern": "single_document",
+      "provenance": "Synthetic generated document. Private production references were used only for visual layout review; no production PDFs, names, account numbers, or raw customer data are included in this repository.",
+      "pages_estimate": 108,
+      "pdf_page_count": 108,
+      "hf_config": "core_operations",
+      "pdf_size_bytes": 523651,
+      "html_size_bytes": 362237,
+      "layout_revision": {
+        "date": "2026-06-28T09:18:31.381592+00:00",
+        "purpose": "reduce deterministic parser friendliness with production-like layout variation",
+        "ocr_status": "regenerated_from_current_pdf",
+        "ocr_regenerated_at": "2026-06-28T21:44:24.950682+00:00"
+      },
+      "artifacts": {
+        "pdf_sha256": "50e8ed9373f496cc5280fc0fb66cd00561ca03bdd3319c9449c6692525718c3f",
+        "html_sha256": "d341546375eec81aca4608e3f6fac38ad610b56cb7aeb8cd1898af82901fe52a"
+      },
+      "ocr_md_size_bytes": 195867
+    },
+    {
+      "id": "ifta_return_schedule_003",
+      "difficulty": "ifta_return_schedule_details",
+      "format": "production_like_pdf",
+      "domain": "commercial_insurance_operations",
+      "template": "ifta_return_schedule_details",
+      "target_record_type": "return_schedule_row",
+      "num_target_records": 1085,
+      "source_batch": "batches-02-05-review-ready",
+      "problems": [
+        "high_density_long_list",
+        "production_like_layout",
+        "ocr_condition",
+        "page_breaks",
+        "large_doc",
+        "multiple_tables",
+        "layout_randomization",
+        "inherited_context",
+        "split_records",
+        "non_target_rows"
+      ],
+      "files": {
+        "ground_truth": "ground_truth/ifta_return_schedule_003.json",
+        "pdf": "pdfs/ifta_return_schedule_003.pdf",
+        "html": "html/ifta_return_schedule_003.html",
+        "metadata": "metadata/ifta_return_schedule_003.json",
+        "json_size_bytes": 383530,
+        "pdf_size_bytes": 549322,
+        "html_size_bytes": 392610,
+        "ocr_md": "transcripts/ocr_gemini/ifta_return_schedule_003.md",
+        "ocr_size_bytes": 212714
+      },
+      "transcripts_available": [
+        "ocr"
+      ],
+      "complexity_regime": "ifta_return_schedule_details",
+      "document_count": 1,
+      "evidence_pattern": "single_document",
+      "provenance": "Synthetic generated document. Private production references were used only for visual layout review; no production PDFs, names, account numbers, or raw customer data are included in this repository.",
+      "pages_estimate": 114,
+      "pdf_page_count": 114,
+      "hf_config": "core_operations",
+      "pdf_size_bytes": 549322,
+      "html_size_bytes": 392610,
+      "layout_revision": {
+        "date": "2026-06-28T09:18:31.942088+00:00",
+        "purpose": "reduce deterministic parser friendliness with production-like layout variation",
+        "ocr_status": "regenerated_from_current_pdf",
+        "ocr_regenerated_at": "2026-06-28T21:44:24.950682+00:00"
+      },
+      "artifacts": {
+        "pdf_sha256": "69e92661da97faf3c3c1385588419c95f10b597ae5f7bbbb4a19ec143488f321",
+        "html_sha256": "6412f10331fc8822d83c0bd3ae4ff12689818e415b9b6204514dc37e5178925b"
+      },
+      "ocr_md_size_bytes": 212714
+    },
+    {
+      "id": "ifta_return_schedule_004",
+      "difficulty": "ifta_return_schedule_details",
+      "format": "production_like_pdf",
+      "domain": "commercial_insurance_operations",
+      "template": "ifta_return_schedule_details",
+      "target_record_type": "return_schedule_row",
+      "num_target_records": 1101,
+      "source_batch": "batches-02-05-review-ready",
+      "problems": [
+        "high_density_long_list",
+        "production_like_layout",
+        "ocr_condition",
+        "page_breaks",
+        "large_doc",
+        "multiple_tables",
+        "layout_randomization",
+        "inherited_context",
+        "split_records",
+        "non_target_rows"
+      ],
+      "files": {
+        "ground_truth": "ground_truth/ifta_return_schedule_004.json",
+        "pdf": "pdfs/ifta_return_schedule_004.pdf",
+        "html": "html/ifta_return_schedule_004.html",
+        "metadata": "metadata/ifta_return_schedule_004.json",
+        "json_size_bytes": 389184,
+        "pdf_size_bytes": 561678,
+        "html_size_bytes": 399750,
+        "ocr_md": "transcripts/ocr_gemini/ifta_return_schedule_004.md",
+        "ocr_size_bytes": 209129
+      },
+      "transcripts_available": [
+        "ocr"
+      ],
+      "complexity_regime": "ifta_return_schedule_details",
+      "document_count": 1,
+      "evidence_pattern": "single_document",
+      "provenance": "Synthetic generated document. Private production references were used only for visual layout review; no production PDFs, names, account numbers, or raw customer data are included in this repository.",
+      "pages_estimate": 120,
+      "pdf_page_count": 120,
+      "hf_config": "core_operations",
+      "pdf_size_bytes": 561678,
+      "html_size_bytes": 399750,
+      "layout_revision": {
+        "date": "2026-06-28T09:18:32.518234+00:00",
+        "purpose": "reduce deterministic parser friendliness with production-like layout variation",
+        "ocr_status": "regenerated_from_current_pdf",
+        "ocr_regenerated_at": "2026-06-28T21:44:24.950682+00:00"
+      },
+      "artifacts": {
+        "pdf_sha256": "c88f7a16d8397cd56b4cd6b95fafee1c4af4862729ae1ff2b222e0aca611882e",
+        "html_sha256": "83b1b8c73b3a79615c5f58e7c0c96e55e22e3ab279a97cdab53f15fa76fcaccc"
+      },
+      "ocr_md_size_bytes": 209129
+    },
+    {
+      "id": "ifta_return_schedule_005",
+      "difficulty": "ifta_return_schedule_details",
+      "format": "production_like_pdf",
+      "domain": "commercial_insurance_operations",
+      "template": "ifta_return_schedule_details",
+      "target_record_type": "return_schedule_row",
+      "num_target_records": 1157,
+      "source_batch": "batches-02-05-review-ready",
+      "problems": [
+        "high_density_long_list",
+        "production_like_layout",
+        "ocr_condition",
+        "page_breaks",
+        "large_doc",
+        "multiple_tables",
+        "layout_randomization",
+        "inherited_context",
+        "split_records",
+        "non_target_rows"
+      ],
+      "files": {
+        "ground_truth": "ground_truth/ifta_return_schedule_005.json",
+        "pdf": "pdfs/ifta_return_schedule_005.pdf",
+        "html": "html/ifta_return_schedule_005.html",
+        "metadata": "metadata/ifta_return_schedule_005.json",
+        "json_size_bytes": 408894,
+        "pdf_size_bytes": 581634,
+        "html_size_bytes": 420774,
+        "ocr_md": "transcripts/ocr_gemini/ifta_return_schedule_005.md",
+        "ocr_size_bytes": 229500
+      },
+      "transcripts_available": [
+        "ocr"
+      ],
+      "complexity_regime": "ifta_return_schedule_details",
+      "document_count": 1,
+      "evidence_pattern": "single_document",
+      "provenance": "Synthetic generated document. Private production references were used only for visual layout review; no production PDFs, names, account numbers, or raw customer data are included in this repository.",
+      "pages_estimate": 126,
+      "pdf_page_count": 126,
+      "hf_config": "core_operations",
+      "pdf_size_bytes": 581634,
+      "html_size_bytes": 420774,
+      "layout_revision": {
+        "date": "2026-06-28T09:18:33.084931+00:00",
+        "purpose": "reduce deterministic parser friendliness with production-like layout variation",
+        "ocr_status": "regenerated_from_current_pdf",
+        "ocr_regenerated_at": "2026-06-28T21:44:24.950682+00:00"
+      },
+      "artifacts": {
+        "pdf_sha256": "1ebe04aad69e48cd9f1b96c86219b26bb7291df44875cf803db7c53554a23fd2",
+        "html_sha256": "01dd65c98e18570167f3f90b377472d227f3b22647362622605b40a583889f17"
+      },
+      "ocr_md_size_bytes": 229500
+    },
+    {
+      "id": "ifta_tax_inquiry_001",
+      "difficulty": "ifta_tax_return_inquiry_detail",
+      "format": "production_like_pdf",
+      "domain": "commercial_insurance_operations",
+      "template": "ifta_tax_return_inquiry_detail",
+      "target_record_type": "tax_inquiry_record",
+      "num_target_records": 650,
+      "source_batch": "batches-02-05-review-ready",
+      "problems": [
+        "high_density_long_list",
+        "production_like_layout",
+        "ocr_condition",
+        "page_breaks",
+        "large_doc",
+        "multiple_tables",
+        "merged_cells",
+        "layout_randomization",
+        "inherited_context",
+        "split_records",
+        "non_target_rows"
+      ],
+      "files": {
+        "ground_truth": "ground_truth/ifta_tax_inquiry_001.json",
+        "pdf": "pdfs/ifta_tax_inquiry_001.pdf",
+        "html": "html/ifta_tax_inquiry_001.html",
+        "metadata": "metadata/ifta_tax_inquiry_001.json",
+        "json_size_bytes": 82865,
+        "pdf_size_bytes": 222722,
+        "html_size_bytes": 84423,
+        "ocr_md": "transcripts/ocr_gemini/ifta_tax_inquiry_001.md",
+        "ocr_size_bytes": 44541
+      },
+      "transcripts_available": [
+        "ocr"
+      ],
+      "complexity_regime": "ifta_tax_return_inquiry_detail",
+      "document_count": 1,
+      "evidence_pattern": "single_document",
+      "provenance": "Synthetic generated document. Private production references were used only for visual layout review; no production PDFs, names, account numbers, or raw customer data are included in this repository.",
+      "pages_estimate": 29,
+      "pdf_page_count": 29,
+      "hf_config": "core_operations",
+      "pdf_size_bytes": 222722,
+      "html_size_bytes": 84423,
+      "layout_revision": {
+        "date": "2026-06-28T09:33:22.772287+00:00",
+        "purpose": "reduce deterministic parser friendliness with production-like layout variation",
+        "ocr_status": "regenerated_from_current_pdf",
+        "ocr_regenerated_at": "2026-06-28T21:44:24.950682+00:00"
+      },
+      "artifacts": {
+        "pdf_sha256": "b624e1b1932c75dcdac027097fa83c668a65a38ccff00cd13cf464a67991afb6",
+        "html_sha256": "8356126cc13d956d4687b11248ac3b21c21708b95eeb55dc0cdf4441f9f7a9e7"
+      },
+      "ocr_md_size_bytes": 44541
+    },
+    {
+      "id": "ifta_tax_inquiry_002",
+      "difficulty": "ifta_tax_return_inquiry_detail",
+      "format": "production_like_pdf",
+      "domain": "commercial_insurance_operations",
+      "template": "ifta_tax_return_inquiry_detail",
+      "target_record_type": "tax_inquiry_record",
+      "num_target_records": 650,
+      "source_batch": "batches-02-05-review-ready",
+      "problems": [
+        "high_density_long_list",
+        "production_like_layout",
+        "ocr_condition",
+        "page_breaks",
+        "large_doc",
+        "multiple_tables",
+        "merged_cells",
+        "layout_randomization",
+        "inherited_context",
+        "split_records",
+        "non_target_rows"
+      ],
+      "files": {
+        "ground_truth": "ground_truth/ifta_tax_inquiry_002.json",
+        "pdf": "pdfs/ifta_tax_inquiry_002.pdf",
+        "html": "html/ifta_tax_inquiry_002.html",
+        "metadata": "metadata/ifta_tax_inquiry_002.json",
+        "json_size_bytes": 82865,
+        "pdf_size_bytes": 222223,
+        "html_size_bytes": 84423,
+        "ocr_md": "transcripts/ocr_gemini/ifta_tax_inquiry_002.md",
+        "ocr_size_bytes": 55125
+      },
+      "transcripts_available": [
+        "ocr"
+      ],
+      "complexity_regime": "ifta_tax_return_inquiry_detail",
+      "document_count": 1,
+      "evidence_pattern": "single_document",
+      "provenance": "Synthetic generated document. Private production references were used only for visual layout review; no production PDFs, names, account numbers, or raw customer data are included in this repository.",
+      "pages_estimate": 29,
+      "pdf_page_count": 29,
+      "hf_config": "core_operations",
+      "pdf_size_bytes": 222223,
+      "html_size_bytes": 84423,
+      "layout_revision": {
+        "date": "2026-06-28T09:33:23.104936+00:00",
+        "purpose": "reduce deterministic parser friendliness with production-like layout variation",
+        "ocr_status": "regenerated_from_current_pdf",
+        "ocr_regenerated_at": "2026-06-28T21:44:24.950682+00:00"
+      },
+      "artifacts": {
+        "pdf_sha256": "f260e9b0986b162b9ed1206c01a4edb1f43c2e8df08efdea52b95de9e5608739",
+        "html_sha256": "5f389c710b430ecc52a75427cfdbd4e0baa53c22b191042977fb03db90a1da51"
+      },
+      "ocr_md_size_bytes": 55125
+    },
+    {
+      "id": "ifta_tax_summary_001",
+      "difficulty": "ifta_tax_return_summary",
+      "format": "production_like_pdf",
+      "domain": "commercial_insurance_operations",
+      "template": "ifta_tax_return_summary",
+      "target_record_type": "tax_return_jurisdiction_row",
+      "num_target_records": 760,
+      "source_batch": "batches-02-05-review-ready",
+      "problems": [
+        "high_density_long_list",
+        "production_like_layout",
+        "ocr_condition",
+        "page_breaks",
+        "large_doc",
+        "multiple_tables",
+        "layout_randomization",
+        "inherited_context",
+        "split_records",
+        "non_target_rows"
+      ],
+      "files": {
+        "ground_truth": "ground_truth/ifta_tax_summary_001.json",
+        "pdf": "pdfs/ifta_tax_summary_001.pdf",
+        "html": "html/ifta_tax_summary_001.html",
+        "metadata": "metadata/ifta_tax_summary_001.json",
+        "json_size_bytes": 260441,
+        "pdf_size_bytes": 449343,
+        "html_size_bytes": 269909,
+        "ocr_md": "transcripts/ocr_gemini/ifta_tax_summary_001.md",
+        "ocr_size_bytes": 131101
+      },
+      "transcripts_available": [
+        "ocr"
+      ],
+      "complexity_regime": "ifta_tax_return_summary",
+      "document_count": 1,
+      "evidence_pattern": "single_document",
+      "provenance": "Synthetic generated document. Private production references were used only for visual layout review; no production PDFs, names, account numbers, or raw customer data are included in this repository.",
+      "pages_estimate": 34,
+      "pdf_page_count": 34,
+      "hf_config": "core_operations",
+      "pdf_size_bytes": 449343,
+      "html_size_bytes": 269909,
+      "layout_revision": {
+        "date": "2026-06-28T15:32:39.452062+00:00",
+        "purpose": "reduce deterministic parser friendliness with production-like layout variation",
+        "ocr_status": "regenerated_from_current_pdf",
+        "ocr_regenerated_at": "2026-06-28T21:44:24.950682+00:00"
+      },
+      "artifacts": {
+        "pdf_sha256": "d7049767a110f96efeda33a9381fcdf651fa12ece6427cd3a9d7695ef16a9a27",
+        "html_sha256": "d279f156aa332ade48e508b957aea5ed1301fc573d7571425011907dc8193838"
+      },
+      "ocr_md_size_bytes": 131101
+    },
+    {
+      "id": "ifta_tax_summary_002",
+      "difficulty": "ifta_tax_return_summary",
+      "format": "production_like_pdf",
+      "domain": "commercial_insurance_operations",
+      "template": "ifta_tax_return_summary",
+      "target_record_type": "tax_return_jurisdiction_row",
+      "num_target_records": 760,
+      "source_batch": "batches-02-05-review-ready",
+      "problems": [
+        "high_density_long_list",
+        "production_like_layout",
+        "ocr_condition",
+        "page_breaks",
+        "large_doc",
+        "multiple_tables",
+        "layout_randomization",
+        "inherited_context",
+        "split_records",
+        "non_target_rows"
+      ],
+      "files": {
+        "ground_truth": "ground_truth/ifta_tax_summary_002.json",
+        "pdf": "pdfs/ifta_tax_summary_002.pdf",
+        "html": "html/ifta_tax_summary_002.html",
+        "metadata": "metadata/ifta_tax_summary_002.json",
+        "json_size_bytes": 260276,
+        "pdf_size_bytes": 449048,
+        "html_size_bytes": 269842,
+        "ocr_md": "transcripts/ocr_gemini/ifta_tax_summary_002.md",
+        "ocr_size_bytes": 130445
+      },
+      "transcripts_available": [
+        "ocr"
+      ],
+      "complexity_regime": "ifta_tax_return_summary",
+      "document_count": 1,
+      "evidence_pattern": "single_document",
+      "provenance": "Synthetic generated document. Private production references were used only for visual layout review; no production PDFs, names, account numbers, or raw customer data are included in this repository.",
+      "pages_estimate": 34,
+      "pdf_page_count": 34,
+      "hf_config": "core_operations",
+      "pdf_size_bytes": 449048,
+      "html_size_bytes": 269842,
+      "layout_revision": {
+        "date": "2026-06-28T15:32:39.874113+00:00",
+        "purpose": "reduce deterministic parser friendliness with production-like layout variation",
+        "ocr_status": "regenerated_from_current_pdf",
+        "ocr_regenerated_at": "2026-06-28T21:44:24.950682+00:00"
+      },
+      "artifacts": {
+        "pdf_sha256": "4d68a84f2cde5303f508a5fcedbb09798a7ef743aa3ecf1d4c9451e7d9648703",
+        "html_sha256": "7f0f3143955733096e362c295fb2b9d6ee9e0c193c79fde256f2f30694041d26"
+      },
+      "ocr_md_size_bytes": 130445
+    },
+    {
+      "id": "ifta_tax_summary_003",
+      "difficulty": "ifta_tax_return_summary",
+      "format": "production_like_pdf",
+      "domain": "commercial_insurance_operations",
+      "template": "ifta_tax_return_summary",
+      "target_record_type": "tax_return_jurisdiction_row",
+      "num_target_records": 760,
+      "source_batch": "batches-02-05-review-ready",
+      "problems": [
+        "high_density_long_list",
+        "production_like_layout",
+        "ocr_condition",
+        "page_breaks",
+        "large_doc",
+        "multiple_tables",
+        "layout_randomization",
+        "inherited_context",
+        "split_records",
+        "non_target_rows"
+      ],
+      "files": {
+        "ground_truth": "ground_truth/ifta_tax_summary_003.json",
+        "pdf": "pdfs/ifta_tax_summary_003.pdf",
+        "html": "html/ifta_tax_summary_003.html",
+        "metadata": "metadata/ifta_tax_summary_003.json",
+        "json_size_bytes": 260638,
+        "pdf_size_bytes": 449645,
+        "html_size_bytes": 270176,
+        "ocr_md": "transcripts/ocr_gemini/ifta_tax_summary_003.md",
+        "ocr_size_bytes": 117692
+      },
+      "transcripts_available": [
+        "ocr"
+      ],
+      "complexity_regime": "ifta_tax_return_summary",
+      "document_count": 1,
+      "evidence_pattern": "single_document",
+      "provenance": "Synthetic generated document. Private production references were used only for visual layout review; no production PDFs, names, account numbers, or raw customer data are included in this repository.",
+      "pages_estimate": 34,
+      "pdf_page_count": 34,
+      "hf_config": "core_operations",
+      "pdf_size_bytes": 449645,
+      "html_size_bytes": 270176,
+      "layout_revision": {
+        "date": "2026-06-28T15:32:40.306676+00:00",
+        "purpose": "reduce deterministic parser friendliness with production-like layout variation",
+        "ocr_status": "regenerated_from_current_pdf",
+        "ocr_regenerated_at": "2026-06-28T21:44:24.950682+00:00"
+      },
+      "artifacts": {
+        "pdf_sha256": "4a3634a61b453772863648e5396767005873148f88db81f4ca3b9c79fa5b1db2",
+        "html_sha256": "14ade3ee9d9168456eb40fa30c067318ce0fa666c80984fb69cc40399d1ad885"
+      },
+      "ocr_md_size_bytes": 117692
+    },
+    {
+      "id": "ifta_tax_summary_004",
+      "difficulty": "ifta_tax_return_summary",
+      "format": "production_like_pdf",
+      "domain": "commercial_insurance_operations",
+      "template": "ifta_tax_return_summary",
+      "target_record_type": "tax_return_jurisdiction_row",
+      "num_target_records": 760,
+      "source_batch": "batches-02-05-review-ready",
+      "problems": [
+        "high_density_long_list",
+        "production_like_layout",
+        "ocr_condition",
+        "page_breaks",
+        "large_doc",
+        "multiple_tables",
+        "layout_randomization",
+        "inherited_context",
+        "split_records",
+        "non_target_rows"
+      ],
+      "files": {
+        "ground_truth": "ground_truth/ifta_tax_summary_004.json",
+        "pdf": "pdfs/ifta_tax_summary_004.pdf",
+        "html": "html/ifta_tax_summary_004.html",
+        "metadata": "metadata/ifta_tax_summary_004.json",
+        "json_size_bytes": 260468,
+        "pdf_size_bytes": 448697,
+        "html_size_bytes": 269827,
+        "ocr_md": "transcripts/ocr_gemini/ifta_tax_summary_004.md",
+        "ocr_size_bytes": 125339
+      },
+      "transcripts_available": [
+        "ocr"
+      ],
+      "complexity_regime": "ifta_tax_return_summary",
+      "document_count": 1,
+      "evidence_pattern": "single_document",
+      "provenance": "Synthetic generated document. Private production references were used only for visual layout review; no production PDFs, names, account numbers, or raw customer data are included in this repository.",
+      "pages_estimate": 34,
+      "pdf_page_count": 34,
+      "hf_config": "core_operations",
+      "pdf_size_bytes": 448697,
+      "html_size_bytes": 269827,
+      "layout_revision": {
+        "date": "2026-06-28T15:32:40.733150+00:00",
+        "purpose": "reduce deterministic parser friendliness with production-like layout variation",
+        "ocr_status": "regenerated_from_current_pdf",
+        "ocr_regenerated_at": "2026-06-28T21:44:24.950682+00:00"
+      },
+      "artifacts": {
+        "pdf_sha256": "4e0735408650bea9f7fa45bc80c36292957b1dd82c789247c49fa589e9e94e11",
+        "html_sha256": "f73a48b73a4947e37fa00218f4446d9838dffd3716356e94ed663d0d63847009"
+      },
+      "ocr_md_size_bytes": 125339
+    },
+    {
+      "id": "loss_run_external_001",
+      "template": "loss_run_external",
+      "target_record_type": "loss_run_claim_row",
+      "num_target_records": 300,
+      "source_batch": "loss-run-hardened",
+      "artifacts": {
+        "pdf": "pdfs/loss_run_external_001.pdf",
+        "html": "html/loss_run_external_001.html",
+        "ground_truth": "ground_truth/loss_run_external_001.json"
+      },
+      "provenance": "Synthetic generated document. Private production references were used only for visual layout review; no production PDFs, names, account numbers, or raw customer data are included in this repository.",
+      "files": {
+        "ground_truth": "ground_truth/loss_run_external_001.json",
+        "pdf": "pdfs/loss_run_external_001.pdf",
+        "html": "html/loss_run_external_001.html",
+        "metadata": "metadata/loss_run_external_001.json",
+        "json_size_bytes": 161771,
+        "pdf_size_bytes": 581364,
+        "html_size_bytes": 296648,
+        "ocr_md": "transcripts/ocr_gemini/loss_run_external_001.md",
+        "ocr_size_bytes": 131330
+      },
+      "transcripts_available": [
+        "ocr"
+      ],
+      "complexity_regime": "loss_run_external",
+      "difficulty": "loss_run_external",
+      "format": "production_like_pdf",
+      "domain": "commercial_insurance_operations",
+      "problems": [
+        "high_density_long_list",
+        "production_like_layout",
+        "ocr_condition",
+        "page_breaks",
+        "large_doc",
+        "multiple_tables",
+        "merged_cells",
         "multi_row",
         "duplicates",
-        "multiple_tables"
+        "distractor_sections",
+        "variable_policy_sections",
+        "continuation_notes",
+        "summary_distractors",
+        "sparse_driver_fields"
       ],
-      "layout_templates": [
-        "loss_run_schedule",
-        "packet_cover",
-        "spreadsheet_reference",
-        "portal_receipt"
-      ],
-      "has_duplicates": true,
-      "seed": 8991,
-      "files": {
-        "ground_truth": "ground_truth/medium_25_003_detailed.json",
-        "pdf": "pdfs/medium_25_003_detailed.pdf",
-        "html": "html/medium_25_003_detailed.html",
-        "canonical_md": "transcripts/canonical/medium_25_003_detailed.md",
-        "ocr_md": "transcripts/ocr_gemini/medium_25_003_detailed.md",
-        "json_size_bytes": 31992,
-        "pdf_size_bytes": 345982,
-        "html_size_bytes": 85665,
-        "canonical_size_bytes": 16720,
-        "ocr_size_bytes": 0
-      },
-      "transcripts_available": [
-        "canonical"
-      ],
-      "complexity_regime": "medium",
+      "pages_estimate": 43,
+      "pdf_page_count": 43,
+      "dataset_version": "2.0.0",
+      "hf_config": "core_operations",
+      "num_claims": 300,
       "document_count": 1,
-      "evidence_pattern": "single_document"
+      "evidence_pattern": "single_document",
+      "ocr_md_size_bytes": 131330
     },
     {
-      "id": "medium_25_003_table",
-      "difficulty": "medium",
-      "format": "table",
-      "num_claims": 27,
-      "pages_estimate": 22,
+      "id": "loss_run_external_002",
+      "template": "loss_run_external",
+      "target_record_type": "loss_run_claim_row",
+      "num_target_records": 300,
+      "source_batch": "loss-run-hardened",
+      "artifacts": {
+        "pdf": "pdfs/loss_run_external_002.pdf",
+        "html": "html/loss_run_external_002.html",
+        "ground_truth": "ground_truth/loss_run_external_002.json"
+      },
+      "provenance": "Synthetic generated document. Private production references were used only for visual layout review; no production PDFs, names, account numbers, or raw customer data are included in this repository.",
+      "files": {
+        "ground_truth": "ground_truth/loss_run_external_002.json",
+        "pdf": "pdfs/loss_run_external_002.pdf",
+        "html": "html/loss_run_external_002.html",
+        "metadata": "metadata/loss_run_external_002.json",
+        "json_size_bytes": 161836,
+        "pdf_size_bytes": 581787,
+        "html_size_bytes": 297170,
+        "ocr_md": "transcripts/ocr_gemini/loss_run_external_002.md",
+        "ocr_size_bytes": 129750
+      },
+      "transcripts_available": [
+        "ocr"
+      ],
+      "complexity_regime": "loss_run_external",
+      "difficulty": "loss_run_external",
+      "format": "production_like_pdf",
+      "domain": "commercial_insurance_operations",
       "problems": [
+        "high_density_long_list",
+        "production_like_layout",
+        "ocr_condition",
+        "page_breaks",
+        "large_doc",
+        "multiple_tables",
+        "merged_cells",
         "multi_row",
         "duplicates",
-        "multiple_tables"
+        "distractor_sections",
+        "variable_policy_sections",
+        "continuation_notes",
+        "summary_distractors",
+        "sparse_driver_fields"
       ],
-      "layout_templates": [
-        "loss_run_schedule",
-        "packet_cover",
-        "spreadsheet_reference",
-        "portal_receipt"
-      ],
-      "has_duplicates": true,
-      "seed": 4336,
-      "files": {
-        "ground_truth": "ground_truth/medium_25_003_table.json",
-        "pdf": "pdfs/medium_25_003_table.pdf",
-        "html": "html/medium_25_003_table.html",
-        "canonical_md": "transcripts/canonical/medium_25_003_table.md",
-        "ocr_md": "transcripts/ocr_gemini/medium_25_003_table.md",
-        "json_size_bytes": 31637,
-        "pdf_size_bytes": 357783,
-        "html_size_bytes": 55018,
-        "canonical_size_bytes": 25352,
-        "ocr_size_bytes": 0
-      },
-      "transcripts_available": [
-        "canonical"
-      ],
-      "complexity_regime": "medium",
+      "pages_estimate": 42,
+      "pdf_page_count": 42,
+      "dataset_version": "2.0.0",
+      "hf_config": "core_operations",
+      "num_claims": 300,
       "document_count": 1,
-      "evidence_pattern": "single_document"
+      "evidence_pattern": "single_document",
+      "ocr_md_size_bytes": 129750
     },
     {
-      "id": "medium_25_004_detailed",
-      "difficulty": "medium",
-      "format": "detailed",
-      "num_claims": 27,
-      "pages_estimate": 23,
+      "id": "loss_run_external_003",
+      "template": "loss_run_external",
+      "target_record_type": "loss_run_claim_row",
+      "num_target_records": 300,
+      "source_batch": "loss-run-hardened",
+      "artifacts": {
+        "pdf": "pdfs/loss_run_external_003.pdf",
+        "html": "html/loss_run_external_003.html",
+        "ground_truth": "ground_truth/loss_run_external_003.json"
+      },
+      "provenance": "Synthetic generated document. Private production references were used only for visual layout review; no production PDFs, names, account numbers, or raw customer data are included in this repository.",
+      "files": {
+        "ground_truth": "ground_truth/loss_run_external_003.json",
+        "pdf": "pdfs/loss_run_external_003.pdf",
+        "html": "html/loss_run_external_003.html",
+        "metadata": "metadata/loss_run_external_003.json",
+        "json_size_bytes": 161889,
+        "pdf_size_bytes": 585065,
+        "html_size_bytes": 299568,
+        "ocr_md": "transcripts/ocr_gemini/loss_run_external_003.md",
+        "ocr_size_bytes": 135126
+      },
+      "transcripts_available": [
+        "ocr"
+      ],
+      "complexity_regime": "loss_run_external",
+      "difficulty": "loss_run_external",
+      "format": "production_like_pdf",
+      "domain": "commercial_insurance_operations",
       "problems": [
+        "high_density_long_list",
+        "production_like_layout",
+        "ocr_condition",
         "page_breaks",
-        "duplicates",
-        "multiple_tables"
-      ],
-      "layout_templates": [
-        "loss_run_schedule",
-        "packet_cover",
-        "spreadsheet_reference",
-        "portal_receipt"
-      ],
-      "has_duplicates": true,
-      "seed": 5215,
-      "files": {
-        "ground_truth": "ground_truth/medium_25_004_detailed.json",
-        "pdf": "pdfs/medium_25_004_detailed.pdf",
-        "html": "html/medium_25_004_detailed.html",
-        "canonical_md": "transcripts/canonical/medium_25_004_detailed.md",
-        "ocr_md": "transcripts/ocr_gemini/medium_25_004_detailed.md",
-        "json_size_bytes": 31901,
-        "pdf_size_bytes": 346307,
-        "html_size_bytes": 85930,
-        "canonical_size_bytes": 16834,
-        "ocr_size_bytes": 0
-      },
-      "transcripts_available": [
-        "canonical"
-      ],
-      "complexity_regime": "medium",
-      "document_count": 1,
-      "evidence_pattern": "single_document"
-    },
-    {
-      "id": "medium_25_004_table",
-      "difficulty": "medium",
-      "format": "table",
-      "num_claims": 27,
-      "pages_estimate": 23,
-      "problems": [
-        "page_breaks",
-        "duplicates",
-        "multiple_tables"
-      ],
-      "layout_templates": [
-        "loss_run_schedule",
-        "packet_cover",
-        "spreadsheet_reference",
-        "portal_receipt"
-      ],
-      "has_duplicates": true,
-      "seed": 4627,
-      "files": {
-        "ground_truth": "ground_truth/medium_25_004_table.json",
-        "pdf": "pdfs/medium_25_004_table.pdf",
-        "html": "html/medium_25_004_table.html",
-        "canonical_md": "transcripts/canonical/medium_25_004_table.md",
-        "ocr_md": "transcripts/ocr_gemini/medium_25_004_table.md",
-        "json_size_bytes": 31357,
-        "pdf_size_bytes": 356538,
-        "html_size_bytes": 56030,
-        "canonical_size_bytes": 25259,
-        "ocr_size_bytes": 0
-      },
-      "transcripts_available": [
-        "canonical"
-      ],
-      "complexity_regime": "medium",
-      "document_count": 1,
-      "evidence_pattern": "single_document"
-    },
-    {
-      "id": "medium_25_005_detailed",
-      "difficulty": "medium",
-      "format": "detailed",
-      "num_claims": 27,
-      "pages_estimate": 21,
-      "problems": [
-        "page_breaks",
-        "multi_row",
-        "duplicates"
-      ],
-      "layout_templates": [
-        "loss_run_schedule",
-        "packet_cover",
-        "spreadsheet_reference"
-      ],
-      "has_duplicates": true,
-      "seed": 2287,
-      "files": {
-        "ground_truth": "ground_truth/medium_25_005_detailed.json",
-        "pdf": "pdfs/medium_25_005_detailed.pdf",
-        "html": "html/medium_25_005_detailed.html",
-        "canonical_md": "transcripts/canonical/medium_25_005_detailed.md",
-        "ocr_md": "transcripts/ocr_gemini/medium_25_005_detailed.md",
-        "json_size_bytes": 31889,
-        "pdf_size_bytes": 290177,
-        "html_size_bytes": 80917,
-        "canonical_size_bytes": 16913,
-        "ocr_size_bytes": 0
-      },
-      "transcripts_available": [
-        "canonical"
-      ],
-      "complexity_regime": "medium",
-      "document_count": 1,
-      "evidence_pattern": "single_document"
-    },
-    {
-      "id": "medium_25_005_table",
-      "difficulty": "medium",
-      "format": "table",
-      "num_claims": 27,
-      "pages_estimate": 21,
-      "problems": [
-        "page_breaks",
-        "multi_row",
-        "duplicates"
-      ],
-      "layout_templates": [
-        "loss_run_schedule",
-        "packet_cover",
-        "spreadsheet_reference"
-      ],
-      "has_duplicates": true,
-      "seed": 6054,
-      "files": {
-        "ground_truth": "ground_truth/medium_25_005_table.json",
-        "pdf": "pdfs/medium_25_005_table.pdf",
-        "html": "html/medium_25_005_table.html",
-        "canonical_md": "transcripts/canonical/medium_25_005_table.md",
-        "ocr_md": "transcripts/ocr_gemini/medium_25_005_table.md",
-        "json_size_bytes": 31361,
-        "pdf_size_bytes": 292577,
-        "html_size_bytes": 50523,
-        "canonical_size_bytes": 25400,
-        "ocr_size_bytes": 0
-      },
-      "transcripts_available": [
-        "canonical"
-      ],
-      "complexity_regime": "medium",
-      "document_count": 1,
-      "evidence_pattern": "single_document"
-    },
-    {
-      "id": "medium_25_006_detailed",
-      "difficulty": "medium",
-      "format": "detailed",
-      "num_claims": 25,
-      "pages_estimate": 20,
-      "problems": [
-        "page_breaks",
-        "multi_row",
-        "multiple_tables"
-      ],
-      "layout_templates": [
-        "loss_run_schedule",
-        "packet_cover",
-        "spreadsheet_reference",
-        "portal_receipt"
-      ],
-      "has_duplicates": false,
-      "seed": 6589,
-      "files": {
-        "ground_truth": "ground_truth/medium_25_006_detailed.json",
-        "pdf": "pdfs/medium_25_006_detailed.pdf",
-        "html": "html/medium_25_006_detailed.html",
-        "canonical_md": "transcripts/canonical/medium_25_006_detailed.md",
-        "ocr_md": "transcripts/ocr_gemini/medium_25_006_detailed.md",
-        "json_size_bytes": 29025,
-        "pdf_size_bytes": 338331,
-        "html_size_bytes": 77648,
-        "canonical_size_bytes": 14842,
-        "ocr_size_bytes": 0
-      },
-      "transcripts_available": [
-        "canonical"
-      ],
-      "complexity_regime": "medium",
-      "document_count": 1,
-      "evidence_pattern": "single_document"
-    },
-    {
-      "id": "medium_25_006_table",
-      "difficulty": "medium",
-      "format": "table",
-      "num_claims": 25,
-      "pages_estimate": 21,
-      "problems": [
-        "page_breaks",
-        "multi_row",
-        "multiple_tables"
-      ],
-      "layout_templates": [
-        "loss_run_schedule",
-        "packet_cover",
-        "spreadsheet_reference",
-        "portal_receipt"
-      ],
-      "has_duplicates": false,
-      "seed": 2975,
-      "files": {
-        "ground_truth": "ground_truth/medium_25_006_table.json",
-        "pdf": "pdfs/medium_25_006_table.pdf",
-        "html": "html/medium_25_006_table.html",
-        "canonical_md": "transcripts/canonical/medium_25_006_table.md",
-        "ocr_md": "transcripts/ocr_gemini/medium_25_006_table.md",
-        "json_size_bytes": 28960,
-        "pdf_size_bytes": 353419,
-        "html_size_bytes": 52605,
-        "canonical_size_bytes": 23516,
-        "ocr_size_bytes": 0
-      },
-      "transcripts_available": [
-        "canonical"
-      ],
-      "complexity_regime": "medium",
-      "document_count": 1,
-      "evidence_pattern": "single_document"
-    },
-    {
-      "id": "medium_25_007_detailed",
-      "difficulty": "medium",
-      "format": "detailed",
-      "num_claims": 27,
-      "pages_estimate": 23,
-      "problems": [
+        "large_doc",
+        "multiple_tables",
+        "merged_cells",
         "multi_row",
         "duplicates",
-        "multiple_tables"
+        "distractor_sections",
+        "variable_policy_sections",
+        "continuation_notes",
+        "summary_distractors",
+        "sparse_driver_fields"
       ],
-      "layout_templates": [
-        "loss_run_schedule",
-        "packet_cover",
-        "spreadsheet_reference",
-        "portal_receipt"
-      ],
-      "has_duplicates": true,
-      "seed": 7816,
-      "files": {
-        "ground_truth": "ground_truth/medium_25_007_detailed.json",
-        "pdf": "pdfs/medium_25_007_detailed.pdf",
-        "html": "html/medium_25_007_detailed.html",
-        "canonical_md": "transcripts/canonical/medium_25_007_detailed.md",
-        "ocr_md": "transcripts/ocr_gemini/medium_25_007_detailed.md",
-        "json_size_bytes": 31719,
-        "pdf_size_bytes": 346898,
-        "html_size_bytes": 85101,
-        "canonical_size_bytes": 16517,
-        "ocr_size_bytes": 0
-      },
-      "transcripts_available": [
-        "canonical"
-      ],
-      "complexity_regime": "medium",
+      "pages_estimate": 44,
+      "pdf_page_count": 44,
+      "dataset_version": "2.0.0",
+      "hf_config": "core_operations",
+      "num_claims": 300,
       "document_count": 1,
-      "evidence_pattern": "single_document"
-    },
-    {
-      "id": "medium_25_007_table",
-      "difficulty": "medium",
-      "format": "table",
-      "num_claims": 27,
-      "pages_estimate": 23,
-      "problems": [
-        "multi_row",
-        "duplicates",
-        "multiple_tables"
-      ],
-      "layout_templates": [
-        "loss_run_schedule",
-        "packet_cover",
-        "spreadsheet_reference",
-        "portal_receipt"
-      ],
-      "has_duplicates": true,
-      "seed": 7682,
-      "files": {
-        "ground_truth": "ground_truth/medium_25_007_table.json",
-        "pdf": "pdfs/medium_25_007_table.pdf",
-        "html": "html/medium_25_007_table.html",
-        "canonical_md": "transcripts/canonical/medium_25_007_table.md",
-        "ocr_md": "transcripts/ocr_gemini/medium_25_007_table.md",
-        "json_size_bytes": 31995,
-        "pdf_size_bytes": 356839,
-        "html_size_bytes": 55554,
-        "canonical_size_bytes": 25651,
-        "ocr_size_bytes": 0
-      },
-      "transcripts_available": [
-        "canonical"
-      ],
-      "complexity_regime": "medium",
-      "document_count": 1,
-      "evidence_pattern": "single_document"
-    },
-    {
-      "id": "medium_25_008_detailed",
-      "difficulty": "medium",
-      "format": "detailed",
-      "num_claims": 27,
-      "pages_estimate": 23,
-      "problems": [
-        "page_breaks",
-        "duplicates",
-        "multiple_tables"
-      ],
-      "layout_templates": [
-        "loss_run_schedule",
-        "packet_cover",
-        "spreadsheet_reference",
-        "portal_receipt"
-      ],
-      "has_duplicates": true,
-      "seed": 8166,
-      "files": {
-        "ground_truth": "ground_truth/medium_25_008_detailed.json",
-        "pdf": "pdfs/medium_25_008_detailed.pdf",
-        "html": "html/medium_25_008_detailed.html",
-        "canonical_md": "transcripts/canonical/medium_25_008_detailed.md",
-        "ocr_md": "transcripts/ocr_gemini/medium_25_008_detailed.md",
-        "json_size_bytes": 32042,
-        "pdf_size_bytes": 346109,
-        "html_size_bytes": 86085,
-        "canonical_size_bytes": 16923,
-        "ocr_size_bytes": 0
-      },
-      "transcripts_available": [
-        "canonical"
-      ],
-      "complexity_regime": "medium",
-      "document_count": 1,
-      "evidence_pattern": "single_document"
-    },
-    {
-      "id": "medium_25_008_table",
-      "difficulty": "medium",
-      "format": "table",
-      "num_claims": 27,
-      "pages_estimate": 23,
-      "problems": [
-        "page_breaks",
-        "duplicates",
-        "multiple_tables"
-      ],
-      "layout_templates": [
-        "loss_run_schedule",
-        "packet_cover",
-        "spreadsheet_reference",
-        "portal_receipt"
-      ],
-      "has_duplicates": true,
-      "seed": 611,
-      "files": {
-        "ground_truth": "ground_truth/medium_25_008_table.json",
-        "pdf": "pdfs/medium_25_008_table.pdf",
-        "html": "html/medium_25_008_table.html",
-        "canonical_md": "transcripts/canonical/medium_25_008_table.md",
-        "ocr_md": "transcripts/ocr_gemini/medium_25_008_table.md",
-        "json_size_bytes": 31394,
-        "pdf_size_bytes": 357770,
-        "html_size_bytes": 56166,
-        "canonical_size_bytes": 25270,
-        "ocr_size_bytes": 0
-      },
-      "transcripts_available": [
-        "canonical"
-      ],
-      "complexity_regime": "medium",
-      "document_count": 1,
-      "evidence_pattern": "single_document"
-    },
-    {
-      "id": "medium_25_009_detailed",
-      "difficulty": "medium",
-      "format": "detailed",
-      "num_claims": 27,
-      "pages_estimate": 20,
-      "problems": [
-        "page_breaks",
-        "multi_row",
-        "duplicates"
-      ],
-      "layout_templates": [
-        "loss_run_schedule",
-        "packet_cover",
-        "spreadsheet_reference"
-      ],
-      "has_duplicates": true,
-      "seed": 1375,
-      "files": {
-        "ground_truth": "ground_truth/medium_25_009_detailed.json",
-        "pdf": "pdfs/medium_25_009_detailed.pdf",
-        "html": "html/medium_25_009_detailed.html",
-        "canonical_md": "transcripts/canonical/medium_25_009_detailed.md",
-        "ocr_md": "transcripts/ocr_gemini/medium_25_009_detailed.md",
-        "json_size_bytes": 31569,
-        "pdf_size_bytes": 288644,
-        "html_size_bytes": 77428,
-        "canonical_size_bytes": 15998,
-        "ocr_size_bytes": 0
-      },
-      "transcripts_available": [
-        "canonical"
-      ],
-      "complexity_regime": "medium",
-      "document_count": 1,
-      "evidence_pattern": "single_document"
-    },
-    {
-      "id": "medium_25_009_table",
-      "difficulty": "medium",
-      "format": "table",
-      "num_claims": 27,
-      "pages_estimate": 21,
-      "problems": [
-        "page_breaks",
-        "multi_row",
-        "duplicates"
-      ],
-      "layout_templates": [
-        "loss_run_schedule",
-        "packet_cover",
-        "spreadsheet_reference"
-      ],
-      "has_duplicates": true,
-      "seed": 4505,
-      "files": {
-        "ground_truth": "ground_truth/medium_25_009_table.json",
-        "pdf": "pdfs/medium_25_009_table.pdf",
-        "html": "html/medium_25_009_table.html",
-        "canonical_md": "transcripts/canonical/medium_25_009_table.md",
-        "ocr_md": "transcripts/ocr_gemini/medium_25_009_table.md",
-        "json_size_bytes": 31093,
-        "pdf_size_bytes": 294118,
-        "html_size_bytes": 50215,
-        "canonical_size_bytes": 25110,
-        "ocr_size_bytes": 0
-      },
-      "transcripts_available": [
-        "canonical"
-      ],
-      "complexity_regime": "medium",
-      "document_count": 1,
-      "evidence_pattern": "single_document"
-    },
-    {
-      "id": "medium_25_010_detailed",
-      "difficulty": "medium",
-      "format": "detailed",
-      "num_claims": 25,
-      "pages_estimate": 23,
-      "problems": [
-        "page_breaks",
-        "multi_row",
-        "multiple_tables"
-      ],
-      "layout_templates": [
-        "loss_run_schedule",
-        "packet_cover",
-        "spreadsheet_reference",
-        "portal_receipt"
-      ],
-      "has_duplicates": false,
-      "seed": 503,
-      "files": {
-        "ground_truth": "ground_truth/medium_25_010_detailed.json",
-        "pdf": "pdfs/medium_25_010_detailed.pdf",
-        "html": "html/medium_25_010_detailed.html",
-        "canonical_md": "transcripts/canonical/medium_25_010_detailed.md",
-        "ocr_md": "transcripts/ocr_gemini/medium_25_010_detailed.md",
-        "json_size_bytes": 28845,
-        "pdf_size_bytes": 340813,
-        "html_size_bytes": 78564,
-        "canonical_size_bytes": 14765,
-        "ocr_size_bytes": 0
-      },
-      "transcripts_available": [
-        "canonical"
-      ],
-      "complexity_regime": "medium",
-      "document_count": 1,
-      "evidence_pattern": "single_document"
-    },
-    {
-      "id": "medium_25_010_table",
-      "difficulty": "medium",
-      "format": "table",
-      "num_claims": 25,
-      "pages_estimate": 21,
-      "problems": [
-        "page_breaks",
-        "multi_row",
-        "multiple_tables"
-      ],
-      "layout_templates": [
-        "loss_run_schedule",
-        "packet_cover",
-        "spreadsheet_reference",
-        "portal_receipt"
-      ],
-      "has_duplicates": false,
-      "seed": 145,
-      "files": {
-        "ground_truth": "ground_truth/medium_25_010_table.json",
-        "pdf": "pdfs/medium_25_010_table.pdf",
-        "html": "html/medium_25_010_table.html",
-        "canonical_md": "transcripts/canonical/medium_25_010_table.md",
-        "ocr_md": "transcripts/ocr_gemini/medium_25_010_table.md",
-        "json_size_bytes": 29286,
-        "pdf_size_bytes": 353060,
-        "html_size_bytes": 53232,
-        "canonical_size_bytes": 23800,
-        "ocr_size_bytes": 0
-      },
-      "transcripts_available": [
-        "canonical"
-      ],
-      "complexity_regime": "medium",
-      "document_count": 1,
-      "evidence_pattern": "single_document"
-    },
-    {
-      "id": "medium_25_011_detailed",
-      "difficulty": "medium",
-      "format": "detailed",
-      "num_claims": 27,
-      "pages_estimate": 20,
-      "problems": [
-        "multi_row",
-        "duplicates",
-        "multiple_tables"
-      ],
-      "layout_templates": [
-        "loss_run_schedule",
-        "packet_cover",
-        "spreadsheet_reference",
-        "portal_receipt"
-      ],
-      "has_duplicates": true,
-      "seed": 7913,
-      "files": {
-        "ground_truth": "ground_truth/medium_25_011_detailed.json",
-        "pdf": "pdfs/medium_25_011_detailed.pdf",
-        "html": "html/medium_25_011_detailed.html",
-        "canonical_md": "transcripts/canonical/medium_25_011_detailed.md",
-        "ocr_md": "transcripts/ocr_gemini/medium_25_011_detailed.md",
-        "json_size_bytes": 31230,
-        "pdf_size_bytes": 342238,
-        "html_size_bytes": 81913,
-        "canonical_size_bytes": 15524,
-        "ocr_size_bytes": 0
-      },
-      "transcripts_available": [
-        "canonical"
-      ],
-      "complexity_regime": "medium",
-      "document_count": 1,
-      "evidence_pattern": "single_document"
-    },
-    {
-      "id": "medium_25_011_table",
-      "difficulty": "medium",
-      "format": "table",
-      "num_claims": 27,
-      "pages_estimate": 22,
-      "problems": [
-        "multi_row",
-        "duplicates",
-        "multiple_tables"
-      ],
-      "layout_templates": [
-        "loss_run_schedule",
-        "packet_cover",
-        "spreadsheet_reference",
-        "portal_receipt"
-      ],
-      "has_duplicates": true,
-      "seed": 3230,
-      "files": {
-        "ground_truth": "ground_truth/medium_25_011_table.json",
-        "pdf": "pdfs/medium_25_011_table.pdf",
-        "html": "html/medium_25_011_table.html",
-        "canonical_md": "transcripts/canonical/medium_25_011_table.md",
-        "ocr_md": "transcripts/ocr_gemini/medium_25_011_table.md",
-        "json_size_bytes": 31218,
-        "pdf_size_bytes": 356370,
-        "html_size_bytes": 55285,
-        "canonical_size_bytes": 25066,
-        "ocr_size_bytes": 0
-      },
-      "transcripts_available": [
-        "canonical"
-      ],
-      "complexity_regime": "medium",
-      "document_count": 1,
-      "evidence_pattern": "single_document"
-    },
-    {
-      "id": "medium_25_012_detailed",
-      "difficulty": "medium",
-      "format": "detailed",
-      "num_claims": 27,
-      "pages_estimate": 22,
-      "problems": [
-        "page_breaks",
-        "duplicates",
-        "multiple_tables"
-      ],
-      "layout_templates": [
-        "loss_run_schedule",
-        "packet_cover",
-        "spreadsheet_reference",
-        "portal_receipt"
-      ],
-      "has_duplicates": true,
-      "seed": 2332,
-      "files": {
-        "ground_truth": "ground_truth/medium_25_012_detailed.json",
-        "pdf": "pdfs/medium_25_012_detailed.pdf",
-        "html": "html/medium_25_012_detailed.html",
-        "canonical_md": "transcripts/canonical/medium_25_012_detailed.md",
-        "ocr_md": "transcripts/ocr_gemini/medium_25_012_detailed.md",
-        "json_size_bytes": 31769,
-        "pdf_size_bytes": 343701,
-        "html_size_bytes": 85867,
-        "canonical_size_bytes": 16614,
-        "ocr_size_bytes": 0
-      },
-      "transcripts_available": [
-        "canonical"
-      ],
-      "complexity_regime": "medium",
-      "document_count": 1,
-      "evidence_pattern": "single_document"
-    },
-    {
-      "id": "medium_25_012_table",
-      "difficulty": "medium",
-      "format": "table",
-      "num_claims": 27,
-      "pages_estimate": 23,
-      "problems": [
-        "page_breaks",
-        "duplicates",
-        "multiple_tables"
-      ],
-      "layout_templates": [
-        "loss_run_schedule",
-        "packet_cover",
-        "spreadsheet_reference",
-        "portal_receipt"
-      ],
-      "has_duplicates": true,
-      "seed": 7414,
-      "files": {
-        "ground_truth": "ground_truth/medium_25_012_table.json",
-        "pdf": "pdfs/medium_25_012_table.pdf",
-        "html": "html/medium_25_012_table.html",
-        "canonical_md": "transcripts/canonical/medium_25_012_table.md",
-        "ocr_md": "transcripts/ocr_gemini/medium_25_012_table.md",
-        "json_size_bytes": 31428,
-        "pdf_size_bytes": 357484,
-        "html_size_bytes": 56335,
-        "canonical_size_bytes": 25314,
-        "ocr_size_bytes": 0
-      },
-      "transcripts_available": [
-        "canonical"
-      ],
-      "complexity_regime": "medium",
-      "document_count": 1,
-      "evidence_pattern": "single_document"
+      "evidence_pattern": "single_document",
+      "ocr_md_size_bytes": 135126
     },
     {
       "id": "mixed_040_001_crosspage",
       "difficulty": "mixed",
-      "complexity_regime": "mixed",
+      "complexity_regime": "claim_crosspage_multihop",
       "format": "crosspage",
+      "domain": "claims",
+      "hf_config": "claim_multihop",
+      "target_record_type": "loss_run_incident",
       "num_claims": 40,
-      "pages_estimate": 198,
-      "pdf_page_count": 198,
+      "num_target_records": 40,
+      "pages_estimate": 209,
+      "pdf_page_count": 209,
       "document_count": 1,
       "evidence_pattern": "single_document_long_range_cross_page_join",
       "minimum_gap_pages_between_primary_and_last_evidence": 172,
@@ -3097,17 +1461,33 @@
         "long_range_evidence",
         "mixed_layout",
         "distractor_sections",
-        "longer_list"
+        "longer_list",
+        "ocr_condition",
+        "page_breaks",
+        "large_doc",
+        "multiple_tables",
+        "multi_row",
+        "multi_column",
+        "duplicates",
+        "natural_long_range_join",
+        "inherited_context",
+        "non_target_rows",
+        "mixed_prose_tables",
+        "non_sequential_identifiers"
       ],
       "layout_templates": [
         "packet_cover",
         "portal_receipt",
         "official_request_response",
-        "primary_schedule",
+        "claim_file_cards",
         "spreadsheet_unit_reference",
         "mileage_schedule",
         "rotated_scan_excerpt",
-        "long_range_appendices"
+        "driver_assignment_cards",
+        "policy_register_cards",
+        "cause_classification_narrative",
+        "claimant_notice_cards",
+        "financial_ledger_blocks"
       ],
       "has_duplicates": false,
       "seed": 10644,
@@ -3120,7 +1500,7 @@
       ],
       "evidence_map": [
         {
-          "section": "primary_claim_extract",
+          "section": "claim_intake_file_cards",
           "approx_page_after_cover": 1,
           "fields": [
             "incident_number",
@@ -3135,7 +1515,7 @@
           ]
         },
         {
-          "section": "fleet_driver_assignment_roster",
+          "section": "fleet_driver_assignment_cards",
           "approx_page_after_cover": 80,
           "join_key": "unit_number",
           "fields": [
@@ -3145,7 +1525,7 @@
           ]
         },
         {
-          "section": "policy_register",
+          "section": "policy_register_cards",
           "approx_page_after_cover": 81,
           "join_key": "policy_number",
           "fields": [
@@ -3157,7 +1537,7 @@
           ]
         },
         {
-          "section": "loss_cause_classification_appendix",
+          "section": "loss_cause_classification_narrative",
           "approx_page_after_cover": 136,
           "join_key": "cause_code",
           "fields": [
@@ -3167,18 +1547,18 @@
           ]
         },
         {
-          "section": "claimant_notice_index",
+          "section": "claimant_notice_cards",
           "approx_page_after_cover": 137,
-          "join_key": "incident_number",
+          "join_key": "reference_number",
           "fields": [
             "claimants",
             "adjuster_notes"
           ]
         },
         {
-          "section": "claim_financial_ledger",
+          "section": "claim_financial_ledger_blocks",
           "approx_page_after_cover": 178,
-          "join_key": "incident_number",
+          "join_key": "reference_number",
           "fields": [
             "bi",
             "pd",
@@ -3191,29 +1571,36 @@
         "ground_truth": "ground_truth/mixed_040_001_crosspage.json",
         "pdf": "pdfs/mixed_040_001_crosspage.pdf",
         "html": "html/mixed_040_001_crosspage.html",
-        "canonical_md": "transcripts/canonical/mixed_040_001_crosspage.md",
+        "metadata": "metadata/mixed_040_001_crosspage.json",
         "ocr_md": "transcripts/ocr_gemini/mixed_040_001_crosspage.md",
-        "json_size_bytes": 50540,
-        "pdf_size_bytes": 1067499,
-        "html_size_bytes": 446168,
-        "canonical_size_bytes": 251898,
-        "ocr_size_bytes": 243031
+        "json_size_bytes": 51549,
+        "pdf_size_bytes": 1797630,
+        "html_size_bytes": 807202,
+        "ocr_size_bytes": 769475
       },
       "transcripts_available": [
-        "canonical",
         "ocr"
-      ]
+      ],
+      "ocr_md_size_bytes": 769475,
+      "layout_revision": {
+        "date": "2026-06-29T09:52:21+00:00",
+        "purpose": "reduce deterministic parser friendliness with production-like layout variation",
+        "ocr_status": "regenerated_from_current_pdf",
+        "ocr_regenerated_at": "2026-06-29T10:16:19+00:00"
+      }
     },
     {
       "id": "mixed_cgl_040_001",
       "difficulty": "mixed",
-      "complexity_regime": "mixed",
+      "complexity_regime": "policy_multi_hop",
       "format": "crosspage",
       "domain": "policy_review",
+      "hf_config": "policy_packets",
       "lob": "CGL",
       "target_record_type": "policy_packet_item",
       "target_record_types": [
         "cgl_exposure_item",
+        "policy_clause_item",
         "policy_endorsement_item",
         "policy_form_item",
         "policy_location_item",
@@ -3223,6 +1610,10 @@
       "schema_fields": [
         "class_code",
         "classification",
+        "clause_scope",
+        "clause_text",
+        "clause_title",
+        "clause_type",
         "coverage_part",
         "edition_date",
         "endorsement_effective_date",
@@ -3249,12 +1640,12 @@
         "schedule_source",
         "territory"
       ],
-      "num_claims": 184,
-      "num_policy_items": 184,
-      "num_primary_policy_items": 40,
-      "num_target_records": 184,
-      "pages_estimate": 214,
-      "pdf_page_count": 214,
+      "num_claims": 619,
+      "num_policy_items": 619,
+      "num_primary_policy_items": 72,
+      "num_target_records": 619,
+      "pages_estimate": 316,
+      "pdf_page_count": 316,
       "document_count": 1,
       "evidence_pattern": "single_document_policy_packet_long_range_join",
       "minimum_gap_pages_between_primary_and_last_evidence": 174,
@@ -3262,10 +1653,23 @@
         "commercial_general_liability",
         "exposure_rating_rows",
         "limits_forms_exclusions",
+        "distractor_forms",
+        "distractor_locations",
+        "material_clause_extraction",
         "long_range_evidence",
         "heterogeneous_record_list",
-        "distractor_forms",
-        "distractor_locations"
+        "ocr_condition",
+        "page_breaks",
+        "large_doc",
+        "multiple_tables",
+        "multi_row",
+        "multi_column",
+        "duplicates",
+        "distractor_sections",
+        "natural_long_range_join",
+        "inherited_context",
+        "split_records",
+        "non_target_rows"
       ],
       "layout_templates": [
         "declarations",
@@ -3273,36 +1677,26 @@
         "coverage_or_limit_schedule",
         "rating_schedule",
         "forms_schedule",
+        "material_policy_provisions",
         "endorsement_detail",
         "premium_summary",
         "policy_conditions"
       ],
       "record_collections": {
-        "cgl_exposure_item": 40,
-        "policy_endorsement_item": 24,
-        "policy_form_item": 40,
-        "policy_location_item": 40,
-        "policy_premium_item": 40
+        "cgl_exposure_item": 72,
+        "policy_clause_item": 288,
+        "policy_endorsement_item": 43,
+        "policy_form_item": 72,
+        "policy_location_item": 72,
+        "policy_premium_item": 72
       },
       "synthetic_text": {
         "source": "synthetic",
         "real_documents_used_for": "structural reference only",
         "copied_source_text": false,
         "text_generation": {
-          "generator": "gemini",
-          "model": "gemini-2.5-flash",
-          "prompt_files": [
-            "policy_writer_system.md",
-            "policy_page_bank.md",
-            "cgl_examples.md"
-          ],
-          "page_kinds": {
-            "policy_form": 5,
-            "notice": 2,
-            "amendatory": 2,
-            "billing": 2,
-            "endorsement": 4
-          }
+          "generator": "template",
+          "model": null
         }
       },
       "has_duplicates": false,
@@ -3314,7 +1708,8 @@
         "coverage_part -> limits schedule",
         "form_number -> forms and exclusions schedule",
         "endorsement_number -> endorsement detail pages",
-        "exposure_item_id -> premium summary"
+        "exposure_item_id -> premium summary",
+        "location_number/class_code/form_number -> material clause pages"
       ],
       "evidence_map": [
         {
@@ -3374,6 +1769,17 @@
           ]
         },
         {
+          "section": "material_policy_provisions",
+          "approx_page_after_cover": 113,
+          "join_key": "form_number/state_or_location/class_code",
+          "fields": [
+            "clause_title",
+            "clause_type",
+            "clause_scope",
+            "clause_text"
+          ]
+        },
+        {
           "section": "premium_summary",
           "approx_page_after_cover": 182,
           "join_key": "item_id",
@@ -3387,44 +1793,77 @@
         "ground_truth": "ground_truth/mixed_cgl_040_001.json",
         "pdf": "pdfs/mixed_cgl_040_001.pdf",
         "html": "html/mixed_cgl_040_001.html",
-        "canonical_md": "transcripts/canonical/mixed_cgl_040_001.md",
         "ocr_md": "transcripts/ocr_gemini/mixed_cgl_040_001.md",
-        "json_size_bytes": 109370,
-        "pdf_size_bytes": 1468693,
-        "html_size_bytes": 797363,
-        "canonical_size_bytes": 555158,
-        "ocr_size_bytes": 693599
+        "json_size_bytes": 458192,
+        "pdf_size_bytes": 1461026,
+        "html_size_bytes": 1169180,
+        "ocr_size_bytes": 807375,
+        "metadata": "metadata/mixed_cgl_040_001.json"
       },
       "transcripts_available": [
-        "canonical",
         "ocr"
-      ]
+      ],
+      "template": "policy_multihop_cgl",
+      "pdf_size_bytes": 1461026,
+      "html_size_bytes": 1169180,
+      "layout_revision": {
+        "date": "2026-06-28T09:38:55.491297+00:00",
+        "purpose": "reduce deterministic parser friendliness with production-like layout variation",
+        "ocr_status": "regenerated_from_current_pdf",
+        "ocr_regenerated_at": "2026-06-28T21:44:24.950682+00:00"
+      },
+      "artifacts": {
+        "pdf_sha256": "7b989dbeee4aa9c0b55d257f8de0495bbaf4b4155a433fc492d62bee3df1493d",
+        "html_sha256": "bc8f42bb07b71cc430d29d06bd1af630f665a7124871cf71f6c7c2ac156ac3b2"
+      },
+      "ocr_md_size_bytes": 807375
     },
     {
       "id": "multihop_012_001_crosspage",
       "difficulty": "multihop",
-      "complexity_regime": "multihop",
+      "complexity_regime": "claim_crosspage_multihop",
       "format": "crosspage",
+      "domain": "claims",
+      "hf_config": "claim_multihop",
+      "target_record_type": "loss_run_incident",
       "num_claims": 12,
-      "pages_estimate": 76,
-      "pdf_page_count": 76,
+      "num_target_records": 12,
+      "pages_estimate": 80,
+      "pdf_page_count": 80,
       "document_count": 1,
       "evidence_pattern": "single_document_long_range_cross_page_join",
       "minimum_gap_pages_between_primary_and_last_evidence": 64,
       "problems": [
         "cross_page_join",
         "long_range_evidence",
-        "coded_values"
+        "coded_values",
+        "distractor_sections",
+        "ocr_condition",
+        "page_breaks",
+        "large_doc",
+        "multiple_tables",
+        "multi_row",
+        "multi_column",
+        "duplicates",
+        "natural_long_range_join",
+        "inherited_context",
+        "non_target_rows",
+        "mixed_prose_tables",
+        "non_sequential_identifiers"
       ],
       "layout_templates": [
         "packet_cover",
         "portal_receipt",
         "official_request_response",
-        "primary_schedule",
+        "claim_file_cards",
         "spreadsheet_unit_reference",
         "mileage_schedule",
         "rotated_scan_excerpt",
-        "long_range_appendices"
+        "driver_assignment_cards",
+        "policy_register_cards",
+        "cause_classification_narrative",
+        "claimant_notice_cards",
+        "financial_ledger_blocks"
       ],
       "has_duplicates": false,
       "seed": 14114,
@@ -3435,7 +1874,7 @@
       ],
       "evidence_map": [
         {
-          "section": "primary_claim_extract",
+          "section": "claim_intake_file_cards",
           "approx_page_after_cover": 1,
           "fields": [
             "incident_number",
@@ -3450,7 +1889,7 @@
           ]
         },
         {
-          "section": "fleet_driver_assignment_roster",
+          "section": "fleet_driver_assignment_cards",
           "approx_page_after_cover": 30,
           "join_key": "unit_number",
           "fields": [
@@ -3460,7 +1899,7 @@
           ]
         },
         {
-          "section": "policy_register",
+          "section": "policy_register_cards",
           "approx_page_after_cover": 31,
           "join_key": "policy_number",
           "fields": [
@@ -3472,7 +1911,7 @@
           ]
         },
         {
-          "section": "loss_cause_classification_appendix",
+          "section": "loss_cause_classification_narrative",
           "approx_page_after_cover": 50,
           "join_key": "cause_code",
           "fields": [
@@ -3482,18 +1921,18 @@
           ]
         },
         {
-          "section": "claimant_notice_index",
+          "section": "claimant_notice_cards",
           "approx_page_after_cover": 51,
-          "join_key": "incident_number",
+          "join_key": "reference_number",
           "fields": [
             "claimants",
             "adjuster_notes"
           ]
         },
         {
-          "section": "claim_financial_ledger",
+          "section": "claim_financial_ledger_blocks",
           "approx_page_after_cover": 70,
-          "join_key": "incident_number",
+          "join_key": "reference_number",
           "fields": [
             "bi",
             "pd",
@@ -3506,30 +1945,36 @@
         "ground_truth": "ground_truth/multihop_012_001_crosspage.json",
         "pdf": "pdfs/multihop_012_001_crosspage.pdf",
         "html": "html/multihop_012_001_crosspage.html",
-        "canonical_md": "transcripts/canonical/multihop_012_001_crosspage.md",
+        "metadata": "metadata/multihop_012_001_crosspage.json",
         "ocr_md": "transcripts/ocr_gemini/multihop_012_001_crosspage.md",
-        "json_size_bytes": 14923,
-        "pdf_size_bytes": 652385,
-        "html_size_bytes": 167683,
-        "canonical_size_bytes": 91774,
-        "ocr_size_bytes": 92632
+        "json_size_bytes": 15364,
+        "pdf_size_bytes": 981600,
+        "html_size_bytes": 296086,
+        "ocr_size_bytes": 271333
       },
       "transcripts_available": [
-        "canonical",
         "ocr"
       ],
-      "domain": "claims",
-      "target_record_type": "loss_run_incident",
-      "num_target_records": 12
+      "ocr_md_size_bytes": 271333,
+      "layout_revision": {
+        "date": "2026-06-29T09:52:19+00:00",
+        "purpose": "reduce deterministic parser friendliness with production-like layout variation",
+        "ocr_status": "regenerated_from_current_pdf",
+        "ocr_regenerated_at": "2026-06-29T09:56:43+00:00"
+      }
     },
     {
       "id": "multihop_025_001_crosspage",
       "difficulty": "multihop",
-      "complexity_regime": "multihop",
+      "complexity_regime": "claim_crosspage_multihop",
       "format": "crosspage",
+      "domain": "claims",
+      "hf_config": "claim_multihop",
+      "target_record_type": "loss_run_incident",
       "num_claims": 25,
-      "pages_estimate": 126,
-      "pdf_page_count": 126,
+      "num_target_records": 25,
+      "pages_estimate": 136,
+      "pdf_page_count": 136,
       "document_count": 1,
       "evidence_pattern": "single_document_long_range_cross_page_join",
       "minimum_gap_pages_between_primary_and_last_evidence": 114,
@@ -3537,17 +1982,34 @@
         "cross_page_join",
         "long_range_evidence",
         "many_to_one_policy",
-        "claimant_lookup"
+        "claimant_lookup",
+        "distractor_sections",
+        "ocr_condition",
+        "page_breaks",
+        "large_doc",
+        "multiple_tables",
+        "multi_row",
+        "multi_column",
+        "duplicates",
+        "natural_long_range_join",
+        "inherited_context",
+        "non_target_rows",
+        "mixed_prose_tables",
+        "non_sequential_identifiers"
       ],
       "layout_templates": [
         "packet_cover",
         "portal_receipt",
         "official_request_response",
-        "primary_schedule",
+        "claim_file_cards",
         "spreadsheet_unit_reference",
         "mileage_schedule",
         "rotated_scan_excerpt",
-        "long_range_appendices"
+        "driver_assignment_cards",
+        "policy_register_cards",
+        "cause_classification_narrative",
+        "claimant_notice_cards",
+        "financial_ledger_blocks"
       ],
       "has_duplicates": false,
       "seed": 6869,
@@ -3558,7 +2020,7 @@
       ],
       "evidence_map": [
         {
-          "section": "primary_claim_extract",
+          "section": "claim_intake_file_cards",
           "approx_page_after_cover": 1,
           "fields": [
             "incident_number",
@@ -3573,7 +2035,7 @@
           ]
         },
         {
-          "section": "fleet_driver_assignment_roster",
+          "section": "fleet_driver_assignment_cards",
           "approx_page_after_cover": 54,
           "join_key": "unit_number",
           "fields": [
@@ -3583,7 +2045,7 @@
           ]
         },
         {
-          "section": "policy_register",
+          "section": "policy_register_cards",
           "approx_page_after_cover": 55,
           "join_key": "policy_number",
           "fields": [
@@ -3595,7 +2057,7 @@
           ]
         },
         {
-          "section": "loss_cause_classification_appendix",
+          "section": "loss_cause_classification_narrative",
           "approx_page_after_cover": 90,
           "join_key": "cause_code",
           "fields": [
@@ -3605,18 +2067,18 @@
           ]
         },
         {
-          "section": "claimant_notice_index",
+          "section": "claimant_notice_cards",
           "approx_page_after_cover": 91,
-          "join_key": "incident_number",
+          "join_key": "reference_number",
           "fields": [
             "claimants",
             "adjuster_notes"
           ]
         },
         {
-          "section": "claim_financial_ledger",
+          "section": "claim_financial_ledger_blocks",
           "approx_page_after_cover": 120,
-          "join_key": "incident_number",
+          "join_key": "reference_number",
           "fields": [
             "bi",
             "pd",
@@ -3629,21 +2091,23 @@
         "ground_truth": "ground_truth/multihop_025_001_crosspage.json",
         "pdf": "pdfs/multihop_025_001_crosspage.pdf",
         "html": "html/multihop_025_001_crosspage.html",
-        "canonical_md": "transcripts/canonical/multihop_025_001_crosspage.md",
+        "metadata": "metadata/multihop_025_001_crosspage.json",
         "ocr_md": "transcripts/ocr_gemini/multihop_025_001_crosspage.md",
-        "json_size_bytes": 31277,
-        "pdf_size_bytes": 829064,
-        "html_size_bytes": 286575,
-        "canonical_size_bytes": 160141,
-        "ocr_size_bytes": 156626
+        "json_size_bytes": 32067,
+        "pdf_size_bytes": 1335078,
+        "html_size_bytes": 515445,
+        "ocr_size_bytes": 478563
       },
       "transcripts_available": [
-        "canonical",
         "ocr"
       ],
-      "domain": "claims",
-      "target_record_type": "loss_run_incident",
-      "num_target_records": 25
+      "ocr_md_size_bytes": 478563,
+      "layout_revision": {
+        "date": "2026-06-29T09:52:20+00:00",
+        "purpose": "reduce deterministic parser friendliness with production-like layout variation",
+        "ocr_status": "regenerated_from_current_pdf",
+        "ocr_regenerated_at": "2026-06-29T10:05:17+00:00"
+      }
     },
     {
       "id": "multihop_bop_012_001",
@@ -3651,10 +2115,12 @@
       "complexity_regime": "policy_multi_hop",
       "format": "crosspage",
       "domain": "policy_review",
+      "hf_config": "policy_packets",
       "lob": "BOP",
       "target_record_type": "policy_packet_item",
       "target_record_types": [
         "bop_coverage_item",
+        "policy_clause_item",
         "policy_endorsement_item",
         "policy_form_item",
         "policy_location_item",
@@ -3666,6 +2132,10 @@
         "business_income_basis",
         "class_code",
         "classification",
+        "clause_scope",
+        "clause_text",
+        "clause_title",
+        "clause_type",
         "coinsurance",
         "coverage",
         "deductible",
@@ -3686,12 +2156,12 @@
         "schedule_source",
         "valuation"
       ],
-      "num_claims": 48,
-      "num_policy_items": 48,
-      "num_primary_policy_items": 12,
-      "num_target_records": 48,
-      "pages_estimate": 90,
-      "pdf_page_count": 90,
+      "num_claims": 360,
+      "num_policy_items": 360,
+      "num_primary_policy_items": 48,
+      "num_target_records": 360,
+      "pages_estimate": 158,
+      "pdf_page_count": 158,
       "document_count": 1,
       "evidence_pattern": "single_document_policy_packet_long_range_join",
       "minimum_gap_pages_between_primary_and_last_evidence": 74,
@@ -3699,8 +2169,20 @@
         "businessowners_policy",
         "location_scoped_coverage",
         "form_endorsement_links",
+        "material_clause_extraction",
         "long_range_evidence",
-        "heterogeneous_record_list"
+        "heterogeneous_record_list",
+        "ocr_condition",
+        "page_breaks",
+        "large_doc",
+        "multi_row",
+        "multi_column",
+        "duplicates",
+        "distractor_sections",
+        "natural_long_range_join",
+        "inherited_context",
+        "split_records",
+        "non_target_rows"
       ],
       "layout_templates": [
         "declarations",
@@ -3708,38 +2190,26 @@
         "coverage_or_limit_schedule",
         "rating_schedule",
         "forms_schedule",
+        "material_policy_provisions",
         "endorsement_detail",
         "premium_summary",
         "policy_conditions"
       ],
       "record_collections": {
-        "bop_coverage_item": 12,
-        "policy_endorsement_item": 8,
-        "policy_form_item": 12,
+        "bop_coverage_item": 48,
+        "policy_clause_item": 192,
+        "policy_endorsement_item": 32,
+        "policy_form_item": 36,
         "policy_location_item": 4,
-        "policy_premium_item": 12
+        "policy_premium_item": 48
       },
       "synthetic_text": {
         "source": "synthetic",
         "real_documents_used_for": "structural reference only",
         "copied_source_text": false,
         "text_generation": {
-          "generator": "gemini",
-          "model": "gemini-3.1-pro-preview",
-          "thinking_level": "high",
-          "prompt_files": [
-            "policy_writer_system.md",
-            "policy_page_bank.md",
-            "bop_examples.md"
-          ],
-          "page_kinds": {
-            "policy_form": 5,
-            "coverage_form": 12,
-            "notice": 2,
-            "amendatory": 2,
-            "billing": 2,
-            "endorsement": 4
-          }
+          "generator": "template",
+          "model": null
         }
       },
       "has_duplicates": false,
@@ -3750,7 +2220,8 @@
         "location_number/building_number/class_code -> classification/rating schedule",
         "form_number/edition_date/form_title -> forms and endorsements schedule",
         "location_number/building_number/coverage/form_number -> endorsement detail pages",
-        "location_number/building_number/coverage -> premium summary"
+        "location_number/building_number/coverage -> premium summary",
+        "form_number/coverage/location/building -> material clause pages"
       ],
       "evidence_map": [
         {
@@ -3808,6 +2279,17 @@
           ]
         },
         {
+          "section": "material_policy_provisions",
+          "approx_page_after_cover": 49,
+          "join_key": "form_number/coverage/location_number/building_number",
+          "fields": [
+            "clause_title",
+            "clause_type",
+            "clause_scope",
+            "clause_text"
+          ]
+        },
+        {
           "section": "premium_summary",
           "approx_page_after_cover": 82,
           "join_key": "location_number/building_number/coverage",
@@ -3820,18 +2302,30 @@
         "ground_truth": "ground_truth/multihop_bop_012_001.json",
         "pdf": "pdfs/multihop_bop_012_001.pdf",
         "html": "html/multihop_bop_012_001.html",
-        "canonical_md": "transcripts/canonical/multihop_bop_012_001.md",
         "ocr_md": "transcripts/ocr_gemini/multihop_bop_012_001.md",
-        "json_size_bytes": 24285,
-        "pdf_size_bytes": 485523,
-        "html_size_bytes": 230234,
-        "canonical_size_bytes": 9,
-        "ocr_size_bytes": 227771
+        "json_size_bytes": 239867,
+        "pdf_size_bytes": 820073,
+        "html_size_bytes": 582894,
+        "ocr_size_bytes": 402001,
+        "metadata": "metadata/multihop_bop_012_001.json"
       },
       "transcripts_available": [
-        "canonical",
         "ocr"
-      ]
+      ],
+      "template": "policy_multihop_bop",
+      "pdf_size_bytes": 820073,
+      "html_size_bytes": 582894,
+      "layout_revision": {
+        "date": "2026-06-28T09:38:53.785980+00:00",
+        "purpose": "reduce deterministic parser friendliness with production-like layout variation",
+        "ocr_status": "regenerated_from_current_pdf",
+        "ocr_regenerated_at": "2026-06-28T21:44:24.950682+00:00"
+      },
+      "artifacts": {
+        "pdf_sha256": "68ef7778a4237d30daa9475a3583b118f3e4ae146f43137e6459ffd2225424a9",
+        "html_sha256": "2dc789d29e1ced7c103a0fff0b553c613e9c5258778728eae99f1c94984741aa"
+      },
+      "ocr_md_size_bytes": 402001
     },
     {
       "id": "multihop_wc_025_001",
@@ -3839,9 +2333,11 @@
       "complexity_regime": "policy_multi_hop",
       "format": "crosspage",
       "domain": "policy_review",
+      "hf_config": "policy_packets",
       "lob": "WC",
       "target_record_type": "policy_packet_item",
       "target_record_types": [
+        "policy_clause_item",
         "policy_endorsement_item",
         "policy_form_item",
         "policy_location_item",
@@ -3853,6 +2349,10 @@
         "annual_payroll",
         "class_code",
         "classification",
+        "clause_scope",
+        "clause_text",
+        "clause_title",
+        "clause_type",
         "edition_date",
         "endorsement_effective_date",
         "endorsement_number",
@@ -3876,12 +2376,12 @@
         "schedule_source",
         "state"
       ],
-      "num_claims": 113,
-      "num_policy_items": 113,
-      "num_primary_policy_items": 25,
-      "num_target_records": 113,
-      "pages_estimate": 140,
-      "pdf_page_count": 140,
+      "num_claims": 510,
+      "num_policy_items": 510,
+      "num_primary_policy_items": 60,
+      "num_target_records": 510,
+      "pages_estimate": 220,
+      "pdf_page_count": 220,
       "document_count": 1,
       "evidence_pattern": "single_document_policy_packet_long_range_join",
       "minimum_gap_pages_between_primary_and_last_evidence": 116,
@@ -3889,8 +2389,21 @@
         "workers_compensation_policy",
         "class_code_payroll_rating",
         "experience_mod_and_schedule_rating",
+        "material_clause_extraction",
         "long_range_evidence",
-        "heterogeneous_record_list"
+        "heterogeneous_record_list",
+        "ocr_condition",
+        "page_breaks",
+        "large_doc",
+        "multiple_tables",
+        "multi_row",
+        "multi_column",
+        "duplicates",
+        "distractor_sections",
+        "natural_long_range_join",
+        "inherited_context",
+        "split_records",
+        "non_target_rows"
       ],
       "layout_templates": [
         "declarations",
@@ -3898,36 +2411,26 @@
         "coverage_or_limit_schedule",
         "rating_schedule",
         "forms_schedule",
+        "material_policy_provisions",
         "endorsement_detail",
         "premium_summary",
         "policy_conditions"
       ],
       "record_collections": {
-        "policy_endorsement_item": 13,
-        "policy_form_item": 25,
-        "policy_location_item": 25,
-        "policy_premium_item": 25,
-        "wc_class_code_item": 25
+        "policy_clause_item": 240,
+        "policy_endorsement_item": 30,
+        "policy_form_item": 60,
+        "policy_location_item": 60,
+        "policy_premium_item": 60,
+        "wc_class_code_item": 60
       },
       "synthetic_text": {
         "source": "synthetic",
         "real_documents_used_for": "structural reference only",
         "copied_source_text": false,
         "text_generation": {
-          "generator": "gemini",
-          "model": "gemini-2.5-flash",
-          "prompt_files": [
-            "policy_writer_system.md",
-            "policy_page_bank.md",
-            "wc_examples.md"
-          ],
-          "page_kinds": {
-            "policy_form": 5,
-            "notice": 2,
-            "amendatory": 2,
-            "billing": 2,
-            "endorsement": 4
-          }
+          "generator": "template",
+          "model": null
         }
       },
       "has_duplicates": false,
@@ -3938,7 +2441,8 @@
         "state/class_code -> payroll and rate schedule",
         "form_number -> forms and endorsements schedule",
         "endorsement_number -> owner/officer or waiver detail pages",
-        "class_code_item_id -> premium summary"
+        "class_code_item_id -> premium summary",
+        "state/class_code/form_number -> material clause pages"
       ],
       "evidence_map": [
         {
@@ -3997,6 +2501,17 @@
           ]
         },
         {
+          "section": "material_policy_provisions",
+          "approx_page_after_cover": 75,
+          "join_key": "form_number/state_or_location/class_code",
+          "fields": [
+            "clause_title",
+            "clause_type",
+            "clause_scope",
+            "clause_text"
+          ]
+        },
+        {
           "section": "premium_summary",
           "approx_page_after_cover": 124,
           "join_key": "item_id",
@@ -4010,40 +2525,222 @@
         "ground_truth": "ground_truth/multihop_wc_025_001.json",
         "pdf": "pdfs/multihop_wc_025_001.pdf",
         "html": "html/multihop_wc_025_001.html",
-        "canonical_md": "transcripts/canonical/multihop_wc_025_001.md",
         "ocr_md": "transcripts/ocr_gemini/multihop_wc_025_001.md",
-        "json_size_bytes": 62051,
-        "pdf_size_bytes": 1023003,
-        "html_size_bytes": 529449,
-        "canonical_size_bytes": 372754,
-        "ocr_size_bytes": 509607
+        "json_size_bytes": 327471,
+        "pdf_size_bytes": 1056909,
+        "html_size_bytes": 799989,
+        "ocr_size_bytes": 537185,
+        "metadata": "metadata/multihop_wc_025_001.json"
       },
       "transcripts_available": [
-        "canonical",
         "ocr"
-      ]
+      ],
+      "template": "policy_multihop_wc",
+      "pdf_size_bytes": 1056909,
+      "html_size_bytes": 799989,
+      "layout_revision": {
+        "date": "2026-06-28T09:38:54.527948+00:00",
+        "purpose": "reduce deterministic parser friendliness with production-like layout variation",
+        "ocr_status": "regenerated_from_current_pdf",
+        "ocr_regenerated_at": "2026-06-28T21:44:24.950682+00:00"
+      },
+      "artifacts": {
+        "pdf_sha256": "ed649fd8a97fea912c6ad8ead87f15236ab2f5d39e7cce766879ad8089ce284b",
+        "html_sha256": "5eb0cc1acb38e18a4a54364bba050d9c8e8ff581b866e9af7c8fb79f26ad8f89"
+      },
+      "ocr_md_size_bytes": 537185
+    },
+    {
+      "id": "vehicle_schedule_sparse_001",
+      "difficulty": "vehicle_schedule_spreadsheet_export",
+      "format": "production_like_pdf",
+      "domain": "commercial_insurance_operations",
+      "template": "vehicle_schedule_spreadsheet_export",
+      "target_record_type": "vehicle_schedule_row",
+      "num_target_records": 800,
+      "source_batch": "batches-02-05-review-ready",
+      "problems": [
+        "high_density_long_list",
+        "production_like_layout",
+        "ocr_condition",
+        "page_breaks",
+        "large_doc",
+        "multiple_tables",
+        "layout_randomization",
+        "inherited_context",
+        "split_records",
+        "non_target_rows"
+      ],
+      "files": {
+        "ground_truth": "ground_truth/vehicle_schedule_sparse_001.json",
+        "pdf": "pdfs/vehicle_schedule_sparse_001.pdf",
+        "html": "html/vehicle_schedule_sparse_001.html",
+        "metadata": "metadata/vehicle_schedule_sparse_001.json",
+        "json_size_bytes": 146971,
+        "pdf_size_bytes": 442739,
+        "html_size_bytes": 171500,
+        "ocr_md": "transcripts/ocr_gemini/vehicle_schedule_sparse_001.md",
+        "ocr_size_bytes": 68892
+      },
+      "transcripts_available": [
+        "ocr"
+      ],
+      "complexity_regime": "vehicle_schedule_spreadsheet_export",
+      "document_count": 1,
+      "evidence_pattern": "single_document",
+      "provenance": "Synthetic generated document. Private production references were used only for visual layout review; no production PDFs, names, account numbers, or raw customer data are included in this repository.",
+      "pages_estimate": 37,
+      "pdf_page_count": 37,
+      "hf_config": "core_operations",
+      "pdf_size_bytes": 442739,
+      "html_size_bytes": 171500,
+      "layout_revision": {
+        "date": "2026-06-28T14:34:58.086757+00:00",
+        "purpose": "reduce deterministic parser friendliness with production-like layout variation",
+        "ocr_status": "regenerated_from_current_pdf",
+        "ocr_regenerated_at": "2026-06-28T21:44:24.950682+00:00"
+      },
+      "artifacts": {
+        "pdf_sha256": "8cac2eb40553d40115be6a7fd34bc07ec14151f46a5dd947276bc8b232216de1",
+        "html_sha256": "674179a4f56b2141d4cdf14f42dfb5d2eda6695470d8a9fccabd423abd9b7849"
+      },
+      "ocr_md_size_bytes": 68892
+    },
+    {
+      "id": "vehicle_schedule_sparse_002",
+      "difficulty": "vehicle_schedule_spreadsheet_export",
+      "format": "production_like_pdf",
+      "domain": "commercial_insurance_operations",
+      "template": "vehicle_schedule_spreadsheet_export",
+      "target_record_type": "vehicle_schedule_row",
+      "num_target_records": 800,
+      "source_batch": "batches-02-05-review-ready",
+      "problems": [
+        "high_density_long_list",
+        "production_like_layout",
+        "ocr_condition",
+        "page_breaks",
+        "large_doc",
+        "multiple_tables",
+        "layout_randomization",
+        "inherited_context",
+        "split_records",
+        "non_target_rows"
+      ],
+      "files": {
+        "ground_truth": "ground_truth/vehicle_schedule_sparse_002.json",
+        "pdf": "pdfs/vehicle_schedule_sparse_002.pdf",
+        "html": "html/vehicle_schedule_sparse_002.html",
+        "metadata": "metadata/vehicle_schedule_sparse_002.json",
+        "json_size_bytes": 146932,
+        "pdf_size_bytes": 441856,
+        "html_size_bytes": 171463,
+        "ocr_md": "transcripts/ocr_gemini/vehicle_schedule_sparse_002.md",
+        "ocr_size_bytes": 65201
+      },
+      "transcripts_available": [
+        "ocr"
+      ],
+      "complexity_regime": "vehicle_schedule_spreadsheet_export",
+      "document_count": 1,
+      "evidence_pattern": "single_document",
+      "provenance": "Synthetic generated document. Private production references were used only for visual layout review; no production PDFs, names, account numbers, or raw customer data are included in this repository.",
+      "pages_estimate": 37,
+      "pdf_page_count": 37,
+      "hf_config": "core_operations",
+      "pdf_size_bytes": 441856,
+      "html_size_bytes": 171463,
+      "layout_revision": {
+        "date": "2026-06-28T14:34:58.488572+00:00",
+        "purpose": "reduce deterministic parser friendliness with production-like layout variation",
+        "ocr_status": "regenerated_from_current_pdf",
+        "ocr_regenerated_at": "2026-06-28T21:44:24.950682+00:00"
+      },
+      "artifacts": {
+        "pdf_sha256": "b3103e7d82701ffd8ce82d2ed87635e5578e3b66b19f4d80197d7caf8eb6ddde",
+        "html_sha256": "2f425d9fc1d1e17d45ae6c41635bff567dc72a5a2eb170395e230905b4eafe6a"
+      },
+      "ocr_md_size_bytes": 65201
     }
   ],
-  "layout": {
-    "type": "modality_separated",
-    "pdfs": "pdfs/{sample_id}.pdf",
-    "html": "html/{sample_id}.html",
-    "ground_truth": "ground_truth/{sample_id}.json",
-    "canonical_transcripts": "transcripts/canonical/{sample_id}.md",
-    "ocr_transcripts": "transcripts/ocr_gemini/{sample_id}.md",
-    "metadata": "metadata/{sample_id}.json"
-  },
-  "organized_at": "2026-06-20T16:42:37.885059+00:00",
+  "updated_at": "2026-06-29T07:16:19.604937+00:00",
+  "total_core_operations_records": 31884,
+  "total_claim_records": 77,
+  "total_policy_records": 1489,
   "complexity_regimes": [
-    "easy",
-    "extreme",
-    "hard",
-    "medium",
-    "mixed",
-    "multihop",
-    "policy_multi_hop"
+    "claim_crosspage_multihop",
+    "driver_mvr_request_and_roster",
+    "driver_schedule_spreadsheet_export",
+    "ifta_mileage_by_vehicle",
+    "ifta_multisection_return_packet",
+    "ifta_return_schedule_details",
+    "ifta_tax_return_inquiry_detail",
+    "ifta_tax_return_summary",
+    "loss_run_external",
+    "policy_multi_hop",
+    "vehicle_schedule_spreadsheet_export"
   ],
-  "updated_at": "2026-06-21T17:52:02.250821+00:00",
-  "total_policy_items": 345,
-  "total_target_records": 7250
+  "total_documents": 36,
+  "complexity_stressors": {
+    "page_breaks": "Target lists or supporting sections continue across page boundaries, often with repeated headers or inherited context.",
+    "multi_row": "One logical record can include wrapped notes, descriptions, source notes, clause prose, or continuation rows rather than a single flat row.",
+    "duplicates": "Duplicate or near-duplicate distractor material appears in support sections. Version 2.0 emphasizes prior-term, archive, summary-card, and repeated-support distractors rather than exact duplicate target rows.",
+    "large_doc": "Documents contain hundreds to thousands of target records, or enough pages to expose truncation and list-completeness failures.",
+    "multiple_tables": "Target records are mixed with summaries, ledgers, schedules, support tables, or empty/no-claims tables.",
+    "multi_column": "Some pages use two-column or form-like layouts that stress reading order.",
+    "merged_cells": "Tables use merged cells, section-spanning rows, or colspan/rowspan-style layout structure.",
+    "ocr_condition": "Released transcripts are OCR output from rendered PDF page images.",
+    "long_range_evidence": "A target record may require joining evidence from distant sections of the same PDF.",
+    "heterogeneous_record_list": "A single output list may contain several record types with different fields.",
+    "layout_randomization": "Rows use several realistic layouts within one document, including tables, cards, wrapped audit lines, and continuation blocks.",
+    "inherited_context": "Fields such as schedule, fuel type, policy period, location, or coverage scope must be inherited from section headers.",
+    "split_records": "One target record can be split across multiple visible lines or cards.",
+    "non_target_rows": "Support, subtotal, prior-period, and note rows are interleaved with target records.",
+    "natural_long_range_join": "Distant evidence is connected by normal business references rather than explicit benchmark join instructions."
+  },
+  "problem_tags": [
+    "businessowners_policy",
+    "claimant_lookup",
+    "class_code_payroll_rating",
+    "coded_values",
+    "commercial_general_liability",
+    "continuation_notes",
+    "cross_page_join",
+    "cross_section_join",
+    "distractor_forms",
+    "distractor_locations",
+    "distractor_sections",
+    "duplicates",
+    "experience_mod_and_schedule_rating",
+    "exposure_rating_rows",
+    "form_endorsement_links",
+    "heterogeneous_record_list",
+    "high_density_long_list",
+    "inherited_context",
+    "large_doc",
+    "layout_randomization",
+    "limits_forms_exclusions",
+    "location_scoped_coverage",
+    "long_range_evidence",
+    "longer_list",
+    "many_to_one_policy",
+    "material_clause_extraction",
+    "merged_cells",
+    "mixed_layout",
+    "multi_column",
+    "multi_row",
+    "multiple_tables",
+    "natural_long_range_join",
+    "non_target_rows",
+    "ocr_condition",
+    "ocr_layout_condition",
+    "page_breaks",
+    "production_like_layout",
+    "repeated_keys",
+    "sparse_driver_fields",
+    "split_records",
+    "summary_distractors",
+    "variable_policy_sections",
+    "workers_compensation_policy"
+  ]
 }

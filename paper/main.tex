@@ -17,10 +17,13 @@
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{amsthm}
+\usepackage{dsfont} % blackboard-bold digits, e.g. the indicator \mathds{1}
 
 % Graphics and figures
 \usepackage{graphicx}
 \usepackage{float}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,calc}
 \usepackage{caption}
 \usepackage{subcaption}
 
@@ -39,8 +42,8 @@
     citecolor=blue,
     urlcolor=blue,
     pdfauthor={Anton Fedoruk, Serhii Shchoholiev, Akhil Mehta},
-    pdftitle={LongListBench: A Benchmark for Long-List Entity Extraction Under Layout, OCR, and Long-Range Cross-Page Complexity},
-    pdfsubject={Benchmark for long-list entity extraction under layout, OCR, and long-range cross-page complexity},
+    pdftitle={LongListBench: A Benchmark for Long-List Entity Extraction from Complex Business PDFs},
+    pdfsubject={Benchmark for long-list entity extraction from complex business PDFs},
     pdfkeywords={document understanding, information extraction, OCR, large language models, benchmark, long-list entity extraction, layout noise, multi-hop extraction},
     bookmarksnumbered=true,
     bookmarksopen=true,
@@ -67,11 +70,11 @@
 \newtheorem{remark}[theorem]{Remark}
 
 % Document metadata
-\title{LongListBench: A Benchmark for Long-List Entity Extraction Under Layout, OCR, and Long-Range Cross-Page Complexity}
+\title{LongListBench: A Benchmark for Long-List Entity Extraction from Complex Business PDFs}
 \author{
     Anton Fedoruk\textsuperscript{1}\thanks{\texttt{anton@kay.ai}}
     \hspace{2em}
-    Serhii Shchoholiev\,\orcidlink{0009-0007-2014-4828}\textsuperscript{1}\thanks{\texttt{serhii@kay.ai}\quad\orcidlink{0009-0007-2014-4828}~\url{https://orcid.org/0009-0007-2014-4828}}
+    Serhii Shchoholiev\,\orcidlink{0009-0007-2014-4828}\textsuperscript{1}\thanks{\texttt{serhii@kay.ai}}
     \hspace{2em}
     Akhil Mehta\textsuperscript{1}\thanks{\texttt{akhil@kay.ai}}
     \\[1em]
@@ -107,7 +110,7 @@
 \label{sec:results}
 \input{contents/5_results}
 
-\section{Limitations and Future Directions}
+\section{Limitations and Intended Use}
 \label{sec:limitations}
 \input{contents/6_limitations_and_future_directions}
 

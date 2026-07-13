@@ -4,10 +4,12 @@
   "complexity_regime": "policy_multi_hop",
   "format": "crosspage",
   "domain": "policy_review",
+  "hf_config": "policy_packets",
   "lob": "BOP",
   "target_record_type": "policy_packet_item",
   "target_record_types": [
     "bop_coverage_item",
+    "policy_clause_item",
     "policy_endorsement_item",
     "policy_form_item",
     "policy_location_item",
@@ -19,6 +21,10 @@
     "business_income_basis",
     "class_code",
     "classification",
+    "clause_scope",
+    "clause_text",
+    "clause_title",
+    "clause_type",
     "coinsurance",
     "coverage",
     "deductible",
@@ -39,12 +45,12 @@
     "schedule_source",
     "valuation"
   ],
-  "num_claims": 48,
-  "num_policy_items": 48,
-  "num_primary_policy_items": 12,
-  "num_target_records": 48,
-  "pages_estimate": 90,
-  "pdf_page_count": 90,
+  "num_claims": 360,
+  "num_policy_items": 360,
+  "num_primary_policy_items": 48,
+  "num_target_records": 360,
+  "pages_estimate": 158,
+  "pdf_page_count": 158,
   "document_count": 1,
   "evidence_pattern": "single_document_policy_packet_long_range_join",
   "minimum_gap_pages_between_primary_and_last_evidence": 74,
@@ -52,8 +58,20 @@
     "businessowners_policy",
     "location_scoped_coverage",
     "form_endorsement_links",
+    "material_clause_extraction",
     "long_range_evidence",
-    "heterogeneous_record_list"
+    "heterogeneous_record_list",
+    "ocr_condition",
+    "page_breaks",
+    "large_doc",
+    "multi_row",
+    "multi_column",
+    "duplicates",
+    "distractor_sections",
+    "natural_long_range_join",
+    "inherited_context",
+    "split_records",
+    "non_target_rows"
   ],
   "layout_templates": [
     "declarations",
@@ -61,38 +79,26 @@
     "coverage_or_limit_schedule",
     "rating_schedule",
     "forms_schedule",
+    "material_policy_provisions",
     "endorsement_detail",
     "premium_summary",
     "policy_conditions"
   ],
   "record_collections": {
-    "bop_coverage_item": 12,
-    "policy_endorsement_item": 8,
-    "policy_form_item": 12,
+    "bop_coverage_item": 48,
+    "policy_clause_item": 192,
+    "policy_endorsement_item": 32,
+    "policy_form_item": 36,
     "policy_location_item": 4,
-    "policy_premium_item": 12
+    "policy_premium_item": 48
   },
   "synthetic_text": {
     "source": "synthetic",
     "real_documents_used_for": "structural reference only",
     "copied_source_text": false,
     "text_generation": {
-      "generator": "gemini",
-      "model": "gemini-3.1-pro-preview",
-      "thinking_level": "high",
-      "prompt_files": [
-        "policy_writer_system.md",
-        "policy_page_bank.md",
-        "bop_examples.md"
-      ],
-      "page_kinds": {
-        "policy_form": 5,
-        "coverage_form": 12,
-        "notice": 2,
-        "amendatory": 2,
-        "billing": 2,
-        "endorsement": 4
-      }
+      "generator": "template",
+      "model": null
     }
   },
   "has_duplicates": false,
@@ -103,7 +109,8 @@
     "location_number/building_number/class_code -> classification/rating schedule",
     "form_number/edition_date/form_title -> forms and endorsements schedule",
     "location_number/building_number/coverage/form_number -> endorsement detail pages",
-    "location_number/building_number/coverage -> premium summary"
+    "location_number/building_number/coverage -> premium summary",
+    "form_number/coverage/location/building -> material clause pages"
   ],
   "evidence_map": [
     {
@@ -161,6 +168,17 @@
       ]
     },
     {
+      "section": "material_policy_provisions",
+      "approx_page_after_cover": 49,
+      "join_key": "form_number/coverage/location_number/building_number",
+      "fields": [
+        "clause_title",
+        "clause_type",
+        "clause_scope",
+        "clause_text"
+      ]
+    },
+    {
       "section": "premium_summary",
       "approx_page_after_cover": 82,
       "join_key": "location_number/building_number/coverage",
@@ -173,16 +191,24 @@
     "ground_truth": "ground_truth/multihop_bop_012_001.json",
     "pdf": "pdfs/multihop_bop_012_001.pdf",
     "html": "html/multihop_bop_012_001.html",
-    "canonical_md": "transcripts/canonical/multihop_bop_012_001.md",
     "ocr_md": "transcripts/ocr_gemini/multihop_bop_012_001.md",
-    "json_size_bytes": 24285,
-    "pdf_size_bytes": 485523,
-    "html_size_bytes": 230234,
-    "canonical_size_bytes": 9,
-    "ocr_size_bytes": 227771
+    "json_size_bytes": 239867,
+    "pdf_size_bytes": 820073,
+    "html_size_bytes": 582894,
+    "ocr_size_bytes": 402001,
+    "metadata": "metadata/multihop_bop_012_001.json"
   },
   "transcripts_available": [
-    "canonical",
     "ocr"
-  ]
+  ],
+  "template": "policy_multihop_bop",
+  "pdf_size_bytes": 820073,
+  "html_size_bytes": 582894,
+  "layout_revision": {
+    "date": "2026-06-28T09:38:53.785980+00:00",
+    "purpose": "reduce deterministic parser friendliness with production-like layout variation",
+    "ocr_status": "regenerated_from_current_pdf",
+    "ocr_regenerated_at": "2026-06-28T21:44:24.950682+00:00"
+  },
+  "ocr_md_size_bytes": 402001
 }

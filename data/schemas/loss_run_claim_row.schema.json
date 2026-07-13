@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "LossRunClaimRow",
+  "description": "External loss-run table row used in the core operations config. Each row is a visible claim schedule row rather than the nested multi-hop incident schema.",
+  "type": "object",
+  "additionalProperties": true,
+  "properties": {
+    "policy_number": {"type": "string"},
+    "effective_date": {"type": "string"},
+    "claim_reported": {"type": "string"},
+    "claim_number": {"type": "string"},
+    "claimant": {"type": "string"},
+    "date_reported": {"type": "string"},
+    "date_of_loss": {"type": "string"},
+    "claim_status": {"type": "string"},
+    "date_closed": {"type": "string"},
+    "adjuster": {"type": "string"},
+    "claim_reserves": {"type": "number"},
+    "claim_paid": {"type": "number"},
+    "claim_recovered": {"type": "number"},
+    "description": {"type": "string"},
+    "driver": {"type": "string"}
+  },
+  "required": [
+    "policy_number",
+    "effective_date",
+    "claim_reported",
+    "claim_number",
+    "claimant",
+    "date_reported",
+    "date_of_loss",
+    "claim_status",
+    "date_closed",
+    "adjuster",
+    "claim_reserves",
+    "claim_paid",
+    "claim_recovered",
+    "description",
+    "driver"
+  ]
+}

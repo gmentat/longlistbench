@@ -36,6 +36,10 @@ _GENERIC_SCORE_EXCLUDED_FIELDS = {
     _GENERIC_RECORD_TYPE_FIELD,
     "record_id",
     "applies_to_record_id",
+    "lob",
+    "policy_number",
+    "policy_period",
+    "named_insured",
 }
 _GENERIC_SIGNATURE_FIELDS = [
     "item_id",
@@ -52,6 +56,85 @@ _GENERIC_SIGNATURE_FIELDS = [
     "state",
     "premises_address",
 ]
+_MAX_MATCH_PAIR_FANOUT = 250
+_MAX_MATCH_CANDIDATES = 5_000_000
+_REGION_CODES = {
+    "alabama": "al",
+    "alaska": "ak",
+    "alberta": "ab",
+    "arizona": "az",
+    "arkansas": "ar",
+    "british columbia": "bc",
+    "california": "ca",
+    "colorado": "co",
+    "connecticut": "ct",
+    "delaware": "de",
+    "district of columbia": "dc",
+    "florida": "fl",
+    "georgia": "ga",
+    "hawaii": "hi",
+    "idaho": "id",
+    "illinois": "il",
+    "indiana": "in",
+    "iowa": "ia",
+    "kansas": "ks",
+    "kentucky": "ky",
+    "louisiana": "la",
+    "maine": "me",
+    "manitoba": "mb",
+    "maryland": "md",
+    "massachusetts": "ma",
+    "michigan": "mi",
+    "minnesota": "mn",
+    "mississippi": "ms",
+    "missouri": "mo",
+    "montana": "mt",
+    "nebraska": "ne",
+    "nevada": "nv",
+    "new brunswick": "nb",
+    "new hampshire": "nh",
+    "new jersey": "nj",
+    "new mexico": "nm",
+    "new york": "ny",
+    "newfoundland and labrador": "nl",
+    "newfoundland": "nl",
+    "north carolina": "nc",
+    "north dakota": "nd",
+    "northwest territories": "nt",
+    "nova scotia": "ns",
+    "nunavut": "nu",
+    "ohio": "oh",
+    "oklahoma": "ok",
+    "ontario": "on",
+    "oregon": "or",
+    "pennsylvania": "pa",
+    "prince edward island": "pe",
+    "puerto rico": "pr",
+    "quebec": "qc",
+    "rhode island": "ri",
+    "saskatchewan": "sk",
+    "south carolina": "sc",
+    "south dakota": "sd",
+    "tennessee": "tn",
+    "texas": "tx",
+    "utah": "ut",
+    "vermont": "vt",
+    "virginia": "va",
+    "washington": "wa",
+    "washington dc": "dc",
+    "west virginia": "wv",
+    "wisconsin": "wi",
+    "wyoming": "wy",
+    "yukon": "yt",
+}
+_LOB_CODES = {
+    "businessowners": "bop",
+    "businessowners policy": "bop",
+    "business owners policy": "bop",
+    "commercial general liability": "cgl",
+    "workers compensation": "wc",
+    "workers' compensation": "wc",
+}
 
 
 def _normalize_date(value: Any) -> str:
@@ -80,9 +163,9 @@ def normalize_incident_number(incident_num: str) -> str:
         return ""
     incident_num = str(incident_num).strip()
     for prefix in ["Incident #", "Incident#", "Incident ", "#", "INC"]:
-        if incident_num.startswith(prefix):
+        if incident_num.casefold().startswith(prefix.casefold()):
             incident_num = incident_num[len(prefix):]
-    return incident_num.strip()
+    return incident_num.strip().casefold()
 
 
 def _norm_str(v: Any, *, optional: bool) -> Any:
@@ -91,7 +174,19 @@ def _norm_str(v: Any, *, optional: bool) -> Any:
     s = str(v).strip()
     if optional and s == "":
         return None
-    return s
+    return s.casefold()
+
+
+def _norm_description(v: Any) -> str:
+    return str(_norm_str(v, optional=False)).rstrip(".").strip()
+
+
+def _norm_unit_number(v: Any) -> Any:
+    s = _norm_str(v, optional=True)
+    if s is None:
+        return None
+    match = re.search(r"(\d{5,})$", s)
+    return match.group(1) if match else s
 
 
 def _norm_float(v: Any) -> float:
@@ -103,6 +198,16 @@ def _norm_float(v: Any) -> float:
     if f == -0.0:
         f = 0.0
     return f
+
+
+def _normalize_region(value: Any) -> Any:
+    normalized = _norm_str(value, optional=True)
+    if normalized is None:
+        return None
+    parenthetical = re.search(r"\(([a-z]{2})\)\s*$", normalized)
+    if parenthetical:
+        return parenthetical.group(1)
+    return _REGION_CODES.get(normalized, normalized)
 
 
 def _canonicalize_incident(item: dict) -> dict:
@@ -119,10 +224,16 @@ def _canonicalize_incident(item: dict) -> dict:
         elif k == "claimants":
             if not isinstance(v, list):
                 v = []
-            cleaned = [str(x).strip() for x in v if str(x).strip()]
+            cleaned = [str(x).strip().casefold() for x in v if str(x).strip()]
             obj[k] = sorted(cleaned)
         elif k in _DATE_FIELDS:
             obj[k] = _normalize_date(v)
+        elif k == "description":
+            obj[k] = _norm_description(v)
+        elif k == "unit_number":
+            obj[k] = _norm_unit_number(v)
+        elif k in {"policy_state", "loss_state"}:
+            obj[k] = _normalize_region(v)
         elif isinstance(v, str) or v is None:
             obj[k] = _norm_str(v, optional=(k in _OPTIONAL_STR_FIELDS))
         else:
@@ -136,6 +247,8 @@ def _flatten_pairs(incident_id: str, obj: dict) -> list[str]:
     for k, v in obj.items():
         if isinstance(v, dict):
             for kk, vv in v.items():
+                if k in _BREAKDOWN_KEYS and kk in _BREAKDOWN_FIELDS and _norm_float(vv) == 0.0:
+                    continue
                 pairs.append(
                     json.dumps(
                         [incident_id, f"{k}.{kk}", vv],
@@ -154,7 +267,25 @@ def _flatten_pairs(incident_id: str, obj: dict) -> list[str]:
     return pairs
 
 
+def _exact_record_metrics(exact_matches: int, gold_count: int, predicted_count: int) -> dict[str, Any]:
+    """Summarize strict normalized-record recovery independently of field overlap."""
+    recall = exact_matches / gold_count if gold_count > 0 else float(predicted_count == 0)
+    precision = exact_matches / predicted_count if predicted_count > 0 else float(gold_count == 0)
+    f1 = 2 * precision * recall / (precision + recall) if (precision + recall) > 0 else 0.0
+    return {
+        "exact_record_recall": recall,
+        "exact_record_precision": precision,
+        "exact_record_f1": f1,
+        "complete_document": exact_matches == gold_count == predicted_count,
+    }
+
+
 def evaluate_extraction(predicted: list[dict], ground_truth: list[dict]) -> dict[str, Any]:
+    """Evaluate claim incident extraction keyed by unique normalized incident numbers.
+
+    Missing incident numbers are scored as side-specific unmatched rows rather than
+    collapsed into a shared empty bucket.
+    """
     gt_count = len(ground_truth)
     pred_count = len(predicted)
 
@@ -163,20 +294,24 @@ def evaluate_extraction(predicted: list[dict], ground_truth: list[dict]) -> dict
     gt_pairs: list[str] = []
     pred_pairs: list[str] = []
 
-    for item in ground_truth:
+    for idx, item in enumerate(ground_truth):
         obj = _canonicalize_incident(item)
         inc = normalize_incident_number(obj.get("incident_number", ""))
+        if not inc:
+            inc = f"<missing_ground_truth_incident_number:{idx}>"
         gt_by_id.setdefault(inc, []).append(json.dumps(obj, sort_keys=True, separators=(",", ":")))
         gt_pairs.extend(_flatten_pairs(inc, obj))
 
-    for item in predicted:
+    for idx, item in enumerate(predicted):
         obj = _canonicalize_incident(item)
         inc = normalize_incident_number(obj.get("incident_number", ""))
+        if not inc:
+            inc = f"<missing_predicted_incident_number:{idx}>"
         pred_by_id.setdefault(inc, []).append(json.dumps(obj, sort_keys=True, separators=(",", ":")))
         pred_pairs.extend(_flatten_pairs(inc, obj))
 
-    gt_ids = set(gt_by_id.keys()) - {""}
-    pred_ids = set(pred_by_id.keys()) - {""}
+    gt_ids = set(gt_by_id.keys())
+    pred_ids = set(pred_by_id.keys())
     missing_ids = sorted(gt_ids - pred_ids)
     extra_ids = sorted(pred_ids - gt_ids)
 
@@ -209,16 +344,27 @@ def evaluate_extraction(predicted: list[dict], ground_truth: list[dict]) -> dict
         "missing_ids": missing_ids,
         "extra_ids": extra_ids,
         "exact_record_matches": exact_record_matches,
+        **_exact_record_metrics(exact_record_matches, gt_count, pred_count),
         "total_gold_field_pairs": total_gt_pairs,
         "total_pred_field_pairs": total_pred_pairs,
     }
 
 
 def _normalize_decimal_string(value: str) -> str:
+    value = value.strip()
+    negative = False
+    if re.fullmatch(r"\(\s*\$?-?[\d,]+(?:\.\d+)?\s*\)", value):
+        negative = True
+        value = value.strip()[1:-1].strip()
+    if value.startswith("-"):
+        negative = True
+        value = value[1:].strip()
     try:
         d = Decimal(value.replace(",", "").replace("$", "").strip())
     except InvalidOperation:
         return value
+    if negative:
+        d = -abs(d)
     normalized = format(d.normalize(), "f")
     if "." in normalized:
         normalized = normalized.rstrip("0").rstrip(".")
@@ -229,10 +375,12 @@ def _normalize_generic_scalar(value: Any) -> Any:
     if value is None or isinstance(value, bool):
         return value
     if isinstance(value, int):
-        return value
+        return _normalize_decimal_string(str(value))
     if isinstance(value, float):
         f = round(value, 6)
-        return 0.0 if f == -0.0 else f
+        if f == -0.0:
+            f = 0.0
+        return _normalize_decimal_string(str(f))
 
     s = " ".join(str(value).strip().split())
     if not s:
@@ -252,10 +400,12 @@ def _normalize_generic_scalar(value: Any) -> Any:
             continue
 
     if "%" in s:
-        return re.sub(r"\s+", "", s)
-    if "$" in s or "," in s:
+        return re.sub(r"\s+", "", s).casefold()
+    decimal_like = bool(re.fullmatch(r"-?\$?\d[\d,]*(?:\.\d+)?", s))
+    parenthesized_decimal = bool(re.fullmatch(r"\(\s*\$?-?\d[\d,]*(?:\.\d+)?\s*\)", s))
+    if decimal_like or parenthesized_decimal:
         return _normalize_decimal_string(s)
-    return s
+    return s.casefold()
 
 
 def _canonicalize_generic_value(value: Any) -> Any:
@@ -271,14 +421,43 @@ def _canonicalize_generic_value(value: Any) -> Any:
 
 
 def _canonicalize_record(item: dict) -> dict:
-    return {
-        str(k): _canonicalize_generic_value(v)
-        for k, v in sorted(item.items(), key=lambda item: str(item[0]))
-    }
+    canonical: dict[str, Any] = {}
+    for k, v in sorted(item.items(), key=lambda item: str(item[0])):
+        value = _normalize_generic_field(str(k), _canonicalize_generic_value(v))
+        if value is None:
+            continue
+        canonical[str(k)] = value
+    return canonical
+
+
+def _normalize_generic_field(field: str, value: Any) -> Any:
+    if not isinstance(value, str):
+        return value
+    if field in {"jurisdiction", "state", "policy_state", "loss_state"}:
+        return _normalize_region(value)
+    if field == "fuel_type":
+        parenthetical = re.search(r"\(([a-z0-9-]+)\)\s*$", value)
+        if parenthetical:
+            return parenthetical.group(1)
+        if value == "diesel":
+            return "di"
+    if field == "lob":
+        return _LOB_CODES.get(value, value)
+    if field == "clause_scope":
+        value = re.sub(r"^applies\s+within\s+", "", value).strip()
+        return value.split(";", 1)[0].strip()
+    return value
 
 
 def uses_record_evaluator(ground_truth: list[dict]) -> bool:
-    return any(isinstance(item, dict) and _GENERIC_RECORD_TYPE_FIELD in item for item in ground_truth)
+    if any(isinstance(item, dict) and _GENERIC_RECORD_TYPE_FIELD in item for item in ground_truth):
+        return True
+    if not ground_truth:
+        return False
+    dict_rows = [item for item in ground_truth if isinstance(item, dict)]
+    if not dict_rows:
+        return False
+    return not any("incident_number" in item for item in dict_rows)
 
 
 def normalize_record_predictions(raw: object) -> list[dict]:
@@ -296,6 +475,8 @@ def normalize_record_predictions(raw: object) -> list[dict]:
 
 
 def _flatten_record_value(field: str, value: Any, out: list[str]) -> None:
+    if value is None:
+        return
     if isinstance(value, dict):
         for k, v in sorted(value.items(), key=lambda item: str(item[0])):
             _flatten_record_value(f"{field}.{k}", v, out)
@@ -340,7 +521,6 @@ def _record_signature(record: dict) -> str:
 
 
 def _greedy_match_records(gt_records: list[dict], pred_records: list[dict]) -> list[tuple[int, int]]:
-    candidates: list[tuple[int, int, int, int]] = []
     gt_match_pairs = [
         Counter(_record_field_pairs(record, exclude_fields=_GENERIC_MATCH_EXCLUDED_FIELDS))
         for record in gt_records
@@ -358,13 +538,32 @@ def _greedy_match_records(gt_records: list[dict], pred_records: list[dict]) -> l
         for record in pred_records
     ]
 
+    pred_pair_index: dict[str, list[tuple[int, int]]] = {}
+    for pred_idx, pred_pairs in enumerate(pred_match_pairs):
+        for pair, count in pred_pairs.items():
+            pred_pair_index.setdefault(pair, []).append((pred_idx, count))
+
+    candidate_match_scores: dict[tuple[int, int], int] = {}
     for gt_idx, gt_pairs in enumerate(gt_match_pairs):
-        for pred_idx, pred_pairs in enumerate(pred_match_pairs):
-            match_score = sum((gt_pairs & pred_pairs).values())
-            if match_score <= 0:
+        for pair, gt_count in gt_pairs.items():
+            pred_entries = pred_pair_index.get(pair)
+            if not pred_entries:
                 continue
-            score_pairs = sum((gt_score_pairs[gt_idx] & pred_score_pairs[pred_idx]).values())
-            candidates.append((match_score, score_pairs, gt_idx, pred_idx))
+            if len(pred_entries) > _MAX_MATCH_PAIR_FANOUT:
+                continue
+            for pred_idx, pred_count in pred_entries:
+                candidate_match_scores[(gt_idx, pred_idx)] = (
+                    candidate_match_scores.get((gt_idx, pred_idx), 0) + min(gt_count, pred_count)
+                )
+                if len(candidate_match_scores) > _MAX_MATCH_CANDIDATES:
+                    raise ValueError(
+                        "Too many candidate record matches; use a narrower prediction set or add discriminating fields"
+                    )
+
+    candidates: list[tuple[int, int, int, int]] = []
+    for (gt_idx, pred_idx), match_score in candidate_match_scores.items():
+        score_pairs = sum((gt_score_pairs[gt_idx] & pred_score_pairs[pred_idx]).values())
+        candidates.append((match_score, score_pairs, gt_idx, pred_idx))
 
     candidates.sort(reverse=True)
     matched_gt: set[int] = set()
@@ -393,57 +592,84 @@ def evaluate_record_extraction(predicted: list[dict], ground_truth: list[dict]) 
         for record in pred_records
     ]
 
-    gt_by_type: dict[str, list[int]] = {}
-    pred_by_type: dict[str, list[int]] = {}
-    for idx, record in enumerate(gt_records):
-        gt_by_type.setdefault(_record_type(record), []).append(idx)
-    for idx, record in enumerate(pred_records):
-        pred_by_type.setdefault(_record_type(record), []).append(idx)
-
     found_pairs = 0
     matched_gt: set[int] = set()
     matched_pred: set[int] = set()
+    matched_pairs = _greedy_match_records(gt_records, pred_records)
+
     by_record_type: dict[str, dict[str, Any]] = {}
+    for idx, record in enumerate(gt_records):
+        record_type = _record_type(record)
+        stats = by_record_type.setdefault(
+            record_type,
+            {
+                "ground_truth_count": 0,
+                "predicted_count": 0,
+                "matched_records": 0,
+                "found": 0,
+                "total_gold_field_pairs": 0,
+                "total_pred_field_pairs": 0,
+            },
+        )
+        stats["ground_truth_count"] += 1
+        stats["total_gold_field_pairs"] += sum(gt_pairs_by_record[idx].values())
 
-    for record_type in sorted(set(gt_by_type) | set(pred_by_type)):
-        gt_indices = gt_by_type.get(record_type, [])
-        pred_indices = pred_by_type.get(record_type, [])
-        local_gt = [gt_records[i] for i in gt_indices]
-        local_pred = [pred_records[i] for i in pred_indices]
-        local_matches = _greedy_match_records(local_gt, local_pred)
+    for gt_idx, pred_idx in matched_pairs:
+        matched_gt.add(gt_idx)
+        matched_pred.add(pred_idx)
+        overlap = gt_pairs_by_record[gt_idx] & pred_pairs_by_record[pred_idx]
+        pair_count = sum(overlap.values())
+        found_pairs += pair_count
 
-        type_found = 0
-        for local_gt_idx, local_pred_idx in local_matches:
-            gt_idx = gt_indices[local_gt_idx]
-            pred_idx = pred_indices[local_pred_idx]
-            matched_gt.add(gt_idx)
-            matched_pred.add(pred_idx)
-            overlap = gt_pairs_by_record[gt_idx] & pred_pairs_by_record[pred_idx]
-            pair_count = sum(overlap.values())
-            found_pairs += pair_count
-            type_found += pair_count
+        record_type = _record_type(gt_records[gt_idx])
+        stats = by_record_type.setdefault(
+            record_type,
+            {
+                "ground_truth_count": 0,
+                "predicted_count": 0,
+                "matched_records": 0,
+                "found": 0,
+                "total_gold_field_pairs": 0,
+                "total_pred_field_pairs": 0,
+            },
+        )
+        stats["predicted_count"] += 1
+        stats["matched_records"] += 1
+        stats["found"] += pair_count
+        stats["total_pred_field_pairs"] += sum(pred_pairs_by_record[pred_idx].values())
 
-        type_gold_pairs = sum(sum(gt_pairs_by_record[i].values()) for i in gt_indices)
-        type_pred_pairs = sum(sum(pred_pairs_by_record[i].values()) for i in pred_indices)
-        type_recall = type_found / type_gold_pairs if type_gold_pairs > 0 else 0.0
-        type_precision = type_found / type_pred_pairs if type_pred_pairs > 0 else 0.0
-        by_record_type[record_type] = {
-            "ground_truth_count": len(gt_indices),
-            "predicted_count": len(pred_indices),
-            "matched_records": len(local_matches),
-            "missing": len(gt_indices) - len(local_matches),
-            "extra": len(pred_indices) - len(local_matches),
-            "found": type_found,
-            "total_gold_field_pairs": type_gold_pairs,
-            "total_pred_field_pairs": type_pred_pairs,
-            "recall": type_recall,
-            "precision": type_precision,
-            "f1": (
-                2 * type_precision * type_recall / (type_precision + type_recall)
-                if (type_precision + type_recall) > 0
-                else 0.0
-            ),
-        }
+    for idx, record in enumerate(pred_records):
+        if idx in matched_pred:
+            continue
+        record_type = _record_type(record)
+        stats = by_record_type.setdefault(
+            record_type,
+            {
+                "ground_truth_count": 0,
+                "predicted_count": 0,
+                "matched_records": 0,
+                "found": 0,
+                "total_gold_field_pairs": 0,
+                "total_pred_field_pairs": 0,
+            },
+        )
+        stats["predicted_count"] += 1
+        stats["total_pred_field_pairs"] += sum(pred_pairs_by_record[idx].values())
+
+    for stats in by_record_type.values():
+        stats["missing"] = stats["ground_truth_count"] - stats["matched_records"]
+        stats["extra"] = stats["predicted_count"] - stats["matched_records"]
+        type_gold_pairs = stats["total_gold_field_pairs"]
+        type_pred_pairs = stats["total_pred_field_pairs"]
+        type_recall = stats["found"] / type_gold_pairs if type_gold_pairs > 0 else 0.0
+        type_precision = stats["found"] / type_pred_pairs if type_pred_pairs > 0 else 0.0
+        stats["recall"] = type_recall
+        stats["precision"] = type_precision
+        stats["f1"] = (
+            2 * type_precision * type_recall / (type_precision + type_recall)
+            if (type_precision + type_recall) > 0
+            else 0.0
+        )
 
     gt_pairs_total = sum(sum(pairs.values()) for pairs in gt_pairs_by_record)
     pred_pairs_total = sum(sum(pairs.values()) for pairs in pred_pairs_by_record)
@@ -473,6 +699,7 @@ def evaluate_record_extraction(predicted: list[dict], ground_truth: list[dict]) 
         "missing_ids": missing_ids,
         "extra_ids": extra_ids,
         "exact_record_matches": exact_record_matches,
+        **_exact_record_metrics(exact_record_matches, len(gt_records), len(pred_records)),
         "total_gold_field_pairs": gt_pairs_total,
         "total_pred_field_pairs": pred_pairs_total,
         "by_record_type": by_record_type,

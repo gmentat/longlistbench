@@ -1,0 +1,47 @@
+{
+  "id": "ifta_mileage_by_vehicle_008",
+  "template": "ifta_mileage_by_vehicle",
+  "target_record_type": "vehicle_state_mileage_row",
+  "num_target_records": 2571,
+  "source_batch": "batches-02-05-review-ready",
+  "artifacts": {
+    "pdf": "pdfs/ifta_mileage_by_vehicle_008.pdf",
+    "html": "html/ifta_mileage_by_vehicle_008.html",
+    "ground_truth": "ground_truth/ifta_mileage_by_vehicle_008.json"
+  },
+  "provenance": "Synthetic generated document. Private production references were used only for visual layout review; no production PDFs, names, account numbers, or raw customer data are included in this repository.",
+  "files": {
+    "ground_truth": "ground_truth/ifta_mileage_by_vehicle_008.json",
+    "pdf": "pdfs/ifta_mileage_by_vehicle_008.pdf",
+    "html": "html/ifta_mileage_by_vehicle_008.html",
+    "metadata": "metadata/ifta_mileage_by_vehicle_008.json",
+    "json_size_bytes": 370369,
+    "pdf_size_bytes": 1133809,
+    "html_size_bytes": 1125300,
+    "ocr_md": "transcripts/ocr_gemini/ifta_mileage_by_vehicle_008.md",
+    "ocr_size_bytes": 438583
+  },
+  "transcripts_available": [
+    "ocr"
+  ],
+  "complexity_regime": "ifta_mileage_by_vehicle",
+  "difficulty": "ifta_mileage_by_vehicle",
+  "format": "production_like_pdf",
+  "domain": "commercial_insurance_operations",
+  "problems": [
+    "high_density_long_list",
+    "production_like_layout",
+    "ocr_condition",
+    "page_breaks",
+    "large_doc",
+    "multiple_tables",
+    "multi_row"
+  ],
+  "pages_estimate": 218,
+  "pdf_page_count": 218,
+  "dataset_version": "2.0.0",
+  "hf_config": "core_operations",
+  "document_count": 1,
+  "evidence_pattern": "single_document",
+  "ocr_md_size_bytes": 438583
+}

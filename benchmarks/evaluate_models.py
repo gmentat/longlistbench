@@ -3,6 +3,7 @@
 
 import argparse
 import contextlib
+import hashlib
 import inspect
 import json
 import os
@@ -14,7 +15,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed, TimeoutError as
 from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Callable
+from typing import Callable, Iterable
 
 _SCRIPT_DIR = Path(__file__).parent
 if str(_SCRIPT_DIR) not in sys.path:
@@ -53,6 +54,11 @@ except ImportError:
     )
 
 try:
+    from .evaluation_roles import evaluation_role
+except ImportError:
+    from evaluation_roles import evaluation_role
+
+try:
     from dotenv import load_dotenv
 except ModuleNotFoundError:
     load_dotenv = None
@@ -89,6 +95,14 @@ class ModelConfig:
     model_id: str
     setup_fn: Callable
     extract_fn: Callable
+
+
+def _setup_offline_only_model():
+    raise RuntimeError("This model key is for offline scoring of externally generated predictions")
+
+
+def _extract_offline_only_model(*args, **kwargs):
+    raise RuntimeError("This model key is for offline scoring of externally generated predictions")
 
 
 # ============================================================================
@@ -211,6 +225,34 @@ MODELS = {
         setup_fn=setup_openai_agent,
         extract_fn=extract_with_openai_agent,
     ),
+    'codex_gpt55': ModelConfig(
+        name='Codex GPT-5.5 (CLI Agentic, xhigh)',
+        provider='OpenAI/Codex',
+        model_id='gpt-5.5',
+        setup_fn=_setup_offline_only_model,
+        extract_fn=_extract_offline_only_model,
+    ),
+    'codex_gpt56_sol': ModelConfig(
+        name='Codex GPT-5.6-Sol (CLI Agentic, xhigh)',
+        provider='OpenAI/Codex',
+        model_id='gpt-5.6-sol',
+        setup_fn=_setup_offline_only_model,
+        extract_fn=_extract_offline_only_model,
+    ),
+    'claude_opus48': ModelConfig(
+        name='Claude Opus 4.8 (Claude Code CLI Agentic, xhigh)',
+        provider='Anthropic/Claude Code',
+        model_id='claude-opus-4-8',
+        setup_fn=_setup_offline_only_model,
+        extract_fn=_extract_offline_only_model,
+    ),
+    'claude_fable5': ModelConfig(
+        name='Claude Fable 5 (Claude Code CLI Agentic, xhigh)',
+        provider='Anthropic/Claude Code',
+        model_id='claude-fable-5',
+        setup_fn=_setup_offline_only_model,
+        extract_fn=_extract_offline_only_model,
+    ),
 }
 
 
@@ -229,7 +271,7 @@ class EvaluationResult:
     tier: str
     format: str
     metrics: dict
-    extraction_time: float
+    extraction_time: float | None
     error: str = None
     transcript: str = "ocr"
     tokens: dict = None
@@ -237,10 +279,10 @@ class EvaluationResult:
 
 
 _QUICK_SAMPLES = [
-    "easy_10_001_detailed",
-    "medium_25_001_detailed",
-    "hard_50_001_detailed",
-    "extreme_100_001_detailed",
+    "loss_run_external_002",
+    "ifta_mileage_by_vehicle_008",
+    "multihop_025_001_crosspage",
+    "mixed_cgl_040_001",
 ]
 
 
@@ -314,6 +356,9 @@ def _load_saved_result_metadata(
                 report_paths.append(previous_report_path)
         except Exception:
             report_paths.append(previous_report_path)
+    per_sample_dir = output_dir / "per_sample_reports"
+    if per_sample_dir.exists():
+        report_paths.extend(sorted(per_sample_dir.glob("*.json")))
 
     for report_path in report_paths:
         if report_path.exists():
@@ -336,6 +381,7 @@ def _load_saved_result_metadata(
                 f"HEAD:{rel_report_path.as_posix()}",
             ],
             text=True,
+            stderr=subprocess.DEVNULL,
         )
         head_report = json.loads(head_json)
         for entry in head_report.get("detailed_results", []):
@@ -391,13 +437,24 @@ def _discover_evaluation_inputs(
 
 def get_sample_info(sample_name: str) -> tuple[str, str]:
     """Extract tier and format from sample name."""
+    if sample_name.startswith(
+        (
+            "driver_mvr_packet_",
+            "driver_schedule_sparse_",
+            "ifta_",
+            "loss_run_external_",
+            "vehicle_schedule_sparse_",
+        )
+    ):
+        return "core_operations", "production_like_pdf"
+    if sample_name.startswith(("multihop_bop_", "multihop_wc_", "mixed_cgl_")):
+        return "policy_packets", "crosspage"
+    if sample_name.startswith(("multihop_", "mixed_")):
+        return "claim_multihop", "crosspage"
+
     parts = sample_name.split('_')
-    if sample_name.startswith("multihop_"):
-        return "multihop", "crosspage"
-    if sample_name.startswith("mixed_"):
-        return "mixed", "crosspage"
-    tier = parts[0]  # easy, medium, hard, extreme
-    fmt = parts[-1]  # detailed, table
+    tier = parts[0]
+    fmt = parts[-1]
     return tier, fmt
 
 
@@ -828,7 +885,7 @@ def run_evaluation_from_saved_predictions(
                     tier=entry.tier,
                     format=entry.format,
                     metrics=metrics,
-                    extraction_time=metadata.get("extraction_time", 0.0),
+                    extraction_time=metadata.get("extraction_time"),
                     error=error,
                     transcript=entry.transcript,
                     tokens=metadata.get("tokens"),
@@ -839,9 +896,149 @@ def run_evaluation_from_saved_predictions(
     return results
 
 
-def generate_report(results: list[EvaluationResult], output_path: Path):
+def _new_group_stats() -> dict:
+    return {
+        'count': 0,
+        'rows': 0,
+        'pred_rows': 0,
+        'exact_record_matches': 0,
+        'complete_documents': 0,
+        'f1_sum': 0,
+        'recall_sum': 0,
+        'found_sum': 0,
+        'gold_pairs_sum': 0,
+        'pred_pairs_sum': 0,
+    }
+
+
+def _add_result_to_group(group: dict, r: EvaluationResult) -> None:
+    group['count'] += 1
+    group['rows'] += r.metrics.get('ground_truth_count', 0)
+    group['pred_rows'] += r.metrics.get('predicted_count', 0)
+    group['exact_record_matches'] += r.metrics.get('exact_record_matches', 0)
+    group['complete_documents'] += int(bool(r.metrics.get('complete_document', False)))
+    group['f1_sum'] += r.metrics['f1']
+    group['recall_sum'] += r.metrics['recall']
+    group['found_sum'] += r.metrics.get('found', 0)
+    group['gold_pairs_sum'] += r.metrics.get('total_gold_field_pairs', 0)
+    group['pred_pairs_sum'] += r.metrics.get('total_pred_field_pairs', 0)
+
+
+def _finalize_group_stats(groups: dict[str, dict]) -> None:
+    for group in groups.values():
+        c = group['count']
+        group['avg_f1'] = group['f1_sum'] / c if c > 0 else 0
+        group['avg_recall'] = group['recall_sum'] / c if c > 0 else 0
+        gold_pairs = group['gold_pairs_sum']
+        pred_pairs = group['pred_pairs_sum']
+        found_sum = group['found_sum']
+        exact_matches = group['exact_record_matches']
+        pred_rows = group['pred_rows']
+        group['exact_record_recall'] = exact_matches / group['rows'] if group['rows'] > 0 else 0
+        group['exact_record_precision'] = exact_matches / pred_rows if pred_rows > 0 else 0
+        group['exact_record_f1'] = (
+            2 * group['exact_record_precision'] * group['exact_record_recall']
+            / (group['exact_record_precision'] + group['exact_record_recall'])
+            if (group['exact_record_precision'] + group['exact_record_recall']) > 0 else 0
+        )
+        group['complete_document_rate'] = group['complete_documents'] / c if c > 0 else 0
+        group['weighted_recall'] = found_sum / gold_pairs if gold_pairs > 0 else 0
+        group['weighted_precision'] = found_sum / pred_pairs if pred_pairs > 0 else 0
+        group['weighted_f1'] = (
+            2 * group['weighted_precision'] * group['weighted_recall'] / (group['weighted_precision'] + group['weighted_recall'])
+            if (group['weighted_precision'] + group['weighted_recall']) > 0 else 0
+        )
+
+
+def _load_manifest_metadata_by_sample() -> dict[str, dict]:
+    manifest_path = default_dataset_dir() / "manifest.json"
+    try:
+        manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    except Exception:
+        return {}
+    out: dict[str, dict] = {}
+    for inst in manifest.get("instances", []):
+        sample_id = inst.get("id")
+        if sample_id:
+            out[str(sample_id)] = inst
+    return out
+
+
+def _current_git_sha() -> str | None:
+    try:
+        return subprocess.check_output(
+            ["git", "rev-parse", "HEAD"],
+            cwd=Path(__file__).resolve().parents[1],
+            text=True,
+            stderr=subprocess.DEVNULL,
+        ).strip()
+    except Exception:
+        return None
+
+
+def _git_dirty(ignore_paths: Iterable[Path] = ()) -> bool | None:
+    repo_root = Path(__file__).resolve().parents[1]
+    ignored: set[str] = set()
+    for path in ignore_paths:
+        try:
+            ignored.add(path.resolve().relative_to(repo_root).as_posix())
+        except ValueError:
+            continue
+
+    try:
+        output = subprocess.check_output(
+            ["git", "status", "--porcelain"],
+            cwd=repo_root,
+            text=True,
+            stderr=subprocess.DEVNULL,
+        )
+        for line in output.splitlines():
+            if not line:
+                continue
+            path = line[3:] if len(line) > 3 else ""
+            if " -> " in path:
+                path = path.split(" -> ", 1)[1]
+            if (
+                path.startswith("benchmarks/results/")
+                and Path(path).name in {"evaluation_report.json", "evaluation_report.md"}
+            ):
+                continue
+            if path not in ignored:
+                return True
+        return False
+    except Exception:
+        return None
+
+
+def _dataset_provenance(ignore_dirty_paths: Iterable[Path] = ()) -> dict:
+    repo_root = Path(__file__).resolve().parents[1]
+    manifest_path = default_dataset_dir() / "manifest.json"
+    try:
+        manifest_display_path = manifest_path.resolve().relative_to(repo_root).as_posix()
+    except ValueError:
+        manifest_display_path = manifest_path.name
+    provenance = {
+        "manifest_path": manifest_display_path,
+        "manifest_sha256": None,
+        "git_sha": _current_git_sha(),
+        "git_dirty": _git_dirty(ignore_dirty_paths),
+    }
+    try:
+        manifest_bytes = manifest_path.read_bytes()
+    except Exception:
+        return provenance
+    provenance["manifest_sha256"] = hashlib.sha256(manifest_bytes).hexdigest()
+    return provenance
+
+
+def generate_report(
+    results: list[EvaluationResult],
+    output_path: Path,
+    evaluation_mode: str = "live",
+):
     """Generate summary report in JSON and Markdown formats."""
 
+    metadata_by_sample = _load_manifest_metadata_by_sample()
     model_order: list[str] = []
     for r in results:
         if r.model not in model_order:
@@ -860,14 +1057,20 @@ def generate_report(results: list[EvaluationResult], output_path: Path):
                 'total_gold_field_pairs': 0,
                 'total_pred_field_pairs': 0,
                 'total_rows': 0,
+                'total_pred_rows': 0,
+                'total_exact_record_matches': 0,
+                'complete_documents': 0,
                 'errors': 0,
-                'total_cost_usd': 0.0,
-                'total_input_tokens': 0,
-                'total_output_tokens': 0,
-                'total_extraction_time': 0.0,
+                'total_cost_usd': None,
+                'total_input_tokens': None,
+                'total_output_tokens': None,
+                'total_extraction_time': None,
                 'by_tier': {},
                 'by_format': {},
                 'by_transcript': {},
+                'by_complexity_regime': {},
+                'by_evaluation_role': {},
+                'by_stressor': {},
             }
 
         stats = model_stats[r.model]
@@ -879,70 +1082,51 @@ def generate_report(results: list[EvaluationResult], output_path: Path):
         stats['total_gold_field_pairs'] += r.metrics.get('total_gold_field_pairs', 0)
         stats['total_pred_field_pairs'] += r.metrics.get('total_pred_field_pairs', 0)
         stats['total_rows'] += r.metrics.get('ground_truth_count', 0)
-        stats['total_cost_usd'] += r.cost_usd or 0.0
-        stats['total_extraction_time'] += r.extraction_time or 0.0
+        stats['total_pred_rows'] += r.metrics.get('predicted_count', 0)
+        stats['total_exact_record_matches'] += r.metrics.get('exact_record_matches', 0)
+        stats['complete_documents'] += int(bool(r.metrics.get('complete_document', False)))
+        if r.cost_usd is not None:
+            stats['total_cost_usd'] = (stats['total_cost_usd'] or 0.0) + r.cost_usd
+        if r.extraction_time is not None:
+            stats['total_extraction_time'] = (
+                stats['total_extraction_time'] or 0.0
+            ) + r.extraction_time
         if r.tokens:
-            stats['total_input_tokens'] += r.tokens.get('input_tokens', 0)
-            stats['total_output_tokens'] += r.tokens.get('output_tokens', 0)
+            stats['total_input_tokens'] = (
+                stats['total_input_tokens'] or 0
+            ) + r.tokens.get('input_tokens', 0)
+            stats['total_output_tokens'] = (
+                stats['total_output_tokens'] or 0
+            ) + r.tokens.get('output_tokens', 0)
         if r.error:
             stats['errors'] += 1
         
         # By tier
-        if r.tier not in stats['by_tier']:
-            stats['by_tier'][r.tier] = {
-                'count': 0,
-                'rows': 0,
-                'f1_sum': 0,
-                'recall_sum': 0,
-                'found_sum': 0,
-                'gold_pairs_sum': 0,
-                'pred_pairs_sum': 0,
-            }
-        stats['by_tier'][r.tier]['count'] += 1
-        stats['by_tier'][r.tier]['rows'] += r.metrics.get('ground_truth_count', 0)
-        stats['by_tier'][r.tier]['f1_sum'] += r.metrics['f1']
-        stats['by_tier'][r.tier]['recall_sum'] += r.metrics['recall']
-        stats['by_tier'][r.tier]['found_sum'] += r.metrics.get('found', 0)
-        stats['by_tier'][r.tier]['gold_pairs_sum'] += r.metrics.get('total_gold_field_pairs', 0)
-        stats['by_tier'][r.tier]['pred_pairs_sum'] += r.metrics.get('total_pred_field_pairs', 0)
+        _add_result_to_group(stats['by_tier'].setdefault(r.tier, _new_group_stats()), r)
         
         # By format
-        if r.format not in stats['by_format']:
-            stats['by_format'][r.format] = {
-                'count': 0,
-                'rows': 0,
-                'f1_sum': 0,
-                'recall_sum': 0,
-                'found_sum': 0,
-                'gold_pairs_sum': 0,
-                'pred_pairs_sum': 0,
-            }
-        stats['by_format'][r.format]['count'] += 1
-        stats['by_format'][r.format]['rows'] += r.metrics.get('ground_truth_count', 0)
-        stats['by_format'][r.format]['f1_sum'] += r.metrics['f1']
-        stats['by_format'][r.format]['recall_sum'] += r.metrics['recall']
-        stats['by_format'][r.format]['found_sum'] += r.metrics.get('found', 0)
-        stats['by_format'][r.format]['gold_pairs_sum'] += r.metrics.get('total_gold_field_pairs', 0)
-        stats['by_format'][r.format]['pred_pairs_sum'] += r.metrics.get('total_pred_field_pairs', 0)
+        _add_result_to_group(stats['by_format'].setdefault(r.format, _new_group_stats()), r)
 
         # By transcript condition
-        if r.transcript not in stats['by_transcript']:
-            stats['by_transcript'][r.transcript] = {
-                'count': 0,
-                'rows': 0,
-                'f1_sum': 0,
-                'recall_sum': 0,
-                'found_sum': 0,
-                'gold_pairs_sum': 0,
-                'pred_pairs_sum': 0,
-            }
-        stats['by_transcript'][r.transcript]['count'] += 1
-        stats['by_transcript'][r.transcript]['rows'] += r.metrics.get('ground_truth_count', 0)
-        stats['by_transcript'][r.transcript]['f1_sum'] += r.metrics['f1']
-        stats['by_transcript'][r.transcript]['recall_sum'] += r.metrics['recall']
-        stats['by_transcript'][r.transcript]['found_sum'] += r.metrics.get('found', 0)
-        stats['by_transcript'][r.transcript]['gold_pairs_sum'] += r.metrics.get('total_gold_field_pairs', 0)
-        stats['by_transcript'][r.transcript]['pred_pairs_sum'] += r.metrics.get('total_pred_field_pairs', 0)
+        _add_result_to_group(stats['by_transcript'].setdefault(r.transcript, _new_group_stats()), r)
+
+        metadata = metadata_by_sample.get(r.sample, {})
+        complexity_regime = metadata.get("complexity_regime") or metadata.get("difficulty") or r.tier
+        _add_result_to_group(
+            stats['by_complexity_regime'].setdefault(str(complexity_regime), _new_group_stats()),
+            r,
+        )
+        _add_result_to_group(
+            stats['by_evaluation_role'].setdefault(
+                evaluation_role(str(complexity_regime)), _new_group_stats()
+            ),
+            r,
+        )
+        for stressor in sorted(set(metadata.get("problems") or [])):
+            _add_result_to_group(
+                stats['by_stressor'].setdefault(str(stressor), _new_group_stats()),
+                r,
+            )
     
     # Compute averages
     for model, stats in model_stats.items():
@@ -953,6 +1137,16 @@ def generate_report(results: list[EvaluationResult], output_path: Path):
         total_found = stats['total_found']
         total_gold = stats['total_gold_field_pairs']
         total_pred = stats['total_pred_field_pairs']
+        exact_matches = stats['total_exact_record_matches']
+        total_pred_rows = stats['total_pred_rows']
+        stats['exact_record_recall'] = exact_matches / stats['total_rows'] if stats['total_rows'] > 0 else 0
+        stats['exact_record_precision'] = exact_matches / total_pred_rows if total_pred_rows > 0 else 0
+        stats['exact_record_f1'] = (
+            2 * stats['exact_record_precision'] * stats['exact_record_recall']
+            / (stats['exact_record_precision'] + stats['exact_record_recall'])
+            if (stats['exact_record_precision'] + stats['exact_record_recall']) > 0 else 0
+        )
+        stats['complete_document_rate'] = stats['complete_documents'] / n if n > 0 else 0
         stats['weighted_recall'] = total_found / total_gold if total_gold > 0 else 0
         stats['weighted_precision'] = total_found / total_pred if total_pred > 0 else 0
         stats['weighted_f1'] = (
@@ -960,51 +1154,23 @@ def generate_report(results: list[EvaluationResult], output_path: Path):
             if (stats['weighted_precision'] + stats['weighted_recall']) > 0 else 0
         )
         
-        for tier_stats in stats['by_tier'].values():
-            c = tier_stats['count']
-            tier_stats['avg_f1'] = tier_stats['f1_sum'] / c if c > 0 else 0
-            tier_stats['avg_recall'] = tier_stats['recall_sum'] / c if c > 0 else 0
-            gold_pairs = tier_stats['gold_pairs_sum']
-            pred_pairs = tier_stats['pred_pairs_sum']
-            found_sum = tier_stats['found_sum']
-            tier_stats['weighted_recall'] = found_sum / gold_pairs if gold_pairs > 0 else 0
-            tier_stats['weighted_precision'] = found_sum / pred_pairs if pred_pairs > 0 else 0
-            tier_stats['weighted_f1'] = (
-                2 * tier_stats['weighted_precision'] * tier_stats['weighted_recall'] / (tier_stats['weighted_precision'] + tier_stats['weighted_recall'])
-                if (tier_stats['weighted_precision'] + tier_stats['weighted_recall']) > 0 else 0
-            )
-        
-        for fmt_stats in stats['by_format'].values():
-            c = fmt_stats['count']
-            fmt_stats['avg_f1'] = fmt_stats['f1_sum'] / c if c > 0 else 0
-            fmt_stats['avg_recall'] = fmt_stats['recall_sum'] / c if c > 0 else 0
-            gold_pairs = fmt_stats['gold_pairs_sum']
-            pred_pairs = fmt_stats['pred_pairs_sum']
-            found_sum = fmt_stats['found_sum']
-            fmt_stats['weighted_recall'] = found_sum / gold_pairs if gold_pairs > 0 else 0
-            fmt_stats['weighted_precision'] = found_sum / pred_pairs if pred_pairs > 0 else 0
-            fmt_stats['weighted_f1'] = (
-                2 * fmt_stats['weighted_precision'] * fmt_stats['weighted_recall'] / (fmt_stats['weighted_precision'] + fmt_stats['weighted_recall'])
-                if (fmt_stats['weighted_precision'] + fmt_stats['weighted_recall']) > 0 else 0
-            )
-
-        for transcript_stats in stats['by_transcript'].values():
-            c = transcript_stats['count']
-            transcript_stats['avg_f1'] = transcript_stats['f1_sum'] / c if c > 0 else 0
-            transcript_stats['avg_recall'] = transcript_stats['recall_sum'] / c if c > 0 else 0
-            gold_pairs = transcript_stats['gold_pairs_sum']
-            pred_pairs = transcript_stats['pred_pairs_sum']
-            found_sum = transcript_stats['found_sum']
-            transcript_stats['weighted_recall'] = found_sum / gold_pairs if gold_pairs > 0 else 0
-            transcript_stats['weighted_precision'] = found_sum / pred_pairs if pred_pairs > 0 else 0
-            transcript_stats['weighted_f1'] = (
-                2 * transcript_stats['weighted_precision'] * transcript_stats['weighted_recall'] / (transcript_stats['weighted_precision'] + transcript_stats['weighted_recall'])
-                if (transcript_stats['weighted_precision'] + transcript_stats['weighted_recall']) > 0 else 0
-            )
+        _finalize_group_stats(stats['by_tier'])
+        _finalize_group_stats(stats['by_format'])
+        _finalize_group_stats(stats['by_transcript'])
+        _finalize_group_stats(stats['by_complexity_regime'])
+        _finalize_group_stats(stats['by_evaluation_role'])
+        _finalize_group_stats(stats['by_stressor'])
     
-    # Save JSON report
+    json_path = output_path / 'evaluation_report.json'
+    md_path = output_path / 'evaluation_report.md'
+
+    # Save JSON report. Ignore the report files themselves when recording
+    # provenance so a report refresh can still point to a clean code/data tree.
+    dataset_provenance = _dataset_provenance(ignore_dirty_paths=[json_path, md_path])
     report = {
         'timestamp': datetime.now(timezone.utc).isoformat(),
+        'evaluation_mode': evaluation_mode,
+        'dataset': dataset_provenance,
         'model_stats': model_stats,
         'detailed_results': [
             {
@@ -1023,7 +1189,6 @@ def generate_report(results: list[EvaluationResult], output_path: Path):
         ],
     }
     
-    json_path = output_path / 'evaluation_report.json'
     with open(json_path, 'w') as f:
         json.dump(report, f, indent=2)
     
@@ -1032,17 +1197,20 @@ def generate_report(results: list[EvaluationResult], output_path: Path):
         "# Multi-Model Evaluation Report",
         "",
         f"Generated: {datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M:%S %Z')}",
+        f"Evaluation mode: `{evaluation_mode}`",
+        f"Dataset manifest SHA-256: `{dataset_provenance.get('manifest_sha256') or 'unknown'}`",
+        f"Git SHA: `{dataset_provenance.get('git_sha') or 'unknown'}`; dirty: `{dataset_provenance.get('git_dirty')}`",
         "",
         "## Overall Results",
         "",
-        "| Model | Weighted F1 | Weighted Recall | Weighted Precision | Macro F1 | Rows | Samples | Errors | Time (s) | Cost (USD) |",
-        "|-------|-------------|-----------------|--------------------|----------|------|---------|--------|----------|------------|",
+        "| Model | Exact-record recall | Complete documents | Field micro-F1 | Field macro-F1 | Rows | Samples | Errors | Time (s) | Cost (USD) |",
+        "|-------|---------------------|--------------------|----------------|----------------|------|---------|--------|----------|------------|",
     ]
 
-    def _format_weighted_pct(group_stats: dict | None) -> str:
+    def _format_group_pct(group_stats: dict | None, metric: str) -> str:
         if not group_stats or group_stats.get("count", 0) == 0:
             return "N/A"
-        return f"{group_stats['weighted_f1']:.1%}"
+        return f"{group_stats[metric]:.1%}"
 
     def _observed_group_keys(stats_key: str, preferred_order: list[str]) -> list[str]:
         observed: set[str] = set()
@@ -1056,6 +1224,21 @@ def generate_report(results: list[EvaluationResult], output_path: Path):
 
     def _label_group_key(key: str) -> str:
         return key.replace("_", " ").title()
+
+    def _format_summary_time(seconds: float | None) -> str:
+        if evaluation_mode == "offline_replay" or seconds is None:
+            return "N/A"
+        return f"{seconds:.0f}"
+
+    def _format_summary_cost(cost_usd: float | None) -> str:
+        if evaluation_mode == "offline_replay" or cost_usd is None:
+            return "N/A"
+        return f"${cost_usd:.4f}"
+
+    def _format_detail_time(seconds: float | None) -> str:
+        if evaluation_mode == "offline_replay" or seconds is None:
+            return "N/A"
+        return f"{seconds:.1f}s"
 
     def _append_group_table(title: str, stats_key: str, preferred_order: list[str]) -> None:
         group_keys = _observed_group_keys(stats_key, preferred_order)
@@ -1078,7 +1261,8 @@ def generate_report(results: list[EvaluationResult], output_path: Path):
                 s = model_stats[model_key]
                 name = MODELS[model_key].name
                 scores = [
-                    _format_weighted_pct(s[stats_key].get(key)) for key in group_keys
+                    _format_group_pct(s[stats_key].get(key), "exact_record_recall")
+                    for key in group_keys
                 ]
                 md_lines.append(f"| {name} | {' | '.join(scores)} |")
 
@@ -1087,30 +1271,86 @@ def generate_report(results: list[EvaluationResult], output_path: Path):
             s = model_stats[model_key]
             name = MODELS[model_key].name
             md_lines.append(
-                f"| {name} | {s['weighted_f1']:.1%} | {s['weighted_recall']:.1%} | "
-                f"{s['weighted_precision']:.1%} | {s['avg_f1']:.1%} | {s['total_rows']} | {s['total_samples']} | {s['errors']} | "
-                f"{s.get('total_extraction_time', 0):.0f} | ${s.get('total_cost_usd', 0):.4f} |"
+                f"| {name} | {s['exact_record_recall']:.1%} | "
+                f"{s['complete_documents']}/{s['total_samples']} ({s['complete_document_rate']:.1%}) | "
+                f"{s['weighted_f1']:.1%} | {s['avg_f1']:.1%} | {s['total_rows']} | "
+                f"{s['total_samples']} | {s['errors']} | "
+                f"{_format_summary_time(s.get('total_extraction_time', 0.0))} | {_format_summary_cost(s.get('total_cost_usd', 0.0))} |"
             )
     
     md_lines.extend([
         "",
-        "Primary scores use corpus-level micro aggregation over all field-value pairs, so larger incident lists contribute proportionally more evidence than smaller documents.",
+        "The primary score is exact-record recall: a target counts only when every normalized field in one predicted record matches one ground-truth record. Complete-document success additionally requires the predicted and ground-truth record multisets to be identical. Record order is not scored. Field-pair F1 remains a secondary diagnostic.",
     ])
 
     _append_group_table(
-        "## Results by Difficulty Tier",
+        "## Strict Completeness by Evaluation Role",
+        "by_evaluation_role",
+        ["structural_challenge", "scale_control", "unclassified"],
+    )
+
+    _append_group_table(
+        "## Strict Completeness by Difficulty Tier",
         "by_tier",
-        ["easy", "medium", "hard", "extreme", "multihop", "mixed"],
+        [
+            "core_operations",
+            "claim_multihop",
+            "policy_packets",
+            "easy",
+            "medium",
+            "hard",
+            "extreme",
+            "multihop",
+            "mixed",
+        ],
     )
     _append_group_table(
-        "## Results by Document Format",
+        "## Strict Completeness by Document Format",
         "by_format",
-        ["detailed", "table", "crosspage"],
+        ["production_like_pdf", "crosspage", "detailed", "table"],
+    )
+
+    _append_group_table(
+        "## Strict Completeness by Complexity Regime",
+        "by_complexity_regime",
+        [
+            "ifta_mileage_by_vehicle",
+            "ifta_multisection_return_packet",
+            "ifta_return_schedule_details",
+            "ifta_tax_return_summary",
+            "driver_mvr_request_and_roster",
+            "loss_run_external",
+            "vehicle_schedule_spreadsheet_export",
+            "ifta_tax_return_inquiry_detail",
+            "driver_schedule_spreadsheet_export",
+            "claim_crosspage_multihop",
+            "policy_multi_hop",
+        ],
+    )
+
+    _append_group_table(
+        "## Strict Completeness by Key Stressor",
+        "by_stressor",
+        [
+            "ocr_layout_condition",
+            "cross_section_join",
+            "long_range_evidence",
+            "heterogeneous_record_list",
+            "multi_column",
+            "merged_cells",
+            "multi_row",
+            "duplicates",
+            "distractor_sections",
+            "repeated_keys",
+            "large_doc",
+            "high_density_long_list",
+            "page_breaks",
+        ],
     )
 
     md_lines.extend([
         "",
-        "## Results by Transcript Condition",
+        "## Strict Completeness by Transcript Condition",
         "",
         "| Model | Canonical | OCR |",
         "|-------|-----------|-----|",
@@ -1120,8 +1360,8 @@ def generate_report(results: list[EvaluationResult], output_path: Path):
         if model_key in model_stats:
             s = model_stats[model_key]
             name = MODELS[model_key].name
-            canonical = _format_weighted_pct(s["by_transcript"].get("canonical"))
-            ocr = _format_weighted_pct(s["by_transcript"].get("ocr"))
+            canonical = _format_group_pct(s["by_transcript"].get("canonical"), "exact_record_recall")
+            ocr = _format_group_pct(s["by_transcript"].get("ocr"), "exact_record_recall")
             md_lines.append(f"| {name} | {canonical} | {ocr} |")
     
     md_lines.extend([
@@ -1138,8 +1378,8 @@ def generate_report(results: list[EvaluationResult], output_path: Path):
             samples_seen.add(sample_key)
             md_lines.append(f"### {r.sample} ({r.transcript})")
             md_lines.append("")
-            md_lines.append("| Model | F1 | Recall | Precision | Predicted | Time |")
-            md_lines.append("|-------|-----|--------|-----------|-----------|------|")
+            md_lines.append("| Model | Exact records | Complete | Field F1 | Predicted | Time |")
+            md_lines.append("|-------|---------------|----------|----------|-----------|------|")
             
             for r2 in results:
                 if r2.sample == r.sample and r2.transcript == r.transcript:
@@ -1148,14 +1388,25 @@ def generate_report(results: list[EvaluationResult], output_path: Path):
                     if r2.error:
                         md_lines.append(f"| {name} | ERROR | - | - | - | - |")
                     else:
+                        gold_count = m.get('ground_truth_count', 0)
+                        predicted_count = m.get('predicted_count', 0)
+                        exact_matches = m.get('exact_record_matches', 0)
+                        exact_recall = m.get(
+                            'exact_record_recall',
+                            exact_matches / gold_count if gold_count > 0 else float(predicted_count == 0),
+                        )
+                        complete_document = m.get(
+                            'complete_document',
+                            exact_matches == gold_count == predicted_count,
+                        )
                         md_lines.append(
-                            f"| {name} | {m['f1']:.1%} | {m['recall']:.1%} | "
-                            f"{m['precision']:.1%} | {m['predicted_count']} | {r2.extraction_time:.1f}s |"
+                            f"| {name} | {exact_recall:.1%} | "
+                            f"{'yes' if complete_document else 'no'} | {m['f1']:.1%} | "
+                            f"{m['predicted_count']} | {_format_detail_time(r2.extraction_time)} |"
                         )
             
             md_lines.append("")
     
-    md_path = output_path / 'evaluation_report.md'
     with open(md_path, 'w') as f:
         f.write('\n'.join(md_lines))
     
@@ -1166,25 +1417,27 @@ def generate_report(results: list[EvaluationResult], output_path: Path):
 
 def main():
     parser = argparse.ArgumentParser(description='Multi-model evaluation for LongListBench')
-    parser.add_argument('--models', nargs='+', default=['gemini', 'gpt52'],
+    parser.add_argument('--models', nargs='+', default=['gpt55_oneshot'],
                        choices=['gemini', 'gemini_oneshot', 'gemini25', 'gpt52', 'gpt4', 'claude',
-                                'gpt55_oneshot', 'gpt55_chunked', 'gpt55_agent'],
-                       help='Models to evaluate (default: gemini, gpt52)')
+                                'gpt55_oneshot', 'gpt55_chunked', 'gpt55_agent', 'codex_gpt55',
+                                'claude_opus48'],
+                       help='Models to evaluate (default: gpt55_oneshot)')
     parser.add_argument('--output-dir', default=None,
                        help='Directory to write predictions and evaluation reports (default: benchmarks/results/scratch)')
     parser.add_argument('--tiers', nargs='+', default=None,
-                       choices=['easy', 'medium', 'hard', 'extreme', 'multihop', 'mixed'],
+                       choices=['easy', 'medium', 'hard', 'extreme', 'multihop', 'mixed',
+                                'core_operations', 'claim_multihop', 'policy_packets'],
                        help='Difficulty tiers to test (default: all)')
     parser.add_argument('--formats', nargs='+', default=None,
-                       choices=['detailed', 'table', 'crosspage'],
+                       choices=['detailed', 'table', 'crosspage', 'production_like_pdf'],
                        help='Document formats to test (default: all)')
-    parser.add_argument('--transcripts', nargs='+', default=['canonical'],
+    parser.add_argument('--transcripts', nargs='+', default=['ocr'],
                        choices=['canonical', 'ocr'],
-                       help='Transcript conditions to test (default: canonical)')
+                       help='Transcript conditions to test (default: ocr)')
     parser.add_argument('--samples', nargs='+', default=None,
                        help='Specific samples to test (default: all available)')
     parser.add_argument('--quick', action='store_true',
-                       help='Quick test with one sample per tier')
+                       help='Quick test with representative current-release samples')
     parser.add_argument('--offline', action='store_true',
                        help='Regenerate reports from saved *_predicted.json files (no API calls)')
     parser.add_argument('--previous-report', default=None,
@@ -1198,7 +1451,7 @@ def main():
     
     args = parser.parse_args()
     
-    # Quick mode: one sample per tier
+    # Quick mode: representative current-release samples.
     if args.quick:
         args.samples = list(_QUICK_SAMPLES)
     
@@ -1239,7 +1492,7 @@ def main():
         )
     
     # Generate reports
-    generate_report(results, output_dir)
+    generate_report(results, output_dir, evaluation_mode="offline_replay" if args.offline else "live")
     
     print()
     print("="*70)

@@ -20,6 +20,10 @@ class MultiHopBenchmarkTests(unittest.TestCase):
             self.assertEqual(metadata["total_documents"], metadata["total_cases"])
             self.assertEqual(
                 {case["complexity_regime"] for case in metadata["cases"]},
+                {"claim_crosspage_multihop"},
+            )
+            self.assertEqual(
+                {case["difficulty"] for case in metadata["cases"]},
                 {"multihop", "mixed"},
             )
 
@@ -36,7 +40,7 @@ class MultiHopBenchmarkTests(unittest.TestCase):
                 self.assertEqual(len(ground_truth), case["num_claims"])
 
                 html = (out_dir / "html" / f"{sample_id}.html").read_text(encoding="utf-8")
-                self.assertIn("Claim Extract - Primary Schedule", html)
+                self.assertIn("Claim Intake File Cards", html)
                 self.assertIn("Claim Financial Ledger", html)
                 self.assertNotIn("join on", html.lower())
 

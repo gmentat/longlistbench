@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "IftaMultisectionJurisdictionRow",
+  "description": "IFTA jurisdiction row assembled from a multisection return packet. Each target row combines return header context, Schedule A distance/gallon values, and Jurisdictions tax-detail values.",
+  "type": "object",
+  "additionalProperties": true,
+  "properties": {
+    "return_id": {"type": "string"},
+    "filing_year": {"type": ["integer", "string"]},
+    "quarter": {"type": "string"},
+    "filing_type": {"type": "string"},
+    "jurisdiction": {
+      "description": "Two-letter jurisdiction code when the document shows both a name and code.",
+      "type": "string"
+    },
+    "fuel_type": {
+      "description": "Short fuel code shown in parentheses, such as DI for Diesel (DI).",
+      "type": "string"
+    },
+    "total_miles": {"type": ["number", "integer", "string"]},
+    "taxable_miles": {"type": ["number", "integer", "string"]},
+    "taxable_gallons": {"type": ["number", "integer", "string"]},
+    "tax_paid_gallons": {"type": ["number", "integer", "string"]},
+    "net_gallons": {"type": ["number", "integer", "string"]},
+    "tax_rate": {"type": ["number", "string"]},
+    "tax_due_refund": {"type": ["number", "string"]},
+    "surtax_due": {"type": ["number", "string"]},
+    "interest_due": {"type": ["number", "string"]},
+    "total_due_refund": {"type": ["number", "string"]}
+  },
+  "required": [
+    "return_id",
+    "filing_year",
+    "quarter",
+    "filing_type",
+    "jurisdiction",
+    "fuel_type",
+    "total_miles",
+    "taxable_miles",
+    "taxable_gallons",
+    "tax_paid_gallons",
+    "net_gallons",
+    "tax_rate",
+    "tax_due_refund",
+    "surtax_due",
+    "interest_due",
+    "total_due_refund"
+  ]
+}

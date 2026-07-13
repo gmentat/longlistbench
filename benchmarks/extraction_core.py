@@ -166,8 +166,24 @@ def record_anthropic_usage(response) -> None:
     record_usage(
         input_tokens=getattr(u, "input_tokens", 0) or 0,
         cached_input_tokens=getattr(u, "cache_read_input_tokens", 0) or 0,
-        output_tokens=getattr(u, "output_tokens", 0) or 0,
+            output_tokens=getattr(u, "output_tokens", 0) or 0,
     )
+
+
+def gemini_thinking_config(model_id: str):
+    """Return the Gemini thinking config for extraction calls.
+
+    Gemini Pro preview models can consume the output budget as hidden thinking
+    tokens. For long-list extraction that often means no JSON is emitted before
+    MAX_TOKENS. Default to budget 0 so output capacity is reserved for records;
+    override with LLB_GEMINI_THINKING_BUDGET when intentionally testing thinking.
+    """
+    from google.genai import types
+
+    budget_text = os.getenv("LLB_GEMINI_THINKING_BUDGET", "0").strip()
+    if not budget_text:
+        return None
+    return types.ThinkingConfig(thinking_budget=int(budget_text))
 
 
 def traces_enabled() -> bool:
@@ -262,6 +278,8 @@ _LOSS_RUN_EXTRACTION_SCHEMA_JSON = json.dumps(
     ensure_ascii=False,
 )
 
+_GENERIC_PROMPT_EXCLUDED_FIELDS = {"record_id", "applies_to_record_id"}
+
 
 EXTRACTION_PROMPT = """Extract all incident records from the following document.
 
@@ -288,21 +306,96 @@ Document:
 """
 
 
+def build_record_extraction_contract(ground_truth: list[dict]) -> str:
+    """Build a field contract for generic 2.0 records without leaking target values."""
+    by_type: dict[str, set[str]] = {}
+    all_fields: set[str] = set()
+    has_record_type = any(
+        isinstance(record, dict) and "record_type" in record for record in ground_truth
+    )
+
+    for record in ground_truth:
+        if not isinstance(record, dict):
+            continue
+        record_type = str(record.get("record_type") or "record") if has_record_type else "record"
+        fields = {str(k) for k in record.keys()} - _GENERIC_PROMPT_EXCLUDED_FIELDS
+        by_type.setdefault(record_type, set()).update(fields)
+        all_fields.update(fields)
+
+    lines = [
+        "Output JSON shape:",
+        '{ "records": [ ... ] }',
+        "",
+        "General requirements:",
+        "- Extract every target record visible in the document.",
+        "- Use the exact field names below; do not invent fields that are not listed.",
+    ]
+    if has_record_type:
+        lines.append("- Every output object must include record_type.")
+    else:
+        lines.append("- Do not add record_type unless it is visible in the document.")
+    lines.extend(
+        [
+            "- If a listed field is not visible for a record, use an empty string.",
+            "- Preserve identifiers, dates, codes, locations, limits, rates, totals, names, and premiums exactly as shown.",
+            "- Do not deduplicate repeated records unless they are exact duplicate rows for the same item.",
+            "",
+            "Allowed record groups and fields:",
+        ]
+    )
+
+    for record_type in sorted(by_type):
+        fields = ", ".join(sorted(by_type[record_type]))
+        lines.append(f"- {record_type}: {fields}")
+
+    lines.extend(
+        [
+            "",
+            "All allowed fields:",
+            ", ".join(sorted(all_fields)),
+            "",
+            "Target-scope rules:",
+            "- Extract records that match the listed fields, not every nearby note, notice, subtotal, or support table.",
+            "- Keep each field to its own value; do not include neighboring labels or carried-over header text.",
+            "- For tables split across pages or sections, preserve the inherited row context needed to complete each record.",
+            "- For policy packets, extract scheduled locations, classifications, coverages, forms, endorsements, material clauses, rating rows, and premium rows that match the allowed fields.",
+            "- For operations documents, extract one record per target table row or section-row combination matching the allowed fields.",
+        ]
+    )
+    return "\n".join(lines)
+
+
+def build_record_extraction_prompt(ocr_text: str, ground_truth: list[dict]) -> str:
+    """Build the one-shot prompt for generic record-list extraction."""
+    return f"""Extract all target records from the following document.
+
+{build_record_extraction_contract(ground_truth)}
+
+Output MUST be valid JSON.
+
+Document:
+{ocr_text}
+"""
+
+
 # ============================================================================
 # JSON parsing / repair
 # ============================================================================
 
-def _repair_truncated_json(raw: str) -> dict | None:
-    """Salvage complete incidents from truncated JSON output.
+def _repair_truncated_array_json(raw: str, key: str | None) -> dict | list | None:
+    """Salvage complete objects from a truncated JSON array.
 
-    When the LLM hits the output-token limit the JSON is cut mid-object.
-    This helper finds the last complete incident object in the array and
-    returns a valid partial result.
+    When the LLM hits the output-token limit the JSON may be cut mid-object.
+    This helper finds the last complete object in the target array and returns
+    a valid partial result for scoring.
     """
-    idx = raw.find('"incidents"')
-    if idx == -1:
-        return None
-    arr_start = raw.find("[", idx)
+    if key is None:
+        arr_start = raw.find("[")
+    else:
+        idx = raw.find(f'"{key}"')
+        if idx == -1:
+            return None
+        arr_start = raw.find("[", idx)
     if arr_start == -1:
         return None
 
@@ -335,15 +428,27 @@ def _repair_truncated_json(raw: str) -> dict | None:
     if last_good == -1:
         return None
 
-    repaired = '{"incidents": ' + search_region[: last_good + 1] + "]}"
+    array_text = search_region[: last_good + 1] + "]"
+    repaired = array_text if key is None else '{"' + key + '": ' + array_text + "}"
     try:
         return json.loads(repaired)
     except json.JSONDecodeError:
         return None
 
 
+def _repair_truncated_json(raw: str) -> dict | list | None:
+    """Salvage complete records/incidents from truncated JSON output."""
+    for key in ("incidents", "records"):
+        repaired = _repair_truncated_array_json(raw, key)
+        if repaired is not None:
+            return repaired
+    return _repair_truncated_array_json(raw, None)
+
+
 def parse_json_response(response_text: str) -> Any:
     """Parse JSON from LLM response, handling markdown code blocks."""
+    if response_text is None:
+        raise ValueError("Model response did not include text")
     text = response_text.strip()
 
     code_block_match = re.search(r"```(?:json)?\s*(.*?)\s*```", text, flags=re.DOTALL | re.IGNORECASE)
@@ -557,9 +662,7 @@ def _extract_with_gemini_mode(
             ocr_text=chunk_text,
             schema_json=_LOSS_RUN_EXTRACTION_SCHEMA_JSON,
         )
-        thinking_config = None
-        if "flash" in model_id:
-            thinking_config = types.ThinkingConfig(thinking_budget=0)
+        thinking_config = gemini_thinking_config(model_id)
 
         config_kwargs = {
             "temperature": 0,
@@ -577,6 +680,11 @@ def _extract_with_gemini_mode(
         )
         record_gemini_usage(response)
         record_trace("gemini_calls.jsonl", {"model": model_id, "input_chars": len(chunk_text)})
+        if not response.text:
+            finish_reason = None
+            if getattr(response, "candidates", None):
+                finish_reason = getattr(response.candidates[0], "finish_reason", None)
+            raise ValueError(f"Gemini returned no text (finish_reason={finish_reason})")
         if structured_output:
             parsed = getattr(response, "parsed", None)
             raw = parsed if parsed is not None else parse_json_response(response.text)

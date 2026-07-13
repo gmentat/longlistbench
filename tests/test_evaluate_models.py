@@ -1,6 +1,5 @@
 import io
 import json
-import shutil
 import tempfile
 import unittest
 from pathlib import Path
@@ -17,6 +16,51 @@ from benchmarks.evaluation_metrics import evaluate_record_extraction
 
 
 class EvaluatorRegressionTests(unittest.TestCase):
+    def test_dataset_provenance_uses_repository_relative_manifest_path(self) -> None:
+        provenance = evaluate_models._dataset_provenance()
+
+        self.assertEqual(provenance["manifest_path"], "data/manifest.json")
+        self.assertFalse(Path(provenance["manifest_path"]).is_absolute())
+
+    @mock.patch.object(
+        evaluate_models.subprocess,
+        "check_output",
+        return_value=(
+            " M benchmarks/results/codex/evaluation_report.json\n"
+            "?? benchmarks/results/claude/evaluation_report.md\n"
+        ),
+    )
+    def test_git_dirty_ignores_generated_reports(self, _check_output) -> None:
+        self.assertFalse(evaluate_models._git_dirty())
+
+    @mock.patch.object(
+        evaluate_models.subprocess,
+        "check_output",
+        return_value=" M benchmarks/evaluation_metrics.py\n",
+    )
+    def test_git_dirty_keeps_source_changes(self, _check_output) -> None:
+        self.assertTrue(evaluate_models._git_dirty())
+
+    def test_release_families_have_fixed_evaluation_roles(self) -> None:
+        manifest_path = Path(__file__).resolve().parents[1] / "data" / "manifest.json"
+        manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+        totals = {
+            "scale_control": {"documents": 0, "records": 0},
+            "structural_challenge": {"documents": 0, "records": 0},
+        }
+
+        for instance in manifest["instances"]:
+            role = evaluate_models.evaluation_role(instance["complexity_regime"])
+            self.assertNotEqual(role, "unclassified", instance["id"])
+            totals[role]["documents"] += 1
+            totals[role]["records"] += instance["num_target_records"]
+
+        self.assertEqual(totals["scale_control"], {"documents": 15, "records": 22_705})
+        self.assertEqual(
+            totals["structural_challenge"],
+            {"documents": 21, "records": 10_745},
+        )
+
     def test_checker_reuses_main_evaluator_metrics_function(self) -> None:
         self.assertIs(
             check_evaluation_report.evaluate_extraction,
@@ -97,13 +141,12 @@ class EvaluatorRegressionTests(unittest.TestCase):
         self.assertEqual(metrics["predicted_count"], 2)
         self.assertEqual(metrics["missing"], 0)
         self.assertEqual(metrics["extra"], 0)
-        self.assertEqual(metrics["found"], 13)
-        self.assertEqual(metrics["total_gold_field_pairs"], 14)
-        self.assertLess(metrics["f1"], 1.0)
-        self.assertGreater(metrics["f1"], 0.9)
+        self.assertEqual(metrics["found"], 9)
+        self.assertEqual(metrics["total_gold_field_pairs"], 10)
+        self.assertAlmostEqual(metrics["f1"], 0.9)
         self.assertEqual(metrics["by_record_type"]["bop_coverage_item"]["matched_records"], 2)
 
-    def test_policy_record_evaluator_requires_record_type_association(self) -> None:
+    def test_policy_record_evaluator_does_not_require_record_type_association(self) -> None:
         ground_truth = [
             {
                 "record_type": "policy_form_item",
@@ -122,10 +165,10 @@ class EvaluatorRegressionTests(unittest.TestCase):
 
         metrics = evaluate_record_extraction(predicted, ground_truth)
 
-        self.assertEqual(metrics["found"], 0)
-        self.assertEqual(metrics["missing"], 1)
-        self.assertEqual(metrics["extra"], 1)
-        self.assertEqual(metrics["f1"], 0.0)
+        self.assertEqual(metrics["found"], 2)
+        self.assertEqual(metrics["missing"], 0)
+        self.assertEqual(metrics["extra"], 0)
+        self.assertEqual(metrics["f1"], 1.0)
 
     def test_report_weighted_scores_include_failed_samples(self) -> None:
         out_dir = Path(tempfile.mkdtemp())
@@ -144,6 +187,8 @@ class EvaluatorRegressionTests(unittest.TestCase):
                         "found": 10,
                         "ground_truth_count": 1,
                         "predicted_count": 1,
+                        "exact_record_matches": 1,
+                        "complete_document": True,
                         "missing": 0,
                         "extra": 0,
                         "total_gold_field_pairs": 10,
@@ -165,6 +210,8 @@ class EvaluatorRegressionTests(unittest.TestCase):
                         "found": 0,
                         "ground_truth_count": 1,
                         "predicted_count": 0,
+                        "exact_record_matches": 0,
+                        "complete_document": False,
                         "missing": 1,
                         "extra": 0,
                         "total_gold_field_pairs": 10,
@@ -178,6 +225,9 @@ class EvaluatorRegressionTests(unittest.TestCase):
         )
         report = json.loads((out_dir / "evaluation_report.json").read_text(encoding="utf-8"))
         self.assertLess(report["model_stats"]["gemini"]["weighted_f1"], 1.0)
+        self.assertEqual(report["model_stats"]["gemini"]["exact_record_recall"], 0.5)
+        self.assertEqual(report["model_stats"]["gemini"]["complete_documents"], 1)
+        self.assertEqual(report["model_stats"]["gemini"]["complete_document_rate"], 0.5)
 
     def test_report_includes_transcript_condition_breakdown(self) -> None:
         out_dir = Path(tempfile.mkdtemp())
@@ -196,6 +246,8 @@ class EvaluatorRegressionTests(unittest.TestCase):
                         "found": 10,
                         "ground_truth_count": 1,
                         "predicted_count": 1,
+                        "exact_record_matches": 1,
+                        "complete_document": True,
                         "missing": 0,
                         "extra": 0,
                         "total_gold_field_pairs": 10,
@@ -257,6 +309,8 @@ class EvaluatorRegressionTests(unittest.TestCase):
                         "found": 10,
                         "ground_truth_count": 1,
                         "predicted_count": 1,
+                        "exact_record_matches": 1,
+                        "complete_document": True,
                         "missing": 0,
                         "extra": 0,
                         "total_gold_field_pairs": 10,
@@ -374,7 +428,7 @@ class EvaluatorRegressionTests(unittest.TestCase):
             )
 
         self.assertEqual(len(results), 1)
-        self.assertEqual(results[0].tier, "multihop")
+        self.assertEqual(results[0].tier, "policy_packets")
         self.assertEqual(results[0].format, "crosspage")
         self.assertEqual(results[0].metrics["f1"], 1.0)
         self.assertIn("policy_form_item", results[0].metrics["by_record_type"])
@@ -542,19 +596,12 @@ class EvaluatorRegressionTests(unittest.TestCase):
         self.assertEqual(results[0].tokens["output_tokens"], 7)
         self.assertEqual(results[0].cost_usd, 0.00089)
 
-    def test_quick_mode_includes_extreme_sample(self) -> None:
+    def test_quick_mode_uses_current_release_samples(self) -> None:
         out_dir = Path(tempfile.mkdtemp())
-        source_dir = Path(__file__).resolve().parents[1] / "benchmarks" / "results" / "local_two_regimes"
-        for sample in [
-            "easy_10_001_detailed",
-            "medium_25_001_detailed",
-            "hard_50_001_detailed",
-            "extreme_100_001_detailed",
-        ]:
-            shutil.copyfile(
-                source_dir / f"{sample}_gemini_predicted.json",
-                out_dir / f"{sample}_canonical_gemini_predicted.json",
-            )
+        dataset_dir = evaluate_models.default_dataset_dir()
+        for sample in evaluate_models._QUICK_SAMPLES:
+            ground_truth = (dataset_dir / "ground_truth" / f"{sample}.json").read_text(encoding="utf-8")
+            (out_dir / f"{sample}_ocr_gemini_predicted.json").write_text(ground_truth, encoding="utf-8")
 
         argv = [
             "evaluate_models.py",
@@ -571,8 +618,7 @@ class EvaluatorRegressionTests(unittest.TestCase):
 
         report = json.loads((out_dir / "evaluation_report.json").read_text(encoding="utf-8"))
         samples = {entry["sample"] for entry in report["detailed_results"]}
-        self.assertIn("extreme_100_001_detailed", samples)
-        self.assertEqual(len(samples), 4)
+        self.assertEqual(samples, set(evaluate_models._QUICK_SAMPLES))
 
 
 if __name__ == "__main__":

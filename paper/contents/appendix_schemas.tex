@@ -4,7 +4,7 @@
 
 A recurring challenge with existing document extraction benchmarks is incomplete or ambiguous schema documentation. Without clear specifications, it can be difficult to understand expected field formats, handling of optional values, or normalization rules. Researchers attempting to reproduce results must often reverse-engineer these details from examples or evaluation scripts, leading to inconsistent implementations and incomparable metrics.
 
-To ensure full reproducibility, we provide complete schemas with explicit type annotations, default values, and field descriptions. The evaluation script validates model outputs against these schemas before scoring, ensuring that format errors are caught early rather than silently degrading metrics.
+To improve reproducibility, we provide explicit schemas for claim incidents and the main heterogeneous row families that benefit most from a public field contract. Other operations families are defined by their ground-truth field contracts and scored by the generic record-list evaluator. The evaluation scripts normalize model outputs before scoring so format errors are caught early rather than silently degrading metrics.
 
 \subsection*{A.1 Financial Breakdown Schema}
 
@@ -82,9 +82,9 @@ ded & financial breakdown & \{\} & Deductible \\
 \end{longtable}
 \endgroup
 
-\subsection*{A.3 Extraction Output Schema}
+\subsection*{A.3 Extraction Output Shape}
 
-Models are expected to return a JSON object matching the following structure:
+Claim/loss-run tasks return incident records:
 
 \begingroup
 \small
@@ -99,9 +99,26 @@ incidents & list of LossRunIncident & required & List of extracted incident reco
 \end{tabular}
 \endgroup
 
+Other long-list tasks return generic records:
+
+\begingroup
+\small
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.16\textwidth} >{\raggedright\arraybackslash}p{0.20\textwidth} >{\raggedright\arraybackslash}p{0.16\textwidth} >{\raggedright\arraybackslash}p{0.36\textwidth}@{}}
+\toprule
+Field & Type & Default & Description \\
+\midrule
+records & list of objects & required & List of extracted target records using the fields specified for that document family \\
+\bottomrule
+\end{tabular}
+\endgroup
+
+The repository publishes standalone JSON Schema files for \path{loss_run_incident}, \path{loss_run_claim_row}, \path{ifta_multisection_jurisdiction_row}, \path{policy_schedule_record}, and \path{policy_packet_item}. The multisection IFTA schema requires each jurisdiction row to include return context (\path{return_id}, year, quarter, filing type), Schedule A mileage/gallon fields, and Jurisdictions tax-detail fields.
+
 \subsection*{A.4 Extraction Prompt Template}
 
-All providers use the same core prompt template shown below. The harness substitutes \texttt{\{schema\_json\}} with the JSON schema for the extraction object and \texttt{\{ocr\_text\}} with the selected transcript condition (`canonical` or `ocr`).
+Prompt-based claim multi-hop incident extraction uses the core template shown below. The evaluation code substitutes \texttt{\{schema\_json\}} with the JSON schema for the extraction object and \texttt{\{ocr\_text\}} with the selected transcript.
 
 \begingroup
 \small
@@ -131,69 +148,62 @@ Document:
 \end{verbatim}
 \endgroup
 
+For generic operations and policy rows, the runner derives a sample-specific field contract from the keys and record groups present in the ground-truth object structure. This is schema disclosure: the contract contains field and group names but no target values, target counts, or ground-truth files. The output shape is:
+
+\begingroup
+\small
+\begin{verbatim}
+{
+  "records": [ ... ]
+}
+\end{verbatim}
+\endgroup
+
 \subsection*{A.5 Agentic Sandbox Instructions}
 
-The agentic regime uses the same output schema and scorer, but the transcript is provided as a sandbox file rather than inline prompt text. The following instructions are given to the sandbox agent; the harness substitutes the schema after the prompt.
+The released Codex and Claude Code runners use the same task prompt. The temporary workspace contains only the OCR transcript, a field contract, the prompt, and an empty output directory. A macOS profile denies access to the benchmark repository, and the prompt prohibits using other host files. For claim tasks, the output path is \path{output/incidents.json}; generic tasks use \path{output/records.json}.
 
 \begingroup
 \small
 \begin{verbatim}
-You extract structured data from a document.
+You are dispatched as a subagent for a specific extraction task; skip
+superpowers skills.
 
-In your sandbox workspace:
-- Input:  docs/document_ocr.md - the OCR of one insurance loss-run document.
-- Output: output/incidents.json - write your result here.
+Your workspace contains:
+- document_ocr.md: OCR transcript of one benchmark PDF.
+- field_contract.md: the target output shape and allowed fields.
 
-You have a full Linux sandbox: you can run shell commands and Python, read,
-search, and slice files, install packages, and write files. The document may be
-large. How you approach the extraction is up to you - choose whatever you judge
-most reliable for this document.
+The official ground truth is not present. Do not use files outside this
+workspace.
 
-Goal: extract EVERY incident record from the document into output/incidents.json
-as a JSON object of the form {"incidents": [ ... ]}.
+Task:
+Extract the complete target list from document_ocr.md according to
+field_contract.md.
+Write valid JSON to output/incidents.json.
 
-Field requirements (per the schema below):
-- Every incident must include ALL fields in the schema.
-- Unknown values: required string fields -> "" ; optional fields -> null ;
-  list fields -> [] ; numeric fields -> 0.0.
-- Capture the underlying value only: strip OCR/markdown artifacts such as
-  surrounding *emphasis* markers or alignment padding.
+You may inspect the document, write temporary scripts, and verify counts.
+Before finishing:
+- Confirm the JSON parses.
+- Spot-check beginning, middle, and end records against the OCR.
+- Ensure field names match field_contract.md exactly.
+- Ensure every target row or target record type requested by the contract is
+  represented.
 
-Verify your output before finishing - do not trust a first pass:
-- Confirm you captured every record and none are missing or truncated.
-- Spot-check records from different parts of the document (beginning, middle,
-  and end), comparing every field against the source - not just the first few
-  records.
-- Each field must hold only its own value: no text belonging to a neighboring
-  field or label, and no value carried over from another record or from a
-  header.
-- Fix any mismatches you find, then re-check.
-- Ensure output/incidents.json is valid JSON that conforms to the schema.
-- When finished, also print the final JSON object once as a JSON code block.
-
-Schema (JSON Schema):
-{schema_json}
+Do not include explanations in the JSON file.
 \end{verbatim}
 \endgroup
 
-The task message for each run is:
-
-\begingroup
-\small
-\begin{verbatim}
-Extract all incidents from docs/document_ocr.md into output/incidents.json.
-\end{verbatim}
-\endgroup
+The field contract contains the claim JSON Schema or the generic record groups and allowed fields described in Appendix~A.4. It contains no record values or target counts.
 
 \subsection*{A.6 Field Scoring Rules}
 
-We compute schema-conformant, field-level precision/recall/F1 by canonicalizing records under the schema and comparing multisets of field-value pairs.
+We compute strict normalized-record completeness first, then schema-conformant field precision/recall/F1 as partial-credit diagnostics.
 
 \paragraph{Step 1: Canonicalize each incident (schema validation + normalization).}
 Both predictions and ground truth are parsed as full \texttt{LossRunIncident} objects and then normalized:
 \begin{itemize}
-    \item \textbf{Incident identifier}: we compute a normalized incident ID by stripping common prefixes from \texttt{incident\_number} (e.g., \texttt{Incident \#}, \texttt{\#}, \texttt{INC}) and trimming whitespace.
-    \item \textbf{String fields}: all strings are trimmed. For optional string fields, the empty string is treated as \texttt{null}. Optional string fields are:
+    \item \textbf{Incident identifier}: common prefixes in \path{incident_number} (e.g., \texttt{Incident \#}, \texttt{\#}, \texttt{INC}) are stripped; whitespace and case are normalized.
+    \item \textbf{String fields}: all strings are trimmed and compared case-insensitively. For optional string fields, the empty string is treated as \texttt{null}. Optional string fields are:
     \begin{itemize}
         \item \texttt{cause\_code}
         \item \texttt{unit\_number}
@@ -201,8 +211,9 @@ Both predictions and ground truth are parsed as full \texttt{LossRunIncident} ob
         \item \texttt{driver\_name}
         \item \texttt{adjuster\_notes}
     \end{itemize}
-    \item \textbf{Claimants}: coerced to a list; each entry is trimmed; empty entries are dropped; the list is sorted.
-    \item \textbf{Financial breakdowns}: for each breakdown object (\texttt{bi}, \texttt{pd}, \texttt{lae}, \texttt{ded}), we ensure it is an object and normalize each numeric field by converting to float, rounding to two decimals, and mapping negative zero to zero. Unparseable values are treated as 0.0. Breakdown numeric fields are:
+    \item \textbf{Dates}: supported date forms are normalized to \texttt{MM/DD/YYYY}.
+    \item \textbf{Claimants}: coerced to a list; each entry is trimmed and case-normalized; empty entries are dropped; the list is sorted.
+    \item \textbf{Financial breakdowns}: for each breakdown object (\texttt{bi}, \texttt{pd}, \texttt{lae}, \texttt{ded}), we ensure it is an object and normalize each numeric field by converting to float, rounding to two decimals, and mapping negative zero to zero. Unparseable values are treated as 0.0. Zero-valued default breakdown fields are not scored. Breakdown numeric fields are:
     \begin{itemize}
         \item \texttt{reserve}
         \item \texttt{paid}
@@ -211,10 +222,15 @@ Both predictions and ground truth are parsed as full \texttt{LossRunIncident} ob
     \end{itemize}
 \end{itemize}
 
-\paragraph{Step 2: Flatten incidents into a multiset of field-value pairs.}
+Generic records are canonicalized recursively. Blank fields are omitted; strings are whitespace-normalized and compared case-insensitively; dates, decimals, percentages, currency values, and accounting-parenthesis negatives are canonicalized; and list values are order-normalized. State and jurisdiction names normalize to two-letter codes, fuel descriptions to parenthetical codes, policy line-of-business names to BOP/WC/CGL acronyms, and \texttt{Applies within} clause-scope wrappers to the core scope phrase. Records are matched greedily by overlapping non-global field pairs for field diagnostics. The \path{record_type} field, hidden row identifiers, and repeated document-level policy fields are excluded from field matching and field-pair scoring. Strict exact-record comparison uses the complete normalized public record.
+
+\paragraph{Step 2: Compare complete normalized records.}
+Let $R_G$ and $R_P$ be multisets of normalized ground-truth and predicted records. Exact-record recall is $|R_G \cap R_P|/|R_G|$. A document is complete only when $R_G=R_P$, so missing records, extra records, wrong fields, and duplicate multiplicity all affect strict completeness. Record-list order is not scored in this release.
+
+\paragraph{Step 3: Flatten incidents into a multiset of field-value pairs.}
 For each canonicalized incident, we emit a list of triples (\path{incident_id}, \path{field_path}, \path{value}). Nested financial fields are represented with dotted paths (e.g., \path{bi.reserve}).
 
-\paragraph{Step 3: Compare using multiset intersection (supports duplicates).}
+\paragraph{Step 4: Compute partial-credit field diagnostics.}
 Let $\mathcal{F}(G)$ be the multiset of flattened triples from the ground truth and $\mathcal{F}(P)$ the multiset from predictions. We compute
 \begin{align}
 \mathrm{found} &= |\mathcal{F}(G) \cap \mathcal{F}(P)|,\\
@@ -228,5 +244,67 @@ The multiset formulation means that if a document contains exact duplicate incid
 We also report:
 \begin{itemize}
     \item \textbf{Missing/extra incident IDs}: computed from the set of normalized incident IDs present in each list.
-    \item \textbf{Exact record matches}: the number of fully-matching incident objects, computed as a multiset intersection over canonicalized incident JSON objects grouped by incident ID.
+    \item \textbf{Exact-record precision and $F_1$}: computed from the same normalized-record intersection when systems over-extract.
+    \item \textbf{Evaluation-role and stressor slices}: aggregated from the public family and problem metadata.
 \end{itemize}
+
+\subsection*{A.7 Corpus Inventory and Stressor Map}
+
+\Cref{tab:dataset-scale} lists the technical document families used by the manifest. It is an inventory, not a difficulty ordering.
+
+\begin{table}[H]
+\centering
+\small
+\caption{Current LongListBench corpus by technical family.}
+\label{tab:dataset-scale}
+\begin{tabular}{@{}lrr@{}}
+\toprule
+Document family & PDFs & Target records \\
+\midrule
+\texttt{ifta\_mileage\_by\_vehicle} & 8 & 17{,}565 \\
+\texttt{ifta\_multisection\_return\_packet} & 2 & 796 \\
+\texttt{ifta\_return\_schedule\_details} & 5 & 4{,}923 \\
+\texttt{ifta\_tax\_return\_summary} & 4 & 3{,}040 \\
+\texttt{driver\_mvr\_request\_and\_roster} & 3 & 1{,}260 \\
+\texttt{loss\_run\_external} & 3 & 900 \\
+\texttt{vehicle\_schedule\_spreadsheet\_export} & 2 & 1{,}600 \\
+\texttt{ifta\_tax\_return\_inquiry\_detail} & 2 & 1{,}300 \\
+\texttt{driver\_schedule\_spreadsheet\_export} & 1 & 500 \\
+\texttt{claim\_crosspage\_multihop} & 3 & 77 \\
+\texttt{policy\_multihop\_bop} & 1 & 360 \\
+\texttt{policy\_multihop\_wc} & 1 & 510 \\
+\texttt{policy\_multihop\_cgl} & 1 & 619 \\
+\midrule
+\textbf{Total} & \textbf{36} & \textbf{33{,}450} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{longtable}{@{}p{0.20\linewidth}p{0.32\linewidth}p{0.38\linewidth}@{}}
+\caption{Representative pages for auditing canonical stressors. Page numbers refer to released PDFs.}
+\label{tab:complexity-doc-examples}\\
+\toprule
+Stressor & Example PDF pages & Visible document evidence \\
+\midrule
+\endfirsthead
+\toprule
+Stressor & Example PDF pages & Visible document evidence \\
+\midrule
+\endhead
+\bottomrule
+\endlastfoot
+\path{page_breaks} & \path{ifta_mileage_by_vehicle_001}, pages 3--4 & A repeated list continues with inherited unit context; this is pagination pressure, not an item-level split. \\
+\path{split_records} & \path{ifta_multisection_return_001}, pages 2 and 4 & One jurisdiction record combines mileage and gallon fields with later tax-detail fields. \\
+\path{multi_row} & \path{loss_run_external_001}, pages 1--2; \path{driver_mvr_packet_001}, page 10 & Records include description rows and driver or MVR detail blocks. \\
+\path{duplicates} & \path{loss_run_external_001}, pages 1--2; \path{multihop_bop_012_001}, page 142 & Summary, archived, or prior-term material creates near-duplicate distractors. \\
+\path{large_doc} & \path{ifta_mileage_by_vehicle_008}; \path{mixed_cgl_040_001} & The files reach 218 and 316 pages. \\
+\path{multiple_tables} & \path{ifta_tax_inquiry_001}, page 1; \path{loss_run_external_001}, pages 1--2 & Targets appear beside support tables, empty tables, summaries, and totals. \\
+\path{multi_column} & \path{mixed_cgl_040_001}, pages 139--150; \path{multihop_wc_025_001}, pages 95--106 & Policy provisions use two-column form pages. \\
+\path{merged_cells} & \path{loss_run_external_001}, page 1; \path{ifta_tax_inquiry_001}, page 1 & Section-spanning rows interrupt regular table structure. \\
+\path{ocr_condition} & Any PDF and matching file under \path{data/transcripts/ocr_gemini/} & Released text is OCR from page images, not HTML source text. \\
+\path{ocr_layout_condition} & \path{ifta_multisection_return_001}, pages 2 and 4 & OCR preserves two visually distinct tables rather than a clean joined row. \\
+\path{long_range_evidence} & \path{multihop_012_001_crosspage}, pages 4, 36, 56, 57, 76 & A front claim row joins to distant driver, policy, cause, claimant, and ledger sections. \\
+\path{cross_section_join} & \path{ifta_multisection_return_001}, pages 1, 2, 4 & A target combines return context, mileage/gallons, and tax-detail values. \\
+\path{repeated_keys} & \path{ifta_multisection_return_001}, pages 2, 4, 8, 10 & Jurisdiction codes recur across returns, so state alone is not a unique key. \\
+\path{heterogeneous_record_list} & \path{multihop_bop_012_001}, pages 26, 48, 94, 127, 142 & One list mixes locations, coverages, forms, endorsements, premiums, and clauses. \\
+\end{longtable}

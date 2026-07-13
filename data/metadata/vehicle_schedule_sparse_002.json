@@ -1,0 +1,58 @@
+{
+  "id": "vehicle_schedule_sparse_002",
+  "template": "vehicle_schedule_spreadsheet_export",
+  "target_record_type": "vehicle_schedule_row",
+  "num_target_records": 800,
+  "source_batch": "batches-02-05-review-ready",
+  "artifacts": {
+    "pdf": "pdfs/vehicle_schedule_sparse_002.pdf",
+    "html": "html/vehicle_schedule_sparse_002.html",
+    "ground_truth": "ground_truth/vehicle_schedule_sparse_002.json"
+  },
+  "provenance": "Synthetic generated document. Private production references were used only for visual layout review; no production PDFs, names, account numbers, or raw customer data are included in this repository.",
+  "files": {
+    "ground_truth": "ground_truth/vehicle_schedule_sparse_002.json",
+    "pdf": "pdfs/vehicle_schedule_sparse_002.pdf",
+    "html": "html/vehicle_schedule_sparse_002.html",
+    "metadata": "metadata/vehicle_schedule_sparse_002.json",
+    "json_size_bytes": 146932,
+    "pdf_size_bytes": 441856,
+    "html_size_bytes": 171463,
+    "ocr_md": "transcripts/ocr_gemini/vehicle_schedule_sparse_002.md",
+    "ocr_size_bytes": 65201
+  },
+  "transcripts_available": [
+    "ocr"
+  ],
+  "complexity_regime": "vehicle_schedule_spreadsheet_export",
+  "difficulty": "vehicle_schedule_spreadsheet_export",
+  "format": "production_like_pdf",
+  "domain": "commercial_insurance_operations",
+  "problems": [
+    "high_density_long_list",
+    "production_like_layout",
+    "ocr_condition",
+    "page_breaks",
+    "large_doc",
+    "multiple_tables",
+    "layout_randomization",
+    "inherited_context",
+    "split_records",
+    "non_target_rows"
+  ],
+  "pages_estimate": 37,
+  "pdf_page_count": 37,
+  "dataset_version": "2.0.0",
+  "hf_config": "core_operations",
+  "document_count": 1,
+  "evidence_pattern": "single_document",
+  "pdf_size_bytes": 441856,
+  "html_size_bytes": 171463,
+  "layout_revision": {
+    "date": "2026-06-28T14:34:58.488572+00:00",
+    "purpose": "reduce deterministic parser friendliness with production-like layout variation",
+    "ocr_status": "regenerated_from_current_pdf",
+    "ocr_regenerated_at": "2026-06-28T21:44:24.950682+00:00"
+  },
+  "ocr_md_size_bytes": 65201
+}

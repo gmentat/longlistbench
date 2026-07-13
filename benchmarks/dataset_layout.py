@@ -18,6 +18,7 @@ DATASET_DIR = REPO_ROOT / "data"
 LEGACY_CLAIMS_DIR = BENCHMARKS_DIR / "claims"
 
 _TRANSCRIPT_DIRS = {
+    # Retained for legacy/scratch experiments; the current public release ships OCR transcripts.
     "canonical": Path("transcripts") / "canonical",
     "ocr": Path("transcripts") / "ocr_gemini",
 }
@@ -142,19 +143,24 @@ def target_record_count(instance: dict[str, Any]) -> int:
 
 
 def record_count_summary(instances: list[dict[str, Any]]) -> dict[str, int]:
-    """Summarize claim, policy, and total target-record counts."""
-    total_claims = 0
-    total_policy_items = 0
+    """Summarize target-record counts by released corpus group."""
+    total_core_operations_records = 0
+    total_claim_records = 0
+    total_policy_records = 0
 
     for instance in instances:
         count = target_record_count(instance)
-        if instance.get("domain") == "policy_review" or instance.get("num_policy_items") is not None:
-            total_policy_items += count
+        domain = instance.get("domain")
+        if domain == "policy_review" or instance.get("num_policy_items") is not None:
+            total_policy_records += count
+        elif domain == "claims":
+            total_claim_records += count
         else:
-            total_claims += count
+            total_core_operations_records += count
 
     return {
-        "total_claims": total_claims,
-        "total_policy_items": total_policy_items,
-        "total_target_records": total_claims + total_policy_items,
+        "total_core_operations_records": total_core_operations_records,
+        "total_claim_records": total_claim_records,
+        "total_policy_records": total_policy_records,
+        "total_target_records": total_core_operations_records + total_claim_records + total_policy_records,
     }

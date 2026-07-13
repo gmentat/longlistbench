@@ -1,0 +1,54 @@
+import json
+from types import SimpleNamespace
+
+from benchmarks import run_codex_cli_evaluation as runner
+
+
+def test_status_summary_fails_when_any_sample_fails() -> None:
+    assert runner._all_statuses_succeeded([("a", 0), ("b", "skip")])
+    assert not runner._all_statuses_succeeded([])
+    assert not runner._all_statuses_succeeded([("a", 0), ("b", "timeout")])
+    assert not runner._all_statuses_succeeded([("a", "error: invalid JSON")])
+
+
+def test_run_codex_uses_requested_model_and_effort(tmp_path, monkeypatch) -> None:
+    (tmp_path / "prompt.md").write_text("extract", encoding="utf-8")
+    captured = {}
+
+    def fake_run(cmd, **kwargs):
+        captured["cmd"] = cmd
+        return SimpleNamespace(returncode=0, stdout="ok")
+
+    monkeypatch.setattr(runner.subprocess, "run", fake_run)
+
+    status, output = runner.run_codex(
+        tmp_path,
+        tmp_path / "repo",
+        60,
+        "gpt-5.6-sol",
+        "xhigh",
+    )
+
+    assert status == 0
+    assert output == "ok"
+    assert captured["cmd"][captured["cmd"].index("-m") + 1] == "gpt-5.6-sol"
+    assert 'model_reasoning_effort="xhigh"' in captured["cmd"]
+
+
+def test_run_metadata_records_requested_codex_model(tmp_path, monkeypatch) -> None:
+    monkeypatch.setattr(runner, "_codex_cli_version", lambda: "codex-cli test")
+
+    runner._write_run_metadata(
+        output_dir=tmp_path,
+        transcript="ocr",
+        model_key="codex_gpt56_sol",
+        requested_model="gpt-5.6-sol",
+        effort="xhigh",
+        statuses=[("sample", 0)],
+    )
+
+    payload = json.loads((tmp_path / runner.RUN_METADATA_FILE).read_text(encoding="utf-8"))
+    assert payload["model_key"] == "codex_gpt56_sol"
+    assert payload["requested_model"] == "gpt-5.6-sol"
+    assert payload["effort"] == "xhigh"
+    assert payload["sample_statuses"] == {"sample": 0}

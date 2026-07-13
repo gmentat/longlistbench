@@ -1,31 +1,102 @@
-We summarize results for (i) the transcript-conditioned benchmark setup and (ii) baseline extraction performance on the OCR condition.
+This revision reports corpus validation and four OCR-conditioned agentic extraction baselines on the released corpus of 36 documents. Earlier prerelease experiments used a development set of 80 documents with different templates, schemas, and scoring. We retain those experiments as development history but do not mix their scores with the current release.
 
-\subsection{Transcript-conditioned setup}
-LongListBench exposes a clean canonical transcript for each rendered document and a reproducible OCR path for generating a noisy transcript from the same PDF. When both transcript conditions are generated and evaluated, this supports controlled clean-vs-OCR comparisons without changing the underlying layout, page structure, or ground truth. The quantitative baseline table in this revision focuses on an OCR-condition snapshot, which matches the saved tiered reports currently included in the repository.
+\subsection{Artifact completeness}
+Each manifest instance has one PDF, HTML source, JSON ground-truth file, metadata file, and OCR transcript. The release contains 31{,}961 non-policy records and 1{,}489 policy records, for 33{,}450 targets overall. \Cref{tab:release-validation} summarizes the release gates.
 
-\subsection{Extraction regimes}
-We compare three evaluation regimes that differ primarily in how they handle long transcripts. The first is full-context one-shot extraction, which submits the entire transcript in one call and salvages complete incidents from truncated JSON when necessary. The second is auto-chunked extraction, which splits long transcripts into fixed token-budget chunks and extracts each chunk independently before concatenating the resulting incident lists. The third is agentic sandbox extraction, in which the model is given only the transcript inside a code-execution sandbox and decides for itself how to inspect and parse the document (typically by writing and running code) rather than following a fixed chunking policy. We run all three regimes with the same model, GPT-5.5, so differences reflect the regime rather than the model. All regimes in Table~\ref{tab:two-regimes} are evaluated on the same synchronized 80-document OCR snapshot from this repository; the cross-page multi-hop extension is released with ground truth and canonical transcripts but is not included in this baseline table.
-
-\begin{table}[t]
+\begin{table}[H]
 \centering
 \small
-\caption{Same-model comparison of extraction regimes on the synchronized 80-document OCR snapshot. Columns report corpus-level weighted field-value micro $F_1$ overall and on the extreme tier.}
-\label{tab:two-regimes}
-\begin{tabular}{@{}llcc@{}}
+\caption{Current release validation summary.}
+\label{tab:release-validation}
+\begin{tabular}{@{}lr@{}}
 \toprule
-Regime & Model & Overall & Extreme \\
+Check & Value \\
 \midrule
-One-shot & GPT-5.5 & 29.9\% & 0.0\% \\
-Auto-chunked & GPT-5.5 & 85.4\% & 84.6\% \\
-Agentic sandbox & GPT-5.5 & 90.6\% & 89.4\% \\
+Manifest instances & 36 \\
+PDF, HTML, ground-truth, metadata, and OCR artifacts & 36 each \\
+Total target records & 33{,}450 \\
+Released transcript condition & OCR \\
+Average identifier coverage & 100.0\% \\
+Tracked identifier-field support & 99.9\% \\
+Records with missing tracked OCR identifiers & 39 \\
+Unrecoverable numeric GT values in OCR & 0 \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-Moving from full-context one-shot extraction to the local chunked baseline therefore improves overall weighted field-level $F_1$ by 55.5 points and extreme-tier weighted field-level $F_1$ by 84.6 points on the same snapshot. The GPT-5.5 one-shot baseline reaches 29.9\% overall weighted field-level $F_1$ (94.4\% precision but only 17.8\% recall): 91.2\% on easy, 93.1\% on medium, 56.5\% on hard, and 0.0\% on extreme. Notably, on the longest documents GPT-5.5 returns an empty result rather than a partial list, so a stronger model does not by itself rescue the one-shot regime; the failure is the protocol, not the model. By contrast, GPT-5.5 auto-chunked reaches 85.4\% overall and 84.6\% on extreme; by tier it reaches 91.3\% (easy), 92.6\% (medium), 82.1\% (hard), and 84.6\% (extreme), and by format it reaches 94.0\% on tables and 75.5\% on detailed documents. In other words, chunking substantially reduces the severe long-document degradation seen in the one-shot regime, but the local chunked baseline still shows a pronounced gap between long detailed documents and long tables, with residual errors concentrated in record recovery, reading order, and layout-sensitive field completion. Because the strongest page-break and multi-column stressors are concentrated in detailed-format content in v1, this detailed-versus-table gap should not be interpreted as a pure format effect.
+The largest scale family, mileage by vehicle, contributes 17{,}565 records across eight PDFs. Structural families add sparse enrichment, split schedules, mixed row/detail blocks, heterogeneous records, and evidence distributed across sections. All 36 OCR transcripts pass the 95\% identifier-coverage gate. A numeric-fidelity gate also finds no unrecoverable ground-truth values with absolute value at least 10. These checks bound the released OCR condition; they are not extraction scores.
 
-The agentic sandbox regime achieves the strongest results: 90.6\% overall weighted field-level $F_1$ (89.7\% recall, 91.4\% precision) with no extraction failures across all 80 documents. Holding the model fixed at GPT-5.5, the regime ordering is one-shot (29.9\%) $<$ auto-chunked (85.4\%) $<$ agentic (90.6\%) overall, and 0.0\% $<$ 84.6\% $<$ 89.4\% on the extreme tier, so the agentic regime's advantage over chunking (+5.2 overall, +4.8 on extreme) is a genuine regime effect rather than a model artifact. It largely closes the long-document gap because the model navigates and parses the document programmatically rather than relying on a fixed chunking policy. By tier it reaches 97.0\% (easy), 95.2\% (medium), and 91.4\% (hard); by format 93.2\% on tables and 87.9\% on detailed documents, preserving the same detailed-versus-table ordering seen in the other regimes. We treat cost and latency as report metadata rather than as a cross-regime conclusion in this revision, because token-usage metadata is present for the saved agentic run but not for every saved one-shot and chunked run.
+\subsection{Agentic OCR baselines}
+\label{subsec:current-ocr-baseline}
+Each run received one OCR transcript and the public field contract in a temporary workspace. A macOS sandbox denied the benchmark repository, and ground truth, target values and counts, and generator code were absent. Agents could inspect the transcript, write temporary code, validate JSON, and return the complete list. These are protocol baselines, not raw one-shot model measurements.
 
-Qualitatively, errors often manifest as local field-level deviations (e.g., missing optional strings, numeric drift in financial breakdowns, or small identifier formatting mistakes) spread across an otherwise correct long list.
+The two earlier runs used Codex CLI with \texttt{gpt-5.5} at xhigh reasoning on July 1, 2026, and Claude Code with \texttt{claude-opus-4-8} at xhigh effort on July 12. The new runs used Codex CLI 0.144.1 with \texttt{gpt-5.6-sol} and Claude Code 2.1.207 with \texttt{claude-fable-5}, both at xhigh effort on July 13. Claude Code safe mode disabled project instructions, skills, plugins, hooks, and MCP servers. Its usage metadata listed Fable 5 for every run and auxiliary Haiku 4.5 routing, so this is a Claude Code/Fable 5 protocol rather than a raw-model score. All four runs cover the same manifest and 33{,}450 targets with zero execution errors; saved predictions reproduce every score in \Cref{tab:agentic-full-corpus}.
 
-These findings suggest that the main open challenge for long-list extraction is robustly segmenting and populating full per-incident records under layout disruptions (page breaks, multi-column order, distractor tables, merged cells) and scale (hundreds of incidents). The transcript-conditioned benchmark design is intended to separate this difficulty from OCR-specific degradation in follow-up evaluations by comparing canonical and OCR conditions directly.
+\begin{table}[H]
+\centering
+\footnotesize
+\caption{Full-corpus agentic OCR baselines. Strict completeness is primary; field $F_1$ is secondary partial credit.}
+\label{tab:agentic-full-corpus}
+\begin{tabular}{@{}p{0.31\linewidth}rrrr@{}}
+\toprule
+Agent and model & Exact recall & Complete docs & Micro-$F_1$ & Macro-$F_1$ \\
+\midrule
+Codex CLI, GPT-5.6-Sol (xhigh) & 89.0\% & 13/36 (36.1\%) & 97.3\% & 96.6\% \\
+Claude Code, Fable 5 (xhigh) & 90.6\% & 15/36 (41.7\%) & 98.9\% & 98.7\% \\
+Codex CLI, GPT-5.5 (xhigh) & 89.5\% & 12/36 (33.3\%) & 98.7\% & 98.2\% \\
+Claude Code, Opus 4.8 (xhigh) & 86.9\% & 13/36 (36.1\%) & 98.6\% & 98.2\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+No configuration completes even half of the documents. Model recency is also not a monotonic aggregate improvement: GPT-5.6-Sol completes one more document than GPT-5.5 but has slightly lower exact-record and field scores, while Fable 5 improves over Opus 4.8. The family results below explain more than the overall ranking.
+
+We preassign four parser-friendly families as scale tests and the other seven as structural challenges. \Cref{tab:agentic-by-role} reports the latest models by role.
+
+\begin{table}[H]
+\centering
+\scriptsize
+\caption{Strict completeness by evaluation role for the latest models.}
+\label{tab:agentic-by-role}
+\begin{tabular}{@{}p{0.24\linewidth}rrrrrr@{}}
+\toprule
+Role & Docs & Records & Sol exact & Fable exact & Sol complete & Fable complete \\
+\midrule
+Structural challenges & 21 & 10{,}745 & 66.4\% & 71.2\% & 4/21 (19.0\%) & 4/21 (19.0\%) \\
+Scale tests & 15 & 22{,}705 & 99.7\% & 99.8\% & 9/15 (60.0\%) & 11/15 (73.3\%) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\Cref{tab:agentic-by-regime} uses problem-first labels so the extraction challenge is visible without domain knowledge. Labels map one-to-one to the public \texttt{complexity\_regime} values.
+
+\begin{table}[H]
+\centering
+\scriptsize
+\caption{Latest-model exact-record recall by extraction problem. The divider separates structural challenges from scale tests.}
+\label{tab:agentic-by-regime}
+\begin{tabular}{@{}p{0.47\linewidth}rrrr@{}}
+\toprule
+Extraction problem & Docs & Records & GPT-5.6-Sol & Fable 5 \\
+\midrule
+Sparse record enrichment (driver/MVR) & 3 & 1{,}260 & 1.9\% & 1.9\% \\
+Long-range claim joins & 3 & 77 & 100.0\% & 100.0\% \\
+Split return schedules & 5 & 4{,}923 & 58.5\% & 64.6\% \\
+Mixed row/detail loss runs & 3 & 900 & 98.6\% & 99.2\% \\
+Tax inquiry detail tables & 2 & 1{,}300 & 99.8\% & 99.8\% \\
+Heterogeneous policy records & 3 & 1{,}489 & 78.7\% & 92.5\% \\
+Cross-section return joins & 2 & 796 & 99.9\% & 99.9\% \\
+\midrule
+Tax-summary scale tests & 4 & 3{,}040 & 99.9\% & 99.9\% \\
+Driver-schedule scale test & 1 & 500 & 99.4\% & 99.4\% \\
+Mileage-by-vehicle scale tests & 8 & 17{,}565 & 99.7\% & 99.8\% \\
+Vehicle-schedule scale tests & 2 & 1{,}600 & 99.6\% & 100.0\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The failures differ in kind. Both agents return all 1{,}260 driver rows, but only 24 are exact because sparse MVR fields are not joined back into the roster; field micro-$F_1$ is still 89.1\%. On split return schedules, GPT-5.6-Sol returns 4{,}326 of 4{,}923 rows and Fable 5 returns 4{,}779, with additional field errors. Policy packets expose model-specific behavior: GPT-5.6-Sol omits 192 BOP records, while Fable returns the full policy record counts but still misses fields. In contrast, both agents recover all 77 long-range claim records exactly, and each misses only one of 796 cross-section return records.
+
+Cross-cutting slices reinforce this variation. Exact-record recall for GPT-5.6-Sol and Fable 5 is 78.7\% and 92.5\% on heterogeneous lists, 79.8\% and 92.9\% on long-range evidence, 82.6\% and 86.4\% on split records, 82.7\% and 86.4\% on inherited context, and 81.9\% and 84.6\% under layout randomization. Duplicate-bearing documents score 86.6\% and 95.2\%. By contrast, cross-section joins and repeated keys score 99.9\% for both. These are observational associations because tags overlap and document families differ; paired renderings would be needed to estimate one stressor's causal effect.
+
+Full-context one-shot extraction is not a practical full-corpus protocol here. Small claim packets can return scoreable outputs, but larger outputs reach model limits or time out. We therefore treat one-shot prompting as a lower-bound operational stress test and use the per-document agentic protocol for full-corpus comparison.

@@ -1,0 +1,55 @@
+{
+  "id": "loss_run_external_001",
+  "template": "loss_run_external",
+  "target_record_type": "loss_run_claim_row",
+  "num_target_records": 300,
+  "source_batch": "loss-run-hardened",
+  "artifacts": {
+    "pdf": "pdfs/loss_run_external_001.pdf",
+    "html": "html/loss_run_external_001.html",
+    "ground_truth": "ground_truth/loss_run_external_001.json"
+  },
+  "provenance": "Synthetic generated document. Private production references were used only for visual layout review; no production PDFs, names, account numbers, or raw customer data are included in this repository.",
+  "files": {
+    "ground_truth": "ground_truth/loss_run_external_001.json",
+    "pdf": "pdfs/loss_run_external_001.pdf",
+    "html": "html/loss_run_external_001.html",
+    "metadata": "metadata/loss_run_external_001.json",
+    "json_size_bytes": 161771,
+    "pdf_size_bytes": 581364,
+    "html_size_bytes": 296648,
+    "ocr_md": "transcripts/ocr_gemini/loss_run_external_001.md",
+    "ocr_size_bytes": 131330
+  },
+  "transcripts_available": [
+    "ocr"
+  ],
+  "complexity_regime": "loss_run_external",
+  "difficulty": "loss_run_external",
+  "format": "production_like_pdf",
+  "domain": "commercial_insurance_operations",
+  "problems": [
+    "high_density_long_list",
+    "production_like_layout",
+    "ocr_condition",
+    "page_breaks",
+    "large_doc",
+    "multiple_tables",
+    "merged_cells",
+    "multi_row",
+    "duplicates",
+    "distractor_sections",
+    "variable_policy_sections",
+    "continuation_notes",
+    "summary_distractors",
+    "sparse_driver_fields"
+  ],
+  "pages_estimate": 43,
+  "pdf_page_count": 43,
+  "dataset_version": "2.0.0",
+  "hf_config": "core_operations",
+  "num_claims": 300,
+  "document_count": 1,
+  "evidence_pattern": "single_document",
+  "ocr_md_size_bytes": 131330
+}

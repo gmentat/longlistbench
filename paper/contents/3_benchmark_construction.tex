@@ -1,114 +1,262 @@
-LongListBench\footnote{Code, data, and implementation details are available at \url{https://github.com/kaydotai/longlistbench}.} is a synthetic benchmark for long-list entity extraction in semi-structured business documents with long incident and line-item lists, inspired by recurring patterns observed in real-world claims documents. Each benchmark instance consists of (i) structured ground-truth incidents in JSON, (ii) rendered HTML/PDF artifacts, and (iii) transcript conditions in Markdown.
+LongListBench\footnote{Code, data, and implementation details are available at \url{https://github.com/kaydotai/longlistbench}.} is a synthetic benchmark for long-list entity extraction in semi-structured business documents. Each instance consists of (i) structured JSON ground truth, (ii) rendered HTML and PDF artifacts, (iii) an OCR transcript in Markdown, and (iv) metadata describing target counts, artifact paths, and evidence patterns.
 
-\subsection{Entity schema}
-Ground truth incidents follow a structured schema (see \hyperref[sec:appendix-schemas]{Appendix~A}) that includes incident identifiers, policy metadata, narrative text, and nested financial breakdowns (\texttt{bi}, \texttt{pd}, \texttt{lae}, \texttt{ded}). While downstream workflows often emphasize a small subset of high-value fields (e.g., incident identifiers, loss dates, and financial totals), our evaluator requires and scores the full schema.
+\subsection{Entity schemas}
+The released corpus contains three broad target families.
 
-\subsection{Document generation}
-\Cref{fig:generation-pipeline} illustrates the benchmark construction pipeline, which consists of two phases.
+\paragraph{Claim incidents.}
+Claim-oriented documents use a loss-run incident schema with claim identifiers, policy metadata, claimant and driver fields, loss dates, coverage fields, status fields, and nested financial breakdowns. These records use strict normalized-record comparison plus field diagnostics, including date normalization, claimant-list sorting, and monetary rounding.
 
-\paragraph{Schema design (green path).}
-Human annotators reviewed real insurance loss run documents from trucking companies to identify common fields, layouts, and formatting patterns. From this analysis, we defined a structured JSON schema capturing incident identifiers, policy metadata, narrative descriptions, and nested financial breakdowns. This schema serves as ground truth for evaluation.
+\paragraph{Policy records.}
+Policy-oriented documents use heterogeneous records for locations, coverages, forms, endorsements, exclusions, rating rows, and premium items. A policy packet is the contract document issued by an insurer; it combines declarations, covered locations or classifications, coverage limits and deductibles, rating or premium schedules, required forms, and endorsements that modify the base policy. The released packets cover Businessowners Policy (BOP), Workers Compensation (WC), and Commercial General Liability (CGL).
 
-\paragraph{Synthetic generation (purple path).}
- Rather than using real documents (which contain sensitive information), we generate synthetic documents that preserve realistic layout challenges:
- \begin{enumerate}
-     \item \textbf{Problem configuration}: We identify recurring layout artifacts in real documents (e.g., page breaks splitting records, merged cells, and multi-column layouts) and encode them as configurable problem types.
-     \item \textbf{Document rendering}: We generate synthetic incident records under the target schema, render them to HTML with selected problem types injected, and convert the resulting HTML to PDF via headless Chromium.
-     \item \textbf{Canonical transcript}: We derive a clean transcript directly from the rendered HTML structure, preserving intended reading order, page boundaries, headers, tables, and distractor sections without OCR corruption.
-     \item \textbf{OCR transcript}: We can obtain a noisy transcript for each PDF using Gemini OCR on rendered page images. OCR is regenerated after PDF changes rather than treated as a reusable static artifact.
-     \item \textbf{Markdown output}: Canonical transcripts are stored as page-concatenated Markdown; OCR transcripts use the same layout after the OCR generation step.
- \end{enumerate}
+\paragraph{Operations records.}
+The core operations documents contain dense repeated lists from business operations workflows, including mileage rows, multi-section return rows, tax inquiry rows, driver records, vehicle schedule rows, and external loss-run rows. These records use generic normalized-record comparison rather than being forced into the claim incident schema.
 
-\begin{figure}[ht]
-    \centering
-    \includegraphics[width=0.7\linewidth]{figures/generation.png}
-    \caption{Benchmark construction pipeline. Green path: schema design from real documents. Purple path: synthetic document generation and OCR processing.}
-    \label{fig:generation-pipeline}
+\subsection{Document design and provenance}
+Private production PDFs were reviewed only to identify recurring structures such as portal exports, spreadsheet schedules, loss-run tables, declarations, forms, endorsements, and long packet organization. The released documents are production-inspired, not facsimiles of source packets.
+
+\Cref{fig:pipeline} summarizes construction. Human corrections to production extraction surfaced recurring failure patterns, which engineers translated into seeded generators, family-specific templates, and the stressor taxonomy in \Cref{tab:complexity-stressors}. Generators write target records first, render them through HTML templates to PDF, and transcribe page images with vision OCR. Every visible name, identifier, value, and prose passage is generated. The multi-hop packets are reproducible from released code and seeds; the 30 core-operations PDFs come from an earlier batch using the same design.
+
+\begin{figure}[tb]
+\centering
+\begin{tikzpicture}[
+  lab/.style={font=\sffamily\scriptsize, align=center},
+  lane/.style={font=\sffamily\tiny\bfseries},
+  arr/.style={-{Stealth[length=2.6mm]}, line width=0.9pt, black!60},
+  ico/.style={line width=0.9pt, black!75},
+  pics/docstack/.style={code={
+    \draw[ico, fill=white] (0.10,0.10) -- (0.10,0.80) -- (0.46,0.80) -- (0.62,0.64) -- (0.62,0.10) -- cycle;
+    \draw[ico, fill=white] (-0.02,-0.02) -- (-0.02,0.68) -- (0.34,0.68) -- (0.50,0.52) -- (0.50,-0.02) -- cycle;
+    \draw[ico] (0.34,0.68) -- (0.34,0.52) -- (0.50,0.52);
+    \draw[black!45] (0.06,0.12) -- (0.40,0.12) (0.06,0.24) -- (0.40,0.24) (0.06,0.36) -- (0.40,0.36);
+  }},
+  pics/tablegrid/.style={code={
+    \draw[ico, fill=white] (-0.36,0.06) rectangle (0.36,0.62);
+    \draw[ico, fill=black!20] (-0.36,0.48) rectangle (0.36,0.62);
+    \draw[black!45] (-0.36,0.34) -- (0.36,0.34) (-0.36,0.20) -- (0.36,0.20)
+                    (-0.12,0.06) -- (-0.12,0.62) (0.12,0.06) -- (0.12,0.62);
+  }},
+  pics/person/.style={code={
+    \fill[black!65] (-0.14,0.44) circle (0.11);
+    \fill[black!65] (-0.38,0.02) to[out=80,in=180] (-0.14,0.26) to[out=0,in=100] (0.10,0.02) -- cycle;
+  }},
+  pics/warn/.style={code={
+    \draw[ico, red!70!black] (-0.32,0.02) -- (0.32,0.02) -- (0,0.58) -- cycle;
+    \node[red!70!black, font=\footnotesize\bfseries] at (0,0.22) {!};
+  }},
+  pics/magnify/.style={code={
+    \draw[ico] (0,0.42) circle (0.24);
+    \draw[line width=1.8pt, black!75] (0.17,0.25) -- (0.42,0.00);
+    \draw[black!45] (-0.11,0.48) -- (0.11,0.48) (-0.11,0.37) -- (0.05,0.37);
+  }},
+  pics/script/.style={code={
+    \draw[ico, fill=white] (-0.38,0.02) rectangle (0.38,0.62);
+    \draw[ico] (-0.38,0.48) -- (0.38,0.48);
+    \fill[black!45] (-0.30,0.55) circle (0.025) (-0.22,0.55) circle (0.025) (-0.14,0.55) circle (0.025);
+    \node[font=\tiny\ttfamily\bfseries, text=blue!40!black] at (0,0.25) {</>};
+  }},
+  pics/gendoc/.style={code={
+    \draw[ico, fill=white] (-0.26,-0.02) -- (-0.26,0.68) -- (0.10,0.68) -- (0.26,0.52) -- (0.26,-0.02) -- cycle;
+    \draw[ico] (0.10,0.68) -- (0.10,0.52) -- (0.26,0.52);
+    \draw[black!45] (-0.18,0.36) -- (0.16,0.36) (-0.18,0.48) -- (0.16,0.48);
+    \foreach \a in {0,45,...,315} \draw[ico, blue!40!black] ($(0.26,0.08)+(\a:0.08)$) -- ($(0.26,0.08)+(\a:0.16)$);
+    \draw[ico, blue!40!black, fill=white] (0.26,0.08) circle (0.08);
+  }},
+  pics/eye/.style={code={
+    \draw[ico] (-0.32,0.32) .. controls (-0.12,0.56) and (0.12,0.56) .. (0.32,0.32)
+               .. controls (0.12,0.08) and (-0.12,0.08) .. (-0.32,0.32);
+    \fill[black!75] (0,0.32) circle (0.085);
+  }},
+  pics/db/.style={code={
+    \draw[ico, fill=white] (-0.26,0.14) -- (-0.26,0.56) (-0.26,0.14) arc (180:360:0.26 and 0.09) (0.26,0.14) -- (0.26,0.56);
+    \draw[ico, fill=white] (0,0.56) ellipse (0.26 and 0.09);
+  }},
+]
+% ---- lane backgrounds ----
+\fill[orange!10, rounded corners=7pt] (-0.95,-0.85) rectangle (14.55,1.15);
+\fill[blue!7,   rounded corners=7pt] (-0.95,-3.65) rectangle (14.55,-1.75);
+\node[lane, rotate=90, text=orange!50!black] at (-0.68,0.15)  {Production};
+\node[lane, rotate=90, text=blue!45!black]   at (-0.68,-2.7) {Benchmark};
+% ---- production lane (labels above icons) ----
+\node[minimum size=1.1cm] (raw)  at (0.6,0)  {}; \pic at ($(raw.center)+(-0.30,-0.40)$) {docstack};
+\node[minimum size=1.1cm] (ext)  at (3.8,0)  {}; \pic at ($(ext.center)+(0,-0.34)$)     {tablegrid};
+\node[minimum size=1.1cm] (hum)  at (7.0,0)  {}; \pic at ($(hum.center)+(0.10,-0.26)$) {person};
+\node[minimum size=1.1cm] (edge) at (10.2,0) {}; \pic at ($(edge.center)+(0,-0.32)$)    {warn};
+\node[lab, anchor=south] at ($(raw.north)+(0,-0.12)$)  {Raw PDFs};
+\node[lab, anchor=south] at ($(ext.north)+(0,-0.12)$)  {Extraction};
+\node[lab, anchor=south] at ($(hum.north)+(0,-0.12)$)  {Human Review};
+\node[lab, anchor=south] at ($(edge.north)+(0,-0.12)$) {Edge Cases};
+% ---- benchmark lane (labels below icons) ----
+\node[minimum size=1.1cm] (eng)     at (0.6,-2.35)  {}; \pic at ($(eng.center)+(0,-0.30)$)     {magnify};
+\node[minimum size=1.1cm] (scripts) at (3.8,-2.35)  {}; \pic at ($(scripts.center)+(0,-0.34)$) {script};
+\node[minimum size=1.1cm] (gen)     at (7.0,-2.35)  {}; \pic at ($(gen.center)+(0,-0.36)$)     {gendoc};
+\node[minimum size=1.1cm] (ocr)     at (10.2,-2.35) {}; \pic at ($(ocr.center)+(0,-0.32)$)     {eye};
+\node[minimum size=1.1cm] (ds)      at (13.4,-2.35) {}; \pic at ($(ds.center)+(-0.06,-0.36)$)  {db};
+\node[lab, anchor=north] at ($(eng.south)+(0,0.14)$)     {Engineer Review};
+\node[lab, anchor=north] at ($(scripts.south)+(0,0.14)$) {Generation Scripts};
+\node[lab, anchor=north] at ($(gen.south)+(0,0.14)$)     {Synthetic PDFs};
+\node[lab, anchor=north] at ($(ocr.south)+(0,0.14)$)     {OCR};
+\node[lab, anchor=north] at ($(ds.south)+(0,0.14)$)      {Dataset};
+% ---- flow ----
+\draw[arr] (raw) -- (ext);
+\draw[arr] (ext) -- (hum);
+\draw[arr] (hum) -- (edge);
+\draw[arr] ($(raw.south)+(-0.25,0.12)$) -- ($(eng.north)+(-0.25,-0.15)$);
+\draw[arr] ($(edge.south)+(0,0.12)$) -- ++(0,-0.55) -| ($(eng.north)+(0.25,-0.15)$);
+\draw[arr] (eng) -- (scripts);
+\draw[arr] (scripts) -- (gen);
+\draw[arr] (gen) -- (ocr);
+\draw[arr] (ocr) -- (ds);
+\end{tikzpicture}
+\caption{Dataset construction. Production failures inform structural templates; seeded generators write ground truth first, then render synthetic PDFs and OCR transcripts. No production values are released.}
+\label{fig:pipeline}
 \end{figure}
 
-Documents are rendered in one of two formats: (i) \textbf{Detailed}, which uses repeated incident blocks with narrative text and financial tables, or (ii) \textbf{Table}, which uses a compact tabular representation. The rendered PDFs also include synthetic packet covers, spreadsheet-like exports, portal receipts, request/response pages, and rotated scan excerpts inspired by recurring real-document layout patterns, without reusing private document content. All generation uses seeded randomness for reproducibility.
+The released PDFs include dense tables, wrapped rows, form-like pages, and policy packet sections rather than only clean spreadsheet exports. \Cref{fig:split-record,fig:multi-row,fig:merged-cells,fig:multi-column} show representative rendered pages used to audit the visible stressors. Red boxes in these figures are annotations added for the paper; the released PDFs do not print benchmark labels.
 
-\subsection{Injected problem types}
-We inject seven recurring document phenomena that complicate long-list extraction. These effects are applied at the HTML level prior to PDF rendering.
+\Cref{fig:split-record} shows two row-level evidence blocks for one target. Return headers supply reporting context, Schedule A supplies mileage and gallons, and a later Jurisdictions table supplies tax fields. The sections order jurisdictions differently, so the extractor must join by return and jurisdiction rather than copy one row. This is the \path{split_records} stressor.
 
-\paragraph{Page breaks.}
-In real-world documents, page boundaries frequently interrupt local record context. In our detailed format, a single incident can begin on one page with identifiers and description while its financial breakdown appears on the next. In our table format, we instead insert page breaks between groups of rows and repeat table headers across the break. OCR systems typically process pages independently, producing separate text blocks that must be reassembled. Extraction models must therefore preserve continuity across pages and avoid dropping rows or misattaching continuation content.
-\begin{figure}[ht]
+\begin{figure}[H]
     \centering
-    \IfFileExists{figures/example_page_breaks.png}{
-        \includegraphics[width=0.95\linewidth]{figures/example_page_breaks.png}
-    }{
-        \fbox{\parbox{0.6\textwidth}{\centering\vspace{2cm}Page Breaks Example\vspace{2cm}}}
-    }
-    \caption{Example of an incident split across a page boundary.}
-    \label{fig:example-page-breaks}
+    \begin{subfigure}{\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{figures/example_split_record_schedule_annot.png}
+        \caption{The Schedule A distance-and-gallons table of a multisection IFTA return.}
+        \label{fig:split-record-schedule}
+    \end{subfigure}
+    \vspace{0.75em}
+    \begin{subfigure}{\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{figures/example_split_record_detail_annot.png}
+        \caption{The Jurisdictions tax-detail table from a later section of the same packet.}
+        \label{fig:split-record-detail}
+    \end{subfigure}
+    \caption{One target record split across sections of the same packet.}
+    \label{fig:split-record}
 \end{figure}
 
-\paragraph{Multi-row entities.}
-Table cells often contain text that wraps across multiple lines, especially for description fields, addresses, or claimant lists. When OCR linearizes such content, it may interleave text from adjacent columns or treat each line as a separate cell. For example, a description spanning three lines might appear as three distinct rows in the OCR output, with column alignment lost. Extraction models must recognize that these lines belong to a single logical cell and reconstruct the original cell boundaries from visual or positional cues.
-\begin{figure}[ht]
+\newpage
+In \Cref{fig:multi-row}, description text continues below an incident's main row. A one-row-one-record parser can fragment the target or attach text to the wrong item.
+
+\begin{figure}[H]
     \centering
-    \IfFileExists{figures/example_multi_row.png}{
-        \includegraphics[width=0.95\linewidth]{figures/example_multi_row.png}
-    }{
-        \fbox{\parbox{0.6\textwidth}{\centering\vspace{2cm}Multi-row Entities Example\vspace{2cm}}}
-    }
-    \caption{Example of a cell containing multiple lines of text.}
-    \label{fig:example-multi-row}
+    \includegraphics[width=\linewidth]{figures/example_multi_row_annot.png}
+    \caption{Multi-row record details in an external loss-run report.}
+    \label{fig:multi-row}
 \end{figure}
 
-\paragraph{Exact duplicates.}
-\mbox{}\\
-Production documents sometimes contain intentionally repeated records. In insurance contexts, the same incident may appear multiple times due to amendments, re-openings, or reporting across multiple policy periods. Unlike data entry errors, these duplicates are semantically meaningful and must be preserved in the extracted output. Many extraction pipelines include deduplication as a post-processing step, which would incorrectly collapse valid duplicate entries. In LongListBench v1 we model this stressor as exact record repeats rather than near-duplicates or amended variants.
+In \Cref{fig:merged-cells}, a shared coverage cell spans several incidents and must be propagated to each record, breaking the regular grid assumed by simple table parsers.
 
-\paragraph{Large documents.}
-Real loss runs and itemized bills routinely contain hundreds of line items. A single trucking company's annual loss run may list 200--500 incidents; a hospital bill for a complex procedure can exceed 1{,}000 charge lines. These documents push against context window limits of current LLMs. Even models with 128K+ token windows may exhibit degraded recall on items appearing in the middle of very long documents (the "lost in the middle" phenomenon). We include an extreme tier with 500 incidents per document to measure how extraction quality scales with document length.
-
-\paragraph{Multiple tables.}
-Business documents frequently embed auxiliary tables alongside the primary data. A loss run PDF might include a cover page with agent contact information, a summary table of totals by coverage type, or a glossary of status codes; none of these should be extracted as incident records. Models must distinguish the target entity table from these distractors based on schema matching, header recognition, or positional cues. Naive approaches that extract all tabular content will produce false positives from irrelevant tables.
-
-\paragraph{Multi-column layout.}
-Some documents use multi-column layouts to fit more content per page. This creates reading-order ambiguity: should text be read left-to-right across columns or top-to-bottom within each column? Standard OCR often assumes a single-column flow, interleaving content from parallel columns into an incoherent sequence. In LongListBench v1 this stressor primarily affects detailed-format primary content and auxiliary sections; the main table-format claims table remains single-span to preserve a readable tabular baseline.
-\begin{figure}[ht]
+\begin{figure}[H]
     \centering
-    \IfFileExists{figures/example_multi_column.png}{
-        \includegraphics[width=0.95\linewidth]{figures/example_multi_column.png}
-    }{
-        \fbox{\parbox{0.6\textwidth}{\centering\vspace{2cm}Multi-column Layout Example\vspace{2cm}}}
-    }
-    \caption{Example of a two-column document layout.}
-    \label{fig:example-multi-column}
+    \includegraphics[width=\linewidth]{figures/example_merged_cells_annot.png}
+    \caption{Merged or section-spanning cells in an incident table.}
+    \label{fig:merged-cells}
 \end{figure}
 
-\paragraph{Merged cells.}
-Tables often use merged cells for visual grouping. A common pattern is merging the company name cell across all incidents belonging to that company, or merging a coverage type header across its associated rows. In the rendered PDF, these appear as single cells spanning multiple rows or columns. OCR may report the merged cell's content only once, leaving subsequent rows with empty values for that field. Extraction models must propagate the merged value to all spanned rows, recognizing that an empty cell indicates inheritance from above rather than a missing value.
-\begin{figure}[ht]
+\Cref{fig:multi-column} pairs target content with a reference-only directory. Naive reading order can interleave the columns or extract distractor rows.
+
+\begin{figure}[H]
     \centering
-    \IfFileExists{figures/example_merged_cells.png}{
-        \includegraphics[width=0.95\linewidth]{figures/example_merged_cells.png}
-    }{
-        \fbox{\parbox{0.6\textwidth}{\centering\vspace{2cm}Merged Cells Example\vspace{2cm}}}
-    }
-    \caption{Example of a table with merged and spanning cells.}
-    \label{fig:example-merged-cells}
+    \includegraphics[width=\linewidth]{figures/example_multi_column_annot.png}
+    \caption{Two-column layout mixing target content with a reference-only directory table.}
+    \label{fig:multi-column}
 \end{figure}
 
-\subsection{Dataset scale}
-The core released suite (\texttt{longlistbench-v1}, version 1.0.2) contains 80 rendered documents (40 detailed, 40 table) with 6{,}828 incident rows and canonical transcripts for evaluation. Difficulty tiers are configured as 15 easy base instances (seeded with 10 claims/PDF), 12 medium (25), 8 hard (50), and 5 extreme instances seeded with 100 claims/PDF and then expanded to 500 incidents per released document via \texttt{large\_doc}. Each base instance is rendered in both detailed and table formats, yielding 80 documents in total. Enabling \texttt{duplicates} injects additional duplicate rows, causing some documents to exceed the seed count. OCR transcripts can be generated from the rendered PDFs and should be regenerated whenever PDFs are changed.
+\Cref{fig:long-range} illustrates long-range evidence for one claim. The target begins on page 4; three join keys recur in distant sections. These crops show only part of the full evidence chain.
 
-Across the 80 documents, the most common injected issues are multi-row entities (62/80), page breaks (56/80), duplicates (56/80), and multiple tables (40/80).
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}{\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{figures/longrange_card.png}
+        \caption{Page 4: a claim card carries reference \texttt{LR23-H8037} \textcircled{\scriptsize 1}, policy \texttt{L23A1955} \textcircled{\scriptsize 2}, and unit \texttt{399841} \textcircled{\scriptsize 3}.}
+        \label{fig:long-range-card}
+    \end{subfigure}
+    \vspace{0.9em}
+    \begin{subfigure}{\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{figures/longrange_index.png}
+        \caption{Page 57: request rows corroborate the account for reference \textcircled{\scriptsize 1}; the attachment index corroborates policy \textcircled{\scriptsize 2}. Middle request rows are omitted from the crop.}
+        \label{fig:long-range-index}
+    \end{subfigure}
+    \vspace{0.9em}
+    \begin{subfigure}{\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{figures/longrange_audit.png}
+        \caption{Page 76: a driver-audit row matches unit \textcircled{\scriptsize 3} and supplies the driver name.}
+        \label{fig:long-range-audit}
+    \end{subfigure}
+    \caption{Three distant references for one target claim. The complete record uses six evidence sections; unrelated rows are cropped out.}
+    \label{fig:long-range}
+\end{figure}
 
-\subsection{Long-range cross-page multi-hop extension}
-Many production extraction tasks are not contained in one adjacent table region. A target loss-run record may require joining a front-matter claim schedule against policy registers, driver rosters, cause-code appendices, claimant indexes, and payment ledgers that appear much later in the same PDF. This pattern is awkward for one-shot extraction and naive chunking because the model must preserve join keys across large page and token distances, then merge partial records without confusing distractor rows.
+The three crops are illustrative, not complete provenance. The scored claim has 24 top-level fields plus nested financials. Its metadata maps six evidence blocks: intake cards, driver assignments, policy registers, cause narratives, claimant notices, and financial ledgers. The first and last primary blocks are separated by at least 64 pages, so extraction must preserve several join keys across the packet.
 
-To make this failure mode measurable, we add an initial multi-hop extension in the shared \path{data/} layout. It currently contains 6 single-document cross-page PDFs. Three claim-oriented cases contain 77 target incidents and use the same incident schema as the core suite; the rendered PDFs are 76, 126, and 198 pages. Three additional cases are synthetic commercial insurance policy packets: Businessowners Policy (BOP), Workers Compensation (WC), and Commercial General Liability (CGL). A policy packet is the contract document issued by an insurer; it combines declarations, covered locations or classifications, coverage limits and deductibles, rating or premium schedules, required forms, and endorsements that modify the base policy. These policy cases contain 345 target records across heterogeneous schemas for locations, coverage items, class-code or exposure items, forms, endorsements, and premiums. Each case includes one PDF, one HTML source, one \path{ground_truth} JSON file, a canonical transcript, reproducible OCR transcript generation, and per-sample metadata describing the evidence map and join requirements.
+The current release prioritizes fewer, larger, more realistic PDFs rather than many small template variants. This choice reflects the intended use case: measuring list-completeness failures at scale. Several PDFs contain more than 1{,}000 target records, and the full corpus contains 33{,}450 target records across 36 PDFs.
 
-The claim-oriented extension uses the following join patterns:
-\begin{itemize}
-    \item \texttt{policy\_number} $\rightarrow$ policy register for company, insured, division, policy state, and agency fields.
-    \item \texttt{unit\_number} $\rightarrow$ driver roster for driver identity.
-    \item \texttt{cause\_code} $\rightarrow$ cause-code appendix for coverage type and normalized description.
-    \item \texttt{incident\_number} $\rightarrow$ claimant index and financial ledger for claimants, adjuster notes, and nested financial breakdowns.
-\end{itemize}
+\subsection{Corpus inventory}
+The release favors fewer, larger PDFs: 30 operations documents contain 31{,}884 targets, three claim packets contain 77, and three policy packets contain 1{,}489. \Cref{tab:dataset-scale} in the appendix gives the complete technical family inventory.
 
-The policy-oriented extension adds joins such as location/building numbers to described premises, form numbers to forms-and-endorsements schedules, class codes to rating schedules, and coverage or endorsement references to distant detail pages. The largest cross-page documents mix these joins with archived distractor sections that reuse overlapping policy/reference values but contain out-of-scope records. This design is intended to stress extraction systems that can inspect long documents, preserve join keys across distant sections, and verify record completeness. The claim-oriented cases preserve comparability with the base incident schema and scorer; the policy-oriented cases use the heterogeneous record-list scorer released with the evaluation pipeline.
+\subsection{Evaluation configurations}
+Each instance carries three levels of metadata. The \texttt{hf\_config} field assigns one of three release configurations (\Cref{tab:evaluation-configurations}), \texttt{complexity\_regime} identifies its document family, and \texttt{problems} records cross-cutting stressors. A PDF can therefore be large, multi-table, OCR-conditioned, and long-range at the same time.
+
+\begin{table}[t]
+\centering
+\small
+\caption{Evaluation configurations in the current release.}
+\label{tab:evaluation-configurations}
+\begin{tabular}{@{}p{0.26\linewidth}rr>{\raggedright\arraybackslash}p{0.42\linewidth}@{}}
+\toprule
+Configuration & PDFs & Records & Main contents \\
+\midrule
+Core operations & 30 & 31{,}884 & High-density repeated records, production-like tables and exports, OCR preservation, cross-section joins, and output completeness. \\
+Claim multi-hop & 3 & 77 & Long-range joins from claim schedules to policy registers, driver rosters, claimant indexes, cause-code appendices, and ledgers. \\
+Policy packets & 3 & 1{,}489 & Heterogeneous policy records across declarations, locations or classifications, forms, material clauses, endorsements, rating schedules, and premium summaries. \\
+\midrule
+\textbf{Total} & \textbf{36} & \textbf{33{,}450} & \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+These configurations are not a difficulty ladder. Core operations includes both parser-friendly scale tests and multisection joins. Claim and policy packets emphasize inherited context, distant evidence, heterogeneous schemas, and distractors. Results should therefore be sliced by evaluation role, family, and stressor rather than reduced to one ranking.
+
+\Cref{tab:complexity-stressors} defines 14 canonical cross-cutting stressors. The 45 distinct tokens currently found in \texttt{problems} also include finer domain and implementation tags for audit slices; they are not additional canonical categories. A page break tests pagination and completeness, while \path{split_records} requires assembling one target from separate visual blocks. Duplicate pressure is represented mainly by prior-term, archived, or near-duplicate distractors.
+
+\begin{table}[tp]
+\centering
+\small
+\caption{Cross-cutting complexity stressors tracked in release metadata.}
+\label{tab:complexity-stressors}
+\begin{tabular}{@{}p{0.25\linewidth}p{0.67\linewidth}@{}}
+\toprule
+Stressor & What it tests \\
+\midrule
+\path{page_breaks} & Pagination pressure: target lists or supporting sections span page boundaries, often with repeated headers or inherited context. This is mostly a list-completeness stressor by itself. \\
+\path{split_records} & One logical target record has fields distributed across separate visual blocks, sections, or pages, so the extractor must assemble the item rather than copy one row. \\
+\path{multi_row} & One logical record includes wrapped notes, descriptions, clause prose, or continuation rows. \\
+\path{duplicates} & Duplicate or near-duplicate distractor material, especially prior-term or archive sections that should not be extracted as current targets. \\
+\path{large_doc} & Hundreds to thousands of targets, or enough pages to expose truncation and list-completeness failures. \\
+\path{multiple_tables} & Target rows are mixed with summaries, ledgers, schedules, support tables, or empty/no-claims tables. \\
+\path{multi_column} & Two-column or form-like layouts that stress reading order. \\
+\path{merged_cells} & Merged-cell and section-spanning table structures such as \texttt{colspan} rows. \\
+\path{ocr_condition} & Released text is OCR output from rendered PDF page images. \\
+\path{ocr_layout_condition} & OCR preserves visual spacing and reading order instead of converting tables into clean CSV-style rows. \\
+\path{long_range_evidence} & Required fields are separated by distant pages within the same PDF. \\
+\path{cross_section_join} & A target row must be assembled from separately labeled sections, such as return summary, distance/gallon schedules, and liability schedules. \\
+\path{repeated_keys} & Common keys such as states or jurisdictions recur across sections or returns, so the key alone is not a unique target identifier. \\
+\path{heterogeneous_record_list} & A single output list contains multiple schema families, as in policy packets. \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+We do not print benchmark labels inside the PDFs because that would reduce realism and could make extraction easier. The exact tags live in sidecar metadata; \Cref{tab:complexity-doc-examples} in the appendix maps every canonical stressor to representative pages for visual audit.
+
+\subsection{OCR condition}
+\label{subsec:ocr-condition}
+Every released PDF has an OCR transcript generated from rendered page images. The released transcript condition was produced with Google Gemini 3.5 Flash vision OCR through the direct Google/Vertex Gemini API path, after rasterizing PDF pages at 200 DPI. The OCR transcript is the released text condition for this version; it is not the PDF text layer or the HTML source text. We treat OCR as a controlled input condition: a system may evaluate directly from the PDF, from the OCR transcript, or from its own OCR pipeline, but reported results should state the input condition clearly.
+
+\subsection{Long-range evidence}
+LongListBench includes single-document multi-hop cases because many production tasks are not contained in one adjacent table region. A target loss-run record may require joining a front claim schedule against policy registers, driver rosters, cause-code appendices, claimant indexes, and payment ledgers that appear dozens or hundreds of pages later. Policy packets require similar joins across declarations, location schedules, forms, endorsements, rating pages, and premium summaries.
+
+This design is intended to stress extraction systems that can inspect long documents, preserve join keys across distant sections, and verify record completeness. It is also intended to make future agentic and retrieval-loop methods measurable without changing the public data format: each sample remains one PDF with one ground-truth list.

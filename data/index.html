@@ -126,15 +126,16 @@
     <h1>Benchmark Instance Index</h1>
     <div class="meta">
       <div><span class="mono">/Users/anton/d/kay/longlistbench/data</span></div>
-      <div>Built at: <span class="mono">2026-06-21T18:45:44.251137+00:00</span></div>
-      <div>Total instances: <span class="mono">86</span></div>
-      <div>By tier: <span class="mono">easy: 30, extreme: 10, hard: 16, medium: 24, mixed: 2, multihop: 4</span></div>
-      <div>By format: <span class="mono">crosspage: 6, detailed: 40, table: 40</span></div>
+      <div>Built at: <span class="mono">2026-07-01T12:01:33.829272+00:00</span></div>
+      <div>Total instances: <span class="mono">36</span></div>
+      <div>By regime: <span class="mono">claim_crosspage_multihop: 3, driver_mvr_request_and_roster: 3, driver_schedule_spreadsheet_export: 1, ifta_mileage_by_vehicle: 8, ifta_multisection_return_packet: 2, ifta_return_schedule_details: 5, ifta_tax_return_inquiry_detail: 2, ifta_tax_return_summary: 4, loss_run_external: 3, policy_multi_hop: 3, vehicle_schedule_spreadsheet_export: 2</span></div>
+      <div>By template: <span class="mono">driver_mvr_request_and_roster: 3, driver_schedule_spreadsheet_export: 1, ifta_mileage_by_vehicle: 8, ifta_multisection_return_packet: 2, ifta_return_schedule_details: 5, ifta_tax_return_inquiry_detail: 2, ifta_tax_return_summary: 4, loss_run_external: 3, mixed: 1, multihop: 2, policy_multihop_bop: 1, policy_multihop_cgl: 1, policy_multihop_wc: 1, vehicle_schedule_spreadsheet_export: 2</span></div>
+      <div>By format: <span class="mono">crosspage: 6, production_like_pdf: 30</span></div>
     </div>
 
     <div class="panel">
       <div class="controls">
-        <input id="search" type="search" placeholder="Filter by id / problems / tier / format..." oninput="filterRows()" />
+        <input id="search" type="search" placeholder="Filter by id / problems / regime / template / format..." oninput="filterRows()" />
       </div>
       <div class="hint">Click a column header to sort. Links open the corresponding benchmark artifacts in this directory.</div>
     </div>
@@ -144,9 +145,11 @@
         <thead>
           <tr>
             <th data-type="text">id</th>
-            <th data-type="text">tier</th>
+            <th data-type="text">complexity regime</th>
+            <th data-type="text">template family</th>
             <th data-type="text">format</th>
             <th data-type="text">domain</th>
+            <th data-type="text">HF config</th>
             <th data-type="text">lob</th>
             <th data-type="text">record type</th>
             <th data-type="num" class="num">records</th>
@@ -161,1896 +164,832 @@
         </thead>
         <tbody>
           <tr>
-  <td class="mono">easy_10_001_detailed</td>
-  <td>easy</td>
-  <td>detailed</td>
-  <td>claims</td>
+  <td class="mono">driver_mvr_packet_001</td>
+  <td>driver_mvr_request_and_roster</td>
+  <td>driver_mvr_request_and_roster</td>
+  <td>production_like_pdf</td>
+  <td>commercial_insurance_operations</td>
+  <td>core_operations</td>
   <td></td>
-  <td>loss_run_incident</td>
-  <td class="num">10</td>
-  <td class="num">9</td>
-  <td class="num">9</td>
-  <td>multi_row</td>
+  <td>driver_record</td>
+  <td class="num">260</td>
+  <td class="num">17</td>
+  <td class="num">17</td>
+  <td>high_density_long_list, production_like_layout, ocr_condition, page_breaks, multiple_tables, multi_row</td>
   <td>
-    <a href="./pdfs/easy_10_001_detailed.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
-    <a href="./html/easy_10_001_detailed.html" target="_blank" rel="noopener noreferrer">html</a>
-    <a href="./ground_truth/easy_10_001_detailed.json" target="_blank" rel="noopener noreferrer">json</a>
-    <a href="./transcripts/canonical/easy_10_001_detailed.md" target="_blank" rel="noopener noreferrer">canonical</a>
-    <a href="./transcripts/ocr_gemini/easy_10_001_detailed.md" target="_blank" rel="noopener noreferrer">ocr</a>
+    <a href="./pdfs/driver_mvr_packet_001.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
+    <a href="./html/driver_mvr_packet_001.html" target="_blank" rel="noopener noreferrer">html</a>
+    <a href="./ground_truth/driver_mvr_packet_001.json" target="_blank" rel="noopener noreferrer">json</a>
+    <a href="./transcripts/ocr_gemini/driver_mvr_packet_001.md" target="_blank" rel="noopener noreferrer">ocr</a>
   </td>
-  <td class="num">216.4 KB</td>
-  <td class="num">33.4 KB</td>
-  <td class="num">11.4 KB</td>
+  <td class="num">395.8 KB</td>
+  <td class="num">68.6 KB</td>
+  <td class="num">88.9 KB</td>
 </tr>
 <tr>
-  <td class="mono">easy_10_001_table</td>
-  <td>easy</td>
-  <td>table</td>
-  <td>claims</td>
+  <td class="mono">driver_mvr_packet_002</td>
+  <td>driver_mvr_request_and_roster</td>
+  <td>driver_mvr_request_and_roster</td>
+  <td>production_like_pdf</td>
+  <td>commercial_insurance_operations</td>
+  <td>core_operations</td>
   <td></td>
-  <td>loss_run_incident</td>
-  <td class="num">10</td>
-  <td class="num">9</td>
-  <td class="num">9</td>
-  <td>multi_row</td>
+  <td>driver_record</td>
+  <td class="num">500</td>
+  <td class="num">24</td>
+  <td class="num">24</td>
+  <td>high_density_long_list, production_like_layout, ocr_condition, page_breaks, multiple_tables, multi_row</td>
   <td>
-    <a href="./pdfs/easy_10_001_table.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
-    <a href="./html/easy_10_001_table.html" target="_blank" rel="noopener noreferrer">html</a>
-    <a href="./ground_truth/easy_10_001_table.json" target="_blank" rel="noopener noreferrer">json</a>
-    <a href="./transcripts/canonical/easy_10_001_table.md" target="_blank" rel="noopener noreferrer">canonical</a>
-    <a href="./transcripts/ocr_gemini/easy_10_001_table.md" target="_blank" rel="noopener noreferrer">ocr</a>
+    <a href="./pdfs/driver_mvr_packet_002.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
+    <a href="./html/driver_mvr_packet_002.html" target="_blank" rel="noopener noreferrer">html</a>
+    <a href="./ground_truth/driver_mvr_packet_002.json" target="_blank" rel="noopener noreferrer">json</a>
+    <a href="./transcripts/ocr_gemini/driver_mvr_packet_002.md" target="_blank" rel="noopener noreferrer">ocr</a>
   </td>
-  <td class="num">263.0 KB</td>
-  <td class="num">25.9 KB</td>
-  <td class="num">11.3 KB</td>
+  <td class="num">440.3 KB</td>
+  <td class="num">116.7 KB</td>
+  <td class="num">171.3 KB</td>
 </tr>
 <tr>
-  <td class="mono">easy_10_002_detailed</td>
-  <td>easy</td>
-  <td>detailed</td>
-  <td>claims</td>
+  <td class="mono">driver_mvr_packet_003</td>
+  <td>driver_mvr_request_and_roster</td>
+  <td>driver_mvr_request_and_roster</td>
+  <td>production_like_pdf</td>
+  <td>commercial_insurance_operations</td>
+  <td>core_operations</td>
   <td></td>
-  <td>loss_run_incident</td>
-  <td class="num">10</td>
-  <td class="num">8</td>
-  <td class="num">8</td>
-  <td>page_breaks</td>
+  <td>driver_record</td>
+  <td class="num">500</td>
+  <td class="num">24</td>
+  <td class="num">24</td>
+  <td>high_density_long_list, production_like_layout, ocr_condition, page_breaks, multiple_tables, multi_row</td>
   <td>
-    <a href="./pdfs/easy_10_002_detailed.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
-    <a href="./html/easy_10_002_detailed.html" target="_blank" rel="noopener noreferrer">html</a>
-    <a href="./ground_truth/easy_10_002_detailed.json" target="_blank" rel="noopener noreferrer">json</a>
-    <a href="./transcripts/canonical/easy_10_002_detailed.md" target="_blank" rel="noopener noreferrer">canonical</a>
-    <a href="./transcripts/ocr_gemini/easy_10_002_detailed.md" target="_blank" rel="noopener noreferrer">ocr</a>
+    <a href="./pdfs/driver_mvr_packet_003.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
+    <a href="./html/driver_mvr_packet_003.html" target="_blank" rel="noopener noreferrer">html</a>
+    <a href="./ground_truth/driver_mvr_packet_003.json" target="_blank" rel="noopener noreferrer">json</a>
+    <a href="./transcripts/ocr_gemini/driver_mvr_packet_003.md" target="_blank" rel="noopener noreferrer">ocr</a>
   </td>
-  <td class="num">211.3 KB</td>
-  <td class="num">33.3 KB</td>
-  <td class="num">11.4 KB</td>
+  <td class="num">441.6 KB</td>
+  <td class="num">116.7 KB</td>
+  <td class="num">171.3 KB</td>
 </tr>
 <tr>
-  <td class="mono">easy_10_002_table</td>
-  <td>easy</td>
-  <td>table</td>
-  <td>claims</td>
+  <td class="mono">driver_schedule_sparse_001</td>
+  <td>driver_schedule_spreadsheet_export</td>
+  <td>driver_schedule_spreadsheet_export</td>
+  <td>production_like_pdf</td>
+  <td>commercial_insurance_operations</td>
+  <td>core_operations</td>
   <td></td>
-  <td>loss_run_incident</td>
-  <td class="num">10</td>
-  <td class="num">10</td>
-  <td class="num">10</td>
-  <td>page_breaks</td>
+  <td>driver_schedule_row</td>
+  <td class="num">500</td>
+  <td class="num">16</td>
+  <td class="num">16</td>
+  <td>high_density_long_list, production_like_layout, ocr_condition, page_breaks, large_doc, multiple_tables, layout_randomization, inherited_context, split_records, non_target_rows</td>
   <td>
-    <a href="./pdfs/easy_10_002_table.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
-    <a href="./html/easy_10_002_table.html" target="_blank" rel="noopener noreferrer">html</a>
-    <a href="./ground_truth/easy_10_002_table.json" target="_blank" rel="noopener noreferrer">json</a>
-    <a href="./transcripts/canonical/easy_10_002_table.md" target="_blank" rel="noopener noreferrer">canonical</a>
-    <a href="./transcripts/ocr_gemini/easy_10_002_table.md" target="_blank" rel="noopener noreferrer">ocr</a>
+    <a href="./pdfs/driver_schedule_sparse_001.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
+    <a href="./html/driver_schedule_sparse_001.html" target="_blank" rel="noopener noreferrer">html</a>
+    <a href="./ground_truth/driver_schedule_sparse_001.json" target="_blank" rel="noopener noreferrer">json</a>
+    <a href="./transcripts/ocr_gemini/driver_schedule_sparse_001.md" target="_blank" rel="noopener noreferrer">ocr</a>
   </td>
-  <td class="num">262.8 KB</td>
-  <td class="num">27.0 KB</td>
-  <td class="num">11.4 KB</td>
+  <td class="num">202.4 KB</td>
+  <td class="num">58.2 KB</td>
+  <td class="num">69.9 KB</td>
 </tr>
 <tr>
-  <td class="mono">easy_10_003_detailed</td>
-  <td>easy</td>
-  <td>detailed</td>
-  <td>claims</td>
+  <td class="mono">ifta_mileage_by_vehicle_001</td>
+  <td>ifta_mileage_by_vehicle</td>
+  <td>ifta_mileage_by_vehicle</td>
+  <td>production_like_pdf</td>
+  <td>commercial_insurance_operations</td>
+  <td>core_operations</td>
   <td></td>
-  <td>loss_run_incident</td>
-  <td class="num">10</td>
-  <td class="num">9</td>
-  <td class="num">9</td>
-  <td>multi_row, page_breaks</td>
+  <td>vehicle_state_mileage_row</td>
+  <td class="num">1159</td>
+  <td class="num">97</td>
+  <td class="num">97</td>
+  <td>high_density_long_list, production_like_layout, ocr_condition, page_breaks, large_doc, multiple_tables, multi_row</td>
   <td>
-    <a href="./pdfs/easy_10_003_detailed.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
-    <a href="./html/easy_10_003_detailed.html" target="_blank" rel="noopener noreferrer">html</a>
-    <a href="./ground_truth/easy_10_003_detailed.json" target="_blank" rel="noopener noreferrer">json</a>
-    <a href="./transcripts/canonical/easy_10_003_detailed.md" target="_blank" rel="noopener noreferrer">canonical</a>
-    <a href="./transcripts/ocr_gemini/easy_10_003_detailed.md" target="_blank" rel="noopener noreferrer">ocr</a>
+    <a href="./pdfs/ifta_mileage_by_vehicle_001.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
+    <a href="./html/ifta_mileage_by_vehicle_001.html" target="_blank" rel="noopener noreferrer">html</a>
+    <a href="./ground_truth/ifta_mileage_by_vehicle_001.json" target="_blank" rel="noopener noreferrer">json</a>
+    <a href="./transcripts/ocr_gemini/ifta_mileage_by_vehicle_001.md" target="_blank" rel="noopener noreferrer">ocr</a>
   </td>
-  <td class="num">214.4 KB</td>
-  <td class="num">33.1 KB</td>
-  <td class="num">11.3 KB</td>
+  <td class="num">574.5 KB</td>
+  <td class="num">499.0 KB</td>
+  <td class="num">163.1 KB</td>
 </tr>
 <tr>
-  <td class="mono">easy_10_003_table</td>
-  <td>easy</td>
-  <td>table</td>
-  <td>claims</td>
+  <td class="mono">ifta_mileage_by_vehicle_002</td>
+  <td>ifta_mileage_by_vehicle</td>
+  <td>ifta_mileage_by_vehicle</td>
+  <td>production_like_pdf</td>
+  <td>commercial_insurance_operations</td>
+  <td>core_operations</td>
   <td></td>
-  <td>loss_run_incident</td>
-  <td class="num">10</td>
-  <td class="num">10</td>
-  <td class="num">10</td>
-  <td>multi_row, page_breaks</td>
+  <td>vehicle_state_mileage_row</td>
+  <td class="num">2143</td>
+  <td class="num">182</td>
+  <td class="num">182</td>
+  <td>high_density_long_list, production_like_layout, ocr_condition, page_breaks, large_doc, multiple_tables, multi_row</td>
   <td>
-    <a href="./pdfs/easy_10_003_table.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
-    <a href="./html/easy_10_003_table.html" target="_blank" rel="noopener noreferrer">html</a>
-    <a href="./ground_truth/easy_10_003_table.json" target="_blank" rel="noopener noreferrer">json</a>
-    <a href="./transcripts/canonical/easy_10_003_table.md" target="_blank" rel="noopener noreferrer">canonical</a>
-    <a href="./transcripts/ocr_gemini/easy_10_003_table.md" target="_blank" rel="noopener noreferrer">ocr</a>
+    <a href="./pdfs/ifta_mileage_by_vehicle_002.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
+    <a href="./html/ifta_mileage_by_vehicle_002.html" target="_blank" rel="noopener noreferrer">html</a>
+    <a href="./ground_truth/ifta_mileage_by_vehicle_002.json" target="_blank" rel="noopener noreferrer">json</a>
+    <a href="./transcripts/ocr_gemini/ifta_mileage_by_vehicle_002.md" target="_blank" rel="noopener noreferrer">ocr</a>
   </td>
-  <td class="num">265.0 KB</td>
-  <td class="num">27.1 KB</td>
-  <td class="num">11.4 KB</td>
+  <td class="num">947.0 KB</td>
+  <td class="num">916.6 KB</td>
+  <td class="num">301.7 KB</td>
 </tr>
 <tr>
-  <td class="mono">easy_10_004_detailed</td>
-  <td>easy</td>
-  <td>detailed</td>
-  <td>claims</td>
+  <td class="mono">ifta_mileage_by_vehicle_003</td>
+  <td>ifta_mileage_by_vehicle</td>
+  <td>ifta_mileage_by_vehicle</td>
+  <td>production_like_pdf</td>
+  <td>commercial_insurance_operations</td>
+  <td>core_operations</td>
   <td></td>
-  <td>loss_run_incident</td>
-  <td class="num">11</td>
-  <td class="num">8</td>
-  <td class="num">8</td>
-  <td>duplicates</td>
+  <td>vehicle_state_mileage_row</td>
+  <td class="num">2195</td>
+  <td class="num">188</td>
+  <td class="num">188</td>
+  <td>high_density_long_list, production_like_layout, ocr_condition, page_breaks, large_doc, multiple_tables, multi_row</td>
   <td>
-    <a href="./pdfs/easy_10_004_detailed.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
-    <a href="./html/easy_10_004_detailed.html" target="_blank" rel="noopener noreferrer">html</a>
-    <a href="./ground_truth/easy_10_004_detailed.json" target="_blank" rel="noopener noreferrer">json</a>
-    <a href="./transcripts/canonical/easy_10_004_detailed.md" target="_blank" rel="noopener noreferrer">canonical</a>
-    <a href="./transcripts/ocr_gemini/easy_10_004_detailed.md" target="_blank" rel="noopener noreferrer">ocr</a>
+    <a href="./pdfs/ifta_mileage_by_vehicle_003.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
+    <a href="./html/ifta_mileage_by_vehicle_003.html" target="_blank" rel="noopener noreferrer">html</a>
+    <a href="./ground_truth/ifta_mileage_by_vehicle_003.json" target="_blank" rel="noopener noreferrer">json</a>
+    <a href="./transcripts/ocr_gemini/ifta_mileage_by_vehicle_003.md" target="_blank" rel="noopener noreferrer">ocr</a>
   </td>
-  <td class="num">213.7 KB</td>
-  <td class="num">36.1 KB</td>
-  <td class="num">12.7 KB</td>
+  <td class="num">973.6 KB</td>
+  <td class="num">940.9 KB</td>
+  <td class="num">308.6 KB</td>
 </tr>
 <tr>
-  <td class="mono">easy_10_004_table</td>
-  <td>easy</td>
-  <td>table</td>
-  <td>claims</td>
+  <td class="mono">ifta_mileage_by_vehicle_004</td>
+  <td>ifta_mileage_by_vehicle</td>
+  <td>ifta_mileage_by_vehicle</td>
+  <td>production_like_pdf</td>
+  <td>commercial_insurance_operations</td>
+  <td>core_operations</td>
   <td></td>
-  <td>loss_run_incident</td>
-  <td class="num">11</td>
-  <td class="num">10</td>
-  <td class="num">10</td>
-  <td>duplicates</td>
+  <td>vehicle_state_mileage_row</td>
+  <td class="num">2239</td>
+  <td class="num">193</td>
+  <td class="num">193</td>
+  <td>high_density_long_list, production_like_layout, ocr_condition, page_breaks, large_doc, multiple_tables, multi_row</td>
   <td>
-    <a href="./pdfs/easy_10_004_table.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
-    <a href="./html/easy_10_004_table.html" target="_blank" rel="noopener noreferrer">html</a>
-    <a href="./ground_truth/easy_10_004_table.json" target="_blank" rel="noopener noreferrer">json</a>
-    <a href="./transcripts/canonical/easy_10_004_table.md" target="_blank" rel="noopener noreferrer">canonical</a>
-    <a href="./transcripts/ocr_gemini/easy_10_004_table.md" target="_blank" rel="noopener noreferrer">ocr</a>
+    <a href="./pdfs/ifta_mileage_by_vehicle_004.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
+    <a href="./html/ifta_mileage_by_vehicle_004.html" target="_blank" rel="noopener noreferrer">html</a>
+    <a href="./ground_truth/ifta_mileage_by_vehicle_004.json" target="_blank" rel="noopener noreferrer">json</a>
+    <a href="./transcripts/ocr_gemini/ifta_mileage_by_vehicle_004.md" target="_blank" rel="noopener noreferrer">ocr</a>
   </td>
-  <td class="num">262.6 KB</td>
-  <td class="num">27.1 KB</td>
-  <td class="num">12.4 KB</td>
+  <td class="num">991.8 KB</td>
+  <td class="num">959.8 KB</td>
+  <td class="num">315.1 KB</td>
 </tr>
 <tr>
-  <td class="mono">easy_10_005_detailed</td>
-  <td>easy</td>
-  <td>detailed</td>
-  <td>claims</td>
+  <td class="mono">ifta_mileage_by_vehicle_005</td>
+  <td>ifta_mileage_by_vehicle</td>
+  <td>ifta_mileage_by_vehicle</td>
+  <td>production_like_pdf</td>
+  <td>commercial_insurance_operations</td>
+  <td>core_operations</td>
   <td></td>
-  <td>loss_run_incident</td>
-  <td class="num">11</td>
-  <td class="num">8</td>
-  <td class="num">8</td>
-  <td>multi_row, duplicates</td>
+  <td>vehicle_state_mileage_row</td>
+  <td class="num">2379</td>
+  <td class="num">198</td>
+  <td class="num">198</td>
+  <td>high_density_long_list, production_like_layout, ocr_condition, page_breaks, large_doc, multiple_tables, multi_row</td>
   <td>
-    <a href="./pdfs/easy_10_005_detailed.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
-    <a href="./html/easy_10_005_detailed.html" target="_blank" rel="noopener noreferrer">html</a>
-    <a href="./ground_truth/easy_10_005_detailed.json" target="_blank" rel="noopener noreferrer">json</a>
-    <a href="./transcripts/canonical/easy_10_005_detailed.md" target="_blank" rel="noopener noreferrer">canonical</a>
-    <a href="./transcripts/ocr_gemini/easy_10_005_detailed.md" target="_blank" rel="noopener noreferrer">ocr</a>
+    <a href="./pdfs/ifta_mileage_by_vehicle_005.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
+    <a href="./html/ifta_mileage_by_vehicle_005.html" target="_blank" rel="noopener noreferrer">html</a>
+    <a href="./ground_truth/ifta_mileage_by_vehicle_005.json" target="_blank" rel="noopener noreferrer">json</a>
+    <a href="./transcripts/ocr_gemini/ifta_mileage_by_vehicle_005.md" target="_blank" rel="noopener noreferrer">ocr</a>
   </td>
+  <td class="num">1022.2 KB</td>
+  <td class="num">1012.3 KB</td>
+  <td class="num">334.7 KB</td>
+</tr>
+<tr>
+  <td class="mono">ifta_mileage_by_vehicle_006</td>
+  <td>ifta_mileage_by_vehicle</td>
+  <td>ifta_mileage_by_vehicle</td>
+  <td>production_like_pdf</td>
+  <td>commercial_insurance_operations</td>
+  <td>core_operations</td>
+  <td></td>
+  <td>vehicle_state_mileage_row</td>
+  <td class="num">2434</td>
+  <td class="num">206</td>
+  <td class="num">206</td>
+  <td>high_density_long_list, production_like_layout, ocr_condition, page_breaks, large_doc, multiple_tables, multi_row</td>
+  <td>
+    <a href="./pdfs/ifta_mileage_by_vehicle_006.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
+    <a href="./html/ifta_mileage_by_vehicle_006.html" target="_blank" rel="noopener noreferrer">html</a>
+    <a href="./ground_truth/ifta_mileage_by_vehicle_006.json" target="_blank" rel="noopener noreferrer">json</a>
+    <a href="./transcripts/ocr_gemini/ifta_mileage_by_vehicle_006.md" target="_blank" rel="noopener noreferrer">ocr</a>
+  </td>
+  <td class="num">1.03 MB</td>
+  <td class="num">1.02 MB</td>
+  <td class="num">342.4 KB</td>
+</tr>
+<tr>
+  <td class="mono">ifta_mileage_by_vehicle_007</td>
+  <td>ifta_mileage_by_vehicle</td>
+  <td>ifta_mileage_by_vehicle</td>
+  <td>production_like_pdf</td>
+  <td>commercial_insurance_operations</td>
+  <td>core_operations</td>
+  <td></td>
+  <td>vehicle_state_mileage_row</td>
+  <td class="num">2445</td>
+  <td class="num">210</td>
+  <td class="num">210</td>
+  <td>high_density_long_list, production_like_layout, ocr_condition, page_breaks, large_doc, multiple_tables, multi_row</td>
+  <td>
+    <a href="./pdfs/ifta_mileage_by_vehicle_007.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
+    <a href="./html/ifta_mileage_by_vehicle_007.html" target="_blank" rel="noopener noreferrer">html</a>
+    <a href="./ground_truth/ifta_mileage_by_vehicle_007.json" target="_blank" rel="noopener noreferrer">json</a>
+    <a href="./transcripts/ocr_gemini/ifta_mileage_by_vehicle_007.md" target="_blank" rel="noopener noreferrer">ocr</a>
+  </td>
+  <td class="num">1.04 MB</td>
+  <td class="num">1.02 MB</td>
+  <td class="num">344.3 KB</td>
+</tr>
+<tr>
+  <td class="mono">ifta_mileage_by_vehicle_008</td>
+  <td>ifta_mileage_by_vehicle</td>
+  <td>ifta_mileage_by_vehicle</td>
+  <td>production_like_pdf</td>
+  <td>commercial_insurance_operations</td>
+  <td>core_operations</td>
+  <td></td>
+  <td>vehicle_state_mileage_row</td>
+  <td class="num">2571</td>
+  <td class="num">218</td>
+  <td class="num">218</td>
+  <td>high_density_long_list, production_like_layout, ocr_condition, page_breaks, large_doc, multiple_tables, multi_row</td>
+  <td>
+    <a href="./pdfs/ifta_mileage_by_vehicle_008.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
+    <a href="./html/ifta_mileage_by_vehicle_008.html" target="_blank" rel="noopener noreferrer">html</a>
+    <a href="./ground_truth/ifta_mileage_by_vehicle_008.json" target="_blank" rel="noopener noreferrer">json</a>
+    <a href="./transcripts/ocr_gemini/ifta_mileage_by_vehicle_008.md" target="_blank" rel="noopener noreferrer">ocr</a>
+  </td>
+  <td class="num">1.08 MB</td>
+  <td class="num">1.07 MB</td>
+  <td class="num">361.7 KB</td>
+</tr>
+<tr>
+  <td class="mono">ifta_multisection_return_001</td>
+  <td>ifta_multisection_return_packet</td>
+  <td>ifta_multisection_return_packet</td>
+  <td>production_like_pdf</td>
+  <td>commercial_insurance_operations</td>
+  <td>core_operations</td>
+  <td></td>
+  <td>ifta_multisection_jurisdiction_row</td>
+  <td class="num">335</td>
+  <td class="num">60</td>
+  <td class="num">60</td>
+  <td>high_density_long_list, production_like_layout, ocr_condition, ocr_layout_condition, page_breaks, large_doc, multiple_tables, multi_row, inherited_context, split_records, non_target_rows, repeated_keys, cross_section_join</td>
+  <td>
+    <a href="./pdfs/ifta_multisection_return_001.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
+    <a href="./html/ifta_multisection_return_001.html" target="_blank" rel="noopener noreferrer">html</a>
+    <a href="./ground_truth/ifta_multisection_return_001.json" target="_blank" rel="noopener noreferrer">json</a>
+    <a href="./transcripts/ocr_gemini/ifta_multisection_return_001.md" target="_blank" rel="noopener noreferrer">ocr</a>
+  </td>
+  <td class="num">7.00 MB</td>
+  <td class="num">198.7 KB</td>
+  <td class="num">147.0 KB</td>
+</tr>
+<tr>
+  <td class="mono">ifta_multisection_return_002</td>
+  <td>ifta_multisection_return_packet</td>
+  <td>ifta_multisection_return_packet</td>
+  <td>production_like_pdf</td>
+  <td>commercial_insurance_operations</td>
+  <td>core_operations</td>
+  <td></td>
+  <td>ifta_multisection_jurisdiction_row</td>
+  <td class="num">461</td>
+  <td class="num">84</td>
+  <td class="num">84</td>
+  <td>high_density_long_list, production_like_layout, ocr_condition, ocr_layout_condition, page_breaks, large_doc, multiple_tables, multi_row, inherited_context, split_records, non_target_rows, repeated_keys, cross_section_join</td>
+  <td>
+    <a href="./pdfs/ifta_multisection_return_002.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
+    <a href="./html/ifta_multisection_return_002.html" target="_blank" rel="noopener noreferrer">html</a>
+    <a href="./ground_truth/ifta_multisection_return_002.json" target="_blank" rel="noopener noreferrer">json</a>
+    <a href="./transcripts/ocr_gemini/ifta_multisection_return_002.md" target="_blank" rel="noopener noreferrer">ocr</a>
+  </td>
+  <td class="num">9.74 MB</td>
+  <td class="num">274.0 KB</td>
+  <td class="num">202.2 KB</td>
+</tr>
+<tr>
+  <td class="mono">ifta_return_schedule_001</td>
+  <td>ifta_return_schedule_details</td>
+  <td>ifta_return_schedule_details</td>
+  <td>production_like_pdf</td>
+  <td>commercial_insurance_operations</td>
+  <td>core_operations</td>
+  <td></td>
+  <td>return_schedule_row</td>
+  <td class="num">582</td>
+  <td class="num">72</td>
+  <td class="num">72</td>
+  <td>high_density_long_list, production_like_layout, ocr_condition, page_breaks, large_doc, multiple_tables, layout_randomization, inherited_context, split_records, non_target_rows</td>
+  <td>
+    <a href="./pdfs/ifta_return_schedule_001.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
+    <a href="./html/ifta_return_schedule_001.html" target="_blank" rel="noopener noreferrer">html</a>
+    <a href="./ground_truth/ifta_return_schedule_001.json" target="_blank" rel="noopener noreferrer">json</a>
+    <a href="./transcripts/ocr_gemini/ifta_return_schedule_001.md" target="_blank" rel="noopener noreferrer">ocr</a>
+  </td>
+  <td class="num">377.8 KB</td>
   <td class="num">210.5 KB</td>
-  <td class="num">35.6 KB</td>
-  <td class="num">12.4 KB</td>
+  <td class="num">200.3 KB</td>
 </tr>
 <tr>
-  <td class="mono">easy_10_005_table</td>
-  <td>easy</td>
-  <td>table</td>
-  <td>claims</td>
+  <td class="mono">ifta_return_schedule_002</td>
+  <td>ifta_return_schedule_details</td>
+  <td>ifta_return_schedule_details</td>
+  <td>production_like_pdf</td>
+  <td>commercial_insurance_operations</td>
+  <td>core_operations</td>
   <td></td>
-  <td>loss_run_incident</td>
-  <td class="num">11</td>
-  <td class="num">10</td>
-  <td class="num">10</td>
-  <td>multi_row, duplicates</td>
+  <td>return_schedule_row</td>
+  <td class="num">998</td>
+  <td class="num">108</td>
+  <td class="num">108</td>
+  <td>high_density_long_list, production_like_layout, ocr_condition, page_breaks, large_doc, multiple_tables, layout_randomization, inherited_context, split_records, non_target_rows</td>
   <td>
-    <a href="./pdfs/easy_10_005_table.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
-    <a href="./html/easy_10_005_table.html" target="_blank" rel="noopener noreferrer">html</a>
-    <a href="./ground_truth/easy_10_005_table.json" target="_blank" rel="noopener noreferrer">json</a>
-    <a href="./transcripts/canonical/easy_10_005_table.md" target="_blank" rel="noopener noreferrer">canonical</a>
-    <a href="./transcripts/ocr_gemini/easy_10_005_table.md" target="_blank" rel="noopener noreferrer">ocr</a>
+    <a href="./pdfs/ifta_return_schedule_002.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
+    <a href="./html/ifta_return_schedule_002.html" target="_blank" rel="noopener noreferrer">html</a>
+    <a href="./ground_truth/ifta_return_schedule_002.json" target="_blank" rel="noopener noreferrer">json</a>
+    <a href="./transcripts/ocr_gemini/ifta_return_schedule_002.md" target="_blank" rel="noopener noreferrer">ocr</a>
   </td>
-  <td class="num">264.8 KB</td>
-  <td class="num">27.2 KB</td>
-  <td class="num">12.4 KB</td>
+  <td class="num">511.4 KB</td>
+  <td class="num">353.7 KB</td>
+  <td class="num">344.2 KB</td>
 </tr>
 <tr>
-  <td class="mono">easy_10_006_detailed</td>
-  <td>easy</td>
-  <td>detailed</td>
-  <td>claims</td>
+  <td class="mono">ifta_return_schedule_003</td>
+  <td>ifta_return_schedule_details</td>
+  <td>ifta_return_schedule_details</td>
+  <td>production_like_pdf</td>
+  <td>commercial_insurance_operations</td>
+  <td>core_operations</td>
   <td></td>
-  <td>loss_run_incident</td>
-  <td class="num">10</td>
-  <td class="num">9</td>
-  <td class="num">9</td>
-  <td>multi_row</td>
+  <td>return_schedule_row</td>
+  <td class="num">1085</td>
+  <td class="num">114</td>
+  <td class="num">114</td>
+  <td>high_density_long_list, production_like_layout, ocr_condition, page_breaks, large_doc, multiple_tables, layout_randomization, inherited_context, split_records, non_target_rows</td>
   <td>
-    <a href="./pdfs/easy_10_006_detailed.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
-    <a href="./html/easy_10_006_detailed.html" target="_blank" rel="noopener noreferrer">html</a>
-    <a href="./ground_truth/easy_10_006_detailed.json" target="_blank" rel="noopener noreferrer">json</a>
-    <a href="./transcripts/canonical/easy_10_006_detailed.md" target="_blank" rel="noopener noreferrer">canonical</a>
-    <a href="./transcripts/ocr_gemini/easy_10_006_detailed.md" target="_blank" rel="noopener noreferrer">ocr</a>
+    <a href="./pdfs/ifta_return_schedule_003.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
+    <a href="./html/ifta_return_schedule_003.html" target="_blank" rel="noopener noreferrer">html</a>
+    <a href="./ground_truth/ifta_return_schedule_003.json" target="_blank" rel="noopener noreferrer">json</a>
+    <a href="./transcripts/ocr_gemini/ifta_return_schedule_003.md" target="_blank" rel="noopener noreferrer">ocr</a>
   </td>
-  <td class="num">211.6 KB</td>
-  <td class="num">33.2 KB</td>
-  <td class="num">11.5 KB</td>
+  <td class="num">536.4 KB</td>
+  <td class="num">383.4 KB</td>
+  <td class="num">374.5 KB</td>
 </tr>
 <tr>
-  <td class="mono">easy_10_006_table</td>
-  <td>easy</td>
-  <td>table</td>
-  <td>claims</td>
+  <td class="mono">ifta_return_schedule_004</td>
+  <td>ifta_return_schedule_details</td>
+  <td>ifta_return_schedule_details</td>
+  <td>production_like_pdf</td>
+  <td>commercial_insurance_operations</td>
+  <td>core_operations</td>
   <td></td>
-  <td>loss_run_incident</td>
-  <td class="num">10</td>
-  <td class="num">9</td>
-  <td class="num">9</td>
-  <td>multi_row</td>
+  <td>return_schedule_row</td>
+  <td class="num">1101</td>
+  <td class="num">120</td>
+  <td class="num">120</td>
+  <td>high_density_long_list, production_like_layout, ocr_condition, page_breaks, large_doc, multiple_tables, layout_randomization, inherited_context, split_records, non_target_rows</td>
   <td>
-    <a href="./pdfs/easy_10_006_table.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
-    <a href="./html/easy_10_006_table.html" target="_blank" rel="noopener noreferrer">html</a>
-    <a href="./ground_truth/easy_10_006_table.json" target="_blank" rel="noopener noreferrer">json</a>
-    <a href="./transcripts/canonical/easy_10_006_table.md" target="_blank" rel="noopener noreferrer">canonical</a>
-    <a href="./transcripts/ocr_gemini/easy_10_006_table.md" target="_blank" rel="noopener noreferrer">ocr</a>
+    <a href="./pdfs/ifta_return_schedule_004.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
+    <a href="./html/ifta_return_schedule_004.html" target="_blank" rel="noopener noreferrer">html</a>
+    <a href="./ground_truth/ifta_return_schedule_004.json" target="_blank" rel="noopener noreferrer">json</a>
+    <a href="./transcripts/ocr_gemini/ifta_return_schedule_004.md" target="_blank" rel="noopener noreferrer">ocr</a>
   </td>
-  <td class="num">263.9 KB</td>
-  <td class="num">26.0 KB</td>
-  <td class="num">11.4 KB</td>
+  <td class="num">548.5 KB</td>
+  <td class="num">390.4 KB</td>
+  <td class="num">380.1 KB</td>
 </tr>
 <tr>
-  <td class="mono">easy_10_007_detailed</td>
-  <td>easy</td>
-  <td>detailed</td>
-  <td>claims</td>
+  <td class="mono">ifta_return_schedule_005</td>
+  <td>ifta_return_schedule_details</td>
+  <td>ifta_return_schedule_details</td>
+  <td>production_like_pdf</td>
+  <td>commercial_insurance_operations</td>
+  <td>core_operations</td>
   <td></td>
-  <td>loss_run_incident</td>
-  <td class="num">10</td>
-  <td class="num">9</td>
-  <td class="num">9</td>
-  <td>page_breaks</td>
+  <td>return_schedule_row</td>
+  <td class="num">1157</td>
+  <td class="num">126</td>
+  <td class="num">126</td>
+  <td>high_density_long_list, production_like_layout, ocr_condition, page_breaks, large_doc, multiple_tables, layout_randomization, inherited_context, split_records, non_target_rows</td>
   <td>
-    <a href="./pdfs/easy_10_007_detailed.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
-    <a href="./html/easy_10_007_detailed.html" target="_blank" rel="noopener noreferrer">html</a>
-    <a href="./ground_truth/easy_10_007_detailed.json" target="_blank" rel="noopener noreferrer">json</a>
-    <a href="./transcripts/canonical/easy_10_007_detailed.md" target="_blank" rel="noopener noreferrer">canonical</a>
-    <a href="./transcripts/ocr_gemini/easy_10_007_detailed.md" target="_blank" rel="noopener noreferrer">ocr</a>
+    <a href="./pdfs/ifta_return_schedule_005.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
+    <a href="./html/ifta_return_schedule_005.html" target="_blank" rel="noopener noreferrer">html</a>
+    <a href="./ground_truth/ifta_return_schedule_005.json" target="_blank" rel="noopener noreferrer">json</a>
+    <a href="./transcripts/ocr_gemini/ifta_return_schedule_005.md" target="_blank" rel="noopener noreferrer">ocr</a>
   </td>
-  <td class="num">214.4 KB</td>
-  <td class="num">34.6 KB</td>
-  <td class="num">11.6 KB</td>
+  <td class="num">568.0 KB</td>
+  <td class="num">410.9 KB</td>
+  <td class="num">399.3 KB</td>
 </tr>
 <tr>
-  <td class="mono">easy_10_007_table</td>
-  <td>easy</td>
-  <td>table</td>
-  <td>claims</td>
+  <td class="mono">ifta_tax_inquiry_001</td>
+  <td>ifta_tax_return_inquiry_detail</td>
+  <td>ifta_tax_return_inquiry_detail</td>
+  <td>production_like_pdf</td>
+  <td>commercial_insurance_operations</td>
+  <td>core_operations</td>
   <td></td>
-  <td>loss_run_incident</td>
-  <td class="num">10</td>
-  <td class="num">10</td>
-  <td class="num">10</td>
-  <td>page_breaks</td>
+  <td>tax_inquiry_record</td>
+  <td class="num">650</td>
+  <td class="num">29</td>
+  <td class="num">29</td>
+  <td>high_density_long_list, production_like_layout, ocr_condition, page_breaks, large_doc, multiple_tables, merged_cells, layout_randomization, inherited_context, split_records, non_target_rows</td>
   <td>
-    <a href="./pdfs/easy_10_007_table.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
-    <a href="./html/easy_10_007_table.html" target="_blank" rel="noopener noreferrer">html</a>
-    <a href="./ground_truth/easy_10_007_table.json" target="_blank" rel="noopener noreferrer">json</a>
-    <a href="./transcripts/canonical/easy_10_007_table.md" target="_blank" rel="noopener noreferrer">canonical</a>
-    <a href="./transcripts/ocr_gemini/easy_10_007_table.md" target="_blank" rel="noopener noreferrer">ocr</a>
+    <a href="./pdfs/ifta_tax_inquiry_001.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
+    <a href="./html/ifta_tax_inquiry_001.html" target="_blank" rel="noopener noreferrer">html</a>
+    <a href="./ground_truth/ifta_tax_inquiry_001.json" target="_blank" rel="noopener noreferrer">json</a>
+    <a href="./transcripts/ocr_gemini/ifta_tax_inquiry_001.md" target="_blank" rel="noopener noreferrer">ocr</a>
   </td>
-  <td class="num">263.4 KB</td>
-  <td class="num">27.1 KB</td>
-  <td class="num">11.4 KB</td>
+  <td class="num">217.5 KB</td>
+  <td class="num">82.4 KB</td>
+  <td class="num">80.9 KB</td>
 </tr>
 <tr>
-  <td class="mono">easy_10_008_detailed</td>
-  <td>easy</td>
-  <td>detailed</td>
-  <td>claims</td>
+  <td class="mono">ifta_tax_inquiry_002</td>
+  <td>ifta_tax_return_inquiry_detail</td>
+  <td>ifta_tax_return_inquiry_detail</td>
+  <td>production_like_pdf</td>
+  <td>commercial_insurance_operations</td>
+  <td>core_operations</td>
   <td></td>
-  <td>loss_run_incident</td>
-  <td class="num">10</td>
-  <td class="num">10</td>
-  <td class="num">10</td>
-  <td>multi_row, page_breaks</td>
+  <td>tax_inquiry_record</td>
+  <td class="num">650</td>
+  <td class="num">29</td>
+  <td class="num">29</td>
+  <td>high_density_long_list, production_like_layout, ocr_condition, page_breaks, large_doc, multiple_tables, merged_cells, layout_randomization, inherited_context, split_records, non_target_rows</td>
   <td>
-    <a href="./pdfs/easy_10_008_detailed.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
-    <a href="./html/easy_10_008_detailed.html" target="_blank" rel="noopener noreferrer">html</a>
-    <a href="./ground_truth/easy_10_008_detailed.json" target="_blank" rel="noopener noreferrer">json</a>
-    <a href="./transcripts/canonical/easy_10_008_detailed.md" target="_blank" rel="noopener noreferrer">canonical</a>
-    <a href="./transcripts/ocr_gemini/easy_10_008_detailed.md" target="_blank" rel="noopener noreferrer">ocr</a>
+    <a href="./pdfs/ifta_tax_inquiry_002.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
+    <a href="./html/ifta_tax_inquiry_002.html" target="_blank" rel="noopener noreferrer">html</a>
+    <a href="./ground_truth/ifta_tax_inquiry_002.json" target="_blank" rel="noopener noreferrer">json</a>
+    <a href="./transcripts/ocr_gemini/ifta_tax_inquiry_002.md" target="_blank" rel="noopener noreferrer">ocr</a>
   </td>
   <td class="num">217.0 KB</td>
-  <td class="num">34.2 KB</td>
-  <td class="num">11.5 KB</td>
+  <td class="num">82.4 KB</td>
+  <td class="num">80.9 KB</td>
 </tr>
 <tr>
-  <td class="mono">easy_10_008_table</td>
-  <td>easy</td>
-  <td>table</td>
-  <td>claims</td>
+  <td class="mono">ifta_tax_summary_001</td>
+  <td>ifta_tax_return_summary</td>
+  <td>ifta_tax_return_summary</td>
+  <td>production_like_pdf</td>
+  <td>commercial_insurance_operations</td>
+  <td>core_operations</td>
   <td></td>
-  <td>loss_run_incident</td>
-  <td class="num">10</td>
-  <td class="num">10</td>
-  <td class="num">10</td>
-  <td>multi_row, page_breaks</td>
+  <td>tax_return_jurisdiction_row</td>
+  <td class="num">760</td>
+  <td class="num">34</td>
+  <td class="num">34</td>
+  <td>high_density_long_list, production_like_layout, ocr_condition, page_breaks, large_doc, multiple_tables, layout_randomization, inherited_context, split_records, non_target_rows</td>
   <td>
-    <a href="./pdfs/easy_10_008_table.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
-    <a href="./html/easy_10_008_table.html" target="_blank" rel="noopener noreferrer">html</a>
-    <a href="./ground_truth/easy_10_008_table.json" target="_blank" rel="noopener noreferrer">json</a>
-    <a href="./transcripts/canonical/easy_10_008_table.md" target="_blank" rel="noopener noreferrer">canonical</a>
-    <a href="./transcripts/ocr_gemini/easy_10_008_table.md" target="_blank" rel="noopener noreferrer">ocr</a>
+    <a href="./pdfs/ifta_tax_summary_001.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
+    <a href="./html/ifta_tax_summary_001.html" target="_blank" rel="noopener noreferrer">html</a>
+    <a href="./ground_truth/ifta_tax_summary_001.json" target="_blank" rel="noopener noreferrer">json</a>
+    <a href="./transcripts/ocr_gemini/ifta_tax_summary_001.md" target="_blank" rel="noopener noreferrer">ocr</a>
   </td>
-  <td class="num">263.7 KB</td>
-  <td class="num">27.3 KB</td>
-  <td class="num">11.7 KB</td>
+  <td class="num">438.8 KB</td>
+  <td class="num">263.6 KB</td>
+  <td class="num">254.3 KB</td>
 </tr>
 <tr>
-  <td class="mono">easy_10_009_detailed</td>
-  <td>easy</td>
-  <td>detailed</td>
-  <td>claims</td>
+  <td class="mono">ifta_tax_summary_002</td>
+  <td>ifta_tax_return_summary</td>
+  <td>ifta_tax_return_summary</td>
+  <td>production_like_pdf</td>
+  <td>commercial_insurance_operations</td>
+  <td>core_operations</td>
   <td></td>
-  <td>loss_run_incident</td>
-  <td class="num">11</td>
-  <td class="num">8</td>
-  <td class="num">8</td>
-  <td>duplicates</td>
+  <td>tax_return_jurisdiction_row</td>
+  <td class="num">760</td>
+  <td class="num">34</td>
+  <td class="num">34</td>
+  <td>high_density_long_list, production_like_layout, ocr_condition, page_breaks, large_doc, multiple_tables, layout_randomization, inherited_context, split_records, non_target_rows</td>
   <td>
-    <a href="./pdfs/easy_10_009_detailed.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
-    <a href="./html/easy_10_009_detailed.html" target="_blank" rel="noopener noreferrer">html</a>
-    <a href="./ground_truth/easy_10_009_detailed.json" target="_blank" rel="noopener noreferrer">json</a>
-    <a href="./transcripts/canonical/easy_10_009_detailed.md" target="_blank" rel="noopener noreferrer">canonical</a>
-    <a href="./transcripts/ocr_gemini/easy_10_009_detailed.md" target="_blank" rel="noopener noreferrer">ocr</a>
+    <a href="./pdfs/ifta_tax_summary_002.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
+    <a href="./html/ifta_tax_summary_002.html" target="_blank" rel="noopener noreferrer">html</a>
+    <a href="./ground_truth/ifta_tax_summary_002.json" target="_blank" rel="noopener noreferrer">json</a>
+    <a href="./transcripts/ocr_gemini/ifta_tax_summary_002.md" target="_blank" rel="noopener noreferrer">ocr</a>
   </td>
-  <td class="num">203.3 KB</td>
-  <td class="num">33.8 KB</td>
-  <td class="num">12.1 KB</td>
+  <td class="num">438.5 KB</td>
+  <td class="num">263.5 KB</td>
+  <td class="num">254.2 KB</td>
 </tr>
 <tr>
-  <td class="mono">easy_10_009_table</td>
-  <td>easy</td>
-  <td>table</td>
-  <td>claims</td>
+  <td class="mono">ifta_tax_summary_003</td>
+  <td>ifta_tax_return_summary</td>
+  <td>ifta_tax_return_summary</td>
+  <td>production_like_pdf</td>
+  <td>commercial_insurance_operations</td>
+  <td>core_operations</td>
   <td></td>
-  <td>loss_run_incident</td>
-  <td class="num">11</td>
-  <td class="num">10</td>
-  <td class="num">10</td>
-  <td>duplicates</td>
+  <td>tax_return_jurisdiction_row</td>
+  <td class="num">760</td>
+  <td class="num">34</td>
+  <td class="num">34</td>
+  <td>high_density_long_list, production_like_layout, ocr_condition, page_breaks, large_doc, multiple_tables, layout_randomization, inherited_context, split_records, non_target_rows</td>
   <td>
-    <a href="./pdfs/easy_10_009_table.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
-    <a href="./html/easy_10_009_table.html" target="_blank" rel="noopener noreferrer">html</a>
-    <a href="./ground_truth/easy_10_009_table.json" target="_blank" rel="noopener noreferrer">json</a>
-    <a href="./transcripts/canonical/easy_10_009_table.md" target="_blank" rel="noopener noreferrer">canonical</a>
-    <a href="./transcripts/ocr_gemini/easy_10_009_table.md" target="_blank" rel="noopener noreferrer">ocr</a>
+    <a href="./pdfs/ifta_tax_summary_003.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
+    <a href="./html/ifta_tax_summary_003.html" target="_blank" rel="noopener noreferrer">html</a>
+    <a href="./ground_truth/ifta_tax_summary_003.json" target="_blank" rel="noopener noreferrer">json</a>
+    <a href="./transcripts/ocr_gemini/ifta_tax_summary_003.md" target="_blank" rel="noopener noreferrer">ocr</a>
   </td>
-  <td class="num">266.6 KB</td>
-  <td class="num">27.5 KB</td>
-  <td class="num">12.7 KB</td>
+  <td class="num">439.1 KB</td>
+  <td class="num">263.8 KB</td>
+  <td class="num">254.5 KB</td>
 </tr>
 <tr>
-  <td class="mono">easy_10_010_detailed</td>
-  <td>easy</td>
-  <td>detailed</td>
-  <td>claims</td>
+  <td class="mono">ifta_tax_summary_004</td>
+  <td>ifta_tax_return_summary</td>
+  <td>ifta_tax_return_summary</td>
+  <td>production_like_pdf</td>
+  <td>commercial_insurance_operations</td>
+  <td>core_operations</td>
   <td></td>
-  <td>loss_run_incident</td>
-  <td class="num">11</td>
-  <td class="num">10</td>
-  <td class="num">10</td>
-  <td>multi_row, duplicates</td>
+  <td>tax_return_jurisdiction_row</td>
+  <td class="num">760</td>
+  <td class="num">34</td>
+  <td class="num">34</td>
+  <td>high_density_long_list, production_like_layout, ocr_condition, page_breaks, large_doc, multiple_tables, layout_randomization, inherited_context, split_records, non_target_rows</td>
   <td>
-    <a href="./pdfs/easy_10_010_detailed.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
-    <a href="./html/easy_10_010_detailed.html" target="_blank" rel="noopener noreferrer">html</a>
-    <a href="./ground_truth/easy_10_010_detailed.json" target="_blank" rel="noopener noreferrer">json</a>
-    <a href="./transcripts/canonical/easy_10_010_detailed.md" target="_blank" rel="noopener noreferrer">canonical</a>
-    <a href="./transcripts/ocr_gemini/easy_10_010_detailed.md" target="_blank" rel="noopener noreferrer">ocr</a>
+    <a href="./pdfs/ifta_tax_summary_004.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
+    <a href="./html/ifta_tax_summary_004.html" target="_blank" rel="noopener noreferrer">html</a>
+    <a href="./ground_truth/ifta_tax_summary_004.json" target="_blank" rel="noopener noreferrer">json</a>
+    <a href="./transcripts/ocr_gemini/ifta_tax_summary_004.md" target="_blank" rel="noopener noreferrer">ocr</a>
   </td>
-  <td class="num">215.6 KB</td>
-  <td class="num">35.7 KB</td>
-  <td class="num">12.6 KB</td>
+  <td class="num">438.2 KB</td>
+  <td class="num">263.5 KB</td>
+  <td class="num">254.4 KB</td>
 </tr>
 <tr>
-  <td class="mono">easy_10_010_table</td>
-  <td>easy</td>
-  <td>table</td>
-  <td>claims</td>
+  <td class="mono">loss_run_external_001</td>
+  <td>loss_run_external</td>
+  <td>loss_run_external</td>
+  <td>production_like_pdf</td>
+  <td>commercial_insurance_operations</td>
+  <td>core_operations</td>
   <td></td>
-  <td>loss_run_incident</td>
-  <td class="num">11</td>
-  <td class="num">10</td>
-  <td class="num">10</td>
-  <td>multi_row, duplicates</td>
-  <td>
-    <a href="./pdfs/easy_10_010_table.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
-    <a href="./html/easy_10_010_table.html" target="_blank" rel="noopener noreferrer">html</a>
-    <a href="./ground_truth/easy_10_010_table.json" target="_blank" rel="noopener noreferrer">json</a>
-    <a href="./transcripts/canonical/easy_10_010_table.md" target="_blank" rel="noopener noreferrer">canonical</a>
-    <a href="./transcripts/ocr_gemini/easy_10_010_table.md" target="_blank" rel="noopener noreferrer">ocr</a>
-  </td>
-  <td class="num">267.8 KB</td>
-  <td class="num">27.4 KB</td>
-  <td class="num">12.6 KB</td>
-</tr>
-<tr>
-  <td class="mono">easy_10_011_detailed</td>
-  <td>easy</td>
-  <td>detailed</td>
-  <td>claims</td>
-  <td></td>
-  <td>loss_run_incident</td>
-  <td class="num">10</td>
-  <td class="num">7</td>
-  <td class="num">7</td>
-  <td>multi_row</td>
-  <td>
-    <a href="./pdfs/easy_10_011_detailed.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
-    <a href="./html/easy_10_011_detailed.html" target="_blank" rel="noopener noreferrer">html</a>
-    <a href="./ground_truth/easy_10_011_detailed.json" target="_blank" rel="noopener noreferrer">json</a>
-    <a href="./transcripts/canonical/easy_10_011_detailed.md" target="_blank" rel="noopener noreferrer">canonical</a>
-    <a href="./transcripts/ocr_gemini/easy_10_011_detailed.md" target="_blank" rel="noopener noreferrer">ocr</a>
-  </td>
-  <td class="num">206.9 KB</td>
-  <td class="num">32.3 KB</td>
-  <td class="num">11.1 KB</td>
-</tr>
-<tr>
-  <td class="mono">easy_10_011_table</td>
-  <td>easy</td>
-  <td>table</td>
-  <td>claims</td>
-  <td></td>
-  <td>loss_run_incident</td>
-  <td class="num">10</td>
-  <td class="num">9</td>
-  <td class="num">9</td>
-  <td>multi_row</td>
-  <td>
-    <a href="./pdfs/easy_10_011_table.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
-    <a href="./html/easy_10_011_table.html" target="_blank" rel="noopener noreferrer">html</a>
-    <a href="./ground_truth/easy_10_011_table.json" target="_blank" rel="noopener noreferrer">json</a>
-    <a href="./transcripts/canonical/easy_10_011_table.md" target="_blank" rel="noopener noreferrer">canonical</a>
-    <a href="./transcripts/ocr_gemini/easy_10_011_table.md" target="_blank" rel="noopener noreferrer">ocr</a>
-  </td>
-  <td class="num">261.8 KB</td>
-  <td class="num">25.8 KB</td>
-  <td class="num">11.2 KB</td>
-</tr>
-<tr>
-  <td class="mono">easy_10_012_detailed</td>
-  <td>easy</td>
-  <td>detailed</td>
-  <td>claims</td>
-  <td></td>
-  <td>loss_run_incident</td>
-  <td class="num">10</td>
-  <td class="num">8</td>
-  <td class="num">8</td>
-  <td>page_breaks</td>
-  <td>
-    <a href="./pdfs/easy_10_012_detailed.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
-    <a href="./html/easy_10_012_detailed.html" target="_blank" rel="noopener noreferrer">html</a>
-    <a href="./ground_truth/easy_10_012_detailed.json" target="_blank" rel="noopener noreferrer">json</a>
-    <a href="./transcripts/canonical/easy_10_012_detailed.md" target="_blank" rel="noopener noreferrer">canonical</a>
-    <a href="./transcripts/ocr_gemini/easy_10_012_detailed.md" target="_blank" rel="noopener noreferrer">ocr</a>
-  </td>
-  <td class="num">213.9 KB</td>
-  <td class="num">33.9 KB</td>
-  <td class="num">11.3 KB</td>
-</tr>
-<tr>
-  <td class="mono">easy_10_012_table</td>
-  <td>easy</td>
-  <td>table</td>
-  <td>claims</td>
-  <td></td>
-  <td>loss_run_incident</td>
-  <td class="num">10</td>
-  <td class="num">10</td>
-  <td class="num">10</td>
-  <td>page_breaks</td>
-  <td>
-    <a href="./pdfs/easy_10_012_table.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
-    <a href="./html/easy_10_012_table.html" target="_blank" rel="noopener noreferrer">html</a>
-    <a href="./ground_truth/easy_10_012_table.json" target="_blank" rel="noopener noreferrer">json</a>
-    <a href="./transcripts/canonical/easy_10_012_table.md" target="_blank" rel="noopener noreferrer">canonical</a>
-    <a href="./transcripts/ocr_gemini/easy_10_012_table.md" target="_blank" rel="noopener noreferrer">ocr</a>
-  </td>
-  <td class="num">262.5 KB</td>
-  <td class="num">27.0 KB</td>
-  <td class="num">11.4 KB</td>
-</tr>
-<tr>
-  <td class="mono">easy_10_013_detailed</td>
-  <td>easy</td>
-  <td>detailed</td>
-  <td>claims</td>
-  <td></td>
-  <td>loss_run_incident</td>
-  <td class="num">10</td>
-  <td class="num">9</td>
-  <td class="num">9</td>
-  <td>multi_row, page_breaks</td>
-  <td>
-    <a href="./pdfs/easy_10_013_detailed.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
-    <a href="./html/easy_10_013_detailed.html" target="_blank" rel="noopener noreferrer">html</a>
-    <a href="./ground_truth/easy_10_013_detailed.json" target="_blank" rel="noopener noreferrer">json</a>
-    <a href="./transcripts/canonical/easy_10_013_detailed.md" target="_blank" rel="noopener noreferrer">canonical</a>
-    <a href="./transcripts/ocr_gemini/easy_10_013_detailed.md" target="_blank" rel="noopener noreferrer">ocr</a>
-  </td>
-  <td class="num">216.6 KB</td>
-  <td class="num">33.9 KB</td>
-  <td class="num">11.6 KB</td>
-</tr>
-<tr>
-  <td class="mono">easy_10_013_table</td>
-  <td>easy</td>
-  <td>table</td>
-  <td>claims</td>
-  <td></td>
-  <td>loss_run_incident</td>
-  <td class="num">10</td>
-  <td class="num">10</td>
-  <td class="num">10</td>
-  <td>multi_row, page_breaks</td>
-  <td>
-    <a href="./pdfs/easy_10_013_table.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
-    <a href="./html/easy_10_013_table.html" target="_blank" rel="noopener noreferrer">html</a>
-    <a href="./ground_truth/easy_10_013_table.json" target="_blank" rel="noopener noreferrer">json</a>
-    <a href="./transcripts/canonical/easy_10_013_table.md" target="_blank" rel="noopener noreferrer">canonical</a>
-    <a href="./transcripts/ocr_gemini/easy_10_013_table.md" target="_blank" rel="noopener noreferrer">ocr</a>
-  </td>
-  <td class="num">265.7 KB</td>
-  <td class="num">27.1 KB</td>
-  <td class="num">11.4 KB</td>
-</tr>
-<tr>
-  <td class="mono">easy_10_014_detailed</td>
-  <td>easy</td>
-  <td>detailed</td>
-  <td>claims</td>
-  <td></td>
-  <td>loss_run_incident</td>
-  <td class="num">11</td>
-  <td class="num">8</td>
-  <td class="num">8</td>
-  <td>duplicates</td>
-  <td>
-    <a href="./pdfs/easy_10_014_detailed.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
-    <a href="./html/easy_10_014_detailed.html" target="_blank" rel="noopener noreferrer">html</a>
-    <a href="./ground_truth/easy_10_014_detailed.json" target="_blank" rel="noopener noreferrer">json</a>
-    <a href="./transcripts/canonical/easy_10_014_detailed.md" target="_blank" rel="noopener noreferrer">canonical</a>
-    <a href="./transcripts/ocr_gemini/easy_10_014_detailed.md" target="_blank" rel="noopener noreferrer">ocr</a>
-  </td>
-  <td class="num">212.3 KB</td>
-  <td class="num">35.3 KB</td>
-  <td class="num">12.6 KB</td>
-</tr>
-<tr>
-  <td class="mono">easy_10_014_table</td>
-  <td>easy</td>
-  <td>table</td>
-  <td>claims</td>
-  <td></td>
-  <td>loss_run_incident</td>
-  <td class="num">11</td>
-  <td class="num">10</td>
-  <td class="num">10</td>
-  <td>duplicates</td>
-  <td>
-    <a href="./pdfs/easy_10_014_table.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
-    <a href="./html/easy_10_014_table.html" target="_blank" rel="noopener noreferrer">html</a>
-    <a href="./ground_truth/easy_10_014_table.json" target="_blank" rel="noopener noreferrer">json</a>
-    <a href="./transcripts/canonical/easy_10_014_table.md" target="_blank" rel="noopener noreferrer">canonical</a>
-    <a href="./transcripts/ocr_gemini/easy_10_014_table.md" target="_blank" rel="noopener noreferrer">ocr</a>
-  </td>
-  <td class="num">262.4 KB</td>
-  <td class="num">27.0 KB</td>
-  <td class="num">12.2 KB</td>
-</tr>
-<tr>
-  <td class="mono">easy_10_015_detailed</td>
-  <td>easy</td>
-  <td>detailed</td>
-  <td>claims</td>
-  <td></td>
-  <td>loss_run_incident</td>
-  <td class="num">11</td>
-  <td class="num">8</td>
-  <td class="num">8</td>
-  <td>multi_row, duplicates</td>
-  <td>
-    <a href="./pdfs/easy_10_015_detailed.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
-    <a href="./html/easy_10_015_detailed.html" target="_blank" rel="noopener noreferrer">html</a>
-    <a href="./ground_truth/easy_10_015_detailed.json" target="_blank" rel="noopener noreferrer">json</a>
-    <a href="./transcripts/canonical/easy_10_015_detailed.md" target="_blank" rel="noopener noreferrer">canonical</a>
-    <a href="./transcripts/ocr_gemini/easy_10_015_detailed.md" target="_blank" rel="noopener noreferrer">ocr</a>
-  </td>
-  <td class="num">213.0 KB</td>
-  <td class="num">35.4 KB</td>
-  <td class="num">12.4 KB</td>
-</tr>
-<tr>
-  <td class="mono">easy_10_015_table</td>
-  <td>easy</td>
-  <td>table</td>
-  <td>claims</td>
-  <td></td>
-  <td>loss_run_incident</td>
-  <td class="num">11</td>
-  <td class="num">10</td>
-  <td class="num">10</td>
-  <td>multi_row, duplicates</td>
-  <td>
-    <a href="./pdfs/easy_10_015_table.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
-    <a href="./html/easy_10_015_table.html" target="_blank" rel="noopener noreferrer">html</a>
-    <a href="./ground_truth/easy_10_015_table.json" target="_blank" rel="noopener noreferrer">json</a>
-    <a href="./transcripts/canonical/easy_10_015_table.md" target="_blank" rel="noopener noreferrer">canonical</a>
-    <a href="./transcripts/ocr_gemini/easy_10_015_table.md" target="_blank" rel="noopener noreferrer">ocr</a>
-  </td>
-  <td class="num">264.0 KB</td>
-  <td class="num">27.3 KB</td>
-  <td class="num">12.5 KB</td>
-</tr>
-<tr>
-  <td class="mono">extreme_100_001_detailed</td>
-  <td>extreme</td>
-  <td>detailed</td>
-  <td>claims</td>
-  <td></td>
-  <td>loss_run_incident</td>
-  <td class="num">500</td>
-  <td class="num">203</td>
-  <td class="num">203</td>
-  <td>page_breaks, multi_row, duplicates, large_doc, multiple_tables, multi_column, merged_cells</td>
-  <td>
-    <a href="./pdfs/extreme_100_001_detailed.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
-    <a href="./html/extreme_100_001_detailed.html" target="_blank" rel="noopener noreferrer">html</a>
-    <a href="./ground_truth/extreme_100_001_detailed.json" target="_blank" rel="noopener noreferrer">json</a>
-    <a href="./transcripts/canonical/extreme_100_001_detailed.md" target="_blank" rel="noopener noreferrer">canonical</a>
-    <a href="./transcripts/ocr_gemini/extreme_100_001_detailed.md" target="_blank" rel="noopener noreferrer">ocr</a>
-  </td>
-  <td class="num">1013.5 KB</td>
-  <td class="num">1.13 MB</td>
-  <td class="num">567.1 KB</td>
-</tr>
-<tr>
-  <td class="mono">extreme_100_001_table</td>
-  <td>extreme</td>
-  <td>table</td>
-  <td>claims</td>
-  <td></td>
-  <td>loss_run_incident</td>
-  <td class="num">500</td>
-  <td class="num">322</td>
-  <td class="num">322</td>
-  <td>page_breaks, multi_row, duplicates, large_doc, multiple_tables, multi_column, merged_cells</td>
-  <td>
-    <a href="./pdfs/extreme_100_001_table.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
-    <a href="./html/extreme_100_001_table.html" target="_blank" rel="noopener noreferrer">html</a>
-    <a href="./ground_truth/extreme_100_001_table.json" target="_blank" rel="noopener noreferrer">json</a>
-    <a href="./transcripts/canonical/extreme_100_001_table.md" target="_blank" rel="noopener noreferrer">canonical</a>
-    <a href="./transcripts/ocr_gemini/extreme_100_001_table.md" target="_blank" rel="noopener noreferrer">ocr</a>
-  </td>
-  <td class="num">960.9 KB</td>
-  <td class="num">586.8 KB</td>
-  <td class="num">567.9 KB</td>
-</tr>
-<tr>
-  <td class="mono">extreme_100_002_detailed</td>
-  <td>extreme</td>
-  <td>detailed</td>
-  <td>claims</td>
-  <td></td>
-  <td>loss_run_incident</td>
-  <td class="num">500</td>
-  <td class="num">201</td>
-  <td class="num">201</td>
-  <td>page_breaks, multi_row, duplicates, large_doc, multiple_tables, multi_column, merged_cells</td>
-  <td>
-    <a href="./pdfs/extreme_100_002_detailed.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
-    <a href="./html/extreme_100_002_detailed.html" target="_blank" rel="noopener noreferrer">html</a>
-    <a href="./ground_truth/extreme_100_002_detailed.json" target="_blank" rel="noopener noreferrer">json</a>
-    <a href="./transcripts/canonical/extreme_100_002_detailed.md" target="_blank" rel="noopener noreferrer">canonical</a>
-    <a href="./transcripts/ocr_gemini/extreme_100_002_detailed.md" target="_blank" rel="noopener noreferrer">ocr</a>
-  </td>
-  <td class="num">1013.2 KB</td>
-  <td class="num">1.12 MB</td>
-  <td class="num">568.0 KB</td>
-</tr>
-<tr>
-  <td class="mono">extreme_100_002_table</td>
-  <td>extreme</td>
-  <td>table</td>
-  <td>claims</td>
-  <td></td>
-  <td>loss_run_incident</td>
-  <td class="num">500</td>
-  <td class="num">332</td>
-  <td class="num">332</td>
-  <td>page_breaks, multi_row, duplicates, large_doc, multiple_tables, multi_column, merged_cells</td>
-  <td>
-    <a href="./pdfs/extreme_100_002_table.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
-    <a href="./html/extreme_100_002_table.html" target="_blank" rel="noopener noreferrer">html</a>
-    <a href="./ground_truth/extreme_100_002_table.json" target="_blank" rel="noopener noreferrer">json</a>
-    <a href="./transcripts/canonical/extreme_100_002_table.md" target="_blank" rel="noopener noreferrer">canonical</a>
-    <a href="./transcripts/ocr_gemini/extreme_100_002_table.md" target="_blank" rel="noopener noreferrer">ocr</a>
-  </td>
-  <td class="num">967.8 KB</td>
-  <td class="num">590.6 KB</td>
-  <td class="num">571.9 KB</td>
-</tr>
-<tr>
-  <td class="mono">extreme_100_003_detailed</td>
-  <td>extreme</td>
-  <td>detailed</td>
-  <td>claims</td>
-  <td></td>
-  <td>loss_run_incident</td>
-  <td class="num">500</td>
-  <td class="num">209</td>
-  <td class="num">209</td>
-  <td>page_breaks, multi_row, duplicates, large_doc, multiple_tables, multi_column, merged_cells</td>
-  <td>
-    <a href="./pdfs/extreme_100_003_detailed.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
-    <a href="./html/extreme_100_003_detailed.html" target="_blank" rel="noopener noreferrer">html</a>
-    <a href="./ground_truth/extreme_100_003_detailed.json" target="_blank" rel="noopener noreferrer">json</a>
-    <a href="./transcripts/canonical/extreme_100_003_detailed.md" target="_blank" rel="noopener noreferrer">canonical</a>
-    <a href="./transcripts/ocr_gemini/extreme_100_003_detailed.md" target="_blank" rel="noopener noreferrer">ocr</a>
-  </td>
-  <td class="num">1023.4 KB</td>
-  <td class="num">1.13 MB</td>
-  <td class="num">569.0 KB</td>
-</tr>
-<tr>
-  <td class="mono">extreme_100_003_table</td>
-  <td>extreme</td>
-  <td>table</td>
-  <td>claims</td>
-  <td></td>
-  <td>loss_run_incident</td>
-  <td class="num">500</td>
-  <td class="num">329</td>
-  <td class="num">329</td>
-  <td>page_breaks, multi_row, duplicates, large_doc, multiple_tables, multi_column, merged_cells</td>
-  <td>
-    <a href="./pdfs/extreme_100_003_table.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
-    <a href="./html/extreme_100_003_table.html" target="_blank" rel="noopener noreferrer">html</a>
-    <a href="./ground_truth/extreme_100_003_table.json" target="_blank" rel="noopener noreferrer">json</a>
-    <a href="./transcripts/canonical/extreme_100_003_table.md" target="_blank" rel="noopener noreferrer">canonical</a>
-    <a href="./transcripts/ocr_gemini/extreme_100_003_table.md" target="_blank" rel="noopener noreferrer">ocr</a>
-  </td>
-  <td class="num">959.9 KB</td>
-  <td class="num">587.2 KB</td>
-  <td class="num">567.6 KB</td>
-</tr>
-<tr>
-  <td class="mono">extreme_100_004_detailed</td>
-  <td>extreme</td>
-  <td>detailed</td>
-  <td>claims</td>
-  <td></td>
-  <td>loss_run_incident</td>
-  <td class="num">500</td>
-  <td class="num">199</td>
-  <td class="num">199</td>
-  <td>page_breaks, multi_row, duplicates, large_doc, multiple_tables, multi_column, merged_cells</td>
-  <td>
-    <a href="./pdfs/extreme_100_004_detailed.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
-    <a href="./html/extreme_100_004_detailed.html" target="_blank" rel="noopener noreferrer">html</a>
-    <a href="./ground_truth/extreme_100_004_detailed.json" target="_blank" rel="noopener noreferrer">json</a>
-    <a href="./transcripts/canonical/extreme_100_004_detailed.md" target="_blank" rel="noopener noreferrer">canonical</a>
-    <a href="./transcripts/ocr_gemini/extreme_100_004_detailed.md" target="_blank" rel="noopener noreferrer">ocr</a>
-  </td>
-  <td class="num">1008.8 KB</td>
-  <td class="num">1.13 MB</td>
-  <td class="num">568.5 KB</td>
-</tr>
-<tr>
-  <td class="mono">extreme_100_004_table</td>
-  <td>extreme</td>
-  <td>table</td>
-  <td>claims</td>
-  <td></td>
-  <td>loss_run_incident</td>
-  <td class="num">500</td>
-  <td class="num">310</td>
-  <td class="num">310</td>
-  <td>page_breaks, multi_row, duplicates, large_doc, multiple_tables, multi_column, merged_cells</td>
-  <td>
-    <a href="./pdfs/extreme_100_004_table.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
-    <a href="./html/extreme_100_004_table.html" target="_blank" rel="noopener noreferrer">html</a>
-    <a href="./ground_truth/extreme_100_004_table.json" target="_blank" rel="noopener noreferrer">json</a>
-    <a href="./transcripts/canonical/extreme_100_004_table.md" target="_blank" rel="noopener noreferrer">canonical</a>
-    <a href="./transcripts/ocr_gemini/extreme_100_004_table.md" target="_blank" rel="noopener noreferrer">ocr</a>
-  </td>
-  <td class="num">937.3 KB</td>
-  <td class="num">587.8 KB</td>
-  <td class="num">569.1 KB</td>
-</tr>
-<tr>
-  <td class="mono">extreme_100_005_detailed</td>
-  <td>extreme</td>
-  <td>detailed</td>
-  <td>claims</td>
-  <td></td>
-  <td>loss_run_incident</td>
-  <td class="num">500</td>
-  <td class="num">203</td>
-  <td class="num">203</td>
-  <td>page_breaks, multi_row, duplicates, large_doc, multiple_tables, multi_column, merged_cells</td>
-  <td>
-    <a href="./pdfs/extreme_100_005_detailed.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
-    <a href="./html/extreme_100_005_detailed.html" target="_blank" rel="noopener noreferrer">html</a>
-    <a href="./ground_truth/extreme_100_005_detailed.json" target="_blank" rel="noopener noreferrer">json</a>
-    <a href="./transcripts/canonical/extreme_100_005_detailed.md" target="_blank" rel="noopener noreferrer">canonical</a>
-    <a href="./transcripts/ocr_gemini/extreme_100_005_detailed.md" target="_blank" rel="noopener noreferrer">ocr</a>
-  </td>
-  <td class="num">1015.1 KB</td>
-  <td class="num">1.13 MB</td>
-  <td class="num">569.4 KB</td>
-</tr>
-<tr>
-  <td class="mono">extreme_100_005_table</td>
-  <td>extreme</td>
-  <td>table</td>
-  <td>claims</td>
-  <td></td>
-  <td>loss_run_incident</td>
-  <td class="num">500</td>
-  <td class="num">330</td>
-  <td class="num">330</td>
-  <td>page_breaks, multi_row, duplicates, large_doc, multiple_tables, multi_column, merged_cells</td>
-  <td>
-    <a href="./pdfs/extreme_100_005_table.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
-    <a href="./html/extreme_100_005_table.html" target="_blank" rel="noopener noreferrer">html</a>
-    <a href="./ground_truth/extreme_100_005_table.json" target="_blank" rel="noopener noreferrer">json</a>
-    <a href="./transcripts/canonical/extreme_100_005_table.md" target="_blank" rel="noopener noreferrer">canonical</a>
-    <a href="./transcripts/ocr_gemini/extreme_100_005_table.md" target="_blank" rel="noopener noreferrer">ocr</a>
-  </td>
-  <td class="num">965.0 KB</td>
-  <td class="num">588.4 KB</td>
-  <td class="num">569.6 KB</td>
-</tr>
-<tr>
-  <td class="mono">hard_50_001_detailed</td>
-  <td>hard</td>
-  <td>detailed</td>
-  <td>claims</td>
-  <td></td>
-  <td>loss_run_incident</td>
-  <td class="num">55</td>
-  <td class="num">24</td>
-  <td class="num">24</td>
-  <td>page_breaks, multi_row, duplicates, multiple_tables, multi_column</td>
-  <td>
-    <a href="./pdfs/hard_50_001_detailed.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
-    <a href="./html/hard_50_001_detailed.html" target="_blank" rel="noopener noreferrer">html</a>
-    <a href="./ground_truth/hard_50_001_detailed.json" target="_blank" rel="noopener noreferrer">json</a>
-    <a href="./transcripts/canonical/hard_50_001_detailed.md" target="_blank" rel="noopener noreferrer">canonical</a>
-    <a href="./transcripts/ocr_gemini/hard_50_001_detailed.md" target="_blank" rel="noopener noreferrer">ocr</a>
-  </td>
-  <td class="num">424.8 KB</td>
-  <td class="num">145.4 KB</td>
-  <td class="num">62.9 KB</td>
-</tr>
-<tr>
-  <td class="mono">hard_50_001_table</td>
-  <td>hard</td>
-  <td>table</td>
-  <td>claims</td>
-  <td></td>
-  <td>loss_run_incident</td>
-  <td class="num">55</td>
-  <td class="num">42</td>
-  <td class="num">42</td>
-  <td>page_breaks, multi_row, duplicates, multiple_tables, multi_column</td>
-  <td>
-    <a href="./pdfs/hard_50_001_table.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
-    <a href="./html/hard_50_001_table.html" target="_blank" rel="noopener noreferrer">html</a>
-    <a href="./ground_truth/hard_50_001_table.json" target="_blank" rel="noopener noreferrer">json</a>
-    <a href="./transcripts/canonical/hard_50_001_table.md" target="_blank" rel="noopener noreferrer">canonical</a>
-    <a href="./transcripts/ocr_gemini/hard_50_001_table.md" target="_blank" rel="noopener noreferrer">ocr</a>
-  </td>
-  <td class="num">424.5 KB</td>
-  <td class="num">90.7 KB</td>
-  <td class="num">62.4 KB</td>
-</tr>
-<tr>
-  <td class="mono">hard_50_002_detailed</td>
-  <td>hard</td>
-  <td>detailed</td>
-  <td>claims</td>
-  <td></td>
-  <td>loss_run_incident</td>
-  <td class="num">55</td>
-  <td class="num">46</td>
-  <td class="num">46</td>
-  <td>page_breaks, multi_row, duplicates, multiple_tables, merged_cells</td>
-  <td>
-    <a href="./pdfs/hard_50_002_detailed.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
-    <a href="./html/hard_50_002_detailed.html" target="_blank" rel="noopener noreferrer">html</a>
-    <a href="./ground_truth/hard_50_002_detailed.json" target="_blank" rel="noopener noreferrer">json</a>
-    <a href="./transcripts/canonical/hard_50_002_detailed.md" target="_blank" rel="noopener noreferrer">canonical</a>
-    <a href="./transcripts/ocr_gemini/hard_50_002_detailed.md" target="_blank" rel="noopener noreferrer">ocr</a>
-  </td>
-  <td class="num">427.1 KB</td>
-  <td class="num">150.3 KB</td>
-  <td class="num">62.3 KB</td>
-</tr>
-<tr>
-  <td class="mono">hard_50_002_table</td>
-  <td>hard</td>
-  <td>table</td>
-  <td>claims</td>
-  <td></td>
-  <td>loss_run_incident</td>
-  <td class="num">55</td>
+  <td>loss_run_claim_row</td>
+  <td class="num">300</td>
   <td class="num">43</td>
   <td class="num">43</td>
-  <td>page_breaks, multi_row, duplicates, multiple_tables, merged_cells</td>
+  <td>high_density_long_list, production_like_layout, ocr_condition, page_breaks, large_doc, multiple_tables, merged_cells, multi_row, duplicates, distractor_sections, variable_policy_sections, continuation_notes, summary_distractors, sparse_driver_fields</td>
   <td>
-    <a href="./pdfs/hard_50_002_table.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
-    <a href="./html/hard_50_002_table.html" target="_blank" rel="noopener noreferrer">html</a>
-    <a href="./ground_truth/hard_50_002_table.json" target="_blank" rel="noopener noreferrer">json</a>
-    <a href="./transcripts/canonical/hard_50_002_table.md" target="_blank" rel="noopener noreferrer">canonical</a>
-    <a href="./transcripts/ocr_gemini/hard_50_002_table.md" target="_blank" rel="noopener noreferrer">ocr</a>
+    <a href="./pdfs/loss_run_external_001.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
+    <a href="./html/loss_run_external_001.html" target="_blank" rel="noopener noreferrer">html</a>
+    <a href="./ground_truth/loss_run_external_001.json" target="_blank" rel="noopener noreferrer">json</a>
+    <a href="./transcripts/ocr_gemini/loss_run_external_001.md" target="_blank" rel="noopener noreferrer">ocr</a>
   </td>
-  <td class="num">424.8 KB</td>
-  <td class="num">90.1 KB</td>
-  <td class="num">62.7 KB</td>
+  <td class="num">567.7 KB</td>
+  <td class="num">289.7 KB</td>
+  <td class="num">158.0 KB</td>
 </tr>
 <tr>
-  <td class="mono">hard_50_003_detailed</td>
-  <td>hard</td>
-  <td>detailed</td>
-  <td>claims</td>
+  <td class="mono">loss_run_external_002</td>
+  <td>loss_run_external</td>
+  <td>loss_run_external</td>
+  <td>production_like_pdf</td>
+  <td>commercial_insurance_operations</td>
+  <td>core_operations</td>
   <td></td>
-  <td>loss_run_incident</td>
-  <td class="num">55</td>
-  <td class="num">26</td>
-  <td class="num">26</td>
-  <td>page_breaks, multi_row, duplicates, multi_column, merged_cells</td>
-  <td>
-    <a href="./pdfs/hard_50_003_detailed.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
-    <a href="./html/hard_50_003_detailed.html" target="_blank" rel="noopener noreferrer">html</a>
-    <a href="./ground_truth/hard_50_003_detailed.json" target="_blank" rel="noopener noreferrer">json</a>
-    <a href="./transcripts/canonical/hard_50_003_detailed.md" target="_blank" rel="noopener noreferrer">canonical</a>
-    <a href="./transcripts/ocr_gemini/hard_50_003_detailed.md" target="_blank" rel="noopener noreferrer">ocr</a>
-  </td>
-  <td class="num">408.1 KB</td>
-  <td class="num">145.2 KB</td>
-  <td class="num">61.8 KB</td>
-</tr>
-<tr>
-  <td class="mono">hard_50_003_table</td>
-  <td>hard</td>
-  <td>table</td>
-  <td>claims</td>
-  <td></td>
-  <td>loss_run_incident</td>
-  <td class="num">55</td>
-  <td class="num">41</td>
-  <td class="num">41</td>
-  <td>page_breaks, multi_row, duplicates, multi_column, merged_cells</td>
-  <td>
-    <a href="./pdfs/hard_50_003_table.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
-    <a href="./html/hard_50_003_table.html" target="_blank" rel="noopener noreferrer">html</a>
-    <a href="./ground_truth/hard_50_003_table.json" target="_blank" rel="noopener noreferrer">json</a>
-    <a href="./transcripts/canonical/hard_50_003_table.md" target="_blank" rel="noopener noreferrer">canonical</a>
-    <a href="./transcripts/ocr_gemini/hard_50_003_table.md" target="_blank" rel="noopener noreferrer">ocr</a>
-  </td>
-  <td class="num">399.5 KB</td>
-  <td class="num">86.9 KB</td>
-  <td class="num">62.2 KB</td>
-</tr>
-<tr>
-  <td class="mono">hard_50_004_detailed</td>
-  <td>hard</td>
-  <td>detailed</td>
-  <td>claims</td>
-  <td></td>
-  <td>loss_run_incident</td>
-  <td class="num">55</td>
-  <td class="num">26</td>
-  <td class="num">26</td>
-  <td>page_breaks, multi_row, duplicates, multiple_tables, multi_column</td>
-  <td>
-    <a href="./pdfs/hard_50_004_detailed.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
-    <a href="./html/hard_50_004_detailed.html" target="_blank" rel="noopener noreferrer">html</a>
-    <a href="./ground_truth/hard_50_004_detailed.json" target="_blank" rel="noopener noreferrer">json</a>
-    <a href="./transcripts/canonical/hard_50_004_detailed.md" target="_blank" rel="noopener noreferrer">canonical</a>
-    <a href="./transcripts/ocr_gemini/hard_50_004_detailed.md" target="_blank" rel="noopener noreferrer">ocr</a>
-  </td>
-  <td class="num">432.2 KB</td>
-  <td class="num">149.4 KB</td>
-  <td class="num">63.0 KB</td>
-</tr>
-<tr>
-  <td class="mono">hard_50_004_table</td>
-  <td>hard</td>
-  <td>table</td>
-  <td>claims</td>
-  <td></td>
-  <td>loss_run_incident</td>
-  <td class="num">55</td>
-  <td class="num">43</td>
-  <td class="num">43</td>
-  <td>page_breaks, multi_row, duplicates, multiple_tables, multi_column</td>
-  <td>
-    <a href="./pdfs/hard_50_004_table.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
-    <a href="./html/hard_50_004_table.html" target="_blank" rel="noopener noreferrer">html</a>
-    <a href="./ground_truth/hard_50_004_table.json" target="_blank" rel="noopener noreferrer">json</a>
-    <a href="./transcripts/canonical/hard_50_004_table.md" target="_blank" rel="noopener noreferrer">canonical</a>
-    <a href="./transcripts/ocr_gemini/hard_50_004_table.md" target="_blank" rel="noopener noreferrer">ocr</a>
-  </td>
-  <td class="num">424.8 KB</td>
-  <td class="num">90.6 KB</td>
-  <td class="num">62.9 KB</td>
-</tr>
-<tr>
-  <td class="mono">hard_50_005_detailed</td>
-  <td>hard</td>
-  <td>detailed</td>
-  <td>claims</td>
-  <td></td>
-  <td>loss_run_incident</td>
-  <td class="num">55</td>
-  <td class="num">53</td>
-  <td class="num">53</td>
-  <td>page_breaks, multi_row, duplicates, multiple_tables, merged_cells</td>
-  <td>
-    <a href="./pdfs/hard_50_005_detailed.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
-    <a href="./html/hard_50_005_detailed.html" target="_blank" rel="noopener noreferrer">html</a>
-    <a href="./ground_truth/hard_50_005_detailed.json" target="_blank" rel="noopener noreferrer">json</a>
-    <a href="./transcripts/canonical/hard_50_005_detailed.md" target="_blank" rel="noopener noreferrer">canonical</a>
-    <a href="./transcripts/ocr_gemini/hard_50_005_detailed.md" target="_blank" rel="noopener noreferrer">ocr</a>
-  </td>
-  <td class="num">436.7 KB</td>
-  <td class="num">153.2 KB</td>
-  <td class="num">63.0 KB</td>
-</tr>
-<tr>
-  <td class="mono">hard_50_005_table</td>
-  <td>hard</td>
-  <td>table</td>
-  <td>claims</td>
-  <td></td>
-  <td>loss_run_incident</td>
-  <td class="num">55</td>
-  <td class="num">43</td>
-  <td class="num">43</td>
-  <td>page_breaks, multi_row, duplicates, multiple_tables, merged_cells</td>
-  <td>
-    <a href="./pdfs/hard_50_005_table.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
-    <a href="./html/hard_50_005_table.html" target="_blank" rel="noopener noreferrer">html</a>
-    <a href="./ground_truth/hard_50_005_table.json" target="_blank" rel="noopener noreferrer">json</a>
-    <a href="./transcripts/canonical/hard_50_005_table.md" target="_blank" rel="noopener noreferrer">canonical</a>
-    <a href="./transcripts/ocr_gemini/hard_50_005_table.md" target="_blank" rel="noopener noreferrer">ocr</a>
-  </td>
-  <td class="num">424.3 KB</td>
-  <td class="num">89.2 KB</td>
-  <td class="num">62.4 KB</td>
-</tr>
-<tr>
-  <td class="mono">hard_50_006_detailed</td>
-  <td>hard</td>
-  <td>detailed</td>
-  <td>claims</td>
-  <td></td>
-  <td>loss_run_incident</td>
-  <td class="num">55</td>
-  <td class="num">28</td>
-  <td class="num">28</td>
-  <td>page_breaks, multi_row, duplicates, multi_column, merged_cells</td>
-  <td>
-    <a href="./pdfs/hard_50_006_detailed.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
-    <a href="./html/hard_50_006_detailed.html" target="_blank" rel="noopener noreferrer">html</a>
-    <a href="./ground_truth/hard_50_006_detailed.json" target="_blank" rel="noopener noreferrer">json</a>
-    <a href="./transcripts/canonical/hard_50_006_detailed.md" target="_blank" rel="noopener noreferrer">canonical</a>
-    <a href="./transcripts/ocr_gemini/hard_50_006_detailed.md" target="_blank" rel="noopener noreferrer">ocr</a>
-  </td>
-  <td class="num">414.1 KB</td>
-  <td class="num">148.1 KB</td>
-  <td class="num">62.7 KB</td>
-</tr>
-<tr>
-  <td class="mono">hard_50_006_table</td>
-  <td>hard</td>
-  <td>table</td>
-  <td>claims</td>
-  <td></td>
-  <td>loss_run_incident</td>
-  <td class="num">55</td>
-  <td class="num">41</td>
-  <td class="num">41</td>
-  <td>page_breaks, multi_row, duplicates, multi_column, merged_cells</td>
-  <td>
-    <a href="./pdfs/hard_50_006_table.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
-    <a href="./html/hard_50_006_table.html" target="_blank" rel="noopener noreferrer">html</a>
-    <a href="./ground_truth/hard_50_006_table.json" target="_blank" rel="noopener noreferrer">json</a>
-    <a href="./transcripts/canonical/hard_50_006_table.md" target="_blank" rel="noopener noreferrer">canonical</a>
-    <a href="./transcripts/ocr_gemini/hard_50_006_table.md" target="_blank" rel="noopener noreferrer">ocr</a>
-  </td>
-  <td class="num">402.4 KB</td>
-  <td class="num">87.1 KB</td>
-  <td class="num">62.5 KB</td>
-</tr>
-<tr>
-  <td class="mono">hard_50_007_detailed</td>
-  <td>hard</td>
-  <td>detailed</td>
-  <td>claims</td>
-  <td></td>
-  <td>loss_run_incident</td>
-  <td class="num">55</td>
-  <td class="num">26</td>
-  <td class="num">26</td>
-  <td>page_breaks, multi_row, duplicates, multiple_tables, multi_column</td>
-  <td>
-    <a href="./pdfs/hard_50_007_detailed.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
-    <a href="./html/hard_50_007_detailed.html" target="_blank" rel="noopener noreferrer">html</a>
-    <a href="./ground_truth/hard_50_007_detailed.json" target="_blank" rel="noopener noreferrer">json</a>
-    <a href="./transcripts/canonical/hard_50_007_detailed.md" target="_blank" rel="noopener noreferrer">canonical</a>
-    <a href="./transcripts/ocr_gemini/hard_50_007_detailed.md" target="_blank" rel="noopener noreferrer">ocr</a>
-  </td>
-  <td class="num">429.5 KB</td>
-  <td class="num">147.6 KB</td>
-  <td class="num">63.3 KB</td>
-</tr>
-<tr>
-  <td class="mono">hard_50_007_table</td>
-  <td>hard</td>
-  <td>table</td>
-  <td>claims</td>
-  <td></td>
-  <td>loss_run_incident</td>
-  <td class="num">55</td>
+  <td>loss_run_claim_row</td>
+  <td class="num">300</td>
   <td class="num">42</td>
   <td class="num">42</td>
-  <td>page_breaks, multi_row, duplicates, multiple_tables, multi_column</td>
+  <td>high_density_long_list, production_like_layout, ocr_condition, page_breaks, large_doc, multiple_tables, merged_cells, multi_row, duplicates, distractor_sections, variable_policy_sections, continuation_notes, summary_distractors, sparse_driver_fields</td>
   <td>
-    <a href="./pdfs/hard_50_007_table.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
-    <a href="./html/hard_50_007_table.html" target="_blank" rel="noopener noreferrer">html</a>
-    <a href="./ground_truth/hard_50_007_table.json" target="_blank" rel="noopener noreferrer">json</a>
-    <a href="./transcripts/canonical/hard_50_007_table.md" target="_blank" rel="noopener noreferrer">canonical</a>
-    <a href="./transcripts/ocr_gemini/hard_50_007_table.md" target="_blank" rel="noopener noreferrer">ocr</a>
+    <a href="./pdfs/loss_run_external_002.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
+    <a href="./html/loss_run_external_002.html" target="_blank" rel="noopener noreferrer">html</a>
+    <a href="./ground_truth/loss_run_external_002.json" target="_blank" rel="noopener noreferrer">json</a>
+    <a href="./transcripts/ocr_gemini/loss_run_external_002.md" target="_blank" rel="noopener noreferrer">ocr</a>
   </td>
-  <td class="num">422.5 KB</td>
-  <td class="num">89.9 KB</td>
-  <td class="num">62.2 KB</td>
+  <td class="num">568.2 KB</td>
+  <td class="num">290.2 KB</td>
+  <td class="num">158.0 KB</td>
 </tr>
 <tr>
-  <td class="mono">hard_50_008_detailed</td>
-  <td>hard</td>
-  <td>detailed</td>
-  <td>claims</td>
+  <td class="mono">loss_run_external_003</td>
+  <td>loss_run_external</td>
+  <td>loss_run_external</td>
+  <td>production_like_pdf</td>
+  <td>commercial_insurance_operations</td>
+  <td>core_operations</td>
   <td></td>
-  <td>loss_run_incident</td>
-  <td class="num">55</td>
-  <td class="num">49</td>
-  <td class="num">49</td>
-  <td>page_breaks, multi_row, duplicates, multiple_tables, merged_cells</td>
+  <td>loss_run_claim_row</td>
+  <td class="num">300</td>
+  <td class="num">44</td>
+  <td class="num">44</td>
+  <td>high_density_long_list, production_like_layout, ocr_condition, page_breaks, large_doc, multiple_tables, merged_cells, multi_row, duplicates, distractor_sections, variable_policy_sections, continuation_notes, summary_distractors, sparse_driver_fields</td>
   <td>
-    <a href="./pdfs/hard_50_008_detailed.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
-    <a href="./html/hard_50_008_detailed.html" target="_blank" rel="noopener noreferrer">html</a>
-    <a href="./ground_truth/hard_50_008_detailed.json" target="_blank" rel="noopener noreferrer">json</a>
-    <a href="./transcripts/canonical/hard_50_008_detailed.md" target="_blank" rel="noopener noreferrer">canonical</a>
-    <a href="./transcripts/ocr_gemini/hard_50_008_detailed.md" target="_blank" rel="noopener noreferrer">ocr</a>
+    <a href="./pdfs/loss_run_external_003.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
+    <a href="./html/loss_run_external_003.html" target="_blank" rel="noopener noreferrer">html</a>
+    <a href="./ground_truth/loss_run_external_003.json" target="_blank" rel="noopener noreferrer">json</a>
+    <a href="./transcripts/ocr_gemini/loss_run_external_003.md" target="_blank" rel="noopener noreferrer">ocr</a>
   </td>
-  <td class="num">431.7 KB</td>
-  <td class="num">150.9 KB</td>
-  <td class="num">62.8 KB</td>
-</tr>
-<tr>
-  <td class="mono">hard_50_008_table</td>
-  <td>hard</td>
-  <td>table</td>
-  <td>claims</td>
-  <td></td>
-  <td>loss_run_incident</td>
-  <td class="num">55</td>
-  <td class="num">42</td>
-  <td class="num">42</td>
-  <td>page_breaks, multi_row, duplicates, multiple_tables, merged_cells</td>
-  <td>
-    <a href="./pdfs/hard_50_008_table.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
-    <a href="./html/hard_50_008_table.html" target="_blank" rel="noopener noreferrer">html</a>
-    <a href="./ground_truth/hard_50_008_table.json" target="_blank" rel="noopener noreferrer">json</a>
-    <a href="./transcripts/canonical/hard_50_008_table.md" target="_blank" rel="noopener noreferrer">canonical</a>
-    <a href="./transcripts/ocr_gemini/hard_50_008_table.md" target="_blank" rel="noopener noreferrer">ocr</a>
-  </td>
-  <td class="num">423.4 KB</td>
-  <td class="num">88.4 KB</td>
-  <td class="num">62.1 KB</td>
-</tr>
-<tr>
-  <td class="mono">medium_25_001_detailed</td>
-  <td>medium</td>
-  <td>detailed</td>
-  <td>claims</td>
-  <td></td>
-  <td>loss_run_incident</td>
-  <td class="num">27</td>
-  <td class="num">17</td>
-  <td class="num">17</td>
-  <td>page_breaks, multi_row, duplicates</td>
-  <td>
-    <a href="./pdfs/medium_25_001_detailed.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
-    <a href="./html/medium_25_001_detailed.html" target="_blank" rel="noopener noreferrer">html</a>
-    <a href="./ground_truth/medium_25_001_detailed.json" target="_blank" rel="noopener noreferrer">json</a>
-    <a href="./transcripts/canonical/medium_25_001_detailed.md" target="_blank" rel="noopener noreferrer">canonical</a>
-    <a href="./transcripts/ocr_gemini/medium_25_001_detailed.md" target="_blank" rel="noopener noreferrer">ocr</a>
-  </td>
-  <td class="num">275.9 KB</td>
-  <td class="num">74.3 KB</td>
-  <td class="num">30.5 KB</td>
-</tr>
-<tr>
-  <td class="mono">medium_25_001_table</td>
-  <td>medium</td>
-  <td>table</td>
-  <td>claims</td>
-  <td></td>
-  <td>loss_run_incident</td>
-  <td class="num">27</td>
-  <td class="num">21</td>
-  <td class="num">21</td>
-  <td>page_breaks, multi_row, duplicates</td>
-  <td>
-    <a href="./pdfs/medium_25_001_table.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
-    <a href="./html/medium_25_001_table.html" target="_blank" rel="noopener noreferrer">html</a>
-    <a href="./ground_truth/medium_25_001_table.json" target="_blank" rel="noopener noreferrer">json</a>
-    <a href="./transcripts/canonical/medium_25_001_table.md" target="_blank" rel="noopener noreferrer">canonical</a>
-    <a href="./transcripts/ocr_gemini/medium_25_001_table.md" target="_blank" rel="noopener noreferrer">ocr</a>
-  </td>
-  <td class="num">289.0 KB</td>
-  <td class="num">49.3 KB</td>
-  <td class="num">30.6 KB</td>
-</tr>
-<tr>
-  <td class="mono">medium_25_002_detailed</td>
-  <td>medium</td>
-  <td>detailed</td>
-  <td>claims</td>
-  <td></td>
-  <td>loss_run_incident</td>
-  <td class="num">25</td>
-  <td class="num">20</td>
-  <td class="num">20</td>
-  <td>page_breaks, multi_row, multiple_tables</td>
-  <td>
-    <a href="./pdfs/medium_25_002_detailed.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
-    <a href="./html/medium_25_002_detailed.html" target="_blank" rel="noopener noreferrer">html</a>
-    <a href="./ground_truth/medium_25_002_detailed.json" target="_blank" rel="noopener noreferrer">json</a>
-    <a href="./transcripts/canonical/medium_25_002_detailed.md" target="_blank" rel="noopener noreferrer">canonical</a>
-    <a href="./transcripts/ocr_gemini/medium_25_002_detailed.md" target="_blank" rel="noopener noreferrer">ocr</a>
-  </td>
-  <td class="num">334.9 KB</td>
-  <td class="num">77.4 KB</td>
-  <td class="num">28.7 KB</td>
-</tr>
-<tr>
-  <td class="mono">medium_25_002_table</td>
-  <td>medium</td>
-  <td>table</td>
-  <td>claims</td>
-  <td></td>
-  <td>loss_run_incident</td>
-  <td class="num">25</td>
-  <td class="num">21</td>
-  <td class="num">21</td>
-  <td>page_breaks, multi_row, multiple_tables</td>
-  <td>
-    <a href="./pdfs/medium_25_002_table.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
-    <a href="./html/medium_25_002_table.html" target="_blank" rel="noopener noreferrer">html</a>
-    <a href="./ground_truth/medium_25_002_table.json" target="_blank" rel="noopener noreferrer">json</a>
-    <a href="./transcripts/canonical/medium_25_002_table.md" target="_blank" rel="noopener noreferrer">canonical</a>
-    <a href="./transcripts/ocr_gemini/medium_25_002_table.md" target="_blank" rel="noopener noreferrer">ocr</a>
-  </td>
-  <td class="num">347.8 KB</td>
-  <td class="num">52.4 KB</td>
-  <td class="num">28.7 KB</td>
-</tr>
-<tr>
-  <td class="mono">medium_25_003_detailed</td>
-  <td>medium</td>
-  <td>detailed</td>
-  <td>claims</td>
-  <td></td>
-  <td>loss_run_incident</td>
-  <td class="num">27</td>
-  <td class="num">24</td>
-  <td class="num">24</td>
-  <td>multi_row, duplicates, multiple_tables</td>
-  <td>
-    <a href="./pdfs/medium_25_003_detailed.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
-    <a href="./html/medium_25_003_detailed.html" target="_blank" rel="noopener noreferrer">html</a>
-    <a href="./ground_truth/medium_25_003_detailed.json" target="_blank" rel="noopener noreferrer">json</a>
-    <a href="./transcripts/canonical/medium_25_003_detailed.md" target="_blank" rel="noopener noreferrer">canonical</a>
-    <a href="./transcripts/ocr_gemini/medium_25_003_detailed.md" target="_blank" rel="noopener noreferrer">ocr</a>
-  </td>
-  <td class="num">337.9 KB</td>
-  <td class="num">83.7 KB</td>
-  <td class="num">31.2 KB</td>
-</tr>
-<tr>
-  <td class="mono">medium_25_003_table</td>
-  <td>medium</td>
-  <td>table</td>
-  <td>claims</td>
-  <td></td>
-  <td>loss_run_incident</td>
-  <td class="num">27</td>
-  <td class="num">22</td>
-  <td class="num">22</td>
-  <td>multi_row, duplicates, multiple_tables</td>
-  <td>
-    <a href="./pdfs/medium_25_003_table.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
-    <a href="./html/medium_25_003_table.html" target="_blank" rel="noopener noreferrer">html</a>
-    <a href="./ground_truth/medium_25_003_table.json" target="_blank" rel="noopener noreferrer">json</a>
-    <a href="./transcripts/canonical/medium_25_003_table.md" target="_blank" rel="noopener noreferrer">canonical</a>
-    <a href="./transcripts/ocr_gemini/medium_25_003_table.md" target="_blank" rel="noopener noreferrer">ocr</a>
-  </td>
-  <td class="num">349.4 KB</td>
-  <td class="num">53.7 KB</td>
-  <td class="num">30.9 KB</td>
-</tr>
-<tr>
-  <td class="mono">medium_25_004_detailed</td>
-  <td>medium</td>
-  <td>detailed</td>
-  <td>claims</td>
-  <td></td>
-  <td>loss_run_incident</td>
-  <td class="num">27</td>
-  <td class="num">23</td>
-  <td class="num">23</td>
-  <td>page_breaks, duplicates, multiple_tables</td>
-  <td>
-    <a href="./pdfs/medium_25_004_detailed.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
-    <a href="./html/medium_25_004_detailed.html" target="_blank" rel="noopener noreferrer">html</a>
-    <a href="./ground_truth/medium_25_004_detailed.json" target="_blank" rel="noopener noreferrer">json</a>
-    <a href="./transcripts/canonical/medium_25_004_detailed.md" target="_blank" rel="noopener noreferrer">canonical</a>
-    <a href="./transcripts/ocr_gemini/medium_25_004_detailed.md" target="_blank" rel="noopener noreferrer">ocr</a>
-  </td>
-  <td class="num">338.2 KB</td>
-  <td class="num">83.9 KB</td>
-  <td class="num">31.2 KB</td>
-</tr>
-<tr>
-  <td class="mono">medium_25_004_table</td>
-  <td>medium</td>
-  <td>table</td>
-  <td>claims</td>
-  <td></td>
-  <td>loss_run_incident</td>
-  <td class="num">27</td>
-  <td class="num">23</td>
-  <td class="num">23</td>
-  <td>page_breaks, duplicates, multiple_tables</td>
-  <td>
-    <a href="./pdfs/medium_25_004_table.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
-    <a href="./html/medium_25_004_table.html" target="_blank" rel="noopener noreferrer">html</a>
-    <a href="./ground_truth/medium_25_004_table.json" target="_blank" rel="noopener noreferrer">json</a>
-    <a href="./transcripts/canonical/medium_25_004_table.md" target="_blank" rel="noopener noreferrer">canonical</a>
-    <a href="./transcripts/ocr_gemini/medium_25_004_table.md" target="_blank" rel="noopener noreferrer">ocr</a>
-  </td>
-  <td class="num">348.2 KB</td>
-  <td class="num">54.7 KB</td>
-  <td class="num">30.6 KB</td>
-</tr>
-<tr>
-  <td class="mono">medium_25_005_detailed</td>
-  <td>medium</td>
-  <td>detailed</td>
-  <td>claims</td>
-  <td></td>
-  <td>loss_run_incident</td>
-  <td class="num">27</td>
-  <td class="num">21</td>
-  <td class="num">21</td>
-  <td>page_breaks, multi_row, duplicates</td>
-  <td>
-    <a href="./pdfs/medium_25_005_detailed.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
-    <a href="./html/medium_25_005_detailed.html" target="_blank" rel="noopener noreferrer">html</a>
-    <a href="./ground_truth/medium_25_005_detailed.json" target="_blank" rel="noopener noreferrer">json</a>
-    <a href="./transcripts/canonical/medium_25_005_detailed.md" target="_blank" rel="noopener noreferrer">canonical</a>
-    <a href="./transcripts/ocr_gemini/medium_25_005_detailed.md" target="_blank" rel="noopener noreferrer">ocr</a>
-  </td>
-  <td class="num">283.4 KB</td>
-  <td class="num">79.0 KB</td>
-  <td class="num">31.1 KB</td>
-</tr>
-<tr>
-  <td class="mono">medium_25_005_table</td>
-  <td>medium</td>
-  <td>table</td>
-  <td>claims</td>
-  <td></td>
-  <td>loss_run_incident</td>
-  <td class="num">27</td>
-  <td class="num">21</td>
-  <td class="num">21</td>
-  <td>page_breaks, multi_row, duplicates</td>
-  <td>
-    <a href="./pdfs/medium_25_005_table.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
-    <a href="./html/medium_25_005_table.html" target="_blank" rel="noopener noreferrer">html</a>
-    <a href="./ground_truth/medium_25_005_table.json" target="_blank" rel="noopener noreferrer">json</a>
-    <a href="./transcripts/canonical/medium_25_005_table.md" target="_blank" rel="noopener noreferrer">canonical</a>
-    <a href="./transcripts/ocr_gemini/medium_25_005_table.md" target="_blank" rel="noopener noreferrer">ocr</a>
-  </td>
-  <td class="num">285.7 KB</td>
-  <td class="num">49.3 KB</td>
-  <td class="num">30.6 KB</td>
-</tr>
-<tr>
-  <td class="mono">medium_25_006_detailed</td>
-  <td>medium</td>
-  <td>detailed</td>
-  <td>claims</td>
-  <td></td>
-  <td>loss_run_incident</td>
-  <td class="num">25</td>
-  <td class="num">20</td>
-  <td class="num">20</td>
-  <td>page_breaks, multi_row, multiple_tables</td>
-  <td>
-    <a href="./pdfs/medium_25_006_detailed.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
-    <a href="./html/medium_25_006_detailed.html" target="_blank" rel="noopener noreferrer">html</a>
-    <a href="./ground_truth/medium_25_006_detailed.json" target="_blank" rel="noopener noreferrer">json</a>
-    <a href="./transcripts/canonical/medium_25_006_detailed.md" target="_blank" rel="noopener noreferrer">canonical</a>
-    <a href="./transcripts/ocr_gemini/medium_25_006_detailed.md" target="_blank" rel="noopener noreferrer">ocr</a>
-  </td>
-  <td class="num">330.4 KB</td>
-  <td class="num">75.8 KB</td>
-  <td class="num">28.3 KB</td>
-</tr>
-<tr>
-  <td class="mono">medium_25_006_table</td>
-  <td>medium</td>
-  <td>table</td>
-  <td>claims</td>
-  <td></td>
-  <td>loss_run_incident</td>
-  <td class="num">25</td>
-  <td class="num">21</td>
-  <td class="num">21</td>
-  <td>page_breaks, multi_row, multiple_tables</td>
-  <td>
-    <a href="./pdfs/medium_25_006_table.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
-    <a href="./html/medium_25_006_table.html" target="_blank" rel="noopener noreferrer">html</a>
-    <a href="./ground_truth/medium_25_006_table.json" target="_blank" rel="noopener noreferrer">json</a>
-    <a href="./transcripts/canonical/medium_25_006_table.md" target="_blank" rel="noopener noreferrer">canonical</a>
-    <a href="./transcripts/ocr_gemini/medium_25_006_table.md" target="_blank" rel="noopener noreferrer">ocr</a>
-  </td>
-  <td class="num">345.1 KB</td>
-  <td class="num">51.4 KB</td>
-  <td class="num">28.3 KB</td>
-</tr>
-<tr>
-  <td class="mono">medium_25_007_detailed</td>
-  <td>medium</td>
-  <td>detailed</td>
-  <td>claims</td>
-  <td></td>
-  <td>loss_run_incident</td>
-  <td class="num">27</td>
-  <td class="num">23</td>
-  <td class="num">23</td>
-  <td>multi_row, duplicates, multiple_tables</td>
-  <td>
-    <a href="./pdfs/medium_25_007_detailed.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
-    <a href="./html/medium_25_007_detailed.html" target="_blank" rel="noopener noreferrer">html</a>
-    <a href="./ground_truth/medium_25_007_detailed.json" target="_blank" rel="noopener noreferrer">json</a>
-    <a href="./transcripts/canonical/medium_25_007_detailed.md" target="_blank" rel="noopener noreferrer">canonical</a>
-    <a href="./transcripts/ocr_gemini/medium_25_007_detailed.md" target="_blank" rel="noopener noreferrer">ocr</a>
-  </td>
-  <td class="num">338.8 KB</td>
-  <td class="num">83.1 KB</td>
-  <td class="num">31.0 KB</td>
-</tr>
-<tr>
-  <td class="mono">medium_25_007_table</td>
-  <td>medium</td>
-  <td>table</td>
-  <td>claims</td>
-  <td></td>
-  <td>loss_run_incident</td>
-  <td class="num">27</td>
-  <td class="num">23</td>
-  <td class="num">23</td>
-  <td>multi_row, duplicates, multiple_tables</td>
-  <td>
-    <a href="./pdfs/medium_25_007_table.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
-    <a href="./html/medium_25_007_table.html" target="_blank" rel="noopener noreferrer">html</a>
-    <a href="./ground_truth/medium_25_007_table.json" target="_blank" rel="noopener noreferrer">json</a>
-    <a href="./transcripts/canonical/medium_25_007_table.md" target="_blank" rel="noopener noreferrer">canonical</a>
-    <a href="./transcripts/ocr_gemini/medium_25_007_table.md" target="_blank" rel="noopener noreferrer">ocr</a>
-  </td>
-  <td class="num">348.5 KB</td>
-  <td class="num">54.3 KB</td>
-  <td class="num">31.2 KB</td>
-</tr>
-<tr>
-  <td class="mono">medium_25_008_detailed</td>
-  <td>medium</td>
-  <td>detailed</td>
-  <td>claims</td>
-  <td></td>
-  <td>loss_run_incident</td>
-  <td class="num">27</td>
-  <td class="num">23</td>
-  <td class="num">23</td>
-  <td>page_breaks, duplicates, multiple_tables</td>
-  <td>
-    <a href="./pdfs/medium_25_008_detailed.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
-    <a href="./html/medium_25_008_detailed.html" target="_blank" rel="noopener noreferrer">html</a>
-    <a href="./ground_truth/medium_25_008_detailed.json" target="_blank" rel="noopener noreferrer">json</a>
-    <a href="./transcripts/canonical/medium_25_008_detailed.md" target="_blank" rel="noopener noreferrer">canonical</a>
-    <a href="./transcripts/ocr_gemini/medium_25_008_detailed.md" target="_blank" rel="noopener noreferrer">ocr</a>
-  </td>
-  <td class="num">338.0 KB</td>
-  <td class="num">84.1 KB</td>
-  <td class="num">31.3 KB</td>
-</tr>
-<tr>
-  <td class="mono">medium_25_008_table</td>
-  <td>medium</td>
-  <td>table</td>
-  <td>claims</td>
-  <td></td>
-  <td>loss_run_incident</td>
-  <td class="num">27</td>
-  <td class="num">23</td>
-  <td class="num">23</td>
-  <td>page_breaks, duplicates, multiple_tables</td>
-  <td>
-    <a href="./pdfs/medium_25_008_table.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
-    <a href="./html/medium_25_008_table.html" target="_blank" rel="noopener noreferrer">html</a>
-    <a href="./ground_truth/medium_25_008_table.json" target="_blank" rel="noopener noreferrer">json</a>
-    <a href="./transcripts/canonical/medium_25_008_table.md" target="_blank" rel="noopener noreferrer">canonical</a>
-    <a href="./transcripts/ocr_gemini/medium_25_008_table.md" target="_blank" rel="noopener noreferrer">ocr</a>
-  </td>
-  <td class="num">349.4 KB</td>
-  <td class="num">54.8 KB</td>
-  <td class="num">30.7 KB</td>
-</tr>
-<tr>
-  <td class="mono">medium_25_009_detailed</td>
-  <td>medium</td>
-  <td>detailed</td>
-  <td>claims</td>
-  <td></td>
-  <td>loss_run_incident</td>
-  <td class="num">27</td>
-  <td class="num">20</td>
-  <td class="num">20</td>
-  <td>page_breaks, multi_row, duplicates</td>
-  <td>
-    <a href="./pdfs/medium_25_009_detailed.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
-    <a href="./html/medium_25_009_detailed.html" target="_blank" rel="noopener noreferrer">html</a>
-    <a href="./ground_truth/medium_25_009_detailed.json" target="_blank" rel="noopener noreferrer">json</a>
-    <a href="./transcripts/canonical/medium_25_009_detailed.md" target="_blank" rel="noopener noreferrer">canonical</a>
-    <a href="./transcripts/ocr_gemini/medium_25_009_detailed.md" target="_blank" rel="noopener noreferrer">ocr</a>
-  </td>
-  <td class="num">281.9 KB</td>
-  <td class="num">75.6 KB</td>
-  <td class="num">30.8 KB</td>
-</tr>
-<tr>
-  <td class="mono">medium_25_009_table</td>
-  <td>medium</td>
-  <td>table</td>
-  <td>claims</td>
-  <td></td>
-  <td>loss_run_incident</td>
-  <td class="num">27</td>
-  <td class="num">21</td>
-  <td class="num">21</td>
-  <td>page_breaks, multi_row, duplicates</td>
-  <td>
-    <a href="./pdfs/medium_25_009_table.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
-    <a href="./html/medium_25_009_table.html" target="_blank" rel="noopener noreferrer">html</a>
-    <a href="./ground_truth/medium_25_009_table.json" target="_blank" rel="noopener noreferrer">json</a>
-    <a href="./transcripts/canonical/medium_25_009_table.md" target="_blank" rel="noopener noreferrer">canonical</a>
-    <a href="./transcripts/ocr_gemini/medium_25_009_table.md" target="_blank" rel="noopener noreferrer">ocr</a>
-  </td>
-  <td class="num">287.2 KB</td>
-  <td class="num">49.0 KB</td>
-  <td class="num">30.4 KB</td>
-</tr>
-<tr>
-  <td class="mono">medium_25_010_detailed</td>
-  <td>medium</td>
-  <td>detailed</td>
-  <td>claims</td>
-  <td></td>
-  <td>loss_run_incident</td>
-  <td class="num">25</td>
-  <td class="num">23</td>
-  <td class="num">23</td>
-  <td>page_breaks, multi_row, multiple_tables</td>
-  <td>
-    <a href="./pdfs/medium_25_010_detailed.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
-    <a href="./html/medium_25_010_detailed.html" target="_blank" rel="noopener noreferrer">html</a>
-    <a href="./ground_truth/medium_25_010_detailed.json" target="_blank" rel="noopener noreferrer">json</a>
-    <a href="./transcripts/canonical/medium_25_010_detailed.md" target="_blank" rel="noopener noreferrer">canonical</a>
-    <a href="./transcripts/ocr_gemini/medium_25_010_detailed.md" target="_blank" rel="noopener noreferrer">ocr</a>
-  </td>
-  <td class="num">332.8 KB</td>
-  <td class="num">76.7 KB</td>
-  <td class="num">28.2 KB</td>
-</tr>
-<tr>
-  <td class="mono">medium_25_010_table</td>
-  <td>medium</td>
-  <td>table</td>
-  <td>claims</td>
-  <td></td>
-  <td>loss_run_incident</td>
-  <td class="num">25</td>
-  <td class="num">21</td>
-  <td class="num">21</td>
-  <td>page_breaks, multi_row, multiple_tables</td>
-  <td>
-    <a href="./pdfs/medium_25_010_table.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
-    <a href="./html/medium_25_010_table.html" target="_blank" rel="noopener noreferrer">html</a>
-    <a href="./ground_truth/medium_25_010_table.json" target="_blank" rel="noopener noreferrer">json</a>
-    <a href="./transcripts/canonical/medium_25_010_table.md" target="_blank" rel="noopener noreferrer">canonical</a>
-    <a href="./transcripts/ocr_gemini/medium_25_010_table.md" target="_blank" rel="noopener noreferrer">ocr</a>
-  </td>
-  <td class="num">344.8 KB</td>
-  <td class="num">52.0 KB</td>
-  <td class="num">28.6 KB</td>
-</tr>
-<tr>
-  <td class="mono">medium_25_011_detailed</td>
-  <td>medium</td>
-  <td>detailed</td>
-  <td>claims</td>
-  <td></td>
-  <td>loss_run_incident</td>
-  <td class="num">27</td>
-  <td class="num">20</td>
-  <td class="num">20</td>
-  <td>multi_row, duplicates, multiple_tables</td>
-  <td>
-    <a href="./pdfs/medium_25_011_detailed.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
-    <a href="./html/medium_25_011_detailed.html" target="_blank" rel="noopener noreferrer">html</a>
-    <a href="./ground_truth/medium_25_011_detailed.json" target="_blank" rel="noopener noreferrer">json</a>
-    <a href="./transcripts/canonical/medium_25_011_detailed.md" target="_blank" rel="noopener noreferrer">canonical</a>
-    <a href="./transcripts/ocr_gemini/medium_25_011_detailed.md" target="_blank" rel="noopener noreferrer">ocr</a>
-  </td>
-  <td class="num">334.2 KB</td>
-  <td class="num">80.0 KB</td>
-  <td class="num">30.5 KB</td>
-</tr>
-<tr>
-  <td class="mono">medium_25_011_table</td>
-  <td>medium</td>
-  <td>table</td>
-  <td>claims</td>
-  <td></td>
-  <td>loss_run_incident</td>
-  <td class="num">27</td>
-  <td class="num">22</td>
-  <td class="num">22</td>
-  <td>multi_row, duplicates, multiple_tables</td>
-  <td>
-    <a href="./pdfs/medium_25_011_table.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
-    <a href="./html/medium_25_011_table.html" target="_blank" rel="noopener noreferrer">html</a>
-    <a href="./ground_truth/medium_25_011_table.json" target="_blank" rel="noopener noreferrer">json</a>
-    <a href="./transcripts/canonical/medium_25_011_table.md" target="_blank" rel="noopener noreferrer">canonical</a>
-    <a href="./transcripts/ocr_gemini/medium_25_011_table.md" target="_blank" rel="noopener noreferrer">ocr</a>
-  </td>
-  <td class="num">348.0 KB</td>
-  <td class="num">54.0 KB</td>
-  <td class="num">30.5 KB</td>
-</tr>
-<tr>
-  <td class="mono">medium_25_012_detailed</td>
-  <td>medium</td>
-  <td>detailed</td>
-  <td>claims</td>
-  <td></td>
-  <td>loss_run_incident</td>
-  <td class="num">27</td>
-  <td class="num">22</td>
-  <td class="num">22</td>
-  <td>page_breaks, duplicates, multiple_tables</td>
-  <td>
-    <a href="./pdfs/medium_25_012_detailed.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
-    <a href="./html/medium_25_012_detailed.html" target="_blank" rel="noopener noreferrer">html</a>
-    <a href="./ground_truth/medium_25_012_detailed.json" target="_blank" rel="noopener noreferrer">json</a>
-    <a href="./transcripts/canonical/medium_25_012_detailed.md" target="_blank" rel="noopener noreferrer">canonical</a>
-    <a href="./transcripts/ocr_gemini/medium_25_012_detailed.md" target="_blank" rel="noopener noreferrer">ocr</a>
-  </td>
-  <td class="num">335.6 KB</td>
-  <td class="num">83.9 KB</td>
-  <td class="num">31.0 KB</td>
-</tr>
-<tr>
-  <td class="mono">medium_25_012_table</td>
-  <td>medium</td>
-  <td>table</td>
-  <td>claims</td>
-  <td></td>
-  <td>loss_run_incident</td>
-  <td class="num">27</td>
-  <td class="num">23</td>
-  <td class="num">23</td>
-  <td>page_breaks, duplicates, multiple_tables</td>
-  <td>
-    <a href="./pdfs/medium_25_012_table.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
-    <a href="./html/medium_25_012_table.html" target="_blank" rel="noopener noreferrer">html</a>
-    <a href="./ground_truth/medium_25_012_table.json" target="_blank" rel="noopener noreferrer">json</a>
-    <a href="./transcripts/canonical/medium_25_012_table.md" target="_blank" rel="noopener noreferrer">canonical</a>
-    <a href="./transcripts/ocr_gemini/medium_25_012_table.md" target="_blank" rel="noopener noreferrer">ocr</a>
-  </td>
-  <td class="num">349.1 KB</td>
-  <td class="num">55.0 KB</td>
-  <td class="num">30.7 KB</td>
+  <td class="num">571.4 KB</td>
+  <td class="num">292.5 KB</td>
+  <td class="num">158.1 KB</td>
 </tr>
 <tr>
   <td class="mono">mixed_040_001_crosspage</td>
+  <td>claim_crosspage_multihop</td>
   <td>mixed</td>
   <td>crosspage</td>
   <td>claims</td>
+  <td>claim_multihop</td>
   <td></td>
   <td>loss_run_incident</td>
   <td class="num">40</td>
-  <td class="num">198</td>
-  <td class="num">198</td>
-  <td>cross_page_join, long_range_evidence, mixed_layout, distractor_sections, longer_list</td>
+  <td class="num">209</td>
+  <td class="num">209</td>
+  <td>cross_page_join, long_range_evidence, mixed_layout, distractor_sections, longer_list, ocr_condition, page_breaks, large_doc, multiple_tables, multi_row, multi_column, duplicates, natural_long_range_join, inherited_context, non_target_rows, mixed_prose_tables, non_sequential_identifiers</td>
   <td>
     <a href="./pdfs/mixed_040_001_crosspage.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
     <a href="./html/mixed_040_001_crosspage.html" target="_blank" rel="noopener noreferrer">html</a>
     <a href="./ground_truth/mixed_040_001_crosspage.json" target="_blank" rel="noopener noreferrer">json</a>
-    <a href="./transcripts/canonical/mixed_040_001_crosspage.md" target="_blank" rel="noopener noreferrer">canonical</a>
     <a href="./transcripts/ocr_gemini/mixed_040_001_crosspage.md" target="_blank" rel="noopener noreferrer">ocr</a>
   </td>
-  <td class="num">1.02 MB</td>
-  <td class="num">435.7 KB</td>
-  <td class="num">49.4 KB</td>
+  <td class="num">1.71 MB</td>
+  <td class="num">788.3 KB</td>
+  <td class="num">50.3 KB</td>
 </tr>
 <tr>
   <td class="mono">mixed_cgl_040_001</td>
-  <td>mixed</td>
+  <td>policy_multi_hop</td>
+  <td>policy_multihop_cgl</td>
   <td>crosspage</td>
   <td>policy_review</td>
+  <td>policy_packets</td>
   <td>CGL</td>
   <td>policy_packet_item</td>
-  <td class="num">184</td>
-  <td class="num">214</td>
-  <td class="num">214</td>
-  <td>commercial_general_liability, exposure_rating_rows, limits_forms_exclusions, long_range_evidence, heterogeneous_record_list, distractor_forms, distractor_locations</td>
+  <td class="num">619</td>
+  <td class="num">316</td>
+  <td class="num">316</td>
+  <td>commercial_general_liability, exposure_rating_rows, limits_forms_exclusions, distractor_forms, distractor_locations, material_clause_extraction, long_range_evidence, heterogeneous_record_list, ocr_condition, page_breaks, large_doc, multiple_tables, multi_row, multi_column, duplicates, distractor_sections, natural_long_range_join, inherited_context, split_records, non_target_rows</td>
   <td>
     <a href="./pdfs/mixed_cgl_040_001.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
     <a href="./html/mixed_cgl_040_001.html" target="_blank" rel="noopener noreferrer">html</a>
     <a href="./ground_truth/mixed_cgl_040_001.json" target="_blank" rel="noopener noreferrer">json</a>
-    <a href="./transcripts/canonical/mixed_cgl_040_001.md" target="_blank" rel="noopener noreferrer">canonical</a>
     <a href="./transcripts/ocr_gemini/mixed_cgl_040_001.md" target="_blank" rel="noopener noreferrer">ocr</a>
   </td>
-  <td class="num">1.40 MB</td>
-  <td class="num">778.7 KB</td>
-  <td class="num">106.8 KB</td>
+  <td class="num">1.39 MB</td>
+  <td class="num">1.12 MB</td>
+  <td class="num">447.5 KB</td>
 </tr>
 <tr>
   <td class="mono">multihop_012_001_crosspage</td>
+  <td>claim_crosspage_multihop</td>
   <td>multihop</td>
   <td>crosspage</td>
   <td>claims</td>
+  <td>claim_multihop</td>
   <td></td>
   <td>loss_run_incident</td>
   <td class="num">12</td>
-  <td class="num">76</td>
-  <td class="num">76</td>
-  <td>cross_page_join, long_range_evidence, coded_values</td>
+  <td class="num">80</td>
+  <td class="num">80</td>
+  <td>cross_page_join, long_range_evidence, coded_values, distractor_sections, ocr_condition, page_breaks, large_doc, multiple_tables, multi_row, multi_column, duplicates, natural_long_range_join, inherited_context, non_target_rows, mixed_prose_tables, non_sequential_identifiers</td>
   <td>
     <a href="./pdfs/multihop_012_001_crosspage.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
     <a href="./html/multihop_012_001_crosspage.html" target="_blank" rel="noopener noreferrer">html</a>
     <a href="./ground_truth/multihop_012_001_crosspage.json" target="_blank" rel="noopener noreferrer">json</a>
-    <a href="./transcripts/canonical/multihop_012_001_crosspage.md" target="_blank" rel="noopener noreferrer">canonical</a>
     <a href="./transcripts/ocr_gemini/multihop_012_001_crosspage.md" target="_blank" rel="noopener noreferrer">ocr</a>
   </td>
-  <td class="num">637.1 KB</td>
-  <td class="num">163.8 KB</td>
-  <td class="num">14.6 KB</td>
+  <td class="num">958.6 KB</td>
+  <td class="num">289.1 KB</td>
+  <td class="num">15.0 KB</td>
 </tr>
 <tr>
   <td class="mono">multihop_025_001_crosspage</td>
+  <td>claim_crosspage_multihop</td>
   <td>multihop</td>
   <td>crosspage</td>
   <td>claims</td>
+  <td>claim_multihop</td>
   <td></td>
   <td>loss_run_incident</td>
   <td class="num">25</td>
-  <td class="num">126</td>
-  <td class="num">126</td>
-  <td>cross_page_join, long_range_evidence, many_to_one_policy, claimant_lookup</td>
+  <td class="num">136</td>
+  <td class="num">136</td>
+  <td>cross_page_join, long_range_evidence, many_to_one_policy, claimant_lookup, distractor_sections, ocr_condition, page_breaks, large_doc, multiple_tables, multi_row, multi_column, duplicates, natural_long_range_join, inherited_context, non_target_rows, mixed_prose_tables, non_sequential_identifiers</td>
   <td>
     <a href="./pdfs/multihop_025_001_crosspage.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
     <a href="./html/multihop_025_001_crosspage.html" target="_blank" rel="noopener noreferrer">html</a>
     <a href="./ground_truth/multihop_025_001_crosspage.json" target="_blank" rel="noopener noreferrer">json</a>
-    <a href="./transcripts/canonical/multihop_025_001_crosspage.md" target="_blank" rel="noopener noreferrer">canonical</a>
     <a href="./transcripts/ocr_gemini/multihop_025_001_crosspage.md" target="_blank" rel="noopener noreferrer">ocr</a>
   </td>
-  <td class="num">809.6 KB</td>
-  <td class="num">279.9 KB</td>
-  <td class="num">30.5 KB</td>
+  <td class="num">1.27 MB</td>
+  <td class="num">503.4 KB</td>
+  <td class="num">31.3 KB</td>
 </tr>
 <tr>
   <td class="mono">multihop_bop_012_001</td>
-  <td>multihop</td>
+  <td>policy_multi_hop</td>
+  <td>policy_multihop_bop</td>
   <td>crosspage</td>
   <td>policy_review</td>
+  <td>policy_packets</td>
   <td>BOP</td>
   <td>policy_packet_item</td>
-  <td class="num">48</td>
-  <td class="num">90</td>
-  <td class="num">90</td>
-  <td>businessowners_policy, location_scoped_coverage, form_endorsement_links, long_range_evidence, heterogeneous_record_list</td>
+  <td class="num">360</td>
+  <td class="num">158</td>
+  <td class="num">158</td>
+  <td>businessowners_policy, location_scoped_coverage, form_endorsement_links, material_clause_extraction, long_range_evidence, heterogeneous_record_list, ocr_condition, page_breaks, large_doc, multi_row, multi_column, duplicates, distractor_sections, natural_long_range_join, inherited_context, split_records, non_target_rows</td>
   <td>
     <a href="./pdfs/multihop_bop_012_001.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
     <a href="./html/multihop_bop_012_001.html" target="_blank" rel="noopener noreferrer">html</a>
     <a href="./ground_truth/multihop_bop_012_001.json" target="_blank" rel="noopener noreferrer">json</a>
-    <a href="./transcripts/canonical/multihop_bop_012_001.md" target="_blank" rel="noopener noreferrer">canonical</a>
     <a href="./transcripts/ocr_gemini/multihop_bop_012_001.md" target="_blank" rel="noopener noreferrer">ocr</a>
   </td>
-  <td class="num">474.1 KB</td>
-  <td class="num">224.8 KB</td>
-  <td class="num">23.7 KB</td>
+  <td class="num">800.9 KB</td>
+  <td class="num">569.2 KB</td>
+  <td class="num">234.2 KB</td>
 </tr>
 <tr>
   <td class="mono">multihop_wc_025_001</td>
-  <td>multihop</td>
+  <td>policy_multi_hop</td>
+  <td>policy_multihop_wc</td>
   <td>crosspage</td>
   <td>policy_review</td>
+  <td>policy_packets</td>
   <td>WC</td>
   <td>policy_packet_item</td>
-  <td class="num">113</td>
-  <td class="num">140</td>
-  <td class="num">140</td>
-  <td>workers_compensation_policy, class_code_payroll_rating, experience_mod_and_schedule_rating, long_range_evidence, heterogeneous_record_list</td>
+  <td class="num">510</td>
+  <td class="num">220</td>
+  <td class="num">220</td>
+  <td>workers_compensation_policy, class_code_payroll_rating, experience_mod_and_schedule_rating, material_clause_extraction, long_range_evidence, heterogeneous_record_list, ocr_condition, page_breaks, large_doc, multiple_tables, multi_row, multi_column, duplicates, distractor_sections, natural_long_range_join, inherited_context, split_records, non_target_rows</td>
   <td>
     <a href="./pdfs/multihop_wc_025_001.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
     <a href="./html/multihop_wc_025_001.html" target="_blank" rel="noopener noreferrer">html</a>
     <a href="./ground_truth/multihop_wc_025_001.json" target="_blank" rel="noopener noreferrer">json</a>
-    <a href="./transcripts/canonical/multihop_wc_025_001.md" target="_blank" rel="noopener noreferrer">canonical</a>
     <a href="./transcripts/ocr_gemini/multihop_wc_025_001.md" target="_blank" rel="noopener noreferrer">ocr</a>
   </td>
-  <td class="num">999.0 KB</td>
-  <td class="num">517.0 KB</td>
-  <td class="num">60.6 KB</td>
+  <td class="num">1.01 MB</td>
+  <td class="num">781.2 KB</td>
+  <td class="num">319.8 KB</td>
+</tr>
+<tr>
+  <td class="mono">vehicle_schedule_sparse_001</td>
+  <td>vehicle_schedule_spreadsheet_export</td>
+  <td>vehicle_schedule_spreadsheet_export</td>
+  <td>production_like_pdf</td>
+  <td>commercial_insurance_operations</td>
+  <td>core_operations</td>
+  <td></td>
+  <td>vehicle_schedule_row</td>
+  <td class="num">800</td>
+  <td class="num">37</td>
+  <td class="num">37</td>
+  <td>high_density_long_list, production_like_layout, ocr_condition, page_breaks, large_doc, multiple_tables, layout_randomization, inherited_context, split_records, non_target_rows</td>
+  <td>
+    <a href="./pdfs/vehicle_schedule_sparse_001.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
+    <a href="./html/vehicle_schedule_sparse_001.html" target="_blank" rel="noopener noreferrer">html</a>
+    <a href="./ground_truth/vehicle_schedule_sparse_001.json" target="_blank" rel="noopener noreferrer">json</a>
+    <a href="./transcripts/ocr_gemini/vehicle_schedule_sparse_001.md" target="_blank" rel="noopener noreferrer">ocr</a>
+  </td>
+  <td class="num">432.4 KB</td>
+  <td class="num">167.5 KB</td>
+  <td class="num">143.5 KB</td>
+</tr>
+<tr>
+  <td class="mono">vehicle_schedule_sparse_002</td>
+  <td>vehicle_schedule_spreadsheet_export</td>
+  <td>vehicle_schedule_spreadsheet_export</td>
+  <td>production_like_pdf</td>
+  <td>commercial_insurance_operations</td>
+  <td>core_operations</td>
+  <td></td>
+  <td>vehicle_schedule_row</td>
+  <td class="num">800</td>
+  <td class="num">37</td>
+  <td class="num">37</td>
+  <td>high_density_long_list, production_like_layout, ocr_condition, page_breaks, large_doc, multiple_tables, layout_randomization, inherited_context, split_records, non_target_rows</td>
+  <td>
+    <a href="./pdfs/vehicle_schedule_sparse_002.pdf" target="_blank" rel="noopener noreferrer">pdf</a>
+    <a href="./html/vehicle_schedule_sparse_002.html" target="_blank" rel="noopener noreferrer">html</a>
+    <a href="./ground_truth/vehicle_schedule_sparse_002.json" target="_blank" rel="noopener noreferrer">json</a>
+    <a href="./transcripts/ocr_gemini/vehicle_schedule_sparse_002.md" target="_blank" rel="noopener noreferrer">ocr</a>
+  </td>
+  <td class="num">431.5 KB</td>
+  <td class="num">167.4 KB</td>
+  <td class="num">143.5 KB</td>
 </tr>
         </tbody>
       </table>

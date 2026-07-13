@@ -13,7 +13,6 @@ from pathlib import Path
 from typing import Any
 
 try:
-    from ..canonical_transcripts import write_canonical_markdown_from_html
     from ..dataset_layout import (
         artifact_path,
         artifact_relative_path,
@@ -22,7 +21,6 @@ try:
         record_count_summary,
     )
 except ImportError:
-    from canonical_transcripts import write_canonical_markdown_from_html
     from dataset_layout import (
         artifact_path,
         artifact_relative_path,
@@ -60,10 +58,7 @@ async def _render_pdf(html_path: Path, pdf_path: Path) -> None:
 
 def _transcripts_available(dataset_dir: Path, sample_id: str) -> list[str]:
     available: list[str] = []
-    canonical = artifact_path(dataset_dir, sample_id, "canonical")
     ocr = artifact_path(dataset_dir, sample_id, "ocr")
-    if canonical.exists() and canonical.stat().st_size > 0:
-        available.append("canonical")
     if ocr.exists() and ocr.stat().st_size > 0:
         available.append("ocr")
     return available
@@ -74,14 +69,12 @@ def _instance_files(dataset_dir: Path, sample_id: str) -> dict[str, Any]:
         "ground_truth": artifact_relative_path(dataset_dir, sample_id, "ground_truth"),
         "pdf": artifact_relative_path(dataset_dir, sample_id, "pdf"),
         "html": artifact_relative_path(dataset_dir, sample_id, "html"),
-        "canonical_md": artifact_relative_path(dataset_dir, sample_id, "canonical"),
         "ocr_md": artifact_relative_path(dataset_dir, sample_id, "ocr"),
     }
     for key, artifact in [
         ("json_size_bytes", "ground_truth"),
         ("pdf_size_bytes", "pdf"),
         ("html_size_bytes", "html"),
-        ("canonical_size_bytes", "canonical"),
         ("ocr_size_bytes", "ocr"),
     ]:
         path = artifact_path(dataset_dir, sample_id, artifact)
@@ -129,6 +122,12 @@ def _evidence_map(config: PolicyMultiHopCaseConfig) -> list[dict[str, Any]]:
                     "fields": ["endorsement_effective_date", "limit", "deductible"],
                 },
                 {
+                    "section": "material_policy_provisions",
+                    "approx_page_after_cover": 7 + gap1 + gap2,
+                    "join_key": "form_number/coverage/location_number/building_number",
+                    "fields": ["clause_title", "clause_type", "clause_scope", "clause_text"],
+                },
+                {
                     "section": "premium_summary",
                     "approx_page_after_cover": 8 + gap1 + gap2 + gap3 + gap4,
                     "join_key": "location_number/building_number/coverage",
@@ -144,6 +143,12 @@ def _evidence_map(config: PolicyMultiHopCaseConfig) -> list[dict[str, Any]]:
                     "approx_page_after_cover": 7 + gap1 + gap2 + gap3,
                     "join_key": "endorsement_number",
                     "fields": ["endorsement_effective_date", "materiality"],
+                },
+                {
+                    "section": "material_policy_provisions",
+                    "approx_page_after_cover": 7 + gap1 + gap2,
+                    "join_key": "form_number/state_or_location/class_code",
+                    "fields": ["clause_title", "clause_type", "clause_scope", "clause_text"],
                 },
                 {
                     "section": "premium_summary",
@@ -223,12 +228,10 @@ def _write_case(
     html_path = artifact_path(dataset_dir, config.id, "html")
     pdf_path = artifact_path(dataset_dir, config.id, "pdf")
     ground_truth_path = artifact_path(dataset_dir, config.id, "ground_truth")
-    canonical_path = artifact_path(dataset_dir, config.id, "canonical")
     sample_metadata_path = artifact_path(dataset_dir, config.id, "metadata")
 
     html = case_html(config, profile, primary_items, text_bank=text_bank)
     html_path.write_text(html, encoding="utf-8")
-    write_canonical_markdown_from_html(html_path, canonical_path)
     write_json(ground_truth_path, target_records)
     if render_pdf:
         asyncio.run(_render_pdf(html_path, pdf_path))
@@ -262,6 +265,7 @@ def _write_case(
             "coverage_or_limit_schedule",
             "rating_schedule",
             "forms_schedule",
+            "material_policy_provisions",
             "endorsement_detail",
             "premium_summary",
             "policy_conditions",
@@ -300,7 +304,6 @@ def _empty_manifest(base_seed: int) -> dict[str, Any]:
             "pdfs": "pdfs/{sample_id}.pdf",
             "html": "html/{sample_id}.html",
             "ground_truth": "ground_truth/{sample_id}.json",
-            "canonical_transcripts": "transcripts/canonical/{sample_id}.md",
             "ocr_transcripts": "transcripts/ocr_gemini/{sample_id}.md",
             "metadata": "metadata/{sample_id}.json",
         },

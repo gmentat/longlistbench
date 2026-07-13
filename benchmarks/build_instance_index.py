@@ -47,6 +47,19 @@ def _file_size_bytes(path: Path) -> int | None:
         return None
 
 
+def _hf_config_for_instance(instance: dict[str, Any]) -> str:
+    configured = instance.get("hf_config")
+    if configured:
+        return str(configured)
+
+    domain = instance.get("domain")
+    if domain == "policy_review":
+        return "policy_packets"
+    if domain == "claims" and instance.get("format") == "crosspage":
+        return "claim_multihop"
+    return "core_operations"
+
+
 def build_instance_index(dataset_dir: Path) -> dict[str, Any]:
     """Build a comprehensive index of benchmark instances from dataset metadata.
 
@@ -79,14 +92,20 @@ def build_instance_index(dataset_dir: Path) -> dict[str, Any]:
         html_path = artifact_path(dataset_dir, instance_id, "html")
         json_path = artifact_path(dataset_dir, instance_id, "ground_truth")
         ocr_md_path = artifact_path(dataset_dir, instance_id, "ocr")
-        canonical_md_path = artifact_path(dataset_dir, instance_id, "canonical")
+
+        pdf_pages = _get_pdf_page_count(pdf_path)
+        if pdf_pages is None:
+            pdf_pages = inst.get("pdf_page_count") or inst.get("pages_estimate")
 
         out_instances.append(
             {
                 "id": instance_id,
+                "complexity_regime": inst.get("complexity_regime") or inst.get("difficulty"),
+                "template_family": inst.get("template") or inst.get("difficulty"),
                 "difficulty": inst.get("difficulty"),
                 "format": inst.get("format"),
                 "domain": inst.get("domain", "claims"),
+                "hf_config": _hf_config_for_instance(inst),
                 "lob": inst.get("lob"),
                 "target_record_type": inst.get("target_record_type", "loss_run_incident"),
                 "problems": inst.get("problems", []),
@@ -99,19 +118,16 @@ def build_instance_index(dataset_dir: Path) -> dict[str, Any]:
                     "pdf": str(pdf_path.relative_to(dataset_dir)),
                     "html": str(html_path.relative_to(dataset_dir)),
                     "ground_truth": str(json_path.relative_to(dataset_dir)),
-                    "canonical_md": str(canonical_md_path.relative_to(dataset_dir)),
                     "ocr_md": str(ocr_md_path.relative_to(dataset_dir)),
                     "pdf_exists": pdf_path.exists(),
                     "html_exists": html_path.exists(),
                     "ground_truth_exists": json_path.exists(),
-                    "canonical_md_exists": canonical_md_path.exists(),
                     "ocr_md_exists": ocr_md_path.exists(),
                     "pdf_size_bytes": _file_size_bytes(pdf_path),
                     "html_size_bytes": _file_size_bytes(html_path),
                     "json_size_bytes": _file_size_bytes(json_path),
-                    "canonical_md_size_bytes": _file_size_bytes(canonical_md_path),
                     "ocr_md_size_bytes": _file_size_bytes(ocr_md_path),
-                    "pdf_pages": _get_pdf_page_count(pdf_path),
+                    "pdf_pages": pdf_pages,
                 },
                 "transcripts_available": inst.get("transcripts_available", []),
             }
@@ -139,9 +155,11 @@ def write_csv(index: dict[str, Any], csv_path: Path) -> None:
         rows.append(
             {
                 "id": inst.get("id"),
-                "difficulty": inst.get("difficulty"),
+                "complexity_regime": inst.get("complexity_regime"),
+                "template_family": inst.get("template_family"),
                 "format": inst.get("format"),
                 "domain": inst.get("domain"),
+                "hf_config": inst.get("hf_config"),
                 "lob": inst.get("lob"),
                 "target_record_type": inst.get("target_record_type"),
                 "num_claims": inst.get("num_claims"),
@@ -154,16 +172,17 @@ def write_csv(index: dict[str, Any], csv_path: Path) -> None:
                 "pdf_size_bytes": files.get("pdf_size_bytes"),
                 "html_size_bytes": files.get("html_size_bytes"),
                 "json_size_bytes": files.get("json_size_bytes"),
-                "canonical_md_size_bytes": files.get("canonical_md_size_bytes"),
                 "ocr_md_size_bytes": files.get("ocr_md_size_bytes"),
             }
         )
 
     fieldnames = [
         "id",
-        "difficulty",
+        "complexity_regime",
+        "template_family",
         "format",
         "domain",
+        "hf_config",
         "lob",
         "target_record_type",
         "num_claims",
@@ -176,7 +195,6 @@ def write_csv(index: dict[str, Any], csv_path: Path) -> None:
         "pdf_size_bytes",
         "html_size_bytes",
         "json_size_bytes",
-        "canonical_md_size_bytes",
         "ocr_md_size_bytes",
     ]
 
@@ -189,12 +207,15 @@ def write_csv(index: dict[str, Any], csv_path: Path) -> None:
 def write_html(index: dict[str, Any], html_path: Path) -> None:
     instances = index.get("instances", [])
 
-    difficulty_counts: dict[str, int] = {}
+    regime_counts: dict[str, int] = {}
+    template_counts: dict[str, int] = {}
     format_counts: dict[str, int] = {}
     for inst in instances:
-        d = str(inst.get("difficulty") or "")
+        r = str(inst.get("complexity_regime") or "")
+        t = str(inst.get("template_family") or "")
         f = str(inst.get("format") or "")
-        difficulty_counts[d] = difficulty_counts.get(d, 0) + 1
+        regime_counts[r] = regime_counts.get(r, 0) + 1
+        template_counts[t] = template_counts.get(t, 0) + 1
         format_counts[f] = format_counts.get(f, 0) + 1
 
     def _fmt_bytes(n: int | None) -> str:
@@ -216,27 +237,38 @@ def write_html(index: dict[str, Any], html_path: Path) -> None:
         pdf_name = str(files.get("pdf") or "")
         html_name = str(files.get("html") or "")
         gt_name = str(files.get("ground_truth") or "")
-        canonical_name = str(files.get("canonical_md") or "")
         ocr_name = str(files.get("ocr_md") or "")
 
         pdf_href = "./" + quote(pdf_name) if pdf_name else ""
         html_href = "./" + quote(html_name) if html_name else ""
         gt_href = "./" + quote(gt_name) if gt_name else ""
-        canonical_href = "./" + quote(canonical_name) if canonical_name else ""
         ocr_href = "./" + quote(ocr_name) if ocr_name else ""
 
         pdf_pages = files.get("pdf_pages")
         pdf_pages_str = "" if pdf_pages is None else str(pdf_pages)
-        target_count = inst.get("num_policy_items") or inst.get("num_claims") or ""
+        target_count = inst.get("num_target_records") or inst.get("num_policy_items") or inst.get("num_claims") or ""
+        artifact_links = [
+            ("pdf", pdf_href, bool(files.get("pdf_exists"))),
+            ("html", html_href, bool(files.get("html_exists"))),
+            ("json", gt_href, bool(files.get("ground_truth_exists"))),
+            ("ocr", ocr_href, bool(files.get("ocr_md_exists"))),
+        ]
+        links_html = "\n".join(
+            f"    <a href=\"{escape(href)}\" target=\"_blank\" rel=\"noopener noreferrer\">{label}</a>"
+            for label, href, exists in artifact_links
+            if href and exists
+        )
 
         rows_html.append(
             "\n".join(
                 [
                     "<tr>",
                     f"  <td class=\"mono\">{escape(inst_id)}</td>",
-                    f"  <td>{escape(str(inst.get('difficulty') or ''))}</td>",
+                    f"  <td>{escape(str(inst.get('complexity_regime') or ''))}</td>",
+                    f"  <td>{escape(str(inst.get('template_family') or ''))}</td>",
                     f"  <td>{escape(str(inst.get('format') or ''))}</td>",
                     f"  <td>{escape(str(inst.get('domain') or 'claims'))}</td>",
+                    f"  <td>{escape(str(inst.get('hf_config') or ''))}</td>",
                     f"  <td>{escape(str(inst.get('lob') or ''))}</td>",
                     f"  <td>{escape(str(inst.get('target_record_type') or 'loss_run_incident'))}</td>",
                     f"  <td class=\"num\">{escape(str(target_count))}</td>",
@@ -244,11 +276,7 @@ def write_html(index: dict[str, Any], html_path: Path) -> None:
                     f"  <td class=\"num\">{escape(pdf_pages_str)}</td>",
                     f"  <td>{escape(problems_str)}</td>",
                     "  <td>",
-                    f"    <a href=\"{escape(pdf_href)}\" target=\"_blank\" rel=\"noopener noreferrer\">pdf</a>",
-                    f"    <a href=\"{escape(html_href)}\" target=\"_blank\" rel=\"noopener noreferrer\">html</a>",
-                    f"    <a href=\"{escape(gt_href)}\" target=\"_blank\" rel=\"noopener noreferrer\">json</a>",
-                    f"    <a href=\"{escape(canonical_href)}\" target=\"_blank\" rel=\"noopener noreferrer\">canonical</a>",
-                    f"    <a href=\"{escape(ocr_href)}\" target=\"_blank\" rel=\"noopener noreferrer\">ocr</a>",
+                    links_html,
                     "  </td>",
                     f"  <td class=\"num\">{escape(_fmt_bytes(files.get('pdf_size_bytes')))}</td>",
                     f"  <td class=\"num\">{escape(_fmt_bytes(files.get('html_size_bytes')))}</td>",
@@ -262,8 +290,11 @@ def write_html(index: dict[str, Any], html_path: Path) -> None:
     dataset_dir = escape(str(index.get("dataset_dir") or ""))
     total_instances = escape(str(index.get("total_instances") or ""))
 
-    difficulty_summary = ", ".join(
-        f"{escape(k)}: {v}" for k, v in sorted(difficulty_counts.items()) if k
+    regime_summary = ", ".join(
+        f"{escape(k)}: {v}" for k, v in sorted(regime_counts.items()) if k
+    )
+    template_summary = ", ".join(
+        f"{escape(k)}: {v}" for k, v in sorted(template_counts.items()) if k
     )
     format_summary = ", ".join(
         f"{escape(k)}: {v}" for k, v in sorted(format_counts.items()) if k
@@ -399,13 +430,14 @@ def write_html(index: dict[str, Any], html_path: Path) -> None:
       <div><span class=\"mono\">{dataset_dir}</span></div>
       <div>Built at: <span class=\"mono\">{built_at}</span></div>
       <div>Total instances: <span class=\"mono\">{total_instances}</span></div>
-      <div>By tier: <span class=\"mono\">{difficulty_summary}</span></div>
+      <div>By regime: <span class=\"mono\">{regime_summary}</span></div>
+      <div>By template: <span class=\"mono\">{template_summary}</span></div>
       <div>By format: <span class=\"mono\">{format_summary}</span></div>
     </div>
 
     <div class=\"panel\">
       <div class=\"controls\">
-        <input id=\"search\" type=\"search\" placeholder=\"Filter by id / problems / tier / format...\" oninput=\"filterRows()\" />
+        <input id=\"search\" type=\"search\" placeholder=\"Filter by id / problems / regime / template / format...\" oninput=\"filterRows()\" />
       </div>
       <div class=\"hint\">Click a column header to sort. Links open the corresponding benchmark artifacts in this directory.</div>
     </div>
@@ -415,9 +447,11 @@ def write_html(index: dict[str, Any], html_path: Path) -> None:
         <thead>
           <tr>
             <th data-type=\"text\">id</th>
-            <th data-type=\"text\">tier</th>
+            <th data-type=\"text\">complexity regime</th>
+            <th data-type=\"text\">template family</th>
             <th data-type=\"text\">format</th>
             <th data-type=\"text\">domain</th>
+            <th data-type=\"text\">HF config</th>
             <th data-type=\"text\">lob</th>
             <th data-type=\"text\">record type</th>
             <th data-type=\"num\" class=\"num\">records</th>
@@ -542,7 +576,7 @@ def main() -> None:
     write_html(index=index, html_path=html_path)
 
     if pdfinfo_from_path is None:
-        print("index built, but PDF page counts were not computed (missing dependency: pdf2image)")
+        print("index built using manifest page counts (missing dependency: pdf2image)")
 
     print(f"✓ Wrote: {json_path}")
     print(f"✓ Wrote: {csv_path}")

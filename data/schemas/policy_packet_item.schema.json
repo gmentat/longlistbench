@@ -1,0 +1,91 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Synthetic commercial insurance policy packet record. Records are heterogeneous and may represent locations, coverages, forms, endorsements, exclusions, rating rows, or premium items depending on record_type.",
+  "properties": {
+    "annual_payroll": {"type": ["number", "string", "null"]},
+    "building_number": {"type": "string"},
+    "business_income_basis": {
+      "description": "Business income valuation or payroll basis when that value is explicitly shown for a coverage item.",
+      "type": "string"
+    },
+    "class_code": {"type": "string"},
+    "classification": {"type": "string"},
+    "clause_scope": {
+      "description": "Core policy scope stated by a material clause, without an 'Applies within' prefix or semicolon-delimited repeated details.",
+      "type": "string"
+    },
+    "clause_text": {
+      "description": "The material clause text to extract from the policy form or endorsement page.",
+      "type": "string"
+    },
+    "clause_title": {
+      "description": "Heading or short label for a material clause.",
+      "type": "string"
+    },
+    "clause_type": {
+      "description": "Clause category, such as condition, limitation, or exclusion.",
+      "type": "string"
+    },
+    "coinsurance": {"type": "string"},
+    "coverage": {
+      "description": "Coverage, form, endorsement, classification, or schedule row label represented by the record.",
+      "type": "string"
+    },
+    "coverage_part": {"type": "string"},
+    "deductible": {"type": "string"},
+    "edition_date": {"type": "string"},
+    "endorsement_effective_date": {"type": "string"},
+    "endorsement_number": {"type": "string"},
+    "estimated_premium": {"type": ["number", "string", "null"]},
+    "exclusion_name": {"type": "string"},
+    "experience_mod": {"type": ["number", "string", "null"]},
+    "exposure": {"type": ["number", "string", "null"]},
+    "exposure_basis": {"type": "string"},
+    "form_number": {"type": "string"},
+    "form_title": {"type": "string"},
+    "governing_class": {"type": "string"},
+    "item_id": {"type": "string"},
+    "limit": {"type": ["number", "string", "null"]},
+    "limit_type": {"type": "string"},
+    "lob": {
+      "description": "Line-of-business acronym: BOP, WC, or CGL.",
+      "enum": ["BOP", "WC", "CGL"],
+      "type": "string"
+    },
+    "location_number": {"type": "string"},
+    "manual_rate": {"type": ["number", "string", "null"]},
+    "materiality": {"type": "string"},
+    "named_insured": {"type": "string"},
+    "policy_number": {"type": "string"},
+    "policy_period": {"type": "string"},
+    "premises_address": {"type": "string"},
+    "premium": {"type": ["number", "string", "null"]},
+    "premium_basis": {
+      "description": "For policy_premium_item rows, the premium-summary row label or coverage name that the premium is charged against; this is not the business_income_basis field.",
+      "type": "string"
+    },
+    "products_completed_ops_rate": {"type": ["number", "string", "null"]},
+    "rate": {"type": ["number", "string", "null"]},
+    "record_type": {
+      "type": "string",
+      "enum": [
+        "bop_coverage_item",
+        "cgl_exposure_item",
+        "policy_clause_item",
+        "policy_endorsement_item",
+        "policy_form_item",
+        "policy_location_item",
+        "policy_premium_item",
+        "wc_class_code_item"
+      ]
+    },
+    "schedule_credit_debit": {"type": ["number", "string", "null"]},
+    "schedule_source": {"type": "string"},
+    "state": {"type": "string"},
+    "territory": {"type": "string"},
+    "valuation": {"type": "string"}
+  },
+  "required": ["lob", "policy_number", "named_insured", "policy_period", "record_type"],
+  "title": "PolicyPacketItem",
+  "type": "object"
+}

@@ -1,28 +1,49 @@
 {
   "id": "multihop_012_001_crosspage",
   "difficulty": "multihop",
-  "complexity_regime": "multihop",
+  "complexity_regime": "claim_crosspage_multihop",
   "format": "crosspage",
+  "domain": "claims",
+  "hf_config": "claim_multihop",
+  "target_record_type": "loss_run_incident",
   "num_claims": 12,
-  "pages_estimate": 76,
-  "pdf_page_count": 76,
+  "num_target_records": 12,
+  "pages_estimate": 80,
+  "pdf_page_count": 80,
   "document_count": 1,
   "evidence_pattern": "single_document_long_range_cross_page_join",
   "minimum_gap_pages_between_primary_and_last_evidence": 64,
   "problems": [
     "cross_page_join",
     "long_range_evidence",
-    "coded_values"
+    "coded_values",
+    "distractor_sections",
+    "ocr_condition",
+    "page_breaks",
+    "large_doc",
+    "multiple_tables",
+    "multi_row",
+    "multi_column",
+    "duplicates",
+    "natural_long_range_join",
+    "inherited_context",
+    "non_target_rows",
+    "mixed_prose_tables",
+    "non_sequential_identifiers"
   ],
   "layout_templates": [
     "packet_cover",
     "portal_receipt",
     "official_request_response",
-    "primary_schedule",
+    "claim_file_cards",
     "spreadsheet_unit_reference",
     "mileage_schedule",
     "rotated_scan_excerpt",
-    "long_range_appendices"
+    "driver_assignment_cards",
+    "policy_register_cards",
+    "cause_classification_narrative",
+    "claimant_notice_cards",
+    "financial_ledger_blocks"
   ],
   "has_duplicates": false,
   "seed": 14114,
@@ -33,7 +54,7 @@
   ],
   "evidence_map": [
     {
-      "section": "primary_claim_extract",
+      "section": "claim_intake_file_cards",
       "approx_page_after_cover": 1,
       "fields": [
         "incident_number",
@@ -48,7 +69,7 @@
       ]
     },
     {
-      "section": "fleet_driver_assignment_roster",
+      "section": "fleet_driver_assignment_cards",
       "approx_page_after_cover": 30,
       "join_key": "unit_number",
       "fields": [
@@ -58,7 +79,7 @@
       ]
     },
     {
-      "section": "policy_register",
+      "section": "policy_register_cards",
       "approx_page_after_cover": 31,
       "join_key": "policy_number",
       "fields": [
@@ -70,7 +91,7 @@
       ]
     },
     {
-      "section": "loss_cause_classification_appendix",
+      "section": "loss_cause_classification_narrative",
       "approx_page_after_cover": 50,
       "join_key": "cause_code",
       "fields": [
@@ -80,18 +101,18 @@
       ]
     },
     {
-      "section": "claimant_notice_index",
+      "section": "claimant_notice_cards",
       "approx_page_after_cover": 51,
-      "join_key": "incident_number",
+      "join_key": "reference_number",
       "fields": [
         "claimants",
         "adjuster_notes"
       ]
     },
     {
-      "section": "claim_financial_ledger",
+      "section": "claim_financial_ledger_blocks",
       "approx_page_after_cover": 70,
-      "join_key": "incident_number",
+      "join_key": "reference_number",
       "fields": [
         "bi",
         "pd",
@@ -104,19 +125,21 @@
     "ground_truth": "ground_truth/multihop_012_001_crosspage.json",
     "pdf": "pdfs/multihop_012_001_crosspage.pdf",
     "html": "html/multihop_012_001_crosspage.html",
-    "canonical_md": "transcripts/canonical/multihop_012_001_crosspage.md",
+    "metadata": "metadata/multihop_012_001_crosspage.json",
     "ocr_md": "transcripts/ocr_gemini/multihop_012_001_crosspage.md",
-    "json_size_bytes": 14923,
-    "pdf_size_bytes": 652385,
-    "html_size_bytes": 167683,
-    "canonical_size_bytes": 91774,
-    "ocr_size_bytes": 92632
+    "json_size_bytes": 15364,
+    "pdf_size_bytes": 981600,
+    "html_size_bytes": 296086,
+    "ocr_size_bytes": 271333
   },
   "transcripts_available": [
-    "canonical",
     "ocr"
   ],
-  "domain": "claims",
-  "target_record_type": "loss_run_incident",
-  "num_target_records": 12
+  "ocr_md_size_bytes": 271333,
+  "layout_revision": {
+    "date": "2026-06-29T09:52:19+00:00",
+    "purpose": "reduce deterministic parser friendliness with production-like layout variation",
+    "ocr_status": "regenerated_from_current_pdf",
+    "ocr_regenerated_at": "2026-06-29T09:56:43+00:00"
+  }
 }

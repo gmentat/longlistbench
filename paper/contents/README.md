@@ -10,7 +10,7 @@ This directory contains all the content sections of your research paper.
 - **`3_benchmark_construction.tex`** - Benchmark construction
 - **`4_evaluation.tex`** - Evaluation protocol
 - **`5_results.tex`** - Results
-- **`6_limitations_and_future_directions.tex`** - Limitations and future directions
+- **`6_limitations_and_future_directions.tex`** - Limitations and intended use
 - **`7_conclusion.tex`** - Conclusion section
 - **`8_acknowledgments.tex`** - Acknowledgments section
 
@@ -52,4 +52,3 @@ To add a new section:
 - **Use relative references** when citing within sections
 - **Keep each section modular** - it makes editing easier
 - All files will be submitted together to arXiv in the `contents/` folder
-

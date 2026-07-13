@@ -10,6 +10,7 @@ from typing import Any, Callable
 
 from .config import PolicyMultiHopCaseConfig
 from .llm_text import PolicyTextBank
+from .records import build_policy_clause_records_for_item
 from .util import money, stable_seed
 
 
@@ -112,7 +113,7 @@ h2 {{
   font-size: 10.5px;
   margin: 9px 0 5px;
 }}
-p {{ line-height: 1.3; margin: 4px 0 7px; }}
+p {{ line-height: 1.26; margin: 3px 0 5px; }}
 .policy-stamp {{
   border: 1px solid #8492a6;
   color: #314158;
@@ -133,6 +134,33 @@ p {{ line-height: 1.3; margin: 4px 0 7px; }}
   right: 0.02in;
 }}
 .form-id {{ color: #4b5563; font-weight: 700; }}
+.clause-grid {{
+  column-count: 2;
+  column-gap: 20px;
+}}
+.clause-card {{
+  break-inside: avoid;
+  border: 1px solid #cbd5e1;
+  margin: 0 0 7px;
+  padding: 7px;
+}}
+.clause-card h2 {{
+  font-size: 9.5px;
+  margin: 0 0 4px;
+  text-transform: uppercase;
+}}
+.clause-card p {{
+  font-size: 8.1px;
+  line-height: 1.22;
+  margin: 2px 0;
+}}
+.clause-card .clause-meta {{
+  color: #475569;
+  font-size: 7.2px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}}
 .declarations {{
   display: grid;
   gap: 12px;
@@ -220,8 +248,9 @@ p {{ line-height: 1.3; margin: 4px 0 7px; }}
   column-gap: 24px;
 }}
 .policy-form-body p {{
-  line-height: 1.28;
-  margin: 0 0 7px;
+  font-size: 8.6px;
+  line-height: 1.22;
+  margin: 0 0 4.5px;
   text-align: justify;
 }}
 .policy-form-body .clause-heading {{
@@ -235,12 +264,12 @@ p {{ line-height: 1.3; margin: 4px 0 7px; }}
 .letter-block {{
   background: #fff;
   border: 1px solid #d1d5db;
-  padding: 18px 22px;
+  padding: 14px 18px;
 }}
 .letter-block p {{
-  font-size: 10px;
-  line-height: 1.38;
-  margin: 0 0 11px;
+  font-size: 9px;
+  line-height: 1.28;
+  margin: 0 0 7px;
 }}
 .endorsement {{
   background: #fff;
@@ -262,6 +291,57 @@ p {{ line-height: 1.3; margin: 4px 0 7px; }}
   border-left: 4px solid #345c7c;
   margin: 7px 0;
   padding: 7px;
+}}
+.schedule-ledger {{
+  margin: 6px 0 9px;
+}}
+.schedule-entry {{
+  border-bottom: 1px solid #c8d0dc;
+  break-inside: avoid;
+  display: grid;
+  gap: 8px;
+  grid-template-columns: 0.76in 1fr;
+  page-break-inside: avoid;
+  padding: 5px 0 6px;
+}}
+.schedule-entry:first-child {{
+  border-top: 2px solid #173b59;
+}}
+.schedule-entry:nth-child(odd) {{
+  background: #fbfcfe;
+}}
+.schedule-entry .entry-id {{
+  color: #0f2f4d;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+}}
+.schedule-entry .entry-body {{
+  line-height: 1.22;
+}}
+.schedule-entry .entry-note {{
+  margin: 0 0 3px;
+}}
+.schedule-entry .entry-fields {{
+  display: grid;
+  gap: 3px 12px;
+  grid-template-columns: 1fr 1fr;
+}}
+.schedule-entry .entry-fields.single {{
+  display: block;
+}}
+.schedule-entry .entry-field {{
+  min-width: 0;
+}}
+.schedule-entry .entry-label {{
+  color: #5b677a;
+  font-size: 6.6px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  margin-right: 3px;
+  text-transform: uppercase;
+}}
+.schedule-entry .entry-value {{
+  font-weight: 650;
 }}
 .signature-row {{
   display: grid;
@@ -521,14 +601,71 @@ def _supplemental_lines(profile: dict[str, str], kind: str, item: dict[str, Any]
     ]
 
 
+def _dense_policy_clause_lines(profile: dict[str, str], kind: str, item: dict[str, Any]) -> list[str]:
+    """Add realistic policy-form density for non-BOP long-range filler pages."""
+    if profile["lob"] == "WC":
+        state = item.get("state", "")
+        class_code = item.get("class_code", "")
+        classification = item.get("classification", "scheduled operation")
+        payroll = item.get("annual_payroll", "estimated remuneration")
+        return [
+            "Section A - Records And Audit",
+            f"The insured must keep payroll journals, tax filings, job-duty records, and contract labor records for {classification} assigned to class code {class_code} in {state}.",
+            f"The remuneration entry of {payroll} is an estimate for rating purposes and may be revised after audit without changing the coverage afforded by the policy.",
+            "Separate records are required when an employee performs duties that may fall under more than one classification or more than one covered state.",
+            "If adequate records are not available, remuneration may be assigned to the highest rated applicable classification permitted by the rating rules.",
+            "Section B - State And Classification Conditions",
+            "State amendatory endorsements, statutory benefit provisions, and assigned-risk rules apply before any conflicting general condition in this policy packet.",
+            "A classification shown on a schedule is not a warranty that all operations at the insured location are limited to that class.",
+            "Officer, partner, member, volunteer, leased-worker, and subcontractor treatment is determined by the attached endorsements and the applicable state rules.",
+            "Certificates from subcontractors must be available for audit and must identify the period of work, covered operations, and limits carried by the subcontractor.",
+            "Section C - Premium And Experience Rating",
+            "The experience modification factor, schedule rating factor, expense constant, assessments, and state surcharges are applied as shown on the information page or premium schedule.",
+            "A deposit premium, installment invoice, binder, or producer worksheet is not a substitute for the final audited premium calculation.",
+            "If operations change during the policy period, premium may be adjusted from the effective date of the change when the records support the adjustment.",
+            "The governing class, if any, is determined by the rating rules and not by the order in which entries appear on the schedule.",
+            "Section D - Notices And Endorsements",
+            "Cancellation, nonrenewal, waiver of subrogation, alternate employer, and designated workplace endorsements apply only when listed in the forms schedule.",
+            "Notice to a producer, certificate holder, or payroll service does not amend the policy unless the insurer issues an endorsement.",
+        ]
+    if profile["lob"] == "CGL":
+        class_code = item.get("class_code", "")
+        location = item.get("location_number", "")
+        exposure_basis = item.get("exposure_basis", "exposure basis")
+        exposure = item.get("exposure", "scheduled exposure")
+        return [
+            "Section A - Schedule References",
+            f"The declarations identify class code {class_code} at Location {location} with {exposure_basis.lower()} of {exposure}; that entry is used for rating and schedule reference purposes.",
+            "Coverage applies only as provided by the applicable coverage form, limits schedule, exclusion endorsements, and any additional-insured endorsement attached to the policy.",
+            "A location, project, classification, or exposure entry does not create coverage for operations that are otherwise excluded or outside the policy territory.",
+            "Section B - Limits And Aggregates",
+            "The each occurrence, damage to premises rented to you, medical expense, personal and advertising injury, products-completed operations, and general aggregate limits apply as stated in the declarations.",
+            "A sublimit, deductible, self-insured retention, or endorsement limit is part of the applicable limit and does not increase that limit.",
+            "When more than one scheduled operation could apply to a claim, the most specific applicable form and endorsement must be read with the declarations.",
+            "Section C - Additional Insureds And Contracts",
+            "Additional insured status applies only when the attached endorsement, written contract requirement, and completed schedule identify the party or operation.",
+            "A certificate of insurance, bid document, invoice, permit, or producer email does not amend the policy or waive an exclusion.",
+            "Contractual liability, primary and noncontributory wording, waiver of transfer rights, and completed-operations extensions apply only to the extent stated in an endorsement.",
+            "Section D - Records And Audit",
+            "The insured must retain sales records, payroll records, job-cost ledgers, subcontract agreements, certificates, lease records, and location records that support the exposure basis.",
+            "Final premium may be adjusted after audit if the actual exposure, classification, territory, or operation differs from the schedule.",
+            "If records are incomplete, exposure may be assigned according to the rating rules and the information available at audit.",
+            "Section E - Endorsement Order",
+            "Endorsements with later effective dates apply only from their effective dates and only to the classifications, locations, projects, or operations they identify.",
+            "The forms schedule, declarations, exposure schedule, and endorsement detail pages must be read together before determining whether a scheduled item is covered.",
+        ]
+    return []
+
+
 def _augment_lines(profile: dict[str, str], kind: str, item: dict[str, Any], lines: list[str]) -> list[str]:
     augmented = [line for line in lines if line.strip()]
-    if len(augmented) >= 12:
+    target = 16 if profile["lob"] == "BOP" else 22
+    if len(augmented) >= target:
         return augmented
-    for line in _supplemental_lines(profile, kind, item):
+    for line in [*_supplemental_lines(profile, kind, item), *_dense_policy_clause_lines(profile, kind, item)]:
         if line not in augmented:
             augmented.append(line)
-        if len(augmented) >= 12:
+        if len(augmented) >= target:
             break
     return augmented
 
@@ -700,8 +837,8 @@ def _bop_typed_draft_page(
             ]
         )
 
-    section_labels = ["A.", "B.", "C.", "D.", "E.", "F.", "G.", "H."]
-    for idx, line in enumerate(lines[:8]):
+    section_labels = ["A.", "B.", "C.", "D.", "E.", "F.", "G.", "H.", "I.", "J.", "K.", "L.", "M.", "N."]
+    for idx, line in enumerate(lines[:14]):
         text = re.sub(r"\s+", " ", str(line)).strip()
         if not text:
             continue
@@ -836,9 +973,16 @@ def _bop_coverage_form_page(
         para(f"Coverage for {coverage_key} is determined by reading the Declarations, this form, the forms schedule and any endorsement naming the same coverage and premises reference."),
         para("If the same coverage appears on multiple schedules, use the location, building, form number and effective date to connect the entries."),
     ]
-    body_parts = generated_parts() if generated_body else (
-        main_form_parts if item.get("form_number") == "BPF 00 13" else optional_form_parts
-    )
+    if generated_body:
+        body_parts = generated_parts()
+        supplemental_parts = main_form_parts if item.get("form_number") == "BPF 00 13" else optional_form_parts
+        for part in supplemental_parts[3:]:
+            if len(body_parts) >= 28:
+                break
+            if part not in body_parts:
+                body_parts.append(part)
+    else:
+        body_parts = main_form_parts if item.get("form_number") == "BPF 00 13" else optional_form_parts
 
     return f"""
 <section class="coverage-form-page">
@@ -877,6 +1021,12 @@ def _bop_typed_endorsement_page(
         f"The limit shown for the affected scheduled coverage is {item.get('limit', '')}; the deductible shown is {item.get('deductible', '')}.",
         f"The valuation or rating basis shown for the scheduled coverage is {item.get('valuation', item.get('business_income_basis', 'as scheduled'))}.",
         "This endorsement does not change any other scheduled premises unless another schedule expressly states that it applies.",
+        "The declarations, coverage form, forms schedule, endorsement schedule and premium schedule must be read together before applying this endorsement.",
+        "A binder, certificate, producer request, invoice, audit worksheet or loss-control note does not change this endorsement unless a revised endorsement is issued.",
+        "If a location, building, coverage, form number or effective date differs between schedules, the later and more specific endorsement controls for that scheduled item.",
+        "The insured must keep occupancy records, valuation worksheets, lease agreements, payroll records, sales records and equipment schedules that support the scheduled entry.",
+        "Any premium adjustment arising from this endorsement is shown in the premium summary or later billing notice and does not expand the applicable limit.",
+        "This endorsement applies separately to each premises, coverage and form reference identified in the schedule unless the endorsement states otherwise.",
     ]
     content: list[str] = []
     content.extend(_typed_policy_header(profile))
@@ -896,7 +1046,7 @@ def _bop_typed_endorsement_page(
             "",
         ]
     )
-    section_labels = ["A.", "B.", "C.", "D.", "E.", "F."]
+    section_labels = ["A.", "B.", "C.", "D.", "E.", "F.", "G.", "H.", "I.", "J.", "K.", "L."]
     for idx, line in enumerate(item_lines):
         text = re.sub(r"\s+", " ", str(line)).strip()
         if not text:
@@ -957,6 +1107,16 @@ def _bop_typed_notice_page(
             "Questions about billing, audit, loss reporting, or policy changes should",
             "be directed to the producer or servicing office shown in the declarations.",
             "",
+            "The forms schedule identifies the edition date for each coverage form,",
+            "endorsement, amendatory page and notice attached to the policy packet.",
+            "",
+            "If more than one schedule refers to the same location or building, read",
+            "the location number, building number, coverage name, form number, and",
+            "effective date together before relying on the entry.",
+            "",
+            "The insured should retain the full packet, including replaced pages,",
+            "because later endorsements may apply only from their effective dates.",
+            "",
             "-" * 78,
             "KEEP THIS NOTICE WITH YOUR POLICY FOR FUTURE REFERENCE.",
         ]
@@ -1005,6 +1165,16 @@ def _bop_typed_billing_page(
             "5. Return premium, additional premium, fees, and taxes are calculated using",
             "   the policy terms, rating plan, and applicable law.",
             "",
+            "6. Premium shown for a single scheduled coverage does not change limits,",
+            "   deductibles, valuation terms, covered premises, or exclusions.",
+            "",
+            "7. If the insured requests a change during the policy period, any resulting",
+            "   premium adjustment applies from the effective date shown on the",
+            "   endorsement or revised declarations page.",
+            "",
+            "8. Audit correspondence, worksheets, and installment notices are part of",
+            "   policy administration records and should be retained with this packet.",
+            "",
             "-" * 78,
             "THIS PAGE IS PART OF THE POLICY PACKET BUT DOES NOT GRANT COVERAGE.",
         ]
@@ -1051,6 +1221,15 @@ def _bop_typed_amendatory_page(
             "4. This endorsement does not change scheduled limits, deductibles, forms,",
             "   classifications, rating bases, or premiums unless a row in the schedule",
             "   or another endorsement specifically states the change.",
+            "",
+            "5. If this endorsement conflicts with another state amendatory endorsement,",
+            "   the provision applicable to the described premises controls.",
+            "",
+            "6. Notice periods, appraisal rights, cancellation terms, and suit limitation",
+            "   provisions apply only as amended for the state and policy period shown.",
+            "",
+            "7. This endorsement must be read with the declarations, coverage form,",
+            "   forms schedule, and any endorsement naming the same location or coverage.",
             "",
             "-" * 78,
             "ALL OTHER TERMS AND CONDITIONS OF THIS POLICY REMAIN UNCHANGED.",
@@ -1197,7 +1376,7 @@ def _bop_declaration_page_one(profile: dict[str, str], items: list[dict[str, Any
         "",
         f"  Estimated Businessowners Premium                                {money(total_premium):>12}",
     ]
-    return _typed_form_page(profile, lines=lines, form_id="BPF7102X ED. 05-24", continued=True)
+    return _typed_form_page(profile, lines=lines, form_id="CBF2102X ED. 05-24", continued=True)
 
 
 def _bop_declaration_page_two(profile: dict[str, str], items: list[dict[str, Any]]) -> str:
@@ -1206,12 +1385,12 @@ def _bop_declaration_page_two(profile: dict[str, str], items: list[dict[str, Any
     forms = []
     for item in items:
         forms.append(f"{item['form_number'].replace(' ', '')}({item['edition_date']})*")
-    forms.extend(["BPF003(05/24)*", "BPF211(02/25)*", "BPF430(05/24)*", "BPF710(11/25)*", "SL7004(03/25)*"])
+    forms.extend(["CBF003(05/24)*", "CBF211(02/25)*", "CBF430(05/24)*", "CBF210(11/25)*", "SL2404(03/25)*"])
     unique_forms = list(dict.fromkeys(forms))
     form_lines = textwrap.wrap(",  ".join(unique_forms), width=76, break_long_words=False, break_on_hyphens=False)
     optional_rows = [
-        ("Businessowners Extension Endorsement", "See BP7100"),
-        ("Auto Service Industry Extension", "See BP7340"),
+        ("Businessowners Extension Endorsement", "See CBF210"),
+        ("Auto Service Industry Extension", "See CBF340"),
         ("Employee Tools - Per Occurrence", "$    10,000"),
         ("                 Per Employee", "$     1,000"),
     ]
@@ -1246,7 +1425,7 @@ def _bop_declaration_page_two(profile: dict[str, str], items: list[dict[str, Any
     lines.extend(f"  {line}" for line in form_lines)
     lines.append("  ------------------------------------------------------------------------")
     lines.extend([""] * 12)
-    return _typed_form_page(profile, lines=lines, form_id="BPF7102X ED. 05-24", page_no=2)
+    return _typed_form_page(profile, lines=lines, form_id="CBF2102X ED. 05-24", page_no=2)
 
 
 def _draft_page(
@@ -1404,12 +1583,67 @@ def _chunked_table_pages(
     page_size: int = 18,
     note: str = "",
 ) -> str:
+    def row_markup(row: list[Any], absolute_index: int) -> str:
+        pairs = [(str(header), str(value)) for header, value in zip(headers, row, strict=False)]
+        if not pairs:
+            return ""
+        item_label = pairs[0][1]
+        rest = pairs[1:]
+        fields = "".join(
+            '<div class="entry-field">'
+            f'<span class="entry-label">{escape(label)}</span>'
+            f'<span class="entry-value">{escape(value)}</span>'
+            "</div>"
+            for label, value in rest
+        )
+        variant = absolute_index % 4
+        if variant == 0:
+            note_text = "; ".join(f"{label.lower()} {value}" for label, value in rest[:3])
+            body = f'<p class="entry-note">Schedule entry {escape(item_label)} records {escape(note_text)}.</p>'
+            body += f'<div class="entry-fields">{fields}</div>'
+        elif variant == 1:
+            first = rest[0] if rest else ("Reference", item_label)
+            tail = rest[1:]
+            tail_fields = "".join(
+                '<div class="entry-field">'
+                f'<span class="entry-label">{escape(label)}</span>'
+                f'<span class="entry-value">{escape(value)}</span>'
+                "</div>"
+                for label, value in tail
+            )
+            body = (
+                f'<p class="entry-note">{escape(first[0])}: '
+                f'<strong>{escape(first[1])}</strong>. The remaining values below apply to this same scheduled item.</p>'
+                f'<div class="entry-fields">{tail_fields}</div>'
+            )
+        elif variant == 2:
+            left = rest[: (len(rest) + 1) // 2]
+            right = rest[(len(rest) + 1) // 2 :]
+            left_text = " / ".join(f"{label}: {value}" for label, value in left)
+            right_text = " / ".join(f"{label}: {value}" for label, value in right)
+            body = (
+                f'<p class="entry-note"><strong>{escape(item_label)}</strong> - {escape(left_text)}</p>'
+                f'<p class="entry-note">{escape(right_text)}</p>'
+            )
+        else:
+            detail = ". ".join(f"{label} is {value}" for label, value in rest)
+            body = f'<p class="entry-note">{escape(item_label)}. {escape(detail)}.</p>'
+            body += f'<div class="entry-fields single">{fields}</div>'
+        return (
+            f'<div class="schedule-entry v{variant}">'
+            f'<div class="entry-id">{escape(item_label)}</div>'
+            f'<div class="entry-body">{body}</div>'
+            "</div>"
+        )
+
     pages: list[str] = []
     for chunk_index, start in enumerate(range(0, len(rows), page_size), start=1):
         chunk = rows[start:start + page_size]
         suffix = f" - Continued {chunk_index}" if len(rows) > page_size and chunk_index > 1 else ""
         body = (f'<div class="schedule-note">{escape(note)}</div>' if note else "")
-        body += _table(headers, chunk, class_name="policy-table compact")
+        body += '<div class="schedule-ledger">'
+        body += "".join(row_markup(row, start + offset) for offset, row in enumerate(chunk))
+        body += "</div>"
         body += """
 <div class="two-col">
   <div class="form-box">
@@ -1499,8 +1733,8 @@ def _wc_schedule_pages(profile: dict[str, str], items: list[dict[str, Any]]) -> 
     ]
     mod_page = _page(profile, "Experience Modification and Rating Summary", f'<div class="declaration-box">{_field_grid(mod_fields)}</div>', form_id="WC 00 04 14 A")
     return (
-        _chunked_table_pages(profile, "Workers Compensation Classification Schedule", ["Item", "State", "Class", "Classification", "Loc", "Governing"], class_rows, form_id="WC DS 02", page_size=17, note="Rows are keyed by state and class code; payroll and premium appear on a later schedule.")
-        + _chunked_table_pages(profile, "Payroll and Rate Schedule", ["Item", "State", "Class", "Payroll", "Rate", "Estimated Premium"], payroll_rows, form_id="WC DS 03", page_size=17)
+        _chunked_table_pages(profile, "Workers Compensation Classification Schedule", ["Item", "State", "Class", "Classification", "Loc", "Governing"], class_rows, form_id="WC DS 02", page_size=14, note="Rows are keyed by state and class code; payroll and premium appear on a later schedule.")
+        + _chunked_table_pages(profile, "Payroll and Rate Schedule", ["Item", "State", "Class", "Payroll", "Rate", "Estimated Premium"], payroll_rows, form_id="WC DS 03", page_size=14)
         + mod_page
     )
 
@@ -1510,9 +1744,9 @@ def _cgl_schedule_pages(profile: dict[str, str], items: list[dict[str, Any]]) ->
     classifications = [[item["item_id"], item["location_number"], item["class_code"], item["classification"], item["territory"]] for item in items]
     rating = [[item["item_id"], item["class_code"], item["exposure_basis"], item["exposure"], item["rate"], item["products_completed_ops_rate"], item["premium"]] for item in items]
     return (
-        _chunked_table_pages(profile, "Commercial General Liability Limits Schedule", ["Item", "Coverage Part", "Limit Type", "Limit"], limits, form_id="CG DS 02", page_size=20)
-        + _chunked_table_pages(profile, "Classification and Location Schedule", ["Item", "Loc", "Class", "Classification", "Territory"], classifications, form_id="CG DS 03", page_size=18, note="Classification rows apply with the exposure/rate schedule and the limits schedule.")
-        + _chunked_table_pages(profile, "Exposure and Premium Rating Schedule", ["Item", "Class", "Basis", "Exposure", "Rate", "PCO Rate", "Premium"], rating, form_id="CG DS 04", page_size=18)
+        _chunked_table_pages(profile, "Commercial General Liability Limits Schedule", ["Item", "Coverage Part", "Limit Type", "Limit"], limits, form_id="CG DS 02", page_size=16)
+        + _chunked_table_pages(profile, "Classification and Location Schedule", ["Item", "Loc", "Class", "Classification", "Territory"], classifications, form_id="CG DS 03", page_size=15, note="Classification rows apply with the exposure/rate schedule and the limits schedule.")
+        + _chunked_table_pages(profile, "Exposure and Premium Rating Schedule", ["Item", "Class", "Basis", "Exposure", "Rate", "PCO Rate", "Premium"], rating, form_id="CG DS 04", page_size=14)
     )
 
 
@@ -1558,8 +1792,128 @@ def _forms_schedule_pages(profile: dict[str, str], items: list[dict[str, Any]]) 
         return "".join(pages)
     if profile["lob"] == "CGL":
         cgl_rows = [row + [item["exclusion_name"]] for row, item in zip(rows, items)]
-        return _chunked_table_pages(profile, "Forms, Endorsements, and Exclusions Schedule", ["Form", "Edition", "Title", "Item", "Source", "Exclusion Concept"], cgl_rows, form_id="CG DS 05", page_size=18, note="Forms can control limits or exclusions independently from the rating schedule.")
-    return _chunked_table_pages(profile, "Forms and Endorsements Schedule", ["Form", "Edition", "Title", "Item", "Source"], rows, form_id="WC DS 04", page_size=18, note="Form numbers and edition dates apply with the item schedule.")
+        return _chunked_table_pages(profile, "Forms, Endorsements, and Exclusions Schedule", ["Form", "Edition", "Title", "Item", "Source", "Exclusion Concept"], cgl_rows, form_id="CG DS 05", page_size=12, note="Forms can control limits or exclusions independently from the rating schedule.")
+    return _chunked_table_pages(profile, "Forms and Endorsements Schedule", ["Form", "Edition", "Title", "Item", "Source"], rows, form_id="WC DS 04", page_size=13, note="Form numbers and edition dates apply with the item schedule.")
+
+
+def _clause_records(items: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    records: list[dict[str, Any]] = []
+    for item in items:
+        records.extend(build_policy_clause_records_for_item(item))
+    return records
+
+
+def _bop_typed_clause_pages(profile: dict[str, str], items: list[dict[str, Any]]) -> str:
+    pages: list[str] = []
+    clauses = _clause_records(items)
+    page_size = 8
+    for page_no, start in enumerate(range(0, len(clauses), page_size), start=1):
+        chunk = clauses[start:start + page_size]
+        lines: list[str] = []
+        lines.extend(_typed_policy_header(profile))
+        lines.append(_typed_center("MATERIAL POLICY PROVISIONS"))
+        lines.append(_typed_center("READ WITH DECLARATIONS, SCHEDULES, FORMS AND ENDORSEMENTS"))
+        lines.append("=" * 78)
+        lines.extend(
+            [
+                "The following provisions are part of the current policy packet. Each",
+                "entry must be read with the scheduled premises, form number, edition",
+                "date, and any endorsement applying to the same coverage.",
+                "-" * 78,
+                "",
+            ]
+        )
+        for idx, clause in enumerate(chunk, start=start + 1):
+            intro_variants = [
+                (
+                    f"{clause['form_number']} edition {clause['edition_date']} contains a "
+                    f"{clause['clause_type']} provision for {clause['clause_scope']}."
+                ),
+                (
+                    f"For {clause['clause_scope']}, read {clause['form_number']} "
+                    f"edition {clause['edition_date']} as the controlling {clause['clause_type']} provision."
+                ),
+                (
+                    f"The policy applies the following {clause['clause_type']} provision under "
+                    f"{clause['form_number']} edition {clause['edition_date']} to {clause['clause_scope']}."
+                ),
+            ]
+            intro = intro_variants[idx % len(intro_variants)]
+            lines.extend(
+                [
+                    f"{idx:03d}. {clause['clause_title'].upper()}",
+                ]
+            )
+            lines.extend(_typed_wrap(intro, width=76, indent="     "))
+            lines.extend(_typed_wrap(clause["clause_text"], width=76, indent="     "))
+            lines.append("")
+        lines.extend(
+            [
+                "-" * 78,
+                "ARCHIVED OR PRIOR-TERM CLAUSES APPEARING ELSEWHERE DO NOT MODIFY THIS POLICY.",
+            ]
+        )
+        pages.append(
+            _typed_form_page(
+                profile,
+                lines=lines,
+                form_id="BPC4401 ED. 05-24",
+                page_no=page_no,
+                continued=page_no > 1,
+            )
+        )
+    return "".join(pages)
+
+
+def _clause_detail_pages(profile: dict[str, str], items: list[dict[str, Any]]) -> str:
+    if profile["lob"] == "BOP":
+        return _bop_typed_clause_pages(profile, items)
+
+    pages: list[str] = []
+    clauses = _clause_records(items)
+    page_size = 16 if profile["lob"] == "WC" else 14
+    for page_no, start in enumerate(range(0, len(clauses), page_size), start=1):
+        chunk = clauses[start:start + page_size]
+        paragraphs = []
+        for idx, clause in enumerate(chunk, start=start + 1):
+            if profile["lob"] == "WC":
+                context = (
+                    f"{clause.get('state', '')} class {clause.get('class_code', '')} "
+                    f"({clause.get('classification', '')})"
+                )
+            else:
+                context = (
+                    f"class {clause.get('class_code', '')} ({clause.get('classification', '')}) "
+                    f"at Location {clause.get('location_number', '')}"
+                )
+                if clause.get("exclusion_name"):
+                    context += f", with {clause['exclusion_name']}"
+            intro_variants = [
+                (
+                    f"{clause['form_number']} edition {clause['edition_date']} is a "
+                    f"{clause['clause_type']} provision for {clause['clause_scope']}."
+                ),
+                (
+                    f"For {context}, the applicable form is {clause['form_number']} "
+                    f"edition {clause['edition_date']} and the provision is treated as {clause['clause_type']}."
+                ),
+                (
+                    f"The provision below is read with {clause['form_number']} edition "
+                    f"{clause['edition_date']} for {clause['clause_scope']}."
+                ),
+            ]
+            paragraphs.append(f'<p class="clause-heading">{escape(clause["clause_title"])}</p>')
+            paragraphs.append(f"<p>{escape(intro_variants[idx % len(intro_variants)])}</p>")
+            paragraphs.append(f"<p>{escape(clause['clause_text'])}</p>")
+        notice = """
+<div class="schedule-note">
+  Material provisions in this section apply to the current policy term. Similar prior-term or advisory notes in archive pages are retained for underwriting reference.
+</div>
+"""
+        body = notice + '<div class="policy-form-body two-column">' + "".join(paragraphs) + "</div>"
+        title = "Material Policy Provisions" if page_no == 1 else f"Material Policy Provisions - Continued {page_no}"
+        pages.append(_page(profile, title, body, form_id="CLAUSE-SCH"))
+    return "".join(pages)
 
 
 def _endorsement_detail_pages(profile: dict[str, str], items: list[dict[str, Any]], text_bank: PolicyTextBank | None) -> str:
@@ -1568,8 +1922,11 @@ def _endorsement_detail_pages(profile: dict[str, str], items: list[dict[str, Any
     for chunk_index, item in enumerate(endorsed, start=1):
         draft = _draft(text_bank, "endorsement", chunk_index)
         title = str(draft.get("title")) if draft else "Policy Change Endorsement"
-        form_id = item["form_number"]
         lines = [str(line) for line in draft.get("paragraphs", [])] if draft else _fallback_lines(profile, "endorsement", item)
+        if profile["lob"] == "CGL":
+            title = str(item.get("exclusion_name") or title)
+            lines = _fallback_lines(profile, "endorsement", item)
+        form_id = item["form_number"]
         lines = _augment_lines(profile, "endorsement", item, lines)
         if profile["lob"] == "BOP":
             pages.append(_bop_typed_endorsement_page(profile, title, chunk_index, item, lines))
@@ -1670,13 +2027,11 @@ def _spacer_pages(
 
 
 def _distractor_section(config: PolicyMultiHopCaseConfig, profile: dict[str, str], items: list[dict[str, Any]]) -> str:
-    if config.case_type != "mixed":
-        return ""
     rows = []
-    for idx, item in enumerate(items[:24], start=1):
+    for idx, item in enumerate(items[: min(36, len(items))], start=1):
         rows.append([f"ARCH-{idx:03d}", item["form_number"], item.get("exclusion_name", item["form_title"]), item.get("limit", item.get("premium", "")), "Prior term only"])
     body = f"""
-<p>Archived prior-term forms are included as distractors. They do not control the renewal CGL coverage part.</p>
+<p>Archived prior-term forms and advisory clause notes are retained with the file. They do not control the current policy period and are kept for underwriting reference.</p>
 {_table(["Archive ID", "Form", "Subject", "Value", "Status"], rows, class_name="policy-table compact")}
 """
     return _page(profile, "Archived Prior-Term Forms", body, form_id="ARCH")
@@ -1705,6 +2060,7 @@ def case_html(
         + _schedule_pages(config, profile, items)
         + _spacer_pages(config, profile, gap2, gap1 + 1, items, text_bank)
         + _forms_schedule_pages(profile, items)
+        + _clause_detail_pages(profile, items)
         + _spacer_pages(config, profile, gap3, gap1 + gap2 + 1, items, text_bank)
         + _endorsement_detail_pages(profile, items, text_bank)
         + _spacer_pages(config, profile, gap4, gap1 + gap2 + gap3 + 1, items, text_bank)

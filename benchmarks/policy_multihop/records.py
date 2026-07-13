@@ -99,6 +99,27 @@ CGL_CLASSES = [
 
 MATERIALITY = ["Material", "Potentially Material", "Administrative", "No Material Change"]
 
+CLAUSE_TYPES_BY_LOB: dict[str, tuple[tuple[str, str], ...]] = {
+    "BOP": (
+        ("Scheduled Premises Limitation", "limitation"),
+        ("Limit And Deductible Application", "condition"),
+        ("Valuation Records Requirement", "condition"),
+        ("Endorsement Priority", "condition"),
+    ),
+    "WC": (
+        ("Remuneration Audit", "condition"),
+        ("State Classification Control", "condition"),
+        ("Officer And Subcontractor Treatment", "limitation"),
+        ("Premium Revision Basis", "condition"),
+    ),
+    "CGL": (
+        ("Classification And Territory Limitation", "limitation"),
+        ("Aggregate Limit Application", "condition"),
+        ("Additional Insured Contract Gate", "condition"),
+        ("Exclusion And Endorsement Priority", "exclusion"),
+    ),
+}
+
 
 def case_profile(config: PolicyMultiHopCaseConfig, rng: random.Random) -> dict[str, str]:
     stem = INSURED_STEMS[rng.randrange(len(INSURED_STEMS))]
@@ -319,6 +340,7 @@ def _base_record(item: dict[str, Any], record_type: str, record_id: str) -> dict
 
 def _primary_record(config: PolicyMultiHopCaseConfig, item: dict[str, Any]) -> dict[str, Any]:
     record = dict(item)
+    record.pop("materiality", None)
     record.update(_base_record(item, config.target_record_type, item["item_id"]))
     return record
 
@@ -336,7 +358,6 @@ def _form_record(item: dict[str, Any]) -> dict[str, Any]:
             "edition_date": item["edition_date"],
             "form_title": item["form_title"],
             "schedule_source": schedule_source,
-            "materiality": item["materiality"],
         }
     )
     if item["lob"] == "BOP":
@@ -407,7 +428,6 @@ def _premium_record(item: dict[str, Any]) -> dict[str, Any]:
             "premium_basis": item.get("premium_basis") or item.get("exposure_basis") or item.get("coverage", ""),
             "class_code": item.get("class_code", ""),
             "location_number": item.get("location_number", ""),
-            "materiality": item["materiality"],
         }
     )
     if item["lob"] == "WC":
@@ -438,6 +458,132 @@ def _premium_record(item: dict[str, Any]) -> dict[str, Any]:
             }
         )
     return record
+
+
+def _clause_scope(item: dict[str, Any]) -> str:
+    if item["lob"] == "BOP":
+        return f"Location {item['location_number']}, Building {item['building_number']}, {item['coverage']}"
+    if item["lob"] == "WC":
+        return f"{item['state']} class {item['class_code']}, Location {item['location_number']}"
+    return f"Location {item['location_number']}, class {item['class_code']}, territory {item['territory']}"
+
+
+def _clause_text(item: dict[str, Any], clause_title: str) -> str:
+    if item["lob"] == "BOP":
+        scope = _clause_scope(item)
+        if clause_title == "Scheduled Premises Limitation":
+            return (
+                f"This provision applies only to {scope} when {item['form_number']} edition "
+                f"{item['edition_date']} is attached to the policy."
+            )
+        if clause_title == "Limit And Deductible Application":
+            return (
+                f"The scheduled limit of {item['limit']} and deductible of {item['deductible']} "
+                f"apply to {item['coverage']} at the described premises."
+            )
+        if clause_title == "Valuation Records Requirement":
+            return (
+                f"The insured must keep records supporting the {item['valuation']} valuation basis, "
+                f"{item['coinsurance']} coinsurance entry, and {item['business_income_basis']} business income basis."
+            )
+        return (
+            f"If schedules conflict for {scope}, the endorsement or form entry with the later effective date "
+            f"controls the affected coverage."
+        )
+    if item["lob"] == "WC":
+        scope = _clause_scope(item)
+        if clause_title == "Remuneration Audit":
+            return (
+                f"The annual payroll of {item['annual_payroll']} for {scope} is an estimate and is subject "
+                f"to audit after the policy period."
+            )
+        if clause_title == "State Classification Control":
+            return (
+                f"The {item['state']} classification {item['class_code']} controls the rating basis for "
+                f"{item['classification']} unless a state amendatory endorsement changes it."
+            )
+        if clause_title == "Officer And Subcontractor Treatment":
+            return (
+                f"Officer, member, volunteer, leased-worker, and subcontractor treatment for {scope} must be "
+                f"read with the attached forms schedule."
+            )
+        return (
+            f"The estimated premium of {item['estimated_premium']} is calculated from rate {item['manual_rate']}, "
+            f"experience modification {item['experience_mod']}, and schedule rating {item['schedule_credit_debit']}."
+        )
+    scope = _clause_scope(item)
+    if clause_title == "Classification And Territory Limitation":
+        return (
+            f"The {item['classification']} operation applies at {scope} only when the declarations show "
+            f"the same exposure basis."
+        )
+    if clause_title == "Aggregate Limit Application":
+        return (
+            f"The {item['limit_type']} limit of {item['limit']} applies with the Commercial General Liability "
+            f"coverage part and does not increase another aggregate."
+        )
+    if clause_title == "Additional Insured Contract Gate":
+        return (
+            f"Additional insured status for {scope} applies only when the contract requirement and attached "
+            f"form {item['form_number']} are both satisfied."
+        )
+    return (
+        f"The {item['exclusion_name']} provision and form {item['form_number']} edition {item['edition_date']} "
+        f"control before any conflicting summary entry for {scope}."
+    )
+
+
+def build_policy_clause_records_for_item(item: dict[str, Any]) -> list[dict[str, Any]]:
+    """Return material clause records that are rendered as prose in the policy packet."""
+    clauses: list[dict[str, Any]] = []
+    for index, (clause_title, clause_type) in enumerate(CLAUSE_TYPES_BY_LOB[item["lob"]], start=1):
+        record = _base_record(item, "policy_clause_item", f"CL-{item['item_id']}-{index:02d}")
+        clause_text = _clause_text(item, clause_title)
+        record.update(
+            {
+                "form_number": item["form_number"],
+                "edition_date": item["edition_date"],
+                "form_title": item["form_title"],
+                "clause_title": clause_title,
+                "clause_type": clause_type,
+                "clause_scope": _clause_scope(item),
+                "clause_text": clause_text,
+            }
+        )
+        if item["lob"] == "BOP":
+            record.update(
+                {
+                    "coverage": item["coverage"],
+                    "location_number": item["location_number"],
+                    "building_number": item["building_number"],
+                    "limit": item["limit"],
+                    "deductible": item["deductible"],
+                }
+            )
+        elif item["lob"] == "WC":
+            record.update(
+                {
+                    "state": item["state"],
+                    "class_code": item["class_code"],
+                    "classification": item["classification"],
+                    "annual_payroll": item["annual_payroll"],
+                    "estimated_premium": item["estimated_premium"],
+                }
+            )
+        else:
+            record.update(
+                {
+                    "class_code": item["class_code"],
+                    "classification": item["classification"],
+                    "location_number": item["location_number"],
+                    "territory": item["territory"],
+                    "exclusion_name": item["exclusion_name"],
+                    "limit_type": item["limit_type"],
+                    "limit": item["limit"],
+                }
+            )
+        clauses.append(record)
+    return clauses
 
 
 def _location_record(item: dict[str, Any]) -> dict[str, Any]:
@@ -511,6 +657,8 @@ def build_policy_target_records(
             records.append(endorsement)
     for item in primary_items:
         records.append(_premium_record(item))
+    for item in primary_items:
+        records.extend(build_policy_clause_records_for_item(item))
     records = [_strip_document_record(record, lob=config.lob) for record in records]
     if config.lob == "BOP":
         records = _dedupe_policy_records(records)

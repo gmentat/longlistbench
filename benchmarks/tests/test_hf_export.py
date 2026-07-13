@@ -1,0 +1,341 @@
+import json
+import tempfile
+import unittest
+from pathlib import Path
+
+from benchmarks import export_hf_dataset
+
+
+class HuggingFaceExportTests(unittest.TestCase):
+    def setUp(self):
+        self.tmp = tempfile.TemporaryDirectory()
+        self.data_dir = Path(self.tmp.name) / "data"
+        for relative in [
+            "ground_truth",
+            "pdfs",
+            "transcripts/ocr_gemini",
+            "schemas",
+        ]:
+            (self.data_dir / relative).mkdir(parents=True, exist_ok=True)
+        (self.data_dir / "schemas" / "loss_run_incident.schema.json").write_text(
+            '{"title":"LossRunIncident","type":"object"}',
+            encoding="utf-8",
+        )
+
+    def tearDown(self):
+        self.tmp.cleanup()
+
+    def _write_instance(self, instance):
+        sample_id = instance["id"]
+        target_records = [{"id": sample_id, "value": "expected"}]
+        (self.data_dir / "ground_truth" / f"{sample_id}.json").write_text(
+            json.dumps(target_records),
+            encoding="utf-8",
+        )
+        (self.data_dir / "pdfs" / f"{sample_id}.pdf").write_bytes(b"%PDF-1.4\n")
+        if "ocr" in instance.get("transcripts_available", []):
+            (self.data_dir / "transcripts" / "ocr_gemini" / f"{sample_id}.md").write_text(
+                f"ocr {sample_id}",
+                encoding="utf-8",
+            )
+        instance["files"] = {
+            "ground_truth": f"ground_truth/{sample_id}.json",
+            "pdf": f"pdfs/{sample_id}.pdf",
+            "ocr_md": f"transcripts/ocr_gemini/{sample_id}.md",
+        }
+        return instance
+
+    def test_build_config_rows_normalizes_manifest_instances(self):
+        instances = [
+            self._write_instance(
+                {
+                    "id": "ifta_mileage_by_vehicle_001",
+                    "difficulty": "ifta_mileage_by_vehicle",
+                    "format": "production_like_pdf",
+                    "domain": "commercial_insurance_operations",
+                    "target_record_type": "vehicle_state_mileage_row",
+                    "num_target_records": 1,
+                    "pages_estimate": 8,
+                    "problems": ["high_density_long_list"],
+                    "transcripts_available": ["ocr"],
+                }
+            ),
+            self._write_instance(
+                {
+                    "id": "multihop_012_001_crosspage",
+                    "complexity_regime": "claim_crosspage_multihop",
+                    "difficulty": "multihop",
+                    "format": "crosspage",
+                    "domain": "claims",
+                    "target_record_type": "loss_run_incident",
+                    "num_target_records": 1,
+                    "pdf_page_count": 76,
+                    "problems": ["cross_page_join"],
+                    "transcripts_available": ["ocr"],
+                }
+            ),
+            self._write_instance(
+                {
+                    "id": "multihop_bop_012_001",
+                    "complexity_regime": "policy_multi_hop",
+                    "difficulty": "multihop",
+                    "format": "crosspage",
+                    "domain": "policy_review",
+                    "target_record_type": "policy_packet_item",
+                    "num_target_records": 1,
+                    "pdf_page_count": 90,
+                    "problems": ["businessowners_policy"],
+                    "transcripts_available": ["ocr"],
+                }
+            ),
+        ]
+        (self.data_dir / "manifest.json").write_text(
+            json.dumps({"instances": instances}),
+            encoding="utf-8",
+        )
+
+        rows_by_config = export_hf_dataset.build_config_rows(self.data_dir)
+
+        self.assertEqual(
+            [row["document_id"] for row in rows_by_config["core_operations"]],
+            ["ifta_mileage_by_vehicle_001"],
+        )
+        self.assertEqual(
+            [row["document_id"] for row in rows_by_config["claim_multihop"]],
+            ["multihop_012_001_crosspage"],
+        )
+        self.assertEqual(
+            [row["document_id"] for row in rows_by_config["policy_packets"]],
+            ["multihop_bop_012_001"],
+        )
+
+        core_row = rows_by_config["core_operations"][0]
+        self.assertEqual(core_row["domain"], "commercial_insurance_operations")
+        self.assertEqual(core_row["evaluation_role"], "scale_control")
+        self.assertEqual(core_row["target_field"], "records")
+        self.assertEqual(json.loads(core_row["ground_truth"])["records"][0]["id"], "ifta_mileage_by_vehicle_001")
+        self.assertEqual(core_row["ocr_transcript"], "ocr ifta_mileage_by_vehicle_001")
+
+        policy_row = rows_by_config["policy_packets"][0]
+        self.assertEqual(policy_row["target_field"], "records")
+        self.assertEqual(policy_row["evaluation_role"], "structural_challenge")
+        self.assertEqual(policy_row["target_record_type"], "policy_packet_item")
+        self.assertEqual(json.loads(policy_row["ground_truth"])["records"][0]["id"], "multihop_bop_012_001")
+        self.assertEqual(policy_row["ocr_transcript"], "ocr multihop_bop_012_001")
+
+    def test_dataset_card_lists_hf_config_paths(self):
+        summary = {
+            "core_operations": {
+                "rows": 30,
+                "targets": 31884,
+                "min_targets": 260,
+                "max_targets": 2571,
+                "min_pages": 15,
+                "max_pages": 144,
+                "domains": {"commercial_insurance_operations": 28},
+                "target_fields": ["records"],
+            },
+            "claim_multihop": {
+                "rows": 3,
+                "targets": 77,
+                "min_targets": 12,
+                "max_targets": 40,
+                "min_pages": 76,
+                "max_pages": 198,
+                "domains": {"claims": 3},
+                "target_fields": ["incidents"],
+            },
+            "policy_packets": {
+                "rows": 3,
+                "targets": 1489,
+                "min_targets": 360,
+                "max_targets": 619,
+                "min_pages": 142,
+                "max_pages": 316,
+                "domains": {"policy_review": 3},
+                "target_fields": ["records"],
+            },
+        }
+
+        regime_stats = {
+            key: {
+                "count": 1,
+                "rows": 10,
+                "weighted_f1": 0.9765933643324127,
+                "exact_record_recall": 0.8,
+            }
+            for key, _ in export_hf_dataset.BASELINE_REGIMES
+        }
+        codex_role_stats = {
+            "structural_challenge": {"count": 21, "rows": 10745, "exact_record_recall": 0.689},
+            "scale_control": {"count": 15, "rows": 22705, "exact_record_recall": 0.993},
+        }
+        claude_role_stats = {
+            "structural_challenge": {"count": 21, "rows": 10745, "exact_record_recall": 0.607},
+            "scale_control": {"count": 15, "rows": 22705, "exact_record_recall": 0.993},
+        }
+        codex_baseline = {
+            "report_path": Path("results/codex_full_current_ocr_v2/evaluation_report.json"),
+            "model_key": "codex_gpt55",
+            "presentation": export_hf_dataset.BASELINE_PRESENTATIONS["codex_gpt55"],
+            "report": {"timestamp": "2026-07-01T12:04:51+00:00"},
+            "model_stats": {
+                "total_samples": 36,
+                "total_rows": 33450,
+                "errors": 0,
+                "exact_record_recall": 0.8952167414050822,
+                "complete_documents": 12,
+                "complete_document_rate": 0.3333333333333333,
+                "weighted_f1": 0.9874341144344954,
+                "avg_f1": 0.9820241757370647,
+                "weighted_recall": 0.9778439842309854,
+                "weighted_precision": 0.9972142167138981,
+                "by_complexity_regime": regime_stats,
+                "by_evaluation_role": codex_role_stats,
+            },
+        }
+        claude_baseline = {
+            "report_path": Path("results/claude_opus48_full_current_ocr_v2/evaluation_report.json"),
+            "model_key": "claude_opus48",
+            "presentation": export_hf_dataset.BASELINE_PRESENTATIONS["claude_opus48"],
+            "report": {"timestamp": "2026-07-12T18:18:20+00:00"},
+            "model_stats": {
+                "total_samples": 36,
+                "total_rows": 33450,
+                "errors": 0,
+                "exact_record_recall": 0.8688191330343796,
+                "complete_documents": 13,
+                "complete_document_rate": 0.3611111111111111,
+                "weighted_f1": 0.9856588137753326,
+                "avg_f1": 0.9822258602857254,
+                "weighted_recall": 0.9742515417238221,
+                "weighted_precision": 0.9973363805354599,
+                "by_complexity_regime": regime_stats,
+                "by_evaluation_role": claude_role_stats,
+            },
+        }
+
+        card = export_hf_dataset.dataset_card(
+            "kaydotai/LongListBench",
+            summary,
+            [codex_baseline, claude_baseline],
+        )
+
+        self.assertIn("pretty_name: LongListBench", card)
+        self.assertIn("- benchmark", card)
+        self.assertIn("path: data/core_operations/test-*.parquet", card)
+        self.assertIn("Records/doc range", card)
+        self.assertIn("| `core_operations` |", card)
+        self.assertIn('load_dataset("kaydotai/LongListBench", "core_operations", split="test")', card)
+        self.assertIn("Pdf(decode=False)", card)
+        self.assertIn("## Canonical Scoring", card)
+        self.assertIn("evaluate_record_extraction", card)
+        self.assertIn("schemas/policy_packet_item.schema.json", card)
+        self.assertIn("schemas/loss_run_claim_row.schema.json", card)
+        self.assertIn("schemas/ifta_multisection_jurisdiction_row.schema.json", card)
+        self.assertIn("@misc{fedoruk2026longlistbench", card)
+        self.assertIn("| `policy_packets` |", card)
+        self.assertIn("The dataset contains 36 PDF documents and 33,450 target records.", card)
+        self.assertIn("89.5% | 12/36 (33.3%) | 98.7%", card)
+        self.assertIn("86.9% | 13/36 (36.1%) | 98.6%", card)
+        self.assertIn("GPT-5.5 exact records | Opus 4.8 exact records", card)
+        self.assertIn("Structural challenges", card)
+        self.assertIn("saved predictions and reports", card)
+
+    def test_default_release_baselines_include_all_four_agent_runs(self):
+        self.assertEqual(len(export_hf_dataset.DEFAULT_BASELINE_REPORTS), 4)
+        self.assertEqual(
+            {path.parent.name for path in export_hf_dataset.DEFAULT_BASELINE_REPORTS},
+            {
+                "codex_gpt56_sol_full_current_ocr_v2",
+                "claude_fable5_full_current_ocr_v2",
+                "codex_full_current_ocr_v2",
+                "claude_opus48_full_current_ocr_v2",
+            },
+        )
+
+    def test_release_baseline_requires_matching_manifest_and_predictions(self):
+        (self.data_dir / "manifest.json").write_text(
+            json.dumps({"instances": []}),
+            encoding="utf-8",
+        )
+        results_dir = Path(self.tmp.name) / "results" / "codex_full_current_ocr_v2"
+        results_dir.mkdir(parents=True)
+        report_path = results_dir / "evaluation_report.json"
+        report = {
+            "timestamp": "2026-07-01T12:04:51+00:00",
+            "dataset": {
+                "manifest_sha256": export_hf_dataset.sha256_file(self.data_dir / "manifest.json")
+            },
+            "model_stats": {export_hf_dataset.BASELINE_MODEL_KEY: {}},
+            "detailed_results": [
+                {
+                    "sample": "sample_001",
+                    "transcript": "ocr",
+                    "model": export_hf_dataset.BASELINE_MODEL_KEY,
+                    "error": None,
+                }
+            ],
+        }
+        report_path.write_text(json.dumps(report), encoding="utf-8")
+        prediction = results_dir / "sample_001_ocr_codex_gpt55_predicted.json"
+        prediction.write_text("[]", encoding="utf-8")
+
+        baseline = export_hf_dataset.load_release_baseline(report_path, self.data_dir)
+        claude_results_dir = Path(self.tmp.name) / "results" / "claude_opus48_full_current_ocr_v2"
+        claude_results_dir.mkdir(parents=True)
+        claude_report_path = claude_results_dir / "evaluation_report.json"
+        claude_report = {
+            "timestamp": "2026-07-12T18:18:20+00:00",
+            "dataset": {
+                "manifest_sha256": export_hf_dataset.sha256_file(self.data_dir / "manifest.json")
+            },
+            "model_stats": {"claude_opus48": {}},
+            "detailed_results": [
+                {
+                    "sample": "sample_001",
+                    "transcript": "ocr",
+                    "model": "claude_opus48",
+                    "error": None,
+                }
+            ],
+        }
+        claude_report_path.write_text(json.dumps(claude_report), encoding="utf-8")
+        claude_prediction = claude_results_dir / "sample_001_ocr_claude_opus48_predicted.json"
+        claude_prediction.write_text("[]", encoding="utf-8")
+        claude_baseline = export_hf_dataset.load_release_baseline(
+            claude_report_path,
+            self.data_dir,
+        )
+        output_dir = Path(self.tmp.name) / "hf"
+        export_hf_dataset.write_evaluation_files([baseline, claude_baseline], output_dir)
+
+        self.assertTrue(
+            (output_dir / "evaluation" / "codex_full_current_ocr_v2" / prediction.name).exists()
+        )
+        self.assertEqual(
+            (
+                output_dir
+                / "evaluation"
+                / "codex_full_current_ocr_v2"
+                / "per_sample_status.tsv"
+            ).read_text(encoding="utf-8"),
+            "sample\tstatus\nsample_001\t0\n",
+        )
+        self.assertTrue(
+            (
+                output_dir
+                / "evaluation"
+                / "claude_opus48_full_current_ocr_v2"
+                / claude_prediction.name
+            ).exists()
+        )
+
+        report["dataset"]["manifest_sha256"] = "stale"
+        report_path.write_text(json.dumps(report), encoding="utf-8")
+        with self.assertRaisesRegex(ValueError, "manifest hash does not match"):
+            export_hf_dataset.load_release_baseline(report_path, self.data_dir)
+
+
+if __name__ == "__main__":
+    unittest.main()

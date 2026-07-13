@@ -1,0 +1,7202 @@
+[
+  {
+    "veh_number": "7576",
+    "company_vehicle_number": "100",
+    "plate_number": "R134447",
+    "year": 2005,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "4765",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2013,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "7780",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2007,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "2008",
+    "company_vehicle_number": "103",
+    "plate_number": "",
+    "year": 2019,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "9787",
+    "company_vehicle_number": "",
+    "plate_number": "R628336",
+    "year": 1999,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "3208",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2009,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "3275",
+    "company_vehicle_number": "106",
+    "plate_number": "",
+    "year": 2006,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "6308",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2019,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "2918",
+    "company_vehicle_number": "",
+    "plate_number": "R974701",
+    "year": 2009,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "4733",
+    "company_vehicle_number": "109",
+    "plate_number": "",
+    "year": 2020,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "8178",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2024,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "3871",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2005,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "6179",
+    "company_vehicle_number": "112",
+    "plate_number": "R744221",
+    "year": 2022,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "3142",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2024,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "442",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2005,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "5103",
+    "company_vehicle_number": "115",
+    "plate_number": "",
+    "year": 1999,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "6182",
+    "company_vehicle_number": "",
+    "plate_number": "R104644",
+    "year": 2005,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "6247",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2008,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "7662",
+    "company_vehicle_number": "118",
+    "plate_number": "",
+    "year": 2007,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "2991",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 1999,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "6389",
+    "company_vehicle_number": "",
+    "plate_number": "R534992",
+    "year": 2002,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "410",
+    "company_vehicle_number": "121",
+    "plate_number": "",
+    "year": 2018,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "7411",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2001,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "1095",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2001,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "4924",
+    "company_vehicle_number": "124",
+    "plate_number": "R929645",
+    "year": 2011,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "8133",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2016,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "8607",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2001,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "2769",
+    "company_vehicle_number": "127",
+    "plate_number": "",
+    "year": 2005,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "5851",
+    "company_vehicle_number": "",
+    "plate_number": "R403723",
+    "year": 2007,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "2915",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2023,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "6673",
+    "company_vehicle_number": "130",
+    "plate_number": "",
+    "year": 2004,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "1726",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2006,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "3629",
+    "company_vehicle_number": "",
+    "plate_number": "R290697",
+    "year": 1997,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "7453",
+    "company_vehicle_number": "133",
+    "plate_number": "",
+    "year": 1997,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "5198",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2018,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "8098",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2012,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "1448",
+    "company_vehicle_number": "136",
+    "plate_number": "R747358",
+    "year": 2023,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "9123",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2007,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "9962",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2012,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "1728",
+    "company_vehicle_number": "139",
+    "plate_number": "",
+    "year": 1998,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "9676",
+    "company_vehicle_number": "",
+    "plate_number": "R605565",
+    "year": 1997,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "5925",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2018,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "5359",
+    "company_vehicle_number": "142",
+    "plate_number": "",
+    "year": 2023,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "247",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2015,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "7544",
+    "company_vehicle_number": "",
+    "plate_number": "R308083",
+    "year": 2020,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "186",
+    "company_vehicle_number": "145",
+    "plate_number": "",
+    "year": 1997,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "6269",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2023,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "8468",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2024,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "1576",
+    "company_vehicle_number": "148",
+    "plate_number": "R891131",
+    "year": 2017,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "1526",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2024,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "7207",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2015,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "6130",
+    "company_vehicle_number": "151",
+    "plate_number": "",
+    "year": 2001,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "8616",
+    "company_vehicle_number": "",
+    "plate_number": "R942334",
+    "year": 2009,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "8245",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2026,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "6727",
+    "company_vehicle_number": "154",
+    "plate_number": "",
+    "year": 2000,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "9686",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2016,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "4043",
+    "company_vehicle_number": "",
+    "plate_number": "R770920",
+    "year": 2003,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "1044",
+    "company_vehicle_number": "157",
+    "plate_number": "",
+    "year": 2011,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "3113",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2024,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "4714",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2017,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "8582",
+    "company_vehicle_number": "160",
+    "plate_number": "R568530",
+    "year": 2001,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "676",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2010,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "2543",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2025,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "3486",
+    "company_vehicle_number": "163",
+    "plate_number": "",
+    "year": 2026,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "8783",
+    "company_vehicle_number": "",
+    "plate_number": "R243726",
+    "year": 2025,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "2399",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2001,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "6981",
+    "company_vehicle_number": "166",
+    "plate_number": "",
+    "year": 2000,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "7468",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2013,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "4926",
+    "company_vehicle_number": "",
+    "plate_number": "R753282",
+    "year": 2000,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "8908",
+    "company_vehicle_number": "169",
+    "plate_number": "",
+    "year": 2021,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "9203",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 1998,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "5090",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2026,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "2204",
+    "company_vehicle_number": "172",
+    "plate_number": "R764056",
+    "year": 2007,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "2448",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2003,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "3640",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2022,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "5462",
+    "company_vehicle_number": "175",
+    "plate_number": "",
+    "year": 2008,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "1148",
+    "company_vehicle_number": "",
+    "plate_number": "R433685",
+    "year": 2007,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "1864",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2014,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "7642",
+    "company_vehicle_number": "178",
+    "plate_number": "",
+    "year": 2009,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "1689",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2003,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "1968",
+    "company_vehicle_number": "",
+    "plate_number": "R915272",
+    "year": 2002,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "3307",
+    "company_vehicle_number": "181",
+    "plate_number": "",
+    "year": 2009,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "4244",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2013,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "5141",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2023,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "503",
+    "company_vehicle_number": "184",
+    "plate_number": "R283444",
+    "year": 2005,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "8531",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2020,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "913",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2008,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "4674",
+    "company_vehicle_number": "187",
+    "plate_number": "",
+    "year": 2002,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "6329",
+    "company_vehicle_number": "",
+    "plate_number": "R601080",
+    "year": 2010,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "228",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2021,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "961",
+    "company_vehicle_number": "190",
+    "plate_number": "",
+    "year": 2001,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "6516",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2011,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "9708",
+    "company_vehicle_number": "",
+    "plate_number": "R733377",
+    "year": 2002,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "524",
+    "company_vehicle_number": "193",
+    "plate_number": "",
+    "year": 2003,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "9333",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2017,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "7808",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2016,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "8281",
+    "company_vehicle_number": "196",
+    "plate_number": "R565246",
+    "year": 2023,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "4695",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2025,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "8872",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 1998,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "3473",
+    "company_vehicle_number": "199",
+    "plate_number": "",
+    "year": 2017,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "4465",
+    "company_vehicle_number": "",
+    "plate_number": "R290352",
+    "year": 2009,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "1916",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2001,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "1933",
+    "company_vehicle_number": "202",
+    "plate_number": "",
+    "year": 2015,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "5462",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2005,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "4420",
+    "company_vehicle_number": "",
+    "plate_number": "R197150",
+    "year": 2015,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "3911",
+    "company_vehicle_number": "205",
+    "plate_number": "",
+    "year": 2008,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "4368",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2015,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "3862",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2021,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "2980",
+    "company_vehicle_number": "208",
+    "plate_number": "R210448",
+    "year": 2006,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "8834",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2012,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "4790",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2005,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "8968",
+    "company_vehicle_number": "211",
+    "plate_number": "",
+    "year": 2019,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "424",
+    "company_vehicle_number": "",
+    "plate_number": "R796917",
+    "year": 2014,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "4654",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2011,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "8177",
+    "company_vehicle_number": "214",
+    "plate_number": "",
+    "year": 2007,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "1813",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 1999,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "7533",
+    "company_vehicle_number": "",
+    "plate_number": "R662607",
+    "year": 2001,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "7366",
+    "company_vehicle_number": "217",
+    "plate_number": "",
+    "year": 2016,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "2975",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2004,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "6923",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2023,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "4596",
+    "company_vehicle_number": "220",
+    "plate_number": "R356361",
+    "year": 2015,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "9230",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2007,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "4783",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2015,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "5913",
+    "company_vehicle_number": "223",
+    "plate_number": "",
+    "year": 2002,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "8585",
+    "company_vehicle_number": "",
+    "plate_number": "R270127",
+    "year": 2026,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "4859",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2009,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "742",
+    "company_vehicle_number": "226",
+    "plate_number": "",
+    "year": 2005,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "5947",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2013,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "1550",
+    "company_vehicle_number": "",
+    "plate_number": "R592164",
+    "year": 2012,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "5914",
+    "company_vehicle_number": "229",
+    "plate_number": "",
+    "year": 1999,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "1377",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2009,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "253",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2001,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "4400",
+    "company_vehicle_number": "232",
+    "plate_number": "R668150",
+    "year": 2007,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "6368",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2016,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "6644",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2010,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "8250",
+    "company_vehicle_number": "235",
+    "plate_number": "",
+    "year": 2023,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "9083",
+    "company_vehicle_number": "",
+    "plate_number": "R807751",
+    "year": 2017,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "3638",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2020,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "2715",
+    "company_vehicle_number": "238",
+    "plate_number": "",
+    "year": 2013,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "9032",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 1998,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "9252",
+    "company_vehicle_number": "",
+    "plate_number": "R992605",
+    "year": 2005,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "122",
+    "company_vehicle_number": "241",
+    "plate_number": "",
+    "year": 2007,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "8603",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2007,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "1924",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2026,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "6606",
+    "company_vehicle_number": "244",
+    "plate_number": "R747717",
+    "year": 2008,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "7196",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2015,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "9671",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2018,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "4210",
+    "company_vehicle_number": "247",
+    "plate_number": "",
+    "year": 2019,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "8905",
+    "company_vehicle_number": "",
+    "plate_number": "R788307",
+    "year": 2007,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "4472",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 1999,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "3517",
+    "company_vehicle_number": "250",
+    "plate_number": "",
+    "year": 2003,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "9249",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2018,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "2100",
+    "company_vehicle_number": "",
+    "plate_number": "R917695",
+    "year": 2006,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "9287",
+    "company_vehicle_number": "253",
+    "plate_number": "",
+    "year": 1997,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "5857",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2010,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "2413",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2024,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "8637",
+    "company_vehicle_number": "256",
+    "plate_number": "R941703",
+    "year": 2023,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "4465",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2009,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "4676",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2009,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "1408",
+    "company_vehicle_number": "259",
+    "plate_number": "",
+    "year": 2024,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "1609",
+    "company_vehicle_number": "",
+    "plate_number": "R551640",
+    "year": 2006,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "3793",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2008,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "76",
+    "company_vehicle_number": "262",
+    "plate_number": "",
+    "year": 2024,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "4802",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2009,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "9825",
+    "company_vehicle_number": "",
+    "plate_number": "R183599",
+    "year": 1998,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "9200",
+    "company_vehicle_number": "265",
+    "plate_number": "",
+    "year": 2000,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "9570",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2025,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "3977",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2013,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "3405",
+    "company_vehicle_number": "268",
+    "plate_number": "R411983",
+    "year": 2020,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "4430",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2024,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "3314",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 1999,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "9402",
+    "company_vehicle_number": "271",
+    "plate_number": "",
+    "year": 2022,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "4355",
+    "company_vehicle_number": "",
+    "plate_number": "R652142",
+    "year": 2015,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "4373",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2002,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "8828",
+    "company_vehicle_number": "274",
+    "plate_number": "",
+    "year": 2006,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "2469",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2005,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "583",
+    "company_vehicle_number": "",
+    "plate_number": "R154624",
+    "year": 2011,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "4755",
+    "company_vehicle_number": "277",
+    "plate_number": "",
+    "year": 2003,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "2894",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2009,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "5799",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2010,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "4897",
+    "company_vehicle_number": "280",
+    "plate_number": "R803756",
+    "year": 2007,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "2663",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 1999,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "3847",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2015,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "1622",
+    "company_vehicle_number": "283",
+    "plate_number": "",
+    "year": 2017,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "8725",
+    "company_vehicle_number": "",
+    "plate_number": "R399706",
+    "year": 2006,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "2440",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2024,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "7786",
+    "company_vehicle_number": "286",
+    "plate_number": "",
+    "year": 2008,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "2568",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2021,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "627",
+    "company_vehicle_number": "",
+    "plate_number": "R327737",
+    "year": 2000,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "9910",
+    "company_vehicle_number": "289",
+    "plate_number": "",
+    "year": 2009,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "401",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2012,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "1886",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2021,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "2444",
+    "company_vehicle_number": "292",
+    "plate_number": "R342683",
+    "year": 2010,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "827",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2013,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "3991",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2001,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "8624",
+    "company_vehicle_number": "295",
+    "plate_number": "",
+    "year": 2003,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "4556",
+    "company_vehicle_number": "",
+    "plate_number": "R331140",
+    "year": 2014,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "8307",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2023,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "8973",
+    "company_vehicle_number": "298",
+    "plate_number": "",
+    "year": 2002,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "1873",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2005,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "3833",
+    "company_vehicle_number": "",
+    "plate_number": "R888199",
+    "year": 2024,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "4713",
+    "company_vehicle_number": "301",
+    "plate_number": "",
+    "year": 2010,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "8276",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2008,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "9918",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2013,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "7951",
+    "company_vehicle_number": "304",
+    "plate_number": "R373162",
+    "year": 2022,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "7164",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2015,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "4143",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2020,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "9334",
+    "company_vehicle_number": "307",
+    "plate_number": "",
+    "year": 2024,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "344",
+    "company_vehicle_number": "",
+    "plate_number": "R430860",
+    "year": 2006,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "1952",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2024,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "4563",
+    "company_vehicle_number": "310",
+    "plate_number": "",
+    "year": 2011,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "2000",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 1997,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "4733",
+    "company_vehicle_number": "",
+    "plate_number": "R233290",
+    "year": 2009,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "5833",
+    "company_vehicle_number": "313",
+    "plate_number": "",
+    "year": 2021,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "5271",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2013,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "8444",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 1999,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "3234",
+    "company_vehicle_number": "316",
+    "plate_number": "R342276",
+    "year": 1997,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "6685",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2023,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "5745",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2013,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "3507",
+    "company_vehicle_number": "319",
+    "plate_number": "",
+    "year": 1997,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "4223",
+    "company_vehicle_number": "",
+    "plate_number": "R958056",
+    "year": 2005,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "7594",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2020,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "3837",
+    "company_vehicle_number": "322",
+    "plate_number": "",
+    "year": 2008,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "6938",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2008,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "8528",
+    "company_vehicle_number": "",
+    "plate_number": "R175528",
+    "year": 2005,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "9790",
+    "company_vehicle_number": "325",
+    "plate_number": "",
+    "year": 2024,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "980",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2024,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "402",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2018,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "2499",
+    "company_vehicle_number": "328",
+    "plate_number": "R406698",
+    "year": 1999,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "4960",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2015,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "4602",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2003,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "5412",
+    "company_vehicle_number": "331",
+    "plate_number": "",
+    "year": 2001,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "2569",
+    "company_vehicle_number": "",
+    "plate_number": "R339288",
+    "year": 2007,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "6481",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2004,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "9408",
+    "company_vehicle_number": "334",
+    "plate_number": "",
+    "year": 2021,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "7976",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2018,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "195",
+    "company_vehicle_number": "",
+    "plate_number": "R567170",
+    "year": 2006,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "2944",
+    "company_vehicle_number": "337",
+    "plate_number": "",
+    "year": 2014,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "5618",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2009,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "9492",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2007,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "114",
+    "company_vehicle_number": "340",
+    "plate_number": "R974916",
+    "year": 2014,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "20",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 1999,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "7298",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2021,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "4888",
+    "company_vehicle_number": "343",
+    "plate_number": "",
+    "year": 2004,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "757",
+    "company_vehicle_number": "",
+    "plate_number": "R794407",
+    "year": 2002,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "6639",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2017,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "9637",
+    "company_vehicle_number": "346",
+    "plate_number": "",
+    "year": 2019,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "4894",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2017,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "3453",
+    "company_vehicle_number": "",
+    "plate_number": "R180677",
+    "year": 2021,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "9078",
+    "company_vehicle_number": "349",
+    "plate_number": "",
+    "year": 2006,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "5700",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2014,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "5534",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2012,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "3780",
+    "company_vehicle_number": "352",
+    "plate_number": "R494174",
+    "year": 2021,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "8391",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2003,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "1503",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2019,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "9157",
+    "company_vehicle_number": "355",
+    "plate_number": "",
+    "year": 2016,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "2344",
+    "company_vehicle_number": "",
+    "plate_number": "R300159",
+    "year": 2023,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "3580",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2007,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "1619",
+    "company_vehicle_number": "358",
+    "plate_number": "",
+    "year": 2019,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "3678",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2006,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "9727",
+    "company_vehicle_number": "",
+    "plate_number": "R669355",
+    "year": 2004,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "4188",
+    "company_vehicle_number": "361",
+    "plate_number": "",
+    "year": 2023,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "1968",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2020,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "2991",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2018,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "1051",
+    "company_vehicle_number": "364",
+    "plate_number": "R279512",
+    "year": 2011,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "1499",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 1999,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "1281",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2014,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "3332",
+    "company_vehicle_number": "367",
+    "plate_number": "",
+    "year": 2016,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "3822",
+    "company_vehicle_number": "",
+    "plate_number": "R811846",
+    "year": 2002,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "2645",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2020,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "3742",
+    "company_vehicle_number": "370",
+    "plate_number": "",
+    "year": 2002,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "4049",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2012,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "7959",
+    "company_vehicle_number": "",
+    "plate_number": "R965988",
+    "year": 1999,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "8147",
+    "company_vehicle_number": "373",
+    "plate_number": "",
+    "year": 2000,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "7254",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2007,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "9875",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2004,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "9773",
+    "company_vehicle_number": "376",
+    "plate_number": "R255675",
+    "year": 2015,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "7142",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2016,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "5742",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2003,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "7645",
+    "company_vehicle_number": "379",
+    "plate_number": "",
+    "year": 1999,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "9198",
+    "company_vehicle_number": "",
+    "plate_number": "R501859",
+    "year": 2022,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "8006",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2008,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "8269",
+    "company_vehicle_number": "382",
+    "plate_number": "",
+    "year": 1999,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "6464",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 1997,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "170",
+    "company_vehicle_number": "",
+    "plate_number": "R966172",
+    "year": 2011,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "6453",
+    "company_vehicle_number": "385",
+    "plate_number": "",
+    "year": 2024,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "7164",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2007,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "8266",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2007,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "8270",
+    "company_vehicle_number": "388",
+    "plate_number": "R581067",
+    "year": 2022,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "8311",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2012,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "481",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2001,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "4580",
+    "company_vehicle_number": "391",
+    "plate_number": "",
+    "year": 2023,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "3752",
+    "company_vehicle_number": "",
+    "plate_number": "R429838",
+    "year": 2013,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "2631",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2011,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "301",
+    "company_vehicle_number": "394",
+    "plate_number": "",
+    "year": 2017,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "2774",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2008,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "8423",
+    "company_vehicle_number": "",
+    "plate_number": "R841905",
+    "year": 2004,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "6605",
+    "company_vehicle_number": "397",
+    "plate_number": "",
+    "year": 2022,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "4817",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2020,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "9829",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2005,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "6360",
+    "company_vehicle_number": "400",
+    "plate_number": "R447117",
+    "year": 2023,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "8993",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2023,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "4230",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2009,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "4010",
+    "company_vehicle_number": "403",
+    "plate_number": "",
+    "year": 2011,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "6387",
+    "company_vehicle_number": "",
+    "plate_number": "R757958",
+    "year": 2009,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "4207",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2004,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "1046",
+    "company_vehicle_number": "406",
+    "plate_number": "",
+    "year": 2009,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "438",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 1999,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "7854",
+    "company_vehicle_number": "",
+    "plate_number": "R857684",
+    "year": 1999,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "8227",
+    "company_vehicle_number": "409",
+    "plate_number": "",
+    "year": 2005,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "5033",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2003,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "6469",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2004,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "6345",
+    "company_vehicle_number": "412",
+    "plate_number": "R158818",
+    "year": 2000,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "3656",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2022,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "296",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2014,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "4249",
+    "company_vehicle_number": "415",
+    "plate_number": "",
+    "year": 2012,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "1308",
+    "company_vehicle_number": "",
+    "plate_number": "R548481",
+    "year": 2001,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "2595",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2002,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "9392",
+    "company_vehicle_number": "418",
+    "plate_number": "",
+    "year": 2026,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "4022",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2007,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "7173",
+    "company_vehicle_number": "",
+    "plate_number": "R182895",
+    "year": 2000,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "936",
+    "company_vehicle_number": "421",
+    "plate_number": "",
+    "year": 2017,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "5479",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2023,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "9608",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2004,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "8103",
+    "company_vehicle_number": "424",
+    "plate_number": "R242925",
+    "year": 2018,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "8712",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2025,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "6216",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2005,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "8394",
+    "company_vehicle_number": "427",
+    "plate_number": "",
+    "year": 2011,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "6422",
+    "company_vehicle_number": "",
+    "plate_number": "R506374",
+    "year": 1998,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "7190",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2001,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "7120",
+    "company_vehicle_number": "430",
+    "plate_number": "",
+    "year": 2000,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "3785",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2018,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "105",
+    "company_vehicle_number": "",
+    "plate_number": "R891745",
+    "year": 2009,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "4372",
+    "company_vehicle_number": "433",
+    "plate_number": "",
+    "year": 2008,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "7738",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2000,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "2299",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2003,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "6659",
+    "company_vehicle_number": "436",
+    "plate_number": "R241473",
+    "year": 2022,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "9215",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2003,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "875",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 1997,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "97",
+    "company_vehicle_number": "439",
+    "plate_number": "",
+    "year": 2025,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "8342",
+    "company_vehicle_number": "",
+    "plate_number": "R788129",
+    "year": 2018,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "9585",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2022,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "4722",
+    "company_vehicle_number": "442",
+    "plate_number": "",
+    "year": 2011,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "8755",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2005,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "8388",
+    "company_vehicle_number": "",
+    "plate_number": "R609794",
+    "year": 2013,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "9453",
+    "company_vehicle_number": "445",
+    "plate_number": "",
+    "year": 2017,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "6053",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2004,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "444",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 1998,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "7273",
+    "company_vehicle_number": "448",
+    "plate_number": "R407936",
+    "year": 2009,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "1420",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2023,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "1806",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2000,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "2668",
+    "company_vehicle_number": "451",
+    "plate_number": "",
+    "year": 2024,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "6645",
+    "company_vehicle_number": "",
+    "plate_number": "R719914",
+    "year": 2012,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "1586",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2012,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "5339",
+    "company_vehicle_number": "454",
+    "plate_number": "",
+    "year": 2009,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "7001",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2005,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "2729",
+    "company_vehicle_number": "",
+    "plate_number": "R174385",
+    "year": 2011,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "5507",
+    "company_vehicle_number": "457",
+    "plate_number": "",
+    "year": 2014,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "5656",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 1999,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "4900",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2019,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "2391",
+    "company_vehicle_number": "460",
+    "plate_number": "R680688",
+    "year": 2015,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "9718",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2004,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "2126",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2017,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "5276",
+    "company_vehicle_number": "463",
+    "plate_number": "",
+    "year": 2022,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "5181",
+    "company_vehicle_number": "",
+    "plate_number": "R575265",
+    "year": 2005,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "5439",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2017,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "2390",
+    "company_vehicle_number": "466",
+    "plate_number": "",
+    "year": 2005,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "349",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2013,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "1713",
+    "company_vehicle_number": "",
+    "plate_number": "R920929",
+    "year": 2022,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "1010",
+    "company_vehicle_number": "469",
+    "plate_number": "",
+    "year": 1998,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "6736",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 1998,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "9688",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 1998,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "4260",
+    "company_vehicle_number": "472",
+    "plate_number": "R230221",
+    "year": 2003,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "5979",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2018,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "8291",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2009,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "4983",
+    "company_vehicle_number": "475",
+    "plate_number": "",
+    "year": 2018,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "47",
+    "company_vehicle_number": "",
+    "plate_number": "R251101",
+    "year": 2006,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "6391",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2009,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "6793",
+    "company_vehicle_number": "478",
+    "plate_number": "",
+    "year": 2009,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "1699",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2014,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "2470",
+    "company_vehicle_number": "",
+    "plate_number": "R875062",
+    "year": 2015,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "6197",
+    "company_vehicle_number": "481",
+    "plate_number": "",
+    "year": 2019,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "2598",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2009,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "7199",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2019,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "3856",
+    "company_vehicle_number": "484",
+    "plate_number": "R116255",
+    "year": 2013,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "3120",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2011,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "3730",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2005,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "2735",
+    "company_vehicle_number": "487",
+    "plate_number": "",
+    "year": 2010,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "1905",
+    "company_vehicle_number": "",
+    "plate_number": "R623055",
+    "year": 2019,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "3066",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2014,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "4011",
+    "company_vehicle_number": "490",
+    "plate_number": "",
+    "year": 2024,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "9838",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2015,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "871",
+    "company_vehicle_number": "",
+    "plate_number": "R501229",
+    "year": 2018,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "2302",
+    "company_vehicle_number": "493",
+    "plate_number": "",
+    "year": 2025,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "7944",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2004,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "1542",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2002,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "2603",
+    "company_vehicle_number": "496",
+    "plate_number": "R433175",
+    "year": 1998,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "7413",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 1999,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "1692",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2000,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "1861",
+    "company_vehicle_number": "499",
+    "plate_number": "",
+    "year": 2007,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "7997",
+    "company_vehicle_number": "",
+    "plate_number": "R327399",
+    "year": 2004,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "3621",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 1997,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "5257",
+    "company_vehicle_number": "502",
+    "plate_number": "",
+    "year": 1999,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "9873",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 1998,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "3492",
+    "company_vehicle_number": "",
+    "plate_number": "R185674",
+    "year": 1999,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "3550",
+    "company_vehicle_number": "505",
+    "plate_number": "",
+    "year": 2010,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "4947",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2004,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "4962",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2012,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "3659",
+    "company_vehicle_number": "508",
+    "plate_number": "R846105",
+    "year": 2007,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "4954",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2009,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "1477",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2001,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "463",
+    "company_vehicle_number": "511",
+    "plate_number": "",
+    "year": 2016,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "2423",
+    "company_vehicle_number": "",
+    "plate_number": "R111769",
+    "year": 2013,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "7288",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2010,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "3272",
+    "company_vehicle_number": "514",
+    "plate_number": "",
+    "year": 2018,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "1533",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2025,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "8449",
+    "company_vehicle_number": "",
+    "plate_number": "R833309",
+    "year": 2007,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "776",
+    "company_vehicle_number": "517",
+    "plate_number": "",
+    "year": 1999,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "9237",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2024,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "646",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2015,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "5763",
+    "company_vehicle_number": "520",
+    "plate_number": "R726371",
+    "year": 2006,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "6895",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 1999,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "5137",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2016,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "8430",
+    "company_vehicle_number": "523",
+    "plate_number": "",
+    "year": 1999,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "1895",
+    "company_vehicle_number": "",
+    "plate_number": "R867544",
+    "year": 2026,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "354",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2016,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "1878",
+    "company_vehicle_number": "526",
+    "plate_number": "",
+    "year": 2013,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "2452",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2008,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "7226",
+    "company_vehicle_number": "",
+    "plate_number": "R723217",
+    "year": 2022,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "2319",
+    "company_vehicle_number": "529",
+    "plate_number": "",
+    "year": 2020,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "6616",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2026,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "9211",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2020,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "9103",
+    "company_vehicle_number": "532",
+    "plate_number": "R751609",
+    "year": 2025,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "6707",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2012,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "4035",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2014,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "1002",
+    "company_vehicle_number": "535",
+    "plate_number": "",
+    "year": 2009,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "5729",
+    "company_vehicle_number": "",
+    "plate_number": "R542616",
+    "year": 2022,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "6074",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2000,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "6447",
+    "company_vehicle_number": "538",
+    "plate_number": "",
+    "year": 2013,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "6828",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2025,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "8693",
+    "company_vehicle_number": "",
+    "plate_number": "R713697",
+    "year": 2025,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "8556",
+    "company_vehicle_number": "541",
+    "plate_number": "",
+    "year": 2007,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "5738",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2008,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "2366",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2012,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "2110",
+    "company_vehicle_number": "544",
+    "plate_number": "R378943",
+    "year": 2006,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "939",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2017,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "8149",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2008,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "1116",
+    "company_vehicle_number": "547",
+    "plate_number": "",
+    "year": 1997,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "7624",
+    "company_vehicle_number": "",
+    "plate_number": "R728913",
+    "year": 2010,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "5227",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2018,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "6021",
+    "company_vehicle_number": "550",
+    "plate_number": "",
+    "year": 2017,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "2899",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2015,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "9025",
+    "company_vehicle_number": "",
+    "plate_number": "R290715",
+    "year": 2018,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "1639",
+    "company_vehicle_number": "553",
+    "plate_number": "",
+    "year": 1998,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "8542",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2017,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "9775",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2000,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "8070",
+    "company_vehicle_number": "556",
+    "plate_number": "R983790",
+    "year": 2009,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "5629",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2021,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "7124",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2013,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "5893",
+    "company_vehicle_number": "559",
+    "plate_number": "",
+    "year": 2019,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "1467",
+    "company_vehicle_number": "",
+    "plate_number": "R718238",
+    "year": 2008,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "5249",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2016,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "2304",
+    "company_vehicle_number": "562",
+    "plate_number": "",
+    "year": 2020,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "7737",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2001,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "6854",
+    "company_vehicle_number": "",
+    "plate_number": "R386681",
+    "year": 2017,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "8292",
+    "company_vehicle_number": "565",
+    "plate_number": "",
+    "year": 2009,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "97",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2012,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "4852",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2021,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "7399",
+    "company_vehicle_number": "568",
+    "plate_number": "R345807",
+    "year": 2013,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "9990",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2013,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "2763",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2011,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "4540",
+    "company_vehicle_number": "571",
+    "plate_number": "",
+    "year": 2023,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "6609",
+    "company_vehicle_number": "",
+    "plate_number": "R407268",
+    "year": 1997,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "5098",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2025,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "9722",
+    "company_vehicle_number": "574",
+    "plate_number": "",
+    "year": 2021,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "7516",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2014,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "9663",
+    "company_vehicle_number": "",
+    "plate_number": "R247338",
+    "year": 1997,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "6870",
+    "company_vehicle_number": "577",
+    "plate_number": "",
+    "year": 2007,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "4139",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2001,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "9654",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 1997,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "4753",
+    "company_vehicle_number": "580",
+    "plate_number": "R435535",
+    "year": 2023,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "3156",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2017,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "3932",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2001,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "1354",
+    "company_vehicle_number": "583",
+    "plate_number": "",
+    "year": 2000,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "4404",
+    "company_vehicle_number": "",
+    "plate_number": "R626114",
+    "year": 2006,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "5050",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2020,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "4591",
+    "company_vehicle_number": "586",
+    "plate_number": "",
+    "year": 2008,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "7845",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2015,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "4973",
+    "company_vehicle_number": "",
+    "plate_number": "R199207",
+    "year": 2013,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "3923",
+    "company_vehicle_number": "589",
+    "plate_number": "",
+    "year": 2022,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "3072",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2011,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "259",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2017,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "7815",
+    "company_vehicle_number": "592",
+    "plate_number": "R383285",
+    "year": 2000,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "8536",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2014,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "29",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 1997,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "576",
+    "company_vehicle_number": "595",
+    "plate_number": "",
+    "year": 2010,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "1576",
+    "company_vehicle_number": "",
+    "plate_number": "R924568",
+    "year": 2019,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "7175",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2013,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "9731",
+    "company_vehicle_number": "598",
+    "plate_number": "",
+    "year": 2016,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "7298",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2010,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "3515",
+    "company_vehicle_number": "",
+    "plate_number": "R860095",
+    "year": 2018,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "3183",
+    "company_vehicle_number": "601",
+    "plate_number": "",
+    "year": 2023,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "7190",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2016,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "3417",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2006,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "6567",
+    "company_vehicle_number": "604",
+    "plate_number": "R115784",
+    "year": 2021,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "4782",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2012,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "1764",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2016,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "3588",
+    "company_vehicle_number": "607",
+    "plate_number": "",
+    "year": 2003,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "476",
+    "company_vehicle_number": "",
+    "plate_number": "R803565",
+    "year": 2024,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "4211",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2020,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "6266",
+    "company_vehicle_number": "610",
+    "plate_number": "",
+    "year": 2010,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "9650",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2017,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "2315",
+    "company_vehicle_number": "",
+    "plate_number": "R937088",
+    "year": 2001,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "7449",
+    "company_vehicle_number": "613",
+    "plate_number": "",
+    "year": 2001,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "5533",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2001,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "3029",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2005,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "2458",
+    "company_vehicle_number": "616",
+    "plate_number": "R432113",
+    "year": 2000,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "7437",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2009,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "5221",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2019,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "3243",
+    "company_vehicle_number": "619",
+    "plate_number": "",
+    "year": 2015,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "1059",
+    "company_vehicle_number": "",
+    "plate_number": "R704639",
+    "year": 2003,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "5157",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2015,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "9258",
+    "company_vehicle_number": "622",
+    "plate_number": "",
+    "year": 2026,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "7153",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2023,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "9549",
+    "company_vehicle_number": "",
+    "plate_number": "R626300",
+    "year": 2020,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "1215",
+    "company_vehicle_number": "625",
+    "plate_number": "",
+    "year": 2002,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "1197",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2024,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "2967",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2012,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "3084",
+    "company_vehicle_number": "628",
+    "plate_number": "R820172",
+    "year": 2025,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "7059",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2000,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "7654",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2014,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "5861",
+    "company_vehicle_number": "631",
+    "plate_number": "",
+    "year": 2019,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "6081",
+    "company_vehicle_number": "",
+    "plate_number": "R875263",
+    "year": 2023,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "4684",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2005,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "1411",
+    "company_vehicle_number": "634",
+    "plate_number": "",
+    "year": 2011,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "9530",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2012,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "8104",
+    "company_vehicle_number": "",
+    "plate_number": "R346190",
+    "year": 2026,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "3812",
+    "company_vehicle_number": "637",
+    "plate_number": "",
+    "year": 2011,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "7469",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2015,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "8413",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2000,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "672",
+    "company_vehicle_number": "640",
+    "plate_number": "R360461",
+    "year": 2008,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "371",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2002,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "8902",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2000,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "2035",
+    "company_vehicle_number": "643",
+    "plate_number": "",
+    "year": 2019,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "9340",
+    "company_vehicle_number": "",
+    "plate_number": "R173006",
+    "year": 2009,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "1794",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 1998,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "3008",
+    "company_vehicle_number": "646",
+    "plate_number": "",
+    "year": 2013,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "4518",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 1998,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "8078",
+    "company_vehicle_number": "",
+    "plate_number": "R726612",
+    "year": 2012,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "7522",
+    "company_vehicle_number": "649",
+    "plate_number": "",
+    "year": 2019,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "7630",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2025,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "810",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2012,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "611",
+    "company_vehicle_number": "652",
+    "plate_number": "R533546",
+    "year": 2007,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "3854",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 1998,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "8265",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2020,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "2882",
+    "company_vehicle_number": "655",
+    "plate_number": "",
+    "year": 2026,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "7050",
+    "company_vehicle_number": "",
+    "plate_number": "R412570",
+    "year": 2000,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "6784",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2005,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "3196",
+    "company_vehicle_number": "658",
+    "plate_number": "",
+    "year": 1997,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "8877",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2004,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "8628",
+    "company_vehicle_number": "",
+    "plate_number": "R105808",
+    "year": 2014,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "6962",
+    "company_vehicle_number": "661",
+    "plate_number": "",
+    "year": 2025,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "1800",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2017,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "9972",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 1998,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "3893",
+    "company_vehicle_number": "664",
+    "plate_number": "R317195",
+    "year": 2020,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "9311",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2004,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "9666",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2023,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "836",
+    "company_vehicle_number": "667",
+    "plate_number": "",
+    "year": 2026,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "1629",
+    "company_vehicle_number": "",
+    "plate_number": "R858676",
+    "year": 2000,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "1311",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2015,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "3546",
+    "company_vehicle_number": "670",
+    "plate_number": "",
+    "year": 2006,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "5209",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2004,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "6711",
+    "company_vehicle_number": "",
+    "plate_number": "R205231",
+    "year": 2017,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "8056",
+    "company_vehicle_number": "673",
+    "plate_number": "",
+    "year": 2005,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "5946",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2023,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "3475",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2007,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "3181",
+    "company_vehicle_number": "676",
+    "plate_number": "R515405",
+    "year": 1997,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "8216",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2025,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "8654",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2002,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "8151",
+    "company_vehicle_number": "679",
+    "plate_number": "",
+    "year": 2013,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "1253",
+    "company_vehicle_number": "",
+    "plate_number": "R967300",
+    "year": 2002,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "6278",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 1999,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "9138",
+    "company_vehicle_number": "682",
+    "plate_number": "",
+    "year": 2008,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "8366",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2016,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "8043",
+    "company_vehicle_number": "",
+    "plate_number": "R169823",
+    "year": 2009,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "9482",
+    "company_vehicle_number": "685",
+    "plate_number": "",
+    "year": 2015,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "4986",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2026,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "3138",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2004,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "8685",
+    "company_vehicle_number": "688",
+    "plate_number": "R936261",
+    "year": 2021,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "3567",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 1999,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "6132",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2026,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "802",
+    "company_vehicle_number": "691",
+    "plate_number": "",
+    "year": 2024,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "5641",
+    "company_vehicle_number": "",
+    "plate_number": "R358705",
+    "year": 2004,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "3600",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2002,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "2429",
+    "company_vehicle_number": "694",
+    "plate_number": "",
+    "year": 2014,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "7509",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2022,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "4067",
+    "company_vehicle_number": "",
+    "plate_number": "R512370",
+    "year": 2014,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "4698",
+    "company_vehicle_number": "697",
+    "plate_number": "",
+    "year": 2012,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "5395",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2016,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "4191",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2008,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "5142",
+    "company_vehicle_number": "700",
+    "plate_number": "R781226",
+    "year": 2009,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "8109",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2023,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "8981",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 1999,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "9310",
+    "company_vehicle_number": "703",
+    "plate_number": "",
+    "year": 2007,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "6594",
+    "company_vehicle_number": "",
+    "plate_number": "R689817",
+    "year": 2012,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "8817",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 1997,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "8280",
+    "company_vehicle_number": "706",
+    "plate_number": "",
+    "year": 1998,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "3686",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2015,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "346",
+    "company_vehicle_number": "",
+    "plate_number": "R577800",
+    "year": 2000,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "3485",
+    "company_vehicle_number": "709",
+    "plate_number": "",
+    "year": 2011,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "8708",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2001,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "7137",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2004,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "3994",
+    "company_vehicle_number": "712",
+    "plate_number": "R249695",
+    "year": 2009,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "8576",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2016,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "2709",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2003,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "3993",
+    "company_vehicle_number": "715",
+    "plate_number": "",
+    "year": 2002,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "9494",
+    "company_vehicle_number": "",
+    "plate_number": "R689303",
+    "year": 2000,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "47",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 1997,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "1664",
+    "company_vehicle_number": "718",
+    "plate_number": "",
+    "year": 2016,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "6946",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2001,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "8075",
+    "company_vehicle_number": "",
+    "plate_number": "R611818",
+    "year": 2006,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "7468",
+    "company_vehicle_number": "721",
+    "plate_number": "",
+    "year": 2017,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "1711",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2021,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "4956",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2017,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "8915",
+    "company_vehicle_number": "724",
+    "plate_number": "R454920",
+    "year": 2016,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "4483",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 1998,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "9045",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2010,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "1689",
+    "company_vehicle_number": "727",
+    "plate_number": "",
+    "year": 2021,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "9260",
+    "company_vehicle_number": "",
+    "plate_number": "R640748",
+    "year": 2005,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "2559",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2001,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "8528",
+    "company_vehicle_number": "730",
+    "plate_number": "",
+    "year": 2006,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "3085",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2013,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "3352",
+    "company_vehicle_number": "",
+    "plate_number": "R974087",
+    "year": 2010,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "5371",
+    "company_vehicle_number": "733",
+    "plate_number": "",
+    "year": 1998,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "5405",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 1999,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "2325",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2004,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "9463",
+    "company_vehicle_number": "736",
+    "plate_number": "R215231",
+    "year": 2000,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "4697",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2022,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "6619",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2013,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "6780",
+    "company_vehicle_number": "739",
+    "plate_number": "",
+    "year": 2001,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "4045",
+    "company_vehicle_number": "",
+    "plate_number": "R909935",
+    "year": 2013,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "2799",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2004,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "269",
+    "company_vehicle_number": "742",
+    "plate_number": "",
+    "year": 1998,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "1324",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2022,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "3428",
+    "company_vehicle_number": "",
+    "plate_number": "R354098",
+    "year": 2012,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "2930",
+    "company_vehicle_number": "745",
+    "plate_number": "",
+    "year": 2009,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "220",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2023,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "1736",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2016,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "8939",
+    "company_vehicle_number": "748",
+    "plate_number": "R349197",
+    "year": 2015,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "1487",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2025,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "818",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2007,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "5050",
+    "company_vehicle_number": "751",
+    "plate_number": "",
+    "year": 2017,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "5167",
+    "company_vehicle_number": "",
+    "plate_number": "R865490",
+    "year": 2000,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "8424",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2005,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "8351",
+    "company_vehicle_number": "754",
+    "plate_number": "",
+    "year": 2000,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "1377",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2025,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "8098",
+    "company_vehicle_number": "",
+    "plate_number": "R244998",
+    "year": 2021,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "5943",
+    "company_vehicle_number": "757",
+    "plate_number": "",
+    "year": 1999,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "3930",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2025,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "7581",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2001,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "2554",
+    "company_vehicle_number": "760",
+    "plate_number": "R465365",
+    "year": 2015,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "4088",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2025,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "2758",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2025,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "7314",
+    "company_vehicle_number": "763",
+    "plate_number": "",
+    "year": 2015,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "3805",
+    "company_vehicle_number": "",
+    "plate_number": "R251243",
+    "year": 2001,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "5936",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2013,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "4278",
+    "company_vehicle_number": "766",
+    "plate_number": "",
+    "year": 1999,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "859",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2010,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "4252",
+    "company_vehicle_number": "",
+    "plate_number": "R536014",
+    "year": 2019,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "8037",
+    "company_vehicle_number": "769",
+    "plate_number": "",
+    "year": 2009,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "206",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2022,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "4888",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2017,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "3376",
+    "company_vehicle_number": "772",
+    "plate_number": "R269084",
+    "year": 1998,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "4548",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2018,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "6122",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2008,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "1383",
+    "company_vehicle_number": "775",
+    "plate_number": "",
+    "year": 2009,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "6090",
+    "company_vehicle_number": "",
+    "plate_number": "R286270",
+    "year": 2022,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "2197",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2006,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "8162",
+    "company_vehicle_number": "778",
+    "plate_number": "",
+    "year": 2013,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "7385",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2007,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "8465",
+    "company_vehicle_number": "",
+    "plate_number": "R153150",
+    "year": 2010,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "2796",
+    "company_vehicle_number": "781",
+    "plate_number": "",
+    "year": 2015,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "9462",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2016,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "2379",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2000,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "1605",
+    "company_vehicle_number": "784",
+    "plate_number": "R122586",
+    "year": 2007,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "1821",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 1999,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "595",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2020,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "9522",
+    "company_vehicle_number": "787",
+    "plate_number": "",
+    "year": 2001,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "5932",
+    "company_vehicle_number": "",
+    "plate_number": "R648362",
+    "year": 2024,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "3145",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2005,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "9840",
+    "company_vehicle_number": "790",
+    "plate_number": "",
+    "year": 2008,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "5299",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2007,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "925",
+    "company_vehicle_number": "",
+    "plate_number": "R717281",
+    "year": 2005,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "5013",
+    "company_vehicle_number": "793",
+    "plate_number": "",
+    "year": 2016,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "2401",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2005,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "5744",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2021,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "361",
+    "company_vehicle_number": "796",
+    "plate_number": "R822706",
+    "year": 2023,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "7931",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2006,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "6448",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2016,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "3462",
+    "company_vehicle_number": "799",
+    "plate_number": "",
+    "year": 2023,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "9532",
+    "company_vehicle_number": "",
+    "plate_number": "R300470",
+    "year": 2016,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "4528",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2026,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "7019",
+    "company_vehicle_number": "802",
+    "plate_number": "",
+    "year": 2003,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "1803",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2000,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "1503",
+    "company_vehicle_number": "",
+    "plate_number": "R852868",
+    "year": 2000,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "9567",
+    "company_vehicle_number": "805",
+    "plate_number": "",
+    "year": 2017,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "5461",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2013,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "8274",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 1997,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "7113",
+    "company_vehicle_number": "808",
+    "plate_number": "R915405",
+    "year": 2007,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "3372",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2001,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "5211",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2006,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "1234",
+    "company_vehicle_number": "811",
+    "plate_number": "",
+    "year": 2003,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "8059",
+    "company_vehicle_number": "",
+    "plate_number": "R300284",
+    "year": 2018,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "3365",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2003,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "3720",
+    "company_vehicle_number": "814",
+    "plate_number": "",
+    "year": 2022,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "1240",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2014,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "1403",
+    "company_vehicle_number": "",
+    "plate_number": "R445893",
+    "year": 2017,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "7481",
+    "company_vehicle_number": "817",
+    "plate_number": "",
+    "year": 1997,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "7340",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2002,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "3507",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2012,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "3992",
+    "company_vehicle_number": "820",
+    "plate_number": "R200509",
+    "year": 1997,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "626",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2022,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "4115",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2026,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "2628",
+    "company_vehicle_number": "823",
+    "plate_number": "",
+    "year": 2004,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "2932",
+    "company_vehicle_number": "",
+    "plate_number": "R296494",
+    "year": 2000,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "3928",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2007,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "6013",
+    "company_vehicle_number": "826",
+    "plate_number": "",
+    "year": 2014,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "5484",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 1998,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "2431",
+    "company_vehicle_number": "",
+    "plate_number": "R795547",
+    "year": 2017,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "8666",
+    "company_vehicle_number": "829",
+    "plate_number": "",
+    "year": 2020,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "210",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2022,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "7791",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2004,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "6677",
+    "company_vehicle_number": "832",
+    "plate_number": "R160360",
+    "year": 2010,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "6152",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2017,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "5724",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2001,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "3044",
+    "company_vehicle_number": "835",
+    "plate_number": "",
+    "year": 2022,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "4155",
+    "company_vehicle_number": "",
+    "plate_number": "R174240",
+    "year": 2005,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "9222",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2011,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "3339",
+    "company_vehicle_number": "838",
+    "plate_number": "",
+    "year": 2014,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "3660",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2005,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "7805",
+    "company_vehicle_number": "",
+    "plate_number": "R264602",
+    "year": 2003,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "7660",
+    "company_vehicle_number": "841",
+    "plate_number": "",
+    "year": 2017,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "6831",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2002,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "7017",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2024,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "8046",
+    "company_vehicle_number": "844",
+    "plate_number": "R429650",
+    "year": 1998,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "1313",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2013,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "7714",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2012,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "3196",
+    "company_vehicle_number": "847",
+    "plate_number": "",
+    "year": 2001,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "7185",
+    "company_vehicle_number": "",
+    "plate_number": "R413604",
+    "year": 2015,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "9233",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2022,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "9153",
+    "company_vehicle_number": "850",
+    "plate_number": "",
+    "year": 2023,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "4637",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2017,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "5722",
+    "company_vehicle_number": "",
+    "plate_number": "R882649",
+    "year": 2001,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "7751",
+    "company_vehicle_number": "853",
+    "plate_number": "",
+    "year": 2001,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "1947",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2016,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "5304",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2020,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "2114",
+    "company_vehicle_number": "856",
+    "plate_number": "R994635",
+    "year": 2003,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "7268",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2004,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "2451",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2001,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "5404",
+    "company_vehicle_number": "859",
+    "plate_number": "",
+    "year": 2007,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "8866",
+    "company_vehicle_number": "",
+    "plate_number": "R749066",
+    "year": 2022,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "5137",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2007,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "6120",
+    "company_vehicle_number": "862",
+    "plate_number": "",
+    "year": 2024,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "3624",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2005,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "6074",
+    "company_vehicle_number": "",
+    "plate_number": "R916058",
+    "year": 1998,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "6966",
+    "company_vehicle_number": "865",
+    "plate_number": "",
+    "year": 2023,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "9686",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2023,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "6560",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2002,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "7190",
+    "company_vehicle_number": "868",
+    "plate_number": "R167052",
+    "year": 2012,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "9835",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 1997,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "1351",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2006,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "2873",
+    "company_vehicle_number": "871",
+    "plate_number": "",
+    "year": 2008,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "1398",
+    "company_vehicle_number": "",
+    "plate_number": "R677695",
+    "year": 2017,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "4785",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 1997,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "2157",
+    "company_vehicle_number": "874",
+    "plate_number": "",
+    "year": 2019,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "5132",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2022,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "5329",
+    "company_vehicle_number": "",
+    "plate_number": "R346166",
+    "year": 2024,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "3481",
+    "company_vehicle_number": "877",
+    "plate_number": "",
+    "year": 2000,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "6302",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2014,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "1214",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2016,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "6333",
+    "company_vehicle_number": "880",
+    "plate_number": "R915126",
+    "year": 2014,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "9395",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2003,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "3941",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2016,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "6658",
+    "company_vehicle_number": "883",
+    "plate_number": "",
+    "year": 2012,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "3546",
+    "company_vehicle_number": "",
+    "plate_number": "R377893",
+    "year": 2013,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "7141",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2016,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "7456",
+    "company_vehicle_number": "886",
+    "plate_number": "",
+    "year": 2008,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "8999",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2005,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "TKTR"
+  },
+  {
+    "veh_number": "5321",
+    "company_vehicle_number": "",
+    "plate_number": "R212180",
+    "year": 2024,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "4998",
+    "company_vehicle_number": "889",
+    "plate_number": "",
+    "year": 2009,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "3491",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2021,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "7983",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2014,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "2995",
+    "company_vehicle_number": "892",
+    "plate_number": "R207876",
+    "year": 2012,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "2130",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2008,
+    "make": "UTILITY",
+    "model": "TKTR",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "2657",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2012,
+    "make": "WABASH",
+    "model": "T",
+    "body_type": "T"
+  },
+  {
+    "veh_number": "6404",
+    "company_vehicle_number": "895",
+    "plate_number": "",
+    "year": 2001,
+    "make": "GREAT DANE",
+    "model": "VNL",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "47",
+    "company_vehicle_number": "",
+    "plate_number": "R686042",
+    "year": 2011,
+    "make": "Kenworth",
+    "model": "579",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "3357",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 1999,
+    "make": "Peterbilt",
+    "model": "T680",
+    "body_type": "TRACTOR"
+  },
+  {
+    "veh_number": "735",
+    "company_vehicle_number": "898",
+    "plate_number": "",
+    "year": 2000,
+    "make": "Freightliner",
+    "model": "TRACTOR",
+    "body_type": "TRAILER"
+  },
+  {
+    "veh_number": "1410",
+    "company_vehicle_number": "",
+    "plate_number": "",
+    "year": 2000,
+    "make": "Volvo",
+    "model": "TRAILER",
+    "body_type": "T"
+  }
+]
