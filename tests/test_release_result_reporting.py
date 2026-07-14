@@ -14,6 +14,12 @@ REPORT_PATHS = {
     "claude_opus48": ROOT
     / "benchmarks/results/claude_opus48_full_current_ocr_v2/evaluation_report.json",
 }
+RUN_EXPECTATIONS = {
+    "codex_gpt56_sol": ("gpt-5.6-sol", "sample_statuses"),
+    "claude_fable5": ("claude-fable-5", "samples"),
+    "codex_gpt55": ("gpt-5.5", "sample_statuses"),
+    "claude_opus48": ("claude-opus-4-8", "samples"),
+}
 
 OVERALL_LABELS = {
     "codex_gpt56_sol": (
@@ -100,6 +106,23 @@ def test_release_tables_match_saved_reports() -> None:
         assert model_stats["total_samples"] == total_samples
         assert model_stats["total_rows"] == total_rows
         assert model_stats["errors"] == 0
+
+    for key, (requested_model, sample_field) in RUN_EXPECTATIONS.items():
+        metadata_path = REPORT_PATHS[key].with_name("run_metadata.json")
+        metadata = json.loads(metadata_path.read_text(encoding="utf-8"))
+        assert metadata["model_key"] == key
+        assert metadata["requested_model"] == requested_model
+        assert metadata["effort"] == "xhigh"
+        assert metadata["transcript"] == "ocr"
+        sample_metadata = metadata[sample_field]
+        assert len(sample_metadata) == total_samples
+        if sample_field == "sample_statuses":
+            assert set(sample_metadata.values()) == {0}
+        else:
+            for sample in sample_metadata.values():
+                assert sample["requested_model"] == requested_model
+                assert sample["effort"] == "xhigh"
+                assert requested_model in sample["matching_inference_models"]
 
     for key, (readme_label, tex_label) in OVERALL_LABELS.items():
         model_stats = stats[key]
