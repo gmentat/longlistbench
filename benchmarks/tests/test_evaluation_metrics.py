@@ -221,6 +221,35 @@ class EvaluationMetricsTests(unittest.TestCase):
         self.assertEqual(metrics["exact_record_recall"], 1.0)
         self.assertTrue(metrics["complete_document"])
 
+    def test_policy_lob_aliases_match_release_labels(self):
+        ground_truth = [
+            {
+                "record_type": "bop_coverage_item",
+                "lob": "BOP",
+                "policy_period": "04/01/2026 - 04/01/2027",
+                "coverage": "Property",
+            },
+            {"record_type": "wc_class_code_item", "lob": "WC", "class_code": "8810"},
+        ]
+        predicted = [
+            {
+                "record_type": "bop_coverage_item",
+                "lob": "BPP",
+                "policy_period": "04/01/2026 to 04/01/2027",
+                "coverage": "Property",
+            },
+            {
+                "record_type": "wc_class_code_item",
+                "lob": "Workers Compensation and Employers Liability",
+                "class_code": "8810",
+            },
+        ]
+
+        metrics = evaluate_record_extraction(predicted, ground_truth)
+
+        self.assertEqual(metrics["exact_record_recall"], 1.0)
+        self.assertTrue(metrics["complete_document"])
+
     def test_generic_id_only_prediction_does_not_pass_full_record_scoring(self):
         ground_truth = [
             {

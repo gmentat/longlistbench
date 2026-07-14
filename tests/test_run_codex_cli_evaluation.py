@@ -35,6 +35,16 @@ def test_run_codex_uses_requested_model_and_effort(tmp_path, monkeypatch) -> Non
     assert 'model_reasoning_effort="xhigh"' in captured["cmd"]
 
 
+def test_sandbox_profile_denies_additional_paths(tmp_path) -> None:
+    repo = tmp_path / "repo"
+    duplicate_data = tmp_path / "duplicate-data"
+
+    profile = runner.sandbox_profile(repo, [duplicate_data])
+
+    assert f'(subpath "{repo.resolve()}")' in profile
+    assert f'(subpath "{duplicate_data.resolve()}")' in profile
+
+
 def test_run_metadata_records_requested_codex_model(tmp_path, monkeypatch) -> None:
     monkeypatch.setattr(runner, "_codex_cli_version", lambda: "codex-cli test")
 
@@ -45,10 +55,12 @@ def test_run_metadata_records_requested_codex_model(tmp_path, monkeypatch) -> No
         requested_model="gpt-5.6-sol",
         effort="xhigh",
         statuses=[("sample", 0)],
+        extra_denied_paths=[tmp_path / "duplicate-data"],
     )
 
     payload = json.loads((tmp_path / runner.RUN_METADATA_FILE).read_text(encoding="utf-8"))
     assert payload["model_key"] == "codex_gpt56_sol"
     assert payload["requested_model"] == "gpt-5.6-sol"
     assert payload["effort"] == "xhigh"
+    assert payload["additional_denied_paths"] == [str((tmp_path / "duplicate-data").resolve())]
     assert payload["sample_statuses"] == {"sample": 0}

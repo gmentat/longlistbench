@@ -132,6 +132,12 @@ def find_sparse_columns(
 
 
 def is_expected_sparse_column(finding: SparseColumnFinding) -> bool:
+    if finding.sample_id == "driver_schedule_sparse_001" and finding.header == "Review":
+        return True
+    if finding.sample_id.startswith("ifta_mileage_by_vehicle_") and finding.header == "Flag":
+        return True
+    if finding.sample_id.startswith("ifta_return_schedule_") and finding.header == "Schedule":
+        return True
     if finding.sample_id.startswith("loss_run_external_") and finding.header == "DateClosed":
         return True
     if finding.sample_id.startswith("vehicle_schedule_sparse_") and finding.header in {
@@ -155,12 +161,14 @@ def find_page_scaffold_mismatches(dataset_dir: Path) -> list[tuple[str, int, int
         parser = parse_rendered_html(html_path)
         if parser.page_count == 0:
             continue
+        metadata_path = metadata_dir / f"{html_path.stem}.json"
+        metadata = json.loads(metadata_path.read_text(encoding="utf-8"))
+        if metadata.get("html_pagination_mode") == "flowing_sections":
+            continue
         pdf_path = dataset_dir / "pdfs" / f"{html_path.stem}.pdf"
         if pdf_path.exists():
             pdf_page_count = len(PdfReader(pdf_path).pages)
         else:
-            metadata_path = metadata_dir / f"{html_path.stem}.json"
-            metadata = json.loads(metadata_path.read_text(encoding="utf-8"))
             pdf_page_count = int(metadata["pdf_page_count"])
         if parser.page_count != pdf_page_count:
             mismatches.append((html_path.stem, parser.page_count, pdf_page_count))

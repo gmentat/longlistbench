@@ -55,10 +55,10 @@ class EvaluatorRegressionTests(unittest.TestCase):
             totals[role]["documents"] += 1
             totals[role]["records"] += instance["num_target_records"]
 
-        self.assertEqual(totals["scale_control"], {"documents": 15, "records": 22_705})
+        self.assertEqual(totals["scale_control"], {"documents": 13, "records": 21_185})
         self.assertEqual(
             totals["structural_challenge"],
-            {"documents": 21, "records": 10_745},
+            {"documents": 19, "records": 8_414},
         )
 
     def test_checker_reuses_main_evaluator_metrics_function(self) -> None:

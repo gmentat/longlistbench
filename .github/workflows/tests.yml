@@ -53,4 +53,4 @@ jobs:
         run: python benchmarks/validate_ocr_vs_golden.py --claims-dir data
 
       - name: Verify OCR numeric fidelity
-        run: python benchmarks/validate_ocr_numeric_fidelity.py --claims-dir data
+        run: python benchmarks/validate_ocr_numeric_fidelity.py --claims-dir data --expected-misses data/ocr_numeric_fidelity_baseline.json

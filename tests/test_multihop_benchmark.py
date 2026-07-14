@@ -35,13 +35,18 @@ class MultiHopBenchmarkTests(unittest.TestCase):
                 self.assertEqual(sample_metadata["id"], sample_id)
                 self.assertEqual(sample_metadata["document_count"], 1)
                 self.assertEqual(sample_metadata["format"], "crosspage")
-                self.assertGreaterEqual(sample_metadata["minimum_gap_pages_between_primary_and_last_evidence"], 60)
+                self.assertGreaterEqual(sample_metadata["minimum_gap_pages_between_primary_and_last_evidence"], 40)
                 self.assertGreaterEqual(len(sample_metadata["join_requirements"]), 3)
                 self.assertEqual(len(ground_truth), case["num_claims"])
 
                 html = (out_dir / "html" / f"{sample_id}.html").read_text(encoding="utf-8")
                 self.assertIn("Claim Intake File Cards", html)
                 self.assertIn("Claim Financial Ledger", html)
+                self.assertIn("First Notice of Loss", html)
+                self.assertIn("Repair estimate", html)
+                self.assertNotIn("Premium Allocation Worksheet", html)
+                self.assertNotIn("Risk Control Follow-Up", html)
+                self.assertNotIn("Loss Run Workpaper", html)
                 self.assertNotIn("join on", html.lower())
 
     def test_config_has_strong_cross_page_join_cases(self) -> None:

@@ -1,50 +1,56 @@
 {
   "id": "ifta_mileage_by_vehicle_006",
+  "difficulty": "ifta_mileage_by_vehicle",
+  "format": "production_like_pdf",
+  "domain": "commercial_insurance_operations",
   "template": "ifta_mileage_by_vehicle",
   "target_record_type": "vehicle_state_mileage_row",
   "num_target_records": 2434,
   "source_batch": "batches-02-05-review-ready",
-  "artifacts": {
-    "pdf": "pdfs/ifta_mileage_by_vehicle_006.pdf",
-    "html": "html/ifta_mileage_by_vehicle_006.html",
-    "ground_truth": "ground_truth/ifta_mileage_by_vehicle_006.json"
-  },
-  "provenance": "Synthetic generated document. Private production references were used only for visual layout review; no production PDFs, names, account numbers, or raw customer data are included in this repository.",
+  "problems": [
+    "high_density_long_list",
+    "large_doc",
+    "multi_row",
+    "multiple_tables",
+    "ocr_condition",
+    "page_breaks",
+    "production_like_layout"
+  ],
   "files": {
     "ground_truth": "ground_truth/ifta_mileage_by_vehicle_006.json",
     "pdf": "pdfs/ifta_mileage_by_vehicle_006.pdf",
     "html": "html/ifta_mileage_by_vehicle_006.html",
     "metadata": "metadata/ifta_mileage_by_vehicle_006.json",
-    "json_size_bytes": 350661,
-    "pdf_size_bytes": 1079911,
-    "html_size_bytes": 1064678,
     "ocr_md": "transcripts/ocr_gemini/ifta_mileage_by_vehicle_006.md",
-    "ocr_size_bytes": 416454
+    "json_size_bytes": 350661,
+    "pdf_size_bytes": 532145,
+    "html_size_bytes": 434089,
+    "ocr_size_bytes": 350608
   },
   "transcripts_available": [
     "ocr"
   ],
   "complexity_regime": "ifta_mileage_by_vehicle",
-  "difficulty": "ifta_mileage_by_vehicle",
-  "format": "production_like_pdf",
-  "domain": "commercial_insurance_operations",
-  "problems": [
-    "high_density_long_list",
-    "production_like_layout",
-    "ocr_condition",
-    "page_breaks",
-    "large_doc",
-    "multiple_tables",
-    "multi_row"
-  ],
-  "pages_estimate": 206,
-  "pdf_page_count": 206,
-  "dataset_version": "2.0.0",
-  "hf_config": "core_operations",
   "document_count": 1,
   "evidence_pattern": "single_document",
-  "ocr_md_size_bytes": 416454,
-  "pdf_size_bytes": 1079911,
-  "html_size_bytes": 1064678,
-  "json_size_bytes": 350661
+  "provenance": "Synthetic generated document. Private production references were used only for visual layout review; no production PDFs, names, account numbers, or raw customer data are included in this repository.",
+  "pages_estimate": 67,
+  "pdf_page_count": 67,
+  "hf_config": "core_operations",
+  "ocr_md_size_bytes": 350608,
+  "pdf_size_bytes": 532145,
+  "html_size_bytes": 434089,
+  "json_size_bytes": 350661,
+  "artifacts": {
+    "pdf_sha256": "45349e20ab5bdb69ba913625d0b443563fb2005807cc84b3e517a1520337c412",
+    "html_sha256": "96a52dc76ea86ba68cb2e780fd5627efba1fe6f2e86d2f85908fabe8b456983a",
+    "ground_truth_sha256": "8a28a4491548cc4e15a90238f06e11b209390fe1fa21354cbb30056610b89ddd",
+    "ocr_sha256": "a6c641b77fd181773f04d9d653d8a48ad0772bac109ce1fe28d8c66d7aca0514"
+  },
+  "layout_revision": {
+    "date": "2026-07-14T11:28:10.766278+00:00",
+    "purpose": "improve production-like document structure and layout variation",
+    "ocr_status": "regenerated_from_current_pdf",
+    "ocr_regenerated_at": "2026-07-14T12:29:42.647509+00:00"
+  }
 }

@@ -128,12 +128,15 @@ _REGION_CODES = {
     "yukon": "yt",
 }
 _LOB_CODES = {
+    "bpp": "bop",
     "businessowners": "bop",
     "businessowners policy": "bop",
     "business owners policy": "bop",
     "commercial general liability": "cgl",
     "workers compensation": "wc",
+    "workers compensation and employers liability": "wc",
     "workers' compensation": "wc",
+    "workers' compensation and employers liability": "wc",
 }
 
 
@@ -443,6 +446,13 @@ def _normalize_generic_field(field: str, value: Any) -> Any:
             return "di"
     if field == "lob":
         return _LOB_CODES.get(value, value)
+    if field == "policy_period":
+        dates = re.findall(
+            r"(?:\d{1,2}/\d{1,2}/\d{2,4}|\d{4}[-/]\d{1,2}[-/]\d{1,2})",
+            value,
+        )
+        if len(dates) == 2:
+            return f"{_normalize_date(dates[0])} - {_normalize_date(dates[1])}"
     if field == "clause_scope":
         value = re.sub(r"^applies\s+within\s+", "", value).strip()
         return value.split(";", 1)[0].strip()

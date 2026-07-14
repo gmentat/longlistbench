@@ -18,6 +18,7 @@ except ImportError:
 
 
 DEFAULT_REPO_ID = "kaydotai/LongListBench"
+RELEASE_VERSION = (Path(__file__).resolve().parent.parent / "VERSION").read_text(encoding="utf-8").strip()
 DEFAULT_BASELINE_REPORTS = (
     Path(__file__).resolve().parent / "results" / "codex_gpt56_sol_full_current_ocr_v2" / "evaluation_report.json",
     Path(__file__).resolve().parent / "results" / "claude_fable5_full_current_ocr_v2" / "evaluation_report.json",
@@ -27,7 +28,7 @@ DEFAULT_BASELINE_REPORTS = (
 DEFAULT_BASELINE_REPORT = DEFAULT_BASELINE_REPORTS[0]
 CONFIG_ORDER = ("core_operations", "claim_multihop", "policy_packets")
 CONFIG_DESCRIPTIONS = {
-    "core_operations": "30 production-like commercial insurance and trucking-operation PDFs with dense repeated operations, IFTA, and loss-run records.",
+    "core_operations": "26 production-like commercial insurance and trucking-operation PDFs with dense repeated operations, IFTA, and loss-run records.",
     "claim_multihop": "3 long claim PDFs where incident records must be assembled from distant sections.",
     "policy_packets": "3 long BOP, WC, and CGL policy packets where records must be assembled from distant sections.",
 }
@@ -430,6 +431,9 @@ def write_metadata_files(dataset_dir: Path, output_dir: Path) -> None:
     metadata_dir = output_dir / "metadata"
     metadata_dir.mkdir(parents=True, exist_ok=True)
     shutil.copy2(dataset_dir / "manifest.json", metadata_dir / "manifest.json")
+    numeric_baseline = dataset_dir / "ocr_numeric_fidelity_baseline.json"
+    if numeric_baseline.exists():
+        shutil.copy2(numeric_baseline, metadata_dir / numeric_baseline.name)
 
     schema_dir = output_dir / "schemas"
     schema_dir.mkdir(parents=True, exist_ok=True)
@@ -700,7 +704,7 @@ The current release includes OCR transcripts for every PDF:
 
 - `ocr_transcript`: OCR text generated from 200-DPI rendered PDF page images with Google Gemini 3.5 Flash vision OCR through the direct Vertex AI API.
 
-OCR validation passes on all released PDFs, with 100.0% average identifier coverage, 99.9% tracked identifier-field support, 39 records with at least one tracked identifier missing from OCR, and no unrecoverable ground-truth numeric values with absolute value at least 10. Interpret OCR-conditioned extraction scores with this ceiling in mind: a single omitted repeated header can affect many rows that inherit that value. For example, page 18 of `ifta_tax_inquiry_002` is transcribed as CSV without 23 visible row-label prefixes.
+OCR validation reports 99.9% average identifier coverage and 99.9% tracked identifier-field support, with 17 records missing at least one tracked identifier. A separate audit finds 56 genuine OCR misses among 76,968 checked numeric fields with absolute value at least 10 (0.073%). The transcript is not hand-corrected; [`metadata/ocr_numeric_fidelity_baseline.json`](./metadata/ocr_numeric_fidelity_baseline.json) records the exact audited miss set. Interpret OCR-conditioned extraction scores with this ceiling in mind.
 
 If future releases add clean structural transcripts, they should be reported as a separate transcript condition rather than mixed with OCR-condition results.
 
@@ -732,7 +736,7 @@ LongListBench is intended for measuring long-list, layout, OCR-conditioned, and 
   title        = {{LongListBench: A Benchmark for Long-List Entity Extraction from Complex Business PDFs}},
   author       = {{Fedoruk, Anton and Shchoholiev, Serhii and Mehta, Akhil}},
   year         = {{2026}},
-  version      = {{2.0.0}},
+  version      = {{{RELEASE_VERSION}}},
   howpublished = {{\\url{{https://github.com/kaydotai/longlistbench}}}}
 }}
 ```

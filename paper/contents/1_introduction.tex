@@ -2,7 +2,7 @@ Long-list entity extraction recovers hundreds or thousands of repeated records f
 
 Established benchmarks such as FUNSD~\cite{jaume2019funsd}, SROIE~\cite{huang2021sroie}, and CORD~\cite{park2019cord} emphasize key-value fields or short forms. DocVQA~\cite{mathew2021docvqa} and MP-DocVQA~\cite{tito2022mpdocvqa} test multi-page reasoning, but not exhaustive recovery of large repeated lists. DocILE~\cite{simsa2023docile} and VRDU~\cite{wang2023vrdu} include richer business documents, yet production extraction also encounters dense exports, repeated headers, OCR artifacts, split records, and fields distributed across distant packet sections.
 
-LongListBench is designed to measure these failures. For each PDF, a system must reconstruct the entire target list under a declared output schema. The current release contains 36 single-PDF instances and 33{,}450 target records. It combines high-density scale tests with cross-section joins, long-range evidence, distractors, and heterogeneous policy records. All names, identifiers, values, and visible prose are synthetic; private documents were used only to study recurring layout and packet structure.
+LongListBench is designed to measure these failures. For each PDF, a system must reconstruct the entire target list under a declared output schema. The current release contains 32 single-PDF instances and 29{,}599 target records. It combines high-density scale tests with cross-section joins, long-range evidence, distractors, and heterogeneous policy records. All names, identifiers, values, and visible prose are synthetic; private documents were used only to study recurring layout and packet structure.
 
 The release makes three contributions:
 \begin{itemize}

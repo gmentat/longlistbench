@@ -1,7 +1,7 @@
-This revision reports corpus validation and four OCR-conditioned agentic extraction baselines on the released corpus of 36 documents. Earlier prerelease experiments used a development set of 80 documents with different templates, schemas, and scoring. We retain those experiments as development history but do not mix their scores with the current release.
+This revision reports corpus validation and four OCR-conditioned agentic extraction baselines on the released corpus of 32 documents. Earlier prerelease experiments used a development set of 80 documents with different templates, schemas, and scoring. We retain those experiments as development history but do not mix their scores with the current release.
 
 \subsection{Artifact completeness}
-Each manifest instance has one PDF, HTML source, JSON ground-truth file, metadata file, and OCR transcript. The release contains 31{,}961 non-policy records and 1{,}489 policy records, for 33{,}450 targets overall. \Cref{tab:release-validation} summarizes the release gates.
+Each manifest instance has one PDF, HTML source, JSON ground-truth file, metadata file, and OCR transcript. The release contains 28{,}255 non-policy records and 1{,}344 policy records, for 29{,}599 targets overall. \Cref{tab:release-validation} summarizes the release gates.
 
 \begin{table}[H]
 \centering
@@ -12,19 +12,19 @@ Each manifest instance has one PDF, HTML source, JSON ground-truth file, metadat
 \toprule
 Check & Value \\
 \midrule
-Manifest instances & 36 \\
-PDF, HTML, ground-truth, metadata, and OCR artifacts & 36 each \\
-Total target records & 33{,}450 \\
+Manifest instances & 32 \\
+PDF, HTML, ground-truth, metadata, and OCR artifacts & 32 each \\
+Total target records & 29{,}599 \\
 Released transcript condition & OCR \\
-Average identifier coverage & 100.0\% \\
+Average identifier coverage & 99.9\% \\
 Tracked identifier-field support & 99.9\% \\
-Records with missing tracked OCR identifiers & 39 \\
-Unrecoverable numeric GT values in OCR & 0 \\
+Records with missing tracked OCR identifiers & 17 \\
+Audited numeric OCR misses & 56 of 76{,}968 (0.073\%) \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-The largest scale family, mileage by vehicle, contributes 17{,}565 records across eight PDFs. Structural families add sparse enrichment, split schedules, mixed row/detail blocks, heterogeneous records, and evidence distributed across sections. All 36 OCR transcripts pass the 95\% identifier-coverage gate. A numeric-fidelity gate also finds no unrecoverable ground-truth values with absolute value at least 10. These checks bound the released OCR condition; they are not extraction scores.
+The largest scale family, mileage by vehicle, contributes 17{,}565 records across eight PDFs. Structural families add sparse enrichment, split schedules, mixed row/detail blocks, heterogeneous records, and evidence distributed across sections. All 32 OCR transcripts pass the 95\% identifier-coverage gate. A numeric audit records 56 genuine OCR misses among 76{,}968 checked ground-truth numeric fields with absolute value at least 10. The transcripts are not hand-corrected, and the exact miss set is released. These checks bound the OCR condition; they are not extraction scores.
 
 \subsection{Agentic OCR baselines}
 \label{subsec:current-ocr-baseline}

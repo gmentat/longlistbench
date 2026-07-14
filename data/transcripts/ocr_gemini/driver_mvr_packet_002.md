@@ -1,40 +1,110 @@
 # Page 1
 
-                    STATE OF MICHIGAN
-                   DEPARTMENT OF STATE
-                         LANSING
+                       ★
+                    STATE OF
+                    MICHIGAN
+
+               STATE OF MICHIGAN
+              DEPARTMENT OF STATE
+                    LANSING
+
 
                                       ATTN: OPERATIONS
                                       TALON YARD LOGISTICS INC
-                                      3188 ALDER RIDGE BLVD
+                                      3188 ALER RIDGE BLVD
                                       GRAND RAPIDS MI  49503-1072
+
 
 Issue Date:   01-22-2026
 Letter Id:    L9047826137
 Case Id:      7-943-118-204
 
+
 Report of Services Provided
 
 Note: This is for your information only and is not a billing statement.
 
-Account Number: 9047821                                      Reference #: 840
+Account Number:  9047821                                      Reference #:  840
 
-Inquiry Type,Description,Certified,Uncertified,Total,Amount
-"Driver Record Information (Medical)","ID Number: T100 200 300",1,0,1,$16.00
-"Driver Record Information (Medical)","ID Number: E101 237 353",1,0,1,$16.00
-"Driver Record Information (Medical)","ID Number: Y102 274 406",1,0,1,$16.00
+Inquiry Type         Description                  Certified   Uncertified   Total   Amount
 
-***DO NOT PAY FROM THIS REPORT***
+Driver Record        ID Number: T100 200
+Information          300                          1           0             1       $16.00
+(Medical)
 
-                                   1 of 2
-                             State Records Unit
-        4120 Archive Way, Lansing, MI 48918 - records@example.invalid
-                                517-555-0138
-                         state.example.invalid/SOS
+Driver Record        ID Number: E101 237
+Information          353                          1           0             1       $16.00
+(Medical)
+
+Driver Record        ID Number: Y102 274
+Information          406                          1           0             1       $16.00
+(Medical)
+
+
+
+                     ***DO NOT PAY FROM THIS REPORT***
+
+
+
+                                 1 of 2
+                           State Records Unit
+             4120 Archive Way, Lansing, MI 48918 - records@example.invalid
+                              517-555-0138
+                       state.example.invalid/SOS
 
 # Page 2
 
-6/11/26, 8:42 PM                                                 Driver Schedule Export
+6/11/26, 8:42 PM                                   Driver Schedule Export
+
+# Driver Schedule
+
+Talon Yard Logistics Inc
+Review Period: 01/01/2026 - 01/01/2027
+Rows: 500
+
+|       Name       | State licensed |  Drivers license #  | Date of birth | Date hired  | Years Experienced | MVR run date | Class |
+|:-----------------|:---------------|:-------------------|:--------------|:------------|:-----------------:|:-------------|:-----:|
+| Elias Ortega     | CO             | CO T100 200 300    | 12/02/1985    | 01/09/2015  |        18         | 01/16/2026   |   A   |
+| Farah Farrell    | SC             | SC E101 237 353    | 08/15/1997    | 10/12/2015  |         5         | 01/11/2026   |   A   |
+| Sonia Madsen     | SC             | SC Y102 274 406    | 02/13/1994    | 06/27/2019  |         9         | 01/26/2026   |   A   |
+| Lucian Price     | CA             | CA O103 311 459    | 04/06/1975    | 08/07/2023  |        24         | 01/24/2026   |   A   |
+| Greta Parker     | KS             | KS R104 348 512    | 06/21/1984    | 01/09/2023  |        16         | 01/28/2026   |   B   |
+| Noemi Singh      | MT             | MT T105 385 565    | 02/11/1968    | 08/07/2023  |        35         | 01/27/2026   |   A   |
+| Cecilia Carver   | WA             | WA X106 422 618    | 01/18/1971    | 09/06/2021  |        33         | 01/28/2026   |   A   |
+| Marcus Abbott    | MT             | MT X107 459 671    | 12/06/1975    | 06/07/2019  |        29         | 01/16/2026   |   B   |
+| Avery Vargas     | NM             | NM D108 496 724    | 04/27/1996    | 03/03/2017  |         4         | 01/26/2026   |   A   |
+| Daphne Novak     | MN             | MN H109 533 777    | 06/09/1970    | 10/28/2021  |        34         | 01/12/2026   |   A   |
+| Theo Kovacs      | LA             | LA Q110 570 830    | 08/23/1990    | 12/12/2018  |        10         | 01/23/2026   |   B   |
+| Lina Kline       | KY             | KY F111 607 883    | 11/13/1981    | 04/27/2019  |        22         | 01/23/2026   |   B   |
+| Rafael Malik     | NC             | NC M112 644 936    | 08/20/1994    | 01/11/2019  |         9         | 01/12/2026   |   B   |
+| Mira Arias       | LA             | LA R113 681 989    | 11/03/1976    | 06/23/2016  |        26         | 01/17/2026   |   A   |
+| Omar Markovic    | KS             | KS V114 718 342    | 11/25/1984    | 12/09/2025  |        16         | 01/15/2026   |   A   |
+| Selena Ilyin     | NV             | NV R115 755 395    | 07/06/1977    | 01/15/2014  |        28         | 01/13/2026   |   A   |
+| Julian Romano    | IN             | IN H116 792 448    | 07/08/1977    | 12/22/2024  |        27         | 01/22/2026   |   B   |
+| Iris Patel       | FL             | FL H117 829 501    | 10/17/1997    | 02/17/2017  |         2         | 01/16/2026   |   B   |
+| Devon Rossi      | NY             | NY P118 866 554    | 09/25/1973    | 12/16/2025  |        27         | 01/19/2026   |   A   |
+| Alma Sorensen    | MN             | MN X119 903 607    | 10/28/1991    | 02/22/2025  |        13         | 01/16/2026   |   B   |
+| Mateo Yu         | MO             | MO X120 940 660    | 04/09/1971    | 07/28/2021  |        28         | 01/20/2026   |   A   |
+| Renee Tan        | CA             | CA R121 977 713    | 05/12/1997    | 12/16/2025  |         6         | 01/15/2026   |   A   |
+| Silas Moreno     | UT             | UT O122 214 766    | 06/01/1984    | 09/11/2015  |        14         | 01/23/2026   |   B   |
+| Vera Petrov      | UT             | UT P123 251 819    | 01/08/1984    | 10/01/2020  |        15         | 01/15/2026   |   B   |
+| Adrian Foster    | GA             | GA E124 288 872    | 06/26/1971    | 11/27/2024  |        32         | 01/21/2026   |   A   |
+| Lena Quinn       | NV             | NV P125 325 925    | 12/28/1996    | 01/08/2025  |         4         | 01/15/2026   |   A   |
+| Kai Kim          | CA             | CA I126 362 978    | 05/24/1981    | 11/06/2022  |        17         | 01/19/2026   |   B   |
+| Mina Bennett     | SC             | SC B127 399 331    | 01/20/1976    | 07/24/2019  |        22         | 01/23/2026   |   B   |
+| Nolan Navarro    | IA             | IA B128 436 384    | 09/12/1989    | 12/12/2021  |        13         | 01/17/2026   |   A   |
+| Marta Holt       | IL             | IL K129 473 437    | 04/03/1978    | 04/16/2025  |        25         | 01/15/2026   |   B   |
+| Ibrahim Coleman  | NC             | NC T130 510 490    | 11/26/1993    | 01/09/2022  |        12         | 01/15/2026   |   A   |
+| Elena Okafor     | NV             | NV B131 547 543    | 06/28/1990    | 04/07/2020  |         9         | 01/16/2026   |   A   |
+| Victor Barrera   | CO             | CO T132 584 596    | 03/20/1978    | 03/19/2018  |        25         | 01/20/2026   |   B   |
+| Leah Wynn        | NC             | NC A133 621 649    | 06/22/1993    | 09/14/2025  |         8         | 01/22/2026   |   A   |
+
+about:blank                                                                               1/15_
+
+
+# Page 3
+
+6/11/26, 8:42 PM                              Driver Schedule Export
 
 # Driver Schedule
 
@@ -43,55 +113,7 @@ Review Period: 01/01/2026 - 01/01/2027
 Rows: 500
 
 | Name | State licensed | Drivers license # | Date of birth | Date hired | Years Experienced | MVR run date | Class |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Elias Ortega | CO | CO T100 200 300 | 12/02/1985 | 01/09/2015 | 18 | 01/16/2026 | A |
-| Farah Farrell | SC | SC E101 237 353 | 08/15/1997 | 10/12/2015 | 5 | 01/11/2026 | A |
-| Sonia Madsen | SC | SC Y102 274 406 | 02/13/1994 | 06/27/2019 | 9 | 01/26/2026 | A |
-| Lucian Price | CA | CA O103 311 459 | 04/06/1975 | 08/07/2023 | 24 | 01/24/2026 | A |
-| Greta Parker | KS | KS R104 348 512 | 06/21/1984 | 01/09/2023 | 16 | 01/28/2026 | B |
-| Noemi Singh | MT | MT T105 385 565 | 02/11/1968 | 08/07/2023 | 35 | 01/27/2026 | A |
-| Cecilia Carver | WA | WA X106 422 618 | 01/18/1971 | 09/06/2021 | 33 | 01/28/2026 | A |
-| Marcus Abbott | MT | MT X107 459 671 | 12/06/1975 | 06/07/2019 | 29 | 01/16/2026 | B |
-| Avery Vargas | NM | NM D108 496 724 | 04/27/1996 | 03/03/2017 | 4 | 01/26/2026 | A |
-| Daphne Novak | MN | MN H109 533 777 | 06/09/1970 | 10/28/2021 | 34 | 01/12/2026 | A |
-| Theo Kovacs | LA | LA Q110 570 830 | 08/23/1990 | 12/12/2018 | 10 | 01/23/2026 | B |
-| Lina Kline | KY | KY F111 607 883 | 11/13/1981 | 04/27/2019 | 22 | 01/23/2026 | B |
-| Rafael Malik | NC | NC M112 644 936 | 08/20/1994 | 01/11/2019 | 9 | 01/12/2026 | B |
-| Mira Arias | LA | LA R113 681 989 | 11/03/1976 | 06/23/2016 | 26 | 01/17/2026 | A |
-| Omar Markovic | KS | KS V114 718 342 | 11/25/1984 | 12/09/2025 | 16 | 01/15/2026 | A |
-| Selena Ilyin | NV | NV R115 755 395 | 07/06/1977 | 01/15/2014 | 28 | 01/13/2026 | A |
-| Julian Romano | IN | IN H116 792 448 | 07/08/1977 | 12/22/2024 | 27 | 01/22/2026 | B |
-| Iris Patel | FL | FL H117 829 501 | 10/17/1997 | 02/17/2017 | 2 | 01/16/2026 | B |
-| Devon Rossi | NY | NY P118 866 554 | 09/25/1973 | 12/16/2025 | 27 | 01/19/2026 | A |
-| Alma Sorensen | MN | MN X119 903 607 | 10/28/1991 | 02/22/2025 | 13 | 01/16/2026 | B |
-| Mateo Yu | MO | MO X120 940 660 | 04/09/1971 | 07/28/2021 | 28 | 01/20/2026 | A |
-| Renee Tan | CA | CA R121 977 713 | 05/12/1997 | 12/16/2025 | 6 | 01/15/2026 | A |
-| Silas Moreno | UT | UT O122 214 766 | 06/01/1984 | 09/11/2015 | 14 | 01/23/2026 | B |
-| Vera Petrov | UT | UT P123 251 819 | 01/08/1984 | 10/01/2020 | 15 | 01/15/2026 | B |
-| Adrian Foster | GA | GA E124 288 872 | 06/26/1971 | 11/27/2024 | 32 | 01/21/2026 | A |
-| Lena Quinn | NV | NV P125 325 925 | 12/28/1996 | 01/08/2025 | 4 | 01/15/2026 | A |
-| Kai Kim | CA | CA I126 362 978 | 05/24/1981 | 11/06/2022 | 17 | 01/19/2026 | B |
-| Mina Bennett | SC | SC B127 399 331 | 01/20/1976 | 07/24/2019 | 22 | 01/23/2026 | B |
-| Nolan Navarro | IA | IA B128 436 384 | 09/12/1989 | 12/12/2021 | 13 | 01/17/2026 | A |
-| Marta Holt | IL | IL K129 473 437 | 04/03/1978 | 04/16/2025 | 25 | 01/15/2026 | B |
-| Ibrahim Coleman | NC | NC T130 510 490 | 11/26/1993 | 01/09/2022 | 12 | 01/15/2026 | A |
-| Elena Okafor | NV | NV B131 547 543 | 06/28/1990 | 04/07/2020 | 9 | 01/16/2026 | A |
-| Victor Barrera | CO | CO T132 584 596 | 03/20/1978 | 03/19/2018 | 25 | 01/20/2026 | B |
-| Leah Wynn | NC | NC A133 621 649 | 06/22/1993 | 09/14/2025 | 8 | 01/22/2026 | A |
-
-about:blank                                                                                           1/15
-
-# Page 3
-
-6/11/26, 8:42 PM Driver Schedule Export
-
-Driver Schedule
-Talon Yard Logistics Inc
-Review Period: 01/01/2026 - 01/01/2027
-Rows: 500
-
-| Name | State licensed | Drivers license # | Date of birth | Date hired | Years Experienced | MVR run date | Class |
-|---|---|---|---|---|---|---|---|
+| :--- | :--- | :--- | :--- | :--- | :---: | :--- | :---: |
 | Samir Hughes | PA | PA L134 658 702 | 01/17/1984 | 02/16/2018 | 21 | 01/20/2026 | B |
 | Daria Gallagher | WY | WY J135 695 755 | 03/11/1991 | 08/13/2022 | 12 | 01/26/2026 | A |
 | Owen Lambert | AL | AL R136 732 808 | 01/08/1987 | 03/27/2024 | 14 | 01/19/2026 | A |
@@ -127,178 +149,210 @@ Rows: 500
 | Julian Carver | ND | ND S166 242 998 | 12/10/1973 | 11/16/2020 | 26 | 01/26/2026 | A |
 | Iris Abbott | AZ | AZ U167 279 351 | 06/20/1976 | 04/17/2017 | 25 | 01/20/2026 | B |
 
-about:blank 2/15
+
+about:blank                                                                               2/15
 
 # Page 4
+
+6/11/26, 8:42 PM                                      Driver Schedule Export
+
+Driver Schedule
+Talon Yard Logistics Inc
+Review Period: 01/01/2026 - 01/01/2027
+Rows: 500
+
+       Name         State licensed   Drivers license #   Date of birth   Date hired   Years Experienced   MVR run date   Class
+ Devon Vargas       WV               WV I168 316 404     07/20/1982      09/23/2018          16           01/21/2026       B
+ Alma Novak         TX               TX W169 353 457     10/19/1995      04/20/2025           9           01/16/2026       A
+ Mateo Kovacs       TN               TN G170 390 510     06/05/1983      04/12/2018          21           01/24/2026       A
+ Renee Kline        LA               LA N171 427 563     02/01/1976      04/16/2023          22           01/23/2026       A
+ Silas Malik        OH               OH O172 464 616     04/14/1988      11/01/2024          11           01/11/2026       B
+ Vera Arias         TX               TX X173 501 669     10/12/1979      07/16/2021          22           01/25/2026       A
+ Adrian Markovic    TX               TX D174 538 722     11/18/1971      09/03/2019          31           01/27/2026       A
+ Lena Ilyin         WA               WA F175 575 775     07/21/1986      01/14/2020          14           01/28/2026       A
+ Kai Romano         OR               OR P176 612 828     05/18/1977      09/16/2024          22           01/24/2026       B
+ Mina Patel         UT               UT H177 649 881     05/26/1982      11/20/2016          17           01/17/2026       A
+ Nolan Rossi        KS               KS U178 686 934     10/02/1973      01/05/2019          27           01/14/2026       A
+ Marta Sorensen     MD               MD V179 723 987     03/21/1992      01/08/2025           9           01/23/2026       A
+ Ibrahim Yu         KS               KS Z180 760 340     05/16/1979      04/11/2016          24           01/17/2026       A
+ Elena Tan          FL               FL M181 797 393     10/09/1980      02/26/2015          23           01/10/2026       B
+ Victor Moreno      VA               VA V182 834 446     12/10/1973      10/23/2016          31           01/16/2026       A
+ Leah Petrov        WV               WV N183 871 499     06/02/1990      11/08/2020          12           01/27/2026       A
+ Samir Foster       MO               MO G184 908 552     05/27/1996      02/09/2024           7           01/28/2026       A
+ Daria Quinn        CA               CA M185 945 605     10/09/1996      04/25/2020           2           01/12/2026       A
+ Owen Kim           MO               MO U186 982 658     06/22/1988      03/12/2022          12           01/23/2026       B
+ Anika Bennett      NE               NE E187 219 711     07/22/1998      10/10/2018           4           01/25/2026       A
+ Milan Navarro      GA               GA M188 256 764     11/19/1998      06/28/2016           3           01/21/2026       A
+ Rosa Holt          VA               VA D189 293 817     02/26/1971      05/18/2023          32           01/13/2026       A
+ Caleb Coleman      MN               MN I190 330 870     08/16/1994      05/06/2017           5           01/24/2026       A
+ Nina Okafor        IA               IA L191 367 923     10/12/1991      04/11/2023          10           01/20/2026       A
+ Andre Barrera      WY               WY Y192 404 976     04/23/1995      04/28/2022           8           01/10/2026       A
+ Priya Wynn         FL               FL R193 441 329     09/16/1986      05/08/2022          18           01/26/2026       B
+ Jonah Hughes       TX               TX F194 478 382     01/26/1971      11/23/2018          27           01/14/2026       B
+ Maya Gallagher     CO               CO J195 515 435     11/08/1985      05/05/2020          20           01/10/2026       A
+ Arman Lambert      UT               UT B196 552 488     10/20/1997      03/19/2024           6           01/19/2026       A
+ Tessa Mendez       LA               LA U197 589 541     07/23/1973      08/13/2023          32           01/22/2026       A
+ Reed Rivera        OR               OR U198 626 594     10/22/1970      11/17/2018          31           01/13/2026       A
+ Clara Reyes        KS               KS K199 663 647     05/14/1974      12/12/2017          25           01/22/2026       A
+ Elias Rahman       MI               MI Q200 700 700     08/21/1995      04/07/2022          10           01/11/2026       B
+ Farah Nguyen       KS               KS P201 737 753     12/22/1982      01/09/2025          19           01/22/2026       B
+
+
+about:blank                                                                                                            3/15
+
+# Page 5
+
+6/11/26, 8:42 PM                                   Driver Schedule Export
+
+# Driver Schedule
+
+### Talon Yard Logistics Inc
+Review Period: 01/01/2026 - 01/01/2027
+Rows: 500
+
+       Name        State licensed   Drivers license #   Date of birth   Date hired   Years Experienced   MVR run date   Class
+  Sonia Nassar           TN          TN W202 774 806     03/27/1968     04/02/2018          33            01/16/2026      A
+  Lucian Walsh           MN          MN I203 811 859     10/05/1968     04/25/2016          33            01/24/2026      B
+  Greta Mensah           GA          GA Q204 848 912     09/18/1998     05/03/2021           1            01/24/2026      A
+  Noemi Torres           IA          IA Y205 885 965     12/13/1993     03/16/2020           7            01/24/2026      A
+  Cecilia Duarte         MN          MN T206 922 318     02/16/1979     01/06/2024          19            01/25/2026      A
+  Marcus Hayes           UT          UT G207 959 371     11/20/1988     04/09/2020          12            01/24/2026      A
+  Avery Haddad           OK          OK Z208 996 424     07/12/1997     04/04/2015           5            01/26/2026      A
+  Daphne Santos          NM          NM L209 233 477     02/21/1977     11/14/2017          21            01/20/2026      A
+  Theo Kaminski          UT          UT V210 270 530     10/12/1979     02/10/2019          19            01/24/2026      A
+  Lina Chen              OH          OH T211 307 583     08/05/1973     07/20/2019          32            01/25/2026      B
+  Rafael Serrano         MI          MI G212 344 636     02/27/1989     03/19/2017          14            01/20/2026      A
+  Mira Diaz              WA          WA V213 381 689     07/03/1991     05/19/2025          10            01/13/2026      A
+  Omar Bauer             MS          MS I214 418 742     03/20/1978     02/27/2021          22            01/24/2026      A
+  Selena Sawyer          NM          NM H215 455 795     04/16/1974     10/08/2018          30            01/18/2026      B
+  Julian Soto            IL          IL T216 492 848     08/09/1986     11/19/2019          17            01/10/2026      B
+  Iris Velasquez         MD          MD A217 529 901     12/17/1988     02/27/2020          17            01/20/2026      B
+  Devon Talbot           KS          KS R218 566 954     02/12/1984     06/03/2021          14            01/14/2026      A
+  Alma Bishop            NM          NM A219 603 307     09/15/1982     02/12/2014          20            01/14/2026      A
+  Mateo Ortega           IL          IL B220 640 360     09/18/1986     02/14/2022          16            01/18/2026      A
+  Renee Farrell          NE          NE A221 677 413     04/24/1987     11/16/2019          15            01/25/2026      A
+  Silas Madsen           MD          MD G222 714 466     10/16/1990     08/08/2017          12            01/28/2026      B
+  Vera Price             AZ          AZ P223 751 519     10/09/1989     08/21/2022          10            01/20/2026      A
+  Adrian Parker          MT          MT T224 788 572     06/12/1983     09/07/2015          19            01/10/2026      B
+  Lena Singh             OH          OH S225 825 625     06/25/1987     04/01/2015          13            01/26/2026      B
+  Kai Carver             IN          IN J226 862 678     08/24/1996     02/28/2024           4            01/28/2026      B
+  Mina Abbott            NC          NC T227 899 731     11/03/1983     08/23/2019          15            01/22/2026      B
+  Nolan Vargas           GA          GA P228 936 784     06/11/1995     08/17/2022           9            01/17/2026      B
+  Marta Novak            NE          NE F229 973 837     12/19/1988     02/23/2019          17            01/12/2026      B
+  Ibrahim Kovacs         AZ          AZ N230 210 890     05/13/1969     09/01/2018          30            01/28/2026      A
+  Elena Kline            AZ          AZ A231 247 943     02/25/1971     03/04/2022          31            01/25/2026      A
+  Victor Malik           OK          OK N232 284 996     12/10/1969     09/10/2021          32            01/21/2026      A
+  Leah Arias             MO          MO X233 321 349     04/10/1992     09/11/2017           7            01/19/2026      A
+  Samir Markovic         WV          WV M234 358 402     07/20/1975     03/09/2021          27            01/21/2026      A
+  Daria Ilyin            NM          NM B235 395 455     09/04/1979     01/05/2015          21            01/13/2026      B
+
+
+about:blank                                                                                                       4/15
+
+# Page 6
 
 6/11/26, 8:42 PM                                                 Driver Schedule Export
 
 # Driver Schedule
 
-**Talon Yard Logistics Inc**  
-Review Period: 01/01/2026 - 01/01/2027  
-Rows: 500  
+**Talon Yard Logistics Inc**
+Review Period: 01/01/2026 - 01/01/2027
+Rows: 500
 
 | Name | State licensed | Drivers license # | Date of birth | Date hired | Years Experienced | MVR run date | Class |
-| :--- | :---: | :--- | :---: | :---: | :---: | :---: | :---: |
-| Devon Vargas | WV | WV I168 316 404 | 07/20/1982 | 09/23/2018 | 16 | 01/21/2026 | B |
-| Alma Novak | TX | TX W169 353 457 | 10/19/1995 | 04/20/2025 | 9 | 01/16/2026 | A |
-| Mateo Kovacs | TN | TN G170 390 510 | 06/05/1983 | 04/12/2018 | 21 | 01/24/2026 | A |
-| Renee Kline | LA | LA N171 427 563 | 02/01/1976 | 04/16/2023 | 22 | 01/23/2026 | A |
-| Silas Malik | OH | OH O172 464 616 | 04/14/1988 | 11/01/2024 | 11 | 01/11/2026 | B |
-| Vera Arias | TX | TX X173 501 669 | 10/12/1979 | 07/16/2021 | 22 | 01/25/2026 | A |
-| Adrian Markovic | TX | TX D174 538 722 | 11/18/1971 | 09/03/2019 | 31 | 01/27/2026 | A |
-| Lena Ilyin | WA | WA F175 575 775 | 07/21/1986 | 01/14/2020 | 14 | 01/28/2026 | A |
-| Kai Romano | OR | OR P176 612 828 | 05/18/1977 | 09/16/2024 | 22 | 01/24/2026 | B |
-| Mina Patel | UT | UT H177 649 881 | 05/26/1982 | 11/20/2016 | 17 | 01/17/2026 | A |
-| Nolan Rossi | KS | KS U178 686 934 | 10/02/1973 | 01/05/2019 | 27 | 01/14/2026 | A |
-| Marta Sorensen | MD | MD V179 723 987 | 03/21/1992 | 01/08/2025 | 9 | 01/23/2026 | A |
-| Ibrahim Yu | KS | KS Z180 760 340 | 05/16/1979 | 04/11/2016 | 24 | 01/17/2026 | A |
-| Elena Tan | FL | FL M181 797 393 | 10/09/1980 | 02/26/2015 | 23 | 01/10/2026 | B |
-| Victor Moreno | VA | VA V182 834 446 | 12/10/1973 | 10/23/2016 | 31 | 01/16/2026 | A |
-| Leah Petrov | WV | WV N183 871 499 | 06/02/1990 | 11/08/2020 | 12 | 01/27/2026 | A |
-| Samir Foster | MO | MO G184 908 552 | 05/27/1996 | 02/09/2024 | 7 | 01/28/2026 | A |
-| Daria Quinn | CA | CA M185 945 605 | 10/09/1996 | 04/25/2020 | 2 | 01/12/2026 | A |
-| Owen Kim | MO | MO U186 982 658 | 06/22/1988 | 03/12/2022 | 12 | 01/23/2026 | B |
-| Anika Bennett | NE | NE E187 219 711 | 07/22/1998 | 10/10/2018 | 4 | 01/25/2026 | A |
-| Milan Navarro | GA | GA M188 256 764 | 11/19/1998 | 06/28/2016 | 3 | 01/21/2026 | A |
-| Rosa Holt | VA | VA D189 293 817 | 02/26/1971 | 05/18/2023 | 32 | 01/13/2026 | A |
-| Caleb Coleman | MN | MN I190 330 870 | 08/16/1994 | 05/06/2017 | 5 | 01/24/2026 | A |
-| Nina Okafor | IA | IA L191 367 923 | 10/12/1991 | 04/11/2023 | 10 | 01/20/2026 | A |
-| Andre Barrera | WY | WY Y192 404 976 | 04/23/1995 | 04/28/2022 | 8 | 01/10/2026 | A |
-| Priya Wynn | FL | FL R193 441 329 | 09/16/1986 | 05/08/2022 | 18 | 01/26/2026 | B |
-| Jonah Hughes | TX | TX F194 478 382 | 01/26/1971 | 11/23/2018 | 27 | 01/14/2026 | B |
-| Maya Gallagher | CO | CO J195 515 435 | 11/08/1985 | 05/05/2020 | 20 | 01/10/2026 | A |
-| Arman Lambert | UT | UT B196 552 488 | 10/20/1997 | 03/19/2024 | 6 | 01/19/2026 | A |
-| Tessa Mendez | LA | LA U197 589 541 | 07/23/1973 | 08/13/2023 | 32 | 01/22/2026 | A |
-| Reed Rivera | OR | OR U198 626 594 | 10/22/1970 | 11/17/2018 | 31 | 01/13/2026 | A |
-| Clara Reyes | KS | KS K199 663 647 | 05/14/1974 | 12/12/2017 | 25 | 01/22/2026 | A |
-| Elias Rahman | MI | MI Q200 700 700 | 08/21/1995 | 04/07/2022 | 10 | 01/11/2026 | B |
-| Farah Nguyen | KS | KS P201 737 753 | 12/22/1982 | 01/09/2025 | 19 | 01/22/2026 | B |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Owen Romano | NC | NC S236 432 508 | 06/04/1979 | 09/22/2021 | 25 | 01/19/2026 | A |
+| Anika Patel | ID | ID D237 469 561 | 10/07/1971 | 02/15/2019 | 33 | 01/16/2026 | A |
+| Milan Rossi | NM | NM W238 506 614 | 11/05/1968 | 09/17/2018 | 30 | 01/13/2026 | A |
+| Rosa Sorensen | KS | KS P239 543 667 | 08/16/1992 | 07/24/2019 | 6 | 01/22/2026 | A |
+| Caleb Yu | TX | TX M240 580 720 | 06/16/1983 | 07/06/2023 | 16 | 01/25/2026 | A |
+| Nina Tan | PA | PA O241 617 773 | 04/27/1974 | 09/25/2019 | 28 | 01/24/2026 | B |
+| Andre Moreno | OK | OK J242 654 826 | 12/01/1993 | 12/09/2024 | 6 | 01/11/2026 | A |
+| Priya Petrov | MT | MT A243 691 879 | 11/06/1968 | 07/14/2022 | 32 | 01/10/2026 | A |
+| Jonah Foster | LA | LA U244 728 932 | 10/10/1995 | 10/05/2024 | 6 | 01/18/2026 | A |
+| Maya Quinn | AR | AR F245 765 985 | 03/19/1995 | 02/24/2020 | 7 | 01/25/2026 | A |
+| Arman Kim | SC | SC W246 802 338 | 04/19/1997 | 06/14/2018 | 7 | 01/25/2026 | A |
+| Tessa Bennett | OH | OH N247 839 391 | 09/16/1986 | 02/16/2017 | 17 | 01/23/2026 | B |
+| Reed Navarro | KS | KS I248 876 444 | 11/22/1982 | 11/02/2025 | 20 | 01/20/2026 | B |
+| Clara Holt | TN | TN F249 913 497 | 03/04/1981 | 04/11/2025 | 19 | 01/17/2026 | B |
+| Elias Coleman | UT | UT C250 950 550 | 07/18/1976 | 12/05/2021 | 22 | 01/21/2026 | A |
+| Farah Okafor | MD | MD B251 987 603 | 06/22/1996 | 08/20/2015 | 4 | 01/22/2026 | A |
+| Sonia Barrera | NM | NM B252 224 656 | 02/04/1972 | 02/20/2023 | 33 | 01/14/2026 | A |
+| Lucian Wynn | VA | VA Y253 261 709 | 03/22/1988 | 04/17/2023 | 11 | 01/28/2026 | A |
+| Greta Hughes | MI | MI M254 298 762 | 04/26/1997 | 05/08/2014 | 4 | 01/26/2026 | A |
+| Noemi Gallagher | NY | NY R255 335 815 | 03/25/1992 | 11/02/2017 | 9 | 01/12/2026 | B |
+| Cecilia Lambert | FL | FL B256 372 868 | 06/25/1994 | 09/26/2016 | 6 | 01/24/2026 | A |
+| Marcus Mendez | TN | TN D257 409 921 | 02/09/1977 | 05/17/2014 | 25 | 01/15/2026 | B |
+| Avery Rivera | GA | GA U258 446 974 | 07/15/1977 | 09/04/2025 | 22 | 01/23/2026 | A |
+| Daphne Reyes | MS | MS U259 483 327 | 08/10/1986 | 06/17/2017 | 18 | 01/15/2026 | A |
+| Theo Rahman | TX | TX E260 520 380 | 02/06/1996 | 03/15/2016 | 4 | 01/25/2026 | A |
+| Lina Nguyen | WV | WV S261 557 433 | 10/22/1978 | 06/12/2015 | 25 | 01/18/2026 | A |
+| Rafael Nassar | NC | NC E262 594 486 | 02/11/1973 | 12/05/2019 | 26 | 01/10/2026 | A |
+| Mira Walsh | IA | IA C263 631 539 | 01/19/1969 | 04/17/2022 | 31 | 01/13/2026 | A |
+| Omar Mensah | OK | OK J264 668 592 | 06/25/1978 | 04/09/2015 | 22 | 01/11/2026 | B |
+| Selena Torres | WA | WA I265 705 645 | 06/24/1972 | 04/26/2015 | 33 | 01/26/2026 | B |
+| Julian Duarte | AR | AR V266 742 698 | 12/28/1984 | 11/11/2018 | 21 | 01/17/2026 | A |
+| Iris Hayes | MS | MS Q267 779 751 | 09/01/1985 | 03/18/2021 | 13 | 01/11/2026 | A |
+| Devon Haddad | IL | IL M268 816 804 | 11/07/1996 | 02/10/2017 | 9 | 01/15/2026 | A |
+| Alma Santos | OR | OR S269 853 857 | 10/01/1991 | 11/16/2024 | 11 | 01/20/2026 | A |
 
-about:blank                                                                                3/15
-
-# Page 5
-
-Name,State licensed,Drivers license #,Date of birth,Date hired,Years Experienced,MVR run date,Class
-Sonia Nassar,TN,TN W202 774 806,03/27/1968,04/02/2018,33,01/16/2026,A
-Lucian Walsh,MN,MN I203 811 859,10/05/1968,04/25/2016,33,01/24/2026,B
-Greta Mensah,GA,GA Q204 848 912,09/18/1998,05/03/2021,1,01/24/2026,A
-Noemi Torres,IA,IA Y205 885 965,12/13/1993,03/16/2020,7,01/24/2026,A
-Cecilia Duarte,MN,MN T206 922 318,02/16/1979,01/06/2024,19,01/25/2026,A
-Marcus Hayes,UT,UT G207 959 371,11/20/1988,04/09/2020,12,01/24/2026,A
-Avery Haddad,OK,OK Z208 996 424,07/12/1997,04/04/2015,5,01/26/2026,A
-Daphne Santos,NM,NM L209 233 477,02/21/1977,11/14/2017,21,01/20/2026,A
-Theo Kaminski,UT,UT V210 270 530,10/12/1979,02/10/2019,19,01/24/2026,A
-Lina Chen,OH,OH T211 307 583,08/05/1973,07/20/2019,32,01/25/2026,B
-Rafael Serrano,MI,MI G212 344 636,02/27/1989,03/19/2017,14,01/20/2026,A
-Mira Diaz,WA,WA V213 381 689,07/03/1991,05/19/2025,10,01/13/2026,A
-Omar Bauer,MS,MS I214 418 742,03/20/1978,02/27/2021,22,01/24/2026,A
-Selena Sawyer,NM,NM H215 455 795,04/16/1974,10/08/2018,30,01/18/2026,B
-Julian Soto,IL,IL T216 492 848,08/09/1986,11/19/2019,17,01/10/2026,B
-Iris Velasquez,MD,MD A217 529 901,12/17/1988,02/27/2020,17,01/20/2026,B
-Devon Talbot,KS,KS R218 566 954,02/12/1984,06/03/2021,14,01/14/2026,A
-Alma Bishop,NM,NM A219 603 307,09/15/1982,02/12/2014,20,01/14/2026,A
-Mateo Ortega,IL,IL B220 640 360,09/18/1986,02/14/2022,16,01/18/2026,A
-Renee Farrell,NE,NE A221 677 413,04/24/1987,11/16/2019,15,01/25/2026,A
-Silas Madsen,MD,MD G222 714 466,10/16/1990,08/08/2017,12,01/28/2026,B
-Vera Price,AZ,AZ P223 751 519,10/09/1989,08/21/2022,10,01/20/2026,A
-Adrian Parker,MT,MT T224 788 572,06/12/1983,09/07/2015,19,01/10/2026,B
-Lena Singh,OH,OH S225 825 625,06/25/1987,04/01/2015,13,01/26/2026,B
-Kai Carver,IN,IN J226 862 678,08/24/1996,02/28/2024,4,01/28/2026,B
-Mina Abbott,NC,NC T227 899 731,11/03/1983,08/23/2019,15,01/22/2026,B
-Nolan Vargas,GA,GA P228 936 784,06/11/1995,08/17/2022,9,01/17/2026,B
-Marta Novak,NE,NE F229 973 837,12/19/1988,02/23/2019,17,01/12/2026,B
-Ibrahim Kovacs,AZ,AZ N230 210 890,05/13/1969,09/01/2018,30,01/28/2026,A
-Elena Kline,AZ,AZ A231 247 943,02/25/1971,03/04/2022,31,01/25/2026,A
-Victor Malik,OK,OK N232 284 996,12/10/1969,09/10/2021,32,01/21/2026,A
-Leah Arias,MO,MO X233 321 349,04/10/1992,09/11/2017,7,01/19/2026,A
-Samir Markovic,WV,WV M234 358 402,07/20/1975,03/09/2021,27,01/21/2026,A
-Daria Ilyin,NM,NM B235 395 455,09/04/1979,01/05/2015,21,01/13/2026,B
-
-# Page 6
-
-Name,State licensed,Drivers license #,Date of birth,Date hired,Years Experienced,MVR run date,Class
-Owen Romano,NC,NC S236 432 508,06/04/1979,09/22/2021,25,01/19/2026,A
-Anika Patel,ID,ID D237 469 561,10/07/1971,02/15/2019,33,01/16/2026,A
-Milan Rossi,NM,NM W238 506 614,11/05/1968,09/17/2018,30,01/13/2026,A
-Rosa Sorensen,KS,KS P239 543 667,08/16/1992,07/24/2019,6,01/22/2026,A
-Caleb Yu,TX,TX M240 580 720,06/16/1983,07/06/2023,16,01/25/2026,A
-Nina Tan,PA,PA O241 617 773,04/27/1974,09/25/2019,28,01/24/2026,B
-Andre Moreno,OK,OK J242 654 826,12/01/1993,12/09/2024,6,01/11/2026,A
-Priya Petrov,MT,MT A243 691 879,11/06/1968,07/14/2022,32,01/10/2026,A
-Jonah Foster,LA,LA U244 728 932,10/10/1995,10/05/2024,6,01/18/2026,A
-Maya Quinn,AR,AR F245 765 985,03/19/1995,02/24/2020,7,01/25/2026,A
-Arman Kim,SC,SC W246 802 338,04/19/1997,06/14/2018,7,01/25/2026,A
-Tessa Bennett,OH,OH N247 839 391,09/16/1986,02/16/2017,17,01/23/2026,B
-Reed Navarro,KS,KS I248 876 444,11/22/1982,11/02/2025,20,01/20/2026,B
-Clara Holt,TN,TN F249 913 497,03/04/1981,04/11/2025,19,01/17/2026,B
-Elias Coleman,UT,UT C250 950 550,07/18/1976,12/05/2021,22,01/21/2026,A
-Farah Okafor,MD,MD B251 987 603,06/22/1996,08/20/2015,4,01/22/2026,A
-Sonia Barrera,NM,NM B252 224 656,02/04/1972,02/20/2023,33,01/14/2026,A
-Lucian Wynn,VA,VA Y253 261 709,03/22/1988,04/17/2023,11,01/28/2026,A
-Greta Hughes,MI,MI M254 298 762,04/26/1997,05/08/2014,4,01/26/2026,A
-Noemi Gallagher,NY,NY R255 335 815,03/25/1992,11/02/2017,9,01/12/2026,B
-Cecilia Lambert,FL,FL B256 372 868,06/25/1994,09/26/2016,6,01/24/2026,A
-Marcus Mendez,TN,TN D257 409 921,02/09/1977,05/17/2014,25,01/15/2026,B
-Avery Rivera,GA,GA U258 446 974,07/15/1977,09/04/2025,22,01/23/2026,A
-Daphne Reyes,MS,MS U259 483 327,08/10/1986,06/17/2017,18,01/15/2026,A
-Theo Rahman,TX,TX E260 520 380,02/06/1996,03/15/2016,4,01/25/2026,A
-Lina Nguyen,WV,WV S261 557 433,10/22/1978,06/12/2015,25,01/18/2026,A
-Rafael Nassar,NC,NC E262 594 486,02/11/1973,12/05/2019,26,01/10/2026,A
-Mira Walsh,IA,IA C263 631 539,01/19/1969,04/17/2022,31,01/13/2026,A
-Omar Mensah,OK,OK J264 668 592,06/25/1978,04/09/2015,22,01/11/2026,B
-Selena Torres,WA,WA I265 705 645,06/24/1972,04/26/2015,33,01/26/2026,B
-Julian Duarte,AR,AR V266 742 698,12/28/1984,11/11/2018,21,01/17/2026,A
-Iris Hayes,MS,MS Q267 779 751,09/01/1985,03/18/2021,13,01/11/2026,A
-Devon Haddad,IL,IL M268 816 804,11/07/1996,02/10/2017,9,01/15/2026,A
-Alma Santos,OR,OR S269 853 857,10/01/1991,11/16/2024,11,01/20/2026,A
+about:blank                                                                                   5/15
 
 # Page 7
 
-Name,State licensed,Drivers license #,Date of birth,Date hired,Years Experienced,MVR run date,Class
-Mateo Kaminski,IN,IN E270 890 910,07/17/1982,01/06/2014,16,01/27/2026,B
-Renee Chen,MN,MN M271 927 963,09/01/1968,06/25/2020,32,01/27/2026,B
-Silas Serrano,CO,CO W272 964 316,06/12/1981,04/03/2018,21,01/15/2026,B
-Vera Diaz,MN,MN D273 201 369,07/18/1978,05/10/2014,27,01/26/2026,B
-Adrian Bauer,AR,AR P274 238 422,10/22/1985,01/27/2016,15,01/23/2026,A
-Lena Sawyer,IN,IN T275 275 475,12/05/1987,02/16/2020,16,01/27/2026,A
-Kai Soto,PA,PA S276 312 528,01/04/1974,12/05/2021,30,01/17/2026,B
-Mina Velasquez,WY,WY P277 349 581,07/06/1989,08/27/2025,16,01/22/2026,A
-Nolan Talbot,WA,WA N278 386 634,09/15/1994,12/03/2020,6,01/27/2026,A
-Marta Bishop,CA,CA L279 423 687,04/19/1977,07/05/2024,24,01/27/2026,A
-Ibrahim Ortega,KS,KS M280 460 740,09/28/1996,01/13/2018,2,01/28/2026,A
-Elena Farrell,IA,IA D281 497 793,02/21/1998,05/21/2021,5,01/28/2026,A
-Victor Madsen,AR,AR I282 534 846,03/05/1971,09/02/2025,28,01/23/2026,B
-Leah Price,PA,PA N283 571 899,07/06/1993,05/20/2021,7,01/21/2026,A
-Samir Parker,CA,CA T284 608 952,11/17/1978,02/09/2018,25,01/14/2026,A
-Daria Singh,NY,NY X285 645 305,03/23/1990,12/17/2021,14,01/28/2026,B
-Owen Carver,NY,NY K286 682 358,09/14/1974,11/14/2014,30,01/15/2026,B
-Anika Abbott,WY,WY P287 719 411,10/10/1980,11/03/2019,20,01/12/2026,A
-Milan Vargas,PA,PA J288 756 464,10/26/1993,05/25/2017,9,01/10/2026,A
-Rosa Novak,IL,IL S289 793 517,06/15/1988,07/10/2021,14,01/12/2026,A
-Caleb Kovacs,NE,NE T290 830 570,01/14/1992,06/08/2025,10,01/17/2026,B
-Nina Kline,LA,LA M291 867 623,03/15/1996,07/27/2014,6,01/27/2026,A
-Andre Malik,KS,KS C292 904 676,06/24/1969,05/21/2024,32,01/19/2026,A
-Priya Arias,IN,IN J293 941 729,05/25/1968,05/13/2016,35,01/18/2026,A
-Jonah Markovic,OR,OR H294 978 782,03/18/1968,12/23/2016,30,01/20/2026,A
-Maya Ilyin,IN,IN B295 215 835,06/15/1984,03/22/2015,19,01/28/2026,A
-Arman Romano,IL,IL X296 252 888,05/20/1978,06/08/2020,25,01/16/2026,A
-Tessa Patel,SC,SC G297 289 941,01/23/1991,07/10/2020,14,01/24/2026,A
-Reed Rossi,IL,IL V298 326 994,05/12/1998,03/13/2015,3,01/28/2026,A
-Clara Sorensen,TN,TN Q299 363 347,01/18/1992,07/25/2024,13,01/13/2026,B
-Elias Yu,AR,AR C300 400 400,04/21/1980,11/13/2023,18,01/23/2026,B
-Farah Tan,VA,VA E301 437 453,12/20/1977,02/12/2017,25,01/23/2026,B
-Sonia Moreno,NC,NC M302 474 506,01/20/1969,01/04/2016,29,01/28/2026,A
-Lucian Petrov,CA,CA K303 511 559,07/15/1995,07/07/2024,4,01/14/2026,A
-
-# Page 8
-
-6/11/26, 8:42 PM                                                     Driver Schedule Export
+6/11/26, 8:42 PM                                           Driver Schedule Export
 
 # Driver Schedule
 
 **Talon Yard Logistics Inc**
+Review Period: 01/01/2026 - 01/01/2027
+Rows: 500
+
+| Name | State licensed | Drivers license # | Date of birth | Date hired | Years Experienced | MVR run date | Class |
+| :--- | :---: | :--- | :---: | :---: | :---: | :---: | :---: |
+| Mateo Kaminski | IN | IN E270 890 910 | 07/17/1892 | 01/06/2014 | 16 | 01/27/2026 | B |
+| Renee Chen | MN | MN M271 927 963 | 09/01/1968 | 06/25/2020 | 32 | 01/27/2026 | B |
+| Silas Serrano | CO | CO W272 964 316 | 06/12/1981 | 04/03/2018 | 21 | 01/15/2026 | B |
+| Vera Diaz | MN | MN D273 201 369 | 07/18/1978 | 05/10/2014 | 27 | 01/26/2026 | B |
+| Adrian Bauer | AR | AR P274 238 422 | 10/22/1985 | 01/27/2016 | 15 | 01/23/2026 | A |
+| Lena Sawyer | IN | IN T275 275 475 | 12/05/1987 | 02/16/2020 | 16 | 01/27/2026 | A |
+| Kai Soto | PA | PA S276 312 528 | 01/04/1974 | 12/05/2021 | 30 | 01/17/2026 | B |
+| Mina Velasquez | WY | WY P277 349 581 | 07/06/1989 | 08/27/2025 | 16 | 01/22/2026 | A |
+| Nolan Talbot | WA | WA N278 386 634 | 09/15/1994 | 12/03/2020 | 6 | 01/27/2026 | A |
+| Marta Bishop | CA | CA L279 423 687 | 04/19/1977 | 07/05/2024 | 24 | 01/27/2026 | A |
+| Ibrahim Ortega | KS | KS M280 460 740 | 09/28/1996 | 01/13/2018 | 2 | 01/28/2026 | A |
+| Elena Farrell | IA | IA D281 497 793 | 02/21/1998 | 05/21/2021 | 5 | 01/28/2026 | A |
+| Victor Madsen | AR | AR I282 534 846 | 03/05/1971 | 09/02/2025 | 28 | 01/23/2026 | B |
+| Leah Price | PA | PA N283 571 899 | 07/06/1993 | 05/20/2021 | 7 | 01/21/2026 | A |
+| Samir Parker | CA | CA T284 608 952 | 11/17/1978 | 02/09/2018 | 25 | 01/14/2026 | A |
+| Daria Singh | NY | NY X285 645 305 | 03/23/1990 | 12/17/2021 | 14 | 01/28/2026 | B |
+| Owen Carver | NY | NY K286 682 358 | 09/14/1974 | 11/14/2014 | 30 | 01/15/2026 | B |
+| Anika Abbott | WY | WY P287 719 411 | 10/10/1980 | 11/03/2019 | 20 | 01/12/2026 | A |
+| Milan Vargas | PA | PA J288 756 464 | 10/26/1993 | 05/25/2017 | 9 | 01/10/2026 | A |
+| Rosa Novak | IL | IL S289 793 517 | 06/15/1988 | 07/10/2021 | 14 | 01/12/2026 | A |
+| Caleb Kovacs | NE | NE T290 830 570 | 01/14/1992 | 06/08/2025 | 10 | 01/17/2026 | B |
+| Nina Kline | LA | LA M291 867 623 | 03/15/1996 | 07/27/2014 | 6 | 01/27/2026 | A |
+| Andre Malik | KS | KS C292 904 676 | 06/24/1969 | 05/21/2024 | 32 | 01/19/2026 | A |
+| Priya Arias | IN | IN J293 941 729 | 05/25/1968 | 05/13/2016 | 35 | 01/18/2026 | A |
+| Jonah Markovic | OR | OR H294 978 782 | 03/18/1968 | 12/23/2016 | 30 | 01/20/2026 | A |
+| Maya Ilyin | IN | IN B295 215 835 | 06/15/1984 | 03/22/2015 | 19 | 01/28/2026 | A |
+| Arman Romano | IL | IL X296 252 888 | 05/20/1978 | 06/08/2020 | 25 | 01/16/2026 | A |
+| Tessa Patel | SC | SC G297 289 941 | 01/23/1991 | 07/10/2020 | 14 | 01/24/2026 | A |
+| Reed Rossi | IL | IL V298 326 994 | 05/12/1998 | 03/13/2015 | 3 | 01/28/2026 | A |
+| Clara Sorensen | TN | TN Q299 363 347 | 01/18/1992 | 07/25/2024 | 13 | 01/13/2026 | B |
+| Elias Yu | AR | AR C300 400 400 | 04/21/1980 | 11/13/2023 | 18 | 01/23/2026 | B |
+| Farah Tan | VA | VA E301 437 453 | 12/20/1977 | 02/12/2017 | 25 | 01/23/2026 | B |
+| Sonia Moreno | NC | NC M302 474 506 | 01/20/1969 | 01/04/2016 | 29 | 01/28/2026 | A |
+| Lucian Petrov | CA | CA K303 511 559 | 07/15/1995 | 07/07/2024 | 4 | 01/14/2026 | A |
+
+about:blank                                                                               6/15
+
+# Page 8
+
+6/11/26, 8:42 PM                                      Driver Schedule Export
+
+Driver Schedule
+Talon Yard Logistics Inc
 Review Period: 01/01/2026 - 01/01/2027
 Rows: 500
 
@@ -339,15 +393,15 @@ Rows: 500
 | Owen Soto | OK | OK P336 932 908 | 10/04/1995 | 11/09/2018 | 5 | 01/16/2026 | A |
 | Anika Velasquez | MO | MO P337 969 961 | 10/03/1984 | 04/15/2019 | 21 | 01/21/2026 | A |
 
-about:blank                                                                                   7/15
+about:blank                                                                                           7/15
 
 # Page 9
 
-6/11/26, 8:42 PM                                   Driver Schedule Export
+6/11/26, 8:42 PM                                    Driver Schedule Export
 
 # Driver Schedule
 
-**Talon Yard Logistics Inc**
+### Talon Yard Logistics Inc
 Review Period: 01/01/2026 - 01/01/2027
 Rows: 500
 
@@ -388,125 +442,60 @@ Rows: 500
 | Mateo Coleman | MD | MD X370 590 610 | 02/24/1987 | 04/06/2016 | 14 | 01/17/2026 | A |
 | Renee Okafor | SC | SC L371 627 663 | 06/19/1983 | 12/14/2020 | 15 | 01/24/2026 | B |
 
-about:blank                                                                                8/15
+about:blank                                                                                           8/15
 
 # Page 10
 
-Name,State licensed,Drivers license #,Date of birth,Date hired,Years Experienced,MVR run date,Class
-Silas Barrera,KY,KY C372 664 716,04/23/1978,02/03/2021,23,01/28/2026,A
-Vera Wynn,OR,OR O373 701 769,12/05/1972,02/04/2019,29,01/28/2026,A
-Adrian Hughes,FL,FL O374 738 822,10/20/1985,04/25/2023,19,01/24/2026,A
-Lena Gallagher,ND,ND W375 775 875,07/08/1980,09/09/2019,22,01/11/2026,A
-Kai Lambert,TN,TN I376 812 928,12/13/1973,02/20/2015,27,01/13/2026,A
-Mina Mendez,FL,FL H377 849 981,01/14/1983,11/11/2019,21,01/16/2026,B
-Nolan Rivera,ID,ID H378 886 334,06/06/1989,08/12/2018,16,01/27/2026,A
-Marta Reyes,MI,MI G379 923 387,09/27/1971,09/05/2016,28,01/27/2026,A
-Ibrahim Rahman,GA,GA R380 960 440,09/15/1979,07/15/2025,26,01/13/2026,A
-Elena Nguyen,MN,MN K381 997 493,11/01/1969,01/03/2025,34,01/14/2026,B
-Victor Nassar,NE,NE N382 234 546,05/27/1980,12/02/2017,20,01/12/2026,A
-Leah Walsh,NY,NY L383 271 599,01/18/1976,04/20/2023,23,01/13/2026,B
-Samir Mensah,WA,WA B384 308 652,10/26/1994,05/04/2023,5,01/12/2026,A
-Daria Torres,NC,NC U385 345 705,12/02/1974,09/05/2017,31,01/25/2026,B
-Owen Duarte,UT,UT C386 382 758,03/20/1987,03/10/2017,18,01/27/2026,A
-Anika Hayes,LA,LA U387 419 811,06/21/1987,11/21/2019,12,01/22/2026,B
-Milan Haddad,KS,KS T388 456 864,01/14/1978,09/17/2016,23,01/16/2026,B
-Rosa Santos,MO,MO I389 493 917,09/11/1982,12/16/2016,20,01/10/2026,A
-Caleb Kaminski,LA,LA O390 530 970,09/08/1991,07/18/2020,12,01/15/2026,A
-Nina Chen,CO,CO N391 567 323,02/06/1986,02/15/2018,14,01/12/2026,A
-Andre Serrano,MI,MI Y392 604 376,11/05/1989,10/24/2019,16,01/16/2026,A
-Priya Diaz,NE,NE R393 641 429,02/03/1993,10/27/2020,5,01/13/2026,A
-Jonah Bauer,MN,MN K394 678 482,05/09/1979,06/25/2021,23,01/15/2026,A
-Maya Sawyer,TX,TX P395 715 535,05/15/1994,12/27/2019,11,01/18/2026,A
-Arman Soto,OH,OH H396 752 588,02/04/1987,04/09/2019,16,01/15/2026,A
-Tessa Velasquez,TX,TX P397 789 641,01/15/1971,05/17/2019,29,01/12/2026,A
-Reed Talbot,MO,MO I398 826 694,04/09/1971,12/22/2018,29,01/10/2026,A
-Clara Bishop,NY,NY M399 863 747,02/10/1974,06/28/2024,28,01/22/2026,A
-Elias Ortega,TN,TN Z400 900 800,07/15/1995,05/21/2025,8,01/10/2026,A
-Farah Farrell,OH,OH L401 937 853,10/23/1995,12/26/2014,10,01/19/2026,B
-Sonia Madsen,KY,KY H402 974 906,09/03/1989,07/04/2019,16,01/10/2026,A
-Lucian Price,IA,IA G403 211 959,05/17/1977,12/01/2025,22,01/25/2026,A
-Greta Parker,OH,OH D404 248 312,12/23/1978,05/26/2017,20,01/14/2026,A
-Noemi Singh,VA,VA H405 285 365,08/27/1985,01/05/2025,17,01/10/2026,A
+6/11/26, 8:42 PM                                                 Driver Schedule Export
+
+# Driver Schedule
+
+### Talon Yard Logistics Inc
+Review Period: 01/01/2026 - 01/01/2027
+Rows: 500
+
+       Name         State licensed   Drivers license #   Date of birth   Date hired   Years Experienced   MVR run date   Class
+  Silas Barrera           KY          KY C372 664 716     04/23/1978     02/03/2021          23            01/28/2026      A
+  Vera Wynn               OR          OR O373 701 769     12/05/1972     02/04/2019          29            01/28/2026      A
+  Adrian Hughes           FL          FL O374 738 822     10/20/1985     04/25/2023          19            01/24/2026      A
+  Lena Gallagher          ND          ND W375 775 875     07/08/1980     09/09/2019          22            01/11/2026      A
+  Kai Lambert             TN          TN I376 812 928     12/13/1973     02/20/2015          27            01/13/2026      A
+  Mina Mendez             FL          FL H377 849 981     01/14/1983     11/11/2019          21            01/16/2026      B
+  Nolan Rivera            ID          ID H378 886 334     06/06/1989     08/12/2018          16            01/27/2026      A
+  Marta Reyes             MI          MI G379 923 387     09/27/1971     09/05/2016          28            01/27/2026      A
+  Ibrahim Rahman          GA          GA R380 960 440     09/15/1979     07/15/2025          26            01/13/2026      A
+  Elena Nguyen            MN          MN K381 997 493     11/01/1969     01/03/2025          34            01/14/2026      B
+  Victor Nassar           NE          NE N382 234 546     05/27/1980     12/02/2017          20            01/12/2026      A
+  Leah Walsh              NY          NY L383 271 599     01/18/1976     04/20/2023          23            01/13/2026      B
+  Samir Mensah            WA          WA B384 308 652     10/26/1994     05/04/2023           5            01/12/2026      A
+  Daria Torres            NC          NC U385 345 705     12/02/1974     09/05/2017          31            01/25/2026      B
+  Owen Duarte             UT          UT C386 382 758     03/20/1987     03/10/2017          18            01/27/2026      A
+  Anika Hayes             LA          LA U387 419 811     06/21/1987     11/21/2019          12            01/22/2026      B
+  Milan Haddad            KS          KS T388 456 864     01/14/1978     09/17/2016          23            01/16/2026      B
+  Rosa Santos             MO          MO I389 493 917     09/11/1982     12/16/2016          20            01/10/2026      A
+  Caleb Kaminski          LA          LA O390 530 970     09/08/1991     07/18/2020          12            01/15/2026      A
+  Nina Chen               CO          CO N391 567 323     02/06/1986     02/15/2018          14            01/12/2026      A
+  Andre Serrano           MI          MI Y392 604 376     11/05/1989     10/24/2019          16            01/16/2026      A
+  Priya Diaz              NE          NE R393 641 429     02/03/1993     10/27/2020           5            01/13/2026      A
+  Jonah Bauer             MN          MN K394 678 482     05/09/1979     06/25/2021          23            01/15/2026      A
+  Maya Sawyer             TX          TX P395 715 535     05/15/1994     12/27/2019          11            01/18/2026      A
+  Arman Soto              OH          OH H396 752 588     02/04/1987     04/09/2019          16            01/15/2026      A
+  Tessa Velasquez         TX          TX P397 789 641     01/15/1971     05/17/2019          29            01/12/2026      A
+  Reed Talbot             MO          MO I398 826 694     04/09/1971     12/22/2018          29            01/10/2026      A
+  Clara Bishop            NY          NY M399 863 747     02/10/1974     06/28/2024          28            01/22/2026      A
+  Elias Ortega            TN          TN Z400 900 800     07/15/1995     05/21/2025           8            01/10/2026      A
+  Farah Farrell           OH          OH L401 937 853     10/23/1995     12/26/2014          10            01/19/2026      B
+  Sonia Madsen            KY          KY H402 974 906     09/03/1989     07/04/2019          16            01/10/2026      A
+  Lucian Price            IA          IA G403 211 959     05/17/1977     12/01/2025          22            01/25/2026      A
+  Greta Parker            OH          OH D404 248 312     12/23/1978     05/26/2017          20            01/14/2026      A
+  Noemi Singh             VA          VA H405 285 365     08/27/1985     01/05/2025          17            01/10/2026      A
+
+
+about:blank                                                                                           9/15
 
 # Page 11
 
-Name,State licensed,Drivers license #,Date of birth,Date hired,Years Experienced,MVR run date,Class
-Cecilia Carver,OR,OR I406 322 418,05/23/1969,05/03/2022,36,01/21/2026,A
-Marcus Abbott,MO,MO A407 359 471,05/18/1996,10/05/2014,2,01/10/2026,A
-Avery Vargas,CA,CA A408 396 524,05/09/1979,08/15/2022,23,01/22/2026,A
-Daphne Novak,IA,IA A409 433 577,01/25/1982,03/05/2021,21,01/11/2026,A
-Theo Kovacs,UT,UT A410 470 630,12/08/1986,09/19/2018,12,01/25/2026,A
-Lina Kline,WY,WY K411 507 683,03/14/1993,09/20/2025,8,01/17/2026,B
-Rafael Malik,NC,NC V412 544 736,12/26/1975,10/28/2020,26,01/17/2026,A
-Mira Arias,UT,UT R413 581 789,03/25/1981,08/19/2016,18,01/10/2026,A
-Omar Markovic,MS,MS E414 618 842,06/22/1978,02/01/2022,21,01/23/2026,A
-Selena Ilyin,NC,NC B415 655 895,06/22/1985,03/14/2020,14,01/18/2026,B
-Julian Romano,MD,MD I416 692 948,05/19/1977,08/21/2023,25,01/12/2026,B
-Iris Patel,AL,AL C417 729 301,07/11/1969,04/10/2020,36,01/16/2026,A
-Devon Rossi,NC,NC Q418 766 354,05/07/1972,01/25/2019,31,01/14/2026,A
-Alma Sorensen,VA,VA K419 803 407,05/05/1983,06/06/2019,16,01/24/2026,A
-Mateo Yu,OK,OK N420 840 460,01/14/1969,06/09/2014,36,01/19/2026,A
-Renee Tan,NV,NV H421 877 513,12/23/1994,10/04/2022,10,01/22/2026,A
-Silas Moreno,IA,IA L422 914 566,03/24/1995,11/20/2025,7,01/27/2026,A
-Vera Petrov,KS,KS Q423 951 619,01/20/1985,06/20/2016,18,01/27/2026,A
-Adrian Foster,AL,AL R424 988 672,06/28/1989,04/14/2023,11,01/14/2026,A
-Lena Quinn,PA,PA Y425 225 725,04/11/1993,06/02/2023,8,01/25/2026,A
-Kai Kim,NM,NM H426 262 778,08/22/1972,11/04/2025,27,01/19/2026,A
-Mina Bennett,UT,UT I427 299 831,07/07/1981,08/15/2019,20,01/21/2026,A
-Nolan Navarro,FL,FL Q428 336 884,05/24/1997,05/09/2016,6,01/28/2026,A
-Marta Holt,WY,WY H429 373 937,10/15/1987,08/05/2024,16,01/13/2026,A
-Ibrahim Coleman,FL,FL J430 410 990,12/04/1992,06/14/2025,7,01/22/2026,A
-Elena Okafor,ND,ND V431 447 343,05/01/1975,06/11/2023,27,01/16/2026,B
-Victor Barrera,OR,OR Z432 484 396,06/20/1994,01/27/2016,7,01/13/2026,A
-Leah Wynn,IA,IA S433 521 449,03/25/1977,11/09/2021,23,01/19/2026,A
-Samir Hughes,AL,AL T434 558 502,11/26/1980,11/04/2025,18,01/25/2026,B
-Daria Gallagher,MT,MT F435 595 555,05/22/1968,09/12/2014,37,01/18/2026,B
-Owen Lambert,OR,OR K436 632 608,10/04/1980,01/11/2022,25,01/28/2026,B
-Anika Mendez,AR,AR E437 669 661,06/06/1975,06/02/2018,23,01/13/2026,B
-Milan Rivera,NM,NM K438 706 714,10/20/1990,08/14/2023,8,01/25/2026,A
-Rosa Reyes,AR,AR G439 743 767,04/03/1979,02/18/2023,23,01/19/2026,A
-
-# Page 12
-
-Name,State licensed,Drivers license #,Date of birth,Date hired,Years Experienced,MVR run date,Class
-Caleb Rahman,ND,ND Q440 780 820,08/18/1985,04/18/2015,19,01/13/2026,B
-Nina Nguyen,WV,WV K441 817 873,10/11/1969,12/13/2019,31,01/21/2026,A
-Andre Nassar,IN,IN K442 854 926,06/20/1974,05/26/2021,25,01/19/2026,B
-Priya Walsh,KY,KY U443 891 979,02/06/1989,06/17/2019,10,01/23/2026,A
-Jonah Mensah,UT,UT G444 928 332,05/12/1998,12/25/2023,5,01/19/2026,A
-Maya Torres,KY,KY B445 965 385,04/13/1981,11/16/2022,18,01/23/2026,A
-Arman Duarte,UT,UT Z446 202 438,08/27/1994,08/22/2015,10,01/20/2026,B
-Tessa Hayes,KS,KS R447 239 491,10/19/1995,04/05/2021,9,01/23/2026,A
-Reed Haddad,AZ,AZ I448 276 544,12/13/1990,04/23/2025,11,01/17/2026,A
-Clara Santos,KY,KY V449 313 597,08/15/1983,07/17/2017,19,01/19/2026,A
-Elias Kaminski,MO,MO F450 350 650,08/21/1992,04/14/2023,8,01/17/2026,A
-Farah Chen,GA,GA T451 387 703,02/23/1998,09/09/2014,6,01/22/2026,A
-Sonia Serrano,IL,IL A452 424 756,11/15/1986,05/06/2020,15,01/25/2026,A
-Lucian Diaz,MD,MD C453 461 809,11/23/1974,04/16/2023,28,01/13/2026,A
-Greta Bauer,AL,AL P454 498 862,12/24/1979,01/13/2015,22,01/20/2026,A
-Noemi Sawyer,KS,KS B455 535 915,09/19/1994,06/17/2017,10,01/15/2026,A
-Cecilia Soto,IN,IN V456 572 968,11/17/1986,09/26/2025,14,01/14/2026,A
-Marcus Velasquez,WV,WV S457 609 321,08/06/1976,12/11/2022,26,01/24/2026,A
-Avery Talbot,OR,OR N458 646 374,07/04/1991,09/13/2016,10,01/25/2026,A
-Daphne Bishop,AR,AR I459 683 427,09/12/1976,07/10/2019,23,01/19/2026,A
-Theo Ortega,SC,SC J460 720 480,06/02/1974,05/16/2024,30,01/19/2026,B
-Lina Farrell,TX,TX B461 757 533,09/14/1981,08/11/2020,19,01/27/2026,A
-Rafael Madsen,WY,WY W462 794 586,03/01/1992,03/17/2022,10,01/26/2026,A
-Mira Price,IL,IL F463 831 639,08/17/1994,12/06/2016,8,01/21/2026,A
-Omar Parker,ND,ND B464 868 692,01/20/1969,02/09/2023,34,01/26/2026,A
-Selena Singh,CA,CA W465 905 745,12/11/1995,01/13/2022,7,01/11/2026,A
-Julian Carver,TX,TX F466 942 798,01/03/1991,01/11/2023,9,01/20/2026,A
-Iris Abbott,ND,ND D467 979 851,09/05/1997,04/16/2021,1,01/17/2026,B
-Devon Vargas,NM,NM B468 216 904,07/15/1983,08/20/2024,17,01/14/2026,A
-Alma Novak,CO,CO Y469 253 957,03/15/1989,01/16/2025,11,01/15/2026,A
-Mateo Kovacs,NY,NY Y470 290 310,08/15/1972,04/19/2015,33,01/10/2026,A
-Renee Kline,ID,ID G471 327 363,02/16/1985,09/09/2025,15,01/25/2026,A
-Silas Malik,UT,UT S472 364 416,09/23/1975,10/07/2025,27,01/13/2026,A
-Vera Arias,PA,PA Q473 401 469,05/16/1968,05/10/2021,35,01/21/2026,A
-
-# Page 13
-
-6/11/26, 8:42 PM                                                 Driver Schedule Export
+6/11/26, 8:42 PM                                   Driver Schedule Export
 
 # Driver Schedule
 
@@ -514,8 +503,111 @@ Vera Arias,PA,PA Q473 401 469,05/16/1968,05/10/2021,35,01/21/2026,A
 Review Period: 01/01/2026 - 01/01/2027
 Rows: 500
 
+       Name         State licensed    Drivers license #    Date of birth   Date hired   Years Experienced   MVR run date   Class
+ Cecilia Carver     OR                OR I406 322 418       05/23/1969     05/03/2022          36            01/21/2026      A
+ Marcus Abbott      MO                MO A407 359 471       05/18/1996     10/05/2014           2            01/10/2026      A
+ Avery Vargas       CA                CA A408 396 524       05/09/1979     08/15/2022          23            01/22/2026      A
+ Daphne Novak       IA                IA A409 433 577       01/25/1982     03/05/2021          21            01/11/2026      A
+ Theo Kovacs        UT                UT A410 470 630       12/08/1986     09/19/2018          12            01/25/2026      A
+ Lina Kline         WY                WY K411 507 683       03/14/1993     09/20/2025           8            01/17/2026      B
+ Rafael Malik       NC                NC V412 544 736       12/26/1975     10/28/2020          26            01/17/2026      A
+ Mira Arias         UT                UT R413 581 789       03/25/1981     08/19/2016          18            01/10/2026      A
+ Omar Markovic      MS                MS E414 618 842       06/22/1978     02/01/2022          21            01/23/2026      A
+ Selena Ilyin       NC                NC B415 655 895       06/22/1985     03/14/2020          14            01/18/2026      B
+ Julian Romano      MD                MD I416 692 948       05/19/1977     08/21/2023          25            01/12/2026      B
+ Iris Patel         AL                AL C417 729 301       07/11/1969     04/10/2020          36            01/16/2026      A
+ Devon Rossi        NC                NC Q418 766 354       05/07/1972     01/25/2019          31            01/14/2026      A
+ Alma Sorensen      VA                VA K419 803 407       05/05/1983     06/06/2019          16            01/24/2026      A
+ Mateo Yu           OK                OK N420 840 460       01/14/1969     06/09/2014          36            01/19/2026      A
+ Renee Tan          NV                NV H421 877 513       12/23/1994     10/04/2022          10            01/22/2026      A
+ Silas Moreno       IA                IA L422 914 566       03/24/1995     11/20/2025           7            01/27/2026      A
+ Vera Petrov        KS                KS Q423 951 619       01/20/1985     06/20/2016          18            01/27/2026      A
+ Adrian Foster      AL                AL R424 988 672       06/28/1989     04/14/2023          11            01/14/2026      A
+ Lena Quinn         PA                PA Y425 225 725       04/11/1993     06/02/2023           8            01/25/2026      A
+ Kai Kim            NM                NM H426 262 778       08/22/1972     11/04/2025          27            01/19/2026      A
+ Mina Bennett       UT                UT I427 299 831       07/07/1981     08/15/2019          20            01/21/2026      A
+ Nolan Navarro      FL                FL Q428 336 884       05/24/1997     05/09/2016           6            01/28/2026      A
+ Marta Holt         WY                WY H429 373 937       10/15/1987     08/05/2024          16            01/13/2026      A
+ Ibrahim Coleman    FL                FL J430 410 990       12/04/1992     06/14/2025           7            01/22/2026      A
+ Elena Okafor       ND                ND V431 447 343       05/01/1975     06/11/2023          27            01/16/2026      B
+ Victor Barrera     OR                OR Z432 484 396       06/20/1994     01/27/2016           7            01/13/2026      A
+ Leah Wynn          IA                IA S433 521 449       03/25/1977     11/09/2021          23            01/19/2026      A
+ Samir Hughes       AL                AL T434 558 502       11/26/1980     11/04/2025          18            01/25/2026      B
+ Daria Gallagher    MT                MT F435 595 555       05/22/1968     09/12/2014          37            01/18/2026      B
+ Owen Lambert       OR                OR K436 632 608       10/04/1980     01/11/2022          25            01/28/2026      B
+ Anika Mendez       AR                AR E437 669 661       06/06/1975     06/02/2018          23            01/13/2026      B
+ Milan Rivera       NM                NM K438 706 714       10/20/1990     08/14/2023           8            01/25/2026      A
+ Rosa Reyes         AR                AR G439 743 767       04/03/1979     02/18/2023          23            01/19/2026      A
+
+
+about:blank                                                                                           10/15
+
+# Page 12
+
+6/11/26, 8:42 PM                                                 Driver Schedule Export
+
+
+
+Driver Schedule
+
+Talon Yard Logistics Inc
+Review Period: 01/01/2026 - 01/01/2027
+Rows: 500
+
+       Name         State licensed   Drivers license #   Date of birth   Date hired   Years Experienced   MVR run date   Class
+ Caleb Rahman            ND           ND Q440 780 820     08/18/1985     04/18/2015          19            01/13/2026      B
+ Nina Nguyen             WV           WV K441 817 873     10/11/1969     12/13/2019          31            01/21/2026      A
+ Andre Nassar            IN           IN K442 854 926     06/20/1974     05/26/2021          25            01/19/2026      B
+ Priya Walsh             KY           KY U443 891 979     02/06/1989     06/17/2019          10            01/23/2026      A
+ Jonah Mensah            UT           UT G444 928 332     05/12/1998     12/25/2023           5            01/19/2026      A
+ Maya Torres             KY           KY B445 965 385     04/13/1981     11/16/2022          18            01/23/2026      A
+ Arman Duarte            UT           UT Z446 202 438     08/27/1994     08/22/2015          10            01/20/2026      B
+ Tessa Hayes             KS           KS R447 239 491     10/19/1995     04/05/2021           9            01/23/2026      A
+ Reed Haddad             AZ           AZ I448 276 544     12/13/1990     04/23/2025          11            01/17/2026      A
+ Clara Santos            KY           KY V449 313 597     08/15/1983     07/17/2017          19            01/19/2026      A
+ Elias Kaminski          MO           MO F450 350 650     08/21/1992     04/14/2023           8            01/17/2026      A
+ Farah Chen              GA           GA T451 387 703     02/23/1998     09/09/2014           6            01/22/2026      A
+ Sonia Serrano           IL           IL A452 424 756     11/15/1986     05/06/2020          15            01/25/2026      A
+ Lucian Diaz             MD           MD C453 461 809     11/23/1974     04/16/2023          28            01/13/2026      A
+ Greta Bauer             AL           AL P454 498 862     12/24/1979     01/13/2015          22            01/20/2026      A
+ Noemi Sawyer            KS           KS B455 535 915     09/19/1994     06/17/2017          10            01/15/2026      A
+ Cecilia Soto            IN           IN V456 572 968     11/17/1986     09/26/2025          14            01/14/2026      A
+ Marcus Velasquez        WV           WV S457 609 321     08/06/1976     12/11/2022          26            01/24/2026      A
+ Avery Talbot            OR           OR N458 646 374     07/04/1991     09/13/2016          10            01/25/2026      A
+ Daphne Bishop           AR           AR I459 683 427     09/12/1976     07/10/2019          23            01/19/2026      A
+ Theo Ortega             SC           SC J460 720 480     06/02/1974     05/16/2024          30            01/19/2026      B
+ Lina Farrell            TX           TX B461 757 533     09/14/1981     08/11/2020          19            01/27/2026      A
+ Rafael Madsen           WY           WY W462 794 586     03/01/1992     03/17/2022          10            01/26/2026      A
+ Mira Price              IL           IL F463 831 639     08/17/1994     12/06/2016           8            01/21/2026      A
+ Omar Parker             ND           ND B464 868 692     01/20/1969     02/09/2023          34            01/26/2026      A
+ Selena Singh            CA           CA W465 905 745     12/11/1995     01/13/2022           7            01/11/2026      A
+ Julian Carver           TX           TX F466 942 798     01/03/1991     01/11/2023           9            01/20/2026      A
+ Iris Abbott             ND           ND D467 979 851     09/05/1997     04/16/2021           1            01/17/2026      B
+ Devon Vargas            NM           NM B468 216 904     07/15/1983     08/20/2024          17            01/14/2026      A
+ Alma Novak              CO           CO Y469 253 957     03/15/1989     01/16/2025          11            01/15/2026      A
+ Mateo Kovacs            NY           NY Y470 290 310     08/15/1972     04/19/2015          33            01/10/2026      A
+ Renee Kline             ID           ID G471 327 363     02/16/1985     09/09/2025          15            01/25/2026      A
+ Silas Malik             UT           UT S472 364 416     09/23/1975     10/07/2025          27            01/13/2026      A
+ Vera Arias              PA           PA Q473 401 469     05/16/1968     05/10/2021          35            01/21/2026      A
+
+
+
+
+
+about:blank                                                                                                            11/15
+
+# Page 13
+
+6/11/26, 8:42 PM                                   Driver Schedule Export
+
+# Driver Schedule
+
+Talon Yard Logistics Inc
+Review Period: 01/01/2026 - 01/01/2027
+Rows: 500
+
 | Name | State licensed | Drivers license # | Date of birth | Date hired | Years Experienced | MVR run date | Class |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| :--- | :--- | :--- | :--- | :--- | :---: | :--- | :---: |
 | Adrian Markovic | IA | IA U474 438 522 | 07/20/1968 | 10/14/2016 | 37 | 01/11/2026 | A |
 | Lena Ilyin | VA | VA D475 475 575 | 06/23/1979 | 12/08/2015 | 26 | 01/26/2026 | A |
 | Kai Romano | ND | ND T476 512 628 | 04/23/1998 | 08/21/2018 | 5 | 01/11/2026 | A |
@@ -551,121 +643,144 @@ Rows: 500
 | Cecilia Duarte | VA | VA T506 822 818 | 03/19/1988 | 02/14/2022 | 12 | 01/13/2026 | B |
 | Marcus Hayes | NM | NM Y507 859 871 | 01/24/1970 | 08/06/2015 | 29 | 01/23/2026 | B |
 
-about:blank                                                                       12/15
+about:blank                                                                                 12/15
 
 # Page 14
 
-Name,State licensed,Drivers license #,Date of birth,Date hired,Years Experienced,MVR run date,Class
-Avery Haddad,FL,FL X508 896 924,08/13/1968,05/17/2020,37,01/13/2026,A
-Daphne Santos,CO,CO P509 933 977,02/05/1984,05/18/2022,21,01/22/2026,A
-Theo Kaminski,CA,CA J510 970 330,08/15/1993,09/27/2018,6,01/14/2026,A
-Lina Chen,WY,WY J511 207 383,01/20/1975,02/16/2017,23,01/21/2026,A
-Rafael Serrano,NY,NY S512 244 436,09/22/1968,12/03/2022,33,01/15/2026,A
-Mira Diaz,ID,ID C513 281 489,04/06/1979,05/05/2025,24,01/13/2026,A
-Omar Bauer,AL,AL V514 318 542,08/23/1974,08/26/2020,29,01/22/2026,B
-Selena Sawyer,LA,LA S515 355 595,02/19/1980,05/17/2016,24,01/16/2026,B
-Julian Soto,UT,UT A516 392 648,02/21/1973,11/20/2022,29,01/21/2026,B
-Iris Velasquez,GA,GA S517 429 701,05/12/1983,06/21/2024,19,01/10/2026,A
-Devon Talbot,KY,KY P518 466 754,08/17/1970,07/04/2022,31,01/12/2026,A
-Alma Bishop,PA,PA I519 503 807,07/12/1980,03/21/2019,24,01/22/2026,B
-Mateo Ortega,OH,OH E520 540 860,10/25/1972,08/21/2020,31,01/23/2026,A
-Renee Farrell,SC,SC A521 577 913,11/12/1992,01/19/2019,13,01/21/2026,A
-Silas Madsen,AR,AR Z522 614 966,02/22/1991,10/12/2022,7,01/17/2026,B
-Vera Price,MN,MN A523 651 319,09/08/1974,11/15/2016,28,01/10/2026,B
-Adrian Parker,OH,OH M524 688 372,07/03/1987,02/06/2020,11,01/13/2026,A
-Lena Singh,FL,FL E525 725 425,04/03/1989,07/04/2025,15,01/10/2026,A
-Kai Carver,NV,NV K526 762 478,05/07/1995,01/10/2024,6,01/19/2026,B
-Mina Abbott,WY,WY R527 799 531,07/10/1992,05/26/2025,11,01/13/2026,B
-Nolan Vargas,UT,UT K528 836 584,02/27/1984,06/15/2020,15,01/19/2026,B
-Marta Novak,SC,SC O529 873 637,04/01/1990,05/08/2017,15,01/11/2026,A
-Ibrahim Kovacs,NV,NV T530 910 690,06/01/1972,09/16/2014,30,01/21/2026,A
-Elena Kline,MS,MS Q531 947 743,04/28/1979,04/08/2016,21,01/21/2026,A
-Victor Malik,NY,NY G532 984 796,12/25/1981,01/16/2019,17,01/24/2026,A
-Leah Arias,CA,CA Y533 221 849,05/05/1973,05/01/2017,28,01/19/2026,A
-Samir Markovic,NY,NY A534 258 902,08/01/1984,11/20/2024,17,01/22/2026,B
-Daria Ilyin,PA,PA W535 295 955,09/17/1983,11/27/2015,15,01/16/2026,B
-Owen Romano,AL,AL S536 332 308,08/28/1988,02/22/2021,12,01/10/2026,B
-Anika Patel,MI,MI Y537 369 361,10/28/1977,12/11/2025,27,01/22/2026,A
-Milan Rossi,MS,MS N538 406 414,09/04/1968,08/17/2014,34,01/25/2026,A
-Rosa Sorensen,OH,OH G539 443 467,05/11/1990,04/16/2018,13,01/28/2026,A
-Caleb Yu,WV,WV T540 480 520,10/08/1968,10/04/2023,32,01/27/2026,A
-Nina Tan,NC,NC R541 517 573,07/07/1977,08/23/2017,27,01/20/2026,B
+6/11/26, 8:42 PM                                   Driver Schedule Export
+
+# Driver Schedule
+
+**Talon Yard Logistics Inc**
+Review Period: 01/01/2026 - 01/01/2027
+Rows: 500
+
+       Name        State licensed    Drivers license #    Date of birth    Date hired    Years Experienced    MVR run date    Class
+
+ Avery Haddad      FL                FL X508 896 924      08/13/1968       05/17/2020            37            01/13/2026         A  
+ Daphne Santos     CO                CO P509 933 977      02/05/1984       05/18/2022            21            01/22/2026         A  
+ Theo Kaminski     CA                CA J510 970 330      08/15/1993       09/27/2018             6            01/14/2026         A  
+ Lina Chen         WY                WY J511 207 383      01/20/1975       02/16/2017            23            01/21/2026         A  
+ Rafael Serrano    NY                NY S512 244 436      09/22/1968       12/03/2022            33            01/15/2026         A  
+ Mira Diaz         ID                ID C513 281 489      04/06/1979       05/05/2025            24            01/13/2026         A  
+ Omar Bauer        AL                AL V514 318 542      08/23/1974       08/26/2020            29            01/22/2026         B  
+ Selena Sawyer     LA                LA S515 355 595      02/19/1980       05/17/2016            24            01/16/2026         B  
+ Julian Soto       UT                UT A516 392 648      02/21/1973       11/20/2022            29            01/21/2026         B  
+ Iris Velasquez    GA                GA S517 429 701      05/12/1983       06/21/2024            19            01/10/2026         A  
+ Devon Talbot      KY                KY P518 466 754      08/17/1970       07/04/2022            31            01/12/2026         A  
+ Alma Bishop       PA                PA I519 503 807      07/12/1980       03/21/2019            24            01/22/2026         B  
+ Mateo Ortega      OH                OH E520 540 860      10/25/1972       08/21/2020            31            01/23/2026         A  
+ Renee Farrell     SC                SC A521 577 913      11/12/1992       01/19/2019            13            01/21/2026         A  
+ Silas Madsen      AR                AR Z522 614 966      02/22/1991       10/12/2022             7            01/17/2026         B  
+ Vera Price        MN                MN A523 651 319      09/08/1974       11/15/2016            28            01/10/2026         B  
+ Adrian Parker     OH                OH M524 688 372      07/03/1987       02/06/2020            11            01/13/2026         A  
+ Lena Singh        FL                FL E525 725 425      04/03/1989       07/04/2025            15            01/10/2026         A  
+ Kai Carver        NV                NV K526 762 478      05/07/1995       01/10/2024             6            01/19/2026         B  
+ Mina Abbott       WY                WY R527 799 531      07/10/1992       05/26/2025            11            01/13/2026         B  
+ Nolan Vargas      UT                UT K528 836 584      02/27/1984       06/15/2020            15            01/19/2026         B  
+ Marta Novak       SC                SC O529 873 637      04/01/1990       05/08/2017            15            01/11/2026         A  
+ Ibrahim Kovacs    NV                NV T530 910 690      06/01/1972       09/16/2014            30            01/21/2026         A  
+ Elena Kline       MS                MS Q531 947 743      04/28/1979       04/08/2016            21            01/21/2026         A  
+ Victor Malik      NY                NY G532 984 796      12/25/1981       01/16/2019            17            01/24/2026         A  
+ Leah Arias        CA                CA Y533 221 849      05/05/1973       05/01/2017            28            01/19/2026         A  
+ Samir Markovic    NY                NY A534 258 902      08/01/1984       11/20/2024            17            01/22/2026         B  
+ Daria Ilyin       PA                PA W535 295 955      09/17/1983       11/27/2015            15            01/16/2026         B  
+ Owen Romano       AL                AL S536 332 308      08/28/1988       02/22/2021            12            01/10/2026         B  
+ Anika Patel       MI                MI Y537 369 361      10/28/1977       12/11/2025            27            01/22/2026         A  
+ Milan Rossi       MS                MS N538 406 414      09/04/1968       08/17/2014            34            01/25/2026         A  
+ Rosa Sorensen     OH                OH G539 443 467      05/11/1990       04/16/2018            13            01/28/2026         A  
+ Caleb Yu          WV                WV T540 480 520      10/08/1968       10/04/2023            32            01/27/2026         A  
+ Nina Tan          NC                NC R541 517 573      07/07/1977       08/23/2017            27            01/20/2026         B  
+
+about:blank                                                                                           13/15
 
 # Page 15
 
-6/11/26, 8:42 PM                              Driver Schedule Export
+6/11/26, 8:42 PM                                           Driver Schedule Export
 
-Driver Schedule
+# Driver Schedule
 
 Talon Yard Logistics Inc
 Review Period: 01/01/2026 - 01/01/2027
 Rows: 500
 
-Name,State licensed,Drivers license #,Date of birth,Date hired,Years Experienced,MVR run date,Class
-Andre Moreno,LA,LA L542 554 626,09/17/1984,09/19/2017,15,01/28/2026,A
-Priya Petrov,OR,OR E543 591 679,03/13/1976,02/13/2014,22,01/25/2026,A
-Jonah Foster,OH,OH D544 628 732,01/14/1995,02/18/2019,4,01/13/2026,A
-Maya Quinn,IN,IN P545 665 785,02/01/1978,10/16/2018,24,01/19/2026,A
-Arman Kim,UT,UT P546 702 838,02/20/1968,06/20/2015,37,01/25/2026,A
-Tessa Bennett,KY,KY H547 739 891,01/22/1992,01/11/2015,10,01/11/2026,A
-Reed Navarro,UT,UT E548 776 944,01/16/1971,06/26/2016,27,01/10/2026,A
-Clara Holt,LA,LA O549 813 997,07/17/1997,10/06/2024,8,01/20/2026,A
-Elias Coleman,CO,CO F550 850 350,04/04/1988,11/26/2019,11,01/22/2026,A
-Farah Okafor,WY,WY P551 887 403,07/04/1993,01/10/2024,8,01/26/2026,A
-Sonia Barrera,MT,MT E552 924 456,02/05/1982,01/01/2014,22,01/27/2026,B
-Lucian Wynn,MN,MN J553 961 509,12/15/1997,09/12/2017,8,01/27/2026,A
-Greta Hughes,NM,NM E554 998 562,10/18/1975,04/03/2019,26,01/24/2026,A
-Noemi Gallagher,WA,WA S555 235 615,05/22/1982,05/19/2023,18,01/28/2026,A
-Cecilia Lambert,WY,WY E556 272 668,08/25/1989,11/27/2022,12,01/11/2026,B
-Marcus Mendez,MD,MD I557 309 721,08/12/1980,01/12/2024,25,01/26/2026,B
-Avery Rivera,AZ,AZ Q558 346 774,08/10/1988,06/04/2017,10,01/15/2026,A
-Daphne Reyes,AZ,AZ F559 383 827,06/16/1980,10/15/2018,18,01/14/2026,B
-Theo Rahman,NY,NY K560 420 880,09/01/1997,05/05/2023,2,01/13/2026,A
-Lina Nguyen,IL,IL A561 457 933,02/07/1986,09/13/2023,19,01/17/2026,A
-Rafael Nassar,NV,NV D562 494 986,09/28/1976,05/22/2024,22,01/26/2026,A
-Mira Walsh,KS,KS T563 531 339,06/18/1986,03/03/2014,18,01/21/2026,A
-Omar Mensah,IN,IN G564 568 392,07/23/1989,11/26/2015,13,01/13/2026,A
-Selena Torres,NY,NY T565 605 445,04/02/1987,12/04/2021,18,01/17/2026,A
-Julian Duarte,MN,MN B566 642 498,04/10/1973,06/16/2025,27,01/14/2026,A
-Iris Hayes,AR,AR C567 679 551,07/02/1986,06/09/2021,12,01/24/2026,A
-Devon Haddad,NM,NM N568 716 604,07/19/1968,07/04/2021,31,01/26/2026,A
-Alma Santos,IA,IA J569 753 657,02/09/1990,10/09/2025,15,01/15/2026,A
-Mateo Kaminski,WA,WA O570 790 710,09/17/1978,12/16/2023,21,01/17/2026,A
-Renee Chen,ND,ND F571 827 763,04/09/1994,09/11/2021,8,01/12/2026,A
-Silas Serrano,AZ,AZ B572 864 816,08/08/1987,08/07/2022,18,01/11/2026,A
-Vera Diaz,AR,AR L573 901 869,09/11/1970,12/23/2019,31,01/28/2026,B
-Adrian Bauer,LA,LA T574 938 922,05/15/1976,06/05/2016,27,01/21/2026,A
-Lena Sawyer,NE,NE V575 975 975,11/26/1971,11/26/2016,31,01/20/2026,A
+       Name        State licensed   Drivers license #   Date of birth   Date hired   Years Experienced   MVR run date   Class
+  Andre Moreno           LA          LA L542 554 626     09/17/1984     09/19/2017          15            01/28/2026      A
+  Priya Petrov           OR          OR E543 591 679     03/13/1976     02/13/2014          22            01/25/2026      A
+  Jonah Foster           OH          OH D544 628 732     01/14/1995     02/18/2019           4            01/13/2026      A
+  Maya Quinn             IN          IN P545 665 785     02/01/1978     10/16/2018          24            01/19/2026      A
+  Arman Kim              UT          UT P546 702 838     02/20/1968     06/20/2015          37            01/25/2026      A
+  Tessa Bennett          KY          KY H547 739 891     01/22/1992     01/11/2015          10            01/11/2026      A
+  Reed Navarro           UT          UT E548 776 944     01/16/1971     06/26/2016          27            01/10/2026      A
+  Clara Holt             LA          LA O549 813 997     07/17/1997     10/06/2024           8            01/20/2026      A
+  Elias Coleman          CO          CO F550 850 350     04/04/1988     11/26/2019          11            01/22/2026      A
+  Farah Okafor           WY          WY P551 887 403     07/04/1993     01/10/2024           8            01/26/2026      A
+  Sonia Barrera          MT          MT E552 924 456     02/05/1982     01/01/2014          22            01/27/2026      B
+  Lucian Wynn            MN          MN J553 961 509     12/15/1997     09/12/2017           8            01/27/2026      A
+  Greta Hughes           NM          NM E554 998 562     10/18/1975     04/03/2019          26            01/24/2026      A
+  Noemi Gallagher        WA          WA S555 235 615     05/22/1982     05/19/2023          18            01/28/2026      A
+  Cecilia Lambert        WY          WY E556 272 668     08/25/1989     11/27/2022          12            01/11/2026      B
+  Marcus Mendez          MD          MD I557 309 721     08/12/1980     01/12/2024          25            01/26/2026      B
+  Avery Rivera           AZ          AZ Q558 346 774     08/10/1988     06/04/2017          10            01/15/2026      A
+  Daphne Reyes           AZ          AZ F559 383 827     06/16/1980     10/15/2018          18            01/14/2026      B
+  Theo Rahman            NY          NY K560 420 880     09/01/1997     05/05/2023           2            01/13/2026      A
+  Lina Nguyen            IL          IL A561 457 933     02/07/1986     09/13/2023          19            01/17/2026      A
+  Rafael Nassar          NV          NV D562 494 986     09/28/1976     05/22/2024          22            01/26/2026      A
+  Mira Walsh             KS          KS T563 531 339     06/18/1986     03/03/2014          18            01/21/2026      A
+  Omar Mensah            IN          IN G564 568 392     07/23/1989     11/26/2015          13            01/13/2026      A
+  Selena Torres          NY          NY T565 605 445     04/02/1987     12/04/2021          18            01/17/2026      A
+  Julian Duarte          MN          MN B566 642 498     04/10/1973     06/16/2025          27            01/14/2026      A
+  Iris Hayes             AR          AR C567 679 551     07/02/1986     06/09/2021          12            01/24/2026      A
+  Devon Haddad           NM          NM N568 716 604     07/19/1968     07/04/2021          31            01/26/2026      A
+  Alma Santos            IA          IA J569 753 657     02/09/1990     10/09/2025          15            01/15/2026      A
+  Mateo Kaminski         WA          WA O570 790 710     09/17/1978     12/16/2023          21            01/17/2026      A
+  Renee Chen             ND          ND F571 827 763     04/09/1994     09/11/2021           8            01/12/2026      A
+  Silas Serrano          AZ          AZ B572 864 816     08/08/1987     08/07/2022          18            01/11/2026      A
+  Vera Diaz              AR          AR L573 901 869     09/11/1970     12/23/2019          31            01/28/2026      B
+  Adrian Bauer           LA          LA T574 938 922     05/15/1976     06/05/2016          27            01/21/2026      A
+  Lena Sawyer            NE          NE V575 975 975     11/26/1971     11/26/2016          31            01/20/2026      A
 
-about:blank                                                                     14/15
+
+about:blank                                                                                           14/15
 
 # Page 16
 
-Name,State licensed,Drivers license #,Date of birth,Date hired,Years Experienced,MVR run date,Class
-Kai Soto,NC,NC V576 212 328,12/03/1969,04/16/2024,32,01/13/2026,A
-Mina Velasquez,KY,KY I577 249 381,11/03/1985,04/23/2023,18,01/25/2026,A
-Nolan Talbot,FL,FL B578 286 434,05/09/1978,05/09/2014,21,01/18/2026,B
-Marta Bishop,NE,NE W579 323 487,12/25/1995,05/09/2015,5,01/26/2026,B
-Ibrahim Ortega,KS,KS L580 360 540,10/04/1972,03/23/2019,31,01/16/2026,A
-Elena Farrell,OH,OH K581 397 593,08/19/1990,06/12/2014,14,01/13/2026,A
-Victor Madsen,NC,NC E582 434 646,04/05/1968,02/23/2019,31,01/21/2026,A
-Leah Price,FL,FL E583 471 699,07/07/1972,04/03/2015,27,01/16/2026,A
-Samir Parker,NM,NM Q584 508 752,06/01/1986,02/03/2017,14,01/26/2026,A
-Daria Singh,MI,MI Y585 545 805,10/10/1981,07/03/2024,23,01/22/2026,A
-Owen Carver,GA,GA A586 582 858,08/18/1991,03/20/2022,7,01/19/2026,A
-Anika Abbott,AL,AL I587 619 911,05/27/1992,05/15/2017,9,01/28/2026,A
-Milan Vargas,WA,WA E588 656 964,07/23/1977,02/20/2019,27,01/12/2026,B
-Rosa Novak,NV,NV V589 693 317,02/08/1972,05/10/2019,30,01/15/2026,A
-Caleb Kovacs,NE,NE N590 730 370,02/09/1971,01/06/2014,34,01/21/2026,A
-Nina Kline,SC,SC L591 767 423,07/19/1969,11/10/2019,29,01/10/2026,A
-Andre Malik,KY,KY J592 804 476,03/20/1992,04/08/2023,8,01/16/2026,A
-Priya Arias,IA,IA F593 841 529,01/02/1975,02/09/2024,29,01/19/2026,A
-Jonah Markovic,TN,TN P594 878 582,09/18/1982,01/26/2019,21,01/10/2026,A
-Maya Ilyin,KY,KY E595 915 635,03/25/1978,01/18/2023,25,01/21/2026,A
-Arman Romano,FL,FL S596 952 688,06/09/1980,01/08/2018,22,01/20/2026,A
-Tessa Patel,OR,OR Y597 989 741,06/12/1984,10/02/2014,18,01/27/2026,A
-Reed Rossi,OK,OK N598 226 794,06/12/1995,06/27/2024,5,01/15/2026,A
-Clara Sorensen,SC,SC M599 263 847,03/15/1981,01/10/2014,22,01/27/2026,A
+6/11/26, 8:42 PM                                   Driver Schedule Export
+
+# Driver Schedule
+
+**Talon Yard Logistics Inc**
+Review Period: 01/01/2026 - 01/01/2027
+Rows: 500
+
+| Name | State licensed | Drivers license # | Date of birth | Date hired | Years Experienced | MVR run date | Class |
+| :--- | :---: | :--- | :---: | :---: | :---: | :---: | :---: |
+| Kai Soto | NC | NC V576 212 328 | 12/03/1969 | 04/16/2024 | 32 | 01/13/2026 | A |
+| Mina Velasquez | KY | KY I577 249 381 | 11/03/1985 | 04/23/2023 | 18 | 01/25/2026 | A |
+| Nolan Talbot | FL | FL B578 286 434 | 05/09/1978 | 05/09/2014 | 21 | 01/18/2026 | B |
+| Marta Bishop | NE | NE W579 323 487 | 12/25/1995 | 05/09/2015 | 5 | 01/26/2026 | B |
+| Ibrahim Ortega | KS | KS L580 360 540 | 10/04/1972 | 03/23/2019 | 31 | 01/16/2026 | A |
+| Elena Farrell | OH | OH K581 397 593 | 08/19/1990 | 06/12/2014 | 14 | 01/13/2026 | A |
+| Victor Madsen | NC | NC E582 434 646 | 04/05/1968 | 02/23/2019 | 31 | 01/21/2026 | A |
+| Leah Price | FL | FL E583 471 699 | 07/07/1972 | 04/03/2015 | 27 | 01/16/2026 | A |
+| Samir Parker | NM | NM Q584 508 752 | 06/01/1986 | 02/03/2017 | 14 | 01/26/2026 | A |
+| Daria Singh | MI | MI Y585 545 805 | 10/10/1981 | 07/03/2024 | 23 | 01/22/2026 | A |
+| Owen Carver | GA | GA A586 582 858 | 08/18/1991 | 03/20/2022 | 7 | 01/19/2026 | A |
+| Anika Abbott | AL | AL I587 619 911 | 05/27/1992 | 05/15/2017 | 9 | 01/28/2026 | A |
+| Milan Vargas | WA | WA E588 656 964 | 07/23/1977 | 02/20/2019 | 27 | 01/12/2026 | B |
+| Rosa Novak | NV | NV V589 693 317 | 02/08/1972 | 05/10/2019 | 30 | 01/15/2026 | A |
+| Caleb Kovacs | NE | NE N590 730 370 | 02/09/1971 | 01/06/2014 | 34 | 01/21/2026 | A |
+| Nina Kline | SC | SC L591 767 423 | 07/19/1969 | 11/10/2019 | 29 | 01/10/2026 | A |
+| Andre Malik | KY | KY J592 804 476 | 03/20/1992 | 04/08/2023 | 8 | 01/16/2026 | A |
+| Priya Arias | IA | IA F593 841 529 | 01/02/1975 | 02/09/2024 | 29 | 01/19/2026 | A |
+| Jonah Markovic | TN | TN P594 878 582 | 09/18/1982 | 01/26/2019 | 21 | 01/10/2026 | A |
+| Maya Ilyin | KY | KY E595 915 635 | 03/25/1978 | 01/18/2023 | 25 | 01/21/2026 | A |
+| Arman Romano | FL | FL S596 952 688 | 06/09/1980 | 01/08/2018 | 22 | 01/20/2026 | A |
+| Tessa Patel | OR | OR Y597 989 741 | 06/12/1984 | 10/02/2014 | 18 | 01/27/2026 | A |
+| Reed Rossi | OK | OK N598 226 794 | 06/12/1995 | 06/27/2024 | 5 | 01/15/2026 | A |
+| Clara Sorensen | SC | SC M599 263 847 | 03/15/1981 | 01/10/2014 | 22 | 01/27/2026 | A |
+
+about:blank                                                                               15/15
 
 # Page 17
 
@@ -673,42 +788,55 @@ STATE OF MICHIGAN
 DEPARTMENT OF STATE
 LANSING
 
+
 Employer Driving Record - Certified | T100 200 300
 
 01-22-2026
 
+
 Demographics
----------------------------------------------------------------------------------
-Full Name,Date of Birth,Sex
-ELIAS ORTEGA,12/02/1985,Male
+__________________________________________________________________________________
+Full Name                                  Date of Birth              Sex
+ELIAS ORTEGA                               12/02/1985                 Male
+
 
 Addresses
----------------------------------------------------------------------------------
+__________________________________________________________________________________
 Residence
 1073 RIDGE VIEW CIR SOUTH LYON MI 48178-1501
 
-Credential
----------------------------------------------------------------------------------
-Original License Issued,Original CDL Issued,License,CDL,Issue Type
-09-05-2017,10-18-2022,Chauffeur,A,Renewal
 
-Issued,Expire,Endorsements,Restrictions,Real ID
-10-25-2023,10-25-2027,CY - Motorcycle,,True
+Credential
+__________________________________________________________________________________
+Original License      Original CDL         License            CDL             Issue Type
+Issued                Issued               Chauffeur          A               Renewal
+09-05-2017            10-18-2022
+
+
+Issued                Expire               Endorsements       Restrictions    Real ID
+10-25-2023            10-25-2027           CY -                               True
+                                           Motorcycle
+
 
 Activity
----------------------------------------------------------------------------------
+__________________________________________________________________________________
 Accidents / Violations
 0; None
 
 
+
+
+
+
 Electronically certified in compliance with MCL 257.204A as of 01-22-2026
+
 1 of 4
 
 # Page 18
 
-                        STATE OF MICHIGAN
-                       DEPARTMENT OF STATE
-                             LANSING
+STATE OF MICHIGAN
+DEPARTMENT OF STATE
+LANSING
 
 
 Employer Driving Record - Certified | E101 237 353
@@ -717,34 +845,30 @@ Employer Driving Record - Certified | E101 237 353
 
 
 Demographics
-________________________________________________________________________________
-
-Full Name                            Date of Birth               Sex
-FARAH FARRELL                        08/15/1997                  Female
+_________________________________________________________________________________
+Full Name                                  Date of Birth              Sex
+FARAH FARRELL                              08/15/1997                 Female
 
 
 Addresses
-________________________________________________________________________________
-
+_________________________________________________________________________________
 Residence
 1146 RIDGE VIEW CIR SOUTH LYON MI 48178-1502
 
 
 Credential
-________________________________________________________________________________
-
-Original License     Original CDL         License            CDL          Issue Type
-Issued               Issued               Chauffeur          A            Renewal
+_________________________________________________________________________________
+Original License     Original CDL         License            CDL            Issue Type
+Issued               Issued               Chauffeur          A              Renewal
 09-05-2017           10-18-2022
 
-Issued               Expire               Endorsements       Restrictions Real ID
-10-25-2023           10-25-2027           CY -                            True
+Issued               Expire               Endorsements       Restrictions   Real ID
+10-25-2023           10-25-2027           CY -                              True
                                           Motorcycle
 
 
 Activity
-________________________________________________________________________________
-
+_________________________________________________________________________________
 Accidents / Violations
 1 - 2023-10-15; None
 
@@ -753,16 +877,17 @@ Accidents / Violations
 
 
 
-     Electronically certified in compliance with MCL 257.204A as of 01-22-2026
 
-                                    1 of 4
+
+Electronically certified in compliance with MCL 257.204A as of 01-22-2026
+
+1 of 4
 
 # Page 19
 
-                                STATE OF MICHIGAN
-                               DEPARTMENT OF STATE
-                                     LANSING
-
+STATE OF MICHIGAN
+DEPARTMENT OF STATE
+LANSING
 
 
 Employer Driving Record - Certified | Y102 274 406
@@ -771,31 +896,31 @@ Employer Driving Record - Certified | Y102 274 406
 
 
 Demographics
-____________________________________________________________________________________________________
-Full Name                               Date of Birth                   Sex
-SONIA MADSEN                            02/13/1994                      Male
+________________________________________________________________________________
+Full Name                               Date of Birth            Sex
+SONIA MADSEN                            02/13/1994               Male
 
 
 Addresses
-____________________________________________________________________________________________________
+________________________________________________________________________________
 Residence
 1219 RIDGE VIEW CIR SOUTH LYON MI 48178-1503
 
 
 Credential
-____________________________________________________________________________________________________
-Original License        Original CDL            License                 CDL             Issue Type
-Issued                  Issued                  Chauffeur               A               Renewal
-09-05-2017              10-18-2022
+________________________________________________________________________________
+Original License     Original CDL       License        CDL       Issue Type
+Issued               Issued             Chauffeur      A         Renewal
+09-05-2017           10-18-2022
 
 
-Issued                  Expire                  Endorsements            Restrictions    Real ID
-10-25-2023              10-25-2027              CY -                                    True
-                                                Motorcycle
+Issued               Expire             Endorsements   Restrictions   Real ID
+10-25-2023           10-25-2027         CY -                          True
+                                        Motorcycle
 
 
 Activity
-____________________________________________________________________________________________________
+________________________________________________________________________________
 Accidents / Violations
 0; Speeding - 2024-11-04
 
@@ -803,176 +928,44 @@ Accidents / Violations
 
 
 
-           Electronically certified in compliance with MCL 257.204A as of 01-22-2026
 
-                                            1 of 4
+Electronically certified in compliance with MCL 257.204A as of 01-22-2026
+
+1 of 4
 
 # Page 20
 
-                                STATE OF MICHIGAN
-                              DEPARTMENT OF STATE
-                                    LANSING
+STATE OF MICHIGAN
+DEPARTMENT OF STATE
+LANSING
+
 
 Employer Driving Record - Certified | O103 311 459
 
 01-22-2026
 
+
 Demographics
-________________________________________________________________________________
-Full Name,Date of Birth,Sex
-LUCIAN PRICE,04/06/1975,Female
+Full Name                            Date of Birth          Sex
+LUCIAN PRICE                         04/06/1975             Female
 
 
 Addresses
-________________________________________________________________________________
 Residence
 1292 RIDGE VIEW CIR SOUTH LYON MI 48178-1504
 
 
 Credential
-________________________________________________________________________________
-Original License Issued,Original CDL Issued,License,CDL,Issue Type
-09-05-2017,10-18-2022,Chauffeur,A,Renewal
-
-Issued,Expire,Endorsements,Restrictions,Real ID
-10-25-2023,10-25-2027,CY - Motorcycle,,True
-
-
-Activity
-________________________________________________________________________________
-Accidents / Violations
-0; Lane violation - 2023-08-17
-
-
-
-Electronically certified in compliance with MCL 257.204A as of 01-22-2026
-
-                                     1 of 4
-
-# Page 21
-
-| |
-| --- |
-| <center>STATE OF MICHIGAN<br>DEPARTMENT OF STATE<br>LANSING</center> |
-| **Employer Driving Record - Certified \| R104 348 512**<br><br>01-22-2026 |
-| ### Demographics<hr>Full Name,Date of Birth,Sex<br>GRETA PARKER,06/21/1984,Male |
-| ### Addresses<hr>**Residence**<br>1365 RIDGE VIEW CIR SOUTH LYON MI 48178-1505 |
-| ### Credential<hr>Original License Issued,Original CDL Issued,License,CDL,Issue Type<br>09-05-2017,10-18-2022,Chauffeur,B,Renewal<br><br>Issued,Expire,Endorsements,Restrictions,Real ID<br>10-25-2023,10-25-2027,CY - Motorcycle,,True |
-| ### Activity<hr>**Accidents / Violations**<br>0; None |
-| <center>Electronically certified in compliance with MCL 257.204A as of 01-22-2026<br><br>1 of 4</center> |
-
-# Page 22
-
-STATE OF MICHIGAN
-DEPARTMENT OF STATE
-LANSING
-
-Employer Driving Record - Certified | T105 385 565
-
-01-22-2026
-
-Demographics
-Full Name,Date of Birth,Sex
-NOEMI SINGH,02/11/1968,Female
-
-Addresses
-Residence: 1438 RIDGE VIEW CIR SOUTH LYON MI 48178-1506
-
-Credential
-Original License Issued,Original CDL Issued,License,CDL,Issue Type
-09-05-2017,10-18-2022,Chauffeur,A,Renewal
-Issued,Expire,Endorsements,Restrictions,Real ID
-10-25-2023,10-25-2027,CY - Motorcycle,,True
-
-Activity
-Accidents / Violations: 0; Speeding - 2024-11-04
-
-Electronically certified in compliance with MCL 257.204A as of 01-22-2026
-1 of 4
-
-# Page 23
-
-STATE OF MICHIGAN
-DEPARTMENT OF STATE
-LANSING
-
-### Employer Driving Record - Certified | X106 422 618
-
-01-22-2026
-
-### Demographics
-***
-| Full Name | Date of Birth | Sex |
-| :--- | :--- | :--- |
-| CECILIA CARVER | 01/18/1971 | Male |
-
-### Addresses
-***
-| Residence |
-| :--- |
-| 1511 RIDGE VIEW CIR SOUTH LYON MI 48178-1507 |
-
-### Credential
-***
-| Original License Issued | Original CDL Issued | License | CDL | Issue Type |
-| :--- | :--- | :--- | :--- | :--- |
-| 09-05-2017 | 10-18-2022 | Chauffeur | A | Renewal |
-
-| Issued | Expire | Endorsements | Restrictions | Real ID |
-| :--- | :--- | :--- | :--- | :--- |
-| 10-25-2023 | 10-25-2027 | CY - Motorcycle | | True |
-
-### Activity
-***
-| Accidents / Violations |
-| :--- |
-| 1 - 2022-08-13; Lane violation - 2023-08-17 |
-
-
-Electronically certified in compliance with MCL 257.204A as of 01-22-2026
-
-1 of 4
-
-# Page 24
-
-                            STATE OF MICHIGAN
-                           DEPARTMENT OF STATE
-                                 LANSING
-
-
-Employer Driving Record - Certified | X107 459 671
-
-01-22-2026
-
-Demographics
-________________________________________________________________________________
-
-Full Name                           Date of Birth               Sex
-MARCUS ABBOTT                       12/06/1975                  Female
-
-
-Addresses
-________________________________________________________________________________
-
-Residence
-1584 RIDGE VIEW CIR SOUTH LYON MI 48178-1508
-
-
-Credential
-________________________________________________________________________________
-
-Original License    Original CDL        License             CDL             Issue Type
-Issued              Issued              Chauffeur           B               Renewal
+Original License    Original CDL     License         CDL            Issue Type
+Issued              Issued           Chauffeur       A              Renewal
 09-05-2017          10-18-2022
 
-Issued              Expire              Endorsements        Restrictions    Real ID
-10-25-2023          10-25-2027          CY -                                True
-                                        Motorcycle
+Issued              Expire           Endorsements    Restrictions   Real ID
+10-25-2023          10-25-2027       CY -                           True
+                                     Motorcycle
 
 
 Activity
-________________________________________________________________________________
-
 Accidents / Violations
 0; Lane violation - 2023-08-17
 
@@ -982,5 +975,210 @@ Accidents / Violations
 
 
           Electronically certified in compliance with MCL 257.204A as of 01-22-2026
-                                    1 of 4
+
+                                       1 of 4
+
+# Page 21
+
+STATE OF MICHIGAN
+DEPARTMENT OF STATE
+LANSING
+
+
+Employer Driving Record - Certified | R104 348 512
+
+01-22-2026
+
+
+Demographics
+__________________________________________________________________________________
+Full Name                              Date of Birth                 Sex
+GRETA PARKER                           06/21/1984                    Male
+
+
+Addresses
+__________________________________________________________________________________
+Residence
+1365 RIDGE VIEW CIR SOUTH LYON MI 48178-1505
+
+
+Credential
+__________________________________________________________________________________
+Original License      Original CDL          License          CDL               Issue Type
+Issued                Issued                Chauffeur        B                 Renewal
+09-05-2017            10-18-2022
+
+
+Issued                Expire                Endorsements     Restrictions      Real ID
+10-25-2023            10-25-2027            CY -                               True
+                                            Motorcycle
+
+
+Activity
+__________________________________________________________________________________
+Accidents / Violations
+0; None
+
+
+
+
+
+
+
+
+Electronically certified in compliance with MCL 257.204A as of 01-22-2026
+
+1 of 4
+
+# Page 22
+
+STATE OF MICHIGAN
+DEPARTMENT OF STATE
+LANSING
+
+
+Employer Driving Record - Certified | T105 385 565
+
+01-22-2026
+
+
+Demographics
+_________________________________________________________________________________
+Full Name                                  Date of Birth              Sex
+NOEMI SINGH                                02/11/1968                 Female
+
+
+Addresses
+_________________________________________________________________________________
+Residence
+1438 RIDGE VIEW CIR SOUTH LYON MI 48178-1506
+
+
+Credential
+_________________________________________________________________________________
+Original License       Original CDL        License             CDL               Issue Type
+Issued                 Issued              Chauffeur           A                 Renewal
+09-05-2017             10-18-2022
+
+Issued                 Expire              Endorsements        Restrictions      Real ID
+10-25-2023             10-25-2027          CY -                                  True
+                                           Motorcycle
+
+
+Activity
+_________________________________________________________________________________
+Accidents / Violations
+0; Speeding - 2024-11-04
+
+
+
+
+
+
+Electronically certified in compliance with MCL 257.204A as of 01-22-2026
+
+1 of 4
+
+# Page 23
+
+STATE OF MICHIGAN
+DEPARTMENT OF STATE
+LANSING
+
+
+Employer Driving Record - Certified | X106 422 618
+
+01-22-2026
+
+
+Demographics
+_________________________________________________________________________________
+Full Name                                  Date of Birth              Sex
+CECILIA CARVER                             01/18/1971                 Male
+
+
+Addresses
+_________________________________________________________________________________
+Residence
+1511 RIDGE VIEW CIR SOUTH LYON MI 48178-1507
+
+
+Credential
+_________________________________________________________________________________
+Original License     Original CDL          License           CDL              Issue Type
+Issued               Issued                Chauffeur         A                Renewal
+09-05-2017           10-18-2022
+
+
+Issued               Expire                Endorsements      Restrictions     Real ID
+10-25-2023           10-25-2027            CY -                               True
+                                           Motorcycle
+
+
+Activity
+_________________________________________________________________________________
+Accidents / Violations
+1 - 2022-08-13; Lane violation - 2023-08-17
+
+
+
+
+
+
+
+
+Electronically certified in compliance with MCL 257.204A as of 01-22-2026
+
+1 of 4
+
+# Page 24
+
+STATE OF MICHIGAN
+DEPARTMENT OF STATE
+LANSING
+
+
+Employer Driving Record - Certified | X107 459 671
+
+01-22-2026
+
+
+Demographics
+_________________________________________________________________________________
+Full Name                                  Date of Birth              Sex
+MARCUS ABBOTT                              12/06/1975                 Female
+
+
+Addresses
+_________________________________________________________________________________
+Residence
+1584 RIDGE VIEW CIR SOUTH LYON MI 48178-1508
+
+
+Credential
+_________________________________________________________________________________
+Original License    Original CDL           License          CDL       Issue Type
+Issued              Issued                 Chauffeur        B         Renewal
+09-05-2017          10-18-2022
+
+
+Issued              Expire                 Endorsements     Restrictions    Real ID
+10-25-2023          10-25-2027             CY -                             True
+                                           Motorcycle
+
+
+Activity
+_________________________________________________________________________________
+Accidents / Violations
+0; Lane violation - 2023-08-17
+
+
+
+
+
+
+
+         Electronically certified in compliance with MCL 257.204A as of 01-22-2026
+
+                                       1 of 4
 

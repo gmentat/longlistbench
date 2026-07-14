@@ -8,28 +8,28 @@
   "target_record_type": "loss_run_incident",
   "num_claims": 12,
   "num_target_records": 12,
-  "pages_estimate": 80,
-  "pdf_page_count": 80,
+  "pages_estimate": 61,
+  "pdf_page_count": 61,
   "document_count": 1,
   "evidence_pattern": "single_document_long_range_cross_page_join",
-  "minimum_gap_pages_between_primary_and_last_evidence": 64,
+  "minimum_gap_pages_between_primary_and_last_evidence": 57,
   "problems": [
-    "cross_page_join",
-    "long_range_evidence",
     "coded_values",
+    "cross_page_join",
     "distractor_sections",
-    "ocr_condition",
-    "page_breaks",
-    "large_doc",
-    "multiple_tables",
-    "multi_row",
-    "multi_column",
     "duplicates",
-    "natural_long_range_join",
     "inherited_context",
-    "non_target_rows",
+    "large_doc",
+    "long_range_evidence",
     "mixed_prose_tables",
-    "non_sequential_identifiers"
+    "multi_column",
+    "multi_row",
+    "multiple_tables",
+    "natural_long_range_join",
+    "non_sequential_identifiers",
+    "non_target_rows",
+    "ocr_condition",
+    "page_breaks"
   ],
   "layout_templates": [
     "packet_cover",
@@ -55,7 +55,7 @@
   "evidence_map": [
     {
       "section": "claim_intake_file_cards",
-      "approx_page_after_cover": 1,
+      "approx_page_after_cover": 2,
       "fields": [
         "incident_number",
         "reference_number",
@@ -70,7 +70,7 @@
     },
     {
       "section": "fleet_driver_assignment_cards",
-      "approx_page_after_cover": 30,
+      "approx_page_after_cover": 25,
       "join_key": "unit_number",
       "fields": [
         "driver_name",
@@ -80,7 +80,7 @@
     },
     {
       "section": "policy_register_cards",
-      "approx_page_after_cover": 31,
+      "approx_page_after_cover": 27,
       "join_key": "policy_number",
       "fields": [
         "company_name",
@@ -92,7 +92,7 @@
     },
     {
       "section": "loss_cause_classification_narrative",
-      "approx_page_after_cover": 50,
+      "approx_page_after_cover": 45,
       "join_key": "cause_code",
       "fields": [
         "coverage_type",
@@ -102,7 +102,7 @@
     },
     {
       "section": "claimant_notice_cards",
-      "approx_page_after_cover": 51,
+      "approx_page_after_cover": 46,
       "join_key": "reference_number",
       "fields": [
         "claimants",
@@ -111,7 +111,7 @@
     },
     {
       "section": "claim_financial_ledger_blocks",
-      "approx_page_after_cover": 70,
+      "approx_page_after_cover": 59,
       "join_key": "reference_number",
       "fields": [
         "bi",
@@ -128,21 +128,28 @@
     "metadata": "metadata/multihop_012_001_crosspage.json",
     "ocr_md": "transcripts/ocr_gemini/multihop_012_001_crosspage.md",
     "json_size_bytes": 15364,
-    "pdf_size_bytes": 981600,
-    "html_size_bytes": 296086,
-    "ocr_size_bytes": 271333
+    "pdf_size_bytes": 986822,
+    "html_size_bytes": 205395,
+    "ocr_size_bytes": 254714
   },
   "transcripts_available": [
     "ocr"
   ],
-  "ocr_md_size_bytes": 271333,
+  "ocr_md_size_bytes": 254714,
   "layout_revision": {
-    "date": "2026-06-29T09:52:19+00:00",
-    "purpose": "reduce deterministic parser friendliness with production-like layout variation",
+    "date": "2026-07-14T08:45:41.897058+00:00",
+    "purpose": "improve production-like document structure and layout variation",
     "ocr_status": "regenerated_from_current_pdf",
-    "ocr_regenerated_at": "2026-06-29T09:56:43+00:00"
+    "ocr_regenerated_at": "2026-07-14T12:32:50.150749+00:00"
   },
-  "pdf_size_bytes": 981600,
-  "html_size_bytes": 296086,
-  "json_size_bytes": 15364
+  "pdf_size_bytes": 986822,
+  "html_size_bytes": 205395,
+  "json_size_bytes": 15364,
+  "template": "claim_crosspage_multihop",
+  "artifacts": {
+    "pdf_sha256": "e6b822b12263ff1d6f269d8437bbdd435350e70347bd48055a37b14aa12c2127",
+    "html_sha256": "3faebf29f24823fce2b0f4daf867a7acfc6eba40cf58f21e7c0bb43e800efe51",
+    "ground_truth_sha256": "e9d7f25922dd8ef9901aab09f7bcd5c3a6df10d4456f315e9bfdb796233ff103",
+    "ocr_sha256": "ae80ef108686bdbdb62f2835b3b4d17ca5d267eb4cdc1670802b0e73810ef5ad"
+  }
 }

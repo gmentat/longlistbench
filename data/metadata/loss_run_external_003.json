@@ -5,9 +5,10 @@
   "num_target_records": 300,
   "source_batch": "loss-run-hardened",
   "artifacts": {
-    "pdf": "pdfs/loss_run_external_003.pdf",
-    "html": "html/loss_run_external_003.html",
-    "ground_truth": "ground_truth/loss_run_external_003.json"
+    "pdf_sha256": "6761a10a2ef6acca7d671b23a59471be9f1e60752908024809c85ebae44d181e",
+    "html_sha256": "8ed44830ad6567f1a3136e22e56cbe19804a42efd597fc98c492edc7a8eedcaf",
+    "ground_truth_sha256": "7630a32d75a03909771598464f2f198326ffebb224b352bb1e50d286363ee885",
+    "ocr_sha256": "29f6082dbcdd00b5e3a88de16909bc82c2dcca67af525e6607f1e28538ca4287"
   },
   "provenance": "Synthetic generated document. Private production references were used only for visual layout review; no production PDFs, names, account numbers, or raw customer data are included in this repository.",
   "files": {
@@ -15,11 +16,11 @@
     "pdf": "pdfs/loss_run_external_003.pdf",
     "html": "html/loss_run_external_003.html",
     "metadata": "metadata/loss_run_external_003.json",
+    "ocr_md": "transcripts/ocr_gemini/loss_run_external_003.md",
     "json_size_bytes": 161889,
     "pdf_size_bytes": 585065,
     "html_size_bytes": 299568,
-    "ocr_md": "transcripts/ocr_gemini/loss_run_external_003.md",
-    "ocr_size_bytes": 135126
+    "ocr_size_bytes": 209968
   },
   "transcripts_available": [
     "ocr"
@@ -29,30 +30,36 @@
   "format": "production_like_pdf",
   "domain": "commercial_insurance_operations",
   "problems": [
+    "continuation_notes",
+    "distractor_sections",
+    "duplicates",
     "high_density_long_list",
-    "production_like_layout",
-    "ocr_condition",
-    "page_breaks",
     "large_doc",
-    "multiple_tables",
     "merged_cells",
     "multi_row",
-    "duplicates",
-    "distractor_sections",
-    "variable_policy_sections",
-    "continuation_notes",
+    "multiple_tables",
+    "ocr_condition",
+    "page_breaks",
+    "production_like_layout",
+    "sparse_driver_fields",
     "summary_distractors",
-    "sparse_driver_fields"
+    "variable_policy_sections"
   ],
   "pages_estimate": 44,
   "pdf_page_count": 44,
-  "dataset_version": "2.0.0",
+  "dataset_version": "2.1.0",
   "hf_config": "core_operations",
   "num_claims": 300,
   "document_count": 1,
   "evidence_pattern": "single_document",
-  "ocr_md_size_bytes": 135126,
+  "ocr_md_size_bytes": 209968,
   "pdf_size_bytes": 585065,
   "html_size_bytes": 299568,
-  "json_size_bytes": 161889
+  "json_size_bytes": 161889,
+  "layout_revision": {
+    "date": "2026-07-14T08:45:41.991666+00:00",
+    "purpose": "improve production-like document structure and layout variation",
+    "ocr_status": "regenerated_from_current_pdf",
+    "ocr_regenerated_at": "2026-07-14T12:46:17.867158+00:00"
+  }
 }

@@ -53,6 +53,28 @@ class ExtractionCoreTests(unittest.TestCase):
             },
         )
 
+    def test_policy_contract_defines_logical_record_scope(self):
+        ground_truth = [
+            {
+                "record_type": "policy_clause_item",
+                "clause_title": "Aggregate Limit Application",
+                "clause_type": "condition",
+                "clause_text": "The scheduled limit applies.",
+            },
+            {
+                "record_type": "policy_premium_item",
+                "location_number": "1",
+                "premium": "$100",
+            },
+        ]
+
+        prompt = build_record_extraction_prompt("OCR BODY", ground_truth)
+
+        self.assertIn("Policy logical-record rules:", prompt)
+        self.assertIn("one record per distinct logical policy item", prompt)
+        self.assertIn("only the operative provision paragraph", prompt)
+        self.assertIn("Exclude document-level totals", prompt)
+
 
 if __name__ == "__main__":
     unittest.main()

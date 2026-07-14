@@ -8,10 +8,10 @@ The current `data/` release contains:
 
 | Split/config | PDFs | Target records | Notes |
 |---|---:|---:|---|
-| `core_operations` | 30 | 31,884 | Production-like IFTA, driver/MVR, vehicle schedule, and loss-run layouts. |
+| `core_operations` | 26 | 28,178 | Production-like IFTA, driver/MVR, vehicle schedule, and loss-run layouts. |
 | `claim_multihop` | 3 | 77 | Long claim PDFs requiring cross-page joins. |
-| `policy_packets` | 3 | 1,489 | Long BOP, WC, and CGL policy packets requiring cross-page extraction. |
-| **Total** | **36** | **33,450** | Every PDF has OCR and JSON ground truth. |
+| `policy_packets` | 3 | 1,344 | Long BOP, WC, and CGL policy packets requiring cross-page extraction. |
+| **Total** | **32** | **29,599** | Every PDF has OCR and JSON ground truth. |
 
 The released transcript condition is `ocr`. The current corpus does not ship clean structural transcripts.
 
@@ -46,17 +46,17 @@ Representative pages for visual audit:
 
 | Stressor | PDF/pages | Visible evidence |
 |---|---|---|
-| `page_breaks` | `ifta_mileage_by_vehicle_001`, pages 3-4 | Same unit section spans two pages with repeated unit context. |
+| `page_breaks` | `ifta_mileage_by_vehicle_001`, pages 2-3 | Unit 9215 continues under repeated report context. |
 | `split_records` | `ifta_multisection_return_001`, pages 1, 2, and 4 | Return context, Schedule A values, and tax details form one jurisdiction record. |
 | `multi_row` | `loss_run_external_001`, pages 1-2; `driver_mvr_packet_001`, page 10 | Description/detail rows and driver/MVR detail blocks. |
-| `duplicates` | `loss_run_external_001`, pages 1-2; `multihop_bop_012_001`, page 142 | No-claim/summary rows and archived prior-term distractors. |
-| `large_doc` | `ifta_mileage_by_vehicle_008`, whole PDF; `mixed_cgl_040_001`, whole PDF | 218-page operations packet and 316-page policy packet. |
+| `duplicates` | `loss_run_external_001`, pages 1-2; `multihop_bop_012_001`, pages 45-68 | No-claim/summary rows and archived-form distractors. |
+| `large_doc` | `ifta_mileage_by_vehicle_008`, whole PDF; `mixed_cgl_040_001`, whole PDF | 76-page operations packet and 133-page policy packet. |
 | `multiple_tables` | `ifta_tax_inquiry_001`, page 1; `loss_run_external_001`, pages 1-2 | Target tables mixed with support, empty, and summary tables. |
-| `multi_column` | `mixed_cgl_040_001`, pages 158-181; `multihop_wc_025_001`, pages 110-129 | Two-column material-provision pages. |
-| `merged_cells` | `loss_run_external_001`, page 1; `ifta_tax_inquiry_001`, page 1 | Section-spanning and wide description/status cells. |
+| `multi_column` | `mixed_cgl_040_001`, pages 67-86; `multihop_wc_025_001`, pages 54-73 | Two-column material-provision pages. |
+| `merged_cells` | `loss_run_external_001`, page 1; `ifta_mileage_by_vehicle_002`, page 2 | Section-spanning detail rows and inherited unit bands. |
 | `ocr_condition` | Any PDF plus `data/transcripts/ocr_gemini/{sample_id}.md` | Released text condition is OCR from rendered page images. |
-| `long_range_evidence` | `multihop_012_001_crosspage`, pages 4, 36, 56, 57, 76; `mixed_040_001_crosspage`, pages 4, 86, 143, 144, 186 | Claim rows joined to distant driver, policy, cause-code, claimant, and ledger sections. |
-| `heterogeneous_record_list` | `multihop_bop_012_001`, pages 2-13 and 79-94; `mixed_cgl_040_001`, pages 2-22 and 158-181 | One extraction list mixes multiple policy record schemas. |
+| `long_range_evidence` | `multihop_012_001_crosspage`, pages 3, 26, 28, 46, 47, 60; `mixed_040_001_crosspage`, pages 3, 50, 54, 96, 97, 137 | Claim rows joined to distant driver, policy, cause-code, claimant, and ledger sections. |
+| `heterogeneous_record_list` | `multihop_bop_012_001`, pages 2-17 and 39-90; `mixed_cgl_040_001`, pages 2-25 and 54-133 | One extraction list mixes multiple policy record schemas. |
 
 ## Setup
 
@@ -144,10 +144,13 @@ Validate OCR support against the released ground truth:
 
 ```bash
 python benchmarks/validate_ocr_vs_golden.py --claims-dir data
-python benchmarks/validate_ocr_numeric_fidelity.py --claims-dir data --min-abs 10
+python benchmarks/validate_ocr_numeric_fidelity.py \
+  --claims-dir data \
+  --min-abs 10 \
+  --expected-misses data/ocr_numeric_fidelity_baseline.json
 ```
 
-The current release validates all 36 PDFs with 100.0% average identifier coverage, 99.9% tracked identifier-field support, 39 target records with at least one tracked identifier missing from OCR, and 0 unrecoverable ground-truth numeric values at the default numeric-fidelity threshold. These commands validate released OCR support, not extraction correctness. The evaluator checks exact normalized records and complete documents, with flattened field-value micro-F1 retained as secondary partial credit, so IDs alone are not sufficient for a high score.
+All 32 PDFs have OCR transcripts with 99.9% average identifier coverage, 99.9% tracked identifier-field support, and 17 target records with a missing tracked identifier. The audited baseline records 56 genuine OCR misses among 76,968 checked numeric fields (0.073%); validation requires that exact set instead of hand-correcting the transcript. These commands validate released OCR support, not extraction correctness. The evaluator checks exact normalized records and complete documents, with flattened field-value micro-F1 retained as secondary partial credit.
 
 ## Evaluation
 
@@ -221,15 +224,15 @@ python benchmarks/export_hf_dataset.py \
 The export writes:
 
 - `README.md` - Hugging Face dataset card.
-- `data/core_operations/test-00000-of-00001.parquet` - 30 core operations PDFs.
+- `data/core_operations/test-00000-of-00001.parquet` - 26 core operations PDFs.
 - `data/claim_multihop/test-00000-of-00001.parquet` - 3 cross-page claim PDFs.
 - `data/policy_packets/test-00000-of-00001.parquet` - 3 policy PDFs.
 - `schemas/*.schema.json` - public extraction schemas.
 - `metadata/manifest.json` - source manifest copied from `data/`.
-- `evaluation/codex_full_current_ocr_v2/` - the released Codex report and all 36 saved predictions.
-- `evaluation/claude_opus48_full_current_ocr_v2/` - the released Claude report, run metadata, and all 36 saved predictions.
-- `evaluation/codex_gpt56_sol_full_current_ocr_v2/` - the released GPT-5.6-Sol report, run metadata, and all 36 saved predictions.
-- `evaluation/claude_fable5_full_current_ocr_v2/` - the released Fable 5 report, run metadata, and all 36 saved predictions.
+- `evaluation/codex_full_current_ocr_v2/` - the released GPT-5.5 report and all 32 saved predictions.
+- `evaluation/claude_opus48_full_current_ocr_v2/` - the released Opus 4.8 report, metadata, and all 32 predictions.
+- `evaluation/codex_gpt56_sol_full_current_ocr_v2/` - the released GPT-5.6-Sol report, metadata, and all 32 predictions.
+- `evaluation/claude_fable5_full_current_ocr_v2/` - the released Fable 5 report, metadata, and all 32 predictions.
 
 Each Parquet row includes `document_id`, `domain`, `complexity_regime`, `document_format`, `target_field`, `target_record_type`, `target_count`, embedded `pdf`, JSON-string `ground_truth`, JSON-string `metadata`, and `ocr_transcript`. Claim multi-hop rows use `target_field="incidents"`; operations, external loss-run, and policy rows use `target_field="records"`.
 

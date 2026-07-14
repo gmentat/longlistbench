@@ -4,11 +4,6 @@
   "target_record_type": "ifta_multisection_jurisdiction_row",
   "num_target_records": 335,
   "source_batch": "ifta-hardening-experiment",
-  "artifacts": {
-    "pdf": "pdfs/ifta_multisection_return_001.pdf",
-    "html": "html/ifta_multisection_return_001.html",
-    "ground_truth": "ground_truth/ifta_multisection_return_001.json"
-  },
   "provenance": "Synthetic generated document. Private production references were used only for visual layout review; no production PDFs, names, account numbers, or raw customer data are included in this repository.",
   "files": {
     "ground_truth": "ground_truth/ifta_multisection_return_001.json",
@@ -19,7 +14,7 @@
     "json_size_bytes": 150517,
     "pdf_size_bytes": 7339936,
     "html_size_bytes": 203496,
-    "ocr_size_bytes": 194328
+    "ocr_size_bytes": 197933
   },
   "transcripts_available": [
     "ocr"
@@ -29,32 +24,39 @@
   "format": "production_like_pdf",
   "domain": "commercial_insurance_operations",
   "problems": [
+    "cross_section_join",
     "high_density_long_list",
-    "production_like_layout",
+    "inherited_context",
+    "large_doc",
+    "multi_row",
+    "multiple_tables",
+    "non_target_rows",
     "ocr_condition",
     "ocr_layout_condition",
     "page_breaks",
-    "large_doc",
-    "multiple_tables",
-    "multi_row",
-    "inherited_context",
-    "split_records",
-    "non_target_rows",
+    "production_like_layout",
     "repeated_keys",
-    "cross_section_join"
+    "split_records"
   ],
   "pages_estimate": 60,
   "pdf_page_count": 60,
-  "dataset_version": "2.0.0",
   "hf_config": "core_operations",
   "document_count": 1,
   "evidence_pattern": "single_document",
-  "layout_revision": {
-    "date": "2026-06-29",
-    "purpose": "hard IFTA table extraction condition with fields split across return sections",
-    "ocr_status": "layout-preserving Gemini OCR over scanned image PDF"
+  "ocr_md_size_bytes": 197933,
+  "artifacts": {
+    "pdf_sha256": "08836aee3e6def33ffcf6e4f61fcbf795af95203b66b6d84f4a02b760e0c727d",
+    "html_sha256": "052c651ce63e6994e1a4c582b2a2495931b3be68d5a685d564fe1fa1b41d25b6",
+    "ground_truth_sha256": "b1cf6458fcf4bfc076c2556a9d28765f7dc465dc405f5682654b45ddfbaae45c",
+    "ocr_sha256": "0fe523c5a396df0d6f707d5361f80aea5a14fe6bd6846ef7b23a04b9d84af47d"
   },
-  "ocr_md_size_bytes": 194328,
+  "dataset_version": "2.1.0",
+  "layout_revision": {
+    "date": "2026-07-14T08:45:41.949124+00:00",
+    "purpose": "improve production-like document structure and layout variation",
+    "ocr_status": "regenerated_from_current_pdf",
+    "ocr_regenerated_at": "2026-07-14T12:43:05.267477+00:00"
+  },
   "pdf_size_bytes": 7339936,
   "html_size_bytes": 203496,
   "json_size_bytes": 150517

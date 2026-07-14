@@ -362,6 +362,20 @@ def build_record_extraction_contract(ground_truth: list[dict]) -> str:
             "- For operations documents, extract one record per target table row or section-row combination matching the allowed fields.",
         ]
     )
+    if "policy_clause_item" in by_type:
+        lines.extend(
+            [
+                "",
+                "Policy logical-record rules:",
+                "- Return one record per distinct logical policy item, not one record per place where that item appears.",
+                "- Evidence for one item may be split across declarations, schedules, forms, endorsements, and clause pages. Join those fields into one complete record using the shared coverage, location, building, class, state, territory, or form context.",
+                "- Do not emit separate partial records for restatements of the same item. Deduplicate exact logical records after joining their evidence.",
+                "- policy_location_item is a distinct scheduled location/class combination; deduplicate identical restatements.",
+                "- policy_form_item is a form linked to a scheduled target item. Exclude unlinked notices, generic policy-jacket information, and repeated form restatements.",
+                "- policy_premium_item is an item-level scheduled premium or rating record. Exclude document-level totals and merge repeated presentations of the same item.",
+                "- For policy_clause_item, omit section numbers from clause_title, use the normalized category word (such as condition, limitation, or exclusion) for clause_type, and put only the operative provision paragraph in clause_text. Exclude the preceding context or introduction sentence.",
+            ]
+        )
     return "\n".join(lines)
 
 

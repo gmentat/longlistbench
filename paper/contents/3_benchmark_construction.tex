@@ -15,7 +15,7 @@ The core operations documents contain dense repeated lists from business operati
 \subsection{Document design and provenance}
 Private production PDFs were reviewed only to identify recurring structures such as portal exports, spreadsheet schedules, loss-run tables, declarations, forms, endorsements, and long packet organization. The released documents are production-inspired, not facsimiles of source packets.
 
-\Cref{fig:pipeline} summarizes construction. Human corrections to production extraction surfaced recurring failure patterns, which engineers translated into seeded generators, family-specific templates, and the stressor taxonomy in \Cref{tab:complexity-stressors}. Generators write target records first, render them through HTML templates to PDF, and transcribe page images with vision OCR. Every visible name, identifier, value, and prose passage is generated. The multi-hop packets are reproducible from released code and seeds; the 30 core-operations PDFs come from an earlier batch using the same design.
+\Cref{fig:pipeline} summarizes construction. Human corrections to production extraction surfaced recurring failure patterns, which engineers translated into seeded generators, family-specific templates, and the stressor taxonomy in \Cref{tab:complexity-stressors}. Generators write target records first, render them through HTML templates to PDF, and transcribe page images with vision OCR. Every visible name, identifier, value, and prose passage is generated. The multi-hop packets are reproducible from released code and seeds; the 26 core-operations PDFs come from an earlier batch using the same design.
 
 \begin{figure}[tb]
 \centering
@@ -145,58 +145,58 @@ In \Cref{fig:multi-row}, description text continues below an incident's main row
     \label{fig:multi-row}
 \end{figure}
 
-In \Cref{fig:merged-cells}, a shared coverage cell spans several incidents and must be propagated to each record, breaking the regular grid assumed by simple table parsers.
+In \Cref{fig:merged-cells}, a subtotal cell spans the leading columns and interrupts otherwise regular unit rows. The roll-up is context, not a target record.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=\linewidth]{figures/example_merged_cells_annot.png}
-    \caption{Merged or section-spanning cells in an incident table.}
+    \caption{A merged subtotal row interrupts a mileage table.}
     \label{fig:merged-cells}
 \end{figure}
 
-\Cref{fig:multi-column} pairs target content with a reference-only directory. Naive reading order can interleave the columns or extract distractor rows.
+\Cref{fig:multi-column} places independent policy-clause streams side by side. Naive reading order can interleave fields from unrelated clauses.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=\linewidth]{figures/example_multi_column_annot.png}
-    \caption{Two-column layout mixing target content with a reference-only directory table.}
+    \caption{Two-column policy provisions with independent clause streams.}
     \label{fig:multi-column}
 \end{figure}
 
-\Cref{fig:long-range} illustrates long-range evidence for one claim. The target begins on page 4; three join keys recur in distant sections. These crops show only part of the full evidence chain.
+\Cref{fig:long-range} illustrates long-range evidence for one claim. The target begins on page 3; three join keys recur in distant sections. These crops show only part of the full evidence chain.
 
 \begin{figure}[H]
     \centering
     \begin{subfigure}{\linewidth}
         \centering
         \includegraphics[width=\linewidth]{figures/longrange_card.png}
-        \caption{Page 4: a claim card carries reference \texttt{LR23-H8037} \textcircled{\scriptsize 1}, policy \texttt{L23A1955} \textcircled{\scriptsize 2}, and unit \texttt{399841} \textcircled{\scriptsize 3}.}
+        \caption{Page 3: a claim card carries reference \texttt{LR23-H8037} \textcircled{\scriptsize 1}, policy \texttt{L23A1955} \textcircled{\scriptsize 2}, and unit \texttt{399841} \textcircled{\scriptsize 3}.}
         \label{fig:long-range-card}
     \end{subfigure}
     \vspace{0.9em}
     \begin{subfigure}{\linewidth}
         \centering
-        \includegraphics[width=\linewidth]{figures/longrange_index.png}
-        \caption{Page 57: request rows corroborate the account for reference \textcircled{\scriptsize 1}; the attachment index corroborates policy \textcircled{\scriptsize 2}. Middle request rows are omitted from the crop.}
-        \label{fig:long-range-index}
+        \includegraphics[width=\linewidth]{figures/longrange_policy.png}
+        \caption{Page 28: the policy register resolves policy \textcircled{\scriptsize 2} to the named insured.}
+        \label{fig:long-range-policy}
     \end{subfigure}
     \vspace{0.9em}
     \begin{subfigure}{\linewidth}
         \centering
-        \includegraphics[width=\linewidth]{figures/longrange_audit.png}
-        \caption{Page 76: a driver-audit row matches unit \textcircled{\scriptsize 3} and supplies the driver name.}
-        \label{fig:long-range-audit}
+        \includegraphics[width=0.68\linewidth]{figures/longrange_roster_ledger.png}
+        \caption{Page 26 matches unit \textcircled{\scriptsize 3} to a driver; page 60 matches reference \textcircled{\scriptsize 1} to financial fields.}
+        \label{fig:long-range-roster-ledger}
     \end{subfigure}
-    \caption{Three distant references for one target claim. The complete record uses six evidence sections; unrelated rows are cropped out.}
+    \caption{Distant references for one target claim. The complete record uses six evidence sections; unrelated rows are cropped out.}
     \label{fig:long-range}
 \end{figure}
 
-The three crops are illustrative, not complete provenance. The scored claim has 24 top-level fields plus nested financials. Its metadata maps six evidence blocks: intake cards, driver assignments, policy registers, cause narratives, claimant notices, and financial ledgers. The first and last primary blocks are separated by at least 64 pages, so extraction must preserve several join keys across the packet.
+The crops are illustrative, not complete provenance. The scored claim has 24 top-level fields plus nested financials. Its metadata maps six evidence blocks: intake cards, driver assignments, policy registers, cause narratives, claimant notices, and financial ledgers. The first and last primary blocks are 57 pages apart, so extraction must preserve several join keys across the packet.
 
-The current release prioritizes fewer, larger, more realistic PDFs rather than many small template variants. This choice reflects the intended use case: measuring list-completeness failures at scale. Several PDFs contain more than 1{,}000 target records, and the full corpus contains 33{,}450 target records across 36 PDFs.
+The current release prioritizes fewer, larger, more realistic PDFs rather than many small template variants. This choice reflects the intended use case: measuring list-completeness failures at scale. Several PDFs contain more than 1{,}000 target records, and the full corpus contains 29{,}599 target records across 32 PDFs.
 
 \subsection{Corpus inventory}
-The release favors fewer, larger PDFs: 30 operations documents contain 31{,}884 targets, three claim packets contain 77, and three policy packets contain 1{,}489. \Cref{tab:dataset-scale} in the appendix gives the complete technical family inventory.
+The release favors fewer, larger PDFs: 26 operations documents contain 28{,}178 targets, three claim packets contain 77, and three policy packets contain 1{,}344. \Cref{tab:dataset-scale} in the appendix gives the complete technical family inventory.
 
 \subsection{Evaluation configurations}
 Each instance carries three levels of metadata. The \texttt{hf\_config} field assigns one of three release configurations (\Cref{tab:evaluation-configurations}), \texttt{complexity\_regime} identifies its document family, and \texttt{problems} records cross-cutting stressors. A PDF can therefore be large, multi-table, OCR-conditioned, and long-range at the same time.
@@ -210,11 +210,11 @@ Each instance carries three levels of metadata. The \texttt{hf\_config} field as
 \toprule
 Configuration & PDFs & Records & Main contents \\
 \midrule
-Core operations & 30 & 31{,}884 & High-density repeated records, production-like tables and exports, OCR preservation, cross-section joins, and output completeness. \\
+Core operations & 26 & 28{,}178 & High-density repeated records, production-like tables and exports, OCR preservation, cross-section joins, and output completeness. \\
 Claim multi-hop & 3 & 77 & Long-range joins from claim schedules to policy registers, driver rosters, claimant indexes, cause-code appendices, and ledgers. \\
-Policy packets & 3 & 1{,}489 & Heterogeneous policy records across declarations, locations or classifications, forms, material clauses, endorsements, rating schedules, and premium summaries. \\
+Policy packets & 3 & 1{,}344 & Heterogeneous policy records across declarations, locations or classifications, forms, material clauses, endorsements, rating schedules, and premium summaries. \\
 \midrule
-\textbf{Total} & \textbf{36} & \textbf{33{,}450} & \\
+\textbf{Total} & \textbf{32} & \textbf{29{,}599} & \\
 \bottomrule
 \end{tabular}
 \end{table}

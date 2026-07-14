@@ -1,0 +1,369 @@
+{
+  "schema_version": 1,
+  "min_abs": 10.0,
+  "checked_numeric_fields": 76968,
+  "documents_with_misses": 12,
+  "total_misses": 56,
+  "misses": {
+    "ifta_mileage_by_vehicle_001": [
+      {
+        "record_index": 44,
+        "record_key": null,
+        "field": "total_miles",
+        "value": 3768.5
+      },
+      {
+        "record_index": 517,
+        "record_key": null,
+        "field": "total_miles",
+        "value": 3323.5
+      },
+      {
+        "record_index": 885,
+        "record_key": null,
+        "field": "total_miles",
+        "value": 4729.8
+      },
+      {
+        "record_index": 954,
+        "record_key": null,
+        "field": "total_miles",
+        "value": 5176.7
+      }
+    ],
+    "ifta_mileage_by_vehicle_002": [
+      {
+        "record_index": 161,
+        "record_key": null,
+        "field": "total_miles",
+        "value": 3129.0
+      },
+      {
+        "record_index": 164,
+        "record_key": null,
+        "field": "total_miles",
+        "value": 3941.6
+      },
+      {
+        "record_index": 167,
+        "record_key": null,
+        "field": "total_miles",
+        "value": 1620.9
+      },
+      {
+        "record_index": 168,
+        "record_key": null,
+        "field": "total_miles",
+        "value": 1700.6
+      },
+      {
+        "record_index": 171,
+        "record_key": null,
+        "field": "total_miles",
+        "value": 5396.3
+      },
+      {
+        "record_index": 173,
+        "record_key": null,
+        "field": "total_miles",
+        "value": 6835.1
+      },
+      {
+        "record_index": 177,
+        "record_key": null,
+        "field": "total_miles",
+        "value": 5860.9
+      },
+      {
+        "record_index": 179,
+        "record_key": null,
+        "field": "total_miles",
+        "value": 3573.9
+      },
+      {
+        "record_index": 695,
+        "record_key": null,
+        "field": "total_miles",
+        "value": 6644.3
+      },
+      {
+        "record_index": 701,
+        "record_key": null,
+        "field": "total_miles",
+        "value": 6850.0
+      },
+      {
+        "record_index": 706,
+        "record_key": null,
+        "field": "total_miles",
+        "value": 4738.2
+      },
+      {
+        "record_index": 708,
+        "record_key": null,
+        "field": "total_miles",
+        "value": 1849.4
+      }
+    ],
+    "ifta_mileage_by_vehicle_003": [
+      {
+        "record_index": 643,
+        "record_key": null,
+        "field": "identified_miles",
+        "value": 5373.1
+      },
+      {
+        "record_index": 1109,
+        "record_key": null,
+        "field": "identified_miles",
+        "value": 786.3
+      },
+      {
+        "record_index": 1109,
+        "record_key": null,
+        "field": "total_miles",
+        "value": 786.3
+      },
+      {
+        "record_index": 1300,
+        "record_key": null,
+        "field": "total_miles",
+        "value": 4002.9
+      }
+    ],
+    "ifta_mileage_by_vehicle_005": [
+      {
+        "record_index": 616,
+        "record_key": null,
+        "field": "total_miles",
+        "value": 6999.4
+      },
+      {
+        "record_index": 709,
+        "record_key": null,
+        "field": "identified_miles",
+        "value": 3723.6
+      },
+      {
+        "record_index": 1192,
+        "record_key": null,
+        "field": "total_miles",
+        "value": 1635.8
+      },
+      {
+        "record_index": 1392,
+        "record_key": null,
+        "field": "total_miles",
+        "value": 5552.9
+      },
+      {
+        "record_index": 1762,
+        "record_key": null,
+        "field": "total_miles",
+        "value": 5227.3
+      },
+      {
+        "record_index": 1769,
+        "record_key": null,
+        "field": "total_miles",
+        "value": 5982.6
+      }
+    ],
+    "ifta_mileage_by_vehicle_007": [
+      {
+        "record_index": 221,
+        "record_key": null,
+        "field": "total_miles",
+        "value": 5451.4
+      },
+      {
+        "record_index": 270,
+        "record_key": null,
+        "field": "total_miles",
+        "value": 6884.8
+      },
+      {
+        "record_index": 1272,
+        "record_key": null,
+        "field": "total_miles",
+        "value": 3686.2
+      },
+      {
+        "record_index": 1276,
+        "record_key": null,
+        "field": "identified_miles",
+        "value": 1157.3
+      },
+      {
+        "record_index": 1429,
+        "record_key": null,
+        "field": "total_miles",
+        "value": 5658.1
+      },
+      {
+        "record_index": 1828,
+        "record_key": null,
+        "field": "total_miles",
+        "value": 2816.4
+      }
+    ],
+    "ifta_mileage_by_vehicle_008": [
+      {
+        "record_index": 175,
+        "record_key": null,
+        "field": "identified_miles",
+        "value": 5939.1
+      },
+      {
+        "record_index": 175,
+        "record_key": null,
+        "field": "total_miles",
+        "value": 5939.1
+      }
+    ],
+    "ifta_multisection_return_001": [
+      {
+        "record_index": 142,
+        "record_key": "TN",
+        "field": "total_miles",
+        "value": 175547.0
+      }
+    ],
+    "ifta_multisection_return_002": [
+      {
+        "record_index": 391,
+        "record_key": "UT",
+        "field": "total_due_refund",
+        "value": -8646.31
+      }
+    ],
+    "ifta_return_schedule_002": [
+      {
+        "record_index": 120,
+        "record_key": "NE",
+        "field": "tax_due_credit",
+        "value": 1549.54
+      },
+      {
+        "record_index": 120,
+        "record_key": "NE",
+        "field": "total_due",
+        "value": 1549.54
+      },
+      {
+        "record_index": 184,
+        "record_key": "OR",
+        "field": "distance_miles",
+        "value": 45656.0
+      },
+      {
+        "record_index": 184,
+        "record_key": "OR",
+        "field": "taxable_distance_miles",
+        "value": 45656.0
+      },
+      {
+        "record_index": 244,
+        "record_key": null,
+        "field": "tax_paid_volume",
+        "value": 46362.0
+      },
+      {
+        "record_index": 482,
+        "record_key": "KS",
+        "field": "tax_due_credit",
+        "value": 1929.99
+      },
+      {
+        "record_index": 482,
+        "record_key": "KS",
+        "field": "total_due",
+        "value": 1929.99
+      },
+      {
+        "record_index": 954,
+        "record_key": "IL",
+        "field": "tax_due_credit",
+        "value": 1341.48
+      },
+      {
+        "record_index": 954,
+        "record_key": "IL",
+        "field": "total_due",
+        "value": 1341.48
+      }
+    ],
+    "ifta_return_schedule_005": [
+      {
+        "record_index": 54,
+        "record_key": "OR",
+        "field": "net_taxable_volume",
+        "value": -1144.0
+      },
+      {
+        "record_index": 678,
+        "record_key": "NV",
+        "field": "net_taxable_volume",
+        "value": -9342.0
+      },
+      {
+        "record_index": 911,
+        "record_key": "WY",
+        "field": "distance_miles",
+        "value": 37877.0
+      },
+      {
+        "record_index": 911,
+        "record_key": "WY",
+        "field": "taxable_distance_miles",
+        "value": 37877.0
+      }
+    ],
+    "ifta_tax_summary_001": [
+      {
+        "record_index": 241,
+        "record_key": "OR",
+        "field": "tax_due_refund",
+        "value": 21728.74
+      },
+      {
+        "record_index": 333,
+        "record_key": "WV",
+        "field": "total_miles",
+        "value": 228828.0
+      },
+      {
+        "record_index": 516,
+        "record_key": "IA",
+        "field": "total_miles",
+        "value": 138613.0
+      },
+      {
+        "record_index": 670,
+        "record_key": "WI",
+        "field": "taxable_miles",
+        "value": 181845.0
+      },
+      {
+        "record_index": 679,
+        "record_key": "FL",
+        "field": "total_due_refund",
+        "value": 8623.88
+      }
+    ],
+    "ifta_tax_summary_002": [
+      {
+        "record_index": 55,
+        "record_key": "KS",
+        "field": "net_taxable_gallons",
+        "value": -1942.0
+      },
+      {
+        "record_index": 323,
+        "record_key": "OH",
+        "field": "taxable_miles",
+        "value": 187840.0
+      }
+    ]
+  }
+}

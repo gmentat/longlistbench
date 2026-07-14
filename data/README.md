@@ -6,7 +6,7 @@ The intended task is per-document extraction: a system receives one PDF or OCR t
 
 ## Contents
 
-- `manifest.json` is the source of truth for the 36 released PDFs.
+- `manifest.json` is the source of truth for the 32 released PDFs.
 - `pdfs/` contains rendered source PDFs.
 - `html/` contains the HTML sources used to render the PDFs.
 - `ground_truth/` contains one JSON target list per PDF.
@@ -16,13 +16,13 @@ The intended task is per-document extraction: a system receives one PDF or OCR t
 
 ## Scale
 
-- 36 PDFs.
-- 33,450 target records.
-- 30 core commercial operations PDFs with 31,884 records.
+- 32 PDFs and 1,773 pages.
+- 29,599 target records.
+- 26 core commercial operations PDFs with 28,178 records.
 - 3 claim multi-hop PDFs with 77 records.
-- 3 policy PDFs with 1,489 records.
+- 3 policy PDFs with 1,344 records.
 
-OCR validation passes on all 36 PDFs. The current transcripts have 100.0% average identifier coverage, 99.9% tracked identifier-field support, 39 target records with at least one tracked identifier missing from OCR, and 0 unrecoverable ground-truth numeric values at the default numeric-fidelity threshold.
+All 32 PDFs have Gemini OCR transcripts. The current transcripts have 99.9% average identifier coverage, 99.9% tracked identifier-field support, and 17 target records with at least one tracked identifier missing from OCR. An audited numeric-fidelity baseline records 56 genuine OCR misses among 76,968 checked numeric fields (0.073%); CI verifies that exact miss set rather than silently correcting the OCR output.
 
 ## Complexity Stressors
 

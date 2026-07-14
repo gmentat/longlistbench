@@ -163,6 +163,7 @@ def address_for(idx: int, rng: random.Random) -> str:
 def generate_bop_items(config: PolicyMultiHopCaseConfig, profile: dict[str, str], base_seed: int) -> list[dict[str, Any]]:
     rng = random.Random(stable_seed(base_seed, config.id, config.seed_offset))
     items: list[dict[str, Any]] = []
+    endorsed_coverages: set[str] = set()
     premises: list[tuple[str, str, str, str, str]] = []
     for idx, (location_number, building_number) in enumerate(
         [("001", "001"), ("002", "001"), ("001", "002"), ("002", "002")]
@@ -175,7 +176,10 @@ def generate_bop_items(config: PolicyMultiHopCaseConfig, profile: dict[str, str]
         limit = 50_000 + (idx % 10) * 25_000 + rng.choice([0, 10_000, 25_000])
         deductible = rng.choice([500, 1_000, 2_500, 5_000, 10_000])
         premium = 145 + idx * 31 + rng.randrange(0, 130)
-        endorsement = f"BP-EN-{idx + 1:03d}" if idx % 3 != 1 else ""
+        endorsement = ""
+        if coverage not in endorsed_coverages:
+            endorsed_coverages.add(coverage)
+            endorsement = f"BP-EN-{len(endorsed_coverages):03d}"
         items.append(
             {
                 "item_id": f"BOP-{idx + 1:04d}",
@@ -209,6 +213,7 @@ def generate_bop_items(config: PolicyMultiHopCaseConfig, profile: dict[str, str]
 def generate_wc_items(config: PolicyMultiHopCaseConfig, profile: dict[str, str], base_seed: int) -> list[dict[str, Any]]:
     rng = random.Random(stable_seed(base_seed, config.id, config.seed_offset))
     items: list[dict[str, Any]] = []
+    endorsed_form_titles: set[str] = set()
     exp_mod = f"{rng.choice([0.87, 0.92, 0.98, 1.04, 1.11]):.2f}"
     schedule_credit = rng.choice(["-5%", "-2%", "0%", "+3%"])
     for idx in range(config.num_items):
@@ -216,7 +221,19 @@ def generate_wc_items(config: PolicyMultiHopCaseConfig, profile: dict[str, str],
         payroll = 42_000 + idx * 11_500 + rng.randrange(0, 9_000)
         manual_rate = rng.choice([0.18, 0.27, 0.42, 0.74, 1.15, 2.86, 4.35, 6.22])
         premium = int((payroll / 100) * manual_rate)
-        endorsement = f"WC-EN-{idx + 1:03d}" if idx % 4 in {0, 3} else ""
+        form_number = rng.choice(["WC 00 00 00 C", "WC 00 00 01 A", "WC 00 03 13", "WC 04 03 06"])
+        form_title = rng.choice(
+            [
+                "Workers Compensation and Employers Liability Policy",
+                "Information Page",
+                "Waiver of Our Right to Recover",
+                "Voluntary Compensation Endorsement",
+            ]
+        )
+        endorsement = ""
+        if form_title not in endorsed_form_titles:
+            endorsed_form_titles.add(form_title)
+            endorsement = f"WC-EN-{len(endorsed_form_titles):03d}"
         items.append(
             {
                 "item_id": f"WC-{idx + 1:04d}",
@@ -235,15 +252,8 @@ def generate_wc_items(config: PolicyMultiHopCaseConfig, profile: dict[str, str],
                 "governing_class": "Yes" if idx == 0 else "No",
                 "location_number": str((idx % 5) + 1),
                 "premium_basis": "Payroll per $100 remuneration",
-                "form_number": rng.choice(["WC 00 00 00 C", "WC 00 00 01 A", "WC 00 03 13", "WC 04 03 06"]),
-                "form_title": rng.choice(
-                    [
-                        "Workers Compensation and Employers Liability Policy",
-                        "Information Page",
-                        "Waiver of Our Right to Recover",
-                        "Voluntary Compensation Endorsement",
-                    ]
-                ),
+                "form_number": form_number,
+                "form_title": form_title,
                 "edition_date": rng.choice(["01 15", "04 21", "07 23"]),
                 "endorsement_number": endorsement,
                 "endorsement_effective_date": f"{(idx % 12) + 1:02d}/01/2026" if endorsement else "",
@@ -280,6 +290,7 @@ def generate_cgl_items(config: PolicyMultiHopCaseConfig, profile: dict[str, str]
         "Designated Professional Services Exclusion",
     ]
     items: list[dict[str, Any]] = []
+    endorsed_exclusions: set[str] = set()
     for idx in range(config.num_items):
         class_code, classification, exposure_basis = CGL_CLASSES[idx % len(CGL_CLASSES)]
         limit_type, limit = limit_types[idx % len(limit_types)]
@@ -287,7 +298,11 @@ def generate_cgl_items(config: PolicyMultiHopCaseConfig, profile: dict[str, str]
         exposure = 75_000 + idx * 13_500 + rng.randrange(0, 20_000)
         rate = rng.choice([0.112, 0.184, 0.245, 0.392, 0.515, 0.744])
         premium = int((exposure / 1000) * rate * 100)
-        endorsement = f"GL-EN-{idx + 1:03d}" if idx % 5 in {0, 2, 4} else ""
+        exclusion_name = exclusions[idx % len(exclusions)]
+        endorsement = ""
+        if exclusion_name not in endorsed_exclusions:
+            endorsed_exclusions.add(exclusion_name)
+            endorsement = f"GL-EN-{len(endorsed_exclusions):03d}"
         items.append(
             {
                 "item_id": f"CGL-{idx + 1:04d}",
@@ -310,7 +325,7 @@ def generate_cgl_items(config: PolicyMultiHopCaseConfig, profile: dict[str, str]
                 "form_number": form_number,
                 "form_title": form_title,
                 "edition_date": rng.choice(["04 13", "12 19", "09 21", "01 24"]),
-                "exclusion_name": exclusions[idx % len(exclusions)],
+                "exclusion_name": exclusion_name,
                 "endorsement_number": endorsement,
                 "endorsement_effective_date": f"{(idx % 12) + 1:02d}/20/2026" if endorsement else "",
                 "materiality": MATERIALITY[(idx + rng.randrange(len(MATERIALITY))) % len(MATERIALITY)],
@@ -347,9 +362,7 @@ def _primary_record(config: PolicyMultiHopCaseConfig, item: dict[str, Any]) -> d
 
 def _form_record(item: dict[str, Any]) -> dict[str, Any]:
     record = _base_record(item, "policy_form_item", f"FORM-{item['item_id']}")
-    schedule_source = item.get("endorsement_number") or "Policy jacket"
-    if item["lob"] == "BOP" and item.get("endorsement_number"):
-        schedule_source = "Endorsement attached"
+    schedule_source = "Endorsement attached" if item.get("endorsement_number") else "Policy jacket"
     record.update(
         {
             "item_id": item["item_id"],
@@ -479,16 +492,18 @@ def _clause_text(item: dict[str, Any], clause_title: str) -> str:
         if clause_title == "Limit And Deductible Application":
             return (
                 f"The scheduled limit of {item['limit']} and deductible of {item['deductible']} "
-                f"apply to {item['coverage']} at the described premises."
+                f"apply to {scope} under form {item['form_number']} edition {item['edition_date']}."
             )
         if clause_title == "Valuation Records Requirement":
             return (
                 f"The insured must keep records supporting the {item['valuation']} valuation basis, "
-                f"{item['coinsurance']} coinsurance entry, and {item['business_income_basis']} business income basis."
+                f"{item['coinsurance']} coinsurance entry, and {item['business_income_basis']} business income "
+                f"basis for {scope}."
             )
         return (
-            f"If schedules conflict for {scope}, the endorsement or form entry with the later effective date "
-            f"controls the affected coverage."
+            f"If schedules conflict for {scope}, form {item['form_number']} edition {item['edition_date']} "
+            f"and any endorsement with a later effective date control the {item['limit']} limit and "
+            f"{item['deductible']} deductible."
         )
     if item["lob"] == "WC":
         scope = _clause_scope(item)
@@ -500,16 +515,19 @@ def _clause_text(item: dict[str, Any], clause_title: str) -> str:
         if clause_title == "State Classification Control":
             return (
                 f"The {item['state']} classification {item['class_code']} controls the rating basis for "
-                f"{item['classification']} unless a state amendatory endorsement changes it."
+                f"{item['classification']} at Location {item['location_number']}; form {item['form_number']} "
+                f"edition {item['edition_date']} applies unless a state amendatory endorsement changes it."
             )
         if clause_title == "Officer And Subcontractor Treatment":
             return (
                 f"Officer, member, volunteer, leased-worker, and subcontractor treatment for {scope} must be "
-                f"read with the attached forms schedule."
+                f"read with form {item['form_number']} edition {item['edition_date']} and the "
+                f"{item['annual_payroll']} remuneration entry."
             )
         return (
             f"The estimated premium of {item['estimated_premium']} is calculated from rate {item['manual_rate']}, "
-            f"experience modification {item['experience_mod']}, and schedule rating {item['schedule_credit_debit']}."
+            f"experience modification {item['experience_mod']}, and schedule rating "
+            f"{item['schedule_credit_debit']} for {scope}."
         )
     scope = _clause_scope(item)
     if clause_title == "Classification And Territory Limitation":
@@ -520,12 +538,14 @@ def _clause_text(item: dict[str, Any], clause_title: str) -> str:
     if clause_title == "Aggregate Limit Application":
         return (
             f"The {item['limit_type']} limit of {item['limit']} applies with the Commercial General Liability "
-            f"coverage part and does not increase another aggregate."
+            f"coverage part for {scope}, rated on {item['exposure_basis'].lower()} of {item['exposure']}, "
+            f"and does not increase another aggregate."
         )
     if clause_title == "Additional Insured Contract Gate":
         return (
             f"Additional insured status for {scope} applies only when the contract requirement and attached "
-            f"form {item['form_number']} are both satisfied."
+            f"form {item['form_number']} edition {item['edition_date']} are both satisfied; the "
+            f"{item['exclusion_name']} provision remains applicable."
         )
     return (
         f"The {item['exclusion_name']} provision and form {item['form_number']} edition {item['edition_date']} "
@@ -660,9 +680,7 @@ def build_policy_target_records(
     for item in primary_items:
         records.extend(build_policy_clause_records_for_item(item))
     records = [_strip_document_record(record, lob=config.lob) for record in records]
-    if config.lob == "BOP":
-        records = _dedupe_policy_records(records)
-    return records
+    return _dedupe_policy_records(records)
 
 
 def _strip_document_record(record: dict[str, Any], *, lob: str) -> dict[str, Any]:
@@ -670,12 +688,12 @@ def _strip_document_record(record: dict[str, Any], *, lob: str) -> dict[str, Any
     hidden_fields = {
         "record_id",
         "applies_to_record_id",
+        "item_id",
+        "endorsement_number",
     }
     if lob == "BOP":
         hidden_fields.update(
             {
-                "item_id",
-                "endorsement_number",
                 "materiality",
             }
         )

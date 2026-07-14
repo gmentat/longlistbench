@@ -4,7 +4,6 @@
   "complexity_regime": "policy_multi_hop",
   "format": "crosspage",
   "domain": "policy_review",
-  "hf_config": "policy_packets",
   "lob": "WC",
   "target_record_type": "policy_packet_item",
   "target_record_types": [
@@ -26,13 +25,11 @@
     "clause_type",
     "edition_date",
     "endorsement_effective_date",
-    "endorsement_number",
     "estimated_premium",
     "experience_mod",
     "form_number",
     "form_title",
     "governing_class",
-    "item_id",
     "lob",
     "location_number",
     "manual_rate",
@@ -47,34 +44,33 @@
     "schedule_source",
     "state"
   ],
-  "num_claims": 510,
-  "num_policy_items": 510,
+  "num_claims": 438,
+  "num_policy_items": 438,
   "num_primary_policy_items": 60,
-  "num_target_records": 510,
-  "pages_estimate": 220,
-  "pdf_page_count": 220,
+  "num_target_records": 438,
+  "pages_estimate": 108,
+  "pdf_page_count": 108,
   "document_count": 1,
   "evidence_pattern": "single_document_policy_packet_long_range_join",
-  "minimum_gap_pages_between_primary_and_last_evidence": 116,
+  "minimum_gap_pages_between_primary_and_last_evidence": 60,
   "problems": [
-    "workers_compensation_policy",
     "class_code_payroll_rating",
+    "distractor_sections",
     "experience_mod_and_schedule_rating",
-    "material_clause_extraction",
-    "long_range_evidence",
     "heterogeneous_record_list",
+    "inherited_context",
+    "large_doc",
+    "long_range_evidence",
+    "material_clause_extraction",
+    "multi_column",
+    "multi_row",
+    "multiple_tables",
+    "natural_long_range_join",
+    "non_target_rows",
     "ocr_condition",
     "page_breaks",
-    "large_doc",
-    "multiple_tables",
-    "multi_row",
-    "multi_column",
-    "duplicates",
-    "distractor_sections",
-    "natural_long_range_join",
-    "inherited_context",
     "split_records",
-    "non_target_rows"
+    "workers_compensation_policy"
   ],
   "layout_templates": [
     "declarations",
@@ -88,31 +84,45 @@
     "policy_conditions"
   ],
   "record_collections": {
-    "policy_clause_item": 240,
-    "policy_endorsement_item": 30,
-    "policy_form_item": 60,
-    "policy_location_item": 60,
+    "wc_class_code_item": 60,
+    "policy_location_item": 41,
+    "policy_form_item": 33,
+    "policy_endorsement_item": 4,
     "policy_premium_item": 60,
-    "wc_class_code_item": 60
+    "policy_clause_item": 240
   },
   "synthetic_text": {
     "source": "synthetic",
     "real_documents_used_for": "structural reference only",
     "copied_source_text": false,
     "text_generation": {
-      "generator": "template",
-      "model": null
+      "generator": "gemini",
+      "model": "gemini-3.1-pro-preview",
+      "thinking_level": "high",
+      "prompt_files": [
+        "policy_writer_system.md",
+        "policy_page_bank.md",
+        "wc_examples.md"
+      ],
+      "page_kinds": {
+        "policy_form": 10,
+        "coverage_form": 0,
+        "notice": 4,
+        "amendatory": 4,
+        "billing": 4,
+        "endorsement": 4
+      }
     }
   },
   "has_duplicates": false,
   "seed": 195680388151197,
   "join_requirements": [
-    "class_code_item_id -> workers compensation information page",
+    "state/class_code/location_number -> workers compensation information page",
     "state/class_code -> classification schedule",
     "state/class_code -> payroll and rate schedule",
     "form_number -> forms and endorsements schedule",
-    "endorsement_number -> owner/officer or waiver detail pages",
-    "class_code_item_id -> premium summary",
+    "form_number/edition_date/state/class_code -> endorsement detail pages",
+    "state/class_code/location_number -> premium summary",
     "state/class_code/form_number -> material clause pages"
   ],
   "evidence_map": [
@@ -127,7 +137,7 @@
     },
     {
       "section": "classification_schedule",
-      "approx_page_after_cover": 41,
+      "approx_page_after_cover": 21,
       "join_key": "state/class_code",
       "fields": [
         "classification",
@@ -136,8 +146,8 @@
     },
     {
       "section": "payroll_and_rate_schedule",
-      "approx_page_after_cover": 42,
-      "join_key": "class_code_item_id",
+      "approx_page_after_cover": 22,
+      "join_key": "state/class_code/location_number",
       "fields": [
         "annual_payroll",
         "manual_rate",
@@ -146,7 +156,7 @@
     },
     {
       "section": "experience_modification_summary",
-      "approx_page_after_cover": 43,
+      "approx_page_after_cover": 23,
       "join_key": "policy_number",
       "fields": [
         "experience_mod",
@@ -155,7 +165,7 @@
     },
     {
       "section": "forms_and_endorsements_schedule",
-      "approx_page_after_cover": 74,
+      "approx_page_after_cover": 40,
       "join_key": "form_number",
       "fields": [
         "form_title",
@@ -164,8 +174,8 @@
     },
     {
       "section": "endorsement_detail_pages",
-      "approx_page_after_cover": 101,
-      "join_key": "endorsement_number",
+      "approx_page_after_cover": 55,
+      "join_key": "form_number/edition_date/state_or_location/class_code",
       "fields": [
         "endorsement_effective_date",
         "materiality"
@@ -173,7 +183,7 @@
     },
     {
       "section": "material_policy_provisions",
-      "approx_page_after_cover": 75,
+      "approx_page_after_cover": 41,
       "join_key": "form_number/state_or_location/class_code",
       "fields": [
         "clause_title",
@@ -184,8 +194,8 @@
     },
     {
       "section": "premium_summary",
-      "approx_page_after_cover": 124,
-      "join_key": "item_id",
+      "approx_page_after_cover": 68,
+      "join_key": "state_or_location/class_code/exposure_or_payroll",
       "fields": [
         "premium",
         "estimated_premium"
@@ -196,25 +206,34 @@
     "ground_truth": "ground_truth/multihop_wc_025_001.json",
     "pdf": "pdfs/multihop_wc_025_001.pdf",
     "html": "html/multihop_wc_025_001.html",
+    "metadata": "metadata/multihop_wc_025_001.json",
     "ocr_md": "transcripts/ocr_gemini/multihop_wc_025_001.md",
-    "json_size_bytes": 327471,
-    "pdf_size_bytes": 1075715,
-    "html_size_bytes": 828608,
-    "ocr_size_bytes": 603578,
-    "metadata": "metadata/multihop_wc_025_001.json"
+    "json_size_bytes": 293095,
+    "pdf_size_bytes": 976936,
+    "html_size_bytes": 467047,
+    "ocr_size_bytes": 418078
   },
   "transcripts_available": [
     "ocr"
   ],
+  "hf_config": "policy_packets",
   "template": "policy_multihop_wc",
-  "pdf_size_bytes": 1075715,
-  "html_size_bytes": 828608,
-  "layout_revision": {
-    "date": "2026-07-13T17:41:12.604967+00:00",
-    "purpose": "replace generic policy tables with record-specific schedules and eliminate page overflow",
-    "ocr_status": "regenerated_from_current_pdf",
-    "ocr_regenerated_at": "2026-07-13T18:04:41.001836+00:00"
+  "provenance": null,
+  "html_pagination_mode": "flowing_sections",
+  "pdf_size_bytes": 976936,
+  "html_size_bytes": 467047,
+  "json_size_bytes": 293095,
+  "ocr_md_size_bytes": 418078,
+  "artifacts": {
+    "pdf_sha256": "117232c24b815a89d2319a5d355b178eb291b14a7c055bf3483ac645b0440e7e",
+    "html_sha256": "5631811cb6b32020d4f1a1a5db659e830a4790338fe7f208c6e5ba3df20bbf0d",
+    "ground_truth_sha256": "531db13aa0ddde01090932db07a81307cce07ecf78ae2005d22252c6a17b3201",
+    "ocr_sha256": "f7bdd7bd52f2c817ae4a454ed3e6448dfe76033df1d0e48278de6c2c5130c0e4"
   },
-  "ocr_md_size_bytes": 603578,
-  "json_size_bytes": 327471
+  "layout_revision": {
+    "date": "2026-07-14T08:45:41.915541+00:00",
+    "purpose": "improve production-like document structure and layout variation",
+    "ocr_status": "regenerated_from_current_pdf",
+    "ocr_regenerated_at": "2026-07-14T12:32:38.999604+00:00"
+  }
 }

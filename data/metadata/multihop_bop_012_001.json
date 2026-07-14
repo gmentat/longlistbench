@@ -4,7 +4,6 @@
   "complexity_regime": "policy_multi_hop",
   "format": "crosspage",
   "domain": "policy_review",
-  "hf_config": "policy_packets",
   "lob": "BOP",
   "target_record_type": "policy_packet_item",
   "target_record_types": [
@@ -45,33 +44,33 @@
     "schedule_source",
     "valuation"
   ],
-  "num_claims": 360,
-  "num_policy_items": 360,
+  "num_claims": 344,
+  "num_policy_items": 344,
   "num_primary_policy_items": 48,
-  "num_target_records": 360,
-  "pages_estimate": 158,
-  "pdf_page_count": 158,
+  "num_target_records": 344,
+  "pages_estimate": 99,
+  "pdf_page_count": 99,
   "document_count": 1,
   "evidence_pattern": "single_document_policy_packet_long_range_join",
-  "minimum_gap_pages_between_primary_and_last_evidence": 74,
+  "minimum_gap_pages_between_primary_and_last_evidence": 40,
   "problems": [
     "businessowners_policy",
-    "location_scoped_coverage",
+    "distractor_sections",
+    "duplicates",
     "form_endorsement_links",
-    "material_clause_extraction",
-    "long_range_evidence",
     "heterogeneous_record_list",
+    "inherited_context",
+    "large_doc",
+    "location_scoped_coverage",
+    "long_range_evidence",
+    "material_clause_extraction",
+    "multi_column",
+    "multi_row",
+    "natural_long_range_join",
+    "non_target_rows",
     "ocr_condition",
     "page_breaks",
-    "large_doc",
-    "multi_row",
-    "multi_column",
-    "duplicates",
-    "distractor_sections",
-    "natural_long_range_join",
-    "inherited_context",
-    "split_records",
-    "non_target_rows"
+    "split_records"
   ],
   "layout_templates": [
     "declarations",
@@ -86,19 +85,33 @@
   ],
   "record_collections": {
     "bop_coverage_item": 48,
-    "policy_clause_item": 192,
-    "policy_endorsement_item": 32,
-    "policy_form_item": 36,
     "policy_location_item": 4,
-    "policy_premium_item": 48
+    "policy_form_item": 40,
+    "policy_endorsement_item": 12,
+    "policy_premium_item": 48,
+    "policy_clause_item": 192
   },
   "synthetic_text": {
     "source": "synthetic",
     "real_documents_used_for": "structural reference only",
     "copied_source_text": false,
     "text_generation": {
-      "generator": "template",
-      "model": null
+      "generator": "gemini",
+      "model": "gemini-3.1-pro-preview",
+      "thinking_level": "high",
+      "prompt_files": [
+        "policy_writer_system.md",
+        "policy_page_bank.md",
+        "bop_examples.md"
+      ],
+      "page_kinds": {
+        "policy_form": 10,
+        "coverage_form": 12,
+        "notice": 4,
+        "amendatory": 4,
+        "billing": 4,
+        "endorsement": 12
+      }
     }
   },
   "has_duplicates": false,
@@ -124,7 +137,7 @@
     },
     {
       "section": "described_premises_schedule",
-      "approx_page_after_cover": 25,
+      "approx_page_after_cover": 15,
       "join_key": "location_number/building_number",
       "fields": [
         "premises_address"
@@ -132,7 +145,7 @@
     },
     {
       "section": "property_and_liability_coverage_schedule",
-      "approx_page_after_cover": 26,
+      "approx_page_after_cover": 16,
       "join_key": "location_number/building_number/coverage",
       "fields": [
         "limit",
@@ -142,7 +155,7 @@
     },
     {
       "section": "classification_and_rating_schedule",
-      "approx_page_after_cover": 27,
+      "approx_page_after_cover": 17,
       "join_key": "location_number/building_number/class_code",
       "fields": [
         "classification",
@@ -151,7 +164,7 @@
     },
     {
       "section": "forms_and_endorsements_schedule",
-      "approx_page_after_cover": 48,
+      "approx_page_after_cover": 28,
       "join_key": "form_number/edition_date/form_title",
       "fields": [
         "schedule_source"
@@ -159,7 +172,7 @@
     },
     {
       "section": "endorsement_detail_pages",
-      "approx_page_after_cover": 67,
+      "approx_page_after_cover": 39,
       "join_key": "location_number/building_number/coverage/form_number",
       "fields": [
         "endorsement_effective_date",
@@ -169,7 +182,7 @@
     },
     {
       "section": "material_policy_provisions",
-      "approx_page_after_cover": 49,
+      "approx_page_after_cover": 29,
       "join_key": "form_number/coverage/location_number/building_number",
       "fields": [
         "clause_title",
@@ -180,7 +193,7 @@
     },
     {
       "section": "premium_summary",
-      "approx_page_after_cover": 82,
+      "approx_page_after_cover": 48,
       "join_key": "location_number/building_number/coverage",
       "fields": [
         "premium"
@@ -191,25 +204,34 @@
     "ground_truth": "ground_truth/multihop_bop_012_001.json",
     "pdf": "pdfs/multihop_bop_012_001.pdf",
     "html": "html/multihop_bop_012_001.html",
+    "metadata": "metadata/multihop_bop_012_001.json",
     "ocr_md": "transcripts/ocr_gemini/multihop_bop_012_001.md",
-    "json_size_bytes": 239867,
-    "pdf_size_bytes": 823575,
-    "html_size_bytes": 595940,
-    "ocr_size_bytes": 482436,
-    "metadata": "metadata/multihop_bop_012_001.json"
+    "json_size_bytes": 236674,
+    "pdf_size_bytes": 597331,
+    "html_size_bytes": 386363,
+    "ocr_size_bytes": 352710
   },
   "transcripts_available": [
     "ocr"
   ],
+  "hf_config": "policy_packets",
   "template": "policy_multihop_bop",
-  "pdf_size_bytes": 823575,
-  "html_size_bytes": 595940,
-  "layout_revision": {
-    "date": "2026-07-13T17:41:11.467986+00:00",
-    "purpose": "replace generic policy tables with record-specific schedules and eliminate page overflow",
-    "ocr_status": "regenerated_from_current_pdf",
-    "ocr_regenerated_at": "2026-07-13T18:04:41.001836+00:00"
+  "provenance": null,
+  "html_pagination_mode": "flowing_sections",
+  "pdf_size_bytes": 597331,
+  "html_size_bytes": 386363,
+  "json_size_bytes": 236674,
+  "ocr_md_size_bytes": 352710,
+  "artifacts": {
+    "pdf_sha256": "c3fd591135f6611d37a5e487f0824ba533e7e17cfc139e0b9c3b1063f16ce87d",
+    "html_sha256": "c7131b6a204d0ba103c2e1b5cce2c027429f6587afff14f6475611046efe0d71",
+    "ground_truth_sha256": "77910d98b8bd8f403f0805a2e3a1bf7178391fc4cd9121368ba3bfefc7d1f40d",
+    "ocr_sha256": "df253c05bab57c84e279045563f12dea9e3c2d2bda5955121bb406918ac1430b"
   },
-  "ocr_md_size_bytes": 482436,
-  "json_size_bytes": 239867
+  "layout_revision": {
+    "date": "2026-07-14T08:45:41.914997+00:00",
+    "purpose": "improve production-like document structure and layout variation",
+    "ocr_status": "regenerated_from_current_pdf",
+    "ocr_regenerated_at": "2026-07-14T12:32:30.529040+00:00"
+  }
 }

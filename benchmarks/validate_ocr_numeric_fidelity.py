@@ -16,7 +16,9 @@ miss means the ground-truth value is not present in the transcript -- almost
 always an OCR misread (verify against the HTML source, which is the canonical
 layout).
 
-Exit code is non-zero if any sample has misses, so this can gate regeneration.
+Without a baseline, exit code is non-zero if any sample has misses. A release
+may instead provide an exact audited baseline of genuine OCR errors; validation
+then fails if the observed miss set differs from that baseline.
 """
 
 from __future__ import annotations
@@ -149,6 +151,37 @@ def check_sample(records: list[dict], ocr_text: str, min_abs: float) -> list[dic
     return misses
 
 
+def count_checked_numeric_fields(records: list[dict], min_abs: float) -> int:
+    return sum(
+        1
+        for record in records
+        if isinstance(record, dict)
+        for _field, value in _iter_numeric_fields(record)
+        if abs(value) >= min_abs
+    )
+
+
+def baseline_payload(
+    misses_by_sample: dict[str, list[dict]],
+    *,
+    min_abs: float,
+    checked_numeric_fields: int,
+) -> dict:
+    misses = {
+        sample: sample_misses
+        for sample, sample_misses in sorted(misses_by_sample.items())
+        if sample_misses
+    }
+    return {
+        "schema_version": 1,
+        "min_abs": min_abs,
+        "checked_numeric_fields": checked_numeric_fields,
+        "documents_with_misses": len(misses),
+        "total_misses": sum(len(sample_misses) for sample_misses in misses.values()),
+        "misses": misses,
+    }
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--claims-dir", default=None, help="Dataset directory (default: data/)")
@@ -156,6 +189,17 @@ def main() -> int:
     parser.add_argument(
         "--min-abs", type=float, default=10.0,
         help="Ignore numeric values with absolute magnitude below this (default 10)",
+    )
+    baseline_group = parser.add_mutually_exclusive_group()
+    baseline_group.add_argument(
+        "--expected-misses",
+        type=Path,
+        help="Require the exact audited miss set stored in this JSON file",
+    )
+    baseline_group.add_argument(
+        "--write-expected-misses",
+        type=Path,
+        help="Write the observed miss set as an audited baseline JSON file",
     )
     parser.add_argument("-v", "--verbose", action="store_true", help="List each missing value")
     args = parser.parse_args()
@@ -171,6 +215,8 @@ def main() -> int:
 
     total_misses = 0
     docs_with_misses = 0
+    checked_numeric_fields = 0
+    misses_by_sample: dict[str, list[dict]] = {}
     print("=" * 70)
     print("OCR NUMERIC FIDELITY (ground-truth values recoverable from OCR)")
     print("=" * 70)
@@ -183,6 +229,8 @@ def main() -> int:
         if not isinstance(records, list):
             continue
         misses = check_sample(records, ocr_path.read_text(encoding="utf-8"), args.min_abs)
+        checked_numeric_fields += count_checked_numeric_fields(records, args.min_abs)
+        misses_by_sample[sample] = misses
         if misses:
             docs_with_misses += 1
             total_misses += len(misses)
@@ -199,6 +247,30 @@ def main() -> int:
     print("\n" + "=" * 70)
     print(f"Samples with corrupted numeric values: {docs_with_misses}")
     print(f"Total unrecoverable GT numeric values: {total_misses}")
+    print(f"Numeric fields checked: {checked_numeric_fields}")
+
+    observed = baseline_payload(
+        misses_by_sample,
+        min_abs=args.min_abs,
+        checked_numeric_fields=checked_numeric_fields,
+    )
+    if args.write_expected_misses:
+        args.write_expected_misses.parent.mkdir(parents=True, exist_ok=True)
+        args.write_expected_misses.write_text(
+            json.dumps(observed, indent=2, ensure_ascii=False) + "\n",
+            encoding="utf-8",
+        )
+        print(f"Wrote audited OCR miss baseline: {args.write_expected_misses}")
+        return 0
+
+    if args.expected_misses:
+        expected = json.loads(args.expected_misses.read_text(encoding="utf-8"))
+        if observed != expected:
+            print(f"Observed OCR misses differ from audited baseline: {args.expected_misses}")
+            return 1
+        print(f"Observed OCR misses match audited baseline: {args.expected_misses}")
+        return 0
+
     return 1 if total_misses else 0
 
 

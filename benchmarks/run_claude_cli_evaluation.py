@@ -140,13 +140,14 @@ def run_claude(
     timeout_seconds: int,
     model: str,
     effort: str,
+    extra_denied_paths: list[Path] | None = None,
 ) -> tuple[int | str, str, dict | None]:
     cli_version = _claude_cli_version()
     prompt = (workspace / "prompt.md").read_text(encoding="utf-8")
     cmd = [
         "sandbox-exec",
         "-p",
-        sandbox_profile(repo_root),
+        sandbox_profile(repo_root, extra_denied_paths),
         "claude",
         "-p",
         "--model",
@@ -205,6 +206,7 @@ def run_sample(
     model_key: str,
     model: str,
     effort: str,
+    extra_denied_paths: list[Path],
 ) -> tuple[str, int | str, dict | None]:
     pred_path = prediction_path(output_dir, sample, transcript, model_key)
     if pred_path.exists() and pred_path.stat().st_size > 0 and not no_resume:
@@ -225,6 +227,7 @@ def run_sample(
             timeout_seconds,
             model,
             effort,
+            extra_denied_paths,
         )
         (logs_dir / f"{sample}_{transcript}_{model_key}.log").write_text(
             log,
@@ -257,6 +260,7 @@ def _write_run_metadata(
     model_key: str,
     requested_model: str,
     effort: str,
+    extra_denied_paths: list[Path] | None = None,
 ) -> None:
     payload = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
@@ -267,6 +271,9 @@ def _write_run_metadata(
         "transcript": transcript,
         "cli_version_observed_at_metadata_write": _claude_cli_version(),
         "authentication": "Claude subscription; credentials are not stored",
+        "additional_denied_paths": [
+            str(path.resolve()) for path in extra_denied_paths or []
+        ],
         "samples": sample_metadata,
     }
     (output_dir / RUN_METADATA_FILE).write_text(
@@ -287,6 +294,12 @@ def main() -> int:
     parser.add_argument("--model-key", default=DEFAULT_MODEL_KEY, help="Offline scorer model key")
     parser.add_argument("--model", default=DEFAULT_CLAUDE_MODEL, help="Claude model slug")
     parser.add_argument("--effort", default=DEFAULT_CLAUDE_EFFORT, help="Claude effort level")
+    parser.add_argument(
+        "--deny-path",
+        action="append",
+        default=[],
+        help="Additional host path to deny to the Claude process; may be repeated",
+    )
     args = parser.parse_args()
 
     if shutil.which("sandbox-exec") is None:
@@ -302,6 +315,7 @@ def main() -> int:
     output_dir.mkdir(parents=True, exist_ok=True)
     workspace_root = Path(args.workspace_root)
     workspace_root.mkdir(parents=True, exist_ok=True)
+    extra_denied_paths = [Path(path) for path in args.deny_path]
 
     samples = discover_samples(dataset_dir, args.transcript, args.samples)
     statuses: list[tuple[str, int | str]] = []
@@ -320,6 +334,7 @@ def main() -> int:
                 model_key=args.model_key,
                 requested_model=args.model,
                 effort=args.effort,
+                extra_denied_paths=extra_denied_paths,
             )
         print(f"[DONE] {args.model_key} {sample_id} -> {status}", flush=True)
 
@@ -339,6 +354,7 @@ def main() -> int:
                     model_key=args.model_key,
                     model=args.model,
                     effort=args.effort,
+                    extra_denied_paths=extra_denied_paths,
                 )
             )
     else:
@@ -359,6 +375,7 @@ def main() -> int:
                     model_key=args.model_key,
                     model=args.model,
                     effort=args.effort,
+                    extra_denied_paths=extra_denied_paths,
                 )
                 future_to_sample[future] = sample
 
@@ -384,6 +401,7 @@ def main() -> int:
         model_key=args.model_key,
         requested_model=args.model,
         effort=args.effort,
+        extra_denied_paths=extra_denied_paths,
     )
 
     results = run_evaluation_from_saved_predictions(

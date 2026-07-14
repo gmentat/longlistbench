@@ -15,6 +15,11 @@ Good page types:
 
 Coverage-form diversity requirements:
 
+- Generate 28 to 36 substantive paragraphs for every `coverage_form` draft,
+  organized under at least six coverage-specific headings. Each non-heading
+  paragraph should usually contain 25 to 40 words, for roughly 800 to 1,100
+  words per form. The rendered form must fill a two-column policy page without
+  generic padding.
 - Do not reuse a single clause skeleton across coverages.
 - For equipment breakdown, write about breakdown events, diagnostic costs,
   utility interruption, spoilage, pressure systems, and covered equipment
