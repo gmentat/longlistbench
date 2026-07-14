@@ -1,11 +1,12 @@
 import json
+from pathlib import Path
 from types import SimpleNamespace
 
 from benchmarks import run_codex_cli_evaluation as runner
 
 
 def test_status_summary_fails_when_any_sample_fails() -> None:
-    assert runner._all_statuses_succeeded([("a", 0), ("b", "skip")])
+    assert runner._all_statuses_succeeded([("a", 0), ("b", "skip"), ("c", "attest")])
     assert not runner._all_statuses_succeeded([])
     assert not runner._all_statuses_succeeded([("a", 0), ("b", "timeout")])
     assert not runner._all_statuses_succeeded([("a", "error: invalid JSON")])
@@ -84,3 +85,51 @@ reasoning effort: xhigh
 
 def test_codex_log_header_requires_model_and_effort() -> None:
     assert runner._parse_codex_log_header("OpenAI Codex v0.144.4\nmodel: gpt-5.6-sol\n") is None
+    assert runner._cli_versions_match("v0.144.4", "codex-cli 0.144.4")
+    assert not runner._cli_versions_match("v0.143.0", "codex-cli 0.144.4")
+
+
+def test_resume_requires_matching_input_and_prediction_hashes(tmp_path) -> None:
+    workspace = tmp_path / "workspace"
+    workspace.mkdir()
+    (workspace / "document_ocr.md").write_text("transcript", encoding="utf-8")
+    (workspace / "field_contract.md").write_text("contract", encoding="utf-8")
+    (workspace / "prompt.md").write_text("prompt", encoding="utf-8")
+    pred_path = tmp_path / "prediction.json"
+    pred_path.write_text("[]", encoding="utf-8")
+    manifest_path = tmp_path / "manifest.json"
+    manifest_path.write_text("{}", encoding="utf-8")
+
+    expected = runner._build_workspace_provenance(
+        workspace=workspace,
+        output_file=runner.OUTPUT_FILE_RECORDS,
+        sample="sample",
+        transcript="ocr",
+        model_key="codex_gpt56_sol",
+        requested_model="gpt-5.6-sol",
+        effort="xhigh",
+        dataset_manifest_path=manifest_path,
+        runner_source_path=Path(__file__),
+        runtime_version="codex-cli test",
+    )
+    metadata = runner._bind_prediction_provenance(expected, pred_path)
+
+    assert runner._resume_metadata_matches(metadata, expected, pred_path)
+    pred_path.write_text("[{}]", encoding="utf-8")
+    assert not runner._resume_metadata_matches(metadata, expected, pred_path)
+
+    pred_path.write_text("[]", encoding="utf-8")
+    (workspace / "document_ocr.md").write_text("changed transcript", encoding="utf-8")
+    changed = runner._build_workspace_provenance(
+        workspace=workspace,
+        output_file=runner.OUTPUT_FILE_RECORDS,
+        sample="sample",
+        transcript="ocr",
+        model_key="codex_gpt56_sol",
+        requested_model="gpt-5.6-sol",
+        effort="xhigh",
+        dataset_manifest_path=manifest_path,
+        runner_source_path=Path(__file__),
+        runtime_version="codex-cli test",
+    )
+    assert not runner._resume_metadata_matches(metadata, changed, pred_path)

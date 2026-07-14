@@ -13,6 +13,7 @@ allowlist. The runner validates the output and saves the normalized prediction.
 """
 
 import argparse
+import hashlib
 import json
 import os
 import re
@@ -86,6 +87,58 @@ def discover_samples(dataset_dir: Path, transcript: str, requested: list[str] | 
 
 def prediction_path(output_dir: Path, sample: str, transcript: str, model_key: str) -> Path:
     return output_dir / f"{sample}_{transcript}_{model_key}_predicted.json"
+
+
+def _sha256_file(path: Path) -> str:
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def _build_workspace_provenance(
+    *,
+    workspace: Path,
+    output_file: Path,
+    sample: str,
+    transcript: str,
+    model_key: str,
+    requested_model: str,
+    effort: str,
+    dataset_manifest_path: Path,
+    runner_source_path: Path,
+    runtime_version: str | None,
+) -> dict[str, str]:
+    provenance = {
+        "sample": sample,
+        "transcript": transcript,
+        "model_key": model_key,
+        "requested_model": requested_model,
+        "effort": effort,
+        "runtime_version": runtime_version or "unknown",
+        "output_file": output_file.as_posix(),
+        "dataset_manifest_sha256": _sha256_file(dataset_manifest_path),
+        "runner_source_sha256": _sha256_file(runner_source_path),
+        "transcript_sha256": _sha256_file(workspace / "document_ocr.md"),
+        "field_contract_sha256": _sha256_file(workspace / "field_contract.md"),
+        "prompt_sha256": _sha256_file(workspace / "prompt.md"),
+    }
+    encoded = json.dumps(provenance, sort_keys=True, separators=(",", ":")).encode("utf-8")
+    provenance["input_fingerprint_sha256"] = hashlib.sha256(encoded).hexdigest()
+    return provenance
+
+
+def _bind_prediction_provenance(provenance: dict[str, str], pred_path: Path) -> dict[str, str]:
+    return {**provenance, "prediction_sha256": _sha256_file(pred_path)}
+
+
+def _resume_metadata_matches(
+    metadata: dict | None,
+    expected: dict[str, str],
+    pred_path: Path,
+) -> bool:
+    if not isinstance(metadata, dict) or not pred_path.is_file() or pred_path.stat().st_size <= 0:
+        return False
+    if any(metadata.get(key) != value for key, value in expected.items()):
+        return False
+    return metadata.get("prediction_sha256") == _sha256_file(pred_path)
 
 
 def build_incident_contract() -> str:
@@ -164,7 +217,7 @@ def sandbox_profile(repo_root: Path, extra_denied_paths: list[Path] | None = Non
 
 
 def _all_statuses_succeeded(statuses: list[tuple[str, int | str]]) -> bool:
-    return bool(statuses) and all(status in (0, "skip") for _sample, status in statuses)
+    return bool(statuses) and all(status in (0, "skip", "attest") for _sample, status in statuses)
 
 
 def run_codex(
@@ -230,15 +283,14 @@ def run_sample(
     transcript: str,
     timeout_seconds: int,
     no_resume: bool,
+    attest_existing: bool,
     model_key: str,
     model: str,
     effort: str,
+    runtime_version: str,
     extra_denied_paths: list[Path],
-) -> tuple[str, int | str]:
+) -> tuple[str, int | str, dict | None]:
     pred_path = prediction_path(output_dir, sample, transcript, model_key)
-    if pred_path.exists() and pred_path.stat().st_size > 0 and not no_resume:
-        return sample, "skip"
-
     logs_dir = output_dir / "logs"
     logs_dir.mkdir(parents=True, exist_ok=True)
     workspace, output_file, expects_records = prepare_workspace(
@@ -247,7 +299,49 @@ def run_sample(
         transcript=transcript,
         workspace_root=workspace_root,
     )
+    expected_provenance = _build_workspace_provenance(
+        workspace=workspace,
+        output_file=output_file,
+        sample=sample,
+        transcript=transcript,
+        model_key=model_key,
+        requested_model=model,
+        effort=effort,
+        dataset_manifest_path=dataset_dir / "manifest.json",
+        runner_source_path=Path(__file__),
+        runtime_version=runtime_version,
+    )
     try:
+        existing_metadata = _load_run_metadata(output_dir).get(sample)
+        if not no_resume and _resume_metadata_matches(
+            existing_metadata,
+            expected_provenance,
+            pred_path,
+        ):
+            return sample, "skip", existing_metadata
+
+        if not no_resume and attest_existing and pred_path.is_file() and pred_path.stat().st_size > 0:
+            log_path = logs_dir / f"{sample}_{transcript}_{model_key}.log"
+            if not log_path.is_file():
+                return sample, "invalid_attestation: missing Codex log", None
+            observed = _parse_codex_log_header(log_path.read_text(encoding="utf-8"))
+            if observed is None:
+                return sample, "invalid_attestation: missing Codex model provenance", None
+            if observed["observed_model"] != model or observed["observed_effort"] != effort:
+                return sample, "invalid_attestation: Codex model or effort mismatch", None
+            if not _cli_versions_match(observed["cli_version"], runtime_version):
+                return sample, "invalid_attestation: Codex CLI version mismatch", None
+            raw_prediction = json.loads(pred_path.read_text(encoding="utf-8"))
+            if expects_records:
+                normalize_record_predictions(raw_prediction)
+            else:
+                _validate_and_normalize_predictions(raw_prediction)
+            metadata = {
+                **observed,
+                **_bind_prediction_provenance(expected_provenance, pred_path),
+            }
+            return sample, "attest", metadata
+
         status, log = run_codex(
             workspace,
             repo_root,
@@ -261,9 +355,25 @@ def run_sample(
             encoding="utf-8",
         )
         if status == 0:
+            observed = _parse_codex_log_header(log)
+            if observed is None:
+                return sample, "invalid_result: missing Codex model provenance", None
+            if observed["observed_model"] != model or observed["observed_effort"] != effort:
+                return (
+                    sample,
+                    "invalid_result: requested model or effort did not match Codex log",
+                    None,
+                )
+            if not _cli_versions_match(observed["cli_version"], runtime_version):
+                return sample, "invalid_result: Codex CLI version mismatch", None
             predicted = load_prediction(workspace, output_file, expects_records)
             pred_path.write_text(json.dumps(predicted, indent=2), encoding="utf-8")
-        return sample, status
+            metadata = {
+                **observed,
+                **_bind_prediction_provenance(expected_provenance, pred_path),
+            }
+            return sample, status, metadata
+        return sample, status, None
     finally:
         shutil.rmtree(workspace, ignore_errors=True)
 
@@ -292,6 +402,16 @@ def _parse_codex_log_header(log: str) -> dict[str, str] | None:
     }
 
 
+def _cli_versions_match(observed: str, runtime: str) -> bool:
+    observed_number = re.search(r"\d+(?:\.\d+)+", observed)
+    runtime_number = re.search(r"\d+(?:\.\d+)+", runtime)
+    return bool(
+        observed_number
+        and runtime_number
+        and observed_number.group(0) == runtime_number.group(0)
+    )
+
+
 def _audit_codex_log_headers(
     output_dir: Path,
     transcript: str,
@@ -309,6 +429,17 @@ def _audit_codex_log_headers(
     return audit
 
 
+def _load_run_metadata(output_dir: Path) -> dict:
+    path = output_dir / RUN_METADATA_FILE
+    if not path.exists():
+        return {}
+    try:
+        payload = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return {}
+    return payload.get("samples") or {}
+
+
 def _write_run_metadata(
     *,
     output_dir: Path,
@@ -317,8 +448,13 @@ def _write_run_metadata(
     requested_model: str,
     effort: str,
     statuses: list[tuple[str, int | str]],
+    sample_metadata: dict[str, dict] | None = None,
+    runtime_version: str | None = None,
     extra_denied_paths: list[Path] | None = None,
 ) -> None:
+    observed = _audit_codex_log_headers(output_dir, transcript, model_key)
+    for sample, metadata in (sample_metadata or {}).items():
+        observed[sample] = {**observed.get(sample, {}), **metadata}
     payload = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "runner": Path(__file__).name,
@@ -326,13 +462,13 @@ def _write_run_metadata(
         "requested_model": requested_model,
         "effort": effort,
         "transcript": transcript,
-        "cli_version_observed_at_metadata_write": _codex_cli_version(),
+        "cli_version_observed_at_metadata_write": runtime_version or _codex_cli_version(),
         "authentication": "Codex subscription; credentials are not stored",
         "additional_denied_paths": [
             str(path.resolve()) for path in extra_denied_paths or []
         ],
         "sample_statuses": {sample: status for sample, status in statuses},
-        "samples": _audit_codex_log_headers(output_dir, transcript, model_key),
+        "samples": observed,
     }
     (output_dir / RUN_METADATA_FILE).write_text(
         json.dumps(payload, indent=2) + "\n",
@@ -348,6 +484,11 @@ def main() -> int:
     parser.add_argument("--timeout-seconds", type=int, default=1800)
     parser.add_argument("--workspace-root", default="/tmp/longlistbench-codex-workspaces")
     parser.add_argument("--no-resume", action="store_true")
+    parser.add_argument(
+        "--attest-existing",
+        action="store_true",
+        help="Attest legacy predictions only when their saved CLI logs match the requested model and effort",
+    )
     parser.add_argument("--workers", type=int, default=1, help="Number of samples to run in parallel")
     parser.add_argument("--model-key", default=DEFAULT_MODEL_KEY, help="Offline scorer model key")
     parser.add_argument("--model", default=DEFAULT_CODEX_MODEL, help="Codex model slug")
@@ -364,6 +505,9 @@ def main() -> int:
         raise SystemExit("sandbox-exec is required for repository-denied Codex CLI runs")
     if args.model_key not in MODELS:
         raise SystemExit(f"Unknown offline scorer model key: {args.model_key}")
+    runtime_version = _codex_cli_version()
+    if not runtime_version:
+        raise SystemExit("Unable to determine Codex CLI version")
 
     repo_root = Path(__file__).resolve().parents[1]
     dataset_dir = default_dataset_dir()
@@ -375,11 +519,12 @@ def main() -> int:
 
     samples = discover_samples(dataset_dir, args.transcript, args.samples)
     statuses: list[tuple[str, int | str]] = []
+    sample_metadata = _load_run_metadata(output_dir)
     worker_count = max(1, args.workers)
     if worker_count == 1:
         for index, sample in enumerate(samples, start=1):
             print(f"[{index}/{len(samples)}] {args.model_key} {sample}", flush=True)
-            sample_id, status = run_sample(
+            sample_id, status, metadata = run_sample(
                 dataset_dir=dataset_dir,
                 repo_root=repo_root,
                 output_dir=output_dir,
@@ -388,12 +533,16 @@ def main() -> int:
                 transcript=args.transcript,
                 timeout_seconds=args.timeout_seconds,
                 no_resume=args.no_resume,
+                attest_existing=args.attest_existing,
                 model_key=args.model_key,
                 model=args.model,
                 effort=args.effort,
+                runtime_version=runtime_version,
                 extra_denied_paths=extra_denied_paths,
             )
             statuses.append((sample_id, status))
+            if metadata is not None:
+                sample_metadata[sample_id] = metadata
             print(f"  -> {status}", flush=True)
     else:
         with ThreadPoolExecutor(max_workers=min(worker_count, len(samples) or 1)) as executor:
@@ -410,9 +559,11 @@ def main() -> int:
                     transcript=args.transcript,
                     timeout_seconds=args.timeout_seconds,
                     no_resume=args.no_resume,
+                    attest_existing=args.attest_existing,
                     model_key=args.model_key,
                     model=args.model,
                     effort=args.effort,
+                    runtime_version=runtime_version,
                     extra_denied_paths=extra_denied_paths,
                 )
                 future_to_sample[future] = sample
@@ -420,10 +571,12 @@ def main() -> int:
             for future in as_completed(future_to_sample):
                 sample = future_to_sample[future]
                 try:
-                    sample_id, status = future.result()
+                    sample_id, status, metadata = future.result()
                 except Exception as exc:
-                    sample_id, status = sample, f"error: {exc}"
+                    sample_id, status, metadata = sample, f"error: {exc}", None
                 statuses.append((sample_id, status))
+                if metadata is not None:
+                    sample_metadata[sample_id] = metadata
                 print(f"[DONE] {args.model_key} {sample_id} -> {status}", flush=True)
 
         status_order = {sample: index for index, sample in enumerate(samples)}
@@ -440,6 +593,8 @@ def main() -> int:
         requested_model=args.model,
         effort=args.effort,
         statuses=statuses,
+        sample_metadata=sample_metadata,
+        runtime_version=runtime_version,
         extra_denied_paths=extra_denied_paths,
     )
     results = run_evaluation_from_saved_predictions(

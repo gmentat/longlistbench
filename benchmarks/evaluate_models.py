@@ -119,6 +119,7 @@ try:
         _repair_truncated_json,
         _validate_and_normalize_predictions,
         _validate_incident_dict_is_complete,
+        build_record_extraction_contract,
         parse_json_response,
         setup_anthropic,
         setup_gemini,
@@ -143,6 +144,7 @@ except ImportError:
         _repair_truncated_json,
         _validate_and_normalize_predictions,
         _validate_incident_dict_is_complete,
+        build_record_extraction_contract,
         parse_json_response,
         setup_anthropic,
         setup_gemini,
@@ -306,6 +308,101 @@ def _legacy_prediction_output_path(output_dir: Path, sample: str, transcript: st
     if transcript != "ocr":
         return None
     return output_dir / f"{sample}_{model_key}_predicted.json"
+
+
+_PREDICTION_PROVENANCE_FILE = "prediction_provenance.json"
+
+
+def _sha256_text(value: str) -> str:
+    return hashlib.sha256(value.encode("utf-8")).hexdigest()
+
+
+def _prediction_provenance_key(sample: str, transcript: str, model_key: str) -> str:
+    return f"{sample}|{transcript}|{model_key}"
+
+
+def _load_prediction_provenance(output_dir: Path) -> dict[str, dict]:
+    path = output_dir / _PREDICTION_PROVENANCE_FILE
+    if not path.exists():
+        return {}
+    try:
+        payload = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return {}
+    entries = payload.get("entries")
+    return entries if isinstance(entries, dict) else {}
+
+
+def _write_prediction_provenance(output_dir: Path, entries: dict[str, dict]) -> None:
+    path = output_dir / _PREDICTION_PROVENANCE_FILE
+    temporary = path.with_suffix(".tmp")
+    payload = {"schema_version": 1, "entries": entries}
+    temporary.write_text(json.dumps(payload, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+    temporary.replace(path)
+
+
+def _online_input_provenance(
+    *,
+    entry: EvaluationInput,
+    config: ModelConfig,
+    model_key: str,
+    transcript_text: str,
+    ground_truth: list[dict],
+) -> dict[str, str | dict[str, str]]:
+    contract = (
+        build_record_extraction_contract(ground_truth)
+        if uses_record_evaluator(ground_truth)
+        else _LOSS_RUN_EXTRACTION_SCHEMA_JSON
+    )
+    try:
+        extractor_source = inspect.getsource(config.extract_fn)
+    except (OSError, TypeError):
+        extractor_source = repr(config.extract_fn)
+    settings = {
+        key: value
+        for key, value in sorted(os.environ.items())
+        if key.startswith("LLB_")
+    }
+    provenance: dict[str, str | dict[str, str]] = {
+        "sample": entry.sample,
+        "transcript": entry.transcript,
+        "model_key": model_key,
+        "model_id": config.model_id,
+        "transcript_sha256": _sha256_text(transcript_text),
+        "field_contract_sha256": _sha256_text(contract),
+        "extractor_source_sha256": _sha256_text(extractor_source),
+        "runner_source_sha256": hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+        "llb_settings": settings,
+    }
+    encoded = json.dumps(provenance, sort_keys=True, separators=(",", ":")).encode("utf-8")
+    provenance["input_fingerprint_sha256"] = hashlib.sha256(encoded).hexdigest()
+    return provenance
+
+
+def _bind_online_prediction_provenance(
+    expected: dict[str, str | dict[str, str]],
+    pred_path: Path,
+) -> dict[str, str | dict[str, str]]:
+    return {
+        **expected,
+        "prediction_file": pred_path.name,
+        "prediction_sha256": hashlib.sha256(pred_path.read_bytes()).hexdigest(),
+    }
+
+
+def _online_resume_matches(
+    saved: dict | None,
+    expected: dict[str, str | dict[str, str]],
+    pred_path: Path | None,
+) -> bool:
+    if not isinstance(saved, dict) or pred_path is None or not pred_path.is_file():
+        return False
+    if any(saved.get(key) != value for key, value in expected.items()):
+        return False
+    return (
+        saved.get("prediction_file") == pred_path.name
+        and saved.get("prediction_sha256") == hashlib.sha256(pred_path.read_bytes()).hexdigest()
+    )
 
 
 def _metadata_key(sample: str | None, transcript: str | None, model: str | None) -> tuple[str, str, str] | None:
@@ -561,7 +658,10 @@ def run_evaluation(
                     existing_pairs += 1
                 elif legacy_path is not None and legacy_path.exists() and legacy_path.stat().st_size > 0:
                     existing_pairs += 1
-        print(f"Resume enabled: {existing_pairs}/{total_pairs} prediction files already exist")
+        print(
+            f"Resume enabled: {existing_pairs}/{total_pairs} prediction files exist; "
+            "only provenance-matched files will be reused"
+        )
         print()
 
     if not parallel_models:
@@ -571,6 +671,8 @@ def run_evaluation(
         model_workers = int(os.getenv("LLB_MODEL_WORKERS", str(len(models))))
     model_workers = max(1, int(model_workers))
     saved_metadata = _load_saved_result_metadata(output_dir=output_dir)
+    prediction_provenance = _load_prediction_provenance(output_dir)
+    provenance_lock = threading.Lock()
 
     gemini_rate_lock = threading.Lock()
     gemini_next_allowed_time = 0.0
@@ -601,6 +703,24 @@ def run_evaluation(
         print(f"  Ground truth: {len(ground_truth)} {record_label}")
         print(f"  {entry.transcript} text: {len(transcript_text):,} characters")
         print()
+
+        input_provenance = {
+            model_key: _online_input_provenance(
+                entry=entry,
+                config=MODELS[model_key],
+                model_key=model_key,
+                transcript_text=transcript_text,
+                ground_truth=ground_truth,
+            )
+            for model_key in active_models
+        }
+
+        def _record_prediction_provenance(model_key: str, pred_path: Path) -> None:
+            key = _prediction_provenance_key(entry.sample, entry.transcript, model_key)
+            bound = _bind_online_prediction_provenance(input_provenance[model_key], pred_path)
+            with provenance_lock:
+                prediction_provenance[key] = bound
+                _write_prediction_provenance(output_dir, prediction_provenance)
 
         def _eval_one_model(model_key: str) -> EvaluationResult:
             config = MODELS[model_key]
@@ -666,6 +786,7 @@ def run_evaluation(
                 pred_path = _prediction_output_path(output_dir, entry.sample, entry.transcript, model_key)
                 with open(pred_path, "w") as f:
                     json.dump(predicted, f, indent=2)
+                _record_prediction_provenance(model_key, pred_path)
             else:
                 metrics = _evaluate_predictions_for_ground_truth([], ground_truth)
 
@@ -689,7 +810,13 @@ def run_evaluation(
                 pred_path = _prediction_output_path(output_dir, entry.sample, entry.transcript, model_key)
                 legacy_path = _legacy_prediction_output_path(output_dir, entry.sample, entry.transcript, model_key)
                 existing_pred_path = pred_path if pred_path.exists() and pred_path.stat().st_size > 0 else legacy_path
-                if resume and existing_pred_path is not None and existing_pred_path.exists() and existing_pred_path.stat().st_size > 0:
+                provenance_key = _prediction_provenance_key(entry.sample, entry.transcript, model_key)
+                can_resume = resume and _online_resume_matches(
+                    prediction_provenance.get(provenance_key),
+                    input_provenance[model_key],
+                    existing_pred_path,
+                )
+                if can_resume:
                     try:
                         raw_predicted = json.loads(existing_pred_path.read_text(encoding="utf-8"))
                         predicted = _validate_predictions_for_ground_truth(raw_predicted, ground_truth)
@@ -743,7 +870,13 @@ def run_evaluation(
                     pred_path = _prediction_output_path(output_dir, entry.sample, entry.transcript, model_key)
                     legacy_path = _legacy_prediction_output_path(output_dir, entry.sample, entry.transcript, model_key)
                     existing_pred_path = pred_path if pred_path.exists() and pred_path.stat().st_size > 0 else legacy_path
-                    if resume and existing_pred_path is not None and existing_pred_path.exists() and existing_pred_path.stat().st_size > 0:
+                    provenance_key = _prediction_provenance_key(entry.sample, entry.transcript, model_key)
+                    can_resume = resume and _online_resume_matches(
+                        prediction_provenance.get(provenance_key),
+                        input_provenance[model_key],
+                        existing_pred_path,
+                    )
+                    if can_resume:
                         try:
                             raw_predicted = json.loads(existing_pred_path.read_text(encoding="utf-8"))
                             predicted = _validate_predictions_for_ground_truth(raw_predicted, ground_truth)

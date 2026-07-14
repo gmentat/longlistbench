@@ -714,6 +714,29 @@ class EvaluatorRegressionTests(unittest.TestCase):
             setup_fn=lambda: object(),
             extract_fn=lambda *_: (_ for _ in ()).throw(AssertionError("resume should not extract")),
         )
+        pred_path = results_dir / f"{sample}_ocr_{model_key}_predicted.json"
+        provenance = evaluate_models._online_input_provenance(
+            entry=evaluate_models.EvaluationInput(
+                sample=sample,
+                tier="easy",
+                format="detailed",
+                transcript="ocr",
+            ),
+            config=fake_config,
+            model_key=model_key,
+            transcript_text=(claims_dir / f"{sample}_ocr.md").read_text(encoding="utf-8"),
+            ground_truth=[incident],
+        )
+        provenance_key = evaluate_models._prediction_provenance_key(sample, "ocr", model_key)
+        evaluate_models._write_prediction_provenance(
+            results_dir,
+            {
+                provenance_key: evaluate_models._bind_online_prediction_provenance(
+                    provenance,
+                    pred_path,
+                )
+            },
+        )
         with mock.patch.dict(evaluate_models.MODELS, {model_key: fake_config}):
             results = evaluate_models.run_evaluation(
                 models=[model_key],
@@ -727,6 +750,17 @@ class EvaluatorRegressionTests(unittest.TestCase):
         self.assertEqual(results[0].extraction_time, 8.0)
         self.assertEqual(results[0].tokens["output_tokens"], 7)
         self.assertEqual(results[0].cost_usd, 0.00089)
+
+    def test_online_resume_rejects_changed_prediction(self) -> None:
+        output_dir = Path(tempfile.mkdtemp())
+        pred_path = output_dir / "sample_ocr_fake_predicted.json"
+        pred_path.write_text("[]", encoding="utf-8")
+        expected = {"input_fingerprint_sha256": "abc"}
+        saved = evaluate_models._bind_online_prediction_provenance(expected, pred_path)
+
+        self.assertTrue(evaluate_models._online_resume_matches(saved, expected, pred_path))
+        pred_path.write_text("[{}]", encoding="utf-8")
+        self.assertFalse(evaluate_models._online_resume_matches(saved, expected, pred_path))
 
     def test_quick_mode_uses_current_release_samples(self) -> None:
         out_dir = Path(tempfile.mkdtemp())
