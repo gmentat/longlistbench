@@ -2,7 +2,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Alabama",
     "net_gallons": "8,760",
@@ -20,7 +20,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Arkansas",
     "net_gallons": "10,600",
@@ -38,7 +38,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Arizona",
     "net_gallons": "14,592",
@@ -56,7 +56,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "California",
     "net_gallons": "30,076",
@@ -74,7 +74,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Colorado",
     "net_gallons": "21,666",
@@ -92,7 +92,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Connecticut",
     "net_gallons": "34,896",
@@ -110,7 +110,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Florida",
     "net_gallons": "2,512",
@@ -128,7 +128,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Georgia",
     "net_gallons": "4,972",
@@ -146,7 +146,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$14.12",
     "jurisdiction": "Iowa",
     "net_gallons": "11,905",
@@ -164,7 +164,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Idaho",
     "net_gallons": "6,578",
@@ -182,7 +182,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Illinois",
     "net_gallons": "1,827",
@@ -200,7 +200,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Kansas",
     "net_gallons": "2,005",
@@ -218,7 +218,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Kentucky",
     "net_gallons": "5,917",
@@ -236,7 +236,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Louisiana",
     "net_gallons": "18,417",
@@ -254,7 +254,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Maryland",
     "net_gallons": "-21,073",
@@ -272,7 +272,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Michigan",
     "net_gallons": "29,074",
@@ -290,7 +290,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Minnesota",
     "net_gallons": "-19,312",
@@ -308,7 +308,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Missouri",
     "net_gallons": "18,171",
@@ -326,7 +326,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Mississippi",
     "net_gallons": "8,548",
@@ -344,7 +344,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "North Dakota",
     "net_gallons": "9,006",
@@ -362,7 +362,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "New Jersey",
     "net_gallons": "22,325",
@@ -380,7 +380,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Nevada",
     "net_gallons": "-1,854",
@@ -398,7 +398,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "New York",
     "net_gallons": "38,887",
@@ -416,7 +416,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Ohio",
     "net_gallons": "20,346",
@@ -434,7 +434,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Oklahoma",
     "net_gallons": "22,485",
@@ -452,7 +452,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Pennsylvania",
     "net_gallons": "11,286",
@@ -470,7 +470,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$1.27",
     "jurisdiction": "South Carolina",
     "net_gallons": "-1,278",
@@ -488,7 +488,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Tennessee",
     "net_gallons": "24,127",
@@ -506,7 +506,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Texas",
     "net_gallons": "19,019",
@@ -524,7 +524,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$108.28",
     "jurisdiction": "Virginia",
     "net_gallons": "13,774",
@@ -542,7 +542,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Wisconsin",
     "net_gallons": "18,319",
@@ -560,7 +560,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "West Virginia",
     "net_gallons": "-10,643",
@@ -578,7 +578,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Wyoming",
     "net_gallons": "5,903",
@@ -596,7 +596,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Washington",
     "net_gallons": "35,054",
@@ -614,7 +614,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Texas",
     "net_gallons": "28,463",
@@ -632,7 +632,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Florida",
     "net_gallons": "30,917",
@@ -650,7 +650,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Illinois",
     "net_gallons": "-1,301",
@@ -668,7 +668,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Pennsylvania",
     "net_gallons": "49,793",
@@ -686,7 +686,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Arizona",
     "net_gallons": "45,463",
@@ -704,7 +704,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Virginia",
     "net_gallons": "12,129",
@@ -722,7 +722,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Arkansas",
     "net_gallons": "24,274",
@@ -740,7 +740,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Colorado",
     "net_gallons": "863",
@@ -758,7 +758,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Louisiana",
     "net_gallons": "1,674",
@@ -776,7 +776,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Iowa",
     "net_gallons": "32,544",
@@ -794,7 +794,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Kentucky",
     "net_gallons": "45,910",
@@ -812,7 +812,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "New Jersey",
     "net_gallons": "14,388",
@@ -830,7 +830,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "South Carolina",
     "net_gallons": "21,497",
@@ -848,7 +848,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "New York",
     "net_gallons": "23,937",
@@ -866,7 +866,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Georgia",
     "net_gallons": "38,672",
@@ -884,7 +884,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Maryland",
     "net_gallons": "22,012",
@@ -902,7 +902,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Wisconsin",
     "net_gallons": "6,953",
@@ -920,7 +920,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$11.15",
     "jurisdiction": "Oklahoma",
     "net_gallons": "4,891",
@@ -938,7 +938,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Utah",
     "net_gallons": "25,462",
@@ -956,7 +956,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "West Virginia",
     "net_gallons": "709",
@@ -974,7 +974,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Michigan",
     "net_gallons": "28,774",
@@ -992,7 +992,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "California",
     "net_gallons": "27,171",
@@ -1010,7 +1010,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Minnesota",
     "net_gallons": "31,005",
@@ -1028,7 +1028,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Kansas",
     "net_gallons": "33,336",
@@ -1046,7 +1046,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Idaho",
     "net_gallons": "24,847",
@@ -1064,7 +1064,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "North Dakota",
     "net_gallons": "4,410",
@@ -1082,7 +1082,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Connecticut",
     "net_gallons": "1,587",
@@ -1100,7 +1100,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "South Dakota",
     "net_gallons": "31,929",
@@ -1118,7 +1118,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "New Mexico",
     "net_gallons": "29,297",
@@ -1136,7 +1136,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Nevada",
     "net_gallons": "-202",
@@ -1154,7 +1154,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Oregon",
     "net_gallons": "1,946",
@@ -1172,7 +1172,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "North Carolina",
     "net_gallons": "31,989",
@@ -1190,7 +1190,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Ohio",
     "net_gallons": "29,971",
@@ -1208,7 +1208,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Wyoming",
     "net_gallons": "4,217",
@@ -1226,7 +1226,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2025",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Nebraska",
     "net_gallons": "13,325",
@@ -1244,7 +1244,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2025",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "North Dakota",
     "net_gallons": "20,739",
@@ -1262,7 +1262,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2025",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Oregon",
     "net_gallons": "-13,261",
@@ -1280,7 +1280,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2025",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Mississippi",
     "net_gallons": "9,681",
@@ -1298,7 +1298,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2025",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Alabama",
     "net_gallons": "-9,281",
@@ -1316,7 +1316,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2025",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Texas",
     "net_gallons": "-18,670",
@@ -1334,7 +1334,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2025",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Missouri",
     "net_gallons": "2,579",
@@ -1352,7 +1352,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2025",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Oklahoma",
     "net_gallons": "12,961",
@@ -1370,7 +1370,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2025",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "New York",
     "net_gallons": "444",
@@ -1388,7 +1388,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2025",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Maryland",
     "net_gallons": "-27,376",
@@ -1406,7 +1406,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2025",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$90.20",
     "jurisdiction": "Iowa",
     "net_gallons": "9,128",
@@ -1424,7 +1424,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2025",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$3.19",
     "jurisdiction": "Utah",
     "net_gallons": "3,882",
@@ -1442,7 +1442,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2025",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$44.27",
     "jurisdiction": "Wisconsin",
     "net_gallons": "14,452",
@@ -1460,7 +1460,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2025",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Wyoming",
     "net_gallons": "20,820",
@@ -1478,7 +1478,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2025",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Kansas",
     "net_gallons": "38,620",
@@ -1496,7 +1496,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2025",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Virginia",
     "net_gallons": "18,521",
@@ -1514,7 +1514,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2025",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Nevada",
     "net_gallons": "24,312",
@@ -1532,7 +1532,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2025",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Connecticut",
     "net_gallons": "14,076",
@@ -1550,7 +1550,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2025",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "South Carolina",
     "net_gallons": "18,649",
@@ -1568,7 +1568,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2025",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "New Jersey",
     "net_gallons": "-2,976",
@@ -1586,7 +1586,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2025",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Illinois",
     "net_gallons": "369",
@@ -1604,7 +1604,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2025",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Michigan",
     "net_gallons": "-2,143",
@@ -1622,7 +1622,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2025",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Georgia",
     "net_gallons": "5,309",
@@ -1640,7 +1640,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2025",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Kentucky",
     "net_gallons": "11,169",
@@ -1658,7 +1658,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2025",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$95.96",
     "jurisdiction": "Minnesota",
     "net_gallons": "7,859",
@@ -1676,7 +1676,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2025",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "California",
     "net_gallons": "-13,196",
@@ -1694,7 +1694,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2025",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Arkansas",
     "net_gallons": "10,553",
@@ -1712,7 +1712,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2025",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Florida",
     "net_gallons": "26,150",
@@ -1730,7 +1730,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2025",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "West Virginia",
     "net_gallons": "24,213",
@@ -1748,7 +1748,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2025",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "South Dakota",
     "net_gallons": "21,127",
@@ -1766,7 +1766,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2025",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Arizona",
     "net_gallons": "-2,402",
@@ -1784,7 +1784,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2026",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Alabama",
     "net_gallons": "48,218",
@@ -1802,7 +1802,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2026",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Arkansas",
     "net_gallons": "19,467",
@@ -1820,7 +1820,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2026",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Arizona",
     "net_gallons": "2,151",
@@ -1838,7 +1838,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2026",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "California",
     "net_gallons": "2,781",
@@ -1856,7 +1856,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2026",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Colorado",
     "net_gallons": "4,896",
@@ -1874,7 +1874,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2026",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Connecticut",
     "net_gallons": "3,027",
@@ -1892,7 +1892,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2026",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Georgia",
     "net_gallons": "38,170",
@@ -1910,7 +1910,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2026",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Iowa",
     "net_gallons": "38,811",
@@ -1928,7 +1928,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2026",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Idaho",
     "net_gallons": "33,825",
@@ -1946,7 +1946,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2026",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Illinois",
     "net_gallons": "23,078",
@@ -1964,7 +1964,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2026",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Indiana",
     "net_gallons": "-16,016",
@@ -1982,7 +1982,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2026",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Kansas",
     "net_gallons": "19,659",
@@ -2000,7 +2000,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2026",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Kentucky",
     "net_gallons": "-9,541",
@@ -2018,7 +2018,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2026",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Louisiana",
     "net_gallons": "316",
@@ -2036,7 +2036,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2026",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Maryland",
     "net_gallons": "-4,833",
@@ -2054,7 +2054,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2026",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Michigan",
     "net_gallons": "11,563",
@@ -2072,7 +2072,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2026",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Missouri",
     "net_gallons": "1,680",
@@ -2090,7 +2090,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2026",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Mississippi",
     "net_gallons": "14,774",
@@ -2108,7 +2108,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2026",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$287.63",
     "jurisdiction": "North Carolina",
     "net_gallons": "21,921",
@@ -2126,7 +2126,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2026",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "North Dakota",
     "net_gallons": "15,383",
@@ -2144,7 +2144,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2026",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Nebraska",
     "net_gallons": "41,349",
@@ -2162,7 +2162,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2026",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "New Jersey",
     "net_gallons": "4,225",
@@ -2180,7 +2180,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2026",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "New Mexico",
     "net_gallons": "12,488",
@@ -2198,7 +2198,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2026",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$63.52",
     "jurisdiction": "Nevada",
     "net_gallons": "-5,864",
@@ -2216,7 +2216,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2026",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Ohio",
     "net_gallons": "46,327",
@@ -2234,7 +2234,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2026",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Oklahoma",
     "net_gallons": "14,744",
@@ -2252,7 +2252,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2026",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Oregon",
     "net_gallons": "6,719",
@@ -2270,7 +2270,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2026",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "South Dakota",
     "net_gallons": "13,811",
@@ -2288,7 +2288,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2026",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Tennessee",
     "net_gallons": "19,051",
@@ -2306,7 +2306,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2026",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Texas",
     "net_gallons": "35,467",
@@ -2324,7 +2324,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2026",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Virginia",
     "net_gallons": "30,593",
@@ -2342,7 +2342,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2026",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Washington",
     "net_gallons": "32,581",
@@ -2360,7 +2360,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2026",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Wisconsin",
     "net_gallons": "4,448",
@@ -2378,7 +2378,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2026",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "West Virginia",
     "net_gallons": "31,671",
@@ -2396,7 +2396,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Florida",
     "net_gallons": "10,639",
@@ -2414,7 +2414,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "South Carolina",
     "net_gallons": "24,256",
@@ -2432,7 +2432,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$100.28",
     "jurisdiction": "Virginia",
     "net_gallons": "22,452",
@@ -2450,7 +2450,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Indiana",
     "net_gallons": "2,883",
@@ -2468,7 +2468,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "North Carolina",
     "net_gallons": "24,007",
@@ -2486,7 +2486,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$188.12",
     "jurisdiction": "Connecticut",
     "net_gallons": "19,863",
@@ -2504,7 +2504,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "North Dakota",
     "net_gallons": "1,362",
@@ -2522,7 +2522,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Pennsylvania",
     "net_gallons": "19,006",
@@ -2540,7 +2540,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Michigan",
     "net_gallons": "17,696",
@@ -2558,7 +2558,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Tennessee",
     "net_gallons": "23,523",
@@ -2571,12 +2571,12 @@
     "taxable_gallons": "23,523",
     "taxable_miles": "175,230",
     "total_due_refund": "$5,896.68",
-    "total_miles": "175,547"
+    "total_miles": "175,447"
   },
   {
     "filing_type": "Amended",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Nebraska",
     "net_gallons": "18,591",
@@ -2594,7 +2594,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Oklahoma",
     "net_gallons": "39,339",
@@ -2612,7 +2612,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "New Jersey",
     "net_gallons": "36,455",
@@ -2630,7 +2630,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Ohio",
     "net_gallons": "23,672",
@@ -2648,7 +2648,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Utah",
     "net_gallons": "-30,545",
@@ -2666,7 +2666,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Oregon",
     "net_gallons": "43,966",
@@ -2684,7 +2684,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$13.22",
     "jurisdiction": "Arkansas",
     "net_gallons": "2,577",
@@ -2702,7 +2702,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "West Virginia",
     "net_gallons": "36,621",
@@ -2720,7 +2720,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$44.10",
     "jurisdiction": "Kentucky",
     "net_gallons": "31,018",
@@ -2738,7 +2738,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "California",
     "net_gallons": "8,457",
@@ -2756,7 +2756,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Mississippi",
     "net_gallons": "26,251",
@@ -2774,7 +2774,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Wisconsin",
     "net_gallons": "-7,274",
@@ -2792,7 +2792,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$25.03",
     "jurisdiction": "Alabama",
     "net_gallons": "6,385",
@@ -2810,7 +2810,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Missouri",
     "net_gallons": "26,409",
@@ -2828,7 +2828,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Nevada",
     "net_gallons": "8,450",
@@ -2846,7 +2846,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$199.09",
     "jurisdiction": "Idaho",
     "net_gallons": "32,189",
@@ -2864,7 +2864,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Colorado",
     "net_gallons": "730",
@@ -2882,7 +2882,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Georgia",
     "net_gallons": "33,678",
@@ -2900,7 +2900,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$41.73",
     "jurisdiction": "Wyoming",
     "net_gallons": "23,319",
@@ -2918,7 +2918,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Maryland",
     "net_gallons": "23,595",
@@ -2936,7 +2936,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$57.26",
     "jurisdiction": "Kansas",
     "net_gallons": "20,185",
@@ -2954,7 +2954,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Minnesota",
     "net_gallons": "13,785",
@@ -2972,7 +2972,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Alabama",
     "net_gallons": "8,115",
@@ -2990,7 +2990,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Illinois",
     "net_gallons": "10,210",
@@ -3008,7 +3008,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Connecticut",
     "net_gallons": "18,860",
@@ -3026,7 +3026,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Missouri",
     "net_gallons": "2,481",
@@ -3044,7 +3044,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Virginia",
     "net_gallons": "23,027",
@@ -3062,7 +3062,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "North Carolina",
     "net_gallons": "45,835",
@@ -3080,7 +3080,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Oklahoma",
     "net_gallons": "4,331",
@@ -3098,7 +3098,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Ohio",
     "net_gallons": "3,021",
@@ -3116,7 +3116,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Indiana",
     "net_gallons": "14,828",
@@ -3134,7 +3134,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "South Dakota",
     "net_gallons": "10,908",
@@ -3152,7 +3152,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Maryland",
     "net_gallons": "44,352",
@@ -3170,7 +3170,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$19.48",
     "jurisdiction": "Texas",
     "net_gallons": "13,470",
@@ -3188,7 +3188,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "New Jersey",
     "net_gallons": "-24,927",
@@ -3206,7 +3206,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "California",
     "net_gallons": "428",
@@ -3224,7 +3224,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Michigan",
     "net_gallons": "12,829",
@@ -3242,7 +3242,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Pennsylvania",
     "net_gallons": "-109",
@@ -3260,7 +3260,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Minnesota",
     "net_gallons": "-14,057",
@@ -3278,7 +3278,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Wisconsin",
     "net_gallons": "-15,474",
@@ -3296,7 +3296,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$84.33",
     "jurisdiction": "Colorado",
     "net_gallons": "16,828",
@@ -3314,7 +3314,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$183.82",
     "jurisdiction": "Utah",
     "net_gallons": "17,795",
@@ -3332,7 +3332,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "West Virginia",
     "net_gallons": "35,488",
@@ -3350,7 +3350,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Louisiana",
     "net_gallons": "22,240",
@@ -3368,7 +3368,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Florida",
     "net_gallons": "13,532",
@@ -3386,7 +3386,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "North Dakota",
     "net_gallons": "5,882",
@@ -3404,7 +3404,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "South Carolina",
     "net_gallons": "27,926",
@@ -3422,7 +3422,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "New York",
     "net_gallons": "-13,842",
@@ -3440,7 +3440,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Idaho",
     "net_gallons": "22,273",
@@ -3458,7 +3458,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Arizona",
     "net_gallons": "13,598",
@@ -3476,7 +3476,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Mississippi",
     "net_gallons": "34,875",
@@ -3494,7 +3494,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Nebraska",
     "net_gallons": "-17,841",
@@ -3512,7 +3512,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Kansas",
     "net_gallons": "2,760",
@@ -3530,7 +3530,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$24.85",
     "jurisdiction": "Tennessee",
     "net_gallons": "5,113",
@@ -3548,7 +3548,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$157.17",
     "jurisdiction": "Arkansas",
     "net_gallons": "-12,414",
@@ -3566,7 +3566,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Oregon",
     "net_gallons": "25,938",
@@ -3584,7 +3584,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Georgia",
     "net_gallons": "-4,235",
@@ -3602,7 +3602,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2025",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Arkansas",
     "net_gallons": "24,657",
@@ -3620,7 +3620,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2025",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Arizona",
     "net_gallons": "19,531",
@@ -3638,7 +3638,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2025",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Colorado",
     "net_gallons": "18,821",
@@ -3656,7 +3656,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2025",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$120.05",
     "jurisdiction": "Connecticut",
     "net_gallons": "-28,044",
@@ -3674,7 +3674,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2025",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Florida",
     "net_gallons": "-5,865",
@@ -3692,7 +3692,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2025",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Iowa",
     "net_gallons": "1,401",
@@ -3710,7 +3710,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2025",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Idaho",
     "net_gallons": "1,304",
@@ -3728,7 +3728,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2025",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Illinois",
     "net_gallons": "22,918",
@@ -3746,7 +3746,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2025",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Kentucky",
     "net_gallons": "4,237",
@@ -3764,7 +3764,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2025",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Louisiana",
     "net_gallons": "26,423",
@@ -3782,7 +3782,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2025",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Maryland",
     "net_gallons": "2,623",
@@ -3800,7 +3800,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2025",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$18.58",
     "jurisdiction": "Michigan",
     "net_gallons": "2,799",
@@ -3818,7 +3818,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2025",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Minnesota",
     "net_gallons": "-5,323",
@@ -3836,7 +3836,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2025",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Missouri",
     "net_gallons": "20,367",
@@ -3854,7 +3854,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2025",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Mississippi",
     "net_gallons": "-14,367",
@@ -3872,7 +3872,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2025",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "North Carolina",
     "net_gallons": "24,671",
@@ -3890,7 +3890,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2025",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Nebraska",
     "net_gallons": "15,099",
@@ -3908,7 +3908,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2025",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "New Jersey",
     "net_gallons": "3,651",
@@ -3926,7 +3926,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2025",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "New Mexico",
     "net_gallons": "19,565",
@@ -3944,7 +3944,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2025",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Nevada",
     "net_gallons": "20,524",
@@ -3962,7 +3962,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2025",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "New York",
     "net_gallons": "35,566",
@@ -3980,7 +3980,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2025",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Oklahoma",
     "net_gallons": "20,877",
@@ -3998,7 +3998,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2025",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Pennsylvania",
     "net_gallons": "41,446",
@@ -4016,7 +4016,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2025",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$7.78",
     "jurisdiction": "South Carolina",
     "net_gallons": "-3,757",
@@ -4034,7 +4034,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2025",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "South Dakota",
     "net_gallons": "-10,106",
@@ -4052,7 +4052,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2025",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Tennessee",
     "net_gallons": "15,840",
@@ -4070,7 +4070,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2025",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Texas",
     "net_gallons": "2,158",
@@ -4088,7 +4088,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2025",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Utah",
     "net_gallons": "12,723",
@@ -4106,7 +4106,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2025",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Virginia",
     "net_gallons": "30,306",
@@ -4124,7 +4124,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2025",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Washington",
     "net_gallons": "25,276",
@@ -4142,7 +4142,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2025",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Wisconsin",
     "net_gallons": "6,403",
@@ -4160,7 +4160,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2025",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "West Virginia",
     "net_gallons": "14,195",
@@ -4178,7 +4178,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2025",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Wyoming",
     "net_gallons": "-10,936",
@@ -4196,7 +4196,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2026",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Arkansas",
     "net_gallons": "3,205",
@@ -4214,7 +4214,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2026",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Mississippi",
     "net_gallons": "15,498",
@@ -4232,7 +4232,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2026",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "North Dakota",
     "net_gallons": "5,322",
@@ -4250,7 +4250,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2026",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Ohio",
     "net_gallons": "30,715",
@@ -4268,7 +4268,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2026",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Missouri",
     "net_gallons": "18,909",
@@ -4286,7 +4286,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2026",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "New York",
     "net_gallons": "16,380",
@@ -4304,7 +4304,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2026",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Idaho",
     "net_gallons": "30,633",
@@ -4322,7 +4322,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2026",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Arizona",
     "net_gallons": "37,567",
@@ -4340,7 +4340,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2026",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Louisiana",
     "net_gallons": "26,950",
@@ -4358,7 +4358,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2026",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Tennessee",
     "net_gallons": "14,414",
@@ -4376,7 +4376,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2026",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "North Carolina",
     "net_gallons": "21,911",
@@ -4394,7 +4394,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2026",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Nevada",
     "net_gallons": "14,330",
@@ -4412,7 +4412,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2026",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Indiana",
     "net_gallons": "23,615",
@@ -4430,7 +4430,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2026",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "California",
     "net_gallons": "30,765",
@@ -4448,7 +4448,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2026",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Alabama",
     "net_gallons": "42,420",
@@ -4466,7 +4466,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2026",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$35.47",
     "jurisdiction": "South Dakota",
     "net_gallons": "6,666",
@@ -4484,7 +4484,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2026",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Nebraska",
     "net_gallons": "5,722",
@@ -4502,7 +4502,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2026",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Oregon",
     "net_gallons": "34,875",
@@ -4520,7 +4520,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2026",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Michigan",
     "net_gallons": "-33,610",
@@ -4538,7 +4538,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2026",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Minnesota",
     "net_gallons": "29,692",
@@ -4556,7 +4556,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2026",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "New Jersey",
     "net_gallons": "39,690",
@@ -4574,7 +4574,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2026",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Wisconsin",
     "net_gallons": "-14,606",
@@ -4592,7 +4592,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2026",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Connecticut",
     "net_gallons": "38,439",
@@ -4610,7 +4610,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2026",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Oklahoma",
     "net_gallons": "17,061",
@@ -4628,7 +4628,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2026",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$137.07",
     "jurisdiction": "New Mexico",
     "net_gallons": "34,738",
@@ -4646,7 +4646,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2026",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Wyoming",
     "net_gallons": "22,892",
@@ -4664,7 +4664,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2026",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$44.75",
     "jurisdiction": "Iowa",
     "net_gallons": "19,601",
@@ -4682,7 +4682,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2026",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Kansas",
     "net_gallons": "17,466",
@@ -4700,7 +4700,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2026",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$95.12",
     "jurisdiction": "Kentucky",
     "net_gallons": "28,377",
@@ -4718,7 +4718,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2026",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$1.20",
     "jurisdiction": "Florida",
     "net_gallons": "-992",
@@ -4736,7 +4736,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2026",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "West Virginia",
     "net_gallons": "24,378",
@@ -4754,7 +4754,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2026",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$60.29",
     "jurisdiction": "Colorado",
     "net_gallons": "6,807",
@@ -4772,7 +4772,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2026",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "South Carolina",
     "net_gallons": "28,711",
@@ -4790,7 +4790,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2026",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Maryland",
     "net_gallons": "20,763",
@@ -4808,7 +4808,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Nevada",
     "net_gallons": "24,229",
@@ -4826,7 +4826,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "West Virginia",
     "net_gallons": "29,529",
@@ -4844,7 +4844,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Oregon",
     "net_gallons": "22,188",
@@ -4862,7 +4862,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Kansas",
     "net_gallons": "7,355",
@@ -4880,7 +4880,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Texas",
     "net_gallons": "9,976",
@@ -4898,7 +4898,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Wyoming",
     "net_gallons": "-7,568",
@@ -4916,7 +4916,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "New Mexico",
     "net_gallons": "20,246",
@@ -4934,7 +4934,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$36.33",
     "jurisdiction": "New Jersey",
     "net_gallons": "17,042",
@@ -4952,7 +4952,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$147.24",
     "jurisdiction": "Michigan",
     "net_gallons": "30,569",
@@ -4970,7 +4970,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Illinois",
     "net_gallons": "20,564",
@@ -4988,7 +4988,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$91.73",
     "jurisdiction": "Tennessee",
     "net_gallons": "13,528",
@@ -5006,7 +5006,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "California",
     "net_gallons": "13,078",
@@ -5024,7 +5024,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Alabama",
     "net_gallons": "1,273",
@@ -5042,7 +5042,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Arizona",
     "net_gallons": "12,321",
@@ -5060,7 +5060,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$130.01",
     "jurisdiction": "Maryland",
     "net_gallons": "23,812",
@@ -5078,7 +5078,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Idaho",
     "net_gallons": "3,013",
@@ -5096,7 +5096,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Oklahoma",
     "net_gallons": "9,663",
@@ -5114,7 +5114,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Nebraska",
     "net_gallons": "30,925",
@@ -5132,7 +5132,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "New York",
     "net_gallons": "30,990",
@@ -5150,7 +5150,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Georgia",
     "net_gallons": "-23,528",
@@ -5168,7 +5168,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Iowa",
     "net_gallons": "-10,987",
@@ -5186,7 +5186,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Utah",
     "net_gallons": "2,629",
@@ -5204,7 +5204,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "North Carolina",
     "net_gallons": "-3,460",
@@ -5222,7 +5222,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Kentucky",
     "net_gallons": "30,131",
@@ -5240,7 +5240,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Louisiana",
     "net_gallons": "19,773",
@@ -5258,7 +5258,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Connecticut",
     "net_gallons": "-10,719",
@@ -5276,7 +5276,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$22.25",
     "jurisdiction": "South Dakota",
     "net_gallons": "3,283",
@@ -5294,7 +5294,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$8.91",
     "jurisdiction": "South Carolina",
     "net_gallons": "999",
@@ -5312,7 +5312,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Virginia",
     "net_gallons": "21,076",
@@ -5330,7 +5330,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Colorado",
     "net_gallons": "18,420",
@@ -5348,7 +5348,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Wisconsin",
     "net_gallons": "-1,262",
@@ -5366,7 +5366,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Arkansas",
     "net_gallons": "13,170",
@@ -5384,7 +5384,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Ohio",
     "net_gallons": "26,550",
@@ -5402,7 +5402,7 @@
   {
     "filing_type": "Original",
     "filing_year": "2023",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Indiana",
     "net_gallons": "-1,773",
@@ -5420,7 +5420,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Alabama",
     "net_gallons": "8,836",
@@ -5438,7 +5438,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Arkansas",
     "net_gallons": "-75",
@@ -5456,7 +5456,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Arizona",
     "net_gallons": "11,649",
@@ -5474,7 +5474,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "California",
     "net_gallons": "31,484",
@@ -5492,7 +5492,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Colorado",
     "net_gallons": "14,073",
@@ -5510,7 +5510,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Florida",
     "net_gallons": "232",
@@ -5528,7 +5528,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Georgia",
     "net_gallons": "23,131",
@@ -5546,7 +5546,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Iowa",
     "net_gallons": "16,862",
@@ -5564,7 +5564,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Idaho",
     "net_gallons": "-9,868",
@@ -5582,7 +5582,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Illinois",
     "net_gallons": "-5,948",
@@ -5600,7 +5600,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$27.55",
     "jurisdiction": "Indiana",
     "net_gallons": "8,728",
@@ -5618,7 +5618,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Kansas",
     "net_gallons": "8,364",
@@ -5636,7 +5636,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Kentucky",
     "net_gallons": "-7,227",
@@ -5654,7 +5654,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$400.40",
     "jurisdiction": "Maryland",
     "net_gallons": "28,481",
@@ -5672,7 +5672,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Michigan",
     "net_gallons": "-13,287",
@@ -5690,7 +5690,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Minnesota",
     "net_gallons": "-35,029",
@@ -5708,7 +5708,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$276.82",
     "jurisdiction": "Mississippi",
     "net_gallons": "34,844",
@@ -5726,7 +5726,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "North Carolina",
     "net_gallons": "-9,822",
@@ -5744,7 +5744,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "North Dakota",
     "net_gallons": "33,131",
@@ -5762,7 +5762,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Nebraska",
     "net_gallons": "27,426",
@@ -5780,7 +5780,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "New Jersey",
     "net_gallons": "40,470",
@@ -5798,7 +5798,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "New Mexico",
     "net_gallons": "28,756",
@@ -5816,7 +5816,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Nevada",
     "net_gallons": "12,069",
@@ -5834,7 +5834,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "New York",
     "net_gallons": "27,823",
@@ -5852,7 +5852,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Ohio",
     "net_gallons": "7,878",
@@ -5870,7 +5870,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Pennsylvania",
     "net_gallons": "35,248",
@@ -5888,7 +5888,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "South Dakota",
     "net_gallons": "33,360",
@@ -5906,7 +5906,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Tennessee",
     "net_gallons": "-18,374",
@@ -5924,7 +5924,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Texas",
     "net_gallons": "14,836",
@@ -5942,7 +5942,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Virginia",
     "net_gallons": "11,940",
@@ -5960,7 +5960,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Washington",
     "net_gallons": "19,678",
@@ -5978,7 +5978,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Wisconsin",
     "net_gallons": "-5,751",
@@ -5996,7 +5996,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "West Virginia",
     "net_gallons": "-22,709",
@@ -6014,7 +6014,7 @@
   {
     "filing_type": "Amended",
     "filing_year": "2024",
-    "fuel_type": "Diesel (DI)",
+    "fuel_type": "DI",
     "interest_due": "$0.00",
     "jurisdiction": "Wyoming",
     "net_gallons": "8,110",

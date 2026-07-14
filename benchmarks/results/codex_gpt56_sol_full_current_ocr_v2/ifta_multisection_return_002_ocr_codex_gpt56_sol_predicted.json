@@ -4116,7 +4116,7 @@
     "tax_due_refund": "$18,532.29",
     "tax_paid_gallons": "0",
     "tax_rate": "0.6949",
-    "taxable_gallons": "26,699",
+    "taxable_gallons": "26,669",
     "taxable_miles": "180,491",
     "total_due_refund": "$18,690.73",
     "total_miles": "180,831"
@@ -5843,7 +5843,7 @@
     "surtax_due": "$0.00",
     "tax_due_refund": "($2,846.22)",
     "tax_paid_gallons": "13,078",
-    "tax_rate": "0.6697",
+    "tax_rate": "0.6667",
     "taxable_gallons": "8,828",
     "taxable_miles": "72,908",
     "total_due_refund": "($2,846.22)",
@@ -7052,7 +7052,7 @@
     "tax_rate": "0.4545",
     "taxable_gallons": "31,166",
     "taxable_miles": "177,327",
-    "total_due_refund": "($8,646.31)",
+    "total_due_refund": "($8,464.31)",
     "total_miles": "177,667"
   },
   {
