@@ -95,7 +95,7 @@ def _has_stressor_evidence(instance: dict[str, Any], stressor: str) -> tuple[boo
         return bool(hits), f"duplicate/distractor markers: {hits[:6]}"
 
     if stressor == "large_doc":
-        # 2.0 includes both very high row-count docs and moderately large
+        # The release includes both very high row-count docs and moderately large
         # production-like packets where page count is the stressor.
         ok = target_count >= 500 or page_count >= 50 or (target_count >= 300 and page_count >= 40)
         return ok, f"{target_count} records; {page_count} pages"
