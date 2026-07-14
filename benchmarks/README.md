@@ -19,7 +19,7 @@ The released transcript condition is `ocr`. The current corpus does not ship cle
 
 ## Complexity Stressors
 
-The released documents are not only grouped by config. Each sample carries 14 canonical complexity stressors in `problems`; the manifest's 45 distinct tokens also include finer audit tags.
+The released documents are not only grouped by config. The release defines 14 canonical complexity stressors, and each sample carries the applicable subset in `problems`; the manifest's 45 distinct tokens also include finer audit tags.
 
 | Tag | Meaning |
 |---|---|

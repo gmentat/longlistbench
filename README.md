@@ -138,7 +138,7 @@ data/
 
 ### Complexity Stressors
 
-LongListBench defines 14 canonical cross-cutting stressors in each instance's `problems` metadata. The manifest contains 45 distinct problem tokens because it also retains finer domain and implementation tags for audit slices.
+LongListBench defines 14 canonical cross-cutting stressors, stored as applicable subsets in each instance's `problems` metadata. The manifest contains 45 distinct problem tokens because it also retains finer domain and implementation tags for audit slices.
 
 | Tag | Meaning |
 |-----|---------|

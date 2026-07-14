@@ -26,7 +26,7 @@ All 32 PDFs have Gemini OCR transcripts. The current transcripts have 99.9% aver
 
 ## Complexity Stressors
 
-Each instance records cross-cutting stressors in its `problems` metadata. The current release tracks the original generator stressors (`page_breaks`, `multi_row`, `duplicates`, `large_doc`, `multiple_tables`, `multi_column`, `merged_cells`) plus release-specific tags such as `ocr_condition`, `ocr_layout_condition`, `long_range_evidence`, `cross_section_join`, `repeated_keys`, and `heterogeneous_record_list`.
+Each instance records its applicable cross-cutting stressors in `problems` metadata. The current release defines 14 canonical stressors: `page_breaks`, `split_records`, `multi_row`, `duplicates`, `large_doc`, `multiple_tables`, `multi_column`, `merged_cells`, `ocr_condition`, `ocr_layout_condition`, `long_range_evidence`, `cross_section_join`, `repeated_keys`, and `heterogeneous_record_list`.
 
 These tags are visible in `manifest.json`, per-sample files under `metadata/`, `index.csv`, `index.json`, and the browsable `index.html`. They are intentionally not printed inside the PDFs, because visible benchmark labels would make the documents less realistic.
 
