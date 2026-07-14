@@ -193,6 +193,28 @@ class EvaluationMetricsTests(unittest.TestCase):
 
         self.assertEqual(metrics["f1"], 1.0)
 
+    def test_visible_vehicle_label_is_not_part_of_schema_value(self):
+        ground_truth = [{"vehicle": "8387", "state": "AL", "total_miles": 3039.8}]
+        predicted = [{"vehicle": "Unit 8387", "state": "Alabama", "total_miles": "3,039.8"}]
+
+        metrics = evaluate_record_extraction(predicted, ground_truth)
+
+        self.assertEqual(metrics["exact_record_recall"], 1.0)
+        self.assertTrue(metrics["complete_document"])
+
+    def test_quarter_return_heading_alias_preserves_extra_context(self):
+        ground_truth = [{"schedule": "Quarterly Return 13", "jurisdiction": "AL"}]
+        alias = [{"schedule": "Quarter Return 13", "jurisdiction": "Alabama"}]
+        contaminated = [{"schedule": "Quarter Return 13 | Diesel", "jurisdiction": "Alabama"}]
+
+        alias_metrics = evaluate_record_extraction(alias, ground_truth)
+        contaminated_metrics = evaluate_record_extraction(contaminated, ground_truth)
+
+        self.assertEqual(alias_metrics["exact_record_recall"], 1.0)
+        self.assertTrue(alias_metrics["complete_document"])
+        self.assertEqual(contaminated_metrics["exact_record_recall"], 0.0)
+        self.assertFalse(contaminated_metrics["complete_document"])
+
     def test_domain_labels_use_published_canonical_forms(self):
         ground_truth = [
             {

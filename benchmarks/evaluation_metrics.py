@@ -436,6 +436,10 @@ def _canonicalize_record(item: dict) -> dict:
 def _normalize_generic_field(field: str, value: Any) -> Any:
     if not isinstance(value, str):
         return value
+    if field == "vehicle":
+        return re.sub(r"^unit\s+", "", value).strip()
+    if field == "schedule":
+        return re.sub(r"^quarter\s+return\b", "quarterly return", value).strip()
     if field in {"jurisdiction", "state", "policy_state", "loss_state"}:
         return _normalize_region(value)
     if field == "fuel_type":
