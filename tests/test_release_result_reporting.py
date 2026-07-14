@@ -1,3 +1,4 @@
+import hashlib
 import json
 from pathlib import Path
 
@@ -77,15 +78,22 @@ def test_release_tables_match_saved_reports() -> None:
     abstract = (ROOT / "paper/contents/0_abstract.tex").read_text(encoding="utf-8")
     results_tex = (ROOT / "paper/contents/5_results.tex").read_text(encoding="utf-8")
     conclusion = (ROOT / "paper/contents/7_conclusion.tex").read_text(encoding="utf-8")
+    manifest_path = ROOT / "data/manifest.json"
+    manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    current_manifest_hash = hashlib.sha256(manifest_path.read_bytes()).hexdigest()
 
     manifest_hashes = {report["dataset"]["manifest_sha256"] for report in reports.values()}
-    assert len(manifest_hashes) == 1
+    assert manifest_hashes == {current_manifest_hash}
     sample_counts = {model_stats["total_samples"] for model_stats in stats.values()}
     row_counts = {model_stats["total_rows"] for model_stats in stats.values()}
     assert len(sample_counts) == 1
     assert len(row_counts) == 1
     total_samples = sample_counts.pop()
     total_rows = row_counts.pop()
+    assert total_samples == manifest["total_documents"]
+    assert total_rows == manifest["total_target_records"]
+    assert f"{total_samples} synthetic PDFs" in abstract
+    assert _tex_int(total_rows) in abstract
     for report in reports.values():
         assert report["dataset"]["git_dirty"] is False
     for model_stats in stats.values():
