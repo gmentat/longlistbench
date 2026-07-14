@@ -49,10 +49,20 @@ PROBLEM_LABELS = {
     "ifta_tax_return_inquiry_detail": "Tax inquiry detail tables",
     "policy_multi_hop": "Heterogeneous policy records",
     "ifta_multisection_return_packet": "Cross-section return joins",
-    "ifta_tax_return_summary": "Tax-summary scale tests",
-    "driver_schedule_spreadsheet_export": "Driver-schedule scale test",
-    "ifta_mileage_by_vehicle": "Mileage-by-vehicle scale tests",
-    "vehicle_schedule_spreadsheet_export": "Vehicle-schedule scale tests",
+    "ifta_tax_return_summary": "Tax-summary scale controls",
+    "driver_schedule_spreadsheet_export": "Driver-schedule scale control",
+    "ifta_mileage_by_vehicle": "Mileage-by-vehicle scale controls",
+    "vehicle_schedule_spreadsheet_export": "Vehicle-schedule scale controls",
+}
+
+REQUIRED_SAMPLE_PROVENANCE = {
+    "dataset_manifest_sha256",
+    "runner_source_sha256",
+    "transcript_sha256",
+    "field_contract_sha256",
+    "prompt_sha256",
+    "input_fingerprint_sha256",
+    "prediction_sha256",
 }
 
 
@@ -120,17 +130,32 @@ def test_release_tables_match_saved_reports() -> None:
         sample_metadata = metadata[sample_field]
         assert len(sample_metadata) == total_samples
         if sample_field == "sample_statuses":
-            assert set(sample_metadata.values()) == {0}
-            observed_samples = metadata["samples"]
-            assert len(observed_samples) == total_samples
-            for sample in observed_samples.values():
+            assert set(sample_metadata.values()) == {"attest"}
+        observed_samples = metadata["samples"]
+        assert len(observed_samples) == total_samples
+        for sample_id, sample in observed_samples.items():
+            assert REQUIRED_SAMPLE_PROVENANCE <= sample.keys()
+            for field in REQUIRED_SAMPLE_PROVENANCE:
+                assert len(sample[field]) == 64
+                int(sample[field], 16)
+            prediction_path = REPORT_PATHS[key].parent / (
+                f"{sample_id}_ocr_{key}_predicted.json"
+            )
+            assert hashlib.sha256(prediction_path.read_bytes()).hexdigest() == sample["prediction_sha256"]
+            if sample_field == "sample_statuses":
                 assert sample["observed_model"] == requested_model
                 assert sample["observed_effort"] == "xhigh"
-        else:
-            for sample in sample_metadata.values():
+            else:
                 assert sample["requested_model"] == requested_model
                 assert sample["effort"] == "xhigh"
                 assert requested_model in sample["matching_inference_models"]
+
+        status_path = REPORT_PATHS[key].with_name("per_sample_status.tsv")
+        statuses = {
+            line.split("\t", 1)[1]
+            for line in status_path.read_text(encoding="utf-8").splitlines()[1:]
+        }
+        assert statuses == {"attest"}
 
     for key, (readme_label, tex_label) in OVERALL_LABELS.items():
         model_stats = stats[key]
@@ -155,7 +180,7 @@ def test_release_tables_match_saved_reports() -> None:
     fable = stats["claude_fable5"]
     for role_key, role_label in (
         ("structural_challenge", "Structural challenges"),
-        ("scale_control", "Scale tests"),
+        ("scale_control", "Scale controls"),
     ):
         sol_role = sol["by_evaluation_role"][role_key]
         fable_role = fable["by_evaluation_role"][role_key]
@@ -215,23 +240,23 @@ def test_release_tables_match_saved_reports() -> None:
         "on split records, "
         f"{_tex_pct(sol_stressors['inherited_context']['exact_record_recall'])} and "
         f"{_tex_pct(fable_stressors['inherited_context']['exact_record_recall'])} "
-        "on inherited context, and "
+        "with inherited context, and "
         f"{_tex_pct(sol_stressors['layout_randomization']['exact_record_recall'])} and "
         f"{_tex_pct(fable_stressors['layout_randomization']['exact_record_recall'])} "
         "under layout randomization."
     )
     assert stressor_sentence in results_tex
 
-    latest_summary = (
-        f"recover {_tex_pct(sol['exact_record_recall'])} and "
-        f"{_tex_pct(fable['exact_record_recall'])} of records exactly, but reproduce only "
-        f"{sol['complete_documents']} and {fable['complete_documents']} of "
-        f"{total_samples} complete document lists"
-    )
-    assert latest_summary in abstract
     assert (
         f"recover {_tex_pct(sol['exact_record_recall'])} and "
-        f"{_tex_pct(fable['exact_record_recall'])} of target records exactly but complete only "
-        f"{sol['complete_documents']} and {fable['complete_documents']} of "
-        f"{total_samples} documents"
+        f"{_tex_pct(fable['exact_record_recall'])} of records exactly"
+    ) in abstract
+    assert (
+        f"each reproduces only {sol['complete_documents']} of "
+        f"{total_samples} complete document lists"
+    ) in abstract
+    assert (
+        f"recover {_tex_pct(sol['exact_record_recall'])} and "
+        f"{_tex_pct(fable['exact_record_recall'])} of target records exactly but each completes only "
+        f"{sol['complete_documents']} of {total_samples} documents"
     ) in conclusion

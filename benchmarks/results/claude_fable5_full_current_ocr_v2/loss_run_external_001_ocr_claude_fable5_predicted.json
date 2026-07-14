@@ -149,7 +149,7 @@
     "date_reported": "08/06/21",
     "description": "trailer door contacted by loading equipment",
     "driver": "",
-    "effective_date": "04/11/21",
+    "effective_date": "",
     "policy_number": "SC00928139"
   },
   {
@@ -166,7 +166,7 @@
     "date_reported": "07/07/21",
     "description": "trailer door contacted by loading equipment",
     "driver": "Jordan E. Osborne",
-    "effective_date": "04/11/21",
+    "effective_date": "",
     "policy_number": "SC00928139"
   },
   {
@@ -183,7 +183,7 @@
     "date_reported": "07/19/21",
     "description": "parking-lot contact reported by third-party claimant",
     "driver": "Vaughn G. Larkin",
-    "effective_date": "04/11/21",
+    "effective_date": "",
     "policy_number": "SC00928139"
   },
   {
@@ -200,7 +200,7 @@
     "date_reported": "07/31/21",
     "description": "rear impact while backing toward a dock door; repair estimate remains under carrier review",
     "driver": "Harper V. Hollis",
-    "effective_date": "04/11/21",
+    "effective_date": "",
     "policy_number": "SC00928139"
   },
   {
@@ -217,7 +217,7 @@
     "date_reported": "08/12/21",
     "description": "trailer door contacted by loading equipment",
     "driver": "",
-    "effective_date": "04/11/21",
+    "effective_date": "",
     "policy_number": "SC00928139"
   },
   {
@@ -687,7 +687,7 @@
     "claim_reported": "X",
     "claim_reserves": "$0.00",
     "claim_status": "Closed",
-    "claimant": "Northline Distribution",
+    "claimant": "Northline Dist.",
     "date_closed": "05/26/23",
     "date_of_loss": "02/22/23",
     "date_reported": "03/27/23",
@@ -704,7 +704,7 @@
     "claim_reported": "X",
     "claim_reserves": "$0.00",
     "claim_status": "Closed",
-    "claimant": "Riverbend Concrete",
+    "claimant": "Riverbend Conc.",
     "date_closed": "06/18/23",
     "date_of_loss": "03/01/23",
     "date_reported": "04/08/23",
@@ -721,7 +721,7 @@
     "claim_reported": "X",
     "claim_reserves": "$82,618.66",
     "claim_status": "Open",
-    "claimant": "Alder Logistics Repair",
+    "claimant": "Alder Logistics",
     "date_closed": "",
     "date_of_loss": "03/08/23",
     "date_reported": "03/09/23",
@@ -738,7 +738,7 @@
     "claim_reported": "X",
     "claim_reserves": "$86,747.91",
     "claim_status": "Reopened",
-    "claimant": "Juniper Transit Yard",
+    "claimant": "Juniper Transit",
     "date_closed": "",
     "date_of_loss": "05/19/22",
     "date_reported": "05/25/22",
@@ -755,7 +755,7 @@
     "claim_reported": "X",
     "claim_reserves": "$90,876.27",
     "claim_status": "Pending",
-    "claimant": "Ironwood Trailer Works",
+    "claimant": "Ironwood Trailer",
     "date_closed": "",
     "date_of_loss": "05/26/22",
     "date_reported": "06/06/22",
@@ -772,7 +772,7 @@
     "claim_reported": "X",
     "claim_reserves": "$3,005.91",
     "claim_status": "Open",
-    "claimant": "Canyon Fleet Body",
+    "claimant": "Canyon Fleet",
     "date_closed": "",
     "date_of_loss": "06/02/22",
     "date_reported": "06/18/22",
@@ -948,7 +948,7 @@
     "date_reported": "09/22/19",
     "description": "minor bodily injury allegation after a lane-change contact; rental and downtime amounts were still being reconciled",
     "driver": "Zion K. Serrano",
-    "effective_date": "05/16/19",
+    "effective_date": "",
     "policy_number": "SC00928147"
   },
   {
@@ -965,7 +965,7 @@
     "date_reported": "10/04/19",
     "description": "roll-up door damage noted during post-trip inspection; repair estimate remains under carrier review",
     "driver": "",
-    "effective_date": "05/16/19",
+    "effective_date": "",
     "policy_number": "SC00928147"
   },
   {
@@ -982,7 +982,7 @@
     "date_reported": "10/16/19",
     "description": "mirror and fairing damage found after delivery",
     "driver": "Harper N. Voss",
-    "effective_date": "05/16/19",
+    "effective_date": "",
     "policy_number": "SC00928147"
   },
   {
@@ -999,7 +999,7 @@
     "date_reported": "10/28/19",
     "description": "subrogation file opened for possible third-party recovery",
     "driver": "Sawyer N. Benton",
-    "effective_date": "05/16/19",
+    "effective_date": "",
     "policy_number": "SC00928147"
   },
   {
@@ -1764,7 +1764,7 @@
     "date_reported": "11/01/22",
     "description": "fuel-island scrape reported during yard maneuver",
     "driver": "Vaughn N. Quint",
-    "effective_date": "06/01/22",
+    "effective_date": "",
     "policy_number": "SC00928155"
   },
   {
@@ -1781,7 +1781,7 @@
     "date_reported": "11/13/22",
     "description": "rear impact while backing toward a dock door",
     "driver": "",
-    "effective_date": "06/01/22",
+    "effective_date": "",
     "policy_number": "SC00928155"
   },
   {
@@ -1798,7 +1798,7 @@
     "date_reported": "11/25/22",
     "description": "minor bodily injury allegation after a lane-change contact; salvage credit had not posted to the run",
     "driver": "Casey V. Larkin",
-    "effective_date": "06/01/22",
+    "effective_date": "",
     "policy_number": "SC00928155"
   },
   {
@@ -1815,7 +1815,7 @@
     "date_reported": "12/07/22",
     "description": "forklift contact with parked trailer during unloading",
     "driver": "Zion N. Delaney",
-    "effective_date": "06/01/22",
+    "effective_date": "",
     "policy_number": "SC00928155"
   },
   {
@@ -1832,7 +1832,7 @@
     "date_reported": "12/19/22",
     "description": "minor bodily injury allegation after a lane-change contact",
     "driver": "Dakota L. Nolan",
-    "effective_date": "06/01/22",
+    "effective_date": "",
     "policy_number": "SC00928155"
   },
   {
@@ -2614,7 +2614,7 @@
     "date_reported": "01/22/21",
     "description": "forklift contact with parked trailer during unloading",
     "driver": "Reese N. Serrano",
-    "effective_date": "07/05/20",
+    "effective_date": "",
     "policy_number": "SC00928163"
   },
   {
@@ -3105,7 +3105,7 @@
     "date_closed": "04/23/21",
     "date_of_loss": "10/24/20",
     "date_reported": "11/22/20",
-    "description": "parked tractor struck during overnight staging; medical reserve was reviewed without closing the file",
+    "description": "parked tractor struck during overnight staging; medical reserve",
     "driver": "Casey H. Nolan",
     "effective_date": "07/22/20",
     "policy_number": "SC00928168"
@@ -3118,7 +3118,7 @@
     "claim_reported": "X",
     "claim_reserves": "$20,807.21",
     "claim_status": "Open",
-    "claimant": "Keystone Materials",
+    "claimant": "",
     "date_closed": "",
     "date_of_loss": "10/31/21",
     "date_reported": "12/04/21",
@@ -3135,7 +3135,7 @@
     "claim_reported": "X",
     "claim_reserves": "$24,936.86",
     "claim_status": "Open",
-    "claimant": "Palisade Container",
+    "claimant": "",
     "date_closed": "",
     "date_of_loss": "11/07/21",
     "date_reported": "12/16/21",
@@ -3152,7 +3152,7 @@
     "claim_reported": "X",
     "claim_reserves": "$0.00",
     "claim_status": "Closed",
-    "claimant": "Keystone Materials",
+    "claimant": "",
     "date_closed": "05/20/22",
     "date_of_loss": "11/14/21",
     "date_reported": "11/16/21",
@@ -3169,7 +3169,7 @@
     "claim_reported": "X",
     "claim_reserves": "$33,194.47",
     "claim_status": "Pending",
-    "claimant": "Keystone Materials",
+    "claimant": "",
     "date_closed": "",
     "date_of_loss": "11/21/21",
     "date_reported": "11/28/21",
@@ -3717,7 +3717,7 @@
     "date_closed": "",
     "date_of_loss": "09/23/22",
     "date_reported": "11/03/22",
-    "description": "parked tractor truck during overnight staging",
+    "description": "parked tractor struck during overnight staging",
     "driver": "Rowan A. Ramos",
     "effective_date": "08/08/22",
     "policy_number": "SC00928175"
@@ -3747,7 +3747,7 @@
     "claim_reported": "X",
     "claim_reserves": "$81,580.19",
     "claim_status": "Pending",
-    "claimant": "Juniper Transit Yard",
+    "claimant": "Oak Valley Repair",
     "date_closed": "",
     "date_of_loss": "10/07/22",
     "date_reported": "10/16/22",
@@ -3870,7 +3870,7 @@
     "date_closed": "07/12/23",
     "date_of_loss": "11/25/22",
     "date_reported": "11/27/22",
-    "description": "cargo shortage noticed after assignee inspection",
+    "description": "cargo shortage noticed after consignee inspection",
     "driver": "Vaughn M. Benton",
     "effective_date": "08/08/22",
     "policy_number": "SC00928175"
@@ -3921,7 +3921,7 @@
     "date_closed": "02/21/23",
     "date_of_loss": "12/16/22",
     "date_reported": "01/02/23",
-    "description": "parked tractor truck during overnight staging",
+    "description": "parked tractor struck during overnight staging",
     "driver": "Jordan T. Ellis",
     "effective_date": "08/08/22",
     "policy_number": "SC00928175"
@@ -4161,7 +4161,7 @@
     "date_reported": "04/13/22",
     "description": "reefer unit service call included in repair estimate",
     "driver": "",
-    "effective_date": "08/25/21",
+    "effective_date": "",
     "policy_number": "SC00928179"
   },
   {
@@ -4178,7 +4178,7 @@
     "date_reported": "04/25/22",
     "description": "steer tire failure led to roadside service invoice; liability position was not final at valuation date",
     "driver": "Sawyer P. Ramos",
-    "effective_date": "08/25/21",
+    "effective_date": "",
     "policy_number": "SC00928179"
   },
   {
@@ -4195,7 +4195,7 @@
     "date_reported": "05/07/22",
     "description": "trailer door contacted by loading equipment",
     "driver": "Casey M. Keller",
-    "effective_date": "08/25/21",
+    "effective_date": "",
     "policy_number": "SC00928179"
   },
   {
@@ -4501,7 +4501,7 @@
     "date_reported": "12/07/20",
     "description": "side-swipe contact reported near an interstate ramp; rental and downtime amounts were still being reconciled",
     "driver": "",
-    "effective_date": "09/11/20",
+    "effective_date": "",
     "policy_number": "SC00928183"
   },
   {
@@ -4518,7 +4518,7 @@
     "date_reported": "12/19/20",
     "description": "forklift contact with parked trailer during unloading",
     "driver": "Jordan T. Delaney",
-    "effective_date": "09/11/20",
+    "effective_date": "",
     "policy_number": "SC00928183"
   },
   {
@@ -4535,7 +4535,7 @@
     "date_reported": "12/31/20",
     "description": "cargo shortage noticed after consignee inspection; photos were received with the initial notice",
     "driver": "Avery W. Aldridge",
-    "effective_date": "09/11/20",
+    "effective_date": "",
     "policy_number": "SC00928183"
   },
   {
@@ -4552,7 +4552,7 @@
     "date_reported": "01/12/21",
     "description": "towing and storage reimbursement requested after disablement",
     "driver": "Sawyer J. Nolan",
-    "effective_date": "09/11/20",
+    "effective_date": "",
     "policy_number": "SC00928183"
   },
   {
@@ -4569,7 +4569,7 @@
     "date_reported": "01/24/21",
     "description": "windshield and cowl damage attributed to road debris",
     "driver": "",
-    "effective_date": "09/11/20",
+    "effective_date": "",
     "policy_number": "SC00928183"
   },
   {

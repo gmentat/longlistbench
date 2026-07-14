@@ -1,15 +1,15 @@
 # Multi-Model Evaluation Report
 
-Generated: 2026-07-14 15:36:51 UTC
+Generated: 2026-07-14 20:37:23 UTC
 Evaluation mode: `offline_replay`
-Dataset manifest SHA-256: `0ee9927f8a9abb607a7ca02d4dcfbefad6eed21b2aa93e76ca47b3c64909840d`
-Git SHA: `a5fa284b96af5d352e3b76cf6a664d6fa2fe8e1d`; dirty: `False`
+Dataset manifest SHA-256: `5e40e8e07c58aa8882f1f4308fd338310ab19c65367ba9ab60b71050eb739140`
+Git SHA: `f8d022fe4a10ce3d3d1a568161eb6a06692d7c8b`; dirty: `False`
 
 ## Overall Results
 
 | Model | Exact-record recall | Complete documents | Field micro-F1 | Field macro-F1 | Rows | Samples | Errors | Time (s) | Cost (USD) |
 |-------|---------------------|--------------------|----------------|----------------|------|---------|--------|----------|------------|
-| Codex GPT-5.6-Sol (CLI Agentic, xhigh) | 93.5% | 6/32 (18.8%) | 98.7% | 98.3% | 29599 | 32 | 0 | N/A | N/A |
+| Codex GPT-5.6-Sol (CLI Agentic, xhigh) | 93.7% | 6/32 (18.8%) | 98.7% | 98.3% | 29599 | 32 | 0 | N/A | N/A |
 
 The primary score is exact-record recall: a target counts only when every normalized field in one predicted record matches one ground-truth record. Complete-document success additionally requires the predicted and ground-truth record multisets to be identical. Record order is not scored. Field-pair F1 remains a secondary diagnostic.
 
@@ -17,37 +17,37 @@ The primary score is exact-record recall: a target counts only when every normal
 
 | Model | Structural Challenge | Scale Control |
 |---|---|---|
-| Codex GPT-5.6-Sol (CLI Agentic, xhigh) | 78.5% | 99.5% |
+| Codex GPT-5.6-Sol (CLI Agentic, xhigh) | 79.0% | 99.5% |
 
 ## Strict Completeness by Difficulty Tier
 
 | Model | Core Operations | Claim Multihop | Policy Packets |
 |---|---|---|---|
-| Codex GPT-5.6-Sol (CLI Agentic, xhigh) | 94.5% | 98.7% | 73.3% |
+| Codex GPT-5.6-Sol (CLI Agentic, xhigh) | 94.6% | 98.7% | 73.3% |
 
 ## Strict Completeness by Document Format
 
 | Model | Production Like Pdf | Crosspage |
 |---|---|---|
-| Codex GPT-5.6-Sol (CLI Agentic, xhigh) | 94.5% | 74.7% |
+| Codex GPT-5.6-Sol (CLI Agentic, xhigh) | 94.6% | 74.7% |
 
 ## Strict Completeness by Complexity Regime
 
 | Model | Ifta Mileage By Vehicle | Ifta Multisection Return Packet | Ifta Return Schedule Details | Ifta Tax Return Summary | Driver Mvr Request And Roster | Loss Run External | Vehicle Schedule Spreadsheet Export | Ifta Tax Return Inquiry Detail | Driver Schedule Spreadsheet Export | Claim Crosspage Multihop | Policy Multi Hop |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| Codex GPT-5.6-Sol (CLI Agentic, xhigh) | 99.4% | 99.6% | 93.7% | 99.5% | 0.6% | 97.3% | 100.0% | 99.9% | 99.8% | 98.7% | 73.3% |
+| Codex GPT-5.6-Sol (CLI Agentic, xhigh) | 99.4% | 99.6% | 95.5% | 99.5% | 0.6% | 97.3% | 100.0% | 99.9% | 99.8% | 98.7% | 73.3% |
 
 ## Strict Completeness by Key Stressor
 
 | Model | Ocr Layout Condition | Cross Section Join | Long Range Evidence | Heterogeneous Record List | Multi Column | Merged Cells | Multi Row | Duplicates | Distractor Sections | Repeated Keys | Large Doc | High Density Long List | Page Breaks | Businessowners Policy | Claimant Lookup | Class Code Payroll Rating | Coded Values | Commercial General Liability | Continuation Notes | Cross Page Join | Distractor Forms | Distractor Locations | Experience Mod And Schedule Rating | Exposure Rating Rows | Form Endorsement Links | Inherited Context | Layout Randomization | Limits Forms Exclusions | Location Scoped Coverage | Longer List | Many To One Policy | Material Clause Extraction | Mixed Layout | Mixed Prose Tables | Multiple Tables | Natural Long Range Join | Non Sequential Identifiers | Non Target Rows | Ocr Condition | Production Like Layout | Sparse Driver Fields | Split Records | Summary Distractors | Variable Policy Sections | Workers Compensation Policy |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Codex GPT-5.6-Sol (CLI Agentic, xhigh) | 99.6% | 99.6% | 74.7% | 73.3% | 74.7% | 96.7% | 92.1% | 93.1% | 83.5% | 99.6% | 97.6% | 94.5% | 93.5% | 80.8% | 100.0% | 100.0% | 100.0% | 47.9% | 97.3% | 98.7% | 47.9% | 47.9% | 100.0% | 47.9% | 80.8% | 94.5% | 97.6% | 47.9% | 80.8% | 97.5% | 100.0% | 73.3% | 97.5% | 98.7% | 93.7% | 74.7% | 98.7% | 94.5% | 93.5% | 94.5% | 97.3% | 94.4% | 97.3% | 97.3% | 100.0% |
+| Codex GPT-5.6-Sol (CLI Agentic, xhigh) | 99.6% | 99.6% | 74.7% | 73.3% | 74.7% | 96.7% | 92.1% | 93.1% | 83.5% | 99.6% | 97.8% | 94.6% | 93.7% | 80.8% | 100.0% | 100.0% | 100.0% | 47.9% | 97.3% | 98.7% | 47.9% | 47.9% | 100.0% | 47.9% | 80.8% | 95.0% | 98.3% | 47.9% | 80.8% | 97.5% | 100.0% | 73.3% | 97.5% | 98.7% | 93.8% | 74.7% | 98.7% | 95.0% | 93.7% | 94.6% | 97.3% | 94.9% | 97.3% | 97.3% | 100.0% |
 
 ## Strict Completeness by Transcript Condition
 
 | Model | Canonical | OCR |
 |-------|-----------|-----|
-| Codex GPT-5.6-Sol (CLI Agentic, xhigh) | N/A | 93.5% |
+| Codex GPT-5.6-Sol (CLI Agentic, xhigh) | N/A | 93.7% |
 
 ## Detailed Results
 
@@ -145,13 +145,13 @@ The primary score is exact-record recall: a target counts only when every normal
 
 | Model | Exact records | Complete | Field F1 | Predicted | Time |
 |-------|---------------|----------|----------|-----------|------|
-| Codex GPT-5.6-Sol (CLI Agentic, xhigh) | 92.4% | no | 98.2% | 962 | N/A |
+| Codex GPT-5.6-Sol (CLI Agentic, xhigh) | 95.3% | no | 98.5% | 962 | N/A |
 
 ### ifta_return_schedule_005 (ocr)
 
 | Model | Exact records | Complete | Field F1 | Predicted | Time |
 |-------|---------------|----------|----------|-----------|------|
-| Codex GPT-5.6-Sol (CLI Agentic, xhigh) | 93.7% | no | 98.4% | 1115 | N/A |
+| Codex GPT-5.6-Sol (CLI Agentic, xhigh) | 95.5% | no | 98.5% | 1115 | N/A |
 
 ### ifta_tax_inquiry_001 (ocr)
 

@@ -217,41 +217,41 @@ OCR support should be interpreted at the affected-record and field level, not on
 
 Saved reports under `benchmarks/results/` should be treated as local run artifacts unless their manifest hash matches the current `data/manifest.json`. After replacing layouts, rerun OCR and evaluation before citing current-layout or current-model baselines. The current released dataset includes OCR transcripts for every PDF.
 
-The release includes four full-corpus repository-denied coding-agent runs under the same OCR input and field-contract protocol. Each result directory includes all 36 predictions and a report that can be checked offline.
+The release includes four full-corpus repository-denied coding-agent runs under the same OCR input and field-contract protocol. Each result directory includes all 32 predictions, input and prediction fingerprints, and a report that can be checked offline.
 
-| Agent | Documents | Target records | Errors | Exact-record recall | Complete documents | Field micro-F1 |
-|---|---:|---:|---:|---:|---:|---:|
-| Codex CLI `gpt-5.6-sol`, xhigh | 36 | 33,450 | 0 | 89.9% | 14/36 (38.9%) | 97.8% |
-| Claude Code `claude-fable-5`, xhigh | 36 | 33,450 | 0 | 90.7% | 15/36 (41.7%) | 98.9% |
-| Codex CLI `gpt-5.5`, xhigh | 36 | 33,450 | 0 | 89.7% | 12/36 (33.3%) | 98.8% |
-| Claude Code `claude-opus-4-8`, xhigh | 36 | 33,450 | 0 | 85.8% | 11/36 (30.6%) | 98.7% |
+| Agent | Documents | Target records | Errors | Exact-record recall | Complete documents | Field micro-F1 | Field macro-F1 |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| Codex CLI `gpt-5.6-sol`, xhigh | 32 | 29,599 | 0 | 93.7% | 6/32 (18.8%) | 98.7% | 98.3% |
+| Claude Code `claude-fable-5`, xhigh | 32 | 29,599 | 0 | 90.9% | 6/32 (18.8%) | 96.1% | 92.6% |
+| Codex CLI `gpt-5.5`, xhigh | 32 | 29,599 | 0 | 90.4% | 4/32 (12.5%) | 98.2% | 97.7% |
+| Claude Code `claude-opus-4-8`, xhigh | 32 | 29,599 | 0 | 93.6% | 7/32 (21.9%) | 98.8% | 98.4% |
 
 The latest saved results are under `benchmarks/results/codex_gpt56_sol_full_current_ocr_v2/` and `benchmarks/results/claude_fable5_full_current_ocr_v2/`; the GPT-5.5 and Opus 4.8 comparison runs remain available beside them.
 
 An exact record must match every normalized target field. Complete-document success requires the predicted and ground-truth record multisets to be identical, including duplicates and with no extra records. Record order is not scored. Field-pair F1 remains a secondary partial-credit diagnostic.
 
-The evaluator uses a fixed document-family mapping for scale-test and structural-challenge roles:
+The evaluator uses a fixed document-family mapping for scale-control and structural-challenge roles:
 
 | Evaluation role | Documents | Target records | GPT-5.6-Sol exact | Fable 5 exact | GPT-5.6-Sol complete | Fable 5 complete |
 |---|---:|---:|---:|---:|---:|---:|
-| Structural challenges | 21 | 10,745 | 69.0% | 71.5% | 6/21 (28.6%) | 6/21 (28.6%) |
-| Scale tests | 15 | 22,705 | 99.7% | 99.8% | 8/15 (53.3%) | 9/15 (60.0%) |
+| Structural challenges | 19 | 8,414 | 79.0% | 69.3% | 2/19 (10.5%) | 2/19 (10.5%) |
+| Scale controls | 13 | 21,185 | 99.5% | 99.5% | 4/13 (30.8%) | 4/13 (30.8%) |
 
 Strict exact-record recall for the latest models, labeled by the extraction problem each family emphasizes:
 
 | Extraction problem | Documents | Target records | GPT-5.6-Sol | Fable 5 |
 |---|---:|---:|---:|---:|
-| Sparse record enrichment (driver/MVR) | 3 | 1,260 | 1.9% | 1.9% |
-| Long-range claim joins | 3 | 77 | 100.0% | 100.0% |
-| Split return schedules | 5 | 4,923 | 58.5% | 64.6% |
-| Mixed row/detail loss runs | 3 | 900 | 98.6% | 99.2% |
-| Tax inquiry detail tables | 2 | 1,300 | 98.1% | 98.1% |
-| Heterogeneous policy records | 3 | 1,489 | 99.4% | 96.8% |
-| Cross-section return joins | 2 | 796 | 99.9% | 99.9% |
-| Tax-summary scale tests | 4 | 3,040 | 99.9% | 99.9% |
-| Driver-schedule scale test | 1 | 500 | 99.4% | 99.4% |
-| Mileage-by-vehicle scale tests | 8 | 17,565 | 99.7% | 99.8% |
-| Vehicle-schedule scale tests | 2 | 1,600 | 99.8% | 99.9% |
+| Sparse record enrichment (driver/MVR) | 3 | 1,260 | 0.6% | 1.9% |
+| Long-range claim joins | 3 | 77 | 98.7% | 98.7% |
+| Split return schedules | 3 | 2,737 | 95.5% | 95.5% |
+| Mixed row/detail loss runs | 3 | 900 | 97.3% | 92.2% |
+| Tax inquiry detail tables | 2 | 1,300 | 99.9% | 99.8% |
+| Heterogeneous policy records | 3 | 1,344 | 73.3% | 14.6% |
+| Cross-section return joins | 2 | 796 | 99.6% | 99.6% |
+| Tax-summary scale controls | 2 | 1,520 | 99.5% | 99.5% |
+| Driver-schedule scale control | 1 | 500 | 99.8% | 99.8% |
+| Mileage-by-vehicle scale controls | 8 | 17,565 | 99.4% | 99.4% |
+| Vehicle-schedule scale controls | 2 | 1,600 | 100.0% | 100.0% |
 
 Full-context one-shot prompting is not treated as a full-corpus protocol for this release. It is useful as a lower-bound stress test, but the largest documents can hit model output limits or latency timeouts before returning a scoreable complete list.
 

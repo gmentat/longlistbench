@@ -41,17 +41,17 @@ All four full-corpus runs were produced on July 14, 2026 at xhigh effort using C
 \toprule
 Agent and model & Exact recall & Complete docs & Micro-$F_1$ & Macro-$F_1$ \\
 \midrule
-Codex CLI, GPT-5.6-Sol (xhigh) & 89.9\% & 14/36 (38.9\%) & 97.8\% & 97.8\% \\
-Claude Code, Fable 5 (xhigh) & 90.7\% & 15/36 (41.7\%) & 98.9\% & 98.6\% \\
-Codex CLI, GPT-5.5 (xhigh) & 89.7\% & 12/36 (33.3\%) & 98.8\% & 98.2\% \\
-Claude Code, Opus 4.8 (xhigh) & 85.8\% & 11/36 (30.6\%) & 98.7\% & 98.5\% \\
+Codex CLI, GPT-5.6-Sol (xhigh) & 93.7\% & 6/32 (18.8\%) & 98.7\% & 98.3\% \\
+Claude Code, Fable 5 (xhigh) & 90.9\% & 6/32 (18.8\%) & 96.1\% & 92.6\% \\
+Codex CLI, GPT-5.5 (xhigh) & 90.4\% & 4/32 (12.5\%) & 98.2\% & 97.7\% \\
+Claude Code, Opus 4.8 (xhigh) & 93.6\% & 7/32 (21.9\%) & 98.8\% & 98.4\% \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-No configuration completes even half of the documents. GPT-5.6-Sol improves exact recall and document completion over GPT-5.5 but has lower field $F_1$, while Fable 5 improves over Opus 4.8. The family results below explain more than the overall ranking.
+No configuration completes more than 7 of 32 documents. GPT-5.6-Sol has the highest exact-record recall, while Opus 4.8 completes one more document and has the highest field $F_1$. The family results below are more informative than this narrow aggregate ranking.
 
-We preassign four parser-friendly families as scale tests and the other seven as structural challenges. \Cref{tab:agentic-by-role} reports the latest models by role.
+We preassign four parser-friendly families as scale controls and the other seven as structural challenges. \Cref{tab:agentic-by-role} reports the latest models by role.
 
 \begin{table}[H]
 \centering
@@ -62,8 +62,8 @@ We preassign four parser-friendly families as scale tests and the other seven as
 \toprule
 Role & Docs & Records & Sol exact & Fable exact & Sol complete & Fable complete \\
 \midrule
-Structural challenges & 21 & 10{,}745 & 69.0\% & 71.5\% & 6/21 (28.6\%) & 6/21 (28.6\%) \\
-Scale tests & 15 & 22{,}705 & 99.7\% & 99.8\% & 8/15 (53.3\%) & 9/15 (60.0\%) \\
+Structural challenges & 19 & 8{,}414 & 79.0\% & 69.3\% & 2/19 (10.5\%) & 2/19 (10.5\%) \\
+Scale controls & 13 & 21{,}185 & 99.5\% & 99.5\% & 4/13 (30.8\%) & 4/13 (30.8\%) \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -73,30 +73,30 @@ Scale tests & 15 & 22{,}705 & 99.7\% & 99.8\% & 8/15 (53.3\%) & 9/15 (60.0\%) \\
 \begin{table}[H]
 \centering
 \scriptsize
-\caption{Latest-model exact-record recall by extraction problem. The divider separates structural challenges from scale tests.}
+\caption{Latest-model exact-record recall by extraction problem. The divider separates structural challenges from scale controls.}
 \label{tab:agentic-by-regime}
 \begin{tabular}{@{}p{0.47\linewidth}rrrr@{}}
 \toprule
 Extraction problem & Docs & Records & GPT-5.6-Sol & Fable 5 \\
 \midrule
-Sparse record enrichment (driver/MVR) & 3 & 1{,}260 & 1.9\% & 1.9\% \\
-Long-range claim joins & 3 & 77 & 100.0\% & 100.0\% \\
-Split return schedules & 5 & 4{,}923 & 58.5\% & 64.6\% \\
-Mixed row/detail loss runs & 3 & 900 & 98.6\% & 99.2\% \\
-Tax inquiry detail tables & 2 & 1{,}300 & 98.1\% & 98.1\% \\
-Heterogeneous policy records & 3 & 1{,}489 & 99.4\% & 96.8\% \\
-Cross-section return joins & 2 & 796 & 99.9\% & 99.9\% \\
+Sparse record enrichment (driver/MVR) & 3 & 1{,}260 & 0.6\% & 1.9\% \\
+Long-range claim joins & 3 & 77 & 98.7\% & 98.7\% \\
+Split return schedules & 3 & 2{,}737 & 95.5\% & 95.5\% \\
+Mixed row/detail loss runs & 3 & 900 & 97.3\% & 92.2\% \\
+Tax inquiry detail tables & 2 & 1{,}300 & 99.9\% & 99.8\% \\
+Heterogeneous policy records & 3 & 1{,}344 & 73.3\% & 14.6\% \\
+Cross-section return joins & 2 & 796 & 99.6\% & 99.6\% \\
 \midrule
-Tax-summary scale tests & 4 & 3{,}040 & 99.9\% & 99.9\% \\
-Driver-schedule scale test & 1 & 500 & 99.4\% & 99.4\% \\
-Mileage-by-vehicle scale tests & 8 & 17{,}565 & 99.7\% & 99.8\% \\
-Vehicle-schedule scale tests & 2 & 1{,}600 & 99.8\% & 99.9\% \\
+Tax-summary scale controls & 2 & 1{,}520 & 99.5\% & 99.5\% \\
+Driver-schedule scale control & 1 & 500 & 99.8\% & 99.8\% \\
+Mileage-by-vehicle scale controls & 8 & 17{,}565 & 99.4\% & 99.4\% \\
+Vehicle-schedule scale controls & 2 & 1{,}600 & 100.0\% & 100.0\% \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-The failures differ in kind. Both agents return all 1{,}260 driver rows, but only 24 are exact because sparse MVR fields are not joined back into the roster; field micro-$F_1$ is still 89.1\%. On split return schedules, GPT-5.6-Sol returns 4{,}326 of 4{,}923 rows and Fable 5 returns 4{,}779, with additional field errors. On page 18 of \path{ifta_tax_inquiry_002}, Gemini converted a card grid to CSV and omitted 23 visible row-label prefixes; this transcript loss explains most of the shared 98.1\% family score and is not solely an agent error. Both agents now complete the BOP and WC policy lists after the policy schedules were corrected, but the CGL packet remains incomplete at 98.5\% and 92.4\% exact recall. In contrast, both recover all 77 long-range claim records exactly, and each misses only one of 796 cross-section return records.
+The failures differ in kind. GPT-5.6-Sol returns 1{,}259 driver rows but only 8 are exact; Fable 5 returns 1{,}243 and matches 24 exactly. Their driver/MVR field $F_1$ remains 88.0\% and 88.4\%, showing that most roster fields are present while sparse enrichment fields are not joined correctly. Both systems match 2{,}614 of 2{,}737 split-schedule records and 76 of 77 long-range claim records. Policy packets separate them: GPT-5.6-Sol matches 985 of 1{,}344 records with 95.8\% field $F_1$, while Fable 5 returns only 232 records, matches 196, and reaches 33.5\% field $F_1$. Scale controls remain near ceiling, yet only four of 13 are completely correct for either system because a single missing, extra, or malformed record fails document completion.
 
-Cross-cutting slices reinforce this variation. Exact-record recall for GPT-5.6-Sol and Fable 5 is 99.4\% and 96.8\% on heterogeneous lists, 99.4\% and 97.0\% on long-range evidence, 84.7\% and 86.7\% on split records, 84.8\% and 86.7\% on inherited context, and 81.7\% and 84.4\% under layout randomization. Duplicate-bearing documents score 99.1\% and 97.8\%. Cross-section joins and repeated keys score 99.9\% for both. These are observational associations because tags overlap and document families differ; paired renderings would be needed to estimate one stressor's causal effect.
+Cross-cutting slices reinforce this variation. Exact-record recall for GPT-5.6-Sol and Fable 5 is 73.3\% and 14.6\% on heterogeneous lists, 74.7\% and 19.1\% on long-range evidence, 94.9\% and 86.9\% on split records, 95.0\% and 87.0\% with inherited context, and 98.3\% and 98.3\% under layout randomization. Duplicate-bearing documents score 93.1\% and 73.4\%; cross-section joins and repeated keys score 99.6\% for both. These are observational associations because tags overlap and document families differ; paired renderings would be needed to estimate one stressor's causal effect.
 
 Full-context one-shot extraction is not a practical full-corpus protocol here. Small claim packets can return scoreable outputs, but larger outputs reach model limits or time out. We therefore treat one-shot prompting as a lower-bound operational stress test and use the per-document agentic protocol for full-corpus comparison.
