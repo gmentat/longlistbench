@@ -67,6 +67,100 @@ class EvaluatorRegressionTests(unittest.TestCase):
             evaluate_models.evaluate_extraction,
         )
 
+    def test_checker_recomputes_strict_and_stressor_aggregates(self) -> None:
+        claims_dir = Path(tempfile.mkdtemp())
+        (claims_dir / "manifest.json").write_text(
+            json.dumps(
+                {
+                    "instances": [
+                        {
+                            "id": "scale-sample",
+                            "complexity_regime": "ifta_mileage_by_vehicle",
+                            "problems": ["page_breaks"],
+                        },
+                        {
+                            "id": "structural-sample",
+                            "complexity_regime": "policy_multi_hop",
+                            "problems": ["long_range_evidence"],
+                        },
+                    ]
+                }
+            ),
+            encoding="utf-8",
+        )
+        detailed_results = [
+            {
+                "model": "test_model",
+                "sample": "scale-sample",
+                "tier": "core_operations",
+                "format": "pdf",
+                "transcript": "ocr",
+                "error": None,
+                "metrics": {
+                    "ground_truth_count": 2,
+                    "predicted_count": 2,
+                    "exact_record_matches": 2,
+                    "complete_document": True,
+                    "f1": 1.0,
+                    "recall": 1.0,
+                    "precision": 1.0,
+                    "found": 4,
+                    "total_gold_field_pairs": 4,
+                    "total_pred_field_pairs": 4,
+                },
+            },
+            {
+                "model": "test_model",
+                "sample": "structural-sample",
+                "tier": "policy_packets",
+                "format": "pdf",
+                "transcript": "ocr",
+                "error": None,
+                "metrics": {
+                    "ground_truth_count": 3,
+                    "predicted_count": 4,
+                    "exact_record_matches": 1,
+                    "complete_document": False,
+                    "f1": 0.5,
+                    "recall": 0.5,
+                    "precision": 0.5,
+                    "found": 3,
+                    "total_gold_field_pairs": 6,
+                    "total_pred_field_pairs": 6,
+                },
+            },
+        ]
+
+        recomputed = check_evaluation_report._recompute_model_stats(
+            detailed_results,
+            claims_dir=claims_dir,
+        )
+        stats = recomputed["test_model"]
+
+        self.assertEqual(stats["total_exact_record_matches"], 3)
+        self.assertEqual(stats["exact_record_recall"], 3 / 5)
+        self.assertEqual(stats["complete_documents"], 1)
+        self.assertEqual(stats["complete_document_rate"], 0.5)
+        self.assertEqual(
+            stats["by_evaluation_role"]["scale_control"]["exact_record_recall"],
+            1.0,
+        )
+        self.assertEqual(
+            stats["by_stressor"]["long_range_evidence"]["exact_record_recall"],
+            1 / 3,
+        )
+
+        tampered = json.loads(json.dumps(recomputed))
+        tampered["test_model"]["by_stressor"]["long_range_evidence"][
+            "exact_record_recall"
+        ] = 1.0
+        errors = check_evaluation_report._compare_model_stats(
+            expected=tampered,
+            actual=recomputed,
+            tol=1e-12,
+        )
+        self.assertTrue(any("exact_record_recall mismatch" in error for error in errors))
+
     def test_validator_rejects_missing_required_fields(self) -> None:
         with self.assertRaises(ValueError):
             _validate_and_normalize_predictions(
