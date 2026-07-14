@@ -80,26 +80,32 @@ def test_release_tables_match_saved_reports() -> None:
 
     manifest_hashes = {report["dataset"]["manifest_sha256"] for report in reports.values()}
     assert len(manifest_hashes) == 1
+    sample_counts = {model_stats["total_samples"] for model_stats in stats.values()}
+    row_counts = {model_stats["total_rows"] for model_stats in stats.values()}
+    assert len(sample_counts) == 1
+    assert len(row_counts) == 1
+    total_samples = sample_counts.pop()
+    total_rows = row_counts.pop()
     for report in reports.values():
         assert report["dataset"]["git_dirty"] is False
     for model_stats in stats.values():
-        assert model_stats["total_samples"] == 36
-        assert model_stats["total_rows"] == 33_450
+        assert model_stats["total_samples"] == total_samples
+        assert model_stats["total_rows"] == total_rows
         assert model_stats["errors"] == 0
 
     for key, (readme_label, tex_label) in OVERALL_LABELS.items():
         model_stats = stats[key]
         readme_row = (
-            f"| {readme_label} | 36 | 33,450 | 0 | "
+            f"| {readme_label} | {total_samples} | {total_rows:,} | 0 | "
             f"{_pct(model_stats['exact_record_recall'])} | "
-            f"{model_stats['complete_documents']}/36 "
+            f"{model_stats['complete_documents']}/{total_samples} "
             f"({_pct(model_stats['complete_document_rate'])}) | "
             f"{_pct(model_stats['weighted_f1'])} |"
         )
         assert readme_row in readme
         tex_row = (
             f"{tex_label} & {_tex_pct(model_stats['exact_record_recall'])} & "
-            f"{model_stats['complete_documents']}/36 "
+            f"{model_stats['complete_documents']}/{total_samples} "
             f"({_tex_pct(model_stats['complete_document_rate'])}) & "
             f"{_tex_pct(model_stats['weighted_f1'])} & "
             f"{_tex_pct(model_stats['avg_f1'])} \\\\"
@@ -180,11 +186,13 @@ def test_release_tables_match_saved_reports() -> None:
     latest_summary = (
         f"recover {_tex_pct(sol['exact_record_recall'])} and "
         f"{_tex_pct(fable['exact_record_recall'])} of records exactly, but reproduce only "
-        f"{sol['complete_documents']} and {fable['complete_documents']} of 36 complete document lists"
+        f"{sol['complete_documents']} and {fable['complete_documents']} of "
+        f"{total_samples} complete document lists"
     )
     assert latest_summary in abstract
     assert (
         f"recover {_tex_pct(sol['exact_record_recall'])} and "
         f"{_tex_pct(fable['exact_record_recall'])} of target records exactly but complete only "
-        f"{sol['complete_documents']} and {fable['complete_documents']} of 36 documents"
+        f"{sol['complete_documents']} and {fable['complete_documents']} of "
+        f"{total_samples} documents"
     ) in conclusion
