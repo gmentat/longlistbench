@@ -2773,20 +2773,19 @@
   "total_documents": 32,
   "complexity_stressors": {
     "page_breaks": "Target lists or supporting sections continue across page boundaries, often with repeated headers or inherited context.",
+    "split_records": "One target record has fields in separate visual blocks, sections, or pages and must be assembled.",
     "multi_row": "One logical record can include wrapped notes, descriptions, source notes, clause prose, or continuation rows rather than a single flat row.",
-    "duplicates": "Duplicate or near-duplicate distractor material appears in support sections. Version 2.0 emphasizes prior-term, archive, summary-card, and repeated-support distractors rather than exact duplicate target rows.",
+    "duplicates": "Duplicate or near-duplicate distractor material appears in support sections, usually as prior-term, archive, summary-card, or repeated-support distractors rather than exact duplicate target rows.",
     "large_doc": "Documents contain hundreds to thousands of target records, or enough pages to expose truncation and list-completeness failures.",
     "multiple_tables": "Target records are mixed with summaries, ledgers, schedules, support tables, or empty/no-claims tables.",
     "multi_column": "Some pages use two-column or form-like layouts that stress reading order.",
     "merged_cells": "Tables use merged cells, section-spanning rows, or colspan/rowspan-style layout structure.",
     "ocr_condition": "Released transcripts are OCR output from rendered PDF page images.",
+    "ocr_layout_condition": "OCR preserves visual spacing and reading order instead of converting tables into clean CSV-style rows.",
     "long_range_evidence": "A target record may require joining evidence from distant sections of the same PDF.",
-    "heterogeneous_record_list": "A single output list may contain several record types with different fields.",
-    "layout_randomization": "Rows use several realistic layouts within one document, including tables, cards, wrapped audit lines, and continuation blocks.",
-    "inherited_context": "Fields such as schedule, fuel type, policy period, location, or coverage scope must be inherited from section headers.",
-    "split_records": "One target record can be split across multiple visible lines or cards.",
-    "non_target_rows": "Support, subtotal, prior-period, and note rows are interleaved with target records.",
-    "natural_long_range_join": "Distant evidence is connected by normal business references rather than explicit benchmark join instructions."
+    "cross_section_join": "A target record must be assembled from separately labeled sections, such as return summary, distance and gallon schedules, and liability schedules.",
+    "repeated_keys": "Common keys such as states or jurisdictions recur across sections or returns, so the key alone is not a unique target identifier.",
+    "heterogeneous_record_list": "A single output list may contain several record types with different fields."
   },
   "problem_tags": [
     "businessowners_policy",
