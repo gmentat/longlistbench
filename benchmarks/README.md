@@ -206,7 +206,7 @@ Saved reports under `benchmarks/results/` may refer to earlier corpus versions. 
 
 The current full-corpus results use the same repository-denied OCR protocol. GPT-5.6-Sol recovers 89.9% of target records exactly and completes 14/36 documents; Fable 5 recovers 90.7% exactly and completes 15/36. On the 21 structural-challenge documents, exact-record recall is 69.0% and 71.5%; on the 15 scale tests it is 99.7% and 99.8%. Field micro-F1 remains a partial-credit diagnostic at 97.8% and 98.9%. Both runs cover 33,450 targets with zero execution errors. The earlier GPT-5.5 and Opus 4.8 configurations remain available for comparison.
 
-The strongest shared exact-record gaps are sparse driver/MVR enrichment (1.9% for both) and split return schedules (58.5% and 64.6%). Heterogeneous policy records score 99.4% and 96.8%, while long-range claim joins and multisection return joins are effectively solved by both. A tagged stressor therefore need not reduce every agent's accuracy. The scorer canonicalizes case, whitespace, dates, decimals, accounting negatives, and documented domain-label equivalents. Treat single-sample probe folders as older diagnostics unless rerun against the current manifest.
+The strongest shared exact-record gaps are sparse driver/MVR enrichment and split return schedules. A tagged stressor therefore need not reduce every agent's accuracy. The scorer canonicalizes case, whitespace, dates, decimals, accounting negatives, documented domain-label equivalents, visible `Unit` prefixes in vehicle identifiers, and `Quarter Return`/`Quarterly Return` heading aliases. It preserves extra heading context as an error. Treat single-sample probe folders as older diagnostics unless rerun against the current manifest.
 
 ## Hugging Face Export
 
