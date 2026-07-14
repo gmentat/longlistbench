@@ -710,7 +710,7 @@ If future releases add clean structural transcripts, they should be reported as 
 
 ## Provenance
 
-The documents are synthetic. Each sample is produced by a reproducible generation pipeline:
+The documents are synthetic. Each sample was produced by a deterministic generation workflow:
 
 1. Deterministic fixtures create the schema-shaped ground truth.
 2. Layout generators project the records into claim schedules, tables, rosters, ledgers, declarations, forms, endorsements, rating schedules, and policy conditions.
@@ -718,6 +718,8 @@ The documents are synthetic. Each sample is produced by a reproducible generatio
 4. OCR over rendered page images produces the released transcript for each PDF.
 
 Policy packets are structurally inspired by commercial insurance policy workflows, but names, values, prose, and identifiers are generated fixtures.
+
+The release packages the fixed HTML, PDF, OCR, ground-truth, and metadata artifacts needed for reproducible evaluation. The private template tooling used to create the current production-like layouts is intentionally not part of the dataset repository, so the release does not claim bit-for-bit public regeneration of every PDF.
 
 No real insureds, claimants, policies, financial accounts, or customer documents are represented. Real documents were used only as structural references for layout and packet organization.
 
