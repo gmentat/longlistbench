@@ -1,4 +1,6 @@
 import argparse
+from collections import Counter, defaultdict
+import hashlib
 import json
 import sys
 from datetime import datetime
@@ -111,11 +113,15 @@ def _compare_metrics(
 ) -> list[str]:
     errors: list[str] = []
 
-    for key, expected_value in expected.items():
-        if key not in actual:
-            errors.append(f"{sample} / {model}: missing key '{key}' in recomputed metrics")
-            continue
+    missing_keys = sorted(set(actual) - set(expected))
+    unexpected_keys = sorted(set(expected) - set(actual))
+    for key in missing_keys:
+        errors.append(f"{sample} / {model}: report metrics missing key '{key}'")
+    for key in unexpected_keys:
+        errors.append(f"{sample} / {model}: report metrics has unexpected key '{key}'")
 
+    for key in sorted(set(expected) & set(actual)):
+        expected_value = expected[key]
         actual_value = actual[key]
 
         if key in {"recall", "precision", "f1"}:
@@ -137,6 +143,31 @@ def _compare_metrics(
                 f"{sample} / {model}: {key} mismatch (report={expected_value!r}, recomputed={actual_value!r})"
             )
 
+    return errors
+
+
+def _full_corpus_coverage_errors(
+    detailed_results: list[dict[str, Any]],
+    *,
+    manifest_instances: list[dict[str, Any]],
+) -> list[str]:
+    expected = Counter(str(instance["id"]) for instance in manifest_instances)
+    grouped: dict[tuple[str, str], Counter[str]] = defaultdict(Counter)
+    for entry in detailed_results:
+        grouped[(str(entry["model"]), str(entry.get("transcript", "ocr")))][
+            str(entry["sample"])
+        ] += 1
+
+    errors: list[str] = []
+    for (model, transcript), actual in sorted(grouped.items()):
+        if actual == expected:
+            continue
+        missing = sorted((expected - actual).elements())
+        extra = sorted((actual - expected).elements())
+        errors.append(
+            f"{model} [{transcript}]: full-corpus sample coverage mismatch "
+            f"(missing={missing}, extra_or_duplicate={extra})"
+        )
     return errors
 
 
@@ -471,6 +502,11 @@ def main() -> int:
         default=None,
     )
     parser.add_argument("--tolerance", type=float, default=1e-12)
+    parser.add_argument(
+        "--require-full-corpus",
+        action="store_true",
+        help="Require each model/transcript group to contain every manifest sample exactly once",
+    )
 
     args = parser.parse_args()
 
@@ -490,6 +526,18 @@ def main() -> int:
 
     report = json.loads(report_json.read_text(encoding="utf-8"))
 
+    manifest_file = claims_dir / "manifest.json"
+    manifest = None
+    if manifest_file.exists():
+        manifest = json.loads(manifest_file.read_text(encoding="utf-8"))
+        current_manifest_hash = hashlib.sha256(manifest_file.read_bytes()).hexdigest()
+        reported_manifest_hash = (report.get("dataset") or {}).get("manifest_sha256")
+        if reported_manifest_hash != current_manifest_hash:
+            errors.append(
+                "dataset manifest hash mismatch "
+                f"(report={reported_manifest_hash!r}, current={current_manifest_hash!r})"
+            )
+
     detailed_results = report.get("detailed_results")
     model_stats = report.get("model_stats")
 
@@ -500,7 +548,19 @@ def main() -> int:
         print("Invalid report: missing model_stats")
         return 2
 
-    for entry in detailed_results:
+    if args.require_full_corpus:
+        if not manifest:
+            errors.append(f"Cannot verify full-corpus coverage without {manifest_file}")
+        else:
+            errors.extend(
+                _full_corpus_coverage_errors(
+                    detailed_results,
+                    manifest_instances=manifest.get("instances") or [],
+                )
+            )
+
+    recomputed_detailed_results = [dict(entry) for entry in detailed_results]
+    for entry_index, entry in enumerate(detailed_results):
         model = entry["model"]
         sample = entry["sample"]
         transcript = entry.get("transcript", "ocr")
@@ -531,6 +591,7 @@ def main() -> int:
             continue
 
         actual_metrics = _evaluate_predictions_for_ground_truth(predicted, ground_truth)
+        recomputed_detailed_results[entry_index]["metrics"] = actual_metrics
         expected_metrics = entry.get("metrics") or {}
 
         errors.extend(
@@ -543,7 +604,10 @@ def main() -> int:
             )
         )
 
-    recomputed_model_stats = _recompute_model_stats(detailed_results, claims_dir=claims_dir)
+    recomputed_model_stats = _recompute_model_stats(
+        recomputed_detailed_results,
+        claims_dir=claims_dir,
+    )
     errors.extend(
         _compare_model_stats(
             expected=model_stats,

@@ -161,6 +161,44 @@ class EvaluatorRegressionTests(unittest.TestCase):
         )
         self.assertTrue(any("exact_record_recall mismatch" in error for error in errors))
 
+    def test_checker_rejects_omitted_per_sample_metric(self) -> None:
+        actual = {
+            "ground_truth_count": 1,
+            "predicted_count": 1,
+            "exact_record_matches": 1,
+            "exact_record_recall": 1.0,
+        }
+        expected = dict(actual)
+        expected.pop("exact_record_recall")
+
+        errors = check_evaluation_report._compare_metrics(
+            sample="sample",
+            model="model",
+            expected=expected,
+            actual=actual,
+            tol=1e-12,
+        )
+
+        self.assertIn(
+            "sample / model: report metrics missing key 'exact_record_recall'",
+            errors,
+        )
+
+    def test_full_corpus_coverage_rejects_missing_and_duplicate_sample(self) -> None:
+        detailed_results = [
+            {"model": "model", "sample": "a", "transcript": "ocr"},
+            {"model": "model", "sample": "a", "transcript": "ocr"},
+        ]
+
+        errors = check_evaluation_report._full_corpus_coverage_errors(
+            detailed_results,
+            manifest_instances=[{"id": "a"}, {"id": "b"}],
+        )
+
+        self.assertEqual(len(errors), 1)
+        self.assertIn("missing=['b']", errors[0])
+        self.assertIn("extra_or_duplicate=['a']", errors[0])
+
     def test_validator_rejects_missing_required_fields(self) -> None:
         with self.assertRaises(ValueError):
             _validate_and_normalize_predictions(

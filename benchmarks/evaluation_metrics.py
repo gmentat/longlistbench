@@ -404,9 +404,14 @@ def _normalize_generic_scalar(value: Any) -> Any:
 
     if "%" in s:
         return re.sub(r"\s+", "", s).casefold()
+    # Preserve zero-padded integer strings. They commonly represent identifiers
+    # such as locations, buildings, territories, and class codes rather than
+    # numeric quantities. Plain integers still compare with integer JSON values
+    # because both canonicalize to the same string.
+    zero_padded_integer = bool(re.fullmatch(r"-?0\d+", s))
     decimal_like = bool(re.fullmatch(r"-?\$?\d[\d,]*(?:\.\d+)?", s))
     parenthesized_decimal = bool(re.fullmatch(r"\(\s*\$?-?\d[\d,]*(?:\.\d+)?\s*\)", s))
-    if decimal_like or parenthesized_decimal:
+    if (decimal_like and not zero_padded_integer) or parenthesized_decimal:
         return _normalize_decimal_string(s)
     return s.casefold()
 
@@ -552,13 +557,38 @@ def _greedy_match_records(gt_records: list[dict], pred_records: list[dict]) -> l
         for record in pred_records
     ]
 
+    # Anchor exact records first. Besides making partial-credit matching more
+    # faithful, this preserves the identity invariant for large duplicate
+    # multisets whose common fields exceed the candidate-fanout guard below.
+    pred_indices_by_record: dict[str, list[int]] = {}
+    for pred_idx, record in enumerate(pred_records):
+        payload = json.dumps(record, sort_keys=True, separators=(",", ":"))
+        pred_indices_by_record.setdefault(payload, []).append(pred_idx)
+
+    matched_gt: set[int] = set()
+    matched_pred: set[int] = set()
+    matches: list[tuple[int, int]] = []
+    for gt_idx, record in enumerate(gt_records):
+        payload = json.dumps(record, sort_keys=True, separators=(",", ":"))
+        candidates = pred_indices_by_record.get(payload)
+        if not candidates:
+            continue
+        pred_idx = candidates.pop()
+        matched_gt.add(gt_idx)
+        matched_pred.add(pred_idx)
+        matches.append((gt_idx, pred_idx))
+
     pred_pair_index: dict[str, list[tuple[int, int]]] = {}
     for pred_idx, pred_pairs in enumerate(pred_match_pairs):
+        if pred_idx in matched_pred:
+            continue
         for pair, count in pred_pairs.items():
             pred_pair_index.setdefault(pair, []).append((pred_idx, count))
 
     candidate_match_scores: dict[tuple[int, int], int] = {}
     for gt_idx, gt_pairs in enumerate(gt_match_pairs):
+        if gt_idx in matched_gt:
+            continue
         for pair, gt_count in gt_pairs.items():
             pred_entries = pred_pair_index.get(pair)
             if not pred_entries:
@@ -580,9 +610,6 @@ def _greedy_match_records(gt_records: list[dict], pred_records: list[dict]) -> l
         candidates.append((match_score, score_pairs, gt_idx, pred_idx))
 
     candidates.sort(reverse=True)
-    matched_gt: set[int] = set()
-    matched_pred: set[int] = set()
-    matches: list[tuple[int, int]] = []
     for _match_score, _score_pairs, gt_idx, pred_idx in candidates:
         if gt_idx in matched_gt or pred_idx in matched_pred:
             continue
@@ -594,8 +621,17 @@ def _greedy_match_records(gt_records: list[dict], pred_records: list[dict]) -> l
 
 def evaluate_record_extraction(predicted: list[dict], ground_truth: list[dict]) -> dict[str, Any]:
     """Evaluate heterogeneous record lists without relying on hidden record IDs."""
-    gt_records = [_canonicalize_record(item) for item in ground_truth]
-    pred_records = [_canonicalize_record(item) for item in predicted]
+    # Matching must depend on record values, not source-list order. Canonical
+    # sorting also makes index-based tie breaks deterministic for duplicate and
+    # partially overlapping records.
+    gt_records = sorted(
+        (_canonicalize_record(item) for item in ground_truth),
+        key=lambda record: json.dumps(record, sort_keys=True, separators=(",", ":")),
+    )
+    pred_records = sorted(
+        (_canonicalize_record(item) for item in predicted),
+        key=lambda record: json.dumps(record, sort_keys=True, separators=(",", ":")),
+    )
 
     gt_pairs_by_record = [
         Counter(_record_field_pairs(record, exclude_fields=_GENERIC_SCORE_EXCLUDED_FIELDS))

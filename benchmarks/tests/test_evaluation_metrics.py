@@ -215,6 +215,37 @@ class EvaluationMetricsTests(unittest.TestCase):
         self.assertEqual(contaminated_metrics["exact_record_recall"], 0.0)
         self.assertFalse(contaminated_metrics["complete_document"])
 
+    def test_zero_padded_identifier_is_not_equal_to_unpadded_identifier(self):
+        ground_truth = [{"territory": "003", "class_code": "0012"}]
+        predicted = [{"territory": "3", "class_code": "12"}]
+
+        metrics = evaluate_record_extraction(predicted, ground_truth)
+
+        self.assertEqual(metrics["exact_record_recall"], 0.0)
+        self.assertFalse(metrics["complete_document"])
+
+    def test_field_matching_is_invariant_to_record_order(self):
+        predicted = [{"a": "x"}, {"a": "x", "b": "y"}]
+        ground_truth = [{"a": "x"}, {"b": "y"}]
+
+        forward = evaluate_record_extraction(predicted, ground_truth)
+        reversed_ground_truth = evaluate_record_extraction(predicted, list(reversed(ground_truth)))
+
+        self.assertEqual(forward["found"], 2)
+        self.assertEqual(forward["found"], reversed_ground_truth["found"])
+        self.assertEqual(forward["f1"], reversed_ground_truth["f1"])
+
+    def test_large_exact_duplicate_multiset_has_perfect_field_score(self):
+        row = {"status": "Open", "coverage": "Liability"}
+        ground_truth = [dict(row) for _ in range(251)]
+        predicted = [dict(row) for _ in range(251)]
+
+        metrics = evaluate_record_extraction(predicted, ground_truth)
+
+        self.assertEqual(metrics["f1"], 1.0)
+        self.assertEqual(metrics["exact_record_recall"], 1.0)
+        self.assertTrue(metrics["complete_document"])
+
     def test_domain_labels_use_published_canonical_forms(self):
         ground_truth = [
             {

@@ -1,5 +1,6 @@
 import hashlib
 import json
+from collections import Counter
 from pathlib import Path
 
 
@@ -87,6 +88,7 @@ def test_release_tables_match_saved_reports() -> None:
     manifest_path = ROOT / "data/manifest.json"
     manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
     current_manifest_hash = hashlib.sha256(manifest_path.read_bytes()).hexdigest()
+    expected_samples = Counter(str(instance["id"]) for instance in manifest["instances"])
 
     manifest_hashes = {report["dataset"]["manifest_sha256"] for report in reports.values()}
     assert manifest_hashes == {current_manifest_hash}
@@ -102,6 +104,7 @@ def test_release_tables_match_saved_reports() -> None:
     assert _tex_int(total_rows) in abstract
     for report in reports.values():
         assert report["dataset"]["git_dirty"] is False
+        assert Counter(entry["sample"] for entry in report["detailed_results"]) == expected_samples
     for model_stats in stats.values():
         assert model_stats["total_samples"] == total_samples
         assert model_stats["total_rows"] == total_rows
