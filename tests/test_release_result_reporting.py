@@ -118,6 +118,11 @@ def test_release_tables_match_saved_reports() -> None:
         assert len(sample_metadata) == total_samples
         if sample_field == "sample_statuses":
             assert set(sample_metadata.values()) == {0}
+            observed_samples = metadata["samples"]
+            assert len(observed_samples) == total_samples
+            for sample in observed_samples.values():
+                assert sample["observed_model"] == requested_model
+                assert sample["observed_effort"] == "xhigh"
         else:
             for sample in sample_metadata.values():
                 assert sample["requested_model"] == requested_model

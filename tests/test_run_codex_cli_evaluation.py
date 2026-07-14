@@ -47,6 +47,15 @@ def test_sandbox_profile_denies_additional_paths(tmp_path) -> None:
 
 def test_run_metadata_records_requested_codex_model(tmp_path, monkeypatch) -> None:
     monkeypatch.setattr(runner, "_codex_cli_version", lambda: "codex-cli test")
+    logs_dir = tmp_path / "logs"
+    logs_dir.mkdir()
+    (logs_dir / "sample_ocr_codex_gpt56_sol.log").write_text(
+        """OpenAI Codex v0.144.4
+model: gpt-5.6-sol
+reasoning effort: xhigh
+""",
+        encoding="utf-8",
+    )
 
     runner._write_run_metadata(
         output_dir=tmp_path,
@@ -64,3 +73,14 @@ def test_run_metadata_records_requested_codex_model(tmp_path, monkeypatch) -> No
     assert payload["effort"] == "xhigh"
     assert payload["additional_denied_paths"] == [str((tmp_path / "duplicate-data").resolve())]
     assert payload["sample_statuses"] == {"sample": 0}
+    assert payload["samples"] == {
+        "sample": {
+            "cli_version": "v0.144.4",
+            "observed_model": "gpt-5.6-sol",
+            "observed_effort": "xhigh",
+        }
+    }
+
+
+def test_codex_log_header_requires_model_and_effort() -> None:
+    assert runner._parse_codex_log_header("OpenAI Codex v0.144.4\nmodel: gpt-5.6-sol\n") is None

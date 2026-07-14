@@ -15,6 +15,7 @@ allowlist. The runner validates the output and saves the normalized prediction.
 import argparse
 import json
 import os
+import re
 import shutil
 import subprocess
 import sys
@@ -278,6 +279,36 @@ def _codex_cli_version() -> str | None:
         return None
 
 
+def _parse_codex_log_header(log: str) -> dict[str, str] | None:
+    version = re.search(r"^OpenAI Codex\s+(.+)$", log, flags=re.MULTILINE)
+    model = re.search(r"^model:\s*(.+)$", log, flags=re.MULTILINE)
+    effort = re.search(r"^reasoning effort:\s*(.+)$", log, flags=re.MULTILINE)
+    if not (version and model and effort):
+        return None
+    return {
+        "cli_version": version.group(1).strip(),
+        "observed_model": model.group(1).strip(),
+        "observed_effort": effort.group(1).strip(),
+    }
+
+
+def _audit_codex_log_headers(
+    output_dir: Path,
+    transcript: str,
+    model_key: str,
+) -> dict[str, dict[str, str]]:
+    logs_dir = output_dir / "logs"
+    suffix = f"_{transcript}_{model_key}.log"
+    audit: dict[str, dict[str, str]] = {}
+    if not logs_dir.exists():
+        return audit
+    for path in sorted(logs_dir.glob(f"*{suffix}")):
+        header = _parse_codex_log_header(path.read_text(encoding="utf-8"))
+        if header is not None:
+            audit[path.name.removesuffix(suffix)] = header
+    return audit
+
+
 def _write_run_metadata(
     *,
     output_dir: Path,
@@ -301,6 +332,7 @@ def _write_run_metadata(
             str(path.resolve()) for path in extra_denied_paths or []
         ],
         "sample_statuses": {sample: status for sample, status in statuses},
+        "samples": _audit_codex_log_headers(output_dir, transcript, model_key),
     }
     (output_dir / RUN_METADATA_FILE).write_text(
         json.dumps(payload, indent=2) + "\n",
