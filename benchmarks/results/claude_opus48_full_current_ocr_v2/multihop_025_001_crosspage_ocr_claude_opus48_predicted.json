@@ -65,7 +65,11 @@
     "date_reported": "07/12/2023",
     "agency": "Brokerage 002",
     "insured": "West Andreaport Hauling",
-    "claimants": [],
+    "claimants": [
+      "Dickerson, Moore and Monroe",
+      "Hicks, Gina",
+      "Jackson, Andrea"
+    ],
     "driver_name": "Vaughn, Cameron",
     "bi": {
       "reserve": 96580.92,
@@ -91,7 +95,7 @@
       "recovered": 29209.02,
       "total_incurred": -29209.02
     },
-    "adjuster_notes": null
+    "adjuster_notes": "Repair estimate and coverage page were attached separately for underwriting review."
   },
   {
     "incident_number": "#88943-G",

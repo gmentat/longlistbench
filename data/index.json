@@ -1,8 +1,8 @@
 {
-  "built_at": "2026-07-01T12:01:33.829272+00:00",
+  "built_at": "2026-07-14T15:36:03.857718+00:00",
   "dataset_dir": "/Users/anton/d/kay/longlistbench/data",
   "source_metadata": "manifest.json",
-  "total_instances": 36,
+  "total_instances": 32,
   "instances": [
     {
       "id": "driver_mvr_packet_001",
@@ -16,11 +16,11 @@
       "target_record_type": "driver_record",
       "problems": [
         "high_density_long_list",
-        "production_like_layout",
+        "multi_row",
+        "multiple_tables",
         "ocr_condition",
         "page_breaks",
-        "multiple_tables",
-        "multi_row"
+        "production_like_layout"
       ],
       "num_claims": null,
       "num_policy_items": null,
@@ -39,7 +39,7 @@
         "pdf_size_bytes": 405332,
         "html_size_bytes": 70289,
         "json_size_bytes": 91072,
-        "ocr_md_size_bytes": 33504,
+        "ocr_md_size_bytes": 43363,
         "pdf_pages": 17
       },
       "transcripts_available": [
@@ -58,11 +58,11 @@
       "target_record_type": "driver_record",
       "problems": [
         "high_density_long_list",
-        "production_like_layout",
+        "multi_row",
+        "multiple_tables",
         "ocr_condition",
         "page_breaks",
-        "multiple_tables",
-        "multi_row"
+        "production_like_layout"
       ],
       "num_claims": null,
       "num_policy_items": null,
@@ -81,7 +81,7 @@
         "pdf_size_bytes": 450868,
         "html_size_bytes": 119492,
         "json_size_bytes": 175399,
-        "ocr_md_size_bytes": 52067,
+        "ocr_md_size_bytes": 72664,
         "pdf_pages": 24
       },
       "transcripts_available": [
@@ -100,11 +100,11 @@
       "target_record_type": "driver_record",
       "problems": [
         "high_density_long_list",
-        "production_like_layout",
+        "multi_row",
+        "multiple_tables",
         "ocr_condition",
         "page_breaks",
-        "multiple_tables",
-        "multi_row"
+        "production_like_layout"
       ],
       "num_claims": null,
       "num_policy_items": null,
@@ -123,7 +123,7 @@
         "pdf_size_bytes": 452207,
         "html_size_bytes": 119550,
         "json_size_bytes": 175367,
-        "ocr_md_size_bytes": 52920,
+        "ocr_md_size_bytes": 68439,
         "pdf_pages": 24
       },
       "transcripts_available": [
@@ -142,20 +142,20 @@
       "target_record_type": "driver_schedule_row",
       "problems": [
         "high_density_long_list",
-        "production_like_layout",
+        "inherited_context",
+        "large_doc",
+        "layout_randomization",
+        "multiple_tables",
+        "non_target_rows",
         "ocr_condition",
         "page_breaks",
-        "large_doc",
-        "multiple_tables",
-        "layout_randomization",
-        "inherited_context",
-        "split_records",
-        "non_target_rows"
+        "production_like_layout",
+        "split_records"
       ],
       "num_claims": null,
       "num_policy_items": null,
       "num_target_records": 500,
-      "pages_estimate": 16,
+      "pages_estimate": 18,
       "seed": null,
       "files": {
         "pdf": "pdfs/driver_schedule_sparse_001.pdf",
@@ -166,11 +166,11 @@
         "html_exists": true,
         "ground_truth_exists": true,
         "ocr_md_exists": true,
-        "pdf_size_bytes": 207224,
-        "html_size_bytes": 59605,
+        "pdf_size_bytes": 284365,
+        "html_size_bytes": 57944,
         "json_size_bytes": 71571,
-        "ocr_md_size_bytes": 28768,
-        "pdf_pages": 16
+        "ocr_md_size_bytes": 69690,
+        "pdf_pages": 18
       },
       "transcripts_available": [
         "ocr"
@@ -188,17 +188,17 @@
       "target_record_type": "vehicle_state_mileage_row",
       "problems": [
         "high_density_long_list",
-        "production_like_layout",
+        "large_doc",
+        "multi_row",
+        "multiple_tables",
         "ocr_condition",
         "page_breaks",
-        "large_doc",
-        "multiple_tables",
-        "multi_row"
+        "production_like_layout"
       ],
       "num_claims": null,
       "num_policy_items": null,
       "num_target_records": 1159,
-      "pages_estimate": 97,
+      "pages_estimate": 40,
       "seed": null,
       "files": {
         "pdf": "pdfs/ifta_mileage_by_vehicle_001.pdf",
@@ -209,11 +209,11 @@
         "html_exists": true,
         "ground_truth_exists": true,
         "ocr_md_exists": true,
-        "pdf_size_bytes": 588299,
-        "html_size_bytes": 511013,
+        "pdf_size_bytes": 380799,
+        "html_size_bytes": 218625,
         "json_size_bytes": 167015,
-        "ocr_md_size_bytes": 193687,
-        "pdf_pages": 97
+        "ocr_md_size_bytes": 238020,
+        "pdf_pages": 40
       },
       "transcripts_available": [
         "ocr"
@@ -231,17 +231,18 @@
       "target_record_type": "vehicle_state_mileage_row",
       "problems": [
         "high_density_long_list",
-        "production_like_layout",
+        "large_doc",
+        "merged_cells",
+        "multi_row",
+        "multiple_tables",
         "ocr_condition",
         "page_breaks",
-        "large_doc",
-        "multiple_tables",
-        "multi_row"
+        "production_like_layout"
       ],
       "num_claims": null,
       "num_policy_items": null,
       "num_target_records": 2143,
-      "pages_estimate": 182,
+      "pages_estimate": 57,
       "seed": null,
       "files": {
         "pdf": "pdfs/ifta_mileage_by_vehicle_002.pdf",
@@ -252,11 +253,11 @@
         "html_exists": true,
         "ground_truth_exists": true,
         "ocr_md_exists": true,
-        "pdf_size_bytes": 969746,
-        "html_size_bytes": 938626,
+        "pdf_size_bytes": 437821,
+        "html_size_bytes": 365353,
         "json_size_bytes": 308972,
-        "ocr_md_size_bytes": 358934,
-        "pdf_pages": 182
+        "ocr_md_size_bytes": 302722,
+        "pdf_pages": 57
       },
       "transcripts_available": [
         "ocr"
@@ -274,17 +275,17 @@
       "target_record_type": "vehicle_state_mileage_row",
       "problems": [
         "high_density_long_list",
-        "production_like_layout",
+        "large_doc",
+        "multi_row",
+        "multiple_tables",
         "ocr_condition",
         "page_breaks",
-        "large_doc",
-        "multiple_tables",
-        "multi_row"
+        "production_like_layout"
       ],
       "num_claims": null,
       "num_policy_items": null,
       "num_target_records": 2195,
-      "pages_estimate": 188,
+      "pages_estimate": 71,
       "seed": null,
       "files": {
         "pdf": "pdfs/ifta_mileage_by_vehicle_003.pdf",
@@ -295,11 +296,11 @@
         "html_exists": true,
         "ground_truth_exists": true,
         "ocr_md_exists": true,
-        "pdf_size_bytes": 996988,
-        "html_size_bytes": 963431,
+        "pdf_size_bytes": 528519,
+        "html_size_bytes": 390457,
         "json_size_bytes": 316038,
-        "ocr_md_size_bytes": 367483,
-        "pdf_pages": 188
+        "ocr_md_size_bytes": 317765,
+        "pdf_pages": 71
       },
       "transcripts_available": [
         "ocr"
@@ -317,17 +318,17 @@
       "target_record_type": "vehicle_state_mileage_row",
       "problems": [
         "high_density_long_list",
-        "production_like_layout",
+        "large_doc",
+        "multi_row",
+        "multiple_tables",
         "ocr_condition",
         "page_breaks",
-        "large_doc",
-        "multiple_tables",
-        "multi_row"
+        "production_like_layout"
       ],
       "num_claims": null,
       "num_policy_items": null,
       "num_target_records": 2239,
-      "pages_estimate": 193,
+      "pages_estimate": 63,
       "seed": null,
       "files": {
         "pdf": "pdfs/ifta_mileage_by_vehicle_004.pdf",
@@ -338,11 +339,11 @@
         "html_exists": true,
         "ground_truth_exists": true,
         "ocr_md_exists": true,
-        "pdf_size_bytes": 1015593,
-        "html_size_bytes": 982821,
+        "pdf_size_bytes": 460376,
+        "html_size_bytes": 383805,
         "json_size_bytes": 322650,
-        "ocr_md_size_bytes": 385216,
-        "pdf_pages": 193
+        "ocr_md_size_bytes": 269271,
+        "pdf_pages": 63
       },
       "transcripts_available": [
         "ocr"
@@ -360,17 +361,17 @@
       "target_record_type": "vehicle_state_mileage_row",
       "problems": [
         "high_density_long_list",
-        "production_like_layout",
+        "large_doc",
+        "multi_row",
+        "multiple_tables",
         "ocr_condition",
         "page_breaks",
-        "large_doc",
-        "multiple_tables",
-        "multi_row"
+        "production_like_layout"
       ],
       "num_claims": null,
       "num_policy_items": null,
       "num_target_records": 2379,
-      "pages_estimate": 198,
+      "pages_estimate": 75,
       "seed": null,
       "files": {
         "pdf": "pdfs/ifta_mileage_by_vehicle_005.pdf",
@@ -381,11 +382,11 @@
         "html_exists": true,
         "ground_truth_exists": true,
         "ocr_md_exists": true,
-        "pdf_size_bytes": 1046767,
-        "html_size_bytes": 1036592,
+        "pdf_size_bytes": 502418,
+        "html_size_bytes": 400079,
         "json_size_bytes": 342692,
-        "ocr_md_size_bytes": 393894,
-        "pdf_pages": 198
+        "ocr_md_size_bytes": 360502,
+        "pdf_pages": 75
       },
       "transcripts_available": [
         "ocr"
@@ -403,17 +404,17 @@
       "target_record_type": "vehicle_state_mileage_row",
       "problems": [
         "high_density_long_list",
-        "production_like_layout",
+        "large_doc",
+        "multi_row",
+        "multiple_tables",
         "ocr_condition",
         "page_breaks",
-        "large_doc",
-        "multiple_tables",
-        "multi_row"
+        "production_like_layout"
       ],
       "num_claims": null,
       "num_policy_items": null,
       "num_target_records": 2434,
-      "pages_estimate": 206,
+      "pages_estimate": 67,
       "seed": null,
       "files": {
         "pdf": "pdfs/ifta_mileage_by_vehicle_006.pdf",
@@ -424,11 +425,11 @@
         "html_exists": true,
         "ground_truth_exists": true,
         "ocr_md_exists": true,
-        "pdf_size_bytes": 1079911,
-        "html_size_bytes": 1064678,
+        "pdf_size_bytes": 532145,
+        "html_size_bytes": 434089,
         "json_size_bytes": 350661,
-        "ocr_md_size_bytes": 416454,
-        "pdf_pages": 206
+        "ocr_md_size_bytes": 350608,
+        "pdf_pages": 67
       },
       "transcripts_available": [
         "ocr"
@@ -446,17 +447,17 @@
       "target_record_type": "vehicle_state_mileage_row",
       "problems": [
         "high_density_long_list",
-        "production_like_layout",
+        "large_doc",
+        "multi_row",
+        "multiple_tables",
         "ocr_condition",
         "page_breaks",
-        "large_doc",
-        "multiple_tables",
-        "multi_row"
+        "production_like_layout"
       ],
       "num_claims": null,
       "num_policy_items": null,
       "num_target_records": 2445,
-      "pages_estimate": 210,
+      "pages_estimate": 77,
       "seed": null,
       "files": {
         "pdf": "pdfs/ifta_mileage_by_vehicle_007.pdf",
@@ -467,11 +468,11 @@
         "html_exists": true,
         "ground_truth_exists": true,
         "ocr_md_exists": true,
-        "pdf_size_bytes": 1094699,
-        "html_size_bytes": 1072480,
+        "pdf_size_bytes": 519157,
+        "html_size_bytes": 411852,
         "json_size_bytes": 352530,
-        "ocr_md_size_bytes": 412391,
-        "pdf_pages": 210
+        "ocr_md_size_bytes": 366708,
+        "pdf_pages": 77
       },
       "transcripts_available": [
         "ocr"
@@ -489,17 +490,17 @@
       "target_record_type": "vehicle_state_mileage_row",
       "problems": [
         "high_density_long_list",
-        "production_like_layout",
+        "large_doc",
+        "multi_row",
+        "multiple_tables",
         "ocr_condition",
         "page_breaks",
-        "large_doc",
-        "multiple_tables",
-        "multi_row"
+        "production_like_layout"
       ],
       "num_claims": null,
       "num_policy_items": null,
       "num_target_records": 2571,
-      "pages_estimate": 218,
+      "pages_estimate": 76,
       "seed": null,
       "files": {
         "pdf": "pdfs/ifta_mileage_by_vehicle_008.pdf",
@@ -510,11 +511,11 @@
         "html_exists": true,
         "ground_truth_exists": true,
         "ocr_md_exists": true,
-        "pdf_size_bytes": 1133809,
-        "html_size_bytes": 1125300,
+        "pdf_size_bytes": 580208,
+        "html_size_bytes": 462785,
         "json_size_bytes": 370369,
-        "ocr_md_size_bytes": 438583,
-        "pdf_pages": 218
+        "ocr_md_size_bytes": 431448,
+        "pdf_pages": 76
       },
       "transcripts_available": [
         "ocr"
@@ -531,19 +532,19 @@
       "lob": null,
       "target_record_type": "ifta_multisection_jurisdiction_row",
       "problems": [
+        "cross_section_join",
         "high_density_long_list",
-        "production_like_layout",
+        "inherited_context",
+        "large_doc",
+        "multi_row",
+        "multiple_tables",
+        "non_target_rows",
         "ocr_condition",
         "ocr_layout_condition",
         "page_breaks",
-        "large_doc",
-        "multiple_tables",
-        "multi_row",
-        "inherited_context",
-        "split_records",
-        "non_target_rows",
+        "production_like_layout",
         "repeated_keys",
-        "cross_section_join"
+        "split_records"
       ],
       "num_claims": null,
       "num_policy_items": null,
@@ -562,7 +563,7 @@
         "pdf_size_bytes": 7339936,
         "html_size_bytes": 203496,
         "json_size_bytes": 150517,
-        "ocr_md_size_bytes": 194328,
+        "ocr_md_size_bytes": 197933,
         "pdf_pages": 60
       },
       "transcripts_available": [
@@ -580,19 +581,19 @@
       "lob": null,
       "target_record_type": "ifta_multisection_jurisdiction_row",
       "problems": [
+        "cross_section_join",
         "high_density_long_list",
-        "production_like_layout",
+        "inherited_context",
+        "large_doc",
+        "multi_row",
+        "multiple_tables",
+        "non_target_rows",
         "ocr_condition",
         "ocr_layout_condition",
         "page_breaks",
-        "large_doc",
-        "multiple_tables",
-        "multi_row",
-        "inherited_context",
-        "split_records",
-        "non_target_rows",
+        "production_like_layout",
         "repeated_keys",
-        "cross_section_join"
+        "split_records"
       ],
       "num_claims": null,
       "num_policy_items": null,
@@ -611,7 +612,7 @@
         "pdf_size_bytes": 10208903,
         "html_size_bytes": 280581,
         "json_size_bytes": 207018,
-        "ocr_md_size_bytes": 272619,
+        "ocr_md_size_bytes": 263593,
         "pdf_pages": 84
       },
       "transcripts_available": [
@@ -630,20 +631,20 @@
       "target_record_type": "return_schedule_row",
       "problems": [
         "high_density_long_list",
-        "production_like_layout",
+        "inherited_context",
+        "large_doc",
+        "layout_randomization",
+        "multiple_tables",
+        "non_target_rows",
         "ocr_condition",
         "page_breaks",
-        "large_doc",
-        "multiple_tables",
-        "layout_randomization",
-        "inherited_context",
-        "split_records",
-        "non_target_rows"
+        "production_like_layout",
+        "split_records"
       ],
       "num_claims": null,
       "num_policy_items": null,
       "num_target_records": 582,
-      "pages_estimate": 72,
+      "pages_estimate": 24,
       "seed": null,
       "files": {
         "pdf": "pdfs/ifta_return_schedule_001.pdf",
@@ -654,11 +655,11 @@
         "html_exists": true,
         "ground_truth_exists": true,
         "ocr_md_exists": true,
-        "pdf_size_bytes": 386861,
-        "html_size_bytes": 215584,
+        "pdf_size_bytes": 287139,
+        "html_size_bytes": 203032,
         "json_size_bytes": 205146,
-        "ocr_md_size_bytes": 125900,
-        "pdf_pages": 72
+        "ocr_md_size_bytes": 153924,
+        "pdf_pages": 24
       },
       "transcripts_available": [
         "ocr"
@@ -676,20 +677,20 @@
       "target_record_type": "return_schedule_row",
       "problems": [
         "high_density_long_list",
-        "production_like_layout",
+        "inherited_context",
+        "large_doc",
+        "layout_randomization",
+        "multiple_tables",
+        "non_target_rows",
         "ocr_condition",
         "page_breaks",
-        "large_doc",
-        "multiple_tables",
-        "layout_randomization",
-        "inherited_context",
-        "split_records",
-        "non_target_rows"
+        "production_like_layout",
+        "split_records"
       ],
       "num_claims": null,
       "num_policy_items": null,
       "num_target_records": 998,
-      "pages_estimate": 108,
+      "pages_estimate": 36,
       "seed": null,
       "files": {
         "pdf": "pdfs/ifta_return_schedule_002.pdf",
@@ -700,103 +701,11 @@
         "html_exists": true,
         "ground_truth_exists": true,
         "ocr_md_exists": true,
-        "pdf_size_bytes": 523651,
-        "html_size_bytes": 362237,
+        "pdf_size_bytes": 477891,
+        "html_size_bytes": 354675,
         "json_size_bytes": 352507,
-        "ocr_md_size_bytes": 195867,
-        "pdf_pages": 108
-      },
-      "transcripts_available": [
-        "ocr"
-      ]
-    },
-    {
-      "id": "ifta_return_schedule_003",
-      "complexity_regime": "ifta_return_schedule_details",
-      "template_family": "ifta_return_schedule_details",
-      "difficulty": "ifta_return_schedule_details",
-      "format": "production_like_pdf",
-      "domain": "commercial_insurance_operations",
-      "hf_config": "core_operations",
-      "lob": null,
-      "target_record_type": "return_schedule_row",
-      "problems": [
-        "high_density_long_list",
-        "production_like_layout",
-        "ocr_condition",
-        "page_breaks",
-        "large_doc",
-        "multiple_tables",
-        "layout_randomization",
-        "inherited_context",
-        "split_records",
-        "non_target_rows"
-      ],
-      "num_claims": null,
-      "num_policy_items": null,
-      "num_target_records": 1085,
-      "pages_estimate": 114,
-      "seed": null,
-      "files": {
-        "pdf": "pdfs/ifta_return_schedule_003.pdf",
-        "html": "html/ifta_return_schedule_003.html",
-        "ground_truth": "ground_truth/ifta_return_schedule_003.json",
-        "ocr_md": "transcripts/ocr_gemini/ifta_return_schedule_003.md",
-        "pdf_exists": true,
-        "html_exists": true,
-        "ground_truth_exists": true,
-        "ocr_md_exists": true,
-        "pdf_size_bytes": 549322,
-        "html_size_bytes": 392610,
-        "json_size_bytes": 383530,
-        "ocr_md_size_bytes": 212714,
-        "pdf_pages": 114
-      },
-      "transcripts_available": [
-        "ocr"
-      ]
-    },
-    {
-      "id": "ifta_return_schedule_004",
-      "complexity_regime": "ifta_return_schedule_details",
-      "template_family": "ifta_return_schedule_details",
-      "difficulty": "ifta_return_schedule_details",
-      "format": "production_like_pdf",
-      "domain": "commercial_insurance_operations",
-      "hf_config": "core_operations",
-      "lob": null,
-      "target_record_type": "return_schedule_row",
-      "problems": [
-        "high_density_long_list",
-        "production_like_layout",
-        "ocr_condition",
-        "page_breaks",
-        "large_doc",
-        "multiple_tables",
-        "layout_randomization",
-        "inherited_context",
-        "split_records",
-        "non_target_rows"
-      ],
-      "num_claims": null,
-      "num_policy_items": null,
-      "num_target_records": 1101,
-      "pages_estimate": 120,
-      "seed": null,
-      "files": {
-        "pdf": "pdfs/ifta_return_schedule_004.pdf",
-        "html": "html/ifta_return_schedule_004.html",
-        "ground_truth": "ground_truth/ifta_return_schedule_004.json",
-        "ocr_md": "transcripts/ocr_gemini/ifta_return_schedule_004.md",
-        "pdf_exists": true,
-        "html_exists": true,
-        "ground_truth_exists": true,
-        "ocr_md_exists": true,
-        "pdf_size_bytes": 561678,
-        "html_size_bytes": 399750,
-        "json_size_bytes": 389184,
-        "ocr_md_size_bytes": 209129,
-        "pdf_pages": 120
+        "ocr_md_size_bytes": 361961,
+        "pdf_pages": 36
       },
       "transcripts_available": [
         "ocr"
@@ -814,20 +723,20 @@
       "target_record_type": "return_schedule_row",
       "problems": [
         "high_density_long_list",
-        "production_like_layout",
+        "inherited_context",
+        "large_doc",
+        "layout_randomization",
+        "multiple_tables",
+        "non_target_rows",
         "ocr_condition",
         "page_breaks",
-        "large_doc",
-        "multiple_tables",
-        "layout_randomization",
-        "inherited_context",
-        "split_records",
-        "non_target_rows"
+        "production_like_layout",
+        "split_records"
       ],
       "num_claims": null,
       "num_policy_items": null,
       "num_target_records": 1157,
-      "pages_estimate": 126,
+      "pages_estimate": 42,
       "seed": null,
       "files": {
         "pdf": "pdfs/ifta_return_schedule_005.pdf",
@@ -838,11 +747,11 @@
         "html_exists": true,
         "ground_truth_exists": true,
         "ocr_md_exists": true,
-        "pdf_size_bytes": 581634,
-        "html_size_bytes": 420774,
+        "pdf_size_bytes": 531254,
+        "html_size_bytes": 411291,
         "json_size_bytes": 408894,
-        "ocr_md_size_bytes": 229500,
-        "pdf_pages": 126
+        "ocr_md_size_bytes": 458144,
+        "pdf_pages": 42
       },
       "transcripts_available": [
         "ocr"
@@ -860,21 +769,20 @@
       "target_record_type": "tax_inquiry_record",
       "problems": [
         "high_density_long_list",
-        "production_like_layout",
+        "inherited_context",
+        "large_doc",
+        "layout_randomization",
+        "multiple_tables",
+        "non_target_rows",
         "ocr_condition",
         "page_breaks",
-        "large_doc",
-        "multiple_tables",
-        "merged_cells",
-        "layout_randomization",
-        "inherited_context",
-        "split_records",
-        "non_target_rows"
+        "production_like_layout",
+        "split_records"
       ],
       "num_claims": null,
       "num_policy_items": null,
       "num_target_records": 650,
-      "pages_estimate": 29,
+      "pages_estimate": 17,
       "seed": null,
       "files": {
         "pdf": "pdfs/ifta_tax_inquiry_001.pdf",
@@ -885,11 +793,11 @@
         "html_exists": true,
         "ground_truth_exists": true,
         "ocr_md_exists": true,
-        "pdf_size_bytes": 222722,
-        "html_size_bytes": 84423,
-        "json_size_bytes": 82865,
-        "ocr_md_size_bytes": 44541,
-        "pdf_pages": 29
+        "pdf_size_bytes": 175855,
+        "html_size_bytes": 82010,
+        "json_size_bytes": 83622,
+        "ocr_md_size_bytes": 77929,
+        "pdf_pages": 17
       },
       "transcripts_available": [
         "ocr"
@@ -907,21 +815,20 @@
       "target_record_type": "tax_inquiry_record",
       "problems": [
         "high_density_long_list",
-        "production_like_layout",
+        "inherited_context",
+        "large_doc",
+        "layout_randomization",
+        "multiple_tables",
+        "non_target_rows",
         "ocr_condition",
         "page_breaks",
-        "large_doc",
-        "multiple_tables",
-        "merged_cells",
-        "layout_randomization",
-        "inherited_context",
-        "split_records",
-        "non_target_rows"
+        "production_like_layout",
+        "split_records"
       ],
       "num_claims": null,
       "num_policy_items": null,
       "num_target_records": 650,
-      "pages_estimate": 29,
+      "pages_estimate": 17,
       "seed": null,
       "files": {
         "pdf": "pdfs/ifta_tax_inquiry_002.pdf",
@@ -932,11 +839,11 @@
         "html_exists": true,
         "ground_truth_exists": true,
         "ocr_md_exists": true,
-        "pdf_size_bytes": 222223,
-        "html_size_bytes": 84423,
-        "json_size_bytes": 82865,
-        "ocr_md_size_bytes": 55125,
-        "pdf_pages": 29
+        "pdf_size_bytes": 175252,
+        "html_size_bytes": 82011,
+        "json_size_bytes": 83622,
+        "ocr_md_size_bytes": 80793,
+        "pdf_pages": 17
       },
       "transcripts_available": [
         "ocr"
@@ -954,20 +861,20 @@
       "target_record_type": "tax_return_jurisdiction_row",
       "problems": [
         "high_density_long_list",
-        "production_like_layout",
+        "inherited_context",
+        "large_doc",
+        "layout_randomization",
+        "multiple_tables",
+        "non_target_rows",
         "ocr_condition",
         "page_breaks",
-        "large_doc",
-        "multiple_tables",
-        "layout_randomization",
-        "inherited_context",
-        "split_records",
-        "non_target_rows"
+        "production_like_layout",
+        "split_records"
       ],
       "num_claims": null,
       "num_policy_items": null,
       "num_target_records": 760,
-      "pages_estimate": 34,
+      "pages_estimate": 19,
       "seed": null,
       "files": {
         "pdf": "pdfs/ifta_tax_summary_001.pdf",
@@ -978,11 +885,11 @@
         "html_exists": true,
         "ground_truth_exists": true,
         "ocr_md_exists": true,
-        "pdf_size_bytes": 449343,
-        "html_size_bytes": 269909,
+        "pdf_size_bytes": 330578,
+        "html_size_bytes": 255403,
         "json_size_bytes": 260441,
-        "ocr_md_size_bytes": 131101,
-        "pdf_pages": 34
+        "ocr_md_size_bytes": 143875,
+        "pdf_pages": 19
       },
       "transcripts_available": [
         "ocr"
@@ -1000,20 +907,20 @@
       "target_record_type": "tax_return_jurisdiction_row",
       "problems": [
         "high_density_long_list",
-        "production_like_layout",
+        "inherited_context",
+        "large_doc",
+        "layout_randomization",
+        "multiple_tables",
+        "non_target_rows",
         "ocr_condition",
         "page_breaks",
-        "large_doc",
-        "multiple_tables",
-        "layout_randomization",
-        "inherited_context",
-        "split_records",
-        "non_target_rows"
+        "production_like_layout",
+        "split_records"
       ],
       "num_claims": null,
       "num_policy_items": null,
       "num_target_records": 760,
-      "pages_estimate": 34,
+      "pages_estimate": 38,
       "seed": null,
       "files": {
         "pdf": "pdfs/ifta_tax_summary_002.pdf",
@@ -1024,103 +931,11 @@
         "html_exists": true,
         "ground_truth_exists": true,
         "ocr_md_exists": true,
-        "pdf_size_bytes": 449048,
-        "html_size_bytes": 269842,
+        "pdf_size_bytes": 393760,
+        "html_size_bytes": 290497,
         "json_size_bytes": 260276,
-        "ocr_md_size_bytes": 130445,
-        "pdf_pages": 34
-      },
-      "transcripts_available": [
-        "ocr"
-      ]
-    },
-    {
-      "id": "ifta_tax_summary_003",
-      "complexity_regime": "ifta_tax_return_summary",
-      "template_family": "ifta_tax_return_summary",
-      "difficulty": "ifta_tax_return_summary",
-      "format": "production_like_pdf",
-      "domain": "commercial_insurance_operations",
-      "hf_config": "core_operations",
-      "lob": null,
-      "target_record_type": "tax_return_jurisdiction_row",
-      "problems": [
-        "high_density_long_list",
-        "production_like_layout",
-        "ocr_condition",
-        "page_breaks",
-        "large_doc",
-        "multiple_tables",
-        "layout_randomization",
-        "inherited_context",
-        "split_records",
-        "non_target_rows"
-      ],
-      "num_claims": null,
-      "num_policy_items": null,
-      "num_target_records": 760,
-      "pages_estimate": 34,
-      "seed": null,
-      "files": {
-        "pdf": "pdfs/ifta_tax_summary_003.pdf",
-        "html": "html/ifta_tax_summary_003.html",
-        "ground_truth": "ground_truth/ifta_tax_summary_003.json",
-        "ocr_md": "transcripts/ocr_gemini/ifta_tax_summary_003.md",
-        "pdf_exists": true,
-        "html_exists": true,
-        "ground_truth_exists": true,
-        "ocr_md_exists": true,
-        "pdf_size_bytes": 449645,
-        "html_size_bytes": 270176,
-        "json_size_bytes": 260638,
-        "ocr_md_size_bytes": 117692,
-        "pdf_pages": 34
-      },
-      "transcripts_available": [
-        "ocr"
-      ]
-    },
-    {
-      "id": "ifta_tax_summary_004",
-      "complexity_regime": "ifta_tax_return_summary",
-      "template_family": "ifta_tax_return_summary",
-      "difficulty": "ifta_tax_return_summary",
-      "format": "production_like_pdf",
-      "domain": "commercial_insurance_operations",
-      "hf_config": "core_operations",
-      "lob": null,
-      "target_record_type": "tax_return_jurisdiction_row",
-      "problems": [
-        "high_density_long_list",
-        "production_like_layout",
-        "ocr_condition",
-        "page_breaks",
-        "large_doc",
-        "multiple_tables",
-        "layout_randomization",
-        "inherited_context",
-        "split_records",
-        "non_target_rows"
-      ],
-      "num_claims": null,
-      "num_policy_items": null,
-      "num_target_records": 760,
-      "pages_estimate": 34,
-      "seed": null,
-      "files": {
-        "pdf": "pdfs/ifta_tax_summary_004.pdf",
-        "html": "html/ifta_tax_summary_004.html",
-        "ground_truth": "ground_truth/ifta_tax_summary_004.json",
-        "ocr_md": "transcripts/ocr_gemini/ifta_tax_summary_004.md",
-        "pdf_exists": true,
-        "html_exists": true,
-        "ground_truth_exists": true,
-        "ocr_md_exists": true,
-        "pdf_size_bytes": 448697,
-        "html_size_bytes": 269827,
-        "json_size_bytes": 260468,
-        "ocr_md_size_bytes": 125339,
-        "pdf_pages": 34
+        "ocr_md_size_bytes": 270731,
+        "pdf_pages": 38
       },
       "transcripts_available": [
         "ocr"
@@ -1137,20 +952,20 @@
       "lob": null,
       "target_record_type": "loss_run_claim_row",
       "problems": [
+        "continuation_notes",
+        "distractor_sections",
+        "duplicates",
         "high_density_long_list",
-        "production_like_layout",
-        "ocr_condition",
-        "page_breaks",
         "large_doc",
-        "multiple_tables",
         "merged_cells",
         "multi_row",
-        "duplicates",
-        "distractor_sections",
-        "variable_policy_sections",
-        "continuation_notes",
+        "multiple_tables",
+        "ocr_condition",
+        "page_breaks",
+        "production_like_layout",
+        "sparse_driver_fields",
         "summary_distractors",
-        "sparse_driver_fields"
+        "variable_policy_sections"
       ],
       "num_claims": 300,
       "num_policy_items": null,
@@ -1169,7 +984,7 @@
         "pdf_size_bytes": 581364,
         "html_size_bytes": 296648,
         "json_size_bytes": 161771,
-        "ocr_md_size_bytes": 131330,
+        "ocr_md_size_bytes": 210454,
         "pdf_pages": 43
       },
       "transcripts_available": [
@@ -1187,20 +1002,20 @@
       "lob": null,
       "target_record_type": "loss_run_claim_row",
       "problems": [
+        "continuation_notes",
+        "distractor_sections",
+        "duplicates",
         "high_density_long_list",
-        "production_like_layout",
-        "ocr_condition",
-        "page_breaks",
         "large_doc",
-        "multiple_tables",
         "merged_cells",
         "multi_row",
-        "duplicates",
-        "distractor_sections",
-        "variable_policy_sections",
-        "continuation_notes",
+        "multiple_tables",
+        "ocr_condition",
+        "page_breaks",
+        "production_like_layout",
+        "sparse_driver_fields",
         "summary_distractors",
-        "sparse_driver_fields"
+        "variable_policy_sections"
       ],
       "num_claims": 300,
       "num_policy_items": null,
@@ -1219,7 +1034,7 @@
         "pdf_size_bytes": 581787,
         "html_size_bytes": 297170,
         "json_size_bytes": 161836,
-        "ocr_md_size_bytes": 129750,
+        "ocr_md_size_bytes": 216209,
         "pdf_pages": 42
       },
       "transcripts_available": [
@@ -1237,20 +1052,20 @@
       "lob": null,
       "target_record_type": "loss_run_claim_row",
       "problems": [
+        "continuation_notes",
+        "distractor_sections",
+        "duplicates",
         "high_density_long_list",
-        "production_like_layout",
-        "ocr_condition",
-        "page_breaks",
         "large_doc",
-        "multiple_tables",
         "merged_cells",
         "multi_row",
-        "duplicates",
-        "distractor_sections",
-        "variable_policy_sections",
-        "continuation_notes",
+        "multiple_tables",
+        "ocr_condition",
+        "page_breaks",
+        "production_like_layout",
+        "sparse_driver_fields",
         "summary_distractors",
-        "sparse_driver_fields"
+        "variable_policy_sections"
       ],
       "num_claims": 300,
       "num_policy_items": null,
@@ -1269,7 +1084,7 @@
         "pdf_size_bytes": 585065,
         "html_size_bytes": 299568,
         "json_size_bytes": 161889,
-        "ocr_md_size_bytes": 135126,
+        "ocr_md_size_bytes": 209968,
         "pdf_pages": 44
       },
       "transcripts_available": [
@@ -1279,7 +1094,7 @@
     {
       "id": "mixed_040_001_crosspage",
       "complexity_regime": "claim_crosspage_multihop",
-      "template_family": "mixed",
+      "template_family": "claim_crosspage_multihop",
       "difficulty": "mixed",
       "format": "crosspage",
       "domain": "claims",
@@ -1288,27 +1103,27 @@
       "target_record_type": "loss_run_incident",
       "problems": [
         "cross_page_join",
-        "long_range_evidence",
-        "mixed_layout",
         "distractor_sections",
-        "longer_list",
-        "ocr_condition",
-        "page_breaks",
-        "large_doc",
-        "multiple_tables",
-        "multi_row",
-        "multi_column",
         "duplicates",
-        "natural_long_range_join",
         "inherited_context",
-        "non_target_rows",
+        "large_doc",
+        "long_range_evidence",
+        "longer_list",
+        "mixed_layout",
         "mixed_prose_tables",
-        "non_sequential_identifiers"
+        "multi_column",
+        "multi_row",
+        "multiple_tables",
+        "natural_long_range_join",
+        "non_sequential_identifiers",
+        "non_target_rows",
+        "ocr_condition",
+        "page_breaks"
       ],
       "num_claims": 40,
       "num_policy_items": null,
       "num_target_records": 40,
-      "pages_estimate": 209,
+      "pages_estimate": 148,
       "seed": 10644,
       "files": {
         "pdf": "pdfs/mixed_040_001_crosspage.pdf",
@@ -1319,11 +1134,11 @@
         "html_exists": true,
         "ground_truth_exists": true,
         "ocr_md_exists": true,
-        "pdf_size_bytes": 1797630,
-        "html_size_bytes": 807202,
+        "pdf_size_bytes": 1500443,
+        "html_size_bytes": 519042,
         "json_size_bytes": 51549,
-        "ocr_md_size_bytes": 769475,
-        "pdf_pages": 209
+        "ocr_md_size_bytes": 676012,
+        "pdf_pages": 148
       },
       "transcripts_available": [
         "ocr"
@@ -1341,30 +1156,29 @@
       "target_record_type": "policy_packet_item",
       "problems": [
         "commercial_general_liability",
-        "exposure_rating_rows",
-        "limits_forms_exclusions",
         "distractor_forms",
         "distractor_locations",
-        "material_clause_extraction",
-        "long_range_evidence",
+        "distractor_sections",
+        "exposure_rating_rows",
         "heterogeneous_record_list",
+        "inherited_context",
+        "large_doc",
+        "limits_forms_exclusions",
+        "long_range_evidence",
+        "material_clause_extraction",
+        "multi_column",
+        "multi_row",
+        "multiple_tables",
+        "natural_long_range_join",
+        "non_target_rows",
         "ocr_condition",
         "page_breaks",
-        "large_doc",
-        "multiple_tables",
-        "multi_row",
-        "multi_column",
-        "duplicates",
-        "distractor_sections",
-        "natural_long_range_join",
-        "inherited_context",
-        "split_records",
-        "non_target_rows"
+        "split_records"
       ],
-      "num_claims": 619,
-      "num_policy_items": 619,
-      "num_target_records": 619,
-      "pages_estimate": 316,
+      "num_claims": 562,
+      "num_policy_items": 562,
+      "num_target_records": 562,
+      "pages_estimate": 133,
       "seed": 35540498590913,
       "files": {
         "pdf": "pdfs/mixed_cgl_040_001.pdf",
@@ -1375,11 +1189,11 @@
         "html_exists": true,
         "ground_truth_exists": true,
         "ocr_md_exists": true,
-        "pdf_size_bytes": 1461026,
-        "html_size_bytes": 1169180,
-        "json_size_bytes": 458192,
-        "ocr_md_size_bytes": 807375,
-        "pdf_pages": 316
+        "pdf_size_bytes": 1345639,
+        "html_size_bytes": 827739,
+        "json_size_bytes": 423516,
+        "ocr_md_size_bytes": 779091,
+        "pdf_pages": 133
       },
       "transcripts_available": [
         "ocr"
@@ -1388,7 +1202,7 @@
     {
       "id": "multihop_012_001_crosspage",
       "complexity_regime": "claim_crosspage_multihop",
-      "template_family": "multihop",
+      "template_family": "claim_crosspage_multihop",
       "difficulty": "multihop",
       "format": "crosspage",
       "domain": "claims",
@@ -1396,27 +1210,27 @@
       "lob": null,
       "target_record_type": "loss_run_incident",
       "problems": [
-        "cross_page_join",
-        "long_range_evidence",
         "coded_values",
+        "cross_page_join",
         "distractor_sections",
-        "ocr_condition",
-        "page_breaks",
-        "large_doc",
-        "multiple_tables",
-        "multi_row",
-        "multi_column",
         "duplicates",
-        "natural_long_range_join",
         "inherited_context",
-        "non_target_rows",
+        "large_doc",
+        "long_range_evidence",
         "mixed_prose_tables",
-        "non_sequential_identifiers"
+        "multi_column",
+        "multi_row",
+        "multiple_tables",
+        "natural_long_range_join",
+        "non_sequential_identifiers",
+        "non_target_rows",
+        "ocr_condition",
+        "page_breaks"
       ],
       "num_claims": 12,
       "num_policy_items": null,
       "num_target_records": 12,
-      "pages_estimate": 80,
+      "pages_estimate": 61,
       "seed": 14114,
       "files": {
         "pdf": "pdfs/multihop_012_001_crosspage.pdf",
@@ -1427,11 +1241,11 @@
         "html_exists": true,
         "ground_truth_exists": true,
         "ocr_md_exists": true,
-        "pdf_size_bytes": 981600,
-        "html_size_bytes": 296086,
+        "pdf_size_bytes": 986822,
+        "html_size_bytes": 205395,
         "json_size_bytes": 15364,
-        "ocr_md_size_bytes": 271333,
-        "pdf_pages": 80
+        "ocr_md_size_bytes": 254714,
+        "pdf_pages": 61
       },
       "transcripts_available": [
         "ocr"
@@ -1440,7 +1254,7 @@
     {
       "id": "multihop_025_001_crosspage",
       "complexity_regime": "claim_crosspage_multihop",
-      "template_family": "multihop",
+      "template_family": "claim_crosspage_multihop",
       "difficulty": "multihop",
       "format": "crosspage",
       "domain": "claims",
@@ -1448,28 +1262,28 @@
       "lob": null,
       "target_record_type": "loss_run_incident",
       "problems": [
+        "claimant_lookup",
         "cross_page_join",
+        "distractor_sections",
+        "duplicates",
+        "inherited_context",
+        "large_doc",
         "long_range_evidence",
         "many_to_one_policy",
-        "claimant_lookup",
-        "distractor_sections",
-        "ocr_condition",
-        "page_breaks",
-        "large_doc",
-        "multiple_tables",
-        "multi_row",
-        "multi_column",
-        "duplicates",
-        "natural_long_range_join",
-        "inherited_context",
-        "non_target_rows",
         "mixed_prose_tables",
-        "non_sequential_identifiers"
+        "multi_column",
+        "multi_row",
+        "multiple_tables",
+        "natural_long_range_join",
+        "non_sequential_identifiers",
+        "non_target_rows",
+        "ocr_condition",
+        "page_breaks"
       ],
       "num_claims": 25,
       "num_policy_items": null,
       "num_target_records": 25,
-      "pages_estimate": 136,
+      "pages_estimate": 99,
       "seed": 6869,
       "files": {
         "pdf": "pdfs/multihop_025_001_crosspage.pdf",
@@ -1480,11 +1294,11 @@
         "html_exists": true,
         "ground_truth_exists": true,
         "ocr_md_exists": true,
-        "pdf_size_bytes": 1335078,
-        "html_size_bytes": 515445,
+        "pdf_size_bytes": 1212891,
+        "html_size_bytes": 341664,
         "json_size_bytes": 32067,
-        "ocr_md_size_bytes": 478563,
-        "pdf_pages": 136
+        "ocr_md_size_bytes": 436025,
+        "pdf_pages": 99
       },
       "transcripts_available": [
         "ocr"
@@ -1502,27 +1316,27 @@
       "target_record_type": "policy_packet_item",
       "problems": [
         "businessowners_policy",
-        "location_scoped_coverage",
+        "distractor_sections",
+        "duplicates",
         "form_endorsement_links",
-        "material_clause_extraction",
-        "long_range_evidence",
         "heterogeneous_record_list",
+        "inherited_context",
+        "large_doc",
+        "location_scoped_coverage",
+        "long_range_evidence",
+        "material_clause_extraction",
+        "multi_column",
+        "multi_row",
+        "natural_long_range_join",
+        "non_target_rows",
         "ocr_condition",
         "page_breaks",
-        "large_doc",
-        "multi_row",
-        "multi_column",
-        "duplicates",
-        "distractor_sections",
-        "natural_long_range_join",
-        "inherited_context",
-        "split_records",
-        "non_target_rows"
+        "split_records"
       ],
-      "num_claims": 360,
-      "num_policy_items": 360,
-      "num_target_records": 360,
-      "pages_estimate": 158,
+      "num_claims": 344,
+      "num_policy_items": 344,
+      "num_target_records": 344,
+      "pages_estimate": 99,
       "seed": 268482452599190,
       "files": {
         "pdf": "pdfs/multihop_bop_012_001.pdf",
@@ -1533,11 +1347,11 @@
         "html_exists": true,
         "ground_truth_exists": true,
         "ocr_md_exists": true,
-        "pdf_size_bytes": 820073,
-        "html_size_bytes": 582894,
-        "json_size_bytes": 239867,
-        "ocr_md_size_bytes": 402001,
-        "pdf_pages": 158
+        "pdf_size_bytes": 597331,
+        "html_size_bytes": 386363,
+        "json_size_bytes": 236674,
+        "ocr_md_size_bytes": 352710,
+        "pdf_pages": 99
       },
       "transcripts_available": [
         "ocr"
@@ -1554,29 +1368,28 @@
       "lob": "WC",
       "target_record_type": "policy_packet_item",
       "problems": [
-        "workers_compensation_policy",
         "class_code_payroll_rating",
+        "distractor_sections",
         "experience_mod_and_schedule_rating",
-        "material_clause_extraction",
-        "long_range_evidence",
         "heterogeneous_record_list",
+        "inherited_context",
+        "large_doc",
+        "long_range_evidence",
+        "material_clause_extraction",
+        "multi_column",
+        "multi_row",
+        "multiple_tables",
+        "natural_long_range_join",
+        "non_target_rows",
         "ocr_condition",
         "page_breaks",
-        "large_doc",
-        "multiple_tables",
-        "multi_row",
-        "multi_column",
-        "duplicates",
-        "distractor_sections",
-        "natural_long_range_join",
-        "inherited_context",
         "split_records",
-        "non_target_rows"
+        "workers_compensation_policy"
       ],
-      "num_claims": 510,
-      "num_policy_items": 510,
-      "num_target_records": 510,
-      "pages_estimate": 220,
+      "num_claims": 438,
+      "num_policy_items": 438,
+      "num_target_records": 438,
+      "pages_estimate": 108,
       "seed": 195680388151197,
       "files": {
         "pdf": "pdfs/multihop_wc_025_001.pdf",
@@ -1587,11 +1400,11 @@
         "html_exists": true,
         "ground_truth_exists": true,
         "ocr_md_exists": true,
-        "pdf_size_bytes": 1056909,
-        "html_size_bytes": 799989,
-        "json_size_bytes": 327471,
-        "ocr_md_size_bytes": 537185,
-        "pdf_pages": 220
+        "pdf_size_bytes": 976936,
+        "html_size_bytes": 467047,
+        "json_size_bytes": 293095,
+        "ocr_md_size_bytes": 418078,
+        "pdf_pages": 108
       },
       "transcripts_available": [
         "ocr"
@@ -1609,20 +1422,20 @@
       "target_record_type": "vehicle_schedule_row",
       "problems": [
         "high_density_long_list",
-        "production_like_layout",
+        "inherited_context",
+        "large_doc",
+        "layout_randomization",
+        "multiple_tables",
+        "non_target_rows",
         "ocr_condition",
         "page_breaks",
-        "large_doc",
-        "multiple_tables",
-        "layout_randomization",
-        "inherited_context",
-        "split_records",
-        "non_target_rows"
+        "production_like_layout",
+        "split_records"
       ],
       "num_claims": null,
       "num_policy_items": null,
       "num_target_records": 800,
-      "pages_estimate": 37,
+      "pages_estimate": 25,
       "seed": null,
       "files": {
         "pdf": "pdfs/vehicle_schedule_sparse_001.pdf",
@@ -1633,11 +1446,11 @@
         "html_exists": true,
         "ground_truth_exists": true,
         "ocr_md_exists": true,
-        "pdf_size_bytes": 442739,
-        "html_size_bytes": 171500,
+        "pdf_size_bytes": 325127,
+        "html_size_bytes": 100263,
         "json_size_bytes": 146971,
-        "ocr_md_size_bytes": 68892,
-        "pdf_pages": 37
+        "ocr_md_size_bytes": 115552,
+        "pdf_pages": 25
       },
       "transcripts_available": [
         "ocr"
@@ -1655,20 +1468,20 @@
       "target_record_type": "vehicle_schedule_row",
       "problems": [
         "high_density_long_list",
-        "production_like_layout",
+        "inherited_context",
+        "large_doc",
+        "layout_randomization",
+        "multiple_tables",
+        "non_target_rows",
         "ocr_condition",
         "page_breaks",
-        "large_doc",
-        "multiple_tables",
-        "layout_randomization",
-        "inherited_context",
-        "split_records",
-        "non_target_rows"
+        "production_like_layout",
+        "split_records"
       ],
       "num_claims": null,
       "num_policy_items": null,
       "num_target_records": 800,
-      "pages_estimate": 37,
+      "pages_estimate": 25,
       "seed": null,
       "files": {
         "pdf": "pdfs/vehicle_schedule_sparse_002.pdf",
@@ -1679,11 +1492,11 @@
         "html_exists": true,
         "ground_truth_exists": true,
         "ocr_md_exists": true,
-        "pdf_size_bytes": 441856,
-        "html_size_bytes": 171463,
+        "pdf_size_bytes": 331153,
+        "html_size_bytes": 100239,
         "json_size_bytes": 146932,
-        "ocr_md_size_bytes": 65201,
-        "pdf_pages": 37
+        "ocr_md_size_bytes": 126215,
+        "pdf_pages": 25
       },
       "transcripts_available": [
         "ocr"

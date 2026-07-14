@@ -126,13 +126,13 @@ class HuggingFaceExportTests(unittest.TestCase):
     def test_dataset_card_lists_hf_config_paths(self):
         summary = {
             "core_operations": {
-                "rows": 30,
-                "targets": 31884,
+                "rows": 26,
+                "targets": 28178,
                 "min_targets": 260,
                 "max_targets": 2571,
-                "min_pages": 15,
-                "max_pages": 144,
-                "domains": {"commercial_insurance_operations": 28},
+                "min_pages": 17,
+                "max_pages": 84,
+                "domains": {"commercial_insurance_operations": 26},
                 "target_fields": ["records"],
             },
             "claim_multihop": {
@@ -140,18 +140,18 @@ class HuggingFaceExportTests(unittest.TestCase):
                 "targets": 77,
                 "min_targets": 12,
                 "max_targets": 40,
-                "min_pages": 76,
-                "max_pages": 198,
+                "min_pages": 61,
+                "max_pages": 148,
                 "domains": {"claims": 3},
                 "target_fields": ["incidents"],
             },
             "policy_packets": {
                 "rows": 3,
-                "targets": 1489,
-                "min_targets": 360,
-                "max_targets": 619,
-                "min_pages": 142,
-                "max_pages": 316,
+                "targets": 1344,
+                "min_targets": 344,
+                "max_targets": 562,
+                "min_pages": 99,
+                "max_pages": 133,
                 "domains": {"policy_review": 3},
                 "target_fields": ["records"],
             },
@@ -167,12 +167,12 @@ class HuggingFaceExportTests(unittest.TestCase):
             for key, _ in export_hf_dataset.BASELINE_REGIMES
         }
         codex_role_stats = {
-            "structural_challenge": {"count": 21, "rows": 10745, "exact_record_recall": 0.689},
-            "scale_control": {"count": 15, "rows": 22705, "exact_record_recall": 0.993},
+            "structural_challenge": {"count": 19, "rows": 8414, "exact_record_recall": 0.6757784645},
+            "scale_control": {"count": 13, "rows": 21185, "exact_record_recall": 0.9948548501},
         }
         claude_role_stats = {
-            "structural_challenge": {"count": 21, "rows": 10745, "exact_record_recall": 0.607},
-            "scale_control": {"count": 15, "rows": 22705, "exact_record_recall": 0.993},
+            "structural_challenge": {"count": 19, "rows": 8414, "exact_record_recall": 0.7928452579},
+            "scale_control": {"count": 13, "rows": 21185, "exact_record_recall": 0.9930611282},
         }
         codex_baseline = {
             "report_path": Path("results/codex_full_current_ocr_v2/evaluation_report.json"),
@@ -180,16 +180,16 @@ class HuggingFaceExportTests(unittest.TestCase):
             "presentation": export_hf_dataset.BASELINE_PRESENTATIONS["codex_gpt55"],
             "report": {"timestamp": "2026-07-01T12:04:51+00:00"},
             "model_stats": {
-                "total_samples": 36,
-                "total_rows": 33450,
+                "total_samples": 32,
+                "total_rows": 29599,
                 "errors": 0,
-                "exact_record_recall": 0.8952167414050822,
-                "complete_documents": 12,
-                "complete_document_rate": 0.3333333333333333,
-                "weighted_f1": 0.9874341144344954,
-                "avg_f1": 0.9820241757370647,
-                "weighted_recall": 0.9778439842309854,
-                "weighted_precision": 0.9972142167138981,
+                "exact_record_recall": 0.9041521673,
+                "complete_documents": 4,
+                "complete_document_rate": 0.125,
+                "weighted_f1": 0.9824580058,
+                "avg_f1": 0.9767887730,
+                "weighted_recall": 0.9729906733,
+                "weighted_precision": 0.9921049740,
                 "by_complexity_regime": regime_stats,
                 "by_evaluation_role": codex_role_stats,
             },
@@ -200,16 +200,16 @@ class HuggingFaceExportTests(unittest.TestCase):
             "presentation": export_hf_dataset.BASELINE_PRESENTATIONS["claude_opus48"],
             "report": {"timestamp": "2026-07-12T18:18:20+00:00"},
             "model_stats": {
-                "total_samples": 36,
-                "total_rows": 33450,
+                "total_samples": 32,
+                "total_rows": 29599,
                 "errors": 0,
-                "exact_record_recall": 0.8688191330343796,
-                "complete_documents": 13,
-                "complete_document_rate": 0.3611111111111111,
-                "weighted_f1": 0.9856588137753326,
-                "avg_f1": 0.9822258602857254,
-                "weighted_recall": 0.9742515417238221,
-                "weighted_precision": 0.9973363805354599,
+                "exact_record_recall": 0.9361464914,
+                "complete_documents": 7,
+                "complete_document_rate": 0.21875,
+                "weighted_f1": 0.9884245464,
+                "avg_f1": 0.9839519696,
+                "weighted_recall": 0.9790179660,
+                "weighted_precision": 0.9980145540,
                 "by_complexity_regime": regime_stats,
                 "by_evaluation_role": claude_role_stats,
             },
@@ -235,12 +235,14 @@ class HuggingFaceExportTests(unittest.TestCase):
         self.assertIn("schemas/ifta_multisection_jurisdiction_row.schema.json", card)
         self.assertIn("@misc{fedoruk2026longlistbench", card)
         self.assertIn("| `policy_packets` |", card)
-        self.assertIn("The dataset contains 36 PDF documents and 33,450 target records.", card)
-        self.assertIn("89.5% | 12/36 (33.3%) | 98.7%", card)
-        self.assertIn("86.9% | 13/36 (36.1%) | 98.6%", card)
+        self.assertIn("The dataset contains 32 PDF documents and 29,599 target records.", card)
+        self.assertIn("90.4% | 4/32 (12.5%) | 98.2% | 97.7%", card)
+        self.assertIn("93.6% | 7/32 (21.9%) | 98.8% | 98.4%", card)
         self.assertIn("GPT-5.5 exact records | Opus 4.8 exact records", card)
         self.assertIn("Structural challenges", card)
         self.assertIn("saved predictions and reports", card)
+        self.assertIn("Gemini 3.5 Flash", card)
+        self.assertIn("direct Vertex AI API", card)
 
     def test_default_release_baselines_include_all_four_agent_runs(self):
         self.assertEqual(len(export_hf_dataset.DEFAULT_BASELINE_REPORTS), 4)

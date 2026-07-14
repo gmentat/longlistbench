@@ -8,29 +8,29 @@
   "target_record_type": "loss_run_incident",
   "num_claims": 25,
   "num_target_records": 25,
-  "pages_estimate": 136,
-  "pdf_page_count": 136,
+  "pages_estimate": 99,
+  "pdf_page_count": 99,
   "document_count": 1,
   "evidence_pattern": "single_document_long_range_cross_page_join",
-  "minimum_gap_pages_between_primary_and_last_evidence": 114,
+  "minimum_gap_pages_between_primary_and_last_evidence": 93,
   "problems": [
+    "claimant_lookup",
     "cross_page_join",
+    "distractor_sections",
+    "duplicates",
+    "inherited_context",
+    "large_doc",
     "long_range_evidence",
     "many_to_one_policy",
-    "claimant_lookup",
-    "distractor_sections",
-    "ocr_condition",
-    "page_breaks",
-    "large_doc",
-    "multiple_tables",
-    "multi_row",
-    "multi_column",
-    "duplicates",
-    "natural_long_range_join",
-    "inherited_context",
-    "non_target_rows",
     "mixed_prose_tables",
-    "non_sequential_identifiers"
+    "multi_column",
+    "multi_row",
+    "multiple_tables",
+    "natural_long_range_join",
+    "non_sequential_identifiers",
+    "non_target_rows",
+    "ocr_condition",
+    "page_breaks"
   ],
   "layout_templates": [
     "packet_cover",
@@ -56,7 +56,7 @@
   "evidence_map": [
     {
       "section": "claim_intake_file_cards",
-      "approx_page_after_cover": 1,
+      "approx_page_after_cover": 2,
       "fields": [
         "incident_number",
         "reference_number",
@@ -71,7 +71,7 @@
     },
     {
       "section": "fleet_driver_assignment_cards",
-      "approx_page_after_cover": 54,
+      "approx_page_after_cover": 36,
       "join_key": "unit_number",
       "fields": [
         "driver_name",
@@ -81,7 +81,7 @@
     },
     {
       "section": "policy_register_cards",
-      "approx_page_after_cover": 55,
+      "approx_page_after_cover": 39,
       "join_key": "policy_number",
       "fields": [
         "company_name",
@@ -93,7 +93,7 @@
     },
     {
       "section": "loss_cause_classification_narrative",
-      "approx_page_after_cover": 90,
+      "approx_page_after_cover": 67,
       "join_key": "cause_code",
       "fields": [
         "coverage_type",
@@ -103,7 +103,7 @@
     },
     {
       "section": "claimant_notice_cards",
-      "approx_page_after_cover": 91,
+      "approx_page_after_cover": 68,
       "join_key": "reference_number",
       "fields": [
         "claimants",
@@ -112,7 +112,7 @@
     },
     {
       "section": "claim_financial_ledger_blocks",
-      "approx_page_after_cover": 120,
+      "approx_page_after_cover": 95,
       "join_key": "reference_number",
       "fields": [
         "bi",
@@ -129,18 +129,28 @@
     "metadata": "metadata/multihop_025_001_crosspage.json",
     "ocr_md": "transcripts/ocr_gemini/multihop_025_001_crosspage.md",
     "json_size_bytes": 32067,
-    "pdf_size_bytes": 1335078,
-    "html_size_bytes": 515445,
-    "ocr_size_bytes": 478563
+    "pdf_size_bytes": 1212891,
+    "html_size_bytes": 341664,
+    "ocr_size_bytes": 436025
   },
   "transcripts_available": [
     "ocr"
   ],
-  "ocr_md_size_bytes": 478563,
+  "ocr_md_size_bytes": 436025,
   "layout_revision": {
-    "date": "2026-06-29T09:52:20+00:00",
-    "purpose": "reduce deterministic parser friendliness with production-like layout variation",
+    "date": "2026-07-14T08:45:41.897529+00:00",
+    "purpose": "improve production-like document structure and layout variation",
     "ocr_status": "regenerated_from_current_pdf",
-    "ocr_regenerated_at": "2026-06-29T10:05:17+00:00"
+    "ocr_regenerated_at": "2026-07-14T12:32:06.519410+00:00"
+  },
+  "pdf_size_bytes": 1212891,
+  "html_size_bytes": 341664,
+  "json_size_bytes": 32067,
+  "template": "claim_crosspage_multihop",
+  "artifacts": {
+    "pdf_sha256": "f40ee18148ca75deb7e9664619643d117068220b5aec047559507cd6d73e55fd",
+    "html_sha256": "928e1241fb97a0a5d069e5e2e660a80442c40a7b735a587089527abeb87c0472",
+    "ground_truth_sha256": "e82736261a1705df72f4b2d70c3c4171d01a4b920e5879727839c10a983ac68f",
+    "ocr_sha256": "fc64a2cfb21555e0e4472717d679bb76a6bceedff023f8763fc88c1fa6ec1159"
   }
 }

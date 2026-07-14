@@ -57,8 +57,6 @@ Return this exact shape:
       "form_number": "string",
       "form_title": "string",
       "edition_date": "string",
-      "location_number": "string",
-      "building_number": "string",
       "title": "string",
       "form_id": "string",
       "paragraphs": ["string", "string"]
@@ -87,6 +85,7 @@ Return this exact shape:
   ],
   "endorsement": [
     {
+      "subject_key": "copy exactly from endorsement_subjects",
       "title": "string",
       "form_id": "string",
       "paragraphs": ["string", "string"]
@@ -97,21 +96,31 @@ Return this exact shape:
 
 Generate:
 
-- 5 `policy_form` drafts
+- 16 `policy_form` drafts
 - `coverage_form` drafts only when `coverage_form_records` are provided. For
   BOP, generate exactly one `coverage_form` draft for each
-  `coverage_form_records` entry and copy the coverage/form/location/building
-  metadata into the matching draft.
-- 2 `notice` drafts
-- 2 `amendatory` drafts
-- 2 `billing` drafts
-- 4 `endorsement` drafts
+  `coverage_form_records` entry and copy its coverage and form metadata into
+  the matching draft.
+- 4 `notice` drafts
+- 4 `amendatory` drafts
+- 4 `billing` drafts
+- exactly one `endorsement` draft for each `endorsement_subjects` entry. Copy
+  its `subject_key` exactly into the draft.
 
-Each ordinary draft should contain 4 to 6 paragraphs. Each `coverage_form`
-draft should contain 9 to 14 compact clause paragraphs with different headings,
+Each ordinary draft should contain 28 to 34 compact paragraphs and 580 to 640
+words, enough to fill one two-column policy page without undersized type, empty
+lower-page space, or spillover onto an unnumbered continuation page. Each `coverage_form`
+draft should contain 26 to 34 compact clause paragraphs with different headings,
 enumeration style, sentence rhythm, and policy mechanics across coverages.
 Keep paragraphs factual, commercial-insurance-like, and suitable for a
 synthetic public benchmark.
+
+Ordinary `policy_form`, `notice`, `amendatory`, `billing`, and `endorsement`
+drafts must be reusable policy language. Do not put sample item IDs, location
+numbers, class codes, payroll, exposure, premium, limits, or endorsement dates
+in those drafts. The renderer supplies those facts separately. An endorsement
+must discuss only the subject named by its `subject_key`; do not substitute a
+different exclusion, coverage, or form purpose.
 
 Avoid making the generated forms read like explanatory summaries. Do not reuse
 the same title suffix across drafts. Avoid repeated phrases such as "financial

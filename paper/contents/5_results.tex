@@ -1,7 +1,7 @@
-This revision reports corpus validation and four OCR-conditioned agentic extraction baselines on the released corpus of 36 documents. Earlier prerelease experiments used a development set of 80 documents with different templates, schemas, and scoring. We retain those experiments as development history but do not mix their scores with the current release.
+This revision reports corpus validation and four OCR-conditioned agentic extraction baselines on the released corpus of 32 documents. Earlier prerelease experiments used a development set of 80 documents with different templates, schemas, and scoring. We retain those experiments as development history but do not mix their scores with the current release.
 
 \subsection{Artifact completeness}
-Each manifest instance has one PDF, HTML source, JSON ground-truth file, metadata file, and OCR transcript. The release contains 31{,}961 non-policy records and 1{,}489 policy records, for 33{,}450 targets overall. \Cref{tab:release-validation} summarizes the release gates.
+Each manifest instance has one PDF, HTML source, JSON ground-truth file, metadata file, and OCR transcript. The release contains 28{,}255 non-policy records and 1{,}344 policy records, for 29{,}599 targets overall. \Cref{tab:release-validation} summarizes the release gates.
 
 \begin{table}[H]
 \centering
@@ -12,25 +12,25 @@ Each manifest instance has one PDF, HTML source, JSON ground-truth file, metadat
 \toprule
 Check & Value \\
 \midrule
-Manifest instances & 36 \\
-PDF, HTML, ground-truth, metadata, and OCR artifacts & 36 each \\
-Total target records & 33{,}450 \\
+Manifest instances & 32 \\
+PDF, HTML, ground-truth, metadata, and OCR artifacts & 32 each \\
+Total target records & 29{,}599 \\
 Released transcript condition & OCR \\
-Average identifier coverage & 100.0\% \\
+Average identifier coverage & 99.9\% \\
 Tracked identifier-field support & 99.9\% \\
-Records with missing tracked OCR identifiers & 39 \\
-Unrecoverable numeric GT values in OCR & 0 \\
+Records with missing tracked OCR identifiers & 17 \\
+Audited numeric OCR misses & 56 of 76{,}968 (0.073\%) \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-The largest scale family, mileage by vehicle, contributes 17{,}565 records across eight PDFs. Structural families add sparse enrichment, split schedules, mixed row/detail blocks, heterogeneous records, and evidence distributed across sections. All 36 OCR transcripts pass the 95\% identifier-coverage gate. A numeric-fidelity gate also finds no unrecoverable ground-truth values with absolute value at least 10. These checks bound the released OCR condition; they are not extraction scores.
+The largest scale family, mileage by vehicle, contributes 17{,}565 records across eight PDFs. Structural families add sparse enrichment, split schedules, mixed row/detail blocks, heterogeneous records, and evidence distributed across sections. All 32 OCR transcripts pass the 95\% identifier-coverage gate. A numeric audit records 56 genuine OCR misses among 76{,}968 checked ground-truth numeric fields with absolute value at least 10. The transcripts are not hand-corrected, and the exact miss set is released. These checks bound the OCR condition; they are not extraction scores.
 
 \subsection{Agentic OCR baselines}
 \label{subsec:current-ocr-baseline}
 Each run received one OCR transcript and the public field contract in a temporary workspace. A macOS sandbox denied the benchmark repository, and ground truth, target values and counts, and generator code were absent. Agents could inspect the transcript, write temporary code, validate JSON, and return the complete list. These are protocol baselines, not raw one-shot model measurements.
 
-The two earlier runs used Codex CLI with \texttt{gpt-5.5} at xhigh reasoning on July 1, 2026, and Claude Code with \texttt{claude-opus-4-8} at xhigh effort on July 12. The new runs used Codex CLI 0.144.1 with \texttt{gpt-5.6-sol} and Claude Code 2.1.207 with \texttt{claude-fable-5}, both at xhigh effort on July 13. Claude Code safe mode disabled project instructions, skills, plugins, hooks, and MCP servers. Its usage metadata listed Fable 5 for every run and auxiliary Haiku 4.5 routing, so this is a Claude Code/Fable 5 protocol rather than a raw-model score. All four runs cover the same manifest and 33{,}450 targets with zero execution errors; saved predictions reproduce every score in \Cref{tab:agentic-full-corpus}.
+All four full-corpus runs were produced on July 14, 2026 at xhigh effort using Codex CLI 0.144.4 or Claude Code 2.1.209. Claude Code safe mode disabled project instructions, skills, plugins, hooks, and MCP servers. Per-sample metadata confirms the requested primary model in every run and records any auxiliary routing. All reports cover the same 29{,}599-target manifest with zero execution errors, and saved predictions reproduce every score in \Cref{tab:agentic-full-corpus}.
 
 \begin{table}[H]
 \centering
@@ -41,17 +41,17 @@ The two earlier runs used Codex CLI with \texttt{gpt-5.5} at xhigh reasoning on 
 \toprule
 Agent and model & Exact recall & Complete docs & Micro-$F_1$ & Macro-$F_1$ \\
 \midrule
-Codex CLI, GPT-5.6-Sol (xhigh) & 89.0\% & 13/36 (36.1\%) & 97.3\% & 96.6\% \\
-Claude Code, Fable 5 (xhigh) & 90.6\% & 15/36 (41.7\%) & 98.9\% & 98.7\% \\
-Codex CLI, GPT-5.5 (xhigh) & 89.5\% & 12/36 (33.3\%) & 98.7\% & 98.2\% \\
-Claude Code, Opus 4.8 (xhigh) & 86.9\% & 13/36 (36.1\%) & 98.6\% & 98.2\% \\
+Codex CLI, GPT-5.6-Sol (xhigh) & 93.7\% & 6/32 (18.8\%) & 98.7\% & 98.3\% \\
+Claude Code, Fable 5 (xhigh) & 90.9\% & 6/32 (18.8\%) & 96.1\% & 92.6\% \\
+Codex CLI, GPT-5.5 (xhigh) & 90.4\% & 4/32 (12.5\%) & 98.2\% & 97.7\% \\
+Claude Code, Opus 4.8 (xhigh) & 93.6\% & 7/32 (21.9\%) & 98.8\% & 98.4\% \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-No configuration completes even half of the documents. Model recency is also not a monotonic aggregate improvement: GPT-5.6-Sol completes one more document than GPT-5.5 but has slightly lower exact-record and field scores, while Fable 5 improves over Opus 4.8. The family results below explain more than the overall ranking.
+No configuration completes more than 7 of 32 documents. GPT-5.6-Sol has the highest exact-record recall, while Opus 4.8 completes one more document and has the highest field $F_1$. The family results below are more informative than this narrow aggregate ranking.
 
-We preassign four parser-friendly families as scale tests and the other seven as structural challenges. \Cref{tab:agentic-by-role} reports the latest models by role.
+We preassign four parser-friendly families as scale controls and the other seven as structural challenges. \Cref{tab:agentic-by-role} reports the latest models by role.
 
 \begin{table}[H]
 \centering
@@ -62,8 +62,8 @@ We preassign four parser-friendly families as scale tests and the other seven as
 \toprule
 Role & Docs & Records & Sol exact & Fable exact & Sol complete & Fable complete \\
 \midrule
-Structural challenges & 21 & 10{,}745 & 66.4\% & 71.2\% & 4/21 (19.0\%) & 4/21 (19.0\%) \\
-Scale tests & 15 & 22{,}705 & 99.7\% & 99.8\% & 9/15 (60.0\%) & 11/15 (73.3\%) \\
+Structural challenges & 19 & 8{,}414 & 79.0\% & 69.3\% & 2/19 (10.5\%) & 2/19 (10.5\%) \\
+Scale controls & 13 & 21{,}185 & 99.5\% & 99.5\% & 4/13 (30.8\%) & 4/13 (30.8\%) \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -73,30 +73,30 @@ Scale tests & 15 & 22{,}705 & 99.7\% & 99.8\% & 9/15 (60.0\%) & 11/15 (73.3\%) \
 \begin{table}[H]
 \centering
 \scriptsize
-\caption{Latest-model exact-record recall by extraction problem. The divider separates structural challenges from scale tests.}
+\caption{Latest-model exact-record recall by extraction problem. The divider separates structural challenges from scale controls.}
 \label{tab:agentic-by-regime}
 \begin{tabular}{@{}p{0.47\linewidth}rrrr@{}}
 \toprule
 Extraction problem & Docs & Records & GPT-5.6-Sol & Fable 5 \\
 \midrule
-Sparse record enrichment (driver/MVR) & 3 & 1{,}260 & 1.9\% & 1.9\% \\
-Long-range claim joins & 3 & 77 & 100.0\% & 100.0\% \\
-Split return schedules & 5 & 4{,}923 & 58.5\% & 64.6\% \\
-Mixed row/detail loss runs & 3 & 900 & 98.6\% & 99.2\% \\
-Tax inquiry detail tables & 2 & 1{,}300 & 99.8\% & 99.8\% \\
-Heterogeneous policy records & 3 & 1{,}489 & 78.7\% & 92.5\% \\
-Cross-section return joins & 2 & 796 & 99.9\% & 99.9\% \\
+Sparse record enrichment (driver/MVR) & 3 & 1{,}260 & 0.6\% & 1.9\% \\
+Long-range claim joins & 3 & 77 & 98.7\% & 98.7\% \\
+Split return schedules & 3 & 2{,}737 & 95.5\% & 95.5\% \\
+Mixed row/detail loss runs & 3 & 900 & 97.3\% & 92.2\% \\
+Tax inquiry detail tables & 2 & 1{,}300 & 99.9\% & 99.8\% \\
+Heterogeneous policy records & 3 & 1{,}344 & 73.3\% & 14.6\% \\
+Cross-section return joins & 2 & 796 & 99.6\% & 99.6\% \\
 \midrule
-Tax-summary scale tests & 4 & 3{,}040 & 99.9\% & 99.9\% \\
-Driver-schedule scale test & 1 & 500 & 99.4\% & 99.4\% \\
-Mileage-by-vehicle scale tests & 8 & 17{,}565 & 99.7\% & 99.8\% \\
-Vehicle-schedule scale tests & 2 & 1{,}600 & 99.6\% & 100.0\% \\
+Tax-summary scale controls & 2 & 1{,}520 & 99.5\% & 99.5\% \\
+Driver-schedule scale control & 1 & 500 & 99.8\% & 99.8\% \\
+Mileage-by-vehicle scale controls & 8 & 17{,}565 & 99.4\% & 99.4\% \\
+Vehicle-schedule scale controls & 2 & 1{,}600 & 100.0\% & 100.0\% \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-The failures differ in kind. Both agents return all 1{,}260 driver rows, but only 24 are exact because sparse MVR fields are not joined back into the roster; field micro-$F_1$ is still 89.1\%. On split return schedules, GPT-5.6-Sol returns 4{,}326 of 4{,}923 rows and Fable 5 returns 4{,}779, with additional field errors. Policy packets expose model-specific behavior: GPT-5.6-Sol omits 192 BOP records, while Fable returns the full policy record counts but still misses fields. In contrast, both agents recover all 77 long-range claim records exactly, and each misses only one of 796 cross-section return records.
+The failures differ in kind. GPT-5.6-Sol returns 1{,}259 driver rows but only 8 are exact; Fable 5 returns 1{,}243 and matches 24 exactly. Their driver/MVR field $F_1$ remains 88.0\% and 88.4\%, showing that most roster fields are present while sparse enrichment fields are not joined correctly. Both systems match 2{,}614 of 2{,}737 split-schedule records and 76 of 77 long-range claim records. Policy packets separate them: GPT-5.6-Sol matches 985 of 1{,}344 records with 95.8\% field $F_1$, while Fable 5 returns only 232 records, matches 196, and reaches 33.5\% field $F_1$. Scale controls remain near ceiling, yet only four of 13 are completely correct for either system because a single missing, extra, or malformed record fails document completion.
 
-Cross-cutting slices reinforce this variation. Exact-record recall for GPT-5.6-Sol and Fable 5 is 78.7\% and 92.5\% on heterogeneous lists, 79.8\% and 92.9\% on long-range evidence, 82.6\% and 86.4\% on split records, 82.7\% and 86.4\% on inherited context, and 81.9\% and 84.6\% under layout randomization. Duplicate-bearing documents score 86.6\% and 95.2\%. By contrast, cross-section joins and repeated keys score 99.9\% for both. These are observational associations because tags overlap and document families differ; paired renderings would be needed to estimate one stressor's causal effect.
+Cross-cutting slices reinforce this variation. Exact-record recall for GPT-5.6-Sol and Fable 5 is 73.3\% and 14.6\% on heterogeneous lists, 74.7\% and 19.1\% on long-range evidence, 94.9\% and 86.9\% on split records, 95.0\% and 87.0\% with inherited context, and 98.3\% and 98.3\% under layout randomization. Duplicate-bearing documents score 93.1\% and 73.4\%; cross-section joins and repeated keys score 99.6\% for both. These are observational associations because tags overlap and document families differ; paired renderings would be needed to estimate one stressor's causal effect.
 
 Full-context one-shot extraction is not a practical full-corpus protocol here. Small claim packets can return scoreable outputs, but larger outputs reach model limits or time out. We therefore treat one-shot prompting as a lower-bound operational stress test and use the per-document agentic protocol for full-corpus comparison.

@@ -193,6 +193,59 @@ class EvaluationMetricsTests(unittest.TestCase):
 
         self.assertEqual(metrics["f1"], 1.0)
 
+    def test_visible_vehicle_label_is_not_part_of_schema_value(self):
+        ground_truth = [{"vehicle": "8387", "state": "AL", "total_miles": 3039.8}]
+        predicted = [{"vehicle": "Unit 8387", "state": "Alabama", "total_miles": "3,039.8"}]
+
+        metrics = evaluate_record_extraction(predicted, ground_truth)
+
+        self.assertEqual(metrics["exact_record_recall"], 1.0)
+        self.assertTrue(metrics["complete_document"])
+
+    def test_quarter_return_heading_alias_preserves_extra_context(self):
+        ground_truth = [{"schedule": "Quarterly Return 13", "jurisdiction": "AL"}]
+        alias = [{"schedule": "Quarter Return 13", "jurisdiction": "Alabama"}]
+        contaminated = [{"schedule": "Quarter Return 13 | Diesel", "jurisdiction": "Alabama"}]
+
+        alias_metrics = evaluate_record_extraction(alias, ground_truth)
+        contaminated_metrics = evaluate_record_extraction(contaminated, ground_truth)
+
+        self.assertEqual(alias_metrics["exact_record_recall"], 1.0)
+        self.assertTrue(alias_metrics["complete_document"])
+        self.assertEqual(contaminated_metrics["exact_record_recall"], 0.0)
+        self.assertFalse(contaminated_metrics["complete_document"])
+
+    def test_zero_padded_identifier_is_not_equal_to_unpadded_identifier(self):
+        ground_truth = [{"territory": "003", "class_code": "0012"}]
+        predicted = [{"territory": "3", "class_code": "12"}]
+
+        metrics = evaluate_record_extraction(predicted, ground_truth)
+
+        self.assertEqual(metrics["exact_record_recall"], 0.0)
+        self.assertFalse(metrics["complete_document"])
+
+    def test_field_matching_is_invariant_to_record_order(self):
+        predicted = [{"a": "x"}, {"a": "x", "b": "y"}]
+        ground_truth = [{"a": "x"}, {"b": "y"}]
+
+        forward = evaluate_record_extraction(predicted, ground_truth)
+        reversed_ground_truth = evaluate_record_extraction(predicted, list(reversed(ground_truth)))
+
+        self.assertEqual(forward["found"], 2)
+        self.assertEqual(forward["found"], reversed_ground_truth["found"])
+        self.assertEqual(forward["f1"], reversed_ground_truth["f1"])
+
+    def test_large_exact_duplicate_multiset_has_perfect_field_score(self):
+        row = {"status": "Open", "coverage": "Liability"}
+        ground_truth = [dict(row) for _ in range(251)]
+        predicted = [dict(row) for _ in range(251)]
+
+        metrics = evaluate_record_extraction(predicted, ground_truth)
+
+        self.assertEqual(metrics["f1"], 1.0)
+        self.assertEqual(metrics["exact_record_recall"], 1.0)
+        self.assertTrue(metrics["complete_document"])
+
     def test_domain_labels_use_published_canonical_forms(self):
         ground_truth = [
             {
@@ -214,6 +267,35 @@ class EvaluationMetricsTests(unittest.TestCase):
                     "location 6; class 47103"
                 ),
             }
+        ]
+
+        metrics = evaluate_record_extraction(predicted, ground_truth)
+
+        self.assertEqual(metrics["exact_record_recall"], 1.0)
+        self.assertTrue(metrics["complete_document"])
+
+    def test_policy_lob_aliases_match_release_labels(self):
+        ground_truth = [
+            {
+                "record_type": "bop_coverage_item",
+                "lob": "BOP",
+                "policy_period": "04/01/2026 - 04/01/2027",
+                "coverage": "Property",
+            },
+            {"record_type": "wc_class_code_item", "lob": "WC", "class_code": "8810"},
+        ]
+        predicted = [
+            {
+                "record_type": "bop_coverage_item",
+                "lob": "BPP",
+                "policy_period": "04/01/2026 to 04/01/2027",
+                "coverage": "Property",
+            },
+            {
+                "record_type": "wc_class_code_item",
+                "lob": "Workers Compensation and Employers Liability",
+                "class_code": "8810",
+            },
         ]
 
         metrics = evaluate_record_extraction(predicted, ground_truth)

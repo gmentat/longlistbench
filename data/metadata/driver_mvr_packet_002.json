@@ -1,46 +1,55 @@
 {
   "id": "driver_mvr_packet_002",
+  "difficulty": "driver_mvr_request_and_roster",
+  "format": "production_like_pdf",
+  "domain": "commercial_insurance_operations",
   "template": "driver_mvr_request_and_roster",
   "target_record_type": "driver_record",
   "num_target_records": 500,
   "source_batch": "batches-02-05-review-ready",
-  "artifacts": {
-    "pdf": "pdfs/driver_mvr_packet_002.pdf",
-    "html": "html/driver_mvr_packet_002.html",
-    "ground_truth": "ground_truth/driver_mvr_packet_002.json"
-  },
-  "provenance": "Synthetic generated document. Private production references were used only for visual layout review; no production PDFs, names, account numbers, or raw customer data are included in this repository.",
+  "problems": [
+    "high_density_long_list",
+    "multi_row",
+    "multiple_tables",
+    "ocr_condition",
+    "page_breaks",
+    "production_like_layout"
+  ],
   "files": {
     "ground_truth": "ground_truth/driver_mvr_packet_002.json",
     "pdf": "pdfs/driver_mvr_packet_002.pdf",
     "html": "html/driver_mvr_packet_002.html",
     "metadata": "metadata/driver_mvr_packet_002.json",
+    "ocr_md": "transcripts/ocr_gemini/driver_mvr_packet_002.md",
     "json_size_bytes": 175399,
     "pdf_size_bytes": 450868,
     "html_size_bytes": 119492,
-    "ocr_md": "transcripts/ocr_gemini/driver_mvr_packet_002.md",
-    "ocr_size_bytes": 52067
+    "ocr_size_bytes": 72664
   },
   "transcripts_available": [
     "ocr"
   ],
   "complexity_regime": "driver_mvr_request_and_roster",
-  "difficulty": "driver_mvr_request_and_roster",
-  "format": "production_like_pdf",
-  "domain": "commercial_insurance_operations",
-  "problems": [
-    "high_density_long_list",
-    "production_like_layout",
-    "ocr_condition",
-    "page_breaks",
-    "multiple_tables",
-    "multi_row"
-  ],
-  "pages_estimate": 24,
-  "pdf_page_count": 24,
-  "dataset_version": "2.0.0",
-  "hf_config": "core_operations",
   "document_count": 1,
   "evidence_pattern": "single_document",
-  "ocr_md_size_bytes": 52067
+  "provenance": "Synthetic generated document. Private production references were used only for visual layout review; no production PDFs, names, account numbers, or raw customer data are included in this repository.",
+  "pages_estimate": 24,
+  "pdf_page_count": 24,
+  "hf_config": "core_operations",
+  "ocr_md_size_bytes": 72664,
+  "pdf_size_bytes": 450868,
+  "html_size_bytes": 119492,
+  "json_size_bytes": 175399,
+  "artifacts": {
+    "pdf_sha256": "136daa2af2f81181c57676969b93f3ff5c5eb903fdb051e473cd078d406e83d4",
+    "html_sha256": "4b257f1c639c30031b09a22202b7a32565d6a41525cb289e1455af87d2f6b3dd",
+    "ground_truth_sha256": "7a822ac133929af2880e248994149f85e2afa29eb30024422bcb6214bc6506cb",
+    "ocr_sha256": "dccaddc7f89ef5d2ff7b0c889329aa9a670f1070944248d8ba599134503319f0"
+  },
+  "layout_revision": {
+    "date": "2026-07-14T08:45:41.929750+00:00",
+    "purpose": "improve production-like document structure and layout variation",
+    "ocr_status": "regenerated_from_current_pdf",
+    "ocr_regenerated_at": "2026-07-14T12:25:03.034312+00:00"
+  }
 }

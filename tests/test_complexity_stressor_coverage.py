@@ -9,8 +9,9 @@ from typing import Any
 
 DATA_DIR = Path(__file__).resolve().parents[1] / "data"
 
-STRESSORS = [
+CANONICAL_STRESSORS = [
     "page_breaks",
+    "split_records",
     "multi_row",
     "duplicates",
     "large_doc",
@@ -18,7 +19,10 @@ STRESSORS = [
     "multi_column",
     "merged_cells",
     "ocr_condition",
+    "ocr_layout_condition",
     "long_range_evidence",
+    "cross_section_join",
+    "repeated_keys",
     "heterogeneous_record_list",
 ]
 
@@ -54,6 +58,12 @@ def _has_stressor_evidence(instance: dict[str, Any], stressor: str) -> tuple[boo
     if stressor == "page_breaks":
         return page_count > 1, f"{page_count} PDF pages"
 
+    if stressor == "split_records":
+        table_count = len(re.findall(r"<table\b", html, flags=re.IGNORECASE))
+        block_markers = len(re.findall(r"<br\s*/?>|continuation", html_lower))
+        ok = page_count > 1 and (table_count > 1 or block_markers > 0)
+        return ok, f"{page_count} pages; {table_count} tables; {block_markers} split-block markers"
+
     if stressor == "multi_row":
         markers = [
             'class="desc"',
@@ -85,7 +95,7 @@ def _has_stressor_evidence(instance: dict[str, Any], stressor: str) -> tuple[boo
         return bool(hits), f"duplicate/distractor markers: {hits[:6]}"
 
     if stressor == "large_doc":
-        # 2.0 includes both very high row-count docs and moderately large
+        # The release includes both very high row-count docs and moderately large
         # production-like packets where page count is the stressor.
         ok = target_count >= 500 or page_count >= 50 or (target_count >= 300 and page_count >= 40)
         return ok, f"{target_count} records; {page_count} pages"
@@ -109,10 +119,26 @@ def _has_stressor_evidence(instance: dict[str, Any], stressor: str) -> tuple[boo
         size = transcript.stat().st_size if transcript.exists() else 0
         return ok, f"OCR transcript bytes: {size}"
 
+    if stressor == "ocr_layout_condition":
+        transcript = DATA_DIR / "transcripts" / "ocr_gemini" / f"{sample_id}.md"
+        table_count = len(re.findall(r"<table\b", html, flags=re.IGNORECASE))
+        ok = transcript.exists() and transcript.stat().st_size > 0 and table_count > 1
+        return ok, f"OCR transcript present; {table_count} source tables"
+
     if stressor == "long_range_evidence":
         gap = int(instance.get("minimum_gap_pages_between_primary_and_last_evidence") or 0)
         evidence_sections = instance.get("evidence_map") or []
         return gap >= 20 and len(evidence_sections) >= 2, f"gap={gap}; sections={len(evidence_sections)}"
+
+    if stressor == "cross_section_join":
+        required_fields = {"return_id", "jurisdiction", "total_miles", "tax_due_refund"}
+        joined_rows = [row for row in records if required_fields <= set(row)]
+        return bool(joined_rows), f"{len(joined_rows)} rows contain fields from separate sections"
+
+    if stressor == "repeated_keys":
+        jurisdictions = [str(row.get("jurisdiction")) for row in records if row.get("jurisdiction")]
+        repeated = len(jurisdictions) - len(set(jurisdictions))
+        return repeated > 0, f"{repeated} repeated jurisdiction keys"
 
     if stressor == "heterogeneous_record_list":
         record_types = sorted({str(row.get("record_type")) for row in records if row.get("record_type")})
@@ -124,10 +150,13 @@ def _has_stressor_evidence(instance: dict[str, Any], stressor: str) -> tuple[boo
 def test_every_declared_complexity_stressor_has_artifact_coverage() -> None:
     manifest = _load_json(DATA_DIR / "manifest.json")
     instances = manifest["instances"]
+    stressors = list(manifest["complexity_stressors"])
+
+    assert set(stressors) == set(CANONICAL_STRESSORS)
 
     failures: list[str] = []
     coverage_counts: Counter[str] = Counter()
-    for stressor in STRESSORS:
+    for stressor in stressors:
         labeled = [instance for instance in instances if stressor in instance.get("problems", [])]
         assert labeled, f"{stressor} is declared but not assigned to any document"
 
@@ -139,7 +168,7 @@ def test_every_declared_complexity_stressor_has_artifact_coverage() -> None:
                 failures.append(f"{instance['id']} lacks evidence for {stressor}: {evidence}")
 
     assert not failures
-    assert all(coverage_counts[stressor] > 0 for stressor in STRESSORS)
+    assert all(coverage_counts[stressor] > 0 for stressor in stressors)
 
 
 def test_manifest_alias_and_instance_metadata_paths_are_current() -> None:

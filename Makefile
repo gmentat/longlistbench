@@ -41,7 +41,7 @@ generate-policy-multihop:
 	. $(VENV_DIR)/bin/activate && python benchmarks/build_instance_index.py --input data
 
 ocr:
-	. $(VENV_DIR)/bin/activate && python benchmarks/ocr_claims_pdfs.py
+	. $(VENV_DIR)/bin/activate && python benchmarks/ocr_claims_pdfs.py --ocr-engine $(OCR_ENGINE) --model $(OCR_MODEL)
 
 ocr-multihop:
 	. $(VENV_DIR)/bin/activate && python benchmarks/ocr_claims_pdfs.py --tiers multihop mixed --ocr-engine $(OCR_ENGINE) --model $(OCR_MODEL)

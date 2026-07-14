@@ -18,6 +18,7 @@ except ImportError:
 
 
 DEFAULT_REPO_ID = "kaydotai/LongListBench"
+RELEASE_VERSION = (Path(__file__).resolve().parent.parent / "VERSION").read_text(encoding="utf-8").strip()
 DEFAULT_BASELINE_REPORTS = (
     Path(__file__).resolve().parent / "results" / "codex_gpt56_sol_full_current_ocr_v2" / "evaluation_report.json",
     Path(__file__).resolve().parent / "results" / "claude_fable5_full_current_ocr_v2" / "evaluation_report.json",
@@ -27,9 +28,9 @@ DEFAULT_BASELINE_REPORTS = (
 DEFAULT_BASELINE_REPORT = DEFAULT_BASELINE_REPORTS[0]
 CONFIG_ORDER = ("core_operations", "claim_multihop", "policy_packets")
 CONFIG_DESCRIPTIONS = {
-    "core_operations": "30 production-like commercial insurance and trucking-operation PDFs with dense repeated operations, IFTA, and loss-run records.",
+    "core_operations": "26 production-like commercial insurance and trucking PDFs with dense repeated operations, IFTA, and loss-run records.",
     "claim_multihop": "3 long claim PDFs where incident records must be assembled from distant sections.",
-    "policy_packets": "3 long BOP, WC, and CGL policy packets where records must be assembled from distant sections.",
+    "policy_packets": "3 long Businessowners, Workers Compensation, and Commercial General Liability policy packets where records must be assembled from distant sections.",
 }
 
 CLAIM_TARGET_TYPES = {"loss_run_incident"}
@@ -64,10 +65,10 @@ BASELINE_REGIMES = (
     ("ifta_tax_return_inquiry_detail", "Tax inquiry detail tables"),
     ("policy_multi_hop", "Heterogeneous policy records"),
     ("ifta_multisection_return_packet", "Cross-section return joins"),
-    ("ifta_tax_return_summary", "Tax-summary scale tests"),
-    ("driver_schedule_spreadsheet_export", "Driver-schedule scale test"),
-    ("ifta_mileage_by_vehicle", "Mileage-by-vehicle scale tests"),
-    ("vehicle_schedule_spreadsheet_export", "Vehicle-schedule scale tests"),
+    ("ifta_tax_return_summary", "Tax-summary scale controls"),
+    ("driver_schedule_spreadsheet_export", "Driver-schedule scale control"),
+    ("ifta_mileage_by_vehicle", "Mileage-by-vehicle scale controls"),
+    ("vehicle_schedule_spreadsheet_export", "Vehicle-schedule scale controls"),
 )
 
 
@@ -287,7 +288,7 @@ def _baseline_section(
             f"| {presentation['label']} | {stats['total_samples']} | {stats['total_rows']:,} | "
             f"{stats['errors']} | {stats['exact_record_recall']:.1%} | "
             f"{stats['complete_documents']}/{stats['total_samples']} ({stats['complete_document_rate']:.1%}) | "
-            f"{stats['weighted_f1']:.1%} |"
+            f"{stats['weighted_f1']:.1%} | {stats['avg_f1']:.1%} |"
         )
 
     family_headers = [
@@ -310,7 +311,7 @@ def _baseline_section(
             raise ValueError(f"Baseline reports disagree on document-family coverage: {regime_key}")
         regime_rows.append(
             f"| {label} | "
-            f"{'Scale test' if regime_key in SCALE_CONTROL_REGIMES else 'Structural challenge'} | "
+            f"{'Scale control' if regime_key in SCALE_CONTROL_REGIMES else 'Structural challenge'} | "
             f"{first_regime['count']} | {first_regime['rows']:,} | "
             + " | ".join(f"{regime['exact_record_recall']:.1%}" for regime in regimes)
             + " |"
@@ -319,7 +320,7 @@ def _baseline_section(
     role_rows = []
     for role_key, role_label in (
         ("structural_challenge", "Structural challenges"),
-        ("scale_control", "Scale tests"),
+        ("scale_control", "Scale controls"),
     ):
         role_stats = []
         for baseline in baseline_list:
@@ -362,13 +363,13 @@ The release includes {len(baseline_list)} full-corpus OCR-conditioned agentic ba
 
 Strict completeness on the released OCR transcripts:
 
-| Protocol | Documents | Target records | Errors | Exact-record recall | Complete documents | Field micro-F1 |
-|---|---:|---:|---:|---:|---:|---:|
+| Protocol | Documents | Target records | Errors | Exact-record recall | Complete documents | Field micro-F1 | Field macro-F1 |
+|---|---:|---:|---:|---:|---:|---:|---:|
 {chr(10).join(overall_rows)}
 
 An exact record must match every normalized target field. A complete document must contain exactly the gold record multiset, with no missing or extra records. Record order is not scored. Field micro-F1 is retained as a secondary partial-credit diagnostic.
 
-The release distinguishes parser-friendly scale tests from structural challenges:
+The release distinguishes parser-friendly scale controls from structural challenges:
 
 | Evaluation role | Documents | Target records | {' | '.join(family_headers)} |
 |---|---:|---:|{'|'.join(['---:'] * len(family_headers))}|
@@ -380,7 +381,7 @@ Exact-record recall by extraction problem shows why aggregate scores should not 
 |---|---|---:|---:|{'|'.join(['---:'] * len(family_headers))}|
 {chr(10).join(regime_rows)}
 
-The saved predictions and reports in {links} allow the metrics to be recomputed without rerunning the models. Full-context raw-API prompting remains a lower-bound stress test rather than a practical full-corpus protocol because large outputs can hit output or latency limits. The repository also includes raw OpenAI API and OpenAI Agents SDK adapters for future protocol comparisons on this release.
+The saved predictions and reports in {links} allow the metrics to be recomputed without rerunning the models. Their run metadata binds every prediction to the manifest, transcript, field contract, prompt, runner source, model, effort, runtime version, and prediction hash. Full-context raw-API prompting remains a lower-bound stress test rather than a practical full-corpus protocol because large outputs can hit output or latency limits. The repository also includes raw OpenAI API and OpenAI Agents SDK adapters for future protocol comparisons on this release.
 
 """
 
@@ -430,6 +431,9 @@ def write_metadata_files(dataset_dir: Path, output_dir: Path) -> None:
     metadata_dir = output_dir / "metadata"
     metadata_dir.mkdir(parents=True, exist_ok=True)
     shutil.copy2(dataset_dir / "manifest.json", metadata_dir / "manifest.json")
+    numeric_baseline = dataset_dir / "ocr_numeric_fidelity_baseline.json"
+    if numeric_baseline.exists():
+        shutil.copy2(numeric_baseline, metadata_dir / numeric_baseline.name)
 
     schema_dir = output_dir / "schemas"
     schema_dir.mkdir(parents=True, exist_ok=True)
@@ -465,10 +469,14 @@ def _write_evaluation_files_for_baseline(baseline: dict[str, Any], output_dir: P
             raise FileNotFoundError(f"Missing released baseline prediction: {prediction}")
         shutil.copy2(prediction, target_dir / prediction.name)
 
-    (target_dir / "per_sample_status.tsv").write_text(
-        "\n".join(status_lines) + "\n",
-        encoding="utf-8",
-    )
+    source_status = results_dir / "per_sample_status.tsv"
+    if source_status.exists():
+        shutil.copy2(source_status, target_dir / source_status.name)
+    else:
+        (target_dir / "per_sample_status.tsv").write_text(
+            "\n".join(status_lines) + "\n",
+            encoding="utf-8",
+        )
 
     for filename in ("README.md", "evaluation_report.json", "evaluation_report.md", "run_metadata.json"):
         source = results_dir / filename
@@ -644,7 +652,7 @@ The source repository includes the reference evaluator in `benchmarks/evaluation
 
 1. **Shape.** Run your extractor on each PDF or transcript and return an object matching `ground_truth`: `{{"incidents": [...]}}` for claim multi-hop rows or `{{"records": [...]}}` for all other list families. A bare list is also accepted by the repository evaluator.
 2. **Claims matching.** Claim multi-hop incident rows are keyed by normalized `incident_number`. Strings are compared case-insensitively, dates are normalized to `MM/DD/YYYY`, claimant lists are sorted, zero-valued default financial-breakdown cells are omitted from field diagnostics, and non-zero financial breakdowns are rounded to cents. Each flattened `(incident_number, field_path, value)` tuple is one field-value diagnostic.
-3. **Generic record matching.** Operations, external loss-run, and policy rows are heterogeneous. Strings are whitespace-normalized and compared case-insensitively; dates, decimals, percentages, currency, and accounting negatives are canonicalized. Unambiguous domain labels also normalize to the published target form: region names to codes, fuel descriptions to parenthetical codes, line-of-business names to acronyms, and visible `Applies within` wrappers to their core clause scope. For field diagnostics, the evaluator greedily matches records using overlapping non-global field pairs. `record_type`, hidden row identifiers, and repeated document-level policy fields are excluded from field matching and field-pair scoring, but strict comparison uses the complete normalized public record.
+3. **Generic record matching.** Operations, external loss-run, and policy rows are heterogeneous. Strings are whitespace-normalized and compared case-insensitively; dates, decimals, percentages, currency, and accounting negatives are canonicalized. Unambiguous labels also normalize to the published target form: region names to codes, fuel descriptions to parenthetical codes, line-of-business names to acronyms, visible `Applies within` wrappers to their core clause scope, visible `Unit` prefixes in vehicle identifiers, and `Quarter Return`/`Quarterly Return` heading aliases. Extra heading context remains an error. For field diagnostics, exact records are anchored first and remaining records are matched deterministically using overlapping non-global field pairs. `record_type`, hidden row identifiers, and repeated document-level policy fields are excluded from field matching and field-pair scoring, but strict comparison uses the complete normalized public record.
 4. **Strict completeness.** An exact record must match every normalized target field. Exact-record recall is `exact_record_matches / ground_truth_count`. A document is complete only when the normalized predicted and ground-truth record multisets are identical, including duplicate multiplicity and with no extra records. Record order is not scored in this release.
 5. **Field diagnostics.** Field recall is `found_gold_field_pairs / total_gold_field_pairs`; precision is `found_field_pairs / total_pred_field_pairs`; F1 is their harmonic mean. Reports retain document-macro and corpus-micro field F1 to show partial correctness, but these are not substitutes for complete-list recovery.
 
@@ -698,15 +706,15 @@ These schemas describe the strict claim, external loss-run, multisection IFTA, a
 
 The current release includes OCR transcripts for every PDF:
 
-- `ocr_transcript`: OCR text generated from rendered PDF page images.
+- `ocr_transcript`: OCR text generated from 200-DPI rendered PDF page images with Google Gemini 3.5 Flash vision OCR through the direct Vertex AI API.
 
-OCR validation passes on all released PDFs, with 100.0% average identifier coverage, 99.9% tracked identifier-field support, and 39 records with at least one tracked identifier missing from OCR. Interpret OCR-conditioned extraction scores with this ceiling in mind: a single omitted repeated header can affect many rows that inherit that value.
+OCR validation reports 99.9% average identifier coverage and 99.9% tracked identifier-field support, with 17 records missing at least one tracked identifier. A separate audit finds 56 genuine OCR misses among 76,968 checked numeric fields with absolute value at least 10 (0.073%). The transcript is not hand-corrected; [`metadata/ocr_numeric_fidelity_baseline.json`](./metadata/ocr_numeric_fidelity_baseline.json) records the exact audited miss set. Interpret OCR-conditioned extraction scores with this ceiling in mind.
 
 If future releases add clean structural transcripts, they should be reported as a separate transcript condition rather than mixed with OCR-condition results.
 
 ## Provenance
 
-The documents are synthetic. Each sample is produced by a reproducible generation pipeline:
+The documents are synthetic. Each sample was produced by a deterministic generation workflow:
 
 1. Deterministic fixtures create the schema-shaped ground truth.
 2. Layout generators project the records into claim schedules, tables, rosters, ledgers, declarations, forms, endorsements, rating schedules, and policy conditions.
@@ -714,6 +722,8 @@ The documents are synthetic. Each sample is produced by a reproducible generatio
 4. OCR over rendered page images produces the released transcript for each PDF.
 
 Policy packets are structurally inspired by commercial insurance policy workflows, but names, values, prose, and identifiers are generated fixtures.
+
+The release packages the fixed HTML, PDF, OCR, ground-truth, and metadata artifacts needed for reproducible evaluation. The private template tooling used to create the current production-like layouts is intentionally not part of the dataset repository, so the release does not claim bit-for-bit public regeneration of every PDF.
 
 No real insureds, claimants, policies, financial accounts, or customer documents are represented. Real documents were used only as structural references for layout and packet organization.
 
@@ -732,7 +742,7 @@ LongListBench is intended for measuring long-list, layout, OCR-conditioned, and 
   title        = {{LongListBench: A Benchmark for Long-List Entity Extraction from Complex Business PDFs}},
   author       = {{Fedoruk, Anton and Shchoholiev, Serhii and Mehta, Akhil}},
   year         = {{2026}},
-  version      = {{2.0.0}},
+  version      = {{{RELEASE_VERSION}}},
   howpublished = {{\\url{{https://github.com/kaydotai/longlistbench}}}}
 }}
 ```

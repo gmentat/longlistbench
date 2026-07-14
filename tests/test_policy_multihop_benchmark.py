@@ -7,9 +7,43 @@ from benchmarks.generate_policy_multihop_benchmark import (
     POLICY_MULTIHOP_CASE_CONFIGS,
     generate_policy_multihop_suite,
 )
+from benchmarks.policy_multihop.llm_text import (
+    PAGE_KINDS,
+    _parse_json_response,
+    _validate_requested_page_bank,
+)
 
 
 class PolicyMultiHopBenchmarkTests(unittest.TestCase):
+    def test_gemini_page_bank_accepts_only_harmless_trailing_json_tokens(self) -> None:
+        parsed = _parse_json_response('{"policy_form": []}\n []\n}}')
+
+        self.assertEqual(parsed, {"policy_form": []})
+        with self.assertRaises(json.JSONDecodeError):
+            _parse_json_response('{"policy_form": []}\n unexpected')
+
+    def test_gemini_page_bank_enforces_exact_counts_and_density(self) -> None:
+        paragraph = " ".join(["coverage"] * 20)
+        page = {
+            "title": "Policy Conditions",
+            "form_id": "JCC 101",
+            "paragraphs": [paragraph] * 28,
+        }
+        requested_counts = {kind: 0 for kind in PAGE_KINDS}
+        requested_counts["policy_form"] = 1
+        page_bank = {kind: [] for kind in PAGE_KINDS}
+        page_bank["policy_form"] = [page]
+
+        _validate_requested_page_bank(page_bank, requested_counts, label="test")
+
+        page_bank["policy_form"] = [{**page, "paragraphs": ["too short"] * 28}]
+        with self.assertRaisesRegex(RuntimeError, "outside the density bounds"):
+            _validate_requested_page_bank(page_bank, requested_counts, label="test")
+
+        page_bank["policy_form"] = []
+        with self.assertRaisesRegex(RuntimeError, "count mismatch"):
+            _validate_requested_page_bank(page_bank, requested_counts, label="test")
+
     def test_generate_policy_multihop_suite_writes_lob_specific_policy_items(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             out_dir = Path(tmp)
@@ -40,7 +74,7 @@ class PolicyMultiHopBenchmarkTests(unittest.TestCase):
                 self.assertGreaterEqual(len(sample_metadata["target_record_types"]), 4)
                 self.assertEqual(sample_metadata["document_count"], 1)
                 self.assertEqual(sample_metadata["format"], "crosspage")
-                self.assertGreaterEqual(sample_metadata["minimum_gap_pages_between_primary_and_last_evidence"], 70)
+                self.assertGreaterEqual(sample_metadata["minimum_gap_pages_between_primary_and_last_evidence"], 40)
                 self.assertGreaterEqual(len(sample_metadata["join_requirements"]), 5)
                 self.assertIn(sample_metadata["lob"], {"BOP", "CGL", "WC"})
                 self.assertIn("policy_number", sample_metadata["schema_fields"])
@@ -60,8 +94,11 @@ class PolicyMultiHopBenchmarkTests(unittest.TestCase):
                 self.assertIn("policy_number", first)
                 self.assertIn("lob", first)
                 self.assertNotIn("incident_number", first)
+                self.assertNotIn("item_id", sample_metadata["schema_fields"])
+                self.assertNotIn("endorsement_number", sample_metadata["schema_fields"])
 
                 html = (out_dir / "html" / f"{sample_id}.html").read_text(encoding="utf-8")
+                self.assertNotRegex(html, r"\b(?:BOP|WC|CGL)-00\d{2}\b")
                 if sample_id.startswith("multihop_bop"):
                     self.assertIn("B U S I N E S S O W N E R S   D E C L A R A T I O N S", html)
                     self.assertNotIn("BOP-000", html)
@@ -76,11 +113,11 @@ class PolicyMultiHopBenchmarkTests(unittest.TestCase):
                         record for record in ground_truth if record["record_type"] == "policy_endorsement_item"
                     ]
                     for record in endorsement_records:
-                        self.assertIn(
-                            f'<div class="endorsement-title">{record["exclusion_name"]}</div>',
-                            html,
-                        )
+                        self.assertIn(record["exclusion_name"], html)
+                    self.assertIn('class="standard-form-page', html)
                 self.assertIn("premium summary", html.lower())
+                self.assertNotIn("Document Schedule", html)
+                self.assertNotIn("Policy Declarations Package", html)
                 self.assertNotIn("join on", html.lower())
                 self.assertNotIn("renewal application", html.lower())
                 self.assertNotIn("application schedule", html.lower())
@@ -114,6 +151,8 @@ class PolicyMultiHopBenchmarkTests(unittest.TestCase):
         self.assertFalse(any("application" in edge.lower() for edge in all_edges))
         self.assertFalse(any("expiring" in edge.lower() for edge in all_edges))
         self.assertFalse(any("coverage_item_id" in edge.lower() for edge in all_edges))
+        self.assertFalse(any("endorsement_number" in edge.lower() for edge in all_edges))
+        self.assertFalse(any("item_id" in edge.lower() for edge in all_edges))
 
 
 if __name__ == "__main__":

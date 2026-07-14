@@ -24,9 +24,14 @@ try:
     from .run_codex_cli_evaluation import (
         discover_samples,
         _all_statuses_succeeded,
+        _bind_prediction_provenance,
+        _build_workspace_provenance,
+        _resume_metadata_matches,
         load_prediction,
+        normalize_record_predictions,
         prepare_workspace,
         sandbox_profile,
+        _validate_and_normalize_predictions,
     )
 except ImportError:
     from dataset_layout import default_dataset_dir
@@ -34,9 +39,14 @@ except ImportError:
     from run_codex_cli_evaluation import (
         discover_samples,
         _all_statuses_succeeded,
+        _bind_prediction_provenance,
+        _build_workspace_provenance,
+        _resume_metadata_matches,
         load_prediction,
+        normalize_record_predictions,
         prepare_workspace,
         sandbox_profile,
+        _validate_and_normalize_predictions,
     )
 
 
@@ -140,13 +150,15 @@ def run_claude(
     timeout_seconds: int,
     model: str,
     effort: str,
+    extra_denied_paths: list[Path] | None = None,
+    runtime_version: str | None = None,
 ) -> tuple[int | str, str, dict | None]:
-    cli_version = _claude_cli_version()
+    cli_version = runtime_version or _claude_cli_version()
     prompt = (workspace / "prompt.md").read_text(encoding="utf-8")
     cmd = [
         "sandbox-exec",
         "-p",
-        sandbox_profile(repo_root),
+        sandbox_profile(repo_root, extra_denied_paths),
         "claude",
         "-p",
         "--model",
@@ -202,14 +214,16 @@ def run_sample(
     transcript: str,
     timeout_seconds: int,
     no_resume: bool,
+    attest_existing: bool,
     model_key: str,
     model: str,
     effort: str,
+    runtime_version: str,
+    existing_metadata: dict | None,
+    metadata_cli_version: str | None,
+    extra_denied_paths: list[Path],
 ) -> tuple[str, int | str, dict | None]:
     pred_path = prediction_path(output_dir, sample, transcript, model_key)
-    if pred_path.exists() and pred_path.stat().st_size > 0 and not no_resume:
-        return sample, "skip", None
-
     logs_dir = output_dir / "logs"
     logs_dir.mkdir(parents=True, exist_ok=True)
     workspace, output_file, expects_records = prepare_workspace(
@@ -218,13 +232,76 @@ def run_sample(
         transcript=transcript,
         workspace_root=workspace_root,
     )
+    expected_provenance = _build_workspace_provenance(
+        workspace=workspace,
+        output_file=output_file,
+        sample=sample,
+        transcript=transcript,
+        model_key=model_key,
+        requested_model=model,
+        effort=effort,
+        dataset_manifest_path=dataset_dir / "manifest.json",
+        runner_source_path=Path(__file__),
+        runtime_version=runtime_version,
+    )
     try:
+        if not no_resume and _resume_metadata_matches(
+            existing_metadata,
+            expected_provenance,
+            pred_path,
+        ):
+            return sample, "skip", existing_metadata
+
+        if not no_resume and attest_existing and pred_path.is_file() and pred_path.stat().st_size > 0:
+            log_path = logs_dir / f"{sample}_{transcript}_{model_key}.log"
+            if not log_path.is_file():
+                return sample, "invalid_attestation: missing Claude log", None
+            try:
+                payload = _parse_result_payload(log_path.read_text(encoding="utf-8"))
+                metadata = _metadata_from_payload(payload, model, effort)
+                raw_prediction = json.loads(pred_path.read_text(encoding="utf-8"))
+                if expects_records:
+                    normalize_record_predictions(raw_prediction)
+                else:
+                    _validate_and_normalize_predictions(raw_prediction)
+            except (OSError, ValueError, json.JSONDecodeError) as exc:
+                return sample, f"invalid_attestation: {exc}", None
+            observed_cli_version = (
+                existing_metadata.get("claude_cli_version")
+                if isinstance(existing_metadata, dict)
+                else None
+            )
+            cli_version_evidence = "per_sample"
+            if not observed_cli_version:
+                observed_cli_version = metadata_cli_version
+                cli_version_evidence = "run_metadata_write"
+            if not observed_cli_version:
+                return sample, "invalid_attestation: missing Claude CLI version", None
+            metadata["claude_cli_version"] = observed_cli_version
+            metadata["claude_cli_version_evidence"] = cli_version_evidence
+            attested_provenance = _build_workspace_provenance(
+                workspace=workspace,
+                output_file=output_file,
+                sample=sample,
+                transcript=transcript,
+                model_key=model_key,
+                requested_model=model,
+                effort=effort,
+                dataset_manifest_path=dataset_dir / "manifest.json",
+                runner_source_path=Path(__file__),
+                runtime_version=observed_cli_version,
+            )
+            metadata.update(_bind_prediction_provenance(attested_provenance, pred_path))
+            return sample, "attest", metadata
+
         status, log, metadata = run_claude(
             workspace,
             repo_root,
             timeout_seconds,
             model,
             effort,
+            extra_denied_paths,
+            runtime_version,
         )
         (logs_dir / f"{sample}_{transcript}_{model_key}.log").write_text(
             log,
@@ -233,12 +310,13 @@ def run_sample(
         if status == 0:
             predicted = load_prediction(workspace, output_file, expects_records)
             pred_path.write_text(json.dumps(predicted, indent=2), encoding="utf-8")
+            metadata.update(_bind_prediction_provenance(expected_provenance, pred_path))
         return sample, status, metadata
     finally:
         shutil.rmtree(workspace, ignore_errors=True)
 
 
-def _load_run_metadata(output_dir: Path) -> dict:
+def _load_run_metadata_payload(output_dir: Path) -> dict:
     path = output_dir / RUN_METADATA_FILE
     if not path.exists():
         return {}
@@ -246,7 +324,11 @@ def _load_run_metadata(output_dir: Path) -> dict:
         payload = json.loads(path.read_text(encoding="utf-8"))
     except (OSError, json.JSONDecodeError):
         return {}
-    return payload.get("samples") or {}
+    return payload if isinstance(payload, dict) else {}
+
+
+def _load_run_metadata(output_dir: Path) -> dict:
+    return _load_run_metadata_payload(output_dir).get("samples") or {}
 
 
 def _write_run_metadata(
@@ -257,6 +339,8 @@ def _write_run_metadata(
     model_key: str,
     requested_model: str,
     effort: str,
+    extra_denied_paths: list[Path] | None = None,
+    runtime_version: str | None = None,
 ) -> None:
     payload = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
@@ -265,14 +349,17 @@ def _write_run_metadata(
         "requested_model": requested_model,
         "effort": effort,
         "transcript": transcript,
-        "cli_version_observed_at_metadata_write": _claude_cli_version(),
+        "cli_version_observed_at_metadata_write": runtime_version or _claude_cli_version(),
         "authentication": "Claude subscription; credentials are not stored",
+        "additional_denied_paths": [
+            str(path.resolve()) for path in extra_denied_paths or []
+        ],
         "samples": sample_metadata,
     }
-    (output_dir / RUN_METADATA_FILE).write_text(
-        json.dumps(payload, indent=2) + "\n",
-        encoding="utf-8",
-    )
+    path = output_dir / RUN_METADATA_FILE
+    temporary = path.with_suffix(".tmp")
+    temporary.write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8")
+    temporary.replace(path)
 
 
 def main() -> int:
@@ -283,10 +370,21 @@ def main() -> int:
     parser.add_argument("--timeout-seconds", type=int, default=1800)
     parser.add_argument("--workspace-root", default="/tmp/longlistbench-claude-workspaces")
     parser.add_argument("--no-resume", action="store_true")
+    parser.add_argument(
+        "--attest-existing",
+        action="store_true",
+        help="Attest legacy predictions only when their saved Claude result logs match the requested model",
+    )
     parser.add_argument("--workers", type=int, default=1, help="Number of samples to run in parallel")
     parser.add_argument("--model-key", default=DEFAULT_MODEL_KEY, help="Offline scorer model key")
     parser.add_argument("--model", default=DEFAULT_CLAUDE_MODEL, help="Claude model slug")
     parser.add_argument("--effort", default=DEFAULT_CLAUDE_EFFORT, help="Claude effort level")
+    parser.add_argument(
+        "--deny-path",
+        action="append",
+        default=[],
+        help="Additional host path to deny to the Claude process; may be repeated",
+    )
     args = parser.parse_args()
 
     if shutil.which("sandbox-exec") is None:
@@ -295,6 +393,9 @@ def main() -> int:
         raise SystemExit("claude is required for Claude Code CLI runs")
     if args.model_key not in MODELS:
         raise SystemExit(f"Unknown offline scorer model key: {args.model_key}")
+    runtime_version = _claude_cli_version()
+    if not runtime_version:
+        raise SystemExit("Unable to determine Claude CLI version")
 
     repo_root = Path(__file__).resolve().parents[1]
     dataset_dir = default_dataset_dir()
@@ -302,10 +403,13 @@ def main() -> int:
     output_dir.mkdir(parents=True, exist_ok=True)
     workspace_root = Path(args.workspace_root)
     workspace_root.mkdir(parents=True, exist_ok=True)
+    extra_denied_paths = [Path(path) for path in args.deny_path]
 
     samples = discover_samples(dataset_dir, args.transcript, args.samples)
     statuses: list[tuple[str, int | str]] = []
-    sample_metadata = _load_run_metadata(output_dir)
+    initial_run_metadata = _load_run_metadata_payload(output_dir)
+    sample_metadata = dict(initial_run_metadata.get("samples") or {})
+    metadata_cli_version = initial_run_metadata.get("cli_version_observed_at_metadata_write")
     worker_count = max(1, args.workers)
 
     def record_result(result: tuple[str, int | str, dict | None]) -> None:
@@ -320,6 +424,8 @@ def main() -> int:
                 model_key=args.model_key,
                 requested_model=args.model,
                 effort=args.effort,
+                runtime_version=runtime_version,
+                extra_denied_paths=extra_denied_paths,
             )
         print(f"[DONE] {args.model_key} {sample_id} -> {status}", flush=True)
 
@@ -336,9 +442,14 @@ def main() -> int:
                     transcript=args.transcript,
                     timeout_seconds=args.timeout_seconds,
                     no_resume=args.no_resume,
+                    attest_existing=args.attest_existing,
                     model_key=args.model_key,
                     model=args.model,
                     effort=args.effort,
+                    runtime_version=runtime_version,
+                    existing_metadata=sample_metadata.get(sample),
+                    metadata_cli_version=metadata_cli_version,
+                    extra_denied_paths=extra_denied_paths,
                 )
             )
     else:
@@ -356,9 +467,14 @@ def main() -> int:
                     transcript=args.transcript,
                     timeout_seconds=args.timeout_seconds,
                     no_resume=args.no_resume,
+                    attest_existing=args.attest_existing,
                     model_key=args.model_key,
                     model=args.model,
                     effort=args.effort,
+                    runtime_version=runtime_version,
+                    existing_metadata=sample_metadata.get(sample),
+                    metadata_cli_version=metadata_cli_version,
+                    extra_denied_paths=extra_denied_paths,
                 )
                 future_to_sample[future] = sample
 
@@ -384,6 +500,8 @@ def main() -> int:
         model_key=args.model_key,
         requested_model=args.model,
         effort=args.effort,
+        extra_denied_paths=extra_denied_paths,
+        runtime_version=runtime_version,
     )
 
     results = run_evaluation_from_saved_predictions(

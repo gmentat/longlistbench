@@ -56,11 +56,53 @@ def test_cli_version_is_labeled_as_metadata_write_observation(tmp_path, monkeypa
         model_key="claude_opus48",
         requested_model="claude-opus-4-8",
         effort="xhigh",
+        extra_denied_paths=[tmp_path / "duplicate-data"],
     )
 
     payload = json.loads((tmp_path / runner.RUN_METADATA_FILE).read_text(encoding="utf-8"))
     assert payload["cli_version_observed_at_metadata_write"] == "2.1.207 (Claude Code)"
+    assert payload["additional_denied_paths"] == [str((tmp_path / "duplicate-data").resolve())]
     assert "claude_cli_version" not in payload
+
+
+def test_run_claude_denies_additional_paths(tmp_path, monkeypatch) -> None:
+    (tmp_path / "prompt.md").write_text("extract", encoding="utf-8")
+    captured = {}
+
+    def fake_run(cmd, **kwargs):
+        captured["cmd"] = cmd
+        return type(
+            "Completed",
+            (),
+            {
+                "returncode": 0,
+                "stdout": json.dumps(
+                    {
+                        "type": "result",
+                        "subtype": "success",
+                        "is_error": False,
+                        "modelUsage": {"claude-opus-4-8": {}},
+                    }
+                ),
+            },
+        )()
+
+    monkeypatch.setattr(runner.subprocess, "run", fake_run)
+    monkeypatch.setattr(runner, "_claude_cli_version", lambda: "test")
+
+    status, _output, _metadata = runner.run_claude(
+        tmp_path,
+        tmp_path / "repo",
+        60,
+        "claude-opus-4-8",
+        "xhigh",
+        [tmp_path / "duplicate-data"],
+    )
+
+    profile = captured["cmd"][captured["cmd"].index("-p") + 1]
+    assert status == 0
+    assert f'(subpath "{(tmp_path / "repo").resolve()}")' in profile
+    assert f'(subpath "{(tmp_path / "duplicate-data").resolve()}")' in profile
 
 
 def test_metadata_rejects_unexpected_inference_model() -> None:

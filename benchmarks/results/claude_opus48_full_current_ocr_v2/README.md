@@ -1,44 +1,45 @@
-# Released Claude OCR Baseline
+# Released Opus 4.8 OCR Baseline
 
-This directory contains the saved predictions and recomputable report for the LongListBench 2.0 Claude baseline.
+This directory contains the saved predictions and recomputable LongListBench 2.1 report for Opus 4.8.
 
 ## Protocol
 
-- Input: one released Gemini OCR transcript per run.
-- Extractor: Claude Code CLI invoking `claude-opus-4-8` with `--effort xhigh` on July 12, 2026. `run_metadata.json` records the CLI version observed when metadata was finalized; it is not asserted as a per-call version.
-- Authentication: Claude Max subscription. The CLI's per-run dollar values are API-equivalent estimates, not billed API cost.
-- Isolation: each run used a temporary document workspace, and a macOS sandbox denied the benchmark repository. The prompt prohibited other host files. This was repository isolation, not a host-wide filesystem allowlist. Ground truth, target values and counts, and generator code were not copied into the workspace. Claude Code safe mode disabled project instructions, skills, plugins, hooks, and MCP servers.
-- Contract: claim runs received the published claim schema. Generic-record runs received the public output shape plus sample-specific field names and record groups derived from the ground-truth schema structure. They did not receive field values.
+- Input: one released Gemini OCR transcript per extraction.
+- Extractor: Claude Code CLI `2.1.209` invoking `claude-opus-4-8` at xhigh effort on July 14, 2026.
+- Authentication: Claude subscription. Dollar values in `run_metadata.json` are API-equivalent estimates, not billed subscription cost.
+- Isolation: each extraction used a temporary workspace, and a macOS sandbox denied the benchmark repository. Ground truth, target values and counts, and generator code were absent. Claude Code safe mode disabled project instructions, skills, plugins, hooks, and MCP servers.
+- Contract: claim runs received the published claim schema. Other runs received the public output shape plus sample-specific field names and record groups, but no field values or target counts.
 - Tools: the agent could inspect the transcript, write temporary parsing code, validate its output, and save JSON.
-- Scoring: predictions were replayed through the repository evaluator against `data/ground_truth/`, with documented string, date, decimal, and domain-label canonicalization.
+- Scoring: predictions were replayed through the repository evaluator with the documented normalization rules.
 
-The runner verified that every extraction call reported `claude-opus-4-8`. Claude Code also reported a small Haiku 4.5 routing call; the extraction model remained Opus 4.8.
+Every extraction reported `claude-opus-4-8` in model usage. Claude Code also reported auxiliary Haiku 4.5 routing, so this is a Claude Code/Opus 4.8 protocol baseline rather than a raw-model measurement.
 
 ## Result
 
-| Documents | Target records | Errors | Exact-record recall | Complete documents | Field micro-F1 |
-|---:|---:|---:|---:|---:|---:|
-| 36 | 33,450 | 0 | 86.9% | 13/36 (36.1%) | 98.6% |
+| Documents | Target records | Errors | Exact-record recall | Complete documents | Field micro-F1 | Field macro-F1 |
+|---:|---:|---:|---:|---:|---:|---:|
+| 32 | 29,599 | 0 | 93.6% | 7/32 (21.9%) | 98.8% | 98.4% |
 
 Exact-record recall requires every normalized target field to match. Complete-document success requires an identical record multiset with no missing or extra records; source order is not scored.
 
 ## Artifacts
 
-- `*_predicted.json`: 36 saved per-document predictions.
+- `*_predicted.json`: 32 saved per-document predictions.
 - `evaluation_report.json`: machine-readable aggregate and per-document metrics.
 - `evaluation_report.md`: human-readable report.
-- `per_sample_status.tsv`: run completion status.
-- `run_metadata.json`: requested/observed models, effort, CLI version, duration, token usage, and API-equivalent cost estimate for each document.
+- `per_sample_status.tsv`: provenance status for every prediction. `attest` means the saved result passed model-log, input, manifest, runner-source, and prediction-hash verification before offline replay.
+- `run_metadata.json`: requested and observed models, effort, CLI version, transcript and contract fingerprints, prediction hashes, duration, token usage, and API-equivalent cost estimate for each document.
 
-Debug logs are intentionally excluded because they contain verbose agent reasoning and are not needed to recompute the scores.
+Debug logs are excluded because they contain verbose agent traces and are not needed to recompute the scores.
 
 ## Reproduce
 
-From the repository root, with Claude Code authenticated to a subscription:
-
 ```bash
-uv run python benchmarks/run_claude_cli_evaluation.py \
+python benchmarks/run_claude_cli_evaluation.py \
   --output-dir benchmarks/results/claude_opus48_full_current_ocr_v2 \
+  --model-key claude_opus48 \
+  --model claude-opus-4-8 \
+  --effort xhigh \
   --workers 4 \
   --timeout-seconds 3600
 ```
@@ -46,6 +47,7 @@ uv run python benchmarks/run_claude_cli_evaluation.py \
 ## Verify
 
 ```bash
-uv run python benchmarks/check_evaluation_report.py \
-  --results-dir benchmarks/results/claude_opus48_full_current_ocr_v2
+python benchmarks/check_evaluation_report.py \
+  --results-dir benchmarks/results/claude_opus48_full_current_ocr_v2 \
+  --require-full-corpus
 ```

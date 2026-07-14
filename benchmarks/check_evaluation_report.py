@@ -1,4 +1,6 @@
 import argparse
+from collections import Counter, defaultdict
+import hashlib
 import json
 import sys
 from datetime import datetime
@@ -20,6 +22,7 @@ try:
         uses_record_evaluator,
     )
     from .dataset_layout import default_dataset_dir, ground_truth_path
+    from .evaluation_roles import evaluation_role
 except ImportError:
     from evaluation_metrics import (
         evaluate_extraction,
@@ -28,6 +31,7 @@ except ImportError:
         uses_record_evaluator,
     )
     from dataset_layout import default_dataset_dir, ground_truth_path
+    from evaluation_roles import evaluation_role
 
 
 _LOSS_RUN_FIELDS = set(LossRunIncident.model_fields.keys())
@@ -109,11 +113,15 @@ def _compare_metrics(
 ) -> list[str]:
     errors: list[str] = []
 
-    for key, expected_value in expected.items():
-        if key not in actual:
-            errors.append(f"{sample} / {model}: missing key '{key}' in recomputed metrics")
-            continue
+    missing_keys = sorted(set(actual) - set(expected))
+    unexpected_keys = sorted(set(expected) - set(actual))
+    for key in missing_keys:
+        errors.append(f"{sample} / {model}: report metrics missing key '{key}'")
+    for key in unexpected_keys:
+        errors.append(f"{sample} / {model}: report metrics has unexpected key '{key}'")
 
+    for key in sorted(set(expected) & set(actual)):
+        expected_value = expected[key]
         actual_value = actual[key]
 
         if key in {"recall", "precision", "f1"}:
@@ -138,8 +146,108 @@ def _compare_metrics(
     return errors
 
 
-def _recompute_model_stats(detailed_results: list[dict[str, Any]]) -> dict[str, Any]:
+def _full_corpus_coverage_errors(
+    detailed_results: list[dict[str, Any]],
+    *,
+    manifest_instances: list[dict[str, Any]],
+) -> list[str]:
+    expected = Counter(str(instance["id"]) for instance in manifest_instances)
+    grouped: dict[tuple[str, str], Counter[str]] = defaultdict(Counter)
+    for entry in detailed_results:
+        grouped[(str(entry["model"]), str(entry.get("transcript", "ocr")))][
+            str(entry["sample"])
+        ] += 1
+
+    errors: list[str] = []
+    for (model, transcript), actual in sorted(grouped.items()):
+        if actual == expected:
+            continue
+        missing = sorted((expected - actual).elements())
+        extra = sorted((actual - expected).elements())
+        errors.append(
+            f"{model} [{transcript}]: full-corpus sample coverage mismatch "
+            f"(missing={missing}, extra_or_duplicate={extra})"
+        )
+    return errors
+
+
+def _new_group_stats() -> dict[str, Any]:
+    return {
+        "count": 0,
+        "rows": 0,
+        "pred_rows": 0,
+        "exact_record_matches": 0,
+        "complete_documents": 0,
+        "f1_sum": 0.0,
+        "recall_sum": 0.0,
+        "found_sum": 0,
+        "gold_pairs_sum": 0,
+        "pred_pairs_sum": 0,
+    }
+
+
+def _add_metrics_to_group(group: dict[str, Any], metrics: dict[str, Any]) -> None:
+    group["count"] += 1
+    group["rows"] += int(metrics.get("ground_truth_count", 0))
+    group["pred_rows"] += int(metrics.get("predicted_count", 0))
+    group["exact_record_matches"] += int(metrics.get("exact_record_matches", 0))
+    group["complete_documents"] += int(bool(metrics.get("complete_document", False)))
+    group["f1_sum"] += float(metrics.get("f1", 0.0))
+    group["recall_sum"] += float(metrics.get("recall", 0.0))
+    group["found_sum"] += int(metrics.get("found", 0))
+    group["gold_pairs_sum"] += int(metrics.get("total_gold_field_pairs", 0))
+    group["pred_pairs_sum"] += int(metrics.get("total_pred_field_pairs", 0))
+
+
+def _finalize_group_stats(groups: dict[str, dict[str, Any]]) -> None:
+    for group in groups.values():
+        count = group["count"]
+        rows = group["rows"]
+        pred_rows = group["pred_rows"]
+        exact_matches = group["exact_record_matches"]
+        gold_pairs = group["gold_pairs_sum"]
+        pred_pairs = group["pred_pairs_sum"]
+        found = group["found_sum"]
+        group["avg_f1"] = group["f1_sum"] / count if count else 0.0
+        group["avg_recall"] = group["recall_sum"] / count if count else 0.0
+        group["exact_record_recall"] = exact_matches / rows if rows else 0.0
+        group["exact_record_precision"] = exact_matches / pred_rows if pred_rows else 0.0
+        exact_denominator = group["exact_record_precision"] + group["exact_record_recall"]
+        group["exact_record_f1"] = (
+            2 * group["exact_record_precision"] * group["exact_record_recall"] / exact_denominator
+            if exact_denominator
+            else 0.0
+        )
+        group["complete_document_rate"] = group["complete_documents"] / count if count else 0.0
+        group["weighted_recall"] = found / gold_pairs if gold_pairs else 0.0
+        group["weighted_precision"] = found / pred_pairs if pred_pairs else 0.0
+        field_denominator = group["weighted_precision"] + group["weighted_recall"]
+        group["weighted_f1"] = (
+            2 * group["weighted_precision"] * group["weighted_recall"] / field_denominator
+            if field_denominator
+            else 0.0
+        )
+
+
+def _manifest_metadata_by_sample(claims_dir: Path) -> dict[str, dict[str, Any]]:
+    manifest_path = claims_dir / "manifest.json"
+    if not manifest_path.exists():
+        return {}
+    manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    return {
+        str(instance["id"]): instance
+        for instance in manifest.get("instances", [])
+        if instance.get("id")
+    }
+
+
+def _recompute_model_stats(
+    detailed_results: list[dict[str, Any]],
+    *,
+    claims_dir: Path,
+) -> dict[str, Any]:
     model_stats: dict[str, Any] = {}
+    metadata_by_sample = _manifest_metadata_by_sample(claims_dir)
 
     for r in detailed_results:
         model = r["model"]
@@ -159,10 +267,16 @@ def _recompute_model_stats(detailed_results: list[dict[str, Any]]) -> dict[str, 
                 "total_gold_field_pairs": 0,
                 "total_pred_field_pairs": 0,
                 "total_rows": 0,
+                "total_pred_rows": 0,
+                "total_exact_record_matches": 0,
+                "complete_documents": 0,
                 "errors": 0,
                 "by_tier": {},
                 "by_format": {},
                 "by_transcript": {},
+                "by_complexity_regime": {},
+                "by_evaluation_role": {},
+                "by_stressor": {},
             }
 
         stats = model_stats[model]
@@ -174,62 +288,34 @@ def _recompute_model_stats(detailed_results: list[dict[str, Any]]) -> dict[str, 
         stats["total_gold_field_pairs"] += int(metrics.get("total_gold_field_pairs", 0))
         stats["total_pred_field_pairs"] += int(metrics.get("total_pred_field_pairs", 0))
         stats["total_rows"] += int(metrics.get("ground_truth_count", 0))
+        stats["total_pred_rows"] += int(metrics.get("predicted_count", 0))
+        stats["total_exact_record_matches"] += int(metrics.get("exact_record_matches", 0))
+        stats["complete_documents"] += int(bool(metrics.get("complete_document", False)))
         if error:
             stats["errors"] += 1
 
-        if tier not in stats["by_tier"]:
-            stats["by_tier"][tier] = {
-                "count": 0,
-                "rows": 0,
-                "f1_sum": 0.0,
-                "recall_sum": 0.0,
-                "found_sum": 0,
-                "gold_pairs_sum": 0,
-                "pred_pairs_sum": 0,
-            }
-        stats["by_tier"][tier]["count"] += 1
-        stats["by_tier"][tier]["rows"] += int(metrics.get("ground_truth_count", 0))
-        stats["by_tier"][tier]["f1_sum"] += float(metrics.get("f1", 0.0))
-        stats["by_tier"][tier]["recall_sum"] += float(metrics.get("recall", 0.0))
-        stats["by_tier"][tier]["found_sum"] += int(metrics.get("found", 0))
-        stats["by_tier"][tier]["gold_pairs_sum"] += int(metrics.get("total_gold_field_pairs", 0))
-        stats["by_tier"][tier]["pred_pairs_sum"] += int(metrics.get("total_pred_field_pairs", 0))
+        _add_metrics_to_group(stats["by_tier"].setdefault(tier, _new_group_stats()), metrics)
+        _add_metrics_to_group(stats["by_format"].setdefault(fmt, _new_group_stats()), metrics)
+        _add_metrics_to_group(
+            stats["by_transcript"].setdefault(transcript, _new_group_stats()), metrics
+        )
 
-        if fmt not in stats["by_format"]:
-            stats["by_format"][fmt] = {
-                "count": 0,
-                "rows": 0,
-                "f1_sum": 0.0,
-                "recall_sum": 0.0,
-                "found_sum": 0,
-                "gold_pairs_sum": 0,
-                "pred_pairs_sum": 0,
-            }
-        stats["by_format"][fmt]["count"] += 1
-        stats["by_format"][fmt]["rows"] += int(metrics.get("ground_truth_count", 0))
-        stats["by_format"][fmt]["f1_sum"] += float(metrics.get("f1", 0.0))
-        stats["by_format"][fmt]["recall_sum"] += float(metrics.get("recall", 0.0))
-        stats["by_format"][fmt]["found_sum"] += int(metrics.get("found", 0))
-        stats["by_format"][fmt]["gold_pairs_sum"] += int(metrics.get("total_gold_field_pairs", 0))
-        stats["by_format"][fmt]["pred_pairs_sum"] += int(metrics.get("total_pred_field_pairs", 0))
-
-        if transcript not in stats["by_transcript"]:
-            stats["by_transcript"][transcript] = {
-                "count": 0,
-                "rows": 0,
-                "f1_sum": 0.0,
-                "recall_sum": 0.0,
-                "found_sum": 0,
-                "gold_pairs_sum": 0,
-                "pred_pairs_sum": 0,
-            }
-        stats["by_transcript"][transcript]["count"] += 1
-        stats["by_transcript"][transcript]["rows"] += int(metrics.get("ground_truth_count", 0))
-        stats["by_transcript"][transcript]["f1_sum"] += float(metrics.get("f1", 0.0))
-        stats["by_transcript"][transcript]["recall_sum"] += float(metrics.get("recall", 0.0))
-        stats["by_transcript"][transcript]["found_sum"] += int(metrics.get("found", 0))
-        stats["by_transcript"][transcript]["gold_pairs_sum"] += int(metrics.get("total_gold_field_pairs", 0))
-        stats["by_transcript"][transcript]["pred_pairs_sum"] += int(metrics.get("total_pred_field_pairs", 0))
+        metadata = metadata_by_sample.get(str(r["sample"]), {})
+        complexity_regime = str(metadata.get("complexity_regime") or metadata.get("difficulty") or tier)
+        _add_metrics_to_group(
+            stats["by_complexity_regime"].setdefault(complexity_regime, _new_group_stats()),
+            metrics,
+        )
+        _add_metrics_to_group(
+            stats["by_evaluation_role"].setdefault(
+                evaluation_role(complexity_regime), _new_group_stats()
+            ),
+            metrics,
+        )
+        for stressor in sorted(set(metadata.get("problems") or [])):
+            _add_metrics_to_group(
+                stats["by_stressor"].setdefault(str(stressor), _new_group_stats()), metrics
+            )
 
     for stats in model_stats.values():
         n = stats["total_samples"]
@@ -239,6 +325,17 @@ def _recompute_model_stats(detailed_results: list[dict[str, Any]]) -> dict[str, 
         total_found = stats["total_found"]
         total_gold = stats["total_gold_field_pairs"]
         total_pred = stats["total_pred_field_pairs"]
+        exact_matches = stats["total_exact_record_matches"]
+        pred_rows = stats["total_pred_rows"]
+        stats["exact_record_recall"] = exact_matches / stats["total_rows"] if stats["total_rows"] else 0.0
+        stats["exact_record_precision"] = exact_matches / pred_rows if pred_rows else 0.0
+        exact_denominator = stats["exact_record_precision"] + stats["exact_record_recall"]
+        stats["exact_record_f1"] = (
+            2 * stats["exact_record_precision"] * stats["exact_record_recall"] / exact_denominator
+            if exact_denominator
+            else 0.0
+        )
+        stats["complete_document_rate"] = stats["complete_documents"] / n if n else 0.0
         stats["weighted_recall"] = total_found / total_gold if total_gold > 0 else 0.0
         stats["weighted_precision"] = total_found / total_pred if total_pred > 0 else 0.0
         stats["weighted_f1"] = (
@@ -246,47 +343,15 @@ def _recompute_model_stats(detailed_results: list[dict[str, Any]]) -> dict[str, 
             if (stats["weighted_precision"] + stats["weighted_recall"]) > 0 else 0.0
         )
 
-        for tier_stats in stats["by_tier"].values():
-            c = tier_stats["count"]
-            tier_stats["avg_f1"] = tier_stats["f1_sum"] / c if c > 0 else 0.0
-            tier_stats["avg_recall"] = tier_stats["recall_sum"] / c if c > 0 else 0.0
-            gold_pairs = tier_stats["gold_pairs_sum"]
-            pred_pairs = tier_stats["pred_pairs_sum"]
-            found_sum = tier_stats["found_sum"]
-            tier_stats["weighted_recall"] = found_sum / gold_pairs if gold_pairs > 0 else 0.0
-            tier_stats["weighted_precision"] = found_sum / pred_pairs if pred_pairs > 0 else 0.0
-            tier_stats["weighted_f1"] = (
-                2 * tier_stats["weighted_precision"] * tier_stats["weighted_recall"] / (tier_stats["weighted_precision"] + tier_stats["weighted_recall"])
-                if (tier_stats["weighted_precision"] + tier_stats["weighted_recall"]) > 0 else 0.0
-            )
-
-        for fmt_stats in stats["by_format"].values():
-            c = fmt_stats["count"]
-            fmt_stats["avg_f1"] = fmt_stats["f1_sum"] / c if c > 0 else 0.0
-            fmt_stats["avg_recall"] = fmt_stats["recall_sum"] / c if c > 0 else 0.0
-            gold_pairs = fmt_stats["gold_pairs_sum"]
-            pred_pairs = fmt_stats["pred_pairs_sum"]
-            found_sum = fmt_stats["found_sum"]
-            fmt_stats["weighted_recall"] = found_sum / gold_pairs if gold_pairs > 0 else 0.0
-            fmt_stats["weighted_precision"] = found_sum / pred_pairs if pred_pairs > 0 else 0.0
-            fmt_stats["weighted_f1"] = (
-                2 * fmt_stats["weighted_precision"] * fmt_stats["weighted_recall"] / (fmt_stats["weighted_precision"] + fmt_stats["weighted_recall"])
-                if (fmt_stats["weighted_precision"] + fmt_stats["weighted_recall"]) > 0 else 0.0
-            )
-
-        for transcript_stats in stats["by_transcript"].values():
-            c = transcript_stats["count"]
-            transcript_stats["avg_f1"] = transcript_stats["f1_sum"] / c if c > 0 else 0.0
-            transcript_stats["avg_recall"] = transcript_stats["recall_sum"] / c if c > 0 else 0.0
-            gold_pairs = transcript_stats["gold_pairs_sum"]
-            pred_pairs = transcript_stats["pred_pairs_sum"]
-            found_sum = transcript_stats["found_sum"]
-            transcript_stats["weighted_recall"] = found_sum / gold_pairs if gold_pairs > 0 else 0.0
-            transcript_stats["weighted_precision"] = found_sum / pred_pairs if pred_pairs > 0 else 0.0
-            transcript_stats["weighted_f1"] = (
-                2 * transcript_stats["weighted_precision"] * transcript_stats["weighted_recall"] / (transcript_stats["weighted_precision"] + transcript_stats["weighted_recall"])
-                if (transcript_stats["weighted_precision"] + transcript_stats["weighted_recall"]) > 0 else 0.0
-            )
+        for group_key in (
+            "by_tier",
+            "by_format",
+            "by_transcript",
+            "by_complexity_regime",
+            "by_evaluation_role",
+            "by_stressor",
+        ):
+            _finalize_group_stats(stats[group_key])
 
     return model_stats
 
@@ -323,9 +388,16 @@ def _compare_model_stats(
             "total_gold_field_pairs",
             "total_pred_field_pairs",
             "total_rows",
+            "total_pred_rows",
+            "total_exact_record_matches",
+            "complete_documents",
             "avg_f1",
             "avg_recall",
             "avg_precision",
+            "exact_record_recall",
+            "exact_record_precision",
+            "exact_record_f1",
+            "complete_document_rate",
             "weighted_f1",
             "weighted_recall",
             "weighted_precision",
@@ -348,7 +420,14 @@ def _compare_model_stats(
                         f"model_stats[{model}].{key} mismatch (report={ev!r}, recomputed={av!r})"
                     )
 
-        for group_key in ["by_tier", "by_format", "by_transcript"]:
+        for group_key in [
+            "by_tier",
+            "by_format",
+            "by_transcript",
+            "by_complexity_regime",
+            "by_evaluation_role",
+            "by_stressor",
+        ]:
             if group_key == "by_transcript" and group_key not in e:
                 continue
             e_group = e.get(group_key) or {}
@@ -365,6 +444,9 @@ def _compare_model_stats(
                 for stat_key in [
                     "count",
                     "rows",
+                    "pred_rows",
+                    "exact_record_matches",
+                    "complete_documents",
                     "f1_sum",
                     "recall_sum",
                     "found_sum",
@@ -372,6 +454,10 @@ def _compare_model_stats(
                     "pred_pairs_sum",
                     "avg_f1",
                     "avg_recall",
+                    "exact_record_recall",
+                    "exact_record_precision",
+                    "exact_record_f1",
+                    "complete_document_rate",
                     "weighted_f1",
                     "weighted_recall",
                     "weighted_precision",
@@ -416,6 +502,11 @@ def main() -> int:
         default=None,
     )
     parser.add_argument("--tolerance", type=float, default=1e-12)
+    parser.add_argument(
+        "--require-full-corpus",
+        action="store_true",
+        help="Require each model/transcript group to contain every manifest sample exactly once",
+    )
 
     args = parser.parse_args()
 
@@ -435,6 +526,18 @@ def main() -> int:
 
     report = json.loads(report_json.read_text(encoding="utf-8"))
 
+    manifest_file = claims_dir / "manifest.json"
+    manifest = None
+    if manifest_file.exists():
+        manifest = json.loads(manifest_file.read_text(encoding="utf-8"))
+        current_manifest_hash = hashlib.sha256(manifest_file.read_bytes()).hexdigest()
+        reported_manifest_hash = (report.get("dataset") or {}).get("manifest_sha256")
+        if reported_manifest_hash != current_manifest_hash:
+            errors.append(
+                "dataset manifest hash mismatch "
+                f"(report={reported_manifest_hash!r}, current={current_manifest_hash!r})"
+            )
+
     detailed_results = report.get("detailed_results")
     model_stats = report.get("model_stats")
 
@@ -445,7 +548,19 @@ def main() -> int:
         print("Invalid report: missing model_stats")
         return 2
 
-    for entry in detailed_results:
+    if args.require_full_corpus:
+        if not manifest:
+            errors.append(f"Cannot verify full-corpus coverage without {manifest_file}")
+        else:
+            errors.extend(
+                _full_corpus_coverage_errors(
+                    detailed_results,
+                    manifest_instances=manifest.get("instances") or [],
+                )
+            )
+
+    recomputed_detailed_results = [dict(entry) for entry in detailed_results]
+    for entry_index, entry in enumerate(detailed_results):
         model = entry["model"]
         sample = entry["sample"]
         transcript = entry.get("transcript", "ocr")
@@ -476,6 +591,7 @@ def main() -> int:
             continue
 
         actual_metrics = _evaluate_predictions_for_ground_truth(predicted, ground_truth)
+        recomputed_detailed_results[entry_index]["metrics"] = actual_metrics
         expected_metrics = entry.get("metrics") or {}
 
         errors.extend(
@@ -488,7 +604,10 @@ def main() -> int:
             )
         )
 
-    recomputed_model_stats = _recompute_model_stats(detailed_results)
+    recomputed_model_stats = _recompute_model_stats(
+        recomputed_detailed_results,
+        claims_dir=claims_dir,
+    )
     errors.extend(
         _compare_model_stats(
             expected=model_stats,

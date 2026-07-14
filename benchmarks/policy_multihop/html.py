@@ -469,6 +469,125 @@ p {{ line-height: 1.26; margin: 3px 0 5px; }}
   position: absolute;
   right: 0.32in;
 }}
+.standard-form-page {{
+  break-after: page;
+  color: #111;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 9.6px;
+  height: 9.95in;
+  line-height: 1.24;
+  min-height: 9.95in;
+  overflow: hidden;
+  padding: 0.08in 0.24in 0.18in;
+  position: relative;
+}}
+.standard-form-page:last-child {{ break-after: auto; }}
+.standard-form-page.cgl-form {{ font-family: Arial, Helvetica, sans-serif; }}
+.standard-form-page.generated-prose-form {{
+  font-size: 11.6px;
+  line-height: 1.34;
+}}
+.standard-form-page.generated-prose-form .standard-form-columns p {{ margin-bottom: 5px; }}
+.standard-form-page.generated-prose-form.notice-form,
+.standard-form-page.generated-prose-form.billing-form {{
+  font-size: 11.1px;
+  line-height: 1.3;
+}}
+.standard-form-page.generated-prose-form.notice-form .standard-form-columns p,
+.standard-form-page.generated-prose-form.billing-form .standard-form-columns p {{ margin-bottom: 4px; }}
+.standard-form-page.generated-endorsement-form {{
+  font-size: 10.9px;
+  line-height: 1.3;
+}}
+.standard-form-page.generated-endorsement-form .standard-form-columns p {{ margin-bottom: 4.5px; }}
+.standard-form-masthead {{
+  align-items: flex-start;
+  border-bottom: 1.5px solid #111;
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  justify-content: space-between;
+  margin-bottom: 0.15in;
+  padding: 0 0 0.08in;
+}}
+.standard-carrier {{
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}}
+.standard-policy-ref {{
+  font-size: 8px;
+  line-height: 1.3;
+  text-align: right;
+}}
+.standard-form-title {{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: 0.025em;
+  margin: 0.12in 0 0.12in;
+  text-align: center;
+  text-transform: uppercase;
+}}
+.standard-form-intro {{
+  border-bottom: 1px solid #555;
+  border-top: 1px solid #555;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 8.2px;
+  margin-bottom: 0.14in;
+  padding: 0.07in 0;
+}}
+.standard-facts {{
+  display: grid;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 7.8px;
+  gap: 3px 14px;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 0.12in;
+}}
+.standard-fact {{ border-bottom: 1px dotted #777; padding-bottom: 2px; }}
+.standard-fact strong {{ margin-right: 4px; text-transform: uppercase; }}
+.standard-form-columns {{
+  display: grid;
+  gap: 0.38in;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+}}
+.standard-form-column {{ min-width: 0; }}
+.standard-form-columns p {{
+  margin: 0 0 5px;
+  orphans: 2;
+  text-align: justify;
+  widows: 2;
+}}
+.standard-form-columns .standard-section {{
+  break-after: avoid;
+  column-span: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 800;
+  margin: 8px 0 3px;
+  text-align: left;
+  text-transform: uppercase;
+}}
+.standard-billing-summary {{
+  border: 1px solid #222;
+  display: grid;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 8px;
+  gap: 0;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 0.14in;
+}}
+.standard-billing-summary div {{ border: 0.5px solid #777; min-height: 34px; padding: 5px; }}
+.standard-form-foot {{
+  bottom: 0.03in;
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 7.6px;
+  justify-content: space-between;
+  left: 0.24in;
+  position: absolute;
+  right: 0.24in;
+}}
 </style>
 </head>
 <body>
@@ -517,9 +636,45 @@ def _bop_coverage_form_draft(
     return pages[page_idx % len(pages)]
 
 
+def _endorsement_draft(
+    bank: PolicyTextBank | None,
+    item: dict[str, Any],
+) -> dict[str, Any] | None:
+    pages = bank.pages("endorsement") if bank else []
+    if item["lob"] == "BOP":
+        subject_key = item.get("coverage", "")
+    elif item["lob"] == "WC":
+        subject_key = item.get("form_title", "")
+    else:
+        subject_key = item.get("exclusion_name", "")
+    normalized_subject = _normalized_policy_key(subject_key)
+    return next(
+        (
+            page
+            for page in pages
+            if _normalized_policy_key(page.get("subject_key", "")) == normalized_subject
+        ),
+        None,
+    )
+
+
 def _sample_window(items: list[dict[str, Any]], page_idx: int, size: int) -> list[dict[str, Any]]:
     start = (page_idx * size) % len(items)
     return [items[(start + offset) % len(items)] for offset in range(min(size, len(items)))]
+
+
+def _balanced_chunks(items: list[Any], max_size: int) -> list[list[Any]]:
+    if not items:
+        return []
+    chunk_count = (len(items) + max_size - 1) // max_size
+    base_size, remainder = divmod(len(items), chunk_count)
+    chunks: list[list[Any]] = []
+    start = 0
+    for chunk_index in range(chunk_count):
+        chunk_size = base_size + (1 if chunk_index < remainder else 0)
+        chunks.append(items[start : start + chunk_size])
+        start += chunk_size
+    return chunks
 
 
 def _paragraphs(lines: list[str]) -> str:
@@ -528,6 +683,174 @@ def _paragraphs(lines: list[str]) -> str:
         class_name = ' class="clause-heading"' if index == 0 or re.match(r"^(Part|Section|Item|Condition|Notice)\b", line) else ""
         html.append(f"<p{class_name}>{escape(line)}</p>")
     return "".join(html)
+
+
+def _standard_form_paragraphs(lines: list[str], page_idx: int) -> str:
+    blocks: list[tuple[str, int, bool]] = []
+    paragraph_index = 0
+    for line in lines:
+        text = re.sub(r"\s+", " ", line).strip()
+        if not text:
+            continue
+        if re.match(r"^(Section|Part)\s+[A-Z0-9]", text, flags=re.IGNORECASE):
+            blocks.append(
+                (
+                    f'<p class="standard-section">{escape(text)}</p>',
+                    len(text.split()) + 10,
+                    True,
+                )
+            )
+            continue
+        paragraph_index += 1
+        if page_idx % 3 == 0 and paragraph_index % 4 == 1:
+            prefix = f"{(paragraph_index + 3) // 4}. "
+        elif page_idx % 3 == 1 and paragraph_index % 5 == 1:
+            prefix = f"{chr(64 + min(26, (paragraph_index + 4) // 5))}. "
+        else:
+            prefix = ""
+        blocks.append((f"<p>{escape(prefix + text)}</p>", max(8, len(text.split())), False))
+    if len(blocks) < 2:
+        content = "".join(block[0] for block in blocks)
+        return (
+            f'<div class="standard-form-column">{content}</div>'
+            '<div class="standard-form-column"></div>'
+        )
+
+    target = sum(block[1] for block in blocks) / 2
+    running = 0
+    candidates: list[tuple[float, int]] = []
+    for split_index in range(1, len(blocks)):
+        running += blocks[split_index - 1][1]
+        if blocks[split_index - 1][2]:
+            continue
+        candidates.append((abs(running - target), split_index))
+    split_at = min(candidates)[1] if candidates else len(blocks) // 2
+    left = "".join(block[0] for block in blocks[:split_at])
+    right = "".join(block[0] for block in blocks[split_at:])
+    return (
+        f'<div class="standard-form-column">{left}</div>'
+        f'<div class="standard-form-column">{right}</div>'
+    )
+
+
+def _standard_form_id(profile: dict[str, str], kind: str, page_idx: int) -> str:
+    prefix = "AWC" if profile["lob"] == "WC" else "JCC"
+    series = {
+        "policy_form": 100,
+        "notice": 400,
+        "amendatory": 600,
+        "billing": 800,
+        "endorsement": 900,
+    }.get(kind, 700)
+    return f"{prefix} {series + (page_idx % 97):03d} (05-24)"
+
+
+def _standard_policy_form_page(
+    profile: dict[str, str],
+    *,
+    title: str,
+    form_id: str,
+    kind: str,
+    page_idx: int,
+    item: dict[str, Any],
+    lines: list[str],
+    show_facts: bool = True,
+) -> str:
+    effective, expiration = _typed_policy_period(profile)
+    placeholder_ids = {"POLICY_FORM", "NOTICE", "AMENDATORY", "BILLING"}
+    resolved_form_id = (
+        form_id
+        if form_id and form_id not in placeholder_ids
+        else _standard_form_id(profile, kind, page_idx)
+    )
+    title_text = re.sub(r"\s+", " ", title).strip() or "Policy Conditions"
+    lob_class = "wc-form" if profile["lob"] == "WC" else "cgl-form"
+    facts = _item_fact_rows(profile, item)
+    if kind == "endorsement":
+        if profile["lob"] == "WC":
+            facts = [
+                ("Effective date", item.get("endorsement_effective_date", "")),
+                ("Change classification", item.get("materiality", "")),
+                ("State / Class", f"{item['state']} / {item['class_code']}"),
+                ("Location", item["location_number"]),
+                ("Payroll / Rate", f"{item['annual_payroll']} / {item['manual_rate']}"),
+                ("Form", f"{item['form_number']} {item['edition_date']}"),
+            ]
+        else:
+            facts = [
+                ("Effective date", item.get("endorsement_effective_date", "")),
+                ("Change classification", item.get("materiality", "")),
+                ("Class / Territory", f"{item['class_code']} / {item['territory']}"),
+                ("Location", item["location_number"]),
+                ("Limit", f"{item['limit_type']}: {item['limit']}"),
+                ("Form", f"{item['form_number']} {item['edition_date']}"),
+            ]
+    fact_markup = "".join(
+        f'<div class="standard-fact"><strong>{escape(label)}</strong>{escape(str(value))}</div>'
+        for label, value in facts[:6]
+    )
+    masthead = f"""
+<div class="standard-form-masthead">
+  <div><div class="standard-carrier">{escape(profile['carrier'])}</div><div>{escape(profile['lob_display'])}</div></div>
+  <div class="standard-policy-ref">POLICY NUMBER: {escape(profile['policy_number'])}<br>EFFECTIVE: {escape(effective)}<br>EXPIRES: {escape(expiration)}</div>
+</div>
+<div class="standard-form-title">{escape(title_text)}</div>
+"""
+    intro = (
+        "THIS ENDORSEMENT CHANGES THE POLICY. PLEASE READ IT CAREFULLY."
+        if kind == "amendatory"
+        else "THIS FORM IS PART OF THE POLICY AND MUST BE READ WITH THE DECLARATIONS AND ENDORSEMENTS."
+    )
+    if kind == "notice":
+        body = f"""
+{masthead}
+<div class="standard-form-intro">POLICYHOLDER NOTICE - INFORMATION ABOUT YOUR POLICY</div>
+<div class="standard-form-columns">
+  {_standard_form_paragraphs(lines, page_idx)}
+</div>
+"""
+    elif kind == "billing":
+        premium_value = (
+            item.get("estimated_premium") or item.get("premium") or "See schedule"
+            if show_facts
+            else "See declarations and premium schedules"
+        )
+        audit_basis = (
+            item.get("premium_basis") or item.get("exposure_basis") or "As shown in the declarations"
+            if show_facts
+            else "Records described in the audit conditions"
+        )
+        body = f"""
+{masthead}
+<div class="standard-form-intro">PREMIUM, AUDIT, AND ACCOUNTING CONDITIONS</div>
+<div class="standard-billing-summary">
+  <div><strong>Named insured</strong><br>{escape(profile['named_insured'])}</div>
+  <div><strong>Policy term</strong><br>{escape(profile['policy_period'])}</div>
+  <div><strong>Scheduled premium</strong><br>{escape(str(premium_value))}</div>
+  <div><strong>Audit basis</strong><br>{escape(str(audit_basis))}</div>
+</div>
+<div class="standard-form-columns">{_standard_form_paragraphs(lines, page_idx)}</div>
+"""
+    else:
+        facts_section = f'<div class="standard-facts">{fact_markup}</div>' if show_facts else ""
+        body = f"""
+{masthead}
+<div class="standard-form-intro">{escape(intro)}</div>
+{facts_section}
+<div class="standard-form-columns">{_standard_form_paragraphs(lines, page_idx)}</div>
+"""
+    if page_idx < 100:
+        density_class = " generated-prose-form"
+    elif page_idx >= 500:
+        density_class = " generated-endorsement-form"
+    else:
+        density_class = ""
+    return f"""
+<section class="standard-form-page {lob_class} {escape(kind)}-form{density_class}">
+  {body}
+  <div class="standard-form-foot"><span>{escape(resolved_form_id)}</span><span>{escape(profile['named_insured'])} | {escape(profile['policy_number'])}</span></div>
+</section>
+"""
 
 
 def _fallback_lines(profile: dict[str, str], kind: str, item: dict[str, Any]) -> list[str]:
@@ -670,10 +993,77 @@ def _augment_lines(profile: dict[str, str], kind: str, item: dict[str, Any], lin
     return augmented
 
 
+def _contextual_policy_lines(
+    profile: dict[str, str],
+    kind: str,
+    item: dict[str, Any],
+    lines: list[str],
+    *,
+    max_lines: int | None = 22,
+) -> list[str]:
+    """Ground reusable form prose in the scheduled facts shown elsewhere."""
+    clean_lines = [re.sub(r"\s+", " ", str(line)).strip() for line in lines if str(line).strip()]
+    lob = profile["lob"]
+    if lob == "BOP":
+        context = [
+            "Scheduled Premises And Coverage",
+            (
+                f"This form applies to {item['coverage']} at Location {item['location_number']}, "
+                f"Building {item['building_number']}, subject to the {item['limit']} limit and "
+                f"{item['deductible']} deductible shown in the declarations."
+            ),
+            (
+                f"Form {item['form_number']} edition {item['edition_date']} must be read with the "
+                f"premises schedule and the {item['valuation']} valuation entry."
+            ),
+        ]
+    elif lob == "WC":
+        context = [
+            "Classification And Rating Reference",
+            (
+                f"This form applies to {item['classification']} in {item['state']}, class "
+                f"{item['class_code']}, at Location {item['location_number']}."
+            ),
+            (
+                f"The information page shows estimated remuneration of {item['annual_payroll']}, "
+                f"manual rate {item['manual_rate']}, experience modification {item['experience_mod']}, "
+                f"and estimated premium {item['estimated_premium']}."
+            ),
+            (
+                f"Form {item['form_number']} edition {item['edition_date']} supplies the applicable "
+                f"policy terms for this classification."
+            ),
+        ]
+    else:
+        context = [
+            "Classification And Exposure Reference",
+            (
+                f"This form applies to {item['classification']} at Location {item['location_number']}, "
+                f"territory {item['territory']}, using class code {item['class_code']}."
+            ),
+            (
+                f"The rating schedule shows {item['exposure_basis'].lower()} of {item['exposure']}, "
+                f"a {item['limit_type'].lower()} limit of {item['limit']}, and premium {item['premium']}."
+            ),
+        ]
+        if kind == "endorsement":
+            context.append(
+                f"This endorsement addresses {item['exclusion_name']} under form "
+                f"{item['form_number']} edition {item['edition_date']}."
+            )
+
+    combined: list[str] = []
+    for line in [*context, *clean_lines]:
+        if line not in combined:
+            combined.append(line)
+        if max_lines is not None and len(combined) >= max_lines:
+            break
+    return combined
+
+
 def _item_fact_rows(profile: dict[str, str], item: dict[str, Any]) -> list[tuple[str, Any]]:
     if profile["lob"] == "BOP":
         return [
-            ("Item", item["item_id"]),
             ("Coverage", item["coverage"]),
             ("Location / Building", f"{item['location_number']} / {item['building_number']}"),
             ("Address", item["premises_address"]),
@@ -682,16 +1072,16 @@ def _item_fact_rows(profile: dict[str, str], item: dict[str, Any]) -> list[tuple
         ]
     if profile["lob"] == "WC":
         return [
-            ("Item", item["item_id"]),
             ("State / Class", f"{item['state']} / {item['class_code']}"),
+            ("Location", item["location_number"]),
             ("Classification", item["classification"]),
             ("Payroll / Rate", f"{item['annual_payroll']} / {item['manual_rate']}"),
             ("Premium", item["estimated_premium"]),
             ("Form", f"{item['form_number']} {item['edition_date']}"),
         ]
     return [
-        ("Item", item["item_id"]),
         ("Class / Territory", f"{item['class_code']} / {item['territory']}"),
+        ("Location", item["location_number"]),
         ("Exposure", f"{item['exposure_basis']} {item['exposure']}"),
         ("Limit", f"{item['limit_type']}: {item['limit']}"),
         ("Premium", item["premium"]),
@@ -975,12 +1365,6 @@ def _bop_coverage_form_page(
     ]
     if generated_body:
         body_parts = generated_parts()
-        supplemental_parts = main_form_parts if item.get("form_number") == "BPF 00 13" else optional_form_parts
-        for part in supplemental_parts[3:]:
-            if len(body_parts) >= 28:
-                break
-            if part not in body_parts:
-                body_parts.append(part)
     else:
         body_parts = main_form_parts if item.get("form_number") == "BPF 00 13" else optional_form_parts
 
@@ -1436,15 +1820,7 @@ def _draft_page(
     text_bank: PolicyTextBank | None,
 ) -> str:
     item = _sample_window(items, page_idx, 1)[0]
-    generated_bop_coverage_form = False
-    if profile["lob"] == "BOP" and kind == "policy_form":
-        draft = _bop_coverage_form_draft(text_bank, item, page_idx)
-        generated_bop_coverage_form = draft is not None
-        if draft is None:
-            draft = _draft(text_bank, kind, page_idx)
-            generated_bop_coverage_form = draft is not None
-    else:
-        draft = _draft(text_bank, kind, page_idx)
+    draft = _draft(text_bank, kind, page_idx)
     title = str(draft.get("title")) if draft else {
         "policy_form": "Policy Conditions",
         "notice": "Policyholder Notice",
@@ -1453,19 +1829,11 @@ def _draft_page(
     }.get(kind, "Policy Conditions")
     form_id = str(draft.get("form_id")) if draft else kind.upper()
     lines = [str(line) for line in draft.get("paragraphs", [])] if draft else _fallback_lines(profile, kind, item)
-    if not (profile["lob"] == "BOP" and kind == "policy_form" and generated_bop_coverage_form):
-        lines = _augment_lines(profile, kind, item, lines)
+    lines = _augment_lines(profile, kind, item, lines)
     if profile["lob"] == "BOP":
+        lines = _contextual_policy_lines(profile, kind, item, lines)
         if kind == "policy_form":
-            return _bop_coverage_form_page(
-                profile,
-                title,
-                form_id,
-                page_idx,
-                item,
-                lines,
-                generated_body=generated_bop_coverage_form,
-            )
+            return _bop_typed_draft_page(profile, kind, title, form_id, page_idx, item, lines)
         if kind == "notice":
             return _bop_typed_notice_page(profile, title, page_idx)
         if kind == "billing":
@@ -1473,104 +1841,208 @@ def _draft_page(
         if kind == "amendatory":
             return _bop_typed_amendatory_page(profile, title, page_idx, item)
         return _bop_typed_draft_page(profile, kind, title, form_id, page_idx, item, lines)
-    body = f"""
-<div class="form-title">{escape(title)}</div>
-<div class="form-meta-row">
-  <span>{escape(form_id)} policy form</span>
-  <span>Policy No. {escape(profile["policy_number"])}</span>
-</div>
-{_fact_box(profile, item)}
-<div class="policy-form-body two-column">
-  {_paragraphs(lines)}
-</div>
+    return _standard_policy_form_page(
+        profile,
+        title=title,
+        form_id=form_id,
+        kind=kind,
+        page_idx=page_idx,
+        item=item,
+        lines=lines,
+        show_facts=False,
+    )
+
+
+def _bop_coverage_form_pages(
+    profile: dict[str, str],
+    items: list[dict[str, Any]],
+    text_bank: PolicyTextBank | None,
+) -> str:
+    if profile["lob"] != "BOP":
+        return ""
+    pages: list[str] = []
+    seen_forms: set[str] = set()
+    for page_idx, item in enumerate(items, start=1):
+        form_number = str(item["form_number"])
+        if form_number in seen_forms:
+            continue
+        seen_forms.add(form_number)
+        draft = _bop_coverage_form_draft(text_bank, item, page_idx)
+        if draft:
+            title = str(draft.get("title") or item["form_title"])
+            form_id = str(draft.get("form_id") or form_number)
+            lines = [str(line) for line in draft.get("paragraphs", [])]
+        else:
+            title = str(item["form_title"])
+            form_id = form_number
+            lines = _augment_lines(profile, "policy_form", item, _fallback_lines(profile, "policy_form", item))
+        lines = _contextual_policy_lines(profile, "policy_form", item, lines, max_lines=None)
+        pages.append(
+            _bop_coverage_form_page(
+                profile,
+                title,
+                form_id,
+                page_idx,
+                item,
+                lines,
+                generated_body=draft is not None,
+            )
+        )
+    return "".join(pages)
+
+
+def _declaration_form_page(
+    profile: dict[str, str],
+    *,
+    title: str,
+    form_id: str,
+    body: str,
+) -> str:
+    effective, expiration = _typed_policy_period(profile)
+    lob_class = "wc-form" if profile["lob"] == "WC" else "cgl-form"
+    return f"""
+<section class="standard-form-page declaration-form-page {lob_class}">
+  <div class="standard-form-masthead">
+    <div><div class="standard-carrier">{escape(profile['carrier'])}</div><div>{escape(profile['lob_display'])}</div></div>
+    <div class="standard-policy-ref">POLICY NUMBER: {escape(profile['policy_number'])}<br>EFFECTIVE: {escape(effective)}<br>EXPIRES: {escape(expiration)}</div>
+  </div>
+  <div class="standard-form-title">{escape(title)}</div>
+  {body}
+  <div class="standard-form-foot"><span>{escape(form_id)}</span><span>{escape(profile['named_insured'])} | {escape(profile['policy_number'])}</span></div>
+</section>
 """
-    return _page(profile, title, body, form_id=form_id)
+
+
+def _non_bop_cover_page(profile: dict[str, str], items: list[dict[str, Any]]) -> str:
+    total = sum(int(re.sub(r"[^0-9]", "", item.get("premium") or item.get("estimated_premium", "0"))) for item in items)
+    account_rows = [
+        ["Named insured", profile["named_insured"]],
+        ["Mailing address", profile["mailing_address"]],
+        ["Producer", profile["producer_name"]],
+        ["Producer code", profile["producer_code"]],
+        ["Policy period", profile["policy_period"]],
+        ["Estimated policy premium", money(total)],
+    ]
+    if profile["lob"] == "WC":
+        limit_rows = [
+            ["Bodily Injury by Accident", "$1,000,000 each accident"],
+            ["Bodily Injury by Disease", "$1,000,000 policy limit"],
+            ["Bodily Injury by Disease", "$1,000,000 each employee"],
+        ]
+        state_rows = []
+        for item in items[:16]:
+            state_rows.append(
+                [
+                    item["state"],
+                    item["class_code"],
+                    item["classification"],
+                    item["annual_payroll"],
+                    item["estimated_premium"],
+                ]
+            )
+        body = f"""
+<div class="standard-form-intro">ITEM 1 - NAMED INSURED AND POLICY INFORMATION</div>
+{_table(['Item', 'Information'], account_rows, class_name='policy-table compact')}
+<div class="standard-form-intro">ITEM 3 - EMPLOYERS LIABILITY LIMITS</div>
+{_table(['Coverage', 'Limit'], limit_rows, class_name='policy-table compact')}
+<div class="standard-form-intro">ITEM 4 - CLASSIFICATIONS AND ESTIMATED PREMIUM</div>
+{_table(['State', 'Class', 'Classification', 'Payroll', 'Premium'], state_rows, class_name='policy-table compact')}
+"""
+        return _declaration_form_page(
+            profile,
+            title="Workers Compensation and Employers Liability Information Page",
+            form_id="AWC INFO (05-24)",
+            body=body,
+        )
+
+    limit_rows: list[list[str]] = []
+    seen_limits: set[tuple[str, str]] = set()
+    for item in items:
+        key = (item["limit_type"], item["limit"])
+        if key in seen_limits:
+            continue
+        seen_limits.add(key)
+        limit_rows.append([item["coverage_part"], item["limit_type"], item["limit"]])
+        if len(limit_rows) == 7:
+            break
+    classification_rows = [
+        [item["location_number"], item["class_code"], item["classification"], item["exposure_basis"], item["exposure"]]
+        for item in items[:14]
+    ]
+    body = f"""
+<div class="standard-form-intro">NAMED INSURED, PRODUCER, AND POLICY TERM</div>
+{_table(['Item', 'Information'], account_rows, class_name='policy-table compact')}
+<div class="standard-form-intro">LIMITS OF INSURANCE</div>
+{_table(['Coverage Part', 'Limit Description', 'Limit'], limit_rows, class_name='policy-table compact')}
+<div class="standard-form-intro">PREMISES AND OPERATIONS SUMMARY</div>
+{_table(['Loc.', 'Class', 'Classification', 'Basis', 'Exposure'], classification_rows, class_name='policy-table compact')}
+"""
+    return _declaration_form_page(
+        profile,
+        title="Commercial General Liability Declarations",
+        form_id="JCC DEC (05-24)",
+        body=body,
+    )
+
+
+def _non_bop_declarations_continuation(profile: dict[str, str], items: list[dict[str, Any]]) -> str:
+    if profile["lob"] == "WC":
+        rows = [
+            [
+                item["state"],
+                item["class_code"],
+                item["location_number"],
+                item["manual_rate"],
+                item["experience_mod"],
+                item["schedule_credit_debit"],
+            ]
+            for item in items[16:36]
+        ]
+        forms = [[item["form_number"], item["edition_date"], item["form_title"]] for item in items[:10]]
+        body = f"""
+<div class="standard-form-intro">CLASSIFICATION AND RATING DETAIL - CONTINUED</div>
+{_table(['State', 'Class', 'Loc.', 'Rate', 'Experience Mod', 'Schedule Rating'], rows, class_name='policy-table compact')}
+<div class="standard-form-intro">FORMS AND ENDORSEMENTS MADE PART OF THIS POLICY</div>
+{_table(['Form', 'Edition', 'Title'], forms, class_name='policy-table compact')}
+<p>Premium is subject to final audit. Payroll and classification records must be retained for the policy period and made available when requested.</p>
+"""
+        title = "Workers Compensation Information Page - Continued"
+        form_id = "AWC INFO-2 (05-24)"
+    else:
+        rows = [
+            [
+                item["location_number"],
+                item["territory"],
+                item["class_code"],
+                item["exposure_basis"],
+                item["rate"],
+                item["premium"],
+            ]
+            for item in items[14:34]
+        ]
+        forms = [[item["form_number"], item["edition_date"], item["form_title"]] for item in items[:10]]
+        body = f"""
+<div class="standard-form-intro">CLASSIFICATION, TERRITORY, AND PREMIUM - CONTINUED</div>
+{_table(['Loc.', 'Terr.', 'Class', 'Basis', 'Rate', 'Premium'], rows, class_name='policy-table compact')}
+<div class="standard-form-intro">FORMS AND ENDORSEMENTS MADE PART OF THIS POLICY</div>
+{_table(['Form', 'Edition', 'Title'], forms, class_name='policy-table compact')}
+<p>Classification and exposure entries are rating information. Coverage remains subject to the applicable forms, exclusions, and endorsements.</p>
+"""
+        title = "Commercial General Liability Declarations - Continued"
+        form_id = "JCC DEC-2 (05-24)"
+    return _declaration_form_page(profile, title=title, form_id=form_id, body=body)
 
 
 def _cover_page(profile: dict[str, str], items: list[dict[str, Any]]) -> str:
     if profile["lob"] == "BOP":
         return _bop_declaration_page_one(profile, items)
-
-    policy_rows = [
-        ["Named Insured", profile["named_insured"]],
-        ["Mailing Address", profile["mailing_address"]],
-        ["Policy Number", profile["policy_number"]],
-        ["Policy Period", profile["policy_period"]],
-        ["Scheduled Items", len(items)],
-    ]
-    transaction_rows = [
-        ["Transaction", "Issued policy packet"],
-        ["Producer", profile["producer_name"]],
-        ["Producer Code", profile["producer_code"]],
-        ["Audit Basis", "Annual unless otherwise stated"],
-        ["Payment Plan", "Direct bill - quarterly installments"],
-        ["Countersignature", "Required where applicable by state law"],
-    ]
-    index_rows = [
-        ["1", "Declarations and information page", "Policy-wide administrative values"],
-        ["2", "Locations / classifications", "Location, state, class, or territory keys"],
-        ["3", "Coverage, limits, payroll, or exposure schedules", "Scheduled item values"],
-        ["4", "Forms and endorsements", "Form number, edition, and source"],
-        ["5", "Endorsement details", "Effective dates and modified items"],
-        ["6", "Premium summary", "Item-level premium or estimated premium"],
-    ]
-    body = f"""
-<div class="declarations">
-  <div class="declaration-box">
-    <h2>Policy Declarations Package</h2>
-    {_table(["Item", "Value"], policy_rows)}
-    <p class="small muted">This declarations package, schedules, forms, and endorsements should be read together as one policy.</p>
-  </div>
-  <div class="notice-box">
-    <h2>Transaction Information</h2>
-    {_table(["Item", "Value"], transaction_rows, class_name="policy-table compact")}
-  </div>
-</div>
-<h2>Document Schedule</h2>
-{_table(["Part", "Section", "Purpose"], index_rows, class_name="policy-table compact")}
-<div class="signature-row">
-  <div class="signature-line">Authorized Representative</div>
-  <div class="signature-line">Named Insured Acknowledgment</div>
-</div>
-"""
-    return _page(profile, "Policy Declarations Package", body, form_id="SPEC-DEC")
+    return _non_bop_cover_page(profile, items)
 
 
 def _declarations_page(profile: dict[str, str], items: list[dict[str, Any]]) -> str:
     if profile["lob"] == "BOP":
         return _bop_declaration_page_two(profile, items)
-
-    total = sum(int(re.sub(r"[^0-9]", "", item.get("premium") or item.get("estimated_premium", "0"))) for item in items)
-    fields = [
-        ("Carrier", profile["carrier"]),
-        ("Named Insured", profile["named_insured"]),
-        ("Policy Number", profile["policy_number"]),
-        ("Policy Period", profile["policy_period"]),
-        ("Line of Business", profile["lob_display"]),
-        ("Estimated Premium", money(total)),
-    ]
-    body = f"""
-<div class="declarations">
-  <div class="declaration-box">{_field_grid(fields)}</div>
-  <div class="notice-box">
-    <h2>Policy Information</h2>
-    <p>This declarations package identifies the coverage part and schedules that control item-level coverage, rating, forms, and premium.</p>
-    {_table(["Producer", "Code"], [[profile["producer_name"], profile["producer_code"]]], class_name="policy-table compact")}
-  </div>
-</div>
-<div class="three-col">
-  <div class="form-box"><h2>Coverage Part</h2><p>Coverage applies only as shown in the attached declarations, schedules, forms, and endorsements.</p></div>
-  <div class="form-box"><h2>Audit and Rating</h2><p>Premium may be subject to audit, rating basis verification, or payroll/exposure adjustment.</p></div>
-  <div class="form-box"><h2>Forms</h2><p>Attached endorsements can amend limits, exclusions, covered locations, or scheduled parties.</p></div>
-</div>
-"""
-    title = {
-        "BOP": "Businessowners Policy Declarations",
-        "WC": "Workers Compensation and Employers Liability Information Page",
-        "CGL": "Commercial General Liability Coverage Part Declarations",
-    }[profile["lob"]]
-    form_id = {"BOP": "BP DS 01", "WC": "WC 00 00 01 A", "CGL": "CG DS 01"}[profile["lob"]]
-    return _page(profile, title, body, form_id=form_id)
+    return _non_bop_declarations_continuation(profile, items)
 
 
 def _chunked_table_pages(
@@ -1637,8 +2109,8 @@ def _chunked_table_pages(
         )
 
     pages: list[str] = []
-    for chunk_index, start in enumerate(range(0, len(rows), page_size), start=1):
-        chunk = rows[start:start + page_size]
+    start = 0
+    for chunk_index, chunk in enumerate(_balanced_chunks(rows, page_size), start=1):
         suffix = f" - Continued {chunk_index}" if len(rows) > page_size and chunk_index > 1 else ""
         body = (f'<div class="schedule-note">{escape(note)}</div>' if note else "")
         body += '<div class="schedule-ledger">'
@@ -1657,6 +2129,7 @@ def _chunked_table_pages(
 </div>
 """
         pages.append(_page(profile, title + suffix, body, form_id=form_id))
+        start += len(chunk)
     return "".join(pages)
 
 
@@ -1723,35 +2196,61 @@ def _bop_schedule_pages(profile: dict[str, str], items: list[dict[str, Any]]) ->
 
 
 def _wc_schedule_pages(profile: dict[str, str], items: list[dict[str, Any]]) -> str:
-    class_rows = [[item["item_id"], item["state"], item["class_code"], item["classification"], item["location_number"], item["governing_class"]] for item in items]
-    payroll_rows = [[item["item_id"], item["state"], item["class_code"], item["annual_payroll"], item["manual_rate"], item["estimated_premium"]] for item in items]
+    class_rows = [[item["state"], item["class_code"], item["classification"], item["location_number"], item["governing_class"]] for item in items]
+    payroll_rows = [[item["state"], item["class_code"], item["location_number"], item["annual_payroll"], item["manual_rate"], item["estimated_premium"]] for item in items]
     mod_fields = [
         ("Experience Modification Factor", items[0]["experience_mod"]),
         ("Schedule Credit/Debit", items[0]["schedule_credit_debit"]),
         ("Premium Basis", items[0]["premium_basis"]),
         ("Governing Class", next(item["class_code"] for item in items if item["governing_class"] == "Yes")),
     ]
-    mod_page = _page(profile, "Experience Modification and Rating Summary", f'<div class="declaration-box">{_field_grid(mod_fields)}</div>', form_id="WC 00 04 14 A")
+    total_estimated_premium = sum(_typed_money_value(item["estimated_premium"]) for item in items)
+    experience_mod = float(items[0]["experience_mod"])
+    manual_premium_basis = round(total_estimated_premium / experience_mod) if experience_mod else total_estimated_premium
+    rating_rows = [
+        ["Manual premium basis", money(manual_premium_basis), "Before experience rating"],
+        ["Experience modification", items[0]["experience_mod"], "Applied to eligible class premium"],
+        ["Modified premium basis", money(total_estimated_premium), "Before assessments and audit"],
+        ["Schedule credit / debit", items[0]["schedule_credit_debit"], "Applied as shown on the information page"],
+        ["Final premium", "Subject to audit", "Payroll and classifications are estimated"],
+    ]
+    mod_body = f"""
+<div class="declaration-box">{_field_grid(mod_fields)}</div>
+<h2>Rating Calculation</h2>
+{_table(["Rating component", "Value", "Application"], rating_rows, class_name="policy-table")}
+<div class="two-col">
+  <div class="form-box">
+    <h2>How The Factor Applies</h2>
+    <p>The experience modification applies to eligible class premium for the states shown on the information page. It does not replace state assessments, expense constants, or minimum premiums.</p>
+    <p>Classification and payroll entries remain subject to final audit after the policy period.</p>
+  </div>
+  <div class="form-box">
+    <h2>Records Required</h2>
+    <p>Retain payroll journals, job-cost records, officer information, and certificates for subcontracted work. Revised audit values may change final premium without changing coverage.</p>
+    <p>Refer to the state classification and premium schedules for the classes included in this calculation.</p>
+  </div>
+</div>
+"""
+    mod_page = _page(profile, "Experience Modification and Rating Summary", mod_body, form_id="WC 00 04 14 A")
     return (
-        _chunked_table_pages(profile, "Workers Compensation Classification Schedule", ["Item", "State", "Class", "Classification", "Loc", "Governing"], class_rows, form_id="WC DS 02", page_size=14, note="Rows are keyed by state and class code; payroll and premium appear on a later schedule.")
-        + _chunked_table_pages(profile, "Payroll and Rate Schedule", ["Item", "State", "Class", "Payroll", "Rate", "Estimated Premium"], payroll_rows, form_id="WC DS 03", page_size=14)
+        _chunked_table_pages(profile, "Workers Compensation Classification Schedule", ["State", "Class", "Classification", "Loc", "Governing"], class_rows, form_id="WC DS 02", page_size=14, note="Rows are keyed by state, class code, and location; payroll and premium appear on a later schedule.")
+        + _chunked_table_pages(profile, "Payroll and Rate Schedule", ["State", "Class", "Loc", "Payroll", "Rate", "Estimated Premium"], payroll_rows, form_id="WC DS 03", page_size=14)
         + mod_page
     )
 
 
 def _cgl_schedule_pages(profile: dict[str, str], items: list[dict[str, Any]]) -> str:
-    limits = [[item["item_id"], item["coverage_part"], item["limit_type"], item["limit"]] for item in items]
-    classifications = [[item["item_id"], item["location_number"], item["class_code"], item["classification"], item["territory"]] for item in items]
-    rating = [[item["item_id"], item["class_code"], item["exposure_basis"], item["exposure"], item["rate"], item["products_completed_ops_rate"], item["premium"]] for item in items]
+    limits = [[item["location_number"], item["class_code"], item["limit_type"], item["limit"]] for item in items]
+    classifications = [[item["location_number"], item["class_code"], item["classification"], item["territory"]] for item in items]
+    rating = [[item["location_number"], item["class_code"], item["exposure_basis"], item["exposure"], item["rate"], item["products_completed_ops_rate"], item["premium"]] for item in items]
     return (
-        _chunked_table_pages(profile, "Commercial General Liability Limits Schedule", ["Item", "Coverage Part", "Limit Type", "Limit"], limits, form_id="CG DS 02", page_size=16)
-        + _chunked_table_pages(profile, "Classification and Location Schedule", ["Item", "Loc", "Class", "Classification", "Territory"], classifications, form_id="CG DS 03", page_size=15, note="Classification rows apply with the exposure/rate schedule and the limits schedule.")
-        + _chunked_table_pages(profile, "Exposure and Premium Rating Schedule", ["Item", "Class", "Basis", "Exposure", "Rate", "PCO Rate", "Premium"], rating, form_id="CG DS 04", page_size=14)
+        _chunked_table_pages(profile, "Commercial General Liability Limits Schedule", ["Loc", "Class", "Limit Type", "Limit"], limits, form_id="CG DS 02", page_size=16)
+        + _chunked_table_pages(profile, "Classification and Location Schedule", ["Loc", "Class", "Classification", "Territory"], classifications, form_id="CG DS 03", page_size=14, note="Classification rows apply with the exposure/rate schedule and the limits schedule.")
+        + _chunked_table_pages(profile, "Exposure and Premium Rating Schedule", ["Loc", "Class", "Basis", "Exposure", "Rate", "PCO Rate", "Premium"], rating, form_id="CG DS 04", page_size=14)
     )
 
 
 def _forms_schedule_pages(profile: dict[str, str], items: list[dict[str, Any]]) -> str:
-    rows = [[item["form_number"], item["edition_date"], item["form_title"], item["item_id"], item.get("endorsement_number") or "Policy jacket"] for item in items]
     if profile["lob"] == "BOP":
         form_rows: list[dict[str, str]] = []
         seen_forms: set[tuple[str, str, str, str]] = set()
@@ -1769,6 +2268,14 @@ def _forms_schedule_pages(profile: dict[str, str], items: list[dict[str, Any]]) 
                     "source": source,
                 }
             )
+        form_rows.extend(
+            [
+                {"form_number": "CPC 10 01", "edition_date": "05 24", "form_title": "Common Policy Conditions", "source": "Policy jacket"},
+                {"form_number": "BPN 20 04", "edition_date": "05 24", "form_title": "Policyholder Notice", "source": "Policy jacket"},
+                {"form_number": "BTR 31 02", "edition_date": "01 25", "form_title": "Terrorism Coverage Disclosure", "source": "Policy jacket"},
+                {"form_number": "BPR 40 08", "edition_date": "01 25", "form_title": "Privacy Practices Notice", "source": "Policy jacket"},
+            ]
+        )
         entries = [
             [
                 f"FORM: {row['form_number']}    EDITION: {row['edition_date']}",
@@ -1791,9 +2298,32 @@ def _forms_schedule_pages(profile: dict[str, str], items: list[dict[str, Any]]) 
             )
         return "".join(pages)
     if profile["lob"] == "CGL":
-        cgl_rows = [row + [item["exclusion_name"]] for row, item in zip(rows, items)]
-        return _chunked_table_pages(profile, "Forms, Endorsements, and Exclusions Schedule", ["Form", "Edition", "Title", "Item", "Source", "Exclusion Concept"], cgl_rows, form_id="CG DS 05", page_size=12, note="Forms can control limits or exclusions independently from the rating schedule.")
-    return _chunked_table_pages(profile, "Forms and Endorsements Schedule", ["Form", "Edition", "Title", "Item", "Source"], rows, form_id="WC DS 04", page_size=13, note="Form numbers and edition dates apply with the item schedule.")
+        rows = [
+            [item["form_number"], item["edition_date"], item["form_title"], item["location_number"], item["class_code"], "Endorsement attached" if item.get("endorsement_number") else "Policy jacket", item["exclusion_name"]]
+            for item in items
+        ]
+        rows.extend(
+            [
+                ["JCC N101", "05 24", "Policyholder Notice", "All", "All", "Policy jacket", "Informational"],
+                ["JCC C205", "05 24", "Common Policy Conditions", "All", "All", "Policy jacket", "None"],
+                ["JCC T310", "01 25", "Terrorism Coverage Disclosure", "All", "All", "Policy jacket", "Informational"],
+                ["JCC P415", "01 25", "Privacy Practices Notice", "All", "All", "Policy jacket", "Informational"],
+            ]
+        )
+        return _chunked_table_pages(profile, "Forms, Endorsements, and Exclusions Schedule", ["Form", "Edition", "Title", "Loc", "Class", "Source", "Exclusion Concept"], rows, form_id="CG DS 05", page_size=9, note="Forms can control limits or exclusions independently from the rating schedule.")
+    rows = [
+        [item["form_number"], item["edition_date"], item["form_title"], item["state"], item["class_code"], "Endorsement attached" if item.get("endorsement_number") else "Policy jacket"]
+        for item in items
+    ]
+    rows.extend(
+        [
+            ["AWC N101", "05 24", "Policyholder Notice", "All", "All", "Policy jacket"],
+            ["AWC C205", "05 24", "Common Policy Conditions", "All", "All", "Policy jacket"],
+            ["AWC S310", "01 25", "State Benefit Notice", "All", "All", "Policy jacket"],
+            ["AWC P415", "01 25", "Privacy Practices Notice", "All", "All", "Policy jacket"],
+        ]
+    )
+    return _chunked_table_pages(profile, "Forms and Endorsements Schedule", ["Form", "Edition", "Title", "State", "Class", "Source"], rows, form_id="WC DS 04", page_size=11, note="Form numbers and edition dates apply with the state and classification schedules.")
 
 
 def _clause_records(items: list[dict[str, Any]]) -> list[dict[str, Any]]:
@@ -1871,10 +2401,10 @@ def _clause_detail_pages(profile: dict[str, str], items: list[dict[str, Any]]) -
 
     pages: list[str] = []
     clauses = _clause_records(items)
-    page_size = 16 if profile["lob"] == "WC" else 14
+    page_size = 12
     for page_no, start in enumerate(range(0, len(clauses), page_size), start=1):
         chunk = clauses[start:start + page_size]
-        paragraphs = []
+        lines: list[str] = []
         for idx, clause in enumerate(chunk, start=start + 1):
             if profile["lob"] == "WC":
                 context = (
@@ -1902,17 +2432,26 @@ def _clause_detail_pages(profile: dict[str, str], items: list[dict[str, Any]]) -
                     f"{clause['edition_date']} for {clause['clause_scope']}."
                 ),
             ]
-            paragraphs.append(f'<p class="clause-heading">{escape(clause["clause_title"])}</p>')
-            paragraphs.append(f"<p>{escape(intro_variants[idx % len(intro_variants)])}</p>")
-            paragraphs.append(f"<p>{escape(clause['clause_text'])}</p>")
-        notice = """
-<div class="schedule-note">
-  Material provisions in this section apply to the current policy term. Similar prior-term or advisory notes in archive pages are retained for underwriting reference.
-</div>
-"""
-        body = notice + '<div class="policy-form-body two-column">' + "".join(paragraphs) + "</div>"
+            lines.extend(
+                [
+                    f"Section {idx} - {clause['clause_title']}",
+                    intro_variants[idx % len(intro_variants)],
+                    clause["clause_text"],
+                ]
+            )
         title = "Material Policy Provisions" if page_no == 1 else f"Material Policy Provisions - Continued {page_no}"
-        pages.append(_page(profile, title, body, form_id="CLAUSE-SCH"))
+        pages.append(
+            _standard_policy_form_page(
+                profile,
+                title=title,
+                form_id=_standard_form_id(profile, "policy_form", 300 + page_no),
+                kind="policy_form",
+                page_idx=300 + page_no,
+                item=items[start % len(items)],
+                lines=lines,
+                show_facts=False,
+            )
+        )
     return "".join(pages)
 
 
@@ -1920,54 +2459,49 @@ def _endorsement_detail_pages(profile: dict[str, str], items: list[dict[str, Any
     endorsed = [item for item in items if item.get("endorsement_number")]
     pages: list[str] = []
     for chunk_index, item in enumerate(endorsed, start=1):
-        draft = _draft(text_bank, "endorsement", chunk_index)
+        draft = _endorsement_draft(text_bank, item)
         title = str(draft.get("title")) if draft else "Policy Change Endorsement"
-        lines = [str(line) for line in draft.get("paragraphs", [])] if draft else _fallback_lines(profile, "endorsement", item)
+        if draft:
+            lines = [str(line) for line in draft.get("paragraphs", [])]
+        else:
+            lines = _augment_lines(profile, "endorsement", item, _fallback_lines(profile, "endorsement", item))
         if profile["lob"] == "CGL":
             title = str(item.get("exclusion_name") or title)
-            lines = _fallback_lines(profile, "endorsement", item)
         form_id = item["form_number"]
-        lines = _augment_lines(profile, "endorsement", item, lines)
+        lines = _contextual_policy_lines(
+            profile,
+            "endorsement",
+            item,
+            lines,
+            max_lines=22 if profile["lob"] == "BOP" else None,
+        )
         if profile["lob"] == "BOP":
             pages.append(_bop_typed_endorsement_page(profile, title, chunk_index, item, lines))
             continue
-        item_rows = _item_fact_rows(profile, item)
-        item_rows.extend(
-            [
-                ("Endorsement", item["endorsement_number"]),
-                ("Effective Date", item.get("endorsement_effective_date", "")),
-                ("Materiality", item["materiality"]),
-            ]
+        pages.append(
+            _standard_policy_form_page(
+                profile,
+                title=title,
+                form_id=form_id,
+                kind="endorsement",
+                page_idx=500 + chunk_index,
+                item=item,
+                lines=lines,
+            )
         )
-        body = f"""
-<div class="endorsement">
-  <div class="endorsement-title">{escape(title)}</div>
-  <div class="form-meta-row">
-    <span>Endorsement No. {escape(item["endorsement_number"])}</span>
-    <span>Effective {escape(item.get("endorsement_effective_date", ""))}</span>
-  </div>
-  <div class="fact-box">{_field_grid(item_rows)}</div>
-  <div class="policy-form-body two-column">{_paragraphs(lines)}</div>
-  <div class="signature-row">
-    <div class="signature-line">Authorized Representative</div>
-    <div class="signature-line">Countersignature Date</div>
-  </div>
-</div>
-"""
-        pages.append(_page(profile, f"{title} {chunk_index}", body, form_id=form_id))
     return "".join(pages)
 
 
 def _premium_summary_pages(profile: dict[str, str], items: list[dict[str, Any]]) -> str:
     if profile["lob"] == "WC":
-        rows = [[item["item_id"], item["state"], item["class_code"], item["annual_payroll"], item["estimated_premium"]] for item in items]
-        headers = ["Item", "State", "Class", "Payroll", "Estimated Premium"]
+        rows = [[item["state"], item["class_code"], item["location_number"], item["annual_payroll"], item["estimated_premium"]] for item in items]
+        headers = ["State", "Class", "Loc", "Payroll", "Estimated Premium"]
     elif profile["lob"] == "CGL":
-        rows = [[item["item_id"], item["class_code"], item["exposure_basis"], item["exposure"], item["premium"]] for item in items]
-        headers = ["Item", "Class", "Basis", "Exposure", "Premium"]
+        rows = [[item["location_number"], item["class_code"], item["exposure_basis"], item["exposure"], item["premium"]] for item in items]
+        headers = ["Loc", "Class", "Basis", "Exposure", "Premium"]
     else:
-        rows = [[item["item_id"], item["coverage"], item["location_number"], item["limit"], item["premium"]] for item in items]
-        headers = ["Item", "Coverage", "Loc", "Limit", "Premium"]
+        rows = [[item["coverage"], item["location_number"], item["building_number"], item["limit"], item["premium"]] for item in items]
+        headers = ["Coverage", "Loc", "Bldg", "Limit", "Premium"]
     total = sum(int(re.sub(r"[^0-9]", "", item.get("premium") or item.get("estimated_premium", "0"))) for item in items)
     note = f"Total scheduled premium for the rows shown on this schedule: {money(total)}."
     if profile["lob"] == "BOP":
@@ -1995,10 +2529,10 @@ def _premium_summary_pages(profile: dict[str, str], items: list[dict[str, Any]])
             premium_entries,
             note=f"{note} Premium rows are grouped by premises and must be read with the coverage schedule.",
         )
-    return _chunked_table_pages(profile, "Premium Summary", headers, rows, form_id="PREM-SCH", page_size=20, note=note)
+    return _chunked_table_pages(profile, "Premium Summary", headers, rows, form_id="PREM-SCH", page_size=14, note=note)
 
 
-def _spacer_pages(
+def _policy_form_pages(
     config: PolicyMultiHopCaseConfig,
     profile: dict[str, str],
     count: int,
@@ -2007,34 +2541,31 @@ def _spacer_pages(
     text_bank: PolicyTextBank | None,
 ) -> str:
     pages: list[str] = []
-    rng = random.Random(stable_seed(9000 + start, config.id, count))
-    builders: list[str] = [
-        "policy_form",
-        "policy_form",
-        "policy_form",
-        "policy_form",
-        "policy_form",
-        "billing",
-        "billing",
-        "notice",
-        "amendatory",
-    ]
-    for offset in range(count):
+    if profile["lob"] == "BOP":
+        rng = random.Random(stable_seed(9000 + start, config.id, count))
+        page_kinds: list[str] = []
+        previous_kind = ""
+        while len(page_kinds) < count:
+            deck = ["policy_form", "policy_form", "policy_form", "policy_form", "billing", "notice", "amendatory"]
+            rng.shuffle(deck)
+            if deck[0] == previous_kind:
+                swap_index = next((index for index, kind in enumerate(deck[1:], start=1) if kind != previous_kind), 0)
+                deck[0], deck[swap_index] = deck[swap_index], deck[0]
+            page_kinds.extend(deck)
+            previous_kind = deck[-1]
+        selected_kinds = page_kinds[:count]
+    else:
+        # A real packet contains many coverage-form pages but only a few copies
+        # of each administrative notice, billing form, and amendatory form.
+        special_by_cycle_position = {5: "notice", 9: "billing", 13: "amendatory"}
+        selected_kinds = [
+            special_by_cycle_position.get(((start + offset - 1) % 17) + 1, "policy_form")
+            for offset in range(count)
+        ]
+    for offset, kind in enumerate(selected_kinds):
         page_idx = start + offset
-        kind = builders[(page_idx + rng.randrange(len(builders))) % len(builders)]
         pages.append(_draft_page(profile, kind, page_idx, items, text_bank))
     return "".join(pages)
-
-
-def _distractor_section(config: PolicyMultiHopCaseConfig, profile: dict[str, str], items: list[dict[str, Any]]) -> str:
-    rows = []
-    for idx, item in enumerate(items[: min(36, len(items))], start=1):
-        rows.append([f"ARCH-{idx:03d}", item["form_number"], item.get("exclusion_name", item["form_title"]), item.get("limit", item.get("premium", "")), "Prior term only"])
-    body = f"""
-<p>Archived prior-term forms and advisory clause notes are retained with the file. They do not control the current policy period and are kept for underwriting reference.</p>
-{_table(["Archive ID", "Form", "Subject", "Value", "Status"], rows, class_name="policy-table compact")}
-"""
-    return _page(profile, "Archived Prior-Term Forms", body, form_id="ARCH")
 
 
 def _schedule_pages(config: PolicyMultiHopCaseConfig, profile: dict[str, str], items: list[dict[str, Any]]) -> str:
@@ -2056,15 +2587,15 @@ def case_html(
     body = (
         _cover_page(profile, items)
         + _declarations_page(profile, items)
-        + _spacer_pages(config, profile, gap1, 1, items, text_bank)
+        + _policy_form_pages(config, profile, gap1, 1, items, text_bank)
         + _schedule_pages(config, profile, items)
-        + _spacer_pages(config, profile, gap2, gap1 + 1, items, text_bank)
+        + _bop_coverage_form_pages(profile, items, text_bank)
+        + _policy_form_pages(config, profile, gap2, gap1 + 1, items, text_bank)
         + _forms_schedule_pages(profile, items)
         + _clause_detail_pages(profile, items)
-        + _spacer_pages(config, profile, gap3, gap1 + gap2 + 1, items, text_bank)
+        + _policy_form_pages(config, profile, gap3, gap1 + gap2 + 1, items, text_bank)
         + _endorsement_detail_pages(profile, items, text_bank)
-        + _spacer_pages(config, profile, gap4, gap1 + gap2 + gap3 + 1, items, text_bank)
+        + _policy_form_pages(config, profile, gap4, gap1 + gap2 + gap3 + 1, items, text_bank)
         + _premium_summary_pages(profile, items)
-        + _distractor_section(config, profile, items)
     )
     return _html_document(f"{profile['lob_display']} Specimen Packet", body)

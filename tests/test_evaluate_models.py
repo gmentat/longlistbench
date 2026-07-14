@@ -55,10 +55,10 @@ class EvaluatorRegressionTests(unittest.TestCase):
             totals[role]["documents"] += 1
             totals[role]["records"] += instance["num_target_records"]
 
-        self.assertEqual(totals["scale_control"], {"documents": 15, "records": 22_705})
+        self.assertEqual(totals["scale_control"], {"documents": 13, "records": 21_185})
         self.assertEqual(
             totals["structural_challenge"],
-            {"documents": 21, "records": 10_745},
+            {"documents": 19, "records": 8_414},
         )
 
     def test_checker_reuses_main_evaluator_metrics_function(self) -> None:
@@ -66,6 +66,138 @@ class EvaluatorRegressionTests(unittest.TestCase):
             check_evaluation_report.evaluate_extraction,
             evaluate_models.evaluate_extraction,
         )
+
+    def test_checker_recomputes_strict_and_stressor_aggregates(self) -> None:
+        claims_dir = Path(tempfile.mkdtemp())
+        (claims_dir / "manifest.json").write_text(
+            json.dumps(
+                {
+                    "instances": [
+                        {
+                            "id": "scale-sample",
+                            "complexity_regime": "ifta_mileage_by_vehicle",
+                            "problems": ["page_breaks"],
+                        },
+                        {
+                            "id": "structural-sample",
+                            "complexity_regime": "policy_multi_hop",
+                            "problems": ["long_range_evidence"],
+                        },
+                    ]
+                }
+            ),
+            encoding="utf-8",
+        )
+        detailed_results = [
+            {
+                "model": "test_model",
+                "sample": "scale-sample",
+                "tier": "core_operations",
+                "format": "pdf",
+                "transcript": "ocr",
+                "error": None,
+                "metrics": {
+                    "ground_truth_count": 2,
+                    "predicted_count": 2,
+                    "exact_record_matches": 2,
+                    "complete_document": True,
+                    "f1": 1.0,
+                    "recall": 1.0,
+                    "precision": 1.0,
+                    "found": 4,
+                    "total_gold_field_pairs": 4,
+                    "total_pred_field_pairs": 4,
+                },
+            },
+            {
+                "model": "test_model",
+                "sample": "structural-sample",
+                "tier": "policy_packets",
+                "format": "pdf",
+                "transcript": "ocr",
+                "error": None,
+                "metrics": {
+                    "ground_truth_count": 3,
+                    "predicted_count": 4,
+                    "exact_record_matches": 1,
+                    "complete_document": False,
+                    "f1": 0.5,
+                    "recall": 0.5,
+                    "precision": 0.5,
+                    "found": 3,
+                    "total_gold_field_pairs": 6,
+                    "total_pred_field_pairs": 6,
+                },
+            },
+        ]
+
+        recomputed = check_evaluation_report._recompute_model_stats(
+            detailed_results,
+            claims_dir=claims_dir,
+        )
+        stats = recomputed["test_model"]
+
+        self.assertEqual(stats["total_exact_record_matches"], 3)
+        self.assertEqual(stats["exact_record_recall"], 3 / 5)
+        self.assertEqual(stats["complete_documents"], 1)
+        self.assertEqual(stats["complete_document_rate"], 0.5)
+        self.assertEqual(
+            stats["by_evaluation_role"]["scale_control"]["exact_record_recall"],
+            1.0,
+        )
+        self.assertEqual(
+            stats["by_stressor"]["long_range_evidence"]["exact_record_recall"],
+            1 / 3,
+        )
+
+        tampered = json.loads(json.dumps(recomputed))
+        tampered["test_model"]["by_stressor"]["long_range_evidence"][
+            "exact_record_recall"
+        ] = 1.0
+        errors = check_evaluation_report._compare_model_stats(
+            expected=tampered,
+            actual=recomputed,
+            tol=1e-12,
+        )
+        self.assertTrue(any("exact_record_recall mismatch" in error for error in errors))
+
+    def test_checker_rejects_omitted_per_sample_metric(self) -> None:
+        actual = {
+            "ground_truth_count": 1,
+            "predicted_count": 1,
+            "exact_record_matches": 1,
+            "exact_record_recall": 1.0,
+        }
+        expected = dict(actual)
+        expected.pop("exact_record_recall")
+
+        errors = check_evaluation_report._compare_metrics(
+            sample="sample",
+            model="model",
+            expected=expected,
+            actual=actual,
+            tol=1e-12,
+        )
+
+        self.assertIn(
+            "sample / model: report metrics missing key 'exact_record_recall'",
+            errors,
+        )
+
+    def test_full_corpus_coverage_rejects_missing_and_duplicate_sample(self) -> None:
+        detailed_results = [
+            {"model": "model", "sample": "a", "transcript": "ocr"},
+            {"model": "model", "sample": "a", "transcript": "ocr"},
+        ]
+
+        errors = check_evaluation_report._full_corpus_coverage_errors(
+            detailed_results,
+            manifest_instances=[{"id": "a"}, {"id": "b"}],
+        )
+
+        self.assertEqual(len(errors), 1)
+        self.assertIn("missing=['b']", errors[0])
+        self.assertIn("extra_or_duplicate=['a']", errors[0])
 
     def test_validator_rejects_missing_required_fields(self) -> None:
         with self.assertRaises(ValueError):
@@ -582,6 +714,29 @@ class EvaluatorRegressionTests(unittest.TestCase):
             setup_fn=lambda: object(),
             extract_fn=lambda *_: (_ for _ in ()).throw(AssertionError("resume should not extract")),
         )
+        pred_path = results_dir / f"{sample}_ocr_{model_key}_predicted.json"
+        provenance = evaluate_models._online_input_provenance(
+            entry=evaluate_models.EvaluationInput(
+                sample=sample,
+                tier="easy",
+                format="detailed",
+                transcript="ocr",
+            ),
+            config=fake_config,
+            model_key=model_key,
+            transcript_text=(claims_dir / f"{sample}_ocr.md").read_text(encoding="utf-8"),
+            ground_truth=[incident],
+        )
+        provenance_key = evaluate_models._prediction_provenance_key(sample, "ocr", model_key)
+        evaluate_models._write_prediction_provenance(
+            results_dir,
+            {
+                provenance_key: evaluate_models._bind_online_prediction_provenance(
+                    provenance,
+                    pred_path,
+                )
+            },
+        )
         with mock.patch.dict(evaluate_models.MODELS, {model_key: fake_config}):
             results = evaluate_models.run_evaluation(
                 models=[model_key],
@@ -595,6 +750,17 @@ class EvaluatorRegressionTests(unittest.TestCase):
         self.assertEqual(results[0].extraction_time, 8.0)
         self.assertEqual(results[0].tokens["output_tokens"], 7)
         self.assertEqual(results[0].cost_usd, 0.00089)
+
+    def test_online_resume_rejects_changed_prediction(self) -> None:
+        output_dir = Path(tempfile.mkdtemp())
+        pred_path = output_dir / "sample_ocr_fake_predicted.json"
+        pred_path.write_text("[]", encoding="utf-8")
+        expected = {"input_fingerprint_sha256": "abc"}
+        saved = evaluate_models._bind_online_prediction_provenance(expected, pred_path)
+
+        self.assertTrue(evaluate_models._online_resume_matches(saved, expected, pred_path))
+        pred_path.write_text("[{}]", encoding="utf-8")
+        self.assertFalse(evaluate_models._online_resume_matches(saved, expected, pred_path))
 
     def test_quick_mode_uses_current_release_samples(self) -> None:
         out_dir = Path(tempfile.mkdtemp())
@@ -619,6 +785,15 @@ class EvaluatorRegressionTests(unittest.TestCase):
         report = json.loads((out_dir / "evaluation_report.json").read_text(encoding="utf-8"))
         samples = {entry["sample"] for entry in report["detailed_results"]}
         self.assertEqual(samples, set(evaluate_models._QUICK_SAMPLES))
+
+    def test_cli_model_choices_follow_model_registry(self) -> None:
+        parser = evaluate_models.build_argument_parser()
+
+        args = parser.parse_args(["--models", "codex_gpt56_sol", "claude_fable5"])
+
+        self.assertEqual(args.models, ["codex_gpt56_sol", "claude_fable5"])
+        models_action = next(action for action in parser._actions if action.dest == "models")
+        self.assertEqual(set(models_action.choices), set(evaluate_models.MODELS))
 
 
 if __name__ == "__main__":

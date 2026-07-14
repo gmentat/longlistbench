@@ -65,7 +65,7 @@ MULTIHOP_CASE_CONFIGS: tuple[MultiHopCaseConfig, ...] = (
         case_type="multihop",
         num_incidents=12,
         seed_offset=101,
-        spacer_pages=(28, 18, 18),
+        spacer_pages=(20, 16, 12),
         join_requirements=(
             "unit_number -> driver roster",
             "cause_code -> cause classification appendix",
@@ -82,7 +82,7 @@ MULTIHOP_CASE_CONFIGS: tuple[MultiHopCaseConfig, ...] = (
         case_type="multihop",
         num_incidents=25,
         seed_offset=202,
-        spacer_pages=(52, 34, 28),
+        spacer_pages=(30, 26, 24),
         join_requirements=(
             "policy_number -> policy register",
             "incident_number -> claimant index",
@@ -100,7 +100,7 @@ MULTIHOP_CASE_CONFIGS: tuple[MultiHopCaseConfig, ...] = (
         case_type="mixed",
         num_incidents=40,
         seed_offset=303,
-        spacer_pages=(78, 54, 40),
+        spacer_pages=(42, 40, 36),
         join_requirements=(
             "policy_number -> policy register",
             "unit_number -> driver roster",
@@ -318,12 +318,18 @@ def _table(headers: list[str], rows: list[list[Any]], *, class_name: str = "data
 """
 
 
-def _page(title: str, body: str, *, class_name: str = "") -> str:
+def _page(
+    title: str,
+    body: str,
+    *,
+    class_name: str = "",
+    source_label: str = "Claims Administration File",
+) -> str:
     return f"""
 <section class="page {class_name}">
   <div class="page-head">
     <span>{escape(title)}</span>
-    <span>Loss Run Workpaper</span>
+    <span>{escape(source_label)}</span>
   </div>
   {body}
 </section>
@@ -377,7 +383,7 @@ def _html_document(title: str, body: str) -> str:
       gap: 8px 24px;
       margin-top: 20px;
     }}
-    .label {{ color: #4b5563; font-size: 7.5pt; text-transform: uppercase; }}
+    .label {{ color: #4b5563; display: block; font-size: 7.5pt; margin-bottom: 1px; text-transform: uppercase; }}
     .value {{ font-size: 10pt; margin-bottom: 8px; }}
     .notice {{
       border-left: 5px solid #374151;
@@ -691,6 +697,137 @@ def _html_document(title: str, body: str) -> str:
       color: #64748b;
       font-size: 7pt;
     }}
+    .system-print {{
+      color: #111;
+      font-family: "Courier New", Courier, monospace;
+      font-size: 7.2pt;
+    }}
+    .system-banner {{
+      border: 1px solid #111;
+      display: flex;
+      font-weight: 700;
+      justify-content: space-between;
+      margin-bottom: 8px;
+      padding: 5px 7px;
+    }}
+    .system-print table {{ table-layout: auto; }}
+    .system-print th {{
+      background: #fff;
+      border-color: #111;
+      color: #111;
+      font-family: "Courier New", Courier, monospace;
+      font-size: 6.6pt;
+    }}
+    .system-print td {{ border-color: #555; font-size: 6.7pt; }}
+    .diary-stream {{ border-top: 2px solid #222; margin-top: 8px; }}
+    .diary-entry {{
+      border-bottom: 1px solid #777;
+      display: grid;
+      gap: 7px;
+      grid-template-columns: 82px 72px 1fr;
+      padding: 6px 2px;
+    }}
+    .diary-entry:nth-child(even) {{ background: #f4f4f4; }}
+    .diary-entry .date {{ font-weight: 700; }}
+    .claim-form {{
+      border: 1.5px solid #222;
+      font-family: Arial, Helvetica, sans-serif;
+      padding: 10px 12px;
+    }}
+    .claim-form-title {{
+      border-bottom: 2px solid #222;
+      font-size: 13pt;
+      font-weight: 700;
+      margin-bottom: 9px;
+      padding-bottom: 5px;
+      text-align: center;
+      text-transform: uppercase;
+    }}
+    .claim-form-grid {{
+      display: grid;
+      gap: 0;
+      grid-template-columns: 1fr 1fr 1fr;
+      margin-bottom: 9px;
+    }}
+    .claim-form-field {{
+      border: 1px solid #777;
+      min-height: 38px;
+      padding: 4px 5px;
+    }}
+    .claim-form-field.wide {{ grid-column: span 2; }}
+    .claim-form-field .label {{ color: #222; font-size: 6.4pt; }}
+    .claim-narrative {{
+      border: 1px solid #777;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 8pt;
+      line-height: 1.42;
+      min-height: 132px;
+      padding: 8px 10px;
+    }}
+    .letter-page {{
+      font-family: "Times New Roman", Times, serif;
+      font-size: 9pt;
+      line-height: 1.42;
+      margin: 10px 34px;
+    }}
+    .letter-masthead {{
+      border-bottom: 3px double #222;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16pt;
+      font-weight: 700;
+      margin-bottom: 18px;
+      padding-bottom: 7px;
+    }}
+    .letter-page .address-block {{ margin: 16px 0; white-space: pre-line; }}
+    .letter-page .subject-line {{ font-weight: 700; margin: 14px 0; }}
+    .estimate-sheet {{
+      border: 1px solid #333;
+      font-family: Arial, Helvetica, sans-serif;
+      padding: 9px;
+    }}
+    .estimate-head {{
+      align-items: end;
+      border-bottom: 4px solid #333;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 8px;
+      padding-bottom: 6px;
+    }}
+    .estimate-head strong {{ font-size: 15pt; }}
+    .estimate-sheet th {{ background: #555; }}
+    .estimate-total {{
+      border-top: 2px solid #222;
+      font-size: 9pt;
+      font-weight: 700;
+      margin-left: auto;
+      margin-top: 8px;
+      padding-top: 5px;
+      text-align: right;
+      width: 42%;
+    }}
+    .coverage-sheet {{
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 6px 20px;
+    }}
+    .coverage-sheet h2 {{
+      border-bottom: 1px solid #111;
+      font-size: 13pt;
+      padding-bottom: 5px;
+      text-align: center;
+    }}
+    .coverage-block {{
+      border: 1px solid #444;
+      margin: 8px 0;
+      padding: 8px;
+    }}
+    .coverage-block dl {{
+      display: grid;
+      gap: 3px 9px;
+      grid-template-columns: 130px 1fr;
+      margin: 0;
+    }}
+    .coverage-block dt {{ font-weight: 700; }}
+    .coverage-block dd {{ margin: 0; }}
   </style>
 </head>
 <body>
@@ -783,10 +920,10 @@ def _cover_page(config: MultiHopCaseConfig, incidents: list[dict[str, Any]]) -> 
     body = f"""
 <div class="cover">
   <div class="stamp">RENEWAL REVIEW COPY</div>
-  <h1>Commercial Auto Loss Run Workpaper</h1>
-  <p>Prepared for underwriting review. This workpaper combines a primary claim
-  extract with appendices, register pages, handwritten-style notes, and ledger
-  pages retained in the account file.</p>
+  <h1>Commercial Auto Claim History</h1>
+  <p>Claim history and supporting file material prepared for account review.
+  The packet includes claim summaries, correspondence, policy-service records,
+  examiner notes, and financial detail retained in the claim system.</p>
   <div class="cover-grid">
     <div><div class="label">Account</div><div class="value">{escape(insured)}</div></div>
     <div><div class="label">Valuation Date</div><div class="value">01/31/2024</div></div>
@@ -794,13 +931,13 @@ def _cover_page(config: MultiHopCaseConfig, incidents: list[dict[str, Any]]) -> 
     <div><div class="label">File Reference</div><div class="value">{file_reference}</div></div>
   </div>
   <div class="notice">
-    Appendices were received from the carrier portal, fleet schedule, financial
-    ledger, and prior-carrier response files. Row keys and reference numbers
-    are retained as printed in the account file.
+    Information in this packet comes from several claim and policy systems.
+    File numbers, policy references, and document references are shown as they
+    appear on each source page.
   </div>
 </div>
 """
-    return _page("Account workpaper cover", body)
+    return _page("Claim history cover", body)
 
 
 def _portal_receipt_page(config: MultiHopCaseConfig, incidents: list[dict[str, Any]]) -> str:
@@ -819,7 +956,6 @@ def _portal_receipt_page(config: MultiHopCaseConfig, incidents: list[dict[str, A
 <div class="portal">
   <aside class="portal-side">
     <strong>Account Portal</strong><br>
-    User: account-review<br>
     Queue: {queue_id}<br>
     Valuation: 01/31/2024<br>
     Rows staged: {len(incidents)}<br><br>
@@ -840,31 +976,6 @@ def _portal_receipt_page(config: MultiHopCaseConfig, incidents: list[dict[str, A
 </div>
 """
     return _page("Portal export receipt", body)
-
-
-def _letterhead_request_page(incidents: list[dict[str, Any]]) -> str:
-    rows = [
-        [
-            item["reference_number"],
-            item["loss_state"],
-            item["date_of_loss"],
-            item["status"],
-        ]
-        for item in incidents[: min(5, len(incidents))]
-    ]
-    body = f"""
-<div class="letterhead">
-  <div class="seal">K</div>
-  <h2 style="text-align: center;">Department of Motor Carrier Records</h2>
-  <p style="text-align: center;">Report of Services Provided</p>
-  <p><strong>Note:</strong> This report summarizes record-search responses
-  received for underwriting review. It is not a billing statement and does not
-  contain the complete claim detail schedule.</p>
-  {_table(["Reference", "State", "Event Date", "Status"], rows)}
-  <p style="text-align: center; margin-top: 22px;">Do not pay from this report.</p>
-</div>
-"""
-    return _page("Official request response", body)
 
 
 def _unit_spreadsheet_page(incidents: list[dict[str, Any]]) -> str:
@@ -891,56 +1002,9 @@ def _unit_spreadsheet_page(incidents: list[dict[str, Any]]) -> str:
     return _page("Vehicle unit reference export", body)
 
 
-def _mileage_summary_page(incidents: list[dict[str, Any]]) -> str:
-    states = ["Alabama", "Arkansas", "California", "Colorado", "Georgia", "Illinois", "Indiana", "Iowa"]
-    chunks = []
-    for item in incidents[: min(3, len(incidents))]:
-        rows = [
-            [idx, state, f"{(idx * 97 + len(item['incident_number'])):,.1f}", "0.0", f"{(idx * 97 + len(item['reference_number'])):,.1f}"]
-            for idx, state in enumerate(states, start=1)
-        ]
-        chunks.append(
-            f"""
-  <div class="mini-report">
-    <h3>Vehicle: {escape(item['unit_number'].split()[-1])}</h3>
-    {_table(["#", "State", "Qualified Miles", "Unqualified Miles", "Total"], rows)}
-  </div>"""
-        )
-    body = """
-<div class="spreadsheet-page">
-  <h2>IFTA Mileage: All Units - Quarter Activity</h2>
-""" + "".join(chunks) + """
-</div>
-"""
-    return _page("IFTA mileage schedule", body)
-
-
-def _rotated_scan_page(incidents: list[dict[str, Any]]) -> str:
-    rows = [
-        [
-            item["driver_name"],
-            item["unit_number"].split()[-1],
-            item["reference_number"],
-            item["loss_state"],
-            item["date_of_loss"],
-        ]
-        for item in incidents[: min(12, len(incidents))]
-    ]
-    body = """
-<div class="rotated-page">
-  <div class="sideways-marker">Broker attachment - rotated source page</div>
-  <div class="rotated-inner">
-    <h2 style="text-align: center; font-size: 11pt;">Drivers</h2>
-""" + _table(["Driver", "Unit", "Reference", "State", "Date"], rows) + """
-  </div>
-</div>
-"""
-    return _page("Rotated driver schedule scan", body, class_name="rotated-page")
-
-
 def _primary_schedule_page(incidents: list[dict[str, Any]]) -> str:
     pages: list[str] = []
-    for page_index, chunk in enumerate(_chunks(incidents, 10), start=1):
+    for page_index, chunk in enumerate(_balanced_chunks(incidents, 10), start=1):
         cards = []
         for idx, item in enumerate(chunk, start=1 + (page_index - 1) * 10):
             unit_short = item["unit_number"].split()[-1]
@@ -969,8 +1033,7 @@ def _primary_schedule_page(incidents: list[dict[str, Any]]) -> str:
 <h2>Claim Intake File Cards</h2>
 <div class="notice">
   These file cards were printed from the intake queue. Policy, unit, and cause
-  references are copied from source systems; supporting appendices appear later
-  in the workpaper.
+  references retain the labels used when the loss was reported.
 </div>
 <div class="claim-card-grid">{''.join(cards)}</div>
 """
@@ -983,222 +1046,307 @@ def _sample_window(incidents: list[dict[str, Any]], page_idx: int, size: int) ->
     return [incidents[(page_idx + offset) % len(incidents)] for offset in range(size)]
 
 
-def _chunks(items: list[dict[str, Any]], size: int) -> list[list[dict[str, Any]]]:
-    return [items[index : index + size] for index in range(0, len(items), size)]
+def _balanced_chunks(items: list[Any], max_size: int) -> list[list[Any]]:
+    if not items:
+        return []
+    chunk_count = (len(items) + max_size - 1) // max_size
+    base_size, remainder = divmod(len(items), chunk_count)
+    chunks: list[list[Any]] = []
+    start = 0
+    for chunk_index in range(chunk_count):
+        chunk_size = base_size + (1 if chunk_index < remainder else 0)
+        chunks.append(items[start : start + chunk_size])
+        start += chunk_size
+    return chunks
 
 
 def _label(options: tuple[str, ...], index: int) -> str:
     return options[index % len(options)]
 
 
-def _monthly_account_activity_page(
+def _claim_diary_page(
     case_id: str,
     page_idx: int,
     rng: random.Random,
     incidents: list[dict[str, Any]],
 ) -> str:
-    activity_types = ["Premium receipt", "Endorsement", "Audit adjustment", "Claim reserve", "Fee reversal"]
+    actions = (
+        "Initial contact attempt documented; callback window entered for the assigned examiner.",
+        "Repair documentation received and routed for review of labor rates and prior damage.",
+        "Coverage question sent to policy services; diary extended pending the written response.",
+        "Reserve review completed. No authority change was requested on this activity entry.",
+        "Statement request issued to the reporting party and indexed to incoming correspondence.",
+        "Recovery potential reviewed after liability discussion; follow-up remains open.",
+        "Medical invoice image indexed. Coding review is pending before payment consideration.",
+        "Supervisor reviewed the current file status and returned the activity to the examiner queue.",
+    )
+    entries = []
+    for idx, item in enumerate(_sample_window(incidents, page_idx, 16), start=1):
+        note = actions[(page_idx * 3 + idx) % len(actions)]
+        entries.append(
+            f"""
+<div class="diary-entry">
+  <div class="date">{(idx % 12) + 1:02d}/{(idx * 2 % 27) + 1:02d}/2024<br>{8 + idx % 9:02d}:{(idx * 7) % 60:02d}</div>
+  <div>{escape(item['reference_number'])}<br>{escape(rng.choice(['EXAM', 'SUPV', 'CLERK', 'RECOV']))}</div>
+  <div>{escape(note)}</div>
+</div>"""
+        )
+    system_names = ("ClaimCenter Activity Detail", "Examiner Diary Print", "Open File Activity History")
+    system_name = system_names[page_idx % len(system_names)]
+    body = f"""
+<div class="system-print">
+  <div class="system-banner">
+    <span>{escape(system_name)}</span>
+    <span>Batch {_review_reference(case_id, page_idx, 'ACT')}</span>
+  </div>
+  <div>Activity range: 01/01/2024 - 03/31/2024 &nbsp;&nbsp; Sort: entered date / ascending</div>
+  <div class="diary-stream">{''.join(entries)}</div>
+</div>
+"""
+    return _page(
+        system_name,
+        body,
+        class_name="system-print",
+        source_label=rng.choice(("Claims System Print", "Activity History", "Examiner Queue")),
+    )
+
+
+def _repair_estimate_page(
+    case_id: str,
+    page_idx: int,
+    rng: random.Random,
+    incidents: list[dict[str, Any]],
+) -> str:
+    item = incidents[(page_idx * 3) % len(incidents)]
+    operations = (
+        "Remove and install front bumper assembly",
+        "Repair left side cab panel",
+        "Refinish repaired panel and blend adjacent surface",
+        "Replace lamp assembly",
+        "Inspect steering linkage and alignment",
+        "Repair hood mounting bracket",
+        "Replace mirror housing",
+        "Clean debris and protect interior",
+        "Scan vehicle systems before repair",
+        "Scan vehicle systems after repair",
+        "Road test and quality inspection",
+        "Shop materials and hazardous-waste handling",
+        "Remove and install grille assembly",
+        "Repair lower step and mounting support",
+        "Replace fasteners and one-time-use clips",
+        "Apply corrosion protection to repaired surfaces",
+        "Measure frame and record reference dimensions",
+        "Final wash and delivery preparation",
+    )
     rows = []
-    for idx, item in enumerate(_sample_window(incidents, page_idx, 18), start=1):
-        amount = rng.randint(75, 9800) + rng.random()
-        if idx % 5 == 0:
-            amount *= -1
+    subtotal = 0.0
+    for idx, operation in enumerate(operations, start=1):
+        labor_hours = round(rng.uniform(0.3, 6.5), 1)
+        labor = round(labor_hours * rng.choice((76.0, 82.0, 89.0, 96.0)), 2)
+        parts = round(rng.uniform(0, 1450), 2) if idx % 3 != 0 else 0.0
+        subtotal += labor + parts
         rows.append(
             [
-                f"02/{(idx % 27) + 1:02d}/2024",
-                item["reference_number"] if idx % 3 == 0 else f"ACCT-{page_idx:03d}-{idx:02d}",
-                activity_types[(page_idx + idx) % len(activity_types)],
-                item["policy_number"],
-                rng.choice(["Posted", "Pending", "Reconciled"]),
-                _money(amount),
+                idx,
+                operation,
+                f"{labor_hours:.1f}",
+                _money(labor),
+                _money(parts) if parts else "--",
             ]
         )
+    estimate_number = _review_reference(case_id, page_idx, "EST")
     body = f"""
-<h2>Monthly Account Activity</h2>
-<div class="worksheet-meta">
-  <div><span class="label">Account batch</span><br>{_review_reference(case_id, page_idx, "BATCH")}</div>
-  <div><span class="label">Accounting month</span><br>February 2024</div>
-  <div><span class="label">Source</span><br>Billing ledger export</div>
+<div class="estimate-sheet">
+  <div class="estimate-head">
+    <strong>{escape(rng.choice(('Northline Fleet Repair', 'Harbor Commercial Collision', 'Summit Heavy Vehicle Repair')))}</strong>
+    <span>Preliminary estimate<br>No. {escape(estimate_number)}</span>
+  </div>
+  <div class="worksheet-meta">
+    <div><span class="label">File reference</span><br>{escape(item['reference_number'])}</div>
+    <div><span class="label">Unit</span><br>{escape(item['unit_number'])}</div>
+    <div><span class="label">Inspection date</span><br>{(page_idx % 12) + 1:02d}/{(page_idx * 3 % 27) + 1:02d}/2024</div>
+  </div>
+  {_table(['Line', 'Operation / Description', 'Labor Hrs', 'Labor', 'Parts'], rows, class_name='data-table worksheet-table')}
+  <div class="estimate-total">Estimate subtotal: {_money(subtotal)}<br><span class="small">Supplemental damage subject to inspection</span></div>
 </div>
-{_table(["Date", "Document", "Activity", "Policy", "Status", "Amount"], rows, class_name="data-table worksheet-table ledger-lite")}
 """
-    return _page("Monthly account activity", body, class_name="worksheet")
+    return _page(
+        "Repair estimate",
+        body,
+        class_name="estimate-page",
+        source_label="Repair Facility Attachment",
+    )
 
 
-def _premium_allocation_page(
+def _coverage_verification_page(
     case_id: str,
     page_idx: int,
     rng: random.Random,
     incidents: list[dict[str, Any]],
 ) -> str:
-    jurisdictions = ["AL", "AR", "CA", "CO", "GA", "IL", "IN", "IA", "KS", "MO", "NC", "PA", "TX", "VA"]
-    rows = []
-    for idx, state in enumerate(jurisdictions, start=1):
-        written = rng.randint(0, 175000)
-        taxable = int(written * rng.uniform(0.62, 0.98))
-        tax_rate = rng.choice([0.0, 0.0125, 0.018, 0.0275, 0.031])
-        fee = taxable * tax_rate
-        rows.append(
-            [
-                f"Schedule {page_idx:03d}",
-                state,
-                rng.choice(["N", "Y"]),
-                f"{written:,}",
-                f"{taxable:,}",
-                f"{tax_rate:.4f}",
-                _money(fee),
-                _money(fee + rng.randint(-90, 240)),
-            ]
+    blocks = []
+    labels = (
+        ("Policy reference", "Coverage status", "Jurisdiction", "Verification source"),
+        ("Policy no.", "File disposition", "Policy state", "Record reviewed"),
+        ("Contract number", "Coverage review", "Issuing state", "Source document"),
+    )
+    for idx, item in enumerate(_sample_window(incidents, page_idx, min(6, len(incidents)))):
+        selected = labels[(page_idx + idx) % len(labels)]
+        values = (
+            item["policy_number"],
+            rng.choice(("In force on reported date", "Verification pending", "Coverage issue referred")),
+            item["policy_state"],
+            rng.choice(("Declarations image", "Policy system", "Producer confirmation")),
+        )
+        fields = "".join(
+            f"<dt>{escape(label)}</dt><dd>{escape(str(value))}</dd>"
+            for label, value in zip(selected, values, strict=True)
+        )
+        blocks.append(
+            f"""
+<div class="coverage-block">
+  <dl>{fields}</dl>
+  <p><strong>Review note:</strong> {escape(rng.choice((
+      'The loss notice remains subject to all policy terms, conditions, and applicable endorsements.',
+      'Policy services was asked to confirm the scheduled auto and effective dates before payment review.',
+      'This screen print records the coverage inquiry only; it is not a coverage determination.',
+  )))}</p>
+</div>"""
         )
     body = f"""
-<h2>Premium Allocation Worksheet</h2>
-<div class="worksheet-meta">
-  <div><span class="label">Account file</span><br>{_review_reference(case_id, page_idx, "ACCT")}</div>
-  <div><span class="label">Worksheet period</span><br>2024 Policy Year</div>
-  <div><span class="label">Allocation basis</span><br>Written premium by jurisdiction</div>
+<div class="coverage-sheet">
+  <h2>Policy Services - Coverage Verification</h2>
+  <div class="worksheet-meta">
+    <div><span class="label">Inquiry batch</span><br>{_review_reference(case_id, page_idx, 'CV')}</div>
+    <div><span class="label">Requested by</span><br>Claims intake</div>
+    <div><span class="label">Printed</span><br>{(page_idx % 12) + 1:02d}/{(page_idx * 5 % 27) + 1:02d}/2024</div>
+  </div>
+  {''.join(blocks)}
 </div>
-{_table(["Schedule", "Jurisdiction", "Surcharge", "Written Premium", "Taxable Premium", "Tax Rate", "Tax Due", "Total Due"], rows, class_name="data-table worksheet-table wide")}
-<div class="form-footer">Allocation worksheet. Jurisdiction rows are retained for premium reconciliation and are not claim records.</div>
 """
-    return _page("Premium allocation worksheet", body, class_name="worksheet")
+    return _page(
+        "Coverage verification",
+        body,
+        class_name="coverage-page",
+        source_label="Policy Services",
+    )
 
 
-def _driver_qualification_audit_page(
+def _correspondence_page(
     case_id: str,
     page_idx: int,
     rng: random.Random,
     incidents: list[dict[str, Any]],
 ) -> str:
-    rows = []
-    for idx, item in enumerate(_sample_window(incidents, page_idx, 22), start=1):
-        rows.append(
-            [
-                item["driver_name"],
-                rng.choice(["AL", "CA", "GA", "IL", "IN", "MO", "PA", "TX"]),
-                f"D{rng.randint(10000000, 99999999)}",
-                f"{(idx % 12) + 1:02d}/{2025 + (idx % 3)}",
-                rng.choice(["Current", "Renewal due", "Exception noted", "Verified"]),
-                item["unit_number"].split()[-1],
-            ]
-        )
+    item = incidents[(page_idx * 5 + 1) % len(incidents)]
+    mastheads = ("HARBOR CLAIM SERVICES", "NORTHSTAR RECORDS UNIT", "SUMMIT CLAIM OPERATIONS")
+    subjects = (
+        "Request for supporting repair documentation",
+        "Acknowledgment of reported commercial auto loss",
+        "Status request regarding pending claim documentation",
+        "Confirmation of correspondence received",
+    )
+    paragraphs = (
+        "We are reviewing the reported matter identified below. Please provide any photographs, repair invoices, estimates, towing records, or other documents that have not already been submitted.",
+        "Receipt of this correspondence does not constitute an admission of liability or a determination of coverage. The claim remains subject to investigation and the terms of the applicable policy.",
+        "Please place the reference shown below on each response. Documents may be returned by secure upload or by mail to the records unit shown on this letter.",
+    )
+    recipient = rng.choice(("Records Department", "Fleet Manager", "Repair Facility", "Claim Reporting Contact"))
     body = f"""
-<h2>Driver Qualification Audit</h2>
-<div class="worksheet-meta">
-  <div><span class="label">Audit file</span><br>{_review_reference(case_id, page_idx, "DQ")}</div>
-  <div><span class="label">Review type</span><br>Annual compliance sampling</div>
-  <div><span class="label">Reviewer</span><br>Safety desk</div>
+<div class="letter-page">
+  <div class="letter-masthead">{escape(mastheads[page_idx % len(mastheads)])}</div>
+  <div>{(page_idx % 12) + 1:02d}/{(page_idx * 3 % 27) + 1:02d}/2024</div>
+  <div class="address-block">{escape(recipient)}
+{escape(item['company_name'])}
+Commercial Auto Claims File</div>
+  <div class="subject-line">Re: {escape(subjects[page_idx % len(subjects)])}<br>
+  File reference: {escape(item['reference_number'])} &nbsp;&nbsp; Policy: {escape(item['policy_number'])}</div>
+  <p>To whom it may concern:</p>
+  <p>{escape(paragraphs[page_idx % len(paragraphs)])}</p>
+  <p>{escape(paragraphs[(page_idx + 1) % len(paragraphs)])}</p>
+  <p>{escape(paragraphs[(page_idx + 2) % len(paragraphs)])}</p>
+  <p>Sincerely,</p>
+  <p><strong>{escape(rng.choice(('Claims Records Unit', 'Assigned Examiner', 'Document Services')))}</strong><br>
+  Correspondence control {_review_reference(case_id, page_idx, 'COR')}</p>
 </div>
-{_table(["Driver", "License State", "License #", "Medical Exp.", "Finding", "Unit"], rows, class_name="data-table worksheet-table")}
 """
-    return _page("Driver qualification audit", body, class_name="worksheet")
+    return _page(
+        "Claim correspondence",
+        body,
+        class_name="correspondence-page",
+        source_label="Correspondence Image",
+    )
 
 
-def _prior_carrier_correspondence_page(
+def _claim_status_report_page(
     case_id: str,
     page_idx: int,
     rng: random.Random,
     incidents: list[dict[str, Any]],
 ) -> str:
-    rows = []
-    dispositions = ["Loss runs attached", "No known losses", "Claim detail pending", "Prior term attached", "Revised run received"]
-    for idx, item in enumerate(_sample_window(incidents, page_idx, 18), start=1):
-        rows.append(
+    item = incidents[(page_idx * 7 + 2) % len(incidents)]
+    stages = (
+        "Coverage review",
+        "Liability investigation",
+        "Damage evaluation",
+        "Payment review",
+        "Recovery review",
+        "Closing review",
+    )
+    task_rows = []
+    for idx in range(1, 13):
+        task_rows.append(
             [
-                f"REQ-{page_idx:03d}-{idx:02d}",
-                item["reference_number"],
-                item["company_name"],
-                item["policy_state"],
-                f"{(idx % 12) + 1:02d}/{(idx * 2 % 27) + 1:02d}/2024",
-                rng.choice(dispositions),
+                f"{(idx % 12) + 1:02d}/{(idx * 4 % 27) + 1:02d}/2024",
+                stages[(page_idx + idx) % len(stages)],
+                rng.choice(("Open", "Complete", "Awaiting response", "Reassigned")),
+                rng.choice(("Examiner", "Supervisor", "Records", "Recovery")),
             ]
         )
-    attachment_rows = []
-    for idx, item in enumerate(_sample_window(incidents, page_idx + 3, 10), start=1):
-        attachment_rows.append(
-            [
-                f"ATT-{page_idx:03d}-{idx:02d}",
-                item["policy_number"],
-                rng.choice(["PDF loss run", "Claim note extract", "Premium audit page", "Coverage verification"]),
-                rng.choice(["Indexed", "Pending review", "Matched to account", "Do not use"]),
-            ]
-        )
+    narrative_sets = (
+        (
+            "The file was reviewed after receipt of additional photographs and a preliminary estimate. The reported sequence of events remains under investigation.",
+            "Policy services has been asked to verify the scheduled unit and effective dates. No coverage determination is recorded on this report.",
+            "The next review should address outstanding documentation, liability position, reserve adequacy, and any available recovery source.",
+        ),
+        (
+            "Contact was completed with the reporting party. The physical-damage inspection is pending and the unit has not yet been released for repair.",
+            "Correspondence images are indexed under the file reference shown above. A separate financial screen contains payment and reserve activity.",
+            "Supervisor review is required if the anticipated exposure exceeds the examiner's current authority.",
+        ),
+        (
+            "Available records were compared with the initial notice. The claim remains open while the examiner resolves conflicting descriptions of the event.",
+            "Repair and towing records have been requested. Any medical or third-party property documentation will be reviewed in the applicable coverage file.",
+            "The diary date was extended to allow time for the requested records and a policy-services response.",
+        ),
+    )
+    narrative = narrative_sets[page_idx % len(narrative_sets)]
     body = f"""
-<h2>Prior Carrier Request Response Log</h2>
-<div class="worksheet-meta">
-  <div><span class="label">Account file</span><br>{_review_reference(case_id, page_idx, "ACCT")}</div>
-  <div><span class="label">Issue Date</span><br>02/{(page_idx % 27) + 1:02d}/2024</div>
-  <div><span class="label">Extract ID</span><br>LC{page_idx:03d}{rng.randint(1000, 9999)}</div>
-</div>
-{_table(["Request", "Reference", "Account", "State", "Response Date", "Disposition"], rows, class_name="data-table worksheet-table wide")}
-{_table(["Attachment", "Policy", "Document Type", "Index Status"], attachment_rows, class_name="data-table worksheet-table")}
-<div class="dense-notes">
-  <div class="dense-note"><strong>Review note.</strong> The correspondence log records prior-carrier response handling and document indexing. Rows may reference inactive or closed files.</div>
-  <div class="dense-note"><strong>Routing note.</strong> Account review uses this page with the policy register, driver roster, and claim detail pages when resolving missing prior-loss evidence.</div>
-</div>
-<div class="form-footer">Record services unit - correspondence export</div>
-"""
-    return _page("Prior carrier correspondence", body, class_name="worksheet")
-
-
-def _risk_control_followup_page(
-    case_id: str,
-    page_idx: int,
-    rng: random.Random,
-    incidents: list[dict[str, Any]],
-) -> str:
-    checks = [
-        "Fleet safety meeting minutes retained",
-        "Post-accident drug test documentation reviewed",
-        "Driver remedial training assigned",
-        "Telematics exception report requested",
-        "Maintenance file cross-check complete",
-        "Open recommendation carried to renewal file",
-        "Claim trend reviewed with account manager",
-        "No additional field visit required",
-        "Annual MVR exception list sampled",
-        "Vehicle inspection evidence attached",
-        "Open claim reserve report compared to loss run",
-        "DOT authority status reviewed",
-        "Contracted driver certificate file requested",
-        "Large-loss narrative routed to underwriting",
-        "Driver assignment changes checked against roster",
-        "Policy state coding compared with account profile",
-        "Subrogation diary reviewed for open recovery",
-        "File note created for renewal referral",
-    ]
-    rows = []
-    for idx, check in enumerate(checks, start=1):
-        mark = "X" if (idx + page_idx) % 3 != 0 else ""
-        owner = rng.choice(["Safety", "Claims", "UW", "Fleet"])
-        rows.append(f"<div>{mark}</div><div>{escape(check)}</div><div>{escape(owner)}</div>")
-    sample_rows = []
-    statuses = ["Closed", "Open", "Referred", "Monitor", "No action"]
-    for idx, item in enumerate(_sample_window(incidents, page_idx + 5, 14), start=1):
-        sample_rows.append(
-            [
-                item["unit_number"],
-                item["driver_name"],
-                item["reference_number"],
-                rng.choice(["Collision", "Cargo", "Premises", "Vehicle", "Liability"]),
-                rng.choice(statuses),
-                f"04/{(idx * 3 % 27) + 1:02d}/2024",
-            ]
-        )
-    body = f"""
-<h2>Risk Control Follow-Up Notes</h2>
-<div class="worksheet-meta">
-  <div><span class="label">Account file</span><br>{_review_reference(case_id, page_idx, "ACCT")}</div>
-  <div><span class="label">Related unit</span><br>{escape(incidents[page_idx % len(incidents)]["unit_number"])}</div>
-  <div><span class="label">Review cycle</span><br>Renewal file checklist</div>
-</div>
-<div class="checklist">{''.join(rows)}</div>
-{_table(["Unit", "Driver", "Reference", "Review Area", "Status", "Diary Date"], sample_rows, class_name="data-table worksheet-table")}
-<div class="dense-notes">
-  <div class="dense-note"><strong>Risk control note.</strong> Follow-up items are sampled from the account service file and may not map one-to-one to the current incident schedule.</div>
-  <div class="dense-note"><strong>Underwriting note.</strong> Large-loss referrals remain open until the account manager confirms the driver, unit, policy state, and loss description.</div>
+<div class="claim-form">
+  <div class="claim-form-title">Claim Status Report</div>
+  <div class="claim-form-grid">
+    <div class="claim-form-field"><span class="label">File number</span>{escape(item['incident_number'])}</div>
+    <div class="claim-form-field"><span class="label">Reference</span>{escape(item['reference_number'])}</div>
+    <div class="claim-form-field"><span class="label">Current status</span>{escape(item['status'])}</div>
+    <div class="claim-form-field wide"><span class="label">Insured account</span>{escape(item['insured'])}</div>
+    <div class="claim-form-field"><span class="label">Report date</span>{escape(item['date_reported'])}</div>
+  </div>
+  <div class="claim-narrative">
+    <p><strong>Examiner summary</strong></p>
+    <p>{escape(narrative[0])}</p>
+    <p>{escape(narrative[1])}</p>
+    <p>{escape(narrative[2])}</p>
+  </div>
+  {_table(['Diary', 'Work item', 'Status', 'Owner'], task_rows, class_name='data-table worksheet-table')}
+  <div class="small" style="margin-top:8px;">Report control: {_review_reference(case_id, page_idx, 'STAT')}</div>
 </div>
 """
-    return _page("Risk control follow-up notes", body, class_name="worksheet")
+    return _page(
+        "Claim status report",
+        body,
+        class_name="claim-status-page",
+        source_label="Examiner Report",
+    )
 
 
 def _subrogation_diary_page(
@@ -1233,25 +1381,150 @@ def _subrogation_diary_page(
   <div class="dense-note"><strong>Routing note.</strong> Recoveries are compared with the financial ledger and claim detail pages before any account-level recovery credit is applied.</div>
 </div>
 """
-    return _page("Subrogation diary extract", body, class_name="worksheet")
+    return _page(
+        "Subrogation diary extract",
+        body,
+        class_name="worksheet",
+        source_label="Recovery Unit Diary",
+    )
 
 
-def _filler_page(case_id: str, page_idx: int, rng: random.Random, incidents: list[dict[str, Any]]) -> str:
-    page_generators = [
-        _monthly_account_activity_page,
-        _risk_control_followup_page,
-        _driver_qualification_audit_page,
-        _prior_carrier_correspondence_page,
-        _premium_allocation_page,
-        _subrogation_diary_page,
+def _first_notice_page(
+    case_id: str,
+    page_idx: int,
+    rng: random.Random,
+    incidents: list[dict[str, Any]],
+) -> str:
+    item = incidents[(page_idx * 11 + 3) % len(incidents)]
+    narrative = rng.choice(
+        (
+            "The reporting contact advised that the scheduled vehicle was involved in a low-speed maneuver at a customer location. Photographs and the incident exchange form were requested.",
+            "The loss was reported after a roadway incident involving the insured unit and another vehicle. Liability remains undetermined pending statements and scene documentation.",
+            "The reporting party described damage discovered after delivery. Shipping records, photographs, and a written timeline were requested for review.",
+            "The vehicle left the roadway during adverse conditions. Towing documentation and an inspection estimate were requested before the next file review.",
+        )
+    )
+    fields = [
+        ("Notice reference", item["reference_number"]),
+        ("Reported", item["date_reported"]),
+        ("Event date", item["date_of_loss"]),
+        ("State", item["loss_state"]),
+        ("Unit reported", item["unit_number"].split()[-1]),
+        ("Intake status", rng.choice(("Assigned", "Pending verification", "Supervisor review"))),
+        ("Reported by", rng.choice(("Fleet contact", "Broker reporting desk", "Driver supervisor"))),
+        ("Contact method", rng.choice(("Telephone", "Secure portal", "Email attachment"))),
+        ("Police report", rng.choice(("Requested", "Not available", "Received"))),
     ]
-    generator = page_generators[page_idx % len(page_generators)]
-    return generator(case_id, page_idx, rng, incidents)
+    handling_rows = [
+        ["Policy verification", rng.choice(("Requested", "Complete", "Pending")), "Policy services"],
+        ["Vehicle inspection", rng.choice(("Assigned", "Not required", "Pending")), "Damage unit"],
+        ["Statement", rng.choice(("Requested", "Scheduled", "Not yet assigned")), "Examiner"],
+        ["Photographs", rng.choice(("Received", "Requested", "Portal link sent")), "Records"],
+        ["Recovery review", rng.choice(("Screened", "Deferred", "Pending liability")), "Recovery unit"],
+        ["Next diary", f"{(page_idx % 12) + 1:02d}/{(page_idx * 7 % 27) + 1:02d}/2024", "Examiner"],
+    ]
+    cells = "".join(
+        f'<div class="claim-form-field"><span class="label">{escape(label)}</span>{escape(str(value))}</div>'
+        for label, value in fields
+    )
+    body = f"""
+<div class="claim-form">
+  <div class="claim-form-title">Commercial Auto - First Notice of Loss</div>
+  <div class="claim-form-grid">{cells}</div>
+  <div class="claim-narrative">
+    <p><strong>Description as reported</strong></p>
+    <p>{escape(narrative)}</p>
+    <p><strong>Immediate handling:</strong> The intake unit created the file, requested available supporting records, and routed the notice for policy and assignment review.</p>
+  </div>
+  {_table(['Initial handling item', 'Disposition', 'Owner'], handling_rows, class_name='data-table worksheet-table')}
+  <div class="small" style="margin-top:8px;">Intake control: {_review_reference(case_id, page_idx, 'FNOL')}</div>
+</div>
+"""
+    return _page(
+        "First notice of loss",
+        body,
+        class_name="first-notice-page",
+        source_label="Claim Intake",
+    )
 
 
-def _spacer_pages(config: MultiHopCaseConfig, count: int, start: int, incidents: list[dict[str, Any]]) -> str:
+def _document_index_page(
+    case_id: str,
+    page_idx: int,
+    rng: random.Random,
+    incidents: list[dict[str, Any]],
+) -> str:
+    document_types = (
+        "Loss notice",
+        "Photographs",
+        "Repair estimate",
+        "Coverage inquiry",
+        "Police report request",
+        "Recorded statement request",
+        "Towing invoice",
+        "Email correspondence",
+        "Recovery notice",
+        "Supervisor review",
+    )
+    rows = []
+    for idx, item in enumerate(_sample_window(incidents, page_idx + 2, 30), start=1):
+        rows.append(
+            [
+                f"{page_idx:03d}-{idx:04d}",
+                item["reference_number"],
+                document_types[(page_idx + idx) % len(document_types)],
+                f"{(idx % 12) + 1:02d}/{(idx * 5 % 27) + 1:02d}/2024",
+                rng.choice(("Incoming", "Outgoing", "System generated")),
+                rng.choice(("Indexed", "Review pending", "Filed")),
+            ]
+        )
+    body = f"""
+<div class="system-print">
+  <div class="system-banner">
+    <span>Imaged Document Inventory</span>
+    <span>Control {_review_reference(case_id, page_idx, 'IMG')}</span>
+  </div>
+  {_table(['Image ID', 'File Ref.', 'Document Description', 'Received / Sent', 'Direction', 'Index Status'], rows, class_name='data-table worksheet-table')}
+  <p>End of page - results sorted by image date and document identifier.</p>
+</div>
+"""
+    return _page(
+        "Document inventory",
+        body,
+        class_name="system-print",
+        source_label="Imaging System Print",
+    )
+
+
+def _supporting_file_pages(
+    config: MultiHopCaseConfig,
+    count: int,
+    start: int,
+    incidents: list[dict[str, Any]],
+) -> str:
     rng = random.Random(_stable_seed(7000 + start, config.id, count))
-    return "".join(_filler_page(config.id, start + i, rng, incidents) for i in range(count))
+    page_generators = [
+        _claim_diary_page,
+        _repair_estimate_page,
+        _coverage_verification_page,
+        _correspondence_page,
+        _claim_status_report_page,
+        _subrogation_diary_page,
+        _first_notice_page,
+        _document_index_page,
+    ]
+    schedule = [page_generators[index % len(page_generators)] for index in range(count)]
+    rng.shuffle(schedule)
+    pages = []
+    previous_name = ""
+    for offset, generator in enumerate(schedule):
+        if generator.__name__ == previous_name and len(page_generators) > 1:
+            swap_index = (offset + 1) % len(schedule)
+            schedule[offset], schedule[swap_index] = schedule[swap_index], schedule[offset]
+            generator = schedule[offset]
+        pages.append(generator(config.id, start + offset, rng, incidents))
+        previous_name = generator.__name__
+    return "".join(pages)
 
 
 def _driver_roster_section(incidents: list[dict[str, Any]]) -> str:
@@ -1266,7 +1539,7 @@ def _driver_roster_section(incidents: list[dict[str, Any]]) -> str:
         }
         for i in range(1, 7)
     ]
-    for page_index, chunk in enumerate(_chunks(roster_rows, 14), start=1):
+    for page_index, chunk in enumerate(_balanced_chunks(roster_rows, 14), start=1):
         entries = []
         for idx, item in enumerate(chunk, start=1 + (page_index - 1) * 14):
             status = "inactive prior-term unit" if str(item["unit_number"]).startswith("2023 ZZ") else "active scheduled unit"
@@ -1373,7 +1646,7 @@ definitions below are written as filing instructions rather than as a data expor
 
 def _claimant_index_section(incidents: list[dict[str, Any]]) -> str:
     pages: list[str] = []
-    for page_index, chunk in enumerate(_chunks(incidents, 12), start=1):
+    for page_index, chunk in enumerate(_balanced_chunks(incidents, 12), start=1):
         cards = []
         for idx, item in enumerate(chunk, start=1 + (page_index - 1) * 12):
             claimants = "; ".join(item.get("claimants") or [])
@@ -1406,7 +1679,7 @@ def _claimant_index_section(incidents: list[dict[str, Any]]) -> str:
 
 def _financial_ledger_section(incidents: list[dict[str, Any]]) -> str:
     pages: list[str] = []
-    for page_index, chunk in enumerate(_chunks(incidents, 8), start=1):
+    for page_index, chunk in enumerate(_balanced_chunks(incidents, 8), start=1):
         blocks = []
         for item in chunk:
             cells = []
@@ -1466,24 +1739,21 @@ def _case_html(config: MultiHopCaseConfig, incidents: list[dict[str, Any]]) -> s
     body = (
         _cover_page(config, incidents)
         + _portal_receipt_page(config, incidents)
-        + _letterhead_request_page(incidents)
         + _primary_schedule_page(incidents)
         + _unit_spreadsheet_page(incidents)
-        + _spacer_pages(config, first_gap, 1, incidents)
-        + _mileage_summary_page(incidents)
-        + _rotated_scan_page(incidents)
+        + _supporting_file_pages(config, first_gap, 1, incidents)
         + _driver_roster_section(incidents)
         + _policy_register_section(incidents)
-        + _spacer_pages(config, second_gap, first_gap + 1, incidents)
+        + _supporting_file_pages(config, second_gap, first_gap + 1, incidents)
         + _cause_code_section()
         + _claimant_index_section(incidents)
-        + _spacer_pages(config, third_gap, first_gap + second_gap + 1, incidents)
+        + _supporting_file_pages(config, third_gap, first_gap + second_gap + 1, incidents)
         + _financial_ledger_section(incidents)
     )
     if config.case_type == "mixed":
-        body += _spacer_pages(config, 10, first_gap + second_gap + third_gap + 1, incidents)
+        body += _supporting_file_pages(config, 6, first_gap + second_gap + third_gap + 1, incidents)
         body += _archived_distractor_section(config, incidents)
-    return _html_document("Commercial Auto Loss Run Workpaper", body)
+    return _html_document("Commercial Auto Claim History", body)
 
 
 async def _render_pdf(html_path: Path, pdf_path: Path) -> None:
@@ -1597,7 +1867,7 @@ def _write_case(
         asyncio.run(_render_pdf(html_path, pdf_path))
 
     seed = _stable_seed(base_seed, config.id, config.seed_offset)
-    estimated_pages = 12 + sum(config.spacer_pages) + (11 if config.case_type == "mixed" else 0)
+    estimated_pages = 9 + sum(config.spacer_pages) + (7 if config.case_type == "mixed" else 0)
     rendered_pages = _count_pdf_pages(pdf_path) if render_pdf else None
     metadata = {
         "id": config.id,
@@ -1617,11 +1887,16 @@ def _write_case(
         "layout_templates": [
             "packet_cover",
             "portal_receipt",
-            "official_request_response",
             "claim_file_cards",
             "spreadsheet_unit_reference",
-            "mileage_schedule",
-            "rotated_scan_excerpt",
+            "claim_diary",
+            "first_notice_of_loss",
+            "claim_status_report",
+            "coverage_verification",
+            "repair_estimate",
+            "correspondence_image",
+            "imaged_document_inventory",
+            "recovery_diary",
             "driver_assignment_cards",
             "policy_register_cards",
             "cause_classification_narrative",

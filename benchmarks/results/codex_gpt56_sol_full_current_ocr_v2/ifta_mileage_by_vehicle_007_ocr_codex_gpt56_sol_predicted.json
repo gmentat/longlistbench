@@ -1549,7 +1549,7 @@
   {
     "identified_miles": "5,291.2",
     "state": "Alabama",
-    "total_miles": "5,451.4",
+    "total_miles": "5,451.1",
     "unidentified_miles": "160.2",
     "vehicle": "850"
   },
@@ -1892,7 +1892,7 @@
   {
     "identified_miles": "6,848.2",
     "state": "Michigan",
-    "total_miles": "6,884.8",
+    "total_miles": "6,884.2",
     "unidentified_miles": "36.6",
     "vehicle": "1602"
   },
@@ -2177,9 +2177,9 @@
     "vehicle": "8382"
   },
   {
-    "identified_miles": "6696.0",
+    "identified_miles": "6,696.0",
     "state": "Oklahoma",
-    "total_miles": "6696.0",
+    "total_miles": "6,696.0",
     "unidentified_miles": "0.0",
     "vehicle": "8382"
   },
@@ -2191,65 +2191,65 @@
     "vehicle": "8382"
   },
   {
-    "identified_miles": "1486.8",
+    "identified_miles": "1,486.8",
     "state": "Pennsylvania",
-    "total_miles": "1486.8",
+    "total_miles": "1,486.8",
     "unidentified_miles": "0.0",
     "vehicle": "8382"
   },
   {
-    "identified_miles": "3527.5",
+    "identified_miles": "3,527.5",
     "state": "South Carolina",
-    "total_miles": "3527.5",
+    "total_miles": "3,527.5",
     "unidentified_miles": "0.0",
     "vehicle": "8382"
   },
   {
-    "identified_miles": "6284.3",
+    "identified_miles": "6,284.3",
     "state": "Tennessee",
-    "total_miles": "6284.3",
+    "total_miles": "6,284.3",
     "unidentified_miles": "0.0",
     "vehicle": "8382"
   },
   {
-    "identified_miles": "6102.7",
+    "identified_miles": "6,102.7",
     "state": "Texas",
-    "total_miles": "6102.7",
+    "total_miles": "6,102.7",
     "unidentified_miles": "0.0",
     "vehicle": "8382"
   },
   {
-    "identified_miles": "5507.2",
+    "identified_miles": "5,507.2",
     "state": "Utah",
-    "total_miles": "5507.2",
+    "total_miles": "5,507.2",
     "unidentified_miles": "0.0",
     "vehicle": "8382"
   },
   {
-    "identified_miles": "3577.2",
+    "identified_miles": "3,577.2",
     "state": "Virginia",
-    "total_miles": "3577.2",
+    "total_miles": "3,577.2",
     "unidentified_miles": "0.0",
     "vehicle": "8382"
   },
   {
-    "identified_miles": "6143.9",
+    "identified_miles": "6,143.9",
     "state": "Washington",
-    "total_miles": "6143.9",
+    "total_miles": "6,143.9",
     "unidentified_miles": "0.0",
     "vehicle": "8382"
   },
   {
-    "identified_miles": "6826.8",
+    "identified_miles": "6,826.8",
     "state": "West Virginia",
-    "total_miles": "6826.8",
+    "total_miles": "6,826.8",
     "unidentified_miles": "0.0",
     "vehicle": "8382"
   },
   {
-    "identified_miles": "4842.4",
+    "identified_miles": "4,842.4",
     "state": "Wisconsin",
-    "total_miles": "4842.4",
+    "total_miles": "4,842.4",
     "unidentified_miles": "0.0",
     "vehicle": "8382"
   },
@@ -4333,79 +4333,79 @@
     "vehicle": "944"
   },
   {
-    "identified_miles": "3161.2",
+    "identified_miles": "3,161.2",
     "state": "Kansas",
-    "total_miles": "3161.2",
+    "total_miles": "3,161.2",
     "unidentified_miles": "0.0",
     "vehicle": "944"
   },
   {
-    "identified_miles": "5362.2",
+    "identified_miles": "5,362.2",
     "state": "Kentucky",
-    "total_miles": "5362.2",
+    "total_miles": "5,362.2",
     "unidentified_miles": "0.0",
     "vehicle": "944"
   },
   {
-    "identified_miles": "2495.7",
+    "identified_miles": "2,495.7",
     "state": "Maryland",
-    "total_miles": "2495.7",
+    "total_miles": "2,495.7",
     "unidentified_miles": "0.0",
     "vehicle": "944"
   },
   {
-    "identified_miles": "5126.4",
+    "identified_miles": "5,126.4",
     "state": "Michigan",
-    "total_miles": "5126.4",
+    "total_miles": "5,126.4",
     "unidentified_miles": "0.0",
     "vehicle": "944"
   },
   {
-    "identified_miles": "4181.1",
+    "identified_miles": "4,181.1",
     "state": "Minnesota",
-    "total_miles": "4181.1",
+    "total_miles": "4,181.1",
     "unidentified_miles": "0.0",
     "vehicle": "944"
   },
   {
-    "identified_miles": "5303.4",
+    "identified_miles": "5,303.4",
     "state": "Mississippi",
-    "total_miles": "5303.4",
+    "total_miles": "5,303.4",
     "unidentified_miles": "0.0",
     "vehicle": "944"
   },
   {
-    "identified_miles": "1572.1",
+    "identified_miles": "1,572.1",
     "state": "Missouri",
-    "total_miles": "1572.1",
+    "total_miles": "1,572.1",
     "unidentified_miles": "0.0",
     "vehicle": "944"
   },
   {
-    "identified_miles": "3552.5",
+    "identified_miles": "3,552.5",
     "state": "Montana",
-    "total_miles": "3552.5",
+    "total_miles": "3,552.5",
     "unidentified_miles": "0.0",
     "vehicle": "944"
   },
   {
-    "identified_miles": "5646.3",
+    "identified_miles": "5,646.3",
     "state": "Nebraska",
-    "total_miles": "5998.4",
+    "total_miles": "5,998.4",
     "unidentified_miles": "352.1",
     "vehicle": "944"
   },
   {
-    "identified_miles": "3060.1",
+    "identified_miles": "3,060.1",
     "state": "Nevada",
-    "total_miles": "3060.1",
+    "total_miles": "3,060.1",
     "unidentified_miles": "0.0",
     "vehicle": "944"
   },
   {
-    "identified_miles": "3165.5",
+    "identified_miles": "3,165.5",
     "state": "New Jersey",
-    "total_miles": "3165.5",
+    "total_miles": "3,165.5",
     "unidentified_miles": "0.0",
     "vehicle": "944"
   },
@@ -4424,9 +4424,9 @@
     "vehicle": "944"
   },
   {
-    "identified_miles": "6466.8",
+    "identified_miles": "6,466.8",
     "state": "North Carolina",
-    "total_miles": "6466.8",
+    "total_miles": "6,466.8",
     "unidentified_miles": "0.0",
     "vehicle": "944"
   },
@@ -4991,16 +4991,16 @@
     "vehicle": "3758"
   },
   {
-    "identified_miles": "4710.3",
+    "identified_miles": "4,710.3",
     "state": "Alabama",
-    "total_miles": "4710.3",
+    "total_miles": "4,710.3",
     "unidentified_miles": "0.0",
     "vehicle": "423"
   },
   {
-    "identified_miles": "3204.5",
+    "identified_miles": "3,204.5",
     "state": "Arizona",
-    "total_miles": "3204.5",
+    "total_miles": "3,204.5",
     "unidentified_miles": "0.0",
     "vehicle": "423"
   },
@@ -5012,37 +5012,37 @@
     "vehicle": "423"
   },
   {
-    "identified_miles": "1829.9",
+    "identified_miles": "1,829.9",
     "state": "California",
-    "total_miles": "1829.9",
+    "total_miles": "1,829.9",
     "unidentified_miles": "0.0",
     "vehicle": "423"
   },
   {
-    "identified_miles": "1353.5",
+    "identified_miles": "1,353.5",
     "state": "Colorado",
-    "total_miles": "1353.5",
+    "total_miles": "1,353.5",
     "unidentified_miles": "0.0",
     "vehicle": "423"
   },
   {
-    "identified_miles": "2453.9",
+    "identified_miles": "2,453.9",
     "state": "Connecticut",
-    "total_miles": "2593.6",
+    "total_miles": "2,593.6",
     "unidentified_miles": "139.7",
     "vehicle": "423"
   },
   {
-    "identified_miles": "2991.1",
+    "identified_miles": "2,991.1",
     "state": "Delaware",
-    "total_miles": "2991.1",
+    "total_miles": "2,991.1",
     "unidentified_miles": "0.0",
     "vehicle": "423"
   },
   {
-    "identified_miles": "4560.4",
+    "identified_miles": "4,560.4",
     "state": "Florida",
-    "total_miles": "4560.4",
+    "total_miles": "4,560.4",
     "unidentified_miles": "0.0",
     "vehicle": "423"
   },
@@ -5054,23 +5054,23 @@
     "vehicle": "423"
   },
   {
-    "identified_miles": "4316.3",
+    "identified_miles": "4,316.3",
     "state": "Idaho",
-    "total_miles": "4427.3",
+    "total_miles": "4,427.3",
     "unidentified_miles": "111.0",
     "vehicle": "423"
   },
   {
-    "identified_miles": "4156.1",
+    "identified_miles": "4,156.1",
     "state": "Illinois",
-    "total_miles": "4156.1",
+    "total_miles": "4,156.1",
     "unidentified_miles": "0.0",
     "vehicle": "423"
   },
   {
-    "identified_miles": "3617.8",
+    "identified_miles": "3,617.8",
     "state": "Indiana",
-    "total_miles": "3943.4",
+    "total_miles": "3,943.4",
     "unidentified_miles": "325.6",
     "vehicle": "423"
   },
@@ -5236,51 +5236,51 @@
     "vehicle": "423"
   },
   {
-    "identified_miles": "5378.3",
+    "identified_miles": "5,378.3",
     "state": "Alabama",
-    "total_miles": "5378.3",
+    "total_miles": "5,378.3",
     "unidentified_miles": "0.0",
     "vehicle": "8736"
   },
   {
-    "identified_miles": "2497.4",
+    "identified_miles": "2,497.4",
     "state": "Arizona",
-    "total_miles": "2497.4",
+    "total_miles": "2,497.4",
     "unidentified_miles": "0.0",
     "vehicle": "8736"
   },
   {
-    "identified_miles": "5962.3",
+    "identified_miles": "5,962.3",
     "state": "California",
-    "total_miles": "5962.3",
+    "total_miles": "5,962.3",
     "unidentified_miles": "0.0",
     "vehicle": "8736"
   },
   {
-    "identified_miles": "3499.2",
+    "identified_miles": "3,499.2",
     "state": "Colorado",
-    "total_miles": "3879.0",
+    "total_miles": "3,879.0",
     "unidentified_miles": "379.8",
     "vehicle": "8736"
   },
   {
-    "identified_miles": "4131.8",
+    "identified_miles": "4,131.8",
     "state": "Delaware",
-    "total_miles": "4131.8",
+    "total_miles": "4,131.8",
     "unidentified_miles": "0.0",
     "vehicle": "8736"
   },
   {
-    "identified_miles": "5384.0",
+    "identified_miles": "5,384.0",
     "state": "Florida",
-    "total_miles": "5384.0",
+    "total_miles": "5,384.0",
     "unidentified_miles": "0.0",
     "vehicle": "8736"
   },
   {
-    "identified_miles": "4871.3",
+    "identified_miles": "4,871.3",
     "state": "Georgia",
-    "total_miles": "4871.3",
+    "total_miles": "4,871.3",
     "unidentified_miles": "0.0",
     "vehicle": "8736"
   },
@@ -5299,23 +5299,23 @@
     "vehicle": "8736"
   },
   {
-    "identified_miles": "6108.8",
+    "identified_miles": "6,108.8",
     "state": "Iowa",
-    "total_miles": "6108.8",
+    "total_miles": "6,108.8",
     "unidentified_miles": "0.0",
     "vehicle": "8736"
   },
   {
-    "identified_miles": "4052.6",
+    "identified_miles": "4,052.6",
     "state": "Kentucky",
-    "total_miles": "4089.7",
+    "total_miles": "4,089.7",
     "unidentified_miles": "37.1",
     "vehicle": "8736"
   },
   {
-    "identified_miles": "1458.7",
+    "identified_miles": "1,458.7",
     "state": "Louisiana",
-    "total_miles": "1458.7",
+    "total_miles": "1,458.7",
     "unidentified_miles": "0.0",
     "vehicle": "8736"
   },
@@ -5719,23 +5719,23 @@
     "vehicle": "7051"
   },
   {
-    "identified_miles": "1380.1",
+    "identified_miles": "1,380.1",
     "state": "Arizona",
-    "total_miles": "1380.1",
+    "total_miles": "1,380.1",
     "unidentified_miles": "0.0",
     "vehicle": "7051"
   },
   {
-    "identified_miles": "2321.0",
+    "identified_miles": "2,321.0",
     "state": "Arkansas",
-    "total_miles": "2321.0",
+    "total_miles": "2,321.0",
     "unidentified_miles": "0.0",
     "vehicle": "7051"
   },
   {
-    "identified_miles": "2455.1",
+    "identified_miles": "2,455.1",
     "state": "California",
-    "total_miles": "2455.1",
+    "total_miles": "2,455.1",
     "unidentified_miles": "0.0",
     "vehicle": "7051"
   },
@@ -5747,23 +5747,23 @@
     "vehicle": "7051"
   },
   {
-    "identified_miles": "1798.2",
+    "identified_miles": "1,798.2",
     "state": "Connecticut",
-    "total_miles": "1798.2",
+    "total_miles": "1,798.2",
     "unidentified_miles": "0.0",
     "vehicle": "7051"
   },
   {
-    "identified_miles": "5827.0",
+    "identified_miles": "5,827.0",
     "state": "Delaware",
-    "total_miles": "5827.0",
+    "total_miles": "5,827.0",
     "unidentified_miles": "0.0",
     "vehicle": "7051"
   },
   {
-    "identified_miles": "5117.9",
+    "identified_miles": "5,117.9",
     "state": "Georgia",
-    "total_miles": "5365.9",
+    "total_miles": "5,365.9",
     "unidentified_miles": "248.0",
     "vehicle": "7051"
   },
@@ -5775,23 +5775,23 @@
     "vehicle": "7051"
   },
   {
-    "identified_miles": "1767.7",
+    "identified_miles": "1,767.7",
     "state": "Indiana",
-    "total_miles": "1767.7",
+    "total_miles": "1,767.7",
     "unidentified_miles": "0.0",
     "vehicle": "7051"
   },
   {
-    "identified_miles": "2086.5",
+    "identified_miles": "2,086.5",
     "state": "Iowa",
-    "total_miles": "2086.5",
+    "total_miles": "2,086.5",
     "unidentified_miles": "0.0",
     "vehicle": "7051"
   },
   {
-    "identified_miles": "2434.2",
+    "identified_miles": "2,434.2",
     "state": "Kansas",
-    "total_miles": "2434.2",
+    "total_miles": "2,434.2",
     "unidentified_miles": "0.0",
     "vehicle": "7051"
   },
@@ -6440,51 +6440,51 @@
     "vehicle": "434"
   },
   {
-    "identified_miles": "2264.8",
+    "identified_miles": "2,264.8",
     "state": "Arizona",
-    "total_miles": "2264.8",
+    "total_miles": "2,264.8",
     "unidentified_miles": "0.0",
     "vehicle": "1724"
   },
   {
-    "identified_miles": "4322.8",
+    "identified_miles": "4,322.8",
     "state": "California",
-    "total_miles": "4322.8",
+    "total_miles": "4,322.8",
     "unidentified_miles": "0.0",
     "vehicle": "1724"
   },
   {
-    "identified_miles": "6112.6",
+    "identified_miles": "6,112.6",
     "state": "Colorado",
-    "total_miles": "6112.6",
+    "total_miles": "6,112.6",
     "unidentified_miles": "0.0",
     "vehicle": "1724"
   },
   {
-    "identified_miles": "1975.3",
+    "identified_miles": "1,975.3",
     "state": "Connecticut",
-    "total_miles": "1975.3",
+    "total_miles": "1,975.3",
     "unidentified_miles": "0.0",
     "vehicle": "1724"
   },
   {
-    "identified_miles": "5145.4",
+    "identified_miles": "5,145.4",
     "state": "Delaware",
-    "total_miles": "5145.4",
+    "total_miles": "5,145.4",
     "unidentified_miles": "0.0",
     "vehicle": "1724"
   },
   {
-    "identified_miles": "4606.1",
+    "identified_miles": "4,606.1",
     "state": "Georgia",
-    "total_miles": "4838.4",
+    "total_miles": "4,838.4",
     "unidentified_miles": "232.3",
     "vehicle": "1724"
   },
   {
-    "identified_miles": "2726.6",
+    "identified_miles": "2,726.6",
     "state": "Idaho",
-    "total_miles": "2726.6",
+    "total_miles": "2,726.6",
     "unidentified_miles": "0.0",
     "vehicle": "1724"
   },
@@ -6496,16 +6496,16 @@
     "vehicle": "1724"
   },
   {
-    "identified_miles": "5674.6",
+    "identified_miles": "5,674.6",
     "state": "Indiana",
-    "total_miles": "5984.3",
+    "total_miles": "5,984.3",
     "unidentified_miles": "309.7",
     "vehicle": "1724"
   },
   {
-    "identified_miles": "4354.8",
+    "identified_miles": "4,354.8",
     "state": "Iowa",
-    "total_miles": "4354.8",
+    "total_miles": "4,354.8",
     "unidentified_miles": "0.0",
     "vehicle": "1724"
   },
@@ -6517,9 +6517,9 @@
     "vehicle": "1724"
   },
   {
-    "identified_miles": "2212.5",
+    "identified_miles": "2,212.5",
     "state": "Maryland",
-    "total_miles": "2212.5",
+    "total_miles": "2,212.5",
     "unidentified_miles": "0.0",
     "vehicle": "1724"
   },
@@ -6979,9 +6979,9 @@
     "vehicle": "1461"
   },
   {
-    "identified_miles": "1158.1",
+    "identified_miles": "1,158.1",
     "state": "Louisiana",
-    "total_miles": "1158.1",
+    "total_miles": "1,158.1",
     "unidentified_miles": "0.0",
     "vehicle": "1461"
   },
@@ -6993,9 +6993,9 @@
     "vehicle": "1461"
   },
   {
-    "identified_miles": "2302.3",
+    "identified_miles": "2,302.3",
     "state": "Michigan",
-    "total_miles": "2331.5",
+    "total_miles": "2,331.5",
     "unidentified_miles": "29.2",
     "vehicle": "1461"
   },
@@ -7007,9 +7007,9 @@
     "vehicle": "1461"
   },
   {
-    "identified_miles": "1273.3",
+    "identified_miles": "1,273.3",
     "state": "Mississippi",
-    "total_miles": "1273.3",
+    "total_miles": "1,273.3",
     "unidentified_miles": "0.0",
     "vehicle": "1461"
   },
@@ -7035,9 +7035,9 @@
     "vehicle": "1461"
   },
   {
-    "identified_miles": "5255.9",
+    "identified_miles": "5,255.9",
     "state": "New Jersey",
-    "total_miles": "5528.9",
+    "total_miles": "5,528.9",
     "unidentified_miles": "273.0",
     "vehicle": "1461"
   },
@@ -7049,23 +7049,23 @@
     "vehicle": "1461"
   },
   {
-    "identified_miles": "6396.8",
+    "identified_miles": "6,396.8",
     "state": "North Carolina",
-    "total_miles": "6523.9",
+    "total_miles": "6,523.9",
     "unidentified_miles": "127.1",
     "vehicle": "1461"
   },
   {
-    "identified_miles": "2684.9",
+    "identified_miles": "2,684.9",
     "state": "North Dakota",
-    "total_miles": "2684.9",
+    "total_miles": "2,684.9",
     "unidentified_miles": "0.0",
     "vehicle": "1461"
   },
   {
-    "identified_miles": "2572.7",
+    "identified_miles": "2,572.7",
     "state": "Ohio",
-    "total_miles": "2572.7",
+    "total_miles": "2,572.7",
     "unidentified_miles": "0.0",
     "vehicle": "1461"
   },
@@ -8215,259 +8215,259 @@
     "state": "Alabama",
     "total_miles": "59.4",
     "unidentified_miles": "0.0",
-    "vehicle": ""
+    "vehicle": "2922"
   },
   {
     "identified_miles": "102.5",
     "state": "Arizona",
     "total_miles": "102.5",
     "unidentified_miles": "0.0",
-    "vehicle": ""
+    "vehicle": "2922"
   },
   {
     "identified_miles": "3,135.0",
     "state": "Arkansas",
     "total_miles": "3,135.0",
     "unidentified_miles": "0.0",
-    "vehicle": ""
+    "vehicle": "2922"
   },
   {
     "identified_miles": "5,369.0",
     "state": "Colorado",
     "total_miles": "5,369.0",
     "unidentified_miles": "0.0",
-    "vehicle": ""
+    "vehicle": "2922"
   },
   {
     "identified_miles": "44.1",
     "state": "Connecticut",
     "total_miles": "44.1",
     "unidentified_miles": "0.0",
-    "vehicle": ""
+    "vehicle": "2922"
   },
   {
     "identified_miles": "340.2",
     "state": "Delaware",
     "total_miles": "340.2",
     "unidentified_miles": "0.0",
-    "vehicle": ""
+    "vehicle": "2922"
   },
   {
     "identified_miles": "5,974.8",
     "state": "Florida",
     "total_miles": "6,178.2",
     "unidentified_miles": "203.4",
-    "vehicle": ""
+    "vehicle": "2922"
   },
   {
     "identified_miles": "1,631.8",
     "state": "Georgia",
     "total_miles": "1,631.8",
     "unidentified_miles": "0.0",
-    "vehicle": ""
+    "vehicle": "2922"
   },
   {
     "identified_miles": "199.7",
     "state": "Idaho",
     "total_miles": "199.7",
     "unidentified_miles": "0.0",
-    "vehicle": ""
+    "vehicle": "2922"
   },
   {
     "identified_miles": "5,434.1",
     "state": "Iowa",
     "total_miles": "5,434.1",
     "unidentified_miles": "0.0",
-    "vehicle": ""
+    "vehicle": "2922"
   },
   {
     "identified_miles": "475.5",
     "state": "Kansas",
     "total_miles": "475.5",
     "unidentified_miles": "0.0",
-    "vehicle": ""
+    "vehicle": "2922"
   },
   {
     "identified_miles": "6,030.1",
     "state": "Kentucky",
     "total_miles": "6,030.1",
     "unidentified_miles": "0.0",
-    "vehicle": ""
+    "vehicle": "2922"
   },
   {
     "identified_miles": "32.6",
     "state": "Louisiana",
     "total_miles": "32.6",
     "unidentified_miles": "0.0",
-    "vehicle": ""
+    "vehicle": "2922"
   },
   {
     "identified_miles": "5,076.0",
     "state": "Maryland",
     "total_miles": "5,076.0",
     "unidentified_miles": "0.0",
-    "vehicle": ""
+    "vehicle": "2922"
   },
   {
     "identified_miles": "12.1",
     "state": "Michigan",
     "total_miles": "12.1",
     "unidentified_miles": "0.0",
-    "vehicle": ""
+    "vehicle": "2922"
   },
   {
     "identified_miles": "7,077.7",
     "state": "Minnesota",
     "total_miles": "7,077.7",
     "unidentified_miles": "0.0",
-    "vehicle": ""
+    "vehicle": "2922"
   },
   {
     "identified_miles": "107.0",
     "state": "Missouri",
     "total_miles": "107.0",
     "unidentified_miles": "0.0",
-    "vehicle": ""
+    "vehicle": "2922"
   },
   {
     "identified_miles": "5,895.3",
     "state": "Montana",
     "total_miles": "5,895.3",
     "unidentified_miles": "0.0",
-    "vehicle": ""
+    "vehicle": "2922"
   },
   {
     "identified_miles": "498.7",
     "state": "Nevada",
     "total_miles": "498.7",
     "unidentified_miles": "0.0",
-    "vehicle": ""
+    "vehicle": "2922"
   },
   {
     "identified_miles": "4,840.4",
     "state": "New Jersey",
     "total_miles": "5,175.5",
     "unidentified_miles": "335.1",
-    "vehicle": ""
+    "vehicle": "2922"
   },
   {
     "identified_miles": "2,316.4",
     "state": "New Mexico",
     "total_miles": "2,316.4",
     "unidentified_miles": "0.0",
-    "vehicle": ""
+    "vehicle": "2922"
   },
   {
     "identified_miles": "5,617.4",
     "state": "New York",
     "total_miles": "5,617.4",
     "unidentified_miles": "0.0",
-    "vehicle": ""
+    "vehicle": "2922"
   },
   {
     "identified_miles": "5,603.9",
     "state": "North Carolina",
     "total_miles": "5,603.9",
     "unidentified_miles": "0.0",
-    "vehicle": ""
+    "vehicle": "2922"
   },
   {
     "identified_miles": "1,654.3",
     "state": "North Dakota",
     "total_miles": "1,889.7",
     "unidentified_miles": "235.4",
-    "vehicle": ""
+    "vehicle": "2922"
   },
   {
     "identified_miles": "3,183.6",
     "state": "Ohio",
     "total_miles": "3,421.5",
     "unidentified_miles": "237.9",
-    "vehicle": ""
+    "vehicle": "2922"
   },
   {
     "identified_miles": "4,118.1",
     "state": "Oklahoma",
     "total_miles": "4,118.1",
     "unidentified_miles": "0.0",
-    "vehicle": ""
+    "vehicle": "2922"
   },
   {
     "identified_miles": "2,128.9",
     "state": "Oregon",
     "total_miles": "2,215.5",
     "unidentified_miles": "86.6",
-    "vehicle": ""
+    "vehicle": "2922"
   },
   {
     "identified_miles": "3,267.4",
     "state": "Pennsylvania",
     "total_miles": "3,267.4",
     "unidentified_miles": "0.0",
-    "vehicle": ""
+    "vehicle": "2922"
   },
   {
     "identified_miles": "5,003.8",
     "state": "South Carolina",
     "total_miles": "5,003.8",
     "unidentified_miles": "0.0",
-    "vehicle": ""
+    "vehicle": "2922"
   },
   {
     "identified_miles": "523.5",
     "state": "Tennessee",
     "total_miles": "707.5",
     "unidentified_miles": "184.0",
-    "vehicle": ""
+    "vehicle": "2922"
   },
   {
     "identified_miles": "5,026.9",
     "state": "Texas",
     "total_miles": "5,026.9",
     "unidentified_miles": "0.0",
-    "vehicle": ""
+    "vehicle": "2922"
   },
   {
     "identified_miles": "1,135.5",
     "state": "Utah",
     "total_miles": "1,135.5",
     "unidentified_miles": "0.0",
-    "vehicle": ""
+    "vehicle": "2922"
   },
   {
     "identified_miles": "34.1",
     "state": "Virginia",
     "total_miles": "34.1",
     "unidentified_miles": "0.0",
-    "vehicle": ""
+    "vehicle": "2922"
   },
   {
     "identified_miles": "3,120.7",
     "state": "Washington",
     "total_miles": "3,325.0",
     "unidentified_miles": "204.3",
-    "vehicle": ""
+    "vehicle": "2922"
   },
   {
     "identified_miles": "5,225.4",
     "state": "West Virginia",
     "total_miles": "5,225.4",
     "unidentified_miles": "0.0",
-    "vehicle": ""
+    "vehicle": "2922"
   },
   {
     "identified_miles": "5,533.8",
     "state": "Wisconsin",
     "total_miles": "5,533.8",
     "unidentified_miles": "0.0",
-    "vehicle": ""
+    "vehicle": "2922"
   },
   {
     "identified_miles": "1,755.3",
     "state": "Wyoming",
     "total_miles": "1,755.3",
     "unidentified_miles": "0.0",
-    "vehicle": ""
+    "vehicle": "2922"
   },
   {
     "identified_miles": "631.7",
@@ -8906,7 +8906,7 @@
   {
     "identified_miles": "3,673.6",
     "state": "Washington",
-    "total_miles": "3,686.2",
+    "total_miles": "3,686.6",
     "unidentified_miles": "12.6",
     "vehicle": "371"
   },
@@ -8932,23 +8932,23 @@
     "vehicle": "371"
   },
   {
-    "identified_miles": "1157.3",
+    "identified_miles": "1,573.3",
     "state": "Alabama",
-    "total_miles": "1323.4",
+    "total_miles": "1,323.4",
     "unidentified_miles": "166.1",
     "vehicle": "1830"
   },
   {
-    "identified_miles": "2116.4",
+    "identified_miles": "2,116.4",
     "state": "Arizona",
-    "total_miles": "2116.4",
+    "total_miles": "2,116.4",
     "unidentified_miles": "0.0",
     "vehicle": "1830"
   },
   {
-    "identified_miles": "2008.7",
+    "identified_miles": "2,008.7",
     "state": "Arkansas",
-    "total_miles": "2008.7",
+    "total_miles": "2,008.7",
     "unidentified_miles": "0.0",
     "vehicle": "1830"
   },
@@ -8974,100 +8974,100 @@
     "vehicle": "1830"
   },
   {
-    "identified_miles": "2362.8",
+    "identified_miles": "2,362.8",
     "state": "Delaware",
-    "total_miles": "2362.8",
+    "total_miles": "2,362.8",
     "unidentified_miles": "0.0",
     "vehicle": "1830"
   },
   {
-    "identified_miles": "2630.6",
+    "identified_miles": "2,630.6",
     "state": "Idaho",
-    "total_miles": "2820.9",
+    "total_miles": "2,820.9",
     "unidentified_miles": "190.3",
     "vehicle": "1830"
   },
   {
-    "identified_miles": "3527.1",
+    "identified_miles": "3,527.1",
     "state": "Iowa",
-    "total_miles": "3527.1",
+    "total_miles": "3,527.1",
     "unidentified_miles": "0.0",
     "vehicle": "1830"
   },
   {
-    "identified_miles": "4867.3",
+    "identified_miles": "4,867.3",
     "state": "Kansas",
-    "total_miles": "4867.3",
+    "total_miles": "4,867.3",
     "unidentified_miles": "0.0",
     "vehicle": "1830"
   },
   {
-    "identified_miles": "4328.8",
+    "identified_miles": "4,328.8",
     "state": "Kentucky",
-    "total_miles": "4578.3",
+    "total_miles": "4,578.3",
     "unidentified_miles": "249.5",
     "vehicle": "1830"
   },
   {
-    "identified_miles": "3493.3",
+    "identified_miles": "3,493.3",
     "state": "Louisiana",
-    "total_miles": "3493.3",
+    "total_miles": "3,493.3",
     "unidentified_miles": "0.0",
     "vehicle": "1830"
   },
   {
-    "identified_miles": "6817.5",
+    "identified_miles": "6,817.5",
     "state": "Maryland",
-    "total_miles": "6817.5",
+    "total_miles": "6,817.5",
     "unidentified_miles": "0.0",
     "vehicle": "1830"
   },
   {
-    "identified_miles": "3728.9",
+    "identified_miles": "3,728.9",
     "state": "Michigan",
-    "total_miles": "3731.2",
+    "total_miles": "3,731.2",
     "unidentified_miles": "2.3",
     "vehicle": "1830"
   },
   {
-    "identified_miles": "1915.2",
+    "identified_miles": "1,915.2",
     "state": "Minnesota",
-    "total_miles": "1915.2",
+    "total_miles": "1,915.2",
     "unidentified_miles": "0.0",
     "vehicle": "1830"
   },
   {
-    "identified_miles": "4126.4",
+    "identified_miles": "4,126.4",
     "state": "Mississippi",
-    "total_miles": "4126.4",
+    "total_miles": "4,126.4",
     "unidentified_miles": "0.0",
     "vehicle": "1830"
   },
   {
-    "identified_miles": "2475.5",
+    "identified_miles": "2,475.5",
     "state": "Missouri",
-    "total_miles": "2475.5",
+    "total_miles": "2,475.5",
     "unidentified_miles": "0.0",
     "vehicle": "1830"
   },
   {
-    "identified_miles": "2371.0",
+    "identified_miles": "2,371.0",
     "state": "Montana",
-    "total_miles": "2710.6",
+    "total_miles": "2,710.6",
     "unidentified_miles": "339.6",
     "vehicle": "1830"
   },
   {
-    "identified_miles": "2770.0",
+    "identified_miles": "2,770.0",
     "state": "Nebraska",
-    "total_miles": "2770.0",
+    "total_miles": "2,770.0",
     "unidentified_miles": "0.0",
     "vehicle": "1830"
   },
   {
-    "identified_miles": "3090.7",
+    "identified_miles": "3,090.7",
     "state": "New Jersey",
-    "total_miles": "3090.7",
+    "total_miles": "3,090.7",
     "unidentified_miles": "0.0",
     "vehicle": "1830"
   },
@@ -9079,9 +9079,9 @@
     "vehicle": "1830"
   },
   {
-    "identified_miles": "2697.8",
+    "identified_miles": "2,697.8",
     "state": "New York",
-    "total_miles": "2726.6",
+    "total_miles": "2,726.6",
     "unidentified_miles": "28.8",
     "vehicle": "1830"
   },
@@ -10005,7 +10005,7 @@
   {
     "identified_miles": "5,580.3",
     "state": "Louisiana",
-    "total_miles": "5,658.1",
+    "total_miles": "5,658.3",
     "unidentified_miles": "77.8",
     "vehicle": "3739"
   },
@@ -12798,7 +12798,7 @@
   {
     "identified_miles": "2,708.7",
     "state": "Wisconsin",
-    "total_miles": "2,816.4",
+    "total_miles": "2,816.6",
     "unidentified_miles": "107.7",
     "vehicle": "9251"
   },
@@ -13741,86 +13741,86 @@
     "vehicle": "126"
   },
   {
-    "identified_miles": "5248.5",
+    "identified_miles": "5,248.5",
     "state": "Alabama",
-    "total_miles": "5248.5",
+    "total_miles": "5,248.5",
     "unidentified_miles": "0.0",
     "vehicle": "8343"
   },
   {
-    "identified_miles": "2135.8",
+    "identified_miles": "2,135.8",
     "state": "Arizona",
-    "total_miles": "2135.8",
+    "total_miles": "2,135.8",
     "unidentified_miles": "0.0",
     "vehicle": "8343"
   },
   {
-    "identified_miles": "1289.9",
+    "identified_miles": "1,289.9",
     "state": "Arkansas",
-    "total_miles": "1289.9",
+    "total_miles": "1,289.9",
     "unidentified_miles": "0.0",
     "vehicle": "8343"
   },
   {
-    "identified_miles": "2044.7",
+    "identified_miles": "2,044.7",
     "state": "California",
-    "total_miles": "2044.7",
+    "total_miles": "2,044.7",
     "unidentified_miles": "0.0",
     "vehicle": "8343"
   },
   {
-    "identified_miles": "1184.0",
+    "identified_miles": "1,184.0",
     "state": "Colorado",
-    "total_miles": "1295.1",
+    "total_miles": "1,295.1",
     "unidentified_miles": "111.1",
     "vehicle": "8343"
   },
   {
-    "identified_miles": "2577.9",
+    "identified_miles": "2,577.9",
     "state": "Connecticut",
-    "total_miles": "2577.9",
+    "total_miles": "2,577.9",
     "unidentified_miles": "0.0",
     "vehicle": "8343"
   },
   {
-    "identified_miles": "3090.9",
+    "identified_miles": "3,090.9",
     "state": "Delaware",
-    "total_miles": "3090.9",
+    "total_miles": "3,090.9",
     "unidentified_miles": "0.0",
     "vehicle": "8343"
   },
   {
-    "identified_miles": "2845.8",
+    "identified_miles": "2,845.8",
     "state": "Florida",
-    "total_miles": "2845.8",
+    "total_miles": "2,845.8",
     "unidentified_miles": "0.0",
     "vehicle": "8343"
   },
   {
-    "identified_miles": "3897.9",
+    "identified_miles": "3,897.9",
     "state": "Illinois",
-    "total_miles": "3903.6",
+    "total_miles": "3,903.6",
     "unidentified_miles": "5.7",
     "vehicle": "8343"
   },
   {
-    "identified_miles": "2930.5",
+    "identified_miles": "2,930.5",
     "state": "Indiana",
-    "total_miles": "2930.5",
+    "total_miles": "2,930.5",
     "unidentified_miles": "0.0",
     "vehicle": "8343"
   },
   {
-    "identified_miles": "6791.2",
+    "identified_miles": "6,791.2",
     "state": "Iowa",
-    "total_miles": "6791.2",
+    "total_miles": "6,791.2",
     "unidentified_miles": "0.0",
     "vehicle": "8343"
   },
   {
-    "identified_miles": "3184.1",
+    "identified_miles": "3,184.1",
     "state": "Kansas",
-    "total_miles": "3184.1",
+    "total_miles": "3,184.1",
     "unidentified_miles": "0.0",
     "vehicle": "8343"
   },
@@ -16030,9 +16030,9 @@
     "vehicle": "2810"
   },
   {
-    "identified_miles": "4713.3",
+    "identified_miles": "4,713.3",
     "state": "Michigan",
-    "total_miles": "4910.7",
+    "total_miles": "4,910.7",
     "unidentified_miles": "197.4",
     "vehicle": "2810"
   },
@@ -16044,37 +16044,37 @@
     "vehicle": "2810"
   },
   {
-    "identified_miles": "1857.0",
+    "identified_miles": "1,857.0",
     "state": "Mississippi",
-    "total_miles": "1857.0",
+    "total_miles": "1,857.0",
     "unidentified_miles": "0.0",
     "vehicle": "2810"
   },
   {
-    "identified_miles": "4921.0",
+    "identified_miles": "4,921.0",
     "state": "Missouri",
-    "total_miles": "4921.0",
+    "total_miles": "4,921.0",
     "unidentified_miles": "0.0",
     "vehicle": "2810"
   },
   {
-    "identified_miles": "1260.2",
+    "identified_miles": "1,260.2",
     "state": "Nebraska",
-    "total_miles": "1260.2",
+    "total_miles": "1,260.2",
     "unidentified_miles": "0.0",
     "vehicle": "2810"
   },
   {
-    "identified_miles": "5850.9",
+    "identified_miles": "5,850.9",
     "state": "Nevada",
-    "total_miles": "5850.9",
+    "total_miles": "5,850.9",
     "unidentified_miles": "0.0",
     "vehicle": "2810"
   },
   {
-    "identified_miles": "2708.4",
+    "identified_miles": "2,708.4",
     "state": "New Jersey",
-    "total_miles": "2708.4",
+    "total_miles": "2,708.4",
     "unidentified_miles": "0.0",
     "vehicle": "2810"
   },
@@ -16093,9 +16093,9 @@
     "vehicle": "2810"
   },
   {
-    "identified_miles": "2514.7",
+    "identified_miles": "2,514.7",
     "state": "North Carolina",
-    "total_miles": "2623.7",
+    "total_miles": "2,623.7",
     "unidentified_miles": "109.0",
     "vehicle": "2810"
   },

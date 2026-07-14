@@ -11,7 +11,7 @@
     "date_closed": "",
     "date_of_loss": "05/02/19",
     "date_reported": "05/03/19",
-    "description": "fuel-island scrape reported during yard maneuver; coverage was accepted subject to deductible application; salvage credit had not posted to the run | payment history may exclude late-posted recovery activity. Unit TR-1000.",
+    "description": "fuel-island scrape reported during yard maneuver; coverage was accepted subject to deductible application; salvage credit had not posted to the run",
     "driver": "",
     "effective_date": "04/12/19",
     "policy_number": "SC00928137"
@@ -46,7 +46,7 @@
     "date_of_loss": "05/16/19",
     "date_reported": "05/27/19",
     "description": "cargo load shifted during an abrupt traffic stop",
-    "driver": "Unit TR-1034 / Operator Taylor L. Mercer",
+    "driver": "Taylor L. Mercer",
     "effective_date": "04/12/19",
     "policy_number": "SC00928137"
   },
@@ -63,7 +63,7 @@
     "date_of_loss": "05/23/19",
     "date_reported": "06/08/19",
     "description": "loading bay bollard contact reported by warehouse staff",
-    "driver": "Unit TR-1051 / Operator Vaughn R. Ellis",
+    "driver": "Vaughn R. Ellis",
     "effective_date": "04/12/19",
     "policy_number": "SC00928137"
   },
@@ -130,7 +130,7 @@
     "date_closed": "11/20/19",
     "date_of_loss": "06/20/19",
     "date_reported": "07/26/19",
-    "description": "fuel-island scrape reported during yard maneuver; rental and downtime amounts were still being reconciled | payment history may exclude late-posted recovery activity. Unit TR-1119.",
+    "description": "fuel-island scrape reported during yard maneuver; rental and downtime amounts were still being reconciled",
     "driver": "Quinn K. Ellis",
     "effective_date": "04/12/19",
     "policy_number": "SC00928137"
@@ -165,7 +165,7 @@
     "date_of_loss": "07/03/21",
     "date_reported": "07/07/21",
     "description": "trailer door contacted by loading equipment",
-    "driver": "Unit TR-1153 / Operator Jordan E. Osborne",
+    "driver": "Jordan E. Osborne",
     "effective_date": "04/11/21",
     "policy_number": "SC00928139"
   },
@@ -198,7 +198,7 @@
     "date_closed": "",
     "date_of_loss": "07/17/21",
     "date_reported": "07/31/21",
-    "description": "rear impact while backing toward a dock door; repair estimate remains under carrier review | closing date reflects carrier system status at valuation. TR-1187.",
+    "description": "rear impact while backing toward a dock door; repair estimate remains under carrier review",
     "driver": "Harper V. Hollis",
     "effective_date": "04/11/21",
     "policy_number": "SC00928139"
@@ -249,8 +249,8 @@
     "date_closed": "",
     "date_of_loss": "08/07/22",
     "date_reported": "09/05/22",
-    "description": "windshield and cowl damage attributed to road debris; medical reserve was reviewed without closing the file | closing date reflects carrier system status at valuation. Unit TR-1238.",
-    "driver": "Unit TR-1238 / Operator Winter G. Ramos",
+    "description": "windshield and cowl damage attributed to road debris; medical reserve was reviewed without closing the file",
+    "driver": "Winter G. Ramos",
     "effective_date": "04/11/22",
     "policy_number": "SC00928140"
   },
@@ -267,7 +267,7 @@
     "date_of_loss": "08/14/22",
     "date_reported": "09/17/22",
     "description": "mirror and fairing damage found after delivery",
-    "driver": "Unit TR-1255 / Operator Blake E. Mercer",
+    "driver": "Blake E. Mercer",
     "effective_date": "04/11/22",
     "policy_number": "SC00928140"
   },
@@ -368,8 +368,8 @@
     "date_closed": "12/17/22",
     "date_of_loss": "09/25/22",
     "date_reported": "10/17/22",
-    "description": "trailer door contacted by loading equipment; liability position was not final at valuation date | payment history may exclude late-posted recovery activity. Unit TR-1357.",
-    "driver": "Unit TR-1357 / Operator Taylor T. Ramos",
+    "description": "trailer door contacted by loading equipment; liability position was not final at valuation date",
+    "driver": "Taylor T. Ramos",
     "effective_date": "04/11/22",
     "policy_number": "SC00928140"
   },
@@ -385,7 +385,7 @@
     "date_closed": "",
     "date_of_loss": "10/02/22",
     "date_reported": "10/29/22",
-    "description": "cargo shortage noticed after consignee inspection; repair estimate remains under carrier review | payment history may exclude late-posted recovery activity. Unit TR-1374.",
+    "description": "cargo shortage noticed after consignee inspection; repair estimate remains under carrier review",
     "driver": "Harper D. Voss",
     "effective_date": "04/11/22",
     "policy_number": "SC00928140"
@@ -454,7 +454,7 @@
     "date_of_loss": "11/17/19",
     "date_reported": "11/22/19",
     "description": "minor bodily injury allegation after a lane-change contact",
-    "driver": "Unit TR-1442 / Operator Quinn R. Voss",
+    "driver": "Quinn R. Voss",
     "effective_date": "04/29/19",
     "policy_number": "SC00928142"
   },
@@ -471,7 +471,7 @@
     "date_of_loss": "11/24/19",
     "date_reported": "12/04/19",
     "description": "rear impact while backing toward a dock door",
-    "driver": "Unit TR-1459 / Operator Kai A. Osborne",
+    "driver": "Kai A. Osborne",
     "effective_date": "04/29/19",
     "policy_number": "SC00928142"
   },
@@ -487,7 +487,7 @@
     "date_closed": "",
     "date_of_loss": "12/01/19",
     "date_reported": "12/16/19",
-    "description": "forklift contact with parked trailer during unloading; medical reserve was reviewed without closing the file | closing date reflects carrier system status at valuation. Unit TR-1476.",
+    "description": "forklift contact with parked trailer during unloading; medical reserve was reviewed without closing the file",
     "driver": "Driver not supplied in carrier export",
     "effective_date": "04/29/19",
     "policy_number": "SC00928142"
@@ -572,8 +572,8 @@
     "date_closed": "",
     "date_of_loss": "01/05/20",
     "date_reported": "02/14/20",
-    "description": "parking-lot contact reported by third-party claimant; claim notes reference separate correspondence from the claimant | claim office noted deductible handling outside this extract. Unit TR-1561.",
-    "driver": "Unit TR-1561 / Operator Kai V. Delaney",
+    "description": "parking-lot contact reported by third-party claimant; claim notes reference separate correspondence from the claimant",
+    "driver": "Kai V. Delaney",
     "effective_date": "04/29/19",
     "policy_number": "SC00928142"
   },
@@ -606,7 +606,7 @@
     "date_closed": "",
     "date_of_loss": "01/19/20",
     "date_reported": "01/27/20",
-    "description": "fuel-island scrape reported during yard maneuver; liability position was not final at valuation date | claim office noted deductible handling outside this extract. Unit TR-1595.",
+    "description": "fuel-island scrape reported during yard maneuver; liability position was not final at valuation date",
     "driver": "Taylor A. Carver",
     "effective_date": "04/29/19",
     "policy_number": "SC00928142"
@@ -658,7 +658,7 @@
     "date_of_loss": "02/08/22",
     "date_reported": "03/03/22",
     "description": "parking-lot contact reported by third-party claimant",
-    "driver": "Unit TR-1646 / Operator Finley A. Quint",
+    "driver": "Finley A. Quint",
     "effective_date": "04/28/21",
     "policy_number": "SC00928144"
   },
@@ -675,7 +675,7 @@
     "date_of_loss": "02/15/22",
     "date_reported": "03/15/22",
     "description": "fuel-island scrape reported during yard maneuver",
-    "driver": "Unit TR-1663 / Operator Blake D. Ramos",
+    "driver": "Blake D. Ramos",
     "effective_date": "04/28/21",
     "policy_number": "SC00928144"
   },
@@ -687,7 +687,7 @@
     "claim_reported": "X",
     "claim_reserves": "$0.00",
     "claim_status": "Closed",
-    "claimant": "Northline Distribution",
+    "claimant": "Northline Dist.",
     "date_closed": "05/26/23",
     "date_of_loss": "02/22/23",
     "date_reported": "03/27/23",
@@ -704,7 +704,7 @@
     "claim_reported": "X",
     "claim_reserves": "$0.00",
     "claim_status": "Closed",
-    "claimant": "Riverbend Concrete",
+    "claimant": "Riverbend Conc.",
     "date_closed": "06/18/23",
     "date_of_loss": "03/01/23",
     "date_reported": "04/08/23",
@@ -721,11 +721,11 @@
     "claim_reported": "X",
     "claim_reserves": "$82,618.66",
     "claim_status": "Open",
-    "claimant": "Alder Logistics Repair",
+    "claimant": "Alder Logistics",
     "date_closed": "",
     "date_of_loss": "03/08/23",
     "date_reported": "03/09/23",
-    "description": "mirror and fairing damage found after delivery; subrogation diary was retained for follow-up | payment history may exclude late-posted recovery activity. Unit TR-1714.",
+    "description": "mirror and fairing damage found after delivery; subrogation diary was retained for follow-up",
     "driver": "Taylor B. Hollis",
     "effective_date": "04/28/22",
     "policy_number": "SC00928145"
@@ -738,7 +738,7 @@
     "claim_reported": "X",
     "claim_reserves": "$86,747.91",
     "claim_status": "Reopened",
-    "claimant": "Juniper Transit Yard",
+    "claimant": "Juniper Transit",
     "date_closed": "",
     "date_of_loss": "05/19/22",
     "date_reported": "05/25/22",
@@ -755,11 +755,11 @@
     "claim_reported": "X",
     "claim_reserves": "$90,876.27",
     "claim_status": "Pending",
-    "claimant": "Ironwood Trailer Works",
+    "claimant": "Ironwood Trailer",
     "date_closed": "",
     "date_of_loss": "05/26/22",
     "date_reported": "06/06/22",
-    "description": "windshield and cowl damage attributed to road debris; photos were received with the initial notice | vendor documentation was indexed after first notice. Unit TR-1748.",
+    "description": "windshield and cowl damage attributed to road debris; photos were received with the initial notice",
     "driver": "",
     "effective_date": "04/28/22",
     "policy_number": "SC00928145"
@@ -772,12 +772,12 @@
     "claim_reported": "X",
     "claim_reserves": "$3,005.91",
     "claim_status": "Open",
-    "claimant": "Canyon Fleet Body",
+    "claimant": "Canyon Fleet",
     "date_closed": "",
     "date_of_loss": "06/02/22",
     "date_reported": "06/18/22",
     "description": "mirror and fairing damage found after delivery",
-    "driver": "Unit TR-1765 / Operator Morgan W. Larkin",
+    "driver": "Morgan W. Larkin",
     "effective_date": "04/28/22",
     "policy_number": "SC00928145"
   },
@@ -844,7 +844,7 @@
     "date_closed": "",
     "date_of_loss": "06/30/23",
     "date_reported": "08/05/23",
-    "description": "parking-lot contact reported by third-party claimant; claim notes reference separate correspondence from the claimant | payment history may exclude late-posted recovery activity. Unit TR-1833.",
+    "description": "parking-lot contact reported by third-party claimant; claim notes reference separate correspondence from the claimant",
     "driver": "Finley L. Ramos",
     "effective_date": "04/28/23",
     "policy_number": "SC00928146"
@@ -861,8 +861,8 @@
     "date_closed": "",
     "date_of_loss": "07/07/23",
     "date_reported": "08/17/23",
-    "description": "side-swipe contact reported near an interstate ramp | payment history may exclude late-posted recovery activity. Unit TR-1850.",
-    "driver": "Unit TR-1850 / Operator Quinn L. Ramos",
+    "description": "side-swipe contact reported near an interstate ramp",
+    "driver": "Quinn L. Ramos",
     "effective_date": "04/28/23",
     "policy_number": "SC00928146"
   },
@@ -879,7 +879,7 @@
     "date_of_loss": "07/14/23",
     "date_reported": "07/18/23",
     "description": "reefer unit service call included in repair estimate",
-    "driver": "Unit TR-1867 / Operator Casey W. Delaney",
+    "driver": "Casey W. Delaney",
     "effective_date": "04/28/23",
     "policy_number": "SC00928146"
   },
@@ -981,7 +981,7 @@
     "date_of_loss": "09/12/19",
     "date_reported": "10/16/19",
     "description": "mirror and fairing damage found after delivery",
-    "driver": "Unit TR-1969 / Operator Harper N. Voss",
+    "driver": "Harper N. Voss",
     "effective_date": "05/16/19",
     "policy_number": "SC00928147"
   },
@@ -1031,7 +1031,7 @@
     "date_closed": "",
     "date_of_loss": "10/02/20",
     "date_reported": "10/09/20",
-    "description": "cargo load shifted during an abrupt traffic stop | vendor documentation was indexed after first notice. Unit TR-2020.",
+    "description": "cargo load shifted during an abrupt traffic stop",
     "driver": "",
     "effective_date": "05/15/20",
     "policy_number": "SC00928148"
@@ -1066,7 +1066,7 @@
     "date_of_loss": "10/16/20",
     "date_reported": "11/02/20",
     "description": "minor bodily injury allegation after a lane-change contact",
-    "driver": "Unit TR-2054 / Operator Morgan U. Larkin",
+    "driver": "Morgan U. Larkin",
     "effective_date": "05/15/20",
     "policy_number": "SC00928148"
   },
@@ -1082,8 +1082,8 @@
     "date_closed": "",
     "date_of_loss": "10/23/20",
     "date_reported": "11/14/20",
-    "description": "towing and storage reimbursement requested after disablement; coverage was accepted subject to deductible application | liability review remains tied to the listed unit file. Unit TR-2071.",
-    "driver": "Unit TR-2071 / Operator Emery K. Osborne",
+    "description": "towing and storage reimbursement requested after disablement; coverage was accepted subject to deductible application",
+    "driver": "Emery K. Osborne",
     "effective_date": "05/15/20",
     "policy_number": "SC00928148"
   },
@@ -1133,7 +1133,7 @@
     "date_closed": "05/05/21",
     "date_of_loss": "11/13/20",
     "date_reported": "12/20/20",
-    "description": "rear impact while backing toward a dock door; photos were received with the initial notice | claim office noted deductible handling outside this extract. Unit TR-2122.",
+    "description": "rear impact while backing toward a dock door; photos were received with the initial notice",
     "driver": "Taylor B. Voss",
     "effective_date": "05/15/20",
     "policy_number": "SC00928148"
@@ -1185,7 +1185,7 @@
     "date_of_loss": "12/04/20",
     "date_reported": "12/14/20",
     "description": "steer tire failure led to roadside service invoice",
-    "driver": "Unit TR-2173 / Operator Dakota T. Aldridge",
+    "driver": "Dakota T. Aldridge",
     "effective_date": "05/15/20",
     "policy_number": "SC00928148"
   },
@@ -1201,7 +1201,7 @@
     "date_closed": "",
     "date_of_loss": "12/11/20",
     "date_reported": "12/26/20",
-    "description": "rear impact while backing toward a dock door; photos were received with the initial notice | liability review remains tied to the listed unit file. Unit TR-2190.",
+    "description": "rear impact while backing toward a dock door; photos were received with the initial notice",
     "driver": "Avery V. Keller",
     "effective_date": "05/15/20",
     "policy_number": "SC00928148"
@@ -1270,7 +1270,7 @@
     "date_of_loss": "01/08/23",
     "date_reported": "02/12/23",
     "description": "roll-up door damage noted during post-trip inspection",
-    "driver": "Unit TR-2258 / Operator Avery U. Keller",
+    "driver": "Avery U. Keller",
     "effective_date": "05/15/22",
     "policy_number": "SC00928150"
   },
@@ -1287,7 +1287,7 @@
     "date_of_loss": "01/15/23",
     "date_reported": "02/24/23",
     "description": "parked tractor struck during overnight staging",
-    "driver": "Unit TR-2275 / Operator Emery T. Priest",
+    "driver": "Emery T. Priest",
     "effective_date": "05/15/22",
     "policy_number": "SC00928150"
   },
@@ -1303,7 +1303,7 @@
     "date_closed": "09/28/23",
     "date_of_loss": "01/22/23",
     "date_reported": "01/25/23",
-    "description": "mirror and fairing damage found after delivery | payment history may exclude late-posted recovery activity. Unit TR-2292.",
+    "description": "mirror and fairing damage found after delivery",
     "driver": "Driver not supplied in carrier export",
     "effective_date": "05/15/22",
     "policy_number": "SC00928150"
@@ -1320,7 +1320,7 @@
     "date_closed": "03/25/23",
     "date_of_loss": "01/29/23",
     "date_reported": "02/06/23",
-    "description": "trailer door contacted by loading equipment; repair estimate remains under carrier review; liability position was not final at valuation date | liability review remains tied to the listed unit file. Unit TR-2309.",
+    "description": "trailer door contacted by loading equipment; repair estimate remains under carrier review; liability position was not final at valuation date",
     "driver": "Avery W. Voss",
     "effective_date": "05/15/22",
     "policy_number": "SC00928150"
@@ -1371,7 +1371,7 @@
     "date_closed": "",
     "date_of_loss": "02/19/24",
     "date_reported": "03/13/24",
-    "description": "parked tractor struck during overnight staging | vendor documentation was indexed after first notice. Unit TR-2360.",
+    "description": "parked tractor struck during overnight staging",
     "driver": "",
     "effective_date": "05/15/23",
     "policy_number": "SC00928151"
@@ -1389,7 +1389,7 @@
     "date_of_loss": "02/26/24",
     "date_reported": "03/25/24",
     "description": "subrogation file opened for possible third-party recovery",
-    "driver": "Unit TR-2377 / Operator Sawyer U. Ellis",
+    "driver": "Sawyer U. Ellis",
     "effective_date": "05/15/23",
     "policy_number": "SC00928151"
   },
@@ -1439,7 +1439,7 @@
     "date_closed": "",
     "date_of_loss": "03/18/24",
     "date_reported": "03/19/24",
-    "description": "parking-lot contact reported by third-party claimant; repair estimate remains under carrier review | claim office noted deductible handling outside this extract. Unit TR-2428.",
+    "description": "parking-lot contact reported by third-party claimant; repair estimate remains under carrier review",
     "driver": "",
     "effective_date": "05/15/23",
     "policy_number": "SC00928151"
@@ -1474,7 +1474,7 @@
     "date_of_loss": "06/06/23",
     "date_reported": "06/17/23",
     "description": "roll-up door damage noted during post-trip inspection",
-    "driver": "Unit TR-2462 / Operator Emery V. Benton",
+    "driver": "Emery V. Benton",
     "effective_date": "05/15/23",
     "policy_number": "SC00928151"
   },
@@ -1491,7 +1491,7 @@
     "date_of_loss": "06/13/23",
     "date_reported": "06/29/23",
     "description": "parking-lot contact reported by third-party claimant",
-    "driver": "Unit TR-2479 / Operator Winter Y. Quint",
+    "driver": "Winter Y. Quint",
     "effective_date": "05/15/23",
     "policy_number": "SC00928151"
   },
@@ -1558,7 +1558,7 @@
     "date_closed": "",
     "date_of_loss": "07/28/20",
     "date_reported": "09/02/20",
-    "description": "reefer unit service call included in repair estimate; subrogation diary was retained for follow-up | payment history may exclude late-posted recovery activity. Unit TR-2547.",
+    "description": "reefer unit service call included in repair estimate; subrogation diary was retained for follow-up",
     "driver": "Rowan S. Ramos",
     "effective_date": "06/01/20",
     "policy_number": "SC00928153"
@@ -1593,7 +1593,7 @@
     "date_of_loss": "08/11/20",
     "date_reported": "08/15/20",
     "description": "reefer unit service call included in repair estimate",
-    "driver": "Unit TR-2581 / Operator Emery V. Aldridge",
+    "driver": "Emery V. Aldridge",
     "effective_date": "06/01/20",
     "policy_number": "SC00928153"
   },
@@ -1643,7 +1643,7 @@
     "date_closed": "11/05/20",
     "date_of_loss": "09/01/20",
     "date_reported": "09/20/20",
-    "description": "roll-up door damage noted during post-trip inspection | reserve position retained pending supervisor diary review. Unit TR-2632.",
+    "description": "roll-up door damage noted during post-trip inspection",
     "driver": "",
     "effective_date": "06/01/20",
     "policy_number": "SC00928153"
@@ -1677,8 +1677,8 @@
     "date_closed": "",
     "date_of_loss": "09/15/20",
     "date_reported": "10/14/20",
-    "description": "rear impact while backing toward a dock door; medical reserve was reviewed without closing the file | claim office noted deductible handling outside this extract. Unit TR-2666.",
-    "driver": "Unit TR-2666 / Operator Harper U. Osborne",
+    "description": "rear impact while backing toward a dock door; medical reserve was reviewed without closing the file",
+    "driver": "Harper U. Osborne",
     "effective_date": "06/01/20",
     "policy_number": "SC00928153"
   },
@@ -1694,8 +1694,8 @@
     "date_closed": "01/13/21",
     "date_of_loss": "09/22/20",
     "date_reported": "10/26/20",
-    "description": "fuel-island scrape reported during yard maneuver; repair estimate remains under carrier review | closing date reflects carrier system status at valuation. Unit TR-2683.",
-    "driver": "Unit TR-2683 / Operator Zion C. Foster",
+    "description": "fuel-island scrape reported during yard maneuver; repair estimate remains under carrier review",
+    "driver": "Zion C. Foster",
     "effective_date": "06/01/20",
     "policy_number": "SC00928153"
   },
@@ -1762,7 +1762,7 @@
     "date_closed": "",
     "date_of_loss": "10/20/22",
     "date_reported": "11/01/22",
-    "description": "fuel-island scrape reported during yard maneuver | reserve position retained pending supervisor diary review. TR-2751.",
+    "description": "fuel-island scrape reported during yard maneuver",
     "driver": "Vaughn N. Quint",
     "effective_date": "06/01/22",
     "policy_number": "SC00928155"
@@ -1797,7 +1797,7 @@
     "date_of_loss": "11/03/22",
     "date_reported": "11/25/22",
     "description": "minor bodily injury allegation after a lane-change contact; salvage credit had not posted to the run",
-    "driver": "Unit TR-2785 / Operator Casey V. Larkin",
+    "driver": "Casey V. Larkin",
     "effective_date": "06/01/22",
     "policy_number": "SC00928155"
   },
@@ -1813,7 +1813,7 @@
     "date_closed": "05/12/23",
     "date_of_loss": "11/10/22",
     "date_reported": "12/07/22",
-    "description": "forklift contact with parked trailer during unloading | liability review remains tied to the listed unit file. TR-2802.",
+    "description": "forklift contact with parked trailer during unloading",
     "driver": "Zion N. Delaney",
     "effective_date": "06/01/22",
     "policy_number": "SC00928155"
@@ -1882,7 +1882,7 @@
     "date_of_loss": "12/08/23",
     "date_reported": "12/13/23",
     "description": "trailer door contacted by loading equipment; salvage credit had not posted to the run",
-    "driver": "Unit TR-2870 / Operator Parker R. Ramos",
+    "driver": "Parker R. Ramos",
     "effective_date": "06/01/23",
     "policy_number": "SC00928156"
   },
@@ -1899,7 +1899,7 @@
     "date_of_loss": "12/15/23",
     "date_reported": "12/25/23",
     "description": "cargo load shifted during an abrupt traffic stop",
-    "driver": "Unit TR-2887 / Operator Taylor Y. Priest",
+    "driver": "Taylor Y. Priest",
     "effective_date": "06/01/23",
     "policy_number": "SC00928156"
   },
@@ -2001,7 +2001,7 @@
     "date_of_loss": "02/13/20",
     "date_reported": "03/24/20",
     "description": "cargo shortage noticed after consignee inspection",
-    "driver": "Unit TR-2989 / Operator Finley V. Ellis",
+    "driver": "Finley V. Ellis",
     "effective_date": "06/19/19",
     "policy_number": "SC00928157"
   },
@@ -2034,7 +2034,7 @@
     "date_closed": "",
     "date_of_loss": "02/26/21",
     "date_reported": "03/06/21",
-    "description": "claim opened from late-submitted repair documentation; repair estimate remains under carrier review | liability review remains tied to the listed unit file. Unit TR-3023.",
+    "description": "claim opened from late-submitted repair documentation; repair estimate remains under carrier review",
     "driver": "Sawyer V. Foster",
     "effective_date": "06/18/20",
     "policy_number": "SC00928158"
@@ -2051,7 +2051,7 @@
     "date_closed": "06/26/21",
     "date_of_loss": "03/05/21",
     "date_reported": "03/18/21",
-    "description": "parked tractor struck during overnight staging | vendor documentation was indexed after first notice. Unit TR-3040.",
+    "description": "parked tractor struck during overnight staging",
     "driver": "",
     "effective_date": "06/18/20",
     "policy_number": "SC00928158"
@@ -2068,7 +2068,7 @@
     "date_closed": "",
     "date_of_loss": "03/12/21",
     "date_reported": "03/30/21",
-    "description": "claim opened from late-submitted repair documentation; claim notes reference separate correspondence from the claimant | vendor documentation was indexed after first notice. Unit TR-3057.",
+    "description": "claim opened from late-submitted repair documentation; claim notes reference separate correspondence from the claimant",
     "driver": "Vaughn W. Mercer",
     "effective_date": "06/18/20",
     "policy_number": "SC00928158"
@@ -2086,7 +2086,7 @@
     "date_of_loss": "03/19/21",
     "date_reported": "04/11/21",
     "description": "property damage reported at a private receiving yard",
-    "driver": "Unit TR-3074 / Operator Morgan I. Ellis",
+    "driver": "Morgan I. Ellis",
     "effective_date": "06/18/20",
     "policy_number": "SC00928158"
   },
@@ -2103,7 +2103,7 @@
     "date_of_loss": "03/26/21",
     "date_reported": "04/23/21",
     "description": "forklift contact with parked trailer during unloading",
-    "driver": "Unit TR-3091 / Operator Kai P. Foster",
+    "driver": "Kai P. Foster",
     "effective_date": "06/18/20",
     "policy_number": "SC00928158"
   },
@@ -2119,7 +2119,7 @@
     "date_closed": "",
     "date_of_loss": "04/02/21",
     "date_reported": "05/05/21",
-    "description": "reefer unit service call included in repair estimate | vendor documentation was indexed after first notice. Unit TR-3108.",
+    "description": "reefer unit service call included in repair estimate",
     "driver": "Driver not supplied in carrier export",
     "effective_date": "06/18/20",
     "policy_number": "SC00928158"
@@ -2153,7 +2153,7 @@
     "date_closed": "",
     "date_of_loss": "04/16/21",
     "date_reported": "04/17/21",
-    "description": "claim opened from late-submitted repair documentation; medical reserve was reviewed without closing the file | liability review remains tied to the listed unit file. Unit TR-3142.",
+    "description": "claim opened from late-submitted repair documentation; medical reserve was reviewed without closing the file",
     "driver": "Logan N. Keller",
     "effective_date": "06/18/20",
     "policy_number": "SC00928158"
@@ -2205,7 +2205,7 @@
     "date_of_loss": "07/11/21",
     "date_reported": "07/27/21",
     "description": "side-swipe contact reported near an interstate ramp",
-    "driver": "Unit TR-3193 / Operator Blake S. Ellis",
+    "driver": "Blake S. Ellis",
     "effective_date": "06/18/21",
     "policy_number": "SC00928159"
   },
@@ -2221,7 +2221,7 @@
     "date_closed": "",
     "date_of_loss": "07/18/21",
     "date_reported": "08/08/21",
-    "description": "towing and storage reimbursement requested after disablement | liability review remains tied to the listed unit file. Unit TR-3210.",
+    "description": "towing and storage reimbursement requested after disablement",
     "driver": "Sawyer S. Ramos",
     "effective_date": "06/18/21",
     "policy_number": "SC00928159"
@@ -2255,7 +2255,7 @@
     "date_closed": "04/21/22",
     "date_of_loss": "08/01/21",
     "date_reported": "09/01/21",
-    "description": "fuel-island scrape reported during yard maneuver; claim notes reference separate correspondence from the claimant | payment history may exclude late-posted recovery activity. Unit TR-3244.",
+    "description": "fuel-island scrape reported during yard maneuver; claim notes reference separate correspondence from the claimant",
     "driver": "",
     "effective_date": "06/18/21",
     "policy_number": "SC00928159"
@@ -2272,7 +2272,7 @@
     "date_closed": "",
     "date_of_loss": "08/08/21",
     "date_reported": "09/13/21",
-    "description": "trailer door contacted by loading equipment; repair estimate remains under carrier review | vendor documentation was indexed after first notice. Unit TR-3261.",
+    "description": "trailer door contacted by loading equipment; repair estimate remains under carrier review",
     "driver": "Kai S. Delaney",
     "effective_date": "06/18/21",
     "policy_number": "SC00928159"
@@ -2289,8 +2289,8 @@
     "date_closed": "",
     "date_of_loss": "08/15/21",
     "date_reported": "09/25/21",
-    "description": "loading bay bollard contact reported by warehouse staff | reserve position retained pending supervisor diary review. Unit TR-3278.",
-    "driver": "Unit TR-3278 / Operator Dakota F. Keller",
+    "description": "loading bay bollard contact reported by warehouse staff",
+    "driver": "Dakota F. Keller",
     "effective_date": "06/18/21",
     "policy_number": "SC00928159"
   },
@@ -2307,7 +2307,7 @@
     "date_of_loss": "08/22/21",
     "date_reported": "08/26/21",
     "description": "windshield and cowl damage attributed to road debris",
-    "driver": "Unit TR-3295 / Operator Emery I. Talbot",
+    "driver": "Emery I. Talbot",
     "effective_date": "06/18/21",
     "policy_number": "SC00928159"
   },
@@ -2340,7 +2340,7 @@
     "date_closed": "12/05/23",
     "date_of_loss": "09/05/23",
     "date_reported": "09/19/23",
-    "description": "subrogation file opened for possible third-party recovery | closing date reflects carrier system status at valuation. Unit TR-3329.",
+    "description": "subrogation file opened for possible third-party recovery",
     "driver": "Morgan N. Gaines",
     "effective_date": "06/18/23",
     "policy_number": "SC00928161"
@@ -2391,7 +2391,7 @@
     "date_closed": "02/12/24",
     "date_of_loss": "09/26/23",
     "date_reported": "10/25/23",
-    "description": "parking-lot contact reported by third-party claimant; medical reserve was reviewed without closing the file | vendor documentation was indexed after first notice. Unit TR-3380.",
+    "description": "parking-lot contact reported by third-party claimant; medical reserve was reviewed without closing the file",
     "driver": "",
     "effective_date": "06/18/23",
     "policy_number": "SC00928161"
@@ -2409,7 +2409,7 @@
     "date_of_loss": "10/21/19",
     "date_reported": "11/24/19",
     "description": "minor bodily injury allegation after a lane-change contact",
-    "driver": "Unit TR-3397 / Operator Logan R. Priest",
+    "driver": "Logan R. Priest",
     "effective_date": "07/06/19",
     "policy_number": "SC00928162"
   },
@@ -2442,7 +2442,7 @@
     "date_closed": "",
     "date_of_loss": "11/04/19",
     "date_reported": "11/06/19",
-    "description": "claim opened from late-submitted repair documentation; salvage credit had not posted to the run | reserve position retained pending supervisor diary review. Unit TR-3431.",
+    "description": "claim opened from late-submitted repair documentation; salvage credit had not posted to the run",
     "driver": "Casey Y. Nolan",
     "effective_date": "07/06/19",
     "policy_number": "SC00928162"
@@ -2476,7 +2476,7 @@
     "date_closed": "",
     "date_of_loss": "11/18/19",
     "date_reported": "11/30/19",
-    "description": "mirror and fairing damage found after delivery | liability review remains tied to the listed unit file. Unit TR-3465.",
+    "description": "mirror and fairing damage found after delivery",
     "driver": "Winter Y. Nolan",
     "effective_date": "07/06/19",
     "policy_number": "SC00928162"
@@ -2494,7 +2494,7 @@
     "date_of_loss": "11/25/19",
     "date_reported": "12/12/19",
     "description": "reefer unit service call included in repair estimate",
-    "driver": "Unit TR-3482 / Operator Finley E. Mercer",
+    "driver": "Finley E. Mercer",
     "effective_date": "07/06/19",
     "policy_number": "SC00928162"
   },
@@ -2510,8 +2510,8 @@
     "date_closed": "06/28/20",
     "date_of_loss": "12/02/19",
     "date_reported": "12/24/19",
-    "description": "rear impact while backing toward a dock door; liability position was not final at valuation date | reserve position retained pending supervisor diary review. Unit TR-3499.",
-    "driver": "Unit TR-3499 / Operator Logan Q. Benton",
+    "description": "rear impact while backing toward a dock door; liability position was not final at valuation date",
+    "driver": "Logan Q. Benton",
     "effective_date": "07/06/19",
     "policy_number": "SC00928162"
   },
@@ -2561,7 +2561,7 @@
     "date_closed": "",
     "date_of_loss": "12/23/19",
     "date_reported": "01/29/20",
-    "description": "mirror and fairing damage found after delivery | liability review remains tied to the listed unit file. Unit TR-3550.",
+    "description": "mirror and fairing damage found after delivery",
     "driver": "Morgan E. Ivers",
     "effective_date": "07/06/19",
     "policy_number": "SC00928162"
@@ -2595,7 +2595,7 @@
     "date_closed": "",
     "date_of_loss": "01/06/20",
     "date_reported": "01/11/20",
-    "description": "minor bodily injury allegation after a lane-change contact | payment history may exclude late-posted recovery activity. Unit TR-3584.",
+    "description": "minor bodily injury allegation after a lane-change contact",
     "driver": "",
     "effective_date": "07/06/19",
     "policy_number": "SC00928162"
@@ -2613,7 +2613,7 @@
     "date_of_loss": "01/12/21",
     "date_reported": "01/22/21",
     "description": "forklift contact with parked trailer during unloading",
-    "driver": "Unit TR-3601 / Operator Reese N. Serrano",
+    "driver": "Reese N. Serrano",
     "effective_date": "07/05/20",
     "policy_number": "SC00928163"
   },
@@ -2629,7 +2629,7 @@
     "date_closed": "",
     "date_of_loss": "01/19/22",
     "date_reported": "02/03/22",
-    "description": "steer tire failure led to roadside service invoice; repair estimate remains under carrier review; medical reserve was reviewed without closing the file | payment history may exclude late-posted recovery activity. Unit TR-3618.",
+    "description": "steer tire failure led to roadside service invoice; repair estimate remains under carrier review; medical reserve was reviewed without closing the file",
     "driver": "Finley J. Voss",
     "effective_date": "07/05/21",
     "policy_number": "SC00928164"
@@ -2663,7 +2663,7 @@
     "date_closed": "",
     "date_of_loss": "02/02/22",
     "date_reported": "02/27/22",
-    "description": "roll-up door damage noted during post-trip inspection | closing date reflects carrier system status at valuation. Unit TR-3652.",
+    "description": "roll-up door damage noted during post-trip inspection",
     "driver": "",
     "effective_date": "07/05/21",
     "policy_number": "SC00928164"
@@ -2698,7 +2698,7 @@
     "date_of_loss": "02/16/22",
     "date_reported": "03/23/22",
     "description": "steer tire failure led to roadside service invoice",
-    "driver": "Unit TR-3686 / Operator Rowan B. Nolan",
+    "driver": "Rowan B. Nolan",
     "effective_date": "07/05/21",
     "policy_number": "SC00928164"
   },
@@ -2715,7 +2715,7 @@
     "date_of_loss": "02/23/22",
     "date_reported": "04/04/22",
     "description": "roll-up door damage noted during post-trip inspection",
-    "driver": "Unit TR-3703 / Operator Kai H. Quint",
+    "driver": "Kai H. Quint",
     "effective_date": "07/05/21",
     "policy_number": "SC00928164"
   },
@@ -2748,7 +2748,7 @@
     "date_closed": "",
     "date_of_loss": "03/09/22",
     "date_reported": "03/17/22",
-    "description": "parking-lot contact reported by third-party claimant; supplemental invoice was requested from the vendor | payment history may exclude late-posted recovery activity. Unit TR-3737.",
+    "description": "parking-lot contact reported by third-party claimant; supplemental invoice was requested from the vendor",
     "driver": "Rowan N. Ivers",
     "effective_date": "07/05/21",
     "policy_number": "SC00928164"
@@ -2816,8 +2816,8 @@
     "date_closed": "10/25/24",
     "date_of_loss": "04/05/24",
     "date_reported": "05/03/24",
-    "description": "steer tire failure led to roadside service invoice; repair estimate remains under carrier review Loss data imported from carrier history rather than agency summary.",
-    "driver": "Unit TR-3805 / Operator Finley P. Voss",
+    "description": "steer tire failure led to roadside service invoice; repair estimate remains under carrier review",
+    "driver": "Finley P. Voss",
     "effective_date": "07/05/23",
     "policy_number": "SC00928166"
   },
@@ -2833,7 +2833,7 @@
     "date_closed": "11/17/24",
     "date_of_loss": "04/12/24",
     "date_reported": "05/15/24",
-    "description": "roll-up door damage noted during post-trip inspection Claim office notes may continue on adjacent lines in the source export.",
+    "description": "roll-up door damage noted during post-trip inspection",
     "driver": "Quinn R. Foster",
     "effective_date": "07/05/23",
     "policy_number": "SC00928166"
@@ -2850,7 +2850,7 @@
     "date_closed": "",
     "date_of_loss": "04/19/24",
     "date_reported": "05/27/24",
-    "description": "roll-up door damage noted during post-trip inspection Carrier file extract; amount fields are valued as of report date.",
+    "description": "roll-up door damage noted during post-trip inspection",
     "driver": "Vaughn Y. Foster",
     "effective_date": "07/05/23",
     "policy_number": "SC00928166"
@@ -2867,7 +2867,7 @@
     "date_closed": "",
     "date_of_loss": "05/14/20",
     "date_reported": "05/15/20",
-    "description": "minor bodily injury allegation after a lane-change contact; repair estimate remains under carrier review | payment history may exclude late-posted recovery activity. Unit TR-3856.",
+    "description": "minor bodily injury allegation after a lane-change contact; repair estimate remains under carrier review",
     "driver": "",
     "effective_date": "07/23/19",
     "policy_number": "SC00928167"
@@ -2902,7 +2902,7 @@
     "date_of_loss": "05/28/20",
     "date_reported": "06/08/20",
     "description": "fuel-island scrape reported during yard maneuver",
-    "driver": "Unit TR-3890 / Operator Logan J. Serrano",
+    "driver": "Logan J. Serrano",
     "effective_date": "07/23/19",
     "policy_number": "SC00928167"
   },
@@ -2919,7 +2919,7 @@
     "date_of_loss": "06/04/20",
     "date_reported": "06/20/20",
     "description": "towing and storage reimbursement requested after disablement",
-    "driver": "Unit TR-3907 / Operator Emery W. Priest",
+    "driver": "Emery W. Priest",
     "effective_date": "07/23/19",
     "policy_number": "SC00928167"
   },
@@ -2935,7 +2935,7 @@
     "date_closed": "10/18/19",
     "date_of_loss": "08/16/19",
     "date_reported": "09/06/19",
-    "description": "forklift contact with parked trailer during unloading | claim office noted deductible handling outside this extract. Unit TR-3924.",
+    "description": "forklift contact with parked trailer during unloading",
     "driver": "Driver not supplied in carrier export",
     "effective_date": "07/23/19",
     "policy_number": "SC00928167"
@@ -3021,7 +3021,7 @@
     "date_of_loss": "09/19/20",
     "date_reported": "09/23/20",
     "description": "windshield and cowl damage attributed to road debris",
-    "driver": "Unit TR-4009 / Operator Vaughn H. Gaines",
+    "driver": "Vaughn H. Gaines",
     "effective_date": "07/22/20",
     "policy_number": "SC00928168"
   },
@@ -3105,8 +3105,8 @@
     "date_closed": "04/23/21",
     "date_of_loss": "10/24/20",
     "date_reported": "11/22/20",
-    "description": "parked tractor struck during overnight staging; medical reserve was reviewed without closing the file",
-    "driver": "Unit TR-4094 / Operator Casey H. Nolan",
+    "description": "parked tractor struck during overnight staging; medical reserve was reviewed without closing the file Casey H. Nolan",
+    "driver": "Casey H. Nolan",
     "effective_date": "07/22/20",
     "policy_number": "SC00928168"
   },
@@ -3118,12 +3118,12 @@
     "claim_reported": "X",
     "claim_reserves": "$20,807.21",
     "claim_status": "Open",
-    "claimant": "Keystone Materials",
+    "claimant": "",
     "date_closed": "",
     "date_of_loss": "10/31/21",
     "date_reported": "12/04/21",
     "description": "roll-up door damage noted during post-trip inspection",
-    "driver": "Unit TR-4111 / Operator Morgan W. Talbot",
+    "driver": "Morgan W. Talbot",
     "effective_date": "07/22/21",
     "policy_number": "SC00928169"
   },
@@ -3135,7 +3135,7 @@
     "claim_reported": "X",
     "claim_reserves": "$24,936.86",
     "claim_status": "Open",
-    "claimant": "Palisade Container",
+    "claimant": "",
     "date_closed": "",
     "date_of_loss": "11/07/21",
     "date_reported": "12/16/21",
@@ -3152,7 +3152,7 @@
     "claim_reported": "X",
     "claim_reserves": "$0.00",
     "claim_status": "Closed",
-    "claimant": "Keystone Materials",
+    "claimant": "",
     "date_closed": "05/20/22",
     "date_of_loss": "11/14/21",
     "date_reported": "11/16/21",
@@ -3169,7 +3169,7 @@
     "claim_reported": "X",
     "claim_reserves": "$33,194.47",
     "claim_status": "Pending",
-    "claimant": "Keystone Materials",
+    "claimant": "",
     "date_closed": "",
     "date_of_loss": "11/21/21",
     "date_reported": "11/28/21",
@@ -3190,7 +3190,7 @@
     "date_closed": "07/05/23",
     "date_of_loss": "11/28/22",
     "date_reported": "12/10/22",
-    "description": "rear impact while backing toward a dock door; subrogation diary was retained for follow-up | payment history may exclude late-posted recovery activity. Unit TR-4179.",
+    "description": "rear impact while backing toward a dock door; subrogation diary was retained for follow-up",
     "driver": "Sawyer G. Keller",
     "effective_date": "07/22/22",
     "policy_number": "SC00928170"
@@ -3224,8 +3224,8 @@
     "date_closed": "08/20/23",
     "date_of_loss": "12/12/22",
     "date_reported": "01/03/23",
-    "description": "subrogation file opened for possible third-party recovery; rental and downtime amounts were still being reconciled | claim office noted deductible handling outside this extract. Unit TR-4213.",
-    "driver": "Unit TR-4213 / Operator Morgan V. Ramos",
+    "description": "subrogation file opened for possible third-party recovery; rental and downtime amounts were still being reconciled",
+    "driver": "Morgan V. Ramos",
     "effective_date": "07/22/22",
     "policy_number": "SC00928170"
   },
@@ -3310,7 +3310,7 @@
     "date_of_loss": "01/16/23",
     "date_reported": "01/21/23",
     "description": "subrogation file opened for possible third-party recovery",
-    "driver": "Unit TR-4298 / Operator Quinn Y. Delaney",
+    "driver": "Quinn Y. Delaney",
     "effective_date": "07/22/22",
     "policy_number": "SC00928170"
   },
@@ -3327,7 +3327,7 @@
     "date_of_loss": "01/23/23",
     "date_reported": "02/02/23",
     "description": "parked tractor struck during overnight staging",
-    "driver": "Unit TR-4315 / Operator Dakota P. Ellis",
+    "driver": "Dakota P. Ellis",
     "effective_date": "07/22/22",
     "policy_number": "SC00928170"
   },
@@ -3343,7 +3343,7 @@
     "date_closed": "05/21/23",
     "date_of_loss": "01/30/23",
     "date_reported": "02/14/23",
-    "description": "side-swipe contact reported near an interstate ramp; repair estimate remains under carrier review | claim office noted deductible handling outside this extract. Unit TR-4332.",
+    "description": "side-swipe contact reported near an interstate ramp; repair estimate remains under carrier review",
     "driver": "Driver not supplied in carrier export",
     "effective_date": "07/22/22",
     "policy_number": "SC00928170"
@@ -3377,7 +3377,7 @@
     "date_closed": "07/06/23",
     "date_of_loss": "02/13/23",
     "date_reported": "03/10/23",
-    "description": "mirror and fairing damage found after delivery; photos were received with the initial notice | payment history may exclude late-posted recovery activity. Unit TR-4366.",
+    "description": "mirror and fairing damage found after delivery; photos were received with the initial notice",
     "driver": "Emery R. Talbot",
     "effective_date": "07/22/22",
     "policy_number": "SC00928170"
@@ -3429,7 +3429,7 @@
     "date_of_loss": "03/23/20",
     "date_reported": "05/02/20",
     "description": "windshield and cowl damage attributed to road debris",
-    "driver": "Unit TR-4417 / Operator Parker A. Ramos",
+    "driver": "Parker A. Ramos",
     "effective_date": "08/09/19",
     "policy_number": "SC00928172"
   },
@@ -3514,7 +3514,7 @@
     "date_of_loss": "04/27/21",
     "date_reported": "05/20/21",
     "description": "windshield and cowl damage attributed to road debris",
-    "driver": "Unit TR-4502 / Operator Dakota N. Priest",
+    "driver": "Dakota N. Priest",
     "effective_date": "08/08/20",
     "policy_number": "SC00928173"
   },
@@ -3531,7 +3531,7 @@
     "date_of_loss": "05/04/21",
     "date_reported": "06/01/21",
     "description": "windshield and cowl damage attributed to road debris",
-    "driver": "Unit TR-4519 / Operator Reese B. Delaney",
+    "driver": "Reese B. Delaney",
     "effective_date": "08/08/20",
     "policy_number": "SC00928173"
   },
@@ -3547,7 +3547,7 @@
     "date_closed": "",
     "date_of_loss": "05/11/21",
     "date_reported": "06/13/21",
-    "description": "minor bodily injury allegation after a lane-change contact | vendor documentation was indexed after first notice. Unit TR-4536.",
+    "description": "minor bodily injury allegation after a lane-change contact",
     "driver": "Driver not supplied in carrier export",
     "effective_date": "08/08/20",
     "policy_number": "SC00928173"
@@ -3564,7 +3564,7 @@
     "date_closed": "",
     "date_of_loss": "05/18/21",
     "date_reported": "06/25/21",
-    "description": "side-swipe contact reported near an interstate ramp; repair estimate remains under carrier review | closing date reflects carrier system status at valuation. Unit TR-4553.",
+    "description": "side-swipe contact reported near an interstate ramp; repair estimate remains under carrier review",
     "driver": "Jordan Y. Talbot",
     "effective_date": "08/08/20",
     "policy_number": "SC00928173"
@@ -3581,7 +3581,7 @@
     "date_closed": "07/05/21",
     "date_of_loss": "05/25/21",
     "date_reported": "05/26/21",
-    "description": "minor bodily injury allegation after a lane-change contact; coverage was accepted subject to deductible application | claim office noted deductible handling outside this extract. Unit TR-4570.",
+    "description": "minor bodily injury allegation after a lane-change contact; coverage was accepted subject to deductible application",
     "driver": "Logan S. Osborne",
     "effective_date": "08/08/20",
     "policy_number": "SC00928173"
@@ -3632,8 +3632,8 @@
     "date_closed": "",
     "date_of_loss": "06/15/21",
     "date_reported": "07/01/21",
-    "description": "subrogation file opened for possible third-party recovery | liability review remains tied to the listed unit file. Unit TR-4621.",
-    "driver": "Unit TR-4621 / Operator Dakota P. Benton",
+    "description": "subrogation file opened for possible third-party recovery",
+    "driver": "Dakota P. Benton",
     "effective_date": "08/08/20",
     "policy_number": "SC00928173"
   },
@@ -3649,7 +3649,7 @@
     "date_closed": "",
     "date_of_loss": "06/22/21",
     "date_reported": "07/13/21",
-    "description": "towing and storage reimbursement requested after disablement | vendor documentation was indexed after first notice. Unit TR-4638.",
+    "description": "towing and storage reimbursement requested after disablement",
     "driver": "Casey P. Ellis",
     "effective_date": "08/08/20",
     "policy_number": "SC00928173"
@@ -3683,7 +3683,7 @@
     "date_closed": "01/24/22",
     "date_of_loss": "09/09/21",
     "date_reported": "10/10/21",
-    "description": "cargo shortage noticed after consignee inspection | Entry retained in underwriting view even if activity is closed.",
+    "description": "cargo shortage noticed after consignee inspection",
     "driver": "",
     "effective_date": "08/08/21",
     "policy_number": "SC00928174"
@@ -3700,7 +3700,7 @@
     "date_closed": "",
     "date_of_loss": "09/16/21",
     "date_reported": "10/22/21",
-    "description": "reefer unit service call included in repair estimate; coverage was accepted subject to deductible application | Carrier file extract; amount fields are valued as of report date.",
+    "description": "reefer unit service call included in repair estimate; coverage was accepted subject to deductible application",
     "driver": "Reese F. Voss",
     "effective_date": "08/08/21",
     "policy_number": "SC00928174"
@@ -3717,8 +3717,8 @@
     "date_closed": "",
     "date_of_loss": "09/23/22",
     "date_reported": "11/03/22",
-    "description": "parked tractor truck during overnight staging",
-    "driver": "Unit TR-4706 / Operator Rowan A. Ramos",
+    "description": "parked tractor struck during overnight staging",
+    "driver": "Rowan A. Ramos",
     "effective_date": "08/08/22",
     "policy_number": "SC00928175"
   },
@@ -3735,7 +3735,7 @@
     "date_of_loss": "09/30/22",
     "date_reported": "10/04/22",
     "description": "parking-lot contact reported by third-party claimant",
-    "driver": "Unit TR-4723 / Operator Parker O. Benton",
+    "driver": "Parker O. Benton",
     "effective_date": "08/08/22",
     "policy_number": "SC00928175"
   },
@@ -3747,11 +3747,11 @@
     "claim_reported": "X",
     "claim_reserves": "$81,580.19",
     "claim_status": "Pending",
-    "claimant": "Juniper Transit Yard",
+    "claimant": "Oak Valley Repair",
     "date_closed": "",
     "date_of_loss": "10/07/22",
     "date_reported": "10/16/22",
-    "description": "rear impact while backing toward a dock door; repair estimate remains under carrier review | payment history may exclude late-posted recovery activity. Unit TR-4740.",
+    "description": "rear impact while backing toward a dock door; repair estimate remains under carrier review",
     "driver": "Driver not supplied in carrier export",
     "effective_date": "08/08/22",
     "policy_number": "SC00928175"
@@ -3819,7 +3819,7 @@
     "date_closed": "",
     "date_of_loss": "11/04/22",
     "date_reported": "12/03/22",
-    "description": "property damage reported at a private receiving yard; medical reserve was reviewed without closing the file | liability review remains tied to the listed unit file. Unit TR-4808.",
+    "description": "property damage reported at a private receiving yard; medical reserve was reviewed without closing the file",
     "driver": "",
     "effective_date": "08/08/22",
     "policy_number": "SC00928175"
@@ -3837,7 +3837,7 @@
     "date_of_loss": "11/11/22",
     "date_reported": "12/15/22",
     "description": "claim opened from late-submitted repair documentation",
-    "driver": "Unit TR-4825 / Operator Jordan D. Carver",
+    "driver": "Jordan D. Carver",
     "effective_date": "08/08/22",
     "policy_number": "SC00928175"
   },
@@ -3870,7 +3870,7 @@
     "date_closed": "07/12/23",
     "date_of_loss": "11/25/22",
     "date_reported": "11/27/22",
-    "description": "cargo shortage noticed after assignee inspection",
+    "description": "cargo shortage noticed after consignee inspection",
     "driver": "Vaughn M. Benton",
     "effective_date": "08/08/22",
     "policy_number": "SC00928175"
@@ -3921,8 +3921,8 @@
     "date_closed": "02/21/23",
     "date_of_loss": "12/16/22",
     "date_reported": "01/02/23",
-    "description": "parked tractor truck during overnight staging | reserve position retained pending supervisor diary review. Unit TR-4910.",
-    "driver": "Unit TR-4910 / Operator Jordan T. Ellis",
+    "description": "parked tractor struck during overnight staging",
+    "driver": "Jordan T. Ellis",
     "effective_date": "08/08/22",
     "policy_number": "SC00928175"
   },
@@ -3938,8 +3938,8 @@
     "date_closed": "",
     "date_of_loss": "01/10/20",
     "date_reported": "02/01/20",
-    "description": "roll-up door damage noted during post-trip inspection; liability position was not final at valuation date; claim notes reference separate correspondence from the claimant | vendor documentation was indexed after first notice. Unit TR-4927.",
-    "driver": "Unit TR-4927 / Operator Emery J. Benton",
+    "description": "roll-up door damage noted during post-trip inspection; liability position was not final at valuation date; claim notes reference separate correspondence from the claimant",
+    "driver": "Emery J. Benton",
     "effective_date": "08/26/19",
     "policy_number": "SC00928177"
   },
@@ -4041,7 +4041,7 @@
     "date_of_loss": "02/20/21",
     "date_reported": "03/02/21",
     "description": "windshield and cowl damage attributed to road debris",
-    "driver": "Unit TR-5029 / Operator Rowan G. Serrano",
+    "driver": "Rowan G. Serrano",
     "effective_date": "08/25/20",
     "policy_number": "SC00928178"
   },
@@ -4057,7 +4057,7 @@
     "date_closed": "",
     "date_of_loss": "02/27/21",
     "date_reported": "03/14/21",
-    "description": "forklift contact with parked trailer during unloading; liability position was not final at valuation date | liability review remains tied to the listed unit file. Unit TR-5046.",
+    "description": "forklift contact with parked trailer during unloading; liability position was not final at valuation date",
     "driver": "Parker B. Ivers",
     "effective_date": "08/25/20",
     "policy_number": "SC00928178"
@@ -4125,8 +4125,8 @@
     "date_closed": "",
     "date_of_loss": "03/27/21",
     "date_reported": "05/01/21",
-    "description": "loading bay bollard contact reported by warehouse staff; claim notes reference separate correspondence from the claimant | vendor documentation was indexed after first notice. Unit TR-5114.",
-    "driver": "Unit TR-5114 / Operator Taylor P. Quint",
+    "description": "loading bay bollard contact reported by warehouse staff; claim notes reference separate correspondence from the claimant",
+    "driver": "Taylor P. Quint",
     "effective_date": "08/25/20",
     "policy_number": "SC00928178"
   },
@@ -4143,7 +4143,7 @@
     "date_of_loss": "04/03/21",
     "date_reported": "05/13/21",
     "description": "side-swipe contact reported near an interstate ramp",
-    "driver": "Unit TR-5131 / Operator Winter U. Mercer",
+    "driver": "Winter U. Mercer",
     "effective_date": "08/25/20",
     "policy_number": "SC00928178"
   },
@@ -4245,7 +4245,7 @@
     "date_of_loss": "05/15/23",
     "date_reported": "06/12/23",
     "description": "subrogation file opened for possible third-party recovery",
-    "driver": "Unit TR-5233 / Operator Avery Y. Quint",
+    "driver": "Avery Y. Quint",
     "effective_date": "08/25/22",
     "policy_number": "SC00928180"
   },
@@ -4330,7 +4330,7 @@
     "date_of_loss": "06/19/23",
     "date_reported": "06/30/23",
     "description": "subrogation file opened for possible third-party recovery",
-    "driver": "Unit TR-5318 / Operator Harper B. Hollis",
+    "driver": "Harper B. Hollis",
     "effective_date": "08/25/22",
     "policy_number": "SC00928180"
   },
@@ -4347,7 +4347,7 @@
     "date_of_loss": "06/26/23",
     "date_reported": "07/12/23",
     "description": "claim opened from late-submitted repair documentation",
-    "driver": "Unit TR-5335 / Operator Winter A. Foster",
+    "driver": "Winter A. Foster",
     "effective_date": "08/25/22",
     "policy_number": "SC00928180"
   },
@@ -4380,7 +4380,7 @@
     "date_closed": "",
     "date_of_loss": "07/09/24",
     "date_reported": "08/04/24",
-    "description": "forklift contact with parked trailer during unloading | closing date reflects carrier system status at valuation. Unit TR-5369.",
+    "description": "forklift contact with parked trailer during unloading",
     "driver": "Vaughn D. Ellis",
     "effective_date": "08/25/23",
     "policy_number": "SC00928181"
@@ -4414,7 +4414,7 @@
     "date_closed": "",
     "date_of_loss": "09/27/23",
     "date_reported": "11/02/23",
-    "description": "cargo load shifted during an abrupt traffic stop; repair estimate remains under carrier review | vendor documentation was indexed after first notice. Unit TR-5403.",
+    "description": "cargo load shifted during an abrupt traffic stop; repair estimate remains under carrier review",
     "driver": "Emery Q. Benton",
     "effective_date": "08/25/23",
     "policy_number": "SC00928181"
@@ -4431,7 +4431,7 @@
     "date_closed": "",
     "date_of_loss": "10/04/23",
     "date_reported": "11/14/23",
-    "description": "loading bay bollard contact reported by warehouse staff | closing date reflects carrier system status at valuation. Unit TR-5420.",
+    "description": "loading bay bollard contact reported by warehouse staff",
     "driver": "",
     "effective_date": "08/25/23",
     "policy_number": "SC00928181"
@@ -4449,7 +4449,7 @@
     "date_of_loss": "10/11/23",
     "date_reported": "10/15/23",
     "description": "parked tractor struck during overnight staging",
-    "driver": "Unit TR-5437 / Operator Winter W. Quint",
+    "driver": "Winter W. Quint",
     "effective_date": "08/25/23",
     "policy_number": "SC00928181"
   },
@@ -4482,7 +4482,7 @@
     "date_closed": "",
     "date_of_loss": "10/25/23",
     "date_reported": "11/08/23",
-    "description": "trailer door contacted by loading equipment | reserve position retained pending supervisor diary review. Unit TR-5471.",
+    "description": "trailer door contacted by loading equipment",
     "driver": "Casey A. Voss",
     "effective_date": "08/25/23",
     "policy_number": "SC00928181"
@@ -4499,7 +4499,7 @@
     "date_closed": "",
     "date_of_loss": "11/18/20",
     "date_reported": "12/07/20",
-    "description": "side-swipe contact reported near an interstate ramp; rental and downtime amounts were still being reconciled | claim office noted deductible handling outside this extract. TR-5488.",
+    "description": "side-swipe contact reported near an interstate ramp; rental and downtime amounts were still being reconciled",
     "driver": "",
     "effective_date": "09/11/20",
     "policy_number": "SC00928183"
@@ -4534,7 +4534,7 @@
     "date_of_loss": "12/02/20",
     "date_reported": "12/31/20",
     "description": "cargo shortage noticed after consignee inspection; photos were received with the initial notice",
-    "driver": "Unit TR-5522 / Operator Avery W. Aldridge",
+    "driver": "Avery W. Aldridge",
     "effective_date": "09/11/20",
     "policy_number": "SC00928183"
   },
@@ -4551,7 +4551,7 @@
     "date_of_loss": "12/09/20",
     "date_reported": "01/12/21",
     "description": "towing and storage reimbursement requested after disablement",
-    "driver": "Unit TR-5539 / Operator Sawyer J. Nolan",
+    "driver": "Sawyer J. Nolan",
     "effective_date": "09/11/20",
     "policy_number": "SC00928183"
   },
@@ -4652,8 +4652,8 @@
     "date_closed": "05/25/22",
     "date_of_loss": "01/20/22",
     "date_reported": "02/11/22",
-    "description": "",
-    "driver": "",
+    "description": "cargo shortage noticed after consignee inspection; subrogation diary was retained for follow-up",
+    "driver": "Winter U. Talbot",
     "effective_date": "09/11/21",
     "policy_number": "SC00928184"
   },
@@ -4669,7 +4669,7 @@
     "date_closed": "",
     "date_of_loss": "01/27/22",
     "date_reported": "02/23/22",
-    "description": "loading bay bollard contact reported by warehouse staff | payment history may exclude late-posted recovery activity. Unit TR-5658.",
+    "description": "loading bay bollard contact reported by warehouse staff",
     "driver": "Avery T. Ellis",
     "effective_date": "09/11/21",
     "policy_number": "SC00928184"
@@ -4686,8 +4686,8 @@
     "date_closed": "",
     "date_of_loss": "02/03/22",
     "date_reported": "03/07/22",
-    "description": "",
-    "driver": "",
+    "description": "property damage reported at a private receiving yard; medical reserve was reviewed without closing the file",
+    "driver": "Reese D. Gaines",
     "effective_date": "09/11/21",
     "policy_number": "SC00928184"
   },
@@ -4721,7 +4721,7 @@
     "date_of_loss": "02/17/22",
     "date_reported": "03/31/22",
     "description": "claim opened from late-submitted repair documentation",
-    "driver": "",
+    "driver": "Quinn N. Quint",
     "effective_date": "09/11/21",
     "policy_number": "SC00928184"
   },
@@ -4738,7 +4738,7 @@
     "date_of_loss": "02/24/22",
     "date_reported": "03/01/22",
     "description": "forklift contact with parked trailer during unloading",
-    "driver": "Unit TR-5726 / Operator Quinn I. Talbot",
+    "driver": "Quinn I. Talbot",
     "effective_date": "09/11/21",
     "policy_number": "SC00928184"
   },
@@ -4755,7 +4755,7 @@
     "date_of_loss": "03/03/22",
     "date_reported": "03/13/22",
     "description": "roll-up door damage noted during post-trip inspection",
-    "driver": "Unit TR-5743 / Operator Vaughn R. Aldridge",
+    "driver": "Vaughn R. Aldridge",
     "effective_date": "09/11/21",
     "policy_number": "SC00928184"
   },
@@ -4771,7 +4771,7 @@
     "date_closed": "09/21/22",
     "date_of_loss": "03/10/22",
     "date_reported": "03/25/22",
-    "description": "subrogation file opened for possible third-party recovery; repair estimate remains under carrier review | liability review remains tied to the listed unit file. Unit TR-5760.",
+    "description": "subrogation file opened for possible third-party recovery; repair estimate remains under carrier review",
     "driver": "Driver not supplied in carrier export",
     "effective_date": "09/11/21",
     "policy_number": "SC00928184"
@@ -4805,7 +4805,7 @@
     "date_closed": "",
     "date_of_loss": "03/23/24",
     "date_reported": "04/17/24",
-    "description": "windshield and cowl damage attributed to road debris | claim office noted deductible handling outside this extract. Unit TR-5794.",
+    "description": "windshield and cowl damage attributed to road debris",
     "driver": "Emery W. Ramos",
     "effective_date": "09/11/23",
     "policy_number": "SC00928186"
@@ -4857,7 +4857,7 @@
     "date_of_loss": "04/13/24",
     "date_reported": "05/23/24",
     "description": "forklift contact with parked trailer during unloading",
-    "driver": "Unit TR-5845 / Operator Parker W. Carver",
+    "driver": "Parker W. Carver",
     "effective_date": "09/11/23",
     "policy_number": "SC00928186"
   },
@@ -4873,7 +4873,7 @@
     "date_closed": "",
     "date_of_loss": "04/20/24",
     "date_reported": "04/23/24",
-    "description": "rear impact while backing toward a dock door; photos were received with the initial notice | closing date reflects carrier system status at valuation. Unit TR-5862.",
+    "description": "rear impact while backing toward a dock door; photos were received with the initial notice",
     "driver": "Avery J. Hollis",
     "effective_date": "09/11/23",
     "policy_number": "SC00928186"
@@ -4890,7 +4890,7 @@
     "date_closed": "",
     "date_of_loss": "04/27/24",
     "date_reported": "05/05/24",
-    "description": "side-swipe contact reported near an interstate ramp; salvage credit had not posted to the run | claim office noted deductible handling outside this extract. Unit TR-5879.",
+    "description": "side-swipe contact reported near an interstate ramp; salvage credit had not posted to the run",
     "driver": "Zion H. Serrano",
     "effective_date": "09/11/23",
     "policy_number": "SC00928186"
@@ -4942,7 +4942,7 @@
     "date_of_loss": "05/18/24",
     "date_reported": "06/10/24",
     "description": "cargo load shifted during an abrupt traffic stop",
-    "driver": "Unit TR-5930 / Operator Taylor M. Delaney",
+    "driver": "Taylor M. Delaney",
     "effective_date": "09/11/23",
     "policy_number": "SC00928186"
   },
@@ -4959,7 +4959,7 @@
     "date_of_loss": "05/25/24",
     "date_reported": "06/22/24",
     "description": "parked tractor struck during overnight staging",
-    "driver": "Unit TR-5947 / Operator Vaughn E. Carver",
+    "driver": "Vaughn E. Carver",
     "effective_date": "09/11/23",
     "policy_number": "SC00928186"
   },
@@ -5043,7 +5043,7 @@
     "date_closed": "",
     "date_of_loss": "07/17/22",
     "date_reported": "07/28/22",
-    "description": "reefer unit service call included in repair estimate | reserve position retained pending supervisor diary review. Unit TR-6032.",
+    "description": "reefer unit service call included in repair estimate",
     "driver": "",
     "effective_date": "09/28/21",
     "policy_number": "SC00928189"
@@ -5060,8 +5060,8 @@
     "date_closed": "01/13/23",
     "date_of_loss": "07/24/22",
     "date_reported": "08/09/22",
-    "description": "parking-lot contact reported by third-party claimant; photos were received with the initial notice | liability review remains tied to the listed unit file. Unit TR-6049.",
-    "driver": "Unit TR-6049 / Operator Emery W. Ramos",
+    "description": "parking-lot contact reported by third-party claimant; photos were received with the initial notice",
+    "driver": "Emery W. Ramos",
     "effective_date": "09/28/21",
     "policy_number": "SC00928189"
   },
@@ -5077,7 +5077,7 @@
     "date_closed": "02/05/23",
     "date_of_loss": "07/31/22",
     "date_reported": "08/21/22",
-    "description": "mirror and fairing damage found after delivery | payment history may exclude late-posted recovery activity. Unit TR-6066.",
+    "description": "mirror and fairing damage found after delivery",
     "driver": "Rowan B. Ellis",
     "effective_date": "09/28/21",
     "policy_number": "SC00928189"
@@ -5094,7 +5094,7 @@
     "date_closed": "",
     "date_of_loss": "08/07/22",
     "date_reported": "09/02/22",
-    "description": "fuel-island scrape reported during yard maneuver | vendor documentation was indexed after first notice. Unit TR-6083.",
+    "description": "fuel-island scrape reported during yard maneuver",
     "driver": "Logan H. Hollis",
     "effective_date": "09/28/21",
     "policy_number": "SC00928189"

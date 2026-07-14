@@ -96,7 +96,7 @@ def _evidence_map(config: PolicyMultiHopCaseConfig) -> list[dict[str, Any]]:
         primary = [
             ("workers_comp_information_page", 1, "policy_number", ["named_insured", "policy_period"]),
             ("classification_schedule", 3 + gap1, "state/class_code", ["classification", "governing_class"]),
-            ("payroll_and_rate_schedule", 4 + gap1, "class_code_item_id", ["annual_payroll", "manual_rate", "estimated_premium"]),
+            ("payroll_and_rate_schedule", 4 + gap1, "state/class_code/location_number", ["annual_payroll", "manual_rate", "estimated_premium"]),
             ("experience_modification_summary", 5 + gap1, "policy_number", ["experience_mod", "schedule_credit_debit"]),
             ("forms_and_endorsements_schedule", 6 + gap1 + gap2, "form_number", ["form_title", "edition_date"]),
         ]
@@ -105,7 +105,7 @@ def _evidence_map(config: PolicyMultiHopCaseConfig) -> list[dict[str, Any]]:
             ("cgl_declarations", 1, "policy_number", ["named_insured", "policy_period"]),
             ("limits_schedule", 3 + gap1, "coverage_part", ["limit_type", "limit"]),
             ("classification_and_location_schedule", 4 + gap1, "location_number/class_code", ["classification", "territory"]),
-            ("exposure_and_rating_schedule", 5 + gap1, "exposure_item_id", ["exposure_basis", "exposure", "rate", "premium"]),
+            ("exposure_and_rating_schedule", 5 + gap1, "location_number/class_code/exposure_basis", ["exposure", "rate", "premium"]),
             ("forms_and_exclusions_schedule", 6 + gap1 + gap2, "form_number", ["form_title", "exclusion_name"]),
         ]
     evidence = [
@@ -141,7 +141,7 @@ def _evidence_map(config: PolicyMultiHopCaseConfig) -> list[dict[str, Any]]:
                 {
                     "section": "endorsement_detail_pages",
                     "approx_page_after_cover": 7 + gap1 + gap2 + gap3,
-                    "join_key": "endorsement_number",
+                    "join_key": "form_number/edition_date/state_or_location/class_code",
                     "fields": ["endorsement_effective_date", "materiality"],
                 },
                 {
@@ -153,7 +153,7 @@ def _evidence_map(config: PolicyMultiHopCaseConfig) -> list[dict[str, Any]]:
                 {
                     "section": "premium_summary",
                     "approx_page_after_cover": 8 + gap1 + gap2 + gap3 + gap4,
-                    "join_key": "item_id",
+                    "join_key": "state_or_location/class_code/exposure_or_payroll",
                     "fields": ["premium", "estimated_premium"],
                 },
             ]
@@ -255,6 +255,7 @@ def _write_case(
         "num_target_records": len(target_records),
         "pages_estimate": rendered_pages or estimated_pages,
         "pdf_page_count": rendered_pages,
+        "html_pagination_mode": "flowing_sections",
         "document_count": 1,
         "evidence_pattern": "single_document_policy_packet_long_range_join",
         "minimum_gap_pages_between_primary_and_last_evidence": sum(config.spacer_pages),

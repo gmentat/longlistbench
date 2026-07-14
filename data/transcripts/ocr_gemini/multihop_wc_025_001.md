@@ -1,8869 +1,7280 @@
 # Page 1
 
-SPECIMEN POLICY COPY
-POLICY COPY 1F7EA01
+ARGENT BIRCH EMPLOYERS                                         POLICY NUMBER: YW700400
+Workers Compensation and Employers Liability                     EFFECTIVE: 04/01/2026
+                                                                  EXPIRES: 04/01/2027
+______________________________________________________________________________________
 
-WC Policy Packet
+      WORKERS COMPENSATION AND EMPLOYERS LIABILITY INFORMATION PAGE
+______________________________________________________________________________________
 
-NAMED INSURED:
-Blue Kettle Food Service, LLC
-Policy YW700400
-Period 04/01/2026 - 04/01/2027
+ ITEM 1 - NAMED INSURED AND POLICY INFORMATION
+______________________________________________________________________________________
 
-DECLARATIONS COPY
-Schedules, forms, endorsements, clauses, and premiums are printed in separate policy sections.
-Policy period and location context carry into the later pages.
+ ITEM                                 INFORMATION
+ Named insured                        Blue Kettle Food Service, LLC
+ Mailing address                      914 Millrace Parkway, Worcester, MA 01608
+ Producer                             Brindle Coast Coverage Group
+ Producer code                        PX-73916
+ Policy period                        04/01/2026 - 04/01/2027
+ Estimated policy premium             $512,617
+______________________________________________________________________________________
 
-Premises or classifications shown on declarations
+ ITEM 3 - EMPLOYERS LIABILITY LIMITS
+______________________________________________________________________________________
 
-LOC.,STATE,CLASS,DESCRIPTION,GOVERNING
-1,CT,8810,Clerical office employees,Yes
-2,CT,8017,Retail store - all employees,No
-3,MA,8742,Outside salespersons,No
-4,MA,5190,Electrical wiring within buildings,No
-5,RI,9082,Restaurant NOC,No
-1,ME,3632,Machine shop NOC,No
+ COVERAGE                             LIMIT
+ Bodily Injury by Accident            $1,000,000 each accident
+ Bodily Injury by Disease             $1,000,000 policy limit
+ Bodily Injury by Disease             $1,000,000 each employee
+______________________________________________________________________________________
 
-Coverage/rating preview
+ ITEM 4 - CLASSIFICATIONS AND ESTIMATED PREMIUM
+______________________________________________________________________________________
 
-SCHEDULE REF,COVERAGE OR CLASS,LIMIT/EXPOSURE,RATE OR PREMIUM
-WC-0001,Clerical office employees,"$45,136",$189
-WC-0002,Retail store - all employees,"$54,124",$400
-WC-0003,Outside salespersons,"$70,826",$127
-WC-0004,Electrical wiring within buildings,"$77,560","$2,218"
-WC-0005,Restaurant NOC,"$90,759",$245
-WC-0006,Machine shop NOC,"$99,561","$2,847"
-WC-0007,Building operations by owner,"$111,259","$3,182"
-WC-0008,Contractor executive supervisor,"$127,460","$7,928"
+ STATE        CLASS        CLASSIFICATION                      PAYROLL         PREMIUM
+ CT           8810         Clerical office employees           $45,136         $189
+ CT           8017         Retail store - all employees        $54,124         $400
+ MA           8742         Outside salespersons                $70,826         $127
+ MA           5190         Electrical wiring within buildings  $77,560         $2,218
+ RI           9082         Restaurant NOC                      $90,759         $245
+ ME           3632         Machine shop NOC                    $99,561         $2,847
+ NH           9015         Building operations by owner        $111,259        $3,182
+ VT           5606         Contractor executive supervisor     $127,460        $7,928
+ CT           8810         Clerical office employees           $139,137        $8,654
+ CT           8017         Retail store - all employees        $152,897        $6,651
+ MA           8742         Outside salespersons                $158,051        $6,875
+ MA           5190         Electrical wiring within buildings  $171,391        $462
+ RI           9082         Restaurant NOC                      $184,316        $2,119
+ ME           3632         Machine shop NOC                    $195,887        $12,184
+ NH           9015         Building operations by owner        $209,573        $1,550
+ VT           5606         Contractor executive supervisor     $223,415        $6,389
+______________________________________________________________________________________
 
-Forms and endorsements preview
 
-APPLIES TO,FORM,TITLE,EDITION
-WC-0001,WC 00 00 01 A,Information Page,07 23
-WC-0002,WC 00 00 00 C,Voluntary Compensation Endorsement,01 15
-WC-0003,WC 00 00 00 C,Workers Compensation and Employers Liability Policy,01 15
-WC-0004,WC 04 03 06,Workers Compensation and Employers Liability Policy,01 15
-WC-0005,WC 00 00 01 A,Voluntary Compensation Endorsement,01 15
-WC-0006,WC 00 00 01 A,Voluntary Compensation Endorsement,01 15
-WC-0001,WC 00 00 01 A,Information Page,07 23
-WC-0004,WC 04 03 06,Workers Compensation and Employers Liability Policy,01 15
-WC-0005,WC 00 00 01 A,Voluntary Compensation Endorsement,01 15
-WC-0008,WC 00 00 01 A,Waiver of Our Right to Recover,04 21
-WC-0009,WC 04 03 06,Workers Compensation and Employers Liability Policy,01 15
-WC-0012,WC 04 03 06,Waiver of Our Right to Recover,04 21
 
-Specimen policy copy
-Page 1
+
+
+
+
+
+
+
+ AWC INFO (05-24)                                        Blue Kettle Food Service, LLC | YW700400
 
 # Page 2
 
-POLICY PACKET                                                             +-----------------------+
-                                                                              | POLICY COPY 1F7EA01   |
-                                                                              +-----------------------+
-Premises Schedule
+ARGENT BIRCH EMPLOYERS                                                 POLICY NUMBER: YW700400
+Workers Compensation and Employers Liability                             EFFECTIVE: 04/01/2026
+                                                                          EXPIRES: 04/01/2027
+______________________________________________________________________________________________________
 
-Premises and classification schedule
-The policy number and period are inherited from the declarations page.
+                     WORKERS COMPENSATION INFORMATION PAGE - CONTINUED
+______________________________________________________________________________________________________
 
-LOC.,STATE,CLASS,DESCRIPTION,GOVERNING,ADDITIONAL DETAIL
-1,CT,8810,Clerical office employees,Yes,Item Id: WC-0001
-2,CT,8017,Retail store - all employees,No,Item Id: WC-0002
-3,MA,8742,Outside salespersons,No,Item Id: WC-0003
-4,MA,5190,Electrical wiring within buildings,No,Item Id: WC-0004
-5,RI,9082,Restaurant NOC,No,Item Id: WC-0005
-1,ME,3632,Machine shop NOC,No,Item Id: WC-0006
-2,NH,9015,Building operations by owner,No,Item Id: WC-0007
-3,VT,5606,Contractor executive supervisor,No,Item Id: WC-0008
-4,CT,8810,Clerical office employees,No,Item Id: WC-0009
-5,CT,8017,Retail store - all employees,No,Item Id: WC-0010
-1,MA,8742,Outside salespersons,No,Item Id: WC-0011
-2,MA,5190,Electrical wiring within buildings,No,Item Id: WC-0012
-3,RI,9082,Restaurant NOC,No,Item Id: WC-0013
-4,ME,3632,Machine shop NOC,No,Item Id: WC-0014
-5,NH,9015,Building operations by owner,No,Item Id: WC-0015
-1,VT,5606,Contractor executive supervisor,No,Item Id: WC-0016
-2,CT,8810,Clerical office employees,No,Item Id: WC-0017
-3,CT,8017,Retail store - all employees,No,Item Id: WC-0018
+CLASSIFICATION AND RATING DETAIL - CONTINUED
+______________________________________________________________________________________________________
 
-Policy packet                                                                               Page 2
+STATE          CLASS          LOC.        RATE        EXPERIENCE MOD            SCHEDULE RATING
+______________________________________________________________________________________________________
+CT             8810           2           2.86        1.04                      0%
+______________________________________________________________________________________________________
+CT             8017           3           2.86        1.04                      0%
+______________________________________________________________________________________________________
+MA             8742           4           6.22        1.04                      0%
+______________________________________________________________________________________________________
+MA             5190           5           6.22        1.04                      0%
+______________________________________________________________________________________________________
+RI             9082           1           0.74        1.04                      0%
+______________________________________________________________________________________________________
+ME             3632           2           0.42        1.04                      0%
+______________________________________________________________________________________________________
+NH             9015           3           0.74        1.04                      0%
+______________________________________________________________________________________________________
+VT             5606           4           6.22        1.04                      0%
+______________________________________________________________________________________________________
+CT             8810           5           6.22        1.04                      0%
+______________________________________________________________________________________________________
+CT             8017           1           0.42        1.04                      0%
+______________________________________________________________________________________________________
+MA             8742           2           0.18        1.04                      0%
+______________________________________________________________________________________________________
+MA             5190           3           0.27        1.04                      0%
+______________________________________________________________________________________________________
+RI             9082           4           0.42        1.04                      0%
+______________________________________________________________________________________________________
+ME             3632           5           1.15        1.04                      0%
+______________________________________________________________________________________________________
+NH             9015           1           2.86        1.04                      0%
+______________________________________________________________________________________________________
+VT             5606           2           4.35        1.04                      0%
+______________________________________________________________________________________________________
+CT             8810           3           1.15        1.04                      0%
+______________________________________________________________________________________________________
+CT             8017           4           4.35        1.04                      0%
+______________________________________________________________________________________________________
+MA             8742           5           0.27        1.04                      0%
+______________________________________________________________________________________________________
+MA             5190           1           0.27        1.04                      0%
+______________________________________________________________________________________________________
+
+FORMS AND ENDORSEMENTS MADE PART OF THIS POLICY
+______________________________________________________________________________________________________
+
+FORM                          EDITION     TITLE
+______________________________________________________________________________________________________
+WC 00 00 01 A                 07 23       Information Page
+______________________________________________________________________________________________________
+WC 00 00 00 C                 01 15       Voluntary Compensation Endorsement
+______________________________________________________________________________________________________
+WC 00 00 00 C                 01 15       Workers Compensation and Employers Liability Policy
+______________________________________________________________________________________________________
+WC 04 03 06                   01 15       Workers Compensation and Employers Liability Policy
+______________________________________________________________________________________________________
+WC 00 00 01 A                 01 15       Voluntary Compensation Endorsement
+______________________________________________________________________________________________________
+WC 00 00 01 A                 01 15       Voluntary Compensation Endorsement
+______________________________________________________________________________________________________
+WC 00 00 00 C                 01 15       Information Page
+______________________________________________________________________________________________________
+WC 00 00 01 A                 04 21       Waiver of Our Right to Recover
+______________________________________________________________________________________________________
+WC 04 03 06                   01 15       Workers Compensation and Employers Liability Policy
+______________________________________________________________________________________________________
+WC 04 03 06                   04 21       Workers Compensation and Employers Liability Policy
+______________________________________________________________________________________________________
+
+Premium is subject to final audit. Payroll and classification records must be retained for the policy period and made available when requested.
+
+
+
+
+
+
+
+
+
+
+AWC INFO-2 (05-24)                                                     Blue Kettle Food Service, LLC | YW700400
 
 # Page 3
 
-POLICY PACKET                                                                    POLICY COPY 1F7EA01
-Premises Schedule
+ARGENT BIRCH EMPLOYERS                                         POLICY NUMBER: YW700400
+Workers Compensation and Employers Liability                     EFFECTIVE: 04/01/2026
+                                                                  EXPIRES: 04/01/2027
+______________________________________________________________________________________
 
-Premises and classification schedule
-The policy number and period are inherited from the declarations page.
+                       CLASSIFICATION ASSIGNMENT RULES
 
-LOC.,STATE,CLASS,DESCRIPTION,GOVERNING,ADDITIONAL DETAIL
-4,MA,8742,Outside salespersons,No,Item Id: WC-0019
-5,MA,5190,Electrical wiring within buildings,No,Item Id: WC-0020
-1,RI,9082,Restaurant NOC,No,Item Id: WC-0021
-2,ME,3632,Machine shop NOC,No,Item Id: WC-0022
-3,NH,9015,Building operations by owner,No,Item Id: WC-0023
-4,VT,5606,Contractor executive supervisor,No,Item Id: WC-0024
-5,CT,8810,Clerical office employees,No,Item Id: WC-0025
-1,CT,8017,Retail store - all employees,No,Item Id: WC-0026
-2,MA,8742,Outside salespersons,No,Item Id: WC-0027
-3,MA,5190,Electrical wiring within buildings,No,Item Id: WC-0028
-4,RI,9082,Restaurant NOC,No,Item Id: WC-0029
-5,ME,3632,Machine shop NOC,No,Item Id: WC-0030
-1,NH,9015,Building operations by owner,No,Item Id: WC-0031
-2,VT,5606,Contractor executive supervisor,No,Item Id: WC-0032
-3,CT,8810,Clerical office employees,No,Item Id: WC-0033
-4,CT,8017,Retail store - all employees,No,Item Id: WC-0034
-5,MA,8742,Outside salespersons,No,Item Id: WC-0035
-1,MA,5190,Electrical wiring within buildings,No,Item Id: WC-0036
+______________________________________________________________________________________
+THIS FORM IS PART OF THE POLICY AND MUST BE READ WITH THE DECLARATIONS AND ENDORSEMENTS.
+______________________________________________________________________________________
 
-Policy packet                                                                                   Page 3
+STATE / CLASS  CT / 8017                              LOCATION  2
+..........................................................................................................................................................................
+CLASSIFICATION  Retail store - all employees          PAYROLL / RATE  $54,124 / 0.74
+..........................................................................................................................................................................
+PREMIUM  $400                                         FORM  WC 00 00 00 C 01 15
+..........................................................................................................................................................................
+
+A. Classification And Rating Reference                  If an enterprise consists of distinct and separate operations, multiple classifications
+                                                        may be authorized under specific manual rules.
+This form applies to Retail store - all employees in CT,
+class 8017, at Location 2.                              To qualify for multiple classifications, the employer must maintain physical
+                                                        separation of operations and distinct payroll records for each segment.
+The information page shows estimated remuneration of
+$54,124, manual rate 0.74, experience modification      When payroll is not properly segregated in the ledgers, the entire remuneration will
+1.04, and estimated premium $400.                       be assigned to the highest-rated classification applicable.
+
+Form WC 00 00 00 C edition 01 15 supplies the           C. Changes in business operations, product lines, or facility locations must be
+applicable policy terms for this classification.        reported promptly to ensure accurate classification assignment.
+
+The classification schedule assigns estimated           We retain the right to reclassify operations during the term or upon final audit if the
+remuneration to specific categories based on the        actual duties deviate from the initial descriptions.
+operational nature of the enterprise.
+                                                        Reclassification may result in retroactive premium adjustments affecting the current
+B. The governing classification is determined by the    and immediately preceding policy periods.
+operations that generate the largest amount of
+payroll, excluding standard exceptions.                 State-specific manual rules supersede general classification guidelines whenever a
+                                                        conflict arises regarding proper assignment.
+Standard exceptions include clerical office
+employees, outside salespersons, and drivers,
+provided they meet strict operational criteria.
+
+
+WC-CA-1001                                                  Blue Kettle Food Service, LLC | YW700400
 
 # Page 4
 
-POLICY PACKET                                                                     POLICY COPY 1F7EA01
-Premises Schedule
+ARGENT BIRCH EMPLOYERS                                                 POLICY NUMBER: YW700400
+Workers Compensation and Employers Liability                             EFFECTIVE: 04/01/2026
+                                                                           EXPIRES: 04/01/2027
+______________________________________________________________________________________________________
 
-Premises and classification schedule
-The policy number and period are inherited from the declarations page.
+                              EXPERIENCE RATING PLAN APPLICATION
+______________________________________________________________________________________________________
 
-LOC.,STATE,CLASS,DESCRIPTION,GOVERNING,ADDITIONAL DETAIL
-2,RI,9082,Restaurant NOC,No,Item Id: WC-0037
-3,ME,3632,Machine shop NOC,No,Item Id: WC-0038
-4,NH,9015,Building operations by owner,No,Item Id: WC-0039
-5,VT,5606,Contractor executive supervisor,No,Item Id: WC-0040
-1,CT,8810,Clerical office employees,No,Item Id: WC-0041
-2,CT,8017,Retail store - all employees,No,Item Id: WC-0042
-3,MA,8742,Outside salespersons,No,Item Id: WC-0043
-4,MA,5190,Electrical wiring within buildings,No,Item Id: WC-0044
-5,RI,9082,Restaurant NOC,No,Item Id: WC-0045
-1,ME,3632,Machine shop NOC,No,Item Id: WC-0046
-2,NH,9015,Building operations by owner,No,Item Id: WC-0047
-3,VT,5606,Contractor executive supervisor,No,Item Id: WC-0048
-4,CT,8810,Clerical office employees,No,Item Id: WC-0049
-5,CT,8017,Retail store - all employees,No,Item Id: WC-0050
-1,MA,8742,Outside salespersons,No,Item Id: WC-0051
-2,MA,5190,Electrical wiring within buildings,No,Item Id: WC-0052
-3,RI,9082,Restaurant NOC,No,Item Id: WC-0053
-4,ME,3632,Machine shop NOC,No,Item Id: WC-0054
+THIS FORM IS PART OF THE POLICY AND MUST BE READ WITH THE DECLARATIONS AND ENDORSEMENTS.
+______________________________________________________________________________________________________
 
-Policy packet                                                                                   Page 4
+STATE / CLASS  MA / 8742                                  LOCATION  3
+------------------------------------------------------------------------------------------------------
+CLASSIFICATION  Outside salespersons                      PAYROLL / RATE  $70,826 / 0.18
+------------------------------------------------------------------------------------------------------
+PREMIUM  $127                                             FORM  WC 00 00 00 C 01 15
+------------------------------------------------------------------------------------------------------
+
+Classification And Rating Reference                       A factor less than unity reflects favorable historical loss performance, yielding a
+                                                          premium credit.
+This form applies to Outside salespersons in MA, class
+8742, at Location 3.                                      The modification factor applies to the contract as a whole unless a state-specific
+                                                          endorsement dictates intrastate application.
+The information page shows estimated remuneration of
+$70,826, manual rate 0.18, experience modification         If the rating bureau revises the modification factor during the term, the premium will
+1.04, and estimated premium $127.                        be adjusted retroactively to the effective date of the revision.
+
+Form WC 00 00 00 C edition 01 15 supplies the              Changes in ownership, corporate structure, or combinability status must be reported
+applicable policy terms for this classification.          within ninety days to determine the impact on the experience rating.
+
+The experience modification factor adjusts the            Failure to report ownership changes may result in the application of a penalty
+manual premium based on the historical loss record        modifier or the forfeiture of a favorable experience credit.
+of the enterprise.
+                                                          The employer cannot opt out of the experience rating plan if the enterprise meets the
+This factor is calculated by an authorized rating          minimum premium eligibility threshold.
+bureau using payroll and loss data from the designated
+experience period.                                        Disputes regarding the statistical data used to calculate the modification factor must
+                                                          be directed to the authorized rating bureau rather than the carrier.
+An experience modification factor greater than unity
+indicates higher-than-average historical losses,
+resulting in a premium surcharge.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+WC-ER-1002                                                               Blue Kettle Food Service, LLC | YW700400
 
 # Page 5
 
-POLICY PACKET                                                                    POLICY COPY 1F7EA01
+ARGENT BIRCH EMPLOYERS                                                 POLICY NUMBER: YW700400
+Workers Compensation and Employers Liability                             EFFECTIVE: 04/01/2026
+                                                                           EXPIRES: 04/01/2027
+____________________________________________________________________________________________________
 
-Premises Schedule
+                         CANCELLATION AND NONRENEWAL PROVISIONS
+____________________________________________________________________________________________________
 
-Premises and classification schedule
-The policy number and period are inherited from the declarations page.
+THIS FORM IS PART OF THE POLICY AND MUST BE READ WITH THE DECLARATIONS AND ENDORSEMENTS.
+____________________________________________________________________________________________________
 
-LOC.,STATE,CLASS,DESCRIPTION,GOVERNING,ADDITIONAL DETAIL
-5,NH,9015,Building operations by owner,No,Item Id: WC-0055
-1,VT,5606,Contractor executive supervisor,No,Item Id: WC-0056
-2,CT,8810,Clerical office employees,No,Item Id: WC-0057
-3,CT,8017,Retail store - all employees,No,Item Id: WC-0058
-4,MA,8742,Outside salespersons,No,Item Id: WC-0059
-5,MA,5190,Electrical wiring within buildings,No,Item Id: WC-0060
+STATE / CLASS  MA / 5190                                   LOCATION  4
+----------------------------------------------------------------------------------------------------
+CLASSIFICATION  Electrical wiring within buildings          PAYROLL / RATE  $77,560 / 2.86
+----------------------------------------------------------------------------------------------------
+PREMIUM  $2,218                                             FORM  WC 04 03 06 01 15
+----------------------------------------------------------------------------------------------------
 
-Policy packet                                                                         Page 5
+1. Classification And Rating Reference                      Cancellation for any other authorized reason requires a minimum of thirty days
+                                                            advance notice, subject to state statutory mandates.
+This form applies to Electrical wiring within buildings in
+MA, class 5190, at Location 4.                              3. If the employer initiates the cancellation, the final premium will be calculated
+                                                            using the short-rate penalty table.
+The information page shows estimated remuneration of
+$77,560, manual rate 2.86, experience modification 1.04,     If we initiate the cancellation, the final premium will be computed on a strictly pro-
+and estimated premium $2,218.                               rata basis.
+
+Form WC 04 03 06 edition 01 15 supplies the applicable      Notice of nonrenewal will be mailed at least sixty days prior to the expiration date if
+policy terms for this classification.                       we elect not to offer a subsequent term.
+
+2. The employer may cancel this contract at any time by     Proof of mailing via certified postal receipt or recognized tracking service
+providing advance written notice specifying the desired     constitutes sufficient evidence of notice delivery.
+termination date.
+                                                            4. The termination of this contract does not relieve the employer of the obligation to
+We may cancel this contract by mailing written notice to    pay outstanding premium balances or submit to a final audit.
+the employer at the address shown on the administrative
+records.                                                    Any return premium due will be refunded within the timeframe mandated by the
+                                                            jurisdiction governing the primary operations.
+Cancellation for nonpayment of premium requires a
+minimum of ten days advance notice before the termination
+becomes effective.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+WC-CN-1003                                                           Blue Kettle Food Service, LLC | YW700400
 
 # Page 6
 
-"SCHEDULE REF","LOC.","BLDG.","COVERAGE PART","CLASS","DESCRIPTION","EXPOSURE/LIMIT","RATE/DEDUCTIBLE","ADDITIONAL DETAIL"
-"WC-0001","1","","","8810","Clerical office
-employees","$45,136","0.42","Edition Date: 07 23;
-Endorsement
-Effective Date:
-01/01/2026;
-Endorsement
-Number: WC-EN-001;
-Estimated Premium:
-$189; Experience
-Mod: 1.04; Form
-Number: WC 00 00
-01 A; Form Title:
-Information Page;
-Governing Class: Yes;
-Item Id: WC-0001;
-Premium Basis:
-Payroll per $100
-remuneration;
-Schedule Credit
-Debit: 0%; State: CT"
-"WC-0002","2","","","8017","Retail store - all
-employees","$54,124","0.74","Edition Date: 01 15;
-Estimated Premium:
-$400; Experience
-Mod: 1.04; Form
-Number: WC 00 00
-00 C; Form Title:
-Voluntary
-Compensation
-Endorsement;
-Governing Class: No;
-Item Id: WC-0002;
-Premium Basis:
-Payroll per $100
-remuneration;
-Schedule Credit
-Debit: 0%; State: CT"
-"WC-0003","3","","","8742","Outside salespersons","$70,826","0.18","Edition Date: 01 15;
-Estimated Premium:
-$127; Experience
-Mod: 1.04; Form
-Number: WC 00 00
-00 C; Form Title:
-Workers
-Compensation and
-Employers Liability
-Policy; Governing
-Class: No; Item Id:
-WC-0003; Premium
-Basis: Payroll per
-$100 remuneration;
-Schedule Credit
-Debit: 0%; State: MA"
-"WC-0004","4","","","5190","Electrical wiring within
-buildings","$77,560","2.86","Edition Date: 01 15;
-Endorsement
-Effective Date:
-04/01/2026;
-Endorsement
-Number: WC-EN-004;
-Estimated Premium:
-$2,218; Experience
-Mod: 1.04; Form
-Number: WC 04 03
-06; Form Title:
-Workers
-Compensation and
-Employers Liability
-Policy; Governing
-Class: No; Item Id:
-WC-0004; Premium
-Basis: Payroll per
-$100 remuneration;
-Schedule Credit
-Debit: 0%; State: MA"
+ARGENT BIRCH EMPLOYERS                                                 POLICY NUMBER: YW700400
+Workers Compensation and Employers Liability                            EFFECTIVE: 04/01/2026
+                                                                          EXPIRES: 04/01/2027
+____________________________________________________________________________________________________
+
+                         EMPLOYER DUTIES IN THE EVENT OF INJURY
+____________________________________________________________________________________________________
+
+THIS FORM IS PART OF THE POLICY AND MUST BE READ WITH THE DECLARATIONS AND ENDORSEMENTS.
+____________________________________________________________________________________________________
+
+STATE / CLASS  RI / 9082                                  LOCATION 5
+..........................................................................................................................................................................
+CLASSIFICATION  Restaurant NOC                             PAYROLL / RATE  $90,759 / 0.27
+..........................................................................................................................................................................
+PREMIUM  $245                                              FORM  WC 00 00 01 A 01 15
+..........................................................................................................................................................................
+
+A. Classification And Rating Reference                         The employer must forward all legal notices, demands, or administrative
+This form applies to Restaurant NOC in RI, class 9082, at      correspondence related to the injury immediately upon receipt.
+Location 5.                                                    
+                                                               Full cooperation is required during the investigation, settlement negotiations, and
+The information page shows estimated remuneration of           any subsequent administrative hearings.
+$90,759, manual rate 0.27, experience modification 1.04,        
+and estimated premium $245.                                    The employer must not voluntarily assume any liability, make unauthorized
+                                                               payments, or incur expenses without our prior written consent.
+Form WC 00 00 01 A edition 01 15 supplies the applicable       
+policy terms for this classification.                         C. Interference with our subrogation rights or investigation processes constitutes a
+                                                               material breach of the contract conditions.
+Upon the occurrence of an occupational injury or disease,      
+the employer must provide immediate medical attention to       The employer must facilitate interviews with witnesses, supervisors, and the injured
+the affected worker.                                           worker to establish the facts of the incident.
+
+B. The employer must notify us or our authorized               Failure to report injuries within the statutory timeframe may result in administrative
+representative as soon as practicable following any            fines, which are the sole responsibility of the employer.
+incident that may result in a claim.                           
+                                                               We reserve the right to inspect the premises where the injury occurred to determine
+Written reports detailing the time, place, circumstances, and  causation and assess future risk mitigation.
+identities of involved parties must be submitted promptly.
+
+
+
+
+
+
+
+
+
+
+
+
+WC-ED-1004                                                             Blue Kettle Food Service, LLC | YW700400
 
 # Page 7
 
-SCHEDULE REF,LOC.,BLDG.,COVERAGE PART,CLASS,DESCRIPTION,EXPOSURE/LIMIT,RATE/DEDUCTIBLE,ADDITIONAL DETAIL
-WC-0005,5,,,9082,Restaurant NOC,"$90,759",0.27,"Edition Date: 01 15;
-Endorsement
-Effective Date:
-05/01/2026;
-Endorsement
-Number: WC-EN-0005;
-Estimated Premium:
-$245; Experience
-Mod: 1.04; Form
-Number: WC 00 00
-01 A; Form Title:
-Voluntary
-Compensation
-Endorsement;
-Governing Class: No;
-Item Id: WC-0005;
-Premium Basis:
-Payroll per $100
-remuneration;
-Schedule Credit
-Debit: 0%; State: RI"
-WC-0006,1,,,3632,Machine shop NOC,"$99,561",2.86,"Edition Date: 01 15;
-Estimated Premium:
-$2,847; Experience
-Mod: 1.04; Form
-Number: WC 00 00
-01 A; Form Title:
-Voluntary
-Compensation
-Endorsement;
-Governing Class: No;
-Item Id: WC-0006;
-Premium Basis:
-Payroll per $100
-remuneration;
-Schedule Credit
-Debit: 0%; State: ME"
-WC-0007,2,,,9015,Building operations by owner,"$111,259",2.86,"Edition Date: 01 15;
-Estimated Premium:
-$3,182; Experience
-Mod: 1.04; Form
-Number: WC 00 00
-00 C; Form Title:
-Information Page;
-Governing Class: No;
-Item Id: WC-0007;
-Premium Basis:
-Payroll per $100
-remuneration;
-Schedule Credit
-Debit: 0%; State: NH"
-WC-0008,3,,,5606,Contractor executive supervisor,"$127,460",6.22,"Edition Date: 04 21;
-Endorsement
-Effective Date:
-08/01/2026;
-Endorsement
-Number: WC-EN-0008;
-Estimated Premium:
-$7,928; Experience
-Mod: 1.04; Form
-Number: WC 00 00
-01 A; Form Title:
-Waiver of Our Right to
-Recover; Governing
-Class: No; Item Id:
-WC-0008; Premium
-Basis: Payroll per
-$100 remuneration;
-Schedule Credit
-Debit: 0%; State: VT"
-Prior policy comparison retained for underwriting only.,,,,,,,,
-WC-0009,4,,,8810,Clerical office employees,"$139,137",6.22,"Edition Date: 01 15;
-Endorsement
-Effective Date:
-09/01/2026;
-Endorsement
-Number: WC-EN-0009;
-Estimated Premium:
-$8,654; Experience
-Mod: 1.04; Form
-Number: WC 04 03
-06; Form Title:
-Workers
-Compensation and
-Employers Liability
-Policy; Governing
-Class: No; Item Id:
-WC-0009; Premium
-Basis: Payroll per
-$100 remuneration;
-Schedule Credit
-Debit: 0%; State: CT"
-WC-0010,5,,,8017,Retail store - all employees,"$152,897",4.35,"Edition Date: 04 21;
-Estimated Premium:
-$6,651; Experience
-Mod: 1.04; Form
-Number: WC 04 03
-06; Form Title:"
+ARGENT BIRCH EMPLOYERS                                           POLICY NUMBER: YW700400
+Workers Compensation and Employers Liability                        EFFECTIVE: 04/01/2026
+                                                                     EXPIRES: 04/01/2027
+__________________________________________________________________________________________
+
+                   ELECTRONIC FUNDS TRANSFER AUTHORIZATION
+
+__________________________________________________________________________________________
+PREMIUM, AUDIT, AND ACCOUNTING CONDITIONS
+__________________________________________________________________________________________
+|                                                         |                               |
+| Named insured                                           | Policy term                   |
+| Blue Kettle Food Service, LLC                           | 04/01/2026 - 04/01/2027       |
+|_________________________________________________________|_______________________________|
+|                                                         |                               |
+| Scheduled premium                                       | Audit basis                   |
+| $2,847                                                   | Payroll per $100 remuneration |
+|_________________________________________________________|_______________________________|
+
+
+Classification And Rating Reference                             If a withdrawal is rejected by the financial institution due to insufficient funds, a
+This form applies to Machine shop NOC in ME, class 3632, at     processing fee will be added to the account balance.
+Location 1.                                                     Two consecutive rejected withdrawals will result in the immediate termination of the
+The information page shows estimated remuneration of $99,561,   electronic funds transfer agreement.
+manual rate 2.86, experience modification 1.04, and estimated   Upon termination of the agreement, the enterprise will be reverted to standard paper
+premium $2,847.                                                 invoicing and must submit payments manually.
+Form WC 00 00 01 A edition 01 15 supplies the applicable        To update banking information, the enterprise must submit a revised authorization
+policy terms for this classification.                           form at least ten days prior to the next scheduled withdrawal.
+This agreement authorizes the automatic withdrawal of premium   The enterprise may cancel this authorization at any time by providing written notice,
+payments directly from the designated corporate banking         which will take effect after the current billing cycle.
+account.                                                        Any refunds or return premiums due to the enterprise will be deposited directly into
+The enterprise must provide accurate routing and account        the authorized banking account.
+numbers and ensure sufficient funds are available on the        We are not liable for any overdraft fees or penalties assessed by the financial
+scheduled withdrawal dates.                                     institution resulting from authorized premium withdrawals.
+Withdrawals will occur on the exact due date of each
+installment, or the following business day if the due date falls
+on a weekend or holiday.
+
+
+
+
+
+
+
+
+
+
+
+
+
+WC-EF-4001                                                         Blue Kettle Food Service, LLC | YW700400
 
 # Page 8
 
-SCHEDULE REF,LOC.,BLDG.,COVERAGE PART,CLASS,DESCRIPTION,EXPOSURE/LIMIT,RATE/DEDUCTIBLE,ADDITIONAL DETAIL
-"","","","","","","","","Workers Compensation and Employers Liability Policy; Governing Class: No; Item Id: WC-0010; Premium Basis: Payroll per $100 remuneration; Schedule Credit Debit: 0%; State: CT"
-"WC-0011","1","","","8742","Outside salespersons","$158,051","4.35","Edition Date: 01 15; Estimated Premium: $6,875; Experience Mod: 1.04; Form Number: WC 04 03 06; Form Title: Voluntary Compensation Endorsement; Governing Class: No; Item Id: WC-0011; Premium Basis: Payroll per $100 remuneration; Schedule Credit Debit: 0%; State: MA"
-"WC-0012","2","","","5190","Electrical wiring within buildings","$171,391","0.27","Edition Date: 04 21; Endorsement Effective Date: 12/01/2026; Endorsement Number: WC-EN-012; Estimated Premium: $462; Experience Mod: 1.04; Form Number: WC 04 03 06; Form Title: Waiver of Our Right to Recover; Governing Class: No; Item Id: WC-0012; Premium Basis: Payroll per $100 remuneration; Schedule Credit Debit: 0%; State: MA"
-"WC-0013","3","","","9082","Restaurant NOC","$184,316","1.15","Edition Date: 07 23; Endorsement Effective Date: 01/01/2026; Endorsement Number: WC-EN-013; Estimated Premium: $2,119; Experience Mod: 1.04; Form Number: WC 00 03 13; Form Title: Waiver of Our Right to Recover; Governing Class: No; Item Id: WC-0013; Premium Basis: Payroll per $100 remuneration; Schedule Credit Debit: 0%; State: RI"
-"WC-0014","4","","","3632","Machine shop NOC","$195,887","6.22","Edition Date: 07 23; Estimated Premium: $12,184; Experience Mod: 1.04; Form Number: WC 00 00 01 A; Form Title: Information Page; Governing Class: No; Item Id: WC-0014; Premium Basis: Payroll per $100 remuneration; Schedule Credit Debit: 0%; State: ME"
-"WC-0015","5","","","9015","Building operations by owner","$209,573","0.74","Edition Date: 04 21; Estimated Premium: $1,550; Experience Mod: 1.04; Form Number: WC 00 03 13; Form Title: Voluntary Compensation Endorsement; Governing Class: No; Item Id: WC-0015; Premium Basis: Payroll per $100 remuneration; Schedule Credit Debit: 0%; State: NH"
-"WC-0016","1","","","5606","Contractor executive supervisor","$223,415","2.86","Edition Date: 04 21; Endorsement Effective Date: 04/01/2026; Endorsement"
+ARGENT BIRCH EMPLOYERS                                                 POLICY NUMBER: YW700400
+Workers Compensation and Employers Liability                             EFFECTIVE: 04/01/2026
+                                                                           EXPIRES: 04/01/2027
+______________________________________________________________________________________________________
+
+             AMENDATORY ENDORSEMENT - PREMIUM DISCOUNT APPLICATION
+
+______________________________________________________________________________________________________
+
+THIS ENDORSEMENT CHANGES THE POLICY. PLEASE READ IT CAREFULLY.
+______________________________________________________________________________________________________
+
+STATE / CLASS  NH / 9015                                LOCATION  2
+------------------------------------------------------------------------------------------------------
+CLASSIFICATION  Building operations by owner            PAYROLL / RATE  $111,259 / 2.86
+------------------------------------------------------------------------------------------------------
+PREMIUM  $3,182                                         FORM  WC 00 00 00 C 01 15
+------------------------------------------------------------------------------------------------------
+
+1. Classification And Rating Reference                  The first tier of standard premium is exempt from the discount calculation, serving
+                                                        as the baseline for administrative expense recovery.
+This form applies to Building operations by owner
+in NH, class 9015, at Location 2.                       3. Subsequent tiers of standard premium are subject to progressively higher discount
+                                                        percentages, as outlined in the authorized rating manual.
+The information page shows estimated remuneration
+of $111,259, manual rate 2.86,                          If the contract spans multiple states, the discount is calculated using the combined
+experience modification 1.04, and estimated             standard premium across all applicable jurisdictions.
+premium $3,182.
+                                                        The discount percentages vary depending on whether the enterprise is classified
+Form WC 00 00 00 C edition 01 15 supplies               under the stock company or non-stock company tables.
+the applicable policy terms for this
+classification.                                         If the contract is cancelled prior to expiration, the premium discount will be
+                                                        recalculated based on the actual standard premium earned.
+2. This endorsement establishes the methodology
+for applying volume-based premium discounts             4. The premium discount does not apply to specific supplementary charges, such as
+to the final computed premium.                          the terrorism risk premium or catastrophe assessments.
+
+Premium discounts recognize the relative                We reserve the right to withhold the premium discount if the employer fails to remit
+reduction in administrative and acquisition             payments timely or refuses to cooperate with the final audit.
+expenses associated with larger contracts.
+
+The discount is applied only after the manual
+premium has been adjusted by the experience
+modification factor and any schedule rating
+credits.
+
+
+WC-PD-3002                                                               Blue Kettle Food Service, LLC | YW700400
 
 # Page 9
 
-SCHEDULE REF,LOC.,BLDG.,COVERAGE PART,CLASS,DESCRIPTION,EXPOSURE/LIMIT,RATE/DEDUCTIBLE,ADDITIONAL DETAIL
-,,,,,,,,"Number: WC-EN-016; Estimated Premium: $6,389; Experience Mod: 1.04; Form Number: WC 00 00 01 A; Form Title: Information Page; Governing Class: No; Item Id: WC-0016; Premium Basis: Payroll per $100 remuneration; Schedule Credit Debit: 0%; State: VT"
+ARGENT BIRCH EMPLOYERS                                            POLICY NUMBER: YW700400
+Workers Compensation and Employers Liability                          EFFECTIVE: 04/01/2026
+                                                                        EXPIRES: 04/01/2027
+____________________________________________________________________________________________
 
-Policy packet                                                                                                          Page 6
+                     TERRORISM RISK INSURANCE ACT DISCLOSURE
+____________________________________________________________________________________________
+
+POLICYHOLDER NOTICE - INFORMATION ABOUT YOUR POLICY
+____________________________________________________________________________________________
+
+
+       To the policyholder:
+
+       A. The federal government provides a financial backstop for certain catastrophic losses resulting from certified acts of terrorism.
+
+       Under this federal framework, the government shares the financial burden of terrorism claims once a specified industry-wide threshold is
+       reached.
+
+       The premium associated with this contract includes a specific charge for the terrorism exposure, which is detailed on the administrative
+       schedules.
+
+       This charge is calculated as a percentage of the manual premium and is not subject to experience modification or schedule rating
+       adjustments.
+
+       The federal program contains an aggregate cap on total liability; if losses exceed this cap, benefits may be reduced proportionally.
+
+       B. State workers compensation statutes do not permit employers to reject or opt out of the terrorism coverage component.
+
+       Any future modifications to the federal backstop legislation may result in mid-term adjustments to the terrorism premium charge.
+
+       This notice is informational. Coverage is governed by the policy forms and endorsements issued with the declarations.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+WC-TR-2003                                                         Blue Kettle Food Service, LLC | YW700400
 
 # Page 10
 
-POLICY PACKET                                                                                                                                                                                                                                        POLICY COPY 1F7EA01
+ARGENT BIRCH EMPLOYERS                                                 POLICY NUMBER: YW700400
+Workers Compensation and Employers Liability                             EFFECTIVE: 04/01/2026
+                                                                           EXPIRES: 04/01/2027
+__________________________________________________________________________________________________
 
-# Coverage and Rating Schedule
+                    LONGSHORE AND HARBOR WORKERS EXTENSION CRITERIA
 
-### Schedule continuation - card view
+__________________________________________________________________________________________________
+THIS FORM IS PART OF THE POLICY AND MUST BE READ WITH THE DECLARATIONS AND ENDORSEMENTS.
+__________________________________________________________________________________________________
 
-| | |
-|---|---|
-| **WC-0017**<br>Clerical office employees<br><br>Location 2; class 8810; basis Payroll per $100 remuneration.<br><br>Form WC 04 03 06 01 15; premium/rate detail appears in the rating pages.<br><br>Annual Payroll: $234,108; Endorsement Effective Date: 05/01/2026; Endorsement Number: WC-EN-017; Estimated Premium: $6,695; Experience Mod: 1.04; Form Title: Information Page; Governing Class: No; Item Id: WC-0017; Manual Rate: 2.86; Schedule Credit Debit: 0%; State: CT | **WC-0018**<br>Retail store - all employees<br><br>Location 3; class 8017; basis Payroll per $100 remuneration.<br><br>Form WC 00 00 00 C 04 21; premium/rate detail appears in the rating pages.<br><br>Annual Payroll: $239,729; Estimated Premium: $6,856; Experience Mod: 1.04; Form Title: Waiver of Our Right to Recover; Governing Class: No; Item Id: WC-0018; Manual Rate: 2.86; Schedule Credit Debit: 0%; State: CT |
-| **WC-0019**<br>Outside salespersons<br><br>Location 4; class 8742; basis Payroll per $100 remuneration.<br><br>Form WC 00 03 13 04 21; premium/rate detail appears in the rating pages.<br><br>Annual Payroll: $256,691; Estimated Premium: $15,966; Experience Mod: 1.04; Form Title: Waiver of Our Right to Recover; Governing Class: No; Item Id: WC-0019; Manual Rate: 6.22; Schedule Credit Debit: 0%; State: MA | **WC-0020**<br>Electrical wiring within buildings<br><br>Location 5; class 5190; basis Payroll per $100 remuneration.<br><br>Form WC 04 03 06 07 23; premium/rate detail appears in the rating pages.<br><br>Annual Payroll: $265,916; Endorsement Effective Date: 08/01/2026; Endorsement Number: WC-EN-020; Estimated Premium: $16,539; Experience Mod: 1.04; Form Title: Information Page; Governing Class: No; Item Id: WC-0020; Manual Rate: 6.22; Schedule Credit Debit: 0%; State: MA |
-| **WC-0021**<br>Restaurant NOC<br><br>Location 1; class 9082; basis Payroll per $100 remuneration.<br><br>Form WC 00 03 13 01 15; premium/rate detail appears in the rating pages.<br><br>Annual Payroll: $277,752; Endorsement Effective Date: 09/01/2026; Endorsement Number: WC-EN-021; Estimated Premium: $2,055; Experience Mod: 1.04; Form Title: Workers Compensation and Employers Liability Policy; Governing Class: No; Item Id: WC-0021; Manual Rate: 0.74; Schedule Credit Debit: 0%; State: RI | **WC-0022**<br>Machine shop NOC<br><br>Location 2; class 3632; basis Payroll per $100 remuneration.<br><br>Form WC 00 03 13 01 15; premium/rate detail appears in the rating pages.<br><br>Annual Payroll: $288,720; Estimated Premium: $1,212; Experience Mod: 1.04; Form Title: Information Page; Governing Class: No; Item Id: WC-0022; Manual Rate: 0.42; Schedule Credit Debit: 0%; State: ME |
-| **WC-0023**<br>Building operations by owner<br><br>Location 3; class 9015; basis Payroll per $100 remuneration.<br><br>Form WC 04 03 06 04 21; premium/rate detail appears in the rating pages.<br><br>Annual Payroll: $296,731; Estimated Premium: $2,195; Experience Mod: 1.04; Form Title: Workers Compensation and Employers Liability Policy; Governing Class: No; Item Id: WC-0023; Manual Rate: 0.74; Schedule Credit Debit: 0%; State: NH | **WC-0024**<br>Contractor executive supervisor<br><br>Location 4; class 5606; basis Payroll per $100 remuneration.<br><br>Form WC 04 03 06 07 23; premium/rate detail appears in the rating pages.<br><br>Annual Payroll: $312,419; Endorsement Effective Date: 12/01/2026; Endorsement Number: WC-EN-024; Estimated Premium: $19,432; Experience Mod: 1.04; Form Title: Voluntary Compensation Endorsement; Governing Class: No; Item Id: WC-0024; Manual Rate: 6.22; Schedule Credit Debit: 0%; State: VT |
-| **WC-0025**<br>Clerical office employees<br><br>Location 5; class 8810; basis Payroll per $100 remuneration.<br><br>Form WC 00 03 13 07 23; premium/rate detail appears in the rating pages.<br><br>Annual Payroll: $323,486; Endorsement Effective Date: 01/01/2026; Endorsement Number: WC-EN-025; Estimated Premium: $20,120; Experience Mod: 1.04; Form Title: Workers Compensation and Employers Liability Policy; Governing Class: No; Item Id: WC-0025; Manual Rate: 6.22; Schedule Credit Debit: 0%; State: CT | **WC-0026**<br>Retail store - all employees<br><br>Location 1; class 8017; basis Payroll per $100 remuneration.<br><br>Form WC 00 03 13 07 23; premium/rate detail appears in the rating pages.<br><br>Annual Payroll: $333,913; Estimated Premium: $1,402; Experience Mod: 1.04; Form Title: Information Page; Governing Class: No; Item Id: WC-0026; Manual Rate: 0.42; Schedule Credit Debit: 0%; State: CT |
-| **WC-0027**<br>Outside salespersons<br><br>Location 2; class 8742; basis Payroll per $100 remuneration.<br><br>Form WC 04 03 06 01 15; premium/rate detail appears in the rating pages.<br><br>Annual Payroll: $349,084; Estimated Premium: $628; Experience Mod: 1.04; Form Title: Voluntary Compensation Endorsement; Governing Class: No; Item Id: WC-0027; Manual Rate: 0.18; Schedule Credit Debit: 0%; State: MA | **WC-0028**<br>Electrical wiring within buildings<br><br>Location 3; class 5190; basis Payroll per $100 remuneration.<br><br>Form WC 00 00 00 C 04 21; premium/rate detail appears in the rating pages.<br><br>Annual Payroll: $353,824; Endorsement Effective Date: 04/01/2026; Endorsement Number: WC-EN-028; Estimated Premium: $955; Experience Mod: 1.04; Form Title: Waiver of Our Right to Recover; Governing Class: No; Item Id: WC-0028; Manual Rate: 0.27; Schedule Credit Debit: 0%; State: MA |
-| **WC-0029**<br>Restaurant NOC<br><br>Location 4; class 9082; basis Payroll per $100 remuneration.<br><br>Form WC 04 03 06 07 23; premium/rate detail appears in the rating pages.<br><br>Annual Payroll: $367,301; Endorsement Effective Date: 05/01/2026; Endorsement Number: WC-EN-029; Estimated Premium: $1,542; Experience Mod: 1.04; Form Title: Voluntary Compensation Endorsement; Governing Class: No; Item Id: WC-0029; Manual Rate: 0.42; Schedule Credit Debit: 0%; State: RI | **WC-0030**<br>Machine shop NOC<br><br>Location 5; class 3632; basis Payroll per $100 remuneration.<br><br>Form WC 00 03 13 04 21; premium/rate detail appears in the rating pages.<br><br>Annual Payroll: $378,170; Estimated Premium: $4,348; Experience Mod: 1.04; Form Title: Workers Compensation and Employers Liability Policy; Governing Class: No; Item Id: WC-0030; Manual Rate: 1.15; Schedule Credit Debit: 0%; State: ME |
+STATE / CLASS  CT / 8810                                     LOCATION  4
+--------------------------------------------------------------------------------------------------
+CLASSIFICATION  Clerical office employees                     PAYROLL / RATE  $139,137 / 6.22
+--------------------------------------------------------------------------------------------------
+PREMIUM  $8,654                                               FORM  WC 04 03 06 01 15
+--------------------------------------------------------------------------------------------------
+
+Classification And Rating Reference                             When the extension is attached, the remuneration associated with the maritime
+                                                                operations must be segregated in the payroll ledgers.
+This form applies to Clerical office employees in CT, class
+8810, at Location 4.                                            Maritime remuneration is subject to distinct manual rates and rating methodologies
+The information page shows estimated remuneration of $139,137,  established by the federal oversight agency.
+manual rate 6.22, experience modification 1.04, and estimated   The employer must comply with all federal reporting requirements and safety
+premium $8,654.                                                 regulations mandated by the maritime statutes.
+
+Form WC 04 03 06 edition 01 15 supplies the applicable          Failure to secure the necessary federal extension when required may expose the
+policy terms for this classification.                           enterprise to severe statutory penalties and uninsured liabilities.
+
+Operations conducted on or near navigable waters may fall       We reserve the right to audit the proximity of operations to navigable waters to
+under federal maritime jurisdiction, requiring specialized      determine the potential for incidental maritime exposure.
+benefit provisions.
+                                                                Incidental maritime exposure discovered during the final audit will be rated
+This contract does not automatically encompass federal          retroactively using the applicable federal classification codes.
+maritime exposures unless specifically designated on the
+administrative schedules.                                       The defense and settlement provisions of this contract apply equally to claims
+                                                                adjudicated under the federal maritime administrative system.
+If the enterprise engages in loading, unloading, repairing, or
+building vessels, the employer must request the appropriate
+federal extension.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+WC-LH-1008                                                               Blue Kettle Food Service, LLC | YW700400
 
 # Page 11
 
-| | |
-| :--- | :--- |
-| **WC-0031**<br><br>Building operations by owner<br><br>Location 1; class 9015; basis Payroll per $100 remuneration.<br><br>Form WC 00 00 00 C 07 23; premium/rate detail appears in the rating pages.<br><br>Annual Payroll: $391,534; Estimated Premium: $11,197; Experience Mod: 1.04; Form Title: Workers Compensation and Employers Liability Policy; Governing Class: No; Item Id: WC-0031; Manual Rate: 2.86; Schedule Credit Debit: 0%; State: NH | **WC-0032**<br><br>Contractor executive supervisor<br><br>Location 2; class 5606; basis Payroll per $100 remuneration.<br><br>Form WC 00 00 01 A 04 21; premium/rate detail appears in the rating pages.<br><br>Annual Payroll: $404,635; Endorsement Effective Date: 08/01/2026; Endorsement Number: WC-EN-032; Estimated Premium: $17,601; Experience Mod: 1.04; Form Title: Voluntary Compensation Endorsement; Governing Class: No; Item Id: WC-0032; Manual Rate: 4.35; Schedule Credit Debit: 0%; State: VT |
+ARGENT BIRCH EMPLOYERS                                         POLICY NUMBER: YW700400
+Workers Compensation and Employers Liability                     EFFECTIVE: 04/01/2026
+                                                                  EXPIRES: 04/01/2027
+______________________________________________________________________________________
 
-***
+                   ELECTRONIC FUNDS TRANSFER AUTHORIZATION
 
-Policy packet                                                                                                                                                                          Page 7
+______________________________________________________________________________________
+PREMIUM, AUDIT, AND ACCOUNTING CONDITIONS
+______________________________________________________________________________________
+
+| Named insured                  | Policy term               |
+| Blue Kettle Food Service, LLC  | 04/01/2026 - 04/01/2027   |
++--------------------------------+---------------------------+
+| Scheduled premium              | Audit basis               |
+| $6,651                         | Payroll per $100 remuneration |
++--------------------------------+---------------------------+
+
+1. Classification And Rating Reference                          If a withdrawal is rejected by the financial institution due to insufficient funds, a
+                                                                processing fee will be added to the account balance.
+This form applies to Retail store - all employees in CT,
+class 8017, at Location 5.                                      3. Two consecutive rejected withdrawals will result in the immediate termination of
+                                                                the electronic funds transfer agreement.
+The information page shows estimated remuneration of $152,897,
+manual rate 4.35, experience modification 1.04, and             Upon termination of the agreement, the enterprise will be reverted to standard paper
+estimated premium $6,651.                                       invoicing and must submit payments manually.
+
+Form WC 04 03 06 edition 04 21 supplies the applicable          To update banking information, the enterprise must submit a revised authorization
+policy terms for this classification.                           form at least ten days prior to the next scheduled withdrawal.
+
+2. This agreement authorizes the automatic withdrawal of        The enterprise may cancel this authorization at any time by providing written notice,
+premium payments directly from the designated corporate        which will take effect after the current billing cycle.
+banking account.
+                                                                4. Any refunds or return premiums due to the enterprise will be deposited directly
+The enterprise must provide accurate routing and account        into the authorized banking account.
+numbers and ensure sufficient funds are available on the
+scheduled withdrawal dates.                                      We are not liable for any overdraft fees or penalties assessed by the financial
+                                                                institution resulting from authorized premium withdrawals.
+Withdrawals will occur on the exact due date of each
+installment, or the following business day if the due date
+falls on a weekend or holiday.
+
+
+
+
+
+
+
+
+
+
+
+
+
+WC-EF-4001                                                    Blue Kettle Food Service, LLC | YW700400
 
 # Page 12
 
-POLICY PACKET,POLICY COPY 1F7EA01
-Coverage and Rating Schedule
-Wc Class Code Item
+ARGENT BIRCH EMPLOYERS                                         POLICY NUMBER: YW700400
+Workers Compensation and Employers Liability                       EFFECTIVE: 04/01/2026
+                                                                     EXPIRES: 04/01/2027
+________________________________________________________________________________________
 
-SCHEDULE REF,LOC.,BLDG.,COVERAGE PART,CLASS,DESCRIPTION,EXPOSURE/LIMIT,RATE/DEDUCTIBLE,ADDITIONAL DETAIL
-"WC-0033","3","","",8810,"Clerical office employees","$416,547",1.15,"Edition Date: 04 21; Endorsement Effective Date: 09/01/2026; Endorsement Number: WC-EN-033; Estimated Premium: $4,790; Experience Mod: 1.04; Form Number: WC 00 00 00 C; Form Title: Information Page; Governing Class: No; Item Id: WC-0033; Premium Basis: Payroll per $100 remuneration; Schedule Credit Debit: 0%; State: CT"
-"WC-0034","4","","",8017,"Retail store - all employees","$427,355",4.35,"Edition Date: 04 21; Estimated Premium: $18,589; Experience Mod: 1.04; Form Number: WC 00 00 00 C; Form Title: Voluntary Compensation Endorsement; Governing Class: No; Item Id: WC-0034; Premium Basis: Payroll per $100 remuneration; Schedule Credit Debit: 0%; State: CT"
-"WC-0035","5","","",8742,"Outside salespersons","$435,963",0.27,"Edition Date: 04 21; Estimated Premium: $1,177; Experience Mod: 1.04; Form Number: WC 00 00 00 C; Form Title: Information Page; Governing Class: No; Item Id: WC-0035; Premium Basis: Payroll per $100 remuneration; Schedule Credit Debit: 0%; State: MA"
-"WC-0036","1","","",5190,"Electrical wiring within buildings","$453,438",0.27,"Edition Date: 01 15; Endorsement Effective Date: 12/01/2026; Endorsement Number: WC-EN-036; Estimated Premium: $1,224; Experience Mod: 1.04; Form Number: WC 00 03 13; Form Title: Workers Compensation and Employers Liability Policy; Governing Class: No; Item Id: WC-0036; Premium Basis: Payroll per $100 remuneration; Schedule Credit Debit: 0%; State: MA"
-"WC-0037","2","","",9082,"Restaurant NOC","$463,529",6.22,"Edition Date: 04 21; Endorsement Effective Date: 01/01/2026; Endorsement Number: WC-EN-037; Estimated Premium: $28,831; Experience Mod: 1.04; Form Number: WC 00 03 13; Form Title: Workers Compensation and Employers Liability Policy; Governing Class: No; Item Id: WC-0037; Premium Basis: Payroll per $100 remuneration; Schedule Credit Debit: 0%; State: RI"
+                    PREMIUM AUDIT AND REMUNERATION CONDITIONS
+________________________________________________________________________________________
+
+THIS FORM IS PART OF THE POLICY AND MUST BE READ WITH THE DECLARATIONS AND ENDORSEMENTS.
+________________________________________________________________________________________
+
+STATE / CLASS  MA / 8742                                  LOCATION  1
+................................................................................................................................................................
+CLASSIFICATION  Outside salespersons                     PAYROLL / RATE  $158,051 / 4.35
+................................................................................................................................................................
+PREMIUM  $6,875                                           FORM  WC 04 03 06 01 15
+................................................................................................................................................................
+
+A. Classification And Rating Reference                   We reserve the authority to inspect these ledgers and related tax filings during
+                                                         normal business hours.
+This form applies to Outside salespersons in MA, class 8742, at Location 1.
+                                                         This inspection authority extends for up to three years following the expiration date
+The information page shows estimated remuneration of $158,051, manual rate 4.35,  or cancellation of the contract.
+experience modification 1.04, and estimated premium $6,875.
+                                                         If the final computed premium exceeds the initial estimate, the employer must remit
+Form WC 04 03 06 edition 01 15 supplies the applicable policy terms for this    the outstanding balance upon receipt of the final invoice.
+classification.
+                                                         C. If the final computed premium is less than the initial estimate, a refund will be
+The premium shown on the schedules is an initial estimate based on anticipated   issued, subject to any minimum premium requirements.
+remuneration for the upcoming term.
+                                                         Failure to provide requested ledgers or cooperate with the auditor may result in an
+B. At the conclusion of the policy period, a final computation determines the exact estimated final billing.
+premium owed based on actual exposures.
+                                                         Estimated final billings are calculated using a punitive multiplier applied to the
+The employer must maintain complete and accurate ledgers detailing all wages,    highest previous exposure recorded.
+bonuses, commissions, and substitute compensation provided to workers.
+                                                         The employer may dispute an audit finding by submitting a written grievance along
+                                                         with supporting documentation within thirty days of the final invoice date.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+WC-PA-1000                                                   Blue Kettle Food Service, LLC | YW700400
 
 # Page 13
 
-"SCHEDULE REF","LOC.","BLDG.","COVERAGE PART","CLASS","DESCRIPTION","EXPOSURE/LIMIT","RATE/DEDUCTIBLE","ADDITIONAL DETAIL"
-"WC-0038","3","","","3632","Machine shop NOC","$475,950","0.74","Edition Date: 07 23; Estimated Premium: $3,522; Experience Mod: 1.04; Form Number: WC 00 00 01 A; Form Title: Information Page; Governing Class: No; Item Id: WC-0038; Premium Basis: Payroll per $100 remuneration; Schedule Credit Debit: 0%; State: ME"
-"WC-0039","4","","","9015","Building operations by owner","$485,364","4.35","Edition Date: 04 21; Estimated Premium: $21,113; Experience Mod: 1.04; Form Number: WC 04 03 06; Form Title: Waiver of Our Right to Recover; Governing Class: No; Item Id: WC-0039; Premium Basis: Payroll per $100 remuneration; Schedule Credit Debit: 0%; State: NH"
-"WC-0040","5","","","5606","Contractor executive supervisor","$495,123","4.35","Edition Date: 07 23; Endorsement Effective Date: 04/01/2026; Endorsement Number: WC-EN-040; Estimated Premium: $21,537; Experience Mod: 1.04; Form Number: WC 00 00 00 C; Form Title: Workers Compensation and Employers Liability Policy; Governing Class: No; Item Id: WC-0040; Premium Basis: Payroll per $100 remuneration; Schedule Credit Debit: 0%; State: VT"
-"Prior policy comparison retained for underwriting only.","","","","","","","",""
-"WC-0041","1","","","8810","Clerical office employees","$502,147","1.15","Edition Date: 04 21; Endorsement Effective Date: 05/01/2026; Endorsement Number: WC-EN-041; Estimated Premium: $5,774; Experience Mod: 1.04; Form Number: WC 00 03 13; Form Title: Voluntary Compensation Endorsement; Governing Class: No; Item Id: WC-0041; Premium Basis: Payroll per $100 remuneration; Schedule Credit Debit: 0%; State: CT"
-"WC-0042","2","","","8017","Retail store - all employees","$514,119","0.27","Edition Date: 01 15; Estimated Premium: $1,388; Experience Mod: 1.04; Form Number: WC 00 03 13; Form Title: Workers Compensation and Employers Liability Policy; Governing Class: No; Item Id: WC-0042; Premium Basis: Payroll per $100 remuneration; Schedule Credit Debit: 0%; State: CT"
-"WC-0043","3","","","8742","Outside salespersons","$532,778","0.27","Edition Date: 07 23; Estimated Premium: $1,438; Experience Mod: 1.04; Form Number: WC 00 00 01 A; Form Title: Information Page; Governing Class: No; Item Id: WC-0043; Premium Basis: Payroll per $100"
+ARGENT BIRCH EMPLOYERS                                          POLICY NUMBER: YW700400
+Workers Compensation and Employers Liability                       EFFECTIVE: 04/01/2026
+                                                                     EXPIRES: 04/01/2027
+________________________________________________________________________________________
+
+                       CLASSIFICATION ASSIGNMENT RULES
+
+________________________________________________________________________________________
+THIS FORM IS PART OF THE POLICY AND MUST BE READ WITH THE DECLARATIONS AND ENDORSEMENTS.
+________________________________________________________________________________________
+
+STATE / CLASS  MA / 5190                                LOCATION  2
+..........................................................................................................................................................................
+CLASSIFICATION  Electrical wiring within buildings      PAYROLL / RATE  $171,391 / 0.27
+..........................................................................................................................................................................
+PREMIUM  $462                                           FORM  WC 04 03 06 04 21
+..........................................................................................................................................................................
+
+Classification And Rating Reference                      If an enterprise consists of distinct and separate operations, multiple classifications
+                                                         may be authorized under specific manual rules.
+This form applies to Electrical wiring within buildings in
+MA, class 5190, at Location 2.                           To qualify for multiple classifications, the employer must maintain physical
+                                                         separation of operations and distinct payroll records for each segment.
+The information page shows estimated remuneration of
+$171,391, manual rate 0.27, experience modification      When payroll is not properly segregated in the ledgers, the entire remuneration will
+1.04, and estimated premium $462.                        be assigned to the highest-rated classification applicable.
+
+Form WC 04 03 06 edition 04 21 supplies the applicable    Changes in business operations, product lines, or facility locations must be reported
+policy terms for this classification.                    promptly to ensure accurate classification assignment.
+
+The classification schedule assigns estimated            We retain the right to reclassify operations during the term or upon final audit if the
+remuneration to specific categories based on the         actual duties deviate from the initial descriptions.
+operational nature of the enterprise.
+                                                         Reclassification may result in retroactive premium adjustments affecting the current
+The governing classification is determined by the        and immediately preceding policy periods.
+operations that generate the largest amount of payroll,
+excluding standard exceptions.                           State-specific manual rules supersede general classification guidelines whenever a
+                                                         conflict arises regarding proper assignment.
+Standard exceptions include clerical office employees,
+outside salespersons, and drivers, provided they meet
+strict operational criteria.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+WC-CA-1001                                                         Blue Kettle Food Service, LLC | YW700400
 
 # Page 14
 
-SCHEDULE REF,LOC.,BLDG.,COVERAGE PART,CLASS,DESCRIPTION,EXPOSURE/LIMIT,RATE/DEDUCTIBLE,ADDITIONAL DETAIL
-,,,,,,,,"remuneration;
-Schedule Credit
-Debit: 0%; State: MA"
-WC-0044,4,,,5190,Electrical wiring within buildings,"$545,022",4.35,"Edition Date: 04 21;
-Endorsement
-Effective Date:
-08/01/2026;
-Endorsement
-Number: WC-EN-044;
-Estimated Premium:
-$23,708; Experience
-Mod: 1.04; Form
-Number: WC 00 00
-00 C; Form Title:
-Waiver of Our Right to
-Recover; Governing
-Class: No; Item Id:
-WC-0044; Premium
-Basis: Payroll per
-$100 remuneration;
-Schedule Credit
-Debit: 0%; State: MA"
-WC-0045,5,,,9082,Restaurant NOC,"$556,426",0.74,"Edition Date: 07 23;
-Endorsement
-Effective Date:
-09/01/2026;
-Endorsement
-Number: WC-EN-045;
-Estimated Premium:
-$4,117; Experience
-Mod: 1.04; Form
-Number: WC 00 00
-00 C; Form Title:
-Workers
-Compensation and
-Employers Liability
-Policy; Governing
-Class: No; Item Id:
-WC-0045; Premium
-Basis: Payroll per
-$100 remuneration;
-Schedule Credit
-Debit: 0%; State: RI"
-WC-0046,1,,,3632,Machine shop NOC,"$567,480",6.22,"Edition Date: 04 21;
-Estimated Premium:
-$35,297; Experience
-Mod: 1.04; Form
-Number: WC 00 03
-13; Form Title:
-Workers
-Compensation and
-Employers Liability
-Policy; Governing
-Class: No; Item Id:
-WC-0046; Premium
-Basis: Payroll per
-$100 remuneration;
-Schedule Credit
-Debit: 0%; State: ME"
-WC-0047,2,,,9015,Building operations by owner,"$572,285",0.18,"Edition Date: 07 23;
-Estimated Premium:
-$1,030; Experience
-Mod: 1.04; Form
-Number: WC 04 03
-06; Form Title:
-Voluntary
-Compensation
-Endorsement;
-Governing Class: No;
-Item Id: WC-0047;
-Premium Basis:
-Payroll per $100
-remuneration;
-Schedule Credit
-Debit: 0%; State: NH"
-WC-0048,3,,,5606,Contractor executive supervisor,"$584,565",1.15,"Edition Date: 04 21;
-Endorsement
-Effective Date:
-12/01/2026;
-Endorsement
-Number: WC-EN-048;
-Estimated Premium:
-$6,722; Experience
-Mod: 1.04; Form
-Number: WC 00 03
-13; Form Title:
-Information Page;
-Governing Class: No;
-Item Id: WC-0048;
-Premium Basis:
-Payroll per $100
-remuneration;
-Schedule Credit
-Debit: 0%; State: VT"
+ARGENT BIRCH EMPLOYERS                                                 POLICY NUMBER: YW700400
+Workers Compensation and Employers Liability                             EFFECTIVE: 04/01/2026
+                                                                          EXPIRES: 04/01/2027
+__________________________________________________________________________________________________
 
-Policy packet,Page 8
+                    MASSACHUSETTS STATE AMENDATORY ENDORSEMENT
+__________________________________________________________________________________________________
+
+THIS ENDORSEMENT CHANGES THE POLICY. PLEASE READ IT CAREFULLY.
+__________________________________________________________________________________________________
+
+STATE / CLASS RI / 9082                                  LOCATION 3
+..........................................................................................................................................................................
+CLASSIFICATION Restaurant NOC                            PAYROLL / RATE $184,316 / 1.15
+..........................................................................................................................................................................
+PREMIUM $2,119                                           FORM WC 00 03 13 07 23
+..........................................................................................................................................................................
+
+1. Classification And Rating Reference                      The employer must post the official notice to employees regarding their rights and
+                                                            the procedures for obtaining medical treatment.
+This form applies to Restaurant NOC in RI, class 9082, at
+Location 3.                                                 3. Failure to post the required workplace notices may subject the enterprise to
+                                                            administrative fines levied by the state regulatory department.
+The information page shows estimated remuneration of
+$184,316, manual rate 1.15, experience modification 1.04,   Disputes regarding the assignment of classification codes must be submitted to the
+and estimated premium $2,119.                               state rating bureau's dispute resolution panel.
+
+Form WC 00 03 13 edition 07 23 supplies the applicable      The experience modification factor applied to Massachusetts operations is calculated
+policy terms for this classification.                      exclusively using the state's approved statistical plan.
+
+2. This document modifies the standard provisions to        We will notify the state industrial accident board electronically whenever this
+comply with the statutory requirements of the               contract is issued, renewed, or terminated.
+Commonwealth of Massachusetts.
+                                                            4. The employer must utilize the state-mandated forms when reporting injuries and
+The cancellation notice period for nonpayment of premium    must submit them within the required seven-day window.
+is extended to strictly comply with the state's
+administrative code.                                        Any provision in the standard contract that conflicts with Massachusetts law is
+                                                            hereby amended to conform to the statutory minimums.
+When calculating remuneration for premium purposes, the
+maximum payroll limitations for executive officers are
+dictated by the state rating bureau.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+WC-MA-3000                                                             Blue Kettle Food Service, LLC | YW700400
 
 # Page 15
 
-"Item ID","Classification","Location","Class Code","Basis","Form Number","Annual Payroll","Endorsement Effective Date","Endorsement Number","Estimated Premium","Experience Mod","Form Title","Governing Class","Manual Rate","Schedule Credit Debit","State"
-"WC-0049","Clerical office employees","Location 4","8810","basis Payroll per $100 remuneration","Form WC 00 03 13 01 15","$594,857","01/01/2026","WC-EN-049","$2,498","1.04","Information Page","No","0.42","0%","CT"
-"WC-0050","Retail store - all employees","Location 5","8017","basis Payroll per $100 remuneration","Form WC 04 03 06 07 23","$611,668","","","$26,607","1.04","Voluntary Compensation Endorsement","No","4.35","0%","CT"
-"WC-0051","Outside salespersons","Location 1","8742","basis Payroll per $100 remuneration","Form WC 00 03 13 04 21","$622,588","","","$4,606","1.04","Voluntary Compensation Endorsement","No","0.74","0%","MA"
-"WC-0052","Electrical wiring within buildings","Location 2","5190","basis Payroll per $100 remuneration","Form WC 00 00 00 C 07 23","$633,943","04/01/2026","WC-EN-052","$4,691","1.04","Voluntary Compensation Endorsement","No","0.74","0%","MA"
-"WC-0053","Restaurant NOC","Location 3","9082","basis Payroll per $100 remuneration","Form WC 00 00 01 A 01 15","$642,370","05/01/2026","WC-EN-053","$27,943","1.04","Waiver of Our Right to Recover","No","4.35","0%","RI"
-"WC-0054","Machine shop NOC","Location 4","3632","basis Payroll per $100 remuneration","Form WC 00 00 01 A 04 21","$657,159","","","$2,760","1.04","Voluntary Compensation Endorsement","No","0.42","0%","ME"
-"WC-0055","Building operations by owner","Location 5","9015","basis Payroll per $100 remuneration","Form WC 00 00 01 A 07 23","$663,479","","","$18,975","1.04","Information Page","No","2.86","0%","NH"
-"WC-0056","Contractor executive supervisor","Location 1","5606","basis Payroll per $100 remuneration","Form WC 00 00 00 C 07 23","$675,365","08/01/2026","WC-EN-056","$29,378","1.04","Voluntary Compensation Endorsement","No","4.35","0%","VT"
-"WC-0057","Clerical office employees","Location 2","8810","basis Payroll per $100 remuneration","Form WC 00 00 01 A 04 21","$686,739","09/01/2026","WC-EN-057","$19,640","1.04","Voluntary Compensation Endorsement","No","2.86","0%","CT"
-"WC-0058","Retail store - all employees","Location 3","8017","basis Payroll per $100 remuneration","Form WC 00 00 01 A 01 15","$705,887","","","$1,905","1.04","Waiver of Our Right to Recover","No","0.27","0%","CT"
-"WC-0059","Outside salespersons","Location 4","8742","basis Payroll per $100 remuneration","Form WC 00 00 00 C 04 21","$716,927","","","$1,290","1.04","Workers Compensation and Employers Liability Policy","No","0.18","0%","MA"
-"WC-0060","Electrical wiring within buildings","Location 5","5190","basis Payroll per $100 remuneration","Form WC 00 00 00 C 01 15","$724,745","12/01/2026","WC-EN-060","$1,304","1.04","Workers Compensation and Employers Liability Policy","No","0.18","0%","MA"
+ARGENT BIRCH EMPLOYERS
+Workers Compensation and Employers Liability
+POLICY NUMBER: YW700400
+EFFECTIVE: 04/01/2026
+EXPIRES: 04/01/2027
+
+____________________________________________________________________________________________________________________
+
+FRAUD WARNING AND PENALTY NOTICE
+____________________________________________________________________________________________________________________
+
+POLICYHOLDER NOTICE - INFORMATION ABOUT YOUR POLICY
+____________________________________________________________________________________________________________________
+
+
+       To the policyholder:
+
+       A. Misrepresenting payroll, misclassifying employees, or concealing operations to obtain a lower premium is a severe violation of law.
+
+       Any person who knowingly submits false information on an application, audit ledger, or claim form may be subject to criminal prosecution.
+
+       Regulatory authorities actively investigate suspected fraud and may impose substantial fines, restitution orders, and imprisonment.
+
+       We utilize advanced data analytics and field investigations to detect discrepancies in reported remuneration and operational descriptions.
+
+       If premium fraud is discovered, we will pursue immediate cancellation of the contract and report the findings to the state fraud bureau.
+
+       B. Employers who encourage or assist workers in filing exaggerated or fabricated injury reports will face civil liability and loss of coverage.
+
+       Workers who collect benefits while simultaneously earning unreported income from other sources are committing benefit fraud.
+
+       We encourage anyone with knowledge of fraudulent activities related to this contract to contact our anonymous reporting hotline.
+
+       This notice is informational. Coverage is governed by the policy forms and endorsements issued with the declarations.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+WC-FW-2001                                                                                                                                           Blue Kettle Food Service, LLC | YW700400
 
 # Page 16
 
-POLICY PACKET, POLICY COPY 1F7EA01
+ARGENT BIRCH EMPLOYERS                                                 POLICY NUMBER: YW700400
+Workers Compensation and Employers Liability                             EFFECTIVE: 04/01/2026
+                                                                           EXPIRES: 04/01/2027
+______________________________________________________________________________________________________
 
-Forms, Endorsements, and Premiums
+                              EMPLOYER DUTIES IN THE EVENT OF INJURY
+______________________________________________________________________________________________________
 
-Policy Form Item
+THIS FORM IS PART OF THE POLICY AND MUST BE READ WITH THE DECLARATIONS AND ENDORSEMENTS.
+______________________________________________________________________________________________________
 
-APPLIES TO,FORM / ENDORSEMENT,TITLE,EDITION,EFFECTIVE,PREMIUM,REVIEW,ADDITIONAL DETAIL
-WC-0001,WC 00 00 01 A,Information Page,07 23,,,,Item Id: WC-0001; Schedule Source: WC-EN-001
-WC-0002,WC 00 00 00 C,Voluntary Compensation Endorsement,01 15,,,,Item Id: WC-0002; Schedule Source: Policy jacket
-WC-0003,WC 00 00 00 C,Workers Compensation and Employers Liability Policy,01 15,,,,Item Id: WC-0003; Schedule Source: Policy jacket
-WC-0004,WC 04 03 06,Workers Compensation and Employers Liability Policy,01 15,,,,Item Id: WC-0004; Schedule Source: WC-EN-004
-WC-0005,WC 00 00 01 A,Voluntary Compensation Endorsement,01 15,,,,Item Id: WC-0005; Schedule Source: WC-EN-005
-WC-0006,WC 00 00 01 A,Voluntary Compensation Endorsement,01 15,,,,Item Id: WC-0006; Schedule Source: Policy jacket
-WC-0007,WC 00 00 00 C,Information Page,01 15,,,,Item Id: WC-0007; Schedule Source: Policy jacket
-WC-0008,WC 00 00 01 A,Waiver of Our Right to Recover,04 21,,,,Item Id: WC-0008; Schedule Source: WC-EN-008
-WC-0009,WC 04 03 06,Workers Compensation and Employers Liability Policy,01 15,,,,Item Id: WC-0009; Schedule Source: WC-EN-009
-WC-0010,WC 04 03 06,Workers Compensation and Employers Liability Policy,04 21,,,,Item Id: WC-0010; Schedule Source: Policy jacket
-WC-0011,WC 04 03 06,Voluntary Compensation Endorsement,01 15,,,,Item Id: WC-0011; Schedule Source: Policy jacket
-WC-0012,WC 04 03 06,Waiver of Our Right to Recover,04 21,,,,Item Id: WC-0012; Schedule Source: WC-EN-012
-WC-0013,WC 00 03 13,Waiver of Our Right to Recover,07 23,,,,Item Id: WC-0013; Schedule Source: WC-EN-013
-WC-0014,WC 00 00 01 A,Information Page,07 23,,,,Item Id: WC-0014; Schedule Source: Policy jacket
-WC-0015,WC 00 03 13,Voluntary Compensation Endorsement,04 21,,,,Item Id: WC-0015; Schedule Source: Policy jacket
-WC-0016,WC 00 00 01 A,Information Page,04 21,,,,Item Id: WC-0016; Schedule Source: WC-EN-016
-WC-0017,WC 04 03 06,Information Page,01 15,,,,Item Id: WC-0017; Schedule Source: WC-EN-017
-WC-0018,WC 00 00 00 C,Waiver of Our Right to Recover,04 21,,,,Item Id: WC-0018; Schedule Source: Policy jacket
-WC-0019,WC 00 03 13,Waiver of Our Right to Recover,04 21,,,,Item Id: WC-0019; Schedule Source: Policy jacket
-WC-0020,WC 04 03 06,Information Page,07 23,,,,Item Id: WC-0020; Schedule Source: WC-EN-020
+STATE / CLASS NH / 9015                                     LOCATION 5
+..........................................................................................................................................................................
+CLASSIFICATION Building operations by owner                 PAYROLL / RATE $209,573 / 0.74
+..........................................................................................................................................................................
+PREMIUM $1,550                                              FORM WC 00 03 13 04 21
+..........................................................................................................................................................................
 
-Policy packet, Page 10
+Classification And Rating Reference                         The employer must forward all legal notices, demands, or administrative
+                                                            correspondence related to the injury immediately upon receipt.
+This form applies to Building operations by owner in NH, 
+class 9015, at Location 5.                                  Full cooperation is required during the investigation, settlement negotiations, and
+The information page shows estimated remuneration of        any subsequent administrative hearings.
+$209,573, manual rate 0.74, experience modification 
+1.04, and estimated premium $1,550.                         The employer must not voluntarily assume any liability, make unauthorized
+                                                            payments, or incur expenses without our prior written consent.
+Form WC 00 03 13 edition 04 21 supplies the applicable 
+policy terms for this classification.                      Interference with our subrogation rights or investigation processes constitutes a
+                                                            material breach of the contract conditions.
+Upon the occurrence of an occupational injury or disease, 
+the employer must provide immediate medical attention to    The employer must facilitate interviews with witnesses, supervisors, and the injured
+the affected worker.                                        worker to establish the facts of the incident.
+
+The employer must notify us or our authorized               Failure to report injuries within the statutory timeframe may result in administrative
+representative as soon as practicable following any         fines, which are the sole responsibility of the employer.
+incident that may result in a claim.
+                                                            We reserve the right to inspect the premises where the injury occurred to determine
+Written reports detailing the time, place, circumstances,   causation and assess future risk mitigation.
+and identities of involved parties must be submitted 
+promptly.
+
+
+
+
+
+
+
+
+
+
+
+
+
+WC-ED-1004                                                                 Blue Kettle Food Service, LLC | YW700400
 
 # Page 17
 
-POLICY PACKET
-POLICY COPY 1F7EA01
+ARGENT BIRCH EMPLOYERS                                                 POLICY NUMBER: YW700400
+Workers Compensation and Employers Liability                             EFFECTIVE: 04/01/2026
+                                                                           EXPIRES: 04/01/2027
+__________________________________________________________________________________________________
 
-Forms, Endorsements, and Premiums
+                       TERRORISM RISK INSURANCE ACT DISCLOSURE
 
-Policy Form Item
+__________________________________________________________________________________________________
+POLICYHOLDER NOTICE - INFORMATION ABOUT YOUR POLICY
 
-APPLIES TO,FORM / ENDORSEMENT,TITLE,EDITION,EFFECTIVE,PREMIUM,REVIEW,ADDITIONAL DETAIL
-WC-0021,WC 00 03 13,Workers Compensation and Employers Liability Policy,01 15,,,,Item Id: WC-0021; Schedule Source: WC-EN-021
-WC-0022,WC 00 03 13,Information Page,01 15,,,,Item Id: WC-0022; Schedule Source: Policy jacket
-WC-0023,WC 04 03 06,Workers Compensation and Employers Liability Policy,04 21,,,,Item Id: WC-0023; Schedule Source: Policy jacket
-WC-0024,WC 04 03 06,Voluntary Compensation Endorsement,07 23,,,,Item Id: WC-0024; Schedule Source: WC-EN-024
-WC-0025,WC 00 03 13,Workers Compensation and Employers Liability Policy,07 23,,,,Item Id: WC-0025; Schedule Source: WC-EN-025
-WC-0026,WC 00 03 13,Information Page,07 23,,,,Item Id: WC-0026; Schedule Source: Policy jacket
-WC-0027,WC 04 03 06,Voluntary Compensation Endorsement,01 15,,,,Item Id: WC-0027; Schedule Source: Policy jacket
-WC-0028,WC 00 00 00 C,Waiver of Our Right to Recover,04 21,,,,Item Id: WC-0028; Schedule Source: WC-EN-028
-WC-0029,WC 04 03 06,Voluntary Compensation Endorsement,07 23,,,,Item Id: WC-0029; Schedule Source: WC-EN-029
-WC-0030,WC 00 03 13,Workers Compensation and Employers Liability Policy,04 21,,,,Item Id: WC-0030; Schedule Source: Policy jacket
-WC-0031,WC 00 00 00 C,Workers Compensation and Employers Liability Policy,07 23,,,,Item Id: WC-0031; Schedule Source: Policy jacket
-WC-0032,WC 00 00 01 A,Voluntary Compensation Endorsement,04 21,,,,Item Id: WC-0032; Schedule Source: WC-EN-032
-WC-0033,WC 00 00 00 C,Information Page,04 21,,,,Item Id: WC-0033; Schedule Source: WC-EN-033
-WC-0034,WC 00 00 00 C,Voluntary Compensation Endorsement,04 21,,,,Item Id: WC-0034; Schedule Source: Policy jacket
-WC-0035,WC 00 00 00 C,Information Page,04 21,,,,Item Id: WC-0035; Schedule Source: Policy jacket
-WC-0036,WC 00 03 13,Workers Compensation and Employers Liability Policy,01 15,,,,Item Id: WC-0036; Schedule Source: WC-EN-036
-WC-0037,WC 00 03 13,Workers Compensation and Employers Liability Policy,04 21,,,,Item Id: WC-0037; Schedule Source: WC-EN-037
-WC-0038,WC 00 00 01 A,Information Page,07 23,,,,Item Id: WC-0038; Schedule Source: Policy jacket
-WC-0039,WC 04 03 06,Waiver of Our Right to Recover,04 21,,,,Item Id: WC-0039; Schedule Source: Policy jacket
-WC-0040,WC 00 00 00 C,Workers Compensation and Employers Liability Policy,07 23,,,,Item Id: WC-0040; Schedule Source: WC-EN-040
 
-Policy packet
-Page 11
+
+       To the policyholder:
+
+       1. The federal government provides a financial backstop for certain catastrophic losses resulting from certified acts of terrorism.
+
+       Under this federal framework, the government shares the financial burden of terrorism claims once a specified industry-wide threshold is
+       reached.
+
+       The premium associated with this contract includes a specific charge for the terrorism exposure, which is detailed on the administrative
+       schedules.
+
+       This charge is calculated as a percentage of the manual premium and is not subject to experience modification or schedule rating
+       adjustments.
+
+       2. The federal program contains an aggregate cap on total liability; if losses exceed this cap, benefits may be reduced proportionally.
+
+       State workers compensation statutes do not permit employers to reject or opt out of the terrorism coverage component.
+
+       Any future modifications to the federal backstop legislation may result in mid-term adjustments to the terrorism premium charge.
+
+       This notice is informational. Coverage is governed by the policy forms and endorsements issued with the declarations.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+WC-TR-2003                                                               Blue Kettle Food Service, LLC | YW700400
 
 # Page 18
 
-POLICY PACKET                                                                  POLICY COPY 1F7EA01
+ARGENT BIRCH EMPLOYERS
+Workers Compensation and Employers Liability
 
-Forms, Endorsements, and Premiums
+POLICY NUMBER: YW700400
+EFFECTIVE: 04/01/2026
+EXPIRES: 04/01/2027
 
-Policy Form Item
+--------------------------------------------------------------------------------------------------------------------------------------
+EXECUTIVE OFFICER AND MEMBER INCLUSION RULES
+--------------------------------------------------------------------------------------------------------------------------------------
+THIS FORM IS PART OF THE POLICY AND MUST BE READ WITH THE DECLARATIONS AND ENDORSEMENTS.
+--------------------------------------------------------------------------------------------------------------------------------------
 
-APPLIES TO,FORM / ENDORSEMENT,TITLE,EDITION,EFFECTIVE,PREMIUM,REVIEW,ADDITIONAL DETAIL
-WC-0041,WC 00 03 13,Voluntary Compensation Endorsement,04 21,,,,Item Id: WC-0041; Schedule Source: WC-EN-041
-WC-0042,WC 00 03 13,Workers Compensation and Employers Liability Policy,01 15,,,,Item Id: WC-0042; Schedule Source: Policy jacket
-WC-0043,WC 00 00 01 A,Information Page,07 23,,,,Item Id: WC-0043; Schedule Source: Policy jacket
-WC-0044,WC 00 00 00 C,Waiver of Our Right to Recover,04 21,,,,Item Id: WC-0044; Schedule Source: WC-EN-044
-WC-0045,WC 00 00 00 C,Workers Compensation and Employers Liability Policy,07 23,,,,Item Id: WC-0045; Schedule Source: WC-EN-045
-WC-0046,WC 00 03 13,Workers Compensation and Employers Liability Policy,04 21,,,,Item Id: WC-0046; Schedule Source: Policy jacket
-WC-0047,WC 04 03 06,Voluntary Compensation Endorsement,07 23,,,,Item Id: WC-0047; Schedule Source: Policy jacket
-WC-0048,WC 00 03 13,Information Page,04 21,,,,Item Id: WC-0048; Schedule Source: WC-EN-048
-WC-0049,WC 00 03 13,Information Page,01 15,,,,Item Id: WC-0049; Schedule Source: WC-EN-049
-WC-0050,WC 04 03 06,Voluntary Compensation Endorsement,07 23,,,,Item Id: WC-0050; Schedule Source: Policy jacket
-WC-0051,WC 00 03 13,Voluntary Compensation Endorsement,04 21,,,,Item Id: WC-0051; Schedule Source: Policy jacket
-WC-0052,WC 00 00 00 C,Voluntary Compensation Endorsement,07 23,,,,Item Id: WC-0052; Schedule Source: WC-EN-052
-WC-0053,WC 00 00 01 A,Waiver of Our Right to Recover,01 15,,,,Item Id: WC-0053; Schedule Source: WC-EN-053
-WC-0054,WC 00 00 01 A,Voluntary Compensation Endorsement,04 21,,,,Item Id: WC-0054; Schedule Source: Policy jacket
-WC-0055,WC 00 00 01 A,Information Page,07 23,,,,Item Id: WC-0055; Schedule Source: Policy jacket
-WC-0056,WC 00 00 00 C,Voluntary Compensation Endorsement,07 23,,,,Item Id: WC-0056; Schedule Source: WC-EN-056
-WC-0057,WC 00 00 01 A,Voluntary Compensation Endorsement,04 21,,,,Item Id: WC-0057; Schedule Source: WC-EN-057
-WC-0058,WC 00 00 01 A,Waiver of Our Right to Recover,01 15,,,,Item Id: WC-0058; Schedule Source: Policy jacket
-WC-0059,WC 00 00 00 C,Workers Compensation and Employers Liability Policy,04 21,,,,Item Id: WC-0059; Schedule Source: Policy jacket
-WC-0060,WC 00 00 00 C,Workers Compensation and Employers Liability Policy,01 15,,,,Item Id: WC-0060; Schedule Source: WC-EN-060
+STATE / CLASS  CT / 8810                                     LOCATION  2
+CLASSIFICATION  Clerical office employees                    PAYROLL / RATE  $234,108 / 2.86
+PREMIUM  $6,695                                              FORM  WC 04 03 06 01 15
 
-Policy packet                                                                      Page 12
+--------------------------------------------------------------------------------------------------------------------------------------
+
+A. Classification And Rating Reference                       The exclusion becomes effective only upon our receipt and acknowledgment of the
+                                                             approved regulatory rejection form.
+This form applies to Clerical office employees in CT, class
+8810, at Location 2.                                         When an officer or member is included, their remuneration is subject to minimum
+                                                             and maximum payroll caps for premium computation purposes.
+The information page shows estimated remuneration of
+$234,108, manual rate 2.86, experience modification 1.04,     These payroll caps are established by the authorized rating bureau and are updated
+and estimated premium $6,695.                                annually based on statewide average wage data.
+
+Form WC 04 03 06 edition 01 15 supplies the applicable       C. The employer must clearly identify all active officers and members in the payroll
+policy terms for this classification.                        ledgers to ensure accurate application of the caps.
+
+Executive officers of a corporation are generally included  Officers who perform duties outside of executive management may be assigned to
+in the coverage provisions unless explicitly exempted by     the classification corresponding to their actual operations.
+state statute or endorsement.
+                                                             The inclusion or exclusion status of an individual remains in effect for subsequent
+B. Members of a limited liability company may be             renewal terms unless a written revocation is submitted.
+treated as partners, sole proprietors, or executive
+officers depending on the jurisdiction.                      We bear no liability for injuries sustained by individuals who have properly executed
+                                                             and filed a valid rejection of coverage.
+To exclude an otherwise included officer or member, a
+formal rejection notice must be filed with the
+appropriate state regulatory authority.
+
+
+WC-EO-1006                                                                                Blue Kettle Food Service, LLC | YW700400
 
 # Page 19
 
-APPLIES TO,FORM / ENDORSEMENT,TITLE,EDITION,EFFECTIVE,PREMIUM,REVIEW,ADDITIONAL DETAIL
-WC-0001,WC 00 00 01 A,Information Page,07 23,01/01/2026,$189,Administrative,"Annual Payroll: $45,136; Class Code: 8810; Classification: Clerical office employees; Item Id: WC-0001; State: CT"
-WC-0004,WC 04 03 06,Workers Compensation and Employers Liability Policy,01 15,04/01/2026,"$2,218",No Material Change,"Annual Payroll: $77,560; Class Code: 5190; Classification: Electrical wiring within buildings; Item Id: WC-0004; State: MA"
-WC-0005,WC 00 00 01 A,Voluntary Compensation Endorsement,01 15,05/01/2026,$245,Administrative,"Annual Payroll: $90,759; Class Code: 9082; Classification: Restaurant NOC; Item Id: WC-0005; State: RI"
-WC-0008,WC 00 00 01 A,Waiver of Our Right to Recover,04 21,08/01/2026,"$7,928",Material,"Annual Payroll: $127,460; Class Code: 5606; Classification: Contractor executive supervisor; Item Id: WC-0008; State: VT"
-WC-0009,WC 04 03 06,Workers Compensation and Employers Liability Policy,01 15,09/01/2026,"$8,654",Material,"Annual Payroll: $139,137; Class Code: 8810; Classification: Clerical office employees; Item Id: WC-0009; State: CT"
-WC-0012,WC 04 03 06,Waiver of Our Right to Recover,04 21,12/01/2026,$462,No Material Change,"Annual Payroll: $171,391; Class Code: 5190; Classification: Electrical wiring within buildings; Item Id: WC-0012; State: MA"
-WC-0013,WC 00 03 13,Waiver of Our Right to Recover,07 23,01/01/2026,"$2,119",Material,"Annual Payroll: $184,316; Class Code: 9082; Classification: Restaurant NOC; Item Id: WC-0013; State: RI"
-WC-0016,WC 00 00 01 A,Information Page,04 21,04/01/2026,"$6,389",Material,"Annual Payroll: $223,415; Class Code: 5606; Classification: Contractor executive supervisor; Item Id: WC-0016; State: VT"
-WC-0017,WC 04 03 06,Information Page,01 15,05/01/2026,"$6,695",No Material Change,"Annual Payroll: $234,108; Class Code: 8810; Classification: Clerical office employees; Item Id: WC-0017; State: CT"
-WC-0020,WC 04 03 06,Information Page,07 23,08/01/2026,"$16,539",Material,"Annual Payroll: $265,916; Class Code: 5190; Classification: Electrical wiring within buildings; Item Id: WC-0020; State: MA"
-WC-0021,WC 00 03 13,Workers Compensation and Employers Liability Policy,01 15,09/01/2026,"$2,055",No Material Change,"Annual Payroll: $277,752; Class Code: 9082; Classification: Restaurant NOC; Item Id: WC-0021; State: RI"
-WC-0024,WC 04 03 06,Voluntary Compensation Endorsement,07 23,12/01/2026,"$19,432",Material,"Annual Payroll: $312,419; Class Code: 5606; Classification: Contractor executive supervisor; Item Id: WC-0024; State: VT"
-WC-0025,WC 00 03 13,Workers Compensation and Employers Liability Policy,07 23,01/01/2026,"$20,120",Material,"Annual Payroll: $323,486; Class Code: 8810; Classification: Clerical office employees; Item Id: WC-0025; State: CT"
-WC-0028,WC 00 00 00 C,Waiver of Our Right to Recover,04 21,04/01/2026,$955,Potentially Material,"Annual Payroll: $353,824; Class Code: 5190; Classification: Electrical wiring within buildings; Item Id: WC-0028; State: MA"
-WC-0029,WC 04 03 06,Voluntary Compensation Endorsement,07 23,05/01/2026,"$1,542",No Material Change,"Annual Payroll: $367,301; Class Code: 9082; Classification: Restaurant NOC; Item Id: WC-0029; State: RI"
+ARGENT BIRCH EMPLOYERS                                         POLICY NUMBER: YW700400
+Workers Compensation and Employers Liability                     EFFECTIVE: 04/01/2026
+                                                                  EXPIRES: 04/01/2027
+______________________________________________________________________________________
+
+                     CONNECTICUT STATE AMENDATORY ENDORSEMENT
+______________________________________________________________________________________
+
+THIS ENDORSEMENT CHANGES THE POLICY. PLEASE READ IT CAREFULLY.
+______________________________________________________________________________________
+
+STATE / CLASS  CT / 8017                                LOCATION  3
+--------------------------------------------------------------------------------------
+CLASSIFICATION  Retail store - all employees            PAYROLL / RATE  $239,729 / 2.86
+--------------------------------------------------------------------------------------
+PREMIUM  $6,856                                         FORM  WC 00 00 00 C 04 21
+--------------------------------------------------------------------------------------
+
+Classification And Rating Reference                     The employer is required to establish a safety and health committee if the enterprise
+                                                        exceeds the statutory employee count threshold.
+This form applies to Retail store - all employees in
+CT, class 8017, at Location 3.                          Premium discounts may be available for enterprises that successfully implement and
+                                                        maintain an approved workplace safety program.
+The information page shows estimated remuneration of
+$239,729, manual rate 2.86, experience modification     Cancellation notices must be sent via certified mail or an equivalent method that
+1.04, and estimated premium $6,856.                     provides a definitive receipt of delivery.
+
+Form WC 00 00 00 C edition 04 21 supplies the           The state workers compensation commission retains jurisdiction over all disputes
+applicable policy terms for this classification.        regarding benefit eligibility and medical necessity.
+
+This document aligns the contract provisions with      We will pay all valid claims in accordance with the state's average weekly wage
+the specific regulatory framework of the State of       calculations and statutory benefit schedules.
+Connecticut.
+                                                        Subrogation actions pursued in Connecticut must account for the state's specific
+The employer must participate in the state-approved     rules regarding the apportionment of legal fees.
+managed care plan if one has been established and
+authorized for the enterprise.                          Any standard contract language that restricts the rights granted to injured workers
+                                                        under Connecticut law is void and unenforceable.
+Injured workers must seek initial treatment from the
+designated medical provider network, except in cases of
+immediate emergency.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+WC-CT-3001                                                  Blue Kettle Food Service, LLC | YW700400
 
 # Page 20
 
-"APPLIES TO","FORM / ENDORSEMENT","TITLE","EDITION","EFFECTIVE","PREMIUM","REVIEW","ADDITIONAL DETAIL"
-"WC-0032","WC 00 00 01 A","Voluntary Compensation Endorsement","04 21","08/01/2026","$17,601","Administrative","Annual Payroll: $404,635; Class Code: 5606; Classification: Contractor executive supervisor; Item Id: WC-0032; State: VT"
-"WC-0033","WC 00 00 00 C","Information Page","04 21","09/01/2026","$4,790","Administrative","Annual Payroll: $416,547; Class Code: 8810; Classification: Clerical office employees; Item Id: WC-0033; State: CT"
-"WC-0036","WC 00 03 13","Workers Compensation and Employers Liability Policy","01 15","12/01/2026","$1,224","Material","Annual Payroll: $453,438; Class Code: 5190; Classification: Electrical wiring within buildings; Item Id: WC-0036; State: MA"
-"WC-0037","WC 00 03 13","Workers Compensation and Employers Liability Policy","04 21","01/01/2026","$28,831","No Material Change","Annual Payroll: $463,529; Class Code: 9082; Classification: Restaurant NOC; Item Id: WC-0037; State: RI"
-"WC-0040","WC 00 00 00 C","Workers Compensation and Employers Liability Policy","07 23","04/01/2026","$21,537","Material","Annual Payroll: $495,123; Class Code: 5606; Classification: Contractor executive supervisor; Item Id: WC-0040; State: VT"
+ARGENT BIRCH EMPLOYERS                                                 POLICY NUMBER: YW700400
+Workers Compensation and Employers Liability                             EFFECTIVE: 04/01/2026
+                                                                           EXPIRES: 04/01/2027
+____________________________________________________________________________________________________
+
+               LONGSHORE AND HARBOR WORKERS EXTENSION CRITERIA
+____________________________________________________________________________________________________
+
+THIS FORM IS PART OF THE POLICY AND MUST BE READ WITH THE DECLARATIONS AND ENDORSEMENTS.
+____________________________________________________________________________________________________
+
+STATE / CLASS  MA / 8742                                  LOCATION  4
+----------------------------------------------------------------------------------------------------
+CLASSIFICATION  Outside salespersons                      PAYROLL / RATE  $256,691 / 6.22
+----------------------------------------------------------------------------------------------------
+PREMIUM  $15,966                                          FORM  WC 00 03 13 04 21
+----------------------------------------------------------------------------------------------------
+
+1. Classification And Rating Reference                      When the extension is attached, the remuneration associated with the maritime
+                                                            operations must be segregated in the payroll ledgers.
+This form applies to Outside salespersons in MA, class 8742, at Location 4.
+                                                            3. Maritime remuneration is subject to distinct manual rates and rating
+The information page shows estimated remuneration of $256,691, manual rate 6.22,  methodologies established by the federal oversight agency.
+experience modification 1.04, and estimated premium $15,966.
+                                                            The employer must comply with all federal reporting requirements and safety
+Form WC 00 03 13 edition 04 21 supplies the applicable policy terms for this   regulations mandated by the maritime statutes.
+classification.
+                                                            Failure to secure the necessary federal extension when required may expose the
+2. Operations conducted on or near navigable waters may fall under federal maritime   enterprise to severe statutory penalties and uninsured liabilities.
+jurisdiction, requiring specialized benefit provisions.
+                                                            We reserve the right to audit the proximity of operations to navigable waters to
+This contract does not automatically encompass federal maritime exposures unless   determine the potential for incidental maritime exposure.
+specifically designated on the administrative schedules.
+                                                            4. Incidental maritime exposure discovered during the final audit will be rated
+If the enterprise engages in loading, unloading, repairing, or building vessels, the  retroactively using the applicable federal classification codes.
+employer must request the appropriate federal extension.
+                                                            The defense and settlement provisions of this contract apply equally to claims
+                                                            adjudicated under the federal maritime administrative system.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+WC-LH-1008                                                            Blue Kettle Food Service, LLC | YW700400
 
 # Page 21
 
-APPLIES TO,FORM / ENDORSEMENT,TITLE,EDITION,EFFECTIVE,PREMIUM,REVIEW,ADDITIONAL DETAIL
-WC-0041,WC 00 03 13,Voluntary Compensation Endorsement,04 21,05/01/2026,"$5,774",Administrative,"Annual Payroll: $502,147; Class Code: 8810; Classification: Clerical office employees; Item Id: WC-0041; State: CT"
-WC-0044,WC 00 00 00 C,Waiver of Our Right to Recover,04 21,08/01/2026,"$23,708",Potentially Material,"Annual Payroll: $545,022; Class Code: 5190; Classification: Electrical wiring within buildings; Item Id: WC-0044; State: MA"
-WC-0045,WC 00 00 00 C,Workers Compensation and Employers Liability Policy,07 23,09/01/2026,"$4,117",Potentially Material,"Annual Payroll: $556,426; Class Code: 9082; Classification: Restaurant NOC; Item Id: WC-0045; State: RI"
-WC-0048,WC 00 03 13,Information Page,04 21,12/01/2026,"$6,722",No Material Change,"Annual Payroll: $584,565; Class Code: 5606; Classification: Contractor executive supervisor; Item Id: WC-0048; State: VT"
-WC-0049,WC 00 03 13,Information Page,01 15,01/01/2026,"$2,498",Material,"Annual Payroll: $594,857; Class Code: 8810; Classification: Clerical office employees; Item Id: WC-0049; State: CT"
-WC-0052,WC 00 00 00 C,Voluntary Compensation Endorsement,07 23,04/01/2026,"$4,691",Material,"Annual Payroll: $633,943; Class Code: 5190; Classification: Electrical wiring within buildings; Item Id: WC-0052; State: MA"
-WC-0053,WC 00 00 01 A,Waiver of Our Right to Recover,01 15,05/01/2026,"$27,943",No Material Change,"Annual Payroll: $642,370; Class Code: 9082; Classification: Restaurant NOC; Item Id: WC-0053; State: RI"
-WC-0056,WC 00 00 00 C,Voluntary Compensation Endorsement,07 23,08/01/2026,"$29,378",No Material Change,"Annual Payroll: $675,365; Class Code: 5606; Classification: Contractor executive supervisor; Item Id: WC-0056; State: VT"
-WC-0057,WC 00 00 01 A,Voluntary Compensation Endorsement,04 21,09/01/2026,"$19,640",Potentially Material,"Annual Payroll: $686,739; Class Code: 8810; Classification: Clerical office employees; Item Id: WC-0057; State: CT"
-WC-0060,WC 00 00 00 C,Workers Compensation and Employers Liability Policy,01 15,12/01/2026,"$1,304",Administrative,"Annual Payroll: $724,745; Class Code: 5190; Classification: Electrical wiring within buildings; Item Id: WC-0060; State: MA"
+ARGENT BIRCH EMPLOYERS | WORKERS COMPENSATION AND EMPLOYERS LIABILITY
+Workers Compensation Classification Schedule
+YW700400
+04/01/2026 - 04/01/2027
+
+ Rows are keyed by state, class code, and location; payroll and premium appear on a later schedule.
+
+CT              Schedule entry CT records class 8810; classification Clerical office employees; loc 1.
+                CLASS 8810                                                 CLASSIFICATION Clerical office employees
+                LOC 1                                                      GOVERNING Yes
+
+CT              Class: 8017. The remaining values below apply to this same scheduled item.
+                CLASSIFICATION Retail store - all employees                LOC 2
+                GOVERNING No
+
+MA              MA - Class: 8742 / Classification: Outside salespersons
+                Loc: 3 / Governing: No
+
+MA              MA. Class is 5190. Classification is Electrical wiring within buildings. Loc is 4. Governing is No.
+                CLASS 5190
+                CLASSIFICATION Electrical wiring within buildings
+                LOC 4
+                GOVERNING No
+
+RI              Schedule entry RI records class 9082; classification Restaurant NOC; loc 5.
+                CLASS 9082                                                 CLASSIFICATION Restaurant NOC
+                LOC 5                                                      GOVERNING No
+
+ME              Class: 3632. The remaining values below apply to this same scheduled item.
+                CLASSIFICATION Machine shop NOC                            LOC 1
+                GOVERNING No
+
+NH              NH - Class: 9015 / Classification: Building operations by owner
+                Loc: 2 / Governing: No
+
+VT              VT. Class is 5606. Classification is Contractor executive supervisor. Loc is 3. Governing is No.
+                CLASS 5606
+                CLASSIFICATION Contractor executive supervisor
+                LOC 3
+                GOVERNING No
+
+CT              Schedule entry CT records class 8810; classification Clerical office employees; loc 4.
+                CLASS 8810                                                 CLASSIFICATION Clerical office employees
+                LOC 4                                                      GOVERNING No
+
+CT              Class: 8017. The remaining values below apply to this same scheduled item.
+                CLASSIFICATION Retail store - all employees                LOC 5
+                GOVERNING No
+
+MA              MA - Class: 8742 / Classification: Outside salespersons
+                Loc: 1 / Governing: No
+
+MA              MA. Class is 5190. Classification is Electrical wiring within buildings. Loc is 2. Governing is No.
+                CLASS 5190
+                CLASSIFICATION Electrical wiring within buildings
+                LOC 2
+                GOVERNING No
+
++------------------------------------------------------------------+ +------------------------------------------------------------------+
+| Schedule Conditions                                              | | Reading This Schedule                                            |
+| Entries on this schedule apply only to the coverage part,        | | Read scheduled lines together with the declarations and attached|
+| location, class, state, or form reference shown on the same row. | | forms to determine the complete scheduled item.                  |
++------------------------------------------------------------------+ +------------------------------------------------------------------+
+
+Blue Kettle Food Service, LLC                                                                                            WC DS 02
 
 # Page 22
 
-APPLIES TO,FORM / ENDORSEMENT,TITLE,EDITION,EFFECTIVE,PREMIUM,REVIEW,ADDITIONAL DETAIL
-WC-0001,"","","","","$189","","Annual Payroll: $45,136; Class Code: 8810; Experience Mod: 1.04; Item Id: WC-0001; Location Number: 1; Manual Rate: 0.42; Premium Basis: Payroll per $100 remuneration; Schedule Credit Debit: 0%; State: CT"
-WC-0002,"","","","","$400","","Annual Payroll: $54,124; Class Code: 8017; Experience Mod: 1.04; Item Id: WC-0002; Location Number: 2; Manual Rate: 0.74; Premium Basis: Payroll per $100 remuneration; Schedule Credit Debit: 0%; State: CT"
-WC-0003,"","","","","$127","","Annual Payroll: $70,826; Class Code: 8742; Experience Mod: 1.04; Item Id: WC-0003; Location Number: 3; Manual Rate: 0.18; Premium Basis: Payroll per $100 remuneration; Schedule Credit Debit: 0%; State: MA"
-WC-0004,"","","","","$2,218","","Annual Payroll: $77,560; Class Code: 5190; Experience Mod: 1.04; Item Id: WC-0004; Location Number: 4; Manual Rate: 2.86; Premium Basis: Payroll per $100 remuneration; Schedule Credit Debit: 0%; State: MA"
-WC-0005,"","","","","$245","","Annual Payroll: $90,759; Class Code: 9082; Experience Mod: 1.04; Item Id: WC-0005; Location Number: 5; Manual Rate: 0.27; Premium Basis: Payroll per $100 remuneration; Schedule Credit Debit: 0%; State: RI"
-WC-0006,"","","","","$2,847","","Annual Payroll: $99,561; Class Code: 3632; Experience Mod: 1.04; Item Id: WC-0006; Location Number: 1; Manual Rate: 2.86; Premium Basis: Payroll per $100 remuneration; Schedule Credit Debit: 0%; State: ME"
-WC-0007,"","","","","$3,182","","Annual Payroll: $111,259; Class Code: 9015; Experience Mod: 1.04; Item Id: WC-0007; Location Number: 2; Manual Rate: 2.86; Premium Basis: Payroll per $100 remuneration; Schedule Credit Debit: 0%; State: NH"
-WC-0008,"","","","","$7,928","","Annual Payroll: $127,460; Class Code: 5606; Experience Mod: 1.04; Item Id: WC-0008; Location Number: 3; Manual Rate: 6.22; Premium Basis: Payroll per $100 remuneration; Schedule Credit Debit: 0%; State: VT"
+ARGENT BIRCH EMPLOYERS | WORKERS COMPENSATION AND EMPLOYERS LIABILITY                  YW700400
+Workers Compensation Classification Schedule - Continued 2           04/01/2026 - 04/01/2027
+____________________________________________________________________________________________________
+
+  Rows are keyed by state, class code, and location; payroll and premium appear on a later schedule.
+____________________________________________________________________________________________________
+
+RI             Schedule entry RI records class 9082; classification Restaurant NOC; loc 3.
+               CLASS 9082                                              CLASSIFICATION Restaurant NOC
+               LOC 3                                                   GOVERNING No
+____________________________________________________________________________________________________
+
+ME             Class: 3632. The remaining values below apply to this same scheduled item.
+               CLASSIFICATION Machine shop NOC                         LOC 4
+               GOVERNING No
+____________________________________________________________________________________________________
+
+NH             NH - Class: 9015 / Classification: Building operations by owner
+               Loc: 5 / Governing: No
+____________________________________________________________________________________________________
+
+VT             VT. Class is 5606. Classification is Contractor executive supervisor. Loc is 1. Governing is No.
+               CLASS 5606
+               CLASSIFICATION Contractor executive supervisor
+               LOC 1
+               GOVERNING No
+____________________________________________________________________________________________________
+
+CT             Schedule entry CT records class 8810; classification Clerical office employees; loc 2.
+               CLASS 8810                                              CLASSIFICATION Clerical office employees
+               LOC 2                                                   GOVERNING No
+____________________________________________________________________________________________________
+
+CT             Class: 8017. The remaining values below apply to this same scheduled item.
+               CLASSIFICATION Retail store - all employees             LOC 3
+               GOVERNING No
+____________________________________________________________________________________________________
+
+MA             MA - Class: 8742 / Classification: Outside salespersons
+               Loc: 4 / Governing: No
+____________________________________________________________________________________________________
+
+MA             MA. Class is 5190. Classification is Electrical wiring within buildings. Loc is 5. Governing is No.
+               CLASS 5190
+               CLASSIFICATION Electrical wiring within buildings
+               LOC 5
+               GOVERNING No
+____________________________________________________________________________________________________
+
+RI             Schedule entry RI records class 9082; classification Restaurant NOC; loc 1.
+               CLASS 9082                                              CLASSIFICATION Restaurant NOC
+               LOC 1                                                   GOVERNING No
+____________________________________________________________________________________________________
+
+ME             Class: 3632. The remaining values below apply to this same scheduled item.
+               CLASSIFICATION Machine shop NOC                         LOC 2
+               GOVERNING No
+____________________________________________________________________________________________________
+
+NH             NH - Class: 9015 / Classification: Building operations by owner
+               Loc: 3 / Governing: No
+____________________________________________________________________________________________________
+
+VT             VT. Class is 5606. Classification is Contractor executive supervisor. Loc is 4. Governing is No.
+               CLASS 5606
+               CLASSIFICATION Contractor executive supervisor
+               LOC 4
+               GOVERNING No
+____________________________________________________________________________________________________
+
+ ______________________________________________   _________________________________________________
+| Schedule Conditions                          | | Reading This Schedule                           |
+| Entries on this schedule apply only to the   | | Read scheduled lines together with the         |
+| coverage part, location, class, state, or    | | declarations and attached forms to determine   |
+| form reference shown on the same row.        | | the complete scheduled item.                   |
+|______________________________________________| |_________________________________________________|
+
+
+Blue Kettle Food Service, LLC                                                              WC DS 02
 
 # Page 23
 
-APPLIES TO,FORM / ENDORSEMENT,TITLE,EDITION,EFFECTIVE,PREMIUM,REVIEW,ADDITIONAL DETAIL
-"WC-0009","","","","","$8,654","","Annual Payroll: $139,137; Class Code: 8810; Experience Mod: 1.04; Item Id: WC-0009; Location Number: 4; Manual Rate: 6.22; Premium Basis: Payroll per $100 remuneration; Schedule Credit Debit: 0%; State: CT"
-"WC-0010","","","","","$6,651","","Annual Payroll: $152,897; Class Code: 8017; Experience Mod: 1.04; Item Id: WC-0010; Location Number: 5; Manual Rate: 4.35; Premium Basis: Payroll per $100 remuneration; Schedule Credit Debit: 0%; State: CT"
-"WC-0011","","","","","$6,875","","Annual Payroll: $158,051; Class Code: 8742; Experience Mod: 1.04; Item Id: WC-0011; Location Number: 1; Manual Rate: 4.35; Premium Basis: Payroll per $100 remuneration; Schedule Credit Debit: 0%; State: MA"
-"WC-0012","","","","","$462","","Annual Payroll: $171,391; Class Code: 5190; Experience Mod: 1.04; Item Id: WC-0012; Location Number: 2; Manual Rate: 0.27; Premium Basis: Payroll per $100 remuneration; Schedule Credit Debit: 0%; State: MA"
-"WC-0013","","","","","$2,119","","Annual Payroll: $184,316; Class Code: 9082; Experience Mod: 1.04; Item Id: WC-0013; Location Number: 3; Manual Rate: 1.15; Premium Basis: Payroll per $100 remuneration; Schedule Credit Debit: 0%; State: RI"
-"WC-0014","","","","","$12,184","","Annual Payroll: $195,887; Class Code: 3632; Experience Mod: 1.04; Item Id: WC-0014; Location Number: 4; Manual Rate: 6.22; Premium Basis: Payroll per $100 remuneration; Schedule Credit Debit: 0%; State: ME"
-"WC-0015","","","","","$1,550","","Annual Payroll: $209,573; Class Code: 9015; Experience Mod: 1.04; Item Id: WC-0015; Location Number: 5; Manual Rate: 0.74; Premium Basis: Payroll per $100 remuneration; Schedule Credit Debit: 0%; State: NH"
-"WC-0016","","","","","$6,389","","Annual Payroll: $223,415; Class Code: 5606; Experience Mod: 1.04; Item Id: WC-0016; Location Number: 1; Manual Rate: 2.86; Premium Basis: Payroll per $100 remuneration; Schedule Credit Debit: 0%; State: VT"
-"WC-0017","","","","","$6,695","","Annual Payroll: $234,108; Class Code: 8810; Experience Mod: 1.04; Item Id: WC-0017; Location Number: 2; Manual Rate: 2.86; Premium Basis: Payroll per $100 remuneration; Schedule Credit Debit: 0%; State: CT"
-"WC-0018","","","","","$6,856","","Annual Payroll: $239,729; Class Code: 8017; Experience Mod: 1.04; Item Id: WC-0018; Location Number: 3; Manual Rate: 2.86;"
+ARGENT BIRCH EMPLOYERS | WORKERS COMPENSATION AND EMPLOYERS LIABILITY
+Workers Compensation Classification Schedule - Continued 3
+YW700400
+04/01/2026 - 04/01/2027
+
+ Rows are keyed by state, class code, and location; payroll and premium appear on a later schedule.
+
+CT              Schedule entry CT records class 8810; classification Clerical office employees; loc 5.
+                CLASS 8810                                                 CLASSIFICATION Clerical office employees
+                LOC 5                                                      GOVERNING No
+
+CT              Class: 8017. The remaining values below apply to this same scheduled item.
+                CLASSIFICATION Retail store - all employees                LOC 1
+                GOVERNING No
+
+MA              MA - Class: 8742 / Classification: Outside salespersons
+                Loc: 2 / Governing: No
+
+MA              MA. Class is 5190. Classification is Electrical wiring within buildings. Loc is 3. Governing is No.
+                CLASS 5190
+                CLASSIFICATION Electrical wiring within buildings
+                LOC 3
+                GOVERNING No
+
+RI              Schedule entry RI records class 9082; classification Restaurant NOC; loc 4.
+                CLASS 9082                                                 CLASSIFICATION Restaurant NOC
+                LOC 4                                                      GOVERNING No
+
+ME              Class: 3632. The remaining values below apply to this same scheduled item.
+                CLASSIFICATION Machine shop NOC                            LOC 5
+                GOVERNING No
+
+NH              NH - Class: 9015 / Classification: Building operations by owner
+                Loc: 1 / Governing: No
+
+VT              VT. Class is 5606. Classification is Contractor executive supervisor. Loc is 2. Governing is No.
+                CLASS 5606
+                CLASSIFICATION Contractor executive supervisor
+                LOC 2
+                GOVERNING No
+
+CT              Schedule entry CT records class 8810; classification Clerical office employees; loc 3.
+                CLASS 8810                                                 CLASSIFICATION Clerical office employees
+                LOC 3                                                      GOVERNING No
+
+CT              Class: 8017. The remaining values below apply to this same scheduled item.
+                CLASSIFICATION Retail store - all employees                LOC 4
+                GOVERNING No
+
+MA              MA - Class: 8742 / Classification: Outside salespersons
+                Loc: 5 / Governing: No
+
+MA              MA. Class is 5190. Classification is Electrical wiring within buildings. Loc is 1. Governing is No.
+                CLASS 5190
+                CLASSIFICATION Electrical wiring within buildings
+                LOC 1
+                GOVERNING No
+
+
+ Schedule Conditions                                         Reading This Schedule
+ Entries on this schedule apply only to the coverage part,    Read scheduled lines together with the declarations and attached forms to
+ location, class, state, or form reference shown on the      determine the complete scheduled item.
+ same row.
+
+
+Blue Kettle Food Service, LLC                                                                             WC DS 02
 
 # Page 24
 
-APPLIES TO,FORM / ENDORSEMENT,TITLE,EDITION,EFFECTIVE,PREMIUM,REVIEW,ADDITIONAL DETAIL
-"","","","","","","","Premium Basis: Payroll per $100 remuneration; Schedule Credit Debit: 0%; State: CT"
-"WC-0019","","","","","$15,966","","Annual Payroll: $256,691; Class Code: 8742; Experience Mod: 1.04; Item Id: WC-0019; Location Number: 4; Manual Rate: 6.22; Premium Basis: Payroll per $100 remuneration; Schedule Credit Debit: 0%; State: MA"
-"WC-0020","","","","","$16,539","","Annual Payroll: $265,916; Class Code: 5190; Experience Mod: 1.04; Item Id: WC-0020; Location Number: 5; Manual Rate: 6.22; Premium Basis: Payroll per $100 remuneration; Schedule Credit Debit: 0%; State: MA"
+ARGENT BIRCH EMPLOYERS | WORKERS COMPENSATION AND EMPLOYERS LIABILITY                     YW700400
+Workers Compensation Classification Schedule - Continued 4               04/01/2026 - 04/01/2027
+____________________________________________________________________________________________________
 
-Policy packet, Page 15
+  Rows are keyed by state, class code, and location; payroll and premium appear on a later schedule.
+____________________________________________________________________________________________________
+
+RI             Schedule entry RI records class 9082; classification Restaurant NOC; loc 2.
+               CLASS 9082                                              CLASSIFICATION Restaurant NOC
+               LOC 2                                                   GOVERNING No
+____________________________________________________________________________________________________
+
+ME             Class: 3632. The remaining values below apply to this same scheduled item.
+               CLASSIFICATION Machine shop NOC                         LOC 3
+               GOVERNING No
+____________________________________________________________________________________________________
+
+NH             NH - Class: 9015 / Classification: Building operations by owner
+               Loc: 4 / Governing: No
+____________________________________________________________________________________________________
+
+VT             VT. Class is 5606. Classification is Contractor executive supervisor. Loc is 5. Governing is No.
+               CLASS 5606
+               CLASSIFICATION Contractor executive supervisor
+               LOC 5
+               GOVERNING No
+____________________________________________________________________________________________________
+
+CT             Schedule entry CT records class 8810; classification Clerical office employees; loc 1.
+               CLASS 8810                                              CLASSIFICATION Clerical office employees
+               LOC 1                                                   GOVERNING No
+____________________________________________________________________________________________________
+
+CT             Class: 8017. The remaining values below apply to this same scheduled item.
+               CLASSIFICATION Retail store - all employees             LOC 2
+               GOVERNING No
+____________________________________________________________________________________________________
+
+MA             MA - Class: 8742 / Classification: Outside salespersons
+               Loc: 3 / Governing: No
+____________________________________________________________________________________________________
+
+MA             MA. Class is 5190. Classification is Electrical wiring within buildings. Loc is 4. Governing is No.
+               CLASS 5190
+               CLASSIFICATION Electrical wiring within buildings
+               LOC 4
+               GOVERNING No
+____________________________________________________________________________________________________
+
+RI             Schedule entry RI records class 9082; classification Restaurant NOC; loc 5.
+               CLASS 9082                                              CLASSIFICATION Restaurant NOC
+               LOC 5                                                   GOVERNING No
+____________________________________________________________________________________________________
+
+ME             Class: 3632. The remaining values below apply to this same scheduled item.
+               CLASSIFICATION Machine shop NOC                         LOC 1
+               GOVERNING No
+____________________________________________________________________________________________________
+
+NH             NH - Class: 9015 / Classification: Building operations by owner
+               Loc: 2 / Governing: No
+____________________________________________________________________________________________________
+
+VT             VT. Class is 5606. Classification is Contractor executive supervisor. Loc is 3. Governing is No.
+               CLASS 5606
+               CLASSIFICATION Contractor executive supervisor
+               LOC 3
+               GOVERNING No
+____________________________________________________________________________________________________
+
+__________________________________________________   _______________________________________________
+|                                                |   |                                             |
+|  Schedule Conditions                           |   |  Reading This Schedule                      |
+|  Entries on this schedule apply only to the    |   |  Read scheduled lines together with the     |
+|  coverage part, location, class, state, or     |   |  declarations and attached forms to         |
+|  form reference shown on the same row.         |   |  determine the complete scheduled item.     |
+|________________________________________________|   |_____________________________________________|
+
+
+
+Blue Kettle Food Service, LLC                                                                WC DS 02
 
 # Page 25
 
-"APPLIES TO","FORM / ENDORSEMENT","TITLE","EDITION","EFFECTIVE","PREMIUM","REVIEW","ADDITIONAL DETAIL"
-"WC-0021","","","","","$2,055","","Annual Payroll: $277,752; Class Code: 9082; Experience Mod: 1.04; Item Id: WC-0021; Location Number: 1; Manual Rate: 0.74; Premium Basis: Payroll per $100 remuneration; Schedule Credit Debit: 0%; State: RI"
-"WC-0022","","","","","$1,212","","Annual Payroll: $288,720; Class Code: 3632; Experience Mod: 1.04; Item Id: WC-0022; Location Number: 2; Manual Rate: 0.42; Premium Basis: Payroll per $100 remuneration; Schedule Credit Debit: 0%; State: ME"
-"WC-0023","","","","","$2,195","","Annual Payroll: $296,731; Class Code: 9015; Experience Mod: 1.04; Item Id: WC-0023; Location Number: 3; Manual Rate: 0.74; Premium Basis: Payroll per $100 remuneration; Schedule Credit Debit: 0%; State: NH"
-"WC-0024","","","","","$19,432","","Annual Payroll: $312,419; Class Code: 5606; Experience Mod: 1.04; Item Id: WC-0024; Location Number: 4; Manual Rate: 6.22; Premium Basis: Payroll per $100 remuneration; Schedule Credit Debit: 0%; State: VT"
-"WC-0025","","","","","$20,120","","Annual Payroll: $323,486; Class Code: 8810; Experience Mod: 1.04; Item Id: WC-0025; Location Number: 5; Manual Rate: 6.22; Premium Basis: Payroll per $100 remuneration; Schedule Credit Debit: 0%; State: CT"
-"WC-0026","","","","","$1,402","","Annual Payroll: $333,913; Class Code: 8017; Experience Mod: 1.04; Item Id: WC-0026; Location Number: 1; Manual Rate: 0.42; Premium Basis: Payroll per $100 remuneration; Schedule Credit Debit: 0%; State: CT"
-"WC-0027","","","","","$628","","Annual Payroll: $349,084; Class Code: 8742; Experience Mod: 1.04; Item Id: WC-0027; Location Number: 2; Manual Rate: 0.18; Premium Basis: Payroll per $100 remuneration; Schedule Credit Debit: 0%; State: MA"
-"WC-0028","","","","","$955","","Annual Payroll: $353,824; Class Code: 5190; Experience Mod: 1.04; Item Id: WC-0028; Location Number: 3; Manual Rate: 0.27; Premium Basis: Payroll per $100 remuneration; Schedule Credit Debit: 0%; State: MA"
+ARGENT BIRCH EMPLOYERS | WORKERS COMPENSATION AND EMPLOYERS LIABILITY
+Workers Compensation Classification Schedule - Continued 5
+                                                                                          YW700400
+                                                                                   04/01/2026 - 04/01/2027
+
+  Rows are keyed by state, class code, and location; payroll and premium appear on a later schedule.
+
+CT            Schedule entry CT records class 8810; classification Clerical office employees; loc 4.
+              CLASS 8810                                      CLASSIFICATION Clerical office employees
+              LOC 4                                           GOVERNING No
+
+CT            Class: 8017. The remaining values below apply to this same scheduled item.
+              CLASSIFICATION Retail store - all employees     LOC 5
+              GOVERNING No
+
+MA            MA - Class: 8742 / Classification: Outside salespersons
+              Loc: 1 / Governing: No
+
+MA            MA. Class is 5190. Classification is Electrical wiring within buildings. Loc is 2. Governing is No.
+              CLASS 5190
+              CLASSIFICATION Electrical wiring within buildings
+              LOC 2
+              GOVERNING No
+
+RI            Schedule entry RI records class 9082; classification Restaurant NOC; loc 3.
+              CLASS 9082                                      CLASSIFICATION Restaurant NOC
+              LOC 3                                           GOVERNING No
+
+ME            Class: 3632. The remaining values below apply to this same scheduled item.
+              CLASSIFICATION Machine shop NOC                 LOC 4
+              GOVERNING No
+
+NH            NH - Class: 9015 / Classification: Building operations by owner
+              Loc: 5 / Governing: No
+
+VT            VT. Class is 5606. Classification is Contractor executive supervisor. Loc is 1. Governing is No.
+              CLASS 5606
+              CLASSIFICATION Contractor executive supervisor
+              LOC 1
+              GOVERNING No
+
+CT            Schedule entry CT records class 8810; classification Clerical office employees; loc 2.
+              CLASS 8810                                      CLASSIFICATION Clerical office employees
+              LOC 2                                           GOVERNING No
+
+CT            Class: 8017. The remaining values below apply to this same scheduled item.
+              CLASSIFICATION Retail store - all employees     LOC 3
+              GOVERNING No
+
+MA            MA - Class: 8742 / Classification: Outside salespersons
+              Loc: 4 / Governing: No
+
+MA            MA. Class is 5190. Classification is Electrical wiring within buildings. Loc is 5. Governing is No.
+              CLASS 5190
+              CLASSIFICATION Electrical wiring within buildings
+              LOC 5
+              GOVERNING No
+
+
+ Schedule Conditions                                           Reading This Schedule
+ Entries on this schedule apply only to the coverage part,     Read scheduled lines together with the declarations and attached forms to
+ location, class, state, or form reference shown on the        determine the complete scheduled item.
+ same row.
+
+
+Blue Kettle Food Service, LLC                                                                                  WC DS 02
 
 # Page 26
 
-APPLIES TO,FORM / ENDORSEMENT,TITLE,EDITION,EFFECTIVE,PREMIUM,REVIEW,ADDITIONAL DETAIL
-WC-0029,,,,"","$1,542","","Annual Payroll: $367,301; Class Code: 9082; Experience Mod: 1.04; Item Id: WC-0029; Location Number: 4; Manual Rate: 0.42; Premium Basis: Payroll per $100 remuneration; Schedule Credit Debit: 0%; State: RI"
-WC-0030,,,,"","$4,348","","Annual Payroll: $378,170; Class Code: 3632; Experience Mod: 1.04; Item Id: WC-0030; Location Number: 5; Manual Rate: 1.15; Premium Basis: Payroll per $100 remuneration; Schedule Credit Debit: 0%; State: ME"
-WC-0031,,,,"","$11,197","","Annual Payroll: $391,534; Class Code: 9015; Experience Mod: 1.04; Item Id: WC-0031; Location Number: 1; Manual Rate: 2.86; Premium Basis: Payroll per $100 remuneration; Schedule Credit Debit: 0%; State: NH"
-WC-0032,,,,"","$17,601","","Annual Payroll: $404,635; Class Code: 5606; Experience Mod: 1.04; Item Id: WC-0032; Location Number: 2; Manual Rate: 4.35; Premium Basis: Payroll per $100 remuneration; Schedule Credit Debit: 0%; State: VT"
-WC-0033,,,,"","$4,790","","Annual Payroll: $416,547; Class Code: 8810; Experience Mod: 1.04; Item Id: WC-0033; Location Number: 3; Manual Rate: 1.15; Premium Basis: Payroll per $100 remuneration; Schedule Credit Debit: 0%; State: CT"
-WC-0034,,,,"","$18,589","","Annual Payroll: $427,355; Class Code: 8017; Experience Mod: 1.04; Item Id: WC-0034; Location Number: 4; Manual Rate: 4.35; Premium Basis: Payroll per $100 remuneration; Schedule Credit Debit: 0%; State: CT"
-WC-0035,,,,"","$1,177","","Annual Payroll: $435,963; Class Code: 8742; Experience Mod: 1.04; Item Id: WC-0035; Location Number: 5; Manual Rate: 0.27; Premium Basis: Payroll per $100 remuneration; Schedule Credit Debit: 0%; State: MA"
-WC-0036,,,,"","$1,224","","Annual Payroll: $453,438; Class Code: 5190; Experience Mod: 1.04; Item Id: WC-0036; Location Number: 1; Manual Rate: 0.27; Premium Basis: Payroll per $100 remuneration; Schedule Credit Debit: 0%; State: MA"
-WC-0037,,,,"","$28,831","","Annual Payroll: $463,529; Class Code: 9082; Experience Mod: 1.04; Item Id: WC-0037; Location Number: 2; Manual Rate: 6.22; Premium Basis: Payroll per $100 remuneration; Schedule Credit Debit: 0%; State: RI"
-WC-0038,,,,"","$3,522","","Annual Payroll: $475,950; Class Code: 3632; Experience Mod: 1.04; Item Id: WC-0038; Location Number: 3; Manual Rate: 0.74;"
+ARGENT BIRCH EMPLOYERS | WORKERS COMPENSATION AND EMPLOYERS LIABILITY                  YW700400
+Payroll and Rate Schedule                                               04/01/2026 - 04/01/2027
+____________________________________________________________________________________________________
+
+CT             Schedule entry CT records class 8810; loc 1; payroll $45,136.
+               CLASS 8810                                              LOC 1
+               PAYROLL $45,136                                         RATE 0.42
+               ESTIMATED PREMIUM $189
+____________________________________________________________________________________________________
+
+CT             Class: 8017. The remaining values below apply to this same scheduled item.
+               LOC 2                                                   PAYROLL $54,124
+               RATE 0.74                                               ESTIMATED PREMIUM $400
+____________________________________________________________________________________________________
+
+MA             MA - Class: 8742 / Loc: 3 / Payroll: $70,826
+               Rate: 0.18 / Estimated Premium: $127
+____________________________________________________________________________________________________
+
+MA             MA. Class is 5190. Loc is 4. Payroll is $77,560. Rate is 2.86. Estimated Premium is $2,218.
+               CLASS 5190
+               LOC 4
+               PAYROLL $77,560
+               RATE 2.86
+               ESTIMATED PREMIUM $2,218
+____________________________________________________________________________________________________
+
+RI             Schedule entry RI records class 9082; loc 5; payroll $90,759.
+               CLASS 9082                                              LOC 5
+               PAYROLL $90,759                                         RATE 0.27
+               ESTIMATED PREMIUM $245
+____________________________________________________________________________________________________
+
+ME             Class: 3632. The remaining values below apply to this same scheduled item.
+               LOC 1                                                   PAYROLL $99,561
+               RATE 2.86                                               ESTIMATED PREMIUM $2,847
+____________________________________________________________________________________________________
+
+NH             NH - Class: 9015 / Loc: 2 / Payroll: $111,259
+               Rate: 2.86 / Estimated Premium: $3,182
+____________________________________________________________________________________________________
+
+VT             VT. Class is 5606. Loc is 3. Payroll is $127,460. Rate is 6.22. Estimated Premium is $7,928.
+               CLASS 5606
+               LOC 3
+               PAYROLL $127,460
+               RATE 6.22
+               ESTIMATED PREMIUM $7,928
+____________________________________________________________________________________________________
+
+CT             Schedule entry CT records class 8810; loc 4; payroll $139,137.
+               CLASS 8810                                              LOC 4
+               PAYROLL $139,137                                        RATE 6.22
+               ESTIMATED PREMIUM $8,654
+____________________________________________________________________________________________________
+
+CT             Class: 8017. The remaining values below apply to this same scheduled item.
+               LOC 5                                                   PAYROLL $152,897
+               RATE 4.35                                               ESTIMATED PREMIUM $6,651
+____________________________________________________________________________________________________
+
+MA             MA - Class: 8742 / Loc: 1 / Payroll: $158,051
+               Rate: 4.35 / Estimated Premium: $6,875
+____________________________________________________________________________________________________
+
+MA             MA. Class is 5190. Loc is 2. Payroll is $171,391. Rate is 0.27. Estimated Premium is $462.
+               CLASS 5190
+               LOC 2
+               PAYROLL $171,391
+               RATE 0.27
+               ESTIMATED PREMIUM $462
+____________________________________________________________________________________________________
+
+ __________________________________________________   _________________________________________________
+| Schedule Conditions                              | | Reading This Schedule                           |
+| Entries on this schedule apply only to the       | | Read scheduled lines together with the          |
+| coverage part, location, class, state, or form   | | declarations and attached forms to determine   |
+| reference shown on the same row.                 | | the complete scheduled item.                    |
+|__________________________________________________| |_________________________________________________|
+
+
+Blue Kettle Food Service, LLC                                                                  WC DS 03
 
 # Page 27
 
-APPLIES TO,FORM / ENDORSEMENT,TITLE,EDITION,EFFECTIVE,PREMIUM,REVIEW,ADDITIONAL DETAIL
-,,,,,,,"Premium Basis: Payroll per $100 remuneration; Schedule Credit Debit: 0%; State: ME"
-WC-0039,,,,,"$21,113",,"Annual Payroll: $485,364; Class Code: 9015; Experience Mod: 1.04; Item Id: WC-0039; Location Number: 4; Manual Rate: 4.35; Premium Basis: Payroll per $100 remuneration; Schedule Credit Debit: 0%; State: NH"
-WC-0040,,,,,"$21,537",,"Annual Payroll: $495,123; Class Code: 5606; Experience Mod: 1.04; Item Id: WC-0040; Location Number: 5; Manual Rate: 4.35; Premium Basis: Payroll per $100 remuneration; Schedule Credit Debit: 0%; State: VT"
+ARGENT BIRCH EMPLOYERS | WORKERS COMPENSATION AND EMPLOYERS LIABILITY                  YW700400
+Payroll and Rate Schedule - Continued 2                              04/01/2026 - 04/01/2027
+____________________________________________________________________________________________________
 
-Policy packet                                                                                                                            Page 16
+RI             Schedule entry RI records class 9082; loc 3; payroll $184,316.
+               CLASS 9082                                              LOC 3
+               PAYROLL $184,316                                        RATE 1.15
+               ESTIMATED PREMIUM $2,119
+____________________________________________________________________________________________________
+
+ME             Class: 3632. The remaining values below apply to this same scheduled item.
+               LOC 4                                                   PAYROLL $195,887
+               RATE 6.22                                               ESTIMATED PREMIUM $12,184
+____________________________________________________________________________________________________
+
+NH             NH - Class: 9015 / Loc: 5 / Payroll: $209,573
+               Rate: 0.74 / Estimated Premium: $1,550
+____________________________________________________________________________________________________
+
+VT             VT. Class is 5606. Loc is 1. Payroll is $223,415. Rate is 2.86. Estimated Premium is $6,389.
+               CLASS 5606
+               LOC 1
+               PAYROLL $223,415
+               RATE 2.86
+               ESTIMATED PREMIUM $6,389
+____________________________________________________________________________________________________
+
+CT             Schedule entry CT records class 8810; loc 2; payroll $234,108.
+               CLASS 8810                                              LOC 2
+               PAYROLL $234,108                                        RATE 2.86
+               ESTIMATED PREMIUM $6,695
+____________________________________________________________________________________________________
+
+CT             Class: 8017. The remaining values below apply to this same scheduled item.
+               LOC 3                                                   PAYROLL $239,729
+               RATE 2.86                                               ESTIMATED PREMIUM $6,856
+____________________________________________________________________________________________________
+
+MA             MA - Class: 8742 / Loc: 4 / Payroll: $256,691
+               Rate: 6.22 / Estimated Premium: $15,966
+____________________________________________________________________________________________________
+
+MA             MA. Class is 5190. Loc is 5. Payroll is $265,916. Rate is 6.22. Estimated Premium is $16,539.
+               CLASS 5190
+               LOC 5
+               PAYROLL $265,916
+               RATE 6.22
+               ESTIMATED PREMIUM $16,539
+____________________________________________________________________________________________________
+
+RI             Schedule entry RI records class 9082; loc 1; payroll $277,752.
+               CLASS 9082                                              LOC 1
+               PAYROLL $277,752                                        RATE 0.74
+               ESTIMATED PREMIUM $2,055
+____________________________________________________________________________________________________
+
+ME             Class: 3632. The remaining values below apply to this same scheduled item.
+               LOC 2                                                   PAYROLL $288,720
+               RATE 0.42                                               ESTIMATED PREMIUM $1,212
+____________________________________________________________________________________________________
+
+NH             NH - Class: 9015 / Loc: 3 / Payroll: $296,731
+               Rate: 0.74 / Estimated Premium: $2,195
+____________________________________________________________________________________________________
+
+VT             VT. Class is 5606. Loc is 4. Payroll is $312,419. Rate is 6.22. Estimated Premium is $19,432.
+               CLASS 5606
+               LOC 4
+               PAYROLL $312,419
+               RATE 6.22
+               ESTIMATED PREMIUM $19,432
+____________________________________________________________________________________________________
+
+ _______________________________________________     _______________________________________________
+|                                               |   |                                               |
+| Schedule Conditions                           |   | Reading This Schedule                         |
+| Entries on this schedule apply only to the    |   | Read scheduled lines together with the        |
+| coverage part, location, class, state, or     |   | declarations and attached forms to            |
+| form reference shown on the same row.         |   | determine the complete scheduled item.        |
+|_______________________________________________|   |_______________________________________________|
+
+
+Blue Kettle Food Service, LLC                                                                WC DS 03_
+
 
 # Page 28
 
-POLICY PACKET | POLICY COPY 1F7EA01
+ARGENT BIRCH EMPLOYERS | WORKERS COMPENSATION AND EMPLOYERS LIABILITY                  YW700400
+Payroll and Rate Schedule - Continued 3                                04/01/2026 - 04/01/2027
+_____________________________________________________________________________________________________
+CT              Schedule entry CT records class 8810; loc 5; payroll $323,486.
+                CLASS 8810                                            LOC 5
+                PAYROLL $323,486                                      RATE 6.22
+                ESTIMATED PREMIUM $20,120
+_____________________________________________________________________________________________________
+CT              Class: 8017. The remaining values below apply to this same scheduled item.
+                LOC 1                                                 PAYROLL $333,913
+                RATE 0.42                                             ESTIMATED PREMIUM $1,402
+_____________________________________________________________________________________________________
+MA              MA - Class: 8742 / Loc: 2 / Payroll: $349,084
+                Rate: 0.18 / Estimated Premium: $628
+_____________________________________________________________________________________________________
+MA              MA. Class is 5190. Loc is 3. Payroll is $353,824. Rate is 0.27. Estimated Premium is $955.
+                CLASS 5190
+                LOC 3
+                PAYROLL $353,824
+                RATE 0.27
+                ESTIMATED PREMIUM $955
+_____________________________________________________________________________________________________
+RI              Schedule entry RI records class 9082; loc 4; payroll $367,301.
+                CLASS 9082                                            LOC 4
+                PAYROLL $367,301                                      RATE 0.42
+                ESTIMATED PREMIUM $1,542
+_____________________________________________________________________________________________________
+ME              Class: 3632. The remaining values below apply to this same scheduled item.
+                LOC 5                                                 PAYROLL $378,170
+                RATE 1.15                                             ESTIMATED PREMIUM $4,348
+_____________________________________________________________________________________________________
+NH              NH - Class: 9015 / Loc: 1 / Payroll: $391,534
+                Rate: 2.86 / Estimated Premium: $11,197
+_____________________________________________________________________________________________________
+VT              VT. Class is 5606. Loc is 2. Payroll is $404,635. Rate is 4.35. Estimated Premium is $17,601.
+                CLASS 5606
+                LOC 2
+                PAYROLL $404,635
+                RATE 4.35
+                ESTIMATED PREMIUM $17,601
+_____________________________________________________________________________________________________
+CT              Schedule entry CT records class 8810; loc 3; payroll $416,547.
+                CLASS 8810                                            LOC 3
+                PAYROLL $416,547                                      RATE 1.15
+                ESTIMATED PREMIUM $4,790
+_____________________________________________________________________________________________________
+CT              Class: 8017. The remaining values below apply to this same scheduled item.
+                LOC 4                                                 PAYROLL $427,355
+                RATE 4.35                                             ESTIMATED PREMIUM $18,589
+_____________________________________________________________________________________________________
+MA              MA - Class: 8742 / Loc: 5 / Payroll: $435,963
+                Rate: 0.27 / Estimated Premium: $1,177
+_____________________________________________________________________________________________________
+MA              MA. Class is 5190. Loc is 1. Payroll is $453,438. Rate is 0.27. Estimated Premium is $1,224.
+                CLASS 5190
+                LOC 1
+                PAYROLL $453,438
+                RATE 0.27
+                ESTIMATED PREMIUM $1,224
+_____________________________________________________________________________________________________
 
-# Forms, Endorsements, and Premiums
+ __________________________________________________    __________________________________________________
+| Schedule Conditions                              |  | Reading This Schedule                            |
+| Entries on this schedule apply only to the       |  | Read scheduled lines together with the           |
+| coverage part, location, class, state, or form   |  | declarations and attached forms to determine     |
+| reference shown on the same row.                 |  | the complete scheduled item.                     |
+|__________________________________________________|  |__________________________________________________|
 
-### Policy Premium Item
-
-| APPLIES TO | FORM / ENDORSEMENT | TITLE | EDITION | EFFECTIVE | PREMIUM | REVIEW | ADDITIONAL DETAIL |
-|---|---|---|---|---|---|---|---|
-| WC-0041 | | | | | $5,774 | | Annual Payroll: $502,147; Class Code: 8810; Experience Mod: 1.04; Item Id: WC-0041; Location Number: 1; Manual Rate: 1.15; Premium Basis: Payroll per $100 remuneration; Schedule Credit Debit: 0%; State: CT |
-| WC-0042 | | | | | $1,388 | | Annual Payroll: $514,119; Class Code: 8017; Experience Mod: 1.04; Item Id: WC-0042; Location Number: 2; Manual Rate: 0.27; Premium Basis: Payroll per $100 remuneration; Schedule Credit Debit: 0%; State: CT |
-| WC-0043 | | | | | $1,438 | | Annual Payroll: $532,778; Class Code: 8742; Experience Mod: 1.04; Item Id: WC-0043; Location Number: 3; Manual Rate: 0.27; Premium Basis: Payroll per $100 remuneration; Schedule Credit Debit: 0%; State: MA |
-| WC-0044 | | | | | $23,708 | | Annual Payroll: $545,022; Class Code: 5190; Experience Mod: 1.04; Item Id: WC-0044; Location Number: 4; Manual Rate: 4.35; Premium Basis: Payroll per $100 remuneration; Schedule Credit Debit: 0%; State: MA |
-| WC-0045 | | | | | $4,117 | | Annual Payroll: $556,426; Class Code: 9082; Experience Mod: 1.04; Item Id: WC-0045; Location Number: 5; Manual Rate: 0.74; Premium Basis: Payroll per $100 remuneration; Schedule Credit Debit: 0%; State: RI |
-| WC-0046 | | | | | $35,297 | | Annual Payroll: $567,480; Class Code: 3632; Experience Mod: 1.04; Item Id: WC-0046; Location Number: 1; Manual Rate: 6.22; Premium Basis: Payroll per $100 remuneration; Schedule Credit Debit: 0%; State: ME |
-| WC-0047 | | | | | $1,030 | | Annual Payroll: $572,285; Class Code: 9015; Experience Mod: 1.04; Item Id: WC-0047; Location Number: 2; Manual Rate: 0.18; Premium Basis: Payroll per $100 remuneration; Schedule Credit Debit: 0%; State: NH |
-| WC-0048 | | | | | $6,722 | | Annual Payroll: $584,565; Class Code: 5606; Experience Mod: 1.04; Item Id: WC-0048; Location Number: 3; Manual Rate: 1.15; Premium Basis: Payroll per $100 remuneration; Schedule Credit Debit: 0%; State: VT |
+Blue Kettle Food Service, LLC                                                                 WC DS 03
 
 # Page 29
 
-APPLIES TO,FORM / ENDORSEMENT,TITLE,EDITION,EFFECTIVE,PREMIUM,REVIEW,ADDITIONAL DETAIL
-WC-0049,,,,,"$2,498",,"Annual Payroll:
-$594,857; Class Code:
-8810; Experience Mod:
-1.04; Item Id: WC-0049;
-Location Number: 4;
-Manual Rate: 0.42;
-Premium Basis: Payroll
-per $100 remuneration;
-Schedule Credit Debit:
-0%; State: CT"
-WC-0050,,,,,"$26,607",,"Annual Payroll:
-$611,668; Class Code:
-8017; Experience Mod:
-1.04; Item Id: WC-0050;
-Location Number: 5;
-Manual Rate: 4.35;
-Premium Basis: Payroll
-per $100 remuneration;
-Schedule Credit Debit:
-0%; State: CT"
-WC-0051,,,,,"$4,606",,"Annual Payroll:
-$622,528; Class Code:
-8742; Experience Mod:
-1.04; Item Id: WC-0051;
-Location Number: 1;
-Manual Rate: 0.74;
-Premium Basis: Payroll
-per $100 remuneration;
-Schedule Credit Debit:
-0%; State: MA"
-WC-0052,,,,,"$4,691",,"Annual Payroll:
-$633,943; Class Code:
-5190; Experience Mod:
-1.04; Item Id: WC-0052;
-Location Number: 2;
-Manual Rate: 0.74;
-Premium Basis: Payroll
-per $100 remuneration;
-Schedule Credit Debit:
-0%; State: MA"
-WC-0053,,,,,"$27,943",,"Annual Payroll:
-$642,370; Class Code:
-9082; Experience Mod:
-1.04; Item Id: WC-0053;
-Location Number: 3;
-Manual Rate: 4.35;
-Premium Basis: Payroll
-per $100 remuneration;
-Schedule Credit Debit:
-0%; State: RI"
-WC-0054,,,,,"$2,760",,"Annual Payroll:
-$657,159; Class Code:
-3632; Experience Mod:
-1.04; Item Id: WC-0054;
-Location Number: 4;
-Manual Rate: 0.42;
-Premium Basis: Payroll
-per $100 remuneration;
-Schedule Credit Debit:
-0%; State: ME"
-WC-0055,,,,,"$18,975",,"Annual Payroll:
-$663,479; Class Code:
-9015; Experience Mod:
-1.04; Item Id: WC-0055;
-Location Number: 5;
-Manual Rate: 2.86;
-Premium Basis: Payroll
-per $100 remuneration;
-Schedule Credit Debit:
-0%; State: NH"
-WC-0056,,,,,"$29,378",,"Annual Payroll:
-$675,365; Class Code:
-5606; Experience Mod:
-1.04; Item Id: WC-0056;
-Location Number: 1;
-Manual Rate: 4.35;
-Premium Basis: Payroll
-per $100 remuneration;
-Schedule Credit Debit:
-0%; State: VT"
-WC-0057,,,,,"$19,640",,"Annual Payroll:
-$686,739; Class Code:
-8810; Experience Mod:
-1.04; Item Id: WC-0057;
-Location Number: 2;
-Manual Rate: 2.86;
-Premium Basis: Payroll
-per $100 remuneration;
-Schedule Credit Debit:
-0%; State: CT"
-WC-0058,,,,,"$1,905",,"Annual Payroll:
-$705,887; Class Code:
-8017; Experience Mod:
-1.04; Item Id: WC-0058;
-Location Number: 3;
-Manual Rate: 0.27;"
+ARGENT BIRCH EMPLOYERS | WORKERS COMPENSATION AND EMPLOYERS LIABILITY
+Payroll and Rate Schedule - Continued 4
+                                                                                YW700400
+                                                                       04/01/2026 - 04/01/2027
+
+RI              Schedule entry RI records class 9082; loc 2; payroll $463,529.
+                CLASS 9082                                              LOC 2
+                PAYROLL $463,529                                        RATE 6.22
+                ESTIMATED PREMIUM $28,831
+
+ME              Class: 3632. The remaining values below apply to this same scheduled item.
+                LOC 3                                                   PAYROLL $475,950
+                RATE 0.74                                               ESTIMATED PREMIUM $3,522
+
+NH              NH - Class: 9015 / Loc: 4 / Payroll: $485,364
+                Rate: 4.35 / Estimated Premium: $21,113
+
+VT              VT. Class is 5606. Loc is 5. Payroll is $495,123. Rate is 4.35. Estimated Premium is $21,537.
+                CLASS 5606
+                LOC 5
+                PAYROLL $495,123
+                RATE 4.35
+                ESTIMATED PREMIUM $21,537
+
+CT              Schedule entry CT records class 8810; loc 1; payroll $502,147.
+                CLASS 8810                                              LOC 1
+                PAYROLL $502,147                                        RATE 1.15
+                ESTIMATED PREMIUM $5,774
+
+CT              Class: 8017. The remaining values below apply to this same scheduled item.
+                LOC 2                                                   PAYROLL $514,119
+                RATE 0.27                                               ESTIMATED PREMIUM $1,388
+
+MA              MA - Class: 8742 / Loc: 3 / Payroll: $532,778
+                Rate: 0.27 / Estimated Premium: $1,438
+
+MA              MA. Class is 5190. Loc is 4. Payroll is $545,022. Rate is 4.35. Estimated Premium is $23,708.
+                CLASS 5190
+                LOC 4
+                PAYROLL $545,022
+                RATE 4.35
+                ESTIMATED PREMIUM $23,708
+
+RI              Schedule entry RI records class 9082; loc 5; payroll $556,426.
+                CLASS 9082                                              LOC 5
+                PAYROLL $556,426                                        RATE 0.74
+                ESTIMATED PREMIUM $4,117
+
+ME              Class: 3632. The remaining values below apply to this same scheduled item.
+                LOC 1                                                   PAYROLL $567,480
+                RATE 6.22                                               ESTIMATED PREMIUM $35,297
+
+NH              NH - Class: 9015 / Loc: 2 / Payroll: $572,285
+                Rate: 0.18 / Estimated Premium: $1,030
+
+VT              VT. Class is 5606. Loc is 3. Payroll is $584,565. Rate is 1.15. Estimated Premium is $6,722.
+                CLASS 5606
+                LOC 3
+                PAYROLL $584,565
+                RATE 1.15
+                ESTIMATED PREMIUM $6,722
+
++-------------------------------------------------------------+  +--------------------------------------------------------------+
+| Schedule Conditions                                         |  | Reading This Schedule                                        |
+| Entries on this schedule apply only to the coverage part,   |  | Read scheduled lines together with the declarations and      |
+| location, class, state, or form reference shown on the      |  | attached forms to determine the complete scheduled item.      |
+| same row.                                                   |  |                                                              |
++-------------------------------------------------------------+  +--------------------------------------------------------------+
+
+Blue Kettle Food Service, LLC                                                                           WC DS 03
 
 # Page 30
 
-"APPLIES TO","FORM / ENDORSEMENT","TITLE","EDITION","EFFECTIVE","PREMIUM","REVIEW","ADDITIONAL DETAIL"
-"","","","","","","","Premium Basis: Payroll
-per $100 remuneration;
-Schedule Credit Debit:
-0%; State: CT"
-"WC-0059","","","","","$1,290","","Annual Payroll:
-$716,927; Class Code:
-8742; Experience Mod:
-1.04; Item Id: WC-0059;
-Location Number: 4;
-Manual Rate: 0.18;
-Premium Basis: Payroll
-per $100 remuneration;
-Schedule Credit Debit:
-0%; State: MA"
-"WC-0060","","","","","$1,304","","Annual Payroll:
-$724,745; Class Code:
-5190; Experience Mod:
-1.04; Item Id: WC-0060;
-Location Number: 5;
-Manual Rate: 0.18;
-Premium Basis: Payroll
-per $100 remuneration;
-Schedule Credit Debit:
-0%; State: MA"
+ARGENT BIRCH EMPLOYERS | WORKERS COMPENSATION AND EMPLOYERS LIABILITY
+Payroll and Rate Schedule - Continued 5
 
-Policy packet                                                                                                                                           Page 17
+                                                                                        YW700400
+                                                                                 04/01/2026 - 04/01/2027
+
+CT               Schedule entry CT records class 8810; loc 4; payroll $594,857.
+                 CLASS 8810                                               LOC 4
+                 PAYROLL $594,857                                         RATE 0.42
+                 ESTIMATED PREMIUM $2,498
+
+CT               Class: 8017. The remaining values below apply to this same scheduled item.
+                 LOC 5                                                    PAYROLL $611,668
+                 RATE 4.35                                                ESTIMATED PREMIUM $26,607
+
+MA               MA - Class: 8742 / Loc: 1 / Payroll: $622,528
+                 Rate: 0.74 / Estimated Premium: $4,606
+
+MA               MA. Class is 5190. Loc is 2. Payroll is $633,943. Rate is 0.74. Estimated Premium is $4,691.
+                 CLASS 5190
+                 LOC 2
+                 PAYROLL $633,943
+                 RATE 0.74
+                 ESTIMATED PREMIUM $4,691
+
+RI               Schedule entry RI records class 9082; loc 3; payroll $642,370.
+                 CLASS 9082                                               LOC 3
+                 PAYROLL $642,370                                         RATE 4.35
+                 ESTIMATED PREMIUM $27,943
+
+ME               Class: 3632. The remaining values below apply to this same scheduled item.
+                 LOC 4                                                    PAYROLL $657,159
+                 RATE 0.42                                                ESTIMATED PREMIUM $2,760
+
+NH               NH - Class: 9015 / Loc: 5 / Payroll: $663,479
+                 Rate: 2.86 / Estimated Premium: $18,975
+
+VT               VT. Class is 5606. Loc is 1. Payroll is $675,365. Rate is 4.35. Estimated Premium is $29,378.
+                 CLASS 5606
+                 LOC 1
+                 PAYROLL $675,365
+                 RATE 4.35
+                 ESTIMATED PREMIUM $29,378
+
+CT               Schedule entry CT records class 8810; loc 2; payroll $686,739.
+                 CLASS 8810                                               LOC 2
+                 PAYROLL $686,739                                         RATE 2.86
+                 ESTIMATED PREMIUM $19,640
+
+CT               Class: 8017. The remaining values below apply to this same scheduled item.
+                 LOC 3                                                    PAYROLL $705,887
+                 RATE 0.27                                                ESTIMATED PREMIUM $1,905
+
+MA               MA - Class: 8742 / Loc: 4 / Payroll: $716,927
+                 Rate: 0.18 / Estimated Premium: $1,290
+
+MA               MA. Class is 5190. Loc is 5. Payroll is $724,745. Rate is 0.18. Estimated Premium is $1,304.
+                 CLASS 5190
+                 LOC 5
+                 PAYROLL $724,745
+                 RATE 0.18
+                 ESTIMATED PREMIUM $1,304
+
+Schedule Conditions                                      Reading This Schedule
+Entries on this schedule apply only to the coverage      Read scheduled lines together with the declarations and attached forms to
+part, location, class, state, or form reference         determine the complete scheduled item.
+shown on the same row.
+
+Blue Kettle Food Service, LLC                                                                            WC DS 03
 
 # Page 31
 
-POLICY PACKET
-Underwriting Support
+ARGENT BIRCH EMPLOYERS | WORKERS COMPENSATION AND EMPLOYERS LIABILITY                  YW700400
+Experience Modification and Rating Summary                           04/01/2026 - 04/01/2027
+____________________________________________________________________________________________________
 
-[POLICY COPY 1F7EA01]
+EXPERIENCE MODIFICATION FACTOR                           SCHEDULE CREDIT/DEBIT
+1.04                                                     0%
 
-Policy jacket notices and state exceptions
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
+PREMIUM BASIS                                            GOVERNING CLASS
+Payroll per $100 remuneration                            8810
+____________________________________________________________________________________________________
 
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-018-01,Policy jacket notices and state exceptions,Reviewed,State form
-REF-018-02,Prior policy comparison,Pending,Rating file
-REF-018-03,Rating worksheet,Indexed,Policy audit
-REF-018-04,Producer correspondence,Archive,Producer copy
-REF-018-05,State exception,Reviewed,State form
-REF-018-06,Form filing note,Pending,Rating file
-REF-018-07,Policy jacket notices and state exceptions,Indexed,Policy audit
-REF-018-08,Prior policy comparison,Archive,Producer copy
-REF-018-09,Rating worksheet,Reviewed,State form
-REF-018-10,Producer correspondence,Pending,Rating file
-REF-018-11,State exception,Indexed,Policy audit
-REF-018-12,Form filing note,Archive,Producer copy
-REF-018-13,Policy jacket notices and state exceptions,Reviewed,State form
-REF-018-14,Prior policy comparison,Pending,Rating file
-REF-018-15,Rating worksheet,Indexed,Policy audit
-REF-018-16,Producer correspondence,Archive,Producer copy
-REF-018-17,State exception,Reviewed,State form
-REF-018-18,Form filing note,Pending,Rating file
-REF-018-19,Policy jacket notices and state exceptions,Indexed,Policy audit
-REF-018-20,Prior policy comparison,Archive,Producer copy
-REF-018-21,Rating worksheet,Reviewed,State form
-REF-018-22,Producer correspondence,Pending,Rating file
-REF-018-23,State exception,Indexed,Policy audit
-REF-018-24,Form filing note,Archive,Producer copy
-REF-018-25,Policy jacket notices and state exceptions,Reviewed,State form
-REF-018-26,Prior policy comparison,Pending,Rating file
-REF-018-27,Rating worksheet,Indexed,Policy audit
-REF-018-28,Producer correspondence,Archive,Producer copy
-REF-018-29,State exception,Reviewed,State form
-REF-018-30,Form filing note,Pending,Rating file
+Rating Calculation
 
-Policy packet
-Page 18
+RATING COMPONENT                 VALUE                   APPLICATION
+____________________________________________________________________________________________________
+Manual premium basis             $492,901                Before experience rating
+____________________________________________________________________________________________________
+Experience modification          1.04                    Applied to eligible class premium
+____________________________________________________________________________________________________
+Modified premium basis           $512,617                Before assessments and audit
+____________________________________________________________________________________________________
+Schedule credit / debit          0%                      Applied as shown on the information page
+____________________________________________________________________________________________________
+Final premium                    Subject to audit        Payroll and classifications are estimated
+____________________________________________________________________________________________________
+
+ __________________________________________________       __________________________________________________
+|                                                  |     |                                                  |
+|  How The Factor Applies                          |     |  Records Required                                |
+|  The experience modification applies to eligible |     |  Retain payroll journals, job-cost records,      |
+|  class premium for the states shown              |     |  officer information, and certificates for       |
+|  on the information page. It does not replace    |     |  subcontracted work. Revised audit values may    |
+|  state assessments, expense constants,           |     |  change final premium without                    |
+|  or minimum premiums.                            |     |  changing coverage.                              |
+|                                                  |     |                                                  |
+|  Classification and payroll entries remain       |     |  Refer to the state classification and premium   |
+|  subject to final audit after the policy period. |     |  schedules for the classes included in           |
+|                                                  |     |  this calculation.                               |
+|__________________________________________________|     |__________________________________________________|
+
+
+Blue Kettle Food Service, LLC                                                             WC 00 04 14 A
 
 # Page 32
 
-POLICY PACKET                                                                     POLICY COPY 1F7EA01
+ARGENT BIRCH EMPLOYERS                                         POLICY NUMBER: YW700400
+Workers Compensation and Employers Liability                       EFFECTIVE: 04/01/2026
+                                                                     EXPIRES: 04/01/2027
+________________________________________________________________________________________
 
-Underwriting Support
+                    CONTRACTUAL TRANSFER AND ASSIGNMENT RULES
 
-Policy jacket notices and state exceptions
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
+________________________________________________________________________________________
+THIS FORM IS PART OF THE POLICY AND MUST BE READ WITH THE DECLARATIONS AND ENDORSEMENTS.
+________________________________________________________________________________________
 
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-019-01,Prior policy comparison,Reviewed,Rating file
-REF-019-02,Rating worksheet,Pending,Policy audit
-REF-019-03,Producer correspondence,Indexed,Producer copy
-REF-019-04,State exception,Archive,State form
-REF-019-05,Form filing note,Reviewed,Rating file
-REF-019-06,Policy jacket notices and state exceptions,Pending,Policy audit
-REF-019-07,Prior policy comparison,Indexed,Producer copy
-REF-019-08,Rating worksheet,Archive,State form
-REF-019-09,Producer correspondence,Reviewed,Rating file
-REF-019-10,State exception,Pending,Policy audit
-REF-019-11,Form filing note,Indexed,Producer copy
-REF-019-12,Policy jacket notices and state exceptions,Archive,State form
-REF-019-13,Prior policy comparison,Reviewed,Rating file
-REF-019-14,Rating worksheet,Pending,Policy audit
-REF-019-15,Producer correspondence,Indexed,Producer copy
-REF-019-16,State exception,Archive,State form
-REF-019-17,Form filing note,Reviewed,Rating file
-REF-019-18,Policy jacket notices and state exceptions,Pending,Policy audit
-REF-019-19,Prior policy comparison,Indexed,Producer copy
-REF-019-20,Rating worksheet,Archive,State form
-REF-019-21,Producer correspondence,Reviewed,Rating file
-REF-019-22,State exception,Pending,Policy audit
-REF-019-23,Form filing note,Indexed,Producer copy
-REF-019-24,Policy jacket notices and state exceptions,Archive,State form
-REF-019-25,Prior policy comparison,Reviewed,Rating file
-REF-019-26,Rating worksheet,Pending,Policy audit
-REF-019-27,Producer correspondence,Indexed,Producer copy
-REF-019-28,State exception,Archive,State form
-REF-019-29,Form filing note,Reviewed,Rating file
-REF-019-30,Policy jacket notices and state exceptions,Pending,Policy audit
+STATE / CLASS  MA / 5190                             LOCATION  5
+----------------------------------------------------------------------------------------
+CLASSIFICATION  Electrical wiring within buildings   PAYROLL / RATE  $265,916 / 6.22
+----------------------------------------------------------------------------------------
+PREMIUM  $16,539                                     FORM  WC 04 03 06 07 23
+----------------------------------------------------------------------------------------
 
-Policy packet                                                                                 Page 19
+A. Classification And Rating Reference                  The employer must notify us at least thirty days prior to any change in ownership or
+                                                        fundamental shift in corporate control.
+This form applies to Electrical wiring within buildings 
+in MA, class 5190, at Location 5.                       Upon receiving notice of an ownership change, we will evaluate the new operational
+                                                        risks and determine whether to consent to the assignment.
+The information page shows estimated remuneration of 
+$265,916, manual rate 6.22, experience modification     If consent is granted, an amendatory document will be issued detailing the effective
+1.04, and estimated premium $16,539.                    date of the transfer and any revised rating parameters.
+
+Form WC 04 03 06 edition 07 23 supplies the applicable  C. If consent is withheld, the contract will be cancelled in accordance with the
+policy terms for this classification.                   standard termination provisions.
+
+The rights and obligations established by this          In the event of the employer's death or bankruptcy, the legal representative or trustee
+contract are unique to the enterprise identified on     assumes the duties of the employer for the remainder of the term.
+the administrative schedules.
+                                                        The legal representative must continue to maintain payroll ledgers, report injuries,
+B. The employer may not transfer, assign, or            and remit premium payments as required.
+delegate any portion of this contract to a third party 
+without our explicit written consent.                   Unauthorized assignments are considered void and provide no protection to the
+                                                        unapproved successor entity.
+In the event of a merger, acquisition, or corporate 
+restructuring, the surviving entity does not 
+automatically inherit the coverage provisions.
+
+
+
+
+
+
+
+
+
+
+
+
+
+WC-CT-1009                                                   Blue Kettle Food Service, LLC | YW700400
 
 # Page 33
 
-POLICY PACKET
-POLICY COPY 1F7EA01
+ARGENT BIRCH EMPLOYERS
+Workers Compensation and Employers Liability
 
-# Underwriting Support
+                                                     POLICY NUMBER: YW700400
+                                                      EFFECTIVE: 04/01/2026
+                                                        EXPIRES: 04/01/2027
+________________________________________________________________________________
 
-## Policy jacket notices and state exceptions
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
+            MASSACHUSETTS STATE AMENDATORY ENDORSEMENT
+________________________________________________________________________________
 
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-020-01,Rating worksheet,Reviewed,Policy audit
-REF-020-02,Producer correspondence,Pending,Producer copy
-REF-020-03,State exception,Indexed,State form
-REF-020-04,Form filing note,Archive,Rating file
-REF-020-05,Policy jacket notices and state exceptions,Reviewed,Policy audit
-REF-020-06,Prior policy comparison,Pending,Producer copy
-REF-020-07,Rating worksheet,Indexed,State form
-REF-020-08,Producer correspondence,Archive,Rating file
-REF-020-09,State exception,Reviewed,Policy audit
-REF-020-10,Form filing note,Pending,Producer copy
-REF-020-11,Policy jacket notices and state exceptions,Indexed,State form
-REF-020-12,Prior policy comparison,Archive,Rating file
-REF-020-13,Rating worksheet,Reviewed,Policy audit
-REF-020-14,Producer correspondence,Pending,Producer copy
-REF-020-15,State exception,Indexed,State form
-REF-020-16,Form filing note,Archive,Rating file
-REF-020-17,Policy jacket notices and state exceptions,Reviewed,Policy audit
-REF-020-18,Prior policy comparison,Pending,Producer copy
-REF-020-19,Rating worksheet,Indexed,State form
-REF-020-20,Producer correspondence,Archive,Rating file
-REF-020-21,State exception,Reviewed,Policy audit
-REF-020-22,Form filing note,Pending,Producer copy
-REF-020-23,Policy jacket notices and state exceptions,Indexed,State form
-REF-020-24,Prior policy comparison,Archive,Rating file
-REF-020-25,Rating worksheet,Reviewed,Policy audit
-REF-020-26,Producer correspondence,Pending,Producer copy
-REF-020-27,State exception,Indexed,State form
-REF-020-28,Form filing note,Archive,Rating file
-REF-020-29,Policy jacket notices and state exceptions,Reviewed,Policy audit
-REF-020-30,Prior policy comparison,Pending,Producer copy
+THIS ENDORSEMENT CHANGES THE POLICY. PLEASE READ IT CAREFULLY.
+________________________________________________________________________________
 
-Policy packet
-Page 20
+STATE / CLASS RI / 9082                              LOCATION 1
+--------------------------------------------------------------------------------
+CLASSIFICATION Restaurant NOC                        PAYROLL / RATE $277,752 / 0.74
+--------------------------------------------------------------------------------
+PREMIUM $2,055                                       FORM WC 00 03 13 01 15
+--------------------------------------------------------------------------------
+
+Classification And Rating Reference                  The employer must post the official notice to employees regarding their rights and
+                                                     the procedures for obtaining medical treatment.
+This form applies to Restaurant NOC in RI, class 
+9082, at Location 1.                                  Failure to post the required workplace notices may subject the enterprise to
+                                                     administrative fines levied by the state regulatory department.
+The information page shows estimated remuneration 
+of $277,752, manual rate 0.74, experience             Disputes regarding the assignment of classification codes must be submitted to the
+modification 1.04, and estimated premium             state rating bureau's dispute resolution panel.
+$2,055.
+                                                     The experience modification factor applied to Massachusetts operations is calculated
+Form WC 00 03 13 edition 01 15 supplies the          exclusively using the state's approved statistical plan.
+applicable policy terms for this classification.
+                                                     We will notify the state industrial accident board electronically whenever this
+This document modifies the standard provisions to    contract is issued, renewed, or terminated.
+comply with the statutory requirements of the 
+Commonwealth of Massachusetts.                       The employer must utilize the state-mandated forms when reporting injuries and
+                                                     must submit them within the required seven-day window.
+The cancellation notice period for nonpayment of 
+premium is extended to strictly comply with the      Any provision in the standard contract that conflicts with Massachusetts law is
+state's administrative code.                         hereby amended to conform to the statutory minimums.
+
+When calculating remuneration for premium 
+purposes, the maximum payroll limitations for 
+executive officers are dictated by the state rating 
+bureau.
+
+
+
+
+
+
+
+
+
+
+
+WC-MA-3000                                                   Blue Kettle Food Service, LLC | YW700400
 
 # Page 34
 
-POLICY PACKET
-                                                                                   [POLICY COPY 1F7EA01]
+ARGENT BIRCH EMPLOYERS
+Workers Compensation and Employers Liability
+POLICY NUMBER: YW700400
+EFFECTIVE: 04/01/2026
+EXPIRES: 04/01/2027
 
-# Underwriting Support
+______________________________________________________________________________________________________
 
-### Policy jacket notices and state exceptions
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
+FRAUD WARNING AND PENALTY NOTICE
+______________________________________________________________________________________________________
 
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-021-01,Producer correspondence,Reviewed,Producer copy
-REF-021-02,State exception,Pending,State form
-REF-021-03,Form filing note,Indexed,Rating file
-REF-021-04,Policy jacket notices and state exceptions,Archive,Policy audit
-REF-021-05,Prior policy comparison,Reviewed,Producer copy
-REF-021-06,Rating worksheet,Pending,State form
-REF-021-07,Producer correspondence,Indexed,Rating file
-REF-021-08,State exception,Archive,Policy audit
-REF-021-09,Form filing note,Reviewed,Producer copy
-REF-021-10,Policy jacket notices and state exceptions,Pending,State form
-REF-021-11,Prior policy comparison,Indexed,Rating file
-REF-021-12,Rating worksheet,Archive,Policy audit
-REF-021-13,Producer correspondence,Reviewed,Producer copy
-REF-021-14,State exception,Pending,State form
-REF-021-15,Form filing note,Indexed,Rating file
-REF-021-16,Policy jacket notices and state exceptions,Archive,Policy audit
-REF-021-17,Prior policy comparison,Reviewed,Producer copy
-REF-021-18,Rating worksheet,Pending,State form
-REF-021-19,Producer correspondence,Indexed,Rating file
-REF-021-20,State exception,Archive,Policy audit
-REF-021-21,Form filing note,Reviewed,Producer copy
-REF-021-22,Policy jacket notices and state exceptions,Pending,State form
-REF-021-23,Prior policy comparison,Indexed,Rating file
-REF-021-24,Rating worksheet,Archive,Policy audit
-REF-021-25,Producer correspondence,Reviewed,Producer copy
-REF-021-26,State exception,Pending,State form
-REF-021-27,Form filing note,Indexed,Rating file
-REF-021-28,Policy jacket notices and state exceptions,Archive,Policy audit
-REF-021-29,Prior policy comparison,Reviewed,Producer copy
-REF-021-30,Rating worksheet,Pending,State form
+POLICYHOLDER NOTICE - INFORMATION ABOUT YOUR POLICY
 
-Policy packet                                                                                    Page 21
+______________________________________________________________________________________________________
+
+
+       To the policyholder:
+
+       1. Misrepresenting payroll, misclassifying employees, or concealing operations to obtain a lower premium is a severe violation of law.
+
+       Any person who knowingly submits false information on an application, audit ledger, or claim form may be subject to criminal prosecution.
+
+       Regulatory authorities actively investigate suspected fraud and may impose substantial fines, restitution orders, and imprisonment.
+
+       We utilize advanced data analytics and field investigations to detect discrepancies in reported remuneration and operational descriptions.
+
+       2. If premium fraud is discovered, we will pursue immediate cancellation of the contract and report the findings to the state fraud bureau.
+
+       Employers who encourage or assist workers in filing exaggerated or fabricated injury reports will face civil liability and loss of coverage.
+
+       Workers who collect benefits while simultaneously earning unreported income from other sources are committing benefit fraud.
+
+       We encourage anyone with knowledge of fraudulent activities related to this contract to contact our anonymous reporting hotline.
+
+       This notice is informational. Coverage is governed by the policy forms and endorsements issued with the declarations.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+WC-FW-2001                                                                                                        Blue Kettle Food Service, LLC | YW700400
 
 # Page 35
 
-POLICY PACKET                                                                    POLICY COPY 1F7EA01
-Underwriting Support
+ARGENT BIRCH EMPLOYERS                                         POLICY NUMBER: YW700400
+Workers Compensation and Employers Liability                       EFFECTIVE: 04/01/2026
+                                                                     EXPIRES: 04/01/2027
+________________________________________________________________________________________
 
-Policy jacket notices and state exceptions
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
+                       AUDIT BILLING STATEMENT RULES
 
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-022-01,State exception,Reviewed,State form
-REF-022-02,Form filing note,Pending,Rating file
-REF-022-03,Policy jacket notices and state exceptions,Indexed,Policy audit
-REF-022-04,Prior policy comparison,Archive,Producer copy
-REF-022-05,Rating worksheet,Reviewed,State form
-REF-022-06,Producer correspondence,Pending,Rating file
-REF-022-07,State exception,Indexed,Policy audit
-REF-022-08,Form filing note,Archive,Producer copy
-REF-022-09,Policy jacket notices and state exceptions,Reviewed,State form
-REF-022-10,Prior policy comparison,Pending,Rating file
-REF-022-11,Rating worksheet,Indexed,Policy audit
-REF-022-12,Producer correspondence,Archive,Producer copy
-REF-022-13,State exception,Reviewed,State form
-REF-022-14,Form filing note,Pending,Rating file
-REF-022-15,Policy jacket notices and state exceptions,Indexed,Policy audit
-REF-022-16,Prior policy comparison,Archive,Producer copy
-REF-022-17,Rating worksheet,Reviewed,State form
-REF-022-18,Producer correspondence,Pending,Rating file
-REF-022-19,State exception,Indexed,Policy audit
-REF-022-20,Form filing note,Archive,Producer copy
-REF-022-21,Policy jacket notices and state exceptions,Reviewed,State form
-REF-022-22,Prior policy comparison,Pending,Rating file
-REF-022-23,Rating worksheet,Indexed,Policy audit
-REF-022-24,Producer correspondence,Archive,Producer copy
-REF-022-25,State exception,Reviewed,State form
-REF-022-26,Form filing note,Pending,Rating file
-REF-022-27,Policy jacket notices and state exceptions,Indexed,Policy audit
-REF-022-28,Prior policy comparison,Archive,Producer copy
-REF-022-29,Rating worksheet,Reviewed,State form
-REF-022-30,Producer correspondence,Pending,Rating file
+________________________________________________________________________________________
+PREMIUM, AUDIT, AND ACCOUNTING CONDITIONS
+________________________________________________________________________________________
+|                                                       |                              |
+| Named insured                                         | Policy term                  |
+| Blue Kettle Food Service, LLC                         | 04/01/2026 - 04/01/2027      |
+|_______________________________________________________|______________________________|
+|                                                       |                              |
+| Scheduled premium                                     | Audit basis                  |
+| $2,195                                                | Payroll per $100 remuneration|
+|_______________________________________________________|______________________________|
 
-Policy packet                                                                                Page 22
+A. Classification And Rating Reference                      Additional premium generated by an audit cannot be added to the installment
+This form applies to Building operations by owner in NH,    schedule of a subsequent renewal term.
+class 9015, at Location 3.
+                                                            Failure to pay the audit balance promptly will result in the assignment of the debt to
+The information page shows estimated remuneration of        an external collection agency.
+$296,731, manual rate 0.74, experience modification 1.04,
+and estimated premium $2,195.                               Outstanding audit balances may also trigger the cancellation of any active renewal
+                                                            contracts currently in force.
+Form WC 04 03 06 edition 04 21 supplies the applicable
+policy terms for this classification.                       C. If the enterprise disputes the audit findings, the undisputed portion of the
+                                                            premium must still be paid by the original due date.
+Following the completion of the final premium
+examination, an audit billing statement will be             The disputed portion will be placed on an administrative hold while the grievance is
+generated and mailed to the administrative address.         reviewed by the audit dispute resolution team.
+
+B. This statement provides a detailed reconciliation        If the grievance is denied, the held balance becomes due immediately and may be
+between the estimated remuneration and the actual payroll   subject to retroactive late fees.
+discovered during the examination.
+                                                            Refunds generated by a downward audit adjustment will be applied first to any
+If the examination results in additional premium, the       outstanding balances before a check is issued.
+full amount is due within thirty days of the statement
+date.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+WC-AB-4002                                                   Blue Kettle Food Service, LLC | YW700400_
+
 
 # Page 36
 
-POLICY PACKET
-Underwriting Support
+ARGENT BIRCH EMPLOYERS
+Workers Compensation and Employers Liability
+POLICY NUMBER: YW700400
+EFFECTIVE: 04/01/2026
+EXPIRES: 04/01/2027
 
-POLICY COPY 1F7EA01
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Policy jacket notices and state exceptions
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
+CANCELLATION AND NONRENEWAL PROVISIONS
 
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-023-01,Form filing note,Reviewed,Rating file
-REF-023-02,Policy jacket notices and state exceptions,Pending,Policy audit
-REF-023-03,Prior policy comparison,Indexed,Producer copy
-REF-023-04,Rating worksheet,Archive,State form
-REF-023-05,Producer correspondence,Reviewed,Rating file
-REF-023-06,State exception,Pending,Policy audit
-REF-023-07,Form filing note,Indexed,Producer copy
-REF-023-08,Policy jacket notices and state exceptions,Archive,State form
-REF-023-09,Prior policy comparison,Reviewed,Rating file
-REF-023-10,Rating worksheet,Pending,Policy audit
-REF-023-11,Producer correspondence,Indexed,Producer copy
-REF-023-12,State exception,Archive,State form
-REF-023-13,Form filing note,Reviewed,Rating file
-REF-023-14,Policy jacket notices and state exceptions,Pending,Policy audit
-REF-023-15,Prior policy comparison,Indexed,Producer copy
-REF-023-16,Rating worksheet,Archive,State form
-REF-023-17,Producer correspondence,Reviewed,Rating file
-REF-023-18,State exception,Pending,Policy audit
-REF-023-19,Form filing note,Indexed,Producer copy
-REF-023-20,Policy jacket notices and state exceptions,Archive,State form
-REF-023-21,Prior policy comparison,Reviewed,Rating file
-REF-023-22,Rating worksheet,Pending,Policy audit
-REF-023-23,Producer correspondence,Indexed,Producer copy
-REF-023-24,State exception,Archive,State form
-REF-023-25,Form filing note,Reviewed,Rating file
-REF-023-26,Policy jacket notices and state exceptions,Pending,Policy audit
-REF-023-27,Prior policy comparison,Indexed,Producer copy
-REF-023-28,Rating worksheet,Archive,State form
-REF-023-29,Producer correspondence,Reviewed,Rating file
-REF-023-30,State exception,Pending,Policy audit
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+THIS FORM IS PART OF THE POLICY AND MUST BE READ WITH THE DECLARATIONS AND ENDORSEMENTS.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Policy packet
-Page 23
+STATE / CLASS VT / 5606                                                         LOCATION 4
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+CLASSIFICATION Contractor executive supervisor                                  PAYROLL / RATE $312,419 / 6.22
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+PREMIUM $19,432                                                                 FORM WC 04 03 06 07 23
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Classification And Rating Reference                                             Cancellation for any other authorized reason requires a minimum of thirty days
+                                                                                advance notice, subject to state statutory mandates.
+This form applies to Contractor executive supervisor in VT, class 5606, at Location
+4.                                                                              If the employer initiates the cancellation, the final premium will be calculated using
+                                                                                the short-rate penalty table.
+The information page shows estimated remuneration of $312,419, manual rate 6.22,
+experience modification 1.04, and estimated premium $19,432.                    If we initiate the cancellation, the final premium will be computed on a strictly pro-
+                                                                                rata basis.
+Form WC 04 03 06 edition 07 23 supplies the applicable policy terms for this
+classification.                                                                 Notice of nonrenewal will be mailed at least sixty days prior to the expiration date if
+                                                                                we elect not to offer a subsequent term.
+The employer may cancel this contract at any time by providing advance written
+notice specifying the desired termination date.                                 Proof of mailing via certified postal receipt or recognized tracking service
+                                                                                constitutes sufficient evidence of notice delivery.
+We may cancel this contract by mailing written notice to the employer at the address
+shown on the administrative records.                                            The termination of this contract does not relieve the employer of the obligation to
+                                                                                pay outstanding premium balances or submit to a final audit.
+Cancellation for nonpayment of premium requires a minimum of ten days advance
+notice before the termination becomes effective.                                Any return premium due will be refunded within the timeframe mandated by the
+                                                                                jurisdiction governing the primary operations.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+WC-CN-1003                                                                                             Blue Kettle Food Service, LLC | YW700400
 
 # Page 37
 
-POLICY PACKET                                                                    POLICY COPY 1F7EA01
-Underwriting Support
+ARGENT BIRCH EMPLOYERS
+Workers Compensation and Employers Liability
 
-Policy jacket notices and state exceptions
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
+                                                           POLICY NUMBER: YW700400
+                                                           EFFECTIVE: 04/01/2026
+                                                             EXPIRES: 04/01/2027
+________________________________________________________________________________
 
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-024-01,Policy jacket notices and state exceptions,Reviewed,Policy audit
-REF-024-02,Prior policy comparison,Pending,Producer copy
-REF-024-03,Rating worksheet,Indexed,State form
-REF-024-04,Producer correspondence,Archive,Rating file
-REF-024-05,State exception,Reviewed,Policy audit
-REF-024-06,Form filing note,Pending,Producer copy
-REF-024-07,Policy jacket notices and state exceptions,Indexed,State form
-REF-024-08,Prior policy comparison,Archive,Rating file
-REF-024-09,Rating worksheet,Reviewed,Policy audit
-REF-024-10,Producer correspondence,Pending,Producer copy
-REF-024-11,State exception,Indexed,State form
-REF-024-12,Form filing note,Archive,Rating file
-REF-024-13,Policy jacket notices and state exceptions,Reviewed,Policy audit
-REF-024-14,Prior policy comparison,Pending,Producer copy
-REF-024-15,Rating worksheet,Indexed,State form
-REF-024-16,Producer correspondence,Archive,Rating file
-REF-024-17,State exception,Reviewed,Policy audit
-REF-024-18,Form filing note,Pending,Producer copy
-REF-024-19,Policy jacket notices and state exceptions,Indexed,State form
-REF-024-20,Prior policy comparison,Archive,Rating file
-REF-024-21,Rating worksheet,Reviewed,Policy audit
-REF-024-22,Producer correspondence,Pending,Producer copy
-REF-024-23,State exception,Indexed,State form
-REF-024-24,Form filing note,Archive,Rating file
-REF-024-25,Policy jacket notices and state exceptions,Reviewed,Policy audit
-REF-024-26,Prior policy comparison,Pending,Producer copy
-REF-024-27,Rating worksheet,Indexed,State form
-REF-024-28,Producer correspondence,Archive,Rating file
-REF-024-29,State exception,Reviewed,Policy audit
-REF-024-30,Form filing note,Pending,Producer copy
+                     EMPLOYER DUTIES IN THE EVENT OF INJURY
 
-Policy packet                                                                        Page 24
+________________________________________________________________________________
+THIS FORM IS PART OF THE POLICY AND MUST BE READ WITH THE DECLARATIONS AND ENDORSEMENTS.
+________________________________________________________________________________
+
+STATE / CLASS  CT / 8810                                    LOCATION  5
+--------------------------------------------------------------------------------
+CLASSIFICATION  Clerical office employees                    PAYROLL / RATE  $323,486 / 6.22
+--------------------------------------------------------------------------------
+PREMIUM  $20,120                                             FORM  WC 00 03 13 07 23
+--------------------------------------------------------------------------------
+
+1. Classification And Rating Reference                      The employer must forward all legal notices, demands, or administrative
+                                                            correspondence related to the injury immediately upon receipt.
+This form applies to Clerical office employees in CT, class
+8810, at Location 5.                                        3. Full cooperation is required during the investigation, settlement negotiations, and
+The information page shows estimated remuneration of        any subsequent administrative hearings.
+$323,486, manual rate 6.22, experience modification 1.04,    The employer must not voluntarily assume any liability, make unauthorized
+and estimated premium $20,120.                              payments, or incur expenses without our prior written consent.
+
+Form WC 00 03 13 edition 07 23 supplies the applicable      Interference with our subrogation rights or investigation processes constitutes a
+policy terms for this classification.                      material breach of the contract conditions.
+
+2. Upon the occurrence of an occupational injury or         The employer must facilitate interviews with witnesses, supervisors, and the injured
+disease, the employer must provide immediate medical        worker to establish the facts of the incident.
+attention to the affected worker.
+                                                            4. Failure to report injuries within the statutory timeframe may result in
+The employer must notify us or our authorized               administrative fines, which are the sole responsibility of the employer.
+representative as soon as practicable following any
+incident that may result in a claim.                        We reserve the right to inspect the premises where the injury occurred to determine
+                                                            causation and assess future risk mitigation.
+Written reports detailing the time, place, circumstances,
+and identities of involved parties must be submitted
+promptly.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+WC-ED-1004                                                    Blue Kettle Food Service, LLC | YW700400
 
 # Page 38
 
-POLICY PACKET
-                                                                                +----------------------+
-                                                                                | POLICY COPY 1F7EA01  |
-                                                                                +----------------------+
-Underwriting Support
+ARGENT BIRCH EMPLOYERS                                                POLICY NUMBER: YW700400
+Workers Compensation and Employers Liability                             EFFECTIVE: 04/01/2026
+                                                                          EXPIRES: 04/01/2027
+____________________________________________________________________________________________________
 
-Policy jacket notices and state exceptions
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
+                         SUBROGATION AND RECOVERY ADMINISTRATION
 
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-025-01,Prior policy comparison,Reviewed,Producer copy
-REF-025-02,Rating worksheet,Pending,State form
-REF-025-03,Producer correspondence,Indexed,Rating file
-REF-025-04,State exception,Archive,Policy audit
-REF-025-05,Form filing note,Reviewed,Producer copy
-REF-025-06,Policy jacket notices and state exceptions,Pending,State form
-REF-025-07,Prior policy comparison,Indexed,Rating file
-REF-025-08,Rating worksheet,Archive,Policy audit
-REF-025-09,Producer correspondence,Reviewed,Producer copy
-REF-025-10,State exception,Pending,State form
-REF-025-11,Form filing note,Indexed,Rating file
-REF-025-12,Policy jacket notices and state exceptions,Archive,Policy audit
-REF-025-13,Prior policy comparison,Reviewed,Producer copy
-REF-025-14,Rating worksheet,Pending,State form
-REF-025-15,Producer correspondence,Indexed,Rating file
-REF-025-16,State exception,Archive,Policy audit
-REF-025-17,Form filing note,Reviewed,Producer copy
-REF-025-18,Policy jacket notices and state exceptions,Pending,State form
-REF-025-19,Prior policy comparison,Indexed,Rating file
-REF-025-20,Rating worksheet,Archive,Policy audit
-REF-025-21,Producer correspondence,Reviewed,Producer copy
-REF-025-22,State exception,Pending,State form
-REF-025-23,Form filing note,Indexed,Rating file
-REF-025-24,Policy jacket notices and state exceptions,Archive,Policy audit
-REF-025-25,Prior policy comparison,Reviewed,Producer copy
-REF-025-26,Rating worksheet,Pending,State form
-REF-025-27,Producer correspondence,Indexed,Rating file
-REF-025-28,State exception,Archive,Policy audit
-REF-025-29,Form filing note,Reviewed,Producer copy
-REF-025-30,Policy jacket notices and state exceptions,Pending,State form
+____________________________________________________________________________________________________
+THIS FORM IS PART OF THE POLICY AND MUST BE READ WITH THE DECLARATIONS AND ENDORSEMENTS.
+____________________________________________________________________________________________________
 
-Policy packet                                                                                  Page 25
+STATE / CLASS  CT / 8017                                  LOCATION  1
+----------------------------------------------------------------------------------------------------
+CLASSIFICATION  Retail store - all employees              PAYROLL / RATE  $333,913 / 0.42
+----------------------------------------------------------------------------------------------------
+PREMIUM  $1,402                                           FORM  WC 00 03 13 07 23
+----------------------------------------------------------------------------------------------------
+
+A. Classification And Rating Reference                    The remaining balance of the recovery will be used to offset the benefits distributed
+                                                          to the injured worker.
+This form applies to Retail store - all employees in CT,
+class 8017, at Location 1.                                If the recovery exceeds the total benefits provided, the surplus will be distributed
+                                                          according to the statutory guidelines of the jurisdiction.
+The information page shows estimated remuneration of
+$333,913, manual rate 0.42, experience modification       The employer must execute any documents, assignments, or legal instruments
+1.04, and estimated premium $1,402.                       required to facilitate the recovery action.
+
+Form WC 00 03 13 edition 07 23 supplies the applicable    C. We maintain the exclusive authority to direct the recovery litigation, select legal
+policy terms for this classification.                    counsel, and negotiate settlement terms.
+
+When a third party is responsible for an occupational     The employer must attend hearings, depositions, and trials as requested to support
+injury, we inherit the employer's right to seek           the recovery efforts.
+recovery for benefits provided.
+                                                          If the employer independently pursues a recovery action, they must notify us
+B. The employer must take all necessary steps to          immediately and protect our lien on the proceeds.
+preserve these recovery rights and must not execute
+any pre-injury waivers without our knowledge.             Compromising a third-party claim without our written approval may jeopardize the
+                                                          injured worker's entitlement to future benefits.
+Any recovery obtained from a responsible third party
+will first be applied to reimburse the expenses
+incurred during the pursuit of the claim.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+WC-SR-1005                                                          Blue Kettle Food Service, LLC | YW700400
 
 # Page 39
 
-POLICY PACKET
-Underwriting Support
+ARGENT BIRCH EMPLOYERS                                                 POLICY NUMBER: YW700400
+Workers Compensation and Employers Liability                             EFFECTIVE: 04/01/2026
+                                                                           EXPIRES: 04/01/2027
+______________________________________________________________________________________________
 
-[POLICY COPY 1F7EA01]
+              AMENDATORY ENDORSEMENT - PREMIUM DISCOUNT APPLICATION
 
-Policy jacket notices and state exceptions
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
+______________________________________________________________________________________________
 
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-026-01,Rating worksheet,Reviewed,State form
-REF-026-02,Producer correspondence,Pending,Rating file
-REF-026-03,State exception,Indexed,Policy audit
-REF-026-04,Form filing note,Archive,Producer copy
-REF-026-05,Policy jacket notices and state exceptions,Reviewed,State form
-REF-026-06,Prior policy comparison,Pending,Rating file
-REF-026-07,Rating worksheet,Indexed,Policy audit
-REF-026-08,Producer correspondence,Archive,Producer copy
-REF-026-09,State exception,Reviewed,State form
-REF-026-10,Form filing note,Pending,Rating file
-REF-026-11,Policy jacket notices and state exceptions,Indexed,Policy audit
-REF-026-12,Prior policy comparison,Archive,Producer copy
-REF-026-13,Rating worksheet,Reviewed,State form
-REF-026-14,Producer correspondence,Pending,Rating file
-REF-026-15,State exception,Indexed,Policy audit
-REF-026-16,Form filing note,Archive,Producer copy
-REF-026-17,Policy jacket notices and state exceptions,Reviewed,State form
-REF-026-18,Prior policy comparison,Pending,Rating file
-REF-026-19,Rating worksheet,Indexed,Policy audit
-REF-026-20,Producer correspondence,Archive,Producer copy
-REF-026-21,State exception,Reviewed,State form
-REF-026-22,Form filing note,Pending,Rating file
-REF-026-23,Policy jacket notices and state exceptions,Indexed,Policy audit
-REF-026-24,Prior policy comparison,Archive,Producer copy
-REF-026-25,Rating worksheet,Reviewed,State form
-REF-026-26,Producer correspondence,Pending,Rating file
-REF-026-27,State exception,Indexed,Policy audit
-REF-026-28,Form filing note,Archive,Producer copy
-REF-026-29,Policy jacket notices and state exceptions,Reviewed,State form
-REF-026-30,Prior policy comparison,Pending,Rating file
+THIS ENDORSEMENT CHANGES THE POLICY. PLEASE READ IT CAREFULLY.
+______________________________________________________________________________________________
 
-Policy packet,Page 26
+STATE / CLASS  MA / 8742                                LOCATION 2
+..............................................................................................................................................................................
+CLASSIFICATION  Outside salespersons                     PAYROLL / RATE  $349,084 / 0.18
+..............................................................................................................................................................................
+PREMIUM  $628                                           FORM  WC 04 03 06 01 15
+..............................................................................................................................................................................
+
+Classification And Rating Reference                      The first tier of standard premium is exempt from the discount calculation, serving
+                                                         as the baseline for administrative expense recovery.
+This form applies to Outside salespersons in MA, class
+8742, at Location 2.                                     Subsequent tiers of standard premium are subject to progressively higher discount
+                                                         percentages, as outlined in the authorized rating manual.
+The information page shows estimated remuneration of
+$349,084, manual rate 0.18, experience modification      If the contract spans multiple states, the discount is calculated using the combined
+1.04, and estimated premium $628.                        standard premium across all applicable jurisdictions.
+
+Form WC 04 03 06 edition 01 15 supplies the applicable  The discount percentages vary depending on whether the enterprise is classified
+policy terms for this classification.                    under the stock company or non-stock company tables.
+
+This endorsement establishes the methodology for        If the contract is cancelled prior to expiration, the premium discount will be
+applying volume-based premium discounts to the final     recalculated based on the actual standard premium earned.
+computed premium.
+                                                         The premium discount does not apply to specific supplementary charges, such as the
+Premium discounts recognize the relative reduction in    terrorism risk premium or catastrophe assessments.
+administrative and acquisition expenses associated with
+larger contracts.                                        We reserve the right to withhold the premium discount if the employer fails to remit
+                                                         payments timely or refuses to cooperate with the final audit.
+The discount is applied only after the manual premium
+has been adjusted by the experience modification factor
+and any schedule rating credits.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+WC-PD-3002                                                               Blue Kettle Food Service, LLC | YW700400
 
 # Page 40
 
-POLICY PACKET                                                                            POLICY COPY 1F7EA01
+ARGENT BIRCH EMPLOYERS                                                 POLICY NUMBER: YW700400
+Workers Compensation and Employers Liability                            EFFECTIVE: 04/01/2026
+                                                                          EXPIRES: 04/01/2027
+_____________________________________________________________________________________________
 
-# Underwriting Support
+                        DIVIDEND PLAN PARTICIPATION CONDITIONS
 
-### Policy jacket notices and state exceptions
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
+_____________________________________________________________________________________________
+PREMIUM, AUDIT, AND ACCOUNTING CONDITIONS
+_____________________________________________________________________________________________
+_____________________________________________________________________________________________
+| Named insured                               | Policy term                                 |
+| Blue Kettle Food Service, LLC               | 04/01/2026 - 04/01/2027                     |
+|_____________________________________________|_____________________________________________|
+| Scheduled premium                           | Audit basis                                 |
+| $955                                        | Payroll per $100 remuneration               |
+|_____________________________________________|_____________________________________________|
 
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-027-01,Producer correspondence,Reviewed,Rating file
-REF-027-02,State exception,Pending,Policy audit
-REF-027-03,Form filing note,Indexed,Producer copy
-REF-027-04,Policy jacket notices and state exceptions,Archive,State form
-REF-027-05,Prior policy comparison,Reviewed,Rating file
-REF-027-06,Rating worksheet,Pending,Policy audit
-REF-027-07,Producer correspondence,Indexed,Producer copy
-REF-027-08,State exception,Archive,State form
-REF-027-09,Form filing note,Reviewed,Rating file
-REF-027-10,Policy jacket notices and state exceptions,Pending,Policy audit
-REF-027-11,Prior policy comparison,Indexed,Producer copy
-REF-027-12,Rating worksheet,Archive,State form
-REF-027-13,Producer correspondence,Reviewed,Rating file
-REF-027-14,State exception,Pending,Policy audit
-REF-027-15,Form filing note,Indexed,Producer copy
-REF-027-16,Policy jacket notices and state exceptions,Archive,State form
-REF-027-17,Prior policy comparison,Reviewed,Rating file
-REF-027-18,Rating worksheet,Pending,Policy audit
-REF-027-19,Producer correspondence,Indexed,Producer copy
-REF-027-20,State exception,Archive,State form
-REF-027-21,Form filing note,Reviewed,Rating file
-REF-027-22,Policy jacket notices and state exceptions,Pending,Policy audit
-REF-027-23,Prior policy comparison,Indexed,Producer copy
-REF-027-24,Rating worksheet,Archive,State form
-REF-027-25,Producer correspondence,Reviewed,Rating file
-REF-027-26,State exception,Pending,Policy audit
-REF-027-27,Form filing note,Indexed,Producer copy
-REF-027-28,Policy jacket notices and state exceptions,Archive,State form
-REF-027-29,Prior policy comparison,Reviewed,Rating file
-REF-027-30,Rating worksheet,Pending,Policy audit
+1. Classification And Rating Reference                                Incurred losses include all paid benefits, established reserves for open claims, and
+                                                                      allocated loss adjustment expenses.
+This form applies to Electrical wiring within buildings in MA, class 5190, at
+Location 3.                                                           3. The evaluation of losses for dividend purposes occurs six months after the
+                                                                      expiration of the contract to allow for claim maturation.
+The information page shows estimated remuneration of $353,824, manual rate 0.27,
+experience modification 1.04, and estimated premium $955.             If the enterprise cancels the contract prior to the expiration date, all eligibility for
+                                                                      dividend participation is immediately forfeited.
+Form WC 00 00 00 C edition 04 21 supplies the applicable policy terms for this
+classification.                                                       The enterprise must comply with all audit requests and have no outstanding
+                                                                      premium balances to receive a declared dividend.
+2. The enterprise has been enrolled in a participating dividend plan, which offers the
+potential for a return of premium based on favorable loss experience.  Any declared dividend will be applied as a credit against the premium of the renewal
+                                                                      contract before a cash disbursement is considered.
+Dividends are not guaranteed and are declared solely at the discretion of the
+corporate board of directors following the close of the financial year. 4. The dividend plan parameters, including the retention factors and maximum
+                                                                      payout percentages, are filed with the state regulatory authority.
+The calculation of any potential dividend relies on the ratio of incurred losses to the
+final audited premium of the enterprise.                               Modifications to the dividend plan structure will only apply to future policy terms
+                                                                      and will not affect the current evaluation period.
 
-Policy packet                                                                                       Page 27
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+WC-DP-4003                                                            Blue Kettle Food Service, LLC | YW700400
 
 # Page 41
 
-POLICY PACKET
-Underwriting Support
+ARGENT BIRCH EMPLOYERS
+Workers Compensation and Employers Liability
 
-                                                                                    POLICY COPY 1F7EA01
+POLICY NUMBER: YW700400
+ EFFECTIVE: 04/01/2026
+   EXPIRES: 04/01/2027
 
-Policy jacket notices and state exceptions
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
+___________________________________________________________________________________________________
+NOTICE OF INFORMATION PRIVACY PRACTICES
+___________________________________________________________________________________________________
+POLICYHOLDER NOTICE - INFORMATION ABOUT YOUR POLICY
+___________________________________________________________________________________________________
 
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-028-01,State exception,Reviewed,Policy audit
-REF-028-02,Form filing note,Pending,Producer copy
-REF-028-03,Policy jacket notices and state exceptions,Indexed,State form
-REF-028-04,Prior policy comparison,Archive,Rating file
-REF-028-05,Rating worksheet,Reviewed,Policy audit
-REF-028-06,Producer correspondence,Pending,Producer copy
-REF-028-07,State exception,Indexed,State form
-REF-028-08,Form filing note,Archive,Rating file
-REF-028-09,Policy jacket notices and state exceptions,Reviewed,Policy audit
-REF-028-10,Prior policy comparison,Pending,Producer copy
-REF-028-11,Rating worksheet,Indexed,State form
-REF-028-12,Producer correspondence,Archive,Rating file
-REF-028-13,State exception,Reviewed,Policy audit
-REF-028-14,Form filing note,Pending,Producer copy
-REF-028-15,Policy jacket notices and state exceptions,Indexed,State form
-REF-028-16,Prior policy comparison,Archive,Rating file
-REF-028-17,Rating worksheet,Reviewed,Policy audit
-REF-028-18,Producer correspondence,Pending,Producer copy
-REF-028-19,State exception,Indexed,State form
-REF-028-20,Form filing note,Archive,Rating file
-REF-028-21,Policy jacket notices and state exceptions,Reviewed,Policy audit
-REF-028-22,Prior policy comparison,Pending,Producer copy
-REF-028-23,Rating worksheet,Indexed,State form
-REF-028-24,Producer correspondence,Archive,Rating file
-REF-028-25,State exception,Reviewed,Policy audit
-REF-028-26,Form filing note,Pending,Producer copy
-REF-028-27,Policy jacket notices and state exceptions,Indexed,State form
-REF-028-28,Prior policy comparison,Archive,Rating file
-REF-028-29,Rating worksheet,Reviewed,Policy audit
-REF-028-30,Producer correspondence,Pending,Producer copy
+      To the policyholder:
 
-Policy packet                                                                                   Page 28
+      A. This notice describes how medical and personal information collected during the administration of occupational injury claims is
+      handled.
+
+      We collect sensitive data, including medical histories, treatment records, and wage information, solely for the purpose of adjudicating
+      claims.
+
+      This information is obtained directly from medical providers, the injured worker, and the employer's administrative personnel.
+
+      We maintain strict physical, electronic, and procedural safeguards to protect this sensitive data from unauthorized access or disclosure.
+
+      Information may be shared with regulatory agencies, rating bureaus, and authorized third-party administrators as required by law.
+
+      B. We do not sell personal or medical information to marketing organizations or unaffiliated commercial entities.
+
+      Injured workers have the right to request access to their claim files and may submit corrections to any factual inaccuracies found within.
+
+      Employers are prohibited from using medical information obtained during the claims process for discriminatory employment decisions.
+
+      This notice is informational. Coverage is governed by the policy forms and endorsements issued with the declarations.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+WC-NP-2000                                                                             Blue Kettle Food Service, LLC | YW700400
 
 # Page 42
 
-POLICY PACKET
-POLICY COPY 1F7EA01
+ARGENT BIRCH EMPLOYERS                                                 POLICY NUMBER: YW700400
+Workers Compensation and Employers Liability                            EFFECTIVE: 04/01/2026
+                                                                          EXPIRES: 04/01/2027
+_____________________________________________________________________________________________
 
-Underwriting Support
+                        CONTRACTUAL TRANSFER AND ASSIGNMENT RULES
+_____________________________________________________________________________________________
 
-Policy jacket notices and state exceptions
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
+THIS FORM IS PART OF THE POLICY AND MUST BE READ WITH THE DECLARATIONS AND ENDORSEMENTS.
+_____________________________________________________________________________________________
 
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-029-01,Form filing note,Reviewed,Producer copy
-REF-029-02,Policy jacket notices and state exceptions,Pending,State form
-REF-029-03,Prior policy comparison,Indexed,Rating file
-REF-029-04,Rating worksheet,Archive,Policy audit
-REF-029-05,Producer correspondence,Reviewed,Producer copy
-REF-029-06,State exception,Pending,State form
-REF-029-07,Form filing note,Indexed,Rating file
-REF-029-08,Policy jacket notices and state exceptions,Archive,Policy audit
-REF-029-09,Prior policy comparison,Reviewed,Producer copy
-REF-029-10,Rating worksheet,Pending,State form
-REF-029-11,Producer correspondence,Indexed,Rating file
-REF-029-12,State exception,Archive,Policy audit
-REF-029-13,Form filing note,Reviewed,Producer copy
-REF-029-14,Policy jacket notices and state exceptions,Pending,State form
-REF-029-15,Prior policy comparison,Indexed,Rating file
-REF-029-16,Rating worksheet,Archive,Policy audit
-REF-029-17,Producer correspondence,Reviewed,Producer copy
-REF-029-18,State exception,Pending,State form
-REF-029-19,Form filing note,Indexed,Rating file
-REF-029-20,Policy jacket notices and state exceptions,Archive,Policy audit
-REF-029-21,Prior policy comparison,Reviewed,Producer copy
-REF-029-22,Rating worksheet,Pending,State form
-REF-029-23,Producer correspondence,Indexed,Rating file
-REF-029-24,State exception,Archive,Policy audit
-REF-029-25,Form filing note,Reviewed,Producer copy
-REF-029-26,Policy jacket notices and state exceptions,Pending,State form
-REF-029-27,Prior policy comparison,Indexed,Rating file
-REF-029-28,Rating worksheet,Archive,Policy audit
-REF-029-29,Producer correspondence,Reviewed,Producer copy
-REF-029-30,State exception,Pending,State form
+STATE / CLASS  ME / 3632                                 LOCATION  5
+---------------------------------------------------------------------------------------------
+CLASSIFICATION  Machine shop NOC                         PAYROLL / RATE  $378,170 / 1.15
+---------------------------------------------------------------------------------------------
+PREMIUM  $4,348                                          FORM  WC 00 03 13 04 21
+---------------------------------------------------------------------------------------------
 
-Policy packet
-Page 29
+Classification And Rating Reference                      The employer must notify us at least thirty days prior to any change in ownership or
+                                                         fundamental shift in corporate control.
+This form applies to Machine shop NOC in ME, class 
+3632, at Location 5.                                     Upon receiving notice of an ownership change, we will evaluate the new operational
+                                                         risks and determine whether to consent to the assignment.
+The information page shows estimated remuneration of 
+$378,170, manual rate 1.15, experience modification 
+1.04, and estimated premium $4,348.                      If consent is granted, an amendatory document will be issued detailing the effective
+                                                         date of the transfer and any revised rating parameters.
+Form WC 00 03 13 edition 04 21 supplies the 
+applicable policy terms for this classification.         If consent is withheld, the contract will be cancelled in accordance with the standard
+                                                         termination provisions.
+The rights and obligations established by this contract 
+are unique to the enterprise identified on the           In the event of the employer's death or bankruptcy, the legal representative or trustee
+administrative schedules.                                assumes the duties of the employer for the remainder of the term.
+
+The employer may not transfer, assign, or delegate any   The legal representative must continue to maintain payroll ledgers, report injuries,
+portion of this contract to a third party without our    and remit premium payments as required.
+explicit written consent.
+                                                         Unauthorized assignments are considered void and provide no protection to the
+In the event of a merger, acquisition, or corporate      unapproved successor entity.
+restructuring, the surviving entity does not 
+automatically inherit the coverage provisions.
+
+
+
+
+
+
+
+
+
+
+
+
+
+WC-CT-1009                                                             Blue Kettle Food Service, LLC | YW700400_
+
 
 # Page 43
 
-POLICY PACKET                                                                  POLICY COPY 1F7EA01
+ARGENT BIRCH EMPLOYERS                                                 POLICY NUMBER: YW700400
+Workers Compensation and Employers Liability                             EFFECTIVE: 04/01/2026
+                                                                           EXPIRES: 04/01/2027
+___________________________________________________________________________________________________
 
-Underwriting Support
+                     PREMIUM AUDIT AND REMUNERATION CONDITIONS
+___________________________________________________________________________________________________
 
-Policy jacket notices and state exceptions
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
+THIS FORM IS PART OF THE POLICY AND MUST BE READ WITH THE DECLARATIONS AND ENDORSEMENTS.
+___________________________________________________________________________________________________
 
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-030-01,Policy jacket notices and state exceptions,Reviewed,State form
-REF-030-02,Prior policy comparison,Pending,Rating file
-REF-030-03,Rating worksheet,Indexed,Policy audit
-REF-030-04,Producer correspondence,Archive,Producer copy
-REF-030-05,State exception,Reviewed,State form
-REF-030-06,Form filing note,Pending,Rating file
-REF-030-07,Policy jacket notices and state exceptions,Indexed,Policy audit
-REF-030-08,Prior policy comparison,Archive,Producer copy
-REF-030-09,Rating worksheet,Reviewed,State form
-REF-030-10,Producer correspondence,Pending,Rating file
-REF-030-11,State exception,Indexed,Policy audit
-REF-030-12,Form filing note,Archive,Producer copy
-REF-030-13,Policy jacket notices and state exceptions,Reviewed,State form
-REF-030-14,Prior policy comparison,Pending,Rating file
-REF-030-15,Rating worksheet,Indexed,Policy audit
-REF-030-16,Producer correspondence,Archive,Producer copy
-REF-030-17,State exception,Reviewed,State form
-REF-030-18,Form filing note,Pending,Rating file
-REF-030-19,Policy jacket notices and state exceptions,Indexed,Policy audit
-REF-030-20,Prior policy comparison,Archive,Producer copy
-REF-030-21,Rating worksheet,Reviewed,State form
-REF-030-22,Producer correspondence,Pending,Rating file
-REF-030-23,State exception,Indexed,Policy audit
-REF-030-24,Form filing note,Archive,Producer copy
-REF-030-25,Policy jacket notices and state exceptions,Reviewed,State form
-REF-030-26,Prior policy comparison,Pending,Rating file
-REF-030-27,Rating worksheet,Indexed,Policy audit
-REF-030-28,Producer correspondence,Archive,Producer copy
-REF-030-29,State exception,Reviewed,State form
-REF-030-30,Form filing note,Pending,Rating file
+STATE / CLASS NH / 9015                                         LOCATION 1
+....................................................................................................................................................................................
+CLASSIFICATION Building operations by owner                     PAYROLL / RATE $391,534 / 2.86
+....................................................................................................................................................................................
+PREMIUM $11,197                                                 FORM WC 00 00 00 C 07 23
+....................................................................................................................................................................................
 
-Policy packet                                                                             Page 30
+1. Classification And Rating Reference                            We reserve the authority to inspect these ledgers and related tax filings during
+                                                                  normal business hours.
+This form applies to Building operations by owner in NH, class 9015, at Location 1.
+                                                                  3. This inspection authority extends for up to three years following the expiration
+The information page shows estimated remuneration of $391,534, manual rate 2.86,  date or cancellation of the contract.
+experience modification 1.04, and estimated premium $11,197.
+                                                                  If the final computed premium exceeds the initial estimate, the employer must remit
+Form WC 00 00 00 C edition 07 23 supplies the applicable policy terms for this    the outstanding balance upon receipt of the final invoice.
+classification.
+                                                                  If the final computed premium is less than the initial estimate, a refund will be
+2. The premium shown on the schedules is an initial estimate based on anticipated  issued, subject to any minimum premium requirements.
+remuneration for the upcoming term.
+                                                                  Failure to provide requested ledgers or cooperate with the auditor may result in an
+At the conclusion of the policy period, a final computation determines the exact  estimated final billing.
+premium owed based on actual exposures.
+                                                                  4. Estimated final billings are calculated using a punitive multiplier applied to the
+The employer must maintain complete and accurate ledgers detailing all wages,    highest previous exposure recorded.
+bonuses, commissions, and substitute compensation provided to workers.
+                                                                  The employer may dispute an audit finding by submitting a written grievance along
+                                                                  with supporting documentation within thirty days of the final invoice date.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+WC-PA-1000                                                         Blue Kettle Food Service, LLC | YW700400
 
 # Page 44
 
-POLICY PACKET
-POLICY COPY 1F7EA01
+ARGENT BIRCH EMPLOYERS                                         POLICY NUMBER: YW700400
+Workers Compensation and Employers Liability                       EFFECTIVE: 04/01/2026
+                                                                     EXPIRES: 04/01/2027
+________________________________________________________________________________________
 
-Underwriting Support
+                       CLASSIFICATION ASSIGNMENT RULES
 
-Policy jacket notices and state exceptions
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
+________________________________________________________________________________________
+THIS FORM IS PART OF THE POLICY AND MUST BE READ WITH THE DECLARATIONS AND ENDORSEMENTS.
+________________________________________________________________________________________
 
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-031-01,Prior policy comparison,Reviewed,Rating file
-REF-031-02,Rating worksheet,Pending,Policy audit
-REF-031-03,Producer correspondence,Indexed,Producer copy
-REF-031-04,State exception,Archive,State form
-REF-031-05,Form filing note,Reviewed,Rating file
-REF-031-06,Policy jacket notices and state exceptions,Pending,Policy audit
-REF-031-07,Prior policy comparison,Indexed,Producer copy
-REF-031-08,Rating worksheet,Archive,State form
-REF-031-09,Producer correspondence,Reviewed,Rating file
-REF-031-10,State exception,Pending,Policy audit
-REF-031-11,Form filing note,Indexed,Producer copy
-REF-031-12,Policy jacket notices and state exceptions,Archive,State form
-REF-031-13,Prior policy comparison,Reviewed,Rating file
-REF-031-14,Rating worksheet,Pending,Policy audit
-REF-031-15,Producer correspondence,Indexed,Producer copy
-REF-031-16,State exception,Archive,State form
-REF-031-17,Form filing note,Reviewed,Rating file
-REF-031-18,Policy jacket notices and state exceptions,Pending,Policy audit
-REF-031-19,Prior policy comparison,Indexed,Producer copy
-REF-031-20,Rating worksheet,Archive,State form
-REF-031-21,Producer correspondence,Reviewed,Rating file
-REF-031-22,State exception,Pending,Policy audit
-REF-031-23,Form filing note,Indexed,Producer copy
-REF-031-24,Policy jacket notices and state exceptions,Archive,State form
-REF-031-25,Prior policy comparison,Reviewed,Rating file
-REF-031-26,Rating worksheet,Pending,Policy audit
-REF-031-27,Producer correspondence,Indexed,Producer copy
-REF-031-28,State exception,Archive,State form
-REF-031-29,Form filing note,Reviewed,Rating file
-REF-031-30,Policy jacket notices and state exceptions,Pending,Policy audit
+STATE / CLASS VT / 5606                                    LOCATION 2
+........................................................................................
+CLASSIFICATION Contractor executive supervisor             PAYROLL / RATE $404,635 / 4.35
+........................................................................................
+PREMIUM $17,601                                            FORM WC 00 00 01 A 04 21
+........................................................................................
 
-Policy packet
-Page 31
+A. Classification And Rating Reference                      If an enterprise consists of distinct and separate operations, multiple classifications
+                                                            may be authorized under specific manual rules.
+This form applies to Contractor executive supervisor in VT, 
+class 5606, at Location 2.                                  To qualify for multiple classifications, the employer must maintain physical
+                                                            separation of operations and distinct payroll records for each segment.
+The information page shows estimated remuneration of 
+$404,635, manual rate 4.35, experience modification         When payroll is not properly segregated in the ledgers, the entire remuneration will
+1.04, and estimated premium $17,601.                       be assigned to the highest-rated classification applicable.
+
+Form WC 00 00 01 A edition 04 21 supplies the applicable    C. Changes in business operations, product lines, or facility locations must be
+policy terms for this classification.                      reported promptly to ensure accurate classification assignment.
+
+The classification schedule assigns estimated               We retain the right to reclassify operations during the term or upon final audit if the
+remuneration to specific categories based on the            actual duties deviate from the initial descriptions.
+operational nature of the enterprise.
+                                                            Reclassification may result in retroactive premium adjustments affecting the current
+B. The governing classification is determined by the        and immediately preceding policy periods.
+operations that generate the largest amount of payroll, 
+excluding standard exceptions.                              State-specific manual rules supersede general classification guidelines whenever a
+                                                            conflict arises regarding proper assignment.
+Standard exceptions include clerical office employees, 
+outside salespersons, and drivers, provided they meet 
+strict operational criteria.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+WC-CA-1001                                                  Blue Kettle Food Service, LLC | YW700400
 
 # Page 45
 
-POLICY PACKET                                                       POLICY COPY 1F7EA01
-Underwriting Support
+ARGENT BIRCH EMPLOYERS                                                 POLICY NUMBER: YW700400
+Workers Compensation and Employers Liability                             EFFECTIVE: 04/01/2026
+                                                                           EXPIRES: 04/01/2027
+______________________________________________________________________________________________________
 
-Policy jacket notices and state exceptions
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
+                                EXPERIENCE RATING PLAN APPLICATION
+______________________________________________________________________________________________________
 
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-032-01,Rating worksheet,Reviewed,Policy audit
-REF-032-02,Producer correspondence,Pending,Producer copy
-REF-032-03,State exception,Indexed,State form
-REF-032-04,Form filing note,Archive,Rating file
-REF-032-05,Policy jacket notices and state exceptions,Reviewed,Policy audit
-REF-032-06,Prior policy comparison,Pending,Producer copy
-REF-032-07,Rating worksheet,Indexed,State form
-REF-032-08,Producer correspondence,Archive,Rating file
-REF-032-09,State exception,Reviewed,Policy audit
-REF-032-10,Form filing note,Pending,Producer copy
-REF-032-11,Policy jacket notices and state exceptions,Indexed,State form
-REF-032-12,Prior policy comparison,Archive,Rating file
-REF-032-13,Rating worksheet,Reviewed,Policy audit
-REF-032-14,Producer correspondence,Pending,Producer copy
-REF-032-15,State exception,Indexed,State form
-REF-032-16,Form filing note,Archive,Rating file
-REF-032-17,Policy jacket notices and state exceptions,Reviewed,Policy audit
-REF-032-18,Prior policy comparison,Pending,Producer copy
-REF-032-19,Rating worksheet,Indexed,State form
-REF-032-20,Producer correspondence,Archive,Rating file
-REF-032-21,State exception,Reviewed,Policy audit
-REF-032-22,Form filing note,Pending,Producer copy
-REF-032-23,Policy jacket notices and state exceptions,Indexed,State form
-REF-032-24,Prior policy comparison,Archive,Rating file
-REF-032-25,Rating worksheet,Reviewed,Policy audit
-REF-032-26,Producer correspondence,Pending,Producer copy
-REF-032-27,State exception,Indexed,State form
-REF-032-28,Form filing note,Archive,Rating file
-REF-032-29,Policy jacket notices and state exceptions,Reviewed,Policy audit
-REF-032-30,Prior policy comparison,Pending,Producer copy
+THIS FORM IS PART OF THE POLICY AND MUST BE READ WITH THE DECLARATIONS AND ENDORSEMENTS.
+______________________________________________________________________________________________________
 
-Policy packet                                                                    Page 32
+STATE / CLASS  CT / 8810                                     LOCATION  3
+------------------------------------------------------------------------------------------------------
+CLASSIFICATION  Clerical office employees                    PAYROLL / RATE  $416,547 / 1.15
+------------------------------------------------------------------------------------------------------
+PREMIUM  $4,790                                              FORM  WC 00 00 00 C 04 21
+------------------------------------------------------------------------------------------------------
+
+Classification And Rating Reference                          A factor less than unity reflects favorable historical loss performance, yielding a
+                                                             premium credit.
+This form applies to Clerical office employees in CT, class
+8810, at Location 3.                                         The modification factor applies to the contract as a whole unless a state-specific
+                                                             endorsement dictates intrastate application.
+The information page shows estimated remuneration of
+$416,547, manual rate 1.15, experience modification 1.04,     If the rating bureau revises the modification factor during the term, the premium will
+and estimated premium $4,790.                                be adjusted retroactively to the effective date of the revision.
+
+Form WC 00 00 00 C edition 04 21 supplies the applicable       Changes in ownership, corporate structure, or combinability status must be reported
+policy terms for this classification.                        within ninety days to determine the impact on the experience rating.
+
+The experience modification factor adjusts the manual        Failure to report ownership changes may result in the application of a penalty
+premium based on the historical loss record of the enterprise. modifier or the forfeiture of a favorable experience credit.
+
+This factor is calculated by an authorized rating bureau    The employer cannot opt out of the experience rating plan if the enterprise meets the
+using payroll and loss data from the designated experience   minimum premium eligibility threshold.
+period.
+                                                             Disputes regarding the statistical data used to calculate the modification factor must
+An experience modification factor greater than unity         be directed to the authorized rating bureau rather than the carrier.
+indicates higher-than-average historical losses, resulting
+in a premium surcharge.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+WC-ER-1002                                                               Blue Kettle Food Service, LLC | YW700400
 
 # Page 46
 
-POLICY PACKET
-POLICY COPY 1F7EA01
+ARGENT BIRCH EMPLOYERS                                                 POLICY NUMBER: YW700400
+Workers Compensation and Employers Liability                               EFFECTIVE: 04/01/2026
+                                                                             EXPIRES: 04/01/2027
+________________________________________________________________________________________________
 
-Underwriting Support
+                 CONNECTICUT STATE AMENDATORY ENDORSEMENT
+________________________________________________________________________________________________
 
-Policy jacket notices and state exceptions
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
+THIS ENDORSEMENT CHANGES THE POLICY. PLEASE READ IT CAREFULLY.
+________________________________________________________________________________________________
 
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-033-01,Producer correspondence,Reviewed,Producer copy
-REF-033-02,State exception,Pending,State form
-REF-033-03,Form filing note,Indexed,Rating file
-REF-033-04,Policy jacket notices and state exceptions,Archive,Policy audit
-REF-033-05,Prior policy comparison,Reviewed,Producer copy
-REF-033-06,Rating worksheet,Pending,State form
-REF-033-07,Producer correspondence,Indexed,Rating file
-REF-033-08,State exception,Archive,Policy audit
-REF-033-09,Form filing note,Reviewed,Producer copy
-REF-033-10,Policy jacket notices and state exceptions,Pending,State form
-REF-033-11,Prior policy comparison,Indexed,Rating file
-REF-033-12,Rating worksheet,Archive,Policy audit
-REF-033-13,Producer correspondence,Reviewed,Producer copy
-REF-033-14,State exception,Pending,State form
-REF-033-15,Form filing note,Indexed,Rating file
-REF-033-16,Policy jacket notices and state exceptions,Archive,Policy audit
-REF-033-17,Prior policy comparison,Reviewed,Producer copy
-REF-033-18,Rating worksheet,Pending,State form
-REF-033-19,Producer correspondence,Indexed,Rating file
-REF-033-20,State exception,Archive,Policy audit
-REF-033-21,Form filing note,Reviewed,Producer copy
-REF-033-22,Policy jacket notices and state exceptions,Pending,State form
-REF-033-23,Prior policy comparison,Indexed,Rating file
-REF-033-24,Rating worksheet,Archive,Policy audit
-REF-033-25,Producer correspondence,Reviewed,Producer copy
-REF-033-26,State exception,Pending,State form
-REF-033-27,Form filing note,Indexed,Rating file
-REF-033-28,Policy jacket notices and state exceptions,Archive,Policy audit
-REF-033-29,Prior policy comparison,Reviewed,Producer copy
-REF-033-30,Rating worksheet,Pending,State form
+STATE / CLASS  CT / 8017                                  LOCATION  4
+------------------------------------------------------------------------------------------------
+CLASSIFICATION  Retail store - all employees              PAYROLL / RATE  $427,355 / 4.35
+------------------------------------------------------------------------------------------------
+PREMIUM  $18,589                                          FORM  WC 00 00 00 C 04 21
+------------------------------------------------------------------------------------------------
 
-Policy packet
-Page 33
+1. Classification And Rating Reference                      The employer is required to establish a safety and health committee if the enterprise
+                                                            exceeds the statutory employee count threshold.
+This form applies to Retail store - all employees in CT,
+class 8017, at Location 4.                                  3. Premium discounts may be available for enterprises that successfully implement
+                                                            and maintain an approved workplace safety program.
+The information page shows estimated remuneration of
+$427,355, manual rate 4.35, experience modification         Cancellation notices must be sent via certified mail or an equivalent method that
+1.04, and estimated premium $18,589.                       provides a definitive receipt of delivery.
+
+Form WC 00 00 00 C edition 04 21 supplies the               The state workers compensation commission retains jurisdiction over all disputes
+applicable policy terms for this classification.            regarding benefit eligibility and medical necessity.
+
+2. This document aligns the contract provisions with the    We will pay all valid claims in accordance with the state's average weekly wage
+specific regulatory framework of the State of               calculations and statutory benefit schedules.
+Connecticut.
+                                                            4. Subrogation actions pursued in Connecticut must account for the state's specific
+The employer must participate in the state-approved         rules regarding the apportionment of legal fees.
+managed care plan if one has been established and
+authorized for the enterprise.                              Any standard contract language that restricts the rights granted to injured workers
+                                                            under Connecticut law is void and unenforceable.
+Injured workers must seek initial treatment from the
+designated medical provider network, except in cases of
+immediate emergency.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+WC-CT-3001                                                                Blue Kettle Food Service, LLC | YW700400
 
 # Page 47
 
-POLICY PACKET
+ARGENT BIRCH EMPLOYERS                                                 POLICY NUMBER: YW700400
+Workers Compensation and Employers Liability                             EFFECTIVE: 04/01/2026
+                                                                           EXPIRES: 04/01/2027
+____________________________________________________________________________________________________
 
-Underwriting Support
+                         EMPLOYER DUTIES IN THE EVENT OF INJURY
+____________________________________________________________________________________________________
 
-[POLICY COPY 1F7EA01]
+THIS FORM IS PART OF THE POLICY AND MUST BE READ WITH THE DECLARATIONS AND ENDORSEMENTS.
+____________________________________________________________________________________________________
 
-Policy jacket notices and state exceptions
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
+STATE / CLASS  MA / 8742                                  LOCATION  5
+----------------------------------------------------------------------------------------------------
+CLASSIFICATION  Outside salespersons                      PAYROLL / RATE  $435,963 / 0.27
+----------------------------------------------------------------------------------------------------
+PREMIUM  $1,177                                           FORM  WC 00 00 00 C 04 21
+----------------------------------------------------------------------------------------------------
 
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-034-01,State exception,Reviewed,State form
-REF-034-02,Form filing note,Pending,Rating file
-REF-034-03,Policy jacket notices and state exceptions,Indexed,Policy audit
-REF-034-04,Prior policy comparison,Archive,Producer copy
-REF-034-05,Rating worksheet,Reviewed,State form
-REF-034-06,Producer correspondence,Pending,Rating file
-REF-034-07,State exception,Indexed,Policy audit
-REF-034-08,Form filing note,Archive,Producer copy
-REF-034-09,Policy jacket notices and state exceptions,Reviewed,State form
-REF-034-10,Prior policy comparison,Pending,Rating file
-REF-034-11,Rating worksheet,Indexed,Policy audit
-REF-034-12,Producer correspondence,Archive,Producer copy
-REF-034-13,State exception,Reviewed,State form
-REF-034-14,Form filing note,Pending,Rating file
-REF-034-15,Policy jacket notices and state exceptions,Indexed,Policy audit
-REF-034-16,Prior policy comparison,Archive,Producer copy
-REF-034-17,Rating worksheet,Reviewed,State form
-REF-034-18,Producer correspondence,Pending,Rating file
-REF-034-19,State exception,Indexed,Policy audit
-REF-034-20,Form filing note,Archive,Producer copy
-REF-034-21,Policy jacket notices and state exceptions,Reviewed,State form
-REF-034-22,Prior policy comparison,Pending,Rating file
-REF-034-23,Rating worksheet,Indexed,Policy audit
-REF-034-24,Producer correspondence,Archive,Producer copy
-REF-034-25,State exception,Reviewed,State form
-REF-034-26,Form filing note,Pending,Rating file
-REF-034-27,Policy jacket notices and state exceptions,Indexed,Policy audit
-REF-034-28,Prior policy comparison,Archive,Producer copy
-REF-034-29,Rating worksheet,Reviewed,State form
-REF-034-30,Producer correspondence,Pending,Rating file
+A. Classification And Rating Reference                     The employer must forward all legal notices, demands, or administrative
+                                                           correspondence related to the injury immediately upon receipt.
+This form applies to Outside salespersons in MA, class 8742, at Location 5.
+                                                           Full cooperation is required during the investigation, settlement negotiations, and
+The information page shows estimated remuneration of $435,963, manual rate 0.27,
+experience modification 1.04, and estimated premium $1,177.  any subsequent administrative hearings.
 
-Policy packet
-Page 34
+Form WC 00 00 00 C edition 04 21 supplies the applicable policy terms for this   The employer must not voluntarily assume any liability, make unauthorized
+classification.                                            payments, or incur expenses without our prior written consent.
+
+Upon the occurrence of an occupational injury or disease, the employer must   C. Interference with our subrogation rights or investigation processes constitutes a
+provide immediate medical attention to the affected worker.  material breach of the contract conditions.
+
+B. The employer must notify us or our authorized representative as soon as   The employer must facilitate interviews with witnesses, supervisors, and the injured
+practicable following any incident that may result in a claim.  worker to establish the facts of the incident.
+
+Written reports detailing the time, place, circumstances, and identities of involved   Failure to report injuries within the statutory timeframe may result in administrative
+parties must be submitted promptly.                        fines, which are the sole responsibility of the employer.
+
+                                                           We reserve the right to inspect the premises where the injury occurred to determine
+                                                           causation and assess future risk mitigation.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+WC-ED-1004                                                             Blue Kettle Food Service, LLC | YW700400
 
 # Page 48
 
-POLICY PACKET
-                                                                                   POLICY COPY 1F7EA01
+ARGENT BIRCH EMPLOYERS | WORKERS COMPENSATION AND EMPLOYERS LIABILITY
+Forms and Endorsements Schedule
+YW700400
+04/01/2026 - 04/01/2027
 
-Underwriting Support
+| Form numbers and edition dates apply with the state and classification schedules.
 
-Policy jacket notices and state exceptions
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
+WC 00 00 01 A      Schedule entry WC 00 00 01 A records edition 07 23; title Information Page; state CT.
+                   EDITION 07 23                                            TITLE Information Page
+                   STATE CT                                                 CLASS 8810
+                   SOURCE Endorsement attached
 
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-035-01,Form filing note,Reviewed,Rating file
-REF-035-02,Policy jacket notices and state exceptions,Pending,Policy audit
-REF-035-03,Prior policy comparison,Indexed,Producer copy
-REF-035-04,Rating worksheet,Archive,State form
-REF-035-05,Producer correspondence,Reviewed,Rating file
-REF-035-06,State exception,Pending,Policy audit
-REF-035-07,Form filing note,Indexed,Producer copy
-REF-035-08,Policy jacket notices and state exceptions,Archive,State form
-REF-035-09,Prior policy comparison,Reviewed,Rating file
-REF-035-10,Rating worksheet,Pending,Policy audit
-REF-035-11,Producer correspondence,Indexed,Producer copy
-REF-035-12,State exception,Archive,State form
-REF-035-13,Form filing note,Reviewed,Rating file
-REF-035-14,Policy jacket notices and state exceptions,Pending,Policy audit
-REF-035-15,Prior policy comparison,Indexed,Producer copy
-REF-035-16,Rating worksheet,Archive,State form
-REF-035-17,Producer correspondence,Reviewed,Rating file
-REF-035-18,State exception,Pending,Policy audit
-REF-035-19,Form filing note,Indexed,Producer copy
-REF-035-20,Policy jacket notices and state exceptions,Archive,State form
-REF-035-21,Prior policy comparison,Reviewed,Rating file
-REF-035-22,Rating worksheet,Pending,Policy audit
-REF-035-23,Producer correspondence,Indexed,Producer copy
-REF-035-24,State exception,Archive,State form
-REF-035-25,Form filing note,Reviewed,Rating file
-REF-035-26,Policy jacket notices and state exceptions,Pending,Policy audit
-REF-035-27,Prior policy comparison,Indexed,Producer copy
-REF-035-28,Rating worksheet,Archive,State form
-REF-035-29,Producer correspondence,Reviewed,Rating file
-REF-035-30,State exception,Pending,Policy audit
+WC 00 00 00 C      Edition: 01 15. The remaining values below apply to this same scheduled item.
+                   TITLE Voluntary Compensation Endorsement                 STATE CT
+                   CLASS 8017                                               SOURCE Endorsement attached
 
-Policy packet                                                                                        Page 35
+WC 00 00 00 C      WC 00 00 00 C - Edition: 01 15 / Title: Workers Compensation and Employers Liability Policy / State: MA
+                   Class: 8742 / Source: Endorsement attached
+
+WC 04 03 06        WC 04 03 06. Edition is 01 15. Title is Workers Compensation and Employers Liability Policy. State is MA. Class is 5190. Source is Policy jacket.
+                   EDITION 01 15
+                   TITLE Workers Compensation and Employers Liability Policy
+                   STATE MA
+                   CLASS 5190
+                   SOURCE Policy jacket
+
+WC 00 00 01 A      Schedule entry WC 00 00 01 A records edition 01 15; title Voluntary Compensation Endorsement; state RI.
+                   EDITION 01 15                                            TITLE Voluntary Compensation Endorsement
+                   STATE RI                                                 CLASS 9082
+                   SOURCE Policy jacket
+
+WC 00 00 01 A      Edition: 01 15. The remaining values below apply to this same scheduled item.
+                   TITLE Voluntary Compensation Endorsement                 STATE ME
+                   CLASS 3632                                               SOURCE Policy jacket
+
+WC 00 00 00 C      WC 00 00 00 C - Edition: 01 15 / Title: Information Page / State: NH
+                   Class: 9015 / Source: Policy jacket
+
+WC 00 00 01 A      WC 00 00 01 A. Edition is 04 21. Title is Waiver of Our Right to Recover. State is VT. Class is 5606. Source is Endorsement attached.
+                   EDITION 04 21
+                   TITLE Waiver of Our Right to Recover
+                   STATE VT
+                   CLASS 5606
+                   SOURCE Endorsement attached
+
+WC 04 03 06        Schedule entry WC 04 03 06 records edition 01 15; title Workers Compensation and Employers Liability Policy; state CT.
+                   EDITION 01 15                                            TITLE Workers Compensation and Employers Liability Policy
+                   STATE CT                                                 CLASS 8810
+                   SOURCE Policy jacket
+
+WC 04 03 06        Edition: 04 21. The remaining values below apply to this same scheduled item.
+                   TITLE Workers Compensation and Employers Liability Policy   STATE CT
+                   CLASS 8017                                               SOURCE Policy jacket
+
+WC 04 03 06        WC 04 03 06 - Edition: 01 15 / Title: Voluntary Compensation Endorsement / State: MA
+                   Class: 8742 / Source: Policy jacket
+
+
+_________________________________________________________________________________________________________________________
+Schedule Conditions                                          Reading This Schedule
+Entries on this schedule apply only to the coverage part,    Read scheduled lines together with the declarations and attached forms to
+location, class, state, or form reference shown on the       determine the complete scheduled item.
+same row.
+_________________________________________________________________________________________________________________________
+
+
+Blue Kettle Food Service, LLC                                                                                  WC DS 04
 
 # Page 49
 
-POLICY PACKET                                                                    POLICY COPY 1F7EA01
+ARGENT BIRCH EMPLOYERS | WORKERS COMPENSATION AND EMPLOYERS LIABILITY
+Forms and Endorsements Schedule - Continued 2
+YW700400
+04/01/2026 - 04/01/2027
 
-Underwriting Support
+| Form numbers and edition dates apply with the state and classification schedules.
 
-Policy jacket notices and state exceptions
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
+WC 04 03 06     WC 04 03 06. Edition is 04 21. Title is Waiver of Our Right to Recover. State is MA. Class is 5190. Source is Policy jacket.
+               EDITION 04 21
+               TITLE Waiver of Our Right to Recover
+               STATE MA
+               CLASS 5190
+               SOURCE Policy jacket
 
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-036-01,Policy jacket notices and state exceptions,Reviewed,Policy audit
-REF-036-02,Prior policy comparison,Pending,Producer copy
-REF-036-03,Rating worksheet,Indexed,State form
-REF-036-04,Producer correspondence,Archive,Rating file
-REF-036-05,State exception,Reviewed,Policy audit
-REF-036-06,Form filing note,Pending,Producer copy
-REF-036-07,Policy jacket notices and state exceptions,Indexed,State form
-REF-036-08,Prior policy comparison,Archive,Rating file
-REF-036-09,Rating worksheet,Reviewed,Policy audit
-REF-036-10,Producer correspondence,Pending,Producer copy
-REF-036-11,State exception,Indexed,State form
-REF-036-12,Form filing note,Archive,Rating file
-REF-036-13,Policy jacket notices and state exceptions,Reviewed,Policy audit
-REF-036-14,Prior policy comparison,Pending,Producer copy
-REF-036-15,Rating worksheet,Indexed,State form
-REF-036-16,Producer correspondence,Archive,Rating file
-REF-036-17,State exception,Reviewed,Policy audit
-REF-036-18,Form filing note,Pending,Producer copy
-REF-036-19,Policy jacket notices and state exceptions,Indexed,State form
-REF-036-20,Prior policy comparison,Archive,Rating file
-REF-036-21,Rating worksheet,Reviewed,Policy audit
-REF-036-22,Producer correspondence,Pending,Producer copy
-REF-036-23,State exception,Indexed,State form
-REF-036-24,Form filing note,Archive,Rating file
-REF-036-25,Policy jacket notices and state exceptions,Reviewed,Policy audit
-REF-036-26,Prior policy comparison,Pending,Producer copy
-REF-036-27,Rating worksheet,Indexed,State form
-REF-036-28,Producer correspondence,Archive,Rating file
-REF-036-29,State exception,Reviewed,Policy audit
-REF-036-30,Form filing note,Pending,Producer copy
+WC 00 03 13     Schedule entry WC 00 03 13 records edition 07 23; title Waiver of Our Right to Recover; state RI.
+               EDITION 07 23                                      TITLE Waiver of Our Right to Recover
+               STATE RI                                           CLASS 9082
+               SOURCE Policy jacket
 
-Policy packet                                                                                Page 36
+WC 00 00 01 A   Edition: 07 23. The remaining values below apply to this same scheduled item.
+               TITLE Information Page                             STATE ME
+               CLASS 3632                                         SOURCE Policy jacket
+
+WC 00 03 13     WC 00 03 13 - Edition: 04 21 / Title: Voluntary Compensation Endorsement / State: NH
+               Class: 9015 / Source: Policy jacket
+
+WC 00 00 01 A   WC 00 00 01 A. Edition is 04 21. Title is Information Page. State is VT. Class is 5606. Source is Policy jacket.
+               EDITION 04 21
+               TITLE Information Page
+               STATE VT
+               CLASS 5606
+               SOURCE Policy jacket
+
+WC 04 03 06     Schedule entry WC 04 03 06 records edition 01 15; title Information Page; state CT.
+               EDITION 01 15                                      TITLE Information Page
+               STATE CT                                           CLASS 8810
+               SOURCE Policy jacket
+
+WC 00 00 00 C   Edition: 04 21. The remaining values below apply to this same scheduled item.
+               TITLE Waiver of Our Right to Recover               STATE CT
+               CLASS 8017                                         SOURCE Policy jacket
+
+WC 00 03 13     WC 00 03 13 - Edition: 04 21 / Title: Waiver of Our Right to Recover / State: MA
+               Class: 8742 / Source: Policy jacket
+
+WC 04 03 06     WC 04 03 06. Edition is 07 23. Title is Information Page. State is MA. Class is 5190. Source is Policy jacket.
+               EDITION 07 23
+               TITLE Information Page
+               STATE MA
+               CLASS 5190
+               SOURCE Policy jacket
+
+WC 00 03 13     Schedule entry WC 00 03 13 records edition 01 15; title Workers Compensation and Employers Liability Policy; state RI.
+               EDITION 01 15                                      TITLE Workers Compensation and Employers Liability Policy
+               STATE RI                                           CLASS 9082
+               SOURCE Policy jacket
+
+WC 00 03 13     Edition: 01 15. The remaining values below apply to this same scheduled item.
+               TITLE Information Page                             STATE ME
+               CLASS 3632                                         SOURCE Policy jacket
+
+
++---------------------------------------------------------+ +---------------------------------------------------------+
+| Schedule Conditions                                     | | Reading This Schedule                                   |
+| Entries on this schedule apply only to the coverage     | | Read scheduled lines together with the declarations and |
+| part, location, class, state, or form reference shown   | | attached forms to determine the complete scheduled     |
+| on the same row.                                        | | item.                                                   |
++---------------------------------------------------------+ +---------------------------------------------------------+
+
+Blue Kettle Food Service, LLC                                                                                      WC DS 04
 
 # Page 50
 
-POLICY PACKET                                                                  POLICY COPY 1F7EA01
+ARGENT BIRCH EMPLOYERS | WORKERS COMPENSATION AND EMPLOYERS LIABILITY                     YW700400
+**Forms and Endorsements Schedule - Continued 3**                   04/01/2026 - 04/01/2027
 
-# Underwriting Support
+| Form numbers and edition dates apply with the state and classification schedules. |
+| --- |
 
-## Policy jacket notices and state exceptions
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
+**WC 04 03 06**       **WC 04 03 06** - Edition: 04 21 / Title: Workers Compensation and Employers Liability Policy / State: NH
+                   Class: 9015 / Source: Policy jacket
 
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-037-01,Prior policy comparison,Reviewed,Producer copy
-REF-037-02,Rating worksheet,Pending,State form
-REF-037-03,Producer correspondence,Indexed,Rating file
-REF-037-04,State exception,Archive,Policy audit
-REF-037-05,Form filing note,Reviewed,Producer copy
-REF-037-06,Policy jacket notices and state exceptions,Pending,State form
-REF-037-07,Prior policy comparison,Indexed,Rating file
-REF-037-08,Rating worksheet,Archive,Policy audit
-REF-037-09,Producer correspondence,Reviewed,Producer copy
-REF-037-10,State exception,Pending,State form
-REF-037-11,Form filing note,Indexed,Rating file
-REF-037-12,Policy jacket notices and state exceptions,Archive,Policy audit
-REF-037-13,Prior policy comparison,Reviewed,Producer copy
-REF-037-14,Rating worksheet,Pending,State form
-REF-037-15,Producer correspondence,Indexed,Rating file
-REF-037-16,State exception,Archive,Policy audit
-REF-037-17,Form filing note,Reviewed,Producer copy
-REF-037-18,Policy jacket notices and state exceptions,Pending,State form
-REF-037-19,Prior policy comparison,Indexed,Rating file
-REF-037-20,Rating worksheet,Archive,Policy audit
-REF-037-21,Producer correspondence,Reviewed,Producer copy
-REF-037-22,State exception,Pending,State form
-REF-037-23,Form filing note,Indexed,Rating file
-REF-037-24,Policy jacket notices and state exceptions,Archive,Policy audit
-REF-037-25,Prior policy comparison,Reviewed,Producer copy
-REF-037-26,Rating worksheet,Pending,State form
-REF-037-27,Producer correspondence,Indexed,Rating file
-REF-037-28,State exception,Archive,Policy audit
-REF-037-29,Form filing note,Reviewed,Producer copy
-REF-037-30,Policy jacket notices and state exceptions,Pending,State form
+**WC 04 03 06**       WC 04 03 06. Edition is 07 23. Title is Voluntary Compensation Endorsement. State is VT. Class is 5606. Source is Policy jacket.
+                   EDITION  **07 23**
+                   TITLE  **Voluntary Compensation Endorsement**
+                   STATE  **VT**
+                   CLASS  **5606**
+                   SOURCE  **Policy jacket**
 
-Policy packet                                                                                   Page 37
+**WC 00 03 13**       Schedule entry WC 00 03 13 records edition 07 23; title Workers Compensation and Employers Liability Policy; state CT.
+                   EDITION  **07 23**                                        TITLE  **Workers Compensation and Employers Liability Policy**
+                   STATE  **CT**                                           CLASS  **8810**
+                   SOURCE  **Policy jacket**
+
+**WC 00 03 13**       Edition: **07 23.** The remaining values below apply to this same scheduled item.
+                   TITLE  **Information Page**                              STATE  **CT**
+                   CLASS  **8017**                                          SOURCE  **Policy jacket**
+
+**WC 04 03 06**       **WC 04 03 06** - Edition: 01 15 / Title: Voluntary Compensation Endorsement / State: MA
+                   Class: 8742 / Source: Policy jacket
+
+**WC 00 00 00 C**     WC 00 00 00 C. Edition is 04 21. Title is Waiver of Our Right to Recover. State is MA. Class is 5190. Source is Policy jacket.
+                   EDITION  **04 21**
+                   TITLE  **Waiver of Our Right to Recover**
+                   STATE  **MA**
+                   CLASS  **5190**
+                   SOURCE  **Policy jacket**
+
+**WC 04 03 06**       Schedule entry WC 04 03 06 records edition 07 23; title Voluntary Compensation Endorsement; state RI.
+                   EDITION  **07 23**                                        TITLE  **Voluntary Compensation Endorsement**
+                   STATE  **RI**                                           CLASS  **9082**
+                   SOURCE  **Policy jacket**
+
+**WC 00 03 13**       Edition: **04 21.** The remaining values below apply to this same scheduled item.
+                   TITLE  **Workers Compensation and Employers Liability Policy**         STATE  **ME**
+                   CLASS  **3632**                                          SOURCE  **Policy jacket**
+
+**WC 00 00 00 C**     **WC 00 00 00 C** - Edition: 07 23 / Title: Workers Compensation and Employers Liability Policy / State: NH
+                   Class: 9015 / Source: Policy jacket
+
+**WC 00 00 01 A**     WC 00 00 01 A. Edition is 04 21. Title is Voluntary Compensation Endorsement. State is VT. Class is 5606. Source is Policy jacket.
+                   EDITION  **04 21**
+                   TITLE  **Voluntary Compensation Endorsement**
+                   STATE  **VT**
+                   CLASS  **5606**
+                   SOURCE  **Policy jacket**
+
+**WC 00 00 00 C**     Schedule entry WC 00 00 00 C records edition 04 21; title Information Page; state CT.
+                   EDITION  **04 21**                                        TITLE  **Information Page**
+                   STATE  **CT**                                           CLASS  **8810**
+                   SOURCE  **Policy jacket**
+
++-------------------------------------------------------------+ +-------------------------------------------------------------+
+| **Schedule Conditions**                                     | | **Reading This Schedule**                                   |
+| Entries on this schedule apply only to the coverage part,   | | Read scheduled lines together with the declarations and     |
+| location, class, state, or form reference shown on the same | | attached forms to determine the complete scheduled item.   |
+| row.                                                        | |                                                             |
++-------------------------------------------------------------+ +-------------------------------------------------------------+
+
+Blue Kettle Food Service, LLC                                                                                          **WC DS 04**
 
 # Page 51
 
-POLICY PACKET                                                                  [POLICY COPY 1F7EA01]
+ARGENT BIRCH EMPLOYERS | WORKERS COMPENSATION AND EMPLOYERS LIABILITY
+Forms and Endorsements Schedule - Continued 4
+YW700400
+04/01/2026 - 04/01/2027
 
-# Underwriting Support
+| Form numbers and edition dates apply with the state and classification schedules.
 
-***
+WC 00 00 00 C       Edition: 04 21. The remaining values below apply to this same scheduled item.
+                    TITLE Voluntary Compensation Endorsement               STATE CT
+                    CLASS 8017                                            SOURCE Policy jacket
 
-### Policy jacket notices and state exceptions
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
+WC 00 00 00 C       WC 00 00 00 C - Edition: 04 21 / Title: Information Page / State: MA
+                    Class: 8742 / Source: Policy jacket
 
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-038-01,Rating worksheet,Reviewed,State form
-REF-038-02,Producer correspondence,Pending,Rating file
-REF-038-03,State exception,Indexed,Policy audit
-REF-038-04,Form filing note,Archive,Producer copy
-REF-038-05,Policy jacket notices and state exceptions,Reviewed,State form
-REF-038-06,Prior policy comparison,Pending,Rating file
-REF-038-07,Rating worksheet,Indexed,Policy audit
-REF-038-08,Producer correspondence,Archive,Producer copy
-REF-038-09,State exception,Reviewed,State form
-REF-038-10,Form filing note,Pending,Rating file
-REF-038-11,Policy jacket notices and state exceptions,Indexed,Policy audit
-REF-038-12,Prior policy comparison,Archive,Producer copy
-REF-038-13,Rating worksheet,Reviewed,State form
-REF-038-14,Producer correspondence,Pending,Rating file
-REF-038-15,State exception,Indexed,Policy audit
-REF-038-16,Form filing note,Archive,Producer copy
-REF-038-17,Policy jacket notices and state exceptions,Reviewed,State form
-REF-038-18,Prior policy comparison,Pending,Rating file
-REF-038-19,Rating worksheet,Indexed,Policy audit
-REF-038-20,Producer correspondence,Archive,Producer copy
-REF-038-21,State exception,Reviewed,State form
-REF-038-22,Form filing note,Pending,Rating file
-REF-038-23,Policy jacket notices and state exceptions,Indexed,Policy audit
-REF-038-24,Prior policy comparison,Archive,Producer copy
-REF-038-25,Rating worksheet,Reviewed,State form
-REF-038-26,Producer correspondence,Pending,Rating file
-REF-038-27,State exception,Indexed,Policy audit
-REF-038-28,Form filing note,Archive,Producer copy
-REF-038-29,Policy jacket notices and state exceptions,Reviewed,State form
-REF-038-30,Prior policy comparison,Pending,Rating file
+WC 00 03 13         WC 00 03 13. Edition is 01 15. Title is Workers Compensation and Employers Liability Policy. State is MA. Class is 5190. Source is Policy jacket.
+                    EDITION 01 15
+                    TITLE Workers Compensation and Employers Liability Policy
+                    STATE MA
+                    CLASS 5190
+                    SOURCE Policy jacket
 
-***
+WC 00 03 13         Schedule entry WC 00 03 13 records edition 04 21; title Workers Compensation and Employers Liability Policy; state RI.
+                    EDITION 04 21                                         TITLE Workers Compensation and Employers Liability Policy
+                    STATE RI                                              CLASS 9082
+                    SOURCE Policy jacket
 
-Policy packet                                                                                Page 38
+WC 00 00 01 A       Edition: 07 23. The remaining values below apply to this same scheduled item.
+                    TITLE Information Page                                STATE ME
+                    CLASS 3632                                            SOURCE Policy jacket
+
+WC 04 03 06         WC 04 03 06 - Edition: 04 21 / Title: Waiver of Our Right to Recover / State: NH
+                    Class: 9015 / Source: Policy jacket
+
+WC 00 00 00 C       WC 00 00 00 C. Edition is 07 23. Title is Workers Compensation and Employers Liability Policy. State is VT. Class is 5606. Source is Policy jacket.
+                    EDITION 07 23
+                    TITLE Workers Compensation and Employers Liability Policy
+                    STATE VT
+                    CLASS 5606
+                    SOURCE Policy jacket
+
+WC 00 03 13         Schedule entry WC 00 03 13 records edition 04 21; title Voluntary Compensation Endorsement; state CT.
+                    EDITION 04 21                                         TITLE Voluntary Compensation Endorsement
+                    STATE CT                                              CLASS 8810
+                    SOURCE Policy jacket
+
+WC 00 03 13         Edition: 01 15. The remaining values below apply to this same scheduled item.
+                    TITLE Workers Compensation and Employers Liability Policy         STATE CT
+                    CLASS 8017                                            SOURCE Policy jacket
+
+WC 00 00 01 A       WC 00 00 01 A - Edition: 07 23 / Title: Information Page / State: MA
+                    Class: 8742 / Source: Policy jacket
+
+WC 00 00 00 C       WC 00 00 00 C. Edition is 04 21. Title is Waiver of Our Right to Recover. State is MA. Class is 5190. Source is Policy jacket.
+                    EDITION 04 21
+                    TITLE Waiver of Our Right to Recover
+                    STATE MA
+                    CLASS 5190
+                    SOURCE Policy jacket
+
+
++-----------------------------------------------------------+  +-----------------------------------------------------------+
+| Schedule Conditions                                       |  | Reading This Schedule                                     |
+| Entries on this schedule apply only to the coverage part,  |  | Read scheduled lines together with the declarations and   |
+| location, class, state, or form reference shown on the    |  | attached forms to determine the complete scheduled item.  |
+| same row.                                                 |  |                                                           |
++-----------------------------------------------------------+  +-----------------------------------------------------------+
+
+Blue Kettle Food Service, LLC                                                                                    WC DS 04
 
 # Page 52
 
-POLICY PACKET                                                                  [POLICY COPY 1F7EA01]
+ARGENT BIRCH EMPLOYERS | WORKERS COMPENSATION AND EMPLOYERS LIABILITY                     YW700400
+Forms and Endorsements Schedule - Continued 5                      04/01/2026 - 04/01/2027
 
-Underwriting Support
+| Form numbers and edition dates apply with the state and classification schedules.
 
-Policy jacket notices and state exceptions
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
+WC 00 00 00 C    Schedule entry WC 00 00 00 C records edition 07 23; title Workers Compensation and Employers Liability Policy; state RI.
+                 EDITION 07 23                                            TITLE Workers Compensation and Employers Liability Policy
+                 STATE RI                                                 CLASS 9082
+                 SOURCE Policy jacket
 
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-039-01,Producer correspondence,Reviewed,Rating file
-REF-039-02,State exception,Pending,Policy audit
-REF-039-03,Form filing note,Indexed,Producer copy
-REF-039-04,Policy jacket notices and state exceptions,Archive,State form
-REF-039-05,Prior policy comparison,Reviewed,Rating file
-REF-039-06,Rating worksheet,Pending,Policy audit
-REF-039-07,Producer correspondence,Indexed,Producer copy
-REF-039-08,State exception,Archive,State form
-REF-039-09,Form filing note,Reviewed,Rating file
-REF-039-10,Policy jacket notices and state exceptions,Pending,Policy audit
-REF-039-11,Prior policy comparison,Indexed,Producer copy
-REF-039-12,Rating worksheet,Archive,State form
-REF-039-13,Producer correspondence,Reviewed,Rating file
-REF-039-14,State exception,Pending,Policy audit
-REF-039-15,Form filing note,Indexed,Producer copy
-REF-039-16,Policy jacket notices and state exceptions,Archive,State form
-REF-039-17,Prior policy comparison,Reviewed,Rating file
-REF-039-18,Rating worksheet,Pending,Policy audit
-REF-039-19,Producer correspondence,Indexed,Producer copy
-REF-039-20,State exception,Archive,State form
-REF-039-21,Form filing note,Reviewed,Rating file
-REF-039-22,Policy jacket notices and state exceptions,Pending,Policy audit
-REF-039-23,Prior policy comparison,Indexed,Producer copy
-REF-039-24,Rating worksheet,Archive,State form
-REF-039-25,Producer correspondence,Reviewed,Rating file
-REF-039-26,State exception,Pending,Policy audit
-REF-039-27,Form filing note,Indexed,Producer copy
-REF-039-28,Policy jacket notices and state exceptions,Archive,State form
-REF-039-29,Prior policy comparison,Reviewed,Rating file
-REF-039-30,Rating worksheet,Pending,Policy audit
+WC 00 03 13      Edition: 04 21. The remaining values below apply to this same scheduled item.
+                 TITLE Workers Compensation and Employers Liability Policy  STATE ME
+                 CLASS 3632                                               SOURCE Policy jacket
 
-Policy packet                                                                                Page 39
+WC 04 03 06      WC 04 03 06 - Edition: 07 23 / Title: Voluntary Compensation Endorsement / State: NH
+                 Class: 9015 / Source: Policy jacket
+
+WC 00 03 13      WC 00 03 13. Edition is 04 21. Title is Information Page. State is VT. Class is 5606. Source is Policy jacket.
+                 EDITION 04 21
+                 TITLE Information Page
+                 STATE VT
+                 CLASS 5606
+                 SOURCE Policy jacket
+
+WC 00 03 13      Schedule entry WC 00 03 13 records edition 01 15; title Information Page; state CT.
+                 EDITION 01 15                                            TITLE Information Page
+                 STATE CT                                                 CLASS 8810
+                 SOURCE Policy jacket
+
+WC 04 03 06      Edition: 07 23. The remaining values below apply to this same scheduled item.
+                 TITLE Voluntary Compensation Endorsement                 STATE CT
+                 CLASS 8017                                               SOURCE Policy jacket
+
+WC 00 03 13      WC 00 03 13 - Edition: 04 21 / Title: Voluntary Compensation Endorsement / State: MA
+                 Class: 8742 / Source: Policy jacket
+
+WC 00 00 00 C    WC 00 00 00 C. Edition is 07 23. Title is Voluntary Compensation Endorsement. State is MA. Class is 5190. Source is Policy jacket.
+                 EDITION 07 23
+                 TITLE Voluntary Compensation Endorsement
+                 STATE MA
+                 CLASS 5190
+                 SOURCE Policy jacket
+
+WC 00 00 01 A    Schedule entry WC 00 00 01 A records edition 01 15; title Waiver of Our Right to Recover; state RI.
+                 EDITION 01 15                                            TITLE Waiver of Our Right to Recover
+                 STATE RI                                                 CLASS 9082
+                 SOURCE Policy jacket
+
+WC 00 00 01 A    Edition: 04 21. The remaining values below apply to this same scheduled item.
+                 TITLE Voluntary Compensation Endorsement                 STATE ME
+                 CLASS 3632                                               SOURCE Policy jacket
+
++-----------------------------------------------------------------+  +------------------------------------------------------------------+
+| Schedule Conditions                                             |  | Reading This Schedule                                            |
+| Entries on this schedule apply only to the coverage part,       |  | Read scheduled lines together with the declarations and attached |
+| location, class, state, or form reference shown on the same row.|  | forms to determine the complete scheduled item.                  |
++-----------------------------------------------------------------+  +------------------------------------------------------------------+
+
+Blue Kettle Food Service, LLC                                                                                           WC DS 04
 
 # Page 53
 
-POLICY PACKET                                                                      POLICY COPY 1F7EA01
-Underwriting Support
+ARGENT BIRCH EMPLOYERS | WORKERS COMPENSATION AND EMPLOYERS LIABILITY                     YW700400
+Forms and Endorsements Schedule - Continued 6                                04/01/2026 - 04/01/2027
+_________________________________________________________________________________________________________
 
-Policy jacket notices and state exceptions
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
+| Form numbers and edition dates apply with the state and classification schedules.
+_________________________________________________________________________________________________________
 
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-040-01,State exception,Reviewed,Policy audit
-REF-040-02,Form filing note,Pending,Producer copy
-REF-040-03,Policy jacket notices and state exceptions,Indexed,State form
-REF-040-04,Prior policy comparison,Archive,Rating file
-REF-040-05,Rating worksheet,Reviewed,Policy audit
-REF-040-06,Producer correspondence,Pending,Producer copy
-REF-040-07,State exception,Indexed,State form
-REF-040-08,Form filing note,Archive,Rating file
-REF-040-09,Policy jacket notices and state exceptions,Reviewed,Policy audit
-REF-040-10,Prior policy comparison,Pending,Producer copy
-REF-040-11,Rating worksheet,Indexed,State form
-REF-040-12,Producer correspondence,Archive,Rating file
-REF-040-13,State exception,Reviewed,Policy audit
-REF-040-14,Form filing note,Pending,Producer copy
-REF-040-15,Policy jacket notices and state exceptions,Indexed,State form
-REF-040-16,Prior policy comparison,Archive,Rating file
-REF-040-17,Rating worksheet,Reviewed,Policy audit
-REF-040-18,Producer correspondence,Pending,Producer copy
-REF-040-19,State exception,Indexed,State form
-REF-040-20,Form filing note,Archive,Rating file
-REF-040-21,Policy jacket notices and state exceptions,Reviewed,Policy audit
-REF-040-22,Prior policy comparison,Pending,Producer copy
-REF-040-23,Rating worksheet,Indexed,State form
-REF-040-24,Producer correspondence,Archive,Rating file
-REF-040-25,State exception,Reviewed,Policy audit
-REF-040-26,Form filing note,Pending,Producer copy
-REF-040-27,Policy jacket notices and state exceptions,Indexed,State form
-REF-040-28,Prior policy comparison,Archive,Rating file
-REF-040-29,Rating worksheet,Reviewed,Policy audit
-REF-040-30,Producer correspondence,Pending,Producer copy
+WC 00 00 01 A      WC 00 00 01 A - Edition: 07 23 / Title: Information Page / State: NH
+                   Class: 9015 / Source: Policy jacket
+_________________________________________________________________________________________________________
 
-Policy packet                                                                                Page 40
+WC 00 00 00 C      WC 00 00 00 C. Edition is 07 23. Title is Voluntary Compensation Endorsement. State is VT. Class is 5606. Source is Policy jacket.
+                   EDITION  07 23
+                   TITLE  Voluntary Compensation Endorsement
+                   STATE  VT
+                   CLASS  5606
+                   SOURCE  Policy jacket
+_________________________________________________________________________________________________________
+
+WC 00 00 01 A      Schedule entry WC 00 00 01 A records edition 04 21; title Voluntary Compensation Endorsement; state CT.
+                   EDITION  04 21                                         TITLE  Voluntary Compensation Endorsement
+                   STATE  CT                                              CLASS  8810
+                   SOURCE  Policy jacket
+_________________________________________________________________________________________________________
+
+WC 00 00 01 A      Edition: 01 15. The remaining values below apply to this same scheduled item.
+                   TITLE  Waiver of Our Right to Recover                  STATE  CT
+                   CLASS  8017                                            SOURCE  Policy jacket
+_________________________________________________________________________________________________________
+
+WC 00 00 00 C      WC 00 00 00 C - Edition: 04 21 / Title: Workers Compensation and Employers Liability Policy / State: MA
+                   Class: 8742 / Source: Policy jacket
+_________________________________________________________________________________________________________
+
+WC 00 00 00 C      WC 00 00 00 C. Edition is 01 15. Title is Workers Compensation and Employers Liability Policy. State is MA. Class is 5190. Source is Policy jacket.
+                   EDITION  01 15
+                   TITLE  Workers Compensation and Employers Liability Policy
+                   STATE  MA
+                   CLASS  5190
+                   SOURCE  Policy jacket
+_________________________________________________________________________________________________________
+
+AWC N101           Schedule entry AWC N101 records edition 05 24; title Policyholder Notice; state All.
+                   EDITION  05 24                                         TITLE  Policyholder Notice
+                   STATE  All                                             CLASS  All
+                   SOURCE  Policy jacket
+_________________________________________________________________________________________________________
+
+AWC C205           Edition: 05 24. The remaining values below apply to this same scheduled item.
+                   TITLE  Common Policy Conditions                        STATE  All
+                   CLASS  All                                             SOURCE  Policy jacket
+_________________________________________________________________________________________________________
+
+AWC S310           AWC S310 - Edition: 01 25 / Title: State Benefit Notice / State: All
+                   Class: All / Source: Policy jacket
+_________________________________________________________________________________________________________
+
+AWC P415           AWC P415. Edition is 01 25. Title is Privacy Practices Notice. State is All. Class is All. Source is Policy jacket.
+                   EDITION  01 25
+                   TITLE  Privacy Practices Notice
+                   STATE  All
+                   CLASS  All
+                   SOURCE  Policy jacket
+_________________________________________________________________________________________________________
+
+ ___________________________________________________________     ___________________________________________________________
+|                                                           |   |                                                           |
+| Schedule Conditions                                       |   | Reading This Schedule                                     |
+| Entries on this schedule apply only to the coverage part,  |   | Read scheduled lines together with the declarations and   |
+| location, class, state, or form reference shown on the    |   | attached forms to determine the complete scheduled item.  |
+| same row.                                                 |   |                                                           |
+|___________________________________________________________|   |___________________________________________________________|
+
+
+
+
+Blue Kettle Food Service, LLC                                                                                  WC DS 04
 
 # Page 54
 
-POLICY PACKET                                                     POLICY COPY 1F7EA01
+ARGENT BIRCH EMPLOYERS                                                 POLICY NUMBER: YW700400
+Workers Compensation and Employers Liability                             EFFECTIVE: 04/01/2026
+                                                                           EXPIRES: 04/01/2027
+___________________________________________________________________________________________________
 
-Underwriting Support
+                                  MATERIAL POLICY PROVISIONS
 
-Policy jacket notices and state exceptions
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
+___________________________________________________________________________________________________
+THIS FORM IS PART OF THE POLICY AND MUST BE READ WITH THE DECLARATIONS AND ENDORSEMENTS.
+___________________________________________________________________________________________________
 
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-041-01,Form filing note,Reviewed,Producer copy
-REF-041-02,Policy jacket notices and state exceptions,Pending,State form
-REF-041-03,Prior policy comparison,Indexed,Rating file
-REF-041-04,Rating worksheet,Archive,Policy audit
-REF-041-05,Producer correspondence,Reviewed,Producer copy
-REF-041-06,State exception,Pending,State form
-REF-041-07,Form filing note,Indexed,Rating file
-REF-041-08,Policy jacket notices and state exceptions,Archive,Policy audit
-REF-041-09,Prior policy comparison,Reviewed,Producer copy
-REF-041-10,Rating worksheet,Pending,State form
-REF-041-11,Producer correspondence,Indexed,Rating file
-REF-041-12,State exception,Archive,Policy audit
-REF-041-13,Form filing note,Reviewed,Producer copy
-REF-041-14,Policy jacket notices and state exceptions,Pending,State form
-REF-041-15,Prior policy comparison,Indexed,Rating file
-REF-041-16,Rating worksheet,Archive,Policy audit
-REF-041-17,Producer correspondence,Reviewed,Producer copy
-REF-041-18,State exception,Pending,State form
-REF-041-19,Form filing note,Indexed,Rating file
-REF-041-20,Policy jacket notices and state exceptions,Archive,Policy audit
-REF-041-21,Prior policy comparison,Reviewed,Producer copy
-REF-041-22,Rating worksheet,Pending,State form
-REF-041-23,Producer correspondence,Indexed,Rating file
-REF-041-24,State exception,Archive,Policy audit
-REF-041-25,Form filing note,Reviewed,Producer copy
-REF-041-26,Policy jacket notices and state exceptions,Pending,State form
-REF-041-27,Prior policy comparison,Indexed,Rating file
-REF-041-28,Rating worksheet,Archive,Policy audit
-REF-041-29,Producer correspondence,Reviewed,Producer copy
-REF-041-30,State exception,Pending,State form
+                                                       SECTION 7 - OFFICER AND SUBCONTRACTOR TREATMENT
+SECTION 1 - REMUNERATION AUDIT                         For CT class 8017 (Retail store - all employees), the applicable form is WC 00 00 00
+A. For CT class 8810 (Clerical office employees), the applicable form is WC 00 00   C edition 01 15 and the provision is treated as limitation.
+01 A edition 07 23 and the provision is treated as condition.
+                                                       Officer, member, volunteer, leased-worker, and subcontractor treatment for CT class
+The annual payroll of $45,136 for CT class 8810, Location 1 is an estimate and is   8017, Location 2 must be read with form WC 00 00 00 C edition 01 15 and the
+subject to audit after the policy period.             $54,124 remuneration entry.
 
-Policy packet                                                                        Page 41
+SECTION 2 - STATE CLASSIFICATION CONTROL               SECTION 8 - PREMIUM REVISION BASIS
+The provision below is read with WC 00 00 01 A edition 07 23 for CT class 8810,        The provision below is read with WC 00 00 00 C edition 01 15 for CT class 8017,
+Location 1.                                            Location 2.
+
+The CT classification 8810 controls the rating basis for Clerical office employees at   D. The estimated premium of $400 is calculated from rate 0.74, experience
+Location 1; form WC 00 00 01 A edition 07 23 applies unless a state amendatory         modification 1.04, and schedule rating 0% for CT class 8017, Location 2.
+endorsement changes it.
+                                                       SECTION 9 - REMUNERATION AUDIT
+SECTION 3 - OFFICER AND SUBCONTRACTOR TREATMENT        WC 00 00 00 C edition 01 15 is a condition provision for MA class 8742, Location
+WC 00 00 01 A edition 07 23 is a limitation provision for CT class 8810, Location 1.   3.
+
+B. Officer, member, volunteer, leased-worker, and subcontractor treatment for CT       The annual payroll of $70,826 for MA class 8742, Location 3 is an estimate and is
+class 8810, Location 1 must be read with form WC 00 00 01 A edition 07 23 and the     subject to audit after the policy period.
+$45,136 remuneration entry.
+                                                       SECTION 10 - STATE CLASSIFICATION CONTROL
+SECTION 4 - PREMIUM REVISION BASIS                     For MA class 8742 (Outside salespersons), the applicable form is WC 00 00 00 C
+For CT class 8810 (Clerical office employees), the applicable form is WC 00 00 01      edition 01 15 and the provision is treated as condition.
+A edition 07 23 and the provision is treated as condition.
+                                                       The MA classification 8742 controls the rating basis for Outside salespersons at
+The estimated premium of $189 is calculated from rate 0.42, experience                 Location 3; form WC 00 00 00 C edition 01 15 applies unless a state amendatory
+modification 1.04, and schedule rating 0% for CT class 8810, Location 1.               endorsement changes it.
+
+SECTION 5 - REMUNERATION AUDIT                         SECTION 11 - OFFICER AND SUBCONTRACTOR TREATMENT
+The provision below is read with WC 00 00 00 C edition 01 15 for CT class 8017,        E. The provision below is read with WC 00 00 00 C edition 01 15 for MA class
+Location 2.                                            8742, Location 3.
+
+The annual payroll of $54,124 for CT class 8017, Location 2 is an estimate and is   Officer, member, volunteer, leased-worker, and subcontractor treatment for MA class
+subject to audit after the policy period.             8742, Location 3 must be read with form WC 00 00 00 C edition 01 15 and the
+                                                       $70,826 remuneration entry.
+SECTION 6 - STATE CLASSIFICATION CONTROL
+C. WC 00 00 00 C edition 01 15 is a condition provision for CT class 8017,            SECTION 12 - PREMIUM REVISION BASIS
+Location 2.                                            WC 00 00 00 C edition 01 15 is a condition provision for MA class 8742, Location
+                                                       3.
+The CT classification 8017 controls the rating basis for Retail store - all employees
+at Location 2; form WC 00 00 00 C edition 01 15 applies unless a state amendatory      The estimated premium of $127 is calculated from rate 0.18, experience
+endorsement changes it.                                modification 1.04, and schedule rating 0% for MA class 8742, Location 3.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+AWC 110 (05-24)                                                        Blue Kettle Food Service, LLC | YW700400
 
 # Page 55
 
-POLICY PACKET                                                                  [ POLICY COPY 1F7EA01 ]
+ARGENT BIRCH EMPLOYERS
+Workers Compensation and Employers Liability
 
-Underwriting Support
+POLICY NUMBER: YW700400
+EFFECTIVE: 04/01/2026
+EXPIRES: 04/01/2027
 
-Policy jacket notices and state exceptions
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
+----------------------------------------------------------------------------------------------------------------------------------
+# MATERIAL POLICY PROVISIONS - CONTINUED 2
+----------------------------------------------------------------------------------------------------------------------------------
+THIS FORM IS PART OF THE POLICY AND MUST BE READ WITH THE DECLARATIONS AND ENDORSEMENTS.
+----------------------------------------------------------------------------------------------------------------------------------
 
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-042-01,Policy jacket notices and state exceptions,Reviewed,State form
-REF-042-02,Prior policy comparison,Pending,Rating file
-REF-042-03,Rating worksheet,Indexed,Policy audit
-REF-042-04,Producer correspondence,Archive,Producer copy
-REF-042-05,State exception,Reviewed,State form
-REF-042-06,Form filing note,Pending,Rating file
-REF-042-07,Policy jacket notices and state exceptions,Indexed,Policy audit
-REF-042-08,Prior policy comparison,Archive,Producer copy
-REF-042-09,Rating worksheet,Reviewed,State form
-REF-042-10,Producer correspondence,Pending,Rating file
-REF-042-11,State exception,Indexed,Policy audit
-REF-042-12,Form filing note,Archive,Producer copy
-REF-042-13,Policy jacket notices and state exceptions,Reviewed,State form
-REF-042-14,Prior policy comparison,Pending,Rating file
-REF-042-15,Rating worksheet,Indexed,Policy audit
-REF-042-16,Producer correspondence,Archive,Producer copy
-REF-042-17,State exception,Reviewed,State form
-REF-042-18,Form filing note,Pending,Rating file
-REF-042-19,Policy jacket notices and state exceptions,Indexed,Policy audit
-REF-042-20,Prior policy comparison,Archive,Producer copy
-REF-042-21,Rating worksheet,Reviewed,State form
-REF-042-22,Producer correspondence,Pending,Rating file
-REF-042-23,State exception,Indexed,Policy audit
-REF-042-24,Form filing note,Archive,Producer copy
-REF-042-25,Policy jacket notices and state exceptions,Reviewed,State form
-REF-042-26,Prior policy comparison,Pending,Rating file
-REF-042-27,Rating worksheet,Indexed,Policy audit
-REF-042-28,Producer correspondence,Archive,Producer copy
-REF-042-29,State exception,Reviewed,State form
-REF-042-30,Form filing note,Pending,Rating file
+**SECTION 13 - REMUNERATION AUDIT**
+For MA class 5190 (Electrical wiring within buildings), the applicable form is WC 04 03 06 edition 01 15 and the provision is treated as condition.
 
-Policy packet                                                                                 Page 42
+The annual payroll of $77,560 for MA class 5190, Location 4 is an estimate and is subject to audit after the policy period.
+
+**SECTION 14 - STATE CLASSIFICATION CONTROL**
+The provision below is read with WC 04 03 06 edition 01 15 for MA class 5190, Location 4.
+
+The MA classification 5190 controls the rating basis for Electrical wiring within buildings at Location 4; form WC 04 03 06 edition 01 15 applies unless a state amendatory endorsement changes it.
+
+**SECTION 15 - OFFICER AND SUBCONTRACTOR TREATMENT**
+WC 04 03 06 edition 01 15 is a limitation provision for MA class 5190, Location 4.
+
+Officer, member, volunteer, leased-worker, and subcontractor treatment for MA class 5190, Location 4 must be read with form WC 04 03 06 edition 01 15 and the $77,560 remuneration entry.
+
+**SECTION 16 - PREMIUM REVISION BASIS**
+For MA class 5190 (Electrical wiring within buildings), the applicable form is WC 04 03 06 edition 01 15 and the provision is treated as condition.
+
+The estimated premium of $2,218 is calculated from rate 2.86, experience modification 1.04, and schedule rating 0% for MA class 5190, Location 4.
+
+**SECTION 17 - REMUNERATION AUDIT**
+The provision below is read with WC 00 00 01 A edition 01 15 for RI class 9082, Location 5.
+
+The annual payroll of $90,759 for RI class 9082, Location 5 is an estimate and is subject to audit after the policy period.
+
+**SECTION 18 - STATE CLASSIFICATION CONTROL**
+WC 00 00 01 A edition 01 15 is a condition provision for RI class 9082, Location 5.
+
+The RI classification 9082 controls the rating basis for Restaurant NOC at Location 5; form WC 00 00 01 A edition 01 15 applies unless a state amendatory endorsement changes it.
+
+**SECTION 19 - OFFICER AND SUBCONTRACTOR TREATMENT**
+For RI class 9082 (Restaurant NOC), the applicable form is WC 00 00 01 A edition 01 15 and the provision is treated as limitation.
+
+Officer, member, volunteer, leased-worker, and subcontractor treatment for RI class 9082, Location 5 must be read with form WC 00 00 01 A edition 01 15 and the $90,759 remuneration entry.
+
+**SECTION 20 - PREMIUM REVISION BASIS**
+The provision below is read with WC 00 00 01 A edition 01 15 for RI class 9082, Location 5.
+
+The estimated premium of $245 is calculated from rate 0.27, experience modification 1.04, and schedule rating 0% for RI class 9082, Location 5.
+
+**SECTION 21 - REMUNERATION AUDIT**
+WC 00 00 01 A edition 01 15 is a condition provision for ME class 3632, Location 1.
+
+The annual payroll of $99,561 for ME class 3632, Location 1 is an estimate and is subject to audit after the policy period.
+
+**SECTION 22 - STATE CLASSIFICATION CONTROL**
+For ME class 3632 (Machine shop NOC), the applicable form is WC 00 00 01 A edition 01 15 and the provision is treated as condition.
+
+The ME classification 3632 controls the rating basis for Machine shop NOC at Location 1; form WC 00 00 01 A edition 01 15 applies unless a state amendatory endorsement changes it.
+
+**SECTION 23 - OFFICER AND SUBCONTRACTOR TREATMENT**
+The provision below is read with WC 00 00 01 A edition 01 15 for ME class 3632, Location 1.
+
+Officer, member, volunteer, leased-worker, and subcontractor treatment for ME class 3632, Location 1 must be read with form WC 00 00 01 A edition 01 15 and the $99,561 remuneration entry.
+
+**SECTION 24 - PREMIUM REVISION BASIS**
+WC 00 00 01 A edition 01 15 is a condition provision for ME class 3632, Location 1.
+
+The estimated premium of $2,847 is calculated from rate 2.86, experience modification 1.04, and schedule rating 0% for ME class 3632, Location 1.
+
+AWC 111 (05-24)                                                           Blue Kettle Food Service, LLC | YW700400
 
 # Page 56
 
-POLICY PACKET                                                      POLICY COPY 1F7EA01
+ARGENT BIRCH EMPLOYERS
+Workers Compensation and Employers Liability
 
-Underwriting Support
+POLICY NUMBER: YW700400
+EFFECTIVE: 04/01/2026
+EXPIRES: 04/01/2027
 
-Policy jacket notices and state exceptions
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
+---------------------------------------------------------------------------------------------------------
+# MATERIAL POLICY PROVISIONS - CONTINUED 3
+---------------------------------------------------------------------------------------------------------
+THIS FORM IS PART OF THE POLICY AND MUST BE READ WITH THE DECLARATIONS AND ENDORSEMENTS.
+---------------------------------------------------------------------------------------------------------
 
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-043-01,Prior policy comparison,Reviewed,Rating file
-REF-043-02,Rating worksheet,Pending,Policy audit
-REF-043-03,Producer correspondence,Indexed,Producer copy
-REF-043-04,State exception,Archive,State form
-REF-043-05,Form filing note,Reviewed,Rating file
-REF-043-06,Policy jacket notices and state exceptions,Pending,Policy audit
-REF-043-07,Prior policy comparison,Indexed,Producer copy
-REF-043-08,Rating worksheet,Archive,State form
-REF-043-09,Producer correspondence,Reviewed,Rating file
-REF-043-10,State exception,Pending,Policy audit
-REF-043-11,Form filing note,Indexed,Producer copy
-REF-043-12,Policy jacket notices and state exceptions,Archive,State form
-REF-043-13,Prior policy comparison,Reviewed,Rating file
-REF-043-14,Rating worksheet,Pending,Policy audit
-REF-043-15,Producer correspondence,Indexed,Producer copy
-REF-043-16,State exception,Archive,State form
-REF-043-17,Form filing note,Reviewed,Rating file
-REF-043-18,Policy jacket notices and state exceptions,Pending,Policy audit
-REF-043-19,Prior policy comparison,Indexed,Producer copy
-REF-043-20,Rating worksheet,Archive,State form
-REF-043-21,Producer correspondence,Reviewed,Rating file
-REF-043-22,State exception,Pending,Policy audit
-REF-043-23,Form filing note,Indexed,Producer copy
-REF-043-24,Policy jacket notices and state exceptions,Archive,State form
-REF-043-25,Prior policy comparison,Reviewed,Rating file
-REF-043-26,Rating worksheet,Pending,Policy audit
-REF-043-27,Producer correspondence,Indexed,Producer copy
-REF-043-28,State exception,Archive,State form
-REF-043-29,Form filing note,Reviewed,Rating file
-REF-043-30,Policy jacket notices and state exceptions,Pending,Policy audit
+**SECTION 25 - REMUNERATION AUDIT**
+1. For NH class 9015 (Building operations by owner), the applicable form is WC 00
+00 00 C edition 01 15 and the provision is treated as condition.
 
-Policy packet                                                               Page 43
+The annual payroll of $111,259 for NH class 9015, Location 2 is an estimate and is
+subject to audit after the policy period.
+
+**SECTION 26 - STATE CLASSIFICATION CONTROL**
+The provision below is read with WC 00 00 00 C edition 01 15 for NH class 9015,
+Location 2.
+
+The NH classification 9015 controls the rating basis for Building operations by
+owner at Location 2; form WC 00 00 00 C edition 01 15 applies unless a state
+amendatory endorsement changes it.
+
+**SECTION 27 - OFFICER AND SUBCONTRACTOR TREATMENT**
+2. WC 00 00 00 C edition 01 15 is a limitation provision for NH class 9015,
+Location 2.
+
+Officer, member, volunteer, leased-worker, and subcontractor treatment for NH class
+9015, Location 2 must be read with form WC 00 00 00 C edition 01 15 and the
+$111,259 remuneration entry.
+
+**SECTION 28 - PREMIUM REVISION BASIS**
+For NH class 9015 (Building operations by owner), the applicable form is WC 00 00
+00 C edition 01 15 and the provision is treated as condition.
+
+The estimated premium of $3,182 is calculated from rate 2.86, experience
+modification 1.04, and schedule rating 0% for NH class 9015, Location 2.
+
+**SECTION 29 - REMUNERATION AUDIT**
+3. The provision below is read with WC 00 00 01 A edition 04 21 for VT class 5606,
+Location 3.
+
+The annual payroll of $127,460 for VT class 5606, Location 3 is an estimate and is
+subject to audit after the policy period.
+
+**SECTION 30 - STATE CLASSIFICATION CONTROL**
+WC 00 00 01 A edition 04 21 is a condition provision for VT class 5606, Location 3.
+
+The VT classification 5606 controls the rating basis for Contractor executive
+supervisor at Location 3; form WC 00 00 01 A edition 04 21 applies unless a state
+amendatory endorsement changes it.
+
+**SECTION 31 - OFFICER AND SUBCONTRACTOR TREATMENT**
+4. For VT class 5606 (Contractor executive supervisor), the applicable form is WC
+00 00 01 A edition 04 21 and the provision is treated as limitation.
+
+Officer, member, volunteer, leased-worker, and subcontractor treatment for VT class
+5606, Location 3 must be read with form WC 00 00 01 A edition 04 21 and the
+$127,460 remuneration entry.
+
+**SECTION 32 - PREMIUM REVISION BASIS**
+The provision below is read with WC 00 00 01 A edition 04 21 for VT class 5606,
+Location 3.
+
+The estimated premium of $7,928 is calculated from rate 6.22, experience
+modification 1.04, and schedule rating 0% for VT class 5606, Location 3.
+
+**SECTION 33 - REMUNERATION AUDIT**
+5. WC 04 03 06 edition 01 15 is a condition provision for CT class 8810, Location 4.
+
+The annual payroll of $139,137 for CT class 8810, Location 4 is an estimate and is
+subject to audit after the policy period.
+
+**SECTION 34 - STATE CLASSIFICATION CONTROL**
+For CT class 8810 (Clerical office employees), the applicable form is WC 04 03 06
+edition 01 15 and the provision is treated as condition.
+
+The CT classification 8810 controls the rating basis for Clerical office employees at
+Location 4; form WC 04 03 06 edition 01 15 applies unless a state amendatory
+endorsement changes it.
+
+**SECTION 35 - OFFICER AND SUBCONTRACTOR TREATMENT**
+6. The provision below is read with WC 04 03 06 edition 01 15 for CT class 8810,
+Location 4.
+
+Officer, member, volunteer, leased-worker, and subcontractor treatment for CT class
+8810, Location 4 must be read with form WC 04 03 06 edition 01 15 and the
+$139,137 remuneration entry.
+
+**SECTION 36 - PREMIUM REVISION BASIS**
+WC 04 03 06 edition 01 15 is a condition provision for CT class 8810, Location 4.
+
+The estimated premium of $8,654 is calculated from rate 6.22, experience
+modification 1.04, and schedule rating 0% for CT class 8810, Location 4.
+
+
+AWC 112 (05-24)                                                          Blue Kettle Food Service, LLC | YW700400
 
 # Page 57
 
-POLICY PACKET                                                                     POLICY COPY 1F7EA01
-Underwriting Support
+ARGENT BIRCH EMPLOYERS
+Workers Compensation and Employers Liability
 
-Policy jacket notices and state exceptions
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
+POLICY NUMBER: YW700400
+EFFECTIVE: 04/01/2026
+EXPIRES: 04/01/2027
 
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-044-01,Rating worksheet,Reviewed,Policy audit
-REF-044-02,Producer correspondence,Pending,Producer copy
-REF-044-03,State exception,Indexed,State form
-REF-044-04,Form filing note,Archive,Rating file
-REF-044-05,Policy jacket notices and state exceptions,Reviewed,Policy audit
-REF-044-06,Prior policy comparison,Pending,Producer copy
-REF-044-07,Rating worksheet,Indexed,State form
-REF-044-08,Producer correspondence,Archive,Rating file
-REF-044-09,State exception,Reviewed,Policy audit
-REF-044-10,Form filing note,Pending,Producer copy
-REF-044-11,Policy jacket notices and state exceptions,Indexed,State form
-REF-044-12,Prior policy comparison,Archive,Rating file
-REF-044-13,Rating worksheet,Reviewed,Policy audit
-REF-044-14,Producer correspondence,Pending,Producer copy
-REF-044-15,State exception,Indexed,State form
-REF-044-16,Form filing note,Archive,Rating file
-REF-044-17,Policy jacket notices and state exceptions,Reviewed,Policy audit
-REF-044-18,Prior policy comparison,Pending,Producer copy
-REF-044-19,Rating worksheet,Indexed,State form
-REF-044-20,Producer correspondence,Archive,Rating file
-REF-044-21,State exception,Reviewed,Policy audit
-REF-044-22,Form filing note,Pending,Producer copy
-REF-044-23,Policy jacket notices and state exceptions,Indexed,State form
-REF-044-24,Prior policy comparison,Archive,Rating file
-REF-044-25,Rating worksheet,Reviewed,Policy audit
-REF-044-26,Producer correspondence,Pending,Producer copy
-REF-044-27,State exception,Indexed,State form
-REF-044-28,Form filing note,Archive,Rating file
-REF-044-29,Policy jacket notices and state exceptions,Reviewed,Policy audit
-REF-044-30,Prior policy comparison,Pending,Producer copy
+------------------------------------------------------------------------------------------------------------------------
+                                   MATERIAL POLICY PROVISIONS - CONTINUED 4
+------------------------------------------------------------------------------------------------------------------------
+THIS FORM IS PART OF THE POLICY AND MUST BE READ WITH THE DECLARATIONS AND ENDORSEMENTS.
+------------------------------------------------------------------------------------------------------------------------
 
-Policy packet                                                                                Page 44
+SECTION 37 - REMUNERATION AUDIT
+A. For CT class 8017 (Retail store - all employees), the applicable form is WC 04 03
+06 edition 04 21 and the provision is treated as condition.
+
+The annual payroll of $152,897 for CT class 8017, Location 5 is an estimate and is
+subject to audit after the policy period.
+
+SECTION 38 - STATE CLASSIFICATION CONTROL
+The provision below is read with WC 04 03 06 edition 04 21 for CT class 8017,
+Location 5.
+
+The CT classification 8017 controls the rating basis for Retail store - all employees
+at Location 5; form WC 04 03 06 edition 04 21 applies unless a state amendatory
+endorsement changes it.
+
+SECTION 39 - OFFICER AND SUBCONTRACTOR TREATMENT
+WC 04 03 06 edition 04 21 is a limitation provision for CT class 8017, Location 5.
+
+B. Officer, member, volunteer, leased-worker, and subcontractor treatment for CT
+class 8017, Location 5 must be read with form WC 04 03 06 edition 04 21 and the
+$152,897 remuneration entry.
+
+SECTION 40 - PREMIUM REVISION BASIS
+For CT class 8017 (Retail store - all employees), the applicable form is WC 04 03 06
+edition 04 21 and the provision is treated as condition.
+
+The estimated premium of $6,651 is calculated from rate 4.35, experience
+modification 1.04, and schedule rating 0% for CT class 8017, Location 5.
+
+SECTION 41 - REMUNERATION AUDIT
+The provision below is read with WC 04 03 06 edition 01 15 for MA class 8742,
+Location 1.
+
+The annual payroll of $158,051 for MA class 8742, Location 1 is an estimate and is
+subject to audit after the policy period.
+
+SECTION 42 - STATE CLASSIFICATION CONTROL
+C. WC 04 03 06 edition 01 15 is a condition provision for MA class 8742, Location
+1.
+
+The MA classification 8742 controls the rating basis for Outside salespersons at
+Location 1; form WC 04 03 06 edition 01 15 applies unless a state amendatory
+endorsement changes it.
+
+SECTION 43 - OFFICER AND SUBCONTRACTOR TREATMENT
+For MA class 8742 (Outside salespersons), the applicable form is WC 04 03 06
+edition 01 15 and the provision is treated as limitation.
+
+Officer, member, volunteer, leased-worker, and subcontractor treatment for MA class
+8742, Location 1 must be read with form WC 04 03 06 edition 01 15 and the
+$158,051 remuneration entry.
+
+SECTION 44 - PREMIUM REVISION BASIS
+The provision below is read with WC 04 03 06 edition 01 15 for MA class 8742,
+Location 1.
+
+D. The estimated premium of $6,875 is calculated from rate 4.35, experience
+modification 1.04, and schedule rating 0% for MA class 8742, Location 1.
+
+SECTION 45 - REMUNERATION AUDIT
+WC 04 03 06 edition 04 21 is a condition provision for MA class 5190, Location 2.
+
+The annual payroll of $171,391 for MA class 5190, Location 2 is an estimate and is
+subject to audit after the policy period.
+
+SECTION 46 - STATE CLASSIFICATION CONTROL
+For MA class 5190 (Electrical wiring within buildings), the applicable form is WC
+04 03 06 edition 04 21 and the provision is treated as condition.
+
+The MA classification 5190 controls the rating basis for Electrical wiring within
+buildings at Location 2; form WC 04 03 06 edition 04 21 applies unless a state
+amendatory endorsement changes it.
+
+SECTION 47 - OFFICER AND SUBCONTRACTOR TREATMENT
+E. The provision below is read with WC 04 03 06 edition 04 21 for MA class 5190,
+Location 2.
+
+Officer, member, volunteer, leased-worker, and subcontractor treatment for MA class
+5190, Location 2 must be read with form WC 04 03 06 edition 04 21 and the
+$171,391 remuneration entry.
+
+SECTION 48 - PREMIUM REVISION BASIS
+WC 04 03 06 edition 04 21 is a condition provision for MA class 5190, Location 2.
+
+The estimated premium of $462 is calculated from rate 0.27, experience
+modification 1.04, and schedule rating 0% for MA class 5190, Location 2.
+
+AWC 113 (05-24)                                          Blue Kettle Food Service, LLC | YW700400
 
 # Page 58
 
-POLICY PACKET                                                            |POLICY COPY 1F7EA01|
+ARGENT BIRCH EMPLOYERS                                         POLICY NUMBER: YW700400
+Workers Compensation and Employers Liability                     EFFECTIVE: 04/01/2026
+                                                                  EXPIRES: 04/01/2027
+______________________________________________________________________________________
 
-Underwriting Support
+                   MATERIAL POLICY PROVISIONS - CONTINUED 5
+______________________________________________________________________________________
 
-Policy jacket notices and state exceptions
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
+THIS FORM IS PART OF THE POLICY AND MUST BE READ WITH THE DECLARATIONS AND ENDORSEMENTS.
+______________________________________________________________________________________
 
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-045-01,Producer correspondence,Reviewed,Producer copy
-REF-045-02,State exception,Pending,State form
-REF-045-03,Form filing note,Indexed,Rating file
-REF-045-04,Policy jacket notices and state exceptions,Archive,Policy audit
-REF-045-05,Prior policy comparison,Reviewed,Producer copy
-REF-045-06,Rating worksheet,Pending,State form
-REF-045-07,Producer correspondence,Indexed,Rating file
-REF-045-08,State exception,Archive,Policy audit
-REF-045-09,Form filing note,Reviewed,Producer copy
-REF-045-10,Policy jacket notices and state exceptions,Pending,State form
-REF-045-11,Prior policy comparison,Indexed,Rating file
-REF-045-12,Rating worksheet,Archive,Policy audit
-REF-045-13,Producer correspondence,Reviewed,Producer copy
-REF-045-14,State exception,Pending,State form
-REF-045-15,Form filing note,Indexed,Rating file
-REF-045-16,Policy jacket notices and state exceptions,Archive,Policy audit
-REF-045-17,Prior policy comparison,Reviewed,Producer copy
-REF-045-18,Rating worksheet,Pending,State form
-REF-045-19,Producer correspondence,Indexed,Rating file
-REF-045-20,State exception,Archive,Policy audit
-REF-045-21,Form filing note,Reviewed,Producer copy
-REF-045-22,Policy jacket notices and state exceptions,Pending,State form
-REF-045-23,Prior policy comparison,Indexed,Rating file
-REF-045-24,Rating worksheet,Archive,Policy audit
-REF-045-25,Producer correspondence,Reviewed,Producer copy
-REF-045-26,State exception,Pending,State form
-REF-045-27,Form filing note,Indexed,Rating file
-REF-045-28,Policy jacket notices and state exceptions,Archive,Policy audit
-REF-045-29,Prior policy comparison,Reviewed,Producer copy
-REF-045-30,Rating worksheet,Pending,State form
+                                                SECTION 55 - OFFICER AND SUBCONTRACTOR TREATMENT
+SECTION 49 - REMUNERATION AUDIT                For ME class 3632 (Machine shop NOC), the applicable form is WC 00 00 01 A
+For RI class 9082 (Restaurant NOC), the applicable form is WC 00 03 13 edition 07   edition 07 23 and the provision is treated as limitation.
+23 and the provision is treated as condition.
+                                                Officer, member, volunteer, leased-worker, and subcontractor treatment for ME class
+The annual payroll of $184,316 for RI class 9082, Location 3 is an estimate and is   3632, Location 4 must be read with form WC 00 00 01 A edition 07 23 and the
+subject to audit after the policy period.       $195,887 remuneration entry.
 
-Policy packet                                                                Page 45
+SECTION 50 - STATE CLASSIFICATION CONTROL       SECTION 56 - PREMIUM REVISION BASIS
+The provision below is read with WC 00 03 13 edition 07 23 for RI class 9082,   The provision below is read with WC 00 00 01 A edition 07 23 for ME class 3632,
+Location 3.                                     Location 4.
+
+The RI classification 9082 controls the rating basis for Restaurant NOC at Location   The estimated premium of $12,184 is calculated from rate 6.22, experience
+3; form WC 00 03 13 edition 07 23 applies unless a state amendatory endorsement   modification 1.04, and schedule rating 0% for ME class 3632, Location 4.
+changes it.
+                                                SECTION 57 - REMUNERATION AUDIT
+SECTION 51 - OFFICER AND SUBCONTRACTOR TREATMENT
+                                                WC 00 03 13 edition 04 21 is a condition provision for NH class 9015, Location 5.
+WC 00 03 13 edition 07 23 is a limitation provision for RI class 9082, Location 3.
+                                                The annual payroll of $209,573 for NH class 9015, Location 5 is an estimate and is
+Officer, member, volunteer, leased-worker, and subcontractor treatment for RI class   subject to audit after the policy period.
+9082, Location 3 must be read with form WC 00 03 13 edition 07 23 and the
+$184,316 remuneration entry.                    SECTION 58 - STATE CLASSIFICATION CONTROL
+
+SECTION 52 - PREMIUM REVISION BASIS             For NH class 9015 (Building operations by owner), the applicable form is WC 00 03
+                                                13 edition 04 21 and the provision is treated as condition.
+For RI class 9082 (Restaurant NOC), the applicable form is WC 00 03 13 edition 07
+23 and the provision is treated as condition.   The NH classification 9015 controls the rating basis for Building operations by
+                                                owner at Location 5; form WC 00 03 13 edition 04 21 applies unless a state
+The estimated premium of $2,119 is calculated from rate 1.15, experience   amendatory endorsement changes it.
+modification 1.04, and schedule rating 0% for RI class 9082, Location 3.
+                                                SECTION 59 - OFFICER AND SUBCONTRACTOR TREATMENT
+SECTION 53 - REMUNERATION AUDIT
+                                                The provision below is read with WC 00 03 13 edition 04 21 for NH class 9015,
+The provision below is read with WC 00 00 01 A edition 07 23 for ME class 3632,   Location 5.
+Location 4.
+                                                Officer, member, volunteer, leased-worker, and subcontractor treatment for NH class
+The annual payroll of $195,887 for ME class 3632, Location 4 is an estimate and is   9015, Location 5 must be read with form WC 00 03 13 edition 04 21 and the
+subject to audit after the policy period.       $209,573 remuneration entry.
+
+SECTION 54 - STATE CLASSIFICATION CONTROL       SECTION 60 - PREMIUM REVISION BASIS
+WC 00 00 01 A edition 07 23 is a condition provision for ME class 3632, Location   WC 00 03 13 edition 04 21 is a condition provision for NH class 9015, Location 5.
+4.
+                                                The estimated premium of $1,550 is calculated from rate 0.74, experience
+The ME classification 3632 controls the rating basis for Machine shop NOC at   modification 1.04, and schedule rating 0% for NH class 9015, Location 5.
+Location 4; form WC 00 00 01 A edition 07 23 applies unless a state amendatory
+endorsement changes it.
+
+
+
+
+
+
+
+
+
+
+
+
+AWC 114 (05-24)                                                 Blue Kettle Food Service, LLC | YW700400
 
 # Page 59
 
-POLICY PACKET                                                                      | POLICY COPY 1F7EA01 |
+ARGENT BIRCH EMPLOYERS
+Workers Compensation and Employers Liability
 
-Underwriting Support
+POLICY NUMBER: YW700400
+EFFECTIVE: 04/01/2026
+EXPIRES: 04/01/2027
 
-Policy jacket notices and state exceptions
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
+# MATERIAL POLICY PROVISIONS - CONTINUED 6
 
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-046-01,State exception,Reviewed,State form
-REF-046-02,Form filing note,Pending,Rating file
-REF-046-03,Policy jacket notices and state exceptions,Indexed,Policy audit
-REF-046-04,Prior policy comparison,Archive,Producer copy
-REF-046-05,Rating worksheet,Reviewed,State form
-REF-046-06,Producer correspondence,Pending,Rating file
-REF-046-07,State exception,Indexed,Policy audit
-REF-046-08,Form filing note,Archive,Producer copy
-REF-046-09,Policy jacket notices and state exceptions,Reviewed,State form
-REF-046-10,Prior policy comparison,Pending,Rating file
-REF-046-11,Rating worksheet,Indexed,Policy audit
-REF-046-12,Producer correspondence,Archive,Producer copy
-REF-046-13,State exception,Reviewed,State form
-REF-046-14,Form filing note,Pending,Rating file
-REF-046-15,Policy jacket notices and state exceptions,Indexed,Policy audit
-REF-046-16,Prior policy comparison,Archive,Producer copy
-REF-046-17,Rating worksheet,Reviewed,State form
-REF-046-18,Producer correspondence,Pending,Rating file
-REF-046-19,State exception,Indexed,Policy audit
-REF-046-20,Form filing note,Archive,Producer copy
-REF-046-21,Policy jacket notices and state exceptions,Reviewed,State form
-REF-046-22,Prior policy comparison,Pending,Rating file
-REF-046-23,Rating worksheet,Indexed,Policy audit
-REF-046-24,Producer correspondence,Archive,Producer copy
-REF-046-25,State exception,Reviewed,State form
-REF-046-26,Form filing note,Pending,Rating file
-REF-046-27,Policy jacket notices and state exceptions,Indexed,Policy audit
-REF-046-28,Prior policy comparison,Archive,Producer copy
-REF-046-29,Rating worksheet,Reviewed,State form
-REF-046-30,Producer correspondence,Pending,Rating file
+THIS FORM IS PART OF THE POLICY AND MUST BE READ WITH THE DECLARATIONS AND ENDORSEMENTS.
 
-Policy packet                                                                                  Page 46
+**SECTION 61 - REMUNERATION AUDIT**
+1. For VT class 5606 (Contractor executive supervisor), the applicable form is WC 00 00 01 A edition 04 21 and the provision is treated as condition.
+
+The annual payroll of $223,415 for VT class 5606, Location 1 is an estimate and is subject to audit after the policy period.
+
+**SECTION 62 - STATE CLASSIFICATION CONTROL**
+The provision below is read with WC 00 00 01 A edition 04 21 for VT class 5606, Location 1.
+
+The VT classification 5606 controls the rating basis for Contractor executive supervisor at Location 1; form WC 00 00 01 A edition 04 21 applies unless a state amendatory endorsement changes it.
+
+**SECTION 63 - OFFICER AND SUBCONTRACTOR TREATMENT**
+2. WC 00 00 01 A edition 04 21 is a limitation provision for VT class 5606, Location 1.
+
+Officer, member, volunteer, leased-worker, and subcontractor treatment for VT class 5606, Location 1 must be read with form WC 00 00 01 A edition 04 21 and the $223,415 remuneration entry.
+
+**SECTION 64 - PREMIUM REVISION BASIS**
+For VT class 5606 (Contractor executive supervisor), the applicable form is WC 00 00 01 A edition 04 21 and the provision is treated as condition.
+
+The estimated premium of $6,389 is calculated from rate 2.86, experience modification 1.04, and schedule rating 0% for VT class 5606, Location 1.
+
+**SECTION 65 - REMUNERATION AUDIT**
+3. The provision below is read with WC 04 03 06 edition 01 15 for CT class 8810, Location 2.
+
+The annual payroll of $234,108 for CT class 8810, Location 2 is an estimate and is subject to audit after the policy period.
+
+**SECTION 66 - STATE CLASSIFICATION CONTROL**
+WC 04 03 06 edition 01 15 is a condition provision for CT class 8810, Location 2.
+
+The CT classification 8810 controls the rating basis for Clerical office employees at Location 2; form WC 04 03 06 edition 01 15 applies unless a state amendatory endorsement changes it.
+
+**SECTION 67 - OFFICER AND SUBCONTRACTOR TREATMENT**
+4. For CT class 8810 (Clerical office employees), the applicable form is WC 04 03 06 edition 01 15 and the provision is treated as limitation.
+
+Officer, member, volunteer, leased-worker, and subcontractor treatment for CT class 8810, Location 2 must be read with form WC 04 03 06 edition 01 15 and the $234,108 remuneration entry.
+
+**SECTION 68 - PREMIUM REVISION BASIS**
+The provision below is read with WC 04 03 06 edition 01 15 for CT class 8810, Location 2.
+
+The estimated premium of $6,695 is calculated from rate 2.86, experience modification 1.04, and schedule rating 0% for CT class 8810, Location 2.
+
+**SECTION 69 - REMUNERATION AUDIT**
+5. WC 00 00 00 C edition 04 21 is a condition provision for CT class 8017, Location 3.
+
+The annual payroll of $239,729 for CT class 8017, Location 3 is an estimate and is subject to audit after the policy period.
+
+**SECTION 70 - STATE CLASSIFICATION CONTROL**
+For CT class 8017 (Retail store - all employees), the applicable form is WC 00 00 00 C edition 04 21 and the provision is treated as condition.
+
+The CT classification 8017 controls the rating basis for Retail store - all employees at Location 3; form WC 00 00 00 C edition 04 21 applies unless a state amendatory endorsement changes it.
+
+**SECTION 71 - OFFICER AND SUBCONTRACTOR TREATMENT**
+6. The provision below is read with WC 00 00 00 C edition 04 21 for CT class 8017, Location 3.
+
+Officer, member, volunteer, leased-worker, and subcontractor treatment for CT class 8017, Location 3 must be read with form WC 00 00 00 C edition 04 21 and the $239,729 remuneration entry.
+
+**SECTION 72 - PREMIUM REVISION BASIS**
+WC 00 00 00 C edition 04 21 is a condition provision for CT class 8017, Location 3.
+
+The estimated premium of $6,856 is calculated from rate 2.86, experience modification 1.04, and schedule rating 0% for CT class 8017, Location 3.
+
+AWC 115 (05-24)
+Blue Kettle Food Service, LLC | YW700400
 
 # Page 60
 
-POLICY PACKET                                                                              POLICY COPY 1F7EA01
-Underwriting Support
+ARGENT BIRCH EMPLOYERS
+Workers Compensation and Employers Liability
 
-Policy jacket notices and state exceptions
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
+                                                     POLICY NUMBER: YW700400
+                                                    EFFECTIVE: 04/01/2026
+                                                      EXPIRES: 04/01/2027
+________________________________________________________________________________
 
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-047-01,Form filing note,Reviewed,Rating file
-REF-047-02,Policy jacket notices and state exceptions,Pending,Policy audit
-REF-047-03,Prior policy comparison,Indexed,Producer copy
-REF-047-04,Rating worksheet,Archive,State form
-REF-047-05,Producer correspondence,Reviewed,Rating file
-REF-047-06,State exception,Pending,Policy audit
-REF-047-07,Form filing note,Indexed,Producer copy
-REF-047-08,Policy jacket notices and state exceptions,Archive,State form
-REF-047-09,Prior policy comparison,Reviewed,Rating file
-REF-047-10,Rating worksheet,Pending,Policy audit
-REF-047-11,Producer correspondence,Indexed,Producer copy
-REF-047-12,State exception,Archive,State form
-REF-047-13,Form filing note,Reviewed,Rating file
-REF-047-14,Policy jacket notices and state exceptions,Pending,Policy audit
-REF-047-15,Prior policy comparison,Indexed,Producer copy
-REF-047-16,Rating worksheet,Archive,State form
-REF-047-17,Producer correspondence,Reviewed,Rating file
-REF-047-18,State exception,Pending,Policy audit
-REF-047-19,Form filing note,Indexed,Producer copy
-REF-047-20,Policy jacket notices and state exceptions,Archive,State form
-REF-047-21,Prior policy comparison,Reviewed,Rating file
-REF-047-22,Rating worksheet,Pending,Policy audit
-REF-047-23,Producer correspondence,Indexed,Producer copy
-REF-047-24,State exception,Archive,State form
-REF-047-25,Form filing note,Reviewed,Rating file
-REF-047-26,Policy jacket notices and state exceptions,Pending,Policy audit
-REF-047-27,Prior policy comparison,Indexed,Producer copy
-REF-047-28,Rating worksheet,Archive,State form
-REF-047-29,Producer correspondence,Reviewed,Rating file
-REF-047-30,State exception,Pending,Policy audit
+                MATERIAL POLICY PROVISIONS - CONTINUED 7
+________________________________________________________________________________
+THIS FORM IS PART OF THE POLICY AND MUST BE READ WITH THE DECLARATIONS AND ENDORSEMENTS.
+________________________________________________________________________________
 
-Policy packet                                                                                          Page 47
+SECTION 73 - REMUNERATION AUDIT
+A. For MA class 8742 (Outside salespersons), the applicable form is WC 00 03 13
+edition 04 21 and the provision is treated as condition.
+
+The annual payroll of $256,691 for MA class 8742, Location 4 is an estimate and is
+subject to audit after the policy period.
+
+SECTION 74 - STATE CLASSIFICATION CONTROL
+The provision below is read with WC 00 03 13 edition 04 21 for MA class 8742,
+Location 4.
+
+The MA classification 8742 controls the rating basis for Outside salespersons at
+Location 4; form WC 00 03 13 edition 04 21 applies unless a state amendatory
+endorsement changes it.
+
+SECTION 75 - OFFICER AND SUBCONTRACTOR TREATMENT
+WC 00 03 13 edition 04 21 is a limitation provision for MA class 8742, Location 4.
+
+B. Officer, member, volunteer, leased-worker, and subcontractor treatment for MA
+class 8742, Location 4 must be read with form WC 00 03 13 edition 04 21 and the
+$256,691 remuneration entry.
+
+SECTION 76 - PREMIUM REVISION BASIS
+For MA class 8742 (Outside salespersons), the applicable form is WC 00 03 13
+edition 04 21 and the provision is treated as condition.
+
+The estimated premium of $15,966 is calculated from rate 6.22, experience
+modification 1.04, and schedule rating 0% for MA class 8742, Location 4.
+
+SECTION 77 - REMUNERATION AUDIT
+The provision below is read with WC 04 03 06 edition 07 23 for MA class 5190,
+Location 5.
+
+The annual payroll of $265,916 for MA class 5190, Location 5 is an estimate and is
+subject to audit after the policy period.
+
+SECTION 78 - STATE CLASSIFICATION CONTROL
+C. WC 04 03 06 edition 07 23 is a condition provision for MA class 5190, Location
+5.
+
+The MA classification 5190 controls the rating basis for Electrical wiring within
+buildings at Location 5; form WC 04 03 06 edition 07 23 applies unless a state
+amendatory endorsement changes it.
+
+SECTION 79 - OFFICER AND SUBCONTRACTOR TREATMENT
+For MA class 5190 (Electrical wiring within buildings), the applicable form is WC
+04 03 06 edition 07 23 and the provision is treated as limitation.
+
+Officer, member, volunteer, leased-worker, and subcontractor treatment for MA class
+5190, Location 5 must be read with form WC 04 03 06 edition 07 23 and the
+$265,916 remuneration entry.
+
+SECTION 80 - PREMIUM REVISION BASIS
+The provision below is read with WC 04 03 06 edition 07 23 for MA class 5190,
+Location 5.
+
+D. The estimated premium of $16,539 is calculated from rate 6.22, experience
+modification 1.04, and schedule rating 0% for MA class 5190, Location 5.
+
+SECTION 81 - REMUNERATION AUDIT
+WC 00 03 13 edition 01 15 is a condition provision for RI class 9082, Location 1.
+
+The annual payroll of $277,752 for RI class 9082, Location 1 is an estimate and is
+subject to audit after the policy period.
+
+SECTION 82 - STATE CLASSIFICATION CONTROL
+For RI class 9082 (Restaurant NOC), the applicable form is WC 00 03 13 edition 01
+15 and the provision is treated as condition.
+
+The RI classification 9082 controls the rating basis for Restaurant NOC at Location
+1; form WC 00 03 13 edition 01 15 applies unless a state amendatory endorsement
+changes it.
+
+SECTION 83 - OFFICER AND SUBCONTRACTOR TREATMENT
+E. The provision below is read with WC 00 03 13 edition 01 15 for RI class 9082,
+Location 1.
+
+Officer, member, volunteer, leased-worker, and subcontractor treatment for RI class
+9082, Location 1 must be read with form WC 00 03 13 edition 01 15 and the
+$277,752 remuneration entry.
+
+SECTION 84 - PREMIUM REVISION BASIS
+WC 00 03 13 edition 01 15 is a condition provision for RI class 9082, Location 1.
+
+The estimated premium of $2,055 is calculated from rate 0.74, experience
+modification 1.04, and schedule rating 0% for RI class 9082, Location 1.
+
+AWC 116 (05-24)                                          Blue Kettle Food Service, LLC | YW700400
 
 # Page 61
 
-POLICY PACKET
-POLICY COPY 1F7EA01
+ARGENT BIRCH EMPLOYERS
+Workers Compensation and Employers Liability
 
-Underwriting Support
+POLICY NUMBER: YW700400
+EFFECTIVE: 04/01/2026
+EXPIRES: 04/01/2027
 
-Policy jacket notices and state exceptions
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
+----------------------------------------------------------------------------------------------------------------------------------
+# MATERIAL POLICY PROVISIONS - CONTINUED 8
+----------------------------------------------------------------------------------------------------------------------------------
+THIS FORM IS PART OF THE POLICY AND MUST BE READ WITH THE DECLARATIONS AND ENDORSEMENTS.
+----------------------------------------------------------------------------------------------------------------------------------
 
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-048-01,Policy jacket notices and state exceptions,Reviewed,Policy audit
-REF-048-02,Prior policy comparison,Pending,Producer copy
-REF-048-03,Rating worksheet,Indexed,State form
-REF-048-04,Producer correspondence,Archive,Rating file
-REF-048-05,State exception,Reviewed,Policy audit
-REF-048-06,Form filing note,Pending,Producer copy
-REF-048-07,Policy jacket notices and state exceptions,Indexed,State form
-REF-048-08,Prior policy comparison,Archive,Rating file
-REF-048-09,Rating worksheet,Reviewed,Policy audit
-REF-048-10,Producer correspondence,Pending,Producer copy
-REF-048-11,State exception,Indexed,State form
-REF-048-12,Form filing note,Archive,Rating file
-REF-048-13,Policy jacket notices and state exceptions,Reviewed,Policy audit
-REF-048-14,Prior policy comparison,Pending,Producer copy
-REF-048-15,Rating worksheet,Indexed,State form
-REF-048-16,Producer correspondence,Archive,Rating file
-REF-048-17,State exception,Reviewed,Policy audit
-REF-048-18,Form filing note,Pending,Producer copy
-REF-048-19,Policy jacket notices and state exceptions,Indexed,State form
-REF-048-20,Prior policy comparison,Archive,Rating file
-REF-048-21,Rating worksheet,Reviewed,Policy audit
-REF-048-22,Producer correspondence,Pending,Producer copy
-REF-048-23,State exception,Indexed,State form
-REF-048-24,Form filing note,Archive,Rating file
-REF-048-25,Policy jacket notices and state exceptions,Reviewed,Policy audit
-REF-048-26,Prior policy comparison,Pending,Producer copy
-REF-048-27,Rating worksheet,Indexed,State form
-REF-048-28,Producer correspondence,Archive,Rating file
-REF-048-29,State exception,Reviewed,Policy audit
-REF-048-30,Form filing note,Pending,Producer copy
+**SECTION 85 - REMUNERATION AUDIT**
+For ME class 3632 (Machine shop NOC), the applicable form is WC 00 03 13
+edition 01 15 and the provision is treated as condition.
 
-Policy packet
-Page 48
+The annual payroll of $288,720 for ME class 3632, Location 2 is an estimate and is
+subject to audit after the policy period.
+
+**SECTION 86 - STATE CLASSIFICATION CONTROL**
+The provision below is read with WC 00 03 13 edition 01 15 for ME class 3632,
+Location 2.
+
+The ME classification 3632 controls the rating basis for Machine shop NOC at
+Location 2; form WC 00 03 13 edition 01 15 applies unless a state amendatory
+endorsement changes it.
+
+**SECTION 87 - OFFICER AND SUBCONTRACTOR TREATMENT**
+WC 00 03 13 edition 01 15 is a limitation provision for ME class 3632, Location 2.
+
+Officer, member, volunteer, leased-worker, and subcontractor treatment for ME class
+3632, Location 2 must be read with form WC 00 03 13 edition 01 15 and the
+$288,720 remuneration entry.
+
+**SECTION 88 - PREMIUM REVISION BASIS**
+For ME class 3632 (Machine shop NOC), the applicable form is WC 00 03 13
+edition 01 15 and the provision is treated as condition.
+
+The estimated premium of $1,212 is calculated from rate 0.42, experience
+modification 1.04, and schedule rating 0% for ME class 3632, Location 2.
+
+**SECTION 89 - REMUNERATION AUDIT**
+The provision below is read with WC 04 03 06 edition 04 21 for NH class 9015,
+Location 3.
+
+The annual payroll of $296,731 for NH class 9015, Location 3 is an estimate and is
+subject to audit after the policy period.
+
+**SECTION 90 - STATE CLASSIFICATION CONTROL**
+WC 04 03 06 edition 04 21 is a condition provision for NH class 9015, Location 3.
+
+The NH classification 9015 controls the rating basis for Building operations by
+owner at Location 3; form WC 04 03 06 edition 04 21 applies unless a state
+amendatory endorsement changes it.
+
+
+**SECTION 91 - OFFICER AND SUBCONTRACTOR TREATMENT**
+For NH class 9015 (Building operations by owner), the applicable form is WC 04 03
+06 edition 04 21 and the provision is treated as limitation.
+
+Officer, member, volunteer, leased-worker, and subcontractor treatment for NH class
+9015, Location 3 must be read with form WC 04 03 06 edition 04 21 and the
+$296,731 remuneration entry.
+
+**SECTION 92 - PREMIUM REVISION BASIS**
+The provision below is read with WC 04 03 06 edition 04 21 for NH class 9015,
+Location 3.
+
+The estimated premium of $2,195 is calculated from rate 0.74, experience
+modification 1.04, and schedule rating 0% for NH class 9015, Location 3.
+
+**SECTION 93 - REMUNERATION AUDIT**
+WC 04 03 06 edition 07 23 is a condition provision for VT class 5606, Location 4.
+
+The annual payroll of $312,419 for VT class 5606, Location 4 is an estimate and is
+subject to audit after the policy period.
+
+**SECTION 94 - STATE CLASSIFICATION CONTROL**
+For VT class 5606 (Contractor executive supervisor), the applicable form is WC 04
+03 06 edition 07 23 and the provision is treated as condition.
+
+The VT classification 5606 controls the rating basis for Contractor executive
+supervisor at Location 4; form WC 04 03 06 edition 07 23 applies unless a state
+amendatory endorsement changes it.
+
+**SECTION 95 - OFFICER AND SUBCONTRACTOR TREATMENT**
+The provision below is read with WC 04 03 06 edition 07 23 for VT class 5606,
+Location 4.
+
+Officer, member, volunteer, leased-worker, and subcontractor treatment for VT class
+5606, Location 4 must be read with form WC 04 03 06 edition 07 23 and the
+$312,419 remuneration entry.
+
+**SECTION 96 - PREMIUM REVISION BASIS**
+WC 04 03 06 edition 07 23 is a condition provision for VT class 5606, Location 4.
+
+The estimated premium of $19,432 is calculated from rate 6.22, experience
+modification 1.04, and schedule rating 0% for VT class 5606, Location 4.
+
+<br>
+<br>
+<br>
+AWC 117 (05-24)                                                     Blue Kettle Food Service, LLC | YW700400_
+
 
 # Page 62
 
-POLICY PACKET                                                                  POLICY COPY 1F7EA01
+ARGENT BIRCH EMPLOYERS
+Workers Compensation and Employers Liability
 
-Underwriting Support
+POLICY NUMBER: YW700400
+EFFECTIVE: 04/01/2026
+EXPIRES: 04/01/2027
 
-Policy jacket notices and state exceptions
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
+------------------------------------------------------------------------------------------------------------------------
+MATERIAL POLICY PROVISIONS - CONTINUED 9
+------------------------------------------------------------------------------------------------------------------------
+THIS FORM IS PART OF THE POLICY AND MUST BE READ WITH THE DECLARATIONS AND ENDORSEMENTS.
+------------------------------------------------------------------------------------------------------------------------
 
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-049-01,Prior policy comparison,Reviewed,Producer copy
-REF-049-02,Rating worksheet,Pending,State form
-REF-049-03,Producer correspondence,Indexed,Rating file
-REF-049-04,State exception,Archive,Policy audit
-REF-049-05,Form filing note,Reviewed,Producer copy
-REF-049-06,Policy jacket notices and state exceptions,Pending,State form
-REF-049-07,Prior policy comparison,Indexed,Rating file
-REF-049-08,Rating worksheet,Archive,Policy audit
-REF-049-09,Producer correspondence,Reviewed,Producer copy
-REF-049-10,State exception,Pending,State form
-REF-049-11,Form filing note,Indexed,Rating file
-REF-049-12,Policy jacket notices and state exceptions,Archive,Policy audit
-REF-049-13,Prior policy comparison,Reviewed,Producer copy
-REF-049-14,Rating worksheet,Pending,State form
-REF-049-15,Producer correspondence,Indexed,Rating file
-REF-049-16,State exception,Archive,Policy audit
-REF-049-17,Form filing note,Reviewed,Producer copy
-REF-049-18,Policy jacket notices and state exceptions,Pending,State form
-REF-049-19,Prior policy comparison,Indexed,Rating file
-REF-049-20,Rating worksheet,Archive,Policy audit
-REF-049-21,Producer correspondence,Reviewed,Producer copy
-REF-049-22,State exception,Pending,State form
-REF-049-23,Form filing note,Indexed,Rating file
-REF-049-24,Policy jacket notices and state exceptions,Archive,Policy audit
-REF-049-25,Prior policy comparison,Reviewed,Producer copy
-REF-049-26,Rating worksheet,Pending,State form
-REF-049-27,Producer correspondence,Indexed,Rating file
-REF-049-28,State exception,Archive,Policy audit
-REF-049-29,Form filing note,Reviewed,Producer copy
-REF-049-30,Policy jacket notices and state exceptions,Pending,State form
+SECTION 97 - REMUNERATION AUDIT
+1. For CT class 8810 (Clerical office employees), the applicable form is WC 00 03
+13 edition 07 23 and the provision is treated as condition.
 
-Policy packet                                                                            Page 49
+The annual payroll of $323,486 for CT class 8810, Location 5 is an estimate and is
+subject to audit after the policy period.
+
+SECTION 98 - STATE CLASSIFICATION CONTROL
+The provision below is read with WC 00 03 13 edition 07 23 for CT class 8810,
+Location 5.
+
+The CT classification 8810 controls the rating basis for Clerical office employees at
+Location 5; form WC 00 03 13 edition 07 23 applies unless a state amendatory
+endorsement changes it.
+
+SECTION 99 - OFFICER AND SUBCONTRACTOR TREATMENT
+2. WC 00 03 13 edition 07 23 is a limitation provision for CT class 8810, Location
+5.
+
+Officer, member, volunteer, leased-worker, and subcontractor treatment for CT class
+8810, Location 5 must be read with form WC 00 03 13 edition 07 23 and the
+$323,486 remuneration entry.
+
+SECTION 100 - PREMIUM REVISION BASIS
+For CT class 8810 (Clerical office employees), the applicable form is WC 00 03 13
+edition 07 23 and the provision is treated as condition.
+
+The estimated premium of $20,120 is calculated from rate 6.22, experience
+modification 1.04, and schedule rating 0% for CT class 8810, Location 5.
+
+SECTION 101 - REMUNERATION AUDIT
+3. The provision below is read with WC 00 03 13 edition 07 23 for CT class 8017,
+Location 1.
+
+The annual payroll of $333,913 for CT class 8017, Location 1 is an estimate and is
+subject to audit after the policy period.
+
+SECTION 102 - STATE CLASSIFICATION CONTROL
+WC 00 03 13 edition 07 23 is a condition provision for CT class 8017, Location 1.
+
+The CT classification 8017 controls the rating basis for Retail store - all employees
+at Location 1; form WC 00 03 13 edition 07 23 applies unless a state amendatory
+endorsement changes it.
+
+SECTION 103 - OFFICER AND SUBCONTRACTOR TREATMENT
+4. For CT class 8017 (Retail store - all employees), the applicable form is WC 00 03
+13 edition 07 23 and the provision is treated as limitation.
+
+Officer, member, volunteer, leased-worker, and subcontractor treatment for CT class
+8017, Location 1 must be read with form WC 00 03 13 edition 07 23 and the
+$333,913 remuneration entry.
+
+SECTION 104 - PREMIUM REVISION BASIS
+The provision below is read with WC 00 03 13 edition 07 23 for CT class 8017,
+Location 1.
+
+The estimated premium of $1,402 is calculated from rate 0.42, experience
+modification 1.04, and schedule rating 0% for CT class 8017, Location 1.
+
+SECTION 105 - REMUNERATION AUDIT
+5. WC 04 03 06 edition 01 15 is a condition provision for MA class 8742, Location
+2.
+
+The annual payroll of $349,084 for MA class 8742, Location 2 is an estimate and is
+subject to audit after the policy period.
+
+SECTION 106 - STATE CLASSIFICATION CONTROL
+For MA class 8742 (Outside salespersons), the applicable form is WC 04 03 06
+edition 01 15 and the provision is treated as condition.
+
+The MA classification 8742 controls the rating basis for Outside salespersons at
+Location 2; form WC 04 03 06 edition 01 15 applies unless a state amendatory
+endorsement changes it.
+
+SECTION 107 - OFFICER AND SUBCONTRACTOR TREATMENT
+6. The provision below is read with WC 04 03 06 edition 01 15 for MA class 8742,
+Location 2.
+
+Officer, member, volunteer, leased-worker, and subcontractor treatment for MA class
+8742, Location 2 must be read with form WC 04 03 06 edition 01 15 and the
+$349,084 remuneration entry.
+
+SECTION 108 - PREMIUM REVISION BASIS
+WC 04 03 06 edition 01 15 is a condition provision for MA class 8742, Location 2.
+
+The estimated premium of $628 is calculated from rate 0.18, experience
+modification 1.04, and schedule rating 0% for MA class 8742, Location 2.
+
+AWC 118 (05-24)                                             Blue Kettle Food Service, LLC | YW700400
 
 # Page 63
 
-POLICY PACKET                                                                  POLICY COPY 1F7EA01
+ARGENT BIRCH EMPLOYERS                                                 POLICY NUMBER: YW700400
+Workers Compensation and Employers Liability                               EFFECTIVE: 04/01/2026
+                                                                            EXPIRES: 04/01/2027
+________________________________________________________________________________________________
 
-# Underwriting Support
+                      MATERIAL POLICY PROVISIONS - CONTINUED 10
+________________________________________________________________________________________________
 
-## Policy jacket notices and state exceptions
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
+THIS FORM IS PART OF THE POLICY AND MUST BE READ WITH THE DECLARATIONS AND ENDORSEMENTS.
+________________________________________________________________________________________________
 
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-050-01,Rating worksheet,Reviewed,State form
-REF-050-02,Producer correspondence,Pending,Rating file
-REF-050-03,State exception,Indexed,Policy audit
-REF-050-04,Form filing note,Archive,Producer copy
-REF-050-05,Policy jacket notices and state exceptions,Reviewed,State form
-REF-050-06,Prior policy comparison,Pending,Rating file
-REF-050-07,Rating worksheet,Indexed,Policy audit
-REF-050-08,Producer correspondence,Archive,Producer copy
-REF-050-09,State exception,Reviewed,State form
-REF-050-10,Form filing note,Pending,Rating file
-REF-050-11,Policy jacket notices and state exceptions,Indexed,Policy audit
-REF-050-12,Prior policy comparison,Archive,Producer copy
-REF-050-13,Rating worksheet,Reviewed,State form
-REF-050-14,Producer correspondence,Pending,Rating file
-REF-050-15,State exception,Indexed,Policy audit
-REF-050-16,Form filing note,Archive,Producer copy
-REF-050-17,Policy jacket notices and state exceptions,Reviewed,State form
-REF-050-18,Prior policy comparison,Pending,Rating file
-REF-050-19,Rating worksheet,Indexed,Policy audit
-REF-050-20,Producer correspondence,Archive,Producer copy
-REF-050-21,State exception,Reviewed,State form
-REF-050-22,Form filing note,Pending,Rating file
-REF-050-23,Policy jacket notices and state exceptions,Indexed,Policy audit
-REF-050-24,Prior policy comparison,Archive,Producer copy
-REF-050-25,Rating worksheet,Reviewed,State form
-REF-050-26,Producer correspondence,Pending,Rating file
-REF-050-27,State exception,Indexed,Policy audit
-REF-050-28,Form filing note,Archive,Producer copy
-REF-050-29,Policy jacket notices and state exceptions,Reviewed,State form
-REF-050-30,Prior policy comparison,Pending,Rating file
+                                                        SECTION 115 - OFFICER AND SUBCONTRACTOR TREATMENT
+SECTION 109 - REMUNERATION AUDIT
+                                                        For RI class 9082 (Restaurant NOC), the applicable form is WC 04 03 06 edition 07
+A. For MA class 5190 (Electrical wiring within buildings), the applicable form is    23 and the provision is treated as limitation.
+WC 00 00 00 C edition 04 21 and the provision is treated as condition.
+                                                        Officer, member, volunteer, leased-worker, and subcontractor treatment for RI class
+The annual payroll of $353,824 for MA class 5190, Location 3 is an estimate and is     9082, Location 4 must be read with form WC 04 03 06 edition 07 23 and the
+subject to audit after the policy period.               $367,301 remuneration entry.
 
-Policy packet                                                                        Page 50
+SECTION 110 - STATE CLASSIFICATION CONTROL               SECTION 116 - PREMIUM REVISION BASIS
+The provision below is read with WC 00 00 00 C edition 04 21 for MA class 5190,          The provision below is read with WC 04 03 06 edition 07 23 for RI class 9082,
+Location 3.                                             Location 4.
+
+The MA classification 5190 controls the rating basis for Electrical wiring within       D. The estimated premium of $1,542 is calculated from rate 0.42, experience
+buildings at Location 3; form WC 00 00 00 C edition 04 21 applies unless a state        modification 1.04, and schedule rating 0% for RI class 9082, Location 4.
+amendatory endorsement changes it.
+                                                        SECTION 117 - REMUNERATION AUDIT
+SECTION 111 - OFFICER AND SUBCONTRACTOR TREATMENT
+                                                        WC 00 03 13 edition 04 21 is a condition provision for ME class 3632, Location 5.
+WC 00 00 00 C edition 04 21 is a limitation provision for MA class 5190, Location
+3.                                                      The annual payroll of $378,170 for ME class 3632, Location 5 is an estimate and is
+                                                        subject to audit after the policy period.
+B. Officer, member, volunteer, leased-worker, and subcontractor treatment for MA
+class 5190, Location 3 must be read with form WC 00 00 00 C edition 04 21 and the       SECTION 118 - STATE CLASSIFICATION CONTROL
+$353,824 remuneration entry.
+                                                        For ME class 3632 (Machine shop NOC), the applicable form is WC 00 03 13
+SECTION 112 - PREMIUM REVISION BASIS                    edition 04 21 and the provision is treated as condition.
+
+For MA class 5190 (Electrical wiring within buildings), the applicable form is WC       The ME classification 3632 controls the rating basis for Machine shop NOC at
+00 00 00 C edition 04 21 and the provision is treated as condition.                     Location 5; form WC 00 03 13 edition 04 21 applies unless a state amendatory
+                                                        endorsement changes it.
+The estimated premium of $955 is calculated from rate 0.27, experience
+modification 1.04, and schedule rating 0% for MA class 5190, Location 3.                 SECTION 119 - OFFICER AND SUBCONTRACTOR TREATMENT
+
+SECTION 113 - REMUNERATION AUDIT                        E. The provision below is read with WC 00 03 13 edition 04 21 for ME class 3632,
+                                                        Location 5.
+The provision below is read with WC 04 03 06 edition 07 23 for RI class 9082,
+Location 4.                                             Officer, member, volunteer, leased-worker, and subcontractor treatment for ME class
+                                                        3632, Location 5 must be read with form WC 00 03 13 edition 04 21 and the
+The annual payroll of $367,301 for RI class 9082, Location 4 is an estimate and is     $378,170 remuneration entry.
+subject to audit after the policy period.
+                                                        SECTION 120 - PREMIUM REVISION BASIS
+SECTION 114 - STATE CLASSIFICATION CONTROL
+                                                        WC 00 03 13 edition 04 21 is a condition provision for ME class 3632, Location 5.
+C. WC 04 03 06 edition 07 23 is a condition provision for RI class 9082, Location 4.
+                                                        The estimated premium of $4,348 is calculated from rate 1.15, experience
+The RI classification 9082 controls the rating basis for Restaurant NOC at Location     modification 1.04, and schedule rating 0% for ME class 3632, Location 5.
+4; form WC 04 03 06 edition 07 23 applies unless a state amendatory endorsement
+changes it.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+AWC 119 (05-24)                                                        Blue Kettle Food Service, LLC | YW700400
 
 # Page 64
 
-POLICY PACKET                                                                  POLICY COPY 1F7EA01
+ARGENT BIRCH EMPLOYERS                                                 POLICY NUMBER: YW700400
+Workers Compensation and Employers Liability                             EFFECTIVE: 04/01/2026
+                                                                           EXPIRES: 04/01/2027
+_______________________________________________________________________________________________
 
-Underwriting Support
+                        MATERIAL POLICY PROVISIONS - CONTINUED 11
+_______________________________________________________________________________________________
+THIS FORM IS PART OF THE POLICY AND MUST BE READ WITH THE DECLARATIONS AND ENDORSEMENTS.
+_______________________________________________________________________________________________
 
-Policy jacket notices and state exceptions
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
+SECTION 121 - REMUNERATION AUDIT                                SECTION 127 - OFFICER AND SUBCONTRACTOR TREATMENT
+For NH class 9015 (Building operations by owner), the applicable form is WC 00 00  For VT class 5606 (Contractor executive supervisor), the applicable form is WC 00
+00 C edition 07 23 and the provision is treated as condition.  00 01 A edition 04 21 and the provision is treated as limitation.
+                                                                Officer, member, volunteer, leased-worker, and subcontractor treatment for VT class
+The annual payroll of $391,534 for NH class 9015, Location 1 is an estimate and is  5606, Location 2 must be read with form WC 00 00 01 A edition 04 21 and the
+subject to audit after the policy period.                       $404,635 remuneration entry.
 
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-051-01,Producer correspondence,Reviewed,Rating file
-REF-051-02,State exception,Pending,Policy audit
-REF-051-03,Form filing note,Indexed,Producer copy
-REF-051-04,Policy jacket notices and state exceptions,Archive,State form
-REF-051-05,Prior policy comparison,Reviewed,Rating file
-REF-051-06,Rating worksheet,Pending,Policy audit
-REF-051-07,Producer correspondence,Indexed,Producer copy
-REF-051-08,State exception,Archive,State form
-REF-051-09,Form filing note,Reviewed,Rating file
-REF-051-10,Policy jacket notices and state exceptions,Pending,Policy audit
-REF-051-11,Prior policy comparison,Indexed,Producer copy
-REF-051-12,Rating worksheet,Archive,State form
-REF-051-13,Producer correspondence,Reviewed,Rating file
-REF-051-14,State exception,Pending,Policy audit
-REF-051-15,Form filing note,Indexed,Producer copy
-REF-051-16,Policy jacket notices and state exceptions,Archive,State form
-REF-051-17,Prior policy comparison,Reviewed,Rating file
-REF-051-18,Rating worksheet,Pending,Policy audit
-REF-051-19,Producer correspondence,Indexed,Producer copy
-REF-051-20,State exception,Archive,State form
-REF-051-21,Form filing note,Reviewed,Rating file
-REF-051-22,Policy jacket notices and state exceptions,Pending,Policy audit
-REF-051-23,Prior policy comparison,Indexed,Producer copy
-REF-051-24,Rating worksheet,Archive,State form
-REF-051-25,Producer correspondence,Reviewed,Rating file
-REF-051-26,State exception,Pending,Policy audit
-REF-051-27,Form filing note,Indexed,Producer copy
-REF-051-28,Policy jacket notices and state exceptions,Archive,State form
-REF-051-29,Prior policy comparison,Reviewed,Rating file
-REF-051-30,Rating worksheet,Pending,Policy audit
+SECTION 122 - STATE CLASSIFICATION CONTROL                      SECTION 128 - PREMIUM REVISION BASIS
+The provision below is read with WC 00 00 00 C edition 07 23 for NH class 9015,  The provision below is read with WC 00 00 01 A edition 04 21 for VT class 5606,
+Location 1.                                                     Location 2.
+The NH classification 9015 controls the rating basis for Building operations by  The estimated premium of $17,601 is calculated from rate 4.35, experience
+owner at Location 1; form WC 00 00 00 C edition 07 23 applies unless a state  modification 1.04, and schedule rating 0% for VT class 5606, Location 2.
+amendatory endorsement changes it.
+                                                                SECTION 129 - REMUNERATION AUDIT
+SECTION 123 - OFFICER AND SUBCONTRACTOR TREATMENT               WC 00 00 00 C edition 04 21 is a condition provision for CT class 8810, Location 3.
+WC 00 00 00 C edition 07 23 is a limitation provision for NH class 9015, Location
+1.                                                              The annual payroll of $416,547 for CT class 8810, Location 3 is an estimate and is
+Officer, member, volunteer, leased-worker, and subcontractor treatment for NH class  subject to audit after the policy period.
+9015, Location 1 must be read with form WC 00 00 00 C edition 07 23 and the
+$391,534 remuneration entry.                                    SECTION 130 - STATE CLASSIFICATION CONTROL
+                                                                For CT class 8810 (Clerical office employees), the applicable form is WC 00 00 00
+SECTION 124 - PREMIUM REVISION BASIS                            C edition 04 21 and the provision is treated as condition.
+For NH class 9015 (Building operations by owner), the applicable form is WC 00 00  The CT classification 8810 controls the rating basis for Clerical office employees at
+00 C edition 07 23 and the provision is treated as condition.   Location 3; form WC 00 00 00 C edition 04 21 applies unless a state amendatory
+The estimated premium of $11,197 is calculated from rate 2.86, experience  endorsement changes it.
+modification 1.04, and schedule rating 0% for NH class 9015, Location 1.
+                                                                SECTION 131 - OFFICER AND SUBCONTRACTOR TREATMENT
+SECTION 125 - REMUNERATION AUDIT                                The provision below is read with WC 00 00 00 C edition 04 21 for CT class 8810,
+The provision below is read with WC 00 00 01 A edition 04 21 for VT class 5606,  Location 3.
+Location 2.
+                                                                Officer, member, volunteer, leased-worker, and subcontractor treatment for CT class
+The annual payroll of $404,635 for VT class 5606, Location 2 is an estimate and is  8810, Location 3 must be read with form WC 00 00 00 C edition 04 21 and the
+subject to audit after the policy period.                       $416,547 remuneration entry.
 
-Policy packet                                                                            Page 51
+SECTION 126 - STATE CLASSIFICATION CONTROL                      SECTION 132 - PREMIUM REVISION BASIS
+WC 00 00 01 A edition 04 21 is a condition provision for VT class 5606, Location 2.  WC 00 00 00 C edition 04 21 is a condition provision for CT class 8810, Location 3.
+The VT classification 5606 controls the rating basis for Contractor executive  The estimated premium of $4,790 is calculated from rate 1.15, experience
+supervisor at Location 2; form WC 00 00 01 A edition 04 21 applies unless a state  modification 1.04, and schedule rating 0% for CT class 8810, Location 3.
+amendatory endorsement changes it.
+
+
+AWC 120 (05-24)                                                 Blue Kettle Food Service, LLC | YW700400
 
 # Page 65
 
-POLICY PACKET                                                                      [POLICY COPY 1F7EA01]
+ARGENT BIRCH EMPLOYERS
+Workers Compensation and Employers Liability
 
-# Underwriting Support
+POLICY NUMBER: YW700400
+EFFECTIVE: 04/01/2026
+EXPIRES: 04/01/2027
 
-### Policy jacket notices and state exceptions
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
+# MATERIAL POLICY PROVISIONS - CONTINUED 12
 
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-052-01,State exception,Reviewed,Policy audit
-REF-052-02,Form filing note,Pending,Producer copy
-REF-052-03,Policy jacket notices and state exceptions,Indexed,State form
-REF-052-04,Prior policy comparison,Archive,Rating file
-REF-052-05,Rating worksheet,Reviewed,Policy audit
-REF-052-06,Producer correspondence,Pending,Producer copy
-REF-052-07,State exception,Indexed,State form
-REF-052-08,Form filing note,Archive,Rating file
-REF-052-09,Policy jacket notices and state exceptions,Reviewed,Policy audit
-REF-052-10,Prior policy comparison,Pending,Producer copy
-REF-052-11,Rating worksheet,Indexed,State form
-REF-052-12,Producer correspondence,Archive,Rating file
-REF-052-13,State exception,Reviewed,Policy audit
-REF-052-14,Form filing note,Pending,Producer copy
-REF-052-15,Policy jacket notices and state exceptions,Indexed,State form
-REF-052-16,Prior policy comparison,Archive,Rating file
-REF-052-17,Rating worksheet,Reviewed,Policy audit
-REF-052-18,Producer correspondence,Pending,Producer copy
-REF-052-19,State exception,Indexed,State form
-REF-052-20,Form filing note,Archive,Rating file
-REF-052-21,Policy jacket notices and state exceptions,Reviewed,Policy audit
-REF-052-22,Prior policy comparison,Pending,Producer copy
-REF-052-23,Rating worksheet,Indexed,State form
-REF-052-24,Producer correspondence,Archive,Rating file
-REF-052-25,State exception,Reviewed,Policy audit
-REF-052-26,Form filing note,Pending,Producer copy
-REF-052-27,Policy jacket notices and state exceptions,Indexed,State form
-REF-052-28,Prior policy comparison,Archive,Rating file
-REF-052-29,Rating worksheet,Reviewed,Policy audit
-REF-052-30,Producer correspondence,Pending,Producer copy
+THIS FORM IS PART OF THE POLICY AND MUST BE READ WITH THE DECLARATIONS AND ENDORSEMENTS.
 
-Policy packet                                                                                   Page 52
+**SECTION 133 - REMUNERATION AUDIT**
+1. For CT class 8017 (Retail store - all employees), the applicable form is WC 00 00 00 C edition 04 21 and the provision is treated as condition.
+
+The annual payroll of $427,355 for CT class 8017, Location 4 is an estimate and is subject to audit after the policy period.
+
+**SECTION 134 - STATE CLASSIFICATION CONTROL**
+The provision below is read with WC 00 00 00 C edition 04 21 for CT class 8017, Location 4.
+
+The CT classification 8017 controls the rating basis for Retail store - all employees at Location 4; form WC 00 00 00 C edition 04 21 applies unless a state amendatory endorsement changes it.
+
+**SECTION 135 - OFFICER AND SUBCONTRACTOR TREATMENT**
+2. WC 00 00 00 C edition 04 21 is a limitation provision for CT class 8017, Location 4.
+
+Officer, member, volunteer, leased-worker, and subcontractor treatment for CT class 8017, Location 4 must be read with form WC 00 00 00 C edition 04 21 and the $427,355 remuneration entry.
+
+**SECTION 136 - PREMIUM REVISION BASIS**
+For CT class 8017 (Retail store - all employees), the applicable form is WC 00 00 00 C edition 04 21 and the provision is treated as condition.
+
+The estimated premium of $18,589 is calculated from rate 4.35, experience modification 1.04, and schedule rating 0% for CT class 8017, Location 4.
+
+**SECTION 137 - REMUNERATION AUDIT**
+3. The provision below is read with WC 00 00 00 C edition 04 21 for MA class 8742, Location 5.
+
+The annual payroll of $435,963 for MA class 8742, Location 5 is an estimate and is subject to audit after the policy period.
+
+**SECTION 138 - STATE CLASSIFICATION CONTROL**
+WC 00 00 00 C edition 04 21 is a condition provision for MA class 8742, Location 5.
+
+The MA classification 8742 controls the rating basis for Outside salespersons at Location 5; form WC 00 00 00 C edition 04 21 applies unless a state amendatory endorsement changes it.
+
+**SECTION 139 - OFFICER AND SUBCONTRACTOR TREATMENT**
+4. For MA class 8742 (Outside salespersons), the applicable form is WC 00 00 00 C edition 04 21 and the provision is treated as limitation.
+
+Officer, member, volunteer, leased-worker, and subcontractor treatment for MA class 8742, Location 5 must be read with form WC 00 00 00 C edition 04 21 and the $435,963 remuneration entry.
+
+**SECTION 140 - PREMIUM REVISION BASIS**
+The provision below is read with WC 00 00 00 C edition 04 21 for MA class 8742, Location 5.
+
+The estimated premium of $1,177 is calculated from rate 0.27, experience modification 1.04, and schedule rating 0% for MA class 8742, Location 5.
+
+**SECTION 141 - REMUNERATION AUDIT**
+5. WC 00 03 13 edition 01 15 is a condition provision for MA class 5190, Location 1.
+
+The annual payroll of $453,438 for MA class 5190, Location 1 is an estimate and is subject to audit after the policy period.
+
+**SECTION 142 - STATE CLASSIFICATION CONTROL**
+For MA class 5190 (Electrical wiring within buildings), the applicable form is WC 00 03 13 edition 01 15 and the provision is treated as condition.
+
+The MA classification 5190 controls the rating basis for Electrical wiring within buildings at Location 1; form WC 00 03 13 edition 01 15 applies unless a state amendatory endorsement changes it.
+
+**SECTION 143 - OFFICER AND SUBCONTRACTOR TREATMENT**
+6. The provision below is read with WC 00 03 13 edition 01 15 for MA class 5190, Location 1.
+
+Officer, member, volunteer, leased-worker, and subcontractor treatment for MA class 5190, Location 1 must be read with form WC 00 03 13 edition 01 15 and the $453,438 remuneration entry.
+
+**SECTION 144 - PREMIUM REVISION BASIS**
+WC 00 03 13 edition 01 15 is a condition provision for MA class 5190, Location 1.
+
+The estimated premium of $1,224 is calculated from rate 0.27, experience modification 1.04, and schedule rating 0% for MA class 5190, Location 1.
+
+AWC 121 (05-24)
+Blue Kettle Food Service, LLC | YW700400
 
 # Page 66
 
-POLICY PACKET                                                                        POLICY COPY 1F7EA01
+ARGENT BIRCH EMPLOYERS
+Workers Compensation and Employers Liability
 
-Underwriting Support
+                                                     POLICY NUMBER: YW700400
+                                                    EFFECTIVE: 04/01/2026
+                                                      EXPIRES: 04/01/2027
+________________________________________________________________________________
 
-Policy jacket notices and state exceptions
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
+                MATERIAL POLICY PROVISIONS - CONTINUED 13
+________________________________________________________________________________
+THIS FORM IS PART OF THE POLICY AND MUST BE READ WITH THE DECLARATIONS AND ENDORSEMENTS.
+________________________________________________________________________________
 
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-053-01,Form filing note,Reviewed,Producer copy
-REF-053-02,Policy jacket notices and state exceptions,Pending,State form
-REF-053-03,Prior policy comparison,Indexed,Rating file
-REF-053-04,Rating worksheet,Archive,Policy audit
-REF-053-05,Producer correspondence,Reviewed,Producer copy
-REF-053-06,State exception,Pending,State form
-REF-053-07,Form filing note,Indexed,Rating file
-REF-053-08,Policy jacket notices and state exceptions,Archive,Policy audit
-REF-053-09,Prior policy comparison,Reviewed,Producer copy
-REF-053-10,Rating worksheet,Pending,State form
-REF-053-11,Producer correspondence,Indexed,Rating file
-REF-053-12,State exception,Archive,Policy audit
-REF-053-13,Form filing note,Reviewed,Producer copy
-REF-053-14,Policy jacket notices and state exceptions,Pending,State form
-REF-053-15,Prior policy comparison,Indexed,Rating file
-REF-053-16,Rating worksheet,Archive,Policy audit
-REF-053-17,Producer correspondence,Reviewed,Producer copy
-REF-053-18,State exception,Pending,State form
-REF-053-19,Form filing note,Indexed,Rating file
-REF-053-20,Policy jacket notices and state exceptions,Archive,Policy audit
-REF-053-21,Prior policy comparison,Reviewed,Producer copy
-REF-053-22,Rating worksheet,Pending,State form
-REF-053-23,Producer correspondence,Indexed,Rating file
-REF-053-24,State exception,Archive,Policy audit
-REF-053-25,Form filing note,Reviewed,Producer copy
-REF-053-26,Policy jacket notices and state exceptions,Pending,State form
-REF-053-27,Prior policy comparison,Indexed,Rating file
-REF-053-28,Rating worksheet,Archive,Policy audit
-REF-053-29,Producer correspondence,Reviewed,Producer copy
-REF-053-30,State exception,Pending,State form
+SECTION 145 - REMUNERATION AUDIT
+A. For RI class 9082 (Restaurant NOC), the applicable form is WC 00 03 13 edition
+04 21 and the provision is treated as condition.
 
-Policy packet                                                                                Page 53
+The annual payroll of $463,529 for RI class 9082, Location 2 is an estimate and is
+subject to audit after the policy period.
+
+SECTION 146 - STATE CLASSIFICATION CONTROL
+The provision below is read with WC 00 03 13 edition 04 21 for RI class 9082,
+Location 2.
+
+The RI classification 9082 controls the rating basis for Restaurant NOC at Location
+2; form WC 00 03 13 edition 04 21 applies unless a state amendatory endorsement
+changes it.
+
+SECTION 147 - OFFICER AND SUBCONTRACTOR TREATMENT
+WC 00 03 13 edition 04 21 is a limitation provision for RI class 9082, Location 2.
+
+B. Officer, member, volunteer, leased-worker, and subcontractor treatment for RI
+class 9082, Location 2 must be read with form WC 00 03 13 edition 04 21 and the
+$463,529 remuneration entry.
+
+SECTION 148 - PREMIUM REVISION BASIS
+For RI class 9082 (Restaurant NOC), the applicable form is WC 00 03 13 edition 04
+21 and the provision is treated as condition.
+
+The estimated premium of $28,831 is calculated from rate 6.22, experience
+modification 1.04, and schedule rating 0% for RI class 9082, Location 2.
+
+SECTION 149 - REMUNERATION AUDIT
+The provision below is read with WC 00 00 01 A edition 07 23 for ME class 3632,
+Location 3.
+
+The annual payroll of $475,950 for ME class 3632, Location 3 is an estimate and is
+subject to audit after the policy period.
+
+SECTION 150 - STATE CLASSIFICATION CONTROL
+C. WC 00 00 01 A edition 07 23 is a condition provision for ME class 3632,
+Location 3.
+
+The ME classification 3632 controls the rating basis for Machine shop NOC at
+Location 3; form WC 00 00 01 A edition 07 23 applies unless a state amendatory
+endorsement changes it.
+
+SECTION 151 - OFFICER AND SUBCONTRACTOR TREATMENT
+For ME class 3632 (Machine shop NOC), the applicable form is WC 00 00 01 A
+edition 07 23 and the provision is treated as limitation.
+
+Officer, member, volunteer, leased-worker, and subcontractor treatment for ME class
+3632, Location 3 must be read with form WC 00 00 01 A edition 07 23 and the
+$475,950 remuneration entry.
+
+SECTION 152 - PREMIUM REVISION BASIS
+The provision below is read with WC 00 00 01 A edition 07 23 for ME class 3632,
+Location 3.
+
+D. The estimated premium of $3,522 is calculated from rate 0.74, experience
+modification 1.04, and schedule rating 0% for ME class 3632, Location 3.
+
+SECTION 153 - REMUNERATION AUDIT
+WC 04 03 06 edition 04 21 is a condition provision for NH class 9015, Location 4.
+
+The annual payroll of $485,364 for NH class 9015, Location 4 is an estimate and is
+subject to audit after the policy period.
+
+SECTION 154 - STATE CLASSIFICATION CONTROL
+For NH class 9015 (Building operations by owner), the applicable form is WC 04 03
+06 edition 04 21 and the provision is treated as condition.
+
+The NH classification 9015 controls the rating basis for Building operations by
+owner at Location 4; form WC 04 03 06 edition 04 21 applies unless a state
+amendatory endorsement changes it.
+
+SECTION 155 - OFFICER AND SUBCONTRACTOR TREATMENT
+E. The provision below is read with WC 04 03 06 edition 04 21 for NH class 9015,
+Location 4.
+
+Officer, member, volunteer, leased-worker, and subcontractor treatment for NH class
+9015, Location 4 must be read with form WC 04 03 06 edition 04 21 and the
+$485,364 remuneration entry.
+
+SECTION 156 - PREMIUM REVISION BASIS
+WC 04 03 06 edition 04 21 is a condition provision for NH class 9015, Location 4.
+
+The estimated premium of $21,113 is calculated from rate 4.35, experience
+modification 1.04, and schedule rating 0% for NH class 9015, Location 4.
+
+
+AWC 122 (05-24)                                        Blue Kettle Food Service, LLC | YW700400
 
 # Page 67
 
-POLICY PACKET
-POLICY COPY 1F7EA01
+ARGENT BIRCH EMPLOYERS
+Workers Compensation and Employers Liability
 
-Underwriting Support
+POLICY NUMBER: YW700400
+EFFECTIVE: 04/01/2026
+EXPIRES: 04/01/2027
 
-Policy jacket notices and state exceptions
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
+---------------------------------------------------------------------------------------------------------
+                                 MATERIAL POLICY PROVISIONS - CONTINUED 14
+---------------------------------------------------------------------------------------------------------
+THIS FORM IS PART OF THE POLICY AND MUST BE READ WITH THE DECLARATIONS AND ENDORSEMENTS.
 
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-054-01,Policy jacket notices and state exceptions,Reviewed,State form
-REF-054-02,Prior policy comparison,Pending,Rating file
-REF-054-03,Rating worksheet,Indexed,Policy audit
-REF-054-04,Producer correspondence,Archive,Producer copy
-REF-054-05,State exception,Reviewed,State form
-REF-054-06,Form filing note,Pending,Rating file
-REF-054-07,Policy jacket notices and state exceptions,Indexed,Policy audit
-REF-054-08,Prior policy comparison,Archive,Producer copy
-REF-054-09,Rating worksheet,Reviewed,State form
-REF-054-10,Producer correspondence,Pending,Rating file
-REF-054-11,State exception,Indexed,Policy audit
-REF-054-12,Form filing note,Archive,Producer copy
-REF-054-13,Policy jacket notices and state exceptions,Reviewed,State form
-REF-054-14,Prior policy comparison,Pending,Rating file
-REF-054-15,Rating worksheet,Indexed,Policy audit
-REF-054-16,Producer correspondence,Archive,Producer copy
-REF-054-17,State exception,Reviewed,State form
-REF-054-18,Form filing note,Pending,Rating file
-REF-054-19,Policy jacket notices and state exceptions,Indexed,Policy audit
-REF-054-20,Prior policy comparison,Archive,Producer copy
-REF-054-21,Rating worksheet,Reviewed,State form
-REF-054-22,Producer correspondence,Pending,Rating file
-REF-054-23,State exception,Indexed,Policy audit
-REF-054-24,Form filing note,Archive,Producer copy
-REF-054-25,Policy jacket notices and state exceptions,Reviewed,State form
-REF-054-26,Prior policy comparison,Pending,Rating file
-REF-054-27,Rating worksheet,Indexed,Policy audit
-REF-054-28,Producer correspondence,Archive,Producer copy
-REF-054-29,State exception,Reviewed,State form
-REF-054-30,Form filing note,Pending,Rating file
 
-Policy packet
-Page 54
+SECTION 157 - REMUNERATION AUDIT                                      SECTION 163 - OFFICER AND SUBCONTRACTOR TREATMENT
+For VT class 5606 (Contractor executive supervisor), the applicable   For CT class 8810 (Clerical office employees), the applicable form is WC 00 03 13
+form is WC 00 00 00 C edition 07 23 and the provision is treated as   edition 04 21 and the provision is treated as limitation.
+condition.                                                            
+                                                                      Officer, member, volunteer, leased-worker, and subcontractor treatment for CT class
+The annual payroll of $495,123 for VT class 5606, Location 5 is an     8810, Location 1 must be read with form WC 00 03 13 edition 04 21 and the
+estimate and is subject to audit after the policy period.             $502,147 remuneration entry.
+
+SECTION 158 - STATE CLASSIFICATION CONTROL                             SECTION 164 - PREMIUM REVISION BASIS
+The provision below is read with WC 00 00 00 C edition 07 23 for VT   The provision below is read with WC 00 03 13 edition 04 21 for CT class 8810,
+class 5606, Location 5.                                               Location 1.
+
+The VT classification 5606 controls the rating basis for Contractor   The estimated premium of $5,774 is calculated from rate 1.15, experience
+executive supervisor at Location 5; form WC 00 00 00 C edition 07 23  modification 1.04, and schedule rating 0% for CT class 8810, Location 1.
+applies unless a state amendatory endorsement changes it.             
+                                                                      SECTION 165 - REMUNERATION AUDIT
+SECTION 159 - OFFICER AND SUBCONTRACTOR TREATMENT                     WC 00 03 13 edition 01 15 is a condition provision for CT class 8017, Location 2.
+WC 00 00 00 C edition 07 23 is a limitation provision for VT class
+5606, Location 5.                                                     The annual payroll of $514,119 for CT class 8017, Location 2 is an estimate and is
+                                                                      subject to audit after the policy period.
+Officer, member, volunteer, leased-worker, and subcontractor
+treatment for VT class 5606, Location 5 must be read with form        SECTION 166 - STATE CLASSIFICATION CONTROL
+WC 00 00 00 C edition 07 23 and the $495,123 remuneration entry.      For CT class 8017 (Retail store - all employees), the applicable form is WC 00 03 13
+                                                                      edition 01 15 and the provision is treated as condition.
+SECTION 160 - PREMIUM REVISION BASIS                                  
+For VT class 5606 (Contractor executive supervisor), the applicable   The CT classification 8017 controls the rating basis for Retail store - all employees
+form is WC 00 00 00 C edition 07 23 and the provision is treated as   at Location 2; form WC 00 03 13 edition 01 15 applies unless a state amendatory
+condition.                                                            endorsement changes it.
+
+The estimated premium of $21,537 is calculated from rate 4.35,        SECTION 167 - OFFICER AND SUBCONTRACTOR TREATMENT
+experience modification 1.04, and schedule rating 0% for VT class     The provision below is read with WC 00 03 13 edition 01 15 for CT class 8017,
+5606, Location 5.                                                     Location 2.
+
+SECTION 161 - REMUNERATION AUDIT                                      Officer, member, volunteer, leased-worker, and subcontractor treatment for CT class
+The provision below is read with WC 00 03 13 edition 04 21 for CT     8017, Location 2 must be read with form WC 00 03 13 edition 01 15 and the
+class 8810, Location 1.                                               $514,119 remuneration entry.
+
+The annual payroll of $502,147 for CT class 8810, Location 1 is an    SECTION 168 - PREMIUM REVISION BASIS
+estimate and is subject to audit after the policy period.             WC 00 03 13 edition 01 15 is a condition provision for CT class 8017, Location 2.
+
+SECTION 162 - STATE CLASSIFICATION CONTROL                             The estimated premium of $1,388 is calculated from rate 0.27, experience
+WC 00 03 13 edition 04 21 is a condition provision for CT class       modification 1.04, and schedule rating 0% for CT class 8017, Location 2.
+8810, Location 1.
+
+The CT classification 8810 controls the rating basis for Clerical
+office employees at Location 1; form WC 00 03 13 edition 04 21
+applies unless a state amendatory endorsement changes it.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+AWC 123 (05-24)                                                        Blue Kettle Food Service, LLC | YW700400
 
 # Page 68
 
-POLICY PACKET                                                                    POLICY COPY 1F7EA01
-Underwriting Support
+ARGENT BIRCH EMPLOYERS
+Workers Compensation and Employers Liability
 
-Policy jacket notices and state exceptions
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
+                                                     POLICY NUMBER: YW700400
+                                                    EFFECTIVE: 04/01/2026
+                                                      EXPIRES: 04/01/2027
+________________________________________________________________________________
 
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-055-01,Prior policy comparison,Reviewed,Rating file
-REF-055-02,Rating worksheet,Pending,Policy audit
-REF-055-03,Producer correspondence,Indexed,Producer copy
-REF-055-04,State exception,Archive,State form
-REF-055-05,Form filing note,Reviewed,Rating file
-REF-055-06,Policy jacket notices and state exceptions,Pending,Policy audit
-REF-055-07,Prior policy comparison,Indexed,Producer copy
-REF-055-08,Rating worksheet,Archive,State form
-REF-055-09,Producer correspondence,Reviewed,Rating file
-REF-055-10,State exception,Pending,Policy audit
-REF-055-11,Form filing note,Indexed,Producer copy
-REF-055-12,Policy jacket notices and state exceptions,Archive,State form
-REF-055-13,Prior policy comparison,Reviewed,Rating file
-REF-055-14,Rating worksheet,Pending,Policy audit
-REF-055-15,Producer correspondence,Indexed,Producer copy
-REF-055-16,State exception,Archive,State form
-REF-055-17,Form filing note,Reviewed,Rating file
-REF-055-18,Policy jacket notices and state exceptions,Pending,Policy audit
-REF-055-19,Prior policy comparison,Indexed,Producer copy
-REF-055-20,Rating worksheet,Archive,State form
-REF-055-21,Producer correspondence,Reviewed,Rating file
-REF-055-22,State exception,Pending,Policy audit
-REF-055-23,Form filing note,Indexed,Producer copy
-REF-055-24,Policy jacket notices and state exceptions,Archive,State form
-REF-055-25,Prior policy comparison,Reviewed,Rating file
-REF-055-26,Rating worksheet,Pending,Policy audit
-REF-055-27,Producer correspondence,Indexed,Producer copy
-REF-055-28,State exception,Archive,State form
-REF-055-29,Form filing note,Reviewed,Rating file
-REF-055-30,Policy jacket notices and state exceptions,Pending,Policy audit
+                   MATERIAL POLICY PROVISIONS - CONTINUED 15
+________________________________________________________________________________
 
-Policy packet                                                                                  Page 55
+THIS FORM IS PART OF THE POLICY AND MUST BE READ WITH THE DECLARATIONS AND ENDORSEMENTS.
+________________________________________________________________________________
+
+SECTION 169 - REMUNERATION AUDIT
+1. For MA class 8742 (Outside salespersons), the applicable form is WC 00 00 01 A
+edition 07 23 and the provision is treated as condition.
+
+The annual payroll of $532,778 for MA class 8742, Location 3 is an estimate and is
+subject to audit after the policy period.
+
+SECTION 170 - STATE CLASSIFICATION CONTROL
+The provision below is read with WC 00 00 01 A edition 07 23 for MA class 8742,
+Location 3.
+
+The MA classification 8742 controls the rating basis for Outside salespersons at
+Location 3; form WC 00 00 01 A edition 07 23 applies unless a state amendatory
+endorsement changes it.
+
+SECTION 171 - OFFICER AND SUBCONTRACTOR TREATMENT
+2. WC 00 00 01 A edition 07 23 is a limitation provision for MA class 8742,
+Location 3.
+
+Officer, member, volunteer, leased-worker, and subcontractor treatment for MA class
+8742, Location 3 must be read with form WC 00 00 01 A edition 07 23 and the
+$532,778 remuneration entry.
+
+SECTION 172 - PREMIUM REVISION BASIS
+For MA class 8742 (Outside salespersons), the applicable form is WC 00 00 01 A
+edition 07 23 and the provision is treated as condition.
+
+The estimated premium of $1,438 is calculated from rate 0.27, experience
+modification 1.04, and schedule rating 0% for MA class 8742, Location 3.
+
+SECTION 173 - REMUNERATION AUDIT
+3. The provision below is read with WC 00 00 00 C edition 04 21 for MA class
+5190, Location 4.
+
+The annual payroll of $545,022 for MA class 5190, Location 4 is an estimate and is
+subject to audit after the policy period.
+
+SECTION 174 - STATE CLASSIFICATION CONTROL
+WC 00 00 00 C edition 04 21 is a condition provision for MA class 5190, Location
+4.
+
+The MA classification 5190 controls the rating basis for Electrical wiring within
+buildings at Location 4; form WC 00 00 00 C edition 04 21 applies unless a state
+amendatory endorsement changes it.
+
+SECTION 175 - OFFICER AND SUBCONTRACTOR TREATMENT
+4. For MA class 5190 (Electrical wiring within buildings), the applicable form is
+WC 00 00 00 C edition 04 21 and the provision is treated as limitation.
+
+Officer, member, volunteer, leased-worker, and subcontractor treatment for MA class
+5190, Location 4 must be read with form WC 00 00 00 C edition 04 21 and the
+$545,022 remuneration entry.
+
+SECTION 176 - PREMIUM REVISION BASIS
+The provision below is read with WC 00 00 00 C edition 04 21 for MA class 5190,
+Location 4.
+
+The estimated premium of $23,708 is calculated from rate 4.35, experience
+modification 1.04, and schedule rating 0% for MA class 5190, Location 4.
+
+SECTION 177 - REMUNERATION AUDIT
+5. WC 00 00 00 C edition 07 23 is a condition provision for RI class 9082, Location
+5.
+
+The annual payroll of $556,426 for RI class 9082, Location 5 is an estimate and is
+subject to audit after the policy period.
+
+SECTION 178 - STATE CLASSIFICATION CONTROL
+For RI class 9082 (Restaurant NOC), the applicable form is WC 00 00 00 C edition
+07 23 and the provision is treated as condition.
+
+The RI classification 9082 controls the rating basis for Restaurant NOC at Location
+5; form WC 00 00 00 C edition 07 23 applies unless a state amendatory endorsement
+changes it.
+
+SECTION 179 - OFFICER AND SUBCONTRACTOR TREATMENT
+6. The provision below is read with WC 00 00 00 C edition 07 23 for RI class 9082,
+Location 5.
+
+Officer, member, volunteer, leased-worker, and subcontractor treatment for RI class
+9082, Location 5 must be read with form WC 00 00 00 C edition 07 23 and the
+$556,426 remuneration entry.
+
+SECTION 180 - PREMIUM REVISION BASIS
+WC 00 00 00 C edition 07 23 is a condition provision for RI class 9082, Location 5.
+
+The estimated premium of $4,117 is calculated from rate 0.74, experience
+modification 1.04, and schedule rating 0% for RI class 9082, Location 5.
+
+AWC 124 (05-24)                                        Blue Kettle Food Service, LLC | YW700400
 
 # Page 69
 
-POLICY PACKET                                                                     +---------------------+
-Underwriting Support                                                              | POLICY COPY 1F7EA01 |
-                                                                                  +---------------------+
+ARGENT BIRCH EMPLOYERS
+Workers Compensation and Employers Liability
 
-***
+POLICY NUMBER: YW700400
+EFFECTIVE: 04/01/2026
+EXPIRES: 04/01/2027
 
-### Policy jacket notices and state exceptions
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
+# MATERIAL POLICY PROVISIONS - CONTINUED 16
 
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-056-01,Rating worksheet,Reviewed,Policy audit
-REF-056-02,Producer correspondence,Pending,Producer copy
-REF-056-03,State exception,Indexed,State form
-REF-056-04,Form filing note,Archive,Rating file
-REF-056-05,Policy jacket notices and state exceptions,Reviewed,Policy audit
-REF-056-06,Prior policy comparison,Pending,Producer copy
-REF-056-07,Rating worksheet,Indexed,State form
-REF-056-08,Producer correspondence,Archive,Rating file
-REF-056-09,State exception,Reviewed,Policy audit
-REF-056-10,Form filing note,Pending,Producer copy
-REF-056-11,Policy jacket notices and state exceptions,Indexed,State form
-REF-056-12,Prior policy comparison,Archive,Rating file
-REF-056-13,Rating worksheet,Reviewed,Policy audit
-REF-056-14,Producer correspondence,Pending,Producer copy
-REF-056-15,State exception,Indexed,State form
-REF-056-16,Form filing note,Archive,Rating file
-REF-056-17,Policy jacket notices and state exceptions,Reviewed,Policy audit
-REF-056-18,Prior policy comparison,Pending,Producer copy
-REF-056-19,Rating worksheet,Indexed,State form
-REF-056-20,Producer correspondence,Archive,Rating file
-REF-056-21,State exception,Reviewed,Policy audit
-REF-056-22,Form filing note,Pending,Producer copy
-REF-056-23,Policy jacket notices and state exceptions,Indexed,State form
-REF-056-24,Prior policy comparison,Archive,Rating file
-REF-056-25,Rating worksheet,Reviewed,Policy audit
-REF-056-26,Producer correspondence,Pending,Producer copy
-REF-056-27,State exception,Indexed,State form
-REF-056-28,Form filing note,Archive,Rating file
-REF-056-29,Policy jacket notices and state exceptions,Reviewed,Policy audit
-REF-056-30,Prior policy comparison,Pending,Producer copy
+THIS FORM IS PART OF THE POLICY AND MUST BE READ WITH THE DECLARATIONS AND ENDORSEMENTS.
 
-Policy packet                                                                                   Page 56
+**SECTION 181 - REMUNERATION AUDIT**
+A. For ME class 3632 (Machine shop NOC), the applicable form is WC 00 03 13
+edition 04 21 and the provision is treated as condition.
+
+The annual payroll of $567,480 for ME class 3632, Location 1 is an estimate and is
+subject to audit after the policy period.
+
+**SECTION 182 - STATE CLASSIFICATION CONTROL**
+The provision below is read with WC 00 03 13 edition 04 21 for ME class 3632,
+Location 1.
+
+The ME classification 3632 controls the rating basis for Machine shop NOC at
+Location 1; form WC 00 03 13 edition 04 21 applies unless a state amendatory
+endorsement changes it.
+
+**SECTION 183 - OFFICER AND SUBCONTRACTOR TREATMENT**
+WC 00 03 13 edition 04 21 is a limitation provision for ME class 3632, Location 1.
+
+B. Officer, member, volunteer, leased-worker, and subcontractor treatment for ME
+class 3632, Location 1 must be read with form WC 00 03 13 edition 04 21 and the
+$567,480 remuneration entry.
+
+**SECTION 184 - PREMIUM REVISION BASIS**
+For ME class 3632 (Machine shop NOC), the applicable form is WC 00 03 13
+edition 04 21 and the provision is treated as condition.
+
+The estimated premium of $35,297 is calculated from rate 6.22, experience
+modification 1.04, and schedule rating 0% for ME class 3632, Location 1.
+
+**SECTION 185 - REMUNERATION AUDIT**
+The provision below is read with WC 04 03 06 edition 07 23 for NH class 9015,
+Location 2.
+
+The annual payroll of $572,285 for NH class 9015, Location 2 is an estimate and is
+subject to audit after the policy period.
+
+**SECTION 186 - STATE CLASSIFICATION CONTROL**
+C. WC 04 03 06 edition 07 23 is a condition provision for NH class 9015, Location
+2.
+
+The NH classification 9015 controls the rating basis for Building operations by
+owner at Location 2; form WC 04 03 06 edition 07 23 applies unless a state
+amendatory endorsement changes it.
+
+**SECTION 187 - OFFICER AND SUBCONTRACTOR TREATMENT**
+For NH class 9015 (Building operations by owner), the applicable form is WC 04 03
+06 edition 07 23 and the provision is treated as limitation.
+
+Officer, member, volunteer, leased-worker, and subcontractor treatment for NH class
+9015, Location 2 must be read with form WC 04 03 06 edition 07 23 and the
+$572,285 remuneration entry.
+
+**SECTION 188 - PREMIUM REVISION BASIS**
+The provision below is read with WC 04 03 06 edition 07 23 for NH class 9015,
+Location 2.
+
+D. The estimated premium of $1,030 is calculated from rate 0.18, experience
+modification 1.04, and schedule rating 0% for NH class 9015, Location 2.
+
+**SECTION 189 - REMUNERATION AUDIT**
+WC 00 03 13 edition 04 21 is a condition provision for VT class 5606, Location 3.
+
+The annual payroll of $584,565 for VT class 5606, Location 3 is an estimate and is
+subject to audit after the policy period.
+
+**SECTION 190 - STATE CLASSIFICATION CONTROL**
+For VT class 5606 (Contractor executive supervisor), the applicable form is WC 00
+03 13 edition 04 21 and the provision is treated as condition.
+
+The VT classification 5606 controls the rating basis for Contractor executive
+supervisor at Location 3; form WC 00 03 13 edition 04 21 applies unless a state
+amendatory endorsement changes it.
+
+**SECTION 191 - OFFICER AND SUBCONTRACTOR TREATMENT**
+E. The provision below is read with WC 00 03 13 edition 04 21 for VT class 5606,
+Location 3.
+
+Officer, member, volunteer, leased-worker, and subcontractor treatment for VT class
+5606, Location 3 must be read with form WC 00 03 13 edition 04 21 and the
+$584,565 remuneration entry.
+
+**SECTION 192 - PREMIUM REVISION BASIS**
+WC 00 03 13 edition 04 21 is a condition provision for VT class 5606, Location 3.
+
+The estimated premium of $6,722 is calculated from rate 1.15, experience
+modification 1.04, and schedule rating 0% for VT class 5606, Location 3.
+
+AWC 125 (05-24)
+Blue Kettle Food Service, LLC | YW700400
 
 # Page 70
 
-POLICY PACKET
-Underwriting Support
-                                                                                 | POLICY COPY 1F7EA01 |
+ARGENT BIRCH EMPLOYERS
+Workers Compensation and Employers Liability
 
-Policy jacket notices and state exceptions
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
+POLICY NUMBER: YW700400
+EFFECTIVE: 04/01/2026
+EXPIRES: 04/01/2027
 
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-057-01,Producer correspondence,Reviewed,Producer copy
-REF-057-02,State exception,Pending,State form
-REF-057-03,Form filing note,Indexed,Rating file
-REF-057-04,Policy jacket notices and state exceptions,Archive,Policy audit
-REF-057-05,Prior policy comparison,Reviewed,Producer copy
-REF-057-06,Rating worksheet,Pending,State form
-REF-057-07,Producer correspondence,Indexed,Rating file
-REF-057-08,State exception,Archive,Policy audit
-REF-057-09,Form filing note,Reviewed,Producer copy
-REF-057-10,Policy jacket notices and state exceptions,Pending,State form
-REF-057-11,Prior policy comparison,Indexed,Rating file
-REF-057-12,Rating worksheet,Archive,Policy audit
-REF-057-13,Producer correspondence,Reviewed,Producer copy
-REF-057-14,State exception,Pending,State form
-REF-057-15,Form filing note,Indexed,Rating file
-REF-057-16,Policy jacket notices and state exceptions,Archive,Policy audit
-REF-057-17,Prior policy comparison,Reviewed,Producer copy
-REF-057-18,Rating worksheet,Pending,State form
-REF-057-19,Producer correspondence,Indexed,Rating file
-REF-057-20,State exception,Archive,Policy audit
-REF-057-21,Form filing note,Reviewed,Producer copy
-REF-057-22,Policy jacket notices and state exceptions,Pending,State form
-REF-057-23,Prior policy comparison,Indexed,Rating file
-REF-057-24,Rating worksheet,Archive,Policy audit
-REF-057-25,Producer correspondence,Reviewed,Producer copy
-REF-057-26,State exception,Pending,State form
-REF-057-27,Form filing note,Indexed,Rating file
-REF-057-28,Policy jacket notices and state exceptions,Archive,Policy audit
-REF-057-29,Prior policy comparison,Reviewed,Producer copy
-REF-057-30,Rating worksheet,Pending,State form
+____________________________________________________________________________________________________
+MATERIAL POLICY PROVISIONS - CONTINUED 17
+____________________________________________________________________________________________________
 
-Policy packet                                                                                  Page 57
+THIS FORM IS PART OF THE POLICY AND MUST BE READ WITH THE DECLARATIONS AND ENDORSEMENTS.
+
+____________________________________________________________________________________________________
+
+SECTION 193 - REMUNERATION AUDIT
+For CT class 8810 (Clerical office employees), the applicable form is WC 00 03 13
+edition 01 15 and the provision is treated as condition.
+
+The annual payroll of $594,857 for CT class 8810, Location 4 is an estimate and is
+subject to audit after the policy period.
+
+SECTION 194 - STATE CLASSIFICATION CONTROL
+The provision below is read with WC 00 03 13 edition 01 15 for CT class 8810,
+Location 4.
+
+The CT classification 8810 controls the rating basis for Clerical office employees at
+Location 4; form WC 00 03 13 edition 01 15 applies unless a state amendatory
+endorsement changes it.
+
+SECTION 195 - OFFICER AND SUBCONTRACTOR TREATMENT
+WC 00 03 13 edition 01 15 is a limitation provision for CT class 8810, Location 4.
+
+Officer, member, volunteer, leased-worker, and subcontractor treatment for CT class
+8810, Location 4 must be read with form WC 00 03 13 edition 01 15 and the
+$594,857 remuneration entry.
+
+SECTION 196 - PREMIUM REVISION BASIS
+For CT class 8810 (Clerical office employees), the applicable form is WC 00 03 13
+edition 01 15 and the provision is treated as condition.
+
+The estimated premium of $2,498 is calculated from rate 0.42, experience
+modification 1.04, and schedule rating 0% for CT class 8810, Location 4.
+
+SECTION 197 - REMUNERATION AUDIT
+The provision below is read with WC 04 03 06 edition 07 23 for CT class 8017,
+Location 5.
+
+The annual payroll of $611,668 for CT class 8017, Location 5 is an estimate and is
+subject to audit after the policy period.
+
+SECTION 198 - STATE CLASSIFICATION CONTROL
+WC 04 03 06 edition 07 23 is a condition provision for CT class 8017, Location 5.
+
+The CT classification 8017 controls the rating basis for Retail store - all employees
+at Location 5; form WC 04 03 06 edition 07 23 applies unless a state amendatory
+endorsement changes it.
+
+SECTION 199 - OFFICER AND SUBCONTRACTOR TREATMENT
+For CT class 8017 (Retail store - all employees), the applicable form is WC 04 03 06
+edition 07 23 and the provision is treated as limitation.
+
+Officer, member, volunteer, leased-worker, and subcontractor treatment for CT class
+8017, Location 5 must be read with form WC 04 03 06 edition 07 23 and the
+$611,668 remuneration entry.
+
+SECTION 200 - PREMIUM REVISION BASIS
+The provision below is read with WC 04 03 06 edition 07 23 for CT class 8017,
+Location 5.
+
+The estimated premium of $26,607 is calculated from rate 4.35, experience
+modification 1.04, and schedule rating 0% for CT class 8017, Location 5.
+
+SECTION 201 - REMUNERATION AUDIT
+WC 00 03 13 edition 04 21 is a condition provision for MA class 8742, Location 1.
+
+The annual payroll of $622,528 for MA class 8742, Location 1 is an estimate and is
+subject to audit after the policy period.
+
+SECTION 202 - STATE CLASSIFICATION CONTROL
+For MA class 8742 (Outside salespersons), the applicable form is WC 00 03 13
+edition 04 21 and the provision is treated as condition.
+
+The MA classification 8742 controls the rating basis for Outside salespersons at
+Location 1; form WC 00 03 13 edition 04 21 applies unless a state amendatory
+endorsement changes it.
+
+SECTION 203 - OFFICER AND SUBCONTRACTOR TREATMENT
+The provision below is read with WC 00 03 13 edition 04 21 for MA class 8742,
+Location 1.
+
+Officer, member, volunteer, leased-worker, and subcontractor treatment for MA class
+8742, Location 1 must be read with form WC 00 03 13 edition 04 21 and the
+$622,528 remuneration entry.
+
+SECTION 204 - PREMIUM REVISION BASIS
+WC 00 03 13 edition 04 21 is a condition provision for MA class 8742, Location 1.
+
+The estimated premium of $4,606 is calculated from rate 0.74, experience
+modification 1.04, and schedule rating 0% for MA class 8742, Location 1.
+
+
+AWC 126 (05-24)                                                        Blue Kettle Food Service, LLC | YW700400
 
 # Page 71
 
-POLICY PACKET                                                                    POLICY COPY 1F7EA01
+ARGENT BIRCH EMPLOYERS
+Workers Compensation and Employers Liability
 
-Underwriting Support
+POLICY NUMBER: YW700400
+EFFECTIVE: 04/01/2026
+EXPIRES: 04/01/2027
 
-Policy jacket notices and state exceptions
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
+# MATERIAL POLICY PROVISIONS - CONTINUED 18
 
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-058-01,State exception,Reviewed,State form
-REF-058-02,Form filing note,Pending,Rating file
-REF-058-03,Policy jacket notices and state exceptions,Indexed,Policy audit
-REF-058-04,Prior policy comparison,Archive,Producer copy
-REF-058-05,Rating worksheet,Reviewed,State form
-REF-058-06,Producer correspondence,Pending,Rating file
-REF-058-07,State exception,Indexed,Policy audit
-REF-058-08,Form filing note,Archive,Producer copy
-REF-058-09,Policy jacket notices and state exceptions,Reviewed,State form
-REF-058-10,Prior policy comparison,Pending,Rating file
-REF-058-11,Rating worksheet,Indexed,Policy audit
-REF-058-12,Producer correspondence,Archive,Producer copy
-REF-058-13,State exception,Reviewed,State form
-REF-058-14,Form filing note,Pending,Rating file
-REF-058-15,Policy jacket notices and state exceptions,Indexed,Policy audit
-REF-058-16,Prior policy comparison,Archive,Producer copy
-REF-058-17,Rating worksheet,Reviewed,State form
-REF-058-18,Producer correspondence,Pending,Rating file
-REF-058-19,State exception,Indexed,Policy audit
-REF-058-20,Form filing note,Archive,Producer copy
-REF-058-21,Policy jacket notices and state exceptions,Reviewed,State form
-REF-058-22,Prior policy comparison,Pending,Rating file
-REF-058-23,Rating worksheet,Indexed,Policy audit
-REF-058-24,Producer correspondence,Archive,Producer copy
-REF-058-25,State exception,Reviewed,State form
-REF-058-26,Form filing note,Pending,Rating file
-REF-058-27,Policy jacket notices and state exceptions,Indexed,Policy audit
-REF-058-28,Prior policy comparison,Archive,Producer copy
-REF-058-29,Rating worksheet,Reviewed,State form
-REF-058-30,Producer correspondence,Pending,Rating file
+THIS FORM IS PART OF THE POLICY AND MUST BE READ WITH THE DECLARATIONS AND ENDORSEMENTS.
 
-Policy packet                                                                                   Page 58
+**SECTION 205 - REMUNERATION AUDIT**
+1. For MA class 5190 (Electrical wiring within buildings), the applicable form is WC 00 00 00 C edition 07 23 and the provision is treated as condition.
+
+The annual payroll of $633,943 for MA class 5190, Location 2 is an estimate and is subject to audit after the policy period.
+
+**SECTION 206 - STATE CLASSIFICATION CONTROL**
+The provision below is read with WC 00 00 00 C edition 07 23 for MA class 5190, Location 2.
+
+The MA classification 5190 controls the rating basis for Electrical wiring within buildings at Location 2; form WC 00 00 00 C edition 07 23 applies unless a state amendatory endorsement changes it.
+
+**SECTION 207 - OFFICER AND SUBCONTRACTOR TREATMENT**
+2. WC 00 00 00 C edition 07 23 is a limitation provision for MA class 5190, Location 2.
+
+Officer, member, volunteer, leased-worker, and subcontractor treatment for MA class 5190, Location 2 must be read with form WC 00 00 00 C edition 07 23 and the $633,943 remuneration entry.
+
+**SECTION 208 - PREMIUM REVISION BASIS**
+For MA class 5190 (Electrical wiring within buildings), the applicable form is WC 00 00 00 C edition 07 23 and the provision is treated as condition.
+
+The estimated premium of $4,691 is calculated from rate 0.74, experience modification 1.04, and schedule rating 0% for MA class 5190, Location 2.
+
+**SECTION 209 - REMUNERATION AUDIT**
+3. The provision below is read with WC 00 00 01 A edition 01 15 for RI class 9082, Location 3.
+
+The annual payroll of $642,370 for RI class 9082, Location 3 is an estimate and is subject to audit after the policy period.
+
+**SECTION 210 - STATE CLASSIFICATION CONTROL**
+WC 00 00 01 A edition 01 15 is a condition provision for RI class 9082, Location 3.
+
+The RI classification 9082 controls the rating basis for Restaurant NOC at Location 3; form WC 00 00 01 A edition 01 15 applies unless a state amendatory endorsement changes it.
+
+**SECTION 211 - OFFICER AND SUBCONTRACTOR TREATMENT**
+4. For RI class 9082 (Restaurant NOC), the applicable form is WC 00 00 01 A edition 01 15 and the provision is treated as limitation.
+
+Officer, member, volunteer, leased-worker, and subcontractor treatment for RI class 9082, Location 3 must be read with form WC 00 00 01 A edition 01 15 and the $642,370 remuneration entry.
+
+**SECTION 212 - PREMIUM REVISION BASIS**
+The provision below is read with WC 00 00 01 A edition 01 15 for RI class 9082, Location 3.
+
+The estimated premium of $27,943 is calculated from rate 4.35, experience modification 1.04, and schedule rating 0% for RI class 9082, Location 3.
+
+**SECTION 213 - REMUNERATION AUDIT**
+5. WC 00 00 01 A edition 04 21 is a condition provision for ME class 3632, Location 4.
+
+The annual payroll of $657,159 for ME class 3632, Location 4 is an estimate and is subject to audit after the policy period.
+
+**SECTION 214 - STATE CLASSIFICATION CONTROL**
+For ME class 3632 (Machine shop NOC), the applicable form is WC 00 00 01 A edition 04 21 and the provision is treated as condition.
+
+The ME classification 3632 controls the rating basis for Machine shop NOC at Location 4; form WC 00 00 01 A edition 04 21 applies unless a state amendatory endorsement changes it.
+
+**SECTION 215 - OFFICER AND SUBCONTRACTOR TREATMENT**
+6. The provision below is read with WC 00 00 01 A edition 04 21 for ME class 3632, Location 4.
+
+Officer, member, volunteer, leased-worker, and subcontractor treatment for ME class 3632, Location 4 must be read with form WC 00 00 01 A edition 04 21 and the $657,159 remuneration entry.
+
+**SECTION 216 - PREMIUM REVISION BASIS**
+WC 00 00 01 A edition 04 21 is a condition provision for ME class 3632, Location 4.
+
+The estimated premium of $2,760 is calculated from rate 0.42, experience modification 1.04, and schedule rating 0% for ME class 3632, Location 4.
+
+AWC 127 (05-24)
+
+Blue Kettle Food Service, LLC | YW700400
 
 # Page 72
 
-POLICY PACKET                                                                      [POLICY COPY 1F7EA01]
+ARGENT BIRCH EMPLOYERS                                                 POLICY NUMBER: YW700400
+Workers Compensation and Employers Liability                             EFFECTIVE: 04/01/2026
+                                                                           EXPIRES: 04/01/2027
+__________________________________________________________________________________________________
 
-Underwriting Support
+                       MATERIAL POLICY PROVISIONS - CONTINUED 19
+__________________________________________________________________________________________________
 
-_________________________________________________________________________________________________________
+THIS FORM IS PART OF THE POLICY AND MUST BE READ WITH THE DECLARATIONS AND ENDORSEMENTS.
+__________________________________________________________________________________________________
 
-Policy jacket notices and state exceptions
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
+                                                       amendatory endorsement changes it.
+SECTION 217 - REMUNERATION AUDIT
+A. For NH class 9015 (Building operations by owner), the applicable form is WC 00   SECTION 223 - OFFICER AND SUBCONTRACTOR TREATMENT
+00 01 A edition 07 23 and the provision is treated as condition.        For VT class 5606 (Contractor executive supervisor), the applicable form is WC 00
+                                                       00 00 C edition 07 23 and the provision is treated as limitation.
+The annual payroll of $663,479 for NH class 9015, Location 5 is an estimate and is
+subject to audit after the policy period.                              Officer, member, volunteer, leased-worker, and subcontractor treatment for VT class
+                                                       5606, Location 1 must be read with form WC 00 00 00 C edition 07 23 and the
+SECTION 218 - STATE CLASSIFICATION CONTROL                             $675,365 remuneration entry.
+The provision below is read with WC 00 00 01 A edition 07 23 for NH class 9015,
+Location 5.                                            SECTION 224 - PREMIUM REVISION BASIS
+                                                       The provision below is read with WC 00 00 00 C edition 07 23 for VT class 5606,
+The NH classification 9015 controls the rating basis for Building operations by   Location 1.
+owner at Location 5; form WC 00 00 01 A edition 07 23 applies unless a state
+amendatory endorsement changes it.                                     D. The estimated premium of $29,378 is calculated from rate 4.35, experience
+                                                       modification 1.04, and schedule rating 0% for VT class 5606, Location 1.
+SECTION 219 - OFFICER AND SUBCONTRACTOR TREATMENT
+WC 00 00 01 A edition 07 23 is a limitation provision for NH class 9015, Location   SECTION 225 - REMUNERATION AUDIT
+5.                                                     WC 00 00 01 A edition 04 21 is a condition provision for CT class 8810, Location 2.
 
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-059-01,Form filing note,Reviewed,Rating file
-REF-059-02,Policy jacket notices and state exceptions,Pending,Policy audit
-REF-059-03,Prior policy comparison,Indexed,Producer copy
-REF-059-04,Rating worksheet,Archive,State form
-REF-059-05,Producer correspondence,Reviewed,Rating file
-REF-059-06,State exception,Pending,Policy audit
-REF-059-07,Form filing note,Indexed,Producer copy
-REF-059-08,Policy jacket notices and state exceptions,Archive,State form
-REF-059-09,Prior policy comparison,Reviewed,Rating file
-REF-059-10,Rating worksheet,Pending,Policy audit
-REF-059-11,Producer correspondence,Indexed,Producer copy
-REF-059-12,State exception,Archive,State form
-REF-059-13,Form filing note,Reviewed,Rating file
-REF-059-14,Policy jacket notices and state exceptions,Pending,Policy audit
-REF-059-15,Prior policy comparison,Indexed,Producer copy
-REF-059-16,Rating worksheet,Archive,State form
-REF-059-17,Producer correspondence,Reviewed,Rating file
-REF-059-18,State exception,Pending,Policy audit
-REF-059-19,Form filing note,Indexed,Producer copy
-REF-059-20,Policy jacket notices and state exceptions,Archive,State form
-REF-059-21,Prior policy comparison,Reviewed,Rating file
-REF-059-22,Rating worksheet,Pending,Policy audit
-REF-059-23,Producer correspondence,Indexed,Producer copy
-REF-059-24,State exception,Archive,State form
-REF-059-25,Form filing note,Reviewed,Rating file
-REF-059-26,Policy jacket notices and state exceptions,Pending,Policy audit
-REF-059-27,Prior policy comparison,Indexed,Producer copy
-REF-059-28,Rating worksheet,Archive,State form
-REF-059-29,Producer correspondence,Reviewed,Rating file
-REF-059-30,State exception,Pending,Policy audit
+B. Officer, member, volunteer, leased-worker, and subcontractor treatment for NH   The annual payroll of $686,739 for CT class 8810, Location 2 is an estimate and is
+class 9015, Location 5 must be read with form WC 00 00 01 A edition 07 23 and the   subject to audit after the policy period.
+$663,479 remuneration entry.
+                                                       SECTION 226 - STATE CLASSIFICATION CONTROL
+SECTION 220 - PREMIUM REVISION BASIS                                   For CT class 8810 (Clerical office employees), the applicable form is WC 00 00 01
+For NH class 9015 (Building operations by owner), the applicable form is WC 00 00   A edition 04 21 and the provision is treated as condition.
+01 A edition 07 23 and the provision is treated as condition.
+                                                       The CT classification 8810 controls the rating basis for Clerical office employees at
+The estimated premium of $18,975 is calculated from rate 2.86, experience   Location 2; form WC 00 00 01 A edition 04 21 applies unless a state amendatory
+modification 1.04, and schedule rating 0% for NH class 9015, Location 5.   endorsement changes it.
 
-_________________________________________________________________________________________________________
-Policy packet                                                                                     Page 59
+SECTION 221 - REMUNERATION AUDIT                                       SECTION 227 - OFFICER AND SUBCONTRACTOR TREATMENT
+The provision below is read with WC 00 00 00 C edition 07 23 for VT class 5606,   E. The provision below is read with WC 00 00 01 A edition 04 21 for CT class 8810,
+Location 1.                                            Location 2.
+
+The annual payroll of $675,365 for VT class 5606, Location 1 is an estimate and is   Officer, member, volunteer, leased-worker, and subcontractor treatment for CT class
+subject to audit after the policy period.                              8810, Location 2 must be read with form WC 00 00 01 A edition 04 21 and the
+                                                       $686,739 remuneration entry.
+SECTION 222 - STATE CLASSIFICATION CONTROL
+C. WC 00 00 00 C edition 07 23 is a condition provision for VT class 5606,   SECTION 228 - PREMIUM REVISION BASIS
+Location 1.                                            WC 00 00 01 A edition 04 21 is a condition provision for CT class 8810, Location 2.
+
+The VT classification 5606 controls the rating basis for Contractor executive   The estimated premium of $19,640 is calculated from rate 2.86, experience
+supervisor at Location 1; form WC 00 00 00 C edition 07 23 applies unless a state   modification 1.04, and schedule rating 0% for CT class 8810, Location 2.
+
+
+
+
+
+
+
+
+
+
+
+
+
+AWC 128 (05-24)                                                        Blue Kettle Food Service, LLC | YW700400
 
 # Page 73
 
-POLICY PACKET                                                                     ┌─────────────────────┐
-Underwriting Support                                                              │ POLICY COPY 1F7EA01 │
-                                                                                  └─────────────────────┘
+ARGENT BIRCH EMPLOYERS                                                 POLICY NUMBER: YW700400
+Workers Compensation and Employers Liability                             EFFECTIVE: 04/01/2026
+                                                                          EXPIRES: 04/01/2027
+______________________________________________________________________________________________________
 
-Policy jacket notices and state exceptions
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
+                     MATERIAL POLICY PROVISIONS - CONTINUED 20
+______________________________________________________________________________________________________
 
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-060-01,Policy jacket notices and state exceptions,Reviewed,Policy audit
-REF-060-02,Prior policy comparison,Pending,Producer copy
-REF-060-03,Rating worksheet,Indexed,State form
-REF-060-04,Producer correspondence,Archive,Rating file
-REF-060-05,State exception,Reviewed,Policy audit
-REF-060-06,Form filing note,Pending,Producer copy
-REF-060-07,Policy jacket notices and state exceptions,Indexed,State form
-REF-060-08,Prior policy comparison,Archive,Rating file
-REF-060-09,Rating worksheet,Reviewed,Policy audit
-REF-060-10,Producer correspondence,Pending,Producer copy
-REF-060-11,State exception,Indexed,State form
-REF-060-12,Form filing note,Archive,Rating file
-REF-060-13,Policy jacket notices and state exceptions,Reviewed,Policy audit
-REF-060-14,Prior policy comparison,Pending,Producer copy
-REF-060-15,Rating worksheet,Indexed,State form
-REF-060-16,Producer correspondence,Archive,Rating file
-REF-060-17,State exception,Reviewed,Policy audit
-REF-060-18,Form filing note,Pending,Producer copy
-REF-060-19,Policy jacket notices and state exceptions,Indexed,State form
-REF-060-20,Prior policy comparison,Archive,Rating file
-REF-060-21,Rating worksheet,Reviewed,Policy audit
-REF-060-22,Producer correspondence,Pending,Producer copy
-REF-060-23,State exception,Indexed,State form
-REF-060-24,Form filing note,Archive,Rating file
-REF-060-25,Policy jacket notices and state exceptions,Reviewed,Policy audit
-REF-060-26,Prior policy comparison,Pending,Producer copy
-REF-060-27,Rating worksheet,Indexed,State form
-REF-060-28,Producer correspondence,Archive,Rating file
-REF-060-29,State exception,Reviewed,Policy audit
-REF-060-30,Form filing note,Pending,Producer copy
+THIS FORM IS PART OF THE POLICY AND MUST BE READ WITH THE DECLARATIONS AND ENDORSEMENTS.
 
-Policy packet                                                                                   Page 60
+______________________________________________________________________________________________________
+
+                                                       SECTION 235 - OFFICER AND SUBCONTRACTOR TREATMENT
+SECTION 229 - REMUNERATION AUDIT                      For MA class 8742 (Outside salespersons), the applicable form is WC 00 00 00 C
+For CT class 8017 (Retail store - all employees), the applicable form is WC 00 00 01  edition 04 21 and the provision is treated as limitation.
+A edition 01 15 and the provision is treated as condition.
+                                                       Officer, member, volunteer, leased-worker, and subcontractor treatment for MA class
+The annual payroll of $705,887 for CT class 8017, Location 3 is an estimate and is  8742, Location 4 must be read with form WC 00 00 00 C edition 04 21 and the
+subject to audit after the policy period.             $716,927 remuneration entry.
+
+SECTION 230 - STATE CLASSIFICATION CONTROL             SECTION 236 - PREMIUM REVISION BASIS
+The provision below is read with WC 00 00 01 A edition 01 15 for CT class 8017,       The provision below is read with WC 00 00 00 C edition 04 21 for MA class 8742,
+Location 3.                                            Location 4.
+
+The CT classification 8017 controls the rating basis for Retail store - all employees  The estimated premium of $1,290 is calculated from rate 0.18, experience
+at Location 3; form WC 00 00 01 A edition 01 15 applies unless a state amendatory     modification 1.04, and schedule rating 0% for MA class 8742, Location 4.
+endorsement changes it.
+                                                       SECTION 237 - REMUNERATION AUDIT
+SECTION 231 - OFFICER AND SUBCONTRACTOR TREATMENT      WC 00 00 00 C edition 01 15 is a condition provision for MA class 5190, Location
+WC 00 00 01 A edition 01 15 is a limitation provision for CT class 8017, Location 3.   5.
+
+Officer, member, volunteer, leased-worker, and subcontractor treatment for CT class   The annual payroll of $724,745 for MA class 5190, Location 5 is an estimate and is
+8017, Location 3 must be read with form WC 00 00 01 A edition 01 15 and the           subject to audit after the policy period.
+$705,887 remuneration entry.
+                                                       SECTION 238 - STATE CLASSIFICATION CONTROL
+SECTION 232 - PREMIUM REVISION BASIS                   For MA class 5190 (Electrical wiring within buildings), the applicable form is WC
+For CT class 8017 (Retail store - all employees), the applicable form is WC 00 00 01  00 00 00 C edition 01 15 and the provision is treated as condition.
+A edition 01 15 and the provision is treated as condition.
+                                                       The MA classification 5190 controls the rating basis for Electrical wiring within
+The estimated premium of $1,905 is calculated from rate 0.27, experience               buildings at Location 5; form WC 00 00 00 C edition 01 15 applies unless a state
+modification 1.04, and schedule rating 0% for CT class 8017, Location 3.               amendatory endorsement changes it.
+
+SECTION 233 - REMUNERATION AUDIT                      SECTION 239 - OFFICER AND SUBCONTRACTOR TREATMENT
+The provision below is read with WC 00 00 00 C edition 04 21 for MA class 8742,       The provision below is read with WC 00 00 00 C edition 01 15 for MA class 5190,
+Location 4.                                            Location 5.
+
+The annual payroll of $716,927 for MA class 8742, Location 4 is an estimate and is    Officer, member, volunteer, leased-worker, and subcontractor treatment for MA class
+subject to audit after the policy period.              5190, Location 5 must be read with form WC 00 00 00 C edition 01 15 and the
+                                                       $724,745 remuneration entry.
+SECTION 234 - STATE CLASSIFICATION CONTROL
+WC 00 00 00 C edition 04 21 is a condition provision for MA class 8742, Location       SECTION 240 - PREMIUM REVISION BASIS
+4.                                                     WC 00 00 00 C edition 01 15 is a condition provision for MA class 5190, Location
+                                                       5.
+The MA classification 8742 controls the rating basis for Outside salespersons at
+Location 4; form WC 00 00 00 C edition 04 21 applies unless a state amendatory        The estimated premium of $1,304 is calculated from rate 0.18, experience
+endorsement changes it.                                modification 1.04, and schedule rating 0% for MA class 5190, Location 5.
+
+
+
+
+
+
+
+
+
+
+
+
+
+AWC 129 (05-24)                                                        Blue Kettle Food Service, LLC | YW700400
 
 # Page 74
 
-POLICY PACKET                                                                      POLICY COPY 1F7EA01
+ARGENT BIRCH EMPLOYERS                                         POLICY NUMBER: YW700400
+Workers Compensation and Employers Liability                       EFFECTIVE: 04/01/2026
+                                                                     EXPIRES: 04/01/2027
+________________________________________________________________________________________
 
-Underwriting Support
+                  SUBROGATION AND RECOVERY ADMINISTRATION
 
-Policy jacket notices and state exceptions
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
+________________________________________________________________________________________
+THIS FORM IS PART OF THE POLICY AND MUST BE READ WITH THE DECLARATIONS AND ENDORSEMENTS.
+________________________________________________________________________________________
 
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-061-01,Prior policy comparison,Reviewed,Producer copy
-REF-061-02,Rating worksheet,Pending,State form
-REF-061-03,Producer correspondence,Indexed,Rating file
-REF-061-04,State exception,Archive,Policy audit
-REF-061-05,Form filing note,Reviewed,Producer copy
-REF-061-06,Policy jacket notices and state exceptions,Pending,State form
-REF-061-07,Prior policy comparison,Indexed,Rating file
-REF-061-08,Rating worksheet,Archive,Policy audit
-REF-061-09,Producer correspondence,Reviewed,Producer copy
-REF-061-10,State exception,Pending,State form
-REF-061-11,Form filing note,Indexed,Rating file
-REF-061-12,Policy jacket notices and state exceptions,Archive,Policy audit
-REF-061-13,Prior policy comparison,Reviewed,Producer copy
-REF-061-14,Rating worksheet,Pending,State form
-REF-061-15,Producer correspondence,Indexed,Rating file
-REF-061-16,State exception,Archive,Policy audit
-REF-061-17,Form filing note,Reviewed,Producer copy
-REF-061-18,Policy jacket notices and state exceptions,Pending,State form
-REF-061-19,Prior policy comparison,Indexed,Rating file
-REF-061-20,Rating worksheet,Archive,Policy audit
-REF-061-21,Producer correspondence,Reviewed,Producer copy
-REF-061-22,State exception,Pending,State form
-REF-061-23,Form filing note,Indexed,Rating file
-REF-061-24,Policy jacket notices and state exceptions,Archive,Policy audit
-REF-061-25,Prior policy comparison,Reviewed,Producer copy
-REF-061-26,Rating worksheet,Pending,State form
-REF-061-27,Producer correspondence,Indexed,Rating file
-REF-061-28,State exception,Archive,Policy audit
-REF-061-29,Form filing note,Reviewed,Producer copy
-REF-061-30,Policy jacket notices and state exceptions,Pending,State form
+STATE / CLASS  MA / 5190                                LOCATION 1
+----------------------------------------------------------------------------------------
+CLASSIFICATION  Electrical wiring within buildings       PAYROLL / RATE $453,438 / 0.27
+----------------------------------------------------------------------------------------
+PREMIUM  $1,224                                         FORM  WC 00 03 13 01 15
+----------------------------------------------------------------------------------------
 
-Policy packet                                                                                       Page 61
+Classification And Rating Reference                      The remaining balance of the recovery will be used to offset the benefits distributed
+                                                         to the injured worker.
+This form applies to Electrical wiring within buildings
+in MA, class 5190, at Location 1.                        If the recovery exceeds the total benefits provided, the surplus will be distributed
+                                                         according to the statutory guidelines of the jurisdiction.
+The information page shows estimated remuneration
+of $453,438, manual rate 0.27, experience modification   The employer must execute any documents, assignments, or legal instruments
+1.04, and estimated premium $1,224.                      required to facilitate the recovery action.
+
+Form WC 00 03 13 edition 01 15 supplies the              We maintain the exclusive authority to direct the recovery litigation, select legal
+applicable policy terms for this classification.         counsel, and negotiate settlement terms.
+
+When a third party is responsible for an occupational    The employer must attend hearings, depositions, and trials as requested to support
+injury, we inherit the employer's right to seek          the recovery efforts.
+recovery for benefits provided.
+                                                         If the employer independently pursues a recovery action, they must notify us
+The employer must take all necessary steps to            immediately and protect our lien on the proceeds.
+preserve these recovery rights and must not execute
+any pre-injury waivers without our knowledge.            Compromising a third-party claim without our written approval may jeopardize the
+                                                         injured worker's entitlement to future benefits.
+Any recovery obtained from a responsible third party
+will first be applied to reimburse the expenses
+incurred during the pursuit of the claim.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+WC-SR-1055                                                    Blue Kettle Food Service, LLC | YW700400
 
 # Page 75
 
-POLICY PACKET                                                                     POLICY COPY 1F7EA01
+ARGENT BIRCH EMPLOYERS                                         POLICY NUMBER: YW700400
+Workers Compensation and Employers Liability                       EFFECTIVE: 04/01/2026
+                                                                    EXPIRES: 04/01/2027
+________________________________________________________________________________________
 
-Underwriting Support
+               MASSACHUSETTS STATE AMENDATORY ENDORSEMENT
 
-Policy jacket notices and state exceptions
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
+________________________________________________________________________________________
+THIS ENDORSEMENT CHANGES THE POLICY. PLEASE READ IT CAREFULLY.
+________________________________________________________________________________________
 
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-062-01,Rating worksheet,Reviewed,State form
-REF-062-02,Producer correspondence,Pending,Rating file
-REF-062-03,State exception,Indexed,Policy audit
-REF-062-04,Form filing note,Archive,Producer copy
-REF-062-05,Policy jacket notices and state exceptions,Reviewed,State form
-REF-062-06,Prior policy comparison,Pending,Rating file
-REF-062-07,Rating worksheet,Indexed,Policy audit
-REF-062-08,Producer correspondence,Archive,Producer copy
-REF-062-09,State exception,Reviewed,State form
-REF-062-10,Form filing note,Pending,Rating file
-REF-062-11,Policy jacket notices and state exceptions,Indexed,Policy audit
-REF-062-12,Prior policy comparison,Archive,Producer copy
-REF-062-13,Rating worksheet,Reviewed,State form
-REF-062-14,Producer correspondence,Pending,Rating file
-REF-062-15,State exception,Indexed,Policy audit
-REF-062-16,Form filing note,Archive,Producer copy
-REF-062-17,Policy jacket notices and state exceptions,Reviewed,State form
-REF-062-18,Prior policy comparison,Pending,Rating file
-REF-062-19,Rating worksheet,Indexed,Policy audit
-REF-062-20,Producer correspondence,Archive,Producer copy
-REF-062-21,State exception,Reviewed,State form
-REF-062-22,Form filing note,Pending,Rating file
-REF-062-23,Policy jacket notices and state exceptions,Indexed,Policy audit
-REF-062-24,Prior policy comparison,Archive,Producer copy
-REF-062-25,Rating worksheet,Reviewed,State form
-REF-062-26,Producer correspondence,Pending,Rating file
-REF-062-27,State exception,Indexed,Policy audit
-REF-062-28,Form filing note,Archive,Producer copy
-REF-062-29,Policy jacket notices and state exceptions,Reviewed,State form
-REF-062-30,Prior policy comparison,Pending,Rating file
+STATE / CLASS RI / 9082                                 LOCATION 2
+...................................................................................................................................................................................
+CLASSIFICATION Restaurant NOC                           PAYROLL / RATE $463,529 / 6.22
+...................................................................................................................................................................................
+PREMIUM $28,831                                         FORM WC 00 03 13 04 21
+...................................................................................................................................................................................
 
-Policy packet                                                                                   Page 62
+1. Classification And Rating Reference                  The employer must post the official notice to employees regarding their rights and
+                                                        the procedures for obtaining medical treatment.
+This form applies to Restaurant NOC in RI, class 9082, at Location 2.
+                                                        3. Failure to post the required workplace notices may subject the enterprise to
+The information page shows estimated remuneration of $463,529, manual rate 6.22,      administrative fines levied by the state regulatory department.
+experience modification 1.04, and estimated premium $28,831.
+                                                        Disputes regarding the assignment of classification codes must be submitted to the
+Form WC 00 03 13 edition 04 21 supplies the applicable policy terms for this       state rating bureau's dispute resolution panel.
+classification.
+                                                        The experience modification factor applied to Massachusetts operations is calculated
+2. This document modifies the standard provisions to comply with the statutory         exclusively using the state's approved statistical plan.
+requirements of the Commonwealth of Massachusetts.
+                                                        We will notify the state industrial accident board electronically whenever this
+The cancellation notice period for nonpayment of premium is extended to strictly        contract is issued, renewed, or terminated.
+comply with the state's administrative code.
+                                                        4. The employer must utilize the state-mandated forms when reporting injuries and
+When calculating remuneration for premium purposes, the maximum payroll          must submit them within the required seven-day window.
+limitations for executive officers are dictated by the state rating bureau.
+                                                        Any provision in the standard contract that conflicts with Massachusetts law is
+                                                        hereby amended to conform to the statutory minimums.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+WC-MA-3000                                                        Blue Kettle Food Service, LLC | YW700400
 
 # Page 76
 
-POLICY PACKET                                                                    POLICY COPY 1F7EA01
+ARGENT BIRCH EMPLOYERS                                                 POLICY NUMBER: YW700400
+Workers Compensation and Employers Liability                             EFFECTIVE: 04/01/2026
+                                                                           EXPIRES: 04/01/2027
+________________________________________________________________________________________________
 
-Underwriting Support
+                      ELECTRONIC FUNDS TRANSFER AUTHORIZATION
+________________________________________________________________________________________________
 
-Policy jacket notices and state exceptions
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
+ PREMIUM, AUDIT, AND ACCOUNTING CONDITIONS
+________________________________________________________________________________________________
+|                                                             |                                 |
+|  Named insured                                              |  Policy term                    |
+|  Blue Kettle Food Service, LLC                              |  04/01/2026 - 04/01/2027        |
+|_____________________________________________________________|_________________________________|
+|                                                             |                                 |
+|  Scheduled premium                                          |  Audit basis                    |
+|  $3,522                                                     |  Payroll per $100 remuneration  |
+|_____________________________________________________________|_________________________________|
 
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-063-01,Producer correspondence,Reviewed,Rating file
-REF-063-02,State exception,Pending,Policy audit
-REF-063-03,Form filing note,Indexed,Producer copy
-REF-063-04,Policy jacket notices and state exceptions,Archive,State form
-REF-063-05,Prior policy comparison,Reviewed,Rating file
-REF-063-06,Rating worksheet,Pending,Policy audit
-REF-063-07,Producer correspondence,Indexed,Producer copy
-REF-063-08,State exception,Archive,State form
-REF-063-09,Form filing note,Reviewed,Rating file
-REF-063-10,Policy jacket notices and state exceptions,Pending,Policy audit
-REF-063-11,Prior policy comparison,Indexed,Producer copy
-REF-063-12,Rating worksheet,Archive,State form
-REF-063-13,Producer correspondence,Reviewed,Rating file
-REF-063-14,State exception,Pending,Policy audit
-REF-063-15,Form filing note,Indexed,Producer copy
-REF-063-16,Policy jacket notices and state exceptions,Archive,State form
-REF-063-17,Prior policy comparison,Reviewed,Rating file
-REF-063-18,Rating worksheet,Pending,Policy audit
-REF-063-19,Producer correspondence,Indexed,Producer copy
-REF-063-20,State exception,Archive,State form
-REF-063-21,Form filing note,Reviewed,Rating file
-REF-063-22,Policy jacket notices and state exceptions,Pending,Policy audit
-REF-063-23,Prior policy comparison,Indexed,Producer copy
-REF-063-24,Rating worksheet,Archive,State form
-REF-063-25,Producer correspondence,Reviewed,Rating file
-REF-063-26,State exception,Pending,Policy audit
-REF-063-27,Form filing note,Indexed,Producer copy
-REF-063-28,Policy jacket notices and state exceptions,Archive,State form
-REF-063-29,Prior policy comparison,Reviewed,Rating file
-REF-063-30,Rating worksheet,Pending,Policy audit
 
-Policy packet                                                                                       Page 63
+A. Classification And Rating Reference                           If a withdrawal is rejected by the financial institution due to insufficient funds, a
+                                                                 processing fee will be added to the account balance.
+This form applies to Machine shop NOC in ME, class 3632, at Location 3.
+                                                                 Two consecutive rejected withdrawals will result in the immediate termination of the
+The information page shows estimated remuneration of $475,950, manual rate 0.74,   electronic funds transfer agreement.
+experience modification 1.04, and estimated premium $3,522.
+                                                                 Upon termination of the agreement, the enterprise will be reverted to standard paper
+Form WC 00 00 01 A edition 07 23 supplies the applicable policy terms for this   invoicing and must submit payments manually.
+classification.
+                                                                 C. To update banking information, the enterprise must submit a revised authorization
+This agreement authorizes the automatic withdrawal of premium payments directly   form at least ten days prior to the next scheduled withdrawal.
+from the designated corporate banking account.
+                                                                 The enterprise may cancel this authorization at any time by providing written notice,
+B. The enterprise must provide accurate routing and account numbers and ensure   which will take effect after the current billing cycle.
+sufficient funds are available on the scheduled withdrawal dates.
+                                                                 Any refunds or return premiums due to the enterprise will be deposited directly into
+Withdrawals will occur on the exact due date of each installment, or the following   the authorized banking account.
+business day if the due date falls on a weekend or holiday.
+                                                                 We are not liable for any overdraft fees or penalties assessed by the financial
+                                                                 institution resulting from authorized premium withdrawals.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+WC-EF-4001                                                              Blue Kettle Food Service, LLC | YW700400
 
 # Page 77
 
-POLICY PACKET                                                      POLICY COPY 1F7EA01
+ARGENT BIRCH EMPLOYERS                                                 POLICY NUMBER: YW700400
+Workers Compensation and Employers Liability                             EFFECTIVE: 04/01/2026
+                                                                           EXPIRES: 04/01/2027
+______________________________________________________________________________________________
 
-Underwriting Support
+                 LONGSHORE AND HARBOR WORKERS EXTENSION CRITERIA
+______________________________________________________________________________________________
 
-Policy jacket notices and state exceptions
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
+THIS FORM IS PART OF THE POLICY AND MUST BE READ WITH THE DECLARATIONS AND ENDORSEMENTS.
+______________________________________________________________________________________________
 
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-064-01,State exception,Reviewed,Policy audit
-REF-064-02,Form filing note,Pending,Producer copy
-REF-064-03,Policy jacket notices and state exceptions,Indexed,State form
-REF-064-04,Prior policy comparison,Archive,Rating file
-REF-064-05,Rating worksheet,Reviewed,Policy audit
-REF-064-06,Producer correspondence,Pending,Producer copy
-REF-064-07,State exception,Indexed,State form
-REF-064-08,Form filing note,Archive,Rating file
-REF-064-09,Policy jacket notices and state exceptions,Reviewed,Policy audit
-REF-064-10,Prior policy comparison,Pending,Producer copy
-REF-064-11,Rating worksheet,Indexed,State form
-REF-064-12,Producer correspondence,Archive,Rating file
-REF-064-13,State exception,Reviewed,Policy audit
-REF-064-14,Form filing note,Pending,Producer copy
-REF-064-15,Policy jacket notices and state exceptions,Indexed,State form
-REF-064-16,Prior policy comparison,Archive,Rating file
-REF-064-17,Rating worksheet,Reviewed,Policy audit
-REF-064-18,Producer correspondence,Pending,Producer copy
-REF-064-19,State exception,Indexed,State form
-REF-064-20,Form filing note,Archive,Rating file
-REF-064-21,Policy jacket notices and state exceptions,Reviewed,Policy audit
-REF-064-22,Prior policy comparison,Pending,Producer copy
-REF-064-23,Rating worksheet,Indexed,State form
-REF-064-24,Producer correspondence,Archive,Rating file
-REF-064-25,State exception,Reviewed,Policy audit
-REF-064-26,Form filing note,Pending,Producer copy
-REF-064-27,Policy jacket notices and state exceptions,Indexed,State form
-REF-064-28,Prior policy comparison,Archive,Rating file
-REF-064-29,Rating worksheet,Reviewed,Policy audit
-REF-064-30,Producer correspondence,Pending,Producer copy
+STATE / CLASS  NH / 9015                                     LOCATION  4
+----------------------------------------------------------------------------------------------
+CLASSIFICATION  Building operations by owner                  PAYROLL / RATE  $485,364 / 4.35
+----------------------------------------------------------------------------------------------
+PREMIUM  $21,113                                             FORM  WC 04 03 06 04 21
+----------------------------------------------------------------------------------------------
 
-Policy packet                                                                 Page 64
+Classification And Rating Reference                             When the extension is attached, the remuneration associated with the maritime
+                                                                operations must be segregated in the payroll ledgers.
+This form applies to Building operations by owner in NH,
+class 9015, at Location 4.                                      Maritime remuneration is subject to distinct manual rates and rating methodologies
+                                                                established by the federal oversight agency.
+The information page shows estimated remuneration of
+$485,364, manual rate 4.35, experience modification 1.04,        The employer must comply with all federal reporting requirements and safety
+and estimated premium $21,113.                                  regulations mandated by the maritime statutes.
+
+Form WC 04 03 06 edition 04 21 supplies the applicable          Failure to secure the necessary federal extension when required may expose the
+policy terms for this classification.                           enterprise to severe statutory penalties and uninsured liabilities.
+
+Operations conducted on or near navigable waters may            We reserve the right to audit the proximity of operations to navigable waters to
+fall under federal maritime jurisdiction, requiring             determine the potential for incidental maritime exposure.
+specialized benefit provisions.
+                                                                Incidental maritime exposure discovered during the final audit will be rated
+This contract does not automatically encompass federal          retroactively using the applicable federal classification codes.
+maritime exposures unless specifically designated on the
+administrative schedules.                                       The defense and settlement provisions of this contract apply equally to claims
+                                                                adjudicated under the federal maritime administrative system.
+If the enterprise engages in loading, unloading, repairing,
+or building vessels, the employer must request the
+appropriate federal extension.
 
 # Page 78
 
-POLICY PACKET                                                                           POLICY COPY 1F7EA01
-Underwriting Support
+ARGENT BIRCH EMPLOYERS                                                 POLICY NUMBER: YW700400
+Workers Compensation and Employers Liability                             EFFECTIVE: 04/01/2026
+                                                                           EXPIRES: 04/01/2027
+______________________________________________________________________________________________________
 
-Policy jacket notices and state exceptions
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
+                              CONTRACTUAL TRANSFER AND ASSIGNMENT RULES
 
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-065-01,Form filing note,Reviewed,Producer copy
-REF-065-02,Policy jacket notices and state exceptions,Pending,State form
-REF-065-03,Prior policy comparison,Indexed,Rating file
-REF-065-04,Rating worksheet,Archive,Policy audit
-REF-065-05,Producer correspondence,Reviewed,Producer copy
-REF-065-06,State exception,Pending,State form
-REF-065-07,Form filing note,Indexed,Rating file
-REF-065-08,Policy jacket notices and state exceptions,Archive,Policy audit
-REF-065-09,Prior policy comparison,Reviewed,Producer copy
-REF-065-10,Rating worksheet,Pending,State form
-REF-065-11,Producer correspondence,Indexed,Rating file
-REF-065-12,State exception,Archive,Policy audit
-REF-065-13,Form filing note,Reviewed,Producer copy
-REF-065-14,Policy jacket notices and state exceptions,Pending,State form
-REF-065-15,Prior policy comparison,Indexed,Rating file
-REF-065-16,Rating worksheet,Archive,Policy audit
-REF-065-17,Producer correspondence,Reviewed,Producer copy
-REF-065-18,State exception,Pending,State form
-REF-065-19,Form filing note,Indexed,Rating file
-REF-065-20,Policy jacket notices and state exceptions,Archive,Policy audit
-REF-065-21,Prior policy comparison,Reviewed,Producer copy
-REF-065-22,Rating worksheet,Pending,State form
-REF-065-23,Producer correspondence,Indexed,Rating file
-REF-065-24,State exception,Archive,Policy audit
-REF-065-25,Form filing note,Reviewed,Producer copy
-REF-065-26,Policy jacket notices and state exceptions,Pending,State form
-REF-065-27,Prior policy comparison,Indexed,Rating file
-REF-065-28,Rating worksheet,Archive,Policy audit
-REF-065-29,Producer correspondence,Reviewed,Producer copy
-REF-065-30,State exception,Pending,State form
+______________________________________________________________________________________________________
+THIS FORM IS PART OF THE POLICY AND MUST BE READ WITH THE DECLARATIONS AND ENDORSEMENTS.
+______________________________________________________________________________________________________
 
-Policy packet                                                                                             Page 65
+STATE / CLASS  VT / 5606                                    LOCATION  5
+------------------------------------------------------------------------------------------------------
+CLASSIFICATION  Contractor executive supervisor             PAYROLL / RATE  $495,123 / 4.35
+------------------------------------------------------------------------------------------------------
+PREMIUM  $21,537                                            FORM  WC 00 00 00 C 07 23
+------------------------------------------------------------------------------------------------------
+
+1. Classification And Rating Reference                      The employer must notify us at least thirty days prior to any change in ownership or
+                                                            fundamental shift in corporate control.
+This form applies to Contractor executive supervisor in VT,
+class 5606, at Location 5.                                  3. Upon receiving notice of an ownership change, we will evaluate the new
+                                                            operational risks and determine whether to consent to the assignment.
+The information page shows estimated remuneration of
+$495,123, manual rate 4.35, experience modification 1.04,   If consent is granted, an amendatory document will be issued detailing the effective
+and estimated premium $21,537.                              date of the transfer and any revised rating parameters.
+
+Form WC 00 00 00 C edition 07 23 supplies the applicable    If consent is withheld, the contract will be cancelled in accordance with the standard
+policy terms for this classification.                       termination provisions.
+
+2. The rights and obligations established by this contract  In the event of the employer's death or bankruptcy, the legal representative or trustee
+are unique to the enterprise identified on the              assumes the duties of the employer for the remainder of the term.
+administrative schedules.
+                                                            4. The legal representative must continue to maintain payroll ledgers, report injuries,
+The employer may not transfer, assign, or delegate any      and remit premium payments as required.
+portion of this contract to a third party without our
+explicit written consent.                                   Unauthorized assignments are considered void and provide no protection to the
+                                                            unapproved successor entity.
+In the event of a merger, acquisition, or corporate
+restructuring, the surviving entity does not automatically
+inherit the coverage provisions.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+WC-CT-1009                                                             Blue Kettle Food Service, LLC | YW700400
 
 # Page 79
 
-POLICY PACKET                                                             POLICY COPY 1F7EA01
+ARGENT BIRCH EMPLOYERS                                         POLICY NUMBER: YW700400
+Workers Compensation and Employers Liability                     EFFECTIVE: 04/01/2026
+                                                                  EXPIRES: 04/01/2027
+______________________________________________________________________________________
 
-Underwriting Support
+                     PREMIUM AUDIT AND REMUNERATION CONDITIONS
 
-Policy jacket notices and state exceptions
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
+______________________________________________________________________________________
+THIS FORM IS PART OF THE POLICY AND MUST BE READ WITH THE DECLARATIONS AND ENDORSEMENTS.
+______________________________________________________________________________________
 
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-066-01,Policy jacket notices and state exceptions,Reviewed,State form
-REF-066-02,Prior policy comparison,Pending,Rating file
-REF-066-03,Rating worksheet,Indexed,Policy audit
-REF-066-04,Producer correspondence,Archive,Producer copy
-REF-066-05,State exception,Reviewed,State form
-REF-066-06,Form filing note,Pending,Rating file
-REF-066-07,Policy jacket notices and state exceptions,Indexed,Policy audit
-REF-066-08,Prior policy comparison,Archive,Producer copy
-REF-066-09,Rating worksheet,Reviewed,State form
-REF-066-10,Producer correspondence,Pending,Rating file
-REF-066-11,State exception,Indexed,Policy audit
-REF-066-12,Form filing note,Archive,Producer copy
-REF-066-13,Policy jacket notices and state exceptions,Reviewed,State form
-REF-066-14,Prior policy comparison,Pending,Rating file
-REF-066-15,Rating worksheet,Indexed,Policy audit
-REF-066-16,Producer correspondence,Archive,Producer copy
-REF-066-17,State exception,Reviewed,State form
-REF-066-18,Form filing note,Pending,Rating file
-REF-066-19,Policy jacket notices and state exceptions,Indexed,Policy audit
-REF-066-20,Prior policy comparison,Archive,Producer copy
-REF-066-21,Rating worksheet,Reviewed,State form
-REF-066-22,Producer correspondence,Pending,Rating file
-REF-066-23,State exception,Indexed,Policy audit
-REF-066-24,Form filing note,Archive,Producer copy
-REF-066-25,Policy jacket notices and state exceptions,Reviewed,State form
-REF-066-26,Prior policy comparison,Pending,Rating file
-REF-066-27,Rating worksheet,Indexed,Policy audit
-REF-066-28,Producer correspondence,Archive,Producer copy
-REF-066-29,State exception,Reviewed,State form
-REF-066-30,Form filing note,Pending,Rating file
+STATE / CLASS  CT / 8810                                 LOCATION  1
+..................................................................................................................................................................
+CLASSIFICATION  Clerical office employees                PAYROLL / RATE  $502,147 / 1.15
+..................................................................................................................................................................
+PREMIUM  $5,774                                          FORM  WC 00 03 13 04 21
+..................................................................................................................................................................
 
-Policy packet                                                                         Page 66
+A. Classification And Rating Reference                  We reserve the authority to inspect these ledgers and related tax filings during
+                                                        normal business hours.
+This form applies to Clerical office employees in CT,
+class 8810, at Location 1.                              This inspection authority extends for up to three years following the expiration date
+                                                        or cancellation of the contract.
+The information page shows estimated remuneration of
+$502,147, manual rate 1.15, experience modification     If the final computed premium exceeds the initial estimate, the employer must remit
+1.04, and estimated premium $5,774.                     the outstanding balance upon receipt of the final invoice.
+
+Form WC 00 03 13 edition 04 21 supplies the             C. If the final computed premium is less than the initial estimate, a refund will be
+applicable policy terms for this classification.        issued, subject to any minimum premium requirements.
+
+The premium shown on the schedules is an initial        Failure to provide requested ledgers or cooperate with the auditor may result in an
+estimate based on anticipated remuneration for the       estimated final billing.
+upcoming term.
+                                                        Estimated final billings are calculated using a punitive multiplier applied to the
+B. At the conclusion of the policy period, a final      highest previous exposure recorded.
+computation determines the exact premium owed based
+on actual exposures.                                    The employer may dispute an audit finding by submitting a written grievance along
+                                                        with supporting documentation within thirty days of the final invoice date.
+The employer must maintain complete and accurate
+ledgers detailing all wages, bonuses, commissions,
+and substitute compensation provided to workers.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+WC-PA-1000                                                   Blue Kettle Food Service, LLC | YW700400
 
 # Page 80
 
-POLICY PACKET
-Underwriting Support
+ARGENT BIRCH EMPLOYERS                                         POLICY NUMBER: YW700400
+Workers Compensation and Employers Liability                       EFFECTIVE: 04/01/2026
+                                                                   EXPIRES: 04/01/2027
+________________________________________________________________________________________
 
-POLICY COPY 1F7EA01
+                        FRAUD WARNING AND PENALTY NOTICE
+________________________________________________________________________________________
 
-Policy jacket notices and state exceptions
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
+POLICYHOLDER NOTICE - INFORMATION ABOUT YOUR POLICY
+________________________________________________________________________________________
 
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-067-01,Prior policy comparison,Reviewed,Rating file
-REF-067-02,Rating worksheet,Pending,Policy audit
-REF-067-03,Producer correspondence,Indexed,Producer copy
-REF-067-04,State exception,Archive,State form
-REF-067-05,Form filing note,Reviewed,Rating file
-REF-067-06,Policy jacket notices and state exceptions,Pending,Policy audit
-REF-067-07,Prior policy comparison,Indexed,Producer copy
-REF-067-08,Rating worksheet,Archive,State form
-REF-067-09,Producer correspondence,Reviewed,Rating file
-REF-067-10,State exception,Pending,Policy audit
-REF-067-11,Form filing note,Indexed,Producer copy
-REF-067-12,Policy jacket notices and state exceptions,Archive,State form
-REF-067-13,Prior policy comparison,Reviewed,Rating file
-REF-067-14,Rating worksheet,Pending,Policy audit
-REF-067-15,Producer correspondence,Indexed,Producer copy
-REF-067-16,State exception,Archive,State form
-REF-067-17,Form filing note,Reviewed,Rating file
-REF-067-18,Policy jacket notices and state exceptions,Pending,Policy audit
-REF-067-19,Prior policy comparison,Indexed,Producer copy
-REF-067-20,Rating worksheet,Archive,State form
-REF-067-21,Producer correspondence,Reviewed,Rating file
-REF-067-22,State exception,Pending,Policy audit
-REF-067-23,Form filing note,Indexed,Producer copy
-REF-067-24,Policy jacket notices and state exceptions,Archive,State form
-REF-067-25,Prior policy comparison,Reviewed,Rating file
-REF-067-26,Rating worksheet,Pending,Policy audit
-REF-067-27,Producer correspondence,Indexed,Producer copy
-REF-067-28,State exception,Archive,State form
-REF-067-29,Form filing note,Reviewed,Rating file
-REF-067-30,Policy jacket notices and state exceptions,Pending,Policy audit
 
-Policy packet                                                                   Page 67
+        To the policyholder:
+
+        Misrepresenting payroll, misclassifying employees, or concealing operations to obtain a lower premium is a severe violation of law.
+
+        Any person who knowingly submits false information on an application, audit ledger, or claim form may be subject to criminal prosecution.
+
+        Regulatory authorities actively investigate suspected fraud and may impose substantial fines, restitution orders, and imprisonment.
+
+        We utilize advanced data analytics and field investigations to detect discrepancies in reported remuneration and operational descriptions.
+
+        If premium fraud is discovered, we will pursue immediate cancellation of the contract and report the findings to the state fraud bureau.
+
+        Employers who encourage or assist workers in filing exaggerated or fabricated injury reports will face civil liability and loss of coverage.
+
+        Workers who collect benefits while simultaneously earning unreported income from other sources are committing benefit fraud.
+
+        We encourage anyone with knowledge of fraudulent activities related to this contract to contact our anonymous reporting hotline.
+
+        This notice is informational. Coverage is governed by the policy forms and endorsements issued with the declarations.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+WC-FW-2001                                                    Blue Kettle Food Service, LLC | YW700400
 
 # Page 81
 
-POLICY PACKET                                                                    POLICY COPY 1F7EA01
+ARGENT BIRCH EMPLOYERS                                                 POLICY NUMBER: YW700400
+Workers Compensation and Employers Liability                             EFFECTIVE: 04/01/2026
+                                                                           EXPIRES: 04/01/2027
+______________________________________________________________________________________________________
 
-**Underwriting Support**
+                                EXPERIENCE RATING PLAN APPLICATION
+______________________________________________________________________________________________________
 
-***
+THIS FORM IS PART OF THE POLICY AND MUST BE READ WITH THE DECLARATIONS AND ENDORSEMENTS.
+______________________________________________________________________________________________________
 
-**Policy jacket notices and state exceptions**
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
+STATE / CLASS  MA / 8742                                         LOCATION  3
+..........................................................................................................................................................................
+CLASSIFICATION  Outside salespersons                              PAYROLL / RATE  $532,778 / 0.27
+..........................................................................................................................................................................
+PREMIUM  $1,438                                                   FORM  WC 00 00 01 A 07 23
+..........................................................................................................................................................................
 
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-068-01,Rating worksheet,Reviewed,Policy audit
-REF-068-02,Producer correspondence,Pending,Producer copy
-REF-068-03,State exception,Indexed,State form
-REF-068-04,Form filing note,Archive,Rating file
-REF-068-05,Policy jacket notices and state exceptions,Reviewed,Policy audit
-REF-068-06,Prior policy comparison,Pending,Producer copy
-REF-068-07,Rating worksheet,Indexed,State form
-REF-068-08,Producer correspondence,Archive,Rating file
-REF-068-09,State exception,Reviewed,Policy audit
-REF-068-10,Form filing note,Pending,Producer copy
-REF-068-11,Policy jacket notices and state exceptions,Indexed,State form
-REF-068-12,Prior policy comparison,Archive,Rating file
-REF-068-13,Rating worksheet,Reviewed,Policy audit
-REF-068-14,Producer correspondence,Pending,Producer copy
-REF-068-15,State exception,Indexed,State form
-REF-068-16,Form filing note,Archive,Rating file
-REF-068-17,Policy jacket notices and state exceptions,Reviewed,Policy audit
-REF-068-18,Prior policy comparison,Pending,Producer copy
-REF-068-19,Rating worksheet,Indexed,State form
-REF-068-20,Producer correspondence,Archive,Rating file
-REF-068-21,State exception,Reviewed,Policy audit
-REF-068-22,Form filing note,Pending,Producer copy
-REF-068-23,Policy jacket notices and state exceptions,Indexed,State form
-REF-068-24,Prior policy comparison,Archive,Rating file
-REF-068-25,Rating worksheet,Reviewed,Policy audit
-REF-068-26,Producer correspondence,Pending,Producer copy
-REF-068-27,State exception,Indexed,State form
-REF-068-28,Form filing note,Archive,Rating file
-REF-068-29,Policy jacket notices and state exceptions,Reviewed,Policy audit
-REF-068-30,Prior policy comparison,Pending,Producer copy
+1. Classification And Rating Reference                           A factor less than unity reflects favorable historical loss performance, yielding a
+                                                                 premium credit.
+This form applies to Outside salespersons in MA, class 8742, at Location 3.
+                                                                 3. The modification factor applies to the contract as a whole unless a state-specific
+The information page shows estimated remuneration of $532,778, manual rate 0.27,   endorsement dictates intrastate application.
+experience modification 1.04, and estimated premium $1,438.
+                                                                 If the rating bureau revises the modification factor during the term, the premium will
+Form WC 00 00 01 A edition 07 23 supplies the applicable policy terms for this   be adjusted retroactively to the effective date of the revision.
+classification.
+                                                                 Changes in ownership, corporate structure, or combinability status must be reported
+2. The experience modification factor adjusts the manual premium based on the    within ninety days to determine the impact on the experience rating.
+historical loss record of the enterprise.
+                                                                 Failure to report ownership changes may result in the application of a penalty
+This factor is calculated by an authorized rating bureau using payroll and loss data  modifier or the forfeiture of a favorable experience credit.
+from the designated experience period.
+                                                                 4. The employer cannot opt out of the experience rating plan if the enterprise meets
+An experience modification factor greater than unity indicates higher-than-average  the minimum premium eligibility threshold.
+historical losses, resulting in a premium surcharge.
+                                                                 Disputes regarding the statistical data used to calculate the modification factor must
+                                                                 be directed to the authorized rating bureau rather than the carrier.
 
-***
 
-Policy packet                                                                                Page 68
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+WC-ER-1002                                                               Blue Kettle Food Service, LLC | YW700400
 
 # Page 82
 
-POLICY PACKET
-Underwriting Support
+ARGENT BIRCH EMPLOYERS                                         POLICY NUMBER: YW700400
+Workers Compensation and Employers Liability                       EFFECTIVE: 04/01/2026
+                                                                     EXPIRES: 04/01/2027
+________________________________________________________________________________________
 
-POLICY COPY 1F7EA01
+           AMENDATORY ENDORSEMENT - SHORT RATE CANCELLATION TABLE
+________________________________________________________________________________________
 
-Policy jacket notices and state exceptions
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
+THIS ENDORSEMENT CHANGES THE POLICY. PLEASE READ IT CAREFULLY.
+________________________________________________________________________________________
 
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-069-01,Producer correspondence,Reviewed,Producer copy
-REF-069-02,State exception,Pending,State form
-REF-069-03,Form filing note,Indexed,Rating file
-REF-069-04,Policy jacket notices and state exceptions,Archive,Policy audit
-REF-069-05,Prior policy comparison,Reviewed,Producer copy
-REF-069-06,Rating worksheet,Pending,State form
-REF-069-07,Producer correspondence,Indexed,Rating file
-REF-069-08,State exception,Archive,Policy audit
-REF-069-09,Form filing note,Reviewed,Producer copy
-REF-069-10,Policy jacket notices and state exceptions,Pending,State form
-REF-069-11,Prior policy comparison,Indexed,Rating file
-REF-069-12,Rating worksheet,Archive,Policy audit
-REF-069-13,Producer correspondence,Reviewed,Producer copy
-REF-069-14,State exception,Pending,State form
-REF-069-15,Form filing note,Indexed,Rating file
-REF-069-16,Policy jacket notices and state exceptions,Archive,Policy audit
-REF-069-17,Prior policy comparison,Reviewed,Producer copy
-REF-069-18,Rating worksheet,Pending,State form
-REF-069-19,Producer correspondence,Indexed,Rating file
-REF-069-20,State exception,Archive,Policy audit
-REF-069-21,Form filing note,Reviewed,Producer copy
-REF-069-22,Policy jacket notices and state exceptions,Pending,State form
-REF-069-23,Prior policy comparison,Indexed,Rating file
-REF-069-24,Rating worksheet,Archive,Policy audit
-REF-069-25,Producer correspondence,Reviewed,Producer copy
-REF-069-26,State exception,Pending,State form
-REF-069-27,Form filing note,Indexed,Rating file
-REF-069-28,Policy jacket notices and state exceptions,Archive,Policy audit
-REF-069-29,Prior policy comparison,Reviewed,Producer copy
-REF-069-30,Rating worksheet,Pending,State form
+STATE / CLASS MA / 5190                                    LOCATION 4
+..............................................................................................................................................................................
+CLASSIFICATION Electrical wiring within buildings          PAYROLL / RATE $545,022 / 4.35
+..............................................................................................................................................................................
+PREMIUM $23,708                                            FORM WC 00 00 00 C 04 21
+..............................................................................................................................................................................
 
-Policy packet
-Page 69
+A. Classification And Rating Reference                      The active period is measured in exact days from the inception date to the requested
+                                                            termination date.
+This form applies to Electrical wiring within buildings in MA, class 5190, at
+Location 4.                                                 A specific multiplier, derived from the authorized short rate table, is then applied to
+                                                            the full annual premium.
+The information page shows estimated remuneration of $545,022, manual rate 4.35,
+experience modification 1.04, and estimated premium $23,708.  This multiplier is always greater than the simple pro-rata fraction, resulting in a
+                                                            higher retained premium for the abbreviated term.
+Form WC 00 00 00 C edition 04 21 supplies the applicable policy terms for this
+classification.                                             C. The difference between the paid premium and the calculated short rate premium
+                                                            represents the final refund due to the employer.
+When the employer requests termination of the contract prior to the expiration date,
+the return premium is calculated using the short rate table.  If the paid premium is insufficient to cover the short rate calculation, the employer
+                                                            will be invoiced for the remaining balance.
+B. The short rate penalty compensates for the upfront administrative costs and
+underwriting expenses incurred during issuance.             The short rate penalty is waived if the enterprise is sold, operations cease entirely, or
+                                                            the contract is rewritten with an affiliated carrier.
+To determine the short rate premium, the full annual premium is first calculated
+based on the actual exposures during the active period.     The state-specific short rate table supersedes the standard table if the jurisdiction
+                                                            mandates a different penalty structure.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+WC-SR-3003                                                           Blue Kettle Food Service, LLC | YW700400
 
 # Page 83
 
-POLICY PACKET                                                                      POLICY COPY 1F7EA01
-Underwriting Support
+ARGENT BIRCH EMPLOYERS                                                 POLICY NUMBER: YW700400
+Workers Compensation and Employers Liability                             EFFECTIVE: 04/01/2026
+                                                                           EXPIRES: 04/01/2027
+__________________________________________________________________________________________________
 
-Policy jacket notices and state exceptions
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
+                       EMPLOYER DUTIES IN THE EVENT OF INJURY
 
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-070-01,State exception,Reviewed,State form
-REF-070-02,Form filing note,Pending,Rating file
-REF-070-03,Policy jacket notices and state exceptions,Indexed,Policy audit
-REF-070-04,Prior policy comparison,Archive,Producer copy
-REF-070-05,Rating worksheet,Reviewed,State form
-REF-070-06,Producer correspondence,Pending,Rating file
-REF-070-07,State exception,Indexed,Policy audit
-REF-070-08,Form filing note,Archive,Producer copy
-REF-070-09,Policy jacket notices and state exceptions,Reviewed,State form
-REF-070-10,Prior policy comparison,Pending,Rating file
-REF-070-11,Rating worksheet,Indexed,Policy audit
-REF-070-12,Producer correspondence,Archive,Producer copy
-REF-070-13,State exception,Reviewed,State form
-REF-070-14,Form filing note,Pending,Rating file
-REF-070-15,Policy jacket notices and state exceptions,Indexed,Policy audit
-REF-070-16,Prior policy comparison,Archive,Producer copy
-REF-070-17,Rating worksheet,Reviewed,State form
-REF-070-18,Producer correspondence,Pending,Rating file
-REF-070-19,State exception,Indexed,Policy audit
-REF-070-20,Form filing note,Archive,Producer copy
-REF-070-21,Policy jacket notices and state exceptions,Reviewed,State form
-REF-070-22,Prior policy comparison,Pending,Rating file
-REF-070-23,Rating worksheet,Indexed,Policy audit
-REF-070-24,Producer correspondence,Archive,Producer copy
-REF-070-25,State exception,Reviewed,State form
-REF-070-26,Form filing note,Pending,Rating file
-REF-070-27,Policy jacket notices and state exceptions,Indexed,Policy audit
-REF-070-28,Prior policy comparison,Archive,Producer copy
-REF-070-29,Rating worksheet,Reviewed,State form
-REF-070-30,Producer correspondence,Pending,Rating file
+__________________________________________________________________________________________________
+THIS FORM IS PART OF THE POLICY AND MUST BE READ WITH THE DECLARATIONS AND ENDORSEMENTS.
+__________________________________________________________________________________________________
 
-Policy packet                                                                                  Page 70
+STATE / CLASS RI / 9082                                  LOCATION 5
+..................................................................................................................................................................................
+CLASSIFICATION Restaurant NOC                            PAYROLL / RATE $556,426 / 0.74
+..................................................................................................................................................................................
+PREMIUM $4,117                                           FORM WC 00 00 00 C 07 23
+..................................................................................................................................................................................
+
+Classification And Rating Reference                      The employer must forward all legal notices, demands, or administrative
+This form applies to Restaurant NOC in RI, class 9082,  correspondence related to the injury immediately upon receipt.
+at Location 5.
+                                                         Full cooperation is required during the investigation, settlement negotiations, and
+The information page shows estimated remuneration        any subsequent administrative hearings.
+of $556,426, manual rate 0.74, experience modification
+1.04, and estimated premium $4,117.                      The employer must not voluntarily assume any liability, make unauthorized
+                                                         payments, or incur expenses without our prior written consent.
+Form WC 00 00 00 C edition 07 23 supplies the applicable
+policy terms for this classification.                    Interference with our subrogation rights or investigation processes constitutes a
+                                                         material breach of the contract conditions.
+Upon the occurrence of an occupational injury or
+disease, the employer must provide immediate medical     The employer must facilitate interviews with witnesses, supervisors, and the injured
+attention to the affected worker.                        worker to establish the facts of the incident.
+
+The employer must notify us or our authorized            Failure to report injuries within the statutory timeframe may result in administrative
+representative as soon as practicable following any      fines, which are the sole responsibility of the employer.
+incident that may result in a claim.
+                                                         We reserve the right to inspect the premises where the injury occurred to determine
+Written reports detailing the time, place,               causation and assess future risk mitigation.
+circumstances, and identities of involved parties
+must be submitted promptly.
+
+
+
+
+
+
+
+
+
+
+
+
+WC-ED-1004                                                             Blue Kettle Food Service, LLC | YW700400
 
 # Page 84
 
-POLICY PACKET
-                                                                                   POLICY COPY 1F7EA01
+ARGENT BIRCH EMPLOYERS                                         POLICY NUMBER: YW700400
+Workers Compensation and Employers Liability                     EFFECTIVE: 04/01/2026
+                                                                  EXPIRES: 04/01/2027
+______________________________________________________________________________________
 
-Underwriting Support
+                       FRAUD WARNING AND PENALTY NOTICE
+______________________________________________________________________________________
 
-Policy jacket notices and state exceptions
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
+POLICYHOLDER NOTICE - INFORMATION ABOUT YOUR POLICY
+______________________________________________________________________________________
 
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-071-01,Form filing note,Reviewed,Rating file
-REF-071-02,Policy jacket notices and state exceptions,Pending,Policy audit
-REF-071-03,Prior policy comparison,Indexed,Producer copy
-REF-071-04,Rating worksheet,Archive,State form
-REF-071-05,Producer correspondence,Reviewed,Rating file
-REF-071-06,State exception,Pending,Policy audit
-REF-071-07,Form filing note,Indexed,Producer copy
-REF-071-08,Policy jacket notices and state exceptions,Archive,State form
-REF-071-09,Prior policy comparison,Reviewed,Rating file
-REF-071-10,Rating worksheet,Pending,Policy audit
-REF-071-11,Producer correspondence,Indexed,Producer copy
-REF-071-12,State exception,Archive,State form
-REF-071-13,Form filing note,Reviewed,Rating file
-REF-071-14,Policy jacket notices and state exceptions,Pending,Policy audit
-REF-071-15,Prior policy comparison,Indexed,Producer copy
-REF-071-16,Rating worksheet,Archive,State form
-REF-071-17,Producer correspondence,Reviewed,Rating file
-REF-071-18,State exception,Pending,Policy audit
-REF-071-19,Form filing note,Indexed,Producer copy
-REF-071-20,Policy jacket notices and state exceptions,Archive,State form
-REF-071-21,Prior policy comparison,Reviewed,Rating file
-REF-071-22,Rating worksheet,Pending,Policy audit
-REF-071-23,Producer correspondence,Indexed,Producer copy
-REF-071-24,State exception,Archive,State form
-REF-071-25,Form filing note,Reviewed,Rating file
-REF-071-26,Policy jacket notices and state exceptions,Pending,Policy audit
-REF-071-27,Prior policy comparison,Indexed,Producer copy
-REF-071-28,Rating worksheet,Archive,State form
-REF-071-29,Producer correspondence,Reviewed,Rating file
-REF-071-30,State exception,Pending,Policy audit
 
-Policy packet                                                                                  Page 71
+         To the policyholder:
+
+         1. Misrepresenting payroll, misclassifying employees, or concealing operations to obtain a lower premium is a severe violation of law.
+
+         Any person who knowingly submits false information on an application, audit ledger, or claim form may be subject to criminal prosecution.
+
+         Regulatory authorities actively investigate suspected fraud and may impose substantial fines, restitution orders, and imprisonment.
+
+         We utilize advanced data analytics and field investigations to detect discrepancies in reported remuneration and operational descriptions.
+
+         2. If premium fraud is discovered, we will pursue immediate cancellation of the contract and report the findings to the state fraud bureau.
+
+         Employers who encourage or assist workers in filing exaggerated or fabricated injury reports will face civil liability and loss of coverage.
+
+         Workers who collect benefits while simultaneously earning unreported income from other sources are committing benefit fraud.
+
+         We encourage anyone with knowledge of fraudulent activities related to this contract to contact our anonymous reporting hotline.
+
+         This notice is informational. Coverage is governed by the policy forms and endorsements issued with the declarations.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+WC-FW-2001                                                Blue Kettle Food Service, LLC | YW700400
 
 # Page 85
 
-POLICY PACKET                                                                      [POLICY COPY 1F7EA01]
+ARGENT BIRCH EMPLOYERS                                                 POLICY NUMBER: YW700400
+Workers Compensation and Employers Liability                             EFFECTIVE: 04/01/2026
+                                                                          EXPIRES: 04/01/2027
+____________________________________________________________________________________________________
 
-Underwriting Support
+                     EXECUTIVE OFFICER AND MEMBER INCLUSION RULES
+____________________________________________________________________________________________________
 
-Policy jacket notices and state exceptions
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
+THIS FORM IS PART OF THE POLICY AND MUST BE READ WITH THE DECLARATIONS AND ENDORSEMENTS.
+____________________________________________________________________________________________________
 
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-072-01,Policy jacket notices and state exceptions,Reviewed,Policy audit
-REF-072-02,Prior policy comparison,Pending,Producer copy
-REF-072-03,Rating worksheet,Indexed,State form
-REF-072-04,Producer correspondence,Archive,Rating file
-REF-072-05,State exception,Reviewed,Policy audit
-REF-072-06,Form filing note,Pending,Producer copy
-REF-072-07,Policy jacket notices and state exceptions,Indexed,State form
-REF-072-08,Prior policy comparison,Archive,Rating file
-REF-072-09,Rating worksheet,Reviewed,Policy audit
-REF-072-10,Producer correspondence,Pending,Producer copy
-REF-072-11,State exception,Indexed,State form
-REF-072-12,Form filing note,Archive,Rating file
-REF-072-13,Policy jacket notices and state exceptions,Reviewed,Policy audit
-REF-072-14,Prior policy comparison,Pending,Producer copy
-REF-072-15,Rating worksheet,Indexed,State form
-REF-072-16,Producer correspondence,Archive,Rating file
-REF-072-17,State exception,Reviewed,Policy audit
-REF-072-18,Form filing note,Pending,Producer copy
-REF-072-19,Policy jacket notices and state exceptions,Indexed,State form
-REF-072-20,Prior policy comparison,Archive,Rating file
-REF-072-21,Rating worksheet,Reviewed,Policy audit
-REF-072-22,Producer correspondence,Pending,Producer copy
-REF-072-23,State exception,Indexed,State form
-REF-072-24,Form filing note,Archive,Rating file
-REF-072-25,Policy jacket notices and state exceptions,Reviewed,Policy audit
-REF-072-26,Prior policy comparison,Pending,Producer copy
-REF-072-27,Rating worksheet,Indexed,State form
-REF-072-28,Producer correspondence,Archive,Rating file
-REF-072-29,State exception,Reviewed,Policy audit
-REF-072-30,Form filing note,Pending,Producer copy
+STATE / CLASS NH / 9015                                     LOCATION 2
+........................................................................................................................................................................
+CLASSIFICATION Building operations by owner                 PAYROLL / RATE $572,285 / 0.18
+........................................................................................................................................................................
+PREMIUM $1,030                                              FORM WC 04 03 06 07 23
+........................................................................................................................................................................
 
-Policy packet                                                                                    Page 72
+A. Classification And Rating Reference                      The exclusion becomes effective only upon our receipt and acknowledgment of the
+                                                            approved regulatory rejection form.
+This form applies to Building operations by owner in NH, 
+class 9015, at Location 2.                                  When an officer or member is included, their remuneration is subject to minimum
+                                                            and maximum payroll caps for premium computation purposes.
+The information page shows estimated remuneration of 
+$572,285, manual rate 0.18, experience modification 1.04,   These payroll caps are established by the authorized rating bureau and are updated
+and estimated premium $1,030.                               annually based on statewide average wage data.
+
+Form WC 04 03 06 edition 07 23 supplies the applicable      C. The employer must clearly identify all active officers and members in the payroll
+policy terms for this classification.                      ledgers to ensure accurate application of the caps.
+
+Executive officers of a corporation are generally           Officers who perform duties outside of executive management may be assigned to
+included in the coverage provisions unless explicitly       the classification corresponding to their actual operations.
+exempted by state statute or endorsement.
+                                                            The inclusion or exclusion status of an individual remains in effect for subsequent
+B. Members of a limited liability company may be            renewal terms unless a written revocation is submitted.
+treated as partners, sole proprietors, or executive
+officers depending on the jurisdiction.                     We bear no liability for injuries sustained by individuals who have properly executed
+                                                            and filed a valid rejection of coverage.
+To exclude an otherwise included officer or member, a
+formal rejection notice must be filed with the 
+appropriate state regulatory authority.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+WC-EO-1006                                                               Blue Kettle Food Service, LLC | YW700400
 
 # Page 86
 
-POLICY PACKET
-Underwriting Support
+ARGENT BIRCH EMPLOYERS                                                 POLICY NUMBER: YW700400
+Workers Compensation and Employers Liability                             EFFECTIVE: 04/01/2026
+                                                                           EXPIRES: 04/01/2027
+____________________________________________________________________________________________________
 
-[ POLICY COPY 1F7EA01 ]
+                         DIVIDEND PLAN PARTICIPATION CONDITIONS
+____________________________________________________________________________________________________
 
----
+PREMIUM, AUDIT, AND ACCOUNTING CONDITIONS
+____________________________________________________________________________________________________
+|                                                                    |                              |
+| Named insured                                                      | Policy term                  |
+| Blue Kettle Food Service, LLC                                      | 04/01/2026 - 04/01/2027      |
+|____________________________________________________________________|______________________________|
+|                                                                    |                              |
+| Scheduled premium                                                  | Audit basis                  |
+| $6,722                                                             | Payroll per $100 remuneration |
+|____________________________________________________________________|______________________________|
 
-**Policy jacket notices and state exceptions**
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
+Classification And Rating Reference
 
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-073-01,Prior policy comparison,Reviewed,Producer copy
-REF-073-02,Rating worksheet,Pending,State form
-REF-073-03,Producer correspondence,Indexed,Rating file
-REF-073-04,State exception,Archive,Policy audit
-REF-073-05,Form filing note,Reviewed,Producer copy
-REF-073-06,Policy jacket notices and state exceptions,Pending,State form
-REF-073-07,Prior policy comparison,Indexed,Rating file
-REF-073-08,Rating worksheet,Archive,Policy audit
-REF-073-09,Producer correspondence,Reviewed,Producer copy
-REF-073-10,State exception,Pending,State form
-REF-073-11,Form filing note,Indexed,Rating file
-REF-073-12,Policy jacket notices and state exceptions,Archive,Policy audit
-REF-073-13,Prior policy comparison,Reviewed,Producer copy
-REF-073-14,Rating worksheet,Pending,State form
-REF-073-15,Producer correspondence,Indexed,Rating file
-REF-073-16,State exception,Archive,Policy audit
-REF-073-17,Form filing note,Reviewed,Producer copy
-REF-073-18,Policy jacket notices and state exceptions,Pending,State form
-REF-073-19,Prior policy comparison,Indexed,Rating file
-REF-073-20,Rating worksheet,Archive,Policy audit
-REF-073-21,Producer correspondence,Reviewed,Producer copy
-REF-073-22,State exception,Pending,State form
-REF-073-23,Form filing note,Indexed,Rating file
-REF-073-24,Policy jacket notices and state exceptions,Archive,Policy audit
-REF-073-25,Prior policy comparison,Reviewed,Producer copy
-REF-073-26,Rating worksheet,Pending,State form
-REF-073-27,Producer correspondence,Indexed,Rating file
-REF-073-28,State exception,Archive,Policy audit
-REF-073-29,Form filing note,Reviewed,Producer copy
-REF-073-30,Policy jacket notices and state exceptions,Pending,State form
+This form applies to Contractor executive supervisor in VT, class 5606, at Location
+3.
 
-Policy packet
-Page 73
+The information page shows estimated remuneration of $584,565, manual rate 1.15,
+experience modification 1.04, and estimated premium $6,722.
+
+Form WC 00 03 13 edition 04 21 supplies the applicable policy terms for this
+classification.
+
+The enterprise has been enrolled in a participating dividend plan, which offers the
+potential for a return of premium based on favorable loss experience.
+
+Dividends are not guaranteed and are declared solely at the discretion of the
+corporate board of directors following the close of the financial year.
+
+The calculation of any potential dividend relies on the ratio of incurred losses to the
+final audited premium of the enterprise.
+
+Incurred losses include all paid benefits, established reserves for open claims, and
+allocated loss adjustment expenses.
+
+The evaluation of losses for dividend purposes occurs six months after the expiration
+of the contract to allow for claim maturation.
+
+If the enterprise cancels the contract prior to the expiration date, all eligibility for
+dividend participation is immediately forfeited.
+
+The enterprise must comply with all audit requests and have no outstanding
+premium balances to receive a declared dividend.
+
+Any declared dividend will be applied as a credit against the premium of the renewal
+contract before a cash disbursement is considered.
+
+The dividend plan parameters, including the retention factors and maximum payout
+percentages, are filed with the state regulatory authority.
+
+Modifications to the dividend plan structure will only apply to future policy terms
+and will not affect the current evaluation period.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+WC-DP-4003                                                         Blue Kettle Food Service, LLC | YW700400
 
 # Page 87
 
-POLICY PACKET
-POLICY COPY 1F7EA01
+ARGENT BIRCH EMPLOYERS                                         POLICY NUMBER: YW700400
+Workers Compensation and Employers Liability                     EFFECTIVE: 04/01/2026
+                                                                  EXPIRES: 04/01/2027
+______________________________________________________________________________________
 
-# Underwriting Support
+          LONGSHORE AND HARBOR WORKERS EXTENSION CRITERIA
+______________________________________________________________________________________
 
-### Policy jacket notices and state exceptions
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
+THIS FORM IS PART OF THE POLICY AND MUST BE READ WITH THE DECLARATIONS AND ENDORSEMENTS.
+______________________________________________________________________________________
 
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-074-01,Rating worksheet,Reviewed,State form
-REF-074-02,Producer correspondence,Pending,Rating file
-REF-074-03,State exception,Indexed,Policy audit
-REF-074-04,Form filing note,Archive,Producer copy
-REF-074-05,Policy jacket notices and state exceptions,Reviewed,State form
-REF-074-06,Prior policy comparison,Pending,Rating file
-REF-074-07,Rating worksheet,Indexed,Policy audit
-REF-074-08,Producer correspondence,Archive,Producer copy
-REF-074-09,State exception,Reviewed,State form
-REF-074-10,Form filing note,Pending,Rating file
-REF-074-11,Policy jacket notices and state exceptions,Indexed,Policy audit
-REF-074-12,Prior policy comparison,Archive,Producer copy
-REF-074-13,Rating worksheet,Reviewed,State form
-REF-074-14,Producer correspondence,Pending,Rating file
-REF-074-15,State exception,Indexed,Policy audit
-REF-074-16,Form filing note,Archive,Producer copy
-REF-074-17,Policy jacket notices and state exceptions,Reviewed,State form
-REF-074-18,Prior policy comparison,Pending,Rating file
-REF-074-19,Rating worksheet,Indexed,Policy audit
-REF-074-20,Producer correspondence,Archive,Producer copy
-REF-074-21,State exception,Reviewed,State form
-REF-074-22,Form filing note,Pending,Rating file
-REF-074-23,Policy jacket notices and state exceptions,Indexed,Policy audit
-REF-074-24,Prior policy comparison,Archive,Producer copy
-REF-074-25,Rating worksheet,Reviewed,State form
-REF-074-26,Producer correspondence,Pending,Rating file
-REF-074-27,State exception,Indexed,Policy audit
-REF-074-28,Form filing note,Archive,Producer copy
-REF-074-29,Policy jacket notices and state exceptions,Reviewed,State form
-REF-074-30,Prior policy comparison,Pending,Rating file
+STATE / CLASS  CT / 8810                                LOCATION  4
+......................................................................................
+CLASSIFICATION  Clerical office employees               PAYROLL / RATE  $594,857 / 0.42
+......................................................................................
+PREMIUM  $2,498                                         FORM  WC 00 03 13 01 15
+......................................................................................
 
-Policy packet
-Page 74
+1. Classification And Rating Reference                  When the extension is attached, the remuneration associated with the maritime
+                                                        operations must be segregated in the payroll ledgers.
+This form applies to Clerical office employees in CT,
+class 8810, at Location 4.                              3. Maritime remuneration is subject to distinct manual rates and rating
+The information page shows estimated remuneration of    methodologies established by the federal oversight agency.
+$594,857, manual rate 0.42, experience modification     The employer must comply with all federal reporting requirements and safety
+1.04, and estimated premium $2,498.                     regulations mandated by the maritime statutes.
+
+Form WC 00 03 13 edition 01 15 supplies the             Failure to secure the necessary federal extension when required may expose the
+applicable policy terms for this classification.        enterprise to severe statutory penalties and uninsured liabilities.
+
+2. Operations conducted on or near navigable waters     We reserve the right to audit the proximity of operations to navigable waters to
+may fall under federal maritime jurisdiction,           determine the potential for incidental maritime exposure.
+requiring specialized benefit provisions.
+                                                        4. Incidental maritime exposure discovered during the final audit will be rated
+This contract does not automatically encompass          retroactively using the applicable federal classification codes.
+federal maritime exposures unless specifically
+designated on the administrative schedules.             The defense and settlement provisions of this contract apply equally to claims
+                                                        adjudicated under the federal maritime administrative system.
+If the enterprise engages in loading, unloading,
+repairing, or building vessels, the employer must
+request the appropriate federal extension.
+
+
+
+
+
+
+
+
+
+
+
+
+
+WC-LH-1008                                              Blue Kettle Food Service, LLC | YW700400
 
 # Page 88
 
-POLICY PACKET                                                                              POLICY COPY 1F7EA01
-Underwriting Support
+ARGENT BIRCH EMPLOYERS
+Workers Compensation and Employers Liability
+POLICY NUMBER: YW700400
+EFFECTIVE: 04/01/2026
+EXPIRES: 04/01/2027
 
-Policy jacket notices and state exceptions
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
+----------------------------------------------------------------------------------------------------------------------------------
+                                      INFORMATION PAGE CONFIGURATION
+----------------------------------------------------------------------------------------------------------------------------------
+THIS FORM IS PART OF THE POLICY AND MUST BE READ WITH THE DECLARATIONS AND ENDORSEMENTS.
+----------------------------------------------------------------------------------------------------------------------------------
 
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-075-01,Producer correspondence,Reviewed,Rating file
-REF-075-02,State exception,Pending,Policy audit
-REF-075-03,Form filing note,Indexed,Producer copy
-REF-075-04,Policy jacket notices and state exceptions,Archive,State form
-REF-075-05,Prior policy comparison,Reviewed,Rating file
-REF-075-06,Rating worksheet,Pending,Policy audit
-REF-075-07,Producer correspondence,Indexed,Producer copy
-REF-075-08,State exception,Archive,State form
-REF-075-09,Form filing note,Reviewed,Rating file
-REF-075-10,Policy jacket notices and state exceptions,Pending,Policy audit
-REF-075-11,Prior policy comparison,Indexed,Producer copy
-REF-075-12,Rating worksheet,Archive,State form
-REF-075-13,Producer correspondence,Reviewed,Rating file
-REF-075-14,State exception,Pending,Policy audit
-REF-075-15,Form filing note,Indexed,Producer copy
-REF-075-16,Policy jacket notices and state exceptions,Archive,State form
-REF-075-17,Prior policy comparison,Reviewed,Rating file
-REF-075-18,Rating worksheet,Pending,Policy audit
-REF-075-19,Producer correspondence,Indexed,Producer copy
-REF-075-20,State exception,Archive,State form
-REF-075-21,Form filing note,Reviewed,Rating file
-REF-075-22,Policy jacket notices and state exceptions,Pending,Policy audit
-REF-075-23,Prior policy comparison,Indexed,Producer copy
-REF-075-24,Rating worksheet,Archive,State form
-REF-075-25,Producer correspondence,Reviewed,Rating file
-REF-075-26,State exception,Pending,Policy audit
-REF-075-27,Form filing note,Indexed,Producer copy
-REF-075-28,Policy jacket notices and state exceptions,Archive,State form
-REF-075-29,Prior policy comparison,Reviewed,Rating file
-REF-075-30,Rating worksheet,Pending,Policy audit
+EFFECTIVE DATE  01/01/2026                                            CHANGE CLASSIFICATION  Administrative
+------------------------------------------------------------------    ------------------------------------------------------------
+STATE / CLASS  CT / 8810                                              LOCATION  1
+------------------------------------------------------------------    ------------------------------------------------------------
+PAYROLL / RATE  $45,136 / 0.42                                        FORM  WC 00 00 01 A 07 23
+------------------------------------------------------------------    ------------------------------------------------------------
 
-Policy packet                                                                                             Page 75
+1. Classification And Rating Reference                                Item 3 details the specific state laws under which the coverage applies, categorized
+                                                                      by primary operations and potential incidental exposures.
+This form applies to Clerical office employees in CT, class 8810, at Location 1.
+                                                                      3. Item 4 contains the classification schedule, detailing the assigned codes,
+The information page shows estimated remuneration of $45,136, manual rate 0.42,       descriptive operational categories, and estimated remuneration.
+experience modification 1.04, and estimated premium $189.
+                                                                      The manual rates, experience modification factor, and any applicable schedule rating
+Form WC 00 00 01 A edition 07 23 supplies the applicable policy terms for this   adjustments are also displayed within Item 4.
+classification.
+                                                                      The estimated annual premium shown is derived directly from the mathematical
+2. The information page establishes the foundational parameters of the issued   application of the rates to the estimated remuneration.
+contract and serves as the primary administrative reference.
+                                                                      Item 5 lists all forms, notices, and endorsements attached to the contract at the time
+Item 1 identifies the employer, the legal entity structure, and the primary mailing   of issuance.
+address for all official correspondence.
+                                                                      4. The information page may be reissued during the term to reflect changes in
+Item 2 defines the precise policy period, beginning and ending at the standard time   address, entity structure, or the addition of new operational states.
+at the primary mailing address.
+                                                                      Any discrepancies found on the information page must be reported immediately to
+                                                                      ensure the contract accurately reflects the intended parameters.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+WC 00 00 01 A                                                                           Blue Kettle Food Service, LLC | YW700400
 
 # Page 89
 
-POLICY PACKET                                                             [ POLICY COPY 1F7EA01 ]
-Underwriting Support
+ARGENT BIRCH EMPLOYERS                                                 POLICY NUMBER: YW700400
+Workers Compensation and Employers Liability                            EFFECTIVE: 04/01/2026
+                                                                          EXPIRES: 04/01/2027
+_____________________________________________________________________________________________
 
-Policy jacket notices and state exceptions
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
+                        VOLUNTARY COMPENSATION ENDORSEMENT
 
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-076-01,State exception,Reviewed,Policy audit
-REF-076-02,Form filing note,Pending,Producer copy
-REF-076-03,Policy jacket notices and state exceptions,Indexed,State form
-REF-076-04,Prior policy comparison,Archive,Rating file
-REF-076-05,Rating worksheet,Reviewed,Policy audit
-REF-076-06,Producer correspondence,Pending,Producer copy
-REF-076-07,State exception,Indexed,State form
-REF-076-08,Form filing note,Archive,Rating file
-REF-076-09,Policy jacket notices and state exceptions,Reviewed,Policy audit
-REF-076-10,Prior policy comparison,Pending,Producer copy
-REF-076-11,Rating worksheet,Indexed,State form
-REF-076-12,Producer correspondence,Archive,Rating file
-REF-076-13,State exception,Reviewed,Policy audit
-REF-076-14,Form filing note,Pending,Producer copy
-REF-076-15,Policy jacket notices and state exceptions,Indexed,State form
-REF-076-16,Prior policy comparison,Archive,Rating file
-REF-076-17,Rating worksheet,Reviewed,Policy audit
-REF-076-18,Producer correspondence,Pending,Producer copy
-REF-076-19,State exception,Indexed,State form
-REF-076-20,Form filing note,Archive,Rating file
-REF-076-21,Policy jacket notices and state exceptions,Reviewed,Policy audit
-REF-076-22,Prior policy comparison,Pending,Producer copy
-REF-076-23,Rating worksheet,Indexed,State form
-REF-076-24,Producer correspondence,Archive,Rating file
-REF-076-25,State exception,Reviewed,Policy audit
-REF-076-26,Form filing note,Pending,Producer copy
-REF-076-27,Policy jacket notices and state exceptions,Indexed,State form
-REF-076-28,Prior policy comparison,Archive,Rating file
-REF-076-29,Rating worksheet,Reviewed,Policy audit
-REF-076-30,Producer correspondence,Pending,Producer copy
+_____________________________________________________________________________________________
+THIS FORM IS PART OF THE POLICY AND MUST BE READ WITH THE DECLARATIONS AND ENDORSEMENTS.
+_____________________________________________________________________________________________
 
-Policy packet                                                                             Page 76
+EFFECTIVE DATE 02/01/2026                                CHANGE CLASSIFICATION No Material Change
+..................................................................................................................................................................................
+STATE / CLASS CT / 8017                                  LOCATION 2
+..................................................................................................................................................................................
+PAYROLL / RATE $54,124 / 0.74                             FORM WC 00 00 00 C 01 15
+..................................................................................................................................................................................
+
+A. Classification And Rating Reference                   The injured worker must agree to accept these voluntary benefits and execute a full
+                                                         release of liability against the enterprise.
+This form applies to Retail store - all employees in CT,
+class 8017, at Location 2.                              If the worker refuses the voluntary benefits and elects to pursue a civil lawsuit, our
+                                                         obligation to provide the voluntary compensation ceases immediately.
+The information page shows estimated remuneration of
+$54,124, manual rate 0.74, experience modification       In the event of a civil lawsuit, the employers liability provisions of the contract will
+1.04, and estimated premium $400.                       respond subject to the established limits.
+
+Form WC 00 00 00 C edition 01 15 supplies the            C. The remuneration of the designated exempt workers must be included in the
+applicable policy terms for this classification.        payroll ledgers and is subject to premium calculation.
+
+This endorsement expands the scope of the contract       The classification code assigned to the exempt workers will mirror the code that
+to offer benefits to specific workers who are not        would apply if they were statutory employees.
+mandated to be covered under the statutory
+framework.                                               We retain the right to withdraw the voluntary offer of benefits if the worker fails to
+                                                         cooperate with medical evaluations or settlement procedures.
+B. The employer must designate the specific group
+of exempt workers and the state whose benefit            This voluntary arrangement does not alter the statutory status of the workers or
+structure will be utilized for compensation.             subject the enterprise to the jurisdiction of the workers compensation board.
+
+When an injury occurs to a designated exempt worker,
+we will offer the equivalent medical and wage replacement
+benefits as if they were subject to the statute.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+WC 00 00 00 C                                                       Blue Kettle Food Service, LLC | YW700400of
+
 
 # Page 90
 
-POLICY PACKET                                                                     [POLICY COPY 1F7EA01]
+ARGENT BIRCH EMPLOYERS                                                 POLICY NUMBER: YW700400
+Workers Compensation and Employers Liability                             EFFECTIVE: 04/01/2026
+                                                                            EXPIRES: 04/01/2027
+___________________________________________________________________________________________________
 
-Underwriting Support
+          WORKERS COMPENSATION AND EMPLOYERS LIABILITY POLICY
+___________________________________________________________________________________________________
 
-Policy jacket notices and state exceptions
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
+THIS FORM IS PART OF THE POLICY AND MUST BE READ WITH THE DECLARATIONS AND ENDORSEMENTS.
+___________________________________________________________________________________________________
 
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-077-01,Form filing note,Reviewed,Producer copy
-REF-077-02,Policy jacket notices and state exceptions,Pending,State form
-REF-077-03,Prior policy comparison,Indexed,Rating file
-REF-077-04,Rating worksheet,Archive,Policy audit
-REF-077-05,Producer correspondence,Reviewed,Producer copy
-REF-077-06,State exception,Pending,State form
-REF-077-07,Form filing note,Indexed,Rating file
-REF-077-08,Policy jacket notices and state exceptions,Archive,Policy audit
-REF-077-09,Prior policy comparison,Reviewed,Producer copy
-REF-077-10,Rating worksheet,Pending,State form
-REF-077-11,Producer correspondence,Indexed,Rating file
-REF-077-12,State exception,Archive,Policy audit
-REF-077-13,Form filing note,Reviewed,Producer copy
-REF-077-14,Policy jacket notices and state exceptions,Pending,State form
-REF-077-15,Prior policy comparison,Indexed,Rating file
-REF-077-16,Rating worksheet,Archive,Policy audit
-REF-077-17,Producer correspondence,Reviewed,Producer copy
-REF-077-18,State exception,Pending,State form
-REF-077-19,Form filing note,Indexed,Rating file
-REF-077-20,Policy jacket notices and state exceptions,Archive,Policy audit
-REF-077-21,Prior policy comparison,Reviewed,Producer copy
-REF-077-22,Rating worksheet,Pending,State form
-REF-077-23,Producer correspondence,Indexed,Rating file
-REF-077-24,State exception,Archive,Policy audit
-REF-077-25,Form filing note,Reviewed,Producer copy
-REF-077-26,Policy jacket notices and state exceptions,Pending,State form
-REF-077-27,Prior policy comparison,Indexed,Rating file
-REF-077-28,Rating worksheet,Archive,Policy audit
-REF-077-29,Producer correspondence,Reviewed,Producer copy
-REF-077-30,State exception,Pending,State form
+EFFECTIVE DATE 03/01/2026                            CHANGE CLASSIFICATION No Material Change
+..........................................................................................................................................................................
+STATE / CLASS MA / 8742                              LOCATION 3
+..........................................................................................................................................................................
+PAYROLL / RATE $70,826 / 0.18                        FORM WC 00 00 00 C 01 15
+..........................................................................................................................................................................
 
-Policy packet                                                                                  Page 77
+Classification And Rating Reference                  EMPLOYEES FOR WORK-RELATED INJURIES NOT COVERED BY THE
+                                                     STATUTE.
+This form applies to Outside salespersons in MA,
+class 8742, at Location 3.                           Under Part Two, specific monetary limits apply to bodily injury by accident and
+                                                     bodily injury by disease, as selected during the application process.
+The information page shows estimated remuneration
+of $70,826, manual rate 0.18, experience             The employers liability protection includes the cost of legal defense, which is
+modification 1.04, and estimated premium $127.       provided in addition to the stated limits of liability.
+
+Form WC 00 00 00 C edition 01 15 supplies the        Exclusions under Part Two include intentional aggravation of an injury, employment
+applicable policy terms for this classification.     practices liability, and obligations assumed under a separate contract.
+
+This document constitutes the primary agreement      The provisions of this agreement apply only to injuries that occur during the active
+between the enterprise and the carrier, detailing    policy period and arise out of the operations of the enterprise.
+the dual nature of the protection provided.
+                                                     The enterprise must comply with all terms, conditions, and reporting requirements
+PART ONE ADDRESSES THE STATUTORY OBLIGATIONS OF THE  outlined herein to maintain the integrity of the protection.
+ENTERPRISE, GUARANTEEING THE DELIVERY OF MANDATED
+MEDICAL AND INDEMNITY BENEFITS TO INJURED WORKERS.   In the event of a conflict between the provisions of this agreement and the applicable
+                                                     state statute, the statutory requirements will prevail.
+Under Part One, there are no monetary limits of
+liability; benefits are paid strictly in accordance
+with the schedules established by the state
+legislature.
+
+PART TWO ADDRESSES THE EMPLOYERS LIABILITY EXPOSURE,
+PROVIDING PROTECTION AGAINST CIVIL LAWSUITS BROUGHT BY
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+WC 00 00 00 C                                                       Blue Kettle Food Service, LLC | YW700400
 
 # Page 91
 
-POLICY PACKET                                                                    POLICY COPY 1F7EA01
+ARGENT BIRCH EMPLOYERS                                                 POLICY NUMBER: YW700400
+Workers Compensation and Employers Liability                             EFFECTIVE: 04/01/2026
+                                                                           EXPIRES: 04/01/2027
+______________________________________________________________________________________________________
 
-Underwriting Support
+                              WAIVER OF OUR RIGHT TO RECOVER
+______________________________________________________________________________________________________
 
-Policy jacket notices and state exceptions
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
+THIS FORM IS PART OF THE POLICY AND MUST BE READ WITH THE DECLARATIONS AND ENDORSEMENTS.
+______________________________________________________________________________________________________
 
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-078-01,Policy jacket notices and state exceptions,Reviewed,State form
-REF-078-02,Prior policy comparison,Pending,Rating file
-REF-078-03,Rating worksheet,Indexed,Policy audit
-REF-078-04,Producer correspondence,Archive,Producer copy
-REF-078-05,State exception,Reviewed,State form
-REF-078-06,Form filing note,Pending,Rating file
-REF-078-07,Policy jacket notices and state exceptions,Indexed,Policy audit
-REF-078-08,Prior policy comparison,Archive,Producer copy
-REF-078-09,Rating worksheet,Reviewed,State form
-REF-078-10,Producer correspondence,Pending,Rating file
-REF-078-11,State exception,Indexed,Policy audit
-REF-078-12,Form filing note,Archive,Producer copy
-REF-078-13,Policy jacket notices and state exceptions,Reviewed,State form
-REF-078-14,Prior policy comparison,Pending,Rating file
-REF-078-15,Rating worksheet,Indexed,Policy audit
-REF-078-16,Producer correspondence,Archive,Producer copy
-REF-078-17,State exception,Reviewed,State form
-REF-078-18,Form filing note,Pending,Rating file
-REF-078-19,Policy jacket notices and state exceptions,Indexed,Policy audit
-REF-078-20,Prior policy comparison,Archive,Producer copy
-REF-078-21,Rating worksheet,Reviewed,State form
-REF-078-22,Producer correspondence,Pending,Rating file
-REF-078-23,State exception,Indexed,Policy audit
-REF-078-24,Form filing note,Archive,Producer copy
-REF-078-25,Policy jacket notices and state exceptions,Reviewed,State form
-REF-078-26,Prior policy comparison,Pending,Rating file
-REF-078-27,Rating worksheet,Indexed,Policy audit
-REF-078-28,Producer correspondence,Archive,Producer copy
-REF-078-29,State exception,Reviewed,State form
-REF-078-30,Form filing note,Pending,Rating file
+EFFECTIVE DATE  08/01/2026                                CHANGE CLASSIFICATION  Material
+..........................................................................................................................................................................................
+STATE / CLASS  VT / 5606                                  LOCATION  3
+..........................................................................................................................................................................................
+PAYROLL / RATE  $127,460 / 6.22                           FORM  WC 00 00 01 A 04 21
+..........................................................................................................................................................................................
 
-Policy packet                                                                    Page 78
+1. Classification And Rating Reference                      The relinquishment of recovery rights applies exclusively to injuries arising out of
+                                                            the specific project or operations detailed in the written contract.
+This form applies to Contractor executive supervisor in VT,
+class 5606, at Location 3.                                  3. This waiver does not extend to any other third parties involved in the incident who
+                                                            are not explicitly scheduled.
+The information page shows estimated remuneration of
+$127,460, manual rate 6.22, experience modification         The application of this waiver does not reduce or restrict the benefits owed to the
+1.04, and estimated premium $7,928.                         injured worker under the statutory framework.
+
+Form WC 00 00 01 A edition 04 21 supplies the               A specific premium charge is assessed for each scheduled waiver, calculated as a
+applicable policy terms for this classification.            percentage of the manual premium generated by the associated operations.
+
+2. This endorsement modifies the standard subrogation       The enterprise must maintain copies of the written contracts requiring the waiver
+conditions by relinquishing our authority to pursue         and present them during the final premium audit.
+recovery against specific third parties.
+                                                            4. If the written contract is deemed invalid or was executed after the injury occurred,
+The waiver applies only to the individuals or organizations  we retain our full rights of recovery.
+explicitly scheduled on the endorsement attachment.
+                                                            This endorsement does not waive our right to seek recovery for payments made due
+To activate this waiver, the enterprise must have executed   to the gross negligence or intentional misconduct of the scheduled third party.
+a written contract with the scheduled third party requiring
+such a waiver prior to the injury.
+
+
+
+
+
+
+
+
+
+
+
+
+WC 00 00 01 A                                                            Blue Kettle Food Service, LLC | YW700400
 
 # Page 92
 
-POLICY PACKET                                                                              POLICY COPY 1F7EA01
-Underwriting Support
+ARGENT BIRCH EMPLOYERS                                         POLICY NUMBER: YW700400
+Workers Compensation and Employers Liability                     EFFECTIVE: 04/01/2026
+                                                                  EXPIRES: 04/01/2027
+_______________________________________________________________________________________
 
-Policy jacket notices and state exceptions
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
+                    CONTRACTUAL TRANSFER AND ASSIGNMENT RULES
 
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-079-01,Prior policy comparison,Reviewed,Rating file
-REF-079-02,Rating worksheet,Pending,Policy audit
-REF-079-03,Producer correspondence,Indexed,Producer copy
-REF-079-04,State exception,Archive,State form
-REF-079-05,Form filing note,Reviewed,Rating file
-REF-079-06,Policy jacket notices and state exceptions,Pending,Policy audit
-REF-079-07,Prior policy comparison,Indexed,Producer copy
-REF-079-08,Rating worksheet,Archive,State form
-REF-079-09,Producer correspondence,Reviewed,Rating file
-REF-079-10,State exception,Pending,Policy audit
-REF-079-11,Form filing note,Indexed,Producer copy
-REF-079-12,Policy jacket notices and state exceptions,Archive,State form
-REF-079-13,Prior policy comparison,Reviewed,Rating file
-REF-079-14,Rating worksheet,Pending,Policy audit
-REF-079-15,Producer correspondence,Indexed,Producer copy
-REF-079-16,State exception,Archive,State form
-REF-079-17,Form filing note,Reviewed,Rating file
-REF-079-18,Policy jacket notices and state exceptions,Pending,Policy audit
-REF-079-19,Prior policy comparison,Indexed,Producer copy
-REF-079-20,Rating worksheet,Archive,State form
-REF-079-21,Producer correspondence,Reviewed,Rating file
-REF-079-22,State exception,Pending,Policy audit
-REF-079-23,Form filing note,Indexed,Producer copy
-REF-079-24,Policy jacket notices and state exceptions,Archive,State form
-REF-079-25,Prior policy comparison,Reviewed,Rating file
-REF-079-26,Rating worksheet,Pending,Policy audit
-REF-079-27,Producer correspondence,Indexed,Producer copy
-REF-079-28,State exception,Archive,State form
-REF-079-29,Form filing note,Reviewed,Rating file
-REF-079-30,Policy jacket notices and state exceptions,Pending,Policy audit
+_______________________________________________________________________________________
+THIS FORM IS PART OF THE POLICY AND MUST BE READ WITH THE DECLARATIONS AND ENDORSEMENTS.
+_______________________________________________________________________________________
 
-Policy packet                                                                                          Page 79
+STATE / CLASS  CT / 8017                                LOCATION  5
+---------------------------------------------------------------------------------------
+CLASSIFICATION  Retail store - all employees            PAYROLL / RATE  $611,668 / 4.35
+---------------------------------------------------------------------------------------
+PREMIUM  $26,607                                        FORM  WC 04 03 06 07 23
+---------------------------------------------------------------------------------------
+
+A. Classification And Rating Reference                  The employer must notify us at least thirty days prior to any change in ownership or
+                                                        fundamental shift in corporate control.
+This form applies to Retail store - all employees in
+CT, class 8017, at Location 5.                          Upon receiving notice of an ownership change, we will evaluate the new operational
+                                                        risks and determine whether to consent to the assignment.
+The information page shows estimated remuneration of
+$611,668, manual rate 4.35, experience modification     If consent is granted, an amendatory document will be issued detailing the effective
+1.04, and estimated premium $26,607.                    date of the transfer and any revised rating parameters.
+
+Form WC 04 03 06 edition 07 23 supplies the             C. If consent is withheld, the contract will be cancelled in accordance with the
+applicable policy terms for this classification.        standard termination provisions.
+
+The rights and obligations established by this          In the event of the employer's death or bankruptcy, the legal representative or trustee
+contract are unique to the enterprise identified on the  assumes the duties of the employer for the remainder of the term.
+administrative schedules.
+                                                        The legal representative must continue to maintain payroll ledgers, report injuries,
+B. The employer may not transfer, assign, or            and remit premium payments as required.
+delegate any portion of this contract to a third party
+without our explicit written consent.                   Unauthorized assignments are considered void and provide no protection to the
+                                                        unapproved successor entity.
+In the event of a merger, acquisition, or corporate
+restructuring, the surviving entity does not
+automatically inherit the coverage provisions.
+
+
+
+
+
+
+
+
+
+
+
+
+
+WC-CT-1009                                                    Blue Kettle Food Service, LLC | YW700400
 
 # Page 93
 
-POLICY PACKET
-POLICY COPY 1F7EA01
+ARGENT BIRCH EMPLOYERS                                                 POLICY NUMBER: YW700400
+Workers Compensation and Employers Liability                               EFFECTIVE: 04/01/2026
+                                                                            EXPIRES: 04/01/2027
+________________________________________________________________________________________________
 
-# Underwriting Support
 
-### Policy jacket notices and state exceptions
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
+                      PREMIUM AUDIT AND REMUNERATION CONDITIONS
 
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-080-01,Rating worksheet,Reviewed,Policy audit
-REF-080-02,Producer correspondence,Pending,Producer copy
-REF-080-03,State exception,Indexed,State form
-REF-080-04,Form filing note,Archive,Rating file
-REF-080-05,Policy jacket notices and state exceptions,Reviewed,Policy audit
-REF-080-06,Prior policy comparison,Pending,Producer copy
-REF-080-07,Rating worksheet,Indexed,State form
-REF-080-08,Producer correspondence,Archive,Rating file
-REF-080-09,State exception,Reviewed,Policy audit
-REF-080-10,Form filing note,Pending,Producer copy
-REF-080-11,Policy jacket notices and state exceptions,Indexed,State form
-REF-080-12,Prior policy comparison,Archive,Rating file
-REF-080-13,Rating worksheet,Reviewed,Policy audit
-REF-080-14,Producer correspondence,Pending,Producer copy
-REF-080-15,State exception,Indexed,State form
-REF-080-16,Form filing note,Archive,Rating file
-REF-080-17,Policy jacket notices and state exceptions,Reviewed,Policy audit
-REF-080-18,Prior policy comparison,Pending,Producer copy
-REF-080-19,Rating worksheet,Indexed,State form
-REF-080-20,Producer correspondence,Archive,Rating file
-REF-080-21,State exception,Reviewed,Policy audit
-REF-080-22,Form filing note,Pending,Producer copy
-REF-080-23,Policy jacket notices and state exceptions,Indexed,State form
-REF-080-24,Prior policy comparison,Archive,Rating file
-REF-080-25,Rating worksheet,Reviewed,Policy audit
-REF-080-26,Producer correspondence,Pending,Producer copy
-REF-080-27,State exception,Indexed,State form
-REF-080-28,Form filing note,Archive,Rating file
-REF-080-29,Policy jacket notices and state exceptions,Reviewed,Policy audit
-REF-080-30,Prior policy comparison,Pending,Producer copy
+________________________________________________________________________________________________
+THIS FORM IS PART OF THE POLICY AND MUST BE READ WITH THE DECLARATIONS AND ENDORSEMENTS.
+________________________________________________________________________________________________
 
-Policy packet
-Page 80
+STATE / CLASS  MA / 8742                                     LOCATION  1
+....................................................................................................................................................................................
+CLASSIFICATION  Outside salespersons                          PAYROLL / RATE  $622,528 / 0.74
+....................................................................................................................................................................................
+PREMIUM  $4,606                                               FORM  WC 00 03 13 04 21
+....................................................................................................................................................................................
+
+Classification And Rating Reference                             We reserve the authority to inspect these ledgers and related tax filings during
+This form applies to Outside salespersons in MA, class 8742,    normal business hours.
+at Location 1.                                                  
+                                                                This inspection authority extends for up to three years following the expiration date
+The information page shows estimated remuneration of            or cancellation of the contract.
+$622,528, manual rate 0.74, experience modification 1.04,        
+and estimated premium $4,606.                                   If the final computed premium exceeds the initial estimate, the employer must remit
+                                                                the outstanding balance upon receipt of the final invoice.
+Form WC 00 03 13 edition 04 21 supplies the applicable          
+policy terms for this classification.                           If the final computed premium is less than the initial estimate, a refund will be
+                                                                issued, subject to any minimum premium requirements.
+The premium shown on the schedules is an initial estimate       
+based on anticipated remuneration for the upcoming term.        Failure to provide requested ledgers or cooperate with the auditor may result in an
+                                                                estimated final billing.
+At the conclusion of the policy period, a final computation     
+determines the exact premium owed based on actual               Estimated final billings are calculated using a punitive multiplier applied to the
+exposures.                                                      highest previous exposure recorded.
+
+The employer must maintain complete and accurate ledgers       The employer may dispute an audit finding by submitting a written grievance along
+detailing all wages, bonuses, commissions, and substitute      with supporting documentation within thirty days of the final invoice date.
+compensation provided to workers.                               
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+WC-PA-1000                                                            Blue Kettle Food Service, LLC | YW700400
 
 # Page 94
 
-POLICY PACKET                                                                  POLICY COPY 1F7EA01
-Underwriting Support
+ARGENT BIRCH EMPLOYERS                                              POLICY NUMBER: YW700400
+Workers Compensation and Employers Liability                          EFFECTIVE: 04/01/2026
+                                                                        EXPIRES: 04/01/2027
+____________________________________________________________________________________________
 
-Policy jacket notices and state exceptions
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
+                      TERRORISM RISK INSURANCE ACT DISCLOSURE
 
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-081-01,Producer correspondence,Reviewed,Producer copy
-REF-081-02,State exception,Pending,State form
-REF-081-03,Form filing note,Indexed,Rating file
-REF-081-04,Policy jacket notices and state exceptions,Archive,Policy audit
-REF-081-05,Prior policy comparison,Reviewed,Producer copy
-REF-081-06,Rating worksheet,Pending,State form
-REF-081-07,Producer correspondence,Indexed,Rating file
-REF-081-08,State exception,Archive,Policy audit
-REF-081-09,Form filing note,Reviewed,Producer copy
-REF-081-10,Policy jacket notices and state exceptions,Pending,State form
-REF-081-11,Prior policy comparison,Indexed,Rating file
-REF-081-12,Rating worksheet,Archive,Policy audit
-REF-081-13,Producer correspondence,Reviewed,Producer copy
-REF-081-14,State exception,Pending,State form
-REF-081-15,Form filing note,Indexed,Rating file
-REF-081-16,Policy jacket notices and state exceptions,Archive,Policy audit
-REF-081-17,Prior policy comparison,Reviewed,Producer copy
-REF-081-18,Rating worksheet,Pending,State form
-REF-081-19,Producer correspondence,Indexed,Rating file
-REF-081-20,State exception,Archive,Policy audit
-REF-081-21,Form filing note,Reviewed,Producer copy
-REF-081-22,Policy jacket notices and state exceptions,Pending,State form
-REF-081-23,Prior policy comparison,Indexed,Rating file
-REF-081-24,Rating worksheet,Archive,Policy audit
-REF-081-25,Producer correspondence,Reviewed,Producer copy
-REF-081-26,State exception,Pending,State form
-REF-081-27,Form filing note,Indexed,Rating file
-REF-081-28,Policy jacket notices and state exceptions,Archive,Policy audit
-REF-081-29,Prior policy comparison,Reviewed,Producer copy
-REF-081-30,Rating worksheet,Pending,State form
+____________________________________________________________________________________________
+POLICYHOLDER NOTICE - INFORMATION ABOUT YOUR POLICY
+____________________________________________________________________________________________
 
-Policy packet                                                                            Page 81
+
+       To the policyholder:
+
+       1. The federal government provides a financial backstop for certain catastrophic losses resulting from certified acts of terrorism.
+
+       Under this federal framework, the government shares the financial burden of terrorism claims once a specified industry-wide threshold is
+       reached.
+
+       The premium associated with this contract includes a specific charge for the terrorism exposure, which is detailed on the administrative
+       schedules.
+
+       This charge is calculated as a percentage of the manual premium and is not subject to experience modification or schedule rating
+       adjustments.
+
+       2. The federal program contains an aggregate cap on total liability; if losses exceed this cap, benefits may be reduced proportionally.
+
+       State workers compensation statutes do not permit employers to reject or opt out of the terrorism coverage component.
+
+       Any future modifications to the federal backstop legislation may result in mid-term adjustments to the terrorism premium charge.
+
+       This notice is informational. Coverage is governed by the policy forms and endorsements issued with the declarations.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+WC-TR-2003                                                           Blue Kettle Food Service, LLC | YW700400
 
 # Page 95
 
-POLICY PACKET                                                                      [POLICY COPY 1F7EA01]
+ARGENT BIRCH EMPLOYERS                                               POLICY NUMBER: YW700400
+Workers Compensation and Employers Liability                             EFFECTIVE: 04/01/2026
+                                                                          EXPIRES: 04/01/2027
+_____________________________________________________________________________________________________
 
-Underwriting Support
+                      MASSACHUSETTS STATE AMENDATORY ENDORSEMENT
+_____________________________________________________________________________________________________
 
-Policy jacket notices and state exceptions
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
+THIS ENDORSEMENT CHANGES THE POLICY. PLEASE READ IT CAREFULLY.
+_____________________________________________________________________________________________________
 
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-082-01,State exception,Reviewed,State form
-REF-082-02,Form filing note,Pending,Rating file
-REF-082-03,Policy jacket notices and state exceptions,Indexed,Policy audit
-REF-082-04,Prior policy comparison,Archive,Producer copy
-REF-082-05,Rating worksheet,Reviewed,State form
-REF-082-06,Producer correspondence,Pending,Rating file
-REF-082-07,State exception,Indexed,Policy audit
-REF-082-08,Form filing note,Archive,Producer copy
-REF-082-09,Policy jacket notices and state exceptions,Reviewed,State form
-REF-082-10,Prior policy comparison,Pending,Rating file
-REF-082-11,Rating worksheet,Indexed,Policy audit
-REF-082-12,Producer correspondence,Archive,Producer copy
-REF-082-13,State exception,Reviewed,State form
-REF-082-14,Form filing note,Pending,Rating file
-REF-082-15,Policy jacket notices and state exceptions,Indexed,Policy audit
-REF-082-16,Prior policy comparison,Archive,Producer copy
-REF-082-17,Rating worksheet,Reviewed,State form
-REF-082-18,Producer correspondence,Pending,Rating file
-REF-082-19,State exception,Indexed,Policy audit
-REF-082-20,Form filing note,Archive,Producer copy
-REF-082-21,Policy jacket notices and state exceptions,Reviewed,State form
-REF-082-22,Prior policy comparison,Pending,Rating file
-REF-082-23,Rating worksheet,Indexed,Policy audit
-REF-082-24,Producer correspondence,Archive,Producer copy
-REF-082-25,State exception,Reviewed,State form
-REF-082-26,Form filing note,Pending,Rating file
-REF-082-27,Policy jacket notices and state exceptions,Indexed,Policy audit
-REF-082-28,Prior policy comparison,Archive,Producer copy
-REF-082-29,Rating worksheet,Reviewed,State form
-REF-082-30,Producer correspondence,Pending,Rating file
+STATE / CLASS RI / 9082                                LOCATION 3
+.....................................................................................................
+CLASSIFICATION Restaurant NOC                          PAYROLL / RATE $642,370 / 4.35
+.....................................................................................................
+PREMIUM $27,943                                        FORM WC 00 00 01 A 01 15
+.....................................................................................................
 
-Policy packet                                                                                    Page 82
+A. Classification And Rating Reference                   The employer must post the official notice to employees regarding their rights and
+This form applies to Restaurant NOC in RI, class 9082,   the procedures for obtaining medical treatment.
+at Location 3.                                           Failure to post the required workplace notices may subject the enterprise to
+The information page shows estimated remuneration of     administrative fines levied by the state regulatory department.
+$642,370, manual rate 4.35, experience modification      Disputes regarding the assignment of classification codes must be submitted to the
+1.04, and estimated premium $27,943.                     state rating bureau's dispute resolution panel.
+Form WC 00 00 01 A edition 01 15 supplies the            C. The experience modification factor applied to Massachusetts operations is
+applicable policy terms for this classification.         calculated exclusively using the state's approved statistical plan.
+This document modifies the standard provisions to        We will notify the state industrial accident board electronically whenever this
+comply with the statutory requirements of the            contract is issued, renewed, or terminated.
+Commonwealth of Massachusetts.                           The employer must utilize the state-mandated forms when reporting injuries and
+B. The cancellation notice period for nonpayment of      must submit them within the required seven-day window.
+premium is extended to strictly comply with the state's  Any provision in the standard contract that conflicts with Massachusetts law is
+administrative code.                                     hereby amended to conform to the statutory minimums.
+When calculating remuneration for premium purposes, the
+maximum payroll limitations for executive officers are
+dictated by the state rating bureau.
+
+
+
+
+
+
+
+
+
+
+
+WC-MA-3000                                                          Blue Kettle Food Service, LLC | YW700400
 
 # Page 96
 
-POLICY PACKET                                                                    POLICY COPY 1F7EA01
+ARGENT BIRCH EMPLOYERS                                                 POLICY NUMBER: YW700400
+Workers Compensation and Employers Liability                             EFFECTIVE: 04/01/2026
+                                                                           EXPIRES: 04/01/2027
+____________________________________________________________________________________________________
 
-Underwriting Support
+                     CANCELLATION AND NONRENEWAL PROVISIONS
 
-Policy jacket notices and state exceptions
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
+____________________________________________________________________________________________________
+THIS FORM IS PART OF THE POLICY AND MUST BE READ WITH THE DECLARATIONS AND ENDORSEMENTS.
+____________________________________________________________________________________________________
 
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-083-01,Form filing note,Reviewed,Rating file
-REF-083-02,Policy jacket notices and state exceptions,Pending,Policy audit
-REF-083-03,Prior policy comparison,Indexed,Producer copy
-REF-083-04,Rating worksheet,Archive,State form
-REF-083-05,Producer correspondence,Reviewed,Rating file
-REF-083-06,State exception,Pending,Policy audit
-REF-083-07,Form filing note,Indexed,Producer copy
-REF-083-08,Policy jacket notices and state exceptions,Archive,State form
-REF-083-09,Prior policy comparison,Reviewed,Rating file
-REF-083-10,Rating worksheet,Pending,Policy audit
-REF-083-11,Producer correspondence,Indexed,Producer copy
-REF-083-12,State exception,Archive,State form
-REF-083-13,Form filing note,Reviewed,Rating file
-REF-083-14,Policy jacket notices and state exceptions,Pending,Policy audit
-REF-083-15,Prior policy comparison,Indexed,Producer copy
-REF-083-16,Rating worksheet,Archive,State form
-REF-083-17,Producer correspondence,Reviewed,Rating file
-REF-083-18,State exception,Pending,Policy audit
-REF-083-19,Form filing note,Indexed,Producer copy
-REF-083-20,Policy jacket notices and state exceptions,Archive,State form
-REF-083-21,Prior policy comparison,Reviewed,Rating file
-REF-083-22,Rating worksheet,Pending,Policy audit
-REF-083-23,Producer correspondence,Indexed,Producer copy
-REF-083-24,State exception,Archive,State form
-REF-083-25,Form filing note,Reviewed,Rating file
-REF-083-26,Policy jacket notices and state exceptions,Pending,Policy audit
-REF-083-27,Prior policy comparison,Indexed,Producer copy
-REF-083-28,Rating worksheet,Archive,State form
-REF-083-29,Producer correspondence,Reviewed,Rating file
-REF-083-30,State exception,Pending,Policy audit
+STATE / CLASS  ME / 3632                                 LOCATION  4
+----------------------------------------------------------------------------------------------------
+CLASSIFICATION  Machine shop NOC                         PAYROLL / RATE  $657,159 / 0.42
+----------------------------------------------------------------------------------------------------
+PREMIUM  $2,760                                          FORM  WC 00 00 01 A 04 21
+----------------------------------------------------------------------------------------------------
 
-Policy packet                                                                         Page 83
+Classification And Rating Reference                      Cancellation for any other authorized reason requires a minimum of thirty days
+                                                         advance notice, subject to state statutory mandates.
+This form applies to Machine shop NOC in ME, class 
+3632, at Location 4.                                     If the employer initiates the cancellation, the final premium will be calculated using
+The information page shows estimated remuneration of     the short-rate penalty table.
+$657,159, manual rate 0.42, experience modification      If we initiate the cancellation, the final premium will be computed on a strictly pro-
+1.04, and estimated premium $2,760.                      rata basis.
+
+Form WC 00 00 01 A edition 04 21 supplies the            Notice of nonrenewal will be mailed at least sixty days prior to the expiration date if
+applicable policy terms for this classification.         we elect not to offer a subsequent term.
+
+The employer may cancel this contract at any time        Proof of mailing via certified postal receipt or recognized tracking service
+by providing advance written notice specifying the       constitutes sufficient evidence of notice delivery.
+desired termination date.
+                                                         The termination of this contract does not relieve the employer of the obligation to
+We may cancel this contract by mailing written           pay outstanding premium balances or submit to a final audit.
+notice to the employer at the address shown on the 
+administrative records.                                  Any return premium due will be refunded within the timeframe mandated by the
+                                                         jurisdiction governing the primary operations.
+Cancellation for nonpayment of premium requires a 
+minimum of ten days advance notice before the 
+termination becomes effective.
+
+
+
+
+
+
+
+
+
+
+
+WC-CN-1003                                                         Blue Kettle Food Service, LLC | YW700400
 
 # Page 97
 
-POLICY PACKET                                                                      |POLICY COPY 1F7EA01|
-Underwriting Support
+ARGENT BIRCH EMPLOYERS                                                 POLICY NUMBER: YW700400
+Workers Compensation and Employers Liability                             EFFECTIVE: 04/01/2026
+                                                                          EXPIRES: 04/01/2027
+___________________________________________________________________________________________________
 
-Policy jacket notices and state exceptions
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
+                              AUDIT BILLING STATEMENT RULES
 
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-084-01,Policy jacket notices and state exceptions,Reviewed,Policy audit
-REF-084-02,Prior policy comparison,Pending,Producer copy
-REF-084-03,Rating worksheet,Indexed,State form
-REF-084-04,Producer correspondence,Archive,Rating file
-REF-084-05,State exception,Reviewed,Policy audit
-REF-084-06,Form filing note,Pending,Producer copy
-REF-084-07,Policy jacket notices and state exceptions,Indexed,State form
-REF-084-08,Prior policy comparison,Archive,Rating file
-REF-084-09,Rating worksheet,Reviewed,Policy audit
-REF-084-10,Producer correspondence,Pending,Producer copy
-REF-084-11,State exception,Indexed,State form
-REF-084-12,Form filing note,Archive,Rating file
-REF-084-13,Policy jacket notices and state exceptions,Reviewed,Policy audit
-REF-084-14,Prior policy comparison,Pending,Producer copy
-REF-084-15,Rating worksheet,Indexed,State form
-REF-084-16,Producer correspondence,Archive,Rating file
-REF-084-17,State exception,Reviewed,Policy audit
-REF-084-18,Form filing note,Pending,Producer copy
-REF-084-19,Policy jacket notices and state exceptions,Indexed,State form
-REF-084-20,Prior policy comparison,Archive,Rating file
-REF-084-21,Rating worksheet,Reviewed,Policy audit
-REF-084-22,Producer correspondence,Pending,Producer copy
-REF-084-23,State exception,Indexed,State form
-REF-084-24,Form filing note,Archive,Rating file
-REF-084-25,Policy jacket notices and state exceptions,Reviewed,Policy audit
-REF-084-26,Prior policy comparison,Pending,Producer copy
-REF-084-27,Rating worksheet,Indexed,State form
-REF-084-28,Producer correspondence,Archive,Rating file
-REF-084-29,State exception,Reviewed,Policy audit
-REF-084-30,Form filing note,Pending,Producer copy
+___________________________________________________________________________________________________
+PREMIUM, AUDIT, AND ACCOUNTING CONDITIONS
+___________________________________________________________________________________________________
+|                                                                 |                               |
+| Named insured                                                   | Policy term                   |
+| Blue Kettle Food Service, LLC                                   | 04/01/2026 - 04/01/2027       |
+|_________________________________________________________________|_______________________________|
+|                                                                 |                               |
+| Scheduled premium                                               | Audit basis                   |
+| $18,975                                                         | Payroll per $100 remuneration |
+|_________________________________________________________________|_______________________________|
 
-Policy packet                                                                                     Page 84
+1. Classification And Rating Reference                            Additional premium generated by an audit cannot be added to the installment
+                                                                  schedule of a subsequent renewal term.
+This form applies to Building operations by owner in NH, class 9015, at Location 5.
+                                                                  3. Failure to pay the audit balance promptly will result in the assignment of the debt
+The information page shows estimated remuneration of $663,479, manual rate 2.86,  to an external collection agency.
+experience modification 1.04, and estimated premium $18,975.
+                                                                  Outstanding audit balances may also trigger the cancellation of any active renewal
+Form WC 00 00 01 A edition 07 23 supplies the applicable policy terms for this   contracts currently in force.
+classification.
+                                                                  If the enterprise disputes the audit findings, the undisputed portion of the premium
+2. Following the completion of the final premium examination, an audit billing   must still be paid by the original due date.
+statement will be generated and mailed to the administrative address.
+                                                                  The disputed portion will be placed on an administrative hold while the grievance is
+This statement provides a detailed reconciliation between the estimated         reviewed by the audit dispute resolution team.
+remuneration and the actual payroll discovered during the examination.
+                                                                  4. If the grievance is denied, the held balance becomes due immediately and may be
+If the examination results in additional premium, the full amount is due within thirty  subject to retroactive late fees.
+days of the statement date.
+                                                                  Refunds generated by a downward audit adjustment will be applied first to any
+                                                                  outstanding balances before a check is issued.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+WC-AB-4002                                                               Blue Kettle Food Service, LLC | YW700400
 
 # Page 98
 
-POLICY PACKET                                                                      |POLICY COPY 1F7EA01|
+ARGENT BIRCH EMPLOYERS
+Workers Compensation and Employers Liability
+POLICY NUMBER: YW700400
+EFFECTIVE: 04/01/2026
+EXPIRES: 04/01/2027
 
-Underwriting Support
+============================================================================================================================================
+                                                 SUBROGATION AND RECOVERY ADMINISTRATION
+============================================================================================================================================
 
-Policy jacket notices and state exceptions
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
+THIS FORM IS PART OF THE POLICY AND MUST BE READ WITH THE DECLARATIONS AND ENDORSEMENTS.
 
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-085-01,Prior policy comparison,Reviewed,Producer copy
-REF-085-02,Rating worksheet,Pending,State form
-REF-085-03,Producer correspondence,Indexed,Rating file
-REF-085-04,State exception,Archive,Policy audit
-REF-085-05,Form filing note,Reviewed,Producer copy
-REF-085-06,Policy jacket notices and state exceptions,Pending,State form
-REF-085-07,Prior policy comparison,Indexed,Rating file
-REF-085-08,Rating worksheet,Archive,Policy audit
-REF-085-09,Producer correspondence,Reviewed,Producer copy
-REF-085-10,State exception,Pending,State form
-REF-085-11,Form filing note,Indexed,Rating file
-REF-085-12,Policy jacket notices and state exceptions,Archive,Policy audit
-REF-085-13,Prior policy comparison,Reviewed,Producer copy
-REF-085-14,Rating worksheet,Pending,State form
-REF-085-15,Producer correspondence,Indexed,Rating file
-REF-085-16,State exception,Archive,Policy audit
-REF-085-17,Form filing note,Reviewed,Producer copy
-REF-085-18,Policy jacket notices and state exceptions,Pending,State form
-REF-085-19,Prior policy comparison,Indexed,Rating file
-REF-085-20,Rating worksheet,Archive,Policy audit
-REF-085-21,Producer correspondence,Reviewed,Producer copy
-REF-085-22,State exception,Pending,State form
-REF-085-23,Form filing note,Indexed,Rating file
-REF-085-24,Policy jacket notices and state exceptions,Archive,Policy audit
-REF-085-25,Prior policy comparison,Reviewed,Producer copy
-REF-085-26,Rating worksheet,Pending,State form
-REF-085-27,Producer correspondence,Indexed,Rating file
-REF-085-28,State exception,Archive,Policy audit
-REF-085-29,Form filing note,Reviewed,Producer copy
-REF-085-30,Policy jacket notices and state exceptions,Pending,State form
+--------------------------------------------------------------------------------------------------------------------------------------------
+STATE / CLASS VT / 5606                                                     LOCATION 1
+--------------------------------------------------------------------------------------------------------------------------------------------
+CLASSIFICATION Contractor executive supervisor                              PAYROLL / RATE $675,365 / 4.35
+--------------------------------------------------------------------------------------------------------------------------------------------
+PREMIUM $29,378                                                             FORM WC 00 00 00 C 07 23
+--------------------------------------------------------------------------------------------------------------------------------------------
 
-Policy packet                                                                            Page 85
+A. Classification And Rating Reference                                      The remaining balance of the recovery will be used to offset the benefits distributed
+                                                                            to the injured worker.
+This form applies to Contractor executive supervisor in VT, class 5606, at Location
+1.                                                                          If the recovery exceeds the total benefits provided, the surplus will be distributed
+                                                                            according to the statutory guidelines of the jurisdiction.
+The information page shows estimated remuneration of $675,365, manual rate 4.35,
+experience modification 1.04, and estimated premium $29,378.                The employer must execute any documents, assignments, or legal instruments
+                                                                            required to facilitate the recovery action.
+Form WC 00 00 00 C edition 07 23 supplies the applicable policy terms for this
+classification.                                                             C. We maintain the exclusive authority to direct the recovery litigation, select legal
+                                                                            counsel, and negotiate settlement terms.
+When a third party is responsible for an occupational injury, we inherit the
+employer's right to seek recovery for benefits provided.                    The employer must attend hearings, depositions, and trials as requested to support
+                                                                            the recovery efforts.
+B. The employer must take all necessary steps to preserve these recovery rights and
+must not execute any pre-injury waivers without our knowledge.              If the employer independently pursues a recovery action, they must notify us
+                                                                            immediately and protect our lien on the proceeds.
+Any recovery obtained from a responsible third party will first be applied to
+reimburse the expenses incurred during the pursuit of the claim.            Compromising a third-party claim without our written approval may jeopardize the
+                                                                            injured worker's entitlement to future benefits.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+WC-SR-1005                                                                                            Blue Kettle Food Service, LLC | YW700400
 
 # Page 99
 
-POLICY PACKET
-                                                                              +----------------------+
-                                                                              | POLICY COPY 1F7EA01  |
-                                                                              +----------------------+
-Underwriting Support
+ARGENT BIRCH EMPLOYERS                                                     POLICY NUMBER: YW700400
+Workers Compensation and Employers Liability                                    EFFECTIVE: 04/01/2026
+                                                                                  EXPIRES: 04/01/2027
+______________________________________________________________________________________________________
 
-Policy jacket notices and state exceptions
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
+                       MASSACHUSETTS STATE AMENDATORY ENDORSEMENT
+______________________________________________________________________________________________________
 
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-086-01,Rating worksheet,Reviewed,State form
-REF-086-02,Producer correspondence,Pending,Rating file
-REF-086-03,State exception,Indexed,Policy audit
-REF-086-04,Form filing note,Archive,Producer copy
-REF-086-05,Policy jacket notices and state exceptions,Reviewed,State form
-REF-086-06,Prior policy comparison,Pending,Rating file
-REF-086-07,Rating worksheet,Indexed,Policy audit
-REF-086-08,Producer correspondence,Archive,Producer copy
-REF-086-09,State exception,Reviewed,State form
-REF-086-10,Form filing note,Pending,Rating file
-REF-086-11,Policy jacket notices and state exceptions,Indexed,Policy audit
-REF-086-12,Prior policy comparison,Archive,Producer copy
-REF-086-13,Rating worksheet,Reviewed,State form
-REF-086-14,Producer correspondence,Pending,Rating file
-REF-086-15,State exception,Indexed,Policy audit
-REF-086-16,Form filing note,Archive,Producer copy
-REF-086-17,Policy jacket notices and state exceptions,Reviewed,State form
-REF-086-18,Prior policy comparison,Pending,Rating file
-REF-086-19,Rating worksheet,Indexed,Policy audit
-REF-086-20,Producer correspondence,Archive,Producer copy
-REF-086-21,State exception,Reviewed,State form
-REF-086-22,Form filing note,Pending,Rating file
-REF-086-23,Policy jacket notices and state exceptions,Indexed,Policy audit
-REF-086-24,Prior policy comparison,Archive,Producer copy
-REF-086-25,Rating worksheet,Reviewed,State form
-REF-086-26,Producer correspondence,Pending,Rating file
-REF-086-27,State exception,Indexed,Policy audit
-REF-086-28,Form filing note,Archive,Producer copy
-REF-086-29,Policy jacket notices and state exceptions,Reviewed,State form
-REF-086-30,Prior policy comparison,Pending,Rating file
+THIS ENDORSEMENT CHANGES THE POLICY. PLEASE READ IT CAREFULLY.
+______________________________________________________________________________________________________
 
-Policy packet                                                                                Page 86
+STATE / CLASS CT / 8810                                     LOCATION 2
+......................................................................................................................................................................................
+CLASSIFICATION Clerical office employees                    PAYROLL / RATE $686,739 / 2.86
+......................................................................................................................................................................................
+PREMIUM $19,640                                             FORM WC 00 00 01 A 04 21
+......................................................................................................................................................................................
+
+Classification And Rating Reference                         The employer must post the official notice to employees regarding their rights and
+                                                            the procedures for obtaining medical treatment.
+This form applies to Clerical office employees in CT, class
+8810, at Location 2.                                        Failure to post the required workplace notices may subject the enterprise to
+                                                            administrative fines levied by the state regulatory department.
+The information page shows estimated remuneration of
+$686,739, manual rate 2.86, experience modification         Disputes regarding the assignment of classification codes must be submitted to the
+1.04, and estimated premium $19,640.                        state rating bureau's dispute resolution panel.
+
+Form WC 00 00 01 A edition 04 21 supplies the applicable    The experience modification factor applied to Massachusetts operations is calculated
+policy terms for this classification.                       exclusively using the state's approved statistical plan.
+
+This document modifies the standard provisions to comply    We will notify the state industrial accident board electronically whenever this
+with the statutory requirements of the Commonwealth of      contract is issued, renewed, or terminated.
+Massachusetts.
+                                                            The employer must utilize the state-mandated forms when reporting injuries and
+The cancellation notice period for nonpayment of premium is must submit them within the required seven-day window.
+extended to strictly comply with the state's administrative
+code.                                                       Any provision in the standard contract that conflicts with Massachusetts law is
+                                                            hereby amended to conform to the statutory minimums.
+When calculating remuneration for premium purposes, the
+maximum payroll limitations for executive officers are
+dictated by the state rating bureau.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+WC-MA-3000                                                             Blue Kettle Food Service, LLC | YW700400
 
 # Page 100
 
-POLICY PACKET                                                                   POLICY COPY 1F7EA01
+ARGENT BIRCH EMPLOYERS                                                 POLICY NUMBER: YW700400
+Workers Compensation and Employers Liability                             EFFECTIVE: 04/01/2026
+                                                                           EXPIRES: 04/01/2027
 
-Underwriting Support
+__________________________________________________________________________________________________
 
-Policy jacket notices and state exceptions
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
+                       DEFENSE AND SETTLEMENT ADMINISTRATION
 
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-087-01,Producer correspondence,Reviewed,Rating file
-REF-087-02,State exception,Pending,Policy audit
-REF-087-03,Form filing note,Indexed,Producer copy
-REF-087-04,Policy jacket notices and state exceptions,Archive,State form
-REF-087-05,Prior policy comparison,Reviewed,Rating file
-REF-087-06,Rating worksheet,Pending,Policy audit
-REF-087-07,Producer correspondence,Indexed,Producer copy
-REF-087-08,State exception,Archive,State form
-REF-087-09,Form filing note,Reviewed,Rating file
-REF-087-10,Policy jacket notices and state exceptions,Pending,Policy audit
-REF-087-11,Prior policy comparison,Indexed,Producer copy
-REF-087-12,Rating worksheet,Archive,State form
-REF-087-13,Producer correspondence,Reviewed,Rating file
-REF-087-14,State exception,Pending,Policy audit
-REF-087-15,Form filing note,Indexed,Producer copy
-REF-087-16,Policy jacket notices and state exceptions,Archive,State form
-REF-087-17,Prior policy comparison,Reviewed,Rating file
-REF-087-18,Rating worksheet,Pending,Policy audit
-REF-087-19,Producer correspondence,Indexed,Producer copy
-REF-087-20,State exception,Archive,State form
-REF-087-21,Form filing note,Reviewed,Rating file
-REF-087-22,Policy jacket notices and state exceptions,Pending,Policy audit
-REF-087-23,Prior policy comparison,Indexed,Producer copy
-REF-087-24,Rating worksheet,Archive,State form
-REF-087-25,Producer correspondence,Reviewed,Rating file
-REF-087-26,State exception,Pending,Policy audit
-REF-087-27,Form filing note,Indexed,Producer copy
-REF-087-28,Policy jacket notices and state exceptions,Archive,State form
-REF-087-29,Prior policy comparison,Reviewed,Rating file
-REF-087-30,Rating worksheet,Pending,Policy audit
+__________________________________________________________________________________________________
 
-Policy packet                                                                               Page 87
+THIS FORM IS PART OF THE POLICY AND MUST BE READ WITH THE DECLARATIONS AND ENDORSEMENTS.
+__________________________________________________________________________________________________
+
+STATE / CLASS  CT / 8017                                LOCATION  3
+--------------------------------------------------------------------------------------------------
+CLASSIFICATION  Retail store - all employees            PAYROLL / RATE  $705,887 / 0.27
+--------------------------------------------------------------------------------------------------
+PREMIUM  $1,905                                         FORM  WC 00 00 01 A 01 15
+--------------------------------------------------------------------------------------------------
+
+1. Classification And Rating Reference                  The expenses incurred during the investigation and defense of a claim are borne by
+                                                        us and do not reduce the available limits of liability.
+This form applies to Retail store - all employees in
+CT, class 8017, at Location 3.                          3. The employer must not interfere with our medical management strategies or
+The information page shows estimated remuneration of    attempt to direct the injured worker to unauthorized providers.
+$705,887, manual rate 0.27, experience modification
+1.04, and estimated premium $1,905.                     If the employer becomes aware of potential fraud or malingering, they must
+                                                        communicate this information to our investigative unit immediately.
+Form WC 00 00 01 A edition 01 15 supplies the
+applicable policy terms for this classification.        We will participate in all mandatory mediation sessions, dispute resolution
+                                                        conferences, and administrative hearings on behalf of the enterprise.
+2. We retain the exclusive authority to investigate,
+manage, and resolve any claim or proceeding brought     Any administrative penalties levied due to our failure to pay benefits timely will be
+against the employer under this contract.               absorbed by us, unless the delay was caused by the employer.
+
+This authority includes the selection of medical        4. Penalties resulting from the employer's failure to report the injury or willful
+providers, vocational rehabilitation specialists, and   misconduct remain the financial burden of the enterprise.
+legal counsel.
+                                                        Our obligation to manage and defend claims ceases entirely once the statutory
+We may negotiate and settle any claim without the      obligations have been fulfilled or the liability limits exhausted.
+prior approval of the employer, provided the
+settlement complies with statutory requirements.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+WC-DS-1007                                                      Blue Kettle Food Service, LLC | YW700400_
+
 
 # Page 101
 
-POLICY PACKET                                                                      POLICY COPY 1F7EA01
+ARGENT BIRCH EMPLOYERS                                                 POLICY NUMBER: YW700400
+Workers Compensation and Employers Liability                            EFFECTIVE: 04/01/2026
+                                                                          EXPIRES: 04/01/2027
+_____________________________________________________________________________________________
 
-Underwriting Support
+               LONGSHORE AND HARBOR WORKERS EXTENSION CRITERIA
+_____________________________________________________________________________________________
 
-Policy jacket notices and state exceptions
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
+THIS FORM IS PART OF THE POLICY AND MUST BE READ WITH THE DECLARATIONS AND ENDORSEMENTS.
+_____________________________________________________________________________________________
 
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-088-01,State exception,Reviewed,Policy audit
-REF-088-02,Form filing note,Pending,Producer copy
-REF-088-03,Policy jacket notices and state exceptions,Indexed,State form
-REF-088-04,Prior policy comparison,Archive,Rating file
-REF-088-05,Rating worksheet,Reviewed,Policy audit
-REF-088-06,Producer correspondence,Pending,Producer copy
-REF-088-07,State exception,Indexed,State form
-REF-088-08,Form filing note,Archive,Rating file
-REF-088-09,Policy jacket notices and state exceptions,Reviewed,Policy audit
-REF-088-10,Prior policy comparison,Pending,Producer copy
-REF-088-11,Rating worksheet,Indexed,State form
-REF-088-12,Producer correspondence,Archive,Rating file
-REF-088-13,State exception,Reviewed,Policy audit
-REF-088-14,Form filing note,Pending,Producer copy
-REF-088-15,Policy jacket notices and state exceptions,Indexed,State form
-REF-088-16,Prior policy comparison,Archive,Rating file
-REF-088-17,Rating worksheet,Reviewed,Policy audit
-REF-088-18,Producer correspondence,Pending,Producer copy
-REF-088-19,State exception,Indexed,State form
-REF-088-20,Form filing note,Archive,Rating file
-REF-088-21,Policy jacket notices and state exceptions,Reviewed,Policy audit
-REF-088-22,Prior policy comparison,Pending,Producer copy
-REF-088-23,Rating worksheet,Indexed,State form
-REF-088-24,Producer correspondence,Archive,Rating file
-REF-088-25,State exception,Reviewed,Policy audit
-REF-088-26,Form filing note,Pending,Producer copy
-REF-088-27,Policy jacket notices and state exceptions,Indexed,State form
-REF-088-28,Prior policy comparison,Archive,Rating file
-REF-088-29,Rating worksheet,Reviewed,Policy audit
-REF-088-30,Producer correspondence,Pending,Producer copy
+STATE / CLASS  MA / 8742                                  LOCATION  4
+---------------------------------------------------------------------------------------------
+CLASSIFICATION  Outside salespersons                      PAYROLL / RATE  $716,927 / 0.18
+---------------------------------------------------------------------------------------------
+PREMIUM  $1,290                                           FORM  WC 00 00 00 C 04 21
+---------------------------------------------------------------------------------------------
 
-Policy packet                                                                                Page 88
+A. Classification And Rating Reference                    When the extension is attached, the remuneration associated with the maritime
+                                                          operations must be segregated in the payroll ledgers.
+This form applies to Outside salespersons in MA, class 
+8742, at Location 4.                                      Maritime remuneration is subject to distinct manual rates and rating methodologies
+                                                          established by the federal oversight agency.
+The information page shows estimated remuneration of 
+$716,927, manual rate 0.18, experience modification       The employer must comply with all federal reporting requirements and safety
+1.04, and estimated premium $1,290.                       regulations mandated by the maritime statutes.
+
+Form WC 00 00 00 C edition 04 21 supplies the applicable  C. Failure to secure the necessary federal extension when required may expose the
+policy terms for this classification.                    enterprise to severe statutory penalties and uninsured liabilities.
+
+Operations conducted on or near navigable waters may      We reserve the right to audit the proximity of operations to navigable waters to
+fall under federal maritime jurisdiction, requiring       determine the potential for incidental maritime exposure.
+specialized benefit provisions.
+                                                          Incidental maritime exposure discovered during the final audit will be rated
+B. This contract does not automatically encompass federal  retroactively using the applicable federal classification codes.
+maritime exposures unless specifically designated on the 
+administrative schedules.                                 The defense and settlement provisions of this contract apply equally to claims
+                                                          adjudicated under the federal maritime administrative system.
+If the enterprise engages in loading, unloading, 
+repairing, or building vessels, the employer must 
+request the appropriate federal extension.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+WC-LH-1008                                                       Blue Kettle Food Service, LLC | YW700400_
+
 
 # Page 102
 
-POLICY PACKET                                                                POLICY COPY 1F7EA01
+ARGENT BIRCH EMPLOYERS                                                 POLICY NUMBER: YW700400
+Workers Compensation and Employers Liability                            EFFECTIVE: 04/01/2026
+                                                                          EXPIRES: 04/01/2027
+_____________________________________________________________________________________________
 
-Underwriting Support
+                        CONTRACTUAL TRANSFER AND ASSIGNMENT RULES
 
-Policy jacket notices and state exceptions
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
+_____________________________________________________________________________________________
+THIS FORM IS PART OF THE POLICY AND MUST BE READ WITH THE DECLARATIONS AND ENDORSEMENTS.
+_____________________________________________________________________________________________
 
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-089-01,Form filing note,Reviewed,Producer copy
-REF-089-02,Policy jacket notices and state exceptions,Pending,State form
-REF-089-03,Prior policy comparison,Indexed,Rating file
-REF-089-04,Rating worksheet,Archive,Policy audit
-REF-089-05,Producer correspondence,Reviewed,Producer copy
-REF-089-06,State exception,Pending,State form
-REF-089-07,Form filing note,Indexed,Rating file
-REF-089-08,Policy jacket notices and state exceptions,Archive,Policy audit
-REF-089-09,Prior policy comparison,Reviewed,Producer copy
-REF-089-10,Rating worksheet,Pending,State form
-REF-089-11,Producer correspondence,Indexed,Rating file
-REF-089-12,State exception,Archive,Policy audit
-REF-089-13,Form filing note,Reviewed,Producer copy
-REF-089-14,Policy jacket notices and state exceptions,Pending,State form
-REF-089-15,Prior policy comparison,Indexed,Rating file
-REF-089-16,Rating worksheet,Archive,Policy audit
-REF-089-17,Producer correspondence,Reviewed,Producer copy
-REF-089-18,State exception,Pending,State form
-REF-089-19,Form filing note,Indexed,Rating file
-REF-089-20,Policy jacket notices and state exceptions,Archive,Policy audit
-REF-089-21,Prior policy comparison,Reviewed,Producer copy
-REF-089-22,Rating worksheet,Pending,State form
-REF-089-23,Producer correspondence,Indexed,Rating file
-REF-089-24,State exception,Archive,Policy audit
-REF-089-25,Form filing note,Reviewed,Producer copy
-REF-089-26,Policy jacket notices and state exceptions,Pending,State form
-REF-089-27,Prior policy comparison,Indexed,Rating file
-REF-089-28,Rating worksheet,Archive,Policy audit
-REF-089-29,Producer correspondence,Reviewed,Producer copy
-REF-089-30,State exception,Pending,State form
+STATE / CLASS MA / 5190                                    LOCATION 5
+..............................................................................................................................................................................
+CLASSIFICATION Electrical wiring within buildings          PAYROLL / RATE $724,745 / 0.18
+..............................................................................................................................................................................
+PREMIUM $1,304                                             FORM WC 00 00 00 C 01 15
+..............................................................................................................................................................................
 
-Policy packet                                                                               Page 89
+Classification And Rating Reference                        The employer must notify us at least thirty days prior to any change in ownership or
+                                                           fundamental shift in corporate control.
+This form applies to Electrical wiring within buildings in 
+MA, class 5190, at Location 5.                             Upon receiving notice of an ownership change, we will evaluate the new operational
+                                                           risks and determine whether to consent to the assignment.
+The information page shows estimated remuneration of 
+$724,745, manual rate 0.18, experience modification        If consent is granted, an amendatory document will be issued detailing the effective
+1.04, and estimated premium $1,304.                       date of the transfer and any revised rating parameters.
+
+Form WC 00 00 00 C edition 01 15 supplies the              If consent is withheld, the contract will be cancelled in accordance with the standard
+applicable policy terms for this classification.           termination provisions.
+
+The rights and obligations established by this contract    In the event of the employer's death or bankruptcy, the legal representative or trustee
+are unique to the enterprise identified on the             assumes the duties of the employer for the remainder of the term.
+administrative schedules.
+                                                           The legal representative must continue to maintain payroll ledgers, report injuries,
+The employer may not transfer, assign, or delegate         and remit premium payments as required.
+any portion of this contract to a third party without 
+our explicit written consent.                              Unauthorized assignments are considered void and provide no protection to the
+                                                           unapproved successor entity.
+In the event of a merger, acquisition, or corporate 
+restructuring, the surviving entity does not automatically 
+inherit the coverage provisions.
+
+
+
+
+
+
+
+
+
+
+
+
+
+WC-CT-1009                                                                 Blue Kettle Food Service, LLC | YW700400
 
 # Page 103
 
-POLICY PACKET                                                                      +----------------------+
-Underwriting Support                                                               | POLICY COPY 1F7EA01  |
-                                                                                   +----------------------+
+ARGENT BIRCH EMPLOYERS                                                 POLICY NUMBER: YW700400
+Workers Compensation and Employers Liability                            EFFECTIVE: 04/01/2026
+                                                                          EXPIRES: 04/01/2027
+____________________________________________________________________________________________________
 
-Policy jacket notices and state exceptions
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
+                     NOTICE OF INFORMATION PRIVACY PRACTICES
+____________________________________________________________________________________________________
 
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-090-01,Policy jacket notices and state exceptions,Reviewed,State form
-REF-090-02,Prior policy comparison,Pending,Rating file
-REF-090-03,Rating worksheet,Indexed,Policy audit
-REF-090-04,Producer correspondence,Archive,Producer copy
-REF-090-05,State exception,Reviewed,State form
-REF-090-06,Form filing note,Pending,Rating file
-REF-090-07,Policy jacket notices and state exceptions,Indexed,Policy audit
-REF-090-08,Prior policy comparison,Archive,Producer copy
-REF-090-09,Rating worksheet,Reviewed,State form
-REF-090-10,Producer correspondence,Pending,Rating file
-REF-090-11,State exception,Indexed,Policy audit
-REF-090-12,Form filing note,Archive,Producer copy
-REF-090-13,Policy jacket notices and state exceptions,Reviewed,State form
-REF-090-14,Prior policy comparison,Pending,Rating file
-REF-090-15,Rating worksheet,Indexed,Policy audit
-REF-090-16,Producer correspondence,Archive,Producer copy
-REF-090-17,State exception,Reviewed,State form
-REF-090-18,Form filing note,Pending,Rating file
-REF-090-19,Policy jacket notices and state exceptions,Indexed,Policy audit
-REF-090-20,Prior policy comparison,Archive,Producer copy
-REF-090-21,Rating worksheet,Reviewed,State form
-REF-090-22,Producer correspondence,Pending,Rating file
-REF-090-23,State exception,Indexed,Policy audit
-REF-090-24,Form filing note,Archive,Producer copy
-REF-090-25,Policy jacket notices and state exceptions,Reviewed,State form
-REF-090-26,Prior policy comparison,Pending,Rating file
-REF-090-27,Rating worksheet,Indexed,Policy audit
-REF-090-28,Producer correspondence,Archive,Producer copy
-REF-090-29,State exception,Reviewed,State form
-REF-090-30,Form filing note,Pending,Rating file
+POLICYHOLDER NOTICE - INFORMATION ABOUT YOUR POLICY
+____________________________________________________________________________________________________
 
-Policy packet                                                                                     Page 90
+
+       To the policyholder:
+
+       1. This notice describes how medical and personal information collected during the administration of occupational injury claims is
+       handled.
+
+       We collect sensitive data, including medical histories, treatment records, and wage information, solely for the purpose of adjudicating
+       claims.
+
+       This information is obtained directly from medical providers, the injured worker, and the employer's administrative personnel.
+
+       We maintain strict physical, electronic, and procedural safeguards to protect this sensitive data from unauthorized access or disclosure.
+
+       2. Information may be shared with regulatory agencies, rating bureaus, and authorized third-party administrators as required by law.
+
+       We do not sell personal or medical information to marketing organizations or unaffiliated commercial entities.
+
+       Injured workers have the right to request access to their claim files and may submit corrections to any factual inaccuracies found within.
+
+       Employers are prohibited from using medical information obtained during the claims process for discriminatory employment decisions.
+
+       This notice is informational. Coverage is governed by the policy forms and endorsements issued with the declarations.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+WC-NP-2000                                                             Blue Kettle Food Service, LLC | YW700400
 
 # Page 104
 
-POLICY PACKET                                                                      [POLICY COPY 1F7EA01]
+ARGENT BIRCH EMPLOYERS | WORKERS COMPENSATION AND EMPLOYERS LIABILITY                     YW700400
+Premium Summary                                                       04/01/2026 - 04/01/2027
+____________________________________________________________________________________________________
 
-Underwriting Support
+| Total scheduled premium for the rows shown on this schedule: $512,617.
+____________________________________________________________________________________________________
 
-Policy jacket notices and state exceptions
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
+CT           Schedule entry CT records class 8810; loc 1; payroll $45,136.
+             CLASS 8810                                           LOC 1
+             PAYROLL $45,136                                      ESTIMATED PREMIUM $189
+____________________________________________________________________________________________________
 
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-091-01,Prior policy comparison,Reviewed,Rating file
-REF-091-02,Rating worksheet,Pending,Policy audit
-REF-091-03,Producer correspondence,Indexed,Producer copy
-REF-091-04,State exception,Archive,State form
-REF-091-05,Form filing note,Reviewed,Rating file
-REF-091-06,Policy jacket notices and state exceptions,Pending,Policy audit
-REF-091-07,Prior policy comparison,Indexed,Producer copy
-REF-091-08,Rating worksheet,Archive,State form
-REF-091-09,Producer correspondence,Reviewed,Rating file
-REF-091-10,State exception,Pending,Policy audit
-REF-091-11,Form filing note,Indexed,Producer copy
-REF-091-12,Policy jacket notices and state exceptions,Archive,State form
-REF-091-13,Prior policy comparison,Reviewed,Rating file
-REF-091-14,Rating worksheet,Pending,Policy audit
-REF-091-15,Producer correspondence,Indexed,Producer copy
-REF-091-16,State exception,Archive,State form
-REF-091-17,Form filing note,Reviewed,Rating file
-REF-091-18,Policy jacket notices and state exceptions,Pending,Policy audit
-REF-091-19,Prior policy comparison,Indexed,Producer copy
-REF-091-20,Rating worksheet,Archive,State form
-REF-091-21,Producer correspondence,Reviewed,Rating file
-REF-091-22,State exception,Pending,Policy audit
-REF-091-23,Form filing note,Indexed,Producer copy
-REF-091-24,Policy jacket notices and state exceptions,Archive,State form
-REF-091-25,Prior policy comparison,Reviewed,Rating file
-REF-091-26,Rating worksheet,Pending,Policy audit
-REF-091-27,Producer correspondence,Indexed,Producer copy
-REF-091-28,State exception,Archive,State form
-REF-091-29,Form filing note,Reviewed,Rating file
-REF-091-30,Policy jacket notices and state exceptions,Pending,Policy audit
+CT           Class: 8017. The remaining values below apply to this same scheduled item.
+             LOC 2                                                PAYROLL $54,124
+             ESTIMATED PREMIUM $400
+____________________________________________________________________________________________________
 
-Policy packet                                                                                    Page 91
+MA           MA - Class: 8742 / Loc: 3
+             Payroll: $70,826 / Estimated Premium: $127
+____________________________________________________________________________________________________
+
+MA           MA. Class is 5190. Loc is 4. Payroll is $77,560. Estimated Premium is $2,218.
+             CLASS 5190
+             LOC 4
+             PAYROLL $77,560
+             ESTIMATED PREMIUM $2,218
+____________________________________________________________________________________________________
+
+RI           Schedule entry RI records class 9082; loc 5; payroll $90,759.
+             CLASS 9082                                           LOC 5
+             PAYROLL $90,759                                      ESTIMATED PREMIUM $245
+____________________________________________________________________________________________________
+
+ME           Class: 3632. The remaining values below apply to this same scheduled item.
+             LOC 1                                                PAYROLL $99,561
+             ESTIMATED PREMIUM $2,847
+____________________________________________________________________________________________________
+
+NH           NH - Class: 9015 / Loc: 2
+             Payroll: $111,259 / Estimated Premium: $3,182
+____________________________________________________________________________________________________
+
+VT           VT. Class is 5606. Loc is 3. Payroll is $127,460. Estimated Premium is $7,928.
+             CLASS 5606
+             LOC 3
+             PAYROLL $127,460
+             ESTIMATED PREMIUM $7,928
+____________________________________________________________________________________________________
+
+CT           Schedule entry CT records class 8810; loc 4; payroll $139,137.
+             CLASS 8810                                           LOC 4
+             PAYROLL $139,137                                     ESTIMATED PREMIUM $8,654
+____________________________________________________________________________________________________
+
+CT           Class: 8017. The remaining values below apply to this same scheduled item.
+             LOC 5                                                PAYROLL $152,897
+             ESTIMATED PREMIUM $6,651
+____________________________________________________________________________________________________
+
+MA           MA - Class: 8742 / Loc: 1
+             Payroll: $158,051 / Estimated Premium: $6,875
+____________________________________________________________________________________________________
+
+MA           MA. Class is 5190. Loc is 2. Payroll is $171,391. Estimated Premium is $462.
+             CLASS 5190
+             LOC 2
+             PAYROLL $171,391
+             ESTIMATED PREMIUM $462
+____________________________________________________________________________________________________
+
+_________________________________________________   _________________________________________________
+| Schedule Conditions                           |   | Reading This Schedule                         |
+| Entries on this schedule apply only to the    |   | Read scheduled lines together with the        |
+| coverage part, location, class, state, or     |   | declarations and attached forms to            |
+| form reference shown on the same row.         |   | determine the complete scheduled item.        |
+|_______________________________________________|   |_______________________________________________|
+
+Blue Kettle Food Service, LLC                                                               PREM-SCH
 
 # Page 105
 
-POLICY PACKET                                                                  POLICY COPY 1F7EA01
+ARGENT BIRCH EMPLOYERS | WORKERS COMPENSATION AND EMPLOYERS LIABILITY
+Premium Summary - Continued 2
+YW700400
+04/01/2026 - 04/01/2027
 
-Underwriting Support
+Total scheduled premium for the rows shown on this schedule: $512,617.
 
-Policy jacket notices and state exceptions
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
+RI                 Schedule entry RI records class 9082; loc 3; payroll $184,316.
+                   CLASS 9082                                                    LOC 3
+                   PAYROLL $184,316                                              ESTIMATED PREMIUM $2,119
 
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-092-01,Rating worksheet,Reviewed,Policy audit
-REF-092-02,Producer correspondence,Pending,Producer copy
-REF-092-03,State exception,Indexed,State form
-REF-092-04,Form filing note,Archive,Rating file
-REF-092-05,Policy jacket notices and state exceptions,Reviewed,Policy audit
-REF-092-06,Prior policy comparison,Pending,Producer copy
-REF-092-07,Rating worksheet,Indexed,State form
-REF-092-08,Producer correspondence,Archive,Rating file
-REF-092-09,State exception,Reviewed,Policy audit
-REF-092-10,Form filing note,Pending,Producer copy
-REF-092-11,Policy jacket notices and state exceptions,Indexed,State form
-REF-092-12,Prior policy comparison,Archive,Rating file
-REF-092-13,Rating worksheet,Reviewed,Policy audit
-REF-092-14,Producer correspondence,Pending,Producer copy
-REF-092-15,State exception,Indexed,State form
-REF-092-16,Form filing note,Archive,Rating file
-REF-092-17,Policy jacket notices and state exceptions,Reviewed,Policy audit
-REF-092-18,Prior policy comparison,Pending,Producer copy
-REF-092-19,Rating worksheet,Indexed,State form
-REF-092-20,Producer correspondence,Archive,Rating file
-REF-092-21,State exception,Reviewed,Policy audit
-REF-092-22,Form filing note,Pending,Producer copy
-REF-092-23,Policy jacket notices and state exceptions,Indexed,State form
-REF-092-24,Prior policy comparison,Archive,Rating file
-REF-092-25,Rating worksheet,Reviewed,Policy audit
-REF-092-26,Producer correspondence,Pending,Producer copy
-REF-092-27,State exception,Indexed,State form
-REF-092-28,Form filing note,Archive,Rating file
-REF-092-29,Policy jacket notices and state exceptions,Reviewed,Policy audit
-REF-092-30,Prior policy comparison,Pending,Producer copy
+ME                 Class: 3632. The remaining values below apply to this same scheduled item.
+                   LOC 4                                                         PAYROLL $195,887
+                   ESTIMATED PREMIUM $12,184
 
-Policy packet                                                                            Page 92
+NH                 NH - Class: 9015 / Loc: 5
+                   Payroll: $209,573 / Estimated Premium: $1,550
+
+VT                 VT. Class is 5606. Loc is 1. Payroll is $223,415. Estimated Premium is $6,389.
+                   CLASS 5606
+                   LOC 1
+                   PAYROLL $223,415
+                   ESTIMATED PREMIUM $6,389
+
+CT                 Schedule entry CT records class 8810; loc 2; payroll $234,108.
+                   CLASS 8810                                                    LOC 2
+                   PAYROLL $234,108                                              ESTIMATED PREMIUM $6,695
+
+CT                 Class: 8017. The remaining values below apply to this same scheduled item.
+                   LOC 3                                                         PAYROLL $239,729
+                   ESTIMATED PREMIUM $6,856
+
+MA                 MA - Class: 8742 / Loc: 4
+                   Payroll: $256,691 / Estimated Premium: $15,966
+
+MA                 MA. Class is 5190. Loc is 5. Payroll is $265,916. Estimated Premium is $16,539.
+                   CLASS 5190
+                   LOC 5
+                   PAYROLL $265,916
+                   ESTIMATED PREMIUM $16,539
+
+RI                 Schedule entry RI records class 9082; loc 1; payroll $277,752.
+                   CLASS 9082                                                    LOC 1
+                   PAYROLL $277,752                                              ESTIMATED PREMIUM $2,055
+
+ME                 Class: 3632. The remaining values below apply to this same scheduled item.
+                   LOC 2                                                         PAYROLL $288,720
+                   ESTIMATED PREMIUM $1,212
+
+NH                 NH - Class: 9015 / Loc: 3
+                   Payroll: $296,731 / Estimated Premium: $2,195
+
+VT                 VT. Class is 5606. Loc is 4. Payroll is $312,419. Estimated Premium is $19,432.
+                   CLASS 5606
+                   LOC 4
+                   PAYROLL $312,419
+                   ESTIMATED PREMIUM $19,432
+
++-------------------------------------------------------------+ +-------------------------------------------------------------+
+| Schedule Conditions                                         | | Reading This Schedule                                       |
+| Entries on this schedule apply only to the coverage part,   | | Read scheduled lines together with the declarations and     |
+| location, class, state, or form reference shown on the      | | attached forms to determine the complete scheduled item.   |
+| same row.                                                   | |                                                             |
++-------------------------------------------------------------+ +-------------------------------------------------------------+
+
+Blue Kettle Food Service, LLC                                                                                    PREM-SCH
 
 # Page 106
 
-POLICY PACKET                                                                      POLICY COPY 1F7EA01
+ARGENT BIRCH EMPLOYERS | WORKERS COMPENSATION AND EMPLOYERS LIABILITY
+                                                                                   YW700400
+Premium Summary - Continued 3                                               04/01/2026 - 04/01/2027
 
-# Underwriting Support
 
-## Policy jacket notices and state exceptions
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
+ Total scheduled premium for the rows shown on this schedule: $512,617.
 
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-093-01,Producer correspondence,Reviewed,Producer copy
-REF-093-02,State exception,Pending,State form
-REF-093-03,Form filing note,Indexed,Rating file
-REF-093-04,Policy jacket notices and state exceptions,Archive,Policy audit
-REF-093-05,Prior policy comparison,Reviewed,Producer copy
-REF-093-06,Rating worksheet,Pending,State form
-REF-093-07,Producer correspondence,Indexed,Rating file
-REF-093-08,State exception,Archive,Policy audit
-REF-093-09,Form filing note,Reviewed,Producer copy
-REF-093-10,Policy jacket notices and state exceptions,Pending,State form
-REF-093-11,Prior policy comparison,Indexed,Rating file
-REF-093-12,Rating worksheet,Archive,Policy audit
-REF-093-13,Producer correspondence,Reviewed,Producer copy
-REF-093-14,State exception,Pending,State form
-REF-093-15,Form filing note,Indexed,Rating file
-REF-093-16,Policy jacket notices and state exceptions,Archive,Policy audit
-REF-093-17,Prior policy comparison,Reviewed,Producer copy
-REF-093-18,Rating worksheet,Pending,State form
-REF-093-19,Producer correspondence,Indexed,Rating file
-REF-093-20,State exception,Archive,Policy audit
-REF-093-21,Form filing note,Reviewed,Producer copy
-REF-093-22,Policy jacket notices and state exceptions,Pending,State form
-REF-093-23,Prior policy comparison,Indexed,Rating file
-REF-093-24,Rating worksheet,Archive,Policy audit
-REF-093-25,Producer correspondence,Reviewed,Producer copy
-REF-093-26,State exception,Pending,State form
-REF-093-27,Form filing note,Indexed,Rating file
-REF-093-28,Policy jacket notices and state exceptions,Archive,Policy audit
-REF-093-29,Prior policy comparison,Reviewed,Producer copy
-REF-093-30,Rating worksheet,Pending,State form
+CT              Schedule entry CT records class 8810; loc 5; payroll $323,486.
+                CLASS 8810                                                   LOC 5
+                PAYROLL $323,486                                             ESTIMATED PREMIUM $20,120
 
-Policy packet                                                                                        Page 93
+CT              Class: 8017. The remaining values below apply to this same scheduled item.
+                LOC 1                                                        PAYROLL $333,913
+                ESTIMATED PREMIUM $1,402
+
+MA              MA - Class: 8742 / Loc: 2
+                Payroll: $349,084 / Estimated Premium: $628
+
+MA              MA. Class is 5190. Loc is 3. Payroll is $353,824. Estimated Premium is $955.
+                CLASS 5190
+                LOC 3
+                PAYROLL $353,824
+                ESTIMATED PREMIUM $955
+
+RI              Schedule entry RI records class 9082; loc 4; payroll $367,301.
+                CLASS 9082                                                   LOC 4
+                PAYROLL $367,301                                             ESTIMATED PREMIUM $1,542
+
+ME              Class: 3632. The remaining values below apply to this same scheduled item.
+                LOC 5                                                        PAYROLL $378,170
+                ESTIMATED PREMIUM $4,348
+
+NH              NH - Class: 9015 / Loc: 1
+                Payroll: $391,534 / Estimated Premium: $11,197
+
+VT              VT. Class is 5606. Loc is 2. Payroll is $404,635. Estimated Premium is $17,601.
+                CLASS 5606
+                LOC 2
+                PAYROLL $404,635
+                ESTIMATED PREMIUM $17,601
+
+CT              Schedule entry CT records class 8810; loc 3; payroll $416,547.
+                CLASS 8810                                                   LOC 3
+                PAYROLL $416,547                                             ESTIMATED PREMIUM $4,790
+
+CT              Class: 8017. The remaining values below apply to this same scheduled item.
+                LOC 4                                                        PAYROLL $427,355
+                ESTIMATED PREMIUM $18,589
+
+MA              MA - Class: 8742 / Loc: 5
+                Payroll: $435,963 / Estimated Premium: $1,177
+
+MA              MA. Class is 5190. Loc is 1. Payroll is $453,438. Estimated Premium is $1,224.
+                CLASS 5190
+                LOC 1
+                PAYROLL $453,438
+                ESTIMATED PREMIUM $1,224
+
+
+ ┌────────────────────────────────────────────────────────┐ ┌────────────────────────────────────────────────────────┐
+ │ Schedule Conditions                                    │ │ Reading This Schedule                                  │
+ │ Entries on this schedule apply only to the coverage    │ │ Read scheduled lines together with the declarations    │
+ │ part, location, class, state, or form reference shown  │ │ and attached forms to determine the complete           │
+ │ on the same row.                                       │ │ scheduled item.                                        │
+ └────────────────────────────────────────────────────────┘ └────────────────────────────────────────────────────────┘
+
+
+Blue Kettle Food Service, LLC                                                                 PREM-SCH
 
 # Page 107
 
-POLICY PACKET                                                                              POLICY COPY 1F7EA01
+ARGENT BIRCH EMPLOYERS | WORKERS COMPENSATION AND EMPLOYERS LIABILITY
+Premium Summary - Continued 4
+YW700400
+04/01/2026 - 04/01/2027
 
-Underwriting Support
+ Total scheduled premium for the rows shown on this schedule: $512,617.
 
-Policy jacket notices and state exceptions
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
+RI           Schedule entry RI records class 9082; loc 2; payroll $463,529.
+             CLASS 9082                                              LOC 2
+             PAYROLL $463,529                                        ESTIMATED PREMIUM $28,831
 
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-094-01,State exception,Reviewed,State form
-REF-094-02,Form filing note,Pending,Rating file
-REF-094-03,Policy jacket notices and state exceptions,Indexed,Policy audit
-REF-094-04,Prior policy comparison,Archive,Producer copy
-REF-094-05,Rating worksheet,Reviewed,State form
-REF-094-06,Producer correspondence,Pending,Rating file
-REF-094-07,State exception,Indexed,Policy audit
-REF-094-08,Form filing note,Archive,Producer copy
-REF-094-09,Policy jacket notices and state exceptions,Reviewed,State form
-REF-094-10,Prior policy comparison,Pending,Rating file
-REF-094-11,Rating worksheet,Indexed,Policy audit
-REF-094-12,Producer correspondence,Archive,Producer copy
-REF-094-13,State exception,Reviewed,State form
-REF-094-14,Form filing note,Pending,Rating file
-REF-094-15,Policy jacket notices and state exceptions,Indexed,Policy audit
-REF-094-16,Prior policy comparison,Archive,Producer copy
-REF-094-17,Rating worksheet,Reviewed,State form
-REF-094-18,Producer correspondence,Pending,Rating file
-REF-094-19,State exception,Indexed,Policy audit
-REF-094-20,Form filing note,Archive,Producer copy
-REF-094-21,Policy jacket notices and state exceptions,Reviewed,State form
-REF-094-22,Prior policy comparison,Pending,Rating file
-REF-094-23,Rating worksheet,Indexed,Policy audit
-REF-094-24,Producer correspondence,Archive,Producer copy
-REF-094-25,State exception,Reviewed,State form
-REF-094-26,Form filing note,Pending,Rating file
-REF-094-27,Policy jacket notices and state exceptions,Indexed,Policy audit
-REF-094-28,Prior policy comparison,Archive,Producer copy
-REF-094-29,Rating worksheet,Reviewed,State form
-REF-094-30,Producer correspondence,Pending,Rating file
+ME           Class: 3632. The remaining values below apply to this same scheduled item.
+             LOC 3                                                   PAYROLL $475,950
+             ESTIMATED PREMIUM $3,522
 
-Policy packet                                                                                             Page 94
+NH           NH - Class: 9015 / Loc: 4
+             Payroll: $485,364 / Estimated Premium: $21,113
+
+VT           VT. Class is 5606. Loc is 5. Payroll is $495,123. Estimated Premium is $21,537.
+             CLASS 5606
+             LOC 5
+             PAYROLL $495,123
+             ESTIMATED PREMIUM $21,537
+
+CT           Schedule entry CT records class 8810; loc 1; payroll $502,147.
+             CLASS 8810                                              LOC 1
+             PAYROLL $502,147                                        ESTIMATED PREMIUM $5,774
+
+CT           Class: 8017. The remaining values below apply to this same scheduled item.
+             LOC 2                                                   PAYROLL $514,119
+             ESTIMATED PREMIUM $1,388
+
+MA           MA - Class: 8742 / Loc: 3
+             Payroll: $532,778 / Estimated Premium: $1,438
+
+MA           MA. Class is 5190. Loc is 4. Payroll is $545,022. Estimated Premium is $23,708.
+             CLASS 5190
+             LOC 4
+             PAYROLL $545,022
+             ESTIMATED PREMIUM $23,708
+
+RI           Schedule entry RI records class 9082; loc 5; payroll $556,426.
+             CLASS 9082                                              LOC 5
+             PAYROLL $556,426                                        ESTIMATED PREMIUM $4,117
+
+ME           Class: 3632. The remaining values below apply to this same scheduled item.
+             LOC 1                                                   PAYROLL $567,480
+             ESTIMATED PREMIUM $35,297
+
+NH           NH - Class: 9015 / Loc: 2
+             Payroll: $572,285 / Estimated Premium: $1,030
+
+VT           VT. Class is 5606. Loc is 3. Payroll is $584,565. Estimated Premium is $6,722.
+             CLASS 5606
+             LOC 3
+             PAYROLL $584,565
+             ESTIMATED PREMIUM $6,722
+
++---------------------------------------------------------+ +---------------------------------------------------------+
+| Schedule Conditions                                     | | Reading This Schedule                                   |
+| Entries on this schedule apply only to the coverage     | | Read scheduled lines together with the declarations and |
+| part, location, class, state, or form reference shown   | | attached forms to determine the complete scheduled    |
+| on the same row.                                        | | item.                                                   |
++---------------------------------------------------------+ +---------------------------------------------------------+
+
+Blue Kettle Food Service, LLC                                                                                  PREM-SCH
 
 # Page 108
 
-POLICY PACKET
-POLICY COPY 1F7EA01
-
-Underwriting Support
-
-Policy jacket notices and state exceptions
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
-
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-095-01,Form filing note,Reviewed,Rating file
-REF-095-02,Policy jacket notices and state exceptions,Pending,Policy audit
-REF-095-03,Prior policy comparison,Indexed,Producer copy
-REF-095-04,Rating worksheet,Archive,State form
-REF-095-05,Producer correspondence,Reviewed,Rating file
-REF-095-06,State exception,Pending,Policy audit
-REF-095-07,Form filing note,Indexed,Producer copy
-REF-095-08,Policy jacket notices and state exceptions,Archive,State form
-REF-095-09,Prior policy comparison,Reviewed,Rating file
-REF-095-10,Rating worksheet,Pending,Policy audit
-REF-095-11,Producer correspondence,Indexed,Producer copy
-REF-095-12,State exception,Archive,State form
-REF-095-13,Form filing note,Reviewed,Rating file
-REF-095-14,Policy jacket notices and state exceptions,Pending,Policy audit
-REF-095-15,Prior policy comparison,Indexed,Producer copy
-REF-095-16,Rating worksheet,Archive,State form
-REF-095-17,Producer correspondence,Reviewed,Rating file
-REF-095-18,State exception,Pending,Policy audit
-REF-095-19,Form filing note,Indexed,Producer copy
-REF-095-20,Policy jacket notices and state exceptions,Archive,State form
-REF-095-21,Prior policy comparison,Reviewed,Rating file
-REF-095-22,Rating worksheet,Pending,Policy audit
-REF-095-23,Producer correspondence,Indexed,Producer copy
-REF-095-24,State exception,Archive,State form
-REF-095-25,Form filing note,Reviewed,Rating file
-REF-095-26,Policy jacket notices and state exceptions,Pending,Policy audit
-REF-095-27,Prior policy comparison,Indexed,Producer copy
-REF-095-28,Rating worksheet,Archive,State form
-REF-095-29,Producer correspondence,Reviewed,Rating file
-REF-095-30,State exception,Pending,Policy audit
-
-Policy packet
-Page 95
-
-# Page 109
-
-POLICY PACKET                                                                    POLICY COPY 1F7EA01
-
-Underwriting Support
-
-Policy jacket notices and state exceptions
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
-
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-096-01,Policy jacket notices and state exceptions,Reviewed,Policy audit
-REF-096-02,Prior policy comparison,Pending,Producer copy
-REF-096-03,Rating worksheet,Indexed,State form
-REF-096-04,Producer correspondence,Archive,Rating file
-REF-096-05,State exception,Reviewed,Policy audit
-REF-096-06,Form filing note,Pending,Producer copy
-REF-096-07,Policy jacket notices and state exceptions,Indexed,State form
-REF-096-08,Prior policy comparison,Archive,Rating file
-REF-096-09,Rating worksheet,Reviewed,Policy audit
-REF-096-10,Producer correspondence,Pending,Producer copy
-REF-096-11,State exception,Indexed,State form
-REF-096-12,Form filing note,Archive,Rating file
-REF-096-13,Policy jacket notices and state exceptions,Reviewed,Policy audit
-REF-096-14,Prior policy comparison,Pending,Producer copy
-REF-096-15,Rating worksheet,Indexed,State form
-REF-096-16,Producer correspondence,Archive,Rating file
-REF-096-17,State exception,Reviewed,Policy audit
-REF-096-18,Form filing note,Pending,Producer copy
-REF-096-19,Policy jacket notices and state exceptions,Indexed,State form
-REF-096-20,Prior policy comparison,Archive,Rating file
-REF-096-21,Rating worksheet,Reviewed,Policy audit
-REF-096-22,Producer correspondence,Pending,Producer copy
-REF-096-23,State exception,Indexed,State form
-REF-096-24,Form filing note,Archive,Rating file
-REF-096-25,Policy jacket notices and state exceptions,Reviewed,Policy audit
-REF-096-26,Prior policy comparison,Pending,Producer copy
-REF-096-27,Rating worksheet,Indexed,State form
-REF-096-28,Producer correspondence,Archive,Rating file
-REF-096-29,State exception,Reviewed,Policy audit
-REF-096-30,Form filing note,Pending,Producer copy
-
-Policy packet                                                                                     Page 96
-
-# Page 110
-
-POLICY PACKET                                                       | POLICY COPY 1F7EA01 |
-Underwriting Support
-
-Policy jacket notices and state exceptions
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
-
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-097-01,Prior policy comparison,Reviewed,Producer copy
-REF-097-02,Rating worksheet,Pending,State form
-REF-097-03,Producer correspondence,Indexed,Rating file
-REF-097-04,State exception,Archive,Policy audit
-REF-097-05,Form filing note,Reviewed,Producer copy
-REF-097-06,Policy jacket notices and state exceptions,Pending,State form
-REF-097-07,Prior policy comparison,Indexed,Rating file
-REF-097-08,Rating worksheet,Archive,Policy audit
-REF-097-09,Producer correspondence,Reviewed,Producer copy
-REF-097-10,State exception,Pending,State form
-REF-097-11,Form filing note,Indexed,Rating file
-REF-097-12,Policy jacket notices and state exceptions,Archive,Policy audit
-REF-097-13,Prior policy comparison,Reviewed,Producer copy
-REF-097-14,Rating worksheet,Pending,State form
-REF-097-15,Producer correspondence,Indexed,Rating file
-REF-097-16,State exception,Archive,Policy audit
-REF-097-17,Form filing note,Reviewed,Producer copy
-REF-097-18,Policy jacket notices and state exceptions,Pending,State form
-REF-097-19,Prior policy comparison,Indexed,Rating file
-REF-097-20,Rating worksheet,Archive,Policy audit
-REF-097-21,Producer correspondence,Reviewed,Producer copy
-REF-097-22,State exception,Pending,State form
-REF-097-23,Form filing note,Indexed,Rating file
-REF-097-24,Policy jacket notices and state exceptions,Archive,Policy audit
-REF-097-25,Prior policy comparison,Reviewed,Producer copy
-REF-097-26,Rating worksheet,Pending,State form
-REF-097-27,Producer correspondence,Indexed,Rating file
-REF-097-28,State exception,Archive,Policy audit
-REF-097-29,Form filing note,Reviewed,Producer copy
-REF-097-30,Policy jacket notices and state exceptions,Pending,State form
-
-Policy packet                                                                             Page 97
-
-# Page 111
-
-POLICY PACKET                                                                   POLICY COPY 1F7EA01
-
-Underwriting Support
-
-Policy jacket notices and state exceptions
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
-
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-098-01,Rating worksheet,Reviewed,State form
-REF-098-02,Producer correspondence,Pending,Rating file
-REF-098-03,State exception,Indexed,Policy audit
-REF-098-04,Form filing note,Archive,Producer copy
-REF-098-05,Policy jacket notices and state exceptions,Reviewed,State form
-REF-098-06,Prior policy comparison,Pending,Rating file
-REF-098-07,Rating worksheet,Indexed,Policy audit
-REF-098-08,Producer correspondence,Archive,Producer copy
-REF-098-09,State exception,Reviewed,State form
-REF-098-10,Form filing note,Pending,Rating file
-REF-098-11,Policy jacket notices and state exceptions,Indexed,Policy audit
-REF-098-12,Prior policy comparison,Archive,Producer copy
-REF-098-13,Rating worksheet,Reviewed,State form
-REF-098-14,Producer correspondence,Pending,Rating file
-REF-098-15,State exception,Indexed,Policy audit
-REF-098-16,Form filing note,Archive,Producer copy
-REF-098-17,Policy jacket notices and state exceptions,Reviewed,State form
-REF-098-18,Prior policy comparison,Pending,Rating file
-REF-098-19,Rating worksheet,Indexed,Policy audit
-REF-098-20,Producer correspondence,Archive,Producer copy
-REF-098-21,State exception,Reviewed,State form
-REF-098-22,Form filing note,Pending,Rating file
-REF-098-23,Policy jacket notices and state exceptions,Indexed,Policy audit
-REF-098-24,Prior policy comparison,Archive,Producer copy
-REF-098-25,Rating worksheet,Reviewed,State form
-REF-098-26,Producer correspondence,Pending,Rating file
-REF-098-27,State exception,Indexed,Policy audit
-REF-098-28,Form filing note,Archive,Producer copy
-REF-098-29,Policy jacket notices and state exceptions,Reviewed,State form
-REF-098-30,Prior policy comparison,Pending,Rating file
-
-Policy packet                                                                                   Page 98
-
-# Page 112
-
-POLICY PACKET                                                                      POLICY COPY 1F7EA01
-
-Underwriting Support
-
-Policy jacket notices and state exceptions
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
-
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-099-01,Producer correspondence,Reviewed,Rating file
-REF-099-02,State exception,Pending,Policy audit
-REF-099-03,Form filing note,Indexed,Producer copy
-REF-099-04,Policy jacket notices and state exceptions,Archive,State form
-REF-099-05,Prior policy comparison,Reviewed,Rating file
-REF-099-06,Rating worksheet,Pending,Policy audit
-REF-099-07,Producer correspondence,Indexed,Producer copy
-REF-099-08,State exception,Archive,State form
-REF-099-09,Form filing note,Reviewed,Rating file
-REF-099-10,Policy jacket notices and state exceptions,Pending,Policy audit
-REF-099-11,Prior policy comparison,Indexed,Producer copy
-REF-099-12,Rating worksheet,Archive,State form
-REF-099-13,Producer correspondence,Reviewed,Rating file
-REF-099-14,State exception,Pending,Policy audit
-REF-099-15,Form filing note,Indexed,Producer copy
-REF-099-16,Policy jacket notices and state exceptions,Archive,State form
-REF-099-17,Prior policy comparison,Reviewed,Rating file
-REF-099-18,Rating worksheet,Pending,Policy audit
-REF-099-19,Producer correspondence,Indexed,Producer copy
-REF-099-20,State exception,Archive,State form
-REF-099-21,Form filing note,Reviewed,Rating file
-REF-099-22,Policy jacket notices and state exceptions,Pending,Policy audit
-REF-099-23,Prior policy comparison,Indexed,Producer copy
-REF-099-24,Rating worksheet,Archive,State form
-REF-099-25,Producer correspondence,Reviewed,Rating file
-REF-099-26,State exception,Pending,Policy audit
-REF-099-27,Form filing note,Indexed,Producer copy
-REF-099-28,Policy jacket notices and state exceptions,Archive,State form
-REF-099-29,Prior policy comparison,Reviewed,Rating file
-REF-099-30,Rating worksheet,Pending,Policy audit
-
-Policy packet                                                                                     Page 99
-
-# Page 113
-
-POLICY PACKET                                                                   | POLICY COPY 1F7EA01 |
-Underwriting Support
-
-Policy jacket notices and state exceptions
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
-
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-100-01,State exception,Reviewed,Policy audit
-REF-100-02,Form filing note,Pending,Producer copy
-REF-100-03,Policy jacket notices and state exceptions,Indexed,State form
-REF-100-04,Prior policy comparison,Archive,Rating file
-REF-100-05,Rating worksheet,Reviewed,Policy audit
-REF-100-06,Producer correspondence,Pending,Producer copy
-REF-100-07,State exception,Indexed,State form
-REF-100-08,Form filing note,Archive,Rating file
-REF-100-09,Policy jacket notices and state exceptions,Reviewed,Policy audit
-REF-100-10,Prior policy comparison,Pending,Producer copy
-REF-100-11,Rating worksheet,Indexed,State form
-REF-100-12,Producer correspondence,Archive,Rating file
-REF-100-13,State exception,Reviewed,Policy audit
-REF-100-14,Form filing note,Pending,Producer copy
-REF-100-15,Policy jacket notices and state exceptions,Indexed,State form
-REF-100-16,Prior policy comparison,Archive,Rating file
-REF-100-17,Rating worksheet,Reviewed,Policy audit
-REF-100-18,Producer correspondence,Pending,Producer copy
-REF-100-19,State exception,Indexed,State form
-REF-100-20,Form filing note,Archive,Rating file
-REF-100-21,Policy jacket notices and state exceptions,Reviewed,Policy audit
-REF-100-22,Prior policy comparison,Pending,Producer copy
-REF-100-23,Rating worksheet,Indexed,State form
-REF-100-24,Producer correspondence,Archive,Rating file
-REF-100-25,State exception,Reviewed,Policy audit
-REF-100-26,Form filing note,Pending,Producer copy
-REF-100-27,Policy jacket notices and state exceptions,Indexed,State form
-REF-100-28,Prior policy comparison,Archive,Rating file
-REF-100-29,Rating worksheet,Reviewed,Policy audit
-REF-100-30,Producer correspondence,Pending,Producer copy
-
-Policy packet                                                                                Page 100
-
-# Page 114
-
-POLICY PACKET                                                             [POLICY COPY 1F7EA01]
-
-# Underwriting Support
-
-**Policy jacket notices and state exceptions**
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
-
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-101-01,Form filing note,Reviewed,Producer copy
-REF-101-02,Policy jacket notices and state exceptions,Pending,State form
-REF-101-03,Prior policy comparison,Indexed,Rating file
-REF-101-04,Rating worksheet,Archive,Policy audit
-REF-101-05,Producer correspondence,Reviewed,Producer copy
-REF-101-06,State exception,Pending,State form
-REF-101-07,Form filing note,Indexed,Rating file
-REF-101-08,Policy jacket notices and state exceptions,Archive,Policy audit
-REF-101-09,Prior policy comparison,Reviewed,Producer copy
-REF-101-10,Rating worksheet,Pending,State form
-REF-101-11,Producer correspondence,Indexed,Rating file
-REF-101-12,State exception,Archive,Policy audit
-REF-101-13,Form filing note,Reviewed,Producer copy
-REF-101-14,Policy jacket notices and state exceptions,Pending,State form
-REF-101-15,Prior policy comparison,Indexed,Rating file
-REF-101-16,Rating worksheet,Archive,Policy audit
-REF-101-17,Producer correspondence,Reviewed,Producer copy
-REF-101-18,State exception,Pending,State form
-REF-101-19,Form filing note,Indexed,Rating file
-REF-101-20,Policy jacket notices and state exceptions,Archive,Policy audit
-REF-101-21,Prior policy comparison,Reviewed,Producer copy
-REF-101-22,Rating worksheet,Pending,State form
-REF-101-23,Producer correspondence,Indexed,Rating file
-REF-101-24,State exception,Archive,Policy audit
-REF-101-25,Form filing note,Reviewed,Producer copy
-REF-101-26,Policy jacket notices and state exceptions,Pending,State form
-REF-101-27,Prior policy comparison,Indexed,Rating file
-REF-101-28,Rating worksheet,Archive,Policy audit
-REF-101-29,Producer correspondence,Reviewed,Producer copy
-REF-101-30,State exception,Pending,State form
-
-Policy packet                                                                          Page 101
-
-# Page 115
-
-POLICY PACKET
-Underwriting Support                                                     [POLICY COPY 1F7EA01]
-
-Policy jacket notices and state exceptions
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
-
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-102-01,Policy jacket notices and state exceptions,Reviewed,State form
-REF-102-02,Prior policy comparison,Pending,Rating file
-REF-102-03,Rating worksheet,Indexed,Policy audit
-REF-102-04,Producer correspondence,Archive,Producer copy
-REF-102-05,State exception,Reviewed,State form
-REF-102-06,Form filing note,Pending,Rating file
-REF-102-07,Policy jacket notices and state exceptions,Indexed,Policy audit
-REF-102-08,Prior policy comparison,Archive,Producer copy
-REF-102-09,Rating worksheet,Reviewed,State form
-REF-102-10,Producer correspondence,Pending,Rating file
-REF-102-11,State exception,Indexed,Policy audit
-REF-102-12,Form filing note,Archive,Producer copy
-REF-102-13,Policy jacket notices and state exceptions,Reviewed,State form
-REF-102-14,Prior policy comparison,Pending,Rating file
-REF-102-15,Rating worksheet,Indexed,Policy audit
-REF-102-16,Producer correspondence,Archive,Producer copy
-REF-102-17,State exception,Reviewed,State form
-REF-102-18,Form filing note,Pending,Rating file
-REF-102-19,Policy jacket notices and state exceptions,Indexed,Policy audit
-REF-102-20,Prior policy comparison,Archive,Producer copy
-REF-102-21,Rating worksheet,Reviewed,State form
-REF-102-22,Producer correspondence,Pending,Rating file
-REF-102-23,State exception,Indexed,Policy audit
-REF-102-24,Form filing note,Archive,Producer copy
-REF-102-25,Policy jacket notices and state exceptions,Reviewed,State form
-REF-102-26,Prior policy comparison,Pending,Rating file
-REF-102-27,Rating worksheet,Indexed,Policy audit
-REF-102-28,Producer correspondence,Archive,Producer copy
-REF-102-29,State exception,Reviewed,State form
-REF-102-30,Form filing note,Pending,Rating file
-
-Policy packet                                                                                   Page 102
-
-# Page 116
-
-POLICY PACKET                                                                                    +------------------------+
-                                                                                                 |  POLICY COPY 1F7EA01  |
-                                                                                                 +------------------------+
-# Policy Form Provisions
-
-### Policy form clauses
-
-| | |
-| :--- | :--- |
-| **WC 00 00 01 A 07 23 - CONDITION**<br><br>**Remuneration Audit**<br>The annual payroll of $45,136 for CT class 8810, Location 1 is an estimate and is subject to audit after the policy period.<br><br>*Applies within CT class 8810, Location 1; location ; class 8810; limit ; deductible . Annual Payroll: $45,136; Classification: Clerical office employees; Estimated Premium: $189; Form Title: Information Page; State: CT* | **WC 00 00 00 C 01 15 - LIMITATION**<br><br>**Officer And Subcontractor Treatment**<br>Officer, member, volunteer, leased-worker, and subcontractor treatment for CT class 8017, Location 2 must be read with the attached forms schedule.<br><br>*Applies within CT class 8017, Location 2; location ; class 8017; limit ; deductible . Annual Payroll: $54,124; Classification: Retail store - all employees; Estimated Premium: $400; Form Title: Voluntary Compensation Endorsement; State: CT* |
-| **WC 00 00 01 A 07 23 - CONDITION**<br><br>**State Classification Control**<br>The CT classification 8810 controls the rating basis for Clerical office employees unless a state amendatory endorsement changes it.<br><br>*Applies within CT class 8810, Location 1; location ; class 8810; limit ; deductible . Annual Payroll: $45,136; Classification: Clerical office employees; Estimated Premium: $189; Form Title: Information Page; State: CT* | **WC 00 00 00 C 01 15 - CONDITION**<br><br>**Premium Revision Basis**<br>The estimated premium of $400 is calculated from rate 0.74, experience modification 1.04, and schedule rating 0%.<br><br>*Applies within CT class 8017, Location 2; location ; class 8017; limit ; deductible . Annual Payroll: $54,124; Classification: Retail store - all employees; Estimated Premium: $400; Form Title: Voluntary Compensation Endorsement; State: CT* |
-| **WC 00 00 01 A 07 23 - LIMITATION**<br><br>**Officer And Subcontractor Treatment**<br>Officer, member, volunteer, leased-worker, and subcontractor treatment for CT class 8810, Location 1 must be read with the attached forms schedule.<br><br>*Applies within CT class 8810, Location 1; location ; class 8810; limit ; deductible . Annual Payroll: $45,136; Classification: Clerical office employees; Estimated Premium: $189; Form Title: Information Page; State: CT* | **WC 00 00 00 C 01 15 - CONDITION**<br><br>**Remuneration Audit**<br>The annual payroll of $70,826 for MA class 8742, Location 3 is an estimate and is subject to audit after the policy period.<br><br>*Applies within MA class 8742, Location 3; location ; class 8742; limit ; deductible . Annual Payroll: $70,826; Classification: Outside salespersons; Estimated Premium: $127; Form Title: Workers Compensation and Employers Liability Policy; State: MA* |
-| **WC 00 00 01 A 07 23 - CONDITION**<br><br>**Premium Revision Basis**<br>The estimated premium of $189 is calculated from rate 0.42, experience modification 1.04, and schedule rating 0%.<br><br>*Applies within CT class 8810, Location 1; location ; class 8810; limit ; deductible . Annual Payroll: $45,136; Classification: Clerical office employees; Estimated Premium: $189; Form Title: Information Page; State: CT* | **WC 00 00 00 C 01 15 - CONDITION**<br><br>**State Classification Control**<br>The MA classification 8742 controls the rating basis for Outside salespersons unless a state amendatory endorsement changes it.<br><br>*Applies within MA class 8742, Location 3; location ; class 8742; limit ; deductible . Annual Payroll: $70,826; Classification: Outside salespersons; Estimated Premium: $127; Form Title: Workers Compensation and Employers Liability Policy; State: MA* |
-| **WC 00 00 00 C 01 15 - CONDITION**<br><br>**Remuneration Audit**<br>The annual payroll of $54,124 for CT class 8017, Location 2 is an estimate and is subject to audit after the policy period.<br><br>*Applies within CT class 8017, Location 2; location ; class 8017; limit ; deductible . Annual Payroll: $54,124; Classification: Retail store - all employees; Estimated Premium: $400; Form Title: Voluntary Compensation Endorsement; State: CT* | **WC 00 00 00 C 01 15 - LIMITATION**<br><br>**Officer And Subcontractor Treatment**<br>Officer, member, volunteer, leased-worker, and subcontractor treatment for MA class 8742, Location 3 must be read with the attached forms schedule.<br><br>*Applies within MA class 8742, Location 3; location ; class 8742; limit ; deductible . Annual Payroll: $70,826; Classification: Outside salespersons; Estimated Premium: $127; Form Title: Workers Compensation and Employers Liability Policy; State: MA* |
-| **WC 00 00 00 C 01 15 - CONDITION**<br><br>**State Classification Control**<br>The CT classification 8017 controls the rating basis for Retail store - all employees unless a state amendatory endorsement changes it.<br><br>*Applies within CT class 8017, Location 2; location ; class 8017; limit ; deductible . Annual Payroll: $54,124; Classification: Retail store - all employees; Estimated Premium: $400; Form Title: Voluntary Compensation Endorsement; State: CT* | **WC 00 00 00 C 01 15 - CONDITION**<br><br>**Premium Revision Basis**<br>The estimated premium of $127 is calculated from rate 0.18, experience modification 1.04, and schedule rating 0%.<br><br>*Applies within MA class 8742, Location 3; location ; class 8742; limit ; deductible . Annual Payroll: $70,826; Classification: Outside salespersons; Estimated Premium: $127; Form Title: Workers Compensation and Employers Liability Policy; State: MA* |
-
-__________________________________________________________________________________________________________
-Policy packet                                                                                     Page 103
-
-# Page 117
-
-"Clause Code","Clause Type","Title","Description","Applies To"
-"WC 04 03 06 01 15","CONDITION","Remuneration Audit","The annual payroll of $77,560 for MA class 5190, Location 4 is an estimate and is subject to audit after the policy period.","Applies within MA class 5190, Location 4; location ; class 5190; limit ; deductible . Annual Payroll: $77,560; Classification: Electrical wiring within buildings; Estimated Premium: $2,218; Form Title: Workers Compensation and Employers Liability Policy; State: MA"
-"WC 00 00 01 A 01 15","LIMITATION","Officer And Subcontractor Treatment","Officer, member, volunteer, leased-worker, and subcontractor treatment for RI class 9082, Location 5 must be read with the attached forms schedule.","Applies within RI class 9082, Location 5; location ; class 9082; limit ; deductible . Annual Payroll: $90,759; Classification: Restaurant NOC; Estimated Premium: $245; Form Title: Voluntary Compensation Endorsement; State: RI"
-"WC 04 03 06 01 15","CONDITION","State Classification Control","The MA classification 5190 controls the rating basis for Electrical wiring within buildings unless a state amendatory endorsement changes it.","Applies within MA class 5190, Location 4; location ; class 5190; limit ; deductible . Annual Payroll: $77,560; Classification: Electrical wiring within buildings; Estimated Premium: $2,218; Form Title: Workers Compensation and Employers Liability Policy; State: MA"
-"WC 00 00 01 A 01 15","CONDITION","Premium Revision Basis","The estimated premium of $245 is calculated from rate 0.27, experience modification 1.04, and schedule rating 0%.","Applies within RI class 9082, Location 5; location ; class 9082; limit ; deductible . Annual Payroll: $90,759; Classification: Restaurant NOC; Estimated Premium: $245; Form Title: Voluntary Compensation Endorsement; State: RI"
-"WC 04 03 06 01 15","LIMITATION","Officer And Subcontractor Treatment","Officer, member, volunteer, leased-worker, and subcontractor treatment for MA class 5190, Location 4 must be read with the attached forms schedule.","Applies within MA class 5190, Location 4; location ; class 5190; limit ; deductible . Annual Payroll: $77,560; Classification: Electrical wiring within buildings; Estimated Premium: $2,218; Form Title: Workers Compensation and Employers Liability Policy; State: MA"
-"WC 00 00 01 A 01 15","CONDITION","Remuneration Audit","The annual payroll of $99,561 for ME class 3632, Location 1 is an estimate and is subject to audit after the policy period.","Applies within ME class 3632, Location 1; location ; class 3632; limit ; deductible . Annual Payroll: $99,561; Classification: Machine shop NOC; Estimated Premium: $2,847; Form Title: Voluntary Compensation Endorsement; State: ME"
-"WC 04 03 06 01 15","CONDITION","Premium Revision Basis","The estimated premium of $2,218 is calculated from rate 2.86, experience modification 1.04, and schedule rating 0%.","Applies within MA class 5190, Location 4; location ; class 5190; limit ; deductible . Annual Payroll: $77,560; Classification: Electrical wiring within buildings; Estimated Premium: $2,218; Form Title: Workers Compensation and Employers Liability Policy; State: MA"
-"WC 00 00 01 A 01 15","CONDITION","State Classification Control","The ME classification 3632 controls the rating basis for Machine shop NOC unless a state amendatory endorsement changes it.","Applies within ME class 3632, Location 1; location ; class 3632; limit ; deductible . Annual Payroll: $99,561; Classification: Machine shop NOC; Estimated Premium: $2,847; Form Title: Voluntary Compensation Endorsement; State: ME"
-"WC 00 00 01 A 01 15","CONDITION","Remuneration Audit","The annual payroll of $90,759 for RI class 9082, Location 5 is an estimate and is subject to audit after the policy period.","Applies within RI class 9082, Location 5; location ; class 9082; limit ; deductible . Annual Payroll: $90,759; Classification: Restaurant NOC; Estimated Premium: $245; Form Title: Voluntary Compensation Endorsement; State: RI"
-"WC 00 00 01 A 01 15","LIMITATION","Officer And Subcontractor Treatment","Officer, member, volunteer, leased-worker, and subcontractor treatment for ME class 3632, Location 1 must be read with the attached forms schedule.","Applies within ME class 3632, Location 1; location ; class 3632; limit ; deductible . Annual Payroll: $99,561; Classification: Machine shop NOC; Estimated Premium: $2,847; Form Title: Voluntary Compensation Endorsement; State: ME"
-"WC 00 00 01 A 01 15","CONDITION","State Classification Control","The RI classification 9082 controls the rating basis for Restaurant NOC unless a state amendatory endorsement changes it.","Applies within RI class 9082, Location 5; location ; class 9082; limit ; deductible . Annual Payroll: $90,759; Classification: Restaurant NOC; Estimated Premium: $245; Form Title: Voluntary Compensation Endorsement; State: RI"
-"WC 00 00 01 A 01 15","CONDITION","Premium Revision Basis","The estimated premium of $2,847 is calculated from rate 2.86, experience modification 1.04, and schedule rating 0%.","Applies within ME class 3632, Location 1; location ; class 3632; limit ; deductible . Annual Payroll: $99,561; Classification: Machine shop NOC; Estimated Premium: $2,847; Form Title: Voluntary Compensation Endorsement; State: ME"
-
-# Page 118
-
-POLICY PACKET &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [POLICY COPY 1F7EA01]
-
-# Policy Form Provisions
-
----
-
-### Policy form clauses
-
-| | |
-| :--- | :--- |
-| **WC 00 00 00 C 01 15 - CONDITION**<br><br>**Remuneration Audit**<br>The annual payroll of $111,259 for NH class 9015, Location 2 is an estimate and is subject to audit after the policy period.<br><br>Applies within NH class 9015, Location 2; location ; class 9015; limit ; deductible . Annual Payroll: $111,259; Classification: Building operations by owner; Estimated Premium: $3,182; Form Title: Information Page; State: NH | **WC 00 00 01 A 04 21 - LIMITATION**<br><br>**Officer And Subcontractor Treatment**<br>Officer, member, volunteer, leased-worker, and subcontractor treatment for VT class 5606, Location 3 must be read with the attached forms schedule.<br><br>Applies within VT class 5606, Location 3; location ; class 5606; limit ; deductible . Annual Payroll: $127,460; Classification: Contractor executive supervisor; Estimated Premium: $7,928; Form Title: Waiver of Our Right to Recover; State: VT |
-| **WC 00 00 00 C 01 15 - CONDITION**<br><br>**State Classification Control**<br>The NH classification 9015 controls the rating basis for Building operations by owner unless a state amendatory endorsement changes it.<br><br>Applies within NH class 9015, Location 2; location ; class 9015; limit ; deductible . Annual Payroll: $111,259; Classification: Building operations by owner; Estimated Premium: $3,182; Form Title: Information Page; State: NH | **WC 00 00 01 A 04 21 - CONDITION**<br><br>**Premium Revision Basis**<br>The estimated premium of $7,928 is calculated from rate 6.22, experience modification 1.04, and schedule rating 0%.<br><br>Applies within VT class 5606, Location 3; location ; class 5606; limit ; deductible . Annual Payroll: $127,460; Classification: Contractor executive supervisor; Estimated Premium: $7,928; Form Title: Waiver of Our Right to Recover; State: VT |
-| **WC 00 00 00 C 01 15 - LIMITATION**<br><br>**Officer And Subcontractor Treatment**<br>Officer, member, volunteer, leased-worker, and subcontractor treatment for NH class 9015, Location 2 must be read with the attached forms schedule.<br><br>Applies within NH class 9015, Location 2; location ; class 9015; limit ; deductible . Annual Payroll: $111,259; Classification: Building operations by owner; Estimated Premium: $3,182; Form Title: Information Page; State: NH | **WC 04 03 06 01 15 - CONDITION**<br><br>**Remuneration Audit**<br>The annual payroll of $139,137 for CT class 8810, Location 4 is an estimate and is subject to audit after the policy period.<br><br>Applies within CT class 8810, Location 4; location ; class 8810; limit ; deductible . Annual Payroll: $139,137; Classification: Clerical office employees; Estimated Premium: $8,654; Form Title: Workers Compensation and Employers Liability Policy; State: CT |
-| **WC 00 00 00 C 01 15 - CONDITION**<br><br>**Premium Revision Basis**<br>The estimated premium of $3,182 is calculated from rate 2.86, experience modification 1.04, and schedule rating 0%.<br><br>Applies within NH class 9015, Location 2; location ; class 9015; limit ; deductible . Annual Payroll: $111,259; Classification: Building operations by owner; Estimated Premium: $3,182; Form Title: Information Page; State: NH | **WC 04 03 06 01 15 - CONDITION**<br><br>**State Classification Control**<br>The CT classification 8810 controls the rating basis for Clerical office employees unless a state amendatory endorsement changes it.<br><br>Applies within CT class 8810, Location 4; location ; class 8810; limit ; deductible . Annual Payroll: $139,137; Classification: Clerical office employees; Estimated Premium: $8,654; Form Title: Workers Compensation and Employers Liability Policy; State: CT |
-| **WC 00 00 01 A 04 21 - CONDITION**<br><br>**Remuneration Audit**<br>The annual payroll of $127,460 for VT class 5606, Location 3 is an estimate and is subject to audit after the policy period.<br><br>Applies within VT class 5606, Location 3; location ; class 5606; limit ; deductible . Annual Payroll: $127,460; Classification: Contractor executive supervisor; Estimated Premium: $7,928; Form Title: Waiver of Our Right to Recover; State: VT | **WC 04 03 06 01 15 - LIMITATION**<br><br>**Officer And Subcontractor Treatment**<br>Officer, member, volunteer, leased-worker, and subcontractor treatment for CT class 8810, Location 4 must be read with the attached forms schedule.<br><br>Applies within CT class 8810, Location 4; location ; class 8810; limit ; deductible . Annual Payroll: $139,137; Classification: Clerical office employees; Estimated Premium: $8,654; Form Title: Workers Compensation and Employers Liability Policy; State: CT |
-| **WC 00 00 01 A 04 21 - CONDITION**<br><br>**State Classification Control**<br>The VT classification 5606 controls the rating basis for Contractor executive supervisor unless a state amendatory endorsement changes it.<br><br>Applies within VT class 5606, Location 3; location ; class 5606; limit ; deductible . Annual Payroll: $127,460; Classification: Contractor executive supervisor; Estimated Premium: $7,928; Form Title: Waiver of Our Right to Recover; State: VT | **WC 04 03 06 01 15 - CONDITION**<br><br>**Premium Revision Basis**<br>The estimated premium of $8,654 is calculated from rate 6.22, experience modification 1.04, and schedule rating 0%.<br><br>Applies within CT class 8810, Location 4; location ; class 8810; limit ; deductible . Annual Payroll: $139,137; Classification: Clerical office employees; Estimated Premium: $8,654; Form Title: Workers Compensation and Employers Liability Policy; State: CT |
-
----
-
-Policy packet &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Page 105
-
-# Page 119
-
-POLICY PACKET                                                                      +---------------------+
-Policy Form Provisions                                                             | POLICY COPY 1F7EA01 |
-___________________________________________________________________________________+---------------------+
-
-Policy form clauses
-
-| | |
-|:---|:---|
-| **WC 04 03 06 04 21 - CONDITION**<br><br>**Remuneration Audit**<br>The annual payroll of $152,897 for CT class 8017, Location 5 is an estimate and is subject to audit after the policy period.<br><br>Applies within CT class 8017, Location 5; location ; class 8017; limit ; deductible . Annual Payroll: $152,897; Classification: Retail store - all employees; Estimated Premium: $6,651; Form Title: Workers Compensation and Employers Liability Policy; State: CT | **WC 04 03 06 01 15 - LIMITATION**<br><br>**Officer And Subcontractor Treatment**<br>Officer, member, volunteer, leased-worker, and subcontractor treatment for MA class 8742, Location 1 must be read with the attached forms schedule.<br><br>Applies within MA class 8742, Location 1; location ; class 8742; limit ; deductible . Annual Payroll: $158,051; Classification: Outside salespersons; Estimated Premium: $6,875; Form Title: Voluntary Compensation Endorsement; State: MA |
-| **WC 04 03 06 04 21 - CONDITION**<br><br>**State Classification Control**<br>The CT classification 8017 controls the rating basis for Retail store - all employees unless a state amendatory endorsement changes it.<br><br>Applies within CT class 8017, Location 5; location ; class 8017; limit ; deductible . Annual Payroll: $152,897; Classification: Retail store - all employees; Estimated Premium: $6,651; Form Title: Workers Compensation and Employers Liability Policy; State: CT | **WC 04 03 06 01 15 - CONDITION**<br><br>**Premium Revision Basis**<br>The estimated premium of $6,875 is calculated from rate 4.35, experience modification 1.04, and schedule rating 0%.<br><br>Applies within MA class 8742, Location 1; location ; class 8742; limit ; deductible . Annual Payroll: $158,051; Classification: Outside salespersons; Estimated Premium: $6,875; Form Title: Voluntary Compensation Endorsement; State: MA |
-| **WC 04 03 06 04 21 - LIMITATION**<br><br>**Officer And Subcontractor Treatment**<br>Officer, member, volunteer, leased-worker, and subcontractor treatment for CT class 8017, Location 5 must be read with the attached forms schedule.<br><br>Applies within CT class 8017, Location 5; location ; class 8017; limit ; deductible . Annual Payroll: $152,897; Classification: Retail store - all employees; Estimated Premium: $6,651; Form Title: Workers Compensation and Employers Liability Policy; State: CT | **WC 04 03 06 04 21 - CONDITION**<br><br>**Remuneration Audit**<br>The annual payroll of $171,391 for MA class 5190, Location 2 is an estimate and is subject to audit after the policy period.<br><br>Applies within MA class 5190, Location 2; location ; class 5190; limit ; deductible . Annual Payroll: $171,391; Classification: Electrical wiring within buildings; Estimated Premium: $462; Form Title: Waiver of Our Right to Recover; State: MA |
-| **WC 04 03 06 04 21 - CONDITION**<br><br>**Premium Revision Basis**<br>The estimated premium of $6,651 is calculated from rate 4.35, experience modification 1.04, and schedule rating 0%.<br><br>Applies within CT class 8017, Location 5; location ; class 8017; limit ; deductible . Annual Payroll: $152,897; Classification: Retail store - all employees; Estimated Premium: $6,651; Form Title: Workers Compensation and Employers Liability Policy; State: CT | **WC 04 03 06 04 21 - CONDITION**<br><br>**State Classification Control**<br>The MA classification 5190 controls the rating basis for Electrical wiring within buildings unless a state amendatory endorsement changes it.<br><br>Applies within MA class 5190, Location 2; location ; class 5190; limit ; deductible . Annual Payroll: $171,391; Classification: Electrical wiring within buildings; Estimated Premium: $462; Form Title: Waiver of Our Right to Recover; State: MA |
-| **WC 04 03 06 01 15 - CONDITION**<br><br>**Remuneration Audit**<br>The annual payroll of $158,051 for MA class 8742, Location 1 is an estimate and is subject to audit after the policy period.<br><br>Applies within MA class 8742, Location 1; location ; class 8742; limit ; deductible . Annual Payroll: $158,051; Classification: Outside salespersons; Estimated Premium: $6,875; Form Title: Voluntary Compensation Endorsement; State: MA | **WC 04 03 06 04 21 - LIMITATION**<br><br>**Officer And Subcontractor Treatment**<br>Officer, member, volunteer, leased-worker, and subcontractor treatment for MA class 5190, Location 2 must be read with the attached forms schedule.<br><br>Applies within MA class 5190, Location 2; location ; class 5190; limit ; deductible . Annual Payroll: $171,391; Classification: Electrical wiring within buildings; Estimated Premium: $462; Form Title: Waiver of Our Right to Recover; State: MA |
-| **WC 04 03 06 01 15 - CONDITION**<br><br>**State Classification Control**<br>The MA classification 8742 controls the rating basis for Outside salespersons unless a state amendatory endorsement changes it.<br><br>Applies within MA class 8742, Location 1; location ; class 8742; limit ; deductible . Annual Payroll: $158,051; Classification: Outside salespersons; Estimated Premium: $6,875; Form Title: Voluntary Compensation Endorsement; State: MA | **WC 04 03 06 04 21 - CONDITION**<br><br>**Premium Revision Basis**<br>The estimated premium of $462 is calculated from rate 0.27, experience modification 1.04, and schedule rating 0%.<br><br>Applies within MA class 5190, Location 2; location ; class 5190; limit ; deductible . Annual Payroll: $171,391; Classification: Electrical wiring within buildings; Estimated Premium: $462; Form Title: Waiver of Our Right to Recover; State: MA |
-
-_________________________________________________________________________________________________________
-Policy packet                                                                                            Page 106
-
-# Page 120
-
-POLICY PACKET                                                             +---------------------+
-                                                                              | POLICY COPY 1F7EA01 |
-                                                                              +---------------------+
-
-# Policy Form Provisions
-
-***
-
-### Policy form clauses
-
-| | |
-| :--- | :--- |
-| **WC 00 03 13 07 23 - CONDITION**<br><br>**Remuneration Audit**<br><br>The annual payroll of $184,316 for RI class 9082, Location 3 is an estimate and is subject to audit after the policy period.<br><br>Applies within RI class 9082, Location 3; location ; class 9082; limit ; deductible . Annual Payroll: $184,316; Classification: Restaurant NOC; Estimated Premium: $2,119; Form Title: Waiver of Our Right to Recover; State: RI | **WC 00 00 01 A 07 23 - LIMITATION**<br><br>**Officer And Subcontractor Treatment**<br><br>Officer, member, volunteer, leased-worker, and subcontractor treatment for ME class 3632, Location 4 must be read with the attached forms schedule.<br><br>Applies within ME class 3632, Location 4; location ; class 3632; limit ; deductible . Annual Payroll: $195,887; Classification: Machine shop NOC; Estimated Premium: $12,184; Form Title: Information Page; State: ME |
-| **WC 00 03 13 07 23 - CONDITION**<br><br>**State Classification Control**<br><br>The RI classification 9082 controls the rating basis for Restaurant NOC unless a state amendatory endorsement changes it.<br><br>Applies within RI class 9082, Location 3; location ; class 9082; limit ; deductible . Annual Payroll: $184,316; Classification: Restaurant NOC; Estimated Premium: $2,119; Form Title: Waiver of Our Right to Recover; State: RI | **WC 00 00 01 A 07 23 - CONDITION**<br><br>**Premium Revision Basis**<br><br>The estimated premium of $12,184 is calculated from rate 6.22, experience modification 1.04, and schedule rating 0%.<br><br>Applies within ME class 3632, Location 4; location ; class 3632; limit ; deductible . Annual Payroll: $195,887; Classification: Machine shop NOC; Estimated Premium: $12,184; Form Title: Information Page; State: ME |
-| **WC 00 03 13 07 23 - LIMITATION**<br><br>**Officer And Subcontractor Treatment**<br><br>Officer, member, volunteer, leased-worker, and subcontractor treatment for RI class 9082, Location 3 must be read with the attached forms schedule.<br><br>Applies within RI class 9082, Location 3; location ; class 9082; limit ; deductible . Annual Payroll: $184,316; Classification: Restaurant NOC; Estimated Premium: $2,119; Form Title: Waiver of Our Right to Recover; State: RI | **WC 00 03 13 04 21 - CONDITION**<br><br>**Remuneration Audit**<br><br>The annual payroll of $209,573 for NH class 9015, Location 5 is an estimate and is subject to audit after the policy period.<br><br>Applies within NH class 9015, Location 5; location ; class 9015; limit ; deductible . Annual Payroll: $209,573; Classification: Building operations by owner; Estimated Premium: $1,550; Form Title: Voluntary Compensation Endorsement; State: NH |
-| **WC 00 03 13 07 23 - CONDITION**<br><br>**Premium Revision Basis**<br><br>The estimated premium of $2,119 is calculated from rate 1.15, experience modification 1.04, and schedule rating 0%.<br><br>Applies within RI class 9082, Location 3; location ; class 9082; limit ; deductible . Annual Payroll: $184,316; Classification: Restaurant NOC; Estimated Premium: $2,119; Form Title: Waiver of Our Right to Recover; State: RI | **WC 00 03 13 04 21 - CONDITION**<br><br>**State Classification Control**<br><br>The NH classification 9015 controls the rating basis for Building operations by owner unless a state amendatory endorsement changes it.<br><br>Applies within NH class 9015, Location 5; location ; class 9015; limit ; deductible . Annual Payroll: $209,573; Classification: Building operations by owner; Estimated Premium: $1,550; Form Title: Voluntary Compensation Endorsement; State: NH |
-| **WC 00 00 01 A 07 23 - CONDITION**<br><br>**Remuneration Audit**<br><br>The annual payroll of $195,887 for ME class 3632, Location 4 is an estimate and is subject to audit after the policy period.<br><br>Applies within ME class 3632, Location 4; location ; class 3632; limit ; deductible . Annual Payroll: $195,887; Classification: Machine shop NOC; Estimated Premium: $12,184; Form Title: Information Page; State: ME | **WC 00 03 13 04 21 - LIMITATION**<br><br>**Officer And Subcontractor Treatment**<br><br>Officer, member, volunteer, leased-worker, and subcontractor treatment for NH class 9015, Location 5 must be read with the attached forms schedule.<br><br>Applies within NH class 9015, Location 5; location ; class 9015; limit ; deductible . Annual Payroll: $209,573; Classification: Building operations by owner; Estimated Premium: $1,550; Form Title: Voluntary Compensation Endorsement; State: NH |
-| **WC 00 00 01 A 07 23 - CONDITION**<br><br>**State Classification Control**<br><br>The ME classification 3632 controls the rating basis for Machine shop NOC unless a state amendatory endorsement changes it.<br><br>Applies within ME class 3632, Location 4; location ; class 3632; limit ; deductible . Annual Payroll: $195,887; Classification: Machine shop NOC; Estimated Premium: $12,184; Form Title: Information Page; State: ME | **WC 00 03 13 04 21 - CONDITION**<br><br>**Premium Revision Basis**<br><br>The estimated premium of $1,550 is calculated from rate 0.74, experience modification 1.04, and schedule rating 0%.<br><br>Applies within NH class 9015, Location 5; location ; class 9015; limit ; deductible . Annual Payroll: $209,573; Classification: Building operations by owner; Estimated Premium: $1,550; Form Title: Voluntary Compensation Endorsement; State: NH |
-
-***
-Policy packet                                                                                 Page 107
-
-# Page 121
-
-POLICY PACKET                                                            +---------------------+
-                                                                         | POLICY COPY 1F7EA01 |
-                                                                         +---------------------+
-------------------------------------------------------------------------------------------------
-
-# Policy Form Provisions
-
-------------------------------------------------------------------------------------------------
-
-### Policy form clauses
-
-| | |
-| :--- | :--- |
-| **WC 00 00 01 A 04 21 - CONDITION**<br><br>**Remuneration Audit**<br>The annual payroll of $223,415 for VT class 5606, Location 1 is an estimate and is subject to audit after the policy period.<br><br>Applies within VT class 5606, Location 1; location ; class 5606; limit ; deductible . Annual Payroll: $223,415; Classification: Contractor executive supervisor; Estimated Premium: $6,389; Form Title: Information Page; State: VT | **WC 04 03 06 01 15 - LIMITATION**<br><br>**Officer And Subcontractor Treatment**<br>Officer, member, volunteer, leased-worker, and subcontractor treatment for CT class 8810, Location 2 must be read with the attached forms schedule.<br><br>Applies within CT class 8810, Location 2; location ; class 8810; limit ; deductible . Annual Payroll: $234,108; Classification: Clerical office employees; Estimated Premium: $6,695; Form Title: Information Page; State: CT |
-| **WC 00 00 01 A 04 21 - CONDITION**<br><br>**State Classification Control**<br>The VT classification 5606 controls the rating basis for Contractor executive supervisor unless a state amendatory endorsement changes it.<br><br>Applies within VT class 5606, Location 1; location ; class 5606; limit ; deductible . Annual Payroll: $223,415; Classification: Contractor executive supervisor; Estimated Premium: $6,389; Form Title: Information Page; State: VT | **WC 04 03 06 01 15 - CONDITION**<br><br>**Premium Revision Basis**<br>The estimated premium of $6,695 is calculated from rate 2.86, experience modification 1.04, and schedule rating 0%.<br><br>Applies within CT class 8810, Location 2; location ; class 8810; limit ; deductible . Annual Payroll: $234,108; Classification: Clerical office employees; Estimated Premium: $6,695; Form Title: Information Page; State: CT |
-| **WC 00 00 01 A 04 21 - LIMITATION**<br><br>**Officer And Subcontractor Treatment**<br>Officer, member, volunteer, leased-worker, and subcontractor treatment for VT class 5606, Location 1 must be read with the attached forms schedule.<br><br>Applies within VT class 5606, Location 1; location ; class 5606; limit ; deductible . Annual Payroll: $223,415; Classification: Contractor executive supervisor; Estimated Premium: $6,389; Form Title: Information Page; State: VT | **WC 00 00 00 C 04 21 - CONDITION**<br><br>**Remuneration Audit**<br>The annual payroll of $239,729 for CT class 8017, Location 3 is an estimate and is subject to audit after the policy period.<br><br>Applies within CT class 8017, Location 3; location ; class 8017; limit ; deductible . Annual Payroll: $239,729; Classification: Retail store - all employees; Estimated Premium: $6,856; Form Title: Waiver of Our Right to Recover; State: CT |
-| **WC 00 00 01 A 04 21 - CONDITION**<br><br>**Premium Revision Basis**<br>The estimated premium of $6,389 is calculated from rate 2.86, experience modification 1.04, and schedule rating 0%.<br><br>Applies within VT class 5606, Location 1; location ; class 5606; limit ; deductible . Annual Payroll: $223,415; Classification: Contractor executive supervisor; Estimated Premium: $6,389; Form Title: Information Page; State: VT | **WC 00 00 00 C 04 21 - CONDITION**<br><br>**State Classification Control**<br>The CT classification 8017 controls the rating basis for Retail store - all employees unless a state amendatory endorsement changes it.<br><br>Applies within CT class 8017, Location 3; location ; class 8017; limit ; deductible . Annual Payroll: $239,729; Classification: Retail store - all employees; Estimated Premium: $6,856; Form Title: Waiver of Our Right to Recover; State: CT |
-| **WC 04 03 06 01 15 - CONDITION**<br><br>**Remuneration Audit**<br>The annual payroll of $234,108 for CT class 8810, Location 2 is an estimate and is subject to audit after the policy period.<br><br>Applies within CT class 8810, Location 2; location ; class 8810; limit ; deductible . Annual Payroll: $234,108; Classification: Clerical office employees; Estimated Premium: $6,695; Form Title: Information Page; State: CT | **WC 00 00 00 C 04 21 - LIMITATION**<br><br>**Officer And Subcontractor Treatment**<br>Officer, member, volunteer, leased-worker, and subcontractor treatment for CT class 8017, Location 3 must be read with the attached forms schedule.<br><br>Applies within CT class 8017, Location 3; location ; class 8017; limit ; deductible . Annual Payroll: $239,729; Classification: Retail store - all employees; Estimated Premium: $6,856; Form Title: Waiver of Our Right to Recover; State: CT |
-| **WC 04 03 06 01 15 - CONDITION**<br><br>**State Classification Control**<br>The CT classification 8810 controls the rating basis for Clerical office employees unless a state amendatory endorsement changes it.<br><br>Applies within CT class 8810, Location 2; location ; class 8810; limit ; deductible . Annual Payroll: $234,108; Classification: Clerical office employees; Estimated Premium: $6,695; Form Title: Information Page; State: CT | **WC 00 00 00 C 04 21 - CONDITION**<br><br>**Premium Revision Basis**<br>The estimated premium of $6,856 is calculated from rate 2.86, experience modification 1.04, and schedule rating 0%.<br><br>Applies within CT class 8017, Location 3; location ; class 8017; limit ; deductible . Annual Payroll: $239,729; Classification: Retail store - all employees; Estimated Premium: $6,856; Form Title: Waiver of Our Right to Recover; State: CT |
-
-<br>
-
-------------------------------------------------------------------------------------------------
-Policy packet                                                                           Page 108
-
-# Page 122
-
-POLICY PACKET                                                      +-------------------+
-                                                                       | POLICY COPY 1F7EA01|
-                                                                       +-------------------+
-
-# Policy Form Provisions
-
-### Policy form clauses
-
-| | |
-|---|---|
-| **WC 00 03 13 04 21 - CONDITION**<br><br>**Remuneration Audit**<br>The annual payroll of $256,691 for MA class 8742, Location 4 is an estimate and is subject to audit after the policy period.<br><br>Applies within MA class 8742, Location 4; location ; class 8742; limit ; deductible . Annual Payroll: $256,691; Classification: Outside salespersons; Estimated Premium: $15,966; Form Title: Waiver of Our Right to Recover; State: MA | **WC 04 03 06 07 23 - LIMITATION**<br><br>**Officer And Subcontractor Treatment**<br>Officer, member, volunteer, leased-worker, and subcontractor treatment for MA class 5190, Location 5 must be read with the attached forms schedule.<br><br>Applies within MA class 5190, Location 5; location ; class 5190; limit ; deductible . Annual Payroll: $265,916; Classification: Electrical wiring within buildings; Estimated Premium: $16,539; Form Title: Information Page; State: MA |
-| **WC 00 03 13 04 21 - CONDITION**<br><br>**State Classification Control**<br>The MA classification 8742 controls the rating basis for Outside salespersons unless a state amendatory endorsement changes it.<br><br>Applies within MA class 8742, Location 4; location ; class 8742; limit ; deductible . Annual Payroll: $256,691; Classification: Outside salespersons; Estimated Premium: $15,966; Form Title: Waiver of Our Right to Recover; State: MA | **WC 04 03 06 07 23 - CONDITION**<br><br>**Premium Revision Basis**<br>The estimated premium of $16,539 is calculated from rate 6.22, experience modification 1.04, and schedule rating 0%.<br><br>Applies within MA class 5190, Location 5; location ; class 5190; limit ; deductible . Annual Payroll: $265,916; Classification: Electrical wiring within buildings; Estimated Premium: $16,539; Form Title: Information Page; State: MA |
-| **WC 00 03 13 04 21 - LIMITATION**<br><br>**Officer And Subcontractor Treatment**<br>Officer, member, volunteer, leased-worker, and subcontractor treatment for MA class 8742, Location 4 must be read with the attached forms schedule.<br><br>Applies within MA class 8742, Location 4; location ; class 8742; limit ; deductible . Annual Payroll: $256,691; Classification: Outside salespersons; Estimated Premium: $15,966; Form Title: Waiver of Our Right to Recover; State: MA | **WC 00 03 13 01 15 - CONDITION**<br><br>**Remuneration Audit**<br>The annual payroll of $277,752 for RI class 9082, Location 1 is an estimate and is subject to audit after the policy period.<br><br>Applies within RI class 9082, Location 1; location ; class 9082; limit ; deductible . Annual Payroll: $277,752; Classification: Restaurant NOC; Estimated Premium: $2,055; Form Title: Workers Compensation and Employers Liability Policy; State: RI |
-| **WC 00 03 13 04 21 - CONDITION**<br><br>**Premium Revision Basis**<br>The estimated premium of $15,966 is calculated from rate 6.22, experience modification 1.04, and schedule rating 0%.<br><br>Applies within MA class 8742, Location 4; location ; class 8742; limit ; deductible . Annual Payroll: $256,691; Classification: Outside salespersons; Estimated Premium: $15,966; Form Title: Waiver of Our Right to Recover; State: MA | **WC 00 03 13 01 15 - CONDITION**<br><br>**State Classification Control**<br>The RI classification 9082 controls the rating basis for Restaurant NOC unless a state amendatory endorsement changes it.<br><br>Applies within RI class 9082, Location 1; location ; class 9082; limit ; deductible . Annual Payroll: $277,752; Classification: Restaurant NOC; Estimated Premium: $2,055; Form Title: Workers Compensation and Employers Liability Policy; State: RI |
-| **WC 04 03 06 07 23 - CONDITION**<br><br>**Remuneration Audit**<br>The annual payroll of $265,916 for MA class 5190, Location 5 is an estimate and is subject to audit after the policy period.<br><br>Applies within MA class 5190, Location 5; location ; class 5190; limit ; deductible . Annual Payroll: $265,916; Classification: Electrical wiring within buildings; Estimated Premium: $16,539; Form Title: Information Page; State: MA | **WC 00 03 13 01 15 - LIMITATION**<br><br>**Officer And Subcontractor Treatment**<br>Officer, member, volunteer, leased-worker, and subcontractor treatment for RI class 9082, Location 1 must be read with the attached forms schedule.<br><br>Applies within RI class 9082, Location 1; location ; class 9082; limit ; deductible . Annual Payroll: $277,752; Classification: Restaurant NOC; Estimated Premium: $2,055; Form Title: Workers Compensation and Employers Liability Policy; State: RI |
-| **WC 04 03 06 07 23 - CONDITION**<br><br>**State Classification Control**<br>The MA classification 5190 controls the rating basis for Electrical wiring within buildings unless a state amendatory endorsement changes it.<br><br>Applies within MA class 5190, Location 5; location ; class 5190; limit ; deductible . Annual Payroll: $265,916; Classification: Electrical wiring within buildings; Estimated Premium: $16,539; Form Title: Information Page; State: MA | **WC 00 03 13 01 15 - CONDITION**<br><br>**Premium Revision Basis**<br>The estimated premium of $2,055 is calculated from rate 0.74, experience modification 1.04, and schedule rating 0%.<br><br>Applies within RI class 9082, Location 1; location ; class 9082; limit ; deductible . Annual Payroll: $277,752; Classification: Restaurant NOC; Estimated Premium: $2,055; Form Title: Workers Compensation and Employers Liability Policy; State: RI |
-
-________________________________________________________________________________________________________
-Policy packet                                                                                   Page 109
-
-# Page 123
-
-POLICY PACKET                                                                     ┌──────────────────────┐
-                                                                                   │ POLICY COPY 1F7EA01  │
-                                                                                   └──────────────────────┘
-# Policy Form Provisions
-
----
-### Policy form clauses
-
-| | |
-| :--- | :--- |
-| **WC 00 03 13 01 15 - CONDITION**<br><br>**Remuneration Audit**<br>The annual payroll of $288,720 for ME class 3632, Location 2 is an estimate and is subject to audit after the policy period.<br><br>Applies within ME class 3632, Location 2; location ; class 3632; limit ; deductible . Annual Payroll: $288,720; Classification: Machine shop NOC; Estimated Premium: $1,212; Form Title: Information Page; State: ME | **WC 04 03 06 04 21 - LIMITATION**<br><br>**Officer And Subcontractor Treatment**<br>Officer, member, volunteer, leased-worker, and subcontractor treatment for NH class 9015, Location 3 must be read with the attached forms schedule.<br><br>Applies within NH class 9015, Location 3; location ; class 9015; limit ; deductible . Annual Payroll: $296,731; Classification: Building operations by owner; Estimated Premium: $2,195; Form Title: Workers Compensation and Employers Liability Policy; State: NH |
-| **WC 00 03 13 01 15 - CONDITION**<br><br>**State Classification Control**<br>The ME classification 3632 controls the rating basis for Machine shop NOC unless a state amendatory endorsement changes it.<br><br>Applies within ME class 3632, Location 2; location ; class 3632; limit ; deductible . Annual Payroll: $288,720; Classification: Machine shop NOC; Estimated Premium: $1,212; Form Title: Information Page; State: ME | **WC 04 03 06 04 21 - CONDITION**<br><br>**Premium Revision Basis**<br>The estimated premium of $2,195 is calculated from rate 0.74, experience modification 1.04, and schedule rating 0%.<br><br>Applies within NH class 9015, Location 3; location ; class 9015; limit ; deductible . Annual Payroll: $296,731; Classification: Building operations by owner; Estimated Premium: $2,195; Form Title: Workers Compensation and Employers Liability Policy; State: NH |
-| **WC 00 03 13 01 15 - LIMITATION**<br><br>**Officer And Subcontractor Treatment**<br>Officer, member, volunteer, leased-worker, and subcontractor treatment for ME class 3632, Location 2 must be read with the attached forms schedule.<br><br>Applies within ME class 3632, Location 2; location ; class 3632; limit ; deductible . Annual Payroll: $288,720; Classification: Machine shop NOC; Estimated Premium: $1,212; Form Title: Information Page; State: ME | **WC 04 03 06 07 23 - CONDITION**<br><br>**Remuneration Audit**<br>The annual payroll of $312,419 for VT class 5606, Location 4 is an estimate and is subject to audit after the policy period.<br><br>Applies within VT class 5606, Location 4; location ; class 5606; limit ; deductible . Annual Payroll: $312,419; Classification: Contractor executive supervisor; Estimated Premium: $19,432; Form Title: Voluntary Compensation Endorsement; State: VT |
-| **WC 00 03 13 01 15 - CONDITION**<br><br>**Premium Revision Basis**<br>The estimated premium of $1,212 is calculated from rate 0.42, experience modification 1.04, and schedule rating 0%.<br><br>Applies within ME class 3632, Location 2; location ; class 3632; limit ; deductible . Annual Payroll: $288,720; Classification: Machine shop NOC; Estimated Premium: $1,212; Form Title: Information Page; State: ME | **WC 04 03 06 07 23 - CONDITION**<br><br>**State Classification Control**<br>The VT classification 5606 controls the rating basis for Contractor executive supervisor unless a state amendatory endorsement changes it.<br><br>Applies within VT class 5606, Location 4; location ; class 5606; limit ; deductible . Annual Payroll: $312,419; Classification: Contractor executive supervisor; Estimated Premium: $19,432; Form Title: Voluntary Compensation Endorsement; State: VT |
-| **WC 04 03 06 04 21 - CONDITION**<br><br>**Remuneration Audit**<br>The annual payroll of $296,731 for NH class 9015, Location 3 is an estimate and is subject to audit after the policy period.<br><br>Applies within NH class 9015, Location 3; location ; class 9015; limit ; deductible . Annual Payroll: $296,731; Classification: Building operations by owner; Estimated Premium: $2,195; Form Title: Workers Compensation and Employers Liability Policy; State: NH | **WC 04 03 06 07 23 - LIMITATION**<br><br>**Officer And Subcontractor Treatment**<br>Officer, member, volunteer, leased-worker, and subcontractor treatment for VT class 5606, Location 4 must be read with the attached forms schedule.<br><br>Applies within VT class 5606, Location 4; location ; class 5606; limit ; deductible . Annual Payroll: $312,419; Classification: Contractor executive supervisor; Estimated Premium: $19,432; Form Title: Voluntary Compensation Endorsement; State: VT |
-| **WC 04 03 06 04 21 - CONDITION**<br><br>**State Classification Control**<br>The NH classification 9015 controls the rating basis for Building operations by owner unless a state amendatory endorsement changes it.<br><br>Applies within NH class 9015, Location 3; location ; class 9015; limit ; deductible . Annual Payroll: $296,731; Classification: Building operations by owner; Estimated Premium: $2,195; Form Title: Workers Compensation and Employers Liability Policy; State: NH | **WC 04 03 06 07 23 - CONDITION**<br><br>**Premium Revision Basis**<br>The estimated premium of $19,432 is calculated from rate 6.22, experience modification 1.04, and schedule rating 0%.<br><br>Applies within VT class 5606, Location 4; location ; class 5606; limit ; deductible . Annual Payroll: $312,419; Classification: Contractor executive supervisor; Estimated Premium: $19,432; Form Title: Voluntary Compensation Endorsement; State: VT |
-
----
-Policy packet                                                                                              Page 110
-
-# Page 124
-
-POLICY PACKET | | POLICY COPY 1F7EA01
----|---|---
-
-### Policy Form Provisions
-
-#### Policy form clauses
-
-| Left Column | Right Column |
-| :--- | :--- |
-| **WC 00 03 13 07 23 - CONDITION**<br><br>**Remuneration Audit**<br>The annual payroll of $323,486 for CT class 8810, Location 5 is an estimate and is subject to audit after the policy period.<br><br>Applies within CT class 8810, Location 5; location ; class 8810; limit ; deductible . Annual Payroll: $323,486; Classification: Clerical office employees; Estimated Premium: $20,120; Form Title: Workers Compensation and Employers Liability Policy; State: CT | **WC 00 03 13 07 23 - LIMITATION**<br><br>**Officer And Subcontractor Treatment**<br>Officer, member, volunteer, leased-worker, and subcontractor treatment for CT class 8017, Location 1 must be read with the attached forms schedule.<br><br>Applies within CT class 8017, Location 1; location ; class 8017; limit ; deductible . Annual Payroll: $333,913; Classification: Retail store - all employees; Estimated Premium: $1,402; Form Title: Information Page; State: CT |
-| **WC 00 03 13 07 23 - CONDITION**<br><br>**State Classification Control**<br>The CT classification 8810 controls the rating basis for Clerical office employees unless a state amendatory endorsement changes it.<br><br>Applies within CT class 8810, Location 5; location ; class 8810; limit ; deductible . Annual Payroll: $323,486; Classification: Clerical office employees; Estimated Premium: $20,120; Form Title: Workers Compensation and Employers Liability Policy; State: CT | **WC 00 03 13 07 23 - CONDITION**<br><br>**Premium Revision Basis**<br>The estimated premium of $1,402 is calculated from rate 0.42, experience modification 1.04, and schedule rating 0%.<br><br>Applies within CT class 8017, Location 1; location ; class 8017; limit ; deductible . Annual Payroll: $333,913; Classification: Retail store - all employees; Estimated Premium: $1,402; Form Title: Information Page; State: CT |
-| **WC 00 03 13 07 23 - LIMITATION**<br><br>**Officer And Subcontractor Treatment**<br>Officer, member, volunteer, leased-worker, and subcontractor treatment for CT class 8810, Location 5 must be read with the attached forms schedule.<br><br>Applies within CT class 8810, Location 5; location ; class 8810; limit ; deductible . Annual Payroll: $323,486; Classification: Clerical office employees; Estimated Premium: $20,120; Form Title: Workers Compensation and Employers Liability Policy; State: CT | **WC 04 03 06 01 15 - CONDITION**<br><br>**Remuneration Audit**<br>The annual payroll of $349,084 for MA class 8742, Location 2 is an estimate and is subject to audit after the policy period.<br><br>Applies within MA class 8742, Location 2; location ; class 8742; limit ; deductible . Annual Payroll: $349,084; Classification: Outside salespersons; Estimated Premium: $628; Form Title: Voluntary Compensation Endorsement; State: MA |
-| **WC 00 03 13 07 23 - CONDITION**<br><br>**Premium Revision Basis**<br>The estimated premium of $20,120 is calculated from rate 6.22, experience modification 1.04, and schedule rating 0%.<br><br>Applies within CT class 8810, Location 5; location ; class 8810; limit ; deductible . Annual Payroll: $323,486; Classification: Clerical office employees; Estimated Premium: $20,120; Form Title: Workers Compensation and Employers Liability Policy; State: CT | **WC 04 03 06 01 15 - CONDITION**<br><br>**State Classification Control**<br>The MA classification 8742 controls the rating basis for Outside salespersons unless a state amendatory endorsement changes it.<br><br>Applies within MA class 8742, Location 2; location ; class 8742; limit ; deductible . Annual Payroll: $349,084; Classification: Outside salespersons; Estimated Premium: $628; Form Title: Voluntary Compensation Endorsement; State: MA |
-| **WC 00 03 13 07 23 - CONDITION**<br><br>**Remuneration Audit**<br>The annual payroll of $333,913 for CT class 8017, Location 1 is an estimate and is subject to audit after the policy period.<br><br>Applies within CT class 8017, Location 1; location ; class 8017; limit ; deductible . Annual Payroll: $333,913; Classification: Retail store - all employees; Estimated Premium: $1,402; Form Title: Information Page; State: CT | **WC 04 03 06 01 15 - LIMITATION**<br><br>**Officer And Subcontractor Treatment**<br>Officer, member, volunteer, leased-worker, and subcontractor treatment for MA class 8742, Location 2 must be read with the attached forms schedule.<br><br>Applies within MA class 8742, Location 2; location ; class 8742; limit ; deductible . Annual Payroll: $349,084; Classification: Outside salespersons; Estimated Premium: $628; Form Title: Voluntary Compensation Endorsement; State: MA |
-| **WC 00 03 13 07 23 - CONDITION**<br><br>**State Classification Control**<br>The CT classification 8017 controls the rating basis for Retail store - all employees unless a state amendatory endorsement changes it.<br><br>Applies within CT class 8017, Location 1; location ; class 8017; limit ; deductible . Annual Payroll: $333,913; Classification: Retail store - all employees; Estimated Premium: $1,402; Form Title: Information Page; State: CT | **WC 04 03 06 01 15 - CONDITION**<br><br>**Premium Revision Basis**<br>The estimated premium of $628 is calculated from rate 0.18, experience modification 1.04, and schedule rating 0%.<br><br>Applies within MA class 8742, Location 2; location ; class 8742; limit ; deductible . Annual Payroll: $349,084; Classification: Outside salespersons; Estimated Premium: $628; Form Title: Voluntary Compensation Endorsement; State: MA |
-
-***
-
-Policy packet | Page 111
-
-# Page 125
-
-"POLICY PACKET","POLICY COPY 1F7EA01"
-"Policy Form Provisions",""
-"Policy form clauses",""
-"WC 00 00 00 C 04 21 - CONDITION","WC 04 03 06 07 23 - LIMITATION"
-"Remuneration Audit
-The annual payroll of $353,824 for MA class 5190, Location 3 is an estimate and is subject to audit after the policy period.
-Applies within MA class 5190, Location 3; location ; class 5190; limit ; deductible . Annual Payroll: $353,824; Classification: Electrical wiring within buildings; Estimated Premium: $955; Form Title: Waiver of Our Right to Recover; State: MA","Officer And Subcontractor Treatment
-Officer, member, volunteer, leased-worker, and subcontractor treatment for RI class 9082, Location 4 must be read with the attached forms schedule.
-Applies within RI class 9082, Location 4; location ; class 9082; limit ; deductible . Annual Payroll: $367,301; Classification: Restaurant NOC; Estimated Premium: $1,542; Form Title: Voluntary Compensation Endorsement; State: RI"
-"WC 00 00 00 C 04 21 - CONDITION","WC 04 03 06 07 23 - CONDITION"
-"State Classification Control
-The MA classification 5190 controls the rating basis for Electrical wiring within buildings unless a state amendatory endorsement changes it.
-Applies within MA class 5190, Location 3; location ; class 5190; limit ; deductible . Annual Payroll: $353,824; Classification: Electrical wiring within buildings; Estimated Premium: $955; Form Title: Waiver of Our Right to Recover; State: MA","Premium Revision Basis
-The estimated premium of $1,542 is calculated from rate 0.42, experience modification 1.04, and schedule rating 0%.
-Applies within RI class 9082, Location 4; location ; class 9082; limit ; deductible . Annual Payroll: $367,301; Classification: Restaurant NOC; Estimated Premium: $1,542; Form Title: Voluntary Compensation Endorsement; State: RI"
-"WC 00 00 00 C 04 21 - LIMITATION","WC 00 03 13 04 21 - CONDITION"
-"Officer And Subcontractor Treatment
-Officer, member, volunteer, leased-worker, and subcontractor treatment for MA class 5190, Location 3 must be read with the attached forms schedule.
-Applies within MA class 5190, Location 3; location ; class 5190; limit ; deductible . Annual Payroll: $353,824; Classification: Electrical wiring within buildings; Estimated Premium: $955; Form Title: Waiver of Our Right to Recover; State: MA","Remuneration Audit
-The annual payroll of $378,170 for ME class 3632, Location 5 is an estimate and is subject to audit after the policy period.
-Applies within ME class 3632, Location 5; location ; class 3632; limit ; deductible . Annual Payroll: $378,170; Classification: Machine shop NOC; Estimated Premium: $4,348; Form Title: Workers Compensation and Employers Liability Policy; State: ME"
-"WC 00 00 00 C 04 21 - CONDITION","WC 00 03 13 04 21 - CONDITION"
-"Premium Revision Basis
-The estimated premium of $955 is calculated from rate 0.27, experience modification 1.04, and schedule rating 0%.
-Applies within MA class 5190, Location 3; location ; class 5190; limit ; deductible . Annual Payroll: $353,824; Classification: Electrical wiring within buildings; Estimated Premium: $955; Form Title: Waiver of Our Right to Recover; State: MA","State Classification Control
-The ME classification 3632 controls the rating basis for Machine shop NOC unless a state amendatory endorsement changes it.
-Applies within ME class 3632, Location 5; location ; class 3632; limit ; deductible . Annual Payroll: $378,170; Classification: Machine shop NOC; Estimated Premium: $4,348; Form Title: Workers Compensation and Employers Liability Policy; State: ME"
-"WC 04 03 06 07 23 - CONDITION","WC 00 03 13 04 21 - LIMITATION"
-"Remuneration Audit
-The annual payroll of $367,301 for RI class 9082, Location 4 is an estimate and is subject to audit after the policy period.
-Applies within RI class 9082, Location 4; location ; class 9082; limit ; deductible . Annual Payroll: $367,301; Classification: Restaurant NOC; Estimated Premium: $1,542; Form Title: Voluntary Compensation Endorsement; State: RI","Officer And Subcontractor Treatment
-Officer, member, volunteer, leased-worker, and subcontractor treatment for ME class 3632, Location 5 must be read with the attached forms schedule.
-Applies within ME class 3632, Location 5; location ; class 3632; limit ; deductible . Annual Payroll: $378,170; Classification: Machine shop NOC; Estimated Premium: $4,348; Form Title: Workers Compensation and Employers Liability Policy; State: ME"
-"WC 04 03 06 07 23 - CONDITION","WC 00 03 13 04 21 - CONDITION"
-"State Classification Control
-The RI classification 9082 controls the rating basis for Restaurant NOC unless a state amendatory endorsement changes it.
-Applies within RI class 9082, Location 4; location ; class 9082; limit ; deductible . Annual Payroll: $367,301; Classification: Restaurant NOC; Estimated Premium: $1,542; Form Title: Voluntary Compensation Endorsement; State: RI","Premium Revision Basis
-The estimated premium of $4,348 is calculated from rate 1.15, experience modification 1.04, and schedule rating 0%.
-Applies within ME class 3632, Location 5; location ; class 3632; limit ; deductible . Annual Payroll: $378,170; Classification: Machine shop NOC; Estimated Premium: $4,348; Form Title: Workers Compensation and Employers Liability Policy; State: ME"
-"Policy packet","Page 112"
-
-# Page 126
-
-"POLICY PACKET","POLICY COPY 1F7EA01"
-"Policy Form Provisions",""
-"Policy form clauses",""
-"WC 00 00 00 C 07 23 - CONDITION
-
-Remuneration Audit
-The annual payroll of $391,534 for NH class 9015, Location 1 is an estimate and is subject to audit after the policy period.
-Applies within NH class 9015, Location 1; location ; class 9015; limit ; deductible . Annual Payroll: $391,534; Classification: Building operations by owner; Estimated Premium: $11,197; Form Title: Workers Compensation and Employers Liability Policy; State: NH","WC 00 00 01 A 04 21 - LIMITATION
-
-Officer And Subcontractor Treatment
-Officer, member, volunteer, leased-worker, and subcontractor treatment for VT class 5606, Location 2 must be read with the attached forms schedule.
-Applies within VT class 5606, Location 2; location ; class 5606; limit ; deductible . Annual Payroll: $404,635; Classification: Contractor executive supervisor; Estimated Premium: $17,601; Form Title: Voluntary Compensation Endorsement; State: VT"
-"WC 00 00 00 C 07 23 - CONDITION
-
-State Classification Control
-The NH classification 9015 controls the rating basis for Building operations by owner unless a state amendatory endorsement changes it.
-Applies within NH class 9015, Location 1; location ; class 9015; limit ; deductible . Annual Payroll: $391,534; Classification: Building operations by owner; Estimated Premium: $11,197; Form Title: Workers Compensation and Employers Liability Policy; State: NH","WC 00 00 01 A 04 21 - CONDITION
-
-Premium Revision Basis
-The estimated premium of $17,601 is calculated from rate 4.35, experience modification 1.04, and schedule rating 0%.
-Applies within VT class 5606, Location 2; location ; class 5606; limit ; deductible . Annual Payroll: $404,635; Classification: Contractor executive supervisor; Estimated Premium: $17,601; Form Title: Voluntary Compensation Endorsement; State: VT"
-"WC 00 00 00 C 07 23 - LIMITATION
-
-Officer And Subcontractor Treatment
-Officer, member, volunteer, leased-worker, and subcontractor treatment for NH class 9015, Location 1 must be read with the attached forms schedule.
-Applies within NH class 9015, Location 1; location ; class 9015; limit ; deductible . Annual Payroll: $391,534; Classification: Building operations by owner; Estimated Premium: $11,197; Form Title: Workers Compensation and Employers Liability Policy; State: NH","WC 00 00 00 C 04 21 - CONDITION
-
-Remuneration Audit
-The annual payroll of $416,547 for CT class 8810, Location 3 is an estimate and is subject to audit after the policy period.
-Applies within CT class 8810, Location 3; location ; class 8810; limit ; deductible . Annual Payroll: $416,547; Classification: Clerical office employees; Estimated Premium: $4,790; Form Title: Information Page; State: CT"
-"WC 00 00 00 C 07 23 - CONDITION
-
-Premium Revision Basis
-The estimated premium of $11,197 is calculated from rate 2.86, experience modification 1.04, and schedule rating 0%.
-Applies within NH class 9015, Location 1; location ; class 9015; limit ; deductible . Annual Payroll: $391,534; Classification: Building operations by owner; Estimated Premium: $11,197; Form Title: Workers Compensation and Employers Liability Policy; State: NH","WC 00 00 00 C 04 21 - CONDITION
-
-State Classification Control
-The CT classification 8810 controls the rating basis for Clerical office employees unless a state amendatory endorsement changes it.
-Applies within CT class 8810, Location 3; location ; class 8810; limit ; deductible . Annual Payroll: $416,547; Classification: Clerical office employees; Estimated Premium: $4,790; Form Title: Information Page; State: CT"
-"WC 00 00 01 A 04 21 - CONDITION
-
-Remuneration Audit
-The annual payroll of $404,635 for VT class 5606, Location 2 is an estimate and is subject to audit after the policy period.
-Applies within VT class 5606, Location 2; location ; class 5606; limit ; deductible . Annual Payroll: $404,635; Classification: Contractor executive supervisor; Estimated Premium: $17,601; Form Title: Voluntary Compensation Endorsement; State: VT","WC 00 00 00 C 04 21 - LIMITATION
-
-Officer And Subcontractor Treatment
-Officer, member, volunteer, leased-worker, and subcontractor treatment for CT class 8810, Location 3 must be read with the attached forms schedule.
-Applies within CT class 8810, Location 3; location ; class 8810; limit ; deductible . Annual Payroll: $416,547; Classification: Clerical office employees; Estimated Premium: $4,790; Form Title: Information Page; State: CT"
-"WC 00 00 01 A 04 21 - CONDITION
-
-State Classification Control
-The VT classification 5606 controls the rating basis for Contractor executive supervisor unless a state amendatory endorsement changes it.
-Applies within VT class 5606, Location 2; location ; class 5606; limit ; deductible . Annual Payroll: $404,635; Classification: Contractor executive supervisor; Estimated Premium: $17,601; Form Title: Voluntary Compensation Endorsement; State: VT","WC 00 00 00 C 04 21 - CONDITION
-
-Premium Revision Basis
-The estimated premium of $4,790 is calculated from rate 1.15, experience modification 1.04, and schedule rating 0%.
-Applies within CT class 8810, Location 3; location ; class 8810; limit ; deductible . Annual Payroll: $416,547; Classification: Clerical office employees; Estimated Premium: $4,790; Form Title: Information Page; State: CT"
-"Policy packet","Page 113"
-
-# Page 127
-
-POLICY PACKET                                                                  +-------------------------+
-                                                                                |  POLICY COPY 1F7EA01    |
-                                                                                +-------------------------+
-# Policy Form Provisions
-
-### Policy form clauses
-
-| | |
-| :--- | :--- |
-| **WC 00 00 00 C 04 21 - CONDITION**<br><br>**Remuneration Audit**<br>The annual payroll of $427,355 for CT class 8017, Location 4 is an estimate and is subject to audit after the policy period.<br><br>Applies within CT class 8017, Location 4; location ; class 8017; limit ; deductible . Annual Payroll: $427,355; Classification: Retail store - all employees; Estimated Premium: $18,589; Form Title: Voluntary Compensation Endorsement; State: CT | **WC 00 00 00 C 04 21 - LIMITATION**<br><br>**Officer And Subcontractor Treatment**<br>Officer, member, volunteer, leased-worker, and subcontractor treatment for MA class 8742, Location 5 must be read with the attached forms schedule.<br><br>Applies within MA class 8742, Location 5; location ; class 8742; limit ; deductible . Annual Payroll: $435,963; Classification: Outside salespersons; Estimated Premium: $1,177; Form Title: Information Page; State: MA |
-| **WC 00 00 00 C 04 21 - CONDITION**<br><br>**State Classification Control**<br>The CT classification 8017 controls the rating basis for Retail store - all employees unless a state amendatory endorsement changes it.<br><br>Applies within CT class 8017, Location 4; location ; class 8017; limit ; deductible . Annual Payroll: $427,355; Classification: Retail store - all employees; Estimated Premium: $18,589; Form Title: Voluntary Compensation Endorsement; State: CT | **WC 00 00 00 C 04 21 - CONDITION**<br><br>**Premium Revision Basis**<br>The estimated premium of $1,177 is calculated from rate 0.27, experience modification 1.04, and schedule rating 0%.<br><br>Applies within MA class 8742, Location 5; location ; class 8742; limit ; deductible . Annual Payroll: $435,963; Classification: Outside salespersons; Estimated Premium: $1,177; Form Title: Information Page; State: MA |
-| **WC 00 00 00 C 04 21 - LIMITATION**<br><br>**Officer And Subcontractor Treatment**<br>Officer, member, volunteer, leased-worker, and subcontractor treatment for CT class 8017, Location 4 must be read with the attached forms schedule.<br><br>Applies within CT class 8017, Location 4; location ; class 8017; limit ; deductible . Annual Payroll: $427,355; Classification: Retail store - all employees; Estimated Premium: $18,589; Form Title: Voluntary Compensation Endorsement; State: CT | **WC 00 03 13 01 15 - CONDITION**<br><br>**Remuneration Audit**<br>The annual payroll of $453,438 for MA class 5190, Location 1 is an estimate and is subject to audit after the policy period.<br><br>Applies within MA class 5190, Location 1; location ; class 5190; limit ; deductible . Annual Payroll: $453,438; Classification: Electrical wiring within buildings; Estimated Premium: $1,224; Form Title: Workers Compensation and Employers Liability Policy; State: MA |
-| **WC 00 00 00 C 04 21 - CONDITION**<br><br>**Premium Revision Basis**<br>The estimated premium of $18,589 is calculated from rate 4.35, experience modification 1.04, and schedule rating 0%.<br><br>Applies within CT class 8017, Location 4; location ; class 8017; limit ; deductible . Annual Payroll: $427,355; Classification: Retail store - all employees; Estimated Premium: $18,589; Form Title: Voluntary Compensation Endorsement; State: CT | **WC 00 03 13 01 15 - CONDITION**<br><br>**State Classification Control**<br>The MA classification 5190 controls the rating basis for Electrical wiring within buildings unless a state amendatory endorsement changes it.<br><br>Applies within MA class 5190, Location 1; location ; class 5190; limit ; deductible . Annual Payroll: $453,438; Classification: Electrical wiring within buildings; Estimated Premium: $1,224; Form Title: Workers Compensation and Employers Liability Policy; State: MA |
-| **WC 00 00 00 C 04 21 - CONDITION**<br><br>**Remuneration Audit**<br>The annual payroll of $435,963 for MA class 8742, Location 5 is an estimate and is subject to audit after the policy period.<br><br>Applies within MA class 8742, Location 5; location ; class 8742; limit ; deductible . Annual Payroll: $435,963; Classification: Outside salespersons; Estimated Premium: $1,177; Form Title: Information Page; State: MA | **WC 00 03 13 01 15 - LIMITATION**<br><br>**Officer And Subcontractor Treatment**<br>Officer, member, volunteer, leased-worker, and subcontractor treatment for MA class 5190, Location 1 must be read with the attached forms schedule.<br><br>Applies within MA class 5190, Location 1; location ; class 5190; limit ; deductible . Annual Payroll: $453,438; Classification: Electrical wiring within buildings; Estimated Premium: $1,224; Form Title: Workers Compensation and Employers Liability Policy; State: MA |
-| **WC 00 00 00 C 04 21 - CONDITION**<br><br>**State Classification Control**<br>The MA classification 8742 controls the rating basis for Outside salespersons unless a state amendatory endorsement changes it.<br><br>Applies within MA class 8742, Location 5; location ; class 8742; limit ; deductible . Annual Payroll: $435,963; Classification: Outside salespersons; Estimated Premium: $1,177; Form Title: Information Page; State: MA | **WC 00 03 13 01 15 - CONDITION**<br><br>**Premium Revision Basis**<br>The estimated premium of $1,224 is calculated from rate 0.27, experience modification 1.04, and schedule rating 0%.<br><br>Applies within MA class 5190, Location 1; location ; class 5190; limit ; deductible . Annual Payroll: $453,438; Classification: Electrical wiring within buildings; Estimated Premium: $1,224; Form Title: Workers Compensation and Employers Liability Policy; State: MA |
-
-***
-
-Policy packet                                                                                     Page 114
-
-# Page 128
-
-POLICY PACKET | [POLICY COPY 1F7EA01]
----|---
-
-# Policy Form Provisions
-
-### Policy form clauses
-
-| | |
-|:---|:---|
-| **WC 00 03 13 04 21 - CONDITION**<br><br>**Remuneration Audit**<br>The annual payroll of $463,529 for RI class 9082, Location 2 is an estimate and is subject to audit after the policy period.<br><br>Applies within RI class 9082, Location 2; location ; class 9082; limit ; deductible . Annual Payroll: $463,529; Classification: Restaurant NOC; Estimated Premium: $28,831; Form Title: Workers Compensation and Employers Liability Policy; State: RI | **WC 00 00 01 A 07 23 - LIMITATION**<br><br>**Officer And Subcontractor Treatment**<br>Officer, member, volunteer, leased-worker, and subcontractor treatment for ME class 3632, Location 3 must be read with the attached forms schedule.<br><br>Applies within ME class 3632, Location 3; location ; class 3632; limit ; deductible . Annual Payroll: $475,950; Classification: Machine shop NOC; Estimated Premium: $3,522; Form Title: Information Page; State: ME |
-| **WC 00 03 13 04 21 - CONDITION**<br><br>**State Classification Control**<br>The RI classification 9082 controls the rating basis for Restaurant NOC unless a state amendatory endorsement changes it.<br><br>Applies within RI class 9082, Location 2; location ; class 9082; limit ; deductible . Annual Payroll: $463,529; Classification: Restaurant NOC; Estimated Premium: $28,831; Form Title: Workers Compensation and Employers Liability Policy; State: RI | **WC 00 00 01 A 07 23 - CONDITION**<br><br>**Premium Revision Basis**<br>The estimated premium of $3,522 is calculated from rate 0.74, experience modification 1.04, and schedule rating 0%.<br><br>Applies within ME class 3632, Location 3; location ; class 3632; limit ; deductible . Annual Payroll: $475,950; Classification: Machine shop NOC; Estimated Premium: $3,522; Form Title: Information Page; State: ME |
-| **WC 00 03 13 04 21 - LIMITATION**<br><br>**Officer And Subcontractor Treatment**<br>Officer, member, volunteer, leased-worker, and subcontractor treatment for RI class 9082, Location 2 must be read with the attached forms schedule.<br><br>Applies within RI class 9082, Location 2; location ; class 9082; limit ; deductible . Annual Payroll: $463,529; Classification: Restaurant NOC; Estimated Premium: $28,831; Form Title: Workers Compensation and Employers Liability Policy; State: RI | **WC 04 03 06 04 21 - CONDITION**<br><br>**Remuneration Audit**<br>The annual payroll of $485,364 for NH class 9015, Location 4 is an estimate and is subject to audit after the policy period.<br><br>Applies within NH class 9015, Location 4; location ; class 9015; limit ; deductible . Annual Payroll: $485,364; Classification: Building operations by owner; Estimated Premium: $21,113; Form Title: Waiver of Our Right to Recover; State: NH |
-| **WC 00 03 13 04 21 - CONDITION**<br><br>**Premium Revision Basis**<br>The estimated premium of $28,831 is calculated from rate 6.22, experience modification 1.04, and schedule rating 0%.<br><br>Applies within RI class 9082, Location 2; location ; class 9082; limit ; deductible . Annual Payroll: $463,529; Classification: Restaurant NOC; Estimated Premium: $28,831; Form Title: Workers Compensation and Employers Liability Policy; State: RI | **WC 04 03 06 04 21 - CONDITION**<br><br>**State Classification Control**<br>The NH classification 9015 controls the rating basis for Building operations by owner unless a state amendatory endorsement changes it.<br><br>Applies within NH class 9015, Location 4; location ; class 9015; limit ; deductible . Annual Payroll: $485,364; Classification: Building operations by owner; Estimated Premium: $21,113; Form Title: Waiver of Our Right to Recover; State: NH |
-| **WC 00 00 01 A 07 23 - CONDITION**<br><br>**Remuneration Audit**<br>The annual payroll of $475,950 for ME class 3632, Location 3 is an estimate and is subject to audit after the policy period.<br><br>Applies within ME class 3632, Location 3; location ; class 3632; limit ; deductible . Annual Payroll: $475,950; Classification: Machine shop NOC; Estimated Premium: $3,522; Form Title: Information Page; State: ME | **WC 04 03 06 04 21 - LIMITATION**<br><br>**Officer And Subcontractor Treatment**<br>Officer, member, volunteer, leased-worker, and subcontractor treatment for NH class 9015, Location 4 must be read with the attached forms schedule.<br><br>Applies within NH class 9015, Location 4; location ; class 9015; limit ; deductible . Annual Payroll: $485,364; Classification: Building operations by owner; Estimated Premium: $21,113; Form Title: Waiver of Our Right to Recover; State: NH |
-| **WC 00 00 01 A 07 23 - CONDITION**<br><br>**State Classification Control**<br>The ME classification 3632 controls the rating basis for Machine shop NOC unless a state amendatory endorsement changes it.<br><br>Applies within ME class 3632, Location 3; location ; class 3632; limit ; deductible . Annual Payroll: $475,950; Classification: Machine shop NOC; Estimated Premium: $3,522; Form Title: Information Page; State: ME | **WC 04 03 06 04 21 - CONDITION**<br><br>**Premium Revision Basis**<br>The estimated premium of $21,113 is calculated from rate 4.35, experience modification 1.04, and schedule rating 0%.<br><br>Applies within NH class 9015, Location 4; location ; class 9015; limit ; deductible . Annual Payroll: $485,364; Classification: Building operations by owner; Estimated Premium: $21,113; Form Title: Waiver of Our Right to Recover; State: NH |
-
-***
-
-Policy packet | Page 115
-
-# Page 129
-
-POLICY PACKET                                                                      | POLICY COPY 1F7EA01 |
------------------------------------------------------------------------------------|---------------------|
-
-# Policy Form Provisions
-
-### Policy form clauses
-
-| | |
-| :--- | :--- |
-| **WC 00 00 00 C 07 23 - CONDITION**<br><br>**Remuneration Audit**<br>The annual payroll of $495,123 for VT class 5606, Location 5 is an estimate and is subject to audit after the policy period.<br><br>Applies within VT class 5606, Location 5; location ; class 5606; limit ; deductible . Annual Payroll: $495,123; Classification: Contractor executive supervisor; Estimated Premium: $21,537; Form Title: Workers Compensation and Employers Liability Policy; State: VT | **WC 00 03 13 04 21 - LIMITATION**<br><br>**Officer And Subcontractor Treatment**<br>Officer, member, volunteer, leased-worker, and subcontractor treatment for CT class 8810, Location 1 must be read with the attached forms schedule.<br><br>Applies within CT class 8810, Location 1; location ; class 8810; limit ; deductible . Annual Payroll: $502,147; Classification: Clerical office employees; Estimated Premium: $5,774; Form Title: Voluntary Compensation Endorsement; State: CT |
-| **WC 00 00 00 C 07 23 - CONDITION**<br><br>**State Classification Control**<br>The VT classification 5606 controls the rating basis for Contractor executive supervisor unless a state amendatory endorsement changes it.<br><br>Applies within VT class 5606, Location 5; location ; class 5606; limit ; deductible . Annual Payroll: $495,123; Classification: Contractor executive supervisor; Estimated Premium: $21,537; Form Title: Workers Compensation and Employers Liability Policy; State: VT | **WC 00 03 13 04 21 - CONDITION**<br><br>**Premium Revision Basis**<br>The estimated premium of $5,774 is calculated from rate 1.15, experience modification 1.04, and schedule rating 0%.<br><br>Applies within CT class 8810, Location 1; location ; class 8810; limit ; deductible . Annual Payroll: $502,147; Classification: Clerical office employees; Estimated Premium: $5,774; Form Title: Voluntary Compensation Endorsement; State: CT |
-| **WC 00 00 00 C 07 23 - LIMITATION**<br><br>**Officer And Subcontractor Treatment**<br>Officer, member, volunteer, leased-worker, and subcontractor treatment for VT class 5606, Location 5 must be read with the attached forms schedule.<br><br>Applies within VT class 5606, Location 5; location ; class 5606; limit ; deductible . Annual Payroll: $495,123; Classification: Contractor executive supervisor; Estimated Premium: $21,537; Form Title: Workers Compensation and Employers Liability Policy; State: VT | **WC 00 03 13 01 15 - CONDITION**<br><br>**Remuneration Audit**<br>The annual payroll of $514,119 for CT class 8017, Location 2 is an estimate and is subject to audit after the policy period.<br><br>Applies within CT class 8017, Location 2; location ; class 8017; limit ; deductible . Annual Payroll: $514,119; Classification: Retail store - all employees; Estimated Premium: $1,388; Form Title: Workers Compensation and Employers Liability Policy; State: CT |
-| **WC 00 00 00 C 07 23 - CONDITION**<br><br>**Premium Revision Basis**<br>The estimated premium of $21,537 is calculated from rate 4.35, experience modification 1.04, and schedule rating 0%.<br><br>Applies within VT class 5606, Location 5; location ; class 5606; limit ; deductible . Annual Payroll: $495,123; Classification: Contractor executive supervisor; Estimated Premium: $21,537; Form Title: Workers Compensation and Employers Liability Policy; State: VT | **WC 00 03 13 01 15 - CONDITION**<br><br>**State Classification Control**<br>The CT classification 8017 controls the rating basis for Retail store - all employees unless a state amendatory endorsement changes it.<br><br>Applies within CT class 8017, Location 2; location ; class 8017; limit ; deductible . Annual Payroll: $514,119; Classification: Retail store - all employees; Estimated Premium: $1,388; Form Title: Workers Compensation and Employers Liability Policy; State: CT |
-| **WC 00 03 13 04 21 - CONDITION**<br><br>**Remuneration Audit**<br>The annual payroll of $502,147 for CT class 8810, Location 1 is an estimate and is subject to audit after the policy period.<br><br>Applies within CT class 8810, Location 1; location ; class 8810; limit ; deductible . Annual Payroll: $502,147; Classification: Clerical office employees; Estimated Premium: $5,774; Form Title: Voluntary Compensation Endorsement; State: CT | **WC 00 03 13 01 15 - LIMITATION**<br><br>**Officer And Subcontractor Treatment**<br>Officer, member, volunteer, leased-worker, and subcontractor treatment for CT class 8017, Location 2 must be read with the attached forms schedule.<br><br>Applies within CT class 8017, Location 2; location ; class 8017; limit ; deductible . Annual Payroll: $514,119; Classification: Retail store - all employees; Estimated Premium: $1,388; Form Title: Workers Compensation and Employers Liability Policy; State: CT |
-| **WC 00 03 13 04 21 - CONDITION**<br><br>**State Classification Control**<br>The CT classification 8810 controls the rating basis for Clerical office employees unless a state amendatory endorsement changes it.<br><br>Applies within CT class 8810, Location 1; location ; class 8810; limit ; deductible . Annual Payroll: $502,147; Classification: Clerical office employees; Estimated Premium: $5,774; Form Title: Voluntary Compensation Endorsement; State: CT | **WC 00 03 13 01 15 - CONDITION**<br><br>**Premium Revision Basis**<br>The estimated premium of $1,388 is calculated from rate 0.27, experience modification 1.04, and schedule rating 0%.<br><br>Applies within CT class 8017, Location 2; location ; class 8017; limit ; deductible . Annual Payroll: $514,119; Classification: Retail store - all employees; Estimated Premium: $1,388; Form Title: Workers Compensation and Employers Liability Policy; State: CT |
-
-***
-
-Policy packet                                                                         Page 116
-
-# Page 130
-
-POLICY PACKET                                                      +------------------------+
-                                                                       |  POLICY COPY 1F7EA01  |
-                                                                       +------------------------+
-# Policy Form Provisions
-
-### Policy form clauses
-
-| | |
-| :--- | :--- |
-| **WC 00 00 01 A 07 23 - CONDITION**<br><br>**Remuneration Audit**<br>The annual payroll of $532,778 for MA class 8742, Location 3 is an estimate and is subject to audit after the policy period.<br><br>Applies within MA class 8742, Location 3; location ; class 8742; limit ; deductible . Annual Payroll: $532,778; Classification: Outside salespersons; Estimated Premium: $1,438; Form Title: Information Page; State: MA | **WC 00 00 00 C 04 21 - LIMITATION**<br><br>**Officer And Subcontractor Treatment**<br>Officer, member, volunteer, leased-worker, and subcontractor treatment for MA class 5190, Location 4 must be read with the attached forms schedule.<br><br>Applies within MA class 5190, Location 4; location ; class 5190; limit ; deductible . Annual Payroll: $545,022; Classification: Electrical wiring within buildings; Estimated Premium: $23,708; Form Title: Waiver of Our Right to Recover; State: MA |
-| **WC 00 00 01 A 07 23 - CONDITION**<br><br>**State Classification Control**<br>The MA classification 8742 controls the rating basis for Outside salespersons unless a state amendatory endorsement changes it.<br><br>Applies within MA class 8742, Location 3; location ; class 8742; limit ; deductible . Annual Payroll: $532,778; Classification: Outside salespersons; Estimated Premium: $1,438; Form Title: Information Page; State: MA | **WC 00 00 00 C 04 21 - CONDITION**<br><br>**Premium Revision Basis**<br>The estimated premium of $23,708 is calculated from rate 4.35, experience modification 1.04, and schedule rating 0%.<br><br>Applies within MA class 5190, Location 4; location ; class 5190; limit ; deductible . Annual Payroll: $545,022; Classification: Electrical wiring within buildings; Estimated Premium: $23,708; Form Title: Waiver of Our Right to Recover; State: MA |
-| **WC 00 00 01 A 07 23 - LIMITATION**<br><br>**Officer And Subcontractor Treatment**<br>Officer, member, volunteer, leased-worker, and subcontractor treatment for MA class 8742, Location 3 must be read with the attached forms schedule.<br><br>Applies within MA class 8742, Location 3; location ; class 8742; limit ; deductible . Annual Payroll: $532,778; Classification: Outside salespersons; Estimated Premium: $1,438; Form Title: Information Page; State: MA | **WC 00 00 00 C 07 23 - CONDITION**<br><br>**Remuneration Audit**<br>The annual payroll of $556,426 for RI class 9082, Location 5 is an estimate and is subject to audit after the policy period.<br><br>Applies within RI class 9082, Location 5; location ; class 9082; limit ; deductible . Annual Payroll: $556,426; Classification: Restaurant NOC; Estimated Premium: $4,117; Form Title: Workers Compensation and Employers Liability Policy; State: RI |
-| **WC 00 00 01 A 07 23 - CONDITION**<br><br>**Premium Revision Basis**<br>The estimated premium of $1,438 is calculated from rate 0.27, experience modification 1.04, and schedule rating 0%.<br><br>Applies within MA class 8742, Location 3; location ; class 8742; limit ; deductible . Annual Payroll: $532,778; Classification: Outside salespersons; Estimated Premium: $1,438; Form Title: Information Page; State: MA | **WC 00 00 00 C 07 23 - CONDITION**<br><br>**State Classification Control**<br>The RI classification 9082 controls the rating basis for Restaurant NOC unless a state amendatory endorsement changes it.<br><br>Applies within RI class 9082, Location 5; location ; class 9082; limit ; deductible . Annual Payroll: $556,426; Classification: Restaurant NOC; Estimated Premium: $4,117; Form Title: Workers Compensation and Employers Liability Policy; State: RI |
-| **WC 00 00 00 C 04 21 - CONDITION**<br><br>**Remuneration Audit**<br>The annual payroll of $545,022 for MA class 5190, Location 4 is an estimate and is subject to audit after the policy period.<br><br>Applies within MA class 5190, Location 4; location ; class 5190; limit ; deductible . Annual Payroll: $545,022; Classification: Electrical wiring within buildings; Estimated Premium: $23,708; Form Title: Waiver of Our Right to Recover; State: MA | **WC 00 00 00 C 07 23 - LIMITATION**<br><br>**Officer And Subcontractor Treatment**<br>Officer, member, volunteer, leased-worker, and subcontractor treatment for RI class 9082, Location 5 must be read with the attached forms schedule.<br><br>Applies within RI class 9082, Location 5; location ; class 9082; limit ; deductible . Annual Payroll: $556,426; Classification: Restaurant NOC; Estimated Premium: $4,117; Form Title: Workers Compensation and Employers Liability Policy; State: RI |
-| **WC 00 00 00 C 04 21 - CONDITION**<br><br>**State Classification Control**<br>The MA classification 5190 controls the rating basis for Electrical wiring within buildings unless a state amendatory endorsement changes it.<br><br>Applies within MA class 5190, Location 4; location ; class 5190; limit ; deductible . Annual Payroll: $545,022; Classification: Electrical wiring within buildings; Estimated Premium: $23,708; Form Title: Waiver of Our Right to Recover; State: MA | **WC 00 00 00 C 07 23 - CONDITION**<br><br>**Premium Revision Basis**<br>The estimated premium of $4,117 is calculated from rate 0.74, experience modification 1.04, and schedule rating 0%.<br><br>Applies within RI class 9082, Location 5; location ; class 9082; limit ; deductible . Annual Payroll: $556,426; Classification: Restaurant NOC; Estimated Premium: $4,117; Form Title: Workers Compensation and Employers Liability Policy; State: RI |
-
-<br>
-
----
-Policy packet                                                                                                          Page 117
-
-# Page 131
-
-POLICY PACKET                                                             +─────────────────────+
-                                                                          | POLICY COPY 1F7EA01 |
-                                                                          +─────────────────────+
-**Policy Form Provisions**
-
----
-
-**Policy form clauses**
-
-| | |
-|:---|:---|
-| **WC 00 03 13 04 21 - CONDITION**<br><br>**Remuneration Audit**<br><br>The annual payroll of $567,480 for ME class 3632, Location 1 is an estimate and is subject to audit after the policy period.<br><br>Applies within ME class 3632, Location 1; location ; class 3632; limit ; deductible . Annual Payroll: $567,480; Classification: Machine shop NOC; Estimated Premium: $35,297; Form Title: Workers Compensation and Employers Liability Policy; State: ME | **WC 04 03 06 07 23 - LIMITATION**<br><br>**Officer And Subcontractor Treatment**<br><br>Officer, member, volunteer, leased-worker, and subcontractor treatment for NH class 9015, Location 2 must be read with the attached forms schedule.<br><br>Applies within NH class 9015, Location 2; location ; class 9015; limit ; deductible . Annual Payroll: $572,285; Classification: Building operations by owner; Estimated Premium: $1,030; Form Title: Voluntary Compensation Endorsement; State: NH |
-| **WC 00 03 13 04 21 - CONDITION**<br><br>**State Classification Control**<br><br>The ME classification 3632 controls the rating basis for Machine shop NOC unless a state amendatory endorsement changes it.<br><br>Applies within ME class 3632, Location 1; location ; class 3632; limit ; deductible . Annual Payroll: $567,480; Classification: Machine shop NOC; Estimated Premium: $35,297; Form Title: Workers Compensation and Employers Liability Policy; State: ME | **WC 04 03 06 07 23 - CONDITION**<br><br>**Premium Revision Basis**<br><br>The estimated premium of $1,030 is calculated from rate 0.18, experience modification 1.04, and schedule rating 0%.<br><br>Applies within NH class 9015, Location 2; location ; class 9015; limit ; deductible . Annual Payroll: $572,285; Classification: Building operations by owner; Estimated Premium: $1,030; Form Title: Voluntary Compensation Endorsement; State: NH |
-| **WC 00 03 13 04 21 - LIMITATION**<br><br>**Officer And Subcontractor Treatment**<br><br>Officer, member, volunteer, leased-worker, and subcontractor treatment for ME class 3632, Location 1 must be read with the attached forms schedule.<br><br>Applies within ME class 3632, Location 1; location ; class 3632; limit ; deductible . Annual Payroll: $567,480; Classification: Machine shop NOC; Estimated Premium: $35,297; Form Title: Workers Compensation and Employers Liability Policy; State: ME | **WC 00 03 13 04 21 - CONDITION**<br><br>**Remuneration Audit**<br><br>The annual payroll of $584,565 for VT class 5606, Location 3 is an estimate and is subject to audit after the policy period.<br><br>Applies within VT class 5606, Location 3; location ; class 5606; limit ; deductible . Annual Payroll: $584,565; Classification: Contractor executive supervisor; Estimated Premium: $6,722; Form Title: Information Page; State: VT |
-| **WC 00 03 13 04 21 - CONDITION**<br><br>**Premium Revision Basis**<br><br>The estimated premium of $35,297 is calculated from rate 6.22, experience modification 1.04, and schedule rating 0%.<br><br>Applies within ME class 3632, Location 1; location ; class 3632; limit ; deductible . Annual Payroll: $567,480; Classification: Machine shop NOC; Estimated Premium: $35,297; Form Title: Workers Compensation and Employers Liability Policy; State: ME | **WC 00 03 13 04 21 - CONDITION**<br><br>**State Classification Control**<br><br>The VT classification 5606 controls the rating basis for Contractor executive supervisor unless a state amendatory endorsement changes it.<br><br>Applies within VT class 5606, Location 3; location ; class 5606; limit ; deductible . Annual Payroll: $584,565; Classification: Contractor executive supervisor; Estimated Premium: $6,722; Form Title: Information Page; State: VT |
-| **WC 04 03 06 07 23 - CONDITION**<br><br>**Remuneration Audit**<br><br>The annual payroll of $572,285 for NH class 9015, Location 2 is an estimate and is subject to audit after the policy period.<br><br>Applies within NH class 9015, Location 2; location ; class 9015; limit ; deductible . Annual Payroll: $572,285; Classification: Building operations by owner; Estimated Premium: $1,030; Form Title: Voluntary Compensation Endorsement; State: NH | **WC 00 03 13 04 21 - LIMITATION**<br><br>**Officer And Subcontractor Treatment**<br><br>Officer, member, volunteer, leased-worker, and subcontractor treatment for VT class 5606, Location 3 must be read with the attached forms schedule.<br><br>Applies within VT class 5606, Location 3; location ; class 5606; limit ; deductible . Annual Payroll: $584,565; Classification: Contractor executive supervisor; Estimated Premium: $6,722; Form Title: Information Page; State: VT |
-| **WC 04 03 06 07 23 - CONDITION**<br><br>**State Classification Control**<br><br>The NH classification 9015 controls the rating basis for Building operations by owner unless a state amendatory endorsement changes it.<br><br>Applies within NH class 9015, Location 2; location ; class 9015; limit ; deductible . Annual Payroll: $572,285; Classification: Building operations by owner; Estimated Premium: $1,030; Form Title: Voluntary Compensation Endorsement; State: NH | **WC 00 03 13 04 21 - CONDITION**<br><br>**Premium Revision Basis**<br><br>The estimated premium of $6,722 is calculated from rate 1.15, experience modification 1.04, and schedule rating 0%.<br><br>Applies within VT class 5606, Location 3; location ; class 5606; limit ; deductible . Annual Payroll: $584,565; Classification: Contractor executive supervisor; Estimated Premium: $6,722; Form Title: Information Page; State: VT |
-
----
-Policy packet                                                                                            Page 118
-
-# Page 132
-
-POLICY PACKET                                                                           POLICY COPY 1F7EA01
-
-# Policy Form Provisions
-
-### Policy form clauses
-
-| | |
-| :--- | :--- |
-| **WC 00 03 13 01 15 - CONDITION**<br><br>**Remuneration Audit**<br>The annual payroll of $594,857 for CT class 8810, Location 4 is an estimate and is subject to audit after the policy period.<br><br>Applies within CT class 8810, Location 4; location ; class 8810; limit ; deductible . Annual Payroll: $594,857; Classification: Clerical office employees; Estimated Premium: $2,498; Form Title: Information Page; State: CT | **WC 04 03 06 07 23 - LIMITATION**<br><br>**Officer And Subcontractor Treatment**<br>Officer, member, volunteer, leased-worker, and subcontractor treatment for CT class 8017, Location 5 must be read with the attached forms schedule.<br><br>Applies within CT class 8017, Location 5; location ; class 8017; limit ; deductible . Annual Payroll: $611,668; Classification: Retail store - all employees; Estimated Premium: $26,607; Form Title: Voluntary Compensation Endorsement; State: CT |
-| **WC 00 03 13 01 15 - CONDITION**<br><br>**State Classification Control**<br>The CT classification 8810 controls the rating basis for Clerical office employees unless a state amendatory endorsement changes it.<br><br>Applies within CT class 8810, Location 4; location ; class 8810; limit ; deductible . Annual Payroll: $594,857; Classification: Clerical office employees; Estimated Premium: $2,498; Form Title: Information Page; State: CT | **WC 04 03 06 07 23 - CONDITION**<br><br>**Premium Revision Basis**<br>The estimated premium of $26,607 is calculated from rate 4.35, experience modification 1.04, and schedule rating 0%.<br><br>Applies within CT class 8017, Location 5; location ; class 8017; limit ; deductible . Annual Payroll: $611,668; Classification: Retail store - all employees; Estimated Premium: $26,607; Form Title: Voluntary Compensation Endorsement; State: CT |
-| **WC 00 03 13 01 15 - LIMITATION**<br><br>**Officer And Subcontractor Treatment**<br>Officer, member, volunteer, leased-worker, and subcontractor treatment for CT class 8810, Location 4 must be read with the attached forms schedule.<br><br>Applies within CT class 8810, Location 4; location ; class 8810; limit ; deductible . Annual Payroll: $594,857; Classification: Clerical office employees; Estimated Premium: $2,498; Form Title: Information Page; State: CT | **WC 00 03 13 04 21 - CONDITION**<br><br>**Remuneration Audit**<br>The annual payroll of $622,528 for MA class 8742, Location 1 is an estimate and is subject to audit after the policy period.<br><br>Applies within MA class 8742, Location 1; location ; class 8742; limit ; deductible . Annual Payroll: $622,528; Classification: Outside salespersons; Estimated Premium: $4,606; Form Title: Voluntary Compensation Endorsement; State: MA |
-| **WC 00 03 13 01 15 - CONDITION**<br><br>**Premium Revision Basis**<br>The estimated premium of $2,498 is calculated from rate 0.42, experience modification 1.04, and schedule rating 0%.<br><br>Applies within CT class 8810, Location 4; location ; class 8810; limit ; deductible . Annual Payroll: $594,857; Classification: Clerical office employees; Estimated Premium: $2,498; Form Title: Information Page; State: CT | **WC 00 03 13 04 21 - CONDITION**<br><br>**State Classification Control**<br>The MA classification 8742 controls the rating basis for Outside salespersons unless a state amendatory endorsement changes it.<br><br>Applies within MA class 8742, Location 1; location ; class 8742; limit ; deductible . Annual Payroll: $622,528; Classification: Outside salespersons; Estimated Premium: $4,606; Form Title: Voluntary Compensation Endorsement; State: MA |
-| **WC 04 03 06 07 23 - CONDITION**<br><br>**Remuneration Audit**<br>The annual payroll of $611,668 for CT class 8017, Location 5 is an estimate and is subject to audit after the policy period.<br><br>Applies within CT class 8017, Location 5; location ; class 8017; limit ; deductible . Annual Payroll: $611,668; Classification: Retail store - all employees; Estimated Premium: $26,607; Form Title: Voluntary Compensation Endorsement; State: CT | **WC 00 03 13 04 21 - LIMITATION**<br><br>**Officer And Subcontractor Treatment**<br>Officer, member, volunteer, leased-worker, and subcontractor treatment for MA class 8742, Location 1 must be read with the attached forms schedule.<br><br>Applies within MA class 8742, Location 1; location ; class 8742; limit ; deductible . Annual Payroll: $622,528; Classification: Outside salespersons; Estimated Premium: $4,606; Form Title: Voluntary Compensation Endorsement; State: MA |
-| **WC 04 03 06 07 23 - CONDITION**<br><br>**State Classification Control**<br>The CT classification 8017 controls the rating basis for Retail store - all employees unless a state amendatory endorsement changes it.<br><br>Applies within CT class 8017, Location 5; location ; class 8017; limit ; deductible . Annual Payroll: $611,668; Classification: Retail store - all employees; Estimated Premium: $26,607; Form Title: Voluntary Compensation Endorsement; State: CT | **WC 00 03 13 04 21 - CONDITION**<br><br>**Premium Revision Basis**<br>The estimated premium of $4,606 is calculated from rate 0.74, experience modification 1.04, and schedule rating 0%.<br><br>Applies within MA class 8742, Location 1; location ; class 8742; limit ; deductible . Annual Payroll: $622,528; Classification: Outside salespersons; Estimated Premium: $4,606; Form Title: Voluntary Compensation Endorsement; State: MA |
-
-<br>
-
----
-Policy packet                                                                                     Page 119
-
-# Page 133
-
-POLICY PACKET                                                                              +----------------------+
-                                                                                           | POLICY COPY 1F7EA01  |
-                                                                                           +----------------------+
-Policy Form Provisions
-___________________________________________________________________________________________________________________
-
-Policy form clauses
-
-+-----------------------------------------------------------+ +-----------------------------------------------------------+
-| WC 00 00 00 C 07 23 - CONDITION                           | | WC 00 00 01 A 01 15 - LIMITATION                          |
-|                                                           | |                                                           |
-| Remuneration Audit                                        | | Officer And Subcontractor Treatment                       |
-|                                                           | |                                                           |
-| The annual payroll of $633,943 for MA class 5190,         | | Officer, member, volunteer, leased-worker, and            |
-| Location 2 is an estimate and is subject to audit after   | | subcontractor treatment for RI class 9082, Location 3    |
-| the policy period.                                        | | must be read with the attached forms schedule.            |
-|                                                           | |                                                           |
-| Applies within MA class 5190, Location 2; location ;      | | Applies within RI class 9082, Location 3; location ;      |
-| class 5190; limit ; deductible . Annual Payroll: $633,943;| | class 9082; limit ; deductible . Annual Payroll: $642,370;|
-| Classification: Electrical wiring within buildings;       | | Classification: Restaurant NOC; Estimated Premium:       |
-| Estimated Premium: $4,691; Form Title: Voluntary          | | $27,943; Form Title: Waiver of Our Right to Recover;     |
-| Compensation Endorsement; State: MA                       | | State: RI                                                 |
-+-----------------------------------------------------------+ +-----------------------------------------------------------+
-
-+-----------------------------------------------------------+ +-----------------------------------------------------------+
-| WC 00 00 00 C 07 23 - CONDITION                           | | WC 00 00 01 A 01 15 - CONDITION                          |
-|                                                           | |                                                           |
-| State Classification Control                              | | Premium Revision Basis                                    |
-|                                                           | |                                                           |
-| The MA classification 5190 controls the rating basis for  | | The estimated premium of $27,943 is calculated from rate  |
-| Electrical wiring within buildings unless a state         | | 4.35, experience modification 1.04, and schedule rating  |
-| amendatory endorsement changes it.                        | | 0%.                                                       |
-|                                                           | |                                                           |
-| Applies within MA class 5190, Location 2; location ;      | | Applies within RI class 9082, Location 3; location ;      |
-| class 5190; limit ; deductible . Annual Payroll: $633,943;| | class 9082; limit ; deductible . Annual Payroll: $642,370;|
-| Classification: Electrical wiring within buildings;       | | Classification: Restaurant NOC; Estimated Premium:       |
-| Estimated Premium: $4,691; Form Title: Voluntary          | | $27,943; Form Title: Waiver of Our Right to Recover;     |
-| Compensation Endorsement; State: MA                       | | State: RI                                                 |
-+-----------------------------------------------------------+ +-----------------------------------------------------------+
-
-+-----------------------------------------------------------+ +-----------------------------------------------------------+
-| WC 00 00 00 C 07 23 - LIMITATION                          | | WC 00 00 01 A 04 21 - CONDITION                          |
-|                                                           | |                                                           |
-| Officer And Subcontractor Treatment                       | | Remuneration Audit                                        |
-|                                                           | |                                                           |
-| Officer, member, volunteer, leased-worker, and            | | The annual payroll of $657,159 for ME class 3632,         |
-| subcontractor treatment for MA class 5190, Location 2     | | Location 4 is an estimate and is subject to audit after   |
-| must be read with the attached forms schedule.            | | the policy period.                                        |
-|                                                           | |                                                           |
-| Applies within MA class 5190, Location 2; location ;      | | Applies within ME class 3632, Location 4; location ;      |
-| class 5190; limit ; deductible . Annual Payroll: $633,943;| | class 3632; limit ; deductible . Annual Payroll: $657,159;|
-| Classification: Electrical wiring within buildings;       | | Classification: Machine shop NOC; Estimated Premium:     |
-| Estimated Premium: $4,691; Form Title: Voluntary          | | $2,760; Form Title: Voluntary Compensation Endorsement;  |
-| Compensation Endorsement; State: MA                       | | State: ME                                                 |
-+-----------------------------------------------------------+ +-----------------------------------------------------------+
-
-+-----------------------------------------------------------+ +-----------------------------------------------------------+
-| WC 00 00 00 C 07 23 - CONDITION                           | | WC 00 00 01 A 04 21 - CONDITION                          |
-|                                                           | |                                                           |
-| Premium Revision Basis                                    | | State Classification Control                              |
-|                                                           | |                                                           |
-| The estimated premium of $4,691 is calculated from rate   | | The ME classification 3632 controls the rating basis for  |
-| 0.74, experience modification 1.04, and schedule rating   | | Machine shop NOC unless a state amendatory endorsement    |
-| 0%.                                                       | | changes it.                                               |
-|                                                           | |                                                           |
-| Applies within MA class 5190, Location 2; location ;      | | Applies within ME class 3632, Location 4; location ;      |
-| class 5190; limit ; deductible . Annual Payroll: $633,943;| | class 3632; limit ; deductible . Annual Payroll: $657,159;|
-| Classification: Electrical wiring within buildings;       | | Classification: Machine shop NOC; Estimated Premium:     |
-| Estimated Premium: $4,691; Form Title: Voluntary          | | $2,760; Form Title: Voluntary Compensation Endorsement;  |
-| Compensation Endorsement; State: MA                       | | State: ME                                                 |
-+-----------------------------------------------------------+ +-----------------------------------------------------------+
-
-+-----------------------------------------------------------+ +-----------------------------------------------------------+
-| WC 00 00 01 A 01 15 - CONDITION                           | | WC 00 00 01 A 04 21 - LIMITATION                          |
-|                                                           | |                                                           |
-| Remuneration Audit                                        | | Officer And Subcontractor Treatment                       |
-|                                                           | |                                                           |
-| The annual payroll of $642,370 for RI class 9082,         | | Officer, member, volunteer, leased-worker, and            |
-| Location 3 is an estimate and is subject to audit after   | | subcontractor treatment for ME class 3632, Location 4    |
-| the policy period.                                        | | must be read with the attached forms schedule.            |
-|                                                           | |                                                           |
-| Applies within RI class 9082, Location 3; location ;      | | Applies within ME class 3632, Location 4; location ;      |
-| class 9082; limit ; deductible . Annual Payroll: $642,370;| | class 3632; limit ; deductible . Annual Payroll: $657,159;|
-| Classification: Restaurant NOC; Estimated Premium:        | | Classification: Machine shop NOC; Estimated Premium:     |
-| $27,943; Form Title: Waiver of Our Right to Recover;     | | $2,760; Form Title: Voluntary Compensation Endorsement;  |
-| State: RI                                                 | | State: ME                                                 |
-+-----------------------------------------------------------+ +-----------------------------------------------------------+
-
-+-----------------------------------------------------------+ +-----------------------------------------------------------+
-| WC 00 00 01 A 01 15 - CONDITION                           | | WC 00 00 01 A 04 21 - CONDITION                          |
-|                                                           | |                                                           |
-| State Classification Control                              | | Premium Revision Basis                                    |
-|                                                           | |                                                           |
-| The RI classification 9082 controls the rating basis for  | | The estimated premium of $2,760 is calculated from rate   |
-| Restaurant NOC unless a state amendatory endorsement      | | 0.42, experience modification 1.04, and schedule rating   |
-| changes it.                                               | | 0%.                                                       |
-|                                                           | |                                                           |
-| Applies within RI class 9082, Location 3; location ;      | | Applies within ME class 3632, Location 4; location ;      |
-| class 9082; limit ; deductible . Annual Payroll: $642,370;| | class 3632; limit ; deductible . Annual Payroll: $657,159;|
-| Classification: Restaurant NOC; Estimated Premium:        | | Classification: Machine shop NOC; Estimated Premium:     |
-| $27,943; Form Title: Waiver of Our Right to Recover;     | | $2,760; Form Title: Voluntary Compensation Endorsement;  |
-| State: RI                                                 | | State: ME                                                 |
-+-----------------------------------------------------------+ +-----------------------------------------------------------+
-
-___________________________________________________________________________________________________________________
-Policy packet                                                                                              Page 120
-
-# Page 134
-
-POLICY PACKET                                                                    ┌──────────────────────────┐
-                                                                                     │   POLICY COPY 1F7EA01    │
-Policy Form Provisions                                                           └──────────────────────────┘
-─────────────────────────────────────────────────────────────────────────────────────────────────────────────
-
-### Policy form clauses
-
-| | |
-|:---|:---|
-| **WC 00 00 01 A 07 23 - CONDITION**<br><br>**Remuneration Audit**<br>The annual payroll of $663,479 for NH class 9015, Location 5 is an estimate and is subject to audit after the policy period.<br><br>Applies within NH class 9015, Location 5; location ; class 9015; limit ; deductible . Annual Payroll: $663,479; Classification: Building operations by owner; Estimated Premium: $18,975; Form Title: Information Page; State: NH | **WC 00 00 00 C 07 23 - LIMITATION**<br><br>**Officer And Subcontractor Treatment**<br>Officer, member, volunteer, leased-worker, and subcontractor treatment for VT class 5606, Location 1 must be read with the attached forms schedule.<br><br>Applies within VT class 5606, Location 1; location ; class 5606; limit ; deductible . Annual Payroll: $675,365; Classification: Contractor executive supervisor; Estimated Premium: $29,378; Form Title: Voluntary Compensation Endorsement; State: VT |
-| **WC 00 00 01 A 07 23 - CONDITION**<br><br>**State Classification Control**<br>The NH classification 9015 controls the rating basis for Building operations by owner unless a state amendatory endorsement changes it.<br><br>Applies within NH class 9015, Location 5; location ; class 9015; limit ; deductible . Annual Payroll: $663,479; Classification: Building operations by owner; Estimated Premium: $18,975; Form Title: Information Page; State: NH | **WC 00 00 00 C 07 23 - CONDITION**<br><br>**Premium Revision Basis**<br>The estimated premium of $29,378 is calculated from rate 4.35, experience modification 1.04, and schedule rating 0%.<br><br>Applies within VT class 5606, Location 1; location ; class 5606; limit ; deductible . Annual Payroll: $675,365; Classification: Contractor executive supervisor; Estimated Premium: $29,378; Form Title: Voluntary Compensation Endorsement; State: VT |
-| **WC 00 00 01 A 07 23 - LIMITATION**<br><br>**Officer And Subcontractor Treatment**<br>Officer, member, volunteer, leased-worker, and subcontractor treatment for NH class 9015, Location 5 must be read with the attached forms schedule.<br><br>Applies within NH class 9015, Location 5; location ; class 9015; limit ; deductible . Annual Payroll: $663,479; Classification: Building operations by owner; Estimated Premium: $18,975; Form Title: Information Page; State: NH | **WC 00 00 01 A 04 21 - CONDITION**<br><br>**Remuneration Audit**<br>The annual payroll of $686,739 for CT class 8810, Location 2 is an estimate and is subject to audit after the policy period.<br><br>Applies within CT class 8810, Location 2; location ; class 8810; limit ; deductible . Annual Payroll: $686,739; Classification: Clerical office employees; Estimated Premium: $19,640; Form Title: Voluntary Compensation Endorsement; State: CT |
-| **WC 00 00 01 A 07 23 - CONDITION**<br><br>**Premium Revision Basis**<br>The estimated premium of $18,975 is calculated from rate 2.86, experience modification 1.04, and schedule rating 0%.<br><br>Applies within NH class 9015, Location 5; location ; class 9015; limit ; deductible . Annual Payroll: $663,479; Classification: Building operations by owner; Estimated Premium: $18,975; Form Title: Information Page; State: NH | **WC 00 00 01 A 04 21 - CONDITION**<br><br>**State Classification Control**<br>The CT classification 8810 controls the rating basis for Clerical office employees unless a state amendatory endorsement changes it.<br><br>Applies within CT class 8810, Location 2; location ; class 8810; limit ; deductible . Annual Payroll: $686,739; Classification: Clerical office employees; Estimated Premium: $19,640; Form Title: Voluntary Compensation Endorsement; State: CT |
-| **WC 00 00 00 C 07 23 - CONDITION**<br><br>**Remuneration Audit**<br>The annual payroll of $675,365 for VT class 5606, Location 1 is an estimate and is subject to audit after the policy period.<br><br>Applies within VT class 5606, Location 1; location ; class 5606; limit ; deductible . Annual Payroll: $675,365; Classification: Contractor executive supervisor; Estimated Premium: $29,378; Form Title: Voluntary Compensation Endorsement; State: VT | **WC 00 00 01 A 04 21 - LIMITATION**<br><br>**Officer And Subcontractor Treatment**<br>Officer, member, volunteer, leased-worker, and subcontractor treatment for CT class 8810, Location 2 must be read with the attached forms schedule.<br><br>Applies within CT class 8810, Location 2; location ; class 8810; limit ; deductible . Annual Payroll: $686,739; Classification: Clerical office employees; Estimated Premium: $19,640; Form Title: Voluntary Compensation Endorsement; State: CT |
-| **WC 00 00 00 C 07 23 - CONDITION**<br><br>**State Classification Control**<br>The VT classification 5606 controls the rating basis for Contractor executive supervisor unless a state amendatory endorsement changes it.<br><br>Applies within VT class 5606, Location 1; location ; class 5606; limit ; deductible . Annual Payroll: $675,365; Classification: Contractor executive supervisor; Estimated Premium: $29,378; Form Title: Voluntary Compensation Endorsement; State: VT | **WC 00 00 01 A 04 21 - CONDITION**<br><br>**Premium Revision Basis**<br>The estimated premium of $19,640 is calculated from rate 2.86, experience modification 1.04, and schedule rating 0%.<br><br>Applies within CT class 8810, Location 2; location ; class 8810; limit ; deductible . Annual Payroll: $686,739; Classification: Clerical office employees; Estimated Premium: $19,640; Form Title: Voluntary Compensation Endorsement; State: CT |
-
-<br>
-
-─────────────────────────────────────────────────────────────────────────────────────────────────────────────
-Policy packet                                                                                        Page 121
-
-# Page 135
-
-POLICY PACKET | [POLICY COPY 1F7EA01]
----|---
-
-# Policy Form Provisions
-
-### Policy form clauses
-
-| | |
-| :--- | :--- |
-| **WC 00 00 01 A 01 15 - CONDITION**<br><br>**Remuneration Audit**<br>The annual payroll of $705,887 for CT class 8017, Location 3 is an estimate and is subject to audit after the policy period.<br><br>Applies within CT class 8017, Location 3; location ; class 8017; limit ; deductible . Annual Payroll: $705,887; Classification: Retail store - all employees; Estimated Premium: $1,905; Form Title: Waiver of Our Right to Recover; State: CT | **WC 00 00 00 C 04 21 - LIMITATION**<br><br>**Officer And Subcontractor Treatment**<br>Officer, member, volunteer, leased-worker, and subcontractor treatment for MA class 8742, Location 4 must be read with the attached forms schedule.<br><br>Applies within MA class 8742, Location 4; location ; class 8742; limit ; deductible . Annual Payroll: $716,927; Classification: Outside salespersons; Estimated Premium: $1,290; Form Title: Workers Compensation and Employers Liability Policy; State: MA |
-| **WC 00 00 01 A 01 15 - CONDITION**<br><br>**State Classification Control**<br>The CT classification 8017 controls the rating basis for Retail store - all employees unless a state amendatory endorsement changes it.<br><br>Applies within CT class 8017, Location 3; location ; class 8017; limit ; deductible . Annual Payroll: $705,887; Classification: Retail store - all employees; Estimated Premium: $1,905; Form Title: Waiver of Our Right to Recover; State: CT | **WC 00 00 00 C 04 21 - CONDITION**<br><br>**Premium Revision Basis**<br>The estimated premium of $1,290 is calculated from rate 0.18, experience modification 1.04, and schedule rating 0%.<br><br>Applies within MA class 8742, Location 4; location ; class 8742; limit ; deductible . Annual Payroll: $716,927; Classification: Outside salespersons; Estimated Premium: $1,290; Form Title: Workers Compensation and Employers Liability Policy; State: MA |
-| **WC 00 00 01 A 01 15 - LIMITATION**<br><br>**Officer And Subcontractor Treatment**<br>Officer, member, volunteer, leased-worker, and subcontractor treatment for CT class 8017, Location 3 must be read with the attached forms schedule.<br><br>Applies within CT class 8017, Location 3; location ; class 8017; limit ; deductible . Annual Payroll: $705,887; Classification: Retail store - all employees; Estimated Premium: $1,905; Form Title: Waiver of Our Right to Recover; State: CT | **WC 00 00 00 C 01 15 - CONDITION**<br><br>**Remuneration Audit**<br>The annual payroll of $724,745 for MA class 5190, Location 5 is an estimate and is subject to audit after the policy period.<br><br>Applies within MA class 5190, Location 5; location ; class 5190; limit ; deductible . Annual Payroll: $724,745; Classification: Electrical wiring within buildings; Estimated Premium: $1,304; Form Title: Workers Compensation and Employers Liability Policy; State: MA |
-| **WC 00 00 01 A 01 15 - CONDITION**<br><br>**Premium Revision Basis**<br>The estimated premium of $1,905 is calculated from rate 0.27, experience modification 1.04, and schedule rating 0%.<br><br>Applies within CT class 8017, Location 3; location ; class 8017; limit ; deductible . Annual Payroll: $705,887; Classification: Retail store - all employees; Estimated Premium: $1,905; Form Title: Waiver of Our Right to Recover; State: CT | **WC 00 00 00 C 01 15 - CONDITION**<br><br>**State Classification Control**<br>The MA classification 5190 controls the rating basis for Electrical wiring within buildings unless a state amendatory endorsement changes it.<br><br>Applies within MA class 5190, Location 5; location ; class 5190; limit ; deductible . Annual Payroll: $724,745; Classification: Electrical wiring within buildings; Estimated Premium: $1,304; Form Title: Workers Compensation and Employers Liability Policy; State: MA |
-| **WC 00 00 00 C 04 21 - CONDITION**<br><br>**Remuneration Audit**<br>The annual payroll of $716,927 for MA class 8742, Location 4 is an estimate and is subject to audit after the policy period.<br><br>Applies within MA class 8742, Location 4; location ; class 8742; limit ; deductible . Annual Payroll: $716,927; Classification: Outside salespersons; Estimated Premium: $1,290; Form Title: Workers Compensation and Employers Liability Policy; State: MA | **WC 00 00 00 C 01 15 - LIMITATION**<br><br>**Officer And Subcontractor Treatment**<br>Officer, member, volunteer, leased-worker, and subcontractor treatment for MA class 5190, Location 5 must be read with the attached forms schedule.<br><br>Applies within MA class 5190, Location 5; location ; class 5190; limit ; deductible . Annual Payroll: $724,745; Classification: Electrical wiring within buildings; Estimated Premium: $1,304; Form Title: Workers Compensation and Employers Liability Policy; State: MA |
-| **WC 00 00 00 C 04 21 - CONDITION**<br><br>**State Classification Control**<br>The MA classification 8742 controls the rating basis for Outside salespersons unless a state amendatory endorsement changes it.<br><br>Applies within MA class 8742, Location 4; location ; class 8742; limit ; deductible . Annual Payroll: $716,927; Classification: Outside salespersons; Estimated Premium: $1,290; Form Title: Workers Compensation and Employers Liability Policy; State: MA | **WC 00 00 00 C 01 15 - CONDITION**<br><br>**Premium Revision Basis**<br>The estimated premium of $1,304 is calculated from rate 0.18, experience modification 1.04, and schedule rating 0%.<br><br>Applies within MA class 5190, Location 5; location ; class 5190; limit ; deductible . Annual Payroll: $724,745; Classification: Electrical wiring within buildings; Estimated Premium: $1,304; Form Title: Workers Compensation and Employers Liability Policy; State: MA |
-
-***
-
-Policy packet | Page 122
-
-# Page 136
-
-POLICY PACKET                                                                          POLICY COPY 1F7EA01
-
-# Underwriting Support
-
-**Countersignature, notices, and producer copy**
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
-
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-123-01,Producer correspondence,Reviewed,Rating file
-REF-123-02,State exception,Pending,Policy audit
-REF-123-03,Form filing note,Indexed,Producer copy
-REF-123-04,"Countersignature, notices, and producer copy",Archive,State form
-REF-123-05,Prior policy comparison,Reviewed,Rating file
-REF-123-06,Rating worksheet,Pending,Policy audit
-REF-123-07,Producer correspondence,Indexed,Producer copy
-REF-123-08,State exception,Archive,State form
-REF-123-09,Form filing note,Reviewed,Rating file
-REF-123-10,"Countersignature, notices, and producer copy",Pending,Policy audit
-REF-123-11,Prior policy comparison,Indexed,Producer copy
-REF-123-12,Rating worksheet,Archive,State form
-REF-123-13,Producer correspondence,Reviewed,Rating file
-REF-123-14,State exception,Pending,Policy audit
-REF-123-15,Form filing note,Indexed,Producer copy
-REF-123-16,"Countersignature, notices, and producer copy",Archive,State form
-REF-123-17,Prior policy comparison,Reviewed,Rating file
-REF-123-18,Rating worksheet,Pending,Policy audit
-REF-123-19,Producer correspondence,Indexed,Producer copy
-REF-123-20,State exception,Archive,State form
-REF-123-21,Form filing note,Reviewed,Rating file
-REF-123-22,"Countersignature, notices, and producer copy",Pending,Policy audit
-REF-123-23,Prior policy comparison,Indexed,Producer copy
-REF-123-24,Rating worksheet,Archive,State form
-REF-123-25,Producer correspondence,Reviewed,Rating file
-REF-123-26,State exception,Pending,Policy audit
-REF-123-27,Form filing note,Indexed,Producer copy
-REF-123-28,"Countersignature, notices, and producer copy",Archive,State form
-REF-123-29,Prior policy comparison,Reviewed,Rating file
-REF-123-30,Rating worksheet,Pending,Policy audit
-
-Policy packet                                                                                   Page 123
-
-# Page 137
-
-POLICY PACKET                                                                    POLICY COPY 1F7EA01
-
-Underwriting Support
-
-Countersignature, notices, and producer copy
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
-
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-124-01,State exception,Reviewed,Policy audit
-REF-124-02,Form filing note,Pending,Producer copy
-REF-124-03,"Countersignature, notices, and producer copy",Indexed,State form
-REF-124-04,Prior policy comparison,Archive,Rating file
-REF-124-05,Rating worksheet,Reviewed,Policy audit
-REF-124-06,Producer correspondence,Pending,Producer copy
-REF-124-07,State exception,Indexed,State form
-REF-124-08,Form filing note,Archive,Rating file
-REF-124-09,"Countersignature, notices, and producer copy",Reviewed,Policy audit
-REF-124-10,Prior policy comparison,Pending,Producer copy
-REF-124-11,Rating worksheet,Indexed,State form
-REF-124-12,Producer correspondence,Archive,Rating file
-REF-124-13,State exception,Reviewed,Policy audit
-REF-124-14,Form filing note,Pending,Producer copy
-REF-124-15,"Countersignature, notices, and producer copy",Indexed,State form
-REF-124-16,Prior policy comparison,Archive,Rating file
-REF-124-17,Rating worksheet,Reviewed,Policy audit
-REF-124-18,Producer correspondence,Pending,Producer copy
-REF-124-19,State exception,Indexed,State form
-REF-124-20,Form filing note,Archive,Rating file
-REF-124-21,"Countersignature, notices, and producer copy",Reviewed,Policy audit
-REF-124-22,Prior policy comparison,Pending,Producer copy
-REF-124-23,Rating worksheet,Indexed,State form
-REF-124-24,Producer correspondence,Archive,Rating file
-REF-124-25,State exception,Reviewed,Policy audit
-REF-124-26,Form filing note,Pending,Producer copy
-REF-124-27,"Countersignature, notices, and producer copy",Indexed,State form
-REF-124-28,Prior policy comparison,Archive,Rating file
-REF-124-29,Rating worksheet,Reviewed,Policy audit
-REF-124-30,Producer correspondence,Pending,Producer copy
-
-Policy packet                                                                              Page 124
-
-# Page 138
-
-POLICY PACKET                                                                     POLICY COPY 1F7EA01
-
-Underwriting Support
-
-Countersignature, notices, and producer copy
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
-
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-125-01,Form filing note,Reviewed,Producer copy
-REF-125-02,"Countersignature, notices, and producer copy",Pending,State form
-REF-125-03,Prior policy comparison,Indexed,Rating file
-REF-125-04,Rating worksheet,Archive,Policy audit
-REF-125-05,Producer correspondence,Reviewed,Producer copy
-REF-125-06,State exception,Pending,State form
-REF-125-07,Form filing note,Indexed,Rating file
-REF-125-08,"Countersignature, notices, and producer copy",Archive,Policy audit
-REF-125-09,Prior policy comparison,Reviewed,Producer copy
-REF-125-10,Rating worksheet,Pending,State form
-REF-125-11,Producer correspondence,Indexed,Rating file
-REF-125-12,State exception,Archive,Policy audit
-REF-125-13,Form filing note,Reviewed,Producer copy
-REF-125-14,"Countersignature, notices, and producer copy",Pending,State form
-REF-125-15,Prior policy comparison,Indexed,Rating file
-REF-125-16,Rating worksheet,Archive,Policy audit
-REF-125-17,Producer correspondence,Reviewed,Producer copy
-REF-125-18,State exception,Pending,State form
-REF-125-19,Form filing note,Indexed,Rating file
-REF-125-20,"Countersignature, notices, and producer copy",Archive,Policy audit
-REF-125-21,Prior policy comparison,Reviewed,Producer copy
-REF-125-22,Rating worksheet,Pending,State form
-REF-125-23,Producer correspondence,Indexed,Rating file
-REF-125-24,State exception,Archive,Policy audit
-REF-125-25,Form filing note,Reviewed,Producer copy
-REF-125-26,"Countersignature, notices, and producer copy",Pending,State form
-REF-125-27,Prior policy comparison,Indexed,Rating file
-REF-125-28,Rating worksheet,Archive,Policy audit
-REF-125-29,Producer correspondence,Reviewed,Producer copy
-REF-125-30,State exception,Pending,State form
-
-Policy packet                                                                                 Page 125
-
-# Page 139
-
-POLICY PACKET                                                                                    POLICY COPY 1F7EA01
-
-# Underwriting Support
-
-### Countersignature, notices, and producer copy
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
-
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-126-01,"Countersignature, notices, and producer copy",Reviewed,State form
-REF-126-02,Prior policy comparison,Pending,Rating file
-REF-126-03,Rating worksheet,Indexed,Policy audit
-REF-126-04,Producer correspondence,Archive,Producer copy
-REF-126-05,State exception,Reviewed,State form
-REF-126-06,Form filing note,Pending,Rating file
-REF-126-07,"Countersignature, notices, and producer copy",Indexed,Policy audit
-REF-126-08,Prior policy comparison,Archive,Producer copy
-REF-126-09,Rating worksheet,Reviewed,State form
-REF-126-10,Producer correspondence,Pending,Rating file
-REF-126-11,State exception,Indexed,Policy audit
-REF-126-12,Form filing note,Archive,Producer copy
-REF-126-13,"Countersignature, notices, and producer copy",Reviewed,State form
-REF-126-14,Prior policy comparison,Pending,Rating file
-REF-126-15,Rating worksheet,Indexed,Policy audit
-REF-126-16,Producer correspondence,Archive,Producer copy
-REF-126-17,State exception,Reviewed,State form
-REF-126-18,Form filing note,Pending,Rating file
-REF-126-19,"Countersignature, notices, and producer copy",Indexed,Policy audit
-REF-126-20,Prior policy comparison,Archive,Producer copy
-REF-126-21,Rating worksheet,Reviewed,State form
-REF-126-22,Producer correspondence,Pending,Rating file
-REF-126-23,State exception,Indexed,Policy audit
-REF-126-24,Form filing note,Archive,Producer copy
-REF-126-25,"Countersignature, notices, and producer copy",Reviewed,State form
-REF-126-26,Prior policy comparison,Pending,Rating file
-REF-126-27,Rating worksheet,Indexed,Policy audit
-REF-126-28,Producer correspondence,Archive,Producer copy
-REF-126-29,State exception,Reviewed,State form
-REF-126-30,Form filing note,Pending,Rating file
-
-Policy packet                                                                                       Page 126
-
-# Page 140
-
-POLICY PACKET
-Underwriting Support
-
-[POLICY COPY 1F7EA01]
-
-Countersignature, notices, and producer copy
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
-
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-127-01,Prior policy comparison,Reviewed,Rating file
-REF-127-02,Rating worksheet,Pending,Policy audit
-REF-127-03,Producer correspondence,Indexed,Producer copy
-REF-127-04,State exception,Archive,State form
-REF-127-05,Form filing note,Reviewed,Rating file
-REF-127-06,"Countersignature, notices, and producer copy",Pending,Policy audit
-REF-127-07,Prior policy comparison,Indexed,Producer copy
-REF-127-08,Rating worksheet,Archive,State form
-REF-127-09,Producer correspondence,Reviewed,Rating file
-REF-127-10,State exception,Pending,Policy audit
-REF-127-11,Form filing note,Indexed,Producer copy
-REF-127-12,"Countersignature, notices, and producer copy",Archive,State form
-REF-127-13,Prior policy comparison,Reviewed,Rating file
-REF-127-14,Rating worksheet,Pending,Policy audit
-REF-127-15,Producer correspondence,Indexed,Producer copy
-REF-127-16,State exception,Archive,State form
-REF-127-17,Form filing note,Reviewed,Rating file
-REF-127-18,"Countersignature, notices, and producer copy",Pending,Policy audit
-REF-127-19,Prior policy comparison,Indexed,Producer copy
-REF-127-20,Rating worksheet,Archive,State form
-REF-127-21,Producer correspondence,Reviewed,Rating file
-REF-127-22,State exception,Pending,Policy audit
-REF-127-23,Form filing note,Indexed,Producer copy
-REF-127-24,"Countersignature, notices, and producer copy",Archive,State form
-REF-127-25,Prior policy comparison,Reviewed,Rating file
-REF-127-26,Rating worksheet,Pending,Policy audit
-REF-127-27,Producer correspondence,Indexed,Producer copy
-REF-127-28,State exception,Archive,State form
-REF-127-29,Form filing note,Reviewed,Rating file
-REF-127-30,"Countersignature, notices, and producer copy",Pending,Policy audit
-
-Policy packet                                                                                             Page 127
-
-# Page 141
-
-POLICY PACKET                                                                  POLICY COPY 1F7EA01
-
-Underwriting Support
-
-Countersignature, notices, and producer copy
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
-
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-128-01,Rating worksheet,Reviewed,Policy audit
-REF-128-02,Producer correspondence,Pending,Producer copy
-REF-128-03,State exception,Indexed,State form
-REF-128-04,Form filing note,Archive,Rating file
-REF-128-05,"Countersignature, notices, and producer copy",Reviewed,Policy audit
-REF-128-06,Prior policy comparison,Pending,Producer copy
-REF-128-07,Rating worksheet,Indexed,State form
-REF-128-08,Producer correspondence,Archive,Rating file
-REF-128-09,State exception,Reviewed,Policy audit
-REF-128-10,Form filing note,Pending,Producer copy
-REF-128-11,"Countersignature, notices, and producer copy",Indexed,State form
-REF-128-12,Prior policy comparison,Archive,Rating file
-REF-128-13,Rating worksheet,Reviewed,Policy audit
-REF-128-14,Producer correspondence,Pending,Producer copy
-REF-128-15,State exception,Indexed,State form
-REF-128-16,Form filing note,Archive,Rating file
-REF-128-17,"Countersignature, notices, and producer copy",Reviewed,Policy audit
-REF-128-18,Prior policy comparison,Pending,Producer copy
-REF-128-19,Rating worksheet,Indexed,State form
-REF-128-20,Producer correspondence,Archive,Rating file
-REF-128-21,State exception,Reviewed,Policy audit
-REF-128-22,Form filing note,Pending,Producer copy
-REF-128-23,"Countersignature, notices, and producer copy",Indexed,State form
-REF-128-24,Prior policy comparison,Archive,Rating file
-REF-128-25,Rating worksheet,Reviewed,Policy audit
-REF-128-26,Producer correspondence,Pending,Producer copy
-REF-128-27,State exception,Indexed,State form
-REF-128-28,Form filing note,Archive,Rating file
-REF-128-29,"Countersignature, notices, and producer copy",Reviewed,Policy audit
-REF-128-30,Prior policy comparison,Pending,Producer copy
-
-Policy packet                                                                             Page 128
-
-# Page 142
-
-POLICY PACKET                                                                      POLICY COPY 1F7EA01
-
-# Underwriting Support
-
-**Countersignature, notices, and producer copy**
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
-
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-129-01,Producer correspondence,Reviewed,Producer copy
-REF-129-02,State exception,Pending,State form
-REF-129-03,Form filing note,Indexed,Rating file
-REF-129-04,"Countersignature, notices, and producer copy",Archive,Policy audit
-REF-129-05,Prior policy comparison,Reviewed,Producer copy
-REF-129-06,Rating worksheet,Pending,State form
-REF-129-07,Producer correspondence,Indexed,Rating file
-REF-129-08,State exception,Archive,Policy audit
-REF-129-09,Form filing note,Reviewed,Producer copy
-REF-129-10,"Countersignature, notices, and producer copy",Pending,State form
-REF-129-11,Prior policy comparison,Indexed,Rating file
-REF-129-12,Rating worksheet,Archive,Policy audit
-REF-129-13,Producer correspondence,Reviewed,Producer copy
-REF-129-14,State exception,Pending,State form
-REF-129-15,Form filing note,Indexed,Rating file
-REF-129-16,"Countersignature, notices, and producer copy",Archive,Policy audit
-REF-129-17,Prior policy comparison,Reviewed,Producer copy
-REF-129-18,Rating worksheet,Pending,State form
-REF-129-19,Producer correspondence,Indexed,Rating file
-REF-129-20,State exception,Archive,Policy audit
-REF-129-21,Form filing note,Reviewed,Producer copy
-REF-129-22,"Countersignature, notices, and producer copy",Pending,State form
-REF-129-23,Prior policy comparison,Indexed,Rating file
-REF-129-24,Rating worksheet,Archive,Policy audit
-REF-129-25,Producer correspondence,Reviewed,Producer copy
-REF-129-26,State exception,Pending,State form
-REF-129-27,Form filing note,Indexed,Rating file
-REF-129-28,"Countersignature, notices, and producer copy",Archive,Policy audit
-REF-129-29,Prior policy comparison,Reviewed,Producer copy
-REF-129-30,Rating worksheet,Pending,State form
-
-Policy packet                                                                                       Page 129
-
-# Page 143
-
-POLICY PACKET                                                                          POLICY COPY 1F7EA01
-
-Underwriting Support
-
-Countersignature, notices, and producer copy
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
-
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-130-01,State exception,Reviewed,State form
-REF-130-02,Form filing note,Pending,Rating file
-REF-130-03,"Countersignature, notices, and producer copy",Indexed,Policy audit
-REF-130-04,Prior policy comparison,Archive,Producer copy
-REF-130-05,Rating worksheet,Reviewed,State form
-REF-130-06,Producer correspondence,Pending,Rating file
-REF-130-07,State exception,Indexed,Policy audit
-REF-130-08,Form filing note,Archive,Producer copy
-REF-130-09,"Countersignature, notices, and producer copy",Reviewed,State form
-REF-130-10,Prior policy comparison,Pending,Rating file
-REF-130-11,Rating worksheet,Indexed,Policy audit
-REF-130-12,Producer correspondence,Archive,Producer copy
-REF-130-13,State exception,Reviewed,State form
-REF-130-14,Form filing note,Pending,Rating file
-REF-130-15,"Countersignature, notices, and producer copy",Indexed,Policy audit
-REF-130-16,Prior policy comparison,Archive,Producer copy
-REF-130-17,Rating worksheet,Reviewed,State form
-REF-130-18,Producer correspondence,Pending,Rating file
-REF-130-19,State exception,Indexed,Policy audit
-REF-130-20,Form filing note,Archive,Producer copy
-REF-130-21,"Countersignature, notices, and producer copy",Reviewed,State form
-REF-130-22,Prior policy comparison,Pending,Rating file
-REF-130-23,Rating worksheet,Indexed,Policy audit
-REF-130-24,Producer correspondence,Archive,Producer copy
-REF-130-25,State exception,Reviewed,State form
-REF-130-26,Form filing note,Pending,Rating file
-REF-130-27,"Countersignature, notices, and producer copy",Indexed,Policy audit
-REF-130-28,Prior policy comparison,Archive,Producer copy
-REF-130-29,Rating worksheet,Reviewed,State form
-REF-130-30,Producer correspondence,Pending,Rating file
-
-Policy packet                                                                                   Page 130
-
-# Page 144
-
-POLICY PACKET
-Underwriting Support
-
-POLICY COPY 1F7EA01
-
-Countersignature, notices, and producer copy
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
-
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-131-01,Form filing note,Reviewed,Rating file
-REF-131-02,"Countersignature, notices, and producer copy",Pending,Policy audit
-REF-131-03,Prior policy comparison,Indexed,Producer copy
-REF-131-04,Rating worksheet,Archive,State form
-REF-131-05,Producer correspondence,Reviewed,Rating file
-REF-131-06,State exception,Pending,Policy audit
-REF-131-07,Form filing note,Indexed,Producer copy
-REF-131-08,"Countersignature, notices, and producer copy",Archive,State form
-REF-131-09,Prior policy comparison,Reviewed,Rating file
-REF-131-10,Rating worksheet,Pending,Policy audit
-REF-131-11,Producer correspondence,Indexed,Producer copy
-REF-131-12,State exception,Archive,State form
-REF-131-13,Form filing note,Reviewed,Rating file
-REF-131-14,"Countersignature, notices, and producer copy",Pending,Policy audit
-REF-131-15,Prior policy comparison,Indexed,Producer copy
-REF-131-16,Rating worksheet,Archive,State form
-REF-131-17,Producer correspondence,Reviewed,Rating file
-REF-131-18,State exception,Pending,Policy audit
-REF-131-19,Form filing note,Indexed,Producer copy
-REF-131-20,"Countersignature, notices, and producer copy",Archive,State form
-REF-131-21,Prior policy comparison,Reviewed,Rating file
-REF-131-22,Rating worksheet,Pending,Policy audit
-REF-131-23,Producer correspondence,Indexed,Producer copy
-REF-131-24,State exception,Archive,State form
-REF-131-25,Form filing note,Reviewed,Rating file
-REF-131-26,"Countersignature, notices, and producer copy",Pending,Policy audit
-REF-131-27,Prior policy comparison,Indexed,Producer copy
-REF-131-28,Rating worksheet,Archive,State form
-REF-131-29,Producer correspondence,Reviewed,Rating file
-REF-131-30,State exception,Pending,Policy audit
-
-Policy packet                                                                                             Page 131
-
-# Page 145
-
-POLICY PACKET
-Underwriting Support
-
-[POLICY COPY 1F7EA01]
-
-Countersignature, notices, and producer copy
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
-
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-132-01,"Countersignature, notices, and producer copy",Reviewed,Policy audit
-REF-132-02,Prior policy comparison,Pending,Producer copy
-REF-132-03,Rating worksheet,Indexed,State form
-REF-132-04,Producer correspondence,Archive,Rating file
-REF-132-05,State exception,Reviewed,Policy audit
-REF-132-06,Form filing note,Pending,Producer copy
-REF-132-07,"Countersignature, notices, and producer copy",Indexed,State form
-REF-132-08,Prior policy comparison,Archive,Rating file
-REF-132-09,Rating worksheet,Reviewed,Policy audit
-REF-132-10,Producer correspondence,Pending,Producer copy
-REF-132-11,State exception,Indexed,State form
-REF-132-12,Form filing note,Archive,Rating file
-REF-132-13,"Countersignature, notices, and producer copy",Reviewed,Policy audit
-REF-132-14,Prior policy comparison,Pending,Producer copy
-REF-132-15,Rating worksheet,Indexed,State form
-REF-132-16,Producer correspondence,Archive,Rating file
-REF-132-17,State exception,Reviewed,Policy audit
-REF-132-18,Form filing note,Pending,Producer copy
-REF-132-19,"Countersignature, notices, and producer copy",Indexed,State form
-REF-132-20,Prior policy comparison,Archive,Rating file
-REF-132-21,Rating worksheet,Reviewed,Policy audit
-REF-132-22,Producer correspondence,Pending,Producer copy
-REF-132-23,State exception,Indexed,State form
-REF-132-24,Form filing note,Archive,Rating file
-REF-132-25,"Countersignature, notices, and producer copy",Reviewed,Policy audit
-REF-132-26,Prior policy comparison,Pending,Producer copy
-REF-132-27,Rating worksheet,Indexed,State form
-REF-132-28,Producer correspondence,Archive,Rating file
-REF-132-29,State exception,Reviewed,Policy audit
-REF-132-30,Form filing note,Pending,Producer copy
-
-Policy packet                                                                                                              Page 132
-
-# Page 146
-
-POLICY PACKET                                                             POLICY COPY 1F7EA01
-Underwriting Support
-
-Countersignature, notices, and producer copy
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
-
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-133-01,Prior policy comparison,Reviewed,Producer copy
-REF-133-02,Rating worksheet,Pending,State form
-REF-133-03,Producer correspondence,Indexed,Rating file
-REF-133-04,State exception,Archive,Policy audit
-REF-133-05,Form filing note,Reviewed,Producer copy
-REF-133-06,"Countersignature, notices, and producer copy",Pending,State form
-REF-133-07,Prior policy comparison,Indexed,Rating file
-REF-133-08,Rating worksheet,Archive,Policy audit
-REF-133-09,Producer correspondence,Reviewed,Producer copy
-REF-133-10,State exception,Pending,State form
-REF-133-11,Form filing note,Indexed,Rating file
-REF-133-12,"Countersignature, notices, and producer copy",Archive,Policy audit
-REF-133-13,Prior policy comparison,Reviewed,Producer copy
-REF-133-14,Rating worksheet,Pending,State form
-REF-133-15,Producer correspondence,Indexed,Rating file
-REF-133-16,State exception,Archive,Policy audit
-REF-133-17,Form filing note,Reviewed,Producer copy
-REF-133-18,"Countersignature, notices, and producer copy",Pending,State form
-REF-133-19,Prior policy comparison,Indexed,Rating file
-REF-133-20,Rating worksheet,Archive,Policy audit
-REF-133-21,Producer correspondence,Reviewed,Producer copy
-REF-133-22,State exception,Pending,State form
-REF-133-23,Form filing note,Indexed,Rating file
-REF-133-24,"Countersignature, notices, and producer copy",Archive,Policy audit
-REF-133-25,Prior policy comparison,Reviewed,Producer copy
-REF-133-26,Rating worksheet,Pending,State form
-REF-133-27,Producer correspondence,Indexed,Rating file
-REF-133-28,State exception,Archive,Policy audit
-REF-133-29,Form filing note,Reviewed,Producer copy
-REF-133-30,"Countersignature, notices, and producer copy",Pending,State form
-
-Policy packet                                                                                Page 133
-
-# Page 147
-
-POLICY PACKET
-Underwriting Support
-
-POLICY COPY 1F7EA01
-
-Countersignature, notices, and producer copy
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
-
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-134-01,Rating worksheet,Reviewed,State form
-REF-134-02,Producer correspondence,Pending,Rating file
-REF-134-03,State exception,Indexed,Policy audit
-REF-134-04,Form filing note,Archive,Producer copy
-REF-134-05,"Countersignature, notices, and producer copy",Reviewed,State form
-REF-134-06,Prior policy comparison,Pending,Rating file
-REF-134-07,Rating worksheet,Indexed,Policy audit
-REF-134-08,Producer correspondence,Archive,Producer copy
-REF-134-09,State exception,Reviewed,State form
-REF-134-10,Form filing note,Pending,Rating file
-REF-134-11,"Countersignature, notices, and producer copy",Indexed,Policy audit
-REF-134-12,Prior policy comparison,Archive,Producer copy
-REF-134-13,Rating worksheet,Reviewed,State form
-REF-134-14,Producer correspondence,Pending,Rating file
-REF-134-15,State exception,Indexed,Policy audit
-REF-134-16,Form filing note,Archive,Producer copy
-REF-134-17,"Countersignature, notices, and producer copy",Reviewed,State form
-REF-134-18,Prior policy comparison,Pending,Rating file
-REF-134-19,Rating worksheet,Indexed,Policy audit
-REF-134-20,Producer correspondence,Archive,Producer copy
-REF-134-21,State exception,Reviewed,State form
-REF-134-22,Form filing note,Pending,Rating file
-REF-134-23,"Countersignature, notices, and producer copy",Indexed,Policy audit
-REF-134-24,Prior policy comparison,Archive,Producer copy
-REF-134-25,Rating worksheet,Reviewed,State form
-REF-134-26,Producer correspondence,Pending,Rating file
-REF-134-27,State exception,Indexed,Policy audit
-REF-134-28,Form filing note,Archive,Producer copy
-REF-134-29,"Countersignature, notices, and producer copy",Reviewed,State form
-REF-134-30,Prior policy comparison,Pending,Rating file
-
-Policy packet
-Page 134
-
-# Page 148
-
-POLICY PACKET
-POLICY COPY 1F7EA01
-
-Underwriting Support
-
-Countersignature, notices, and producer copy
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
-
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-135-01,"Producer correspondence",Reviewed,"Rating file"
-REF-135-02,"State exception",Pending,"Policy audit"
-REF-135-03,"Form filing note",Indexed,"Producer copy"
-REF-135-04,"Countersignature, notices, and producer copy",Archive,"State form"
-REF-135-05,"Prior policy comparison",Reviewed,"Rating file"
-REF-135-06,"Rating worksheet",Pending,"Policy audit"
-REF-135-07,"Producer correspondence",Indexed,"Producer copy"
-REF-135-08,"State exception",Archive,"State form"
-REF-135-09,"Form filing note",Reviewed,"Rating file"
-REF-135-10,"Countersignature, notices, and producer copy",Pending,"Policy audit"
-REF-135-11,"Prior policy comparison",Indexed,"Producer copy"
-REF-135-12,"Rating worksheet",Archive,"State form"
-REF-135-13,"Producer correspondence",Reviewed,"Rating file"
-REF-135-14,"State exception",Pending,"Policy audit"
-REF-135-15,"Form filing note",Indexed,"Producer copy"
-REF-135-16,"Countersignature, notices, and producer copy",Archive,"State form"
-REF-135-17,"Prior policy comparison",Reviewed,"Rating file"
-REF-135-18,"Rating worksheet",Pending,"Policy audit"
-REF-135-19,"Producer correspondence",Indexed,"Producer copy"
-REF-135-20,"State exception",Archive,"State form"
-REF-135-21,"Form filing note",Reviewed,"Rating file"
-REF-135-22,"Countersignature, notices, and producer copy",Pending,"Policy audit"
-REF-135-23,"Prior policy comparison",Indexed,"Producer copy"
-REF-135-24,"Rating worksheet",Archive,"State form"
-REF-135-25,"Producer correspondence",Reviewed,"Rating file"
-REF-135-26,"State exception",Pending,"Policy audit"
-REF-135-27,"Form filing note",Indexed,"Producer copy"
-REF-135-28,"Countersignature, notices, and producer copy",Archive,"State form"
-REF-135-29,"Prior policy comparison",Reviewed,"Rating file"
-REF-135-30,"Rating worksheet",Pending,"Policy audit"
-
-Policy packet
-Page 135
-
-# Page 149
-
-POLICY PACKET
-Underwriting Support
-
-[POLICY COPY 1F7EA01]
-
-Countersignature, notices, and producer copy
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
-
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-136-01,State exception,Reviewed,Policy audit
-REF-136-02,Form filing note,Pending,Producer copy
-REF-136-03,"Countersignature, notices, and producer copy",Indexed,State form
-REF-136-04,Prior policy comparison,Archive,Rating file
-REF-136-05,Rating worksheet,Reviewed,Policy audit
-REF-136-06,Producer correspondence,Pending,Producer copy
-REF-136-07,State exception,Indexed,State form
-REF-136-08,Form filing note,Archive,Rating file
-REF-136-09,"Countersignature, notices, and producer copy",Reviewed,Policy audit
-REF-136-10,Prior policy comparison,Pending,Producer copy
-REF-136-11,Rating worksheet,Indexed,State form
-REF-136-12,Producer correspondence,Archive,Rating file
-REF-136-13,State exception,Reviewed,Policy audit
-REF-136-14,Form filing note,Pending,Producer copy
-REF-136-15,"Countersignature, notices, and producer copy",Indexed,State form
-REF-136-16,Prior policy comparison,Archive,Rating file
-REF-136-17,Rating worksheet,Reviewed,Policy audit
-REF-136-18,Producer correspondence,Pending,Producer copy
-REF-136-19,State exception,Indexed,State form
-REF-136-20,Form filing note,Archive,Rating file
-REF-136-21,"Countersignature, notices, and producer copy",Reviewed,Policy audit
-REF-136-22,Prior policy comparison,Pending,Producer copy
-REF-136-23,Rating worksheet,Indexed,State form
-REF-136-24,Producer correspondence,Archive,Rating file
-REF-136-25,State exception,Reviewed,Policy audit
-REF-136-26,Form filing note,Pending,Producer copy
-REF-136-27,"Countersignature, notices, and producer copy",Indexed,State form
-REF-136-28,Prior policy comparison,Archive,Rating file
-REF-136-29,Rating worksheet,Reviewed,Policy audit
-REF-136-30,Producer correspondence,Pending,Producer copy
-
-Policy packet
-Page 136
-
-# Page 150
-
-POLICY PACKET                                                                      POLICY COPY 1F7EA01
-Underwriting Support
-
-Countersignature, notices, and producer copy
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
-
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-137-01,Form filing note,Reviewed,Producer copy
-REF-137-02,"Countersignature, notices, and producer copy",Pending,State form
-REF-137-03,Prior policy comparison,Indexed,Rating file
-REF-137-04,Rating worksheet,Archive,Policy audit
-REF-137-05,Producer correspondence,Reviewed,Producer copy
-REF-137-06,State exception,Pending,State form
-REF-137-07,Form filing note,Indexed,Rating file
-REF-137-08,"Countersignature, notices, and producer copy",Archive,Policy audit
-REF-137-09,Prior policy comparison,Reviewed,Producer copy
-REF-137-10,Rating worksheet,Pending,State form
-REF-137-11,Producer correspondence,Indexed,Rating file
-REF-137-12,State exception,Archive,Policy audit
-REF-137-13,Form filing note,Reviewed,Producer copy
-REF-137-14,"Countersignature, notices, and producer copy",Pending,State form
-REF-137-15,Prior policy comparison,Indexed,Rating file
-REF-137-16,Rating worksheet,Archive,Policy audit
-REF-137-17,Producer correspondence,Reviewed,Producer copy
-REF-137-18,State exception,Pending,State form
-REF-137-19,Form filing note,Indexed,Rating file
-REF-137-20,"Countersignature, notices, and producer copy",Archive,Policy audit
-REF-137-21,Prior policy comparison,Reviewed,Producer copy
-REF-137-22,Rating worksheet,Pending,State form
-REF-137-23,Producer correspondence,Indexed,Rating file
-REF-137-24,State exception,Archive,Policy audit
-REF-137-25,Form filing note,Reviewed,Producer copy
-REF-137-26,"Countersignature, notices, and producer copy",Pending,State form
-REF-137-27,Prior policy comparison,Indexed,Rating file
-REF-137-28,Rating worksheet,Archive,Policy audit
-REF-137-29,Producer correspondence,Reviewed,Producer copy
-REF-137-30,State exception,Pending,State form
-
-Policy packet                                                                               Page 137
-
-# Page 151
-
-POLICY PACKET
-POLICY COPY 1F7EA01
-
-Underwriting Support
-
-Countersignature, notices, and producer copy
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
-
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-138-01,"Countersignature, notices, and producer copy",Reviewed,State form
-REF-138-02,Prior policy comparison,Pending,Rating file
-REF-138-03,Rating worksheet,Indexed,Policy audit
-REF-138-04,Producer correspondence,Archive,Producer copy
-REF-138-05,State exception,Reviewed,State form
-REF-138-06,Form filing note,Pending,Rating file
-REF-138-07,"Countersignature, notices, and producer copy",Indexed,Policy audit
-REF-138-08,Prior policy comparison,Archive,Producer copy
-REF-138-09,Rating worksheet,Reviewed,State form
-REF-138-10,Producer correspondence,Pending,Rating file
-REF-138-11,State exception,Indexed,Policy audit
-REF-138-12,Form filing note,Archive,Producer copy
-REF-138-13,"Countersignature, notices, and producer copy",Reviewed,State form
-REF-138-14,Prior policy comparison,Pending,Rating file
-REF-138-15,Rating worksheet,Indexed,Policy audit
-REF-138-16,Producer correspondence,Archive,Producer copy
-REF-138-17,State exception,Reviewed,State form
-REF-138-18,Form filing note,Pending,Rating file
-REF-138-19,"Countersignature, notices, and producer copy",Indexed,Policy audit
-REF-138-20,Prior policy comparison,Archive,Producer copy
-REF-138-21,Rating worksheet,Reviewed,State form
-REF-138-22,Producer correspondence,Pending,Rating file
-REF-138-23,State exception,Indexed,Policy audit
-REF-138-24,Form filing note,Archive,Producer copy
-REF-138-25,"Countersignature, notices, and producer copy",Reviewed,State form
-REF-138-26,Prior policy comparison,Pending,Rating file
-REF-138-27,Rating worksheet,Indexed,Policy audit
-REF-138-28,Producer correspondence,Archive,Producer copy
-REF-138-29,State exception,Reviewed,State form
-REF-138-30,Form filing note,Pending,Rating file
-
-Policy packet
-Page 138
-
-# Page 152
-
-POLICY PACKET                                                     [POLICY COPY 1F7EA01]
-
-Underwriting Support
-
-Countersignature, notices, and producer copy
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
-
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-139-01,Prior policy comparison,Reviewed,Rating file
-REF-139-02,Rating worksheet,Pending,Policy audit
-REF-139-03,Producer correspondence,Indexed,Producer copy
-REF-139-04,State exception,Archive,State form
-REF-139-05,Form filing note,Reviewed,Rating file
-REF-139-06,"Countersignature, notices, and producer copy",Pending,Policy audit
-REF-139-07,Prior policy comparison,Indexed,Producer copy
-REF-139-08,Rating worksheet,Archive,State form
-REF-139-09,Producer correspondence,Reviewed,Rating file
-REF-139-10,State exception,Pending,Policy audit
-REF-139-11,Form filing note,Indexed,Producer copy
-REF-139-12,"Countersignature, notices, and producer copy",Archive,State form
-REF-139-13,Prior policy comparison,Reviewed,Rating file
-REF-139-14,Rating worksheet,Pending,Policy audit
-REF-139-15,Producer correspondence,Indexed,Producer copy
-REF-139-16,State exception,Archive,State form
-REF-139-17,Form filing note,Reviewed,Rating file
-REF-139-18,"Countersignature, notices, and producer copy",Pending,Policy audit
-REF-139-19,Prior policy comparison,Indexed,Producer copy
-REF-139-20,Rating worksheet,Archive,State form
-REF-139-21,Producer correspondence,Reviewed,Rating file
-REF-139-22,State exception,Pending,Policy audit
-REF-139-23,Form filing note,Indexed,Producer copy
-REF-139-24,"Countersignature, notices, and producer copy",Archive,State form
-REF-139-25,Prior policy comparison,Reviewed,Rating file
-REF-139-26,Rating worksheet,Pending,Policy audit
-REF-139-27,Producer correspondence,Indexed,Producer copy
-REF-139-28,State exception,Archive,State form
-REF-139-29,Form filing note,Reviewed,Rating file
-REF-139-30,"Countersignature, notices, and producer copy",Pending,Policy audit
-
-Policy packet                                                                  Page 139
-
-# Page 153
-
-POLICY PACKET
-Underwriting Support                                                            [POLICY COPY 1F7EA01]
-
-Countersignature, notices, and producer copy
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
-
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-140-01,Rating worksheet,Reviewed,Policy audit
-REF-140-02,Producer correspondence,Pending,Producer copy
-REF-140-03,State exception,Indexed,State form
-REF-140-04,Form filing note,Archive,Rating file
-REF-140-05,"Countersignature, notices, and producer copy",Reviewed,Policy audit
-REF-140-06,Prior policy comparison,Pending,Producer copy
-REF-140-07,Rating worksheet,Indexed,State form
-REF-140-08,Producer correspondence,Archive,Rating file
-REF-140-09,State exception,Reviewed,Policy audit
-REF-140-10,Form filing note,Pending,Producer copy
-REF-140-11,"Countersignature, notices, and producer copy",Indexed,State form
-REF-140-12,Prior policy comparison,Archive,Rating file
-REF-140-13,Rating worksheet,Reviewed,Policy audit
-REF-140-14,Producer correspondence,Pending,Producer copy
-REF-140-15,State exception,Indexed,State form
-REF-140-16,Form filing note,Archive,Rating file
-REF-140-17,"Countersignature, notices, and producer copy",Reviewed,Policy audit
-REF-140-18,Prior policy comparison,Pending,Producer copy
-REF-140-19,Rating worksheet,Indexed,State form
-REF-140-20,Producer correspondence,Archive,Rating file
-REF-140-21,State exception,Reviewed,Policy audit
-REF-140-22,Form filing note,Pending,Producer copy
-REF-140-23,"Countersignature, notices, and producer copy",Indexed,State form
-REF-140-24,Prior policy comparison,Archive,Rating file
-REF-140-25,Rating worksheet,Reviewed,Policy audit
-REF-140-26,Producer correspondence,Pending,Producer copy
-REF-140-27,State exception,Indexed,State form
-REF-140-28,Form filing note,Archive,Rating file
-REF-140-29,"Countersignature, notices, and producer copy",Reviewed,Policy audit
-REF-140-30,Prior policy comparison,Pending,Producer copy
-
-Policy packet                                                                              Page 140
-
-# Page 154
-
-POLICY PACKET                                                                  POLICY COPY 1F7EA01
-Underwriting Support
-
-Countersignature, notices, and producer copy
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
-
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-141-01,Producer correspondence,Reviewed,Producer copy
-REF-141-02,State exception,Pending,State form
-REF-141-03,Form filing note,Indexed,Rating file
-REF-141-04,"Countersignature, notices, and producer copy",Archive,Policy audit
-REF-141-05,Prior policy comparison,Reviewed,Producer copy
-REF-141-06,Rating worksheet,Pending,State form
-REF-141-07,Producer correspondence,Indexed,Rating file
-REF-141-08,State exception,Archive,Policy audit
-REF-141-09,Form filing note,Reviewed,Producer copy
-REF-141-10,"Countersignature, notices, and producer copy",Pending,State form
-REF-141-11,Prior policy comparison,Indexed,Rating file
-REF-141-12,Rating worksheet,Archive,Policy audit
-REF-141-13,Producer correspondence,Reviewed,Producer copy
-REF-141-14,State exception,Pending,State form
-REF-141-15,Form filing note,Indexed,Rating file
-REF-141-16,"Countersignature, notices, and producer copy",Archive,Policy audit
-REF-141-17,Prior policy comparison,Reviewed,Producer copy
-REF-141-18,Rating worksheet,Pending,State form
-REF-141-19,Producer correspondence,Indexed,Rating file
-REF-141-20,State exception,Archive,Policy audit
-REF-141-21,Form filing note,Reviewed,Producer copy
-REF-141-22,"Countersignature, notices, and producer copy",Pending,State form
-REF-141-23,Prior policy comparison,Indexed,Rating file
-REF-141-24,Rating worksheet,Archive,Policy audit
-REF-141-25,Producer correspondence,Reviewed,Producer copy
-REF-141-26,State exception,Pending,State form
-REF-141-27,Form filing note,Indexed,Rating file
-REF-141-28,"Countersignature, notices, and producer copy",Archive,Policy audit
-REF-141-29,Prior policy comparison,Reviewed,Producer copy
-REF-141-30,Rating worksheet,Pending,State form
-
-Policy packet                                                                                   Page 141
-
-# Page 155
-
-POLICY PACKET                                                                      POLICY COPY 1F7EA01
-
-Underwriting Support
-
-Countersignature, notices, and producer copy
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
-
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-142-01,State exception,Reviewed,State form
-REF-142-02,Form filing note,Pending,Rating file
-REF-142-03,"Countersignature, notices, and producer copy",Indexed,Policy audit
-REF-142-04,Prior policy comparison,Archive,Producer copy
-REF-142-05,Rating worksheet,Reviewed,State form
-REF-142-06,Producer correspondence,Pending,Rating file
-REF-142-07,State exception,Indexed,Policy audit
-REF-142-08,Form filing note,Archive,Producer copy
-REF-142-09,"Countersignature, notices, and producer copy",Reviewed,State form
-REF-142-10,Prior policy comparison,Pending,Rating file
-REF-142-11,Rating worksheet,Indexed,Policy audit
-REF-142-12,Producer correspondence,Archive,Producer copy
-REF-142-13,State exception,Reviewed,State form
-REF-142-14,Form filing note,Pending,Rating file
-REF-142-15,"Countersignature, notices, and producer copy",Indexed,Policy audit
-REF-142-16,Prior policy comparison,Archive,Producer copy
-REF-142-17,Rating worksheet,Reviewed,State form
-REF-142-18,Producer correspondence,Pending,Rating file
-REF-142-19,State exception,Indexed,Policy audit
-REF-142-20,Form filing note,Archive,Producer copy
-REF-142-21,"Countersignature, notices, and producer copy",Reviewed,State form
-REF-142-22,Prior policy comparison,Pending,Rating file
-REF-142-23,Rating worksheet,Indexed,Policy audit
-REF-142-24,Producer correspondence,Archive,Producer copy
-REF-142-25,State exception,Reviewed,State form
-REF-142-26,Form filing note,Pending,Rating file
-REF-142-27,"Countersignature, notices, and producer copy",Indexed,Policy audit
-REF-142-28,Prior policy comparison,Archive,Producer copy
-REF-142-29,Rating worksheet,Reviewed,State form
-REF-142-30,Producer correspondence,Pending,Rating file
-
-Policy packet                                                                                           Page 142
-
-# Page 156
-
-POLICY PACKET                                                                    POLICY COPY 1F7EA01
-
-Underwriting Support
-
-Countersignature, notices, and producer copy
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
-
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-143-01,Form filing note,Reviewed,Rating file
-REF-143-02,"Countersignature, notices, and producer copy",Pending,Policy audit
-REF-143-03,Prior policy comparison,Indexed,Producer copy
-REF-143-04,Rating worksheet,Archive,State form
-REF-143-05,Producer correspondence,Reviewed,Rating file
-REF-143-06,State exception,Pending,Policy audit
-REF-143-07,Form filing note,Indexed,Producer copy
-REF-143-08,"Countersignature, notices, and producer copy",Archive,State form
-REF-143-09,Prior policy comparison,Reviewed,Rating file
-REF-143-10,Rating worksheet,Pending,Policy audit
-REF-143-11,Producer correspondence,Indexed,Producer copy
-REF-143-12,State exception,Archive,State form
-REF-143-13,Form filing note,Reviewed,Rating file
-REF-143-14,"Countersignature, notices, and producer copy",Pending,Policy audit
-REF-143-15,Prior policy comparison,Indexed,Producer copy
-REF-143-16,Rating worksheet,Archive,State form
-REF-143-17,Producer correspondence,Reviewed,Rating file
-REF-143-18,State exception,Pending,Policy audit
-REF-143-19,Form filing note,Indexed,Producer copy
-REF-143-20,"Countersignature, notices, and producer copy",Archive,State form
-REF-143-21,Prior policy comparison,Reviewed,Rating file
-REF-143-22,Rating worksheet,Pending,Policy audit
-REF-143-23,Producer correspondence,Indexed,Producer copy
-REF-143-24,State exception,Archive,State form
-REF-143-25,Form filing note,Reviewed,Rating file
-REF-143-26,"Countersignature, notices, and producer copy",Pending,Policy audit
-REF-143-27,Prior policy comparison,Indexed,Producer copy
-REF-143-28,Rating worksheet,Archive,State form
-REF-143-29,Producer correspondence,Reviewed,Rating file
-REF-143-30,State exception,Pending,Policy audit
-
-Policy packet                                                                              Page 143
-
-# Page 157
-
-POLICY PACKET
-Underwriting Support
-
-[POLICY COPY 1F7EA01]
-
-Countersignature, notices, and producer copy
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
-
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-144-01,"Countersignature, notices, and producer copy",Reviewed,Policy audit
-REF-144-02,Prior policy comparison,Pending,Producer copy
-REF-144-03,Rating worksheet,Indexed,State form
-REF-144-04,Producer correspondence,Archive,Rating file
-REF-144-05,State exception,Reviewed,Policy audit
-REF-144-06,Form filing note,Pending,Producer copy
-REF-144-07,"Countersignature, notices, and producer copy",Indexed,State form
-REF-144-08,Prior policy comparison,Archive,Rating file
-REF-144-09,Rating worksheet,Reviewed,Policy audit
-REF-144-10,Producer correspondence,Pending,Producer copy
-REF-144-11,State exception,Indexed,State form
-REF-144-12,Form filing note,Archive,Rating file
-REF-144-13,"Countersignature, notices, and producer copy",Reviewed,Policy audit
-REF-144-14,Prior policy comparison,Pending,Producer copy
-REF-144-15,Rating worksheet,Indexed,State form
-REF-144-16,Producer correspondence,Archive,Rating file
-REF-144-17,State exception,Reviewed,Policy audit
-REF-144-18,Form filing note,Pending,Producer copy
-REF-144-19,"Countersignature, notices, and producer copy",Indexed,State form
-REF-144-20,Prior policy comparison,Archive,Rating file
-REF-144-21,Rating worksheet,Reviewed,Policy audit
-REF-144-22,Producer correspondence,Pending,Producer copy
-REF-144-23,State exception,Indexed,State form
-REF-144-24,Form filing note,Archive,Rating file
-REF-144-25,"Countersignature, notices, and producer copy",Reviewed,Policy audit
-REF-144-26,Prior policy comparison,Pending,Producer copy
-REF-144-27,Rating worksheet,Indexed,State form
-REF-144-28,Producer correspondence,Archive,Rating file
-REF-144-29,State exception,Reviewed,Policy audit
-REF-144-30,Form filing note,Pending,Producer copy
-
-Policy packet
-Page 144
-
-# Page 158
-
-POLICY PACKET                                                                     [ POLICY COPY 1F7EA01 ]
-Underwriting Support
-
-Countersignature, notices, and producer copy
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
-
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-145-01,Prior policy comparison,Reviewed,Producer copy
-REF-145-02,Rating worksheet,Pending,State form
-REF-145-03,Producer correspondence,Indexed,Rating file
-REF-145-04,State exception,Archive,Policy audit
-REF-145-05,Form filing note,Reviewed,Producer copy
-REF-145-06,"Countersignature, notices, and producer copy",Pending,State form
-REF-145-07,Prior policy comparison,Indexed,Rating file
-REF-145-08,Rating worksheet,Archive,Policy audit
-REF-145-09,Producer correspondence,Reviewed,Producer copy
-REF-145-10,State exception,Pending,State form
-REF-145-11,Form filing note,Indexed,Rating file
-REF-145-12,"Countersignature, notices, and producer copy",Archive,Policy audit
-REF-145-13,Prior policy comparison,Reviewed,Producer copy
-REF-145-14,Rating worksheet,Pending,State form
-REF-145-15,Producer correspondence,Indexed,Rating file
-REF-145-16,State exception,Archive,Policy audit
-REF-145-17,Form filing note,Reviewed,Producer copy
-REF-145-18,"Countersignature, notices, and producer copy",Pending,State form
-REF-145-19,Prior policy comparison,Indexed,Rating file
-REF-145-20,Rating worksheet,Archive,Policy audit
-REF-145-21,Producer correspondence,Reviewed,Producer copy
-REF-145-22,State exception,Pending,State form
-REF-145-23,Form filing note,Indexed,Rating file
-REF-145-24,"Countersignature, notices, and producer copy",Archive,Policy audit
-REF-145-25,Prior policy comparison,Reviewed,Producer copy
-REF-145-26,Rating worksheet,Pending,State form
-REF-145-27,Producer correspondence,Indexed,Rating file
-REF-145-28,State exception,Archive,Policy audit
-REF-145-29,Form filing note,Reviewed,Producer copy
-REF-145-30,"Countersignature, notices, and producer copy",Pending,State form
-
-Policy packet                                                                                  Page 145
-
-# Page 159
-
-POLICY PACKET                                                                  POLICY COPY 1F7EA01
-Underwriting Support
-____________________________________________________________________________________________________
-
-Countersignature, notices, and producer copy
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
-
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-146-01,Rating worksheet,Reviewed,State form
-REF-146-02,Producer correspondence,Pending,Rating file
-REF-146-03,State exception,Indexed,Policy audit
-REF-146-04,Form filing note,Archive,Producer copy
-REF-146-05,"Countersignature, notices, and producer copy",Reviewed,State form
-REF-146-06,Prior policy comparison,Pending,Rating file
-REF-146-07,Rating worksheet,Indexed,Policy audit
-REF-146-08,Producer correspondence,Archive,Producer copy
-REF-146-09,State exception,Reviewed,State form
-REF-146-10,Form filing note,Pending,Rating file
-REF-146-11,"Countersignature, notices, and producer copy",Indexed,Policy audit
-REF-146-12,Prior policy comparison,Archive,Producer copy
-REF-146-13,Rating worksheet,Reviewed,State form
-REF-146-14,Producer correspondence,Pending,Rating file
-REF-146-15,State exception,Indexed,Policy audit
-REF-146-16,Form filing note,Archive,Producer copy
-REF-146-17,"Countersignature, notices, and producer copy",Reviewed,State form
-REF-146-18,Prior policy comparison,Pending,Rating file
-REF-146-19,Rating worksheet,Indexed,Policy audit
-REF-146-20,Producer correspondence,Archive,Producer copy
-REF-146-21,State exception,Reviewed,State form
-REF-146-22,Form filing note,Pending,Rating file
-REF-146-23,"Countersignature, notices, and producer copy",Indexed,Policy audit
-REF-146-24,Prior policy comparison,Archive,Producer copy
-REF-146-25,Rating worksheet,Reviewed,State form
-REF-146-26,Producer correspondence,Pending,Rating file
-REF-146-27,State exception,Indexed,Policy audit
-REF-146-28,Form filing note,Archive,Producer copy
-REF-146-29,"Countersignature, notices, and producer copy",Reviewed,State form
-REF-146-30,Prior policy comparison,Pending,Rating file
-
-____________________________________________________________________________________________________
-Policy packet                                                                               Page 146
-
-# Page 160
-
-POLICY PACKET                                                                  POLICY COPY 1F7EA01
-
-Underwriting Support
-
-Countersignature, notices, and producer copy
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
-
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-147-01,Producer correspondence,Reviewed,Rating file
-REF-147-02,State exception,Pending,Policy audit
-REF-147-03,Form filing note,Indexed,Producer copy
-REF-147-04,"Countersignature, notices, and producer copy",Archive,State form
-REF-147-05,Prior policy comparison,Reviewed,Rating file
-REF-147-06,Rating worksheet,Pending,Policy audit
-REF-147-07,Producer correspondence,Indexed,Producer copy
-REF-147-08,State exception,Archive,State form
-REF-147-09,Form filing note,Reviewed,Rating file
-REF-147-10,"Countersignature, notices, and producer copy",Pending,Policy audit
-REF-147-11,Prior policy comparison,Indexed,Producer copy
-REF-147-12,Rating worksheet,Archive,State form
-REF-147-13,Producer correspondence,Reviewed,Rating file
-REF-147-14,State exception,Pending,Policy audit
-REF-147-15,Form filing note,Indexed,Producer copy
-REF-147-16,"Countersignature, notices, and producer copy",Archive,State form
-REF-147-17,Prior policy comparison,Reviewed,Rating file
-REF-147-18,Rating worksheet,Pending,Policy audit
-REF-147-19,Producer correspondence,Indexed,Producer copy
-REF-147-20,State exception,Archive,State form
-REF-147-21,Form filing note,Reviewed,Rating file
-REF-147-22,"Countersignature, notices, and producer copy",Pending,Policy audit
-REF-147-23,Prior policy comparison,Indexed,Producer copy
-REF-147-24,Rating worksheet,Archive,State form
-REF-147-25,Producer correspondence,Reviewed,Rating file
-REF-147-26,State exception,Pending,Policy audit
-REF-147-27,Form filing note,Indexed,Producer copy
-REF-147-28,"Countersignature, notices, and producer copy",Archive,State form
-REF-147-29,Prior policy comparison,Reviewed,Rating file
-REF-147-30,Rating worksheet,Pending,Policy audit
-
-Policy packet                                                                            Page 147
-
-# Page 161
-
-POLICY PACKET                                                             POLICY COPY 1F7EA01
-Underwriting Support
-
-Countersignature, notices, and producer copy
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
-
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-148-01,State exception,Reviewed,Policy audit
-REF-148-02,Form filing note,Pending,Producer copy
-REF-148-03,"Countersignature, notices, and producer copy",Indexed,State form
-REF-148-04,Prior policy comparison,Archive,Rating file
-REF-148-05,Rating worksheet,Reviewed,Policy audit
-REF-148-06,Producer correspondence,Pending,Producer copy
-REF-148-07,State exception,Indexed,State form
-REF-148-08,Form filing note,Archive,Rating file
-REF-148-09,"Countersignature, notices, and producer copy",Reviewed,Policy audit
-REF-148-10,Prior policy comparison,Pending,Producer copy
-REF-148-11,Rating worksheet,Indexed,State form
-REF-148-12,Producer correspondence,Archive,Rating file
-REF-148-13,State exception,Reviewed,Policy audit
-REF-148-14,Form filing note,Pending,Producer copy
-REF-148-15,"Countersignature, notices, and producer copy",Indexed,State form
-REF-148-16,Prior policy comparison,Archive,Rating file
-REF-148-17,Rating worksheet,Reviewed,Policy audit
-REF-148-18,Producer correspondence,Pending,Producer copy
-REF-148-19,State exception,Indexed,State form
-REF-148-20,Form filing note,Archive,Rating file
-REF-148-21,"Countersignature, notices, and producer copy",Reviewed,Policy audit
-REF-148-22,Prior policy comparison,Pending,Producer copy
-REF-148-23,Rating worksheet,Indexed,State form
-REF-148-24,Producer correspondence,Archive,Rating file
-REF-148-25,State exception,Reviewed,Policy audit
-REF-148-26,Form filing note,Pending,Producer copy
-REF-148-27,"Countersignature, notices, and producer copy",Indexed,State form
-REF-148-28,Prior policy comparison,Archive,Rating file
-REF-148-29,Rating worksheet,Reviewed,Policy audit
-REF-148-30,Producer correspondence,Pending,Producer copy
-
-Policy packet                                                                        Page 148
-
-# Page 162
-
-POLICY PACKET                                                                [POLICY COPY 1F7EA01]
-
-# Underwriting Support
-
----
-
-## Countersignature, notices, and producer copy
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
-
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-149-01,Form filing note,Reviewed,Producer copy
-REF-149-02,"Countersignature, notices, and producer copy",Pending,State form
-REF-149-03,Prior policy comparison,Indexed,Rating file
-REF-149-04,Rating worksheet,Archive,Policy audit
-REF-149-05,Producer correspondence,Reviewed,Producer copy
-REF-149-06,State exception,Pending,State form
-REF-149-07,Form filing note,Indexed,Rating file
-REF-149-08,"Countersignature, notices, and producer copy",Archive,Policy audit
-REF-149-09,Prior policy comparison,Reviewed,Producer copy
-REF-149-10,Rating worksheet,Pending,State form
-REF-149-11,Producer correspondence,Indexed,Rating file
-REF-149-12,State exception,Archive,Policy audit
-REF-149-13,Form filing note,Reviewed,Producer copy
-REF-149-14,"Countersignature, notices, and producer copy",Pending,State form
-REF-149-15,Prior policy comparison,Indexed,Rating file
-REF-149-16,Rating worksheet,Archive,Policy audit
-REF-149-17,Producer correspondence,Reviewed,Producer copy
-REF-149-18,State exception,Pending,State form
-REF-149-19,Form filing note,Indexed,Rating file
-REF-149-20,"Countersignature, notices, and producer copy",Archive,Policy audit
-REF-149-21,Prior policy comparison,Reviewed,Producer copy
-REF-149-22,Rating worksheet,Pending,State form
-REF-149-23,Producer correspondence,Indexed,Rating file
-REF-149-24,State exception,Archive,Policy audit
-REF-149-25,Form filing note,Reviewed,Producer copy
-REF-149-26,"Countersignature, notices, and producer copy",Pending,State form
-REF-149-27,Prior policy comparison,Indexed,Rating file
-REF-149-28,Rating worksheet,Archive,Policy audit
-REF-149-29,Producer correspondence,Reviewed,Producer copy
-REF-149-30,State exception,Pending,State form
-
-Policy packet                                                                             Page 149
-
-# Page 163
-
-POLICY PACKET                                                                       POLICY COPY 1F7EA01
-
-Underwriting Support
-
-Countersignature, notices, and producer copy
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
-
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-150-01,"Countersignature, notices, and producer copy",Reviewed,State form
-REF-150-02,Prior policy comparison,Pending,Rating file
-REF-150-03,Rating worksheet,Indexed,Policy audit
-REF-150-04,Producer correspondence,Archive,Producer copy
-REF-150-05,State exception,Reviewed,State form
-REF-150-06,Form filing note,Pending,Rating file
-REF-150-07,"Countersignature, notices, and producer copy",Indexed,Policy audit
-REF-150-08,Prior policy comparison,Archive,Producer copy
-REF-150-09,Rating worksheet,Reviewed,State form
-REF-150-10,Producer correspondence,Pending,Rating file
-REF-150-11,State exception,Indexed,Policy audit
-REF-150-12,Form filing note,Archive,Producer copy
-REF-150-13,"Countersignature, notices, and producer copy",Reviewed,State form
-REF-150-14,Prior policy comparison,Pending,Rating file
-REF-150-15,Rating worksheet,Indexed,Policy audit
-REF-150-16,Producer correspondence,Archive,Producer copy
-REF-150-17,State exception,Reviewed,State form
-REF-150-18,Form filing note,Pending,Rating file
-REF-150-19,"Countersignature, notices, and producer copy",Indexed,Policy audit
-REF-150-20,Prior policy comparison,Archive,Producer copy
-REF-150-21,Rating worksheet,Reviewed,State form
-REF-150-22,Producer correspondence,Pending,Rating file
-REF-150-23,State exception,Indexed,Policy audit
-REF-150-24,Form filing note,Archive,Producer copy
-REF-150-25,"Countersignature, notices, and producer copy",Reviewed,State form
-REF-150-26,Prior policy comparison,Pending,Rating file
-REF-150-27,Rating worksheet,Indexed,Policy audit
-REF-150-28,Producer correspondence,Archive,Producer copy
-REF-150-29,State exception,Reviewed,State form
-REF-150-30,Form filing note,Pending,Rating file
-
-Policy packet                                                                               Page 150
-
-# Page 164
-
-POLICY PACKET                                                                      POLICY COPY 1F7EA01
-Underwriting Support
-
-Countersignature, notices, and producer copy
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
-
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-151-01,Prior policy comparison,Reviewed,Rating file
-REF-151-02,Rating worksheet,Pending,Policy audit
-REF-151-03,Producer correspondence,Indexed,Producer copy
-REF-151-04,State exception,Archive,State form
-REF-151-05,Form filing note,Reviewed,Rating file
-REF-151-06,"Countersignature, notices, and producer copy",Pending,Policy audit
-REF-151-07,Prior policy comparison,Indexed,Producer copy
-REF-151-08,Rating worksheet,Archive,State form
-REF-151-09,Producer correspondence,Reviewed,Rating file
-REF-151-10,State exception,Pending,Policy audit
-REF-151-11,Form filing note,Indexed,Producer copy
-REF-151-12,"Countersignature, notices, and producer copy",Archive,State form
-REF-151-13,Prior policy comparison,Reviewed,Rating file
-REF-151-14,Rating worksheet,Pending,Policy audit
-REF-151-15,Producer correspondence,Indexed,Producer copy
-REF-151-16,State exception,Archive,State form
-REF-151-17,Form filing note,Reviewed,Rating file
-REF-151-18,"Countersignature, notices, and producer copy",Pending,Policy audit
-REF-151-19,Prior policy comparison,Indexed,Producer copy
-REF-151-20,Rating worksheet,Archive,State form
-REF-151-21,Producer correspondence,Reviewed,Rating file
-REF-151-22,State exception,Pending,Policy audit
-REF-151-23,Form filing note,Indexed,Producer copy
-REF-151-24,"Countersignature, notices, and producer copy",Archive,State form
-REF-151-25,Prior policy comparison,Reviewed,Rating file
-REF-151-26,Rating worksheet,Pending,Policy audit
-REF-151-27,Producer correspondence,Indexed,Producer copy
-REF-151-28,State exception,Archive,State form
-REF-151-29,Form filing note,Reviewed,Rating file
-REF-151-30,"Countersignature, notices, and producer copy",Pending,Policy audit
-
-Policy packet                                                                                Page 151
-
-# Page 165
-
-POLICY PACKET                                                                    [POLICY COPY 1F7EA01]
-
-# Underwriting Support
-
-### Countersignature, notices, and producer copy
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
-
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-152-01,Rating worksheet,Reviewed,Policy audit
-REF-152-02,Producer correspondence,Pending,Producer copy
-REF-152-03,State exception,Indexed,State form
-REF-152-04,Form filing note,Archive,Rating file
-REF-152-05,"Countersignature, notices, and producer copy",Reviewed,Policy audit
-REF-152-06,Prior policy comparison,Pending,Producer copy
-REF-152-07,Rating worksheet,Indexed,State form
-REF-152-08,Producer correspondence,Archive,Rating file
-REF-152-09,State exception,Reviewed,Policy audit
-REF-152-10,Form filing note,Pending,Producer copy
-REF-152-11,"Countersignature, notices, and producer copy",Indexed,State form
-REF-152-12,Prior policy comparison,Archive,Rating file
-REF-152-13,Rating worksheet,Reviewed,Policy audit
-REF-152-14,Producer correspondence,Pending,Producer copy
-REF-152-15,State exception,Indexed,State form
-REF-152-16,Form filing note,Archive,Rating file
-REF-152-17,"Countersignature, notices, and producer copy",Reviewed,Policy audit
-REF-152-18,Prior policy comparison,Pending,Producer copy
-REF-152-19,Rating worksheet,Indexed,State form
-REF-152-20,Producer correspondence,Archive,Rating file
-REF-152-21,State exception,Reviewed,Policy audit
-REF-152-22,Form filing note,Pending,Producer copy
-REF-152-23,"Countersignature, notices, and producer copy",Indexed,State form
-REF-152-24,Prior policy comparison,Archive,Rating file
-REF-152-25,Rating worksheet,Reviewed,Policy audit
-REF-152-26,Producer correspondence,Pending,Producer copy
-REF-152-27,State exception,Indexed,State form
-REF-152-28,Form filing note,Archive,Rating file
-REF-152-29,"Countersignature, notices, and producer copy",Reviewed,Policy audit
-REF-152-30,Prior policy comparison,Pending,Producer copy
-
-Policy packet                                                                              Page 152
-
-# Page 166
-
-POLICY PACKET
-Underwriting Support
-
-POLICY COPY 1F7EA01
-
-Countersignature, notices, and producer copy
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
-
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-153-01,Producer correspondence,Reviewed,Producer copy
-REF-153-02,State exception,Pending,State form
-REF-153-03,Form filing note,Indexed,Rating file
-REF-153-04,"Countersignature, notices, and producer copy",Archive,Policy audit
-REF-153-05,Prior policy comparison,Reviewed,Producer copy
-REF-153-06,Rating worksheet,Pending,State form
-REF-153-07,Producer correspondence,Indexed,Rating file
-REF-153-08,State exception,Archive,Policy audit
-REF-153-09,Form filing note,Reviewed,Producer copy
-REF-153-10,"Countersignature, notices, and producer copy",Pending,State form
-REF-153-11,Prior policy comparison,Indexed,Rating file
-REF-153-12,Rating worksheet,Archive,Policy audit
-REF-153-13,Producer correspondence,Reviewed,Producer copy
-REF-153-14,State exception,Pending,State form
-REF-153-15,Form filing note,Indexed,Rating file
-REF-153-16,"Countersignature, notices, and producer copy",Archive,Policy audit
-REF-153-17,Prior policy comparison,Reviewed,Producer copy
-REF-153-18,Rating worksheet,Pending,State form
-REF-153-19,Producer correspondence,Indexed,Rating file
-REF-153-20,State exception,Archive,Policy audit
-REF-153-21,Form filing note,Reviewed,Producer copy
-REF-153-22,"Countersignature, notices, and producer copy",Pending,State form
-REF-153-23,Prior policy comparison,Indexed,Rating file
-REF-153-24,Rating worksheet,Archive,Policy audit
-REF-153-25,Producer correspondence,Reviewed,Producer copy
-REF-153-26,State exception,Pending,State form
-REF-153-27,Form filing note,Indexed,Rating file
-REF-153-28,"Countersignature, notices, and producer copy",Archive,Policy audit
-REF-153-29,Prior policy comparison,Reviewed,Producer copy
-REF-153-30,Rating worksheet,Pending,State form
-
-Policy packet
-Page 153
-
-# Page 167
-
-POLICY PACKET                                                                      POLICY COPY 1F7EA01
-
-Underwriting Support
-
-Countersignature, notices, and producer copy
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
-
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-154-01,State exception,Reviewed,State form
-REF-154-02,Form filing note,Pending,Rating file
-REF-154-03,"Countersignature, notices, and producer copy",Indexed,Policy audit
-REF-154-04,Prior policy comparison,Archive,Producer copy
-REF-154-05,Rating worksheet,Reviewed,State form
-REF-154-06,Producer correspondence,Pending,Rating file
-REF-154-07,State exception,Indexed,Policy audit
-REF-154-08,Form filing note,Archive,Producer copy
-REF-154-09,"Countersignature, notices, and producer copy",Reviewed,State form
-REF-154-10,Prior policy comparison,Pending,Rating file
-REF-154-11,Rating worksheet,Indexed,Policy audit
-REF-154-12,Producer correspondence,Archive,Producer copy
-REF-154-13,State exception,Reviewed,State form
-REF-154-14,Form filing note,Pending,Rating file
-REF-154-15,"Countersignature, notices, and producer copy",Indexed,Policy audit
-REF-154-16,Prior policy comparison,Archive,Producer copy
-REF-154-17,Rating worksheet,Reviewed,State form
-REF-154-18,Producer correspondence,Pending,Rating file
-REF-154-19,State exception,Indexed,Policy audit
-REF-154-20,Form filing note,Archive,Producer copy
-REF-154-21,"Countersignature, notices, and producer copy",Reviewed,State form
-REF-154-22,Prior policy comparison,Pending,Rating file
-REF-154-23,Rating worksheet,Indexed,Policy audit
-REF-154-24,Producer correspondence,Archive,Producer copy
-REF-154-25,State exception,Reviewed,State form
-REF-154-26,Form filing note,Pending,Rating file
-REF-154-27,"Countersignature, notices, and producer copy",Indexed,Policy audit
-REF-154-28,Prior policy comparison,Archive,Producer copy
-REF-154-29,Rating worksheet,Reviewed,State form
-REF-154-30,Producer correspondence,Pending,Rating file
-
-Policy packet                                                                                   Page 154
-
-# Page 168
-
-POLICY PACKET                                                                  +---------------------+
-                                                                                | POLICY COPY 1F7EA01 |
-Underwriting Support                                                            +---------------------+
-
-Countersignature, notices, and producer copy
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
-
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-155-01,Form filing note,Reviewed,Rating file
-REF-155-02,"Countersignature, notices, and producer copy",Pending,Policy audit
-REF-155-03,Prior policy comparison,Indexed,Producer copy
-REF-155-04,Rating worksheet,Archive,State form
-REF-155-05,Producer correspondence,Reviewed,Rating file
-REF-155-06,State exception,Pending,Policy audit
-REF-155-07,Form filing note,Indexed,Producer copy
-REF-155-08,"Countersignature, notices, and producer copy",Archive,State form
-REF-155-09,Prior policy comparison,Reviewed,Rating file
-REF-155-10,Rating worksheet,Pending,Policy audit
-REF-155-11,Producer correspondence,Indexed,Producer copy
-REF-155-12,State exception,Archive,State form
-REF-155-13,Form filing note,Reviewed,Rating file
-REF-155-14,"Countersignature, notices, and producer copy",Pending,Policy audit
-REF-155-15,Prior policy comparison,Indexed,Producer copy
-REF-155-16,Rating worksheet,Archive,State form
-REF-155-17,Producer correspondence,Reviewed,Rating file
-REF-155-18,State exception,Pending,Policy audit
-REF-155-19,Form filing note,Indexed,Producer copy
-REF-155-20,"Countersignature, notices, and producer copy",Archive,State form
-REF-155-21,Prior policy comparison,Reviewed,Rating file
-REF-155-22,Rating worksheet,Pending,Policy audit
-REF-155-23,Producer correspondence,Indexed,Producer copy
-REF-155-24,State exception,Archive,State form
-REF-155-25,Form filing note,Reviewed,Rating file
-REF-155-26,"Countersignature, notices, and producer copy",Pending,Policy audit
-REF-155-27,Prior policy comparison,Indexed,Producer copy
-REF-155-28,Rating worksheet,Archive,State form
-REF-155-29,Producer correspondence,Reviewed,Rating file
-REF-155-30,State exception,Pending,Policy audit
-
-Policy packet                                                                                Page 155
-
-# Page 169
-
-POLICY PACKET                                                                +---------------------+
-                                                                                | POLICY COPY 1F7EA01 |
-Underwriting Support                                                            +---------------------+
-
-Countersignature, notices, and producer copy
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
-
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-156-01,"Countersignature, notices, and producer copy",Reviewed,Policy audit
-REF-156-02,Prior policy comparison,Pending,Producer copy
-REF-156-03,Rating worksheet,Indexed,State form
-REF-156-04,Producer correspondence,Archive,Rating file
-REF-156-05,State exception,Reviewed,Policy audit
-REF-156-06,Form filing note,Pending,Producer copy
-REF-156-07,"Countersignature, notices, and producer copy",Indexed,State form
-REF-156-08,Prior policy comparison,Archive,Rating file
-REF-156-09,Rating worksheet,Reviewed,Policy audit
-REF-156-10,Producer correspondence,Pending,Producer copy
-REF-156-11,State exception,Indexed,State form
-REF-156-12,Form filing note,Archive,Rating file
-REF-156-13,"Countersignature, notices, and producer copy",Reviewed,Policy audit
-REF-156-14,Prior policy comparison,Pending,Producer copy
-REF-156-15,Rating worksheet,Indexed,State form
-REF-156-16,Producer correspondence,Archive,Rating file
-REF-156-17,State exception,Reviewed,Policy audit
-REF-156-18,Form filing note,Pending,Producer copy
-REF-156-19,"Countersignature, notices, and producer copy",Indexed,State form
-REF-156-20,Prior policy comparison,Archive,Rating file
-REF-156-21,Rating worksheet,Reviewed,Policy audit
-REF-156-22,Producer correspondence,Pending,Producer copy
-REF-156-23,State exception,Indexed,State form
-REF-156-24,Form filing note,Archive,Rating file
-REF-156-25,"Countersignature, notices, and producer copy",Reviewed,Policy audit
-REF-156-26,Prior policy comparison,Pending,Producer copy
-REF-156-27,Rating worksheet,Indexed,State form
-REF-156-28,Producer correspondence,Archive,Rating file
-REF-156-29,State exception,Reviewed,Policy audit
-REF-156-30,Form filing note,Pending,Producer copy
-
-Policy packet                                                                             Page 156
-
-# Page 170
-
-POLICY PACKET
-POLICY COPY 1F7EA01
-
-Underwriting Support
-
-Countersignature, notices, and producer copy
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
-
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-157-01,Prior policy comparison,Reviewed,Producer copy
-REF-157-02,Rating worksheet,Pending,State form
-REF-157-03,Producer correspondence,Indexed,Rating file
-REF-157-04,State exception,Archive,Policy audit
-REF-157-05,Form filing note,Reviewed,Producer copy
-REF-157-06,"Countersignature, notices, and producer copy",Pending,State form
-REF-157-07,Prior policy comparison,Indexed,Rating file
-REF-157-08,Rating worksheet,Archive,Policy audit
-REF-157-09,Producer correspondence,Reviewed,Producer copy
-REF-157-10,State exception,Pending,State form
-REF-157-11,Form filing note,Indexed,Rating file
-REF-157-12,"Countersignature, notices, and producer copy",Archive,Policy audit
-REF-157-13,Prior policy comparison,Reviewed,Producer copy
-REF-157-14,Rating worksheet,Pending,State form
-REF-157-15,Producer correspondence,Indexed,Rating file
-REF-157-16,State exception,Archive,Policy audit
-REF-157-17,Form filing note,Reviewed,Producer copy
-REF-157-18,"Countersignature, notices, and producer copy",Pending,State form
-REF-157-19,Prior policy comparison,Indexed,Rating file
-REF-157-20,Rating worksheet,Archive,Policy audit
-REF-157-21,Producer correspondence,Reviewed,Producer copy
-REF-157-22,State exception,Pending,State form
-REF-157-23,Form filing note,Indexed,Rating file
-REF-157-24,"Countersignature, notices, and producer copy",Archive,Policy audit
-REF-157-25,Prior policy comparison,Reviewed,Producer copy
-REF-157-26,Rating worksheet,Pending,State form
-REF-157-27,Producer correspondence,Indexed,Rating file
-REF-157-28,State exception,Archive,Policy audit
-REF-157-29,Form filing note,Reviewed,Producer copy
-REF-157-30,"Countersignature, notices, and producer copy",Pending,State form
-
-Policy packet
-Page 157
-
-# Page 171
-
-POLICY PACKET
-Underwriting Support
-
-POLICY COPY 1F7EA01
-
-Countersignature, notices, and producer copy
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
-
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-158-01,Rating worksheet,Reviewed,State form
-REF-158-02,Producer correspondence,Pending,Rating file
-REF-158-03,State exception,Indexed,Policy audit
-REF-158-04,Form filing note,Archive,Producer copy
-REF-158-05,"Countersignature, notices, and producer copy",Reviewed,State form
-REF-158-06,Prior policy comparison,Pending,Rating file
-REF-158-07,Rating worksheet,Indexed,Policy audit
-REF-158-08,Producer correspondence,Archive,Producer copy
-REF-158-09,State exception,Reviewed,State form
-REF-158-10,Form filing note,Pending,Rating file
-REF-158-11,"Countersignature, notices, and producer copy",Indexed,Policy audit
-REF-158-12,Prior policy comparison,Archive,Producer copy
-REF-158-13,Rating worksheet,Reviewed,State form
-REF-158-14,Producer correspondence,Pending,Rating file
-REF-158-15,State exception,Indexed,Policy audit
-REF-158-16,Form filing note,Archive,Producer copy
-REF-158-17,"Countersignature, notices, and producer copy",Reviewed,State form
-REF-158-18,Prior policy comparison,Pending,Rating file
-REF-158-19,Rating worksheet,Indexed,Policy audit
-REF-158-20,Producer correspondence,Archive,Producer copy
-REF-158-21,State exception,Reviewed,State form
-REF-158-22,Form filing note,Pending,Rating file
-REF-158-23,"Countersignature, notices, and producer copy",Indexed,Policy audit
-REF-158-24,Prior policy comparison,Archive,Producer copy
-REF-158-25,Rating worksheet,Reviewed,State form
-REF-158-26,Producer correspondence,Pending,Rating file
-REF-158-27,State exception,Indexed,Policy audit
-REF-158-28,Form filing note,Archive,Producer copy
-REF-158-29,"Countersignature, notices, and producer copy",Reviewed,State form
-REF-158-30,Prior policy comparison,Pending,Rating file
-
-Policy packet                                                                                                                                              Page 158
-
-# Page 172
-
-POLICY PACKET
-POLICY COPY 1F7EA01
-
-Underwriting Support
-
-Countersignature, notices, and producer copy
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
-
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-159-01,Producer correspondence,Reviewed,Rating file
-REF-159-02,State exception,Pending,Policy audit
-REF-159-03,Form filing note,Indexed,Producer copy
-REF-159-04,"Countersignature, notices, and producer copy",Archive,State form
-REF-159-05,Prior policy comparison,Reviewed,Rating file
-REF-159-06,Rating worksheet,Pending,Policy audit
-REF-159-07,Producer correspondence,Indexed,Producer copy
-REF-159-08,State exception,Archive,State form
-REF-159-09,Form filing note,Reviewed,Rating file
-REF-159-10,"Countersignature, notices, and producer copy",Pending,Policy audit
-REF-159-11,Prior policy comparison,Indexed,Producer copy
-REF-159-12,Rating worksheet,Archive,State form
-REF-159-13,Producer correspondence,Reviewed,Rating file
-REF-159-14,State exception,Pending,Policy audit
-REF-159-15,Form filing note,Indexed,Producer copy
-REF-159-16,"Countersignature, notices, and producer copy",Archive,State form
-REF-159-17,Prior policy comparison,Reviewed,Rating file
-REF-159-18,Rating worksheet,Pending,Policy audit
-REF-159-19,Producer correspondence,Indexed,Producer copy
-REF-159-20,State exception,Archive,State form
-REF-159-21,Form filing note,Reviewed,Rating file
-REF-159-22,"Countersignature, notices, and producer copy",Pending,Policy audit
-REF-159-23,Prior policy comparison,Indexed,Producer copy
-REF-159-24,Rating worksheet,Archive,State form
-REF-159-25,Producer correspondence,Reviewed,Rating file
-REF-159-26,State exception,Pending,Policy audit
-REF-159-27,Form filing note,Indexed,Producer copy
-REF-159-28,"Countersignature, notices, and producer copy",Archive,State form
-REF-159-29,Prior policy comparison,Reviewed,Rating file
-REF-159-30,Rating worksheet,Pending,Policy audit
-
-Policy packet
-Page 159
-
-# Page 173
-
-POLICY PACKET                                                                     POLICY COPY 1F7EA01
-
-Underwriting Support
-
-Countersignature, notices, and producer copy
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
-
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-160-01,State exception,Reviewed,Policy audit
-REF-160-02,Form filing note,Pending,Producer copy
-REF-160-03,"Countersignature, notices, and producer copy",Indexed,State form
-REF-160-04,Prior policy comparison,Archive,Rating file
-REF-160-05,Rating worksheet,Reviewed,Policy audit
-REF-160-06,Producer correspondence,Pending,Producer copy
-REF-160-07,State exception,Indexed,State form
-REF-160-08,Form filing note,Archive,Rating file
-REF-160-09,"Countersignature, notices, and producer copy",Reviewed,Policy audit
-REF-160-10,Prior policy comparison,Pending,Producer copy
-REF-160-11,Rating worksheet,Indexed,State form
-REF-160-12,Producer correspondence,Archive,Rating file
-REF-160-13,State exception,Reviewed,Policy audit
-REF-160-14,Form filing note,Pending,Producer copy
-REF-160-15,"Countersignature, notices, and producer copy",Indexed,State form
-REF-160-16,Prior policy comparison,Archive,Rating file
-REF-160-17,Rating worksheet,Reviewed,Policy audit
-REF-160-18,Producer correspondence,Pending,Producer copy
-REF-160-19,State exception,Indexed,State form
-REF-160-20,Form filing note,Archive,Rating file
-REF-160-21,"Countersignature, notices, and producer copy",Reviewed,Policy audit
-REF-160-22,Prior policy comparison,Pending,Producer copy
-REF-160-23,Rating worksheet,Indexed,State form
-REF-160-24,Producer correspondence,Archive,Rating file
-REF-160-25,State exception,Reviewed,Policy audit
-REF-160-26,Form filing note,Pending,Producer copy
-REF-160-27,"Countersignature, notices, and producer copy",Indexed,State form
-REF-160-28,Prior policy comparison,Archive,Rating file
-REF-160-29,Rating worksheet,Reviewed,Policy audit
-REF-160-30,Producer correspondence,Pending,Producer copy
-
-Policy packet                                                                                     Page 160
-
-# Page 174
-
-POLICY PACKET                                                                      POLICY COPY 1F7EA01
-Underwriting Support
-
----
-Countersignature, notices, and producer copy
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
-
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-161-01,Form filing note,Reviewed,Producer copy
-REF-161-02,"Countersignature, notices, and producer copy",Pending,State form
-REF-161-03,Prior policy comparison,Indexed,Rating file
-REF-161-04,Rating worksheet,Archive,Policy audit
-REF-161-05,Producer correspondence,Reviewed,Producer copy
-REF-161-06,State exception,Pending,State form
-REF-161-07,Form filing note,Indexed,Rating file
-REF-161-08,"Countersignature, notices, and producer copy",Archive,Policy audit
-REF-161-09,Prior policy comparison,Reviewed,Producer copy
-REF-161-10,Rating worksheet,Pending,State form
-REF-161-11,Producer correspondence,Indexed,Rating file
-REF-161-12,State exception,Archive,Policy audit
-REF-161-13,Form filing note,Reviewed,Producer copy
-REF-161-14,"Countersignature, notices, and producer copy",Pending,State form
-REF-161-15,Prior policy comparison,Indexed,Rating file
-REF-161-16,Rating worksheet,Archive,Policy audit
-REF-161-17,Producer correspondence,Reviewed,Producer copy
-REF-161-18,State exception,Pending,State form
-REF-161-19,Form filing note,Indexed,Rating file
-REF-161-20,"Countersignature, notices, and producer copy",Archive,Policy audit
-REF-161-21,Prior policy comparison,Reviewed,Producer copy
-REF-161-22,Rating worksheet,Pending,State form
-REF-161-23,Producer correspondence,Indexed,Rating file
-REF-161-24,State exception,Archive,Policy audit
-REF-161-25,Form filing note,Reviewed,Producer copy
-REF-161-26,"Countersignature, notices, and producer copy",Pending,State form
-REF-161-27,Prior policy comparison,Indexed,Rating file
-REF-161-28,Rating worksheet,Archive,Policy audit
-REF-161-29,Producer correspondence,Reviewed,Producer copy
-REF-161-30,State exception,Pending,State form
-
-Policy packet                                                                                 Page 161
-
-# Page 175
-
-POLICY PACKET
-
-# Underwriting Support
-
-| POLICY COPY 1F7EA01 |
-
-### Countersignature, notices, and producer copy
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
-
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-162-01,"Countersignature, notices, and producer copy",Reviewed,State form
-REF-162-02,Prior policy comparison,Pending,Rating file
-REF-162-03,Rating worksheet,Indexed,Policy audit
-REF-162-04,Producer correspondence,Archive,Producer copy
-REF-162-05,State exception,Reviewed,State form
-REF-162-06,Form filing note,Pending,Rating file
-REF-162-07,"Countersignature, notices, and producer copy",Indexed,Policy audit
-REF-162-08,Prior policy comparison,Archive,Producer copy
-REF-162-09,Rating worksheet,Reviewed,State form
-REF-162-10,Producer correspondence,Pending,Rating file
-REF-162-11,State exception,Indexed,Policy audit
-REF-162-12,Form filing note,Archive,Producer copy
-REF-162-13,"Countersignature, notices, and producer copy",Reviewed,State form
-REF-162-14,Prior policy comparison,Pending,Rating file
-REF-162-15,Rating worksheet,Indexed,Policy audit
-REF-162-16,Producer correspondence,Archive,Producer copy
-REF-162-17,State exception,Reviewed,State form
-REF-162-18,Form filing note,Pending,Rating file
-REF-162-19,"Countersignature, notices, and producer copy",Indexed,Policy audit
-REF-162-20,Prior policy comparison,Archive,Producer copy
-REF-162-21,Rating worksheet,Reviewed,State form
-REF-162-22,Producer correspondence,Pending,Rating file
-REF-162-23,State exception,Indexed,Policy audit
-REF-162-24,Form filing note,Archive,Producer copy
-REF-162-25,"Countersignature, notices, and producer copy",Reviewed,State form
-REF-162-26,Prior policy comparison,Pending,Rating file
-REF-162-27,Rating worksheet,Indexed,Policy audit
-REF-162-28,Producer correspondence,Archive,Producer copy
-REF-162-29,State exception,Reviewed,State form
-REF-162-30,Form filing note,Pending,Rating file
-
-Policy packet
-Page 162
-
-# Page 176
-
-POLICY PACKET
-[POLICY COPY 1F7EA01]
-
-# Underwriting Support
-
-### Countersignature, notices, and producer copy
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
-
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-163-01,Prior policy comparison,Reviewed,Rating file
-REF-163-02,Rating worksheet,Pending,Policy audit
-REF-163-03,Producer correspondence,Indexed,Producer copy
-REF-163-04,State exception,Archive,State form
-REF-163-05,Form filing note,Reviewed,Rating file
-REF-163-06,"Countersignature, notices, and producer copy",Pending,Policy audit
-REF-163-07,Prior policy comparison,Indexed,Producer copy
-REF-163-08,Rating worksheet,Archive,State form
-REF-163-09,Producer correspondence,Reviewed,Rating file
-REF-163-10,State exception,Pending,Policy audit
-REF-163-11,Form filing note,Indexed,Producer copy
-REF-163-12,"Countersignature, notices, and producer copy",Archive,State form
-REF-163-13,Prior policy comparison,Reviewed,Rating file
-REF-163-14,Rating worksheet,Pending,Policy audit
-REF-163-15,Producer correspondence,Indexed,Producer copy
-REF-163-16,State exception,Archive,State form
-REF-163-17,Form filing note,Reviewed,Rating file
-REF-163-18,"Countersignature, notices, and producer copy",Pending,Policy audit
-REF-163-19,Prior policy comparison,Indexed,Producer copy
-REF-163-20,Rating worksheet,Archive,State form
-REF-163-21,Producer correspondence,Reviewed,Rating file
-REF-163-22,State exception,Pending,Policy audit
-REF-163-23,Form filing note,Indexed,Producer copy
-REF-163-24,"Countersignature, notices, and producer copy",Archive,State form
-REF-163-25,Prior policy comparison,Reviewed,Rating file
-REF-163-26,Rating worksheet,Pending,Policy audit
-REF-163-27,Producer correspondence,Indexed,Producer copy
-REF-163-28,State exception,Archive,State form
-REF-163-29,Form filing note,Reviewed,Rating file
-REF-163-30,"Countersignature, notices, and producer copy",Pending,Policy audit
-
-Policy packet
-Page 163
-
-# Page 177
-
-POLICY PACKET                                                                      POLICY COPY 1F7EA01
-Underwriting Support
-
-Countersignature, notices, and producer copy
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
-
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-164-01,Rating worksheet,Reviewed,Policy audit
-REF-164-02,Producer correspondence,Pending,Producer copy
-REF-164-03,State exception,Indexed,State form
-REF-164-04,Form filing note,Archive,Rating file
-REF-164-05,"Countersignature, notices, and producer copy",Reviewed,Policy audit
-REF-164-06,Prior policy comparison,Pending,Producer copy
-REF-164-07,Rating worksheet,Indexed,State form
-REF-164-08,Producer correspondence,Archive,Rating file
-REF-164-09,State exception,Reviewed,Policy audit
-REF-164-10,Form filing note,Pending,Producer copy
-REF-164-11,"Countersignature, notices, and producer copy",Indexed,State form
-REF-164-12,Prior policy comparison,Archive,Rating file
-REF-164-13,Rating worksheet,Reviewed,Policy audit
-REF-164-14,Producer correspondence,Pending,Producer copy
-REF-164-15,State exception,Indexed,State form
-REF-164-16,Form filing note,Archive,Rating file
-REF-164-17,"Countersignature, notices, and producer copy",Reviewed,Policy audit
-REF-164-18,Prior policy comparison,Pending,Producer copy
-REF-164-19,Rating worksheet,Indexed,State form
-REF-164-20,Producer correspondence,Archive,Rating file
-REF-164-21,State exception,Reviewed,Policy audit
-REF-164-22,Form filing note,Pending,Producer copy
-REF-164-23,"Countersignature, notices, and producer copy",Indexed,State form
-REF-164-24,Prior policy comparison,Archive,Rating file
-REF-164-25,Rating worksheet,Reviewed,Policy audit
-REF-164-26,Producer correspondence,Pending,Producer copy
-REF-164-27,State exception,Indexed,State form
-REF-164-28,Form filing note,Archive,Rating file
-REF-164-29,"Countersignature, notices, and producer copy",Reviewed,Policy audit
-REF-164-30,Prior policy comparison,Pending,Producer copy
-
-Policy packet                                                                                         Page 164
-
-# Page 178
-
-POLICY PACKET
-POLICY COPY 1F7EA01
-
-Underwriting Support
-
-Countersignature, notices, and producer copy
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
-
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-165-01,Producer correspondence,Reviewed,Producer copy
-REF-165-02,State exception,Pending,State form
-REF-165-03,Form filing note,Indexed,Rating file
-REF-165-04,"Countersignature, notices, and producer copy",Archive,Policy audit
-REF-165-05,Prior policy comparison,Reviewed,Producer copy
-REF-165-06,Rating worksheet,Pending,State form
-REF-165-07,Producer correspondence,Indexed,Rating file
-REF-165-08,State exception,Archive,Policy audit
-REF-165-09,Form filing note,Reviewed,Producer copy
-REF-165-10,"Countersignature, notices, and producer copy",Pending,State form
-REF-165-11,Prior policy comparison,Indexed,Rating file
-REF-165-12,Rating worksheet,Archive,Policy audit
-REF-165-13,Producer correspondence,Reviewed,Producer copy
-REF-165-14,State exception,Pending,State form
-REF-165-15,Form filing note,Indexed,Rating file
-REF-165-16,"Countersignature, notices, and producer copy",Archive,Policy audit
-REF-165-17,Prior policy comparison,Reviewed,Producer copy
-REF-165-18,Rating worksheet,Pending,State form
-REF-165-19,Producer correspondence,Indexed,Rating file
-REF-165-20,State exception,Archive,Policy audit
-REF-165-21,Form filing note,Reviewed,Producer copy
-REF-165-22,"Countersignature, notices, and producer copy",Pending,State form
-REF-165-23,Prior policy comparison,Indexed,Rating file
-REF-165-24,Rating worksheet,Archive,Policy audit
-REF-165-25,Producer correspondence,Reviewed,Producer copy
-REF-165-26,State exception,Pending,State form
-REF-165-27,Form filing note,Indexed,Rating file
-REF-165-28,"Countersignature, notices, and producer copy",Archive,Policy audit
-REF-165-29,Prior policy comparison,Reviewed,Producer copy
-REF-165-30,Rating worksheet,Pending,State form
-
-Policy packet
-Page 165
-
-# Page 179
-
-POLICY PACKET                                                                                    POLICY COPY 1F7EA01
-Underwriting Support
-
-Countersignature, notices, and producer copy
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
-
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-166-01,State exception,Reviewed,State form
-REF-166-02,Form filing note,Pending,Rating file
-REF-166-03,"Countersignature, notices, and producer copy",Indexed,Policy audit
-REF-166-04,Prior policy comparison,Archive,Producer copy
-REF-166-05,Rating worksheet,Reviewed,State form
-REF-166-06,Producer correspondence,Pending,Rating file
-REF-166-07,State exception,Indexed,Policy audit
-REF-166-08,Form filing note,Archive,Producer copy
-REF-166-09,"Countersignature, notices, and producer copy",Reviewed,State form
-REF-166-10,Prior policy comparison,Pending,Rating file
-REF-166-11,Rating worksheet,Indexed,Policy audit
-REF-166-12,Producer correspondence,Archive,Producer copy
-REF-166-13,State exception,Reviewed,State form
-REF-166-14,Form filing note,Pending,Rating file
-REF-166-15,"Countersignature, notices, and producer copy",Indexed,Policy audit
-REF-166-16,Prior policy comparison,Archive,Producer copy
-REF-166-17,Rating worksheet,Reviewed,State form
-REF-166-18,Producer correspondence,Pending,Rating file
-REF-166-19,State exception,Indexed,Policy audit
-REF-166-20,Form filing note,Archive,Producer copy
-REF-166-21,"Countersignature, notices, and producer copy",Reviewed,State form
-REF-166-22,Prior policy comparison,Pending,Rating file
-REF-166-23,Rating worksheet,Indexed,Policy audit
-REF-166-24,Producer correspondence,Archive,Producer copy
-REF-166-25,State exception,Reviewed,State form
-REF-166-26,Form filing note,Pending,Rating file
-REF-166-27,"Countersignature, notices, and producer copy",Indexed,Policy audit
-REF-166-28,Prior policy comparison,Archive,Producer copy
-REF-166-29,Rating worksheet,Reviewed,State form
-REF-166-30,Producer correspondence,Pending,Rating file
-
-Policy packet                                                                                               Page 166
-
-# Page 180
-
-POLICY PACKET                                                                                    POLICY COPY 1F7EA01
-
-Underwriting Support
-
-Countersignature, notices, and producer copy
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
-
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-167-01,Form filing note,Reviewed,Rating file
-REF-167-02,"Countersignature, notices, and producer copy",Pending,Policy audit
-REF-167-03,Prior policy comparison,Indexed,Producer copy
-REF-167-04,Rating worksheet,Archive,State form
-REF-167-05,Producer correspondence,Reviewed,Rating file
-REF-167-06,State exception,Pending,Policy audit
-REF-167-07,Form filing note,Indexed,Producer copy
-REF-167-08,"Countersignature, notices, and producer copy",Archive,State form
-REF-167-09,Prior policy comparison,Reviewed,Rating file
-REF-167-10,Rating worksheet,Pending,Policy audit
-REF-167-11,Producer correspondence,Indexed,Producer copy
-REF-167-12,State exception,Archive,State form
-REF-167-13,Form filing note,Reviewed,Rating file
-REF-167-14,"Countersignature, notices, and producer copy",Pending,Policy audit
-REF-167-15,Prior policy comparison,Indexed,Producer copy
-REF-167-16,Rating worksheet,Archive,State form
-REF-167-17,Producer correspondence,Reviewed,Rating file
-REF-167-18,State exception,Pending,Policy audit
-REF-167-19,Form filing note,Indexed,Producer copy
-REF-167-20,"Countersignature, notices, and producer copy",Archive,State form
-REF-167-21,Prior policy comparison,Reviewed,Rating file
-REF-167-22,Rating worksheet,Pending,Policy audit
-REF-167-23,Producer correspondence,Indexed,Producer copy
-REF-167-24,State exception,Archive,State form
-REF-167-25,Form filing note,Reviewed,Rating file
-REF-167-26,"Countersignature, notices, and producer copy",Pending,Policy audit
-REF-167-27,Prior policy comparison,Indexed,Producer copy
-REF-167-28,Rating worksheet,Archive,State form
-REF-167-29,Producer correspondence,Reviewed,Rating file
-REF-167-30,State exception,Pending,Policy audit
-
-Policy packet                                                                                              Page 167
-
-# Page 181
-
-POLICY PACKET                                                                  POLICY COPY 1F7EA01
-Underwriting Support
-
-Countersignature, notices, and producer copy
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
-
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-168-01,"Countersignature, notices, and producer copy",Reviewed,Policy audit
-REF-168-02,Prior policy comparison,Pending,Producer copy
-REF-168-03,Rating worksheet,Indexed,State form
-REF-168-04,Producer correspondence,Archive,Rating file
-REF-168-05,State exception,Reviewed,Policy audit
-REF-168-06,Form filing note,Pending,Producer copy
-REF-168-07,"Countersignature, notices, and producer copy",Indexed,State form
-REF-168-08,Prior policy comparison,Archive,Rating file
-REF-168-09,Rating worksheet,Reviewed,Policy audit
-REF-168-10,Producer correspondence,Pending,Producer copy
-REF-168-11,State exception,Indexed,State form
-REF-168-12,Form filing note,Archive,Rating file
-REF-168-13,"Countersignature, notices, and producer copy",Reviewed,Policy audit
-REF-168-14,Prior policy comparison,Pending,Producer copy
-REF-168-15,Rating worksheet,Indexed,State form
-REF-168-16,Producer correspondence,Archive,Rating file
-REF-168-17,State exception,Reviewed,Policy audit
-REF-168-18,Form filing note,Pending,Producer copy
-REF-168-19,"Countersignature, notices, and producer copy",Indexed,State form
-REF-168-20,Prior policy comparison,Archive,Rating file
-REF-168-21,Rating worksheet,Reviewed,Policy audit
-REF-168-22,Producer correspondence,Pending,Producer copy
-REF-168-23,State exception,Indexed,State form
-REF-168-24,Form filing note,Archive,Rating file
-REF-168-25,"Countersignature, notices, and producer copy",Reviewed,Policy audit
-REF-168-26,Prior policy comparison,Pending,Producer copy
-REF-168-27,Rating worksheet,Indexed,State form
-REF-168-28,Producer correspondence,Archive,Rating file
-REF-168-29,State exception,Reviewed,Policy audit
-REF-168-30,Form filing note,Pending,Producer copy
-
-Policy packet                                                                            Page 168
-
-# Page 182
-
-POLICY PACKET
-POLICY COPY 1F7EA01
-
-# Underwriting Support
-
-### Countersignature, notices, and producer copy
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
-
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-169-01,Prior policy comparison,Reviewed,Producer copy
-REF-169-02,Rating worksheet,Pending,State form
-REF-169-03,Producer correspondence,Indexed,Rating file
-REF-169-04,State exception,Archive,Policy audit
-REF-169-05,Form filing note,Reviewed,Producer copy
-REF-169-06,"Countersignature, notices, and producer copy",Pending,State form
-REF-169-07,Prior policy comparison,Indexed,Rating file
-REF-169-08,Rating worksheet,Archive,Policy audit
-REF-169-09,Producer correspondence,Reviewed,Producer copy
-REF-169-10,State exception,Pending,State form
-REF-169-11,Form filing note,Indexed,Rating file
-REF-169-12,"Countersignature, notices, and producer copy",Archive,Policy audit
-REF-169-13,Prior policy comparison,Reviewed,Producer copy
-REF-169-14,Rating worksheet,Pending,State form
-REF-169-15,Producer correspondence,Indexed,Rating file
-REF-169-16,State exception,Archive,Policy audit
-REF-169-17,Form filing note,Reviewed,Producer copy
-REF-169-18,"Countersignature, notices, and producer copy",Pending,State form
-REF-169-19,Prior policy comparison,Indexed,Rating file
-REF-169-20,Rating worksheet,Archive,Policy audit
-REF-169-21,Producer correspondence,Reviewed,Producer copy
-REF-169-22,State exception,Pending,State form
-REF-169-23,Form filing note,Indexed,Rating file
-REF-169-24,"Countersignature, notices, and producer copy",Archive,Policy audit
-REF-169-25,Prior policy comparison,Reviewed,Producer copy
-REF-169-26,Rating worksheet,Pending,State form
-REF-169-27,Producer correspondence,Indexed,Rating file
-REF-169-28,State exception,Archive,Policy audit
-REF-169-29,Form filing note,Reviewed,Producer copy
-REF-169-30,"Countersignature, notices, and producer copy",Pending,State form
-
-Policy packet
-Page 169
-
-# Page 183
-
-POLICY PACKET                                                                      |POLICY COPY 1F7EA01|
-Underwriting Support
-
-Countersignature, notices, and producer copy
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
-
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-170-01,Rating worksheet,Reviewed,State form
-REF-170-02,Producer correspondence,Pending,Rating file
-REF-170-03,State exception,Indexed,Policy audit
-REF-170-04,Form filing note,Archive,Producer copy
-REF-170-05,"Countersignature, notices, and producer copy",Reviewed,State form
-REF-170-06,Prior policy comparison,Pending,Rating file
-REF-170-07,Rating worksheet,Indexed,Policy audit
-REF-170-08,Producer correspondence,Archive,Producer copy
-REF-170-09,State exception,Reviewed,State form
-REF-170-10,Form filing note,Pending,Rating file
-REF-170-11,"Countersignature, notices, and producer copy",Indexed,Policy audit
-REF-170-12,Prior policy comparison,Archive,Producer copy
-REF-170-13,Rating worksheet,Reviewed,State form
-REF-170-14,Producer correspondence,Pending,Rating file
-REF-170-15,State exception,Indexed,Policy audit
-REF-170-16,Form filing note,Archive,Producer copy
-REF-170-17,"Countersignature, notices, and producer copy",Reviewed,State form
-REF-170-18,Prior policy comparison,Pending,Rating file
-REF-170-19,Rating worksheet,Indexed,Policy audit
-REF-170-20,Producer correspondence,Archive,Producer copy
-REF-170-21,State exception,Reviewed,State form
-REF-170-22,Form filing note,Pending,Rating file
-REF-170-23,"Countersignature, notices, and producer copy",Indexed,Policy audit
-REF-170-24,Prior policy comparison,Archive,Producer copy
-REF-170-25,Rating worksheet,Reviewed,State form
-REF-170-26,Producer correspondence,Pending,Rating file
-REF-170-27,State exception,Indexed,Policy audit
-REF-170-28,Form filing note,Archive,Producer copy
-REF-170-29,"Countersignature, notices, and producer copy",Reviewed,State form
-REF-170-30,Prior policy comparison,Pending,Rating file
-
-Policy packet                                                                                Page 170
-
-# Page 184
-
-POLICY PACKET                                                                   |POLICY COPY 1F7EA01|
-**Underwriting Support**
-
-***
-
-**Countersignature, notices, and producer copy**
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
-
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-171-01,Producer correspondence,Reviewed,Rating file
-REF-171-02,State exception,Pending,Policy audit
-REF-171-03,Form filing note,Indexed,Producer copy
-REF-171-04,"Countersignature, notices, and producer copy",Archive,State form
-REF-171-05,Prior policy comparison,Reviewed,Rating file
-REF-171-06,Rating worksheet,Pending,Policy audit
-REF-171-07,Producer correspondence,Indexed,Producer copy
-REF-171-08,State exception,Archive,State form
-REF-171-09,Form filing note,Reviewed,Rating file
-REF-171-10,"Countersignature, notices, and producer copy",Pending,Policy audit
-REF-171-11,Prior policy comparison,Indexed,Producer copy
-REF-171-12,Rating worksheet,Archive,State form
-REF-171-13,Producer correspondence,Reviewed,Rating file
-REF-171-14,State exception,Pending,Policy audit
-REF-171-15,Form filing note,Indexed,Producer copy
-REF-171-16,"Countersignature, notices, and producer copy",Archive,State form
-REF-171-17,Prior policy comparison,Reviewed,Rating file
-REF-171-18,Rating worksheet,Pending,Policy audit
-REF-171-19,Producer correspondence,Indexed,Producer copy
-REF-171-20,State exception,Archive,State form
-REF-171-21,Form filing note,Reviewed,Rating file
-REF-171-22,"Countersignature, notices, and producer copy",Pending,Policy audit
-REF-171-23,Prior policy comparison,Indexed,Producer copy
-REF-171-24,Rating worksheet,Archive,State form
-REF-171-25,Producer correspondence,Reviewed,Rating file
-REF-171-26,State exception,Pending,Policy audit
-REF-171-27,Form filing note,Indexed,Producer copy
-REF-171-28,"Countersignature, notices, and producer copy",Archive,State form
-REF-171-29,Prior policy comparison,Reviewed,Rating file
-REF-171-30,Rating worksheet,Pending,Policy audit
-
-***
-
-Policy packet                                                                                           Page 171
-
-# Page 185
-
-POLICY PACKET                                                                    POLICY COPY 1F7EA01
-Underwriting Support
-
-Countersignature, notices, and producer copy
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
-
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-172-01,State exception,Reviewed,Policy audit
-REF-172-02,Form filing note,Pending,Producer copy
-REF-172-03,"Countersignature, notices, and producer copy",Indexed,State form
-REF-172-04,Prior policy comparison,Archive,Rating file
-REF-172-05,Rating worksheet,Reviewed,Policy audit
-REF-172-06,Producer correspondence,Pending,Producer copy
-REF-172-07,State exception,Indexed,State form
-REF-172-08,Form filing note,Archive,Rating file
-REF-172-09,"Countersignature, notices, and producer copy",Reviewed,Policy audit
-REF-172-10,Prior policy comparison,Pending,Producer copy
-REF-172-11,Rating worksheet,Indexed,State form
-REF-172-12,Producer correspondence,Archive,Rating file
-REF-172-13,State exception,Reviewed,Policy audit
-REF-172-14,Form filing note,Pending,Producer copy
-REF-172-15,"Countersignature, notices, and producer copy",Indexed,State form
-REF-172-16,Prior policy comparison,Archive,Rating file
-REF-172-17,Rating worksheet,Reviewed,Policy audit
-REF-172-18,Producer correspondence,Pending,Producer copy
-REF-172-19,State exception,Indexed,State form
-REF-172-20,Form filing note,Archive,Rating file
-REF-172-21,"Countersignature, notices, and producer copy",Reviewed,Policy audit
-REF-172-22,Prior policy comparison,Pending,Producer copy
-REF-172-23,Rating worksheet,Indexed,State form
-REF-172-24,Producer correspondence,Archive,Rating file
-REF-172-25,State exception,Reviewed,Policy audit
-REF-172-26,Form filing note,Pending,Producer copy
-REF-172-27,"Countersignature, notices, and producer copy",Indexed,State form
-REF-172-28,Prior policy comparison,Archive,Rating file
-REF-172-29,Rating worksheet,Reviewed,Policy audit
-REF-172-30,Producer correspondence,Pending,Producer copy
-
-Policy packet                                                                               Page 172
-
-# Page 186
-
-POLICY PACKET                                                                     POLICY COPY 1F7EA01
-
-Underwriting Support
-____________________________________________________________________________________________________
-
-Countersignature, notices, and producer copy
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
-
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-173-01,Form filing note,Reviewed,Producer copy
-REF-173-02,"Countersignature, notices, and producer copy",Pending,State form
-REF-173-03,Prior policy comparison,Indexed,Rating file
-REF-173-04,Rating worksheet,Archive,Policy audit
-REF-173-05,Producer correspondence,Reviewed,Producer copy
-REF-173-06,State exception,Pending,State form
-REF-173-07,Form filing note,Indexed,Rating file
-REF-173-08,"Countersignature, notices, and producer copy",Archive,Policy audit
-REF-173-09,Prior policy comparison,Reviewed,Producer copy
-REF-173-10,Rating worksheet,Pending,State form
-REF-173-11,Producer correspondence,Indexed,Rating file
-REF-173-12,State exception,Archive,Policy audit
-REF-173-13,Form filing note,Reviewed,Producer copy
-REF-173-14,"Countersignature, notices, and producer copy",Pending,State form
-REF-173-15,Prior policy comparison,Indexed,Rating file
-REF-173-16,Rating worksheet,Archive,Policy audit
-REF-173-17,Producer correspondence,Reviewed,Producer copy
-REF-173-18,State exception,Pending,State form
-REF-173-19,Form filing note,Indexed,Rating file
-REF-173-20,"Countersignature, notices, and producer copy",Archive,Policy audit
-REF-173-21,Prior policy comparison,Reviewed,Producer copy
-REF-173-22,Rating worksheet,Pending,State form
-REF-173-23,Producer correspondence,Indexed,Rating file
-REF-173-24,State exception,Archive,Policy audit
-REF-173-25,Form filing note,Reviewed,Producer copy
-REF-173-26,"Countersignature, notices, and producer copy",Pending,State form
-REF-173-27,Prior policy comparison,Indexed,Rating file
-REF-173-28,Rating worksheet,Archive,Policy audit
-REF-173-29,Producer correspondence,Reviewed,Producer copy
-REF-173-30,State exception,Pending,State form
-
-____________________________________________________________________________________________________
-Policy packet                                                                              Page 173
-
-# Page 187
-
-POLICY PACKET                                                                   |POLICY COPY 1F7EA01|
-
-Underwriting Support
-
-Countersignature, notices, and producer copy
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
-
-"REFERENCE","TOPIC","STATUS","SOURCE"
-"REF-174-01","Countersignature, notices, and producer copy","Reviewed","State form"
-"REF-174-02","Prior policy comparison","Pending","Rating file"
-"REF-174-03","Rating worksheet","Indexed","Policy audit"
-"REF-174-04","Producer correspondence","Archive","Producer copy"
-"REF-174-05","State exception","Reviewed","State form"
-"REF-174-06","Form filing note","Pending","Rating file"
-"REF-174-07","Countersignature, notices, and producer copy","Indexed","Policy audit"
-"REF-174-08","Prior policy comparison","Archive","Producer copy"
-"REF-174-09","Rating worksheet","Reviewed","State form"
-"REF-174-10","Producer correspondence","Pending","Rating file"
-"REF-174-11","State exception","Indexed","Policy audit"
-"REF-174-12","Form filing note","Archive","Producer copy"
-"REF-174-13","Countersignature, notices, and producer copy","Reviewed","State form"
-"REF-174-14","Prior policy comparison","Pending","Rating file"
-"REF-174-15","Rating worksheet","Indexed","Policy audit"
-"REF-174-16","Producer correspondence","Archive","Producer copy"
-"REF-174-17","State exception","Reviewed","State form"
-"REF-174-18","Form filing note","Pending","Rating file"
-"REF-174-19","Countersignature, notices, and producer copy","Indexed","Policy audit"
-"REF-174-20","Prior policy comparison","Archive","Producer copy"
-"REF-174-21","Rating worksheet","Reviewed","State form"
-"REF-174-22","Producer correspondence","Pending","Rating file"
-"REF-174-23","State exception","Indexed","Policy audit"
-"REF-174-24","Form filing note","Archive","Producer copy"
-"REF-174-25","Countersignature, notices, and producer copy","Reviewed","State form"
-"REF-174-26","Prior policy comparison","Pending","Rating file"
-"REF-174-27","Rating worksheet","Indexed","Policy audit"
-"REF-174-28","Producer correspondence","Archive","Producer copy"
-"REF-174-29","State exception","Reviewed","State form"
-"REF-174-30","Form filing note","Pending","Rating file"
-
-Policy packet                                                                             Page 174
-
-# Page 188
-
-POLICY PACKET                                                      [POLICY COPY 1F7EA01]
-
-Underwriting Support
-
-Countersignature, notices, and producer copy
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
-
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-175-01,"Prior policy comparison",Reviewed,Rating file
-REF-175-02,"Rating worksheet",Pending,Policy audit
-REF-175-03,"Producer correspondence",Indexed,Producer copy
-REF-175-04,"State exception",Archive,State form
-REF-175-05,"Form filing note",Reviewed,Rating file
-REF-175-06,"Countersignature, notices, and producer copy",Pending,Policy audit
-REF-175-07,"Prior policy comparison",Indexed,Producer copy
-REF-175-08,"Rating worksheet",Archive,State form
-REF-175-09,"Producer correspondence",Reviewed,Rating file
-REF-175-10,"State exception",Pending,Policy audit
-REF-175-11,"Form filing note",Indexed,Producer copy
-REF-175-12,"Countersignature, notices, and producer copy",Archive,State form
-REF-175-13,"Prior policy comparison",Reviewed,Rating file
-REF-175-14,"Rating worksheet",Pending,Policy audit
-REF-175-15,"Producer correspondence",Indexed,Producer copy
-REF-175-16,"State exception",Archive,State form
-REF-175-17,"Form filing note",Reviewed,Rating file
-REF-175-18,"Countersignature, notices, and producer copy",Pending,Policy audit
-REF-175-19,"Prior policy comparison",Indexed,Producer copy
-REF-175-20,"Rating worksheet",Archive,State form
-REF-175-21,"Producer correspondence",Reviewed,Rating file
-REF-175-22,"State exception",Pending,Policy audit
-REF-175-23,"Form filing note",Indexed,Producer copy
-REF-175-24,"Countersignature, notices, and producer copy",Archive,State form
-REF-175-25,"Prior policy comparison",Reviewed,Rating file
-REF-175-26,"Rating worksheet",Pending,Policy audit
-REF-175-27,"Producer correspondence",Indexed,Producer copy
-REF-175-28,"State exception",Archive,State form
-REF-175-29,"Form filing note",Reviewed,Rating file
-REF-175-30,"Countersignature, notices, and producer copy",Pending,Policy audit
-
-Policy packet                                                                  Page 175
-
-# Page 189
-
-POLICY PACKET                                                                                    [POLICY COPY 1F7EA01]
-
-# Underwriting Support
-
-**Countersignature, notices, and producer copy**
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
-
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-176-01,Rating worksheet,Reviewed,Policy audit
-REF-176-02,Producer correspondence,Pending,Producer copy
-REF-176-03,State exception,Indexed,State form
-REF-176-04,Form filing note,Archive,Rating file
-REF-176-05,"Countersignature, notices, and producer copy",Reviewed,Policy audit
-REF-176-06,Prior policy comparison,Pending,Producer copy
-REF-176-07,Rating worksheet,Indexed,State form
-REF-176-08,Producer correspondence,Archive,Rating file
-REF-176-09,State exception,Reviewed,Policy audit
-REF-176-10,Form filing note,Pending,Producer copy
-REF-176-11,"Countersignature, notices, and producer copy",Indexed,State form
-REF-176-12,Prior policy comparison,Archive,Rating file
-REF-176-13,Rating worksheet,Reviewed,Policy audit
-REF-176-14,Producer correspondence,Pending,Producer copy
-REF-176-15,State exception,Indexed,State form
-REF-176-16,Form filing note,Archive,Rating file
-REF-176-17,"Countersignature, notices, and producer copy",Reviewed,Policy audit
-REF-176-18,Prior policy comparison,Pending,Producer copy
-REF-176-19,Rating worksheet,Indexed,State form
-REF-176-20,Producer correspondence,Archive,Rating file
-REF-176-21,State exception,Reviewed,Policy audit
-REF-176-22,Form filing note,Pending,Producer copy
-REF-176-23,"Countersignature, notices, and producer copy",Indexed,State form
-REF-176-24,Prior policy comparison,Archive,Rating file
-REF-176-25,Rating worksheet,Reviewed,Policy audit
-REF-176-26,Producer correspondence,Pending,Producer copy
-REF-176-27,State exception,Indexed,State form
-REF-176-28,Form filing note,Archive,Rating file
-REF-176-29,"Countersignature, notices, and producer copy",Reviewed,Policy audit
-REF-176-30,Prior policy comparison,Pending,Producer copy
-
-Policy packet                                                                                                Page 176
-
-# Page 190
-
-POLICY PACKET                                                                          +----------------------+
-                                                                                       | POLICY COPY 1F7EA01  |
-                                                                                       +----------------------+
-Underwriting Support
-
-Countersignature, notices, and producer copy
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
-
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-177-01,Producer correspondence,Reviewed,Producer copy
-REF-177-02,State exception,Pending,State form
-REF-177-03,Form filing note,Indexed,Rating file
-REF-177-04,Countersignature, notices, and producer copy,Archive,Policy audit
-REF-177-05,Prior policy comparison,Reviewed,Producer copy
-REF-177-06,Rating worksheet,Pending,State form
-REF-177-07,Producer correspondence,Indexed,Rating file
-REF-177-08,State exception,Archive,Policy audit
-REF-177-09,Form filing note,Reviewed,Producer copy
-REF-177-10,Countersignature, notices, and producer copy,Pending,State form
-REF-177-11,Prior policy comparison,Indexed,Rating file
-REF-177-12,Rating worksheet,Archive,Policy audit
-REF-177-13,Producer correspondence,Reviewed,Producer copy
-REF-177-14,State exception,Pending,State form
-REF-177-15,Form filing note,Indexed,Rating file
-REF-177-16,Countersignature, notices, and producer copy,Archive,Policy audit
-REF-177-17,Prior policy comparison,Reviewed,Producer copy
-REF-177-18,Rating worksheet,Pending,State form
-REF-177-19,Producer correspondence,Indexed,Rating file
-REF-177-20,State exception,Archive,Policy audit
-REF-177-21,Form filing note,Reviewed,Producer copy
-REF-177-22,Countersignature, notices, and producer copy,Pending,State form
-REF-177-23,Prior policy comparison,Indexed,Rating file
-REF-177-24,Rating worksheet,Archive,Policy audit
-REF-177-25,Producer correspondence,Reviewed,Producer copy
-REF-177-26,State exception,Pending,State form
-REF-177-27,Form filing note,Indexed,Rating file
-REF-177-28,Countersignature, notices, and producer copy,Archive,Policy audit
-REF-177-29,Prior policy comparison,Reviewed,Producer copy
-REF-177-30,Rating worksheet,Pending,State form
-
-Policy packet                                                                                       Page 177
-
-# Page 191
-
-POLICY PACKET                                                                     POLICY COPY 1F7EA01
-
-Underwriting Support
------------------------------------------------------------------------------------------------------
-Countersignature, notices, and producer copy
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
-
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-178-01,State exception,Reviewed,State form
-REF-178-02,Form filing note,Pending,Rating file
-REF-178-03,"Countersignature, notices, and producer copy",Indexed,Policy audit
-REF-178-04,Prior policy comparison,Archive,Producer copy
-REF-178-05,Rating worksheet,Reviewed,State form
-REF-178-06,Producer correspondence,Pending,Rating file
-REF-178-07,State exception,Indexed,Policy audit
-REF-178-08,Form filing note,Archive,Producer copy
-REF-178-09,"Countersignature, notices, and producer copy",Reviewed,State form
-REF-178-10,Prior policy comparison,Pending,Rating file
-REF-178-11,Rating worksheet,Indexed,Policy audit
-REF-178-12,Producer correspondence,Archive,Producer copy
-REF-178-13,State exception,Reviewed,State form
-REF-178-14,Form filing note,Pending,Rating file
-REF-178-15,"Countersignature, notices, and producer copy",Indexed,Policy audit
-REF-178-16,Prior policy comparison,Archive,Producer copy
-REF-178-17,Rating worksheet,Reviewed,State form
-REF-178-18,Producer correspondence,Pending,Rating file
-REF-178-19,State exception,Indexed,Policy audit
-REF-178-20,Form filing note,Archive,Producer copy
-REF-178-21,"Countersignature, notices, and producer copy",Reviewed,State form
-REF-178-22,Prior policy comparison,Pending,Rating file
-REF-178-23,Rating worksheet,Indexed,Policy audit
-REF-178-24,Producer correspondence,Archive,Producer copy
-REF-178-25,State exception,Reviewed,State form
-REF-178-26,Form filing note,Pending,Rating file
-REF-178-27,"Countersignature, notices, and producer copy",Indexed,Policy audit
-REF-178-28,Prior policy comparison,Archive,Producer copy
-REF-178-29,Rating worksheet,Reviewed,State form
-REF-178-30,Producer correspondence,Pending,Rating file
-
-Policy packet                                                                                Page 178
-
-# Page 192
-
-POLICY PACKET                                                             [ POLICY COPY 1F7EA01 ]
-
-# Underwriting Support
-
-***
-
-### Countersignature, notices, and producer copy
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
-
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-179-01,"Form filing note",Reviewed,Rating file
-REF-179-02,"Countersignature, notices, and producer copy",Pending,Policy audit
-REF-179-03,"Prior policy comparison",Indexed,Producer copy
-REF-179-04,"Rating worksheet",Archive,State form
-REF-179-05,"Producer correspondence",Reviewed,Rating file
-REF-179-06,"State exception",Pending,Policy audit
-REF-179-07,"Form filing note",Indexed,Producer copy
-REF-179-08,"Countersignature, notices, and producer copy",Archive,State form
-REF-179-09,"Prior policy comparison",Reviewed,Rating file
-REF-179-10,"Rating worksheet",Pending,Policy audit
-REF-179-11,"Producer correspondence",Indexed,Producer copy
-REF-179-12,"State exception",Archive,State form
-REF-179-13,"Form filing note",Reviewed,Rating file
-REF-179-14,"Countersignature, notices, and producer copy",Pending,Policy audit
-REF-179-15,"Prior policy comparison",Indexed,Producer copy
-REF-179-16,"Rating worksheet",Archive,State form
-REF-179-17,"Producer correspondence",Reviewed,Rating file
-REF-179-18,"State exception",Pending,Policy audit
-REF-179-19,"Form filing note",Indexed,Producer copy
-REF-179-20,"Countersignature, notices, and producer copy",Archive,State form
-REF-179-21,"Prior policy comparison",Reviewed,Rating file
-REF-179-22,"Rating worksheet",Pending,Policy audit
-REF-179-23,"Producer correspondence",Indexed,Producer copy
-REF-179-24,"State exception",Archive,State form
-REF-179-25,"Form filing note",Reviewed,Rating file
-REF-179-26,"Countersignature, notices, and producer copy",Pending,Policy audit
-REF-179-27,"Prior policy comparison",Indexed,Producer copy
-REF-179-28,"Rating worksheet",Archive,State form
-REF-179-29,"Producer correspondence",Reviewed,Rating file
-REF-179-30,"State exception",Pending,Policy audit
-
-Policy packet                                                                           Page 179
-
-# Page 193
-
-POLICY PACKET                                                                     POLICY COPY 1F7EA01
-
-Underwriting Support
-
-Countersignature, notices, and producer copy
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
-
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-180-01,"Countersignature, notices, and producer copy",Reviewed,Policy audit
-REF-180-02,Prior policy comparison,Pending,Producer copy
-REF-180-03,Rating worksheet,Indexed,State form
-REF-180-04,Producer correspondence,Archive,Rating file
-REF-180-05,State exception,Reviewed,Policy audit
-REF-180-06,Form filing note,Pending,Producer copy
-REF-180-07,"Countersignature, notices, and producer copy",Indexed,State form
-REF-180-08,Prior policy comparison,Archive,Rating file
-REF-180-09,Rating worksheet,Reviewed,Policy audit
-REF-180-10,Producer correspondence,Pending,Producer copy
-REF-180-11,State exception,Indexed,State form
-REF-180-12,Form filing note,Archive,Rating file
-REF-180-13,"Countersignature, notices, and producer copy",Reviewed,Policy audit
-REF-180-14,Prior policy comparison,Pending,Producer copy
-REF-180-15,Rating worksheet,Indexed,State form
-REF-180-16,Producer correspondence,Archive,Rating file
-REF-180-17,State exception,Reviewed,Policy audit
-REF-180-18,Form filing note,Pending,Producer copy
-REF-180-19,"Countersignature, notices, and producer copy",Indexed,State form
-REF-180-20,Prior policy comparison,Archive,Rating file
-REF-180-21,Rating worksheet,Reviewed,Policy audit
-REF-180-22,Producer correspondence,Pending,Producer copy
-REF-180-23,State exception,Indexed,State form
-REF-180-24,Form filing note,Archive,Rating file
-REF-180-25,"Countersignature, notices, and producer copy",Reviewed,Policy audit
-REF-180-26,Prior policy comparison,Pending,Producer copy
-REF-180-27,Rating worksheet,Indexed,State form
-REF-180-28,Producer correspondence,Archive,Rating file
-REF-180-29,State exception,Reviewed,Policy audit
-REF-180-30,Form filing note,Pending,Producer copy
-
-Policy packet                                                                                Page 180
-
-# Page 194
-
-POLICY PACKET                                                                   |POLICY COPY 1F7EA01|
-
-Underwriting Support
-
-Countersignature, notices, and producer copy
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
-
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-181-01,Prior policy comparison,Reviewed,Producer copy
-REF-181-02,Rating worksheet,Pending,State form
-REF-181-03,Producer correspondence,Indexed,Rating file
-REF-181-04,State exception,Archive,Policy audit
-REF-181-05,Form filing note,Reviewed,Producer copy
-REF-181-06,"Countersignature, notices, and producer copy",Pending,State form
-REF-181-07,Prior policy comparison,Indexed,Rating file
-REF-181-08,Rating worksheet,Archive,Policy audit
-REF-181-09,Producer correspondence,Reviewed,Producer copy
-REF-181-10,State exception,Pending,State form
-REF-181-11,Form filing note,Indexed,Rating file
-REF-181-12,"Countersignature, notices, and producer copy",Archive,Policy audit
-REF-181-13,Prior policy comparison,Reviewed,Producer copy
-REF-181-14,Rating worksheet,Pending,State form
-REF-181-15,Producer correspondence,Indexed,Rating file
-REF-181-16,State exception,Archive,Policy audit
-REF-181-17,Form filing note,Reviewed,Producer copy
-REF-181-18,"Countersignature, notices, and producer copy",Pending,State form
-REF-181-19,Prior policy comparison,Indexed,Rating file
-REF-181-20,Rating worksheet,Archive,Policy audit
-REF-181-21,Producer correspondence,Reviewed,Producer copy
-REF-181-22,State exception,Pending,State form
-REF-181-23,Form filing note,Indexed,Rating file
-REF-181-24,"Countersignature, notices, and producer copy",Archive,Policy audit
-REF-181-25,Prior policy comparison,Reviewed,Producer copy
-REF-181-26,Rating worksheet,Pending,State form
-REF-181-27,Producer correspondence,Indexed,Rating file
-REF-181-28,State exception,Archive,Policy audit
-REF-181-29,Form filing note,Reviewed,Producer copy
-REF-181-30,"Countersignature, notices, and producer copy",Pending,State form
-
-Policy packet                                                                               Page 181
-
-# Page 195
-
-POLICY PACKET                                                                  [POLICY COPY 1F7EA01]
-
-Underwriting Support
-
-Countersignature, notices, and producer copy
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
-
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-182-01,Rating worksheet,Reviewed,State form
-REF-182-02,Producer correspondence,Pending,Rating file
-REF-182-03,State exception,Indexed,Policy audit
-REF-182-04,Form filing note,Archive,Producer copy
-REF-182-05,"Countersignature, notices, and producer copy",Reviewed,State form
-REF-182-06,Prior policy comparison,Pending,Rating file
-REF-182-07,Rating worksheet,Indexed,Policy audit
-REF-182-08,Producer correspondence,Archive,Producer copy
-REF-182-09,State exception,Reviewed,State form
-REF-182-10,Form filing note,Pending,Rating file
-REF-182-11,"Countersignature, notices, and producer copy",Indexed,Policy audit
-REF-182-12,Prior policy comparison,Archive,Producer copy
-REF-182-13,Rating worksheet,Reviewed,State form
-REF-182-14,Producer correspondence,Pending,Rating file
-REF-182-15,State exception,Indexed,Policy audit
-REF-182-16,Form filing note,Archive,Producer copy
-REF-182-17,"Countersignature, notices, and producer copy",Reviewed,State form
-REF-182-18,Prior policy comparison,Pending,Rating file
-REF-182-19,Rating worksheet,Indexed,Policy audit
-REF-182-20,Producer correspondence,Archive,Producer copy
-REF-182-21,State exception,Reviewed,State form
-REF-182-22,Form filing note,Pending,Rating file
-REF-182-23,"Countersignature, notices, and producer copy",Indexed,Policy audit
-REF-182-24,Prior policy comparison,Archive,Producer copy
-REF-182-25,Rating worksheet,Reviewed,State form
-REF-182-26,Producer correspondence,Pending,Rating file
-REF-182-27,State exception,Indexed,Policy audit
-REF-182-28,Form filing note,Archive,Producer copy
-REF-182-29,"Countersignature, notices, and producer copy",Reviewed,State form
-REF-182-30,Prior policy comparison,Pending,Rating file
-
-Policy packet                                                                               Page 182
-
-# Page 196
-
-POLICY PACKET
-Underwriting Support
-
-[POLICY COPY 1F7EA01]
-
-Countersignature, notices, and producer copy
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
-
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-183-01,Producer correspondence,Reviewed,Rating file
-REF-183-02,State exception,Pending,Policy audit
-REF-183-03,Form filing note,Indexed,Producer copy
-REF-183-04,"Countersignature, notices, and producer copy",Archive,State form
-REF-183-05,Prior policy comparison,Reviewed,Rating file
-REF-183-06,Rating worksheet,Pending,Policy audit
-REF-183-07,Producer correspondence,Indexed,Producer copy
-REF-183-08,State exception,Archive,State form
-REF-183-09,Form filing note,Reviewed,Rating file
-REF-183-10,"Countersignature, notices, and producer copy",Pending,Policy audit
-REF-183-11,Prior policy comparison,Indexed,Producer copy
-REF-183-12,Rating worksheet,Archive,State form
-REF-183-13,Producer correspondence,Reviewed,Rating file
-REF-183-14,State exception,Pending,Policy audit
-REF-183-15,Form filing note,Indexed,Producer copy
-REF-183-16,"Countersignature, notices, and producer copy",Archive,State form
-REF-183-17,Prior policy comparison,Reviewed,Rating file
-REF-183-18,Rating worksheet,Pending,Policy audit
-REF-183-19,Producer correspondence,Indexed,Producer copy
-REF-183-20,State exception,Archive,State form
-REF-183-21,Form filing note,Reviewed,Rating file
-REF-183-22,"Countersignature, notices, and producer copy",Pending,Policy audit
-REF-183-23,Prior policy comparison,Indexed,Producer copy
-REF-183-24,Rating worksheet,Archive,State form
-REF-183-25,Producer correspondence,Reviewed,Rating file
-REF-183-26,State exception,Pending,Policy audit
-REF-183-27,Form filing note,Indexed,Producer copy
-REF-183-28,"Countersignature, notices, and producer copy",Archive,State form
-REF-183-29,Prior policy comparison,Reviewed,Rating file
-REF-183-30,Rating worksheet,Pending,Policy audit
-
-Policy packet                                                                                                                    Page 183
-
-# Page 197
-
-POLICY PACKET
-Underwriting Support
-[POLICY COPY 1F7EA01]
-
-Countersignature, notices, and producer copy
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
-
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-184-01,State exception,Reviewed,Policy audit
-REF-184-02,Form filing note,Pending,Producer copy
-REF-184-03,"Countersignature, notices, and producer copy",Indexed,State form
-REF-184-04,Prior policy comparison,Archive,Rating file
-REF-184-05,Rating worksheet,Reviewed,Policy audit
-REF-184-06,Producer correspondence,Pending,Producer copy
-REF-184-07,State exception,Indexed,State form
-REF-184-08,Form filing note,Archive,Rating file
-REF-184-09,"Countersignature, notices, and producer copy",Reviewed,Policy audit
-REF-184-10,Prior policy comparison,Pending,Producer copy
-REF-184-11,Rating worksheet,Indexed,State form
-REF-184-12,Producer correspondence,Archive,Rating file
-REF-184-13,State exception,Reviewed,Policy audit
-REF-184-14,Form filing note,Pending,Producer copy
-REF-184-15,"Countersignature, notices, and producer copy",Indexed,State form
-REF-184-16,Prior policy comparison,Archive,Rating file
-REF-184-17,Rating worksheet,Reviewed,Policy audit
-REF-184-18,Producer correspondence,Pending,Producer copy
-REF-184-19,State exception,Indexed,State form
-REF-184-20,Form filing note,Archive,Rating file
-REF-184-21,"Countersignature, notices, and producer copy",Reviewed,Policy audit
-REF-184-22,Prior policy comparison,Pending,Producer copy
-REF-184-23,Rating worksheet,Indexed,State form
-REF-184-24,Producer correspondence,Archive,Rating file
-REF-184-25,State exception,Reviewed,Policy audit
-REF-184-26,Form filing note,Pending,Producer copy
-REF-184-27,"Countersignature, notices, and producer copy",Indexed,State form
-REF-184-28,Prior policy comparison,Archive,Rating file
-REF-184-29,Rating worksheet,Reviewed,Policy audit
-REF-184-30,Producer correspondence,Pending,Producer copy
-
-Policy packet
-Page 184
-
-# Page 198
-
-POLICY PACKET                                                                          POLICY COPY 1F7EA01
-Underwriting Support
-
-Countersignature, notices, and producer copy
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
-
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-185-01,Form filing note,Reviewed,Producer copy
-REF-185-02,"Countersignature, notices, and producer copy",Pending,State form
-REF-185-03,Prior policy comparison,Indexed,Rating file
-REF-185-04,Rating worksheet,Archive,Policy audit
-REF-185-05,Producer correspondence,Reviewed,Producer copy
-REF-185-06,State exception,Pending,State form
-REF-185-07,Form filing note,Indexed,Rating file
-REF-185-08,"Countersignature, notices, and producer copy",Archive,Policy audit
-REF-185-09,Prior policy comparison,Reviewed,Producer copy
-REF-185-10,Rating worksheet,Pending,State form
-REF-185-11,Producer correspondence,Indexed,Rating file
-REF-185-12,State exception,Archive,Policy audit
-REF-185-13,Form filing note,Reviewed,Producer copy
-REF-185-14,"Countersignature, notices, and producer copy",Pending,State form
-REF-185-15,Prior policy comparison,Indexed,Rating file
-REF-185-16,Rating worksheet,Archive,Policy audit
-REF-185-17,Producer correspondence,Reviewed,Producer copy
-REF-185-18,State exception,Pending,State form
-REF-185-19,Form filing note,Indexed,Rating file
-REF-185-20,"Countersignature, notices, and producer copy",Archive,Policy audit
-REF-185-21,Prior policy comparison,Reviewed,Producer copy
-REF-185-22,Rating worksheet,Pending,State form
-REF-185-23,Producer correspondence,Indexed,Rating file
-REF-185-24,State exception,Archive,Policy audit
-REF-185-25,Form filing note,Reviewed,Producer copy
-REF-185-26,"Countersignature, notices, and producer copy",Pending,State form
-REF-185-27,Prior policy comparison,Indexed,Rating file
-REF-185-28,Rating worksheet,Archive,Policy audit
-REF-185-29,Producer correspondence,Reviewed,Producer copy
-REF-185-30,State exception,Pending,State form
-
-Policy packet                                                                                   Page 185
-
-# Page 199
-
-POLICY PACKET
-POLICY COPY 1F7EA01
-
-# Underwriting Support
-
-### Countersignature, notices, and producer copy
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
-
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-186-01,"Countersignature, notices, and producer copy",Reviewed,State form
-REF-186-02,Prior policy comparison,Pending,Rating file
-REF-186-03,Rating worksheet,Indexed,Policy audit
-REF-186-04,Producer correspondence,Archive,Producer copy
-REF-186-05,State exception,Reviewed,State form
-REF-186-06,Form filing note,Pending,Rating file
-REF-186-07,"Countersignature, notices, and producer copy",Indexed,Policy audit
-REF-186-08,Prior policy comparison,Archive,Producer copy
-REF-186-09,Rating worksheet,Reviewed,State form
-REF-186-10,Producer correspondence,Pending,Rating file
-REF-186-11,State exception,Indexed,Policy audit
-REF-186-12,Form filing note,Archive,Producer copy
-REF-186-13,"Countersignature, notices, and producer copy",Reviewed,State form
-REF-186-14,Prior policy comparison,Pending,Rating file
-REF-186-15,Rating worksheet,Indexed,Policy audit
-REF-186-16,Producer correspondence,Archive,Producer copy
-REF-186-17,State exception,Reviewed,State form
-REF-186-18,Form filing note,Pending,Rating file
-REF-186-19,"Countersignature, notices, and producer copy",Indexed,Policy audit
-REF-186-20,Prior policy comparison,Archive,Producer copy
-REF-186-21,Rating worksheet,Reviewed,State form
-REF-186-22,Producer correspondence,Pending,Rating file
-REF-186-23,State exception,Indexed,Policy audit
-REF-186-24,Form filing note,Archive,Producer copy
-REF-186-25,"Countersignature, notices, and producer copy",Reviewed,State form
-REF-186-26,Prior policy comparison,Pending,Rating file
-REF-186-27,Rating worksheet,Indexed,Policy audit
-REF-186-28,Producer correspondence,Archive,Producer copy
-REF-186-29,State exception,Reviewed,State form
-REF-186-30,Form filing note,Pending,Rating file
-
-Policy packet
-Page 186
-
-# Page 200
-
-POLICY PACKET                                                              POLICY COPY 1F7EA01
-
-Underwriting Support
-
-Countersignature, notices, and producer copy
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
-
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-187-01,Prior policy comparison,Reviewed,Rating file
-REF-187-02,Rating worksheet,Pending,Policy audit
-REF-187-03,Producer correspondence,Indexed,Producer copy
-REF-187-04,State exception,Archive,State form
-REF-187-05,Form filing note,Reviewed,Rating file
-REF-187-06,"Countersignature, notices, and producer copy",Pending,Policy audit
-REF-187-07,Prior policy comparison,Indexed,Producer copy
-REF-187-08,Rating worksheet,Archive,State form
-REF-187-09,Producer correspondence,Reviewed,Rating file
-REF-187-10,State exception,Pending,Policy audit
-REF-187-11,Form filing note,Indexed,Producer copy
-REF-187-12,"Countersignature, notices, and producer copy",Archive,State form
-REF-187-13,Prior policy comparison,Reviewed,Rating file
-REF-187-14,Rating worksheet,Pending,Policy audit
-REF-187-15,Producer correspondence,Indexed,Producer copy
-REF-187-16,State exception,Archive,State form
-REF-187-17,Form filing note,Reviewed,Rating file
-REF-187-18,"Countersignature, notices, and producer copy",Pending,Policy audit
-REF-187-19,Prior policy comparison,Indexed,Producer copy
-REF-187-20,Rating worksheet,Archive,State form
-REF-187-21,Producer correspondence,Reviewed,Rating file
-REF-187-22,State exception,Pending,Policy audit
-REF-187-23,Form filing note,Indexed,Producer copy
-REF-187-24,"Countersignature, notices, and producer copy",Archive,State form
-REF-187-25,Prior policy comparison,Reviewed,Rating file
-REF-187-26,Rating worksheet,Pending,Policy audit
-REF-187-27,Producer correspondence,Indexed,Producer copy
-REF-187-28,State exception,Archive,State form
-REF-187-29,Form filing note,Reviewed,Rating file
-REF-187-30,"Countersignature, notices, and producer copy",Pending,Policy audit
-
-Policy packet                                                                            Page 187
-
-# Page 201
-
-POLICY PACKET                                                             POLICY COPY 1F7EA01
-
-Underwriting Support
-
-Countersignature, notices, and producer copy
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
-
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-188-01,Rating worksheet,Reviewed,Policy audit
-REF-188-02,Producer correspondence,Pending,Producer copy
-REF-188-03,State exception,Indexed,State form
-REF-188-04,Form filing note,Archive,Rating file
-REF-188-05,"Countersignature, notices, and producer copy",Reviewed,Policy audit
-REF-188-06,Prior policy comparison,Pending,Producer copy
-REF-188-07,Rating worksheet,Indexed,State form
-REF-188-08,Producer correspondence,Archive,Rating file
-REF-188-09,State exception,Reviewed,Policy audit
-REF-188-10,Form filing note,Pending,Producer copy
-REF-188-11,"Countersignature, notices, and producer copy",Indexed,State form
-REF-188-12,Prior policy comparison,Archive,Rating file
-REF-188-13,Rating worksheet,Reviewed,Policy audit
-REF-188-14,Producer correspondence,Pending,Producer copy
-REF-188-15,State exception,Indexed,State form
-REF-188-16,Form filing note,Archive,Rating file
-REF-188-17,"Countersignature, notices, and producer copy",Reviewed,Policy audit
-REF-188-18,Prior policy comparison,Pending,Producer copy
-REF-188-19,Rating worksheet,Indexed,State form
-REF-188-20,Producer correspondence,Archive,Rating file
-REF-188-21,State exception,Reviewed,Policy audit
-REF-188-22,Form filing note,Pending,Producer copy
-REF-188-23,"Countersignature, notices, and producer copy",Indexed,State form
-REF-188-24,Prior policy comparison,Archive,Rating file
-REF-188-25,Rating worksheet,Reviewed,Policy audit
-REF-188-26,Producer correspondence,Pending,Producer copy
-REF-188-27,State exception,Indexed,State form
-REF-188-28,Form filing note,Archive,Rating file
-REF-188-29,"Countersignature, notices, and producer copy",Reviewed,Policy audit
-REF-188-30,Prior policy comparison,Pending,Producer copy
-
-Policy packet                                                                            Page 188
-
-# Page 202
-
-POLICY PACKET
-
-Underwriting Support
-
-POLICY COPY 1F7EA01
-
-Countersignature, notices, and producer copy
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
-
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-189-01,Producer correspondence,Reviewed,Producer copy
-REF-189-02,State exception,Pending,State form
-REF-189-03,Form filing note,Indexed,Rating file
-REF-189-04,"Countersignature, notices, and producer copy",Archive,Policy audit
-REF-189-05,Prior policy comparison,Reviewed,Producer copy
-REF-189-06,Rating worksheet,Pending,State form
-REF-189-07,Producer correspondence,Indexed,Rating file
-REF-189-08,State exception,Archive,Policy audit
-REF-189-09,Form filing note,Reviewed,Producer copy
-REF-189-10,"Countersignature, notices, and producer copy",Pending,State form
-REF-189-11,Prior policy comparison,Indexed,Rating file
-REF-189-12,Rating worksheet,Archive,Policy audit
-REF-189-13,Producer correspondence,Reviewed,Producer copy
-REF-189-14,State exception,Pending,State form
-REF-189-15,Form filing note,Indexed,Rating file
-REF-189-16,"Countersignature, notices, and producer copy",Archive,Policy audit
-REF-189-17,Prior policy comparison,Reviewed,Producer copy
-REF-189-18,Rating worksheet,Pending,State form
-REF-189-19,Producer correspondence,Indexed,Rating file
-REF-189-20,State exception,Archive,Policy audit
-REF-189-21,Form filing note,Reviewed,Producer copy
-REF-189-22,"Countersignature, notices, and producer copy",Pending,State form
-REF-189-23,Prior policy comparison,Indexed,Rating file
-REF-189-24,Rating worksheet,Archive,Policy audit
-REF-189-25,Producer correspondence,Reviewed,Producer copy
-REF-189-26,State exception,Pending,State form
-REF-189-27,Form filing note,Indexed,Rating file
-REF-189-28,"Countersignature, notices, and producer copy",Archive,Policy audit
-REF-189-29,Prior policy comparison,Reviewed,Producer copy
-REF-189-30,Rating worksheet,Pending,State form
-
-Policy packet
-Page 189
-
-# Page 203
-
-POLICY PACKET                                                                       | POLICY COPY 1F7EA01 |
-
-# Underwriting Support
-
-***
-
-**Countersignature, notices, and producer copy**  
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
-
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-190-01,State exception,Reviewed,State form
-REF-190-02,Form filing note,Pending,Rating file
-REF-190-03,"Countersignature, notices, and producer copy",Indexed,Policy audit
-REF-190-04,Prior policy comparison,Archive,Producer copy
-REF-190-05,Rating worksheet,Reviewed,State form
-REF-190-06,Producer correspondence,Pending,Rating file
-REF-190-07,State exception,Indexed,Policy audit
-REF-190-08,Form filing note,Archive,Producer copy
-REF-190-09,"Countersignature, notices, and producer copy",Reviewed,State form
-REF-190-10,Prior policy comparison,Pending,Rating file
-REF-190-11,Rating worksheet,Indexed,Policy audit
-REF-190-12,Producer correspondence,Archive,Producer copy
-REF-190-13,State exception,Reviewed,State form
-REF-190-14,Form filing note,Pending,Rating file
-REF-190-15,"Countersignature, notices, and producer copy",Indexed,Policy audit
-REF-190-16,Prior policy comparison,Archive,Producer copy
-REF-190-17,Rating worksheet,Reviewed,State form
-REF-190-18,Producer correspondence,Pending,Rating file
-REF-190-19,State exception,Indexed,Policy audit
-REF-190-20,Form filing note,Archive,Producer copy
-REF-190-21,"Countersignature, notices, and producer copy",Reviewed,State form
-REF-190-22,Prior policy comparison,Pending,Rating file
-REF-190-23,Rating worksheet,Indexed,Policy audit
-REF-190-24,Producer correspondence,Archive,Producer copy
-REF-190-25,State exception,Reviewed,State form
-REF-190-26,Form filing note,Pending,Rating file
-REF-190-27,"Countersignature, notices, and producer copy",Indexed,Policy audit
-REF-190-28,Prior policy comparison,Archive,Producer copy
-REF-190-29,Rating worksheet,Reviewed,State form
-REF-190-30,Producer correspondence,Pending,Rating file
-
-***
-
-Policy packet                                                                                   Page 190
-
-# Page 204
-
-POLICY PACKET                                                                      POLICY COPY 1F7EA01
-
-Underwriting Support
-
-Countersignature, notices, and producer copy
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
-
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-191-01,Form filing note,Reviewed,Rating file
-REF-191-02,"Countersignature, notices, and producer copy",Pending,Policy audit
-REF-191-03,Prior policy comparison,Indexed,Producer copy
-REF-191-04,Rating worksheet,Archive,State form
-REF-191-05,Producer correspondence,Reviewed,Rating file
-REF-191-06,State exception,Pending,Policy audit
-REF-191-07,Form filing note,Indexed,Producer copy
-REF-191-08,"Countersignature, notices, and producer copy",Archive,State form
-REF-191-09,Prior policy comparison,Reviewed,Rating file
-REF-191-10,Rating worksheet,Pending,Policy audit
-REF-191-11,Producer correspondence,Indexed,Producer copy
-REF-191-12,State exception,Archive,State form
-REF-191-13,Form filing note,Reviewed,Rating file
-REF-191-14,"Countersignature, notices, and producer copy",Pending,Policy audit
-REF-191-15,Prior policy comparison,Indexed,Producer copy
-REF-191-16,Rating worksheet,Archive,State form
-REF-191-17,Producer correspondence,Reviewed,Rating file
-REF-191-18,State exception,Pending,Policy audit
-REF-191-19,Form filing note,Indexed,Producer copy
-REF-191-20,"Countersignature, notices, and producer copy",Archive,State form
-REF-191-21,Prior policy comparison,Reviewed,Rating file
-REF-191-22,Rating worksheet,Pending,Policy audit
-REF-191-23,Producer correspondence,Indexed,Producer copy
-REF-191-24,State exception,Archive,State form
-REF-191-25,Form filing note,Reviewed,Rating file
-REF-191-26,"Countersignature, notices, and producer copy",Pending,Policy audit
-REF-191-27,Prior policy comparison,Indexed,Producer copy
-REF-191-28,Rating worksheet,Archive,State form
-REF-191-29,Producer correspondence,Reviewed,Rating file
-REF-191-30,State exception,Pending,Policy audit
-
-Policy packet                                                                                Page 191
-
-# Page 205
-
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-192-01,"Countersignature, notices, and producer copy",Reviewed,Policy audit
-REF-192-02,Prior policy comparison,Pending,Producer copy
-REF-192-03,Rating worksheet,Indexed,State form
-REF-192-04,Producer correspondence,Archive,Rating file
-REF-192-05,State exception,Reviewed,Policy audit
-REF-192-06,Form filing note,Pending,Producer copy
-REF-192-07,"Countersignature, notices, and producer copy",Indexed,State form
-REF-192-08,Prior policy comparison,Archive,Rating file
-REF-192-09,Rating worksheet,Reviewed,Policy audit
-REF-192-10,Producer correspondence,Pending,Producer copy
-REF-192-11,State exception,Indexed,State form
-REF-192-12,Form filing note,Archive,Rating file
-REF-192-13,"Countersignature, notices, and producer copy",Reviewed,Policy audit
-REF-192-14,Prior policy comparison,Pending,Producer copy
-REF-192-15,Rating worksheet,Indexed,State form
-REF-192-16,Producer correspondence,Archive,Rating file
-REF-192-17,State exception,Reviewed,Policy audit
-REF-192-18,Form filing note,Pending,Producer copy
-REF-192-19,"Countersignature, notices, and producer copy",Indexed,State form
-REF-192-20,Prior policy comparison,Archive,Rating file
-REF-192-21,Rating worksheet,Reviewed,Policy audit
-REF-192-22,Producer correspondence,Pending,Producer copy
-REF-192-23,State exception,Indexed,State form
-REF-192-24,Form filing note,Archive,Rating file
-REF-192-25,"Countersignature, notices, and producer copy",Reviewed,Policy audit
-REF-192-26,Prior policy comparison,Pending,Producer copy
-REF-192-27,Rating worksheet,Indexed,State form
-REF-192-28,Producer correspondence,Archive,Rating file
-REF-192-29,State exception,Reviewed,Policy audit
-REF-192-30,Form filing note,Pending,Producer copy
-
-# Page 206
-
-POLICY PACKET
-Underwriting Support
-
-POLICY COPY 1F7EA01
-
-Countersignature, notices, and producer copy
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
-
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-193-01,Prior policy comparison,Reviewed,Producer copy
-REF-193-02,Rating worksheet,Pending,State form
-REF-193-03,Producer correspondence,Indexed,Rating file
-REF-193-04,State exception,Archive,Policy audit
-REF-193-05,Form filing note,Reviewed,Producer copy
-REF-193-06,"Countersignature, notices, and producer copy",Pending,State form
-REF-193-07,Prior policy comparison,Indexed,Rating file
-REF-193-08,Rating worksheet,Archive,Policy audit
-REF-193-09,Producer correspondence,Reviewed,Producer copy
-REF-193-10,State exception,Pending,State form
-REF-193-11,Form filing note,Indexed,Rating file
-REF-193-12,"Countersignature, notices, and producer copy",Archive,Policy audit
-REF-193-13,Prior policy comparison,Reviewed,Producer copy
-REF-193-14,Rating worksheet,Pending,State form
-REF-193-15,Producer correspondence,Indexed,Rating file
-REF-193-16,State exception,Archive,Policy audit
-REF-193-17,Form filing note,Reviewed,Producer copy
-REF-193-18,"Countersignature, notices, and producer copy",Pending,State form
-REF-193-19,Prior policy comparison,Indexed,Rating file
-REF-193-20,Rating worksheet,Archive,Policy audit
-REF-193-21,Producer correspondence,Reviewed,Producer copy
-REF-193-22,State exception,Pending,State form
-REF-193-23,Form filing note,Indexed,Rating file
-REF-193-24,"Countersignature, notices, and producer copy",Archive,Policy audit
-REF-193-25,Prior policy comparison,Reviewed,Producer copy
-REF-193-26,Rating worksheet,Pending,State form
-REF-193-27,Producer correspondence,Indexed,Rating file
-REF-193-28,State exception,Archive,Policy audit
-REF-193-29,Form filing note,Reviewed,Producer copy
-REF-193-30,"Countersignature, notices, and producer copy",Pending,State form
-
-Policy packet
-Page 193
-
-# Page 207
-
-POLICY PACKET                                                                      POLICY COPY 1F7EA01
-Underwriting Support
-
-Countersignature, notices, and producer copy
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
-
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-194-01,Rating worksheet,Reviewed,State form
-REF-194-02,Producer correspondence,Pending,Rating file
-REF-194-03,State exception,Indexed,Policy audit
-REF-194-04,Form filing note,Archive,Producer copy
-REF-194-05,"Countersignature, notices, and producer copy",Reviewed,State form
-REF-194-06,Prior policy comparison,Pending,Rating file
-REF-194-07,Rating worksheet,Indexed,Policy audit
-REF-194-08,Producer correspondence,Archive,Producer copy
-REF-194-09,State exception,Reviewed,State form
-REF-194-10,Form filing note,Pending,Rating file
-REF-194-11,"Countersignature, notices, and producer copy",Indexed,Policy audit
-REF-194-12,Prior policy comparison,Archive,Producer copy
-REF-194-13,Rating worksheet,Reviewed,State form
-REF-194-14,Producer correspondence,Pending,Rating file
-REF-194-15,State exception,Indexed,Policy audit
-REF-194-16,Form filing note,Archive,Producer copy
-REF-194-17,"Countersignature, notices, and producer copy",Reviewed,State form
-REF-194-18,Prior policy comparison,Pending,Rating file
-REF-194-19,Rating worksheet,Indexed,Policy audit
-REF-194-20,Producer correspondence,Archive,Producer copy
-REF-194-21,State exception,Reviewed,State form
-REF-194-22,Form filing note,Pending,Rating file
-REF-194-23,"Countersignature, notices, and producer copy",Indexed,Policy audit
-REF-194-24,Prior policy comparison,Archive,Producer copy
-REF-194-25,Rating worksheet,Reviewed,State form
-REF-194-26,Producer correspondence,Pending,Rating file
-REF-194-27,State exception,Indexed,Policy audit
-REF-194-28,Form filing note,Archive,Producer copy
-REF-194-29,"Countersignature, notices, and producer copy",Reviewed,State form
-REF-194-30,Prior policy comparison,Pending,Rating file
-
-Policy packet                                                                                 Page 194
-
-# Page 208
-
-POLICY PACKET                                                                  POLICY COPY 1F7EA01
-
-Underwriting Support
-
-Countersignature, notices, and producer copy
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
-
-"REFERENCE","TOPIC","STATUS","SOURCE"
-"REF-195-01","Producer correspondence","Reviewed","Rating file"
-"REF-195-02","State exception","Pending","Policy audit"
-"REF-195-03","Form filing note","Indexed","Producer copy"
-"REF-195-04","Countersignature, notices, and producer copy","Archive","State form"
-"REF-195-05","Prior policy comparison","Reviewed","Rating file"
-"REF-195-06","Rating worksheet","Pending","Policy audit"
-"REF-195-07","Producer correspondence","Indexed","Producer copy"
-"REF-195-08","State exception","Archive","State form"
-"REF-195-09","Form filing note","Reviewed","Rating file"
-"REF-195-10","Countersignature, notices, and producer copy","Pending","Policy audit"
-"REF-195-11","Prior policy comparison","Indexed","Producer copy"
-"REF-195-12","Rating worksheet","Archive","State form"
-"REF-195-13","Producer correspondence","Reviewed","Rating file"
-"REF-195-14","State exception","Pending","Policy audit"
-"REF-195-15","Form filing note","Indexed","Producer copy"
-"REF-195-16","Countersignature, notices, and producer copy","Archive","State form"
-"REF-195-17","Prior policy comparison","Reviewed","Rating file"
-"REF-195-18","Rating worksheet","Pending","Policy audit"
-"REF-195-19","Producer correspondence","Indexed","Producer copy"
-"REF-195-20","State exception","Archive","State form"
-"REF-195-21","Form filing note","Reviewed","Rating file"
-"REF-195-22","Countersignature, notices, and producer copy","Pending","Policy audit"
-"REF-195-23","Prior policy comparison","Indexed","Producer copy"
-"REF-195-24","Rating worksheet","Archive","State form"
-"REF-195-25","Producer correspondence","Reviewed","Rating file"
-"REF-195-26","State exception","Pending","Policy audit"
-"REF-195-27","Form filing note","Indexed","Producer copy"
-"REF-195-28","Countersignature, notices, and producer copy","Archive","State form"
-"REF-195-29","Prior policy comparison","Reviewed","Rating file"
-"REF-195-30","Rating worksheet","Pending","Policy audit"
-
-Policy packet                                                                           Page 195
-
-# Page 209
-
-POLICY PACKET                                                                    POLICY COPY 1F7EA01
-
-Underwriting Support
-
-Countersignature, notices, and producer copy
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
-
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-196-01,State exception,Reviewed,Policy audit
-REF-196-02,Form filing note,Pending,Producer copy
-REF-196-03,"Countersignature, notices, and producer copy",Indexed,State form
-REF-196-04,Prior policy comparison,Archive,Rating file
-REF-196-05,Rating worksheet,Reviewed,Policy audit
-REF-196-06,Producer correspondence,Pending,Producer copy
-REF-196-07,State exception,Indexed,State form
-REF-196-08,Form filing note,Archive,Rating file
-REF-196-09,"Countersignature, notices, and producer copy",Reviewed,Policy audit
-REF-196-10,Prior policy comparison,Pending,Producer copy
-REF-196-11,Rating worksheet,Indexed,State form
-REF-196-12,Producer correspondence,Archive,Rating file
-REF-196-13,State exception,Reviewed,Policy audit
-REF-196-14,Form filing note,Pending,Producer copy
-REF-196-15,"Countersignature, notices, and producer copy",Indexed,State form
-REF-196-16,Prior policy comparison,Archive,Rating file
-REF-196-17,Rating worksheet,Reviewed,Policy audit
-REF-196-18,Producer correspondence,Pending,Producer copy
-REF-196-19,State exception,Indexed,State form
-REF-196-20,Form filing note,Archive,Rating file
-REF-196-21,"Countersignature, notices, and producer copy",Reviewed,Policy audit
-REF-196-22,Prior policy comparison,Pending,Producer copy
-REF-196-23,Rating worksheet,Indexed,State form
-REF-196-24,Producer correspondence,Archive,Rating file
-REF-196-25,State exception,Reviewed,Policy audit
-REF-196-26,Form filing note,Pending,Producer copy
-REF-196-27,"Countersignature, notices, and producer copy",Indexed,State form
-REF-196-28,Prior policy comparison,Archive,Rating file
-REF-196-29,Rating worksheet,Reviewed,Policy audit
-REF-196-30,Producer correspondence,Pending,Producer copy
-
-Policy packet                                                                           Page 196
-
-# Page 210
-
-POLICY PACKET                                                                      [POLICY COPY 1F7EA01]
-Underwriting Support
-
-Countersignature, notices, and producer copy
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
-
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-197-01,"Form filing note",Reviewed,Producer copy
-REF-197-02,"Countersignature, notices, and producer copy",Pending,State form
-REF-197-03,"Prior policy comparison",Indexed,Rating file
-REF-197-04,"Rating worksheet",Archive,Policy audit
-REF-197-05,"Producer correspondence",Reviewed,Producer copy
-REF-197-06,"State exception",Pending,State form
-REF-197-07,"Form filing note",Indexed,Rating file
-REF-197-08,"Countersignature, notices, and producer copy",Archive,Policy audit
-REF-197-09,"Prior policy comparison",Reviewed,Producer copy
-REF-197-10,"Rating worksheet",Pending,State form
-REF-197-11,"Producer correspondence",Indexed,Rating file
-REF-197-12,"State exception",Archive,Policy audit
-REF-197-13,"Form filing note",Reviewed,Producer copy
-REF-197-14,"Countersignature, notices, and producer copy",Pending,State form
-REF-197-15,"Prior policy comparison",Indexed,Rating file
-REF-197-16,"Rating worksheet",Archive,Policy audit
-REF-197-17,"Producer correspondence",Reviewed,Producer copy
-REF-197-18,"State exception",Pending,State form
-REF-197-19,"Form filing note",Indexed,Rating file
-REF-197-20,"Countersignature, notices, and producer copy",Archive,Policy audit
-REF-197-21,"Prior policy comparison",Reviewed,Producer copy
-REF-197-22,"Rating worksheet",Pending,State form
-REF-197-23,"Producer correspondence",Indexed,Rating file
-REF-197-24,"State exception",Archive,Policy audit
-REF-197-25,"Form filing note",Reviewed,Producer copy
-REF-197-26,"Countersignature, notices, and producer copy",Pending,State form
-REF-197-27,"Prior policy comparison",Indexed,Rating file
-REF-197-28,"Rating worksheet",Archive,Policy audit
-REF-197-29,"Producer correspondence",Reviewed,Producer copy
-REF-197-30,"State exception",Pending,State form
-
-Policy packet                                                                                   Page 197
-
-# Page 211
-
-POLICY PACKET                                                                      [POLICY COPY 1F7EA01]
-
-Underwriting Support
-
-Countersignature, notices, and producer copy
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
-
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-198-01,"Countersignature, notices, and producer copy",Reviewed,State form
-REF-198-02,Prior policy comparison,Pending,Rating file
-REF-198-03,Rating worksheet,Indexed,Policy audit
-REF-198-04,Producer correspondence,Archive,Producer copy
-REF-198-05,State exception,Reviewed,State form
-REF-198-06,Form filing note,Pending,Rating file
-REF-198-07,"Countersignature, notices, and producer copy",Indexed,Policy audit
-REF-198-08,Prior policy comparison,Archive,Producer copy
-REF-198-09,Rating worksheet,Reviewed,State form
-REF-198-10,Producer correspondence,Pending,Rating file
-REF-198-11,State exception,Indexed,Policy audit
-REF-198-12,Form filing note,Archive,Producer copy
-REF-198-13,"Countersignature, notices, and producer copy",Reviewed,State form
-REF-198-14,Prior policy comparison,Pending,Rating file
-REF-198-15,Rating worksheet,Indexed,Policy audit
-REF-198-16,Producer correspondence,Archive,Producer copy
-REF-198-17,State exception,Reviewed,State form
-REF-198-18,Form filing note,Pending,Rating file
-REF-198-19,"Countersignature, notices, and producer copy",Indexed,Policy audit
-REF-198-20,Prior policy comparison,Archive,Producer copy
-REF-198-21,Rating worksheet,Reviewed,State form
-REF-198-22,Producer correspondence,Pending,Rating file
-REF-198-23,State exception,Indexed,Policy audit
-REF-198-24,Form filing note,Archive,Producer copy
-REF-198-25,"Countersignature, notices, and producer copy",Reviewed,State form
-REF-198-26,Prior policy comparison,Pending,Rating file
-REF-198-27,Rating worksheet,Indexed,Policy audit
-REF-198-28,Producer correspondence,Archive,Producer copy
-REF-198-29,State exception,Reviewed,State form
-REF-198-30,Form filing note,Pending,Rating file
-
-Policy packet                                                                                  Page 198
-
-# Page 212
-
-POLICY PACKET
-| POLICY COPY 1F7EA01 |
-
-# Underwriting Support
-
-## Countersignature, notices, and producer copy
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
-
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-199-01,Prior policy comparison,Reviewed,Rating file
-REF-199-02,Rating worksheet,Pending,Policy audit
-REF-199-03,Producer correspondence,Indexed,Producer copy
-REF-199-04,State exception,Archive,State form
-REF-199-05,Form filing note,Reviewed,Rating file
-REF-199-06,"Countersignature, notices, and producer copy",Pending,Policy audit
-REF-199-07,Prior policy comparison,Indexed,Producer copy
-REF-199-08,Rating worksheet,Archive,State form
-REF-199-09,Producer correspondence,Reviewed,Rating file
-REF-199-10,State exception,Pending,Policy audit
-REF-199-11,Form filing note,Indexed,Producer copy
-REF-199-12,"Countersignature, notices, and producer copy",Archive,State form
-REF-199-13,Prior policy comparison,Reviewed,Rating file
-REF-199-14,Rating worksheet,Pending,Policy audit
-REF-199-15,Producer correspondence,Indexed,Producer copy
-REF-199-16,State exception,Archive,State form
-REF-199-17,Form filing note,Reviewed,Rating file
-REF-199-18,"Countersignature, notices, and producer copy",Pending,Policy audit
-REF-199-19,Prior policy comparison,Indexed,Producer copy
-REF-199-20,Rating worksheet,Archive,State form
-REF-199-21,Producer correspondence,Reviewed,Rating file
-REF-199-22,State exception,Pending,Policy audit
-REF-199-23,Form filing note,Indexed,Producer copy
-REF-199-24,"Countersignature, notices, and producer copy",Archive,State form
-REF-199-25,Prior policy comparison,Reviewed,Rating file
-REF-199-26,Rating worksheet,Pending,Policy audit
-REF-199-27,Producer correspondence,Indexed,Producer copy
-REF-199-28,State exception,Archive,State form
-REF-199-29,Form filing note,Reviewed,Rating file
-REF-199-30,"Countersignature, notices, and producer copy",Pending,Policy audit
-
-Policy packet
-Page 199
-
-# Page 213
-
-POLICY PACKET
-[POLICY COPY 1F7EA01]
-
-# Underwriting Support
-
-## Countersignature, notices, and producer copy
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
-
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-200-01,Rating worksheet,Reviewed,Policy audit
-REF-200-02,Producer correspondence,Pending,Producer copy
-REF-200-03,State exception,Indexed,State form
-REF-200-04,Form filing note,Archive,Rating file
-REF-200-05,"Countersignature, notices, and producer copy",Reviewed,Policy audit
-REF-200-06,Prior policy comparison,Pending,Producer copy
-REF-200-07,Rating worksheet,Indexed,State form
-REF-200-08,Producer correspondence,Archive,Rating file
-REF-200-09,State exception,Reviewed,Policy audit
-REF-200-10,Form filing note,Pending,Producer copy
-REF-200-11,"Countersignature, notices, and producer copy",Indexed,State form
-REF-200-12,Prior policy comparison,Archive,Rating file
-REF-200-13,Rating worksheet,Reviewed,Policy audit
-REF-200-14,Producer correspondence,Pending,Producer copy
-REF-200-15,State exception,Indexed,State form
-REF-200-16,Form filing note,Archive,Rating file
-REF-200-17,"Countersignature, notices, and producer copy",Reviewed,Policy audit
-REF-200-18,Prior policy comparison,Pending,Producer copy
-REF-200-19,Rating worksheet,Indexed,State form
-REF-200-20,Producer correspondence,Archive,Rating file
-REF-200-21,State exception,Reviewed,Policy audit
-REF-200-22,Form filing note,Pending,Producer copy
-REF-200-23,"Countersignature, notices, and producer copy",Indexed,State form
-REF-200-24,Prior policy comparison,Archive,Rating file
-REF-200-25,Rating worksheet,Reviewed,Policy audit
-REF-200-26,Producer correspondence,Pending,Producer copy
-REF-200-27,State exception,Indexed,State form
-REF-200-28,Form filing note,Archive,Rating file
-REF-200-29,"Countersignature, notices, and producer copy",Reviewed,Policy audit
-REF-200-30,Prior policy comparison,Pending,Producer copy
-
-Policy packet
-Page 200
-
-# Page 214
-
-POLICY PACKET
-POLICY COPY 1F7EA01
-
-Underwriting Support
-
-Countersignature, notices, and producer copy
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
-
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-201-01,Producer correspondence,Reviewed,Producer copy
-REF-201-02,State exception,Pending,State form
-REF-201-03,Form filing note,Indexed,Rating file
-REF-201-04,"Countersignature, notices, and producer copy",Archive,Policy audit
-REF-201-05,Prior policy comparison,Reviewed,Producer copy
-REF-201-06,Rating worksheet,Pending,State form
-REF-201-07,Producer correspondence,Indexed,Rating file
-REF-201-08,State exception,Archive,Policy audit
-REF-201-09,Form filing note,Reviewed,Producer copy
-REF-201-10,"Countersignature, notices, and producer copy",Pending,State form
-REF-201-11,Prior policy comparison,Indexed,Rating file
-REF-201-12,Rating worksheet,Archive,Policy audit
-REF-201-13,Producer correspondence,Reviewed,Producer copy
-REF-201-14,State exception,Pending,State form
-REF-201-15,Form filing note,Indexed,Rating file
-REF-201-16,"Countersignature, notices, and producer copy",Archive,Policy audit
-REF-201-17,Prior policy comparison,Reviewed,Producer copy
-REF-201-18,Rating worksheet,Pending,State form
-REF-201-19,Producer correspondence,Indexed,Rating file
-REF-201-20,State exception,Archive,Policy audit
-REF-201-21,Form filing note,Reviewed,Producer copy
-REF-201-22,"Countersignature, notices, and producer copy",Pending,State form
-REF-201-23,Prior policy comparison,Indexed,Rating file
-REF-201-24,Rating worksheet,Archive,Policy audit
-REF-201-25,Producer correspondence,Reviewed,Producer copy
-REF-201-26,State exception,Pending,State form
-REF-201-27,Form filing note,Indexed,Rating file
-REF-201-28,"Countersignature, notices, and producer copy",Archive,Policy audit
-REF-201-29,Prior policy comparison,Reviewed,Producer copy
-REF-201-30,Rating worksheet,Pending,State form
-
-Policy packet
-Page 201
-
-# Page 215
-
-POLICY PACKET
-POLICY COPY 1F7EA01
-
-# Underwriting Support
-
-### Countersignature, notices, and producer copy
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
-
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-202-01,State exception,Reviewed,State form
-REF-202-02,Form filing note,Pending,Rating file
-REF-202-03,"Countersignature, notices, and producer copy",Indexed,Policy audit
-REF-202-04,Prior policy comparison,Archive,Producer copy
-REF-202-05,Rating worksheet,Reviewed,State form
-REF-202-06,Producer correspondence,Pending,Rating file
-REF-202-07,State exception,Indexed,Policy audit
-REF-202-08,Form filing note,Archive,Producer copy
-REF-202-09,"Countersignature, notices, and producer copy",Reviewed,State form
-REF-202-10,Prior policy comparison,Pending,Rating file
-REF-202-11,Rating worksheet,Indexed,Policy audit
-REF-202-12,Producer correspondence,Archive,Producer copy
-REF-202-13,State exception,Reviewed,State form
-REF-202-14,Form filing note,Pending,Rating file
-REF-202-15,"Countersignature, notices, and producer copy",Indexed,Policy audit
-REF-202-16,Prior policy comparison,Archive,Producer copy
-REF-202-17,Rating worksheet,Reviewed,State form
-REF-202-18,Producer correspondence,Pending,Rating file
-REF-202-19,State exception,Indexed,Policy audit
-REF-202-20,Form filing note,Archive,Producer copy
-REF-202-21,"Countersignature, notices, and producer copy",Reviewed,State form
-REF-202-22,Prior policy comparison,Pending,Rating file
-REF-202-23,Rating worksheet,Indexed,Policy audit
-REF-202-24,Producer correspondence,Archive,Producer copy
-REF-202-25,State exception,Reviewed,State form
-REF-202-26,Form filing note,Pending,Rating file
-REF-202-27,"Countersignature, notices, and producer copy",Indexed,Policy audit
-REF-202-28,Prior policy comparison,Archive,Producer copy
-REF-202-29,Rating worksheet,Reviewed,State form
-REF-202-30,Producer correspondence,Pending,Rating file
-
-Policy packet
-Page 202
-
-# Page 216
-
-POLICY PACKET
-POLICY COPY 1F7EA01
-
-Underwriting Support
-
-Countersignature, notices, and producer copy
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
-
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-203-01,Form filing note,Reviewed,Rating file
-REF-203-02,"Countersignature, notices, and producer copy",Pending,Policy audit
-REF-203-03,Prior policy comparison,Indexed,Producer copy
-REF-203-04,Rating worksheet,Archive,State form
-REF-203-05,Producer correspondence,Reviewed,Rating file
-REF-203-06,State exception,Pending,Policy audit
-REF-203-07,Form filing note,Indexed,Producer copy
-REF-203-08,"Countersignature, notices, and producer copy",Archive,State form
-REF-203-09,Prior policy comparison,Reviewed,Rating file
-REF-203-10,Rating worksheet,Pending,Policy audit
-REF-203-11,Producer correspondence,Indexed,Producer copy
-REF-203-12,State exception,Archive,State form
-REF-203-13,Form filing note,Reviewed,Rating file
-REF-203-14,"Countersignature, notices, and producer copy",Pending,Policy audit
-REF-203-15,Prior policy comparison,Indexed,Producer copy
-REF-203-16,Rating worksheet,Archive,State form
-REF-203-17,Producer correspondence,Reviewed,Rating file
-REF-203-18,State exception,Pending,Policy audit
-REF-203-19,Form filing note,Indexed,Producer copy
-REF-203-20,"Countersignature, notices, and producer copy",Archive,State form
-REF-203-21,Prior policy comparison,Reviewed,Rating file
-REF-203-22,Rating worksheet,Pending,Policy audit
-REF-203-23,Producer correspondence,Indexed,Producer copy
-REF-203-24,State exception,Archive,State form
-REF-203-25,Form filing note,Reviewed,Rating file
-REF-203-26,"Countersignature, notices, and producer copy",Pending,Policy audit
-REF-203-27,Prior policy comparison,Indexed,Producer copy
-REF-203-28,Rating worksheet,Archive,State form
-REF-203-29,Producer correspondence,Reviewed,Rating file
-REF-203-30,State exception,Pending,Policy audit
-
-Policy packet
-Page 203
-
-# Page 217
-
-POLICY PACKET                                                                    POLICY COPY 1F7EA01
-
-# Underwriting Support
-
-### Countersignature, notices, and producer copy
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
-
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-204-01,"Countersignature, notices, and producer copy",Reviewed,Policy audit
-REF-204-02,Prior policy comparison,Pending,Producer copy
-REF-204-03,Rating worksheet,Indexed,State form
-REF-204-04,Producer correspondence,Archive,Rating file
-REF-204-05,State exception,Reviewed,Policy audit
-REF-204-06,Form filing note,Pending,Producer copy
-REF-204-07,"Countersignature, notices, and producer copy",Indexed,State form
-REF-204-08,Prior policy comparison,Archive,Rating file
-REF-204-09,Rating worksheet,Reviewed,Policy audit
-REF-204-10,Producer correspondence,Pending,Producer copy
-REF-204-11,State exception,Indexed,State form
-REF-204-12,Form filing note,Archive,Rating file
-REF-204-13,"Countersignature, notices, and producer copy",Reviewed,Policy audit
-REF-204-14,Prior policy comparison,Pending,Producer copy
-REF-204-15,Rating worksheet,Indexed,State form
-REF-204-16,Producer correspondence,Archive,Rating file
-REF-204-17,State exception,Reviewed,Policy audit
-REF-204-18,Form filing note,Pending,Producer copy
-REF-204-19,"Countersignature, notices, and producer copy",Indexed,State form
-REF-204-20,Prior policy comparison,Archive,Rating file
-REF-204-21,Rating worksheet,Reviewed,Policy audit
-REF-204-22,Producer correspondence,Pending,Producer copy
-REF-204-23,State exception,Indexed,State form
-REF-204-24,Form filing note,Archive,Rating file
-REF-204-25,"Countersignature, notices, and producer copy",Reviewed,Policy audit
-REF-204-26,Prior policy comparison,Pending,Producer copy
-REF-204-27,Rating worksheet,Indexed,State form
-REF-204-28,Producer correspondence,Archive,Rating file
-REF-204-29,State exception,Reviewed,Policy audit
-REF-204-30,Form filing note,Pending,Producer copy
-
-Policy packet                                                                                Page 204
-
-# Page 218
-
-POLICY PACKET                                                                                    POLICY COPY 1F7EA01
-
-# Underwriting Support
-
-### Countersignature, notices, and producer copy
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
-
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-205-01,Prior policy comparison,Reviewed,Producer copy
-REF-205-02,Rating worksheet,Pending,State form
-REF-205-03,Producer correspondence,Indexed,Rating file
-REF-205-04,State exception,Archive,Policy audit
-REF-205-05,Form filing note,Reviewed,Producer copy
-REF-205-06,"Countersignature, notices, and producer copy",Pending,State form
-REF-205-07,Prior policy comparison,Indexed,Rating file
-REF-205-08,Rating worksheet,Archive,Policy audit
-REF-205-09,Producer correspondence,Reviewed,Producer copy
-REF-205-10,State exception,Pending,State form
-REF-205-11,Form filing note,Indexed,Rating file
-REF-205-12,"Countersignature, notices, and producer copy",Archive,Policy audit
-REF-205-13,Prior policy comparison,Reviewed,Producer copy
-REF-205-14,Rating worksheet,Pending,State form
-REF-205-15,Producer correspondence,Indexed,Rating file
-REF-205-16,State exception,Archive,Policy audit
-REF-205-17,Form filing note,Reviewed,Producer copy
-REF-205-18,"Countersignature, notices, and producer copy",Pending,State form
-REF-205-19,Prior policy comparison,Indexed,Rating file
-REF-205-20,Rating worksheet,Archive,Policy audit
-REF-205-21,Producer correspondence,Reviewed,Producer copy
-REF-205-22,State exception,Pending,State form
-REF-205-23,Form filing note,Indexed,Rating file
-REF-205-24,"Countersignature, notices, and producer copy",Archive,Policy audit
-REF-205-25,Prior policy comparison,Reviewed,Producer copy
-REF-205-26,Rating worksheet,Pending,State form
-REF-205-27,Producer correspondence,Indexed,Rating file
-REF-205-28,State exception,Archive,Policy audit
-REF-205-29,Form filing note,Reviewed,Producer copy
-REF-205-30,"Countersignature, notices, and producer copy",Pending,State form
-
-Policy packet                                                                                       Page 205
-
-# Page 219
-
-POLICY PACKET                                                      POLICY COPY 1F7EA01
-
-Underwriting Support
-
-Countersignature, notices, and producer copy
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
-
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-206-01,Rating worksheet,Reviewed,State form
-REF-206-02,Producer correspondence,Pending,Rating file
-REF-206-03,State exception,Indexed,Policy audit
-REF-206-04,Form filing note,Archive,Producer copy
-REF-206-05,"Countersignature, notices, and producer copy",Reviewed,State form
-REF-206-06,Prior policy comparison,Pending,Rating file
-REF-206-07,Rating worksheet,Indexed,Policy audit
-REF-206-08,Producer correspondence,Archive,Producer copy
-REF-206-09,State exception,Reviewed,State form
-REF-206-10,Form filing note,Pending,Rating file
-REF-206-11,"Countersignature, notices, and producer copy",Indexed,Policy audit
-REF-206-12,Prior policy comparison,Archive,Producer copy
-REF-206-13,Rating worksheet,Reviewed,State form
-REF-206-14,Producer correspondence,Pending,Rating file
-REF-206-15,State exception,Indexed,Policy audit
-REF-206-16,Form filing note,Archive,Producer copy
-REF-206-17,"Countersignature, notices, and producer copy",Reviewed,State form
-REF-206-18,Prior policy comparison,Pending,Rating file
-REF-206-19,Rating worksheet,Indexed,Policy audit
-REF-206-20,Producer correspondence,Archive,Producer copy
-REF-206-21,State exception,Reviewed,State form
-REF-206-22,Form filing note,Pending,Rating file
-REF-206-23,"Countersignature, notices, and producer copy",Indexed,Policy audit
-REF-206-24,Prior policy comparison,Archive,Producer copy
-REF-206-25,Rating worksheet,Reviewed,State form
-REF-206-26,Producer correspondence,Pending,Rating file
-REF-206-27,State exception,Indexed,Policy audit
-REF-206-28,Form filing note,Archive,Producer copy
-REF-206-29,"Countersignature, notices, and producer copy",Reviewed,State form
-REF-206-30,Prior policy comparison,Pending,Rating file
-
-Policy packet                                                                 Page 206
-
-# Page 220
-
-POLICY PACKET                                                                    [POLICY COPY 1F7EA01]
-
-# Underwriting Support
-
-### Countersignature, notices, and producer copy
-Support material retained in the underwriting packet for chronology, audit, and renewal review.
-
-REFERENCE,TOPIC,STATUS,SOURCE
-REF-207-01,Producer correspondence,Reviewed,Rating file
-REF-207-02,State exception,Pending,Policy audit
-REF-207-03,Form filing note,Indexed,Producer copy
-REF-207-04,"Countersignature, notices, and producer copy",Archive,State form
-REF-207-05,Prior policy comparison,Reviewed,Rating file
-REF-207-06,Rating worksheet,Pending,Policy audit
-REF-207-07,Producer correspondence,Indexed,Producer copy
-REF-207-08,State exception,Archive,State form
-REF-207-09,Form filing note,Reviewed,Rating file
-REF-207-10,"Countersignature, notices, and producer copy",Pending,Policy audit
-REF-207-11,Prior policy comparison,Indexed,Producer copy
-REF-207-12,Rating worksheet,Archive,State form
-REF-207-13,Producer correspondence,Reviewed,Rating file
-REF-207-14,State exception,Pending,Policy audit
-REF-207-15,Form filing note,Indexed,Producer copy
-REF-207-16,"Countersignature, notices, and producer copy",Archive,State form
-REF-207-17,Prior policy comparison,Reviewed,Rating file
-REF-207-18,Rating worksheet,Pending,Policy audit
-REF-207-19,Producer correspondence,Indexed,Producer copy
-REF-207-20,State exception,Archive,State form
-REF-207-21,Form filing note,Reviewed,Rating file
-REF-207-22,"Countersignature, notices, and producer copy",Pending,Policy audit
-REF-207-23,Prior policy comparison,Indexed,Producer copy
-REF-207-24,Rating worksheet,Archive,State form
-REF-207-25,Producer correspondence,Reviewed,Rating file
-REF-207-26,State exception,Pending,Policy audit
-REF-207-27,Form filing note,Indexed,Producer copy
-REF-207-28,"Countersignature, notices, and producer copy",Archive,State form
-REF-207-29,Prior policy comparison,Reviewed,Rating file
-REF-207-30,Rating worksheet,Pending,Policy audit
-
-Policy packet                                                                                Page 207
+ARGENT BIRCH EMPLOYERS | WORKERS COMPENSATION AND EMPLOYERS LIABILITY
+Premium Summary - Continued 5
+                                                                                      YW700400
+                                                                               04/01/2026 - 04/01/2027
+────────────────────────────────────────────────────────────────────────────────────────────────────────
+ Total scheduled premium for the rows shown on this schedule: $512,617.
+────────────────────────────────────────────────────────────────────────────────────────────────────────
+CT             Schedule entry CT records class 8810; loc 4; payroll $594,857.
+               CLASS 8810                                             LOC 4
+               PAYROLL $594,857                                       ESTIMATED PREMIUM $2,498
+────────────────────────────────────────────────────────────────────────────────────────────────────────
+CT             Class: 8017. The remaining values below apply to this same scheduled item.
+               LOC 5                                                  PAYROLL $611,668
+               ESTIMATED PREMIUM $26,607
+────────────────────────────────────────────────────────────────────────────────────────────────────────
+MA             MA - Class: 8742 / Loc: 1
+               Payroll: $622,528 / Estimated Premium: $4,606
+────────────────────────────────────────────────────────────────────────────────────────────────────────
+MA             MA. Class is 5190. Loc is 2. Payroll is $633,943. Estimated Premium is $4,691.
+               CLASS 5190
+               LOC 2
+               PAYROLL $633,943
+               ESTIMATED PREMIUM $4,691
+────────────────────────────────────────────────────────────────────────────────────────────────────────
+RI             Schedule entry RI records class 9082; loc 3; payroll $642,370.
+               CLASS 9082                                             LOC 3
+               PAYROLL $642,370                                       ESTIMATED PREMIUM $27,943
+────────────────────────────────────────────────────────────────────────────────────────────────────────
+ME             Class: 3632. The remaining values below apply to this same scheduled item.
+               LOC 4                                                  PAYROLL $657,159
+               ESTIMATED PREMIUM $2,760
+────────────────────────────────────────────────────────────────────────────────────────────────────────
+NH             NH - Class: 9015 / Loc: 5
+               Payroll: $663,479 / Estimated Premium: $18,975
+────────────────────────────────────────────────────────────────────────────────────────────────────────
+VT             VT. Class is 5606. Loc is 1. Payroll is $675,365. Estimated Premium is $29,378.
+               CLASS 5606
+               LOC 1
+               PAYROLL $675,365
+               ESTIMATED PREMIUM $29,378
+────────────────────────────────────────────────────────────────────────────────────────────────────────
+CT             Schedule entry CT records class 8810; loc 2; payroll $686,739.
+               CLASS 8810                                             LOC 2
+               PAYROLL $686,739                                       ESTIMATED PREMIUM $19,640
+────────────────────────────────────────────────────────────────────────────────────────────────────────
+CT             Class: 8017. The remaining values below apply to this same scheduled item.
+               LOC 3                                                  PAYROLL $705,887
+               ESTIMATED PREMIUM $1,905
+────────────────────────────────────────────────────────────────────────────────────────────────────────
+MA             MA - Class: 8742 / Loc: 4
+               Payroll: $716,927 / Estimated Premium: $1,290
+────────────────────────────────────────────────────────────────────────────────────────────────────────
+MA             MA. Class is 5190. Loc is 5. Payroll is $724,745. Estimated Premium is $1,304.
+               CLASS 5190
+               LOC 5
+               PAYROLL $724,745
+               ESTIMATED PREMIUM $1,304
+────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+┌────────────────────────────────────────────────────────┐ ┌────────────────────────────────────────────────────────┐
+│ Schedule Conditions                                    │ │ Reading This Schedule                                  │
+│ Entries on this schedule apply only to the coverage    │ │ Read scheduled lines together with the declarations    │
+│ part, location, class, state, or form reference        │ │ and attached forms to determine the complete           │
+│ shown on the same row.                                 │ │ scheduled item.                                        │
+└────────────────────────────────────────────────────────┘ └────────────────────────────────────────────────────────┘
+
+Blue Kettle Food Service, LLC                                                                    PREM-SCH_df
 

@@ -8,29 +8,29 @@
   "target_record_type": "loss_run_incident",
   "num_claims": 40,
   "num_target_records": 40,
-  "pages_estimate": 209,
-  "pdf_page_count": 209,
+  "pages_estimate": 148,
+  "pdf_page_count": 148,
   "document_count": 1,
   "evidence_pattern": "single_document_long_range_cross_page_join",
-  "minimum_gap_pages_between_primary_and_last_evidence": 172,
+  "minimum_gap_pages_between_primary_and_last_evidence": 134,
   "problems": [
     "cross_page_join",
-    "long_range_evidence",
-    "mixed_layout",
     "distractor_sections",
-    "longer_list",
-    "ocr_condition",
-    "page_breaks",
-    "large_doc",
-    "multiple_tables",
-    "multi_row",
-    "multi_column",
     "duplicates",
-    "natural_long_range_join",
     "inherited_context",
-    "non_target_rows",
+    "large_doc",
+    "long_range_evidence",
+    "longer_list",
+    "mixed_layout",
     "mixed_prose_tables",
-    "non_sequential_identifiers"
+    "multi_column",
+    "multi_row",
+    "multiple_tables",
+    "natural_long_range_join",
+    "non_sequential_identifiers",
+    "non_target_rows",
+    "ocr_condition",
+    "page_breaks"
   ],
   "layout_templates": [
     "packet_cover",
@@ -58,7 +58,7 @@
   "evidence_map": [
     {
       "section": "claim_intake_file_cards",
-      "approx_page_after_cover": 1,
+      "approx_page_after_cover": 2,
       "fields": [
         "incident_number",
         "reference_number",
@@ -73,7 +73,7 @@
     },
     {
       "section": "fleet_driver_assignment_cards",
-      "approx_page_after_cover": 80,
+      "approx_page_after_cover": 49,
       "join_key": "unit_number",
       "fields": [
         "driver_name",
@@ -83,7 +83,7 @@
     },
     {
       "section": "policy_register_cards",
-      "approx_page_after_cover": 81,
+      "approx_page_after_cover": 53,
       "join_key": "policy_number",
       "fields": [
         "company_name",
@@ -95,7 +95,7 @@
     },
     {
       "section": "loss_cause_classification_narrative",
-      "approx_page_after_cover": 136,
+      "approx_page_after_cover": 95,
       "join_key": "cause_code",
       "fields": [
         "coverage_type",
@@ -105,7 +105,7 @@
     },
     {
       "section": "claimant_notice_cards",
-      "approx_page_after_cover": 137,
+      "approx_page_after_cover": 96,
       "join_key": "reference_number",
       "fields": [
         "claimants",
@@ -114,7 +114,7 @@
     },
     {
       "section": "claim_financial_ledger_blocks",
-      "approx_page_after_cover": 178,
+      "approx_page_after_cover": 136,
       "join_key": "reference_number",
       "fields": [
         "bi",
@@ -131,18 +131,28 @@
     "metadata": "metadata/mixed_040_001_crosspage.json",
     "ocr_md": "transcripts/ocr_gemini/mixed_040_001_crosspage.md",
     "json_size_bytes": 51549,
-    "pdf_size_bytes": 1797630,
-    "html_size_bytes": 807202,
-    "ocr_size_bytes": 769475
+    "pdf_size_bytes": 1500443,
+    "html_size_bytes": 519042,
+    "ocr_size_bytes": 676012
   },
   "transcripts_available": [
     "ocr"
   ],
-  "ocr_md_size_bytes": 769475,
+  "ocr_md_size_bytes": 676012,
   "layout_revision": {
-    "date": "2026-06-29T09:52:21+00:00",
-    "purpose": "reduce deterministic parser friendliness with production-like layout variation",
+    "date": "2026-07-14T08:45:41.896620+00:00",
+    "purpose": "improve production-like document structure and layout variation",
     "ocr_status": "regenerated_from_current_pdf",
-    "ocr_regenerated_at": "2026-06-29T10:16:19+00:00"
+    "ocr_regenerated_at": "2026-07-14T12:49:33.163369+00:00"
+  },
+  "pdf_size_bytes": 1500443,
+  "html_size_bytes": 519042,
+  "json_size_bytes": 51549,
+  "template": "claim_crosspage_multihop",
+  "artifacts": {
+    "pdf_sha256": "e7f18dda8627836601492a406b0fc9022e0c6a00edf0bcfd4c58b3f500913037",
+    "html_sha256": "90eaf5514f89eac4d22a41e6c2db21862504804cd0c1728967cdfbacda4e2675",
+    "ground_truth_sha256": "43cc3c92399a871becb3ef6655b4c4c9c6120eab8b243e3d868599d316890cea",
+    "ocr_sha256": "3fdb42f9bf7813e298fded96af594145293613766c983ea0e13cd281ccdcd10d"
   }
 }

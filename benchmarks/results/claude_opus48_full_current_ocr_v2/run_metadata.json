@@ -1,660 +1,1136 @@
 {
-  "generated_at": "2026-07-12T15:17:31.000767+00:00",
+  "generated_at": "2026-07-14T20:34:24.138595+00:00",
   "runner": "run_claude_cli_evaluation.py",
   "model_key": "claude_opus48",
   "requested_model": "claude-opus-4-8",
   "effort": "xhigh",
   "transcript": "ocr",
-  "cli_version_observed_at_metadata_write": "2.1.207 (Claude Code)",
+  "cli_version_observed_at_metadata_write": "2.1.209 (Claude Code)",
   "authentication": "Claude subscription; credentials are not stored",
+  "additional_denied_paths": [
+    "/Users/anton/d/kay",
+    "/Users/anton/Desktop"
+  ],
   "samples": {
     "multihop_012_001_crosspage": {
       "requested_model": "claude-opus-4-8",
+      "matching_inference_models": [
+        "claude-opus-4-8"
+      ],
       "observed_models": [
         "claude-haiku-4-5-20251001",
         "claude-opus-4-8"
       ],
       "effort": "xhigh",
-      "duration_seconds": 347.527,
+      "duration_seconds": 173.571,
       "tokens": {
-        "requests": 16,
-        "input_tokens": 776696,
-        "cached_input_tokens": 690728,
-        "cache_creation_input_tokens": 85226,
-        "output_tokens": 29399,
-        "total_tokens": 806095
+        "requests": 12,
+        "input_tokens": 579703,
+        "cached_input_tokens": 476338,
+        "cache_creation_input_tokens": 100058,
+        "output_tokens": 15033,
+        "total_tokens": 594736
       },
-      "estimated_api_cost_usd": 1.6135315
-    },
-    "driver_mvr_packet_001": {
-      "requested_model": "claude-opus-4-8",
-      "observed_models": [
-        "claude-haiku-4-5-20251001",
-        "claude-opus-4-8"
-      ],
-      "effort": "xhigh",
-      "duration_seconds": 150.805,
-      "tokens": {
-        "requests": 10,
-        "input_tokens": 279232,
-        "cached_input_tokens": 242985,
-        "cache_creation_input_tokens": 35515,
-        "output_tokens": 12539,
-        "total_tokens": 291771
-      },
-      "estimated_api_cost_usd": 0.65741625
+      "estimated_api_cost_usd": 1.6279289999999997,
+      "claude_cli_version": "2.1.209 (Claude Code)",
+      "claude_cli_version_evidence": "per_sample",
+      "sample": "multihop_012_001_crosspage",
+      "transcript": "ocr",
+      "model_key": "claude_opus48",
+      "runtime_version": "2.1.209 (Claude Code)",
+      "output_file": "output/incidents.json",
+      "dataset_manifest_sha256": "5e40e8e07c58aa8882f1f4308fd338310ab19c65367ba9ab60b71050eb739140",
+      "runner_source_sha256": "36122be55d50132137e23c01867537bc5ee9e8f35490de451ed7eb7522649107",
+      "transcript_sha256": "ae80ef108686bdbdb62f2835b3b4d17ca5d267eb4cdc1670802b0e73810ef5ad",
+      "field_contract_sha256": "3d55879048e0bd49aa89a968f18514abdd47e57feb2719cd03e6f1510eb261de",
+      "prompt_sha256": "790dcf3975c7ea2dd4b93f7a5ec3500316cc8f65b877c0188874cf32b1a1be50",
+      "input_fingerprint_sha256": "2b52825cad0587617f0c447b2d28f099f757fafbfe0380ae2ac4fc01c69650e6",
+      "prediction_sha256": "50cae4a865ccbe8b93589778cbddb722f3bd2accb4b3af701648ae001479e0af"
     },
     "multihop_025_001_crosspage": {
       "requested_model": "claude-opus-4-8",
+      "matching_inference_models": [
+        "claude-opus-4-8"
+      ],
       "observed_models": [
         "claude-haiku-4-5-20251001",
         "claude-opus-4-8"
       ],
       "effort": "xhigh",
-      "duration_seconds": 432.214,
+      "duration_seconds": 304.797,
       "tokens": {
-        "requests": 19,
-        "input_tokens": 868027,
-        "cached_input_tokens": 767553,
-        "cache_creation_input_tokens": 99726,
-        "output_tokens": 37270,
-        "total_tokens": 905297
+        "requests": 24,
+        "input_tokens": 788000,
+        "cached_input_tokens": 709715,
+        "cache_creation_input_tokens": 77537,
+        "output_tokens": 24153,
+        "total_tokens": 812153
       },
-      "estimated_api_cost_usd": 1.939394
+      "estimated_api_cost_usd": 1.7346125,
+      "claude_cli_version": "2.1.209 (Claude Code)",
+      "claude_cli_version_evidence": "per_sample",
+      "sample": "multihop_025_001_crosspage",
+      "transcript": "ocr",
+      "model_key": "claude_opus48",
+      "runtime_version": "2.1.209 (Claude Code)",
+      "output_file": "output/incidents.json",
+      "dataset_manifest_sha256": "5e40e8e07c58aa8882f1f4308fd338310ab19c65367ba9ab60b71050eb739140",
+      "runner_source_sha256": "36122be55d50132137e23c01867537bc5ee9e8f35490de451ed7eb7522649107",
+      "transcript_sha256": "fc64a2cfb21555e0e4472717d679bb76a6bceedff023f8763fc88c1fa6ec1159",
+      "field_contract_sha256": "3d55879048e0bd49aa89a968f18514abdd47e57feb2719cd03e6f1510eb261de",
+      "prompt_sha256": "790dcf3975c7ea2dd4b93f7a5ec3500316cc8f65b877c0188874cf32b1a1be50",
+      "input_fingerprint_sha256": "935ef2a0bdfa5382470c3ddd209fea7fa47ac6ef22dffb8bff9729b0ab5c953b",
+      "prediction_sha256": "ab400940b1604b88b370818138c042ad6557faa9272d9d654dafbd2d33d3ff0d"
+    },
+    "driver_mvr_packet_001": {
+      "requested_model": "claude-opus-4-8",
+      "matching_inference_models": [
+        "claude-opus-4-8"
+      ],
+      "observed_models": [
+        "claude-haiku-4-5-20251001",
+        "claude-opus-4-8"
+      ],
+      "effort": "xhigh",
+      "duration_seconds": 73.866,
+      "tokens": {
+        "requests": 8,
+        "input_tokens": 143463,
+        "cached_input_tokens": 113223,
+        "cache_creation_input_tokens": 29512,
+        "output_tokens": 5387,
+        "total_tokens": 148850
+      },
+      "estimated_api_cost_usd": 0.4868665,
+      "claude_cli_version": "2.1.209 (Claude Code)",
+      "claude_cli_version_evidence": "per_sample",
+      "sample": "driver_mvr_packet_001",
+      "transcript": "ocr",
+      "model_key": "claude_opus48",
+      "runtime_version": "2.1.209 (Claude Code)",
+      "output_file": "output/records.json",
+      "dataset_manifest_sha256": "5e40e8e07c58aa8882f1f4308fd338310ab19c65367ba9ab60b71050eb739140",
+      "runner_source_sha256": "36122be55d50132137e23c01867537bc5ee9e8f35490de451ed7eb7522649107",
+      "transcript_sha256": "ba60d8b1ca33844ee36080fcaca906573f429dd542837e7421b4bdad2c729de5",
+      "field_contract_sha256": "17222001ee5fbe17b7e485cd2e5bf6bf34a96ef6098400f3c663f51d359dff26",
+      "prompt_sha256": "d4d6224503679aadb5100becd950ace26409e51d50215d88b128adeae9dd6fa5",
+      "input_fingerprint_sha256": "401523f62bc1c96002b47da2276f6c5d0987d0db1c4fc3e3c7b6ca17f592b9ca",
+      "prediction_sha256": "5d2be1f525f6f85f3125517305ec9449f3eb162ad8fe91c01abdf8363a2061af"
     },
     "mixed_040_001_crosspage": {
       "requested_model": "claude-opus-4-8",
+      "matching_inference_models": [
+        "claude-opus-4-8"
+      ],
       "observed_models": [
         "claude-haiku-4-5-20251001",
         "claude-opus-4-8"
       ],
       "effort": "xhigh",
-      "duration_seconds": 603.268,
+      "duration_seconds": 492.073,
       "tokens": {
-        "requests": 27,
-        "input_tokens": 2588464,
-        "cached_input_tokens": 2405370,
-        "cache_creation_input_tokens": 182328,
-        "output_tokens": 50284,
-        "total_tokens": 2638748
+        "requests": 43,
+        "input_tokens": 2631652,
+        "cached_input_tokens": 2531027,
+        "cache_creation_input_tokens": 99831,
+        "output_tokens": 34272,
+        "total_tokens": 2665924
       },
-      "estimated_api_cost_usd": 3.5999849999999998
-    },
-    "ifta_multisection_return_001": {
-      "requested_model": "claude-opus-4-8",
-      "observed_models": [
-        "claude-haiku-4-5-20251001",
-        "claude-opus-4-8"
-      ],
-      "effort": "xhigh",
-      "duration_seconds": 299.687,
-      "tokens": {
-        "requests": 12,
-        "input_tokens": 763691,
-        "cached_input_tokens": 676233,
-        "cache_creation_input_tokens": 86570,
-        "output_tokens": 24823,
-        "total_tokens": 788514
-      },
-      "estimated_api_cost_usd": 1.5010139999999998
+      "estimated_api_cost_usd": 3.1214135,
+      "claude_cli_version": "2.1.209 (Claude Code)",
+      "claude_cli_version_evidence": "per_sample",
+      "sample": "mixed_040_001_crosspage",
+      "transcript": "ocr",
+      "model_key": "claude_opus48",
+      "runtime_version": "2.1.209 (Claude Code)",
+      "output_file": "output/incidents.json",
+      "dataset_manifest_sha256": "5e40e8e07c58aa8882f1f4308fd338310ab19c65367ba9ab60b71050eb739140",
+      "runner_source_sha256": "36122be55d50132137e23c01867537bc5ee9e8f35490de451ed7eb7522649107",
+      "transcript_sha256": "3fdb42f9bf7813e298fded96af594145293613766c983ea0e13cd281ccdcd10d",
+      "field_contract_sha256": "3d55879048e0bd49aa89a968f18514abdd47e57feb2719cd03e6f1510eb261de",
+      "prompt_sha256": "790dcf3975c7ea2dd4b93f7a5ec3500316cc8f65b877c0188874cf32b1a1be50",
+      "input_fingerprint_sha256": "2fcf726a38445b88e7e4ef7225c5580398dcc8dd60e15f025bb4600bc69dcf38",
+      "prediction_sha256": "ea825ff63b7c32c295bdd9996386744827fed700aa2eefddb9e04c930d1a5fcf"
     },
     "loss_run_external_001": {
       "requested_model": "claude-opus-4-8",
+      "matching_inference_models": [
+        "claude-opus-4-8"
+      ],
       "observed_models": [
         "claude-haiku-4-5-20251001",
         "claude-opus-4-8"
       ],
       "effort": "xhigh",
-      "duration_seconds": 1074.555,
+      "duration_seconds": 317.582,
       "tokens": {
-        "requests": 20,
-        "input_tokens": 2094078,
-        "cached_input_tokens": 1863923,
-        "cache_creation_input_tokens": 229260,
-        "output_tokens": 82480,
-        "total_tokens": 2176558
+        "requests": 24,
+        "input_tokens": 1535705,
+        "cached_input_tokens": 1427342,
+        "cache_creation_input_tokens": 107603,
+        "output_tokens": 25607,
+        "total_tokens": 1561312
       },
-      "estimated_api_cost_usd": 4.4281315
-    },
-    "loss_run_external_002": {
-      "requested_model": "claude-opus-4-8",
-      "observed_models": [
-        "claude-haiku-4-5-20251001",
-        "claude-opus-4-8"
-      ],
-      "effort": "xhigh",
-      "duration_seconds": 940.243,
-      "tokens": {
-        "requests": 14,
-        "input_tokens": 1425980,
-        "cached_input_tokens": 1053878,
-        "cache_creation_input_tokens": 371219,
-        "output_tokens": 97777,
-        "total_tokens": 1523757
-      },
-      "estimated_api_cost_usd": 5.2927177499999996
-    },
-    "driver_mvr_packet_002": {
-      "requested_model": "claude-opus-4-8",
-      "observed_models": [
-        "claude-haiku-4-5-20251001",
-        "claude-opus-4-8"
-      ],
-      "effort": "xhigh",
-      "duration_seconds": 221.618,
-      "tokens": {
-        "requests": 9,
-        "input_tokens": 345708,
-        "cached_input_tokens": 292238,
-        "cache_creation_input_tokens": 52592,
-        "output_tokens": 18274,
-        "total_tokens": 363982
-      },
-      "estimated_api_cost_usd": 0.9328790000000001
+      "estimated_api_cost_usd": 2.430536,
+      "claude_cli_version": "2.1.209 (Claude Code)",
+      "claude_cli_version_evidence": "per_sample",
+      "sample": "loss_run_external_001",
+      "transcript": "ocr",
+      "model_key": "claude_opus48",
+      "runtime_version": "2.1.209 (Claude Code)",
+      "output_file": "output/records.json",
+      "dataset_manifest_sha256": "5e40e8e07c58aa8882f1f4308fd338310ab19c65367ba9ab60b71050eb739140",
+      "runner_source_sha256": "36122be55d50132137e23c01867537bc5ee9e8f35490de451ed7eb7522649107",
+      "transcript_sha256": "73499f2647527be6f2c59fbf67f6a3b81e3aeca4c77b4d1aa39b0211c7dbf5ff",
+      "field_contract_sha256": "927bc932fc6eb81d3306c4ea534f67abddfe59a68899c50610ab3ad350ff2a87",
+      "prompt_sha256": "d4d6224503679aadb5100becd950ace26409e51d50215d88b128adeae9dd6fa5",
+      "input_fingerprint_sha256": "7e9dcb5151c20d4c92437eb30d922557c27e921b87793fc8007ab6f95672c95b",
+      "prediction_sha256": "1deae1470f40e3fae9a12b37856b775e3f1f3deb5f373ea0caa1959077f6ce49"
     },
     "loss_run_external_003": {
       "requested_model": "claude-opus-4-8",
+      "matching_inference_models": [
+        "claude-opus-4-8"
+      ],
       "observed_models": [
         "claude-haiku-4-5-20251001",
         "claude-opus-4-8"
       ],
       "effort": "xhigh",
-      "duration_seconds": 899.662,
+      "duration_seconds": 269.759,
       "tokens": {
-        "requests": 12,
-        "input_tokens": 1284743,
-        "cached_input_tokens": 913953,
-        "cache_creation_input_tokens": 369909,
-        "output_tokens": 93709,
-        "total_tokens": 1378452
+        "requests": 15,
+        "input_tokens": 807595,
+        "cached_input_tokens": 704584,
+        "cache_creation_input_tokens": 101650,
+        "output_tokens": 22127,
+        "total_tokens": 829722
       },
-      "estimated_api_cost_usd": 5.112857750000001
+      "estimated_api_cost_usd": 1.925592,
+      "claude_cli_version": "2.1.209 (Claude Code)",
+      "claude_cli_version_evidence": "per_sample",
+      "sample": "loss_run_external_003",
+      "transcript": "ocr",
+      "model_key": "claude_opus48",
+      "runtime_version": "2.1.209 (Claude Code)",
+      "output_file": "output/records.json",
+      "dataset_manifest_sha256": "5e40e8e07c58aa8882f1f4308fd338310ab19c65367ba9ab60b71050eb739140",
+      "runner_source_sha256": "36122be55d50132137e23c01867537bc5ee9e8f35490de451ed7eb7522649107",
+      "transcript_sha256": "29f6082dbcdd00b5e3a88de16909bc82c2dcca67af525e6607f1e28538ca4287",
+      "field_contract_sha256": "927bc932fc6eb81d3306c4ea534f67abddfe59a68899c50610ab3ad350ff2a87",
+      "prompt_sha256": "d4d6224503679aadb5100becd950ace26409e51d50215d88b128adeae9dd6fa5",
+      "input_fingerprint_sha256": "5baa5bde9827ea9798c2488f2dae3aaa7154ceabb66218450ac2b763568878c4",
+      "prediction_sha256": "bce55d1a54a41eede5cf55ce92fdc2188503eaa6074f038c8e05afa8f9736e19"
     },
-    "driver_schedule_sparse_001": {
+    "loss_run_external_002": {
       "requested_model": "claude-opus-4-8",
+      "matching_inference_models": [
+        "claude-opus-4-8"
+      ],
       "observed_models": [
         "claude-haiku-4-5-20251001",
         "claude-opus-4-8"
       ],
       "effort": "xhigh",
-      "duration_seconds": 120.186,
+      "duration_seconds": 314.405,
       "tokens": {
-        "requests": 11,
-        "input_tokens": 269727,
-        "cached_input_tokens": 239305,
-        "cache_creation_input_tokens": 29688,
-        "output_tokens": 9937,
-        "total_tokens": 279664
+        "requests": 18,
+        "input_tokens": 1176166,
+        "cached_input_tokens": 1069000,
+        "cache_creation_input_tokens": 106416,
+        "output_tokens": 24844,
+        "total_tokens": 1201010
       },
-      "estimated_api_cost_usd": 0.5541174999999999
+      "estimated_api_cost_usd": 2.22031,
+      "claude_cli_version": "2.1.209 (Claude Code)",
+      "claude_cli_version_evidence": "per_sample",
+      "sample": "loss_run_external_002",
+      "transcript": "ocr",
+      "model_key": "claude_opus48",
+      "runtime_version": "2.1.209 (Claude Code)",
+      "output_file": "output/records.json",
+      "dataset_manifest_sha256": "5e40e8e07c58aa8882f1f4308fd338310ab19c65367ba9ab60b71050eb739140",
+      "runner_source_sha256": "36122be55d50132137e23c01867537bc5ee9e8f35490de451ed7eb7522649107",
+      "transcript_sha256": "af70275d47abefdf1a633e357563ead8e457dc54501017876e05ddf2dcc3034b",
+      "field_contract_sha256": "927bc932fc6eb81d3306c4ea534f67abddfe59a68899c50610ab3ad350ff2a87",
+      "prompt_sha256": "d4d6224503679aadb5100becd950ace26409e51d50215d88b128adeae9dd6fa5",
+      "input_fingerprint_sha256": "aecd544c6479a398323d75ba18a14e19fc34dc3384e87c223ad256e532abd32c",
+      "prediction_sha256": "c0c1d229e72a1974ca5a2daff32b41033aa42b587b7dfed2b69480364cc0c73f"
     },
-    "driver_mvr_packet_003": {
+    "ifta_multisection_return_001": {
       "requested_model": "claude-opus-4-8",
+      "matching_inference_models": [
+        "claude-opus-4-8"
+      ],
       "observed_models": [
         "claude-haiku-4-5-20251001",
         "claude-opus-4-8"
       ],
       "effort": "xhigh",
-      "duration_seconds": 146.13,
+      "duration_seconds": 188.626,
       "tokens": {
-        "requests": 9,
-        "input_tokens": 322643,
-        "cached_input_tokens": 273878,
-        "cache_creation_input_tokens": 47886,
-        "output_tokens": 12546,
-        "total_tokens": 335189
+        "requests": 20,
+        "input_tokens": 499078,
+        "cached_input_tokens": 461185,
+        "cache_creation_input_tokens": 37141,
+        "output_tokens": 13017,
+        "total_tokens": 512095
       },
-      "estimated_api_cost_usd": 0.7510915
-    },
-    "ifta_multisection_return_002": {
-      "requested_model": "claude-opus-4-8",
-      "observed_models": [
-        "claude-haiku-4-5-20251001",
-        "claude-opus-4-8"
-      ],
-      "effort": "xhigh",
-      "duration_seconds": 434.078,
-      "tokens": {
-        "requests": 26,
-        "input_tokens": 1789139,
-        "cached_input_tokens": 1669155,
-        "cache_creation_input_tokens": 119222,
-        "output_tokens": 32113,
-        "total_tokens": 1821252
-      },
-      "estimated_api_cost_usd": 2.38317
+      "estimated_api_cost_usd": 0.9279875,
+      "claude_cli_version": "2.1.209 (Claude Code)",
+      "claude_cli_version_evidence": "per_sample",
+      "sample": "ifta_multisection_return_001",
+      "transcript": "ocr",
+      "model_key": "claude_opus48",
+      "runtime_version": "2.1.209 (Claude Code)",
+      "output_file": "output/records.json",
+      "dataset_manifest_sha256": "5e40e8e07c58aa8882f1f4308fd338310ab19c65367ba9ab60b71050eb739140",
+      "runner_source_sha256": "36122be55d50132137e23c01867537bc5ee9e8f35490de451ed7eb7522649107",
+      "transcript_sha256": "0fe523c5a396df0d6f707d5361f80aea5a14fe6bd6846ef7b23a04b9d84af47d",
+      "field_contract_sha256": "e98a4bd4d638f9b1d8229414462195f724ca462e2cd5122dbd9010032e73a541",
+      "prompt_sha256": "d4d6224503679aadb5100becd950ace26409e51d50215d88b128adeae9dd6fa5",
+      "input_fingerprint_sha256": "37f6ccb4aaf04aa4714b490a21926b11a9c3e3afc049bb2e31280d88c0ba8877",
+      "prediction_sha256": "13d5c4b85540dc26e32aea3cfaef0bc27a13b3acaab4c0e77f6e569654a467f0"
     },
     "multihop_bop_012_001": {
       "requested_model": "claude-opus-4-8",
+      "matching_inference_models": [
+        "claude-opus-4-8"
+      ],
       "observed_models": [
         "claude-haiku-4-5-20251001",
         "claude-opus-4-8"
       ],
       "effort": "xhigh",
-      "duration_seconds": 1120.077,
+      "duration_seconds": 340.209,
       "tokens": {
-        "requests": 35,
-        "input_tokens": 3747583,
-        "cached_input_tokens": 3568420,
-        "cache_creation_input_tokens": 178383,
-        "output_tokens": 90354,
-        "total_tokens": 3837937
+        "requests": 29,
+        "input_tokens": 1500094,
+        "cached_input_tokens": 1409243,
+        "cache_creation_input_tokens": 90087,
+        "output_tokens": 26428,
+        "total_tokens": 1526522
       },
-      "estimated_api_cost_usd": 5.15867375
+      "estimated_api_cost_usd": 2.2668315000000003,
+      "claude_cli_version": "2.1.209 (Claude Code)",
+      "claude_cli_version_evidence": "per_sample",
+      "sample": "multihop_bop_012_001",
+      "transcript": "ocr",
+      "model_key": "claude_opus48",
+      "runtime_version": "2.1.209 (Claude Code)",
+      "output_file": "output/records.json",
+      "dataset_manifest_sha256": "5e40e8e07c58aa8882f1f4308fd338310ab19c65367ba9ab60b71050eb739140",
+      "runner_source_sha256": "36122be55d50132137e23c01867537bc5ee9e8f35490de451ed7eb7522649107",
+      "transcript_sha256": "df253c05bab57c84e279045563f12dea9e3c2d2bda5955121bb406918ac1430b",
+      "field_contract_sha256": "47e141543e14b2ce0bdc6de452b760462bd6e96b153f39063045879d0ff548ed",
+      "prompt_sha256": "d4d6224503679aadb5100becd950ace26409e51d50215d88b128adeae9dd6fa5",
+      "input_fingerprint_sha256": "40c124bdda5adfc12f5af8a726e531d65fbf89c998409d503524baf29346d203",
+      "prediction_sha256": "606eafe046e72f288c45c548e9056ed770e087c0da7385d6e60c06db302196ef"
+    },
+    "ifta_multisection_return_002": {
+      "requested_model": "claude-opus-4-8",
+      "matching_inference_models": [
+        "claude-opus-4-8"
+      ],
+      "observed_models": [
+        "claude-haiku-4-5-20251001",
+        "claude-opus-4-8"
+      ],
+      "effort": "xhigh",
+      "duration_seconds": 235.721,
+      "tokens": {
+        "requests": 17,
+        "input_tokens": 393061,
+        "cached_input_tokens": 352687,
+        "cache_creation_input_tokens": 39630,
+        "output_tokens": 17559,
+        "total_tokens": 410620
+      },
+      "estimated_api_cost_usd": 1.0121585,
+      "claude_cli_version": "2.1.209 (Claude Code)",
+      "claude_cli_version_evidence": "per_sample",
+      "sample": "ifta_multisection_return_002",
+      "transcript": "ocr",
+      "model_key": "claude_opus48",
+      "runtime_version": "2.1.209 (Claude Code)",
+      "output_file": "output/records.json",
+      "dataset_manifest_sha256": "5e40e8e07c58aa8882f1f4308fd338310ab19c65367ba9ab60b71050eb739140",
+      "runner_source_sha256": "36122be55d50132137e23c01867537bc5ee9e8f35490de451ed7eb7522649107",
+      "transcript_sha256": "871048b6e5fe632666602920d86c8ace60481fd42d05dddd4d9d6c25c0ddfe2d",
+      "field_contract_sha256": "e98a4bd4d638f9b1d8229414462195f724ca462e2cd5122dbd9010032e73a541",
+      "prompt_sha256": "d4d6224503679aadb5100becd950ace26409e51d50215d88b128adeae9dd6fa5",
+      "input_fingerprint_sha256": "88cf9b6655e99df8a8e745adaa00e7c4f8599ccff58f00d6f1ab307d05ea188a",
+      "prediction_sha256": "b0bd7333bbc7fc3db05258af6b646a2daeaa34f10f9fa4c8126a10431cd78237"
+    },
+    "driver_mvr_packet_002": {
+      "requested_model": "claude-opus-4-8",
+      "matching_inference_models": [
+        "claude-opus-4-8"
+      ],
+      "observed_models": [
+        "claude-haiku-4-5-20251001",
+        "claude-opus-4-8"
+      ],
+      "effort": "xhigh",
+      "duration_seconds": 101.545,
+      "tokens": {
+        "requests": 15,
+        "input_tokens": 270740,
+        "cached_input_tokens": 242922,
+        "cache_creation_input_tokens": 27078,
+        "output_tokens": 7205,
+        "total_tokens": 277945
+      },
+      "estimated_api_cost_usd": 0.572886,
+      "claude_cli_version": "2.1.209 (Claude Code)",
+      "claude_cli_version_evidence": "per_sample",
+      "sample": "driver_mvr_packet_002",
+      "transcript": "ocr",
+      "model_key": "claude_opus48",
+      "runtime_version": "2.1.209 (Claude Code)",
+      "output_file": "output/records.json",
+      "dataset_manifest_sha256": "5e40e8e07c58aa8882f1f4308fd338310ab19c65367ba9ab60b71050eb739140",
+      "runner_source_sha256": "36122be55d50132137e23c01867537bc5ee9e8f35490de451ed7eb7522649107",
+      "transcript_sha256": "dccaddc7f89ef5d2ff7b0c889329aa9a670f1070944248d8ba599134503319f0",
+      "field_contract_sha256": "17222001ee5fbe17b7e485cd2e5bf6bf34a96ef6098400f3c663f51d359dff26",
+      "prompt_sha256": "d4d6224503679aadb5100becd950ace26409e51d50215d88b128adeae9dd6fa5",
+      "input_fingerprint_sha256": "5ffe79164c38729ffb10a3011a6779f7ce2fa147a2b34ccea0ee2b1c0a5e8419",
+      "prediction_sha256": "5ec89e81c72cd1fc596737243271fbbbb857ee4b489389f5c6e2f37f1dbbd476"
+    },
+    "driver_mvr_packet_003": {
+      "requested_model": "claude-opus-4-8",
+      "matching_inference_models": [
+        "claude-opus-4-8"
+      ],
+      "observed_models": [
+        "claude-haiku-4-5-20251001",
+        "claude-opus-4-8"
+      ],
+      "effort": "xhigh",
+      "duration_seconds": 99.792,
+      "tokens": {
+        "requests": 10,
+        "input_tokens": 273241,
+        "cached_input_tokens": 226968,
+        "cache_creation_input_tokens": 45541,
+        "output_tokens": 7485,
+        "total_tokens": 280726
+      },
+      "estimated_api_cost_usd": 0.756499,
+      "claude_cli_version": "2.1.209 (Claude Code)",
+      "claude_cli_version_evidence": "per_sample",
+      "sample": "driver_mvr_packet_003",
+      "transcript": "ocr",
+      "model_key": "claude_opus48",
+      "runtime_version": "2.1.209 (Claude Code)",
+      "output_file": "output/records.json",
+      "dataset_manifest_sha256": "5e40e8e07c58aa8882f1f4308fd338310ab19c65367ba9ab60b71050eb739140",
+      "runner_source_sha256": "36122be55d50132137e23c01867537bc5ee9e8f35490de451ed7eb7522649107",
+      "transcript_sha256": "ca8541a9983a7df8564f262cfe169b8316e06a9ea3512de7dc5a51943ea77386",
+      "field_contract_sha256": "17222001ee5fbe17b7e485cd2e5bf6bf34a96ef6098400f3c663f51d359dff26",
+      "prompt_sha256": "d4d6224503679aadb5100becd950ace26409e51d50215d88b128adeae9dd6fa5",
+      "input_fingerprint_sha256": "bfa199695f81910f7509eed2071e7ab1ad5fadb1359e96f60163aed4fcf88d37",
+      "prediction_sha256": "af5468bb1f0ede4f0bc121ef8c20303194523787f131312ee8c88b1aa186e869"
+    },
+    "driver_schedule_sparse_001": {
+      "requested_model": "claude-opus-4-8",
+      "matching_inference_models": [
+        "claude-opus-4-8"
+      ],
+      "observed_models": [
+        "claude-haiku-4-5-20251001",
+        "claude-opus-4-8"
+      ],
+      "effort": "xhigh",
+      "duration_seconds": 50.433,
+      "tokens": {
+        "requests": 8,
+        "input_tokens": 144506,
+        "cached_input_tokens": 114348,
+        "cache_creation_input_tokens": 29430,
+        "output_tokens": 4103,
+        "total_tokens": 148609
+      },
+      "estimated_api_cost_usd": 0.45450899999999994,
+      "claude_cli_version": "2.1.209 (Claude Code)",
+      "claude_cli_version_evidence": "per_sample",
+      "sample": "driver_schedule_sparse_001",
+      "transcript": "ocr",
+      "model_key": "claude_opus48",
+      "runtime_version": "2.1.209 (Claude Code)",
+      "output_file": "output/records.json",
+      "dataset_manifest_sha256": "5e40e8e07c58aa8882f1f4308fd338310ab19c65367ba9ab60b71050eb739140",
+      "runner_source_sha256": "36122be55d50132137e23c01867537bc5ee9e8f35490de451ed7eb7522649107",
+      "transcript_sha256": "ad00571521fcf09685d622d9149bd5c2e1158ac291986b915ec913fbba6c5a54",
+      "field_contract_sha256": "4f33cdfb3279367a5f36959a0e389899dd3aa821b3a1bd9fed4cc3b727876bc2",
+      "prompt_sha256": "d4d6224503679aadb5100becd950ace26409e51d50215d88b128adeae9dd6fa5",
+      "input_fingerprint_sha256": "768feea70ade045552e80c93ec78d27715593d66a2787ee911062255ff4638be",
+      "prediction_sha256": "3161e5661f4f2f309c2fef83efd57adcf68eddf15a0d532f193a6765f6ca7c0b"
     },
     "multihop_wc_025_001": {
       "requested_model": "claude-opus-4-8",
+      "matching_inference_models": [
+        "claude-opus-4-8"
+      ],
       "observed_models": [
         "claude-haiku-4-5-20251001",
         "claude-opus-4-8"
       ],
       "effort": "xhigh",
-      "duration_seconds": 919.653,
+      "duration_seconds": 1143.495,
       "tokens": {
-        "requests": 39,
-        "input_tokens": 4485418,
-        "cached_input_tokens": 4208164,
-        "cache_creation_input_tokens": 276466,
-        "output_tokens": 72982,
-        "total_tokens": 4558400
+        "requests": 57,
+        "input_tokens": 4576256,
+        "cached_input_tokens": 4431313,
+        "cache_creation_input_tokens": 144129,
+        "output_tokens": 91461,
+        "total_tokens": 4667717
       },
-      "estimated_api_cost_usd": 5.6573045
-    },
-    "ifta_tax_inquiry_001": {
-      "requested_model": "claude-opus-4-8",
-      "observed_models": [
-        "claude-haiku-4-5-20251001",
-        "claude-opus-4-8"
-      ],
-      "effort": "xhigh",
-      "duration_seconds": 512.465,
-      "tokens": {
-        "requests": 12,
-        "input_tokens": 608165,
-        "cached_input_tokens": 538403,
-        "cache_creation_input_tokens": 69026,
-        "output_tokens": 41396,
-        "total_tokens": 649561
-      },
-      "estimated_api_cost_usd": 1.7360539999999998
-    },
-    "ifta_tax_inquiry_002": {
-      "requested_model": "claude-opus-4-8",
-      "observed_models": [
-        "claude-haiku-4-5-20251001",
-        "claude-opus-4-8"
-      ],
-      "effort": "xhigh",
-      "duration_seconds": 375.925,
-      "tokens": {
-        "requests": 12,
-        "input_tokens": 574297,
-        "cached_input_tokens": 511877,
-        "cache_creation_input_tokens": 60452,
-        "output_tokens": 29977,
-        "total_tokens": 604274
-      },
-      "estimated_api_cost_usd": 1.3898485
-    },
-    "ifta_tax_summary_001": {
-      "requested_model": "claude-opus-4-8",
-      "observed_models": [
-        "claude-haiku-4-5-20251001",
-        "claude-opus-4-8"
-      ],
-      "effort": "xhigh",
-      "duration_seconds": 354.115,
-      "tokens": {
-        "requests": 12,
-        "input_tokens": 894053,
-        "cached_input_tokens": 788992,
-        "cache_creation_input_tokens": 104175,
-        "output_tokens": 30365,
-        "total_tokens": 924418
-      },
-      "estimated_api_cost_usd": 1.8059647500000002
+      "estimated_api_cost_usd": 5.86785775,
+      "claude_cli_version": "2.1.209 (Claude Code)",
+      "claude_cli_version_evidence": "per_sample",
+      "sample": "multihop_wc_025_001",
+      "transcript": "ocr",
+      "model_key": "claude_opus48",
+      "runtime_version": "2.1.209 (Claude Code)",
+      "output_file": "output/records.json",
+      "dataset_manifest_sha256": "5e40e8e07c58aa8882f1f4308fd338310ab19c65367ba9ab60b71050eb739140",
+      "runner_source_sha256": "36122be55d50132137e23c01867537bc5ee9e8f35490de451ed7eb7522649107",
+      "transcript_sha256": "f7bdd7bd52f2c817ae4a454ed3e6448dfe76033df1d0e48278de6c2c5130c0e4",
+      "field_contract_sha256": "64ad571c8f5bee9ab4e6bdd6d6e03809af0962e4a260c29b99125ee5cfb54c1e",
+      "prompt_sha256": "d4d6224503679aadb5100becd950ace26409e51d50215d88b128adeae9dd6fa5",
+      "input_fingerprint_sha256": "79961120fa6fea025c366f0683f47c379463fccecd63d4172d82836e4ed1b979",
+      "prediction_sha256": "0f6ab0286d88f1f3bbaeee7c0e358b1953aeb63255bfbcee63debe8e786d1415"
     },
     "ifta_return_schedule_001": {
       "requested_model": "claude-opus-4-8",
+      "matching_inference_models": [
+        "claude-opus-4-8"
+      ],
       "observed_models": [
         "claude-haiku-4-5-20251001",
         "claude-opus-4-8"
       ],
       "effort": "xhigh",
-      "duration_seconds": 1492.791,
+      "duration_seconds": 87.595,
       "tokens": {
-        "requests": 38,
-        "input_tokens": 5501863,
-        "cached_input_tokens": 5121576,
-        "cache_creation_input_tokens": 375328,
-        "output_tokens": 114036,
-        "total_tokens": 5615899
+        "requests": 11,
+        "input_tokens": 382233,
+        "cached_input_tokens": 329948,
+        "cache_creation_input_tokens": 51549,
+        "output_tokens": 6282,
+        "total_tokens": 388515
       },
-      "estimated_api_cost_usd": 7.779103
+      "estimated_api_cost_usd": 0.6528465,
+      "claude_cli_version": "2.1.209 (Claude Code)",
+      "claude_cli_version_evidence": "per_sample",
+      "sample": "ifta_return_schedule_001",
+      "transcript": "ocr",
+      "model_key": "claude_opus48",
+      "runtime_version": "2.1.209 (Claude Code)",
+      "output_file": "output/records.json",
+      "dataset_manifest_sha256": "5e40e8e07c58aa8882f1f4308fd338310ab19c65367ba9ab60b71050eb739140",
+      "runner_source_sha256": "36122be55d50132137e23c01867537bc5ee9e8f35490de451ed7eb7522649107",
+      "transcript_sha256": "a724758f1cdd02612cbef9791d057fab963a70f609c327d3c9574bb2f6000b0c",
+      "field_contract_sha256": "2301bde2f5bb697683e09873e61d46b748b55f501887bd5ad25dc9f6979b593c",
+      "prompt_sha256": "d4d6224503679aadb5100becd950ace26409e51d50215d88b128adeae9dd6fa5",
+      "input_fingerprint_sha256": "ab8f25d30cb6e6cee23a3bd12d49148eeaa42306f5f88bd54b7810b6f9f14687",
+      "prediction_sha256": "cee93771a670eac723734d10ce142179f4c5d0f1e1bdb7682c7423addd06aea1"
     },
-    "mixed_cgl_040_001": {
+    "ifta_tax_inquiry_001": {
       "requested_model": "claude-opus-4-8",
+      "matching_inference_models": [
+        "claude-opus-4-8"
+      ],
       "observed_models": [
         "claude-haiku-4-5-20251001",
         "claude-opus-4-8"
       ],
       "effort": "xhigh",
-      "duration_seconds": 1710.446,
+      "duration_seconds": 59.22,
       "tokens": {
-        "requests": 46,
-        "input_tokens": 7131276,
-        "cached_input_tokens": 6878571,
-        "cache_creation_input_tokens": 251903,
-        "output_tokens": 130372,
-        "total_tokens": 7261648
+        "requests": 8,
+        "input_tokens": 144549,
+        "cached_input_tokens": 114304,
+        "cache_creation_input_tokens": 29517,
+        "output_tokens": 4480,
+        "total_tokens": 149029
       },
-      "estimated_api_cost_usd": 8.273829250000002
+      "estimated_api_cost_usd": 0.36223450000000007,
+      "claude_cli_version": "2.1.209 (Claude Code)",
+      "claude_cli_version_evidence": "per_sample",
+      "sample": "ifta_tax_inquiry_001",
+      "transcript": "ocr",
+      "model_key": "claude_opus48",
+      "runtime_version": "2.1.209 (Claude Code)",
+      "output_file": "output/records.json",
+      "dataset_manifest_sha256": "5e40e8e07c58aa8882f1f4308fd338310ab19c65367ba9ab60b71050eb739140",
+      "runner_source_sha256": "36122be55d50132137e23c01867537bc5ee9e8f35490de451ed7eb7522649107",
+      "transcript_sha256": "53cfb64fba554317370b0d062142da0b2e3d409f3021149a9a3f890905a41bdc",
+      "field_contract_sha256": "d9539f1b2b7fb73090b975aadad45fe1e9c7aed03480ab6ef7856a19a4bf9ae2",
+      "prompt_sha256": "d4d6224503679aadb5100becd950ace26409e51d50215d88b128adeae9dd6fa5",
+      "input_fingerprint_sha256": "bbb007bcfe8cf992b89e6a58e738ed89ff79d01ed5f8abe3cc16f6fc5b0620f5",
+      "prediction_sha256": "e16a493d137389e8f9c96eafbb9c015117c4bd083e1a18d4125b94f41dff667b"
+    },
+    "ifta_tax_inquiry_002": {
+      "requested_model": "claude-opus-4-8",
+      "matching_inference_models": [
+        "claude-opus-4-8"
+      ],
+      "observed_models": [
+        "claude-haiku-4-5-20251001",
+        "claude-opus-4-8"
+      ],
+      "effort": "xhigh",
+      "duration_seconds": 86.735,
+      "tokens": {
+        "requests": 7,
+        "input_tokens": 148413,
+        "cached_input_tokens": 116468,
+        "cache_creation_input_tokens": 31217,
+        "output_tokens": 6622,
+        "total_tokens": 155035
+      },
+      "estimated_api_cost_usd": 0.42755525,
+      "claude_cli_version": "2.1.209 (Claude Code)",
+      "claude_cli_version_evidence": "per_sample",
+      "sample": "ifta_tax_inquiry_002",
+      "transcript": "ocr",
+      "model_key": "claude_opus48",
+      "runtime_version": "2.1.209 (Claude Code)",
+      "output_file": "output/records.json",
+      "dataset_manifest_sha256": "5e40e8e07c58aa8882f1f4308fd338310ab19c65367ba9ab60b71050eb739140",
+      "runner_source_sha256": "36122be55d50132137e23c01867537bc5ee9e8f35490de451ed7eb7522649107",
+      "transcript_sha256": "f87779c1ed50b23596cbf8a1a0b0cc06ad8691502d8a04aa41229db69eff81cb",
+      "field_contract_sha256": "d9539f1b2b7fb73090b975aadad45fe1e9c7aed03480ab6ef7856a19a4bf9ae2",
+      "prompt_sha256": "d4d6224503679aadb5100becd950ace26409e51d50215d88b128adeae9dd6fa5",
+      "input_fingerprint_sha256": "8e895c7e5e6b5f46608e991d1337e1f0940790a96638d142c06eae765579c7f2",
+      "prediction_sha256": "14475266ee95a2896561e7d36efbb54966ec44fd75646f780c43a6cf6b87f862"
+    },
+    "ifta_tax_summary_001": {
+      "requested_model": "claude-opus-4-8",
+      "matching_inference_models": [
+        "claude-opus-4-8"
+      ],
+      "observed_models": [
+        "claude-haiku-4-5-20251001",
+        "claude-opus-4-8"
+      ],
+      "effort": "xhigh",
+      "duration_seconds": 74.502,
+      "tokens": {
+        "requests": 11,
+        "input_tokens": 490100,
+        "cached_input_tokens": 425069,
+        "cache_creation_input_tokens": 64295,
+        "output_tokens": 5110,
+        "total_tokens": 495210
+      },
+      "estimated_api_cost_usd": 0.7507657500000001,
+      "claude_cli_version": "2.1.209 (Claude Code)",
+      "claude_cli_version_evidence": "per_sample",
+      "sample": "ifta_tax_summary_001",
+      "transcript": "ocr",
+      "model_key": "claude_opus48",
+      "runtime_version": "2.1.209 (Claude Code)",
+      "output_file": "output/records.json",
+      "dataset_manifest_sha256": "5e40e8e07c58aa8882f1f4308fd338310ab19c65367ba9ab60b71050eb739140",
+      "runner_source_sha256": "36122be55d50132137e23c01867537bc5ee9e8f35490de451ed7eb7522649107",
+      "transcript_sha256": "e150d4ce1d652402321592ac6297e6912a695160576643e013b52f23ae42ddca",
+      "field_contract_sha256": "6faec490cd38883dcbc7c0f0c033ff34290a7fa231d1ed489e49f26ebb270ba1",
+      "prompt_sha256": "d4d6224503679aadb5100becd950ace26409e51d50215d88b128adeae9dd6fa5",
+      "input_fingerprint_sha256": "9dd40e776555ec53b937c14dd0421c315259fce2cee4fad81ae0bff95b64149d",
+      "prediction_sha256": "c414e8d486cac43ae2c5397ae5ea2d1b734f981efb9c649d59a100dc31e2ff08"
     },
     "ifta_tax_summary_002": {
       "requested_model": "claude-opus-4-8",
+      "matching_inference_models": [
+        "claude-opus-4-8"
+      ],
       "observed_models": [
         "claude-haiku-4-5-20251001",
         "claude-opus-4-8"
       ],
       "effort": "xhigh",
-      "duration_seconds": 507.385,
+      "duration_seconds": 116.081,
       "tokens": {
-        "requests": 18,
-        "input_tokens": 1495512,
-        "cached_input_tokens": 1377870,
-        "cache_creation_input_tokens": 116745,
-        "output_tokens": 42449,
-        "total_tokens": 1537961
+        "requests": 12,
+        "input_tokens": 260112,
+        "cached_input_tokens": 228909,
+        "cache_creation_input_tokens": 30465,
+        "output_tokens": 8818,
+        "total_tokens": 268930
       },
-      "estimated_api_cost_usd": 2.48112125
+      "estimated_api_cost_usd": 0.5339470000000001,
+      "claude_cli_version": "2.1.209 (Claude Code)",
+      "claude_cli_version_evidence": "per_sample",
+      "sample": "ifta_tax_summary_002",
+      "transcript": "ocr",
+      "model_key": "claude_opus48",
+      "runtime_version": "2.1.209 (Claude Code)",
+      "output_file": "output/records.json",
+      "dataset_manifest_sha256": "5e40e8e07c58aa8882f1f4308fd338310ab19c65367ba9ab60b71050eb739140",
+      "runner_source_sha256": "36122be55d50132137e23c01867537bc5ee9e8f35490de451ed7eb7522649107",
+      "transcript_sha256": "841fb147f746ca9dfc98825e0545ae013a5b4df3219e3a40b090e08bc1d7fb16",
+      "field_contract_sha256": "6faec490cd38883dcbc7c0f0c033ff34290a7fa231d1ed489e49f26ebb270ba1",
+      "prompt_sha256": "d4d6224503679aadb5100becd950ace26409e51d50215d88b128adeae9dd6fa5",
+      "input_fingerprint_sha256": "b230eb199f39376ca678e9ffedcc65757b2f99996f9085668ec08c140b1543c8",
+      "prediction_sha256": "74f9ad17c64e206cd04a3eea0c495ad5e9a0d52570b6658781c8d60177dfc9e6"
     },
-    "ifta_tax_summary_003": {
+    "mixed_cgl_040_001": {
       "requested_model": "claude-opus-4-8",
+      "matching_inference_models": [
+        "claude-opus-4-8"
+      ],
       "observed_models": [
         "claude-haiku-4-5-20251001",
         "claude-opus-4-8"
       ],
       "effort": "xhigh",
-      "duration_seconds": 620.584,
+      "duration_seconds": 928.305,
       "tokens": {
-        "requests": 22,
-        "input_tokens": 2125469,
-        "cached_input_tokens": 1997812,
-        "cache_creation_input_tokens": 126752,
-        "output_tokens": 49359,
-        "total_tokens": 2174828
+        "requests": 60,
+        "input_tokens": 4999731,
+        "cached_input_tokens": 4853124,
+        "cache_creation_input_tokens": 145779,
+        "output_tokens": 69946,
+        "total_tokens": 5069677
       },
-      "estimated_api_cost_usd": 3.026426
+      "estimated_api_cost_usd": 5.34340075,
+      "claude_cli_version": "2.1.209 (Claude Code)",
+      "claude_cli_version_evidence": "per_sample",
+      "sample": "mixed_cgl_040_001",
+      "transcript": "ocr",
+      "model_key": "claude_opus48",
+      "runtime_version": "2.1.209 (Claude Code)",
+      "output_file": "output/records.json",
+      "dataset_manifest_sha256": "5e40e8e07c58aa8882f1f4308fd338310ab19c65367ba9ab60b71050eb739140",
+      "runner_source_sha256": "36122be55d50132137e23c01867537bc5ee9e8f35490de451ed7eb7522649107",
+      "transcript_sha256": "87946824c605948a342c79d2fcb108b6069c4b77a5da44eaac406a06ef0d0e1d",
+      "field_contract_sha256": "39a5e031c30ba7bb11ae9b1a4aadd4340bc7ef0a7a16773c87dace4a8ee7ff94",
+      "prompt_sha256": "d4d6224503679aadb5100becd950ace26409e51d50215d88b128adeae9dd6fa5",
+      "input_fingerprint_sha256": "5a215a5234c7ee56124825dc1552262a2ad11f4ef78686a17b66760940d843a0",
+      "prediction_sha256": "dda1a37e1d133be9ebe94016de64688a2f350a4ab5880f028cc9b133b0e80cec"
     },
     "vehicle_schedule_sparse_001": {
       "requested_model": "claude-opus-4-8",
+      "matching_inference_models": [
+        "claude-opus-4-8"
+      ],
       "observed_models": [
         "claude-haiku-4-5-20251001",
         "claude-opus-4-8"
       ],
       "effort": "xhigh",
-      "duration_seconds": 431.279,
+      "duration_seconds": 104.029,
       "tokens": {
-        "requests": 10,
-        "input_tokens": 541564,
-        "cached_input_tokens": 423214,
-        "cache_creation_input_tokens": 117466,
-        "output_tokens": 34707,
-        "total_tokens": 576271
+        "requests": 15,
+        "input_tokens": 264520,
+        "cached_input_tokens": 239457,
+        "cache_creation_input_tokens": 24321,
+        "output_tokens": 7022,
+        "total_tokens": 271542
       },
-      "estimated_api_cost_usd": 1.8146844999999996
+      "estimated_api_cost_usd": 0.45595974999999994,
+      "claude_cli_version": "2.1.209 (Claude Code)",
+      "claude_cli_version_evidence": "per_sample",
+      "sample": "vehicle_schedule_sparse_001",
+      "transcript": "ocr",
+      "model_key": "claude_opus48",
+      "runtime_version": "2.1.209 (Claude Code)",
+      "output_file": "output/records.json",
+      "dataset_manifest_sha256": "5e40e8e07c58aa8882f1f4308fd338310ab19c65367ba9ab60b71050eb739140",
+      "runner_source_sha256": "36122be55d50132137e23c01867537bc5ee9e8f35490de451ed7eb7522649107",
+      "transcript_sha256": "d444bb745a82572ed1dd542a39cc2c532006ac01ec3b03f297f7c3ddbcdc5c59",
+      "field_contract_sha256": "fdeea54035b2bc5ac7acf78c46443013a3e464e0d991b49b31a464f5030d6885",
+      "prompt_sha256": "d4d6224503679aadb5100becd950ace26409e51d50215d88b128adeae9dd6fa5",
+      "input_fingerprint_sha256": "4967aed5f4a8b79edc5c35ef8ba517cf75a0b9348bc9f9c89c0a0d4e5b08de94",
+      "prediction_sha256": "da8ddb02a84e1aaee4250c19d71e28abe411a9df7303e6848405be1e925f7927"
     },
     "vehicle_schedule_sparse_002": {
       "requested_model": "claude-opus-4-8",
+      "matching_inference_models": [
+        "claude-opus-4-8"
+      ],
       "observed_models": [
         "claude-haiku-4-5-20251001",
         "claude-opus-4-8"
       ],
       "effort": "xhigh",
-      "duration_seconds": 473.115,
+      "duration_seconds": 138.651,
       "tokens": {
-        "requests": 11,
-        "input_tokens": 616102,
-        "cached_input_tokens": 498275,
-        "cache_creation_input_tokens": 116941,
-        "output_tokens": 37941,
-        "total_tokens": 654043
+        "requests": 19,
+        "input_tokens": 376653,
+        "cached_input_tokens": 344092,
+        "cache_creation_input_tokens": 31813,
+        "output_tokens": 9209,
+        "total_tokens": 385862
       },
-      "estimated_api_cost_usd": 1.92979375
-    },
-    "ifta_return_schedule_003": {
-      "requested_model": "claude-opus-4-8",
-      "observed_models": [
-        "claude-haiku-4-5-20251001",
-        "claude-opus-4-8"
-      ],
-      "effort": "xhigh",
-      "duration_seconds": 1103.898,
-      "tokens": {
-        "requests": 17,
-        "input_tokens": 2346571,
-        "cached_input_tokens": 2031573,
-        "cache_creation_input_tokens": 314102,
-        "output_tokens": 90729,
-        "total_tokens": 2437300
-      },
-      "estimated_api_cost_usd": 5.248449
-    },
-    "ifta_tax_summary_004": {
-      "requested_model": "claude-opus-4-8",
-      "observed_models": [
-        "claude-haiku-4-5-20251001",
-        "claude-opus-4-8"
-      ],
-      "effort": "xhigh",
-      "duration_seconds": 1912.331,
-      "tokens": {
-        "requests": 32,
-        "input_tokens": 4278060,
-        "cached_input_tokens": 3971793,
-        "cache_creation_input_tokens": 305340,
-        "output_tokens": 151084,
-        "total_tokens": 4429144
-      },
-      "estimated_api_cost_usd": 7.672826499999999
+      "estimated_api_cost_usd": 0.609811,
+      "claude_cli_version": "2.1.209 (Claude Code)",
+      "claude_cli_version_evidence": "per_sample",
+      "sample": "vehicle_schedule_sparse_002",
+      "transcript": "ocr",
+      "model_key": "claude_opus48",
+      "runtime_version": "2.1.209 (Claude Code)",
+      "output_file": "output/records.json",
+      "dataset_manifest_sha256": "5e40e8e07c58aa8882f1f4308fd338310ab19c65367ba9ab60b71050eb739140",
+      "runner_source_sha256": "36122be55d50132137e23c01867537bc5ee9e8f35490de451ed7eb7522649107",
+      "transcript_sha256": "9ee3761e56cd73c6438be1551b834d47c479695a9349bbf679ff30e5b2e4f0a7",
+      "field_contract_sha256": "fdeea54035b2bc5ac7acf78c46443013a3e464e0d991b49b31a464f5030d6885",
+      "prompt_sha256": "d4d6224503679aadb5100becd950ace26409e51d50215d88b128adeae9dd6fa5",
+      "input_fingerprint_sha256": "0afa7b6c2e3914c3bf2817ad1650648409341da864c67ab1b851f749d42dc79c",
+      "prediction_sha256": "d76e47ab6fdfedeccc59d24e2ef56a6dc62afeca8665b1794403bd2c9e6bbe51"
     },
     "ifta_return_schedule_002": {
       "requested_model": "claude-opus-4-8",
+      "matching_inference_models": [
+        "claude-opus-4-8"
+      ],
       "observed_models": [
         "claude-haiku-4-5-20251001",
         "claude-opus-4-8"
       ],
       "effort": "xhigh",
-      "duration_seconds": 1668.731,
+      "duration_seconds": 169.949,
       "tokens": {
-        "requests": 35,
-        "input_tokens": 6309449,
-        "cached_input_tokens": 5965993,
-        "cache_creation_input_tokens": 342524,
-        "output_tokens": 132434,
-        "total_tokens": 6441883
+        "requests": 19,
+        "input_tokens": 673142,
+        "cached_input_tokens": 611503,
+        "cache_creation_input_tokens": 60264,
+        "output_tokens": 11809,
+        "total_tokens": 684951
       },
-      "estimated_api_cost_usd": 8.436101499999996
-    },
-    "ifta_mileage_by_vehicle_001": {
-      "requested_model": "claude-opus-4-8",
-      "observed_models": [
-        "claude-haiku-4-5-20251001",
-        "claude-opus-4-8"
-      ],
-      "effort": "xhigh",
-      "duration_seconds": 392.471,
-      "tokens": {
-        "requests": 15,
-        "input_tokens": 1484527,
-        "cached_input_tokens": 1349466,
-        "cache_creation_input_tokens": 134165,
-        "output_tokens": 29639,
-        "total_tokens": 1514166
-      },
-      "estimated_api_cost_usd": 2.25553925
-    },
-    "ifta_return_schedule_004": {
-      "requested_model": "claude-opus-4-8",
-      "observed_models": [
-        "claude-haiku-4-5-20251001",
-        "claude-opus-4-8"
-      ],
-      "effort": "xhigh",
-      "duration_seconds": 1820.405,
-      "tokens": {
-        "requests": 46,
-        "input_tokens": 9070642,
-        "cached_input_tokens": 8701693,
-        "cache_creation_input_tokens": 367995,
-        "output_tokens": 137044,
-        "total_tokens": 9207686
-      },
-      "estimated_api_cost_usd": 10.078505250000001
-    },
-    "ifta_mileage_by_vehicle_002": {
-      "requested_model": "claude-opus-4-8",
-      "observed_models": [
-        "claude-haiku-4-5-20251001",
-        "claude-opus-4-8"
-      ],
-      "effort": "xhigh",
-      "duration_seconds": 673.922,
-      "tokens": {
-        "requests": 22,
-        "input_tokens": 1186676,
-        "cached_input_tokens": 1086845,
-        "cache_creation_input_tokens": 99075,
-        "output_tokens": 48480,
-        "total_tokens": 1235156
-      },
-      "estimated_api_cost_usd": 2.37524125
+      "estimated_api_cost_usd": 0.9894589999999999,
+      "claude_cli_version": "2.1.209 (Claude Code)",
+      "claude_cli_version_evidence": "per_sample",
+      "sample": "ifta_return_schedule_002",
+      "transcript": "ocr",
+      "model_key": "claude_opus48",
+      "runtime_version": "2.1.209 (Claude Code)",
+      "output_file": "output/records.json",
+      "dataset_manifest_sha256": "5e40e8e07c58aa8882f1f4308fd338310ab19c65367ba9ab60b71050eb739140",
+      "runner_source_sha256": "36122be55d50132137e23c01867537bc5ee9e8f35490de451ed7eb7522649107",
+      "transcript_sha256": "4e2553c0752dd7340425fdd1aa55d36e01316d4fd414894931097833775cefd1",
+      "field_contract_sha256": "2301bde2f5bb697683e09873e61d46b748b55f501887bd5ad25dc9f6979b593c",
+      "prompt_sha256": "d4d6224503679aadb5100becd950ace26409e51d50215d88b128adeae9dd6fa5",
+      "input_fingerprint_sha256": "bb79426b0526d3aaeaa1537433514fb28879a8b0419c2b6742197fa2bc932702",
+      "prediction_sha256": "6ffa8993ea89ccbd33d4342880d5f6ecdde978dac3b2098388f67133ded4b937"
     },
     "ifta_return_schedule_005": {
       "requested_model": "claude-opus-4-8",
+      "matching_inference_models": [
+        "claude-opus-4-8"
+      ],
       "observed_models": [
         "claude-haiku-4-5-20251001",
         "claude-opus-4-8"
       ],
       "effort": "xhigh",
-      "duration_seconds": 1300.831,
+      "duration_seconds": 190.24,
       "tokens": {
-        "requests": 22,
-        "input_tokens": 3495976,
-        "cached_input_tokens": 3157085,
-        "cache_creation_input_tokens": 337986,
-        "output_tokens": 96792,
-        "total_tokens": 3592768
+        "requests": 18,
+        "input_tokens": 638447,
+        "cached_input_tokens": 582259,
+        "cache_creation_input_tokens": 55438,
+        "output_tokens": 12524,
+        "total_tokens": 650971
       },
-      "estimated_api_cost_usd": 6.1121
+      "estimated_api_cost_usd": 0.95942075,
+      "claude_cli_version": "2.1.209 (Claude Code)",
+      "claude_cli_version_evidence": "per_sample",
+      "sample": "ifta_return_schedule_005",
+      "transcript": "ocr",
+      "model_key": "claude_opus48",
+      "runtime_version": "2.1.209 (Claude Code)",
+      "output_file": "output/records.json",
+      "dataset_manifest_sha256": "5e40e8e07c58aa8882f1f4308fd338310ab19c65367ba9ab60b71050eb739140",
+      "runner_source_sha256": "36122be55d50132137e23c01867537bc5ee9e8f35490de451ed7eb7522649107",
+      "transcript_sha256": "744c2f169cb83a44264e5c5956fbd09f5509121e225a1325042f952f24cbd5ae",
+      "field_contract_sha256": "2301bde2f5bb697683e09873e61d46b748b55f501887bd5ad25dc9f6979b593c",
+      "prompt_sha256": "d4d6224503679aadb5100becd950ace26409e51d50215d88b128adeae9dd6fa5",
+      "input_fingerprint_sha256": "8c36ffbea6b209e6ad7386e84665c025dd05acd58c6d9919c3f296c701e9cb5e",
+      "prediction_sha256": "1dcbdea51cb5c28f2e3e8fbc8ef0f8e14b8fef945a8548dbeb721b574ff776a4"
+    },
+    "ifta_mileage_by_vehicle_001": {
+      "requested_model": "claude-opus-4-8",
+      "matching_inference_models": [
+        "claude-opus-4-8"
+      ],
+      "observed_models": [
+        "claude-haiku-4-5-20251001",
+        "claude-opus-4-8"
+      ],
+      "effort": "xhigh",
+      "duration_seconds": 197.503,
+      "tokens": {
+        "requests": 10,
+        "input_tokens": 553181,
+        "cached_input_tokens": 475476,
+        "cache_creation_input_tokens": 76973,
+        "output_tokens": 11710,
+        "total_tokens": 564891
+      },
+      "estimated_api_cost_usd": 1.0120892499999998,
+      "claude_cli_version": "2.1.209 (Claude Code)",
+      "claude_cli_version_evidence": "per_sample",
+      "sample": "ifta_mileage_by_vehicle_001",
+      "transcript": "ocr",
+      "model_key": "claude_opus48",
+      "runtime_version": "2.1.209 (Claude Code)",
+      "output_file": "output/records.json",
+      "dataset_manifest_sha256": "5e40e8e07c58aa8882f1f4308fd338310ab19c65367ba9ab60b71050eb739140",
+      "runner_source_sha256": "36122be55d50132137e23c01867537bc5ee9e8f35490de451ed7eb7522649107",
+      "transcript_sha256": "9cf1a9027a9967cf8c91b2a0ed57aea89678b5802b54531628d7812c53201d09",
+      "field_contract_sha256": "d08b3df043b435cdac7ac1c302749185f13890bb37b55689c25352ccb3f8e013",
+      "prompt_sha256": "d4d6224503679aadb5100becd950ace26409e51d50215d88b128adeae9dd6fa5",
+      "input_fingerprint_sha256": "3850b9df17907bdddccc4cdfea04565d66f779e0a23f788c5fe3b3c12e0a1335",
+      "prediction_sha256": "70be409a0266f6c13dbb63b977c2bad420f72bfce9886a9628340e4c79ca0c4b"
+    },
+    "ifta_mileage_by_vehicle_002": {
+      "requested_model": "claude-opus-4-8",
+      "matching_inference_models": [
+        "claude-opus-4-8"
+      ],
+      "observed_models": [
+        "claude-haiku-4-5-20251001",
+        "claude-opus-4-8"
+      ],
+      "effort": "xhigh",
+      "duration_seconds": 316.396,
+      "tokens": {
+        "requests": 23,
+        "input_tokens": 452971,
+        "cached_input_tokens": 415578,
+        "cache_creation_input_tokens": 36645,
+        "output_tokens": 19500,
+        "total_tokens": 472471
+      },
+      "estimated_api_cost_usd": 0.92488025,
+      "claude_cli_version": "2.1.209 (Claude Code)",
+      "claude_cli_version_evidence": "per_sample",
+      "sample": "ifta_mileage_by_vehicle_002",
+      "transcript": "ocr",
+      "model_key": "claude_opus48",
+      "runtime_version": "2.1.209 (Claude Code)",
+      "output_file": "output/records.json",
+      "dataset_manifest_sha256": "5e40e8e07c58aa8882f1f4308fd338310ab19c65367ba9ab60b71050eb739140",
+      "runner_source_sha256": "36122be55d50132137e23c01867537bc5ee9e8f35490de451ed7eb7522649107",
+      "transcript_sha256": "9f053424a87425e635478937007af189a0c7d1dcb660da744df1d7887c6ea261",
+      "field_contract_sha256": "d08b3df043b435cdac7ac1c302749185f13890bb37b55689c25352ccb3f8e013",
+      "prompt_sha256": "d4d6224503679aadb5100becd950ace26409e51d50215d88b128adeae9dd6fa5",
+      "input_fingerprint_sha256": "cba164ca285df104e316ffb1bc7f5e6844ee1306dcbb632fa442428d718d92e0",
+      "prediction_sha256": "42f56b60cc61403187ceedb0dee0c3f463a7bb38ccc0084cd6c3059e4e5e960a"
     },
     "ifta_mileage_by_vehicle_003": {
       "requested_model": "claude-opus-4-8",
+      "matching_inference_models": [
+        "claude-opus-4-8"
+      ],
       "observed_models": [
         "claude-haiku-4-5-20251001",
         "claude-opus-4-8"
       ],
       "effort": "xhigh",
-      "duration_seconds": 807.066,
+      "duration_seconds": 283.8,
       "tokens": {
-        "requests": 30,
-        "input_tokens": 1791743,
-        "cached_input_tokens": 1685129,
-        "cache_creation_input_tokens": 105842,
-        "output_tokens": 58708,
-        "total_tokens": 1850451
+        "requests": 17,
+        "input_tokens": 422653,
+        "cached_input_tokens": 375131,
+        "cache_creation_input_tokens": 46780,
+        "output_tokens": 19076,
+        "total_tokens": 441729
       },
-      "estimated_api_cost_usd": 2.9724569999999995
+      "estimated_api_cost_usd": 0.9573705000000001,
+      "claude_cli_version": "2.1.209 (Claude Code)",
+      "claude_cli_version_evidence": "per_sample",
+      "sample": "ifta_mileage_by_vehicle_003",
+      "transcript": "ocr",
+      "model_key": "claude_opus48",
+      "runtime_version": "2.1.209 (Claude Code)",
+      "output_file": "output/records.json",
+      "dataset_manifest_sha256": "5e40e8e07c58aa8882f1f4308fd338310ab19c65367ba9ab60b71050eb739140",
+      "runner_source_sha256": "36122be55d50132137e23c01867537bc5ee9e8f35490de451ed7eb7522649107",
+      "transcript_sha256": "4a83b97bebab411a2b4cf709da155fe2ca1738f9244781bbd0ba78a1867cf28e",
+      "field_contract_sha256": "d08b3df043b435cdac7ac1c302749185f13890bb37b55689c25352ccb3f8e013",
+      "prompt_sha256": "d4d6224503679aadb5100becd950ace26409e51d50215d88b128adeae9dd6fa5",
+      "input_fingerprint_sha256": "ed61b649821634196f365a50cd01496d199e8fea4502845b53b3d01bb9651e02",
+      "prediction_sha256": "2942bba39137ff20c532a7f6defe751acf5ef3e98178a111882afaa1b29cc4b9"
     },
     "ifta_mileage_by_vehicle_004": {
       "requested_model": "claude-opus-4-8",
+      "matching_inference_models": [
+        "claude-opus-4-8"
+      ],
       "observed_models": [
         "claude-haiku-4-5-20251001",
         "claude-opus-4-8"
       ],
       "effort": "xhigh",
-      "duration_seconds": 736.812,
+      "duration_seconds": 251.912,
       "tokens": {
-        "requests": 37,
-        "input_tokens": 2125123,
-        "cached_input_tokens": 2036472,
-        "cache_creation_input_tokens": 87865,
-        "output_tokens": 51241,
-        "total_tokens": 2176364
+        "requests": 22,
+        "input_tokens": 596209,
+        "cached_input_tokens": 553979,
+        "cache_creation_input_tokens": 41476,
+        "output_tokens": 17220,
+        "total_tokens": 613429
       },
-      "estimated_api_cost_usd": 2.84916725
-    },
-    "ifta_mileage_by_vehicle_005": {
-      "requested_model": "claude-opus-4-8",
-      "observed_models": [
-        "claude-haiku-4-5-20251001",
-        "claude-opus-4-8"
-      ],
-      "effort": "xhigh",
-      "duration_seconds": 558.891,
-      "tokens": {
-        "requests": 27,
-        "input_tokens": 991333,
-        "cached_input_tokens": 916479,
-        "cache_creation_input_tokens": 74100,
-        "output_tokens": 39629,
-        "total_tokens": 1030962
-      },
-      "estimated_api_cost_usd": 1.9126794999999996
+      "estimated_api_cost_usd": 0.9672845,
+      "claude_cli_version": "2.1.209 (Claude Code)",
+      "claude_cli_version_evidence": "per_sample",
+      "sample": "ifta_mileage_by_vehicle_004",
+      "transcript": "ocr",
+      "model_key": "claude_opus48",
+      "runtime_version": "2.1.209 (Claude Code)",
+      "output_file": "output/records.json",
+      "dataset_manifest_sha256": "5e40e8e07c58aa8882f1f4308fd338310ab19c65367ba9ab60b71050eb739140",
+      "runner_source_sha256": "36122be55d50132137e23c01867537bc5ee9e8f35490de451ed7eb7522649107",
+      "transcript_sha256": "0e56ce488af7a4ab82e735c928cf21493ab6359cfe3fa7dcdac19204dc1d3fd9",
+      "field_contract_sha256": "d08b3df043b435cdac7ac1c302749185f13890bb37b55689c25352ccb3f8e013",
+      "prompt_sha256": "d4d6224503679aadb5100becd950ace26409e51d50215d88b128adeae9dd6fa5",
+      "input_fingerprint_sha256": "4badb076141288e0cdd4ef2d6089c0e3b63614272ffc3550667d002a65b80512",
+      "prediction_sha256": "61b8d6be9789ea078fb2a85e80ec6f00f99115deee909810dc032a053192f07e"
     },
     "ifta_mileage_by_vehicle_006": {
       "requested_model": "claude-opus-4-8",
+      "matching_inference_models": [
+        "claude-opus-4-8"
+      ],
       "observed_models": [
         "claude-haiku-4-5-20251001",
         "claude-opus-4-8"
       ],
       "effort": "xhigh",
-      "duration_seconds": 630.334,
+      "duration_seconds": 230.604,
       "tokens": {
-        "requests": 26,
-        "input_tokens": 1348975,
-        "cached_input_tokens": 1257926,
-        "cache_creation_input_tokens": 90285,
-        "output_tokens": 45945,
-        "total_tokens": 1394920
+        "requests": 18,
+        "input_tokens": 389698,
+        "cached_input_tokens": 350596,
+        "cache_creation_input_tokens": 38360,
+        "output_tokens": 17263,
+        "total_tokens": 406961
       },
-      "estimated_api_cost_usd": 2.34250925
+      "estimated_api_cost_usd": 0.847153,
+      "claude_cli_version": "2.1.209 (Claude Code)",
+      "claude_cli_version_evidence": "per_sample",
+      "sample": "ifta_mileage_by_vehicle_006",
+      "transcript": "ocr",
+      "model_key": "claude_opus48",
+      "runtime_version": "2.1.209 (Claude Code)",
+      "output_file": "output/records.json",
+      "dataset_manifest_sha256": "5e40e8e07c58aa8882f1f4308fd338310ab19c65367ba9ab60b71050eb739140",
+      "runner_source_sha256": "36122be55d50132137e23c01867537bc5ee9e8f35490de451ed7eb7522649107",
+      "transcript_sha256": "a6c641b77fd181773f04d9d653d8a48ad0772bac109ce1fe28d8c66d7aca0514",
+      "field_contract_sha256": "d08b3df043b435cdac7ac1c302749185f13890bb37b55689c25352ccb3f8e013",
+      "prompt_sha256": "d4d6224503679aadb5100becd950ace26409e51d50215d88b128adeae9dd6fa5",
+      "input_fingerprint_sha256": "7e33d03b97090236ad27649b3b889a804ff94cdd7bdfad2658028e6cbf7219a7",
+      "prediction_sha256": "acb15197adb77ea7f5543a1a2551d6c095301162298b66da24f971b247a1d860"
     },
-    "ifta_mileage_by_vehicle_007": {
+    "ifta_mileage_by_vehicle_005": {
       "requested_model": "claude-opus-4-8",
+      "matching_inference_models": [
+        "claude-opus-4-8"
+      ],
       "observed_models": [
         "claude-haiku-4-5-20251001",
         "claude-opus-4-8"
       ],
       "effort": "xhigh",
-      "duration_seconds": 679.692,
+      "duration_seconds": 365.143,
       "tokens": {
-        "requests": 26,
-        "input_tokens": 1371216,
-        "cached_input_tokens": 1274764,
-        "cache_creation_input_tokens": 95688,
-        "output_tokens": 48588,
-        "total_tokens": 1419804
+        "requests": 17,
+        "input_tokens": 582944,
+        "cached_input_tokens": 526727,
+        "cache_creation_input_tokens": 55471,
+        "output_tokens": 25552,
+        "total_tokens": 608496
       },
-      "estimated_api_cost_usd": 2.450772
+      "estimated_api_cost_usd": 1.2494072500000002,
+      "claude_cli_version": "2.1.209 (Claude Code)",
+      "claude_cli_version_evidence": "per_sample",
+      "sample": "ifta_mileage_by_vehicle_005",
+      "transcript": "ocr",
+      "model_key": "claude_opus48",
+      "runtime_version": "2.1.209 (Claude Code)",
+      "output_file": "output/records.json",
+      "dataset_manifest_sha256": "5e40e8e07c58aa8882f1f4308fd338310ab19c65367ba9ab60b71050eb739140",
+      "runner_source_sha256": "36122be55d50132137e23c01867537bc5ee9e8f35490de451ed7eb7522649107",
+      "transcript_sha256": "7b55adbe0ab95194934ffd5960f29823f3a5beec1ef198f41c84741161755927",
+      "field_contract_sha256": "d08b3df043b435cdac7ac1c302749185f13890bb37b55689c25352ccb3f8e013",
+      "prompt_sha256": "d4d6224503679aadb5100becd950ace26409e51d50215d88b128adeae9dd6fa5",
+      "input_fingerprint_sha256": "2051ec0a81482626340d89fe2533bdb8291e416969f4d41481f4f2ca9891fc0b",
+      "prediction_sha256": "90a6b6ed5389d1de4b16aa39a37a39da91bd85348587377598704764c9e2daab"
     },
     "ifta_mileage_by_vehicle_008": {
       "requested_model": "claude-opus-4-8",
+      "matching_inference_models": [
+        "claude-opus-4-8"
+      ],
       "observed_models": [
         "claude-haiku-4-5-20251001",
         "claude-opus-4-8"
       ],
       "effort": "xhigh",
-      "duration_seconds": 598.253,
+      "duration_seconds": 177.124,
       "tokens": {
-        "requests": 32,
-        "input_tokens": 1356238,
-        "cached_input_tokens": 1266654,
-        "cache_creation_input_tokens": 88820,
-        "output_tokens": 43893,
-        "total_tokens": 1400131
+        "requests": 15,
+        "input_tokens": 407159,
+        "cached_input_tokens": 357888,
+        "cache_creation_input_tokens": 48531,
+        "output_tokens": 12151,
+        "total_tokens": 419310
       },
-      "estimated_api_cost_usd": 2.286437
+      "estimated_api_cost_usd": 0.78655775,
+      "claude_cli_version": "2.1.209 (Claude Code)",
+      "claude_cli_version_evidence": "per_sample",
+      "sample": "ifta_mileage_by_vehicle_008",
+      "transcript": "ocr",
+      "model_key": "claude_opus48",
+      "runtime_version": "2.1.209 (Claude Code)",
+      "output_file": "output/records.json",
+      "dataset_manifest_sha256": "5e40e8e07c58aa8882f1f4308fd338310ab19c65367ba9ab60b71050eb739140",
+      "runner_source_sha256": "36122be55d50132137e23c01867537bc5ee9e8f35490de451ed7eb7522649107",
+      "transcript_sha256": "0da957a81f6c628060ae5156726b5d640fb90f31d0e41bd912b008577df067f1",
+      "field_contract_sha256": "d08b3df043b435cdac7ac1c302749185f13890bb37b55689c25352ccb3f8e013",
+      "prompt_sha256": "d4d6224503679aadb5100becd950ace26409e51d50215d88b128adeae9dd6fa5",
+      "input_fingerprint_sha256": "92a74b28fb0c85d2e2c71c50189fc5b20c8620e5c54fcab6cbe52c97c1d2d0d3",
+      "prediction_sha256": "465030acbcf35a3066854c206bd4c1383b0eda11587b354349fa8e7bfb9100c6"
+    },
+    "ifta_mileage_by_vehicle_007": {
+      "requested_model": "claude-opus-4-8",
+      "matching_inference_models": [
+        "claude-opus-4-8"
+      ],
+      "observed_models": [
+        "claude-haiku-4-5-20251001",
+        "claude-opus-4-8"
+      ],
+      "effort": "xhigh",
+      "duration_seconds": 244.098,
+      "tokens": {
+        "requests": 17,
+        "input_tokens": 498560,
+        "cached_input_tokens": 448238,
+        "cache_creation_input_tokens": 49578,
+        "output_tokens": 16924,
+        "total_tokens": 515484
+      },
+      "estimated_api_cost_usd": 0.9576215,
+      "claude_cli_version": "2.1.209 (Claude Code)",
+      "claude_cli_version_evidence": "per_sample",
+      "sample": "ifta_mileage_by_vehicle_007",
+      "transcript": "ocr",
+      "model_key": "claude_opus48",
+      "runtime_version": "2.1.209 (Claude Code)",
+      "output_file": "output/records.json",
+      "dataset_manifest_sha256": "5e40e8e07c58aa8882f1f4308fd338310ab19c65367ba9ab60b71050eb739140",
+      "runner_source_sha256": "36122be55d50132137e23c01867537bc5ee9e8f35490de451ed7eb7522649107",
+      "transcript_sha256": "f6340fdbbed67dabcef6d36f647b94aed898279f0b46fcd4ab57633e1bb9376d",
+      "field_contract_sha256": "d08b3df043b435cdac7ac1c302749185f13890bb37b55689c25352ccb3f8e013",
+      "prompt_sha256": "d4d6224503679aadb5100becd950ace26409e51d50215d88b128adeae9dd6fa5",
+      "input_fingerprint_sha256": "73ae537d9ccbb0127ca99e9345f43d254e330cfc33f3f1caa99ee6231b29ec4f",
+      "prediction_sha256": "1698affceaf7a00425ff9227df390a249727ab20d977916ad77f9f7af132bc51"
     }
   }
 }
