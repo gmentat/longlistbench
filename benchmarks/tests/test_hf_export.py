@@ -225,7 +225,7 @@ class HuggingFaceExportTests(unittest.TestCase):
         self.assertIn("- benchmark", card)
         self.assertIn("- trucking", card)
         self.assertIn("path: data/core_operations/test-*.parquet", card)
-        self.assertIn("Developed and released by [Kay.ai](https://kay.ai)", card)
+        self.assertIn("Developed by [Kay.ai](https://kay.ai)", card)
         self.assertIn("[Anton Fedoruk](https://orcid.org/0009-0004-0260-1704)", card)
         self.assertIn("[Serhii Shchoholiev](https://orcid.org/0009-0007-2014-4828)", card)
         self.assertIn("[Akhil Mehta](https://orcid.org/0009-0001-0134-2905)", card)
