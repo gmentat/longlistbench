@@ -543,7 +543,7 @@ configs:
 
 # LongListBench
 
-[GitHub](https://github.com/kaydotai/longlistbench) | [Release v{RELEASE_VERSION}](https://github.com/kaydotai/longlistbench/releases/tag/v{RELEASE_VERSION}) | [Paper source](https://github.com/kaydotai/longlistbench/tree/v{RELEASE_VERSION}/paper)
+[GitHub](https://github.com/kaydotai/longlistbench) | [Release v{RELEASE_VERSION}](https://github.com/kaydotai/longlistbench/releases/tag/v{RELEASE_VERSION})
 
 **Developed and released by [Kay.ai](https://kay.ai).**
 

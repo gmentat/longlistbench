@@ -230,7 +230,7 @@ class HuggingFaceExportTests(unittest.TestCase):
         self.assertIn("[Serhii Shchoholiev](https://orcid.org/0009-0007-2014-4828)", card)
         self.assertIn("[Akhil Mehta](https://orcid.org/0009-0001-0134-2905)", card)
         self.assertIn("[Release v2.1.0]", card)
-        self.assertIn("[Paper source]", card)
+        self.assertNotIn("[Paper source]", card)
         self.assertIn("Records/doc range", card)
         self.assertIn("| `core_operations` |", card)
         self.assertIn("| 26 | 260-2,571 | 28,178 | 17-84 |", card)
