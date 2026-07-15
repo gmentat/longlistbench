@@ -543,9 +543,11 @@ configs:
 
 # LongListBench
 
-[GitHub](https://github.com/kaydotai/longlistbench) | [Release v{RELEASE_VERSION}](https://github.com/kaydotai/longlistbench/releases/tag/v{RELEASE_VERSION}) | [Paper source](https://github.com/kaydotai/longlistbench/tree/v{RELEASE_VERSION}/paper)
+[GitHub](https://github.com/kaydotai/longlistbench) | [Release v{RELEASE_VERSION}](https://github.com/kaydotai/longlistbench/releases/tag/v{RELEASE_VERSION})
 
 **Developed and released by [Kay.ai](https://kay.ai).**
+
+**Authors:** [Anton Fedoruk](https://orcid.org/0009-0004-0260-1704), [Serhii Shchoholiev](https://orcid.org/0009-0007-2014-4828), and [Akhil Mehta](https://orcid.org/0009-0001-0134-2905)
 
 LongListBench measures **long-list structured extraction** from insurance and commercial trucking PDFs: return every target record without omissions, merged rows, invented extras, or lost fields under complex layout, OCR, and long-range evidence. It contains {total_rows} synthetic PDFs and {total_targets_text} target records, with no real customer PII.
 
