@@ -238,6 +238,9 @@ class HuggingFaceExportTests(unittest.TestCase):
         self.assertIn("Pdf(decode=False)", card)
         self.assertIn("## Canonical Scoring", card)
         self.assertIn("git clone --branch v2.1.0", card)
+        self.assertIn("python -m pip install -r benchmarks/requirements-hf.txt", card)
+        self.assertIn('"pydantic>=2.5.0"', card)
+        self.assertIn("Run the scoring example from the repository root", card)
         self.assertIn("evaluate_record_extraction", card)
         self.assertIn("schemas/policy_packet_item.schema.json", card)
         self.assertIn("schemas/loss_run_claim_row.schema.json", card)
@@ -246,14 +249,28 @@ class HuggingFaceExportTests(unittest.TestCase):
         self.assertIn("publisher    = {Kay.ai}", card)
         self.assertIn("url          = {https://huggingface.co/datasets/kaydotai/LongListBench}", card)
         self.assertIn("| `policy_packets` |", card)
-        self.assertIn("It contains 32 synthetic PDFs and 29,599 target records", card)
+        self.assertIn("The release contains 32 synthetic PDFs and 29,599 target records", card)
+        self.assertIn(
+            "Across the 2 released agent runs, field micro-F1 ranges from 98.2% to 98.8%, "
+            "but only 4-7 of 32 documents are complete.",
+            card,
+        )
+        self.assertEqual(
+            export_hf_dataset._headline_finding(codex_baseline),
+            "Across the 1 released agent run, field micro-F1 is 98.2%, "
+            "but only 4 of 32 documents are complete.",
+        )
         self.assertIn("90.4% | 4/32 (12.5%) | 98.2% | 97.7%", card)
         self.assertIn("93.6% | 7/32 (21.9%) | 98.8% | 98.4%", card)
         self.assertIn("GPT-5.5 exact records | Opus 4.8 exact records", card)
         self.assertIn("Structural challenges", card)
-        self.assertIn("saved predictions and reports", card)
+        self.assertIn("Saved predictions and reports", card)
         self.assertIn("Gemini 3.5 Flash", card)
         self.assertIn("direct Vertex AI API", card)
+        self.assertNotIn("- large-array", card)
+        self.assertNotIn("**Shape.**", card)
+        self.assertEqual(card.count("Record order is not scored"), 1)
+        self.assertNotIn("\n\n\n## Schemas", card)
         self.assertNotIn("packages the fixed HTML, PDF", card)
 
     def test_default_release_baselines_include_all_four_agent_runs(self):
@@ -267,6 +284,13 @@ class HuggingFaceExportTests(unittest.TestCase):
                 "claude_opus48_full_current_ocr_v2",
             },
         )
+
+    def test_hf_requirements_include_evaluator_dependencies(self):
+        requirements = (
+            Path(export_hf_dataset.__file__).parent / "requirements-hf.txt"
+        ).read_text(encoding="utf-8")
+
+        self.assertIn("pydantic>=2.5.0", requirements.splitlines())
 
     def test_release_baseline_requires_matching_manifest_and_predictions(self):
         (self.data_dir / "manifest.json").write_text(

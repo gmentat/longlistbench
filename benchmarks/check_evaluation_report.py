@@ -13,8 +13,8 @@ _SCRIPT_DIR = Path(__file__).parent
 if str(_SCRIPT_DIR) not in sys.path:
     sys.path.insert(0, str(_SCRIPT_DIR))
 
-from models.loss_run import FinancialBreakdown, LossRunIncident
-try:
+if __package__:
+    from .models.loss_run import FinancialBreakdown, LossRunIncident
     from .evaluation_metrics import (
         evaluate_extraction,
         evaluate_record_extraction,
@@ -23,7 +23,8 @@ try:
     )
     from .dataset_layout import default_dataset_dir, ground_truth_path
     from .evaluation_roles import evaluation_role
-except ImportError:
+else:
+    from models.loss_run import FinancialBreakdown, LossRunIncident
     from evaluation_metrics import (
         evaluate_extraction,
         evaluate_record_extraction,

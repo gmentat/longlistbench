@@ -98,7 +98,7 @@ LLB_MODEL_WORKERS=2
 LLB_GEMINI_CHUNK_MAX_INPUT_TOKENS=12000
 ```
 
-Install Hugging Face export dependencies only when packaging for the Hub:
+Install the Hugging Face loading/export and canonical-scoring dependencies:
 
 ```bash
 python -m pip install -r benchmarks/requirements-hf.txt

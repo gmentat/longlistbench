@@ -6,9 +6,9 @@ import hashlib
 import re
 from typing import Any
 
-try:
+if __package__:
     from .models.loss_run import LossRunIncident
-except ImportError:
+else:
     from models.loss_run import LossRunIncident
 
 
