@@ -359,7 +359,7 @@ def _baseline_section(
     )
     return f"""## Current Baselines
 
-The release includes {len(baseline_list)} full-corpus OCR-conditioned agentic baseline{'s' if len(baseline_list) != 1 else ''}. {descriptions}. For each document, the runner created a temporary workspace containing the OCR transcript, field contract, prompt, and output directory. A macOS sandbox profile denied access to the benchmark repository, and the prompt prohibited using files outside the workspace. This was repository isolation, not a host-wide filesystem allowlist. Target values, target counts, ground-truth files, and generator code were not copied into the workspace. For generic records, the workspace did include a sample-specific field contract containing public field names and record groups derived from ground-truth object structure.
+The release includes {len(baseline_list)} full-corpus OCR-conditioned agentic baselines: {descriptions}. Each model received only the OCR transcript, public field contract, prompt, and output directory in a repository-denied workspace. Target values, counts, ground truth, and generator code were unavailable.
 
 Strict completeness on the released OCR transcripts:
 
@@ -381,7 +381,7 @@ Exact-record recall by extraction problem shows why aggregate scores should not 
 |---|---|---:|---:|{'|'.join(['---:'] * len(family_headers))}|
 {chr(10).join(regime_rows)}
 
-The saved predictions and reports in {links} allow the metrics to be recomputed without rerunning the models. Their run metadata binds every prediction to the manifest, transcript, field contract, prompt, runner source, model, effort, runtime version, and prediction hash. Full-context raw-API prompting remains a lower-bound stress test rather than a practical full-corpus protocol because large outputs can hit output or latency limits. The repository also includes raw OpenAI API and OpenAI Agents SDK adapters for future protocol comparisons on this release.
+The saved predictions and reports in {links} recompute these metrics without model access. Run metadata binds each prediction to the manifest, transcript, field contract, prompt, runner, model, effort, runtime, and output hash.
 
 """
 
@@ -500,7 +500,7 @@ def dataset_card(
     )
     config_rows = "\n".join(
         [
-            "| `{name}` | {description} | `{target_field}` | {rows} | {min_targets}-{max_targets} | {targets} | {min_pages}-{max_pages} |".format(
+            "| `{name}` | {description} | `{target_field}` | {rows} | {min_targets:,}-{max_targets:,} | {targets:,} | {min_pages:,}-{max_pages:,} |".format(
                 name=config_name,
                 description=CONFIG_DESCRIPTIONS[config_name],
                 target_field="`, `".join(summary[config_name]["target_fields"]),
@@ -534,6 +534,7 @@ tags:
 - large-array
 - long-range-evidence
 - insurance
+- trucking
 size_categories:
 - n<1K
 configs:
@@ -542,17 +543,17 @@ configs:
 
 # LongListBench
 
-LongListBench is a synthetic benchmark for measuring **long-list structured extraction** from insurance and commercial trucking PDFs: the task of extracting every item in a large repeating record set, without dropping records, merging neighboring records, inventing extras, or losing fields when the document has complex layout, OCR-transcribed text, or evidence spread across distant pages.
+[GitHub](https://github.com/kaydotai/longlistbench) | [Release v{RELEASE_VERSION}](https://github.com/kaydotai/longlistbench/releases/tag/v{RELEASE_VERSION}) | [Paper source](https://github.com/kaydotai/longlistbench/tree/v{RELEASE_VERSION}/paper)
 
-Most document-extraction benchmarks emphasize document-level header fields. LongListBench focuses on the production failure mode that appears once the target is a long list: recall and precision degrade as the model must preserve many records, normalize repeated fields, and sometimes join values from sections separated by dozens or hundreds of pages.
+**Developed and released by [Kay.ai](https://kay.ai).**
 
-The dataset contains {total_rows} PDF documents and {total_targets_text} target records. All visible document content is synthetic and does not contain real customer PII.
+LongListBench measures **long-list structured extraction** from insurance and commercial trucking PDFs: return every target record without omissions, merged rows, invented extras, or lost fields under complex layout, OCR, and long-range evidence. It contains {total_rows} synthetic PDFs and {total_targets_text} target records, with no real customer PII.
 
-The intended task is per-document extraction: give a system one PDF or OCR transcript plus the target schema or field contract, then score the complete list it returns. The configs have different roles. `core_operations` contains high-density structured reports where deterministic row parsers or document-specific agent code may perform well; those files mainly test scale, OCR preservation, and output completeness. Its multisection IFTA packets additionally test OCR-layout preservation and cross-section joins. `claim_multihop` and `policy_packets` are the complex-packet regimes: target records require inherited context, heterogeneous schemas, distant supporting sections, and distractor material.
+The task is per-document extraction: give a system one PDF or OCR transcript plus the target contract, then score the complete list. `core_operations` emphasizes scale and output completeness; `claim_multihop` and `policy_packets` require inherited context, heterogeneous schemas, distant supporting sections, and distractors.
 
 ## Complexity Stressors
 
-LongListBench differs from array-only extraction datasets by explicitly tracking document-complexity stressors. Each row has a `problems` list with the stressors present in that PDF:
+Unlike array-only extraction datasets, LongListBench records the stressors present in each PDF under `problems`:
 
 | Tag | Meaning |
 |---|---|
@@ -571,7 +572,7 @@ LongListBench differs from array-only extraction datasets by explicitly tracking
 | `repeated_keys` | Common keys such as states or jurisdictions repeat across sections or returns, so the key alone is insufficient for matching. |
 | `heterogeneous_record_list` | A target list contains several record schemas, especially in policy packets. |
 
-These 14 tags are the canonical taxonomy. The manifest contains 45 distinct `problems` tokens because it also retains finer domain and implementation tags for auditing. Labels are metadata, not text printed inside the PDFs.
+These 14 tags are canonical. The manifest also retains finer audit tags, for 45 distinct `problems` tokens in total. Labels are metadata, not text printed inside the PDFs.
 
 The mapping is intended to be visually auditable:
 
@@ -646,17 +647,22 @@ with open(f"{{row['document_id']}}.pdf", "wb") as f:
 
 ## Canonical Scoring
 
-The source repository includes the reference evaluator in `benchmarks/evaluation_metrics.py`. Strict normalized-record completeness is primary; field-value overlap is a secondary diagnostic.
+The tagged [reference evaluator](https://github.com/kaydotai/longlistbench/blob/v{RELEASE_VERSION}/benchmarks/evaluation_metrics.py) defines official scoring. Strict normalized-record completeness is primary; field overlap is a secondary diagnostic.
 
 ### Method
 
 1. **Shape.** Run your extractor on each PDF or transcript and return an object matching `ground_truth`: `{{"incidents": [...]}}` for claim multi-hop rows or `{{"records": [...]}}` for all other list families. A bare list is also accepted by the repository evaluator.
-2. **Claims matching.** Claim multi-hop incident rows are keyed by normalized `incident_number`. Strings are compared case-insensitively, dates are normalized to `MM/DD/YYYY`, claimant lists are sorted, zero-valued default financial-breakdown cells are omitted from field diagnostics, and non-zero financial breakdowns are rounded to cents. Each flattened `(incident_number, field_path, value)` tuple is one field-value diagnostic.
-3. **Generic record matching.** Operations, external loss-run, and policy rows are heterogeneous. Strings are whitespace-normalized and compared case-insensitively; dates, decimals, percentages, currency, and accounting negatives are canonicalized. Unambiguous labels also normalize to the published target form: region names to codes, fuel descriptions to parenthetical codes, line-of-business names to acronyms, visible `Applies within` wrappers to their core clause scope, visible `Unit` prefixes in vehicle identifiers, and `Quarter Return`/`Quarterly Return` heading aliases. Extra heading context remains an error. For field diagnostics, exact records are anchored first and remaining records are matched deterministically using overlapping non-global field pairs. `record_type`, hidden row identifiers, and repeated document-level policy fields are excluded from field matching and field-pair scoring, but strict comparison uses the complete normalized public record.
+2. **Claims matching.** Claim incidents are keyed by normalized `incident_number`; strings, dates, claimant lists, and non-zero financial breakdowns use the documented canonical forms.
+3. **Generic record matching.** Operations, loss-run, and policy values normalize case, whitespace, dates, decimals, currency, accounting negatives, and documented label equivalents. Exact records are anchored before deterministic field-overlap matching for partial-credit diagnostics. Strict comparison still uses every public target field.
 4. **Strict completeness.** An exact record must match every normalized target field. Exact-record recall is `exact_record_matches / ground_truth_count`. A document is complete only when the normalized predicted and ground-truth record multisets are identical, including duplicate multiplicity and with no extra records. Record order is not scored in this release.
 5. **Field diagnostics.** Field recall is `found_gold_field_pairs / total_gold_field_pairs`; precision is `found_field_pairs / total_pred_field_pairs`; F1 is their harmonic mean. Reports retain document-macro and corpus-micro field F1 to show partial correctness, but these are not substitutes for complete-list recovery.
 
-Official scoring uses the repository evaluator. Use it directly rather than copying an abbreviated scorer into another project; the evaluator contains the canonical case, date, decimal, accounting-negative, list, global-field, and heterogeneous-record normalization rules.
+Clone the matching release before running the example so the canonical evaluator is importable:
+
+```bash
+git clone --branch v{RELEASE_VERSION} --depth 1 https://github.com/kaydotai/longlistbench.git
+cd longlistbench
+```
 
 ```python
 import json
@@ -723,7 +729,7 @@ The documents are synthetic. Each sample was produced by a deterministic generat
 
 Policy packets are structurally inspired by commercial insurance policy workflows, but names, values, prose, and identifiers are generated fixtures.
 
-The release packages the fixed HTML, PDF, OCR, ground-truth, and metadata artifacts needed for reproducible evaluation. The private template tooling used to create the current production-like layouts is intentionally not part of the dataset repository, so the release does not claim bit-for-bit public regeneration of every PDF.
+The HF rows embed PDF, OCR, ground truth, and metadata; tagged GitHub releases also retain the rendered HTML. Private template tooling used to create the current layouts is not public, so the release does not claim bit-for-bit regeneration of every PDF from generator source.
 
 No real insureds, claimants, policies, financial accounts, or customer documents are represented. Real documents were used only as structural references for layout and packet organization.
 
@@ -741,9 +747,11 @@ LongListBench is intended for measuring long-list, layout, OCR-conditioned, and 
 @misc{{fedoruk2026longlistbench,
   title        = {{LongListBench: A Benchmark for Long-List Entity Extraction from Complex Business PDFs}},
   author       = {{Fedoruk, Anton and Shchoholiev, Serhii and Mehta, Akhil}},
+  publisher    = {{Kay.ai}},
   year         = {{2026}},
   version      = {{{RELEASE_VERSION}}},
-  howpublished = {{\\url{{https://github.com/kaydotai/longlistbench}}}}
+  howpublished = {{Hugging Face dataset}},
+  url          = {{https://huggingface.co/datasets/{repo_id}}}
 }}
 ```
 """
