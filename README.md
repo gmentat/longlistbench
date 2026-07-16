@@ -1,6 +1,6 @@
 # LongListBench
 
-[Hugging Face dataset](https://huggingface.co/datasets/kaydotai/LongListBench) | [Release v2.1.0](https://github.com/kaydotai/longlistbench/releases/tag/v2.1.0)
+[Hugging Face dataset](https://huggingface.co/datasets/kaydotai/LongListBench) | [Release v2.2.0](https://github.com/kaydotai/longlistbench/releases/tag/v2.2.0)
 
 Benchmark for long-list entity extraction from complex semi-structured business PDFs, including dense layouts, OCR transcripts, and long-range cross-page evidence.
 

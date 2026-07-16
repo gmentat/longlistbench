@@ -3,8 +3,8 @@ message: "If you use this software, please cite it as below."
 title: "LongListBench: A Benchmark for Long-List Entity Extraction from Complex Business PDFs"
 type: software
 license: MIT
-version: "2.1.0"
-date-released: "2026-07-14"
+version: "2.2.0"
+date-released: "2026-07-16"
 authors:
   - family-names: Fedoruk
     given-names: Anton

@@ -126,6 +126,62 @@ class HuggingFaceExportTests(unittest.TestCase):
         self.assertEqual(json.loads(policy_row["ground_truth"])["records"][0]["id"], "multihop_bop_012_001")
         self.assertEqual(policy_row["ocr_transcript"], "ocr multihop_bop_012_001")
 
+    def test_parquet_export_round_trips_published_schema(self):
+        import pyarrow as pa
+        import pyarrow.parquet as pq
+
+        instance = self._write_instance(
+            {
+                "id": "ifta_mileage_by_vehicle_001",
+                "difficulty": "ifta_mileage_by_vehicle",
+                "format": "production_like_pdf",
+                "domain": "commercial_insurance_operations",
+                "target_record_type": "vehicle_state_mileage_row",
+                "num_target_records": 1,
+                "pages_estimate": 8,
+                "problems": ["high_density_long_list"],
+                "transcripts_available": ["ocr"],
+            }
+        )
+        (self.data_dir / "manifest.json").write_text(
+            json.dumps({"instances": [instance]}),
+            encoding="utf-8",
+        )
+        rows_by_config = export_hf_dataset.build_config_rows(self.data_dir)
+        output_dir = Path(self.tmp.name) / "hf-export"
+
+        export_hf_dataset.write_parquet_export(rows_by_config, output_dir)
+
+        table = pq.read_table(
+            output_dir / "data" / "core_operations" / "test-00000-of-00001.parquet"
+        )
+        self.assertEqual(
+            table.column_names,
+            [
+                "document_id",
+                "complexity_regime",
+                "evaluation_role",
+                "num_pages",
+                "target_field",
+                "target_record_type",
+                "target_count",
+                "stressors",
+                "pdf",
+                "ground_truth",
+                "metadata",
+                "ocr_transcript",
+            ],
+        )
+        self.assertEqual(table.schema.field("num_pages").type, pa.int32())
+        self.assertEqual(table.schema.field("target_count").type, pa.int32())
+        self.assertEqual(table.schema.field("stressors").type, pa.list_(pa.string()))
+        self.assertEqual(table.column("stressors")[0].as_py(), ["high_density_long_list"])
+        metadata = json.loads(table.column("metadata")[0].as_py())
+        self.assertEqual(
+            metadata["manifest_instance"]["domain"],
+            "commercial_insurance_operations",
+        )
+
     def test_dataset_card_lists_hf_config_paths(self):
         summary = {
             "core_operations": {
@@ -229,7 +285,7 @@ class HuggingFaceExportTests(unittest.TestCase):
         self.assertIn("[Anton Fedoruk](https://orcid.org/0009-0004-0260-1704)", card)
         self.assertIn("[Serhii Shchoholiev](https://orcid.org/0009-0007-2014-4828)", card)
         self.assertIn("[Akhil Mehta](https://orcid.org/0009-0001-0134-2905)", card)
-        self.assertIn("[Release v2.1.0]", card)
+        self.assertIn("[Release v2.2.0]", card)
         self.assertNotIn("[Paper source]", card)
         self.assertIn("Records/doc range", card)
         self.assertIn("| `core_operations` |", card)
@@ -237,7 +293,7 @@ class HuggingFaceExportTests(unittest.TestCase):
         self.assertIn('load_dataset("kaydotai/LongListBench", "core_operations", split="test")', card)
         self.assertIn("Pdf(decode=False)", card)
         self.assertIn("## Canonical Scoring", card)
-        self.assertIn("git clone --branch v2.1.0", card)
+        self.assertIn("git clone --branch v2.2.0", card)
         self.assertIn("python -m pip install -r benchmarks/requirements-hf.txt", card)
         self.assertIn('"pydantic>=2.5.0"', card)
         self.assertIn("Run the scoring example from the repository root", card)

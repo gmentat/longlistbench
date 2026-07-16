@@ -234,7 +234,7 @@ The export writes:
 - `evaluation/codex_gpt56_sol_full_current_ocr_v2/` - the released GPT-5.6-Sol report, metadata, and all 32 predictions.
 - `evaluation/claude_fable5_full_current_ocr_v2/` - the released Fable 5 report, metadata, and all 32 predictions.
 
-Each Parquet row includes `document_id`, `domain`, `complexity_regime`, `document_format`, `target_field`, `target_record_type`, `target_count`, embedded `pdf`, JSON-string `ground_truth`, JSON-string `metadata`, and `ocr_transcript`. Claim multi-hop rows use `target_field="incidents"`; operations, external loss-run, and policy rows use `target_field="records"`.
+Each Parquet row includes `document_id`, `complexity_regime`, `evaluation_role`, `num_pages`, `target_field`, `target_record_type`, `target_count`, `stressors`, embedded `pdf`, JSON-string `ground_truth`, JSON-string `metadata`, and `ocr_transcript`. Claim multi-hop rows use `target_field="incidents"`; operations, external loss-run, and policy rows use `target_field="records"`. The HF `stressors` column maps from `problems` in the source manifest; other manifest-only fields remain available inside the JSON-string `metadata` value.
 
 To upload after inspection:
 

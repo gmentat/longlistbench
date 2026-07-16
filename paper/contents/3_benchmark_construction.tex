@@ -254,7 +254,7 @@ The crops are illustrative, not complete provenance. The scored claim has 24 top
 The release favors fewer, larger PDFs: 26 operations documents contain 28{,}178 targets, three claim packets contain 77, and three policy packets contain 1{,}344. \Cref{tab:dataset-scale} in the appendix gives the complete technical family inventory.
 
 \subsection{Evaluation configurations}
-Each instance carries three levels of metadata. The \texttt{hf\_config} field assigns one of three release configurations (\Cref{tab:evaluation-configurations}), \texttt{complexity\_regime} identifies its document family, and \texttt{stressors} records the cross-cutting stressors catalogued in \Cref{subsec:stressors}. A PDF can therefore be large, multi-table, OCR-conditioned, and long-range at the same time.
+Each HF instance belongs to one of three release configurations (\Cref{tab:evaluation-configurations}). The public column \texttt{complexity\_regime} identifies its document family, while \texttt{stressors} lists the cross-cutting conditions catalogued in \Cref{subsec:stressors}. In the source manifest, configuration membership is \texttt{hf\_config} and the stressor list is \texttt{problems}; export renames the latter to \texttt{stressors}. A PDF can therefore be large, multi-table, OCR-conditioned, and long-range at the same time.
 
 These configurations are not a difficulty ladder. Core operations includes both parser-friendly scale controls and multisection joins. Claim and policy packets emphasize inherited context, distant evidence, heterogeneous schemas, and distractors. Results should therefore be sliced by evaluation role, family, and stressor rather than reduced to one ranking.
 
