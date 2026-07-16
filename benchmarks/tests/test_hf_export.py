@@ -110,8 +110,11 @@ class HuggingFaceExportTests(unittest.TestCase):
         )
 
         core_row = rows_by_config["core_operations"][0]
-        self.assertEqual(core_row["domain"], "commercial_insurance_operations")
+        self.assertEqual(core_row["complexity_regime"], "ifta_mileage_by_vehicle")
         self.assertEqual(core_row["evaluation_role"], "scale_control")
+        self.assertEqual(core_row["stressors"], ["high_density_long_list"])
+        for removed in ("domain", "difficulty", "document_format", "transcript_conditions", "problems"):
+            self.assertNotIn(removed, core_row)
         self.assertEqual(core_row["target_field"], "records")
         self.assertEqual(json.loads(core_row["ground_truth"])["records"][0]["id"], "ifta_mileage_by_vehicle_001")
         self.assertEqual(core_row["ocr_transcript"], "ocr ifta_mileage_by_vehicle_001")
@@ -132,7 +135,6 @@ class HuggingFaceExportTests(unittest.TestCase):
                 "max_targets": 2571,
                 "min_pages": 17,
                 "max_pages": 84,
-                "domains": {"commercial_insurance_operations": 26},
                 "target_fields": ["records"],
             },
             "claim_multihop": {
@@ -142,7 +144,6 @@ class HuggingFaceExportTests(unittest.TestCase):
                 "max_targets": 40,
                 "min_pages": 61,
                 "max_pages": 148,
-                "domains": {"claims": 3},
                 "target_fields": ["incidents"],
             },
             "policy_packets": {
@@ -152,7 +153,6 @@ class HuggingFaceExportTests(unittest.TestCase):
                 "max_targets": 562,
                 "min_pages": 99,
                 "max_pages": 133,
-                "domains": {"policy_review": 3},
                 "target_fields": ["records"],
             },
         }

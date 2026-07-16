@@ -7,7 +7,6 @@ import argparse
 import hashlib
 import json
 import shutil
-from collections import Counter
 from pathlib import Path
 from typing import Any
 
@@ -163,7 +162,6 @@ def row_for_instance(dataset_dir: Path, instance: dict[str, Any]) -> dict[str, A
     if not isinstance(ground_truth, list):
         raise ValueError(f"{sid} ground truth must be a list, got {type(ground_truth).__name__}")
 
-    normalized_domain = instance_domain(instance)
     normalized_target_field = target_field(instance)
     complexity_regime = str(instance.get("complexity_regime") or instance.get("difficulty") or "")
     metadata = {
@@ -175,17 +173,13 @@ def row_for_instance(dataset_dir: Path, instance: dict[str, Any]) -> dict[str, A
 
     return {
         "document_id": sid,
-        "domain": normalized_domain,
         "complexity_regime": complexity_regime,
         "evaluation_role": evaluation_role(complexity_regime),
-        "difficulty": str(instance.get("difficulty") or ""),
-        "document_format": str(instance.get("format") or ""),
         "num_pages": page_count(instance),
         "target_field": normalized_target_field,
         "target_record_type": target_record_type(instance),
         "target_count": target_count(instance, ground_truth),
-        "problems": list(instance.get("problems") or []),
-        "transcript_conditions": list(instance.get("transcripts_available") or []),
+        "stressors": list(instance.get("problems") or []),
         "pdf": {"path": f"{sid}.pdf", "bytes": pdf_path.read_bytes()},
         "ground_truth": canonical_json({normalized_target_field: ground_truth}),
         "metadata": canonical_json(metadata),
@@ -207,7 +201,6 @@ def summarize_rows(rows_by_config: dict[str, list[dict[str, Any]]]) -> dict[str,
         rows = rows_by_config.get(config_name, [])
         page_counts = [row["num_pages"] for row in rows]
         target_counts = [row["target_count"] for row in rows]
-        domains = Counter(row["domain"] for row in rows)
         target_fields = sorted(set(row["target_field"] for row in rows))
         summary[config_name] = {
             "rows": len(rows),
@@ -216,7 +209,6 @@ def summarize_rows(rows_by_config: dict[str, list[dict[str, Any]]]) -> dict[str,
             "max_targets": max(target_counts) if target_counts else 0,
             "min_pages": min(page_counts) if page_counts else 0,
             "max_pages": max(page_counts) if page_counts else 0,
-            "domains": dict(sorted(domains.items())),
             "target_fields": target_fields,
         }
     return summary
@@ -419,17 +411,13 @@ def write_parquet_export(rows_by_config: dict[str, list[dict[str, Any]]], output
     features = Features(
         {
             "document_id": Value("string"),
-            "domain": Value("string"),
             "complexity_regime": Value("string"),
             "evaluation_role": Value("string"),
-            "difficulty": Value("string"),
-            "document_format": Value("string"),
             "num_pages": Value("int32"),
             "target_field": Value("string"),
             "target_record_type": Value("string"),
             "target_count": Value("int32"),
-            "problems": Sequence(Value("string")),
-            "transcript_conditions": Sequence(Value("string")),
+            "stressors": Sequence(Value("string")),
             "pdf": Pdf(decode=False),
             "ground_truth": Value("string"),
             "metadata": Value("string"),
@@ -579,7 +567,7 @@ LongListBench measures this failure mode in insurance and commercial trucking PD
 
 ## Complexity Stressors
 
-Each PDF records its extraction stressors under `problems`:
+Each PDF records its extraction stressors under `stressors`:
 
 | Tag | Meaning |
 |---|---|
@@ -598,7 +586,7 @@ Each PDF records its extraction stressors under `problems`:
 | `repeated_keys` | Common keys such as states or jurisdictions repeat across sections or returns, so the key alone is insufficient for matching. |
 | `heterogeneous_record_list` | A target list contains several record schemas, especially in policy packets. |
 
-These 14 tags are canonical. The manifest also retains finer audit tags, for 45 distinct `problems` tokens in total. Labels are metadata, not text printed inside the PDFs.
+These 14 tags are canonical. The release also retains finer audit tags, for 45 distinct `stressors` tokens in total. Labels are metadata, not text printed inside the PDFs.
 
 The following families make the tags easy to inspect in the PDFs:
 
@@ -631,23 +619,21 @@ print(ds)  # each row is one PDF document
 | Column | Type | Description |
 |---|---|---|
 | `document_id` | string | Stable sample identifier, e.g. `ifta_mileage_by_vehicle_001` or `multihop_bop_012_001`. |
-| `domain` | string | `commercial_insurance_operations`, `claims`, or `policy_review`. |
 | `complexity_regime` | string | Document family, such as `ifta_mileage_by_vehicle`, `loss_run_external`, `claim_crosspage_multihop`, or `policy_multi_hop`. |
 | `evaluation_role` | string | Preassigned interpretation role: `scale_control` or `structural_challenge`. |
-| `difficulty` | string | Historical field retained for compatibility; in this release it stores the template or multi-hop regime. |
-| `document_format` | string | Rendered layout family, currently `production_like_pdf` or `crosspage`. |
 | `num_pages` | int32 | Page count recorded by the generator. |
 | `target_field` | string | Name of the top-level list to extract: `incidents` for claim multi-hop rows, `records` for operations, external loss-run, and policy rows. |
 | `target_record_type` | string | Primary schema family, such as `vehicle_state_mileage_row`, `driver_record`, `loss_run_claim_row`, or `policy_packet_item`. |
 | `target_count` | int32 | Number of target records in `ground_truth`. |
-| `problems` | list[string] | Complexity tags for the document, e.g. `high_density_long_list`, `production_like_layout`, or `long_range_evidence`. |
-| `transcript_conditions` | list[string] | Available transcript conditions. The released rows include `ocr`. |
+| `stressors` | list[string] | Stressor tags for the document, e.g. `high_density_long_list`, `production_like_layout`, or `long_range_evidence`. |
 | `pdf` | Pdf | Embedded source PDF bytes. |
 | `ground_truth` | string | JSON string containing the expected records under `target_field`. |
 | `metadata` | string | JSON string with manifest metadata, file hashes, evidence maps, generation details, and source artifact paths. |
 | `ocr_transcript` | string | OCR transcript generated from rendered PDF page images. |
 
 `ground_truth` is the complete schema-shaped object for the extraction target. Claim multi-hop rows use `{{"incidents": [...]}}`; all other list families use `{{"records": [...]}}`.
+
+Manifest fields not exposed as columns, such as the domain, rendered layout format, and available transcript conditions, remain available under `metadata.manifest_instance`. The `stressors` column is stored as `problems` in the manifest.
 
 ## Usage
 
