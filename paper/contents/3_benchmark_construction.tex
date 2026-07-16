@@ -12,13 +12,15 @@ Policy-oriented documents use heterogeneous records for locations, coverages, fo
 \paragraph{Operations records.}
 The core operations documents contain dense repeated lists from business operations workflows, including mileage rows, multi-section return rows, tax inquiry rows, driver records, vehicle schedule rows, and external loss-run rows. These records use generic normalized-record comparison rather than being forced into the claim incident schema.
 
-\subsection{Document design and provenance}
+\subsection{Document design and complexity stressors}
+\label{subsec:stressors}
 Private production PDFs were reviewed only to identify recurring structures such as portal exports, spreadsheet schedules, loss-run tables, declarations, forms, endorsements, and long packet organization. The released documents are production-inspired, not facsimiles of source packets.
 
-\Cref{fig:pipeline} summarizes construction. Human corrections to production extraction surfaced recurring failure patterns, which engineers translated into seeded generators, family-specific templates, and the stressor taxonomy in \Cref{tab:complexity-stressors}. Generators write target records first, render them through HTML templates to PDF, and transcribe page images with vision OCR. Every visible name, identifier, value, and prose passage is generated. The release fixes the resulting HTML, PDF, OCR, ground-truth, and metadata artifacts for reproducible evaluation. The private template tooling used for the current production-like layouts is intentionally not released, so we do not claim bit-for-bit public regeneration of every PDF.
-
-\begin{figure}[tb]
+\begin{figure}[H]
+\Cref{fig:pipeline} summarizes construction. Human corrections to production extraction surfaced recurring failure patterns, which engineers translated into seeded generators, family-specific templates, and the stressor taxonomy catalogued below. Generators write target records first, render them through HTML templates to PDF, and transcribe page images with vision OCR. Every visible name, identifier, value, and prose passage is generated. The release fixes the resulting HTML, PDF, OCR, ground-truth, and metadata artifacts for reproducible evaluation. The private template tooling used for the current production-like layouts is intentionally not released, so we do not claim bit-for-bit public regeneration of every PDF.
+\par\medskip
 \centering
+\resizebox{0.75\linewidth}{!}{%
 \begin{tikzpicture}[
   lab/.style={font=\sffamily\scriptsize, align=center},
   lane/.style={font=\sffamily\tiny\bfseries},
@@ -107,16 +109,27 @@ Private production PDFs were reviewed only to identify recurring structures such
 \draw[arr] (scripts) -- (gen);
 \draw[arr] (gen) -- (ocr);
 \draw[arr] (ocr) -- (ds);
-\end{tikzpicture}
+\end{tikzpicture}}
 \caption{Dataset construction. Production failures inform structural templates; seeded generators write ground truth first, then render synthetic PDFs and OCR transcripts. No production values are released.}
 \label{fig:pipeline}
 \end{figure}
 
-The released PDFs include dense tables, wrapped rows, form-like pages, and policy packet sections rather than only clean spreadsheet exports. \Cref{fig:split-record,fig:multi-row,fig:merged-cells,fig:multi-column} show representative rendered pages used to audit the visible stressors. Red boxes in these figures are annotations added for the paper; the released PDFs do not print benchmark labels.
-
-\Cref{fig:split-record} shows two row-level evidence blocks for one target. Return headers supply reporting context, Schedule A supplies mileage and gallons, and a later Jurisdictions table supplies tax fields. The sections order jurisdictions differently, so the extractor must join by return and jurisdiction rather than copy one row. This is the \path{split_records} stressor.
+The released PDFs include dense tables, wrapped rows, form-like pages, and policy packet sections rather than only clean spreadsheet exports. The \texttt{problems} metadata tracks 14 canonical cross-cutting stressors, catalogued below with representative rendered pages. The 45 distinct tokens currently found in \texttt{problems} also include finer domain and implementation tags for audit slices; they are not additional canonical categories. We do not print benchmark labels inside the PDFs; that would make the documents less realistic and could make extraction easier. Instead, the stressors are visible in the layout and content organization, while the exact labels are recorded in sidecar metadata; \Cref{tab:complexity-doc-examples} in the appendix maps every canonical stressor to representative pages for visual audit. Red boxes and labels in the figures below are annotations added for the paper; the released PDFs do not print them.
 
 \begin{figure}[H]
+\paragraph{\texttt{page\_breaks}.}
+Target lists or supporting sections span page boundaries, often with repeated headers or inherited context. This is pagination pressure rather than an item-level split, and it is mostly a list-completeness stressor by itself. In \Cref{fig:page-breaks}, a unit's mileage rows stop at a page boundary and resume on the next page under a repeated report header and a ``Continued'' unit band, so a per-page reader can drop the continuation or emit the repeated context as new records. The mileage exports apply this pressure at scale across dozens of pages.
+\par\medskip
+    \centering
+    \includegraphics[width=\linewidth]{figures/example_page_breaks.png}
+    \caption{A unit's jurisdiction rows interrupted by a page break in a mileage export; the next page repeats the report header and marks the unit section as continued (boxed) before the rows and the unit total resume.}
+    \label{fig:page-breaks}
+\end{figure}
+
+\begin{figure}[H]
+\paragraph{\texttt{split\_records}.}
+One logical target record has fields distributed across separate visual blocks, sections, or pages, so the extractor must assemble the item rather than copy one row. \Cref{fig:split-record} shows two row-level evidence blocks for one target in a multisection IFTA return. Return headers supply reporting context, Schedule A supplies mileage and gallons, and a later Jurisdictions table supplies tax fields. The sections order jurisdictions differently: Alabama is row 01 in Schedule A but row 09 in the Jurisdictions detail, so the extractor must join by return and jurisdiction rather than copy one row.
+\par\medskip
     \centering
     \begin{subfigure}{\linewidth}
         \centering
@@ -135,37 +148,81 @@ The released PDFs include dense tables, wrapped rows, form-like pages, and polic
     \label{fig:split-record}
 \end{figure}
 
-\newpage
-In \Cref{fig:multi-row}, description text continues below an incident's main row. A one-row-one-record parser can fragment the target or attach text to the wrong item.
+\paragraph{\texttt{cross\_section\_join} and \texttt{repeated\_keys}.}
+\path{split_records} is the general condition: a record's fields do not sit in one contiguous block. The multisection returns in \Cref{fig:split-record} sharpen it twice. First, the pieces sit in separately labeled sections --- the mileage and gallons in Schedule~A, the tax fields in the Jurisdictions section, the reporting period in the return header --- so the extractor must join all three to emit one row (\path{cross_section_join}). Second, the natural join key is ambiguous: the packet contains several returns and every return lists the same states, so ``AL'' alone matches many rows across the document, and joining on the state code mixes values from different returns; the correct key is the pair of return and jurisdiction (\path{repeated_keys}).
 
 \begin{figure}[H]
+\paragraph{\texttt{multi\_row}.}
+One logical record includes wrapped notes, descriptions, clause prose, or continuation rows. In \Cref{fig:multi-row}, each incident's description, continuation notes, and ledger lines print below its main row. A one-row-one-record parser can fragment the target or attach text to the wrong item. The driver packets show the same pattern as multi-line MVR detail blocks.
+\par\medskip
     \centering
     \includegraphics[width=\linewidth]{figures/example_multi_row_annot.png}
-    \caption{Multi-row record details in an external loss-run report.}
+    \caption{Multi-row record details in an external loss run: the boxed description and continuation lines belong to the claim row above them.}
     \label{fig:multi-row}
 \end{figure}
 
-In \Cref{fig:merged-cells}, a subtotal cell spans the leading columns and interrupts otherwise regular unit rows. The roll-up is context, not a target record.
-
 \begin{figure}[H]
+\paragraph{\texttt{merged\_cells}.}
+Some cells span several columns instead of respecting the one-cell-per-column grid, so a parser that assumes a regular grid misaligns everything after them. The merges in this release are horizontal (\texttt{colspan}): in \Cref{fig:merged-cells}, a subtotal cell spans the leading columns of a mileage table and interrupts otherwise regular unit rows. The roll-up is context, not a target record, so the extractor must skip it without ending the table or emitting it as a data row. The loss-run tables use the same device for description and total cells that stretch under several columns. Vertical merges, where one cell applies to several rows, do not appear in the current corpus.
+\par\medskip
     \centering
     \includegraphics[width=\linewidth]{figures/example_merged_cells_annot.png}
     \caption{A merged subtotal row interrupts a mileage table.}
     \label{fig:merged-cells}
 \end{figure}
 
-\Cref{fig:multi-column} places independent policy-clause streams side by side. Naive reading order can interleave fields from unrelated clauses.
+\begin{figure}[H]
+\paragraph{\texttt{multiple\_tables}.}
+A single page mixes the target table with other table-shaped content, so the extractor must select the right table, not only the right rows. In \Cref{fig:multiple-tables}, one loss-run page holds the target incident table, a policy-period total row whose dollar cells sit in the same columns as claim financials, and a complete second policy section that is an empty no-claims table with its own header. The totals and the empty section must be consumed without emitting anything: the total is not a ninth claim, and the correct output for the empty section is exactly zero records.
+\par\medskip
+    \centering
+    \includegraphics[width=\linewidth]{figures/example_multiple_tables_annot.png}
+    \caption{One loss-run page with three table-shaped regions: the target incident table, a boxed policy-period total row, and a boxed empty no-claims section for a second policy. Only incident rows are targets.}
+    \label{fig:multiple-tables}
+\end{figure}
+
+\paragraph{\texttt{large\_doc}.}
+Hundreds to thousands of targets, or enough pages to expose truncation and list-completeness failures. This stressor is a scale property rather than a visible layout feature: the longest released files reach 133 and 148 pages, and single files reach four-digit target counts.
+
+\paragraph{\texttt{ocr\_condition} and \texttt{ocr\_layout\_condition}.}
+The released text input is OCR output from rendered page images rather than the PDF text layer or the HTML source (\texttt{ocr\_\hspace{0pt}condition}), and the transcripts preserve visual spacing and reading order instead of converting tables into clean CSV-style rows (\texttt{ocr\_\hspace{0pt}layout\_\hspace{0pt}condition}). These are input conditions rather than layout features; \Cref{subsec:ocr-condition} describes the OCR pipeline and how reported results should state the input condition.
 
 \begin{figure}[H]
+\paragraph{\texttt{duplicates}.}
+Duplicate handling cuts both ways. The output is scored as a multiset, so if a document legitimately contained two identical records, both copies would be required; a blanket ``drop duplicates'' rule is therefore not safe. The pressure in the current corpus comes from the opposite direction: near-duplicate \emph{restatements} that must not be emitted at all. In \Cref{fig:duplicates}, summary cards restate claim rows whose detail tables appear later in the same report, so each claim is one target record, not two, and the policy packets add prior-term and archived sections with the same shape as current material. The current release contains no true duplicate target records, so it stresses only the ignore side; pairing both directions is future work (\Cref{sec:limitations}).
+\par\medskip
+    \centering
+    \includegraphics[width=\linewidth]{figures/example_duplicates_annot.png}
+    \caption{Summary cards in a loss run restate claim rows whose detail tables appear later in the same report, creating near-duplicate distractors.}
+    \label{fig:duplicates}
+\end{figure}
+
+\begin{figure}[H]
+\paragraph{\texttt{multi\_column}.}
+Two-column and form-like layouts stress reading order. In \Cref{fig:multi-column}, a material-provisions page places two independent clause streams side by side; the clauses are target records in the policy packets, and naive left-to-right line order interleaves fields from unrelated clauses.
+\par\medskip
     \centering
     \includegraphics[width=\linewidth]{figures/example_multi_column_annot.png}
     \caption{Two-column policy provisions with independent clause streams.}
     \label{fig:multi-column}
 \end{figure}
 
-\Cref{fig:long-range} illustrates long-range evidence for one claim. The target begins on page 3; three join keys recur in distant sections. These crops show only part of the full evidence chain.
+\begin{figure}[H]
+\paragraph{\texttt{heterogeneous\_record\_list}.}
+A policy packet is scored as one output list, but its records are not one kind of row: a location record carries address, building, and class fields; a coverage record carries limits and deductibles; a form record carries form numbers and edition dates. \Cref{fig:heterogeneous} shows the three schedules from one packet --- premises, coverage, and forms --- each printing records with a different shape. The stressor tests whether an extractor can emit records of several schemas in a single pass over one document. A system that locks onto one record layout for the whole document flattens or drops the families that do not fit it, which is visible in the results as a large gap on the policy packets.
+\par\medskip
+    \centering
+    \includegraphics[width=\linewidth]{figures/example_heterogeneous_annot.png}
+    \caption{Three schedules of one policy packet (titles boxed): location records, coverage records, and form records follow different schemas but land in the same output list.}
+    \label{fig:heterogeneous}
+\end{figure}
+
+The current release prioritizes fewer, larger, more realistic PDFs rather than many small template variants. This choice reflects the intended use case: measuring list-completeness failures at scale. Several PDFs contain more than 1{,}000 target records, and the full corpus contains 29{,}599 target records across 32 PDFs.
 
 \begin{figure}[H]
+\paragraph{\texttt{long\_range\_evidence}.}
+Required fields are separated by distant pages within the same PDF. \Cref{fig:long-range} illustrates long-range evidence for one claim. The target begins on page 3; three join keys recur in distant sections. These crops show only part of the full evidence chain.
+\par\medskip
     \centering
     \begin{subfigure}{\linewidth}
         \centering
@@ -193,15 +250,15 @@ In \Cref{fig:merged-cells}, a subtotal cell spans the leading columns and interr
 
 The crops are illustrative, not complete provenance. The scored claim has 24 top-level fields plus nested financials. Its metadata maps six evidence blocks: intake cards, driver assignments, policy registers, cause narratives, claimant notices, and financial ledgers. The first and last primary blocks are 57 pages apart, so extraction must preserve several join keys across the packet.
 
-The current release prioritizes fewer, larger, more realistic PDFs rather than many small template variants. This choice reflects the intended use case: measuring list-completeness failures at scale. Several PDFs contain more than 1{,}000 target records, and the full corpus contains 29{,}599 target records across 32 PDFs.
-
 \subsection{Corpus inventory}
 The release favors fewer, larger PDFs: 26 operations documents contain 28{,}178 targets, three claim packets contain 77, and three policy packets contain 1{,}344. \Cref{tab:dataset-scale} in the appendix gives the complete technical family inventory.
 
 \subsection{Evaluation configurations}
-Each instance carries three levels of metadata. The \texttt{hf\_config} field assigns one of three release configurations (\Cref{tab:evaluation-configurations}), \texttt{complexity\_regime} identifies its document family, and \texttt{problems} records cross-cutting stressors. A PDF can therefore be large, multi-table, OCR-conditioned, and long-range at the same time.
+Each instance carries three levels of metadata. The \texttt{hf\_config} field assigns one of three release configurations (\Cref{tab:evaluation-configurations}), \texttt{complexity\_regime} identifies its document family, and \texttt{problems} records the cross-cutting stressors catalogued in \Cref{subsec:stressors}. A PDF can therefore be large, multi-table, OCR-conditioned, and long-range at the same time.
 
-\begin{table}[t]
+These configurations are not a difficulty ladder. Core operations includes both parser-friendly scale controls and multisection joins. Claim and policy packets emphasize inherited context, distant evidence, heterogeneous schemas, and distractors. Results should therefore be sliced by evaluation role, family, and stressor rather than reduced to one ranking.
+
+\begin{table}[H]
 \centering
 \small
 \caption{Evaluation configurations in the current release.}
@@ -219,42 +276,9 @@ Policy packets & 3 & 1{,}344 & Heterogeneous policy records across declarations,
 \end{tabular}
 \end{table}
 
-These configurations are not a difficulty ladder. Core operations includes both parser-friendly scale controls and multisection joins. Claim and policy packets emphasize inherited context, distant evidence, heterogeneous schemas, and distractors. Results should therefore be sliced by evaluation role, family, and stressor rather than reduced to one ranking.
-
-\Cref{tab:complexity-stressors} defines 14 canonical cross-cutting stressors. The 45 distinct tokens currently found in \texttt{problems} also include finer domain and implementation tags for audit slices; they are not additional canonical categories. A page break tests pagination and completeness, while \path{split_records} requires assembling one target from separate visual blocks. Duplicate pressure is represented mainly by prior-term, archived, or near-duplicate distractors.
-
-\begin{table}[tp]
-\centering
-\small
-\caption{Cross-cutting complexity stressors tracked in release metadata.}
-\label{tab:complexity-stressors}
-\begin{tabular}{@{}p{0.25\linewidth}p{0.67\linewidth}@{}}
-\toprule
-Stressor & What it tests \\
-\midrule
-\path{page_breaks} & Pagination pressure: target lists or supporting sections span page boundaries, often with repeated headers or inherited context. This is mostly a list-completeness stressor by itself. \\
-\path{split_records} & One logical target record has fields distributed across separate visual blocks, sections, or pages, so the extractor must assemble the item rather than copy one row. \\
-\path{multi_row} & One logical record includes wrapped notes, descriptions, clause prose, or continuation rows. \\
-\path{duplicates} & Duplicate or near-duplicate distractor material, especially prior-term or archive sections that should not be extracted as current targets. \\
-\path{large_doc} & Hundreds to thousands of targets, or enough pages to expose truncation and list-completeness failures. \\
-\path{multiple_tables} & Target rows are mixed with summaries, ledgers, schedules, support tables, or empty/no-claims tables. \\
-\path{multi_column} & Two-column or form-like layouts that stress reading order. \\
-\path{merged_cells} & Merged-cell and section-spanning table structures such as \texttt{colspan} rows. \\
-\path{ocr_condition} & Released text is OCR output from rendered PDF page images. \\
-\path{ocr_layout_condition} & OCR preserves visual spacing and reading order instead of converting tables into clean CSV-style rows. \\
-\path{long_range_evidence} & Required fields are separated by distant pages within the same PDF. \\
-\path{cross_section_join} & A target row must be assembled from separately labeled sections, such as return summary, distance/gallon schedules, and liability schedules. \\
-\path{repeated_keys} & Common keys such as states or jurisdictions recur across sections or returns, so the key alone is not a unique target identifier. \\
-\path{heterogeneous_record_list} & A single output list contains multiple schema families, as in policy packets. \\
-\bottomrule
-\end{tabular}
-\end{table}
-
-We do not print benchmark labels inside the PDFs because that would reduce realism and could make extraction easier. The exact tags live in sidecar metadata; \Cref{tab:complexity-doc-examples} in the appendix maps every canonical stressor to representative pages for visual audit.
-
 \subsection{OCR condition}
 \label{subsec:ocr-condition}
-Every released PDF has an OCR transcript generated from rendered page images. The released transcript condition was produced with Google Gemini 3.5 Flash vision OCR through the direct Vertex AI API, after rasterizing PDF pages at 200 DPI. The OCR transcript is the released text condition for this version; it is not the PDF text layer or the HTML source text. We treat OCR as a controlled input condition: a system may evaluate directly from the PDF, from the OCR transcript, or from its own OCR pipeline, but reported results should state the input condition clearly.
+Every released PDF has an OCR transcript generated from rendered page images. The released transcript condition was produced with Google Gemini 3.5 Flash vision OCR through the direct Google/Vertex Gemini API path, after rasterizing PDF pages at 200 DPI. The OCR transcript is the released text condition for this version; it is not the PDF text layer or the HTML source text. We treat OCR as a controlled input condition: a system may evaluate directly from the PDF, from the OCR transcript, or from its own OCR pipeline, but reported results should state the input condition clearly.
 
 \subsection{Long-range evidence}
 LongListBench includes single-document multi-hop cases because many production tasks are not contained in one adjacent table region. A target loss-run record may require joining a front claim schedule against policy registers, driver rosters, cause-code appendices, claimant indexes, and payment ledgers that appear dozens or hundreds of pages later. Policy packets require similar joins across declarations, location schedules, forms, endorsements, rating pages, and premium summaries.

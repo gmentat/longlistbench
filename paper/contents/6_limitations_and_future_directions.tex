@@ -1,5 +1,7 @@
 LongListBench is a measurement tool for long-list extraction under controlled synthetic conditions. Table~\ref{tab:benchmark-scope} summarizes the current scope.
 
+The documents are synthetic. This is necessary for public release, but it means the benchmark cannot replace evaluation on a private production corpus. We used private documents only as structural references for layout and packet organization; the released names, identifiers, values, and prose are generated. Some sections are intentionally composed to cover benchmark stressors, so the corpus should be read as production-inspired measurement data rather than exact replicas of source documents.
+
 \begin{table}[H]
 \centering
 \caption{Scope of the current LongListBench release.}
@@ -17,8 +19,6 @@ Agentic sandbox support and four full-corpus OCR baselines & Latency/cost-normal
 \end{tabular}
 \end{table}
 
-The documents are synthetic. This is necessary for public release, but it means the benchmark cannot replace evaluation on a private production corpus. We used private documents only as structural references for layout and packet organization; the released names, identifiers, values, and prose are generated. Some sections are intentionally composed to cover benchmark stressors, so the corpus should be read as production-inspired measurement data rather than exact replicas of source documents.
-
 The current release includes one OCR transcript condition. This supports reproducible OCR-conditioned evaluation, but it does not isolate OCR penalty by itself. Measuring OCR penalty requires adding another transcript or direct-PDF condition and running the same extraction protocol across both.
 
 The released output contract treats records as an unordered multiset. Exact-record and complete-document metrics therefore test values and multiplicity, not source order. An order-sensitive task should declare ordering in the contract and rerun extractors under that requirement rather than retroactively penalizing the saved predictions.
@@ -32,5 +32,7 @@ Finally, the corpus now contains several operations record types whose public sc
 LongListBench is intended for configuration-, family-, and stressor-aware measurement of record completeness, field alignment, OCR-conditioned extraction, and long-range evidence handling. Parser-friendly operations families are scale controls; claims about difficult extraction should rely on packet and cross-section families as well as aggregate scores.
 
 Complexity slices are observational. Tags overlap, and document families differ in length, schema, and layout, so lower performance in a tagged slice does not identify one stressor as the cause. Paired renderings that hold records constant while adding one stressor would be required for causal attribution.
+
+Two stressors are currently one-sided. Duplicate pressure comes only from near-duplicate restatements that must be ignored; the corpus contains no true duplicate target records, so a system cannot be tested on keeping legitimate repeats while dropping restatements, and a blanket drop-duplicates rule is never punished. Merged-cell pressure comes only from horizontal \texttt{colspan} structures; vertical merges, where one cell applies to several rows, do not appear. Future releases should pair true-duplicate targets with restatement distractors in the same documents and add vertically merged schedules.
 
 The release is not a complete model leaderboard. It includes GPT-5.5, GPT-5.6-Sol, Opus 4.8, and Fable 5 under one agentic protocol, but no latency- or cost-normalized comparison across broader models and protocols. Full-context one-shot runs are impractical on the largest outputs, and synthetic public documents cannot replace private production evaluation.
