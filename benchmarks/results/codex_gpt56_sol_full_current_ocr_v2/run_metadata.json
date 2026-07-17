@@ -8,8 +8,8 @@
   "cli_version_observed_at_metadata_write": "codex-cli 0.144.4",
   "authentication": "Codex subscription; credentials are not stored",
   "additional_denied_paths": [
-    "/Users/anton/d/kay",
-    "/Users/anton/Desktop"
+    "<repo-parent>",
+    "<user-home>/Desktop"
   ],
   "sample_statuses": {
     "multihop_012_001_crosspage": "attest",

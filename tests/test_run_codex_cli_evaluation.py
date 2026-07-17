@@ -59,20 +59,22 @@ reasoning effort: xhigh
     )
 
     runner._write_run_metadata(
+        repo_root=tmp_path / "kay" / "longlistbench",
         output_dir=tmp_path,
         transcript="ocr",
         model_key="codex_gpt56_sol",
         requested_model="gpt-5.6-sol",
         effort="xhigh",
         statuses=[("sample", 0)],
-        extra_denied_paths=[tmp_path / "duplicate-data"],
+        extra_denied_paths=[tmp_path / "kay", tmp_path / "duplicate-data"],
     )
 
     payload = json.loads((tmp_path / runner.RUN_METADATA_FILE).read_text(encoding="utf-8"))
     assert payload["model_key"] == "codex_gpt56_sol"
     assert payload["requested_model"] == "gpt-5.6-sol"
     assert payload["effort"] == "xhigh"
-    assert payload["additional_denied_paths"] == [str((tmp_path / "duplicate-data").resolve())]
+    assert payload["additional_denied_paths"] == ["<repo-parent>", "<denied-path-2>"]
+    assert str(tmp_path) not in json.dumps(payload)
     assert payload["sample_statuses"] == {"sample": 0}
     assert payload["samples"] == {
         "sample": {

@@ -1,6 +1,6 @@
 {
-  "built_at": "2026-07-14T15:36:03.857718+00:00",
-  "dataset_dir": "/Users/anton/d/kay/longlistbench/data",
+  "built_at": "2026-07-17T16:09:05.072676+00:00",
+  "dataset_dir": "data",
   "source_metadata": "manifest.json",
   "total_instances": 32,
   "instances": [

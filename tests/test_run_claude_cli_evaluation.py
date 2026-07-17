@@ -50,18 +50,20 @@ def test_cli_version_is_labeled_as_metadata_write_observation(tmp_path, monkeypa
     monkeypatch.setattr(runner, "_claude_cli_version", lambda: "2.1.207 (Claude Code)")
 
     runner._write_run_metadata(
+        repo_root=tmp_path / "kay" / "longlistbench",
         output_dir=tmp_path,
         transcript="ocr",
         sample_metadata={},
         model_key="claude_opus48",
         requested_model="claude-opus-4-8",
         effort="xhigh",
-        extra_denied_paths=[tmp_path / "duplicate-data"],
+        extra_denied_paths=[tmp_path / "kay", tmp_path / "duplicate-data"],
     )
 
     payload = json.loads((tmp_path / runner.RUN_METADATA_FILE).read_text(encoding="utf-8"))
     assert payload["cli_version_observed_at_metadata_write"] == "2.1.207 (Claude Code)"
-    assert payload["additional_denied_paths"] == [str((tmp_path / "duplicate-data").resolve())]
+    assert payload["additional_denied_paths"] == ["<repo-parent>", "<denied-path-2>"]
+    assert str(tmp_path) not in json.dumps(payload)
     assert "claude_cli_version" not in payload
 
 

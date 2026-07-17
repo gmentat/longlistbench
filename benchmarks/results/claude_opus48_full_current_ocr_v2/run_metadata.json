@@ -8,8 +8,8 @@
   "cli_version_observed_at_metadata_write": "2.1.209 (Claude Code)",
   "authentication": "Claude subscription; credentials are not stored",
   "additional_denied_paths": [
-    "/Users/anton/d/kay",
-    "/Users/anton/Desktop"
+    "<repo-parent>",
+    "<user-home>/Desktop"
   ],
   "samples": {
     "multihop_012_001_crosspage": {
