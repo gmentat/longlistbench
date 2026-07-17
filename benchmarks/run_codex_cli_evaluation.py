@@ -440,8 +440,31 @@ def _load_run_metadata(output_dir: Path) -> dict:
     return payload.get("samples") or {}
 
 
+def _metadata_denied_path_labels(
+    repo_root: Path,
+    denied_paths: list[Path] | None,
+) -> list[str]:
+    """Describe sandbox deny paths without serializing host-specific locations."""
+    resolved_repo = repo_root.resolve()
+    resolved_repo_parent = resolved_repo.parent
+    resolved_home = Path.home().resolve()
+    known_paths = {
+        resolved_repo: "<repo-root>",
+        resolved_repo_parent: "<repo-parent>",
+        resolved_home: "<user-home>",
+        (resolved_home / "Desktop").resolve(): "<user-home>/Desktop",
+    }
+
+    labels: list[str] = []
+    for index, path in enumerate(denied_paths or [], start=1):
+        resolved_path = path.resolve()
+        labels.append(known_paths.get(resolved_path, f"<denied-path-{index}>"))
+    return labels
+
+
 def _write_run_metadata(
     *,
+    repo_root: Path,
     output_dir: Path,
     transcript: str,
     model_key: str,
@@ -464,9 +487,10 @@ def _write_run_metadata(
         "transcript": transcript,
         "cli_version_observed_at_metadata_write": runtime_version or _codex_cli_version(),
         "authentication": "Codex subscription; credentials are not stored",
-        "additional_denied_paths": [
-            str(path.resolve()) for path in extra_denied_paths or []
-        ],
+        "additional_denied_paths": _metadata_denied_path_labels(
+            repo_root,
+            extra_denied_paths,
+        ),
         "sample_statuses": {sample: status for sample, status in statuses},
         "samples": observed,
     }
@@ -587,6 +611,7 @@ def main() -> int:
         encoding="utf-8",
     )
     _write_run_metadata(
+        repo_root=repo_root,
         output_dir=output_dir,
         transcript=args.transcript,
         model_key=args.model_key,

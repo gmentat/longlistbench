@@ -73,7 +73,7 @@ def build_instance_index(dataset_dir: Path) -> dict[str, Any]:
     Returns:
         Dictionary containing:
             - built_at: ISO timestamp of index creation
-            - dataset_dir: String path to the dataset directory
+            - dataset_dir: Portable label for the dataset directory
             - source_metadata: Filename of the source metadata
             - total_instances: Count of instances in the index
             - instances: List of instance dictionaries with file info and metadata
@@ -135,7 +135,7 @@ def build_instance_index(dataset_dir: Path) -> dict[str, Any]:
 
     return {
         "built_at": datetime.now(timezone.utc).isoformat(),
-        "dataset_dir": str(dataset_dir),
+        "dataset_dir": dataset_dir.name or ".",
         "source_metadata": str(metadata_path.name),
         "total_instances": len(out_instances),
         "instances": out_instances,
