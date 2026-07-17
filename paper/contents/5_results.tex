@@ -97,6 +97,40 @@ Vehicle-schedule scale controls & 2 & 1{,}600 & 100.0\% & 100.0\% \\
 
 The failures differ in kind. GPT-5.6-Sol returns 1{,}259 driver rows but only 8 are exact; Fable 5 returns 1{,}243 and matches 24 exactly. Their driver/MVR field $F_1$ remains 88.0\% and 88.4\%, showing that most roster fields are present while sparse enrichment fields are not joined correctly. Both systems match 2{,}614 of 2{,}737 split-schedule records and 76 of 77 long-range claim records. Policy packets separate them: GPT-5.6-Sol matches 985 of 1{,}344 records with 95.8\% field $F_1$, while Fable 5 returns only 232 records, matches 196, and reaches 33.5\% field $F_1$. Scale controls remain near ceiling, yet only four of 13 are completely correct for either system because a single missing, extra, or malformed record fails document completion.
 
-Cross-cutting slices reinforce this variation. Exact-record recall for GPT-5.6-Sol and Fable 5 is 73.3\% and 14.6\% on heterogeneous lists, 74.7\% and 19.1\% on long-range evidence, 94.9\% and 86.9\% on split records, 95.0\% and 87.0\% with inherited context, and 98.3\% and 98.3\% under layout randomization. Duplicate-bearing documents score 93.1\% and 73.4\%; cross-section joins and repeated keys score 99.6\% for both. These are observational associations because tags overlap and document families differ; paired renderings would be needed to estimate one stressor's causal effect.
+\Cref{tab:agentic-by-stressor} reports exact-record recall for all 14 canonical stressors. The largest observed gap occurs in heterogeneous policy lists. The long-range and multi-column rows cover the same six packets and are therefore not independent findings.
+
+\begin{table}[H]
+\centering
+\scriptsize
+\caption{Exact-record recall over documents carrying each canonical stressor tag. Tags are document-level and overlap, so these are observational slices rather than isolated effects.}
+\label{tab:agentic-by-stressor}
+\begin{tabular}{@{}p{0.43\linewidth}rrrr@{}}
+\toprule
+Stressor & Docs & Records & GPT-5.6-Sol & Fable 5 \\
+\midrule
+\multicolumn{5}{@{}l}{\textit{Record assembly and schema}} \\
+Split records & 15 & 9{,}797 & 94.9\% & 86.9\% \\
+Cross-section joins & 2 & 796 & 99.6\% & 99.6\% \\
+Repeated keys & 2 & 796 & 99.6\% & 99.6\% \\
+Long-range evidence & 6 & 1{,}421 & 74.7\% & 19.1\% \\
+Heterogeneous record lists & 3 & 1{,}344 & 73.3\% & 14.6\% \\
+\addlinespace
+\multicolumn{5}{@{}l}{\textit{Layout and distractors}} \\
+Page-spanning content & 32 & 29{,}599 & 93.7\% & 90.9\% \\
+Multi-row records & 22 & 21{,}942 & 92.1\% & 88.3\% \\
+Merged cells (horizontal spans only) & 4 & 3{,}043 & 96.7\% & 95.2\% \\
+Multiple tables & 31 & 29{,}255 & 93.8\% & 91.8\% \\
+Multi-column pages & 6 & 1{,}421 & 74.7\% & 19.1\% \\
+Near-duplicate distractors (no true target duplicates) & 7 & 1{,}321 & 93.1\% & 73.4\% \\
+\addlinespace
+\multicolumn{5}{@{}l}{\textit{Scale and OCR input}} \\
+Large documents & 29 & 28{,}339 & 97.8\% & 94.9\% \\
+OCR input & 32 & 29{,}599 & 93.7\% & 90.9\% \\
+OCR-preserved multi-section layout & 2 & 796 & 99.6\% & 99.6\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Each row scores all targets in a tagged PDF, not only records printed on pages where the condition is visible. The multi-column slice, for example, contains 1{,}344 policy records and 77 claim records. Fable 5 matches 196 policy records and 76 claim records, so its 19.1\% aggregate reflects broad policy-list omissions rather than an isolated reading-order failure. Page-spanning content and OCR input cover all 32 documents; cross-section joins, repeated keys, and OCR-preserved multi-section layout cover the same two return packets.
 
 Full-context one-shot extraction is not a practical full-corpus protocol here. Small claim packets can return scoreable outputs, but larger outputs reach model limits or time out. We therefore treat one-shot prompting as a lower-bound operational stress test and use the per-document agentic protocol for full-corpus comparison.

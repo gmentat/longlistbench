@@ -285,6 +285,7 @@ class HuggingFaceExportTests(unittest.TestCase):
         self.assertIn("[Anton Fedoruk](https://orcid.org/0009-0004-0260-1704)", card)
         self.assertIn("[Serhii Shchoholiev](https://orcid.org/0009-0007-2014-4828)", card)
         self.assertIn("[Akhil Mehta](https://orcid.org/0009-0001-0134-2905)", card)
+        self.assertIn("and Vishal Rohra", card)
         self.assertIn("[Release v2.2.0]", card)
         self.assertNotIn("[Paper source]", card)
         self.assertIn("Records/doc range", card)
