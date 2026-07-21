@@ -1,6 +1,6 @@
 # LongListBench
 
-[Hugging Face dataset](https://huggingface.co/datasets/kaydotai/LongListBench) | [Release v2.2.1](https://github.com/kaydotai/longlistbench/releases/tag/v2.2.1)
+[Hugging Face dataset](https://huggingface.co/datasets/kaydotai/LongListBench) | [Leaderboard](https://huggingface.co/spaces/kaydotai/LongListBench-Leaderboard) | [Release v2.2.1](https://github.com/kaydotai/longlistbench/releases/tag/v2.2.1)
 
 Benchmark for long-list entity extraction from complex semi-structured business PDFs, including dense layouts, OCR transcripts, and long-range cross-page evidence.
 
@@ -90,6 +90,25 @@ python benchmarks/export_hf_dataset.py \
   --overwrite \
   --upload
 ```
+
+## Leaderboard Space
+
+The [leaderboard](https://huggingface.co/spaces/kaydotai/LongListBench-Leaderboard) is a static
+Hugging Face Space generated from the saved evaluation reports in `benchmarks/results/`:
+
+```bash
+make hf-leaderboard
+```
+
+This writes an ignored local package to `dist/huggingface/leaderboard_space/`. Upload only after
+inspecting the generated files:
+
+```bash
+python benchmarks/export_leaderboard_space.py --overwrite --upload
+```
+
+To add a result, verify that the submitted scores reproduce from the saved predictions, add the run
+directory to `RUNS` in `benchmarks/export_leaderboard_space.py`, then rebuild and upload.
 
 ## Versioning and Citation
 

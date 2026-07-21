@@ -1,6 +1,6 @@
 # Repository Makefile (convenience targets)
 
-.PHONY: help setup generate-core-operations generate-multihop generate-policy-multihop ocr ocr-multihop eval hf-export paper paper-quick clean
+.PHONY: help setup generate-core-operations generate-multihop generate-policy-multihop ocr ocr-multihop eval hf-export hf-leaderboard paper paper-quick clean
 
 VENV_DIR ?= .venv
 EVAL_OUT ?= benchmarks/results/scratch/eval_ocr
@@ -8,6 +8,8 @@ EVAL_MODELS ?= gpt55_oneshot
 EVAL_WORKERS ?= 2
 HF_OUT ?= dist/huggingface/longlistbench
 HF_REPO_ID ?= kaydotai/LongListBench
+HF_LEADERBOARD_OUT ?= dist/huggingface/leaderboard_space
+HF_LEADERBOARD_REPO_ID ?= kaydotai/LongListBench-Leaderboard
 OCR_ENGINE ?= gemini
 OCR_MODEL ?= gemini-3.5-flash
 POLICY_TEXT_GENERATOR ?= template
@@ -24,6 +26,7 @@ help:
 	@echo "  make ocr-multihop - OCR cross-page multi-hop PDFs"
 	@echo "  make eval        - Run evaluation (requires model API keys unless --offline)"
 	@echo "  make hf-export   - Build a local Hugging Face dataset package under dist/"
+	@echo "  make hf-leaderboard - Build the Hugging Face leaderboard Space under dist/"
 	@echo "  make paper       - Build the paper PDF (full build with bibliography)"
 	@echo "  make paper-quick - Quick paper build (single pass, no bibliography update)"
 	@echo "  make clean       - Clean paper build artifacts"
@@ -58,6 +61,9 @@ eval:
 
 hf-export:
 	. $(VENV_DIR)/bin/activate && python benchmarks/export_hf_dataset.py --input data --output $(HF_OUT) --repo-id $(HF_REPO_ID) --overwrite
+
+hf-leaderboard:
+	. $(VENV_DIR)/bin/activate && python benchmarks/export_leaderboard_space.py --output $(HF_LEADERBOARD_OUT) --repo-id $(HF_LEADERBOARD_REPO_ID) --overwrite
 
 paper:
 	$(MAKE) -C paper pdf
