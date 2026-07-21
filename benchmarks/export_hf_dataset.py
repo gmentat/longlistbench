@@ -762,7 +762,7 @@ Some structured-report families are parser-friendly by design and serve as scale
 ```bibtex
 @misc{{fedoruk2026longlistbench,
   title        = {{LongListBench: A Benchmark for Long-List Entity Extraction from Complex Business PDFs}},
-  author       = {{Fedoruk, Anton and Shchoholiev, Serhii and Mehta, Akhil}},
+  author       = {{Fedoruk, Anton and Shchoholiev, Serhii and Mehta, Akhil and Rohra, Vishal}},
   publisher    = {{Kay.ai}},
   year         = {{2026}},
   version      = {{{RELEASE_VERSION}}},
