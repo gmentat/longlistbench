@@ -1,3 +1,4 @@
+import hashlib
 import json
 
 from benchmarks.ocr_claims_pdfs import (
@@ -35,6 +36,7 @@ def test_refresh_updates_sizes_and_only_marks_regenerated_samples(tmp_path):
         metadata = {
             "id": sample_id,
             "files": {},
+            "artifacts": {},
             "layout_revision": {"ocr_status": "stale_until_regenerated_from_pdf"},
         }
         (dataset / "metadata" / f"{sample_id}.json").write_text(
@@ -55,6 +57,15 @@ def test_refresh_updates_sizes_and_only_marks_regenerated_samples(tmp_path):
         == "regenerated_from_current_pdf"
     )
     assert "ocr_regenerated_at" in by_id["regenerated"]["layout_revision"]
-    assert by_id["unchanged"]["layout_revision"]["ocr_status"] == "stale_until_regenerated_from_pdf"
+    assert (
+        by_id["unchanged"]["layout_revision"]["ocr_status"]
+        == "stale_until_regenerated_from_pdf"
+    )
     assert by_id["regenerated"]["ocr_md_size_bytes"] == len("# Page 1\n")
     assert by_id["regenerated"]["files"]["pdf_size_bytes"] == len(b"pdf")
+    assert by_id["regenerated"]["artifacts"] == {
+        "pdf_sha256": hashlib.sha256(b"pdf").hexdigest(),
+        "html_sha256": hashlib.sha256(b"html").hexdigest(),
+        "ground_truth_sha256": hashlib.sha256(b"[]\n").hexdigest(),
+        "ocr_sha256": hashlib.sha256(b"# Page 1\n").hexdigest(),
+    }

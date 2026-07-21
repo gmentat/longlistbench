@@ -1,6 +1,6 @@
 # LongListBench
 
-[Hugging Face dataset](https://huggingface.co/datasets/kaydotai/LongListBench) | [Release v2.2.0](https://github.com/kaydotai/longlistbench/releases/tag/v2.2.0)
+[Hugging Face dataset](https://huggingface.co/datasets/kaydotai/LongListBench) | [Release v2.2.1](https://github.com/kaydotai/longlistbench/releases/tag/v2.2.1)
 
 Benchmark for long-list entity extraction from complex semi-structured business PDFs, including dense layouts, OCR transcripts, and long-range cross-page evidence.
 
@@ -41,6 +41,9 @@ make help
 # Create venv + install deps + install Playwright Chromium
 make setup
 
+# Regenerate all 26 synthetic core-operation documents under tmp/
+make generate-core-operations
+
 # Build dataset indexes from the current data/ directory
 python benchmarks/build_instance_index.py --input data
 
@@ -48,7 +51,9 @@ python benchmarks/build_instance_index.py --input data
 make paper
 ```
 
-See [`benchmarks/README.md`](benchmarks/README.md) for benchmark documentation.
+See [`benchmarks/README.md`](benchmarks/README.md) for benchmark documentation and
+[`benchmarks/core_operations/README.md`](benchmarks/core_operations/README.md) for
+the public synthetic generators and templates.
 
 ## Hugging Face Dataset Package
 
@@ -100,7 +105,7 @@ python benchmarks/export_hf_dataset.py \
 - **3 claim cross-page PDFs** requiring long-range joins within a single document
 - **Ground truth annotations** in JSON format
 - **OCR transcripts** generated from rendered PDF page images
-- **OCR support validation**: 99.9% average identifier coverage, 99.9% tracked identifier-field support, 17 records with a missing tracked identifier, and an audited 56/76,968 numeric-field OCR miss set
+- **OCR support validation**: 100.0% average identifier coverage, 100.0% tracked identifier-field support, no records with a missing tracked identifier, and an audited 56/76,968 numeric-field OCR miss set
 - **Synthetic visible values only**; private production documents were used only as visual layout references
 
 ## Dataset Layout
@@ -207,7 +212,7 @@ The policy suite has 3 commercial insurance policy PDFs and 1,344 target policy 
 
 Interpret the configs separately. `core_operations` contains high-density structured reports where deterministic row parsers or document-specific agent code can perform well; those files measure scale, OCR preservation, and output completeness. The multisection IFTA files within `core_operations` add OCR-layout preservation and cross-section joins. The claim and policy packet configs are the stronger complex packet cases, with inherited context, heterogeneous record types, distant supporting sections, and distractor material.
 
-OCR support should be interpreted at the affected-record and field level, not only by unique identifier coverage. The identifier validation reports 17 affected records across 29,599 targets. The numeric audit checks every ground-truth value with absolute value at least 10 and records 56 genuine OCR misses among 76,968 checked numeric fields (0.073%). The released transcript is not hand-corrected; `data/ocr_numeric_fidelity_baseline.json` makes the exact miss set reproducible. These checks do not score extraction quality by themselves. The evaluator compares complete normalized records first and reports flattened field-value overlap as secondary partial credit.
+OCR support should be interpreted at the affected-record and field level, not only by unique identifier coverage. The identifier validation finds every tracked identifier across all 29,599 targets. The numeric audit checks every ground-truth value with absolute value at least 10 and records 56 genuine OCR misses among 76,968 checked numeric fields (0.073%). The released transcript is not hand-corrected; `data/ocr_numeric_fidelity_baseline.json` makes the exact miss set reproducible. These checks do not score extraction quality by themselves. The evaluator compares complete normalized records first and reports flattened field-value overlap as secondary partial credit.
 
 | Sample | Pages | Target policy records |
 |--------|-------|-----------------------|
@@ -223,10 +228,10 @@ The release includes four full-corpus repository-denied coding-agent runs under 
 
 | Agent | Documents | Target records | Errors | Exact-record recall | Complete documents | Field micro-F1 | Field macro-F1 |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| Codex CLI `gpt-5.6-sol`, xhigh | 32 | 29,599 | 0 | 93.7% | 6/32 (18.8%) | 98.7% | 98.3% |
-| Claude Code `claude-fable-5`, xhigh | 32 | 29,599 | 0 | 90.9% | 6/32 (18.8%) | 96.1% | 92.6% |
-| Codex CLI `gpt-5.5`, xhigh | 32 | 29,599 | 0 | 90.4% | 4/32 (12.5%) | 98.2% | 97.7% |
-| Claude Code `claude-opus-4-8`, xhigh | 32 | 29,599 | 0 | 93.6% | 7/32 (21.9%) | 98.8% | 98.4% |
+| Codex CLI `gpt-5.6-sol`, xhigh | 32 | 29,599 | 0 | 97.9% | 8/32 (25.0%) | 99.4% | 99.4% |
+| Claude Code `claude-fable-5`, xhigh | 32 | 29,599 | 0 | 95.1% | 9/32 (28.1%) | 96.8% | 93.6% |
+| Codex CLI `gpt-5.5`, xhigh | 32 | 29,599 | 0 | 94.5% | 4/32 (12.5%) | 98.8% | 98.6% |
+| Claude Code `claude-opus-4-8`, xhigh | 32 | 29,599 | 0 | 97.7% | 7/32 (21.9%) | 99.4% | 99.3% |
 
 The latest saved results are under `benchmarks/results/codex_gpt56_sol_full_current_ocr_v2/` and `benchmarks/results/claude_fable5_full_current_ocr_v2/`; the GPT-5.5 and Opus 4.8 comparison runs remain available beside them.
 
@@ -236,14 +241,14 @@ The evaluator uses a fixed document-family mapping for scale-control and structu
 
 | Evaluation role | Documents | Target records | GPT-5.6-Sol exact | Fable 5 exact | GPT-5.6-Sol complete | Fable 5 complete |
 |---|---:|---:|---:|---:|---:|---:|
-| Structural challenges | 19 | 8,414 | 79.0% | 69.3% | 2/19 (10.5%) | 2/19 (10.5%) |
+| Structural challenges | 19 | 8,414 | 93.8% | 84.0% | 4/19 (21.1%) | 5/19 (26.3%) |
 | Scale controls | 13 | 21,185 | 99.5% | 99.5% | 4/13 (30.8%) | 4/13 (30.8%) |
 
 Strict exact-record recall for the latest models, labeled by the extraction problem each family emphasizes:
 
 | Extraction problem | Documents | Target records | GPT-5.6-Sol | Fable 5 |
 |---|---:|---:|---:|---:|
-| Sparse record enrichment (driver/MVR) | 3 | 1,260 | 0.6% | 1.9% |
+| Sparse record enrichment (driver/MVR) | 3 | 1,260 | 99.4% | 100.0% |
 | Long-range claim joins | 3 | 77 | 98.7% | 98.7% |
 | Split return schedules | 3 | 2,737 | 95.5% | 95.5% |
 | Mixed row/detail loss runs | 3 | 900 | 97.3% | 92.2% |
@@ -258,6 +263,8 @@ Strict exact-record recall for the latest models, labeled by the extraction prob
 Full-context one-shot prompting is not treated as a full-corpus protocol for this release. It is useful as a lower-bound stress test, but the largest documents can hit model output limits or latency timeouts before returning a scoreable complete list.
 
 For all released runs, claim tasks received the published JSON Schema. Generic tasks received sample-specific field names and record groups derived from ground-truth object structure. This disclosed the output schema but not target values or counts. Each temporary workspace contained only the OCR transcript, field contract, prompt, and output directory; the macOS sandbox denied the benchmark repository, and the prompt prohibited other host files. This was repository isolation rather than a host-wide filesystem allowlist. Scoring normalizes whitespace, dates, decimals, accounting negatives, string case, documented region/fuel/line-of-business/clause-scope representations, visible `Unit` prefixes in vehicle identifiers, and `Quarter Return`/`Quarterly Return` heading aliases before comparing complete records and secondary field-value pairs. Extra heading context is not discarded.
+
+The corrected driver/MVR family was rerun on July 21, 2026 under the same model and isolation settings; predictions for the 29 unchanged document inputs were replayed from the July 14 runs. Per-sample fingerprints and prediction hashes in each result directory identify which inputs were rerun.
 
 ## Development Setup
 

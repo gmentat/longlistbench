@@ -7,6 +7,7 @@ Saves OCR results as Markdown files alongside the PDFs.
 import asyncio
 import base64
 from datetime import datetime, timezone
+import hashlib
 import io
 import json
 import os
@@ -646,6 +647,19 @@ def _refresh_artifact_sizes(payload: dict[str, Any], dataset_dir: Path, sample_i
         files["ocr_size_bytes"] = sizes["ocr"]
         if "ocr_md_size_bytes" in files:
             files["ocr_md_size_bytes"] = sizes["ocr"]
+
+    artifacts = payload.get("artifacts")
+    if isinstance(artifacts, dict):
+        for name, key in (
+            ("pdf", "pdf_sha256"),
+            ("html", "html_sha256"),
+            ("json", "ground_truth_sha256"),
+            ("ocr", "ocr_sha256"),
+        ):
+            path = paths[name]
+            artifacts[key] = (
+                hashlib.sha256(path.read_bytes()).hexdigest() if path.exists() else None
+            )
 
 
 def _mark_ocr_regenerated(payload: dict[str, Any], regenerated_at: str) -> None:

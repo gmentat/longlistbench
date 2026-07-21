@@ -50,7 +50,7 @@
     "ground_truth_sha256": "b1cf6458fcf4bfc076c2556a9d28765f7dc465dc405f5682654b45ddfbaae45c",
     "ocr_sha256": "0fe523c5a396df0d6f707d5361f80aea5a14fe6bd6846ef7b23a04b9d84af47d"
   },
-  "dataset_version": "2.1.0",
+  "dataset_version": "2.2.1",
   "layout_revision": {
     "date": "2026-07-14T08:45:41.949124+00:00",
     "purpose": "improve production-like document structure and layout variation",

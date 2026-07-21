@@ -47,7 +47,7 @@
   ],
   "pages_estimate": 44,
   "pdf_page_count": 44,
-  "dataset_version": "2.1.0",
+  "dataset_version": "2.2.1",
   "hf_config": "core_operations",
   "num_claims": 300,
   "document_count": 1,
