@@ -55,6 +55,23 @@ PROBLEM_LABELS = {
     "vehicle_schedule_spreadsheet_export": "Vehicle-schedule scale controls",
 }
 
+STRESSOR_LABELS = {
+    "split_records": "Split records",
+    "cross_section_join": "Cross-section joins",
+    "repeated_keys": "Repeated keys",
+    "long_range_evidence": "Long-range evidence",
+    "heterogeneous_record_list": "Heterogeneous record lists",
+    "page_breaks": "Page-spanning content",
+    "multi_row": "Multi-row records",
+    "merged_cells": "Merged cells (horizontal spans only)",
+    "multiple_tables": "Multiple tables",
+    "multi_column": "Multi-column pages",
+    "duplicates": "Near-duplicate distractors (no true target duplicates)",
+    "large_doc": "Large documents",
+    "ocr_condition": "OCR input",
+    "ocr_layout_condition": "OCR-preserved multi-section layout",
+}
+
 REQUIRED_SAMPLE_PROVENANCE = {
     "dataset_manifest_sha256",
     "runner_source_sha256",
@@ -228,25 +245,17 @@ def test_release_tables_match_saved_reports() -> None:
 
     sol_stressors = sol["by_stressor"]
     fable_stressors = fable["by_stressor"]
-    stressor_sentence = (
-        "Exact-record recall for GPT-5.6-Sol and Fable 5 is "
-        f"{_tex_pct(sol_stressors['heterogeneous_record_list']['exact_record_recall'])} and "
-        f"{_tex_pct(fable_stressors['heterogeneous_record_list']['exact_record_recall'])} "
-        "on heterogeneous lists, "
-        f"{_tex_pct(sol_stressors['long_range_evidence']['exact_record_recall'])} and "
-        f"{_tex_pct(fable_stressors['long_range_evidence']['exact_record_recall'])} "
-        "on long-range evidence, "
-        f"{_tex_pct(sol_stressors['split_records']['exact_record_recall'])} and "
-        f"{_tex_pct(fable_stressors['split_records']['exact_record_recall'])} "
-        "on split records, "
-        f"{_tex_pct(sol_stressors['inherited_context']['exact_record_recall'])} and "
-        f"{_tex_pct(fable_stressors['inherited_context']['exact_record_recall'])} "
-        "with inherited context, and "
-        f"{_tex_pct(sol_stressors['layout_randomization']['exact_record_recall'])} and "
-        f"{_tex_pct(fable_stressors['layout_randomization']['exact_record_recall'])} "
-        "under layout randomization."
-    )
-    assert stressor_sentence in results_tex
+    for stressor_key, label in STRESSOR_LABELS.items():
+        sol_stressor = sol_stressors[stressor_key]
+        fable_stressor = fable_stressors[stressor_key]
+        assert sol_stressor["count"] == fable_stressor["count"]
+        assert sol_stressor["rows"] == fable_stressor["rows"]
+        tex_row = (
+            f"{label} & {sol_stressor['count']} & {_tex_int(sol_stressor['rows'])} & "
+            f"{_tex_pct(sol_stressor['exact_record_recall'])} & "
+            f"{_tex_pct(fable_stressor['exact_record_recall'])} \\\\"
+        )
+        assert tex_row in results_tex
 
     assert (
         f"recover {_tex_pct(sol['exact_record_recall'])} and "
