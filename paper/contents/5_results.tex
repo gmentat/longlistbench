@@ -16,9 +16,9 @@ Manifest instances & 32 \\
 PDF, HTML, ground-truth, metadata, and OCR artifacts & 32 each \\
 Total target records & 29{,}599 \\
 Released transcript condition & OCR \\
-Average identifier coverage & 99.9\% \\
-Tracked identifier-field support & 99.9\% \\
-Records with missing tracked OCR identifiers & 17 \\
+Average identifier coverage & 100.0\% \\
+Tracked identifier-field support & 100.0\% \\
+Records with missing tracked OCR identifiers & 0 \\
 Audited numeric OCR misses & 56 of 76{,}968 (0.073\%) \\
 \bottomrule
 \end{tabular}
@@ -30,7 +30,7 @@ The largest scale family, mileage by vehicle, contributes 17{,}565 records acros
 \label{subsec:current-ocr-baseline}
 Each run received one OCR transcript and the public field contract in a temporary workspace. A macOS sandbox denied the benchmark repository, and ground truth, target values and counts, and generator code were absent. Agents could inspect the transcript, write temporary code, validate JSON, and return the complete list. These are protocol baselines, not raw one-shot model measurements.
 
-All four full-corpus runs were produced on July 14, 2026 at xhigh effort using Codex CLI 0.144.4 or Claude Code 2.1.209. Claude Code safe mode disabled project instructions, skills, plugins, hooks, and MCP servers. Per-sample metadata confirms the requested primary model in every run and records any auxiliary routing. All reports cover the same 29{,}599-target manifest with zero execution errors, and saved predictions reproduce every score in \Cref{tab:agentic-full-corpus}.
+The initial full-corpus runs were produced on July 14, 2026 at xhigh effort using Codex CLI 0.144.4 or Claude Code 2.1.209. After correcting the driver/MVR sparse-enrichment contract, those three inputs were rerun on July 21 with Codex CLI 0.144.6 or Claude Code 2.1.216; the other 29 unchanged predictions were replayed. Claude Code safe mode disabled project instructions, skills, plugins, hooks, and MCP servers. Per-sample metadata records model routing, input fingerprints, and prediction hashes. All reports cover the same 29{,}599-target manifest with zero execution errors, and saved predictions reproduce every score in \Cref{tab:agentic-full-corpus}.
 
 \begin{table}[H]
 \centering
@@ -41,15 +41,15 @@ All four full-corpus runs were produced on July 14, 2026 at xhigh effort using C
 \toprule
 Agent and model & Exact recall & Complete docs & Micro-$F_1$ & Macro-$F_1$ \\
 \midrule
-Codex CLI, GPT-5.6-Sol (xhigh) & 93.7\% & 6/32 (18.8\%) & 98.7\% & 98.3\% \\
-Claude Code, Fable 5 (xhigh) & 90.9\% & 6/32 (18.8\%) & 96.1\% & 92.6\% \\
-Codex CLI, GPT-5.5 (xhigh) & 90.4\% & 4/32 (12.5\%) & 98.2\% & 97.7\% \\
-Claude Code, Opus 4.8 (xhigh) & 93.6\% & 7/32 (21.9\%) & 98.8\% & 98.4\% \\
+Codex CLI, GPT-5.6-Sol (xhigh) & 97.9\% & 8/32 (25.0\%) & 99.4\% & 99.4\% \\
+Claude Code, Fable 5 (xhigh) & 95.1\% & 9/32 (28.1\%) & 96.8\% & 93.6\% \\
+Codex CLI, GPT-5.5 (xhigh) & 94.5\% & 4/32 (12.5\%) & 98.8\% & 98.6\% \\
+Claude Code, Opus 4.8 (xhigh) & 97.7\% & 7/32 (21.9\%) & 99.4\% & 99.3\% \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-No configuration completes more than 7 of 32 documents. GPT-5.6-Sol has the highest exact-record recall, while Opus 4.8 completes one more document and has the highest field $F_1$. The family results below are more informative than this narrow aggregate ranking.
+No configuration completes more than 9 of 32 documents. GPT-5.6-Sol has the highest exact-record recall, Fable 5 completes the most documents, and Opus 4.8 has the highest field micro-$F_1$ by a narrow margin. The family results below are more informative than this narrow aggregate ranking.
 
 We preassign four parser-friendly families as scale controls and the other seven as structural challenges. \Cref{tab:agentic-by-role} reports the latest models by role.
 
@@ -62,7 +62,7 @@ We preassign four parser-friendly families as scale controls and the other seven
 \toprule
 Role & Docs & Records & Sol exact & Fable exact & Sol complete & Fable complete \\
 \midrule
-Structural challenges & 19 & 8{,}414 & 79.0\% & 69.3\% & 2/19 (10.5\%) & 2/19 (10.5\%) \\
+Structural challenges & 19 & 8{,}414 & 93.8\% & 84.0\% & 4/19 (21.1\%) & 5/19 (26.3\%) \\
 Scale controls & 13 & 21{,}185 & 99.5\% & 99.5\% & 4/13 (30.8\%) & 4/13 (30.8\%) \\
 \bottomrule
 \end{tabular}
@@ -79,7 +79,7 @@ Scale controls & 13 & 21{,}185 & 99.5\% & 99.5\% & 4/13 (30.8\%) & 4/13 (30.8\%)
 \toprule
 Extraction problem & Docs & Records & GPT-5.6-Sol & Fable 5 \\
 \midrule
-Sparse record enrichment (driver/MVR) & 3 & 1{,}260 & 0.6\% & 1.9\% \\
+Sparse record enrichment (driver/MVR) & 3 & 1{,}260 & 99.4\% & 100.0\% \\
 Long-range claim joins & 3 & 77 & 98.7\% & 98.7\% \\
 Split return schedules & 3 & 2{,}737 & 95.5\% & 95.5\% \\
 Mixed row/detail loss runs & 3 & 900 & 97.3\% & 92.2\% \\
@@ -95,7 +95,7 @@ Vehicle-schedule scale controls & 2 & 1{,}600 & 100.0\% & 100.0\% \\
 \end{tabular}
 \end{table}
 
-The failures differ in kind. GPT-5.6-Sol returns 1{,}259 driver rows but only 8 are exact; Fable 5 returns 1{,}243 and matches 24 exactly. Their driver/MVR field $F_1$ remains 88.0\% and 88.4\%, showing that most roster fields are present while sparse enrichment fields are not joined correctly. Both systems match 2{,}614 of 2{,}737 split-schedule records and 76 of 77 long-range claim records. Policy packets separate them: GPT-5.6-Sol matches 985 of 1{,}344 records with 95.8\% field $F_1$, while Fable 5 returns only 232 records, matches 196, and reaches 33.5\% field $F_1$. Scale controls remain near ceiling, yet only four of 13 are completely correct for either system because a single missing, extra, or malformed record fails document completion.
+The failures differ in kind. GPT-5.6-Sol matches 1{,}252 of 1{,}260 driver records and completes two packets; on the third it emits eight report summaries as separate partial rows instead of merging them into the roster records. Fable 5 joins every sparse report correctly and completes all three packets. Both systems match 2{,}614 of 2{,}737 split-schedule records and 76 of 77 long-range claim records. Policy packets separate them: GPT-5.6-Sol matches 985 of 1{,}344 records with 95.8\% field $F_1$, while Fable 5 returns only 232 records, matches 196, and reaches 33.5\% field $F_1$. Scale controls remain near ceiling, yet only four of 13 are completely correct for either system because a single missing, extra, or malformed record fails document completion.
 
 Cross-cutting slices reinforce this variation. Exact-record recall for GPT-5.6-Sol and Fable 5 is 73.3\% and 14.6\% on heterogeneous lists, 74.7\% and 19.1\% on long-range evidence, 94.9\% and 86.9\% on split records, 95.0\% and 87.0\% with inherited context, and 98.3\% and 98.3\% under layout randomization. Duplicate-bearing documents score 93.1\% and 73.4\%; cross-section joins and repeated keys score 99.6\% for both. These are observational associations because tags overlap and document families differ; paired renderings would be needed to estimate one stressor's causal effect.
 

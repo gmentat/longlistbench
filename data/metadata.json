@@ -1,6 +1,6 @@
 {
   "dataset_name": "longlistbench",
-  "version": "2.1.0",
+  "version": "2.2.1",
   "description": "Benchmark for long-list entity extraction under layout, OCR, scale, and long-range cross-page evidence complexity.",
   "generated_at": "2026-06-22T17:44:33.070606+00:00",
   "schema_version": "2.0",
@@ -61,10 +61,10 @@
         "html": "html/driver_mvr_packet_001.html",
         "metadata": "metadata/driver_mvr_packet_001.json",
         "ocr_md": "transcripts/ocr_gemini/driver_mvr_packet_001.md",
-        "json_size_bytes": 91072,
-        "pdf_size_bytes": 405332,
-        "html_size_bytes": 70289,
-        "ocr_size_bytes": 43363
+        "json_size_bytes": 84526,
+        "pdf_size_bytes": 354367,
+        "html_size_bytes": 63623,
+        "ocr_size_bytes": 28518
       },
       "transcripts_available": [
         "ocr"
@@ -76,21 +76,21 @@
       "pages_estimate": 17,
       "pdf_page_count": 17,
       "hf_config": "core_operations",
-      "ocr_md_size_bytes": 43363,
-      "pdf_size_bytes": 405332,
-      "html_size_bytes": 70289,
-      "json_size_bytes": 91072,
+      "ocr_md_size_bytes": 28518,
+      "pdf_size_bytes": 354367,
+      "html_size_bytes": 63623,
+      "json_size_bytes": 84526,
       "artifacts": {
-        "pdf_sha256": "e54c2ed56a8004fc5d8d1964737cc43507f0974ad3ba972f6dae4071d6feb020",
-        "html_sha256": "97f19dd5023ad03b110a8c9d395c7c43bb6346ea37a7f2bb2e48a0fc77359b4e",
-        "ground_truth_sha256": "72dd9091af24ffadaaa6eeef73e980d43200001e89c1696c057794d3f3c158eb",
-        "ocr_sha256": "ba60d8b1ca33844ee36080fcaca906573f429dd542837e7421b4bdad2c729de5"
+        "pdf_sha256": "7957d5b14e93662690aa0a88ffc9117d007775a7ebe073415a2685da966a0962",
+        "html_sha256": "489df2f0c6ddf9ff21b2b1e393d7c10d766168a09b70d9814bfa66ea92d8f9ba",
+        "ground_truth_sha256": "bc7a258900152008f24536beb9a1219bbdf0b4e05351ee6925002dbcd74b7a1e",
+        "ocr_sha256": "dcf4e931b0c1e6e12761a9377cb927da92293a8e4b58a1a5922e474f007438b9"
       },
       "layout_revision": {
-        "date": "2026-07-14T08:45:41.922847+00:00",
-        "purpose": "improve production-like document structure and layout variation",
+        "date": "2026-07-21T10:39:31.593862+00:00",
+        "purpose": "align sparse MVR enrichment with document-backed report evidence",
         "ocr_status": "regenerated_from_current_pdf",
-        "ocr_regenerated_at": "2026-07-14T12:24:48.826553+00:00"
+        "ocr_regenerated_at": "2026-07-21T10:39:31.593862+00:00"
       }
     },
     {
@@ -116,10 +116,10 @@
         "html": "html/driver_mvr_packet_002.html",
         "metadata": "metadata/driver_mvr_packet_002.json",
         "ocr_md": "transcripts/ocr_gemini/driver_mvr_packet_002.md",
-        "json_size_bytes": 175399,
-        "pdf_size_bytes": 450868,
-        "html_size_bytes": 119492,
-        "ocr_size_bytes": 72664
+        "json_size_bytes": 162398,
+        "pdf_size_bytes": 405618,
+        "html_size_bytes": 109334,
+        "ocr_size_bytes": 49970
       },
       "transcripts_available": [
         "ocr"
@@ -131,21 +131,21 @@
       "pages_estimate": 24,
       "pdf_page_count": 24,
       "hf_config": "core_operations",
-      "ocr_md_size_bytes": 72664,
-      "pdf_size_bytes": 450868,
-      "html_size_bytes": 119492,
-      "json_size_bytes": 175399,
+      "ocr_md_size_bytes": 49970,
+      "pdf_size_bytes": 405618,
+      "html_size_bytes": 109334,
+      "json_size_bytes": 162398,
       "artifacts": {
-        "pdf_sha256": "136daa2af2f81181c57676969b93f3ff5c5eb903fdb051e473cd078d406e83d4",
-        "html_sha256": "4b257f1c639c30031b09a22202b7a32565d6a41525cb289e1455af87d2f6b3dd",
-        "ground_truth_sha256": "7a822ac133929af2880e248994149f85e2afa29eb30024422bcb6214bc6506cb",
-        "ocr_sha256": "dccaddc7f89ef5d2ff7b0c889329aa9a670f1070944248d8ba599134503319f0"
+        "pdf_sha256": "6d50c20e5004d0ecf360fc6ce4c30ec0098fbfb138983d00fb2aa9cfe4d93263",
+        "html_sha256": "2b68d93d559a0b005e19a73d4918528d746d066342e3752f6c53454625291f51",
+        "ground_truth_sha256": "8e18401380081abc30c0aef9158af7b88d6cf3eaa369862ebb3c3350d5878063",
+        "ocr_sha256": "f134313bb531a48dc79ddd820f53f4528beaef5c83c45e5a7060adcefc5da92a"
       },
       "layout_revision": {
-        "date": "2026-07-14T08:45:41.929750+00:00",
-        "purpose": "improve production-like document structure and layout variation",
+        "date": "2026-07-21T10:39:31.593862+00:00",
+        "purpose": "align sparse MVR enrichment with document-backed report evidence",
         "ocr_status": "regenerated_from_current_pdf",
-        "ocr_regenerated_at": "2026-07-14T12:25:03.034312+00:00"
+        "ocr_regenerated_at": "2026-07-21T10:39:31.593862+00:00"
       }
     },
     {
@@ -171,10 +171,10 @@
         "html": "html/driver_mvr_packet_003.html",
         "metadata": "metadata/driver_mvr_packet_003.json",
         "ocr_md": "transcripts/ocr_gemini/driver_mvr_packet_003.md",
-        "json_size_bytes": 175367,
-        "pdf_size_bytes": 452207,
-        "html_size_bytes": 119550,
-        "ocr_size_bytes": 68439
+        "json_size_bytes": 162418,
+        "pdf_size_bytes": 406205,
+        "html_size_bytes": 109367,
+        "ocr_size_bytes": 48763
       },
       "transcripts_available": [
         "ocr"
@@ -186,21 +186,21 @@
       "pages_estimate": 24,
       "pdf_page_count": 24,
       "hf_config": "core_operations",
-      "ocr_md_size_bytes": 68439,
-      "pdf_size_bytes": 452207,
-      "html_size_bytes": 119550,
-      "json_size_bytes": 175367,
+      "ocr_md_size_bytes": 48763,
+      "pdf_size_bytes": 406205,
+      "html_size_bytes": 109367,
+      "json_size_bytes": 162418,
       "artifacts": {
-        "pdf_sha256": "a2e5234391731a5ca88682deaa0b5de13097abf20b8eb98d78493ed48be96fbc",
-        "html_sha256": "7f903206d94aace1c0465f1e745c2ed543313cae438d32c13eb3799c26e73898",
-        "ground_truth_sha256": "c4a89251758e2a8148822fe45602e8df08d03effa9ea6eb3c34a3a8e5b9b6343",
-        "ocr_sha256": "ca8541a9983a7df8564f262cfe169b8316e06a9ea3512de7dc5a51943ea77386"
+        "pdf_sha256": "1750a943cee5403ff2836fd2680bff41428f544e4cc4bf44f7eb4c68895367dc",
+        "html_sha256": "67b1718df2d006e0ca89ef1b5b92c3ee1c9732ab64f3b9800839c3f14a8ce75c",
+        "ground_truth_sha256": "da373a22ae0d3538df78c95003311ceccd091c308c58bd26327fe97e0433dd8a",
+        "ocr_sha256": "486e5bb12e7a97f9efb7872ce36e70646b1a2d11694e410d4a21a56a4d368f0f"
       },
       "layout_revision": {
-        "date": "2026-07-14T08:45:41.936191+00:00",
-        "purpose": "improve production-like document structure and layout variation",
+        "date": "2026-07-21T10:39:31.593862+00:00",
+        "purpose": "align sparse MVR enrichment with document-backed report evidence",
         "ocr_status": "regenerated_from_current_pdf",
-        "ocr_regenerated_at": "2026-07-14T12:25:01.849174+00:00"
+        "ocr_regenerated_at": "2026-07-21T10:39:31.593862+00:00"
       }
     },
     {
@@ -763,7 +763,7 @@
         "ground_truth_sha256": "b1cf6458fcf4bfc076c2556a9d28765f7dc465dc405f5682654b45ddfbaae45c",
         "ocr_sha256": "0fe523c5a396df0d6f707d5361f80aea5a14fe6bd6846ef7b23a04b9d84af47d"
       },
-      "dataset_version": "2.1.0",
+      "dataset_version": "2.2.1",
       "layout_revision": {
         "date": "2026-07-14T08:45:41.949124+00:00",
         "purpose": "improve production-like document structure and layout variation",
@@ -826,7 +826,7 @@
         "ground_truth_sha256": "8d091224bd5bcaa2a87a3011612f59bc9909dca45ba01e17c8fcd8d6089a8120",
         "ocr_sha256": "871048b6e5fe632666602920d86c8ace60481fd42d05dddd4d9d6c25c0ddfe2d"
       },
-      "dataset_version": "2.1.0",
+      "dataset_version": "2.2.1",
       "layout_revision": {
         "date": "2026-07-14T08:45:41.966998+00:00",
         "purpose": "improve production-like document structure and layout variation",
@@ -1299,7 +1299,7 @@
       ],
       "pages_estimate": 43,
       "pdf_page_count": 43,
-      "dataset_version": "2.1.0",
+      "dataset_version": "2.2.1",
       "hf_config": "core_operations",
       "num_claims": 300,
       "document_count": 1,
@@ -1364,7 +1364,7 @@
       ],
       "pages_estimate": 42,
       "pdf_page_count": 42,
-      "dataset_version": "2.1.0",
+      "dataset_version": "2.2.1",
       "hf_config": "core_operations",
       "num_claims": 300,
       "document_count": 1,
@@ -1429,7 +1429,7 @@
       ],
       "pages_estimate": 44,
       "pdf_page_count": 44,
-      "dataset_version": "2.1.0",
+      "dataset_version": "2.2.1",
       "hf_config": "core_operations",
       "num_claims": 300,
       "document_count": 1,
@@ -2753,7 +2753,7 @@
       "json_size_bytes": 146932
     }
   ],
-  "updated_at": "2026-07-14T13:02:57.942880+00:00",
+  "updated_at": "2026-07-21T10:39:31.709437+00:00",
   "total_core_operations_records": 28178,
   "total_claim_records": 77,
   "total_policy_records": 1344,

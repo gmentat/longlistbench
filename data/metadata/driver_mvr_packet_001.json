@@ -21,10 +21,10 @@
     "html": "html/driver_mvr_packet_001.html",
     "metadata": "metadata/driver_mvr_packet_001.json",
     "ocr_md": "transcripts/ocr_gemini/driver_mvr_packet_001.md",
-    "json_size_bytes": 91072,
-    "pdf_size_bytes": 405332,
-    "html_size_bytes": 70289,
-    "ocr_size_bytes": 43363
+    "json_size_bytes": 84526,
+    "pdf_size_bytes": 354367,
+    "html_size_bytes": 63623,
+    "ocr_size_bytes": 28518
   },
   "transcripts_available": [
     "ocr"
@@ -36,20 +36,20 @@
   "pages_estimate": 17,
   "pdf_page_count": 17,
   "hf_config": "core_operations",
-  "ocr_md_size_bytes": 43363,
-  "pdf_size_bytes": 405332,
-  "html_size_bytes": 70289,
-  "json_size_bytes": 91072,
+  "ocr_md_size_bytes": 28518,
+  "pdf_size_bytes": 354367,
+  "html_size_bytes": 63623,
+  "json_size_bytes": 84526,
   "artifacts": {
-    "pdf_sha256": "e54c2ed56a8004fc5d8d1964737cc43507f0974ad3ba972f6dae4071d6feb020",
-    "html_sha256": "97f19dd5023ad03b110a8c9d395c7c43bb6346ea37a7f2bb2e48a0fc77359b4e",
-    "ground_truth_sha256": "72dd9091af24ffadaaa6eeef73e980d43200001e89c1696c057794d3f3c158eb",
-    "ocr_sha256": "ba60d8b1ca33844ee36080fcaca906573f429dd542837e7421b4bdad2c729de5"
+    "pdf_sha256": "7957d5b14e93662690aa0a88ffc9117d007775a7ebe073415a2685da966a0962",
+    "html_sha256": "489df2f0c6ddf9ff21b2b1e393d7c10d766168a09b70d9814bfa66ea92d8f9ba",
+    "ground_truth_sha256": "bc7a258900152008f24536beb9a1219bbdf0b4e05351ee6925002dbcd74b7a1e",
+    "ocr_sha256": "dcf4e931b0c1e6e12761a9377cb927da92293a8e4b58a1a5922e474f007438b9"
   },
   "layout_revision": {
-    "date": "2026-07-14T08:45:41.922847+00:00",
-    "purpose": "improve production-like document structure and layout variation",
+    "date": "2026-07-21T10:39:31.593862+00:00",
+    "purpose": "align sparse MVR enrichment with document-backed report evidence",
     "ocr_status": "regenerated_from_current_pdf",
-    "ocr_regenerated_at": "2026-07-14T12:24:48.826553+00:00"
+    "ocr_regenerated_at": "2026-07-21T10:39:31.593862+00:00"
   }
 }

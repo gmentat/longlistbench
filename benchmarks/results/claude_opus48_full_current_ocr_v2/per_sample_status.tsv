@@ -2,7 +2,7 @@ sample	status
 multihop_012_001_crosspage	attest
 multihop_025_001_crosspage	attest
 mixed_040_001_crosspage	attest
-driver_mvr_packet_001	attest
+driver_mvr_packet_001	0
 loss_run_external_001	attest
 loss_run_external_002	attest
 loss_run_external_003	attest
@@ -10,8 +10,8 @@ ifta_multisection_return_001	attest
 multihop_bop_012_001	attest
 multihop_wc_025_001	attest
 ifta_multisection_return_002	attest
-driver_mvr_packet_002	attest
-driver_mvr_packet_003	attest
+driver_mvr_packet_002	0
+driver_mvr_packet_003	0
 driver_schedule_sparse_001	attest
 mixed_cgl_040_001	attest
 ifta_return_schedule_001	attest

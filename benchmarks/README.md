@@ -150,7 +150,7 @@ python benchmarks/validate_ocr_numeric_fidelity.py \
   --expected-misses data/ocr_numeric_fidelity_baseline.json
 ```
 
-All 32 PDFs have OCR transcripts with 99.9% average identifier coverage, 99.9% tracked identifier-field support, and 17 target records with a missing tracked identifier. The audited baseline records 56 genuine OCR misses among 76,968 checked numeric fields (0.073%); validation requires that exact set instead of hand-correcting the transcript. These commands validate released OCR support, not extraction correctness. The evaluator checks exact normalized records and complete documents, with flattened field-value micro-F1 retained as secondary partial credit.
+All 32 PDFs have OCR transcripts with 100.0% average identifier coverage and 100.0% tracked identifier-field support; no target record is missing a tracked identifier. The audited baseline records 56 genuine OCR misses among 76,968 checked numeric fields (0.073%); validation requires that exact set instead of hand-correcting the transcript. These commands validate released OCR support, not extraction correctness. The evaluator checks exact normalized records and complete documents, with flattened field-value micro-F1 retained as secondary partial credit.
 
 ## Evaluation
 
@@ -204,9 +204,11 @@ For generic records, the current runners derive sample-specific field names and 
 
 Saved reports under `benchmarks/results/` may refer to earlier corpus versions. The four `*_full_current_ocr_v2` release directories are bound to the current manifest; do not cite other folders as current-layout baselines unless their report provenance records the same manifest hash.
 
-The current full-corpus results use the same repository-denied OCR protocol. GPT-5.6-Sol recovers 93.7% of target records exactly and completes 6/32 documents; Fable 5 recovers 90.9% exactly and also completes 6/32. On the 19 structural-challenge documents, exact-record recall is 79.0% and 69.3%; on the 13 scale controls it is 99.5% for both. Field micro-F1 remains a partial-credit diagnostic at 98.7% and 96.1%. Both runs cover 29,599 targets with zero execution errors. GPT-5.5 reaches 90.4% exact recall and 4/32 complete documents; Opus 4.8 reaches 93.6% and 7/32.
+The current full-corpus results use the same repository-denied OCR protocol. GPT-5.6-Sol recovers 97.9% of target records exactly and completes 8/32 documents; Fable 5 recovers 95.1% exactly and completes 9/32. On the 19 structural-challenge documents, exact-record recall is 93.8% and 84.0%; on the 13 scale controls it is 99.5% for both. Field micro-F1 remains a partial-credit diagnostic at 99.4% and 96.8%. Both runs cover 29,599 targets with zero execution errors. GPT-5.5 reaches 94.5% exact recall and 4/32 complete documents; Opus 4.8 reaches 97.7% and 7/32.
 
-The strongest shared exact-record gap is sparse driver/MVR enrichment; Fable 5 also fails most heterogeneous policy records. A tagged stressor therefore need not reduce every agent's accuracy. The scorer canonicalizes case, whitespace, dates, decimals, accounting negatives, documented domain-label equivalents, visible `Unit` prefixes in vehicle identifiers, and `Quarter Return`/`Quarterly Return` heading aliases. It preserves extra heading context as an error. Treat single-sample probe folders as older diagnostics unless rerun against the current manifest.
+The strongest separation is on heterogeneous policy records. Sparse driver/MVR enrichment is near ceiling, but only Fable 5 joins all report details without emitting separate report-only rows. A tagged stressor therefore need not reduce every agent's accuracy. The scorer canonicalizes case, whitespace, dates, decimals, accounting negatives, documented domain-label equivalents, visible `Unit` prefixes in vehicle identifiers, and `Quarter Return`/`Quarterly Return` heading aliases. It preserves extra heading context as an error. Treat single-sample probe folders as older diagnostics unless rerun against the current manifest.
+
+The driver/MVR family was rerun on July 21, 2026 after its sparse-enrichment contract was corrected. The other 29 document predictions reuse the unchanged July 14 inputs; per-sample fingerprints record that boundary.
 
 ## Hugging Face Export
 
