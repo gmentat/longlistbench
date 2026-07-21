@@ -44,6 +44,7 @@ arxiv: pdf
 	cp contents/5_results.tex $(ARXIV_DIR)/contents/
 	cp contents/6_limitations_and_future_directions.tex $(ARXIV_DIR)/contents/
 	cp contents/7_conclusion.tex $(ARXIV_DIR)/contents/
+	cp contents/8_author_contributions.tex $(ARXIV_DIR)/contents/
 	cp contents/appendix_schemas.tex $(ARXIV_DIR)/contents/
 	find figures -maxdepth 1 -type f \( -name '*.png' -o -name '*.jpg' -o -name '*.jpeg' -o -name '*.pdf' \) -exec cp {} $(ARXIV_DIR)/figures/ \;
 	tar -czf $(ARXIV_TAR) -C $(ARXIV_DIR) .
@@ -73,4 +74,3 @@ help:
 	@echo "  make cleanall - Remove all generated files including PDF"
 	@echo "  make view     - Compile and open the PDF"
 	@echo "  make help     - Show this help message"
-

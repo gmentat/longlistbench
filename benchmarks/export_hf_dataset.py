@@ -557,7 +557,7 @@ configs:
 
 **Developed by [Kay.ai](https://kay.ai).**
 
-**Authors:** [Anton Fedoruk](https://orcid.org/0009-0004-0260-1704), [Serhii Shchoholiev](https://orcid.org/0009-0007-2014-4828), and [Akhil Mehta](https://orcid.org/0009-0001-0134-2905)
+**Authors:** [Anton Fedoruk](https://orcid.org/0009-0004-0260-1704), [Serhii Shchoholiev](https://orcid.org/0009-0007-2014-4828), [Akhil Mehta](https://orcid.org/0009-0001-0134-2905), and Vishal Rohra
 
 Long-list extraction is not complete when most fields are right: an omitted, merged, or invented row can invalidate the document-level result.{headline_suffix}
 
