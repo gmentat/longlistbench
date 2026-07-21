@@ -1,6 +1,6 @@
 # Repository Makefile (convenience targets)
 
-.PHONY: help setup generate-multihop generate-policy-multihop ocr ocr-multihop eval hf-export paper paper-quick clean
+.PHONY: help setup generate-core-operations generate-multihop generate-policy-multihop ocr ocr-multihop eval hf-export paper paper-quick clean
 
 VENV_DIR ?= .venv
 EVAL_OUT ?= benchmarks/results/scratch/eval_ocr
@@ -17,6 +17,7 @@ POLICY_GEMINI_THINKING_LEVEL ?= high
 help:
 	@echo "Targets:"
 	@echo "  make setup       - Create .venv + install benchmark deps + install Playwright Chromium"
+	@echo "  make generate-core-operations - Generate the 26 synthetic operational documents under tmp/"
 	@echo "  make generate-multihop - Generate single-document cross-page multi-hop cases"
 	@echo "  make generate-policy-multihop - Generate BOP/WC/CGL policy multi-hop cases"
 	@echo "  make ocr         - OCR all generated PDFs (requires VERTEX_AI_API_KEY or GEMINI_API_KEY)"
@@ -31,6 +32,12 @@ setup:
 	python3 -m venv $(VENV_DIR)
 	. $(VENV_DIR)/bin/activate && python -m pip install -r benchmarks/requirements.txt
 	. $(VENV_DIR)/bin/activate && python -m playwright install chromium
+
+generate-core-operations:
+	. $(VENV_DIR)/bin/activate && python benchmarks/core_operations/generate_driver_mvr.py
+	. $(VENV_DIR)/bin/activate && python benchmarks/core_operations/generate_ifta_multisection.py
+	. $(VENV_DIR)/bin/activate && python benchmarks/core_operations/generate_loss_runs.py
+	. $(VENV_DIR)/bin/activate && python benchmarks/core_operations/render_operational_tables.py
 
 generate-multihop:
 	. $(VENV_DIR)/bin/activate && python benchmarks/generate_multihop_benchmark.py

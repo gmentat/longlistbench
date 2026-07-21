@@ -20,8 +20,8 @@
     "years_experienced": 30,
     "mvr_run_date": "01/25/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Mira Tan",
@@ -32,8 +32,8 @@
     "years_experienced": 24,
     "mvr_run_date": "01/19/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Omar Moreno",
@@ -44,8 +44,8 @@
     "years_experienced": 28,
     "mvr_run_date": "01/18/2026",
     "license_class": "A",
-    "accidents_last_5_years": "1 - 2025-06-26",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Selena Petrov",
@@ -56,8 +56,8 @@
     "years_experienced": 15,
     "mvr_run_date": "01/27/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Julian Foster",
@@ -68,8 +68,8 @@
     "years_experienced": 30,
     "mvr_run_date": "01/26/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Lane violation - 2023-08-17"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Iris Quinn",
@@ -80,8 +80,8 @@
     "years_experienced": 21,
     "mvr_run_date": "01/18/2026",
     "license_class": "A",
-    "accidents_last_5_years": "1 - 2024-01-23",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Devon Kim",
@@ -92,8 +92,8 @@
     "years_experienced": 31,
     "mvr_run_date": "01/21/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Lane violation - 2023-08-17"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Alma Bennett",
@@ -104,8 +104,8 @@
     "years_experienced": 28,
     "mvr_run_date": "01/26/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Lane violation - 2023-08-17"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Mateo Navarro",
@@ -116,8 +116,8 @@
     "years_experienced": 9,
     "mvr_run_date": "01/18/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Renee Holt",
@@ -128,8 +128,8 @@
     "years_experienced": 8,
     "mvr_run_date": "01/20/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Silas Coleman",
@@ -140,8 +140,8 @@
     "years_experienced": 17,
     "mvr_run_date": "01/17/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Vera Okafor",
@@ -152,8 +152,8 @@
     "years_experienced": 26,
     "mvr_run_date": "01/28/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Lane violation - 2023-08-17"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Adrian Barrera",
@@ -164,8 +164,8 @@
     "years_experienced": 27,
     "mvr_run_date": "01/23/2026",
     "license_class": "A",
-    "accidents_last_5_years": "1 - 2024-11-02",
-    "mvr_violations": "Lane violation - 2023-08-17"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Lena Wynn",
@@ -176,8 +176,8 @@
     "years_experienced": 25,
     "mvr_run_date": "01/20/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Kai Hughes",
@@ -188,8 +188,8 @@
     "years_experienced": 7,
     "mvr_run_date": "01/19/2026",
     "license_class": "B",
-    "accidents_last_5_years": "1 - 2022-05-13",
-    "mvr_violations": "Lane violation - 2023-08-17"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Mina Gallagher",
@@ -200,8 +200,8 @@
     "years_experienced": 32,
     "mvr_run_date": "01/24/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Lane violation - 2023-08-17"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Nolan Lambert",
@@ -212,8 +212,8 @@
     "years_experienced": 18,
     "mvr_run_date": "01/25/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Marta Mendez",
@@ -224,8 +224,8 @@
     "years_experienced": 6,
     "mvr_run_date": "01/25/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Lane violation - 2023-08-17"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Ibrahim Rivera",
@@ -236,8 +236,8 @@
     "years_experienced": 15,
     "mvr_run_date": "01/10/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Lane violation - 2023-08-17"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Elena Reyes",
@@ -248,8 +248,8 @@
     "years_experienced": 32,
     "mvr_run_date": "01/22/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Victor Rahman",
@@ -260,8 +260,8 @@
     "years_experienced": 7,
     "mvr_run_date": "01/11/2026",
     "license_class": "A",
-    "accidents_last_5_years": "1 - 2021-11-04",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Leah Nguyen",
@@ -272,8 +272,8 @@
     "years_experienced": 9,
     "mvr_run_date": "01/16/2026",
     "license_class": "A",
-    "accidents_last_5_years": "1 - 2024-01-08",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Samir Nassar",
@@ -284,8 +284,8 @@
     "years_experienced": 12,
     "mvr_run_date": "01/19/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Daria Walsh",
@@ -296,8 +296,8 @@
     "years_experienced": 31,
     "mvr_run_date": "01/28/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Speeding - 2024-11-04"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Owen Mensah",
@@ -308,8 +308,8 @@
     "years_experienced": 20,
     "mvr_run_date": "01/26/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Anika Torres",
@@ -320,8 +320,8 @@
     "years_experienced": 31,
     "mvr_run_date": "01/19/2026",
     "license_class": "A",
-    "accidents_last_5_years": "1 - 2025-10-09",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Milan Duarte",
@@ -332,8 +332,8 @@
     "years_experienced": 29,
     "mvr_run_date": "01/20/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Speeding - 2024-11-04"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Rosa Hayes",
@@ -344,8 +344,8 @@
     "years_experienced": 22,
     "mvr_run_date": "01/22/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Speeding - 2024-11-04"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Caleb Haddad",
@@ -356,8 +356,8 @@
     "years_experienced": 20,
     "mvr_run_date": "01/22/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Nina Santos",
@@ -368,8 +368,8 @@
     "years_experienced": 9,
     "mvr_run_date": "01/15/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Lane violation - 2023-08-17"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Andre Kaminski",
@@ -380,8 +380,8 @@
     "years_experienced": 15,
     "mvr_run_date": "01/25/2026",
     "license_class": "B",
-    "accidents_last_5_years": "1 - 2022-02-03",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Priya Chen",
@@ -392,8 +392,8 @@
     "years_experienced": 31,
     "mvr_run_date": "01/18/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Jonah Serrano",
@@ -404,8 +404,8 @@
     "years_experienced": 13,
     "mvr_run_date": "01/10/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Maya Diaz",
@@ -416,8 +416,8 @@
     "years_experienced": 26,
     "mvr_run_date": "01/17/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Arman Bauer",
@@ -428,8 +428,8 @@
     "years_experienced": 2,
     "mvr_run_date": "01/11/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Speeding - 2024-11-04"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Tessa Sawyer",
@@ -440,8 +440,8 @@
     "years_experienced": 28,
     "mvr_run_date": "01/27/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Reed Soto",
@@ -452,8 +452,8 @@
     "years_experienced": 6,
     "mvr_run_date": "01/19/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Speeding - 2024-11-04"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Clara Velasquez",
@@ -464,8 +464,8 @@
     "years_experienced": 9,
     "mvr_run_date": "01/15/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Elias Talbot",
@@ -476,8 +476,8 @@
     "years_experienced": 9,
     "mvr_run_date": "01/16/2026",
     "license_class": "A",
-    "accidents_last_5_years": "1 - 2021-04-03",
-    "mvr_violations": "Speeding - 2024-11-04"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Farah Bishop",
@@ -488,8 +488,8 @@
     "years_experienced": 30,
     "mvr_run_date": "01/17/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Sonia Ortega",
@@ -500,8 +500,8 @@
     "years_experienced": 36,
     "mvr_run_date": "01/26/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Lucian Farrell",
@@ -512,8 +512,8 @@
     "years_experienced": 33,
     "mvr_run_date": "01/27/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Greta Madsen",
@@ -524,8 +524,8 @@
     "years_experienced": 30,
     "mvr_run_date": "01/16/2026",
     "license_class": "B",
-    "accidents_last_5_years": "1 - 2022-12-18",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Noemi Price",
@@ -536,8 +536,8 @@
     "years_experienced": 10,
     "mvr_run_date": "01/12/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Cecilia Parker",
@@ -548,8 +548,8 @@
     "years_experienced": 8,
     "mvr_run_date": "01/27/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Marcus Singh",
@@ -560,8 +560,8 @@
     "years_experienced": 19,
     "mvr_run_date": "01/21/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Speeding - 2024-11-04"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Avery Carver",
@@ -572,8 +572,8 @@
     "years_experienced": 30,
     "mvr_run_date": "01/24/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Daphne Abbott",
@@ -584,8 +584,8 @@
     "years_experienced": 8,
     "mvr_run_date": "01/10/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Speeding - 2024-11-04"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Theo Vargas",
@@ -596,8 +596,8 @@
     "years_experienced": 13,
     "mvr_run_date": "01/20/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Speeding - 2024-11-04"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Lina Novak",
@@ -608,8 +608,8 @@
     "years_experienced": 34,
     "mvr_run_date": "01/12/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Lane violation - 2023-08-17"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Rafael Kovacs",
@@ -620,8 +620,8 @@
     "years_experienced": 5,
     "mvr_run_date": "01/19/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Lane violation - 2023-08-17"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Mira Kline",
@@ -632,8 +632,8 @@
     "years_experienced": 29,
     "mvr_run_date": "01/13/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Omar Malik",
@@ -644,8 +644,8 @@
     "years_experienced": 20,
     "mvr_run_date": "01/28/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Selena Arias",
@@ -656,8 +656,8 @@
     "years_experienced": 12,
     "mvr_run_date": "01/15/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Lane violation - 2023-08-17"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Julian Markovic",
@@ -668,8 +668,8 @@
     "years_experienced": 23,
     "mvr_run_date": "01/16/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Iris Ilyin",
@@ -680,8 +680,8 @@
     "years_experienced": 11,
     "mvr_run_date": "01/14/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Speeding - 2024-11-04"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Devon Romano",
@@ -692,8 +692,8 @@
     "years_experienced": 23,
     "mvr_run_date": "01/24/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Lane violation - 2023-08-17"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Alma Patel",
@@ -704,8 +704,8 @@
     "years_experienced": 21,
     "mvr_run_date": "01/16/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Lane violation - 2023-08-17"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Mateo Rossi",
@@ -716,8 +716,8 @@
     "years_experienced": 17,
     "mvr_run_date": "01/17/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Lane violation - 2023-08-17"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Renee Sorensen",
@@ -728,8 +728,8 @@
     "years_experienced": 22,
     "mvr_run_date": "01/18/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Silas Yu",
@@ -740,8 +740,8 @@
     "years_experienced": 22,
     "mvr_run_date": "01/12/2026",
     "license_class": "A",
-    "accidents_last_5_years": "1 - 2025-04-18",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Vera Tan",
@@ -752,8 +752,8 @@
     "years_experienced": 10,
     "mvr_run_date": "01/23/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Adrian Moreno",
@@ -764,8 +764,8 @@
     "years_experienced": 33,
     "mvr_run_date": "01/15/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Lena Petrov",
@@ -776,8 +776,8 @@
     "years_experienced": 18,
     "mvr_run_date": "01/15/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Speeding - 2024-11-04"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Kai Foster",
@@ -788,8 +788,8 @@
     "years_experienced": 33,
     "mvr_run_date": "01/17/2026",
     "license_class": "A",
-    "accidents_last_5_years": "1 - 2022-06-24",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Mina Quinn",
@@ -800,8 +800,8 @@
     "years_experienced": 29,
     "mvr_run_date": "01/27/2026",
     "license_class": "A",
-    "accidents_last_5_years": "1 - 2024-09-03",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Nolan Kim",
@@ -812,8 +812,8 @@
     "years_experienced": 27,
     "mvr_run_date": "01/25/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Marta Bennett",
@@ -824,8 +824,8 @@
     "years_experienced": 7,
     "mvr_run_date": "01/22/2026",
     "license_class": "A",
-    "accidents_last_5_years": "1 - 2025-06-04",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Ibrahim Navarro",
@@ -836,8 +836,8 @@
     "years_experienced": 4,
     "mvr_run_date": "01/24/2026",
     "license_class": "A",
-    "accidents_last_5_years": "1 - 2021-01-09",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Elena Holt",
@@ -848,8 +848,8 @@
     "years_experienced": 31,
     "mvr_run_date": "01/18/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Lane violation - 2023-08-17"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Victor Coleman",
@@ -872,8 +872,8 @@
     "years_experienced": 9,
     "mvr_run_date": "01/15/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Lane violation - 2023-08-17"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Samir Barrera",
@@ -884,8 +884,8 @@
     "years_experienced": 20,
     "mvr_run_date": "01/15/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Speeding - 2024-11-04"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Daria Wynn",
@@ -896,8 +896,8 @@
     "years_experienced": 10,
     "mvr_run_date": "01/22/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Owen Hughes",
@@ -908,8 +908,8 @@
     "years_experienced": 33,
     "mvr_run_date": "01/16/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Lane violation - 2023-08-17"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Anika Gallagher",
@@ -920,8 +920,8 @@
     "years_experienced": 28,
     "mvr_run_date": "01/11/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Milan Lambert",
@@ -932,8 +932,8 @@
     "years_experienced": 27,
     "mvr_run_date": "01/24/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Rosa Mendez",
@@ -944,8 +944,8 @@
     "years_experienced": 12,
     "mvr_run_date": "01/12/2026",
     "license_class": "B",
-    "accidents_last_5_years": "1 - 2023-01-20",
-    "mvr_violations": "Lane violation - 2023-08-17"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Caleb Rivera",
@@ -956,8 +956,8 @@
     "years_experienced": 20,
     "mvr_run_date": "01/13/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Nina Reyes",
@@ -968,8 +968,8 @@
     "years_experienced": 35,
     "mvr_run_date": "01/16/2026",
     "license_class": "A",
-    "accidents_last_5_years": "1 - 2023-06-24",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Andre Rahman",
@@ -980,8 +980,8 @@
     "years_experienced": 18,
     "mvr_run_date": "01/23/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Priya Nguyen",
@@ -992,8 +992,8 @@
     "years_experienced": 6,
     "mvr_run_date": "01/26/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Jonah Nassar",
@@ -1004,8 +1004,8 @@
     "years_experienced": 12,
     "mvr_run_date": "01/27/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Maya Walsh",
@@ -1016,8 +1016,8 @@
     "years_experienced": 24,
     "mvr_run_date": "01/20/2026",
     "license_class": "A",
-    "accidents_last_5_years": "1 - 2023-11-12",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Arman Mensah",
@@ -1028,8 +1028,8 @@
     "years_experienced": 6,
     "mvr_run_date": "01/23/2026",
     "license_class": "A",
-    "accidents_last_5_years": "1 - 2022-10-10",
-    "mvr_violations": "Speeding - 2024-11-04"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Tessa Torres",
@@ -1040,8 +1040,8 @@
     "years_experienced": 5,
     "mvr_run_date": "01/23/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Speeding - 2024-11-04"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Reed Duarte",
@@ -1052,8 +1052,8 @@
     "years_experienced": 20,
     "mvr_run_date": "01/26/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Clara Hayes",
@@ -1064,8 +1064,8 @@
     "years_experienced": 12,
     "mvr_run_date": "01/24/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Speeding - 2024-11-04"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Elias Haddad",
@@ -1076,8 +1076,8 @@
     "years_experienced": 22,
     "mvr_run_date": "01/24/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Farah Santos",
@@ -1088,8 +1088,8 @@
     "years_experienced": 35,
     "mvr_run_date": "01/26/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Sonia Kaminski",
@@ -1100,8 +1100,8 @@
     "years_experienced": 18,
     "mvr_run_date": "01/19/2026",
     "license_class": "A",
-    "accidents_last_5_years": "1 - 2022-11-02",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Lucian Chen",
@@ -1112,8 +1112,8 @@
     "years_experienced": 24,
     "mvr_run_date": "01/14/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Greta Serrano",
@@ -1124,8 +1124,8 @@
     "years_experienced": 24,
     "mvr_run_date": "01/26/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Lane violation - 2023-08-17"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Noemi Diaz",
@@ -1136,8 +1136,8 @@
     "years_experienced": 5,
     "mvr_run_date": "01/15/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Cecilia Bauer",
@@ -1148,8 +1148,8 @@
     "years_experienced": 4,
     "mvr_run_date": "01/10/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Marcus Sawyer",
@@ -1160,8 +1160,8 @@
     "years_experienced": 21,
     "mvr_run_date": "01/22/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Avery Soto",
@@ -1172,8 +1172,8 @@
     "years_experienced": 2,
     "mvr_run_date": "01/20/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Speeding - 2024-11-04"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Daphne Velasquez",
@@ -1184,8 +1184,8 @@
     "years_experienced": 9,
     "mvr_run_date": "01/28/2026",
     "license_class": "A",
-    "accidents_last_5_years": "1 - 2023-03-18",
-    "mvr_violations": "Lane violation - 2023-08-17"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Theo Talbot",
@@ -1196,8 +1196,8 @@
     "years_experienced": 30,
     "mvr_run_date": "01/14/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Lina Bishop",
@@ -1208,8 +1208,8 @@
     "years_experienced": 26,
     "mvr_run_date": "01/21/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Speeding - 2024-11-04"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Rafael Ortega",
@@ -1220,8 +1220,8 @@
     "years_experienced": 24,
     "mvr_run_date": "01/15/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Mira Farrell",
@@ -1232,8 +1232,8 @@
     "years_experienced": 19,
     "mvr_run_date": "01/22/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Omar Madsen",
@@ -1244,8 +1244,8 @@
     "years_experienced": 14,
     "mvr_run_date": "01/20/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Speeding - 2024-11-04"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Selena Price",
@@ -1256,8 +1256,8 @@
     "years_experienced": 8,
     "mvr_run_date": "01/19/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Julian Parker",
@@ -1268,8 +1268,8 @@
     "years_experienced": 33,
     "mvr_run_date": "01/15/2026",
     "license_class": "A",
-    "accidents_last_5_years": "1 - 2021-06-26",
-    "mvr_violations": "Lane violation - 2023-08-17"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Iris Singh",
@@ -1280,8 +1280,8 @@
     "years_experienced": 6,
     "mvr_run_date": "01/21/2026",
     "license_class": "A",
-    "accidents_last_5_years": "1 - 2024-06-28",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Devon Carver",
@@ -1292,8 +1292,8 @@
     "years_experienced": 26,
     "mvr_run_date": "01/23/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Speeding - 2024-11-04"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Alma Abbott",
@@ -1304,8 +1304,8 @@
     "years_experienced": 24,
     "mvr_run_date": "01/13/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Speeding - 2024-11-04"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Mateo Vargas",
@@ -1316,8 +1316,8 @@
     "years_experienced": 26,
     "mvr_run_date": "01/21/2026",
     "license_class": "A",
-    "accidents_last_5_years": "1 - 2021-01-03",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Renee Novak",
@@ -1328,8 +1328,8 @@
     "years_experienced": 31,
     "mvr_run_date": "01/12/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Speeding - 2024-11-04"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Silas Kovacs",
@@ -1340,8 +1340,8 @@
     "years_experienced": 14,
     "mvr_run_date": "01/13/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Vera Kline",
@@ -1352,8 +1352,8 @@
     "years_experienced": 6,
     "mvr_run_date": "01/25/2026",
     "license_class": "A",
-    "accidents_last_5_years": "1 - 2024-06-06",
-    "mvr_violations": "Lane violation - 2023-08-17"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Adrian Malik",
@@ -1364,8 +1364,8 @@
     "years_experienced": 26,
     "mvr_run_date": "01/10/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Lena Arias",
@@ -1376,8 +1376,8 @@
     "years_experienced": 17,
     "mvr_run_date": "01/15/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Kai Markovic",
@@ -1388,8 +1388,8 @@
     "years_experienced": 18,
     "mvr_run_date": "01/20/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Mina Ilyin",
@@ -1400,8 +1400,8 @@
     "years_experienced": 14,
     "mvr_run_date": "01/18/2026",
     "license_class": "A",
-    "accidents_last_5_years": "1 - 2024-06-04",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Nolan Romano",
@@ -1412,8 +1412,8 @@
     "years_experienced": 24,
     "mvr_run_date": "01/25/2026",
     "license_class": "A",
-    "accidents_last_5_years": "1 - 2025-05-27",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Marta Patel",
@@ -1424,8 +1424,8 @@
     "years_experienced": 16,
     "mvr_run_date": "01/19/2026",
     "license_class": "B",
-    "accidents_last_5_years": "1 - 2021-03-21",
-    "mvr_violations": "Lane violation - 2023-08-17"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Ibrahim Rossi",
@@ -1436,8 +1436,8 @@
     "years_experienced": 26,
     "mvr_run_date": "01/23/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Elena Sorensen",
@@ -1448,8 +1448,8 @@
     "years_experienced": 15,
     "mvr_run_date": "01/10/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Lane violation - 2023-08-17"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Victor Yu",
@@ -1460,8 +1460,8 @@
     "years_experienced": 17,
     "mvr_run_date": "01/14/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Lane violation - 2023-08-17"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Leah Tan",
@@ -1472,8 +1472,8 @@
     "years_experienced": 28,
     "mvr_run_date": "01/11/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Samir Moreno",
@@ -1484,8 +1484,8 @@
     "years_experienced": 10,
     "mvr_run_date": "01/25/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Speeding - 2024-11-04"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Daria Petrov",
@@ -1496,8 +1496,8 @@
     "years_experienced": 22,
     "mvr_run_date": "01/21/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Owen Foster",
@@ -1508,8 +1508,8 @@
     "years_experienced": 26,
     "mvr_run_date": "01/14/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Speeding - 2024-11-04"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Anika Quinn",
@@ -1520,8 +1520,8 @@
     "years_experienced": 18,
     "mvr_run_date": "01/23/2026",
     "license_class": "B",
-    "accidents_last_5_years": "1 - 2024-06-16",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Milan Kim",
@@ -1532,8 +1532,8 @@
     "years_experienced": 26,
     "mvr_run_date": "01/16/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Lane violation - 2023-08-17"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Rosa Bennett",
@@ -1544,8 +1544,8 @@
     "years_experienced": 35,
     "mvr_run_date": "01/19/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Caleb Navarro",
@@ -1556,8 +1556,8 @@
     "years_experienced": 22,
     "mvr_run_date": "01/22/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Lane violation - 2023-08-17"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Nina Holt",
@@ -1568,8 +1568,8 @@
     "years_experienced": 11,
     "mvr_run_date": "01/19/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Lane violation - 2023-08-17"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Andre Coleman",
@@ -1580,8 +1580,8 @@
     "years_experienced": 10,
     "mvr_run_date": "01/17/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Priya Okafor",
@@ -1592,8 +1592,8 @@
     "years_experienced": 27,
     "mvr_run_date": "01/13/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Jonah Barrera",
@@ -1604,8 +1604,8 @@
     "years_experienced": 11,
     "mvr_run_date": "01/18/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Maya Wynn",
@@ -1616,8 +1616,8 @@
     "years_experienced": 7,
     "mvr_run_date": "01/16/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Speeding - 2024-11-04"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Arman Hughes",
@@ -1628,8 +1628,8 @@
     "years_experienced": 29,
     "mvr_run_date": "01/17/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Speeding - 2024-11-04"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Tessa Gallagher",
@@ -1640,8 +1640,8 @@
     "years_experienced": 29,
     "mvr_run_date": "01/12/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Reed Lambert",
@@ -1652,8 +1652,8 @@
     "years_experienced": 10,
     "mvr_run_date": "01/17/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Clara Mendez",
@@ -1664,8 +1664,8 @@
     "years_experienced": 16,
     "mvr_run_date": "01/26/2026",
     "license_class": "B",
-    "accidents_last_5_years": "1 - 2022-12-10",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Elias Rivera",
@@ -1676,8 +1676,8 @@
     "years_experienced": 13,
     "mvr_run_date": "01/18/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Speeding - 2024-11-04"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Farah Reyes",
@@ -1688,8 +1688,8 @@
     "years_experienced": 24,
     "mvr_run_date": "01/10/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Speeding - 2024-11-04"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Sonia Rahman",
@@ -1700,8 +1700,8 @@
     "years_experienced": 14,
     "mvr_run_date": "01/12/2026",
     "license_class": "B",
-    "accidents_last_5_years": "1 - 2023-04-11",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Lucian Nguyen",
@@ -1712,8 +1712,8 @@
     "years_experienced": 21,
     "mvr_run_date": "01/11/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Greta Nassar",
@@ -1736,8 +1736,8 @@
     "years_experienced": 35,
     "mvr_run_date": "01/11/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Lane violation - 2023-08-17"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Cecilia Mensah",
@@ -1748,8 +1748,8 @@
     "years_experienced": 7,
     "mvr_run_date": "01/17/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Marcus Torres",
@@ -1760,8 +1760,8 @@
     "years_experienced": 12,
     "mvr_run_date": "01/19/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Avery Duarte",
@@ -1772,8 +1772,8 @@
     "years_experienced": 33,
     "mvr_run_date": "01/17/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Daphne Hayes",
@@ -1784,8 +1784,8 @@
     "years_experienced": 20,
     "mvr_run_date": "01/26/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Lane violation - 2023-08-17"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Theo Haddad",
@@ -1796,8 +1796,8 @@
     "years_experienced": 17,
     "mvr_run_date": "01/27/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Lane violation - 2023-08-17"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Lina Santos",
@@ -1808,8 +1808,8 @@
     "years_experienced": 28,
     "mvr_run_date": "01/20/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Speeding - 2024-11-04"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Rafael Kaminski",
@@ -1820,8 +1820,8 @@
     "years_experienced": 20,
     "mvr_run_date": "01/10/2026",
     "license_class": "A",
-    "accidents_last_5_years": "1 - 2023-10-15",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Mira Chen",
@@ -1832,8 +1832,8 @@
     "years_experienced": 15,
     "mvr_run_date": "01/26/2026",
     "license_class": "A",
-    "accidents_last_5_years": "1 - 2022-01-02",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Omar Serrano",
@@ -1844,8 +1844,8 @@
     "years_experienced": 14,
     "mvr_run_date": "01/27/2026",
     "license_class": "B",
-    "accidents_last_5_years": "1 - 2024-09-04",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Selena Diaz",
@@ -1856,8 +1856,8 @@
     "years_experienced": 20,
     "mvr_run_date": "01/16/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Speeding - 2024-11-04"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Julian Bauer",
@@ -1868,8 +1868,8 @@
     "years_experienced": 20,
     "mvr_run_date": "01/22/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Iris Sawyer",
@@ -1880,8 +1880,8 @@
     "years_experienced": 20,
     "mvr_run_date": "01/21/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Speeding - 2024-11-04"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Devon Soto",
@@ -1892,8 +1892,8 @@
     "years_experienced": 6,
     "mvr_run_date": "01/26/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Lane violation - 2023-08-17"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Alma Velasquez",
@@ -1904,8 +1904,8 @@
     "years_experienced": 11,
     "mvr_run_date": "01/17/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Speeding - 2024-11-04"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Mateo Talbot",
@@ -1916,8 +1916,8 @@
     "years_experienced": 24,
     "mvr_run_date": "01/17/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Renee Bishop",
@@ -1928,8 +1928,8 @@
     "years_experienced": 23,
     "mvr_run_date": "01/22/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Speeding - 2024-11-04"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Silas Ortega",
@@ -1940,8 +1940,8 @@
     "years_experienced": 8,
     "mvr_run_date": "01/13/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Vera Farrell",
@@ -1952,8 +1952,8 @@
     "years_experienced": 9,
     "mvr_run_date": "01/21/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Adrian Madsen",
@@ -1964,8 +1964,8 @@
     "years_experienced": 6,
     "mvr_run_date": "01/10/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Lena Price",
@@ -1976,8 +1976,8 @@
     "years_experienced": 25,
     "mvr_run_date": "01/27/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Lane violation - 2023-08-17"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Kai Parker",
@@ -1988,8 +1988,8 @@
     "years_experienced": 26,
     "mvr_run_date": "01/11/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Lane violation - 2023-08-17"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Mina Singh",
@@ -2000,8 +2000,8 @@
     "years_experienced": 10,
     "mvr_run_date": "01/23/2026",
     "license_class": "B",
-    "accidents_last_5_years": "1 - 2024-08-27",
-    "mvr_violations": "Speeding - 2024-11-04"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Nolan Carver",
@@ -2012,8 +2012,8 @@
     "years_experienced": 12,
     "mvr_run_date": "01/20/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Marta Abbott",
@@ -2024,8 +2024,8 @@
     "years_experienced": 29,
     "mvr_run_date": "01/16/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Ibrahim Vargas",
@@ -2036,8 +2036,8 @@
     "years_experienced": 32,
     "mvr_run_date": "01/19/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Elena Novak",
@@ -2048,8 +2048,8 @@
     "years_experienced": 5,
     "mvr_run_date": "01/17/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Victor Kovacs",
@@ -2060,8 +2060,8 @@
     "years_experienced": 21,
     "mvr_run_date": "01/20/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Leah Kline",
@@ -2072,8 +2072,8 @@
     "years_experienced": 30,
     "mvr_run_date": "01/14/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Samir Malik",
@@ -2084,8 +2084,8 @@
     "years_experienced": 12,
     "mvr_run_date": "01/12/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Daria Arias",
@@ -2096,8 +2096,8 @@
     "years_experienced": 28,
     "mvr_run_date": "01/22/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Lane violation - 2023-08-17"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Owen Markovic",
@@ -2108,8 +2108,8 @@
     "years_experienced": 7,
     "mvr_run_date": "01/23/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Speeding - 2024-11-04"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Anika Ilyin",
@@ -2120,8 +2120,8 @@
     "years_experienced": 22,
     "mvr_run_date": "01/18/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Milan Romano",
@@ -2132,8 +2132,8 @@
     "years_experienced": 19,
     "mvr_run_date": "01/22/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Lane violation - 2023-08-17"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Rosa Patel",
@@ -2144,8 +2144,8 @@
     "years_experienced": 21,
     "mvr_run_date": "01/28/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Speeding - 2024-11-04"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Caleb Rossi",
@@ -2156,8 +2156,8 @@
     "years_experienced": 21,
     "mvr_run_date": "01/22/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Nina Sorensen",
@@ -2168,8 +2168,8 @@
     "years_experienced": 6,
     "mvr_run_date": "01/26/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Lane violation - 2023-08-17"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Andre Yu",
@@ -2180,8 +2180,8 @@
     "years_experienced": 18,
     "mvr_run_date": "01/12/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Priya Tan",
@@ -2192,8 +2192,8 @@
     "years_experienced": 31,
     "mvr_run_date": "01/20/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Jonah Moreno",
@@ -2204,8 +2204,8 @@
     "years_experienced": 7,
     "mvr_run_date": "01/16/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Lane violation - 2023-08-17"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Maya Petrov",
@@ -2216,8 +2216,8 @@
     "years_experienced": 22,
     "mvr_run_date": "01/26/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Lane violation - 2023-08-17"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Arman Foster",
@@ -2228,8 +2228,8 @@
     "years_experienced": 34,
     "mvr_run_date": "01/27/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Tessa Quinn",
@@ -2240,8 +2240,8 @@
     "years_experienced": 13,
     "mvr_run_date": "01/14/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Reed Kim",
@@ -2252,8 +2252,8 @@
     "years_experienced": 31,
     "mvr_run_date": "01/13/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Speeding - 2024-11-04"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Clara Bennett",
@@ -2264,8 +2264,8 @@
     "years_experienced": 6,
     "mvr_run_date": "01/26/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Elias Navarro",
@@ -2276,8 +2276,8 @@
     "years_experienced": 15,
     "mvr_run_date": "01/23/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Farah Holt",
@@ -2288,8 +2288,8 @@
     "years_experienced": 10,
     "mvr_run_date": "01/15/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Lane violation - 2023-08-17"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Sonia Coleman",
@@ -2300,8 +2300,8 @@
     "years_experienced": 22,
     "mvr_run_date": "01/22/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Lucian Okafor",
@@ -2312,8 +2312,8 @@
     "years_experienced": 31,
     "mvr_run_date": "01/10/2026",
     "license_class": "A",
-    "accidents_last_5_years": "1 - 2024-11-23",
-    "mvr_violations": "Speeding - 2024-11-04"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Greta Barrera",
@@ -2324,8 +2324,8 @@
     "years_experienced": 9,
     "mvr_run_date": "01/26/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Noemi Wynn",
@@ -2336,8 +2336,8 @@
     "years_experienced": 26,
     "mvr_run_date": "01/20/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Cecilia Hughes",
@@ -2348,8 +2348,8 @@
     "years_experienced": 3,
     "mvr_run_date": "01/23/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Marcus Gallagher",
@@ -2360,8 +2360,8 @@
     "years_experienced": 23,
     "mvr_run_date": "01/14/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Lane violation - 2023-08-17"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Avery Lambert",
@@ -2372,8 +2372,8 @@
     "years_experienced": 13,
     "mvr_run_date": "01/19/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Speeding - 2024-11-04"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Daphne Mendez",
@@ -2384,8 +2384,8 @@
     "years_experienced": 2,
     "mvr_run_date": "01/11/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Theo Rivera",
@@ -2396,8 +2396,8 @@
     "years_experienced": 22,
     "mvr_run_date": "01/10/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Lane violation - 2023-08-17"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Lina Reyes",
@@ -2408,8 +2408,8 @@
     "years_experienced": 16,
     "mvr_run_date": "01/11/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Rafael Rahman",
@@ -2420,8 +2420,8 @@
     "years_experienced": 4,
     "mvr_run_date": "01/27/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Mira Nguyen",
@@ -2432,8 +2432,8 @@
     "years_experienced": 25,
     "mvr_run_date": "01/20/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Speeding - 2024-11-04"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Omar Nassar",
@@ -2444,8 +2444,8 @@
     "years_experienced": 15,
     "mvr_run_date": "01/18/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Selena Walsh",
@@ -2456,8 +2456,8 @@
     "years_experienced": 5,
     "mvr_run_date": "01/14/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Julian Mensah",
@@ -2468,8 +2468,8 @@
     "years_experienced": 19,
     "mvr_run_date": "01/23/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Speeding - 2024-11-04"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Iris Torres",
@@ -2480,8 +2480,8 @@
     "years_experienced": 29,
     "mvr_run_date": "01/23/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Speeding - 2024-11-04"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Devon Duarte",
@@ -2492,8 +2492,8 @@
     "years_experienced": 35,
     "mvr_run_date": "01/27/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Speeding - 2024-11-04"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Alma Hayes",
@@ -2504,8 +2504,8 @@
     "years_experienced": 11,
     "mvr_run_date": "01/26/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Mateo Haddad",
@@ -2516,8 +2516,8 @@
     "years_experienced": 7,
     "mvr_run_date": "01/21/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Renee Santos",
@@ -2528,8 +2528,8 @@
     "years_experienced": 12,
     "mvr_run_date": "01/18/2026",
     "license_class": "A",
-    "accidents_last_5_years": "1 - 2021-12-26",
-    "mvr_violations": "Lane violation - 2023-08-17"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Silas Kaminski",
@@ -2540,8 +2540,8 @@
     "years_experienced": 7,
     "mvr_run_date": "01/21/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Vera Chen",
@@ -2552,8 +2552,8 @@
     "years_experienced": 9,
     "mvr_run_date": "01/11/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Lane violation - 2023-08-17"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Adrian Serrano",
@@ -2564,8 +2564,8 @@
     "years_experienced": 18,
     "mvr_run_date": "01/15/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Lena Diaz",
@@ -2588,8 +2588,8 @@
     "years_experienced": 23,
     "mvr_run_date": "01/26/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Mina Sawyer",
@@ -2600,8 +2600,8 @@
     "years_experienced": 32,
     "mvr_run_date": "01/15/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Nolan Soto",
@@ -2612,8 +2612,8 @@
     "years_experienced": 9,
     "mvr_run_date": "01/22/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Speeding - 2024-11-04"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Marta Velasquez",
@@ -2624,8 +2624,8 @@
     "years_experienced": 7,
     "mvr_run_date": "01/23/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Ibrahim Talbot",
@@ -2636,8 +2636,8 @@
     "years_experienced": 23,
     "mvr_run_date": "01/13/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Elena Bishop",
@@ -2648,8 +2648,8 @@
     "years_experienced": 11,
     "mvr_run_date": "01/24/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Victor Ortega",
@@ -2660,8 +2660,8 @@
     "years_experienced": 7,
     "mvr_run_date": "01/25/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Lane violation - 2023-08-17"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Leah Farrell",
@@ -2672,8 +2672,8 @@
     "years_experienced": 29,
     "mvr_run_date": "01/16/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Speeding - 2024-11-04"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Samir Madsen",
@@ -2684,8 +2684,8 @@
     "years_experienced": 6,
     "mvr_run_date": "01/24/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Lane violation - 2023-08-17"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Daria Price",
@@ -2696,8 +2696,8 @@
     "years_experienced": 20,
     "mvr_run_date": "01/23/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Lane violation - 2023-08-17"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Owen Parker",
@@ -2708,8 +2708,8 @@
     "years_experienced": 30,
     "mvr_run_date": "01/22/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Speeding - 2024-11-04"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Anika Singh",
@@ -2720,8 +2720,8 @@
     "years_experienced": 27,
     "mvr_run_date": "01/24/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Milan Carver",
@@ -2732,8 +2732,8 @@
     "years_experienced": 29,
     "mvr_run_date": "01/25/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Rosa Abbott",
@@ -2744,8 +2744,8 @@
     "years_experienced": 10,
     "mvr_run_date": "01/28/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Caleb Vargas",
@@ -2756,8 +2756,8 @@
     "years_experienced": 6,
     "mvr_run_date": "01/15/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Speeding - 2024-11-04"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Nina Novak",
@@ -2768,8 +2768,8 @@
     "years_experienced": 25,
     "mvr_run_date": "01/15/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Andre Kovacs",
@@ -2780,8 +2780,8 @@
     "years_experienced": 32,
     "mvr_run_date": "01/24/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Priya Kline",
@@ -2792,8 +2792,8 @@
     "years_experienced": 8,
     "mvr_run_date": "01/10/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Jonah Malik",
@@ -2804,8 +2804,8 @@
     "years_experienced": 12,
     "mvr_run_date": "01/13/2026",
     "license_class": "A",
-    "accidents_last_5_years": "1 - 2023-01-03",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Maya Arias",
@@ -2816,8 +2816,8 @@
     "years_experienced": 20,
     "mvr_run_date": "01/25/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Lane violation - 2023-08-17"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Arman Markovic",
@@ -2828,8 +2828,8 @@
     "years_experienced": 29,
     "mvr_run_date": "01/26/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Tessa Ilyin",
@@ -2840,8 +2840,8 @@
     "years_experienced": 14,
     "mvr_run_date": "01/12/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Reed Romano",
@@ -2852,8 +2852,8 @@
     "years_experienced": 7,
     "mvr_run_date": "01/21/2026",
     "license_class": "B",
-    "accidents_last_5_years": "1 - 2021-06-11",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Clara Patel",
@@ -2864,8 +2864,8 @@
     "years_experienced": 12,
     "mvr_run_date": "01/27/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Elias Rossi",
@@ -2876,8 +2876,8 @@
     "years_experienced": 11,
     "mvr_run_date": "01/15/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Farah Sorensen",
@@ -2888,8 +2888,8 @@
     "years_experienced": 8,
     "mvr_run_date": "01/28/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Sonia Yu",
@@ -2900,8 +2900,8 @@
     "years_experienced": 11,
     "mvr_run_date": "01/26/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Lucian Tan",
@@ -2912,8 +2912,8 @@
     "years_experienced": 20,
     "mvr_run_date": "01/27/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Speeding - 2024-11-04"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Greta Moreno",
@@ -2924,8 +2924,8 @@
     "years_experienced": 23,
     "mvr_run_date": "01/26/2026",
     "license_class": "A",
-    "accidents_last_5_years": "1 - 2021-09-12",
-    "mvr_violations": "Speeding - 2024-11-04"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Noemi Petrov",
@@ -2936,8 +2936,8 @@
     "years_experienced": 9,
     "mvr_run_date": "01/10/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Cecilia Foster",
@@ -2948,8 +2948,8 @@
     "years_experienced": 18,
     "mvr_run_date": "01/12/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Marcus Quinn",
@@ -2960,8 +2960,8 @@
     "years_experienced": 13,
     "mvr_run_date": "01/12/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Lane violation - 2023-08-17"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Avery Kim",
@@ -2972,8 +2972,8 @@
     "years_experienced": 1,
     "mvr_run_date": "01/20/2026",
     "license_class": "A",
-    "accidents_last_5_years": "1 - 2021-01-02",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Daphne Bennett",
@@ -2984,8 +2984,8 @@
     "years_experienced": 7,
     "mvr_run_date": "01/21/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Theo Navarro",
@@ -2996,8 +2996,8 @@
     "years_experienced": 11,
     "mvr_run_date": "01/19/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Speeding - 2024-11-04"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Lina Holt",
@@ -3008,8 +3008,8 @@
     "years_experienced": 13,
     "mvr_run_date": "01/23/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Rafael Coleman",
@@ -3020,8 +3020,8 @@
     "years_experienced": 32,
     "mvr_run_date": "01/24/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Mira Okafor",
@@ -3032,8 +3032,8 @@
     "years_experienced": 24,
     "mvr_run_date": "01/24/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Lane violation - 2023-08-17"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Omar Barrera",
@@ -3044,8 +3044,8 @@
     "years_experienced": 26,
     "mvr_run_date": "01/25/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Selena Wynn",
@@ -3056,8 +3056,8 @@
     "years_experienced": 25,
     "mvr_run_date": "01/18/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Julian Hughes",
@@ -3068,8 +3068,8 @@
     "years_experienced": 26,
     "mvr_run_date": "01/18/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Iris Gallagher",
@@ -3080,8 +3080,8 @@
     "years_experienced": 29,
     "mvr_run_date": "01/18/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Devon Lambert",
@@ -3092,8 +3092,8 @@
     "years_experienced": 27,
     "mvr_run_date": "01/18/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Alma Mendez",
@@ -3104,8 +3104,8 @@
     "years_experienced": 28,
     "mvr_run_date": "01/11/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Mateo Rivera",
@@ -3116,8 +3116,8 @@
     "years_experienced": 3,
     "mvr_run_date": "01/17/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Renee Reyes",
@@ -3128,8 +3128,8 @@
     "years_experienced": 8,
     "mvr_run_date": "01/21/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Speeding - 2024-11-04"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Silas Rahman",
@@ -3140,8 +3140,8 @@
     "years_experienced": 7,
     "mvr_run_date": "01/19/2026",
     "license_class": "B",
-    "accidents_last_5_years": "1 - 2024-03-12",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Vera Nguyen",
@@ -3152,8 +3152,8 @@
     "years_experienced": 31,
     "mvr_run_date": "01/26/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Adrian Nassar",
@@ -3164,8 +3164,8 @@
     "years_experienced": 36,
     "mvr_run_date": "01/27/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Speeding - 2024-11-04"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Lena Walsh",
@@ -3176,8 +3176,8 @@
     "years_experienced": 12,
     "mvr_run_date": "01/10/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Kai Mensah",
@@ -3188,8 +3188,8 @@
     "years_experienced": 25,
     "mvr_run_date": "01/17/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Mina Torres",
@@ -3200,8 +3200,8 @@
     "years_experienced": 8,
     "mvr_run_date": "01/14/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Nolan Duarte",
@@ -3212,8 +3212,8 @@
     "years_experienced": 32,
     "mvr_run_date": "01/12/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Speeding - 2024-11-04"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Marta Hayes",
@@ -3224,8 +3224,8 @@
     "years_experienced": 18,
     "mvr_run_date": "01/27/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Ibrahim Haddad",
@@ -3236,8 +3236,8 @@
     "years_experienced": 29,
     "mvr_run_date": "01/28/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Elena Santos",
@@ -3248,8 +3248,8 @@
     "years_experienced": 24,
     "mvr_run_date": "01/11/2026",
     "license_class": "A",
-    "accidents_last_5_years": "1 - 2022-06-20",
-    "mvr_violations": "Lane violation - 2023-08-17"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Victor Kaminski",
@@ -3260,8 +3260,8 @@
     "years_experienced": 32,
     "mvr_run_date": "01/18/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Lane violation - 2023-08-17"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Leah Chen",
@@ -3272,8 +3272,8 @@
     "years_experienced": 29,
     "mvr_run_date": "01/26/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Lane violation - 2023-08-17"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Samir Serrano",
@@ -3284,8 +3284,8 @@
     "years_experienced": 14,
     "mvr_run_date": "01/12/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Daria Diaz",
@@ -3296,8 +3296,8 @@
     "years_experienced": 2,
     "mvr_run_date": "01/23/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Speeding - 2024-11-04"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Owen Bauer",
@@ -3308,8 +3308,8 @@
     "years_experienced": 13,
     "mvr_run_date": "01/11/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Anika Sawyer",
@@ -3320,8 +3320,8 @@
     "years_experienced": 24,
     "mvr_run_date": "01/20/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Milan Soto",
@@ -3332,8 +3332,8 @@
     "years_experienced": 8,
     "mvr_run_date": "01/10/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Lane violation - 2023-08-17"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Rosa Velasquez",
@@ -3344,8 +3344,8 @@
     "years_experienced": 14,
     "mvr_run_date": "01/16/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Lane violation - 2023-08-17"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Caleb Talbot",
@@ -3356,8 +3356,8 @@
     "years_experienced": 26,
     "mvr_run_date": "01/17/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Nina Bishop",
@@ -3368,8 +3368,8 @@
     "years_experienced": 7,
     "mvr_run_date": "01/24/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Lane violation - 2023-08-17"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Andre Ortega",
@@ -3380,8 +3380,8 @@
     "years_experienced": 25,
     "mvr_run_date": "01/11/2026",
     "license_class": "A",
-    "accidents_last_5_years": "1 - 2023-06-25",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Priya Farrell",
@@ -3392,8 +3392,8 @@
     "years_experienced": 1,
     "mvr_run_date": "01/11/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Jonah Madsen",
@@ -3404,8 +3404,8 @@
     "years_experienced": 5,
     "mvr_run_date": "01/10/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Lane violation - 2023-08-17"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Maya Price",
@@ -3416,8 +3416,8 @@
     "years_experienced": 36,
     "mvr_run_date": "01/25/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Arman Parker",
@@ -3440,8 +3440,8 @@
     "years_experienced": 9,
     "mvr_run_date": "01/26/2026",
     "license_class": "B",
-    "accidents_last_5_years": "1 - 2022-09-10",
-    "mvr_violations": "Lane violation - 2023-08-17"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Reed Carver",
@@ -3452,8 +3452,8 @@
     "years_experienced": 30,
     "mvr_run_date": "01/22/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Clara Abbott",
@@ -3464,8 +3464,8 @@
     "years_experienced": 18,
     "mvr_run_date": "01/20/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Elias Vargas",
@@ -3476,8 +3476,8 @@
     "years_experienced": 18,
     "mvr_run_date": "01/25/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Farah Novak",
@@ -3488,8 +3488,8 @@
     "years_experienced": 17,
     "mvr_run_date": "01/26/2026",
     "license_class": "A",
-    "accidents_last_5_years": "1 - 2024-04-01",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Sonia Kovacs",
@@ -3500,8 +3500,8 @@
     "years_experienced": 32,
     "mvr_run_date": "01/18/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Speeding - 2024-11-04"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Lucian Kline",
@@ -3512,8 +3512,8 @@
     "years_experienced": 11,
     "mvr_run_date": "01/28/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Lane violation - 2023-08-17"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Greta Malik",
@@ -3524,8 +3524,8 @@
     "years_experienced": 11,
     "mvr_run_date": "01/17/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Noemi Arias",
@@ -3536,8 +3536,8 @@
     "years_experienced": 31,
     "mvr_run_date": "01/26/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Speeding - 2024-11-04"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Cecilia Markovic",
@@ -3548,8 +3548,8 @@
     "years_experienced": 5,
     "mvr_run_date": "01/14/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Lane violation - 2023-08-17"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Marcus Ilyin",
@@ -3560,8 +3560,8 @@
     "years_experienced": 30,
     "mvr_run_date": "01/18/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Avery Romano",
@@ -3572,8 +3572,8 @@
     "years_experienced": 12,
     "mvr_run_date": "01/18/2026",
     "license_class": "A",
-    "accidents_last_5_years": "1 - 2024-03-07",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Daphne Patel",
@@ -3584,8 +3584,8 @@
     "years_experienced": 31,
     "mvr_run_date": "01/11/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Lane violation - 2023-08-17"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Theo Rossi",
@@ -3596,8 +3596,8 @@
     "years_experienced": 18,
     "mvr_run_date": "01/19/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Lina Sorensen",
@@ -3608,8 +3608,8 @@
     "years_experienced": 30,
     "mvr_run_date": "01/10/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Lane violation - 2023-08-17"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Rafael Yu",
@@ -3620,8 +3620,8 @@
     "years_experienced": 24,
     "mvr_run_date": "01/14/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Lane violation - 2023-08-17"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Mira Tan",
@@ -3632,8 +3632,8 @@
     "years_experienced": 12,
     "mvr_run_date": "01/18/2026",
     "license_class": "B",
-    "accidents_last_5_years": "1 - 2024-11-01",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Omar Moreno",
@@ -3644,8 +3644,8 @@
     "years_experienced": 17,
     "mvr_run_date": "01/26/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Selena Petrov",
@@ -3656,8 +3656,8 @@
     "years_experienced": 28,
     "mvr_run_date": "01/18/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Julian Foster",
@@ -3668,8 +3668,8 @@
     "years_experienced": 19,
     "mvr_run_date": "01/12/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Iris Quinn",
@@ -3680,8 +3680,8 @@
     "years_experienced": 13,
     "mvr_run_date": "01/22/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Devon Kim",
@@ -3692,8 +3692,8 @@
     "years_experienced": 30,
     "mvr_run_date": "01/22/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Alma Bennett",
@@ -3704,8 +3704,8 @@
     "years_experienced": 5,
     "mvr_run_date": "01/10/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Lane violation - 2023-08-17"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Mateo Navarro",
@@ -3716,8 +3716,8 @@
     "years_experienced": 31,
     "mvr_run_date": "01/28/2026",
     "license_class": "A",
-    "accidents_last_5_years": "1 - 2021-06-22",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Renee Holt",
@@ -3728,8 +3728,8 @@
     "years_experienced": 19,
     "mvr_run_date": "01/28/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Speeding - 2024-11-04"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Silas Coleman",
@@ -3740,8 +3740,8 @@
     "years_experienced": 6,
     "mvr_run_date": "01/20/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Vera Okafor",
@@ -3752,8 +3752,8 @@
     "years_experienced": 16,
     "mvr_run_date": "01/21/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Speeding - 2024-11-04"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Adrian Barrera",
@@ -3764,8 +3764,8 @@
     "years_experienced": 5,
     "mvr_run_date": "01/13/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Lena Wynn",
@@ -3776,8 +3776,8 @@
     "years_experienced": 35,
     "mvr_run_date": "01/16/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Kai Hughes",
@@ -3788,8 +3788,8 @@
     "years_experienced": 19,
     "mvr_run_date": "01/24/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Mina Gallagher",
@@ -3800,8 +3800,8 @@
     "years_experienced": 19,
     "mvr_run_date": "01/18/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Nolan Lambert",
@@ -3812,8 +3812,8 @@
     "years_experienced": 4,
     "mvr_run_date": "01/14/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Speeding - 2024-11-04"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Marta Mendez",
@@ -3824,8 +3824,8 @@
     "years_experienced": 22,
     "mvr_run_date": "01/22/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Lane violation - 2023-08-17"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Ibrahim Rivera",
@@ -3836,8 +3836,8 @@
     "years_experienced": 4,
     "mvr_run_date": "01/10/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Speeding - 2024-11-04"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Elena Reyes",
@@ -3848,8 +3848,8 @@
     "years_experienced": 28,
     "mvr_run_date": "01/10/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Lane violation - 2023-08-17"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Victor Rahman",
@@ -3860,8 +3860,8 @@
     "years_experienced": 33,
     "mvr_run_date": "01/14/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Lane violation - 2023-08-17"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Leah Nguyen",
@@ -3872,8 +3872,8 @@
     "years_experienced": 22,
     "mvr_run_date": "01/23/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Samir Nassar",
@@ -3884,8 +3884,8 @@
     "years_experienced": 29,
     "mvr_run_date": "01/11/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Lane violation - 2023-08-17"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Daria Walsh",
@@ -3896,8 +3896,8 @@
     "years_experienced": 20,
     "mvr_run_date": "01/27/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Owen Mensah",
@@ -3908,8 +3908,8 @@
     "years_experienced": 30,
     "mvr_run_date": "01/25/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Anika Torres",
@@ -3920,8 +3920,8 @@
     "years_experienced": 19,
     "mvr_run_date": "01/10/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Lane violation - 2023-08-17"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Milan Duarte",
@@ -3932,8 +3932,8 @@
     "years_experienced": 6,
     "mvr_run_date": "01/17/2026",
     "license_class": "B",
-    "accidents_last_5_years": "1 - 2022-04-18",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Rosa Hayes",
@@ -3944,8 +3944,8 @@
     "years_experienced": 14,
     "mvr_run_date": "01/11/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Caleb Haddad",
@@ -3956,8 +3956,8 @@
     "years_experienced": 14,
     "mvr_run_date": "01/20/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Nina Santos",
@@ -3968,8 +3968,8 @@
     "years_experienced": 24,
     "mvr_run_date": "01/10/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Andre Kaminski",
@@ -3980,8 +3980,8 @@
     "years_experienced": 19,
     "mvr_run_date": "01/18/2026",
     "license_class": "A",
-    "accidents_last_5_years": "1 - 2023-01-25",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Priya Chen",
@@ -3992,8 +3992,8 @@
     "years_experienced": 11,
     "mvr_run_date": "01/17/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Lane violation - 2023-08-17"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Jonah Serrano",
@@ -4004,8 +4004,8 @@
     "years_experienced": 31,
     "mvr_run_date": "01/25/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Speeding - 2024-11-04"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Maya Diaz",
@@ -4016,8 +4016,8 @@
     "years_experienced": 26,
     "mvr_run_date": "01/25/2026",
     "license_class": "A",
-    "accidents_last_5_years": "1 - 2024-07-03",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Arman Bauer",
@@ -4028,8 +4028,8 @@
     "years_experienced": 26,
     "mvr_run_date": "01/12/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Tessa Sawyer",
@@ -4040,8 +4040,8 @@
     "years_experienced": 17,
     "mvr_run_date": "01/26/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Speeding - 2024-11-04"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Reed Soto",
@@ -4052,8 +4052,8 @@
     "years_experienced": 21,
     "mvr_run_date": "01/21/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Speeding - 2024-11-04"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Clara Velasquez",
@@ -4064,8 +4064,8 @@
     "years_experienced": 22,
     "mvr_run_date": "01/22/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Elias Talbot",
@@ -4076,8 +4076,8 @@
     "years_experienced": 1,
     "mvr_run_date": "01/24/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Farah Bishop",
@@ -4088,8 +4088,8 @@
     "years_experienced": 20,
     "mvr_run_date": "01/24/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Sonia Ortega",
@@ -4100,8 +4100,8 @@
     "years_experienced": 34,
     "mvr_run_date": "01/25/2026",
     "license_class": "A",
-    "accidents_last_5_years": "1 - 2024-09-28",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Lucian Farrell",
@@ -4112,8 +4112,8 @@
     "years_experienced": 37,
     "mvr_run_date": "01/19/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Lane violation - 2023-08-17"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Greta Madsen",
@@ -4124,8 +4124,8 @@
     "years_experienced": 19,
     "mvr_run_date": "01/10/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Noemi Price",
@@ -4136,8 +4136,8 @@
     "years_experienced": 32,
     "mvr_run_date": "01/16/2026",
     "license_class": "A",
-    "accidents_last_5_years": "1 - 2022-11-11",
-    "mvr_violations": "Speeding - 2024-11-04"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Cecilia Parker",
@@ -4148,8 +4148,8 @@
     "years_experienced": 13,
     "mvr_run_date": "01/14/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Marcus Singh",
@@ -4160,8 +4160,8 @@
     "years_experienced": 36,
     "mvr_run_date": "01/13/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Avery Carver",
@@ -4172,8 +4172,8 @@
     "years_experienced": 27,
     "mvr_run_date": "01/25/2026",
     "license_class": "A",
-    "accidents_last_5_years": "1 - 2023-08-10",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Daphne Abbott",
@@ -4184,8 +4184,8 @@
     "years_experienced": 36,
     "mvr_run_date": "01/17/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Theo Vargas",
@@ -4196,8 +4196,8 @@
     "years_experienced": 29,
     "mvr_run_date": "01/14/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Lane violation - 2023-08-17"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Lina Novak",
@@ -4208,8 +4208,8 @@
     "years_experienced": 34,
     "mvr_run_date": "01/23/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Rafael Kovacs",
@@ -4220,8 +4220,8 @@
     "years_experienced": 10,
     "mvr_run_date": "01/18/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Speeding - 2024-11-04"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Mira Kline",
@@ -4232,8 +4232,8 @@
     "years_experienced": 9,
     "mvr_run_date": "01/25/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Omar Malik",
@@ -4244,8 +4244,8 @@
     "years_experienced": 21,
     "mvr_run_date": "01/25/2026",
     "license_class": "A",
-    "accidents_last_5_years": "1 - 2021-06-13",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Selena Arias",
@@ -4256,8 +4256,8 @@
     "years_experienced": 32,
     "mvr_run_date": "01/14/2026",
     "license_class": "A",
-    "accidents_last_5_years": "1 - 2021-02-20",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Julian Markovic",
@@ -4268,8 +4268,8 @@
     "years_experienced": 14,
     "mvr_run_date": "01/18/2026",
     "license_class": "A",
-    "accidents_last_5_years": "1 - 2022-08-23",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Iris Ilyin",
@@ -4292,8 +4292,8 @@
     "years_experienced": 14,
     "mvr_run_date": "01/25/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Speeding - 2024-11-04"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Alma Patel",
@@ -4304,8 +4304,8 @@
     "years_experienced": 20,
     "mvr_run_date": "01/11/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Mateo Rossi",
@@ -4316,8 +4316,8 @@
     "years_experienced": 27,
     "mvr_run_date": "01/22/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Renee Sorensen",
@@ -4328,8 +4328,8 @@
     "years_experienced": 23,
     "mvr_run_date": "01/10/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Silas Yu",
@@ -4340,8 +4340,8 @@
     "years_experienced": 17,
     "mvr_run_date": "01/20/2026",
     "license_class": "A",
-    "accidents_last_5_years": "1 - 2023-03-27",
-    "mvr_violations": "Lane violation - 2023-08-17"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Vera Tan",
@@ -4352,8 +4352,8 @@
     "years_experienced": 22,
     "mvr_run_date": "01/28/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Adrian Moreno",
@@ -4364,8 +4364,8 @@
     "years_experienced": 16,
     "mvr_run_date": "01/27/2026",
     "license_class": "B",
-    "accidents_last_5_years": "1 - 2025-04-19",
-    "mvr_violations": "Lane violation - 2023-08-17"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Lena Petrov",
@@ -4376,8 +4376,8 @@
     "years_experienced": 11,
     "mvr_run_date": "01/20/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Speeding - 2024-11-04"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Kai Foster",
@@ -4388,8 +4388,8 @@
     "years_experienced": 31,
     "mvr_run_date": "01/19/2026",
     "license_class": "A",
-    "accidents_last_5_years": "1 - 2024-09-14",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Mina Quinn",
@@ -4400,8 +4400,8 @@
     "years_experienced": 6,
     "mvr_run_date": "01/23/2026",
     "license_class": "B",
-    "accidents_last_5_years": "1 - 2021-04-28",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Nolan Kim",
@@ -4412,8 +4412,8 @@
     "years_experienced": 26,
     "mvr_run_date": "01/19/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Lane violation - 2023-08-17"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Marta Bennett",
@@ -4424,8 +4424,8 @@
     "years_experienced": 34,
     "mvr_run_date": "01/17/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Ibrahim Navarro",
@@ -4436,8 +4436,8 @@
     "years_experienced": 3,
     "mvr_run_date": "01/13/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Speeding - 2024-11-04"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Elena Holt",
@@ -4448,8 +4448,8 @@
     "years_experienced": 9,
     "mvr_run_date": "01/24/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Speeding - 2024-11-04"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Victor Coleman",
@@ -4460,8 +4460,8 @@
     "years_experienced": 10,
     "mvr_run_date": "01/18/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Leah Okafor",
@@ -4472,8 +4472,8 @@
     "years_experienced": 20,
     "mvr_run_date": "01/12/2026",
     "license_class": "B",
-    "accidents_last_5_years": "1 - 2024-06-09",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Samir Barrera",
@@ -4484,8 +4484,8 @@
     "years_experienced": 17,
     "mvr_run_date": "01/21/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Daria Wynn",
@@ -4496,8 +4496,8 @@
     "years_experienced": 33,
     "mvr_run_date": "01/12/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Lane violation - 2023-08-17"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Owen Hughes",
@@ -4508,8 +4508,8 @@
     "years_experienced": 23,
     "mvr_run_date": "01/28/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Anika Gallagher",
@@ -4520,8 +4520,8 @@
     "years_experienced": 18,
     "mvr_run_date": "01/12/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Milan Lambert",
@@ -4532,8 +4532,8 @@
     "years_experienced": 25,
     "mvr_run_date": "01/19/2026",
     "license_class": "A",
-    "accidents_last_5_years": "1 - 2025-12-02",
-    "mvr_violations": "Speeding - 2024-11-04"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Rosa Mendez",
@@ -4544,8 +4544,8 @@
     "years_experienced": 14,
     "mvr_run_date": "01/10/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Lane violation - 2023-08-17"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Caleb Rivera",
@@ -4556,8 +4556,8 @@
     "years_experienced": 10,
     "mvr_run_date": "01/11/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Nina Reyes",
@@ -4568,8 +4568,8 @@
     "years_experienced": 30,
     "mvr_run_date": "01/11/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Andre Rahman",
@@ -4580,8 +4580,8 @@
     "years_experienced": 17,
     "mvr_run_date": "01/25/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Priya Nguyen",
@@ -4592,8 +4592,8 @@
     "years_experienced": 10,
     "mvr_run_date": "01/19/2026",
     "license_class": "A",
-    "accidents_last_5_years": "1 - 2023-12-23",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Jonah Nassar",
@@ -4604,8 +4604,8 @@
     "years_experienced": 15,
     "mvr_run_date": "01/28/2026",
     "license_class": "A",
-    "accidents_last_5_years": "1 - 2025-12-23",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Maya Walsh",
@@ -4616,8 +4616,8 @@
     "years_experienced": 25,
     "mvr_run_date": "01/12/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Arman Mensah",
@@ -4628,8 +4628,8 @@
     "years_experienced": 14,
     "mvr_run_date": "01/28/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Tessa Torres",
@@ -4640,8 +4640,8 @@
     "years_experienced": 31,
     "mvr_run_date": "01/25/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Reed Duarte",
@@ -4652,8 +4652,8 @@
     "years_experienced": 23,
     "mvr_run_date": "01/17/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Clara Hayes",
@@ -4664,8 +4664,8 @@
     "years_experienced": 8,
     "mvr_run_date": "01/24/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Elias Haddad",
@@ -4676,8 +4676,8 @@
     "years_experienced": 11,
     "mvr_run_date": "01/27/2026",
     "license_class": "A",
-    "accidents_last_5_years": "1 - 2023-12-01",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Farah Santos",
@@ -4688,8 +4688,8 @@
     "years_experienced": 20,
     "mvr_run_date": "01/20/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Speeding - 2024-11-04"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Sonia Kaminski",
@@ -4700,8 +4700,8 @@
     "years_experienced": 35,
     "mvr_run_date": "01/13/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Lucian Chen",
@@ -4712,8 +4712,8 @@
     "years_experienced": 14,
     "mvr_run_date": "01/14/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Greta Serrano",
@@ -4724,8 +4724,8 @@
     "years_experienced": 19,
     "mvr_run_date": "01/17/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Noemi Diaz",
@@ -4736,8 +4736,8 @@
     "years_experienced": 19,
     "mvr_run_date": "01/14/2026",
     "license_class": "B",
-    "accidents_last_5_years": "1 - 2022-05-10",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Cecilia Bauer",
@@ -4748,8 +4748,8 @@
     "years_experienced": 29,
     "mvr_run_date": "01/25/2026",
     "license_class": "A",
-    "accidents_last_5_years": "1 - 2022-03-21",
-    "mvr_violations": "Lane violation - 2023-08-17"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Marcus Sawyer",
@@ -4760,8 +4760,8 @@
     "years_experienced": 15,
     "mvr_run_date": "01/16/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Speeding - 2024-11-04"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Avery Soto",
@@ -4772,8 +4772,8 @@
     "years_experienced": 9,
     "mvr_run_date": "01/24/2026",
     "license_class": "A",
-    "accidents_last_5_years": "1 - 2024-06-26",
-    "mvr_violations": "Speeding - 2024-11-04"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Daphne Velasquez",
@@ -4784,8 +4784,8 @@
     "years_experienced": 20,
     "mvr_run_date": "01/23/2026",
     "license_class": "A",
-    "accidents_last_5_years": "1 - 2023-03-23",
-    "mvr_violations": "Lane violation - 2023-08-17"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Theo Talbot",
@@ -4796,8 +4796,8 @@
     "years_experienced": 22,
     "mvr_run_date": "01/16/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Lina Bishop",
@@ -4808,8 +4808,8 @@
     "years_experienced": 30,
     "mvr_run_date": "01/10/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Rafael Ortega",
@@ -4820,8 +4820,8 @@
     "years_experienced": 27,
     "mvr_run_date": "01/14/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Speeding - 2024-11-04"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Mira Farrell",
@@ -4832,8 +4832,8 @@
     "years_experienced": 30,
     "mvr_run_date": "01/12/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Speeding - 2024-11-04"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Omar Madsen",
@@ -4844,8 +4844,8 @@
     "years_experienced": 27,
     "mvr_run_date": "01/10/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Lane violation - 2023-08-17"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Selena Price",
@@ -4856,8 +4856,8 @@
     "years_experienced": 16,
     "mvr_run_date": "01/10/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Julian Parker",
@@ -4868,8 +4868,8 @@
     "years_experienced": 28,
     "mvr_run_date": "01/14/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Lane violation - 2023-08-17"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Iris Singh",
@@ -4880,8 +4880,8 @@
     "years_experienced": 31,
     "mvr_run_date": "01/23/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Lane violation - 2023-08-17"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Devon Carver",
@@ -4892,8 +4892,8 @@
     "years_experienced": 27,
     "mvr_run_date": "01/14/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Alma Abbott",
@@ -4904,8 +4904,8 @@
     "years_experienced": 3,
     "mvr_run_date": "01/10/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Lane violation - 2023-08-17"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Mateo Vargas",
@@ -4916,8 +4916,8 @@
     "years_experienced": 21,
     "mvr_run_date": "01/15/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Lane violation - 2023-08-17"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Renee Novak",
@@ -4928,8 +4928,8 @@
     "years_experienced": 21,
     "mvr_run_date": "01/26/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Silas Kovacs",
@@ -4940,8 +4940,8 @@
     "years_experienced": 14,
     "mvr_run_date": "01/16/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Vera Kline",
@@ -4952,8 +4952,8 @@
     "years_experienced": 29,
     "mvr_run_date": "01/10/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Adrian Malik",
@@ -4964,8 +4964,8 @@
     "years_experienced": 28,
     "mvr_run_date": "01/19/2026",
     "license_class": "A",
-    "accidents_last_5_years": "1 - 2022-01-26",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Lena Arias",
@@ -4976,8 +4976,8 @@
     "years_experienced": 9,
     "mvr_run_date": "01/24/2026",
     "license_class": "B",
-    "accidents_last_5_years": "1 - 2023-04-23",
-    "mvr_violations": "Speeding - 2024-11-04"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Kai Markovic",
@@ -4988,8 +4988,8 @@
     "years_experienced": 21,
     "mvr_run_date": "01/18/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Mina Ilyin",
@@ -5000,8 +5000,8 @@
     "years_experienced": 8,
     "mvr_run_date": "01/12/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Nolan Romano",
@@ -5012,8 +5012,8 @@
     "years_experienced": 26,
     "mvr_run_date": "01/21/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Marta Patel",
@@ -5024,8 +5024,8 @@
     "years_experienced": 25,
     "mvr_run_date": "01/11/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Ibrahim Rossi",
@@ -5036,8 +5036,8 @@
     "years_experienced": 20,
     "mvr_run_date": "01/14/2026",
     "license_class": "B",
-    "accidents_last_5_years": "1 - 2024-12-15",
-    "mvr_violations": "Lane violation - 2023-08-17"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Elena Sorensen",
@@ -5048,8 +5048,8 @@
     "years_experienced": 6,
     "mvr_run_date": "01/12/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Speeding - 2024-11-04"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Victor Yu",
@@ -5060,8 +5060,8 @@
     "years_experienced": 11,
     "mvr_run_date": "01/12/2026",
     "license_class": "A",
-    "accidents_last_5_years": "1 - 2025-03-25",
-    "mvr_violations": "Lane violation - 2023-08-17"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Leah Tan",
@@ -5072,8 +5072,8 @@
     "years_experienced": 14,
     "mvr_run_date": "01/15/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Samir Moreno",
@@ -5084,8 +5084,8 @@
     "years_experienced": 29,
     "mvr_run_date": "01/14/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Speeding - 2024-11-04"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Daria Petrov",
@@ -5096,8 +5096,8 @@
     "years_experienced": 34,
     "mvr_run_date": "01/24/2026",
     "license_class": "A",
-    "accidents_last_5_years": "1 - 2022-07-14",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Owen Foster",
@@ -5108,8 +5108,8 @@
     "years_experienced": 32,
     "mvr_run_date": "01/11/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Anika Quinn",
@@ -5120,8 +5120,8 @@
     "years_experienced": 27,
     "mvr_run_date": "01/15/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Milan Kim",
@@ -5132,8 +5132,8 @@
     "years_experienced": 19,
     "mvr_run_date": "01/19/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Lane violation - 2023-08-17"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Rosa Bennett",
@@ -5156,8 +5156,8 @@
     "years_experienced": 11,
     "mvr_run_date": "01/16/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Speeding - 2024-11-04"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Nina Holt",
@@ -5168,8 +5168,8 @@
     "years_experienced": 12,
     "mvr_run_date": "01/18/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Lane violation - 2023-08-17"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Andre Coleman",
@@ -5180,8 +5180,8 @@
     "years_experienced": 5,
     "mvr_run_date": "01/28/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Priya Okafor",
@@ -5192,8 +5192,8 @@
     "years_experienced": 27,
     "mvr_run_date": "01/18/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Jonah Barrera",
@@ -5204,8 +5204,8 @@
     "years_experienced": 24,
     "mvr_run_date": "01/19/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Maya Wynn",
@@ -5216,8 +5216,8 @@
     "years_experienced": 18,
     "mvr_run_date": "01/20/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Arman Hughes",
@@ -5228,8 +5228,8 @@
     "years_experienced": 28,
     "mvr_run_date": "01/12/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Lane violation - 2023-08-17"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Tessa Gallagher",
@@ -5240,8 +5240,8 @@
     "years_experienced": 16,
     "mvr_run_date": "01/12/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Reed Lambert",
@@ -5252,8 +5252,8 @@
     "years_experienced": 19,
     "mvr_run_date": "01/11/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Clara Mendez",
@@ -5264,8 +5264,8 @@
     "years_experienced": 26,
     "mvr_run_date": "01/19/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Elias Rivera",
@@ -5276,8 +5276,8 @@
     "years_experienced": 14,
     "mvr_run_date": "01/23/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Farah Reyes",
@@ -5288,8 +5288,8 @@
     "years_experienced": 20,
     "mvr_run_date": "01/25/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Sonia Rahman",
@@ -5300,8 +5300,8 @@
     "years_experienced": 34,
     "mvr_run_date": "01/18/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Lucian Nguyen",
@@ -5312,8 +5312,8 @@
     "years_experienced": 14,
     "mvr_run_date": "01/20/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Greta Nassar",
@@ -5324,8 +5324,8 @@
     "years_experienced": 21,
     "mvr_run_date": "01/14/2026",
     "license_class": "A",
-    "accidents_last_5_years": "1 - 2023-12-26",
-    "mvr_violations": "Speeding - 2024-11-04"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Noemi Walsh",
@@ -5336,8 +5336,8 @@
     "years_experienced": 32,
     "mvr_run_date": "01/12/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Cecilia Mensah",
@@ -5348,8 +5348,8 @@
     "years_experienced": 6,
     "mvr_run_date": "01/21/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Marcus Torres",
@@ -5360,8 +5360,8 @@
     "years_experienced": 14,
     "mvr_run_date": "01/24/2026",
     "license_class": "A",
-    "accidents_last_5_years": "1 - 2023-10-14",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Avery Duarte",
@@ -5372,8 +5372,8 @@
     "years_experienced": 12,
     "mvr_run_date": "01/10/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Daphne Hayes",
@@ -5384,8 +5384,8 @@
     "years_experienced": 18,
     "mvr_run_date": "01/13/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Theo Haddad",
@@ -5396,8 +5396,8 @@
     "years_experienced": 12,
     "mvr_run_date": "01/24/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Lane violation - 2023-08-17"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Lina Santos",
@@ -5408,8 +5408,8 @@
     "years_experienced": 22,
     "mvr_run_date": "01/17/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Rafael Kaminski",
@@ -5420,8 +5420,8 @@
     "years_experienced": 29,
     "mvr_run_date": "01/15/2026",
     "license_class": "A",
-    "accidents_last_5_years": "1 - 2025-12-01",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Mira Chen",
@@ -5432,8 +5432,8 @@
     "years_experienced": 7,
     "mvr_run_date": "01/14/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Omar Serrano",
@@ -5444,8 +5444,8 @@
     "years_experienced": 23,
     "mvr_run_date": "01/11/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Lane violation - 2023-08-17"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Selena Diaz",
@@ -5456,8 +5456,8 @@
     "years_experienced": 2,
     "mvr_run_date": "01/16/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Lane violation - 2023-08-17"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Julian Bauer",
@@ -5468,8 +5468,8 @@
     "years_experienced": 30,
     "mvr_run_date": "01/25/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Speeding - 2024-11-04"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Iris Sawyer",
@@ -5480,8 +5480,8 @@
     "years_experienced": 1,
     "mvr_run_date": "01/21/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Speeding - 2024-11-04"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Devon Soto",
@@ -5492,8 +5492,8 @@
     "years_experienced": 5,
     "mvr_run_date": "01/14/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Alma Velasquez",
@@ -5504,8 +5504,8 @@
     "years_experienced": 19,
     "mvr_run_date": "01/12/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Speeding - 2024-11-04"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Mateo Talbot",
@@ -5516,8 +5516,8 @@
     "years_experienced": 4,
     "mvr_run_date": "01/25/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Renee Bishop",
@@ -5528,8 +5528,8 @@
     "years_experienced": 27,
     "mvr_run_date": "01/11/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Silas Ortega",
@@ -5540,8 +5540,8 @@
     "years_experienced": 26,
     "mvr_run_date": "01/15/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Speeding - 2024-11-04"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Vera Farrell",
@@ -5552,8 +5552,8 @@
     "years_experienced": 20,
     "mvr_run_date": "01/11/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Speeding - 2024-11-04"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Adrian Madsen",
@@ -5564,8 +5564,8 @@
     "years_experienced": 7,
     "mvr_run_date": "01/25/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Speeding - 2024-11-04"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Lena Price",
@@ -5576,8 +5576,8 @@
     "years_experienced": 16,
     "mvr_run_date": "01/15/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Kai Parker",
@@ -5588,8 +5588,8 @@
     "years_experienced": 25,
     "mvr_run_date": "01/18/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Mina Singh",
@@ -5600,8 +5600,8 @@
     "years_experienced": 26,
     "mvr_run_date": "01/28/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Nolan Carver",
@@ -5612,8 +5612,8 @@
     "years_experienced": 30,
     "mvr_run_date": "01/11/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Speeding - 2024-11-04"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Marta Abbott",
@@ -5624,8 +5624,8 @@
     "years_experienced": 26,
     "mvr_run_date": "01/12/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Ibrahim Vargas",
@@ -5636,8 +5636,8 @@
     "years_experienced": 35,
     "mvr_run_date": "01/18/2026",
     "license_class": "A",
-    "accidents_last_5_years": "1 - 2024-10-06",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Elena Novak",
@@ -5648,8 +5648,8 @@
     "years_experienced": 17,
     "mvr_run_date": "01/11/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Speeding - 2024-11-04"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Victor Kovacs",
@@ -5660,8 +5660,8 @@
     "years_experienced": 14,
     "mvr_run_date": "01/27/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Leah Kline",
@@ -5672,8 +5672,8 @@
     "years_experienced": 23,
     "mvr_run_date": "01/20/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Samir Malik",
@@ -5684,8 +5684,8 @@
     "years_experienced": 5,
     "mvr_run_date": "01/26/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Daria Arias",
@@ -5696,8 +5696,8 @@
     "years_experienced": 12,
     "mvr_run_date": "01/26/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Owen Markovic",
@@ -5708,8 +5708,8 @@
     "years_experienced": 21,
     "mvr_run_date": "01/10/2026",
     "license_class": "A",
-    "accidents_last_5_years": "1 - 2023-05-14",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Anika Ilyin",
@@ -5720,8 +5720,8 @@
     "years_experienced": 7,
     "mvr_run_date": "01/28/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Milan Romano",
@@ -5732,8 +5732,8 @@
     "years_experienced": 33,
     "mvr_run_date": "01/25/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Speeding - 2024-11-04"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Rosa Patel",
@@ -5744,8 +5744,8 @@
     "years_experienced": 21,
     "mvr_run_date": "01/26/2026",
     "license_class": "A",
-    "accidents_last_5_years": "1 - 2024-06-12",
-    "mvr_violations": "Speeding - 2024-11-04"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Caleb Rossi",
@@ -5756,8 +5756,8 @@
     "years_experienced": 15,
     "mvr_run_date": "01/18/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Nina Sorensen",
@@ -5768,8 +5768,8 @@
     "years_experienced": 10,
     "mvr_run_date": "01/18/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Speeding - 2024-11-04"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Andre Yu",
@@ -5780,8 +5780,8 @@
     "years_experienced": 28,
     "mvr_run_date": "01/20/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Priya Tan",
@@ -5792,8 +5792,8 @@
     "years_experienced": 35,
     "mvr_run_date": "01/25/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Speeding - 2024-11-04"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Jonah Moreno",
@@ -5804,8 +5804,8 @@
     "years_experienced": 3,
     "mvr_run_date": "01/21/2026",
     "license_class": "B",
-    "accidents_last_5_years": "1 - 2023-05-14",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Maya Petrov",
@@ -5816,8 +5816,8 @@
     "years_experienced": 1,
     "mvr_run_date": "01/12/2026",
     "license_class": "B",
-    "accidents_last_5_years": "1 - 2024-10-10",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Arman Foster",
@@ -5828,8 +5828,8 @@
     "years_experienced": 9,
     "mvr_run_date": "01/23/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Tessa Quinn",
@@ -5840,8 +5840,8 @@
     "years_experienced": 20,
     "mvr_run_date": "01/25/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Lane violation - 2023-08-17"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Reed Kim",
@@ -5852,8 +5852,8 @@
     "years_experienced": 23,
     "mvr_run_date": "01/24/2026",
     "license_class": "A",
-    "accidents_last_5_years": "1 - 2024-04-03",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Clara Bennett",
@@ -5864,8 +5864,8 @@
     "years_experienced": 21,
     "mvr_run_date": "01/13/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Elias Navarro",
@@ -5876,8 +5876,8 @@
     "years_experienced": 14,
     "mvr_run_date": "01/23/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Farah Holt",
@@ -5888,8 +5888,8 @@
     "years_experienced": 12,
     "mvr_run_date": "01/13/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Speeding - 2024-11-04"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Sonia Coleman",
@@ -5900,8 +5900,8 @@
     "years_experienced": 27,
     "mvr_run_date": "01/21/2026",
     "license_class": "A",
-    "accidents_last_5_years": "1 - 2023-09-09",
-    "mvr_violations": "Speeding - 2024-11-04"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Lucian Okafor",
@@ -5912,8 +5912,8 @@
     "years_experienced": 18,
     "mvr_run_date": "01/27/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Greta Barrera",
@@ -5924,8 +5924,8 @@
     "years_experienced": 26,
     "mvr_run_date": "01/24/2026",
     "license_class": "B",
-    "accidents_last_5_years": "1 - 2024-01-26",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Noemi Wynn",
@@ -5936,8 +5936,8 @@
     "years_experienced": 29,
     "mvr_run_date": "01/28/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Failure to obey traffic control - 2022-05-29"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Cecilia Hughes",
@@ -5948,8 +5948,8 @@
     "years_experienced": 21,
     "mvr_run_date": "01/26/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Lane violation - 2023-08-17"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Marcus Gallagher",
@@ -5960,8 +5960,8 @@
     "years_experienced": 8,
     "mvr_run_date": "01/15/2026",
     "license_class": "B",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "None"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Avery Lambert",
@@ -5972,8 +5972,8 @@
     "years_experienced": 31,
     "mvr_run_date": "01/19/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Speeding - 2024-11-04"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Daphne Mendez",
@@ -5984,8 +5984,8 @@
     "years_experienced": 25,
     "mvr_run_date": "01/12/2026",
     "license_class": "A",
-    "accidents_last_5_years": "0",
-    "mvr_violations": "Unsafe following distance - 2025-02-08"
+    "accidents_last_5_years": null,
+    "mvr_violations": null
   },
   {
     "name": "Theo Rivera",

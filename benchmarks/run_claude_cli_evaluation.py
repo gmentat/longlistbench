@@ -26,6 +26,7 @@ try:
         _all_statuses_succeeded,
         _bind_prediction_provenance,
         _build_workspace_provenance,
+        _metadata_denied_path_labels,
         _resume_metadata_matches,
         load_prediction,
         normalize_record_predictions,
@@ -41,6 +42,7 @@ except ImportError:
         _all_statuses_succeeded,
         _bind_prediction_provenance,
         _build_workspace_provenance,
+        _metadata_denied_path_labels,
         _resume_metadata_matches,
         load_prediction,
         normalize_record_predictions,
@@ -333,6 +335,7 @@ def _load_run_metadata(output_dir: Path) -> dict:
 
 def _write_run_metadata(
     *,
+    repo_root: Path,
     output_dir: Path,
     transcript: str,
     sample_metadata: dict[str, dict],
@@ -351,9 +354,10 @@ def _write_run_metadata(
         "transcript": transcript,
         "cli_version_observed_at_metadata_write": runtime_version or _claude_cli_version(),
         "authentication": "Claude subscription; credentials are not stored",
-        "additional_denied_paths": [
-            str(path.resolve()) for path in extra_denied_paths or []
-        ],
+        "additional_denied_paths": _metadata_denied_path_labels(
+            repo_root,
+            extra_denied_paths,
+        ),
         "samples": sample_metadata,
     }
     path = output_dir / RUN_METADATA_FILE
@@ -418,6 +422,7 @@ def main() -> int:
         if metadata is not None:
             sample_metadata[sample_id] = metadata
             _write_run_metadata(
+                repo_root=repo_root,
                 output_dir=output_dir,
                 transcript=args.transcript,
                 sample_metadata=sample_metadata,
@@ -494,6 +499,7 @@ def main() -> int:
         encoding="utf-8",
     )
     _write_run_metadata(
+        repo_root=repo_root,
         output_dir=output_dir,
         transcript=args.transcript,
         sample_metadata=sample_metadata,

@@ -730,7 +730,7 @@ The current release includes OCR transcripts for every PDF:
 
 - `ocr_transcript`: OCR text generated from 200-DPI rendered PDF page images with Google Gemini 3.5 Flash vision OCR through the direct Vertex AI API.
 
-OCR validation reports 99.9% average identifier coverage and 99.9% tracked identifier-field support, with 17 records missing at least one tracked identifier. A separate audit finds 56 genuine OCR misses among 76,968 checked numeric fields with absolute value at least 10 (0.073%). The transcript is not hand-corrected; [`metadata/ocr_numeric_fidelity_baseline.json`](./metadata/ocr_numeric_fidelity_baseline.json) records the exact audited miss set. Interpret OCR-conditioned extraction scores with this ceiling in mind.
+OCR validation reports 100.0% average identifier coverage and 100.0% tracked identifier-field support, with no records missing a tracked identifier. A separate audit finds 56 genuine OCR misses among 76,968 checked numeric fields with absolute value at least 10 (0.073%). The transcript is not hand-corrected; [`metadata/ocr_numeric_fidelity_baseline.json`](./metadata/ocr_numeric_fidelity_baseline.json) records the exact audited miss set. Interpret OCR-conditioned extraction scores with this ceiling in mind.
 
 ## Provenance
 

@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-07-14T20:34:24.138595+00:00",
+  "generated_at": "2026-07-21T10:45:14.830053+00:00",
   "runner": "run_claude_cli_evaluation.py",
   "model_key": "claude_opus48",
   "requested_model": "claude-opus-4-8",
   "effort": "xhigh",
   "transcript": "ocr",
-  "cli_version_observed_at_metadata_write": "2.1.209 (Claude Code)",
+  "cli_version_observed_at_metadata_write": "2.1.216 (Claude Code)",
   "authentication": "Claude subscription; credentials are not stored",
   "additional_denied_paths": [
-    "/Users/anton/d/kay",
-    "/Users/anton/Desktop"
+    "<repo-parent>",
+    "<user-home>/Desktop"
   ],
   "samples": {
     "multihop_012_001_crosspage": {
@@ -92,30 +92,29 @@
         "claude-opus-4-8"
       ],
       "effort": "xhigh",
-      "duration_seconds": 73.866,
+      "duration_seconds": 158.441,
       "tokens": {
         "requests": 8,
-        "input_tokens": 143463,
-        "cached_input_tokens": 113223,
-        "cache_creation_input_tokens": 29512,
-        "output_tokens": 5387,
-        "total_tokens": 148850
+        "input_tokens": 211239,
+        "cached_input_tokens": 170268,
+        "cache_creation_input_tokens": 40243,
+        "output_tokens": 14197,
+        "total_tokens": 225436
       },
-      "estimated_api_cost_usd": 0.4868665,
-      "claude_cli_version": "2.1.209 (Claude Code)",
-      "claude_cli_version_evidence": "per_sample",
+      "estimated_api_cost_usd": 0.6920377500000001,
+      "claude_cli_version": "2.1.216 (Claude Code)",
       "sample": "driver_mvr_packet_001",
       "transcript": "ocr",
       "model_key": "claude_opus48",
-      "runtime_version": "2.1.209 (Claude Code)",
+      "runtime_version": "2.1.216 (Claude Code)",
       "output_file": "output/records.json",
-      "dataset_manifest_sha256": "5e40e8e07c58aa8882f1f4308fd338310ab19c65367ba9ab60b71050eb739140",
-      "runner_source_sha256": "36122be55d50132137e23c01867537bc5ee9e8f35490de451ed7eb7522649107",
-      "transcript_sha256": "ba60d8b1ca33844ee36080fcaca906573f429dd542837e7421b4bdad2c729de5",
+      "dataset_manifest_sha256": "eb032719a121abff7e90590da02f19434541ce1f018f580f307021f68803b3f1",
+      "runner_source_sha256": "d059621a9abab91abb110c3ed59b1faeb76399b044b6316f560a0eb5b7601361",
+      "transcript_sha256": "dcf4e931b0c1e6e12761a9377cb927da92293a8e4b58a1a5922e474f007438b9",
       "field_contract_sha256": "17222001ee5fbe17b7e485cd2e5bf6bf34a96ef6098400f3c663f51d359dff26",
       "prompt_sha256": "d4d6224503679aadb5100becd950ace26409e51d50215d88b128adeae9dd6fa5",
-      "input_fingerprint_sha256": "401523f62bc1c96002b47da2276f6c5d0987d0db1c4fc3e3c7b6ca17f592b9ca",
-      "prediction_sha256": "5d2be1f525f6f85f3125517305ec9449f3eb162ad8fe91c01abdf8363a2061af"
+      "input_fingerprint_sha256": "ad5c04388e852c6ed7fc0bf4dd4862c5855c451c57db869a41fa2211fce829b3",
+      "prediction_sha256": "423daee04b365351b389095a8c30ecccc9ef6f76bd58227070ec1cef3f5c320b"
     },
     "mixed_040_001_crosspage": {
       "requested_model": "claude-opus-4-8",
@@ -372,30 +371,29 @@
         "claude-opus-4-8"
       ],
       "effort": "xhigh",
-      "duration_seconds": 101.545,
+      "duration_seconds": 254.57,
       "tokens": {
-        "requests": 15,
-        "input_tokens": 270740,
-        "cached_input_tokens": 242922,
-        "cache_creation_input_tokens": 27078,
-        "output_tokens": 7205,
-        "total_tokens": 277945
+        "requests": 12,
+        "input_tokens": 496242,
+        "cached_input_tokens": 438123,
+        "cache_creation_input_tokens": 57383,
+        "output_tokens": 20404,
+        "total_tokens": 516646
       },
-      "estimated_api_cost_usd": 0.572886,
-      "claude_cli_version": "2.1.209 (Claude Code)",
-      "claude_cli_version_evidence": "per_sample",
+      "estimated_api_cost_usd": 1.0883052500000001,
+      "claude_cli_version": "2.1.216 (Claude Code)",
       "sample": "driver_mvr_packet_002",
       "transcript": "ocr",
       "model_key": "claude_opus48",
-      "runtime_version": "2.1.209 (Claude Code)",
+      "runtime_version": "2.1.216 (Claude Code)",
       "output_file": "output/records.json",
-      "dataset_manifest_sha256": "5e40e8e07c58aa8882f1f4308fd338310ab19c65367ba9ab60b71050eb739140",
-      "runner_source_sha256": "36122be55d50132137e23c01867537bc5ee9e8f35490de451ed7eb7522649107",
-      "transcript_sha256": "dccaddc7f89ef5d2ff7b0c889329aa9a670f1070944248d8ba599134503319f0",
+      "dataset_manifest_sha256": "eb032719a121abff7e90590da02f19434541ce1f018f580f307021f68803b3f1",
+      "runner_source_sha256": "d059621a9abab91abb110c3ed59b1faeb76399b044b6316f560a0eb5b7601361",
+      "transcript_sha256": "f134313bb531a48dc79ddd820f53f4528beaef5c83c45e5a7060adcefc5da92a",
       "field_contract_sha256": "17222001ee5fbe17b7e485cd2e5bf6bf34a96ef6098400f3c663f51d359dff26",
       "prompt_sha256": "d4d6224503679aadb5100becd950ace26409e51d50215d88b128adeae9dd6fa5",
-      "input_fingerprint_sha256": "5ffe79164c38729ffb10a3011a6779f7ce2fa147a2b34ccea0ee2b1c0a5e8419",
-      "prediction_sha256": "5ec89e81c72cd1fc596737243271fbbbb857ee4b489389f5c6e2f37f1dbbd476"
+      "input_fingerprint_sha256": "27ae34b09c97f6c514a66644e026f79c9deab57a66c6d9f3d6c44020dbc3f985",
+      "prediction_sha256": "e3afd67cc0c9cf596dca47169b88c910992a5aee47d86d713376f58bdcf029ff"
     },
     "driver_mvr_packet_003": {
       "requested_model": "claude-opus-4-8",
@@ -407,30 +405,29 @@
         "claude-opus-4-8"
       ],
       "effort": "xhigh",
-      "duration_seconds": 99.792,
+      "duration_seconds": 138.131,
       "tokens": {
-        "requests": 10,
-        "input_tokens": 273241,
-        "cached_input_tokens": 226968,
-        "cache_creation_input_tokens": 45541,
-        "output_tokens": 7485,
-        "total_tokens": 280726
+        "requests": 8,
+        "input_tokens": 263220,
+        "cached_input_tokens": 212899,
+        "cache_creation_input_tokens": 49593,
+        "output_tokens": 11442,
+        "total_tokens": 274662
       },
-      "estimated_api_cost_usd": 0.756499,
-      "claude_cli_version": "2.1.209 (Claude Code)",
-      "claude_cli_version_evidence": "per_sample",
+      "estimated_api_cost_usd": 0.7029157500000002,
+      "claude_cli_version": "2.1.216 (Claude Code)",
       "sample": "driver_mvr_packet_003",
       "transcript": "ocr",
       "model_key": "claude_opus48",
-      "runtime_version": "2.1.209 (Claude Code)",
+      "runtime_version": "2.1.216 (Claude Code)",
       "output_file": "output/records.json",
-      "dataset_manifest_sha256": "5e40e8e07c58aa8882f1f4308fd338310ab19c65367ba9ab60b71050eb739140",
-      "runner_source_sha256": "36122be55d50132137e23c01867537bc5ee9e8f35490de451ed7eb7522649107",
-      "transcript_sha256": "ca8541a9983a7df8564f262cfe169b8316e06a9ea3512de7dc5a51943ea77386",
+      "dataset_manifest_sha256": "eb032719a121abff7e90590da02f19434541ce1f018f580f307021f68803b3f1",
+      "runner_source_sha256": "d059621a9abab91abb110c3ed59b1faeb76399b044b6316f560a0eb5b7601361",
+      "transcript_sha256": "486e5bb12e7a97f9efb7872ce36e70646b1a2d11694e410d4a21a56a4d368f0f",
       "field_contract_sha256": "17222001ee5fbe17b7e485cd2e5bf6bf34a96ef6098400f3c663f51d359dff26",
       "prompt_sha256": "d4d6224503679aadb5100becd950ace26409e51d50215d88b128adeae9dd6fa5",
-      "input_fingerprint_sha256": "bfa199695f81910f7509eed2071e7ab1ad5fadb1359e96f60163aed4fcf88d37",
-      "prediction_sha256": "af5468bb1f0ede4f0bc121ef8c20303194523787f131312ee8c88b1aa186e869"
+      "input_fingerprint_sha256": "7bea2b8746f342025762dff2fd31457d41866b5d7b876a7bd819d5e0064ae8bf",
+      "prediction_sha256": "8a95aacc9d46f9b8f294788b624c12b0fad0597113b9103fc5f08ae44aa449b3"
     },
     "driver_schedule_sparse_001": {
       "requested_model": "claude-opus-4-8",
