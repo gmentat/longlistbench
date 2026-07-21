@@ -253,4 +253,4 @@ python benchmarks/export_hf_dataset.py \
 
 The repository contains synthetic generated artifacts only. Private production PDFs were used as visual layout references during template design, but production documents, names, account numbers, and raw customer data are not included in the repo.
 
-The generator scripts that produced the current production-like templates are intentionally kept outside the repository. The repo ships the dataset artifacts and evaluation scripts.
+Public synthetic generators and templates for the released artifacts live under `benchmarks/core_operations/`, `benchmarks/generate_multihop_benchmark.py`, and `benchmarks/policy_multihop/`. Private reference documents are not distributed.

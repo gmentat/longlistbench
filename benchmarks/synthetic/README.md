@@ -1,11 +1,11 @@
-# Internal Generation Helpers
+# Generation Support Modules
 
-This directory is not a public benchmark generator.
+This directory contains shared helpers rather than a standalone benchmark generator.
 
 The legacy v1 claim-layout generator was removed because the released v2 dataset
-ships generated artifacts under `data/`, and the production-like template
-generators used to create those artifacts are intentionally kept outside the
-repository.
+ships generated artifacts under `data/`. Current public generators live under
+`benchmarks/core_operations/`, `benchmarks/generate_multihop_benchmark.py`, and
+`benchmarks/policy_multihop/`.
 
 The remaining modules are shared helpers used by current cross-page generation
 code:
