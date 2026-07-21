@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import shutil
 from pathlib import Path
 
 DEFAULT_REPO_ID = "kaydotai/LongListBench-Leaderboard"
@@ -19,15 +20,30 @@ RUNS = (
     ("claude_fable5_full_current_ocr_v2", "claude_fable5", "Claude Code", "Claude Fable 5"),
     ("codex_full_current_ocr_v2", "codex_gpt55", "Codex CLI", "GPT-5.5"),
 )
+SPACE_FILENAMES = ("README.md", "index.html", "leaderboard_data.json")
 
 
 def load_runs(results_dir: Path) -> tuple[list[dict], dict]:
     models = []
     dataset_meta: dict = {}
+    expected_manifest: str | None = None
+    expected_shape: tuple[int, int] | None = None
     for run_dir, key, harness, model_name in RUNS:
         report = json.loads((results_dir / run_dir / "evaluation_report.json").read_text(encoding="utf-8"))
         meta = json.loads((results_dir / run_dir / "run_metadata.json").read_text(encoding="utf-8"))
-        dataset_meta = report["dataset"]
+        stats = report["model_stats"][key]
+        manifest = report["dataset"]["manifest_sha256"]
+        shape = (stats["total_samples"], stats["total_rows"])
+        if expected_manifest is None:
+            expected_manifest = manifest
+            expected_shape = shape
+            dataset_meta = report["dataset"]
+        elif manifest != expected_manifest or shape != expected_shape:
+            raise ValueError(
+                f"{run_dir} targets a different dataset: "
+                f"manifest={manifest}, shape={shape}; "
+                f"expected manifest={expected_manifest}, shape={expected_shape}"
+            )
         models.append({
             "key": key,
             "harness": harness,
@@ -36,7 +52,7 @@ def load_runs(results_dir: Path) -> tuple[list[dict], dict]:
             "effort": meta["effort"],
             "cli_version": meta["cli_version_observed_at_metadata_write"],
             "run_date": meta["generated_at"][:10],
-            "stats": report["model_stats"][key],
+            "stats": stats,
         })
     return models, dataset_meta
 
@@ -235,15 +251,28 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--results-dir", type=Path, default=RESULTS_DIR, help="Directory holding run result folders.")
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT, help="Output directory for the Space files.")
     parser.add_argument("--repo-id", default=DEFAULT_REPO_ID, help="Target Hugging Face Space repo ID.")
+    parser.add_argument("--overwrite", action="store_true", help="Replace a non-empty output directory.")
     parser.add_argument("--upload", action="store_true", help="Upload the generated Space to Hugging Face Hub.")
     return parser.parse_args()
+
+
+def prepare_output(output: Path, *, overwrite: bool) -> None:
+    if output.is_file() or output.is_symlink():
+        if not overwrite:
+            raise FileExistsError(f"output path already exists: {output}; pass --overwrite to replace it")
+        output.unlink()
+    elif output.exists() and any(output.iterdir()):
+        if not overwrite:
+            raise FileExistsError(f"output directory is not empty: {output}; pass --overwrite to replace it")
+        shutil.rmtree(output)
+    output.mkdir(parents=True, exist_ok=True)
 
 
 def main() -> None:
     args = parse_args()
     models, dataset_meta = load_runs(args.results_dir)
     data = build_data(models, dataset_meta)
-    args.output.mkdir(parents=True, exist_ok=True)
+    prepare_output(args.output, overwrite=args.overwrite)
     (args.output / "leaderboard_data.json").write_text(json.dumps(data, indent=2) + "\n", encoding="utf-8")
     (args.output / "index.html").write_text(build_html(data), encoding="utf-8")
     (args.output / "README.md").write_text(README, encoding="utf-8")
@@ -255,7 +284,12 @@ def main() -> None:
 
         api = HfApi()
         api.create_repo(args.repo_id, repo_type="space", space_sdk="static", exist_ok=True)
-        result = api.upload_folder(folder_path=str(args.output), repo_id=args.repo_id, repo_type="space")
+        result = api.upload_folder(
+            folder_path=str(args.output),
+            repo_id=args.repo_id,
+            repo_type="space",
+            allow_patterns=list(SPACE_FILENAMES),
+        )
         print(f"Uploaded: {result.commit_url}")
 
 

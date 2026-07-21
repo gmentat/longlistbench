@@ -63,7 +63,7 @@ hf-export:
 	. $(VENV_DIR)/bin/activate && python benchmarks/export_hf_dataset.py --input data --output $(HF_OUT) --repo-id $(HF_REPO_ID) --overwrite
 
 hf-leaderboard:
-	. $(VENV_DIR)/bin/activate && python benchmarks/export_leaderboard_space.py --output $(HF_LEADERBOARD_OUT) --repo-id $(HF_LEADERBOARD_REPO_ID)
+	. $(VENV_DIR)/bin/activate && python benchmarks/export_leaderboard_space.py --output $(HF_LEADERBOARD_OUT) --repo-id $(HF_LEADERBOARD_REPO_ID) --overwrite
 
 paper:
 	$(MAKE) -C paper pdf

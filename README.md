@@ -104,7 +104,7 @@ This writes an ignored local package to `dist/huggingface/leaderboard_space/`. U
 inspecting the generated files:
 
 ```bash
-python benchmarks/export_leaderboard_space.py --upload
+python benchmarks/export_leaderboard_space.py --overwrite --upload
 ```
 
 To add a result, verify that the submitted scores reproduce from the saved predictions, add the run
