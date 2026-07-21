@@ -130,7 +130,7 @@ def test_release_tables_match_saved_reports() -> None:
         sample_metadata = metadata[sample_field]
         assert len(sample_metadata) == total_samples
         if sample_field == "sample_statuses":
-            assert set(sample_metadata.values()) == {"attest"}
+            assert set(sample_metadata.values()) <= {0, "attest"}
         observed_samples = metadata["samples"]
         assert len(observed_samples) == total_samples
         for sample_id, sample in observed_samples.items():
@@ -155,7 +155,8 @@ def test_release_tables_match_saved_reports() -> None:
             line.split("\t", 1)[1]
             for line in status_path.read_text(encoding="utf-8").splitlines()[1:]
         }
-        assert statuses == {"attest"}
+        assert statuses <= {"0", "attest"}
+        assert statuses
 
     for key, (readme_label, tex_label) in OVERALL_LABELS.items():
         model_stats = stats[key]
@@ -252,11 +253,12 @@ def test_release_tables_match_saved_reports() -> None:
         f"{_tex_pct(fable['exact_record_recall'])} of records exactly"
     ) in abstract
     assert (
-        f"each reproduces only {sol['complete_documents']} of "
-        f"{total_samples} complete document lists"
+        f"reproduce only {sol['complete_documents']} and "
+        f"{fable['complete_documents']} of {total_samples} complete document lists"
     ) in abstract
     assert (
         f"recover {_tex_pct(sol['exact_record_recall'])} and "
-        f"{_tex_pct(fable['exact_record_recall'])} of target records exactly but each completes only "
-        f"{sol['complete_documents']} of {total_samples} documents"
+        f"{_tex_pct(fable['exact_record_recall'])} of target records exactly but complete only "
+        f"{sol['complete_documents']} and {fable['complete_documents']} of "
+        f"{total_samples} documents"
     ) in conclusion

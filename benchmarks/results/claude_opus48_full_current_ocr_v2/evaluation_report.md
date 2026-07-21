@@ -1,9 +1,9 @@
 # Multi-Model Evaluation Report
 
-Generated: 2026-07-21 10:45:33 UTC
+Generated: 2026-07-21 11:19:54 UTC
 Evaluation mode: `offline_replay`
-Dataset manifest SHA-256: `eb032719a121abff7e90590da02f19434541ce1f018f580f307021f68803b3f1`
-Git SHA: `46b8803a9c4d8e9e139425007db2dd3e65a74a79`; dirty: `True`
+Dataset manifest SHA-256: `ccf1881c256e9b5a2f575e73061d6fd40cfe763dc446bc873fc63cedd0019133`
+Git SHA: `02c9dd1a9d570c7d8b6df11850ac09eda10a8033`; dirty: `False`
 
 ## Overall Results
 

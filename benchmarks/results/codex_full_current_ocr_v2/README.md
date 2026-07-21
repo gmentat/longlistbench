@@ -25,7 +25,7 @@ Exact-record recall requires every normalized target field to match. Complete-do
 - `*_predicted.json`: 32 saved per-document predictions.
 - `evaluation_report.json`: machine-readable aggregate and per-document metrics.
 - `evaluation_report.md`: human-readable report.
-- `per_sample_status.tsv`: status of the corrected driver/MVR samples processed in the latest runner invocation.
+- `per_sample_status.tsv`: merged release status (`attest` for reused predictions and `0` for corrected inputs rerun successfully).
 - `run_metadata.json`: requested and observed model, effort, CLI version, transcript and contract fingerprints, and prediction hashes for all samples.
 
 ## Reproduce
