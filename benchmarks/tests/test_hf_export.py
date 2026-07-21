@@ -303,6 +303,7 @@ class HuggingFaceExportTests(unittest.TestCase):
         self.assertIn("schemas/loss_run_claim_row.schema.json", card)
         self.assertIn("schemas/ifta_multisection_jurisdiction_row.schema.json", card)
         self.assertIn("@misc{fedoruk2026longlistbench", card)
+        self.assertIn("and Rohra, Vishal", card)
         self.assertIn("publisher    = {Kay.ai}", card)
         self.assertIn("url          = {https://huggingface.co/datasets/kaydotai/LongListBench}", card)
         self.assertIn("| `policy_packets` |", card)
